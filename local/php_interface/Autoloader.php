@@ -45,7 +45,8 @@
 			'/^forumTextParser/' => 'forum',
 			'/^textParser/' => 'forum',
 			'/^CForum/' => 'forum',
-			'/^CWiki/' => 'wiki'
+			'/^CWiki/' => 'wiki',
+			'/^HighloadBlock/' => 'highloadblock'
 		);
 
 

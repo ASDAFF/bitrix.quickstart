@@ -176,9 +176,10 @@
 					if ($item == '.' || $item == '..') {
 						continue;
 					}
-
 					if (is_dir($directoryPath . $item)) {
-						return $this->searchClassRecursive($className, $directoryPath . $item . '/');
+						if ($recursiveResult = $this->searchClassRecursive($className, $directoryPath . $item . '/')) {
+							return $recursiveResult;
+						}
 					}
 				}
 			}

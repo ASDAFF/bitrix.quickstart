@@ -1,4 +1,4 @@
-# bitrix.quickstart
+# bitrix.quickstart v.1.0.1
 ---
 Набор скриптов для быстрого старта сайта на Bitrix.
 

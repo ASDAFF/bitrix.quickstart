@@ -8,6 +8,50 @@
 
 Проект предполагает широкое использование папки /local, в которой расположены все файлы, необходимые разработчику. Папка /bitrix в идеале должна быть полностью занесена в .gitignore, поскольку содержит ядро системы.
 
+<pre><code style="background:#000; color:#fff;">auth/
+bitrix/
+├── php_interface/
+│   ├── this<span class="hljs-emphasis">_site_</span>support.php
+│   └── include/
+│         └── site_closed.php
+favicons/
+includes/
+<span class="hljs-code">    └── pages/</span>
+<span class="hljs-code">    │   ├── 404.php</span>
+<span class="hljs-code">    │   ├── main.php</span>
+<span class="hljs-code">    │   └── ui.php</span>
+<span class="hljs-code">    ├── favicons.php</span>
+<span class="hljs-code">    ├── footer.php</span>
+<span class="hljs-code">    ├── header.php</span>
+<span class="hljs-code">    └── html.php</span>
+local/ 
+├── codenails/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   ├── less/
+│   └── tools/
+├── components/
+├── gadgets/
+├── logs/
+├── modules/
+├── php_interface/
+│   ├── cn_log.php
+│   └── init.php
+└── templates/
+<span class="hljs-code">    ├── .default/</span>
+<span class="hljs-code">    │   ├── components/</span>
+<span class="hljs-code">    │   └── page_templates/</span>
+<span class="hljs-code">    │       └── standard.php</span>
+<span class="hljs-code">    └── rename_me/</span>
+personal/
+search/
+.htaccess_example
+404.php
+favicon.ico
+index.php
+robots.txt</code></pre>
+
 ## Autoload
 
 Автозагрузка классов.

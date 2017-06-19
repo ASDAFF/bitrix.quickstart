@@ -1,0 +1,1 @@
+<a href='http://site.ru'>Разработка и техническая поддержка: site.ru </a>, <a href='tel://+799999999999'>+7 (999) 999-99-99</a>, <a href='mailto:example@site.ru'>example@site.ru</a>

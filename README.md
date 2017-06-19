@@ -12,7 +12,6 @@
 title: Структура  
 description: Документация к Bitrix Quick Start, Структура и назначение файлов
 template: index
-
 ---
 
 
@@ -77,7 +76,7 @@ robots.txt
 ## [bitrix/php_interface/](#php_interface)
 ---
 - **this_site_support.php** — Информация о партнёре и техподдержке (нужна по требованиям монитора качества). Отображается внизу формы авторизации в админке. Этот файл не подхватывается из local, возможно со временем это исправят.
-![Информация о поддержке и партнёре](https://dl.dropboxusercontent.com/u/8142395/this_site_support.png "Информация о поддержке и партнёре"){.col-margin}
+_**Информация о поддержке и партнёре**_
 - **include/site_closed.php** — [Красивая заглушка](http://jsfiddle.net/eoq287rd/embedded/result/) для отключенной публички. К сожалению пока этот файл не подхватывается из папки local.
 
 ---
@@ -93,12 +92,12 @@ robots.txt
 </div>
 
 ---
-## [includes/](#includes){#includes .h3}
+## [includes/](#includes)
 ---
 В этой папаке располагаются включаемые области и прочие php-файлы, которые контент-менеджер или клиент может отредактировать через веб-интерфейс битрикса, из публичной части.
 
 ---
-## [includes/pages/](#pages){#pages .h3}
+## [includes/pages/](#pages)
 ---
 В этой папке располагаются свёрстанные страницы проекта.
 Удобство такого расположения очевидно: файлы можно подключать как включаемые области непосредственно в проект, или просто подглядывать в них в процессе интеграции вёрстки в битрикс.
@@ -107,65 +106,65 @@ robots.txt
 - **ui.php** — UIKit, тут собраны все основные элементы, для удобства проверки и стилизации элементов.
 
 ---
-## [local/](#local){#local .h3}
+## [local/](#local)
 ---
 Основная папка проекта. 
 
-#### [local/codenails/](#codenails){#codenails}
+#### [local/codenails/](#codenails)
 В этой папке содержатся файлы, относящиеся к фронтенду (стили, скрипты, картинки шаблона), а так же включаемые области и php-файлы, отвечающие на ajax-запросы.
 
-#### [local/codenails/css/](#codenails_css){#codenails_css}
+#### [local/codenails/css/](#codenails_css)
 
 - template_styles.css — Скомпилированный CSS-файл, который подключается в шаблон. 
 - Так же в эту папку складываем все CSS-файлы, которые не требуется включать с LESS по различным соображениям (*к примеру не требующий правок файл какого-нибудь плагина для jQuery*). Файлы подключаются в автоматическом через [cnAsset](https://github.com/pafnuty/cnAsset).
 
-#### [local/codenails/images/](#codenails_images){#codenails_images}
+#### [local/codenails/images/](#codenails_images)
 
 - В эту папку кладём картинки шаблона. 
 - Если нужны временные картинки, не нужно копировать их из макета, [используйте сервис](http://imgholder.ru/) (и плагин для SublimeText) **не захламляйте папку.**
 - **ie_logo.png** - не удаляем картинку, она отображается в админке (см раздел про минитор качества)
 
-#### [local/codenails/js/](#codenails_js){#codenails_js}
+#### [local/codenails/js/](#codenails_js)
 
 - Сюда складываем js-файлы и jquery-плагины, необходимые для работы шаблона, которые будут подгружаться через автозагрузчик cnAsset.
 - **main.js** — основной js-файл шаблона.
 
-#### [local/codenails/less/](#codenails_less){#codenails_less}
+#### [local/codenails/less/](#codenails_less)
 
 Сюда складываем LESS-файлы проекта. Об организации less файлов написано в разделе [LESS](/documentation/less).
 
 
 ---
-## [local/components/](#components){#components .h3}
+## [local/components/](#components)
 ---
 
 Папка для размещения собственных компонентов.
 
 ---
-## [local/gadgets/](#gadgets){#gadgets .h3}
+## [local/gadgets/](#gadgets)
 ---
 
 Папка для размещения гаджетов рабочего стола (*возможно когда-нибудь мы будем туда класть загортовки гаджетов*)
 
 ---
-## [local/logs/](#logs){#logs .h3}
+## [local/logs/](#logs)
 ---
 Папка для хранения логов (туда автоматом записывается лог, создаваймый классом CNLog).
 
 ---
-## [local/modules/](#modules){#modules .h3}
+## [local/modules/](#modules)
 ---
 Папка для размещения собственных модулей.
 
 ---
-## [local/php_interface/](#php_interface){#php_interface .h3}
+## [local/php_interface/](#php_interface)
 ---
 - **cn_log.php** — Класс для ведения наглядного лога, нужен для удобной отладки того, что тяжело отладить (*пример вызова в init.php*)
 - **init.php** — init.php сайта, в который подключается дефолтный init.php. Так же там присутствуют некоторые, полезные во всех проектах, функции.
 
 
 ---
-## [local/templates/](#templates){#templates .h3}
+## [local/templates/](#templates)
 ---
 - **.default** — папка с шаблонами компонентов.
     + **page_templates/standard.php** — шаблон для новых страниц (вместо глупой надписи "text here");
@@ -175,18 +174,20 @@ robots.txt
     + **description.php** — описание шаблона.
 
 ---
-## [search/](#search){#search .h3}
+## [search/](#search)
 ---
 Папка, отвечающая за поиск по сайту и формирование карты сайта (*не sitemap.xml, а непонятная сущность, формирующаяся из меню сайта*).
 
-### [.htaccess_example](#htaccess_example){#htaccess_example}
+### [.htaccess_example](#htaccess_example)
 Не забываем удалить этот файл, предварительно прочитав и сделав, как написано. Тут лежит пример правильной склейки зеркал для apache.
 
-### [404.php](#404_page){#404_page}
+### [404.php](#404_page)
 404-я страничка.
 
-
+---
+---
 ## Autoload
+---
 
 Автозагрузка классов.
 

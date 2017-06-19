@@ -19,7 +19,7 @@ template: index
 # Структура и назначение файлов Bitrix Quick Start
 
 ---
-## [Типовая структура проекта на Quick Start:](#tipical){#tipical .h3}
+## [Типовая структура проекта на Quick Start:](#tipical)
 ---
 
 ```md
@@ -69,19 +69,19 @@ robots.txt
 ```
 
 ---
-## [auth/](#auth){#auth .h3}
+## [auth/](#auth)
 ---
 Папка, для тех, кто забывает положить форму для восстановления пароля. Ну и авторизация по умолчанию.
 
 ---
-## [bitrix/php_interface/](#php_interface){#php_interface .h3}
+## [bitrix/php_interface/](#php_interface)
 ---
 - **this_site_support.php** — Информация о партнёре и техподдержке (нужна по требованиям монитора качества). Отображается внизу формы авторизации в админке. Этот файл не подхватывается из local, возможно со временем это исправят.
 ![Информация о поддержке и партнёре](https://dl.dropboxusercontent.com/u/8142395/this_site_support.png "Информация о поддержке и партнёре"){.col-margin}
 - **include/site_closed.php** — [Красивая заглушка](http://jsfiddle.net/eoq287rd/embedded/result/) для отключенной публички. К сожалению пока этот файл не подхватывается из папки local.
 
 ---
-## [favicons/](#favicons){#favicons .h3}
+## [favicons/](#favicons)
 ---
 
 Папка с различными иконками под все устройства о основные ОС, нужны для красивого отображения сайта при добавлении в закладки, на рабочие столы и т.д.

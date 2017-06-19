@@ -14,11 +14,10 @@
 title: Структура  
 description: Документация к Bitrix Quick Start, Структура и назначение файлов
 template: index
+
 ---
 
-
 # Структура и назначение файлов Bitrix Quick Start
-
 ---
 ## [Типовая структура проекта на Quick Start:](#tipical)
 ---

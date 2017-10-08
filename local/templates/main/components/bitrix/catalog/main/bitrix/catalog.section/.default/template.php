@@ -30,7 +30,7 @@ if (!empty($arResult['ITEMS'])) {
     }
     $templateData = array(
         'TEMPLATE_THEME' => $this->GetFolder() . '/themes/' . $arParams['TEMPLATE_THEME'] . '/style.css',
-        'TEMPLATE_CLASS' => 'bx_' . $arParams['TEMPLATE_THEME'],
+        //'TEMPLATE_CLASS' => 'bx_' . $arParams['TEMPLATE_THEME'],
         'TEMPLATE_LIBRARY' => $templateLibrary,
         'CURRENCIES' => $currencyList
     );
@@ -81,7 +81,7 @@ if (!empty($arResult['ITEMS'])) {
                 foreach ($arProp['VALUES'] as $arOneValue) {
                     $arOneValue['NAME'] = htmlspecialcharsbx($arOneValue['NAME']);
                     $templateRow .= '<li data-treevalue="' . $arProp['ID'] . '_' . $arOneValue['ID'] . '" data-onevalue="' . $arOneValue['ID'] . '" style="width: ' . $strOneWidth . '; padding-top: ' . $strOneWidth . ';"><i title="' . $arOneValue['NAME'] . '"></i>' .
-                        '<span class="cnt"><span class="cnt_item" style="background-image:url(\'' . $arOneValue['PICT']['SRC'] . '\');" title="' . $arOneValue['NAME'] . '"></span></span></li>';
+                        '<span class="cnt"><span class="cnt_item" style="background-image:url(' . $arOneValue['PICT']['SRC'] . ');" title="' . $arOneValue['NAME'] . '"></span></span></li>';
                 }
                 $templateRow .= '</ul></div>' .
                     '<div class="bx_slide_left" id="#ITEM#_prop_' . $arProp['ID'] . '_left" data-treevalue="' . $arProp['ID'] . '" style="' . $strSlideStyle . '"></div>' .
@@ -101,8 +101,11 @@ if (!empty($arResult['ITEMS'])) {
     $strElementDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_DELETE");
     $arElementDeleteParams = array("CONFIRM" => GetMessage('CT_BCS_TPL_ELEMENT_DELETE_CONFIRM'));
     ?>
-    /* -- Вывод в публичную часть -- */
-    <div class="bx_catalog_list_home col<? echo $arParams['LINE_ELEMENT_COUNT']; ?> <? echo $templateData['TEMPLATE_CLASS']; ?>">
+
+
+
+    <?/* -- Вывод в публичную часть -- */ ?>
+    <div class="bx_catalog_list_home col<? echo $arParams['LINE_ELEMENT_COUNT']; ?>">
         <div class="bx-section-desc">
             <p class="bx-section-desc-post"><?= $arResult["DESCRIPTION"] ?></p>
         </div><?
@@ -716,8 +719,7 @@ if (!empty($arResult['ITEMS'])) {
         ?>
         <div style="clear: both;"></div>
     </div>
-
-    /* -- Вывод в публичную часть -- */
+    <?/* -- Вывод в публичную часть -- */?>
 
     <script type="text/javascript">
         BX.message({

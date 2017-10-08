@@ -16,31 +16,6 @@ if ($boolCatalog && (isset($arCurrentValues['IBLOCK_ID']) && 0 < intval($arCurre
 	$boolSKU = !empty($arSKU) && is_array($arSKU);
 }
 
-$arThemes = array();
-if (ModuleManager::isModuleInstalled('bitrix.eshop'))
-{
-	$arThemes['site'] = GetMessage('CP_BCS_TPL_THEME_SITE');
-}
-
-$arThemesList = array(
-	'blue' => GetMessage('CP_BCS_TPL_THEME_BLUE'),
-	'green' => GetMessage('CP_BCS_TPL_THEME_GREEN'),
-	'red' => GetMessage('CP_BCS_TPL_THEME_RED'),
-	'wood' => GetMessage('CP_BCS_TPL_THEME_WOOD'),
-	'yellow' => GetMessage('CP_BCS_TPL_THEME_YELLOW'),
-	'black' => GetMessage('CP_BCS_TPL_THEME_BLACK')
-);
-$dir = trim(preg_replace("'[\\\\/]+'", "/", dirname(__FILE__)."/themes/"));
-if (is_dir($dir))
-{
-	foreach ($arThemesList as $themeID => $themeName)
-	{
-		if (!is_file($dir.$themeID.'/style.css'))
-			continue;
-		$arThemes[$themeID] = $themeName;
-	}
-}
-
 
 if ($boolSKU)
 {

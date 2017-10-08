@@ -85,7 +85,6 @@ if ($arParams['USE_FILTER'] == 'Y') {
             "SECTION_TITLE" => "NAME",
             "SECTION_DESCRIPTION" => "DESCRIPTION",
             'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
-            "TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
             'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
             'CURRENCY_ID' => $arParams['CURRENCY_ID'],
             "SEF_MODE" => $arParams["SEF_MODE"],

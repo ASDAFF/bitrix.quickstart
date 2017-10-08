@@ -78,15 +78,6 @@ $arTemplateParameters["FILTER_VIEW_MODE"] = array(
 	"HIDDEN" => (!isset($arCurrentValues['USE_FILTER']) || 'N' == $arCurrentValues['USE_FILTER'])
 );
 
-$arTemplateParameters['TEMPLATE_THEME'] = array(
-	'PARENT' => 'VISUAL',
-	'NAME' => GetMessage("CP_BC_TPL_TEMPLATE_THEME"),
-	'TYPE' => 'LIST',
-	'VALUES' => $arThemes,
-	'DEFAULT' => 'blue',
-	'ADDITIONAL_VALUES' => 'Y'
-);
-
 if (isset($arCurrentValues['IBLOCK_ID']) && (int)$arCurrentValues['IBLOCK_ID'] > 0)
 {
 	$arAllPropList = array();

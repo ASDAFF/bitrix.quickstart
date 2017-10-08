@@ -26,43 +26,6 @@ $arTemplateParameters = array(
 	)
 );
 
-if (isset($arCurrentValues['VIEW_MODE']) && !empty($arCurrentValues['VIEW_MODE']))
-{
-	$arThemes = array();
-	if (ModuleManager::isModuleInstalled('bitrix.eshop'))
-	{
-		$arThemes['site'] = GetMessage('CP_BCT_TPL_THEME_SITE');
-	}
-
-	$arThemesList = array(
-		'blue' => GetMessage('CP_BCT_TPL_THEME_BLUE'),
-		'green' => GetMessage('CP_BCT_TPL_THEME_GREEN'),
-		'red' => GetMessage('CP_BCT_TPL_THEME_RED'),
-		'wood' => GetMessage('CP_BCT_TPL_THEME_WOOD'),
-		'yellow' => GetMessage('CP_BCT_TPL_THEME_YELLOW'),
-		'black' => GetMessage('CP_BCT_TPL_THEME_BLACK')
-	);
-	$dir = trim(preg_replace("'[\\\\/]+'", "/", dirname(__FILE__).'/'.$arCurrentValues['VIEW_MODE'].'/themes/'));
-	if (is_dir($dir))
-	{
-		foreach ($arThemesList as $themeID => $themeName)
-		{
-			if (!is_file($dir.$themeID.'/style.css'))
-				continue;
-			$arThemes[$themeID] = $themeName;
-		}
-	}
-
-	$arTemplateParameters['TEMPLATE_THEME'] = array(
-		'PARENT' => 'VISUAL',
-		'NAME' => GetMessage("CP_BCT_TPL_TEMPLATE_THEME"),
-		'TYPE' => 'LIST',
-		'VALUES' => $arThemes,
-		'DEFAULT' => 'blue',
-		'ADDITIONAL_VALUES' => 'Y'
-	);
-}
-
 $arSKU = false;
 $boolSKU = false;
 if ($boolCatalog && (isset($arCurrentValues['IBLOCK_ID']) && 0 < intval($arCurrentValues['IBLOCK_ID'])))

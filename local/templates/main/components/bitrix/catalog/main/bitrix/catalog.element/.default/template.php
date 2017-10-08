@@ -19,8 +19,6 @@ if (!empty($arResult['CURRENCIES']))
 	$currencyList = CUtil::PhpToJSObject($arResult['CURRENCIES'], false, true, true);
 }
 $templateData = array(
-	'TEMPLATE_THEME' => $this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].'/style.css',
-	'TEMPLATE_CLASS' => 'bx_'.$arParams['TEMPLATE_THEME'],
 	'TEMPLATE_LIBRARY' => $templateLibrary,
 	'CURRENCIES' => $currencyList
 );
@@ -75,7 +73,7 @@ $strAlt = (
 	? $arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]
 	: $arResult['NAME']
 );
-?><div class="bx_item_detail <? echo $templateData['TEMPLATE_CLASS']; ?>" id="<? echo $arItemIDs['ID']; ?>">
+?><div class="bx_item_detail" id="<? echo $arItemIDs['ID']; ?>">
 <?
 if ('Y' == $arParams['DISPLAY_NAME'])
 {
@@ -607,7 +605,6 @@ if (isset($arResult['OFFERS']) && !empty($arResult['OFFERS']))
 		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
 		"CACHE_TIME" => $arParams["CACHE_TIME"],
 		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-		"TEMPLATE_THEME" => $arParams['~TEMPLATE_THEME'],
 		"CONVERT_CURRENCY" => $arParams['CONVERT_CURRENCY'],
 		"CURRENCY_ID" => $arParams["CURRENCY_ID"]
 	),
@@ -634,7 +631,6 @@ else
 		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
 		"CACHE_TIME" => $arParams["CACHE_TIME"],
 		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-		"TEMPLATE_THEME" => $arParams['~TEMPLATE_THEME'],
 		"CONVERT_CURRENCY" => $arParams['CONVERT_CURRENCY'],
 		"CURRENCY_ID" => $arParams["CURRENCY_ID"]
 	),
@@ -709,7 +705,6 @@ if ('Y' == $arParams['USE_COMMENTS'])
 		"FB_COLORSCHEME" => "light",
 		"FB_ORDER_BY" => "reverse_time",
 		"VK_TITLE" => "",
-		"TEMPLATE_THEME" => $arParams['~TEMPLATE_THEME']
 	),
 	$component,
 	array("HIDE_ICONS" => "Y")

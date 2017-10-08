@@ -123,7 +123,6 @@ else
 		'MESS_BTN_DETAIL' => $arParams['MESS_BTN_DETAIL'],
 		'MESS_NOT_AVAILABLE' => $arParams['MESS_NOT_AVAILABLE'],
 
-		'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : ''),
 		'ADD_TO_BASKET_ACTION' => $basketAction,
 		'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
 		'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare']

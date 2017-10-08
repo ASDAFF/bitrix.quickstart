@@ -12,13 +12,7 @@
 /** @var CBitrixComponent $component */
 
 $isAjax = ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["ajax_action"]) && $_POST["ajax_action"] == "Y");
-
-$templateData = array(
-	'TEMPLATE_THEME' => $this->GetFolder().'/themes/'.$arParams['TEMPLATE_THEME'].'/style.css',
-	'TEMPLATE_CLASS' => 'bx_'.$arParams['TEMPLATE_THEME']
-);
-
-?><div class="bx_compare <? echo $templateData['TEMPLATE_CLASS']; ?>" id="bx_catalog_compare_block"><?
+?><div class="bx_compare" id="bx_catalog_compare_block"><?
 if ($isAjax)
 {
 	$APPLICATION->RestartBuffer();

@@ -41,15 +41,6 @@ if (is_dir($dir))
 	}
 }
 
-$arTemplateParameters['TEMPLATE_THEME'] = array(
-	'PARENT' => 'VISUAL',
-	'NAME' => GetMessage("CP_BCE_TPL_TEMPLATE_THEME"),
-	'TYPE' => 'LIST',
-	'VALUES' => $arThemes,
-	'DEFAULT' => 'blue',
-	'ADDITIONAL_VALUES' => 'Y'
-);
-
 if (isset($arCurrentValues['IBLOCK_ID']) && 0 < intval($arCurrentValues['IBLOCK_ID']))
 {
 	$arAllPropList = array();

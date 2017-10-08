@@ -41,14 +41,6 @@ if (is_dir($dir))
 	}
 }
 
-$arTemplateParameters['TEMPLATE_THEME'] = array(
-	'PARENT' => 'VISUAL',
-	'NAME' => GetMessage("CP_BCS_TPL_TEMPLATE_THEME"),
-	'TYPE' => 'LIST',
-	'VALUES' => $arThemes,
-	'DEFAULT' => 'blue',
-	'ADDITIONAL_VALUES' => 'Y'
-);
 
 if ($boolSKU)
 {

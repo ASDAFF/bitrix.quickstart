@@ -126,7 +126,6 @@ if (!empty($arElements) && is_array($arElements))
 			'MESS_BTN_DETAIL' => $arParams['MESS_BTN_DETAIL'],
 			'MESS_NOT_AVAILABLE' => $arParams['MESS_NOT_AVAILABLE'],
 
-			'TEMPLATE_THEME' => $arParams['TEMPLATE_THEME'],
 			'ADD_TO_BASKET_ACTION' => (isset($arParams['ADD_TO_BASKET_ACTION']) ? $arParams['ADD_TO_BASKET_ACTION'] : ''),
 			'SHOW_CLOSE_POPUP' => (isset($arParams['SHOW_CLOSE_POPUP']) ? $arParams['SHOW_CLOSE_POPUP'] : ''),
 			'COMPARE_PATH' => $arParams['COMPARE_PATH']

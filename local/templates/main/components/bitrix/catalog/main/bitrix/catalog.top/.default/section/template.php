@@ -10,7 +10,7 @@
 /** @var array $templateData */
 global $APPLICATION;
 ?>
-<div class="bx_catalog_top_home col<? echo $arParams['LINE_ELEMENT_COUNT']; ?> <? echo $templateData['TEMPLATE_CLASS']; ?>">
+<div class="bx_catalog_top_home col<? echo $arParams['LINE_ELEMENT_COUNT']; ?>">
 <?
 foreach ($arResult['ITEMS'] as $key => $arItem)
 {

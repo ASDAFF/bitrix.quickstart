@@ -112,7 +112,6 @@ if($arParams["SHOW_TOP_ELEMENTS"]!="N")
 		'HIDE_NOT_AVAILABLE' => $arParams['HIDE_NOT_AVAILABLE'],
 		'VIEW_MODE' => (isset($arParams['TOP_VIEW_MODE']) ? $arParams['TOP_VIEW_MODE'] : ''),
 		'ROTATE_TIMER' => (isset($arParams['TOP_ROTATE_TIMER']) ? $arParams['TOP_ROTATE_TIMER'] : ''),
-		'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : ''),
 		'LABEL_PROP' => $arParams['LABEL_PROP'],
 		'ADD_PICT_PROP' => $arParams['ADD_PICT_PROP'],
 		'PRODUCT_DISPLAY_MODE' => $arParams['PRODUCT_DISPLAY_MODE'],

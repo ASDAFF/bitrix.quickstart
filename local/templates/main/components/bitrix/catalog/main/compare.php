@@ -48,7 +48,6 @@ $this->addExternalCss("/bitrix/css/main/bootstrap.css");
 		'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
 		'CURRENCY_ID' => $arParams['CURRENCY_ID'],
 		'HIDE_NOT_AVAILABLE' => $arParams['HIDE_NOT_AVAILABLE'],
-		'TEMPLATE_THEME' => (isset($arParams['TEMPLATE_THEME']) ? $arParams['TEMPLATE_THEME'] : '')
 	),
 	$component,
 	array("HIDE_ICONS" => "Y")

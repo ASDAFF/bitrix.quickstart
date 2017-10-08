@@ -99,8 +99,6 @@ if (!empty($arResult['ITEMS']))
 		$currencyList = CUtil::PhpToJSObject($arResult['CURRENCIES'], false, true, true);
 	}
 	$templateData = array(
-		'TEMPLATE_THEME' => $this->GetFolder().'/'.ToLower($arParams['VIEW_MODE']).'/themes/'.$arParams['TEMPLATE_THEME'].'/style.css',
-		'TEMPLATE_CLASS' => 'bx_'.$arParams['TEMPLATE_THEME'],
 		'TEMPLATE_LIBRARY' => $templateLibrary,
 		'CURRENCIES' => $currencyList
 	);

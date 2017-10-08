@@ -22,21 +22,8 @@ if (ModuleManager::isModuleInstalled('bitrix.eshop'))
 	$arThemes['site'] = GetMessage('CP_BCLL_TPL_THEME_SITE');
 }
 
-$arThemes['blue'] = GetMessage('CP_BCLL_TPL_THEME_BLUE');
-$arThemes['green'] = GetMessage('CP_BCLL_TPL_THEME_GREEN');
-$arThemes['red'] = GetMessage('CP_BCLL_TPL_THEME_RED');
-$arThemes['wood'] = GetMessage('CP_BCLL_TPL_THEME_WOOD');
-$arThemes['yellow'] = GetMessage('CP_BCLL_TPL_THEME_YELLOW');
-$arThemes['black'] = GetMessage('CP_BCLL_TPL_THEME_BLACK');
 
-$arTemplateParameters['TEMPLATE_THEME'] = array(
-	'PARENT' => 'VISUAL',
-	'NAME' => GetMessage("CP_BCLL_TPL_TEMPLATE_THEME"),
-	'TYPE' => 'LIST',
-	'VALUES' => $arThemes,
-	'DEFAULT' => 'blue',
-	'ADDITIONAL_VALUES' => 'Y'
-);
+
 
 if ($boolSKU)
 {

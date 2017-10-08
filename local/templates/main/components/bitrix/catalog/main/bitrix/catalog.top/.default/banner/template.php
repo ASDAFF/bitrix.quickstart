@@ -14,7 +14,7 @@ $strAllWidth = 100*$intCount;
 $arRowIDs = array();
 $strContID = 'bx_catalog_slider_'.$this->randString();
 ?>
-<div class="bx_slider_section <? echo $templateData['TEMPLATE_CLASS']; ?>" id="<? echo $strContID; ?>">
+<div class="bx_slider_section" id="<? echo $strContID; ?>">
 <div class="bx_slider_container" style="width:<? echo $strAllWidth; ?>%;">
 <?
 $boolFirst = true;

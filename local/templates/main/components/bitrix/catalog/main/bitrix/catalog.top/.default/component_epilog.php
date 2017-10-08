@@ -20,10 +20,7 @@ switch ($arParams['VIEW_MODE'])
 		$APPLICATION->SetAdditionalCSS($templateFolder.'/section/style.css');
 		break;
 }
-if (isset($templateData['TEMPLATE_THEME']))
-{
-	$APPLICATION->SetAdditionalCSS($templateData['TEMPLATE_THEME']);
-}
+
 if (isset($templateData['TEMPLATE_LIBRARY']) && !empty($templateData['TEMPLATE_LIBRARY']))
 {
 	$loadCurrency = false;

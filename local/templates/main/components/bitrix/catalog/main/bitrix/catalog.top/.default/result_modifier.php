@@ -10,7 +10,6 @@ $arViewModeList = array('BANNER','SLIDER', 'SECTION');
 
 $arDefaultParams = array(
 	'VIEW_MODE' => 'SECTION',
-	'TEMPLATE_THEME' => 'blue',
 	'PRODUCT_DISPLAY_MODE' => 'N',
 	'ADD_PICT_PROP' => '-',
 	'LABEL_PROP' => '-',
@@ -39,22 +38,6 @@ if (2 > $arParams['LINE_ELEMENT_COUNT'] || 5 < $arParams['LINE_ELEMENT_COUNT'])
 
 if (!in_array($arParams['VIEW_MODE'], $arViewModeList))
 	$arParams['VIEW_MODE'] = 'SECTION';
-$arParams['TEMPLATE_THEME'] = (string)($arParams['TEMPLATE_THEME']);
-if ('' != $arParams['TEMPLATE_THEME'])
-{
-	$arParams['TEMPLATE_THEME'] = preg_replace('/[^a-zA-Z0-9_\-\(\)\!]/', '', $arParams['TEMPLATE_THEME']);
-	if ('site' == $arParams['TEMPLATE_THEME'])
-	{
-		$arParams['TEMPLATE_THEME'] = COption::GetOptionString('main', 'wizard_eshop_adapt_theme_id', 'blue', SITE_ID);
-	}
-	if ('' != $arParams['TEMPLATE_THEME'])
-	{
-		if (!is_file($_SERVER['DOCUMENT_ROOT'].$this->GetFolder().'/'.ToLower($arParams['VIEW_MODE']).'/themes/'.$arParams['TEMPLATE_THEME'].'/style.css'))
-			$arParams['TEMPLATE_THEME'] = '';
-	}
-}
-if ('' == $arParams['TEMPLATE_THEME'])
-	$arParams['TEMPLATE_THEME'] = 'blue';
 
 if ('Y' != $arParams['PRODUCT_DISPLAY_MODE'])
 	$arParams['PRODUCT_DISPLAY_MODE'] = 'N';

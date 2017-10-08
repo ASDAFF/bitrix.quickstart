@@ -55,7 +55,6 @@ $APPLICATION->IncludeComponent(
 		"CONVERT_CURRENCY" => $arParams["CONVERT_CURRENCY"],
 		"CURRENCY_ID" => $arParams["CURRENCY_ID"],
 		"HIDE_NOT_AVAILABLE" => $arParams["HIDE_NOT_AVAILABLE"],
-		"TEMPLATE_THEME" => (isset($arParams["TEMPLATE_THEME"]) ? $arParams["TEMPLATE_THEME"] : ""),
 		"PRODUCT_DISPLAY_MODE" => (isset($arParams["PRODUCT_DISPLAY_MODE"]) ? $arParams["PRODUCT_DISPLAY_MODE"] : ""),
 		"ADD_PICT_PROP" => (isset($arParams["ADD_PICT_PROP"]) ? $arParams["ADD_PICT_PROP"] : ""),
 		"LABEL_PROP" => (isset($arParams["LABEL_PROP"]) ? $arParams["LABEL_PROP"] : ""),

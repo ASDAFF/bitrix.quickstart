@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 $intRowsCount = count($arResult['ITEMS']);
 $strRand = $this->randString();
 $strContID = 'cat_top_cont_'.$strRand;
-?><div id="<? echo $strContID; ?>" class="bx_catalog_tile_home_type_2 col<? echo $arParams['LINE_ELEMENT_COUNT']; ?> <? echo $templateData['TEMPLATE_CLASS']; ?>">
+?><div id="<? echo $strContID; ?>" class="bx_catalog_tile_home_type_2 col<? echo $arParams['LINE_ELEMENT_COUNT']; ?>">
 <div class="bx_catalog_tile_section">
 <?
 $boolFirst = true;

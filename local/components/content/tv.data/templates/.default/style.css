@@ -1,0 +1,46 @@
+.worktime {
+    width: 91px;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.ys-work {
+	float: left;
+	margin-right: 3px;
+	width: 7px;
+	height: 2px;
+	background: #35ab01;
+}
+
+.ys-weekend {
+	float: left; 
+	margin-right: 3px;
+	width: 7px;
+	height: 2px;
+	background: #c41e3a;
+}
+
+.ys-time-work {
+	padding-top: 3px;
+	color: #35ab01;
+	clear: both;
+}	
+
+.ys-time-weekend {
+	padding-top: 1px;
+	color: #c41e3a;
+}
+
+.ys-timeline {
+	position: relative;
+}
+
+.ys-lunch {
+	position: absolute;
+	padding-top: 5px;
+	display: none;
+	z-index: 110;
+	top: 100%;
+	background: rgba(255, 255, 255, 0.7);
+}

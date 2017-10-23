@@ -1,0 +1,24 @@
+<?
+	if( !defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true )
+		die();
+
+	$MESS["IBLOCK_PRICES"]               = "Prices";
+	$MESS["IBLOCK_TYPE"]                 = "Infoblock type";
+	$MESS["IBLOCK_IBLOCK"]               = "Infoblock";
+	$MESS["IBLOCK_PROPERTY"]             = "Properties";
+	$MESS["IBLOCK_PRICE_CODE"]           = "Price type";
+	$MESS["IBLOCK_FIELD"]                = "Fields";
+	$MESS["IBLOCK_FILTER_NAME_OUT"]      = "Name of result filter array";
+	$MESS["IBLOCK_LIST_HEIGHT"]          = "Height of multiselect list fields";
+	$MESS["IBLOCK_TEXT_WIDTH"]           = "Width of single line text fields";
+	$MESS["IBLOCK_NUMBER_WIDTH"]         = "Width of number interval fields";
+	$MESS["IBLOCK_SELECT_WIDTH"]         = "Ширина полей выпадающих списков";
+	$MESS["IBLOCK_SAVE_IN_SESSION"]      = "Store filter settings in user session";
+	$MESS["CP_BCF_CACHE_GROUPS"]         = "Respect Access Permissions";
+	$MESS["CP_BCF_OFFERS_FIELD_CODE"]    = "SKU Fields";
+	$MESS["CP_BCF_OFFERS_PROPERTY_CODE"] = "SKU Properties";
+	$MESS["REDIRECT_FOLDER"]             = "Каталог для отправки данных";
+	$MESS["ELEMENT_IN_ROW"]              = "Полей в одной строке";
+	$MESS["NAME_WIDTH"]                  = "Ширина названий полей";
+	$MESS["BUTTON_ALIGN"]                = "Выравнивание кнопок";
+	$MESS["FILTER_TITLE"]                = "Заголовок фильтра";

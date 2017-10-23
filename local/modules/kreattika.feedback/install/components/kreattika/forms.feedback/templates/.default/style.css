@@ -1,0 +1,33 @@
+.kff-feedback {}
+.kff-tab-form, .kff-tab-form tr, .kff-tab-form tr td { border: 0 none; }
+.kff-field-label { min-width: 150px; width:40%; padding-bottom:15px; }
+.kff-name, .kff-phone, .kff-email, .kff-captcha, .kff-text { width:100%; padding-bottom:15px; }
+.kff-name input, .kff-phone input, .kff-email input {
+ min-width: 250px; width:60%; 
+    background: #FFFFFF;
+    border: 1px solid #8CA3AE;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(215, 215, 215, 0.7) inset;
+    /*min-height: 25px;*/
+    padding: 5px 10px !important;
+}
+.kff-text textarea { 
+    min-width: 250px; 
+    width:60%; 
+    resize: none;
+    background: #FFFFFF;
+    border: 1px solid #8CA3AE;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(215, 215, 215, 0.7) inset;
+    padding: 5px 10px !important;
+}
+span.kff-req { color:red; }
+.kff-ok-text { color:green; font-weight:bold; padding-bottom: 1em; }
+.kff-feedback input[type="submit"] {
+    background: #FFFFFF;
+    border: 1px solid #8CA3AE;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(215, 215, 215, 0.7) inset;
+    cursor: pointer;
+    padding: 5px 10px !important;
+}

@@ -1,0 +1,41 @@
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_radio .afbf_radio_circle,
+.form.form_theme_blue .form_group .fileinput.load_file .form_control
+{
+	border-color:#0097f6;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_checkbox.toggle label input[type=checkbox]:checked + .afbf_checkbox_box:after,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_radio .afbf_radio_check
+{
+	background-color:#0097f6;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_btn{
+	color:#fff;
+	background:#0097f6;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_checkbox.toggle label input[type=checkbox]:checked + .afbf_checkbox_box
+{
+	background-color:#acdffc;
+}
+.form.form_theme_blue .form_group .fileinput.load_file label,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_checkbox input[type=checkbox]:checked+.afbf_checkbox_box .afbf_checkbox_check:before,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_filled .afbf_name,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_name {
+	color:#0097f6;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_select,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_textarea,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_inputtext,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_select,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_textarea,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_inputtext {
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#0097f6), to(#0097f6)), -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));
+	background-image:-webkit-linear-gradient(#0097f6, #0097f6), -webkit-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:-o-linear-gradient(#0097f6, #0097f6), -o-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:linear-gradient(#0097f6, #0097f6), linear-gradient(#e0e0e0, #e0e0e0);
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_select,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_textarea,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_inputtext,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_checkbox label {
+	color:#212121;
+}

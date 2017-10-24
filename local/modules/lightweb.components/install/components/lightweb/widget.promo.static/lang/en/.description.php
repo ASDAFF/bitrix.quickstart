@@ -1,0 +1,5 @@
+<?
+$MESS ['LW_WIDGETS_PROMO_STATIC_NAME'] = "Promo";
+$MESS ['LW_WIDGETS_PROMO_STATIC_DESC'] = "Promo";
+$MESS ['LW_WIDGETS'] = "Widgets";
+?>

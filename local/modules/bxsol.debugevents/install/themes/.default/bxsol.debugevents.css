@@ -1,0 +1,102 @@
+/**
+ * Mineev Aleksey (2016 ©)
+ * alekseym@bxsolutions.ru
+ */
+
+.bxsol__support {
+    margin: 10px 0;
+}
+
+.bxsol__support__rate_us {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #86ad00 !important;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .25), inset 0 1px 0 #cbdc00;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .25), inset 0 1px 0 #cbdc00;
+    border: solid 1px;
+    border-color: #97c004 #7ea502 #648900;
+    background-image: -webkit-linear-gradient(bottom, #729e00, #97ba00) !important;
+    background-image: -moz-linear-gradient(bottom, #729e00, #97ba00) !important;
+    background-image: -ms-linear-gradient(bottom, #729e00, #97ba00) !important;
+    background-image: -o-linear-gradient(bottom, #729e00, #97ba00) !important;
+    background-image: linear-gradient(bottom, #729e00, #97ba00) !important;
+}
+
+.bxsol_events__menu_icon, #bxsol_events__menu_icon {
+    background-image: url('icons/bxsol.debugevents/bxsol_debug_events17.svg');
+    background-position: 50%;
+    background-size: 17px 17px;
+}
+
+.bxsol_events--hidden {
+    display: none;
+}
+
+.bxsol_events__event--hidden {
+    display: none;
+}
+
+.bxsol_events__event_name {
+    font-weight: 600;
+}
+
+.bxsol_events__module_header {
+    border-bottom: 1px solid #ccc;
+}
+
+.bxsol_events__class-wrap {
+    width: 50%;
+    display: inline-block;
+    min-width: 500px;
+}
+
+.bxsol_events__class {
+    color: #0A4366;
+}
+
+.bxsol_events__class_method {
+    color: #990000;
+    display: inline-block;
+}
+
+.bxsol_events__class_source {
+    color: #0B91E5;
+}
+
+.bxsol_events__handlers {
+    background-color: #f5f5f5;
+    border: 1px dotted #808080;
+    margin-bottom: 30px;
+}
+
+.bxsol_events__handlers__sort {
+    margin-right: 20px;
+    color: #777;
+}
+
+.bxsol_events__handlers__hadler {
+    padding: 5px 3px;
+    margin: 0;
+}
+
+.bxsol_events__handlers__hadler:hover {
+    background-color: #e6e6e6;
+}
+
+.bxsol_events__search {
+    width: 40% !important;
+    display: block !important;
+}
+
+.bxsol_events__search--fixed {
+    position: fixed;
+    top: 10px;
+    left: 37%;
+}
+
+.bxsol_events__ev--highlighted {
+    background-color: yellow;
+}

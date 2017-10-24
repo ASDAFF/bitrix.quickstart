@@ -1,0 +1,82 @@
+.lw_include_file_arcticmodal-window {
+	width: calc(100vw - 100px);
+	background-color: #fff;
+	padding: 10px 10px 20px;
+	box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.16);
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 3px;
+	position: relative;
+}
+
+.lw_include_file_arcticmodal-window .cross {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 10px;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	background: url(./img/close.png) center no-repeat;
+	background-size: auto 100%;
+	cursor: pointer;
+}
+
+.lw_include_file_arcticmodal-window .close-window {
+	margin-top: 70px;
+}
+
+	
+.lw_include_file_arcticmodal-window h2 {
+	font-size: 30px;
+	font-weight: 700;
+	/* margin-bottom: 30px; */
+}
+
+.lw_include_file_arcticmodal-window p {
+	font-size: 14px;
+	text-align: left;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+.lw_include_file_arcticmodal-window p:nth-of-type(1) {
+	margin-top: 30px;
+}
+
+.lw_include_file_arcticmodal-window ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 20px;
+}
+
+.lw_include_file_arcticmodal-window ul li {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+	.lw_include_file_arcticmodal-window {
+		width: 700px;
+		padding: 20px 40px 50px;
+	}
+
+	.lw_include_file_arcticmodal-window .cross {
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		top: 20px;
+		right: 20px;
+	}
+
+	.lw_include_file_arcticmodal-window .close-window {
+		margin-top: 90px;
+	}
+
+	.lw_include_file_arcticmodal-window p:nth-of-type(1) {
+		margin-top: 50px;
+	}
+
+}

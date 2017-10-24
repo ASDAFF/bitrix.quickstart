@@ -1,0 +1,37 @@
+<?
+$MESS ['SALE_MODULE_NOT_INSTALL'] = "e-Store module is not installed";
+$MESS ['SALE_BASKET_EMPTY'] = "Your basket is empty";
+$MESS ['SALE_NO_PERS_TYPE'] = "Payer type not selected.";
+$MESS ['SALE_PERS_TYPE_NOT_FOUND'] = "Payer type not not found.";
+$MESS ['SALE_EMPTY_FIELD'] = "This field is empty: ";
+$MESS ['SALE_DELIVERY_NOT_FOUND'] = "Shipping method not found.";
+$MESS ['SALE_NO_PAY_SYS'] = "Payment method not selected.";
+$MESS ['SALE_PAY_SYS_NOT_FOUND'] = "Payment method not found.";
+$MESS ['SALE_ERROR_ADD_ORDER'] = "Error saving the order.";
+$MESS ['SALE_PROFILE_NAME'] = "Profile";
+$MESS ['SALE_QUANTITY_UNIT'] = "pcs.";
+$MESS ['SALE_DELIV_PERIOD'] = "Shipping period ";
+$MESS ['SALE_FROM'] = "from";
+$MESS ['SALE_TO'] = "to";
+$MESS ['SALE_PER_DAY'] = "days";
+$MESS ['SALE_PER_HOUR'] = "hours";
+$MESS ['SALE_PER_MONTH'] = "months";
+$MESS ['SALE_YES'] = "Yes";
+$MESS ['SALE_NO'] = "No";
+$MESS ['SALE_TAX_INPRICE'] = "is included in the price";
+$MESS ['STOF_ERROR_AUTH_LOGIN'] = "Authorisation error: please enter your login";
+$MESS ['STOF_ERROR_AUTH'] = "Authorisation error";
+$MESS ['STOF_ERROR_REG_NAME'] = "Registration error: please enter your name";
+$MESS ['STOF_ERROR_REG_LASTNAME'] = "Registration error: please enter your last name";
+$MESS ['STOF_ERROR_REG_EMAIL'] = "Registration error: please enter your e-mail address";
+$MESS ['STOF_ERROR_REG_BAD_EMAIL'] = "Registration error: please check whether your e-mail is typed correctly";
+$MESS ['STOF_ERROR_REG_FLAG'] = "Registration error: please enter the desired login or let the system generate it automatically";
+$MESS ['STOF_ERROR_REG_FLAG1'] = "Registration error: please enter the desired password or let the system generate it automatically";
+$MESS ['STOF_ERROR_REG_PASS'] = "Registration error: the password confirmation doesn't match the password";
+$MESS ['STOF_ERROR_REG'] = "Registration error";
+$MESS ['STOF_AUTH'] = "Authorisation";
+$MESS ['STOF_MAKING_ORDER'] = "Your order";
+$MESS ['INFO_REQ'] = "You have been successfully registered.";
+$MESS ['STOF_VAT'] = "VAT";
+$MESS ['STOF_ERROR_REG_CONFIRM'] = "You have successfully registered. The registration confirmation message has been sent to your e-mail add?ess.";
+?>

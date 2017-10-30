@@ -1,0 +1,292 @@
+.alx_feed_back_theme1
+{
+        padding: 0px;
+        margin: 0px;
+	text-transform:none !important;
+	text-align:left !important;
+	line-height:normal !important;
+	text-decoration:none !important;
+}
+.alx_feed_back_theme1 *
+{
+	text-transform:none !important;
+	text-align:left !important;
+	line-height:normal !important;
+	text-decoration:none !important;
+}
+.alx_feed_back_theme1 form
+{
+        padding: 0px;
+        margin: 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block
+{
+        padding: 10px 10px 8px 10px !important;
+        margin: 0px 0px 27px 0px !important;
+        background-image:url(images/bg_mess.png);
+        background-position:0px 0px;
+        border: 1px solid #959595 !important;
+}
+*html .alx_feed_back_theme1 .alx_feed_back_form_error_block
+{
+       -background-image:url(images/spacer.gif);
+        -background-position:0px 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block td
+{
+         vertical-align:top;
+        text-align:left;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_pic
+{
+        vertical-align:top;
+        text-align:left;
+        width:1%;
+        padding-left:1px !important;
+        padding-top:3px !important;
+        border-right:1px solid #D7D7D7 !important;
+        padding-right:11px !important;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block .alx_feed_back_form_title_error
+{
+        margin: 0px 0px 4px 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block .alx_feed_back_form_error_td_list
+{
+        padding-left:10px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block .alx_feed_back_form_mess_ok_td_list
+{
+        padding-left:10px;
+        vertical-align:middle;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block ul
+{
+        padding: 0px;
+        margin: 0px;
+        list-style:none;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block ul li
+{
+        padding: 0px 0px 4px 8px;
+        margin: 0px;
+	display:block;
+        list-style:none !important;
+	background:transparent !important;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block ul li:before
+{
+	content: '' !important;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_error_block ul li span
+{
+        position:relative;
+        z-index:1;
+        margin-left:-8px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles
+{
+        padding: 0px;
+        margin: 11px 0px 0px 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole
+{
+        padding: 0px;
+        margin: 0px 0px 10px 0px;
+}
+*html .alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole
+{
+        position:relative;
+        z-index:1;
+        zoom:1;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_name
+{
+        padding: 0px;
+        margin: 0px 0px 6px 0px;
+
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg
+{
+        border:1px solid #959595;
+        background:#ffffff;
+        padding: 6px 8px 6px 8px;
+       
+
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg input
+{
+        width:100%;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        background:transparent;
+}
+*html .alx_feed_back_theme1 .alx_feed_back_form_textarea_bg
+{
+        overflow:visible;
+        border: 0px;
+        position:relative;
+        zoom:1;
+
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg textarea
+{
+        width:100%;
+        padding: 0px !important;
+        margin: 0px;
+        border: 0px;
+        z-index:100;
+        height:77px;
+        overflow:auto;
+        background:transparent;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_submit_block
+{
+        margin: 23px 0px 0px 0px;
+        padding: 0px;
+        display:block;
+        float:left;
+        border:1px solid #959595;
+        background:url(images/bg_submit.gif) 0px 0px repeat-x;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_submit_block input
+{
+        border: 0px;
+        cursor:pointer;
+        height:28px;
+        overflow:visible;
+        font:normal 12px tahoma, sans-serif;
+        /*color:#818181;*/
+        color:black;
+        padding: 0px 40px 0px 40px;
+        background:transparent;
+
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputtext_bg select
+{
+        width:100%;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg_file
+{
+        border:1px solid #959595;
+        background:#ffffff;
+        position:relative;
+        z-index:1;
+        overflow:hidden;
+        padding: 6px 8px 6px 8px;
+
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_file_button
+{
+        position:absolute;
+        right: -1px;
+        height:100%;
+        top: -1px;
+        z-index:1;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_file_button .alx_feed_back_form_file_button_bg
+{
+        display:block;
+        height:100%;
+        color:#818181;
+        float:right;
+        border:1px solid #959595 !important;
+        background:url(images/bg_submit.gif) 0px 0px repeat-x #E6E6E6;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_file_button .alx_feed_back_form_file_button_bg span
+{
+        padding: 6px 30px 6px 30px;
+        display:block;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_filename
+{
+        padding: 0px;
+        margin: 0px;
+        white-space:nowrap;
+}
+*html .alx_feed_back_theme1 .alx_feed_back_form_feedback_poles div
+{
+        zoom:1;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputfile_s
+{
+        width:100%;
+	font-size:200px;
+	z-index:1000;
+	position:absolute;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputfile_s div
+{
+        width:100px;
+	font-size:200px;
+	z-index:1000;
+	position:absolute;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+	right: 0px;
+	zoom:1;
+	overflow:hidden;
+	height:100px;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputfile_s .alx_feed_back_form_file_input_add
+{
+	width:100%;
+	font-size:200px;
+	z-index:1000;
+	position:absolute;
+	padding: 0px;
+	margin: 0px;
+	filter: alpha(Opacity=0);
+ 	-moz-opacity: 0.0;
+        -khtml-opacity: 0.0;
+        opacity: 0.0;
+	top: 0px;
+	right: 0px;
+	cursor:pointer;
+	cursor:hand;
+}
+*html .alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputfile_s .alx_feed_back_form_file_input_add
+{
+        display:block;
+        height:100px;
+        width:100px;
+         filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5;
+        zoom:1;
+        border:0px solid red;
+}
+*:first-child+html .alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_inputfile_s .alx_feed_back_form_file_input_add
+{
+        display:block;
+        height:100px;
+        width:100px;
+         filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5;
+        zoom:1;
+        border:0px solid red;
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg_calendar
+{
+	position:relative;
+	z-index:2;
+	zoom:1;	
+}
+.alx_feed_back_theme1 .alx_feed_back_form_feedback_poles .alx_feed_back_form_item_pole .alx_feed_back_form_inputtext_bg_calendar .alx_feed_back_form_calendar_icon
+{
+	position:absolute;
+	top:3px;
+	right:5px;	
+}

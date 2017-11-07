@@ -49,6 +49,12 @@ function isNotEmpty(elem) {
     }
 }
 
+//Функция вызова всплывающего окна popup (работает совместно с плагином fancybox)
+function popUp() {
+    $.fancybox.open('<div class="lightbox thanks-popup" id="popup03"><span class="title">Заявка отправлена</span><p>В ближайшее время с вами свяжется наш менеджер.</p></div>');
+    $('.consult-form').trigger('reset');
+}
+
 // Проверка в режиме реального времени
 setInterval(function(){
     // Запускаем функцию проверки полей на заполненность

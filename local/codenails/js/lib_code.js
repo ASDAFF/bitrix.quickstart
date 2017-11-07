@@ -85,7 +85,7 @@ $('form').find('.btn_submit').click(function(){
     }
 });
 
-/* с плагином jquery.validate.js
+/* (работает совместно с плагином jquery.validate.js)
  * http://jqueryvalidation.org/
  * "Плавное исчезновение подсказки" */
 $('.contact-form input[type="tel"]').bind('focus', function () {

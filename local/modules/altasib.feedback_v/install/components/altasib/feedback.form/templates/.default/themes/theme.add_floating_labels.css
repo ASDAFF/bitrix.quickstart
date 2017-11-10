@@ -1,0 +1,33 @@
+/* Adding floating label. Class form_labels_floating */
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_name
+{
+	position:absolute;
+	top:10px;
+	left:6px;
+	pointer-events:none;
+	font-size:16px;
+	z-index:10;
+	-webkit-transition:0.3s ease all;
+	-o-transition:0.3s ease all;
+	transition:0.3s ease all;
+ }
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .fileinput.load_file .afbf_name
+{
+	top:-20px;
+	left:0;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_filled .afbf_name,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_name {
+	top:-15px;
+	left:0;
+	font-size:12px;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.item_pole__captcha .afbf_name
+{
+	top:80px;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.item_pole__captcha.is_filled .afbf_name,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.item_pole__captcha.is_focused .afbf_name
+{
+	top:55px;
+}

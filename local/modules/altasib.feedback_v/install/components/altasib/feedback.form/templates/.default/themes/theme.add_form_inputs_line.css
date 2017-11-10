@@ -1,0 +1,24 @@
+/* Fields without borders. Class form_inputs_line */
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_select,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_textarea,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole .afbf_inputtext {
+	border:none;
+	background-size:0 2px, 100% 1px;
+	background-repeat:no-repeat;
+	background-position:center bottom, center -webkit-calc(100% - 1px);
+	background-position:center bottom, center calc(100% - 1px);
+	-webkit-transition:background 0s ease-out;
+	-o-transition:background 0s ease-out;
+	transition:background 0s ease-out;
+}
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_select,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_textarea,
+.alx_feed_back .afbf_feedback_poles .afbf_item_pole.is_focused .afbf_inputtext {
+	-webkit-background-size:100% 2px, 100% 1px;
+	background-size:100% 2px, 100% 1px;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-webkit-transition-duration:0.3s;
+	-o-transition-duration:0.3s;
+	transition-duration:0.3s;
+}

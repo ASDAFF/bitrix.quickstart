@@ -1,7 +1,7 @@
 <?
-$MESS ['IBLOCK_INSTALL_NAME'] = "Ìåíþ èç ýëåìåíòîâ";
-$MESS ['IBLOCK_INSTALL_DESCRIPTION'] = "Ìîäóëü äëÿ ñîçäàíèÿ ïóêòîâ ìåíþ èç ýëåìåíòîâ èíôîáîêà.";
-$MESS ['IBLOCK_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ \"Ìåíþ èç ýëåìåíòîâ\"";
+$MESS ['IBLOCK_INSTALL_NAME'] = "ÐœÐµÐ½ÑŽ Ð¸Ð· ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+$MESS ['IBLOCK_INSTALL_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð»Ñ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð¿ÑƒÐºÑ‚Ð¾Ð² Ð¼ÐµÐ½ÑŽ Ð¸Ð· ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð¾ÐºÐ°.";
+$MESS ['IBLOCK_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ \"ÐœÐµÐ½ÑŽ Ð¸Ð· ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²\"";
 $MESS["SPER_PARTNER"] = "tsoft";
 $MESS["PARTNER_URI"] = "http://www.1c-bitrix.ru/partners/208898.php"; 
 ?>

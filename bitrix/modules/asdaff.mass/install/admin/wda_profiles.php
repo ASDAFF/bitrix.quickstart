@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.mass/admin/wda_profiles.php");?>

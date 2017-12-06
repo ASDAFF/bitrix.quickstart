@@ -1,0 +1,9 @@
+.api_icon{
+	display: inline-block;
+	vertical-align: middle;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	fill: currentcolor;
+	line-height: 0;
+}

@@ -1,0 +1,25 @@
+/* ========================================================================
+   Component: Width
+ ========================================================================== */
+[class*='api_width'] {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+}
+
+.api_width_1_1 { width: 100%; }
+.api_width_1_2 { width: 50%; }
+
+.api_grid{overflow: hidden}
+.api_grid > div{
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+	float: left;
+	width: 100%;
+	max-width: 100%;
+}
+.api_grid_width_1_2 > div{
+	width: 50%;
+}
+.api_grid_width_1_3 > div{
+	width: 33.33333333333333%;
+}

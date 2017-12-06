@@ -1,0 +1,11 @@
+/* api-row-accept */
+.api-auth-restore .api-row-accept .api_control{position: relative}
+.api-auth-restore .api-accept-label {font-size: 12px;line-height:18px; font-weight: bold;cursor: pointer;padding-left: 20px;display: block;}
+.api-auth-restore .api-accept-label input{cursor: pointer;position: absolute;left: 0;top: 3px;margin: 0;padding: 0;}
+.api-auth-restore .api-accept-text{color: #337ab7;text-decoration: none;cursor: pointer}
+.api-auth-restore .api-accept-text:hover,
+.api-auth-restore .api-accept-text:focus{color: #23527c;}
+.api-auth-restore .api-accept-text p{font: inherit; margin: 0}
+.api-auth-restore .api-accept-text p + p{margin-top: 8px}
+.api-auth-restore .api-accept-desc{display: none;}
+.api-auth-restore .api-row-accept .api-error {font-size: 12px;color: #ff3737;display: none}

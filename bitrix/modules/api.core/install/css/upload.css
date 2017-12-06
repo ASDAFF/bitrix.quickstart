@@ -1,0 +1,142 @@
+/* ========================================================================
+   Component: Upload
+ ========================================================================== */
+.api_upload *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api_upload{ margin: 0 0 15px }
+.api_upload .api_file_list{ list-style: none; margin: 0; padding: 0; }
+.api_upload .api_file_list li{ margin: 0 0 10px; position: relative; height: 28px; line-height: 28px }
+.api_upload .api_upload_file{ position: absolute; z-index: 10; width: 100%; height: 100%; cursor: pointer; left: 0; right: 0; top: 0; bottom: 0; opacity: 0; filter: alpha(opacity=0); }
+.api_upload .api_upload_info{ font-size: 13px; color: #7a7a7a; font-family: Tahoma, Helvetica, Arial, sans-serif; }
+.api_upload .api_upload_drop{
+	position: relative;
+	margin-bottom: 15px;
+	padding: 15px;
+	border: 2px dashed #ddd;
+	background: #fafafa;
+	/*color: #aebac3;*/
+	color: #666;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all 0.1s ease-out 0s;
+	-moz-transition: all 0.1s ease-out 0s;
+	-ms-transition: all 0.1s ease-out 0s;
+	-o-transition: all 0.1s ease-out 0s;
+	transition: all 0.1s ease-out 0s;
+}
+.api_upload .api_upload_drop.api_dragover,
+.api_upload .api_upload_drop:hover{ cursor: pointer; border: 2px dashed #929ba1; color: #929ba1; box-shadow: 0 0 15px rgba(100, 100, 100, .2) }
+.api_upload .api_upload_drop > :last-child{ margin-bottom: 0 }
+.api_upload .api_upload_drop > span{ display: inline-block; vertical-align: middle }
+.api_upload .api_upload_drop .api_upload_drop_icon{
+	background: url("images/upload/cloud_upload.svg") no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+}
+.api_upload .api_progress_bar{ position: absolute; top: 0; right: 0; left: 0; bottom: 0; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
+.api_upload .api_error .api_progress_bar{ background: #fcafbb }
+.api_upload .api_error .api_progress_bar .api_progress{ width: 0 !important; }
+.api_upload .api_progress_bar .api_progress{
+	height: 100%;
+	width: 0;
+	background: #ffeca6;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset;
+	-moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset;
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset;
+	-webkit-transition: width 0.5s ease-out 0s;
+	-moz-transition: width 0.5s ease-out 0s;
+	-ms-transition: width 0.5s ease-out 0s;
+	-o-transition: width 0.5s ease-out 0s;
+	transition: width 0.5s ease-out 0s;
+}
+.api_upload .api_progress_bar .api_progress{
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, .25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+	background-size: 30px 30px
+}
+.api_upload .api_progress_bar .api_progress.api_active{
+	-webkit-animation: api_progress_bar_stripes 500ms linear infinite;
+	animation: api_progress_bar_stripes 500ms linear infinite
+}
+@-webkit-keyframes api_progress_bar_stripes{
+	0%{ background-position: 0 0 }
+	100%{ background-position: 30px 0 }
+}
+@keyframes api_progress_bar_stripes{
+	0%{ background-position: 0 0 }
+	100%{ background-position: 30px 0 }
+}
+.api_upload .api_progress_bar .api_file_remove{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYAAAArzdW1AAAAVklEQVR42nWOgQnAMAgE3aCjOJEDuY3DZJ8rqZYipg8KPgen7GACvpAKLFCBgCxcYfeSYAHVFUhYHqdRR96w/A/40hRNzXUAJpiQdcVQB+QuYPxo8XQ33NCTVnhoHP8AAAAASUVORK5CYII=") no-repeat 50% 50%;
+	width: 28px;
+	cursor: pointer;
+	opacity: .6;
+}
+.api_upload .api_progress_bar .api_file_remove:hover{ opacity: 1 }
+.api_upload .api_file_label{
+	position: absolute;
+	top: 0;
+	left: 8px;
+	right: 32px;
+	bottom: 0;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.api_upload .api_file_label span{ display: inline-block; }
+.api_upload .api_file_size:before{ content: "-"; margin: 0 5px; }
+.api_upload .api_upload_button{ height: 27px; }
+[class^="api_file_ext"]{
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin: 0 3px -3px 0;
+	background-image: url("images/upload/file_ext.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.api_file_ext_zip,
+.api_file_ext_zipx,
+.api_file_ext_rar,
+.api_file_ext_7z,
+.api_file_ext_cab,
+.api_file_ext_cbr,
+.api_file_ext_deb,
+.api_file_ext_gz,
+.api_file_ext_gzip,
+.api_file_ext_bzip,
+.api_file_ext_jar,
+.api_file_ext_tar,
+.api_file_ext_tar-gz,
+.api_file_ext_tgz,
+.api_file_ext_xar,
+.api_file_ext_arj{ background-position: -16px 0; }
+.api_file_ext_gif{ background-position: -32px 0; }
+.api_file_ext_jpg,
+.api_file_ext_jpeg{ background-position: -48px 0; }
+.api_file_ext_png{ background-position: -64px 0; }
+.api_file_ext_cml{ background-position: -80px 0; }
+.api_file_ext_exe{ background-position: -96px 0; }
+.api_file_ext_mkv{ background-position: -112px 0; }
+.api_file_ext_mov{ background-position: -128px 0; }
+.api_file_ext_wmv{ background-position: -144px 0; }
+.api_file_ext_mp4{ background-position: -160px 0; }
+.api_file_ext_avi{ background-position: -176px 0; }
+.api_file_ext_ods,
+.api_file_ext_xls,
+.api_file_ext_xlsx{ background-position: -192px 0; }
+.api_file_ext_odt,
+.api_file_ext_doc,
+.api_file_ext_docx{ background-position: -208px 0; }
+.api_file_ext_txt{ background-position: -224px 0; }
+.api_file_ext_pdf{ background-position: -240px 0; }
+.api_file_ext_odp,
+.api_file_ext_ppt{ background-position: -256px 0; }
+.api_file_ext_ogg{ background-position: -272px 0; }
+.api_file_ext_mp3{ background-position: -288px 0; }
+.api_file_ext_waw{ background-position: -304px 0; }
+.api_file_ext_wma{ background-position: -320px 0; }

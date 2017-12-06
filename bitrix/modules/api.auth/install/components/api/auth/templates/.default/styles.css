@@ -1,0 +1,4 @@
+.api-auth *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-auth{ max-width: 500px }
+.api-auth .api_link{ color: #07d; text-decoration: none; cursor: pointer; display: inline-block; border-bottom: 1px dotted; margin: 0 3px; }
+.api-auth .api_link:hover{ color: #f00; }

@@ -1,0 +1,10 @@
+<?php
+$MESS["IBLOCK_TYPE"] = "IBLOCK TYPE";
+$MESS["IBLOCK_IBLOCK"] = "IBLOCK";
+$MESS["IBLOCK_ELEMENT_ID"] = "ELEMENT ID";
+$MESS["IBLOCK_ELEMENT_CODE"] = "ELEMENT CODE";
+$MESS["HLBLOCK_PROP_CODE"] = "Table with comments";
+$MESS["HLBLOCK_CR_PROP_CODE"] = "Table with the evaluation criteria";
+$MESS["EMARKET_COMMENT_MODERATION_SETTINGS"] = "Moderation settings";
+$MESS["EMARKET_COMMENT_PREMODERATION"] = "Moderated posts";
+?>

@@ -1,0 +1,8 @@
+/*Menu icon*/
+.dev2fun_compressimage_menu_icon {
+    background-image:url('icons/dev2fun.imagecompress/dev2fun_imagecompress.png');
+    background-position: 9px 4px;
+}
+#dev2fun_compressimage_menu_icon {
+    background-image:url('icons/dev2fun.imagecompress/dev2fun_imagecompress.png');
+}

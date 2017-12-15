@@ -1,0 +1,27 @@
+/*Table*/
+table.sale_personal_profile_detail
+{
+	width:100%;
+	border-collapse:collapse;
+	font-size:12px;
+}
+
+/*Table head*/
+table.sale_personal_profile_detail th
+{
+	background: none repeat scroll 0 0 #F5F5F5;
+    color: #000000;
+    font-size: 14px;
+    min-height: 39px;
+    padding: 0 5px;
+}
+
+/* Table cells and heads*/
+table.sale_personal_profile_detail th, table.sale_personal_profile_detail td
+{
+	border:1px solid #C9C9C9;
+	padding: 3px 5px;
+	vertical-align:top;
+}
+
+.req{color:red;}

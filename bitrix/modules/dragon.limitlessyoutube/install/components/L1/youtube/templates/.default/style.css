@@ -1,0 +1,49 @@
+.l1-youtube-player
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.l1-youtube-back, .l1-youtube-play, .l1-youtube-background
+{
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	display: none;
+}
+
+.l1-youtube-back
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000000 repeat;
+}
+
+.l1-youtube-play
+{
+	display: none;
+	cursor: pointer;
+	background: url('images/play.png') no-repeat center;
+}
+
+.l1-youtube-preload
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	bottom: 0;
+	display: block;
+	text-align: center;
+	margin-top: -14px;
+	font-size: 14px;
+	color: #FFF;
+	cursor: default;
+	outline: none;
+	font-family: Tahoma, "Helvetica CY", "Nimbus Sans L", sans-serif;
+}

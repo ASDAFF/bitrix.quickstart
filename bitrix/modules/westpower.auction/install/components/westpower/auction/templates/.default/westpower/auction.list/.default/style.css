@@ -1,0 +1,86 @@
+.auction-list {
+	width:100%;
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.auction-list td {
+	vertical-align:top;
+	text-align:left;
+}
+.auction-btn {
+	display:inline-block;
+	padding: 5px 10px;
+	border-radius: 3px 3px;
+	border: solid 1px rgb(153, 153, 153);	
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	line-height: 1;
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #dedede 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc),color-stop(100%,#dedede));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: linear-gradient(to bottom, #fcfcfc 0%,#dedede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#dedede',GradientType=0 );
+	margin:10px 0;
+}
+.auction-btn:hover {
+	color: #555;
+	background: #dedede;
+}
+.auction-item {
+	border:1px solid #ccc;
+	border-radius:10px;
+	background:#fff;
+	width:200px;
+	text-align:center;
+	margin:0 10px 15px 0;
+	padding:10px;
+}
+.auction-lot-img {
+	margin-bottom:10px;
+	display:block;
+	height:150px;
+	overflow:hidden;
+}
+.auction-name,
+.auction-lot {
+	margin:5px 0;
+	display:block;
+	overflow:hidden;
+	line-height:14px;
+	height:30px;
+}
+.timer-val {
+	display:none;	
+}
+.auction-begin-price {
+	color:#DE3669;
+	font-size:16px;
+	font-weight:bold;
+	margin-top:5px;
+}
+.auction-last-bets {
+	color:#666;
+	font-size:14px;
+	margin-top:5px;
+}
+.auction-begin-price_title {
+	text-align:center;
+}
+.auction-timer {
+	margin:10px 0;
+	font-size:18px;
+	color:#2A8DB8;
+}
+.auction-timer.end {
+	color:#DE3669;
+}
+.auction-begin {
+	margin-top:5px;
+}

@@ -1,0 +1,37 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+
+<?$APPLICATION->IncludeComponent(
+	"westpower:auction.detail",
+	"page",
+	Array(
+		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+		"CACHE_TIME" => $arParams["CACHE_TIME"],
+		"AUCTION_IBLOCK_TYPE" => $arParams["AUCTION_IBLOCK_TYPE"],
+		"AUCTION_IBLOCK_ID" => $arParams["AUCTION_IBLOCK_ID"],
+		"BETS_IBLOCK_TYPE" => $arParams["BETS_IBLOCK_TYPE"],
+		"BETS_IBLOCK_ID" => $arParams["BETS_IBLOCK_ID"],
+		"ELEMENT_ID" => $arParams["ELEMENT_ID"],
+		"ELEMENT_CODE" => $arParams["ELEMENT_CODE"],
+		"IBLOCK_URL" => $arParams["IBLOCK_URL"],
+		"AUCTION_JQUERY" => $arParams["AUCTION_JQUERY"],
+		"AUCTION_PERMISSIONS" => $arParams["AUCTION_PERMISSIONS"],
+		"AUCTION_HIDE" => $arParams["AUCTION_HIDE"],
+		"AUCTION_BUY_LOT" => $arParams["AUCTION_BUY_LOT"],
+		"AUCTION_SHOW_NAME" => $arParams["AUCTION_LOT"],
+		"AUCTION_EDIT_PRICE" => $arParams["AUCTION_EDIT_PRICE"],
+		"AUCTION_DOUBLE_BETS" => $arParams["AUCTION_DOUBLE_BETS"],
+		"AUCTION_PRICE_CONFIRM" => $arParams["AUCTION_PRICE_CONFIRM"],
+		"AUCTION_CHAT" => $arParams["AUCTION_CHAT"],
+		"AUCTION_EXTEND" => $arParams["AUCTION_EXTEND"],
+		"AUCTION_INTERVAL" => $arParams["AUCTION_INTERVAL"],
+		"AUCTION_MAX_BUY" => $arParams["AUCTION_MAX_BUY"],
+		"PRICE_CODE" => $arParams["PRICE_CODE"],
+		"COUNT_BETS" => $arParams["COUNT_BETS"],
+		"AVATAR_WIDTH" => $arParams["AVATAR_WIDTH"],
+		"AVATAR_HEIGHT" => $arParams["AVATAR_HEIGHT"],
+		"IMAGE_WIDTH" => $arParams["IMAGE_WIDTH"],
+		"IMAGE_HEIGHT" => $arParams["IMAGE_HEIGHT"],
+		"AUCTION_SET_TITLE" => $arParams["AUCTION_SET_TITLE"],
+	),
+	$component
+);?>

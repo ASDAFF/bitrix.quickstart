@@ -1,0 +1,275 @@
+/* message */
+.message {
+	padding:10px;
+	font-size:12px;
+	margin:0 0 10px 0;
+	border-radius:4px;
+}
+.message.error {
+	background:#ffdedd;
+	color:#a00000;
+	border:1px solid #a00000;
+}
+.message.ok {
+	background:#e7ffcb;
+	color:#809b21;
+	border:1px solid #809b21;
+}
+.informer {
+	background:#daf1f7;
+	border-radius:4px;
+	border:1px solid #abe9f9;
+	margin:10px 0;
+	padding:10px;
+	color:#007acf;
+	font-size:14px;
+}
+.auction-clear {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	font-size:0px;
+	line-height:0px;
+}
+.auction-hide {
+	display:none;
+}
+
+/* button */
+.auction-btn {
+	padding: 5px 10px;
+	border-radius: 3px 3px;
+	border: solid 1px rgb(153, 153, 153);	
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	line-height: 1;
+	background: #fcfcfc;
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #dedede 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc),color-stop(100%,#dedede));
+	background: -webkit-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: -o-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: -ms-linear-gradient(top, #fcfcfc 0%,#dedede 100%);
+	background: linear-gradient(to bottom, #fcfcfc 0%,#dedede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#dedede',GradientType=0 );
+}
+.auction-btn:hover {
+	background: #dedede;
+}
+
+/* Tabs */
+.auction-tabs {
+	position: relative;
+	clear: both;
+	margin: 10px 0;	
+	width:97%;
+	height:640px;
+}
+.auction-tab {
+	float:left;
+}
+.auction-tab input[type=radio] {
+	display: none;   
+}
+.auction-tab label {
+	color:#000;
+	margin:0 3px 0 0;
+	padding:10px 20px 7px;
+	border-radius:4px 4px 0 0;
+	position:relative;
+	bottom:0;
+	display:inline-block;
+	cursor:pointer;
+	border:0;
+	z-index:100;
+}
+.auction-tab label:hover {
+	background:#ddd;
+}
+.auction-tab input[type=radio]:checked ~ label {
+	border:1px solid #ddd;
+	border-bottom:0;
+	z-index:100;
+	position:relative;
+	background-color:#fff;
+}
+.auction-content {
+	position:absolute;
+	top: 35px;
+	left: 0;
+	overflow: hidden;
+	background:#fff;
+	border-radius:2px;
+	margin:-2px 0 0 0;
+	padding:10px;
+	z-index:210;
+	clear: both;
+	display:none;
+	width:100%;
+	z-index:10;
+	border:1px solid #ddd;
+	border-radius:0 0 4px 4px;
+}
+.auction-tab input[type=radio]:checked ~ .auction-content {
+	display:block;
+}
+
+/* Auction content */
+.auction-data {
+	width:100%;
+}
+.auction-data-item{
+	width:50%;
+	vertical-align:top;
+}
+.auction-price {
+	color:#DE3669;
+	float:left;
+	margin-right:10px;
+	font-size:20px;
+	padding-top:2px;
+}
+.auction-price.victory {
+	float:none;
+	display:inline-block;
+}
+.auction-price-title {
+	margin:0 0 10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.auction-params {
+	font-size:15px;
+	width:100%;
+	margin-left:15px;
+}
+.auction-params td {
+	vertical-align:top;
+	text-align:left;
+}
+.auction-params-title {
+	font-size:16px;
+	width:31%;
+}
+.auction-params-item {
+	background:#E1EDF2;
+	padding:3px 5px;
+	color:#000;
+	font-weight:bold;
+	margin-bottom:10px;
+	display:inline-block;
+}
+.auction-time {
+	font-size:20px;
+	color:#2A8DB8;
+}
+
+.auction-time.end,
+.timer.end {
+	color:#DE3669;
+}
+.auction-take-off {
+	color:#DE3669;
+	font-size:12px;
+}
+.auction-input {
+	border:1px solid #999;
+	padding:2px 5px;
+	border-radius:3px;
+	color:#DE3669;
+	font-size:20px;
+	float:left;
+	margin-right:5px;
+	width:100px;
+}
+.auction-bets-price {
+	font-size:20px;
+	display:inline-block;
+	color:#DE3669;
+}
+
+
+.puts {
+	font-size:14px;
+	margin:0 0 10px 0;
+}
+.puts img {
+	float:left;
+	margin:0 5px 0 0;
+}
+.puts .puts-name {
+	font-size:12px;
+}
+.puts .puts-puts {
+	font-weight:bold;
+}
+.puts .puts-puts:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	font-size:0px;
+	line-height:0px;
+}
+
+
+
+
+
+
+
+
+/* Chat */
+.auction-chat {
+	margin:25px 0;
+}
+.auction-chat-area {
+	border:1px solid #ccc;
+	width:99%;
+	height:200px;
+	overflow-y:scroll;
+	font-size:11px;
+	padding:5px;
+}
+.auction-chat-write {
+	width:100%;
+	margin-top:15px;
+}
+.auction-chat-message {
+	width:99%;
+	border:1px solid #ccc;
+	padding:5px;
+}
+.auction-chat-tdsend {
+	width:170px;
+}
+.auction-chat-btnsend {
+	padding:4px 10px;
+}
+.auction-chat-item {
+	margin-bottom:8px;
+}
+.auction-chat-items-name {
+	margin:0 3px;
+	padding:2px 3px 3px;
+	background-color:#333;
+	border-radius:3px;
+	color:#fff;
+}
+.auction-chat-items-event {
+	color:#000;
+}
+.auction-lot-name {
+	font-size:16px;
+	padding-bottom:10px;
+	color:#4F4F4F;
+}
+.auction-lot-name {
+	color:#4F4F4F;
+}

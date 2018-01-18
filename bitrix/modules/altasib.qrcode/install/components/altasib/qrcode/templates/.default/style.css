@@ -1,0 +1,20 @@
+#QrImgMin
+{
+        display: block;
+        cursor: pointer;
+        float: left;
+        margin-right: 10px;
+}
+#alx-qr
+{
+    border: 1px solid #000000;
+    position: absolute !important;
+    display: none;
+    padding: 0px;
+    z-index: 10000;
+    cursor: pointer;
+}
+a.alx_qr_text
+{
+    text-decoration: underline !important;
+}

@@ -1,0 +1,34 @@
+table.data-table
+{
+	border:1px solid #C4C4C3;
+	border-collapse:collapse;
+}
+table.data-table td
+{
+	border:1px solid #C4C4C3;
+	background-color:#FFFFFF;
+	color:#333;
+	padding:3px 5px;
+}
+table.data-table thead td, table.data-table th
+{
+	background-color:#F2F2EA;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #C4C4C3;
+	padding:4px;
+	color:#333;
+}
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+	color:#333;
+}
+table.data-table tfoot td
+{
+	background-color:#fff;
+	padding:4px;
+	color:#333;
+}

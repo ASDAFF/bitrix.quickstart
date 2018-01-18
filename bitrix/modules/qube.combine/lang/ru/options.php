@@ -1,0 +1,29 @@
+<?
+$MESS['QC_TAB1_DESCRIPTION'] = "Настройка параметров модуля";
+$MESS['QC_TAB1_TITLE'] = "Настройки";
+$MESS['QC_OPDER_PROPS_TITLE'] = "Свойства заказа";
+$MESS['QC_OPDER_PROPS_DESCRIPTION'] = "Посмотреть свойства заказа";
+$MESS['QC_ADMIN_ACTIVE'] = "Включить объединение при добавлении/редактировании свойств заказа";
+$MESS['QC_COMPONENT_ACTIVE'] = "Включить синхронизацию значений сходных полей в компоненте bitrix:sale.order.ajax";
+$MESS["QC_FIELDS"] = "Какие поля учитывать при объединении свойств:";
+$MESS['QC_MAIN_FIELDS'] = "Основные";
+$MESS['QC_OTHER_FIELDS'] = "Дополнительные";
+$MESS["QC_FIELDS_CODE"] = "Мнемонический код";
+$MESS["QC_FIELDS_NAME"] = "Название";
+$MESS["QC_FIELDS_DESCRIPTION"] = "Описание свойства";
+$MESS["QC_FIELDS_DEFAULT_VALUE"] = "Значение по умолчанию";
+$MESS["QC_FIELDS_SORT"] = "Сортировка";
+$MESS["QC_FIELDS_ACTIVE"] = "Метка \"Активность\"";
+$MESS["QC_FIELDS_TYPE"] = "Метка \"Тип\"";
+$MESS["QC_FIELDS_REQUIED"] = "Метка \"Обязательное\"";
+$MESS["QC_FIELDS_UTIL"] = "Метка \"Служебное\"";
+$MESS["QC_FIELDS_USER_PROPS"] = "Метка \"Входит в профиль\"";
+$MESS["QC_FIELDS_IS_LOCATION"] = "Метка \"Использовать как местоположение\"";
+$MESS["QC_FIELDS_IS_EMAIL"] = "Метка \"Использовать как E-Mail\"";
+$MESS["QC_FIELDS_IS_LOCATION4TAX"] = "Метка \"Использовать как местоположение для налогов\"";
+$MESS["QC_FIELDS_IS_ZIP"] = "Метка \"Использовать как почтовый индекс\"";
+$MESS["QC_FIELDS_IS_PROFILE_NAME"] = "Метка \"Использовать как название профиля\"";
+$MESS["QC_FIELDS_IS_PAYER"] = "Метка \"Использовать как имя плательщика\"";
+$MESS["QC_FIELDS_IS_FILTERED"] = "Метка \"Свойство доступно в фильтре по заказам\"";
+$MESS['QC_ERROR_NOT_REQUIRED'] = "Не указано ни одно поле из основной группы";
+?>

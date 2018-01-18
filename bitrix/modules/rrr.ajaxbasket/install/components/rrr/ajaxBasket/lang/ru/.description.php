@@ -1,0 +1,5 @@
+<?
+$MESS ['INCLUDE_EXTENDED_COMPONENT_NAME'] = "Корзина Ajax";
+$MESS ['INCLUDE_EXTENDED_COMPONENT_DESCR'] = "Корзина Ajax";
+$MESS ['INCLUDE_EXTENDED_GROUP_NAME'] = "Корзина";
+?>

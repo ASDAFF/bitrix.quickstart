@@ -1,0 +1,5 @@
+<?php
+
+// no module includes
+
+?>

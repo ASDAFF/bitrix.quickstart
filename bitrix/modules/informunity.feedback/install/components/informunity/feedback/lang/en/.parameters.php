@@ -1,0 +1,32 @@
+<?
+$MESS ['MFP_LANG'] = "en";
+$MESS ['MFP_SET_FORM'] = "Form options";
+$MESS ['MFP_SET_IB'] = "Options of record letters in information block";
+$MESS ['MFP_CAPTCHA'] = "Use CAPTCHA for Unauthorized Visitors";
+$MESS ['MFP_OK_MESSAGE'] = "Text To Show Upon Sending";
+$MESS ['MFP_OK_TEXT'] = "Thank you. Your message is now being processed.";
+$MESS ['MFP_IU_PAT'] = "Post template of a component to use";
+$MESS ['MFP_USE_IU_IB'] = "To write letters in information block";
+$MESS ['MFP_EMAIL_TO'] = "Destination E-mail address";
+$MESS ['MFP_EM_THEME'] = "Theme";
+$MESS ['MFP_EM_THEME_DEF'] = "The message from feedback form";
+$MESS ['MFP_EXT_FIELDS'] = "Fields for filling";
+$MESS ['MFP_NAME'] = "Name";
+$MESS ['MFP_MESS'] = "Message";
+$MESS ['MFP_REQUIRED_FIELDS'] = "Required fields";
+$MESS ['MFP_TEXTAREA_FIELDS'] = "Big fields";
+$MESS ['MFP_AFTER_TEXT'] = 'The text is added to the end of the letter';
+$MESS ['MFP_AFTER_TEXT_DEF'] = 'Message is generated automatically.';
+$MESS ['MFP_TYPE_ID'] = "Type of post event";
+$MESS ['MFP_EMAIL_TEMPLATES'] = "E-mail template";
+$MESS ['MFP_USE_IU_IBC'] = "To use the information block of a component";
+$MESS ['MFP_TYPE'] = "Type of information block";
+$MESS ['MFP_IB'] = "Information block";
+$MESS ['MFP_IBE_NAME'] = "The name an element of the information block";
+$MESS ['MFP_ACT'] = "Activity";
+$MESS ['MFP_NONE'] = "(not select)";
+$MESS ['MFP_DET'] = "Field for the detailed description";
+$MESS ['MFP_ANONS'] = "Field for the announcement";
+$MESS ['MFP_PARAM'] = "To write other fields in properties";
+$MESS ['MFP_WRIT_A'] = "To add in the letter reference to an element of the information block";
+?>

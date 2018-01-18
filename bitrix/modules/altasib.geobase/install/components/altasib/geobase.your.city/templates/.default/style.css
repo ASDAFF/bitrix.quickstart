@@ -1,0 +1,309 @@
+#altasib_geobase_window {	
+	width:100%;
+	height:100%;
+	z-index: 10000;	
+	display: none;
+	top: -50%;
+	bottom: 0;
+	right:0;
+	left:0;
+	position: fixed;	
+}
+
+#altasib_geobase_window_block {
+ 	background: #fff repeat-x 0 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: left;
+	z-index: 10000;	
+	border: 1px solid;
+	opacity: 1;	
+	padding: 12px;	
+	box-shadow: 0 1px 10px #969696;
+	-moz-box-shadow: 0px 1px 10px #969696;
+	-webkit-box-shadow: 0px 1px 10px #969696;	
+	background-clip: padding-box;
+	background-color: #fefefe;	
+	border-color: #cbcbcb;
+	outline: medium none;
+	width: 270px;	
+	margin: 0px auto;
+	position: relative;
+}
+
+.altasib_geobase_yc_ttl {
+	color: #333333;
+	font: normal 14px Tahoma !important;
+	padding: 0 10px 12px 10px;
+}
+
+.altasib_geobase_your_city_block {
+	padding: 2px 10px 2px 10px;
+	overflow: hidden;
+}
+
+.altasib_geobase_your_city {
+	color: #333333;
+	font: bold 14px Tahoma;
+	text-decoration: none;
+	display: inline;
+	padding-bottom:1px;
+}
+
+.altasib_geobase_your_city_2 {
+	color: #333333;
+	font: normal 14px Tahoma;
+	text-decoration: none;
+	display: inline;
+	padding-bottom:1px;
+}
+
+.altasib_geobase_yc_btn {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 22px 9px 15px;
+	height: 23px;
+	width: 109px;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;	
+	color: #ffffff !important;
+	font: bold 12px Tahoma;
+	background: url("images/buttons.png") no-repeat;
+}
+
+.altasib_geobase_yc_btn:hover {
+	background: url("images/buttons.png") no-repeat 0px -28px;
+}
+
+#altasib_geobase_close_kr {
+	position: absolute;
+	z-index: 1200;
+	background: url("images/close.png") no-repeat;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	right: -17px;
+	top: -14px;
+}
+* {
+	outline: medium none;
+}
+#altasib_geobase_close_kr:hover {
+	background: url("images/close.png") no-repeat 0px -30px;	
+}
+
+#altasib_geobase_page {
+	margin-top: 20px;
+	padding: 0 8px;
+	overflow-y: auto;
+	position: relative;
+	z-index: 750;
+	max-height: 212px;
+}
+
+#altasib_geobase_yc_backg {
+	display:none;
+	position:fixed;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	z-index:9999;	
+	transition: opacity 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	-webkit-transition: opacity 400ms;
+	-moz-transition: opacity 400ms;
+	-o-transition: opacity 400ms;
+	transition: opacity 400ms;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); WIDTH: 100%;
+	background: none repeat scroll 0 0 #000000;
+}
+
+
+
+#altasib_geobase_mb_window {
+	width:100%;
+	height:100%;
+	z-index: 10000;	
+	display: none;
+	top: 30%;
+	bottom: 0;
+	right:0;
+	left:0;
+	position: fixed;
+}
+
+#altasib_geobase_mb_window_block {
+ 	background: #fff repeat-x 0 100%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: left;
+	z-index: 10000;	
+	border: 1px solid;
+	opacity: 1;	
+	padding: 12px;	
+	box-shadow: 0 1px 10px #969696;
+	-moz-box-shadow: 0px 1px 10px #969696;
+	-webkit-box-shadow: 0px 1px 10px #969696;	
+	background-clip: padding-box;
+	background-color: #fefefe;	
+	border-color: #cbcbcb;
+	outline: medium none;
+	width: 280px;	
+	margin: 0px auto;
+	position: relative;
+}
+
+.altasib_geobase_yc_mb_ttl {
+	color: #333333;
+	font: normal 14px Tahoma !important;
+	padding: 0 10px 12px 10px;
+}
+
+.altasib_geobase_mb_your_city_block {
+	padding: 2px 10px 2px 10px;
+	overflow: hidden;
+}
+
+.altasib_geobase_mb_your_city {
+	color: #333333;
+	font: bold 14px Tahoma;
+	text-decoration: none;
+	display: inline;
+	padding-bottom:1px;
+}
+
+.altasib_geobase_mb_your_city_2 {
+	color: #333333;
+	font: normal 14px Tahoma;
+	text-decoration: none;
+	display: inline;
+	padding-bottom:1px;
+}
+
+.altasib_geobase_yc_mb_btn {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 22px 9px 15px;
+	height: 23px;
+	width: 109px;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff !important;
+	font: bold 12px Tahoma;
+	background: url("images/buttons.png") no-repeat;
+}
+
+.altasib_geobase_yc_mb_btn:hover {
+	background: url("images/buttons.png") no-repeat 0px -28px;
+}
+
+#altasib_geobase_mb_close_kr {
+	position: absolute;
+	z-index: 1200;
+	background: url("images/close.png") no-repeat;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	right: -17px;
+	top: -14px;
+}
+* {
+	outline: medium none;
+}
+
+#altasib_geobase_mb_close_kr:hover {
+	background: url("images/close.png") no-repeat 0px -30px;	
+}
+
+#altasib_geobase_mb_page {
+	margin-top: 20px;
+	padding: 0 8px;
+	overflow-y: auto;
+	position: relative;
+	z-index: 750;
+	max-height: 212px;
+}
+
+#altasib_geobase_yc_mb_backg {
+	display:none;
+	position:fixed;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	z-index:9999;	
+	transition: opacity 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	-webkit-transition: opacity 400ms;
+	-moz-transition: opacity 400ms;
+	-o-transition: opacity 400ms;
+	transition: opacity 400ms;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); WIDTH: 100%;
+	background: none repeat scroll 0 0 #000000;
+}
+
+@media screen and (max-width: 600px)
+{
+ 	#altasib_geobase_mb_window	{
+		top: 25%;
+	}
+	
+	#altasib_geobase_mb_close_kr {
+		right: 10px;
+		top: 8px;
+	}
+	
+	#altasib_geobase_mb_page {
+		padding: 0px;
+		margin-top:4px;
+	}
+	
+	.altasib_geobase_yc_mb_ttl {
+		font-size: 16px !important;
+		padding-left: 6px;
+	}
+	
+	.altasib_geobase_mb_your_city_block {
+		padding-left: 6px;
+		padding-top: 12px;
+	}
+	
+	.altasib_geobase_mb_your_city {
+		font-size: 16px;
+	}
+	
+	.altasib_geobase_mb_your_city_2 {
+		font-weight: normal;
+	}
+	
+	.altasib_geobase_yc_mb_btn, .altasib_geobase_yc_mb_btn:hover {
+		width: 128px;
+		height: 33px;
+		background: url("images/button_mobile.png") no-repeat 0px 0px;
+		margin: 28px 8px 2px 4px;
+		padding-top:11px;
+		color: #ffffff !important;
+		font: bold 14px Tahoma;
+		text-shadow: 0px -1px #643600;
+	}
+}
+
+@media screen and (max-width: 320px) and (orientation: landscape)
+{
+	#altasib_geobase_mb_window {
+		top: 5%;		
+	}
+}

@@ -1,0 +1,6 @@
+/*Old menu icon and title*/
+#askaron_ibvote_menu_icon {background-image:url(icons/askaron.ibvote/mnu_ibvote.png);}
+#askaron_ibvote_page_icon {background-image:url(icons/askaron.ibvote/title.png);}
+
+/*Menu icon BX12*/
+.askaron_ibvote_menu_icon {background:url(icons/askaron.ibvote/mnu_ibvote.png) 9px 4px no-repeat !important;}

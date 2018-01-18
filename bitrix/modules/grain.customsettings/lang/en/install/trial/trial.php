@@ -1,0 +1,6 @@
+<?
+$MESS ['GCUSTOMSETTINGS_TRIAL_MESSAGE'] = "Module <a href=\"http://g-rain-design.ru/components/customsettings/?from=trial\">Additional settings</a> now works in trial mode.<br />After trial is expired, changing settings and access for change fields will be locked.<br /><a href=\"http://g-rain-design.ru/components/customsettings/?from=trial\">Buy module</a>";
+$MESS ['GCUSTOMSETTINGS_TRIAL_MESSAGE_BEFORE'] = "Module <a href=\"http://g-rain-design.ru/components/customsettings/?from=trialbefore\">Additional settings</a> now works in trial mode. Trial mode will be expire in <span style=\"color: red; font-weight: bold\">#DAYS#</span> days.<br />After trial is expired, changing settings and access for change fields will be locked.<br /><a href=\"http://g-rain-design.ru/components/customsettings/?from=trialbefore\">Buy module</a>";
+$MESS ['GCUSTOMSETTINGS_TRIAL_MESSAGE_AFTER'] = "Trial mode of <a href=\"http://g-rain-design.ru/components/customsettings/?from=trialafter\">Additional settings</a> module is expired.<br />After some time, changing settings and access for change fields will be locked.<br /><a href=\"http://g-rain-design.ru/components/customsettings/?from=trialafter\">Buy module</a>";
+
+?>

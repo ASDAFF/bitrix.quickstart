@@ -1,0 +1,34 @@
+.section-list-box{
+	float: left;
+	width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+.section-list{
+	padding:0;
+	margin:0;
+}
+.section-list a{
+	text-decoration:none;
+}
+.section-list img{
+	display:block;
+}
+.section-list li{
+	float:left;
+	width:25%;
+	min-height: 120px;
+}
+.section-list li span.title{
+	display: block;
+	float: left;
+	color: #000;
+	padding-right: 5px;
+}
+.section-list li span.col{
+    color: #598199;
+}
+.section-list li span.no-photo{
+	display: block;
+	background:url(images/nophoto.gif) no-repeat;
+	background-size: contain;
+}

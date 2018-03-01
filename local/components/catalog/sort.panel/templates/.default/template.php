@@ -5,7 +5,7 @@
 use Bitrix\Main\Localization\Loc;
 
 if (!empty($arResult['SORT']['PROPERTIES'])) { ?>
-    <?= Loc::getMessage('CODEBLOGPRO_SORT_PANEL_COMPONENT_TEMPALTE_SORT_BY_VALUE') ?>:<br>
+    <?= Loc::getMessage('SORT_PANEL_COMPONENT_TEMPALTE_SORT_BY_VALUE') ?>:<br>
     <? foreach ($arResult['SORT']['PROPERTIES'] as $property) { ?>
         <? if ($property['ACTIVE']) { ?>
             <a class="active" href="<?= $property['URL']; ?>">

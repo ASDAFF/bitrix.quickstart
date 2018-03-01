@@ -1,14 +1,4 @@
 <?
-/**
- * Created by Alexey Panov.
- * Date: 24.12.2016
- * Time: 11:30
- *
- * @author    Alexey Panov <panov@codeblog.pro>
- * @copyright Copyright ? 2016, Alexey Panov
- * @git repository https://github.com/PanovAlexey/sort.panel
- */
-
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
@@ -69,7 +59,7 @@ if (Loader::includeModule('catalog')) {
 }
 
 include 'class.php';
-$sortParametrs = CCodeblogProSortPanelComponent::getSortOrderList();
+$sortParametrs = CSortPanelComponent::getSortOrderList();
 
 $fieldsList = array();
 $fieldsDefaultList = $sortParametrs['FIELDS_DEFAULT_LIST'];

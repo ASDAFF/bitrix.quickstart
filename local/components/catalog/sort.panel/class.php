@@ -1,14 +1,4 @@
 <?
-/**
- * Created by Alexey Panov.
- * Date: 24.12.2016
- * Time: 11:00
- *
- * @author    Alexey Panov <panov@codeblog.pro>
- * @copyright Copyright 2016, Alexey Panov
- * @git repository https://github.com/PanovAlexey/sort.panel
- */
-
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
@@ -19,7 +9,7 @@ use \Bitrix\Main\SystemException;
 use \Bitrix\Main\Application;
 
 
-class CCodeblogProSortPanelComponent extends \CBitrixComponent
+class CSortPanelComponent extends \CBitrixComponent
 {
 
     const DEFAULT_ORDER_VALUE = 'asc';

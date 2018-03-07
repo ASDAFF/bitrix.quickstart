@@ -1,0 +1,68 @@
+.worktime {
+    width: 91px;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+    
+}
+
+.ys-work {
+	float: left;
+	margin-right: 3px;
+	width: 7px;
+	height: 2px;
+	background: #35ab01;
+}
+
+.ys-weekend {
+	float: left; 
+	margin-right: 3px;
+	width: 7px;
+	height: 2px;
+	background: #c41e3a;
+}	
+
+.ys-work_circle {
+	float: left;
+	margin-right: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #5c5c5c;
+}
+
+.ys-weekend_circle {
+	float: left; 
+	margin-right: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #d61233;
+}
+
+div.ys-time-work-circle {
+	clear: both;
+	color: #5c5c5c;
+	width: 80px;
+	padding-top: 3px;
+}	
+
+div.ys-time-weekend-circle {
+	clear: both;
+	width: 80px;
+	color: #d61233;
+	padding-top: 1px;
+}
+
+div.ys-timeline {
+	position: relative;
+}
+
+div.ys-lunch {
+	position: absolute;
+	top: 100%;
+	display:none;
+	padding-top: 5px;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 999;
+}

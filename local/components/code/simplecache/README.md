@@ -1,6 +1,6 @@
 # Простой кеширующий компонент
 ![alt-текст](img_md/ikonka.png "1") 
-
+Аналог:
 https://marketplace.1c-bitrix.ru/solutions/tega.simplecache/ 
 
 **Описание**

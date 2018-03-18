@@ -62,3 +62,18 @@ http://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=2943&LE
 проверить работу агентов можно тут - ваш-сайт-ру/bitrix/admin/site_checker.php?lang=ru
 
 документация по модулю: https://bitbucket.org/artlux/mlife.smsservices/wiki/Home
+
+
+![alt-текст](img_md/19-02-2014 11-05-50.png "1")
+
+![alt-текст](img_md/589.png "1")
+
+![alt-текст](img_md/2016-11-07_23-50-27.png "1")
+
+![alt-текст](img_md/2016-11-14_14-09-04.png "1")
+
+![alt-текст](img_md/2016-11-14_14-17-22.png "1")
+
+![alt-текст](img_md/2016-11-14_14-19-00.png "1")
+
+![alt-текст](img_md/2016-11-14_14-20-33.png "1")

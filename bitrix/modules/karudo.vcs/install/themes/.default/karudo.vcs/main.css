@@ -1,0 +1,34 @@
+.bootstrap .modal-body .source {
+	overflow: auto;
+}
+.bootstrap .modal-body .source>div {
+	padding: 3px;
+}
+
+.bootstrap .modal-body .source pre {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.bootstrap .modal-body .source pre.ins {
+	background-color: #CFC;
+}
+.bootstrap .modal-body .source pre.del {
+	background-color: #FDD;
+}
+
+#bx-panel .bx-panel-vcs-icon {
+	background: scroll transparent url(img/vcs1.png) no-repeat 3px 3px !important;
+}
+
+.vcs-status-upd {
+	color: blue;
+}
+.vcs-status-del {
+	color: #ff0000;
+}
+.vcs-status-new {
+	color: #008000;
+}

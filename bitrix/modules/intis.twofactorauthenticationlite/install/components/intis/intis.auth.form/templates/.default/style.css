@@ -1,0 +1,67 @@
+#loginIntis {width: 305px; height: 220px; background: #ffffff; padding: 15px;}
+.intis_login_button {background: #00AFE4;
+    background: -moz-linear-gradient(top, #00AFE4 0%, #0169B5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00AFE4), color-stop(100%,#0169B5));
+    background: -webkit-linear-gradient(top, #00AFE4 0%,#0169B5 100%);
+    background: -o-linear-gradient(top, #00AFE4 0%,#0169B5 100%);
+    background: -ms-linear-gradient(top, #00AFE4 0%,#0169B5 100%);
+    background: linear-gradient(to bottom, #00AFE4 0%,#0169B5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afe4', endColorstr='#0169b5',GradientType=0 );
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #006EAF;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: inset 0 1px 1px 0 #4DDFF4;
+    border-radius: 5px;
+    border-right: 1px solid #0169B5;
+    border-top: 1px solid #5AACE5;
+    border-left: 1px solid #308CCF;
+    border-bottom: 1px solid #308CCF;
+    padding: 10px 15px;
+    white-space: nowrap;
+    cursor:pointer;
+}
+.block_alert {
+    height: 35px;
+    font-size: .7em;
+    text-align: center;
+}
+.intis_text_style{
+    border:1px solid #8CA3AE;
+    border-radius:5px;
+    background:#fff;
+    box-shadow:inset 0 3px 6px 0 rgba(215, 215, 215, 0.7);
+    position:relative;
+    font-size: 18px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:normal;
+    height: 40px;
+    width: 305px;
+    box-sizing: border-box;
+    padding: 10px !important;
+}
+.intis_signin{
+    color:#2479a1;
+    font-weight:bold;
+    font-size:13px
+}
+.intis_signin:hover{
+    color:#941616;
+    font-weight:bold;
+    font-size:13px
+    text-decoration: none;
+}
+.intis_username,
+.intis_logout,
+.intis_signup{
+    color:#2479a1;
+    font-size:13px
+}
+.intis_signup:hover{
+    color: #941616;
+    text-decoration: none;
+}
+.intis_tac{text-align:center !important}

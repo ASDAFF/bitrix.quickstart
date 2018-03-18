@@ -1,0 +1,29 @@
+<?
+$MESS["MCART_LIBEREYA_NOVINKA"] = "ÍÎÂÈÍÊÀ";
+$MESS["MCART_LIBEREYA_OTZYVOV"] = "Îòçûâîâ";
+$MESS["MCART_LIBEREYA_BUMAJNAA"] = "ÁÓÌÀÆÍÀß";
+$MESS["MCART_LIBEREYA_ELEKTRONNAA"] = "Ýëåêòðîííàÿ";
+$MESS["MCART_LIBEREYA_V_NALICII"] = "Â ÍÀËÈ×ÈÈ";
+$MESS["MCART_LIBEREYA_NET_V_NALICII"] = "ÍÅÒ Â ÍÀËÈ×ÈÈ";
+$MESS["MCART_LIBEREYA_CITATELQ"] = "×ÈÒÀÒÅËÜ";
+$MESS["MCART_LIBEREYA_ZABRONIROVATQ"] = "ÇÀÁÐÎÍÈÐÎÂÀÒÜ";
+$MESS["MCART_LIBEREYA_ELEKTRONNAA1"] = "ÝËÅÊÒÐÎÍÍÀß";
+$MESS["MCART_LIBEREYA_SOOBSITQ_O_POSTUPLEN"] = "ÑÎÎÁÙÈÒÜ Î ÏÎÑÒÓÏËÅÍÈÈ";
+$MESS["MCART_LIBEREYA_AVTOR"] = "Àâòîð";
+$MESS["MCART_LIBEREYA_PEREVODCIKI_VLADIMI"] = "Ïåðåâîä÷èêè: Âëàäèìèð Áàáêîâ, Âèêòîð Ãîëûøåâ, Ëåîíèä Ìîòûëåâ";
+$MESS["MCART_LIBEREYA_AZYKI_RUSSKIY"] = "ßçûêè: Ðóññêèé";
+$MESS["MCART_LIBEREYA_IZDATELQSTVO_AST"] = "Èçäàòåëüñòâî: ÀÑÒ";
+$MESS["MCART_LIBEREYA_SERIA_VELICAYSIY_IN"] = "Ñåðèÿ: Âåëè÷àéøèé èíòåëëåêòóàëüíûé òðèëëåð";
+$MESS["MCART_LIBEREYA_VOZRASTNYE_OGRANICEN"] = "Âîçðàñòíûå îãðàíè÷åíèÿ";
+$MESS["MCART_LIBEREYA_STRANIC"] = "Ñòðàíèö";
+$MESS["MCART_LIBEREYA_STR"] = "ñòð";
+$MESS["MCART_LIBEREYA_FORMAT"] = "Ôîðìàò";
+$MESS["MCART_LIBEREYA_H_MM"] = "õ217 ìì";
+$MESS["MCART_LIBEREYA_TIRAJ"] = "Òèðàæ";
+$MESS["MCART_LIBEREYA_EKZ"] = "ýêç";
+$MESS["MCART_LIBEREYA_PEREPLET"] = "Ïåðåïëåò";
+$MESS["MCART_LIBEREYA_TVERDYY_PEREPLET"] = "Òâåðäûé ïåðåïëåò";
+$MESS["MCART_LIBEREYA_ANONS"] = "ÀÍÎÍÑ";
+$MESS["MCART_LIBEREYA_OGLAVLENIE"] = "ÎÃËÀÂËÅÍÈÅ";
+$MESS["MCART_LIBEREYA_FILE_KNIGI"] = "Ôàéëû êíèãè";
+?>

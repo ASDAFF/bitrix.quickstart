@@ -1,0 +1,25 @@
+<?
+$MESS ['IBLOCK_FORM_SUBMIT'] = "Рассчитать";
+$MESS ['IBLOCK_FORM_APPLY'] = "Применить";
+$MESS ['IBLOCK_FORM_RESET'] = "Сбросить";
+$MESS ['IBLOCK_FORM_BACK'] = "Назад к списку";
+
+$MESS ['IBLOCK_FORM_DATE_FORMAT'] = "Формат: ";
+
+$MESS ['IBLOCK_FORM_FILE_NAME'] = "Файл";
+$MESS ['IBLOCK_FORM_FILE_SIZE'] = "Размер";
+$MESS ['IBLOCK_FORM_FILE_DOWNLOAD'] = "скачать";
+$MESS ['IBLOCK_FORM_FILE_DELETE'] = "удалить файл";
+
+$MESS ['IBLOCK_FORM_CAPTCHA_TITLE'] = "Защита от автоматического заполнения";
+$MESS ['IBLOCK_FORM_CAPTCHA_PROMPT'] = "Введите слово с картинки";
+
+$MESS ['USER_MESSAGE_ADD'] = "Ваша заявка успешно принята!";
+
+$MESS ['FORM_TITLE'] = "Обратный звонок";
+$MESS ['BUTTON_TITLE'] = "Заказать звонок";
+
+$MESS ['FEEDBACK_SEND_BUTTON'] = "Отправить";
+$MESS ['CUSTOM_TITLE_NAME'] = "Ваше имя";
+$MESS ['FORM_ERROR_MSG'] = "Пожалуйста, заполните все поля.";
+?>

@@ -1,0 +1,4 @@
+<?
+$MESS["MYCOMPANY_REMO_NAZVANIE"] = "Название";
+$MESS["MYCOMPANY_REMO_PROIZVODITELQ"] = "Производитель";
+?>

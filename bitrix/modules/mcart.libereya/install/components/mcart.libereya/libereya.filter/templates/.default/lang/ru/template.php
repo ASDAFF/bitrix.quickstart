@@ -1,0 +1,8 @@
+<?
+$MESS ['IBLOCK_FILTER_TITLE'] = "Ôèëüòðîâàòü ïî:";
+$MESS ['IBLOCK_SET_FILTER'] = "Ôèëüòð";
+$MESS ['IBLOCK_DEL_FILTER'] = "Ñáðîñèòü";
+$MESS ['FILTER_NEWS_ONLY'] = "ÒÎËÜÊÎ ÍÎÂÈÍÊÈ";
+$MESS ['FILTER_DIGITAL_ONLY'] = "ÒÎËÜÊÎ ÝËÅÊÒÐÎÍÍÛÅ";
+$MESS ['FILTER_PAPER_ONLY'] = "ÒÎËÜÊÎ ÁÓÌÀÆÍÛÅ";
+?>

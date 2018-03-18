@@ -1,0 +1,86 @@
+
+body { background:#e81123 }
+
+#main { background:none }
+
+#wrapper .content { background:#fff; margin-bottom:30px; border-radius:0; }
+#wrapper .content:before, #wrapper .content:after {
+	  z-index: -1;
+	  position: absolute;
+	  content: "";
+	  bottom: 5px;
+	  left: 20px;
+	  width: 50%;
+	  top: 80%;
+	  max-width:500px;
+	  background: rgba(0, 0, 0, 0.2);
+	  -webkit-box-shadow: 0 15px 20px rgba(0,0,0, 0.2);
+	  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+	  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+	  -webkit-transform: rotate(-2deg);
+	  -moz-transform: rotate(-2deg);
+	  -o-transform: rotate(-2deg);
+	  -ms-transform: rotate(-2deg);
+	  transform: rotate(-2deg);
+}
+
+#wrapper .content:after {
+	  -webkit-transform: rotate(2deg);
+	  -moz-transform: rotate(2deg);
+	  -o-transform: rotate(2deg);
+	  -ms-transform: rotate(2deg);
+	  transform: rotate(2deg);
+	  right: 20px;
+	  left: auto;
+}
+
+#wrapper .content .shadow { display:none }
+
+#wrapper .timer { background:#d30e1e; color:#fff; border-radius:0 }
+
+#wrapper .feedback a { color:#95020e }
+#wrapper .feedback a i {  }
+#wrapper .feedback a:hover { color:#1c1c1c }
+
+
+/* Footer
+-------------------------------------------------- */
+#footer { background:#a60d1a; color:#fff }
+#footer a { color:#fff }
+#footer a span { border-bottom:1px solid #ca6e76 }
+#footer a:hover span { color:#bbb; border-color:#999 }
+
+#footer ul li { border-color:#d50c0c }
+#footer ul li.auth i { background:url(../../img/soon-sprite.png) no-repeat -12px 2px }
+
+/* Social Buttons */
+.social-buttons ul li.fb a { background-position: 0 -50px }
+.social-buttons ul li.fb a:hover { background-position: 0 0 }
+.social-buttons ul li.tw a { background-position: -43px -50px }
+.social-buttons ul li.tw a:hover { background-position: -43px 0 }
+.social-buttons ul li.vk a { background-position: -85px -50px }
+.social-buttons ul li.vk a:hover { background-position: -85px 0 }
+.social-buttons ul li.gp a { background-position: -127px -50px }
+.social-buttons ul li.gp a:hover { background-position: -127px 0 }
+.social-buttons ul li.odn a { background-position: -167px -50px }
+.social-buttons ul li.odn a:hover { background-position: -167px 0 }
+.social-buttons ul li.in a { background-position: -209px -50px }
+.social-buttons ul li.in a:hover { background-position: -209px 0 }
+.social-buttons ul li.lj a { background-position: -251px -50px }
+.social-buttons ul li.lj a:hover { background-position: -251px 0 }
+.social-buttons ul li.ml a { background-position: -293px -50px }
+.social-buttons ul li.ml a:hover { background-position: -293px 0 }
+.social-buttons ul li.yt a { background-position: -335px -50px }
+.social-buttons ul li.yt a:hover { background-position: -335px 0 }
+.social-buttons ul li.pt a { background-position: -377px -50px }
+.social-buttons ul li.pt a:hover { background-position: -377px 0 }
+.social-buttons ul li.su a { background-position: -419px -50px }
+.social-buttons ul li.su a:hover { background-position: -419px 0 }
+.social-buttons ul li.ya a { background-position: -461px -50px }
+.social-buttons ul li.ya a:hover { background-position: -461px 0 }
+.social-buttons ul li.hb a { background-position: -503px -50px }
+.social-buttons ul li.hb a:hover { background-position: -503px 0 }
+.social-buttons ul li.vm a { background-position: -545px -50px }
+.social-buttons ul li.vm a:hover { background-position: -545px 0 }
+.social-buttons ul li.tb a { background-position: -587px -50px }
+.social-buttons ul li.tb a:hover { background-position: -587px 0 }

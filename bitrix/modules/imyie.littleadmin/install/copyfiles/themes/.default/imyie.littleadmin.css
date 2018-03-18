@@ -1,0 +1,105 @@
+/* left_menu */
+.adm-submenu-items-title{
+	margin-bottom:5px;
+}
+.adm-submenu-item-name{
+	margin:0;
+}
+.adm-submenu-item-name,
+.adm-submenu-item-name:hover,
+.adm-submenu-item-name-link,
+.adm-submenu-item-name:hover .adm-submenu-item-name-link,
+.adm-submenu-current-fav,
+.adm-submenu-current-fav .adm-submenu-item-name-link,
+.adm-submenu-item-active > .adm-submenu-item-name > .adm-submenu-item-name-link,
+.adm-submenu-item-active > .adm-submenu-item-name,
+.adm-favorites-sub-menu-wrap,
+.adm-favorites-sub-menu-wrap .adm-submenu-item-name{
+	height:auto !important;
+}
+.adm-submenu-item-name-link-text{
+	padding-top:3px;
+	padding-bottom:2px;
+}
+.adm-submenu-item-arrow{
+	top:-5px;
+}
+.adm-submenu-item-link-icon{
+	margin-top:-1px;
+}
+
+/* page_title */
+.adm-title{
+	margin:5px 0 5px;
+}
+
+/* notes */
+#bx-admin-prefix .adm-info-message-wrap{
+	position:static !important;
+}
+#bx-admin-prefix .adm-info-message-wrap .adm-info-message{
+	margin:5px 10px 10px 0;
+	padding:10px 20px 10px 9px;
+}
+
+/* element_edit && section_edit */
+#adm-workarea .adm-detail-content-cell-l,
+#adm-workarea .adm-detail-content-cell-r {
+	padding-top:2px !important;
+	padding-bottom:3px !important;
+}
+#adm-workarea .adm-input-file-control{
+	margin-top:5px;
+	margin-bottom:0px !important;
+}
+
+/* table_list -- action_menu && checkbox*/
+.adm-list-table-cell.adm-list-table-checkbox,
+.adm-list-table-cell.adm-list-table-popup-block{
+	padding:5px 0 1px 0;
+}
+/* table_list -- cell */
+.adm-list-table-cell{
+	padding:5px 0 5px 10px;
+}
+.adm-list-table-cell.align-center {
+	padding:5px 0 5px 0;
+}
+.adm-list-table-cell.align-right{
+	padding:5px 10px 5px 0;
+}
+.adm-list-table-cell.align-left{
+	padding:5px 0 5px 10px;
+}
+/* table_list -- footer */
+.adm-list-table-footer{
+	padding-top:4px;
+}
+
+/* navigation */
+.adm-navigation{
+	padding:5px 0 1px;
+}
+.adm-navigation .adm-nav-pages-block{
+	min-width:0px;
+}
+.adm-nav-pages-number-block{
+	text-align:left;
+}
+
+/* gadgets */
+.gadgetholder .bx-gadgets-top-center{
+	height:37px;
+}
+.gadgetholder .bx-gadgets-top-title{
+	font-size:19px;
+	padding:5px 0 0 12px;
+}
+.gadgetholder .bx-gadgets-top-button{
+	padding: 5px 11px 0 0;
+}
+
+/* table in update */
+#bx-admin-prefix .internal td{
+	padding: 4px 4px 4px 4px!important;
+}

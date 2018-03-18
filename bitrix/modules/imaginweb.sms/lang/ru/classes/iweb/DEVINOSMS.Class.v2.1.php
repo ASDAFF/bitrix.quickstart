@@ -1,0 +1,29 @@
+<?
+$MESS["IMAGINWEB_SMS_OPERACIA_VYPOLNENA"] = "Операция выполнена";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEKORREKTNYY"] = "Ошибка: некорректный номер получателя сообщения";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEKORREKTNYY1"] = "Ошибка: некорректный адрес отправителя сообщения";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEKORREKTNYY2"] = "Ошибка: некорректный идентификатор сообщения";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEPRAVILQNYY"] = "Ошибка: неправильный пароль";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEPRAVILQNYY1"] = "Ошибка: неправильный логин";
+$MESS["IMAGINWEB_SMS_OSIBKA_OCEREDQ_SOOB"] = "Ошибка: очередь сообщений полна";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEDOSTATOCNO"] = "Ошибка: недостаточно кредитов";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEKORREKTNYE"] = "Ошибка: некорректные параметры";
+$MESS["IMAGINWEB_SMS_OSIBKA_NEKORREKTNYY3"] = "Ошибка: некорректный тип сообщения";
+$MESS["IMAGINWEB_SMS_NEAVTORIZOVANNYY"] = "Неавторизованный IP-адрес";
+$MESS["IMAGINWEB_SMS_OSIBKA_SERVIS_NEDOS"] = "Ошибка: сервис недоступен";
+$MESS["IMAGINWEB_SMS_OSIBKA_SERVER_ZANAT"] = "Ошибка: сервер занят другим запросом";
+$MESS["IMAGINWEB_SMS_OSIBKA_SERVER_BAZY"] = "Ошибка: сервер базы данных недоступен";
+$MESS["IMAGINWEB_SMS_POLQZOVATELQ_ZABLOKI"] = "Пользователь заблокирован";
+$MESS["IMAGINWEB_SMS_ZAPRESENNYY"] = "Запрещенный";
+$MESS["IMAGINWEB_SMS_ZAPRESENNYY_TIP_DOST"] = "Запрещенный тип доступа";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_UDVLENO"] = "Сообщение удвлено";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_NAHODITSA"] = "Сообщение находится в очереди";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_PEREDANO_N"] = "Сообщение передано на сервер";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_NAHODITSA1"] = "Сообщение находится в режиме отправки";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_PEREDANO_V"] = "Сообщение передано в мобильную сеть";
+$MESS["IMAGINWEB_SMS_SOOBSENIE_DOSTAVLENO"] = "Сообщение доставлено";
+$MESS["IMAGINWEB_SMS_OSIBKA_SOOBSENIE_NE"] = "Ошибка: сообщение не может быть доставленно";
+$MESS["IMAGINWEB_SMS_OSIBKA_SOOBSENIE_OT"] = "Ошибка: сообщение отклонено СМС центром";
+$MESS["IMAGINWEB_SMS_OSIBKA_ISTEK_SROK_J"] = "Ошибка: истек срок жизни сообщения";
+$MESS["IMAGINWEB_SMS_STATUS_NE_RASPOZNAN"] = "Статус не распознан";
+?>

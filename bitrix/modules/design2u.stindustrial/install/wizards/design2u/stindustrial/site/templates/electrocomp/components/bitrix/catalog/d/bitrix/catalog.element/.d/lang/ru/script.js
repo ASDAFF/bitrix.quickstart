@@ -1,0 +1,10 @@
+<?
+$MESS["MYCOMPANY_REMO_CENA"] = "цена:";
+$MESS["MYCOMPANY_REMO_RUB"] = "руб";
+$MESS["MYCOMPANY_REMO_OPISANIE"] = "Описание:";
+$MESS["MYCOMPANY_REMO_ZAKAZ"] = "Заказ";
+$MESS["MYCOMPANY_REMO_VASE_FIO"] = "Ваше ФИО:";
+$MESS["MYCOMPANY_REMO_NOMER_TELEFONA"] = "Номер телефона:";
+$MESS["MYCOMPANY_REMO_VAS"] = "Ваш";
+$MESS["MYCOMPANY_REMO_OTPRAVITQ_SOOBSENIE"] = "Отправить сообщение";
+?>

@@ -1,0 +1,25 @@
+.mail-show-content table.border1px {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.mail-show-content table.border1px td, table.border1px th {
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 8px 4px;
+    text-align: center;
+}
+.mail-show-content table.border1px th {
+    background: #262626;
+    font-weight: bold;
+    color: #fff;
+}
+.mail-show-content table.border1px .c1, .mail-show-content table.border1px .c3 { width: 80px; }
+.mail-show-content .color-0 {  background: #D1FFD4;  }
+.mail-show-content .color-1 {  background: #BFCFFF;  }
+.mail-show-content .overflow {
+    overflow: auto;
+    height: 80px;
+    font-size: 11px;
+}

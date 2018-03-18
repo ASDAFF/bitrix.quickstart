@@ -1,0 +1,72 @@
+#slider {
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.scroll {
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+    background: #FFFFFF url(/bitrix/components/inseco/inseco.slider/templates/.default/img/content_pane-gradient.gif) repeat-x scroll left bottom;
+}
+
+.scrollContainer div.panel {
+    padding: 20px;
+	height: 210px;
+    width: 580px;
+}
+
+#shade {
+    background: #EDEDEC url(/bitrix/components/inseco/inseco.slider/templates/.default/img/shade.jpg) no-repeat 0 0;
+    height: 50px;
+}
+
+ul.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 9px;
+}
+
+ul.navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul.navigation a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.navigation a:hover {
+    background-color: #f6f6f6;
+}
+
+ul.navigation a.selected {
+    background-color: #fff;
+}
+
+ul.navigation a:focus {
+    outline: none;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+    left: -20px;
+}
+
+.scrollButtons.right {
+    right: -20px;
+}
+
+.hide {
+    display: none;
+}

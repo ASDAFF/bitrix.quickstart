@@ -1,0 +1,164 @@
+#MCArt_bot{
+    background: url(artmenu/artmenu.png) 0px 0px repeat-x;
+    height: 49px;
+    position: fixed;
+    bottom: -49px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: -1px 0px 9px -1px #000;
+}
+.MCArt_bot__flag {
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: -49px;
+	height: 49px;
+	width: 49px;
+	background: rgb(98,109,121) ;
+	left: 0;
+	box-shadow: -1px 0px 9px -1px #000;
+}
+.MCArt_bot__flag:after {
+	display: block;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url(artmenu/artmenu.png) 0px 0px repeat-x;
+	background-position: 0px -102px;
+	top: 16px;
+	position: absolute;
+	left: 15px;
+	
+}
+#MCArt_bot__topLevelMenu {
+    display: table;
+    width: 100%;
+    height: 49px;
+    margin: 0;
+	padding: 0;
+}
+#MCArt_bot__topLevelMenu > li {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    list-style: none;
+}
+#MCArt_bot__topLevelMenu > li:hover {
+	background: url(artmenu/artmenu.png) 0px -51px repeat-x;
+}
+#MCArt_bot__topLevelMenu > li > a {
+    color: #fff;
+	font-size: 11px;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	height: 49px;
+	line-height: 49px;
+	padding: 0px 25px 0px 35px;
+	vertical-align: middle;
+	position: relative;
+}
+#MCArt_bot__topLevelMenu > li > a > span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 49px;
+}
+#MCArt_bot__topLevelMenu > li > a:before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 16px;
+	left: 15px;
+	background-image: url(artmenu/artmenu.png);
+}
+#MCArt_bot__topLevelMenu > #id_menu-favorites > a:before { background-position: 0px -102px; }
+#MCArt_bot__topLevelMenu > #id_menu-groups > a:before { background-position: 0px -117px; }
+#MCArt_bot__topLevelMenu > #id_menu-crm > a:before { background-position: 0px -133px; }
+#MCArt_bot__topLevelMenu > #id_menu-company > a:before { background-position: 0px -149px; }
+#MCArt_bot__topLevelMenu > #id_menu-employees > a:before { background-position: 0px -165px; }
+#MCArt_bot__topLevelMenu > #id06 > a:before { background-position: 0px -181px; }
+#MCArt_bot__topLevelMenu > #id07 > a:before { background-position: 0px -197px; }
+#MCArt_bot__topLevelMenu > #id_menu-services > a:before { background-position: 0px -213px; }
+#MCArt_bot__topLevelMenu > #id_menu-docs > a:before { background-position: 0px -229px; }
+
+#MCArt_bot__topLevelMenu .MCArt_bot__subLevelMenuBox {
+    display: block;
+	position: absolute;
+	left: -10000px;
+	box-shadow: inset 0px -10px 7px -10px rgba(0, 0, 0, 0.48);
+	border-radius: 3px 3px 0px 0px;
+	background: rgb(98,109,121);
+	background: -moz-linear-gradient(top, rgba(98,109,121,1) 0%, rgba(92,104,124,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(98,109,121,1)), color-stop(100%,rgba(92,104,124,1)));
+	background: -webkit-linear-gradient(top, rgba(98,109,121,1) 0%,rgba(92,104,124,1) 100%);
+	background: -o-linear-gradient(top, rgba(98,109,121,1) 0%,rgba(92,104,124,1) 100%);
+	background: -ms-linear-gradient(top, rgba(98,109,121,1) 0%,rgba(92,104,124,1) 100%);
+	background: linear-gradient(to bottom, rgba(98,109,121,1) 0%,rgba(92,104,124,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#626d79', endColorstr='#5c687c',GradientType=0 );
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 17px;
+	padding-right: 17px;
+}
+#MCArt_bot__topLevelMenu > li:hover .MCArt_bot__subLevelMenuBox {
+	display: block;
+	left: 0;
+}
+.MCArt_bot__subLevelMenuBox > ul {
+	display: block; 
+	float: left;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: dotted 1px #fff;
+	list-style: none;
+}
+.MCArt_bot__subLevelMenuBox li {
+	text-align: left;
+	padding: 6px 0px;
+	list-style: none;
+}
+.MCArt_bot__subLevelMenuBox li:first-child {
+	padding-top: 0px;
+}
+.MCArt_bot__subLevelMenuBox li:last-child {
+	padding-bottom: 0px;
+}
+.MCArt_bot__subLevelMenuBox a {
+    font-size: 12px;
+    color: #e3ebed;
+    font-family: Arial;
+    padding-left: 10px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+.MCArt_bot__subLevelMenuBox a:before {
+	content: "";
+	display: block;
+	background-image: url(artmenu/artmenu.png);
+	background-position: -7px -248px;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 0px;
+}
+.MCArt_bot__subLevelMenuBox li:hover > a {
+	color: #42c3ea;
+}
+.MCArt_bot__subLevelMenuBox li:hover > a:before {
+	background-position: -71px -248px;
+}
+
+.MCArt_bot__subLevelMenuBox > ul:first-child {
+    padding-left: 0px;
+}
+.MCArt_bot__subLevelMenuBox > ul:last-child {
+	padding-right: 0px;
+	border-right: none;
+}

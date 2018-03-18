@@ -1,0 +1,34 @@
+table.orderform_table{
+width:100%;
+border-collapse:collapse;
+line-height:130%;
+}
+
+table.orderform_table th, table.orderform_table td{
+border: 1px solid #f2f2f2;
+padding: 5px 10px;
+vertical-align: middle;
+}
+
+table.orderform_table th{
+text-align: left;
+color: white;
+}
+
+
+table.orderform_table td{
+padding: 5px 10px;
+}
+
+.form-required {
+color: red;
+}
+
+.error-fld {
+display: block;
+float: left;
+height: 13px;
+width: 15px;
+background-repeat: no-repeat;
+background-image: url(images/icon_warn.gif);
+}

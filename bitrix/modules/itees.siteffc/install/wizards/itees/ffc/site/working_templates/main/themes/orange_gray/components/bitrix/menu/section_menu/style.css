@@ -1,0 +1,36 @@
+#section_menu{
+background: #dfdde2;
+padding: 8px 0 0 0;
+margin: 0;
+width: 1000px;
+overflow: hidden;
+}
+
+#section_menu ul{
+list-style-type: none;
+padding: 0;
+margin: 0 0 0 25px;
+}
+
+#section_menu ul li{
+background: transparent;
+display: block;
+float: left;
+padding: 0 10px 10px 10px;
+}
+
+#section_menu ul li a{
+color: black;
+text-decoration: underline;
+}
+
+#section_menu ul li a:hover{
+color: #3b3b3b;
+text-decoration: underline;
+}
+
+#section_menu ul li a.active, #section_menu ul li a.active:hover{
+color: #black;
+font-weight: bold;
+text-decoration: underline;
+}

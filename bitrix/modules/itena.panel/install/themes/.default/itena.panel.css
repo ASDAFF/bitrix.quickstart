@@ -1,0 +1,7 @@
+/*Menu icon*/
+#panel_menu_icon {background-image:url(icons/itena.panel/mnu_panel.png);}
+#panel_page_icon {background-image:url(icons/itena.panel/panel.png);}
+
+/*List styles*/
+#tbl_panel .forum-quote {border:1px dotted #CCCCCC;}
+#tbl_panel .forum-quote th {font-weight:normal;text-align:left;}

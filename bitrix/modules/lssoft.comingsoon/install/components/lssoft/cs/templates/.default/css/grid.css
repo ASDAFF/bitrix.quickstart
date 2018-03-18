@@ -1,0 +1,37 @@
+/* Reset
+-------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, images, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { padding: 0; margin: 0; }
+ul, ol { list-style: none; }
+img { border: none; }
+
+/* Body
+-------------------------------------------------- */
+html, body { height: 100%; }
+body { font: 13px 'Open Sans', "Trebuchet MS", Arial, sans-serif; line-height:21px; color: #000; background: #f3f3f3 }
+
+a {  }
+a:hover {  }
+
+h2 { font-size:26px; font-weight:400; color:#202020 }
+h2.grey { color:#858585 }
+
+.inner      { margin:0 auto; width:826px; padding:0 20px }
+.hFooter    { height:60px; clear:both }
+.shadow     { width:796px; height:70px; display:block; position:absolute; bottom:-70px; left:50%; margin-left:-398px; background:url(../img/shadow.png) no-repeat }
+.right      { float:right }
+
+
+/* Main Blocks
+-------------------------------------------------- */
+#main       { position:relative; min-height:100%; }
+#header     { padding: 94px 0 0 28px; height:100px }
+#wrapper    { position:relative; padding-bottom:60px; overflow:hidden }
+#footer     { background:#151515; font:11px Verdana, sans-serif; color:#606060; padding:19px 0 0 0; height:41px; margin-top:-60px; position:relative }

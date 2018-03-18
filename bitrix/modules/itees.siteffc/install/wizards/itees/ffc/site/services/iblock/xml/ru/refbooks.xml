@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2010-10-15T11:22:10">
+	<Классификатор>
+		<Ид>refbooks</Ид>
+		<Наименование>Справочные материалы</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>refbooks</Ид>
+		<ИдКлассификатора>refbooks</ИдКлассификатора>
+		<Наименование>Справочные материалы</Наименование>
+		<БитриксКод>refbooks</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/info/refbooks/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/info/refbooks/detail.php?ID=#ID#</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/info/refbooks/list.php?SECTION_ID=#ID#</БитриксURLРаздел>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>2076</Ид>
+				<Наименование>Общепринятые международные сокращения</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Описание> 
+&lt;h2&gt;Основные сокращения для линейных транспортировок между различными портами:&lt;/h2&gt;
+ 
+&lt;p&gt;&lt;strong&gt;FICY &amp;ndash; Free in/Container yard&lt;/strong&gt; (без погрузки в порту – до контейнерного терминала); 
+  &lt;br /&gt;
+ &lt;strong&gt;FILO&lt;/strong&gt; &lt;strong&gt;– Free in/Liner out&lt;/strong&gt; (погрузка за счет отправителя, выгрузка за счет линии); 
+  &lt;br /&gt;
+ &lt;strong&gt;FIOS / FIFO&lt;/strong&gt; &lt;strong&gt;– Free in/out&lt;/strong&gt; (погрузка и выгрузка за счет отправителя); 
+  &lt;br /&gt;
+ &lt;strong&gt;LI-Door – Liner in / Door&lt;/strong&gt; (погрузка в порту за счет линии – &amp;laquo;дверь&amp;raquo; клиента). 
+  &lt;br /&gt;
+ &lt;strong&gt;LIFO – Liner in/Free out&lt;/strong&gt; (погрузка за счет линии, выгрузка за счет отправителя); 
+  &lt;br /&gt;
+ &lt;strong&gt;LILO – Liner in/out&lt;/strong&gt; (погрузка и выгрузка за счет линии – полные линейные условия); 
+  &lt;br /&gt;
+ &lt;strong&gt;FCL - Full Container Load&lt;/strong&gt; - полная загрузка контейнера одним отправителем в адрес одного получателя; 
+  &lt;br /&gt;
+ &lt;strong&gt;LCL - Less Container Loading&lt;/strong&gt; - погрузка одним отправителем с его последующей сдачей различным получателям, сборный груз. 
+  &lt;br /&gt;
+ &lt;strong&gt;LI - Last In&lt;/strong&gt; - экспедитор предоставляет следующие услуги, стоимость которых включена в ставку фрахта: снятие контейнера с транспортного средства (авто, жд), размещение на терминале (CY), погрузка на судно. 
+  &lt;br /&gt;
+ &lt;strong&gt;LO - Last Out&lt;/strong&gt; - экспедитор предоставляет следующие услуги, стоимость которых включена в ставку фрахта: выгрузка с судна, размещение на терминале (CY), погрузка на транспортное средство (авто, жд).&lt;/p&gt;
+ 
+&lt;h2&gt;Надбавки к ставке конкретной линии или порта:&lt;/h2&gt;
+ 
+&lt;p&gt;&lt;strong&gt;BAF (Bunker Adjustment Factor)&lt;/strong&gt; – бункерная надбавка - индексация изменения цен на топливо; 
+  &lt;br /&gt;
+ &lt;strong&gt;BFR&lt;/strong&gt; - морской фрахт 
+  &lt;br /&gt;
+ &lt;strong&gt;CAF (Currency Adjustment Factor)&lt;/strong&gt; – валютная надбавка – индексация курсовой разницы валют; 
+  &lt;br /&gt;
+ &lt;strong&gt;CUC (Chassis Using Charge)&lt;/strong&gt; – сбор за пользование шасси; 
+  &lt;br /&gt;
+ &lt;strong&gt;Documentation Fee&lt;/strong&gt; – сбор за оформление документов; 
+  &lt;br /&gt;
+ &lt;strong&gt;PSS Peak Season Surcharge&lt;/strong&gt; - летнее-осенний период вводится набавка PSS в связи с возрастающим объемом перевозок 
+  &lt;br /&gt;
+ &lt;strong&gt;WNS Winter Surcharge &lt;/strong&gt;– надбавка за ледовую проводку в замерзающих портах (например, Санкт-Петербург) – вводится, как правило, с 1 Декабря по 31 Марта и др. 
+  &lt;br /&gt;
+ &lt;strong&gt;Wharfage&lt;/strong&gt; – портовая пошлина&lt;/p&gt;
+ 
+&lt;h2&gt;Сборы:&lt;/h2&gt;
+ 
+&lt;p&gt;&lt;strong&gt;ALL IN - All Inclusive&lt;/strong&gt; - «все включено» – означает, что стоимость перевозки включает все дополнительные сборы, предусмотренные условиями перевозки; 
+  &lt;br /&gt;
+ &lt;strong&gt;BAS Base Rate&lt;/strong&gt; – основная, базовая ставка; 
+  &lt;br /&gt;
+ &lt;strong&gt;CUC (Chassis Using Charge)&lt;/strong&gt; - сбор за пользование шасси; 
+  &lt;br /&gt;
+ &lt;strong&gt;DDF Documentation Fee - Destination&lt;/strong&gt; - сбор за оформление документов и ряд других в порту назначения; 
+  &lt;br /&gt;
+ &lt;strong&gt;DOCS (documentation)&lt;/strong&gt; - сбор за оформление документов; 
+  &lt;br /&gt;
+ &lt;strong&gt;EMF Equipment Management Fee&lt;/strong&gt; - сбор управлению оборудованием; 
+  &lt;br /&gt;
+ &lt;strong&gt;ERS Emergency Risk Surcharge &lt;/strong&gt;- непредвиденные расходы на штрафы; 
+  &lt;br /&gt;
+ &lt;strong&gt;IHE Export Inland Rate&lt;/strong&gt; - экспортная внутренняя ставка; 
+  &lt;br /&gt;
+ &lt;strong&gt;ISPS &lt;/strong&gt;- сбор за безопасность в порту; 
+  &lt;br /&gt;
+ &lt;strong&gt;ODF Documentation Fee - Origin&lt;/strong&gt; - сбор за оформление документов и ряд других в стране происхождения; 
+  &lt;br /&gt;
+ &lt;strong&gt;OHC Handling Charge - Origin&lt;/strong&gt; - расходы по выгрузке в порту происхождения; 
+  &lt;br /&gt;
+ &lt;strong&gt;ORC - Origin receiving charges&lt;/strong&gt; - Официальный сбор провинции в Китае. 
+  &lt;br /&gt;
+ &lt;strong&gt;OTA Transport Arbitrary - Origin &lt;/strong&gt;- случайные транспортные расходы в порту происхождения; 
+  &lt;br /&gt;
+ &lt;strong&gt;PAE Port Additionals / Port Dues - Export&lt;/strong&gt; - дополнительные экспортные пошлины в порту; 
+  &lt;br /&gt;
+ &lt;strong&gt;PSI Port Security Charge - Import&lt;/strong&gt; - расходы на безопасность в порту при импорте; 
+  &lt;br /&gt;
+ &lt;strong&gt;SER Carrier Security Charge&lt;/strong&gt; - расходы на безопасность груза во время перевозки;&lt;/p&gt;
+ 
+&lt;h2&gt;Сокращения:&lt;/h2&gt;
+ 
+&lt;p&gt;&lt;strong&gt;BL -Bill of Lading&lt;/strong&gt; – коносамент; 
+  &lt;br /&gt;
+ &lt;strong&gt;CC - Customs Clearance&lt;/strong&gt; - таможенная процедура экспортирования или импортирования товара; 
+  &lt;br /&gt;
+ &lt;strong&gt;CFS - Container Freight Station&lt;/strong&gt; – консолидационный склад; 
+  &lt;br /&gt;
+ &lt;strong&gt;CGO – Cargo&lt;/strong&gt; – груз; 
+  &lt;br /&gt;
+ &lt;strong&gt;CNEE – Consignee&lt;/strong&gt; - получатель &amp;mdash; лицо, которому передается груз в месте назначения; 
+  &lt;br /&gt;
+ &lt;strong&gt;CNTR – Container &lt;/strong&gt;- контейнер стандартного размера; 
+  &lt;br /&gt;
+ &lt;strong&gt;COC (Сarrier's Оwned Container)&lt;/strong&gt; - контейнер является собственностью перевозчика, стоимость использования контейнера включается во фрахт; 
+  &lt;br /&gt;
+ &lt;strong&gt;CY- Container Yard&lt;/strong&gt; - Контейнерный терминал; 
+  &lt;br /&gt;
+ &lt;strong&gt;DC - Dry Container&lt;/strong&gt; - Сухой контейнер – тип контейнера; 
+  &lt;br /&gt;
+ &lt;strong&gt;DIM – Dimentions&lt;/strong&gt; – размеры; 
+  &lt;br /&gt;
+ &lt;strong&gt;DHC Handling Charge - Destination &lt;/strong&gt;– расходы по выгрузке в порту назначения; 
+  &lt;br /&gt;
+ &lt;strong&gt;DTA Transport Arbitrary - Destination&lt;/strong&gt; - случайные транспортные расходы в порту назначения; 
+  &lt;br /&gt;
+ &lt;strong&gt;ETD (Estimated Time of Departure)&lt;/strong&gt; - ожидаемое время отправки; 
+  &lt;br /&gt;
+ &lt;strong&gt;ETA (Estimeted Time of Arrival)&lt;/strong&gt; - ожидаемое время прибытия; 
+  &lt;br /&gt;
+ &lt;strong&gt;EX1 - Export Declaration&lt;/strong&gt; - Экспортная декларация. 
+  &lt;br /&gt;
+ &lt;strong&gt;HBL - House Bill of Lading&lt;/strong&gt; - Сквозной коносамент (для перевозки от двери до двери). 
+  &lt;br /&gt;
+ &lt;strong&gt;INV. - Commercial Invoice&lt;/strong&gt; - Счет, создаваемый продавцом и используемый для указания ценности товара для различных целей. 
+  &lt;br /&gt;
+ &lt;strong&gt;LT - Local Time&lt;/strong&gt; - Местное время. 
+  &lt;br /&gt;
+ &lt;strong&gt;Manifest&lt;/strong&gt; - Документ с описанием всех грузов судна. 
+  &lt;br /&gt;
+ &lt;strong&gt;MBL - Master Bill of Lading&lt;/strong&gt; - Морской коносамент. 
+  &lt;br /&gt;
+ &lt;strong&gt;MV - Mother Vessel&lt;/strong&gt; - Крупнотоннажное линейное судно, обслуживающее порты с большим грузооборотом. 
+  &lt;br /&gt;
+ &lt;strong&gt;NVOCC &lt;/strong&gt;- Перевозчик, владеющий определенным объемом грузовых помещений на судне, которым он не владеет и не управляет, обладающий правом издания бортовых коносаментов. 
+  &lt;br /&gt;
+ &lt;strong&gt;OBL - Ocean Bill of Lading&lt;/strong&gt; - Океанский коносамент. 
+  &lt;br /&gt;
+ &lt;strong&gt;PACK - Packing List&lt;/strong&gt; - Упаковочный лист. 
+  &lt;br /&gt;
+ &lt;strong&gt;POL (Port of Loading)&lt;/strong&gt; - порт погрузки; 
+  &lt;br /&gt;
+ &lt;strong&gt;POD (Port of Delivery)&lt;/strong&gt; - порт назначения; 
+  &lt;br /&gt;
+ &lt;strong&gt;SEA (seafreight), O/F(oceanfreight)&lt;/strong&gt; - морской фрахт; 
+  &lt;br /&gt;
+ &lt;strong&gt;SOC (Shipper's Owned Container)&lt;/strong&gt; - контейнер является собственностью клиента; 
+  &lt;br /&gt;
+ &lt;strong&gt;T/T - Transit Time&lt;/strong&gt; - Транзитное время транспортировки. 
+  &lt;br /&gt;
+ &lt;strong&gt;TEU - Twentyfeets Equivslent Unit&lt;/strong&gt; - Эквивалент двадцатифутового контейнера. 
+  &lt;br /&gt;
+ &lt;strong&gt;THC (Terminal Handling Charges)&lt;/strong&gt; - терминальная обработка груза: погрузка/выгрузка с судна, перемещение в штабель, выставление для производства работ и т. д.&lt;/p&gt;
+ </Описание>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>2077</Ид>
+				<Наименование>Основные международные и таможенные термины</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Описание> 
+&lt;p&gt;&lt;strong&gt;Внешнеэкономическая деятельность&lt;/strong&gt; &amp;mdash; внешнеторговая, инвестиционная и иная деятельность, включая производственную кооперацию, в области международного обмена товарами, информацией, работами, услугами, результатами интеллектуальной деятельности (правами на них).&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Грузовая таможенная декларация (ГТД)&lt;/strong&gt; - один из основных документов, оформляемых при перемещении товаров через таможенную границу государства (экспорт, импорт). ГТД оформляется распорядителем груза и заверяется таможенным инспектором, в дальнейшем служит основанием для пропуска через границу. В декларации содержатся сведения о грузе и его таможенной стоимости, транспортном средстве, осуществляющем доставку, отправителе и получателе. 
+  &lt;br /&gt;
+ Вторая функция грузовой таможенной декларации — документ-заявление, представляемый участниками ВЭД о законности сделки, то есть соответствия всех действий в процессе экспортной и импортной операции законодательству РФ. Наличие расхождений между сведениями, указанными в грузовой таможенной декларации, и фактическими данными, обнаруженными в ходе таможенного контроля, влечет за собой задержку товара и требует переоформления грузовой таможенной декларации.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Декларант&lt;/strong&gt; — это лицо, перемещающее товары через таможенную границу, или таможенный брокер (посредник), т.е. лицо, представляющее и предъявляющее товары и транспортные средства на таможне от собственного имени, иными словами, покупатель.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Инвойс (англ. invoice)&lt;/strong&gt; — документ, предоставляемый продавцом покупателю и содержащий перечень товаров, их количество и цену, по которой они будут поставлены покупателю, формальные особенности товара (цвет, вес и т. д.), условия поставки и сведения об отправителе и получателе. Выписка инвойса свидетельствует о том, что (кроме случаев, когда поставка осуществляется по предоплате) у покупателя появляется обязанность оплаты товара в соответствии с указанными условиями.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Инкотермс&lt;/strong&gt; (англ. Incoterms, International commerce terms) — международные правила по толкованию наиболее широко используемых торговых терминов в области внешней торговли. Международные торговые термины представляют собой стандартные условия договора международной купли-продажи, которые определены заранее в международно признанном документе. Эти условия регламентируют момент передачи права собственности на товар (и, соответственно, ответственность за испортившийся в пути товар, неправильное оформление документов на груз и т. д.).&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Кодекс торгового мореплавания Российской Федерации&lt;/strong&gt; — кодифицированный нормативно-правовой акт, являющийся основным источником, регулирующим отношения торгового мореплавания на территории Российской Федерации.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Коносамент — Bill of Lading&lt;/strong&gt; &amp;ndash; договор перевозки, документ, выдаваемый перевозчиком груза грузовладельцу, удостоверяет право собственности на отгруженный товар. Коносамент выполняет одновременно несколько функций: расписка перевозчика в получении груза для перевозки, с одновременным описанием видимого состояния груза; товарно-транспортная накладная; договор перевозки груза; обязательство передать груз грузополучателю в порту назначения.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Коносамент сквозной &lt;/strong&gt;— договор морской перевозки, который выписывается в тех случаях, когда груз следует в порт назначения с перегрузкой в промежуточном порту или с перевалкой на другой вид транспорта; обычно применяется в контейнерных мультимодальных перевозках. Этот коносамент освобождает отправителя и получателя от забот по перевозке груза, т. к. перевозчик, передающий груз другому перевозчику, выступает в качестве экспедитора.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Линейное судно &lt;/strong&gt;– это судно совершающее рейсы по расписанию между определенными портами. Обычно на линейных грузовых судах отгрузка товаров производится мелкими партиями. На каждую партию выдается отдельный коносамент. На линейном судне могут находится контейнеры с разными портами назначения.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Логистика&lt;/strong&gt; — стратегическое управление (менеджмент) закупкой, снабжением, перевозками и хранением материалов, деталей и готового инвентаря (техники и проч.). Понятие включает в себя также управление соответствующими потоками информации, а также финансовыми потоками.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Паспорт импортной сделки &lt;/strong&gt;— документ, служащий целям валютного контроля. Паспорт сделки оформляется в случае, если имеют место валютные операции между резидентом и нерезидентом, заключающиеся в осуществлении расчетов и переводов через счета резидента, открытые в уполномоченных банках, а в некоторых случаях — через счета в банке-нерезиденте.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Перевозчик&lt;/strong&gt; — это лицо, фактически перемещающее товары либо являющееся ответственным за использование транспортного средства. 
+  &lt;br /&gt;
+ Под &lt;strong&gt;&amp;quot;перемещением через таможенную границу Российской Федерации&amp;quot;&lt;/strong&gt; понимается совершение действий по ввозу на таможенную территорию страны или по вывозу с этой территории товаров и транспортных средств любым способом, включая пересылку в международных почтовых отправлениях, использование трубопроводного транс&amp;not;порта и линий электропередач.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенный сбор&lt;/strong&gt; - платеж, уплата которого является одним из условий совершения таможенными органами действий, связанных с таможенным оформлением, хранением, сопровождением товаров.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенные платежи&lt;/strong&gt; — это таможенная пошлина (ввозная и вывозная, на¬логи (ввозные, НДС, акциз), сборы (за таможенное сопровождение, за таможенное оформление) и иные платежи (внутренние налоги, специальные, антидемпинговые и компенсационные пошлины), взимаемые в установленном порядке таможенными органами.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенная стоимость&lt;/strong&gt; — это фактические затраты по приобретению и доставке товаров до места ввоза (вывоза) на таможенную территорию РФ. Для подтверждения заявленных сведений по таможенной стоимости кроме декларации таможенной стоимости декларант должен представить следующие документы:&lt;/p&gt;
+ 
+&lt;ul&gt; 
+  &lt;li&gt;договор (контракт) и дополнительные соглашения к нему (если они предусмотрены);&lt;/li&gt;
+ 
+  &lt;li&gt;дополнительные сведения по требованию таможенного органа.&lt;/li&gt;
+ 
+  &lt;li&gt;лицензию для товаров, импорт которых осуществляется по лицензиям в соответствии с установленным порядком;&lt;/li&gt;
+ 
+  &lt;li&gt;сертификат о происхождении товара, сертификат качества, безопасности и др.;&lt;/li&gt;
+ 
+  &lt;li&gt;счет за транспортировку или официально заверенную калькуляцию транспортных расходов в случаях, когда транспортные расходы не были включены в счет-фактуру;&lt;/li&gt;
+ 
+  &lt;li&gt;счет-фактуру (инвойс) и банковские платежные документы (если счет оплачен) или счет-проформу (для условно-стоимостных сделок), а также другие платежные и/или бухгалтерские документы, подтверждающие стоимость товара;&lt;/li&gt;
+ 
+  &lt;li&gt;таможенную декларацию страны отправления (если она имеется);&lt;/li&gt;
+ 
+  &lt;li&gt;транспортные и страховые документы, если они имеются в зависимости от условий поставки;&lt;/li&gt;
+ 
+  &lt;li&gt;упаковочные листы;&lt;/li&gt;
+ 
+  &lt;li&gt;учредительные документы лица, перемещающего товары;&lt;/li&gt;
+ &lt;/ul&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенная территория&lt;/strong&gt; - территория, на которой в полном объеме действует таможенное законодательство данной страны. Таможенную территорию Российской Федерации состав-ляют ее сухопутная территория, территориальные и внутренние воды, а также воздушное пространство над ними.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенное оформление&lt;/strong&gt;&lt;strong&gt; (таможенная очистка, декларирование груза)&lt;/strong&gt; — это установленная нормами таможенного законодательства процедура помещения товаров и транспортных средств под определенный таможен¬ный режим.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенный брокер (представитель)&lt;/strong&gt; - это участник внешнеэкономической деятельности, выбранный декларантом (заказчиком) для оказания посреднических услуг по таможенному оформлению товаров (уплатить таможенные сборы и пр.) и перевозке груза. Частным таможенным брокером может выступать только юридическое лицо, организация, имеющая своей целью извлечение прибыли. В России может работать только &lt;strong&gt;национальный таможенный брокер&lt;/strong&gt; - в этом заключается принципиальное различие нашего и иностранных законов в этой сфере. Все компании оказывающие подобного рода услуги обязательно должны пройти лицензирование Государственного таможенного комитета РФ, в противном случае это будет считаться нарушением действующего законодательства.&lt;/p&gt;
+ 
+&lt;p&gt;У таможенного брокера есть много инструментов облегчающих и ускоряющих таможенное оформление, чего нет даже у многих крупных участников ВЭД. Именно поэтому многие грузополучатели и грузоотправители перепоручают таможенное оформление своих грузов профессионалам, получая взамен гарантии качества, скорости, минимальных затрат и застрахованных рисков ошибок при прохождении таможенных формальностей. Брокер нужен также и для того, чтобы восполнить пробелы в знаниях клиента о рынке таможенных услуг и подобрать устраивающий таможенный терминал, таможню, перевозчика: оптимальных по цене для конкретного товара и надежных. У компаний, которые специализируются в области таможенного оформления, существуют нужные связи и контакты и процедура прохождения таможенного контроля отработана. Поэтому успешное решение проблем гарантировано.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенные пошлины &lt;/strong&gt;— косвенные налоги (взносы, платежи) на импортные, экспортные и транзитные товары, поступающие в доход государственного бюджета; взимаются таможенными органами страны при ввозе товара на ее таможенную территорию или его вывозе с этой территории по ставкам, предусмотренным в таможенном тарифе, и являются неотъемлемым условием такого ввоза или вывоза.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенный контроль&lt;/strong&gt; — это совокупность мер, осуществляемых таможенными органами в целях обеспечения соблюдения законодательства РФ о таможенном деле и иного законодательства РФ, контроль за исполнением которого отнесен к компетенции таможенных органов.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Зона таможенного контроля&lt;/strong&gt; — это специально выделенная и обозначенная часть таможенной территории Российской Федерации, создаваемая в целях осуществления таможенного контроля и обеспечения таможенного законодательства РФ.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Таможенный режим&lt;/strong&gt; — таможенная процедура, определяющая совокупность требований и условий, включающих порядок применения в отношении товаров и транспортных средств таможенных пошлин, налогов и запретов и ограничений, установленных в соответствии с законодательством Российской Федерации о государственном регулировании внешнеторговой деятельности, а также статус товаров и транспортных средств для таможенных целей в зависимости от целей их перемещения через таможенную границу и использования на таможенной территории Российской Федерации либо за ее пределами. Участник внешнеэкономической деятельности вправе в любое время выбрать любой таможенный режим либо изменить его на другой, независимо от характера, количества, страны назначения или страны происхождения товара.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Товары в таможенном законодательстве&lt;/strong&gt; - это любое движимое имущество, в том числе валюта, валютные ценности, электрическая, тепловая и иные виды энергии, а также транспортные средства, за исключением средств, используемых для международных перевозок пассажиров и товаров. В этот термин включаются так¬же объекты интеллектуальной собственности, а также отнесенные к недвижимому имуществу воздушные, морские суда, суда внутреннего плавания и космические объекты.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Товары, находящиеся под таможенным контролем&lt;/strong&gt; - иностранные товары, ввезенные на таможенную территорию Российской Федерации, до их выпуска для свободного обращения, фактического пересечения ими таможенной границы при вывозе или до их уничтожения, а также российские товары при их вывозе с таможенной территории Российской Федерации до фактического пересечения таможенной границы.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Транспортными средствами&lt;/strong&gt; в таможенном деле признаются любые средства, используемые для международных перевозок пассажиров и товаров, включая контейнеры и другое транспортное оборудование.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Упаковочный лист&lt;/strong&gt; - документ, который содержит перечень всех видов и сортов товара, находящихся в каждом товарном месте (ящике, коробке, контейнере) и необходим, обычно, когда в одной упаковке содержатся разные по ассортименту товары. Он используется в качестве дополнения к инвойсу, когда отправляется большое количество наименований товаров, или когда количество, вес или содержимое каждого индивидуального места различны. Упаковочный лист может иметь форму комплектовочной ведомости, которая содержит перечень деталей, узлов, агрегатов целой машины, упакованных в нескольких товарных местах, с описанием содержания каждого места.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Фидерное судно&lt;/strong&gt; – это небольшое судно, способное курсировать на сравнительно мелких глубинах. Эти суда встают под перегруз контейнеров, пришедших на линейном судне, и каждое собирает контейнеры по своему маршруту.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;strong&gt;Фрахт (нем. fracht, англ. freight)&lt;/strong&gt; — в морском праве: обусловленная договором или законом плата за перевозку груза. Уплачивается перевозчику отправителем груза или фрахтователем.&lt;/p&gt;
+ </Описание>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>2078</Ид>
+				<Наименование>Коды стран ISO</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Описание> 
+&lt;table&gt; 
+  &lt;tbody&gt; 
+    &lt;tr&gt;&lt;th&gt;Английское название&lt;/th&gt;&lt;th&gt;Русское название&lt;/th&gt;&lt;th width=&quot;40&quot;&gt;A2&lt;/th&gt;&lt;th width=&quot;40&quot;&gt;A3&lt;/th&gt;&lt;th width=&quot;40&quot;&gt;№&lt;/th&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Australia&lt;/td&gt;&lt;td&gt;Австралия&lt;/td&gt;&lt;td&gt;AU&lt;/td&gt;&lt;td&gt;AUS&lt;/td&gt;&lt;td&gt;036&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Austria&lt;/td&gt;&lt;td&gt;Австрия&lt;/td&gt;&lt;td&gt;AT&lt;/td&gt;&lt;td&gt;AUT&lt;/td&gt;&lt;td&gt;040&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Azerbaijan&lt;/td&gt;&lt;td&gt;Азербайджан&lt;/td&gt;&lt;td&gt;AZ&lt;/td&gt;&lt;td&gt;AZE&lt;/td&gt;&lt;td&gt;031&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Albania&lt;/td&gt;&lt;td&gt;Албания&lt;/td&gt;&lt;td&gt;AL&lt;/td&gt;&lt;td&gt;ALB&lt;/td&gt;&lt;td&gt;008&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Algeria&lt;/td&gt;&lt;td&gt;Алжир&lt;/td&gt;&lt;td&gt;DZ&lt;/td&gt;&lt;td&gt;DZA&lt;/td&gt;&lt;td&gt;012&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Anguilla&lt;/td&gt;&lt;td&gt;Ангилья о. (GB)&lt;/td&gt;&lt;td&gt;AI&lt;/td&gt;&lt;td&gt;AIA&lt;/td&gt;&lt;td&gt;660&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Angola&lt;/td&gt;&lt;td&gt;Ангола&lt;/td&gt;&lt;td&gt;AO&lt;/td&gt;&lt;td&gt;AGO&lt;/td&gt;&lt;td&gt;024&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Andorra&lt;/td&gt;&lt;td&gt;Андорра&lt;/td&gt;&lt;td&gt;AD&lt;/td&gt;&lt;td&gt;AND&lt;/td&gt;&lt;td&gt;020&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Antarctic&lt;/td&gt;&lt;td&gt;Антарктика&lt;/td&gt;&lt;td&gt;AQ&lt;/td&gt;&lt;td&gt;ATA&lt;/td&gt;&lt;td&gt;010&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Antigua and Barbuda&lt;/td&gt;&lt;td&gt;Антигуа и Барбуда&lt;/td&gt;&lt;td&gt;AG&lt;/td&gt;&lt;td&gt;ATG&lt;/td&gt;&lt;td&gt;028&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Netherlands' Antilles&lt;/td&gt;&lt;td&gt;Антильские о-ва (NL)&lt;/td&gt;&lt;td&gt;AN&lt;/td&gt;&lt;td&gt;ANT&lt;/td&gt;&lt;td&gt;530&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Argentina&lt;/td&gt;&lt;td&gt;Аргентина&lt;/td&gt;&lt;td&gt;AR&lt;/td&gt;&lt;td&gt;ARG&lt;/td&gt;&lt;td&gt;032&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Armenia&lt;/td&gt;&lt;td&gt;Армения&lt;/td&gt;&lt;td&gt;AM&lt;/td&gt;&lt;td&gt;ARM&lt;/td&gt;&lt;td&gt;051&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Aruba&lt;/td&gt;&lt;td&gt;Аруба&lt;/td&gt;&lt;td&gt;AW&lt;/td&gt;&lt;td&gt;ABW&lt;/td&gt;&lt;td&gt;533&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Afghanistan&lt;/td&gt;&lt;td&gt;Афганистан&lt;/td&gt;&lt;td&gt;AF&lt;/td&gt;&lt;td&gt;AFG&lt;/td&gt;&lt;td&gt;004&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bahamas&lt;/td&gt;&lt;td&gt;Багамы&lt;/td&gt;&lt;td&gt;BS&lt;/td&gt;&lt;td&gt;BHS&lt;/td&gt;&lt;td&gt;044&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bangladesh&lt;/td&gt;&lt;td&gt;Бангладеш&lt;/td&gt;&lt;td&gt;BD&lt;/td&gt;&lt;td&gt;BGD&lt;/td&gt;&lt;td&gt;050&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Barbados&lt;/td&gt;&lt;td&gt;Барбадос&lt;/td&gt;&lt;td&gt;BB&lt;/td&gt;&lt;td&gt;BRB&lt;/td&gt;&lt;td&gt;052&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bahrain&lt;/td&gt;&lt;td&gt;Бахрейн&lt;/td&gt;&lt;td&gt;BH&lt;/td&gt;&lt;td&gt;BHR&lt;/td&gt;&lt;td&gt;048&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Belarus&lt;/td&gt;&lt;td&gt;Беларусь&lt;/td&gt;&lt;td&gt;BY&lt;/td&gt;&lt;td&gt;BLR&lt;/td&gt;&lt;td&gt;112&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Belize&lt;/td&gt;&lt;td&gt;Белиз&lt;/td&gt;&lt;td&gt;BZ&lt;/td&gt;&lt;td&gt;BLZ&lt;/td&gt;&lt;td&gt;084&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Belgium&lt;/td&gt;&lt;td&gt;Бельгия&lt;/td&gt;&lt;td&gt;BE&lt;/td&gt;&lt;td&gt;BEL&lt;/td&gt;&lt;td&gt;056&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Benin&lt;/td&gt;&lt;td&gt;Бенин&lt;/td&gt;&lt;td&gt;BJ&lt;/td&gt;&lt;td&gt;BEN&lt;/td&gt;&lt;td&gt;204&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bermuda&lt;/td&gt;&lt;td&gt;Бермуды&lt;/td&gt;&lt;td&gt;BM&lt;/td&gt;&lt;td&gt;BMU&lt;/td&gt;&lt;td&gt;060&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bouvet Island&lt;/td&gt;&lt;td&gt;Бове о. (NO)&lt;/td&gt;&lt;td&gt;BV&lt;/td&gt;&lt;td&gt;BVT&lt;/td&gt;&lt;td&gt;074&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bulgaria&lt;/td&gt;&lt;td&gt;Болгария&lt;/td&gt;&lt;td&gt;BG&lt;/td&gt;&lt;td&gt;BGR&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bolivia&lt;/td&gt;&lt;td&gt;Боливия&lt;/td&gt;&lt;td&gt;BO&lt;/td&gt;&lt;td&gt;BOL&lt;/td&gt;&lt;td&gt;068&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bosnia &amp;amp; Herzegovina&lt;/td&gt;&lt;td&gt;Босния и Герцеговина&lt;/td&gt;&lt;td&gt;BA&lt;/td&gt;&lt;td&gt;BIH&lt;/td&gt;&lt;td&gt;070&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Botswana&lt;/td&gt;&lt;td&gt;Ботсвана&lt;/td&gt;&lt;td&gt;BW&lt;/td&gt;&lt;td&gt;BWA&lt;/td&gt;&lt;td&gt;072&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;Бразилия&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;BRA&lt;/td&gt;&lt;td&gt;076&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Brunei Darussalam&lt;/td&gt;&lt;td&gt;Бруней Дарассалам&lt;/td&gt;&lt;td&gt;BN&lt;/td&gt;&lt;td&gt;BRN&lt;/td&gt;&lt;td&gt;096&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Burkina-Faso&lt;/td&gt;&lt;td&gt;Буркина-Фасо&lt;/td&gt;&lt;td&gt;BF&lt;/td&gt;&lt;td&gt;BFA&lt;/td&gt;&lt;td&gt;854&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Burundi&lt;/td&gt;&lt;td&gt;Бурунди&lt;/td&gt;&lt;td&gt;BI&lt;/td&gt;&lt;td&gt;BDI&lt;/td&gt;&lt;td&gt;108&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Bhutan&lt;/td&gt;&lt;td&gt;Бутан&lt;/td&gt;&lt;td&gt;BT&lt;/td&gt;&lt;td&gt;BTN&lt;/td&gt;&lt;td&gt;064&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Vanuatu&lt;/td&gt;&lt;td&gt;Вануату&lt;/td&gt;&lt;td&gt;VU&lt;/td&gt;&lt;td&gt;VUT&lt;/td&gt;&lt;td&gt;548&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Vatican (Holy See)&lt;/td&gt;&lt;td&gt;Ватикан&lt;/td&gt;&lt;td&gt;VA&lt;/td&gt;&lt;td&gt;VAT&lt;/td&gt;&lt;td&gt;336&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Great Britain (United Kingdom)&lt;/td&gt;&lt;td&gt;Великобритания&lt;/td&gt;&lt;td&gt;GB&lt;/td&gt;&lt;td&gt;GBR&lt;/td&gt;&lt;td&gt;826&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Hungary&lt;/td&gt;&lt;td&gt;Венгрия&lt;/td&gt;&lt;td&gt;HU&lt;/td&gt;&lt;td&gt;HUN&lt;/td&gt;&lt;td&gt;348&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Venezuela&lt;/td&gt;&lt;td&gt;Венесуэла&lt;/td&gt;&lt;td&gt;VE&lt;/td&gt;&lt;td&gt;VEN&lt;/td&gt;&lt;td&gt;862&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Virgin Islands, British&lt;/td&gt;&lt;td&gt;Виргинские о-ва (GB)&lt;/td&gt;&lt;td&gt;VG&lt;/td&gt;&lt;td&gt;VGB&lt;/td&gt;&lt;td&gt;092&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Virgin Islands, US&lt;/td&gt;&lt;td&gt;Виргинские о-ва (US)&lt;/td&gt;&lt;td&gt;VI&lt;/td&gt;&lt;td&gt;VIR&lt;/td&gt;&lt;td&gt;850&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;American Samoa&lt;/td&gt;&lt;td&gt;Восточное Самоа (US)&lt;/td&gt;&lt;td&gt;AS&lt;/td&gt;&lt;td&gt;ASM&lt;/td&gt;&lt;td&gt;016&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;East Timor&lt;/td&gt;&lt;td&gt;Восточный Тимор&lt;/td&gt;&lt;td&gt;TP&lt;/td&gt;&lt;td&gt;TMP&lt;/td&gt;&lt;td&gt;626&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Viet Nam&lt;/td&gt;&lt;td&gt;Вьетнам&lt;/td&gt;&lt;td&gt;VN&lt;/td&gt;&lt;td&gt;VNM&lt;/td&gt;&lt;td&gt;704&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Gabon&lt;/td&gt;&lt;td&gt;Габон&lt;/td&gt;&lt;td&gt;GA&lt;/td&gt;&lt;td&gt;GAB&lt;/td&gt;&lt;td&gt;266&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Haiti&lt;/td&gt;&lt;td&gt;Гаити&lt;/td&gt;&lt;td&gt;HT&lt;/td&gt;&lt;td&gt;HTI&lt;/td&gt;&lt;td&gt;332&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guyana&lt;/td&gt;&lt;td&gt;Гайана&lt;/td&gt;&lt;td&gt;GY&lt;/td&gt;&lt;td&gt;GUY&lt;/td&gt;&lt;td&gt;328&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Gambia&lt;/td&gt;&lt;td&gt;Гамбия&lt;/td&gt;&lt;td&gt;GM&lt;/td&gt;&lt;td&gt;GMB&lt;/td&gt;&lt;td&gt;270&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Ghana&lt;/td&gt;&lt;td&gt;Гана&lt;/td&gt;&lt;td&gt;GH&lt;/td&gt;&lt;td&gt;GHA&lt;/td&gt;&lt;td&gt;288&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guadeloupe&lt;/td&gt;&lt;td&gt;Гваделупа&lt;/td&gt;&lt;td&gt;GP&lt;/td&gt;&lt;td&gt;GLP&lt;/td&gt;&lt;td&gt;312&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guatemala&lt;/td&gt;&lt;td&gt;Гватемала&lt;/td&gt;&lt;td&gt;GT&lt;/td&gt;&lt;td&gt;GTM&lt;/td&gt;&lt;td&gt;320&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guinea&lt;/td&gt;&lt;td&gt;Гвинея&lt;/td&gt;&lt;td&gt;GN&lt;/td&gt;&lt;td&gt;GIN&lt;/td&gt;&lt;td&gt;324&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guinea-Bissau&lt;/td&gt;&lt;td&gt;Гвинея-Бисау&lt;/td&gt;&lt;td&gt;GW&lt;/td&gt;&lt;td&gt;GNB&lt;/td&gt;&lt;td&gt;624&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Germany&lt;/td&gt;&lt;td&gt;Германия&lt;/td&gt;&lt;td&gt;DE&lt;/td&gt;&lt;td&gt;DEU&lt;/td&gt;&lt;td&gt;276&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Gibraltar&lt;/td&gt;&lt;td&gt;Гибралтар&lt;/td&gt;&lt;td&gt;GI&lt;/td&gt;&lt;td&gt;GIB&lt;/td&gt;&lt;td&gt;292&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Honduras&lt;/td&gt;&lt;td&gt;Гондурас&lt;/td&gt;&lt;td&gt;HN&lt;/td&gt;&lt;td&gt;HND&lt;/td&gt;&lt;td&gt;340&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Hong Kong&lt;/td&gt;&lt;td&gt;Гонконг (CN)&lt;/td&gt;&lt;td&gt;HK&lt;/td&gt;&lt;td&gt;HKG&lt;/td&gt;&lt;td&gt;344&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Grenada&lt;/td&gt;&lt;td&gt;Гренада&lt;/td&gt;&lt;td&gt;GD&lt;/td&gt;&lt;td&gt;GRD&lt;/td&gt;&lt;td&gt;308&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Greenland&lt;/td&gt;&lt;td&gt;Гренландия (DK)&lt;/td&gt;&lt;td&gt;GL&lt;/td&gt;&lt;td&gt;GRL&lt;/td&gt;&lt;td&gt;304&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Greece&lt;/td&gt;&lt;td&gt;Греция&lt;/td&gt;&lt;td&gt;GR&lt;/td&gt;&lt;td&gt;GRC&lt;/td&gt;&lt;td&gt;300&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Georgia&lt;/td&gt;&lt;td&gt;Грузия&lt;/td&gt;&lt;td&gt;GE&lt;/td&gt;&lt;td&gt;GEO&lt;/td&gt;&lt;td&gt;268&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Guam&lt;/td&gt;&lt;td&gt;Гуам&lt;/td&gt;&lt;td&gt;GU&lt;/td&gt;&lt;td&gt;GUM&lt;/td&gt;&lt;td&gt;316&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Denmark&lt;/td&gt;&lt;td&gt;Дания&lt;/td&gt;&lt;td&gt;DK&lt;/td&gt;&lt;td&gt;DNK&lt;/td&gt;&lt;td&gt;208&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Congo, Democratic Republic of the&lt;/td&gt;&lt;td&gt;Демократическая Республика Конго&lt;/td&gt;&lt;td&gt;CD&lt;/td&gt;&lt;td&gt;COD&lt;/td&gt;&lt;td&gt;180&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Djibouti&lt;/td&gt;&lt;td&gt;Джибути&lt;/td&gt;&lt;td&gt;DJ&lt;/td&gt;&lt;td&gt;DJI&lt;/td&gt;&lt;td&gt;262&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Dominica&lt;/td&gt;&lt;td&gt;Доминика&lt;/td&gt;&lt;td&gt;DM&lt;/td&gt;&lt;td&gt;DMA&lt;/td&gt;&lt;td&gt;212&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Dominican Republic&lt;/td&gt;&lt;td&gt;Доминиканская Республика&lt;/td&gt;&lt;td&gt;DO&lt;/td&gt;&lt;td&gt;DOM&lt;/td&gt;&lt;td&gt;214&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Egypt&lt;/td&gt;&lt;td&gt;Египет&lt;/td&gt;&lt;td&gt;EG&lt;/td&gt;&lt;td&gt;EGY&lt;/td&gt;&lt;td&gt;818&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Zambia&lt;/td&gt;&lt;td&gt;Замбия&lt;/td&gt;&lt;td&gt;ZM&lt;/td&gt;&lt;td&gt;ZMB&lt;/td&gt;&lt;td&gt;894&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Western Sahara&lt;/td&gt;&lt;td&gt;Западная Сахара&lt;/td&gt;&lt;td&gt;EH&lt;/td&gt;&lt;td&gt;ESH&lt;/td&gt;&lt;td&gt;732&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Zimbabwe&lt;/td&gt;&lt;td&gt;Зимбабве&lt;/td&gt;&lt;td&gt;ZW&lt;/td&gt;&lt;td&gt;ZWE&lt;/td&gt;&lt;td&gt;716&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Israel&lt;/td&gt;&lt;td&gt;Израиль&lt;/td&gt;&lt;td&gt;IL&lt;/td&gt;&lt;td&gt;ISR&lt;/td&gt;&lt;td&gt;376&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;India&lt;/td&gt;&lt;td&gt;Индия&lt;/td&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;IND&lt;/td&gt;&lt;td&gt;356&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Indonesia&lt;/td&gt;&lt;td&gt;Индонезия&lt;/td&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;IDN&lt;/td&gt;&lt;td&gt;360&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Jordan&lt;/td&gt;&lt;td&gt;Иордания&lt;/td&gt;&lt;td&gt;JO&lt;/td&gt;&lt;td&gt;JOR&lt;/td&gt;&lt;td&gt;400&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Iraq&lt;/td&gt;&lt;td&gt;Ирак&lt;/td&gt;&lt;td&gt;IQ&lt;/td&gt;&lt;td&gt;IRQ&lt;/td&gt;&lt;td&gt;368&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td&gt;Иран&lt;/td&gt;&lt;td&gt;IR&lt;/td&gt;&lt;td&gt;IRN&lt;/td&gt;&lt;td&gt;364&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Ireland&lt;/td&gt;&lt;td&gt;Ирландия&lt;/td&gt;&lt;td&gt;IE&lt;/td&gt;&lt;td&gt;IRL&lt;/td&gt;&lt;td&gt;372&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Iceland&lt;/td&gt;&lt;td&gt;Исландия&lt;/td&gt;&lt;td&gt;IS&lt;/td&gt;&lt;td&gt;ISL&lt;/td&gt;&lt;td&gt;352&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Spain&lt;/td&gt;&lt;td&gt;Испания&lt;/td&gt;&lt;td&gt;ES&lt;/td&gt;&lt;td&gt;ESP&lt;/td&gt;&lt;td&gt;724&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Italy&lt;/td&gt;&lt;td&gt;Италия&lt;/td&gt;&lt;td&gt;IT&lt;/td&gt;&lt;td&gt;ITA&lt;/td&gt;&lt;td&gt;380&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Yemen&lt;/td&gt;&lt;td&gt;Йемен&lt;/td&gt;&lt;td&gt;YE&lt;/td&gt;&lt;td&gt;YEM&lt;/td&gt;&lt;td&gt;887&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cape Verde&lt;/td&gt;&lt;td&gt;Кабо-Верде&lt;/td&gt;&lt;td&gt;CV&lt;/td&gt;&lt;td&gt;CPV&lt;/td&gt;&lt;td&gt;132&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Kazakhstan&lt;/td&gt;&lt;td&gt;Казахстан&lt;/td&gt;&lt;td&gt;KZ&lt;/td&gt;&lt;td&gt;KAZ&lt;/td&gt;&lt;td&gt;398&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cayman Islands&lt;/td&gt;&lt;td&gt;Каймановы о-ва (GB)&lt;/td&gt;&lt;td&gt;KY&lt;/td&gt;&lt;td&gt;CYM&lt;/td&gt;&lt;td&gt;136&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cambodia&lt;/td&gt;&lt;td&gt;Камбоджа&lt;/td&gt;&lt;td&gt;KH&lt;/td&gt;&lt;td&gt;KHM&lt;/td&gt;&lt;td&gt;116&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cameroon&lt;/td&gt;&lt;td&gt;Камерун&lt;/td&gt;&lt;td&gt;CM&lt;/td&gt;&lt;td&gt;CMR&lt;/td&gt;&lt;td&gt;120&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Canada&lt;/td&gt;&lt;td&gt;Канада&lt;/td&gt;&lt;td&gt;CA&lt;/td&gt;&lt;td&gt;CAN&lt;/td&gt;&lt;td&gt;124&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Qatar&lt;/td&gt;&lt;td&gt;Катар&lt;/td&gt;&lt;td&gt;QA&lt;/td&gt;&lt;td&gt;QAT&lt;/td&gt;&lt;td&gt;634&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Kenya&lt;/td&gt;&lt;td&gt;Кения&lt;/td&gt;&lt;td&gt;KE&lt;/td&gt;&lt;td&gt;KEN&lt;/td&gt;&lt;td&gt;404&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cyprus&lt;/td&gt;&lt;td&gt;Кипр&lt;/td&gt;&lt;td&gt;CY&lt;/td&gt;&lt;td&gt;CYP&lt;/td&gt;&lt;td&gt;196&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Kirghizstan&lt;/td&gt;&lt;td&gt;Киргизстан&lt;/td&gt;&lt;td&gt;KG&lt;/td&gt;&lt;td&gt;KGZ&lt;/td&gt;&lt;td&gt;417&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Kiribati&lt;/td&gt;&lt;td&gt;Кирибати&lt;/td&gt;&lt;td&gt;KI&lt;/td&gt;&lt;td&gt;KIR&lt;/td&gt;&lt;td&gt;296&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;China&lt;/td&gt;&lt;td&gt;Китай&lt;/td&gt;&lt;td&gt;CN&lt;/td&gt;&lt;td&gt;CHN&lt;/td&gt;&lt;td&gt;156&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cocos (Keeling) Islands&lt;/td&gt;&lt;td&gt;Кокосовые (Киилинг) о-ва (AU)&lt;/td&gt;&lt;td&gt;CC&lt;/td&gt;&lt;td&gt;CCK&lt;/td&gt;&lt;td&gt;166&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Colombia&lt;/td&gt;&lt;td&gt;Колумбия&lt;/td&gt;&lt;td&gt;CO&lt;/td&gt;&lt;td&gt;COL&lt;/td&gt;&lt;td&gt;170&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Comoros&lt;/td&gt;&lt;td&gt;Коморские о-ва&lt;/td&gt;&lt;td&gt;KM&lt;/td&gt;&lt;td&gt;COM&lt;/td&gt;&lt;td&gt;174&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Congo&lt;/td&gt;&lt;td&gt;Конго&lt;/td&gt;&lt;td&gt;CG&lt;/td&gt;&lt;td&gt;COG&lt;/td&gt;&lt;td&gt;178&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Costa Rica&lt;/td&gt;&lt;td&gt;Коста-Рика&lt;/td&gt;&lt;td&gt;CR&lt;/td&gt;&lt;td&gt;CRI&lt;/td&gt;&lt;td&gt;188&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cote d'Ivoire&lt;/td&gt;&lt;td&gt;Кот-д'Ивуар&lt;/td&gt;&lt;td&gt;CI&lt;/td&gt;&lt;td&gt;CIV&lt;/td&gt;&lt;td&gt;384&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cuba&lt;/td&gt;&lt;td&gt;Куба&lt;/td&gt;&lt;td&gt;CU&lt;/td&gt;&lt;td&gt;CUB&lt;/td&gt;&lt;td&gt;192&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Kuwait&lt;/td&gt;&lt;td&gt;Кувейт&lt;/td&gt;&lt;td&gt;KW&lt;/td&gt;&lt;td&gt;KWT&lt;/td&gt;&lt;td&gt;414&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Cook Islands&lt;/td&gt;&lt;td&gt;Кука о-ва (NZ)&lt;/td&gt;&lt;td&gt;CK&lt;/td&gt;&lt;td&gt;COK&lt;/td&gt;&lt;td&gt;184&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Lao People's Democratic Republic&lt;/td&gt;&lt;td&gt;Лаос&lt;/td&gt;&lt;td&gt;LA&lt;/td&gt;&lt;td&gt;LAO&lt;/td&gt;&lt;td&gt;418&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Latvia&lt;/td&gt;&lt;td&gt;Латвия&lt;/td&gt;&lt;td&gt;LV&lt;/td&gt;&lt;td&gt;LVA&lt;/td&gt;&lt;td&gt;428&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Lesotho&lt;/td&gt;&lt;td&gt;Лесото&lt;/td&gt;&lt;td&gt;LS&lt;/td&gt;&lt;td&gt;LSO&lt;/td&gt;&lt;td&gt;426&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Liberia&lt;/td&gt;&lt;td&gt;Либерия&lt;/td&gt;&lt;td&gt;LR&lt;/td&gt;&lt;td&gt;LBR&lt;/td&gt;&lt;td&gt;430&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Lebanon&lt;/td&gt;&lt;td&gt;Ливан&lt;/td&gt;&lt;td&gt;LB&lt;/td&gt;&lt;td&gt;LBN&lt;/td&gt;&lt;td&gt;422&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Libyan Arab Jamahiriya&lt;/td&gt;&lt;td&gt;Ливия&lt;/td&gt;&lt;td&gt;LY&lt;/td&gt;&lt;td&gt;LBY&lt;/td&gt;&lt;td&gt;434&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Lithuania&lt;/td&gt;&lt;td&gt;Литва&lt;/td&gt;&lt;td&gt;LT&lt;/td&gt;&lt;td&gt;LTU&lt;/td&gt;&lt;td&gt;440&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Liechtenstein&lt;/td&gt;&lt;td&gt;Лихтенштейн&lt;/td&gt;&lt;td&gt;LI&lt;/td&gt;&lt;td&gt;LIE&lt;/td&gt;&lt;td&gt;438&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Luxembourg&lt;/td&gt;&lt;td&gt;Люксембург&lt;/td&gt;&lt;td&gt;LU&lt;/td&gt;&lt;td&gt;LUX&lt;/td&gt;&lt;td&gt;442&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mauritius&lt;/td&gt;&lt;td&gt;Маврикий&lt;/td&gt;&lt;td&gt;MU&lt;/td&gt;&lt;td&gt;MUS&lt;/td&gt;&lt;td&gt;480&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mauritania&lt;/td&gt;&lt;td&gt;Мавритания&lt;/td&gt;&lt;td&gt;MR&lt;/td&gt;&lt;td&gt;MRT&lt;/td&gt;&lt;td&gt;478&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Madagascar&lt;/td&gt;&lt;td&gt;Мадагаскар&lt;/td&gt;&lt;td&gt;MG&lt;/td&gt;&lt;td&gt;MDG&lt;/td&gt;&lt;td&gt;450&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mayotte&lt;/td&gt;&lt;td&gt;Майотта о. (KM)&lt;/td&gt;&lt;td&gt;YT&lt;/td&gt;&lt;td&gt;MYT&lt;/td&gt;&lt;td&gt;175&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Macau (Macao)&lt;/td&gt;&lt;td&gt;Макао (PT)&lt;/td&gt;&lt;td&gt;MO&lt;/td&gt;&lt;td&gt;MAC&lt;/td&gt;&lt;td&gt;446&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Macedonia&lt;/td&gt;&lt;td&gt;Македония&lt;/td&gt;&lt;td&gt;MK&lt;/td&gt;&lt;td&gt;MKD&lt;/td&gt;&lt;td&gt;807&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Malawi&lt;/td&gt;&lt;td&gt;Малави&lt;/td&gt;&lt;td&gt;MW&lt;/td&gt;&lt;td&gt;MWI&lt;/td&gt;&lt;td&gt;454&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Malaysia&lt;/td&gt;&lt;td&gt;Малайзия&lt;/td&gt;&lt;td&gt;MY&lt;/td&gt;&lt;td&gt;MYS&lt;/td&gt;&lt;td&gt;458&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mali&lt;/td&gt;&lt;td&gt;Мали&lt;/td&gt;&lt;td&gt;ML&lt;/td&gt;&lt;td&gt;MLI&lt;/td&gt;&lt;td&gt;466&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Maldives&lt;/td&gt;&lt;td&gt;Мальдивы&lt;/td&gt;&lt;td&gt;MV&lt;/td&gt;&lt;td&gt;MDV&lt;/td&gt;&lt;td&gt;462&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Malta&lt;/td&gt;&lt;td&gt;Мальта&lt;/td&gt;&lt;td&gt;MT&lt;/td&gt;&lt;td&gt;MLT&lt;/td&gt;&lt;td&gt;470&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Marocco&lt;/td&gt;&lt;td&gt;Марокко&lt;/td&gt;&lt;td&gt;MA&lt;/td&gt;&lt;td&gt;MAR&lt;/td&gt;&lt;td&gt;504&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Martinique&lt;/td&gt;&lt;td&gt;Мартиника&lt;/td&gt;&lt;td&gt;MQ&lt;/td&gt;&lt;td&gt;MTQ&lt;/td&gt;&lt;td&gt;474&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Marshall Islands&lt;/td&gt;&lt;td&gt;Маршалловы о-ва&lt;/td&gt;&lt;td&gt;MH&lt;/td&gt;&lt;td&gt;MHL&lt;/td&gt;&lt;td&gt;584&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mexico&lt;/td&gt;&lt;td&gt;Мексика&lt;/td&gt;&lt;td&gt;MX&lt;/td&gt;&lt;td&gt;MEX&lt;/td&gt;&lt;td&gt;484&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Federated States of Micronesia&lt;/td&gt;&lt;td&gt;Микронезия (US)&lt;/td&gt;&lt;td&gt;FM&lt;/td&gt;&lt;td&gt;FSM&lt;/td&gt;&lt;td&gt;583&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mozambique&lt;/td&gt;&lt;td&gt;Мозамбик&lt;/td&gt;&lt;td&gt;MZ&lt;/td&gt;&lt;td&gt;MOZ&lt;/td&gt;&lt;td&gt;508&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Moldova&lt;/td&gt;&lt;td&gt;Молдова&lt;/td&gt;&lt;td&gt;MD&lt;/td&gt;&lt;td&gt;MDA&lt;/td&gt;&lt;td&gt;498&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Monaco&lt;/td&gt;&lt;td&gt;Монако&lt;/td&gt;&lt;td&gt;MC&lt;/td&gt;&lt;td&gt;MCO&lt;/td&gt;&lt;td&gt;492&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Mongolia&lt;/td&gt;&lt;td&gt;Монголия&lt;/td&gt;&lt;td&gt;MN&lt;/td&gt;&lt;td&gt;MNG&lt;/td&gt;&lt;td&gt;496&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Montserrat&lt;/td&gt;&lt;td&gt;Монсеррат о. (GB)&lt;/td&gt;&lt;td&gt;MS&lt;/td&gt;&lt;td&gt;MSR&lt;/td&gt;&lt;td&gt;500&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Myanmar&lt;/td&gt;&lt;td&gt;Мьянма&lt;/td&gt;&lt;td&gt;MM&lt;/td&gt;&lt;td&gt;MMR&lt;/td&gt;&lt;td&gt;104&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Namibia&lt;/td&gt;&lt;td&gt;Намибия&lt;/td&gt;&lt;td&gt;NA&lt;/td&gt;&lt;td&gt;NAM&lt;/td&gt;&lt;td&gt;516&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Nauru&lt;/td&gt;&lt;td&gt;Науру&lt;/td&gt;&lt;td&gt;NR&lt;/td&gt;&lt;td&gt;NRU&lt;/td&gt;&lt;td&gt;520&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Nepal&lt;/td&gt;&lt;td&gt;Непал&lt;/td&gt;&lt;td&gt;NP&lt;/td&gt;&lt;td&gt;NPL&lt;/td&gt;&lt;td&gt;524&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Niger&lt;/td&gt;&lt;td&gt;Нигер&lt;/td&gt;&lt;td&gt;NE&lt;/td&gt;&lt;td&gt;NER&lt;/td&gt;&lt;td&gt;562&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Nigeria&lt;/td&gt;&lt;td&gt;Нигерия&lt;/td&gt;&lt;td&gt;NG&lt;/td&gt;&lt;td&gt;NGA&lt;/td&gt;&lt;td&gt;566&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Netherlands (Holland)&lt;/td&gt;&lt;td&gt;Нидерланды&lt;/td&gt;&lt;td&gt;NL&lt;/td&gt;&lt;td&gt;NLD&lt;/td&gt;&lt;td&gt;528&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Nicaragua&lt;/td&gt;&lt;td&gt;Никарагуа&lt;/td&gt;&lt;td&gt;NI&lt;/td&gt;&lt;td&gt;NIC&lt;/td&gt;&lt;td&gt;558&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Niue&lt;/td&gt;&lt;td&gt;Ниуэ о. (NZ)&lt;/td&gt;&lt;td&gt;NU&lt;/td&gt;&lt;td&gt;NIU&lt;/td&gt;&lt;td&gt;570&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;New Zealand&lt;/td&gt;&lt;td&gt;Новая Зеландия&lt;/td&gt;&lt;td&gt;NZ&lt;/td&gt;&lt;td&gt;NZL&lt;/td&gt;&lt;td&gt;554&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;New Caledonia&lt;/td&gt;&lt;td&gt;Новая Каледония о. (FR)&lt;/td&gt;&lt;td&gt;NC&lt;/td&gt;&lt;td&gt;NCL&lt;/td&gt;&lt;td&gt;540&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Norway&lt;/td&gt;&lt;td&gt;Норвегия&lt;/td&gt;&lt;td&gt;NO&lt;/td&gt;&lt;td&gt;NOR&lt;/td&gt;&lt;td&gt;578&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Norfolk Island&lt;/td&gt;&lt;td&gt;Норфолк о. (AU)&lt;/td&gt;&lt;td&gt;NF&lt;/td&gt;&lt;td&gt;NFK&lt;/td&gt;&lt;td&gt;574&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;United Arab Emirates&lt;/td&gt;&lt;td&gt;Объединенные Арабские Эмираты&lt;/td&gt;&lt;td&gt;AE&lt;/td&gt;&lt;td&gt;ARE&lt;/td&gt;&lt;td&gt;784&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Oman&lt;/td&gt;&lt;td&gt;Оман&lt;/td&gt;&lt;td&gt;OM&lt;/td&gt;&lt;td&gt;OMN&lt;/td&gt;&lt;td&gt;512&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Pakistan&lt;/td&gt;&lt;td&gt;Пакистан&lt;/td&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;PAK&lt;/td&gt;&lt;td&gt;586&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Palau&lt;/td&gt;&lt;td&gt;Палау (US)&lt;/td&gt;&lt;td&gt;PW&lt;/td&gt;&lt;td&gt;PLW&lt;/td&gt;&lt;td&gt;585&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Palestinian Territory (occupied)&lt;/td&gt;&lt;td&gt;Палестинская автономия&lt;/td&gt;&lt;td&gt;PS&lt;/td&gt;&lt;td&gt;?&lt;/td&gt;&lt;td&gt;?&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Panama&lt;/td&gt;&lt;td&gt;Панама&lt;/td&gt;&lt;td&gt;PA&lt;/td&gt;&lt;td&gt;PAN&lt;/td&gt;&lt;td&gt;591&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Papua New Guinea&lt;/td&gt;&lt;td&gt;Папуа-Новая Гвинея&lt;/td&gt;&lt;td&gt;PG&lt;/td&gt;&lt;td&gt;PNG&lt;/td&gt;&lt;td&gt;598&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Paraguay&lt;/td&gt;&lt;td&gt;Парагвай&lt;/td&gt;&lt;td&gt;PY&lt;/td&gt;&lt;td&gt;PRY&lt;/td&gt;&lt;td&gt;600&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Peru&lt;/td&gt;&lt;td&gt;Перу&lt;/td&gt;&lt;td&gt;PE&lt;/td&gt;&lt;td&gt;PER&lt;/td&gt;&lt;td&gt;604&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Pitcairn&lt;/td&gt;&lt;td&gt;Питкэрн о-ва (GB)&lt;/td&gt;&lt;td&gt;PN&lt;/td&gt;&lt;td&gt;PCN&lt;/td&gt;&lt;td&gt;612&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Poland&lt;/td&gt;&lt;td&gt;Польша&lt;/td&gt;&lt;td&gt;PL&lt;/td&gt;&lt;td&gt;POL&lt;/td&gt;&lt;td&gt;616&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Portugal&lt;/td&gt;&lt;td&gt;Португалия&lt;/td&gt;&lt;td&gt;PT&lt;/td&gt;&lt;td&gt;PRT&lt;/td&gt;&lt;td&gt;620&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Puerto Rico&lt;/td&gt;&lt;td&gt;Пуэрто-Рико (US)&lt;/td&gt;&lt;td&gt;PR&lt;/td&gt;&lt;td&gt;PRI&lt;/td&gt;&lt;td&gt;630&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Reunion&lt;/td&gt;&lt;td&gt;Реюньон о. (FR)&lt;/td&gt;&lt;td&gt;RE&lt;/td&gt;&lt;td&gt;REU&lt;/td&gt;&lt;td&gt;638&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Christmas Island&lt;/td&gt;&lt;td&gt;Рождества о. (AU)&lt;/td&gt;&lt;td&gt;CX&lt;/td&gt;&lt;td&gt;CXR&lt;/td&gt;&lt;td&gt;162&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Russia (Russian Federation)&lt;/td&gt;&lt;td&gt;Россия&lt;/td&gt;&lt;td&gt;RU&lt;/td&gt;&lt;td&gt;RUS&lt;/td&gt;&lt;td&gt;643&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Rwanda&lt;/td&gt;&lt;td&gt;Руанда&lt;/td&gt;&lt;td&gt;RW&lt;/td&gt;&lt;td&gt;RWA&lt;/td&gt;&lt;td&gt;646&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Romania&lt;/td&gt;&lt;td&gt;Румыния&lt;/td&gt;&lt;td&gt;RO&lt;/td&gt;&lt;td&gt;ROM&lt;/td&gt;&lt;td&gt;642&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;El Salvador&lt;/td&gt;&lt;td&gt;Сальвадор&lt;/td&gt;&lt;td&gt;SV&lt;/td&gt;&lt;td&gt;SLV&lt;/td&gt;&lt;td&gt;222&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Samoa&lt;/td&gt;&lt;td&gt;Самоа&lt;/td&gt;&lt;td&gt;WS&lt;/td&gt;&lt;td&gt;WSM&lt;/td&gt;&lt;td&gt;882&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;San Marino&lt;/td&gt;&lt;td&gt;Сан Марино&lt;/td&gt;&lt;td&gt;SM&lt;/td&gt;&lt;td&gt;SMR&lt;/td&gt;&lt;td&gt;674&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Sao Tomea and Principe&lt;/td&gt;&lt;td&gt;Сан-Томе и Принсипи&lt;/td&gt;&lt;td&gt;ST&lt;/td&gt;&lt;td&gt;STP&lt;/td&gt;&lt;td&gt;678&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Saudi Arabia&lt;/td&gt;&lt;td&gt;Саудовская Аравия&lt;/td&gt;&lt;td&gt;SA&lt;/td&gt;&lt;td&gt;SAU&lt;/td&gt;&lt;td&gt;682&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Swaziland&lt;/td&gt;&lt;td&gt;Свазиленд&lt;/td&gt;&lt;td&gt;SZ&lt;/td&gt;&lt;td&gt;SWZ&lt;/td&gt;&lt;td&gt;748&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Svalbard and Jan Mayen Islands&lt;/td&gt;&lt;td&gt;Свалбард и Ян Мейен о-ва (NO)&lt;/td&gt;&lt;td&gt;SJ&lt;/td&gt;&lt;td&gt;SJM&lt;/td&gt;&lt;td&gt;744&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;St. Helena&lt;/td&gt;&lt;td&gt;Святой Елены о. (GB)&lt;/td&gt;&lt;td&gt;SH&lt;/td&gt;&lt;td&gt;SHN&lt;/td&gt;&lt;td&gt;654&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Korea (North)&lt;/td&gt;&lt;td&gt;Северная Корея (КНДР)&lt;/td&gt;&lt;td&gt;KP&lt;/td&gt;&lt;td&gt;PRK&lt;/td&gt;&lt;td&gt;408&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Northern Mariana Islands&lt;/td&gt;&lt;td&gt;Северные Марианские о-ва (US)&lt;/td&gt;&lt;td&gt;MP&lt;/td&gt;&lt;td&gt;MNP&lt;/td&gt;&lt;td&gt;580&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Seychelles&lt;/td&gt;&lt;td&gt;Сейшелы&lt;/td&gt;&lt;td&gt;SC&lt;/td&gt;&lt;td&gt;SYC&lt;/td&gt;&lt;td&gt;690&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Saint Vincent and the Grenadines&lt;/td&gt;&lt;td&gt;Сен-Винсент и Гренадины&lt;/td&gt;&lt;td&gt;VC&lt;/td&gt;&lt;td&gt;VCT&lt;/td&gt;&lt;td&gt;670&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;St. Pierre and Miquelon&lt;/td&gt;&lt;td&gt;Сен-Пьер и Микелон (FR)&lt;/td&gt;&lt;td&gt;PM&lt;/td&gt;&lt;td&gt;SPM&lt;/td&gt;&lt;td&gt;666&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Senegal&lt;/td&gt;&lt;td&gt;Сенегал&lt;/td&gt;&lt;td&gt;SN&lt;/td&gt;&lt;td&gt;SEN&lt;/td&gt;&lt;td&gt;686&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Saint Kitts (Christopher) and Nevis&lt;/td&gt;&lt;td&gt;Сент-Кристофер и Невис&lt;/td&gt;&lt;td&gt;KN&lt;/td&gt;&lt;td&gt;KNA&lt;/td&gt;&lt;td&gt;659&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Saint Lucia&lt;/td&gt;&lt;td&gt;Сент-Люсия&lt;/td&gt;&lt;td&gt;LC&lt;/td&gt;&lt;td&gt;LCA&lt;/td&gt;&lt;td&gt;662&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td&gt;Сингапур&lt;/td&gt;&lt;td&gt;SG&lt;/td&gt;&lt;td&gt;SGP&lt;/td&gt;&lt;td&gt;702&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Syria&lt;/td&gt;&lt;td&gt;Сирия&lt;/td&gt;&lt;td&gt;SY&lt;/td&gt;&lt;td&gt;SYR&lt;/td&gt;&lt;td&gt;760&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Slovak Republic&lt;/td&gt;&lt;td&gt;Словакия&lt;/td&gt;&lt;td&gt;SK&lt;/td&gt;&lt;td&gt;SVK&lt;/td&gt;&lt;td&gt;703&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Slovenia&lt;/td&gt;&lt;td&gt;Словения&lt;/td&gt;&lt;td&gt;SI&lt;/td&gt;&lt;td&gt;SVN&lt;/td&gt;&lt;td&gt;705&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;United States of America&lt;/td&gt;&lt;td&gt;Соединенные Штаты Америки&lt;/td&gt;&lt;td&gt;US&lt;/td&gt;&lt;td&gt;USA&lt;/td&gt;&lt;td&gt;840&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Solomon Islands&lt;/td&gt;&lt;td&gt;Соломоновы о-ва&lt;/td&gt;&lt;td&gt;SB&lt;/td&gt;&lt;td&gt;SLB&lt;/td&gt;&lt;td&gt;090&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Somali&lt;/td&gt;&lt;td&gt;Сомали&lt;/td&gt;&lt;td&gt;SO&lt;/td&gt;&lt;td&gt;SOM&lt;/td&gt;&lt;td&gt;706&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Sudan&lt;/td&gt;&lt;td&gt;Судан&lt;/td&gt;&lt;td&gt;SD&lt;/td&gt;&lt;td&gt;SDN&lt;/td&gt;&lt;td&gt;736&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Surinam&lt;/td&gt;&lt;td&gt;Суринам&lt;/td&gt;&lt;td&gt;SR&lt;/td&gt;&lt;td&gt;SUR&lt;/td&gt;&lt;td&gt;740&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Sierra Leone&lt;/td&gt;&lt;td&gt;Сьерра-Леоне&lt;/td&gt;&lt;td&gt;SL&lt;/td&gt;&lt;td&gt;SLE&lt;/td&gt;&lt;td&gt;694&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tadjikistan&lt;/td&gt;&lt;td&gt;Таджикистан&lt;/td&gt;&lt;td&gt;TJ&lt;/td&gt;&lt;td&gt;TJK&lt;/td&gt;&lt;td&gt;762&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Thailand&lt;/td&gt;&lt;td&gt;Таиланд&lt;/td&gt;&lt;td&gt;TH&lt;/td&gt;&lt;td&gt;THA&lt;/td&gt;&lt;td&gt;764&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Taiwan&lt;/td&gt;&lt;td&gt;Тайвань&lt;/td&gt;&lt;td&gt;TW&lt;/td&gt;&lt;td&gt;TWN&lt;/td&gt;&lt;td&gt;158&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tanzania&lt;/td&gt;&lt;td&gt;Танзания&lt;/td&gt;&lt;td&gt;TZ&lt;/td&gt;&lt;td&gt;TZA&lt;/td&gt;&lt;td&gt;834&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Turks and Caicos Islands&lt;/td&gt;&lt;td&gt;Теркс и Кайкос о-ва (GB)&lt;/td&gt;&lt;td&gt;TC&lt;/td&gt;&lt;td&gt;TCA&lt;/td&gt;&lt;td&gt;796&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Togo&lt;/td&gt;&lt;td&gt;Того&lt;/td&gt;&lt;td&gt;TG&lt;/td&gt;&lt;td&gt;TGO&lt;/td&gt;&lt;td&gt;768&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tokelau&lt;/td&gt;&lt;td&gt;Токелау о-ва (NZ)&lt;/td&gt;&lt;td&gt;TK&lt;/td&gt;&lt;td&gt;TKL&lt;/td&gt;&lt;td&gt;772&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tonga&lt;/td&gt;&lt;td&gt;Тонга&lt;/td&gt;&lt;td&gt;TO&lt;/td&gt;&lt;td&gt;TON&lt;/td&gt;&lt;td&gt;776&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Trinidad and Tobago&lt;/td&gt;&lt;td&gt;Тринидад и Тобаго&lt;/td&gt;&lt;td&gt;TT&lt;/td&gt;&lt;td&gt;TTO&lt;/td&gt;&lt;td&gt;780&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tuvalu&lt;/td&gt;&lt;td&gt;Тувалу&lt;/td&gt;&lt;td&gt;TV&lt;/td&gt;&lt;td&gt;TUV&lt;/td&gt;&lt;td&gt;798&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Tunisia&lt;/td&gt;&lt;td&gt;Тунис&lt;/td&gt;&lt;td&gt;TN&lt;/td&gt;&lt;td&gt;TUN&lt;/td&gt;&lt;td&gt;788&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Turkmenistan&lt;/td&gt;&lt;td&gt;Туркменистан&lt;/td&gt;&lt;td&gt;TM&lt;/td&gt;&lt;td&gt;TKM&lt;/td&gt;&lt;td&gt;795&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Turkey&lt;/td&gt;&lt;td&gt;Турция&lt;/td&gt;&lt;td&gt;TR&lt;/td&gt;&lt;td&gt;TUR&lt;/td&gt;&lt;td&gt;792&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Uganda&lt;/td&gt;&lt;td&gt;Уганда&lt;/td&gt;&lt;td&gt;UG&lt;/td&gt;&lt;td&gt;UGA&lt;/td&gt;&lt;td&gt;800&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Uzbekistan&lt;/td&gt;&lt;td&gt;Узбекистан&lt;/td&gt;&lt;td&gt;UZ&lt;/td&gt;&lt;td&gt;UZB&lt;/td&gt;&lt;td&gt;860&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Ukraine&lt;/td&gt;&lt;td&gt;Украина&lt;/td&gt;&lt;td&gt;UA&lt;/td&gt;&lt;td&gt;UKR&lt;/td&gt;&lt;td&gt;804&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Wallis and Futuna Islands&lt;/td&gt;&lt;td&gt;Уоллис и Футуна о-ва (FR)&lt;/td&gt;&lt;td&gt;WF&lt;/td&gt;&lt;td&gt;WLF&lt;/td&gt;&lt;td&gt;876&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Uruguay&lt;/td&gt;&lt;td&gt;Уругвай&lt;/td&gt;&lt;td&gt;UY&lt;/td&gt;&lt;td&gt;URY&lt;/td&gt;&lt;td&gt;858&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Faroe Islands&lt;/td&gt;&lt;td&gt;Фарерские о-ва (DK)&lt;/td&gt;&lt;td&gt;FO&lt;/td&gt;&lt;td&gt;FRO&lt;/td&gt;&lt;td&gt;234&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Fiji&lt;/td&gt;&lt;td&gt;Фиджи&lt;/td&gt;&lt;td&gt;FJ&lt;/td&gt;&lt;td&gt;FJI&lt;/td&gt;&lt;td&gt;242&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Philippines&lt;/td&gt;&lt;td&gt;Филиппины&lt;/td&gt;&lt;td&gt;PH&lt;/td&gt;&lt;td&gt;PHL&lt;/td&gt;&lt;td&gt;608&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Finland&lt;/td&gt;&lt;td&gt;Финляндия&lt;/td&gt;&lt;td&gt;FI&lt;/td&gt;&lt;td&gt;FIN&lt;/td&gt;&lt;td&gt;246&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Falkland (Malvinas) Islands&lt;/td&gt;&lt;td&gt;Фолклендские (Мальвинские) о-ва (GB/AR)&lt;/td&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;FLK&lt;/td&gt;&lt;td&gt;238&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;France&lt;/td&gt;&lt;td&gt;Франция&lt;/td&gt;&lt;td&gt;FR&lt;/td&gt;&lt;td&gt;FRA&lt;/td&gt;&lt;td&gt;250&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;French Guyana&lt;/td&gt;&lt;td&gt;Французская Гвиана (FR)&lt;/td&gt;&lt;td&gt;GF&lt;/td&gt;&lt;td&gt;GUF&lt;/td&gt;&lt;td&gt;254&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;French Polynesia&lt;/td&gt;&lt;td&gt;Французская Полинезия&lt;/td&gt;&lt;td&gt;PF&lt;/td&gt;&lt;td&gt;PYF&lt;/td&gt;&lt;td&gt;258&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Heard and McDonald Islands&lt;/td&gt;&lt;td&gt;Херд и Макдональд о-ва (AU)&lt;/td&gt;&lt;td&gt;HM&lt;/td&gt;&lt;td&gt;HMD&lt;/td&gt;&lt;td&gt;334&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Croatia&lt;/td&gt;&lt;td&gt;Хорватия&lt;/td&gt;&lt;td&gt;HR&lt;/td&gt;&lt;td&gt;HRV&lt;/td&gt;&lt;td&gt;191&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Central African Republic&lt;/td&gt;&lt;td&gt;Центрально-африканская Республика&lt;/td&gt;&lt;td&gt;CF&lt;/td&gt;&lt;td&gt;CAF&lt;/td&gt;&lt;td&gt;140&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Chad&lt;/td&gt;&lt;td&gt;Чад&lt;/td&gt;&lt;td&gt;TD&lt;/td&gt;&lt;td&gt;TCD&lt;/td&gt;&lt;td&gt;148&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Czech Republic&lt;/td&gt;&lt;td&gt;Чехия&lt;/td&gt;&lt;td&gt;CZ&lt;/td&gt;&lt;td&gt;CZE&lt;/td&gt;&lt;td&gt;203&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Chili&lt;/td&gt;&lt;td&gt;Чили&lt;/td&gt;&lt;td&gt;CL&lt;/td&gt;&lt;td&gt;CHL&lt;/td&gt;&lt;td&gt;152&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Switzerland&lt;/td&gt;&lt;td&gt;Швейцария&lt;/td&gt;&lt;td&gt;CH&lt;/td&gt;&lt;td&gt;CHE&lt;/td&gt;&lt;td&gt;756&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Sweden&lt;/td&gt;&lt;td&gt;Швеция&lt;/td&gt;&lt;td&gt;SE&lt;/td&gt;&lt;td&gt;SWE&lt;/td&gt;&lt;td&gt;752&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Sri Lanka&lt;/td&gt;&lt;td&gt;Шри-Ланка&lt;/td&gt;&lt;td&gt;LK&lt;/td&gt;&lt;td&gt;LKA&lt;/td&gt;&lt;td&gt;144&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Ecuador&lt;/td&gt;&lt;td&gt;Эквадор&lt;/td&gt;&lt;td&gt;EC&lt;/td&gt;&lt;td&gt;ECU&lt;/td&gt;&lt;td&gt;218&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Equatorial Guinea&lt;/td&gt;&lt;td&gt;Экваториальная Гвинея&lt;/td&gt;&lt;td&gt;GQ&lt;/td&gt;&lt;td&gt;GNQ&lt;/td&gt;&lt;td&gt;226&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Eritrea&lt;/td&gt;&lt;td&gt;Эритрия&lt;/td&gt;&lt;td&gt;ER&lt;/td&gt;&lt;td&gt;ERI&lt;/td&gt;&lt;td&gt;232&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Estonia&lt;/td&gt;&lt;td&gt;Эстония&lt;/td&gt;&lt;td&gt;EE&lt;/td&gt;&lt;td&gt;EST&lt;/td&gt;&lt;td&gt;233&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Ethiopia&lt;/td&gt;&lt;td&gt;Эфиопия&lt;/td&gt;&lt;td&gt;ET&lt;/td&gt;&lt;td&gt;ETH&lt;/td&gt;&lt;td&gt;231&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Yugoslavia&lt;/td&gt;&lt;td&gt;Югославия&lt;/td&gt;&lt;td&gt;YU&lt;/td&gt;&lt;td&gt;YUG&lt;/td&gt;&lt;td&gt;891&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;South Africa&lt;/td&gt;&lt;td&gt;Южная Африка&lt;/td&gt;&lt;td&gt;ZA&lt;/td&gt;&lt;td&gt;ZAF&lt;/td&gt;&lt;td&gt;710&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;South Georgia and the South Sandwich Islands&lt;/td&gt;&lt;td&gt;Южная Георгия и Южные Сандвичевы о-ва&lt;/td&gt;&lt;td&gt;GS&lt;/td&gt;&lt;td&gt;SGS&lt;/td&gt;&lt;td&gt;239&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Korea (South)&lt;/td&gt;&lt;td&gt;Южная Корея (Республика Корея)&lt;/td&gt;&lt;td&gt;KR&lt;/td&gt;&lt;td&gt;KOR&lt;/td&gt;&lt;td&gt;410&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Jamaica&lt;/td&gt;&lt;td&gt;Ямайка&lt;/td&gt;&lt;td&gt;JM&lt;/td&gt;&lt;td&gt;JAM&lt;/td&gt;&lt;td&gt;388&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td&gt;Япония&lt;/td&gt;&lt;td&gt;JP&lt;/td&gt;&lt;td&gt;JPN&lt;/td&gt;&lt;td&gt;392&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;French Southern Territories&lt;/td&gt;&lt;td&gt;? (FR)&lt;/td&gt;&lt;td&gt;TF&lt;/td&gt;&lt;td&gt;ATF&lt;/td&gt;&lt;td&gt;260&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;British Indian Ocean Territory&lt;/td&gt;&lt;td&gt;? (GB)&lt;/td&gt;&lt;td&gt;IO&lt;/td&gt;&lt;td&gt;IOT&lt;/td&gt;&lt;td&gt;086&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt;United States Minor Outlying Islands&lt;/td&gt;&lt;td&gt;? (US)&lt;/td&gt;&lt;td&gt;UM&lt;/td&gt;&lt;td&gt;UMI&lt;/td&gt;&lt;td&gt;581&lt;/td&gt;&lt;/tr&gt;
+   &lt;/tbody&gt;
+ &lt;/table&gt;
+ </Описание>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>2079</Ид>
+				<Наименование>Международные единицы измерения</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Описание> 
+&lt;table style=&quot;border-collapse: collapse; &quot;&gt; 
+  &lt;tbody&gt; 
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt; &lt;b&gt;ДЛИНА:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Дюймы&lt;/li&gt;
+         
+          &lt;li&gt;Футы&lt;/li&gt;
+         
+          &lt;li&gt;Мили&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 25.4 = миллиметры (мм.)&lt;/li&gt;
+         
+          &lt;li&gt;x 0.305 = метры (м.)&lt;/li&gt;
+         
+          &lt;li&gt;x 1.609 = километры (км.)&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.0394 = Дюймы&lt;/li&gt;
+         
+          &lt;li&gt;x 3.281 = Вуты&lt;/li&gt;
+         
+          &lt;li&gt;x 0.621 = Мили&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;ОБЪЕМ:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Кубические дюймы&lt;/li&gt;
+         
+          &lt;li&gt;Имперские кварты&lt;/li&gt;
+         
+          &lt;li&gt;Имперские пинты&lt;/li&gt;
+         
+          &lt;li&gt;Имперские кварты&lt;/li&gt;
+         
+          &lt;li&gt;Американские кварты&lt;/li&gt;
+         
+          &lt;li&gt;Имперские галлоны&lt;/li&gt;
+         
+          &lt;li&gt;Имперские галлоны&lt;/li&gt;
+         
+          &lt;li&gt;Американские галлоны&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 16.385 = кубические сантиметры&lt;/li&gt;
+         
+          &lt;li&gt;x 1.137 = литры&lt;/li&gt;
+         
+          &lt;li&gt;x 0.568 = литры&lt;/li&gt;
+         
+          &lt;li&gt;x 1.201 = американские кварты&lt;/li&gt;
+         
+          &lt;li&gt;x 0.946 = литры&lt;/li&gt;
+         
+          &lt;li&gt;x 4.546 = литры&lt;/li&gt;
+         
+          &lt;li&gt;x 1.201 = американские галлоны&lt;/li&gt;
+         
+          &lt;li&gt;x 3.785 = литры&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.061 = Кубические дюймы&lt;/li&gt;
+         
+          &lt;li&gt;x 0.88 = Имперские кварты&lt;/li&gt;
+         
+          &lt;li&gt;x 1.76 = Имперские пинты&lt;/li&gt;
+         
+          &lt;li&gt;x 0.833 = Имперские кварты&lt;/li&gt;
+         
+          &lt;li&gt;x 1.057 = Американские кварты&lt;/li&gt;
+         
+          &lt;li&gt;x 0.22 = Имперские галлоны&lt;/li&gt;
+         
+          &lt;li&gt;x 0.833 = Имперские галлоны&lt;/li&gt;
+         
+          &lt;li&gt;x 0.264 = Американские галлоны&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;МАССА:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Унции&lt;/li&gt;
+         
+          &lt;li&gt;Фунты&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 28.35 = граммы&lt;/li&gt;
+         
+          &lt;li&gt;x 0.454 = килограммы&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.035 = Унции&lt;/li&gt;
+         
+          &lt;li&gt;x 2.205 = Фунты&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;СИЛА:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Унции - силы&lt;/li&gt;
+         
+          &lt;li&gt;Фунты - силы&lt;/li&gt;
+         
+          &lt;li&gt;Ньютоны&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.278 = ньютоны&lt;/li&gt;
+         
+          &lt;li&gt;x 4.448 = ньютоны&lt;/li&gt;
+         
+          &lt;li&gt;x 0.1 = килограмм-силы&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 3.6 = Унции - силы&lt;/li&gt;
+         
+          &lt;li&gt;x 0.225 = Фунты - силы&lt;/li&gt;
+         
+          &lt;li&gt;x 9.81 = Ньютоны&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;ДАВЛЕНИЕ:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;Килопаскали&lt;/li&gt;
+         
+          &lt;li&gt;Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;Миллиметры ртутного столба&lt;/li&gt;
+         
+          &lt;li&gt;Дюймы водяного столба&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.070 = килограмм-силы на кв. сантиметр&lt;/li&gt;
+         
+          &lt;li&gt;x 0.068 = атмосферы (атм.)&lt;/li&gt;
+         
+          &lt;li&gt;x 0.069 = бары&lt;/li&gt;
+         
+          &lt;li&gt;x 6.895 = килопаскали&lt;/li&gt;
+         
+          &lt;li&gt;x 0.01 = килограмм-силы на кв. сантиметр&lt;/li&gt;
+         
+          &lt;li&gt;x 100 =паскали&lt;/li&gt;
+         
+          &lt;li&gt;x 0.0145 = фунты-силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;x 0.75 = миллиметры ртутного столба&lt;/li&gt;
+         
+          &lt;li&gt;x 0.401 = дюймы водяного столба&lt;/li&gt;
+         
+          &lt;li&gt;x 0.535 = дюймы водяного столба&lt;/li&gt;
+         
+          &lt;li&gt;x 0.036 = фунты-силы на кв. дюйм&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 14.223 = Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;x 14.696 = Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;x 14.5 = Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;x 0.145 = Фунты - Силы на кв. дюйм&lt;/li&gt;
+         
+          &lt;li&gt;x 98.1 = Килопаскали&lt;/li&gt;
+         
+          &lt;li&gt;x 0.01 = Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;x 68.974 = Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;x 1.333 = Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;x 2.491 = Миллибары&lt;/li&gt;
+         
+          &lt;li&gt;x 1.868 = Миллиметры ртутного столба&lt;/li&gt;
+         
+          &lt;li&gt;x 27.68 = Дюймы водяного столба&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;КРУТЯЩИЙ МОМЕНТ:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;Фунто - футы&lt;/li&gt;
+         
+          &lt;li&gt;Фунто - футы&lt;/li&gt;
+         
+          &lt;li&gt;Ньютонметры&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 1.152 = килограмсантиметры&lt;/li&gt;
+         
+          &lt;li&gt;x 0.113 = ньютонметры&lt;/li&gt;
+         
+          &lt;li&gt;x 0.083 = фунто-футы&lt;/li&gt;
+         
+          &lt;li&gt;x 0.138 = килограмметры&lt;/li&gt;
+         
+          &lt;li&gt;x 1.356 = ньютонметры&lt;/li&gt;
+         
+          &lt;li&gt;x 0.102 = килограмметры&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.868 = Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;x 8.85 = Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;x 12 = Фунто - дюймы&lt;/li&gt;
+         
+          &lt;li&gt;x 7.233 = Фунто - футы&lt;/li&gt;
+         
+          &lt;li&gt;x 0.738 = Фунто - футы&lt;/li&gt;
+         
+          &lt;li&gt;x 9.804 = Ньютонметры&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;МОЩНОСТЬ:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Лошадиная сила&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 745.7 = ватт&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.0013 = Лошадиная сила&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;СКОРОСТЬ:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Мили в час&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 1.609 = километры в час&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.621 = Мили в час&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;РАСХОД ТОПЛИВА:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Мили за галлон имперские&lt;/li&gt;
+         
+          &lt;li&gt;Мили за галлон американские&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 0.354 = километры за литр&lt;/li&gt;
+         
+          &lt;li&gt;x 0.425 = километры за литр&lt;/li&gt;
+         &lt;/ul&gt;
+       
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 1/100км. = 282&lt;/li&gt;
+         
+          &lt;li&gt;x 1/100км. = 235&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x 2.825 = Мили за галлон имперские&lt;/li&gt;
+         
+          &lt;li&gt;x 2.352 = Мили за галлон американские&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;p align=&quot;justify&quot;&gt;Обычно число миль за галлон переводят в л. на 100 км.:&lt;/p&gt;
+       
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Мили за галлон имперские&lt;/li&gt;
+         
+          &lt;li&gt;Мили за галлон американские&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td rowspan=&quot;1&quot;&gt;&lt;/td&gt;&lt;td rowspan=&quot;1&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;b&gt;ТЕМПЕРАТУРА:&lt;/b&gt; &lt;/td&gt;&lt;/tr&gt;
+   
+    &lt;tr&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;Градусы Фаренгейта&lt;/li&gt;
+         
+          &lt;li&gt;Градусы Цельсия&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td&gt; 
+        &lt;ul type=&quot;square&quot;&gt; 
+          &lt;li&gt;x ( градусы Цельсия х 1.8) +32&lt;/li&gt;
+         
+          &lt;li&gt;x (градусы Фаренгейта -32) х 0.56&lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/td&gt;&lt;td rowspan=&quot;1&quot;&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;/tbody&gt;
+ &lt;/table&gt;
+ 
+&lt;br /&gt;
+ </Описание>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>2080</Ид>
+				<Наименование>Виды сертификатов</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Описание>
+&lt;p&gt;Существует несколько разновидностей сертификатов:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#born&quot; title=&quot;сертификаты происхождения товаров&quot; &gt;сертификаты происхождения товаров&lt;/a&gt;;&lt;/li&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#secure&quot; title=&quot;сертификаты безопасности или соответствия&quot; &gt;сертификаты безопасности или соответствия&lt;/a&gt;;&lt;/li&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#quarant&quot; title=&quot;карантинные сертификаты&quot; &gt;карантинные сертификаты&lt;/a&gt;;&lt;/li&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#veterinar&quot; title=&quot;ветеринарные сертификаты&quot; &gt;ветеринарные сертификаты&lt;/a&gt;;&lt;/li&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#gigien&quot; title=&quot;гигиенический сертификат&quot; &gt;гигиенический сертификат&lt;/a&gt;;&lt;/li&gt;
+
+  &lt;li&gt;&lt;a href=&quot;#firesec&quot; title=&quot;пожарный сертификат&quot; &gt;пожарный сертификат&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;born&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Сертификат происхождения товара&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Это документ, однозначно свидетельствующий о стране происхождения товара и выданный органом государства &amp;mdash; экспортера, уполномоченным в соответствии с национальным законодательством.&lt;/p&gt;
+
+&lt;p&gt;Обычно он необходим для таможенных органов импортирующей страны для тарифного регулирования возимых товаров, получения льготных тарифов, беспошлинного ввоза, освобождения от дополнительного налогообложения.&lt;/p&gt;
+
+&lt;p&gt;Сертификаты происхождения товаров выдаются торгово-промышленной палатой государства, в котором произведен товар. Сертификат происхождения товаров не является обязательным документом; при его отсутствии таможенное оформление груза производится в обычном порядке, но льгота по импортной пошлине на ввозимый товар не предоставляется.&lt;/p&gt;
+
+&lt;p&gt;Сертификат происхождения СТ-1 - документ, однозначно свидетельствующий о том, что продукция была полностью произведена или подвергнута достаточной обработке/переработке в государстве - участнике Соглашения о создании зоны свободной торговли от 15 апреля 1994 г. 
+  &lt;br /&gt;
+В данное Соглашение входят 10 государств СНГ: Азербайджан, Армения, Беларусь, Грузия, Казахстан, Кыргызстан, Молдова, Россия, Таджикистан, Украина.&lt;/p&gt;
+
+&lt;p&gt;Оригинал сертификата предоставляется вместе с грузовой таможенной декларацией и другими документами, необходимыми для осуществления таможенного оформления. 
+  &lt;br /&gt;
+В соответствии с двусторонними Соглашениями о свободной торговле, заключенными между Российской Федерацией и другими странами СНГ, товары, происходящие с территории указанных государств и ввозимые на их территорию, имеют льготы по НДС.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;secure&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Сертификат безопасности товара или соответствия&lt;/strong&gt; (&amp;laquo;сертификат соответствия&amp;raquo;, «сертификат качества», «таможенный сертификат») - документ, подтверждающий соответствие продукции определенным требованиям качества и безопасности, установленными для нее действующими стандартами и правилами (ГОСТ, ГОСТ Р, ГОСТ Р МЭК, ГОСТ Р ИСО и пр.). 
+  &lt;br /&gt;
+Данный сертификат необходим для предоставления в таможенные органы при проведении таможенного оформления импортируемых товаров на основании Закона РФ «О защите прав российских потребителей». Нормативными актами Государственного таможенного комитета и Госстандарта утвержден перечень товаров, требующих проведения сертификации. Сертификат получает российское лицо на партию товара, поступившую по заключенному внешнеторговому контракту.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;sootv&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Сертификат соответствия&lt;/strong&gt; выдает уполномоченный для этого орган после проведения испытаний для каждого вида товара, требующего сертификации. Сертификат безопасности может выдаваться на основании гигиенического заключения органов Госэпиднадзора, которые производят лабораторные испытания образцов товара. С 01.01.2004 при таможенном оформлении товаров подлежащих при ввозе обязательной сертификации к таможенному оформлению принимается копия сертификата соответствия заверенная участником ВЭД только при наличии оригинала или надлежащим образом заверенной копии (копия может быть заверена нотариально, органом, выдавшим сертификат или консульским учреждением Российской Федерации).&lt;/p&gt;
+
+&lt;p&gt;Условный выпуск товаров без предоставления сертификата соответствия (с последующим предоставлением сертификата соответствия) осуществляется только по согласованию с Главным управлением тарифного и нетарифного регулирования (ГУТНР) ГТК России. До тех пор пока не будет установлен порядок согласования, для согласования с ГУТНР ГТК России необходимо обращаться в ОТНР таможни.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;quarant&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Карантинный сертификат («фитосанитарный сертификат») &lt;/strong&gt;- международный документ, выдаваемый органами по карантину и/или защите растений стран-экспортеров, удостоверяющий фитосанитарное состояние товаров, который должен прилагаться к транспортным документам, сопровождающим товары, и выдается на груз, отдельно на каждую транспортную единицу (вагон, автомашину, судно и т.п.). Он подтверждает факт отсутствия различных заболеваний на ряд товаров, имеющих растительное или животное происхождение.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;veterinar&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Ветеринарный сертификат&lt;/strong&gt; - документ, выдаваемый на животных, продукты и сырьё животного происхождения, перевозимые различным транспортом, которые подтверждают благополучие указанных животных, продуктов и сырья и мест их вывоза по заразным болезням животных. На основании полученного свидетельства может быть выдан ветеринарный сертификат.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;gigien&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Гигиенический сертификат&lt;/strong&gt; («санитарно-эпидемиологическое заключение» или «гигиеническое заключение») - документ, подтверждающий, что продукция соответствуют установленным гигиеническим нормам(ГН) и санитарным правилам(СанПиН). 
+  &lt;br /&gt;
+Санитарно-эпидемиологическое заключение выдается органами санэпиднадзора, после проведения экспертизы продукции (условий производства, ТУ) на основании протокола испытаний и предъявленных документов. На оборотной стороне прописываются гигиенические характеристики продукции, полученные в результате испытаний. Срок действия санитарно-эпидемиологического заключения от 1 месяца до 5 лет (зависит от вида продукции, от предоставляемых документов, результатов испытаний, решения эксперта проводящего сертификацию). Гигиенический сертификат требуется для получения сертификата безопасности.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-weight: normal; &quot;&gt;
+&lt;a name=&quot;firesec&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;Пожарный сертификат или сертификат пожарной безопасности&lt;/strong&gt; - это документ, подтверждающий, что продукция соответствует требованиям пожарной безопасности. 
+  &lt;br /&gt;
+Сертификация продукции и услуг в области пожарной `безопасности проводится с целью подтверждения соответствия продукции и услуг требованиям пожарной безопасности, осуществляется в соответствии с законодательством РФ. Сертификат пожарной безопасности является обязательной составной частью сертификата соответствия продукции ГОСТ Р. Порядок организации и проведения сертификации определяется Государственной противопожарной службой по согласованию с Комитетом Российской Федерации по стандартизации, метрологии и сертификации.&lt;/p&gt;
+
+&lt;p&gt;Отказное письмо - официальный документ, подтверждающий, что продукция не подлежит обязательной сертификации или относится к группе продукции, соответствие которой может быть подтверждено Декларацией о соответствии. Декларация о соответствии - это документ, в котором производитель или продавец заявляет, что указанная в декларации продукция соответствует установленным требованиям (стандартам). Выдает этот документ производитель продукции.&lt;/p&gt;
+</Описание>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

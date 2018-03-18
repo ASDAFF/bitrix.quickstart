@@ -1,0 +1,74 @@
+/**
+ * Farbtastic Color Picker 1.2
+ * © 2008 Steven Wittens
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+#colorpicker{
+    background: url("/bitrix/images/epir.comingsoon/marker.png") no-repeat scroll 0 0 transparent;
+    height: 17px;
+    position: relative;
+    width: 17px;
+    margin: 1px 1px -5px 3px;	
+	cursor:pointer;
+    display: inline-block;	
+} 
+#colorpicker:hover{
+	background-color: #DBE3F2;
+    border: 1px solid #AEB6C2;	
+    margin: 0px 0px -6px 2px;	
+} 
+.farbtastic {
+    display: none;
+    background: none repeat scroll 0 0 #F5F9F9;
+    border: 1px solid #C4CED2;
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3); 	
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    position: absolute;
+    top: 18px;
+	left:-1px;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 52px;
+  left: 52px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(/bitrix/images/epir.comingsoon/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .overlay {
+  background: url(/bitrix/images/epir.comingsoon/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -3px 0 0 -3px;
+  overflow: hidden; 
+  background: url(/bitrix/images/epir.comingsoon/marker.png) no-repeat;
+}
+

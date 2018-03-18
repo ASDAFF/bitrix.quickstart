@@ -1,0 +1,46 @@
+
+/* Header
+-------------------------------------------------- */
+#header .logo { text-decoration:none; font-family:'Philosopher', "Trebuchet MS", Arial, sans-serif; font-size:70px; color:#fff; line-height:70px }
+
+/* Wrapper
+-------------------------------------------------- */
+#wrapper .content { background:#fbfbfb; position:relative; padding:40px 45px 45px; margin-bottom:70px; border-radius:10px; min-height: 175px; }
+#wrapper .content .left { margin-right:200px }
+#wrapper .content h2 { margin-bottom:24px }
+#wrapper .content .text { color:#626262; font-size:19px; line-height:24px }
+#wrapper .content .button { margin-top:45px }
+#wrapper .content .button a { display:block; text-indent:-9999px; text-decoration:none; border-radius:4px }
+#wrapper .content .right { float:right; border-left:1px solid #e1e1e1; padding:0px 0 30px 48px }
+#wrapper .content .right .share { opacity:0.4 }
+#wrapper .content .right:hover .share { opacity:1 }
+
+#wrapper .timer { float:left; background:#f7f7f7; padding:30px 45px; border-radius:10px; color:#939393 }
+#wrapper .timer ul li { display:inline-block; *display:inline; zoom:1; vertical-align:middle; width:60px; text-align:center }
+#wrapper .timer ul li .count { font-weight:100; font-size:35px; margin-bottom:16px }
+#wrapper .timer ul li .name { font:11px Verdana, sans-serif }
+#wrapper .timer ul li.title { font-size:15px; width:140px; margin-right:40px; text-align:left }
+#wrapper .timer ul li.none { width:6px }
+#wrapper .timer ul li.none .count { font-size:20px }
+
+#wrapper .feedback { float:left; margin:21px 0 0 45px }
+#wrapper .feedback a { text-decoration:none; color:#939393; font-size:15px; display:block }
+#wrapper .feedback a i { float:left; margin:3px 12px 0 0; background:url(../img/soon-sprite.png) no-repeat -26px 0; width:22px; height:15px }
+#wrapper .feedback a:hover { color:#151515 }
+
+
+/* Footer
+-------------------------------------------------- */
+#footer a { color:#606060; text-decoration:none }
+#footer a span { border-bottom:1px solid #404040 }
+#footer a:hover span { color:#999 }
+
+#footer ul li { float:left; height:18px; border-left:1px solid #444; padding:4px 0 0 28px; margin-left:22px }
+#footer ul li:first-child { margin:0; padding-left:0; border:0 }
+#footer ul li.auth a { display:block }
+#footer ul li.auth i { display:block; float:left; margin:-3px 12px 0 0; width:7px; height:15px; background:url(../img/soon-sprite.png) no-repeat 0 2px }
+
+#footer .right { padding-top:4px }
+#footer .right .xeoart { display:block }
+#footer .right .xeoart i { display:block; float:left; margin:0 9px 0 0; width:55px; height:16px; background:url(../img/xeoart-logo.png) no-repeat }
+#footer .right .xeoart:hover i { background-position:0 -16px }

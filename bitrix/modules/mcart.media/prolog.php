@@ -1,0 +1,1 @@
+<?define("MEDIALIBRARY_IBLOCK_ID", 22);?>

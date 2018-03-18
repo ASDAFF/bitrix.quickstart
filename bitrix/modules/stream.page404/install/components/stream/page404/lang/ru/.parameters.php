@@ -1,9 +1,9 @@
 <?
-$MESS["404_TITLE"] = "Çàãîëîâîê ñòðàíèöû";
-$MESS["404_IMAGE"] = "Ñâîå èçîáðàæåíèå";
-$MESS["404_CLEAR_PAGE"] = "Íå âûâîäèòü header è footer";
-$MESS["404_REDIRECT"] = "Ðåäèðåêò";
-$MESS["404_REDIRECT_ONOFF"] = "Âêëþ÷åí";
-$MESS["404_REDIRECT_URL"] = "Ññûëêà";
-$MESS["404_REDIRECT_MSEC"] = "Çàäåðæêà â ìèëëèñåêóíäàõ";
+$MESS["404_TITLE"] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["404_IMAGE"] = "Ð¡Ð²Ð¾Ðµ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ";
+$MESS["404_CLEAR_PAGE"] = "ÐÐµ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ header Ð¸ footer";
+$MESS["404_REDIRECT"] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚";
+$MESS["404_REDIRECT_ONOFF"] = "Ð’ÐºÐ»ÑŽÑ‡ÐµÐ½";
+$MESS["404_REDIRECT_URL"] = "Ð¡ÑÑ‹Ð»ÐºÐ°";
+$MESS["404_REDIRECT_MSEC"] = "Ð—Ð°Ð´ÐµÑ€Ð¶ÐºÐ° Ð² Ð¼Ð¸Ð»Ð»Ð¸ÑÐµÐºÑƒÐ½Ð´Ð°Ñ…";
 ?>

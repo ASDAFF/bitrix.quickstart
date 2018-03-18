@@ -1,0 +1,11 @@
+<?
+if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)
+	die();
+CModule::IncludeModule("main");
+if(!CModule::IncludeModule("sotbit.instagram"))
+{
+    ShowError(GetMessage("CC_INSTAGRAM_NOT_INSTALLED"));
+    return;
+}
+$this->IncludeComponentTemplate();
+?>

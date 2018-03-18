@@ -1,0 +1,8 @@
+<?
+$MESS["BITRIX_MPBUILDER_YCUKENGSSZHQFYVAPROL"] = "éöóêåíãøùçõúôûâàïðîëäæýÿ÷ñìèòüáþ¸¨ÉÖÓÊÅÍÃØÙÇÕÚÔÛÂÀÏÐÎËÄÆÝß×ÑÌÈÒÜÁÞ";
+$MESS["BITRIX_MPBUILDER_STRUKTURA_MODULA"] = "Ñòðóêòóðà ìîäóëÿ";
+$MESS["BITRIX_MPBUILDER_VYDELENIE_FRAZ"] = "Âûäåëåíèå ôðàç";
+$MESS["BITRIX_MPBUILDER_REDAKTOR_KLUCEY"] = "Ðåäàêòîð êëþ÷åé";
+$MESS["BITRIX_MPBUILDER_SOZDANIE_ARHIVA"] = "Ñîçäàíèå àðõèâà";
+$MESS["BITRIX_MPBUILDER_SBORKA_OBNOVLENIY"] = "Ñáîðêà îáíîâëåíèé";
+?>

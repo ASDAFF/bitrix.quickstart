@@ -1,0 +1,7 @@
+/* Menu icon - old */
+#edost_menu_icon {background-image:url(icons/edost.delivery/icon.gif);}
+#edost_page_icon {background-image:url(icons/edost.delivery/icon.gif);}
+
+/* Menu icon - new */
+.edost_menu_icon {background:url('icons/edost.delivery/icon.png') 5px 0px no-repeat !important;}
+.edost_page_icon {background:url('icons/edost.delivery/icon.png') 5px 0px no-repeat !important;}

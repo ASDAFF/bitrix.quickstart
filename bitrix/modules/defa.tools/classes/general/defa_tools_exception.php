@@ -1,0 +1,6 @@
+<?
+
+class DefaToolsException extends Exception
+{
+
+}

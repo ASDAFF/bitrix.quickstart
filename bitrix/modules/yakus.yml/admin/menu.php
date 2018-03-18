@@ -1,0 +1,7 @@
+<?
+
+IncludeModuleLangFile(__FILE__);
+
+
+
+?>

@@ -1,0 +1,6 @@
+<?
+Class CStudio7Callback
+{
+
+}
+?>

@@ -1,0 +1,30 @@
+<?
+$MESS["XLS_FLD_NAME"] = "Наименование";
+$MESS["XLS_FLD_DETAIL_TEXT"] = "Описание детальное";
+$MESS["XLS_FLD_PREVIEW_TEXT"] = "Описание анонса";
+$MESS["XLS_FLD_DETAIL_PICTURE"] = "Картинка детальная";
+$MESS["XLS_FLD_PREVIEW_PICTURE"] = "Картинка превью";
+$MESS["NEXT_STEP"] = "Далее";
+$MESS["STEP_BACK"] = "Назад";
+$MESS["XLS_NOT_RECORD"] = " ----- не пишем ---";
+$MESS["XLS_SET_COLUMN_FILED"] = "Задайте соответствия столбцов";
+$MESS["XLS_TITLE_1"] = 'Столбец Excel';
+$MESS["XLS_TITLE_2"] = 'Свойство (или поле) инфоблока';
+$MESS["XLS_TITLE_3"] = 'Наименование';
+$MESS["XLS_TITLE_4"] = 'Идентификация элемента';
+$MESS["XLS_DATA_EXAMPLE"] = "Пример строк с данными";
+$MESS["BEGIN_IMPORT"] = "Начать импорт";
+$MESS["XLS_NULL_IBLOCK_SET"] = "Не задан инфоблок для загрузки";
+$MESS["XLS_NULL_FILE"] = "Не задан файл с данными импорта";
+$MESS["MCART_WRONG_FILE_FORMAT"] = "Не правильный формат файла. Попробуйте преобразовать файл к формату Excel 2007 (.xlsx)";
+$MESS["XLS_WRONG_DIAPAZONE"] = "Не верно задан диапазон столбцов";
+$MESS["XLS_SELECT_IBLOCK_SECTION"] = "Выберите раздел инфоблока (не обязательно)";
+$MESS["XLS_MODIFY_TYPE"] = "Выполнить преобразования..";
+$MESS["XLS_MODIFY_TYPE_NONE"] = "никаких";
+$MESS["XLS_MODIFY_TYPE_TO_INT"] = "привести к целому числу";
+$MESS["XLS_MODIFY_TYPE_EXP_2"] = "умножить на 2";
+$MESS["XLS_MODIFY_TYPE_TRIM_20"] = "обрезать до 20-ти символов";
+$MESS["XLS_FLD_PURCHASING_PRICE"] = "Закупочная цена";
+$MESS["XLS_SAVE_PROFILE"] = "сохранить профиль под именем: ";
+$MESS["MAKE_TRANSLIT_CODE"] = "создавать симв. код (транслит из названия) если не задан";
+?>

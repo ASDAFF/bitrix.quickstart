@@ -1,0 +1,33 @@
+<?
+$MESS ['FORM_ERROR_SAVE'] = "Error!";
+$MESS ['MAX_REQUEST_DAY'] = "Maximum number of queries per day";
+$MESS ['INTERVAL'] = "Check interval position (seconds)";
+$MESS ['LIMIT'] = "Maximum number of inspections in the loop";
+$MESS ['TIME_FROM'] = "To collect statistics in the period";
+$MESS ['TIME_FROM_FROM'] = "from";
+$MESS ['TIME_FROM_FROM_FULL'] = "Start time for the collection of statistics";
+$MESS ['TIME_FROM_ERROR'] = "Start time must be specified in the format HH:MM";
+$MESS ['TIME_TO'] = "to";
+$MESS ['TIME_TO_FULL'] = "The end time for the collection of statistics";
+$MESS ['TIME_TO_ERROR'] = "End time must be specified in the format HH:MM";
+$MESS ['GRAPH_WEIGHT'] = "Width graphs";
+$MESS ['GRAPH_HEIGHT'] = "Height chart";
+$MESS ['GRAPH_TYPE'] = "Type of graph by default";
+$MESS ['GRAPH_TYPE_STD'] = "Standard";
+$MESS ['GRAPH_TYPE_TOP10'] = "TOP 10";
+$MESS ['GRAPH_SS'] = "Search engine by default";
+$MESS ['GRAPH_SS_YANDEX'] = "Yandex";
+$MESS ['GRAPH_SS_GOOGLE'] = "Google";
+$MESS ['GRAPH_SS_BING'] = "Bing";
+$MESS ['LIST_TOP_SIZE'] = "Number of sentences in the chart in the overall statistics";
+$MESS ['YANDEX_SETUP'] = "Settings Yandex";
+$MESS ['YANDEX_LOGIN'] = "Login";
+$MESS ['YANDEX_KEY'] = "Key";
+$MESS ['YANDEX_NOTE'] = "To connect the search engine you must register in <a href=\"http://www.yandex.ru/\" target=\"_blank\">Yandex</a>, as well as to register the IP addresses of site service <a href=\"http://xml.yandex.ru/\" target=\"_blank\">Yandex.XML</a> and get a key.";
+$MESS ['GOOGLE_SETUP'] = "Settings Google";
+$MESS ['GOOGLE_KEY'] = "Key";
+$MESS ['GOOGLE_NOTE'] = "To connect the search engine you must register in <a href=\"http://www.google.ru/\" target=\"_blank\">Google</a>, as well as get access to the service <a href=\"http://code.google.com/apis/console/?api=customsearch/\" target=\"_blank\">Custom Search API</a>. To increase the limit requests to register multiple accounts.";
+$MESS ['BING_SETUP'] = "Settings Bing";
+$MESS ['BING_KEY'] = "Key";
+$MESS ['BING_NOTE'] = "To connect the search engine you must register in <a href=\"https://signup.live.com/\" target=\"_blank\">Windows Live</a>, as well as to obtain an access key (Primary Account Key) by registering the application Bing Search API in <a href=\"https://datamarket.azure.com/\" target=\"_blank\">Windows Azure Marketplace</a>.";
+?>

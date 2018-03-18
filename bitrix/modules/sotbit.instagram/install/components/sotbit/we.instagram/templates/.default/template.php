@@ -1,0 +1,3 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+?>
+<iframe src='/bitrix/components/sotbit/we.instagram/iframe.php?width=<?=$arParams["WIDTH"]?>&height=<?=$arParams["HEIGHT"]?>&view=<?=$arParams["VIEW"]?>&inline=<?=$arParams["INLINE"]?>&toolbar=<?=$arParams["TOOLBAR"]?>&preview=<?=$arParams["PREVIEW"]?>&cache=<?=$arParams["CACHE"]?>&charset=<?=SITE_CHARSET?>&title=<?=urlencode($arParams["TITLE"])?>&show=<?=urlencode(GetMessage("STB_INSTAGRAM_SHOW"))?>' scrolling='no' frameborder='no' style='border:none;width:<?=$arParams["WIDTH"]?>px;height:<?=$arParams["HEIGHT"]?>px;overflow:hidden;'></iframe>

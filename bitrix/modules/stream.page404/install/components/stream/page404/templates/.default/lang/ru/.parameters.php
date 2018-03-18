@@ -1,7 +1,7 @@
 <?
-$MESS["404_PHRASES"] = "Ôðàçû";
-$MESS["404_PHRASE"] = "Ôðàçà ";
-$MESS["404_PHRASE_COUNT"] = "Êîëè÷åñòâî ôðàç";
-$MESS["STREAM_PAGE404_PROSTITE_VELIKODUSN"] = "Ïðîñòèòå, âåëèêîäóøíî!";
-$MESS["STREAM_PAGE404_NO_KAJETSA_ZDESQ_T"] = "Íî, êàæåòñÿ, çäåñü òóïèê ;-(";
+$MESS["404_PHRASES"] = "Ð¤Ñ€Ð°Ð·Ñ‹";
+$MESS["404_PHRASE"] = "Ð¤Ñ€Ð°Ð·Ð° ";
+$MESS["404_PHRASE_COUNT"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ„Ñ€Ð°Ð·";
+$MESS["STREAM_PAGE404_PROSTITE_VELIKODUSN"] = "ÐŸÑ€Ð¾ÑÑ‚Ð¸Ñ‚Ðµ, Ð²ÐµÐ»Ð¸ÐºÐ¾Ð´ÑƒÑˆÐ½Ð¾!";
+$MESS["STREAM_PAGE404_NO_KAJETSA_ZDESQ_T"] = "ÐÐ¾, ÐºÐ°Ð¶ÐµÑ‚ÑÑ, Ð·Ð´ÐµÑÑŒ Ñ‚ÑƒÐ¿Ð¸Ðº ;-(";
 ?>

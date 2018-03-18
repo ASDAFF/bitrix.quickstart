@@ -1,0 +1,16 @@
+/sh/img_caches.php	long line
+/sh/wso2.txt.php	eval
+/sh/root.php	long line
+/sh/sh_incl.php	strange include
+/sh/sh_bitrix.php	bitrix auth
+/sh/wso2_pack1.txt.php	long line
+/sh/shell_wrappers.php	php wrapper
+/sh/.htaccess	htaccess
+/sh/pas.txt.php	strange vars
+/sh/shell_nonalpha1.txt.php	binary vars
+/sh/SaveNewSupportTicket.php	binary data
+/sh/shell_nonalpha.txt.php	strange vars
+/sh/shell_downloader_gzdeflate.php	binary data
+/bitrix/tmp/bitrix.xscan/.last_version/admin/worker.php	strange vars
+/bitrix/bx_scanner.php	strange vars
+/bitrix/bx_fmt.php	eval

@@ -1,0 +1,40 @@
+{% set parameters = result.PARAMETERS %}
+<div class="fotorama"
+    data-width="100%"
+    data-ratio="{{ parameters.RATIO }}"
+    data-allowfullscreen="{{ parameters.ALLOW_FULLSCREEN }}"
+    data-nav="{{ parameters.NAVIGATION_STYLE }}"
+    {% if parameters.SHUFFLE %}
+    data-shuffle="true"
+    {% endif %}
+    {% if parameters.CHANGE_HASH %}
+    data-hash="true"
+    {% endif %}
+    {% if parameters.LOOP %}
+    data-loop="true"
+    {% endif %}
+    {% if parameters.NAVIGATION_ON_TOP %}
+    data-navposition="top"
+    {% endif %}
+    {% if parameters.AUTOPLAY %}
+    data-autoplay="{{ parameters.AUTOPLAY }}"
+    {% endif %}
+    {% if parameters.SHOW_ARROWS == false %}
+    data-arrows="false"
+    {% endif %}
+    {% if parameters.TRANSITION_EFFECT %}
+    data-transition="{{ parameters.TRANSITION_EFFECT }}"
+    {% endif %}>
+    {% for image in result.IMAGES %}
+    <a href="{{ image.PATH }}" id="fotorama-{{ loop.index0 }}"
+        {% if parameters.SHOW_CAPTION and image.DESCRIPTION %}
+        data-caption="{{ image.DESCRIPTION }}"
+        {% endif %}
+        {% if parameters.LAZY_LOAD %}
+        data-thumb="{{ image.THUMB_PATH }}"
+        {% else %}
+        ><img src="{{ image.THUMB_PATH }}" alt="{{ image.DESCRIPTION }}"
+        {% endif %}
+        ></a>
+    {% endfor %}
+</div>

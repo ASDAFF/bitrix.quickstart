@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die(); ?>
 <?
-$MESS["LNG_CAT_STATUS"] = "Ñîöèàëüíûå âèäæåòû";
+$MESS["LNG_CAT_STATUS"] = "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð²Ð¸Ð´Ð¶ÐµÑ‚Ñ‹";
 $MESS["LNG_ID_PARTNER"]   = "SPAN Ltd.";
-$MESS["LNG_DESCRIPTION_SSTAT"] = "Ïëàãèí ïîêàçûâàåò ïîëüçîâàòåëÿì ëåíòó Facebook ñòðàíèöû";
+$MESS["LNG_DESCRIPTION_SSTAT"] = "ÐŸÐ»Ð°Ð³Ð¸Ð½ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÑ‚ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÐ¼ Ð»ÐµÐ½Ñ‚Ñƒ Facebook ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
 $MESS["LNG_NAME_SSTAT"] = "Facebook Like Box";
 ?>

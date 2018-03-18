@@ -1,0 +1,8 @@
+<?
+$MESS["NSANDREY_SITEMAP_SKRYTQ_RAZDEL"] = "Скрыть раздел ";
+$MESS["NSANDREY_SITEMAP_NASTROYKI_DLA_RAZDEL"] = "Настройки для раздела ";
+$MESS["NSANDREY_SITEMAP_NAZVANIE_DLA_RAZDELA"] = "Название для раздела ";
+$MESS["NSANDREY_SITEMAP_INFOBLOKA"] = "Инфоблока";
+$MESS["NSANDREY_SITEMAP_RAZDELA"] = "Раздела";
+$MESS["NSANDREY_SITEMAP_GLUBINA"] = "Глубина";
+?>

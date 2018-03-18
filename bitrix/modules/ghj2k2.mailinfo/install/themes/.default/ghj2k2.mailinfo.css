@@ -1,0 +1,35 @@
+/*Menu icons*/
+#mailinfo_menu_icon {background-image:url(icons/ghj2k2.mailinfo/mnu_mail.png);}
+#mailinfo_page_icon {background-image:url(icons/ghj2k2.mailinfo/title.png);}
+#mailinfo_page_error {background-image:url(icons/ghj2k2.mailinfo/error.png);}
+#mailinfo_page_success {background-image:url(icons/ghj2k2.mailinfo/success.png);}
+#main_user_success {
+	background-image:url(icons/ghj2k2.mailinfo/task-done.png);
+	margin-left: 8px;
+	height: 32px;
+    width: 32px;
+}
+#main_user_block {
+	background-image:url(icons/ghj2k2.mailinfo/task-none.png);
+	margin-left: 8px;
+	height: 32px;
+    width: 32px;
+}
+#main_user_loss {
+	background-image:url(icons/ghj2k2.mailinfo/task-alert.png);
+	margin-left: 8px;
+	height: 32px;
+    width: 32px;
+}
+#main_user_error {
+	background-image:url(icons/ghj2k2.mailinfo/task-error.png);
+	margin-left: 8px;
+	height: 32px;
+    width: 32px;
+}
+#main_user_wait {
+	background-image:url(icons/ghj2k2.mailinfo/task-wait.png);
+	margin-left: 8px;
+	height: 32px;
+    width: 32px;
+}

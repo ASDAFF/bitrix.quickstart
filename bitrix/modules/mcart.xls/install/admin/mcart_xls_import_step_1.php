@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mcart.xls/admin/mcart_xls_import_step_1.php");?>

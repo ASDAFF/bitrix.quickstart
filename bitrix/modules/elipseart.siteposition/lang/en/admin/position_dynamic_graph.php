@@ -1,0 +1,14 @@
+<?
+$MESS ['STAT_GRAPH_MONTH_01'] = "jan";
+$MESS ['STAT_GRAPH_MONTH_02'] = "feb";
+$MESS ['STAT_GRAPH_MONTH_03'] = "mar";
+$MESS ['STAT_GRAPH_MONTH_04'] = "apr";
+$MESS ['STAT_GRAPH_MONTH_05'] = "may";
+$MESS ['STAT_GRAPH_MONTH_06'] = "jun";
+$MESS ['STAT_GRAPH_MONTH_07'] = "jul";
+$MESS ['STAT_GRAPH_MONTH_08'] = "aug";
+$MESS ['STAT_GRAPH_MONTH_09'] = "sep";
+$MESS ['STAT_GRAPH_MONTH_10'] = "okt";
+$MESS ['STAT_GRAPH_MONTH_11'] = "nov";
+$MESS ['STAT_GRAPH_MONTH_12'] = "dec";
+?>

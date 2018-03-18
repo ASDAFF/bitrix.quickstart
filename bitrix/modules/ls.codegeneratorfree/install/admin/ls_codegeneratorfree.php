@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ls.codegeneratorfree/admin/ls_codegeneratorfree.php");?>

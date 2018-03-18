@@ -1,102 +1,102 @@
 <?
 /* main */
-$MESS ['SELECT_SERVICE'] = "< отправка смс выключена >";
+$MESS ['SELECT_SERVICE'] = "< РѕС‚РїСЂР°РІРєР° СЃРјСЃ РІС‹РєР»СЋС‡РµРЅР° >";
 $MESS ['SMSBLISS'] = "SMS-Bliss";
 $MESS ['SMSKONTAKT'] = "SMS-Kontakt";
-$MESS ['OPT_SMS_SERVICE']	= "Использовать для отправки СМС сервис";
-$MESS ['SUPPORT']			= "Техническая поддержка: support@sozdavatel.ru";
-$MESS ['ERR_MODULE_OFF']	= "Отправка СМС выключена";
-$MESS ['RUB'] = "руб.";
-$MESS ['SMS'] = "СМС";
-$MESS ['SMS_DEFAULT_RECIEVER_PHONE'] = "Получатель по умолчанию (79001112233)";
+$MESS ['OPT_SMS_SERVICE']	= "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ СЃРµСЂРІРёСЃ";
+$MESS ['SUPPORT']			= "РўРµС…РЅРёС‡РµСЃРєР°СЏ РїРѕРґРґРµСЂР¶РєР°: support@sozdavatel.ru";
+$MESS ['ERR_MODULE_OFF']	= "РћС‚РїСЂР°РІРєР° РЎРњРЎ РІС‹РєР»СЋС‡РµРЅР°";
+$MESS ['RUB'] = "СЂСѓР±.";
+$MESS ['SMS'] = "РЎРњРЎ";
+$MESS ['SMS_DEFAULT_RECIEVER_PHONE'] = "РџРѕР»СѓС‡Р°С‚РµР»СЊ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ (79001112233)";
 
-$MESS ['COPY_SMS_TO_EMAIL_PHONE'] = "Укажите номер телефона, смс на который нужно дублировать по эл. почте. Не заполняйте, если дублировать все смс. (79001112233)";
-$MESS ['COPY_SMS_TO_EMAIL_EMAIL'] = "Укажите адрес эл. почты, на который отправлять копии смс-сообщений. Оставьте пустым, чтобы отключить дублирование смс по эл. почте";
+$MESS ['COPY_SMS_TO_EMAIL_PHONE'] = "РЈРєР°Р¶РёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, СЃРјСЃ РЅР° РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ РґСѓР±Р»РёСЂРѕРІР°С‚СЊ РїРѕ СЌР». РїРѕС‡С‚Рµ. РќРµ Р·Р°РїРѕР»РЅСЏР№С‚Рµ, РµСЃР»Рё РґСѓР±Р»РёСЂРѕРІР°С‚СЊ РІСЃРµ СЃРјСЃ. (79001112233)";
+$MESS ['COPY_SMS_TO_EMAIL_EMAIL'] = "РЈРєР°Р¶РёС‚Рµ Р°РґСЂРµСЃ СЌР». РїРѕС‡С‚С‹, РЅР° РєРѕС‚РѕСЂС‹Р№ РѕС‚РїСЂР°РІР»СЏС‚СЊ РєРѕРїРёРё СЃРјСЃ-СЃРѕРѕР±С‰РµРЅРёР№. РћСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј, С‡С‚РѕР±С‹ РѕС‚РєР»СЋС‡РёС‚СЊ РґСѓР±Р»РёСЂРѕРІР°РЅРёРµ СЃРјСЃ РїРѕ СЌР». РїРѕС‡С‚Рµ";
 
-$MESS ['SMS_SEND_COPY_TO_DEFAULT_RECIEVER'] = "Дублировать все СМС получателю по умолчанию";
+$MESS ['SMS_SEND_COPY_TO_DEFAULT_RECIEVER'] = "Р”СѓР±Р»РёСЂРѕРІР°С‚СЊ РІСЃРµ РЎРњРЎ РїРѕР»СѓС‡Р°С‚РµР»СЋ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ";
 
-$MESS ['TAB_MAIN_TEXT'] = 	"1. Выберите сервис для отправки СМС.<br/>".
-							"2. Укажите телефон получателя по умолчанию. На этот номер будут отправляться все смс, для которых не указан получатель.<br/>".
-							"3. При необходимости включите отправку копий всех СМС на номер получателя по умолчанию";
+$MESS ['TAB_MAIN_TEXT'] = 	"1. Р’С‹Р±РµСЂРёС‚Рµ СЃРµСЂРІРёСЃ РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ.<br/>".
+							"2. РЈРєР°Р¶РёС‚Рµ С‚РµР»РµС„РѕРЅ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ. РќР° СЌС‚РѕС‚ РЅРѕРјРµСЂ Р±СѓРґСѓС‚ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РІСЃРµ СЃРјСЃ, РґР»СЏ РєРѕС‚РѕСЂС‹С… РЅРµ СѓРєР°Р·Р°РЅ РїРѕР»СѓС‡Р°С‚РµР»СЊ.<br/>".
+							"3. РџСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РІРєР»СЋС‡РёС‚Рµ РѕС‚РїСЂР°РІРєСѓ РєРѕРїРёР№ РІСЃРµС… РЎРњРЎ РЅР° РЅРѕРјРµСЂ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ";
 							
-$MESS ['ERR_PHP_JSON_NOT_FOUND'] = "Для отправки СМС необходим установленный модуль PHP JSON. Обратитесь к системному администратору.";
+$MESS ['ERR_PHP_JSON_NOT_FOUND'] = "Р”Р»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ РЅРµРѕР±С…РѕРґРёРј СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Р№ РјРѕРґСѓР»СЊ PHP JSON. РћР±СЂР°С‚РёС‚РµСЃСЊ Рє СЃРёСЃС‚РµРјРЅРѕРјСѓ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСѓ.";
 
-$MESS ['ERR_PHP_CURL_NOT_FOUND'] = "Для отправки СМС необходим установленный модуль PHP CURL. Обратитесь к системному администратору.";
+$MESS ['ERR_PHP_CURL_NOT_FOUND'] = "Р”Р»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ РЅРµРѕР±С…РѕРґРёРј СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Р№ РјРѕРґСѓР»СЊ PHP CURL. РћР±СЂР°С‚РёС‚РµСЃСЊ Рє СЃРёСЃС‚РµРјРЅРѕРјСѓ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂСѓ.";
 
-$MESS ['TAB_MAIN'] = "Основные настройки";
-$MESS ['TAB_MAIN_TITLE'] = "Основные настройки";
+$MESS ['TAB_MAIN'] = "РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";
+$MESS ['TAB_MAIN_TITLE'] = "РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";
 
 $MESS ['TAB_SMSKONTAKT'] = "SMS-Kontakt";
-$MESS ['TAB_SMSKONTAKT_TITLE'] = "Настройки сервиса SMS-Kontakt";
+$MESS ['TAB_SMSKONTAKT_TITLE'] = "РќР°СЃС‚СЂРѕР№РєРё СЃРµСЂРІРёСЃР° SMS-Kontakt";
 
 $MESS ['TAB_SMSBLISS'] = "SMS-Bliss";
-$MESS ['TAB_SMSBLISS_TITLE'] = "Настройки сервиса SMS-Bliss";
+$MESS ['TAB_SMSBLISS_TITLE'] = "РќР°СЃС‚СЂРѕР№РєРё СЃРµСЂРІРёСЃР° SMS-Bliss";
 
-$MESS ['TAB_EXAMPLE'] = "Справка";
-$MESS ['TAB_EXAMPLE_TITLE'] = "Описание модуля и примеры использования";
+$MESS ['TAB_EXAMPLE'] = "РЎРїСЂР°РІРєР°";
+$MESS ['TAB_EXAMPLE_TITLE'] = "РћРїРёСЃР°РЅРёРµ РјРѕРґСѓР»СЏ Рё РїСЂРёРјРµСЂС‹ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ";
 
-$MESS ['TAB_RIGHTS'] = "Доступ";
-$MESS ['TAB_RIGHTS_TITLE'] = "Доступ";
+$MESS ['TAB_RIGHTS'] = "Р”РѕСЃС‚СѓРї";
+$MESS ['TAB_RIGHTS_TITLE'] = "Р”РѕСЃС‚СѓРї";
 
-$MESS ['TAB_LOG'] = "Логи";
-$MESS ['TAB_LOG_TITLE'] = "Логи ошибок";
+$MESS ['TAB_LOG'] = "Р›РѕРіРё";
+$MESS ['TAB_LOG_TITLE'] = "Р›РѕРіРё РѕС€РёР±РѕРє";
 
 /* sms-bliss */
-$MESS ['BLISS_GERFORM_INFO'] = "Чтобы получить логин и пароль, отправьте заявку на подключение";
-$MESS ['BLISS_USER_COMPANY'] = "Компания";
-$MESS ['BLISS_USER_NAME'] = "ФИО";
-$MESS ['BLISS_USER_PHONE'] = "Телефон";
+$MESS ['BLISS_GERFORM_INFO'] = "Р§С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ, РѕС‚РїСЂР°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° РїРѕРґРєР»СЋС‡РµРЅРёРµ";
+$MESS ['BLISS_USER_COMPANY'] = "РљРѕРјРїР°РЅРёСЏ";
+$MESS ['BLISS_USER_NAME'] = "Р¤РРћ";
+$MESS ['BLISS_USER_PHONE'] = "РўРµР»РµС„РѕРЅ";
 $MESS ['BLISS_USER_EMAIL'] = "E-Mail";
-$MESS ['BLISS_REGISTER_SUBMIT'] = "Отправить заявку";
-$MESS ['BLISS_REQUIRED_HINT'] = "*Поля, обязательные для заполнения";
+$MESS ['BLISS_REGISTER_SUBMIT'] = "РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ";
+$MESS ['BLISS_REQUIRED_HINT'] = "*РџРѕР»СЏ, РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ";
 
-$MESS ['ERR_SMSBLISS_INCORRECT_LOGIN'] = "Некорректный логин. Пожалуйста, отправьте заявку на подключение и введите логин и пароль, которые вы получите в ответном письме после обработки вашей заявки.";
+$MESS ['ERR_SMSBLISS_INCORRECT_LOGIN'] = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р»РѕРіРёРЅ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РѕС‚РїСЂР°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° РїРѕРґРєР»СЋС‡РµРЅРёРµ Рё РІРІРµРґРёС‚Рµ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ, РєРѕС‚РѕСЂС‹Рµ РІС‹ РїРѕР»СѓС‡РёС‚Рµ РІ РѕС‚РІРµС‚РЅРѕРј РїРёСЃСЊРјРµ РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё РІР°С€РµР№ Р·Р°СЏРІРєРё.";
 
-$MESS ['SMSBLISS_ALL_REQUIRED'] = "Пожалуйста, заполните все обязательные поля";
-$MESS ['SMSBLISS_REGISTER_OK'] = "Ваша заявка принята. После обработки вашего запроса логин и пароль будут высланы на e-mail, указанный в заявке.";
-$MESS ['SMSBLISS_REGISTER_OK2'] = "Укажите полученный логин и пароль ниже и нажмите <Сохранить>.";
-$MESS ['SMSBLISS_REGISTER_ERROR'] = "К сожалению, заявка не была отправлена. Проверьте, подключен ли сервер к интернету и попробуйте еще раз.";
+$MESS ['SMSBLISS_ALL_REQUIRED'] = "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ";
+$MESS ['SMSBLISS_REGISTER_OK'] = "Р’Р°С€Р° Р·Р°СЏРІРєР° РїСЂРёРЅСЏС‚Р°. РџРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё РІР°С€РµРіРѕ Р·Р°РїСЂРѕСЃР° Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ Р±СѓРґСѓС‚ РІС‹СЃР»Р°РЅС‹ РЅР° e-mail, СѓРєР°Р·Р°РЅРЅС‹Р№ РІ Р·Р°СЏРІРєРµ.";
+$MESS ['SMSBLISS_REGISTER_OK2'] = "РЈРєР°Р¶РёС‚Рµ РїРѕР»СѓС‡РµРЅРЅС‹Р№ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РЅРёР¶Рµ Рё РЅР°Р¶РјРёС‚Рµ <РЎРѕС…СЂР°РЅРёС‚СЊ>.";
+$MESS ['SMSBLISS_REGISTER_ERROR'] = "Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, Р·Р°СЏРІРєР° РЅРµ Р±С‹Р»Р° РѕС‚РїСЂР°РІР»РµРЅР°. РџСЂРѕРІРµСЂСЊС‚Рµ, РїРѕРґРєР»СЋС‡РµРЅ Р»Рё СЃРµСЂРІРµСЂ Рє РёРЅС‚РµСЂРЅРµС‚Сѓ Рё РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·.";
 
-$MESS ['SMSBLISS_OPT_LOGIN'] = "Логин";
-$MESS ['SMSBLISS_OPT_PASSWORD'] = "Пароль";
-$MESS ['SMSBLISS_OPT_SENDER_ID'] = "Подпись отправителя";
-$MESS ['SMSBLISS_BALANCE'] = "Ваш баланс";
-$MESS ['SMSBLISS_BALANCE_ADD'] = "пополнить";
-$MESS ['ERR_SMSBLISS_CONNECT'] = "Не удается подключиться к серверу. Проверьте правильность логина и пароля.";
-$MESS ['SMSBLISS_INSTRUCTION'] =	'Для настройки модуля выполните несколько простых действий:<br/>'.
-									'1. Отправьте заявку на подключение.<br/>'.
-									'2. Укажите ниже <b>логин</b> и <b>пароль</b>, которые вы получите после обработки заявки на подключение.<br/>'.
-									'3. Нажмите кнопку <b>Сохранить</b>.';
+$MESS ['SMSBLISS_OPT_LOGIN'] = "Р›РѕРіРёРЅ";
+$MESS ['SMSBLISS_OPT_PASSWORD'] = "РџР°СЂРѕР»СЊ";
+$MESS ['SMSBLISS_OPT_SENDER_ID'] = "РџРѕРґРїРёСЃСЊ РѕС‚РїСЂР°РІРёС‚РµР»СЏ";
+$MESS ['SMSBLISS_BALANCE'] = "Р’Р°С€ Р±Р°Р»Р°РЅСЃ";
+$MESS ['SMSBLISS_BALANCE_ADD'] = "РїРѕРїРѕР»РЅРёС‚СЊ";
+$MESS ['ERR_SMSBLISS_CONNECT'] = "РќРµ СѓРґР°РµС‚СЃСЏ РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ Рє СЃРµСЂРІРµСЂСѓ. РџСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ Р»РѕРіРёРЅР° Рё РїР°СЂРѕР»СЏ.";
+$MESS ['SMSBLISS_INSTRUCTION'] =	'Р”Р»СЏ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ РІС‹РїРѕР»РЅРёС‚Рµ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРѕСЃС‚С‹С… РґРµР№СЃС‚РІРёР№:<br/>'.
+									'1. РћС‚РїСЂР°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° РїРѕРґРєР»СЋС‡РµРЅРёРµ.<br/>'.
+									'2. РЈРєР°Р¶РёС‚Рµ РЅРёР¶Рµ <b>Р»РѕРіРёРЅ</b> Рё <b>РїР°СЂРѕР»СЊ</b>, РєРѕС‚РѕСЂС‹Рµ РІС‹ РїРѕР»СѓС‡РёС‚Рµ РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё Р·Р°СЏРІРєРё РЅР° РїРѕРґРєР»СЋС‡РµРЅРёРµ.<br/>'.
+									'3. РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>РЎРѕС…СЂР°РЅРёС‚СЊ</b>.';
 
 /* sms-kontakt */
-$MESS ['SMSKONTAKT_OPT_SENDER_ID'] = "Подпись отправителя";
-$MESS ['SMSKONTAKT_OPT_SENDER_PHONE'] = "Телефон отправителя (79001112233)";
-$MESS ['SMSKONTAKT_OPT_API_KEY'] = "API-ключ";
-$MESS ['SMSKONTAKT_OPT_GET_API_KEY_TITLE'] = "API-ключ будет отправлен вам через смс";
-$MESS ['SMSKONTAKT_OPT_GET_API_KEY_BUTTON'] = "'Получить API-ключ'";
-$MESS ['SMSKONTAKT_ERR_EMPTY_PARAM'] = "Не указано значение";
-$MESS ['SMSKONTAKT_MSG_API_KEY_SENT'] = "API-Ключ был отправлен на номер";
-$MESS ['SMSKONTAKT_MSG_API_KEY_SENT_2']	= "Пожалуйста, укажите его на этой странице и сохраните настройки.";
-$MESS ['SMSKONTAKT_ERR_API_KEY_NOT_SENT'] = "API-Ключ не был отправлен. Пожалуйста, попробуйте еще раз.";
-$MESS ['SMSKONTAKT_PRICE'] = "Стоимость одного СМС-сообщения:";
-$MESS ['SMSKONTAKT_BALANCE'] = "Ваш баланс";
-$MESS ['SMSKONTAKT_BALANCE_ADD'] = "пополнить";
-$MESS ['SMSKONTAKT_INSTRUCTION'] = 'Для настройки модуля выполните несколько простых действий:'.
-	'<br/>1. Укажите <b>Подпись отправителя</b> (например, "sozdavatel") - это имя будет отображаться у получателя в качестве отправителя сообщения.'.
-	'<br/>2. Укажите <b>Телефон отправителя</b> (например, "79001112233") - это номер телефона, к которому будет привязан ваш баланс. На этот номер будет отправлен <b>API-ключ</b>, поэтому укажите действующий номер, принадлежащий вам.'.
-	'<br/>3. Нажмите кнопку <b>Получить API-ключ</b>. Вам будет отправлено СМС-сообщение с персональным API-ключом.'.
-	'<br/>4. Введите в поле <b>API-ключ</b> код, который вы получили в СМС.'.
-	'<br/>5. Нажмите кнопку <b>Сохранить</b>.';
+$MESS ['SMSKONTAKT_OPT_SENDER_ID'] = "РџРѕРґРїРёСЃСЊ РѕС‚РїСЂР°РІРёС‚РµР»СЏ";
+$MESS ['SMSKONTAKT_OPT_SENDER_PHONE'] = "РўРµР»РµС„РѕРЅ РѕС‚РїСЂР°РІРёС‚РµР»СЏ (79001112233)";
+$MESS ['SMSKONTAKT_OPT_API_KEY'] = "API-РєР»СЋС‡";
+$MESS ['SMSKONTAKT_OPT_GET_API_KEY_TITLE'] = "API-РєР»СЋС‡ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ РІР°Рј С‡РµСЂРµР· СЃРјСЃ";
+$MESS ['SMSKONTAKT_OPT_GET_API_KEY_BUTTON'] = "'РџРѕР»СѓС‡РёС‚СЊ API-РєР»СЋС‡'";
+$MESS ['SMSKONTAKT_ERR_EMPTY_PARAM'] = "РќРµ СѓРєР°Р·Р°РЅРѕ Р·РЅР°С‡РµРЅРёРµ";
+$MESS ['SMSKONTAKT_MSG_API_KEY_SENT'] = "API-РљР»СЋС‡ Р±С‹Р» РѕС‚РїСЂР°РІР»РµРЅ РЅР° РЅРѕРјРµСЂ";
+$MESS ['SMSKONTAKT_MSG_API_KEY_SENT_2']	= "РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СѓРєР°Р¶РёС‚Рµ РµРіРѕ РЅР° СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ Рё СЃРѕС…СЂР°РЅРёС‚Рµ РЅР°СЃС‚СЂРѕР№РєРё.";
+$MESS ['SMSKONTAKT_ERR_API_KEY_NOT_SENT'] = "API-РљР»СЋС‡ РЅРµ Р±С‹Р» РѕС‚РїСЂР°РІР»РµРЅ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·.";
+$MESS ['SMSKONTAKT_PRICE'] = "РЎС‚РѕРёРјРѕСЃС‚СЊ РѕРґРЅРѕРіРѕ РЎРњРЎ-СЃРѕРѕР±С‰РµРЅРёСЏ:";
+$MESS ['SMSKONTAKT_BALANCE'] = "Р’Р°С€ Р±Р°Р»Р°РЅСЃ";
+$MESS ['SMSKONTAKT_BALANCE_ADD'] = "РїРѕРїРѕР»РЅРёС‚СЊ";
+$MESS ['SMSKONTAKT_INSTRUCTION'] = 'Р”Р»СЏ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ РІС‹РїРѕР»РЅРёС‚Рµ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРѕСЃС‚С‹С… РґРµР№СЃС‚РІРёР№:'.
+	'<br/>1. РЈРєР°Р¶РёС‚Рµ <b>РџРѕРґРїРёСЃСЊ РѕС‚РїСЂР°РІРёС‚РµР»СЏ</b> (РЅР°РїСЂРёРјРµСЂ, "sozdavatel") - СЌС‚Рѕ РёРјСЏ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ Сѓ РїРѕР»СѓС‡Р°С‚РµР»СЏ РІ РєР°С‡РµСЃС‚РІРµ РѕС‚РїСЂР°РІРёС‚РµР»СЏ СЃРѕРѕР±С‰РµРЅРёСЏ.'.
+	'<br/>2. РЈРєР°Р¶РёС‚Рµ <b>РўРµР»РµС„РѕРЅ РѕС‚РїСЂР°РІРёС‚РµР»СЏ</b> (РЅР°РїСЂРёРјРµСЂ, "79001112233") - СЌС‚Рѕ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, Рє РєРѕС‚РѕСЂРѕРјСѓ Р±СѓРґРµС‚ РїСЂРёРІСЏР·Р°РЅ РІР°С€ Р±Р°Р»Р°РЅСЃ. РќР° СЌС‚РѕС‚ РЅРѕРјРµСЂ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅ <b>API-РєР»СЋС‡</b>, РїРѕСЌС‚РѕРјСѓ СѓРєР°Р¶РёС‚Рµ РґРµР№СЃС‚РІСѓСЋС‰РёР№ РЅРѕРјРµСЂ, РїСЂРёРЅР°РґР»РµР¶Р°С‰РёР№ РІР°Рј.'.
+	'<br/>3. РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>РџРѕР»СѓС‡РёС‚СЊ API-РєР»СЋС‡</b>. Р’Р°Рј Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅРѕ РЎРњРЎ-СЃРѕРѕР±С‰РµРЅРёРµ СЃ РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Рј API-РєР»СЋС‡РѕРј.'.
+	'<br/>4. Р’РІРµРґРёС‚Рµ РІ РїРѕР»Рµ <b>API-РєР»СЋС‡</b> РєРѕРґ, РєРѕС‚РѕСЂС‹Р№ РІС‹ РїРѕР»СѓС‡РёР»Рё РІ РЎРњРЎ.'.
+	'<br/>5. РќР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ <b>РЎРѕС…СЂР°РЅРёС‚СЊ</b>.';
 
 $MESS ['SMS_SUPPORT'] = 
-'<a target="_blank" href="http://dev.1c-bitrix.ru/community/webdev/group/24/forum/message/37043/203365/">Подробное описание на форуме</a>.
+'<a target="_blank" href="http://dev.1c-bitrix.ru/community/webdev/group/24/forum/message/37043/203365/">РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ РЅР° С„РѕСЂСѓРјРµ</a>.
 <br/>
-Техподдержка: <a href="mailto:sms@sozdavatel.ru">sms@sozdavatel.ru</a>';
+РўРµС…РїРѕРґРґРµСЂР¶РєР°: <a href="mailto:sms@sozdavatel.ru">sms@sozdavatel.ru</a>';
 
 $MESS ['SMS_EXAMPLE'] = '
-<div class="info-title">Описание API</div>
+<div class="info-title">РћРїРёСЃР°РЅРёРµ API</div>
 <br/>
-<br/>Чтобы отправить СМС, нужно подключить модуль <b>sozdavatel.sms</b> и вызвать функцию <br/><b>CSMS::Send</b>($message, $reciever_phone = false, $charset = false).
+<br/>Р§С‚РѕР±С‹ РѕС‚РїСЂР°РІРёС‚СЊ РЎРњРЎ, РЅСѓР¶РЅРѕ РїРѕРґРєР»СЋС‡РёС‚СЊ РјРѕРґСѓР»СЊ <b>sozdavatel.sms</b> Рё РІС‹Р·РІР°С‚СЊ С„СѓРЅРєС†РёСЋ <br/><b>CSMS::Send</b>($message, $reciever_phone = false, $charset = false).
 <br/>
 <br/>
 
@@ -104,41 +104,41 @@ $MESS ['SMS_EXAMPLE'] = '
 <span style="color: #0000BB">&lt;?php
 <br></span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">CModule</span><span style="color: #007700">::</span><span style="color: #0000BB">IncludeModule</span><span style="color: #007700">(</span><span style="color: #DD0000">"sozdavatel.sms"</span><span style="color: #007700">))&nbsp;
 <br>{&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"Сообщение&nbsp;отправлено&nbsp;через&nbsp;модуль&nbsp;\n&nbsp;sozdavatel.sms"</span><span style="color: #007700">;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"РЎРѕРѕР±С‰РµРЅРёРµ&nbsp;РѕС‚РїСЂР°РІР»РµРЅРѕ&nbsp;С‡РµСЂРµР·&nbsp;РјРѕРґСѓР»СЊ&nbsp;\n&nbsp;sozdavatel.sms"</span><span style="color: #007700">;&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">CSMS</span><span style="color: #007700">::</span><span style="color: #0000BB">Send</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"79043015041"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"UTF-8"</span><span style="color: #007700">);&nbsp;
 <br>}
 <br></span><span style="color: #0000BB">?&gt;</span>
 </span>
 
 <br/>
-<br/>Функция возвращает <b>true</b> в случае успешной отправки и <b>false</b>, если отправка не удалась.
+<br/>Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ <b>true</b> РІ СЃР»СѓС‡Р°Рµ СѓСЃРїРµС€РЅРѕР№ РѕС‚РїСЂР°РІРєРё Рё <b>false</b>, РµСЃР»Рё РѕС‚РїСЂР°РІРєР° РЅРµ СѓРґР°Р»Р°СЃСЊ.
 <br/>
-<br/>Функция принимает следующие параметры:
-<br/>&bull; <b>message</b> - текст сообщения. Строки разделяются символом "\n";
-<br/>&bull; <b>reciever_phone</b> - телефон получателя (11 цифр). Если телефон получателя не указан, то СМС отправляется получателю по умолчанию, то есть на номер, указанный в настройках модуля;
-<br/>&bull; <b>charset</b> - кодировка сообщения. Если кодировка не указана, то используется кодировка сайта.
+<br/>Р¤СѓРЅРєС†РёСЏ РїСЂРёРЅРёРјР°РµС‚ СЃР»РµРґСѓСЋС‰РёРµ РїР°СЂР°РјРµС‚СЂС‹:
+<br/>&bull; <b>message</b> - С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєРё СЂР°Р·РґРµР»СЏСЋС‚СЃСЏ СЃРёРјРІРѕР»РѕРј "\n";
+<br/>&bull; <b>reciever_phone</b> - С‚РµР»РµС„РѕРЅ РїРѕР»СѓС‡Р°С‚РµР»СЏ (11 С†РёС„СЂ). Р•СЃР»Рё С‚РµР»РµС„РѕРЅ РїРѕР»СѓС‡Р°С‚РµР»СЏ РЅРµ СѓРєР°Р·Р°РЅ, С‚Рѕ РЎРњРЎ РѕС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РїРѕР»СѓС‡Р°С‚РµР»СЋ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, С‚Рѕ РµСЃС‚СЊ РЅР° РЅРѕРјРµСЂ, СѓРєР°Р·Р°РЅРЅС‹Р№ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ;
+<br/>&bull; <b>charset</b> - РєРѕРґРёСЂРѕРІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ. Р•СЃР»Рё РєРѕРґРёСЂРѕРІРєР° РЅРµ СѓРєР°Р·Р°РЅР°, С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РєРѕРґРёСЂРѕРІРєР° СЃР°Р№С‚Р°.
 <br/>
-<br/><b>Примечание</b>: если сообщение отправляется при помощи AJAX-запроса на сайте, работающем в кодировке windows-1251, то следует указывать кодировку UTF-8, так как AJAX работает только в UTF-8.
-<br/>
-<br/>
-<br/>Чтобы получить информацию о смс-сервисе, используйте функцию <b>CSMS::GetServiceInfo</b>($serviceID = false).
-<br/>Функция возвращает массив с информацией о смс-сервисе <b>$serviceID</b>. Если <b>$serviceID</b> не указан, то возвращается информация о сервисе, выбранном в настройках модуля.
-<br/><b>$serviceID</b> может принимать значения: <b>SMSKONTAKT</b>, <b>SMSBLISS</b>.
-<br/>
-<br/>Функция возвращает массив со следующими ключами:
-<br/>&bull; <b>ID</b> — Идентификатор смс-сервиса, например, SMSKONTAKT.
-<br/>&bull; <b>CURRENCY</b> — Валюта, в которой работает сервис, например, rub (рубли).
-<br/>&bull; <b>ACCOUNT_LINK</b> — Ссылка на личный кабинет на сайте смс-провайдера.
-<br/>&bull; <b>BALANCE_PAY_LINK</b> — Ссылка на пополнение баланса.
-<br/>&bull; <b>BALANCE</b> — Текущий баланс.
-<br/>&bull; <b>PRICE</b> — Стоимость одного смс-сообщения (только SMSKONTAKT).
+<br/><b>РџСЂРёРјРµС‡Р°РЅРёРµ</b>: РµСЃР»Рё СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»СЏРµС‚СЃСЏ РїСЂРё РїРѕРјРѕС‰Рё AJAX-Р·Р°РїСЂРѕСЃР° РЅР° СЃР°Р№С‚Рµ, СЂР°Р±РѕС‚Р°СЋС‰РµРј РІ РєРѕРґРёСЂРѕРІРєРµ windows-1251, С‚Рѕ СЃР»РµРґСѓРµС‚ СѓРєР°Р·С‹РІР°С‚СЊ РєРѕРґРёСЂРѕРІРєСѓ UTF-8, С‚Р°Рє РєР°Рє AJAX СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РІ UTF-8.
 <br/>
 <br/>
+<br/>Р§С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ СЃРјСЃ-СЃРµСЂРІРёСЃРµ, РёСЃРїРѕР»СЊР·СѓР№С‚Рµ С„СѓРЅРєС†РёСЋ <b>CSMS::GetServiceInfo</b>($serviceID = false).
+<br/>Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°СЃСЃРёРІ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ СЃРјСЃ-СЃРµСЂРІРёСЃРµ <b>$serviceID</b>. Р•СЃР»Рё <b>$serviceID</b> РЅРµ СѓРєР°Р·Р°РЅ, С‚Рѕ РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃРµСЂРІРёСЃРµ, РІС‹Р±СЂР°РЅРЅРѕРј РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ.
+<br/><b>$serviceID</b> РјРѕР¶РµС‚ РїСЂРёРЅРёРјР°С‚СЊ Р·РЅР°С‡РµРЅРёСЏ: <b>SMSKONTAKT</b>, <b>SMSBLISS</b>.
 <br/>
-<div class="info-title">Пример: СМС-уведомление о новом заказе</div>
-<br/>Вы можете назначить отправку СМС на любое системное событие.
-<br/>Обработчики событий описываются в файле <b>/bitrix/php_interface/init.php</b>.
-<br/>Например, чтобы отправить СМС при оформлении заказа в интернет-магазине, нужно написать следующий обработчик:
+<br/>Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°СЃСЃРёРІ СЃРѕ СЃР»РµРґСѓСЋС‰РёРјРё РєР»СЋС‡Р°РјРё:
+<br/>&bull; <b>ID</b> вЂ” РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРјСЃ-СЃРµСЂРІРёСЃР°, РЅР°РїСЂРёРјРµСЂ, SMSKONTAKT.
+<br/>&bull; <b>CURRENCY</b> вЂ” Р’Р°Р»СЋС‚Р°, РІ РєРѕС‚РѕСЂРѕР№ СЂР°Р±РѕС‚Р°РµС‚ СЃРµСЂРІРёСЃ, РЅР°РїСЂРёРјРµСЂ, rub (СЂСѓР±Р»Рё).
+<br/>&bull; <b>ACCOUNT_LINK</b> вЂ” РЎСЃС‹Р»РєР° РЅР° Р»РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚ РЅР° СЃР°Р№С‚Рµ СЃРјСЃ-РїСЂРѕРІР°Р№РґРµСЂР°.
+<br/>&bull; <b>BALANCE_PAY_LINK</b> вЂ” РЎСЃС‹Р»РєР° РЅР° РїРѕРїРѕР»РЅРµРЅРёРµ Р±Р°Р»Р°РЅСЃР°.
+<br/>&bull; <b>BALANCE</b> вЂ” РўРµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ.
+<br/>&bull; <b>PRICE</b> вЂ” РЎС‚РѕРёРјРѕСЃС‚СЊ РѕРґРЅРѕРіРѕ СЃРјСЃ-СЃРѕРѕР±С‰РµРЅРёСЏ (С‚РѕР»СЊРєРѕ SMSKONTAKT).
+<br/>
+<br/>
+<br/>
+<div class="info-title">РџСЂРёРјРµСЂ: РЎРњРЎ-СѓРІРµРґРѕРјР»РµРЅРёРµ Рѕ РЅРѕРІРѕРј Р·Р°РєР°Р·Рµ</div>
+<br/>Р’С‹ РјРѕР¶РµС‚Рµ РЅР°Р·РЅР°С‡РёС‚СЊ РѕС‚РїСЂР°РІРєСѓ РЎРњРЎ РЅР° Р»СЋР±РѕРµ СЃРёСЃС‚РµРјРЅРѕРµ СЃРѕР±С‹С‚РёРµ.
+<br/>РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№ РѕРїРёСЃС‹РІР°СЋС‚СЃСЏ РІ С„Р°Р№Р»Рµ <b>/bitrix/php_interface/init.php</b>.
+<br/>РќР°РїСЂРёРјРµСЂ, С‡С‚РѕР±С‹ РѕС‚РїСЂР°РІРёС‚СЊ РЎРњРЎ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р° РІ РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ, РЅСѓР¶РЅРѕ РЅР°РїРёСЃР°С‚СЊ СЃР»РµРґСѓСЋС‰РёР№ РѕР±СЂР°Р±РѕС‚С‡РёРє:
 <br/>
 <br/>
 
@@ -149,24 +149,24 @@ $MESS ['SMS_EXAMPLE'] = '
 <br>{&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">CModule</span><span style="color: #007700">::</span><span style="color: #0000BB">IncludeModule</span><span style="color: #007700">(</span><span style="color: #DD0000">"sozdavatel.sms"</span><span style="color: #007700">))&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;получить&nbsp;номер&nbsp;телефона&nbsp;клиента&nbsp;из&nbsp;личного&nbsp;профиля&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;РїРѕР»СѓС‡РёС‚СЊ&nbsp;РЅРѕРјРµСЂ&nbsp;С‚РµР»РµС„РѕРЅР°&nbsp;РєР»РёРµРЅС‚Р°&nbsp;РёР·&nbsp;Р»РёС‡РЅРѕРіРѕ&nbsp;РїСЂРѕС„РёР»СЏ&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rsUser&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CUser</span><span style="color: #007700">::</span><span style="color: #0000BB">GetByID</span><span style="color: #007700">(</span><span style="color: #0000BB">$arFields</span><span style="color: #007700">[</span><span style="color: #0000BB">USER_ID</span><span style="color: #007700">]);&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$arUser&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rsUser</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">Fetch</span><span style="color: #007700">();&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$phone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$arUser</span><span style="color: #007700">[</span><span style="color: #0000BB">PERSONAL_PHONE</span><span style="color: #007700">];&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;если&nbsp;телефон&nbsp;указан,&nbsp;отправить&nbsp;клиенту&nbsp;смс&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;РµСЃР»Рё&nbsp;С‚РµР»РµС„РѕРЅ&nbsp;СѓРєР°Р·Р°РЅ,&nbsp;РѕС‚РїСЂР°РІРёС‚СЊ&nbsp;РєР»РёРµРЅС‚Сѓ&nbsp;СЃРјСЃ&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$phone</span><span style="color: #007700">)&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">= &nbsp;</span><span style="color: #DD0000">"Ваш&nbsp;заказ&nbsp;принят!\n"</span><span style="color: #007700">.&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Номер&nbsp;заказа:&nbsp;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$id</span><span style="color: #007700">.</span><span style="color: #DD0000">",\n"</span><span style="color: #007700">.&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"сумма:&nbsp;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$arFields</span><span style="color: #007700">[</span><span style="color: #0000BB">PRICE</span><span style="color: #007700">].</span><span style="color: #0000BB">$arFields</span><span style="color: #007700">[</span><span style="color: #0000BB">CURRENCY</span><span style="color: #007700">].</span><span style="color: #DD0000">"."</span><span style="color: #007700">;<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">= &nbsp;</span><span style="color: #DD0000">"Р’Р°С€&nbsp;Р·Р°РєР°Р·&nbsp;РїСЂРёРЅСЏС‚!\n"</span><span style="color: #007700">.&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"РќРѕРјРµСЂ&nbsp;Р·Р°РєР°Р·Р°:&nbsp;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$id</span><span style="color: #007700">.</span><span style="color: #DD0000">",\n"</span><span style="color: #007700">.&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"СЃСѓРјРјР°:&nbsp;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$arFields</span><span style="color: #007700">[</span><span style="color: #0000BB">PRICE</span><span style="color: #007700">].</span><span style="color: #0000BB">$arFields</span><span style="color: #007700">[</span><span style="color: #0000BB">CURRENCY</span><span style="color: #007700">].</span><span style="color: #DD0000">"."</span><span style="color: #007700">;<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">CSMS</span><span style="color: #007700">::</span><span style="color: #0000BB">Send</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$phone</span><span style="color: #007700">))&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;отправлено
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;РѕС‚РїСЂР°РІР»РµРЅРѕ
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;ошибка
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;РѕС€РёР±РєР°
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;
@@ -175,7 +175,7 @@ $MESS ['SMS_EXAMPLE'] = '
 </span>
 
 <br/>
-<br/>Клиент магазина получит такое сообщение:
+<br/>РљР»РёРµРЅС‚ РјР°РіР°Р·РёРЅР° РїРѕР»СѓС‡РёС‚ С‚Р°РєРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ:
 <br/>
 <br/><img src="/bitrix/images/sozdavatel.smskontakt/sms_example.png">';
 ?>

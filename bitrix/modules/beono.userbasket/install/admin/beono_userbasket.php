@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/beono.userbasket/admin/beono_userbasket.php");?>

@@ -1,0 +1,34 @@
+/*структура*/
+#index {
+	position: relative;
+	width:expression(document.documentElement.clientWidth<995?'995px':'auto');
+	height: 100%;
+}
+#foot{
+	top:expression(this.parentNode.offsetHeight - 75 + "px"); /*Высота index - высота футера*/
+}
+
+#maxwidther,
+#footwidther{
+	width:expression(document.documentElement.clientWidth>1200?'1200px':'auto');
+}
+/*\структура*/
+
+/*Коррекция отступов, поожений*/
+#index .hortable ul{
+	display:block;
+}
+
+#index .hortable li{
+	display:inline-block;
+}
+
+#index .hortable li{
+	display:inline;
+}
+
+/*\Коррекция отступов, поожений*/
+
+/*PNG, prozrachnost'*/
+
+/*\PNG, prozrachnost'*/

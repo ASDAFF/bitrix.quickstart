@@ -1,0 +1,14 @@
+<?
+$MESS["BEJET_EVENTS_TYPE_NAME"] = "Новости";
+$MESS["BEJET_EVENTS_ELEMENT_NAME"] = "Новости";
+$MESS["BEJET_EVENTS_SECTION_NAME"] = "Разделы";
+
+$MESS["BEJET_SERVICES_TYPE_NAME"] = "Услуги";
+$MESS["BEJET_SERVICES_ELEMENT_NAME"] = "Услуга";
+$MESS["BEJET_SERVICES_SECTION_NAME"] = "Разделы";
+
+$MESS["BEJET_ADV_TYPE_NAME"] = "Реклама";
+$MESS["BEJET_ADV_ELEMENT_NAME"] = "Елемент";
+$MESS["BEJET_ADV_SECTION_NAME"] = "Разделы";
+?>
+

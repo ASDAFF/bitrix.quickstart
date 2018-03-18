@@ -1,0 +1,30 @@
+<?
+	$MESS["TCS_VERIFICATION_ERROR"]="Сайт #SITE_ID# не прошёл верификацию. Проверьте настройки";
+	$MESS["TCS_SITE_IDENT"]="Идентификатор магазина";
+	$MESS["TCS_SITE_NAME"]="Название магазина";
+	$MESS["TCS_API_KEY"]="API Key";
+	$MESS["TCS_SECRET_PHRASE"]="Секретная строка";
+	$MESS["TCS_STATUS"]="Статус";
+	$MESS["TCS_ROUND"]="Метод округления копеек";
+	$MESS["TCS_INACTIVE"]="Неактивен";
+	$MESS["TCS_ACTIVE"]="Активен";
+	$MESS["TCS_LEAVE_OFFER"]="Если вы еще не подписали договор, но хотели бы принимать заказы с оплатой через KupiVkredit.ru, предлагаем вам заполнить заявку на подключение к системе.";
+	$MESS["TCS_SITE"]="Сайт";
+	$MESS["TCS_FIO"]="ФИО";
+	$MESS["TCS_PHONE"]="Телефон";
+	$MESS["TCS_EMAIL"]="E-mail";
+	$MESS["TCS_COMMENT"]="Комментарий";
+	$MESS["TCS_SEND_OFFER"]="Отправить заявку";
+	$MESS["TCS_BUTTON_STYLE"]="Стиль кнопки заказа";
+	$MESS["TCS_INSERT_BUTTONS"]="Кнопки для вставки";
+	$MESS["TCS_BUTTON_VIEW"]="Вид кнопки";
+	$MESS["TCS_ORDER_VIEW"]="Вид выводимый на<br/>последней странице заказа";
+	$MESS["TCS_CODE"]="Код для вставки";
+	$MESS["TCS_WIDTH"]="Ширина";
+	$MESS["TCS_TYPE"]="тип";
+	$MESS["TCS_HOST"]="Адрес сервера";
+	$MESS["TCS_WIDGET_URL"]="URL виджета";
+	$MESS["TCS_OPEN_WIDGET"]="Автоматически открывать виджет";
+	$MESS["TCS_API_URL"]="URL API";
+	$MESS["TCS_COURIER_MODE"]="Доставка документов";
+?>

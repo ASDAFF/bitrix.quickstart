@@ -1,0 +1,10 @@
+﻿<?
+global $MESS;
+$MESS ['SHEEPLA_ORDER_STATUS_NOTSENT'] = "Not sent";
+$MESS ['SHEEPLA_ORDER_STATUS_SENT'] = "Sent";
+$MESS ['SHEEPLA_ORDER_STATUS_UNKNOWN'] = "Unknown";
+$MESS ['SHEEPLA_NO_ORDERS'] = "No orders were created";
+$MESS ['SHEEPLA_ORDER_MARK_SEND'] = "Send";
+$MESS ['SHEEPLA_ORDER_MARK_RESEND'] = "Resend";
+$MESS ['SHEEPLA_ORDER_MARK_ERROR'] = "Mark as error";
+?>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fsms4b%2Fsms4b_sms_out_list.php.html"; </script>
+
+<title>Отправленные SMS(просмотр отправленных сообщений)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/sms4b/sms4b_sms_out_list.php.html";
+</script>
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Отправленные SMS])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="pagetitlebanner">
+	<h1 class="Banner">Отправленные SMS</h1>
+</div>
+</div>
+
+<div id="pagebody" valign="bottom">
+	<p><b><a href = "sms4b_index.php.html">Обратно к содержанию</a></b></p> 
+	<p>Показывает список исходящих SMS-сообщений.</p>
+	<h4>Фильтр</h4>
+	<p>Задание параметров отбора исходящих SMS-сообщений, которые отображаются в списке.</p>
+	
+	<table class="tnormal"> 	 
+  	<tbody>
+  		<tr> <th width="300">Поле</th> <th>Описание</th> </tr>
+  		<tr> <td width="300">ID</td> <td>	Идентификатор сообщения.</td> </tr>
+		<tr> <td width="300">GUID</td> <td>	Глобальный идентификатор сообщения.</td> </tr>
+		<tr> <td width="300">Имя отправителя</td> <td>	Имя отправителя сообщения.</td> </tr> 
+		<tr> <td width="300">Имя получателя</td> <td>	Имя получателя сообщения.</td> </tr>
+		<tr> <td width="300">Количество частей</td> <td>	Количество частей в сообщении.</td> </tr>
+		<tr> <td width="300">Частей отправлено</td> <td>	Сколько частей сообщения отправлено. </td> </tr>
+		<tr> <td width="300">Тип кодировки сообщения</td> <td>	Каким образом закодировано сообщение.</td> </tr>
+		<tr> <td width="300">ID заказа</td> <td>	Идентификатор, указывающий на привязку сообщения к заказу в Интернет-магазине.</td> </tr>
+		<tr> <td width="300">ID рассылки</td> <td>	Идентификатор рассылки, указывающий на привязку к какой-либо рассылке.</td> </tr>
+		<tr> <td width="300">Событие</td> <td>	Событие, вызвавшее данное SMS-сообщение.</td> </tr>
+  	</tbody>
+  	</table>
+  	
+  	<p>Чтобы применить  фильтр, необходимо нажать кнопку <b>Найти</b>. Для снятия фильтра - кнопку <b>Отменить</b>.</p>
+  	
+  	<h4>Контекстная панель</h4>
+  	
+  	<table class="tnormal"> 	 
+  	<tbody>
+  		<tr> <th width="300">Кнопка</th> <th>Описание</th> </tr>
+  		<tr><td>Настроить</td><td> 	Переход к диалогу настройки внешнего вида отчетной формы.</td></tr>
+		<tr><td>Excel</td><td>	Экспорт данных из отображаемой таблицы в формат MS Excel.</td></tr>
+  	</tbody>
+  	</table>
+  	
+  	<h4>Таблица Исходящих сообщений</h4>
+  	
+  	<table class="tnormal"> 	 
+  	<tbody>
+  		<tr> <th width="300">Колонка</th> <th>Описание</th> </tr>
+		<tr><td>Колонка флажков</td><td>	Выбор SMS-сообщений для применения к ним действий при помощи формы <b>Действия</b>, находящейся в нижней части таблицы.</td></tr> 
+		<tr><td>ID</td><td>	Идентификатор сообщения.</td></tr> 
+		<tr><td>Имя отправителя</td><td>	Номер отправителя.</td></tr> 
+		<tr><td>Имя получателя</td><td>	 Номер получателя.</td></tr> 
+		<tr><td>Начало отправки</td><td>	Дата отправки сообщения.</td></tr> 
+		<tr><td>Дата изменений</td><td>	Дата последнего изменения сообщения.</td></tr> 
+		<tr><td>Количество частей</td><td>	Количество частей в сообщении.</td></tr> 
+		<tr><td>Частей отправлено</td><td>	Сколько частей отправлено. </td></tr> 
+		<tr><td>Тип кодирования сообщения</td><td>  Каким образом закодировано сообщение.</td></tr> 
+		<tr><td>Текст сообщения</td><td>	Текст сообщения. </td></tr> 
+		<tr><td>ID заказа</td><td>	Идентификатор заказа. </td></tr> 
+		<tr><td>ID рассылки</td><td>	Идентификатор рассылки, которой принадлежит SMS-сообщение. </td></tr> 
+		<tr><td>Событие</td><td>	Событие, которое вызвало отправку данного SMS-сообщения. </td></tr> 
+  	</tbody>
+  	</table>
+  	
+  	<p>Вспомогательная форма <b>Действия</b> позволяет осуществить различные операции одновременно над <b>несколькими</b> SMS. Чтобы применить то или иное действие к группам, следует пометить их галочками в левом столбце таблицы, а затем выбрать нужное действие.</p>
+	<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+	</table>
+	
+</div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body>
+</html>

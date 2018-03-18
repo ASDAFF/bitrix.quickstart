@@ -1,0 +1,14 @@
+.e404-block {
+    text-align: center;
+    margin-top: 30px;
+}
+.e404-block img.troll {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+.e404-block .fat {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}

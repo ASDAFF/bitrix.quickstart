@@ -1,0 +1,10 @@
+
+Deny From All
+
+<Files "ipn.php">
+	Allow From All
+</Files>
+
+<Files "result_payment.php">
+Allow From All
+</Files>

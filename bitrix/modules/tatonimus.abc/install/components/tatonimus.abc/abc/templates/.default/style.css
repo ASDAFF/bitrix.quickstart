@@ -1,0 +1,36 @@
+.catalogAbcLabels {
+    list-style: none;
+    margin: 15px;
+}
+.catalogAbcLabels > li a {
+    text-decoration: none;
+}
+.catalogAbcLabels > li {
+    background-color: #E5E5E5;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 4px !important;
+    padding: 3px 5px !important;
+}
+.catalogAbcLabels > li:hover {
+    background-color: #D0D0D0;
+}
+.catalogAbcLabels > li:before {
+    content: none !important;
+}
+.catalogAbcList {
+    list-style: none;
+    margin: 15px 0;
+}
+.catalogAbcList > li:before {
+    content: none !important;
+}
+.catalogAbcList > li span {
+    font-weight: bold;
+}
+.catalogAbcGroup {
+    list-style: none;
+}
+.catalogAbcGroup > li:before {
+    content: none !important;
+}

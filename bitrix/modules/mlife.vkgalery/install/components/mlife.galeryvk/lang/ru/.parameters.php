@@ -1,0 +1,29 @@
+<?
+$MESS ['MLIFE_VKG_PARAM_IST'] = "Источник";
+$MESS ['IST_TIP'] = "Укажите откуда будем брать галерею с профиля пользователя, либо с сообщества";
+$MESS ['MLIFE_VKG_PARAM_ID_IST'] = "ID Источника";
+$MESS ['ID_IST_TIP'] = "Ид пользователя либо Ид сообщества";
+$MESS ['MLIFE_VKG_PARAM_ID_IST_VALUE_G'] = "Сообщество";
+$MESS ['MLIFE_VKG_PARAM_ID_IST_VALUE_U'] = "Пользователь";
+$MESS ['MLIFE_VKG_PARAM_ID_GAL'] = "ID Галереи";
+$MESS ['MLIFE_VKG_PARAM_KOL_PHOTO'] = "Количество фото";
+$MESS ['KOL_PHOTO_TIP'] = "0-выводить все фото";
+$MESS ['MLIFE_VKG_PARAM_READMORE'] = "Выводить подробнее";
+$MESS ['READMORE_TIP'] = "Выводить ли кнопку подробнее, переход на галерею вконтакте";
+$MESS ['MLIFE_VKG_PARAM_JQUERY'] = "Подключить jquery?";
+$MESS ['MLIFE_VKG_PARAM_FANCY'] = "Подключить fancybox?";
+$MESS ['MLIFE_VKG_PARAM_NO'] = "Нет";
+$MESS ['MLIFE_VKG_PARAM_YES'] = "Да";
+$MESS ['MLIFE_VKG_PARAM_TAB1'] = "Источник данных";
+$MESS ['FANCY_TIP'] = "Если у вас в шаблоне уже подключен fancybox, следует отключить повторную загрузку.";
+$MESS ['FANCY_TRUMB_TIP'] = "Если у вас в шаблоне уже подключен плагин fancybox-thumbs, следует отключить повторную загрузку.";
+$MESS ['FANCY_TRUMB'] = "Подключать плагин fancybox-thumbs?";
+$MESS ['JQUERY_TIP'] = "Если у вас в шаблоне уже подключен jquery, следует отключить повторную загрузку.";
+$MESS ['MLIFE_VKG_SCRIPT_TITLE'] = "Управление загрузкой скриптов.";
+$MESS ['MLIFE_VKG_VIASUAl_TITLE'] = "Внешний вид";
+$MESS ['MLIFE_VKG_IMPORT_TITLE'] = "Настройки импорта";
+$MESS ['MLIFE_VKG_PARAM_FANSY_WIEV_TRUMB'] = "Выводить превью в детальном виде?";
+$MESS ['MLIFE_VKG_FANCY_TRUMB_WIDTH'] = "Ширина превью";
+$MESS ['MLIFE_VKG_FANCY_TRUMB_HEIGHT'] = "Высота превью";
+$MESS ['MLIFE_VKG_PARAM_PHOTO_SIZES'] = "Получать дополнительные размеры фото из Вконтакте";
+?>

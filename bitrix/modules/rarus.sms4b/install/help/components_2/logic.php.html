@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fsms4b%2Fcomponents_2%2Flogic.php.html"; </script>
+
+<title>Логика и особенности работы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/sms4b/components_2/logic.php.html";
+</script>
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+ 
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0 Логика и особенности работы])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="pagetitlebanner">
+	<h1 class="Banner">Логика и особенности работы</h1>
+</div>
+</div>
+
+<div id="pagebody" valign="bottom">
+<p><b><a href = "../sms4b_index.php.html">Обратно к содержанию</a></b></p>  	
+	<p>Для удобства пользователя, компонент ведет себя по-разному при различных условиях.</p>
+
+	<p>Возможно несколько вариантов работы подписки:</p>
+    <ul>
+	    <li>пользователь залогинен;</li>
+		<li>пользователь не залогинен, но в банке пользователей он уже присутствует (определяется по адресу электронной почты или телефонному номеру);</li>
+		<li>пользователь анонимен, но уже подписан на какую-то рассылку (определяется по адресу электронной почты или телефонному номеру);</li>
+		<li>пользователь анонимен и еще не подписан ни на одну из рассылок.</li>
+    </ul>
+	<h4>Схема алгоритма логики работы компонента</h4> 
+	<div style = "text-align:center;padding:15px;margin:15px;">
+		<img src = "../img/graph.png"/>
+		
+	</div>
+	
+	<h4>Особенности работы компонента</h4>
+    <ul>
+		<li>Используется <b>единый</b> банк данных для хранения почтовых и SMS подписок. Подписка на SMS номер определяется по специальному постфиксу – @phone.sms.<br /> 
+		Т.е. если пользователь хочет оформить SMS подписку на номер 7615333121, то в системе он будет храниться как 7615333121@phone.sms;</li>
+
+		<li>Адреса электронной почты хранятся <b>без</b> каких либо изменений;</li>
+
+		<li>Зарегистрированный пользователь имеет возможность создавать подписки <b>без запроса кода подтверждения</b>, но имеет право создавать подписки на адрес, указанный в личных данных. Т.е. для почтовой подписки это поле EMAIL, для SMS подписки это PERSONAL_MOBILE;</li>
+
+		<li>При регистрации SMS-рассылки зарегистрированным пользователем и отсутствии в личных данных номера телефона, телефон указанный при регистрации новой SMS рассылки добавится в личные данные пользователя (поле PERSONAL_MOBILE);</li>
+
+		<li>Система различает почтовую рассылку от SMS рассылки посредству сканирования названия и описания рассылки на наличие сочетания букв "SMS";</li>
+		
+		<li>При рассылке SMS-выпуска, рассылка будет осуществляться только на адреса типа <b>*@phone.sms</b>. При рассылке почтового выпуска такие адреса (<b>*@phone.sms</b>), наоборот, будут игнорироваться;</li>
+		
+		<li>Если для SMS-выпуска указан формат HTML то рассылка производиться не будет. SMS-рассылки могут быть только в текстовом формате;</li>
+		
+		<li>Анонимный подписчик имеет возможность отписаться от рассылки <b>только по ссылке из письма</b>.</li>
+		
+     </ul>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table>
+</div>
+
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+
+</body>
+</html>

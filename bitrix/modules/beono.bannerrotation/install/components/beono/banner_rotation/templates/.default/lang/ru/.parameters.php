@@ -1,0 +1,33 @@
+<?
+$MESS ['BEONO_BANNER_JQUERY'] = "Подключить jQuery (если ещё не подключен)";
+$MESS ['BEONO_BANNER_PAGER_STYLE'] = "Стиль переключателя";
+$MESS ['BEONO_BANNER_STYLE_TEXT'] = "Текст";
+$MESS ['BEONO_BANNER_STYLE_DIGITS'] = "Цифры";
+$MESS ['BEONO_BANNER_STYLE_BULLS'] = "Точки";
+$MESS ['BEONO_BANNER_STYLE_ARROWS'] = "Стрелки";
+$MESS ['BEONO_BANNER_STYLE_ARROWSEDGE'] = "Стрелки c краю";
+$MESS ['BEONO_BANNER_STYLE_THUMBS'] = "Предпросмотр";
+$MESS ['BEONO_BANNER_STYLE_AMAZON'] = "Амазон";
+$MESS ['BEONO_BANNER_STYLE_NONE'] = "Без переключателя";
+$MESS ['BEONO_BANNER_PAGER_ORIENT'] = "Ориентация переключателя";
+$MESS ['BEONO_BANNER_PAGER_ORIENT_H'] = "Горизонтальная";
+$MESS ['BEONO_BANNER_PAGER_ORIENT_V'] = "Вертикальная";
+$MESS ['BEONO_BANNER_PAGER_POSITION'] = "Расположение переключателя";
+$MESS ['BEONO_BANNER_PAGER_POSITION_TOPLEFT'] = "Верхний левый угол";
+$MESS ['BEONO_BANNER_PAGER_POSITION_TOPCENTER'] = "Вверху посередине";
+$MESS ['BEONO_BANNER_PAGER_POSITION_TOPRIGHT'] = "Верхний правый угол";
+$MESS ['BEONO_BANNER_PAGER_POSITION_BOTTOMLEFT'] = "Нижний левый угол";
+$MESS ['BEONO_BANNER_PAGER_POSITION_BOTTOMCENTER'] = "Снизу посередине";
+$MESS ['BEONO_BANNER_PAGER_POSITION_BOTTOMRIGHT'] = "Нижний правый угол";
+$MESS ['BEONO_BANNER_PAGER_DIGITS'] = "Показывать числовой номер баннера в переключателе";
+$MESS ['BEONO_BANNER_ROUNDED'] = "Закругленные углы";
+$MESS ['BEONO_BANNER_WIDTH'] = "Ширина рекламного блока";
+$MESS ['BEONO_BANNER_HEIGHT'] = "Высота рекламного блока";
+$MESS ['BEONO_BANNER_EFFECT'] = "Тип перехода";
+$MESS ['BEONO_BANNER_EFFECT_FADE'] = "Прозрачность";
+$MESS ['BEONO_BANNER_EFFECT_SLIDE_H'] = "Горизонтальный сдвиг";
+$MESS ['BEONO_BANNER_EFFECT_SLIDE_V'] = "Вертикальный сдвиг";
+$MESS ['BEONO_BANNER_TRANSITION_SPEED'] = "Скорость перехода (мс)";
+$MESS ['BEONO_BANNER_TRANSITION_INTERVAL'] = "Время показа одного баннера (мс)";
+$MESS ['BEONO_BANNER_STOP_ON_FOCUS'] = "Отключить переход при наведении курсора";
+?>

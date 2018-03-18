@@ -1,0 +1,18 @@
+ .photo_row { 
+display: block;
+height: 87px;
+padding: 4px 4px 4px 5px;
+width: 130px;
+text-align:center;
+float:left;
+overflow:hidden;
+}
+
+.bg_mlife_photo_row {
+background:#cccccc;
+height: 87px;
+overflow:hidden;
+}
+
+.wrap_mlifegalery {width:100%;clear:both;}
+.readvkbut {display:block;width:100%;clear:both;margin:10px 0 10px 0;text-align:center;padding-top:15px;}

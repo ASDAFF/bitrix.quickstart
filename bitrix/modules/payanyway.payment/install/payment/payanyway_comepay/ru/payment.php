@@ -1,0 +1,14 @@
+<?php
+global $MESS;
+
+$MESS['PAYANYWAY_COMEPAY_TITLE'] 	= 'Comepay';
+
+$MESS['PAW_INVOICE_CREATED_TTL']	= "—оздано платежное поручение.";
+$MESS['PAW_INVOICE_ERROR_TTL']		= "ќшибка создани€ платежного поручени€.";
+$MESS['PAW_INVOICE_CREATED']		= "<h3>ƒл€ оплаты в ComePay номер счета дл€ пополнени€: %transaction%</h3>
+										<p>ќпераци€ создана, но не оплачена. ƒл€ завершени€ операции ¬ам необходимо произвести перечисление средств в систему <b>PayAnyWay</b> через терминалы ComePay, использу€ данный код:</p>
+										<p>%transaction%</p>
+										<p>—умма к оплате: %amount%</p>
+										<p>¬нешн€€ комисси€: %fee%</p>";
+
+?>

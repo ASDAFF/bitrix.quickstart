@@ -1,0 +1,4 @@
+<?
+$MESS["MCART_VACANCY_TITLE"] = "ÝÊÑÏÎÐÒ ÂÀÊÀÍÑÈÉ";
+$MESS["VACANCY_START_EXPORT"] = "Íà÷àòü âûãðóçêó";
+?>

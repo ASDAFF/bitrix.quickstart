@@ -1,0 +1,57 @@
+.bx-users {
+	width: 100%;
+}
+
+.bx-users-nav {margin: 10px 0px;}
+
+div.bx-user-buttons {margin-bottom: 15px; padding-left: 15px;}
+a.bx-user-add {display: block; font-weight: bold; text-decoration: none;}
+
+div.bx-button {height: 31px; margin-right: 15px;}
+div.bx-button span {display: block; float: left; height: 31px; cursor: pointer;}
+
+div.bx-button span.bx-text {background-position: left center; background-repeat: no-repeat; padding-left: 21px;}
+div.bx-button span.bx-add {background-image: url(images/btn/plus.gif);}
+div.bx-button span.bx-edit {background-image: url(images/btn/user.gif);}
+div.bx-button span.bx-l {background: url(images/btn/btn_l.gif); width: 3px;}
+div.bx-button span.bx-r {background: url(images/btn/btn_r.gif); width: 3px;}
+div.bx-button span.bx-c {
+	background: url(images/btn/btn_bg.gif);
+	padding: 0px 11px 0px 7px;
+	line-height: 27px;
+}
+
+.usersList
+{
+	width:400px;
+	
+}
+.usersList thead td 
+{
+	margin:0;
+	padding:0;
+	height: 18px;
+	border-collapse: collapse;	
+}
+.usersList tbody td
+{
+	height: 40px;
+	margin:0px;
+	padding:0px;
+}
+
+.ogg
+{
+	background-color: #e0e0e0;
+}
+.nogg
+{
+	background-color: white;
+}
+
+.button
+{
+	background: url(images/arrow.gif);
+	width: 20px;
+	height: 20px;
+}

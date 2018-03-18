@@ -1,0 +1,13 @@
+.adm-workarea-wrap td:first-child{
+	width:300px;
+	text-align:right;
+}
+.adm-workarea-wrap td{vertical-align: top;}
+.adm-workarea-wrap td select{min-width:250px;}
+
+.adm-workarea-wrap .wfMessage{
+    font-style: italic;
+}
+.adm-workarea-wrap .wfMessage.padding{
+    padding-left:25px;
+}

@@ -1,0 +1,11 @@
+HR.frontview{
+	color: silver;
+	background-color: silver;
+	height: 1px;
+	border-width:0px;
+	clear: both;
+}
+.item{
+	float: left;
+	padding: 10px 0px;
+}

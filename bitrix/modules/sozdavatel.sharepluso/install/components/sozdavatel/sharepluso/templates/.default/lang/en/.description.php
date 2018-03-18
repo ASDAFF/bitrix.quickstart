@@ -1,0 +1,4 @@
+<?
+$MESS ['SZD_SHAREPLUSO_DEFAULT_NAME'] = "Êíîïêè PLUSO";
+$MESS ['SZD_SHAREPLUSO_DEFAULT_DESC'] = "Êíîïêè PLUSO (http://share.pluso.ru/)";
+?>

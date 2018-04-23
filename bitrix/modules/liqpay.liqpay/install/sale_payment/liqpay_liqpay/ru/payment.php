@@ -24,5 +24,5 @@
 
 global $MESS;
 
-$MESS['PAYMENT_DESCRIPTION_PS'] = 'Вы хотите оплатить через систему';
-$MESS['PAYMENT_DESCRIPTION_SUM'] = 'Сумма к оплате по счету';
+$MESS['PAYMENT_DESCRIPTION_PS'] = 'Р’С‹ С…РѕС‚РёС‚Рµ РѕРїР»Р°С‚РёС‚СЊ С‡РµСЂРµР· СЃРёСЃС‚РµРјСѓ';
+$MESS['PAYMENT_DESCRIPTION_SUM'] = 'РЎСѓРјРјР° Рє РѕРїР»Р°С‚Рµ РїРѕ СЃС‡РµС‚Сѓ';

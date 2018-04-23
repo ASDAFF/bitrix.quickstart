@@ -1,7 +1,7 @@
 <?
 $MESS["yenisite.reformal_MODULE_NAME"] = "Reformal";
-$MESS["yenisite.reformal_MODULE_DESC"] = "Ðåôîðìàë – ýòî ïðîñòîé è ýôôåêòèâíûé
-ñïîñîá îðãàíèçàöèè îáðàòíîé ñâÿçè.";
-$MESS["yenisite.reformal_PARTNER_NAME"] = "Èíòåðíåò-àãåíòñòâî Åíèñàéò";
+$MESS["yenisite.reformal_MODULE_DESC"] = "Ð ÐµÑ„Ð¾Ñ€Ð¼Ð°Ð» â€“ ÑÑ‚Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ð¹ Ð¸ ÑÑ„Ñ„ÐµÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¹
+ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð¹ ÑÐ²ÑÐ·Ð¸.";
+$MESS["yenisite.reformal_PARTNER_NAME"] = "Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð°Ð³ÐµÐ½Ñ‚ÑÑ‚Ð²Ð¾ Ð•Ð½Ð¸ÑÐ°Ð¹Ñ‚";
 $MESS["yenisite.reformal_PARTNER_URI"] = "http://www.yenisite.ru/";
 ?>

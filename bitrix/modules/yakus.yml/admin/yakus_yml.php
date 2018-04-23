@@ -25,7 +25,7 @@ $redirect = false;
 $redirect_time_step = 10;
 $redirect_start_time = time();
 
-//сохраняем текущие настройки в ini-файл
+//СЃРѕС…СЂР°РЅСЏРµРј С‚РµРєСѓС‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё РІ ini-С„Р°Р№Р»
 if(isset($_REQUEST['SAVE']) || (isset($_REQUEST['GET_PROPS'])) || (isset($_REQUEST['step']) && isset($_REQUEST['IMPORT']))){
     $arSettings = array();
 
@@ -37,12 +37,12 @@ if(isset($_REQUEST['SAVE']) || (isset($_REQUEST['GET_PROPS'])) || (isset($_REQUE
     if($FILE_UTF_8!='Y')$FILE_UTF_8 = 'N';
     if(empty($AFTER_IMPORT_ELEMENT) || $AFTER_IMPORT_ELEMENT == '')$AFTER_IMPORT_ELEMENT = 'Q0';
 
-    $arSettings['IBLOCK_ID'] = $IBLOCK_ID; //куда импортируем
-    $arSettings['NEW_IN_SECTION'] = $NEW_IN_SECTION; //куда импортируем
-    $arSettings['SECTION_RESTRUCTURE_FROM_YML'] = $SECTION_RESTRUCTURE_FROM_YML; //если раздел с таким UR_YML_ID уже есть, то переместить его в соответствии со структурой из YML
-    $arSettings['ELEMENT_RESTRUCTURE_FROM_YML'] = $ELEMENT_RESTRUCTURE_FROM_YML; //если элемент с таким XML_ID уже есть, то переместить его в соответствии со структурой из YML
-    $arSettings['UPDATE_PICTURE'] = $UPDATE_PICTURE; //текущие картинки элемента, заменять картинками из YML
-    $arSettings['UPDATE_NAME'] = $UPDATE_NAME; //текущее название элемента, заменять названием из YML
+    $arSettings['IBLOCK_ID'] = $IBLOCK_ID; //РєСѓРґР° РёРјРїРѕСЂС‚РёСЂСѓРµРј
+    $arSettings['NEW_IN_SECTION'] = $NEW_IN_SECTION; //РєСѓРґР° РёРјРїРѕСЂС‚РёСЂСѓРµРј
+    $arSettings['SECTION_RESTRUCTURE_FROM_YML'] = $SECTION_RESTRUCTURE_FROM_YML; //РµСЃР»Рё СЂР°Р·РґРµР» СЃ С‚Р°РєРёРј UR_YML_ID СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РµРіРѕ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РёР· YML
+    $arSettings['ELEMENT_RESTRUCTURE_FROM_YML'] = $ELEMENT_RESTRUCTURE_FROM_YML; //РµСЃР»Рё СЌР»РµРјРµРЅС‚ СЃ С‚Р°РєРёРј XML_ID СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РµРіРѕ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РёР· YML
+    $arSettings['UPDATE_PICTURE'] = $UPDATE_PICTURE; //С‚РµРєСѓС‰РёРµ РєР°СЂС‚РёРЅРєРё СЌР»РµРјРµРЅС‚Р°, Р·Р°РјРµРЅСЏС‚СЊ РєР°СЂС‚РёРЅРєР°РјРё РёР· YML
+    $arSettings['UPDATE_NAME'] = $UPDATE_NAME; //С‚РµРєСѓС‰РµРµ РЅР°Р·РІР°РЅРёРµ СЌР»РµРјРµРЅС‚Р°, Р·Р°РјРµРЅСЏС‚СЊ РЅР°Р·РІР°РЅРёРµРј РёР· YML
 
     $arSettings['STRING_PROPS'] = implode('|', $STRING_PROPS);
     $arSettings['PROP_SINHR'] = $PROP_SINHR;
@@ -67,8 +67,8 @@ if(isset($_REQUEST['SAVE']) || (isset($_REQUEST['GET_PROPS'])) || (isset($_REQUE
 
 
 
-//берем настройки из ini файла
-//не понял почему не работает parse_ini_file, поэтому делаю свой разбор ini файла
+//Р±РµСЂРµРј РЅР°СЃС‚СЂРѕР№РєРё РёР· ini С„Р°Р№Р»Р°
+//РЅРµ РїРѕРЅСЏР» РїРѕС‡РµРјСѓ РЅРµ СЂР°Р±РѕС‚Р°РµС‚ parse_ini_file, РїРѕСЌС‚РѕРјСѓ РґРµР»Р°СЋ СЃРІРѕР№ СЂР°Р·Р±РѕСЂ ini С„Р°Р№Р»Р°
 $arSettingsTmp = file_get_contents($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/".$MODULE_ID."/settings/profile.ini");
 $arSettingsTmp = explode("\n", $arSettingsTmp);
 $arSettings = array();
@@ -78,12 +78,12 @@ foreach($arSettingsTmp as $setting){
     $arSettings[$setting[0]] = $setting[1];
 }
 
-$IBLOCK_ID = $arSettings['IBLOCK_ID']; //куда импортируем
+$IBLOCK_ID = $arSettings['IBLOCK_ID']; //РєСѓРґР° РёРјРїРѕСЂС‚РёСЂСѓРµРј
 $NEW_IN_SECTION = $arSettings['NEW_IN_SECTION'];
-$SECTION_RESTRUCTURE_FROM_YML = $arSettings['SECTION_RESTRUCTURE_FROM_YML']; //если раздел с таким UR_YML_ID уже есть, то переместить его в соответствии со структурой из YML
-$ELEMENT_RESTRUCTURE_FROM_YML = $arSettings['ELEMENT_RESTRUCTURE_FROM_YML']; //если элемент с таким XML_ID уже есть, то переместить его в соответствии со структурой из YML
-$UPDATE_PICTURE = $arSettings['UPDATE_PICTURE']; //текущие картинки элемента, заменять картинками из YML
-$UPDATE_NAME = $arSettings['UPDATE_NAME']; //текущее название элемента, заменять названием из YML
+$SECTION_RESTRUCTURE_FROM_YML = $arSettings['SECTION_RESTRUCTURE_FROM_YML']; //РµСЃР»Рё СЂР°Р·РґРµР» СЃ С‚Р°РєРёРј UR_YML_ID СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РµРіРѕ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РёР· YML
+$ELEMENT_RESTRUCTURE_FROM_YML = $arSettings['ELEMENT_RESTRUCTURE_FROM_YML']; //РµСЃР»Рё СЌР»РµРјРµРЅС‚ СЃ С‚Р°РєРёРј XML_ID СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РµРіРѕ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂРѕР№ РёР· YML
+$UPDATE_PICTURE = $arSettings['UPDATE_PICTURE']; //С‚РµРєСѓС‰РёРµ РєР°СЂС‚РёРЅРєРё СЌР»РµРјРµРЅС‚Р°, Р·Р°РјРµРЅСЏС‚СЊ РєР°СЂС‚РёРЅРєР°РјРё РёР· YML
+$UPDATE_NAME = $arSettings['UPDATE_NAME']; //С‚РµРєСѓС‰РµРµ РЅР°Р·РІР°РЅРёРµ СЌР»РµРјРµРЅС‚Р°, Р·Р°РјРµРЅСЏС‚СЊ РЅР°Р·РІР°РЅРёРµРј РёР· YML
 $UPDATE_MODE = $arSettings['UPDATE_MODE'];
 $FILE_UTF_8 = $arSettings['FILE_UTF_8'];
 $AFTER_IMPORT_ELEMENT = $arSettings['AFTER_IMPORT_ELEMENT'];
@@ -94,7 +94,7 @@ $LIST_PROPS = explode('|', $arSettings['LIST_PROPS']);
 $PROP_QUANTITY = $arSettings['PROP_QUANTITY'];
 
 
-$URL_FILE = $arSettings['URL_FILE']; // "/svetlomarket.xml" либо "http://svetlomarket.ru/svetlomarket.xml"
+$URL_FILE = $arSettings['URL_FILE']; // "/svetlomarket.xml" Р»РёР±Рѕ "http://svetlomarket.ru/svetlomarket.xml"
 
 if(defined('BX_UTF')){
     $charset_site = 'utf8';
@@ -124,7 +124,7 @@ if(isset($_REQUEST['GET_PROPS'])){
         </script>
         <?
         $search_props_propgerss = round($arAllPropsINI)."%";
-        if($search_props_propgerss=="0%")$search_props_propgerss = GetMessage('YAKUS_FILE_LOADED_GO_PROCESS...');//потому что если в конце первого шага 0%, значит весь первый шаг, был потрачен на закачку файла со стороннего сервера.
+        if($search_props_propgerss=="0%")$search_props_propgerss = GetMessage('YAKUS_FILE_LOADED_GO_PROCESS...');//РїРѕС‚РѕРјСѓ С‡С‚Рѕ РµСЃР»Рё РІ РєРѕРЅС†Рµ РїРµСЂРІРѕРіРѕ С€Р°РіР° 0%, Р·РЅР°С‡РёС‚ РІРµСЃСЊ РїРµСЂРІС‹Р№ С€Р°Рі, Р±С‹Р» РїРѕС‚СЂР°С‡РµРЅ РЅР° Р·Р°РєР°С‡РєСѓ С„Р°Р№Р»Р° СЃРѕ СЃС‚РѕСЂРѕРЅРЅРµРіРѕ СЃРµСЂРІРµСЂР°.
     }else{
         unset($_SESSION['LAST_POSITION_PROP']);
         $_REQUEST['STEP_GET_PROPS'] = 0;
@@ -158,9 +158,9 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
 
     $_SESSION['STEP']++;
 
-    if(strpos($URL_FILE, 'http://')===false){//если указана не ссылка на сторонний сайт
+    if(strpos($URL_FILE, 'http://')===false){//РµСЃР»Рё СѓРєР°Р·Р°РЅР° РЅРµ СЃСЃС‹Р»РєР° РЅР° СЃС‚РѕСЂРѕРЅРЅРёР№ СЃР°Р№С‚
         $URL_FILE = $_SERVER['DOCUMENT_ROOT'].$arSettings['URL_FILE'];
-    }else{//если указана ссылка на сторонний сайт, то забираем оттуда файл, сохраняем на этот сервер и далее работаем с ним
+    }else{//РµСЃР»Рё СѓРєР°Р·Р°РЅР° СЃСЃС‹Р»РєР° РЅР° СЃС‚РѕСЂРѕРЅРЅРёР№ СЃР°Р№С‚, С‚Рѕ Р·Р°Р±РёСЂР°РµРј РѕС‚С‚СѓРґР° С„Р°Р№Р», СЃРѕС…СЂР°РЅСЏРµРј РЅР° СЌС‚РѕС‚ СЃРµСЂРІРµСЂ Рё РґР°Р»РµРµ СЂР°Р±РѕС‚Р°РµРј СЃ РЅРёРј
         if(intval($_SESSION['LAST_POSITION'])==0){
 
             $sourceFileName=$URL_FILE;
@@ -184,17 +184,17 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
         $_SESSION['COUNT_OFFERS_IN_YML_FILE'] = countOffersInYMLFile($URL_FILE);
     }
 
-    // открываем файл
+    // РѕС‚РєСЂС‹РІР°РµРј С„Р°Р№Р»
     $fp = fopen($URL_FILE, "r");
-    //если шаг не первый, то смещаем указатель туда где закончился предыдущий шаг
+    //РµСЃР»Рё С€Р°Рі РЅРµ РїРµСЂРІС‹Р№, С‚Рѕ СЃРјРµС‰Р°РµРј СѓРєР°Р·Р°С‚РµР»СЊ С‚СѓРґР° РіРґРµ Р·Р°РєРѕРЅС‡РёР»СЃСЏ РїСЂРµРґС‹РґСѓС‰РёР№ С€Р°Рі
     fseek($fp, intval($_SESSION['LAST_POSITION']-1));
 
-    $data="";  // сюда собираем частями данные из файла и отправляем в разборщик xml
+    $data="";  // СЃСЋРґР° СЃРѕР±РёСЂР°РµРј С‡Р°СЃС‚СЏРјРё РґР°РЅРЅС‹Рµ РёР· С„Р°Р№Р»Р° Рё РѕС‚РїСЂР°РІР»СЏРµРј РІ СЂР°Р·Р±РѕСЂС‰РёРє xml
     $arTranslitParams = array("replace_space"=>"-","replace_other"=>"-");
-    // цикл пока не найден конец файла
+    // С†РёРєР» РїРѕРєР° РЅРµ РЅР°Р№РґРµРЅ РєРѕРЅРµС† С„Р°Р№Р»Р°
     $count = 0;
 
-    //создаем пользовательские поля, в которых будем хранить id и parentId разделов
+    //СЃРѕР·РґР°РµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ РїРѕР»СЏ, РІ РєРѕС‚РѕСЂС‹С… Р±СѓРґРµРј С…СЂР°РЅРёС‚СЊ id Рё parentId СЂР°Р·РґРµР»РѕРІ
     if(intval($_SESSION['LAST_POSITION'])==0){
         addUserPropIfNotExists('IBLOCK_'.$IBLOCK_ID.'_SECTION', 'UF_YML_ID', 'YML_ID', GetMessage('YAKUS_ID_CATEGORIES_IN_YML_FILE'), "Section ID in the YML file");
         addUserPropIfNotExists('IBLOCK_'.$IBLOCK_ID.'_SECTION', 'UF_YML_PARENT_ID', 'YML_PARENT_ID', GetMessage('YAKUS_ID_PARENT_CATEGORIES_IN_YML_FILE'), "ID of the parent section in the YML file");
@@ -205,33 +205,33 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
 
         while (!feof ($fp) and $fp && $_SESSION['STEP_NAME'] != 'NULLED_ELEMENTS')
         {
-            $simvol = fgetc($fp); // читаем один символ из файла
+            $simvol = fgetc($fp); // С‡РёС‚Р°РµРј РѕРґРёРЅ СЃРёРјРІРѕР» РёР· С„Р°Р№Р»Р°
             $count++;
-            $data .= $simvol; // добавляем этот символ к данным для отправки
+            $data .= $simvol; // РґРѕР±Р°РІР»СЏРµРј СЌС‚РѕС‚ СЃРёРјРІРѕР» Рє РґР°РЅРЅС‹Рј РґР»СЏ РѕС‚РїСЂР°РІРєРё
             $_SESSION['LAST_POSITION']++;
 
 
-            if($_SESSION['STEP_NAME'] != 'IMPORT_CATEGORIES' && strpos($data, "<categories>") > 0){ //если текущий шаг не "импорт категорий" и встрелся открывающий узел списка разделов.
+            if($_SESSION['STEP_NAME'] != 'IMPORT_CATEGORIES' && strpos($data, "<categories>") > 0){ //РµСЃР»Рё С‚РµРєСѓС‰РёР№ С€Р°Рі РЅРµ "РёРјРїРѕСЂС‚ РєР°С‚РµРіРѕСЂРёР№" Рё РІСЃС‚СЂРµР»СЃСЏ РѕС‚РєСЂС‹РІР°СЋС‰РёР№ СѓР·РµР» СЃРїРёСЃРєР° СЂР°Р·РґРµР»РѕРІ.
                 $_SESSION['STEP_NAME'] = 'IMPORT_CATEGORIES';
                 $data = "";
                 continue;
             }
 
-            if($_SESSION['STEP_NAME'] != 'IMPORT_OFFERS' && strpos($data, "<offers>") > 0){ //если текущий шаг не "импорт категорий" и встрелся открывающий узел списка разделов.
+            if($_SESSION['STEP_NAME'] != 'IMPORT_OFFERS' && strpos($data, "<offers>") > 0){ //РµСЃР»Рё С‚РµРєСѓС‰РёР№ С€Р°Рі РЅРµ "РёРјРїРѕСЂС‚ РєР°С‚РµРіРѕСЂРёР№" Рё РІСЃС‚СЂРµР»СЃСЏ РѕС‚РєСЂС‹РІР°СЋС‰РёР№ СѓР·РµР» СЃРїРёСЃРєР° СЂР°Р·РґРµР»РѕРІ.
                 $_SESSION['STEP_NAME'] = 'IMPORT_OFFERS';
                 $data = "";
                 continue;
             }
 
-            if(strpos($data, '<currency ') !== false){//встретили начало описание раздела
-                $data = '<currency '; //чтобы на всякий пожарный удалить мусор до начала узла.
+            if(strpos($data, '<currency ') !== false){//РІСЃС‚СЂРµС‚РёР»Рё РЅР°С‡Р°Р»Рѕ РѕРїРёСЃР°РЅРёРµ СЂР°Р·РґРµР»Р°
+                $data = '<currency '; //С‡С‚РѕР±С‹ РЅР° РІСЃСЏРєРёР№ РїРѕР¶Р°СЂРЅС‹Р№ СѓРґР°Р»РёС‚СЊ РјСѓСЃРѕСЂ РґРѕ РЅР°С‡Р°Р»Р° СѓР·Р»Р°.
                 while (!feof ($fp) and $fp)
                 {
                     $simvol = fgetc($fp);
                     $data .= $simvol;
                     $_SESSION['LAST_POSITION']++;
 
-                    if(strpos($data, "/>") > 0){//полностью взят узел валюты
+                    if(strpos($data, "/>") > 0){//РїРѕР»РЅРѕСЃС‚СЊСЋ РІР·СЏС‚ СѓР·РµР» РІР°Р»СЋС‚С‹
                         if($charset_site != $charset_file){
                             $data = iconv($charset_file, $charset_site, $data);
                         }
@@ -253,15 +253,15 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                         break;
                     }
                 }
-            }elseif(strpos($data, '<category ') !== false){//встретили начало описание раздела
-                $data = '<category '; //чтобы на всякий пожарный удалить мусор до начала узла.
+            }elseif(strpos($data, '<category ') !== false){//РІСЃС‚СЂРµС‚РёР»Рё РЅР°С‡Р°Р»Рѕ РѕРїРёСЃР°РЅРёРµ СЂР°Р·РґРµР»Р°
+                $data = '<category '; //С‡С‚РѕР±С‹ РЅР° РІСЃСЏРєРёР№ РїРѕР¶Р°СЂРЅС‹Р№ СѓРґР°Р»РёС‚СЊ РјСѓСЃРѕСЂ РґРѕ РЅР°С‡Р°Р»Р° СѓР·Р»Р°.
                 while (!feof ($fp) and $fp)
                 {
                     $simvol = fgetc($fp);
                     $data .= $simvol;
                     $_SESSION['LAST_POSITION']++;
 
-                    if(strpos($data, "</category>") > 0){//полностью взят узел раздела
+                    if(strpos($data, "</category>") > 0){//РїРѕР»РЅРѕСЃС‚СЊСЋ РІР·СЏС‚ СѓР·РµР» СЂР°Р·РґРµР»Р°
                         if($charset_site != $charset_file){
                             $data = iconv($charset_file, $charset_site, $data);
                         }
@@ -273,7 +273,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
 
                         $ID = 0;
                         $PARENT_ID = '';
-                        //если раздел с таким UF_XML_ID уже есть, то будем обновлять
+                        //РµСЃР»Рё СЂР°Р·РґРµР» СЃ С‚Р°РєРёРј UF_XML_ID СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ Р±СѓРґРµРј РѕР±РЅРѕРІР»СЏС‚СЊ
                         $obS = CIBlockSection::GetList(array(), array("IBLOCK_ID"=>$IBLOCK_ID, 'UF_YML_ID'=>$arXML['category']['@']['id']), false, array('ID', 'IBLOCK_SECTION_ID'));
                         if($arS = $obS->GetNext()){
                             $ID = $arS['ID'];
@@ -310,7 +310,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                                         }
                                     }
                                 }else{
-                                    $arFields['IBLOCK_SECTION_ID']=intval($arSettings['NEW_IN_SECTION']); //это папака для создания новых разделов
+                                    $arFields['IBLOCK_SECTION_ID']=intval($arSettings['NEW_IN_SECTION']); //СЌС‚Рѕ РїР°РїР°РєР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІС‹С… СЂР°Р·РґРµР»РѕРІ
                                 }
                             }
 
@@ -327,13 +327,13 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                                     }
                                 }
                             }else{
-                                $arFields['IBLOCK_SECTION_ID']=intval($arSettings['NEW_IN_SECTION']); //это папака для создания новых разделов
+                                $arFields['IBLOCK_SECTION_ID']=intval($arSettings['NEW_IN_SECTION']); //СЌС‚Рѕ РїР°РїР°РєР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІС‹С… СЂР°Р·РґРµР»РѕРІ
                             }
 
                             $ID = $bs->Add($arFields);
 
-                            //если раздел с таким кодом уже существует то добавляем символы в его код
-                            if(!$ID && $bs->LAST_ERROR == GetMessage('YAKUS_ERROR_CATEGORY_EXISTS')){ //Раздел с таким символьным кодом уже существует.<br>
+                            //РµСЃР»Рё СЂР°Р·РґРµР» СЃ С‚Р°РєРёРј РєРѕРґРѕРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ С‚Рѕ РґРѕР±Р°РІР»СЏРµРј СЃРёРјРІРѕР»С‹ РІ РµРіРѕ РєРѕРґ
+                            if(!$ID && $bs->LAST_ERROR == GetMessage('YAKUS_ERROR_CATEGORY_EXISTS')){ //Р Р°Р·РґРµР» СЃ С‚Р°РєРёРј СЃРёРјРІРѕР»СЊРЅС‹Рј РєРѕРґРѕРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.<br>
                                 while(!$ID){
                                     $arFields['CODE'] = $arFields['CODE'].'-';
                                     $ID = $bs->Add($arFields);
@@ -346,15 +346,15 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                         break;
                     }
                 }
-            }elseif(strpos($data, '<offer ') !== false){//встретили начало узла товара
-                $data = '<offer '; //чтобы на всякий пожарный удалить мусор до начала узла.
+            }elseif(strpos($data, '<offer ') !== false){//РІСЃС‚СЂРµС‚РёР»Рё РЅР°С‡Р°Р»Рѕ СѓР·Р»Р° С‚РѕРІР°СЂР°
+                $data = '<offer '; //С‡С‚РѕР±С‹ РЅР° РІСЃСЏРєРёР№ РїРѕР¶Р°СЂРЅС‹Р№ СѓРґР°Р»РёС‚СЊ РјСѓСЃРѕСЂ РґРѕ РЅР°С‡Р°Р»Р° СѓР·Р»Р°.
                 while (!feof ($fp) and $fp)
                 {
                     $simvol = fgetc($fp);
                     $data .= $simvol;
                     $_SESSION['LAST_POSITION']++;
 
-                    if(strpos($data, "</offer>") > 0){//полностью взят узел товара
+                    if(strpos($data, "</offer>") > 0){//РїРѕР»РЅРѕСЃС‚СЊСЋ РІР·СЏС‚ СѓР·РµР» С‚РѕРІР°СЂР°
                         if($charset_site != $charset_file){
                             $data = iconv($charset_file, $charset_site, $data);
                         }
@@ -381,23 +381,23 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                                 $QUANTITY = trim(str_replace(' ', '', $QUANTITY));
                             }
 
-                            if(in_array($prop['@']['name'], $LIST_PROPS)){//если свойство должно быть создано/"добавлено значение" как список
-                                //проверяем есть ли такое свойство, если нет, то создаем и устанавливаем значение. Если значения нет,то создаем и устанавливаем значение.
+                            if(in_array($prop['@']['name'], $LIST_PROPS)){//РµСЃР»Рё СЃРІРѕР№СЃС‚РІРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СЃРѕР·РґР°РЅРѕ/"РґРѕР±Р°РІР»РµРЅРѕ Р·РЅР°С‡РµРЅРёРµ" РєР°Рє СЃРїРёСЃРѕРє
+                                //РїСЂРѕРІРµСЂСЏРµРј РµСЃС‚СЊ Р»Рё С‚Р°РєРѕРµ СЃРІРѕР№СЃС‚РІРѕ, РµСЃР»Рё РЅРµС‚, С‚Рѕ СЃРѕР·РґР°РµРј Рё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ. Р•СЃР»Рё Р·РЅР°С‡РµРЅРёСЏ РЅРµС‚,С‚Рѕ СЃРѕР·РґР°РµРј Рё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ.
                                 $prop_val_id = setListValueAndCreatePropList($IBLOCK_ID, $prop['@']['name'], $code, $prop['#']);
                                 $PROPS[$code] = $prop_val_id;
-                            }elseif(in_array($prop['@']['name'], $STRING_PROPS)){//если свойство должно быть создано/"добавлено значение" как строка
+                            }elseif(in_array($prop['@']['name'], $STRING_PROPS)){//РµСЃР»Рё СЃРІРѕР№СЃС‚РІРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СЃРѕР·РґР°РЅРѕ/"РґРѕР±Р°РІР»РµРЅРѕ Р·РЅР°С‡РµРЅРёРµ" РєР°Рє СЃС‚СЂРѕРєР°
                                 CreatePropStringIfNotExist($IBLOCK_ID, $prop['@']['name'], $code);
                                 $PROPS[$code] =  $prop['#'];
                                 $arCreatedStringProperties[] = $code;
                             }
                         }
 
-                        if(in_array('ALL_OTHER', $LIST_PROPS)){//если в списке свойств, которые должны обрабатываться как тип список значение "ALL_OTHER", тогда все не строковые должны быть списковыми
+                        if(in_array('ALL_OTHER', $LIST_PROPS)){//РµСЃР»Рё РІ СЃРїРёСЃРєРµ СЃРІРѕР№СЃС‚РІ, РєРѕС‚РѕСЂС‹Рµ РґРѕР»Р¶РЅС‹ РѕР±СЂР°Р±Р°С‚С‹РІР°С‚СЊСЃСЏ РєР°Рє С‚РёРї СЃРїРёСЃРѕРє Р·РЅР°С‡РµРЅРёРµ "ALL_OTHER", С‚РѕРіРґР° РІСЃРµ РЅРµ СЃС‚СЂРѕРєРѕРІС‹Рµ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЃРїРёСЃРєРѕРІС‹РјРё
                             foreach($arXML['offer']['#']['param'] as $prop){
                                 $code = 'YML_'.strtoupper(Cutil::translit($prop['@']['name'], "ru", $arPROPTranslitParams));
 
-                                if(!in_array($code, $arCreatedStringProperties)){//если свойство не объявлено как строковое
-                                    //проверяем есть ли такое свойство, если нет, то создаем и устанавливаем значение. Если значения нет,то создаем и устанавливаем значение.
+                                if(!in_array($code, $arCreatedStringProperties)){//РµСЃР»Рё СЃРІРѕР№СЃС‚РІРѕ РЅРµ РѕР±СЉСЏРІР»РµРЅРѕ РєР°Рє СЃС‚СЂРѕРєРѕРІРѕРµ
+                                    //РїСЂРѕРІРµСЂСЏРµРј РµСЃС‚СЊ Р»Рё С‚Р°РєРѕРµ СЃРІРѕР№СЃС‚РІРѕ, РµСЃР»Рё РЅРµС‚, С‚Рѕ СЃРѕР·РґР°РµРј Рё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ. Р•СЃР»Рё Р·РЅР°С‡РµРЅРёСЏ РЅРµС‚,С‚Рѕ СЃРѕР·РґР°РµРј Рё СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ.
                                     $prop_val_id = setListValueAndCreatePropList($IBLOCK_ID, $prop['@']['name'], $code, $prop['#']);
                                     $PROPS[$code] = $prop_val_id;
                                 }
@@ -412,7 +412,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                         $ID = 0;
                         $PARENT_ID_FROM_YML = 0;
                         $code = Cutil::translit($arXML['offer']['#']['name'][0]['#'], "ru", $arTranslitParams);
-                        //если элемент с таким внешним кодом уже есть, то будем обновлять
+                        //РµСЃР»Рё СЌР»РµРјРµРЅС‚ СЃ С‚Р°РєРёРј РІРЅРµС€РЅРёРј РєРѕРґРѕРј СѓР¶Рµ РµСЃС‚СЊ, С‚Рѕ Р±СѓРґРµРј РѕР±РЅРѕРІР»СЏС‚СЊ
 
                         if(strlen($PROP_SINHR)>0){
                             $XML_ID = $PROP_SINHR_VALUE;
@@ -429,7 +429,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                         if($arE = $obE->GetNext()){
                             $ID = $arE['ID'];
                             $CUR_PARENT_ID = $arE['IBLOCK_SECTION_ID'];
-                        }else{//vamsvet (дибилоиды) иногда изменяют в yml файле id офферов. Получается что такого товара нет, хотя он есть. Для такого случая проверяем еще и по символьному коду. Лишь бы названия не меняли.
+                        }else{//vamsvet (РґРёР±РёР»РѕРёРґС‹) РёРЅРѕРіРґР° РёР·РјРµРЅСЏСЋС‚ РІ yml С„Р°Р№Р»Рµ id РѕС„С„РµСЂРѕРІ. РџРѕР»СѓС‡Р°РµС‚СЃСЏ С‡С‚Рѕ С‚Р°РєРѕРіРѕ С‚РѕРІР°СЂР° РЅРµС‚, С…РѕС‚СЏ РѕРЅ РµСЃС‚СЊ. Р”Р»СЏ С‚Р°РєРѕРіРѕ СЃР»СѓС‡Р°СЏ РїСЂРѕРІРµСЂСЏРµРј РµС‰Рµ Рё РїРѕ СЃРёРјРІРѕР»СЊРЅРѕРјСѓ РєРѕРґСѓ. Р›РёС€СЊ Р±С‹ РЅР°Р·РІР°РЅРёСЏ РЅРµ РјРµРЅСЏР»Рё.
                             $arFilter = array(
                                 "IBLOCK_ID" => $IBLOCK_ID,
                                 'CODE' => $code,
@@ -449,15 +449,15 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                         }
 
                         $arLoadProductArray = Array(
-                            "MODIFIED_BY"    => $USER->GetID(), // элемент изменен текущим пользователем
+                            "MODIFIED_BY"    => $USER->GetID(), // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
                             "IBLOCK_ID"      => $IBLOCK_ID,
                             "PROPERTY_VALUES"=> $PROPS,
                             "NAME" => $arXML['offer']['#']['name'][0]['#'],
-                            "ACTIVE" => "Y",            // активен
+                            "ACTIVE" => "Y",            // Р°РєС‚РёРІРµРЅ
                             "CODE" => $code,
                             "SORT" => 111,
-                            //"PREVIEW_TEXT"   => "текст для списка элементов",
-                            //"DETAIL_TEXT"    => "текст для детального просмотра",
+                            //"PREVIEW_TEXT"   => "С‚РµРєСЃС‚ РґР»СЏ СЃРїРёСЃРєР° СЌР»РµРјРµРЅС‚РѕРІ",
+                            //"DETAIL_TEXT"    => "С‚РµРєСЃС‚ РґР»СЏ РґРµС‚Р°Р»СЊРЅРѕРіРѕ РїСЂРѕСЃРјРѕС‚СЂР°",
                             "XML_ID" => $arXML['offer']['@']['id'],
                             "TMP_ID" => $_SESSION['TMP_ID'],
                         );
@@ -471,7 +471,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                             if($UPDATE_PICTURE == 'Y' || empty($arE['DETAIL_PICTURE'])){
                                 /*if(!fopen($arXML['offer']['#']['picture'][0]['#'], 'r')){
                                     $page = file_get_contents('http://vokruglamp.ru/detail/wunderlicht_torsher_wl5245/');
-                                    $start = strpos($page, '/upload/'); //первая картинка на странице в аплоаде это большое изображение товара
+                                    $start = strpos($page, '/upload/'); //РїРµСЂРІР°СЏ РєР°СЂС‚РёРЅРєР° РЅР° СЃС‚СЂР°РЅРёС†Рµ РІ Р°РїР»РѕР°РґРµ СЌС‚Рѕ Р±РѕР»СЊС€РѕРµ РёР·РѕР±СЂР°Р¶РµРЅРёРµ С‚РѕРІР°СЂР°
                                     $end = strpos($page, '"', $start);
 
                                     $url_img = 'http://vokruglamp.ru/'.substr($page, $start, $end-$start);
@@ -480,7 +480,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                                     $arLoadProductArray["DETAIL_PICTURE"] = CFile::MakeFileArray($arXML['offer']['#']['picture'][0]['#']);
                                 }*/
                                 if(!fopen($arXML['offer']['#']['image'][0]['#'], 'r')){
-                                    //значит нет такой картинки.
+                                    //Р·РЅР°С‡РёС‚ РЅРµС‚ С‚Р°РєРѕР№ РєР°СЂС‚РёРЅРєРё.
                                 }else{
                                     $arLoadProductArray["DETAIL_PICTURE"] = CFile::MakeFileArray($arXML['offer']['#']['image'][0]['#']);
                                 }
@@ -493,9 +493,9 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                             unset($arLoadProductArray["CODE"]);
                             unset($arLoadProductArray['PROPERTY_VALUES']);
 
-                            if($AFTER_IMPORT_ELEMENT_DIACTIVATED == 'A' && $QUANTITY>0){//т.е. активировать
+                            if($AFTER_IMPORT_ELEMENT_DIACTIVATED == 'A' && $QUANTITY>0){//С‚.Рµ. Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ
                                 $arLoadProductArray["ACTIVE"] = 'Y';
-                            }elseif($AFTER_IMPORT_ELEMENT_DIACTIVATED == 'N'){//т.е. ничего
+                            }elseif($AFTER_IMPORT_ELEMENT_DIACTIVATED == 'N'){//С‚.Рµ. РЅРёС‡РµРіРѕ
                                 unset($arLoadProductArray["ACTIVE"]);
                             }
 
@@ -526,7 +526,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
             }
 
 
-            //тут пошаговость
+            //С‚СѓС‚ РїРѕС€Р°РіРѕРІРѕСЃС‚СЊ
             $time_step = time()-$redirect_start_time;
             if($redirect_on_off == true && $time_step > $redirect_time_step){
                 $redirect = true;
@@ -534,10 +534,10 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
             }
         }
 
-        if($redirect == false || $_SESSION['STEP_NAME'] == 'NULLED_ELEMENTS'){//значит импорт завершен
+        if($redirect == false || $_SESSION['STEP_NAME'] == 'NULLED_ELEMENTS'){//Р·РЅР°С‡РёС‚ РёРјРїРѕСЂС‚ Р·Р°РІРµСЂС€РµРЅ
             $_SESSION['STEP_NAME'] = 'NULLED_ELEMENTS';
 
-            //действия c товарами отсутствующими в файле
+            //РґРµР№СЃС‚РІРёСЏ c С‚РѕРІР°СЂР°РјРё РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‰РёРјРё РІ С„Р°Р№Р»Рµ
             $obE = CIBlockElement::GetList(array('ID'=>'asc'), array('IBLOCK_ID'=>$IBLOCK_ID, '!TMP_ID'=>$_SESSION['TMP_ID'], '>ID'=>$_SESSION['LAST_ELEMENT_ID']), false, false, array('ID'));
             while($arE = $obE->GetNext()){
                 if($AFTER_IMPORT_ELEMENT=='Q0'){
@@ -547,7 +547,7 @@ if(isset($_REQUEST['step']) && isset($_REQUEST['IMPORT'])){
                 }
                 $_SESSION['LAST_ELEMENT_ID'] = $arE['ID'];
 
-                //тут пошаговость
+                //С‚СѓС‚ РїРѕС€Р°РіРѕРІРѕСЃС‚СЊ
                 $time_step = time()-$redirect_start_time;
                 if($redirect_on_off == true && $time_step > $redirect_time_step){
                     $redirect = true;

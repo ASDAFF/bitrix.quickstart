@@ -1,11 +1,11 @@
 <?
 /**
  *
- * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ.
- * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
  *
  */
  
-$MESS ['WZ_DESCRIPTION_TITLE'] = 'Ìàñòåð ïîëó÷åíèÿ àäðåñà ñêðèïòà äëÿ ñèñòåìû OnlineDengi';
-$MESS ['WZ_DESCRIPTION_DESCRIPTION'] = 'Ìàñòåð ïîìîæåò ïîëó÷èòü àäðåñ ñêðèïòà, ïðèíèìàþùåãî çàïðîñ íà çà÷èñëåíèå ñðåäñòâ â ñèñòåìå OnlineDengi.';
+$MESS ['WZ_DESCRIPTION_TITLE'] = 'ÐœÐ°ÑÑ‚ÐµÑ€ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð°Ð´Ñ€ÐµÑÐ° ÑÐºÑ€Ð¸Ð¿Ñ‚Ð° Ð´Ð»Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ OnlineDengi';
+$MESS ['WZ_DESCRIPTION_DESCRIPTION'] = 'ÐœÐ°ÑÑ‚ÐµÑ€ Ð¿Ð¾Ð¼Ð¾Ð¶ÐµÑ‚ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð°, Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ð° Ð·Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ðµ ÑÑ€ÐµÐ´ÑÑ‚Ð² Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ OnlineDengi.';
 $MESS ['WZ_DESCRIPTION_COPY'] = 'OnlineDengi';

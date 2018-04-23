@@ -1,6 +1,6 @@
 <?
-$MESS["yenisite.orphus_MODULE_NAME"] = "ORPHUS - ñîîáùèòü îá îøèáêå!";
-$MESS["yenisite.orphus_MODULE_DESC"] = "http://orphus.ru - èñïîëüçîâàíèå äëÿ âûÿâëåíèÿ îøèáîê è îïå÷àòîê ñîâîêóïíûé èíòåëëåêò ÷èòàòåëåé Âàøåãî ñàéòà";
-$MESS["yenisite.orphus_PARTNER_NAME"] = "Èíòåðíåò-àãåíòñòâî Åíèñàéò";
+$MESS["yenisite.orphus_MODULE_NAME"] = "ORPHUS - ÑÐ¾Ð¾Ð±Ñ‰Ð¸Ñ‚ÑŒ Ð¾Ð± Ð¾ÑˆÐ¸Ð±ÐºÐµ!";
+$MESS["yenisite.orphus_MODULE_DESC"] = "http://orphus.ru - Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð»Ñ Ð²Ñ‹ÑÐ²Ð»ÐµÐ½Ð¸Ñ Ð¾ÑˆÐ¸Ð±Ð¾Ðº Ð¸ Ð¾Ð¿ÐµÑ‡Ð°Ñ‚Ð¾Ðº ÑÐ¾Ð²Ð¾ÐºÑƒÐ¿Ð½Ñ‹Ð¹ Ð¸Ð½Ñ‚ÐµÐ»Ð»ÐµÐºÑ‚ Ñ‡Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð’Ð°ÑˆÐµÐ³Ð¾ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["yenisite.orphus_PARTNER_NAME"] = "Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð°Ð³ÐµÐ½Ñ‚ÑÑ‚Ð²Ð¾ Ð•Ð½Ð¸ÑÐ°Ð¹Ñ‚";
 $MESS["yenisite.orphus_PARTNER_URI"] = "http://www.yenisite.ru";
 ?>

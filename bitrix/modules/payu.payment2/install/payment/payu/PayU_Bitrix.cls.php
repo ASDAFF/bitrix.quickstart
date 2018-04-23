@@ -2,7 +2,7 @@
 
 class PayU_Bitrix
 { 
-	var $luUrl = "https://secure.payu.ru/order/lu.php", $button = "<input type='submit' class='goPayment' value='Ïåðåéòè ê îïëàòå'>", $debug = 0, $showinputs = "hidden", $isWinEncode = false, $encoding = 'windows-1251';
+	var $luUrl = "https://secure.payu.ru/order/lu.php", $button = "<input type='submit' class='goPayment' value='ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ'>", $debug = 0, $showinputs = "hidden", $isWinEncode = false, $encoding = 'windows-1251';
 	private static $Inst = false, $merchant, $key;
 	private $isEncode = false;
 

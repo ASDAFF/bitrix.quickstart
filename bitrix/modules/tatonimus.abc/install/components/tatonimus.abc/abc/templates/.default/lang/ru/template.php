@@ -1,3 +1,3 @@
 <?
-$MESS["TABC_EMPTY_LIST"] = "Ñïèñîê ïóñò";
+$MESS["TABC_EMPTY_LIST"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿ÑƒÑÑ‚";
 ?>

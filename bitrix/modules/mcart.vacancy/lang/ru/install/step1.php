@@ -1,6 +1,6 @@
 <?
-$MESS['VACANCY_IS_NEED_CREATE_IBLOCK'] = "Èíôîáëîê Âàêàíñèè:";
-$MESS['VACANCY_CREATE_IBLOCK'] = 'ñîçäàòü';
-$MESS['VACANCY_SELECT_IBLOCK'] = 'âûáðàòü èç ñóùåñòâóþùèõ';
-$MESS['VACANCY_CONTINUE'] = 'Äàëåå'; 
+$MESS['VACANCY_IS_NEED_CREATE_IBLOCK'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸:";
+$MESS['VACANCY_CREATE_IBLOCK'] = 'ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ';
+$MESS['VACANCY_SELECT_IBLOCK'] = 'Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð¸Ð· ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ñ…';
+$MESS['VACANCY_CONTINUE'] = 'Ð”Ð°Ð»ÐµÐµ'; 
 ?>

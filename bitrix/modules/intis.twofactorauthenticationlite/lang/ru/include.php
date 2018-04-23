@@ -1,8 +1,8 @@
 <?
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_BLOCK_ALERT'] = "Вы 3 раза ввели неверный пароль.<br />Ваш IP-адрес заблокирован на 15 минут.<br /><br />";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_UNBLOCK_TIME'] = "Время до снятия блокировки: ";
-$MESS['TWOFACTORAUTHENTIFICATION_ADMIN_ALERT'] = "Зафиксировано 3 попытки войти под логином #LOGIN#, с IP #IP#";
-$MESS['TWOFACTORAUTHENTIFICATION_SELECT_ORIGINATOR'] = "---Выберите отправителя---";
-$MESS['TWOFACTORAUTHENTIFICATION_RUR'] = " руб.";
-$MESS['TWOFACTORAUTHENTIFICATION_GET_ORIGINATOR_NAME'] = "<a href='https://my.sms16.ru/cabinet/76/originator.html' target='_blank'>Добавить имя отправителя</a>";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_BLOCK_ALERT'] = "Р’С‹ 3 СЂР°Р·Р° РІРІРµР»Рё РЅРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ.<br />Р’Р°С€ IP-Р°РґСЂРµСЃ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ РЅР° 15 РјРёРЅСѓС‚.<br /><br />";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_UNBLOCK_TIME'] = "Р’СЂРµРјСЏ РґРѕ СЃРЅСЏС‚РёСЏ Р±Р»РѕРєРёСЂРѕРІРєРё: ";
+$MESS['TWOFACTORAUTHENTIFICATION_ADMIN_ALERT'] = "Р—Р°С„РёРєСЃРёСЂРѕРІР°РЅРѕ 3 РїРѕРїС‹С‚РєРё РІРѕР№С‚Рё РїРѕРґ Р»РѕРіРёРЅРѕРј #LOGIN#, СЃ IP #IP#";
+$MESS['TWOFACTORAUTHENTIFICATION_SELECT_ORIGINATOR'] = "---Р’С‹Р±РµСЂРёС‚Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЏ---";
+$MESS['TWOFACTORAUTHENTIFICATION_RUR'] = " СЂСѓР±.";
+$MESS['TWOFACTORAUTHENTIFICATION_GET_ORIGINATOR_NAME'] = "<a href='https://my.sms16.ru/cabinet/76/originator.html' target='_blank'>Р”РѕР±Р°РІРёС‚СЊ РёРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ</a>";
 ?>

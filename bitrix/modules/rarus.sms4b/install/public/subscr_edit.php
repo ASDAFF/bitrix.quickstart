@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ðåäàêòèðîâàíèå ïîäïèñêè");
+$APPLICATION->SetTitle("Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸");
 ?><?$APPLICATION->IncludeComponent("rarus.sms4b:subscribe.edit", ".default", Array(
 	"SHOW_HIDDEN"	=>	"N",
 	"SHOW_POST_FORM"	=>	"Y",

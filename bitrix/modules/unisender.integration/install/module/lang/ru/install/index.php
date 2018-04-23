@@ -1,6 +1,6 @@
 <?
 $MESS ['UNISENDER_MODULE_NAME'] = "UniSender";
-$MESS ['UNISENDER_MODULE_DESCRIPTION'] = "Ìîäóëü ýêñïîðòà ïîëüçîâàòåëåé ñàéòà â ñïèñîê ïîäïèñ÷èêîâ UniSender.";
-$MESS ['UNISENDER_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ UniSender";
-$MESS ['UNISENDER_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ UniSender";
+$MESS ['UNISENDER_MODULE_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ÑÐ°Ð¹Ñ‚Ð° Ð² ÑÐ¿Ð¸ÑÐ¾Ðº Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ¾Ð² UniSender.";
+$MESS ['UNISENDER_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ UniSender";
+$MESS ['UNISENDER_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ UniSender";
 ?>

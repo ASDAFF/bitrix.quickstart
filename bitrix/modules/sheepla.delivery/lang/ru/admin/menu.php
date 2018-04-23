@@ -1,5 +1,5 @@
 <?
 if(LANG_CHARSET){ header('Content-Type: text/html; charset='.LANG_CHARSET); }
 global $MESS;
-$MESS ['SHEEPLA_DETAILS'] = "Sheepla äîñòàâêè";
+$MESS ['SHEEPLA_DETAILS'] = "Sheepla Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
 ?>

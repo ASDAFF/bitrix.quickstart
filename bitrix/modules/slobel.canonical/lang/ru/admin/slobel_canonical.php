@@ -1,21 +1,21 @@
 <?
-$MESS["MODULE_STEP1"] = "Ñïèñîê óñëîâèé";
-$MESS["slobel_save_error"] = "Îøèáêà èçìåíåíèÿ çàïèñè:";
-$MESS["slobel_no_canonical"] = "Óñëîâèå äëÿ áàçîâîãî àäðåñà íå íàéäåíî";
-$MESS["slobel_del_err"] = "Íåâîçìîæíî óäàëèòü óñëîâèå.";
-$MESS["slobel_nav"] = "Óñëîâèÿ";
-$MESS["slobel_act"] = "Àêòèâíîñòü";
-$MESS["slobel_rule"] = "Ïðàâèëî";
-$MESS["slobel_base"] = "Áàçîâàÿ ñòðàíèöà";
-$MESS["slobel_file"] = "Ñòðàíèöà";
+$MESS["MODULE_STEP1"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹";
+$MESS["slobel_save_error"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸:";
+$MESS["slobel_no_canonical"] = "Ð£ÑÐ»Ð¾Ð²Ð¸Ðµ Ð´Ð»Ñ Ð±Ð°Ð·Ð¾Ð²Ð¾Ð³Ð¾ Ð°Ð´Ñ€ÐµÑÐ° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾";
+$MESS["slobel_del_err"] = "ÐÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ ÑƒÑÐ»Ð¾Ð²Ð¸Ðµ.";
+$MESS["slobel_nav"] = "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ";
+$MESS["slobel_act"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["slobel_rule"] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð¾";
+$MESS["slobel_base"] = "Ð‘Ð°Ð·Ð¾Ð²Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°";
+$MESS["slobel_file"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°";
 
-$MESS["slobel_edit"] = "Èçìåíèòü";
-$MESS["slobel_del"] = "Óäàëèòü";
-$MESS["slobel_del_conf"] = "Óäàëèòü óñëîâèå?";
+$MESS["slobel_edit"] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+$MESS["slobel_del"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS["slobel_del_conf"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑƒÑÐ»Ð¾Ð²Ð¸Ðµ?";
 
-$MESS["FILE_ALL"] = "Âñå";
-$MESS["BASE_MAIN"] = "Ãëàâíàÿ";
-$MESS["BASE_THIS"] = "Òåêóùàÿ";
+$MESS["FILE_ALL"] = "Ð’ÑÐµ";
+$MESS["BASE_MAIN"] = "Ð“Ð»Ð°Ð²Ð½Ð°Ñ";
+$MESS["BASE_THIS"] = "Ð¢ÐµÐºÑƒÑ‰Ð°Ñ";
 
-$MESS["BTN_ADD"] = "Äîáàâèòü";
+$MESS["BTN_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
 ?>

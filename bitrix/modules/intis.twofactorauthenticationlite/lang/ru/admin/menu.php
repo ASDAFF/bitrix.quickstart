@@ -1,4 +1,4 @@
 <?
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_MENU_TITLE'] = "Äâóõôàêòîðíàÿ àâòîðèçàöèÿ";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_MENU_BLOCKLIST'] = "Çàáëîêèðîâàííûå IP";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_MENU_TITLE'] = "Ð”Ð²ÑƒÑ…Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_MENU_BLOCKLIST'] = "Ð—Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ IP";
 ?>

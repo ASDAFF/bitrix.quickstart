@@ -19,7 +19,7 @@ if (empty($API_KEY))
 	echo "<span class=\"errortext\">".GetMessage("UNI_API_KEY_EMPTY", array("#MODULE_ID#"=>$module_id))."</span>";
 }
 else
-{	
+{
 	$API = new UniAPI($API_KEY);
 	if (($lists = $API->getLists())!==false)
 	{
@@ -99,7 +99,7 @@ else
 							</td>
 						</tr>
 						<tr>
-							<td><?=GetMessage("UNI_FIELD_OTCH")?></dtd>
+							<td><?=GetMessage("UNI_FIELD_OTCH")?></td>
 							<td>
 							<select name="otch" class="fields_group" id="otch">
 								<option value="0"><?=GetMessage("UNI_FIELDS_NOTIMPORT")?></option>

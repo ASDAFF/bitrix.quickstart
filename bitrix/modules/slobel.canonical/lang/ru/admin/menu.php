@@ -1,4 +1,4 @@
 <?
-$MESS["SLOBEL_MENU_ITEM"] = "Áàçîâûé àäðåñ";
-$MESS["SLOBEL_MENU_LIST"] = "Ñïèñîê óñëîâèé";
+$MESS["SLOBEL_MENU_ITEM"] = "Ð‘Ð°Ð·Ð¾Ð²Ñ‹Ð¹ Ð°Ð´Ñ€ÐµÑ";
+$MESS["SLOBEL_MENU_LIST"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹";
 ?>

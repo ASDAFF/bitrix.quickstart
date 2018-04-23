@@ -1,10 +1,10 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_BANKTRANSFER_TITLE']	= 'Банковский перевод';
+$MESS['PAYANYWAY_BANKTRANSFER_TITLE']	= 'Р‘Р°РЅРєРѕРІСЃРєРёР№ РїРµСЂРµРІРѕРґ';
 
-$MESS['PAW_INVOICE_CREATED_TTL']		= "Создано платежное поручение.";
-$MESS['PAW_INVOICE_ERROR_TTL']			= "Ошибка создания платежного поручения.";
-$MESS['PAW_INVOICE_CREATED']			= "<p>Операция оплаты банковским переводом создана и находится в обработке. Для завершения операции <a onclick=\"window.open('https://%payment_server%/wiretransferreceipt.htm?transactionId=%transaction%&paymentSystem.unitId=%unitid%','newwindow','1,0,0,0,0,resizable=1,scrollbars=1,width=730,height=670');return false;\" href=\"#\">распечатайте</a> бланк платежного поручения и оплатите квитанцию в любом российском банке.</p>";
+$MESS['PAW_INVOICE_CREATED_TTL']		= "РЎРѕР·РґР°РЅРѕ РїР»Р°С‚РµР¶РЅРѕРµ РїРѕСЂСѓС‡РµРЅРёРµ.";
+$MESS['PAW_INVOICE_ERROR_TTL']			= "РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ РїР»Р°С‚РµР¶РЅРѕРіРѕ РїРѕСЂСѓС‡РµРЅРёСЏ.";
+$MESS['PAW_INVOICE_CREATED']			= "<p>РћРїРµСЂР°С†РёСЏ РѕРїР»Р°С‚С‹ Р±Р°РЅРєРѕРІСЃРєРёРј РїРµСЂРµРІРѕРґРѕРј СЃРѕР·РґР°РЅР° Рё РЅР°С…РѕРґРёС‚СЃСЏ РІ РѕР±СЂР°Р±РѕС‚РєРµ. Р”Р»СЏ Р·Р°РІРµСЂС€РµРЅРёСЏ РѕРїРµСЂР°С†РёРё <a onclick=\"window.open('https://%payment_server%/wiretransferreceipt.htm?transactionId=%transaction%&paymentSystem.unitId=%unitid%','newwindow','1,0,0,0,0,resizable=1,scrollbars=1,width=730,height=670');return false;\" href=\"#\">СЂР°СЃРїРµС‡Р°С‚Р°Р№С‚Рµ</a> Р±Р»Р°РЅРє РїР»Р°С‚РµР¶РЅРѕРіРѕ РїРѕСЂСѓС‡РµРЅРёСЏ Рё РѕРїР»Р°С‚РёС‚Рµ РєРІРёС‚Р°РЅС†РёСЋ РІ Р»СЋР±РѕРј СЂРѕСЃСЃРёР№СЃРєРѕРј Р±Р°РЅРєРµ.</p>";
 
 ?>

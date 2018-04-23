@@ -1,4 +1,4 @@
 <?
-$MESS ['PRMEDIA_UNSTEP1_MOD_UNINST_OK'] = 'Модуль успешно удален';
-$MESS ['PRMEDIA_UNSTEP1_MOD_BACK'] = 'Вернуться';
+$MESS ['PRMEDIA_UNSTEP1_MOD_UNINST_OK'] = 'РњРѕРґСѓР»СЊ СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅ';
+$MESS ['PRMEDIA_UNSTEP1_MOD_BACK'] = 'Р’РµСЂРЅСѓС‚СЊСЃСЏ';
 ?>

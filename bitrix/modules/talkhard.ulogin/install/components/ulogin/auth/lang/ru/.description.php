@@ -1,3 +1,3 @@
 <?
-$MESS["TALKHARD_ULOGIN_REGISTRACIA_CEREZ_SO"] = "Ðåãèñòðàöèÿ ÷åðåç ñîöèàëüíûå ñåòè";
+$MESS["TALKHARD_ULOGIN_REGISTRACIA_CEREZ_SO"] = "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ñ‡ÐµÑ€ÐµÐ· ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐµÑ‚Ð¸";
 ?>

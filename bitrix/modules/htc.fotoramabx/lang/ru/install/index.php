@@ -1,6 +1,6 @@
 <?
-$MESS["htc.fotoramabx_MODULE_NAME"] = "Fotorama (Ôîòîðàìà äëÿ Áèòðèêñ)";
+$MESS["htc.fotoramabx_MODULE_NAME"] = "Fotorama (Ð¤Ð¾Ñ‚Ð¾Ñ€Ð°Ð¼Ð° Ð´Ð»Ñ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ)";
 $MESS["htc.fotoramabx_MODULE_DESC"] = "";
-$MESS["htc.fotoramabx_PARTNER_NAME"] = "Öåíòð Âûñîêèõ Òåõíîëîãèé";
+$MESS["htc.fotoramabx_PARTNER_NAME"] = "Ð¦ÐµÐ½Ñ‚Ñ€ Ð’Ñ‹ÑÐ¾ÐºÐ¸Ñ… Ð¢ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¹";
 $MESS["htc.fotoramabx_PARTNER_URI"] = "http://htc-cs.ru";
 ?>

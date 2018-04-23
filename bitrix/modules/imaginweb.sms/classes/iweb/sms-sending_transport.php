@@ -2,7 +2,7 @@
 class smsSendingTransport{
 	public $LOGIN = '';
 	public $PASSWORD = '';
-	///Ïðîâåðêà áàëàíñà
+	///ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð±Ð°Ð»Ð°Ð½ÑÐ°
 	function balance(){
 		return $this->get( $this->request("balance"), "account" );
 	}
@@ -52,7 +52,7 @@ class smsSendingTransport{
 		return $return;
 	}
 	
-	//îòïðàâêà ñìñ
+	//Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ° ÑÐ¼Ñ
 	//params = array (text => , source =>, datetime => , action =>, onlydelivery =>, smsid =>)
 	function send($params = array(), $phones = array()){
 		if (!isset($params["action"])) $params["action"] = "send";

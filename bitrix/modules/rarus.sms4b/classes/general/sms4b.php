@@ -1172,7 +1172,7 @@ returns ready state xml list of parameters
 			$filter["EMAIL"] = $value;
 		}
 		$userPhone = false;
-		//Указано свойство, где хранится телефон
+		//РЈРєР°Р·Р°РЅРѕ СЃРІРѕР№СЃС‚РІРѕ, РіРґРµ С…СЂР°РЅРёС‚СЃСЏ С‚РµР»РµС„РѕРЅ
 		if (strlen(trim($propertyPhone)) > 0)
 		{
 			$rsUsers = CUser::GetList(($by="ID"), ($order="asc"), $filter, array("SELECT"=>array("UF_*")));
@@ -1376,7 +1376,7 @@ returns ready state xml list of parameters
 	}
 
 	/**
-	 * @deprecated  с версии 1.1.4
+	 * @deprecated  СЃ РІРµСЂСЃРёРё 1.1.4
 	 * @param unknown_type $userID
 	 */
 	public function GetUserPhone ($userID)

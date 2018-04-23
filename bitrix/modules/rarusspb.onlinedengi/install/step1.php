@@ -1,8 +1,8 @@
 <?
 /**
  *
- * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ.
- * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
  *
  */
 
@@ -12,7 +12,7 @@ if(!check_bitrix_sessid()) {
 
 $bAlreadyInstalled = true;
 $sModuleId = 'rarusspb.onlinedengi';
-$UserPSFilesDirName = 'onlinedengi_payment'; ## ä.á. $sModuleId, íå õîðîøî, íî âñ¸æå
+$UserPSFilesDirName = 'onlinedengi_payment'; ## Ð´.Ð±. $sModuleId, Ð½Ðµ Ñ…Ð¾Ñ€Ð¾ÑˆÐ¾, Ð½Ð¾ Ð²ÑÑ‘Ð¶Ðµ
 if(empty($GLOBALS['mErrors'])) {
 	$bShowCheckbox = false;
 	?><form action="<?=$GLOBALS['APPLICATION']->GetCurPage()?>" name="<?=$sModuleId.'_install'?>"><?

@@ -65,7 +65,7 @@ if (!class_exists("DefaTools_IBProp_OptionsGrid"))
 				$ip->Update($arFields["ID"], array("NAME" => $arFields["NAME"]));
 			}
 		}
-		function SetEnums(&$arFields)	 // сохраняет значения параметров в CIBlockPropertyEnum
+		function SetEnums(&$arFields)	 // СЃРѕС…СЂР°РЅСЏРµС‚ Р·РЅР°С‡РµРЅРёСЏ РїР°СЂР°РјРµС‚СЂРѕРІ РІ CIBlockPropertyEnum
 		{
 			$arDescrip = self::GetUserTypeDescription();
 			if(!is_set($arFields, "USER_TYPE"))
@@ -122,7 +122,7 @@ if (!class_exists("DefaTools_IBProp_OptionsGrid"))
 					}
 				}
 
-				$arSettings = self::PrepareSettings(array("USER_TYPE_SETTINGS" => array())); // в USER_TYPE_SETTINGS остануться только необходимые значения
+				$arSettings = self::PrepareSettings(array("USER_TYPE_SETTINGS" => array())); // РІ USER_TYPE_SETTINGS РѕСЃС‚Р°РЅСѓС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РЅРµРѕР±С…РѕРґРёРјС‹Рµ Р·РЅР°С‡РµРЅРёСЏ
 				foreach($arSettings as $k => $v)
 					$arSettings[$k] = $arFields["USER_TYPE_SETTINGS"][$k];
 

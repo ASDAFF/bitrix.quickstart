@@ -54,7 +54,7 @@ if($POST_RIGHT >= "R"):
 		$arUserFields[] = $arRes;
 	}
 	$arGroups = array();
-	$obGroups = CGroup::GetList(($by="c_sort"), ($order="desc") ); // выбираем группы
+	$obGroups = CGroup::GetList(($by="c_sort"), ($order="desc") ); // РІС‹Р±РёСЂР°РµРј РіСЂСѓРїРїС‹
 	while($arGr = $obGroups->Fetch()) {
 		$arGroups[$arGr['ID']] = $arGr['NAME'];
 	}
@@ -133,7 +133,7 @@ if($POST_RIGHT >= "R"):
 	);
 	$tabControl = new CAdminTabControl("iwebSMSSettings", $tabs);
 	#debmes($_REQUEST);
-	// отправка сообщений
+	// РѕС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёР№
 	if($REQUEST_METHOD == "POST" && isset($_REQUEST["Send"]) && $POST_RIGHT == "W" && check_bitrix_sessid())
 	{
 		if(CModule::IncludeModule("imaginweb.sms"))
@@ -158,7 +158,7 @@ if($POST_RIGHT >= "R"):
 		}
 	}
 	
-	// отправка звонка
+	// РѕС‚РїСЂР°РІРєР° Р·РІРѕРЅРєР°
 	if($REQUEST_METHOD == "POST" && isset($_REQUEST["Send_CALL"]) && $POST_RIGHT == "W" && check_bitrix_sessid())
 	{
 		if(CModule::IncludeModule("imaginweb.sms"))
@@ -641,16 +641,16 @@ if($POST_RIGHT >= "R"):
 						<td colspan="2">&nbsp;</td>
 					</tr>
 					<tr class="heading">
-						<td colspan="2">Оповещения при регистрации пользователя (Шаблоны: #LOGIN# - Логин, #PASSWORD# - Пароль, #EMAIL# - email, #NAME# - Имя, #LAST_NAME# - Фамилия, #SECOND_NAME# - Отечество.)</td>
+						<td colspan="2">РћРїРѕРІРµС‰РµРЅРёСЏ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ (РЁР°Р±Р»РѕРЅС‹: #LOGIN# - Р›РѕРіРёРЅ, #PASSWORD# - РџР°СЂРѕР»СЊ, #EMAIL# - email, #NAME# - РРјСЏ, #LAST_NAME# - Р¤Р°РјРёР»РёСЏ, #SECOND_NAME# - РћС‚РµС‡РµСЃС‚РІРѕ.)</td>
 					</tr>
 					<tr>
-						<td width="50%" class="field-name">Регистрация пользователя<span style="color: red;">**</span></td>
+						<td width="50%" class="field-name">Р РµРіРёСЃС‚СЂР°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ<span style="color: red;">**</span></td>
 						<td width="50%">
 						    <textarea name="settings[user_register<?=$id?>]" cols="40" rows="5" wrap="SOFT"><?=COption::GetOptionString('imaginweb.sms', 'user_register'.$id) ?></textarea>
 						</td>
 					</tr>
 					<tr id="add_phone_user_register<?=$id?>" style="display: none;">
-						<td width="50%" class="field-name">Телефон<span style="color: red;">**</span></td>
+						<td width="50%" class="field-name">РўРµР»РµС„РѕРЅ<span style="color: red;">**</span></td>
 						<td width="50%">
 							<input
 								type="text"
@@ -660,13 +660,13 @@ if($POST_RIGHT >= "R"):
 						</td>
 					</tr>
 					<tr id="order_user_register_2<?=$id?>" style="display: none;">
-						<td width="50%" class="field-name">Сообщение при регистрации<span style="color: red;">**</span></td>
+						<td width="50%" class="field-name">РЎРѕРѕР±С‰РµРЅРёРµ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё<span style="color: red;">**</span></td>
 						<td width="50%">
 							<textarea name="settings[order_user_register_2<?=$id?>]" cols="40" rows="5" wrap="SOFT"><?=COption::GetOptionString('imaginweb.sms', 'order_user_register_2'.$id) ?></textarea>
 						</td>
 					</tr>
 					<tr class="heading">
-						<td colspan="2"><a class="toggle-link" href="javascript:iwebtoggle('add_phone_user_register<?=$id?>');iwebtoggle('order_user_register_2<?=$id?>');">Дополнительное сообщение при регистрации пользователя</a></td>
+						<td colspan="2"><a class="toggle-link" href="javascript:iwebtoggle('add_phone_user_register<?=$id?>');iwebtoggle('order_user_register_2<?=$id?>');">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ</a></td>
 					</tr>
 					   */?>
 				</td>
@@ -687,7 +687,7 @@ if($POST_RIGHT >= "R"):
 			</tr>
 		<? endif;?>
 		
-	<? //звонок///////////////////////////////////////////////////////////////////////////////////////////?>
+	<? //Р·РІРѕРЅРѕРє///////////////////////////////////////////////////////////////////////////////////////////?>
 	<? $tabControl->BeginNextTab() ?>
 		<tr>
 			<td colspan="2">
@@ -1020,7 +1020,7 @@ if($POST_RIGHT >= "R"):
 			</tr>
 		<?endforeach;?>
 	
-	<!-- Шлюзы -->
+	<!-- РЁР»СЋР·С‹ -->
 	
 	<? $tabControl->BeginNextTab() ?>
 

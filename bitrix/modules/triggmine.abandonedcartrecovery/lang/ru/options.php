@@ -2,20 +2,20 @@
 
 // encoding: WINDOWS-1251
 
-$MESS['triggmine_settings_title'] = 'Настройки';
-$MESS['triggmine_settings_on'] = 'Модуль вкл/выкл';
-$MESS['triggmine_settings_url'] = 'Путь к серверу (API URL)';
-$MESS['triggmine_settings_key'] = 'Ключ (API Key)';
-$MESS['triggmine_settings_save'] = 'Сохранить';
-$MESS['triggmine_settings_reset'] = 'Сбросить';
-$MESS['triggmine_cart_url'] = 'Путь к корзине';
-$MESS['triggmine_dashboard'] = 'Статистику по корзинам вы можете увидеть на <a href="http://triggmine.cloudapp.net" target="_blank">приборной доске TriggMine</a>';
-$MESS['triggmine_support'] = 'В случае проблем, <a href="http://triggmine.cloudapp.net/" target="_blank">проверьте статус вашей интеграции</a> либо обратитесь в <a href="http://triggmine.cloudapp.net/Support" target="_blank">техподдержку</a>';
-$MESS['triggmine_your_module_version'] = 'Версия модуля';
-$MESS['triggmine_your_bitrix_version'] = 'Версия Bitrix';
-$MESS['triggmine_check_updates'] = '<a href="http://marketplace.1c-bitrix.ua/solutions/triggmine.abandonedcartrecovery/" target="_blank">Узнать последнюю версия модуля на Marketplace</a>';
-$MESS['triggmine_run_check'] = 'Проверить настройки';
-$MESS['triggmine_plugin_is_ok'] = 'Модуль проверен, ошибок в настройках и функцональности не найдено.';
-$MESS['triggmine_plugin_switch_on'] = 'Включите модуль, чтобы начать работу.';
-$MESS['triggmine_plugin_is_on'] = 'Модуль TriggMine включен и работает. Статистику вы можете увидеть на <a href="http://triggmine.cloudapp.net" target="_blank">приборной доске TriggMine</a>';
+$MESS['triggmine_settings_title'] = 'РќР°СЃС‚СЂРѕР№РєРё';
+$MESS['triggmine_settings_on'] = 'РњРѕРґСѓР»СЊ РІРєР»/РІС‹РєР»';
+$MESS['triggmine_settings_url'] = 'РџСѓС‚СЊ Рє СЃРµСЂРІРµСЂСѓ (API URL)';
+$MESS['triggmine_settings_key'] = 'РљР»СЋС‡ (API Key)';
+$MESS['triggmine_settings_save'] = 'РЎРѕС…СЂР°РЅРёС‚СЊ';
+$MESS['triggmine_settings_reset'] = 'РЎР±СЂРѕСЃРёС‚СЊ';
+$MESS['triggmine_cart_url'] = 'РџСѓС‚СЊ Рє РєРѕСЂР·РёРЅРµ';
+$MESS['triggmine_dashboard'] = 'РЎС‚Р°С‚РёСЃС‚РёРєСѓ РїРѕ РєРѕСЂР·РёРЅР°Рј РІС‹ РјРѕР¶РµС‚Рµ СѓРІРёРґРµС‚СЊ РЅР° <a href="http://triggmine.cloudapp.net" target="_blank">РїСЂРёР±РѕСЂРЅРѕР№ РґРѕСЃРєРµ TriggMine</a>';
+$MESS['triggmine_support'] = 'Р’ СЃР»СѓС‡Р°Рµ РїСЂРѕР±Р»РµРј, <a href="http://triggmine.cloudapp.net/" target="_blank">РїСЂРѕРІРµСЂСЊС‚Рµ СЃС‚Р°С‚СѓСЃ РІР°С€РµР№ РёРЅС‚РµРіСЂР°С†РёРё</a> Р»РёР±Рѕ РѕР±СЂР°С‚РёС‚РµСЃСЊ РІ <a href="http://triggmine.cloudapp.net/Support" target="_blank">С‚РµС…РїРѕРґРґРµСЂР¶РєСѓ</a>';
+$MESS['triggmine_your_module_version'] = 'Р’РµСЂСЃРёСЏ РјРѕРґСѓР»СЏ';
+$MESS['triggmine_your_bitrix_version'] = 'Р’РµСЂСЃРёСЏ Bitrix';
+$MESS['triggmine_check_updates'] = '<a href="http://marketplace.1c-bitrix.ua/solutions/triggmine.abandonedcartrecovery/" target="_blank">РЈР·РЅР°С‚СЊ РїРѕСЃР»РµРґРЅСЋСЋ РІРµСЂСЃРёСЏ РјРѕРґСѓР»СЏ РЅР° Marketplace</a>';
+$MESS['triggmine_run_check'] = 'РџСЂРѕРІРµСЂРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєРё';
+$MESS['triggmine_plugin_is_ok'] = 'РњРѕРґСѓР»СЊ РїСЂРѕРІРµСЂРµРЅ, РѕС€РёР±РѕРє РІ РЅР°СЃС‚СЂРѕР№РєР°С… Рё С„СѓРЅРєС†РѕРЅР°Р»СЊРЅРѕСЃС‚Рё РЅРµ РЅР°Р№РґРµРЅРѕ.';
+$MESS['triggmine_plugin_switch_on'] = 'Р’РєР»СЋС‡РёС‚Рµ РјРѕРґСѓР»СЊ, С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ СЂР°Р±РѕС‚Сѓ.';
+$MESS['triggmine_plugin_is_on'] = 'РњРѕРґСѓР»СЊ TriggMine РІРєР»СЋС‡РµРЅ Рё СЂР°Р±РѕС‚Р°РµС‚. РЎС‚Р°С‚РёСЃС‚РёРєСѓ РІС‹ РјРѕР¶РµС‚Рµ СѓРІРёРґРµС‚СЊ РЅР° <a href="http://triggmine.cloudapp.net" target="_blank">РїСЂРёР±РѕСЂРЅРѕР№ РґРѕСЃРєРµ TriggMine</a>';
 ?>

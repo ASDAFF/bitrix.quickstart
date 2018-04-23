@@ -1,9 +1,9 @@
 <?
 /**
  *
- * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ.
- * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
  *
  */
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true) die();
-// íå äîáàâëÿòü ïàðàìåòðû!
+// Ð½Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹!

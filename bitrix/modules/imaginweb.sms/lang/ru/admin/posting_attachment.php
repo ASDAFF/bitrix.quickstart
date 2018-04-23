@@ -1,3 +1,3 @@
 <?
-$MESS["POST_ERROR_ATTACH_NOT_FOUND"] = "Вложение не найдено.";
+$MESS["POST_ERROR_ATTACH_NOT_FOUND"] = "Р’Р»РѕР¶РµРЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ.";
 ?>

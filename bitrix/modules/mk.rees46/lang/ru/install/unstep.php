@@ -1,3 +1,3 @@
 <?php
 
-$MESS['REES_MODULE_UNINSTALLED'] = 'Ìîäóëü óñïåøíî óäàëåí èç ñèñòåìû';
+$MESS['REES_MODULE_UNINSTALLED'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÐ´Ð°Ð»ÐµÐ½ Ð¸Ð· ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹';

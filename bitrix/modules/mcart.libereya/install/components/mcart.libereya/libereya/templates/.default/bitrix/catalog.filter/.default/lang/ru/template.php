@@ -1,5 +1,5 @@
 <?
-$MESS ['IBLOCK_FILTER_TITLE'] = "Ôèëüòð";
-$MESS ['IBLOCK_SET_FILTER'] = "Ôèëüòð";
-$MESS ['IBLOCK_DEL_FILTER'] = "Ñáðîñèòü";
+$MESS ['IBLOCK_FILTER_TITLE'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
+$MESS ['IBLOCK_SET_FILTER'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
+$MESS ['IBLOCK_DEL_FILTER'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
 ?>

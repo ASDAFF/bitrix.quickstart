@@ -1,3 +1,3 @@
 <?
-$MESS['SECTION_NAME'] = "Ïðåçåíòàöèÿ SMS";
+$MESS['SECTION_NAME'] = "ÐŸÑ€ÐµÐ·ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ñ SMS";
 ?>

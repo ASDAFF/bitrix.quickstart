@@ -1,18 +1,18 @@
 <?
-$MESS["mnu_sect"] = "SMS ðàññûëêè ImaginWeb";
-$MESS["mnu_posting"] = "SMS âûïóñêè";
-$MESS["mnu_posting_alt"] = "SMS ðàññûëêà âûïóñêîâ ïîäïèñ÷èêàì";
-$MESS["mnu_subscr"] = "Ïîäïèñ÷èêè SMS";
-$MESS["mnu_subscr_alt"] = "Óïðàâëåíèå íîìåðàìè ïîäïèñêè";
-$MESS["mnu_rub"] = "Ñïèñîê SMS ðàññûëîê";
-$MESS["mnu_rub_alt"] = "Óïðàâëåíèå SMS ðàññûëêàìè";
-$MESS["mnu_subscr_import"] = "Èìïîðò íîìåðîâ";
-$MESS["mnu_subscr_import_alt"] = "Èìïîðò íîìåðîâ SMS ïîäïèñêè";
-$MESS["mnu_sect_title"] = "Óïðàâëåíèå SMS ðàññûëêàìè è ïîäïèñ÷èêàìè";
-$MESS["MAIN_MENU_EVENT"] = "SMS ñîáûòèÿ";
-$MESS["MAIN_MENU_EVENT_TITLE"] = "SMS ñîáûòèÿ";
-$MESS["MAIN_MENU_TEMPLATES"] = "Øàáëîíû SMS ñîáûòèé";
-$MESS["MAIN_MENU_TEMPLATES_ALT"] = "Øàáëîíû SMS ñîáûòèé";
-$MESS["MAIN_MENU_EVENT_TYPES"] = "Òèïû SMS ñîáûòèé";
-$MESS["MAIN_MENU_EVENT_TYPES_TITLE"] = "Òèïû SMS ñîáûòèé";
+$MESS["mnu_sect"] = "SMS Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸ ImaginWeb";
+$MESS["mnu_posting"] = "SMS Ð²Ñ‹Ð¿ÑƒÑÐºÐ¸";
+$MESS["mnu_posting_alt"] = "SMS Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ° Ð²Ñ‹Ð¿ÑƒÑÐºÐ¾Ð² Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ°Ð¼";
+$MESS["mnu_subscr"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ¸ SMS";
+$MESS["mnu_subscr_alt"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð¼ÐµÑ€Ð°Ð¼Ð¸ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸";
+$MESS["mnu_rub"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº SMS Ñ€Ð°ÑÑÑ‹Ð»Ð¾Ðº";
+$MESS["mnu_rub_alt"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ SMS Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ°Ð¼Ð¸";
+$MESS["mnu_subscr_import"] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð²";
+$MESS["mnu_subscr_import_alt"] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð² SMS Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸";
+$MESS["mnu_sect_title"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ SMS Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ°Ð¼Ð¸ Ð¸ Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ°Ð¼Ð¸";
+$MESS["MAIN_MENU_EVENT"] = "SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ";
+$MESS["MAIN_MENU_EVENT_TITLE"] = "SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ";
+$MESS["MAIN_MENU_TEMPLATES"] = "Ð¨Ð°Ð±Ð»Ð¾Ð½Ñ‹ SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹";
+$MESS["MAIN_MENU_TEMPLATES_ALT"] = "Ð¨Ð°Ð±Ð»Ð¾Ð½Ñ‹ SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹";
+$MESS["MAIN_MENU_EVENT_TYPES"] = "Ð¢Ð¸Ð¿Ñ‹ SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹";
+$MESS["MAIN_MENU_EVENT_TYPES_TITLE"] = "Ð¢Ð¸Ð¿Ñ‹ SMS ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹";
 ?>

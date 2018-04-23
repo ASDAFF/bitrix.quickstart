@@ -505,7 +505,7 @@ $context->Show();
             <input type="button" id="wda_submit" class="adm-btn-green" value="<?= GetMessage('WDA_ADMIN_SUBMIT'); ?>"/>
             <input type="button" id="wda_save_profile" value="<?= GetMessage('WDA_ADMIN_SAVE_PROFILE'); ?>" style="float:right"/>
             <span id="wda_progressbar"><span class="wda_bar"></span><span class="wda_text"></span></span>
-            <img src="http://www.webdebug.ru/_res/<?= $ModuleID; ?>/<?= $ModuleID; ?>.img" alt="" width="0" height="0" style="visibility:hidden"/>
+            
             <input type="button" id="wda_cancel" value="<?= GetMessage('WDA_ADMIN_CANCEL'); ?>"/>
             <div style="margin-top:8px;">
                 <?= GetMessage('WDA_ADMIN_BACKUP_NOTICE'); ?>

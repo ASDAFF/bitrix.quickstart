@@ -1,58 +1,116 @@
-<?
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_1'] = "WebMoney WMZ";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_2'] = "WebMoney WMR";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_3'] = "WebMoney WME";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_4'] = "WebMoney WMB";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_5'] = "WebMoney WMU";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_6'] = "WebMoney WMY";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_7'] = "ßíäåêñ.Äåíüãè";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_8'] = "Áàíêîâñêèå êàðòû";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_9'] = "RBK Money";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_10'] = "Êàðòû Webmoney";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_11'] = "SMS";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_12'] = "Êàðòû ÄåíüãèOnline";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_13'] = "MoneyMail";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_14'] = "Ëè÷íûé êàáèíåò QIWI";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_15'] = "WebCreds";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_16'] = "EasyPay";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_17'] = "Ïëàòåæè ïîëüçîâàòåëåé";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_18'] = "ÎÑÌÏ";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_19'] = "W1";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_20'] = "Platezh.Ru";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_21'] = "Îëäè-Ò";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_22'] = "Áàíêîâñêèå êàðòû (EUR)";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_23'] = "Áàíêîâñêèå êàðòû (USD)";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_24'] = "SMS Plastic Media";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_25'] = "Áèëàéí";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_26'] = "SMS Movable";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_27'] = "ExpressGold";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_28'] = "Platezh.Ru - êàðòû";
-// !!! 29 íåò
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_30'] = "IntellectMoney";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_31'] = "Z-Payment";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_32'] = "Äåíüãè@Mail.Ru";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_33'] = "iFree Ïîäïèñêè";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_34'] = "PayPal";
-$MESS['ONLINEDENGI_AVAILABLE_TYPE_35'] = "EasySoft";
-
-
-$MESS['ONLINEDENGI_FIELD_PROJECT'] = "Èäåíòèôèêàòîð ïðîåêòà";
-$MESS['ONLINEDENGI_FIELD_AMOUNT'] = "Ñóììà ïëàòåæà";
-$MESS['ONLINEDENGI_FIELD_NICKNAME'] = "Èäåíòèôèêàòîð ïåðñîíàæà, íà êîòîðîãî óõîäèò ïëàò¸æ";
-$MESS['ONLINEDENGI_FIELD_MODE_TYPE'] = "Èäåíòèôèêàòîð ñïîñîá ïëàòåæà";
-$MESS['ONLINEDENGI_FIELD_SOURCE'] = "Èäåíòèôèêàòîð âëàäåëüöà âíåøíåé ôîðìû";
-$MESS['ONLINEDENGI_FIELD_ORDER_ID'] = "Èäåíòèôèêàòîð ïëàòåæà â ÁÄ âëàäåëüöà âíåøíåé ôîðìû (åñëè åñòü, äî 30 ñèìâîëîâ)";
-$MESS['ONLINEDENGI_FIELD_COMMENT'] = "Êîììåíòàðèé ê ïëàòåæó";
-$MESS['ONLINEDENGI_FIELD_NICK_EXTRA'] = "Äîïîëíèòåëüíûå ñâåäåíèÿ";
-$MESS['ONLINEDENGI_FIELD_PAYMODE'] = "mk";
-$MESS['ONLINEDENGI_FIELD_QIWI_PHONE'] = "Íîìåð, íà êîòîðûé âûñòàâëÿåòñÿ ñ÷¸ò â ñèñòåìå QIWI (áåç âîñüì¸ðêè!)";
-$MESS['ONLINEDENGI_FIELD_LMI_PAYMER_NUMBER'] = "Íîìåð êàðòû";
-$MESS['ONLINEDENGI_FIELD_EASYPAY_CARD'] = "Íîìåð êîøåëüêà â ñèñòåìå EasyPay";
-$MESS['ONLINEDENGI_FIELD_CARD_NUM'] = "Íîìåð êàðòû";
-$MESS['ONLINEDENGI_FIELD_CARD_CODE'] = "Ïèí-êîä êàðòû";
-
-$MESS['ONLINEDENGI_ERROR_RATES_ORDER_ID'] = "Èäåíòèôèêàòîð çàêàçà çàäàí íåâåðíî";
-$MESS['ONLINEDENGI_ERROR_RATES_PAYMENT_MODE_TYPE'] = "Èäåíòèôèêàòîð ñïîñîáà îïëàòû çàäàí íåâåðíî";
-$MESS['ONLINEDENGI_ERROR_RATES_RATE_VALUE'] = "Êóðñ âàëþòû îïëàòû çàäàí íåâåðíî";
-$MESS['ONLINEDENGI_ERROR_RATES_FIELDS_EMPTY'] = "Íåò äàííûõ äëÿ ñîõðàíåíèÿ";
-
+<?
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_1'] = "WebMoney WMZ";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_2'] = "WebMoney WMR";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_3'] = "WebMoney WME";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_4'] = "WebMoney WMB";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_5'] = "WebMoney WMU";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_6'] = "WebMoney WMY";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_7'] = "Ð¯Ð½Ð´ÐµÐºÑ.Ð”ÐµÐ½ÑŒÐ³Ð¸";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_8'] = "Ð‘Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_9'] = "RBK Money";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_10'] = "ÐšÐ°Ñ€Ñ‚Ñ‹ Webmoney";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_11'] = "SMS";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_12'] = "ÐšÐ°Ñ€Ñ‚Ñ‹ Ð”ÐµÐ½ÑŒÐ³Ð¸Online";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_13'] = "MoneyMail";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_14'] = "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð±Ð¸Ð½ÐµÑ‚ QIWI";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_15'] = "WebCreds";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_16'] = "EasyPay";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_17'] = "ÐŸÐ»Ð°Ñ‚ÐµÐ¶Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_18'] = "ÐžÐ¡ÐœÐŸ";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_19'] = "W1";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_20'] = "Platezh.Ru";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_21'] = "ÐžÐ»Ð´Ð¸-Ð¢";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_22'] = "Ð‘Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹ (EUR)";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_23'] = "Ð‘Ð°Ð½ÐºÐ¾Ð²ÑÐºÐ¸Ðµ ÐºÐ°Ñ€Ñ‚Ñ‹ (USD)";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_24'] = "SMS Plastic Media";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_25'] = "Ð‘Ð¸Ð»Ð°Ð¹Ð½";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_26'] = "SMS Movable";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_27'] = "ExpressGold";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_28'] = "Platezh.Ru - ÐºÐ°Ñ€Ñ‚Ñ‹";
+
+// !!! 29 Ð½ÐµÑ‚
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_30'] = "IntellectMoney";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_31'] = "Z-Payment";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_32'] = "Ð”ÐµÐ½ÑŒÐ³Ð¸@Mail.Ru";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_33'] = "iFree ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ¸";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_34'] = "PayPal";
+
+$MESS['ONLINEDENGI_AVAILABLE_TYPE_35'] = "EasySoft";
+
+
+
+
+
+$MESS['ONLINEDENGI_FIELD_PROJECT'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð°";
+
+$MESS['ONLINEDENGI_FIELD_AMOUNT'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð°";
+
+$MESS['ONLINEDENGI_FIELD_NICKNAME'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿ÐµÑ€ÑÐ¾Ð½Ð°Ð¶Ð°, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑƒÑ…Ð¾Ð´Ð¸Ñ‚ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶";
+
+$MESS['ONLINEDENGI_FIELD_MODE_TYPE'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð°";
+
+$MESS['ONLINEDENGI_FIELD_SOURCE'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð° Ð²Ð½ÐµÑˆÐ½ÐµÐ¹ Ñ„Ð¾Ñ€Ð¼Ñ‹";
+
+$MESS['ONLINEDENGI_FIELD_ORDER_ID'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð° Ð² Ð‘Ð” Ð²Ð»Ð°Ð´ÐµÐ»ÑŒÑ†Ð° Ð²Ð½ÐµÑˆÐ½ÐµÐ¹ Ñ„Ð¾Ñ€Ð¼Ñ‹ (ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ, Ð´Ð¾ 30 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²)";
+
+$MESS['ONLINEDENGI_FIELD_COMMENT'] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ Ðº Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ñƒ";
+
+$MESS['ONLINEDENGI_FIELD_NICK_EXTRA'] = "Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ ÑÐ²ÐµÐ´ÐµÐ½Ð¸Ñ";
+
+$MESS['ONLINEDENGI_FIELD_PAYMODE'] = "mk";
+
+$MESS['ONLINEDENGI_FIELD_QIWI_PHONE'] = "ÐÐ¾Ð¼ÐµÑ€, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð²Ñ‹ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ ÑÑ‡Ñ‘Ñ‚ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ QIWI (Ð±ÐµÐ· Ð²Ð¾ÑÑŒÐ¼Ñ‘Ñ€ÐºÐ¸!)";
+
+$MESS['ONLINEDENGI_FIELD_LMI_PAYMER_NUMBER'] = "ÐÐ¾Ð¼ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ñ‹";
+
+$MESS['ONLINEDENGI_FIELD_EASYPAY_CARD'] = "ÐÐ¾Ð¼ÐµÑ€ ÐºÐ¾ÑˆÐµÐ»ÑŒÐºÐ° Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ EasyPay";
+
+$MESS['ONLINEDENGI_FIELD_CARD_NUM'] = "ÐÐ¾Ð¼ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ñ‹";
+
+$MESS['ONLINEDENGI_FIELD_CARD_CODE'] = "ÐŸÐ¸Ð½-ÐºÐ¾Ð´ ÐºÐ°Ñ€Ñ‚Ñ‹";
+
+
+
+$MESS['ONLINEDENGI_ERROR_RATES_ORDER_ID'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð·Ð°ÐºÐ°Ð·Ð° Ð·Ð°Ð´Ð°Ð½ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾";
+
+$MESS['ONLINEDENGI_ERROR_RATES_PAYMENT_MODE_TYPE'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°Ð´Ð°Ð½ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾";
+
+$MESS['ONLINEDENGI_ERROR_RATES_RATE_VALUE'] = "ÐšÑƒÑ€Ñ Ð²Ð°Ð»ÑŽÑ‚Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°Ð´Ð°Ð½ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾";
+
+$MESS['ONLINEDENGI_ERROR_RATES_FIELDS_EMPTY'] = "ÐÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ";
+
+
+

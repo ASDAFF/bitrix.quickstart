@@ -1,11 +1,11 @@
 <?php
-$MESS['CLEANTALK_LABEL_STATUS'] = 'Ìîäóëü âêëþ÷åí';
-$MESS['CLEANTALK_LABEL_KEY']    = 'Êëþ÷ äîñòóïà';
-$MESS['CLEANTALK_LABEL_NEW_USER']       = 'Çàùèòà ôîðìû ðåãèñòðàöèè';
-$MESS['CLEANTALK_LABEL_COMMENT_BLOG']   = 'Çàùèòà ôîðìû êîììåíòàðèåâ áëîãà';
-$MESS['CLEANTALK_LABEL_COMMENT_FORUM']  = 'Çàùèòà ôîðìû êîììåíòàðèåâ ôîðóìà';
-$MESS['CLEANTALK_LABEL_COMMENT_TREELIKE']  = 'Çàùèòà ôîðì Äðåâîâèäíûõ êîììåíòàðèåâ';
-$MESS['CLEANTALK_BUTTON_SAVE']  = 'Ñîõðàíèòü';
-$MESS['CLEANTALK_BUTTON_RESET'] = 'Ñáðîñèòü';
-$MESS['CLEANTALK_TITLE']        = 'Íàñòðîéêè ìîäóëÿ';
+$MESS['CLEANTALK_LABEL_STATUS'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½';
+$MESS['CLEANTALK_LABEL_KEY']    = 'ÐšÐ»ÑŽÑ‡ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°';
+$MESS['CLEANTALK_LABEL_NEW_USER']       = 'Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸';
+$MESS['CLEANTALK_LABEL_COMMENT_BLOG']   = 'Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ñ„Ð¾Ñ€Ð¼Ñ‹ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ² Ð±Ð»Ð¾Ð³Ð°';
+$MESS['CLEANTALK_LABEL_COMMENT_FORUM']  = 'Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ñ„Ð¾Ñ€Ð¼Ñ‹ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ² Ñ„Ð¾Ñ€ÑƒÐ¼Ð°';
+$MESS['CLEANTALK_LABEL_COMMENT_TREELIKE']  = 'Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ñ„Ð¾Ñ€Ð¼ Ð”Ñ€ÐµÐ²Ð¾Ð²Ð¸Ð´Ð½Ñ‹Ñ… ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²';
+$MESS['CLEANTALK_BUTTON_SAVE']  = 'Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ';
+$MESS['CLEANTALK_BUTTON_RESET'] = 'Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ';
+$MESS['CLEANTALK_TITLE']        = 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ';
 ?>

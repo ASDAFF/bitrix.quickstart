@@ -1,9 +1,9 @@
 <?
-$MESS["TABC_IBLOCK_TYPE"] = "Òèï èíôîáëîêà";
-$MESS["TABC_IBLOCK_IBLOCK"] = "Èíôîáëîê";
-$MESS["TABC_IBLOCK_PROPERTY"] = "Ñïèñîê ðàçäåëîâ èëè çíà÷åíèÿ ñâîéñòâ";
-$MESS["TABC_IBLOCK_ELEMENT"] = "Ñïèñîê ýëåìåíòîâ";
-$MESS["TABC_IBLOCK_SECTION"] = "Ñïèñîê ðàçäåëîâ ñîäåðæàùèõ ýëåìåíòû";
-$MESS["TABC_IBLOCK_REQUEST_KEY"] = "Ïàðàìåòð ñïèñêà ýëåìåíòîâ";
-$MESS["TABC_IBLOCK_FILTER"] = "Ôèëüòð";
+$MESS["TABC_IBLOCK_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["TABC_IBLOCK_IBLOCK"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["TABC_IBLOCK_PROPERTY"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð² Ð¸Ð»Ð¸ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²";
+$MESS["TABC_IBLOCK_ELEMENT"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+$MESS["TABC_IBLOCK_SECTION"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð² ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‰Ð¸Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS["TABC_IBLOCK_REQUEST_KEY"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ ÑÐ¿Ð¸ÑÐºÐ° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+$MESS["TABC_IBLOCK_FILTER"] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
 ?>

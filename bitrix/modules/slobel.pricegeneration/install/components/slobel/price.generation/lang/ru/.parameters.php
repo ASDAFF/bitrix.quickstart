@@ -1,57 +1,57 @@
 <?
-$MESS["T_IBLOCK_DESC_PRICE_LIST_ID"] = "Êîä èíôîðìàöèîííîãî áëîêà";
-$MESS["T_IBLOCK_DESC_PRICE_LIST_TYPE"] = "Òèï èíôîðìàöèîííîãî áëîêà";
-$MESS["T_IBLOCK_PROPERTY_PRICE_LIST"] = "Ñâîéñòâà";
-$MESS["T_IBLOCK_DESC_CHECK_DATES_PRICE_LIST"] = "Ïîêàçûâàòü òîëüêî àêòèâíûå íà äàííûé ìîìåíò ýëåìåíòû";
-$MESS["T_IBLOCK_CHECK_STOCK_LIST"] = "Ñ íàëè÷èåì íà ñêëàäå";
-$MESS["IBLOCK_FIELD_PRICE_LIST"] = "Ïîëÿ";
-$MESS['STYLE_PHR'] = "Îôîðìëåíèå";
-$MESS["IBLOCK_PRICES"] = "Öåíû è îñòàòêè";
-$MESS["IBLOCK_PRICE_CODE"] = "Òèï öåíû";
-$MESS['COLOR'] = "Öâåò çàãîëîâêà";
-$MESS['FONT'] = "Øðèôò";
-$MESS['FONT_SIZE'] = "Ðàçìåð øðèôòà";
-$MESS['CHECK_PARRENT_MSS'] = "Âûâîäèòü äåðåâî ðàçäåëîâ";
-$MESS['CHECK_SECTION_MSS'] = "Âûâîäèòü ðàçäåëû";
-$MESS['FILE_PHR'] = "Ôàéë";
-$MESS['FORMATED_PHR'] = "Ôîðìàò ôàéëà";
-$MESS['FORMATED_FILE'] = "Ôîðìàò ñîõðàíÿåìîãî ôàéëà";
-$MESS['FORMATED_FILE_NAME'] = "Èìÿ ôàéëà";
-$MESS['FORMATED_FILE_DIR'] = "Äèðåêòîðèÿ äëÿ ñîõðàíåíèÿ ôàéëà";
-$MESS["CP_BCSL_CACHE_GROUPS"] = "Ó÷èòûâàòü ïðàâà äîñòóïà";
-$MESS["CSV_SEPARATOR"] = "Ðàçäåëèòåëü";
-$MESS['NAME'] = "Íàçâàíèå";
-$MESS['NULL'] = "Ïóñòîå çíà÷åíèå";
-$MESS['MULTI_SEPARATOR'] = "Ðàçäåëèòåëü äëÿ ìíîæåñòâåííûõ çíà÷åíèé";
-$MESS['CURRENCY'] = "Âàëþòà";
-$MESS['MAIN_CURRENCY'] = "Ñâîå çíà÷åíèå äëÿ âàëþòû";
-$MESS['IBLOCK_CUR'] = "Èç ñâîéñòâ òèïîâ öåí";
-$MESS['RUB'] = "ðóá.";
+$MESS["T_IBLOCK_DESC_PRICE_LIST_ID"] = "ÐšÐ¾Ð´ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð±Ð»Ð¾ÐºÐ°";
+$MESS["T_IBLOCK_DESC_PRICE_LIST_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð±Ð»Ð¾ÐºÐ°";
+$MESS["T_IBLOCK_PROPERTY_PRICE_LIST"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð°";
+$MESS["T_IBLOCK_DESC_CHECK_DATES_PRICE_LIST"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ðµ Ð½Ð° Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS["T_IBLOCK_CHECK_STOCK_LIST"] = "Ð¡ Ð½Ð°Ð»Ð¸Ñ‡Ð¸ÐµÐ¼ Ð½Ð° ÑÐºÐ»Ð°Ð´Ðµ";
+$MESS["IBLOCK_FIELD_PRICE_LIST"] = "ÐŸÐ¾Ð»Ñ";
+$MESS['STYLE_PHR'] = "ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ";
+$MESS["IBLOCK_PRICES"] = "Ð¦ÐµÐ½Ñ‹ Ð¸ Ð¾ÑÑ‚Ð°Ñ‚ÐºÐ¸";
+$MESS["IBLOCK_PRICE_CODE"] = "Ð¢Ð¸Ð¿ Ñ†ÐµÐ½Ñ‹";
+$MESS['COLOR'] = "Ð¦Ð²ÐµÑ‚ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ°";
+$MESS['FONT'] = "Ð¨Ñ€Ð¸Ñ„Ñ‚";
+$MESS['FONT_SIZE'] = "Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð°";
+$MESS['CHECK_PARRENT_MSS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð´ÐµÑ€ÐµÐ²Ð¾ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS['CHECK_SECTION_MSS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS['FILE_PHR'] = "Ð¤Ð°Ð¹Ð»";
+$MESS['FORMATED_PHR'] = "Ð¤Ð¾Ñ€Ð¼Ð°Ñ‚ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS['FORMATED_FILE'] = "Ð¤Ð¾Ñ€Ð¼Ð°Ñ‚ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS['FORMATED_FILE_NAME'] = "Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS['FORMATED_FILE_DIR'] = "Ð”Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ñ Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS["CP_BCSL_CACHE_GROUPS"] = "Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
+$MESS["CSV_SEPARATOR"] = "Ð Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ";
+$MESS['NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS['NULL'] = "ÐŸÑƒÑÑ‚Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+$MESS['MULTI_SEPARATOR'] = "Ð Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ Ð´Ð»Ñ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹";
+$MESS['CURRENCY'] = "Ð’Ð°Ð»ÑŽÑ‚Ð°";
+$MESS['MAIN_CURRENCY'] = "Ð¡Ð²Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð²Ð°Ð»ÑŽÑ‚Ñ‹";
+$MESS['IBLOCK_CUR'] = "Ð˜Ð· ÑÐ²Ð¾Ð¹ÑÑ‚Ð² Ñ‚Ð¸Ð¿Ð¾Ð² Ñ†ÐµÐ½";
+$MESS['RUB'] = "Ñ€ÑƒÐ±.";
 $MESS['USD'] = "$";
-$MESS['EURO'] = "ˆ";
-$MESS['MAIN_CUR'] = "Óñòàíîâèòü ñâîþ";
+$MESS['EURO'] = "â‚¬";
+$MESS['MAIN_CUR'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐ²Ð¾ÑŽ";
 
 
-$MESS['COLS_SECTION_MSS'] = "Âûâîäèòü íàçâàíèå ðàçäåëà è åãî id â îòäåëüíûõ êîëîíêàõ";
+$MESS['COLS_SECTION_MSS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° Ð¸ ÐµÐ³Ð¾ id Ð² Ð¾Ñ‚Ð´ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÐºÐ¾Ð»Ð¾Ð½ÐºÐ°Ñ…";
 
-$MESS['SORT_ELEMENT_PHR'] = "Íàñòðîéêà ýëåìåíòîâ";
-$MESS['SORT_SECTION_PHR'] = "Íàñòðîéêà Ðàçäåëîâ";
+$MESS['SORT_ELEMENT_PHR'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+$MESS['SORT_SECTION_PHR'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
 
-$MESS['ELEMENT_SORT_BY'] = "Ïî êàêîìó ïîëþ ñîðòèðóåì ýëåìåíòû";
-$MESS['ELEMENT_SORT'] = "Ïîðÿäîê ñîðòèðîâêè ýëåìåíòîâ";
+$MESS['ELEMENT_SORT_BY'] = "ÐŸÐ¾ ÐºÐ°ÐºÐ¾Ð¼Ñƒ Ð¿Ð¾Ð»ÑŽ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS['ELEMENT_SORT'] = "ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
 
-$MESS['SECTION_SORT_BY'] = "Ïî êàêîìó ïîëþ ñîðòèðóåì ðàçäåëû";
-$MESS['SECTION_SORT'] = "Ïîðÿäîê ñîðòèðîâêè ðàçäåëîâ";
+$MESS['SECTION_SORT_BY'] = "ÐŸÐ¾ ÐºÐ°ÐºÐ¾Ð¼Ñƒ Ð¿Ð¾Ð»ÑŽ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS['SECTION_SORT'] = "ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
 
-$MESS['ASC'] = "ïî âîçðàñòàíèþ";
-$MESS['DESC'] = "ïî óáûâàíèþ";
+$MESS['ASC'] = "Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ";
+$MESS['DESC'] = "Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ";
 
-$MESS['PRICE_SORT'] = "Öåíà";
-$MESS['CURRENCY_SORT'] = "Âàëþòà";
-$MESS['SECTION_ID'] = "ID Ðàçäåëà";
-$MESS['SECTION_NAME'] = "Íàçâàíèå ðàçäåëà";
+$MESS['PRICE_SORT'] = "Ð¦ÐµÐ½Ð°";
+$MESS['CURRENCY_SORT'] = "Ð’Ð°Ð»ÑŽÑ‚Ð°";
+$MESS['SECTION_ID'] = "ID Ð Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS['SECTION_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
 
-$MESS['HEADER_MSS'] = "Âûâîäèòü çàãîëîâîê";
-$MESS['NAME_COLS_MSS'] = "Âûâîäèòü íàçâàíèÿ ñâîéñòâ";
-$MESS['FONT_COLOR'] = "Öâåò òåêñòà";
+$MESS['HEADER_MSS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº";
+$MESS['NAME_COLS_MSS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²";
+$MESS['FONT_COLOR'] = "Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð°";
 ?>

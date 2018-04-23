@@ -1,19 +1,19 @@
 <?
 /**
  * 
- * Основной класс модуля
+ * РћСЃРЅРѕРІРЅРѕР№ РєР»Р°СЃСЃ РјРѕРґСѓР»СЏ
  *
  */
 
 class CModuleMailAttaching {
-	// пути файловых вложений
+	// РїСѓС‚Рё С„Р°Р№Р»РѕРІС‹С… РІР»РѕР¶РµРЅРёР№
 	private static $arAttachFilesPath = array();
-	// имена файлов для вложений
+	// РёРјРµРЅР° С„Р°Р№Р»РѕРІ РґР»СЏ РІР»РѕР¶РµРЅРёР№
 	private static $arAttachFilesNames = array();
 
-	// кастомные типы вложений
+	// РєР°СЃС‚РѕРјРЅС‹Рµ С‚РёРїС‹ РІР»РѕР¶РµРЅРёР№
 	private static $arCustomMime = array();
-	// системные типы вложений
+	// СЃРёСЃС‚РµРјРЅС‹Рµ С‚РёРїС‹ РІР»РѕР¶РµРЅРёР№
 	private static $arSysMime = array(
 		'png' => 'image/png',
 		'jpeg' => 'image/jpeg',
@@ -48,7 +48,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Отправка письма с вложением (вызывается из custom_mail)
+	// РћС‚РїСЂР°РІРєР° РїРёСЃСЊРјР° СЃ РІР»РѕР¶РµРЅРёРµРј (РІС‹Р·С‹РІР°РµС‚СЃСЏ РёР· custom_mail)
 	//
 	public static function ExecCustomMail($sTo, $sSubject, $sMessage, $sAdditionalHeaders, $sAdditionalParameters) {
 		//
@@ -64,9 +64,9 @@ class CModuleMailAttaching {
 		}
 		
 
-		// прикрепленные файлы
+		// РїСЂРёРєСЂРµРїР»РµРЅРЅС‹Рµ С„Р°Р№Р»С‹
 		$arAttaches = CModuleMailAttaching::GetAttachesEx();
-		// очистим список прикреленных файлов
+		// РѕС‡РёСЃС‚РёРј СЃРїРёСЃРѕРє РїСЂРёРєСЂРµР»РµРЅРЅС‹С… С„Р°Р№Р»РѕРІ
 		CModuleMailAttaching::FlushAttaches();
 		if(!empty($arAttaches)) {
 			if(strpos($sAdditionalHeaders, 'Content-Type: multipart') === false) {
@@ -77,7 +77,7 @@ class CModuleMailAttaching {
 				$sBoundary = '--'.$sBoundaryName;
 				$sBoundaryClose = '--'.$sBoundaryName.'--';
 
-				// вырежем из заголовка Content-Type и все что с ним связано
+				// РІС‹СЂРµР¶РµРј РёР· Р·Р°РіРѕР»РѕРІРєР° Content-Type Рё РІСЃРµ С‡С‚Рѕ СЃ РЅРёРј СЃРІСЏР·Р°РЅРѕ
 				$iPos = strpos($sAdditionalHeaders, 'Content-Type:');
 				$sMessageType = substr($sAdditionalHeaders, $iPos);
 				$sAdditionalHeaders = substr($sAdditionalHeaders, 0, $iPos);
@@ -88,14 +88,14 @@ class CModuleMailAttaching {
 					}
 				}
 
-				// добавляем MIME-заголовки
+				// РґРѕР±Р°РІР»СЏРµРј MIME-Р·Р°РіРѕР»РѕРІРєРё
 				$sAdditionalHeaders .= 'Mime-Version: 1.0';
 				$sAdditionalHeaders .= $sCRLF;
 				$sAdditionalHeaders .= 'Content-Type: multipart/mixed;';
 				$sAdditionalHeaders .= $sCRLF;
 				$sAdditionalHeaders .= ' boundary="'.$sBoundaryName.'"';
 
-				// старый Content-Type добавляем в тело и отчеркиваем boundary
+				// СЃС‚Р°СЂС‹Р№ Content-Type РґРѕР±Р°РІР»СЏРµРј РІ С‚РµР»Рѕ Рё РѕС‚С‡РµСЂРєРёРІР°РµРј boundary
 				$sMessageType = ltrim($sMessageType, $sCRLF);
 				$sMessageType = ltrim($sMessageType, $sLF);
 				$sMessageType = str_replace($sCRLF, $sLF, $sMessageType);
@@ -108,19 +108,19 @@ class CModuleMailAttaching {
 				$sMessage .= $sMessageOriginal;
 				$sMessage .= $sLF;
 
-				// теперь прикрепляем файлы
+				// С‚РµРїРµСЂСЊ РїСЂРёРєСЂРµРїР»СЏРµРј С„Р°Р№Р»С‹
 				foreach($arAttaches as $arFileItem) {
 					$sFilePath = $arFileItem['FILE'];
 					$sFullPath = $_SERVER['DOCUMENT_ROOT'].'/'.trim($sFilePath, '/');
-					// получим правильное имя файла
+					// РїРѕР»СѓС‡РёРј РїСЂР°РІРёР»СЊРЅРѕРµ РёРјСЏ С„Р°Р№Р»Р°
 					$sFullPath = self::GetPhysicalName($sFullPath);
 					if(file_exists($sFullPath) && is_file($sFullPath)) {
 						$sFileName = $arFileItem['FILE_NAME'];
 						if(!strlen($sFileName)) {
 							//$arPathInfo = pathinfo($sFullPath);
 							//$sFileName = $arPathInfo['basename'];
-							// pathinfo для многобайтовых символов требует корректной установки локали, например: setlocale(LC_CTYPE, 'ru_RU.utf8');
-							// т.к. не все ее усанавливают, то будем использовать функцию ядра для получения имени файла
+							// pathinfo РґР»СЏ РјРЅРѕРіРѕР±Р°Р№С‚РѕРІС‹С… СЃРёРјРІРѕР»РѕРІ С‚СЂРµР±СѓРµС‚ РєРѕСЂСЂРµРєС‚РЅРѕР№ СѓСЃС‚Р°РЅРѕРІРєРё Р»РѕРєР°Р»Рё, РЅР°РїСЂРёРјРµСЂ: setlocale(LC_CTYPE, 'ru_RU.utf8');
+							// С‚.Рє. РЅРµ РІСЃРµ РµРµ СѓСЃР°РЅР°РІР»РёРІР°СЋС‚, С‚Рѕ Р±СѓРґРµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„СѓРЅРєС†РёСЋ СЏРґСЂР° РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РёРјРµРЅРё С„Р°Р№Р»Р°
 							$sFileName = GetFileName($sFullPath);
 						}
 						$sFileNameEncoded = $sFileName;
@@ -172,21 +172,21 @@ class CModuleMailAttaching {
 
 
 	//
-	// Получить системный список mime
+	// РџРѕР»СѓС‡РёС‚СЊ СЃРёСЃС‚РµРјРЅС‹Р№ СЃРїРёСЃРѕРє mime
 	//
 	public static function GetSysMimeList() {
 		return self::$arSysMime;
 	}
 
 	//
-	// Получить кастомный список mime
+	// РџРѕР»СѓС‡РёС‚СЊ РєР°СЃС‚РѕРјРЅС‹Р№ СЃРїРёСЃРѕРє mime
 	//
 	public static function GetCustomMimeList() {
 		return self::$arCustomMime;
 	}
 
 	//
-	// Получить полный список mime
+	// РџРѕР»СѓС‡РёС‚СЊ РїРѕР»РЅС‹Р№ СЃРїРёСЃРѕРє mime
 	//
 	public static function GetMimeList() {
 		if(empty(self::$arMimeVirtCache)) {
@@ -198,7 +198,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Установить кастомный список mime
+	// РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РєР°СЃС‚РѕРјРЅС‹Р№ СЃРїРёСЃРѕРє mime
 	//
 	public static function SetCustomMimeList($arMimeList) {
 		self::FlushMimeCache();
@@ -222,7 +222,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Обработчик события
+	// РћР±СЂР°Р±РѕС‚С‡РёРє СЃРѕР±С‹С‚РёСЏ
 	//
 	public static function OnBeforeEventSendHandler(&$arFields, &$arMailResult) {
 		$arAttaches = array();
@@ -257,17 +257,17 @@ class CModuleMailAttaching {
 				$sFile = trim($sFile);
 				if($mCallback && is_callable($mCallback)) {
 					//
-					// вызов callback-функций
+					// РІС‹Р·РѕРІ callback-С„СѓРЅРєС†РёР№
 					//
 					$arCurAttachedFiles = call_user_func_array($mCallback, array($sFile, $arFields, $arMailResult, $arAttaches));
 				} else {
 					//
-					// попытка определить явно заданный файл или через макрос со значением пути файла
+					// РїРѕРїС‹С‚РєР° РѕРїСЂРµРґРµР»РёС‚СЊ СЏРІРЅРѕ Р·Р°РґР°РЅРЅС‹Р№ С„Р°Р№Р» РёР»Рё С‡РµСЂРµР· РјР°РєСЂРѕСЃ СЃРѕ Р·РЅР°С‡РµРЅРёРµРј РїСѓС‚Рё С„Р°Р№Р»Р°
 					//
 					$sTmpFileMacros = trim($sFile, '#');
 					if($sFile != $sTmpFileMacros) {
 						if(array_key_exists($sTmpFileMacros, $arFields)) {
-							// если файл подставляется через макросы
+							// РµСЃР»Рё С„Р°Р№Р» РїРѕРґСЃС‚Р°РІР»СЏРµС‚СЃСЏ С‡РµСЂРµР· РјР°РєСЂРѕСЃС‹
 							$sFile = trim($arFields[$sTmpFileMacros]);
 						}
 					}
@@ -296,10 +296,10 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Возвращает функцию обратного вызова для разбора файловых полей почтового шаблона
-	// @params array $arFields - массив заполненных полей почтового шаблона
-	// @params array $arMailResult - поля почтового шаблона
-	// @params array $arAttaches - значения полей для прикрепляемых файлов
+	// Р’РѕР·РІСЂР°С‰Р°РµС‚ С„СѓРЅРєС†РёСЋ РѕР±СЂР°С‚РЅРѕРіРѕ РІС‹Р·РѕРІР° РґР»СЏ СЂР°Р·Р±РѕСЂР° С„Р°Р№Р»РѕРІС‹С… РїРѕР»РµР№ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°
+	// @params array $arFields - РјР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅРЅС‹С… РїРѕР»РµР№ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°
+	// @params array $arMailResult - РїРѕР»СЏ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°
+	// @params array $arAttaches - Р·РЅР°С‡РµРЅРёСЏ РїРѕР»РµР№ РґР»СЏ РїСЂРёРєСЂРµРїР»СЏРµРјС‹С… С„Р°Р№Р»РѕРІ
 	// @return mixed callback
 	//
 	public static function GetMessageFieldsParser($arFields, $arMailResult, $arAttaches) {
@@ -320,7 +320,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Возвращает данные почтового шаблона по его ID
+	// Р’РѕР·РІСЂР°С‰Р°РµС‚ РґР°РЅРЅС‹Рµ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РїРѕ РµРіРѕ ID
 	//
 	public static function GetEventMessageById($iEventMessageId = 0) {
 		static $arStaticCache = array();
@@ -341,7 +341,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Возвращает почтовый тип по ID почтового шаблона
+	// Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРѕС‡С‚РѕРІС‹Р№ С‚РёРї РїРѕ ID РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°
 	//
 	public static function GetEventMessageType($iEventMessageId = 0) {
 		$sReturn = '';
@@ -366,9 +366,9 @@ class CModuleMailAttaching {
 	}
 
 	protected static function TreatFilePath($sFilePath) {
-		// проверим, если передали целое число, то выполним CFile::GetFileArray()
-		// is_numeric() нельзя применять, т.к., например, число +0123.45e6 может быть именем файла,
-		// а ctype_digit() может быть отключен
+		// РїСЂРѕРІРµСЂРёРј, РµСЃР»Рё РїРµСЂРµРґР°Р»Рё С†РµР»РѕРµ С‡РёСЃР»Рѕ, С‚Рѕ РІС‹РїРѕР»РЅРёРј CFile::GetFileArray()
+		// is_numeric() РЅРµР»СЊР·СЏ РїСЂРёРјРµРЅСЏС‚СЊ, С‚.Рє., РЅР°РїСЂРёРјРµСЂ, С‡РёСЃР»Рѕ +0123.45e6 РјРѕР¶РµС‚ Р±С‹С‚СЊ РёРјРµРЅРµРј С„Р°Р№Р»Р°,
+		// Р° ctype_digit() РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РєР»СЋС‡РµРЅ
 		$sFilePath = trim($sFilePath);
 		$iFileId = intval($sFilePath);
 		if($iFileId > 0 && strlen($iFileId) == strlen($sFilePath)) {
@@ -382,7 +382,7 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Функция возвращает пути файлов и имена файлов (если были заданы доподнительно), которые будут прикрепляться к письму
+	// Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РїСѓС‚Рё С„Р°Р№Р»РѕРІ Рё РёРјРµРЅР° С„Р°Р№Р»РѕРІ (РµСЃР»Рё Р±С‹Р»Рё Р·Р°РґР°РЅС‹ РґРѕРїРѕРґРЅРёС‚РµР»СЊРЅРѕ), РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РїСЂРёРєСЂРµРїР»СЏС‚СЊСЃСЏ Рє РїРёСЃСЊРјСѓ
 	//
 	public static function GetAttachesEx() {
 		$arReturn = array();
@@ -398,16 +398,16 @@ class CModuleMailAttaching {
 	}
 
 	//
-	// Функция возвращает пути файлов, которые будут прикрепляться к письму
+	// Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РїСѓС‚Рё С„Р°Р№Р»РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РїСЂРёРєСЂРµРїР»СЏС‚СЊСЃСЏ Рє РїРёСЃСЊРјСѓ
 	//
 	public static function GetAttaches() {
 		return self::$arAttachFilesPath;
 	}
 
 	//
-	// Функция возвращает имена файлов, с которыми будут прикрепляться файлы
-	// Назначение функции: отображаемые имена в письме могут отличаться от имен файлов на сервере.
-	// Сопоставление имен осуществялется по ключам возвращаемых массивов GetAttaches() и GetAttachFilesNames()
+	// Р¤СѓРЅРєС†РёСЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РёРјРµРЅР° С„Р°Р№Р»РѕРІ, СЃ РєРѕС‚РѕСЂС‹РјРё Р±СѓРґСѓС‚ РїСЂРёРєСЂРµРїР»СЏС‚СЊСЃСЏ С„Р°Р№Р»С‹
+	// РќР°Р·РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё: РѕС‚РѕР±СЂР°Р¶Р°РµРјС‹Рµ РёРјРµРЅР° РІ РїРёСЃСЊРјРµ РјРѕРіСѓС‚ РѕС‚Р»РёС‡Р°С‚СЊСЃСЏ РѕС‚ РёРјРµРЅ С„Р°Р№Р»РѕРІ РЅР° СЃРµСЂРІРµСЂРµ.
+	// РЎРѕРїРѕСЃС‚Р°РІР»РµРЅРёРµ РёРјРµРЅ РѕСЃСѓС‰РµСЃС‚РІСЏР»РµС‚СЃСЏ РїРѕ РєР»СЋС‡Р°Рј РІРѕР·РІСЂР°С‰Р°РµРјС‹С… РјР°СЃСЃРёРІРѕРІ GetAttaches() Рё GetAttachFilesNames()
 	//
 	public static function GetAttachFilesNames() {
 		return self::$arAttachFilesNames;

@@ -1,68 +1,68 @@
 <?
-$MESS["MCART_LIBEREYA_MODULE_NAME"] = "Áèáëèîòåêà";
+$MESS["MCART_LIBEREYA_MODULE_NAME"] = "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
 $MESS["MCART_LIBEREYA_MODULE_DESC"] = "";
-$MESS["MCART_LIBEREYA_PARTNER_NAME"] = "Ýì Ñè Àðò";
+$MESS["MCART_LIBEREYA_PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
 $MESS["MCART_LIBEREYA_PARTNER_URI"] = "http://mcart.ru";
 
-$MESS['MCART_LIBEREYA_INSTALL_TITLE']				= "Óñòàíîâêà ìîäóëÿ";
-$MESS['SCOM_UNINSTALL_TITLE']				= "Óäàëåíèå ìîäóëÿ";
-$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_LIB'] 		= "Áèáëèîòåêà";
-$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_EL_NAME'] 	= "Êíèãè";
-$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_SECTIONS'] 	= "Ðàçäåëû";
-$MESS['MCART_LIBEREYA_IBLOCK_NAME_AUTHORS'] 		= "Àâòîðû";
-$MESS['MCART_LIBEREYA_IBLOCK_NAME_GANRES'] 			= "Æàíðû";
-$MESS['MCART_LIBEREYA_IBLOCK_NAME_BOOKS'] 			= "Êíèãè";
-$MESS['MCART_LIBEREYA_FINAL_MESSAGE'] = 'Äëÿ íà÷àëà ðàáîòû ñ ðåøåíèåì:
-	Ñîçäàéòå ñòðàíèöó íà êîðïîðòàëå. 
-	Äîáàâüòå íà íåé êîìïîíåíò â âèçóëüíîì ðåäàêòîðå 
-	èç ðàçäåëà "Ýì Ñè Àðò". 
-	Íàñòðîéòå ñâÿçè ñ èíôîáëîêîì "Êíèãè" òèï "Áèáëèîòåêà"';
-$MESS['MCART_LIBEREYA_ERROR_NO_BOOKS'] = 'Èíôîáëîê "Êíèãè" íå áûë óñòàíîâëåí';
-$MESS['MCART_LIBEREYA_BOOKS_EXISTS'] = 'Èíôîáëîê "Êíèãè" ñ òèïîì èíôîáëîêà "Áèáëèîòåêà" óæå ïðèñóòñòâóåò ñ ñèñòåìå. Äëÿ åãî ïåðåóñòàíîâêè ïîæàëóéñòà óäàëèòå ñóùåñòâóþùèå âåðñèè. Ôàéëû êîìïîíåíòà ïåðåçàïèñàíû.';
-$MESS['MCART_LIBEREYA_SECONDARY_IBLOCKS_EXISTS'] = 'Èíôîáëîêè "Àâòîðû" ëèáî "Æàíðû" ñ òèïîì èíôîáëîêà "Áèáëèîòåêà" óæå ïðèñóòñòâóåò ñ ñèñòåìå. óæå ïðèñóòñòâóåò ñ ñèñòåìå. Äëÿ èõ ïåðåóñòàíîâêè ïîæàëóéñòà óäàëèòå ñóùåñòâóþùèå âåðñèè.';
+$MESS['MCART_LIBEREYA_INSTALL_TITLE']				= "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS['SCOM_UNINSTALL_TITLE']				= "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_LIB'] 		= "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
+$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_EL_NAME'] 	= "ÐšÐ½Ð¸Ð³Ð¸";
+$MESS['MCART_LIBEREYA_IBLOCK_TYPE_NAME_SECTIONS'] 	= "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS['MCART_LIBEREYA_IBLOCK_NAME_AUTHORS'] 		= "ÐÐ²Ñ‚Ð¾Ñ€Ñ‹";
+$MESS['MCART_LIBEREYA_IBLOCK_NAME_GANRES'] 			= "Ð–Ð°Ð½Ñ€Ñ‹";
+$MESS['MCART_LIBEREYA_IBLOCK_NAME_BOOKS'] 			= "ÐšÐ½Ð¸Ð³Ð¸";
+$MESS['MCART_LIBEREYA_FINAL_MESSAGE'] = 'Ð”Ð»Ñ Ð½Ð°Ñ‡Ð°Ð»Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ Ñ€ÐµÑˆÐµÐ½Ð¸ÐµÐ¼:
+	Ð¡Ð¾Ð·Ð´Ð°Ð¹Ñ‚Ðµ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð½Ð° ÐºÐ¾Ñ€Ð¿Ð¾Ñ€Ñ‚Ð°Ð»Ðµ. 
+	Ð”Ð¾Ð±Ð°Ð²ÑŒÑ‚Ðµ Ð½Ð° Ð½ÐµÐ¹ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð² Ð²Ð¸Ð·ÑƒÐ»ÑŒÐ½Ð¾Ð¼ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€Ðµ 
+	Ð¸Ð· Ñ€Ð°Ð·Ð´ÐµÐ»Ð° "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚". 
+	ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹Ñ‚Ðµ ÑÐ²ÑÐ·Ð¸ Ñ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð¼ "ÐšÐ½Ð¸Ð³Ð¸" Ñ‚Ð¸Ð¿ "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°"';
+$MESS['MCART_LIBEREYA_ERROR_NO_BOOKS'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº "ÐšÐ½Ð¸Ð³Ð¸" Ð½Ðµ Ð±Ñ‹Ð» ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½';
+$MESS['MCART_LIBEREYA_BOOKS_EXISTS'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº "ÐšÐ½Ð¸Ð³Ð¸" Ñ Ñ‚Ð¸Ð¿Ð¾Ð¼ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°" ÑƒÐ¶Ðµ Ð¿Ñ€Ð¸ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ. Ð”Ð»Ñ ÐµÐ³Ð¾ Ð¿ÐµÑ€ÐµÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° ÑƒÐ´Ð°Ð»Ð¸Ñ‚Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ð²ÐµÑ€ÑÐ¸Ð¸. Ð¤Ð°Ð¹Ð»Ñ‹ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð¿ÐµÑ€ÐµÐ·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹.';
+$MESS['MCART_LIBEREYA_SECONDARY_IBLOCKS_EXISTS'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸ "ÐÐ²Ñ‚Ð¾Ñ€Ñ‹" Ð»Ð¸Ð±Ð¾ "Ð–Ð°Ð½Ñ€Ñ‹" Ñ Ñ‚Ð¸Ð¿Ð¾Ð¼ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°" ÑƒÐ¶Ðµ Ð¿Ñ€Ð¸ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ. ÑƒÐ¶Ðµ Ð¿Ñ€Ð¸ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ. Ð”Ð»Ñ Ð¸Ñ… Ð¿ÐµÑ€ÐµÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° ÑƒÐ´Ð°Ð»Ð¸Ñ‚Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ðµ Ð²ÐµÑ€ÑÐ¸Ð¸.';
 
 
 
-$MESS['ML_IBLOCK_PROP_NAME_IS_NEW']			= 'Íîâèíêà';
-$MESS['ML_IBLOCK_PROP_ENUM_YES']			= 'Äà';
-$MESS['ML_IBLOCK_PROP_NAME_GANRES']			= 'Æàíðû';
-$MESS['ML_IBLOCK_PROP_NAME_AUTHORS']		= 'Àâòîðû';
-$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE']		= 'Òèï êíèãè';
-$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE_PAPER']		= 'Áóìàæíàÿ';
-$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE_EL']			= 'Ýëåêòðîííàÿ';
-$MESS['ML_IBLOCK_PROP_NAME_BOOK_FILE']		= 'Ôàéë êíèãè';
-$MESS['ML_IBLOCK_PROP_NAME_RATING_AVG']		= 'Ðåéòèíã';
-$MESS['ML_IBLOCK_PROP_NAME_PUBLISHER']		= 'Èçäàòåëüñòâî';
-$MESS['ML_IBLOCK_PROP_NAME_SERIAL']			= 'Ñåðèÿ';
-$MESS['ML_IBLOCK_PROP_NAME_AGE_LIMITS']		= 'Âîçðàñòíûå îãðàíè÷åíèÿ';
-$MESS['ML_IBLOCK_PROP_NAME_BOOKING']		= 'Áðîíèðîâàíèå';
-$MESS['ML_IBLOCK_PROP_NAME_RETURN_MESSAGE'] = 'Ñîîáùèòü î ïîñòóïëåíèè';
-$MESS['ML_IBLOCK_PROP_NAME_READER']			= '×èòàòåëü';
-$MESS['ML_IBLOCK_PROP_NAME_vote_count']		= 'Êîëè÷åñòâî ïðîãîëîñîâàâøèõ';
-$MESS['ML_IBLOCK_PROP_NAME_vote_sum']		= 'Ñóììà îöåíîê';
-$MESS['ML_IBLOCK_PROP_NAME_rating']			= 'Ðåéòèíã';
-$MESS['ML_IBLOCK_PROP_NAME_FORUM_TOPIC_ID'] = 'Òåìà ôîðóìà äëÿ êîììåíòàðèåâ';
-$MESS['ML_IBLOCK_PROP_NAME_FORUM_MESSAGE_CNT'] = 'Êîëè÷åñòâî êîììåíòàðèåâ ê ýëåìåíòó';
-$MESS['ML_IBLOCK_PROP_NAME_BOOKING_TIME']	= 'Âðåìÿ áðîíèðîâàíèÿ';
+$MESS['ML_IBLOCK_PROP_NAME_IS_NEW']			= 'ÐÐ¾Ð²Ð¸Ð½ÐºÐ°';
+$MESS['ML_IBLOCK_PROP_ENUM_YES']			= 'Ð”Ð°';
+$MESS['ML_IBLOCK_PROP_NAME_GANRES']			= 'Ð–Ð°Ð½Ñ€Ñ‹';
+$MESS['ML_IBLOCK_PROP_NAME_AUTHORS']		= 'ÐÐ²Ñ‚Ð¾Ñ€Ñ‹';
+$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE']		= 'Ð¢Ð¸Ð¿ ÐºÐ½Ð¸Ð³Ð¸';
+$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE_PAPER']		= 'Ð‘ÑƒÐ¼Ð°Ð¶Ð½Ð°Ñ';
+$MESS['ML_IBLOCK_PROP_NAME_BOOK_TYPE_EL']			= 'Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ';
+$MESS['ML_IBLOCK_PROP_NAME_BOOK_FILE']		= 'Ð¤Ð°Ð¹Ð» ÐºÐ½Ð¸Ð³Ð¸';
+$MESS['ML_IBLOCK_PROP_NAME_RATING_AVG']		= 'Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³';
+$MESS['ML_IBLOCK_PROP_NAME_PUBLISHER']		= 'Ð˜Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ð¾';
+$MESS['ML_IBLOCK_PROP_NAME_SERIAL']			= 'Ð¡ÐµÑ€Ð¸Ñ';
+$MESS['ML_IBLOCK_PROP_NAME_AGE_LIMITS']		= 'Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚Ð½Ñ‹Ðµ Ð¾Ð³Ñ€Ð°Ð½Ð¸Ñ‡ÐµÐ½Ð¸Ñ';
+$MESS['ML_IBLOCK_PROP_NAME_BOOKING']		= 'Ð‘Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+$MESS['ML_IBLOCK_PROP_NAME_RETURN_MESSAGE'] = 'Ð¡Ð¾Ð¾Ð±Ñ‰Ð¸Ñ‚ÑŒ Ð¾ Ð¿Ð¾ÑÑ‚ÑƒÐ¿Ð»ÐµÐ½Ð¸Ð¸';
+$MESS['ML_IBLOCK_PROP_NAME_READER']			= 'Ð§Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÑŒ';
+$MESS['ML_IBLOCK_PROP_NAME_vote_count']		= 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾Ð³Ð¾Ð»Ð¾ÑÐ¾Ð²Ð°Ð²ÑˆÐ¸Ñ…';
+$MESS['ML_IBLOCK_PROP_NAME_vote_sum']		= 'Ð¡ÑƒÐ¼Ð¼Ð° Ð¾Ñ†ÐµÐ½Ð¾Ðº';
+$MESS['ML_IBLOCK_PROP_NAME_rating']			= 'Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³';
+$MESS['ML_IBLOCK_PROP_NAME_FORUM_TOPIC_ID'] = 'Ð¢ÐµÐ¼Ð° Ñ„Ð¾Ñ€ÑƒÐ¼Ð° Ð´Ð»Ñ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²';
+$MESS['ML_IBLOCK_PROP_NAME_FORUM_MESSAGE_CNT'] = 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ² Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ';
+$MESS['ML_IBLOCK_PROP_NAME_BOOKING_TIME']	= 'Ð’Ñ€ÐµÐ¼Ñ Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ';
 
-$MESS['ML_BOOK_AUTHORS_PUSHKIN']	= 'Ïóøêèí Àëåêñàíäð Ñåðãååâè÷';
-$MESS['ML_BOOK_AUTHORS_GOGOL']		= 'Ãîãîëü Íèêîëàé Âàñèëüåâè÷';
+$MESS['ML_BOOK_AUTHORS_PUSHKIN']	= 'ÐŸÑƒÑˆÐºÐ¸Ð½ ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€ Ð¡ÐµÑ€Ð³ÐµÐµÐ²Ð¸Ñ‡';
+$MESS['ML_BOOK_AUTHORS_GOGOL']		= 'Ð“Ð¾Ð³Ð¾Ð»ÑŒ ÐÐ¸ÐºÐ¾Ð»Ð°Ð¹ Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ²Ð¸Ñ‡';
 
 
-$MESS['ML_BOOK_GANRES_CLASSIC']		= 'Êëàññè÷åñêàÿ ëèòåðàòóðà';
-$MESS['ML_BOOK_GANRES_BOEVIK']		= 'Áîåâèê';
-$MESS['ML_BOOK_GANRES_PROGRAMMING'] = 'Ïðîãðàììèðîâàíèå';
-$MESS['ML_BOOK_GANRES_POEMS']		= 'Ðîìàíû';
-$MESS['ML_BOOK_GANRES_FANTASTIC']	= 'Ôàíòàñòèêà';
+$MESS['ML_BOOK_GANRES_CLASSIC']		= 'ÐšÐ»Ð°ÑÑÐ¸Ñ‡ÐµÑÐºÐ°Ñ Ð»Ð¸Ñ‚ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°';
+$MESS['ML_BOOK_GANRES_BOEVIK']		= 'Ð‘Ð¾ÐµÐ²Ð¸Ðº';
+$MESS['ML_BOOK_GANRES_PROGRAMMING'] = 'ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+$MESS['ML_BOOK_GANRES_POEMS']		= 'Ð Ð¾Ð¼Ð°Ð½Ñ‹';
+$MESS['ML_BOOK_GANRES_FANTASTIC']	= 'Ð¤Ð°Ð½Ñ‚Ð°ÑÑ‚Ð¸ÐºÐ°';
 
-$MESS['ML_BOOK_ATTRS_ROMAN_V_STIHAH'] = 'Ðîìàí â ñòèõàõ';
-$MESS['ML_BOOK_ATTRS_EVGENIY_ONEGIN'] = 'Åâãåíèé Îíåãèí';
-$MESS['ML_BOOK_ATTRS_NOS'] = 'Íîñ';
-$MESS['ML_BOOK_ATTRS_INFERNO']	= 'Èíôåðíî';
-$MESS['ML_BOOK_ATTRS_POVEST']	= 'Ïîâåñòü';
-$MESS['ML_BOOK_ATTRS_ROMAN']	= 'Ðîìàí';
-$MESS['ML_BOOK_ATTRS_PRO_GIT']	= 'Ïðî GIT';
-$MESS['ML_BOOK_ATTRS_DAN_BROWN'] = 'Äýí Áðàóí';
-$MESS['ML_BOOK_ATTRS_PRO_GIT_TEXT'] = '"Pro Git" — ýòî äîâîëüíî îáøèðíàÿ îáó÷àþùàÿ êíèãà î Git îò Ñêîòòà Øàêîíà — àêòèâíîãî ó÷àñòíèêà ðàçðàáîòêè ïðîåêòîâ Git è GitHub. Àâòîð ðàññìàòðèâàåò â òåêñòå âñåâîçìîæíûå àñïåêòû ðàáîòû ñ Git\'îì, íà÷èíàÿ ñ óñòàíîâêè ïðîãðàììû è áàçîâûõ ïðèíöèïîâ ðàáîòû äåöåíòðàëèçîâàííûõ ñèñòåì êîíòðîëÿ âåðñèé, è çàêàí÷èâàÿ ðàññìîòðåíèåì âíóòðåííåãî óñòðîéñòâà Git è ñîçäàíèåì âàëèäíûõ îáúåêòîâ â áàçå Git ñîáñòâåííûìè ðóêàìè. Íåñìîòðÿ íà äîâîëüíî îáøèðíûé ìàòåðèàë è çàòðàãèâàíèå äîâîëüíî ñïåöèôè÷åñêèõ òåì, êíèãà íàïèñàíà äîâîëüíî ïðîñòûì ÿçûêîì, ñîäåðæèò ìàññó ïðèìåðîâ è èëëþñòðàöèé, è ïîýòîìó äîëæíà áûòü ïîíÿòíà è íîâè÷êàì, òîëüêî íà÷èíàþùèì çíàêîìèòüñÿ ñ ñèñòåìàìè êîíòðîëÿ âåðñèé.';
+$MESS['ML_BOOK_ATTRS_ROMAN_V_STIHAH'] = 'Ð Ð¾Ð¼Ð°Ð½ Ð² ÑÑ‚Ð¸Ñ…Ð°Ñ…';
+$MESS['ML_BOOK_ATTRS_EVGENIY_ONEGIN'] = 'Ð•Ð²Ð³ÐµÐ½Ð¸Ð¹ ÐžÐ½ÐµÐ³Ð¸Ð½';
+$MESS['ML_BOOK_ATTRS_NOS'] = 'ÐÐ¾Ñ';
+$MESS['ML_BOOK_ATTRS_INFERNO']	= 'Ð˜Ð½Ñ„ÐµÑ€Ð½Ð¾';
+$MESS['ML_BOOK_ATTRS_POVEST']	= 'ÐŸÐ¾Ð²ÐµÑÑ‚ÑŒ';
+$MESS['ML_BOOK_ATTRS_ROMAN']	= 'Ð Ð¾Ð¼Ð°Ð½';
+$MESS['ML_BOOK_ATTRS_PRO_GIT']	= 'ÐŸÑ€Ð¾ GIT';
+$MESS['ML_BOOK_ATTRS_DAN_BROWN'] = 'Ð”ÑÐ½ Ð‘Ñ€Ð°ÑƒÐ½';
+$MESS['ML_BOOK_ATTRS_PRO_GIT_TEXT'] = '"Pro Git" â€” ÑÑ‚Ð¾ Ð´Ð¾Ð²Ð¾Ð»ÑŒÐ½Ð¾ Ð¾Ð±ÑˆÐ¸Ñ€Ð½Ð°Ñ Ð¾Ð±ÑƒÑ‡Ð°ÑŽÑ‰Ð°Ñ ÐºÐ½Ð¸Ð³Ð° Ð¾ Git Ð¾Ñ‚ Ð¡ÐºÐ¾Ñ‚Ñ‚Ð° Ð¨Ð°ÐºÐ¾Ð½Ð° â€” Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾Ð³Ð¾ ÑƒÑ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ° Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¸ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ð¾Ð² Git Ð¸ GitHub. ÐÐ²Ñ‚Ð¾Ñ€ Ñ€Ð°ÑÑÐ¼Ð°Ñ‚Ñ€Ð¸Ð²Ð°ÐµÑ‚ Ð² Ñ‚ÐµÐºÑÑ‚Ðµ Ð²ÑÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ñ‹Ðµ Ð°ÑÐ¿ÐµÐºÑ‚Ñ‹ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ Git\'Ð¾Ð¼, Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ Ñ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹ Ð¸ Ð±Ð°Ð·Ð¾Ð²Ñ‹Ñ… Ð¿Ñ€Ð¸Ð½Ñ†Ð¸Ð¿Ð¾Ð² Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð´ÐµÑ†ÐµÐ½Ñ‚Ñ€Ð°Ð»Ð¸Ð·Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹, Ð¸ Ð·Ð°ÐºÐ°Ð½Ñ‡Ð¸Ð²Ð°Ñ Ñ€Ð°ÑÑÐ¼Ð¾Ñ‚Ñ€ÐµÐ½Ð¸ÐµÐ¼ Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÐµÐ³Ð¾ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð° Git Ð¸ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸ÐµÐ¼ Ð²Ð°Ð»Ð¸Ð´Ð½Ñ‹Ñ… Ð¾Ð±ÑŠÐµÐºÑ‚Ð¾Ð² Ð² Ð±Ð°Ð·Ðµ Git ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¼Ð¸ Ñ€ÑƒÐºÐ°Ð¼Ð¸. ÐÐµÑÐ¼Ð¾Ñ‚Ñ€Ñ Ð½Ð° Ð´Ð¾Ð²Ð¾Ð»ÑŒÐ½Ð¾ Ð¾Ð±ÑˆÐ¸Ñ€Ð½Ñ‹Ð¹ Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð» Ð¸ Ð·Ð°Ñ‚Ñ€Ð°Ð³Ð¸Ð²Ð°Ð½Ð¸Ðµ Ð´Ð¾Ð²Ð¾Ð»ÑŒÐ½Ð¾ ÑÐ¿ÐµÑ†Ð¸Ñ„Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ñ‚ÐµÐ¼, ÐºÐ½Ð¸Ð³Ð° Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð° Ð´Ð¾Ð²Ð¾Ð»ÑŒÐ½Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ñ‹Ð¼ ÑÐ·Ñ‹ÐºÐ¾Ð¼, ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ Ð¼Ð°ÑÑÑƒ Ð¿Ñ€Ð¸Ð¼ÐµÑ€Ð¾Ð² Ð¸ Ð¸Ð»Ð»ÑŽÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¹, Ð¸ Ð¿Ð¾ÑÑ‚Ð¾Ð¼Ñƒ Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð¿Ð¾Ð½ÑÑ‚Ð½Ð° Ð¸ Ð½Ð¾Ð²Ð¸Ñ‡ÐºÐ°Ð¼, Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð°Ñ‡Ð¸Ð½Ð°ÑŽÑ‰Ð¸Ð¼ Ð·Ð½Ð°ÐºÐ¾Ð¼Ð¸Ñ‚ÑŒÑÑ Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°Ð¼Ð¸ ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹.';
 
 ?>

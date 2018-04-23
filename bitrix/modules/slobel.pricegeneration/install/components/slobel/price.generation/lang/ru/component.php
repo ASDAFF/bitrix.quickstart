@@ -1,10 +1,10 @@
 <?
-$MESS['T_NEWS_NEWS_NA'] = "Ðàçäåë íå íàéäåí.";
-$MESS['IBLOCK_MODULE_NOT_INSTALLED'] = "Ìîäóëü Èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
-$MESS['PRICE_TITLE'] = "Ïðàéñ-ëèñò îò ";
-$MESS['NAME'] = "Íàçâàíèå";
-$MESS['PRICE'] = "Öåíà";
-$MESS['CURRENCY'] = "Âàëþòà";
-$MESS['SECTION_ID'] = "ID Ðàçäåëà";
-$MESS['SECTION_NAME'] = "Íàçâàíèå ðàçäåëà";
+$MESS['T_NEWS_NEWS_NA'] = "Ð Ð°Ð·Ð´ÐµÐ» Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½.";
+$MESS['IBLOCK_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS['PRICE_TITLE'] = "ÐŸÑ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚ Ð¾Ñ‚ ";
+$MESS['NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS['PRICE'] = "Ð¦ÐµÐ½Ð°";
+$MESS['CURRENCY'] = "Ð’Ð°Ð»ÑŽÑ‚Ð°";
+$MESS['SECTION_ID'] = "ID Ð Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS['SECTION_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
 ?>

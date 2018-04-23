@@ -6,7 +6,7 @@ if (!$_POST) {
     $error .= 'Invalid IPN request';
 }
 
-// Ïîäêëþ÷åíèå Api Áèòðèêñà è ìîäóëé sale è êîìïîíåíòà payment
+// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Api Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑÐ° Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ð¹ sale Ð¸ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° payment
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/php_interface/include/sale_payment/payu/PayU_Bitrix.cls.php");
 
@@ -16,12 +16,12 @@ if (!CModule::IncludeModule("sale")) {
 
 $APPLICATION->IncludeComponent("bitrix:sale.order.payment", "", array());
 
-/* Îáðàáîòêà çàïðîñà */
+/* ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° */
 $order = explode('_',$_POST['REFNOEXT']);
 $error .= 'Invalid Order ID' . print_r($order, true);
 $order = CSaleOrder::getById($order['1']);
 
-/* Ïîäêëþ÷åíèå îáðàáîò÷èêà PayU */
+/* ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ° PayU */
 $PaySystem = CSalePaySystem::GetByID($order['PAY_SYSTEM_ID'], $order['PERSON_TYPE_ID'] );
 $payUParams = unserialize($PaySystem['PSA_PARAMS']);
 
@@ -33,7 +33,7 @@ $PayUOptions = array(
 
 /* @var $payU PayU_bitrix */
 
-// Ïðîâåðêà çàïðîñà ñèñòåìû PayU íà âàëèäíîñòü.
+// ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ PayU Ð½Ð° Ð²Ð°Ð»Ð¸Ð´Ð½Ð¾ÑÑ‚ÑŒ.
 $payU = PayU_Bitrix::getInst()->setOptions($PayUOptions)->IPN();
 if (!$payU->checkHash) {
     $error .= 'Invalid Signature';
@@ -72,7 +72,7 @@ if (in_array($_POST['ORDERSTATUS'], $paymentStatusSuccess)) {
 }
 
 CSaleOrder::update($order['ID'],$arField, true);
-/* Îòâåò ñèñòåìå PayU IPN */
+/* ÐžÑ‚Ð²ÐµÑ‚ ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ PayU IPN */
 
 if ($payU->checkHash) {
     echo $payU->getIPNAnswer();

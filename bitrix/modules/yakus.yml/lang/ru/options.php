@@ -1,6 +1,6 @@
 <?
-$MESS ['TC_SAVE'] = "Ñîõðàíèòü";
+$MESS ['TC_SAVE'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
 
-$MESS['YAKUS_SETTINGS_OPTION_MAIN'] = "Íàñòðîéêè èìïîðòà";
+$MESS['YAKUS_SETTINGS_OPTION_MAIN'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð°";
 
 ?>

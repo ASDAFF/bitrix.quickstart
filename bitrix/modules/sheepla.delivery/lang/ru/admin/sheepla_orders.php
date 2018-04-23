@@ -1,11 +1,11 @@
 <?
 if(LANG_CHARSET){ header('Content-Type: text/html; charset='.LANG_CHARSET); }
 global $MESS;
-$MESS ['SHEEPLA_ORDER_STATUS_NOTSENT'] = "Íå îòïðàâëåí";
-$MESS ['SHEEPLA_ORDER_STATUS_SENT'] = "Îòïðàâëåí";
-$MESS ['SHEEPLA_ORDER_STATUS_UNKNOWN'] = "Íåèâåñòíî";
-$MESS ['SHEEPLA_NO_ORDERS'] = "Çàêàçû åùå íå ñîçäàíû";
-$MESS ['SHEEPLA_ORDER_MARK_SEND'] = "Îòïðàâèòü";
-$MESS ['SHEEPLA_ORDER_MARK_RESEND'] = "Ïîâòîðíî îòïðàâèòü";
-$MESS ['SHEEPLA_ORDER_MARK_ERROR'] = "Ïîìåòèòü êàê îøèáî÷íûé";
+$MESS ['SHEEPLA_ORDER_STATUS_NOTSENT'] = "ÐÐµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½";
+$MESS ['SHEEPLA_ORDER_STATUS_SENT'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½";
+$MESS ['SHEEPLA_ORDER_STATUS_UNKNOWN'] = "ÐÐµÐ¸Ð²ÐµÑÑ‚Ð½Ð¾";
+$MESS ['SHEEPLA_NO_ORDERS'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹ ÐµÑ‰Ðµ Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð½Ñ‹";
+$MESS ['SHEEPLA_ORDER_MARK_SEND'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS ['SHEEPLA_ORDER_MARK_RESEND'] = "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS ['SHEEPLA_ORDER_MARK_ERROR'] = "ÐŸÐ¾Ð¼ÐµÑ‚Ð¸Ñ‚ÑŒ ÐºÐ°Ðº Ð¾ÑˆÐ¸Ð±Ð¾Ñ‡Ð½Ñ‹Ð¹";
 ?>

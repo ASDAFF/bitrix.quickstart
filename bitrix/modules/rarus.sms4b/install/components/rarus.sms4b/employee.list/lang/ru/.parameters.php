@@ -1,17 +1,17 @@
 <?
-$MESS ['INTR_ISL_GROUP_FILTER'] = "Ïàðàìåòðû ôèëüòðà";
-$MESS ['INTR_ISL_PARAM_DETAIL_URL'] = "Ñòðàíèöà äåòàëüíîãî ïðîñìîòðà";
-$MESS ['INTR_ISL_PARAM_FILTER_NAME'] = "Èìÿ ôèëüòðà";
-$MESS ['INTR_ISL_PARAM_FILTER_1C_USERS'] = "Âûâîäèòü òîëüêî ñèíõðîíèçèðóåìûõ ñ 1Ñ ïîëüçîâàòåëåé";
-$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY'] = "Ôèëüòð ïî ïîäðàçäåëåíèÿì";
-$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY_VALUE_Y'] = "ïðÿìîé";
-$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY_VALYE_N'] = "ðåêóðñèâíûé";
-$MESS ['INTR_ISL_PARAM_SHOW_ERROR_ON_NULL'] = "Âûâîäèòü óâåäîìëåíèå ïðè ïóñòîì ñïèñêå";
-$MESS ['INTR_ISL_PARAM_USERS_PER_PAGE'] = "Êîëè÷åñòâî ïîëüçîâàòåëåé íà ñòðàíèöó";
-$MESS ['INTR_ISL_PARAM_NAV_TITLE'] = "Ïîäïèñü ïîñòðàíè÷íîé íàâèãàöèè";
-$MESS ['INTR_ISL_PARAM_NAV_TITLE_DEFAULT'] = "Ñîòðóäíèêè";
-$MESS ['INTR_ISL_PARAM_SHOW_NAV_TOP'] = "Ïîêàçûâàòü ïîñòðàíè÷íóþ íàâèãàöèþ íàä ñïèñêîì";
-$MESS ['INTR_ISL_PARAM_SHOW_NAV_BOTTOM'] = "Ïîêàçûâàòü ïîñòðàíè÷íóþ íàâèãàöèþ ïîä ñïèñêîì";
-$MESS ['INTR_ISL_PARAM_SHOW_UNFILTERED_LIST'] = "Ïîêàçûâàòü ñïèñîê ïðè ïóñòîì ôèëüòðå";
-$MESS ['INTR_ISL_PARAM_NAME_TEMPLATE'] = "Îòîáðàæåíèå èìåíè";
+$MESS ['INTR_ISL_GROUP_FILTER'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°";
+$MESS ['INTR_ISL_PARAM_DETAIL_URL'] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð°";
+$MESS ['INTR_ISL_PARAM_FILTER_NAME'] = "Ð˜Ð¼Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°";
+$MESS ['INTR_ISL_PARAM_FILTER_1C_USERS'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÐ¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… Ñ 1Ð¡ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹";
+$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¿Ð¾ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸ÑÐ¼";
+$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY_VALUE_Y'] = "Ð¿Ñ€ÑÐ¼Ð¾Ð¹";
+$MESS ['INTR_ISL_PARAM_FILTER_SECTION_CURONLY_VALYE_N'] = "Ñ€ÐµÐºÑƒÑ€ÑÐ¸Ð²Ð½Ñ‹Ð¹";
+$MESS ['INTR_ISL_PARAM_SHOW_ERROR_ON_NULL'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ Ð¿ÑƒÑÑ‚Ð¾Ð¼ ÑÐ¿Ð¸ÑÐºÐµ";
+$MESS ['INTR_ISL_PARAM_USERS_PER_PAGE'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ";
+$MESS ['INTR_ISL_PARAM_NAV_TITLE'] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÑŒ Ð¿Ð¾ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡Ð½Ð¾Ð¹ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸";
+$MESS ['INTR_ISL_PARAM_NAV_TITLE_DEFAULT'] = "Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸";
+$MESS ['INTR_ISL_PARAM_SHOW_NAV_TOP'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡Ð½ÑƒÑŽ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸ÑŽ Ð½Ð°Ð´ ÑÐ¿Ð¸ÑÐºÐ¾Ð¼";
+$MESS ['INTR_ISL_PARAM_SHOW_NAV_BOTTOM'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡Ð½ÑƒÑŽ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸ÑŽ Ð¿Ð¾Ð´ ÑÐ¿Ð¸ÑÐºÐ¾Ð¼";
+$MESS ['INTR_ISL_PARAM_SHOW_UNFILTERED_LIST'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº Ð¿Ñ€Ð¸ Ð¿ÑƒÑÑ‚Ð¾Ð¼ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ðµ";
+$MESS ['INTR_ISL_PARAM_NAME_TEMPLATE'] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¸Ð¼ÐµÐ½Ð¸";
 ?>

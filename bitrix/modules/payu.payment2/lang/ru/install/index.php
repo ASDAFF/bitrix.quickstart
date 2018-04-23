@@ -1,6 +1,6 @@
 <?
-$MESS["payu.payment_MODULE_NAME"] = "PayU äëÿ Áèòðèêñ";
-$MESS["payu.payment_MODULE_DESC"] = "Ìîäóëü ïëàò¸æíîé ñèñòåìû PayU äëÿ CMS \"Áèòðèêñ\"";
+$MESS["payu.payment_MODULE_NAME"] = "PayU Ð´Ð»Ñ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ";
+$MESS["payu.payment_MODULE_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ PayU Ð´Ð»Ñ CMS \"Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ\"";
 $MESS["payu.payment_PARTNER_NAME"] = "PayU";
 $MESS["payu.payment_PARTNER_URI"] = "http://www.payu.ru/";
 ?>

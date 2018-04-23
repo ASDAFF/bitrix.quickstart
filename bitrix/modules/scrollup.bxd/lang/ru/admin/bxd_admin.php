@@ -1,10 +1,10 @@
 <?
-$MESS["SCROLLUP_BXD_OBSIE_NASTROYKI"] = "Îáùèå íàñòðîéêè";
-$MESS["SCROLLUP_BXD_PODKLUCATQ"] = "Ïîäêëþ÷àòü";
-$MESS["SCROLLUP_BXD_VEROATNEY_VSEGO"] = "Âåðîÿòíåé âñåãî";
-$MESS["SCROLLUP_BXD_UJE_PODKLUCENA_U_VAS"] = "óæå ïîäêëþ÷åíà ó âàñ íà ñàéòå. Ïîäêëþ÷èòå, åñëè ýòî íå òàê.";
-$MESS["SCROLLUP_BXD_GRUPPY_DLA_VYVODA_DA"] = "Ãðóïïû äëÿ âûâîäà äàííûõ:";
-$MESS["SCROLLUP_BXD_ISPOLQZUYTE"] = "Èñïîëüçóéòå";
-$MESS["SCROLLUP_BXD_KLIK_DLA_VYDELENIA_N"] = "êëèê äëÿ âûäåëåíèÿ íåñêîëüêèõ ãðóïï";
-$MESS["SCROLLUP_BXD_SOHRANITQ"] = "Ñîõðàíèòü";
+$MESS["SCROLLUP_BXD_OBSIE_NASTROYKI"] = "ÐžÐ±Ñ‰Ð¸Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+$MESS["SCROLLUP_BXD_PODKLUCATQ"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ";
+$MESS["SCROLLUP_BXD_VEROATNEY_VSEGO"] = "Ð’ÐµÑ€Ð¾ÑÑ‚Ð½ÐµÐ¹ Ð²ÑÐµÐ³Ð¾";
+$MESS["SCROLLUP_BXD_UJE_PODKLUCENA_U_VAS"] = "ÑƒÐ¶Ðµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð° Ñƒ Ð²Ð°Ñ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ. ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ, ÐµÑÐ»Ð¸ ÑÑ‚Ð¾ Ð½Ðµ Ñ‚Ð°Ðº.";
+$MESS["SCROLLUP_BXD_GRUPPY_DLA_VYVODA_DA"] = "Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð´Ð°Ð½Ð½Ñ‹Ñ…:";
+$MESS["SCROLLUP_BXD_ISPOLQZUYTE"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ";
+$MESS["SCROLLUP_BXD_KLIK_DLA_VYDELENIA_N"] = "ÐºÐ»Ð¸Ðº Ð´Ð»Ñ Ð²Ñ‹Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ñ… Ð³Ñ€ÑƒÐ¿Ð¿";
+$MESS["SCROLLUP_BXD_SOHRANITQ"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
 ?>

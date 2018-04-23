@@ -8,22 +8,22 @@
 #################################################
 ?>
 <?
-$MESS['ALTASIB_ENABLE_JQUERY'] = "Подключать jquery для плавной прокрутки";
-$MESS['ALTASIB_ENABLE_JQUERY_YES'] = "Да, подключать";
-$MESS['ALTASIB_ENABLE_JQUERY_NO'] = "Нет";
-$MESS['ALTASIB_ENABLE_JQUERY_ALREADY'] = "На сайте уже подключен jquery";
-$MESS['ALTASIB_UP_LINK'] = "В каких разделах отображать кнопку (перечислить c новой строки каждй адрес, пустое значение означает 'отбражать без ограничений')<br />Пример: <i>'/club/'</i>";
-$MESS ['ALTASIB_IS'] = "Магазин готовых решений для 1С-Битрикс";
-$MESS ['ALTASIB_POS'] = "Расположение кнопки";
-$MESS ['ALTASIB_SEL_BUTTON'] = "Выберите кнопку";
-$MESS ['ALTASIB_POS_XY'] = "Отступ от края экрана (px)";
-$MESS ['ALTASIB_TOP_LEFT'] = "Сверху слева";
-$MESS ['ALTASIB_TOP_RIGHT'] = "Сверху справа";
-$MESS ['ALTASIB_BOTTOM_LEFT'] = "Внизу слева";
-$MESS ['ALTASIB_BOTTOM_RIGHT'] = "Внизу справа";
-$MESS ['ALTASIB_BOTTOM_CENTER'] = "Внизу в центре";
-$MESS ['ALTASIB_UP_ENABLE'] = "Включить для всех сайтов";
-$MESS ['ALTASIB_UP_ENABLE_SITE'] = "Включить";
-$MESS ['ALTASIB_UP_OPTIONS_FOR_SITE'] = "Настройки для сайта ";
-$MESS ['ALTASIB_UP_INVERSE_LINK'] = "Следущий пункт выполнять \"Наоборот\" - в указанных разделах не отображать кнопку<br /><br />";
+$MESS['ALTASIB_ENABLE_JQUERY'] = "РџРѕРґРєР»СЋС‡Р°С‚СЊ jquery РґР»СЏ РїР»Р°РІРЅРѕР№ РїСЂРѕРєСЂСѓС‚РєРё";
+$MESS['ALTASIB_ENABLE_JQUERY_YES'] = "Р”Р°, РїРѕРґРєР»СЋС‡Р°С‚СЊ";
+$MESS['ALTASIB_ENABLE_JQUERY_NO'] = "РќРµС‚";
+$MESS['ALTASIB_ENABLE_JQUERY_ALREADY'] = "РќР° СЃР°Р№С‚Рµ СѓР¶Рµ РїРѕРґРєР»СЋС‡РµРЅ jquery";
+$MESS['ALTASIB_UP_LINK'] = "Р’ РєР°РєРёС… СЂР°Р·РґРµР»Р°С… РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ РєРЅРѕРїРєСѓ (РїРµСЂРµС‡РёСЃР»РёС‚СЊ c РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё РєР°Р¶РґР№ Р°РґСЂРµСЃ, РїСѓСЃС‚РѕРµ Р·РЅР°С‡РµРЅРёРµ РѕР·РЅР°С‡Р°РµС‚ 'РѕС‚Р±СЂР°Р¶Р°С‚СЊ Р±РµР· РѕРіСЂР°РЅРёС‡РµРЅРёР№')<br />РџСЂРёРјРµСЂ: <i>'/club/'</i>";
+$MESS ['ALTASIB_IS'] = "РњР°РіР°Р·РёРЅ РіРѕС‚РѕРІС‹С… СЂРµС€РµРЅРёР№ РґР»СЏ 1РЎ-Р‘РёС‚СЂРёРєСЃ";
+$MESS ['ALTASIB_POS'] = "Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РєРЅРѕРїРєРё";
+$MESS ['ALTASIB_SEL_BUTTON'] = "Р’С‹Р±РµСЂРёС‚Рµ РєРЅРѕРїРєСѓ";
+$MESS ['ALTASIB_POS_XY'] = "РћС‚СЃС‚СѓРї РѕС‚ РєСЂР°СЏ СЌРєСЂР°РЅР° (px)";
+$MESS ['ALTASIB_TOP_LEFT'] = "РЎРІРµСЂС…Сѓ СЃР»РµРІР°";
+$MESS ['ALTASIB_TOP_RIGHT'] = "РЎРІРµСЂС…Сѓ СЃРїСЂР°РІР°";
+$MESS ['ALTASIB_BOTTOM_LEFT'] = "Р’РЅРёР·Сѓ СЃР»РµРІР°";
+$MESS ['ALTASIB_BOTTOM_RIGHT'] = "Р’РЅРёР·Сѓ СЃРїСЂР°РІР°";
+$MESS ['ALTASIB_BOTTOM_CENTER'] = "Р’РЅРёР·Сѓ РІ С†РµРЅС‚СЂРµ";
+$MESS ['ALTASIB_UP_ENABLE'] = "Р’РєР»СЋС‡РёС‚СЊ РґР»СЏ РІСЃРµС… СЃР°Р№С‚РѕРІ";
+$MESS ['ALTASIB_UP_ENABLE_SITE'] = "Р’РєР»СЋС‡РёС‚СЊ";
+$MESS ['ALTASIB_UP_OPTIONS_FOR_SITE'] = "РќР°СЃС‚СЂРѕР№РєРё РґР»СЏ СЃР°Р№С‚Р° ";
+$MESS ['ALTASIB_UP_INVERSE_LINK'] = "РЎР»РµРґСѓС‰РёР№ РїСѓРЅРєС‚ РІС‹РїРѕР»РЅСЏС‚СЊ \"РќР°РѕР±РѕСЂРѕС‚\" - РІ СѓРєР°Р·Р°РЅРЅС‹С… СЂР°Р·РґРµР»Р°С… РЅРµ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ РєРЅРѕРїРєСѓ<br /><br />";
 ?>

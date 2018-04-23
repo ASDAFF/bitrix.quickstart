@@ -1,4 +1,4 @@
 <?
-$MESS['SAPE_COMPONENT_TITLE'] = 'Код Sape';
-$MESS['SAPE_COMPONENT_DESCRIPTION'] = 'Выводит код Sape';
+$MESS['SAPE_COMPONENT_TITLE'] = 'РљРѕРґ Sape';
+$MESS['SAPE_COMPONENT_DESCRIPTION'] = 'Р’С‹РІРѕРґРёС‚ РєРѕРґ Sape';
 ?>

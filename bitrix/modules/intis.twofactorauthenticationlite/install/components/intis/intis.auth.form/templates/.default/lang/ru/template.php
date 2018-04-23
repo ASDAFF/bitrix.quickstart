@@ -1,12 +1,12 @@
 <?
-$MESS['INTIS_AUTH_ENTER'] = 'Âîéòè íà ñàéò';
-$MESS['INTIS_AUTH_LOGIN'] = 'Ëîãèí';
-$MESS['INTIS_AUTH_REGISTER'] = 'Çàðåãèñòðèðîâàòüñÿ';
-$MESS['INTIS_AUTH_LOGOUT'] = 'Âûéòè';
-$MESS['INTIS_AUTH_PASSWORD'] = 'Ïàðîëü';
-$MESS['INTIS_AUTH_REMEMBER_ME'] = 'Çàïîìíèòü ìåíÿ';
-$MESS['INTIS_AUTH_FORGOT_PASSWORD_2'] = 'Çàáûëè ïàðîëü?';
-$MESS['INTIS_AUTH_AUTHORIZE'] = 'Âîéòè';
-$MESS['TWOFACTORAUTHENTIFICATION_PLEASE_WAIT'] = "Ïîæàëóéñòà, ïîäîæäèòå";
-$MESS['TWOFACTORAUTHENTIFICATION_HI'] = "Ïðèâåò";
+$MESS['INTIS_AUTH_ENTER'] = 'Ð’Ð¾Ð¹Ñ‚Ð¸ Ð½Ð° ÑÐ°Ð¹Ñ‚';
+$MESS['INTIS_AUTH_LOGIN'] = 'Ð›Ð¾Ð³Ð¸Ð½';
+$MESS['INTIS_AUTH_REGISTER'] = 'Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ';
+$MESS['INTIS_AUTH_LOGOUT'] = 'Ð’Ñ‹Ð¹Ñ‚Ð¸';
+$MESS['INTIS_AUTH_PASSWORD'] = 'ÐŸÐ°Ñ€Ð¾Ð»ÑŒ';
+$MESS['INTIS_AUTH_REMEMBER_ME'] = 'Ð—Ð°Ð¿Ð¾Ð¼Ð½Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½Ñ';
+$MESS['INTIS_AUTH_FORGOT_PASSWORD_2'] = 'Ð—Ð°Ð±Ñ‹Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ?';
+$MESS['INTIS_AUTH_AUTHORIZE'] = 'Ð’Ð¾Ð¹Ñ‚Ð¸';
+$MESS['TWOFACTORAUTHENTIFICATION_PLEASE_WAIT'] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ";
+$MESS['TWOFACTORAUTHENTIFICATION_HI'] = "ÐŸÑ€Ð¸Ð²ÐµÑ‚";
 ?>

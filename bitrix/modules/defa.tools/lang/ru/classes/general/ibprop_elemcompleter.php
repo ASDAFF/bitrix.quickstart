@@ -1,11 +1,11 @@
 <?
-$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools Ïðèâÿçêà ê ýëåìåíòàì ñ àâòîçàïîëíåíèåì";
-$MESS['DEFATOOLS_SETTINGS_TITLE'] = "Íàñòðîéêè";
-$MESS['DEFATOOLS_INFOBLOCKS'] = "Âûáåðèòå èíôîðìàöèîííûå áëîêè";
-$MESS['DEFATOOLS_PATH_TO_AJAX_FILE'] = "Ïóòü äî ajax ôàéëà";
-$MESS['DEFATOOLS_HINT_TEXT'] = "Òåêñò ïîäñêàçêè";
-$MESS['DEFATOOLS_HINT_TEXT_NO_RES'] = "Òåêñò ïîäñêàçêè ïðè îòñóòñòâèè ðåçóëüòàòîâ ïîèñêà";
-$MESS['DEFATOOLS_NAME_TEMPLATE'] = "Øàáëîí èìåíè";
-$MESS['DEFATOOLS_MAX_ELEM_NUM'] = "Ìàêñèìàëüíîå êîëè÷åñòâî ýëåìåíòîâ â ñïèñêå";
-$MESS['DEFATOOLS_DTEC_NOIB'] = "Âíèìàíèå! Â íàñòðîéêàõ ñâîéñòâà íåîáõîäèìî âûáðàòü èíôîðìàöèîííûé áëîê";
+$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools ÐŸÑ€Ð¸Ð²ÑÐ·ÐºÐ° Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼ Ñ Ð°Ð²Ñ‚Ð¾Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸ÐµÐ¼";
+$MESS['DEFATOOLS_SETTINGS_TITLE'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+$MESS['DEFATOOLS_INFOBLOCKS'] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ Ð±Ð»Ð¾ÐºÐ¸";
+$MESS['DEFATOOLS_PATH_TO_AJAX_FILE'] = "ÐŸÑƒÑ‚ÑŒ Ð´Ð¾ ajax Ñ„Ð°Ð¹Ð»Ð°";
+$MESS['DEFATOOLS_HINT_TEXT'] = "Ð¢ÐµÐºÑÑ‚ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ¸";
+$MESS['DEFATOOLS_HINT_TEXT_NO_RES'] = "Ð¢ÐµÐºÑÑ‚ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ¸ Ð¿Ñ€Ð¸ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ð¸ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð² Ð¿Ð¾Ð¸ÑÐºÐ°";
+$MESS['DEFATOOLS_NAME_TEMPLATE'] = "Ð¨Ð°Ð±Ð»Ð¾Ð½ Ð¸Ð¼ÐµÐ½Ð¸";
+$MESS['DEFATOOLS_MAX_ELEM_NUM'] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð² ÑÐ¿Ð¸ÑÐºÐµ";
+$MESS['DEFATOOLS_DTEC_NOIB'] = "Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº";
 ?>

@@ -1,12 +1,12 @@
 <?
-$MESS["TALKHARD_ULOGIN_PROVAYDERY"] = "Ïðîâàéäåðû";
-$MESS["TALKHARD_ULOGIN_SKRYTYE_PROVAYDERY"] = "Ñêðûòûå ïðîâàéäåðû";
-$MESS["TALKHARD_ULOGIN_TIP"] = "Òèï";
-$MESS["TALKHARD_ULOGIN_STRANICA_REDIREKTA_P"] = "Ñòðàíèöà ðåäèðåêòà ïîñëå ëîãèíà";
-$MESS["TALKHARD_ULOGIN_GRUPPA_POLQZOVATELA"] = "Ãðóïïà ïîëüçîâàòåëÿ ïî óìîë÷àíèþ";
-$MESS["TALKHARD_ULOGIN_REGISTRIROVATQ_POLQZ"] = "Ðåãèñòðèðîâàòü ïîëüçîâàòåëåé ñ óíèêàëüíûìè";
-$MESS["TALKHARD_ULOGIN_OTPRAVLATQ"] = "Îòïðàâëÿòü";
-$MESS["TALKHARD_ULOGIN_ADMINISTRATORU_PRI_R"] = "àäìèíèñòðàòîðó ïðè ðåãèñòðàöèè ïîëüçîâàòåëÿ";
-$MESS["TALKHARD_ULOGIN_SYNC"] = "Ïàíåëü äëÿ ïðèâÿçêè àêêàóíòîâ";
-$MESS["TALKHARD_ULOGIN_GROUPS_MESSAGE"] = "Ïðè ðåãèñòðàöèè äîáàâëÿòü ïîëüçîâàòåëÿ â ãðóïïó";
+$MESS["TALKHARD_ULOGIN_PROVAYDERY"] = "ÐŸÑ€Ð¾Ð²Ð°Ð¹Ð´ÐµÑ€Ñ‹";
+$MESS["TALKHARD_ULOGIN_SKRYTYE_PROVAYDERY"] = "Ð¡ÐºÑ€Ñ‹Ñ‚Ñ‹Ðµ Ð¿Ñ€Ð¾Ð²Ð°Ð¹Ð´ÐµÑ€Ñ‹";
+$MESS["TALKHARD_ULOGIN_TIP"] = "Ð¢Ð¸Ð¿";
+$MESS["TALKHARD_ULOGIN_STRANICA_REDIREKTA_P"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð° Ð¿Ð¾ÑÐ»Ðµ Ð»Ð¾Ð³Ð¸Ð½Ð°";
+$MESS["TALKHARD_ULOGIN_GRUPPA_POLQZOVATELA"] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
+$MESS["TALKHARD_ULOGIN_REGISTRIROVATQ_POLQZ"] = "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ñ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ð¼Ð¸";
+$MESS["TALKHARD_ULOGIN_OTPRAVLATQ"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ";
+$MESS["TALKHARD_ULOGIN_ADMINISTRATORU_PRI_R"] = "Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ñƒ Ð¿Ñ€Ð¸ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS["TALKHARD_ULOGIN_SYNC"] = "ÐŸÐ°Ð½ÐµÐ»ÑŒ Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¸ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð¾Ð²";
+$MESS["TALKHARD_ULOGIN_GROUPS_MESSAGE"] = "ÐŸÑ€Ð¸ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð² Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ";
 ?>

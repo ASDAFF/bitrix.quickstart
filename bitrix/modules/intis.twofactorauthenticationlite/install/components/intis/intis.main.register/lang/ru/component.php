@@ -1,10 +1,10 @@
 <?
-$MESS["AUTH_CONFIRM_ID"] = "Âàø Id: ";
-$MESS["AUTH_CONFIRM_PASS"] = "Êîä ïîäòâåðæäåíèÿ: ";
-$MESS ['REGISTER_WRONG_CAPTCHA'] = "Íåâåðíî ââåäåíî ñëîâî ñ êàðòèíêè";
-$MESS ['REGISTER_FIELD_REQUIRED'] = "Ïîëå #FIELD_NAME# îáÿçàòåëüíî äëÿ çàïîëíåíèÿ";
-$MESS ['REGISTER_DEFAULT_TITLE'] = "Ðåãèñòðàöèÿ íîâîãî ïîëüçîâàòåëÿ";
-$MESS ['REGISTER_USER_WITH_EMAIL_EXIST'] = "Ïîëüçîâàòåëü ñ òàêèì e-mail (#EMAIL#) óæå ñóùåñòâóåò.";
-$MESS["main_register_sess_expired"]="Âàøà ñåññèÿ èñòåêëà, ïîâòîðèòå ïîïûòêó ðåãèñòðàöèè.";
-$MESS["main_register_decode_err"]="Îøèáêà ïðè äåøèôðîâàíèè ïàðîëÿ (#ERRCODE#).";
+$MESS["AUTH_CONFIRM_ID"] = "Ð’Ð°Ñˆ Id: ";
+$MESS["AUTH_CONFIRM_PASS"] = "ÐšÐ¾Ð´ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
+$MESS ['REGISTER_WRONG_CAPTCHA'] = "ÐÐµÐ²ÐµÑ€Ð½Ð¾ Ð²Ð²ÐµÐ´ÐµÐ½Ð¾ ÑÐ»Ð¾Ð²Ð¾ Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸";
+$MESS ['REGISTER_FIELD_REQUIRED'] = "ÐŸÐ¾Ð»Ðµ #FIELD_NAME# Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð´Ð»Ñ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ";
+$MESS ['REGISTER_DEFAULT_TITLE'] = "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['REGISTER_USER_WITH_EMAIL_EXIST'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ e-mail (#EMAIL#) ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚.";
+$MESS["main_register_sess_expired"]="Ð’Ð°ÑˆÐ° ÑÐµÑÑÐ¸Ñ Ð¸ÑÑ‚ÐµÐºÐ»Ð°, Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð¿Ð¾Ð¿Ñ‹Ñ‚ÐºÑƒ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸.";
+$MESS["main_register_decode_err"]="ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð´ÐµÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð¸Ð¸ Ð¿Ð°Ñ€Ð¾Ð»Ñ (#ERRCODE#).";
 ?>

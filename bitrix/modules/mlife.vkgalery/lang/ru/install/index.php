@@ -1,5 +1,5 @@
 <?
-$MESS['MLIFE_MODULE_NAME'] = "Ãàëåðåÿ èç Âêîíòàêòå";
-$MESS['MLIFE_MODULE_DESCRIPTION'] = "Âûâîä ãàëåðåè èç Âêîíòàêòå";
-$MESS['MLIFE_COMPANY_NAME'] = "Ðåêëàìíîå èíòåðíåò-àãåíñòâî Mlife-Media";
+$MESS['MLIFE_MODULE_NAME'] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð¸Ð· Ð’ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ðµ";
+$MESS['MLIFE_MODULE_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸ Ð¸Ð· Ð’ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ðµ";
+$MESS['MLIFE_COMPANY_NAME'] = "Ð ÐµÐºÐ»Ð°Ð¼Ð½Ð¾Ðµ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð°Ð³ÐµÐ½ÑÑ‚Ð²Ð¾ Mlife-Media";
 ?>

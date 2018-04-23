@@ -1,16 +1,16 @@
 <?
-$MESS["IBLOCK_PRICES"] = "Öåíû";
-$MESS["IBLOCK_TYPE"] = "Òèï èíôîáëîêà";
-$MESS["IBLOCK_IBLOCK"] = "Èíôîáëîê";
-$MESS["IBLOCK_PROPERTY"] = "Ñâîéñòâà";
-$MESS["IBLOCK_PRICE_CODE"] = "Òèï öåíû";
-$MESS["IBLOCK_FIELD"] = "Ïîëÿ";
-$MESS["IBLOCK_FILTER_NAME_OUT"] = "Èìÿ âûõîäÿùåãî ìàññèâà äëÿ ôèëüòðàöèè";
-$MESS["IBLOCK_LIST_HEIGHT"] = "Âûñîòà ñïèñêîâ ìíîæåñòâåííîãî âûáîðà";
-$MESS["IBLOCK_TEXT_WIDTH"] = "Øèðèíà îäíîñòðî÷íûõ òåêñòîâûõ ïîëåé ââîäà";
-$MESS["IBLOCK_NUMBER_WIDTH"] = "Øèðèíà ïîëåé ââîäà äëÿ ÷èñëîâûõ èíòåðâàëîâ";
-$MESS["IBLOCK_SAVE_IN_SESSION"] = "Ñîõðàíÿòü óñòàíîâêè ôèëüòðà â ñåññèè ïîëüçîâàòåëÿ";
-$MESS["CP_BCF_CACHE_GROUPS"] = "Ó÷èòûâàòü ïðàâà äîñòóïà";
-$MESS["CP_BCF_OFFERS_FIELD_CODE"] = "Ïîëÿ ïðåäëîæåíèé";
-$MESS["CP_BCF_OFFERS_PROPERTY_CODE"] = "Ñâîéñòâà ïðåäëîæåíèé";
+$MESS["IBLOCK_PRICES"] = "Ð¦ÐµÐ½Ñ‹";
+$MESS["IBLOCK_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_IBLOCK"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["IBLOCK_PROPERTY"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð°";
+$MESS["IBLOCK_PRICE_CODE"] = "Ð¢Ð¸Ð¿ Ñ†ÐµÐ½Ñ‹";
+$MESS["IBLOCK_FIELD"] = "ÐŸÐ¾Ð»Ñ";
+$MESS["IBLOCK_FILTER_NAME_OUT"] = "Ð˜Ð¼Ñ Ð²Ñ‹Ñ…Ð¾Ð´ÑÑ‰ÐµÐ³Ð¾ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð´Ð»Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸Ð¸";
+$MESS["IBLOCK_LIST_HEIGHT"] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð° ÑÐ¿Ð¸ÑÐºÐ¾Ð² Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð²Ñ‹Ð±Ð¾Ñ€Ð°";
+$MESS["IBLOCK_TEXT_WIDTH"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð¾Ð´Ð½Ð¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ñ… Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ñ‹Ñ… Ð¿Ð¾Ð»ÐµÐ¹ Ð²Ð²Ð¾Ð´Ð°";
+$MESS["IBLOCK_NUMBER_WIDTH"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð¿Ð¾Ð»ÐµÐ¹ Ð²Ð²Ð¾Ð´Ð° Ð´Ð»Ñ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ñ‹Ñ… Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð»Ð¾Ð²";
+$MESS["IBLOCK_SAVE_IN_SESSION"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð° Ð² ÑÐµÑÑÐ¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS["CP_BCF_CACHE_GROUPS"] = "Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
+$MESS["CP_BCF_OFFERS_FIELD_CODE"] = "ÐŸÐ¾Ð»Ñ Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¹";
+$MESS["CP_BCF_OFFERS_PROPERTY_CODE"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¹";
 ?>

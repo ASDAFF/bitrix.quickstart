@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ôîðìà äëÿ ðàññûëêè");
+$APPLICATION->SetTitle("Ð¤Ð¾Ñ€Ð¼Ð° Ð´Ð»Ñ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸");
 ?>
 
 <?$APPLICATION->IncludeComponent("rarus.sms4b:sendSmsPublic", ".default", array(

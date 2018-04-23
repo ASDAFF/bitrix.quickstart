@@ -1,12 +1,12 @@
 <?
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_NAME'] = "Ââåäèòå âàøå èìÿ";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_EMAIL'] = "Email íå óêàçàí";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_EMAIL2'] = "Íåâåðíûé ôîðìàò Email àäðåñà";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_PHONE'] = "Ìîáèëüíûé òåëåôîí íå óêàçàí";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_PHONE2'] = "Íåâåðíûé ôîðìàò íîìåðà òåëåôîíà";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_SESS'] = "Ñðàáîòàëà çàùèòà îò ñïàìà. Íåâåðíûé èäåíòèôèêàòîð ñåññèè.";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_MESS'] = "Ïðèìå÷àíèå íå çàïîëíåíî";
-$MESS['MLIFE_CAT_BK_MESS_ORDER'] = "Çàêàç ïîñòóïèë èç ôîðìû áûñòðîãî çàêàçà";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_CAPCHA'] = "Íåâåðíî óêàçàí çàùèòíûé êîä";
-$MESS['MLIFE_CAT_BK_FIELD_ERROR_REQ'] = "îáÿçàòåëüíî ê çàïîëíåíèþ";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_NAME'] = "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_EMAIL'] = "Email Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_EMAIL2'] = "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Email Ð°Ð´Ñ€ÐµÑÐ°";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_PHONE'] = "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_PHONE2'] = "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ð½Ð¾Ð¼ÐµÑ€Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_SESS'] = "Ð¡Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð»Ð° Ð·Ð°Ñ‰Ð¸Ñ‚Ð° Ð¾Ñ‚ ÑÐ¿Ð°Ð¼Ð°. ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐµÑÑÐ¸Ð¸.";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_MESS'] = "ÐŸÑ€Ð¸Ð¼ÐµÑ‡Ð°Ð½Ð¸Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¾";
+$MESS['MLIFE_CAT_BK_MESS_ORDER'] = "Ð—Ð°ÐºÐ°Ð· Ð¿Ð¾ÑÑ‚ÑƒÐ¿Ð¸Ð» Ð¸Ð· Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð±Ñ‹ÑÑ‚Ñ€Ð¾Ð³Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_CAPCHA'] = "ÐÐµÐ²ÐµÑ€Ð½Ð¾ ÑƒÐºÐ°Ð·Ð°Ð½ Ð·Ð°Ñ‰Ð¸Ñ‚Ð½Ñ‹Ð¹ ÐºÐ¾Ð´";
+$MESS['MLIFE_CAT_BK_FIELD_ERROR_REQ'] = "Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ðº Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸ÑŽ";
 ?>

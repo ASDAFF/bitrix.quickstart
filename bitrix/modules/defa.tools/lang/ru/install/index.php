@@ -1,7 +1,7 @@
 <?
 $MESS ['DEFATOOLS_INSTALL_NAME'] = "DefaTools";
-$MESS ['DEFATOOLS_INSTALL_DESCRIPTION'] = "Ïîëåçíûå èíñòðóìåíòû äëÿ ðàçðàáîòêè îò DEFA Interaktiv";
+$MESS ['DEFATOOLS_INSTALL_DESCRIPTION'] = "ÐŸÐ¾Ð»ÐµÐ·Ð½Ñ‹Ðµ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹ Ð´Ð»Ñ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¸ Ð¾Ñ‚ DEFA Interaktiv";
 
-$MESS ['DEFATOOLS_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ";
-$MESS ['DEFATOOLS_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ";
+$MESS ['DEFATOOLS_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['DEFATOOLS_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 ?>

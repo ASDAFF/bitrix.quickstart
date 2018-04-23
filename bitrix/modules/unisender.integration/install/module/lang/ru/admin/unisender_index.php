@@ -1,20 +1,20 @@
 <?
-$MESS['UNI_API_KEY_EMPTY'] = "Установите ключ доступа к API в <a href=\"/bitrix/admin/settings.php?lang=ru&mid=#MODULE_ID#&mid_menu=1\">настройках</a>";
-$MESS['UNI_LISTS_NOTFOUND'] = "Списки рассылки отсутствуют! Добавить списки рассылки можно по ссылке <a href=\"http://cp.unisender.com/ru/list_frm\" target=\"_blank\">http://cp.unisender.com/ru/list_frm</a>";
-$MESS['UNI_GROUPS'] = "Группы пользователей для переноса";
-$MESS['UNI_USERS_LINK_TITLE'] = "Посмотреть список пользователей";
-$MESS['UNI_DATA'] = "Выберите данные для переноса в UniSender";
-$MESS['UNI_FIELDS_LINK'] = "Добавить дополнительные поля можно по ссылке <a href=\"http://cp.unisender.com/ru/field_list\" target=\"_blank\">http://cp.unisender.com/ru/field_list</a>";
+$MESS['UNI_API_KEY_EMPTY'] = "РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РєР»СЋС‡ РґРѕСЃС‚СѓРїР° Рє API РІ <a href=\"/bitrix/admin/settings.php?lang=ru&mid=#MODULE_ID#&mid_menu=1\">РЅР°СЃС‚СЂРѕР№РєР°С…</a>";
+$MESS['UNI_LISTS_NOTFOUND'] = "РЎРїРёСЃРєРё СЂР°СЃСЃС‹Р»РєРё РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‚! Р”РѕР±Р°РІРёС‚СЊ СЃРїРёСЃРєРё СЂР°СЃСЃС‹Р»РєРё РјРѕР¶РЅРѕ РїРѕ СЃСЃС‹Р»РєРµ <a href=\"http://cp.unisender.com/ru/list_frm\" target=\"_blank\">http://cp.unisender.com/ru/list_frm</a>";
+$MESS['UNI_GROUPS'] = "Р“СЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РґР»СЏ РїРµСЂРµРЅРѕСЃР°";
+$MESS['UNI_USERS_LINK_TITLE'] = "РџРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№";
+$MESS['UNI_DATA'] = "Р’С‹Р±РµСЂРёС‚Рµ РґР°РЅРЅС‹Рµ РґР»СЏ РїРµСЂРµРЅРѕСЃР° РІ UniSender";
+$MESS['UNI_FIELDS_LINK'] = "Р”РѕР±Р°РІРёС‚СЊ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ РјРѕР¶РЅРѕ РїРѕ СЃСЃС‹Р»РєРµ <a href=\"http://cp.unisender.com/ru/field_list\" target=\"_blank\">http://cp.unisender.com/ru/field_list</a>";
 $MESS['UNI_FIELD_EMAIL'] = "E-mail:";
-$MESS['UNI_FIELDS_INVARIABLE'] = "--обязательно--";
-$MESS['UNI_FIELD_MOBILE'] = "Моб. телефон:";
-$MESS['UNI_FIELDS_NOTIMPORT'] = "--не переносить--";
-$MESS['UNI_FIELDS_IMPORT'] = "--переносить--";
-$MESS['UNI_FIELD_NAME'] = "Имя:";
-$MESS['UNI_FIELD_FAM'] = "Фамилия:";
-$MESS['UNI_FIELD_OTCH'] = "Отчество:";
-$MESS['UNI_LIST'] = "Список рассылки:";
-$MESS['UNI_LISTS_LINK'] = "Добавить списки рассылки можно по ссылке <a href=\"http://cp.unisender.com/ru/list_frm\" target=\"_blank\">http://cp.unisender.com/ru/list_frm</a>";
-$MESS['UNI_IMPORT_BT'] = "Перенести";
-$MESS['UNI_FS_LISTS'] = "Список в UniSender";
+$MESS['UNI_FIELDS_INVARIABLE'] = "--РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ--";
+$MESS['UNI_FIELD_MOBILE'] = "РњРѕР±. С‚РµР»РµС„РѕРЅ:";
+$MESS['UNI_FIELDS_NOTIMPORT'] = "--РЅРµ РїРµСЂРµРЅРѕСЃРёС‚СЊ--";
+$MESS['UNI_FIELDS_IMPORT'] = "--РїРµСЂРµРЅРѕСЃРёС‚СЊ--";
+$MESS['UNI_FIELD_NAME'] = "РРјСЏ:";
+$MESS['UNI_FIELD_FAM'] = "Р¤Р°РјРёР»РёСЏ:";
+$MESS['UNI_FIELD_OTCH'] = "РћС‚С‡РµСЃС‚РІРѕ:";
+$MESS['UNI_LIST'] = "РЎРїРёСЃРѕРє СЂР°СЃСЃС‹Р»РєРё:";
+$MESS['UNI_LISTS_LINK'] = "Р”РѕР±Р°РІРёС‚СЊ СЃРїРёСЃРєРё СЂР°СЃСЃС‹Р»РєРё РјРѕР¶РЅРѕ РїРѕ СЃСЃС‹Р»РєРµ <a href=\"http://cp.unisender.com/ru/list_frm\" target=\"_blank\">http://cp.unisender.com/ru/list_frm</a>";
+$MESS['UNI_IMPORT_BT'] = "РџРµСЂРµРЅРµСЃС‚Рё";
+$MESS['UNI_FS_LISTS'] = "РЎРїРёСЃРѕРє РІ UniSender";
 ?>

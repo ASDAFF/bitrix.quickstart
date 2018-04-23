@@ -1,6 +1,6 @@
 <?
-$MESS['WEBDEBUG_POPUP_PARTNER_NAME'] = "Âåá-ñòóäèÿ «Webdebug» [ÎÎÎ «Âåá äåáàã»]";
+$MESS['WEBDEBUG_POPUP_PARTNER_NAME'] = "Ð’ÐµÐ±-ÑÑ‚ÑƒÐ´Ð¸Ñ Â«WebdebugÂ» [ÐžÐžÐž Â«Ð’ÐµÐ± Ð´ÐµÐ±Ð°Ð³Â»]";
 $MESS['WEBDEBUG_POPUP_PARTNER_URI'] = "http://www.webdebug.ru/";
-$MESS['WEBDEBUG_POPUP_MODULE_NAME'] = "Âñïëûâàþùèå îêíà";
-$MESS['WEBDEBUG_POPUP_MODULE_DESC'] = "Ìîäóëü äëÿ áûñòðîãî ñîçäàíèÿ âñïëûâàþùèõ îêîí";
+$MESS['WEBDEBUG_POPUP_MODULE_NAME'] = "Ð’ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰Ð¸Ðµ Ð¾ÐºÐ½Ð°";
+$MESS['WEBDEBUG_POPUP_MODULE_DESC'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð»Ñ Ð±Ñ‹ÑÑ‚Ñ€Ð¾Ð³Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰Ð¸Ñ… Ð¾ÐºÐ¾Ð½";
 ?>

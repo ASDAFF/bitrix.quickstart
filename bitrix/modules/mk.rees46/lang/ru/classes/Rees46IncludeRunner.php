@@ -1,10 +1,10 @@
 <?php
 
-$MESS['REES_INCLUDE_SEE_ALSO']          = 'Ïîñìîòðèòå òàêæå';
-$MESS['REES_INCLUDE_RECENTLY_VIEWED']   = 'Âû íåäàâíî ñìîòðåëè';
-$MESS['REES_INCLUDE_ALSO_BOUGHT']       = 'Ñ ýòèì òàêæå ïîêóïàþò';
-$MESS['REES_INCLUDE_SIMILAR']           = 'Ïîõîæèå òîâàðû';
-$MESS['REES_INCLUDE_INTERESTING']       = 'Âîçìîæíî âàñ çàèíòåðåñóåò';
-$MESS['REES_INCLUDE_POPULAR']           = 'Ïîïóëÿðíûå òîâàðû';
+$MESS['REES_INCLUDE_SEE_ALSO']          = 'ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€Ð¸Ñ‚Ðµ Ñ‚Ð°ÐºÐ¶Ðµ';
+$MESS['REES_INCLUDE_RECENTLY_VIEWED']   = 'Ð’Ñ‹ Ð½ÐµÐ´Ð°Ð²Ð½Ð¾ ÑÐ¼Ð¾Ñ‚Ñ€ÐµÐ»Ð¸';
+$MESS['REES_INCLUDE_ALSO_BOUGHT']       = 'Ð¡ ÑÑ‚Ð¸Ð¼ Ñ‚Ð°ÐºÐ¶Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°ÑŽÑ‚';
+$MESS['REES_INCLUDE_SIMILAR']           = 'ÐŸÐ¾Ñ…Ð¾Ð¶Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹';
+$MESS['REES_INCLUDE_INTERESTING']       = 'Ð’Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð²Ð°Ñ Ð·Ð°Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÑƒÐµÑ‚';
+$MESS['REES_INCLUDE_POPULAR']           = 'ÐŸÐ¾Ð¿ÑƒÐ»ÑÑ€Ð½Ñ‹Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹';
 
-$MESS['REES_INCLUDE_MORE'] = 'Ïîäðîáíåå';
+$MESS['REES_INCLUDE_MORE'] = 'ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ';

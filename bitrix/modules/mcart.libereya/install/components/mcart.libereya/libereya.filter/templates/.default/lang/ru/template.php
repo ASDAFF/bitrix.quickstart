@@ -1,8 +1,8 @@
 <?
-$MESS ['IBLOCK_FILTER_TITLE'] = "Ôèëüòðîâàòü ïî:";
-$MESS ['IBLOCK_SET_FILTER'] = "Ôèëüòð";
-$MESS ['IBLOCK_DEL_FILTER'] = "Ñáðîñèòü";
-$MESS ['FILTER_NEWS_ONLY'] = "ÒÎËÜÊÎ ÍÎÂÈÍÊÈ";
-$MESS ['FILTER_DIGITAL_ONLY'] = "ÒÎËÜÊÎ ÝËÅÊÒÐÎÍÍÛÅ";
-$MESS ['FILTER_PAPER_ONLY'] = "ÒÎËÜÊÎ ÁÓÌÀÆÍÛÅ";
+$MESS ['IBLOCK_FILTER_TITLE'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾:";
+$MESS ['IBLOCK_SET_FILTER'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
+$MESS ['IBLOCK_DEL_FILTER'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
+$MESS ['FILTER_NEWS_ONLY'] = "Ð¢ÐžÐ›Ð¬ÐšÐž ÐÐžÐ’Ð˜ÐÐšÐ˜";
+$MESS ['FILTER_DIGITAL_ONLY'] = "Ð¢ÐžÐ›Ð¬ÐšÐž Ð­Ð›Ð•ÐšÐ¢Ð ÐžÐÐÐ«Ð•";
+$MESS ['FILTER_PAPER_ONLY'] = "Ð¢ÐžÐ›Ð¬ÐšÐž Ð‘Ð£ÐœÐÐ–ÐÐ«Ð•";
 ?>

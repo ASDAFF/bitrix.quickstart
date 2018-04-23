@@ -1,6 +1,6 @@
 <?
-$MESS["sok.medialibphotogal_MODULE_NAME"] = "Ãàëåðåÿ èç ìåäèàáèáëèîòåêè";
-$MESS["sok.medialibphotogal_MODULE_DESC"] = "Ãàëåðåÿ èç ìåäèàáèáëèîòåêè";
-$MESS["sok.medialibphotogal_PARTNER_NAME"] = "ÎÎÎ \"ÑÎÊ\"";
+$MESS["sok.medialibphotogal_MODULE_NAME"] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð¸Ð· Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸";
+$MESS["sok.medialibphotogal_MODULE_DESC"] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð¸Ð· Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸";
+$MESS["sok.medialibphotogal_PARTNER_NAME"] = "ÐžÐžÐž \"Ð¡ÐžÐš\"";
 $MESS["sok.medialibphotogal_PARTNER_URI"] = "http://sok24.ru";
 ?>

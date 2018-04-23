@@ -1,5 +1,5 @@
 <?
-$MESS['ABPC_MODULE_NAME'] = "Êîìïàêòíûé ñëàéäåð";
-$MESS['ABPC_MODULE_DESCRIPTION'] = "Êîìïàêòíûé ñëàéäåð ñ âîçìîæíîñòüþ âñòàâêè ìóëüòèìåäèà";
+$MESS['ABPC_MODULE_NAME'] = "ÐšÐ¾Ð¼Ð¿Ð°ÐºÑ‚Ð½Ñ‹Ð¹ ÑÐ»Ð°Ð¹Ð´ÐµÑ€";
+$MESS['ABPC_MODULE_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð°ÐºÑ‚Ð½Ñ‹Ð¹ ÑÐ»Ð°Ð¹Ð´ÐµÑ€ Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð²ÑÑ‚Ð°Ð²ÐºÐ¸ Ð¼ÑƒÐ»ÑŒÑ‚Ð¸Ð¼ÐµÐ´Ð¸Ð°";
 $MESS['ABPC_COMPANY_NAME'] = "Inseco Limited";
 ?>

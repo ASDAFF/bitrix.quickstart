@@ -3,12 +3,12 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 $arComponentParameters = array(
 	"GROUPS" => array(
-      // Âèä
+      // Ð’Ð¸Ð´
       "FORM_SETTINGS" => array(
          "NAME" => GetMessage("FORM_SETTINGS"),
          "SORT" => 101
       ),
-      // Äîïîëíèòåëüíî
+      // Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾
       "EXTRA_SETTINGS" => array(
          "NAME" => GetMessage("EXTRA_SETTINGS"),
          "SORT" => 102
@@ -16,7 +16,7 @@ $arComponentParameters = array(
 
    ),
 	"PARAMETERS" => array(
-		// ID ïðèëîæåíèÿ
+		// ID Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ
 		"ID_APLICATION" => array(
 			"PARENT" => "BASE",
 			"NAME" => GetMessage("ID_APLICATION"),
@@ -25,7 +25,7 @@ $arComponentParameters = array(
 			"DEFAULT" => "",
 			"COLS" => 25
 		),
-		// Êîëè÷åñòâî çàïèñåé
+		// ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹
 		"NUM_RECORDS" => Array(
 			"NAME"=>GetMessage("NUM_RECORDS"), 
 			"PARENT" => "FORM_SETTINGS",
@@ -37,7 +37,7 @@ $arComponentParameters = array(
 				"10" => "10"), 
 			"ADDITIONAL_VALUES"=>"N"
 		),
-		// Ïåðèîä âûáîðêè
+		// ÐŸÐµÑ€Ð¸Ð¾Ð´ Ð²Ñ‹Ð±Ð¾Ñ€ÐºÐ¸
 		"PERIOD" => Array(
 			"NAME"=>GetMessage("PERIOD"), 
 			"PARENT" => "FORM_SETTINGS",
@@ -49,7 +49,7 @@ $arComponentParameters = array(
 				"month" => GetMessage("PERIOD_MONTH")), 
 			"ADDITIONAL_VALUES"=>"N"
 		),
-		// Ôîðìóëèðîâêà
+		// Ð¤Ð¾Ñ€Ð¼ÑƒÐ»Ð¸Ñ€Ð¾Ð²ÐºÐ°
 		"FORMULATION" => Array(
 			"NAME"=>GetMessage("FORMULATION"), 
 			"PARENT" => "FORM_SETTINGS",
@@ -60,7 +60,7 @@ $arComponentParameters = array(
 				"1" => GetMessage("FORMULATION_INTERES")),
 			"ADDITIONAL_VALUES"=>"N"
 		),
-		// Ñîðòèðîâêà
+		// Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°
 		"SORT" => Array(
 			"NAME"=>GetMessage("SORT"), 
 			"PARENT" => "EXTRA_SETTINGS",
@@ -71,7 +71,7 @@ $arComponentParameters = array(
 				"likes" => GetMessage("SORT_LIKES")),
 			"ADDITIONAL_VALUES"=>"N"
 		),
-		// Ññûëêè íà ñòðàíèöå
+		// Ð¡ÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ
 		"REF" => Array(
 			"NAME"=>GetMessage("REF"), 
 			"PARENT" => "EXTRA_SETTINGS",

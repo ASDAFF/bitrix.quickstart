@@ -1,5 +1,5 @@
 <?
-$MESS["talkhard.ulogin_MODULE_NAME"] = "Àâòîðèçàöèÿ ÷åðåç Ulogin";
+$MESS["talkhard.ulogin_MODULE_NAME"] = "ÐÐ²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ Ñ‡ÐµÑ€ÐµÐ· Ulogin";
 $MESS["talkhard.ulogin_MODULE_DESC"] = "";
 $MESS["talkhard.ulogin_PARTNER_NAME"] = "Talk Hard";
 $MESS["talkhard.ulogin_PARTNER_URI"] = "http://talk-hard.ru/";

@@ -1,5 +1,5 @@
 <?
-$MESS['SUBSCR_MODULE_NOT_INSTALLED']="Ìîäóëü ïîäïèñêè â íàñòîÿùåå âðåìÿ íåäîñòóïåí.";
-$MESS['SUBSCR_NO_RUBRIC_FOUND']="Íå íàéäåíî ðóáðèê äëÿ ïîäïèñêè.";
-$MESS['SUBSCR_PAGE_TITLE']="Ðàññûëêè";
+$MESS['SUBSCR_MODULE_NOT_INSTALLED']="ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð² Ð½Ð°ÑÑ‚Ð¾ÑÑ‰ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½.";
+$MESS['SUBSCR_NO_RUBRIC_FOUND']="ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ñ€ÑƒÐ±Ñ€Ð¸Ðº Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸.";
+$MESS['SUBSCR_PAGE_TITLE']="Ð Ð°ÑÑÑ‹Ð»ÐºÐ¸";
 ?>

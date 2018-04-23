@@ -1,6 +1,6 @@
 <?
-$MESS ['T_IBLOCK_DESC_NEWS_DATE'] = "Âûâîäèòü äàòó ýëåìåíòà";
-$MESS ['T_IBLOCK_DESC_NEWS_NAME'] = "Âûâîäèòü íàçâàíèå ýëåìåíòà";
-$MESS ['T_IBLOCK_DESC_NEWS_PICTURE'] = "Âûâîäèòü èçîáðàæåíèå äëÿ àíîíñà";
-$MESS ['T_IBLOCK_DESC_NEWS_TEXT'] = "Âûâîäèòü òåêñò àíîíñà";
+$MESS ['T_IBLOCK_DESC_NEWS_DATE'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð´Ð°Ñ‚Ñƒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['T_IBLOCK_DESC_NEWS_NAME'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['T_IBLOCK_DESC_NEWS_PICTURE'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð°Ð½Ð¾Ð½ÑÐ°";
+$MESS ['T_IBLOCK_DESC_NEWS_TEXT'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ‚ÐµÐºÑÑ‚ Ð°Ð½Ð¾Ð½ÑÐ°";
 ?>

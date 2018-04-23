@@ -1,3 +1,3 @@
 <?
-$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools Ïðèâÿçêà ê äèðåêòîðèè (íà ñåðâåðå)";
+$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools ÐŸÑ€Ð¸Ð²ÑÐ·ÐºÐ° Ðº Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ð¸ (Ð½Ð° ÑÐµÑ€Ð²ÐµÑ€Ðµ)";
 ?>

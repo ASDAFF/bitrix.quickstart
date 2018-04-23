@@ -49,8 +49,8 @@ if(!window.voteScript) window.voteScript =
 	},
 	<?
 	//16*
-	//Интерфейсный JavaScript
-	//хороший кандидат на "генерализацию"
+	//РРЅС‚РµСЂС„РµР№СЃРЅС‹Р№ JavaScript
+	//С…РѕСЂРѕС€РёР№ РєР°РЅРґРёРґР°С‚ РЅР° "РіРµРЅРµСЂР°Р»РёР·Р°С†РёСЋ"
 	?>
 	do_vote: function(div, parent_id, arParams)
 	{
@@ -64,7 +64,7 @@ if(!window.voteScript) window.voteScript =
 			var obContainer = document.getElementById(parent_id);
 			if (obContainer)
 			{
-				//16a Мы предполагаем, что шаблон содержит только один элемент (например div или table)
+				//16a РњС‹ РїСЂРµРґРїРѕР»Р°РіР°РµРј, С‡С‚Рѕ С€Р°Р±Р»РѕРЅ СЃРѕРґРµСЂР¶РёС‚ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЌР»РµРјРµРЅС‚ (РЅР°РїСЂРёРјРµСЂ div РёР»Рё table)
 				var obResult = document.createElement("DIV");
 				obResult.innerHTML = data;
 				obContainer.parentNode.replaceChild(obResult.firstChild, obContainer);
@@ -75,13 +75,13 @@ if(!window.voteScript) window.voteScript =
 
 		<?
 		//17*
-		//Запрос будет отослан напрямую компоненту.
+		//Р—Р°РїСЂРѕСЃ Р±СѓРґРµС‚ РѕС‚РѕСЃР»Р°РЅ РЅР°РїСЂСЏРјСѓСЋ РєРѕРјРїРѕРЅРµРЅС‚Сѓ.
 		?>
 		var url = '/bitrix/components/mcart.libereya/libereya.vote/component.php'
 
 		<?
 		//18*
-		//Добиваем параметры поста выбором пользователя
+		//Р”РѕР±РёРІР°РµРј РїР°СЂР°РјРµС‚СЂС‹ РїРѕСЃС‚Р° РІС‹Р±РѕСЂРѕРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 		?>
 		arParams['vote'] = 'Y';
 		arParams['vote_id'] = vote_id;
@@ -91,22 +91,22 @@ if(!window.voteScript) window.voteScript =
 		CPHttpRequest.SetAction(TID, __handler);
 		<?
 		//19*
-		//Стандартная библиотека была чуть-чуть поправлена
-		//чтобы могла отсылать параметры - массивы и массивы массивов и ...
+		//РЎС‚Р°РЅРґР°СЂС‚РЅР°СЏ Р±РёР±Р»РёРѕС‚РµРєР° Р±С‹Р»Р° С‡СѓС‚СЊ-С‡СѓС‚СЊ РїРѕРїСЂР°РІР»РµРЅР°
+		//С‡С‚РѕР±С‹ РјРѕРіР»Р° РѕС‚СЃС‹Р»Р°С‚СЊ РїР°СЂР°РјРµС‚СЂС‹ - РјР°СЃСЃРёРІС‹ Рё РјР°СЃСЃРёРІС‹ РјР°СЃСЃРёРІРѕРІ Рё ...
 		?>
 		CPHttpRequest.Post(TID, url, arParams);
 		<?
 		//20*
-		//Продолжение экскурсии в файле component.php (начало)
+		//РџСЂРѕРґРѕР»Р¶РµРЅРёРµ СЌРєСЃРєСѓСЂСЃРёРё РІ С„Р°Р№Р»Рµ component.php (РЅР°С‡Р°Р»Рѕ)
 		?>
 	}
 }
 </script>
 <?
 //10*
-//Обратите внимание на id этого div'а
-//Именого его (div'а) содержимое и будет заменяться
-//результатом запроса
+//РћР±СЂР°С‚РёС‚Рµ РІРЅРёРјР°РЅРёРµ РЅР° id СЌС‚РѕРіРѕ div'Р°
+//РРјРµРЅРѕРіРѕ РµРіРѕ (div'Р°) СЃРѕРґРµСЂР¶РёРјРѕРµ Рё Р±СѓРґРµС‚ Р·Р°РјРµРЅСЏС‚СЊСЃСЏ
+//СЂРµР·СѓР»СЊС‚Р°С‚РѕРј Р·Р°РїСЂРѕСЃР°
 ?>
 
 <table border="0" cellspacing="0" cellpadding="0">
@@ -133,10 +133,10 @@ if(!window.voteScript) window.voteScript =
 				<?if(round($DISPLAY_VALUE) > $i):?>
 					<td><div id="vote_<?echo $arResult["ID"]?>_<?echo $i?>" class="star-active star-voted" title="<?echo $name?>" onmouseover="voteScript.trace_vote(this, true);" onmouseout="voteScript.trace_vote(this, false)" onclick="<?echo htmlspecialcharsbx($onclick);
 //11*
-//Вызов функции, которая сформирует, отошлет и обработает запрос
-//Первый параметр - понадобится для определения величины голоса
-//Второй - это id контейнера для "замены" ответом
-//Третий - содержит ключ к параметрам
+//Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё, РєРѕС‚РѕСЂР°СЏ СЃС„РѕСЂРјРёСЂСѓРµС‚, РѕС‚РѕС€Р»РµС‚ Рё РѕР±СЂР°Р±РѕС‚Р°РµС‚ Р·Р°РїСЂРѕСЃ
+//РџРµСЂРІС‹Р№ РїР°СЂР°РјРµС‚СЂ - РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ РІРµР»РёС‡РёРЅС‹ РіРѕР»РѕСЃР°
+//Р’С‚РѕСЂРѕР№ - СЌС‚Рѕ id РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ "Р·Р°РјРµРЅС‹" РѕС‚РІРµС‚РѕРј
+//РўСЂРµС‚РёР№ - СЃРѕРґРµСЂР¶РёС‚ РєР»СЋС‡ Рє РїР°СЂР°РјРµС‚СЂР°Рј
 ?>"></div></td>
 				<?else:?>
 					<td><div id="vote_<?echo $arResult["ID"]?>_<?echo $i?>" class="star-active star-empty" title="<?echo $name?>" onmouseover="voteScript.trace_vote(this, true);" onmouseout="voteScript.trace_vote(this, false)" onclick="<?echo htmlspecialcharsbx($onclick)?>"></div></td>
@@ -157,5 +157,5 @@ if(!window.voteScript) window.voteScript =
 </table>
 </div><?
 //12*
-//Продолжение экскурсии в файле component.php (конец)
+//РџСЂРѕРґРѕР»Р¶РµРЅРёРµ СЌРєСЃРєСѓСЂСЃРёРё РІ С„Р°Р№Р»Рµ component.php (РєРѕРЅРµС†)
 ?>

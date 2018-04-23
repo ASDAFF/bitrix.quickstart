@@ -1,305 +1,305 @@
 <?
-$MESS["IMAGINWEB_SMS_VOZMOJNOSTI"] = "Модуль позволяет быстро подключить к интернет-магазину SMS рассылку, для шлюзов:<br/>
-1. <a target=\"_blank\" href=\"http://mainsms.ru/\">mainSMS</a>(Одна из самых низких цен за SMS по России, высокая скорость доставки, в качестве теста 50 смс, всегда 0,15 рубля!) Не нужно регистрировать имя отправителя!<br/>
-2. <a target=\"_blank\" href=\"http://kompeito.ru/\">Kompeito</a>(Одна из самых низких цен за SMS по России, высокая скорость доставки, в качестве теста 40 смс, максимально 0,25 рубля!)<br/>
-3. <a target=\"_blank\" href=\"http://www.infosmska.ru/\">InfoSMSka</a>(Одна из самых низких цен за SMS по России, высокая скорость доставки, в качестве теста 11 смс, максимально 0,35 рубля)<br/>
-4. <a target=\"_blank\" href=\"http://www.bytehand.com/\">bytehand.com</a>(Одна из самых низких цен за SMS по России, высокая скорость доставки, в качестве теста 20 смс, максимально 0,40 рубля) Накопительные скидки!<br/>
+$MESS["IMAGINWEB_SMS_VOZMOJNOSTI"] = "РњРѕРґСѓР»СЊ РїРѕР·РІРѕР»СЏРµС‚ Р±С‹СЃС‚СЂРѕ РїРѕРґРєР»СЋС‡РёС‚СЊ Рє РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅСѓ SMS СЂР°СЃСЃС‹Р»РєСѓ, РґР»СЏ С€Р»СЋР·РѕРІ:<br/>
+1. <a target=\"_blank\" href=\"http://mainsms.ru/\">mainSMS</a>(РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° SMS РїРѕ Р РѕСЃСЃРёРё, РІС‹СЃРѕРєР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 50 СЃРјСЃ, РІСЃРµРіРґР° 0,15 СЂСѓР±Р»СЏ!) РќРµ РЅСѓР¶РЅРѕ СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ РёРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ!<br/>
+2. <a target=\"_blank\" href=\"http://kompeito.ru/\">Kompeito</a>(РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° SMS РїРѕ Р РѕСЃСЃРёРё, РІС‹СЃРѕРєР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 40 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,25 СЂСѓР±Р»СЏ!)<br/>
+3. <a target=\"_blank\" href=\"http://www.infosmska.ru/\">InfoSMSka</a>(РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° SMS РїРѕ Р РѕСЃСЃРёРё, РІС‹СЃРѕРєР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 11 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,35 СЂСѓР±Р»СЏ)<br/>
+4. <a target=\"_blank\" href=\"http://www.bytehand.com/\">bytehand.com</a>(РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° SMS РїРѕ Р РѕСЃСЃРёРё, РІС‹СЃРѕРєР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 20 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,40 СЂСѓР±Р»СЏ) РќР°РєРѕРїРёС‚РµР»СЊРЅС‹Рµ СЃРєРёРґРєРё!<br/>
 5. <a target=\"_blank\" href=\"http://www.imobis.ru/\">Imobis.ru</a><br/>
-6. <a target=\"_blank\" href=\"http://www.axtele.com/\">Axtelecom</a> имеет прямые подключения к федеральным операторам сотовой связи — «МТС», «Билайн», «Мегафон». (Высокое качество и скорость доставки)<br/>
-7. <a target=\"_blank\" href=\"http://www.mobilmoney.ru/\">МобилМаниТелеком</a>(в качестве теста 14 смс, максимально 0,7 рубля)<br/>
-8. <a target=\"_blank\" href=\"http://TurboSMS.ua\">TurboSMS.ua</a> (в качестве теста 10 смс, максимально 0,16 гривны)<br/>
-9. <a href=\"http://www.epochtasms.ru\" target=\"_blank\">ePochtaSMS</a> (для теста 10 смс, максимально 0,45 рубля и 0,13 гривны)<br/>
+6. <a target=\"_blank\" href=\"http://www.axtele.com/\">Axtelecom</a> РёРјРµРµС‚ РїСЂСЏРјС‹Рµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє С„РµРґРµСЂР°Р»СЊРЅС‹Рј РѕРїРµСЂР°С‚РѕСЂР°Рј СЃРѕС‚РѕРІРѕР№ СЃРІСЏР·Рё вЂ” В«РњРўРЎВ», В«Р‘РёР»Р°Р№РЅВ», В«РњРµРіР°С„РѕРЅВ». (Р’С‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ Рё СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё)<br/>
+7. <a target=\"_blank\" href=\"http://www.mobilmoney.ru/\">РњРѕР±РёР»РњР°РЅРёРўРµР»РµРєРѕРј</a>(РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 14 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,7 СЂСѓР±Р»СЏ)<br/>
+8. <a target=\"_blank\" href=\"http://TurboSMS.ua\">TurboSMS.ua</a> (РІ РєР°С‡РµСЃС‚РІРµ С‚РµСЃС‚Р° 10 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,16 РіСЂРёРІРЅС‹)<br/>
+9. <a href=\"http://www.epochtasms.ru\" target=\"_blank\">ePochtaSMS</a> (РґР»СЏ С‚РµСЃС‚Р° 10 СЃРјСЃ, РјР°РєСЃРёРјР°Р»СЊРЅРѕ 0,45 СЂСѓР±Р»СЏ Рё 0,13 РіСЂРёРІРЅС‹)<br/>
 10. <a href=\"http://giper.mobi\" target=\"_blank\">giper.mobi</a><br/><br/>
-стоимость зависит от объема, минимальная цена в большинстве шлюзов от 0,15 руб. или от 0,12 гривны.";
-$MESS["IMAGINWEB_SMS_BLAGODARIM"] = "Благодарим за использование нашего модуля,<br>
-					по вопросам развития и предложений (мы постараемся оперативно вносить исправления): support@imaginweb.ru (24/7 - круглосуточно),<br>
-					skype: imaginwebpartner (если доступен)<br/>
-					+7 (495) 543-81-62 (в будние дни с 10:00 до 18:00 по московскому времени)<br>
-					Наш сайт <a target=\"_blank\" href=\"imaginweb.ru\">imaginweb.ru</a><br><br/>
-					Проголосуйте и/или оставьте отзыв на <a href=\"http://marketplace.1c-bitrix.ru/solutions/imaginweb.sms/\" name=\"\" target=\"_blank\">MarketPlace</a>, это поможет нам развивать и поддерживать этот модуль!
+СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РІРёСЃРёС‚ РѕС‚ РѕР±СЉРµРјР°, РјРёРЅРёРјР°Р»СЊРЅР°СЏ С†РµРЅР° РІ Р±РѕР»СЊС€РёРЅСЃС‚РІРµ С€Р»СЋР·РѕРІ РѕС‚ 0,15 СЂСѓР±. РёР»Рё РѕС‚ 0,12 РіСЂРёРІРЅС‹.";
+$MESS["IMAGINWEB_SMS_BLAGODARIM"] = "Р‘Р»Р°РіРѕРґР°СЂРёРј Р·Р° РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РЅР°С€РµРіРѕ РјРѕРґСѓР»СЏ,<br>
+					РїРѕ РІРѕРїСЂРѕСЃР°Рј СЂР°Р·РІРёС‚РёСЏ Рё РїСЂРµРґР»РѕР¶РµРЅРёР№ (РјС‹ РїРѕСЃС‚Р°СЂР°РµРјСЃСЏ РѕРїРµСЂР°С‚РёРІРЅРѕ РІРЅРѕСЃРёС‚СЊ РёСЃРїСЂР°РІР»РµРЅРёСЏ): support@imaginweb.ru (24/7 - РєСЂСѓРіР»РѕСЃСѓС‚РѕС‡РЅРѕ),<br>
+					skype: imaginwebpartner (РµСЃР»Рё РґРѕСЃС‚СѓРїРµРЅ)<br/>
+					+7 (495) 543-81-62 (РІ Р±СѓРґРЅРёРµ РґРЅРё СЃ 10:00 РґРѕ 18:00 РїРѕ РјРѕСЃРєРѕРІСЃРєРѕРјСѓ РІСЂРµРјРµРЅРё)<br>
+					РќР°С€ СЃР°Р№С‚ <a target=\"_blank\" href=\"imaginweb.ru\">imaginweb.ru</a><br><br/>
+					РџСЂРѕРіРѕР»РѕСЃСѓР№С‚Рµ Рё/РёР»Рё РѕСЃС‚Р°РІСЊС‚Рµ РѕС‚Р·С‹РІ РЅР° <a href=\"http://marketplace.1c-bitrix.ru/solutions/imaginweb.sms/\" name=\"\" target=\"_blank\">MarketPlace</a>, СЌС‚Рѕ РїРѕРјРѕР¶РµС‚ РЅР°Рј СЂР°Р·РІРёРІР°С‚СЊ Рё РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ СЌС‚РѕС‚ РјРѕРґСѓР»СЊ!
 ";
-$MESS["IMAGINWEB_SMS_OBSIE_NASTROYKI"] = "Общие настройки";
-$MESS["IMAGINWEB_SMS_UPRAVLENIE_SLUZOM_S"] = "Управление шлюзом (сервис для отправки СМС и отключение)";
-$MESS["IMAGINWEB_SMS_RASSYLKA_OTKLUCENA"] = "Рассылка отключена";
-$MESS["IMAGINWEB_SMS_KOD_SVOYSTVA_ZAKAZA"] = "Код свойства заказа содержащий телефон";
-$MESS["IMAGINWEB_SMS_TEKSTA_SOOBSENIY"] = "Текста сообщений (шаблоны: #ACCOUNT_NUMBER# - сгенерированный номер заказа, #ORDER_NUMBER# - ID заказа, #ORDER_SUMM# - сумма заказа, #PRICE_DELIVERY# - стоимость доставки, #PRICE# - полная стоимость).";
-$MESS["IMAGINWEB_SMS_NOVYY_ZAKAZ"] = "Новый заказ";
-$MESS["IMAGINWEB_SMS_OTPRAVLATQ_KOPIU_NA"] = "Отправлять копию на телефон №";
-$MESS["IMAGINWEB_SMS_OPLATA_ZAKAZA"] = "Оплата заказа";
-$MESS["IMAGINWEB_SMS_OBAZATELQNYE_POLA"] = "обязательные поля";
-$MESS["IMAGINWEB_SMS_PRIMECHANIE"] = "ПРИ ПУСТОМ ПОЛЕ СООБЩЕНИЕ ОТПРАВЛЕНО НЕ БУДЕТ";
-$MESS["IMAGINWEB_SMS_OBRABATYVAEMYE_SOBYT"] = "Обрабатываемые события";
+$MESS["IMAGINWEB_SMS_OBSIE_NASTROYKI"] = "РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё";
+$MESS["IMAGINWEB_SMS_UPRAVLENIE_SLUZOM_S"] = "РЈРїСЂР°РІР»РµРЅРёРµ С€Р»СЋР·РѕРј (СЃРµСЂРІРёСЃ РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ Рё РѕС‚РєР»СЋС‡РµРЅРёРµ)";
+$MESS["IMAGINWEB_SMS_RASSYLKA_OTKLUCENA"] = "Р Р°СЃСЃС‹Р»РєР° РѕС‚РєР»СЋС‡РµРЅР°";
+$MESS["IMAGINWEB_SMS_KOD_SVOYSTVA_ZAKAZA"] = "РљРѕРґ СЃРІРѕР№СЃС‚РІР° Р·Р°РєР°Р·Р° СЃРѕРґРµСЂР¶Р°С‰РёР№ С‚РµР»РµС„РѕРЅ";
+$MESS["IMAGINWEB_SMS_TEKSTA_SOOBSENIY"] = "РўРµРєСЃС‚Р° СЃРѕРѕР±С‰РµРЅРёР№ (С€Р°Р±Р»РѕРЅС‹: #ACCOUNT_NUMBER# - СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРЅС‹Р№ РЅРѕРјРµСЂ Р·Р°РєР°Р·Р°, #ORDER_NUMBER# - ID Р·Р°РєР°Р·Р°, #ORDER_SUMM# - СЃСѓРјРјР° Р·Р°РєР°Р·Р°, #PRICE_DELIVERY# - СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, #PRICE# - РїРѕР»РЅР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ).";
+$MESS["IMAGINWEB_SMS_NOVYY_ZAKAZ"] = "РќРѕРІС‹Р№ Р·Р°РєР°Р·";
+$MESS["IMAGINWEB_SMS_OTPRAVLATQ_KOPIU_NA"] = "РћС‚РїСЂР°РІР»СЏС‚СЊ РєРѕРїРёСЋ РЅР° С‚РµР»РµС„РѕРЅ в„–";
+$MESS["IMAGINWEB_SMS_OPLATA_ZAKAZA"] = "РћРїР»Р°С‚Р° Р·Р°РєР°Р·Р°";
+$MESS["IMAGINWEB_SMS_OBAZATELQNYE_POLA"] = "РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ";
+$MESS["IMAGINWEB_SMS_PRIMECHANIE"] = "РџР Р РџРЈРЎРўРћРњ РџРћР›Р• РЎРћРћР‘Р©Р•РќРР• РћРўРџР РђР’Р›Р•РќРћ РќР• Р‘РЈР”Р•Рў";
+$MESS["IMAGINWEB_SMS_OBRABATYVAEMYE_SOBYT"] = "РћР±СЂР°Р±Р°С‚С‹РІР°РµРјС‹Рµ СЃРѕР±С‹С‚РёСЏ";
 $MESS["IMAGINWEB_SMS_SOBYTIA"] = "
-					На данный момент модуль обрабатывает следующие <a target=\"_blank\" href=\"http://dev.1c-bitrix.ru/api_help/sale/sale_events.php\" name=\"\">события</a> (подключение модуля не требуется):<br><br> 
-					1. для нового заказа - OnSaleComponentOrderOneStepComplete и OnSaleComponentOrderComplete<br>
-					2. успешная оплата заказа - OnSalePayOrder<br>
-                                        3. доставка разрешена - OnSaleDeliveryOrder<br>
-                                        4. заказ отменён - OnSaleCancelOrder<br>
-                                        5. любое кол-во статусов заказов(изменение) - OnSaleStatusOrder<br><br>
+					РќР° РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РјРѕРґСѓР»СЊ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚ СЃР»РµРґСѓСЋС‰РёРµ <a target=\"_blank\" href=\"http://dev.1c-bitrix.ru/api_help/sale/sale_events.php\" name=\"\">СЃРѕР±С‹С‚РёСЏ</a> (РїРѕРґРєР»СЋС‡РµРЅРёРµ РјРѕРґСѓР»СЏ РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ):<br><br> 
+					1. РґР»СЏ РЅРѕРІРѕРіРѕ Р·Р°РєР°Р·Р° - OnSaleComponentOrderOneStepComplete Рё OnSaleComponentOrderComplete<br>
+					2. СѓСЃРїРµС€РЅР°СЏ РѕРїР»Р°С‚Р° Р·Р°РєР°Р·Р° - OnSalePayOrder<br>
+                                        3. РґРѕСЃС‚Р°РІРєР° СЂР°Р·СЂРµС€РµРЅР° - OnSaleDeliveryOrder<br>
+                                        4. Р·Р°РєР°Р· РѕС‚РјРµРЅС‘РЅ - OnSaleCancelOrder<br>
+                                        5. Р»СЋР±РѕРµ РєРѕР»-РІРѕ СЃС‚Р°С‚СѓСЃРѕРІ Р·Р°РєР°Р·РѕРІ(РёР·РјРµРЅРµРЅРёРµ) - OnSaleStatusOrder<br><br>
 					
-					<span style=\"color: red;\">ВНИМАНИЕ! номер телефона берётся из свойства заказа указанного в настройках на вкладке \"интернет-магазин\"<br>
-					формат телефона не важен при любом использовании в рамках модуля, например(варианты могут быть любыми): +7 (925) 543-8162 или 8-925-5438162 будет означать для отправки +79255438162, или 029-543-81-62 = +380295438162<br>
-					НЕТ НЕОБХОДИМОСТИ ПРОВЕРКИ ФОРМАТА НОМЕРА ТЕЛЕФОНА					</span>
+					<span style=\"color: red;\">Р’РќРРњРђРќРР•! РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р±РµСЂС‘С‚СЃСЏ РёР· СЃРІРѕР№СЃС‚РІР° Р·Р°РєР°Р·Р° СѓРєР°Р·Р°РЅРЅРѕРіРѕ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РЅР° РІРєР»Р°РґРєРµ \"РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ\"<br>
+					С„РѕСЂРјР°С‚ С‚РµР»РµС„РѕРЅР° РЅРµ РІР°Р¶РµРЅ РїСЂРё Р»СЋР±РѕРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё РІ СЂР°РјРєР°С… РјРѕРґСѓР»СЏ, РЅР°РїСЂРёРјРµСЂ(РІР°СЂРёР°РЅС‚С‹ РјРѕРіСѓС‚ Р±С‹С‚СЊ Р»СЋР±С‹РјРё): +7 (925) 543-8162 РёР»Рё 8-925-5438162 Р±СѓРґРµС‚ РѕР·РЅР°С‡Р°С‚СЊ РґР»СЏ РѕС‚РїСЂР°РІРєРё +79255438162, РёР»Рё 029-543-81-62 = +380295438162<br>
+					РќР•Рў РќР•РћР‘РҐРћР”РРњРћРЎРўР РџР РћР’Р•Р РљР Р¤РћР РњРђРўРђ РќРћРњР•Р Рђ РўР•Р›Р•Р¤РћРќРђ					</span>
 ";
-$MESS["IMAGINWEB_SMS_OPISANIE_ISPOLQZOVAN"] = "Описание использования API";
-$MESS["IMAGINWEB_SMS_API"] = "Перед использованием API при прямом использовании рассылки, необходимо подключить модуль<br>
-					пример отправки SMS<br><br>";
+$MESS["IMAGINWEB_SMS_OPISANIE_ISPOLQZOVAN"] = "РћРїРёСЃР°РЅРёРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ API";
+$MESS["IMAGINWEB_SMS_API"] = "РџРµСЂРµРґ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј API РїСЂРё РїСЂСЏРјРѕРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё СЂР°СЃСЃС‹Р»РєРё, РЅРµРѕР±С…РѕРґРёРјРѕ РїРѕРґРєР»СЋС‡РёС‚СЊ РјРѕРґСѓР»СЊ<br>
+					РїСЂРёРјРµСЂ РѕС‚РїСЂР°РІРєРё SMS<br><br>";
 $MESS["IMAGINWEB_SMS_CIWEBSMS"] = "
-					<div class=\"heading\">Описание класса CIWebSMS:</div>
-					методы проверки и правки номера телефона:<br>";
-$MESS["IMAGINWEB_SMS_CIWEBSMS_2"] = " Разбирает телефон в любом формате(не менее 10 знаков) и возвращает строку 11,12,14-ти значный номер телефона (в зависимости от страны) слитно или пустую строку в случае неудачи<br><br>";
-$MESS["IMAGINWEB_SMS_CIWEBSMS_3"] = "проверяет номер телефона 11-14 цифр, в случае успеха возвращает true, в случае не удачи - false и описание ошибки в свойство  объекта при его наличии<br><br>";
-$MESS["IMAGINWEB_SMS_CIWEBSMS_4"] = "Поля не обязательны. GATE - (может принимать значения: turbosms.ua или epochtasms. по умолчанию - текущий шлюз)<br/>LOGIN - логин шлюза; PASSWORD - пароль шлюза; ORIGINATOR - имя отправителя<br/>отсылает SMS сообщение message, в кодировке encoding на номер телефона phone, c именем отправителя originator, предварительно форматируя его методом MakePhoneNumber, после проверяя методом CheckPhoneNumber, при выбранном шлюзе SMS рассылки на вкладке настроек<br/><br/>";
-$MESS["IMAGINWEB_SMS_CIWEBSMS_5"] = " - параметры запроса как у CIWebSMS::Send, возвращает текущий баланс в кредитах, пока только для ePochtaSMS и TurboSMS.ua.";
-$MESS["IMAGINWEB_SMS_MOBILMANITELEKOM"] = "МобилМаниТелеком";
-$MESS["IMAGINWEB_SMS_NASTROYKI_DOSTUPA"] = "Настройки доступа";
-$MESS["IMAGINWEB_SMS_PODKLUCENIA"] = "подключения:";
-$MESS["IMAGINWEB_SMS_LOGIN"] = "Логин:";
-$MESS["IMAGINWEB_SMS_PAROLQ"] = "Пароль:";
-$MESS["IMAGINWEB_SMS_NASTROYKI_PODKLUCENI"] = "Настройки подключения";
-$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELQ"] = "Поле отправитель";
-$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELQ_2"] = "Поле отправитель (14 цифровых символов или 11 цифробуквенных (английские буквы и цифры))";
-$MESS["IMAGINWEB_SMS_INTERNET_MAGAZIN"] = "Интернет-магазин";
-$MESS["IMAGINWEB_SMS_NASTROYKI_INTERNET_M"] = "Настройки интернет-магазина";
-$MESS["IMAGINWEB_SMS_OPISANIE"] = "Описание";
-$MESS["IMAGINWEB_SMS_SETTINGS"] = "Настройки сервиса рассылки";
-$MESS["IMAGINWEB_SMS_SETTING_PARAMS"] = "Настройка параметров сервиса рассылки";
-$MESS["IMAGINWEB_SMS_DOSTUP"] = "Доступ";
-$MESS["IMAGINWEB_SMS_BALANS_KREDITOV"] = "Баланс (кредитов):";
-$MESS["IMAGINWEB_SMS_DLA_AKTIVACII_SMS_SL"] = "Для активации СМС шлюза необходимо в ";
-$MESS["IMAGINWEB_SMS_NASTROYKAH_POLQZVATE"] = "настройках пользвателя";
-$MESS["IMAGINWEB_SMS_NA_VKLADKE"] = "на вкладке";
-$MESS["IMAGINWEB_SMS_AKTIVIROVATQ_ISPOLQZ"] = "активировать использование";
-$MESS["IMAGINWEB_SMS_DLA_ETOGO_V_PUNKTE"] = "Для этого в пункте ";
-$MESS["IMAGINWEB_SMS_VKLUCITQ"] = "Включить";
-$MESS["IMAGINWEB_SMS_INTERFEYS"] = "интерфейс";
-$MESS["IMAGINWEB_SMS_NEOBHODIMO_VYBRATQ_P"] = "необходимо выбрать пункт ";
-$MESS["IMAGINWEB_SMS_DA"] = "Да";
-$MESS["IMAGINWEB_SMS_V_PUNKTE"] = "В пункте ";
-$MESS["IMAGINWEB_SMS_REJIM"] = "Режим";
-$MESS["IMAGINWEB_SMS_INTERFEYSA"] = "интерфейса";
-$MESS["IMAGINWEB_SMS_VYBRATQ_LIBO"] = "выбрать  либо ";
-$MESS["IMAGINWEB_SMS_REALQNAA_OTPRAVKA"] = "Реальная отправка";
-$MESS["IMAGINWEB_SMS_LIBO"] = "либо ";
-$MESS["IMAGINWEB_SMS_TESTOVYY_REJIM"] = "Тестовый режим";
-$MESS["IMAGINWEB_SMS_V_SLUCAE_VYBORA_REJI"] = "В случае выбора режима ";
-$MESS["IMAGINWEB_SMS_REALQNOY_OTPRAVKI"] = "Реальной отправки";
-$MESS["IMAGINWEB_SMS_SOOBSENIA_BUDUT_OTPR"] = "сообщения будут отправлены незамедлительно после поступления запроса на шлюз. В  случае выбора ";
-$MESS["IMAGINWEB_SMS_TESTOVOGO_REJIMA"] = "Тестового режима";
-$MESS["IMAGINWEB_SMS_SOOBSENIA_OTPRAVLENY"] = "сообщения отправлены не будут. Но будут созданы  задачи со статусом ";
-$MESS["IMAGINWEB_SMS_NE_GOTOVO"] = "Не готово";
-$MESS["IMAGINWEB_SMS_ETO_SVIDETELQSTVUET"] = "Это свидетельствует о том, что было успешное  подключение к шлюзу и данные на сервер были переданы.";
-$MESS["IMAGINWEB_SMS_NAZVANIE_STATUSA"] = "Название статуса";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNYE_SABLO"] = "Дополнительные шаблоны";
-$MESS["IMAGINWEB_SMS_TELEFON"] = "Телефон:";
-$MESS["IMAGINWEB_SMS_SOOBSENIE"] = "Сообщение:";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS"] = "Дополнительное сообщение для события: \"Новый заказ\"";
-$MESS["IMAGINWEB_SMS_TELEFON1"] = "Телефон: ";
-$MESS["IMAGINWEB_SMS_SOOBSENIE1"] = "Сообщение";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS1"] = "Дополнительное сообщение для события: \"Оплата заказа\"";
-$MESS["IMAGINWEB_SMS_OTMENA_ZAKAZA"] = "Отмена заказа";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS2"] = "Дополнительное сообщение для события: \"Отмена заказа\"";
-$MESS["IMAGINWEB_SMS_DOSTAVKA_RAZRESENA"] = "Доставка разрешена";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS3"] = "Дополнительное сообщение для события: \"Доставка разрешена\"";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS4"] = "Дополнительное сообщение для смены статусов заказа.";
-$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS5"] = "Дополнительное сообщение для смены статуса на: \"";
-$MESS["IMAGINWEB_SMS_STATUS_ZAKAZA"] = "Статус заказа";
-$MESS["IMAGINWEB_SMS_NAZVANIE_SLUJBY_DOST"] = "Название службы доставки";
-$MESS["IMAGINWEB_SMS_NOMER_DOKUMENTA_OTGR"] = "Номер документа отгрузки";
-$MESS["IMAGINWEB_SMS_DATA_DOKUMENTA_OTGRU"] = "Дата документа отгрузки";
-$MESS["IMAGINWEB_SMS_UBEDITESQ_CTO_U_VSE"] = "Убедитесь, что у всех необходимых ";
-$MESS["IMAGINWEB_SMS_SVOYSTV_ZAKAZA"] = "свойств заказа";
-$MESS["IMAGINWEB_SMS_ESTQ_MNEMONICESKIY"] = "есть \"мнемонический код";
-$MESS["IMAGINWEB_SMS_VNIMANIE_DLA_RABO"] = "ВНИМАНИЕ!!! Для работы данного шлюза, необходимо подключить";
-$MESS["IMAGINWEB_SMS_KOMPONENTY"] = "Компоненты
+					<div class=\"heading\">РћРїРёСЃР°РЅРёРµ РєР»Р°СЃСЃР° CIWebSMS:</div>
+					РјРµС‚РѕРґС‹ РїСЂРѕРІРµСЂРєРё Рё РїСЂР°РІРєРё РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР°:<br>";
+$MESS["IMAGINWEB_SMS_CIWEBSMS_2"] = " Р Р°Р·Р±РёСЂР°РµС‚ С‚РµР»РµС„РѕРЅ РІ Р»СЋР±РѕРј С„РѕСЂРјР°С‚Рµ(РЅРµ РјРµРЅРµРµ 10 Р·РЅР°РєРѕРІ) Рё РІРѕР·РІСЂР°С‰Р°РµС‚ СЃС‚СЂРѕРєСѓ 11,12,14-С‚Рё Р·РЅР°С‡РЅС‹Р№ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° (РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ СЃС‚СЂР°РЅС‹) СЃР»РёС‚РЅРѕ РёР»Рё РїСѓСЃС‚СѓСЋ СЃС‚СЂРѕРєСѓ РІ СЃР»СѓС‡Р°Рµ РЅРµСѓРґР°С‡Рё<br><br>";
+$MESS["IMAGINWEB_SMS_CIWEBSMS_3"] = "РїСЂРѕРІРµСЂСЏРµС‚ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° 11-14 С†РёС„СЂ, РІ СЃР»СѓС‡Р°Рµ СѓСЃРїРµС…Р° РІРѕР·РІСЂР°С‰Р°РµС‚ true, РІ СЃР»СѓС‡Р°Рµ РЅРµ СѓРґР°С‡Рё - false Рё РѕРїРёСЃР°РЅРёРµ РѕС€РёР±РєРё РІ СЃРІРѕР№СЃС‚РІРѕ  РѕР±СЉРµРєС‚Р° РїСЂРё РµРіРѕ РЅР°Р»РёС‡РёРё<br><br>";
+$MESS["IMAGINWEB_SMS_CIWEBSMS_4"] = "РџРѕР»СЏ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹. GATE - (РјРѕР¶РµС‚ РїСЂРёРЅРёРјР°С‚СЊ Р·РЅР°С‡РµРЅРёСЏ: turbosms.ua РёР»Рё epochtasms. РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ - С‚РµРєСѓС‰РёР№ С€Р»СЋР·)<br/>LOGIN - Р»РѕРіРёРЅ С€Р»СЋР·Р°; PASSWORD - РїР°СЂРѕР»СЊ С€Р»СЋР·Р°; ORIGINATOR - РёРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ<br/>РѕС‚СЃС‹Р»Р°РµС‚ SMS СЃРѕРѕР±С‰РµРЅРёРµ message, РІ РєРѕРґРёСЂРѕРІРєРµ encoding РЅР° РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° phone, c РёРјРµРЅРµРј РѕС‚РїСЂР°РІРёС‚РµР»СЏ originator, РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ С„РѕСЂРјР°С‚РёСЂСѓСЏ РµРіРѕ РјРµС‚РѕРґРѕРј MakePhoneNumber, РїРѕСЃР»Рµ РїСЂРѕРІРµСЂСЏСЏ РјРµС‚РѕРґРѕРј CheckPhoneNumber, РїСЂРё РІС‹Р±СЂР°РЅРЅРѕРј С€Р»СЋР·Рµ SMS СЂР°СЃСЃС‹Р»РєРё РЅР° РІРєР»Р°РґРєРµ РЅР°СЃС‚СЂРѕРµРє<br/><br/>";
+$MESS["IMAGINWEB_SMS_CIWEBSMS_5"] = " - РїР°СЂР°РјРµС‚СЂС‹ Р·Р°РїСЂРѕСЃР° РєР°Рє Сѓ CIWebSMS::Send, РІРѕР·РІСЂР°С‰Р°РµС‚ С‚РµРєСѓС‰РёР№ Р±Р°Р»Р°РЅСЃ РІ РєСЂРµРґРёС‚Р°С…, РїРѕРєР° С‚РѕР»СЊРєРѕ РґР»СЏ ePochtaSMS Рё TurboSMS.ua.";
+$MESS["IMAGINWEB_SMS_MOBILMANITELEKOM"] = "РњРѕР±РёР»РњР°РЅРёРўРµР»РµРєРѕРј";
+$MESS["IMAGINWEB_SMS_NASTROYKI_DOSTUPA"] = "РќР°СЃС‚СЂРѕР№РєРё РґРѕСЃС‚СѓРїР°";
+$MESS["IMAGINWEB_SMS_PODKLUCENIA"] = "РїРѕРґРєР»СЋС‡РµРЅРёСЏ:";
+$MESS["IMAGINWEB_SMS_LOGIN"] = "Р›РѕРіРёРЅ:";
+$MESS["IMAGINWEB_SMS_PAROLQ"] = "РџР°СЂРѕР»СЊ:";
+$MESS["IMAGINWEB_SMS_NASTROYKI_PODKLUCENI"] = "РќР°СЃС‚СЂРѕР№РєРё РїРѕРґРєР»СЋС‡РµРЅРёСЏ";
+$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELQ"] = "РџРѕР»Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЊ";
+$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELQ_2"] = "РџРѕР»Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЊ (14 С†РёС„СЂРѕРІС‹С… СЃРёРјРІРѕР»РѕРІ РёР»Рё 11 С†РёС„СЂРѕР±СѓРєРІРµРЅРЅС‹С… (Р°РЅРіР»РёР№СЃРєРёРµ Р±СѓРєРІС‹ Рё С†РёС„СЂС‹))";
+$MESS["IMAGINWEB_SMS_INTERNET_MAGAZIN"] = "РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ";
+$MESS["IMAGINWEB_SMS_NASTROYKI_INTERNET_M"] = "РќР°СЃС‚СЂРѕР№РєРё РёРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅР°";
+$MESS["IMAGINWEB_SMS_OPISANIE"] = "РћРїРёСЃР°РЅРёРµ";
+$MESS["IMAGINWEB_SMS_SETTINGS"] = "РќР°СЃС‚СЂРѕР№РєРё СЃРµСЂРІРёСЃР° СЂР°СЃСЃС‹Р»РєРё";
+$MESS["IMAGINWEB_SMS_SETTING_PARAMS"] = "РќР°СЃС‚СЂРѕР№РєР° РїР°СЂР°РјРµС‚СЂРѕРІ СЃРµСЂРІРёСЃР° СЂР°СЃСЃС‹Р»РєРё";
+$MESS["IMAGINWEB_SMS_DOSTUP"] = "Р”РѕСЃС‚СѓРї";
+$MESS["IMAGINWEB_SMS_BALANS_KREDITOV"] = "Р‘Р°Р»Р°РЅСЃ (РєСЂРµРґРёС‚РѕРІ):";
+$MESS["IMAGINWEB_SMS_DLA_AKTIVACII_SMS_SL"] = "Р”Р»СЏ Р°РєС‚РёРІР°С†РёРё РЎРњРЎ С€Р»СЋР·Р° РЅРµРѕР±С…РѕРґРёРјРѕ РІ ";
+$MESS["IMAGINWEB_SMS_NASTROYKAH_POLQZVATE"] = "РЅР°СЃС‚СЂРѕР№РєР°С… РїРѕР»СЊР·РІР°С‚РµР»СЏ";
+$MESS["IMAGINWEB_SMS_NA_VKLADKE"] = "РЅР° РІРєР»Р°РґРєРµ";
+$MESS["IMAGINWEB_SMS_AKTIVIROVATQ_ISPOLQZ"] = "Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ";
+$MESS["IMAGINWEB_SMS_DLA_ETOGO_V_PUNKTE"] = "Р”Р»СЏ СЌС‚РѕРіРѕ РІ РїСѓРЅРєС‚Рµ ";
+$MESS["IMAGINWEB_SMS_VKLUCITQ"] = "Р’РєР»СЋС‡РёС‚СЊ";
+$MESS["IMAGINWEB_SMS_INTERFEYS"] = "РёРЅС‚РµСЂС„РµР№СЃ";
+$MESS["IMAGINWEB_SMS_NEOBHODIMO_VYBRATQ_P"] = "РЅРµРѕР±С…РѕРґРёРјРѕ РІС‹Р±СЂР°С‚СЊ РїСѓРЅРєС‚ ";
+$MESS["IMAGINWEB_SMS_DA"] = "Р”Р°";
+$MESS["IMAGINWEB_SMS_V_PUNKTE"] = "Р’ РїСѓРЅРєС‚Рµ ";
+$MESS["IMAGINWEB_SMS_REJIM"] = "Р РµР¶РёРј";
+$MESS["IMAGINWEB_SMS_INTERFEYSA"] = "РёРЅС‚РµСЂС„РµР№СЃР°";
+$MESS["IMAGINWEB_SMS_VYBRATQ_LIBO"] = "РІС‹Р±СЂР°С‚СЊ  Р»РёР±Рѕ ";
+$MESS["IMAGINWEB_SMS_REALQNAA_OTPRAVKA"] = "Р РµР°Р»СЊРЅР°СЏ РѕС‚РїСЂР°РІРєР°";
+$MESS["IMAGINWEB_SMS_LIBO"] = "Р»РёР±Рѕ ";
+$MESS["IMAGINWEB_SMS_TESTOVYY_REJIM"] = "РўРµСЃС‚РѕРІС‹Р№ СЂРµР¶РёРј";
+$MESS["IMAGINWEB_SMS_V_SLUCAE_VYBORA_REJI"] = "Р’ СЃР»СѓС‡Р°Рµ РІС‹Р±РѕСЂР° СЂРµР¶РёРјР° ";
+$MESS["IMAGINWEB_SMS_REALQNOY_OTPRAVKI"] = "Р РµР°Р»СЊРЅРѕР№ РѕС‚РїСЂР°РІРєРё";
+$MESS["IMAGINWEB_SMS_SOOBSENIA_BUDUT_OTPR"] = "СЃРѕРѕР±С‰РµРЅРёСЏ Р±СѓРґСѓС‚ РѕС‚РїСЂР°РІР»РµРЅС‹ РЅРµР·Р°РјРµРґР»РёС‚РµР»СЊРЅРѕ РїРѕСЃР»Рµ РїРѕСЃС‚СѓРїР»РµРЅРёСЏ Р·Р°РїСЂРѕСЃР° РЅР° С€Р»СЋР·. Р’  СЃР»СѓС‡Р°Рµ РІС‹Р±РѕСЂР° ";
+$MESS["IMAGINWEB_SMS_TESTOVOGO_REJIMA"] = "РўРµСЃС‚РѕРІРѕРіРѕ СЂРµР¶РёРјР°";
+$MESS["IMAGINWEB_SMS_SOOBSENIA_OTPRAVLENY"] = "СЃРѕРѕР±С‰РµРЅРёСЏ РѕС‚РїСЂР°РІР»РµРЅС‹ РЅРµ Р±СѓРґСѓС‚. РќРѕ Р±СѓРґСѓС‚ СЃРѕР·РґР°РЅС‹  Р·Р°РґР°С‡Рё СЃРѕ СЃС‚Р°С‚СѓСЃРѕРј ";
+$MESS["IMAGINWEB_SMS_NE_GOTOVO"] = "РќРµ РіРѕС‚РѕРІРѕ";
+$MESS["IMAGINWEB_SMS_ETO_SVIDETELQSTVUET"] = "Р­С‚Рѕ СЃРІРёРґРµС‚РµР»СЊСЃС‚РІСѓРµС‚ Рѕ С‚РѕРј, С‡С‚Рѕ Р±С‹Р»Рѕ СѓСЃРїРµС€РЅРѕРµ  РїРѕРґРєР»СЋС‡РµРЅРёРµ Рє С€Р»СЋР·Сѓ Рё РґР°РЅРЅС‹Рµ РЅР° СЃРµСЂРІРµСЂ Р±С‹Р»Рё РїРµСЂРµРґР°РЅС‹.";
+$MESS["IMAGINWEB_SMS_NAZVANIE_STATUSA"] = "РќР°Р·РІР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNYE_SABLO"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ С€Р°Р±Р»РѕРЅС‹";
+$MESS["IMAGINWEB_SMS_TELEFON"] = "РўРµР»РµС„РѕРЅ:";
+$MESS["IMAGINWEB_SMS_SOOBSENIE"] = "РЎРѕРѕР±С‰РµРЅРёРµ:";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРѕР±С‹С‚РёСЏ: \"РќРѕРІС‹Р№ Р·Р°РєР°Р·\"";
+$MESS["IMAGINWEB_SMS_TELEFON1"] = "РўРµР»РµС„РѕРЅ: ";
+$MESS["IMAGINWEB_SMS_SOOBSENIE1"] = "РЎРѕРѕР±С‰РµРЅРёРµ";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS1"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРѕР±С‹С‚РёСЏ: \"РћРїР»Р°С‚Р° Р·Р°РєР°Р·Р°\"";
+$MESS["IMAGINWEB_SMS_OTMENA_ZAKAZA"] = "РћС‚РјРµРЅР° Р·Р°РєР°Р·Р°";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS2"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРѕР±С‹С‚РёСЏ: \"РћС‚РјРµРЅР° Р·Р°РєР°Р·Р°\"";
+$MESS["IMAGINWEB_SMS_DOSTAVKA_RAZRESENA"] = "Р”РѕСЃС‚Р°РІРєР° СЂР°Р·СЂРµС€РµРЅР°";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS3"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРѕР±С‹С‚РёСЏ: \"Р”РѕСЃС‚Р°РІРєР° СЂР°Р·СЂРµС€РµРЅР°\"";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS4"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРјРµРЅС‹ СЃС‚Р°С‚СѓСЃРѕРІ Р·Р°РєР°Р·Р°.";
+$MESS["IMAGINWEB_SMS_DOPOLNITELQNOE_SOOBS5"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ СЃРјРµРЅС‹ СЃС‚Р°С‚СѓСЃР° РЅР°: \"";
+$MESS["IMAGINWEB_SMS_STATUS_ZAKAZA"] = "РЎС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°";
+$MESS["IMAGINWEB_SMS_NAZVANIE_SLUJBY_DOST"] = "РќР°Р·РІР°РЅРёРµ СЃР»СѓР¶Р±С‹ РґРѕСЃС‚Р°РІРєРё";
+$MESS["IMAGINWEB_SMS_NOMER_DOKUMENTA_OTGR"] = "РќРѕРјРµСЂ РґРѕРєСѓРјРµРЅС‚Р° РѕС‚РіСЂСѓР·РєРё";
+$MESS["IMAGINWEB_SMS_DATA_DOKUMENTA_OTGRU"] = "Р”Р°С‚Р° РґРѕРєСѓРјРµРЅС‚Р° РѕС‚РіСЂСѓР·РєРё";
+$MESS["IMAGINWEB_SMS_UBEDITESQ_CTO_U_VSE"] = "РЈР±РµРґРёС‚РµСЃСЊ, С‡С‚Рѕ Сѓ РІСЃРµС… РЅРµРѕР±С…РѕРґРёРјС‹С… ";
+$MESS["IMAGINWEB_SMS_SVOYSTV_ZAKAZA"] = "СЃРІРѕР№СЃС‚РІ Р·Р°РєР°Р·Р°";
+$MESS["IMAGINWEB_SMS_ESTQ_MNEMONICESKIY"] = "РµСЃС‚СЊ \"РјРЅРµРјРѕРЅРёС‡РµСЃРєРёР№ РєРѕРґ";
+$MESS["IMAGINWEB_SMS_VNIMANIE_DLA_RABO"] = "Р’РќРРњРђРќРР•!!! Р”Р»СЏ СЂР°Р±РѕС‚С‹ РґР°РЅРЅРѕРіРѕ С€Р»СЋР·Р°, РЅРµРѕР±С…РѕРґРёРјРѕ РїРѕРґРєР»СЋС‡РёС‚СЊ";
+$MESS["IMAGINWEB_SMS_KOMPONENTY"] = "РљРѕРјРїРѕРЅРµРЅС‚С‹
 			";
-$MESS["IMAGINWEB_SMS_AVTORIZACIA_REGISTRA"] = "авторизация/регистрация/забыли пароль посредством sms";
-$MESS["IMAGINWEB_SMS_VALIDACIA_POLQZOVATE"] = "валидация пользователя или его действий посредством";
-$MESS["IMAGINWEB_SMS_NAPODOBIE"] = "наподобие";
-$MESS["IMAGINWEB_SMS_U_OBOIH_KOMPONETOV_N"] = "у обоих компонетов на выходе в перемменную ";
-$MESS["IMAGINWEB_SMS_PISUTSA_REZULQTATY_R"] = "пишутся результаты работы компонента";
-$MESS["IMAGINWEB_SMS_OBA_KOMPONENTA_PODDE"] = "оба компонента поддерживают ";
-$MESS["IMAGINWEB_SMS_OOO_INFOSMS_PREDLA"] = "ООО «ИнфоСМС» предлагает современный и качественный сервис СМС рассылок. Не нужно покупать";
-$MESS["IMAGINWEB_SMS_PAKETAMI_POPOLNAYTE"] = "пакетами, пополняйте баланс на любую удобную сумму, списание денег производится за каждое отправленное сообщение. Низкие цены, никаких дополнительных платежей, множество способов оплаты и отличная поддержка. ";
-$MESS["IMAGINWEB_SMS_KONTAKTY"] = "Контакты:
+$MESS["IMAGINWEB_SMS_AVTORIZACIA_REGISTRA"] = "Р°РІС‚РѕСЂРёР·Р°С†РёСЏ/СЂРµРіРёСЃС‚СЂР°С†РёСЏ/Р·Р°Р±С‹Р»Рё РїР°СЂРѕР»СЊ РїРѕСЃСЂРµРґСЃС‚РІРѕРј sms";
+$MESS["IMAGINWEB_SMS_VALIDACIA_POLQZOVATE"] = "РІР°Р»РёРґР°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РёР»Рё РµРіРѕ РґРµР№СЃС‚РІРёР№ РїРѕСЃСЂРµРґСЃС‚РІРѕРј";
+$MESS["IMAGINWEB_SMS_NAPODOBIE"] = "РЅР°РїРѕРґРѕР±РёРµ";
+$MESS["IMAGINWEB_SMS_U_OBOIH_KOMPONETOV_N"] = "Сѓ РѕР±РѕРёС… РєРѕРјРїРѕРЅРµС‚РѕРІ РЅР° РІС‹С…РѕРґРµ РІ РїРµСЂРµРјРјРµРЅРЅСѓСЋ ";
+$MESS["IMAGINWEB_SMS_PISUTSA_REZULQTATY_R"] = "РїРёС€СѓС‚СЃСЏ СЂРµР·СѓР»СЊС‚Р°С‚С‹ СЂР°Р±РѕС‚С‹ РєРѕРјРїРѕРЅРµРЅС‚Р°";
+$MESS["IMAGINWEB_SMS_OBA_KOMPONENTA_PODDE"] = "РѕР±Р° РєРѕРјРїРѕРЅРµРЅС‚Р° РїРѕРґРґРµСЂР¶РёРІР°СЋС‚ ";
+$MESS["IMAGINWEB_SMS_OOO_INFOSMS_PREDLA"] = "РћРћРћ В«РРЅС„РѕРЎРњРЎВ» РїСЂРµРґР»Р°РіР°РµС‚ СЃРѕРІСЂРµРјРµРЅРЅС‹Р№ Рё РєР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ СЃРµСЂРІРёСЃ РЎРњРЎ СЂР°СЃСЃС‹Р»РѕРє. РќРµ РЅСѓР¶РЅРѕ РїРѕРєСѓРїР°С‚СЊ";
+$MESS["IMAGINWEB_SMS_PAKETAMI_POPOLNAYTE"] = "РїР°РєРµС‚Р°РјРё, РїРѕРїРѕР»РЅСЏР№С‚Рµ Р±Р°Р»Р°РЅСЃ РЅР° Р»СЋР±СѓСЋ СѓРґРѕР±РЅСѓСЋ СЃСѓРјРјСѓ, СЃРїРёСЃР°РЅРёРµ РґРµРЅРµРі РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ Р·Р° РєР°Р¶РґРѕРµ РѕС‚РїСЂР°РІР»РµРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ. РќРёР·РєРёРµ С†РµРЅС‹, РЅРёРєР°РєРёС… РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РїР»Р°С‚РµР¶РµР№, РјРЅРѕР¶РµСЃС‚РІРѕ СЃРїРѕСЃРѕР±РѕРІ РѕРїР»Р°С‚С‹ Рё РѕС‚Р»РёС‡РЅР°СЏ РїРѕРґРґРµСЂР¶РєР°. ";
+$MESS["IMAGINWEB_SMS_KONTAKTY"] = "РљРѕРЅС‚Р°РєС‚С‹:
 ";
-$MESS["IMAGINWEB_SMS_TEL"] = "Тел";
-$MESS["IMAGINWEB_SMS_PN_PT_S_DO_CASO"] = "Пн-Пт с 7 до 17 часов по московскому времени, звонок беcплатный";
-$MESS["IMAGINWEB_SMS_INSTRUKCIA"] = "Инструкция:
+$MESS["IMAGINWEB_SMS_TEL"] = "РўРµР»";
+$MESS["IMAGINWEB_SMS_PN_PT_S_DO_CASO"] = "РџРЅ-РџС‚ СЃ 7 РґРѕ 17 С‡Р°СЃРѕРІ РїРѕ РјРѕСЃРєРѕРІСЃРєРѕРјСѓ РІСЂРµРјРµРЅРё, Р·РІРѕРЅРѕРє Р±РµcРїР»Р°С‚РЅС‹Р№";
+$MESS["IMAGINWEB_SMS_INSTRUKCIA"] = "РРЅСЃС‚СЂСѓРєС†РёСЏ:
 ";
-$MESS["IMAGINWEB_SMS_DLA_ISPOLQZOVANIA_DA"] = "Для использования данного модуля необходимо пройти регистрацию на сайте ";
-$MESS["IMAGINWEB_SMS_U_VAS_NA_BALANSE_BUD"] = "У вас на балансе будет 4 рубля, достаточных для отправки нескольких тестовых сообщений.
+$MESS["IMAGINWEB_SMS_DLA_ISPOLQZOVANIA_DA"] = "Р”Р»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РґР°РЅРЅРѕРіРѕ РјРѕРґСѓР»СЏ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕР№С‚Рё СЂРµРіРёСЃС‚СЂР°С†РёСЋ РЅР° СЃР°Р№С‚Рµ ";
+$MESS["IMAGINWEB_SMS_U_VAS_NA_BALANSE_BUD"] = "РЈ РІР°СЃ РЅР° Р±Р°Р»Р°РЅСЃРµ Р±СѓРґРµС‚ 4 СЂСѓР±Р»СЏ, РґРѕСЃС‚Р°С‚РѕС‡РЅС‹С… РґР»СЏ РѕС‚РїСЂР°РІРєРё РЅРµСЃРєРѕР»СЊРєРёС… С‚РµСЃС‚РѕРІС‹С… СЃРѕРѕР±С‰РµРЅРёР№.
 ";
-$MESS["IMAGINWEB_SMS_CTOBY_ISPOLQZOVATQ_S"] = "Чтобы использовать свой собственный адреса отправителя, его необходимо создать в личном кабинете на сайте";
-$MESS["IMAGINWEB_SMS_DLA_ETOGO_VOYDITE_V"] = "Для этого, войдите в личный кабинет, нажмите \"Новая рассылка\", выберите \"создание обычной рассылки\", в поле адрес отправителя нажмите на ссылку \"Создать/Удалить\".";
-$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELA_BU"] = "Поле отправителя (буквы латинского алфавита, цифры, пробел, и следующие знаки: .&!*()-+=_ Длинна не должна превышать 11 символов.) ";
-$MESS["IMAGINWEB_SMS_DLINNA_NE_DOLJNA_PRE"] = "Длинна не должна превышать 11 символов.)";
-$MESS["IMAGINWEB_SMS_BALANS_RUBLEY"] = "Баланс (рублей)";
-$MESS["IMAGINWEB_SMS_ISPOLQZOVATQ_RAZRESE"] = "Использовать разрешённый для отправки интервал времени. Задаётся в настройках личного кабинета. По умолчанию интервал не учитывается.";
-$MESS["IMAGINWEB_SMS_IMEET_PRAMYE_PODKLUC"] = "имеет прямые подключения к федеральным операторам сотовой связи — «МТС», «Билайн», «Мегафон». (Высокое качество и скорость доставки";
-$MESS["IMAGINWEB_SMS_PREIMUSESTVA"] = "Преимущества";
-$MESS["IMAGINWEB_SMS_SMS_DLA_TESTIROVANIA"] = "смс для тестирования";
-$MESS["IMAGINWEB_SMS_SAMAA_NIZKAA_CENA_DL"] = "Самая низкая цена для Украины";
-$MESS["IMAGINWEB_SMS_CENA_DLA_ROSSII"] = "Цена для России";
-$MESS["IMAGINWEB_SMS_NE_BOLEE_KOPEEK"] = "не более 45 копеек (есть бонусы и скидки";
-$MESS["IMAGINWEB_SMS_PODDERJIVAET_OTPRAVK"] = "Поддерживает отправку смс на телефонные номера";
-$MESS["IMAGINWEB_SMS_OPERATOROV_ROSSII"] = "операторов России";
-$MESS["IMAGINWEB_SMS_RASSYLKA"] = "Рассылка";
-$MESS["IMAGINWEB_SMS_PO_VSEMU_MIRU_BOLEE"] = "по всему миру (более";
-$MESS["IMAGINWEB_SMS_STRAN"] = "стран";
-$MESS["IMAGINWEB_SMS_POSLE"] = "После ";
-$MESS["IMAGINWEB_SMS_REGISTRACII"] = "регистрации";
-$MESS["IMAGINWEB_SMS_DOSTUPNY_SMS_DLA"] = "доступны 10 смс для тестирования отправки, при оплате в течение 3 часов после регистрации";
-$MESS["IMAGINWEB_SMS_BONUS"] = "бонус";
-$MESS["IMAGINWEB_SMS_OPLACIVATQ_MOJNO_KAK"] = "Оплачивать можно как электронными валютами, кредитными картами";
-$MESS["IMAGINWEB_SMS_TAK_I_BEZNALICNYM_RA"] = "так и безналичным расчетом с предоставлением бухгалтерских документов. ";
-$MESS["IMAGINWEB_SMS_OPISANIE_SERVISA"] = "Описание сервиса: ";
-$MESS["IMAGINWEB_SMS_REGISTRACIA"] = "Регистрация: ";
-$MESS["IMAGINWEB_SMS_SOHRANATQ_PAROLQ_V_S"] = "Сохранять пароль в свойстве пользователя (для дальнейшего использования в";
-$MESS["IMAGINWEB_SMS_PAROLI_SOHRANAUTSA_V"] = "Пароли сохраняются в момент регистрации и обновления данных пользователя, т.е. для всех новых пользователей и тех кто сменит пароль, при необходимости можно сменить пароль и вписать его вручную для конкретного пользователя";
-$MESS["IMAGINWEB_SMS_NE_SOHRANATQ"] = "Не сохранять";
-$MESS["IMAGINWEB_SMS_DOSTUPNY_REGISTRACIO"] = "Доступны регистрационные данные пользователя (Шаблоны";
-$MESS["IMAGINWEB_SMS_LOGIN1"] = "Логин";
-$MESS["IMAGINWEB_SMS_PAROLQ1"] = "Пароль";
-$MESS["IMAGINWEB_SMS_IMA"] = "Имя";
-$MESS["IMAGINWEB_SMS_FAMILIA"] = "Фамилия";
-$MESS["IMAGINWEB_SMS_OTECESTVO_I_DRUGIE"] = "Отечество и другие ";
-$MESS["IMAGINWEB_SMS_POLA"] = "поля";
-$MESS["IMAGINWEB_SMS_V_TOM_CISLE_I_POLQZO"] = "в том числе и пользовательские";
-$MESS["IMAGINWEB_SMS_SAYT"] = "Сайт";
-$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELA"] = "Поле отправителя";
-$MESS["IMAGINWEB_SMS_BUKVY_LATINSKOGO_ALF"] = "буквы латинского алфавита, цифры, пробел, и следующие знаки";
-$MESS["IMAGINWEB_SMS_ESLI_NE_UKAZANO_TO"] = "Если не указано, то берётся из настроек шлюза";
-$MESS["IMAGINWEB_SMS_ESLI_NE_UKAZANO_BERE"] = "Если не указано берётся из настроек шлюза";
-$MESS["opt_encoding"] = "Кодировки сообщения в рассылку:";
-$MESS["opt_delete"] = "Через сколько дней удалять неподтвержденные подписки (0 - не удалять):";
-$MESS["MAIN_RESTORE_DEFAULTS"] = "По умолчанию";
-$MESS["opt_anonym"] = "Разрешить анонимную подписку:";
-$MESS["opt_links"] = "Показывать ссылки на авторизацию при анонимной подписке:";
-$MESS["opt_sect"] = "Публичный раздел, где находится страница редактирования подписки (макросы: #SITE_DIR#):";
-$MESS["opt_vis_edit"] = "Использовать HTML редактор (только для IE 5.0 или FireFox 1.0 и выше):";
-$MESS["opt_interval"] = "Интервал в секундах для пошаговой рассылки (0 - рассылать за один шаг):";
-$MESS["opt_def_from"] = "Имя отправителя по умолчанию:";
-$MESS["opt_def_to"] = "Номер получателя по умолчанию:";
-$MESS["opt_allow_8bit"] = "Разрешить 8-битные символы в заголовке письма:";
-$MESS["opt_attach"] = "Отправлять картинки в виде вложений в письмо:";
-$MESS["opt_method_agent"] = "Агент";
-$MESS["opt_method_cron"] = "Крон";
-$MESS["opt_method"] = "Метод автоматической рассылки:";
-$MESS["opt_max_per_hit"] = "Количество sms для автоматической рассылки агентом за один запуск:";
-$MESS["opt_template_method"] = "Метод автоматической генерации выпусков:";
-$MESS["opt_template_interval"] = "Интервал проверки необходимости генерации выпусков в секундах:";
-$MESS["opt_max_bcc_count"] = "Максимальное количество номеров в поле BCC <b>не</b> в режиме &quot;Персонально подписчику&quot; (0 - отправить одно sms):";
-$MESS["opt_mail_additional_parameters"] = "Дополнительный параметр для передачи функции mail:";
-$MESS["subscribe_max_lenght"] = "Максимальная длина SMS сообщения<br/>(<b>1 сообщение:</b> латиницей - 160 символов, кириллицей - 70 символов):";
-$MESS["subscribe_field_phone"] = "Свойство пользователя содержащее номер телефона:";
-$MESS["IMAGINWEB_SMS_NAKOPITELQNYE_SKIDKI"] = "Накопительные скидки! Одна из самых низких цен для РФ.";
-$MESS["IMAGINWEB_SMS_OPLATA_V_RUBLAH"] = "оплата в рублях";
-$MESS["IMAGINWEB_SMS_ANDEKS_DENQGI_PLAST"] = "Яндекс-деньги, пластиковые карты, безналичный расчёт и другое";
-$MESS["IMAGINWEB_SMS_POSLE_REGISTRCII_DO"] = "после регистрции  доступны";
-$MESS["IMAGINWEB_SMS_DLA_TESTA_NAKOPTELQ"] = "для теста, накоптельная скидка на все смс";
-$MESS["IMAGINWEB_SMS_UNIKALQNAA_PARTNERSK"] = "Уникальная партнерская программа для";
-$MESS["IMAGINWEB_SMS_MASEROV_S_VOZMOJNOST"] = "масеров с возможностью заработка";
-$MESS["IMAGINWEB_SMS_OPERATIVNAA"] = "Оперативная";
-$MESS["IMAGINWEB_SMS_PODDERJKA"] = "поддержка
+$MESS["IMAGINWEB_SMS_CTOBY_ISPOLQZOVATQ_S"] = "Р§С‚РѕР±С‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРІРѕР№ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ Р°РґСЂРµСЃР° РѕС‚РїСЂР°РІРёС‚РµР»СЏ, РµРіРѕ РЅРµРѕР±С…РѕРґРёРјРѕ СЃРѕР·РґР°С‚СЊ РІ Р»РёС‡РЅРѕРј РєР°Р±РёРЅРµС‚Рµ РЅР° СЃР°Р№С‚Рµ";
+$MESS["IMAGINWEB_SMS_DLA_ETOGO_VOYDITE_V"] = "Р”Р»СЏ СЌС‚РѕРіРѕ, РІРѕР№РґРёС‚Рµ РІ Р»РёС‡РЅС‹Р№ РєР°Р±РёРЅРµС‚, РЅР°Р¶РјРёС‚Рµ \"РќРѕРІР°СЏ СЂР°СЃСЃС‹Р»РєР°\", РІС‹Р±РµСЂРёС‚Рµ \"СЃРѕР·РґР°РЅРёРµ РѕР±С‹С‡РЅРѕР№ СЂР°СЃСЃС‹Р»РєРё\", РІ РїРѕР»Рµ Р°РґСЂРµСЃ РѕС‚РїСЂР°РІРёС‚РµР»СЏ РЅР°Р¶РјРёС‚Рµ РЅР° СЃСЃС‹Р»РєСѓ \"РЎРѕР·РґР°С‚СЊ/РЈРґР°Р»РёС‚СЊ\".";
+$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELA_BU"] = "РџРѕР»Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЏ (Р±СѓРєРІС‹ Р»Р°С‚РёРЅСЃРєРѕРіРѕ Р°Р»С„Р°РІРёС‚Р°, С†РёС„СЂС‹, РїСЂРѕР±РµР», Рё СЃР»РµРґСѓСЋС‰РёРµ Р·РЅР°РєРё: .&!*()-+=_ Р”Р»РёРЅРЅР° РЅРµ РґРѕР»Р¶РЅР° РїСЂРµРІС‹С€Р°С‚СЊ 11 СЃРёРјРІРѕР»РѕРІ.) ";
+$MESS["IMAGINWEB_SMS_DLINNA_NE_DOLJNA_PRE"] = "Р”Р»РёРЅРЅР° РЅРµ РґРѕР»Р¶РЅР° РїСЂРµРІС‹С€Р°С‚СЊ 11 СЃРёРјРІРѕР»РѕРІ.)";
+$MESS["IMAGINWEB_SMS_BALANS_RUBLEY"] = "Р‘Р°Р»Р°РЅСЃ (СЂСѓР±Р»РµР№)";
+$MESS["IMAGINWEB_SMS_ISPOLQZOVATQ_RAZRESE"] = "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЂР°Р·СЂРµС€С‘РЅРЅС‹Р№ РґР»СЏ РѕС‚РїСЂР°РІРєРё РёРЅС‚РµСЂРІР°Р» РІСЂРµРјРµРЅРё. Р—Р°РґР°С‘С‚СЃСЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С… Р»РёС‡РЅРѕРіРѕ РєР°Р±РёРЅРµС‚Р°. РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РёРЅС‚РµСЂРІР°Р» РЅРµ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ.";
+$MESS["IMAGINWEB_SMS_IMEET_PRAMYE_PODKLUC"] = "РёРјРµРµС‚ РїСЂСЏРјС‹Рµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє С„РµРґРµСЂР°Р»СЊРЅС‹Рј РѕРїРµСЂР°С‚РѕСЂР°Рј СЃРѕС‚РѕРІРѕР№ СЃРІСЏР·Рё вЂ” В«РњРўРЎВ», В«Р‘РёР»Р°Р№РЅВ», В«РњРµРіР°С„РѕРЅВ». (Р’С‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ Рё СЃРєРѕСЂРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё";
+$MESS["IMAGINWEB_SMS_PREIMUSESTVA"] = "РџСЂРµРёРјСѓС‰РµСЃС‚РІР°";
+$MESS["IMAGINWEB_SMS_SMS_DLA_TESTIROVANIA"] = "СЃРјСЃ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ";
+$MESS["IMAGINWEB_SMS_SAMAA_NIZKAA_CENA_DL"] = "РЎР°РјР°СЏ РЅРёР·РєР°СЏ С†РµРЅР° РґР»СЏ РЈРєСЂР°РёРЅС‹";
+$MESS["IMAGINWEB_SMS_CENA_DLA_ROSSII"] = "Р¦РµРЅР° РґР»СЏ Р РѕСЃСЃРёРё";
+$MESS["IMAGINWEB_SMS_NE_BOLEE_KOPEEK"] = "РЅРµ Р±РѕР»РµРµ 45 РєРѕРїРµРµРє (РµСЃС‚СЊ Р±РѕРЅСѓСЃС‹ Рё СЃРєРёРґРєРё";
+$MESS["IMAGINWEB_SMS_PODDERJIVAET_OTPRAVK"] = "РџРѕРґРґРµСЂР¶РёРІР°РµС‚ РѕС‚РїСЂР°РІРєСѓ СЃРјСЃ РЅР° С‚РµР»РµС„РѕРЅРЅС‹Рµ РЅРѕРјРµСЂР°";
+$MESS["IMAGINWEB_SMS_OPERATOROV_ROSSII"] = "РѕРїРµСЂР°С‚РѕСЂРѕРІ Р РѕСЃСЃРёРё";
+$MESS["IMAGINWEB_SMS_RASSYLKA"] = "Р Р°СЃСЃС‹Р»РєР°";
+$MESS["IMAGINWEB_SMS_PO_VSEMU_MIRU_BOLEE"] = "РїРѕ РІСЃРµРјСѓ РјРёСЂСѓ (Р±РѕР»РµРµ";
+$MESS["IMAGINWEB_SMS_STRAN"] = "СЃС‚СЂР°РЅ";
+$MESS["IMAGINWEB_SMS_POSLE"] = "РџРѕСЃР»Рµ ";
+$MESS["IMAGINWEB_SMS_REGISTRACII"] = "СЂРµРіРёСЃС‚СЂР°С†РёРё";
+$MESS["IMAGINWEB_SMS_DOSTUPNY_SMS_DLA"] = "РґРѕСЃС‚СѓРїРЅС‹ 10 СЃРјСЃ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ РѕС‚РїСЂР°РІРєРё, РїСЂРё РѕРїР»Р°С‚Рµ РІ С‚РµС‡РµРЅРёРµ 3 С‡Р°СЃРѕРІ РїРѕСЃР»Рµ СЂРµРіРёСЃС‚СЂР°С†РёРё";
+$MESS["IMAGINWEB_SMS_BONUS"] = "Р±РѕРЅСѓСЃ";
+$MESS["IMAGINWEB_SMS_OPLACIVATQ_MOJNO_KAK"] = "РћРїР»Р°С‡РёРІР°С‚СЊ РјРѕР¶РЅРѕ РєР°Рє СЌР»РµРєС‚СЂРѕРЅРЅС‹РјРё РІР°Р»СЋС‚Р°РјРё, РєСЂРµРґРёС‚РЅС‹РјРё РєР°СЂС‚Р°РјРё";
+$MESS["IMAGINWEB_SMS_TAK_I_BEZNALICNYM_RA"] = "С‚Р°Рє Рё Р±РµР·РЅР°Р»РёС‡РЅС‹Рј СЂР°СЃС‡РµС‚РѕРј СЃ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅРёРµРј Р±СѓС…РіР°Р»С‚РµСЂСЃРєРёС… РґРѕРєСѓРјРµРЅС‚РѕРІ. ";
+$MESS["IMAGINWEB_SMS_OPISANIE_SERVISA"] = "РћРїРёСЃР°РЅРёРµ СЃРµСЂРІРёСЃР°: ";
+$MESS["IMAGINWEB_SMS_REGISTRACIA"] = "Р РµРіРёСЃС‚СЂР°С†РёСЏ: ";
+$MESS["IMAGINWEB_SMS_SOHRANATQ_PAROLQ_V_S"] = "РЎРѕС…СЂР°РЅСЏС‚СЊ РїР°СЂРѕР»СЊ РІ СЃРІРѕР№СЃС‚РІРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ (РґР»СЏ РґР°Р»СЊРЅРµР№С€РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІ";
+$MESS["IMAGINWEB_SMS_PAROLI_SOHRANAUTSA_V"] = "РџР°СЂРѕР»Рё СЃРѕС…СЂР°РЅСЏСЋС‚СЃСЏ РІ РјРѕРјРµРЅС‚ СЂРµРіРёСЃС‚СЂР°С†РёРё Рё РѕР±РЅРѕРІР»РµРЅРёСЏ РґР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, С‚.Рµ. РґР»СЏ РІСЃРµС… РЅРѕРІС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ Рё С‚РµС… РєС‚Рѕ СЃРјРµРЅРёС‚ РїР°СЂРѕР»СЊ, РїСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РјРѕР¶РЅРѕ СЃРјРµРЅРёС‚СЊ РїР°СЂРѕР»СЊ Рё РІРїРёСЃР°С‚СЊ РµРіРѕ РІСЂСѓС‡РЅСѓСЋ РґР»СЏ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ";
+$MESS["IMAGINWEB_SMS_NE_SOHRANATQ"] = "РќРµ СЃРѕС…СЂР°РЅСЏС‚СЊ";
+$MESS["IMAGINWEB_SMS_DOSTUPNY_REGISTRACIO"] = "Р”РѕСЃС‚СѓРїРЅС‹ СЂРµРіРёСЃС‚СЂР°С†РёРѕРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ (РЁР°Р±Р»РѕРЅС‹";
+$MESS["IMAGINWEB_SMS_LOGIN1"] = "Р›РѕРіРёРЅ";
+$MESS["IMAGINWEB_SMS_PAROLQ1"] = "РџР°СЂРѕР»СЊ";
+$MESS["IMAGINWEB_SMS_IMA"] = "РРјСЏ";
+$MESS["IMAGINWEB_SMS_FAMILIA"] = "Р¤Р°РјРёР»РёСЏ";
+$MESS["IMAGINWEB_SMS_OTECESTVO_I_DRUGIE"] = "РћС‚РµС‡РµСЃС‚РІРѕ Рё РґСЂСѓРіРёРµ ";
+$MESS["IMAGINWEB_SMS_POLA"] = "РїРѕР»СЏ";
+$MESS["IMAGINWEB_SMS_V_TOM_CISLE_I_POLQZO"] = "РІ С‚РѕРј С‡РёСЃР»Рµ Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ";
+$MESS["IMAGINWEB_SMS_SAYT"] = "РЎР°Р№С‚";
+$MESS["IMAGINWEB_SMS_POLE_OTPRAVITELA"] = "РџРѕР»Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЏ";
+$MESS["IMAGINWEB_SMS_BUKVY_LATINSKOGO_ALF"] = "Р±СѓРєРІС‹ Р»Р°С‚РёРЅСЃРєРѕРіРѕ Р°Р»С„Р°РІРёС‚Р°, С†РёС„СЂС‹, РїСЂРѕР±РµР», Рё СЃР»РµРґСѓСЋС‰РёРµ Р·РЅР°РєРё";
+$MESS["IMAGINWEB_SMS_ESLI_NE_UKAZANO_TO"] = "Р•СЃР»Рё РЅРµ СѓРєР°Р·Р°РЅРѕ, С‚Рѕ Р±РµСЂС‘С‚СЃСЏ РёР· РЅР°СЃС‚СЂРѕРµРє С€Р»СЋР·Р°";
+$MESS["IMAGINWEB_SMS_ESLI_NE_UKAZANO_BERE"] = "Р•СЃР»Рё РЅРµ СѓРєР°Р·Р°РЅРѕ Р±РµСЂС‘С‚СЃСЏ РёР· РЅР°СЃС‚СЂРѕРµРє С€Р»СЋР·Р°";
+$MESS["opt_encoding"] = "РљРѕРґРёСЂРѕРІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ СЂР°СЃСЃС‹Р»РєСѓ:";
+$MESS["opt_delete"] = "Р§РµСЂРµР· СЃРєРѕР»СЊРєРѕ РґРЅРµР№ СѓРґР°Р»СЏС‚СЊ РЅРµРїРѕРґС‚РІРµСЂР¶РґРµРЅРЅС‹Рµ РїРѕРґРїРёСЃРєРё (0 - РЅРµ СѓРґР°Р»СЏС‚СЊ):";
+$MESS["MAIN_RESTORE_DEFAULTS"] = "РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ";
+$MESS["opt_anonym"] = "Р Р°Р·СЂРµС€РёС‚СЊ Р°РЅРѕРЅРёРјРЅСѓСЋ РїРѕРґРїРёСЃРєСѓ:";
+$MESS["opt_links"] = "РџРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєРё РЅР° Р°РІС‚РѕСЂРёР·Р°С†РёСЋ РїСЂРё Р°РЅРѕРЅРёРјРЅРѕР№ РїРѕРґРїРёСЃРєРµ:";
+$MESS["opt_sect"] = "РџСѓР±Р»РёС‡РЅС‹Р№ СЂР°Р·РґРµР», РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ СЃС‚СЂР°РЅРёС†Р° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РїРѕРґРїРёСЃРєРё (РјР°РєСЂРѕСЃС‹: #SITE_DIR#):";
+$MESS["opt_vis_edit"] = "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ HTML СЂРµРґР°РєС‚РѕСЂ (С‚РѕР»СЊРєРѕ РґР»СЏ IE 5.0 РёР»Рё FireFox 1.0 Рё РІС‹С€Рµ):";
+$MESS["opt_interval"] = "РРЅС‚РµСЂРІР°Р» РІ СЃРµРєСѓРЅРґР°С… РґР»СЏ РїРѕС€Р°РіРѕРІРѕР№ СЂР°СЃСЃС‹Р»РєРё (0 - СЂР°СЃСЃС‹Р»Р°С‚СЊ Р·Р° РѕРґРёРЅ С€Р°Рі):";
+$MESS["opt_def_from"] = "РРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ:";
+$MESS["opt_def_to"] = "РќРѕРјРµСЂ РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ:";
+$MESS["opt_allow_8bit"] = "Р Р°Р·СЂРµС€РёС‚СЊ 8-Р±РёС‚РЅС‹Рµ СЃРёРјРІРѕР»С‹ РІ Р·Р°РіРѕР»РѕРІРєРµ РїРёСЃСЊРјР°:";
+$MESS["opt_attach"] = "РћС‚РїСЂР°РІР»СЏС‚СЊ РєР°СЂС‚РёРЅРєРё РІ РІРёРґРµ РІР»РѕР¶РµРЅРёР№ РІ РїРёСЃСЊРјРѕ:";
+$MESS["opt_method_agent"] = "РђРіРµРЅС‚";
+$MESS["opt_method_cron"] = "РљСЂРѕРЅ";
+$MESS["opt_method"] = "РњРµС‚РѕРґ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ СЂР°СЃСЃС‹Р»РєРё:";
+$MESS["opt_max_per_hit"] = "РљРѕР»РёС‡РµСЃС‚РІРѕ sms РґР»СЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ СЂР°СЃСЃС‹Р»РєРё Р°РіРµРЅС‚РѕРј Р·Р° РѕРґРёРЅ Р·Р°РїСѓСЃРє:";
+$MESS["opt_template_method"] = "РњРµС‚РѕРґ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ РіРµРЅРµСЂР°С†РёРё РІС‹РїСѓСЃРєРѕРІ:";
+$MESS["opt_template_interval"] = "РРЅС‚РµСЂРІР°Р» РїСЂРѕРІРµСЂРєРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РіРµРЅРµСЂР°С†РёРё РІС‹РїСѓСЃРєРѕРІ РІ СЃРµРєСѓРЅРґР°С…:";
+$MESS["opt_max_bcc_count"] = "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРјРµСЂРѕРІ РІ РїРѕР»Рµ BCC <b>РЅРµ</b> РІ СЂРµР¶РёРјРµ &quot;РџРµСЂСЃРѕРЅР°Р»СЊРЅРѕ РїРѕРґРїРёСЃС‡РёРєСѓ&quot; (0 - РѕС‚РїСЂР°РІРёС‚СЊ РѕРґРЅРѕ sms):";
+$MESS["opt_mail_additional_parameters"] = "Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ РґР»СЏ РїРµСЂРµРґР°С‡Рё С„СѓРЅРєС†РёРё mail:";
+$MESS["subscribe_max_lenght"] = "РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РґР»РёРЅР° SMS СЃРѕРѕР±С‰РµРЅРёСЏ<br/>(<b>1 СЃРѕРѕР±С‰РµРЅРёРµ:</b> Р»Р°С‚РёРЅРёС†РµР№ - 160 СЃРёРјРІРѕР»РѕРІ, РєРёСЂРёР»Р»РёС†РµР№ - 70 СЃРёРјРІРѕР»РѕРІ):";
+$MESS["subscribe_field_phone"] = "РЎРІРѕР№СЃС‚РІРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃРѕРґРµСЂР¶Р°С‰РµРµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°:";
+$MESS["IMAGINWEB_SMS_NAKOPITELQNYE_SKIDKI"] = "РќР°РєРѕРїРёС‚РµР»СЊРЅС‹Рµ СЃРєРёРґРєРё! РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ РґР»СЏ Р Р¤.";
+$MESS["IMAGINWEB_SMS_OPLATA_V_RUBLAH"] = "РѕРїР»Р°С‚Р° РІ СЂСѓР±Р»СЏС…";
+$MESS["IMAGINWEB_SMS_ANDEKS_DENQGI_PLAST"] = "РЇРЅРґРµРєСЃ-РґРµРЅСЊРіРё, РїР»Р°СЃС‚РёРєРѕРІС‹Рµ РєР°СЂС‚С‹, Р±РµР·РЅР°Р»РёС‡РЅС‹Р№ СЂР°СЃС‡С‘С‚ Рё РґСЂСѓРіРѕРµ";
+$MESS["IMAGINWEB_SMS_POSLE_REGISTRCII_DO"] = "РїРѕСЃР»Рµ СЂРµРіРёСЃС‚СЂС†РёРё  РґРѕСЃС‚СѓРїРЅС‹";
+$MESS["IMAGINWEB_SMS_DLA_TESTA_NAKOPTELQ"] = "РґР»СЏ С‚РµСЃС‚Р°, РЅР°РєРѕРїС‚РµР»СЊРЅР°СЏ СЃРєРёРґРєР° РЅР° РІСЃРµ СЃРјСЃ";
+$MESS["IMAGINWEB_SMS_UNIKALQNAA_PARTNERSK"] = "РЈРЅРёРєР°Р»СЊРЅР°СЏ РїР°СЂС‚РЅРµСЂСЃРєР°СЏ РїСЂРѕРіСЂР°РјРјР° РґР»СЏ";
+$MESS["IMAGINWEB_SMS_MASEROV_S_VOZMOJNOST"] = "РјР°СЃРµСЂРѕРІ СЃ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ Р·Р°СЂР°Р±РѕС‚РєР°";
+$MESS["IMAGINWEB_SMS_OPERATIVNAA"] = "РћРїРµСЂР°С‚РёРІРЅР°СЏ";
+$MESS["IMAGINWEB_SMS_PODDERJKA"] = "РїРѕРґРґРµСЂР¶РєР°
 			";
-$MESS["IMAGINWEB_SMS_INFO_DLA_NASTROEK"] = "Инфо для настроек";
-$MESS["IMAGINWEB_SMS_KLUC"] = "Ключ";
-$MESS["IMAGINWEB_SMS_OSNOVNYE_NASTROYKI"] = "Основные настройки";
-$MESS["IMAGINWEB_SMS_NASTROYKI_SLUZOV"] = "Настройки шлюзов";
-$MESS["IMAGINWEB_SMS_SEND"] = "Отправить SMS";
-$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH"] = "Одна из самых низких цен за СМС! Всегда 15 копеек!!!";
-$MESS["IMAGINWEB_SMS_KOP_SMS_PO_ROSSII_V"] = "коп./смс по России вне зависимости от объёмов";
-$MESS["IMAGINWEB_SMS_SMS_V_PODAROK_PRI_RE"] = "смс в подарок при регистрации";
-$MESS["IMAGINWEB_SMS_SMS_V_PODAROK_KAJDYY"] = "смс в подарок каждый месяц";
-$MESS["IMAGINWEB_SMS_PODROBNEE"] = "Подробнее";
-$MESS["IMAGINWEB_SMS_LUBOE_IMA_OTPRAVITEL"] = "любое имя отправителя";
-$MESS["IMAGINWEB_SMS_NAZVANIE_PROEKTA_BE"] = "Название проекта, берется ";
-$MESS["IMAGINWEB_SMS_SO_STRANICY"] = "со страницы";
-$MESS["IMAGINWEB_SMS_KLUC_PROEKTA_BERETS"] = "Ключ проекта, берется ";
-$MESS["IMAGINWEB_SMS_BALANS_RUB"] = "Баланс (руб)";
-$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH1"] = "Одна из самых низких цен за СМС! Максимум 25 копеек!";
-$MESS["IMAGINWEB_SMS_SERVIS"] = "Сервис";
-$MESS["IMAGINWEB_SMS_NE_ODIN_V_SVOEM_RODE"] = "не один в своем роде, но у него есть ";
-$MESS["IMAGINWEB_SMS_PREIMUSESTVA1"] = "преимущества";
-$MESS["IMAGINWEB_SMS_VYGODNO_OTLICAUSIE_O"] = "выгодно отличающие от конкурентов.";
-$MESS["IMAGINWEB_SMS_TELEFONY"] = "Телефоны:";
-$MESS["IMAGINWEB_SMS_BESSLPATNO_PO_ROSSII"] = "бесслпатно по России";
-$MESS["IMAGINWEB_SMS_DLA_MOSKVY"] = "для Москвы";
-$MESS["IMAGINWEB_SMS_PODKLUCENIE_OBYCNOE"] = "Подключение обычное, зарегистрируйтесь ";
-$MESS["IMAGINWEB_SMS_TUT"] = "тут";
-$MESS["IMAGINWEB_SMS_IMA_OTPRAVITELA_PO_U"] = "Имя отправителя по умолчанию";
-$MESS["IMAGINWEB_SMS_VVEDITE_V_POLE_NIJE"] = "Введите в поле ниже, логин, пароль и имя отправителя";
-$MESS["IMAGINWEB_SMS_BALANS"] = "Баланс";
-$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH2"] = "Одна из самых низких цен за СМС! Специальная цена для пользователей модуля 15 копеек!!! ";
-$MESS["IMAGINWEB_SMS_DLA_POLUCENIA_SPEC_C"] = "Для получения спец цены, ";
-$MESS["IMAGINWEB_SMS_SOOBSITE_MENEDJERU_K"] = "сообщите менеджеру кодовое слово";
-$MESS["IMAGINWEB_SMS_ILI_IMEYDJIN_VEB"] = "или  \"Имейджин Вэб\" и ваш тариф измениться.";
-$MESS["IMAGINWEB_SMS_SMS_RASSYLKI_ALEF_M"] = "смс-рассылки «Алеф Маркетинг Сервис»";
-$MESS["IMAGINWEB_SMS_VLADIMIR"] = "Владимир";
-$MESS["IMAGINWEB_SMS_MOSKVA"] = "Москва";
-$MESS["IMAGINWEB_SMS_BESPLATNO_PO_RF"] = "Бесплатно по РФ";
-$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH3"] = "Одна из самых низких цен за СМС! Специальная цена для пользователей модуля 15 копеек";
-$MESS["IMAGINWEB_SMS_PRI"] = "при ";
-$MESS["IMAGINWEB_SMS_REGISTRACII_V_SERVIS"] = "регистрации в сервисе";
-$MESS["IMAGINWEB_SMS_UKAJITE_KOD_PRIGLASE"] = "укажите код приглашения";
-$MESS["IMAGINWEB_SMS_ILI"] = "или";
-$MESS["IMAGINWEB_SMS_IMEYDJIN_VEB"] = "Имейджин Вэб";
-$MESS["IMAGINWEB_SMS_I_VAS_TARIF_AVTOMATI"] = "и ваш тариф автоматически измениться";
-$MESS["IMAGINWEB_SMS_ESLI_VY_UJE_POLQZUET"] = "Если Вы уже пользуетесь сервисом, то отправьте СМС со словом";
-$MESS["IMAGINWEB_SMS_NA_NOMER"] = "на номер";
-$MESS["IMAGINWEB_SMS_I_MENEDJER_POMENAET"] = "и менеджер поменяет Ваш тариф";
-$MESS["IMAGINWEB_SMS_SMS_RASSYLKI"] = "смс-рассылки";
-$MESS["IMAGINWEB_SMS_ALEF_MARKETING_SERVI"] = "Алеф Маркетинг Сервис";
-$MESS["IMAGINWEB_SMS_TELEFON_PODDERJKI"] = "Телефон поддержки";
-$MESS["IMAGINWEB_SMS_V_NASTROYKE_MODULA_U"] = "В настройке модуля указывайте логин и пароль основного пользователя сервиса";
-$MESS["IMAGINWEB_SMS_NO_MY_NASTOATELQNO_R"] = "но мы настоятельно рекомендуем задавать иной пароль в ";
-$MESS["IMAGINWEB_SMS_NASTROYKAH_BEZOPASNO"] = "настройках безопасности";
-$MESS["IMAGINWEB_SMS_LICNOGO_KABINETA_TR"] = "личного кабинета (Транспортный";
-$MESS["IMAGINWEB_SMS_PROTOKOL_I_ISPOLQZ"] = "протокол), и использовать его";
-$MESS["IMAGINWEB_SMS_UDOBNYY_I_KACESTVENN"] = "Удобный и качественный сервис по отправке одиночных и массовых СМС сообщений+доп. услуги - СМС купон, СМС планировщик, СМС поздравления, Обработчик";
-$MESS["IMAGINWEB_SMS_UVEDOMLENIA_OB"] = "Уведомления об";
-$MESS["IMAGINWEB_SMS_ONLAYN_KONSULQTANT"] = "Онлайн-консультант \"На связи";
-$MESS["IMAGINWEB_SMS_SMS_DLA_TESTA"] = "СМС для теста. ";
-$MESS["IMAGINWEB_SMS_DLA_PODKLUCENIA_TARI"] = "Для подключения тарифа 15 копеек, Ваш код приглашения - Имейджин Вэб";
-$MESS["IMAGINWEB_SMS_V_STADII_TESTIROVANI"] = "В стадии тестирования!!!";
-$MESS["IMAGINWEB_SMS_DLA_PODKLUCENIA_TARI1"] = "Для подключения тарифа 15 копеек, Ваш код приглашения - Имейджин Вэб или";
-$MESS["IMAGINWEB_SMS_NED_TO_FIELD"] = "Поле \"Кому\" не может быть пустым.";
-$MESS["IMAGINWEB_SMS_WRONG_PHONE"] = "Неверный формат телефона в поле \"Кому\".";
-$MESS["IMAGINWEB_SMS_NED_BODY"] = "Поле \"Текст sms\" не может быть пустым.";
-$MESS["IMAGINWEB_SMS_MESS_SENT"] = "Сообщение отправлено.";
-$MESS["IMAGINWEB_SMS_FIELD_SMS"] = "Поля sms";
-$MESS["IMAGINWEB_SMS_FROM_FIELD"] = "От кого:";
-$MESS["IMAGINWEB_SMS_TO_FIELD"] = "Кому:";
-$MESS["IMAGINWEB_SMS_TEXT_SMS"] = "Текст sms";
-$MESS["IMAGINWEB_SMS_BUTTON_SEND"] = "Отправить";
-$MESS["IMAGINWEB_SMS_PROMO_REDSMS"] = "от 8 копеек за SMS !
+$MESS["IMAGINWEB_SMS_INFO_DLA_NASTROEK"] = "РРЅС„Рѕ РґР»СЏ РЅР°СЃС‚СЂРѕРµРє";
+$MESS["IMAGINWEB_SMS_KLUC"] = "РљР»СЋС‡";
+$MESS["IMAGINWEB_SMS_OSNOVNYE_NASTROYKI"] = "РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";
+$MESS["IMAGINWEB_SMS_NASTROYKI_SLUZOV"] = "РќР°СЃС‚СЂРѕР№РєРё С€Р»СЋР·РѕРІ";
+$MESS["IMAGINWEB_SMS_SEND"] = "РћС‚РїСЂР°РІРёС‚СЊ SMS";
+$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH"] = "РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° РЎРњРЎ! Р’СЃРµРіРґР° 15 РєРѕРїРµРµРє!!!";
+$MESS["IMAGINWEB_SMS_KOP_SMS_PO_ROSSII_V"] = "РєРѕРї./СЃРјСЃ РїРѕ Р РѕСЃСЃРёРё РІРЅРµ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РѕР±СЉС‘РјРѕРІ";
+$MESS["IMAGINWEB_SMS_SMS_V_PODAROK_PRI_RE"] = "СЃРјСЃ РІ РїРѕРґР°СЂРѕРє РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё";
+$MESS["IMAGINWEB_SMS_SMS_V_PODAROK_KAJDYY"] = "СЃРјСЃ РІ РїРѕРґР°СЂРѕРє РєР°Р¶РґС‹Р№ РјРµСЃСЏС†";
+$MESS["IMAGINWEB_SMS_PODROBNEE"] = "РџРѕРґСЂРѕР±РЅРµРµ";
+$MESS["IMAGINWEB_SMS_LUBOE_IMA_OTPRAVITEL"] = "Р»СЋР±РѕРµ РёРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ";
+$MESS["IMAGINWEB_SMS_NAZVANIE_PROEKTA_BE"] = "РќР°Р·РІР°РЅРёРµ РїСЂРѕРµРєС‚Р°, Р±РµСЂРµС‚СЃСЏ ";
+$MESS["IMAGINWEB_SMS_SO_STRANICY"] = "СЃРѕ СЃС‚СЂР°РЅРёС†С‹";
+$MESS["IMAGINWEB_SMS_KLUC_PROEKTA_BERETS"] = "РљР»СЋС‡ РїСЂРѕРµРєС‚Р°, Р±РµСЂРµС‚СЃСЏ ";
+$MESS["IMAGINWEB_SMS_BALANS_RUB"] = "Р‘Р°Р»Р°РЅСЃ (СЂСѓР±)";
+$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH1"] = "РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° РЎРњРЎ! РњР°РєСЃРёРјСѓРј 25 РєРѕРїРµРµРє!";
+$MESS["IMAGINWEB_SMS_SERVIS"] = "РЎРµСЂРІРёСЃ";
+$MESS["IMAGINWEB_SMS_NE_ODIN_V_SVOEM_RODE"] = "РЅРµ РѕРґРёРЅ РІ СЃРІРѕРµРј СЂРѕРґРµ, РЅРѕ Сѓ РЅРµРіРѕ РµСЃС‚СЊ ";
+$MESS["IMAGINWEB_SMS_PREIMUSESTVA1"] = "РїСЂРµРёРјСѓС‰РµСЃС‚РІР°";
+$MESS["IMAGINWEB_SMS_VYGODNO_OTLICAUSIE_O"] = "РІС‹РіРѕРґРЅРѕ РѕС‚Р»РёС‡Р°СЋС‰РёРµ РѕС‚ РєРѕРЅРєСѓСЂРµРЅС‚РѕРІ.";
+$MESS["IMAGINWEB_SMS_TELEFONY"] = "РўРµР»РµС„РѕРЅС‹:";
+$MESS["IMAGINWEB_SMS_BESSLPATNO_PO_ROSSII"] = "Р±РµСЃСЃР»РїР°С‚РЅРѕ РїРѕ Р РѕСЃСЃРёРё";
+$MESS["IMAGINWEB_SMS_DLA_MOSKVY"] = "РґР»СЏ РњРѕСЃРєРІС‹";
+$MESS["IMAGINWEB_SMS_PODKLUCENIE_OBYCNOE"] = "РџРѕРґРєР»СЋС‡РµРЅРёРµ РѕР±С‹С‡РЅРѕРµ, Р·Р°СЂРµРіРёСЃС‚СЂРёСЂСѓР№С‚РµСЃСЊ ";
+$MESS["IMAGINWEB_SMS_TUT"] = "С‚СѓС‚";
+$MESS["IMAGINWEB_SMS_IMA_OTPRAVITELA_PO_U"] = "РРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ";
+$MESS["IMAGINWEB_SMS_VVEDITE_V_POLE_NIJE"] = "Р’РІРµРґРёС‚Рµ РІ РїРѕР»Рµ РЅРёР¶Рµ, Р»РѕРіРёРЅ, РїР°СЂРѕР»СЊ Рё РёРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ";
+$MESS["IMAGINWEB_SMS_BALANS"] = "Р‘Р°Р»Р°РЅСЃ";
+$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH2"] = "РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° РЎРњРЎ! РЎРїРµС†РёР°Р»СЊРЅР°СЏ С†РµРЅР° РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РјРѕРґСѓР»СЏ 15 РєРѕРїРµРµРє!!! ";
+$MESS["IMAGINWEB_SMS_DLA_POLUCENIA_SPEC_C"] = "Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЃРїРµС† С†РµРЅС‹, ";
+$MESS["IMAGINWEB_SMS_SOOBSITE_MENEDJERU_K"] = "СЃРѕРѕР±С‰РёС‚Рµ РјРµРЅРµРґР¶РµСЂСѓ РєРѕРґРѕРІРѕРµ СЃР»РѕРІРѕ";
+$MESS["IMAGINWEB_SMS_ILI_IMEYDJIN_VEB"] = "РёР»Рё  \"РРјРµР№РґР¶РёРЅ Р’СЌР±\" Рё РІР°С€ С‚Р°СЂРёС„ РёР·РјРµРЅРёС‚СЊСЃСЏ.";
+$MESS["IMAGINWEB_SMS_SMS_RASSYLKI_ALEF_M"] = "СЃРјСЃ-СЂР°СЃСЃС‹Р»РєРё В«РђР»РµС„ РњР°СЂРєРµС‚РёРЅРі РЎРµСЂРІРёСЃВ»";
+$MESS["IMAGINWEB_SMS_VLADIMIR"] = "Р’Р»Р°РґРёРјРёСЂ";
+$MESS["IMAGINWEB_SMS_MOSKVA"] = "РњРѕСЃРєРІР°";
+$MESS["IMAGINWEB_SMS_BESPLATNO_PO_RF"] = "Р‘РµСЃРїР»Р°С‚РЅРѕ РїРѕ Р Р¤";
+$MESS["IMAGINWEB_SMS_ODNA_IZ_SAMYH_NIZKIH3"] = "РћРґРЅР° РёР· СЃР°РјС‹С… РЅРёР·РєРёС… С†РµРЅ Р·Р° РЎРњРЎ! РЎРїРµС†РёР°Р»СЊРЅР°СЏ С†РµРЅР° РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РјРѕРґСѓР»СЏ 15 РєРѕРїРµРµРє";
+$MESS["IMAGINWEB_SMS_PRI"] = "РїСЂРё ";
+$MESS["IMAGINWEB_SMS_REGISTRACII_V_SERVIS"] = "СЂРµРіРёСЃС‚СЂР°С†РёРё РІ СЃРµСЂРІРёСЃРµ";
+$MESS["IMAGINWEB_SMS_UKAJITE_KOD_PRIGLASE"] = "СѓРєР°Р¶РёС‚Рµ РєРѕРґ РїСЂРёРіР»Р°С€РµРЅРёСЏ";
+$MESS["IMAGINWEB_SMS_ILI"] = "РёР»Рё";
+$MESS["IMAGINWEB_SMS_IMEYDJIN_VEB"] = "РРјРµР№РґР¶РёРЅ Р’СЌР±";
+$MESS["IMAGINWEB_SMS_I_VAS_TARIF_AVTOMATI"] = "Рё РІР°С€ С‚Р°СЂРёС„ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РёР·РјРµРЅРёС‚СЊСЃСЏ";
+$MESS["IMAGINWEB_SMS_ESLI_VY_UJE_POLQZUET"] = "Р•СЃР»Рё Р’С‹ СѓР¶Рµ РїРѕР»СЊР·СѓРµС‚РµСЃСЊ СЃРµСЂРІРёСЃРѕРј, С‚Рѕ РѕС‚РїСЂР°РІСЊС‚Рµ РЎРњРЎ СЃРѕ СЃР»РѕРІРѕРј";
+$MESS["IMAGINWEB_SMS_NA_NOMER"] = "РЅР° РЅРѕРјРµСЂ";
+$MESS["IMAGINWEB_SMS_I_MENEDJER_POMENAET"] = "Рё РјРµРЅРµРґР¶РµСЂ РїРѕРјРµРЅСЏРµС‚ Р’Р°С€ С‚Р°СЂРёС„";
+$MESS["IMAGINWEB_SMS_SMS_RASSYLKI"] = "СЃРјСЃ-СЂР°СЃСЃС‹Р»РєРё";
+$MESS["IMAGINWEB_SMS_ALEF_MARKETING_SERVI"] = "РђР»РµС„ РњР°СЂРєРµС‚РёРЅРі РЎРµСЂРІРёСЃ";
+$MESS["IMAGINWEB_SMS_TELEFON_PODDERJKI"] = "РўРµР»РµС„РѕРЅ РїРѕРґРґРµСЂР¶РєРё";
+$MESS["IMAGINWEB_SMS_V_NASTROYKE_MODULA_U"] = "Р’ РЅР°СЃС‚СЂРѕР№РєРµ РјРѕРґСѓР»СЏ СѓРєР°Р·С‹РІР°Р№С‚Рµ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РѕСЃРЅРѕРІРЅРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃРµСЂРІРёСЃР°";
+$MESS["IMAGINWEB_SMS_NO_MY_NASTOATELQNO_R"] = "РЅРѕ РјС‹ РЅР°СЃС‚РѕСЏС‚РµР»СЊРЅРѕ СЂРµРєРѕРјРµРЅРґСѓРµРј Р·Р°РґР°РІР°С‚СЊ РёРЅРѕР№ РїР°СЂРѕР»СЊ РІ ";
+$MESS["IMAGINWEB_SMS_NASTROYKAH_BEZOPASNO"] = "РЅР°СЃС‚СЂРѕР№РєР°С… Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё";
+$MESS["IMAGINWEB_SMS_LICNOGO_KABINETA_TR"] = "Р»РёС‡РЅРѕРіРѕ РєР°Р±РёРЅРµС‚Р° (РўСЂР°РЅСЃРїРѕСЂС‚РЅС‹Р№";
+$MESS["IMAGINWEB_SMS_PROTOKOL_I_ISPOLQZ"] = "РїСЂРѕС‚РѕРєРѕР»), Рё РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРіРѕ";
+$MESS["IMAGINWEB_SMS_UDOBNYY_I_KACESTVENN"] = "РЈРґРѕР±РЅС‹Р№ Рё РєР°С‡РµСЃС‚РІРµРЅРЅС‹Р№ СЃРµСЂРІРёСЃ РїРѕ РѕС‚РїСЂР°РІРєРµ РѕРґРёРЅРѕС‡РЅС‹С… Рё РјР°СЃСЃРѕРІС‹С… РЎРњРЎ СЃРѕРѕР±С‰РµРЅРёР№+РґРѕРї. СѓСЃР»СѓРіРё - РЎРњРЎ РєСѓРїРѕРЅ, РЎРњРЎ РїР»Р°РЅРёСЂРѕРІС‰РёРє, РЎРњРЎ РїРѕР·РґСЂР°РІР»РµРЅРёСЏ, РћР±СЂР°Р±РѕС‚С‡РёРє";
+$MESS["IMAGINWEB_SMS_UVEDOMLENIA_OB"] = "РЈРІРµРґРѕРјР»РµРЅРёСЏ РѕР±";
+$MESS["IMAGINWEB_SMS_ONLAYN_KONSULQTANT"] = "РћРЅР»Р°Р№РЅ-РєРѕРЅСЃСѓР»СЊС‚Р°РЅС‚ \"РќР° СЃРІСЏР·Рё";
+$MESS["IMAGINWEB_SMS_SMS_DLA_TESTA"] = "РЎРњРЎ РґР»СЏ С‚РµСЃС‚Р°. ";
+$MESS["IMAGINWEB_SMS_DLA_PODKLUCENIA_TARI"] = "Р”Р»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ С‚Р°СЂРёС„Р° 15 РєРѕРїРµРµРє, Р’Р°С€ РєРѕРґ РїСЂРёРіР»Р°С€РµРЅРёСЏ - РРјРµР№РґР¶РёРЅ Р’СЌР±";
+$MESS["IMAGINWEB_SMS_V_STADII_TESTIROVANI"] = "Р’ СЃС‚Р°РґРёРё С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ!!!";
+$MESS["IMAGINWEB_SMS_DLA_PODKLUCENIA_TARI1"] = "Р”Р»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ С‚Р°СЂРёС„Р° 15 РєРѕРїРµРµРє, Р’Р°С€ РєРѕРґ РїСЂРёРіР»Р°С€РµРЅРёСЏ - РРјРµР№РґР¶РёРЅ Р’СЌР± РёР»Рё";
+$MESS["IMAGINWEB_SMS_NED_TO_FIELD"] = "РџРѕР»Рµ \"РљРѕРјСѓ\" РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј.";
+$MESS["IMAGINWEB_SMS_WRONG_PHONE"] = "РќРµРІРµСЂРЅС‹Р№ С„РѕСЂРјР°С‚ С‚РµР»РµС„РѕРЅР° РІ РїРѕР»Рµ \"РљРѕРјСѓ\".";
+$MESS["IMAGINWEB_SMS_NED_BODY"] = "РџРѕР»Рµ \"РўРµРєСЃС‚ sms\" РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј.";
+$MESS["IMAGINWEB_SMS_MESS_SENT"] = "РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРѕ.";
+$MESS["IMAGINWEB_SMS_FIELD_SMS"] = "РџРѕР»СЏ sms";
+$MESS["IMAGINWEB_SMS_FROM_FIELD"] = "РћС‚ РєРѕРіРѕ:";
+$MESS["IMAGINWEB_SMS_TO_FIELD"] = "РљРѕРјСѓ:";
+$MESS["IMAGINWEB_SMS_TEXT_SMS"] = "РўРµРєСЃС‚ sms";
+$MESS["IMAGINWEB_SMS_BUTTON_SEND"] = "РћС‚РїСЂР°РІРёС‚СЊ";
+$MESS["IMAGINWEB_SMS_PROMO_REDSMS"] = "РѕС‚ 8 РєРѕРїРµРµРє Р·Р° SMS !
 <br /><br />
-Сервис использует только прямые подключения к операторам с буквенным именем отправителя. Доставка на номера России, Украины, Беларуси, Казахстана и др.
+РЎРµСЂРІРёСЃ РёСЃРїРѕР»СЊР·СѓРµС‚ С‚РѕР»СЊРєРѕ РїСЂСЏРјС‹Рµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє РѕРїРµСЂР°С‚РѕСЂР°Рј СЃ Р±СѓРєРІРµРЅРЅС‹Рј РёРјРµРЅРµРј РѕС‚РїСЂР°РІРёС‚РµР»СЏ. Р”РѕСЃС‚Р°РІРєР° РЅР° РЅРѕРјРµСЂР° Р РѕСЃСЃРёРё, РЈРєСЂР°РёРЅС‹, Р‘РµР»Р°СЂСѓСЃРё, РљР°Р·Р°С…СЃС‚Р°РЅР° Рё РґСЂ.
 <br /><br />
-Платформа 2005 года, 1500 смс/сек, 5000 активных клиентов, бесплатное тестирование, низкие цены. Работаем с юр. и физ. лицами.";
-$MESS["IMAGINWEB_SMS_INTERNET_MAGAZIN_ZV"] = "Интернет-магазин, Звонки";
-$MESS["IMAGINWEB_SMS_OSNOVNYE_NASTROYKI1"] = "Основные настройки, звонки";
-$MESS["IMAGINWEB_SMS_OTPRAVKA_SOOBSENIA"] = "Отправка сообщения";
-$MESS["IMAGINWEB_SMS_ZVONOK_POSTAVLEN_V_O"] = "Звонок поставлен в очередь";
-$MESS["IMAGINWEB_SMS_SOVERSAYTE_AVTOMATIC"] = "Совершайте автоматические телефонные звонки клиентам без оператора, просто введите текст, робот позвонит от вашего номера телефона и голосом девушки прочитает его!";
-$MESS["IMAGINWEB_SMS_ZVONKI_MOGUT_OSUSEST"] = "Звонки могут осуществляться от вашего номера телефона";
-$MESS["IMAGINWEB_SMS_VAS_KLUC_VYSYLAETSA"] = "Ваш Ключ, высылается вам на";
-$MESS["IMAGINWEB_SMS_POSLE_REGISTRACII"] = "после регистрации";
-$MESS["IMAGINWEB_SMS_ZAREGISTRIROVATQSA"] = "Зарегистрироваться";
-$MESS["IMAGINWEB_SMS_ZVONKI_OTKLUCENY"] = "Звонки отключены";
-$MESS["IMAGINWEB_SMS_ZVONKI_VKLUCENY"] = "Звонки включены";
-$MESS["IMAGINWEB_SMS_NOMER_TELEFONA_ISHOD"] = "Номер телефона исходящего звонка";
-$MESS["IMAGINWEB_SMS_DESATQ_ZNAKOV_NAPRI"] = "десять знаков, например";
-$MESS["IMAGINWEB_SMS_PREDVARITELQNO_DOLJE"] = "предварительно должен быть зарегистрирован в личном кабинете";
-$MESS["IMAGINWEB_SMS_TREBUETSA_VERSIA"] = "Требуется версия";
-$MESS["IMAGINWEB_SMS_NE_NIJE"] = "не ниже";
-$MESS["IMAGINWEB_SMS_OBRATITESQ_POJALUYST"] = "обратитесь пожалуйста к хостинг провайдеру. ";
-$MESS["IMAGINWEB_SMS_DLA_RABOTY_TREBUETSA"] = "Для работы требуется устанвленное расширение";
-$MESS["IMAGINWEB_SMS_I_ODNO_IZ_DVUH_RASSI"] = "и одно из двух расширений связи с сервером";
-$MESS["IMAGINWEB_SMS_POZVONITQ"] = "Позвонить";
-$MESS["IMAGINWEB_SMS_TEKST_ZVONKA"] = "Текст звонка
+РџР»Р°С‚С„РѕСЂРјР° 2005 РіРѕРґР°, 1500 СЃРјСЃ/СЃРµРє, 5000 Р°РєС‚РёРІРЅС‹С… РєР»РёРµРЅС‚РѕРІ, Р±РµСЃРїР»Р°С‚РЅРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ, РЅРёР·РєРёРµ С†РµРЅС‹. Р Р°Р±РѕС‚Р°РµРј СЃ СЋСЂ. Рё С„РёР·. Р»РёС†Р°РјРё.";
+$MESS["IMAGINWEB_SMS_INTERNET_MAGAZIN_ZV"] = "РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ, Р—РІРѕРЅРєРё";
+$MESS["IMAGINWEB_SMS_OSNOVNYE_NASTROYKI1"] = "РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё, Р·РІРѕРЅРєРё";
+$MESS["IMAGINWEB_SMS_OTPRAVKA_SOOBSENIA"] = "РћС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ";
+$MESS["IMAGINWEB_SMS_ZVONOK_POSTAVLEN_V_O"] = "Р—РІРѕРЅРѕРє РїРѕСЃС‚Р°РІР»РµРЅ РІ РѕС‡РµСЂРµРґСЊ";
+$MESS["IMAGINWEB_SMS_SOVERSAYTE_AVTOMATIC"] = "РЎРѕРІРµСЂС€Р°Р№С‚Рµ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРёРµ С‚РµР»РµС„РѕРЅРЅС‹Рµ Р·РІРѕРЅРєРё РєР»РёРµРЅС‚Р°Рј Р±РµР· РѕРїРµСЂР°С‚РѕСЂР°, РїСЂРѕСЃС‚Рѕ РІРІРµРґРёС‚Рµ С‚РµРєСЃС‚, СЂРѕР±РѕС‚ РїРѕР·РІРѕРЅРёС‚ РѕС‚ РІР°С€РµРіРѕ РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР° Рё РіРѕР»РѕСЃРѕРј РґРµРІСѓС€РєРё РїСЂРѕС‡РёС‚Р°РµС‚ РµРіРѕ!";
+$MESS["IMAGINWEB_SMS_ZVONKI_MOGUT_OSUSEST"] = "Р—РІРѕРЅРєРё РјРѕРіСѓС‚ РѕСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊСЃСЏ РѕС‚ РІР°С€РµРіРѕ РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР°";
+$MESS["IMAGINWEB_SMS_VAS_KLUC_VYSYLAETSA"] = "Р’Р°С€ РљР»СЋС‡, РІС‹СЃС‹Р»Р°РµС‚СЃСЏ РІР°Рј РЅР°";
+$MESS["IMAGINWEB_SMS_POSLE_REGISTRACII"] = "РїРѕСЃР»Рµ СЂРµРіРёСЃС‚СЂР°С†РёРё";
+$MESS["IMAGINWEB_SMS_ZAREGISTRIROVATQSA"] = "Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ";
+$MESS["IMAGINWEB_SMS_ZVONKI_OTKLUCENY"] = "Р—РІРѕРЅРєРё РѕС‚РєР»СЋС‡РµРЅС‹";
+$MESS["IMAGINWEB_SMS_ZVONKI_VKLUCENY"] = "Р—РІРѕРЅРєРё РІРєР»СЋС‡РµРЅС‹";
+$MESS["IMAGINWEB_SMS_NOMER_TELEFONA_ISHOD"] = "РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° РёСЃС…РѕРґСЏС‰РµРіРѕ Р·РІРѕРЅРєР°";
+$MESS["IMAGINWEB_SMS_DESATQ_ZNAKOV_NAPRI"] = "РґРµСЃСЏС‚СЊ Р·РЅР°РєРѕРІ, РЅР°РїСЂРёРјРµСЂ";
+$MESS["IMAGINWEB_SMS_PREDVARITELQNO_DOLJE"] = "РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ РІ Р»РёС‡РЅРѕРј РєР°Р±РёРЅРµС‚Рµ";
+$MESS["IMAGINWEB_SMS_TREBUETSA_VERSIA"] = "РўСЂРµР±СѓРµС‚СЃСЏ РІРµСЂСЃРёСЏ";
+$MESS["IMAGINWEB_SMS_NE_NIJE"] = "РЅРµ РЅРёР¶Рµ";
+$MESS["IMAGINWEB_SMS_OBRATITESQ_POJALUYST"] = "РѕР±СЂР°С‚РёС‚РµСЃСЊ РїРѕР¶Р°Р»СѓР№СЃС‚Р° Рє С…РѕСЃС‚РёРЅРі РїСЂРѕРІР°Р№РґРµСЂСѓ. ";
+$MESS["IMAGINWEB_SMS_DLA_RABOTY_TREBUETSA"] = "Р”Р»СЏ СЂР°Р±РѕС‚С‹ С‚СЂРµР±СѓРµС‚СЃСЏ СѓСЃС‚Р°РЅРІР»РµРЅРЅРѕРµ СЂР°СЃС€РёСЂРµРЅРёРµ";
+$MESS["IMAGINWEB_SMS_I_ODNO_IZ_DVUH_RASSI"] = "Рё РѕРґРЅРѕ РёР· РґРІСѓС… СЂР°СЃС€РёСЂРµРЅРёР№ СЃРІСЏР·Рё СЃ СЃРµСЂРІРµСЂРѕРј";
+$MESS["IMAGINWEB_SMS_POZVONITQ"] = "РџРѕР·РІРѕРЅРёС‚СЊ";
+$MESS["IMAGINWEB_SMS_TEKST_ZVONKA"] = "РўРµРєСЃС‚ Р·РІРѕРЅРєР°
 			";
-$MESS["IMAGINWEB_SMS_OTPRAVITQ_SMS"] = "Отправить смс";
-$MESS["IMAGINWEB_SMS_VKLUCITQ_OTKLUCITQ_Z"] = "Включить/отключить звонки";
+$MESS["IMAGINWEB_SMS_OTPRAVITQ_SMS"] = "РћС‚РїСЂР°РІРёС‚СЊ СЃРјСЃ";
+$MESS["IMAGINWEB_SMS_VKLUCITQ_OTKLUCITQ_Z"] = "Р’РєР»СЋС‡РёС‚СЊ/РѕС‚РєР»СЋС‡РёС‚СЊ Р·РІРѕРЅРєРё";
 ?>

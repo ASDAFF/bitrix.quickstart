@@ -1,13 +1,13 @@
 <?
-$MESS ['ASD_CMP_PARAM_IBLOCK_TYPE'] = "Òèï èíôî.áëîêà";
-$MESS ['ASD_CMP_PARAM_IBLOCK_ID'] = "ID èíôî.áëîêà";
-$MESS ['ASD_CMP_PARAM_PIC_FROM'] = "Êàðòèíêà â ðîòàöèè";
-$MESS ['ASD_CMP_PARAM_PIC_FROM_PREV'] = "àíîíñà";
-$MESS ['ASD_CMP_PARAM_PIC_FROM_DET'] = "äåòàëüíàÿ";
-$MESS ['ASD_CMP_PARAM_LINK'] = "Îáåðíóòü îáùåé ññûëêîé";
-$MESS ['ASD_CMP_PARAM_SORT'] = "Ñîðòèðîâêà";
-$MESS ['ASD_CMP_PARAM_SORT_RAND'] = "Ñëó÷àéíàÿ";
-$MESS ['ASD_CMP_PARAM_SORT_ASC'] = "Ñîðò., ïî âîçðàñòàíèþ";
-$MESS ['ASD_CMP_PARAM_COUNT'] = "Êîëè÷åñòâî";
-$MESS ['ASD_CMP_PARAM_TIME'] = "Âðåìÿ çàäåðæêè (ñåê.)";
+$MESS ['ASD_CMP_PARAM_IBLOCK_TYPE'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾.Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['ASD_CMP_PARAM_IBLOCK_ID'] = "ID Ð¸Ð½Ñ„Ð¾.Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['ASD_CMP_PARAM_PIC_FROM'] = "ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° Ð² Ñ€Ð¾Ñ‚Ð°Ñ†Ð¸Ð¸";
+$MESS ['ASD_CMP_PARAM_PIC_FROM_PREV'] = "Ð°Ð½Ð¾Ð½ÑÐ°";
+$MESS ['ASD_CMP_PARAM_PIC_FROM_DET'] = "Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ð°Ñ";
+$MESS ['ASD_CMP_PARAM_LINK'] = "ÐžÐ±ÐµÑ€Ð½ÑƒÑ‚ÑŒ Ð¾Ð±Ñ‰ÐµÐ¹ ÑÑÑ‹Ð»ÐºÐ¾Ð¹";
+$MESS ['ASD_CMP_PARAM_SORT'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS ['ASD_CMP_PARAM_SORT_RAND'] = "Ð¡Ð»ÑƒÑ‡Ð°Ð¹Ð½Ð°Ñ";
+$MESS ['ASD_CMP_PARAM_SORT_ASC'] = "Ð¡Ð¾Ñ€Ñ‚., Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ";
+$MESS ['ASD_CMP_PARAM_COUNT'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS ['ASD_CMP_PARAM_TIME'] = "Ð’Ñ€ÐµÐ¼Ñ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÐ¸ (ÑÐµÐº.)";
 ?>

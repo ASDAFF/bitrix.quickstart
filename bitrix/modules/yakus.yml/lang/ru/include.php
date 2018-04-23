@@ -1,4 +1,4 @@
 <?
-$MESS['yakus.yml_NAME'] = 'Èìïîðò òîâàðîâ èç YML (YAKUS)';
+$MESS['yakus.yml_NAME'] = 'Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¸Ð· YML (YAKUS)';
 
 ?>

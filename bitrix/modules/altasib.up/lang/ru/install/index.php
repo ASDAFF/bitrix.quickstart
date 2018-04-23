@@ -8,12 +8,12 @@
 #################################################
 ?>
 <?
-$MESS["ALTASIB_UP_MODULE_NAME"] = "Ââåðõ!";
-$MESS["ALTASIB_UP_MODULE_DESCRIPTION"] = "Ïîÿâëÿþùàÿñÿ êíîïêà äëÿ ïåðåìîòêè ýêðàíà ââåðõ";
-$MESS["ALTASIB_UP_INSTALL_TITLE"] = "Óñòàíîâêà ìîäóëÿ: Ââåðõ!";
-$MESS["ALTASIB_UP_UNINSTALL_TITLE"] = "Óäàëåíèå ìîäóëÿ: Ââåðõ!";
-$MESS["ALTASIB_UP_INSTALL_ACCESS_DENIED"] = "Äîñòóï çàïðåùåí";
-$MESS["ALTASIB_UP_INSTALL_FULL_ACCESS"] = "Ïîëíûé äîñòóï";
-$MESS["MOD_INST_ERR"]="Îøèáêà óñòàíîâêè";
-$MESS["MOD_INST_OK"]="Ìîäóëü óñòàíîâëåí";
+$MESS["ALTASIB_UP_MODULE_NAME"] = "Ð’Ð²ÐµÑ€Ñ…!";
+$MESS["ALTASIB_UP_MODULE_DESCRIPTION"] = "ÐŸÐ¾ÑÐ²Ð»ÑÑŽÑ‰Ð°ÑÑÑ ÐºÐ½Ð¾Ð¿ÐºÐ° Ð´Ð»Ñ Ð¿ÐµÑ€ÐµÐ¼Ð¾Ñ‚ÐºÐ¸ ÑÐºÑ€Ð°Ð½Ð° Ð²Ð²ÐµÑ€Ñ…";
+$MESS["ALTASIB_UP_INSTALL_TITLE"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ: Ð’Ð²ÐµÑ€Ñ…!";
+$MESS["ALTASIB_UP_UNINSTALL_TITLE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ: Ð’Ð²ÐµÑ€Ñ…!";
+$MESS["ALTASIB_UP_INSTALL_ACCESS_DENIED"] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½";
+$MESS["ALTASIB_UP_INSTALL_FULL_ACCESS"] = "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿";
+$MESS["MOD_INST_ERR"]="ÐžÑˆÐ¸Ð±ÐºÐ° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸";
+$MESS["MOD_INST_OK"]="ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
 ?>

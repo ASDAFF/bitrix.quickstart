@@ -1,37 +1,37 @@
 <?
 $MESS["sms_GUID"] = "GUID";
-$MESS["sms_SENDERNAME"] = "Èìÿ îòïðàâèòåëÿ";
-$MESS["sms_DESTINATION"] = "Ïîëó÷àòåëü";
-$MESS["sms_STARTSEND"] = "Íà÷àëî îòïðàâêè";
-$MESS["sms_LASTMODIFIED"] = "Äàòà èçìåíåíèé";
-$MESS["sms_COUNTPART"] = "Êîëè÷åñòâî ÷àñòåé";
-$MESS["sms_SENDPART"] = "×àñòåé îòïðàâëåíî";
-$MESS["sms_CODETYPE"] = "Òèï êîäèðîâàíèÿ ñîîáùåíèÿ";
-$MESS["sms_TEXTMESSAGE"] = "Òåêñò ñîîáùåíèÿ";  
-$MESS["sms_SALE_ORDER"] = "ID çàêàçà";  
-$MESS["sms_POSTING"] = "ID ðàññûëêè";  
-$MESS["sms_EVENTS"] = "Ñîáûòèå";  
+$MESS["sms_SENDERNAME"] = "Ð˜Ð¼Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»Ñ";
+$MESS["sms_DESTINATION"] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_STARTSEND"] = "ÐÐ°Ñ‡Ð°Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["sms_LASTMODIFIED"] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹";
+$MESS["sms_COUNTPART"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹";
+$MESS["sms_SENDPART"] = "Ð§Ð°ÑÑ‚ÐµÐ¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_CODETYPE"] = "Ð¢Ð¸Ð¿ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["sms_TEXTMESSAGE"] = "Ð¢ÐµÐºÑÑ‚ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";  
+$MESS["sms_SALE_ORDER"] = "ID Ð·Ð°ÐºÐ°Ð·Ð°";  
+$MESS["sms_POSTING"] = "ID Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";  
+$MESS["sms_EVENTS"] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ðµ";  
 
-$MES["sms_nav"] = "Íàâèãàöèÿ";
+$MES["sms_nav"] = "ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ";
 
 $MESS["sms_f_GUID"] = "GUID";
-$MESS["sms_f_SenderName"] = "Èìÿ îòïðàâèòåëÿ";
-$MESS["sms_f_Destination"] = "Ïîëó÷àòåëü";
-$MESS["sms_f_StartSend"] = "Íà÷àëî îòïðàâêè";
-$MESS["sms_f_StartSend"] = "Êîíåö îòïðàâêè";
-$MESS["sms_f_LastModified"] = "Äàòà èçìåíåíèé";
-$MESS["sms_f_CountPart"] = "Êîëè÷åñòâî ÷àñòåé";
-$MESS["sms_f_SendPart"] = "×àñòåé îòïðàâëåíî";
-$MESS["sms_f_CodeType"] = "Òèï êîäèðîâàíèÿ ñîîáùåíèÿ";
-$MESS["sms_f_TextMessage"] = "Òåêñò ñîîáùåíèÿ";  
-$MESS["sms4b_title"] = "Îòïðàâëåííûå ñîîáùåíèÿ";
-$MESS["sms_f_Sale_Order"] = "ID çàêàçà";
-$MESS["sms_f_Posting"] = "ID ðàññûëêè";
-$MESS["sms_f_Events"] = "Ñîáûòèå";
+$MESS["sms_f_SenderName"] = "Ð˜Ð¼Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»Ñ";
+$MESS["sms_f_Destination"] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_f_StartSend"] = "ÐÐ°Ñ‡Ð°Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["sms_f_StartSend"] = "ÐšÐ¾Ð½ÐµÑ† Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["sms_f_LastModified"] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹";
+$MESS["sms_f_CountPart"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹";
+$MESS["sms_f_SendPart"] = "Ð§Ð°ÑÑ‚ÐµÐ¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_f_CodeType"] = "Ð¢Ð¸Ð¿ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["sms_f_TextMessage"] = "Ð¢ÐµÐºÑÑ‚ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";  
+$MESS["sms4b_title"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["sms_f_Sale_Order"] = "ID Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS["sms_f_Posting"] = "ID Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS["sms_f_Events"] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ðµ";
 
-$MESS["CHECK_MODULE_OPT"] = 'Íåò ñîåäèíåíèÿ ñ ñåðâåðîì. Ïðîâåðüòå íàñòðîéêè ìîäóëÿ.';
+$MESS["CHECK_MODULE_OPT"] = 'ÐÐµÑ‚ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ Ñ ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð¼. ÐŸÑ€Ð¾Ð²ÐµÑ€ÑŒÑ‚Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ.';
 
-$MESS["SMS_LIST_UPDATE"] = 'Îáíîâèòü';
-$MESS["sms_f_StartSend_from"] = "Îòïðàâëåíî";
-$MESS["sms_f_LastModified_from"] = "Ïîñëåäíèé ðàç ðåäàêòèðîâàëîñü";
+$MESS["SMS_LIST_UPDATE"] = 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ';
+$MESS["sms_f_StartSend_from"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_f_LastModified_from"] = "ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ð¹ Ñ€Ð°Ð· Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð»Ð¾ÑÑŒ";
 ?>

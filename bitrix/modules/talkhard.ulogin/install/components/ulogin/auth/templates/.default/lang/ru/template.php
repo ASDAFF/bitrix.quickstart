@@ -1,5 +1,5 @@
 <?
-$MESS["TALKHARD_ULOGIN_PRIVET"] = "Ïðèâåò, ";
-$MESS["TALKHARD_ULOGIN_VYYTI"] = "Âûéòè";
-$MESS["TALKHARD_ULOGIN_SYNC_MESSAGE"] = "Ïðèâÿçêà àêêàóíòîâ uLogin: ";
+$MESS["TALKHARD_ULOGIN_PRIVET"] = "ÐŸÑ€Ð¸Ð²ÐµÑ‚, ";
+$MESS["TALKHARD_ULOGIN_VYYTI"] = "Ð’Ñ‹Ð¹Ñ‚Ð¸";
+$MESS["TALKHARD_ULOGIN_SYNC_MESSAGE"] = "ÐŸÑ€Ð¸Ð²ÑÐ·ÐºÐ° Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð¾Ð² uLogin: ";
 ?>

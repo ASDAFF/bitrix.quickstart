@@ -71,7 +71,7 @@ if($OFFERS_IBLOCK_ID)
 	}
 }
 
-//доставка
+//РґРѕСЃС‚Р°РІРєР°
 $arDelivery = array();
 $db_dtype = CSaleDelivery::GetList(
     array(
@@ -91,7 +91,7 @@ while ($ar_dtype = $db_dtype->Fetch())
     $arDelivery[$ar_dtype["ID"]] = $ar_dtype["NAME"];
 }
 
-//оплата
+//РѕРїР»Р°С‚Р°
 $arPaysystem = array();
 $db_ptype = CSalePaySystem::GetList($arOrder = Array("SORT"=>"ASC", "PSA_NAME"=>"ASC"), Array("LID"=>$site, "ACTIVE"=>"Y", "PERSON_TYPE_ID"=>$arCurrentValues["PERSON_TYPE"]));
 while ($ptype = $db_ptype->Fetch())
@@ -99,12 +99,12 @@ while ($ptype = $db_ptype->Fetch())
 	$arPaysystem[$ptype["ID"]] = $ptype["NAME"];
 }
 
-//типы цен
+//С‚РёРїС‹ С†РµРЅ
 $arPrice = array();
 $rsPrice = CCatalogGroup::GetList($v1="sort", $v2="asc");
 	while($arr=$rsPrice->Fetch()) $arPrice[$arr["ID"]] = "[".$arr["NAME"]."] ".$arr["NAME_LANG"];
 
-//список групп пользователей
+//СЃРїРёСЃРѕРє РіСЂСѓРїРї РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
 $rsGroups = CGroup::GetList($by = "c_sort", $order = "asc", array("ACTIVE"=>"Y","ADMIN"=>"N"));
 $arUsersGroups = array();
 if(intval($rsGroups->SelectedRowsCount()) > 0)

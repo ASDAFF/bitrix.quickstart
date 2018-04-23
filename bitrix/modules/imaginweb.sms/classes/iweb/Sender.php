@@ -6,7 +6,7 @@ if(CIWebSMS::checkPhpVer53()) {
 }
 #debmes(IWEB_APP_PATH);
 
-// функция преобразует рекурсивно объект в массив
+// С„СѓРЅРєС†РёСЏ РїСЂРµРѕР±СЂР°Р·СѓРµС‚ СЂРµРєСѓСЂСЃРёРІРЅРѕ РѕР±СЉРµРєС‚ РІ РјР°СЃСЃРёРІ
 if (!function_exists("CIWebObjToArray"))
 {
 	function CIWebObjToArray(&$obj) {
@@ -45,7 +45,7 @@ class CIWebSMS  {
 		}
 	}
 	/*
-	* метод проверки номера сотового телефона
+	* РјРµС‚РѕРґ РїСЂРѕРІРµСЂРєРё РЅРѕРјРµСЂР° СЃРѕС‚РѕРІРѕРіРѕ С‚РµР»РµС„РѕРЅР°
 	*/
 	public function CheckPhoneNumber($phone) {
 		$result = true;
@@ -154,7 +154,7 @@ class CIWebSMS  {
 		
 		if($gate == 'turbosms.ua') {
 			$client = new SoapClient(COption::GetOptionString('imaginweb.sms', 'host2'));
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username2'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password2')
@@ -162,9 +162,9 @@ class CIWebSMS  {
 			if(isset($arParams['LOGIN']) && is_array($arParams)) $auth['login'] = $arParams['LOGIN'];
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $auth['password'] = $arParams['PASSWORD'];
 
-			// Авторизируемся на сервере
+			// РђРІС‚РѕСЂРёР·РёСЂСѓРµРјСЃСЏ РЅР° СЃРµСЂРІРµСЂРµ
 			$client->Auth($auth);
-			// Получаем количество доступных кредитов
+			// РџРѕР»СѓС‡Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ РґРѕСЃС‚СѓРїРЅС‹С… РєСЂРµРґРёС‚РѕРІ
 			$resultTMP = $client->GetCreditBalance();
 			$result = $resultTMP->GetCreditBalanceResult;
 		}
@@ -213,7 +213,7 @@ class CIWebSMS  {
 			$bal = $smser->getBalance();
 			
 			if (array_key_exists('error', $bal)) {
-				#$bal = "Не удалось получить баланс. Ошибка Http: ".$bal['error']."\n";
+				#$bal = "РќРµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ Р±Р°Р»Р°РЅСЃ. РћС€РёР±РєР° Http: ".$bal['error']."\n";
 				return GetMessage("IMAGINWEB_SMS_NE_UDALOSQ_POLUCITQ")." Http: ".$bal['error']."\n";
 			}
 			
@@ -275,8 +275,8 @@ class CIWebSMS  {
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $auth['password'] = $arParams['PASSWORD'];
 			
 			
-			#define("IWEB_AM4U_HTTPS_LOGIN", $auth['login']); //Ваш логин для HTTPS-протокола
-			#define("IWEB_AM4U_HTTPS_PASSWORD", $auth['password']); //Ваш пароль для HTTPS-протокола
+			#define("IWEB_AM4U_HTTPS_LOGIN", $auth['login']); //Р’Р°С€ Р»РѕРіРёРЅ РґР»СЏ HTTPS-РїСЂРѕС‚РѕРєРѕР»Р°
+			#define("IWEB_AM4U_HTTPS_PASSWORD", $auth['password']); //Р’Р°С€ РїР°СЂРѕР»СЊ РґР»СЏ HTTPS-РїСЂРѕС‚РѕРєРѕР»Р°
 
 			
 			$api = new am4uTransport($auth['login'],$auth['password']);
@@ -299,8 +299,8 @@ class CIWebSMS  {
 			if(isset($arParams['LOGIN']) && is_array($arParams)) $auth['login'] = $arParams['LOGIN'];
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $auth['password'] = $arParams['PASSWORD'];
 			
-			#$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Ваш логин при регистрации, также его называют System_ID
-			#$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Ваш пароль к логину
+			#$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Р’Р°С€ Р»РѕРіРёРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё, С‚Р°РєР¶Рµ РµРіРѕ РЅР°Р·С‹РІР°СЋС‚ System_ID
+			#$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Р’Р°С€ РїР°СЂРѕР»СЊ Рє Р»РѕРіРёРЅСѓ
 			
 			$client = new SMSClient($auth['login'],$auth['password']);
 			$sessionID = $client->getSessionID();
@@ -311,7 +311,7 @@ class CIWebSMS  {
 		
 		if($gate == 'axtele.com') {
 			require_once("DEVINOSMS.Class.v2.1.php");
-			$devino = new DEVINOSMS(); // Создание объекта типа DEVINOSMS(необходим для отправки СМС)
+			$devino = new DEVINOSMS(); // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° С‚РёРїР° DEVINOSMS(РЅРµРѕР±С…РѕРґРёРј РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ)
 			
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username5'),
@@ -322,8 +322,8 @@ class CIWebSMS  {
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $auth['password'] = $arParams['PASSWORD'];
 			
 			
-			#$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Ваш логин при регистрации, также его называют System_ID
-			#$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Ваш пароль к логину
+			#$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Р’Р°С€ Р»РѕРіРёРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё, С‚Р°РєР¶Рµ РµРіРѕ РЅР°Р·С‹РІР°СЋС‚ System_ID
+			#$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Р’Р°С€ РїР°СЂРѕР»СЊ Рє Р»РѕРіРёРЅСѓ
 			
 			$result = $devino->GetSessionID($auth['login'],$auth['password']);
 			
@@ -531,21 +531,21 @@ class CIWebSMS  {
 			//debmes($phone,$originator);
 			//debmes($key);
 			
-			////Телефон отправителя
+			////РўРµР»РµС„РѕРЅ РѕС‚РїСЂР°РІРёС‚РµР»СЏ
 			//$callerPhone = '791********';
-			////Телефон абонента
+			////РўРµР»РµС„РѕРЅ Р°Р±РѕРЅРµРЅС‚Р°
 			//$phone = "792********";
-			////Секретный ключ
+			////РЎРµРєСЂРµС‚РЅС‹Р№ РєР»СЋС‡
 			//$key = '****';
-			//Инициализируем фабрику
+			//РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј С„Р°Р±СЂРёРєСѓ
 			$clientFactory = new BitcallClientFactory();
-			//Создаем клиент
+			//РЎРѕР·РґР°РµРј РєР»РёРµРЅС‚
 			$client = $clientFactory->getClient($key);
-			//Создаем запрос на добавление текстового звонка в очередь
+			//РЎРѕР·РґР°РµРј Р·Р°РїСЂРѕСЃ РЅР° РґРѕР±Р°РІР»РµРЅРёРµ С‚РµРєСЃС‚РѕРІРѕРіРѕ Р·РІРѕРЅРєР° РІ РѕС‡РµСЂРµРґСЊ
 			$request = new TextCallRequest($message, $originator, $phone);
-			//Выполняем запрос
+			//Р’С‹РїРѕР»РЅСЏРµРј Р·Р°РїСЂРѕСЃ
 			$response = $client->text($request);
-			//Показываем ответ
+			//РџРѕРєР°Р·С‹РІР°РµРј РѕС‚РІРµС‚
 			//var_dump($response);
 
 			if(isset($this)) $this->return_mess = $response;
@@ -586,15 +586,15 @@ class CIWebSMS  {
 		if(CIWebSMS::CheckPhoneNumber($phone) && $gate == 'redsms.ru') {
 			
 			require_once("redsms_smsClient.php");
-			//$devino = new DEVINOSMS(); // Создание объекта типа DEVINOSMS(необходим для отправки СМС)
+			//$devino = new DEVINOSMS(); // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° С‚РёРїР° DEVINOSMS(РЅРµРѕР±С…РѕРґРёРј РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ)
 			
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator_redsms.ru');
 			
 			$message = iconv($encoding, 'utf-8', $message);
 			$originator = iconv($encoding, 'utf-8', $originator);
 			
-			$user = COption::GetOptionString('imaginweb.sms', 'username_redsms.ru'); // Ваш логин при регистрации, также его называют System_ID
-			$pass = COption::GetOptionString('imaginweb.sms', 'password_redsms.ru');   // Ваш пароль к логину
+			$user = COption::GetOptionString('imaginweb.sms', 'username_redsms.ru'); // Р’Р°С€ Р»РѕРіРёРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё, С‚Р°РєР¶Рµ РµРіРѕ РЅР°Р·С‹РІР°СЋС‚ System_ID
+			$pass = COption::GetOptionString('imaginweb.sms', 'password_redsms.ru');   // Р’Р°С€ РїР°СЂРѕР»СЊ Рє Р»РѕРіРёРЅСѓ
 			
 			if(isset($arParams['LOGIN']) && is_array($arParams)) $user = $arParams['LOGIN'];
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $pass = $arParams['PASSWORD'];
@@ -614,7 +614,7 @@ class CIWebSMS  {
 		if(CIWebSMS::CheckPhoneNumber($phone) && $gate == 'axtele.com') {
 			
 			require_once("DEVINOSMS.Class.v2.1.php");
-			$devino = new DEVINOSMS(); // Создание объекта типа DEVINOSMS(необходим для отправки СМС)
+			$devino = new DEVINOSMS(); // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° С‚РёРїР° DEVINOSMS(РЅРµРѕР±С…РѕРґРёРј РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ)
 			
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator5');
 			
@@ -623,20 +623,20 @@ class CIWebSMS  {
 			$message = iconv($encoding, 'utf-8', $message);
 			$originator = iconv($encoding, 'utf-8', $originator);
 			
-			$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Ваш логин при регистрации, также его называют System_ID
-			$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Ваш пароль к логину
+			$user = COption::GetOptionString('imaginweb.sms', 'username5'); // Р’Р°С€ Р»РѕРіРёРЅ РїСЂРё СЂРµРіРёСЃС‚СЂР°С†РёРё, С‚Р°РєР¶Рµ РµРіРѕ РЅР°Р·С‹РІР°СЋС‚ System_ID
+			$pass = COption::GetOptionString('imaginweb.sms', 'password5');   // Р’Р°С€ РїР°СЂРѕР»СЊ Рє Р»РѕРіРёРЅСѓ
 			
 			if(isset($arParams['LOGIN']) && is_array($arParams)) $user = $arParams['LOGIN'];
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $pass = $arParams['PASSWORD'];
 			
 			$result = $devino->GetSessionID($user,$pass);
 			$da = array($phone);
-			$countDA = count($da); //Количество номеров.
-			$sourceAddress = addslashes('<![CDATA['.$originator.']]>'); //Имя отправителя, подключаются у менеджеров
+			$countDA = count($da); //РљРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРјРµСЂРѕРІ.
+			$sourceAddress = addslashes('<![CDATA['.$originator.']]>'); //РРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ, РїРѕРґРєР»СЋС‡Р°СЋС‚СЃСЏ Сѓ РјРµРЅРµРґР¶РµСЂРѕРІ
 			$receiptRequested='true';
-			foreach ($da as $s)									//Перевод номеров в тег <string>
+			foreach ($da as $s)									//РџРµСЂРµРІРѕРґ РЅРѕРјРµСЂРѕРІ РІ С‚РµРі <string>
 				$destinationAddresses.='<string>'.$s.'</string>';
-			$data = addslashes('<![CDATA['.$message.']]>');  //Текст СМС, вводится между квадратными скобками
+			$data = addslashes('<![CDATA['.$message.']]>');  //РўРµРєСЃС‚ РЎРњРЎ, РІРІРѕРґРёС‚СЃСЏ РјРµР¶РґСѓ РєРІР°РґСЂР°С‚РЅС‹РјРё СЃРєРѕР±РєР°РјРё
 
 			$result += $devino->SendMessage($result[SessionID],$data, $destinationAddresses,$sourceAddress,$receiptRequested,$countDA); //
 
@@ -668,8 +668,8 @@ class CIWebSMS  {
 			
 			require_once("am4u_transport.php");
 			
-			#define("IWEB_AM4U_HTTPS_LOGIN", $auth['login']); //Ваш логин для HTTPS-протокола
-			#define("IWEB_AM4U_HTTPS_PASSWORD", $auth['password']); //Ваш пароль для HTTPS-протокола
+			#define("IWEB_AM4U_HTTPS_LOGIN", $auth['login']); //Р’Р°С€ Р»РѕРіРёРЅ РґР»СЏ HTTPS-РїСЂРѕС‚РѕРєРѕР»Р°
+			#define("IWEB_AM4U_HTTPS_PASSWORD", $auth['password']); //Р’Р°С€ РїР°СЂРѕР»СЊ РґР»СЏ HTTPS-РїСЂРѕС‚РѕРєРѕР»Р°
 			
 			$api = new am4uTransport($auth['login'],$auth['password']);
 			
@@ -727,7 +727,7 @@ class CIWebSMS  {
 			$message = iconv($encoding, 'utf-8', $message);
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator_nssms.ru');
 			
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username_nssms.ru'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password_nssms.ru')
@@ -872,7 +872,7 @@ class CIWebSMS  {
 			$send_result = $smser->sendSingle($phone, $message);
 			$responseBody = $send_result;
 			if (array_key_exists('error', $send_result)) {
-				#$responseBody = "Ошибка отправки сообщения. Ошибка Http: " + $send_result['error']."\n";
+				#$responseBody = "РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РћС€РёР±РєР° Http: " + $send_result['error']."\n";
 				$result = false;
 			} else {
 				$result = true;
@@ -972,7 +972,7 @@ class CIWebSMS  {
 			
 			chdir(dirname(__FILE__));
 			$client = new SoapClient(COption::GetOptionString('imaginweb.sms', 'host2'));
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username2'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password2')
@@ -980,20 +980,20 @@ class CIWebSMS  {
 			if(isset($arParams['LOGIN']) && is_array($arParams)) $auth['login'] = $arParams['LOGIN'];
 			if(isset($arParams['PASSWORD']) && is_array($arParams)) $auth['password'] = $arParams['PASSWORD'];
 			
-			// Авторизируемся на сервере
+			// РђРІС‚РѕСЂРёР·РёСЂСѓРµРјСЃСЏ РЅР° СЃРµСЂРІРµСЂРµ
 			$client->Auth($auth);
 			$message = iconv($encoding, 'utf-8', $message);
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator2');
-			// Данные для отправки
+			// Р”Р°РЅРЅС‹Рµ РґР»СЏ РѕС‚РїСЂР°РІРєРё
 			$sms = Array(
 				'sender' => $originator,
 				'destination' => '+'.$phone,
 				'text' => $message
 			);
 
-			// Отправляем сообщение на один номер. 
-			// Подпись отправителя может содержать английские буквы и цифры. Максимальная длина - 11 символов.
-			// Номер указывается в полном формате, включая плюс и код страны
+			// РћС‚РїСЂР°РІР»СЏРµРј СЃРѕРѕР±С‰РµРЅРёРµ РЅР° РѕРґРёРЅ РЅРѕРјРµСЂ. 
+			// РџРѕРґРїРёСЃСЊ РѕС‚РїСЂР°РІРёС‚РµР»СЏ РјРѕР¶РµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ Р°РЅРіР»РёР№СЃРєРёРµ Р±СѓРєРІС‹ Рё С†РёС„СЂС‹. РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ РґР»РёРЅР° - 11 СЃРёРјРІРѕР»РѕРІ.
+			// РќРѕРјРµСЂ СѓРєР°Р·С‹РІР°РµС‚СЃСЏ РІ РїРѕР»РЅРѕРј С„РѕСЂРјР°С‚Рµ, РІРєР»СЋС‡Р°СЏ РїР»СЋСЃ Рё РєРѕРґ СЃС‚СЂР°РЅС‹
 			$result = $client->SendSMS($sms);
 			
 			
@@ -1009,7 +1009,7 @@ class CIWebSMS  {
 			$message = iconv($encoding, 'utf-8', $message);
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator3');
 			
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username3'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password3')
@@ -1069,7 +1069,7 @@ class CIWebSMS  {
 			
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator6');
 			
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username6'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password6')
@@ -1093,7 +1093,7 @@ class CIWebSMS  {
 			
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator8');
 			
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username8'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password8')
@@ -1117,7 +1117,7 @@ class CIWebSMS  {
 			
 			$originator = (strlen(trim($originator)) > 0)?trim($originator):COption::GetOptionString('imaginweb.sms', 'originator7');
 			
-			// Данные авторизации
+			// Р”Р°РЅРЅС‹Рµ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 			$auth = Array (
 				'login' => COption::GetOptionString('imaginweb.sms', 'username7'),
 				'password' => COption::GetOptionString('imaginweb.sms', 'password7')

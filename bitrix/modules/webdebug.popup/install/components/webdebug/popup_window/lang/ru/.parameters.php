@@ -1,36 +1,36 @@
 <?
 // Groups
-$MESS['WD_POPUP_INCLUDE_PARAMS'] = "Ïàðàìåòðû ñîäåðæèìîãî îêíà";
-$MESS['WD_POPUP_INCLUDE_POPUP'] = "Ïàðàìåòðû âñïëûâàþùåãî îêíà";
+$MESS['WD_POPUP_INCLUDE_PARAMS'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ð³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_INCLUDE_POPUP'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
 
 /* Include areas */
-$MESS['WD_POPUP_INCLUDE_PAGE'] = "äëÿ ñòðàíèöû";
-$MESS['WD_POPUP_INCLUDE_SECT'] = "äëÿ ðàçäåëà";
-$MESS['WD_POPUP_INCLUDE_FILE'] = "èç ôàéëà";
-$MESS['WD_POPUP_INCLUDE_AREA_FILE_SHOW'] = "Ïîêàçûâàòü âêëþ÷àåìóþ îáëàñòü";
-$MESS['WD_POPUP_INCLUDE_AREA_FILE_SUFFIX'] = "Ñóôôèêñ èìåíè ôàéëà âêëþ÷àåìîé îáëàñòè";
-$MESS['WD_POPUP_INCLUDE_AREA_FILE_RECURSIVE'] = "Ðåêóðñèâíîå ïîäêëþ÷åíèå âêëþ÷àåìûõ îáëàñòåé ðàçäåëîâ";
-$MESS['WD_POPUP_INCLUDE_EDIT_TEMPLATE'] = "Øàáëîí îáëàñòè ïî óìîë÷àíèþ";
-$MESS['WD_POPUP_INCLUDE_PATH'] = "Ïóòü ê ôàéëó îáëàñòè";
+$MESS['WD_POPUP_INCLUDE_PAGE'] = "Ð´Ð»Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS['WD_POPUP_INCLUDE_SECT'] = "Ð´Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS['WD_POPUP_INCLUDE_FILE'] = "Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð°";
+$MESS['WD_POPUP_INCLUDE_AREA_FILE_SHOW'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð²ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ÑƒÑŽ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ";
+$MESS['WD_POPUP_INCLUDE_AREA_FILE_SUFFIX'] = "Ð¡ÑƒÑ„Ñ„Ð¸ÐºÑ Ð¸Ð¼ÐµÐ½Ð¸ Ñ„Ð°Ð¹Ð»Ð° Ð²ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼Ð¾Ð¹ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸";
+$MESS['WD_POPUP_INCLUDE_AREA_FILE_RECURSIVE'] = "Ð ÐµÐºÑƒÑ€ÑÐ¸Ð²Ð½Ð¾Ðµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð²ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼Ñ‹Ñ… Ð¾Ð±Ð»Ð°ÑÑ‚ÐµÐ¹ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS['WD_POPUP_INCLUDE_EDIT_TEMPLATE'] = "Ð¨Ð°Ð±Ð»Ð¾Ð½ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
+$MESS['WD_POPUP_INCLUDE_PATH'] = "ÐŸÑƒÑ‚ÑŒ Ðº Ñ„Ð°Ð¹Ð»Ñƒ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸";
 
 /* Popup */
-$MESS['WD_POPUP_ID'] = "ID ìîäàëüíîãî îêíà (äîëæíî áûòü óíèêàëüíî â ïðåäåëàõ ñòðàíèöû)";
-$MESS['WD_POPUP_NAME'] = "Çàãîëîâîê ìîäàëüíîãî îêíà";
-$MESS['WD_POPUP_WIDTH'] = "Øèðèíà ìîäàëüíîãî îêíà (â ïèêñåëÿõ)";
-$MESS['WD_POPUP_CLOSE'] = "Íàëè÷èå êíîïêè çàêðûòèÿ";
-$MESS['WD_POPUP_APPEND_TO_BODY'] = "Ïåðåìåùàòü îêíî â BODY";
-$MESS['WD_POPUP_DISPLAY_NONE'] = "Ñêðûâàòü îêíî";
-$MESS['WD_POPUP_ANIMATION'] = "Ýôôåêò àíèìàöèè";
-$MESS['WD_POPUP_CALLBACK_INIT'] = "JS-ôóíêöèÿ ïðè ñîçäàíèè âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_CALLBACK_OPEN'] = "JS-ôóíêöèÿ ïðè ïåðâîì îòêðûòèè âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_CALLBACK_SHOW'] = "JS-ôóíêöèÿ ïðè êàæäîì îòêðûòèè âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_CALLBACK_CLOSE'] = "JS-ôóíêöèÿ ïðè çàêðûòèè âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_CLASSES'] = "CSS-êëàññû âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_LINK_SHOW'] = "Ïîêàçûâàòü ññûëêó îòêðûòèÿ âñïëûâàþùåãî îêíà";
-$MESS['WD_POPUP_LINK_TO'] = "jQuery-ñåëåêòîð äëÿ îòêðûâàþùåé ññûëêè";
-$MESS['WD_POPUP_LINK_TEXT'] = "Òåêñò ññûëêè";
-	$MESS['WD_POPUP_LINK_TEXT_DEFAULT'] = "Îòêðûòü";
-$MESS['WD_POPUP_AUTOOPEN'] = "Àâòîîòêðûòèå îêîøêà";
-$MESS['WD_POPUP_AUTOOPEN_DELAY'] = "Çàäåðæêà ïåðåä îòêðûòèåì, ìñ";
-$MESS['WD_POPUP_LINK_HIDDEN'] = "Ñêðûòàÿ ññûëêà";
+$MESS['WD_POPUP_ID'] = "ID Ð¼Ð¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¾ÐºÐ½Ð° (Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾ Ð² Ð¿Ñ€ÐµÐ´ÐµÐ»Ð°Ñ… ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹)";
+$MESS['WD_POPUP_NAME'] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð¼Ð¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_WIDTH'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð¼Ð¾Ð´Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¾ÐºÐ½Ð° (Ð² Ð¿Ð¸ÐºÑÐµÐ»ÑÑ…)";
+$MESS['WD_POPUP_CLOSE'] = "ÐÐ°Ð»Ð¸Ñ‡Ð¸Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ð¸Ñ";
+$MESS['WD_POPUP_APPEND_TO_BODY'] = "ÐŸÐµÑ€ÐµÐ¼ÐµÑ‰Ð°Ñ‚ÑŒ Ð¾ÐºÐ½Ð¾ Ð² BODY";
+$MESS['WD_POPUP_DISPLAY_NONE'] = "Ð¡ÐºÑ€Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¾ÐºÐ½Ð¾";
+$MESS['WD_POPUP_ANIMATION'] = "Ð­Ñ„Ñ„ÐµÐºÑ‚ Ð°Ð½Ð¸Ð¼Ð°Ñ†Ð¸Ð¸";
+$MESS['WD_POPUP_CALLBACK_INIT'] = "JS-Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¿Ñ€Ð¸ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_CALLBACK_OPEN'] = "JS-Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¿Ñ€Ð¸ Ð¿ÐµÑ€Ð²Ð¾Ð¼ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_CALLBACK_SHOW'] = "JS-Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¿Ñ€Ð¸ ÐºÐ°Ð¶Ð´Ð¾Ð¼ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_CALLBACK_CLOSE'] = "JS-Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð¿Ñ€Ð¸ Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ð¸Ð¸ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_CLASSES'] = "CSS-ÐºÐ»Ð°ÑÑÑ‹ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_LINK_SHOW'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ñ Ð²ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð¾ÐºÐ½Ð°";
+$MESS['WD_POPUP_LINK_TO'] = "jQuery-ÑÐµÐ»ÐµÐºÑ‚Ð¾Ñ€ Ð´Ð»Ñ Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ¹ ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS['WD_POPUP_LINK_TEXT'] = "Ð¢ÐµÐºÑÑ‚ ÑÑÑ‹Ð»ÐºÐ¸";
+	$MESS['WD_POPUP_LINK_TEXT_DEFAULT'] = "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ";
+$MESS['WD_POPUP_AUTOOPEN'] = "ÐÐ²Ñ‚Ð¾Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ðµ Ð¾ÐºÐ¾ÑˆÐºÐ°";
+$MESS['WD_POPUP_AUTOOPEN_DELAY'] = "Ð—Ð°Ð´ÐµÑ€Ð¶ÐºÐ° Ð¿ÐµÑ€ÐµÐ´ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸ÐµÐ¼, Ð¼Ñ";
+$MESS['WD_POPUP_LINK_HIDDEN'] = "Ð¡ÐºÑ€Ñ‹Ñ‚Ð°Ñ ÑÑÑ‹Ð»ÐºÐ°";
 ?>

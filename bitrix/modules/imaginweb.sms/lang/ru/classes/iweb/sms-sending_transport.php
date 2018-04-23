@@ -1,3 +1,3 @@
 <?
-$MESS["IMAGINWEB_SMS_NE_UKAZAN_LOGIN"] = "Íå óêàçàí Ëîãèí";
+$MESS["IMAGINWEB_SMS_NE_UKAZAN_LOGIN"] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ Ð›Ð¾Ð³Ð¸Ð½";
 ?>

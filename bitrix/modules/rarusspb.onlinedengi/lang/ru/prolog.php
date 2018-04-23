@@ -1,2 +1,2 @@
 <?
-$MESS['MODULE_ICON_HINT'] = "Ïëàòåæíûé ñåðâèñ OnlineDengi";
+$MESS['MODULE_ICON_HINT'] = "ÐŸÐ»Ð°Ñ‚ÐµÐ¶Ð½Ñ‹Ð¹ ÑÐµÑ€Ð²Ð¸Ñ OnlineDengi";

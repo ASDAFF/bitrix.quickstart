@@ -1,11 +1,11 @@
 <?
-$MESS["IMAGINWEB_SMS_V_NASTROYKAH_UKAZAN"] = "Â íàñòðîéêàõ óêàçàí íåèçâåñòíûé ìåòîä çàïðîñà - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'";
-$MESS["IMAGINWEB_SMS_NE_UDAETSA_PEREKODIR"] = "Íå óäàåòñÿ ïåðåêîäèðîâàòü ïåðåäàííûå ïàðàìåòðû â êîäèðîâêó";
-$MESS["IMAGINWEB_SMS_OTSUTSTVUET_FUNKCIA"] = "îòñóòñòâóåò ôóíêöèÿ";
-$MESS["IMAGINWEB_SMS_NE_UDALOSQ_POLUCITQ"] = "Íå óäàëîñü ïîëó÷èòü îòâåò îò ñåðâåðà!";
-$MESS["IMAGINWEB_SMS_VOZMOJNO_KONFIGURACI"] = "Âîçìîæíî êîíôèãóðàöèÿ âàøåãî ñåðâåðà íå ïîçâîëÿåò îòïðàâëÿòü";
-$MESS["IMAGINWEB_SMS_ZAPROSY"] = "çàïðîñû.";
-$MESS["IMAGINWEB_SMS_NE_UDALOSQ_PODKLUCIT"] = "Íå óäàëîñü ïîäêëþ÷èòü êîíôèãóðàöèîííûé ôàéë. ";
-$MESS["IMAGINWEB_SMS_NE_UKAZAN_LOGIN"] = "Íå óêàçàí Ëîãèí";
-$MESS["IMAGINWEB_SMS_V_NASTROYKAH_UKAZAN1"] = "Â íàñòðîéêàõ óêàçàí íåèçâåñòíûé ìåòîä çàïðîñà - \\\\\\\\\'";
+$MESS["IMAGINWEB_SMS_V_NASTROYKAH_UKAZAN"] = "Ð’ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… ÑƒÐºÐ°Ð·Ð°Ð½ Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¹ Ð¼ÐµÑ‚Ð¾Ð´ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° - \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'";
+$MESS["IMAGINWEB_SMS_NE_UDAETSA_PEREKODIR"] = "ÐÐµ ÑƒÐ´Ð°ÐµÑ‚ÑÑ Ð¿ÐµÑ€ÐµÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð² ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÑƒ";
+$MESS["IMAGINWEB_SMS_OTSUTSTVUET_FUNKCIA"] = "Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ";
+$MESS["IMAGINWEB_SMS_NE_UDALOSQ_POLUCITQ"] = "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¾Ñ‚Ð²ÐµÑ‚ Ð¾Ñ‚ ÑÐµÑ€Ð²ÐµÑ€Ð°!";
+$MESS["IMAGINWEB_SMS_VOZMOJNO_KONFIGURACI"] = "Ð’Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ ÐºÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸Ñ Ð²Ð°ÑˆÐµÐ³Ð¾ ÑÐµÑ€Ð²ÐµÑ€Ð° Ð½Ðµ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ";
+$MESS["IMAGINWEB_SMS_ZAPROSY"] = "Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹.";
+$MESS["IMAGINWEB_SMS_NE_UDALOSQ_PODKLUCIT"] = "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ñ„Ð°Ð¹Ð». ";
+$MESS["IMAGINWEB_SMS_NE_UKAZAN_LOGIN"] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ Ð›Ð¾Ð³Ð¸Ð½";
+$MESS["IMAGINWEB_SMS_V_NASTROYKAH_UKAZAN1"] = "Ð’ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ… ÑƒÐºÐ°Ð·Ð°Ð½ Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¹ Ð¼ÐµÑ‚Ð¾Ð´ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° - \\\\\\\\\'";
 ?>

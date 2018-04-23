@@ -1,3 +1,3 @@
 <?php
 
-$MESS['REES_MODULE_INSTALLED'] = 'Модуль REES46 установлен';
+$MESS['REES_MODULE_INSTALLED'] = 'РњРѕРґСѓР»СЊ REES46 СѓСЃС‚Р°РЅРѕРІР»РµРЅ';

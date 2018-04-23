@@ -1,8 +1,8 @@
 <?
-$MESS["IBLOCK_TYPE"] = "Òèï èíôîáëîêà";
-$MESS["IBLOCK_IBLOCK"] = "Èíôîáëîê";
-$MESS["IBLOCK_ELEMENT_ID"] = "ID ýëåìåíòà";
-$MESS["IBLOCK_MAX_VOTE"] = "Ìàêñèìàëüíûé áàëë";
-$MESS["IBLOCK_VOTE_NAMES"] = "Ïîäïèñè ê áàëëàì";
-$MESS["CP_BIV_SET_STATUS_404"] = "Óñòàíàâëèâàòü ñòàòóñ 404, åñëè íå íàéäåíû ýëåìåíò èëè ðàçäåë";
+$MESS["IBLOCK_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_IBLOCK"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["IBLOCK_ELEMENT_ID"] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["IBLOCK_MAX_VOTE"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð±Ð°Ð»Ð»";
+$MESS["IBLOCK_VOTE_NAMES"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐ¸ Ðº Ð±Ð°Ð»Ð»Ð°Ð¼";
+$MESS["CP_BIV_SET_STATUS_404"] = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ 404, ÐµÑÐ»Ð¸ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¸Ð»Ð¸ Ñ€Ð°Ð·Ð´ÐµÐ»";
 ?>

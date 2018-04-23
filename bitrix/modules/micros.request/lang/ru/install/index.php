@@ -1,6 +1,6 @@
 <?
-$MESS["micros.request_MODULE_NAME"] = "Micros: Óìíàÿ îáðàòíàÿ ñâÿçü íà áàçå Òåõíè÷åñêîé ïîääåðæêè";
-$MESS["micros.request_MODULE_DESC"] = "Micros: Óìíàÿ îáðàòíàÿ ñâÿçü íà áàçå Òåõíè÷åñêîé ïîääåðæêè";
+$MESS["micros.request_MODULE_NAME"] = "Micros: Ð£Ð¼Ð½Ð°Ñ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð°Ñ ÑÐ²ÑÐ·ÑŒ Ð½Ð° Ð±Ð°Ð·Ðµ Ð¢ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸";
+$MESS["micros.request_MODULE_DESC"] = "Micros: Ð£Ð¼Ð½Ð°Ñ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð°Ñ ÑÐ²ÑÐ·ÑŒ Ð½Ð° Ð±Ð°Ð·Ðµ Ð¢ÐµÑ…Ð½Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸";
 $MESS["micros.request_PARTNER_NAME"] = "MicrosDesign";
 $MESS["micros.request_PARTNER_URI"] = "http://www.micros-design.ru";
 ?>

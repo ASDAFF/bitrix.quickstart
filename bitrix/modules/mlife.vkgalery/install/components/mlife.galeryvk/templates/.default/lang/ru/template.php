@@ -1,3 +1,3 @@
 <?
-$MESS ['MLIFE_VKG_READMORE_SHOW'] = "Подробнее...";
+$MESS ['MLIFE_VKG_READMORE_SHOW'] = "РџРѕРґСЂРѕР±РЅРµРµ...";
 ?>

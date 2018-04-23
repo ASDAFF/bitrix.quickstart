@@ -1,47 +1,47 @@
 <?
 /**
  *
- * Модуль платежного сервиса OnlineDengi для CMS 1С Битрикс.
- * @copyright Сервис OnlineDengi http://www.onlinedengi.ru/ (ООО "КомФинЦентр"), 2010
+ * РњРѕРґСѓР»СЊ РїР»Р°С‚РµР¶РЅРѕРіРѕ СЃРµСЂРІРёСЃР° OnlineDengi РґР»СЏ CMS 1РЎ Р‘РёС‚СЂРёРєСЃ.
+ * @copyright РЎРµСЂРІРёСЃ OnlineDengi http://www.onlinedengi.ru/ (РћРћРћ "РљРѕРјР¤РёРЅР¦РµРЅС‚СЂ"), 2010
  *
  */
 //start
-$MESS ['WZ_ONLINEDENGI_START_TITLE'] = 'Мастер получения адреса скрипта, принимающего запрос на зачисление средств в системе OnlineDengi.';
-$MESS ['WZ_ONLINEDENGI_START_CONTENT_1'] = 'Для интеграции проекта с платежной системой OnlineDengi необходимо сообщить адрес к скрипту, который будет принимать запрос на зачисление средств. Этот мастер поможет получить этот адрес.';
+$MESS ['WZ_ONLINEDENGI_START_TITLE'] = 'РњР°СЃС‚РµСЂ РїРѕР»СѓС‡РµРЅРёСЏ Р°РґСЂРµСЃР° СЃРєСЂРёРїС‚Р°, РїСЂРёРЅРёРјР°СЋС‰РµРіРѕ Р·Р°РїСЂРѕСЃ РЅР° Р·Р°С‡РёСЃР»РµРЅРёРµ СЃСЂРµРґСЃС‚РІ РІ СЃРёСЃС‚РµРјРµ OnlineDengi.';
+$MESS ['WZ_ONLINEDENGI_START_CONTENT_1'] = 'Р”Р»СЏ РёРЅС‚РµРіСЂР°С†РёРё РїСЂРѕРµРєС‚Р° СЃ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјРѕР№ OnlineDengi РЅРµРѕР±С…РѕРґРёРјРѕ СЃРѕРѕР±С‰РёС‚СЊ Р°РґСЂРµСЃ Рє СЃРєСЂРёРїС‚Сѓ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїСЂРёРЅРёРјР°С‚СЊ Р·Р°РїСЂРѕСЃ РЅР° Р·Р°С‡РёСЃР»РµРЅРёРµ СЃСЂРµРґСЃС‚РІ. Р­С‚РѕС‚ РјР°СЃС‚РµСЂ РїРѕРјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊ СЌС‚РѕС‚ Р°РґСЂРµСЃ.';
 
 //GetPaymentParamsStep
-$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_TITLE'] = 'Выбор обработчика платежной системы';
-$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_H1_TITLE'] = 'Выберите платежную систему и тип плательщика, для которых нужно получить адрес к скрипту.';
-$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_ERR1'] = 'Обработчик платежной системы не выбран';
+$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_TITLE'] = 'Р’С‹Р±РѕСЂ РѕР±СЂР°Р±РѕС‚С‡РёРєР° РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹';
+$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_H1_TITLE'] = 'Р’С‹Р±РµСЂРёС‚Рµ РїР»Р°С‚РµР¶РЅСѓСЋ СЃРёСЃС‚РµРјСѓ Рё С‚РёРї РїР»Р°С‚РµР»СЊС‰РёРєР°, РґР»СЏ РєРѕС‚РѕСЂС‹С… РЅСѓР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ Р°РґСЂРµСЃ Рє СЃРєСЂРёРїС‚Сѓ.';
+$MESS ['WZ_ONLINEDENGI_GetPaymentParamsStep_ERR1'] = 'РћР±СЂР°Р±РѕС‚С‡РёРє РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РЅРµ РІС‹Р±СЂР°РЅ';
 
-$MESS ['WZ_ONLINEDENGI_REQUIRED'] = ' - поле обязательное для заполнения';
-$MESS ['WZ_ONLINEDENGI_SALEMODULE_ERR'] = 'Модуль "Интернет-магазин" не установлен. Продолжение не возможно.';
-$MESS ['WZ_ONLINEDENGI_MODULE_ERR'] = 'Модуль платежной системы не установлен. Продолжение не возможно.';
-$MESS ['WZ_ONLINEDENGI_MODULE_FILE_ERR'] = 'Служебный файл обработчика платежной системы не найден. Продолжение не возможно.';
-$MESS ['WZ_ONLINEDENGI_ACCESS_DENIED_ERR'] = 'Доступ запрещен.';
+$MESS ['WZ_ONLINEDENGI_REQUIRED'] = ' - РїРѕР»Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕРµ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ';
+$MESS ['WZ_ONLINEDENGI_SALEMODULE_ERR'] = 'РњРѕРґСѓР»СЊ "РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ" РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ. РџСЂРѕРґРѕР»Р¶РµРЅРёРµ РЅРµ РІРѕР·РјРѕР¶РЅРѕ.';
+$MESS ['WZ_ONLINEDENGI_MODULE_ERR'] = 'РњРѕРґСѓР»СЊ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ. РџСЂРѕРґРѕР»Р¶РµРЅРёРµ РЅРµ РІРѕР·РјРѕР¶РЅРѕ.';
+$MESS ['WZ_ONLINEDENGI_MODULE_FILE_ERR'] = 'РЎР»СѓР¶РµР±РЅС‹Р№ С„Р°Р№Р» РѕР±СЂР°Р±РѕС‚С‡РёРєР° РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РЅРµ РЅР°Р№РґРµРЅ. РџСЂРѕРґРѕР»Р¶РµРЅРёРµ РЅРµ РІРѕР·РјРѕР¶РЅРѕ.';
+$MESS ['WZ_ONLINEDENGI_ACCESS_DENIED_ERR'] = 'Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰РµРЅ.';
 
-$MESS ['WZ_ONLINEDENGI_SELECT'] = '-- выберите --';
+$MESS ['WZ_ONLINEDENGI_SELECT'] = '-- РІС‹Р±РµСЂРёС‚Рµ --';
 
 //Report Step
-$MESS ['WZ_ONLINEDENGI_ReportStep_TITLE'] = 'Информация для передачи системе OnlineDengi';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_1'] = 'Адрес скрипта:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_2'] = 'Идентификатор проекта в системе OnlineDengi:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_3'] = 'Идентификатор владельца внешней формы OnlineDengi:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_4'] = 'Секретный ключ:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_5'] = 'Адрес скрипта успешной оплаты:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_6'] = 'Адрес скрипта неудачной оплаты:<br /> #VALUE#';
-$MESS ['WZ_ONLINEDENGI_ReportStep_ERR2'] = 'Сайт не найден.';
+$MESS ['WZ_ONLINEDENGI_ReportStep_TITLE'] = 'РРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ РїРµСЂРµРґР°С‡Рё СЃРёСЃС‚РµРјРµ OnlineDengi';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_1'] = 'РђРґСЂРµСЃ СЃРєСЂРёРїС‚Р°:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_2'] = 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РїСЂРѕРµРєС‚Р° РІ СЃРёСЃС‚РµРјРµ OnlineDengi:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_3'] = 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІР»Р°РґРµР»СЊС†Р° РІРЅРµС€РЅРµР№ С„РѕСЂРјС‹ OnlineDengi:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_4'] = 'РЎРµРєСЂРµС‚РЅС‹Р№ РєР»СЋС‡:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_5'] = 'РђРґСЂРµСЃ СЃРєСЂРёРїС‚Р° СѓСЃРїРµС€РЅРѕР№ РѕРїР»Р°С‚С‹:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_CONTENT_6'] = 'РђРґСЂРµСЃ СЃРєСЂРёРїС‚Р° РЅРµСѓРґР°С‡РЅРѕР№ РѕРїР»Р°С‚С‹:<br /> #VALUE#';
+$MESS ['WZ_ONLINEDENGI_ReportStep_ERR2'] = 'РЎР°Р№С‚ РЅРµ РЅР°Р№РґРµРЅ.';
 
 //buttons
-$MESS ['WZ_ONLINEDENGI_CANCEL_BUTTON_TITLE'] = 'Закрыть';
-$MESS ['WZ_ONLINEDENGI_AGAIN_BUTTON_TITLE'] = 'Повторить';
+$MESS ['WZ_ONLINEDENGI_CANCEL_BUTTON_TITLE'] = 'Р—Р°РєСЂС‹С‚СЊ';
+$MESS ['WZ_ONLINEDENGI_AGAIN_BUTTON_TITLE'] = 'РџРѕРІС‚РѕСЂРёС‚СЊ';
 
 //Cancel step
-$MESS ['WZ_ONLINEDENGI_CANCEL_TITLE'] = 'Работа мастера прервана';
-$MESS ['WZ_ONLINEDENGI_CANCEL_CONTENT'] = 'Работа мастера прервана.';
-$MESS ['WZ_ONLINEDENGI_FINAL_BUTTON_TITLE'] = 'Завершить';
+$MESS ['WZ_ONLINEDENGI_CANCEL_TITLE'] = 'Р Р°Р±РѕС‚Р° РјР°СЃС‚РµСЂР° РїСЂРµСЂРІР°РЅР°';
+$MESS ['WZ_ONLINEDENGI_CANCEL_CONTENT'] = 'Р Р°Р±РѕС‚Р° РјР°СЃС‚РµСЂР° РїСЂРµСЂРІР°РЅР°.';
+$MESS ['WZ_ONLINEDENGI_FINAL_BUTTON_TITLE'] = 'Р—Р°РІРµСЂС€РёС‚СЊ';
 
 //Final Step
-$MESS ['WZ_ONLINEDENGI_FINALSTEP_TITLE'] = 'Работа мастера завершена';
-$MESS ['WZ_ONLINEDENGI_FINALSTEP_CONTENT_1'] = 'Работа мастера завершена';
+$MESS ['WZ_ONLINEDENGI_FINALSTEP_TITLE'] = 'Р Р°Р±РѕС‚Р° РјР°СЃС‚РµСЂР° Р·Р°РІРµСЂС€РµРЅР°';
+$MESS ['WZ_ONLINEDENGI_FINALSTEP_CONTENT_1'] = 'Р Р°Р±РѕС‚Р° РјР°СЃС‚РµСЂР° Р·Р°РІРµСЂС€РµРЅР°';
 

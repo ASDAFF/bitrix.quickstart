@@ -1,60 +1,60 @@
 <?
 if(LANG_CHARSET){ header('Content-Type: text/html; charset='.LANG_CHARSET); }
 global $MESS;
-$MESS['SHEEPLA_MAPPING_INFO'] = "Èíôîðìàöèÿ î ìàïïèíãå";
-$MESS['SHEEPLA_MAPPING'] = "Ìàïïèíã";
-$MESS['SHEEPLA_FIELDS'] = "Ïîëÿ Sheepla";
+$MESS['SHEEPLA_MAPPING_INFO'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¼Ð°Ð¿Ð¿Ð¸Ð½Ð³Ðµ";
+$MESS['SHEEPLA_MAPPING'] = "ÐœÐ°Ð¿Ð¿Ð¸Ð½Ð³";
+$MESS['SHEEPLA_FIELDS'] = "ÐŸÐ¾Ð»Ñ Sheepla";
 
-$MESS ['SHEEPLA_E_API'] = "Ââåäåííûå íàñòðîéêè íåâåðíû";
-$MESS ['SHEEPLA_General'] = "Ìîäóëü äîñòàâêè íåñêîëüêèìè ñëóæáàìè";
+$MESS ['SHEEPLA_E_API'] = "Ð’Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð½ÐµÐ²ÐµÑ€Ð½Ñ‹";
+$MESS ['SHEEPLA_General'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ð¼Ð¸ ÑÐ»ÑƒÐ¶Ð±Ð°Ð¼Ð¸";
 
-$MESS['SHEEPLA_NOT_CHOOSED_FIELD'] = "Íå âûáðàíî";
+$MESS['SHEEPLA_NOT_CHOOSED_FIELD'] = "ÐÐµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾";
 
 
 /*-------------------------------------------*/
 
-$MESS['SHEEPLA_MAPPING_TITLE'] = "Íàñòðîéêà ïîëåé";
-$MESS['SHEEPLA_ORDER_FIELDS'] = "Ïîëÿ çàêàçà";
-$MESS['SHEEPLA_SHOP_FIELDS'] = "Ïîëÿ ìàãàçèíà";
-$MESS['SHEEPLA_FIELD_FNAME'] = "Èìÿ";
-$MESS['SHEEPLA_FIELD_LNAME'] = "Ôàìèëèÿ";
-$MESS['SHEEPLA_FIELD_PHONE'] = "Òåëåôîí";
+$MESS['SHEEPLA_MAPPING_TITLE'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð¿Ð¾Ð»ÐµÐ¹";
+$MESS['SHEEPLA_ORDER_FIELDS'] = "ÐŸÐ¾Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['SHEEPLA_SHOP_FIELDS'] = "ÐŸÐ¾Ð»Ñ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+$MESS['SHEEPLA_FIELD_FNAME'] = "Ð˜Ð¼Ñ";
+$MESS['SHEEPLA_FIELD_LNAME'] = "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ";
+$MESS['SHEEPLA_FIELD_PHONE'] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
 $MESS['SHEEPLA_FIELD_EMAIL'] = "Email";
-$MESS['SHEEPLA_FIELD_CITY'] = "Ãîðîä";
-$MESS['SHEEPLA_FIELD_ZIP'] = "Èíäåêñ";
-$MESS['SHEEPLA_FIELD_STREET'] = "Óëèöà";
-$MESS['SHEEPLA_FIELD_HOME'] = "Äîì";
-$MESS['SHEEPLA_FIELD_BUILDING'] = "Ñòðîåíèå";
-$MESS['SHEEPLA_FIELD_HOUSING'] = "Êîðïóñ";
-$MESS['SHEEPLA_FIELD_FLAT'] = "Êâàðòèðà";
-$MESS['SHEEPLA_FIELD_WEIGHT'] = "Âåñ";
-$MESS['SHEEPLA_FIELD_VOLUME'] = "Îáúåì";
-$MESS['SHEEPLA_FIELD_WIDTH'] = "Øèðèíà";
-$MESS['SHEEPLA_FIELD_HEIGHT'] = "Âûñîòà";
-$MESS['SHEEPLA_FIELD_LENGTH'] = "Äëèííà";
-$MESS['SHEEPLA_FIELDS_TITLE_ORDER'] = "Ïîëÿ çàêàçà";
-$MESS['SHEEPLA_FIELDS_TITLE_USER'] = "Ïîëÿ ïîëüçîâàòåëÿ";
-$MESS['SHEEPLA_FIELDS_TITLE_IBLOCK'] = "Ïîëÿ èíôîáëîêà";
+$MESS['SHEEPLA_FIELD_CITY'] = "Ð“Ð¾Ñ€Ð¾Ð´";
+$MESS['SHEEPLA_FIELD_ZIP'] = "Ð˜Ð½Ð´ÐµÐºÑ";
+$MESS['SHEEPLA_FIELD_STREET'] = "Ð£Ð»Ð¸Ñ†Ð°";
+$MESS['SHEEPLA_FIELD_HOME'] = "Ð”Ð¾Ð¼";
+$MESS['SHEEPLA_FIELD_BUILDING'] = "Ð¡Ñ‚Ñ€Ð¾ÐµÐ½Ð¸Ðµ";
+$MESS['SHEEPLA_FIELD_HOUSING'] = "ÐšÐ¾Ñ€Ð¿ÑƒÑ";
+$MESS['SHEEPLA_FIELD_FLAT'] = "ÐšÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ð°";
+$MESS['SHEEPLA_FIELD_WEIGHT'] = "Ð’ÐµÑ";
+$MESS['SHEEPLA_FIELD_VOLUME'] = "ÐžÐ±ÑŠÐµÐ¼";
+$MESS['SHEEPLA_FIELD_WIDTH'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS['SHEEPLA_FIELD_HEIGHT'] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð°";
+$MESS['SHEEPLA_FIELD_LENGTH'] = "Ð”Ð»Ð¸Ð½Ð½Ð°";
+$MESS['SHEEPLA_FIELDS_TITLE_ORDER'] = "ÐŸÐ¾Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['SHEEPLA_FIELDS_TITLE_USER'] = "ÐŸÐ¾Ð»Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS['SHEEPLA_FIELDS_TITLE_IBLOCK'] = "ÐŸÐ¾Ð»Ñ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
 
 /* Orders fields */
-$MESS['SHEEPLA_USER_ID'] = "ID ïîëüçîâàòåëÿ";
-$MESS['SHEEPLA_USER_FIO'] = "ÔÈÎ ïîëüçîâàòåëÿ";
-$MESS['SHEEPLA_USER_LOGIN'] = "Ëîãèí";
-$MESS['SHEEPLA_USER_NAME'] = "Èìÿ";
-$MESS['SHEEPLA_USER_SECOND_NAME'] = "Îò÷åñòâî";
-$MESS['SHEEPLA_USER_LAST_NAME'] = "Ôàìèëèÿ";
+$MESS['SHEEPLA_USER_ID'] = "ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS['SHEEPLA_USER_FIO'] = "Ð¤Ð˜Ðž Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS['SHEEPLA_USER_LOGIN'] = "Ð›Ð¾Ð³Ð¸Ð½";
+$MESS['SHEEPLA_USER_NAME'] = "Ð˜Ð¼Ñ";
+$MESS['SHEEPLA_USER_SECOND_NAME'] = "ÐžÑ‚Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS['SHEEPLA_USER_LAST_NAME'] = "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ";
 $MESS['SHEEPLA_USER_EMAIL'] = "Email";
-$MESS['SHEEPLA_USER_PERSONAL_MOBILE'] = "Ìîáèëüíûé òåëåôîí";
-$MESS['SHEEPLA_USER_PERSONAL_PHONE'] = "Ëè÷íûé òåëåôîí";
-$MESS['SHEEPLA_USER_WORK_PHONE'] = "Ðàáî÷èé òåëåôîí";
+$MESS['SHEEPLA_USER_PERSONAL_MOBILE'] = "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS['SHEEPLA_USER_PERSONAL_PHONE'] = "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS['SHEEPLA_USER_WORK_PHONE'] = "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
 
 /* Userss fields */
-$MESS['SHEEPLA_ORDER_ID'] = "ID çàêàçà"; 
-$MESS['SHEEPLA_ORDER_PRICE'] = "Îáùàÿ ñòîèìîñòü çàêàçà";
-$MESS['SHEEPLA_ORDER_CURRENCY'] = "Âàëþòà ñòîèìîñòè çàêàçà";
-$MESS['SHEEPLA_ORDER_USER_DESCRIPTION'] = "Îïèñàíèå çàêàçà çàêàç÷èêîì";
-$MESS['SHEEPLA_ORDER_ADDITIONAL_INFO'] = "Äîïîëíèòåëüíàÿ èíôîðìàöèÿ ïî çàêàçó";
-$MESS['SHEEPLA_ORDER_COMMENTS'] = "Ïðîèçâîëüíûå êîììåíòàðèè";
+$MESS['SHEEPLA_ORDER_ID'] = "ID Ð·Ð°ÐºÐ°Ð·Ð°"; 
+$MESS['SHEEPLA_ORDER_PRICE'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['SHEEPLA_ORDER_CURRENCY'] = "Ð’Ð°Ð»ÑŽÑ‚Ð° ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['SHEEPLA_ORDER_USER_DESCRIPTION'] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð° Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ¾Ð¼";
+$MESS['SHEEPLA_ORDER_ADDITIONAL_INFO'] = "Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¿Ð¾ Ð·Ð°ÐºÐ°Ð·Ñƒ";
+$MESS['SHEEPLA_ORDER_COMMENTS'] = "ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸";
 
 
 ?>

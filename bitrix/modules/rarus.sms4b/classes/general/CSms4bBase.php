@@ -251,7 +251,7 @@ make request to the server and returns response
 
 		if (curl_errno($ch) > 0)
 		{
-			$this->LastError = 'Ваша версия PHP не поддерживает библиотеку CURL';
+			$this->LastError = 'Р’Р°С€Р° РІРµСЂСЃРёСЏ PHP РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ Р±РёР±Р»РёРѕС‚РµРєСѓ CURL';
 			return false;
 		}
 		else
@@ -278,7 +278,7 @@ make request to the server and returns response
 			$lerror = curl_errno($ch);
 			if($lerror > 0 || strlen($response) < 1)
 			{
-				$this->LastError = 'Неизвестная ошибка подключения CURL['.$lerror.']';
+				$this->LastError = 'РќРµРёР·РІРµСЃС‚РЅР°СЏ РѕС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ CURL['.$lerror.']';
 				return false;
 			}
 			else
@@ -293,11 +293,11 @@ make request to the server and returns response
 			{
 				$filename = $_SERVER["DOCUMENT_ROOT"].'/bitrix/sms.log';
 				$somecontent = "==============\n";
-				$somecontent .= date("d.m.Y H:i:s",time()).": Отправка запроса\n";
+				$somecontent .= date("d.m.Y H:i:s",time()).": РћС‚РїСЂР°РІРєР° Р·Р°РїСЂРѕСЃР°\n";
 				$somecontent .= "==============\n";
 				$somecontent .= $this->LastReq."\n";
 				$somecontent = "==============\n";
-				$somecontent .= date("d.m.Y H:i:s",time()).": Получение ответа\n";
+				$somecontent .= date("d.m.Y H:i:s",time()).": РџРѕР»СѓС‡РµРЅРёРµ РѕС‚РІРµС‚Р°\n";
 				$somecontent .= "==============\n";
 				$somecontent .= $this->LastRes."\n";
 				if (is_writable($filename))
@@ -366,13 +366,13 @@ Parsing simple-state response of the server, and returnes values of parameters,
 			}
 			else
 			{
-				$this->LastError = "Ошибка парсинга ответа сервера: требуемые поля не обнаружены";
+				$this->LastError = "РћС€РёР±РєР° РїР°СЂСЃРёРЅРіР° РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР°: С‚СЂРµР±СѓРµРјС‹Рµ РїРѕР»СЏ РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅС‹";
 				return false;
 			}
 		}
 		else
 		{
-			$this->LastError = $xml == '' ? "Ошибка парсинга ответа сервера: пустой xml" : "Ошибка парсинга ответа сервера: не указан список параметров";
+			$this->LastError = $xml == '' ? "РћС€РёР±РєР° РїР°СЂСЃРёРЅРіР° РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР°: РїСѓСЃС‚РѕР№ xml" : "РћС€РёР±РєР° РїР°СЂСЃРёРЅРіР° РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР°: РЅРµ СѓРєР°Р·Р°РЅ СЃРїРёСЃРѕРє РїР°СЂР°РјРµС‚СЂРѕРІ";
 			return false;
 		}
 	}
@@ -405,12 +405,12 @@ Making request to the server
 
 						if (!$this->sid < 0)
 						{
-							$this->LastError = "Неизветсная ошибка установки сессии.";
+							$this->LastError = "РќРµРёР·РІРµС‚СЃРЅР°СЏ РѕС€РёР±РєР° СѓСЃС‚Р°РЅРѕРІРєРё СЃРµСЃСЃРёРё.";
 							return false;
 						}
 						elseif($this->sid === 0)
 						{
-							$this->LastError = "Сесcия уже установлена, но номер сессии потерян.";
+							$this->LastError = "РЎРµСЃcРёСЏ СѓР¶Рµ СѓСЃС‚Р°РЅРѕРІР»РµРЅР°, РЅРѕ РЅРѕРјРµСЂ СЃРµСЃСЃРёРё РїРѕС‚РµСЂСЏРЅ.";
 							return false;
 						}
 						else
@@ -426,7 +426,7 @@ Making request to the server
 
 						if ($result["Result"] < 0)
 						{
-							$this->LastError = "Ошибка вызова LoadMessage";
+							$this->LastError = "РћС€РёР±РєР° РІС‹Р·РѕРІР° LoadMessage";
 							return -1;
 						}
 						elseif ($result["Result"] == 0)
@@ -460,13 +460,13 @@ Making request to the server
 						}
 						else
 						{
-							$this->LastError = "Не удалось закрыть сессию. Ошибка номер №".$closeid;
+							$this->LastError = "РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РєСЂС‹С‚СЊ СЃРµСЃСЃРёСЋ. РћС€РёР±РєР° РЅРѕРјРµСЂ в„–".$closeid;
 							return false;
 						}
 					}
 					else
 					{
-						$this->LastError = "Нет открытой сессии";
+						$this->LastError = "РќРµС‚ РѕС‚РєСЂС‹С‚РѕР№ СЃРµСЃСЃРёРё";
 						return false;
 					}
 				break;
@@ -478,7 +478,7 @@ Making request to the server
 							return false;
 				break;
 
-				//функция групповой отправки SMS (оптимизированная)
+				//С„СѓРЅРєС†РёСЏ РіСЂСѓРїРїРѕРІРѕР№ РѕС‚РїСЂР°РІРєРё SMS (РѕРїС‚РёРјРёР·РёСЂРѕРІР°РЅРЅР°СЏ)
 				case "SaveGroup":
 					return $this->SaveGroup($response);
 				break;
@@ -504,7 +504,7 @@ Making request to the server
 
 				break;
 
-				//пакетная отправка
+				//РїР°РєРµС‚РЅР°СЏ РѕС‚РїСЂР°РІРєР°
 				case "SaveMessages":
 					$saveMessagesResult = $this->SaveMessages($response);
 					return $saveMessagesResult;
@@ -537,14 +537,14 @@ Making request to the server
 
 				default:
 				{
-						$this->LastError = "Неизвестная функция";
+						$this->LastError = "РќРµРёР·РІРµСЃС‚РЅР°СЏ С„СѓРЅРєС†РёСЏ";
 						return false;
 				}
 			}//endswitch
 		}
 		else
 		{
-				$this->LastError = 'Не удалось подключится к серверу SMS4B';
+				$this->LastError = 'РќРµ СѓРґР°Р»РѕСЃСЊ РїРѕРґРєР»СЋС‡РёС‚СЃСЏ Рє СЃРµСЂРІРµСЂСѓ SMS4B';
 				return false;
 		}//endif
 	}//endfunction
@@ -650,7 +650,7 @@ function-parsers
 
 		if ($this->arBalance["Result"] < 1)
 		{
-				$this->LastError = "Не удалось запросить параметры аккаунта пользователя";
+				$this->LastError = "РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РїСЂРѕСЃРёС‚СЊ РїР°СЂР°РјРµС‚СЂС‹ Р°РєРєР°СѓРЅС‚Р° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ";
 				return false;
 		}
 		else
@@ -661,18 +661,18 @@ function-parsers
 		return true;
 	}
 
-		/*функция сохранения группы сообщений*/
+		/*С„СѓРЅРєС†РёСЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РіСЂСѓРїРїС‹ СЃРѕРѕР±С‰РµРЅРёР№*/
 	protected function SaveGroup($xml)
 	{
 		$xml = str_replace("\r\n",'',$xml);
 		$xml = str_replace("\n",'',$xml);
 
-		//получаем код группы
+		//РїРѕР»СѓС‡Р°РµРј РєРѕРґ РіСЂСѓРїРїС‹
 		preg_match("/<Code>(.+?)<\/Code>/",$xml,$find);
-		//найдем код результата
+		//РЅР°Р№РґРµРј РєРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 		$resultArray['groupCode'] = intval($find[1]);
 
-		//получаем Result
+		//РїРѕР»СѓС‡Р°РµРј Result
 		preg_match("/<Result>(.+?)<\/Result>/",$xml,$result);
 		$resultArray['result'] = intval($result[1]);
 
@@ -684,12 +684,12 @@ function-parsers
 		$xml = str_replace("\r\n",'',$xml);
 		$xml = str_replace("\n",'',$xml);
 
-		//получаем код группы
+		//РїРѕР»СѓС‡Р°РµРј РєРѕРґ РіСЂСѓРїРїС‹
 		preg_match("/<Group>(.+?)<\/Group>/",$xml,$find);
-		//найдем код результата
+		//РЅР°Р№РґРµРј РєРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 		$resultArray['groupCode'] = intval($find[1]);
 
-		//получаем Result
+		//РїРѕР»СѓС‡Р°РµРј Result
 		preg_match("/<Result>(.+?)<\/Result>/",$xml,$result);
 		$resultArray['result'] = intval($result[1]);
 
@@ -845,12 +845,12 @@ function-parsers
 	//Another way we code as DefaultAlphabet (function returns 0)
 	public function get_type_of_encoding($message)
 	{
-		//недопустимые символы
+		//РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹
 		$inadmissible_symbols = array("[" , "]" , "\\" , "^" , "_" , "`" , "{", "}" , "|" , "~");
 
 		if ($message == "")
 		{
-			$this->LastError = "В сообщении нету символов";
+			$this->LastError = "Р’ СЃРѕРѕР±С‰РµРЅРёРё РЅРµС‚Сѓ СЃРёРјРІРѕР»РѕРІ";
 			return false;
 		}
 		else
@@ -878,7 +878,7 @@ function-parsers
 	{
 		if (strlen($symbol)==0 || $type_of_encoding > 1  || $type_of_encoding < 0)
 		{
-			$this->LastError = "Неверно указаны параметры вызова функции enCoding";
+			$this->LastError = "РќРµРІРµСЂРЅРѕ СѓРєР°Р·Р°РЅС‹ РїР°СЂР°РјРµС‚СЂС‹ РІС‹Р·РѕРІР° С„СѓРЅРєС†РёРё enCoding";
 			return false;
 		}
 		else
@@ -998,7 +998,7 @@ function-parsers
 	{
 		if ($message == "")
 		{
-			$this->LastError= "В сообщении ниодного символа!";
+			$this->LastError= "Р’ СЃРѕРѕР±С‰РµРЅРёРё РЅРёРѕРґРЅРѕРіРѕ СЃРёРјРІРѕР»Р°!";
 			return false;
 		}
 		else
@@ -1036,9 +1036,9 @@ function-parsers
 	{
 		switch ($rezult)
 		{
-			case 0:  $this->LastError = "Неразрешенная попытка доступа"; return;
-			case -1: $this->LastError = "Неверный логин или пароль"; return;
-			case -2: $this->LastError = "Потеря сеанса связи"; return;
+			case 0:  $this->LastError = "РќРµСЂР°Р·СЂРµС€РµРЅРЅР°СЏ РїРѕРїС‹С‚РєР° РґРѕСЃС‚СѓРїР°"; return;
+			case -1: $this->LastError = "РќРµРІРµСЂРЅС‹Р№ Р»РѕРіРёРЅ РёР»Рё РїР°СЂРѕР»СЊ"; return;
+			case -2: $this->LastError = "РџРѕС‚РµСЂСЏ СЃРµР°РЅСЃР° СЃРІСЏР·Рё"; return;
 			case -3:
 			case -4:
 			case -5:
@@ -1055,19 +1055,19 @@ function-parsers
 			case -16:
 			case -17:
 			case -18:
-			case -19:$this->LastError = "Cбой выполнения веб-метода. Обратитесь в ТП";return;
-			case -20: $this->LastError = "Cбой сеанса связи";return;
-			case -21: $this->LastError = "Cообщение уже подтверждено";return;
-			case -22: $this->LastError = "Неверный идентификатор сообщения";return;
-			case -30: $this->LastError = "Неизвестная кодировка сообщения";return;
-			case -31: $this->LastError = "Неразрешенная зона тарификации";return;
-			case -50: $this->LastError = "Неверный отправитель";return;
-			case -52: $this->LastError = "Недостаточно средств на Вашем счете";return;
-			case -68: $this->LastError = "Пользователь заблокирован";return;
+			case -19:$this->LastError = "CР±РѕР№ РІС‹РїРѕР»РЅРµРЅРёСЏ РІРµР±-РјРµС‚РѕРґР°. РћР±СЂР°С‚РёС‚РµСЃСЊ РІ РўРџ";return;
+			case -20: $this->LastError = "CР±РѕР№ СЃРµР°РЅСЃР° СЃРІСЏР·Рё";return;
+			case -21: $this->LastError = "CРѕРѕР±С‰РµРЅРёРµ СѓР¶Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРѕ";return;
+			case -22: $this->LastError = "РќРµРІРµСЂРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ";return;
+			case -30: $this->LastError = "РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРґРёСЂРѕРІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ";return;
+			case -31: $this->LastError = "РќРµСЂР°Р·СЂРµС€РµРЅРЅР°СЏ Р·РѕРЅР° С‚Р°СЂРёС„РёРєР°С†РёРё";return;
+			case -50: $this->LastError = "РќРµРІРµСЂРЅС‹Р№ РѕС‚РїСЂР°РІРёС‚РµР»СЊ";return;
+			case -52: $this->LastError = "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ РЅР° Р’Р°С€РµРј СЃС‡РµС‚Рµ";return;
+			case -68: $this->LastError = "РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ";return;
 
 			default:
 			{
-				$this->LastError = "Неопределенная ошибка в функции SaveMessage";
+				$this->LastError = "РќРµРѕРїСЂРµРґРµР»РµРЅРЅР°СЏ РѕС€РёР±РєР° РІ С„СѓРЅРєС†РёРё SaveMessage";
 			}
 		}
 	}
@@ -1083,7 +1083,7 @@ function-parsers
 			return 2;
 		elseif (preg_match('/^([0-9]{11,15})$/',$addr)) //general
 			return 1;
-		else// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		else// РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…
 			return 5;
 	}
 
@@ -1092,13 +1092,13 @@ function-parsers
 	public function get_npi($addr)
 	{
 		$addr = htmlspecialchars($addr);
-		if(preg_match('/^([0-9]{1,10})$/',$addr)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		if(preg_match('/^([0-9]{1,10})$/',$addr)) //РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…
 			return 9;
-		elseif (preg_match('/^8([0-9]{10})$/',$addr)) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		elseif (preg_match('/^8([0-9]{10})$/',$addr)) // РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…
 			return 1;
-		elseif (preg_match('/^([0-9]{11,15})$/',$addr)) // пїЅпїЅпїЅпїЅпїЅ
+		elseif (preg_match('/^([0-9]{11,15})$/',$addr)) // РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…
 			return 1;
-		else// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		else// РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…
 			return 0;
 	}
 
@@ -1172,87 +1172,87 @@ transliteration in MVD format
 public function Translit($cyr_str)
 	{
 		$tr = array(
-				'а' =>	'a',
-				'б'	=>	'b',
-				'в'	=>	'v',
-				'г'	=>	'g',
-				'д'	=>	'd',
-				'е'	=>	'e',
-				'ё'	=>	'yo',
-				'ж'	=>	'zh',
-				'з'	=>	'z',
-				'и'	=>	'i',
-				'й'	=>	'j',
-				'к'	=>	'k',
-				'л'	=>	'l',
-				'м'	=>	'm',
-				'н'	=>	'n',
-				'о'	=>	'o',
-				'п'	=>	'p',
-				'р'	=>	'r',
-				'с'	=>	's',
-				'т'	=>	't',
-				'у'	=>	'u',
-				'ф'	=>	'f',
-				'х'	=>	'x',
-				'ц'	=>	'c',
-				'ч'	=>	'ch',
-				'ш'=>	'sh',
-				'щ'=>	'shh',
-				'ъ'	=>	"\"",
-				'ы'	=>	'y',
-				'ь'	=>	"'",
-				'э'	=>	'e',
-				'ю'	=>	'yu',
-				'я'	=>	'ya',
-				'А' =>	'A',
-				'Б'	=>	'B',
-				'В'	=>	'V',
-				'Г'	=>	'G',
-				'Д'	=>	'D',
-				'Е'	=>	'E',
-				'Ё'	=>	'YO',
-				'Ж'=>	'ZH',
-				'З'	=>	'Z',
-				'И'	=>	'I',
-				'Й'	=>	'Y',
-				'К'	=>	'K',
-				'Л'	=>	'L',
-				'М'	=>	'M',
-				'Н'	=>	'N',
-				'О'	=>	'O',
-				'П'	=>	'P',
-				'Р'	=>	'R',
-				'С'	=>	'S',
-				'Т'	=>	'T',
-				'У'	=>	'U',
-				'Ф'	=>	'F',
-				'Х'	=>	'X',
-				'Ц'	=>	'C',
-				'Ч'	=>	'CH',
-				'Ш'	=>	'SH',
-				'Щ'	=>	'SHH',
-				'Ъ'	=>	"\"",
-				'Ы'	=>	'Y',
-				'Ь'	=>	"'",
-				'Э'	=>	'E',
-				'Ю'	=>	'YU',
-				'Я'	=>	'YA',
-				'«' =>  '<',
-				'»' =>  '>',
-				'–' =>  '-'
+				'Р°' =>	'a',
+				'Р±'	=>	'b',
+				'РІ'	=>	'v',
+				'Рі'	=>	'g',
+				'Рґ'	=>	'd',
+				'Рµ'	=>	'e',
+				'С‘'	=>	'yo',
+				'Р¶'	=>	'zh',
+				'Р·'	=>	'z',
+				'Рё'	=>	'i',
+				'Р№'	=>	'j',
+				'Рє'	=>	'k',
+				'Р»'	=>	'l',
+				'Рј'	=>	'm',
+				'РЅ'	=>	'n',
+				'Рѕ'	=>	'o',
+				'Рї'	=>	'p',
+				'СЂ'	=>	'r',
+				'СЃ'	=>	's',
+				'С‚'	=>	't',
+				'Сѓ'	=>	'u',
+				'С„'	=>	'f',
+				'С…'	=>	'x',
+				'С†'	=>	'c',
+				'С‡'	=>	'ch',
+				'С€'=>	'sh',
+				'С‰'=>	'shh',
+				'СЉ'	=>	"\"",
+				'С‹'	=>	'y',
+				'СЊ'	=>	"'",
+				'СЌ'	=>	'e',
+				'СЋ'	=>	'yu',
+				'СЏ'	=>	'ya',
+				'Рђ' =>	'A',
+				'Р‘'	=>	'B',
+				'Р’'	=>	'V',
+				'Р“'	=>	'G',
+				'Р”'	=>	'D',
+				'Р•'	=>	'E',
+				'РЃ'	=>	'YO',
+				'Р–'=>	'ZH',
+				'Р—'	=>	'Z',
+				'Р'	=>	'I',
+				'Р™'	=>	'Y',
+				'Рљ'	=>	'K',
+				'Р›'	=>	'L',
+				'Рњ'	=>	'M',
+				'Рќ'	=>	'N',
+				'Рћ'	=>	'O',
+				'Рџ'	=>	'P',
+				'Р '	=>	'R',
+				'РЎ'	=>	'S',
+				'Рў'	=>	'T',
+				'РЈ'	=>	'U',
+				'Р¤'	=>	'F',
+				'РҐ'	=>	'X',
+				'Р¦'	=>	'C',
+				'Р§'	=>	'CH',
+				'РЁ'	=>	'SH',
+				'Р©'	=>	'SHH',
+				'РЄ'	=>	"\"",
+				'Р«'	=>	'Y',
+				'Р¬'	=>	"'",
+				'Р­'	=>	'E',
+				'Р®'	=>	'YU',
+				'РЇ'	=>	'YA',
+				'В«' =>  '<',
+				'В»' =>  '>',
+				'вЂ“' =>  '-'
 		);
 
 		$str = strtr($cyr_str,$tr);
 
 		$str = str_replace(array('^','`'),"'",$str);
-		$str = str_replace(array('”'),"\"",$str);
+		$str = str_replace(array('вЂќ'),"\"",$str);
 		$str = str_replace(array('{','['),"(",$str);
 		$str = str_replace(array('}',']'),")",$str);
 		$str = str_replace(array('\\'),"/",$str);
 		$str = str_replace(array('_','~'),"-",$str);
 		$str = str_replace(array('|'),"i",$str);
-		$str = str_replace(array('№'),"N",$str);
+		$str = str_replace(array('в„–'),"N",$str);
 
 		return $str;
 	}
@@ -1308,7 +1308,7 @@ public function Translit($cyr_str)
 
 	}
 
-	//--------------пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ GroupSMS----------
+	//--------------РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р… РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р… РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р… РїС—Р…РїС—Р…РїС—Р…РїС—Р…РїС—Р… GroupSMS----------
 
 	public function SendSmsPack($message, $to, $sender = '', $startUp_p='', $dateActual_p='', $period_p = '')
 	{

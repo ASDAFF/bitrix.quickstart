@@ -1,13 +1,13 @@
 <?
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_LOGIN'] = "Логин";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_PASSWORD'] = "Пароль";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_PASSWORD_SEND'] = "Одноразовый пароль отправлен на номер:<br />";
-$MESS['TWOFACTORAUTHENTIFICATION_ENTER_ONE_TIME_PASS'] = "Введите полученный пароль";
-$MESS['TWOFACTORAUTHENTIFICATION_WRONG_PASS'] = "Неверный пароль";
-$MESS['TWOFACTORAUTHENTIFICATION_WRONG_LOGIN'] = "Некорректный логин";
-$MESS['TWOFACTORAUTHENTIFICATION_BLOCK_ALERT'] = "После 3 неудачных попыток вы будете заблокированы на 15 минут.";
-$MESS['TWOFACTORAUTHENTIFICATION_HI'] = "Привет";
-$MESS['TWOFACTORAUTHENTIFICATION_DONE'] = "Готово";
-$MESS['TWOFACTORAUTHENTIFICATION_ENTER'] = "Войти";
-$MESS['TWOFACTORAUTHENTIFICATION_NEXT'] = "Продолжить";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_LOGIN'] = "Р›РѕРіРёРЅ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_PASSWORD'] = "РџР°СЂРѕР»СЊ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_PASSWORD_SEND'] = "РћРґРЅРѕСЂР°Р·РѕРІС‹Р№ РїР°СЂРѕР»СЊ РѕС‚РїСЂР°РІР»РµРЅ РЅР° РЅРѕРјРµСЂ:<br />";
+$MESS['TWOFACTORAUTHENTIFICATION_ENTER_ONE_TIME_PASS'] = "Р’РІРµРґРёС‚Рµ РїРѕР»СѓС‡РµРЅРЅС‹Р№ РїР°СЂРѕР»СЊ";
+$MESS['TWOFACTORAUTHENTIFICATION_WRONG_PASS'] = "РќРµРІРµСЂРЅС‹Р№ РїР°СЂРѕР»СЊ";
+$MESS['TWOFACTORAUTHENTIFICATION_WRONG_LOGIN'] = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ Р»РѕРіРёРЅ";
+$MESS['TWOFACTORAUTHENTIFICATION_BLOCK_ALERT'] = "РџРѕСЃР»Рµ 3 РЅРµСѓРґР°С‡РЅС‹С… РїРѕРїС‹С‚РѕРє РІС‹ Р±СѓРґРµС‚Рµ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅС‹ РЅР° 15 РјРёРЅСѓС‚.";
+$MESS['TWOFACTORAUTHENTIFICATION_HI'] = "РџСЂРёРІРµС‚";
+$MESS['TWOFACTORAUTHENTIFICATION_DONE'] = "Р“РѕС‚РѕРІРѕ";
+$MESS['TWOFACTORAUTHENTIFICATION_ENTER'] = "Р’РѕР№С‚Рё";
+$MESS['TWOFACTORAUTHENTIFICATION_NEXT'] = "РџСЂРѕРґРѕР»Р¶РёС‚СЊ";
 ?>

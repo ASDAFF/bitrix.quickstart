@@ -6,11 +6,11 @@ Class DEVINOSMS {
 
 
     /**
-    * Расшифровка ответа сервера на запрос
+    * Р Р°СЃС€РёС„СЂРѕРІРєР° РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР° РЅР° Р·Р°РїСЂРѕСЃ
     *
-    * @param $status int Статус комманды от сервера
+    * @param $status int РЎС‚Р°С‚СѓСЃ РєРѕРјРјР°РЅРґС‹ РѕС‚ СЃРµСЂРІРµСЂР°
     *
-    * @return string Расшифровка статус комманды от сервера
+    * @return string Р Р°СЃС€РёС„СЂРѕРІРєР° СЃС‚Р°С‚СѓСЃ РєРѕРјРјР°РЅРґС‹ РѕС‚ СЃРµСЂРІРµСЂР°
     */
     function GetCommandStatus($status){
       switch($status){
@@ -92,11 +92,11 @@ Class DEVINOSMS {
 
 
     /**
-    * Расшифровка статуса сообщения
+    * Р Р°СЃС€РёС„СЂРѕРІРєР° СЃС‚Р°С‚СѓСЃР° СЃРѕРѕР±С‰РµРЅРёСЏ
     *
-    * @param $status int Статус сообщения
+    * @param $status int РЎС‚Р°С‚СѓСЃ СЃРѕРѕР±С‰РµРЅРёСЏ
     *
-    * @return string Расшифровка статуса сообщения
+    * @return string Р Р°СЃС€РёС„СЂРѕРІРєР° СЃС‚Р°С‚СѓСЃР° СЃРѕРѕР±С‰РµРЅРёСЏ
     */
     function GetMessageStatus($status){
       switch($status){
@@ -154,12 +154,12 @@ Class DEVINOSMS {
 
 
     /**
-    * Формирования и отправка запроса на сервер через cURL
+    * Р¤РѕСЂРјРёСЂРѕРІР°РЅРёСЏ Рё РѕС‚РїСЂР°РІРєР° Р·Р°РїСЂРѕСЃР° РЅР° СЃРµСЂРІРµСЂ С‡РµСЂРµР· cURL
     *
-    * @param $xml_data string XML-запрос к серверу (SOAP)
-    * @param $headers string Заголовки запроса к серверу (SOAP)
+    * @param $xml_data string XML-Р·Р°РїСЂРѕСЃ Рє СЃРµСЂРІРµСЂСѓ (SOAP)
+    * @param $headers string Р—Р°РіРѕР»РѕРІРєРё Р·Р°РїСЂРѕСЃР° Рє СЃРµСЂРІРµСЂСѓ (SOAP)
     *
-    * @return string XML-ответ от сервера (SOAP)
+    * @return string XML-РѕС‚РІРµС‚ РѕС‚ СЃРµСЂРІРµСЂР° (SOAP)
     */
     function SendToServer($xml_data,$headers){
         $ch = curl_init();
@@ -182,12 +182,12 @@ Class DEVINOSMS {
 
 
     /**
-    * GetSessionID – запрос на получение идентификатора сесси
+    * GetSessionID вЂ“ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° СЃРµСЃСЃРё
     *
-    * @param $UserLogin string Логин пользователя
-    * @param $Password string Пароль пользователя
+    * @param $UserLogin string Р›РѕРіРёРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    * @param $Password string РџР°СЂРѕР»СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
     *
-    * @return array("SessionID" => (string) Ответ сервера в виде массива данных
+    * @return array("SessionID" => (string) РћС‚РІРµС‚ СЃРµСЂРІРµСЂР° РІ РІРёРґРµ РјР°СЃСЃРёРІР° РґР°РЅРЅС‹С…
     */
 
     function GetSessionID($UserLogin,$Password){
@@ -225,15 +225,15 @@ Class DEVINOSMS {
 
 
     /**
-    * SendTextMessage - передача простого текстового SMS-сообщения
+    * SendTextMessage - РїРµСЂРµРґР°С‡Р° РїСЂРѕСЃС‚РѕРіРѕ С‚РµРєСЃС‚РѕРІРѕРіРѕ SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
     *
-    * @param $SessionID string Идентификатор сессии
-    * @param $DestinationAddresses string Мобильный телефонный номер получателя сообщения, в международном формате: код страны + код сети + номер телефона./Массив мобильных телефонов
-    * @param $Parameters string Массив параметров сообщения.
-    * @param $Data string Текст сообщения
+    * @param $SessionID string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
+    * @param $DestinationAddresses string РњРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅРЅС‹Р№ РЅРѕРјРµСЂ РїРѕР»СѓС‡Р°С‚РµР»СЏ СЃРѕРѕР±С‰РµРЅРёСЏ, РІ РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРј С„РѕСЂРјР°С‚Рµ: РєРѕРґ СЃС‚СЂР°РЅС‹ + РєРѕРґ СЃРµС‚Рё + РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°./РњР°СЃСЃРёРІ РјРѕР±РёР»СЊРЅС‹С… С‚РµР»РµС„РѕРЅРѕРІ
+    * @param $Parameters string РњР°СЃСЃРёРІ РїР°СЂР°РјРµС‚СЂРѕРІ СЃРѕРѕР±С‰РµРЅРёСЏ.
+    * @param $Data string РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
 
     *
-    * @return array("CommandStatus" => (string) Ответ сервера, "MessageID" => (decimal)) ID смс сообщения/Массив ID смс сообщений
+    * @return array("CommandStatus" => (string) РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°, "MessageID" => (decimal)) ID СЃРјСЃ СЃРѕРѕР±С‰РµРЅРёСЏ/РњР°СЃСЃРёРІ ID СЃРјСЃ СЃРѕРѕР±С‰РµРЅРёР№
     */
     function SendMessage($SessionID, $Data, $DestinationAddresses,$SourceAddress,$ReceiptRequested, $CountDA){
 
@@ -279,12 +279,12 @@ Class DEVINOSMS {
 
 
     /**
-    * GetMessageState – запрос на получение статус отправленного SMS-сообщения
+    * GetMessageState вЂ“ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃС‚Р°С‚СѓСЃ РѕС‚РїСЂР°РІР»РµРЅРЅРѕРіРѕ SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
     *
-    * @param $SessionID string Идентификатор сессии
-    * @param $MessageID string Идентификатор сообщения
+    * @param $SessionID string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
+    * @param $MessageID string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
     *
-    * @return array("CommandStatus" => (string) Ответ сервера, "MessageStatus" => (string) Сататус сообщения/Массив статусов сообщений, "Date" => (string)) Дата получения отчёта
+    * @return array("CommandStatus" => (string) РћС‚РІРµС‚ СЃРµСЂРІРµСЂР°, "MessageStatus" => (string) РЎР°С‚Р°С‚СѓСЃ СЃРѕРѕР±С‰РµРЅРёСЏ/РњР°СЃСЃРёРІ СЃС‚Р°С‚СѓСЃРѕРІ СЃРѕРѕР±С‰РµРЅРёР№, "Date" => (string)) Р”Р°С‚Р° РїРѕР»СѓС‡РµРЅРёСЏ РѕС‚С‡С‘С‚Р°
     */
     function GetMessageState($SessionID,$MessageID){
 
@@ -319,14 +319,14 @@ www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/
         );
     }
 	/**
-    * GetMessageState – запрос на получение состояния счета
+    * GetMessageState вЂ“ Р·Р°РїСЂРѕСЃ РЅР° РїРѕР»СѓС‡РµРЅРёРµ СЃРѕСЃС‚РѕСЏРЅРёСЏ СЃС‡РµС‚Р°
     *
-    * @param $SessionID string Идентификатор сессии
-    * Пример вызова:
-	* $bal = $devino->GetBalance($result[SessionID]); // переменная $bal приняла значение счета.
+    * @param $SessionID string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
+    * РџСЂРёРјРµСЂ РІС‹Р·РѕРІР°:
+	* $bal = $devino->GetBalance($result[SessionID]); // РїРµСЂРµРјРµРЅРЅР°СЏ $bal РїСЂРёРЅСЏР»Р° Р·РЅР°С‡РµРЅРёРµ СЃС‡РµС‚Р°.
     *
-    * return array("GetBalanceResult" => iconv("UTF-8","WINDOWS-1251",$results[3]['value']) -- Состояние счета. Если $results[3] заменит 
-	* на $results[4], выдаст статус запроса(пустой ответ значит выполнилось правильно)
+    * return array("GetBalanceResult" => iconv("UTF-8","WINDOWS-1251",$results[3]['value']) -- РЎРѕСЃС‚РѕСЏРЅРёРµ СЃС‡РµС‚Р°. Р•СЃР»Рё $results[3] Р·Р°РјРµРЅРёС‚ 
+	* РЅР° $results[4], РІС‹РґР°СЃС‚ СЃС‚Р°С‚СѓСЃ Р·Р°РїСЂРѕСЃР°(РїСѓСЃС‚РѕР№ РѕС‚РІРµС‚ Р·РЅР°С‡РёС‚ РІС‹РїРѕР»РЅРёР»РѕСЃСЊ РїСЂР°РІРёР»СЊРЅРѕ)
     */
 	function GetBalance($SessionID){
 
@@ -340,7 +340,7 @@ www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/
 		  </soap:Body>
         </soap:Envelope>';
 
-	$headers = array(									//Такие же как и в GetMassageState
+	$headers = array(									//РўР°РєРёРµ Р¶Рµ РєР°Рє Рё РІ GetMassageState
             "POST /SmsService.asmx HTTP/1.1",
             "Host: ws.devinosms.com",
             "Content-Type: text/xml; charset=utf-8",

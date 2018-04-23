@@ -1,5 +1,5 @@
 <?
-$MESS ["VACANCY_EXPORT_SUCCESS"] = "XML áûë ñîçäàí óñïåøíî!";
-$MESS ["VACANCY_EXPORT_ERROR"] = "Îøèáêà: ôàéë íå áûë ñîçäàí!";
+$MESS ["VACANCY_EXPORT_SUCCESS"] = "XML Ð±Ñ‹Ð» ÑÐ¾Ð·Ð´Ð°Ð½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾!";
+$MESS ["VACANCY_EXPORT_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ°: Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð±Ñ‹Ð» ÑÐ¾Ð·Ð´Ð°Ð½!";
 
 ?>

@@ -1,139 +1,283 @@
-<?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
-/** * * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ. * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010 * */
-
-if(!CModule::IncludeModule('rarusspb.onlinedengi')) {
-	return;
-}
-
-include(GetLangFileName(dirname(__FILE__).'/', '/.description.php'));
-
-$psTitle = GetMessage('ONLINEDENGI_PS_TITLE');
-$psDescription = GetMessage('ONLINEDENGI_PS_DESCRIPTION');
-
-if(file_exists($_SERVER['DOCUMENT_ROOT'].ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT_PATH)) {
-	$psDescription .= GetMessage('ONLINEDENGI_PS_DESCRIPTION_RES', array('#FILE_PATH#' => "javascript:WizardWindow.Open('onlinedengi_payment:result_rec','".bitrix_sessid()."')"));
-}
-
-// Ïîëó÷èì ñïèñîê äîñòóïíûõ ñïîñîáîâ îïëàòû
-$arOnlineDengiAvailablePaymentTypes = COnlineDengiPayment::GetPaymentTypesList();
-
-$arPSCorrespondence = array(
-	'ONLINEDENGI_PROJECT' => array(
-		'NAME' => GetMessage('ONLINEDENGI_PROJECT_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_PROJECT_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_SOURCE' => array(
-		'NAME' => GetMessage('ONLINEDENGI_SOURCE_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_SOURCE_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_SECRET_KEY' => array(
-		'NAME' => GetMessage('ONLINEDENGI_SECRET_KEY_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_SECRET_KEY_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_AMOUNT' => array(
-		'NAME' => GetMessage('ONLINEDENGI_AMOUNT_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_AMOUNT_D'),
-		'VALUE' => 'SHOULD_PAY',
-		'TYPE' => 'ORDER'
-	),
-	'ONLINEDENGI_NICKNAME' => array(
-		'NAME' => GetMessage('ONLINEDENGI_NICKNAME_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_NICKNAME_D'),
-		'VALUE' => 'ID',
-		'TYPE' => 'ORDER'
-	),
-	'ONLINEDENGI_NICK_EXTRA' => array(
-		'NAME' => GetMessage('ONLINEDENGI_NICK_EXTRA_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_NICK_EXTRA_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_ORDER_ID' => array(
-		'NAME' => GetMessage('ONLINEDENGI_ORDER_ID_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_ORDER_ID_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-
-	'ONLINEDENGI_COMMENT' => array(
-		'NAME' => GetMessage('ONLINEDENGI_COMMENT_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_COMMENT_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-
-	'ONLINEDENGI_CONVERT_ROUND_UP' => array(
-		'NAME' => GetMessage('ONLINEDENGI_CONVERT_ROUND_UP_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_CONVERT_ROUND_UP_D'),
-		'VALUE' => '1',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_WRONG_PAY_MODE' => array(
-		'NAME' => GetMessage('ONLINEDENGI_WRONG_PAY_MODE_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_WRONG_PAY_MODE_D'),
-		'VALUE' => '0',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_OVERPAY_MODE' => array(
-		'NAME' => GetMessage('ONLINEDENGI_OVERPAY_MODE_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_OVERPAY_MODE_D'),
-		'VALUE' => '0',
-		'TYPE' => ''
-	),
-
-	'ONLINEDENGI_OVERPAY_STATUS' => array(
-		'NAME' => GetMessage('ONLINEDENGI_OVERPAY_STATUS_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_OVERPAY_STATUS_D', array('#HREF#' => '/bitrix/admin/sale_status.php?lang='.LANG)),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-	'ONLINEDENGI_DEFICIT_PAY_STATUS' => array(
-		'NAME' => GetMessage('ONLINEDENGI_DEFICIT_PAY_STATUS_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_DEFICIT_PAY_STATUS_D', array('#HREF#' => '/bitrix/admin/sale_status.php?lang='.LANG)),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-
-	// Ïðè ïðîâîäêå ïîñðåäñòâîì âíóòðåííåãî ñ÷åòà ïîëüçîâàòåëÿ, íà ñ÷åò áóäóò çà÷èñëåíû è ñïèñàíû ñðåäñòâà ðàâíûå ñòîèìîñòè çàêàçà,
-	// à ýòî çíà÷èò, ÷òî ïðè îòìåíå çàêàçà ïîëíàÿ ñóììà áóäåò ñïèñàíà îáðàòíî íà ñ÷åò ïîêóïàòåëÿ (íå ôàêòè÷åñêè îïëà÷åííàÿ!!!).
-	// Èíòåðíåò-ìàãàçèí âåðñèÿ 8.5.2 (2009-12-14), òðàíçàêöèè èñïîëüçóþòñÿ ïðàêòè÷åñêè âåçäå, ïàðàìåòð òåðÿåò ñìûñë
-	/*
-	'ONLINEDENGI_USE_WITHDRAW' => array(
-		'NAME' => GetMessage('ONLINEDENGI_USE_WITHDRAW_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_USE_WITHDRAW_D'),
-		'VALUE' => '0',
-		'TYPE' => ''
-	),
-	*/
-
-	'ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE' => array(
-		'NAME' => GetMessage('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE_N'),
-		'DESCR' => GetMessage('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE_D'),
-		'VALUE' => '',
-		'TYPE' => ''
-	),
-);
-
-if(is_array($arOnlineDengiAvailablePaymentTypes)) {
-	foreach($arOnlineDengiAvailablePaymentTypes as $arOnlineDengiPaymentType) {
-		$sCode_ = 'ONLINEDENGI_AVAILABLE_TYPE_'.$arOnlineDengiPaymentType['id'];
-		$arPSCorrespondence[$sCode_] = array(
-			'NAME' => GetMessage('ONLINEDENGI_AVAILABLE_PRE').GetMessage($arOnlineDengiPaymentType['lang']).'['.$arOnlineDengiPaymentType['id'].']',
-			'DESCR' => GetMessage('ONLINEDENGI_AVAILABLE_TYPE_D'),
-			'VALUE' => $arOnlineDengiPaymentType['default'],
-			'TYPE' => ''
-		);
-	}
-}
-
-// ñîáûòèå OnAfterPaymentsCorrespondence
-$rsItems = GetModuleEvents('rarusspb_onlinedengi', 'OnAfterPaymentsCorrespondence');
-while($arItem = $rsItems->Fetch()) {
-	$arPSCorrespondence = ExecuteModuleEvent($arItem, $arPSCorrespondence);
-}
+<?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
+
+/**
+ *
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
+ *
+ */
+
+
+
+if(!CModule::IncludeModule('rarusspb.onlinedengi')) {
+
+	return;
+
+}
+
+
+
+include(GetLangFileName(dirname(__FILE__).'/', '/.description.php'));
+
+
+
+$psTitle = GetMessage('ONLINEDENGI_PS_TITLE');
+
+$psDescription = GetMessage('ONLINEDENGI_PS_DESCRIPTION');
+
+
+
+if(file_exists($_SERVER['DOCUMENT_ROOT'].ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT_PATH)) {
+
+	$psDescription .= GetMessage('ONLINEDENGI_PS_DESCRIPTION_RES', array('#FILE_PATH#' => "javascript:WizardWindow.Open('onlinedengi_payment:result_rec','".bitrix_sessid()."')"));
+
+}
+
+
+
+// ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ ÑÐ¿Ð¸ÑÐ¾Ðº Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ñ… ÑÐ¿Ð¾ÑÐ¾Ð±Ð¾Ð² Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹
+
+$arOnlineDengiAvailablePaymentTypes = COnlineDengiPayment::GetPaymentTypesList();
+
+
+
+$arPSCorrespondence = array(
+
+	'ONLINEDENGI_PROJECT' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_PROJECT_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_PROJECT_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_SOURCE' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_SOURCE_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_SOURCE_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_SECRET_KEY' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_SECRET_KEY_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_SECRET_KEY_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_AMOUNT' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_AMOUNT_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_AMOUNT_D'),
+
+		'VALUE' => 'SHOULD_PAY',
+
+		'TYPE' => 'ORDER'
+
+	),
+
+	'ONLINEDENGI_NICKNAME' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_NICKNAME_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_NICKNAME_D'),
+
+		'VALUE' => 'ID',
+
+		'TYPE' => 'ORDER'
+
+	),
+
+	'ONLINEDENGI_NICK_EXTRA' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_NICK_EXTRA_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_NICK_EXTRA_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_ORDER_ID' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_ORDER_ID_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_ORDER_ID_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+
+
+	'ONLINEDENGI_COMMENT' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_COMMENT_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_COMMENT_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+
+
+	'ONLINEDENGI_CONVERT_ROUND_UP' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_CONVERT_ROUND_UP_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_CONVERT_ROUND_UP_D'),
+
+		'VALUE' => '1',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_WRONG_PAY_MODE' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_WRONG_PAY_MODE_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_WRONG_PAY_MODE_D'),
+
+		'VALUE' => '0',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_OVERPAY_MODE' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_OVERPAY_MODE_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_OVERPAY_MODE_D'),
+
+		'VALUE' => '0',
+
+		'TYPE' => ''
+
+	),
+
+
+
+	'ONLINEDENGI_OVERPAY_STATUS' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_OVERPAY_STATUS_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_OVERPAY_STATUS_D', array('#HREF#' => '/bitrix/admin/sale_status.php?lang='.LANG)),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+	'ONLINEDENGI_DEFICIT_PAY_STATUS' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_DEFICIT_PAY_STATUS_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_DEFICIT_PAY_STATUS_D', array('#HREF#' => '/bitrix/admin/sale_status.php?lang='.LANG)),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+
+
+	// ÐŸÑ€Ð¸ Ð¿Ñ€Ð¾Ð²Ð¾Ð´ÐºÐµ Ð¿Ð¾ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð¾Ð¼ Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÐµÐ³Ð¾ ÑÑ‡ÐµÑ‚Ð° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ, Ð½Ð° ÑÑ‡ÐµÑ‚ Ð±ÑƒÐ´ÑƒÑ‚ Ð·Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ñ‹ Ð¸ ÑÐ¿Ð¸ÑÐ°Ð½Ñ‹ ÑÑ€ÐµÐ´ÑÑ‚Ð²Ð° Ñ€Ð°Ð²Ð½Ñ‹Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°,
+
+	// Ð° ÑÑ‚Ð¾ Ð·Ð½Ð°Ñ‡Ð¸Ñ‚, Ñ‡Ñ‚Ð¾ Ð¿Ñ€Ð¸ Ð¾Ñ‚Ð¼ÐµÐ½Ðµ Ð·Ð°ÐºÐ°Ð·Ð° Ð¿Ð¾Ð»Ð½Ð°Ñ ÑÑƒÐ¼Ð¼Ð° Ð±ÑƒÐ´ÐµÑ‚ ÑÐ¿Ð¸ÑÐ°Ð½Ð° Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾ Ð½Ð° ÑÑ‡ÐµÑ‚ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»Ñ (Ð½Ðµ Ñ„Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½Ð½Ð°Ñ!!!).
+
+	// Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ð²ÐµÑ€ÑÐ¸Ñ 8.5.2 (2009-12-14), Ñ‚Ñ€Ð°Ð½Ð·Ð°ÐºÑ†Ð¸Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð¿Ñ€Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð²ÐµÐ·Ð´Ðµ, Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ñ‚ÐµÑ€ÑÐµÑ‚ ÑÐ¼Ñ‹ÑÐ»
+
+	/*
+
+	'ONLINEDENGI_USE_WITHDRAW' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_USE_WITHDRAW_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_USE_WITHDRAW_D'),
+
+		'VALUE' => '0',
+
+		'TYPE' => ''
+
+	),
+
+	*/
+
+
+
+	'ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE' => array(
+
+		'NAME' => GetMessage('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE_N'),
+
+		'DESCR' => GetMessage('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE_D'),
+
+		'VALUE' => '',
+
+		'TYPE' => ''
+
+	),
+
+);
+
+
+
+if(is_array($arOnlineDengiAvailablePaymentTypes)) {
+
+	foreach($arOnlineDengiAvailablePaymentTypes as $arOnlineDengiPaymentType) {
+
+		$sCode_ = 'ONLINEDENGI_AVAILABLE_TYPE_'.$arOnlineDengiPaymentType['id'];
+
+		$arPSCorrespondence[$sCode_] = array(
+
+			'NAME' => GetMessage('ONLINEDENGI_AVAILABLE_PRE').GetMessage($arOnlineDengiPaymentType['lang']).'['.$arOnlineDengiPaymentType['id'].']',
+
+			'DESCR' => GetMessage('ONLINEDENGI_AVAILABLE_TYPE_D'),
+
+			'VALUE' => $arOnlineDengiPaymentType['default'],
+
+			'TYPE' => ''
+
+		);
+
+	}
+
+}
+
+
+
+// ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ðµ OnAfterPaymentsCorrespondence
+
+$rsItems = GetModuleEvents('rarusspb_onlinedengi', 'OnAfterPaymentsCorrespondence');
+
+while($arItem = $rsItems->Fetch()) {
+
+	$arPSCorrespondence = ExecuteModuleEvent($arItem, $arPSCorrespondence);
+
+}
+

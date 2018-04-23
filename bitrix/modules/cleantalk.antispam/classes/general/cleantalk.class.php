@@ -5,8 +5,8 @@
  * @version 1.21.14
  * @package Cleantalk
  * @subpackage Base
- * @author Ñleantalk team (welcome@cleantalk.ru)
- * @copyright (C) 2013 ÑleanTalk team (http://cleantalk.org)
+ * @author Ð¡leantalk team (welcome@cleantalk.ru)
+ * @copyright (C) 2013 Ð¡leanTalk team (http://cleantalk.org)
  * @license GNU/GPL: http://www.gnu.org/copyleft/gpl.html
  * @see https://github.com/CleanTalk/php-antispam 
  *
@@ -156,7 +156,7 @@ class CleantalkResponse {
             $this->errstr = $obj->errstr;
 
 			$this->errstr = preg_replace("/.+(\*\*\*.+\*\*\*).+/", "$1", $this->errstr);
-            // Ðàçáèðàåì  îòâåò ñ êëèíòîëêà
+            // Ð Ð°Ð·Ð±Ð¸Ñ€Ð°ÐµÐ¼  Ð¾Ñ‚Ð²ÐµÑ‚ Ñ ÐºÐ»Ð¸Ð½Ñ‚Ð¾Ð»ÐºÐ°
             $this->stop_words = isset($obj->stop_words) ? utf8_decode($obj->stop_words) : null;
             $this->comment = isset($obj->comment) ? utf8_decode($obj->comment) : null;
             $this->blacklisted = (isset($obj->blacklisted)) ? $obj->blacklisted : null;

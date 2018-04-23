@@ -3,7 +3,7 @@
 class CFotoramaComponent extends CBitrixComponent
 {
 	/**
-	 * Êîíñòàíòû
+	 * ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ñ‹
 	 */
 	const SOURCE_TYPE_MEDIALIBRARY_COLLECTION = 'medialibrary_collection';
 	const SOURCE_TYPE_IBLOCK_SECTION = 'iblock_section';
@@ -21,7 +21,7 @@ class CFotoramaComponent extends CBitrixComponent
 	const TRANSITION_EFFECT_DISSOLVE = 'dissolve';
 
 	/**
-	 * Ïîëó÷àåò âñå èçîáðàæåíèÿ êîëëåêöèè ìåäèàáèáëèîòåêè
+	 * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ð²ÑÐµ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸
 	 * @param $medialibraryCollectionId
 	 * @return array
 	 */
@@ -29,7 +29,7 @@ class CFotoramaComponent extends CBitrixComponent
 	{		
 		$images = array();
 		
-		CMedialib::Init(); //Êëàññû ìåäèàáèáëèîòåêè íåäîñòóïíû äî åå èíèöèàëèçàöèè
+		CMedialib::Init(); //ÐšÐ»Ð°ÑÑÑ‹ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð´Ð¾ ÐµÐµ Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸
 		
 		$items = CMedialibItem::GetList(array(
 			'arCollections' => array(
@@ -38,8 +38,8 @@ class CFotoramaComponent extends CBitrixComponent
 		));
 
 		/**
-		 * Â CMedialibItem::GetList íåò âîçìîæíîñòè ôèëüòðàöèè ïî òèïó ýëåìåíòà êîëëåêöèè, 
-		 * ïîýòîìó ïðèäåòñÿ âûáðàòü èçîáðàæåíèÿ âðó÷íóþ
+		 * Ð’ CMedialibItem::GetList Ð½ÐµÑ‚ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾ Ñ‚Ð¸Ð¿Ñƒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸, 
+		 * Ð¿Ð¾ÑÑ‚Ð¾Ð¼Ñƒ Ð¿Ñ€Ð¸Ð´ÐµÑ‚ÑÑ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð²Ñ€ÑƒÑ‡Ð½ÑƒÑŽ
 		 */
 		foreach ($items as $item)
 		{
@@ -60,7 +60,7 @@ class CFotoramaComponent extends CBitrixComponent
 	}
 
 	/**
-	 * Ïîëó÷àåò âñå èçîáðàæåíèÿ (àíîíñà è äåòàëüíûå) ýëåìåíòîâ îäíîãî ðàçäåëà èíôîáëîêà
+	 * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ð²ÑÐµ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ (Ð°Ð½Ð¾Ð½ÑÐ° Ð¸ Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ðµ) ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°
 	 * @param $sectionId
 	 * @return array
 	 */
@@ -76,8 +76,8 @@ class CFotoramaComponent extends CBitrixComponent
 			array(
 				'SECTION_ID' => $sectionId,
 				'ACTIVE' => 'Y',
-				'>PREVIEW_PICTURE' => 0, //ôèëüòðóåì ïî îáÿçàòåëüíîìó íàëè÷èþ èçîáðàæåíèÿ àíîíñà
-				'>DETAIL_PICTURE' => 0 //è ïî îáÿçàòåëüíîìó íàëè÷èþ äåòàëüíîãî èçîáðàæåíèÿ
+				'>PREVIEW_PICTURE' => 0, //Ñ„Ð¸Ð»ÑŒÑ‚Ñ€ÑƒÐµÐ¼ Ð¿Ð¾ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð¼Ñƒ Ð½Ð°Ð»Ð¸Ñ‡Ð¸ÑŽ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð°Ð½Ð¾Ð½ÑÐ°
+				'>DETAIL_PICTURE' => 0 //Ð¸ Ð¿Ð¾ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð¼Ñƒ Ð½Ð°Ð»Ð¸Ñ‡Ð¸ÑŽ Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ
 			),
 			false,
 			false,
@@ -91,7 +91,7 @@ class CFotoramaComponent extends CBitrixComponent
 
 		while ($iblockElement = $iblockElements->GetNext())
 		{
-			$path = CFile::GetPath($iblockElement['DETAIL_PICTURE']); //CFile::GetByID íå âîçâðàùàåò ïîëíîãî ïóòè äî èçîáðàæåíèÿ
+			$path = CFile::GetPath($iblockElement['DETAIL_PICTURE']); //CFile::GetByID Ð½Ðµ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ð¿Ð¾Ð»Ð½Ð¾Ð³Ð¾ Ð¿ÑƒÑ‚Ð¸ Ð´Ð¾ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ
 			$thumbPath = CFile::GetPath($iblockElement['PREVIEW_PICTURE']);
 			$detailPictureInfo = CFile::GetByID($iblockElement['DETAIL_PICTURE'])->Fetch();
 			

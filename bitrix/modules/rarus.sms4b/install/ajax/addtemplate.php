@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
 	if ($arEvent = $obEvents->Fetch())
 	{
 		$macro = $arEvent["DESCRIPTION"];
-		//проверяем, есть ли шаблон СМС для
+		//РїСЂРѕРІРµСЂСЏРµРј, РµСЃС‚СЊ Р»Рё С€Р°Р±Р»РѕРЅ РЎРњРЎ РґР»СЏ
 		$smsText = $SMS4B->GetEventTemplate("SMS4B_". $arEvent['EVENT_NAME'], $_GET["site"], "USER");
 		$userPhone = $smsText["EMAIL_TO"];
 		$smsAdminText = $SMS4B->GetEventTemplate("SMS4B_". $arEvent['EVENT_NAME'], $_GET["site"], "ADMIN");
@@ -69,7 +69,7 @@ elseif($_SERVER["REQUEST_METHOD"] == "POST")
 	$smsTemplate = $SMS4B->GetEventTemplate("SMS4B_". $eventType, $site, "SMS4B_USER");
 	$smsAdminTemplate = $SMS4B->GetEventTemplate("SMS4B_". $eventType, $site, "SMS4B_ADMIN");
 
-	//нет текста для обоих сообщений. Удаляем тип
+	//РЅРµС‚ С‚РµРєСЃС‚Р° РґР»СЏ РѕР±РѕРёС… СЃРѕРѕР±С‰РµРЅРёР№. РЈРґР°Р»СЏРµРј С‚РёРї
 	if (empty($userSms) && empty($adminSms))
 	{
 		CEventMessage::Delete($smsTemplate['ID']);

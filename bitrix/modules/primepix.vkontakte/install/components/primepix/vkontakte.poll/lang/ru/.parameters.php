@@ -1,7 +1,7 @@
 <?
-$MESS ['ID_APLICATION'] = "ID ïðèëîæåíèÿ";
-$MESS ['FORM_SETTINGS'] = "Âèä ôîðìû";
-$MESS ['ID_POLL'] = "ID îïðîñà";
-$MESS ['TYPE_FORM'] = "Âèä";
-$MESS ['WIDTH_FORM'] = "Øèðèíà";
+$MESS ['ID_APLICATION'] = "ID Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ";
+$MESS ['FORM_SETTINGS'] = "Ð’Ð¸Ð´ Ñ„Ð¾Ñ€Ð¼Ñ‹";
+$MESS ['ID_POLL'] = "ID Ð¾Ð¿Ñ€Ð¾ÑÐ°";
+$MESS ['TYPE_FORM'] = "Ð’Ð¸Ð´";
+$MESS ['WIDTH_FORM'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
 ?>

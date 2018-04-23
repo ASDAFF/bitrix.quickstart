@@ -1,3 +1,3 @@
 <?
-$MESS["YENISITE_REFORMAL_TZYVY_I_PREDLOJENIA"] = "Îòçûâû è ïðåäëîæåíèÿ";
+$MESS["YENISITE_REFORMAL_TZYVY_I_PREDLOJENIA"] = "ÐžÑ‚Ð·Ñ‹Ð²Ñ‹ Ð¸ Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ";
 ?>

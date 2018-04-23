@@ -8,7 +8,7 @@ $sFormTarget = ' target="_blank"';
 if(!isset($_REQUEST['AJAX_OD'])):
 
 if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
-	// если в новом окне
+	// РµСЃР»Рё РІ РЅРѕРІРѕРј РѕРєРЅРµ
 	?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml"><?
 	?><head><?
@@ -25,7 +25,7 @@ if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
 	$GLOBALS['APPLICATION']->SetAdditionalCSS($templateFolder.'/new_window.css');
 }
 
-// сумма счета
+// СЃСѓРјРјР° СЃС‡РµС‚Р°
 ?><div class="onlinedengi-caption"><?
 	?><span class="onlinedengi-caption-name"><?
 		echo GetMessage('ONLINEDENGI_PAYMENT_AMOUNT');
@@ -41,7 +41,7 @@ endif;
 
 if($arResult['FIELDS']['mode_type']) {
 	$arOnlinedengiCurMode_ =& $arResult['arOnlineDengiAvailablePaymentTypes'][$arResult['FIELDS']['mode_type']];
-	// способ оплаты
+	// СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹
 	?><div class="onlinedengi-caption"><?
 		?><span class="onlinedengi-caption-name"><?
 			echo GetMessage('ONLINEDENGI_PAYMENT_MODE_TYPE');
@@ -49,7 +49,7 @@ if($arResult['FIELDS']['mode_type']) {
 		?><span class="onlinedengi-caption-value"><?
 			echo GetMessage($arOnlinedengiCurMode_['lang']);
 		?></span><?
-		// ссылка на изменение способа оплаты
+		// СЃСЃС‹Р»РєР° РЅР° РёР·РјРµРЅРµРЅРёРµ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹
 		if(!$arResult['bAdminModeTypeDefined'] && count($arResult['arModeTypeList']) > 1) {
 			?><span class="onlinedengi-href"><?
 				?> [<a href="<?=$arResult['sCurPage']?>"><?
@@ -59,7 +59,7 @@ if($arResult['FIELDS']['mode_type']) {
 		}
 	;?></div><?
 
-	// сумма счета для выбранного способа оплаты
+	// СЃСѓРјРјР° СЃС‡РµС‚Р° РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕРіРѕ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹
 	?><div class="onlinedengi-caption"><?
 		?><span class="onlinedengi-caption-name"><?
 			echo GetMessage('ONLINEDENGI_PAYMENT_AMOUNT_MODE');
@@ -74,7 +74,7 @@ if(empty($arResult['ERRORS'])) {
 	?><div id="onlinedengi_ajax"><div class="onlinedengi-form-block"><div class="onlinedengi-form-block-pad"><?
 		if(empty($arResult['FIELDS']['mode_type'])) {
 		
-			// выбор способа оплаты
+			// РІС‹Р±РѕСЂ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹
 			?><form method="post" action=""><?
 				?><input type="hidden" name="ORDER_ID" value="<?=$arResult['ORDER']['ID']?>" /><?
 
@@ -119,7 +119,7 @@ if(empty($arResult['ERRORS'])) {
 				?></div><?
 			?></form><?
 		} else {
-			// заполнение дополнительных полей способа оплаты и отправка данных на OnlineDengi
+			// Р·Р°РїРѕР»РЅРµРЅРёРµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… РїРѕР»РµР№ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹ Рё РѕС‚РїСЂР°РІРєР° РґР°РЅРЅС‹С… РЅР° OnlineDengi
 			?><form<?=$sFormTarget?> action="<?=ONLINEDENGI_PAYMENT_REQUEST_URL?>" method="<?=ONLINEDENGI_PAYMENT_REQUEST_TYPE?>"><?
 				$arFields = COnlineDengiPayment::GetModeTypeFieldsById($arResult['FIELDS']['mode_type']);
 
@@ -128,7 +128,7 @@ if(empty($arResult['ERRORS'])) {
 						$mValue = isset($arItem['value']) ? $arItem['value'] : $arResult['FIELDS'][$arItem['name']];
 						if(!isset($arResult['FIELDS'][$arItem['name']]) && !isset($arItem['value'])) {
 							?><div class="onlinedengi-field-row"><?
-								// поля, которые должен дополнительно заполнить покупатель
+								// РїРѕР»СЏ, РєРѕС‚РѕСЂС‹Рµ РґРѕР»Р¶РµРЅ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ Р·Р°РїРѕР»РЅРёС‚СЊ РїРѕРєСѓРїР°С‚РµР»СЊ
 								?><div class="onlinedengi-caption"><?
 									?><span class="onlinedengi-caption-name"><?
 										echo GetMessage($arItem['lang']).': ';
@@ -158,7 +158,7 @@ if(empty($arResult['ERRORS'])) {
 <?
 
 if(!empty($arResult['ERRORS'])) {
-	// вывод ошибок
+	// РІС‹РІРѕРґ РѕС€РёР±РѕРє
 	array_walk($arResult['ERRORS'], create_function('&$value, $key', '$value .= " [".$key."]";'));
 	ShowMessage(array('TYPE' => 'ERROR', 'MESSAGE' => implode('<br />', $arResult['ERRORS'])));
 }
@@ -220,7 +220,7 @@ if(!isset($_REQUEST['AJAX_OD'])):
 	</script>
 <?		
 if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
-	// если в новом окне
+	// РµСЃР»Рё РІ РЅРѕРІРѕРј РѕРєРЅРµ
 	?></body></html><?
 }
 

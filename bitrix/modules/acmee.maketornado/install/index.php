@@ -15,7 +15,7 @@ Class acmee_maketornado extends CModule
 	    $this->MODULE_NAME = GetMessage("NAME");
 	    $this->MODULE_DESCRIPTION = GetMessage("DESCRIPTION");  
         $this->PARTNER_NAME = GetMessage("PARTNER_NAME"); 
-        //В PARTNER_URI нельзя использовать языковое сообщение через GetMessage, только непосредственно строку.
+        //Р’ PARTNER_URI РЅРµР»СЊР·СЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЏР·С‹РєРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ С‡РµСЂРµР· GetMessage, С‚РѕР»СЊРєРѕ РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅРѕ СЃС‚СЂРѕРєСѓ.
         $this->PARTNER_URI = "http://maketornado.com/";	
 
 		$path = str_replace("\\", "/", __FILE__);

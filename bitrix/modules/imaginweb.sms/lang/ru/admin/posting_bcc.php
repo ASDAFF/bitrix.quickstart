@@ -1,14 +1,14 @@
 <?
-$MESS["post_title"] = "Ñïèñîê àäðåñîâ, íà êîòîðûå áûëî îòïðàâëåíî ïèñüìî";
-$MESS["post_total"] = "Âñåãî àäðåñîâ:";
-$MESS["POST_STATUS_ID"] = "Ñòàòóñ";
-$MESS["POST_PHONE"] = "Íîìåð òåëåôîíà";
-$MESS["POST_SUBSCRIPTION_ID"] = "Ïîäïèñêà";
-$MESS["POST_USER_ID"] = "Ïîëüçîâàòåëü";
-$MESS["POST_STATUS_ID_ERROR"] = "Îøèáêà îòïðàâêè";
-$MESS["POST_STATUS_ID_SUCCESS"] = "Îòïðàâëåíî óñïåøíî";
-$MESS["POST_GROUP_ACTION_INACTIVE"] = "äåàêòèâèðîâàòü ïîäïèñêó";
-$MESS["POST_GROUP_ACTION_DELETE"] = "óäàëèòü ïîäïèñêó";
-$MESS["POST_SUBSCR_DELETED"] = "óäàëåíà";
-$MESS["POST_SUBSCR_INACTIVE"] = "íå àêòèâíà";
+$MESS["post_title"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð°Ð´Ñ€ÐµÑÐ¾Ð², Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾ Ð¿Ð¸ÑÑŒÐ¼Ð¾";
+$MESS["post_total"] = "Ð’ÑÐµÐ³Ð¾ Ð°Ð´Ñ€ÐµÑÐ¾Ð²:";
+$MESS["POST_STATUS_ID"] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ";
+$MESS["POST_PHONE"] = "ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°";
+$MESS["POST_SUBSCRIPTION_ID"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ°";
+$MESS["POST_USER_ID"] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["POST_STATUS_ID_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["POST_STATUS_ID_SUCCESS"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾";
+$MESS["POST_GROUP_ACTION_INACTIVE"] = "Ð´ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÑƒ";
+$MESS["POST_GROUP_ACTION_DELETE"] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÑƒ";
+$MESS["POST_SUBSCR_DELETED"] = "ÑƒÐ´Ð°Ð»ÐµÐ½Ð°";
+$MESS["POST_SUBSCR_INACTIVE"] = "Ð½Ðµ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð°";
 ?>

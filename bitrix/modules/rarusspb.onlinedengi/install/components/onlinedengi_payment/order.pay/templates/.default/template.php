@@ -1,8 +1,8 @@
 <?
 /**
  *
- * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ.
- * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
  *
  */
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();?><?
@@ -10,7 +10,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();?><?
 
 $sFormTarget = ' target="_blank"';
 if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
-	// åñëè â íîâîì îêíå
+	// ÐµÑÐ»Ð¸ Ð² Ð½Ð¾Ð²Ð¾Ð¼ Ð¾ÐºÐ½Ðµ
 	?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml"><?
 	?><head><?
@@ -27,7 +27,7 @@ if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
 	$GLOBALS['APPLICATION']->SetAdditionalCSS($templateFolder.'/new_window.css');
 }
 
-// ñóììà ñ÷åòà
+// ÑÑƒÐ¼Ð¼Ð° ÑÑ‡ÐµÑ‚Ð°
 ?><div class="onlinedengi-caption"><?
 	?><span class="onlinedengi-caption-name"><?
 		echo GetMessage('ONLINEDENGI_PAYMENT_AMOUNT');
@@ -39,7 +39,7 @@ if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
 
 if($arResult['FIELDS']['mode_type']) {
 	$arOnlinedengiCurMode_ =& $arResult['arOnlineDengiAvailablePaymentTypes'][$arResult['FIELDS']['mode_type']];
-	// ñïîñîá îïëàòû
+	// ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹
 	?><div class="onlinedengi-caption"><?
 		?><span class="onlinedengi-caption-name"><?
 			echo GetMessage('ONLINEDENGI_PAYMENT_MODE_TYPE');
@@ -47,7 +47,7 @@ if($arResult['FIELDS']['mode_type']) {
 		?><span class="onlinedengi-caption-value"><?
 			echo GetMessage($arOnlinedengiCurMode_['lang']);
 		?></span><?
-		// ññûëêà íà èçìåíåíèå ñïîñîáà îïëàòû
+		// ÑÑÑ‹Ð»ÐºÐ° Ð½Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹
 		if(!$arResult['bAdminModeTypeDefined'] && count($arResult['arModeTypeList']) > 1) {
 			?><span class="onlinedengi-href"><?
 				?> [<a href="<?=$arResult['sCurPage']?>"><?
@@ -57,7 +57,7 @@ if($arResult['FIELDS']['mode_type']) {
 		}
 	?></div><?
 
-	// ñóììà ñ÷åòà äëÿ âûáðàííîãî ñïîñîáà îïëàòû
+	// ÑÑƒÐ¼Ð¼Ð° ÑÑ‡ÐµÑ‚Ð° Ð´Ð»Ñ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ð³Ð¾ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹
 	?><div class="onlinedengi-caption"><?
 		?><span class="onlinedengi-caption-name"><?
 			echo GetMessage('ONLINEDENGI_PAYMENT_AMOUNT_MODE');
@@ -72,7 +72,7 @@ if($arResult['FIELDS']['mode_type']) {
 if(empty($arResult['ERRORS'])) {
 	?><div class="onlinedengi-form-block"><div class="onlinedengi-form-block-pad"><?
 		if(empty($arResult['FIELDS']['mode_type'])) {
-			// âûáîð ñïîñîáà îïëàòû
+			// Ð²Ñ‹Ð±Ð¾Ñ€ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹
 			?><form method="post" action=""><?
 				?><input type="hidden" name="ORDER_ID" value="<?=$arResult['ORDER']['ID']?>" /><?
 
@@ -98,7 +98,7 @@ if(empty($arResult['ERRORS'])) {
 				?></div><?
 			?></form><?
 		} else {
-			// çàïîëíåíèå äîïîëíèòåëüíûõ ïîëåé ñïîñîáà îïëàòû è îòïðàâêà äàííûõ íà OnlineDengi
+			// Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð¿Ð¾Ð»ÐµÐ¹ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ° Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð½Ð° OnlineDengi
 			?><form<?=$sFormTarget?> action="<?=ONLINEDENGI_PAYMENT_REQUEST_URL?>" method="<?=ONLINEDENGI_PAYMENT_REQUEST_TYPE?>"><?
 				$arFields = COnlineDengiPayment::GetModeTypeFieldsById($arResult['FIELDS']['mode_type']);
 				if(!empty($arFields) && is_array($arFields)) {
@@ -106,7 +106,7 @@ if(empty($arResult['ERRORS'])) {
 						$mValue = isset($arItem['value']) ? $arItem['value'] : $arResult['FIELDS'][$arItem['name']];
 						if(!isset($arResult['FIELDS'][$arItem['name']]) && !isset($arItem['value'])) {
 							?><div class="onlinedengi-field-row"><?
-								// ïîëÿ, êîòîðûå äîëæåí äîïîëíèòåëüíî çàïîëíèòü ïîêóïàòåëü
+								// Ð¿Ð¾Ð»Ñ, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŒ
 								?><div class="onlinedengi-caption"><?
 									?><span class="onlinedengi-caption-name"><?
 										echo GetMessage($arItem['lang']).': ';
@@ -131,12 +131,12 @@ if(empty($arResult['ERRORS'])) {
 }
 
 if(!empty($arResult['ERRORS'])) {
-	// âûâîä îøèáîê
+	// Ð²Ñ‹Ð²Ð¾Ð´ Ð¾ÑˆÐ¸Ð±Ð¾Ðº
 	array_walk($arResult['ERRORS'], create_function('&$value, $key', '$value .= " [".$key."]";'));
 	ShowMessage(array('TYPE' => 'ERROR', 'MESSAGE' => implode('<br />', $arResult['ERRORS'])));
 }
 		
 if($arResult['PAYMENT']['PSA_NEW_WINDOW'] == 'Y') {
-	// åñëè â íîâîì îêíå
+	// ÐµÑÐ»Ð¸ Ð² Ð½Ð¾Ð²Ð¾Ð¼ Ð¾ÐºÐ½Ðµ
 	?></body></html><?
 }

@@ -1,6 +1,6 @@
 <?
-$MESS ['ASD_CMP_GLOBAL_DIR_NAME'] = "Ñëóæåáíûå";
-$MESS ['ASD_CMP_DIR_NAME'] = "Ðàçíîå";
-$MESS ['ASD_CMP_NAME'] = "jQuery-ñëàéäåð êàðòèíîê";
-$MESS ['ASD_CMP_DESCRIPTION'] = "Ñëàéäåð êàðòèíîê íà jQuery, òðåáóåòñÿ ïîäêëþ÷åííàÿ áèáèëèîòåêà jQuery.";
+$MESS ['ASD_CMP_GLOBAL_DIR_NAME'] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ñ‹Ðµ";
+$MESS ['ASD_CMP_DIR_NAME'] = "Ð Ð°Ð·Ð½Ð¾Ðµ";
+$MESS ['ASD_CMP_NAME'] = "jQuery-ÑÐ»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº";
+$MESS ['ASD_CMP_DESCRIPTION'] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº Ð½Ð° jQuery, Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ð°Ñ Ð±Ð¸Ð±Ð¸Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ° jQuery.";
 ?>

@@ -2,7 +2,7 @@
 global $MESS;
 
 $MESS['PAYANYWAY_WEBMONEY_TITLE']		= 'WebMoney';
-$MESS['PAYANYWAY_WEBMONEY_ACCOUNTID']	= "Èñòî÷íèê îïëàòû";
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'Ïðîäîëæèòü';
+$MESS['PAYANYWAY_WEBMONEY_ACCOUNTID']	= "Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
 
 ?>

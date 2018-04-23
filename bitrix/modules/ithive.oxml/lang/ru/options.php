@@ -1,8 +1,8 @@
 <?
 
-$MESS ['ITHIVE_DIR_TO_INSTALL'] = "Ïîëíûé ïóòü äî ôàéëà: ";
-$MESS ['ITHIVE_SAVE'] = "Ñîõðàíèòü";
-$MESS ['ITHIVE_RESET'] = "Ñáðîñèòü";
-$MESS ['MAIN_RESTORE_DEFAULTS'] = "Ïî-óìîë÷àíèþ";
+$MESS ['ITHIVE_DIR_TO_INSTALL'] = "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ Ð´Ð¾ Ñ„Ð°Ð¹Ð»Ð°: ";
+$MESS ['ITHIVE_SAVE'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+$MESS ['ITHIVE_RESET'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
+$MESS ['MAIN_RESTORE_DEFAULTS'] = "ÐŸÐ¾-ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
 
 ?>

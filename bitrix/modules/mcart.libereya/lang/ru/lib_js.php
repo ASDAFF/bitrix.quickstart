@@ -1,7 +1,7 @@
 <? 
-$MESS["ML_LIB_JS_LOADING"] = "Çàãðóçêà..."; 
-$MESS["ML_LIB_JS_BOOKING"] = "Áðîíèðîâàíèå"; 
-$MESS["ML_LIB_JS_ERROR"] = "Îøèáêà";
-$MESS["ML_LIB_JS_REASON"] = "Ïðè÷èíà";
+$MESS["ML_LIB_JS_LOADING"] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°..."; 
+$MESS["ML_LIB_JS_BOOKING"] = "Ð‘Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ"; 
+$MESS["ML_LIB_JS_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ°";
+$MESS["ML_LIB_JS_REASON"] = "ÐŸÑ€Ð¸Ñ‡Ð¸Ð½Ð°";
 
 ?>

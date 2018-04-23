@@ -1,6 +1,6 @@
 <?
-$MESS["bitrix.liveapi_MODULE_NAME"] = "Æèâîå îïèñàíèå ÀÏÈ";
-$MESS["bitrix.liveapi_MODULE_DESC"] = "Ñêàíèðóþòñÿ ôàéëû ÿäðà è ôóíêöèè ÀÏÈ, äîñòóïíûå â òåêóùåé óñòàíîâêå. Ïîäðîáíîñòè â áëîãå: http://dev.1c-bitrix.ru/community/webdev/group/78/blog/1991/";
-$MESS["bitrix.liveapi_PARTNER_NAME"] = "Áèòðèêñ";
+$MESS["bitrix.liveapi_MODULE_NAME"] = "Ð–Ð¸Ð²Ð¾Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÐÐŸÐ˜";
+$MESS["bitrix.liveapi_MODULE_DESC"] = "Ð¡ÐºÐ°Ð½Ð¸Ñ€ÑƒÑŽÑ‚ÑÑ Ñ„Ð°Ð¹Ð»Ñ‹ ÑÐ´Ñ€Ð° Ð¸ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ÐÐŸÐ˜, Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¹ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ. ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½Ð¾ÑÑ‚Ð¸ Ð² Ð±Ð»Ð¾Ð³Ðµ: http://dev.1c-bitrix.ru/community/webdev/group/78/blog/1991/";
+$MESS["bitrix.liveapi_PARTNER_NAME"] = "Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ";
 $MESS["bitrix.liveapi_PARTNER_URI"] = "http://www.1c-bitrix.ru";
 ?>

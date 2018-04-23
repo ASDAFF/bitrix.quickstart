@@ -1,16 +1,16 @@
 <?
 
-$MESS ['SITE_GROUP_NAME'] = "Èíôîðìàöèÿ î ñàéòå";
-$MESS ['SKU_GROUP_NAME'] = "SKU Ñâîéñòâî";
-$MESS ['IBLOCK_TYPE_LIST'] = "Èíôîáëîêè äëÿ ýêñïîðòà";
-$MESS ['IBLOCK_SECTION'] = "Ðàçäåëû äëÿ ýêñïîðòà";
-$MESS ['SECTION_PROPERTY'] = "Ñâîéñòâà äëÿ ýêñïîðòà";
-$MESS ['MORE_PHOTO'] = 'Ñâîéñòâî, ãäå õðàíÿòñÿ èçîáðàæåíèÿ';
-$MESS ['SKU_PROPERTY'] = "SKU Ñâîéñòâà äëÿ ýêñïîðòà";
-$MESS ['IBLOCK_CACHE_FILTER'] = "Êýø";
-$MESS ['ALL'] = "[All] Âñå";
-$MESS ['SITE_NAME'] = 'Íàçâàíèå ñàéòà';
-$MESS ['COMPANY_NAME'] = 'Íàçâàíèå êîìïàíèè';
-$MESS ['PRICE_TYPE'] = 'Òèï öåíû';
+$MESS ['SITE_GROUP_NAME'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ ÑÐ°Ð¹Ñ‚Ðµ";
+$MESS ['SKU_GROUP_NAME'] = "SKU Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾";
+$MESS ['IBLOCK_TYPE_LIST'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸ Ð´Ð»Ñ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð°";
+$MESS ['IBLOCK_SECTION'] = "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹ Ð´Ð»Ñ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð°";
+$MESS ['SECTION_PROPERTY'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð´Ð»Ñ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð°";
+$MESS ['MORE_PHOTO'] = 'Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾, Ð³Ð´Ðµ Ñ…Ñ€Ð°Ð½ÑÑ‚ÑÑ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ';
+$MESS ['SKU_PROPERTY'] = "SKU Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð´Ð»Ñ ÑÐºÑÐ¿Ð¾Ñ€Ñ‚Ð°";
+$MESS ['IBLOCK_CACHE_FILTER'] = "ÐšÑÑˆ";
+$MESS ['ALL'] = "[All] Ð’ÑÐµ";
+$MESS ['SITE_NAME'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ°Ð¹Ñ‚Ð°';
+$MESS ['COMPANY_NAME'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸';
+$MESS ['PRICE_TYPE'] = 'Ð¢Ð¸Ð¿ Ñ†ÐµÐ½Ñ‹';
 
 ?>

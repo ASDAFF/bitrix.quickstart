@@ -1,6 +1,6 @@
 <?
-$MESS ['MLIFE_VKG_DESC_NAME'] = 'Ôîòîãàëåðåÿ "GALERYVK"';
-$MESS ['MLIFE_VKG_DESC_DESCRIPTION'] = "Âûâîä ãàëåðåè ñ Âêîíòàêòå ïî èä ïîëüçîâàòåëÿ/ñîîáùåñòâà è èä ãàëåðåè.";
+$MESS ['MLIFE_VKG_DESC_NAME'] = 'Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ "GALERYVK"';
+$MESS ['MLIFE_VKG_DESC_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸ Ñ Ð’ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ðµ Ð¿Ð¾ Ð¸Ð´ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ/ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð° Ð¸ Ð¸Ð´ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸.";
 $MESS ['MLIFE'] = 'Mlife Media';
-$MESS ['MLIFE_GALERY'] = 'Ôîòî è Âèäåî ãàëåðåè';
+$MESS ['MLIFE_GALERY'] = 'Ð¤Ð¾Ñ‚Ð¾ Ð¸ Ð’Ð¸Ð´ÐµÐ¾ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸';
 ?>

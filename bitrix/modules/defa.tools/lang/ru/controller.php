@@ -1,2 +1,2 @@
 <?
-$MESS["DEFATOOLS_IB_DEMO_GOTO_NEW_IB"] = "Ïåðåéòè ê ñîçäàííîìó èíôîáëîêó";
+$MESS["DEFATOOLS_IB_DEMO_GOTO_NEW_IB"] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº ÑÐ¾Ð·Ð´Ð°Ð½Ð½Ð¾Ð¼Ñƒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÑƒ";

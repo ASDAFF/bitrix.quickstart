@@ -1,20 +1,20 @@
 <?
-$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_CAMPAIGNS"] = "Ñïèñîê ðàññûëîê";
-$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_STAT"] = "Ñâîäíàÿ ñòàòèñòèêà ïî âñåì ðàññûëêàì";
-$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_GOTO_SERVICE"] = "Äîáàâèòü ðàññûëêó";
-$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_CAMPAIGNS"] = "Ñïèñîê ðàññûëîê";
-$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_LINECHART"] = "Ñàòèñòèêà ïî ðàññûëêå: ";
-$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_STAT"] = "Ñâîäíàÿ ñòàòèñòèêà ïî âñåì ðàññûëêàì";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SENT"] = "Ñóììà îòïðàâëåííûõ ïèñåì";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_OPENED"] = "Ñóììà îòêðûòèé ïèñåì";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_CLICKED"] = "Ñóììà êëèêîâ âî âñåõ ðàññûëêàõ";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SPAM"] = "Êîëè÷åñòâî íàæàòèé \"Ýòî ñïàì\"";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_HARD_BOUNCED"] = "Êîëè÷åñòâî æåñòêèõ âîçâðàòîâ (íà äàííûå àäðåñà ïèñüìà íå ìîãóò áûòü äîñòàâëåíû è íå áóäóò áîëüøå îòïðàâëÿòüñÿ)";
-$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SOFT_BOUNCED"] = "Êîëè÷åñòâî ìÿãêèõ âîçâðàòîâ (íà äàííûå àäðåñà âðåìåííî íåâîçìîæíî äîñòàâèòü ïèñüìî)";
-$MESS["MAILTRIG_EVENTS_DELIVERY_FILTER_DATE"] = "Äàòà:";
-$MESS["MAILTRIG_EVENTS_DELIVERY_FILTER_SUBMIT"] = "Ôèëüòð";
-$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_RESPONSE"] = "Îòâåò ñåðâèñà MailTrig: ";
-$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_EMPTY_ID"] = "Ðàññûëêà íå íàéäåíà";
-$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_BACK_TO_CAMPAIGNS"] = "Âåðíóòüñÿ ê ñïèñêó ðàññûëîê";
+$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_CAMPAIGNS"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°ÑÑÑ‹Ð»Ð¾Ðº";
+$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_STAT"] = "Ð¡Ð²Ð¾Ð´Ð½Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾ Ð²ÑÐµÐ¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ°Ð¼";
+$MESS["MAILTRIG_EVENTS_DELIVERY_MENU_GOTO_SERVICE"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ";
+$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_CAMPAIGNS"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°ÑÑÑ‹Ð»Ð¾Ðº";
+$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_LINECHART"] = "Ð¡Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐµ: ";
+$MESS["MAILTRIG_EVENTS_DELIVERY_PAGE_STAT"] = "Ð¡Ð²Ð¾Ð´Ð½Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾ Ð²ÑÐµÐ¼ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ°Ð¼";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SENT"] = "Ð¡ÑƒÐ¼Ð¼Ð° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ñ… Ð¿Ð¸ÑÐµÐ¼";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_OPENED"] = "Ð¡ÑƒÐ¼Ð¼Ð° Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ð¹ Ð¿Ð¸ÑÐµÐ¼";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_CLICKED"] = "Ð¡ÑƒÐ¼Ð¼Ð° ÐºÐ»Ð¸ÐºÐ¾Ð² Ð²Ð¾ Ð²ÑÐµÑ… Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ°Ñ…";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SPAM"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½Ð°Ð¶Ð°Ñ‚Ð¸Ð¹ \"Ð­Ñ‚Ð¾ ÑÐ¿Ð°Ð¼\"";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_HARD_BOUNCED"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¶ÐµÑÑ‚ÐºÐ¸Ñ… Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‚Ð¾Ð² (Ð½Ð° Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð°Ð´Ñ€ÐµÑÐ° Ð¿Ð¸ÑÑŒÐ¼Ð° Ð½Ðµ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ñ‹ Ð¸ Ð½Ðµ Ð±ÑƒÐ´ÑƒÑ‚ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒÑÑ)";
+$MESS["MAILTRIG_EVENTS_DELIVERY_RESULTS_SOFT_BOUNCED"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¼ÑÐ³ÐºÐ¸Ñ… Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‚Ð¾Ð² (Ð½Ð° Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð°Ð´Ñ€ÐµÑÐ° Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð´Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¸ÑÑŒÐ¼Ð¾)";
+$MESS["MAILTRIG_EVENTS_DELIVERY_FILTER_DATE"] = "Ð”Ð°Ñ‚Ð°:";
+$MESS["MAILTRIG_EVENTS_DELIVERY_FILTER_SUBMIT"] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
+$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_RESPONSE"] = "ÐžÑ‚Ð²ÐµÑ‚ ÑÐµÑ€Ð²Ð¸ÑÐ° MailTrig: ";
+$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_EMPTY_ID"] = "Ð Ð°ÑÑÑ‹Ð»ÐºÐ° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°";
+$MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_BACK_TO_CAMPAIGNS"] = "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº ÑÐ¿Ð¸ÑÐºÑƒ Ñ€Ð°ÑÑÑ‹Ð»Ð¾Ðº";
 $MESS["MAILTRIG_EVENTS_DELIVERY_ERROR_"] = "";
 ?>

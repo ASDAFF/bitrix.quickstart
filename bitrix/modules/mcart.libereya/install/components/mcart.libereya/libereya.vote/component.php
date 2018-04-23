@@ -1,32 +1,32 @@
 <?
-//Ñëåäóéòå êîììåíòàðèÿì âèäà ×èñëî* äëÿ îòñëåæèâàíèÿ ïóòè èñïîëíåíèÿ.
+//Ð¡Ð»ÐµÐ´ÑƒÐ¹Ñ‚Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÑÐ¼ Ð²Ð¸Ð´Ð° Ð§Ð¸ÑÐ»Ð¾* Ð´Ð»Ñ Ð¾Ñ‚ÑÐ»ÐµÐ¶Ð¸Ð²Ð°Ð½Ð¸Ñ Ð¿ÑƒÑ‚Ð¸ Ð¸ÑÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ.
 
 //21*
-//Â ñëó÷àå AJAX çàïðîñà ïîïàäåì ñþäà
+//Ð’ ÑÐ»ÑƒÑ‡Ð°Ðµ AJAX Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° Ð¿Ð¾Ð¿Ð°Ð´ÐµÐ¼ ÑÑŽÐ´Ð°
 if(!defined("B_PROLOG_INCLUDED") && isset($_REQUEST["AJAX_CALL"]) && $_REQUEST["AJAX_CALL"]=="Y")
 {
 	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 	//22*
-	//Ïðîâåðÿì: êëþ÷ ïîäîøåë?
+	//ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐ¼: ÐºÐ»ÑŽÑ‡ Ð¿Ð¾Ð´Ð¾ÑˆÐµÐ»?
 	if(CModule::IncludeModule("iblock"))
 	{
 		$arCache = CIBlockRSS::GetCache($_REQUEST["SESSION_PARAMS"]);
 		if($arCache && ($arCache["VALID"] == "Y"))
 		{
 			//23*
-			//Äà!
-			//Çàáèðàåì ïàðàìåòðû "ïîäêëþ÷åíèÿ"
+			//Ð”Ð°!
+			//Ð—Ð°Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ "Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ"
 			$arParams = unserialize($arCache["CACHE"]);
 			//18*
-			//Äîáèâàåì òåìè, êîòîðûå äîñòóïíû "ñíàðóæè"
+			//Ð”Ð¾Ð±Ð¸Ð²Ð°ÐµÐ¼ Ñ‚ÐµÐ¼Ð¸, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ "ÑÐ½Ð°Ñ€ÑƒÐ¶Ð¸"
 			foreach($arParams["PAGE_PARAMS"] as $param_name)
 			{
 				if(!array_key_exists($param_name, $arParams))
 					$arParams[$param_name] = $_REQUEST["PAGE_PARAMS"][$param_name];
 			}
 			//24*
-			//Ýòà ìàãèÿ ïîçâîëÿåò íàì ïðàâèëüíî îïðåäåëèòü
-			//òåêóùèé øàáëîí êîìïîíåíòà (ñ ó÷åòîì òåìû)
+			//Ð­Ñ‚Ð° Ð¼Ð°Ð³Ð¸Ñ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð½Ð°Ð¼ Ð¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÑŒ
+			//Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ ÑˆÐ°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° (Ñ ÑƒÑ‡ÐµÑ‚Ð¾Ð¼ Ñ‚ÐµÐ¼Ñ‹)
 			if(array_key_exists("PARENT_NAME", $arParams))
 			{
 				$component = new CBitrixComponent();
@@ -38,8 +38,8 @@ if(!defined("B_PROLOG_INCLUDED") && isset($_REQUEST["AJAX_CALL"]) && $_REQUEST["
 				$component = null;
 			}
 			//25*
-			//Ïîäêëþ÷àåì êîìïîíåíò
-			//Ðåçóëüòàò åãî ðàáîòû (div) çàìåíèò òîò, ÷òî ñåé÷àñ ó êëèåíòà â áðàóçåðå
+			//ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚
+			//Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÐµÐ³Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ (div) Ð·Ð°Ð¼ÐµÐ½Ð¸Ñ‚ Ñ‚Ð¾Ñ‚, Ñ‡Ñ‚Ð¾ ÑÐµÐ¹Ñ‡Ð°Ñ Ñƒ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð° Ð² Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ðµ
 			$APPLICATION->IncludeComponent($arParams["COMPONENT_NAME"], $arParams["TEMPLATE_NAME"], $arParams, $component);
 		}
 	}
@@ -72,7 +72,7 @@ $arParams = array(
 	Any actions without cache
 *****************************************/
 //26*
-//Ñþäà äîøåë â òîì ÷èñëå è AJAX çàïðîñ
+//Ð¡ÑŽÐ´Ð° Ð´Ð¾ÑˆÐµÐ» Ð² Ñ‚Ð¾Ð¼ Ñ‡Ð¸ÑÐ»Ðµ Ð¸ AJAX Ð·Ð°Ð¿Ñ€Ð¾Ñ
 if(
 	$_SERVER["REQUEST_METHOD"] == "POST"
 	&& !empty($_REQUEST["vote"])
@@ -172,14 +172,14 @@ if(
 		}
 	}
 	//27*
-	//Íàì íåò íåîáõîäèìîñòè äåëàòü ðåäèðåêò äëÿ îáíîâëåíèÿ äàííûõ
-	//â àÿêñ ðåæèìå
-	//äà è íå ïðèâåäåò ýòî íè ê ÷åìó
+	//ÐÐ°Ð¼ Ð½ÐµÑ‚ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ÑÑ‚Ð¸ Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ð´Ð»Ñ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð´Ð°Ð½Ð½Ñ‹Ñ…
+	//Ð² Ð°ÑÐºÑ Ñ€ÐµÐ¶Ð¸Ð¼Ðµ
+	//Ð´Ð° Ð¸ Ð½Ðµ Ð¿Ñ€Ð¸Ð²ÐµÐ´ÐµÑ‚ ÑÑ‚Ð¾ Ð½Ð¸ Ðº Ñ‡ÐµÐ¼Ñƒ
 	if($_REQUEST["AJAX_CALL"]!="Y")
 		LocalRedirect(!empty($_REQUEST["back_page"])?$_REQUEST["back_page"]:$APPLICATION->GetCurPageParam());
 }
 //28*
-//Íà÷èíàåì èñïîëíÿòü "øàáëîí"
+//ÐÐ°Ñ‡Ð¸Ð½Ð°ÐµÐ¼ Ð¸ÑÐ¿Ð¾Ð»Ð½ÑÑ‚ÑŒ "ÑˆÐ°Ð±Ð»Ð¾Ð½"
 
 $bVoted = (is_array($_SESSION["IBLOCK_RATING"]) && array_key_exists($arParams["ELEMENT_ID"], $_SESSION["IBLOCK_RATING"]))? 1: 0;
 if($this->StartResultCache(false, array($USER->GetGroups(), $bVoted)))
@@ -243,7 +243,7 @@ if($this->StartResultCache(false, array($USER->GetGroups(), $bVoted)))
 if(array_key_exists("AJAX", $arResult) && ($_REQUEST["AJAX_CALL"] != "Y"))
 {
 	//13*
-	//Ñîõðàíÿåì â ÁÄ êåø
+	//Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼ Ð² Ð‘Ð” ÐºÐµÑˆ
 	if(!is_array($_SESSION["libereya.vote"]))
 		$_SESSION["libereya.vote"] = array();
 	if(!array_key_exists($arResult["AJAX"]["SESSION_KEY"], $_SESSION["libereya.vote"]))
@@ -259,10 +259,10 @@ if(array_key_exists("AJAX", $arResult) && ($_REQUEST["AJAX_CALL"] != "Y"))
 	if(!defined("ADMIN_SECTION") || (ADMIN_SECTION !== true))
 	{
 		//14*
-		//Ïîäêëþ÷àåì ïîääåðæêó (áèáëèîòåêó)
+		//ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÑƒ (Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ)
 		IncludeAJAX();
 	}
 	//15*
-	//Ïðîäîëæåíèå ýêñêóðñèè â ôàéëå jscript.php
+	//ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ðµ ÑÐºÑÐºÑƒÑ€ÑÐ¸Ð¸ Ð² Ñ„Ð°Ð¹Ð»Ðµ jscript.php
 }
 ?>

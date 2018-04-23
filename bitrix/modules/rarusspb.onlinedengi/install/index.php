@@ -1,8 +1,8 @@
 <?
 /**
  *
- * Модуль платежного сервиса OnlineDengi для CMS 1С Битрикс.
- * @copyright Сервис OnlineDengi http://www.onlinedengi.ru/ (ООО "КомФинЦентр"), 2010
+ * РњРѕРґСѓР»СЊ РїР»Р°С‚РµР¶РЅРѕРіРѕ СЃРµСЂРІРёСЃР° OnlineDengi РґР»СЏ CMS 1РЎ Р‘РёС‚СЂРёРєСЃ.
+ * @copyright РЎРµСЂРІРёСЃ OnlineDengi http://www.onlinedengi.ru/ (РћРћРћ "РљРѕРјР¤РёРЅР¦РµРЅС‚СЂ"), 2010
  *
  */
 
@@ -34,10 +34,10 @@ Class rarusspb_onlinedengi extends CModule {
                 $this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
                 $this->MODULE_NAME = GetMessage('MODULE_NAME');
                 $this->MODULE_DESCRIPTION = GetMessage('MODULE_DESCRIPTION');
-				$this->PARTNER_NAME = "Деньги Онлайн";
+				$this->PARTNER_NAME = "Р”РµРЅСЊРіРё РћРЅР»Р°Р№РЅ";
 				$this->PARTNER_URI = "http://www.onlinedengi.ru/";
 				$sPath2UserPSFiles = COption::GetOptionString('sale', 'path2user_ps_files', BX_PERSONAL_ROOT.'/php_interface/include/sale_payment/');
-				$sPath2UserPSFiles = '/'.trim(trim($sPath2UserPSFiles), '/'); // слэш в конце не нужен
+				$sPath2UserPSFiles = '/'.trim(trim($sPath2UserPSFiles), '/'); // СЃР»СЌС€ РІ РєРѕРЅС†Рµ РЅРµ РЅСѓР¶РµРЅ
 				$this->sPath2UserPSFiles = str_replace('//', '/', $sPath2UserPSFiles);
         }
 
@@ -89,7 +89,7 @@ Class rarusspb_onlinedengi extends CModule {
 					'savedata' => $_REQUEST['savedata']
 				)
 			);
-	                // удаляем файлы
+	                // СѓРґР°Р»СЏРµРј С„Р°Р№Р»С‹
 			rarusspb_onlinedengi::UnInstallFiles(
 				array(
 					'savefiles' => $_REQUEST['savefiles']
@@ -141,7 +141,7 @@ Class rarusspb_onlinedengi extends CModule {
 	}
 
 	function InstallFiles() {
-		// обработчик платежной системы
+		// РѕР±СЂР°Р±РѕС‚С‡РёРє РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹
 		$bRewriteFiles = isset($_REQUEST['rewrite_files']) && $_REQUEST['rewrite_files'] == 'Y';
 		$bSuccess = CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.ONLINEDENGI_PAYMENT_MODULE_ID.'/install/sale_payment/', $_SERVER['DOCUMENT_ROOT'].$this->sPath2UserPSFiles, $bRewriteFiles, true);
 		if($bSuccess === false) {
@@ -173,32 +173,32 @@ Class rarusspb_onlinedengi extends CModule {
 		// components
 		DeleteDirFilesEx(BX_PERSONAL_ROOT.'/components/onlinedengi_payment');
 
-		// обработчики
+		// РѕР±СЂР°Р±РѕС‚С‡РёРєРё
 		if(!array_key_exists('savefiles', $arParams) || ($arParams['savefiles'] != 'Y')) {
 			DeleteDirFilesEx($this->sPath2UserPSFiles.'/onlinedengi_payment');
 		}
 	}
 
 	function InstallDefaultOptions() {
-                // запишем опции по умолчанию (используются триггеры)
+                // Р·Р°РїРёС€РµРј РѕРїС†РёРё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ (РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ С‚СЂРёРіРіРµСЂС‹)
 		if(CModule::IncludeModule('rarusspb.onlinedengi')) {
 		}
 	}
 	
         function UnInstallOptions() {
-                // удалим опции модуля (чтобы сработали триггеры и удалили все связи)
+                // СѓРґР°Р»РёРј РѕРїС†РёРё РјРѕРґСѓР»СЏ (С‡С‚РѕР±С‹ СЃСЂР°Р±РѕС‚Р°Р»Рё С‚СЂРёРіРіРµСЂС‹ Рё СѓРґР°Р»РёР»Рё РІСЃРµ СЃРІСЏР·Рё)
         }
 
         function UnInstallTriggerModuleDependences() {
         }
         
         function InstallModuleDependences() {
-		// автоподключение модуля
+		// Р°РІС‚РѕРїРѕРґРєР»СЋС‡РµРЅРёРµ РјРѕРґСѓР»СЏ
 		// RegisterModuleDependences('main', 'OnBeforeProlog', 'rarusspb_onlinedengi', '', '', 10);
         }
 
         function UnInstallModuleDependences() {
-		// автоподключение модуля
+		// Р°РІС‚РѕРїРѕРґРєР»СЋС‡РµРЅРёРµ РјРѕРґСѓР»СЏ
 		// UnRegisterModuleDependences('main', 'OnBeforeProlog', 'rarusspb_onlinedengi', '', '');
         }
 }

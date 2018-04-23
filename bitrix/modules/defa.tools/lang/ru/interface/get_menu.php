@@ -1,18 +1,18 @@
 <?
-$MESS["DEFATOOLS_IB_DEMO_IB_TOOLS"] = "Инструменты";
-$MESS["DEFATOOLS_IB_DEMO_COPYIB_CONTENT"] = "Копировать содержимое";
-$MESS["DEFATOOLS_IB_DEMO_COPYIB"] = "Копировать инфоблок";
-$MESS["DEFATOOLS_IB_DEMO_COPYIB_TO_TYPE"] = "Копировать инфоблок в тип";
-$MESS["DEFATOOLS_IB_DEMO_CHOOSE_COPY_PARAM"] = "Выбор параметров копирования инфоблока";
-$MESS["DEFATOOLS_IB_DEMO_ADD_ELS"] = "Добавить элементы";
-$MESS["DEFATOOLS_IB_DEMO_CREATE_ACT_NONACT"] = "Создавать активные и <br>неактивные элементы";
-$MESS['DEFATOOLS_IB_DEMO_CREATE_ACT_NONACT_SECT'] = "Создавать активные и <br>неактивные элементы/разделы";
-$MESS["DEFATOOLS_IB_DEMO_ADD_SECTS"] = "Добавить разделы";
-$MESS["DEFATOOLS_IB_DEMO_SECTS_MAX_DEPTH"] = "Максимальный уровень <br>вложенности подразделов";
-$MESS["DEFATOOLS_IB_DEMO_ADD_ELS_IN_LAST_SEC"] = "Добавлять элементы только в <br>конечные подразделы";
-$MESS["DEFATOOLS_IB_DEMO_FILL_IBLOCK"] = "Наполнить инфоблок демо данными";
-$MESS["DEFATOOLS_IB_DEMO_CHOOSE_FILL_PARAM"] = "Выбор параметров наполнения инфоблока";
-$MESS["DEFATOOLS_IB_DEMO_DEL_DATA"] = "Удалить демо данные";
-$MESS["DEFATOOLS_IB_DEMO_CONFIRM_DEL_DATA"] = "Вы уверены что хотите БЕЗВОЗВРАТНО удалить все демо данные из этого инфоблока?";
-$MESS["DEFATOOLS_IB_DEMO_COPY_SECTION_TO_THE_NEW_IB"] = "скопировать раздел в новый инфоблок";
+$MESS["DEFATOOLS_IB_DEMO_IB_TOOLS"] = "РРЅСЃС‚СЂСѓРјРµРЅС‚С‹";
+$MESS["DEFATOOLS_IB_DEMO_COPYIB_CONTENT"] = "РљРѕРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ";
+$MESS["DEFATOOLS_IB_DEMO_COPYIB"] = "РљРѕРїРёСЂРѕРІР°С‚СЊ РёРЅС„РѕР±Р»РѕРє";
+$MESS["DEFATOOLS_IB_DEMO_COPYIB_TO_TYPE"] = "РљРѕРїРёСЂРѕРІР°С‚СЊ РёРЅС„РѕР±Р»РѕРє РІ С‚РёРї";
+$MESS["DEFATOOLS_IB_DEMO_CHOOSE_COPY_PARAM"] = "Р’С‹Р±РѕСЂ РїР°СЂР°РјРµС‚СЂРѕРІ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РёРЅС„РѕР±Р»РѕРєР°";
+$MESS["DEFATOOLS_IB_DEMO_ADD_ELS"] = "Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚С‹";
+$MESS["DEFATOOLS_IB_DEMO_CREATE_ACT_NONACT"] = "РЎРѕР·РґР°РІР°С‚СЊ Р°РєС‚РёРІРЅС‹Рµ Рё <br>РЅРµР°РєС‚РёРІРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹";
+$MESS['DEFATOOLS_IB_DEMO_CREATE_ACT_NONACT_SECT'] = "РЎРѕР·РґР°РІР°С‚СЊ Р°РєС‚РёРІРЅС‹Рµ Рё <br>РЅРµР°РєС‚РёРІРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹/СЂР°Р·РґРµР»С‹";
+$MESS["DEFATOOLS_IB_DEMO_ADD_SECTS"] = "Р”РѕР±Р°РІРёС‚СЊ СЂР°Р·РґРµР»С‹";
+$MESS["DEFATOOLS_IB_DEMO_SECTS_MAX_DEPTH"] = "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СѓСЂРѕРІРµРЅСЊ <br>РІР»РѕР¶РµРЅРЅРѕСЃС‚Рё РїРѕРґСЂР°Р·РґРµР»РѕРІ";
+$MESS["DEFATOOLS_IB_DEMO_ADD_ELS_IN_LAST_SEC"] = "Р”РѕР±Р°РІР»СЏС‚СЊ СЌР»РµРјРµРЅС‚С‹ С‚РѕР»СЊРєРѕ РІ <br>РєРѕРЅРµС‡РЅС‹Рµ РїРѕРґСЂР°Р·РґРµР»С‹";
+$MESS["DEFATOOLS_IB_DEMO_FILL_IBLOCK"] = "РќР°РїРѕР»РЅРёС‚СЊ РёРЅС„РѕР±Р»РѕРє РґРµРјРѕ РґР°РЅРЅС‹РјРё";
+$MESS["DEFATOOLS_IB_DEMO_CHOOSE_FILL_PARAM"] = "Р’С‹Р±РѕСЂ РїР°СЂР°РјРµС‚СЂРѕРІ РЅР°РїРѕР»РЅРµРЅРёСЏ РёРЅС„РѕР±Р»РѕРєР°";
+$MESS["DEFATOOLS_IB_DEMO_DEL_DATA"] = "РЈРґР°Р»РёС‚СЊ РґРµРјРѕ РґР°РЅРЅС‹Рµ";
+$MESS["DEFATOOLS_IB_DEMO_CONFIRM_DEL_DATA"] = "Р’С‹ СѓРІРµСЂРµРЅС‹ С‡С‚Рѕ С…РѕС‚РёС‚Рµ Р‘Р•Р—Р’РћР—Р’Р РђРўРќРћ СѓРґР°Р»РёС‚СЊ РІСЃРµ РґРµРјРѕ РґР°РЅРЅС‹Рµ РёР· СЌС‚РѕРіРѕ РёРЅС„РѕР±Р»РѕРєР°?";
+$MESS["DEFATOOLS_IB_DEMO_COPY_SECTION_TO_THE_NEW_IB"] = "СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЂР°Р·РґРµР» РІ РЅРѕРІС‹Р№ РёРЅС„РѕР±Р»РѕРє";
 

@@ -1,6 +1,6 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_MONETA_TITLE'] 	= 'Монета.ру';
+$MESS['PAYANYWAY_MONETA_TITLE'] 	= 'РњРѕРЅРµС‚Р°.СЂСѓ';
 
 ?>

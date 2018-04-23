@@ -2,24 +2,24 @@
 
 // encoding: WINDOWS-1251
 
-$checkStatus = ' <a href="http://triggmine.cloudapp.net/" target="_blank">Проверьте статус вашей интеграции</a> либо обратитесь в <a href="http://triggmine.cloudapp.net/Support" target="_blank">техподдержку</a>';
-$contactSupport = ' Обратитесь в <a href="http://triggmine.cloudapp.net/Support" target="_blank">техподдержку</a> TriggMine.';
-$getApiUrl = ' Правильный API URL вы можете узнать в <a href="http://triggmine.cloudapp.net/Integration" target="_blank">настройках интеграции TriggMine</a>';
-$getApiKey = ' Ваш ключ вы можете узнать в <a href="http://triggmine.cloudapp.net/Integration" target="_blank">настройках интеграции TriggMine</a>';
+$checkStatus = ' <a href="http://triggmine.cloudapp.net/" target="_blank">РџСЂРѕРІРµСЂСЊС‚Рµ СЃС‚Р°С‚СѓСЃ РІР°С€РµР№ РёРЅС‚РµРіСЂР°С†РёРё</a> Р»РёР±Рѕ РѕР±СЂР°С‚РёС‚РµСЃСЊ РІ <a href="http://triggmine.cloudapp.net/Support" target="_blank">С‚РµС…РїРѕРґРґРµСЂР¶РєСѓ</a>';
+$contactSupport = ' РћР±СЂР°С‚РёС‚РµСЃСЊ РІ <a href="http://triggmine.cloudapp.net/Support" target="_blank">С‚РµС…РїРѕРґРґРµСЂР¶РєСѓ</a> TriggMine.';
+$getApiUrl = ' РџСЂР°РІРёР»СЊРЅС‹Р№ API URL РІС‹ РјРѕР¶РµС‚Рµ СѓР·РЅР°С‚СЊ РІ <a href="http://triggmine.cloudapp.net/Integration" target="_blank">РЅР°СЃС‚СЂРѕР№РєР°С… РёРЅС‚РµРіСЂР°С†РёРё TriggMine</a>';
+$getApiKey = ' Р’Р°С€ РєР»СЋС‡ РІС‹ РјРѕР¶РµС‚Рµ СѓР·РЅР°С‚СЊ РІ <a href="http://triggmine.cloudapp.net/Integration" target="_blank">РЅР°СЃС‚СЂРѕР№РєР°С… РёРЅС‚РµРіСЂР°С†РёРё TriggMine</a>';
 
-$MESS['failed_to_activate'] = 'Не удалось активировать модуль.' . $checkStatus;
-$MESS['failed_to_deactivate'] = 'Не удалось деактивировать модуль.' . $checkStatus;
-$MESS['low_version'] = 'TriggMine не совместим с Bitrix версии ниже %1';
-$MESS['missing_module'] = 'Необходимый модуль Bitrix %1 не установлен';
-$MESS['missing_function'] = 'Необходимая Bitrix функция %1 недоступна';
-$MESS['no_transport'] = 'Опция \'allow_url_fopen\' выключена в вашем php.ini и расширение cURL не установлено!' . $contactSupport;
-$MESS['empty_api_url'] = 'Укажите, пожалуйста, API URL. API URL не может быть пустым.' . $getApiUrl;
-$MESS['invalid_api_url'] = '%1 не является корректным API URL.' . $getApiUrl;
-$MESS['empty_api_key'] = 'API ключ не может быть пустым. Укажите API ключ для работы модуля.' . $getApiKey;
-$MESS['no_access_to_api'] = 'Нет доступа к API URL (%1). Проверьте правильность API URL.' . $getApiUrl;
-$MESS['invalid_response_from_api'] = 'Нет доступа к API URL %1.' . $contactSupport;
-$MESS['invalid_token'] = 'Указанный API ключ не корректен.' . $getApiKey;
-$MESS['api_returns_error'] = 'TriggMine API возвращает ошибку %1.' . $contactSupport;
-$MESS['plugin_cannot_be_active'] = 'Модуль не может быть активирован';
-$MESS['plugin_can_be_active'] = 'Модуль выключен. Включите модуль, для того чтобы он начал работу.';
-$MESS['wrong_cart_url'] = 'Путь к корзине не является корректным URL';
+$MESS['failed_to_activate'] = 'РќРµ СѓРґР°Р»РѕСЃСЊ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РјРѕРґСѓР»СЊ.' . $checkStatus;
+$MESS['failed_to_deactivate'] = 'РќРµ СѓРґР°Р»РѕСЃСЊ РґРµР°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РјРѕРґСѓР»СЊ.' . $checkStatus;
+$MESS['low_version'] = 'TriggMine РЅРµ СЃРѕРІРјРµСЃС‚РёРј СЃ Bitrix РІРµСЂСЃРёРё РЅРёР¶Рµ %1';
+$MESS['missing_module'] = 'РќРµРѕР±С…РѕРґРёРјС‹Р№ РјРѕРґСѓР»СЊ Bitrix %1 РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ';
+$MESS['missing_function'] = 'РќРµРѕР±С…РѕРґРёРјР°СЏ Bitrix С„СѓРЅРєС†РёСЏ %1 РЅРµРґРѕСЃС‚СѓРїРЅР°';
+$MESS['no_transport'] = 'РћРїС†РёСЏ \'allow_url_fopen\' РІС‹РєР»СЋС‡РµРЅР° РІ РІР°С€РµРј php.ini Рё СЂР°СЃС€РёСЂРµРЅРёРµ cURL РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅРѕ!' . $contactSupport;
+$MESS['empty_api_url'] = 'РЈРєР°Р¶РёС‚Рµ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, API URL. API URL РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј.' . $getApiUrl;
+$MESS['invalid_api_url'] = '%1 РЅРµ СЏРІР»СЏРµС‚СЃСЏ РєРѕСЂСЂРµРєС‚РЅС‹Рј API URL.' . $getApiUrl;
+$MESS['empty_api_key'] = 'API РєР»СЋС‡ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј. РЈРєР°Р¶РёС‚Рµ API РєР»СЋС‡ РґР»СЏ СЂР°Р±РѕС‚С‹ РјРѕРґСѓР»СЏ.' . $getApiKey;
+$MESS['no_access_to_api'] = 'РќРµС‚ РґРѕСЃС‚СѓРїР° Рє API URL (%1). РџСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ API URL.' . $getApiUrl;
+$MESS['invalid_response_from_api'] = 'РќРµС‚ РґРѕСЃС‚СѓРїР° Рє API URL %1.' . $contactSupport;
+$MESS['invalid_token'] = 'РЈРєР°Р·Р°РЅРЅС‹Р№ API РєР»СЋС‡ РЅРµ РєРѕСЂСЂРµРєС‚РµРЅ.' . $getApiKey;
+$MESS['api_returns_error'] = 'TriggMine API РІРѕР·РІСЂР°С‰Р°РµС‚ РѕС€РёР±РєСѓ %1.' . $contactSupport;
+$MESS['plugin_cannot_be_active'] = 'РњРѕРґСѓР»СЊ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р°РєС‚РёРІРёСЂРѕРІР°РЅ';
+$MESS['plugin_can_be_active'] = 'РњРѕРґСѓР»СЊ РІС‹РєР»СЋС‡РµРЅ. Р’РєР»СЋС‡РёС‚Рµ РјРѕРґСѓР»СЊ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РѕРЅ РЅР°С‡Р°Р» СЂР°Р±РѕС‚Сѓ.';
+$MESS['wrong_cart_url'] = 'РџСѓС‚СЊ Рє РєРѕСЂР·РёРЅРµ РЅРµ СЏРІР»СЏРµС‚СЃСЏ РєРѕСЂСЂРµРєС‚РЅС‹Рј URL';

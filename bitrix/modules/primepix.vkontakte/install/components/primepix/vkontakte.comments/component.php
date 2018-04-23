@@ -5,12 +5,12 @@ $arResult = array();
  
 if ($this->StartResultCache())
 {
-    // óñòàíîâêà îáÿçàòåëüíûõ ïàðàìåòðîâ
+    // ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
     $arParams["ID_APLICATION"] = ($arParams["ID_APLICATION"]) ? $arParams["ID_APLICATION"] : "";
     $arParams["WIDTH_FORM"] = ($arParams["WIDTH_FORM"]) ? $arParams["WIDTH_FORM"] : "496";
     $arParams["NUM_COMMENTS"] = ($arParams["NUM_COMMENTS"]) ? $arParams["NUM_COMMENTS"] : "10";
     
-    // îáðàáîòêà ïàðàìåòðîâ
+    // Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
     if ($arParams['MEDIA_GRAFFITI'] == "Y") $attach = "graffiti";
     if ($arParams['MEDIA_PHOTOS'] == "Y") $attach .= ",photo";
     if ($arParams['MEDIA_VIDEO'] == "Y") $attach .= ",video";
@@ -29,7 +29,7 @@ if ($this->StartResultCache())
         $arParams['WIDTH_FORM'],
         $attach);
 
-    // îáðàáîòêà ðåçóëüòàòà
+    // Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°
     $aplication = ($arParams['ID_APLICATION'])? 
         $arParams['ID_APLICATION']:
         COption::GetOptionString("socialservices", "vkontakte_appid", NULL);
@@ -44,7 +44,7 @@ if ($this->StartResultCache())
     $arResult['MEDIA']['REF'] = $arParams['MEDIA_REF'];
     $arResult['OPTIONS'] = $options;
     
-    // ïîäêëþ÷åíèå ñêðèïòîâ
+    // Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð²
     if ($GLOBALS['VK_INIT'] != $aplication){
         if ( ! $GLOBALS['VK_API'])
             $APPLICATION->AddHeadString('<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?45"></script>');

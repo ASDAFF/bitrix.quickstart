@@ -1,6 +1,6 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_YANDEX_TITLE'] = 'ίνδεκρ.Δενόγθ';
+$MESS['PAYANYWAY_YANDEX_TITLE'] = 'Π―Π½Π΄ΠµΠΊΡ.Π”ΠµΠ½ΡΠ³ΠΈ';
 
 ?>

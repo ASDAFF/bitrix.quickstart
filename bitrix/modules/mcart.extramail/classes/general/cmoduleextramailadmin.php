@@ -1,5 +1,5 @@
 <?
-// îïèñûâàåì àä
+// Ð¾Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ð°Ð´
 class CModuleOutSMTP {
 
 	// OnAdminTabControlBegin handler

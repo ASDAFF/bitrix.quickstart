@@ -2,48 +2,48 @@
 global $MESS;
 
 $MESS['PAYANYWAY_TITLE']			= 'PayAnyWay.ru';
-$MESS['PAYANYWAY_DESC']				= '<br>Оплата через платёжную систему <a href="http://payanyway.ru">PayAnyWay.ru</a>.<br>Для получения результата оплаты необходимо создать специальную страницу и разместить на ней компонент bitrix:sale.order.payment.receive с соответствующими параметрами.<br/>Указажите этот адрес в настройках Вашего счёта в системе PayAnyWay.ru («Pay URL»).';
-$MESS['PAYANYWAY_SERVER']			= 'URL платежной системы<br/><small>demo.moneta.ru - для демо-аккаунта<br>www.payanyway.ru - для реального аккаунта в PayAnyWay</small>';
-$MESS['PAYANYWAY_ID']				= 'Номер счета<br/><small>номер расширенного счета в платежной системе PayAnyWay (Moneta.ru)</small>';
-$MESS['PAYANYWAY_AMOUNT']			= 'Сумма заказа';
-$MESS['DATA_INTEGRITY_CODE']		= 'Код проверки целостности данных<br/><small>указан в настройках расширенного счета</small>';
-$MESS['PAYANYWAY_TEST_MODE']		= 'Тестовый режим<br/><small>переход в режим тестирования, деньги не списываются со счета</small>';
-$MESS['PAYANYWAY_TEST_MODE_TRUE']	= 'Да';
-$MESS['PAYANYWAY_TEST_MODE_FALSE']	= 'Нет';
-$MESS['PAYANYWAY_LOGIN']			= 'Логин в PayAnyWay';
-$MESS['PAYANYWAY_PASSWORD']			= 'Пароль PayAnyWay';
+$MESS['PAYANYWAY_DESC']				= '<br>РћРїР»Р°С‚Р° С‡РµСЂРµР· РїР»Р°С‚С‘Р¶РЅСѓСЋ СЃРёСЃС‚РµРјСѓ <a href="http://payanyway.ru">PayAnyWay.ru</a>.<br>Р”Р»СЏ РїРѕР»СѓС‡РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р° РѕРїР»Р°С‚С‹ РЅРµРѕР±С…РѕРґРёРјРѕ СЃРѕР·РґР°С‚СЊ СЃРїРµС†РёР°Р»СЊРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ Рё СЂР°Р·РјРµСЃС‚РёС‚СЊ РЅР° РЅРµР№ РєРѕРјРїРѕРЅРµРЅС‚ bitrix:sale.order.payment.receive СЃ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРјРё РїР°СЂР°РјРµС‚СЂР°РјРё.<br/>РЈРєР°Р·Р°Р¶РёС‚Рµ СЌС‚РѕС‚ Р°РґСЂРµСЃ РІ РЅР°СЃС‚СЂРѕР№РєР°С… Р’Р°С€РµРіРѕ СЃС‡С‘С‚Р° РІ СЃРёСЃС‚РµРјРµ PayAnyWay.ru (В«Pay URLВ»).';
+$MESS['PAYANYWAY_SERVER']			= 'URL РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹<br/><small>demo.moneta.ru - РґР»СЏ РґРµРјРѕ-Р°РєРєР°СѓРЅС‚Р°<br>www.payanyway.ru - РґР»СЏ СЂРµР°Р»СЊРЅРѕРіРѕ Р°РєРєР°СѓРЅС‚Р° РІ PayAnyWay</small>';
+$MESS['PAYANYWAY_ID']				= 'РќРѕРјРµСЂ СЃС‡РµС‚Р°<br/><small>РЅРѕРјРµСЂ СЂР°СЃС€РёСЂРµРЅРЅРѕРіРѕ СЃС‡РµС‚Р° РІ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјРµ PayAnyWay (Moneta.ru)</small>';
+$MESS['PAYANYWAY_AMOUNT']			= 'РЎСѓРјРјР° Р·Р°РєР°Р·Р°';
+$MESS['DATA_INTEGRITY_CODE']		= 'РљРѕРґ РїСЂРѕРІРµСЂРєРё С†РµР»РѕСЃС‚РЅРѕСЃС‚Рё РґР°РЅРЅС‹С…<br/><small>СѓРєР°Р·Р°РЅ РІ РЅР°СЃС‚СЂРѕР№РєР°С… СЂР°СЃС€РёСЂРµРЅРЅРѕРіРѕ СЃС‡РµС‚Р°</small>';
+$MESS['PAYANYWAY_TEST_MODE']		= 'РўРµСЃС‚РѕРІС‹Р№ СЂРµР¶РёРј<br/><small>РїРµСЂРµС…РѕРґ РІ СЂРµР¶РёРј С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ, РґРµРЅСЊРіРё РЅРµ СЃРїРёСЃС‹РІР°СЋС‚СЃСЏ СЃРѕ СЃС‡РµС‚Р°</small>';
+$MESS['PAYANYWAY_TEST_MODE_TRUE']	= 'Р”Р°';
+$MESS['PAYANYWAY_TEST_MODE_FALSE']	= 'РќРµС‚';
+$MESS['PAYANYWAY_LOGIN']			= 'Р›РѕРіРёРЅ РІ PayAnyWay';
+$MESS['PAYANYWAY_PASSWORD']			= 'РџР°СЂРѕР»СЊ PayAnyWay';
 $MESS['PAYANYWAY_PAY_URL']			= 'Pay URL';
-$MESS['PAYANYWAY_PAY_URL_DESC']		= 'URL страницы подтверждения оплаты';
-$MESS["PAYANYWAY_CHANGE_ORDER_STATUS"]		= "Автоматически менять статус заказа на 'Оплачен' при подтверждении оплаты.";
-$MESS["PAYANYWAY_CHANGE_ORDER_STATUS_DESC"] = "Y - менять, N - не менять.";
+$MESS['PAYANYWAY_PAY_URL_DESC']		= 'URL СЃС‚СЂР°РЅРёС†С‹ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РѕРїР»Р°С‚С‹';
+$MESS["PAYANYWAY_CHANGE_ORDER_STATUS"]		= "РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРё РјРµРЅСЏС‚СЊ СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р° РЅР° 'РћРїР»Р°С‡РµРЅ' РїСЂРё РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРё РѕРїР»Р°С‚С‹.";
+$MESS["PAYANYWAY_CHANGE_ORDER_STATUS_DESC"] = "Y - РјРµРЅСЏС‚СЊ, N - РЅРµ РјРµРЅСЏС‚СЊ.";
 
-$MESS['PAYMENT_PAYANYWAY_TITLE']	= 'Оплата через платёжную систему <b>PayAnyWay.ru</b>';
-$MESS['PAYMENT_PAYANYWAY_ORDER']	= 'Заказ №';
-$MESS['PAYMENT_PAYANYWAY_TO_PAY']	= 'Сумма к оплате:';
-$MESS['PAYMENT_PAYANYWAY_BUTTON']	= 'Оплатить';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK']	= 'Продолжить';
-$MESS['PAYANYWAY_PAYMENT_CONFIRMED'] = 'Уведомление получено';
+$MESS['PAYMENT_PAYANYWAY_TITLE']	= 'РћРїР»Р°С‚Р° С‡РµСЂРµР· РїР»Р°С‚С‘Р¶РЅСѓСЋ СЃРёСЃС‚РµРјСѓ <b>PayAnyWay.ru</b>';
+$MESS['PAYMENT_PAYANYWAY_ORDER']	= 'Р—Р°РєР°Р· в„–';
+$MESS['PAYMENT_PAYANYWAY_TO_PAY']	= 'РЎСѓРјРјР° Рє РѕРїР»Р°С‚Рµ:';
+$MESS['PAYMENT_PAYANYWAY_BUTTON']	= 'РћРїР»Р°С‚РёС‚СЊ';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK']	= 'РџСЂРѕРґРѕР»Р¶РёС‚СЊ';
+$MESS['PAYANYWAY_PAYMENT_CONFIRMED'] = 'РЈРІРµРґРѕРјР»РµРЅРёРµ РїРѕР»СѓС‡РµРЅРѕ';
 
 
-//$MESS['PAYANYWAY_PAYMENT_TYPE'] = 'Способ оплаты';
-//$MESS['PAYANYWAY_DEPENDENCIES_ERROR'] = '<br/><small>Для использования всех функций модуля необходимо установить расширения SOAP и libxml</small>';
-//$MESS['PAYANYWAY_BANKTRANSFER'] = 'Банковский перевод';
+//$MESS['PAYANYWAY_PAYMENT_TYPE'] = 'РЎРїРѕСЃРѕР± РѕРїР»Р°С‚С‹';
+//$MESS['PAYANYWAY_DEPENDENCIES_ERROR'] = '<br/><small>Р”Р»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІСЃРµС… С„СѓРЅРєС†РёР№ РјРѕРґСѓР»СЏ РЅРµРѕР±С…РѕРґРёРјРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ СЂР°СЃС€РёСЂРµРЅРёСЏ SOAP Рё libxml</small>';
+//$MESS['PAYANYWAY_BANKTRANSFER'] = 'Р‘Р°РЅРєРѕРІСЃРєРёР№ РїРµСЂРµРІРѕРґ';
 //$MESS['PAYANYWAY_CIBERPAY'] = 'Ciberpay';
 //$MESS['PAYANYWAY_COMEPAY'] = 'Comepay';
 //$MESS['PAYANYWAY_CONTACT'] = 'Contact';
-//$MESS['PAYANYWAY_ELECSNET'] = 'Элекснет';
-//$MESS['PAYANYWAY_EUROSET'] = 'Евросеть, Связной';
-//$MESS['PAYANYWAY_FORWARD'] = 'Форвард Мобайл';
-//$MESS['PAYANYWAY_GOROD'] = 'Федеральная Система ГОРОД';
-//$MESS['PAYANYWAY_MCB'] = 'Московский Кредитный Банк';
-//$MESS['PAYANYWAY_MONETA'] = 'Монета.ру';
+//$MESS['PAYANYWAY_ELECSNET'] = 'Р­Р»РµРєСЃРЅРµС‚';
+//$MESS['PAYANYWAY_EUROSET'] = 'Р•РІСЂРѕСЃРµС‚СЊ, РЎРІСЏР·РЅРѕР№';
+//$MESS['PAYANYWAY_FORWARD'] = 'Р¤РѕСЂРІР°СЂРґ РњРѕР±Р°Р№Р»';
+//$MESS['PAYANYWAY_GOROD'] = 'Р¤РµРґРµСЂР°Р»СЊРЅР°СЏ РЎРёСЃС‚РµРјР° Р“РћР РћР”';
+//$MESS['PAYANYWAY_MCB'] = 'РњРѕСЃРєРѕРІСЃРєРёР№ РљСЂРµРґРёС‚РЅС‹Р№ Р‘Р°РЅРє';
+//$MESS['PAYANYWAY_MONETA'] = 'РњРѕРЅРµС‚Р°.СЂСѓ';
 //$MESS['PAYANYWAY_MONEYMAIL'] = 'MoneyMail';
 //$MESS['PAYANYWAY_NOVOPLAT'] = 'NovoPlat';
 //$MESS['PAYANYWAY_PLASTIC'] = 'VISA, MasterCard';
-//$MESS['PAYANYWAY_PLATIKA'] = 'Платика';
-//$MESS['PAYANYWAY_POST'] = 'Отделения "Почта России"';
+//$MESS['PAYANYWAY_PLATIKA'] = 'РџР»Р°С‚РёРєР°';
+//$MESS['PAYANYWAY_POST'] = 'РћС‚РґРµР»РµРЅРёСЏ "РџРѕС‡С‚Р° Р РѕСЃСЃРёРё"';
 //$MESS['PAYANYWAY_WEBMONEY'] = 'WebMoney';
-//$MESS['PAYANYWAY_YANDEX'] = 'Яндекс.Деньги';
+//$MESS['PAYANYWAY_YANDEX'] = 'РЇРЅРґРµРєСЃ.Р”РµРЅСЊРіРё';
 
 
 ?>

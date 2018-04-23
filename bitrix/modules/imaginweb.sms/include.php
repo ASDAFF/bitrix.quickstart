@@ -42,7 +42,7 @@ Class CImaginwebSms
 		if(strlen($userField)>0 && $userField !='OFF' && isset($arFields['PASSWORD']) && strlen($arFields['PASSWORD']) >0 ) $arFields[$userField] = $arFields['PASSWORD'];
 	}
 	
-	//после добавления заказа
+	//РїРѕСЃР»Рµ РґРѕР±Р°РІР»РµРЅРёСЏ Р·Р°РєР°Р·Р°
 	function OnSaleComponentOrderOneStepCompleteHandler($id,$arFields)
 	{
 		$code = COption::GetOptionString('imaginweb.sms', 'property_phone');
@@ -293,7 +293,7 @@ Class CImaginwebSms
 			$arAddPhone = explode(',',$add_phone); foreach($arAddPhone as $addPhone) { $sms->SendCall(trim($addPhone),$message2); };
 		}
 	}
-	//после оплаты заказа
+	//РїРѕСЃР»Рµ РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р°
 	function OnSalePayOrderHandler($id,$val)
 	{
 		
@@ -426,7 +426,7 @@ Class CImaginwebSms
 		}
 		
 	}
-	//после разрешения на доставку
+	//РїРѕСЃР»Рµ СЂР°Р·СЂРµС€РµРЅРёСЏ РЅР° РґРѕСЃС‚Р°РІРєСѓ
 	function OnSaleDeliveryOrderHandler($id,$val)
 	{
 		
@@ -560,7 +560,7 @@ Class CImaginwebSms
 			$arAddPhone = explode(',',$add_phone); foreach($arAddPhone as $addPhone) { $sms->SendCall(trim($addPhone),$message2); };
 		}
 	}
-	//после отмены заказа
+	//РїРѕСЃР»Рµ РѕС‚РјРµРЅС‹ Р·Р°РєР°Р·Р°
 	function OnSaleCancelOrderHandler($id,$val)
 	{
 		
@@ -690,7 +690,7 @@ Class CImaginwebSms
 		
 	}
 	
-	//после смены статуса заказа
+	//РїРѕСЃР»Рµ СЃРјРµРЅС‹ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°
 	function OnSaleStatusOrderHandler($id,$val)
 	{
 		$code = COption::GetOptionString('imaginweb.sms', 'property_phone');

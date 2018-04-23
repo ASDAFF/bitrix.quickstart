@@ -66,7 +66,7 @@ class CExportVacancies{
 		{if (!(is_dir($DIRNAME)))
 			mkdir($DIRNAME, 0700);
 			}
-		$dom->save($_SERVER['DOCUMENT_ROOT']."/_export/".$file); // ñîõðàíèòü â ôàéë *.xml
+		$dom->save($_SERVER['DOCUMENT_ROOT']."/_export/".$file); // ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð² Ñ„Ð°Ð¹Ð» *.xml
 		if(file_exists($_SERVER['DOCUMENT_ROOT']."/_export/".$file)){
 			$this->msg.='<strong style="color:green">'.GetMessage("VACANCY_EXPORT_SUCCESS").'<br>
 				<a href="/_export/'.$file.'">'.$file.'</a><br></strong>';
@@ -77,20 +77,20 @@ class CExportVacancies{
 	
 	public function createVacancies(&$dom, &$xml_vacancies, $arFields){
 	     	
-		// ñîçäàòü ýëåìåíò vacancy è äîáàâèòü åãî ê vacancies
+		// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ vacancy Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº vacancies
 	    $xml_vacancy=$dom->createElement('vacancy');  $xml_vacancies->appendChild($xml_vacancy);
 	    			    	    
-			// ñîçäàòü ýëåìåíò url è äîáàâèòü åãî ê vacancy
+			// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ url Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº vacancy
 		    $xml_url=$dom->createElement('url');  $xml_vacancy->appendChild($xml_url);
-		    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó url
+		    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ url
 			$str_out = self::_localEncode($arFields['DETAIL_PAGE_URL']);
 			$xml_url->appendChild($dom->createTextNode(htmlspecialchars($_SERVER["HTTP_HOST"].$str_out, ENT_QUOTES)));
 						
 			$creation_date=(empty($arFields['DATE_ACTIVE_FROM'])? $arFields['DATE_CREATE'] : $arFields['DATE_ACTIVE_FROM']);	
 			$creation_date=ConvertDateTime($creation_date, "YYYY-MM-DD HH:MI:SS").' GMT'.date("O");		
-			// ñîçäàòü ýëåìåíò creation-date è äîáàâèòü åãî ê vacancy
+			// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ creation-date Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº vacancy
 		    $xml_creation_date=$dom->createElement('creation-date');  $xml_vacancy->appendChild($xml_creation_date);
-		    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó creation-date
+		    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ creation-date
 			$xml_creation_date->appendChild($dom->createTextNode($creation_date));
 			//salary
 			$xml_salary=$dom->createElement('salary');  $xml_vacancy->appendChild($xml_salary);
@@ -107,12 +107,12 @@ class CExportVacancies{
 				$str_out = self::_localEncode($arIBlock['NAME']);
 				$xml_category_industry->appendChild($dom->createTextNode($str_out));
 			}
-			// ñîçäàòü ýëåìåíò job-name è äîáàâèòü åãî ê vacancy
+			// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ job-name Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº vacancy
 		    $xml_jobname=$dom->createElement('job-name');  $xml_vacancy->appendChild($xml_jobname);
-		    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó job-name
+		    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ job-name
 			$str_out = self::_localEncode($arFields['NAME']);
 			$xml_jobname->appendChild($dom->createTextNode(htmlspecialchars($str_out, ENT_QUOTES)));
-			// çàíÿòîñòü è ãðàôèê ðàáîòû
+			// Ð·Ð°Ð½ÑÑ‚Ð¾ÑÑ‚ÑŒ Ð¸ Ð³Ñ€Ð°Ñ„Ð¸Ðº Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹
 			if (!empty($arFields['PROPERTY_EMPLOYMENT_VALUE']))
 			{
 				$xml_employment=$dom->createElement('employment');  $xml_vacancy->appendChild($xml_employment);
@@ -132,27 +132,27 @@ class CExportVacancies{
 			$xml_description->appendChild($dom->createTextNode(htmlspecialchars($str_out,ENT_QUOTES)));	
 			$xml_company=$dom->createElement('company');  $xml_vacancy->appendChild($xml_company);
 		    
-				// ñîçäàòü ýëåìåíò name è äîáàâèòü åãî ê company
+				// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ name Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº company
 			    $xml_company_name=$dom->createElement('name');  $xml_company->appendChild($xml_company_name);
-			    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó name
+			    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ name
 				$str_out = self::_localEncode(self::$AGENCY_NAME);
 				$xml_company_name->appendChild($dom->createTextNode(htmlspecialchars($str_out, ENT_QUOTES)));
 							    
-				// ñîçäàòü ýëåìåíò description è äîáàâèòü åãî ê company
+				// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ description Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº company
 			    $xml_company_description=$dom->createElement('description');  $xml_company->appendChild($xml_company_description);
-			    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó description
+			    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ description
 				$str_out = self::_localEncode(self::$DESCRIPTION);
 				$xml_company_description->appendChild($dom->createTextNode(htmlspecialchars(
 				$str_out, ENT_QUOTES)));
 				
-				// ñîçäàòü ýëåìåíò logo è äîáàâèòü åãî ê company
+				// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ logo Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº company
 			    $xml_company_logo=$dom->createElement('logo');  $xml_company->appendChild($xml_company_logo);
-			    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó logo
+			    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ logo
 				//$xml_company_logo->appendChild($dom->createTextNode(self::$site.'/gfx/logo.png'));
 							    
-				// ñîçäàòü ýëåìåíò site è äîáàâèòü åãî ê company
+				// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ site Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº company
 			    $xml_company_site=$dom->createElement('site');  $xml_company->appendChild($xml_company_site);
-			    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó site
+			    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ site
 				$xml_company_site->appendChild($dom->createTextNode($_SERVER["HTTP_HOST"]));
 				
 
@@ -171,7 +171,7 @@ class CExportVacancies{
 										'mail'=>$arUser['EMAIL'],
 										'name'=>trim($contact_name . " " . $contact_name2));
 				}
-				//îáùèé email
+				//Ð¾Ð±Ñ‰Ð¸Ð¹ email
 				if (!empty(self::$email))
 				{
 					$xml_company_email=$dom->createElement('email');  $xml_company->appendChild($xml_company_email);
@@ -198,9 +198,9 @@ class CExportVacancies{
 					$xml_company_contactname=$dom->createElement('contact-name');  $xml_company->appendChild($xml_company_contactname);
 					$xml_company_contactname->appendChild($dom->createTextNode($contact_name));
 				}
-				// ñîçäàòü ýëåìåíò hr-agency è äîáàâèòü åãî ê company
+				// ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ hr-agency Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº company
 			    $xml_company_hragency=$dom->createElement('hr-agency');  $xml_company->appendChild($xml_company_hragency);
-			    //ñîçäàòü óçåë çíà÷åíèÿ è ïðèñîåäèíèòü åãî ê ýëåìåíòó name
+			    //ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÑƒÐ·ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¸ Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ñ‚ÑŒ ÐµÐ³Ð¾ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñƒ name
 				$xml_company_hragency->appendChild($dom->createTextNode('true'));							    
 				}
 }

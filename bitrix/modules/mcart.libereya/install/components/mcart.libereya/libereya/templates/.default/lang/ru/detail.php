@@ -1,4 +1,4 @@
 <?
-$MESS ['MCART_LIBEREYA_DETAIL_BACK'] = "Âîçâðàò ê ñïèñêó";
-$MESS ['MCART_LIBEREYA_CATEGORIES'] = "Ìàòåðèàëû ïî òåìå:";
+$MESS ['MCART_LIBEREYA_DETAIL_BACK'] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
+$MESS ['MCART_LIBEREYA_CATEGORIES'] = "ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ñ‹ Ð¿Ð¾ Ñ‚ÐµÐ¼Ðµ:";
 ?>

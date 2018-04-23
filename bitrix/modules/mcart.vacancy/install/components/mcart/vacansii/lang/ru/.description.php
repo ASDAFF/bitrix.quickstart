@@ -1,5 +1,5 @@
 <?
-$MESS ['VACANSII_NAME'] = "Âàêàíñèè";
-$MESS ['VACANSII_DESCRIPTION'] = "Âûâîä âàêàíñèé";
-$MESS ['MCART_PARTNER_NAME'] = "Ýì Ñè Àðò";
+$MESS ['VACANSII_NAME'] = "Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸";
+$MESS ['VACANSII_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´ Ð²Ð°ÐºÐ°Ð½ÑÐ¸Ð¹";
+$MESS ['MCART_PARTNER_NAME'] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
 ?>

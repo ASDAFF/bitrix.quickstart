@@ -1,12 +1,12 @@
 <?
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_MODULE_NAME'] = "Äâóõôàêòîðíàÿ àâòîðèçàöèÿ LITE";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_MODULE_DESCRIPTION'] = "Äàííûé ìîäóëü ïîçâîëÿåò çíà÷èòåëüíî óñèëèòü áåçîïàñíîñòü àêêàóíòà ïóò¸ì âêëþ÷åíèÿ ìåõàíèçìà ãåíåðàöèè
-îäíîðàçîâîãî ïàðîëÿ è îòïðàâêè åãî â ÑÌÑ ñîîáùåíèè. Îäíîðàçîâûé ïàðîëü ââîäèòñÿ ïîëüçîâàòåëåì â ñïåöèàëüíîå ïîëå ïîñëå îñíîâíîãî.";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_CREATE_IBLOCK_TYPE_NAME'] = "Çàáëîêèðîâàííûå IP";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_CREATE_IBLOCK_DESCRIPTION'] = "Â äàííîì Èíôîáëîêå ñîäåðæàòñÿ ïàðû Ëîãèí/IP ïîäëåæàùèå áëîêèðîâêå.
-Îáðàòèòå âíèìàíèå ÷òî äàííûå â ýòîì Èíôîáëîêå ñîçäàþòñÿ è óäàëÿþòñÿ àâòîìàòè÷åñêè ñîãëàñíî àëãîðèòìó ìîäóëÿ.";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_PARTNER_NAME'] = 'ÎÎÎ "Èíòèñ"';
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_NOINSTALL_TITLE'] = "Îøèáêà óñòàíîâêè ìîäóëÿ";
-$MESS['TWOFACTORAUTHENTIFICATIONLITE_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_MODULE_NAME'] = "Ð”Ð²ÑƒÑ…Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ LITE";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_MODULE_DESCRIPTION'] = "Ð”Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ ÑƒÑÐ¸Ð»Ð¸Ñ‚ÑŒ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑŒ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð° Ð¿ÑƒÑ‚Ñ‘Ð¼ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼Ð° Ð³ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸Ð¸
+Ð¾Ð´Ð½Ð¾Ñ€Ð°Ð·Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ð°Ñ€Ð¾Ð»Ñ Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÐµÐ³Ð¾ Ð² Ð¡ÐœÐ¡ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¸. ÐžÐ´Ð½Ð¾Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð²Ð²Ð¾Ð´Ð¸Ñ‚ÑÑ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼ Ð² ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¿Ð¾Ð»Ðµ Ð¿Ð¾ÑÐ»Ðµ Ð¾ÑÐ½Ð¾Ð²Ð½Ð¾Ð³Ð¾.";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_CREATE_IBLOCK_TYPE_NAME'] = "Ð—Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ IP";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_CREATE_IBLOCK_DESCRIPTION'] = "Ð’ Ð´Ð°Ð½Ð½Ð¾Ð¼ Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑÑ Ð¿Ð°Ñ€Ñ‹ Ð›Ð¾Ð³Ð¸Ð½/IP Ð¿Ð¾Ð´Ð»ÐµÐ¶Ð°Ñ‰Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²ÐºÐµ.
+ÐžÐ±Ñ€Ð°Ñ‚Ð¸Ñ‚Ðµ Ð²Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ Ñ‡Ñ‚Ð¾ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð² ÑÑ‚Ð¾Ð¼ Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐµ ÑÐ¾Ð·Ð´Ð°ÑŽÑ‚ÑÑ Ð¸ ÑƒÐ´Ð°Ð»ÑÑŽÑ‚ÑÑ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ ÑÐ¾Ð³Ð»Ð°ÑÐ½Ð¾ Ð°Ð»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼Ñƒ Ð¼Ð¾Ð´ÑƒÐ»Ñ.";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_PARTNER_NAME'] = 'ÐžÐžÐž "Ð˜Ð½Ñ‚Ð¸Ñ"';
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_NOINSTALL_TITLE'] = "ÐžÑˆÐ¸Ð±ÐºÐ° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS['TWOFACTORAUTHENTIFICATIONLITE_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 ?>

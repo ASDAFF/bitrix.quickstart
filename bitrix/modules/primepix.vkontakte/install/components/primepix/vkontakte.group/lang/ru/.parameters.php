@@ -1,10 +1,10 @@
 <?
-$MESS ['FORM_SETTINGS'] = "Âèä ôîðìû";
-$MESS ['ID_GROUP'] = "ID ñîîáùåñòâà";
-$MESS ['TYPE_FORM'] = "Âèä";
-$MESS ['TYPE_FORM_PARTIC'] = "Ó÷àñòíèêè";
-$MESS ['TYPE_FORM_NEWS'] = "Íîâîñòè";
-$MESS ['TYPE_FORM_NAME'] = "Òîëüêî íàçâàíèå";
-$MESS ['WIDTH_FORM'] = "Øèðèíà";
-$MESS ['HEIGHT_FORM'] = "Âûñîòà";
+$MESS ['FORM_SETTINGS'] = "Ð’Ð¸Ð´ Ñ„Ð¾Ñ€Ð¼Ñ‹";
+$MESS ['ID_GROUP'] = "ID ÑÐ¾Ð¾Ð±Ñ‰ÐµÑÑ‚Ð²Ð°";
+$MESS ['TYPE_FORM'] = "Ð’Ð¸Ð´";
+$MESS ['TYPE_FORM_PARTIC'] = "Ð£Ñ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ¸";
+$MESS ['TYPE_FORM_NEWS'] = "ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸";
+$MESS ['TYPE_FORM_NAME'] = "Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['WIDTH_FORM'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS ['HEIGHT_FORM'] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð°";
 ?>

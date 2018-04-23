@@ -1,24 +1,24 @@
 <?php
 if(LANG_CHARSET){ header('Content-Type: text/html; charset='.LANG_CHARSET); }
 global $MESS;
-$MESS['SHEEPLA_EDITSETTINGS_TITLE'] = "Íàñòðîéêè ìîäóëÿ Sheepla";
-$MESS['SHEEPLA_SETTINGS_ADMINAPIKEY_NAME'] = "Àäìèíèñòðàòèâíûé êëþ÷ API";
-$MESS['SHEEPLA_SETTINGS_PUBLICAPIKEY_NAME'] = "Ïóáëè÷íûé êëþ÷ API";
+$MESS['SHEEPLA_EDITSETTINGS_TITLE'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ Sheepla";
+$MESS['SHEEPLA_SETTINGS_ADMINAPIKEY_NAME'] = "ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ API";
+$MESS['SHEEPLA_SETTINGS_PUBLICAPIKEY_NAME'] = "ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ»ÑŽÑ‡ API";
 $MESS['SHEEPLA_SETTINGS_APIURL_NAME'] = "API URL";
 $MESS['SHEEPLA_SETTINGS_JSURL_NAME'] = "JS URL";
 $MESS['SHEEPLA_SETTINGS_CSSURL_NAME'] = "CSS URL";
-$MESS['SHEEPLA_SETTINGS_SAVE_TITLE'] = "Ñîõðàíèòü";
-$MESS['SHEEPLA_SETTINGS_CONF_OK'] = "Íàñòðîéêè âåðíû è ñîõðàíåíû";
-$MESS['SHEEPLA_SETTINGS_CONF_ERR'] = "Íàñòðîéêè íå âåðíû";
-$MESS['SHEEPLA_YES'] = "Äà";
-$MESS['SHEEPLA_NO'] = "Íåò";
-$MESS['SHEEPLA_SETTINGS_CHEKOUT_URL_TITLE'] = "URL êîðçèíû ìàãàçèíà";
-$MESS['SHEEPLA_SETTINGS_SYNC_TYPE'] = "Ñèíõðîíèçèðîâàòü âñå çàêàçû èëè òîëüêî Sheepla";
-$MESS['SHEEPLA_SETTINGS_PROFILE_TITLE'] = "Íàçâàíèå ïðîôèëÿ";
-$MESS['SHEEPLA_SETTINGS_PROFILE_DESCRIPTION'] = "Îïèñàíèå ïðîôèëÿ";
-$MESS['SHEEPLA_SETTINGS_PROFILE_TEMPLATE'] = "Øàáëîí Sheepla";
-$MESS['SHEEPLA_SETTINGS_PROFILE_SORT'] = "Ñîðòèðîâêà";
-$MESS['SHEEPLA_SETTINGS_PROFILE_MARK'] = "Óäàëèòü";
-$MESS['SHEEPLA_SETTINGS_PROFILE_MSG1'] = "Çàïîëíèòå ïîëÿ";
-$MESS['SHEEPLA_SETTINGS_PROFILE_MSG2'] = "Íåâåðíûå íàñòðîéêè. Ñíà÷àëà óêàæèòå API êëþ÷è.";
+$MESS['SHEEPLA_SETTINGS_SAVE_TITLE'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+$MESS['SHEEPLA_SETTINGS_CONF_OK'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð²ÐµÑ€Ð½Ñ‹ Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹";
+$MESS['SHEEPLA_SETTINGS_CONF_ERR'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð½Ðµ Ð²ÐµÑ€Ð½Ñ‹";
+$MESS['SHEEPLA_YES'] = "Ð”Ð°";
+$MESS['SHEEPLA_NO'] = "ÐÐµÑ‚";
+$MESS['SHEEPLA_SETTINGS_CHEKOUT_URL_TITLE'] = "URL ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+$MESS['SHEEPLA_SETTINGS_SYNC_TYPE'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð²ÑÐµ Ð·Ð°ÐºÐ°Ð·Ñ‹ Ð¸Ð»Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Sheepla";
+$MESS['SHEEPLA_SETTINGS_PROFILE_TITLE'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ";
+$MESS['SHEEPLA_SETTINGS_PROFILE_DESCRIPTION'] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ";
+$MESS['SHEEPLA_SETTINGS_PROFILE_TEMPLATE'] = "Ð¨Ð°Ð±Ð»Ð¾Ð½ Sheepla";
+$MESS['SHEEPLA_SETTINGS_PROFILE_SORT'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS['SHEEPLA_SETTINGS_PROFILE_MARK'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS['SHEEPLA_SETTINGS_PROFILE_MSG1'] = "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»Ñ";
+$MESS['SHEEPLA_SETTINGS_PROFILE_MSG2'] = "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸. Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ API ÐºÐ»ÑŽÑ‡Ð¸.";
 ?>

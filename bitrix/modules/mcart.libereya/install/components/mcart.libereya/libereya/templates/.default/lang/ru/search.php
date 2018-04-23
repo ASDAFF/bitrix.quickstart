@@ -1,3 +1,3 @@
 <?
-$MESS ['T_NEWS_DETAIL_BACK'] = "Âîçâðàò ê ñïèñêó";
+$MESS ['T_NEWS_DETAIL_BACK'] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
 ?>

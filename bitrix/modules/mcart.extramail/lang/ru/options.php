@@ -1,14 +1,14 @@
 <?
-	$MESS ['MCART_TAB_EXTRAMAIL_SETTINGSOUTSMTP'] = "Âíåøíèé smtp ñåðâåð";
-	$MESS ['MCART_TAB_TITLE_EXTRAMAIL_SETTINGSOUTSMTP'] = "Óñòàíîâêè äëÿ îòïðàâêè ïèñåì ÷åðåç âíåøíèé smtp ñåðâåð";
+	$MESS ['MCART_TAB_EXTRAMAIL_SETTINGSOUTSMTP'] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ smtp ÑÐµÑ€Ð²ÐµÑ€";
+	$MESS ['MCART_TAB_TITLE_EXTRAMAIL_SETTINGSOUTSMTP'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð´Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð¿Ð¸ÑÐµÐ¼ Ñ‡ÐµÑ€ÐµÐ· Ð²Ð½ÐµÑˆÐ½Ð¸Ð¹ smtp ÑÐµÑ€Ð²ÐµÑ€";
 
-	$MESS ['opt_smtp_check'] = "Èñïîëüçîâàòü ñòîðîííèé smtp ñåðâåð";
-	$MESS ['opt_smtp_host'] = "Àäðåñ SMTP ñåðâåðà";
-	$MESS ['opt_smtp_host_port'] = "Ïîðò SMTP ñåðâåðà";	
-	$MESS ['opt_smtp_user_login'] = "Ëîãèí";
-	$MESS ['opt_smtp_user_password'] = "Ïàðîëü";	
+	$MESS ['opt_smtp_check'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ð¾Ñ€Ð¾Ð½Ð½Ð¸Ð¹ smtp ÑÐµÑ€Ð²ÐµÑ€";
+	$MESS ['opt_smtp_host'] = "ÐÐ´Ñ€ÐµÑ SMTP ÑÐµÑ€Ð²ÐµÑ€Ð°";
+	$MESS ['opt_smtp_host_port'] = "ÐŸÐ¾Ñ€Ñ‚ SMTP ÑÐµÑ€Ð²ÐµÑ€Ð°";	
+	$MESS ['opt_smtp_user_login'] = "Ð›Ð¾Ð³Ð¸Ð½";
+	$MESS ['opt_smtp_user_password'] = "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";	
 
-	$MESS ['MCART_EXTRAMAIL_SAVE'] = "Ñîõðàíèòü";
-	$MESS ['MCART_EXTRAMAIL_RESET'] = "Ñáðîñèòü";
+	$MESS ['MCART_EXTRAMAIL_SAVE'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+	$MESS ['MCART_EXTRAMAIL_RESET'] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
 
 ?>

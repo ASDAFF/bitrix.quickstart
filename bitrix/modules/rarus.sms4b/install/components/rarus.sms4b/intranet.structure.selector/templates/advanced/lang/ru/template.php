@@ -1,10 +1,10 @@
 <?
-$MESS['INTR_ISS_PARAM_DEPARTMENT'] = 'Ïîäðàçäåëåíèå';
-$MESS['INTR_ISS_PARAM_DEPARTMENT_MINE'] = 'Òîëüêî ìîé îôèñ';
-$MESS['INTR_ISS_PARAM_POST'] = 'Äîëæíîñòü';
-$MESS['INTR_ISS_PARAM_FIO'] = 'Ô.È.Î.';
+$MESS['INTR_ISS_PARAM_DEPARTMENT'] = 'ÐŸÐ¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ';
+$MESS['INTR_ISS_PARAM_DEPARTMENT_MINE'] = 'Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð¼Ð¾Ð¹ Ð¾Ñ„Ð¸Ñ';
+$MESS['INTR_ISS_PARAM_POST'] = 'Ð”Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ';
+$MESS['INTR_ISS_PARAM_FIO'] = 'Ð¤.Ð˜.Ðž.';
 $MESS['INTR_ISS_PARAM_EMAIL'] = 'E-mail';
-$MESS['INTR_ISS_PARAM_KEYWORDS'] = 'Êëþ÷åâûå ñëîâà';
-$MESS['INTR_ISS_BUTTON_SUBMIT'] = 'Íàéòè';
-$MESS['INTR_ISS_BUTTON_CANCEL'] = 'Îòìåíèòü';
+$MESS['INTR_ISS_PARAM_KEYWORDS'] = 'ÐšÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ðµ ÑÐ»Ð¾Ð²Ð°';
+$MESS['INTR_ISS_BUTTON_SUBMIT'] = 'ÐÐ°Ð¹Ñ‚Ð¸';
+$MESS['INTR_ISS_BUTTON_CANCEL'] = 'ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ';
 ?>

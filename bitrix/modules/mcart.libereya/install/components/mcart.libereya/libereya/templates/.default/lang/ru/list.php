@@ -1,5 +1,5 @@
 <?
-$MESS["MCART_LIBEREYA_NE_ZAPOLNENY_SPRAVOC"] = "Íå çàïîëíåíû ñïðàâî÷íèêè Àâòîðû è Æàíðû";
-$MESS["MCART_LIBEREYA_ANNOTATION_HEADER"]			= "Àííîòàöèÿ";
-$MESS["MCART_LIBEREYA_EMPTY_AUTHORS_AND_GANRES"]	= "Íå çàïîëíåíû ñïðàâî÷íèêè Àâòîðû è Æàíðû";
+$MESS["MCART_LIBEREYA_NE_ZAPOLNENY_SPRAVOC"] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ¿Ñ€Ð°Ð²Ð¾Ñ‡Ð½Ð¸ÐºÐ¸ ÐÐ²Ñ‚Ð¾Ñ€Ñ‹ Ð¸ Ð–Ð°Ð½Ñ€Ñ‹";
+$MESS["MCART_LIBEREYA_ANNOTATION_HEADER"]			= "ÐÐ½Ð½Ð¾Ñ‚Ð°Ñ†Ð¸Ñ";
+$MESS["MCART_LIBEREYA_EMPTY_AUTHORS_AND_GANRES"]	= "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ¿Ñ€Ð°Ð²Ð¾Ñ‡Ð½Ð¸ÐºÐ¸ ÐÐ²Ñ‚Ð¾Ñ€Ñ‹ Ð¸ Ð–Ð°Ð½Ñ€Ñ‹";
 ?>

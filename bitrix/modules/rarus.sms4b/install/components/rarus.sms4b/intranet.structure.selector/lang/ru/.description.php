@@ -1,6 +1,6 @@
 <?
-$MESS ['INTR_GROUP_NAME'] = 'Êîðïîðàòèâíûé ïîðòàë';
-$MESS ['INTR_ISS_COMPONENT_NAME'] = 'Ôîðìà ïîèñêà';
-$MESS ['INTR_ISS_COMPONENT_DESCR'] = 'Ôîðìà ôèëüòðàöèè ñïèñêà ñîòðóäíèêîâ';
-$MESS ['INTR_STRUCTURE_GROUP_NAME'] = 'Îðãñòðóêòóðà';
+$MESS ['INTR_GROUP_NAME'] = 'ÐšÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ Ð¿Ð¾Ñ€Ñ‚Ð°Ð»';
+$MESS ['INTR_ISS_COMPONENT_NAME'] = 'Ð¤Ð¾Ñ€Ð¼Ð° Ð¿Ð¾Ð¸ÑÐºÐ°';
+$MESS ['INTR_ISS_COMPONENT_DESCR'] = 'Ð¤Ð¾Ñ€Ð¼Ð° Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ ÑÐ¿Ð¸ÑÐºÐ° ÑÐ¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð²';
+$MESS ['INTR_STRUCTURE_GROUP_NAME'] = 'ÐžÑ€Ð³ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°';
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS ['LIBEREYA_COMPONENT_NAME'] = "Áèáëèîòåêà";
-$MESS ['MCART_GROUP_NAME'] = "Ýì Ñè Àðò";
-$MESS ['LIBEREYA_COMPONENT_NAME'] = "Áèáëèîòåêà";
+$MESS ['LIBEREYA_COMPONENT_NAME'] = "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
+$MESS ['MCART_GROUP_NAME'] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
+$MESS ['LIBEREYA_COMPONENT_NAME'] = "Ð‘Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
 
 ?>

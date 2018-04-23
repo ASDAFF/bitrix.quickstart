@@ -1,6 +1,6 @@
 <?
-$MESS["slobel.pricegeneration_MODULE_NAME"] = "Ãåíåðàòîð ïðàéñ-ëèñòà";
-$MESS["slobel.pricegeneration_MODULE_DESC"] = "Ãåíåðàòîð ïðàéñ-ëèñòà â ðàçëè÷íûå ôîðìàòû íà îñíîâå âàøåãî êîíòåíòà.";
+$MESS["slobel.pricegeneration_MODULE_NAME"] = "Ð“ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚Ð°";
+$MESS["slobel.pricegeneration_MODULE_DESC"] = "Ð“ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚Ð° Ð² Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ñ‹ Ð½Ð° Ð¾ÑÐ½Ð¾Ð²Ðµ Ð²Ð°ÑˆÐµÐ³Ð¾ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°.";
 $MESS["slobel.pricegeneration_PARTNER_NAME"] = "SLOBEL Studio";
 $MESS["slobel.pricegeneration_PARTNER_URI"] = "http://slobel.ru/";
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS["TWO_FACTOR_AUTH_REGISTER_URL"] = "Ñòðàíèöà ðåãèñòðàöèè";
-$MESS["TWO_FACTOR_AUTH_FORGOT_PASSWORD_URL"] = "Ñòðàíèöà çàáûòîãî ïàðîëÿ";
-$MESS["TWO_FACTOR_AUTH_PROFILE_URL"] = "Ñòðàíèöà ïðîôèëÿ";
-$MESS["TWO_FACTOR_AUTH_HANDLER_PATH"] = "Ïóòü îò êîðíÿ äî ñòðàíèöû ñ îáðàáîò÷èêîì ôîðìû";
+$MESS["TWO_FACTOR_AUTH_REGISTER_URL"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸";
+$MESS["TWO_FACTOR_AUTH_FORGOT_PASSWORD_URL"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð·Ð°Ð±Ñ‹Ñ‚Ð¾Ð³Ð¾ Ð¿Ð°Ñ€Ð¾Ð»Ñ";
+$MESS["TWO_FACTOR_AUTH_PROFILE_URL"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ";
+$MESS["TWO_FACTOR_AUTH_HANDLER_PATH"] = "ÐŸÑƒÑ‚ÑŒ Ð¾Ñ‚ ÐºÐ¾Ñ€Ð½Ñ Ð´Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼ Ñ„Ð¾Ñ€Ð¼Ñ‹";
 ?>

@@ -1,8 +1,8 @@
 <?
-$MESS ['MYSTERY_THUMBS_FORM_MODULE_NAME'] = "Mystery. Ðåñàéç èçîáðàæåíèé";
-$MESS ['MYSTERY_THUMBS_FORM_MODULE_DESCRIPTION'] = "Ìîäóëü ïîçâîëÿåò àâòîìàòè÷åñêè èçìåíÿòü ðàçìåðû êàðòèíîê (êàê â øàáëîíàõ, òàê è â êîíòåíòå)";
-$MESS ['MYSTERY_THUMBS_PARTNER_NAME'] = "Êðåàòèâíîå àãåíòñòâî «Ìèñòåðè»";
-$MESS ['MYSTERY_THUMBS_INSTALL_TITLE'] = "Óñòàíîâêà ïàðàìåòðîâ";
-$MESS ['MYSTERY_THUMBS_NS_INSTALL_SITE'] = "Ñàéò äëÿ óñòàíîâêè ïðàâèëà îáðàáîòêè àäðåñà {óñëîâèå:  '".MYSTERY_THUMBS_URLREWRITER_CONDITION."'   ôàéë:    '".MYSTERY_THUMBS_URLREWRITER_FILE_PATH."' }";
+$MESS ['MYSTERY_THUMBS_FORM_MODULE_NAME'] = "Mystery. Ð ÐµÑÐ°Ð¹Ð· Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹";
+$MESS ['MYSTERY_THUMBS_FORM_MODULE_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¸Ð·Ð¼ÐµÐ½ÑÑ‚ÑŒ Ñ€Ð°Ð·Ð¼ÐµÑ€Ñ‹ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº (ÐºÐ°Ðº Ð² ÑˆÐ°Ð±Ð»Ð¾Ð½Ð°Ñ…, Ñ‚Ð°Ðº Ð¸ Ð² ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ðµ)";
+$MESS ['MYSTERY_THUMBS_PARTNER_NAME'] = "ÐšÑ€ÐµÐ°Ñ‚Ð¸Ð²Ð½Ð¾Ðµ Ð°Ð³ÐµÐ½Ñ‚ÑÑ‚Ð²Ð¾ Â«ÐœÐ¸ÑÑ‚ÐµÑ€Ð¸Â»";
+$MESS ['MYSTERY_THUMBS_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²";
+$MESS ['MYSTERY_THUMBS_NS_INSTALL_SITE'] = "Ð¡Ð°Ð¹Ñ‚ Ð´Ð»Ñ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¸ Ð°Ð´Ñ€ÐµÑÐ° {ÑƒÑÐ»Ð¾Ð²Ð¸Ðµ:  '".MYSTERY_THUMBS_URLREWRITER_CONDITION."'   Ñ„Ð°Ð¹Ð»:    '".MYSTERY_THUMBS_URLREWRITER_FILE_PATH."' }";
 
 ?>

@@ -1,12 +1,12 @@
 <?
-$MESS["MAILTRIG_EVENTS_INSTALL_PROCESS"] = "Óñòàíîâêà ìîäóëÿ: ";
-$MESS["MAILTRIG_EVENTS_INSTALL_NAME"] = "MailTrig - ñöåíàðíûå îïîâåùåíèÿ ïî email";
-$MESS["MAILTRIG_EVENTS_INSTALL_DESCRIPTION"] = "MailTrig - ñöåíàðíûå îïîâåùåíèÿ ïî email ñ èñïîëüçîâàíèåì ñåðâèñà Mailtrig.ru";
+$MESS["MAILTRIG_EVENTS_INSTALL_PROCESS"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ: ";
+$MESS["MAILTRIG_EVENTS_INSTALL_NAME"] = "MailTrig - ÑÑ†ÐµÐ½Ð°Ñ€Ð½Ñ‹Ðµ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¿Ð¾ email";
+$MESS["MAILTRIG_EVENTS_INSTALL_DESCRIPTION"] = "MailTrig - ÑÑ†ÐµÐ½Ð°Ñ€Ð½Ñ‹Ðµ Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¿Ð¾ email Ñ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÐµÐ¼ ÑÐµÑ€Ð²Ð¸ÑÐ° Mailtrig.ru";
 $MESS["MAILTRIG_EVENTS_PARTNER"] = "MailTrig";
-$MESS["MAILTRIG_EVENTS_INSTALL_STEP"] = "Ïàðàìåòðû ó÷åòíîé çàïèñè MailTrig";
-$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT"] = "Ó âàñ åñòü àêêàóíò íà MailTrig?";
-$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT_YES"] = "Äà, óæå åñòü. Ïåðåéòè ê íàñòðîéêàì";
-$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT_NO_I_WANT_REGISTER"] = "Íåò, õî÷ó çàðåãèñòðèðîâàòüñÿ";
-$MESS["MAILTRIG_EVENTS_INSTALL_SUCCESS"] = "Óñòàíîâêà ìîäóëÿ óñïåøíî çàâåðøåíà";
-$MESS["MAILTRIG_EVENTS_INSTALL_REGISTER_ERROR"] = "Îøèáêà ðåãèñòðàöèè: ";
+$MESS["MAILTRIG_EVENTS_INSTALL_STEP"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÑƒÑ‡ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸ MailTrig";
+$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT"] = "Ð£ Ð²Ð°Ñ ÐµÑÑ‚ÑŒ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚ Ð½Ð° MailTrig?";
+$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT_YES"] = "Ð”Ð°, ÑƒÐ¶Ðµ ÐµÑÑ‚ÑŒ. ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ð¼";
+$MESS["MAILTRIG_EVENTS_DO_YOU_HAVE_ACCOUNT_NO_I_WANT_REGISTER"] = "ÐÐµÑ‚, Ñ…Ð¾Ñ‡Ñƒ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ";
+$MESS["MAILTRIG_EVENTS_INSTALL_SUCCESS"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð°";
+$MESS["MAILTRIG_EVENTS_INSTALL_REGISTER_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸: ";
 ?>

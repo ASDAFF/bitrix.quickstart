@@ -1,16 +1,16 @@
 <?
 $MESS ['SMS4B_MENU_MAIN'] = "SMS4B";
-$MESS ['SMS4B_MENU_MAIN_TITLE'] = "Ñëóæáà SMS ðàññûëîê";
+$MESS ['SMS4B_MENU_MAIN_TITLE'] = "Ð¡Ð»ÑƒÐ¶Ð±Ð° SMS Ñ€Ð°ÑÑÑ‹Ð»Ð¾Ðº";
 
-//$MESS ['VOTE_MENU_VOTE'] = "Ñïèñîê îïðîñîâ";
-//$MESS ['VOTE_MENU_VOTE_ALT'] = "Óïðàâëåíèå îïðîñàìè ïîñåòèòåëåé ñàéòà";
+//$MESS ['VOTE_MENU_VOTE'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¾Ð¿Ñ€Ð¾ÑÐ¾Ð²";
+//$MESS ['VOTE_MENU_VOTE_ALT'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð¿Ñ€Ð¾ÑÐ°Ð¼Ð¸ Ð¿Ð¾ÑÐµÑ‚Ð¸Ñ‚ÐµÐ»ÐµÐ¹ ÑÐ°Ð¹Ñ‚Ð°";
 
-$MESS ['SMS4B_SENDSMS'] = "Îòïðàâèòü SMS";
-$MESS ['SMS4B_SENDSMS_ALT'] = "Ôîðìà îòïðàâêè SMS ñîîáùåíèé";
-$MESS ['SMS4B_BALANCE'] = "Îñòàòîê SMS";
-$MESS ['SMS4B_BALANCE_ALT'] = "Ôîðìà ïðîâåðêè îñòàòêà SMS ñîîáùåíèé";
-$MESS ['SMS4B_SMS_LIST_OUT'] = "Îòïðàâëåííûå";
-$MESS ['SMS4B_SMS_LIST_OUT_ALT'] = "Îòïðàâëåííûå SMS";
-$MESS ['SMS4B_SMS_LIST_INC'] = "Âõîäÿùèå";
-$MESS ['SMS4B_SMS_LIST_INC_ALT'] = "Âõîäÿùèå SMS";
+$MESS ['SMS4B_SENDSMS'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ SMS";
+$MESS ['SMS4B_SENDSMS_ALT'] = "Ð¤Ð¾Ñ€Ð¼Ð° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ SMS ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹";
+$MESS ['SMS4B_BALANCE'] = "ÐžÑÑ‚Ð°Ñ‚Ð¾Ðº SMS";
+$MESS ['SMS4B_BALANCE_ALT'] = "Ð¤Ð¾Ñ€Ð¼Ð° Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸ Ð¾ÑÑ‚Ð°Ñ‚ÐºÐ° SMS ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹";
+$MESS ['SMS4B_SMS_LIST_OUT'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ";
+$MESS ['SMS4B_SMS_LIST_OUT_ALT'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ SMS";
+$MESS ['SMS4B_SMS_LIST_INC'] = "Ð’Ñ…Ð¾Ð´ÑÑ‰Ð¸Ðµ";
+$MESS ['SMS4B_SMS_LIST_INC_ALT'] = "Ð’Ñ…Ð¾Ð´ÑÑ‰Ð¸Ðµ SMS";
 ?>

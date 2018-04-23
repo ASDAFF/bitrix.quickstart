@@ -1,3 +1,3 @@
 <?
-$MESS ['INTR_ISL_PARAM_NAV_TITLE_DEFAULT'] = "Ñîòðóäíèêè";
+$MESS ['INTR_ISL_PARAM_NAV_TITLE_DEFAULT'] = "Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸";
 ?>

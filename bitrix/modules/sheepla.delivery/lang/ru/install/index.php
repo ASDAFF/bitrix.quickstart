@@ -1,6 +1,6 @@
 <?php
 if(LANG_CHARSET){ header('Content-Type: text/html; charset='.LANG_CHARSET); }
 global $MESS;
-$MESS ['SHEEPLA_DESCRIPTION'] = "Ìîäóëü äîñòàâêè íåñêîëüêèìè ñëóæáàìè";
+$MESS ['SHEEPLA_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¸Ð¼Ð¸ ÑÐ»ÑƒÐ¶Ð±Ð°Ð¼Ð¸";
 $MESS ['SHEEPLA_SHEEPLA'] = "Sheepla";
 ?>

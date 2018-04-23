@@ -856,7 +856,7 @@ foreach(array_merge($_GET, $_POST) as $key => $value)
 		);
 	}
 }
-//array("LOGIC" => "OR", array('PROPERTY_archive_VALUE'=>false), array('PROPERTY_archive_VALUE'=>"íåò"))
+//array("LOGIC" => "OR", array('PROPERTY_archive_VALUE'=>false), array('PROPERTY_archive_VALUE'=>"Ð½ÐµÑ‚"))
 if(isset($_REQUEST['new_only'])
 		|| isset($_REQUEST['digital_only'])
 		|| isset($_REQUEST['paper_only'])
@@ -869,10 +869,10 @@ if(isset($_REQUEST['new_only'])){
 	$arFilterTemp[] = array('!PROPERTY' => array('IS_NEW' => false)); 
 }
 if(isset($_REQUEST['digital_only'])){ 
-	$arFilterTemp[] = array('PROPERTY' => array('BOOK_TYPE_VALUE' => 'Ýëåêòðîííàÿ')); 
+	$arFilterTemp[] = array('PROPERTY' => array('BOOK_TYPE_VALUE' => 'Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ')); 
 }
 if(isset($_REQUEST['paper_only'])){ 
-	$arFilterTemp[] = array('PROPERTY' => array('BOOK_TYPE_VALUE' => 'Áóìàæíàÿ')); 
+	$arFilterTemp[] = array('PROPERTY' => array('BOOK_TYPE_VALUE' => 'Ð‘ÑƒÐ¼Ð°Ð¶Ð½Ð°Ñ')); 
 }
 $arrFilter[] = $arFilterTemp;
 $this->IncludeComponentTemplate();

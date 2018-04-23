@@ -1,5 +1,5 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $MESS['COMPONENT_NAME'] = 'Fotorama';
-$MESS['COMPONENT_DESCRIPTION'] = 'Компонент для создания фотогалереи с использованием JavaScript-библиотеки <a href="http://fotorama.io">Fotorama</a>';
+$MESS['COMPONENT_DESCRIPTION'] = 'РљРѕРјРїРѕРЅРµРЅС‚ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ С„РѕС‚РѕРіР°Р»РµСЂРµРё СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј JavaScript-Р±РёР±Р»РёРѕС‚РµРєРё <a href="http://fotorama.io">Fotorama</a>';
 $MESS['CATEGORY_NAME'] = 'Fotorama';

@@ -1,49 +1,49 @@
 <?
 ##########################################################
-// Êëàññ ïğåäíàçíà÷åí äëÿ îòïğàâêè ÑÌÑ ÷åğåç ñèñòåìó smpp.amegasystem.ru
-// ñâÿçü: foxilitas@gmail.com
+// ĞšĞ»Ğ°ÑÑ Ğ¿Ñ€ĞµĞ´Ğ½Ğ°Ğ·Ğ½Ğ°Ñ‡ĞµĞ½ Ğ´Ğ»Ñ Ğ¾Ñ‚Ğ¿Ñ€Ğ°Ğ²ĞºĞ¸ Ğ¡ĞœĞ¡ Ñ‡ĞµÑ€ĞµĞ· ÑĞ¸ÑÑ‚ĞµĞ¼Ñƒ smpp.amegasystem.ru
+// ÑĞ²ÑĞ·ÑŒ: foxilitas@gmail.com
 
 class ASSMS {
-  var $user='userX.Y';    // âàø ëîãèí â ñèñòåìå smpp.amegasystem.ru
-  var $pass='';        // âàø ïàğîëü â ñèñòåìå smpp.amegasystem.ru
-  var $post_data=array();      // äàííûå ïåğåäàâàåìûå íà ñåğâåğ
-  var $multipost=false;      // ìíîæåñòâåííûé çàïğîñ ïî óìîë÷àíèş false
+  var $user='userX.Y';    // Ğ²Ğ°Ñˆ Ğ»Ğ¾Ğ³Ğ¸Ğ½ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ smpp.amegasystem.ru
+  var $pass='';        // Ğ²Ğ°Ñˆ Ğ¿Ğ°Ñ€Ğ¾Ğ»ÑŒ Ğ² ÑĞ¸ÑÑ‚ĞµĞ¼Ğµ smpp.amegasystem.ru
+  var $post_data=array();      // Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ¿ĞµÑ€ĞµĞ´Ğ°Ğ²Ğ°ĞµĞ¼Ñ‹Ğµ Ğ½Ğ° ÑĞµÑ€Ğ²ĞµÑ€
+  var $multipost=false;      // Ğ¼Ğ½Ğ¾Ğ¶ĞµÑÑ‚Ğ²ĞµĞ½Ğ½Ñ‹Ğ¹ Ğ·Ğ°Ğ¿Ñ€Ğ¾Ñ Ğ¿Ğ¾ ÑƒĞ¼Ğ¾Ğ»Ñ‡Ğ°Ğ½Ğ¸Ñ false
   
   function ASSMS($user=false,$pass=false) {
     if($user) $this->user=$user;
     if($pass) $this->pass=$pass;
   }
   
-  // êîìàíäà íà íà÷àëî ìóëüòè çàïğîñà
+  // ĞºĞ¾Ğ¼Ğ°Ğ½Ğ´Ğ° Ğ½Ğ° Ğ½Ğ°Ñ‡Ğ°Ğ»Ğ¾ Ğ¼ÑƒĞ»ÑŒÑ‚Ğ¸ Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ°
   function start_multipost() {
     $this->multipost=true;
   }
-  // ñáîğ äàííûõ çàïğîñà
+  // ÑĞ±Ğ¾Ñ€ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ… Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ°
   function to_multipost($inv) {
     $this->post_data['data'][]=$inv;
   }
-  // ğåçóëüòèğóşùèé çàïğîñ íà ñåğâåğ è ïîëó÷åíèå ğåçóëüòàòà
+  // Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ¸Ñ€ÑƒÑÑ‰Ğ¸Ğ¹ Ğ·Ğ°Ğ¿Ñ€Ğ¾Ñ Ğ½Ğ° ÑĞµÑ€Ğ²ĞµÑ€ Ğ¸ Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ğ¸Ğµ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ°
   function process() {
     return $this->get_post_request($this->post_data);
   }
   ################# post_message
-  // ğàññûëêà ñìñ [mes] ïî òåëåôîíàì [target] ñ âîçâğàòîì ğåçóëüòàòà XML
+  // Ñ€Ğ°ÑÑÑ‹Ğ»ĞºĞ° ÑĞ¼Ñ [mes] Ğ¿Ğ¾ Ñ‚ĞµĞ»ĞµÑ„Ğ¾Ğ½Ğ°Ğ¼ [target] Ñ Ğ²Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‚Ğ¾Ğ¼ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ° XML
   function post_message($mes,$target,$sender=null) {
     if(is_array($target))  $target=implode(',',$target);
     return $this->post_mes($mes,$target,false,$sender);
   }
-  // ğàññûëêà ñìñ [mes] ïî êîäîâîìó èìåíè êîíòàêò ëèñòà [phl_codename]
+  // Ñ€Ğ°ÑÑÑ‹Ğ»ĞºĞ° ÑĞ¼Ñ [mes] Ğ¿Ğ¾ ĞºĞ¾Ğ´Ğ¾Ğ²Ğ¾Ğ¼Ñƒ Ğ¸Ğ¼ĞµĞ½Ğ¸ ĞºĞ¾Ğ½Ñ‚Ğ°ĞºÑ‚ Ğ»Ğ¸ÑÑ‚Ğ° [phl_codename]
   function post_message_phl($mes,$phl_codename,$sender=null) {
     return $this->post_mes($mes,false,$phl_codename,$sender);
   }
   
   ################# post_voice
-  // ğàññûëêà voice [mes] ïî òåëåôîíàì [target] ñ âîçâğàòîì ğåçóëüòàòà XML
+  // Ñ€Ğ°ÑÑÑ‹Ğ»ĞºĞ° voice [mes] Ğ¿Ğ¾ Ñ‚ĞµĞ»ĞµÑ„Ğ¾Ğ½Ğ°Ğ¼ [target] Ñ Ğ²Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‚Ğ¾Ğ¼ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ° XML
   function post_voice($mes,$target,$sender=null) {
     if(is_array($target))  $target=implode(',',$target);
     return $this->post_mes($mes,$target,false,$sender,'SENDVOICE');
   }
-  // ğàññûëêà ñìñ [mes] ïî êîäîâîìó èìåíè êîíòàêò ëèñòà [phl_codename]
+  // Ñ€Ğ°ÑÑÑ‹Ğ»ĞºĞ° ÑĞ¼Ñ [mes] Ğ¿Ğ¾ ĞºĞ¾Ğ´Ğ¾Ğ²Ğ¾Ğ¼Ñƒ Ğ¸Ğ¼ĞµĞ½Ğ¸ ĞºĞ¾Ğ½Ñ‚Ğ°ĞºÑ‚ Ğ»Ğ¸ÑÑ‚Ğ° [phl_codename]
   function post_voice_phl($mes,$phl_codename,$sender=null) {
     return $this->post_mes($mes,false,$phl_codename,$sender,'SENDVOICE');
   }
@@ -62,8 +62,8 @@ class ASSMS {
   }
   
   ################# status_sms
-  /*  ïîëó÷åíèå ñòñòóñà ñìñ 
-    äîïóñòèìûå ïàğàìåòğû:
+  /*  Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ğ¸Ğµ ÑÑ‚ÑÑ‚ÑƒÑĞ° ÑĞ¼Ñ 
+    Ğ´Ğ¾Ğ¿ÑƒÑÑ‚Ğ¸Ğ¼Ñ‹Ğµ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€Ñ‹:
     1.   date_from
       date_to
       smstype [SENDSMS SENDVOICE]
@@ -110,7 +110,7 @@ class ASSMS {
   }
   
   ################################################
-  // çàïğîñ íà ñåğâåğ è ïîëó÷åíèå ğåçóëüòàòà
+  // Ğ·Ğ°Ğ¿Ñ€Ğ¾Ñ Ğ½Ğ° ÑĞµÑ€Ğ²ĞµÑ€ Ğ¸ Ğ¿Ğ¾Ğ»ÑƒÑ‡ĞµĞ½Ğ¸Ğµ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ°
   function get_post_request($invars) {
     $invars['user'] = ($this->user);
     $invars['pass'] = ($this->pass);

@@ -1,8 +1,8 @@
 <?
 /**
  *
- * Модуль платежного сервиса OnlineDengi для CMS 1С Битрикс.
- * @copyright Сервис OnlineDengi http://www.onlinedengi.ru/ (ООО "КомФинЦентр"), 2010
+ * РњРѕРґСѓР»СЊ РїР»Р°С‚РµР¶РЅРѕРіРѕ СЃРµСЂРІРёСЃР° OnlineDengi РґР»СЏ CMS 1РЎ Р‘РёС‚СЂРёРєСЃ.
+ * @copyright РЎРµСЂРІРёСЃ OnlineDengi http://www.onlinedengi.ru/ (РћРћРћ "РљРѕРјР¤РёРЅР¦РµРЅС‚СЂ"), 2010
  *
  */
  
@@ -138,7 +138,7 @@ class ReportStep extends CWizardStep {
 					if($arSite = $rsSites->Fetch()) {
 						$arItem['PARAMS'] = CSalePaySystemAction::UnSerializeParams($arItem['~PARAMS']);
 						// !!!
-						// Путь к скрипту
+						// РџСѓС‚СЊ Рє СЃРєСЂРёРїС‚Сѓ
 						// !!!
 						$sUrl = str_replace(
 							array('#PROTOCOL#', '#SERVER_NAME#', '#PAY_SYSTEM_ID#', '#PERSON_TYPE_ID#'),

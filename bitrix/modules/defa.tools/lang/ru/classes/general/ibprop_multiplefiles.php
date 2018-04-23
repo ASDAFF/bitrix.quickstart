@@ -1,14 +1,14 @@
 <?
-$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools Множественная загрузка файлов";
-$MESS['DEFATOOLS_USER_TYPE_SETTINGS_TITLE'] = "Выбор типа плагина";
-$MESS['DEFATOOLS_PLUGIN_TYPE'] = "Тип плагина";
-$MESS['DEFATOOLS_BEFORE_ELEM_SAVE'] = "Множественная загрузка файлов доступна только в режиме <b>редактирования</b> элемента";
-$MESS['DEFATOOLS_NOFLASH'] = "Для работы необходимо установить <b>Adobe Flash Player</b>";
-$MESS['DEFATOOLS_UPLOAD_FILES'] = 'Загрузить';
-$MESS['DEFATOOLS_CLEAR_QUEUE'] = 'Отменить';
-$MESS['DEFATOOLS_ELEMENT_EDIT_PROP_DESC'] = "Описание значения свойства";
-$MESS['DEFATOOLS_ELEMENT_EDIT_PROP_DESC_1'] = "Описание:";
-$MESS['DEFATOOLS_MULTIPLE_UPLOAD_FLASH_ERROR'] = "Не удалось загрузить файл/файлы.";
-$MESS['DEFATOOLS_MULTIPLE_UPLOAD_FLASH_OK'] = "Загрузка прошла успешно.";
-$MESS['DEFATOOLS_MULTIPLE_UPLOAD_BROWSE'] = "Множественная загрузка";
-$MESS['DEFATOOLS_MULTIPLE_UPLOAD_MULTIPLE_APPLETS_ERROR'] = "Использование нескольких свойств множественной загрузки файлов совместно с Java загрузчиком не поддерживается. Используйте HTML5 или Flash загрузчики.";
+$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools РњРЅРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Р·Р°РіСЂСѓР·РєР° С„Р°Р№Р»РѕРІ";
+$MESS['DEFATOOLS_USER_TYPE_SETTINGS_TITLE'] = "Р’С‹Р±РѕСЂ С‚РёРїР° РїР»Р°РіРёРЅР°";
+$MESS['DEFATOOLS_PLUGIN_TYPE'] = "РўРёРї РїР»Р°РіРёРЅР°";
+$MESS['DEFATOOLS_BEFORE_ELEM_SAVE'] = "РњРЅРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Р·Р°РіСЂСѓР·РєР° С„Р°Р№Р»РѕРІ РґРѕСЃС‚СѓРїРЅР° С‚РѕР»СЊРєРѕ РІ СЂРµР¶РёРјРµ <b>СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ</b> СЌР»РµРјРµРЅС‚Р°";
+$MESS['DEFATOOLS_NOFLASH'] = "Р”Р»СЏ СЂР°Р±РѕС‚С‹ РЅРµРѕР±С…РѕРґРёРјРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ <b>Adobe Flash Player</b>";
+$MESS['DEFATOOLS_UPLOAD_FILES'] = 'Р—Р°РіСЂСѓР·РёС‚СЊ';
+$MESS['DEFATOOLS_CLEAR_QUEUE'] = 'РћС‚РјРµРЅРёС‚СЊ';
+$MESS['DEFATOOLS_ELEMENT_EDIT_PROP_DESC'] = "РћРїРёСЃР°РЅРёРµ Р·РЅР°С‡РµРЅРёСЏ СЃРІРѕР№СЃС‚РІР°";
+$MESS['DEFATOOLS_ELEMENT_EDIT_PROP_DESC_1'] = "РћРїРёСЃР°РЅРёРµ:";
+$MESS['DEFATOOLS_MULTIPLE_UPLOAD_FLASH_ERROR'] = "РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»/С„Р°Р№Р»С‹.";
+$MESS['DEFATOOLS_MULTIPLE_UPLOAD_FLASH_OK'] = "Р—Р°РіСЂСѓР·РєР° РїСЂРѕС€Р»Р° СѓСЃРїРµС€РЅРѕ.";
+$MESS['DEFATOOLS_MULTIPLE_UPLOAD_BROWSE'] = "РњРЅРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Р·Р°РіСЂСѓР·РєР°";
+$MESS['DEFATOOLS_MULTIPLE_UPLOAD_MULTIPLE_APPLETS_ERROR'] = "РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РЅРµСЃРєРѕР»СЊРєРёС… СЃРІРѕР№СЃС‚РІ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕР№ Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»РѕРІ СЃРѕРІРјРµСЃС‚РЅРѕ СЃ Java Р·Р°РіСЂСѓР·С‡РёРєРѕРј РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ. РСЃРїРѕР»СЊР·СѓР№С‚Рµ HTML5 РёР»Рё Flash Р·Р°РіСЂСѓР·С‡РёРєРё.";

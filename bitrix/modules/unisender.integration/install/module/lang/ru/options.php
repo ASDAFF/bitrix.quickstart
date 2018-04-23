@@ -1,8 +1,8 @@
 <?
-$MESS['UNISENDER_API_KEY'] = "Ключ доступа к API";
-$MESS['UNISENDER_SETTINGS_TITLE'] = 'Настройки';
-$MESS['UNISENDER_SETTINGS_SAVE'] = 'Сохранить';
-$MESS['UNISENDER_YOUR_MODULE_VERSION'] = 'Версия модуля';
-$MESS['UNISENDER_YOUR_BITRIX_VERSION'] = 'Версия Bitrix';
-$MESS['UNISENDER_CHECK_UPDATES'] = '<a href="http://marketplace.1c-bitrix.ua/solutions/unisender.integration/" target="_blank">Узнать последнюю версия модуля на Marketplace</a>';
+$MESS['UNISENDER_API_KEY'] = "РљР»СЋС‡ РґРѕСЃС‚СѓРїР° Рє API";
+$MESS['UNISENDER_SETTINGS_TITLE'] = 'РќР°СЃС‚СЂРѕР№РєРё';
+$MESS['UNISENDER_SETTINGS_SAVE'] = 'РЎРѕС…СЂР°РЅРёС‚СЊ';
+$MESS['UNISENDER_YOUR_MODULE_VERSION'] = 'Р’РµСЂСЃРёСЏ РјРѕРґСѓР»СЏ';
+$MESS['UNISENDER_YOUR_BITRIX_VERSION'] = 'Р’РµСЂСЃРёСЏ Bitrix';
+$MESS['UNISENDER_CHECK_UPDATES'] = '<a href="http://marketplace.1c-bitrix.ua/solutions/unisender.integration/" target="_blank">РЈР·РЅР°С‚СЊ РїРѕСЃР»РµРґРЅСЋСЋ РІРµСЂСЃРёСЏ РјРѕРґСѓР»СЏ РЅР° Marketplace</a>';
 ?>

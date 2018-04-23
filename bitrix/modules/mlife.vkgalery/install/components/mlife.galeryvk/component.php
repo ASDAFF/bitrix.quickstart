@@ -1,7 +1,7 @@
  <?
 if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 	
-	// ключ кеширования
+	// РєР»СЋС‡ РєРµС€РёСЂРѕРІР°РЅРёСЏ
 	$this->SetResultCacheKeys(array(
 		"IST",
 		"ID_IST",
@@ -30,7 +30,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 		$getarr = json_decode($arrfotos);
 		$error_msg = $getarr->error->error_msg;
 		}else{
-		$error_msg = 'Нет соединения с сервисом';
+		$error_msg = 'РќРµС‚ СЃРѕРµРґРёРЅРµРЅРёСЏ СЃ СЃРµСЂРІРёСЃРѕРј';
 		}
 		if($arParams['KOL_PHOTO']==0) $arParams['KOL_PHOTO']=10000;
 		

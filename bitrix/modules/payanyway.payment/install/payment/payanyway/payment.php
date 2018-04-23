@@ -33,7 +33,7 @@ $host = $_SERVER['HTTPS'] == 'on' ? 'https://'.$host : 'http://'.$host;
 			<input type="hidden" name="MNT_AMOUNT" value="<?= $MNT_AMOUNT?>">
 			<input type="hidden" name="MNT_TEST_MODE" value="<?= $MNT_TEST_MODE?>">
 			<input type="hidden" name="MNT_SIGNATURE" value="<?= $MNT_SIGNATURE?>">
-			<input type="hidden" name="MNT_DESCRIPTION" value="Заказ номер #<?= $MNT_TRANSACTION_ID?>">
+			<input type="hidden" name="MNT_DESCRIPTION" value="Р—Р°РєР°Р· РЅРѕРјРµСЂ #<?= $MNT_TRANSACTION_ID?>">
 			<input type="hidden" name="paymentSystem" value="<?= $payment_system?>">
 			<input type="hidden" name="MNT_SUCCESS_URL" value="<?= $host . "/personal/order/"?>">
 			<input type="hidden" name="MNT_FAIL_URL" value="<?= $host. "/personal/order/"?>">

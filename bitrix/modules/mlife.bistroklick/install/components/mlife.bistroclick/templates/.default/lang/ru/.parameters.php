@@ -1,4 +1,4 @@
 <?
-$MESS['MLIFE_CAT_BK_JQUERY'] = 'Ïîäêëþ÷àòü Jquery?';
-$MESS['MLIFE_CAT_BK_FANCY'] = 'Ïîäêëþ÷àòü FancyBox?';
+$MESS['MLIFE_CAT_BK_JQUERY'] = 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Jquery?';
+$MESS['MLIFE_CAT_BK_FANCY'] = 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ FancyBox?';
 ?>

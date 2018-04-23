@@ -1,3 +1,3 @@
 <?
-$MESS ['subscr_prolog_title'] = "Ìîäóëü ðàññûëêè";
+$MESS ['subscr_prolog_title'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";
 ?>

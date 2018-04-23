@@ -3,33 +3,33 @@
 include_once("redsms_pest.php");
 
 /**
- * Клиент для взаимодействия с Devino REST API
+ * РљР»РёРµРЅС‚ РґР»СЏ РІР·Р°РёРјРѕРґРµР№СЃС‚РІРёСЏ СЃ Devino REST API
  *
- * Клиент может использоваться как набор статичных функций или как класс.
- * Статиченые функции имеют суфикс _St. Необходимо сохранять ID сессии.
- * При использовании класса, идентификатор сессии хранится внутри класса.
+ * РљР»РёРµРЅС‚ РјРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєР°Рє РЅР°Р±РѕСЂ СЃС‚Р°С‚РёС‡РЅС‹С… С„СѓРЅРєС†РёР№ РёР»Рё РєР°Рє РєР»Р°СЃСЃ.
+ * РЎС‚Р°С‚РёС‡РµРЅС‹Рµ С„СѓРЅРєС†РёРё РёРјРµСЋС‚ СЃСѓС„РёРєСЃ _St. РќРµРѕР±С…РѕРґРёРјРѕ СЃРѕС…СЂР°РЅСЏС‚СЊ ID СЃРµСЃСЃРёРё.
+ * РџСЂРё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё РєР»Р°СЃСЃР°, РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё С…СЂР°РЅРёС‚СЃСЏ РІРЅСѓС‚СЂРё РєР»Р°СЃСЃР°.
  *
  */
 class SMSClient {
 
-	//////////////////////////////// Статичные методы ////////////////////////////////
+	//////////////////////////////// РЎС‚Р°С‚РёС‡РЅС‹Рµ РјРµС‚РѕРґС‹ ////////////////////////////////
 
 	/**
-	 * Базовый адрес для отправки запросов
+	 * Р‘Р°Р·РѕРІС‹Р№ Р°РґСЂРµСЃ РґР»СЏ РѕС‚РїСЂР°РІРєРё Р·Р°РїСЂРѕСЃРѕРІ
 	 * @const
 	 */
 	const m_baseURL = "https://integrationapi.net/rest";
 
 	/**
-	 * Запрос ID сессии
+	 * Р—Р°РїСЂРѕСЃ ID СЃРµСЃСЃРёРё
 	 *
 	 * @access public
 	 * @static
 	 *
-	 * @param string $login Имя пользователя
-	 * @param string $password Пароль
+	 * @param string $login РРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+	 * @param string $password РџР°СЂРѕР»СЊ
 	 *
-	 * @return string Идентификатор сессии
+	 * @return string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
 	 * @throws SMSError_Exception
 	 */
 	public static function getSessionID_St( $login, $password ) {
@@ -49,14 +49,14 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запроса баланса
+	 * Р—Р°РїСЂРѕСЃР° Р±Р°Р»Р°РЅСЃР°
 	 *
 	 * @access public
 	 * @static	 
 	 *
-	 * @param string $sessionID ID сессии. @see getSessionID_St
+	 * @param string $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
 	 *
-	 * @return double Баланс
+	 * @return double Р‘Р°Р»Р°РЅСЃ
 	 * @throws SMSError_Exception
 	 */
 	public static function getBalance_St( $sessionID ) {
@@ -76,19 +76,19 @@ class SMSClient {
 	}
 	
 	/**
-	 * Отправка SMS-сообщения
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
 	 *
 	 * @access public
 	 * @static
 	 *
-	 * @param string  $sessionID ID сессии. @see getSessionID_St
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param string  $destinationAddress адрес назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp. Необязательный параметр.
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param string  $destinationAddress Р°РґСЂРµСЃ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ.
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
-	 * @return array массив идентификаторов сообщений
+	 * @return array РјР°СЃСЃРёРІ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃРѕРѕР±С‰РµРЅРёР№
 	 * @throws SMSError_Exception
 	 */
 	public static function send_St( $sessionID, $sourceAddres, $destinationAddress, $data, $sendDate=null, $validity=0 ) {
@@ -108,19 +108,19 @@ class SMSClient {
 	}
 	
 	/**
-	 * Отправка SMS-сообщения с учетом часового пояса получателя.
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ СЃ СѓС‡РµС‚РѕРј С‡Р°СЃРѕРІРѕРіРѕ РїРѕСЏСЃР° РїРѕР»СѓС‡Р°С‚РµР»СЏ.
 	 *
 	 * @access public
 	 * @static
 	 *
-	 * @param string  $sessionID ID сессии. @see getSessionID_St
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param string  $destinationAddress адрес назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения по местному времени получателя. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param string  $destinationAddress Р°РґСЂРµСЃ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ РїРѕ РјРµСЃС‚РЅРѕРјСѓ РІСЂРµРјРµРЅРё РїРѕР»СѓС‡Р°С‚РµР»СЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
-	 * @return array массив идентификаторов сообщений
+	 * @return array РјР°СЃСЃРёРІ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃРѕРѕР±С‰РµРЅРёР№
 	 * @throws SMSError_Exception
 	 */	
 	public static function sendByTimeZone_St( $sessionID,$sourceAddres, $destinationAddress, $data, $sendDate, $validity=0 ) {
@@ -140,19 +140,19 @@ class SMSClient {
 	}
 	
 	/**
-	 * Отправка SMS-сообщения нескольким адрессатам
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ РЅРµСЃРєРѕР»СЊРєРёРј Р°РґСЂРµСЃСЃР°С‚Р°Рј
 	 *
 	 * @access public
 	 * @static
 	 *
-	 * @param string  $sessionID ID сессии. @see getSessionID_St
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param array   $destinationAddresses массив строк адресов назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp. Необязательный параметр.
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param array   $destinationAddresses РјР°СЃСЃРёРІ СЃС‚СЂРѕРє Р°РґСЂРµСЃРѕРІ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ.
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
-	 * @return array массив идентификаторов сообщений
+	 * @return array РјР°СЃСЃРёРІ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃРѕРѕР±С‰РµРЅРёР№
 	 * @throws SMSError_Exception
 	 */	
 	public static function sendBulk_St( $sessionID,$sourceAddres, $destinationAddresses, $data, $sendDate=null, $validity=0 ) {
@@ -177,22 +177,22 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос статуса SMS-сообщения
+	 * Р—Р°РїСЂРѕСЃ СЃС‚Р°С‚СѓСЃР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
 	 *
 	 * @access public
 	 * @static
 	 *
-	 * @param string $sessionID ID сессии. @see getSessionID_St
-	 * @param string $messageID ID сообщения.
+	 * @param string $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param string $messageID ID СЃРѕРѕР±С‰РµРЅРёСЏ.
 	 *
-	 * @return array массив полей:
-	 *		State	- статус сообщения. @see SMSClientSMSStatus
-	 *		TimeStampUtc		- дата и время получения ответа
-	 *		StateDescription	- описание статуса
-	 *		CreationDateUtc		- дата создания
-	 *		SubmittedDateUtc	- дата отправки
-	 *		ReportedDateUtc		- дата доставки
-	 *		Price	- цена за сообщение
+	 * @return array РјР°СЃСЃРёРІ РїРѕР»РµР№:
+	 *		State	- СЃС‚Р°С‚СѓСЃ СЃРѕРѕР±С‰РµРЅРёСЏ. @see SMSClientSMSStatus
+	 *		TimeStampUtc		- РґР°С‚Р° Рё РІСЂРµРјСЏ РїРѕР»СѓС‡РµРЅРёСЏ РѕС‚РІРµС‚Р°
+	 *		StateDescription	- РѕРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°
+	 *		CreationDateUtc		- РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ
+	 *		SubmittedDateUtc	- РґР°С‚Р° РѕС‚РїСЂР°РІРєРё
+	 *		ReportedDateUtc		- РґР°С‚Р° РґРѕСЃС‚Р°РІРєРё
+	 *		Price	- С†РµРЅР° Р·Р° СЃРѕРѕР±С‰РµРЅРёРµ
 	 * @throws SMSError_Exception
 	 */
 	public static function getSMSState_St( $sessionID, $messageID ) {
@@ -218,20 +218,20 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос входящих SMS-сообщений
+	 * Р—Р°РїСЂРѕСЃ РІС…РѕРґСЏС‰РёС… SMS-СЃРѕРѕР±С‰РµРЅРёР№
 	 *
 	 * @access public
 	 * @static
 	 * 
-	 * @param string $sessionID ID сессии. @see getSessionID_St
-	 * @param mixed  $minDateUTC начало периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param mixed  $maxDateUTC конец периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp	 
+	 * @param string $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param mixed  $minDateUTC РЅР°С‡Р°Р»Рѕ РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param mixed  $maxDateUTC РєРѕРЅРµС† РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp	 
 	 *
-	 * @return array массив объектов с полями:
-	 * 		string Data				- текст сообщения
-	 *		string SourceAddress	- адрес отправителя
-	 *		string DestinationAddress	- адрес приема входящих сообщений
-	 *		string ID	- идентификатор сообщения
+	 * @return array РјР°СЃСЃРёРІ РѕР±СЉРµРєС‚РѕРІ СЃ РїРѕР»СЏРјРё:
+	 * 		string Data				- С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 *		string SourceAddress	- Р°РґСЂРµСЃ РѕС‚РїСЂР°РІРёС‚РµР»СЏ
+	 *		string DestinationAddress	- Р°РґСЂРµСЃ РїСЂРёРµРјР° РІС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№
+	 *		string ID	- РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
 	 * @throws SMSError_Exception
 	 */
 	public static function getInbox_St( $sessionID, $minDateUTC, $maxDateUTC ) {
@@ -269,16 +269,16 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос статистики по SMS-рассылкам
+	 * Р—Р°РїСЂРѕСЃ СЃС‚Р°С‚РёСЃС‚РёРєРё РїРѕ SMS-СЂР°СЃСЃС‹Р»РєР°Рј
 	 *
 	 * @access public
 	 * @static	 
 	 *
-	 * @param string $sessionID ID сессии. @see getSessionID_St
-	 * @param mixed  $startDate начало периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param mixed  $stopDate конец периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp	 
+	 * @param string $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param mixed  $startDate РЅР°С‡Р°Р»Рѕ РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param mixed  $stopDate РєРѕРЅРµС† РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp	 
 	 *
-	 * @return array массив с информацией по статистике
+	 * @return array РјР°СЃСЃРёРІ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ РїРѕ СЃС‚Р°С‚РёСЃС‚РёРєРµ
 	 * @throws SMSError_Exception
 	 */
 	public static function getStatistics_St( $sessionID, $startDate, $stopDate ) {
@@ -309,33 +309,33 @@ class SMSClient {
 		return $result;
 	}
 	
-	//////////////////////////////// Методы для работы с классом ////////////////////////////////
+	//////////////////////////////// РњРµС‚РѕРґС‹ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РєР»Р°СЃСЃРѕРј ////////////////////////////////
 	
 	/**
-	 * Сохраненный идентификатор сессии
+	 * РЎРѕС…СЂР°РЅРµРЅРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
 	 * 
 	 * @access protected
 	 */
 	protected $m_sessionID = "";
 	
 	/**
-	 * Сохраненный логин
+	 * РЎРѕС…СЂР°РЅРµРЅРЅС‹Р№ Р»РѕРіРёРЅ
 	 * 
 	 * @access protected	 
 	 */
 	protected $m_login = "";
 	/**
-	 * Сохраненный пароль
+	 * РЎРѕС…СЂР°РЅРµРЅРЅС‹Р№ РїР°СЂРѕР»СЊ
 	 * 
 	 * @access protected	 
 	 */
 	protected $m_password = "";
 	
 	/**
-	 * Конструктор. В него передаются логин и пароль.
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ. Р’ РЅРµРіРѕ РїРµСЂРµРґР°СЋС‚СЃСЏ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ.
 	 * 
-	 * @param string $login Логин
-	 * @param string $password Пароль
+	 * @param string $login Р›РѕРіРёРЅ
+	 * @param string $password РџР°СЂРѕР»СЊ
 	 *
 	 */
 	function __construct( $login, $password ) {
@@ -344,11 +344,11 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос ID сессии.
+	 * Р—Р°РїСЂРѕСЃ ID СЃРµСЃСЃРёРё.
 	 *
 	 * @access public
 	 *
-	 * @return string Идентификатор сессии
+	 * @return string РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРµСЃСЃРёРё
 	 * @throws SMSError_Exception
 	 */	
 	public function getSessionID() {
@@ -357,11 +357,11 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запроса баланса
+	 * Р—Р°РїСЂРѕСЃР° Р±Р°Р»Р°РЅСЃР°
 	 *
 	 * @access public
 	 *
-	 * @return double Баланс
+	 * @return double Р‘Р°Р»Р°РЅСЃ
 	 * @throws SMSError_Exception
 	 */	
 	public function getBalance() {
@@ -370,15 +370,15 @@ class SMSClient {
 	}
 	
 	/**
-	 * Отправка SMS-сообщения
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
 	 *
 	 * @access public
 	 *
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param string  $destinationAddress адрес назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp. Необязательный параметр.
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param string  $destinationAddress Р°РґСЂРµСЃ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ.
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
 	 * @return
 	 * @throws SMSError_Exception
@@ -389,15 +389,15 @@ class SMSClient {
 	}
 	
 	/**
-	 * Отправка SMS-сообщения с учетом часового пояса получателя.
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ СЃ СѓС‡РµС‚РѕРј С‡Р°СЃРѕРІРѕРіРѕ РїРѕСЏСЃР° РїРѕР»СѓС‡Р°С‚РµР»СЏ.
 	 *
 	 * @access public
 	 *
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param string  $destinationAddress адрес назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения по местному времени получателя. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param string  $destinationAddress Р°РґСЂРµСЃ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ РїРѕ РјРµСЃС‚РЅРѕРјСѓ РІСЂРµРјРµРЅРё РїРѕР»СѓС‡Р°С‚РµР»СЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
 	 * @return
 	 * @throws SMSError_Exception
@@ -408,15 +408,15 @@ class SMSClient {
 	}
 
 	/**
-	 * Отправка SMS-сообщения с учетом часового пояса получателя.
+	 * РћС‚РїСЂР°РІРєР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ СЃ СѓС‡РµС‚РѕРј С‡Р°СЃРѕРІРѕРіРѕ РїРѕСЏСЃР° РїРѕР»СѓС‡Р°С‚РµР»СЏ.
 	 *
 	 * @access public
 	 *
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param array   $destinationAddresses массив строк адресов назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp. Необязательный параметр.
-	 * @param integer $validity Время жизни сообщения в минутах. Необязательный параметр
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param array   $destinationAddresses РјР°СЃСЃРёРІ СЃС‚СЂРѕРє Р°РґСЂРµСЃРѕРІ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ.
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…. РќРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
 	 * 
 	 * @return
 	 * @throws SMSError_Exception
@@ -427,20 +427,20 @@ class SMSClient {
 	}	
 	
 	/**
-	 * Запрос статуса SMS-сообщения
+	 * Р—Р°РїСЂРѕСЃ СЃС‚Р°С‚СѓСЃР° SMS-СЃРѕРѕР±С‰РµРЅРёСЏ
 	 *
 	 * @access public
 	 *
-	 * @param string $messageID ID сообщения.
+	 * @param string $messageID ID СЃРѕРѕР±С‰РµРЅРёСЏ.
 	 *
-	 * @return array массив полей:
-	 *		State	- статус сообщения. @see SMSClientSMSStatus
-	 *		SMSClientSMSStatus	- дата и время получения ответа
-	 *		StateDescription	- описание статуса
-	 *		CreationDateUtc		- дата создания
-	 *		SubmittedDateUtc	- дата отправки
-	 *		ReportedDateUtc		- дата доставки
-	 *		Price	- цена за сообщение
+	 * @return array РјР°СЃСЃРёРІ РїРѕР»РµР№:
+	 *		State	- СЃС‚Р°С‚СѓСЃ СЃРѕРѕР±С‰РµРЅРёСЏ. @see SMSClientSMSStatus
+	 *		SMSClientSMSStatus	- РґР°С‚Р° Рё РІСЂРµРјСЏ РїРѕР»СѓС‡РµРЅРёСЏ РѕС‚РІРµС‚Р°
+	 *		StateDescription	- РѕРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°
+	 *		CreationDateUtc		- РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ
+	 *		SubmittedDateUtc	- РґР°С‚Р° РѕС‚РїСЂР°РІРєРё
+	 *		ReportedDateUtc		- РґР°С‚Р° РґРѕСЃС‚Р°РІРєРё
+	 *		Price	- С†РµРЅР° Р·Р° СЃРѕРѕР±С‰РµРЅРёРµ
 	 * @throws SMSError_Exception
 	 */
 	public function getSMSState( $messageID ) {
@@ -449,18 +449,18 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос входящих SMS-сообщений
+	 * Р—Р°РїСЂРѕСЃ РІС…РѕРґСЏС‰РёС… SMS-СЃРѕРѕР±С‰РµРЅРёР№
 	 *
 	 * @access public
 	 * 
-	 * @param mixed  $minDateUTC начало периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param mixed  $maxDateUTC конец периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp	 
+	 * @param mixed  $minDateUTC РЅР°С‡Р°Р»Рѕ РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param mixed  $maxDateUTC РєРѕРЅРµС† РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp	 
 	 *
-	 * @return array массив объектов с полями:
-	 * 		string Data				- текст сообщения
-	 *		string SourceAddress	- адрес отправителя
-	 *		string DestinationAddress	- адрес приема входящих сообщений
-	 *		string ID	- идентификатор сообщения
+	 * @return array РјР°СЃСЃРёРІ РѕР±СЉРµРєС‚РѕРІ СЃ РїРѕР»СЏРјРё:
+	 * 		string Data				- С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 *		string SourceAddress	- Р°РґСЂРµСЃ РѕС‚РїСЂР°РІРёС‚РµР»СЏ
+	 *		string DestinationAddress	- Р°РґСЂРµСЃ РїСЂРёРµРјР° РІС…РѕРґСЏС‰РёС… СЃРѕРѕР±С‰РµРЅРёР№
+	 *		string ID	- РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
 	 * @throws SMSError_Exception
 	 */
 	public function getInbox( $minDateUTC, $maxDateUTC ) {
@@ -469,14 +469,14 @@ class SMSClient {
 	}
 	
 	/**
-	 * Запрос статистики по SMS-рассылкам
+	 * Р—Р°РїСЂРѕСЃ СЃС‚Р°С‚РёСЃС‚РёРєРё РїРѕ SMS-СЂР°СЃСЃС‹Р»РєР°Рј
 	 *
 	 * @access public
 	 *
-	 * @param mixed  $startDate начало периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param mixed    $stopDate конец периода выборки. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp	 
+	 * @param mixed  $startDate РЅР°С‡Р°Р»Рѕ РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param mixed    $stopDate РєРѕРЅРµС† РїРµСЂРёРѕРґР° РІС‹Р±РѕСЂРєРё. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp	 
 	 *
-	 * @return array массив с информацией по статистике
+	 * @return array РјР°СЃСЃРёРІ СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ РїРѕ СЃС‚Р°С‚РёСЃС‚РёРєРµ
 	 * @throws SMSError_Exception
 	 */	
 	public function getStatistics( $startDate, $stopDate ) {
@@ -484,22 +484,22 @@ class SMSClient {
 		return $result;	
 	}
 	
-	//////////////////////////////// Служебные методы ////////////////////////////////
+	//////////////////////////////// РЎР»СѓР¶РµР±РЅС‹Рµ РјРµС‚РѕРґС‹ ////////////////////////////////
 	
 	/**
-	 * Функция готовит строку запроса для методов отправки сообщения
+	 * Р¤СѓРЅРєС†РёСЏ РіРѕС‚РѕРІРёС‚ СЃС‚СЂРѕРєСѓ Р·Р°РїСЂРѕСЃР° РґР»СЏ РјРµС‚РѕРґРѕРІ РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ
 	 *
 	 * @access protected	 
 	 * @static 
 	 *
-	 * @param string  $sessionID ID сессии. @see getSessionID_St
-	 * @param string  $sourceAddres отправитель. До 11 латинских символов или до 15 цифровых.
-	 * @param mixed   $destinationAddress адрес или массив адресов назначения. (Код страны+код сети+номер телефона, Пример: 79031234567
-	 * @param string  $data Текст сообщения
-	 * @param mixed   $sendDate дата отправки сообщения. Строка вида (YYYY-MM-DDTHH:MM:SS) или Timestamp
-	 * @param integer $validity Время жизни сообщения в минутах
+	 * @param string  $sessionID ID СЃРµСЃСЃРёРё. @see getSessionID_St
+	 * @param string  $sourceAddres РѕС‚РїСЂР°РІРёС‚РµР»СЊ. Р”Рѕ 11 Р»Р°С‚РёРЅСЃРєРёС… СЃРёРјРІРѕР»РѕРІ РёР»Рё РґРѕ 15 С†РёС„СЂРѕРІС‹С….
+	 * @param mixed   $destinationAddress Р°РґСЂРµСЃ РёР»Рё РјР°СЃСЃРёРІ Р°РґСЂРµСЃРѕРІ РЅР°Р·РЅР°С‡РµРЅРёСЏ. (РљРѕРґ СЃС‚СЂР°РЅС‹+РєРѕРґ СЃРµС‚Рё+РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°, РџСЂРёРјРµСЂ: 79031234567
+	 * @param string  $data РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+	 * @param mixed   $sendDate РґР°С‚Р° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ. РЎС‚СЂРѕРєР° РІРёРґР° (YYYY-MM-DDTHH:MM:SS) РёР»Рё Timestamp
+	 * @param integer $validity Р’СЂРµРјСЏ Р¶РёР·РЅРё СЃРѕРѕР±С‰РµРЅРёСЏ РІ РјРёРЅСѓС‚Р°С…
 	 * 
-	 * @return array Массив с параметрами
+	 * @return array РњР°СЃСЃРёРІ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	 */
 	protected static function createRequestParameters( $sessionID, $sourceAddres, $destinationAddress, $data, $sendDate, $validity ) {
 		$parameters = array(
@@ -530,7 +530,7 @@ class SMSClient {
 }
 
 /**
- * Список констант с кодами ошибок
+ * РЎРїРёСЃРѕРє РєРѕРЅСЃС‚Р°РЅС‚ СЃ РєРѕРґР°РјРё РѕС€РёР±РѕРє
  */
 class SMSClientError {
 	const ERROR_OK							= 0;
@@ -546,7 +546,7 @@ class SMSClientError {
 }
 
 /**
- * Список констант с кодами статусов SMS-сообщений
+ * РЎРїРёСЃРѕРє РєРѕРЅСЃС‚Р°РЅС‚ СЃ РєРѕРґР°РјРё СЃС‚Р°С‚СѓСЃРѕРІ SMS-СЃРѕРѕР±С‰РµРЅРёР№
  */
 class SMSClientSMSStatus {
 	const SMS_STATUS_Send		= -1;
@@ -565,6 +565,6 @@ class SMSClientSMSStatus {
 }
 
 /**
- * Генерируемое исключение при ошибке отправки SMS
+ * Р“РµРЅРµСЂРёСЂСѓРµРјРѕРµ РёСЃРєР»СЋС‡РµРЅРёРµ РїСЂРё РѕС€РёР±РєРµ РѕС‚РїСЂР°РІРєРё SMS
  */
 class SMSError_Exception extends Exception {}

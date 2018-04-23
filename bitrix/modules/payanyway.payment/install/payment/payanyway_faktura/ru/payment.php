@@ -1,6 +1,6 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_FAKTURA_TITLE'] 	= 'Èíòåðíåò-áàíê "Faktura.ru"';
+$MESS['PAYANYWAY_FAKTURA_TITLE'] 	= 'Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð±Ð°Ð½Ðº "Faktura.ru"';
 
 ?>

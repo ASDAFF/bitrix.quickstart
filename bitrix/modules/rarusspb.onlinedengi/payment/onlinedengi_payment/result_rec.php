@@ -4,19 +4,19 @@
 // mailto:dev@1-integrator.com
 //
 
-// по умолчанию отправляем нет
+// РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РѕС‚РїСЂР°РІР»СЏРµРј РЅРµС‚
 $sResultXml = '<code>NO</code>';
 if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] == 'POST') {
-	// подключим языковой файл
+	// РїРѕРґРєР»СЋС‡РёРј СЏР·С‹РєРѕРІРѕР№ С„Р°Р№Р»
 	include(GetLangFileName(dirname(__FILE__).'/', '/payment.php'));
 
-	// идентификатор платежа в системе OnlineDengi (до 20 цифр)
+	// РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РїР»Р°С‚РµР¶Р° РІ СЃРёСЃС‚РµРјРµ OnlineDengi (РґРѕ 20 С†РёС„СЂ)
 	$_POST['paymentid'] = intval($_POST['paymentid']);
-	// ID заказа
+	// ID Р·Р°РєР°Р·Р°
 	$_POST['userid'] = intval($_POST['userid']);
-	// ID платежной системы в битриксе
+	// ID РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РІ Р±РёС‚СЂРёРєСЃРµ
 	$arParams['PAY_SYSTEM_ID'] = intval($arParams['PAY_SYSTEM_ID']);
-	// режим оповещения
+	// СЂРµР¶РёРј РѕРїРѕРІРµС‰РµРЅРёСЏ
 	$bPayNotifyMode = $_POST['paymentid'] > 0;
 
 	$bCorrectPayment = true;
@@ -25,23 +25,23 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 	}
 
 	if($bCorrectPayment) {
-		//проверим чтобы заказ соответствовал платежной системе
+		//РїСЂРѕРІРµСЂРёРј С‡С‚РѕР±С‹ Р·Р°РєР°Р· СЃРѕРѕС‚РІРµС‚СЃС‚РІРѕРІР°Р» РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјРµ
 		$bCorrectPayment = $arParams['PAY_SYSTEM_ID'] == $arOrder['PAY_SYSTEM_ID'] ? $bCorrectPayment : false;
 	}
 
 	if(!$bPayNotifyMode && $bCorrectPayment && $arOrder['PAYED'] == 'Y') {
-		// в режиме проверки идентификатора заказа проверим статус заказа
-		// если уже оплачен, то сообщим NO, чтобы не производилась двойная оплата одного и того же заказа
+		// РІ СЂРµР¶РёРјРµ РїСЂРѕРІРµСЂРєРё РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° Р·Р°РєР°Р·Р° РїСЂРѕРІРµСЂРёРј СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°
+		// РµСЃР»Рё СѓР¶Рµ РѕРїР»Р°С‡РµРЅ, С‚Рѕ СЃРѕРѕР±С‰РёРј NO, С‡С‚РѕР±С‹ РЅРµ РїСЂРѕРёР·РІРѕРґРёР»Р°СЃСЊ РґРІРѕР№РЅР°СЏ РѕРїР»Р°С‚Р° РѕРґРЅРѕРіРѕ Рё С‚РѕРіРѕ Р¶Рµ Р·Р°РєР°Р·Р°
 		$bCorrectPayment = false;
 	}
 
 	if($bCorrectPayment) {
 		CSalePaySystemAction::InitParamArrays($arOrder, $arOrder['ID']);
-		// секретный ключ
+		// СЃРµРєСЂРµС‚РЅС‹Р№ РєР»СЋС‡
 		$ONLINEDENGI_SECRET_KEY = CSalePaySystemAction::GetParamValue('ONLINEDENGI_SECRET_KEY');
 		$sSecretHash = COnlineDengiPayment::GetSecretHash($arOrder['ID'], $ONLINEDENGI_SECRET_KEY);
 		$_POST['key'] = htmlspecialchars(trim($_POST['key']));
-		// сколько должен оплатить
+		// СЃРєРѕР»СЊРєРѕ РґРѕР»Р¶РµРЅ РѕРїР»Р°С‚РёС‚СЊ
 		$fShouldPay = CSalePaySystemAction::GetParamValue('ONLINEDENGI_AMOUNT');
 		if($fShouldPay <= 0 || !$sSecretHash == $_POST['key']) {
 			$bCorrectPayment = false;
@@ -50,10 +50,10 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 
 	if($bCorrectPayment) {
 		if(!$bPayNotifyMode) {
-			// режим проверки идентификатора пользователя
+			// СЂРµР¶РёРј РїСЂРѕРІРµСЂРєРё РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 			$sResultXml = '<code>YES</code>';
 		} else {
-			// режим оповещения зачисления средств
+			// СЂРµР¶РёРј РѕРїРѕРІРµС‰РµРЅРёСЏ Р·Р°С‡РёСЃР»РµРЅРёСЏ СЃСЂРµРґСЃС‚РІ
 			$arErrors = array();
 			$fUpdateAccountValue = false;
 			$bPayOrder = false;
@@ -65,14 +65,14 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 				'USER_ID' => $arOrder['USER_ID']
 			);
 
-			// !!! валюта платежной системы OnlineDengi - рубли РФ (RUB)
+			// !!! РІР°Р»СЋС‚Р° РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ OnlineDengi - СЂСѓР±Р»Рё Р Р¤ (RUB)
 			$sSysCurrencyCode = 'RUB';
 			if($arOrder['PAYED'] != 'Y' && $arOrder['PS_STATUS'] != 'Y') {
-				// получим метаданные способа оплаты
+				// РїРѕР»СѓС‡РёРј РјРµС‚Р°РґР°РЅРЅС‹Рµ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹
 				$iModeType = intval($_POST['paymode']);
 				$arModeType = COnlineDengiPayment::GetModeTypeById($iModeType);
 				if(!empty($arModeType)) {
-					//проверим чтобы способ оплаты был доступен для платежной системы
+					//РїСЂРѕРІРµСЂРёРј С‡С‚РѕР±С‹ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ Р±С‹Р» РґРѕСЃС‚СѓРїРµРЅ РґР»СЏ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹
 					$iTmpVal = intval(CSalePaySystemAction::GetParamValue('ONLINEDENGI_AVAILABLE_TYPE_'.$iModeType));
 					if(!$iTmpVal) {
 						$arModeType = false;
@@ -80,13 +80,13 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 				}
 
 				if(!empty($arModeType)) {
-					// сумма приходит в рублях РФ
+					// СЃСѓРјРјР° РїСЂРёС…РѕРґРёС‚ РІ СЂСѓР±Р»СЏС… Р Р¤
 					$fAmount = doubleval($_POST['amount']);
 					$fAmountConverted = $arOrder['CURRENCY'] == $sSysCurrencyCode ? $fAmount : false;
 
 					$arCurrencyRates = array();
 					if(($arOrder['CURRENCY'] != $sSysCurrencyCode) || ($arModeType['currency'] != $arOrder['CURRENCY'])) {
-						// получим курсы валют для конвертации
+						// РїРѕР»СѓС‡РёРј РєСѓСЂСЃС‹ РІР°Р»СЋС‚ РґР»СЏ РєРѕРЅРІРµСЂС‚Р°С†РёРё
 						$arCurrencyRates = COnlineDengiPayment::GetCurrancyRates();
 						if(empty($arCurrencyRates)) {
 							$arErrors['ERR_ONLINEDENGI_RESPONSE_CURRENCY_RATES'] = GetMessage('ERR_ONLINEDENGI_RESPONSE_CURRENCY_RATES');
@@ -96,7 +96,7 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 					
 					if($arOrder['CURRENCY'] != $sSysCurrencyCode && !empty($arCurrencyRates)) {
 						$bRoundUp = false;
-						// переведем оплаченную сумму в валюту заказа
+						// РїРµСЂРµРІРµРґРµРј РѕРїР»Р°С‡РµРЅРЅСѓСЋ СЃСѓРјРјСѓ РІ РІР°Р»СЋС‚Сѓ Р·Р°РєР°Р·Р°
 						$fAmountConverted = COnlineDengiPayment::ConvertCurrancyAmount($fAmount, $sSysCurrencyCode, $arOrder['CURRENCY'], $arModeType['precission'], $bRoundUp, $arCurrencyRates);
 					}
 
@@ -109,7 +109,7 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 						$fModeTypeSum = $arOrder['CURRENCY'] == $arModeType['currency'] ? $arOrder['PRICE'] : COnlineDengiPayment::ConvertCurrancyAmount($arOrder['PRICE'], $arOrder['CURRENCY'], $arModeType['currency'], $arModeType['precission'], $arCurrencyRates);
 						$arFields['PS_STATUS_MESSAGE'] = GetMessage('ONLINEDENGI_REC_MODE_TYPE_SUM').$fModeTypeSum.' '.$arModeType['display_currency'].'; ';
 						if(!empty($arCurrencyRates)) {
-							// запишем курсы вылют, которые участвовали в конвертации
+							// Р·Р°РїРёС€РµРј РєСѓСЂСЃС‹ РІС‹Р»СЋС‚, РєРѕС‚РѕСЂС‹Рµ СѓС‡Р°СЃС‚РІРѕРІР°Р»Рё РІ РєРѕРЅРІРµСЂС‚Р°С†РёРё
 							if($arOrder['CURRENCY'] != $sSysCurrencyCode) {
 								$arFields['PS_STATUS_MESSAGE'] .= GetMessage('ONLINEDENGI_REC_COURSE').'1 '.$sSysCurrencyCode.' = '.$arCurrencyRates[$arOrder['CURRENCY']]['value'].' '.$arOrder['CURRENCY'].'; ';
 							}
@@ -123,36 +123,36 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 							if($fAmountConverted >= $fShouldPay) {
 								$bPayOrder = true;
 							} else {
-								// оплаченная сумма меньше
+								// РѕРїР»Р°С‡РµРЅРЅР°СЏ СЃСѓРјРјР° РјРµРЅСЊС€Рµ
 								$iWrongPayMode = intval(CSalePaySystemAction::GetParamValue('ONLINEDENGI_WRONG_PAY_MODE'));
 								if($iWrongPayMode == 1) {
-									// разрешена проводка при фактической оплате меньше счета
+									// СЂР°Р·СЂРµС€РµРЅР° РїСЂРѕРІРѕРґРєР° РїСЂРё С„Р°РєС‚РёС‡РµСЃРєРѕР№ РѕРїР»Р°С‚Рµ РјРµРЅСЊС€Рµ СЃС‡РµС‚Р°
 									$bPayOrder = true;
 								}elseif($iWrongPayMode == -1) {
-									// проводка запрещена, но средства записываются на счет пользователя
+									// РїСЂРѕРІРѕРґРєР° Р·Р°РїСЂРµС‰РµРЅР°, РЅРѕ СЃСЂРµРґСЃС‚РІР° Р·Р°РїРёСЃС‹РІР°СЋС‚СЃСЏ РЅР° СЃС‡РµС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 									$fUpdateAccountValue = $fAmountConverted;
 								}
 							}
                                         	}
 
                                         	if($bPayOrder) {
-							// !!! ВНИМАНИЕ !!! 
-							// При проводке посредством внутреннего счета пользователя, на счет будут зачислены и списаны средства равные стоимости заказа,
-							// а это значит, что при отмене заказа полная сумма будет списана обратно на счет покупателя (не фактически оплаченная!!!).
-							// Интернет-магазин версия 8.5.2 (2009-12-14), транзакции используются практически везде, параметр теряет смысл
+							// !!! Р’РќРРњРђРќРР• !!! 
+							// РџСЂРё РїСЂРѕРІРѕРґРєРµ РїРѕСЃСЂРµРґСЃС‚РІРѕРј РІРЅСѓС‚СЂРµРЅРЅРµРіРѕ СЃС‡РµС‚Р° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, РЅР° СЃС‡РµС‚ Р±СѓРґСѓС‚ Р·Р°С‡РёСЃР»РµРЅС‹ Рё СЃРїРёСЃР°РЅС‹ СЃСЂРµРґСЃС‚РІР° СЂР°РІРЅС‹Рµ СЃС‚РѕРёРјРѕСЃС‚Рё Р·Р°РєР°Р·Р°,
+							// Р° СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ РїСЂРё РѕС‚РјРµРЅРµ Р·Р°РєР°Р·Р° РїРѕР»РЅР°СЏ СЃСѓРјРјР° Р±СѓРґРµС‚ СЃРїРёСЃР°РЅР° РѕР±СЂР°С‚РЅРѕ РЅР° СЃС‡РµС‚ РїРѕРєСѓРїР°С‚РµР»СЏ (РЅРµ С„Р°РєС‚РёС‡РµСЃРєРё РѕРїР»Р°С‡РµРЅРЅР°СЏ!!!).
+							// РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ РІРµСЂСЃРёСЏ 8.5.2 (2009-12-14), С‚СЂР°РЅР·Р°РєС†РёРё РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ РїСЂР°РєС‚РёС‡РµСЃРєРё РІРµР·РґРµ, РїР°СЂР°РјРµС‚СЂ С‚РµСЂСЏРµС‚ СЃРјС‹СЃР»
 							/*
 							$bUseWithDraw = intval(CSalePaySystemAction::GetParamValue('ONLINEDENGI_USE_WITHDRAW'));
 							$bUseWithDraw = $bUseWithDraw == 1;
 							*/
 
-							// выполнение проводки оплаты заказа 
+							// РІС‹РїРѕР»РЅРµРЅРёРµ РїСЂРѕРІРѕРґРєРё РѕРїР»Р°С‚С‹ Р·Р°РєР°Р·Р° 
 							$bUseWithDraw = true;
 							$arAdditionalFields = array();
 							CSaleOrder::PayOrder($arOrder['ID'], 'Y', $bUseWithDraw, true, 0, $arAdditionalFields);
 						}
 
 						if($fAmountConverted > $fShouldPay) {
-							// если выполнена переплата, то переведм заказ в пользовательский статус
+							// РµСЃР»Рё РІС‹РїРѕР»РЅРµРЅР° РїРµСЂРµРїР»Р°С‚Р°, С‚Рѕ РїРµСЂРµРІРµРґРј Р·Р°РєР°Р· РІ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ СЃС‚Р°С‚СѓСЃ
 							$sChangeStatusCode = trim(CSalePaySystemAction::GetParamValue('ONLINEDENGI_OVERPAY_STATUS'));
 							if(strlen($sChangeStatusCode) > 0) {
 								CSaleOrder::StatusOrder($arOrder['ID'], $sChangeStatusCode);
@@ -165,7 +165,7 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 						}
 
 						if($fAmountConverted < $fShouldPay) {
-							// если оплата меньше, то переведм заказ в пользовательский статус
+							// РµСЃР»Рё РѕРїР»Р°С‚Р° РјРµРЅСЊС€Рµ, С‚Рѕ РїРµСЂРµРІРµРґРј Р·Р°РєР°Р· РІ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ СЃС‚Р°С‚СѓСЃ
 							$sChangeStatusCode = trim(CSalePaySystemAction::GetParamValue('ONLINEDENGI_DEFICIT_PAY_STATUS'));
 							if(strlen($sChangeStatusCode) > 0) {
 								CSaleOrder::StatusOrder($arOrder['ID'], $sChangeStatusCode);
@@ -180,10 +180,10 @@ if(CModule::IncludeModule('rarusspb.onlinedengi') && $_SERVER['REQUEST_METHOD'] 
 			}
 
 			if(empty($arErrors)) {
-				// сохранение данных об оплате
+				// СЃРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С… РѕР± РѕРїР»Р°С‚Рµ
 				$iOrderPayId = intval(CSaleOrder::Update($arOrder['ID'], $arFields));
 				if($fUpdateAccountValue) {
-					// дополнительная страховка от двойного зачисления средств
+					// РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ СЃС‚СЂР°С…РѕРІРєР° РѕС‚ РґРІРѕР№РЅРѕРіРѕ Р·Р°С‡РёСЃР»РµРЅРёСЏ СЃСЂРµРґСЃС‚РІ
 					$iCountTransact = CSaleUserTransact::GetList(array(), array('ORDER_ID' => $arOrder['ID'], 'DESCRIPTION' => 'ONLINEDENGI_PAYMENT'), array());
 					if($iCountTransact == 0) {
 						CSaleUserAccount::UpdateAccount($arOrder['USER_ID'], $fUpdateAccountValue, $arOrder['CURRENCY'], 'ONLINEDENGI_PAYMENT', $arOrder['ID']);

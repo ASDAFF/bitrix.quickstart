@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Компонент подписки");
+$APPLICATION->SetTitle("РљРѕРјРїРѕРЅРµРЅС‚ РїРѕРґРїРёСЃРєРё");
 ?>
-<h2>Почтовая подписка</h2>
+<h2>РџРѕС‡С‚РѕРІР°СЏ РїРѕРґРїРёСЃРєР°</h2>
 <?$APPLICATION->IncludeComponent("rarus.sms4b:subscribe.index", ".default", Array(
 	"SHOW_COUNT"	=>	"N",
 	"SHOW_HIDDEN"	=>	"Y",
@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("Компонент подписки");
 	)
 );?>
 <hr />
-<h2>SMS подписка</h2> 
+<h2>SMS РїРѕРґРїРёСЃРєР°</h2> 
 <?$APPLICATION->IncludeComponent("rarus.sms4b:subscribe.index", ".default", Array(
 	"SHOW_COUNT"	=>	"Y",
 	"SHOW_HIDDEN"	=>	"Y",

@@ -1,9 +1,9 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_DENGIMAIL_TITLE'] 	= 'Äåíüãè@Mail.Ru';
+$MESS['PAYANYWAY_DENGIMAIL_TITLE'] 	= 'Ð”ÐµÐ½ÑŒÐ³Ð¸@Mail.Ru';
 
-$MESS['PAYANYWAY_DENGIMAIL_EMAIL'] 	= 'E-mail â ñèñòåìå Äåíüãè@Mail.Ru';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK'] 	= 'Ïðîäîëæèòü';
+$MESS['PAYANYWAY_DENGIMAIL_EMAIL'] 	= 'E-mail Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ Ð”ÐµÐ½ÑŒÐ³Ð¸@Mail.Ru';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK'] 	= 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
 
 ?>

@@ -5,13 +5,13 @@ $arResult = array();
  
 if ($this->StartResultCache())
 {
-    // óñòàíîâêà îáÿçàòåëüíûõ ïàðàìåòðîâ
+    // ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
     $arParams["ID_GROUP"] = ($arParams["ID_GROUP"]) ? $arParams["ID_GROUP"] : "33389398";
     $arParams["TYPE_FORM"] = ($arParams["TYPE_FORM"]) ? $arParams["TYPE_FORM"] : "0";
     $arParams["WIDTH_FORM"] = ($arParams["WIDTH_FORM"]) ? $arParams["WIDTH_FORM"] : "300";
     $arParams["HEIGHT_FORM"] = ($arParams["HEIGHT_FORM"]) ? $arParams["HEIGHT_FORM"] : "290";
 
-    // îáðàáîòêà ïàðàìåòðîâ
+    // Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
     $options = sprintf('{mode: %s, width: "%s", height: "%s"}, %s',
         $arParams['TYPE_FORM'],
         $arParams['WIDTH_FORM'],
@@ -22,7 +22,7 @@ if ($this->StartResultCache())
         case 1: $suffix = "name"; break;
         case 2: $suffix = "news"; break;
     }
-    // îáðàáîòêà ðåçóëüòàòà
+    // Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°
     $arResult['ID_GROUP'] = $arParams['ID_GROUP'];
     $arResult['FORM']['TYPE'] = $arParams['TYPE_FORM'];
     $arResult['FORM']['WIDTH'] = $arParams['WIDTH_FORM'];
@@ -30,7 +30,7 @@ if ($this->StartResultCache())
     $arResult['SUFFIX'] = $suffix;
     $arResult['OPTIONS'] = $options;
     
-    // ïîäêëþ÷åíèå ñêðèïòîâ
+    // Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð²
     if ( ! $GLOBALS['VK_API']){
         $APPLICATION->AddHeadString('<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?45"></script>');
         $GLOBALS['VK_API'] = true;

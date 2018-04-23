@@ -1,17 +1,17 @@
 <?
-$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Äîñòóï çàïðåùåí";
-$MESS["MENU_HIDE"] = "ñâåðíóòü";
-$MESS["MENU_SHOW"] = "ðàçâåðíóòü";
-$MESS["MENU_HIDDEN_ITEMS"] = "Ñêðûòûå";
-$MESS["MENU_MORE_ITEMS_SHOW"] = "Åù¸";
-$MESS["MENU_MORE_ITEMS_HIDE"] = "Ñêðûòü";
-$MESS["MENU_EDIT_READY"] = "Ãîòîâî";
-$MESS["MENU_ADD_TO_FAVORITE"] = "Äîáàâèòü â èçáðàííîå";
-$MESS["MENU_DELETE_FROM_FAVORITE"] = "Óäàëèòü èç èçáðàííîãî";
-$MESS["MENU_HIDE_ITEM"] = "Ñêðûòü ïóíêò";
-$MESS["MENU_SHOW_ITEM"] = "Ïîêàçàòü ïóíêò";
-$MESS["MENU_ADD_TO_FAVORITE_ALL"] = "Äîáàâèòü â èçáðàííîå äëÿ âñåõ";
-$MESS["MENU_DELETE_FROM_FAVORITE_ALL"] = "Óäàëèòü èç èçáðàííîãî äëÿ âñåõ";
-$MESS["MENU_ITEM_EDIT_ERROR"] = "Îøèáêà ðåäàêòèðîâàíèÿ ïóíêòà";
-$MESS["MENU_SETTINGS_TITLE"] = "Íàñòðîèòü ìåíþ";
+$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½";
+$MESS["MENU_HIDE"] = "ÑÐ²ÐµÑ€Ð½ÑƒÑ‚ÑŒ";
+$MESS["MENU_SHOW"] = "Ñ€Ð°Ð·Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒ";
+$MESS["MENU_HIDDEN_ITEMS"] = "Ð¡ÐºÑ€Ñ‹Ñ‚Ñ‹Ðµ";
+$MESS["MENU_MORE_ITEMS_SHOW"] = "Ð•Ñ‰Ñ‘";
+$MESS["MENU_MORE_ITEMS_HIDE"] = "Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ";
+$MESS["MENU_EDIT_READY"] = "Ð“Ð¾Ñ‚Ð¾Ð²Ð¾";
+$MESS["MENU_ADD_TO_FAVORITE"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ";
+$MESS["MENU_DELETE_FROM_FAVORITE"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¸Ð· Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ð³Ð¾";
+$MESS["MENU_HIDE_ITEM"] = "Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚";
+$MESS["MENU_SHOW_ITEM"] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚";
+$MESS["MENU_ADD_TO_FAVORITE_ALL"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ðµ Ð´Ð»Ñ Ð²ÑÐµÑ…";
+$MESS["MENU_DELETE_FROM_FAVORITE_ALL"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¸Ð· Ð¸Ð·Ð±Ñ€Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð´Ð»Ñ Ð²ÑÐµÑ…";
+$MESS["MENU_ITEM_EDIT_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¿ÑƒÐ½ÐºÑ‚Ð°";
+$MESS["MENU_SETTINGS_TITLE"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½ÑŽ";
 ?>

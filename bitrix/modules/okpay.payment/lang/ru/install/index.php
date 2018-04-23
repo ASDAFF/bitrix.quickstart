@@ -1,6 +1,6 @@
 <?
-$MESS["okpay.payment_MODULE_NAME"] = "OKPay äëÿ Áèòðèêñ CMS";
-$MESS["okpay.payment_MODULE_DESC"] = "Ìîäóëü ïëàò¸æíîé ñèñòåìû OKPay äëÿ CMS \"Áèòðèêñ\" ðåäàêöèé \"Ìàëûé áèçíåñ\", \"Áèçíåñ\" è \"Áèçíåñ âåá-êëàñòåð\"";
+$MESS["okpay.payment_MODULE_NAME"] = "OKPay Ð´Ð»Ñ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ CMS";
+$MESS["okpay.payment_MODULE_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ OKPay Ð´Ð»Ñ CMS \"Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ\" Ñ€ÐµÐ´Ð°ÐºÑ†Ð¸Ð¹ \"ÐœÐ°Ð»Ñ‹Ð¹ Ð±Ð¸Ð·Ð½ÐµÑ\", \"Ð‘Ð¸Ð·Ð½ÐµÑ\" Ð¸ \"Ð‘Ð¸Ð·Ð½ÐµÑ Ð²ÐµÐ±-ÐºÐ»Ð°ÑÑ‚ÐµÑ€\"";
 $MESS["okpay.payment_PARTNER_NAME"] = "OKPay";
 $MESS["okpay.payment_PARTNER_URI"] = "https://www.okpay.com";
 ?>

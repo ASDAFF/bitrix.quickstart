@@ -1,5 +1,5 @@
 <?
-$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools Войти под пользователем";
-$MESS['DEFATOOLS_ENTER'] = "Войти";
-$MESS['DEFATOOLS_ACCESS_DENIED'] = "Доступ запрещен";
+$MESS['DEFATOOLS_PROP_NAME'] = "DefaTools Р’РѕР№С‚Рё РїРѕРґ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј";
+$MESS['DEFATOOLS_ENTER'] = "Р’РѕР№С‚Рё";
+$MESS['DEFATOOLS_ACCESS_DENIED'] = "Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰РµРЅ";
 ?>

@@ -1,12 +1,12 @@
 <?
-$MESS["MAIN_MENU_TYPE_NAME"] = "Òèï ìåíþ äëÿ ïåðâîãî óðîâíÿ";
-$MESS["CHILD_MENU_TYPE_NAME"] = "Òèï ìåíþ äëÿ îñòàëüíûõ óðîâíåé";
-$MESS["FILEMAN_OPTION_LEFT_MENU_NAME"] = "Ëåâîå ìåíþ";
-$MESS["FILEMAN_OPTION_TOP_MENU_NAME"] = "Âåðõíåå ìåíþ";
-$MESS["MAX_LEVEL_NAME"] = "Óðîâåíü âëîæåííîñòè ìåíþ";
-$MESS["USE_EXT_NAME"] = "Ïîäêëþ÷àòü ôàéëû ñ èìåíàìè âèäà .òèï_ìåíþ.menu_ext.php";
-$MESS["DELAY_NAME"] = "Îòêëàäûâàòü âûïîëíåíèå øàáëîíà ìåíþ";
-$MESS["CP_BM_MENU_CACHE_USE_GROUPS"] = "Ó÷èòûâàòü ïðàâà äîñòóïà";
-$MESS["CP_BM_MENU_CACHE_GET_VARS"] = "Çíà÷èìûå ïåðåìåííûå çàïðîñà";
-$MESS["comp_menu_allow_multi_select"] = "Ðàçðåøèòü íåñêîëüêî àêòèâíûõ ïóíêòîâ îäíîâðåìåííî";
+$MESS["MAIN_MENU_TYPE_NAME"] = "Ð¢Ð¸Ð¿ Ð¼ÐµÐ½ÑŽ Ð´Ð»Ñ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ ÑƒÑ€Ð¾Ð²Ð½Ñ";
+$MESS["CHILD_MENU_TYPE_NAME"] = "Ð¢Ð¸Ð¿ Ð¼ÐµÐ½ÑŽ Ð´Ð»Ñ Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑ€Ð¾Ð²Ð½ÐµÐ¹";
+$MESS["FILEMAN_OPTION_LEFT_MENU_NAME"] = "Ð›ÐµÐ²Ð¾Ðµ Ð¼ÐµÐ½ÑŽ";
+$MESS["FILEMAN_OPTION_TOP_MENU_NAME"] = "Ð’ÐµÑ€Ñ…Ð½ÐµÐµ Ð¼ÐµÐ½ÑŽ";
+$MESS["MAX_LEVEL_NAME"] = "Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ Ð²Ð»Ð¾Ð¶ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ Ð¼ÐµÐ½ÑŽ";
+$MESS["USE_EXT_NAME"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ñ‹ Ñ Ð¸Ð¼ÐµÐ½Ð°Ð¼Ð¸ Ð²Ð¸Ð´Ð° .Ñ‚Ð¸Ð¿_Ð¼ÐµÐ½ÑŽ.menu_ext.php";
+$MESS["DELAY_NAME"] = "ÐžÑ‚ÐºÐ»Ð°Ð´Ñ‹Ð²Ð°Ñ‚ÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° Ð¼ÐµÐ½ÑŽ";
+$MESS["CP_BM_MENU_CACHE_USE_GROUPS"] = "Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
+$MESS["CP_BM_MENU_CACHE_GET_VARS"] = "Ð—Ð½Ð°Ñ‡Ð¸Ð¼Ñ‹Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°";
+$MESS["comp_menu_allow_multi_select"] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ñ… Ð¿ÑƒÐ½ÐºÑ‚Ð¾Ð² Ð¾Ð´Ð½Ð¾Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾";
 ?>

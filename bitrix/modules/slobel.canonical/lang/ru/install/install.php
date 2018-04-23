@@ -1,5 +1,5 @@
 <?
 $MESS ['SL_MODULE_NAME'] = "Canonical";
-$MESS ['SL_MODULE_DESCRIPTION'] = "Íàñòðàéêà â ïóáëè÷íîé ÷àñòè Êàíîíè÷åñêîé (îðèãèíàëüíîé) ñòðàíèöû";
+$MESS ['SL_MODULE_DESCRIPTION'] = "ÐÐ°ÑÑ‚Ñ€Ð°Ð¹ÐºÐ° Ð² Ð¿ÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð¾Ð¹ Ñ‡Ð°ÑÑ‚Ð¸ ÐšÐ°Ð½Ð¾Ð½Ð¸Ñ‡ÐµÑÐºÐ¾Ð¹ (Ð¾Ñ€Ð¸Ð³Ð¸Ð½Ð°Ð»ÑŒÐ½Ð¾Ð¹) ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
 $MESS ['SL_PARTNER_NAME'] = "SLOBEL Studio";
 ?>

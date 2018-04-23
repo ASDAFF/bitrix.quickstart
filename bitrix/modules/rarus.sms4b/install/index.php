@@ -151,8 +151,8 @@ class rarus_sms4b extends CModule
 		RegisterModuleDependences("main", "OnBeforeEventAdd", "rarus.sms4b", "Csms4b", "Events");
 		RegisterModuleDependences("subscribe", "BeforePostingSendMail", "rarus.sms4b", "Csms4b", "EventsPosting");
 
-		//îáðàáîòêà ñîáûòèé äëÿ ÊÏ (only)
-		/* Æäåì êîãäà â Áèòðèêñ äîáàâÿò îáðàáîò÷èêà êàëåíäàðíûõ ñîáûòèé*/
+		//Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹ Ð´Ð»Ñ ÐšÐŸ (only)
+		/* Ð–Ð´ÐµÐ¼ ÐºÐ¾Ð³Ð´Ð° Ð² Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ Ð´Ð¾Ð±Ð°Ð²ÑÑ‚ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ° ÐºÐ°Ð»ÐµÐ½Ð´Ð°Ñ€Ð½Ñ‹Ñ… ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹*/
 		if (COption::GetOptionString("main", "vendor") == '1c_bitrix_portal')
 		{
 			RegisterModuleDependences('tasks', 'OnTaskAdd', 'rarus.sms4b', 'Csms4b', 'TaskAdded',10001);
@@ -195,7 +195,7 @@ class rarus_sms4b extends CModule
 				$statusMes[] = "SMS4B_ADMIN_SALE_STATUS_CHANGED_".$arStatus["ID"];
 			}
 		}
-		//@todo Ïåðåïèñàòü áîëåå óíèâåðñàëüíî
+		//@todo ÐŸÐµÑ€ÐµÐ¿Ð¸ÑÐ°Ñ‚ÑŒ Ð±Ð¾Ð»ÐµÐµ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ°Ð»ÑŒÐ½Ð¾
 		$eventType = new CEventType;
 		$eventType->Delete("SMS4B_ADMIN_SEND");
 		$eventType->Delete("SMS4B_TASK_ADD");

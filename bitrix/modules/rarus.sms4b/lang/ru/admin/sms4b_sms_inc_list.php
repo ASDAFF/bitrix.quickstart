@@ -1,29 +1,29 @@
 <?
 $MESS["sms_GUID"] = "GUID";
-$MESS["sms_MOMENT"] = "Äîñòàâëåíî";
-$MESS["sms_TIMEOFF"] = "Àêòóàëüíî";
-$MESS["sms_SOURCE"] = "Îòïðàâèòåëü";
-$MESS["sms_DESTINATION"] = "Ïîëó÷àòåëü";
-$MESS["sms_CODING"] = "Òèï êîäèðîâêè";
-$MESS["sms_BODY"] = "Òåêñò ñîîáùåíèÿ";
-$MESS["sms_TOTAL"] = "Âñåãî ÷àñòåé";
-$MESS["sms_PART"] = "Íîìåð ÷àñòü";  
+$MESS["sms_MOMENT"] = "Ð”Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_TIMEOFF"] = "ÐÐºÑ‚ÑƒÐ°Ð»ÑŒÐ½Ð¾";
+$MESS["sms_SOURCE"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_DESTINATION"] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_CODING"] = "Ð¢Ð¸Ð¿ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
+$MESS["sms_BODY"] = "Ð¢ÐµÐºÑÑ‚ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["sms_TOTAL"] = "Ð’ÑÐµÐ³Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹";
+$MESS["sms_PART"] = "ÐÐ¾Ð¼ÐµÑ€ Ñ‡Ð°ÑÑ‚ÑŒ";  
 
-$MES["sms_nav"] = "Íàâèãàöèÿ";
+$MES["sms_nav"] = "ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ";
 
 $MESS["sms_f_GUID"] = "GUID";
-$MESS["sms_f_Moment"] = "Äîñòàâëåíî";
-$MESS["sms_f_TimeOff"] = "Àêòóàëüíî";
-$MESS["sms_f_Source"] = "Îòïðàâèòåëü";
-$MESS["sms_f_Destination"] = "Ïîëó÷àòåëü";
-$MESS["sms_f_Coding"] = "Òèï êîäèðîâêè";
-$MESS["sms_f_Body"] = "Òåêñò ñîîáùåíèÿ";
-$MESS["sms_f_Total"] = "Âñåãî ÷àñòåé";
-$MESS["sms_f_Part"] = "Íîìåð ÷àñòü";  
+$MESS["sms_f_Moment"] = "Ð”Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_f_TimeOff"] = "ÐÐºÑ‚ÑƒÐ°Ð»ÑŒÐ½Ð¾";
+$MESS["sms_f_Source"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_f_Destination"] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["sms_f_Coding"] = "Ð¢Ð¸Ð¿ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
+$MESS["sms_f_Body"] = "Ð¢ÐµÐºÑÑ‚ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["sms_f_Total"] = "Ð’ÑÐµÐ³Ð¾ Ñ‡Ð°ÑÑ‚ÐµÐ¹";
+$MESS["sms_f_Part"] = "ÐÐ¾Ð¼ÐµÑ€ Ñ‡Ð°ÑÑ‚ÑŒ";  
 
-$MESS["sms_f_delivery"] = "Äîñòàâëåíî";
-$MESS["sms_f_active"] = "Àêòóàëüíî";
+$MESS["sms_f_delivery"] = "Ð”Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¾";
+$MESS["sms_f_active"] = "ÐÐºÑ‚ÑƒÐ°Ð»ÑŒÐ½Ð¾";
 
-$MESS["SMS_LIST_UPDATE"] = 'Îáíîâèòü';
-$MESS["CHECK_MODULE_OPT"] = 'Íåò ñîåäèíåíèÿ ñ ñåðâåðîì. Ïðîâåðüòå íàñòðîéêè ìîäóëÿ.';
+$MESS["SMS_LIST_UPDATE"] = 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ';
+$MESS["CHECK_MODULE_OPT"] = 'ÐÐµÑ‚ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ Ñ ÑÐµÑ€Ð²ÐµÑ€Ð¾Ð¼. ÐŸÑ€Ð¾Ð²ÐµÑ€ÑŒÑ‚Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ.';
 ?>

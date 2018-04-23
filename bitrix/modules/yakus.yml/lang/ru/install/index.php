@@ -1,6 +1,6 @@
 <?
-$MESS['yakus.yml_MODULE_NAME'] = 'Èìïîðò òîâàðîâ èç YML';
+$MESS['yakus.yml_MODULE_NAME'] = 'Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¸Ð· YML';
 $MESS['yakus.yml_PARTNER_NAME'] = 'YAKUS';
 $MESS['yakus.yml_PARTNER_URI'] = 'yakus.ru';
-$MESS['yakus.yml_MODULE_DESC'] = 'Èìïîðò òîâàðîâ â èíôîáëîêè èç ôàéëîâ ôîðìàòà YML';
+$MESS['yakus.yml_MODULE_DESC'] = 'Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸ Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð¾Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ð° YML';
 ?>

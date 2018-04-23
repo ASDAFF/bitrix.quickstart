@@ -1,5 +1,5 @@
 <?
-$MESS["MAILTRIG_EVENTS_MENU_MAIN"] = "MailTrig - òðèããåðíûå ðàññûëêè";
-$MESS["MAILTRIG_EVENTS_MENU_MAIN_TITLE"] = "MailTrig - òðèããåðíûå e-mail ðàññûëêè";
+$MESS["MAILTRIG_EVENTS_MENU_MAIN"] = "MailTrig - Ñ‚Ñ€Ð¸Ð³Ð³ÐµÑ€Ð½Ñ‹Ðµ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS["MAILTRIG_EVENTS_MENU_MAIN_TITLE"] = "MailTrig - Ñ‚Ñ€Ð¸Ð³Ð³ÐµÑ€Ð½Ñ‹Ðµ e-mail Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";
 $MESS["MAILTRIG_EVENTS_MENU_"] = "";
 ?>

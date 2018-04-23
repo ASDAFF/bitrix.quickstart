@@ -17,7 +17,7 @@ function Counters(texta, spanlength, spanpartsize, spanparts, needsms, numbersTe
     
     if (texta.value.match(/\r/g) == null)
 	{
-		//считаем количество символов
+		//СЃС‡РёС‚Р°РµРј РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ
 		var newLinesymbols = texta.value.match(/\n/g);
 		
 		if (newLinesymbols != null)
@@ -102,7 +102,7 @@ function getTelNumber(textAreaID, spanNumbers)
 	var array = telNumberStr.split(';');
 	var arrayWithoutEmpty = new Array();
 	
-	//убираем пустую строку
+	//СѓР±РёСЂР°РµРј РїСѓСЃС‚СѓСЋ СЃС‚СЂРѕРєСѓ
 	for (var ind in array)
 	{
 		if (array[ind] != "")
@@ -129,7 +129,7 @@ function CAjaxSms(pathForRequests, mainDomNodeId, sessid, mess)
 	this.clearButton = document.getElementById('clearListNumbers');
 	this.destinationOfficer = document.getElementById('dest'); 
 	this.destination = document.getElementById('destGroups');
-	//ну и запускаем функцию инициализации
+	//РЅСѓ Рё Р·Р°РїСѓСЃРєР°РµРј С„СѓРЅРєС†РёСЋ РёРЅРёС†РёР°Р»РёР·Р°С†РёРё
 	this.Init();
 }
 
@@ -172,7 +172,7 @@ CAjaxSms.prototype.LoadPhones = function()
 	
 	if (!checkboxes) 
 	{
-		alert('Вы не выбрали ни одной группы <-');
+		alert('Р’С‹ РЅРµ РІС‹Р±СЂР°Р»Рё РЅРё РѕРґРЅРѕР№ РіСЂСѓРїРїС‹ <-');
 		return;
 	}
 	
@@ -199,14 +199,14 @@ CAjaxSms.prototype.LoadPhones = function()
 			
 		}
 	    _this.destination.value = str;
-		//подсчет
+		//РїРѕРґСЃС‡РµС‚
 		getTelNumber('destGroups', 'smsNumberGroups');
 		Counters('message2','group-text-length', 'group-part-size', 'group-parts', 'group-need-sms', 'destGroups', 'smsNumberGroups')
 	}
 	
 	function onLoadError(error) 
 	{
-		var msg = "Ошибка "+error.errcode;
+		var msg = "РћС€РёР±РєР° "+error.errcode;
 		if (error.message) msg = msg + ' :'+error.message;
 		alert(msg);
 	}
@@ -223,13 +223,13 @@ CAjaxSms.prototype.LoadPhones = function()
 		var errinfo = { errcode: status };
 		if (xhr.status != 200) 
 		{
-			// может быть статус 200, а ошибка
-			// из-за некорректного JSON
+			// РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃС‚Р°С‚СѓСЃ 200, Р° РѕС€РёР±РєР°
+			// РёР·-Р·Р° РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРіРѕ JSON
 			errinfo.message = xhr.statusText;
 		} 
 		else 
 		{
-			errinfo.message = 'Некорректные данные с сервера';
+			errinfo.message = 'РќРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ СЃ СЃРµСЂРІРµСЂР°';
 		}
 		onLoadError(errinfo);
 	}
@@ -256,9 +256,9 @@ CAjaxSms.prototype.trans = function(text)
 		ch = '';
 		for(val in a)
 		{
-			if (text.substr(d6,1) == 'ь' || text.substr(d6,1) == 'Ь')
+			if (text.substr(d6,1) == 'СЊ' || text.substr(d6,1) == 'Р¬')
 				ch = "'";
-			if (text.substr(d6,1) == 'ъ' || text.substr(d6,1) == 'Ъ')
+			if (text.substr(d6,1) == 'СЉ' || text.substr(d6,1) == 'РЄ')
 				ch = "\"";
 			if (text.substr(d6,1) == '['  || text.substr(d6,1) == '{')
 				ch = "(";
@@ -276,9 +276,9 @@ CAjaxSms.prototype.trans = function(text)
 				ch = "i";
 			if (text.substr(d6,1) == '~')
 				ch = "-";
-			if (text.substr(d6,1) == '№')
+			if (text.substr(d6,1) == 'в„–')
 				ch = "N";
-			if (text.substr(d6,1) == '”')
+			if (text.substr(d6,1) == 'вЂќ')
 				ch = "\"";	
 			
 		  	if (text.substr(d6,1) == a[val])
@@ -304,10 +304,10 @@ CAjaxSms.prototype.trans_lat_to_kir = function(text)
 		{ 
 			if (text.substr(d6,3) == val) ch = a[val];						
 		}
-	    //если поиск по 3 не дал результата ищем по 2
+	    //РµСЃР»Рё РїРѕРёСЃРє РїРѕ 3 РЅРµ РґР°Р» СЂРµР·СѓР»СЊС‚Р°С‚Р° РёС‰РµРј РїРѕ 2
 		if (ch == "")
 		{
-			//ищем по 2
+			//РёС‰РµРј РїРѕ 2
 			for(var val in a)
 			{
 		 		if (text.substr(d6,2) == val) ch = a[val];
@@ -315,13 +315,13 @@ CAjaxSms.prototype.trans_lat_to_kir = function(text)
 			
 			if (ch == "")
 			{
-				//ищем по 1
+				//РёС‰РµРј РїРѕ 1
 				for(var val in a)
 				{
 		 			if (text.substr(d6,1) == val) ch = a[val];
 		 			
-		 			if (text.substr(d6,1) == "'") ch = "ь";
-		 			if (text.substr(d6,1) == "\"") ch = "ъ";
+		 			if (text.substr(d6,1) == "'") ch = "СЊ";
+		 			if (text.substr(d6,1) == "\"") ch = "СЉ";
 				}
 				
 				if (ch == "")
@@ -356,13 +356,13 @@ CAjaxSms.prototype.SWW = function()
 	
 	if (jsAjaxUtil.IsIE())
 	{
-		// для MSIE – разместим его посередине текущего отображаемого контента окна
+		// РґР»СЏ MSIE вЂ“ СЂР°Р·РјРµСЃС‚РёРј РµРіРѕ РїРѕСЃРµСЂРµРґРёРЅРµ С‚РµРєСѓС‰РµРіРѕ РѕС‚РѕР±СЂР°Р¶Р°РµРјРѕРіРѕ РєРѕРЅС‚РµРЅС‚Р° РѕРєРЅР°
 		var left = parseInt(document.body.scrollLeft + document.body.clientWidth/2 - obWaitWindow.offsetWidth/2);
 		var top = parseInt(document.body.scrollTop + document.body.clientHeight/2 - obWaitWindow.offsetHeight/2);
 	}
 	else
 	{
-		// для остального сделаем ее посередине окна и с фиксированным положением
+		// РґР»СЏ РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ СЃРґРµР»Р°РµРј РµРµ РїРѕСЃРµСЂРµРґРёРЅРµ РѕРєРЅР° Рё СЃ С„РёРєСЃРёСЂРѕРІР°РЅРЅС‹Рј РїРѕР»РѕР¶РµРЅРёРµРј
 		var left = parseInt(document.body.clientWidth/2 - obWaitWindow.offsetWidth/2);
 		var top = parseInt(document.body.clientHeight/2 - obWaitWindow.offsetHeight/2);
 		obWaitWindow.style.position = 'fixed';
@@ -371,11 +371,11 @@ CAjaxSms.prototype.SWW = function()
 	obWaitWindow.style.top = top;
 	obWaitWindow.style.left = left;
 	
-	obWaitWindow.innerHTML = '<div>Идет обработка отправки ...</div>';
+	obWaitWindow.innerHTML = '<div>РРґРµС‚ РѕР±СЂР°Р±РѕС‚РєР° РѕС‚РїСЂР°РІРєРё ...</div>';
 	
 	if(jsAjaxUtil.IsIE())
 	{
-		// для IE6 и ниже создадим под сообщением плавающий фрейм 
+		// РґР»СЏ IE6 Рё РЅРёР¶Рµ СЃРѕР·РґР°РґРёРј РїРѕРґ СЃРѕРѕР±С‰РµРЅРёРµРј РїР»Р°РІР°СЋС‰РёР№ С„СЂРµР№Рј 
 		var frame = document.createElement("IFRAME");
 		frame.src = "javascript:''";
 		frame.id = 'waitframe';
@@ -392,12 +392,12 @@ CAjaxSms.prototype.SWW = function()
 	obWaitWindowShadow.id = 'waitshadow';
 	if (jsAjaxUtil.IsIE()) 
 	{
-		// для MSIE – раскроем тень по всей высоте содержимого окна
+		// РґР»СЏ MSIE вЂ“ СЂР°СЃРєСЂРѕРµРј С‚РµРЅСЊ РїРѕ РІСЃРµР№ РІС‹СЃРѕС‚Рµ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ РѕРєРЅР°
 		obWaitWindowShadow.style.height = document.body.scrollHeight + 'px';
 	}
 	else 
 	{
-		// для остального сделаем ее фиксированной
+		// РґР»СЏ РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ СЃРґРµР»Р°РµРј РµРµ С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕР№
 		obWaitWindowShadow.style.position = 'fixed';
 	}
 	
@@ -417,17 +417,17 @@ CAjaxSms.prototype.SWW = function()
 
 CAjaxSms.prototype.CWW = function()
 {
-	//удаляем надпись
+	//СѓРґР°Р»СЏРµРј РЅР°РґРїРёСЃСЊ
 	var obWaitWindow = document.getElementById('wait');
 	if (obWaitWindow)
 			document.body.removeChild(obWaitWindow);
 	
-	//удаляем для IE6
+	//СѓРґР°Р»СЏРµРј РґР»СЏ IE6
 	var obWaitMessageFrame = document.getElementById('waitframe');
 	if (obWaitMessageFrame)
 			document.body.removeChild(obWaitMessageFrame);
 	
-	//удаляем тень
+	//СѓРґР°Р»СЏРµРј С‚РµРЅСЊ
 	var obWaitWindowShadow = document.getElementById('waitshadow');
 	if (obWaitWindowShadow)
 			document.body.removeChild(obWaitWindowShadow);		

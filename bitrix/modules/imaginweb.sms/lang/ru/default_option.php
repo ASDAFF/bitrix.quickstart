@@ -1,4 +1,4 @@
 <?
-$MESS["IMAGINWEB_SMS_SPASIBO_VAS_ZAKAZ"] = "Ñïàñèáî! Âàø çàêàç ¹";
-$MESS["IMAGINWEB_SMS_PRINAT_I_PEREDAN_V_S"] = "ïðèíÿò è ïåðåäàí â ñëóæáó äîñòàâêè. Èíòåðíåò ìàãàçèí .RU";
+$MESS["IMAGINWEB_SMS_SPASIBO_VAS_ZAKAZ"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾! Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· â„–";
+$MESS["IMAGINWEB_SMS_PRINAT_I_PEREDAN_V_S"] = "Ð¿Ñ€Ð¸Ð½ÑÑ‚ Ð¸ Ð¿ÐµÑ€ÐµÐ´Ð°Ð½ Ð² ÑÐ»ÑƒÐ¶Ð±Ñƒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸. Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ .RU";
 ?>

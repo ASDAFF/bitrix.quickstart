@@ -1,5 +1,5 @@
 <?
-$MESS ['INTR_COMP_IS_TPL_FILTER_SIMPLE'] = "Ïîèñê";
-$MESS ['INTR_COMP_IS_TPL_FILTER_ADV'] = "Ðàñøèðåíûé ïîèñê";
-$MESS ['FILTER'] = "Ôèëüòð";
+$MESS ['INTR_COMP_IS_TPL_FILTER_SIMPLE'] = "ÐŸÐ¾Ð¸ÑÐº";
+$MESS ['INTR_COMP_IS_TPL_FILTER_ADV'] = "Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ñ‹Ð¹ Ð¿Ð¾Ð¸ÑÐº";
+$MESS ['FILTER'] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€";
 ?>

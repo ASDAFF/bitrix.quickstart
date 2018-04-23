@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Êîìïîíåíò ìèíè-ïîäïèñêè");
+$APPLICATION->SetTitle("ĞšĞ¾Ğ¼Ğ¿Ğ¾Ğ½ĞµĞ½Ñ‚ Ğ¼Ğ¸Ğ½Ğ¸-Ğ¿Ğ¾Ğ´Ğ¿Ğ¸ÑĞºĞ¸");
 ?>
 <br />
 <?$APPLICATION->IncludeComponent("rarus.sms4b:subscribe.minisub", ".default", array(

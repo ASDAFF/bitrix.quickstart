@@ -1,3 +1,3 @@
 <?
-$MESS["YENISITE_ORPHUS_SISTEMA"] = "Ñèñòåìà";
+$MESS["YENISITE_ORPHUS_SISTEMA"] = "Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð°";
 ?>

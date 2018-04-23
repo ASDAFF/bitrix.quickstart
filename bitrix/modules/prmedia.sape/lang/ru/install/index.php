@@ -1,6 +1,6 @@
 <?
-$MESS ['PRMEDIA_INSTALL_NAME'] = "Èíòåãðàöèÿ ñ Sape";
-$MESS ['PRMEDIA_INSTALL_DESCRIPTION'] = "Óñòàíàâëèâàåò êîä áèðæè ññûëîê Sape íà âàø ñàéò.";
-$MESS ['PRMEDIA_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ &laquo;Èíòåãðàöèÿ ñ Sape&raquo;";
-$MESS ['PRMEDIA_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ &laquo;Èíòåãðàöèÿ ñ Sape&raquo;";
+$MESS ['PRMEDIA_INSTALL_NAME'] = "Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ñ Ñ Sape";
+$MESS ['PRMEDIA_INSTALL_DESCRIPTION'] = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ ÐºÐ¾Ð´ Ð±Ð¸Ñ€Ð¶Ð¸ ÑÑÑ‹Ð»Ð¾Ðº Sape Ð½Ð° Ð²Ð°Ñˆ ÑÐ°Ð¹Ñ‚.";
+$MESS ['PRMEDIA_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ñ Ñ Sape&raquo;";
+$MESS ['PRMEDIA_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ†Ð¸Ñ Ñ Sape&raquo;";
 ?>

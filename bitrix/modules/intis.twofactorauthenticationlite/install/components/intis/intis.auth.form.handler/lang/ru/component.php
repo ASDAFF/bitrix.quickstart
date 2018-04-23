@@ -1,4 +1,4 @@
 <?
-$MESS['TWOFACTORAUTHENTIFICATION_WAIT'] = "Ïîæàëóéñòà, ïîäîæäèòå";
-$MESS['TWOFACTORAUTHENTIFICATION_YOUR_PASS'] = "Âàø îäíîðàçîâûé ïàðîëü: ";
+$MESS['TWOFACTORAUTHENTIFICATION_WAIT'] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ";
+$MESS['TWOFACTORAUTHENTIFICATION_YOUR_PASS'] = "Ð’Ð°Ñˆ Ð¾Ð´Ð½Ð¾Ñ€Ð°Ð·Ð¾Ð²Ñ‹Ð¹ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
 ?>

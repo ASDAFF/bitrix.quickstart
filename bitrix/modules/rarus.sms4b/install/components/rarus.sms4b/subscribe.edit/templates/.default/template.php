@@ -10,7 +10,7 @@ foreach($arResult["ERROR"] as $itemID=>$itemValue)
 
 <h2><?=$arResult["SHOW_SMS_FORM"] ? GetMessage('sms_subscr') : GetMessage('email_subscr') ?></h2>
 
-<!--Åñëè ïîëüçîâàòåëü îòïèñàëñÿ âûâîäèì åìó ñïåö ñîîáùåíèå-->
+<!--Ð•ÑÐ»Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð¾Ñ‚Ð¿Ð¸ÑÐ°Ð»ÑÑ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÐµÐ¼Ñƒ ÑÐ¿ÐµÑ† ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ-->
 <?if ($arResult["UNSUBSCRIBE_FORM"] == 'show'):?>
 	<h3><?=GetMessage('subscrb_kill')?></h3>
 	<p>

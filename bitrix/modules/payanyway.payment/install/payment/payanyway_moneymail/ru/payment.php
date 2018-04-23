@@ -2,7 +2,7 @@
 global $MESS;
 
 $MESS['PAYANYWAY_MONEYMAIL_TITLE']	= 'MoneyMail';
-$MESS['PAYANYWAY_MONEYMAIL_EMAIL']	= 'E-mail â MoneyMail';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK']	= 'Ïðîäîëæèòü';
+$MESS['PAYANYWAY_MONEYMAIL_EMAIL']	= 'E-mail Ð² MoneyMail';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK']	= 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
 
 ?>

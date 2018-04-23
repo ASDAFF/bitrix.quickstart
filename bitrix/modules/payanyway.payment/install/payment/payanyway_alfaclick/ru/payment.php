@@ -1,10 +1,10 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_ALFACLICK_TITLE']		= 'Èíòåðíåò-áàíê "Àëüôà-Êëèê"';
+$MESS['PAYANYWAY_ALFACLICK_TITLE']		= 'Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð±Ð°Ð½Ðº "ÐÐ»ÑŒÑ„Ð°-ÐšÐ»Ð¸Ðº"';
 
-$MESS['PAYANYWAY_ALFACLICK_DESC']		= 'Ââåäèòå äîïîëíèòåëüíûå ïàðàìåòðû';
-$MESS['PAYANYWAY_ALFA_IDCLIENT']		= 'Ëîãèí â èíòåðíåò-áàíêå';
-$MESS['PAYANYWAY_ALFA_PAYMENTPURPOSE'] 	= 'Íàçíà÷åíèå ïëàòåæà';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'Ïðîäîëæèòü';
+$MESS['PAYANYWAY_ALFACLICK_DESC']		= 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹';
+$MESS['PAYANYWAY_ALFA_IDCLIENT']		= 'Ð›Ð¾Ð³Ð¸Ð½ Ð² Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð±Ð°Ð½ÐºÐµ';
+$MESS['PAYANYWAY_ALFA_PAYMENTPURPOSE'] 	= 'ÐÐ°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð°';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
 ?>

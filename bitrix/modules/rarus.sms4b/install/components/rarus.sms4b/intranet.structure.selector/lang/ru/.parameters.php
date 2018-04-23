@@ -1,9 +1,9 @@
 <?
-$MESS['INTR_ISS_GROUP_FILTER'] = 'Ïàðàìåòðû ôèëüòðà';
-$MESS['INTR_ISS_PARAM_LIST_URL'] = 'Ñòðàíèöà ñïèñêà ïîëüçîâàòåëåé';
-$MESS['INTR_ISS_PARAM_FILTER_NAME'] = 'Èìÿ ôèëüòðà';
-$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE'] = 'Âûáîð ïîäðàçäåëåíèÿ äëÿ ôèëüòðàöèè';
-$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE_VALUE_Y'] = 'îäèíàðíûé';
-$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE_VALUE_N'] = 'ìíîæåñòâåííûé';
-$MESS['INTR_ISS_PARAM_FILTER_SESSION'] = 'Çàïîìèíàòü ôèëüòð â ñåññèè';
+$MESS['INTR_ISS_GROUP_FILTER'] = 'ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°';
+$MESS['INTR_ISS_PARAM_LIST_URL'] = 'Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÑÐ¿Ð¸ÑÐºÐ° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹';
+$MESS['INTR_ISS_PARAM_FILTER_NAME'] = 'Ð˜Ð¼Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°';
+$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE'] = 'Ð’Ñ‹Ð±Ð¾Ñ€ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸Ð¸';
+$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE_VALUE_Y'] = 'Ð¾Ð´Ð¸Ð½Ð°Ñ€Ð½Ñ‹Ð¹';
+$MESS['INTR_ISS_PARAM_FILTER_DEPARTMENT_SINGLE_VALUE_N'] = 'Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹';
+$MESS['INTR_ISS_PARAM_FILTER_SESSION'] = 'Ð—Ð°Ð¿Ð¾Ð¼Ð¸Ð½Ð°Ñ‚ÑŒ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€ Ð² ÑÐµÑÑÐ¸Ð¸';
 ?>

@@ -1,9 +1,9 @@
 <?
-$MESS ['EMPLOYEE'] = "Ñîòðóäíèêè";
-$MESS ['EMPLOYEE_NOT_FOUND'] = "Ñîòðóäíèêîâ íå íàéäåíî";
-$MESS ['FIO'] = "ÔÈÎ";
-$MESS ['TELEPHONE'] = "Òåëåôîí";
-$MESS ['DEPARTMENT'] = "Îòäåë";
-$MESS ['NOT_SET'] = "Íå óêàçàíî";
+$MESS ['EMPLOYEE'] = "Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸";
+$MESS ['EMPLOYEE_NOT_FOUND'] = "Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð² Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾";
+$MESS ['FIO'] = "Ð¤Ð˜Ðž";
+$MESS ['TELEPHONE'] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS ['DEPARTMENT'] = "ÐžÑ‚Ð´ÐµÐ»";
+$MESS ['NOT_SET'] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½Ð¾";
 
 ?>

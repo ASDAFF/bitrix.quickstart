@@ -1,6 +1,6 @@
 <?
 $MESS["scrollup.bxd_MODULE_NAME"] = "Bitrix Debug";
-$MESS["scrollup.bxd_MODULE_DESC"] = "Bitrix Debug — ìîäóëü, êîòîðûé ïîçâîëÿåò âàì ëåãêî è óäîáíî îòëàæèâàòü ñâîè ñàéòû ïðè ðàçðàáîòêå. Ïîäðîáíîå îïèñàíèå íà ñòðàíèöå ìîäóëÿ â Marketplace";
-$MESS["scrollup.bxd_PARTNER_NAME"] = "Îðåñòîâ Îëåã";
+$MESS["scrollup.bxd_MODULE_DESC"] = "Bitrix Debug â€” Ð¼Ð¾Ð´ÑƒÐ»ÑŒ, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð²Ð°Ð¼ Ð»ÐµÐ³ÐºÐ¾ Ð¸ ÑƒÐ´Ð¾Ð±Ð½Ð¾ Ð¾Ñ‚Ð»Ð°Ð¶Ð¸Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¸ ÑÐ°Ð¹Ñ‚Ñ‹ Ð¿Ñ€Ð¸ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐµ. ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½Ð¾Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð² Marketplace";
+$MESS["scrollup.bxd_PARTNER_NAME"] = "ÐžÑ€ÐµÑÑ‚Ð¾Ð² ÐžÐ»ÐµÐ³";
 $MESS["scrollup.bxd_PARTNER_URI"] = "http://olegorestov.ru";
 ?>

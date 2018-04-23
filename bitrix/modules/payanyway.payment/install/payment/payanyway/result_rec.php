@@ -26,7 +26,7 @@ if (isset($_REQUEST["action"]) && $_REQUEST["action"] == "invoice") {
 		$totalAmount = $_REQUEST['MNT_AMOUNT']." ".$_REQUEST['MNT_CURRENCY_CODE'];
 		$fee = "-";
 		
-		// запрос стоимости и комиссии
+		// Р·Р°РїСЂРѕСЃ СЃС‚РѕРёРјРѕСЃС‚Рё Рё РєРѕРјРёСЃСЃРёРё
 		if (isset($_REQUEST['paymentSystem_accountId'])) {
 			$transactionRequestType = new MonetaForecastTransactionRequest();
 			$transactionRequestType->payer = $_REQUEST['paymentSystem_accountId'];
@@ -127,7 +127,7 @@ if (isset($_REQUEST["action"]) && $_REQUEST["action"] == "invoice") {
 	$changePayStatus = false;
 	$responseCode = 500;
 
-	/* orderId для старой схемы оформления заказа */
+	/* orderId РґР»СЏ СЃС‚Р°СЂРѕР№ СЃС…РµРјС‹ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р° */
 	if (!($arOrder = CSaleOrder::GetByID(IntVal($_REQUEST['MNT_TRANSACTION_ID']))) &&
 		!($arOrder = CSaleOrder::GetByID(IntVal($_REQUEST['orderId']))))
 	{
@@ -165,8 +165,8 @@ if (isset($_REQUEST["action"]) && $_REQUEST["action"] == "invoice") {
 								$responseCode = 402;
 							break;
 						case "CANCELLED_CREDIT":
-							/*отмена зачисления*/
-							if (CSaleOrder::CancelOrder($arOrder["ID"], "Y", "отменена платежной системой"))
+							/*РѕС‚РјРµРЅР° Р·Р°С‡РёСЃР»РµРЅРёСЏ*/
+							if (CSaleOrder::CancelOrder($arOrder["ID"], "Y", "РѕС‚РјРµРЅРµРЅР° РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјРѕР№"))
 								$responseCode = 200;
 							break;
 						default:

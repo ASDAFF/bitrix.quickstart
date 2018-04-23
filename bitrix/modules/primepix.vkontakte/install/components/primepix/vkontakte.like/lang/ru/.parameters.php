@@ -1,14 +1,14 @@
 <?
-$MESS ['FORM_SETTINGS'] = "Âèä êíîïêè";
-$MESS ['ID_APLICATION'] = "ID ïðèëîæåíèÿ";
-$MESS ['ID_ELEMENT'] = "ID ýëåìåíòà";
-$MESS ['TYPE_BUTTON'] = "Òèï êíîïêè";
-$MESS ['TYPE_BUTTON_FULL'] = "Êíîïêà ñ òåêñòîâûì ñ÷¸ò÷èêîì";
-$MESS ['TYPE_BUTTON_BUTTON'] = "Êíîïêà ñ ìèíèàòþðíûì ñ÷¸ò÷èêîì";
-$MESS ['TYPE_BUTTON_MINI'] = "Ìèíèàòþðíàÿ êíîïêà";
-$MESS ['TYPE_BUTTON_VERTICAL'] = "Ìèíèàòþðíàÿ êíîïêà, ñ÷¸ò÷èê ñâåðõó";
-$MESS ['HEIGHT_BUTTON'] = "Âûñîòà êíîïêè";
-$MESS ['NAME_BUTTON'] = "Íàçâàíèå êíîïêè";
-$MESS ['NAME_BUTTON_LIKE'] = "Ìíå íðàâèòñÿ";
-$MESS ['NAME_BUTTON_INTERES'] = "Ýòî èíòåðåñíî";
+$MESS ['FORM_SETTINGS'] = "Ð’Ð¸Ð´ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS ['ID_APLICATION'] = "ID Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ";
+$MESS ['ID_ELEMENT'] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['TYPE_BUTTON'] = "Ð¢Ð¸Ð¿ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS ['TYPE_BUTTON_FULL'] = "ÐšÐ½Ð¾Ð¿ÐºÐ° Ñ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ñ‹Ð¼ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼";
+$MESS ['TYPE_BUTTON_BUTTON'] = "ÐšÐ½Ð¾Ð¿ÐºÐ° Ñ Ð¼Ð¸Ð½Ð¸Ð°Ñ‚ÑŽÑ€Ð½Ñ‹Ð¼ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼";
+$MESS ['TYPE_BUTTON_MINI'] = "ÐœÐ¸Ð½Ð¸Ð°Ñ‚ÑŽÑ€Ð½Ð°Ñ ÐºÐ½Ð¾Ð¿ÐºÐ°";
+$MESS ['TYPE_BUTTON_VERTICAL'] = "ÐœÐ¸Ð½Ð¸Ð°Ñ‚ÑŽÑ€Ð½Ð°Ñ ÐºÐ½Ð¾Ð¿ÐºÐ°, ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸Ðº ÑÐ²ÐµÑ€Ñ…Ñƒ";
+$MESS ['HEIGHT_BUTTON'] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð° ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS ['NAME_BUTTON'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS ['NAME_BUTTON_LIKE'] = "ÐœÐ½Ðµ Ð½Ñ€Ð°Ð²Ð¸Ñ‚ÑÑ";
+$MESS ['NAME_BUTTON_INTERES'] = "Ð­Ñ‚Ð¾ Ð¸Ð½Ñ‚ÐµÑ€ÐµÑÐ½Ð¾";
 ?>

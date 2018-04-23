@@ -346,7 +346,7 @@ else:?>
 					<?endfor;?>
 				</select>
 				&nbsp;
-				по
+				РїРѕ
 				&nbsp;
 				<select id="DATE_TO_NS2" name="DATE_TO_NS" <?if ($_REQUEST["ACTIVE_NIGHT_TIME_NS"] != "Y"):?> disabled <?endif;?> >
 					<?
@@ -496,7 +496,7 @@ else:?>
 					<?endfor;?>
 				</select>
 				&nbsp;
-				по
+				РїРѕ
 				&nbsp;
 				<select id='DATE_TO_NS3' name="DATE_TO_NS" <?if ($_REQUEST["ACTIVE_NIGHT_TIME_NS"] != "Y"):?> disabled <?endif;?> >
 					<?
@@ -601,9 +601,9 @@ a["T"]  = "<?=GetMessage("T")?>";
 a["YO"]  = "<?=GetMessage("YO")?>";
 a["B"]  = "<?=GetMessage("B")?>";
 a["Yu"]  = "<?=GetMessage("Yu")?>";
-a["<"] = "«";
-a[">"] = "»";
-a["-"] = "–";
+a["<"] = "В«";
+a[">"] = "В»";
+a["-"] = "вЂ“";
 
 function trans(text)
 {
@@ -614,9 +614,9 @@ function trans(text)
 		ch = '';
 		for(val in a)
 		{
-			if (text.substr(d6,1) == 'ь' || text.substr(d6,1) == 'Ь')
+			if (text.substr(d6,1) == 'СЊ' || text.substr(d6,1) == 'Р¬')
 				ch = "'";
-			if (text.substr(d6,1) == 'ъ' || text.substr(d6,1) == 'Ъ')
+			if (text.substr(d6,1) == 'СЉ' || text.substr(d6,1) == 'РЄ')
 				ch = "\"";
 			if (text.substr(d6,1) == '['  || text.substr(d6,1) == '{')
 				ch = "(";
@@ -634,9 +634,9 @@ function trans(text)
 				ch = "i";
 			if (text.substr(d6,1) == '~')
 				ch = "-";
-			if (text.substr(d6,1) == '№')
+			if (text.substr(d6,1) == 'в„–')
 				ch = "N";
-			if (text.substr(d6,1) == '”')
+			if (text.substr(d6,1) == 'вЂќ')
 				ch = "\"";	
 			
 		  	if (text.substr(d6,1) == a[val])
@@ -678,8 +678,8 @@ function trans_lat_to_kir(text)
 				{
 					if (text.substr(d6,1) == val) ch = a[val];
 					
-					if (text.substr(d6,1) == "'") ch = "ь";
-					if (text.substr(d6,1) == "\"") ch = "ъ";
+					if (text.substr(d6,1) == "'") ch = "СЊ";
+					if (text.substr(d6,1) == "\"") ch = "СЉ";
 				}
 				
 				if (ch == "")

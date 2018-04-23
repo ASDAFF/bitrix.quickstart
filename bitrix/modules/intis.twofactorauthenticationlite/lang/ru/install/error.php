@@ -1,3 +1,3 @@
 <?
-$MESS["TWOFACTORAUTHENTIFICATIONLITE_ERROR_NOT_CURL"] = "Äëÿ ðàáîòû ìîäóëÿ íåîáõîäèìî óñòàíîâèòü ðàñøèðåíèå cURL.";
+$MESS["TWOFACTORAUTHENTIFICATIONLITE_ERROR_NOT_CURL"] = "Ð”Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ðµ cURL.";
 ?>

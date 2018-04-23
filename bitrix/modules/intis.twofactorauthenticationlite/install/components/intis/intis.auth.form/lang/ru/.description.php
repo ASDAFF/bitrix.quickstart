@@ -1,5 +1,5 @@
 <?
-$MESS ['TWO_FACTOR_AUTH_TITLE'] = "Äâóõôàêòîðíàÿ àâòîðèçàöèÿ";
-$MESS ['TWO_FACTOR_AUTH_DESCR'] = "Ôîðìà äëÿ äâóõôàêòîðíîé àâòîðèçàöèè";
-$MESS ['TWO_FACTOR_AUTH_NAME'] = "Ïîëüçîâàòåëü";
+$MESS ['TWO_FACTOR_AUTH_TITLE'] = "Ð”Ð²ÑƒÑ…Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ";
+$MESS ['TWO_FACTOR_AUTH_DESCR'] = "Ð¤Ð¾Ñ€Ð¼Ð° Ð´Ð»Ñ Ð´Ð²ÑƒÑ…Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð½Ð¾Ð¹ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸";
+$MESS ['TWO_FACTOR_AUTH_NAME'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
 ?>

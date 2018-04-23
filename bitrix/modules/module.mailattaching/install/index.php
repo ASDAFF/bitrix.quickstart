@@ -25,7 +25,7 @@ Class module_mailattaching extends CModule {
 		$this->MODULE_NAME = $this->GetMessage('MODULE_NAME');
 		$this->MODULE_DESCRIPTION = $this->GetMessage('MODULE_DESCRIPTION');
 		
-		// îáõîä òóïíÿêà ïàðñåðà â ôîðìå çàãðóçêè ðåøåíèÿ
+		// Ð¾Ð±Ñ…Ð¾Ð´ Ñ‚ÑƒÐ¿Ð½ÑÐºÐ° Ð¿Ð°Ñ€ÑÐµÑ€Ð° Ð² Ñ„Ð¾Ñ€Ð¼Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ñ€ÐµÑˆÐµÐ½Ð¸Ñ
 		$this->PARTNER_NAME = GetMessage("PARTNER_NAME");
 
 		$this->PARTNER_NAME = $this->GetMessage('PARTNER_NAME');
@@ -88,7 +88,7 @@ Class module_mailattaching extends CModule {
 					'savedata' => $_REQUEST['savedata']
 				)
 			);
-			// óäàëÿåì ôàéëû
+			// ÑƒÐ´Ð°Ð»ÑÐµÐ¼ Ñ„Ð°Ð¹Ð»Ñ‹
 			$this->UnInstallFiles(
 				array(
 					'savefiles' => $_REQUEST['savefiles']
@@ -135,27 +135,27 @@ Class module_mailattaching extends CModule {
 	}
 
 	public function InstallDefaultOptions() {
-		// çàïèøåì îïöèè ïî óìîë÷àíèþ (èñïîëüçóþòñÿ òðèããåðû)
+		// Ð·Ð°Ð¿Ð¸ÑˆÐµÐ¼ Ð¾Ð¿Ñ†Ð¸Ð¸ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ñ‚Ñ€Ð¸Ð³Ð³ÐµÑ€Ñ‹)
 		if(CModule::IncludeModule($this->MODULE_ID)) {
 		}
 	}
 	
 	public function UnInstallOptions() {
-		// óäàëèì îïöèè ìîäóëÿ (÷òîáû ñðàáîòàëè òðèããåðû è óäàëèëè âñå ñâÿçè)
+		// ÑƒÐ´Ð°Ð»Ð¸Ð¼ Ð¾Ð¿Ñ†Ð¸Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ (Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑÑ€Ð°Ð±Ð¾Ñ‚Ð°Ð»Ð¸ Ñ‚Ñ€Ð¸Ð³Ð³ÐµÑ€Ñ‹ Ð¸ ÑƒÐ´Ð°Ð»Ð¸Ð»Ð¸ Ð²ÑÐµ ÑÐ²ÑÐ·Ð¸)
 	}
 
 	public function UnInstallTriggerModuleDependences() {
 	}
 	
 	public function InstallModuleDependences() {
-		// àâòîïîäêëþ÷åíèå ìîäóëÿ
+		// Ð°Ð²Ñ‚Ð¾Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 		RegisterModuleDependences('main', 'OnBeforeProlog', $this->MODULE_ID, '', '', 1);
 		RegisterModuleDependences('main', 'OnAdminTabControlBegin', $this->MODULE_ID, 'CModuleMailAttachingAdmin', 'AddEditFormTab', 5000);
 
 	}
 
 	public function UnInstallModuleDependences() {
-		// óäàëåíèå àâòîïîäêëþ÷åíèÿ ìîäóëÿ
+		// ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð°Ð²Ñ‚Ð¾Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 		UnRegisterModuleDependences('main', 'OnBeforeProlog', $this->MODULE_ID, '', '');
 		UnRegisterModuleDependences('main', 'OnAdminTabControlBegin', $this->MODULE_ID, 'CModuleMailAttachingAdmin', 'AddEditFormTab');
 	}

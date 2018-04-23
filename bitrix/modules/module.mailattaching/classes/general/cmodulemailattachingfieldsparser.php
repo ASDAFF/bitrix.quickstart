@@ -1,34 +1,34 @@
 <?
 /**
  * 
- * Ïàðñåðû ïîëåé äëÿ ïî÷òîâûõ ñîîáùåíèé ðàçëè÷íûõ ìîäóëåé
+ * ÐŸÐ°Ñ€ÑÐµÑ€Ñ‹ Ð¿Ð¾Ð»ÐµÐ¹ Ð´Ð»Ñ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ñ… Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹
  *
  */
 
 class CModuleMailAttachingFieldsParser {
 
 	//
-	// Âîçâðàùàåò ôóíêöèè îáðàòíîãî âûçîâà ïàðñèíãà ïîëåé ïîääåðæèâàåìûõ ìîäóëåé
+	// Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð³Ð¾ Ð²Ñ‹Ð·Ð¾Ð²Ð° Ð¿Ð°Ñ€ÑÐ¸Ð½Ð³Ð° Ð¿Ð¾Ð»ÐµÐ¹ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ñ… Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹
 	//
 	public static function GetParser($arFields, $arMailResult, $arAttaches) {
 		$mCallback = false;
 
 		// form
 		if(!$mCallback) {
-			// îòíîñèòñÿ ëè îòïðàâëåìîå ñîîáùåíèå ê ðåçóëüòàòàì ìîäóëÿ âåá-ôîðì
+			// Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÑÑ Ð»Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ¼Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ðº Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð°Ð¼ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð²ÐµÐ±-Ñ„Ð¾Ñ€Ð¼
 			$mCallback = self::ModuleFormCheck($arFields, $arMailResult, $arAttaches);
 		}
 
 		// support
 		if(!$mCallback) {
-			// îòíîñèòñÿ ëè îòïðàâëåìîå ñîîáùåíèå ê ìîäóëþ òåõïîääåðæêè
+			// Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÑÑ Ð»Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ¼Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ðº Ð¼Ð¾Ð´ÑƒÐ»ÑŽ Ñ‚ÐµÑ…Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸
 			$mCallback = self::ModuleSupportCheck($arFields, $arMailResult, $arAttaches);
 		}
 
 		// ***
 		/*
 		if(!$mCallback) {
-			// îòíîñèòñÿ ëè îòïðàâëåìîå ñîîáùåíèå ê ìîäóëþ ***
+			// Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÑÑ Ð»Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ¼Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ðº Ð¼Ð¾Ð´ÑƒÐ»ÑŽ ***
 			$mCallback = self::Module***Check($arFields, $arMailResult, $arAttaches);
 		}
 		*/
@@ -37,7 +37,7 @@ class CModuleMailAttachingFieldsParser {
 	}
 
 	//
-	// Ìîäóëü form. --- Ïðîâåðêà è îáðàáîò÷èêè äëÿ ïî÷òîâûõ ñîîáùåíèé 
+	// ÐœÐ¾Ð´ÑƒÐ»ÑŒ form. --- ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ 
 	//
 	protected static function ModuleFormCheck($arFields, $arMailResult, $arAttaches) {
 		$mCallback = false;
@@ -60,16 +60,16 @@ class CModuleMailAttachingFieldsParser {
 		}
 
 		if($bGetByMacros) {
-			// åñëè ôàéë ïîäñòàâëÿåòñÿ ÷åðåç ìàêðîñû, òî îïðåäåëèì çíà÷åíèå
+			// ÐµÑÐ»Ð¸ Ñ„Ð°Ð¹Ð» Ð¿Ð¾Ð´ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ñ‡ÐµÑ€ÐµÐ· Ð¼Ð°ÐºÑ€Ð¾ÑÑ‹, Ñ‚Ð¾ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 			$sTxtVal = $arFields[$sFileMacros];
 			$iFormId = intval($arFields['RS_RESULT_ID']);
 			if($iFormId > 0 && strlen($sTxtVal)) {
 				$arWebFormFieldData = CFormResult::GetDataByID($iFormId, array($sFileMacros), $arTmp1, $arTmp2);
 				if(!empty($arWebFormFieldData[$sFileMacros])) {
-					// íàéäåíî ïîëå â ðåçóëüòàòå âåá-ôîðìû, ïåðåáåðåì âñå âàðèàíòû îòâåòîâ, îíè ìîãóò áûòü ðàçíîãî òèïà
+					// Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ð¿Ð¾Ð»Ðµ Ð² Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ðµ Ð²ÐµÐ±-Ñ„Ð¾Ñ€Ð¼Ñ‹, Ð¿ÐµÑ€ÐµÐ±ÐµÑ€ÐµÐ¼ Ð²ÑÐµ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ñ‹ Ð¾Ñ‚Ð²ÐµÑ‚Ð¾Ð², Ð¾Ð½Ð¸ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ñ€Ð°Ð·Ð½Ð¾Ð³Ð¾ Ñ‚Ð¸Ð¿Ð°
 					foreach($arWebFormFieldData[$sFileMacros] as $arCurMeta) {
 						if(isset($arCurMeta['USER_FILE_ID']) && intval($arCurMeta['USER_FILE_ID']) > 0) {
-							// îòâåò õðàíèò ID ôàéëà
+							// Ð¾Ñ‚Ð²ÐµÑ‚ Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ ID Ñ„Ð°Ð¹Ð»Ð°
 							$arAttachedFiles[] = array(
 								'FILE' => $arCurMeta['USER_FILE_ID'], 
 								'FILE_NAME' => $arCurMeta['USER_FILE_NAME']
@@ -89,7 +89,7 @@ class CModuleMailAttachingFieldsParser {
 	}
 
 	//
-	// Ìîäóëü support. --- Ïðîâåðêà è îáðàáîò÷èêè äëÿ ïî÷òîâûõ ñîîáùåíèé 
+	// ÐœÐ¾Ð´ÑƒÐ»ÑŒ support. --- ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ 
 	//
 	protected static function ModuleSupportCheck($arFields, $arMailResult, $arAttaches) {
 		$mCallback = false;
@@ -126,12 +126,12 @@ class CModuleMailAttachingFieldsParser {
 		}
 
 		if($bGetByMacros) {
-			// åñëè ôàéë ïîäñòàâëÿåòñÿ ÷åðåç ìàêðîñû, òî îïðåäåëèì çíà÷åíèå
+			// ÐµÑÐ»Ð¸ Ñ„Ð°Ð¹Ð» Ð¿Ð¾Ð´ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ñ‡ÐµÑ€ÐµÐ· Ð¼Ð°ÐºÑ€Ð¾ÑÑ‹, Ñ‚Ð¾ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 			$sTxtVal = $arFields[$sFileMacros];
 			$iTicketId = isset($arFields['ID']) ? intval($arFields['ID']) : 0;
 			if($iTicketId > 0 && strlen($sTxtVal)) {
 				$arHashes = array();
-				// ïîëó÷èì õýø-êîäû çàãðóæåííûõ ôàéëîâ
+				// Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ð¼ Ñ…ÑÑˆ-ÐºÐ¾Ð´Ñ‹ Ð·Ð°Ð³Ñ€ÑƒÐ¶ÐµÐ½Ð½Ñ‹Ñ… Ñ„Ð°Ð¹Ð»Ð¾Ð²
 				if(preg_match_all('#(?:hash=([0-9a-z]{32}))(?:.*?)#is'.BX_UTF_PCRE_MODIFIER, $sTxtVal, $arMatches)) {
 					if(!empty($arMatches[1])) {
 						$arHashes = $arMatches[1];
@@ -174,7 +174,7 @@ class CModuleMailAttachingFieldsParser {
 	}
 
 	//
-	// çàãîòîâêè äëÿ ñëåäóþùèõ ìîäóëåé
+	// Ð·Ð°Ð³Ð¾Ñ‚Ð¾Ð²ÐºÐ¸ Ð´Ð»Ñ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹
 	//
 	/*
 	protected static function Module***Check($arFields, $arMailResult, $arAttaches) {
@@ -205,7 +205,7 @@ class CModuleMailAttachingFieldsParser {
 		}
 
 		if($bGetByMacros) {
-			// åñëè ôàéë ïîäñòàâëÿåòñÿ ÷åðåç ìàêðîñû, òî îïðåäåëèì çíà÷åíèå
+			// ÐµÑÐ»Ð¸ Ñ„Ð°Ð¹Ð» Ð¿Ð¾Ð´ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ñ‡ÐµÑ€ÐµÐ· Ð¼Ð°ÐºÑ€Ð¾ÑÑ‹, Ñ‚Ð¾ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ð¼ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ
 			$sTxtVal = $arFields[$sFileMacros];
 			$iSomeId = isset($arFields['ID']) ? intval($arFields['ID']) : 0;
 			if($iSomeId > 0 && strlen($sTxtVal)) {

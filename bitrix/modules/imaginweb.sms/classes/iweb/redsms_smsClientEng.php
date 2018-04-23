@@ -186,7 +186,7 @@ class SMSClient {
 	 * @param string $sessionID Session ID. @see getSessionID_St
 	 * @param string $messageID Message ID
 	 *
-	 * @return array массив полей:
+	 * @return array РјР°СЃСЃРёРІ РїРѕР»РµР№:
 	 *		State	- message status. @see SMSClientSMSStatus
 	 *		TimeStampUtc		- Date and time of status update
 	 *		StateDescription	- Status description
@@ -434,7 +434,7 @@ class SMSClient {
 	 *
 	 * @param string $messageID Message ID
 	 *
-	 * @return array массив полей:
+	 * @return array РјР°СЃСЃРёРІ РїРѕР»РµР№:
 	 *		State	- message status. @see SMSClientSMSStatus
 	 *		TimeStampUtc		- Date and time of status update
 	 *		StateDescription	- Status description

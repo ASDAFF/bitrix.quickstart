@@ -1,0 +1,18 @@
+.result.error {
+	color: red;
+}
+.result.success {
+	color: green;
+}
+.hdn{
+	display: none;
+}
+.stat td {
+	padding-right: 25px;
+}
+.open-stat {
+	margin-left: 10px;
+}
+.open-stat:hover{
+	cursor: pointer;
+}

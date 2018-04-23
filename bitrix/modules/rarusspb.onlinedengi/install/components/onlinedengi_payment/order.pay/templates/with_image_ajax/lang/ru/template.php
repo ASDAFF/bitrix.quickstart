@@ -1,14 +1,14 @@
 <?
-$MESS['ONLINEDENGI_PAYMENT_AMOUNT'] = "Ñóììà ê îïëàòå ïî ñ÷åòó: ";
-$MESS['ONLINEDENGI_PAYMENT_AMOUNT_MODE'] = "Ñóììà ê îïëàòå ïî âûáðàííîìó ñïîñîáó: ";
-$MESS['ONLINEDENGI_SELECT_MODE_TYPE'] = "Âûáåðèòå óäîáíûé âàì ñïîñîá îïëàòû: ";
-$MESS['ONLINEDENGI_SELECT_MODE_TYPE_SUBMIT'] = "Ïðîäîëæèòü";
-$MESS['ONLINEDENGI_PAYMENT_SUBMIT'] = "Îïëàòèòü";
-$MESS['ONLINEDENGI_MODETYPE_CHANGE'] = "Âûáðàòü äðóãîé ñïîñîá îïëàòû";
-$MESS['ONLINEDENGI_PAYMENT_MODE_TYPE'] = "Cïîñîá îïëàòû: ";
+$MESS['ONLINEDENGI_PAYMENT_AMOUNT'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ Ð¿Ð¾ ÑÑ‡ÐµÑ‚Ñƒ: ";
+$MESS['ONLINEDENGI_PAYMENT_AMOUNT_MODE'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ Ð¿Ð¾ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð½Ð¾Ð¼Ñƒ ÑÐ¿Ð¾ÑÐ¾Ð±Ñƒ: ";
+$MESS['ONLINEDENGI_SELECT_MODE_TYPE'] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑƒÐ´Ð¾Ð±Ð½Ñ‹Ð¹ Ð²Ð°Ð¼ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹: ";
+$MESS['ONLINEDENGI_SELECT_MODE_TYPE_SUBMIT'] = "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ";
+$MESS['ONLINEDENGI_PAYMENT_SUBMIT'] = "ÐžÐ¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ";
+$MESS['ONLINEDENGI_MODETYPE_CHANGE'] = "Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð´Ñ€ÑƒÐ³Ð¾Ð¹ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+$MESS['ONLINEDENGI_PAYMENT_MODE_TYPE'] = "CÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹: ";
 
-$MESS['ONLINEDENGI_REC_MODE_TYPE'] = "Cïîñîá îïëàòû: ";
-$MESS['ONLINEDENGI_REC_MODE_TYPE_SUM'] = "Ñóììà ê îïëàòå: ";
-$MESS['ONLINEDENGI_REC_COURSE'] = "Êóðñ: ";
-$MESS['ONLINEDENGI_REC_PAYED'] = "Îïëà÷åíî â ýêâèâàëåíòå: ";
+$MESS['ONLINEDENGI_REC_MODE_TYPE'] = "CÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹: ";
+$MESS['ONLINEDENGI_REC_MODE_TYPE_SUM'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ: ";
+$MESS['ONLINEDENGI_REC_COURSE'] = "ÐšÑƒÑ€Ñ: ";
+$MESS['ONLINEDENGI_REC_PAYED'] = "ÐžÐ¿Ð»Ð°Ñ‡ÐµÐ½Ð¾ Ð² ÑÐºÐ²Ð¸Ð²Ð°Ð»ÐµÐ½Ñ‚Ðµ: ";
 

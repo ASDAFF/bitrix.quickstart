@@ -1,6 +1,6 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_PSB_TITLE'] 	= 'Èíòåðíåò-áàíê "Ïðîìñâÿçüáàíê"';
+$MESS['PAYANYWAY_PSB_TITLE'] 	= 'Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð±Ð°Ð½Ðº "ÐŸÑ€Ð¾Ð¼ÑÐ²ÑÐ·ÑŒÐ±Ð°Ð½Ðº"';
 
 ?>

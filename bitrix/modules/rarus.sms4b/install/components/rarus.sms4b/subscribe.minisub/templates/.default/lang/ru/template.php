@@ -1,12 +1,12 @@
 <?
-$MESS ["subscr_type"] = "Ïîëó÷àéòå íîâîñòè ïî";
-$MESS ["mail"] = "Ïî÷òå";
-$MESS ["subscriber"] = "ïîäïèñ÷èê";
-$MESS ["subscribers"] = "ïîäïèñ÷èêà"; 
-$MESS ["subscriberss"] = "ïîäïèñ÷èêîâ";
-$MESS ['subscribe_error'] = "Ìîäóëü ïîäïèñîê íå íàéäåí";
+$MESS ["subscr_type"] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð°Ð¹Ñ‚Ðµ Ð½Ð¾Ð²Ð¾ÑÑ‚Ð¸ Ð¿Ð¾";
+$MESS ["mail"] = "ÐŸÐ¾Ñ‡Ñ‚Ðµ";
+$MESS ["subscriber"] = "Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸Ðº";
+$MESS ["subscribers"] = "Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ°"; 
+$MESS ["subscriberss"] = "Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ¾Ð²";
+$MESS ['subscribe_error'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ¾Ðº Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½";
 
-$MESS ['readers'] = "÷èòàòåëåé";
-$MESS ['reader']  = "÷èòàòåëü";
-$MESS ["readerss"] = "÷èòàòåëÿ";
+$MESS ['readers'] = "Ñ‡Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÐµÐ¹";
+$MESS ['reader']  = "Ñ‡Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS ["readerss"] = "Ñ‡Ð¸Ñ‚Ð°Ñ‚ÐµÐ»Ñ";
 ?>

@@ -22,7 +22,7 @@ $APPLICATION->SetTitle(GetMessage("MCART_VACANCY_TITLE"));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 //--------------------
 include_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mcart.vacancy/prolog.php");
-//Подключение библиотеки  
+//РџРѕРґРєР»СЋС‡РµРЅРёРµ Р±РёР±Р»РёРѕС‚РµРєРё  
 
 require_once ($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/mcart.vacancy/classes/mysql/export_vacancies.php");  
 

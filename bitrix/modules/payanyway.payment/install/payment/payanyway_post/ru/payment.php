@@ -1,17 +1,17 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_POST_TITLE']			= 'ФГУП Почта России';
+$MESS['PAYANYWAY_POST_TITLE']			= 'Р¤Р“РЈРџ РџРѕС‡С‚Р° Р РѕСЃСЃРёРё';
 
-$MESS['PAYANYWAY_POST_PARAMS']			= 'Дополнительные параметры';
-$MESS['PAYANYWAY_POST_SENDERINDEX']		= 'Индекс отправителя';
-$MESS['PAYANYWAY_POST_SENDERREGION']	= 'Регион (или город федерального значения) отправителя'; 
-$MESS['PAYANYWAY_POST_SENDERADDRESS']	= 'Адрес отправителя';
-$MESS['PAYANYWAY_POST_SENDERNAME']		= 'Имя отправителя';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'Продолжить';
+$MESS['PAYANYWAY_POST_PARAMS']			= 'Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹';
+$MESS['PAYANYWAY_POST_SENDERINDEX']		= 'РРЅРґРµРєСЃ РѕС‚РїСЂР°РІРёС‚РµР»СЏ';
+$MESS['PAYANYWAY_POST_SENDERREGION']	= 'Р РµРіРёРѕРЅ (РёР»Рё РіРѕСЂРѕРґ С„РµРґРµСЂР°Р»СЊРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ) РѕС‚РїСЂР°РІРёС‚РµР»СЏ'; 
+$MESS['PAYANYWAY_POST_SENDERADDRESS']	= 'РђРґСЂРµСЃ РѕС‚РїСЂР°РІРёС‚РµР»СЏ';
+$MESS['PAYANYWAY_POST_SENDERNAME']		= 'РРјСЏ РѕС‚РїСЂР°РІРёС‚РµР»СЏ';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK']		= 'РџСЂРѕРґРѕР»Р¶РёС‚СЊ';
 
-$MESS['PAW_INVOICE_CREATED_TTL']		= "Создано платежное поручение.";
-$MESS['PAW_INVOICE_ERROR_TTL']			= "Ошибка создания платежного поручения.";
-$MESS['PAW_INVOICE_CREATED']			= '<p>Операция оплаты почтовым переводом создана и находится в обработке. Для завершения операции <a target="_blank" href="https://www.payanyway.ru/mailofrussiablank.htm?operationId=%transaction%">распечатайте</a> бланк почтового перевода и проведите электронный платеж в любом отделении связи <a target="_blank" href="http://www.russianpost.ru">Почты России</a>. Для просмотра бланка в формате PDF необходимо иметь установленную на Вашем компьютере программу <a target="_blank" href="http://get.adobe.com/reader/">Adobe Acrobat Reader.</a></p>';
+$MESS['PAW_INVOICE_CREATED_TTL']		= "РЎРѕР·РґР°РЅРѕ РїР»Р°С‚РµР¶РЅРѕРµ РїРѕСЂСѓС‡РµРЅРёРµ.";
+$MESS['PAW_INVOICE_ERROR_TTL']			= "РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ РїР»Р°С‚РµР¶РЅРѕРіРѕ РїРѕСЂСѓС‡РµРЅРёСЏ.";
+$MESS['PAW_INVOICE_CREATED']			= '<p>РћРїРµСЂР°С†РёСЏ РѕРїР»Р°С‚С‹ РїРѕС‡С‚РѕРІС‹Рј РїРµСЂРµРІРѕРґРѕРј СЃРѕР·РґР°РЅР° Рё РЅР°С…РѕРґРёС‚СЃСЏ РІ РѕР±СЂР°Р±РѕС‚РєРµ. Р”Р»СЏ Р·Р°РІРµСЂС€РµРЅРёСЏ РѕРїРµСЂР°С†РёРё <a target="_blank" href="https://www.payanyway.ru/mailofrussiablank.htm?operationId=%transaction%">СЂР°СЃРїРµС‡Р°С‚Р°Р№С‚Рµ</a> Р±Р»Р°РЅРє РїРѕС‡С‚РѕРІРѕРіРѕ РїРµСЂРµРІРѕРґР° Рё РїСЂРѕРІРµРґРёС‚Рµ СЌР»РµРєС‚СЂРѕРЅРЅС‹Р№ РїР»Р°С‚РµР¶ РІ Р»СЋР±РѕРј РѕС‚РґРµР»РµРЅРёРё СЃРІСЏР·Рё <a target="_blank" href="http://www.russianpost.ru">РџРѕС‡С‚С‹ Р РѕСЃСЃРёРё</a>. Р”Р»СЏ РїСЂРѕСЃРјРѕС‚СЂР° Р±Р»Р°РЅРєР° РІ С„РѕСЂРјР°С‚Рµ PDF РЅРµРѕР±С…РѕРґРёРјРѕ РёРјРµС‚СЊ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅСѓСЋ РЅР° Р’Р°С€РµРј РєРѕРјРїСЊСЋС‚РµСЂРµ РїСЂРѕРіСЂР°РјРјСѓ <a target="_blank" href="http://get.adobe.com/reader/">Adobe Acrobat Reader.</a></p>';
 
 ?>

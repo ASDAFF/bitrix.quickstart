@@ -1,14 +1,14 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die(); ?>
 <?
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION'] = 'Ãäå îòîáðàæàòü âèäæåò';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_IN_PLACE'] = 'Â ìåñòå ðàçìåùåíèÿ';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_TOP_LEFT'] = 'Â âåðõíåì ëåâîì óãëó ñòðàíèöû';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_TOP_RIGHT'] = 'Â âåðõíåì ïðàâîì óãëó ñòðàíèöû';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_BOTTOM_LEFT'] = 'Â íèæíåì ëåâîì óãëó ñòðàíèöû';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_BOTTOM_RIGHT'] = 'Â íèæíåì ïðàâîì óãëó ñòðàíèöû';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION'] = 'Ð“Ð´Ðµ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð²Ð¸Ð´Ð¶ÐµÑ‚';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_IN_PLACE'] = 'Ð’ Ð¼ÐµÑÑ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ‰ÐµÐ½Ð¸Ñ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_TOP_LEFT'] = 'Ð’ Ð²ÐµÑ€Ñ…Ð½ÐµÐ¼ Ð»ÐµÐ²Ð¾Ð¼ ÑƒÐ³Ð»Ñƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_TOP_RIGHT'] = 'Ð’ Ð²ÐµÑ€Ñ…Ð½ÐµÐ¼ Ð¿Ñ€Ð°Ð²Ð¾Ð¼ ÑƒÐ³Ð»Ñƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_BOTTOM_LEFT'] = 'Ð’ Ð½Ð¸Ð¶Ð½ÐµÐ¼ Ð»ÐµÐ²Ð¾Ð¼ ÑƒÐ³Ð»Ñƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_POSITION_BOTTOM_RIGHT'] = 'Ð’ Ð½Ð¸Ð¶Ð½ÐµÐ¼ Ð¿Ñ€Ð°Ð²Ð¾Ð¼ ÑƒÐ³Ð»Ñƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME'] = 'Ñòèëü èêîíîê';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME'] = 'Ð¡Ñ‚Ð¸Ð»ÑŒ Ð¸ÐºÐ¾Ð½Ð¾Ðº';
 $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_01'] = '01';
 $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_02'] = '02';
 $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_03'] = '03';
@@ -18,26 +18,26 @@ $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_06'] = '06';
 $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_07'] = '07';
 $MESS ['SZD_SHAREPLUSO_PARAMETERS_THEME_08'] = '08';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE'] = 'Ðàçìåð èêîíîê';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_BIG'] = 'Áîëüøèå';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_MEDIUM'] = 'Ñðåäíèå';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_SMALL'] = 'Ìåëêèå';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE'] = 'Ð Ð°Ð·Ð¼ÐµÑ€ Ð¸ÐºÐ¾Ð½Ð¾Ðº';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_BIG'] = 'Ð‘Ð¾Ð»ÑŒÑˆÐ¸Ðµ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_MEDIUM'] = 'Ð¡Ñ€ÐµÐ´Ð½Ð¸Ðµ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_SIZE_SMALL'] = 'ÐœÐµÐ»ÐºÐ¸Ðµ';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM'] = 'Ôîðìà èêîíîê';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM_SQUARE'] = 'Êâàäðàòíûå';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM_ROUND'] = 'Êðóãëûå';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM'] = 'Ð¤Ð¾Ñ€Ð¼Ð° Ð¸ÐºÐ¾Ð½Ð¾Ðº';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM_SQUARE'] = 'ÐšÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð½Ñ‹Ðµ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_FORM_ROUND'] = 'ÐšÑ€ÑƒÐ³Ð»Ñ‹Ðµ';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE'] = 'Êîëè÷åñòâî ñòðîê';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE_1'] = 'Â îäíó ñòðîêó';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE_2'] = 'Â äâå ñòðîêè';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE'] = 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE_1'] = 'Ð’ Ð¾Ð´Ð½Ñƒ ÑÑ‚Ñ€Ð¾ÐºÑƒ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_LINE_2'] = 'Ð’ Ð´Ð²Ðµ ÑÑ‚Ñ€Ð¾ÐºÐ¸';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT'] = 'Ðàñïîëîæåíèå èêîíîê';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT_HORIZONTAL'] = 'Ãîðèçîíòàëüíî';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT_VERTICAL'] = 'Âåðòèêàëüíî';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT'] = 'Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð¸ÐºÐ¾Ð½Ð¾Ðº';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT_HORIZONTAL'] = 'Ð“Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ð¾';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_PLACEMENT_VERTICAL'] = 'Ð’ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾';
 
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER'] = 'Ñ÷åò÷èê êëèêîâ';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER_YES'] = 'Ïîêàçûâàòü';
-$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER_NO'] = 'Íå ïîêàçûâàòü';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER'] = 'Ð¡Ñ‡ÐµÑ‚Ñ‡Ð¸Ðº ÐºÐ»Ð¸ÐºÐ¾Ð²';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER_YES'] = 'ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ';
+$MESS ['SZD_SHAREPLUSO_PARAMETERS_COUNTER_NO'] = 'ÐÐµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ';
 
 
 ?>

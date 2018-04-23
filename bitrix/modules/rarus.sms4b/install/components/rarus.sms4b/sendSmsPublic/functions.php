@@ -12,7 +12,7 @@ function ShowStructureSection(&$arStructure, &$usersInStructure, $bUpper = false
 	ShowHtmlDepartment($departmentList, true);
 }
 /**
- * Функция правильно отображает в HTLM коде иерархию департаментов
+ * Р¤СѓРЅРєС†РёСЏ РїСЂР°РІРёР»СЊРЅРѕ РѕС‚РѕР±СЂР°Р¶Р°РµС‚ РІ HTLM РєРѕРґРµ РёРµСЂР°СЂС…РёСЋ РґРµРїР°СЂС‚Р°РјРµРЅС‚РѕРІ
  * @param unknown_type $departmentList
  */
 function ShowHtmlDepartment ($departmentList, $bUpper = false)
@@ -43,9 +43,9 @@ function ShowHtmlDepartment ($departmentList, $bUpper = false)
 	<?endforeach;
 }
 /**
- * Функция добавляет департамент в массив, который построен иерархически.
- * @param $department - текущий департамент
- * @param $array - массив департаментов и иерархичсеской структуре
+ * Р¤СѓРЅРєС†РёСЏ РґРѕР±Р°РІР»СЏРµС‚ РґРµРїР°СЂС‚Р°РјРµРЅС‚ РІ РјР°СЃСЃРёРІ, РєРѕС‚РѕСЂС‹Р№ РїРѕСЃС‚СЂРѕРµРЅ РёРµСЂР°СЂС…РёС‡РµСЃРєРё.
+ * @param $department - С‚РµРєСѓС‰РёР№ РґРµРїР°СЂС‚Р°РјРµРЅС‚
+ * @param $array - РјР°СЃСЃРёРІ РґРµРїР°СЂС‚Р°РјРµРЅС‚РѕРІ Рё РёРµСЂР°СЂС…РёС‡СЃРµСЃРєРѕР№ СЃС‚СЂСѓРєС‚СѓСЂРµ
  */
 function herarhy($department, $array)
 {

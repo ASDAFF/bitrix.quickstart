@@ -1,4 +1,4 @@
 <?
-$MESS["MCART_VACANCY_TITLE"] = "ÝÊÑÏÎÐÒ ÂÀÊÀÍÑÈÉ";
-$MESS["VACANCY_START_EXPORT"] = "Íà÷àòü âûãðóçêó";
+$MESS["MCART_VACANCY_TITLE"] = "Ð­ÐšÐ¡ÐŸÐžÐ Ð¢ Ð’ÐÐšÐÐÐ¡Ð˜Ð™";
+$MESS["VACANCY_START_EXPORT"] = "ÐÐ°Ñ‡Ð°Ñ‚ÑŒ Ð²Ñ‹Ð³Ñ€ÑƒÐ·ÐºÑƒ";
 ?>

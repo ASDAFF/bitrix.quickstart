@@ -1,7 +1,7 @@
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
 Module: 
-Новый заказ
+РќРѕРІС‹Р№ Р·Р°РєР°Р·
     CSms4BitrixWrapper::Events < call_user_func_array < ExecuteModuleEventEx < CAllEvent::Send < include
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\main\classes\general\module.php:633
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\main\classes\general\event.php:47
@@ -11,7 +11,7 @@ Module:
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
 Module: rarus.sms4b
-Новый заказ
+РќРѕРІС‹Р№ Р·Р°РєР°Р·
     CSms4BitrixWrapper::Events < call_user_func_array < ExecuteModuleEventEx < CAllEvent::Send < include
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\main\classes\general\module.php:633
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\main\classes\general\event.php:47
@@ -30,7 +30,7 @@ PHONE
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Внутри цикла
+Module: Р’РЅСѓС‚СЂРё С†РёРєР»Р°
 Array
 (
     [ID] => 140
@@ -49,7 +49,7 @@ Array
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Номер заказа
+Module: РќРѕРјРµСЂ Р·Р°РєР°Р·Р°
 140
     CSms4BitrixWrapper::GetPhoneOrder < CSms4BitrixWrapper::Events < call_user_func_array < ExecuteModuleEventEx < CAllEvent::Send
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\rarus.sms4b\classes\general\sms4b.php:1013
@@ -69,13 +69,13 @@ PHONE
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Найденный номер
+Module: РќР°Р№РґРµРЅРЅС‹Р№ РЅРѕРјРµСЂ
 Array
 (
     [ID] => 921
     [ORDER_ID] => 140
     [ORDER_PROPS_ID] => 20
-    [NAME] => Телефон
+    [NAME] => РўРµР»РµС„РѕРЅ
     [VALUE] => 79037851631
     [CODE] => PHONE
 )
@@ -88,7 +88,7 @@ Array
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Параметры для сохранения СМС
+Module: РџР°СЂР°РјРµС‚СЂС‹ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РЎРњРЎ
 Array
 (
     [0] => Array
@@ -101,8 +101,8 @@ Array
             [CountPart] => 1
             [SendPart] => 0
             [CodeType] => 1
-            [TextMessage] => Ваш заказ NY5E14J3F принят
-Стоимость: 87.00 руб
+            [TextMessage] => Р’Р°С€ Р·Р°РєР°Р· NY5E14J3F РїСЂРёРЅСЏС‚
+РЎС‚РѕРёРјРѕСЃС‚СЊ: 87.00 СЂСѓР±
             [Sale_Order] => Y5E14J3F
             [Status] => 5
             [Posting] => 0
@@ -119,7 +119,7 @@ Array
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Отправлены для СМС
+Module: РћС‚РїСЂР°РІР»РµРЅС‹ РґР»СЏ РЎРњРЎ
 Array
 (
     [SEND] => 1
@@ -134,7 +134,7 @@ Array
 ----------
 Host: dev.sms4b.ru
 Date: 2013-10-18 18:20:26
-Module: Измененные данные в БД
+Module: РР·РјРµРЅРµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ РІ Р‘Р”
 2013-10-18 18:20:26
     CSms4BitrixWrapper::SendSMS < CSms4BitrixWrapper::Events < call_user_func_array < ExecuteModuleEventEx < CAllEvent::Send
 	C:\inetpub\wwwroot\sms4b dev\bitrix\modules\rarus.sms4b\classes\general\sms4b.php:1017

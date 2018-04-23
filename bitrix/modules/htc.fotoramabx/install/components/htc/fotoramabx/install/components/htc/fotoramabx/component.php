@@ -5,9 +5,9 @@
 global $APPLICATION;
 
 /**
- *  Проверим валидность параметров
+ *  РџСЂРѕРІРµСЂРёРј РІР°Р»РёРґРЅРѕСЃС‚СЊ РїР°СЂР°РјРµС‚СЂРѕРІ
  */
-if (!isset($arParams['CACHE_TIME']) || $arParams['CACHE_TIME'] < 0) //Время кеширования по умолчанию
+if (!isset($arParams['CACHE_TIME']) || $arParams['CACHE_TIME'] < 0) //Р’СЂРµРјСЏ РєРµС€РёСЂРѕРІР°РЅРёСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 {
 	$arParams['CACHE_TIME'] = CFotoramaComponent::CACHE_TIME_DEFAULT;
 }
@@ -27,8 +27,8 @@ if (!isset($arParams['SOURCE_ID']))
 if ($this->StartResultCache($arParams['CACHE_TIME']))
 {
 	/**
-	 * В зависимости от того, что используется в качестве источника изображений
-	 * вызовем метод из class.php
+	 * Р’ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РєР°С‡РµСЃС‚РІРµ РёСЃС‚РѕС‡РЅРёРєР° РёР·РѕР±СЂР°Р¶РµРЅРёР№
+	 * РІС‹Р·РѕРІРµРј РјРµС‚РѕРґ РёР· class.php
 	 */
 	switch ($arParams['SOURCE_TYPE'])
 	{
@@ -62,53 +62,53 @@ if ($this->StartResultCache($arParams['CACHE_TIME']))
 		return;
 	}
 
-	$parameters = array(); //Передаваемые в компонент параметры
+	$parameters = array(); //РџРµСЂРµРґР°РІР°РµРјС‹Рµ РІ РєРѕРјРїРѕРЅРµРЅС‚ РїР°СЂР°РјРµС‚СЂС‹
 
-	$parameters['RATIO'] = $arResult['IMAGES'][0]['WIDTH'] . '/' . $arResult['IMAGES'][0]['HEIGHT']; //Cоотношение сторон рассчитывается по первой картинке в списке
+	$parameters['RATIO'] = $arResult['IMAGES'][0]['WIDTH'] . '/' . $arResult['IMAGES'][0]['HEIGHT']; //CРѕРѕС‚РЅРѕС€РµРЅРёРµ СЃС‚РѕСЂРѕРЅ СЂР°СЃСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РїРѕ РїРµСЂРІРѕР№ РєР°СЂС‚РёРЅРєРµ РІ СЃРїРёСЃРєРµ
 	
-	$parameters['LOOP'] = false; //Зациклить навигацию по изображениям
+	$parameters['LOOP'] = false; //Р—Р°С†РёРєР»РёС‚СЊ РЅР°РІРёРіР°С†РёСЋ РїРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏРј
 	if (!empty($arParams['LOOP']) && $arParams['LOOP'] === 'Y')
 	{
 		$parameters['LOOP'] = true;
 	}
 
-	$parameters['CHANGE_HASH'] = false; //Изменять хеш в URL
+	$parameters['CHANGE_HASH'] = false; //РР·РјРµРЅСЏС‚СЊ С…РµС€ РІ URL
 	if (!empty($arParams['CHANGE_HASH']) && $arParams['CHANGE_HASH'] === 'Y')
 	{
 		$parameters['CHANGE_HASH'] = true;
 	}
 
-	$parameters['NAVIGATION_ON_TOP'] = false; //Показывать навигацию над изображениями
+	$parameters['NAVIGATION_ON_TOP'] = false; //РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°РІРёРіР°С†РёСЋ РЅР°Рґ РёР·РѕР±СЂР°Р¶РµРЅРёСЏРјРё
 	if (!empty($arParams['NAVIGATION_POSITION']) && $arParams['NAVIGATION_POSITION'] === CFotoramaComponent::NAVIGATION_POSITION_TOP)
 	{
 		$parameters['NAVIGATION_ON_TOP'] = true;
 	}
 	
-	$parameters['SHUFFLE'] = false; //Перемешивать изображения каждый раз
+	$parameters['SHUFFLE'] = false; //РџРµСЂРµРјРµС€РёРІР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ РєР°Р¶РґС‹Р№ СЂР°Р·
 	if (!empty($arParams['SHUFFLE']) && $arParams['SHUFFLE'] === 'Y')
 	{
 		$parameters['SHUFFLE'] = true;
 	}
 
-	$parameters['NAVIGATION_STYLE'] = CFotoramaComponent::NAVIGATION_STYLE_DOTS; //Стиль навигации (точки по умолчанию)
+	$parameters['NAVIGATION_STYLE'] = CFotoramaComponent::NAVIGATION_STYLE_DOTS; //РЎС‚РёР»СЊ РЅР°РІРёРіР°С†РёРё (С‚РѕС‡РєРё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ)
 	if (!empty($arParams['NAVIGATION_STYLE'])) 
 	{
 		$parameters['NAVIGATION_STYLE'] = $arParams['NAVIGATION_STYLE']; 
 	}
 
-	$parameters['ALLOW_FULLSCREEN'] = CFotoramaComponent::FULLSCREEN_MODE_DISABLED; //Полноэкранный режим (отключен по умолчанию)
+	$parameters['ALLOW_FULLSCREEN'] = CFotoramaComponent::FULLSCREEN_MODE_DISABLED; //РџРѕР»РЅРѕСЌРєСЂР°РЅРЅС‹Р№ СЂРµР¶РёРј (РѕС‚РєР»СЋС‡РµРЅ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ)
 	if (!empty($arParams['ALLOW_FULLSCREEN']))
 	{
 		$parameters['ALLOW_FULLSCREEN'] = $arParams['ALLOW_FULLSCREEN'];
 	}
 
-	$parameters['SHOW_CAPTION'] = false; //Показывать подписи
+	$parameters['SHOW_CAPTION'] = false; //РџРѕРєР°Р·С‹РІР°С‚СЊ РїРѕРґРїРёСЃРё
 	if (!empty($arParams['SHOW_CAPTION']) && $arParams['SHOW_CAPTION'] === 'Y')
 	{
 		$parameters['SHOW_CAPTION'] = true;
 	}
 
-	$parameters['LAZY_LOAD'] = false; //Ленивая загрузка (игнорировать браузеры с отключенным JS)
+	$parameters['LAZY_LOAD'] = false; //Р›РµРЅРёРІР°СЏ Р·Р°РіСЂСѓР·РєР° (РёРіРЅРѕСЂРёСЂРѕРІР°С‚СЊ Р±СЂР°СѓР·РµСЂС‹ СЃ РѕС‚РєР»СЋС‡РµРЅРЅС‹Рј JS)
 	if (!empty($arParams['LAZY_LOAD']) && $arParams['LAZY_LOAD'] === 'Y') {
 		$parameters['LAZY_LOAD'] = true;
 	}
@@ -119,7 +119,7 @@ if ($this->StartResultCache($arParams['CACHE_TIME']))
 }
 
 /**
- * Так как без JS- и CSS-файлов Фоторамы компонент не имеет смысла, добавляем их тут
+ * РўР°Рє РєР°Рє Р±РµР· JS- Рё CSS-С„Р°Р№Р»РѕРІ Р¤РѕС‚РѕСЂР°РјС‹ РєРѕРјРїРѕРЅРµРЅС‚ РЅРµ РёРјРµРµС‚ СЃРјС‹СЃР»Р°, РґРѕР±Р°РІР»СЏРµРј РёС… С‚СѓС‚
  */
 $APPLICATION->SetAdditionalCSS('http://fotorama.s3.amazonaws.com/4.4.8/fotorama.css');
 $APPLICATION->AddHeadString('<script>!window.jQuery && document.write(unescape(\'%3Cscript src="//code.jquery.com/jquery-1.10.2.min.js"%3E%3C/script%3E\'))</script>',true);

@@ -1,3 +1,3 @@
 <?
-$MESS ['MCART_LIBEREYA_SEARCH_LABEL'] = "Поиск:";
+$MESS ['MCART_LIBEREYA_SEARCH_LABEL'] = "РџРѕРёСЃРє:";
 ?>

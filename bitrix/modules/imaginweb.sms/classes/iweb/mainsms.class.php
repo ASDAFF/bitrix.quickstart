@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Êëàññ äëÿ ðàáîòû ñ ñåðâèñîì MainSms.ru
+ * ÐšÐ»Ð°ÑÑ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð¼ MainSms.ru
  */
 class MainSMS
 {
@@ -17,7 +17,7 @@ class MainSMS
         $response   = null;
 
     /**
-     * Êîíñòðóêòîð
+     * ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€
      *
      * @param string $project
      * @param string $key
@@ -33,7 +33,7 @@ class MainSMS
     }
 
     /**
-     * Îòïðàâèòü SMS
+     * ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ SMS
      *
      * @param string|array $recipients
      * @param string $message
@@ -48,7 +48,7 @@ class MainSMS
     }
 
     /**
-     * Ïðîâåðèòü ñòàòóñ äîñòàâêè ñîîáùåíèé
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹
      *
      * @param string|array $messagesId
      *
@@ -61,7 +61,7 @@ class MainSMS
     }
 
     /**
-     * Îòïðàâèòü SMS
+     * ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ SMS
      *
      * @param string|array $recipients
      * @param string $message
@@ -92,7 +92,7 @@ class MainSMS
     }
 
     /**
-     * Ïðîâåðèòü ñòàòóñ äîñòàâêè ñîîáùåíèé
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹
      *
      * @param string|array $messagesId
      *
@@ -112,7 +112,7 @@ class MainSMS
     }
 
     /**
-     * Çàïðîñ ñòîèìîñòè ñîîáùåíèÿ
+     * Ð—Ð°Ð¿Ñ€Ð¾Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚Ð¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ
      *
      * @param string|array $recipients
      * @param string $message
@@ -130,7 +130,7 @@ class MainSMS
     }
 
     /**
-     * Çàïðîñ èíôîðìàöèè î íîìåðàõ
+     * Ð—Ð°Ð¿Ñ€Ð¾Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¾ Ð½Ð¾Ð¼ÐµÑ€Ð°Ñ…
      *
      * @param string|array $recipients
      *
@@ -147,7 +147,7 @@ class MainSMS
     
 
     /**
-     * Çàïðîñèòü áàëàíñ
+     * Ð—Ð°Ð¿Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ Ð±Ð°Ð»Ð°Ð½Ñ
      *
      */
     public function userBalance()
@@ -157,7 +157,7 @@ class MainSMS
     }
 
     /**
-     * Çàïðîñèòü áàëàíñ
+     * Ð—Ð°Ð¿Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ Ð±Ð°Ð»Ð°Ð½Ñ
      *
      */
     public function getBalance()
@@ -167,7 +167,7 @@ class MainSMS
 
 
     /**
-     * Îòïðàâèòü çàïðîñ
+     * ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð·Ð°Ð¿Ñ€Ð¾Ñ
      *
      * @param string $function
      * @param array $params
@@ -211,7 +211,7 @@ class MainSMS
 
 
     /**
-     * Óñòàíîâèòü àäðåñ øëþçà
+     * Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ ÑˆÐ»ÑŽÐ·Ð°
      *
      * @param string $url
      * @return void
@@ -223,7 +223,7 @@ class MainSMS
 
 
     /**
-     * Ïîëó÷èòü àäðåñ ñåðâåðà
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð°Ð´Ñ€ÐµÑ ÑÐµÑ€Ð²ÐµÑ€Ð°
      *
      * @return string
      */
@@ -243,7 +243,7 @@ class MainSMS
 
 
     /**
-     * Âîçâðàùàåò îòâåò ñåðâåðà ïîñëåäíåãî çàïðîñà
+     * Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ð¾Ñ‚Ð²ÐµÑ‚ ÑÐµÑ€Ð²ÐµÑ€Ð° Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ³Ð¾ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°
      *
      * @return array
      */
@@ -254,7 +254,7 @@ class MainSMS
 
 
     /**
-     * Ñãåíåðèðîâàòü ïîäïèñü
+     * Ð¡Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÑŒ
      *
      * @param array $params
      * @return string

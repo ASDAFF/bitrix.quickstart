@@ -1,6 +1,6 @@
 <?
-$MESS["MCART_TP_DESCRIPTION"] = "Îïèñàíèå";
-$MESS["MCART_TP_CREATOR"] = "Ñîçäàòåëü ãðóïïû";
-$MESS["MCART_TP_SUBJECT"] = "Òåìà";
-$MESS["ST_SETTINGS"] = "Óñòàíîâêè";
+$MESS["MCART_TP_DESCRIPTION"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS["MCART_TP_CREATOR"] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÐµÐ»ÑŒ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹";
+$MESS["MCART_TP_SUBJECT"] = "Ð¢ÐµÐ¼Ð°";
+$MESS["ST_SETTINGS"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸";
 ?>

@@ -1,5 +1,5 @@
 <?
-$MESS ['T_IBLOCK_DESC_IBLOCK'] = "Èíôîáëîêè";
-$MESS ['IBLOCK_VOTE_TEMPLATE_NAME'] = "Ãîëîñîâàíèå";
-$MESS ['IBLOCK_VOTE_TEMPLATE_DESCRIPTION'] = "Ïîçâîëÿåò ïîëüçîâàòåëÿì îòäàòü ñâîé ãîëîñ.";
+$MESS ['T_IBLOCK_DESC_IBLOCK'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
+$MESS ['IBLOCK_VOTE_TEMPLATE_NAME'] = "Ð“Ð¾Ð»Ð¾ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['IBLOCK_VOTE_TEMPLATE_DESCRIPTION'] = "ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÐ¼ Ð¾Ñ‚Ð´Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ Ð³Ð¾Ð»Ð¾Ñ.";
 ?>

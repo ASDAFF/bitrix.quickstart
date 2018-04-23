@@ -1,9 +1,9 @@
 <?php
-$MESS['CLEANTALK_BACK_LINK'] = 'Âåðíóòüñÿ íàçàä';
-$MESS['CLEANTALK_EVENT']     = 'Àâòîìîäåðàòîð CleanTalk';
-$MESS['CLEANTALK_MESSAGE']   = 'Ñîîáùåíèå';
-$MESS['CLEANTALK_E_SERVER'] = 'Îøèáêà ðàáîòû ñåðâåðà CleanTalk';
-$MESS['CLEANTALK_E_INTERNAL'] = 'Îøèáêà âûçîâà ìåòîäîâ CleanTalk';
-$MESS['CLEANTALK_E_PARAM']  = 'Ïëîõèå ïàðàìåòðû ìåòîäà CheckAllBefore';
-$MESS['CLEANTALK_E_TYPE']   = 'Ïëîõîé ïàðàìåòð type ìåòîäà CheckAllBefore';
+$MESS['CLEANTALK_BACK_LINK'] = 'Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´';
+$MESS['CLEANTALK_EVENT']     = 'ÐÐ²Ñ‚Ð¾Ð¼Ð¾Ð´ÐµÑ€Ð°Ñ‚Ð¾Ñ€ CleanTalk';
+$MESS['CLEANTALK_MESSAGE']   = 'Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ';
+$MESS['CLEANTALK_E_SERVER'] = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÐµÑ€Ð²ÐµÑ€Ð° CleanTalk';
+$MESS['CLEANTALK_E_INTERNAL'] = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ñ‹Ð·Ð¾Ð²Ð° Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð² CleanTalk';
+$MESS['CLEANTALK_E_PARAM']  = 'ÐŸÐ»Ð¾Ñ…Ð¸Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¼ÐµÑ‚Ð¾Ð´Ð° CheckAllBefore';
+$MESS['CLEANTALK_E_TYPE']   = 'ÐŸÐ»Ð¾Ñ…Ð¾Ð¹ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ type Ð¼ÐµÑ‚Ð¾Ð´Ð° CheckAllBefore';
 ?>

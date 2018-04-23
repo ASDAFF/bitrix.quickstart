@@ -1,5 +1,5 @@
 <?
-$MESS ['COMP_MAIN_USER_REGISTER_TITLE'] = "Èíòèñ. Äâóõôàêòîðíàÿ ðåãèñòðàöèÿ";
-$MESS ['COMP_MAIN_USER_REGISTER_DESCR'] = "Óïðàâëÿåìàÿ ôîðìà ðåãèñòðàöèè íîâîãî ïîëüçîâàòåëÿ.";
-$MESS ['MAIN_USER_GROUP_NAME'] = "Ïîëüçîâàòåëü";
+$MESS ['COMP_MAIN_USER_REGISTER_TITLE'] = "Ð˜Ð½Ñ‚Ð¸Ñ. Ð”Ð²ÑƒÑ…Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð½Ð°Ñ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ";
+$MESS ['COMP_MAIN_USER_REGISTER_DESCR'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð° Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ.";
+$MESS ['MAIN_USER_GROUP_NAME'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
 ?>

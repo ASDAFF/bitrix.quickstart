@@ -1,16 +1,16 @@
 <?
-$MESS["MAIN_MENU_EDIT"] = "Ðåäàêòèðîâàòü ïóíêòû ìåíþ";
-$MESS["MAIN_MENU_ADD"] = "Äîáàâèòü ïóíêòû ìåíþ";
-$MESS["MAIN_MENU_ADD_NEW"] = "Ñîçäàòü ìåíþ â òåêóùåì ðàçäåëå";
-$MESS["MAIN_MENU_TOP_PANEL_BUTTON_TEXT"] = "Ìåíþ";
-$MESS["MAIN_MENU_TOP_PANEL_BUTTON_ALT"] = "Ðåäàêòèðîâàòü ïóíêòû ìåíþ";
-$MESS["MAIN_MENU_TOP_PANEL_BUTTON_HINT"] = "Âûçîâ ôîðìû ðåäàêòèðîâàíèÿ ìåíþ. Íàæìèòå íà ñòðåëêó, ÷òîáû îòðåäàêòèðîâàòü âñå ìåíþ äàííîé ñòðàíèöû èëè ñîçäàòü íîâîå ìåíþ.";
-$MESS["MAIN_MENU_TOP_PANEL_ITEM_TEXT"] = "Ðåäàêòèðîâàòü \"#MENU_TITLE#\"";
-$MESS["MAIN_MENU_TOP_PANEL_ITEM_ALT"] = "Ðåäàêòèðîâàòü ïóíêòû ìåíþ \"#MENU_TITLE#\"";
-$MESS["MAIN_MENU_ADD_TOP_PANEL_ITEM_TEXT"] = "Ñîçäàòü \"#MENU_TITLE#\"";
-$MESS["MAIN_MENU_ADD_TOP_PANEL_ITEM_ALT"] = "Ñîçäàòü ìåíþ \"#MENU_TITLE#\" â òåêóùåì ðàçäåëå";
-$MESS["MAIN_MENU_DEL_TOP_PANEL_ITEM_TEXT"] = "Óäàëèòü \"#MENU_TITLE#\"";
-$MESS["MAIN_MENU_DEL_TOP_PANEL_ITEM_ALT"] = "Óäàëèòü ìåíþ \"#MENU_TITLE#\" â òåêóùåì ðàçäåëå";
-$MESS["menu_comp_del_menu"] = "Óäàëèòü ìåíþ â òåêóùåì ðàçäåëå";
-$MESS["menu_comp_del_conf"] = "Óäàëèòü ôàéë ìåíþ \"#MENU_TITLE#\" â òåêóùåì ðàçäåëå?";
+$MESS["MAIN_MENU_EDIT"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚Ñ‹ Ð¼ÐµÐ½ÑŽ";
+$MESS["MAIN_MENU_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚Ñ‹ Ð¼ÐµÐ½ÑŽ";
+$MESS["MAIN_MENU_ADD_NEW"] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¼ÐµÐ½ÑŽ Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ";
+$MESS["MAIN_MENU_TOP_PANEL_BUTTON_TEXT"] = "ÐœÐµÐ½ÑŽ";
+$MESS["MAIN_MENU_TOP_PANEL_BUTTON_ALT"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚Ñ‹ Ð¼ÐµÐ½ÑŽ";
+$MESS["MAIN_MENU_TOP_PANEL_BUTTON_HINT"] = "Ð’Ñ‹Ð·Ð¾Ð² Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¼ÐµÐ½ÑŽ. ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð½Ð° ÑÑ‚Ñ€ÐµÐ»ÐºÑƒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð²ÑÐµ Ð¼ÐµÐ½ÑŽ Ð´Ð°Ð½Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ð¸Ð»Ð¸ ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ð¾Ðµ Ð¼ÐµÐ½ÑŽ.";
+$MESS["MAIN_MENU_TOP_PANEL_ITEM_TEXT"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ \"#MENU_TITLE#\"";
+$MESS["MAIN_MENU_TOP_PANEL_ITEM_ALT"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚Ñ‹ Ð¼ÐµÐ½ÑŽ \"#MENU_TITLE#\"";
+$MESS["MAIN_MENU_ADD_TOP_PANEL_ITEM_TEXT"] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ \"#MENU_TITLE#\"";
+$MESS["MAIN_MENU_ADD_TOP_PANEL_ITEM_ALT"] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¼ÐµÐ½ÑŽ \"#MENU_TITLE#\" Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ";
+$MESS["MAIN_MENU_DEL_TOP_PANEL_ITEM_TEXT"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ \"#MENU_TITLE#\"";
+$MESS["MAIN_MENU_DEL_TOP_PANEL_ITEM_ALT"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½ÑŽ \"#MENU_TITLE#\" Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ";
+$MESS["menu_comp_del_menu"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼ÐµÐ½ÑŽ Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ";
+$MESS["menu_comp_del_conf"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» Ð¼ÐµÐ½ÑŽ \"#MENU_TITLE#\" Ð² Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ?";
 ?>

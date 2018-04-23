@@ -1,7 +1,7 @@
 <?
-$MESS["PHOTO_ELEMENT_NOT_FOUND"] = "Ôîòîãðàôèÿ íå íàéäåíà.";
-$MESS["IBLOCK_MODULE_NOT_INSTALLED"] = "Ìîäóëü Èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
-$MESS["CC_BIV_VOTE_COUNT"] = "Êîëè÷åñòâî ïðîãîëîñîâàâøèõ";
-$MESS["CC_BIV_VOTE_SUM"] = "Ñóììà îöåíîê";
-$MESS["CC_BIV_VOTE_RATING"] = "Ðåéòèíã";
+$MESS["PHOTO_ELEMENT_NOT_FOUND"] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ñ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.";
+$MESS["IBLOCK_MODULE_NOT_INSTALLED"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS["CC_BIV_VOTE_COUNT"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¾Ð³Ð¾Ð»Ð¾ÑÐ¾Ð²Ð°Ð²ÑˆÐ¸Ñ…";
+$MESS["CC_BIV_VOTE_SUM"] = "Ð¡ÑƒÐ¼Ð¼Ð° Ð¾Ñ†ÐµÐ½Ð¾Ðº";
+$MESS["CC_BIV_VOTE_RATING"] = "Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³";
 ?>

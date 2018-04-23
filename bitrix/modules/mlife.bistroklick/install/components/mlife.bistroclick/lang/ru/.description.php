@@ -1,6 +1,6 @@
 <?
-$MESS ['MLIFE_CAT_BISTROCKLICK_NAME'] = "Çàêàç â 1 êëèê";
-$MESS ['MLIFE_CAT_BISTROCKLICK_DESCRIPTION'] = "Çàêàç â 1êëèê, ñ âîçìîæíîñòüþ çàïèñè çàêàçà â áàçó è óâåäîìëåíèé ïî ñìñ";
+$MESS ['MLIFE_CAT_BISTROCKLICK_NAME'] = "Ð—Ð°ÐºÐ°Ð· Ð² 1 ÐºÐ»Ð¸Ðº";
+$MESS ['MLIFE_CAT_BISTROCKLICK_DESCRIPTION'] = "Ð—Ð°ÐºÐ°Ð· Ð² 1ÐºÐ»Ð¸Ðº, Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð·Ð°ÐºÐ°Ð·Ð° Ð² Ð±Ð°Ð·Ñƒ Ð¸ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ð¹ Ð¿Ð¾ ÑÐ¼Ñ";
 $MESS ['MLIFE'] = 'Mlife Media';
-$MESS ['MLIFE_ORDER'] = 'Êîðçèíà, çàêàçû';
+$MESS ['MLIFE_ORDER'] = 'ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð°, Ð·Ð°ÐºÐ°Ð·Ñ‹';
 ?>

@@ -1,19 +1,19 @@
 <?php
 
-	if(!defined('IWEB_AM4U_HTTPS_ADDRESS')) define("IWEB_AM4U_HTTPS_ADDRESS", "http://sms.am4u.ru/"); //HTTPS-Àäðåñ, ê êîòîðîìó áóäóò îáðàùàòüñÿ ñêðèïòû. Ñî ñëýøåì íà êîíöå.
-	if(!defined('IWEB_AM4U_HTTP_ADDRESS')) define("IWEB_AM4U_HTTP_ADDRESS", "http://sms.am4u.ru/"); //HTTP-Àäðåñ, ê êîòîðîìó áóäóò îáðàùàòüñÿ ñêðèïòû. Ñî ñëýøåì íà êîíöå.
-	if(!defined('IWEB_AM4U_HTTPS_CHARSET')) define("IWEB_AM4U_HTTPS_CHARSET", LANG_CHARSET); //êîäèðîâêà âàøèõ ñêðèïòîâ. cp1251 - äëÿ Windows-1251, ëèáî æå utf-8 äëÿ, ñîîáñòâåííî - utf-8 :)
-	if(!defined('IWEB_AM4U_HTTPS_METHOD')) define("IWEB_AM4U_HTTPS_METHOD", "curl"); //ìåòîä, êîòîðûì îòïðàâëÿåòñÿ çàïðîñ (curl)
-	if(!defined('IWEB_AM4U_USE_HTTPS')) define("IWEB_AM4U_USE_HTTPS", 0); //1 - èñïîëüçîâàòü HTTPS-àäðåñ, 0 - HTTP
+	if(!defined('IWEB_AM4U_HTTPS_ADDRESS')) define("IWEB_AM4U_HTTPS_ADDRESS", "http://sms.am4u.ru/"); //HTTPS-ÐÐ´Ñ€ÐµÑ, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼Ñƒ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ñ‰Ð°Ñ‚ÑŒÑÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ñ‹. Ð¡Ð¾ ÑÐ»ÑÑˆÐµÐ¼ Ð½Ð° ÐºÐ¾Ð½Ñ†Ðµ.
+	if(!defined('IWEB_AM4U_HTTP_ADDRESS')) define("IWEB_AM4U_HTTP_ADDRESS", "http://sms.am4u.ru/"); //HTTP-ÐÐ´Ñ€ÐµÑ, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼Ñƒ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ñ‰Ð°Ñ‚ÑŒÑÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ñ‹. Ð¡Ð¾ ÑÐ»ÑÑˆÐµÐ¼ Ð½Ð° ÐºÐ¾Ð½Ñ†Ðµ.
+	if(!defined('IWEB_AM4U_HTTPS_CHARSET')) define("IWEB_AM4U_HTTPS_CHARSET", LANG_CHARSET); //ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð²Ð°ÑˆÐ¸Ñ… ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð². cp1251 - Ð´Ð»Ñ Windows-1251, Ð»Ð¸Ð±Ð¾ Ð¶Ðµ utf-8 Ð´Ð»Ñ, ÑÐ¾Ð¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ - utf-8 :)
+	if(!defined('IWEB_AM4U_HTTPS_METHOD')) define("IWEB_AM4U_HTTPS_METHOD", "curl"); //Ð¼ÐµÑ‚Ð¾Ð´, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¼ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ð·Ð°Ð¿Ñ€Ð¾Ñ (curl)
+	if(!defined('IWEB_AM4U_USE_HTTPS')) define("IWEB_AM4U_USE_HTTPS", 0); //1 - Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ HTTPS-Ð°Ð´Ñ€ÐµÑ, 0 - HTTP
 	
 	
-	//define("HTTPS_ADDRESS", "http://sms.am4u.ru/"); //HTTPS-Àäðåñ, ê êîòîðîìó áóäóò îáðàùàòüñÿ ñêðèïòû. Ñî ñëýøåì íà êîíöå.
-	//define("HTTP_ADDRESS", "http://sms.am4u.ru/"); //HTTP-Àäðåñ, ê êîòîðîìó áóäóò îáðàùàòüñÿ ñêðèïòû. Ñî ñëýøåì íà êîíöå.
-	//define("HTTPS_METHOD", "curl"); //ìåòîä, êîòîðûì îòïðàâëÿåòñÿ çàïðîñ (curl èëè file_get_contents)
-	//define("USE_HTTPS", 0); //1 - èñïîëüçîâàòü HTTPS-àäðåñ, 0 - HTTP
+	//define("HTTPS_ADDRESS", "http://sms.am4u.ru/"); //HTTPS-ÐÐ´Ñ€ÐµÑ, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼Ñƒ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ñ‰Ð°Ñ‚ÑŒÑÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ñ‹. Ð¡Ð¾ ÑÐ»ÑÑˆÐµÐ¼ Ð½Ð° ÐºÐ¾Ð½Ñ†Ðµ.
+	//define("HTTP_ADDRESS", "http://sms.am4u.ru/"); //HTTP-ÐÐ´Ñ€ÐµÑ, Ðº ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼Ñƒ Ð±ÑƒÐ´ÑƒÑ‚ Ð¾Ð±Ñ€Ð°Ñ‰Ð°Ñ‚ÑŒÑÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ñ‹. Ð¡Ð¾ ÑÐ»ÑÑˆÐµÐ¼ Ð½Ð° ÐºÐ¾Ð½Ñ†Ðµ.
+	//define("HTTPS_METHOD", "curl"); //Ð¼ÐµÑ‚Ð¾Ð´, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¼ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ð·Ð°Ð¿Ñ€Ð¾Ñ (curl Ð¸Ð»Ð¸ file_get_contents)
+	//define("USE_HTTPS", 0); //1 - Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ HTTPS-Ð°Ð´Ñ€ÐµÑ, 0 - HTTP
 	
-	//Êëàññ ïîïûòàåòñÿ àâòîìàòè÷åñêè îïðåäåëèòü êîäèðîâêó âàøèõ ñêðèïòîâ. 
-	//Åñëè âû õîòèòå çàäàòü åå ñàìè â ïàðàìåòðå HTTPS_CHARSET, òî óêàæèòå HTTPS_CHARSET_AUTO_DETECT çíà÷åíèå FALSE
+	//ÐšÐ»Ð°ÑÑ Ð¿Ð¾Ð¿Ñ‹Ñ‚Ð°ÐµÑ‚ÑÑ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»Ð¸Ñ‚ÑŒ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÑƒ Ð²Ð°ÑˆÐ¸Ñ… ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð². 
+	//Ð•ÑÐ»Ð¸ Ð²Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð·Ð°Ð´Ð°Ñ‚ÑŒ ÐµÐµ ÑÐ°Ð¼Ð¸ Ð² Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ðµ HTTPS_CHARSET, Ñ‚Ð¾ ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ HTTPS_CHARSET_AUTO_DETECT Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ FALSE
 	define("HTTPS_CHARSET_AUTO_DETECT", false);
 	  
-	#define("HTTPS_CHARSET", "utf-8"); //êîäèðîâêà âàøèõ ñêðèïòîâ. cp1251 - äëÿ Windows-1251, ëèáî æå utf-8 äëÿ, ñîîáñòâåííî - utf-8 :)
+	#define("HTTPS_CHARSET", "utf-8"); //ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð²Ð°ÑˆÐ¸Ñ… ÑÐºÑ€Ð¸Ð¿Ñ‚Ð¾Ð². cp1251 - Ð´Ð»Ñ Windows-1251, Ð»Ð¸Ð±Ð¾ Ð¶Ðµ utf-8 Ð´Ð»Ñ, ÑÐ¾Ð¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾ - utf-8 :)

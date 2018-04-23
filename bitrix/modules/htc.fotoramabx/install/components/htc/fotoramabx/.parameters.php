@@ -1,20 +1,20 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
-include_once('class.php'); //Äëÿ óäîáíîãî èñïîëüçîâàíèÿ êîíñòàíò èç êëàññà êîìïîíåíòà
+include_once('class.php'); //Ð”Ð»Ñ ÑƒÐ´Ð¾Ð±Ð½Ð¾Ð³Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚ Ð¸Ð· ÐºÐ»Ð°ÑÑÐ° ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°
 
-$availableSources = array(); //Ìàññèâ äëÿ êîíå÷íûõ èäåíòèôèêàòîðîâ èñòî÷íèêîâ èçîáðàæåíèé 
-$sourceIdParameterName = ''; //Çàãîëîâîê ïîëÿ âûáîðîì ID èñòî÷íèêà èçîáðàæåíèé
+$availableSources = array(); //ÐœÐ°ÑÑÐ¸Ð² Ð´Ð»Ñ ÐºÐ¾Ð½ÐµÑ‡Ð½Ñ‹Ñ… Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€Ð¾Ð² Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð² Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹ 
+$sourceIdParameterName = ''; //Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð¿Ð¾Ð»Ñ Ð²Ñ‹Ð±Ð¾Ñ€Ð¾Ð¼ ID Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹
 
 $fullscreenModes = array(
-	CFotoramaComponent::FULLSCREEN_MODE_DISABLED => GetMessage('FULLSCREEN_DISABLED'), //Ïîëíîýêðàííûé ðåæèì îòêëþ÷åí
-	CFotoramaComponent::FULLSCREEN_MODE_ENABLED => GetMessage('FULLSCREEN_ENABLED'), //Ðàçðåøèòü ïðîñìîòð âî âñå îêíî
-	CFotoramaComponent::FULLSCREEN_MODE_NATIVE => GetMessage('FULLSCREEN_NATIVE'), //Ðàçðåøèòü èñïîëüçîâàíèå Fullscreen API
+	CFotoramaComponent::FULLSCREEN_MODE_DISABLED => GetMessage('FULLSCREEN_DISABLED'), //ÐŸÐ¾Ð»Ð½Ð¾ÑÐºÑ€Ð°Ð½Ð½Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½
+	CFotoramaComponent::FULLSCREEN_MODE_ENABLED => GetMessage('FULLSCREEN_ENABLED'), //Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð²Ð¾ Ð²ÑÐµ Ð¾ÐºÐ½Ð¾
+	CFotoramaComponent::FULLSCREEN_MODE_NATIVE => GetMessage('FULLSCREEN_NATIVE'), //Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ Fullscreen API
 );
 
 $navigationStyles = array(
-	CFotoramaComponent::NAVIGATION_STYLE_THUMBS => GetMessage('NAVIGATION_THUMBS'), //Ìèíèàòþðû èçîáðàæåíèé
-	CFotoramaComponent::NAVIGATION_STYLE_DOTS => GetMessage('NAVIGATION_DOTS'), //Òî÷êè
-	CFotoramaComponent::NAVIGATION_STYLE_DISABLED => GetMessage('NAVIGATION_NONE'), //Îòêëþ÷èòü íàâèãàöèþ
+	CFotoramaComponent::NAVIGATION_STYLE_THUMBS => GetMessage('NAVIGATION_THUMBS'), //ÐœÐ¸Ð½Ð¸Ð°Ñ‚ÑŽÑ€Ñ‹ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹
+	CFotoramaComponent::NAVIGATION_STYLE_DOTS => GetMessage('NAVIGATION_DOTS'), //Ð¢Ð¾Ñ‡ÐºÐ¸
+	CFotoramaComponent::NAVIGATION_STYLE_DISABLED => GetMessage('NAVIGATION_NONE'), //ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸ÑŽ
 );
 
 $navigationPositions = array(
@@ -22,14 +22,14 @@ $navigationPositions = array(
 	CFotoramaComponent::NAVIGATION_POSITION_TOP => GetMessage('NAVIGATION_POSITION_TOP'),
 );
 
-$sourceTypes = array(); //òèïû èñòî÷íèêîâ èçîáðàæåíèé
+$sourceTypes = array(); //Ñ‚Ð¸Ð¿Ñ‹ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð² Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹
 if (CModule::IncludeModule("fileman"))
 {
-	$sourceTypes[CFotoramaComponent::SOURCE_TYPE_MEDIALIBRARY_COLLECTION] = GetMessage('MEDIALIBRARY_COLLECTION'); //Êîëëåêöèÿ ìåäèàáèáëèîòåêè
+	$sourceTypes[CFotoramaComponent::SOURCE_TYPE_MEDIALIBRARY_COLLECTION] = GetMessage('MEDIALIBRARY_COLLECTION'); //ÐšÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ñ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸
 }
 if (CModule::IncludeModule("iblock"))
 {
-	$sourceTypes[CFotoramaComponent::SOURCE_TYPE_IBLOCK_SECTION] = GetMessage('IBLOCK_SECTION'); //Ðàçäåë èíôîáëîêà (èñïîëüçóþòñÿ èçîáðàæåíèÿ àíîíñà è äåòàëüíûå èçîáðàæåíèÿ ýëåìåíòîâ)
+	$sourceTypes[CFotoramaComponent::SOURCE_TYPE_IBLOCK_SECTION] = GetMessage('IBLOCK_SECTION'); //Ð Ð°Ð·Ð´ÐµÐ» Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÑŽÑ‚ÑÑ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð°Ð½Ð¾Ð½ÑÐ° Ð¸ Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)
 }
 
 $autoplayIntervals = array(
@@ -47,15 +47,15 @@ $transitionEffects = array(
 );
 
 /**
- * Íàñòðàèâàåìûå ïàðàìåòðû êîìïîíåíòà
+ * ÐÐ°ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°
  */
 $customComponentParameters = array();
 
-$customComponentParameters['CACHE_TIME'] = array( //Íàñòðîéêè êåøèðîâàíèÿ
+$customComponentParameters['CACHE_TIME'] = array( //ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ
 	'DEFAULT' => CFotoramaComponent::CACHE_TIME_DEFAULT,
 );
 
-$customComponentParameters['SOURCE_TYPE'] = array( //Âûáîð èñòî÷íèêà èçîáðàæåíèé
+$customComponentParameters['SOURCE_TYPE'] = array( //Ð’Ñ‹Ð±Ð¾Ñ€ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹
 	'PARENT' => 'BASE',
 	'NAME' => GetMessage('SOURCE_TYPE'),
 	'TYPE' => 'LIST',
@@ -69,7 +69,7 @@ if ($arCurrentValues['SOURCE_TYPE'] === CFotoramaComponent::SOURCE_TYPE_IBLOCK_S
 {
 	$sourceIdParameterName = GetMessage('IBLOCK_SECTION');
 
-	$iblocksList = array(); //Ïîëó÷èì ñïèñîê âñåõ àêòèâíûõ èíôîáëîêîâ
+	$iblocksList = array(); //ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð¼ ÑÐ¿Ð¸ÑÐ¾Ðº Ð²ÑÐµÑ… Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ñ… Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²
 
 	$dbIblocks = CIBlock::GetList(
 		array(
@@ -126,9 +126,9 @@ elseif ($arCurrentValues['SOURCE_TYPE'] === CFotoramaComponent::SOURCE_TYPE_MEDI
 {
 	$sourceIdParameterName = GetMessage('MEDIALIBRARY_COLLECTION');
 
-	CMedialib::Init(); //Êëàññû ìåäèàáèáëèîòåêè íåäîñòóïíû äî åå èíèöèàëèçàöèè
+	CMedialib::Init(); //ÐšÐ»Ð°ÑÑÑ‹ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð´Ð¾ ÐµÐµ Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸
 
-	//CMedialibCollection::GetList âîçâðàùàåò ñðàçó ìàññèâ ñ èíôîðìàöèåé î êîëëåêöèÿõ 
+	//CMedialibCollection::GetList Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ ÑÑ€Ð°Ð·Ñƒ Ð¼Ð°ÑÑÐ¸Ð² Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÐµÐ¹ Ð¾ ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸ÑÑ… 
 	$medialibraryCollections = CMedialibCollection::GetList(
 		array(
 			'arFilter' => array(
@@ -147,7 +147,7 @@ elseif ($arCurrentValues['SOURCE_TYPE'] === CFotoramaComponent::SOURCE_TYPE_MEDI
 
 if(!empty($arCurrentValues['SOURCE_TYPE']))
 {
-	$customComponentParameters['SOURCE_ID'] = array( //Ñïèñîê äîñòóïíûõ êîëëåêöèé ìåäèàáèáëèîòåêè èëè ðàçäåëîâ èíôîáëîêîâ
+	$customComponentParameters['SOURCE_ID'] = array( //Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ñ… ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¹ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ Ð¸Ð»Ð¸ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²
 		'PARENT' => 'BASE',
 		'NAME' => $sourceIdParameterName,
 		'TYPE' => 'LIST',
@@ -158,7 +158,7 @@ if(!empty($arCurrentValues['SOURCE_TYPE']))
 	);
 }
 
-$customComponentParameters['ALLOW_FULLSCREEN'] = array( //Âûáîð ðåæèìà ïîíîýêðàííîãî ïðîñìîòðà
+$customComponentParameters['ALLOW_FULLSCREEN'] = array( //Ð’Ñ‹Ð±Ð¾Ñ€ Ñ€ÐµÐ¶Ð¸Ð¼Ð° Ð¿Ð¾Ð½Ð¾ÑÐºÑ€Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð°
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('ALLOW_FULLSCREEN'),
 	'TYPE' => 'LIST',
@@ -168,7 +168,7 @@ $customComponentParameters['ALLOW_FULLSCREEN'] = array( //Âûáîð ðåæèìà ïîíîýêðàí
 	'MULTIPLE' => 'N',
 );
 
-$customComponentParameters['NAVIGATION_STYLE'] = array( //Âûáîð ñòèëÿ íàâèãàöèè (ìèíèàòþðû, òî÷êè èëè íèêàêîé íàâèãàöèè)
+$customComponentParameters['NAVIGATION_STYLE'] = array( //Ð’Ñ‹Ð±Ð¾Ñ€ ÑÑ‚Ð¸Ð»Ñ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸ (Ð¼Ð¸Ð½Ð¸Ð°Ñ‚ÑŽÑ€Ñ‹, Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð¸Ð»Ð¸ Ð½Ð¸ÐºÐ°ÐºÐ¾Ð¹ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸)
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('NAVIGATION_STYLE'),
 	'TYPE' => 'LIST',
@@ -178,31 +178,31 @@ $customComponentParameters['NAVIGATION_STYLE'] = array( //Âûáîð ñòèëÿ íàâèãàöèè 
 	'MULTIPLE' => 'N',
 );
 
-$customComponentParameters['SHOW_CAPTION'] = array( //Ïîêàçûâàòü ïîäïèñè
+$customComponentParameters['SHOW_CAPTION'] = array( //ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ¸
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('SHOW_CAPTION'),
 	'TYPE' => 'CHECKBOX',
 );
 
-$customComponentParameters['SHUFFLE'] = array( //Ïåðåìåøèâàòü ëè èçîáðàæåíèÿ êàæäûé ðàç ïåðåä âûâîäîì
+$customComponentParameters['SHUFFLE'] = array( //ÐŸÐµÑ€ÐµÐ¼ÐµÑˆÐ¸Ð²Ð°Ñ‚ÑŒ Ð»Ð¸ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ ÐºÐ°Ð¶Ð´Ñ‹Ð¹ Ñ€Ð°Ð· Ð¿ÐµÑ€ÐµÐ´ Ð²Ñ‹Ð²Ð¾Ð´Ð¾Ð¼
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('SHUFFLE'),
 	'TYPE' => 'CHECKBOX',
 );
 
-$customComponentParameters['CHANGE_HASH'] = array( //Èçìåíÿòü ëè õýø â àäðåñíîé ñòðîêå
+$customComponentParameters['CHANGE_HASH'] = array( //Ð˜Ð·Ð¼ÐµÐ½ÑÑ‚ÑŒ Ð»Ð¸ Ñ…ÑÑˆ Ð² Ð°Ð´Ñ€ÐµÑÐ½Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐµ
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('CHANGE_HASH'),
 	'TYPE' => 'CHECKBOX',
 );
 
-$customComponentParameters['LAZY_LOAD'] = array( //Èãíîðèðîâàòü áðàóçåðû ñ îòêëþ÷åííûì JS http://fotorama.io/customize/lazy-load/
+$customComponentParameters['LAZY_LOAD'] = array( //Ð˜Ð³Ð½Ð¾Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ñ‹ Ñ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ‹Ð¼ JS http://fotorama.io/customize/lazy-load/
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('LAZY_LOAD'),
 	'TYPE' => 'CHECKBOX',
 );
 
-$customComponentParameters['NAVIGATION_POSITION'] = array( //Ðàñïîëîæåíèå íàâèãàöèè
+$customComponentParameters['NAVIGATION_POSITION'] = array( //Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('NAVIGATION_POSITION'),
 	'TYPE' => 'LIST',
@@ -212,20 +212,20 @@ $customComponentParameters['NAVIGATION_POSITION'] = array( //Ðàñïîëîæåíèå íàâèãà
 	'MULTIPLE' => 'N',
 );
 
-$customComponentParameters['SHOW_ARROWS'] = array( //Ïîêàçûâàòü ñòðåëêêè íàâèãàöèè
+$customComponentParameters['SHOW_ARROWS'] = array( //ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ñ€ÐµÐ»ÐºÐºÐ¸ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('SHOW_ARROWS'),
 	'TYPE' => 'CHECKBOX',
 	'DEFAULT' => 'Y',
 );
 
-$customComponentParameters['LOOP'] = array( //Çàöèêëèòü íàâèãàöèþ ïî èçîáðàæåíèÿì
+$customComponentParameters['LOOP'] = array( //Ð—Ð°Ñ†Ð¸ÐºÐ»Ð¸Ñ‚ÑŒ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸ÑŽ Ð¿Ð¾ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸ÑÐ¼
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('LOOP'),
 	'TYPE' => 'CHECKBOX',
 );
 
-$customComponentParameters['AUTOPLAY'] = array( //Àâòîìàòè÷åñêè ïåðåëèñòûâàòü èçîáðàæåíèÿ
+$customComponentParameters['AUTOPLAY'] = array( //ÐÐ²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¿ÐµÑ€ÐµÐ»Ð¸ÑÑ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('AUTOPLAY'),
 	'TYPE' => 'LIST',
@@ -235,7 +235,7 @@ $customComponentParameters['AUTOPLAY'] = array( //Àâòîìàòè÷åñêè ïåðåëèñòûâàòü èç
 	'MULTIPLE' => 'N',
 );
 
-$customComponentParameters['TRANSITION_EFFECT'] = array( //Âèçóàëüíûé ýôôåêò ñìåíû èçîáðàæåíèé
+$customComponentParameters['TRANSITION_EFFECT'] = array( //Ð’Ð¸Ð·ÑƒÐ°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÑ„Ñ„ÐµÐºÑ‚ ÑÐ¼ÐµÐ½Ñ‹ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹
 	'PARENT' => 'FOTORAMA_EXTENDED_SETTINGS',
 	'NAME' => GetMessage('TRANSITION_EFFECT'),
 	'TYPE' => 'LIST',
@@ -246,11 +246,11 @@ $customComponentParameters['TRANSITION_EFFECT'] = array( //Âèçóàëüíûé ýôôåêò ñìå
 );
 
 /**
- * Âñå ïàðàìåòðû êîìïîíåíòà
+ * Ð’ÑÐµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°
  */
 $arComponentParameters = array(
 	'GROUPS' => array(
-		'FOTORAMA_EXTENDED_SETTINGS' => array( //Ãðóïïà ðàñøèðåííûõ íàñòðîåê Ôîòîðàìû
+		'FOTORAMA_EXTENDED_SETTINGS' => array( //Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ñ‹Ñ… Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº Ð¤Ð¾Ñ‚Ð¾Ñ€Ð°Ð¼Ñ‹
 			'NAME' => GetMessage('FOTORAMA_EXTENDED_SETTINGS'),
 			'SORT' => 400,
 		),

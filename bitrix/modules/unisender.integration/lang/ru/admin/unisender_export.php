@@ -1,7 +1,7 @@
 <?
-$MESS['UNI_API_KEY_EMPTY'] = "Установите ключ доступа к API в <a href=\"/bitrix/admin/settings.php?lang=ru&mid=#MODULE_ID#&mid_menu=1\">настройках</a>";
-$MESS['UNI_IMPORT_START'] = "Старт импорта...";
-$MESS['UNI_IMPORT_STAT'] = "<strong>Импортировано:</strong> #TOTAL# <strong>Добавлено:</strong> #INSERTED# <strong>Обновлено:</strong> #UPDATED# <strong>Удалено:</strong> #DELETED# <strong>Новых Email:</strong> #NEW_EMAILS#";
-$MESS['UNI_IMPORT_FINISH'] = "Импорт завершён.";
-$MESS['UNI_END_LINK'] = "<a href=\"http://cp.unisender.com/ru/list_frm/#LIST_ID#\" target=\"_blank\">Перейти к списку рассылки на UniSender</a>";
+$MESS['UNI_API_KEY_EMPTY'] = "РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РєР»СЋС‡ РґРѕСЃС‚СѓРїР° Рє API РІ <a href=\"/bitrix/admin/settings.php?lang=ru&mid=#MODULE_ID#&mid_menu=1\">РЅР°СЃС‚СЂРѕР№РєР°С…</a>";
+$MESS['UNI_IMPORT_START'] = "РЎС‚Р°СЂС‚ РёРјРїРѕСЂС‚Р°...";
+$MESS['UNI_IMPORT_STAT'] = "<strong>РРјРїРѕСЂС‚РёСЂРѕРІР°РЅРѕ:</strong> #TOTAL# <strong>Р”РѕР±Р°РІР»РµРЅРѕ:</strong> #INSERTED# <strong>РћР±РЅРѕРІР»РµРЅРѕ:</strong> #UPDATED# <strong>РЈРґР°Р»РµРЅРѕ:</strong> #DELETED# <strong>РќРѕРІС‹С… Email:</strong> #NEW_EMAILS#";
+$MESS['UNI_IMPORT_FINISH'] = "РРјРїРѕСЂС‚ Р·Р°РІРµСЂС€С‘РЅ.";
+$MESS['UNI_END_LINK'] = "<a href=\"http://cp.unisender.com/ru/list_frm/#LIST_ID#\" target=\"_blank\">РџРµСЂРµР№С‚Рё Рє СЃРїРёСЃРєСѓ СЂР°СЃСЃС‹Р»РєРё РЅР° UniSender</a>";
 ?>

@@ -191,7 +191,7 @@ class Step2 extends CWizardStep
 		{
 			$siteList[] = Array("ID" => $arRes["ID"], "NAME" => $arRes["NAME"]);
 		}
-		//сохраняем массив со свойствами заказа
+		//СЃРѕС…СЂР°РЅСЏРµРј РјР°СЃСЃРёРІ СЃРѕ СЃРІРѕР№СЃС‚РІР°РјРё Р·Р°РєР°Р·Р°
 		if  (CModule::IncludeModule("sale"))
 		{
 			$db_props = CSaleOrderProps::GetList(
@@ -209,7 +209,7 @@ class Step2 extends CWizardStep
 
 			}
 			$personTypes = array_unique($personTypes);
-			/* Находи типы плательщиков */
+			/* РќР°С…РѕРґРё С‚РёРїС‹ РїР»Р°С‚РµР»СЊС‰РёРєРѕРІ */
 			$db_ptype = CSalePersonType::GetList(Array("SORT" => "ASC"));
 			while ($ptype = $db_ptype->Fetch())
 			{
@@ -628,7 +628,7 @@ function selectSite(current, add_id)
 						COption::SetOptionString("rarus.sms4b", "event_sale_order_cancel", trim($_REQUEST["event_sale_order_cancel"][$siteList[$i]["ID"]]), GetMessage('opt_order_cancel'), $siteList[$i]["ID"]);
 						COption::SetOptionString("rarus.sms4b", "event_sale_order_delivery", trim($_REQUEST["event_sale_order_delivery"][$siteList[$i]["ID"]]), GetMessage('opt_order_delivery'), $siteList[$i]["ID"]);
 
-						//статусы
+						//СЃС‚Р°С‚СѓСЃС‹
 						foreach ($arSaleStatus['sale'] as $option)
 						{
 							COption::SetOptionString("rarus.sms4b", key($option), trim($_REQUEST[key($option)][$siteList[$i]["ID"]]), $option['NAME'], $siteList[$i]["ID"]);
@@ -923,7 +923,7 @@ function selectSite(current, add_id)
 						COption::SetOptionString("rarus.sms4b", "admin_event_sale_order_cancel", trim($_REQUEST["admin_event_sale_order_cancel"][$siteList[$i]["ID"]]), GetMessage('opt_order_cancel'), $siteList[$i]["ID"]);
 						COption::SetOptionString("rarus.sms4b", "admin_event_sale_order_delivery", trim($_REQUEST["admin_event_sale_order_delivery"][$siteList[$i]["ID"]]), GetMessage('opt_order_delivery'), $siteList[$i]["ID"]);
 
-						//статусы
+						//СЃС‚Р°С‚СѓСЃС‹
 						foreach ($arAdminStatus['sale'] as $option)
 						{
 							COption::SetOptionString("rarus.sms4b", key($option), trim($_REQUEST[key($option)][$siteList[$i]["ID"]]), $option['NAME'], $siteList[$i]["ID"]);

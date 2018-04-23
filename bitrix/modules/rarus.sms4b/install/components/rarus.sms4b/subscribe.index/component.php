@@ -110,7 +110,7 @@ if($arSubscription["ID"] > 0)
 //checking what we have:email or telephone
 if ($USER->IsAuthorized())
 {
-	//получаем подписку пользователя
+	//РїРѕР»СѓС‡Р°РµРј РїРѕРґРїРёСЃРєСѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 	$ar_user_subs = CSubscription::GetList(array("ID"=>"asc"),array("USER_ID"=>$USER->GetID()));
 	$post_sub = '';
 	$sms_sub = '';

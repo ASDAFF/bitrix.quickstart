@@ -1,13 +1,13 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die(); ?>
 <?
-$MESS["GAL_SETTINGS"]                  = "Íàñòðîéêè ãàëåðåè";
-$MESS["CHOSEN_COLLECTIONS"]            = "Ðàçäåë ãàëåðåè";
-$MESS["SET_P_TITLE"]                   = "Óñòàíàâëèâàòü çàãîëîâîê ñòðàíèöû";
-$MESS["MAIN_TITLE"]                    = "Çàãîëîâîê ãëàâíîé ñòðàíèöû ãàëåðåè";
-$MESS["MAIN_TITLE_VALUE"]              = "Ôîòîãàëåðåÿ";
-$MESS["SET_JQ"]                        = "Ïîäêëþ÷èòü áèëèîòåêó JQuery";
-$MESS["SET_FB"]                        = "Ïîäêëþ÷èòü Fancybox";
-$MESS["SHOW_B_LINK"]                   = "Ïîêàçûâàòü îáðàòíóþ ññûëêó";
-$MESS["SHOW_B_LINK_VALUE"]             = "Òåêñò îáðàòíîé ññûëêè";
-$MESS["SHOW_B_LINK_DEFAULT_VALUE"]     = "<< Íàçàä â ãàëåðåþ";
+$MESS["GAL_SETTINGS"]                  = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS["CHOSEN_COLLECTIONS"]            = "Ð Ð°Ð·Ð´ÐµÐ» Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS["SET_P_TITLE"]                   = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["MAIN_TITLE"]                    = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS["MAIN_TITLE_VALUE"]              = "Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ";
+$MESS["SET_JQ"]                        = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð±Ð¸Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ JQuery";
+$MESS["SET_FB"]                        = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Fancybox";
+$MESS["SHOW_B_LINK"]                   = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¾Ð±Ñ€Ð°Ñ‚Ð½ÑƒÑŽ ÑÑÑ‹Ð»ÐºÑƒ";
+$MESS["SHOW_B_LINK_VALUE"]             = "Ð¢ÐµÐºÑÑ‚ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð¹ ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS["SHOW_B_LINK_DEFAULT_VALUE"]     = "<< ÐÐ°Ð·Ð°Ð´ Ð² Ð³Ð°Ð»ÐµÑ€ÐµÑŽ";
 ?>

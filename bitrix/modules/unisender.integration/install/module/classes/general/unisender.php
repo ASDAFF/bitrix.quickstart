@@ -28,7 +28,7 @@ class UniAPI
 	
 	private function query($method, $params = array())
 	{
-		// Ñîçäà¸ì POST-çàïğîñ
+		// Ğ¡Ğ¾Ğ·Ğ´Ğ°Ñ‘Ğ¼ POST-Ğ·Ğ°Ğ¿Ñ€Ğ¾Ñ
 		$POST = array (
 		  'api_key' => $this->API_KEY,
 		);
@@ -44,7 +44,7 @@ class UniAPI
 		
 		$POST = array_merge((array)$params, $POST);
 
-		// Óñòàíàâëèâàåì ñîåäèíåíèå
+		// Ğ£ÑÑ‚Ğ°Ğ½Ğ°Ğ²Ğ»Ğ¸Ğ²Ğ°ĞµĞ¼ ÑĞ¾ĞµĞ´Ğ¸Ğ½ĞµĞ½Ğ¸Ğµ
 		/*$ch = curl_init();
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_POST, 1);
@@ -104,7 +104,7 @@ class UniAPI
 		if (($json = $this->query("getLists"))!==false)
 		{
 			$data = json_decode($json);
-			// åñëè åñòü îøèáêè
+			// ĞµÑĞ»Ğ¸ ĞµÑÑ‚ÑŒ Ğ¾ÑˆĞ¸Ğ±ĞºĞ¸
 			if ($this->checkErrors($data)===true)
 			{
 				$lists = array();
@@ -130,7 +130,7 @@ class UniAPI
 		if (($json = $this->query("getFields"))!==false)
 		{
 			$data = json_decode($json);
-			// åñëè åñòü îøèáêè
+			// ĞµÑĞ»Ğ¸ ĞµÑÑ‚ÑŒ Ğ¾ÑˆĞ¸Ğ±ĞºĞ¸
 			if ($this->checkErrors($data)===true)
 			{
 				//print_r($data);
@@ -170,7 +170,7 @@ class UniAPI
 		if (($json = $this->query("importContacts", $params))!==false)
 		{
 			$data = json_decode($json);
-			// åñëè åñòü îøèáêè
+			// ĞµÑĞ»Ğ¸ ĞµÑÑ‚ÑŒ Ğ¾ÑˆĞ¸Ğ±ĞºĞ¸
 			if ($this->checkErrors($data)===true)
 			{
 				$results = array();

@@ -22,7 +22,7 @@
  *
  */
 
-$MESS['LP_PUBLIC_KEY'] = 'Публичный ключ';
-$MESS['LP_PUBLIC_KEY_INFO'] = 'получить ключ можно в';
-$MESS['LP_PUBLIC_KEY_INFO_LINK_NAME'] = 'настройках магазина';
-$MESS['LP_SAVE'] = "Сохранить";
+$MESS['LP_PUBLIC_KEY'] = 'РџСѓР±Р»РёС‡РЅС‹Р№ РєР»СЋС‡';
+$MESS['LP_PUBLIC_KEY_INFO'] = 'РїРѕР»СѓС‡РёС‚СЊ РєР»СЋС‡ РјРѕР¶РЅРѕ РІ';
+$MESS['LP_PUBLIC_KEY_INFO_LINK_NAME'] = 'РЅР°СЃС‚СЂРѕР№РєР°С… РјР°РіР°Р·РёРЅР°';
+$MESS['LP_SAVE'] = "РЎРѕС…СЂР°РЅРёС‚СЊ";

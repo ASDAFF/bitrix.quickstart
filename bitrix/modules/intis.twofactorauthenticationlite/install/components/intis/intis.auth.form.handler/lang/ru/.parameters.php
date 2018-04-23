@@ -1,3 +1,3 @@
 <?
-$MESS["TWO_FACTOR_AUTH_CURRENT_HANDLER_PATH"] = "Ïóòü îò êîðíÿ äî ñòðàíèöû ñ îáðàáîò÷èêîì ôîðìû";
+$MESS["TWO_FACTOR_AUTH_CURRENT_HANDLER_PATH"] = "ÐŸÑƒÑ‚ÑŒ Ð¾Ñ‚ ÐºÐ¾Ñ€Ð½Ñ Ð´Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼ Ñ„Ð¾Ñ€Ð¼Ñ‹";
 ?>

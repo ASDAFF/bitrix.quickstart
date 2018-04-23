@@ -1,96 +1,96 @@
 <?
 /**
  *
- * Ìîäóëü ïëàòåæíîãî ñåðâèñà OnlineDengi äëÿ CMS 1Ñ Áèòðèêñ.
- * @copyright Ñåðâèñ OnlineDengi http://www.onlinedengi.ru/ (ÎÎÎ "ÊîìÔèíÖåíòð"), 2010
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° OnlineDengi Ð´Ð»Ñ CMS 1Ð¡ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ.
+ * @copyright Ð¡ÐµÑ€Ð²Ð¸Ñ OnlineDengi http://www.onlinedengi.ru/ (ÐžÐžÐž "ÐšÐ¾Ð¼Ð¤Ð¸Ð½Ð¦ÐµÐ½Ñ‚Ñ€"), 2010
  *
  *
  *
- * Ïîëüçîâàòåëü íå ìîæåò êîïèðîâàòü ìîäóëü, ïåðåäàâàòü åãî òðåòüèì ëèöàì 
- * èëè ðàñïðîñòðàíÿòü ìîäóëü, â ëþáîé ôîðìå, â òîì ÷èñëå â âèäå èñõîäíîãî
- * òåêñòà, êàêèì-ëèáî ñïîñîáîì, â òîì ÷èñëå ñäàâàòü ìîäóëü â àðåíäó/ïðîêàò.
+ * ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ ÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ, Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ñ‚ÑŒ ÐµÐ³Ð¾ Ñ‚Ñ€ÐµÑ‚ÑŒÐ¸Ð¼ Ð»Ð¸Ñ†Ð°Ð¼ 
+ * Ð¸Ð»Ð¸ Ñ€Ð°ÑÐ¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ, Ð² Ð»ÑŽÐ±Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ðµ, Ð² Ñ‚Ð¾Ð¼ Ñ‡Ð¸ÑÐ»Ðµ Ð² Ð²Ð¸Ð´Ðµ Ð¸ÑÑ…Ð¾Ð´Ð½Ð¾Ð³Ð¾
+ * Ñ‚ÐµÐºÑÑ‚Ð°, ÐºÐ°ÐºÐ¸Ð¼-Ð»Ð¸Ð±Ð¾ ÑÐ¿Ð¾ÑÐ¾Ð±Ð¾Ð¼, Ð² Ñ‚Ð¾Ð¼ Ñ‡Ð¸ÑÐ»Ðµ ÑÐ´Ð°Ð²Ð°Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð² Ð°Ñ€ÐµÐ½Ð´Ñƒ/Ð¿Ñ€Ð¾ÐºÐ°Ñ‚.
  *
- * Çàïðåùàåòñÿ óäàëÿòü ëþáóþ èíôîðìàöèþ îá àâòîðñêèõ ïðàâàõ.
+ * Ð—Ð°Ð¿Ñ€ÐµÑ‰Ð°ÐµÑ‚ÑÑ ÑƒÐ´Ð°Ð»ÑÑ‚ÑŒ Ð»ÑŽÐ±ÑƒÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾Ð± Ð°Ð²Ñ‚Ð¾Ñ€ÑÐºÐ¸Ñ… Ð¿Ñ€Ð°Ð²Ð°Ñ….
  *
- * Çàïðåùàåòñÿ ëþáîå èñïîëüçîâàíèå ìîäóëÿ, ïðîòèâîðå÷àùåå äåéñòâóþùåìó     
- * çàêîíîäàòåëüñòâó Ðîññèéñêîé Ôåäåðàöèè.
+ * Ð—Ð°Ð¿Ñ€ÐµÑ‰Ð°ÐµÑ‚ÑÑ Ð»ÑŽÐ±Ð¾Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ, Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð¾Ñ€ÐµÑ‡Ð°Ñ‰ÐµÐµ Ð´ÐµÐ¹ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¼Ñƒ     
+ * Ð·Ð°ÐºÐ¾Ð½Ð¾Ð´Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð²Ñƒ Ð Ð¾ÑÑÐ¸Ð¹ÑÐºÐ¾Ð¹ Ð¤ÐµÐ´ÐµÑ€Ð°Ñ†Ð¸Ð¸.
  *
  */
  
 IncludeModuleLangFile(__FILE__);
 
 //
-// Êîíñòàíòû
+// ÐšÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ñ‹
 //
 if(!defined('ONLINEDENGI_PAYMENT_MODULE_ID')){
 	define('ONLINEDENGI_PAYMENT_MODULE_ID', 'rarusspb.onlinedengi');
 
 }
 if(!defined('ONLINEDENGI_PAYMENT_REQUEST_URL')) {
-        // àäðåñ ñêðèïòà ñåðâèñà, ïðèìàþùåãî çàïðîñ íà îïëàòó
+        // Ð°Ð´Ñ€ÐµÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð° ÑÐµÑ€Ð²Ð¸ÑÐ°, Ð¿Ñ€Ð¸Ð¼Ð°ÑŽÑ‰ÐµÐ³Ð¾ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñƒ
 	//define('ONLINEDENGI_PAYMENT_REQUEST_URL', '/test_post.php');
 	define('ONLINEDENGI_PAYMENT_REQUEST_URL', 'http://www.onlinedengi.ru/wmpaycheck.php');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_REQUEST_TYPE')) {
-	// òèï çàïðîñà ïðè îïëàòå
+	// Ñ‚Ð¸Ð¿ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° Ð¿Ñ€Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ðµ
 	define('ONLINEDENGI_PAYMENT_REQUEST_TYPE', 'post');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_RESPONSE_CHARSET')) {
-	// êîäèðîâêà çàïðîñà
+	// ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°
 	define('ONLINEDENGI_PAYMENT_RESPONSE_CHARSET', 'UTF-8');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT_PATH')) {
-	// ïóòü ê ñêðèïòó ïðèåìà îïîâåùåíèÿ î çà÷èñëåíèè ñðåäñòâ
+	// Ð¿ÑƒÑ‚ÑŒ Ðº ÑÐºÑ€Ð¸Ð¿Ñ‚Ñƒ Ð¿Ñ€Ð¸ÐµÐ¼Ð° Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¾ Ð·Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ð¸ ÑÑ€ÐµÐ´ÑÑ‚Ð²
 	define('ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT_PATH', BX_PERSONAL_ROOT.'/tools/onlinedengi_result_rec.php');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT')) {
-	// ïåðåäàâàåìûé ñåðâèñó ïóòü ê ñêðèïòó ïðèåìà îïîâåùåíèÿ î çà÷èñëåíèè ñðåäñòâ
+	// Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°ÐµÐ¼Ñ‹Ð¹ ÑÐµÑ€Ð²Ð¸ÑÑƒ Ð¿ÑƒÑ‚ÑŒ Ðº ÑÐºÑ€Ð¸Ð¿Ñ‚Ñƒ Ð¿Ñ€Ð¸ÐµÐ¼Ð° Ð¾Ð¿Ð¾Ð²ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¾ Ð·Ð°Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ð¸ ÑÑ€ÐµÐ´ÑÑ‚Ð²
 	define('ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT', 'http://'.$_SERVER['SERVER_NAME'].ONLINEDENGI_PAYMENT_RESPONSE_SCRIPT_PATH.'?ps=#PAY_SYSTEM_ID#&pt=#PERSON_TYPE_ID#');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_SUCCESS_SCRIPT')) {
-	// àäðåñ ñêðèïòà, îòäàþùåãî ñîîáùåíèå ïîêóïàòåëþ îá óñïåøíîé îïëàòå
+	// Ð°Ð´Ñ€ÐµÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð°, Ð¾Ñ‚Ð´Ð°ÑŽÑ‰ÐµÐ³Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŽ Ð¾Ð± ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð¹ Ð¾Ð¿Ð»Ð°Ñ‚Ðµ
 	define('ONLINEDENGI_PAYMENT_SUCCESS_SCRIPT', 'http://'.$_SERVER['SERVER_NAME'].BX_PERSONAL_ROOT.'/tools/onlinedengi_succes.php');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_FAIL_SCRIPT')) {
-	// àäðåñ ñêðèïòà, îòäàþùåãî ñîîáùåíèå ïîêóïàòåëþ î íåóäà÷íîé îïëàòå
+	// Ð°Ð´Ñ€ÐµÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð°, Ð¾Ñ‚Ð´Ð°ÑŽÑ‰ÐµÐ³Ð¾ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŽ Ð¾ Ð½ÐµÑƒÐ´Ð°Ñ‡Ð½Ð¾Ð¹ Ð¾Ð¿Ð»Ð°Ñ‚Ðµ
 	define('ONLINEDENGI_PAYMENT_FAIL_SCRIPT', 'http://'.$_SERVER['SERVER_NAME'].BX_PERSONAL_ROOT.'/tools/onlinedengi_fail.php');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_CURRENCY_REQUEST_URL')) {
-        // àäðåñ ñêðèïòà ñåðâèñà, îòäàþùåãî êóðñû âàëþò
+        // Ð°Ð´Ñ€ÐµÑ ÑÐºÑ€Ð¸Ð¿Ñ‚Ð° ÑÐµÑ€Ð²Ð¸ÑÐ°, Ð¾Ñ‚Ð´Ð°ÑŽÑ‰ÐµÐ³Ð¾ ÐºÑƒÑ€ÑÑ‹ Ð²Ð°Ð»ÑŽÑ‚
 	define('ONLINEDENGI_PAYMENT_CURRENCY_REQUEST_URL', 'http://www.onlinedengi.ru/dev/xmltalk.php');
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_CURRENCY_REQUEST_TIMEOUT')) {
-	// âðåìÿ îæèäàíèÿ îòâåòà ïðè çàïðîñå êóðñîâ âàëþò, 20 ñåê
+	// Ð²Ñ€ÐµÐ¼Ñ Ð¾Ð¶Ð¸Ð´Ð°Ð½Ð¸Ñ Ð¾Ñ‚Ð²ÐµÑ‚Ð° Ð¿Ñ€Ð¸ Ð·Ð°Ð¿Ñ€Ð¾ÑÐµ ÐºÑƒÑ€ÑÐ¾Ð² Ð²Ð°Ð»ÑŽÑ‚, 20 ÑÐµÐº
 	define('ONLINEDENGI_PAYMENT_CURRENCY_REQUEST_TIMEOUT', 20);
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_CURRENCY_CACHE_TIME')) {
-	// âðåìÿ æèçíè êýøà êóðñîâ âàëþò, 30 ìèíóò
-	// !!! ÷åì áîëüøå âðåìÿ æèçíèê êýøà, òåì áîëüøå âåðîÿòíîñòü òîãî, 
-	// ÷òî âî âðåìÿ çàêàçà êóðñ áóäåò óñòàðåâøèì
+	// Ð²Ñ€ÐµÐ¼Ñ Ð¶Ð¸Ð·Ð½Ð¸ ÐºÑÑˆÐ° ÐºÑƒÑ€ÑÐ¾Ð² Ð²Ð°Ð»ÑŽÑ‚, 30 Ð¼Ð¸Ð½ÑƒÑ‚
+	// !!! Ñ‡ÐµÐ¼ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð²Ñ€ÐµÐ¼Ñ Ð¶Ð¸Ð·Ð½Ð¸Ðº ÐºÑÑˆÐ°, Ñ‚ÐµÐ¼ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð²ÐµÑ€Ð¾ÑÑ‚Ð½Ð¾ÑÑ‚ÑŒ Ñ‚Ð¾Ð³Ð¾, 
+	// Ñ‡Ñ‚Ð¾ Ð²Ð¾ Ð²Ñ€ÐµÐ¼Ñ Ð·Ð°ÐºÐ°Ð·Ð° ÐºÑƒÑ€Ñ Ð±ÑƒÐ´ÐµÑ‚ ÑƒÑÑ‚Ð°Ñ€ÐµÐ²ÑˆÐ¸Ð¼
         define('ONLINEDENGI_PAYMENT_CURRENCY_CACHE_TIME', 1800);
 }
 
 if(!defined('ONLINEDENGI_PAYMENT_CURRENCY_CACHE_PATH')) {
-	// ïóòü äëÿ õðàíåíèÿ êýøà
+	// Ð¿ÑƒÑ‚ÑŒ Ð´Ð»Ñ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ ÐºÑÑˆÐ°
         define('ONLINEDENGI_PAYMENT_CURRENCY_CACHE_PATH', 'onlinedengi_cache');
 }
 
 if(!defined('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE')) {
-	// ïóòü äëÿ õðàíåíèÿ êýøà
+	// Ð¿ÑƒÑ‚ÑŒ Ð´Ð»Ñ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ ÐºÑÑˆÐ°
         define('ONLINEDENGI_ORDER_PAY_COMPONENT_TEMPLATE', 'with_image');
 }
 
 //
-// Ïîäêëþ÷åíèå îñíîâíûõ êëàññîâ
+// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¾ÑÐ½Ð¾Ð²Ð½Ñ‹Ñ… ÐºÐ»Ð°ÑÑÐ¾Ð²
 //
 include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.ONLINEDENGI_PAYMENT_MODULE_ID.'/classes/general/onlinedengi_payment.php');
 include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.ONLINEDENGI_PAYMENT_MODULE_ID.'/classes/general/default_payment_handlers.php');

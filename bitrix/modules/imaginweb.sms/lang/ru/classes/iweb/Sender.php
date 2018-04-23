@@ -1,15 +1,15 @@
 <?
-$MESS["IMAGINWEB_SMS_TELEFON_ZADAN_V_NEVE"] = "Òåëåôîí çàäàí â íåâåðíîì ôîðìàòå: ";
-$MESS["IMAGINWEB_SMS_DLA_TESTA"] = "äëÿ òåñòà)";
-$MESS["IMAGINWEB_SMS_DLA_RABOTY_NE_OBHODI"] = "Äëÿ ðàáîòû íå îáõîäèìî óñòàíîâèòü ðàñøèðåíèå";
-$MESS["IMAGINWEB_SMS_NEOBHODIMO_USTANOVIT"] = "Íåîáõîäèìî óñòàíîâèòü â";
-$MESS["IMAGINWEB_SMS_NEVERNYY_LOGIN_ILI_P"] = "Íåâåðíûé ëîãèí èëè ïàðîëü";
-$MESS["IMAGINWEB_SMS_OTSUTSTVUET_LOGIN"] = "Îòñóòñòâóåò ëîãèí";
-$MESS["IMAGINWEB_SMS_OTSUTSTVUET_PAROLQ"] = "Îòñóòñòâóåò ïàðîëü";
-$MESS["IMAGINWEB_SMS_NEOPOZNANNAA_OSIBKA"] = "Íåîïîçíàííàÿ îøèáêà";
-$MESS["IMAGINWEB_SMS_NE_UDALOSQ_POLUCITQ"] = "Íå óäàëîñü ïîëó÷èòü áàëàíñ. Îøèáêà";
-$MESS["IMAGINWEB_SMS_RUB"] = "ðóá., ";
-$MESS["IMAGINWEB_SMS_KREDITOV"] = "êðåäèòîâ.\\n";
-$MESS["IMAGINWEB_SMS_OSIBKA_PRI_ZAPROSE_B"] = "Îøèáêà ïðè çàïðîñå áàëàíñà";
-$MESS["IMAGINWEB_SMS_BALANS_MOJNO_UZNATQ"] = "Áàëàíñ ìîæíî óçíàòü òîëüêî â ëè÷íîì êàáèíåòå øëþçà";
+$MESS["IMAGINWEB_SMS_TELEFON_ZADAN_V_NEVE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°Ð´Ð°Ð½ Ð² Ð½ÐµÐ²ÐµÑ€Ð½Ð¾Ð¼ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ: ";
+$MESS["IMAGINWEB_SMS_DLA_TESTA"] = "Ð´Ð»Ñ Ñ‚ÐµÑÑ‚Ð°)";
+$MESS["IMAGINWEB_SMS_DLA_RABOTY_NE_OBHODI"] = "Ð”Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð½Ðµ Ð¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ðµ";
+$MESS["IMAGINWEB_SMS_NEOBHODIMO_USTANOVIT"] = "ÐÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð²";
+$MESS["IMAGINWEB_SMS_NEVERNYY_LOGIN_ILI_P"] = "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð»Ð¾Ð³Ð¸Ð½ Ð¸Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ";
+$MESS["IMAGINWEB_SMS_OTSUTSTVUET_LOGIN"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ð»Ð¾Ð³Ð¸Ð½";
+$MESS["IMAGINWEB_SMS_OTSUTSTVUET_PAROLQ"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ";
+$MESS["IMAGINWEB_SMS_NEOPOZNANNAA_OSIBKA"] = "ÐÐµÐ¾Ð¿Ð¾Ð·Ð½Ð°Ð½Ð½Ð°Ñ Ð¾ÑˆÐ¸Ð±ÐºÐ°";
+$MESS["IMAGINWEB_SMS_NE_UDALOSQ_POLUCITQ"] = "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð±Ð°Ð»Ð°Ð½Ñ. ÐžÑˆÐ¸Ð±ÐºÐ°";
+$MESS["IMAGINWEB_SMS_RUB"] = "Ñ€ÑƒÐ±., ";
+$MESS["IMAGINWEB_SMS_KREDITOV"] = "ÐºÑ€ÐµÐ´Ð¸Ñ‚Ð¾Ð².\\n";
+$MESS["IMAGINWEB_SMS_OSIBKA_PRI_ZAPROSE_B"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð·Ð°Ð¿Ñ€Ð¾ÑÐµ Ð±Ð°Ð»Ð°Ð½ÑÐ°";
+$MESS["IMAGINWEB_SMS_BALANS_MOJNO_UZNATQ"] = "Ð‘Ð°Ð»Ð°Ð½Ñ Ð¼Ð¾Ð¶Ð½Ð¾ ÑƒÐ·Ð½Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð² Ð»Ð¸Ñ‡Ð½Ð¾Ð¼ ÐºÐ°Ð±Ð¸Ð½ÐµÑ‚Ðµ ÑˆÐ»ÑŽÐ·Ð°";
 ?>

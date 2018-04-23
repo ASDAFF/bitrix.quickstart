@@ -12,7 +12,7 @@ $arParams['CURRENT_VIEW'] = $current_view;
 $arParams['CURRENT_FILTER'] = $current_filter;
 ?>
 
-<!--Çäåñü óïğàâëåíèå îòîáğàæåíèåì ôèëüòğà-->
+<!--Ğ—Ğ´ĞµÑÑŒ ÑƒĞ¿Ñ€Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¾Ñ‚Ğ¾Ğ±Ñ€Ğ°Ğ¶ĞµĞ½Ğ¸ĞµĞ¼ Ñ„Ğ¸Ğ»ÑŒÑ‚Ñ€Ğ°-->
 <script>
 var current_filter = '<?=CUtil::JSEscape($current_filter)?>';
 var arFilters = ['simple', 'adv'];

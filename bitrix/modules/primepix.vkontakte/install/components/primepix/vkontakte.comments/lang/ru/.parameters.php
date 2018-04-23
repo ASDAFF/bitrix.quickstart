@@ -1,12 +1,12 @@
 <?
-$MESS ['FORM_SETTINGS'] = "Âèä ôîðìû";
-$MESS ['MEDIA_SETTINGS'] = "Ìåäèà";
-$MESS ['ID_APLICATION'] = "ID ïðèëîæåíèÿ";
-$MESS ['WIDTH_FORM'] = "Øèðèíà";
-$MESS ['NUM_COMMENTS'] = "Êîëè÷åñòâî êîììåíòàðèåâ";
-$MESS ['MEDIA_GRAFFITI'] = "Ãðàôôèòè";
-$MESS ['MEDIA_PHOTOS'] = "Ôîòîãðàôèè";
-$MESS ['MEDIA_VIDEO'] = "Âèäåî";
-$MESS ['MEDIA_AUDIO'] = "Àóäèî";
-$MESS ['MEDIA_REF'] = "Ññûëêè";
+$MESS ['FORM_SETTINGS'] = "Ð’Ð¸Ð´ Ñ„Ð¾Ñ€Ð¼Ñ‹";
+$MESS ['MEDIA_SETTINGS'] = "ÐœÐµÐ´Ð¸Ð°";
+$MESS ['ID_APLICATION'] = "ID Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ";
+$MESS ['WIDTH_FORM'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS ['NUM_COMMENTS'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²";
+$MESS ['MEDIA_GRAFFITI'] = "Ð“Ñ€Ð°Ñ„Ñ„Ð¸Ñ‚Ð¸";
+$MESS ['MEDIA_PHOTOS'] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸";
+$MESS ['MEDIA_VIDEO'] = "Ð’Ð¸Ð´ÐµÐ¾";
+$MESS ['MEDIA_AUDIO'] = "ÐÑƒÐ´Ð¸Ð¾";
+$MESS ['MEDIA_REF'] = "Ð¡ÑÑ‹Ð»ÐºÐ¸";
 ?>

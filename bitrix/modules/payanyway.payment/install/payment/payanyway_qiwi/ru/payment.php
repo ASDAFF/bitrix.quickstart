@@ -1,10 +1,10 @@
 <?php
 global $MESS;
 
-$MESS['PAYANYWAY_QIWI_TITLE']		= 'QIWI êîøåëåê';
+$MESS['PAYANYWAY_QIWI_TITLE']		= 'QIWI ÐºÐ¾ÑˆÐµÐ»ÐµÐº';
 
-$MESS['PAYANYWAY_QIWIUSER_DESC'] 	= 'Íîìåð òåëåôîíà â ôîðìàòå: 10 öèôð, áåç +7 èëè 8';
-$MESS['PAYANYWAY_QIWI_USER']		= 'Íîìåð òåëåôîíà';
-$MESS['PAYANYWAY_QIWI_COMMENT'] 	= 'Êîììåíòàðèé';
-$MESS['PAYANYWAY_EXTRA_PARAMS_OK'] 	= 'Ïðîäîëæèòü';
+$MESS['PAYANYWAY_QIWIUSER_DESC'] 	= 'ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ: 10 Ñ†Ð¸Ñ„Ñ€, Ð±ÐµÐ· +7 Ð¸Ð»Ð¸ 8';
+$MESS['PAYANYWAY_QIWI_USER']		= 'ÐÐ¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°';
+$MESS['PAYANYWAY_QIWI_COMMENT'] 	= 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹';
+$MESS['PAYANYWAY_EXTRA_PARAMS_OK'] 	= 'ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ';
 ?>

@@ -267,7 +267,7 @@ if (!class_exists("DefaTools_IBProp_MultipleFiles"))
 					/// UPLOAD  // JAVA
 					///////////////////////////////////////////
 
-					//  ÓÑËÎÂÈÅ ÂÛÂÎÄÀ ÀÏÏËÅÒÀ - îí äîëæåí áûòü òîëüêî îäèí íà ñòðàíèöå
+					//  Ð£Ð¡Ð›ÐžÐ’Ð˜Ð• Ð’Ð«Ð’ÐžÐ”Ð ÐÐŸÐŸÐ›Ð•Ð¢Ð - Ð¾Ð½ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¾Ð´Ð¸Ð½ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ
 					if(
 						isset($_REQUEST['ID'])
 						&& $_REQUEST['ID'] > 0
@@ -277,8 +277,8 @@ if (!class_exists("DefaTools_IBProp_MultipleFiles"))
 						&& $plugin_type_edit == 'java'
 					):
 
-						$GLOBALS['APPLET_IS_ON_PAGE'] = 'Y'; // Óñòàíîâêà ôëàãà, ÷òî îäèí àïïëåò óæå âûâåäåí
-						$GLOBALS['APPLET_IS_ON_PAGE'. $arProperty['ID']] = 'Y'; // Óñòàíîâêà ôëàãà, ÷òî îäèí àïïëåò óæå âûâåäåí
+						$GLOBALS['APPLET_IS_ON_PAGE'] = 'Y'; // Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ñ„Ð»Ð°Ð³Ð°, Ñ‡Ñ‚Ð¾ Ð¾Ð´Ð¸Ð½ Ð°Ð¿Ð¿Ð»ÐµÑ‚ ÑƒÐ¶Ðµ Ð²Ñ‹Ð²ÐµÐ´ÐµÐ½
+						$GLOBALS['APPLET_IS_ON_PAGE'. $arProperty['ID']] = 'Y'; // Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ñ„Ð»Ð°Ð³Ð°, Ñ‡Ñ‚Ð¾ Ð¾Ð´Ð¸Ð½ Ð°Ð¿Ð¿Ð»ÐµÑ‚ ÑƒÐ¶Ðµ Ð²Ñ‹Ð²ÐµÐ´ÐµÐ½
 
 						?><script type="text/javascript" src="/bitrix/image_uploader/iuembed.js"></script><?
 						include_once($_SERVER['DOCUMENT_ROOT']."/bitrix/image_uploader/version.php");
@@ -299,7 +299,10 @@ if (!class_exists("DefaTools_IBProp_MultipleFiles"))
 						$strFileMask =	'*.'.str_replace(', ', ';*.', trim($arProperty['FILE_TYPE']));
 					endif;
 
-					$arCookie = array();					foreach ($_COOKIE as $key => $val)						$arCookie[] = $key."=".$val."; ";
+					$arCookie = array();
+					foreach ($_COOKIE as $key => $val)
+						$arCookie[] = $key."=".$val."; ";
+
 					?>
 
 					window.oColAccess = {};
@@ -384,7 +387,7 @@ if (!class_exists("DefaTools_IBProp_MultipleFiles"))
 					<br clear="all" /><br clear="all" />
 
 					<?
-					//  ÓÑËÎÂÈÅ ÂÛÂÎÄÀ ÀÏÏËÅÒÀ - îí äîëæåí áûòü òîëüêî îäèí íà ñòðàíèöå
+					//  Ð£Ð¡Ð›ÐžÐ’Ð˜Ð• Ð’Ð«Ð’ÐžÐ”Ð ÐÐŸÐŸÐ›Ð•Ð¢Ð - Ð¾Ð½ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¾Ð´Ð¸Ð½ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ
 					elseif(
 						isset($_REQUEST['ID'])
 						&& $_REQUEST['ID'] > 0

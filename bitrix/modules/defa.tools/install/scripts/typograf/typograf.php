@@ -23,7 +23,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.ph
 				
 		}
 		else{ 
-			return "Сервер не отвечает"; 
+			return "РЎРµСЂРІРµСЂ РЅРµ РѕС‚РІРµС‡Р°РµС‚"; 
 		}
 		return $buf; 
 	}

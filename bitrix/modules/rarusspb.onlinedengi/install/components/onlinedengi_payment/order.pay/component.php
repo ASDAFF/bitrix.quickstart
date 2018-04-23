@@ -1,8 +1,8 @@
 <?
 /**
  *
- * Модуль платежного сервиса OnlineDengi для CMS 1С Битрикс.
- * @copyright Сервис OnlineDengi http://www.onlinedengi.ru/ (ООО "КомФинЦентр"), 2010
+ * РњРѕРґСѓР»СЊ РїР»Р°С‚РµР¶РЅРѕРіРѕ СЃРµСЂРІРёСЃР° OnlineDengi РґР»СЏ CMS 1РЎ Р‘РёС‚СЂРёРєСЃ.
+ * @copyright РЎРµСЂРІРёСЃ OnlineDengi http://www.onlinedengi.ru/ (РћРћРћ "РљРѕРјР¤РёРЅР¦РµРЅС‚СЂ"), 2010
  *
  */
 
@@ -42,12 +42,12 @@ $arResult['ORDER']['AMOUNT'] = CSalePaySystemAction::GetParamValue('ONLINEDENGI_
 $arResult['ORDER']['CURRENCY'] = $GLOBALS['SALE_INPUT_PARAMS']['ORDER']['CURRENCY'];
 $arResult['ORDER']['ID'] = $GLOBALS['SALE_INPUT_PARAMS']['ORDER']['ID'];
 
-// получим список доступных способов оплаты
+// РїРѕР»СѓС‡РёРј СЃРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅС‹С… СЃРїРѕСЃРѕР±РѕРІ РѕРїР»Р°С‚С‹
 $arResult['arOnlineDengiAvailablePaymentTypes'] = COnlineDengiPayment::GetPaymentTypesList();
 $arResult['arModeTypeList'] = array();
-// подготовим список для предоставления выбора покупателю
+// РїРѕРґРіРѕС‚РѕРІРёРј СЃРїРёСЃРѕРє РґР»СЏ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅРёСЏ РІС‹Р±РѕСЂР° РїРѕРєСѓРїР°С‚РµР»СЋ
 foreach($arResult['arOnlineDengiAvailablePaymentTypes'] as $arPaymentType) {
-	// код валюты обязательное поле
+	// РєРѕРґ РІР°Р»СЋС‚С‹ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕРµ РїРѕР»Рµ
 	if(!empty($arPaymentType['currency'])) {
 		$iTmpVal = intval(CSalePaySystemAction::GetParamValue('ONLINEDENGI_AVAILABLE_TYPE_'.$arPaymentType['id']));
 		if($iTmpVal > 0) {
@@ -63,31 +63,31 @@ foreach($arResult['arOnlineDengiAvailablePaymentTypes'] as $arPaymentType) {
 $arResult['bAdminModeTypeDefined'] = (!empty($arResult['arModeTypeList']) && count($arResult['arModeTypeList']) == 1);
 
 if(!$arResult['bAdminModeTypeDefined'] && $_SERVER['REQUEST_METHOD'] == 'POST' && intval($_REQUEST['ORDER_ID']) > 0) {
-	// получим способ оплаты из формы
+	// РїРѕР»СѓС‡РёРј СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РёР· С„РѕСЂРјС‹
 	$arResult['FIELDS']['mode_type'] = intval($_POST['mode_type']);
 }
 
-// Обработаем способы оплаты
+// РћР±СЂР°Р±РѕС‚Р°РµРј СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹
 if(empty($arResult['FIELDS']['mode_type'])) {
-	// доступные способы оплаты не заданы в настройках платежной системы
+	// РґРѕСЃС‚СѓРїРЅС‹Рµ СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹ РЅРµ Р·Р°РґР°РЅС‹ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹
 	if(empty($arResult['arModeTypeList'])) {
 		$arResult['ERRORS']['ERR_ONLINEDENGI_MODE_TYPES_EMPTY'] = GetMessage('ERR_ONLINEDENGI_MODE_TYPES_EMPTY');
 	} else {
-		// если всего один способ оплаты доступен, то установим его автоматом
+		// РµСЃР»Рё РІСЃРµРіРѕ РѕРґРёРЅ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹ РґРѕСЃС‚СѓРїРµРЅ, С‚Рѕ СѓСЃС‚Р°РЅРѕРІРёРј РµРіРѕ Р°РІС‚РѕРјР°С‚РѕРј
 		if($arResult['bAdminModeTypeDefined']) {
 			reset($arResult['arModeTypeList']);
 			$arResult['FIELDS']['mode_type'] = intval($arResult['arModeTypeList'][key($arResult['arModeTypeList'])]['value']);
 		}
 	}
 } else {
-	// проверим доступен ли выбранный способ оплаты
+	// РїСЂРѕРІРµСЂРёРј РґРѕСЃС‚СѓРїРµРЅ Р»Рё РІС‹Р±СЂР°РЅРЅС‹Р№ СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹
 	if(empty($arResult['arOnlineDengiAvailablePaymentTypes'][$arResult['FIELDS']['mode_type']]) || empty($arResult['arOnlineDengiAvailablePaymentTypes'][$arResult['FIELDS']['mode_type']]['currency'])) {
 		$arResult['FIELDS']['mode_type'] = false;
 		$arResult['ERRORS']['ERR_ONLINEDENGI_MODE_TYPE_WRONG'] = GetMessage('ERR_ONLINEDENGI_MODE_TYPE_WRONG');
 	}
 }
 
-// подготовка поля amount для выбранного способа
+// РїРѕРґРіРѕС‚РѕРІРєР° РїРѕР»СЏ amount РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕРіРѕ СЃРїРѕСЃРѕР±Р°
 if($arResult['FIELDS']['mode_type']) {
 	$arCurPaymentModeType =& $arResult['arOnlineDengiAvailablePaymentTypes'][$arResult['FIELDS']['mode_type']];
 	if(!empty($arResult['PAYMENT']['CURRENCY']) && !empty($arCurPaymentModeType['currency'])) {
@@ -95,11 +95,11 @@ if($arResult['FIELDS']['mode_type']) {
 		$arResult['ORDER']['CURRENCY'] = strtoupper($arResult['ORDER']['CURRENCY']);
 		$arResult['FIELDS']['amount'] = $arResult['ORDER']['AMOUNT'];
 
-		// конвертируем в валюту выбранного способа оплаты если нужно
+		// РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј РІ РІР°Р»СЋС‚Сѓ РІС‹Р±СЂР°РЅРЅРѕРіРѕ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹ РµСЃР»Рё РЅСѓР¶РЅРѕ
 		if($arCurPaymentModeType['currency'] != $arResult['ORDER']['CURRENCY']) {
-			// режим округления к большему или арифметическое
+			// СЂРµР¶РёРј РѕРєСЂСѓРіР»РµРЅРёСЏ Рє Р±РѕР»СЊС€РµРјСѓ РёР»Рё Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
 			$bRoundUp = intval(CSalePaySystemAction::GetParamValue('ONLINEDENGI_CONVERT_ROUND_UP')) == 1;
-			// трёхбуквенные обозначения валют согласно стандарту ISO 4217 (http://www.iso.org/iso/support/currency_codes_list-1.htm)
+			// С‚СЂС‘С…Р±СѓРєРІРµРЅРЅС‹Рµ РѕР±РѕР·РЅР°С‡РµРЅРёСЏ РІР°Р»СЋС‚ СЃРѕРіР»Р°СЃРЅРѕ СЃС‚Р°РЅРґР°СЂС‚Сѓ ISO 4217 (http://www.iso.org/iso/support/currency_codes_list-1.htm)
 			$arResult['FIELDS']['amount'] = COnlineDengiPayment::ConvertCurrancyAmount($arResult['FIELDS']['amount'], $arResult['ORDER']['CURRENCY'], $arCurPaymentModeType['currency'], $arCurPaymentModeType['precission'], $bRoundUp);
 			if(!$arResult['FIELDS']['amount']) {
 				$arResult['ERRORS']['ERR_ONLINEDENGI_CURRENCY_CONVERT'] = GetMessage('ERR_ONLINEDENGI_CURRENCY_CONVERT');

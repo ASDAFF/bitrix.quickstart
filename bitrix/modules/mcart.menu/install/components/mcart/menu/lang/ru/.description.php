@@ -1,5 +1,5 @@
 <?
-$MESS ['MAIN_MENU_ITEMS_NAME'] = "Фиксированное меню";
-$MESS ['MAIN_MENU_ITEMS_DESC'] = "Выводит фиксированное меню указанного типа";
-$MESS ['MAIN_NAVIGATION_SERVICE'] = "Навигация";
+$MESS ['MAIN_MENU_ITEMS_NAME'] = "Р¤РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РјРµРЅСЋ";
+$MESS ['MAIN_MENU_ITEMS_DESC'] = "Р’С‹РІРѕРґРёС‚ С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РјРµРЅСЋ СѓРєР°Р·Р°РЅРЅРѕРіРѕ С‚РёРїР°";
+$MESS ['MAIN_NAVIGATION_SERVICE'] = "РќР°РІРёРіР°С†РёСЏ";
 ?>

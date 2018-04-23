@@ -237,7 +237,7 @@ $use_translit = COption::GetOptionString('rarus.sms4b', 'use_translit', '', $sit
 $admin_phone = COption::GetOptionString('rarus.sms4b', 'admin_phone', '', $siteList[$i]["ID"]);
 $defUserProperty = COption::GetOptionString('rarus.sms4b', 'user_property_phone', '', $siteList[$i]["ID"]);
 global $USER;
-//админ есть всегда
+//Р°РґРјРёРЅ РµСЃС‚СЊ РІСЃРµРіРґР°
 $rsUser = CUser::GetList(($by="ID"), ($order="desc"), array("ID"=>1),array("SELECT"=>array("UF_*")));
 	$arUser = $rsUser->Fetch();
 	$arUserPhone[] = '';
@@ -666,7 +666,7 @@ $tabControl2->End();
 								text: "<?=GetMessage("TABLE_EMAIL_CLOSE")?>",
 								className: "webform-button-link-cancel",
 								events: {click: function(){
-									this.popupWindow.close(); // закрытие окна
+									this.popupWindow.close(); // Р·Р°РєСЂС‹С‚РёРµ РѕРєРЅР°
 									}}
 							})
 								]

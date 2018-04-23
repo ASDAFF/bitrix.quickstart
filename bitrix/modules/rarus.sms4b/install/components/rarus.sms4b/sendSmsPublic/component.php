@@ -57,7 +57,7 @@ else
 	$arResult['ADDRESSES'] = $SMS4B->GetSender();
 	$arResult['ADDRESSES_BY_DEFAULT'] = COption::GetOptionString('rarus.sms4b', 'defsenderPublic');
 	
-	//выбираем все 
+	//РІС‹Р±РёСЂР°РµРј РІСЃРµ 
 	$usersInStructure = array();
 	$arFilter = array('ACTIVE' => 'Y');
 	$obUser = new CUser();
@@ -94,7 +94,7 @@ else
 			$destination = $_REQUEST["destination"];
 			$destination = preg_replace('/<.+>/', '', $destination);
 			
-			//здесь у нас уже нормальный массив с номерами
+			//Р·РґРµСЃСЊ Сѓ РЅР°СЃ СѓР¶Рµ РЅРѕСЂРјР°Р»СЊРЅС‹Р№ РјР°СЃСЃРёРІ СЃ РЅРѕРјРµСЂР°РјРё
 			$formPhones = $SMS4B->parse_numbers($destination);
 			
 			if (count($formPhones) > 3000)
@@ -104,7 +104,7 @@ else
 			else
 			{
 				$arResult['allNumbersCount'] = 0;
-				//сначала получим сколько у нас всего номеров
+				//СЃРЅР°С‡Р°Р»Р° РїРѕР»СѓС‡РёРј СЃРєРѕР»СЊРєРѕ Сѓ РЅР°СЃ РІСЃРµРіРѕ РЅРѕРјРµСЂРѕРІ
 				if (!is_array($destination))
 				{	
 					$destination_numbers = str_replace(array(",","\n"), ";", $destination);

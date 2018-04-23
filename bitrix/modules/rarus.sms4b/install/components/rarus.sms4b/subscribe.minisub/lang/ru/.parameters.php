@@ -1,9 +1,9 @@
 <?
-$MESS ["SUBSCR_FORM_PAGE_POST"] = "Àäðåñ äëÿ ïîäïèñêè ïî ïî÷òå (äîñòóïåí ìàêðîñ #SITE_DIR#)";
-$MESS ["SUBSCR_FORM_PAGE_SMS"] = "Àäðåñ äëÿ ïîäïèñêè ïî SMS (äîñòóïåí ìàêðîñ #SITE_DIR#)";
-$MESS ["SHOW_POST_SUB"] = "Ïîêàçûâàòü ññûëêó äëÿ ïîäïèñêè ïî ïî÷òå";
-$MESS ["SHOW_RSS_SUB"] = "Ïîêàçûâàòü ññûëêó äëÿ ïîäïèñêè ïî RSS"; 
-$MESS ["SHOW_SMS_SUB"] = "Ïîêàçûâàòü ññûëêó äëÿ ïîäïèñêè ïî SMS";
-$MESS ["FEED_NAME"] = "Èìÿ RSS ïîòîêà íà feedburner.com";
-$MESS ["FEEDBURNER_URL"] = "Àäðåñ ñàéòà feedburner";
+$MESS ["SUBSCR_FORM_PAGE_POST"] = "ÐÐ´Ñ€ÐµÑ Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð¿Ð¾ Ð¿Ð¾Ñ‡Ñ‚Ðµ (Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð¼Ð°ÐºÑ€Ð¾Ñ #SITE_DIR#)";
+$MESS ["SUBSCR_FORM_PAGE_SMS"] = "ÐÐ´Ñ€ÐµÑ Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð¿Ð¾ SMS (Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð¼Ð°ÐºÑ€Ð¾Ñ #SITE_DIR#)";
+$MESS ["SHOW_POST_SUB"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð¿Ð¾ Ð¿Ð¾Ñ‡Ñ‚Ðµ";
+$MESS ["SHOW_RSS_SUB"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð¿Ð¾ RSS"; 
+$MESS ["SHOW_SMS_SUB"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÑƒ Ð´Ð»Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸ Ð¿Ð¾ SMS";
+$MESS ["FEED_NAME"] = "Ð˜Ð¼Ñ RSS Ð¿Ð¾Ñ‚Ð¾ÐºÐ° Ð½Ð° feedburner.com";
+$MESS ["FEEDBURNER_URL"] = "ÐÐ´Ñ€ÐµÑ ÑÐ°Ð¹Ñ‚Ð° feedburner";
 ?>

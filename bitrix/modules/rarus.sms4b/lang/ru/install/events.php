@@ -1,27 +1,27 @@
 <?
-$MESS["SMS4B_ADMIN_SEND_NAME"] = "Îòïðàâêà ñîîáùåíèÿ àäìèíèñòðàòîðó ñàéòà";
-$MESS["SMS4B_ADMIN_SEND_DESC"] = "#SITE_NAME# - Íàçâàíèå ñàéòà (óñòàíàâëèâàåòñÿ â íàñòðîéêàõ)";
-$MESS["SMS4B_ADMIN_SEND_SUBJECT"] = "Âíèìàíèå! Íå óäàëîñü ïîäêëþ÷èòüñÿ ê ñåðâèñó SMS4B";
-$MESS["SMS4B_ADMIN_SEND_MESSAGE"] = "Ñåðâèñ SMS4B íà ñàéòå #SITE_NAME# íåäîñòóïåí. Îòïðàâêà ÑÌÑ íå âîçìîæíà.";
+$MESS["SMS4B_ADMIN_SEND_NAME"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²ÐºÐ° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ñƒ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["SMS4B_ADMIN_SEND_DESC"] = "#SITE_NAME# - ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ°Ð¹Ñ‚Ð° (ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ð² Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ñ…)";
+$MESS["SMS4B_ADMIN_SEND_SUBJECT"] = "Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº ÑÐµÑ€Ð²Ð¸ÑÑƒ SMS4B";
+$MESS["SMS4B_ADMIN_SEND_MESSAGE"] = "Ð¡ÐµÑ€Ð²Ð¸Ñ SMS4B Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ #SITE_NAME# Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½. ÐžÑ‚Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¡ÐœÐ¡ Ð½Ðµ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð°.";
 
-$MESS["SMS4B_TASK_ADD_NAME"] = "Äîáàâëåíèå çàäà÷è";
-$MESS["SMS4B_TASK_ADD_DESC"] = "#TASK# - Íàçâàíèå çàäà÷è";
-$MESS["SMS4B_TASK_ADD_SUBJECT"] = "Äîáàâëåíà íîâàÿ çàäà÷à";
-$MESS["SMS4B_TASK_ADD_MESSAGE"] = "Äîáàâëåíà íîâàÿ çàäà÷à #TASK#";
+$MESS["SMS4B_TASK_ADD_NAME"] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_ADD_DESC"] = "#TASK# - ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_ADD_SUBJECT"] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð° Ð½Ð¾Ð²Ð°Ñ Ð·Ð°Ð´Ð°Ñ‡Ð°";
+$MESS["SMS4B_TASK_ADD_MESSAGE"] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð° Ð½Ð¾Ð²Ð°Ñ Ð·Ð°Ð´Ð°Ñ‡Ð° #TASK#";
 
-$MESS["SMS4B_TASK_UPDATE_NAME"] = "Ðåäàêòèðîâàíèå çàäà÷è";
-$MESS["SMS4B_TASK_UPDATE_DESC"] = "#TASK# - Íàçâàíèå çàäà÷è";
-$MESS["SMS4B_TASK_UPDATE_SUBJECT"] = "Âíåñåíû èçìåíåíèÿ â çàäà÷ó";
-$MESS["SMS4B_TASK_UPDATE_MESSAGE"] = "Çàäà÷à #TASK# èçìåíåíà";
+$MESS["SMS4B_TASK_UPDATE_NAME"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_UPDATE_DESC"] = "#TASK# - ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_UPDATE_SUBJECT"] = "Ð’Ð½ÐµÑÐµÐ½Ñ‹ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð² Ð·Ð°Ð´Ð°Ñ‡Ñƒ";
+$MESS["SMS4B_TASK_UPDATE_MESSAGE"] = "Ð—Ð°Ð´Ð°Ñ‡Ð° #TASK# Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð°";
 
-$MESS["SMS4B_TASK_DELETE_NAME"] = "Óäàëåíèå çàäà÷è";
-$MESS["SMS4B_TASK_DELETE_DESC"] = "#TASK# - Íàçâàíèå çàäà÷è";
-$MESS["SMS4B_TASK_DELETE_SUBJECT"] = "Çàäà÷à óäàëåíà";
-$MESS["SMS4B_TASK_DELETE_MESSAGE"] = "Óäàëåíà çàäà÷à #TASK#";
+$MESS["SMS4B_TASK_DELETE_NAME"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_DELETE_DESC"] = "#TASK# - ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð´Ð°Ñ‡Ð¸";
+$MESS["SMS4B_TASK_DELETE_SUBJECT"] = "Ð—Ð°Ð´Ð°Ñ‡Ð° ÑƒÐ´Ð°Ð»ÐµÐ½Ð°";
+$MESS["SMS4B_TASK_DELETE_MESSAGE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð° Ð·Ð°Ð´Ð°Ñ‡Ð° #TASK#";
 
 
 //$MESS["SMS4B_SALE_NEW_ORDER_NAME"] = "Noviy zakaz";
-$MESS["SMS4B_SALE_NEW_ORDER_NAME"] = "Íîâûé çàêàç";
+$MESS["SMS4B_SALE_NEW_ORDER_NAME"] = "ÐÐ¾Ð²Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð·";
 //$MESS["SMS4B_SALE_NEW_ORDER_DESC"] = "#ORDER_ID# - kod zakaza
 //#ORDER_DATE# - data zakaza
 //#ORDER_USER# - zakazchik
@@ -29,90 +29,90 @@ $MESS["SMS4B_SALE_NEW_ORDER_NAME"] = "Íîâûé çàêàç";
 //#PHONE_TO# - telephone zakazchika
 //#ORDER_LIST# - sostav zakaza
 //#SALE_PHONE# - telephon otdela prodag";
-$MESS["SMS4B_SALE_NEW_ORDER_DESC"] = "#ORDER_ID# - êîä çàêàçà
-#ORDER_DATE# - äàòà çàêàçà
-#ORDER_USER# - çàêàç÷èê
-#PRICE# - ñóììà çàêàçà
-#PHONE_TO# - òåëåôîí çàêàç÷èêà
-#ORDER_LIST# - ñîñòàâ çàêàçà
-#SALE_PHONE# - òåëåôîí îòäåëà ïðîäàæ";
+$MESS["SMS4B_SALE_NEW_ORDER_DESC"] = "#ORDER_ID# - ÐºÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_DATE# - Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_USER# - Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸Ðº
+#PRICE# - ÑÑƒÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ°
+#ORDER_LIST# - ÑÐ¾ÑÑ‚Ð°Ð² Ð·Ð°ÐºÐ°Ð·Ð°
+#SALE_PHONE# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¾Ñ‚Ð´ÐµÐ»Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
 
 //$MESS["SMS4B_SALE_NEW_ORDER_SUBJECT"] = "Noviy zakaz N#ORDER_ID#";
-$MESS["SMS4B_SALE_NEW_ORDER_SUBJECT"] = "Íîâûé çàêàç N#ORDER_ID#";
+$MESS["SMS4B_SALE_NEW_ORDER_SUBJECT"] = "ÐÐ¾Ð²Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð· N#ORDER_ID#";
 //$MESS["SMS4B_SALE_NEW_ORDER_MESSAGE"] = "Vash zakaz N#ORDER_ID# priniat
 //Stoimost: #PRICE#";
-$MESS["SMS4B_SALE_NEW_ORDER_MESSAGE"] = "Âàø çàêàç N#ORDER_ID# ïðèíÿò
-Ñòîèìîñòü: #PRICE#";
+$MESS["SMS4B_SALE_NEW_ORDER_MESSAGE"] = "Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· N#ORDER_ID# Ð¿Ñ€Ð¸Ð½ÑÑ‚
+Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: #PRICE#";
 
 //$MESS["SMS4B_SALE_ORDER_CANCEL_NAME"] = "Otmena zakaza";
-$MESS["SMS4B_SALE_ORDER_CANCEL_NAME"] = "Îòìåíà çàêàçà";
+$MESS["SMS4B_SALE_ORDER_CANCEL_NAME"] = "ÐžÑ‚Ð¼ÐµÐ½Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
 //$MESS["SMS4B_SALE_ORDER_CANCEL_DESC"] = "#ORDER_ID# - kod zakaza
 //#ORDER_DATE# - data zakaza
 //#PHONE_TO# - telephone zakazchika
 //#ORDER_CANCEL_DESCRIPTION# - prichina otmeni
 //#SALE_PHONE# - telephon otdela prodag";
-$MESS["SMS4B_SALE_ORDER_CANCEL_DESC"] = "#ORDER_ID# - êîä çàêàçà
-#ORDER_DATE# - äàòà çàêàçà
-#PHONE_TO# - òåëåôîí çàêàç÷èêà
-#ORDER_CANCEL_DESCRIPTION# - ïðè÷èíà îòìåíû
-#SALE_PHONE# - òåëåôîí îòäåëà ïðîäàæ";
+$MESS["SMS4B_SALE_ORDER_CANCEL_DESC"] = "#ORDER_ID# - ÐºÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_DATE# - Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ°
+#ORDER_CANCEL_DESCRIPTION# - Ð¿Ñ€Ð¸Ñ‡Ð¸Ð½Ð° Ð¾Ñ‚Ð¼ÐµÐ½Ñ‹
+#SALE_PHONE# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¾Ñ‚Ð´ÐµÐ»Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
 //$MESS["SMS4B_SALE_ORDER_CANCEL_SUBJECT"] = "Otmena zakaza N#ORDER_ID#";
-$MESS["SMS4B_SALE_ORDER_CANCEL_SUBJECT"] = "Îòìåíà çàêàçà N#ORDER_ID#";
+$MESS["SMS4B_SALE_ORDER_CANCEL_SUBJECT"] = "ÐžÑ‚Ð¼ÐµÐ½Ð° Ð·Ð°ÐºÐ°Ð·Ð° N#ORDER_ID#";
 //$MESS["SMS4B_SALE_ORDER_CANCEL_MESSAGE"] = "Zakaz N#ORDER_ID# otmenen
 //#ORDER_CANCEL_DESCRIPTION#";
-$MESS["SMS4B_SALE_ORDER_CANCEL_MESSAGE"] = "Çàêàç N#ORDER_ID# îòìåíåí
+$MESS["SMS4B_SALE_ORDER_CANCEL_MESSAGE"] = "Ð—Ð°ÐºÐ°Ð· N#ORDER_ID# Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½
 #ORDER_CANCEL_DESCRIPTION#";
 
 //$MESS["SMS4B_SALE_ORDER_PAID_NAME"] = "Zakaz oplachen";
-$MESS["SMS4B_SALE_ORDER_PAID_NAME"] = "Çàêàç îïëà÷åí";
+$MESS["SMS4B_SALE_ORDER_PAID_NAME"] = "Ð—Ð°ÐºÐ°Ð· Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½";
 //$MESS["SMS4B_SALE_ORDER_PAID_DESC"] = "#ORDER_ID# - kod zakaza
 //#ORDER_DATE# - data zakaza
 //#PHONE_TO# - telephone zakazchika
 //#SALE_PHONE# - telephon otdela prodag";
-$MESS["SMS4B_SALE_ORDER_PAID_DESC"] = "#ORDER_ID# - êîä çàêàçà
-#ORDER_DATE# - äàòà çàêàçà
-#PHONE_TO# - òåëåôîí çàêàç÷èêà
-#SALE_PHONE# - òåëåôîí îòäåëà ïðîäàæ";
+$MESS["SMS4B_SALE_ORDER_PAID_DESC"] = "#ORDER_ID# - ÐºÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_DATE# - Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ°
+#SALE_PHONE# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¾Ñ‚Ð´ÐµÐ»Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
 //$MESS["SMS4B_SALE_ORDER_PAID_SUBJECT"] = "Zakaz N#ORDER_ID# oplachen";
-$MESS["SMS4B_SALE_ORDER_PAID_SUBJECT"] = "Çàêàç N#ORDER_ID# îïëà÷åí";
+$MESS["SMS4B_SALE_ORDER_PAID_SUBJECT"] = "Ð—Ð°ÐºÐ°Ð· N#ORDER_ID# Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½";
 //$MESS["SMS4B_SALE_ORDER_PAID_MESSAGE"] = "Zakaz N#ORDER_ID# oplachen";
-$MESS["SMS4B_SALE_ORDER_PAID_MESSAGE"] = "Çàêàç N#ORDER_ID# îïëà÷åí";
+$MESS["SMS4B_SALE_ORDER_PAID_MESSAGE"] = "Ð—Ð°ÐºÐ°Ð· N#ORDER_ID# Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½";
 
 //$MESS["SMS4B_SALE_ORDER_DELIVERY_NAME"] = "Dostavka zakaza razrechena";
-$MESS["SMS4B_SALE_ORDER_DELIVERY_NAME"] = "Äîñòàâêà çàêàçà ðàçðåøåíà";
+$MESS["SMS4B_SALE_ORDER_DELIVERY_NAME"] = "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð·Ð°ÐºÐ°Ð·Ð° Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð°";
 //$MESS["SMS4B_SALE_ORDER_DELIVERY_DESC"] = "#ORDER_ID# - kod zakaza
 //#ORDER_DATE# - data zakaza
 //#PHONE_TO# - telephone zakazchika
 //#SALE_PHONE# - telephon otdela prodag";
-$MESS["SMS4B_SALE_ORDER_DELIVERY_DESC"] = "#ORDER_ID# - êîä çàêàçà
-#ORDER_DATE# - äàòà çàêàçà
-#PHONE_TO# - òåëåôîí çàêàç÷èêà
-#SALE_PHONE# - òåëåôîí îòäåëà ïðîäàæ";
+$MESS["SMS4B_SALE_ORDER_DELIVERY_DESC"] = "#ORDER_ID# - ÐºÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_DATE# - Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ°
+#SALE_PHONE# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¾Ñ‚Ð´ÐµÐ»Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
 //$MESS["SMS4B_SALE_ORDER_DELIVERY_SUBJECT"] = "Dostavka zakaza N#ORDER_ID# razreshena";
-$MESS["SMS4B_SALE_ORDER_DELIVERY_SUBJECT"] = "Äîñòàâêà çàêàçà N#ORDER_ID# ðàçðåøåíà";
-$MESS["SMS4B_SALE_ORDER_DELIVERY_MESSAGE"] = "Äîñòàâêà çàêàçà N#ORDER_ID#  ðàçðåøåíà";
+$MESS["SMS4B_SALE_ORDER_DELIVERY_SUBJECT"] = "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð·Ð°ÐºÐ°Ð·Ð° N#ORDER_ID# Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð°";
+$MESS["SMS4B_SALE_ORDER_DELIVERY_MESSAGE"] = "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ð·Ð°ÐºÐ°Ð·Ð° N#ORDER_ID#  Ñ€Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð°";
 //$MESS["SMS4B_SALE_ORDER_DELIVERY_MESSAGE"] = "Dostavka zakaza N#ORDER_ID#  razreshena";
 
 //$MESS["SMS4B_SALE_RECURRING_CANCEL_NAME"] = "Podpiska otmenena";
-$MESS["SMS4B_SALE_RECURRING_CANCEL_NAME"] = "Ïîäïèñêà îòìåíåíà";
+$MESS["SMS4B_SALE_RECURRING_CANCEL_NAME"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ° Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½Ð°";
 //$MESS["SMS4B_SALE_RECURRING_CANCEL_DESC"] = "#ORDER_ID# - kod zakaza
 //#ORDER_DATE# - data zakaza
 //#PHONE_TO# - telephone zakazchika
 //#CANCELED_REASON# - prichina otmani
 //#SALE_PHONE# - telephon otdela prodag";
-$MESS["SMS4B_SALE_RECURRING_CANCEL_DESC"] = "#ORDER_ID# - êîä çàêàçà
-#ORDER_DATE# - äàòà çàêàçà
-#PHONE_TO# - òåëåôîí çàêàç÷èêà
-#CANCELED_REASON# - ïðè÷èíà îòìåíû";
+$MESS["SMS4B_SALE_RECURRING_CANCEL_DESC"] = "#ORDER_ID# - ÐºÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°
+#ORDER_DATE# - Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð·Ð°ÐºÐ°Ð·Ñ‡Ð¸ÐºÐ°
+#CANCELED_REASON# - Ð¿Ñ€Ð¸Ñ‡Ð¸Ð½Ð° Ð¾Ñ‚Ð¼ÐµÐ½Ñ‹";
 //$MESS["SMS4B_SALE_RECURRING_CANCEL_SUBJECT"] = "Podpiska otmenena";
-$MESS["SMS4B_SALE_RECURRING_CANCEL_SUBJECT"] = "Ïîäïèñêà îòìåíåíà";
+$MESS["SMS4B_SALE_RECURRING_CANCEL_SUBJECT"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ° Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½Ð°";
 //$MESS["SMS4B_SALE_RECURRING_CANCEL_MESSAGE"] = "Podpiska otmenena
 //#CANCELED_REASON#";
-$MESS["SMS4B_SALE_RECURRING_CANCEL_MESSAGE"] = "Ïîäïèñêà îòìåíåíà
+$MESS["SMS4B_SALE_RECURRING_CANCEL_MESSAGE"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ° Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½Ð°
 #CANCELED_REASON#";
 
 //$MESS["SMS4B_SUBSCRIBE_CONFIRM_NAME"] = "Podtverjdenie podpiski";
-$MESS["SMS4B_SUBSCRIBE_CONFIRM_NAME"] = "Ïîäòâåðæäåíèå ïîäïèñêè";
+$MESS["SMS4B_SUBSCRIBE_CONFIRM_NAME"] = "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸";
 //$MESS["SMS4B_SUBSCRIBE_CONFIRM_DESC"]= "#ID# - identifikator podpiski
 //#PHONE_TO# - telefon podpiski
 //#CONFIRM_CODE# - kod podtvergdeniya
@@ -120,89 +120,89 @@ $MESS["SMS4B_SUBSCRIBE_CONFIRM_NAME"] = "Ïîäòâåðæäåíèå ïîäïèñêè";
 //#USER_NAME# - imia podpischika
 //#DATE_SUBSCR# - date dobavleniya/izmenenia adresa
 //";
-$MESS["SMS4B_SUBSCRIBE_CONFIRM_DESC"]= "#ID# - èäåíòèôèêàòîð ïîäïèñêè
-#PHONE_TO# - òåëåôîí ïîäïèñêè
-#CONFIRM_CODE# - êîä ïîäòâåðæäåíèÿ
-#SUBSCR_SECTION# - ðàçäåë ñ ñòðàíèöåé ðåäàêòèðîâàíèÿ ïîäïèñêè
-#USER_NAME# - èìÿ ïîäïèñ÷èêà
-#DATE_SUBSCR# - äàòà äîáàâëåíèÿ/èçìåíåíèÿ àäðåñà";
+$MESS["SMS4B_SUBSCRIBE_CONFIRM_DESC"]= "#ID# - Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸
+#CONFIRM_CODE# - ÐºÐ¾Ð´ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ñ
+#SUBSCR_SECTION# - Ñ€Ð°Ð·Ð´ÐµÐ» Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†ÐµÐ¹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸
+#USER_NAME# - Ð¸Ð¼Ñ Ð¿Ð¾Ð´Ð¿Ð¸ÑÑ‡Ð¸ÐºÐ°
+#DATE_SUBSCR# - Ð´Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ/Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð°Ð´Ñ€ÐµÑÐ°";
 //$MESS ['SMS4B_SUBSCRIBE_CONFIRM_SUBJECT'] = "Podtverjdenie podpiski";
-$MESS ['SMS4B_SUBSCRIBE_CONFIRM_SUBJECT'] = "Ïîäòâåðæäåíèå ïîäïèñêè";
+$MESS ['SMS4B_SUBSCRIBE_CONFIRM_SUBJECT'] = "ÐŸÐ¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐ¸";
 //$MESS ['SMS4B_SUBSCRIBE_CONFIRM_MESSAGE'] = "Info o podpiske:
 //Telefon #PHONE#
 //Data dobavlenia/izmeneniya #DATE_SUBSCR#
 //Kod podtvergdenia: #CONFIRM_CODE#";
-$MESS ['SMS4B_SUBSCRIBE_CONFIRM_MESSAGE'] = "Èíôîðìàöèÿ î ïîäïèñêå:
-Òåëåôîí #PHONE#
-Äàòà äîáàâëåíèÿ/èçìåíåíèÿ #DATE_SUBSCR#
-Êîä ïîäòâåðæäåíèÿ: #CONFIRM_CODE#";
+$MESS ['SMS4B_SUBSCRIBE_CONFIRM_MESSAGE'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐºÐµ:
+Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ #PHONE#
+Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ/Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ #DATE_SUBSCR#
+ÐšÐ¾Ð´ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ñ: #CONFIRM_CODE#";
 
-$MESS["SMS4B_ORDER_ID"]="Êîä çàêàçà";
+$MESS["SMS4B_ORDER_ID"]="ÐšÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·Ð°";
 //$MESS["SMS4B_ORDER_ID"]="kod zakaza";
-$MESS["SMS4B_ORDER_DATE"]="äàòà çàêàçà";
+$MESS["SMS4B_ORDER_DATE"]="Ð´Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
 //$MESS["SMS4B_ORDER_DATE"]="data zakaza";
-$MESS["SMS4B_ORDER_STATUS"]="ñòàòóñ çàêàçà";
+$MESS["SMS4B_ORDER_STATUS"]="ÑÑ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð°";
 //$MESS["SMS4B_ORDER_STATUS"]="status zakaza";
-$MESS["SMS4B_ORDER_PHONE"]="òåëåôîí ïîëüçîâàòåëÿ";
+$MESS["SMS4B_ORDER_PHONE"]="Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
 //$MESS["SMS4B_ORDER_PHONE"]="telefon polzovatelia";
-$MESS["SMS4B_STATUS_DESCR"]="îïèñàíèå ñòàòóñà çàêàçà";
+$MESS["SMS4B_STATUS_DESCR"]="Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° Ð·Ð°ÐºÐ°Ð·Ð°";
 //$MESS["SMS4B_STATUS_DESCR"]="opisanie statusa zakaza";
-$MESS["SMS4B_STATUS_TEXT"]="òåêñò";
+$MESS["SMS4B_STATUS_TEXT"]="Ñ‚ÐµÐºÑÑ‚";
 //$MESS["SMS4B_STATUS_TEXT"]="tekst";
-$MESS["SMS4B_CHANGING_STATUS_TO"]="Èçìåíåíèå ñòàòóñà çàêàçà íà";
+$MESS["SMS4B_CHANGING_STATUS_TO"]="Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° Ð·Ð°ÐºÐ°Ð·Ð° Ð½Ð°";
 //$MESS["SMS4B_CHANGING_STATUS_TO"]="Izmenenie statusa zakaza na";
-$MESS["SMS4B_STATUS_PHONE_SUBJ"]="Èçìåíåíèå ñòàòóñà çàêàçà N#ORDER_ID#";
+$MESS["SMS4B_STATUS_PHONE_SUBJ"]="Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° Ð·Ð°ÐºÐ°Ð·Ð° N#ORDER_ID#";
 //$MESS["SMS4B_STATUS_PHONE_SUBJ"]="Izmenenie statusa zakaza N#ORDER_ID#";
-$MESS["SMS4B_STATUS_PHONE_BODY1"]="Íîâûé ñòàòóñ çàêàçà N#ORDER_ID#: ";
+$MESS["SMS4B_STATUS_PHONE_BODY1"]="ÐÐ¾Ð²Ñ‹Ð¹ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð° N#ORDER_ID#: ";
 //$MESS["SMS4B_STATUS_PHONE_BODY1"]="Noviy status zakaza N#ORDER_ID#: ";
-$MESS["SMS4B_SALE_PHONE"] = "Òåëåôîí îòäåëà ïðîäàæ";
+$MESS["SMS4B_SALE_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¾Ñ‚Ð´ÐµÐ»Ð° Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
 //$MESS["SMS4B_SALE_PHONE"] = "Telefon otdela prodag";
 
 //techsupport
 //$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_NAME"] = "Noviy Ticket";
-$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_NAME"] = "Íîâûé òèêåò";
+$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_NAME"] = "ÐÐ¾Ð²Ñ‹Ð¹ Ñ‚Ð¸ÐºÐµÑ‚";
 //$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_DESC"]= "#ID# - nomer obrasheniya
 //#PHONE_TO# - telefon poddergki
 //#CRITICAL# - critichnost
 //#DATE_TICKET# - date dobavleniya
 //";
-$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_DESC"]= "#ID# - íîìåð îáðàùåíèÿ
-#PHONE_TO# - òåëåôîí ïîääåðæêè
-#CRITICAL# - êðèòè÷íîñòü
-#DATE_TICKET# - äàòà îáíîâëåíèÿ";
+$MESS["SMS4B_TICKET_NEW_FOR_TECHSUPPORT_DESC"]= "#ID# - Ð½Ð¾Ð¼ÐµÑ€ Ð¾Ð±Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ñ
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸
+#CRITICAL# - ÐºÑ€Ð¸Ñ‚Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ
+#DATE_TICKET# - Ð´Ð°Ñ‚Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ";
 //$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_SUBJECT'] = "Noviy Ticket";
-$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_SUBJECT'] = "Íîâûé òèêåò";
+$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_SUBJECT'] = "ÐÐ¾Ð²Ñ‹Ð¹ Ñ‚Ð¸ÐºÐµÑ‚";
 //$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_MESSAGE'] = "Info o Tickete:
 //Nomer #ID#
 //Data dobavlenia #DATE_TICKET#
 //Critichnost: #CRITICAL#";
-$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_MESSAGE'] = "Èíôîðìàöèÿ î òèêåòå:
-Íîìåð #ID#
-Äàòà îáíîâëåíèÿ #DATE_TICKET#
-Êðèòè÷íîñòü: #CRITICAL#";
+$MESS ['SMS4B_TICKET_NEW_FOR_TECHSUPPORT_MESSAGE'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ñ‚Ð¸ÐºÐµÑ‚Ðµ:
+ÐÐ¾Ð¼ÐµÑ€ #ID#
+Ð”Ð°Ñ‚Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ #DATE_TICKET#
+ÐšÑ€Ð¸Ñ‚Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ: #CRITICAL#";
 
 //$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_NAME"] = "Izmenen Ticket";
-$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_NAME"] = "Èçìåíåí òèêåò";
+$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_NAME"] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½ Ñ‚Ð¸ÐºÐµÑ‚";
 //$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_DESC"]= "#ID# - nomer obrasheniya
 //#PHONE_TO# - telefon poddergki
 //#CRITICAL# - critichnost
 //#DATE_TICKET# - date dobavlenia
 //";
-$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_DESC"]= "#ID# - íîìåð îáðàùåíèÿ
-#PHONE_TO# - òåëåôîí ïîääåðæêè
-#CRITICAL# - êðèòè÷íîñòü
-#DATE_TICKET# - äàòà äîáàâëåíèÿ";
+$MESS["SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_DESC"]= "#ID# - Ð½Ð¾Ð¼ÐµÑ€ Ð¾Ð±Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ñ
+#PHONE_TO# - Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¸
+#CRITICAL# - ÐºÑ€Ð¸Ñ‚Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ
+#DATE_TICKET# - Ð´Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ";
 //$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_SUBJECT'] = "Izmenen Ticket";
-$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_SUBJECT'] = "Èçìåíåí òèêåò";
+$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_SUBJECT'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½ Ñ‚Ð¸ÐºÐµÑ‚";
 //$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_MESSAGE'] = "Info o Tickete:
 //Nomer #ID#
 //Data dobavlenia #DATE_TICKET#
 //Critichnost: #CRITICAL#
 //Izmeneniya: #WHAT_CHANGE#
 //";
-$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_MESSAGE'] = "Èíôî î òèêåòå:
-Íîìåð #ID#
-Äàòà äîáàâëåíèÿ #DATE_TICKET#
-Êðèòè÷íîñòü: #CRITICAL#
-Èçìåíåíèÿ: #WHAT_CHANGE#";
+$MESS ['SMS4B_TICKET_CHANGE_FOR_TECHSUPPORT_MESSAGE'] = "Ð˜Ð½Ñ„Ð¾ Ð¾ Ñ‚Ð¸ÐºÐµÑ‚Ðµ:
+ÐÐ¾Ð¼ÐµÑ€ #ID#
+Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ #DATE_TICKET#
+ÐšÑ€Ð¸Ñ‚Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ: #CRITICAL#
+Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ: #WHAT_CHANGE#";
 ?>

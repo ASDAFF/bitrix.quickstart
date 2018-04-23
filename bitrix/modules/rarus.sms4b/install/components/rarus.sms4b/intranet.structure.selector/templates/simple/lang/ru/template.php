@@ -1,6 +1,6 @@
 <?
-$MESS['ISS_TPL_SIMPLE_FILTER_DEPARTMENT'] = 'Ïîäðàçäåëåíèå';
-$MESS['ISS_TPL_SIMPLE_FILTER_FIO'] = 'Ô.È.Î.';
-$MESS['ISS_TPL_FILTER_SUBMIT'] = 'Íàéòè';
-$MESS['ISS_TPL_FILTER_CANCEL'] = 'Îòìåíèòü';
+$MESS['ISS_TPL_SIMPLE_FILTER_DEPARTMENT'] = 'ÐŸÐ¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ';
+$MESS['ISS_TPL_SIMPLE_FILTER_FIO'] = 'Ð¤.Ð˜.Ðž.';
+$MESS['ISS_TPL_FILTER_SUBMIT'] = 'ÐÐ°Ð¹Ñ‚Ð¸';
+$MESS['ISS_TPL_FILTER_CANCEL'] = 'ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ';
 ?>

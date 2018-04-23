@@ -1,11 +1,11 @@
 <?php
 
-$MESS['LIBEREYA_WRONG_ID'] = 'Îøèáêà. Íåâåðíûé ID ýëåìåíòà.';
-$MESS['LIBEREYA_ERROR_NEED_AUTH'] = "Ïîæàëóéñòà, àâòîðèçóéòåñü íà ñàéòå.";
-$MESS['LIBEREYA_RESERVED_ALREADY'] = "Èçâèíèòå, êíèãà óæå çàáðîíèðîâàíà.";
-$MESS['LIBEREYA_RESERVED_SUCCESSFULLY'] = "Ñïàñèáî. Êíèãà çàáðîíèðîâàíà.";
-$MESS['LIBEREYA_RESERVED_BY_YOURSELF'] = 'ÇÀÁÐÎÍÈÐÎÂÀÍÎ ÂÀÌÈ';
-$MESS['LIBEREYA_YOU_SUBSCRIBED_ALREADY'] = "Âû óæå ïîäïèñàíû íà óâåäîìëåíèå.";
-$MESS['LIBEREYA_YOU_SUBSCRIBED_SUCCESSFULLY'] = "Ñïàñèáî. Âû ïîäïèñàíû íà óâåäîëåíèå.";
+$MESS['LIBEREYA_WRONG_ID'] = 'ÐžÑˆÐ¸Ð±ÐºÐ°. ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°.';
+$MESS['LIBEREYA_ERROR_NEED_AUTH'] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·ÑƒÐ¹Ñ‚ÐµÑÑŒ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ.";
+$MESS['LIBEREYA_RESERVED_ALREADY'] = "Ð˜Ð·Ð²Ð¸Ð½Ð¸Ñ‚Ðµ, ÐºÐ½Ð¸Ð³Ð° ÑƒÐ¶Ðµ Ð·Ð°Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð°.";
+$MESS['LIBEREYA_RESERVED_SUCCESSFULLY'] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾. ÐšÐ½Ð¸Ð³Ð° Ð·Ð°Ð±Ñ€Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð°.";
+$MESS['LIBEREYA_RESERVED_BY_YOURSELF'] = 'Ð—ÐÐ‘Ð ÐžÐÐ˜Ð ÐžÐ’ÐÐÐž Ð’ÐÐœÐ˜';
+$MESS['LIBEREYA_YOU_SUBSCRIBED_ALREADY'] = "Ð’Ñ‹ ÑƒÐ¶Ðµ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð½Ð° ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ.";
+$MESS['LIBEREYA_YOU_SUBSCRIBED_SUCCESSFULLY'] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾. Ð’Ñ‹ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð½Ð° ÑƒÐ²ÐµÐ´Ð¾Ð»ÐµÐ½Ð¸Ðµ.";
 
 ?>

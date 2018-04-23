@@ -1,8 +1,8 @@
 <?
-$MESS["imaginweb.sms_MODULE_NAME"] = "SMS äëÿ èíòåðíåò-ìàãàçèíà";
-$MESS["imaginweb.sms_MODULE_DESC"] = "Ïîçâîëÿåò îòïðàâëÿòü ñìñ ÷åðåç ñòîðîííèå øëþçû è èìååò ñîáñòâåííîå api";
+$MESS["imaginweb.sms_MODULE_NAME"] = "SMS Ð´Ð»Ñ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+$MESS["imaginweb.sms_MODULE_DESC"] = "ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ ÑÐ¼Ñ Ñ‡ÐµÑ€ÐµÐ· ÑÑ‚Ð¾Ñ€Ð¾Ð½Ð½Ð¸Ðµ ÑˆÐ»ÑŽÐ·Ñ‹ Ð¸ Ð¸Ð¼ÐµÐµÑ‚ ÑÐ¾Ð±ÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ api";
 $MESS["imaginweb.sms_PARTNER_NAME"] = "ImaginWeb";
 $MESS["imaginweb.sms_PARTNER_URI"] = "http://www.imaginweb.ru";
-$MESS["imaginweb.sms_inst_inst_title"] = "Óñòàíîâêà ìîäóëÿ SMS äëÿ èíòåðíåò-ìàãàçèíà";
-$MESS["imaginweb.sms_inst_uninst_title"] = "Óäàëåíèå ìîäóëÿ SMS äëÿ èíòåðíåò-ìàãàçèíà";
+$MESS["imaginweb.sms_inst_inst_title"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ SMS Ð´Ð»Ñ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+$MESS["imaginweb.sms_inst_uninst_title"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ SMS Ð´Ð»Ñ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
 ?>

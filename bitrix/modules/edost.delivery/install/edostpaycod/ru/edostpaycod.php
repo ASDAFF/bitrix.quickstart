@@ -1,6 +1,6 @@
 <?
 global $MESS;
 
-$MESS["SPCP_DTITLE"] = "Наложенный платеж";
-$MESS["SPCP_DDESCR"] = "Оплата заказа при получении,<br>работает только совместно с модулем доставки <a href=\"http://edost.ru/shop.php\" target=\"_blank\">edost.ru</a>";
+$MESS["SPCP_DTITLE"] = "РќР°Р»РѕР¶РµРЅРЅС‹Р№ РїР»Р°С‚РµР¶";
+$MESS["SPCP_DDESCR"] = "РћРїР»Р°С‚Р° Р·Р°РєР°Р·Р° РїСЂРё РїРѕР»СѓС‡РµРЅРёРё,<br>СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ СЃРѕРІРјРµСЃС‚РЅРѕ СЃ РјРѕРґСѓР»РµРј РґРѕСЃС‚Р°РІРєРё <a href=\"http://edost.ru/shop.php\" target=\"_blank\">edost.ru</a>";
 ?>

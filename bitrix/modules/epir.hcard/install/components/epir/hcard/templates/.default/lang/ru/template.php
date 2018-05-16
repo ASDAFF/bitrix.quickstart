@@ -1,5 +1,5 @@
 <?
-$MESS ['EPIR_TAMPLATE_TEL'] = "Òåëåôîí:";
-$MESS ['EPIR_TAMPLATE_MAIL'] = "Ýëåêòðîííàÿ ïî÷òà:";
-$MESS ['EPIR_TAMPLATE_WORK'] = "Ìû ðàáîòàåì:";
+$MESS ['EPIR_TAMPLATE_TEL'] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½:";
+$MESS ['EPIR_TAMPLATE_MAIL'] = "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ñ‡Ñ‚Ð°:";
+$MESS ['EPIR_TAMPLATE_WORK'] = "ÐœÑ‹ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÐ¼:";
  ?>

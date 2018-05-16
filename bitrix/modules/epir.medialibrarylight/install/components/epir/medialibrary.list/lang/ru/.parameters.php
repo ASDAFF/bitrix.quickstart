@@ -1,16 +1,16 @@
 <?
-$MESS ['EPIR_PARAM_COLL'] = "Êîëëåêöèè äëÿ âûâîäà";
-$MESS ['EPIR_PARAM_PEREM'] = "Ïåðåìåííàÿ äëÿ õðàíåíèÿ êîëëåêöèè";
-$MESS ['EPIR_PARAM_JQUERY'] = "Ïîäêëþ÷àòü JQuery";
-$MESS ['EPIR_PARAM_FANCY'] = "Ïîäêëþ÷àòü Fancybox";
-$MESS ['EPIR_PARAM_LAZY'] = "Âêëþ÷èòü ïîäãðóçêó èçîáðàæåíèé";
-$MESS ['EPIR_PARAM_SET_HEADER'] = "Óñòàíàâëèâàòü çàãîëîâîê ñòðàíèöû";
-$MESS ['EPIR_PARAM_SHOW_TITLE'] = "Ïîêàçûâàòü èìÿ èçîáðàæåíèÿ";
-$MESS ['EPIR_PARAM_SET_DIR_SORT'] = "Èñïîëüçîâàòü ïîëå îïèñàíèÿ ðàçäåëà äëÿ ñîðòðîâêè";
+$MESS ['EPIR_PARAM_COLL'] = "ÐšÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð°";
+$MESS ['EPIR_PARAM_PEREM'] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ Ð´Ð»Ñ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸";
+$MESS ['EPIR_PARAM_JQUERY'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ JQuery";
+$MESS ['EPIR_PARAM_FANCY'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Fancybox";
+$MESS ['EPIR_PARAM_LAZY'] = "Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð´Ð³Ñ€ÑƒÐ·ÐºÑƒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹";
+$MESS ['EPIR_PARAM_SET_HEADER'] = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS ['EPIR_PARAM_SHOW_TITLE'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¸Ð¼Ñ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+$MESS ['EPIR_PARAM_SET_DIR_SORT'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ñ€Ð¾Ð²ÐºÐ¸";
 $MESS["T_IBLOCK_DESC_FID"] = "ID";
-$MESS["T_IBLOCK_DESC_FNAME"] = "Íàçâàíèå";
-$MESS["T_IBLOCK_DESC_FSORT"] = "Ñîðòèðîâêà";
-$MESS["T_IBLOCK_DESC_IBBY1"] = "Íàïðàâëåíèå ñîðòèðîâêè";
-$MESS["T_IBLOCK_DESC_ASC"] = "Ïî âîçðàñòàíèþ";
-$MESS["T_IBLOCK_DESC_DESC"] = "Ïî óáûâàíèþ";
+$MESS["T_IBLOCK_DESC_FNAME"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["T_IBLOCK_DESC_FSORT"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS["T_IBLOCK_DESC_IBBY1"] = "ÐÐ°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
+$MESS["T_IBLOCK_DESC_ASC"] = "ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ";
+$MESS["T_IBLOCK_DESC_DESC"] = "ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ";
  ?>

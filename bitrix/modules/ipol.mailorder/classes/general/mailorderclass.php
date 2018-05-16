@@ -44,7 +44,7 @@ class mailorderdriver
 		if(COption::GetOptionString(mailorderdriver::$MODULE_ID,'IPOLMO_OPT_TEXTMODE','1')=='2')
 			$newStringSign="<br>";
 		while($prop=$orderProps->Fetch()){
-			if(in_array($prop['CODE'], $arSavedProps) && $prop['VALUE']){ // == MOD ищем в массиве
+			if(in_array($prop['CODE'], $arSavedProps) && $prop['VALUE']){ // == MOD РёС‰РµРј РІ РјР°СЃСЃРёРІРµ
 				if($prop['TYPE']=="LOCATION"){
 					$strLocation = self::getLocation($prop['VALUE']);
 					$addedArray['IPOLMO_'.$prop['CODE']]=$strLocation;
@@ -68,13 +68,13 @@ class mailorderdriver
 				$addedArray['IPOLMO_'.$val] = '';
 		}
 		$orderHimself=CSaleOrder::GetByID($orderId);
-		// платежная система
+		// РїР»Р°С‚РµР¶РЅР°СЏ СЃРёСЃС‚РµРјР°
 		if(strpos($savedProps,',IMOPAYSYSTEM ( #IPOLMO_IMOPAYSYSTEM# ),')!==false){
 			$paySystem=CSalePaySystem::GetByID($orderHimself['PAY_SYSTEM_ID']);
 			$addedArray['IPOLMO_IMOPAYSYSTEM']=$paySystem['NAME'];
 			$addedStr.=GetMessage("IPOLMO_OPT_PROPS_PAYSYSTEM")." - ".$paySystem['NAME'].$newStringSign;
 		}
-		// доставка
+		// РґРѕСЃС‚Р°РІРєР°
 		if(strpos($savedProps,',IMODELIVERY ( #IPOLMO_IMODELIVERY# ),')!==false){
 			if(self::isConverted()){
 				$orderInfo = Bitrix\Sale\Order::load($orderId);
@@ -102,7 +102,7 @@ class mailorderdriver
 				$addedStr.=GetMessage("IPOLMO_OPT_PROPS_DELIVERY")." - ".$deliveryName.$newStringSign;
 			}
 		}
-		// стоимость доставки
+		// СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё
 		if(strpos($savedProps,',IMODELIVERYPRICE ( #IPOLMO_IMODELIVERYPRICE# ),')!==false){
 			$deliveryPrice = $orderHimself['PRICE_DELIVERY'];
 			if(cmodule::includeModule('currency'))
@@ -110,7 +110,7 @@ class mailorderdriver
 			$addedArray['IPOLMO_IMODELIVERYPRICE']=$deliveryPrice;
 			$addedStr.=GetMessage("IPOLMO_OPT_PROPS_DELIVERYPRC")." - ".$deliveryPrice.$newStringSign;
 		}
-		// документ об оплате
+		// РґРѕРєСѓРјРµРЅС‚ РѕР± РѕРїР»Р°С‚Рµ
 		if(strpos($savedProps,',IMOPAYED ( #IPOLMO_IMOPAYED# ),')!==false){
 			$strOfPayed=false;
 			if($orderHimself['PAY_VOUCHER_NUM']){
@@ -123,14 +123,14 @@ class mailorderdriver
 				$addedStr.=$strOfPayed.$newStringSign;
 			}
 		}
-		// идентификатор отправления
+		// РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РѕС‚РїСЂР°РІР»РµРЅРёСЏ
 		if(strpos($savedProps,',IMOTRACKING ( #IPOLMO_IMOTRACKING# ),')!==false){
 			if($orderHimself['TRACKING_NUMBER']){
 				$addedArray['IPOLMO_IMOTRACKING']=$orderHimself['TRACKING_NUMBER'];
 				$addedStr.=GetMessage("IPOLMO_SIGN_TRACKING")." - ".$orderHimself['TRACKING_NUMBER'].$newStringSign;
 			}
 		}		
-		// Сумма заказа
+		// РЎСѓРјРјР° Р·Р°РєР°Р·Р°
 		if(strpos($savedProps,',IMOPRICE ( #IPOLMO_IMOPRICE# ),')!==false){
 			$strOfPayed=CCurrencyLang::CurrencyFormat($orderHimself['PRICE'],$orderHimself['CURRENCY'],true);
 			if($strOfPayed){
@@ -138,7 +138,7 @@ class mailorderdriver
 				$addedStr.=GetMessage("IPOLMO_SIGN_PRICE")." - ".$strOfPayed.$newStringSign;
 			}
 		}
-		// Комментарий покупателя
+		// РљРѕРјРјРµРЅС‚Р°СЂРёР№ РїРѕРєСѓРїР°С‚РµР»СЏ
 		if(strpos($savedProps,',IMOCOMMENT ( #IPOLMO_IMOCOMMENT# ),')!==false){
 			if($orderHimself['USER_DESCRIPTION']){
 				$addedArray['IPOLMO_IMOCOMMENT']=$orderHimself['USER_DESCRIPTION'];
@@ -153,7 +153,7 @@ class mailorderdriver
 			$arFields['IPOLMOALL_PROPS']=$addedStr;
 	}
 
-	// Вспомогательный функционал
+	// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Р№ С„СѓРЅРєС†РёРѕРЅР°Р»
 	function isConverted(){
 		return (COption::GetOptionString("main","~sale_converted_15",'N') == 'Y');
 	}

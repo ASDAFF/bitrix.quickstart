@@ -1,4 +1,4 @@
 <?
-$MESS["IMYIE_NA_PARAM_NAME"] = "Íàèìåíîâàíèå áëîêà";
-$MESS["IMYIE_NA_PARAM_NAME_VALUE"] = "Àðõèâ";
+$MESS["IMYIE_NA_PARAM_NAME"] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IMYIE_NA_PARAM_NAME_VALUE"] = "ÐÑ€Ñ…Ð¸Ð²";
 ?>

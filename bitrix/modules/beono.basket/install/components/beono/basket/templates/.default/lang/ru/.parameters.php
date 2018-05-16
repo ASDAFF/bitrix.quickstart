@@ -1,15 +1,15 @@
 <?
-$MESS['BEONO_BASKET_STYLE'] = "Ñòèëü";
-$MESS['BEONO_BASKET_STYLE_SIMPLE'] = "Ïðîñòîé";
-$MESS['BEONO_BASKET_STYLE_BLUE'] = "Ñèíèé";
-$MESS['BEONO_BASKET_STYLE_GRAY'] = "Ñåðûé";
-$MESS['BEONO_BASKET_STYLE_YELLOW'] = "Æåëòûé";
-$MESS['BEONO_BASKET_STYLE_GREEN'] = "Çåëåíûé";
-$MESS['BEONO_BASKET_BORDER'] = "Ðàìêà";
-$MESS['BEONO_BASKET_IMAGE_WIDTH'] = "Øèðèíà èçîáðàæåíèÿ (px)";
-$MESS['BEONO_BASKET_IMAGE_HEIGHT'] = "Âûñîòà èçîáðàæåíèÿ (px)";
-$MESS['BEONO_BASKET_DELIVERY_PRICE'] = "Ìèíèìàëüíàÿ ñòîèìîñòü äîñòàâêè";
-$MESS['BEONO_BASKET_JQUERY'] = "Ïîäêëþ÷èòü jQuery (åñëè åù¸ íå ïîäêëþ÷åí)";
-$MESS['BEONO_BASKET_AJAX_ACTIONS'] = "Áûñòðîå óäàëåíèå (êíîïêè âìåñòî ÷åêáîêñîâ)";
+$MESS['BEONO_BASKET_STYLE'] = "Ð¡Ñ‚Ð¸Ð»ÑŒ";
+$MESS['BEONO_BASKET_STYLE_SIMPLE'] = "ÐŸÑ€Ð¾ÑÑ‚Ð¾Ð¹";
+$MESS['BEONO_BASKET_STYLE_BLUE'] = "Ð¡Ð¸Ð½Ð¸Ð¹";
+$MESS['BEONO_BASKET_STYLE_GRAY'] = "Ð¡ÐµÑ€Ñ‹Ð¹";
+$MESS['BEONO_BASKET_STYLE_YELLOW'] = "Ð–ÐµÐ»Ñ‚Ñ‹Ð¹";
+$MESS['BEONO_BASKET_STYLE_GREEN'] = "Ð—ÐµÐ»ÐµÐ½Ñ‹Ð¹";
+$MESS['BEONO_BASKET_BORDER'] = "Ð Ð°Ð¼ÐºÐ°";
+$MESS['BEONO_BASKET_IMAGE_WIDTH'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ (px)";
+$MESS['BEONO_BASKET_IMAGE_HEIGHT'] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ (px)";
+$MESS['BEONO_BASKET_DELIVERY_PRICE'] = "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+$MESS['BEONO_BASKET_JQUERY'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ jQuery (ÐµÑÐ»Ð¸ ÐµÑ‰Ñ‘ Ð½Ðµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½)";
+$MESS['BEONO_BASKET_AJAX_ACTIONS'] = "Ð‘Ñ‹ÑÑ‚Ñ€Ð¾Ðµ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ (ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð²Ð¼ÐµÑÑ‚Ð¾ Ñ‡ÐµÐºÐ±Ð¾ÐºÑÐ¾Ð²)";
 
 ?>

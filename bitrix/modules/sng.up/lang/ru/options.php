@@ -1,19 +1,19 @@
 <?
-$MESS["SNG_UP_ADMIN_SAVE"] = "Ñîõðàíèòü";
-$MESS["SNG_UP_INCLUDE_JQUERY"] = "Åñëè òðåáóåòñÿ óñòàíîâêà jquery";
-$MESS["SNG_UP_ENABLE_JQUERY_YES"] = "Ïîäêëþ÷èòü jquery";
-$MESS["SNG_UP_ENABLE_JQUERY_ALREADY"] = "jquery óæå ïîäêëþ÷åí";
-$MESS["SNG_UP_MARGIN_BUTTOM"] = "Îòñòóï ñíèçó";
-$MESS["SNG_UP_MARGIN_SIDE"] = "Îòñòóï ïî ãîðèçîíòàëè";
-$MESS["SNG_UP_POSITION"] = "Ðàñïîëîæåíèå êíîïêè";
-$MESS["SNG_UP_LEFT"] = "Ñëåâà ñòðàíèöû";
-$MESS["SNG_UP_RIGHT"] = "Ñïðàâà ñòðàíèöû";
-$MESS["SNG_UP_CENTER"] = "Ïî öåíòðó ñòðàíèöû";
-$MESS["SNG_UP_ADMIN"] = "Èñïîëüçîâàòü êíîïêó â Àäìèíèñòðàòèâíîì ðàçäåëå ñàéòà";
-$MESS["SNG_UP_SITE"] = "Âûáåðèòå ñàéò";
-$MESS["SNG_UP_FILE"] = "Çàãðóçèòå êàðòèíêó êíîïêè Ââåðõ";
-$MESS["SNG_UP_FILE_ERROR"] = "Îøèáêà! Çàãðóæàéòå êàðòèíêó, òèï çàãðóæàåìîãî ôàéëà: ";
-$MESS["SNG_UP_INT_ERROR"] = "Îøèáêà! Ââåäèòå ÷èñëî: ";
-$MESS["SNG_UP_FILE_CHOSE"] = "Èëè âûáåðèòå èç ïðåäëîæåííûõ";
-$MESS["SNG_UP_OPACITY_BUTTOM"] = "Íåïðîçðà÷íîñòü êíîïêè â % ";
+$MESS["SNG_UP_ADMIN_SAVE"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+$MESS["SNG_UP_INCLUDE_JQUERY"] = "Ð•ÑÐ»Ð¸ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° jquery";
+$MESS["SNG_UP_ENABLE_JQUERY_YES"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ jquery";
+$MESS["SNG_UP_ENABLE_JQUERY_ALREADY"] = "jquery ÑƒÐ¶Ðµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½";
+$MESS["SNG_UP_MARGIN_BUTTOM"] = "ÐžÑ‚ÑÑ‚ÑƒÐ¿ ÑÐ½Ð¸Ð·Ñƒ";
+$MESS["SNG_UP_MARGIN_SIDE"] = "ÐžÑ‚ÑÑ‚ÑƒÐ¿ Ð¿Ð¾ Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»Ð¸";
+$MESS["SNG_UP_POSITION"] = "Ð Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS["SNG_UP_LEFT"] = "Ð¡Ð»ÐµÐ²Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["SNG_UP_RIGHT"] = "Ð¡Ð¿Ñ€Ð°Ð²Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["SNG_UP_CENTER"] = "ÐŸÐ¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["SNG_UP_ADMIN"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð² ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ð¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ðµ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["SNG_UP_SITE"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ°Ð¹Ñ‚";
+$MESS["SNG_UP_FILE"] = "Ð—Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð’Ð²ÐµÑ€Ñ…";
+$MESS["SNG_UP_FILE_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð—Ð°Ð³Ñ€ÑƒÐ¶Ð°Ð¹Ñ‚Ðµ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ, Ñ‚Ð¸Ð¿ Ð·Ð°Ð³Ñ€ÑƒÐ¶Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°: ";
+$MESS["SNG_UP_INT_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
+$MESS["SNG_UP_FILE_CHOSE"] = "Ð˜Ð»Ð¸ Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð· Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð½Ñ‹Ñ…";
+$MESS["SNG_UP_OPACITY_BUTTOM"] = "ÐÐµÐ¿Ñ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ð¾ÑÑ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð² % ";
 ?>

@@ -1,5 +1,5 @@
 <?
-$MESS ['BEONO_BASKET_MODULE_NOT_INSTALL']="Ìîäóëü Èíòåðíåò-ìàãàçèí íå óñòàíîâëåí.";
-$MESS ['BEONO_BASKET_EMPTY_BASKET'] = "Âàøà êîðçèíà ïóñòà";
-$MESS ['BEONO_BASKET_WRONG_COUPON'] = "Óêàçàííûé êóïîí íå íàéäåí èëè óæå èñïîëüçîâàí";
+$MESS ['BEONO_BASKET_MODULE_NOT_INSTALL']="ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
+$MESS ['BEONO_BASKET_EMPTY_BASKET'] = "Ð’Ð°ÑˆÐ° ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð° Ð¿ÑƒÑÑ‚Ð°";
+$MESS ['BEONO_BASKET_WRONG_COUPON'] = "Ð£ÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ð¹ ÐºÑƒÐ¿Ð¾Ð½ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¸Ð»Ð¸ ÑƒÐ¶Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½";
 ?>

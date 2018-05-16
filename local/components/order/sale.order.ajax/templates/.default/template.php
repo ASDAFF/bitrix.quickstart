@@ -1,4 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
+
+
 if($USER->IsAuthorized() || $arParams["ALLOW_AUTO_REGISTER"] == "Y")
 {
 	if($arResult["USER_VALS"]["CONFIRM_ORDER"] == "Y" || $arResult["NEED_REDIRECT"] == "Y")
@@ -262,15 +265,15 @@ if (!function_exists("cmpBySort"))
 	<div style="display: none">
 		<?// we need to have all styles for sale.location.selector.steps, but RestartBuffer() cuts off document head with styles in it?>
 		<?$APPLICATION->IncludeComponent(
-			"bitrix:sale.location.selector.steps", 
-			".default", 
+			"bitrix:sale.location.selector.steps",
+			".default",
 			array(
 			),
 			false
 		);?>
 		<?$APPLICATION->IncludeComponent(
-			"bitrix:sale.location.selector.search", 
-			".default", 
+			"bitrix:sale.location.selector.search",
+			".default",
 			array(
 			),
 			false

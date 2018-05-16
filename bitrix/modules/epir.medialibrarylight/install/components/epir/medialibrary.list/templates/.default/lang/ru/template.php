@@ -1,4 +1,4 @@
 <?
-$MESS ['EPIR_TAMPLATE_NAZAD'] = "Íàçàä â ðàçäåë";
+$MESS ['EPIR_TAMPLATE_NAZAD'] = "ÐÐ°Ð·Ð°Ð´ Ð² Ñ€Ð°Ð·Ð´ÐµÐ»";
 
  ?>

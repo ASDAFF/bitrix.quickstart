@@ -4,7 +4,7 @@ IncludeModuleLangFile(__FILE__);
 if ($APPLICATION->GetGroupRight('sale') == 'D') return false;
 
 $aMenu = array(
-	'parent_menu' => 'global_menu_store', // 'global_menu_settings' - ğàçäåë 'íàñòğîéêè'
+	'parent_menu' => 'global_menu_store', // 'global_menu_settings' - Ñ€Ğ°Ğ·Ğ´ĞµĞ» 'Ğ½Ğ°ÑÑ‚Ñ€Ğ¾Ğ¹ĞºĞ¸'
 	'section' => 'edost_delivery',
 	'sort' => 105,
 	'text' => 'eDost',
@@ -13,7 +13,7 @@ $aMenu = array(
 	'icon' => 'edost_menu_icon',
 	'page_icon' => 'edost_page_icon',
 	'items_id' => 'edost',
-//	'module_id' => 'edost.delivery', // èäåíòèôèêàòîğ ìîäóëÿ, ê êîòîğîìó îòíîñèòñÿ ìåíş
+//	'module_id' => 'edost.delivery', // Ğ¸Ğ´ĞµĞ½Ñ‚Ğ¸Ñ„Ğ¸ĞºĞ°Ñ‚Ğ¾Ñ€ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ, Ğº ĞºĞ¾Ñ‚Ğ¾Ñ€Ğ¾Ğ¼Ñƒ Ğ¾Ñ‚Ğ½Ğ¾ÑĞ¸Ñ‚ÑÑ Ğ¼ĞµĞ½Ñ
 	'more_url' => array('edost.php'),
 	'items' => array()
 );

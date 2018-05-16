@@ -1,7 +1,7 @@
 <?php
-$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_TEXT'] = 'Íåêåø. îáëàñòè';
-$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_HINT_TITLE'] = 'Íåêåøèðóåìûå îáëàñòè';
-$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_HINT_TEXT'] = 'Äîïîëíèòåëüíûå âîçìîæíîñòè ïî ðàáîòå ñ íåêåøèðóåìûìè îáëàñòÿìè';
-$MESS['ITCONSTRUCT_UNCACHED_AREA_SHOW_AREAS_TEXT'] = 'Âûäåëèòü íåêåøèðóåìûå îáëàñòè';
-$MESS['ITCONSTRUCT_UNCACHED_AREA_SHOW_AREAS_TITLE'] = 'Âûäåëèòü íåêåøèðóåìûå îáëàñòè';
+$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_TEXT'] = 'ÐÐµÐºÐµÑˆ. Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸';
+$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_HINT_TITLE'] = 'ÐÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ðµ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸';
+$MESS['ITCONSTRUCT_UNCACHED_AREA_PANEL_BUTTON_HINT_TEXT'] = 'Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¿Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ðµ Ñ Ð½ÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ð¼Ð¸ Ð¾Ð±Ð»Ð°ÑÑ‚ÑÐ¼Ð¸';
+$MESS['ITCONSTRUCT_UNCACHED_AREA_SHOW_AREAS_TEXT'] = 'Ð’Ñ‹Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½ÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ðµ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸';
+$MESS['ITCONSTRUCT_UNCACHED_AREA_SHOW_AREAS_TITLE'] = 'Ð’Ñ‹Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½ÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ðµ Ð¾Ð±Ð»Ð°ÑÑ‚Ð¸';
 ?>

@@ -1,5 +1,5 @@
 <?
-$MESS ['EPIR_COMPONENT_NAME'] = "Ôîòîìåäèàòåêà";
-$MESS ['EPIR_COMPONENT_DESCRIPTION'] = "Îòîáðàæåíèå ñîäåðæèìîãî êîëëåêöèé ìåäèàáèáëèîòåêè";
-$MESS ['EPIR_IBLOCK_DESC'] = "Êîïîíåíòû epir";
+$MESS ['EPIR_COMPONENT_NAME'] = "Ð¤Ð¾Ñ‚Ð¾Ð¼ÐµÐ´Ð¸Ð°Ñ‚ÐµÐºÐ°";
+$MESS ['EPIR_COMPONENT_DESCRIPTION'] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ð³Ð¾ ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¹ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸";
+$MESS ['EPIR_IBLOCK_DESC'] = "ÐšÐ¾Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ epir";
  ?>

@@ -14,7 +14,7 @@ use Bitrix\Main\Loader;
 use Bitrix\Sale\DiscountCouponsManager;
 
 if (!Loader::includeModule("sale")) {
-    ShowError(GetMessage("SOA_MODULE_NOT_INSTALL"));
+    ShowError(GetMessage("SOA_MODULE_NOT_INSTALL")); //Модуль Интернет-магазина не установлен
     return;
 }
 
@@ -29,6 +29,8 @@ if ($isAjaxRequest) {
 
 include(dirname(__FILE__) . "/functions.php");
 
+
+/* ______________________________ START Проверка параметров ______________________________ */
 if ($arParams["SET_TITLE"] == "Y")
     $APPLICATION->SetTitle(GetMessage("SOA_TITLE"));
 
@@ -59,6 +61,8 @@ $arParams["DELIVERY_TO_PAYSYSTEM"] = ((strlen($arParams["DELIVERY_TO_PAYSYSTEM"]
 
 if (!isset($arParams["DISABLE_BASKET_REDIRECT"]) || 'Y' !== $arParams["DISABLE_BASKET_REDIRECT"])
     $arParams["DISABLE_BASKET_REDIRECT"] = "N";
+/* ______________________________ END Проверка параметров ______________________________ */
+
 
 $bUseAccountNumber = (COption::GetOptionString("sale", "account_number_template", "") !== "");
 
@@ -126,17 +130,23 @@ $arResult["DELIVERY_EXTRA"] = isset($_POST["DELIVERY_ID"]) && isset($_POST["DELI
 $arResult["AUTH"]["new_user_registration_email_confirmation"] = ((COption::GetOptionString("main", "new_user_registration_email_confirmation", "N") == "Y") ? "Y" : "N");
 $arResult["AUTH"]["new_user_registration"] = ((COption::GetOptionString("main", "new_user_registration", "Y") == "Y") ? "Y" : "N");
 
+
+/* ______________________________ START Проверка параметров ______________________________ */
 $arParams["ALLOW_AUTO_REGISTER"] = (($arParams["ALLOW_AUTO_REGISTER"] == "Y") ? "Y" : "N");
 if ($arParams["ALLOW_AUTO_REGISTER"] == "Y" && ($arResult["AUTH"]["new_user_registration_email_confirmation"] == "Y" || $arResult["AUTH"]["new_user_registration"] == "N"))
     $arParams["ALLOW_AUTO_REGISTER"] = "N";
 $arParams["SEND_NEW_USER_NOTIFY"] = (($arParams["SEND_NEW_USER_NOTIFY"] == "N") ? "N" : "Y");
 
 $arParams["ALLOW_NEW_PROFILE"] = ($arParams["ALLOW_NEW_PROFILE"] == "N") ? "N" : "Y";
+/* ______________________________ END Проверка параметров ______________________________ */
+
 
 $allCurrency = $arResult['BASE_LANG_CURRENCY'];
 
+/* ______________________________ START Проверка параметров ______________________________ */
 if (!$arParams["DELIVERY_NO_SESSION"])
     $arParams["DELIVERY_NO_SESSION"] = "N";
+/* ______________________________ END Проверка параметров ______________________________ */
 
 $arResult["BUYER_STORE"] = "";
 if (isset($_POST["BUYER_STORE"]))
@@ -796,11 +806,7 @@ if ($USER->IsAuthorized() || $arParams["ALLOW_AUTO_REGISTER"] == "Y") {
                 }
 
                 if ($bErrorField)
-
-                    //$arResult["ERROR"][] = GetMessage("SOA_ERROR_REQUIRE")." \"".$arOrderProps["NAME"]."\"";// стандартный вывод ошибок
-                    $key = $arOrderProps["CODE"];
-                    $value = GetMessage("SOA_ERROR_REQUIRE") . " \"" . $arOrderProps["NAME"] . "\"";
-                    $arResult["ERROR"][$key] = $value;
+                    $arResult["ERROR"][] = GetMessage("SOA_ERROR_REQUIRE") . " \"" . $arOrderProps["NAME"] . "\"";
 
                 //}//end isset
             }//end while

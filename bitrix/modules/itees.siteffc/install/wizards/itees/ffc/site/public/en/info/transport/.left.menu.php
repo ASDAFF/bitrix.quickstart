@@ -1,5 +1,0 @@
-<?
-$aMenuLinks = Array(
-	
-);
-?>

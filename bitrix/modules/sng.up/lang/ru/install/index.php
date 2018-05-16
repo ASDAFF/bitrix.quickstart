@@ -1,6 +1,6 @@
 <?
-$MESS["sng.up_MODULE_NAME"] = "Êíîïêà Ââåðõ";
-$MESS["sng.up_MODULE_DESC"] = "Ïåðåõîä ïî êëèêó ââåðõ ñòðàíèöû.";
-$MESS["sng.up_PARTNER_NAME"] = "Ñåìåí Ãîëèêîâ";
+$MESS["sng.up_MODULE_NAME"] = "ÐšÐ½Ð¾Ð¿ÐºÐ° Ð’Ð²ÐµÑ€Ñ…";
+$MESS["sng.up_MODULE_DESC"] = "ÐŸÐµÑ€ÐµÑ…Ð¾Ð´ Ð¿Ð¾ ÐºÐ»Ð¸ÐºÑƒ Ð²Ð²ÐµÑ€Ñ… ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹.";
+$MESS["sng.up_PARTNER_NAME"] = "Ð¡ÐµÐ¼ÐµÐ½ Ð“Ð¾Ð»Ð¸ÐºÐ¾Ð²";
 $MESS["sng.up_PARTNER_URI"] = "http://www.sng-it.ru";
 ?>

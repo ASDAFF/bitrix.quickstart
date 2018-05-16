@@ -1,6 +1,6 @@
 <?
-$MESS["itconstruct.uncachedarea_MODULE_NAME"] = "Íåêåøèðóåìàÿ îáëàñòü";
-$MESS["itconstruct.uncachedarea_MODULE_DESC"] = "Ìîäóëü ïðåäîñòàâëÿåò âîçìîæíîñòü ñîçäàíèÿ íà ñàéòå íåêåøèðóåìûõ îáëàñòåé, â ò.÷. â êåøèðóåìûõ êîìïîíåíòàõ.";
+$MESS["itconstruct.uncachedarea_MODULE_NAME"] = "ÐÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ð°Ñ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ";
+$MESS["itconstruct.uncachedarea_MODULE_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ñ€ÐµÐ´Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ Ð½ÐµÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… Ð¾Ð±Ð»Ð°ÑÑ‚ÐµÐ¹, Ð² Ñ‚.Ñ‡. Ð² ÐºÐµÑˆÐ¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°Ñ….";
 $MESS["itconstruct.uncachedarea_PARTNER_NAME"] = "ITConstruct";
 $MESS["itconstruct.uncachedarea_PARTNER_URI"] = "http://itconstruct.ru";
 ?>

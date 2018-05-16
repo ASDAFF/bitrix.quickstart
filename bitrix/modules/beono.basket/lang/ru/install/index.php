@@ -1,11 +1,11 @@
 <?
-$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME'] = "Корзина PRO";
-$MESS ['BEONO_MODULE_BASKET_INSTALL_DESCRIPTION'] = "Улучшенный компонент корзины пользователя";
-$MESS ['BEONO_MODULE_BASKET_INSTALL_TITLE'] = "Установка модуля &laquo;".$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME']."&raquo;";
-$MESS ['BEONO_MODULE_BASKET_UNINSTALL_TITLE'] = "Удаление модуля &laquo;".$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME']."&raquo;";
-$MESS ['BEONO_MODULE_BASKET_INSTALL_FINISHED'] = "Разместите и настройте компонент на сайте";
+$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME'] = "РљРѕСЂР·РёРЅР° PRO";
+$MESS ['BEONO_MODULE_BASKET_INSTALL_DESCRIPTION'] = "РЈР»СѓС‡С€РµРЅРЅС‹Р№ РєРѕРјРїРѕРЅРµРЅС‚ РєРѕСЂР·РёРЅС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ";
+$MESS ['BEONO_MODULE_BASKET_INSTALL_TITLE'] = "РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»СЏ &laquo;".$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME']."&raquo;";
+$MESS ['BEONO_MODULE_BASKET_UNINSTALL_TITLE'] = "РЈРґР°Р»РµРЅРёРµ РјРѕРґСѓР»СЏ &laquo;".$MESS ['BEONO_MODULE_BASKET_INSTALL_NAME']."&raquo;";
+$MESS ['BEONO_MODULE_BASKET_INSTALL_FINISHED'] = "Р Р°Р·РјРµСЃС‚РёС‚Рµ Рё РЅР°СЃС‚СЂРѕР№С‚Рµ РєРѕРјРїРѕРЅРµРЅС‚ РЅР° СЃР°Р№С‚Рµ";
 
-$MESS ['BEONO_MODULE_SEND_EVENT'] = "Добавьте свой сайт в список клиентов этого модуля.<br/>Это поможет нам развивать модуль, а вы увеличите посещаемость сайта.";
-$MESS ['BEONO_MODULE_SEND_EVENT_BUTTON'] = "Сообщить адрес этого сайта разработчику";
-$MESS ['BEONO_MODULE_SEND_EVENT_BUTTON_THANKS'] = "Спасибо!";
+$MESS ['BEONO_MODULE_SEND_EVENT'] = "Р”РѕР±Р°РІСЊС‚Рµ СЃРІРѕР№ СЃР°Р№С‚ РІ СЃРїРёСЃРѕРє РєР»РёРµРЅС‚РѕРІ СЌС‚РѕРіРѕ РјРѕРґСѓР»СЏ.<br/>Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ РЅР°Рј СЂР°Р·РІРёРІР°С‚СЊ РјРѕРґСѓР»СЊ, Р° РІС‹ СѓРІРµР»РёС‡РёС‚Рµ РїРѕСЃРµС‰Р°РµРјРѕСЃС‚СЊ СЃР°Р№С‚Р°.";
+$MESS ['BEONO_MODULE_SEND_EVENT_BUTTON'] = "РЎРѕРѕР±С‰РёС‚СЊ Р°РґСЂРµСЃ СЌС‚РѕРіРѕ СЃР°Р№С‚Р° СЂР°Р·СЂР°Р±РѕС‚С‡РёРєСѓ";
+$MESS ['BEONO_MODULE_SEND_EVENT_BUTTON_THANKS'] = "РЎРїР°СЃРёР±Рѕ!";
 ?>

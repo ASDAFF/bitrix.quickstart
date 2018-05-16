@@ -1,19 +1,19 @@
 <?
-$MESS["IMYIE_IBTYPE_NAME"] = "Òèï èíôîáëîêà";
+$MESS["IMYIE_IBTYPE_NAME"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
 
-$MESS["IMYIE_IBLOCK_NAME"] = "Èíôîáëîê";
+$MESS["IMYIE_IBLOCK_NAME"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
 
-$MESS["IMYIE_ARDATE_NAME"] = "Èñêàòü ýëåìåíòû ïî";
-$MESS["IMYIE_ARDATE_VARIANT_NONE"] = "(íå âûáðàíî)";
-$MESS["IMYIE_ARDATE_VARIANT1"] = "âðåìåíè ñîçäàíèÿ ýëåìåíòà";
-$MESS["IMYIE_ARDATE_VARIANT2"] = "äàòå íà÷àëå àêòèâíîñòè";
-$MESS["IMYIE_ARDATE_VARIANT3"] = "äàòå îêîí÷àíèÿ àêòèâíîñòè";
+$MESS["IMYIE_ARDATE_NAME"] = "Ð˜ÑÐºÐ°Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¿Ð¾";
+$MESS["IMYIE_ARDATE_VARIANT_NONE"] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
+$MESS["IMYIE_ARDATE_VARIANT1"] = "Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["IMYIE_ARDATE_VARIANT2"] = "Ð´Ð°Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»Ðµ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚Ð¸";
+$MESS["IMYIE_ARDATE_VARIANT3"] = "Ð´Ð°Ñ‚Ðµ Ð¾ÐºÐ¾Ð½Ñ‡Ð°Ð½Ð¸Ñ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚Ð¸";
 
-$MESS["IMYIE_KNOW_CNT_ELEMENTS"] = "Âûâîäèòü ÷èñëî çàïèñåé â ñêîáêàõ";
+$MESS["IMYIE_KNOW_CNT_ELEMENTS"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð¾ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð² ÑÐºÐ¾Ð±ÐºÐ°Ñ…";
 
-$MESS["IMYIE_ONLY_ACTIVE_ELEMENTS"] = "Âûáèðàòü òîëüêî àêòèâíûå ïî äàòå ýëåìåíòû";
+$MESS["IMYIE_ONLY_ACTIVE_ELEMENTS"] = "Ð’Ñ‹Ð±Ð¸Ñ€Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ðµ Ð¿Ð¾ Ð´Ð°Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
 
-$MESS["IMYIE_LASTDATE_NAME"] = "Ïðîñìàòðèâàòü ïîñëåäíèå N ìåñÿöåâ";
+$MESS["IMYIE_LASTDATE_NAME"] = "ÐŸÑ€Ð¾ÑÐ¼Ð°Ñ‚Ñ€Ð¸Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ N Ð¼ÐµÑÑÑ†ÐµÐ²";
 
-$MESS["IMYIE_FILTER_LINK"] = "Ññûëêà äëÿ ôèëüòðàöèè";
+$MESS["IMYIE_FILTER_LINK"] = "Ð¡ÑÑ‹Ð»ÐºÐ° Ð´Ð»Ñ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð°Ñ†Ð¸Ð¸";
 ?>

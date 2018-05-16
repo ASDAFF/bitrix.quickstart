@@ -1,16 +1,16 @@
 <?
-$MESS["IMYIE_ERROR_NO_IBLOCK_ID"] = "Íå óêàçàí ID èíôîáëîêà";
+$MESS["IMYIE_ERROR_NO_IBLOCK_ID"] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ ID Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
 
-$MESS["IMYIE_MONTH_NAME_01"] = "ßíâàðü";
-$MESS["IMYIE_MONTH_NAME_02"] = "Ôåâðàëü";
-$MESS["IMYIE_MONTH_NAME_03"] = "Ìàðò";
-$MESS["IMYIE_MONTH_NAME_04"] = "Àïðåëü";
-$MESS["IMYIE_MONTH_NAME_05"] = "Ìàé";
-$MESS["IMYIE_MONTH_NAME_06"] = "Èþíü";
-$MESS["IMYIE_MONTH_NAME_07"] = "Èþëü";
-$MESS["IMYIE_MONTH_NAME_08"] = "Àâãóñò";
-$MESS["IMYIE_MONTH_NAME_09"] = "Ñåíòÿáðü";
-$MESS["IMYIE_MONTH_NAME_10"] = "Îêòÿáðü";
-$MESS["IMYIE_MONTH_NAME_11"] = "Íîÿáðü";
-$MESS["IMYIE_MONTH_NAME_12"] = "Äåêàáðü";
+$MESS["IMYIE_MONTH_NAME_01"] = "Ð¯Ð½Ð²Ð°Ñ€ÑŒ";
+$MESS["IMYIE_MONTH_NAME_02"] = "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ";
+$MESS["IMYIE_MONTH_NAME_03"] = "ÐœÐ°Ñ€Ñ‚";
+$MESS["IMYIE_MONTH_NAME_04"] = "ÐÐ¿Ñ€ÐµÐ»ÑŒ";
+$MESS["IMYIE_MONTH_NAME_05"] = "ÐœÐ°Ð¹";
+$MESS["IMYIE_MONTH_NAME_06"] = "Ð˜ÑŽÐ½ÑŒ";
+$MESS["IMYIE_MONTH_NAME_07"] = "Ð˜ÑŽÐ»ÑŒ";
+$MESS["IMYIE_MONTH_NAME_08"] = "ÐÐ²Ð³ÑƒÑÑ‚";
+$MESS["IMYIE_MONTH_NAME_09"] = "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ";
+$MESS["IMYIE_MONTH_NAME_10"] = "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ";
+$MESS["IMYIE_MONTH_NAME_11"] = "ÐÐ¾ÑÐ±Ñ€ÑŒ";
+$MESS["IMYIE_MONTH_NAME_12"] = "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ";
 ?>

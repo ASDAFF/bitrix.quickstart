@@ -51,7 +51,7 @@ function ShowParamsHTMLByArray($arParams)
 	{
 		switch($Option[0])
 		{	
-			case 'IPOLMO_OPT_WORKMODE': //режим работы
+			case 'IPOLMO_OPT_WORKMODE': //СЂРµР¶РёРј СЂР°Р±РѕС‚С‹
 				$checked=array('','','');
 				$checked[COption::GetOptionString($module_id,'IPOLMO_OPT_WORKMODE','1')]='checked';
 				echo '<tr>
@@ -73,7 +73,7 @@ function ShowParamsHTMLByArray($arParams)
 						</td>
 					</tr>';
 					break;		
-			case 'IPOLMO_OPT_PROPS': //таблица со свойствами
+			case 'IPOLMO_OPT_PROPS': //С‚Р°Р±Р»РёС†Р° СЃРѕ СЃРІРѕР№СЃС‚РІР°РјРё
 				$savedPropsTmp=explode('|',COption::GetOptionString($module_id,'IPOLMO_OPT_PROPS',''));
 				$savedProps=array();
 				foreach($savedPropsTmp as $propGroup)
@@ -95,7 +95,7 @@ function ShowParamsHTMLByArray($arParams)
 						<td colspan="2" valign="top" align="center">'.GetMessage('IPOLMO_OPT_PROPS').' <a href="javascript:void(0)" class="PropHint" onclick="return module_popup_virt(\'IPOLMO_EXP_MARKPROPS\', this);"></a></td>
 					</tr>
 					';
-				//доставка
+				//РґРѕСЃС‚Р°РІРєР°
 				echo '<tr class="propsPayer" id="IPOLMO_payer_0" onclick="IPOLMO_payerClick(0)">
 						<td colspan="2" valign="top" align="center" >'.GetMessage('IPOLMO_OPT_PROPS_COMMON').'</td>
 					</tr>
@@ -309,7 +309,7 @@ display:none; margin-left:10px;margin-top:10px;
 }
 </style>
 <script>
-function module_popup_virt(code, info){ // Вспл. подсказки 
+function module_popup_virt(code, info){ // Р’СЃРїР». РїРѕРґСЃРєР°Р·РєРё 
 	var offset = $(info).position().top;
 	var LEFT = $(info).offset().left;		
 	

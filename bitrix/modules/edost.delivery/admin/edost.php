@@ -2,7 +2,7 @@
 require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_admin_before.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sale/include.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sale/prolog.php');
-//require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sale/general/admin_tool.php'); // функции для работы с заказами
+//require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/sale/general/admin_tool.php'); // С„СѓРЅРєС†РёРё РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р·Р°РєР°Р·Р°РјРё
 
 IncludeModuleLangFile(__FILE__);
 
@@ -13,11 +13,11 @@ if ($APPLICATION->GetGroupRight('sale') == 'D') {
 }
 
 
-//$develop = true; // режим разработки !!!!!
+//$develop = true; // СЂРµР¶РёРј СЂР°Р·СЂР°Р±РѕС‚РєРё !!!!!
 if (isset($develop)) require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/edost.delivery/admin/doc.php');
 
 
-// дынные из языковых файлов
+// РґС‹РЅРЅС‹Рµ РёР· СЏР·С‹РєРѕРІС‹С… С„Р°Р№Р»РѕРІ
 $setting_data = GetMessage('EDOST_ADMIN_SETTING');
 $sign = GetMessage('EDOST_ADMIN_SIGN');
 $info_107 = GetMessage('EDOST_ADMIN_107_INFO');
@@ -26,30 +26,30 @@ $button = GetMessage('EDOST_ADMIN_BUTTON');
 $rename = GetMessage('EDOST_ADMIN_RENAME');
 
 
-// загрузка настроек модуля
+// Р·Р°РіСЂСѓР·РєР° РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ
 $ar = COption::GetOptionString('edost.delivery', 'document_setting', '');
 $ar = ($ar != '' ? explode('|', $ar) : array());
 $setting = array(
-	'complete_status' => 'none', // статус выполненого заказа
-	'cod' => 'N', // код способа оплаты наложенным платежом (по умолчанию 'N' - не задан)
-	'show_order_id' => 'Y', // выводить в правом-верхнем углу бланка номер заказа
-	'info_color' => 'BBB', // цвет служебных данных (номер заказа)
-	'insurance_107' => 'N', // печатать опись для отправлений 'со страховкой' (по умолчанию опись печатается только при наложке)
+	'complete_status' => 'none', // СЃС‚Р°С‚СѓСЃ РІС‹РїРѕР»РЅРµРЅРѕРіРѕ Р·Р°РєР°Р·Р°
+	'cod' => 'N', // РєРѕРґ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹ РЅР°Р»РѕР¶РµРЅРЅС‹Рј РїР»Р°С‚РµР¶РѕРј (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 'N' - РЅРµ Р·Р°РґР°РЅ)
+	'show_order_id' => 'Y', // РІС‹РІРѕРґРёС‚СЊ РІ РїСЂР°РІРѕРј-РІРµСЂС…РЅРµРј СѓРіР»Сѓ Р±Р»Р°РЅРєР° РЅРѕРјРµСЂ Р·Р°РєР°Р·Р°
+	'info_color' => 'BBB', // С†РІРµС‚ СЃР»СѓР¶РµР±РЅС‹С… РґР°РЅРЅС‹С… (РЅРѕРјРµСЂ Р·Р°РєР°Р·Р°)
+	'insurance_107' => 'N', // РїРµС‡Р°С‚Р°С‚СЊ РѕРїРёСЃСЊ РґР»СЏ РѕС‚РїСЂР°РІР»РµРЅРёР№ 'СЃРѕ СЃС‚СЂР°С…РѕРІРєРѕР№' (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РѕРїРёСЃСЊ РїРµС‡Р°С‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РїСЂРё РЅР°Р»РѕР¶РєРµ)
 	'browser' => 'ie', // 'ie', 'firefox', 'opera', 'chrome', 'yandex'
-	'docs_disable' => '7a', // заблокированные бланки (можно распечатать только вручную)
-	'duplex' => 'Y', // 'Y' - 'back' печатать в обратном порядке
-	'show_status' => 'N,P', // статусы заказов, доступных для поиска
-	'show_allow_delivery' => '', // 'Y' - показывать только разрешенные к доставке заказы
-	'hide_deducted' => '', // 'Y' - скрывать откруженные заказы (для bitrix от 12.5)
-	'deducted' => '', // 'Y' - после печати бланков, разрешить отгрузку заказа (для bitrix от 12.5)
-	'hide_unpaid' => 'Y', // 'Y' - скрывать не оплаченные заказы (без наложенного платежа)
-	'hide_without_doc' => 'N', // 'Y' - скрывать заказы без документов
-	'duplex_x' => '0', // поправка для обратной стороны бланка по горизонтальи в миллиметрах
-//	'window_mode' => '0', // '0' - открывать документы списком в разных окнах, '1' - открывать в одном окне с кнопками переключения, '2' - каждый заказ в новом окне с кнопаками переключения
-//	'history' => 0, // ключ кэша, в котором хранятся заказы из прошлых распечаток
-//	'label' => 'Y', // вывод наклеек на отдельной странице
-//	'label_list' => '', // коды бланков наклеек
-//	'compact' => 'N', // компактное размещение бланков на листе (экономия бумаги)
+	'docs_disable' => '7a', // Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅРЅС‹Рµ Р±Р»Р°РЅРєРё (РјРѕР¶РЅРѕ СЂР°СЃРїРµС‡Р°С‚Р°С‚СЊ С‚РѕР»СЊРєРѕ РІСЂСѓС‡РЅСѓСЋ)
+	'duplex' => 'Y', // 'Y' - 'back' РїРµС‡Р°С‚Р°С‚СЊ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ
+	'show_status' => 'N,P', // СЃС‚Р°С‚СѓСЃС‹ Р·Р°РєР°Р·РѕРІ, РґРѕСЃС‚СѓРїРЅС‹С… РґР»СЏ РїРѕРёСЃРєР°
+	'show_allow_delivery' => '', // 'Y' - РїРѕРєР°Р·С‹РІР°С‚СЊ С‚РѕР»СЊРєРѕ СЂР°Р·СЂРµС€РµРЅРЅС‹Рµ Рє РґРѕСЃС‚Р°РІРєРµ Р·Р°РєР°Р·С‹
+	'hide_deducted' => '', // 'Y' - СЃРєСЂС‹РІР°С‚СЊ РѕС‚РєСЂСѓР¶РµРЅРЅС‹Рµ Р·Р°РєР°Р·С‹ (РґР»СЏ bitrix РѕС‚ 12.5)
+	'deducted' => '', // 'Y' - РїРѕСЃР»Рµ РїРµС‡Р°С‚Рё Р±Р»Р°РЅРєРѕРІ, СЂР°Р·СЂРµС€РёС‚СЊ РѕС‚РіСЂСѓР·РєСѓ Р·Р°РєР°Р·Р° (РґР»СЏ bitrix РѕС‚ 12.5)
+	'hide_unpaid' => 'Y', // 'Y' - СЃРєСЂС‹РІР°С‚СЊ РЅРµ РѕРїР»Р°С‡РµРЅРЅС‹Рµ Р·Р°РєР°Р·С‹ (Р±РµР· РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р°)
+	'hide_without_doc' => 'N', // 'Y' - СЃРєСЂС‹РІР°С‚СЊ Р·Р°РєР°Р·С‹ Р±РµР· РґРѕРєСѓРјРµРЅС‚РѕРІ
+	'duplex_x' => '0', // РїРѕРїСЂР°РІРєР° РґР»СЏ РѕР±СЂР°С‚РЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ Р±Р»Р°РЅРєР° РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРё РІ РјРёР»Р»РёРјРµС‚СЂР°С…
+//	'window_mode' => '0', // '0' - РѕС‚РєСЂС‹РІР°С‚СЊ РґРѕРєСѓРјРµРЅС‚С‹ СЃРїРёСЃРєРѕРј РІ СЂР°Р·РЅС‹С… РѕРєРЅР°С…, '1' - РѕС‚РєСЂС‹РІР°С‚СЊ РІ РѕРґРЅРѕРј РѕРєРЅРµ СЃ РєРЅРѕРїРєР°РјРё РїРµСЂРµРєР»СЋС‡РµРЅРёСЏ, '2' - РєР°Р¶РґС‹Р№ Р·Р°РєР°Р· РІ РЅРѕРІРѕРј РѕРєРЅРµ СЃ РєРЅРѕРїР°РєР°РјРё РїРµСЂРµРєР»СЋС‡РµРЅРёСЏ
+//	'history' => 0, // РєР»СЋС‡ РєСЌС€Р°, РІ РєРѕС‚РѕСЂРѕРј С…СЂР°РЅСЏС‚СЃСЏ Р·Р°РєР°Р·С‹ РёР· РїСЂРѕС€Р»С‹С… СЂР°СЃРїРµС‡Р°С‚РѕРє
+//	'label' => 'Y', // РІС‹РІРѕРґ РЅР°РєР»РµРµРє РЅР° РѕС‚РґРµР»СЊРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ
+//	'label_list' => '', // РєРѕРґС‹ Р±Р»Р°РЅРєРѕРІ РЅР°РєР»РµРµРє
+//	'compact' => 'N', // РєРѕРјРїР°РєС‚РЅРѕРµ СЂР°Р·РјРµС‰РµРЅРёРµ Р±Р»Р°РЅРєРѕРІ РЅР° Р»РёСЃС‚Рµ (СЌРєРѕРЅРѕРјРёСЏ Р±СѓРјР°РіРё)
 );
 $i = 0;
 foreach ($setting as $k => $v) {
@@ -61,11 +61,11 @@ $docs_disable = ($setting['docs_disable'] != '' ? explode(',', $setting['docs_di
 //echo '<br><b>setting:</b><pre style="font-size: 12px">'.print_r($setting, true).'</pre>';
 
 
-// загрузка локальных настроек из cookie
+// Р·Р°РіСЂСѓР·РєР° Р»РѕРєР°Р»СЊРЅС‹С… РЅР°СЃС‚СЂРѕРµРє РёР· cookie
 $ar = (isset($_COOKIE['edost_admin']) && $_COOKIE['edost_admin'] != '' ? explode('|', preg_replace("/[^0-9a-z_|-]/i", "", $_COOKIE['edost_admin'])) : array());
 $setting_cookie = array(
-	'filter_days' => '', // заказы оформленные за последние 'filter_days' дней
-	'docs_active' => '' // активные документы для ручной печати
+	'filter_days' => '', // Р·Р°РєР°Р·С‹ РѕС„РѕСЂРјР»РµРЅРЅС‹Рµ Р·Р° РїРѕСЃР»РµРґРЅРёРµ 'filter_days' РґРЅРµР№
+	'docs_active' => '' // Р°РєС‚РёРІРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹ РґР»СЏ СЂСѓС‡РЅРѕР№ РїРµС‡Р°С‚Рё
 );
 $i = 0;
 foreach ($setting_cookie as $k => $v) {
@@ -77,7 +77,7 @@ $setting_cookie['docs_active'] = ($setting_cookie['docs_active'] != '' ? explode
 //echo '<br><b>setting_cookie:</b><pre style="font-size: 12px">'.print_r($setting_cookie, true).'</pre>';
 
 
-// проверка на доступность отгрузки заказов (появилась в bitrix 12.5)
+// РїСЂРѕРІРµСЂРєР° РЅР° РґРѕСЃС‚СѓРїРЅРѕСЃС‚СЊ РѕС‚РіСЂСѓР·РєРё Р·Р°РєР°Р·РѕРІ (РїРѕСЏРІРёР»Р°СЃСЊ РІ bitrix 12.5)
 $ar = explode('.', SM_VERSION);
 $deducted_enabled = (isset($ar[1]) && ($ar[0] >= 14 || ($ar[0] == 12 && $ar[1] >= 5)) ? true : false);
 if ($deducted_enabled && $setting['deducted'] == 'Y') {
@@ -85,29 +85,29 @@ if ($deducted_enabled && $setting['deducted'] == 'Y') {
 	$user_groups = $USER->GetUserGroupArray();
 }
 
-// статусы заказов магазина
+// СЃС‚Р°С‚СѓСЃС‹ Р·Р°РєР°Р·РѕРІ РјР°РіР°Р·РёРЅР°
 $order_status = array('none' => $setting_data['status_no_change']);
 $ar = CSaleStatus::GetList(array('SORT' => 'ASC'), array('LID' => LANGUAGE_ID), false, false, array('ID', 'NAME'));
 while ($v = $ar->Fetch()) $order_status[htmlspecialcharsbx($v['ID'])] = htmlspecialcharsbx($v['NAME']);
-if (!isset($order_status[$setting['complete_status']])) $setting['complete_status'] = 'none'; // отключение изменения статуса, если такого статуса не существует
+if (!isset($order_status[$setting['complete_status']])) $setting['complete_status'] = 'none'; // РѕС‚РєР»СЋС‡РµРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ СЃС‚Р°С‚СѓСЃР°, РµСЃР»Рё С‚Р°РєРѕРіРѕ СЃС‚Р°С‚СѓСЃР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚
 
-// способы оплаты магазина
+// СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹ РјР°РіР°Р·РёРЅР°
 $pay_system = array();
 $ar = CSalePaySystem::GetList(array('SORT' => 'ASC', 'PSA_NAME' => 'ASC'), array('ACTIVE' => 'Y'), false, false, array('ID', 'NAME', 'PSA_ACTION_FILE'));
 while ($v = $ar->Fetch()) {
 	$pay_system[$v['ID']] = htmlspecialcharsbx($v['NAME']);
-	if ($setting['cod'] == 'N' && substr($v['PSA_ACTION_FILE'], -11) == 'edostpaycod') $setting['cod'] = $v['ID']; // включение по умолчанию наложенного платежа edost
+	if ($setting['cod'] == 'N' && substr($v['PSA_ACTION_FILE'], -11) == 'edostpaycod') $setting['cod'] = $v['ID']; // РІРєР»СЋС‡РµРЅРёРµ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р° edost
 }
 
 
-// название для кнопки 'Создать почтовые бланки' (меняется в зависимости от настроек)
+// РЅР°Р·РІР°РЅРёРµ РґР»СЏ РєРЅРѕРїРєРё 'РЎРѕР·РґР°С‚СЊ РїРѕС‡С‚РѕРІС‹Рµ Р±Р»Р°РЅРєРё' (РјРµРЅСЏРµС‚СЃСЏ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РЅР°СЃС‚СЂРѕРµРє)
 $button_print = $button['print']['name'];
 if ($setting['complete_status'] == 'none' && $setting['deducted'] == 'Y') $button_print .= $button['print']['deducted'];
 else if ($setting['complete_status'] != 'none' && $setting['deducted'] != 'Y') $button_print .= $button['print']['status'].' ['.$order_status[$setting['complete_status']].']';
 else if ($setting['complete_status'] != 'none' && $setting['deducted'] == 'Y') $button_print .= $button['print']['status_deducted'].' ['.$order_status[$setting['complete_status']].']';
 
 
-// загрузка шаблонов документов (из кэша или с сервера edost)
+// Р·Р°РіСЂСѓР·РєР° С€Р°Р±Р»РѕРЅРѕРІ РґРѕРєСѓРјРµРЅС‚РѕРІ (РёР· РєСЌС€Р° РёР»Рё СЃ СЃРµСЂРІРµСЂР° edost)
 $docs = array();
 $cache = new CPHPCache();
 if ($cache->InitCache((isset($_POST['update_docs']) && $_POST['update_docs'] == 'Y' ? 1 : 86400), 'sale|11.0.0|edost_delivery|doc', '/')) if (!isset($develop)) $docs = $cache->GetVars();
@@ -130,7 +130,7 @@ if (!is_array($docs) || count($docs) == 0) {
 		}
 	}
 
-	// распарсивание ответа сервера
+	// СЂР°СЃРїР°СЂСЃРёРІР°РЅРёРµ РѕС‚РІРµС‚Р° СЃРµСЂРІРµСЂР°
 	$ar = explode('|', $data);
 	$key = array('id', 'data', 'data2', 'name', 'size', 'quantity', 'mode', 'cod', 'delivery', 'length', 'space');
 	$key_count = count($key);
@@ -175,14 +175,14 @@ $show = (count($docs) > 0 ? true : false);
 //echo '<br><b>docs:</b><pre style="font-size: 12px">'.print_r($docs, true).'</pre>';
 
 
-// загрузка параметров со страницы "Настройка печатных форм" - bitrix/admin/sale_report_edit.php
+// Р·Р°РіСЂСѓР·РєР° РїР°СЂР°РјРµС‚СЂРѕРІ СЃРѕ СЃС‚СЂР°РЅРёС†С‹ "РќР°СЃС‚СЂРѕР№РєР° РїРµС‡Р°С‚РЅС‹С… С„РѕСЂРј" - bitrix/admin/sale_report_edit.php
 $ar = '';
 $n = IntVal(COption::GetOptionInt('sale', 'reports_count'));
 if (!($n > 0)) $ar = COption::GetOptionString('sale', 'reports');
 else for ($i = 1; $i <= $n; $i++) $ar .= COption::GetOptionString('sale', 'reports'.$i);
 $shop = unserialize($ar);
 
-// реквизиты  отправителя
+// СЂРµРєРІРёР·РёС‚С‹  РѕС‚РїСЂР°РІРёС‚РµР»СЏ
 $ar = array_fill_keys(array('INDEX', 'COMPANY_NAME', 'ADDRESS', 'CITY', 'INN', 'KSCH', 'RSCH_BANK', 'RSCH', 'BIK'), '');
 foreach ($ar as $k => $v) $ar[$k] = (isset($shop[$k]['TYPE']) && $shop[$k]['TYPE'] == '' ? $shop[$k]['VALUE'] : '');
 $shop_field = array(
@@ -197,11 +197,11 @@ $shop_field = array(
 );
 $shop_warning = ($shop_field['company_name'] != '' && $shop_field['company_address'] != '' && $shop_field['company_zip'] != '' ? false : true);
 
-// паспортные данные отправителя
-$passport = explode('|', COption::GetOptionString('edost.delivery', 'document_passport', $setting_data['passport'][0]['default'].'|||||')); // паспорт|серия|№|выдан день и месяц|выдан год|кто выдал
+// РїР°СЃРїРѕСЂС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ РѕС‚РїСЂР°РІРёС‚РµР»СЏ
+$passport = explode('|', COption::GetOptionString('edost.delivery', 'document_passport', $setting_data['passport'][0]['default'].'|||||')); // РїР°СЃРїРѕСЂС‚|СЃРµСЂРёСЏ|в„–|РІС‹РґР°РЅ РґРµРЅСЊ Рё РјРµСЃСЏС†|РІС‹РґР°РЅ РіРѕРґ|РєС‚Рѕ РІС‹РґР°Р»
 foreach ($passport as $k => $v) $shop_field['passport_'.$k] = $v;
 
-// ключи свойств покупателя
+// РєР»СЋС‡Рё СЃРІРѕР№СЃС‚РІ РїРѕРєСѓРїР°С‚РµР»СЏ
 $ar = array_fill_keys(array('BUYER_COMPANY_NAME', 'BUYER_FIRST_NAME', 'BUYER_SECOND_NAME', 'BUYER_LAST_NAME', 'BUYER_ADDRESS', 'BUYER_CITY', 'BUYER_INDEX'), '');
 foreach ($ar as $k => $v) $ar[$k] = (isset($shop[$k]['TYPE']) && $shop[$k]['TYPE'] == 'PROPERTY' ? $shop[$k]['VALUE'] : '');
 $user_field_key = array(
@@ -221,7 +221,7 @@ if ($user_field_key['zip'] == '') $user_field_key['zip'] = 'ZIP';
 
 
 
-// данные из POST и GET
+// РґР°РЅРЅС‹Рµ РёР· POST Рё GET
 $ajax = (isset($_POST['ajax']) && $_POST['ajax'] == 'Y' ? true : false);
 $update_allow_delivery = (isset($_POST['update_allow_delivery']) && $_POST['update_allow_delivery'] == 'Y' ? true : false);
 $update_status = (isset($_POST['update_status']) && $_POST['update_status'] == 'Y' ? true : false);
@@ -240,7 +240,7 @@ $decimals = $currency['DECIMALS'];
 
 
 
-// загрузка заказов
+// Р·Р°РіСЂСѓР·РєР° Р·Р°РєР°Р·РѕРІ
 if ($print || ($ajax && !$update_allow_delivery)) {
 	$filter = array('ID' => is_array($orders_id) ? $orders_id : 0);
 	$allow_delivery = false;
@@ -285,14 +285,14 @@ foreach ($orders as $order_key => $order) {
 	$insurance = ($order['INSURANCE'] == 'Y' ? true : false);
 	$cod = ($order['COD'] == 'Y' ? true : false);
 
-	// получение названия тарифа доставки по коду
+	// РїРѕР»СѓС‡РµРЅРёРµ РЅР°Р·РІР°РЅРёСЏ С‚Р°СЂРёС„Р° РґРѕСЃС‚Р°РІРєРё РїРѕ РєРѕРґСѓ
 	if (intval($order['DELIVERY_ID']) > 0) {
-		// настраиваемые службы доставки
+		// РЅР°СЃС‚СЂР°РёРІР°РµРјС‹Рµ СЃР»СѓР¶Р±С‹ РґРѕСЃС‚Р°РІРєРё
 		$ar = CSaleDelivery::GetByID($order['DELIVERY_ID']);
 		$s = $ar['NAME'];
 	}
 	else {
-		// автоматизированные службы доставки
+		// Р°РІС‚РѕРјР°С‚РёР·РёСЂРѕРІР°РЅРЅС‹Рµ СЃР»СѓР¶Р±С‹ РґРѕСЃС‚Р°РІРєРё
 		$id = explode(':', $order['DELIVERY_ID']);
 		if (isset($id[1])) {
 			$db = CSaleDeliveryHandler::GetBySID($id[0]);
@@ -306,28 +306,28 @@ foreach ($orders as $order_key => $order) {
 	foreach ($rename as $v) $s = str_replace($v[0], $v[1], $s);
 	$order['DELIVERY_NAME'] = $s;
 
-	// получение названия способа оплаты по коду
+	// РїРѕР»СѓС‡РµРЅРёРµ РЅР°Р·РІР°РЅРёСЏ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹ РїРѕ РєРѕРґСѓ
 	$s = $pay_system[$order['PAY_SYSTEM_ID']];
 	foreach ($rename as $v) $s = str_replace($v[0], $v[1], $s);
 	$order['PAY_SYSTEM_NAME'] = $s;
 
-	// сокращенное наименование статуса заказа
+	// СЃРѕРєСЂР°С‰РµРЅРЅРѕРµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°
 	$order['STATUS_NAME_SHORT'] = (strlen($order_status[$order['STATUS_ID']]) > 20 ? substr($order_status[$order['STATUS_ID']], 0, 20).'...' : $order_status[$order['STATUS_ID']]);
 
-	// разбивка даты оформления заказа на дату (25.01.2014) и время (10:45:00)
+	// СЂР°Р·Р±РёРІРєР° РґР°С‚С‹ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р° РЅР° РґР°С‚Сѓ (25.01.2014) Рё РІСЂРµРјСЏ (10:45:00)
 	$ar = explode(' ', $order['DATE_INSERT']);
 	if (count($ar) == 2) $order['DATE_INSERT'] = $ar[0].'<br><span class="low">'.$ar[1].'</span>';
 
 
-	// получение списка документов
+	// РїРѕР»СѓС‡РµРЅРёРµ СЃРїРёСЃРєР° РґРѕРєСѓРјРµРЅС‚РѕРІ
 	$ar = array();
 	foreach ($docs as $doc) if (isset($doc['mode']) && $doc['mode'] != '') {
 		if (is_array($docs_active)) {
-			// ручная печать (список документов передан в параметрах)
+			// СЂСѓС‡РЅР°СЏ РїРµС‡Р°С‚СЊ (СЃРїРёСЃРѕРє РґРѕРєСѓРјРµРЅС‚РѕРІ РїРµСЂРµРґР°РЅ РІ РїР°СЂР°РјРµС‚СЂР°С…)
 			if (!in_array($doc['id'], $docs_active)) continue;
 		}
 		else {
-			// выбор по параметрам заказа и настройкам
+			// РІС‹Р±РѕСЂ РїРѕ РїР°СЂР°РјРµС‚СЂР°Рј Р·Р°РєР°Р·Р° Рё РЅР°СЃС‚СЂРѕР№РєР°Рј
 			if (in_array($doc['id'], $docs_disable)) continue;
 			if (is_array($doc['delivery']) && !($edost_id >= 0 && in_array($edost_id, $doc['delivery']))) continue;
 			if ($doc['id'] == '107' && $setting['insurance_107'] == 'Y') {
@@ -347,7 +347,7 @@ foreach ($orders as $order_key => $order) {
 	$order['DOCS'] = $ar;
 
 
-	// свойства заказа
+	// СЃРІРѕР№СЃС‚РІР° Р·Р°РєР°Р·Р°
 	$props = array();
 	$location = 0;
 	$ar = CSaleOrderPropsValue::GetOrderProps($order['ID']);
@@ -362,7 +362,7 @@ foreach ($orders as $order_key => $order) {
 	$country = (isset($location['COUNTRY_NAME']) ? $location['COUNTRY_NAME'] : '');
 
 
-	// поля для заполнения документов
+	// РїРѕР»СЏ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РґРѕРєСѓРјРµРЅС‚РѕРІ
 	$field = array();
 
 	$ar = $user_field_key;
@@ -391,10 +391,10 @@ foreach ($orders as $order_key => $order) {
 	$field['user_address'] = str_replace(array(',', '.'), array(', ', '. '), implode(', ', $s));
 
 
-	// стоимость заказа для объявленной ценности и наложенного платежа
+	// СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р° РґР»СЏ РѕР±СЉСЏРІР»РµРЅРЅРѕР№ С†РµРЅРЅРѕСЃС‚Рё Рё РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р°
 	$price = CCurrencyRates::ConvertCurrency($order['PRICE'], $order['CURRENCY'], 'RUB');
 	$delivery_price = CCurrencyRates::ConvertCurrency($order['PRICE_DELIVERY'], $order['CURRENCY'], 'RUB');
-	if (!$cod && $insurance) $price -= $delivery_price; // вычесть из заказа стоимость доставки, если нет наложки
+	if (!$cod && $insurance) $price -= $delivery_price; // РІС‹С‡РµСЃС‚СЊ РёР· Р·Р°РєР°Р·Р° СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё, РµСЃР»Рё РЅРµС‚ РЅР°Р»РѕР¶РєРё
 	$price = round($price, $decimals);
 	$price_format = number_format($price, $decimals, ',', '');
 
@@ -431,7 +431,7 @@ foreach ($orders as $order_key => $order) {
 	$order['FIELD'] = $field;
 
 
-	// товары
+	// С‚РѕРІР°СЂС‹
 	$ar = CSaleBasket::GetList(array('NAME' => 'ASC', 'ID' => 'ASC'), array('ORDER_ID' => $order['ID']), false, false, array('NAME', 'PRODUCT_ID', 'QUANTITY', 'DELAY', 'CAN_BUY', 'PRICE', 'WEIGHT'));
 
 	$items = array();
@@ -460,7 +460,7 @@ foreach ($orders as $order_key => $order) {
 		if ($n > 3) array_splice($items_list_short, 2);
 		$order['ITEMS_STRING'] = implode('<br>', $items_list_short).$s;
 
-		// распределение стоимости заказа по товарам (чтобы итого в описи совпадало с объявленной ценностью)
+		// СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ СЃС‚РѕРёРјРѕСЃС‚Рё Р·Р°РєР°Р·Р° РїРѕ С‚РѕРІР°СЂР°Рј (С‡С‚РѕР±С‹ РёС‚РѕРіРѕ РІ РѕРїРёСЃРё СЃРѕРІРїР°РґР°Р»Рѕ СЃ РѕР±СЉСЏРІР»РµРЅРЅРѕР№ С†РµРЅРЅРѕСЃС‚СЊСЋ)
 		$p = 0;
 		$items_count = 0;
 		for ($i = 0; $i < count($items); $i++) {
@@ -492,7 +492,7 @@ foreach ($orders as $order_key => $order) {
 
 
 
-// страница с документами на печать
+// СЃС‚СЂР°РЅРёС†Р° СЃ РґРѕРєСѓРјРµРЅС‚Р°РјРё РЅР° РїРµС‡Р°С‚СЊ
 if ($print) {
 	if (count($orders) == 0) die();
 
@@ -508,12 +508,12 @@ if ($print) {
 
 		$field = array_merge($shop_field, $order['FIELD']);
 
-		// номер заказа в углу документа
+		// РЅРѕРјРµСЂ Р·Р°РєР°Р·Р° РІ СѓРіР»Сѓ РґРѕРєСѓРјРµРЅС‚Р°
 		if ($setting['show_order_id'] == 'Y') $s = $sign['order'].(strlen($order['ID']) == 6 ? '0' : '').$order['ID']; else $s = '';
 		$field['id'] = $s;
 		$field['info_color'] = ' color: #'.$setting['info_color'].';';
 
-		// описание отправки для описи
+		// РѕРїРёСЃР°РЅРёРµ РѕС‚РїСЂР°РІРєРё РґР»СЏ РѕРїРёСЃРё
 		$s = '';
 		if (in_array($edost_id, array(1, 2))) {
 			$s = ($edost_id == 1 ? $info_107[1] : $info_107[0]);
@@ -521,38 +521,38 @@ if ($print) {
 		}
 		$field['107_info'] = $s;
 
-		// галочка "выплатить наличными деньгами", если в настройках не задан номер расчетного счета
+		// РіР°Р»РѕС‡РєР° "РІС‹РїР»Р°С‚РёС‚СЊ РЅР°Р»РёС‡РЅС‹РјРё РґРµРЅСЊРіР°РјРё", РµСЃР»Рё РІ РЅР°СЃС‚СЂРѕР№РєР°С… РЅРµ Р·Р°РґР°РЅ РЅРѕРјРµСЂ СЂР°СЃС‡РµС‚РЅРѕРіРѕ СЃС‡РµС‚Р°
 		$field['cash'] = ($shop_field['company_rsch'] == '' ? 'V' : '');
 
 
-		// ключи в бланках для замены
+		// РєР»СЋС‡Рё РІ Р±Р»Р°РЅРєР°С… РґР»СЏ Р·Р°РјРµРЅС‹
 		$field_key = array_keys($field);
 		for ($i = 0; $i < count($field_key); $i++) $field_key[$i] = '%'.$field_key[$i].'%';
 //		echo '<br><b>props:</b><pre style="font-size: 12px">'.print_r($field, true).'</pre>';
 
 
-		// заполнение бланков
+		// Р·Р°РїРѕР»РЅРµРЅРёРµ Р±Р»Р°РЅРєРѕРІ
 		$add_order = false;
 		foreach ($order['DOCS'] as $doc_key) for ($q = 1; $q <= $docs[$doc_key]['quantity']; $q++) {
 			$doc = $docs[$doc_key];
 			if (!($doc['mode'] == $mode[1] || ($doc['mode'] == 'duplex' && ($mode[1] == 'front' || $mode[1] == 'back')))) continue;
 			$add_order = true;
 
-			// заполнение полей
+			// Р·Р°РїРѕР»РЅРµРЅРёРµ РїРѕР»РµР№
 			$page = ($doc['mode'] == 'duplex' && $mode[1] == 'back' ? $doc['data2'] : $doc['data']);
 			draw_field($field_key, $field, $doc, $page);
 
-			// поправка для двухсторонних документов
+			// РїРѕРїСЂР°РІРєР° РґР»СЏ РґРІСѓС…СЃС‚РѕСЂРѕРЅРЅРёС… РґРѕРєСѓРјРµРЅС‚РѕРІ
 			$x = $doc['size'][2] + $setting['duplex_x'];
 			$page = str_replace('%left%', $x, $page);
 
-			// проверка на наличие в бланке списка товаров
+			// РїСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РёРµ РІ Р±Р»Р°РЅРєРµ СЃРїРёСЃРєР° С‚РѕРІР°СЂРѕРІ
 			if (!isset($docs[$doc['id'].'_item'])) {
 				$pages[] = array('size' => $doc['size'], 'data' => $page);
 				continue;
 			}
 
-			// заполнение списка товаров
+			// Р·Р°РїРѕР»РЅРµРЅРёРµ СЃРїРёСЃРєР° С‚РѕРІР°СЂРѕРІ
 			$p = $page;
 			$item_i = 0;
 			$item_s = '';
@@ -606,10 +606,10 @@ if ($print) {
 	}
 //	echo '<br><b>props:</b><pre style="font-size: 12px">'.print_r($pages, true).'</pre>';
 
-	// 'back' печатать в обратном порядке
+	// 'back' РїРµС‡Р°С‚Р°С‚СЊ РІ РѕР±СЂР°С‚РЅРѕРј РїРѕСЂСЏРґРєРµ
 	if ($mode[1] == 'back' && $setting['duplex'] == 'Y') $pages = array_reverse($pages);
 
-	// распределение бланков по страницам
+	// СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµ Р±Р»Р°РЅРєРѕРІ РїРѕ СЃС‚СЂР°РЅРёС†Р°Рј
 	$s = '';
 	$y = 0;
 	$n = count($pages) - 1;
@@ -627,7 +627,7 @@ if ($print) {
 		$s .= str_replace('%page-break%', $s2, $pages[$i]['data']);
 	}
 
-	// заполнение html страницы
+	// Р·Р°РїРѕР»РЅРµРЅРёРµ html СЃС‚СЂР°РЅРёС†С‹
 	$body = $docs['body']['data'];
 	$body = str_replace('%charset%', LANG_CHARSET, $body);
 	$body = str_replace('%mode%', isset($docs[$mode[1]]['data']) ? $docs[$mode[1]]['data'] : '', $body);
@@ -644,7 +644,7 @@ if ($print) {
 
 
 
-// сохранение настроек
+// СЃРѕС…СЂР°РЅРµРЅРёРµ РЅР°СЃС‚СЂРѕРµРє
 if ($ajax && $mode == 'setting') {
 	foreach ($setting as $k => $v) if (isset($_POST[$k])) $setting[$k] = $_POST[$k];
 	$setting['duplex_x'] = str_replace(',', '.', $setting['duplex_x']) + 0;
@@ -660,7 +660,7 @@ if ($ajax && $mode == 'setting') {
 
 
 
-// загрузка истории
+// Р·Р°РіСЂСѓР·РєР° РёСЃС‚РѕСЂРёРё
 $history = array();
 $history_cache = new CPHPCache();
 $history_cache_id = 'sale|11.0.0|edost_delivery|history';
@@ -668,7 +668,7 @@ $history_cache_time = 86400*15;
 if ($history_cache->InitCache($history_cache_time, $history_cache_id, '/')) $history = $history_cache->GetVars();
 
 
-// получить список бланков доступных для выбранных заказов + присвоить заказам новый статус + отгрузить
+// РїРѕР»СѓС‡РёС‚СЊ СЃРїРёСЃРѕРє Р±Р»Р°РЅРєРѕРІ РґРѕСЃС‚СѓРїРЅС‹С… РґР»СЏ РІС‹Р±СЂР°РЅРЅС‹С… Р·Р°РєР°Р·РѕРІ + РїСЂРёСЃРІРѕРёС‚СЊ Р·Р°РєР°Р·Р°Рј РЅРѕРІС‹Р№ СЃС‚Р°С‚СѓСЃ + РѕС‚РіСЂСѓР·РёС‚СЊ
 if ($ajax && $mode == 'print') {
 	if (count($orders) == 0) die();
 
@@ -687,12 +687,12 @@ if ($ajax && $mode == 'print') {
 		}
 
 		if ($update_status) {
-			// установка статуса заказа
+			// СѓСЃС‚Р°РЅРѕРІРєР° СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°
 			if ($setting['complete_status'] != 'none' && $setting['complete_status'] != $order['STATUS_ID']) {
 				if (!CSaleOrder::StatusOrder($order['ID'], $setting['complete_status'])) $error[] = $order['ID'];
 			}
 
-			// отгрузка заказа
+			// РѕС‚РіСЂСѓР·РєР° Р·Р°РєР°Р·Р°
 			if ($deducted_enabled && $setting['deducted'] == 'Y' && $order['DEDUCTED'] != 'Y') {
 				if (CSaleOrder::CanUserChangeOrderFlag($order['ID'], 'PERM_DEDUCTION', $user_groups)) if (!CSaleOrder::DeductOrder($order['ID'], 'Y')) $error[] = $order['ID'];
 			}
@@ -700,7 +700,7 @@ if ($ajax && $mode == 'print') {
 	}
 
 
-	// сохранение распечатанных заказов в историю
+	// СЃРѕС…СЂР°РЅРµРЅРёРµ СЂР°СЃРїРµС‡Р°С‚Р°РЅРЅС‹С… Р·Р°РєР°Р·РѕРІ РІ РёСЃС‚РѕСЂРёСЋ
 	$n = count($orders_id);
 	if ($n > 0) {
 		$first = -1;
@@ -740,7 +740,7 @@ if ($ajax && $mode == 'print') {
 	}
 
 
-	// ответ с результатами в json
+	// РѕС‚РІРµС‚ СЃ СЂРµР·СѓР»СЊС‚Р°С‚Р°РјРё РІ json
 	$ar = array(
 		'"error": "'.implode('|', $error).'"',
 		'"id": "'.implode('|', $orders_id).'"',
@@ -877,7 +877,7 @@ if ($show) { ?>
 			BX('setting_save').className = 'adm-btn adm-btn-load';
 			BX('setting_save_loading').style.display = 'block';
 
-			// ['id', (1 - обновить список заказов, 2 - загрузить с сервера документы)]
+			// ['id', (1 - РѕР±РЅРѕРІРёС‚СЊ СЃРїРёСЃРѕРє Р·Р°РєР°Р·РѕРІ, 2 - Р·Р°РіСЂСѓР·РёС‚СЊ СЃ СЃРµСЂРІРµСЂР° РґРѕРєСѓРјРµРЅС‚С‹)]
 			var ar = [['show_order_id', 0], ['insurance_107', 1], ['duplex', 0], ['show_allow_delivery', 1], ['hide_deducted', 1], ['deducted', 1], ['hide_unpaid', 1], ['hide_without_doc', 1], ['complete_status', 1], ['cod', 0], ['info_color', 0], ['browser', 2], ['duplex_x', 0]];
 			for (var i = 0; i < ar.length; i++) {
 				var E = BX('setting_' + ar[i][0]);
@@ -1326,13 +1326,13 @@ if (!$ajax) { ?>
 if (!$ajax) require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/epilog_admin.php');
 
 
-// вывод значений со склонением
+// РІС‹РІРѕРґ Р·РЅР°С‡РµРЅРёР№ СЃРѕ СЃРєР»РѕРЅРµРЅРёРµРј
 function draw_string($name, $n) {
 
 	$ar = array(
-		'order' => array('заказ', 'заказа', 'заказов'),
-		'item' => array('предмет', 'предмета', 'предметов'),
-		'item2' => array('позиция', 'позиции', 'позиций'),
+		'order' => array('Р·Р°РєР°Р·', 'Р·Р°РєР°Р·Р°', 'Р·Р°РєР°Р·РѕРІ'),
+		'item' => array('РїСЂРµРґРјРµС‚', 'РїСЂРµРґРјРµС‚Р°', 'РїСЂРµРґРјРµС‚РѕРІ'),
+		'item2' => array('РїРѕР·РёС†РёСЏ', 'РїРѕР·РёС†РёРё', 'РїРѕР·РёС†РёР№'),
 	);
 
 	$s = '';
@@ -1350,12 +1350,12 @@ function draw_string($name, $n) {
 
 }
 
-// замена ключей в шаблоне на данные из полей
+// Р·Р°РјРµРЅР° РєР»СЋС‡РµР№ РІ С€Р°Р±Р»РѕРЅРµ РЅР° РґР°РЅРЅС‹Рµ РёР· РїРѕР»РµР№
 function draw_field($field_key, $field, $doc, &$page, $block = false) {
 
 	$space = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 
-	// уменьшение размера шрифта (если текст не входит в поле)
+	// СѓРјРµРЅСЊС€РµРЅРёРµ СЂР°Р·РјРµСЂР° С€СЂРёС„С‚Р° (РµСЃР»Рё С‚РµРєСЃС‚ РЅРµ РІС…РѕРґРёС‚ РІ РїРѕР»Рµ)
 	if (isset($doc['length']) && is_array($doc['length']))
 		foreach ($doc['length'] as $k => $v) {
 			$size = '';

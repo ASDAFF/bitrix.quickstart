@@ -1,19 +1,19 @@
 <?
 global $MESS;
-$MESS ['EDOST_DELIVERY_PARTNER_NAME'] = "ООО Айсден";
-$MESS ['EDOST_DELIVERY_INSTALL_NAME'] = "Калькулятор доставки eDost.ru";
-$MESS ['EDOST_DELIVERY_INSTALL_DESCRIPTION'] = "Расчет стоимости доставки EMS, СПСР, СДЭК, ЖелДорЭкспедиция, Автотрейдинг, ПЭК, DHL, UPS, Почта России, Энергия. Для работы калькулятора необходима регистрация на сервере eDost.ru/shop.php";
-$MESS ['EDOST_DELIVERY_INSTALL_TITLE'] = "Установка модуля калькулятора доставки eDost.ru";
-$MESS ['EDOST_DELIVERY_INSTALL_OK'] = "Модуль калькулятора доставки eDost.ru установлен";
-$MESS ['EDOST_DELIVERY_INSTALL_DEL'] = "Модуль калькулятора доставки eDost.ru успешно удален из системы";
-$MESS ['EDOST_DELIVERY_INSTALL'] = "Установка модуля калькулятора доставки eDost.ru";
-$MESS ['EDOST_DELIVERY_UNINSTALL'] = "Удаление модуля калькулятора доставки eDost.ru";
+$MESS ['EDOST_DELIVERY_PARTNER_NAME'] = "РћРћРћ РђР№СЃРґРµРЅ";
+$MESS ['EDOST_DELIVERY_INSTALL_NAME'] = "РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ РґРѕСЃС‚Р°РІРєРё eDost.ru";
+$MESS ['EDOST_DELIVERY_INSTALL_DESCRIPTION'] = "Р Р°СЃС‡РµС‚ СЃС‚РѕРёРјРѕСЃС‚Рё РґРѕСЃС‚Р°РІРєРё EMS, РЎРџРЎР , РЎР”Р­Рљ, Р–РµР»Р”РѕСЂР­РєСЃРїРµРґРёС†РёСЏ, РђРІС‚РѕС‚СЂРµР№РґРёРЅРі, РџР­Рљ, DHL, UPS, РџРѕС‡С‚Р° Р РѕСЃСЃРёРё, Р­РЅРµСЂРіРёСЏ. Р”Р»СЏ СЂР°Р±РѕС‚С‹ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РЅРµРѕР±С…РѕРґРёРјР° СЂРµРіРёСЃС‚СЂР°С†РёСЏ РЅР° СЃРµСЂРІРµСЂРµ eDost.ru/shop.php";
+$MESS ['EDOST_DELIVERY_INSTALL_TITLE'] = "РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»СЏ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РґРѕСЃС‚Р°РІРєРё eDost.ru";
+$MESS ['EDOST_DELIVERY_INSTALL_OK'] = "РњРѕРґСѓР»СЊ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РґРѕСЃС‚Р°РІРєРё eDost.ru СѓСЃС‚Р°РЅРѕРІР»РµРЅ";
+$MESS ['EDOST_DELIVERY_INSTALL_DEL'] = "РњРѕРґСѓР»СЊ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РґРѕСЃС‚Р°РІРєРё eDost.ru СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅ РёР· СЃРёСЃС‚РµРјС‹";
+$MESS ['EDOST_DELIVERY_INSTALL'] = "РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»СЏ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РґРѕСЃС‚Р°РІРєРё eDost.ru";
+$MESS ['EDOST_DELIVERY_UNINSTALL'] = "РЈРґР°Р»РµРЅРёРµ РјРѕРґСѓР»СЏ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР° РґРѕСЃС‚Р°РІРєРё eDost.ru";
 
-$MESS ['EDOST_DELIVERY_INSERT_CODE'] = "Допишите в файл ";
-$MESS ['EDOST_DELIVERY_NEXT_CODE'] = " следующий код:<br>";
-$MESS ['EDOST_DELIVERY_DELETE_CODE'] = "Удалите из файла ";
-$MESS ['EDOST_DELIVERY_NEED_RIGHT_VER'] = "Для установки данного решения необходима версия главного модуля #NEED# или выше.";
-$MESS ['EDOST_DELIVERY_NEED_MODULES'] = "Для установки данного решения необходимо наличие модуля #MODULE#.";
-$MESS ['EDOST_DELIVERY_INSTALL_ERROR'] = "Ошибка устаноки модуля: ";
-$MESS ['EDOST_DELIVERY_UNINSTALL_ERROR'] = "Ошибка удаления модуля: ";
+$MESS ['EDOST_DELIVERY_INSERT_CODE'] = "Р”РѕРїРёС€РёС‚Рµ РІ С„Р°Р№Р» ";
+$MESS ['EDOST_DELIVERY_NEXT_CODE'] = " СЃР»РµРґСѓСЋС‰РёР№ РєРѕРґ:<br>";
+$MESS ['EDOST_DELIVERY_DELETE_CODE'] = "РЈРґР°Р»РёС‚Рµ РёР· С„Р°Р№Р»Р° ";
+$MESS ['EDOST_DELIVERY_NEED_RIGHT_VER'] = "Р”Р»СЏ СѓСЃС‚Р°РЅРѕРІРєРё РґР°РЅРЅРѕРіРѕ СЂРµС€РµРЅРёСЏ РЅРµРѕР±С…РѕРґРёРјР° РІРµСЂСЃРёСЏ РіР»Р°РІРЅРѕРіРѕ РјРѕРґСѓР»СЏ #NEED# РёР»Рё РІС‹С€Рµ.";
+$MESS ['EDOST_DELIVERY_NEED_MODULES'] = "Р”Р»СЏ СѓСЃС‚Р°РЅРѕРІРєРё РґР°РЅРЅРѕРіРѕ СЂРµС€РµРЅРёСЏ РЅРµРѕР±С…РѕРґРёРјРѕ РЅР°Р»РёС‡РёРµ РјРѕРґСѓР»СЏ #MODULE#.";
+$MESS ['EDOST_DELIVERY_INSTALL_ERROR'] = "РћС€РёР±РєР° СѓСЃС‚Р°РЅРѕРєРё РјРѕРґСѓР»СЏ: ";
+$MESS ['EDOST_DELIVERY_UNINSTALL_ERROR'] = "РћС€РёР±РєР° СѓРґР°Р»РµРЅРёСЏ РјРѕРґСѓР»СЏ: ";
 ?>

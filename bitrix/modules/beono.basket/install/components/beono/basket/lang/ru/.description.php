@@ -1,5 +1,5 @@
 <?
-$MESS ['BEONO_BASKET_NAME'] = "Êîðçèíà PRO";
-$MESS ['BEONO_BASKET_DESCRIPTION'] = "Âûâîäèò êîðçèíó òåêóùåãî ïîëüçîâàòåëÿ";
-$MESS ['BEONO_BASKET_CATNAME'] = "Êîðçèíà";
+$MESS ['BEONO_BASKET_NAME'] = "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð° PRO";
+$MESS ['BEONO_BASKET_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ³Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['BEONO_BASKET_CATNAME'] = "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð°";
 ?>

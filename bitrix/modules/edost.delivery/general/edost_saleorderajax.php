@@ -1,7 +1,7 @@
 <?
 class CEdostModifySaleOrderAjax {
 
-	// проверка наличия в заказе доставки и наложенного платежа edost
+	// РїСЂРѕРІРµСЂРєР° РЅР°Р»РёС‡РёСЏ РІ Р·Р°РєР°Р·Рµ РґРѕСЃС‚Р°РІРєРё Рё РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р° edost
 	function CheckOrderDevileryEdostAndEdostPayCod($arOrder) {
 //		echo "<pre>".print_r($arOrder, true)."</pre>"; die();
 
@@ -18,7 +18,7 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// вызывается после обработки платежной системы при расчете заказа в DoCalculateOrder
+	// РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РїСЂРё СЂР°СЃС‡РµС‚Рµ Р·Р°РєР°Р·Р° РІ DoCalculateOrder
 	function OnSCCalculateOrderPaySystem(&$arOrder) {
 //		$_SESSION['EDOST']['help']['arOrder'] = $arOrder;
 
@@ -43,7 +43,7 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// отмена отправки письма с напоминанием об оплате заказа, если выбран наложенный платеж edost
+	// РѕС‚РјРµРЅР° РѕС‚РїСЂР°РІРєРё РїРёСЃСЊРјР° СЃ РЅР°РїРѕРјРёРЅР°РЅРёРµРј РѕР± РѕРїР»Р°С‚Рµ Р·Р°РєР°Р·Р°, РµСЃР»Рё РІС‹Р±СЂР°РЅ РЅР°Р»РѕР¶РµРЅРЅС‹Р№ РїР»Р°С‚РµР¶ edost
 	function OnSCOrderRemindSendEmail($OrderID, &$eventName, &$arFields)
 	{
 
@@ -57,7 +57,7 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// установка статуса нового заказа, если выбран наложенный платеж edost
+	// СѓСЃС‚Р°РЅРѕРІРєР° СЃС‚Р°С‚СѓСЃР° РЅРѕРІРѕРіРѕ Р·Р°РєР°Р·Р°, РµСЃР»Рё РІС‹Р±СЂР°РЅ РЅР°Р»РѕР¶РµРЅРЅС‹Р№ РїР»Р°С‚РµР¶ edost
 	function OnSCBeforeOrderAdd(&$arOrder)
 	{
 //		echo "<br><pre>".print_r($arOrder, true)."</pre>"; die();
@@ -70,12 +70,12 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// сохранение данных по выбранному через модуль упаковки ящику (после подтверждения заказа)
+	// СЃРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С… РїРѕ РІС‹Р±СЂР°РЅРЅРѕРјСѓ С‡РµСЂРµР· РјРѕРґСѓР»СЊ СѓРїР°РєРѕРІРєРё СЏС‰РёРєСѓ (РїРѕСЃР»Рµ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ Р·Р°РєР°Р·Р°)
 	function OnSCOrderOneStepComplete($ID, $arOrder)
 	{
 //		echo "<br>ID: <b>$ID</b><pre>"; print_r($arOrder); echo "</pre>"; die;
 
-		// модуль упаковки (есть и активен)
+		// РјРѕРґСѓР»СЊ СѓРїР°РєРѕРІРєРё (РµСЃС‚СЊ Рё Р°РєС‚РёРІРµРЅ)
 		if (class_exists(CEdostPackage) && class_exists(CDeliveryEDOST) && COption::GetOptionString("edost.package", "package_activate", 'Y') == 'Y') {
 			$ORDER_ID = $arOrder['ID'];
 
@@ -96,25 +96,25 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// вызывается перед расчетом доставки
+	// РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРµСЂРµРґ СЂР°СЃС‡РµС‚РѕРј РґРѕСЃС‚Р°РІРєРё
 	function OnSCOrderOneStepOrderPropsHandler(&$arResult, &$arUserResult)
 	{
 //		echo '<br><pre style="font-size: 12px">'; print_r($arResult); echo "</pre>";
 //		echo '<br><pre style="font-size: 12px">'; print_r($arUserResult); echo "</pre>";
 
         $arResult['edost']['delivery_number'] = 0;
-		$arResult['edost']['office'] = array(29, 30, 36, 9, 37, 46); // тарифы с блокировкой поля 'ADDRESS'
+		$arResult['edost']['office'] = array(29, 30, 36, 9, 37, 46); // С‚Р°СЂРёС„С‹ СЃ Р±Р»РѕРєРёСЂРѕРІРєРѕР№ РїРѕР»СЏ 'ADDRESS'
 		$arResult['edost']['delivery_edost_id'] = '';
 		$arResult['edost']['delivery_id'] = isset($arUserResult['DELIVERY_ID']) ? $arUserResult['DELIVERY_ID'] : '';
 		$arResult['edost']['error'] = isset($arResult['ERROR']) ? $arResult['ERROR'] : array();
 
-		// настройки модуля eDost
+		// РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ eDost
 		$ar = array('show_pickpoint_map', 'hide_err', 'show_msg', 'send_zip', 'hide_payment', 'sort_ascending');
 		$arResult['edost']['config'] = array();
 		foreach ($ar as $v) $arResult['edost']['config'][$v] = COption::GetOptionString('edost.delivery', $v, '');
 //		echo '<br><pre style="font-size: 12px">'; print_r($arResult['edost']); echo "</pre>";
 
-		// получение ZIP (в битрикс ошибка и при первой загрузке не заполняется поле $arUserResult["DELIVERY_LOCATION_ZIP"]) !!!
+		// РїРѕР»СѓС‡РµРЅРёРµ ZIP (РІ Р±РёС‚СЂРёРєСЃ РѕС€РёР±РєР° Рё РїСЂРё РїРµСЂРІРѕР№ Р·Р°РіСЂСѓР·РєРµ РЅРµ Р·Р°РїРѕР»РЅСЏРµС‚СЃСЏ РїРѕР»Рµ $arUserResult["DELIVERY_LOCATION_ZIP"]) !!!
 		if ($arResult['edost']['config']['send_zip'] == 'Y' && $arUserResult['DELIVERY_LOCATION_ZIP'] === false) {
 			$db_props = CSaleOrderProps::GetList(array('SORT' => 'ASC'), array('PERSON_TYPE_ID' => $arUserResult['PERSON_TYPE_ID'], 'CODE' => 'ZIP', 'IS_ZIP' => 'Y'));
 			if ($arProps = $db_props->Fetch()) {
@@ -126,12 +126,12 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// вызывается после расчета доставки
+	// РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРѕСЃР»Рµ СЂР°СЃС‡РµС‚Р° РґРѕСЃС‚Р°РІРєРё
 	function OnSCOrderOneStepDeliveryHandler(&$arResult, &$arUserResult)
 	{
 //		echo '<br>DELIVERY:<br> <pre style="font-size: 12px">'; print_r($arResult["DELIVERY"]); echo "</pre>";
 
-		// загрузка констант модуля eDost
+		// Р·Р°РіСЂСѓР·РєР° РєРѕРЅСЃС‚Р°РЅС‚ РјРѕРґСѓР»СЏ eDost
 		$arResult['edost']['sort_id'] = array(29,36,43,37,38,31,32,33,34,35);
 		$arResult['edost']['delivery_pricelist'] = false;
 		if (class_exists(CDeliveryEDOST)) {
@@ -143,10 +143,10 @@ class CEdostModifySaleOrderAjax {
 		if (empty($arResult["DELIVERY"])) return;
 
 
-		// сортировка тарифов eDost
+		// СЃРѕСЂС‚РёСЂРѕРІРєР° С‚Р°СЂРёС„РѕРІ eDost
 		if (isset($arResult["DELIVERY"]["edost"]) && class_exists(CDeliveryEDOST)) {
 			if ($arResult['edost']['config']['sort_ascending'] == 'Y') {
-				// по возрастанию
+				// РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ
 				$edost_delivery_sort = array();
 				$n = count($arResult["DELIVERY"]["edost"]["PROFILES"]);
 				for ($i = 0; $i < $n; $i++) {
@@ -168,7 +168,7 @@ class CEdostModifySaleOrderAjax {
    	         	$arResult["DELIVERY"]["edost"]["PROFILES"] = $edost_delivery_sort;
             }
             else {
-				// по кодам
+				// РїРѕ РєРѕРґР°Рј
 				$edost_delivery = $arResult["DELIVERY"]["edost"]["PROFILES"];
 				$edost_delivery_sort = array();
 				for ($i = 0; $i < count($arResult['edost']['sort_id']); $i++) {
@@ -186,7 +186,7 @@ class CEdostModifySaleOrderAjax {
 		}
 
 
-		// количество тарифов доставки
+		// РєРѕР»РёС‡РµСЃС‚РІРѕ С‚Р°СЂРёС„РѕРІ РґРѕСЃС‚Р°РІРєРё
 		foreach ($arResult["DELIVERY"] as $delivery_id => $arDelivery)
 			if ($delivery_id !== 0 && intval($delivery_id) <= 0) {
 				foreach ($arDelivery["PROFILES"] as $profile_id => $arProfile) $arResult['edost']['delivery_number']++;
@@ -196,14 +196,14 @@ class CEdostModifySaleOrderAjax {
 			}
 
 
-		// удаление тарифа "стоимость доставки будет предоставлена позже", если есть другие способы доставки
+		// СѓРґР°Р»РµРЅРёРµ С‚Р°СЂРёС„Р° "СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё Р±СѓРґРµС‚ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅР° РїРѕР·Р¶Рµ", РµСЃР»Рё РµСЃС‚СЊ РґСЂСѓРіРёРµ СЃРїРѕСЃРѕР±С‹ РґРѕСЃС‚Р°РІРєРё
 		if (isset($arResult["DELIVERY"]["edost"]["PROFILES"]["0"]) && $arResult['edost']['delivery_number'] > 1 && $arResult['edost']['config']['hide_err'] == 'Y') {
 			$arResult['edost']['delivery_number']--;
 			unset($arResult["DELIVERY"]["edost"]);
 		}
 
 
-		// поиск первой и выделенной доставки
+		// РїРѕРёСЃРє РїРµСЂРІРѕР№ Рё РІС‹РґРµР»РµРЅРЅРѕР№ РґРѕСЃС‚Р°РІРєРё
 		$delivery_id_now = array('id' => '-1', 'profile' => '-1');
 		$delivery_id_first = $delivery_id_now;
 		$delivery_id_post = $arResult['edost']['delivery_id'];
@@ -234,18 +234,18 @@ class CEdostModifySaleOrderAjax {
 //		echo '<br>delivery_id_first: '.$delivery_id_first['id'].':'.$delivery_id_first['profile'].' ('.$delivery_id_first['module_id'].')';
 
 
-		// выделить первую, если перед расчетом доставки ничего не было выделено, не найдено выделенной или магазин изменил выделение
+		// РІС‹РґРµР»РёС‚СЊ РїРµСЂРІСѓСЋ, РµСЃР»Рё РїРµСЂРµРґ СЂР°СЃС‡РµС‚РѕРј РґРѕСЃС‚Р°РІРєРё РЅРёС‡РµРіРѕ РЅРµ Р±С‹Р»Рѕ РІС‹РґРµР»РµРЅРѕ, РЅРµ РЅР°Р№РґРµРЅРѕ РІС‹РґРµР»РµРЅРЅРѕР№ РёР»Рё РјР°РіР°Р·РёРЅ РёР·РјРµРЅРёР» РІС‹РґРµР»РµРЅРёРµ
 		if ( $delivery_id_first['id'] != '-1' && ($delivery_id_post == '' || $delivery_id_now['id'] == '-1') && !($delivery_id_now['id'] == $delivery_id_first['id'] && $delivery_id_now['profile'] == $delivery_id_first['profile']) ) {
 			if (isset($arResult['edost']['error'])) $arResult["ERROR"] = $arResult['edost']['error'];
 
 	        $arResult['edost']['delivery_id_now'] = $delivery_id_first;
 
-			// сброс выделения
+			// СЃР±СЂРѕСЃ РІС‹РґРµР»РµРЅРёСЏ
 			if ($delivery_id_now['profile'] != '-1') unset($arResult["DELIVERY"][$delivery_id_now['id']]["PROFILES"][$delivery_id_now['profile']]["CHECKED"]);
 			else if ($delivery_id_now['id'] != '-1') unset($arResult["DELIVERY"][$delivery_id_now['id']]["CHECKED"]);
 			$arUserResult["DELIVERY_ID"] = '';
 
-			// выделение первой доставки и пересчет стоимости
+			// РІС‹РґРµР»РµРЅРёРµ РїРµСЂРІРѕР№ РґРѕСЃС‚Р°РІРєРё Рё РїРµСЂРµСЃС‡РµС‚ СЃС‚РѕРёРјРѕСЃС‚Рё
 			if ($delivery_id_first['profile'] != '-1') {
 				$arResult["DELIVERY"][$delivery_id_first['id']]["PROFILES"][$delivery_id_first['profile']]["CHECKED"] = 'Y';
 				$arUserResult["DELIVERY_ID"] = $delivery_id_first['id'].':'.$delivery_id_first['profile'];
@@ -258,7 +258,7 @@ class CEdostModifySaleOrderAjax {
 					"LOCATION_ZIP" => $arUserResult["DELIVERY_LOCATION_ZIP"],
 				);
 
-				// новые параметры битрикс 14
+				// РЅРѕРІС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ Р±РёС‚СЂРёРєСЃ 14
 				$ar = array('MAX_DIMENSIONS' => 'MAX_DIMENSIONS', 'DIMENSIONS' => 'ORDER_DIMENSIONS', 'ITEMS_DIMENSIONS' => 'ITEMS_DIMENSIONS', 'ITEMS' => 'BASKET_ITEMS');
 				foreach ($ar as $key => $v) if (isset($arResult[$v])) $arOrderTmpDel[$key] = $arResult[$v];
 
@@ -281,7 +281,7 @@ class CEdostModifySaleOrderAjax {
 	}
 
 
-	// вызывается после обработки платежных систем
+	// РІС‹Р·С‹РІР°РµС‚СЃСЏ РїРѕСЃР»Рµ РѕР±СЂР°Р±РѕС‚РєРё РїР»Р°С‚РµР¶РЅС‹С… СЃРёСЃС‚РµРј
 	function OnSCOrderOneStepPaySystemHandler(&$arResult, &$arUserResult)
 	{
 //		echo '<br><b>DELIVERY:</b><pre style="font-size: 12px">'; print_r($arResult["DELIVERY"]); echo "</pre>"; echo '<br><b>PAY_SYSTEM:</b><pre style="font-size: 12px">'; print_r($arResult["PAY_SYSTEM"]); echo "</pre>";
@@ -289,20 +289,20 @@ class CEdostModifySaleOrderAjax {
 
 		$arResult['edost']['javascript'] = '';
 
-		// warning (предупреждения модуля edost)
+		// warning (РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёСЏ РјРѕРґСѓР»СЏ edost)
 		if (class_exists(CDeliveryEDOST)) {
 			$warning = CDeliveryEDOST::GetEdostWarning();
 			if ($warning != '') {
 				$arResult['edost']['warning'] = '<span id="edost_warning" style="color: #FF0000; font-weight: bold;">'.$warning.'</span>';
 
-				// вывод ошибки при подтверждении заказа, если перед оформлением была выбрана почта (наземная) и есть warning по индексу
+				// РІС‹РІРѕРґ РѕС€РёР±РєРё РїСЂРё РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРё Р·Р°РєР°Р·Р°, РµСЃР»Рё РїРµСЂРµРґ РѕС„РѕСЂРјР»РµРЅРёРµРј Р±С‹Р»Р° РІС‹Р±СЂР°РЅР° РїРѕС‡С‚Р° (РЅР°Р·РµРјРЅР°СЏ) Рё РµСЃС‚СЊ warning РїРѕ РёРЅРґРµРєСЃСѓ
 				if ($arUserResult["CONFIRM_ORDER"] == 'Y')
 					if ($arResult['edost']['delivery_id'] == 'edost:3' || $arResult['edost']['delivery_id'] == 'edost:4') $arResult["ERROR"][] = $warning;
 			}
 		}
 
 
-		// поле ADDRESS (для сохранения данных по выбранному пункту выдачи)
+		// РїРѕР»Рµ ADDRESS (РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РґР°РЅРЅС‹С… РїРѕ РІС‹Р±СЂР°РЅРЅРѕРјСѓ РїСѓРЅРєС‚Сѓ РІС‹РґР°С‡Рё)
 		$address_id = -1;
 		$address = '';
 		$address_type = '';
@@ -319,7 +319,7 @@ class CEdostModifySaleOrderAjax {
 		if ($address_id != -1) $arResult['edost']['javascript'] .= '<input type="hidden" value="ORDER_PROP_'.$address_id.'" id="address_input">';
 
 
-		// загрузка выбранного офиса из POST
+		// Р·Р°РіСЂСѓР·РєР° РІС‹Р±СЂР°РЅРЅРѕРіРѕ РѕС„РёСЃР° РёР· POST
 		$edost_office = array(-1, -1);
 		if (isset($_REQUEST['edost_office']) && $_REQUEST['edost_office'] != '') {
 			$r = explode('-', substr($_REQUEST['edost_office'], 0, 5));
@@ -337,13 +337,13 @@ class CEdostModifySaleOrderAjax {
 //				echo '<br><pre style="font-size: 12px">'; print_r($edost_tariff); echo "</pre>";
 //				echo '<br><pre style="font-size: 12px">'; print_r($edost_tariff['office']); echo "</pre>";
 
-				// доставка оплачивается магазину (включается в итого)
+				// РґРѕСЃС‚Р°РІРєР° РѕРїР»Р°С‡РёРІР°РµС‚СЃСЏ РјР°РіР°Р·РёРЅСѓ (РІРєР»СЋС‡Р°РµС‚СЃСЏ РІ РёС‚РѕРіРѕ)
 				$price = $edost_tariff['price'];
 				if ($profile_id == 0) $price = '';
 				else if ($price == 0) $price = GetMessage('SALE_DH_EDOST_FREE');
 				else $price = SaleFormatCurrency(roundEx(CCurrencyRates::ConvertCurrency($edost_tariff['price'], $base_currency, $arResult['BASE_LANG_CURRENCY']), SALE_VALUE_PRECISION), $arResult['BASE_LANG_CURRENCY']);
 
-				// доставка оплачивается самостоятельно при получении (НЕ включается в итого)
+				// РґРѕСЃС‚Р°РІРєР° РѕРїР»Р°С‡РёРІР°РµС‚СЃСЏ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ РїСЂРё РїРѕР»СѓС‡РµРЅРёРё (РќР• РІРєР»СЋС‡Р°РµС‚СЃСЏ РІ РёС‚РѕРіРѕ)
                 if ($edost_tariff['priceinfo'] > 0) {
 					$price_info = SaleFormatCurrency(roundEx(CCurrencyRates::ConvertCurrency($edost_tariff['priceinfo'], $base_currency, $arResult['BASE_LANG_CURRENCY']), SALE_VALUE_PRECISION), $arResult['BASE_LANG_CURRENCY']);
 					$arResult['DELIVERY']['edost']['PROFILES'][$profile_id]['priceinfo'] = $price_info;
@@ -359,7 +359,7 @@ class CEdostModifySaleOrderAjax {
 
 				$arResult['DELIVERY']['edost']['PROFILES'][$profile_id]['price'] = $price;
 
-                // срок доставки
+                // СЃСЂРѕРє РґРѕСЃС‚Р°РІРєРё
 				$arResult['DELIVERY']['edost']['PROFILES'][$profile_id]['day'] = $edost_tariff['day'];
 
 
@@ -401,7 +401,7 @@ class CEdostModifySaleOrderAjax {
 				}
 
 
-				// офисы
+				// РѕС„РёСЃС‹
 				$office_number = isset($edost_tariff['office']) ? count($edost_tariff['office']) : 0;
 				if ($office_number > 0) {
 					if (isset($_SESSION['EDOST']['address'][$id]) && isset($_SESSION['EDOST']['delivery_edost_id']) && $_SESSION['EDOST']['delivery_edost_id'] != $id) $office_address = $_SESSION['EDOST']['address'][$id];
@@ -412,8 +412,8 @@ class CEdostModifySaleOrderAjax {
 					else if ($id == 46) $office_head = GetMessage('SALE_DH_EDOST_OFFICE_HEAD_DPD');
 					else $office_head = GetMessage('SALE_DH_EDOST_OFFICE_HEAD');
 
-					if (in_array($id, array(36, 9, 37, 46))) $s = GetMessage('SALE_DH_EDOST_OFFICE_TITLE3'); // до пункта выдачи
-					else $s = GetMessage('SALE_DH_EDOST_OFFICE_TITLE2'); // до склада
+					if (in_array($id, array(36, 9, 37, 46))) $s = GetMessage('SALE_DH_EDOST_OFFICE_TITLE3'); // РґРѕ РїСѓРЅРєС‚Р° РІС‹РґР°С‡Рё
+					else $s = GetMessage('SALE_DH_EDOST_OFFICE_TITLE2'); // РґРѕ СЃРєР»Р°РґР°
 					$s = '<td>'.$s.':</td><td style="padding-left: 5px;">';
 
 					if ($office_number != 1) $s .= '<select id="edost_office_'.$profile_id.'" onchange="edost_SetOffice('.$profile_id.');">';
@@ -449,7 +449,7 @@ class CEdostModifySaleOrderAjax {
 						$_SESSION['EDOST']['address'][$id] = $office_data_now;
 					}
 
-					// ссылка на карту
+					// СЃСЃС‹Р»РєР° РЅР° РєР°СЂС‚Сѓ
 					if (isset($edost_tariff['office'][0]['id']) && $edost_tariff['office'][0]['id'] != '')
 						$s .= '<td style="padding-left: 10px;"><a href="#" style="cursor: pointer; text-decoration: none; font-size: 11px;" onclick="edost_OpenMap('.$profile_id.'); return false;" >'.GetMessage("SALE_DH_EDOST_OFFICE_MAP").'</a></td>';
 
@@ -464,7 +464,7 @@ class CEdostModifySaleOrderAjax {
 			}
 
 
-            // сброс выборанной доставки и обнуление ее стоимости в заказе (режим прайслиста, без возможности выбора доставки)
+            // СЃР±СЂРѕСЃ РІС‹Р±РѕСЂР°РЅРЅРѕР№ РґРѕСЃС‚Р°РІРєРё Рё РѕР±РЅСѓР»РµРЅРёРµ РµРµ СЃС‚РѕРёРјРѕСЃС‚Рё РІ Р·Р°РєР°Р·Рµ (СЂРµР¶РёРј РїСЂР°Р№СЃР»РёСЃС‚Р°, Р±РµР· РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РІС‹Р±РѕСЂР° РґРѕСЃС‚Р°РІРєРё)
 			if ($arResult['edost']['delivery_pricelist']) {
 				$arUserResult['DELIVERY_ID'] = '';
 
@@ -479,7 +479,7 @@ class CEdostModifySaleOrderAjax {
 			}
 
 
-			// изменение названия тарифа "стоимость доставки будет предоставлена позже" и вывод ошибки
+			// РёР·РјРµРЅРµРЅРёРµ РЅР°Р·РІР°РЅРёСЏ С‚Р°СЂРёС„Р° "СЃС‚РѕРёРјРѕСЃС‚СЊ РґРѕСЃС‚Р°РІРєРё Р±СѓРґРµС‚ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅР° РїРѕР·Р¶Рµ" Рё РІС‹РІРѕРґ РѕС€РёР±РєРё
 			if (isset($arResult['DELIVERY']['edost']['PROFILES'][0])) {
 				$edost_tariff = CDeliveryEDOST::GetEdostTariff(0);
 
@@ -493,7 +493,7 @@ class CEdostModifySaleOrderAjax {
 
 //		echo '<br><pre style="font-size: 12px">'; print_r($arResult["DELIVERY"]); echo "</pre>";
 
-        // сохранение и восстановление адреса из сессии
+        // СЃРѕС…СЂР°РЅРµРЅРёРµ Рё РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ Р°РґСЂРµСЃР° РёР· СЃРµСЃСЃРёРё
         $id_last = (isset($_SESSION['EDOST']['delivery_edost_id']) && $_SESSION['EDOST']['delivery_edost_id'] > 0) ? $_SESSION['EDOST']['delivery_edost_id'] : 0;
         $id = (isset($arResult['edost']['delivery_edost_id']) && $arResult['edost']['delivery_edost_id'] > 0) ? $arResult['edost']['delivery_edost_id'] : 0;
 
@@ -507,30 +507,30 @@ class CEdostModifySaleOrderAjax {
 		}
 		else $_SESSION['EDOST']['address'][0] = $address;
 
-		// сохранение нового адреса в поле ADDRESS
+		// СЃРѕС…СЂР°РЅРµРЅРёРµ РЅРѕРІРѕРіРѕ Р°РґСЂРµСЃР° РІ РїРѕР»Рµ ADDRESS
 		if ($address_id != -1 && isset($edost_address)) {
 			$arResult['ORDER_PROP']['USER_PROPS_Y'][$address_id]['VALUE'] = $edost_address;
 			$address = $edost_address;
 		}
 
 
-		$_SESSION['EDOST']['delivery_edost_id'] = $arResult['edost']['delivery_edost_id']; // активная служба доставки
-		$_SESSION['EDOST']['location'] = $arUserResult['DELIVERY_LOCATION']; // текущее местоположение доставки
+		$_SESSION['EDOST']['delivery_edost_id'] = $arResult['edost']['delivery_edost_id']; // Р°РєС‚РёРІРЅР°СЏ СЃР»СѓР¶Р±Р° РґРѕСЃС‚Р°РІРєРё
+		$_SESSION['EDOST']['location'] = $arUserResult['DELIVERY_LOCATION']; // С‚РµРєСѓС‰РµРµ РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёРµ РґРѕСЃС‚Р°РІРєРё
 
 
-		// запретить выбор доставки, если есть только одна служба
+		// Р·Р°РїСЂРµС‚РёС‚СЊ РІС‹Р±РѕСЂ РґРѕСЃС‚Р°РІРєРё, РµСЃР»Рё РµСЃС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅР° СЃР»СѓР¶Р±Р°
 		if ($arResult['edost']['delivery_number'] == 1) $arResult['edost']['delivery_pricelist'] = true;
 
 
-		// добавление наценок наложенного платежа
+		// РґРѕР±Р°РІР»РµРЅРёРµ РЅР°С†РµРЅРѕРє РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р°
 		foreach ($arResult['PAY_SYSTEM'] as $key => $arPaySystem) {
-			// наложенный платеж edost (название обработчика заканчивается на 'edostpaycod')
+			// РЅР°Р»РѕР¶РµРЅРЅС‹Р№ РїР»Р°С‚РµР¶ edost (РЅР°Р·РІР°РЅРёРµ РѕР±СЂР°Р±РѕС‚С‡РёРєР° Р·Р°РєР°РЅС‡РёРІР°РµС‚СЃСЏ РЅР° 'edostpaycod')
 			if (substr($arPaySystem['PSA_ACTION_FILE'], -11) != 'edostpaycod') continue;
 
 			$id_delivery_edost = (substr($arUserResult['DELIVERY_ID'], 0, 6) == 'edost:' ? substr($arUserResult['DELIVERY_ID'], 6, 3) : 0);
 			$edost_tariff = ($id_delivery_edost > 0 && class_exists(CDeliveryEDOST) ? CDeliveryEDOST::GetEdostTariff($id_delivery_edost) : '');
 
-			// удаление наложенного платежа, если он недоступен для выбранного способа доставки
+			// СѓРґР°Р»РµРЅРёРµ РЅР°Р»РѕР¶РµРЅРЅРѕРіРѕ РїР»Р°С‚РµР¶Р°, РµСЃР»Рё РѕРЅ РЅРµРґРѕСЃС‚СѓРїРµРЅ РґР»СЏ РІС‹Р±СЂР°РЅРЅРѕРіРѕ СЃРїРѕСЃРѕР±Р° РґРѕСЃС‚Р°РІРєРё
 			if ($id_delivery_edost == 0 || !isset($edost_tariff['pricecash']) || $edost_tariff['pricecash'] == -1) {
 				unset($arResult['PAY_SYSTEM'][$key]);
 				break;
@@ -556,7 +556,7 @@ class CEdostModifySaleOrderAjax {
 				"<b>".SaleFormatCurrency(roundEx(CCurrencyRates::ConvertCurrency($edost_tariff['transfer'], $base_currency, $arResult["BASE_LANG_CURRENCY"]), SALE_VALUE_PRECISION), $arResult["BASE_LANG_CURRENCY"])."</b></font>".
 				"<br>".GetMessage("SALE_DELIV_EDOST_NALOZ_TOTAL")."<b>".SaleFormatCurrency(roundEx(CCurrencyRates::ConvertCurrency($edost_tariff['transfer'] + $shipping_price, $base_currency, $arResult["BASE_LANG_CURRENCY"]), SALE_VALUE_PRECISION), $arResult["BASE_LANG_CURRENCY"])."</b>";
 
-			// добавление наценки за наложенный платеж (в стоимоть доставки и итоговую стоимость заказа)
+			// РґРѕР±Р°РІР»РµРЅРёРµ РЅР°С†РµРЅРєРё Р·Р° РЅР°Р»РѕР¶РµРЅРЅС‹Р№ РїР»Р°С‚РµР¶ (РІ СЃС‚РѕРёРјРѕС‚СЊ РґРѕСЃС‚Р°РІРєРё Рё РёС‚РѕРіРѕРІСѓСЋ СЃС‚РѕРёРјРѕСЃС‚СЊ Р·Р°РєР°Р·Р°)
 			if ($arPaySystem['CHECKED'] == 'Y') {
 				$arResult['DELIVERY_PRICE'] += roundEx(CCurrencyRates::ConvertCurrency($shipping_price, $base_currency, $arResult['BASE_LANG_CURRENCY']), SALE_VALUE_PRECISION);
 				$arResult['DELIVERY_PRICE_FORMATED'] = SaleFormatCurrency($arResult['DELIVERY_PRICE'], $arResult['BASE_LANG_CURRENCY']);
@@ -566,7 +566,7 @@ class CEdostModifySaleOrderAjax {
 		}
 
 
-		// выделение первого способа оплаты, если нет ни одного выделенного
+		// РІС‹РґРµР»РµРЅРёРµ РїРµСЂРІРѕРіРѕ СЃРїРѕСЃРѕР±Р° РѕРїР»Р°С‚С‹, РµСЃР»Рё РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ РІС‹РґРµР»РµРЅРЅРѕРіРѕ
 		$id = -1;
 		foreach ($arResult['PAY_SYSTEM'] as $key => $arPaySystem) {
 			if ($id == -1) $id = $key;
@@ -581,13 +581,13 @@ class CEdostModifySaleOrderAjax {
 		}
 
 
-		// удалить все способы оплаты, если нет способов доставки
+		// СѓРґР°Р»РёС‚СЊ РІСЃРµ СЃРїРѕСЃРѕР±С‹ РѕРїР»Р°С‚С‹, РµСЃР»Рё РЅРµС‚ СЃРїРѕСЃРѕР±РѕРІ РґРѕСЃС‚Р°РІРєРё
 		if ($arResult['edost']['config']['hide_payment'] == 'Y' && $arResult['edost']['delivery_number'] <= 0) $arResult['PAY_SYSTEM'] = array();
 
 
 
 
-		// javascript - офисы
+		// javascript - РѕС„РёСЃС‹
 		if ($address_id != -1) $arResult['edost']['javascript'] .= '
 		<input type="hidden" value="" id="edost_office" name="edost_office">
 
@@ -664,7 +664,7 @@ class CEdostModifySaleOrderAjax {
 		</script>';
 
 
-		// javascript - блокировка поля ADDRESS для PickPoint и офисов
+		// javascript - Р±Р»РѕРєРёСЂРѕРІРєР° РїРѕР»СЏ ADDRESS РґР»СЏ PickPoint Рё РѕС„РёСЃРѕРІ
 		if ($address_id != -1) $arResult['edost']['javascript'] .= '
 		<script language=javascript>
 			var E = document.getElementById(document.getElementById("address_input").value);

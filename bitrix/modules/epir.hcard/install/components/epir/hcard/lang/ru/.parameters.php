@@ -1,11 +1,11 @@
 <?
-$MESS ['EPIR_PARAM_CATEG'] = "Êàòåãîðèÿ";
-$MESS ['EPIR_PARAM_ORGNAME'] = "Íàçâàíèå îðãàíèçàöèè";
-$MESS ['EPIR_PARAM_GOROD'] = "Ãîðîä";
-$MESS ['EPIR_PARAM_ADRES'] = "Àäðåñ";
-$MESS ['EPIR_PARAM_TEL'] = "Òåëåôîíû";
-$MESS ['EPIR_PARAM_MAIL'] = "Ïî÷òîâûå àäðåñà";
-$MESS ['EPIR_PARAM_WORK'] = "Ðàáî÷åå âðåìÿ";
-$MESS ['EPIR_PARAM_WORKDEMO'] = "ïí-ïò ñ 09:00 äî 18:00";
-$MESS ['EPIR_PARAM_URL'] = "URL Ñàéòà";
+$MESS ['EPIR_PARAM_CATEG'] = "ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ";
+$MESS ['EPIR_PARAM_ORGNAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸";
+$MESS ['EPIR_PARAM_GOROD'] = "Ð“Ð¾Ñ€Ð¾Ð´";
+$MESS ['EPIR_PARAM_ADRES'] = "ÐÐ´Ñ€ÐµÑ";
+$MESS ['EPIR_PARAM_TEL'] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½Ñ‹";
+$MESS ['EPIR_PARAM_MAIL'] = "ÐŸÐ¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ Ð°Ð´Ñ€ÐµÑÐ°";
+$MESS ['EPIR_PARAM_WORK'] = "Ð Ð°Ð±Ð¾Ñ‡ÐµÐµ Ð²Ñ€ÐµÐ¼Ñ";
+$MESS ['EPIR_PARAM_WORKDEMO'] = "Ð¿Ð½-Ð¿Ñ‚ Ñ 09:00 Ð´Ð¾ 18:00";
+$MESS ['EPIR_PARAM_URL'] = "URL Ð¡Ð°Ð¹Ñ‚Ð°";
  ?>

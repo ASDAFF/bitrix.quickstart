@@ -1,5 +1,5 @@
 <?
-$MESS["IMYIE_MODULE_INSTALL_NAME"] = "Àðõèâ íîâîñòåé";
-$MESS["IMYIE_MODULE_INSTALL_DESCRIPTION"] = "Äàííûé ìîäóëü äîáàâëÿåò íà âàø ñàéò êîìïîíåíò àðõèâà íîâîñòåé.";
-$MESS["IMYIE_MODULE_INSTALL_COPMPANY_NAME"] = "Ãðåáíåâ Àëåêñåé";
+$MESS["IMYIE_MODULE_INSTALL_NAME"] = "ÐÑ€Ñ…Ð¸Ð² Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹";
+$MESS["IMYIE_MODULE_INSTALL_DESCRIPTION"] = "Ð”Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ Ð½Ð° Ð²Ð°Ñˆ ÑÐ°Ð¹Ñ‚ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð°Ñ€Ñ…Ð¸Ð²Ð° Ð½Ð¾Ð²Ð¾ÑÑ‚ÐµÐ¹.";
+$MESS["IMYIE_MODULE_INSTALL_COPMPANY_NAME"] = "Ð“Ñ€ÐµÐ±Ð½ÐµÐ² ÐÐ»ÐµÐºÑÐµÐ¹";
 ?>

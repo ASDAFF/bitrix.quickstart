@@ -37,4 +37,25 @@ class GetBasket
         return $result;
     }
 
+    function getBasketSum()
+    {
+        $sum = 0;
+        $items = self::getBasketData();
+        foreach ($items as $arItem) {
+            $sum += $arItem["PRICE"] * $arItem["QUANTITY"];
+        }
+        return $sum;
+    }
+
+    function btnBasketName($id, $ar, $sale = false)
+    {
+        $res = array("Купить", "Товар в корзине");
+        if ($sale) $res[0] = "Купить по акции";
+        if ($ar[$id]) {
+            $res = array_reverse($res);
+            $res["added"] = "btn-second";
+        }
+        return $res;
+    }
+
 }

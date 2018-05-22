@@ -1,0 +1,4 @@
+<?
+$MESS['RSQB.MODULE_NAME'] = 'Hurry Up';
+$MESS['RSQB.MODULE_DESCRIPTION'] = 'Installation Wizard';
+$MESS['RSQB.MODULE_DEVELOPER_NAME'] = 'ALFA Systems';

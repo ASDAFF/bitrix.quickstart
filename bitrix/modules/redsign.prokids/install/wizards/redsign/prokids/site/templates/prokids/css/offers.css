@@ -1,0 +1,94 @@
+.propvision1 .offer_prop{
+	position:relative;
+	margin-bottom:3px;
+}
+.propvision1 .offer_prop .offer_prop-name{
+	margin-right:5px;
+}
+.propvision1 .offer_prop .div_select{
+	position:relative;
+	display:inline-block;
+}
+.propvision1 .offer_prop .icon{
+	width:8px;
+	height:4px;
+	margin-left:5px;
+	margin-bottom:2px;
+	background-position:0px 0px;
+}
+.propvision1 .offer_prop .div_selected{
+	display:inline-block;
+	cursor:pointer;
+}
+.propvision1 .offer_prop .div_selected span{
+	color:#214496;
+	border-bottom:1px dashed #000;
+}
+.propvision1 .offer_prop.color .div_selected span{ /* color */
+	border:none;
+}
+.propvision1 .offer_prop .div_selected span:hover{
+	border-bottom:1px dashed #FFF;
+}
+.propvision1 .offer_prop.closed .div_options{
+	display:none;
+}
+.propvision1 .offer_prop .div_options{
+	position:absolute;
+	left:-14px;
+	top:100%;
+	min-width:50px;
+	background-color:#FFF;
+	border:1px solid #F2F2F2;
+	z-index:100;
+}
+.propvision1 .offer_prop.color .div_options{ /* color */
+	min-width:0px;
+	left:-8px;
+}
+.propvision1 .offer_prop .div_options .div_option{
+	min-width:50px;
+	padding:5px 14px;
+	color:#214496;
+	cursor:pointer;
+	white-space:nowrap;
+}
+.propvision1 .offer_prop.color .div_options .div_option{ /* color */
+	min-width:0px;
+	padding:5px 7px;
+}
+.propvision1 .offer_prop .div_options .div_option:hover{
+	color:#FFF;
+	background-color:#EE8131;
+}
+.propvision1 .offer_prop.color .div_selected span,
+.propvision1 .offer_prop.color .div_options .div_option span{ /* color */
+	display:inline-block;
+	width:15px;
+	height:15px;
+	font-size:0;
+	vertical-align:middle;
+	border:1px solid #eeeeee;
+}
+.propvision1 .offer_prop .div_options .div_option:hover span{
+	text-decoration:none;
+}
+.propvision1 .offer_prop .div_options .div_option.selected span{
+	text-decoration:underline;
+}
+.propvision1 .offer_prop.color .div_options .div_option.selected span{ /* color */
+	border:1px solid #ff0000;
+}
+.prop_option_line_through .propvision1 .offer_prop .div_options .div_option.disabled,
+.prop_option_line_through .propvision1 .offer_prop .div_options .div_option.disabled:hover{
+	color:#B3B3B3;
+	cursor:default;
+	text-decoration:line-through;
+	background-color:#FFF;
+}
+.prop_option_line_through .propvision1 .offer_prop.color .div_options .div_option.disabled, /* color */
+.prop_option_line_through .propvision1 .offer_prop.color .div_options .div_option.disabled:hover, /* color */
+.prop_option_hide .propvision1 .offer_prop .div_options .div_option.disabled,
+.prop_option_hide .propvision1 .offer_prop .div_options .div_option.disabled:hover{
+	display:none;
+}

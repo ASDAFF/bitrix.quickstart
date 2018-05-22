@@ -1,0 +1,15 @@
+.info td{
+	padding:10px 35px 10px 0px;
+	border-bottom:1px solid #F2F2F2;
+}
+.info td.first{
+	padding-top:0px;
+}
+
+.info_email {
+	padding-right: 0px !important;
+}
+
+.centering .info {
+	width: 50px; /*я не знаю почему 50*/
+}

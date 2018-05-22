@@ -1,0 +1,367 @@
+.around_filtren{
+	position:relative;
+}
+.around_filtren .filterfixed.fixed{
+	position:fixed;
+	top:0px;
+	width:251px;
+}
+.around_filtren .filterfixed.stop{
+	position:relative;
+}
+
+.filtren{
+	position:relative;
+	background-color:#fff;
+	border-top:1px solid #F3F3F3;
+	border-bottom:1px solid #F3F3F3;
+	border-left:1px solid #F3F3F3;
+}
+.filtren .title,
+.filtren .filtercompare{
+	display:none;
+	margin-bottom:5px;
+}
+.filtren .title a:hover{
+	text-decoration:none;
+}
+.filtren .title a span{
+	border-bottom:1px dashed #214496;
+}
+.filtren.opened .title span.show,
+.filtren .title span.hide{
+	display:none;
+}
+.filtren .title span.show,
+.filtren.opened .title span.hide{
+	display:inline;
+}
+.filtren .filtercompare{
+	float:right;
+}
+.filtren .showchild{
+	display:block;
+	padding:7px 20px 7px 7px;
+	color:#666666;
+	text-transform:uppercase;
+	background-color:#F3F3F3;
+}
+.filtren .showchild:hover{
+	color:#fff;
+	background-color:#EE8131;
+}
+.filtren .showchild .icon{
+	width:8px;
+	height:4px;
+	margin-bottom:2px;
+	margin-right:5px;
+	background-position:0px 0px;/*0px -639px*/
+}
+.filtren .showchild:hover .icon{
+	background-position:0px -8px;
+}
+.filtren .closed .showchild .icon{
+	width:4px;
+	height:8px;
+	margin-right:7px;
+	margin-left:2px;
+	background-position:0px -639px;
+}
+.filtren .closed .showchild:hover .icon{
+	width:4px;
+	height:8px;
+	background-position:-16px -639px;
+}
+.filtren .showchild .hint {
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	padding: 0 6px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+.filtren .showchild:hover .hint {
+	border-color: #fff;
+}
+.filtren .showchild .hint div {
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	display: none;
+	width: 200px;
+	padding: 5px 8px;
+	color: #484848;
+	font-size: 12px;
+	text-transform: none;
+	background-color: rgba(243,243,243,0.8);
+	border: 1px solid #ccc;
+	z-index: 101;
+}
+.filtren .showchild .hint:hover div {
+	display: block;
+}
+
+.filtren .lvl1.closed > ul{
+	display:none;
+}
+.filtren .lvl1 ul{
+	padding:8px 4px;
+}
+/* CHECKBOXES_WITH_PICTURES & CHECKBOXES_WITH_PICTURES_AND_LABELS */
+.filtren .cwp .lvl2,
+.filtren .cwp .lvl2 div,
+.filtren .lvl2 div label,
+.filtren .lvl2 div label span{
+	display:inline-block;
+}
+.filtren .cwp .lvl2 div label,
+.filtren .cwpal .lvl2 div label,
+.filtren .dd .lvl2 div label{
+	padding:5px 7px;
+	cursor:pointer;
+}
+.filtren ul li.lvl1 ul.property div.disabled label{
+	cursor: default;
+}
+.filtren .lvl2 div.disabled label.pic span{
+	position: relative;
+}
+.filtren.cross .lvl2 div.disabled label.pic span:before{
+	content: '';
+	position: absolute;
+	display: block;
+	width: auto;
+	height: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0) url('img/cross.svg') no-repeat;
+	background-size: 100% 100%;
+}
+.filtren.opacity .lvl2 div.disabled label.pic span {
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	-moz-opacity: .2;
+	-khtml-opacity: .2;
+	opacity: .2;
+}
+.filtren.hide .cwp .lvl2 div.disabled,
+.filtren.hide .cwpal .lvl2 div.disabled,
+.filtren.hide .wpal .lvl2 div.disabled {
+	display: none;
+}
+.filtren .lvl2 div label.pic span.nopic {
+	background-image: url('img/all.jpg');
+}
+.filtren .lvl2 div label.pic:hover{
+	background-color:#EE8131;
+}
+.filtren .lvl2 div.disabled label.pic:hover{
+	background:none;
+}
+.filtren .lvl2 div label.pic span{
+	width:21px;
+	height:21px;
+	font-size:0;
+	vertical-align:middle;
+	border:1px solid #EEE;
+}
+.filtren .lvl2 .active label.pic span{
+	border:1px solid #F00;
+}
+/* CHECKBOXES_WITH_PICTURES_AND_LABELS */
+.filtren .cwpal .lvl2 div label.pic,
+.filtren .dd .lvl2 div label.pic{
+	float:left;
+	margin-right:5px;
+}
+.filtren .cwpal .lvl2 div label.name,
+.filtren .dd .lvl2 div label.name,
+.filtren .dd.wpal .lvl2.selected div label.name{
+	display: block;
+	padding: 7px 7px;
+}
+.filtren .lvl2.selected div label.name {
+	padding: 0px;
+}
+/* DROPDOWN */
+.filtren .dd li.dropdown {
+	position: relative;
+}
+.filtren .dd .selected label .icon {
+	width: 8px;
+	height: 4px;
+	margin-left: 6px;
+	margin-bottom: 2px;
+	background-position: 0px 0px;
+}
+.filtren .dd .selected label {
+	cursor: pointer;
+}
+.filtren .dd ul.dropdown {
+	position: absolute;
+	display: none;
+	max-width: 250px;
+	left: -7px;
+	top: 20px;
+	padding: 0px 10px 0px 0px;
+	background-color: #FFF;
+	border: 1px solid #F2F2F2;
+	z-index: 101;
+}
+.filtren .dd.open ul.dropdown {
+	display: block;
+}
+.filtren .dd ul.dropdown label{
+	display: block;
+	padding: 5px 14px;
+	cursor: pointer;
+}
+.filtren .dd.wpal ul.dropdown label.pic {
+	padding: 5px 7px;
+}
+.filtren .dd.wpal ul.dropdown label.name {
+	white-space: nowrap;
+	margin-left: 37px;
+	padding: 7px 7px;
+}
+.filtren .dd.wpal ul.dropdown {
+	left: -1px;
+	top: 33px;
+}
+.filtren .c .inputs {
+	text-align: center;
+}
+.filtren .c .calendar {
+	width: 72px;
+	margin-left: 5px;
+	padding: 0px;
+	text-align: center;
+	border: 1px solid #F2F2F2;
+	box-shadow: none;
+}
+.filtren .c .calendar::-webkit-input-placeholder {color:#000;font-size:13px;}
+.filtren .c .calendar::-moz-placeholder          {color:#000;font-size:13px;}/* Firefox 19+ */
+.filtren .c .calendar:-moz-placeholder           {color:#000;font-size:13px;}/* Firefox 18- */
+.filtren .c .calendar:-ms-input-placeholder      {color:#000;font-size:13px;}
+.filtren .c .calendar-icon {
+	position: relative;
+	top: -1px;
+}
+
+.filtren .lvl2 label{
+	display:block;
+	color:#214496;
+	padding:1px 0px;
+}
+.filtren .lvl2 .disabled label{
+	color:#C9C9C9;
+	cursor:default;
+}
+.filtren .lvl2 label:hover,
+.filtren .lvl2 label.name:hover span{
+	text-decoration:underline;
+}
+.filtren .lvl2 .disabled label.name:hover span,
+.filtren .lvl2 .disabled label:hover{
+	text-decoration:none;
+}
+.filtren .pricegroup .lvl2 label{
+	width:50%;
+	float:left;
+}
+.filtren .number .inputs{
+	text-align:center;
+}
+.filtren .number .min,
+.filtren .number .max{
+	margin-left:5px;
+	padding:0px;
+	text-align:center;
+	border:1px solid #F2F2F2;
+	box-shadow:none;
+}
+
+.filtren .around_f_search{
+	margin-bottom:5px;
+	padding:4px 4px 3px 4px;
+	border:1px solid #F2F2F2;
+}
+.filtren .around_f_search .f_search{
+	width:100%;
+	padding:0px;
+	border:none;
+	box-shadow:none;
+}
+.filtren .around_f_search .f_search:focus{
+	border:none;
+}
+
+.filtren .buttons{
+	padding:10px 0px;
+	text-align:center;
+}
+.filtren .separator{
+	padding:0px 8px;
+}
+
+.filtren .modef{
+	left:243px;
+	min-width:300px;
+	position:absolute;
+	top:-5px;
+	white-space:nowrap;
+	z-index:210;
+}
+.filtren .modef .arrow{
+	padding:6px 7px 6px 0px;
+	background-image:url('img/modef_bg.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.filtren .modef .data{
+	padding:6px 10px;
+	color:#fff;
+	background-color:#899cc7;
+}
+.filtren .modef .data a{
+	color:#fff;
+	text-decoration:underline;
+}
+.filtren .modef .data a:hover{
+	text-decoration:none;
+}
+
+.filtren .f_jscrollpane{
+	width:100%;
+	height:190px;
+	overflow:auto;
+}
+
+@media screen and (max-width:875px){
+	body.adaptive .filtren .lvl2 label{
+		padding:3px 0px;
+	}
+	body.adaptive .filtren .showchild .note {
+		display: none;
+	}
+}
+@media screen and (max-width:605px){
+	body.adaptive .filtren{
+		border:none;
+	}
+	body.adaptive .filtren .title,
+	body.adaptive .filtren .filtercompare{
+		display:block;
+	}
+	body.adaptive .filtren .body{
+		display:none;
+		margin-top:5px;
+	}
+	body.adaptive .filtren.opened .body{
+		display:block;
+	}
+	body.adaptive .filtren li.lvl1{
+		width:100%;
+	}
+}

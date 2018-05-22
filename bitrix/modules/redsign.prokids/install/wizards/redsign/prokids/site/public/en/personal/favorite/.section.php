@@ -1,0 +1,2 @@
+<?
+$sSectionName = 'Liked goods';

@@ -1,0 +1,126 @@
+.body .locationbig input[type="radio"] + label:before,
+.body .locationbig input[type="radio"] + label > .input_ie,
+.fancybox-wrap .locationbig input[type="radio"] + label:before,
+.fancybox-wrap .locationbig input[type="radio"] + label > .input_ie{
+	width:13px;
+	height:9px;
+	margin-right:8px;
+	margin-bottom:1px;
+}
+
+.body .locationbig input[type="radio"] + label:before,
+.body .locationbig input[type="radio"] + label > .input_ie,
+.fancybox-wrap .locationbig input[type="radio"] + label:before,
+.fancybox-wrap .locationbig input[type="radio"] + label > .input_ie{
+	background-position:-100px -100px;
+}
+.body .locationbig input[type="radio"]:checked + label:before,
+.fancybox-wrap .locationbig input[type="radio"]:checked + label:before{
+	background-position:0px -131px;
+}
+
+.locationbig .title{
+	margin-bottom:15px;
+	text-transform:uppercase;
+}
+.locationbig .items{
+	margin-bottom:20px;
+}
+.fancybox-inner .items{
+	max-height:200px;
+	overflow:auto;
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+.locationbig .item{
+	display:block;
+	float:left;
+	width:14%;
+	padding-right:20px;
+}
+.fancybox-inner .locationbig .item{
+	width:20%;
+}
+.locationbig .item label,
+.locationbig .ajaxlocation label{
+	color:#214496;
+}
+.locationbig .item label:hover,
+.locationbig .ajaxlocation label:hover{
+	text-decoration:underline;
+}
+
+.locationbig .ajaxlocation .line{
+	width:100%;
+	height:1px;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-color:#F2F2F2;
+}
+.fancybox-inner .locationbig .ajaxlocation .line{
+	position:relative;
+	left:-20px;
+	padding:0px 20px;
+}
+.locationbig .ajaxlocation .cominput input{
+	width:60%;
+	float:left;
+}
+
+.locationbig .btn.btn1{
+	margin-left:10px;
+	padding:11px 14px;
+}
+
+
+@media screen and (max-width:1260px) and (min-width:876px){
+	body.adaptive .locationbig .item{
+		width:20%;
+	}
+	body.adaptive .fancybox-inner .locationbig .item{
+		width:25%;
+	}
+}
+@media screen and (max-width:875px) and (min-width:676px){
+	body.adaptive .locationbig .item{
+		width:25%;
+	}
+	body.adaptive .fancybox-inner .locationbig .item{
+		width:33%;
+	}
+}
+@media screen and (max-width:675px) and (min-width:526px){
+	body.adaptive .locationbig .item{
+		width:33%;
+	}
+	body.adaptive .fancybox-inner .locationbig .item{
+		width:50%;
+	}
+}
+@media screen and (max-width:525px) and (min-width:481px){
+	body.adaptive .locationbig .item{
+		width:50%;
+	}
+	body.adaptive .fancybox-inner .locationbig .item{
+		width:100%;
+	}
+	body.adaptive .fancybox-inner .locationbig .ajaxlocation .cominput input{
+		width:100%;
+	}
+	body.adaptive .fancybox-inner .locationbig .btn.btn1{
+		margin-top:10px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .locationbig .item{
+		width:100%;
+	}
+	body.adaptive .locationbig .ajaxlocation .cominput input{
+		width:100%;
+	}
+	body.adaptive .locationbig .btn.btn1{
+		margin-top:10px;
+		margin-left:0px;
+	}
+}

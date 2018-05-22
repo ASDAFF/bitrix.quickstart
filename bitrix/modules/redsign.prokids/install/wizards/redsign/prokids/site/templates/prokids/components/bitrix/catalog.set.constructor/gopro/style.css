@@ -1,0 +1,366 @@
+.set .contentbody{
+	border:1px solid #F3F3F3;
+}
+.set .items.horizontal{
+	position:relative;
+}
+.set .items.horizontal .set_jscrollpane,
+.set .items.horizontal .set_jscrollpane .sliderin{
+	height:360px;
+}
+.set .items.horizontal  .prev,
+.set .items.horizontal  .next{
+	position:absolute;
+	top:35%;
+	display:none;
+	padding:20px 0px;
+	z-index:120;
+}
+.set .items.horizontal.jspHasScroll  .prev,
+.set .items.horizontal.jspHasScroll  .next{
+	display:block;
+}
+.set .items.horizontal  .prev span,
+.set .items.horizontal  .next span{
+	display:block;
+	width:25px;
+	height:25px;
+	margin:20px;
+	cursor:pointer;
+	background-color:#F3F3F3;
+}
+.set .items.horizontal.jspHasScroll  .prev span{
+	margin-left:0px;
+}
+.set .items.horizontal.jspHasScroll  .next span{
+	margin-right:0px;
+}
+.set .items.horizontal  .prev span:hover,
+.set .items.horizontal  .next span:hover{
+	background-color:#214496;
+}
+.set .items.horizontal  .prev{
+	left:0px;
+}
+.set .items.horizontal  .next{
+	right:0px;
+}
+.set .items.horizontal  .prev .icon,
+.set .items.horizontal  .next .icon{
+	width:7px;
+	height:10px;
+	margin-top:5px;
+	margin-left:9px;
+}
+.set .items.horizontal  .prev .icon{
+	background-position:0px -111px;
+}
+.set .items.horizontal  .prev span:hover .icon{
+	background-position:-7px -111px;
+}
+.set .items.horizontal  .next .icon{
+	background-position:0px -121px;
+}
+.set .items.horizontal  .next span:hover .icon{
+	background-position:-7px -121px;
+}
+
+.set .js-element{
+	position:relative;
+	width:250px;
+	min-height:305px;
+	float:left;
+	margin:-1px 0 0 -1px;
+	padding:20px 12px;
+	border-top:4px solid #fff;
+	z-index;100;
+}
+.set .js-element:hover{
+	border-top:4px solid #EE8131;
+}
+.set .line2 .js-element .plusik,
+.set .line2 .js-element .delete,
+.set .line1 .js-element .checkbox{
+	display:none;
+}
+.set .js-element .delete,
+.set .js-element .checkbox{
+	position:absolute;
+	top:4px;
+	right:0px;
+	display:block;
+	padding:15px 12px;
+	z-index:110;
+}
+.set .js-element .delete{
+	padding:15px 12px;
+}
+.set .js-element .checkbox{
+	padding:12px 9px;
+}
+.set .js-element .delete .icon{
+	width:10px;
+	height:10px;
+	background-position:0 -881px;
+}
+.set .js-element .checkbox .icon{
+	width:13px;
+	height:13px;
+	background-position:0px -255px;
+}
+.set .js-element .checkbox.in .icon{
+	background-position:-13px -255px;
+}
+.set .js-element .plusik{
+	position:absolute;
+	top:46%;
+	left:-20px;
+	display:block;
+	padding:5px;
+	z-index:110;
+}
+.set .js-element .plusik .icon{
+	width:15px;
+	height:15px;
+	background-position:0 -225px;
+}
+.set .js-element .name,
+.set .js-element .pic{
+	text-align:center;
+}
+.set .js-element .name{
+	height:35px;
+	margin-right:20px;
+	overflow:hidden;
+}
+.set .js-element .pic{
+	margin:10px 0px;
+}
+.set .js-element .pic,
+.set .js-element .pic a{
+	height:224px;
+}
+.set .js-element .pic a,
+.set .js-element .pic span{
+	display:block;
+	line-height:220px;
+}
+.set .js-element .pic img{
+	display:inline-block;
+	line-height:1.2;
+	vertical-align:middle;
+}
+.set .js-element .prices{
+	float:left;
+	font-family:Opensansset,Arial,Helvetica,sans-serif;
+	font-size:18px;
+}
+.set .js-element .buy .add2basket,
+.set .js-element .buy .inbasket,
+.set .js-element .buy .go2detail{
+	float:right;
+	padding:4px 8px;
+}
+
+.set .js-element .buy .go2detail{
+	color:#FFF;
+	white-space:nowrap;
+	background-color:#EE8131;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.set .js-element .buy .go2detail:hover{
+	text-decoration:underline;
+}
+
+/* full panel */
+.set .fullpanel{
+	min-height:60px;
+	padding:20px 24px;
+	background-color:#F3F3F3;
+}
+.set .fullpanel .prices table td{
+	vertical-align:top;
+}
+.set .fullpanel .prices .allprs{
+	white-space:nowrap;
+}
+.set .fullpanel .prices .arounddiscount{
+	float:right;
+}
+.set .fullpanel .block.prs .arounddiscount.x2{
+	display:none;
+}
+.set .fullpanel .block{
+	width:33%;
+	float:left;
+	padding-right:15px;
+}
+.set .fullpanel .block.buyset,
+.set .fullpanel .block.myset{
+	height:60px;
+	line-height:60px;
+	text-align:center;
+}
+.set .fullpanel .block.buyset a,
+.set .fullpanel .block.myset a{
+	display:inline;
+	vertical-align:middle;
+}
+.set .fullpanel .block.buyset a.massadd2basket{
+	margin-right:25px;
+}
+.set .fullpanel .block.myset .icon{
+	width:15px;
+	height:15px;
+	margin-right:5px;
+	background-position:0px -240px;
+}
+.set .fullpanel .block span.title,
+.set .fullpanel .block span.price.old,
+.set .fullpanel .block span.price.new{
+	font-size:18px;
+}
+.set .fullpanel .block span.title,
+.set .fullpanel .block span.price.old{
+	margin-right:10px;
+}
+.set .fullpanel .block span.price.new{
+	font-family:Opensansbold,Arial,Helvetica,sans-serif;
+}
+.set .fullpanel .block .title{
+	color:#666666;
+}
+.set .fullpanel .block span.discount{
+	display:inline-block;
+	margin-top:4px;
+	padding:3px 14px;
+	color:#fff;
+	background-color:#3c3c3c;
+	border:1px solid #f3f3f3;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+@media screen and (max-width:1260px) and (min-width:1101px){
+	body.adaptive .set .fullpanel .block.prs{
+		width:40%;
+	}
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset{
+		width:30%;
+	}
+}
+@media screen and (max-width:1100px) and (min-width:951px){
+	body.adaptive .set .fullpanel .block.prs{
+		width:50%;
+	}
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset{
+		width:25%;
+	}
+}
+@media screen and (max-width:950px){
+	body.adaptive .set .fullpanel .block.prs .arounddiscount.x1{
+		display:none;
+	}
+	body.adaptive .set .fullpanel .block.prs .arounddiscount.x2{
+		display:block;
+	}
+}
+@media screen and (max-width:950px) and (min-width:551px){
+	body.adaptive .set .fullpanel .block.prs{
+		width:100%;
+		padding-right:0px;
+	}
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset{
+		width:50%;
+		text-align:left;
+	}
+	body.adaptive .set .fullpanel .block.prs .prices,
+	body.adaptive .set .fullpanel .block.prs .arounddiscount{
+		width:50%;
+		float:left;
+		padding-right:15px;
+	}
+	body.adaptive .set .fullpanel .block.prs .allprs{
+		white-space:normal;
+	}
+	body.adaptive .set .fullpanel .block.prs .prices{
+		padding-top:3px;
+	}
+	body.adaptive .set .fullpanel .block.prs .discount{
+		margin-top:0px;
+		margin-left:0px;
+	}
+}
+@media screen and (max-width:550px) and (min-width:481px){
+	body.adaptive .set .fullpanel .block.prs,
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset,
+	body.adaptive .set .fullpanel .block.prs .prices,
+	body.adaptive .set .fullpanel .block.prs .arounddiscount{
+		text-align:left;
+	}
+}
+@media screen and (max-width:550px){
+	body.adaptive .set .fullpanel{
+		padding:10px 12px;
+	}
+	body.adaptive .set .fullpanel .block.prs,
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset,
+	body.adaptive .set .fullpanel .block.prs .prices,
+	body.adaptive .set .fullpanel .block.prs .arounddiscount{
+		width:100%;
+		height:auto;
+		margin-left:0px;
+		padding-right:0px;
+		line-height:normal;
+	}
+	body.adaptive .set .fullpanel .block.buyset,
+	body.adaptive .set .fullpanel .block.myset,
+	body.adaptive .set .fullpanel .block.prs .arounddiscount{
+		margin-top:5px;
+	}
+	body.adaptive .set .fullpanel .block.buyset a,
+	body.adaptive .set .fullpanel .block.myset a{
+		display:block;
+		float:left;
+	}
+	body.adaptive .set .fullpanel .block.prs .discount{
+		margin-left:0px;
+		text-align:left;
+	}
+}
+@media screen and (max-width: 480px){
+	body.adaptive .set .contentbody{
+		border:none;
+	}
+	body.adaptive .set .fullpanel{
+		background-color:#fff;
+	}
+	body.adaptive .set .fullpanel,
+	body.adaptive .set .fullpanel .block.prs .discount{
+		text-align:center;
+	}
+	body.adaptive .set .fullpanel .block.prs .title{
+		display:none;
+	}
+	body.adaptive .set .fullpanel .block.prs .price.old{
+		font-size:14px;
+	}
+	body.adaptive .set .fullpanel .block.buyset{
+		margin-top:10px;
+	}
+	body.adaptive .set .fullpanel .block.buyset a,
+	body.adaptive .set .fullpanel .block.myset a{
+		display:inline;
+		float:none;
+	}
+}

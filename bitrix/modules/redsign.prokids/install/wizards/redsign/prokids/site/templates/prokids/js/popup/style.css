@@ -1,0 +1,240 @@
+.rsgppopup{
+	position:absolute;
+	top:100px;
+	left:100px;
+	text-align:left;
+	z-index:900;
+}
+.rsgppopup .inner{
+	min-width:500px;
+	min-height:320px;
+	background-color:#FFF;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4x;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-moz-box-shadow:2px 4px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow:2px 4px 10px rgba(0,0,0,0.5);
+	box-shadow:2px 4px 10px rgba(0,0,0,0.5);
+}
+.rsgppopup .loading{
+	display:inline-block;
+	width:31px;
+	height:31px;
+	margin-top:144px;
+	margin-left:234px;
+	background:rgba(0, 0, 0, 0) url('../../img/loading.gif') center center no-repeat;
+}
+
+/* catalog.element -> popup */
+.rsgppopup{
+	width:100%;
+	max-width:500px;
+}
+.rsgppopup .block{
+	float:left;
+	width:50%;
+}
+.rsgppopup .block.left{
+	border-right:1px solid #E5E5E5;
+}
+.rsgppopup .block.left .ppadding{
+	text-align:center;
+}
+.rsgppopup .ppadding,
+.showcaseitem .ppadding{
+	padding:15px 20px;
+}
+.rsgppopup .block.right .ppadding{
+	padding-bottom:5px;
+}
+.rsgppopup .ppadding .propanddesc{
+	min-height:225px;
+}
+.rsgppopup .pic{
+	padding:10px 0px;
+}
+.rsgppopup .article{
+	margin-bottom:12px;
+	font-family:Opensanslight,Arial,Helvetica,sans-serif;
+	color:#484848;
+}
+/* catalog.element -> popup -> prices */
+.rsgppopup .prices .prs_jscrollpane{
+	width:100%;
+	overflow:auto;
+}
+.rsgppopup .prices .prev,
+.rsgppopup .prices .next{
+	display:block;
+	width:100%;
+	text-align:center;
+	background:#f3f3f3;
+	background:-ms-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-moz-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-o-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#fff));
+	background-image:-webkit-linear-gradient(top, #f3f3f3, #fff);
+	background-image:linear-gradient(to bottom, #f3f3f3, #fff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3',endColorstr='#fff',GradientType=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f3f3, endColorstr=#fff)";
+}
+.rsgppopup .prices .prev .icon,
+.rsgppopup .prices .next .icon{
+	width:14px;
+	height:7px;
+	margin-bottom:2px;
+}
+.rsgppopup .prices .prev .icon{
+	background-position:-14px -669px;
+}
+.rsgppopup .prices .prev:hover .icon{
+	background-position:-14px -690px;
+}
+.rsgppopup .prices .next .icon{
+	background-position:0px -669px;
+}
+.rsgppopup .prices .next:hover .icon{
+	background-position:0px -690px;
+}
+.rsgppopup .prices .pricestable{
+	width:100%;
+}
+.rsgppopup .prices .pricestable tr td{
+	padding:8px 12px;
+}
+.rsgppopup .prices .pricestable tr.even td{
+	background-color:#FAFAFA;
+}
+/* catalog.element -> popup -> soloprices */
+.rsgppopup .soloprice{
+	margin-top:15px;
+}
+.rsgppopup .soloprice span{
+	display:inline-block;
+	margin-bottom:6px;
+}
+.rsgppopup .soloprice .price.gen{
+	display:block;
+	font-size:18px;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.rsgppopup .soloprice .price.old{
+	margin-right:25px;
+}
+/* catalog.element -> popup -> description */
+.rsgppopup .description{
+	font-family:Opensanslight,Arial,Helvetica,sans-serif;
+	color:#484848;
+	margin-top:30px;
+}
+.rsgppopup .description .text{
+	overflow:hidden;
+}
+.rsgppopup .description .more{
+	text-decoration:underline;
+}
+.rsgppopup .description .more:hover{
+	text-decoration:none;
+}
+/* /catalog.element -> popup -> description */
+/* catalog.element -> popup -> properties */
+.rsgppopup .propvision1 .offer_prop .offer_prop-name{
+	font-family:Opensanslight,Arial,Helvetica,sans-serif;
+	color:#484848;
+	margin-right:5px;
+}
+/* /catalog.element -> popup -> properties */
+/* catalog.element -> popup -> add2basket */
+.rsgppopup .buy{
+	margin-top:20px;
+}
+.rsgppopup .buy .quantity{
+	margin-top:3px;
+}
+.rsgppopup .add2basket,
+.rsgppopup .inbasket{
+	float:right;
+	padding:4px 8px;
+}
+/* /catalog.element -> popup -> add2basket */
+/* catalog.element -> popup -> compare */
+.rsgppopup .compare{
+	margin-top:12px;
+}
+/* /catalog.element -> popup -> compare */
+/* catalog.element -> popup -> favorite & share */
+.rsgppopup .favorishare{
+	margin-top:5px;
+}
+.rsgppopup .add2favorite{
+	color:#666666;
+	font-size:11px;
+	text-decoration:none;
+}
+.rsgppopup .add2favorite:hover{
+	color:#214496;
+	text-decoration:underline;
+}
+.rsgppopup .add2favorite .icon,
+.rsgppopup .add2favorite .counter{
+	margin-right:3px;
+}
+.rsgppopup .add2favorite .icon{
+	width:12px;
+	height:10px;
+	margin-bottom:2px;
+	background-position:0px -629px;
+}
+.rsgppopup .add2favorite.in .icon{
+	background-position:-12px -629px;
+}
+.rsgppopup .share{
+	float:right;
+}
+.rsgppopup .share .b-share-icon{
+	height:10px;
+	background-repeat:no-repeat;
+}
+.rsgppopup .share .b-share{
+	padding:1px 0px!important;
+}
+.rsgppopup .share .b-share__handle{
+	padding:5px 3px 1px 7px!important;
+}
+.rsgppopup .share a .b-share-icon.b-share-icon_vkontakte{
+	width:9px;
+	background-position:0px -301px;
+}
+.rsgppopup .share a:hover .b-share-icon.b-share-icon_vkontakte{
+	background-position:-9px -301px;
+}
+.rsgppopup .share a .b-share-icon.b-share-icon_facebook{
+	width:6px;
+	background-position:0px -291px;
+}
+.rsgppopup .share a:hover .b-share-icon.b-share-icon_facebook{
+	background-position:-6px -291px;
+}
+.rsgppopup .share a .b-share-icon.b-share-icon_twitter{
+	width:8px;
+	background-position:0px -311px;
+}
+.rsgppopup .share a:hover .b-share-icon.b-share-icon_twitter{
+	background-position:-8px -311px;
+}
+.rsgppopup .share a.email2friend .icon{
+	width:14px;
+	height:10px;
+	background-position:0px -280px;
+}
+.rsgppopup .share a.email2friend:hover .icon{
+	background-position:-14px -280px;
+}
+
+.rsgppopup .favorite{
+	float:left;
+}
+/* /catalog.element -> popup -> favorite & share */
+/* /catalog.element -> popup */

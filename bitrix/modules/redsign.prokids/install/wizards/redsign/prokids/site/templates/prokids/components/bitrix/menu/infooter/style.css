@@ -1,0 +1,17 @@
+.footer .footmenu{
+	margin-bottom:15px;
+}
+.footer .footmenu .title{
+	margin-bottom:6px;
+	text-transform:uppercase;
+}
+.footer .footmenu .item{
+	margin:3px 0;
+}
+.footer .footmenu a{
+	color:#0077cb;
+	text-decoration:none;
+}
+.footer .footmenu a:hover{
+	text-decoration:underline;
+}

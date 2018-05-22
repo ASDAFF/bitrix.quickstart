@@ -1,0 +1,24 @@
+@font-face{
+	font-family:Opensans;
+	src:url("fonts/eot/OpenSans-Regular.eot"); /* EOT file for IE */
+}
+@font-face{
+	font-family:Opensans;
+	src:url("fonts/ttf/OpenSans-Regular.ttf"); /* TTF file for CSS3 browsers */
+}
+@font-face{
+	font-family:Opensanslight;
+	src:url("fonts/eot/OpenSans-Light.eot"); /* EOT file for IE */
+}
+@font-face{
+	font-family:Opensanslight;
+	src:url("fonts/ttf/OpenSans-Light.ttf"); /* TTF file for CSS3 browsers */
+}
+@font-face{
+	font-family:Opensansbold;
+	src:url("fonts/eot/OpenSans-Bold.eot"); /* EOT file for IE */
+}
+@font-face{
+	font-family:Opensansbold;
+	src:url("fonts/ttf/OpenSans-Bold.ttf"); /* TTF file for CSS3 browsers */
+}

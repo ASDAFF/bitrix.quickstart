@@ -1,0 +1,202 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
+$disabled = false;
+if ($arParams['AJAX_CALL']!='Y'
+	&& count($arParams['LOC_DEFAULT'])>0
+	&& $arParams['PUBLIC']!='N'
+	&& $arParams['SHOW_QUICK_CHOOSE']=='Y')
+{
+	$isChecked = '';
+	?><div class="default"><?
+		foreach ($arParams['LOC_DEFAULT'] as $val)
+		{
+			$checked = '';
+			if((($val['ID']==IntVal($_REQUEST['NEW_LOCATION_'.$arParams['ORDER_PROPS_ID']])) || ($val['ID']==$arParams['CITY'])) && (!isset($_REQUEST['CHANGE_ZIP']) || $_REQUEST['CHANGE_ZIP']!='Y'))
+			{
+				$checked = 'checked';
+				$isChecked = 'Y';
+				$disabled = true;
+			}
+			?><div><?
+				?><input <?
+					?>onChange="<?=$arParams['ONCITYCHANGE']?>;" <?
+					?><?=$checked?> <?
+					?>type="radio" <?
+					?>name="NEW_LOCATION_<?=$arParams['ORDER_PROPS_ID']?>" <?
+					?>value="<?=$val['ID']?>" <?
+					?>id="loc_<?=$val['ID']?>" /><?
+				?><label for="loc_<?=$val['ID']?>"><?=$val['LOC_DEFAULT_NAME']?></label><?
+			?></div><?
+		}
+		?><input <?if($isChecked!='Y') echo 'checked';?> type="radio" <?
+			?>onclick="newlocation(<?=$arParams['ORDER_PROPS_ID']?>);" name="NEW_LOCATION_<?=$arParams['ORDER_PROPS_ID']?>" <?
+			?>value="0" id="loc_0" /><?
+		?><label for="loc_0"><?=GetMessage('LOC_DEFAULT_NAME_NULL')?></label><?
+	?></div><?
+}
+
+if(isset($_REQUEST['NEW_LOCATION_'.$arParams['ORDER_PROPS_ID']]) && IntVal($_REQUEST['NEW_LOCATION_'.$arParams['ORDER_PROPS_ID']])>0)
+{
+	$disabled = true;
+}
+
+if($arParams['AJAX_CALL']!='Y')
+{
+	?><div id="LOCATION_<?=$arParams['CITY_INPUT_NAME']?>"><?
+}
+
+$countryName = '';
+if (count($arResult['COUNTRY_LIST'])==1)
+{
+	$cDisabled = true;
+} else {
+	$cDisabled = false;
+}
+
+if(count($arResult['COUNTRY_LIST'])>0)
+{
+	if ($arResult['EMPTY_CITY']=='Y' && $arResult['EMPTY_REGION']=='Y')
+		$change = $arParams['ONCITYCHANGE'];
+	else
+		$change = "getLocation(this.value, '', '', ".$arResult['JS_PARAMS'].", '".CUtil::JSEscape($arParams['SITE_ID'])."')";
+	
+	if($cDisabled)
+	{
+		?><div style="display:none"><?
+	}
+	?><select <?if($disabled || $cDisabled) echo 'disabled';?> id="<?=$arParams['COUNTRY_INPUT_NAME'].$arParams['CITY_INPUT_NAME']?>" name="<?=$arParams['COUNTRY_INPUT_NAME'].$arParams['CITY_INPUT_NAME']?>" onChange="<?=$change?>" type="location"><?
+		?><option><?=GetMessage('SAL_CHOOSE_COUNTRY')?></option><?
+		foreach($arResult['COUNTRY_LIST'] as $arCountry)
+		{
+			?><option value="<?=$arCountry['ID']?>"<?if ($arCountry['ID']==$arParams['COUNTRY']):?> selected="selected"<?endif;?>><?=$arCountry['NAME_LANG']?></option><?
+			if($arCountry['ID']==$arParams['COUNTRY'])
+			{
+				$countryName = $arCountry['NAME_LANG'];
+			}
+		}
+	?></select><?
+	if($cDisabled)
+	{
+		?></div><?
+		if(strlen($countryName)>0)
+		{
+			?><div class="sale_locations_fixed"><?=GetMessage('SAL_LOC_COUNTRY').': '.$countryName.'<br />'?></div><?
+		}
+	}
+}
+
+$regionName = '';
+if(count($arResult['REGION_LIST'])==1)
+{
+	$rDisabled = true;
+} else {
+	$rDisabled = false;
+}
+
+if(count($arResult['REGION_LIST'])>0)
+{
+	$id = '';
+	if(count($arResult['COUNTRY_LIST'])<=0)
+	{
+		$id = "id=\"".$arParams['COUNTRY_INPUT_NAME'].$arParams['CITY_INPUT_NAME']."\"";
+	}
+
+	if($arResult['EMPTY_CITY']=='Y')
+	{
+		$change = $arParams['ONCITYCHANGE'];
+	} else {
+		$change = "getLocation(".$arParams['COUNTRY'].", this.value, '', ".$arResult['JS_PARAMS'].", '".CUtil::JSEscape($arParams['SITE_ID'])."')";
+	}
+
+	if($rDisabled)
+	{
+		?><div style="display:none"><?
+	}
+	?><select <?=$id?> <?if($disabled || $rDisabled) echo 'disabled';?> name="<?=$arParams['REGION_INPUT_NAME'].$arParams['CITY_INPUT_NAME']?>" onChange="<?=$change?>" type="location"><?
+		?><option><?=GetMessage('SAL_CHOOSE_REGION')?></option><?
+		foreach($arResult['REGION_LIST'] as $arRegion)
+		{
+			?><option value="<?=$arRegion['ID']?>"<?if($arRegion['ID']==$arParams['REGION']):?> selected="selected"<?endif;?>><?=$arRegion['NAME_LANG']?></option><?
+			if($arRegion['ID']==$arParams['REGION'])
+			{
+				$regionName = $arRegion['NAME_LANG'];
+			}
+		}
+	?></select><?
+	if($rDisabled)
+	{
+		?></div><?
+		if(strlen($regionName)>0)
+		{
+			?><div class="sale_locations_fixed"><?=GetMessage('SAL_LOC_REGION').': '.$regionName?></div><?
+		}
+	}
+}
+
+if(count($arResult['CITY_LIST'])>0)
+{
+	$cityName = '';
+	$id = '';
+
+	if(count($arResult['CITY_LIST'])==1)
+	{
+		$cDisabled = true;
+	} else {
+		$cDisabled = false;
+	}
+
+	if(count($arResult['COUNTRY_LIST']) <= 0 && count($arResult['REGION_LIST']) <= 0)
+	{
+		$id = "id=\"".$arParams['COUNTRY_INPUT_NAME']."\"";
+	} else {
+		$id = "id=\"".$arParams['CITY_INPUT_NAME']."\"";
+	}
+
+	if($cDisabled)
+	{
+		?><div style="display:none"><?
+	}
+	?><select <?=$id?> <?if($disabled) echo 'disabled';?> name="<?=$arParams['CITY_INPUT_NAME']?>"<?if (strlen($arParams['ONCITYCHANGE']) > 0):?> onchange="<?=$arParams['ONCITYCHANGE']?>"<?endif;?> type="location"><?
+		?><option><?=GetMessage('SAL_CHOOSE_CITY')?></option><?
+		foreach($arResult['CITY_LIST'] as $arCity)
+		{
+			?><option value="<?=$arCity['ID']?>"<?if($arCity['ID']==$arParams['CITY']):?> selected="selected"<?endif;?>><?=($arCity['CITY_ID']>0?$arCity['CITY_NAME']:GetMessage('SAL_CHOOSE_CITY_OTHER'))?></option><?
+			if($arCity['ID']==$arParams['CITY'])
+			{
+				$cityName = $arCity['CITY_NAME'];
+			}
+		}
+	?></select><?
+	if($cDisabled)
+	{
+		?></div><?
+		if(strlen($cityName)>0)
+		{
+			?><div class="sale_locations_fixed"><?=GetMessage('SAL_LOC_CITY').': '.$cityName?></div><?
+		}
+	}
+}
+
+if($arParams['AJAX_CALL']!='Y')
+{
+	?></div><div id="wait_container_<?=$arParams['CITY_INPUT_NAME']?>" style="display:none;"></div><?
+}
+
+if($arParams['AJAX_CALL']!='Y' && $arParams['PUBLIC']!='N')
+{
+	?><script>
+		function newlocation(orderPropId)
+		{
+			var select = document.getElementById("LOCATION_ORDER_PROP_" + orderPropId);
+			arSelect = select.getElementsByTagName("select");
+			if (arSelect.length > 0)
+			{
+				for (var i in arSelect)
+				{
+					var elem = arSelect[i];
+					elem.disabled = false;
+				}
+			}
+		}
+	</script><?
+}

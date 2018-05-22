@@ -1,0 +1,75 @@
+/*! jQuery UI - v1.10.3 - 2013-05-03
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
+
+/* Layout helpers ----------------------------------*/
+.aroundslider{
+	margin:18px 15px 10px 15px;
+}
+.ui-slider{
+	cursor:pointer;
+	position:relative;
+	text-align:left;
+}
+.ui-slider .ui-slider-handle{
+	position:absolute;
+	width:22px;
+	height:22px;
+	cursor:pointer;
+	z-index:2;
+	outline:-webkit-focus-ring-color auto 0px;
+}
+.ui-slider .ui-slider-range{
+	position:absolute;
+	display:block;
+	border:0;
+	background: #f4ab41;
+	background: -ms-linear-gradient(top, #f4ab41, #ef8834);
+	background-image: -moz-linear-gradient(top, #f4ab41, #ef8834);
+	background-image: -o-linear-gradient(top, #f4ab41, #ef8834);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4ab41), to(#ef8834));
+	background-image: -webkit-linear-gradient(top, #f4ab41, #ef8834);
+	background-image: linear-gradient(to bottom, #f4ab41, #ef8834);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4ab41',endColorstr='#ef8834',GradientType=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f4ab41, endColorstr=#ef8834)";
+	z-index:1;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range{
+	filter:inherit;
+}
+
+.ui-slider-horizontal{
+	height:6px;
+	margin-right:5px;
+}
+.ui-slider-horizontal .ui-slider-handle{
+	top:-8px;
+	margin-left:-9px;;
+}
+.ui-slider-horizontal .ui-slider-range{
+	top:0;
+	height:100%;
+}
+.ui-slider-horizontal .ui-slider-range-min{
+	left:0;
+}
+.ui-slider-horizontal .ui-slider-range-max{
+	right:0;
+}
+.ui-widget-content{
+	background:url('trackbar_full.png') 0px 0px no-repeat;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+	background-repeat:no-repeat;
+	background-position:0px -647px;
+}

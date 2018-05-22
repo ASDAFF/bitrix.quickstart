@@ -1,0 +1,30 @@
+.shops{
+	width:100%;
+}
+.shops .cell{
+	float:left;
+	width:50%;
+}
+.shops .cell.items{
+	width:35%;
+}
+.shops .cell.map{
+	width:65%;
+}
+#rsYMapShops{
+	width:100%;
+	height:500px;
+}
+#lovekids_shops .shop_item{
+	margin-bottom:15px;
+}
+#lovekids_shops .shop_item .descr{
+	margin-left:17px;
+}
+
+@media screen and (max-width:900px){
+	body.adaptive .shops .cell.items,
+	body.adaptive .shops .cell.map{
+		width:100%;
+	}
+}

@@ -1,0 +1,2 @@
+<?
+$MESS['REDSIGN.OPTPRO.SKIN_1'] = 'Skin №1';

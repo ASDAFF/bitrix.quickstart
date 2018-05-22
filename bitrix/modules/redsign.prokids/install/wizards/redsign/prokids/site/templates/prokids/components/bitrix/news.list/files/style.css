@@ -1,0 +1,89 @@
+.arfiles{
+	margin-top:30px;
+}
+.arfiles .files{
+	margin-top:15px;
+}
+
+.arfiles a.docs{
+	width:33%;
+	display:block;
+	float:left;
+	padding:8px 15px 8px 0px;
+}
+.arfiles a.docs .icon{
+	display:block;
+	float:left;
+	width:44px;
+	height:47px;
+	background-position:0px -834px;
+}
+
+.arfiles a.docs .icon.word{
+	height:45px;
+	margin-bottom:2px;
+	background-position:0px -744px;
+}
+.arfiles a.docs .icon.excel{
+	height:45px;
+	margin-bottom:2px;
+	background-position:0px -789px;
+}
+.arfiles a.docs .icon.pdf{
+	background-position:0px -697px;
+}
+.arfiles a.docs span{
+	display:block;
+	margin-left:50px;
+}
+.arfiles a.docs .description{
+	color:#000;
+}
+.arfiles a.docs .size{
+	color:#999;
+	font-size:11px;
+}
+.arfiles .separator.x3{
+	width:100%;
+	float:left;
+	display:block;
+}
+.arfiles a.docs:hover .name{
+	text-decoration:underline;
+}
+.arfiles a.docs:hover,
+.arfiles a.docs:hover .size,
+.arfiles a.docs .size:hover{
+	text-decoration:none;
+}
+
+@media screen and (max-width:605px){
+	body.adaptive .arfiles .docs{
+		width:50%;
+	}
+	body.adaptive .arfiles .separator.x3{
+		display:inline;
+		width:0px;
+		float:none;
+	}
+	body.adaptive .arfiles .separator.x2{
+		display:block;
+		width:100%;
+		float:left;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .arfiles .docs{
+		width:100%;
+	}
+	body.adaptive .arfiles .separator.x3{
+		display:inline;
+		width:0px;
+		float:none;
+	}
+	body.adaptive .arfiles .separator.x1{
+		display:block;
+		width:100%;
+		float:left;
+	}
+}

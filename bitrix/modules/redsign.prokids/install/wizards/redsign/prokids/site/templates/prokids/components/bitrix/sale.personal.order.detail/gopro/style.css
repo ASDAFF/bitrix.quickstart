@@ -1,0 +1,23 @@
+.orderdetail .orderlistproducts{
+	width:100%;
+}
+
+.orderdetail .table .full.prods{
+	width:100%;
+	padding:10px 0px;
+	overflow-x:auto;
+	overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+.orderdetail .orderlistproducts td{
+	padding:5px 10px;
+	border:1px solid #F2F2F2;
+}
+.orderdetail .orderlistproducts td.img{
+	text-align:center;
+	vertical-align:middle;
+}
+.orderdetail .orderlistproducts td img{
+	min-width:20px;
+}

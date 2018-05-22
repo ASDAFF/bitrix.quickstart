@@ -1,0 +1,26 @@
+.navigation{
+	float:right;
+	padding-top:12px;
+	font-size:14px;
+}
+.navigation .arrow  .icon{
+	width:7px;
+	height:14px;
+}
+.navigation span,
+.navigation a{
+	display:inline-block;
+	padding:0px 5px;
+}
+.navigation a.arrow.left .icon{
+	background-position:-14px -531px;
+}
+.navigation span.arrow.left .icon{
+	background-position:0px -531px;
+}
+.navigation a.arrow.right .icon{
+	background-position:-14px -545px;
+}
+.navigation span.arrow.right .icon{
+	background-position:0px -545px;
+}

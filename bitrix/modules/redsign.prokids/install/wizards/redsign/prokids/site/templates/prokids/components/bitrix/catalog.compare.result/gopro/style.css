@@ -1,0 +1,128 @@
+.catalog-compare-result img {
+	max-width:206px;
+	max-height:170px;
+}
+
+.data-table td{
+	text-align:center;
+	vertical-align:top;
+	max-width:300px;
+	border:1px solid #ccc;
+	padding:12px 10px;
+	min-width:206px;
+}
+
+.data-table td .scroll{
+	width:100%;
+	height:auto;
+	overflow:auto;
+}
+
+.data-table thead td {
+	vertical-align:top;
+}
+
+.data-table tbody tr:nth-child(odd) td{
+	background-color:#fafafa;
+}
+
+.back1 td {
+	background-color:#F3F3F3 !important;
+}
+
+.data-table th{
+	border:1px solid #ccc;	
+	padding:10px;
+	min-width:180px;
+}
+
+.data-table thead td{
+	padding:20px 20px 25px 20px;
+}
+
+.element{
+	height:255px;
+	vertical-align:middle;
+}
+
+.element_info_wrap{
+	vertical-align:text-bottom;
+}
+
+.element_info-price{
+	text-align:center;
+	margin-bottom:12px;
+}
+.price{
+	display:block;
+	margin-bottom:10px;
+	text-align:center;
+	font-size:16px;
+	color:#ee8131;
+}
+.crossed_price{
+	margin-right: 25px;
+	text-align:center;
+	color:#666666;
+	text-decoration:line-through;
+}
+
+.delete_icon  .icon{
+	width:11px;
+	height:10px;
+	background-position:0px -890px;
+}
+
+.delete_icon {
+	position:absolute;
+	top:-29px;
+	right:-25px;
+	padding: 10px;
+}
+
+.catalog-item-name{
+	height:38px;
+	margin-bottom:15px;
+	text-align:left;
+	overflow:hidden;
+}
+
+.no_border{
+	border:none !important;
+}
+
+.data-table-form {
+	overflow-x:auto;
+}
+
+.back1{
+	border-right:none !important;
+}
+
+.back2{
+	border-right:1px solid #ccc !important;
+}
+
+.back1, .property_name{
+	text-align:left !important;
+}
+
+.data-table tbody tr:hover td{
+	color:#FFF;
+	background-color:#899cc7;
+}
+
+.data-table tbody .back1:hover td{
+	background-color: #F3F3F3;
+	color: #000;
+}
+
+.data-table{
+	overflow-x: auto;
+}
+
+.element_info-picture{
+	position:relative;
+	height: 170px;
+	margin-bottom:15px;
+}

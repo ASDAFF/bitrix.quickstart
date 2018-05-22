@@ -1,0 +1,5 @@
+<?
+$MESS['RSGOPRO.SMALLBASKET_TITLE'] = 'Basket';
+$MESS['RSGOPRO.SMALLBASKET_TOVAR'] = 'product';
+$MESS['RSGOPRO.SMALLBASKET_NA'] = 'on';
+$MESS['RSGOPRO.SMALLBASKET_PUSTO'] = 'Now your cart is empty';

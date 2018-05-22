@@ -1,0 +1,59 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Personal", 
+		"#SITE_DIR#personal/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"User settings", 
+		"#SITE_DIR#personal/profile/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Liked goods", 
+		"#SITE_DIR#personal/favorite/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Viewed goods", 
+		"#SITE_DIR#personal/viewed/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Subscriptions", 
+		"#SITE_DIR#personal/subscribe/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Cart", 
+		"#SITE_DIR#personal/cart/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Delivery profiles", 
+		"#SITE_DIR#personal/delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Orders", 
+		"#SITE_DIR#personal/order/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);

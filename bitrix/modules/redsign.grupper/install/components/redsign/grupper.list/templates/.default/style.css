@@ -1,0 +1,40 @@
+#rs_grupper ul.options{
+	padding:0 10px 10px 0;
+	display:block;
+	font-size:13px;
+	color:#3F3F3F;
+	line-height:20px;
+	margin:0px;
+	list-style:none !important;
+}
+#rs_grupper li{
+	list-style:none !important;
+	border-bottom:1px dotted #CCC;
+	height:28px;
+	padding-left:0 !important;
+	content:none !important;
+}
+#rs_grupper li:before{
+	content: none !important;
+}
+#rs_grupper li span{
+	color:#777;
+	font-size:14px;
+	background-color:white;
+	bottom:-11px;
+	font-weight:normal;
+	line-height:27px;
+	padding-right:5px;
+	position:relative;
+}
+#rs_grupper li b{
+	color:black;
+	font-size:14px;
+	float:right;
+	background-color:white;
+	bottom:-11px;
+	font-weight:normal;
+	line-height:27px;
+	padding-right:5px;
+	position:relative;
+}

@@ -1,0 +1,22 @@
+.location{
+	display:inline-block;
+	padding-top:16px;
+	padding-right:20px;
+}
+.location .icon{
+	width:8px;
+	height:4px;
+	margin-left:3px;
+	margin-bottom:1px;
+	background-position:0px 0px;
+}
+
+@media screen and (max-width:480px){
+	body.adaptive .location{
+		display:block;
+		float:left;
+	}
+	body.adaptive .location span{
+		display:none;
+	}
+}

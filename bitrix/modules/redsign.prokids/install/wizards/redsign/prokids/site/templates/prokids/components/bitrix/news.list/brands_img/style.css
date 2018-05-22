@@ -1,0 +1,66 @@
+.brandslistimg.mainstyles {
+	margin-top:25px;
+}
+.brandslistimg.mainstyles .title {
+	margin-bottom:15px;
+	padding:0px 17px 15px 17px;
+	border-bottom:1px solid #F2F2F2;
+}
+.brandslistimg.mainstyles .title a {
+	color:#EE8131;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+.brandslistimg .item {
+	display: block;
+	width: 14%;
+	height: 80px;
+	float: left;
+	padding: 10px 10px;
+	text-align: center;
+}
+.brandslistimg .item .pic {
+	display: table;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+}
+.brandslistimg .item .pic a{
+	display: table-cell;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.brandslistimg .item .pic img {
+	width: auto;
+	max-width: 100%;
+	max-height: 80px;
+	vertical-align: middle;
+}
+
+@media screen and (max-width:1260px) and (min-width:1025px) {
+	body.adaptive .brandslistimg .item{
+		width:16%;
+	}
+}
+@media screen and (max-width:1024px) and (min-width:751px) {
+	body.adaptive .brandslistimg .item{
+		width:20%;
+	}
+}
+@media screen and (max-width:750px) and (min-width:576px) {
+	body.adaptive .brandslistimg .item{
+		width:25%;
+	}
+}
+@media screen and (max-width:575px) and (min-width:481px) {
+	body.adaptive .brandslistimg .item{
+		width:33%;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .brandslistimg .item{
+		width:50%;
+	}
+}

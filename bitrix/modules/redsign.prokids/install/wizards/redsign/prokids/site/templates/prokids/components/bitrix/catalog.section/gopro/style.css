@@ -1,0 +1,771 @@
+/******************************* table *******************************/
+.artables.table .products{
+	width:100%;
+}
+.artables.table table.names{
+	display:none;
+	float:left;
+	width:150px;
+	border-right:none;
+}
+.artables.table table.names td.name{
+	width:140px;
+}
+.artables.table .arproducts{
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+.artables.table table{
+	border:1px solid #F3F3F3;
+}
+.artables.table table tr th{
+	padding:14px 10px;
+	background-color:#F3F3F3;
+	font-weight:normal;
+}
+.artables.table table tr td{
+	padding:12px 10px;
+}
+.artables.table table tr th.free,
+.artables.table table tr td.free{
+	width:7px;
+	padding:0px;
+}
+.artables.table table tr th.free span,
+.artables.table table tr td.free span{
+	display:block;
+	width:7px;
+	min-height:48px;
+}
+.artables.table table tr.even td{
+	background-color:#fafafa;
+}
+.artables.table table.products div.name{
+	min-width:143px;
+}
+.artables.table table.products tr:hover td{
+	color:#FFF;
+	background-color:#899cc7;
+}
+.artables.table table.products tr:hover td.name a{
+	color:#FFF;
+	text-decoration:underline;
+}
+.artables.table table.products tr:hover td.name a:hover{
+	text-decoration:none;
+}
+.artables.table table.products .add2basketform .submit i,
+.artables.table table.products .add2basketform .inbasket i{
+	width:23px;
+	height:20px;
+	margin-left:8px;
+	margin-bottom:4px;
+	background-position:0 -418px;
+}
+.artables.table table.products tr:hover .add2basketform .submit i,
+.artables.table table.products tr:hover .add2basketform .inbasket i{
+	background-position:-23px -418px;
+}
+.artables.table table.products tr:hover .add2basketform.in .tick,
+.artables.table table.products tr:hover .add2basketform.in .tick{
+	/*background-position:-16px -595px; big*/
+	background-position:-13px -579px;/* small*/
+}
+.artables.table table.products tr:hover .add2basketform input,
+.artables.table table.products tr:hover .add2basketform .js-measurename{
+	color:#000;
+}
+.artables.table table th,
+.artables.table table td{
+	text-align:center;
+}
+.artables.table table th.name,
+.artables.table table td.name{
+	text-align:left;
+}
+
+.artables.table .add2basketform.in .inbasket{
+	display:none;
+}
+.artables.table .add2basketform .tick{
+	visibility:hidden;
+	/*width:16px; big*/
+	width:13px;/* small*/
+	/*height:16px; big*/
+	height:9px;/* small*/
+	margin-left:8px;
+	/*background-position:-16px -613px; big*/
+	background-position:-13px -588px;/* small*/
+}
+.artables.table .add2basketform.in .tick{
+	visibility:visible;
+}
+/* /add2basket */
+
+/* js table fix */
+.artables.table.adap .arproducts{
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+.artables.table.adap table.products{
+	border-left:none;
+}
+.artables.table.adap table.products th.free,
+.artables.table.adap table.products td.free,
+.artables.table.adap table.products th.name,
+.artables.table.adap table.products td.name{
+	width:0px;
+	max-width:0px;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+.artables.table.adap table.products th.free span,
+.artables.table.adap table.products td.free span{
+	width:0px;
+}
+.artables.table table td.free span.qb{
+	background-color:#66b132;
+}
+.artables.table table td.free span.da2,
+.artables.table table td.free span.da2.qb{
+	background-color:#c5007c;
+}
+.artables.table.adap table.products div.name{
+	width:143px;
+	padding:12px 10px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.artables.table.adap table.names{
+	display:block;
+}
+/* /js table fix */
+@media screen and (max-width: 1010px){
+	body.adaptive .artables.table .arproducts{
+		overflow-x:scroll;
+		overflow-y:hidden;
+	}
+	body.adaptive .artables.table table.products{
+		border-left:none;
+	}
+	body.adaptive .artables.table table.products th.free,
+	body.adaptive .artables.table table.products td.free,
+	body.adaptive .artables.table table.products th.name,
+	body.adaptive .artables.table table.products td.name{
+		width:0px;
+		max-width:0px;
+		padding:0px;
+		margin:0px;
+		overflow:hidden;
+	}
+	body.adaptive .artables.table table.products th.free span,
+	body.adaptive .artables.table table.products td.free span{
+		width:0px;
+	}
+	body.adaptive .artables.table table.products div.name{
+		width:143px;
+		padding:12px 10px;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+		-moz-opacity:0;
+		-khtml-opacity:0;
+		opacity:0;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	body.adaptive .artables.table table.names{
+		display:block;
+	}
+}
+/******************************* /table *******************************/
+
+/******************************* gallery *******************************/
+.artables.gallery .products{
+	width:100%;
+}
+.artables.gallery table.names{
+	display:none;
+	float:left;
+	width:150px;
+	border-right:none;
+}
+.artables.gallery table.names td.name{
+	width:140px;
+}
+.artables.gallery .arproducts{
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+.artables.gallery table{
+	border:1px solid #F3F3F3;
+}
+.artables.gallery table tr th{
+	padding:14px 10px;
+	font-weight:normal;
+	background-color:#F3F3F3;
+}
+.artables.gallery table tr td.name,
+.artables.gallery table tr td.nowrap{
+	padding:12px 10px;
+}
+.artables.gallery table tr th.free,
+.artables.gallery table tr td.free{
+	width:7px;
+	padding:0px;
+}
+.artables.gallery table tr th.free span,
+.artables.gallery table tr td.free span{
+	display:block;
+	width:7px;
+	min-height:48px;
+}
+.artables.gallery table tr.even td{
+	background-color:#fafafa;
+}
+.artables.gallery table.products div.name{
+	min-width:143px;
+}
+.artables.gallery table.names tr td.name table.smpl,
+.artables.gallery table.names tr td.name table.smpl tr td,
+.artables.gallery table.products tr td.name table.smpl,
+.artables.gallery table.products tr td.name table.smpl tr td{
+	padding:0px;
+	border:none;
+}
+.artables.gallery table.names tr td.name table.smpl tr td.nm a,
+.artables.gallery table.products tr td.name table.smpl tr td.nm a,
+.artables.gallery table.names tr td.name table.smpl tr td.nm span,
+.artables.gallery table.products tr td.name table.smpl tr td.nm span{
+	display:block;
+	padding-left:7px;
+}
+.artables.gallery table.names tr td.name table.smpl tr td.nm a > span,
+.artables.gallery table.products tr td.name table.smpl tr td.nm a > span{
+	padding-left: 0px;
+}
+.artables.gallery table.names tr td.name table.smpl tr td.nm,
+.artables.gallery table.products tr td.name table.smpl tr td.nm{
+	text-align:left;
+}
+.artables.gallery table.products tr:hover td{
+	color:#FFF;
+	background-color:#899cc7;
+}
+.artables.gallery table.products tr:hover td.name a{
+	color:#FFF;
+	text-decoration:underline;
+}
+.artables.gallery table.products tr:hover td.name a:hover{
+	text-decoration:none;
+}
+.artables.gallery table.products .add2basketform .submit i,
+.artables.gallery table.products .add2basketform .inbasket i{
+	width:23px;
+	height:20px;
+	margin-left:5px;
+	margin-bottom:4px;
+	background-position:0 -418px;
+}
+.artables.gallery table.products tr:hover .add2basketform .submit i,
+.artables.gallery table.products tr:hover .add2basketform .inbasket i{
+	background-position:-23px -418px;
+}
+.artables.gallery table.products tr:hover .add2basketform.in .tick,
+.artables.gallery table.products tr:hover .add2basketform.in .tick{
+	/*background-position:-16px -595px; big*/
+	background-position:-13px -579px;/* small*/
+}
+.artables.gallery table.products tr:hover .add2basketform input,
+.artables.gallery table.products tr:hover .add2basketform .js-measurename{
+	color:#000;
+}
+.artables.gallery table th,
+.artables.gallery table td{
+	text-align:center;
+}
+.artables.gallery table th.name,
+.artables.gallery table td.name{
+	text-align:left;
+}
+.artables.gallery .add2basketform.in .inbasket{
+	display:none;
+}
+.artables.gallery .add2basketform .tick{
+	visibility:hidden;
+	/*width:16px; big*/
+	width:13px;/* small*/
+	/*height:16px; big*/
+	height:9px;/* small*/
+	margin-left:5px;
+	/*background-position:-16px -613px; big*/
+	background-position:-13px -588px;/* small*/
+}
+.artables.gallery .add2basketform.in .tick{
+	visibility:visible;
+}
+/* /add2basket */
+/* js table fix */
+.artables.gallery.adap .arproducts{
+	overflow-x:scroll;
+	overflow-y:hidden;
+}
+.artables.gallery.adap table.products{
+	border-left:none;
+}
+.artables.gallery.adap table.products th.free,
+.artables.gallery.adap table.products td.free,
+.artables.gallery.adap table.products th.name,
+.artables.gallery.adap table.products td.name{
+	width:0px;
+	max-width:0px;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+.artables.gallery.adap table.products th.free span,
+.artables.gallery.adap table.products td.free span{
+	width:0px;
+}
+.artables.gallery table td.free.qb,
+.artables.gallery table td.free span.qb,
+.artables.gallery table.products tr:hover td.free.qb,
+.artables.gallery table.products tr:hover td.free span.qb{
+	background-color:#66b132;
+}
+.artables.gallery table td.free.da2,
+.artables.gallery table td.free.da2.qb,
+.artables.gallery table td.free span.da2,
+.artables.gallery table td.free span.da2.qb,
+.artables.gallery table.products tr:hover td.free.da2,
+.artables.gallery table.products tr:hover td.free.da2.qb,
+.artables.gallery table.products tr:hover td.free span.da2,
+.artables.gallery table.products tr:hover td.free span.da2.qb{
+	background-color:#c5007c;
+}
+.artables.gallery.adap table.products div.name{
+	width:143px;
+	padding:12px 10px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.artables.gallery.adap table.names{
+	display:block;
+}
+.body .artables.gallery.adap table.products td.free.qb,
+.body .artables.gallery.adap table.products td.free span.qb
+.body .artables.gallery.adap table.products td.free.da2,
+.body .artables.gallery.adap table.products td.free.da2.qb,
+.body .artables.gallery.adap table.products td.free span.da2,
+.body .artables.gallery.adap table.products td.free span.da2.qb{
+	background-color:#fff;
+}
+/* /js table fix */
+@media screen and (max-width: 1010px){
+	body.adaptive .artables.gallery .arproducts{
+		overflow-x:scroll;
+		overflow-y:hidden;
+	}
+	body.adaptive .artables.gallery table.products{
+		border-left:none;
+	}
+	body.adaptive .artables.gallery table.products th.free,
+	body.adaptive .artables.gallery table.products td.free,
+	body.adaptive .artables.gallery table.products th.name,
+	body.adaptive .artables.gallery table.products td.name{
+		width:0px;
+		max-width:0px;
+		padding:0px;
+		margin:0px;
+		overflow:hidden;
+	}
+	body.adaptive .artables.gallery table.products th.free span,
+	body.adaptive .artables.gallery table.products td.free span{
+		width:0px;
+	}
+	body.adaptive .artables.gallery table.products div.name{
+		width:143px;
+		padding:12px 10px;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+		-moz-opacity:0;
+		-khtml-opacity:0;
+		opacity:0;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	body.adaptive .artables.gallery table.names{
+		display:block;
+	}
+	body.adaptive .artables.gallery table.products td.free.qb,
+	body.adaptive .artables.gallery table.products td.free span.qb
+	body.adaptive .artables.gallery table.products td.free.da2,
+	body.adaptive .artables.gallery table.products td.free.da2.qb,
+	body.adaptive .artables.gallery table.products td.free span.da2,
+	body.adaptive .artables.gallery table.products td.free span.da2.qb{
+		background-color:#fff;
+	}
+}
+/******************************* /gallery *******************************/
+
+/******************************* showcase *******************************/
+.showcase{
+	width:100%;
+}
+.showcase .js-element{
+	position:relative;
+	float:left;
+	width:25%;
+}
+.showcase.columns5 .js-element{
+	width:20%;
+}
+.showcase .js-element .inner{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	min-height:325px;
+	background-color:#fff;
+	border:1px solid #F2F2F2;
+	z-index:100;
+}
+.showcase .js-element .padd{
+	padding:10px 10px 4px 10px;
+}
+.showcase .js-element{
+	height:325px;
+}
+.showcase.big .js-element{
+	height:378px;
+}
+/* hover */
+.showcase .js-element .popup{
+	display:none;
+}
+.showcase .js-element:hover .inner,
+.showcase .js-element.hover .inner{
+	border:1px solid #cccccc;
+	z-index:110;
+}
+.showcase .js-element:hover .popup,
+.showcase .js-element.hover .popup{
+	display:block;
+}
+/* /hover */
+
+.showcase .name{
+	height:35px;
+	text-align:center;
+	overflow:hidden;
+}
+.showcase .pic{
+	position:relative;
+	padding:10px 0px;
+	text-align:center;
+}
+.showcase .pic a,
+.showcase .pic span{
+	display:block;
+	width:100%;
+	height:170px;
+	line-height:170px;
+	text-align:center;
+}
+.showcase .pic a img,
+.showcase .pic span img{
+	display:inline-block;
+	vertical-align:middle;
+}
+/* timers */
+.showcase .pic .timers{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+.showcase .pic .timers .clock{
+	float:left;
+	padding:14px 6px;
+	background-color:#748080;
+	-khtml-border-radius:3px 0px 0px 3px;
+	-moz-border-radius:3px 0px 0px 3px;
+	-webkit-border-radius:3px 0px 0px 3px;
+	border-radius:3px 0px 0px 3px;
+}
+.showcase .pic .timers .clock i{
+	width:16px;
+	height:16px;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+.showcase .pic .timers .timer{
+	margin:0 auto;
+	background-color:#e8e8e8;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	-moz-opacity:.7;
+	-khtml-opacity:.7;
+	opacity:.7;
+	-khtml-border-radius:0px 3px 3px 0px;
+	-moz-border-radius:0px 3px 3px 0px;
+	-webkit-border-radius:0px 3px 3px 0px;
+	border-radius:0px 3px 3px 0px;
+}
+.showcase .pic .timers .timer .intimer{
+	float:left;
+	padding:8px 11px 0px;
+}
+.showcase .pic .timers .timer .val,
+.showcase .pic .timers .timer .dvoet{
+	float:left;
+}
+.showcase .pic .timers .timer .val.ml{
+	margin-left:10px;
+}
+.showcase .pic .timers .timer .val .value,
+.showcase .pic .timers .timer .val .podpis{
+	width:100%;
+}
+.showcase .pic .timers .timer .val .value,
+.showcase .pic .timers .timer .dvoet{
+	font:17px Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	letter-spacing:3px;
+}
+.showcase .pic .timers .timer .podpis{
+	font:10px Arial,Helvetica,sans-serif;
+}
+.showcase .pic .timers .timer .progressbar{
+	height:4px;
+	margin-top:4px;
+	background-color:#d4d9de;
+	border:1px solid #b8bcc1;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.showcase .pic .timers .timer .progressbar .progress{
+	position:relative;
+	top:-1px;
+	left:-1px;
+	height:4px;
+	background-repeat:repeat-x;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.showcase .pic .timers .timer.da2 .progressbar .progress{
+	border:1px solid #990060;
+}
+.showcase .pic .timers .timer.qb .progressbar .progress{
+	border:1px solid #62a92c;
+}
+/* /timers */
+/* prices */
+.showcase .prices .prices_jscrollpane{
+	width:100%;
+	overflow:auto;
+}
+.showcase .prices .prev,
+.showcase .prices .next{
+	display:block;
+	width:100%;
+	text-align:center;
+	/*
+	background:#F3F3F3;
+	background:-ms-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-moz-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-o-linear-gradient(top, #f3f3f3, #fff);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#F3F3F3), to(#FFF));
+	background-image:-webkit-linear-gradient(top, #F3F3F3, #FFF);
+	background-image:linear-gradient(to bottom, #F3F3F3, #FFF);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3',endColorstr='#fff',GradientType=0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f3f3, endColorstr=#fff)";
+	*/
+}
+.showcase .prices .prev .icon,
+.showcase .prices .next .icon{
+	width:14px;
+	height:7px;
+	margin-bottom:2px;
+}
+.showcase .prices .prev .icon{
+	background-position:-14px -669px;
+}
+.showcase .prices .prev:hover .icon{
+	background-position:-14px -690px;
+}
+.showcase .prices .next .icon{
+	background-position:0px -669px;
+}
+.showcase .prices .next:hover .icon{
+	background-position:0px -690px;
+}
+.showcase .prices .pricestable{
+	width:100%;
+}
+.showcase .prices .pricestable tr td{
+	padding:8px 10px;
+}
+.showcase .prices .pricestable tr.even td{
+	background-color:#FAFAFA;
+}
+/* /prices */
+/* prices -> soloprice */
+.showcase .soloprice{
+	padding:10px 20px 0px 20px;
+	text-align:center;
+}
+.showcase .soloprice span{
+	display:inline-block;
+	margin-bottom:6px;
+}
+.showcase .soloprice .price.gen{
+	display:block;
+	font-size:18px;
+	margin-bottom:10px;
+}
+.showcase .soloprice .price.old{
+	margin-right:25px;
+}
+/* /prices -> soloprice */
+.showcase .buy,
+.showcase .description{
+	margin-top:20px;
+}
+.showcase .buy .quantity{
+	margin-top:3px;
+}
+.showcase .buy .add2basket,
+.showcase .buy .inbasket{
+	float:right;
+	padding:4px 15px;
+}
+/* compare */
+.showcase .compare{
+	margin-top:12px;
+}
+/* /compare */
+/* favorite & share */
+.showcase .favorishare{
+	margin-top:5px;
+}
+.showcase .add2favorite{
+	color:#666666;
+	font-size:11px;
+	text-decoration:none;
+}
+.showcase .add2favorite:hover{
+	color:#214496;
+	text-decoration:underline;
+}
+.showcase .add2favorite .icon,
+.showcase .add2favorite .counter{
+	margin-right:3px;
+}
+.showcase .add2favorite .icon{
+	width:12px;
+	height:10px;
+	margin-bottom:2px;
+	background-position:0px -629px;
+}
+.showcase .add2favorite.in .icon{
+	background-position:-12px -629px;
+}
+.showcase .share{
+	float:right;
+}
+.showcase .share .b-share-icon{
+	height:10px;
+	background-repeat:no-repeat;
+}
+.showcase .share .b-share{
+	padding:1px 0px!important;
+}
+.showcase .share .b-share__handle{
+	padding:5px 3px 1px 7px!important;
+}
+.showcase .share a .b-share-icon.b-share-icon_vkontakte{
+	width:9px;
+	background-position:0px -301px;
+}
+.showcase .share a:hover .b-share-icon.b-share-icon_vkontakte{
+	background-position:-9px -301px;
+}
+.showcase .share a .b-share-icon.b-share-icon_facebook{
+	width:6px;
+	background-position:0px -291px;
+}
+.showcase .share a:hover .b-share-icon.b-share-icon_facebook{
+	background-position:-6px -291px;
+}
+.showcase .share a .b-share-icon.b-share-icon_twitter{
+	width:8px;
+	background-position:0px -311px;
+}
+.showcase .share a:hover .b-share-icon.b-share-icon_twitter{
+	background-position:-8px -311px;
+}
+.showcase .share a.email2friend .icon{
+	width:14px;
+	height:10px;
+	background-position:0px -280px;
+}
+.showcase .share a.email2friend:hover .icon{
+	background-position:-14px -280px;
+}
+
+.showcase .favorite{
+	float:left;
+}
+/* /favorite & share */
+/* 605px - small filter */
+@media screen and (max-width:1280px) and (min-width:1001px){
+	body.adaptive .showcase.columns5 .js-element{
+		width:25%;
+	}
+	body.adaptive .showcase .js-element{
+		width:33%;
+	}
+}
+@media screen and (max-width:1000px) and (min-width:761px){
+	body.adaptive .showcase.columns5 .js-element{
+		width:33%;
+	}
+	body.adaptive .showcase .js-element{
+		width:50%;
+	}
+}
+@media screen and (max-width:760px) and (min-width:606px){
+	body.adaptive .showcase.columns5 .js-element{
+		width:50%;
+	}
+	body.adaptive .showcase .js-element{
+		width:100%;
+	}
+}
+@media screen and (max-width:605px) and (min-width:541px){
+	body.adaptive .showcase.columns5 .js-element,
+	body.adaptive .showcase .js-element{
+		width:50%;
+	}
+}
+@media screen and (max-width:540px){
+	body.adaptive .showcase.columns5 .js-element,
+	body.adaptive .showcase .js-element{
+		width:100%;
+	}
+}
+/******************************* /showcase *******************************/

@@ -1,0 +1,23 @@
+.nasvyazi .block{
+	width:33%;
+	float:left;
+	padding:0px 30px 20px 0px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+@media screen and (max-width:875px) and (min-width:481px){
+	body.adaptive .nasvyazi .block.left{
+		width:100%;
+	}
+	body.adaptive .nasvyazi .block.center,
+	body.adaptive .nasvyazi .block.right{
+		width:50%;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .nasvyazi .block{
+		width:100%;
+	}
+}

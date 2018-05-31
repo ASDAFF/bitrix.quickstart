@@ -129,8 +129,8 @@ Class sologroupltd_tools extends CModule
   		);
   		foreach ($array_functions as $value) {
   			if(function_exists($value)){
-  				//Эти функции не должны быть в ядре битрикса
-  				//return false;//Все-таки эти функции могут там быть
+  				//Р­С‚Рё С„СѓРЅРєС†РёРё РЅРµ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РІ СЏРґСЂРµ Р±РёС‚СЂРёРєСЃР°
+  				//return false;//Р’СЃРµ-С‚Р°РєРё СЌС‚Рё С„СѓРЅРєС†РёРё РјРѕРіСѓС‚ С‚Р°Рј Р±С‹С‚СЊ
   			}
   		}
   

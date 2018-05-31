@@ -1,0 +1,342 @@
+.wrapGeoIpReaspekt{
+	font-family: Arial;
+}
+#ReaspektPopupBody{
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2f2f2 49%, #dbdbdb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f2f2f2 49%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f2f2f2 49%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+    font-family: Arial;
+}
+.reaspektGeobaseTitle {
+    color: #363636;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.reaspekt_row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.reaspekt_row:after {
+    clear: both;
+}
+.reaspekt_row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.reaspekt_clearfix:before, 
+.reaspekt_clearfix:after {
+    content: "";
+    display: table;
+}
+.reaspekt_clearfix:after {
+    clear: both;
+}
+.reaspekt_col-sm-4,
+.reaspekt_col-sm-12 {
+    box-sizing: border-box;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+.reaspekt_col-sm-4 {
+    width: 33.3333%;
+}
+.reaspekt_col-sm-12 {
+    width: 100%;
+}
+.reaspektGeobaseCities .reaspektGeobaseAct{
+	margin-bottom: 15px;
+	line-height: 100%;
+}
+.reaspektGeobaseCities .reaspektGeobaseAct a,
+.reaspektGeobaseCities .reaspektGeobaseAct strong{
+	font-size: 14px;
+    line-height: 100%;
+	color: #363636;
+    white-space: nowrap;
+}
+.reaspektGeobaseCities .reaspektGeobaseAct a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+.reaspektGeobaseFind {
+    margin: 0 0 25px 0;
+    position: relative;
+}
+
+#reaspekt_preloader {
+    background: rgba(0, 0, 0, 0.3) url(/local/css/reaspekt/reaspekt.geobase/images/preloader.png) no-repeat center center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.wrapGeoIpReaspekt {
+	position: relative;
+	display: inline-block;
+}
+.wrapGeoIpReaspekt .linkReaspekt{
+	color: #1989CB;
+	text-decoration: none;
+	border-bottom: 1px dashed #1989CB;
+	cursor: pointer;
+	line-height: 100%;
+	display: inline-block;
+}
+.wrapGeoIpReaspekt .linkReaspekt:hover{
+	border-bottom-color: transparent;
+}
+.wrapQuestionReaspekt{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	white-space: nowrap;
+	z-index: 5;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 -1px 7px -1px #000;
+	margin-top: 10px;
+}
+.wrapQuestionReaspekt:before{
+	position: absolute;
+	border-bottom: 5px solid #ffffff;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	content: "";
+	display: block;
+	right: 50%;
+	bottom: 100%;
+}
+.questionYourCityReaspekt{
+	padding: 10px 10px 5px;
+}
+.questionCityReaspekt{
+	padding: 0 10px 10px;
+}
+.questionButtonReaspekt {
+    background-color: #1989cb;
+    border-radius: 0 0 5px 5px;
+    color: #ffffff;
+	overflow: hidden;
+}
+.questionNoReaspekt, .questionYesReaspekt {
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+	cursor: pointer;
+}
+.questionNoReaspekt{
+	border-right: 1px solid #005287;
+}
+.questionYesReaspekt {
+    border-left: 1px solid #68c7ff;
+}
+.questionNoReaspekt:hover, .questionYesReaspekt:hover{
+	background-color: #18A5F7;
+}
+.questionNoReaspekt:active, .questionYesReaspekt:active{
+	box-shadow: 0 4px 4px -3px #000 inset;
+}.wrapGeoIpReaspekt{
+	font-family: Arial;
+}
+#ReaspektPopupBody{
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f2f2f2 49%, #dbdbdb 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f2f2f2 49%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f2f2f2 49%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+    font-family: Arial;
+}
+.reaspekt_geobase_title {
+    color: #363636;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.reaspekt_row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.reaspekt_row:after {
+    clear: both;
+}
+.reaspekt_row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.reaspekt_clearfix:before, 
+.reaspekt_clearfix:after {
+    content: "";
+    display: table;
+}
+.reaspekt_clearfix:after {
+    clear: both;
+}
+.reaspekt_col-sm-4,
+.reaspekt_col-sm-12 {
+    box-sizing: border-box;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+.reaspekt_col-sm-4 {
+    width: 33.3333%;
+}
+.reaspekt_col-sm-12 {
+    width: 100%;
+}
+.reaspekt_geobase_cities .reaspekt_geobase_act{
+	margin-bottom: 15px;
+	line-height: 100%;
+}
+.reaspekt_geobase_cities .reaspekt_geobase_act a,
+.reaspekt_geobase_cities .reaspekt_geobase_act strong{
+	font-size: 14px;
+    line-height: 100%;
+	color: #363636;
+    white-space: nowrap;
+}
+.reaspekt_geobase_cities .reaspekt_geobase_act a:after {
+    background: #407da6 none repeat scroll 0 0;
+}
+.reaspekt_geobase_find {
+    margin: 0 0 25px 0;
+    position: relative;
+}
+
+#reaspekt_preloader {
+    background: rgba(0, 0, 0, 0.3) url(/local/css/reaspekt/reaspekt.geobase/images/preloader.png) no-repeat center center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#reaspektGeobaseSearch {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #363636;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #363636;
+    font: 14px/18px Arial,sans-serif;
+    height: auto;
+    padding: 7px 8px;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 100%;
+    box-sizing: border-box;
+}
+#reaspektGeobaseSearch:focus{
+    box-shadow: 0 2px 4px -1px #999 inset;
+}
+.reaspektResultCityAjax {
+    background: #f2f2f2 none repeat scroll 0 0;
+    height: 140px;
+    overflow: auto;
+    padding: 10px;
+    top: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.reaspektSearchCity {
+    line-height: 26px;
+}
+.reaspektSearchCity a{
+    color: #363636;
+    font-size: 14px;
+    line-height: 100%;
+}
+.reaspektSearchCity a:hover{
+    text-decoration: underline;
+}
+.wrapGeoIpReaspekt {
+	position: relative;
+	display: inline-block;
+}
+.wrapGeoIpReaspekt .linkReaspekt{
+	color: #1989CB;
+	text-decoration: none;
+	border-bottom: 1px dashed #1989CB;
+	cursor: pointer;
+	line-height: 100%;
+	display: inline-block;
+}
+.wrapGeoIpReaspekt .linkReaspekt:hover{
+	border-bottom-color: transparent;
+}
+.wrapQuestionReaspekt{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	white-space: nowrap;
+	z-index: 5;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 -1px 7px -1px #000;
+	margin-top: 10px;
+}
+.wrapQuestionReaspekt:before{
+	position: absolute;
+	border-bottom: 5px solid #ffffff;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	content: "";
+	display: block;
+	right: 50%;
+	bottom: 100%;
+}
+.questionYourCityReaspekt{
+	padding: 10px 10px 5px;
+}
+.questionCityReaspekt{
+	padding: 0 10px 10px;
+}
+.questionButtonReaspekt {
+    background-color: #1989cb;
+    border-radius: 0 0 5px 5px;
+    color: #ffffff;
+	overflow: hidden;
+}
+.questionNoReaspekt, .questionYesReaspekt {
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+	cursor: pointer;
+}
+.questionNoReaspekt{
+	border-right: 1px solid #005287;
+}
+.questionYesReaspekt {
+    border-left: 1px solid #68c7ff;
+}
+.questionNoReaspekt:hover, .questionYesReaspekt:hover{
+	background-color: #18A5F7;
+}
+.questionNoReaspekt:active, .questionYesReaspekt:active{
+	box-shadow: 0 4px 4px -3px #000 inset;
+}

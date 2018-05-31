@@ -1,14 +1,14 @@
 <?
-//Ïîäêëþ÷àåì äàííûé ñêðèïò èç init.php ñëåäóþùåé ñòðî÷êîé(÷òîáû ôóíêöèè áûëè äîñòóïíû ïî âñåìó Áèòðèêñó):
+//ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ð¹ ÑÐºÑ€Ð¸Ð¿Ñ‚ Ð¸Ð· init.php ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ ÑÑ‚Ñ€Ð¾Ñ‡ÐºÐ¾Ð¹(Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð±Ñ‹Ð»Ð¸ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹ Ð¿Ð¾ Ð²ÑÐµÐ¼Ñƒ Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑÑƒ):
 //	if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sologroupltd.tools/init.php")){require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sologroupltd.tools/init.php");}
 
-	if(!$pls_not_include_module){//Äàííàÿ ïåðåìåííàÿ óñòàíàâëèâàåòñÿ ïðè ïîäêëþ÷åíèè ìîäóëÿ ïåðâûé ðàç
-		if(CModule::IncludeModuleEx('sologroupltd.tools')) $pls_not_include_module = true;//Åñëè ìû 2 ðàçà ïîäðÿä áóäåì ïîäêëþ÷àòü ìîäóëü ñàì èç ñåáÿ
-		// - ó íàñ áóäåò âîçíèêàòü Warning
+	if(!$pls_not_include_module){//Ð”Ð°Ð½Ð½Ð°Ñ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ñ€Ð°Ð·
+		if(CModule::IncludeModuleEx('sologroupltd.tools')) $pls_not_include_module = true;//Ð•ÑÐ»Ð¸ Ð¼Ñ‹ 2 Ñ€Ð°Ð·Ð° Ð¿Ð¾Ð´Ñ€ÑÐ´ Ð±ÑƒÐ´ÐµÐ¼ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ ÑÐ°Ð¼ Ð¸Ð· ÑÐµÐ±Ñ
+		// - Ñƒ Ð½Ð°Ñ Ð±ÑƒÐ´ÐµÑ‚ Ð²Ð¾Ð·Ð½Ð¸ÐºÐ°Ñ‚ÑŒ Warning
 	}
 
-//	if(!$pls_not_include_module){//Åñëè ìîäóëü íå óñòàíîâëåí - ïîäêëþ÷åíèå ïðîèçâîäèòüñÿ íå áóäåò
-		$arFuncSoloTools = array('getibc','dump');//ÏÐîâåðÿåì, âîçìîæíî òàêèå ôóíêöèè óæå çäåñü ñóùåñòâóþò
+//	if(!$pls_not_include_module){//Ð•ÑÐ»Ð¸ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½ - Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÑŒÑÑ Ð½Ðµ Ð±ÑƒÐ´ÐµÑ‚
+		$arFuncSoloTools = array('getibc','dump');//ÐŸÐ Ð¾Ð²ÐµÑ€ÑÐµÐ¼, Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ñ‚Ð°ÐºÐ¸Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ ÑƒÐ¶Ðµ Ð·Ð´ÐµÑÑŒ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‚
 		foreach ($arFuncSoloTools as $ValueSoloTools) {
 			if(!function_exists($ValueSoloTools)){
 				if(file_exists   ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sologroupltd.tools/functions_$ValueSoloTools.php")){

@@ -3,7 +3,7 @@
 namespace Cosmos\Urlrewrite;
 
 /**
- * Êëàññ äëÿ ðàáîòû ñ urlrewrite.php áèòðèêñà.
+ * ÐšÐ»Ð°ÑÑ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ urlrewrite.php Ð±Ð¸Ñ‚Ñ€Ð¸ÐºÑÐ°.
  */
 class Urlrewrite {
 
@@ -26,13 +26,13 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä ñîðòèðîâêè ïðàâèë èç urlrewrite.php.
+     * ÐœÐµÑ‚Ð¾Ð´ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð¿Ñ€Ð°Ð²Ð¸Ð» Ð¸Ð· urlrewrite.php.
      *
-     * Ñîðòèðóåò ïðàâèëà â çàâèñèìîñòè îò çíà÷åíèÿ ïîëÿ SORT, îñòàâëÿåò íà òîì æå ìåñòå ïðàâèëà ó êîòîðûõ íåò ïîëÿ SORT.
+     * Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÑ‚ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ð² Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚Ð¸ Ð¾Ñ‚ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»Ñ SORT, Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ Ð½Ð° Ñ‚Ð¾Ð¼ Ð¶Ðµ Ð¼ÐµÑÑ‚Ðµ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð½ÐµÑ‚ Ð¿Ð¾Ð»Ñ SORT.
      */
     private function _sort() {
 
-        $this->_aLogMessage[] = "2. Íà÷èíàåì ñîðòèðîâêó. Ýëåìåíòîâ: " . count( $this->_aRewriteRules ) . "\n" . print_r( $this->_aRewriteRules, true );
+        $this->_aLogMessage[] = "2. ÐÐ°Ñ‡Ð¸Ð½Ð°ÐµÐ¼ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÑƒ. Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " . count( $this->_aRewriteRules ) . "\n" . print_r( $this->_aRewriteRules, true );
 
         $aSort = array();
         $aItemValues = array();
@@ -46,19 +46,19 @@ class Urlrewrite {
             return ($aFirst[ 'SORT' ] < $aSecond[ 'SORT' ]) ? -1 : 1;
         });
         
-        $this->_aLogMessage[] = "3. Çàêîí÷èëè ñîðòèðîâêó. Ýëåìåíòîâ: " . count( $this->_aRewriteRules ) . "\n" . print_r( $this->_aRewriteRules, true );
+        $this->_aLogMessage[] = "3. Ð—Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ð»Ð¸ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÑƒ. Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " . count( $this->_aRewriteRules ) . "\n" . print_r( $this->_aRewriteRules, true );
     }
 
 
 
     /**
-     * Ìåòîä ôîðìèðóåò íîâîå ñîäåðæèìîå urlrewrite.php.
+     * ÐœÐµÑ‚Ð¾Ð´ Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÑ‚ Ð½Ð¾Ð²Ð¾Ðµ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ urlrewrite.php.
      *
      * @return String
      */
     private function _prepareText() {
 
-        $this->_aLogMessage[] = "4. Ïîäãîòîâêà äàííûõ ê çàïèñè â ôàéë. Ýëåìåíòîâ: " . count( $this->_aRewriteRules );
+        $this->_aLogMessage[] = "4. ÐŸÐ¾Ð´Ð³Ð¾Ñ‚Ð¾Ð²ÐºÐ° Ð´Ð°Ð½Ð½Ñ‹Ñ… Ðº Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ñ„Ð°Ð¹Ð». Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " . count( $this->_aRewriteRules );
         $aOutput = array();
         if ( count( $this->_aRewriteRules ) > 0 ) {
             $aOutput[] = '<?';
@@ -73,7 +73,7 @@ class Urlrewrite {
             $aOutput[] = ');';
             $aOutput[] = '?>';
         } else {
-            $this->_aLogMessage[] = "4.1. Error: Íå óäàëîñü ñôîðìèðîâàòü çàïîëíåííûé ôàéë ñ ëîãîì";
+            $this->_aLogMessage[] = "4.1. Error: ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ ÑÑ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ Ñ„Ð°Ð¹Ð» Ñ Ð»Ð¾Ð³Ð¾Ð¼";
             $this->_aLogMessage[] = "detail_info: " . $sAllLogMessage;
             $this->_aLogMessage[] = "count_elements: " . count( $this->_aRewriteRules );
         }
@@ -84,19 +84,19 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä ïðîèçâîäèò çàïèñü â ôàéë.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð² Ñ„Ð°Ð¹Ð».
      */
     private function _writeToFile( $sFileContent ) {
 
         if ( !$sFileContent ) {
-            $this->_aLogMessage[] = "5. Íîâûå äàííûå íå çàïèñàíû (îòñóòñòâóþò)";
+            $this->_aLogMessage[] = "5. ÐÐ¾Ð²Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ (Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‚)";
             return false;
         }
         if ( file_put_contents( $this->_sFilePath, $sFileContent ) ) {
-            $this->_aLogMessage[] = "5. Íîâûå äàííûå çàïèñàíû â ôàéë";
+            $this->_aLogMessage[] = "5. ÐÐ¾Ð²Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð² Ñ„Ð°Ð¹Ð»";
             return true;
         } else {
-            $this->_aLogMessage[] = "5. Íîâûå äàííûå íå çàïèñàíû (íå óäàëîñü îòêðûòü ôàéë - " . $this->_sFilePath . ")";
+            $this->_aLogMessage[] = "5. ÐÐ¾Ð²Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð½Ðµ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ (Ð½Ðµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» - " . $this->_sFilePath . ")";
             return false;
         }
     }
@@ -104,9 +104,9 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä ïðîâåðÿåò íåîáõîäèìîñòü ïåðåçàïèñè ôàéëà.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿ÐµÑ€ÐµÐ·Ð°Ð¿Ð¸ÑÐ¸ Ñ„Ð°Ð¹Ð»Ð°.
      *
-     * Åñëè õýø ôàéëà íå ðàâåí õýøó ñîõðàí¸ííîìó â áàçó âîçâðàùàåò true èíà÷å false.
+     * Ð•ÑÐ»Ð¸ Ñ…ÑÑˆ Ñ„Ð°Ð¹Ð»Ð° Ð½Ðµ Ñ€Ð°Ð²ÐµÐ½ Ñ…ÑÑˆÑƒ ÑÐ¾Ñ…Ñ€Ð°Ð½Ñ‘Ð½Ð½Ð¾Ð¼Ñƒ Ð² Ð±Ð°Ð·Ñƒ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ true Ð¸Ð½Ð°Ñ‡Ðµ false.
      *
      * @return Boolean
      */
@@ -117,7 +117,7 @@ class Urlrewrite {
 
 
     /**
-     * ãåíåðèðóåì õýø ôàéëà.
+     * Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€ÑƒÐµÐ¼ Ñ…ÑÑˆ Ñ„Ð°Ð¹Ð»Ð°.
      *
      * @return String
      */
@@ -128,7 +128,7 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä ïîëó÷àåò èç áàçû õýø ôàéëà.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ð¸Ð· Ð±Ð°Ð·Ñ‹ Ñ…ÑÑˆ Ñ„Ð°Ð¹Ð»Ð°.
      *
      * @return String
      */
@@ -139,7 +139,7 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä çàïèñûâàåò â áàçó õýø ôàéëà.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÑ‚ Ð² Ð±Ð°Ð·Ñƒ Ñ…ÑÑˆ Ñ„Ð°Ð¹Ð»Ð°.
      */
     private function _setHashFile() {
         file_put_contents( $this->_sConfPath . "/urlrewrite_hash", $this->_generateHash() );
@@ -148,21 +148,21 @@ class Urlrewrite {
 
 
     /**
-     * Ìåòîä çàïèñûâàåò â urlrewrite.php îòñîðòèðîâàííûé ìàññèâ ïðàâèë.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÑ‚ Ð² urlrewrite.php Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ñ€Ð°Ð²Ð¸Ð».
      */
     public function reWrite() {
-        $this->_sort(); // ñîðòèðóåì ìàññèâ
-        if ( $this->_writeToFile( $this->_prepareText() ) ){ // çàïèñûâàåì ôàéë ïîäãîòîâëåííûé äëÿ çàïèñè òåêñò
-            $this->_setHashFile(); // çàïèñûâàåì õýø ôàéëà            
+        $this->_sort(); // ÑÐ¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼ Ð¼Ð°ÑÑÐ¸Ð²
+        if ( $this->_writeToFile( $this->_prepareText() ) ){ // Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ñ„Ð°Ð¹Ð» Ð¿Ð¾Ð´Ð³Ð¾Ñ‚Ð¾Ð²Ð»ÐµÐ½Ð½Ñ‹Ð¹ Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ñ‚ÐµÐºÑÑ‚
+            $this->_setHashFile(); // Ð·Ð°Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ñ…ÑÑˆ Ñ„Ð°Ð¹Ð»Ð°            
         }
     }
 
 
 
     /**
-     * Ìåòîä èíèöèàëèçàöèè.
+     * ÐœÐµÑ‚Ð¾Ð´ Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸.
      *
-     * Çàïîìèíàåò ïóòü äî ôàéëà, ïðîâåðÿåò åãî ñóùåñòâîâàíèå, çàïîìèíàåò ìàññèâ ïðàâèë.
+     * Ð—Ð°Ð¿Ð¾Ð¼Ð¸Ð½Ð°ÐµÑ‚ Ð¿ÑƒÑ‚ÑŒ Ð´Ð¾ Ñ„Ð°Ð¹Ð»Ð°, Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ ÐµÐ³Ð¾ ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð¾Ð²Ð°Ð½Ð¸Ðµ, Ð·Ð°Ð¿Ð¾Ð¼Ð¸Ð½Ð°ÐµÑ‚ Ð¼Ð°ÑÑÐ¸Ð² Ð¿Ñ€Ð°Ð²Ð¸Ð».
      */
     public function init() {
         
@@ -171,7 +171,7 @@ class Urlrewrite {
         $this->_sDocumentRoot = $_SERVER["DOCUMENT_ROOT"];
 
         /**
-         * @todo îðãàíèçîâàòü ðåäàêòèðîâàíèå äèðåêòîðèè äëÿ ëîãîâ â àäìèíêå
+         * @todo Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ð¸ Ð´Ð»Ñ Ð»Ð¾Ð³Ð¾Ð² Ð² Ð°Ð´Ð¼Ð¸Ð½ÐºÐµ
          */
         $this->_sLogsPath = $this->_sDocumentRoot . "/upload/logs";
         if ( !file_exists( $this->_sLogsPath ) ) {
@@ -179,7 +179,7 @@ class Urlrewrite {
         }
 
         /**
-         * @todo îðãàíèçîâàòü óïðàâëåíèå âðåìåííîé äèðåêòîðèåé
+         * @todo Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸ÐµÐ¹
          */
         $this->_sConfPath = $this->_sDocumentRoot . "/upload/tmp";
         if ( !file_exists( $this->_sConfPath ) ) {
@@ -187,7 +187,7 @@ class Urlrewrite {
         }
 
         /**
-         * @todo Îðãàíèçîâàòü ìíîãîóðîâíåâîå ëîãèðîâàíèå è óïðàâëåíèå èì â àäìèíêå
+         * @todo ÐžÑ€Ð³Ð°Ð½Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¼Ð½Ð¾Ð³Ð¾ÑƒÑ€Ð¾Ð²Ð½ÐµÐ²Ð¾Ðµ Ð»Ð¾Ð³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¸ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¸Ð¼ Ð² Ð°Ð´Ð¼Ð¸Ð½ÐºÐµ
          */
         $this->_aLogMessage[] = "";
         $this->_aLogMessage[] = "==========LOG from Cosmos\UrlRewrite. Date " . date( "d:m:Y H:i:s" ) . "(time: " .  time(). ")==========";
@@ -201,9 +201,9 @@ class Urlrewrite {
             include($this->_sFilePath);
             $this->_aRewriteRules = $arUrlRewrite;
             $this->_aLogMessage[] = "file_hash:\t" . $this->_generateHash();
-            $this->_aLogMessage[] = "1. Ôàéë îòêðûò - " . $this->_sFilePath . ". Ñîäåðæèò ýëåìåíòîâ: " . count( $this->_aRewriteRules );
+            $this->_aLogMessage[] = "1. Ð¤Ð°Ð¹Ð» Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ - " . $this->_sFilePath . ". Ð¡Ð¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " . count( $this->_aRewriteRules );
         } else {
-            $this->_aLogMessage[] = "1. Íå óäàëîñü îòêðûòü ôàéë - " . $this->_sFilePath;
+            $this->_aLogMessage[] = "1. ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» - " . $this->_sFilePath;
         }
         
     }
@@ -219,7 +219,7 @@ class Urlrewrite {
         $this->_aLogMessage[] = "==========/LOG from Cosmos\UrlRewrite. Date " . date( "d:m:Y H:i:s" ) . "(time: " .  time(). ")==========";
 
         /**
-         * @todo óïîìÿyenm â äîêóìåíòàöèè, ÷òî îòêëþ÷èòü ëîãèðîâàíèå ìîæíî ñ ïîìîùüþ êîíñòàíòû 
+         * @todo ÑƒÐ¿Ð¾Ð¼Ñyenm Ð² Ð´Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ð°Ñ†Ð¸Ð¸, Ñ‡Ñ‚Ð¾ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð»Ð¾Ð³Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð¾Ð¶Ð½Ð¾ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ñ‹ 
          */
         if ( $this->_aLogMessage && defined( 'URLREWRITE_SORT_DEBUG' ) && URLREWRITE_SORT_DEBUG === 'Y' ) {
             $this->logging( "/urlrewrite.log", join( "\n", $this->_aLogMessage ) );

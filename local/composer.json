@@ -1,0 +1,20 @@
+{
+  "name": "asdaff/quickstart-project",
+  "description": "Новый проект",
+  "keywords": ["quickstart", "asdaff"],
+  "type": "project",
+  "config": {
+    "disable-tls": true,
+    "secure-http": false
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "aak74/bx-data": "dev-master",
+    "maximaster/tools.events": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendor\\Namespace\\": "/../local/php_interface/classes/"
+    }
+  }
+}

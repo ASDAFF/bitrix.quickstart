@@ -1,37 +1,37 @@
 <?
 
 
-  //Возвращает ID подскойства у свойства в инфоблоке (если задано XML_ID)
-  //  или ID свойства у инфоблока
-  //$IBLOCK_ID - число либо мнемонический код инфоблока
+  //Р’РѕР·РІСЂР°С‰Р°РµС‚ ID РїРѕРґСЃРєРѕР№СЃС‚РІР° Сѓ СЃРІРѕР№СЃС‚РІР° РІ РёРЅС„РѕР±Р»РѕРєРµ (РµСЃР»Рё Р·Р°РґР°РЅРѕ XML_ID)
+  //  РёР»Рё ID СЃРІРѕР№СЃС‚РІР° Сѓ РёРЅС„РѕР±Р»РѕРєР°
+  //$IBLOCK_ID - С‡РёСЃР»Рѕ Р»РёР±Рѕ РјРЅРµРјРѕРЅРёС‡РµСЃРєРёР№ РєРѕРґ РёРЅС„РѕР±Р»РѕРєР°
   function get_id_of_list_property($IBLOCK_ID, $CODE = false, $XML_ID = false){
-      //У множественного свойства типа список (СИМВОЛЬНЫЙ КОД="TYPE") есть елемент (XML_ID="OUT")
-      //Необходимо получить ID элемента OUT
+      //РЈ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ СЃРІРѕР№СЃС‚РІР° С‚РёРїР° СЃРїРёСЃРѕРє (РЎРРњР’РћР›Р¬РќР«Р™ РљРћР”="TYPE") РµСЃС‚СЊ РµР»РµРјРµРЅС‚ (XML_ID="OUT")
+      //РќРµРѕР±С…РѕРґРёРјРѕ РїРѕР»СѓС‡РёС‚СЊ ID СЌР»РµРјРµРЅС‚Р° OUT
     global $SOLO_GETIBC_IBLOCK_CODE_ARRAY;
-    if (!CModule::IncludeModuleEx('iblock')) return false;//Возможно это будет снижать производитльность
-      if(!is_numeric($IBLOCK_ID)){//Если это не ID
+    if (!CModule::IncludeModuleEx('iblock')) return false;//Р’РѕР·РјРѕР¶РЅРѕ СЌС‚Рѕ Р±СѓРґРµС‚ СЃРЅРёР¶Р°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚Р»СЊРЅРѕСЃС‚СЊ
+      if(!is_numeric($IBLOCK_ID)){//Р•СЃР»Рё СЌС‚Рѕ РЅРµ ID
           if(!isset($SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1])){
               $res = CIBlock::GetList(Array(),Array("CODE"=>$IBLOCK_ID), true);
               if ($ar_res = $res->Fetch()){
-                  $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1] = $ar_res['ID'];//Сохраняем для кеша чтобы несколько раз не делать запрос по API
+                  $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1] = $ar_res['ID'];//РЎРѕС…СЂР°РЅСЏРµРј РґР»СЏ РєРµС€Р° С‡С‚РѕР±С‹ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р· РЅРµ РґРµР»Р°С‚СЊ Р·Р°РїСЂРѕСЃ РїРѕ API
                   $IBLOCK_ID = $ar_res['ID'];
               }else return false;
-          }else $IBLOCK_ID = $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1];//-1 - означает что мы сохраням номер по коду
+          }else $IBLOCK_ID = $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1];//-1 - РѕР·РЅР°С‡Р°РµС‚ С‡С‚Рѕ РјС‹ СЃРѕС…СЂР°РЅСЏРј РЅРѕРјРµСЂ РїРѕ РєРѕРґСѓ
 
       }
-      if($XML_ID){//Если указано-ищем элемент списка по коду
+      if($XML_ID){//Р•СЃР»Рё СѓРєР°Р·Р°РЅРѕ-РёС‰РµРј СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїРѕ РєРѕРґСѓ
           $arFilter = Array("IBLOCK_ID"=>$IBLOCK_ID, "CODE"=>$CODE, "XML_ID"=> $XML_ID);
           $property_enums = CIBlockPropertyEnum::GetList(Array(), $arFilter);
           if($enum_fields = $property_enums->Fetch()){
               $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][$CODE] = $enum_fields['ID'];
               return $enum_fields['ID'];
           }
-      }elseif($CODE){//Если не указано - то значит мы ищем id свойства инфоблока по XML_ID свойства
+      }elseif($CODE){//Р•СЃР»Рё РЅРµ СѓРєР°Р·Р°РЅРѕ - С‚Рѕ Р·РЅР°С‡РёС‚ РјС‹ РёС‰РµРј id СЃРІРѕР№СЃС‚РІР° РёРЅС„РѕР±Р»РѕРєР° РїРѕ XML_ID СЃРІРѕР№СЃС‚РІР°
           $properties = CIBlockProperty::GetList(Array(), Array("CODE"=>$CODE, "IBLOCK_ID"=>$IBLOCK_ID));
           if ($prop_fields = $properties->GetNext()){
             return $prop_fields["ID"];
           }
-      }else{//Значит нам нужен ID инфоблока
+      }else{//Р—РЅР°С‡РёС‚ РЅР°Рј РЅСѓР¶РµРЅ ID РёРЅС„РѕР±Р»РѕРєР°
           return $IBLOCK_ID;
       }
       return false;

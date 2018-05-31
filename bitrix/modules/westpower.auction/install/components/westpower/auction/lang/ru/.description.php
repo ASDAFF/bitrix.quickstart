@@ -1,4 +1,4 @@
 <?
-$MESS ['AUCTION_NAME'] = "Àóêöèîíû";
-$MESS ['AUCTION_DESCRIPTION'] = "Êîìïëåêñíûé êîìïîíåíò àóêöèîíîâ";
+$MESS ['AUCTION_NAME'] = "ÐÑƒÐºÑ†Ð¸Ð¾Ð½Ñ‹";
+$MESS ['AUCTION_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ð¹ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð°ÑƒÐºÑ†Ð¸Ð¾Ð½Ð¾Ð²";
 ?>

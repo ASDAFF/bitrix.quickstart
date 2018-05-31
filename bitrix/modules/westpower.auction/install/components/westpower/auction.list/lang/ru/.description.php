@@ -1,4 +1,4 @@
 <?
-$MESS ['SIM_COMPONENT_DETAIL_NAME'] = "Ñïèñîê àóêöèîíîâ";
-$MESS ['SIM_COMPONENT_DETAIL_DESCRIPTION'] = "Ñïèñîê àóêöèîíîâ";
+$MESS ['SIM_COMPONENT_DETAIL_NAME'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð°ÑƒÐºÑ†Ð¸Ð¾Ð½Ð¾Ð²";
+$MESS ['SIM_COMPONENT_DETAIL_DESCRIPTION'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð°ÑƒÐºÑ†Ð¸Ð¾Ð½Ð¾Ð²";
 ?>

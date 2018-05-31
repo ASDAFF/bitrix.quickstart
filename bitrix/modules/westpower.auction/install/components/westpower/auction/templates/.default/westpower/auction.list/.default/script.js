@@ -37,7 +37,7 @@ function auctionTimer()
 		}
 		else
 		{
-			$('#timer_'+timerId).text(BX.message('¿_CONFIRM'));
+			$('#timer_'+timerId).text(BX.message('–ê_CONFIRM'));
 		}
 	});
 	setTimeout(auctionTimer, 1000);

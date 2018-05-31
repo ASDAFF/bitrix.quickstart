@@ -31,37 +31,37 @@ Class CSoloTools{
 
 
 
-  //Возвращает ID подскойства у свойства в инфоблоке (если задано XML_ID)
-  //  или ID свойства у инфоблока
-  //$IBLOCK_ID - число либо мнемонический код инфоблока
+  //Р’РѕР·РІСЂР°С‰Р°РµС‚ ID РїРѕРґСЃРєРѕР№СЃС‚РІР° Сѓ СЃРІРѕР№СЃС‚РІР° РІ РёРЅС„РѕР±Р»РѕРєРµ (РµСЃР»Рё Р·Р°РґР°РЅРѕ XML_ID)
+  //  РёР»Рё ID СЃРІРѕР№СЃС‚РІР° Сѓ РёРЅС„РѕР±Р»РѕРєР°
+  //$IBLOCK_ID - С‡РёСЃР»Рѕ Р»РёР±Рѕ РјРЅРµРјРѕРЅРёС‡РµСЃРєРёР№ РєРѕРґ РёРЅС„РѕР±Р»РѕРєР°
   function get_id_of_list_property($IBLOCK_ID, $CODE = false, $XML_ID = false){
-      //У множественного свойства типа список (СИМВОЛЬНЫЙ КОД="TYPE") есть елемент (XML_ID="OUT")
-      //Необходимо получить ID элемента OUT
+      //РЈ РјРЅРѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ СЃРІРѕР№СЃС‚РІР° С‚РёРїР° СЃРїРёСЃРѕРє (РЎРРњР’РћР›Р¬РќР«Р™ РљРћР”="TYPE") РµСЃС‚СЊ РµР»РµРјРµРЅС‚ (XML_ID="OUT")
+      //РќРµРѕР±С…РѕРґРёРјРѕ РїРѕР»СѓС‡РёС‚СЊ ID СЌР»РµРјРµРЅС‚Р° OUT
     global $SOLO_GETIBC_IBLOCK_CODE_ARRAY;
-    if (!CModule::IncludeModuleEx('iblock')) return false;//Возможно это будет снижать производитльность
-      if(!is_numeric($IBLOCK_ID)){//Если это не ID
+    if (!CModule::IncludeModuleEx('iblock')) return false;//Р’РѕР·РјРѕР¶РЅРѕ СЌС‚Рѕ Р±СѓРґРµС‚ СЃРЅРёР¶Р°С‚СЊ РїСЂРѕРёР·РІРѕРґРёС‚Р»СЊРЅРѕСЃС‚СЊ
+      if(!is_numeric($IBLOCK_ID)){//Р•СЃР»Рё СЌС‚Рѕ РЅРµ ID
           if(!isset($SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1])){
               $res = CIBlock::GetList(Array(),Array("CODE"=>$IBLOCK_ID), true);
               if ($ar_res = $res->Fetch()){
-                  $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1] = $ar_res['ID'];//Сохраняем для кеша чтобы несколько раз не делать запрос по API
+                  $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1] = $ar_res['ID'];//РЎРѕС…СЂР°РЅСЏРµРј РґР»СЏ РєРµС€Р° С‡С‚РѕР±С‹ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р· РЅРµ РґРµР»Р°С‚СЊ Р·Р°РїСЂРѕСЃ РїРѕ API
                   $IBLOCK_ID = $ar_res['ID'];
               }else return false;
-          }else $IBLOCK_ID = $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1];//-1 - означает что мы сохраням номер по коду
+          }else $IBLOCK_ID = $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][-1];//-1 - РѕР·РЅР°С‡Р°РµС‚ С‡С‚Рѕ РјС‹ СЃРѕС…СЂР°РЅСЏРј РЅРѕРјРµСЂ РїРѕ РєРѕРґСѓ
 
       }
-      if($XML_ID){//Если указано-ищем элемент списка по коду
+      if($XML_ID){//Р•СЃР»Рё СѓРєР°Р·Р°РЅРѕ-РёС‰РµРј СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїРѕ РєРѕРґСѓ
           $arFilter = Array("IBLOCK_ID"=>$IBLOCK_ID, "CODE"=>$CODE, "XML_ID"=> $XML_ID);
           $property_enums = CIBlockPropertyEnum::GetList(Array(), $arFilter);
           if($enum_fields = $property_enums->Fetch()){
               $SOLO_GETIBC_IBLOCK_CODE_ARRAY[$IBLOCK_ID][$CODE] = $enum_fields['ID'];
               return $enum_fields['ID'];
           }
-      }elseif($CODE){//Если не указано - то значит мы ищем id свойства инфоблока по XML_ID свойства
+      }elseif($CODE){//Р•СЃР»Рё РЅРµ СѓРєР°Р·Р°РЅРѕ - С‚Рѕ Р·РЅР°С‡РёС‚ РјС‹ РёС‰РµРј id СЃРІРѕР№СЃС‚РІР° РёРЅС„РѕР±Р»РѕРєР° РїРѕ XML_ID СЃРІРѕР№СЃС‚РІР°
           $properties = CIBlockProperty::GetList(Array(), Array("CODE"=>$CODE, "IBLOCK_ID"=>$IBLOCK_ID));
           if ($prop_fields = $properties->GetNext()){
             return $prop_fields["ID"];
           }
-      }else{//Значит нам нужен ID инфоблока
+      }else{//Р—РЅР°С‡РёС‚ РЅР°Рј РЅСѓР¶РµРЅ ID РёРЅС„РѕР±Р»РѕРєР°
           return $IBLOCK_ID;
       }
       return false;
@@ -86,12 +86,12 @@ Class CSoloTools{
     return self::getibc($a[0], $a[1], $XML_ID);
   }
 
-  /*Преобразует html код в строку, удаляя все теги и переносы строки*/
+  /*РџСЂРµРѕР±СЂР°Р·СѓРµС‚ html РєРѕРґ РІ СЃС‚СЂРѕРєСѓ, СѓРґР°Р»СЏСЏ РІСЃРµ С‚РµРіРё Рё РїРµСЂРµРЅРѕСЃС‹ СЃС‚СЂРѕРєРё*/
   function html2line($text_desc){
-      $search = array ("'<script[^>]*?>.*?</script>'si",  // Вырезает javaScript
-                   "'<[\/\!]*?[^<>]*?>'si",           // Вырезает HTML-теги
-                   "'([\r\n])[\s]+'",                 // Вырезает пробельные символы
-                   "'&(quot|#34);'i",                 // Заменяет HTML-сущности
+      $search = array ("'<script[^>]*?>.*?</script>'si",  // Р’С‹СЂРµР·Р°РµС‚ javaScript
+                   "'<[\/\!]*?[^<>]*?>'si",           // Р’С‹СЂРµР·Р°РµС‚ HTML-С‚РµРіРё
+                   "'([\r\n])[\s]+'",                 // Р’С‹СЂРµР·Р°РµС‚ РїСЂРѕР±РµР»СЊРЅС‹Рµ СЃРёРјРІРѕР»С‹
+                   "'&(quot|#34);'i",                 // Р—Р°РјРµРЅСЏРµС‚ HTML-СЃСѓС‰РЅРѕСЃС‚Рё
                    "'&(amp|#38);'i",
                    "'&(lt|#60);'i",
                    "'&(gt|#62);'i",
@@ -100,7 +100,7 @@ Class CSoloTools{
                    "'&(cent|#162);'i",
                    "'&(pound|#163);'i",
                    "'&(copy|#169);'i",
-                   "'&#(\d+);'e");                    // интерпретировать как php-код
+                   "'&#(\d+);'e");                    // РёРЅС‚РµСЂРїСЂРµС‚РёСЂРѕРІР°С‚СЊ РєР°Рє php-РєРѕРґ
 
       $replace = array ("",
                         "",
@@ -124,12 +124,12 @@ Class CSoloTools{
           return $text_desc;
   }
 
-      //Функция обновляет свойства инфоблока, оставляя текущие существующие свойства
-      //Функция работает только с инфоблоками, которые размещены в отдельной таблице в Битриксе
-      //При успешном завершении возвразает true, иначе "NOT_FIND" (не найден элемент) или "NOT_UPDATE" (не удалось обновить)
-      //ADDITION_PARAMS - Если нужно изменить не только свойства, но и обычные значения инфоблока, типа NAME или PREVIEW_TEXT
+      //Р¤СѓРЅРєС†РёСЏ РѕР±РЅРѕРІР»СЏРµС‚ СЃРІРѕР№СЃС‚РІР° РёРЅС„РѕР±Р»РѕРєР°, РѕСЃС‚Р°РІР»СЏСЏ С‚РµРєСѓС‰РёРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ СЃРІРѕР№СЃС‚РІР°
+      //Р¤СѓРЅРєС†РёСЏ СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ СЃ РёРЅС„РѕР±Р»РѕРєР°РјРё, РєРѕС‚РѕСЂС‹Рµ СЂР°Р·РјРµС‰РµРЅС‹ РІ РѕС‚РґРµР»СЊРЅРѕР№ С‚Р°Р±Р»РёС†Рµ РІ Р‘РёС‚СЂРёРєСЃРµ
+      //РџСЂРё СѓСЃРїРµС€РЅРѕРј Р·Р°РІРµСЂС€РµРЅРёРё РІРѕР·РІСЂР°Р·Р°РµС‚ true, РёРЅР°С‡Рµ "NOT_FIND" (РЅРµ РЅР°Р№РґРµРЅ СЌР»РµРјРµРЅС‚) РёР»Рё "NOT_UPDATE" (РЅРµ СѓРґР°Р»РѕСЃСЊ РѕР±РЅРѕРІРёС‚СЊ)
+      //ADDITION_PARAMS - Р•СЃР»Рё РЅСѓР¶РЅРѕ РёР·РјРµРЅРёС‚СЊ РЅРµ С‚РѕР»СЊРєРѕ СЃРІРѕР№СЃС‚РІР°, РЅРѕ Рё РѕР±С‹С‡РЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ РёРЅС„РѕР±Р»РѕРєР°, С‚РёРїР° NAME РёР»Рё PREVIEW_TEXT
       function update_eiblock_properties($arFilter, $PROP_UPDATE, $ADDITION_PARAMS = array()){
-          /* Пример вызова
+          /* РџСЂРёРјРµСЂ РІС‹Р·РѕРІР°
               $arFilter=array(
                   'IBLOCK_ID'=>getibc('FUND_USERS'), // ID = 13
                   'CREATED_BY' =>$USER->GetID(),
@@ -139,11 +139,11 @@ Class CSoloTools{
                   getibc('FUND_USERS','POSITION') => getibc3('PRIVATE_4'),
               );
               $ADDITIONAL_PARAMS = array(
-                  'PREVIEW_TEXT' => $fund_info,//Записываем описание  - необязательный параметр
+                  'PREVIEW_TEXT' => $fund_info,//Р—Р°РїРёСЃС‹РІР°РµРј РѕРїРёСЃР°РЅРёРµ  - РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ
                 );
               if ($res = update_eiblock_properties($arFilter,$PROP_UPDATE,$ADDITIONAL_PARAMS) === true) echo "Ok";
-              elseif($res == 'NOT_UPDATE')echo "Ошибка при обновлении ";
-              elseif($res == 'NOT_FIND')echo 'Не найден элемент';
+              elseif($res == 'NOT_UPDATE')echo "РћС€РёР±РєР° РїСЂРё РѕР±РЅРѕРІР»РµРЅРёРё ";
+              elseif($res == 'NOT_FIND')echo 'РќРµ РЅР°Р№РґРµРЅ СЌР»РµРјРµРЅС‚';
           */
           global $USER;
           if(!CModule::IncludeModule('iblock'))return false;
@@ -157,19 +157,19 @@ Class CSoloTools{
 
               $rsItems = CIBlockElement::GetList(array(),$arFilter,false,false,$arSelect);
 
-              if ($arItem = $rsItems->Fetch()){//Если же есть счет в инфоблоке - то сменим статус на архивный
+              if ($arItem = $rsItems->Fetch()){//Р•СЃР»Рё Р¶Рµ РµСЃС‚СЊ СЃС‡РµС‚ РІ РёРЅС„РѕР±Р»РѕРєРµ - С‚Рѕ СЃРјРµРЅРёРј СЃС‚Р°С‚СѓСЃ РЅР° Р°СЂС…РёРІРЅС‹Р№
 
-                  //Подготовим для сохранения изменения статуса
+                  //РџРѕРґРіРѕС‚РѕРІРёРј РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РёР·РјРµРЅРµРЅРёСЏ СЃС‚Р°С‚СѓСЃР°
                   $el = new CIBlockElement;
 
                   $PROP = array();
                   foreach ($arItem as $key => $value) {
                       $pos = strpos($key, 'PROPERTY_');
                       if ($pos === false) continue;
-                      $key = substr($key, $pos+9);//Извлекаем ID из имени PROPERTY_40
+                      $key = substr($key, $pos+9);//РР·РІР»РµРєР°РµРј ID РёР· РёРјРµРЅРё PROPERTY_40
                       $PROP[$key] = $value;
                   }
-                  //Теперь сделаем подмену статуса
+                  //РўРµРїРµСЂСЊ СЃРґРµР»Р°РµРј РїРѕРґРјРµРЅСѓ СЃС‚Р°С‚СѓСЃР°
                   foreach ($PROP_UPDATE as $key => $value) {
                       //$PROP[$key] = $value;
                       CIBlockElement::SetPropertyValues($arItem['ID'], $arFilter['IBLOCK_ID'], $value, $key);
@@ -177,17 +177,17 @@ Class CSoloTools{
 
 
                   $arLoadProductArray = Array(
-                    "MODIFIED_BY"    => $USER->GetID(), // элемент изменен текущим пользователем
+                    "MODIFIED_BY"    => $USER->GetID(), // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
                     //"PROPERTY_VALUES"=> $PROP,
                     );
                   $arLoadProductArray = array_merge($arLoadProductArray, $ADDITION_PARAMS);
                   $res = $el->Update($arItem['ID'], $arLoadProductArray);
                   if ($res) {
-                      //Все Ок! Ничего не делаем
+                      //Р’СЃРµ РћРє! РќРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµРј
                       return true;
                   }else{
                       return "NOT_UPDATE";
-                      //return  "Error: ".$el->LAST_ERROR;//Для тестирования
+                      //return  "Error: ".$el->LAST_ERROR;//Р”Р»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ
                   }
               }else{
                   return "NOT_FIND";
@@ -195,8 +195,8 @@ Class CSoloTools{
       }
 
 
-    // Параметр $number - сообщает число
-    // символов в пароле
+    // РџР°СЂР°РјРµС‚СЂ $number - СЃРѕРѕР±С‰Р°РµС‚ С‡РёСЃР»Рѕ
+    // СЃРёРјРІРѕР»РѕРІ РІ РїР°СЂРѕР»Рµ
     function generate_password($number)
     {
       $arr = array('a','b','c','d','e','f',
@@ -215,47 +215,47 @@ Class CSoloTools{
                    '{','}','`','~'*/
 
                    );
-      // Генерируем пароль
+      // Р“РµРЅРµСЂРёСЂСѓРµРј РїР°СЂРѕР»СЊ
       $pass = "";
       for($i = 0; $i < $number; $i++)
       {
-        // Вычисляем случайный индекс массива
+        // Р’С‹С‡РёСЃР»СЏРµРј СЃР»СѓС‡Р°Р№РЅС‹Р№ РёРЅРґРµРєСЃ РјР°СЃСЃРёРІР°
         $index = rand(0, count($arr) - 1);
         $pass .= $arr[$index];
       }
       return $pass;
     }
 
-    //Функция позволяет добавлять доп свойства в инфоблок, предварительно проверив такое свойство на существование
-    //Пример вызова:
+    //Р¤СѓРЅРєС†РёСЏ РїРѕР·РІРѕР»СЏРµС‚ РґРѕР±Р°РІР»СЏС‚СЊ РґРѕРї СЃРІРѕР№СЃС‚РІР° РІ РёРЅС„РѕР±Р»РѕРє, РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ РїСЂРѕРІРµСЂРёРІ С‚Р°РєРѕРµ СЃРІРѕР№СЃС‚РІРѕ РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ
+    //РџСЂРёРјРµСЂ РІС‹Р·РѕРІР°:
         // if(CModule::IncludeModuleEx('sologroupltd.tools')){
         //   $arFields = Array(
-        //     "NAME" => "Размещение",
-        //     "PROPERTY_TYPE" => "L",//L - список
-        //     "LIST_TYPE" => "C",//C - флажки, L - список
+        //     "NAME" => "Р Р°Р·РјРµС‰РµРЅРёРµ",
+        //     "PROPERTY_TYPE" => "L",//L - СЃРїРёСЃРѕРє
+        //     "LIST_TYPE" => "C",//C - С„Р»Р°Р¶РєРё, L - СЃРїРёСЃРѕРє
         //     "MULTIPLE" => "Y",
         //   );
         //   $arFields["VALUES"][] = Array(
-        //     "VALUE" => "Самара",
+        //     "VALUE" => "РЎР°РјР°СЂР°",
         //     "XML_ID" => "smr",
         //   );
         //   $arFields["VALUES"][] = Array(
-        //     "VALUE" => "Питер",
+        //     "VALUE" => "РџРёС‚РµСЂ",
         //     "XML_ID" => "spb",
         //   );
         //   CSoloTools::AddNewProperty('news','CITY_PLACE',$arFields);
         //   CSoloTools::AddNewProperty('STATES','CITY_PLACE',$arFields);
         // }
-    //коды свойств брать отсюда: http://dev.1c-bitrix.ru/api_help/iblock/fields.php#fproperty
-    //Возвращает ID данного свойства(не важно, добавили мы его или нет)
-    //Debug = true - будет означать, что будет выводиться на экран текстовое описание
-    //Если = get_text - то функция будет возвращать текст
+    //РєРѕРґС‹ СЃРІРѕР№СЃС‚РІ Р±СЂР°С‚СЊ РѕС‚СЃСЋРґР°: http://dev.1c-bitrix.ru/api_help/iblock/fields.php#fproperty
+    //Р’РѕР·РІСЂР°С‰Р°РµС‚ ID РґР°РЅРЅРѕРіРѕ СЃРІРѕР№СЃС‚РІР°(РЅРµ РІР°Р¶РЅРѕ, РґРѕР±Р°РІРёР»Рё РјС‹ РµРіРѕ РёР»Рё РЅРµС‚)
+    //Debug = true - Р±СѓРґРµС‚ РѕР·РЅР°С‡Р°С‚СЊ, С‡С‚Рѕ Р±СѓРґРµС‚ РІС‹РІРѕРґРёС‚СЊСЃСЏ РЅР° СЌРєСЂР°РЅ С‚РµРєСЃС‚РѕРІРѕРµ РѕРїРёСЃР°РЅРёРµ
+    //Р•СЃР»Рё = get_text - С‚Рѕ С„СѓРЅРєС†РёСЏ Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰Р°С‚СЊ С‚РµРєСЃС‚
     function AddNewProperty($IBLOCK_CODE,$CODE,$arFields,$Debug=false){
       $arFields['IBLOCK_ID'] = self::getibc($IBLOCK_CODE);
       $arFields['CODE'] = $CODE;
       $ibp = new CIBlockProperty;
       $PropID = false;
-      $txt_message = '';//сообщение, выводимое на экран
+      $txt_message = '';//СЃРѕРѕР±С‰РµРЅРёРµ, РІС‹РІРѕРґРёРјРѕРµ РЅР° СЌРєСЂР°РЅ
       if(!self::getibc($IBLOCK_CODE)) $txt_message .= GetMessage("SOLOGROUPLTD_TOOLS_INFOBLOK").'<br>';
       else{
         $txt_message .= GetMessage("SOLOGROUPLTD_TOOLS_INFOBLOK1").'<br>';
@@ -282,8 +282,8 @@ Class CSoloTools{
       return $PropID;
     }
 
-    //$arSelectProperty - Это свойства без префикса PROPERTY_ !!!
-    //Удобная функция получения элементов инфоблока только с нужнными нам свойствами
+    //$arSelectProperty - Р­С‚Рѕ СЃРІРѕР№СЃС‚РІР° Р±РµР· РїСЂРµС„РёРєСЃР° PROPERTY_ !!!
+    //РЈРґРѕР±РЅР°СЏ С„СѓРЅРєС†РёСЏ РїРѕР»СѓС‡РµРЅРёСЏ СЌР»РµРјРµРЅС‚РѕРІ РёРЅС„РѕР±Р»РѕРєР° С‚РѕР»СЊРєРѕ СЃ РЅСѓР¶РЅРЅС‹РјРё РЅР°Рј СЃРІРѕР№СЃС‚РІР°РјРё
     function GetElList_WithSelect($IBlockCode, $arFilter, $arSelectProperty = array()){
       foreach ($arSelectProperty as $key => $value) {
         $arSelectProperty[$key] = 'PROPERTY_'.$arSelectProperty[$key];
@@ -301,7 +301,7 @@ Class CSoloTools{
 
 $pls_not_include_module = true;
 
-//Добавим init.php в битрикс
+//Р”РѕР±Р°РІРёРј init.php РІ Р±РёС‚СЂРёРєСЃ
 if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sologroupltd.tools/init.php")){require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sologroupltd.tools/init.php");}
 
 ?>

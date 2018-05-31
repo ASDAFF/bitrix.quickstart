@@ -4,6 +4,15 @@
  * User: ASDAFF
  * Date: 16.05.2018
  * Time: 21:49
+ *
+ * Event handling.
+ *
+ * We strongly recommend to group event handlers in classes.
+ *
+ * For example, you can handle events "OnBeforeUserAdd" and "OnBeforeUserUpdate"
+ * with methods UserHandlers::OnBeforeUserAdd() and UserHandlers::OnBeforeUserUpdate(), like this:
+ *
+ * AddEventHandler("main", "OnBeforeUserAdd", Array("UserHandlers", "OnBeforeUserAdd"));
  */
 
 use \Bitrix\Main\Loader;

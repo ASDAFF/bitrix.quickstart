@@ -37,7 +37,7 @@
 					<div class="auction-begin"><?=GetMessage('A_BEGIN');?></div>
 					<div class="auction-timer end"><?=$arAuction["DATE_BEGIN"]?></div>
 				<?else:?>
-					<div class="auction-end"><?=GetMessage('À_CONFIRM');?></div>
+					<div class="auction-end"><?=GetMessage('Ð_CONFIRM');?></div>
 				<?endif;?>
 			</td>
 			<td class="auction-begin-price">

@@ -46,7 +46,7 @@
 					<div class="auction-begin"><?=GetMessage('A_BEGIN');?></div>
 					<div class="auction-timer end"><?=$arAuction["DATE_BEGIN"]?></div>
 				<?else:?>
-					<div class="auction-timer end"><?=GetMessage('À_CONFIRM');?></div>
+					<div class="auction-timer end"><?=GetMessage('Ð_CONFIRM');?></div>
 				<?endif;?>
 						
 				<a href="<?=$arAuction["DETAIL_PAGE_URL"]?>" class="auction-btn"><?=GetMessage("A_MORE")?></a>

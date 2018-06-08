@@ -1,4 +1,0 @@
-<?
-
-$MESS["INFOSPICE_FAVORITES_IZBRANNOE"] = "Мое меню";
-?>

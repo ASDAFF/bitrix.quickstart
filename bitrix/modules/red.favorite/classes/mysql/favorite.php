@@ -55,7 +55,7 @@ class CRSFavorite
         else
             $sFilter = "\nWHERE " . implode("\nAND ", $arFilter);
 
-        $strSql = "SELECT DISTINCT RSF.* FROM b_redsign_favorite RSF" . $sFilter . $sOrder;
+        $strSql = "SELECT DISTINCT RSF.* FROM b_red_favorite RSF" . $sFilter . $sOrder;
 
         return $DB->Query($strSql, false, "File: " . __FILE__ . "<br>Line: " . __LINE__);
     }
@@ -72,7 +72,7 @@ class CRSFavorite
 
         $DB->StartTransaction();
 
-        $res = $DB->Query("DELETE FROM b_redsign_favorite WHERE ID=" . $ID, false, "File: " . __FILE__ . "<br>Line: " . __LINE__);
+        $res = $DB->Query("DELETE FROM b_red_favorite WHERE ID=" . $ID, false, "File: " . __FILE__ . "<br>Line: " . __LINE__);
         if ($res) {
             $DB->Commit();
         } else {
@@ -86,7 +86,7 @@ class CRSFavorite
     {
         global $DB;
 
-        $ID = $DB->Add("b_redsign_favorite", $arFields);
+        $ID = $DB->Add("b_red_favorite", $arFields);
         if (IntVal($ID) > 0)
             return $ID;
         else
@@ -101,9 +101,9 @@ class CRSFavorite
         if (isset($arFields["ID"]))
             unset($arFields["ID"]);
 
-        $strUpdate = $DB->PrepareUpdate("b_redsign_favorite", $arFields);
+        $strUpdate = $DB->PrepareUpdate("b_red_favorite", $arFields);
         if ($strUpdate != "") {
-            $strSql = "UPDATE b_redsign_favorite SET " . $strUpdate . " WHERE ID=" . $ID;
+            $strSql = "UPDATE b_red_favorite SET " . $strUpdate . " WHERE ID=" . $ID;
             $DB->Query($strSql, false, "File: " . __FILE__ . "<br>Line: " . __LINE__);
             return $ID;
         } else {

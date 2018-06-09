@@ -2,9 +2,9 @@
 global $MESS;
 IncludeModuleLangFile(__FILE__);
 
-Class redsign_favorite extends CModule
+Class red_favorite extends CModule
 {
-    var $MODULE_ID = "redsign.favorite";
+    var $MODULE_ID = "red.favorite";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -12,7 +12,7 @@ Class redsign_favorite extends CModule
 	var $MODULE_CSS;
 	var $MODULE_GROUP_RIGHTS = "Y";
 
-	function redsign_favorite()
+	function red_favorite()
 	{
 		$arModuleVersion = array();
 
@@ -31,15 +31,15 @@ Class redsign_favorite extends CModule
 		$this->MODULE_NAME = GetMessage("RS.FAVORITE.INSTALL_NAME");
 		$this->MODULE_DESCRIPTION = GetMessage("RS.FAVORITE.INSTALL_DESCRIPTION");
 		$this->PARTNER_NAME = GetMessage("RS.FAVORITE.INSTALL_COPMPANY_NAME");
-        $this->PARTNER_URI  = "http://mdm.ru/";
+        $this->PARTNER_URI  = "http://asdaff.ru/";
 	}
 
 	// Install functions
 	function InstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		RegisterModule("redsign.favorite");
-		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/redsign.favorite/install/db/".$DBType."/install.sql");
+		RegisterModule("red.favorite");
+		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/red.favorite/install/db/".$DBType."/install.sql");
 		return TRUE;
 	}
 
@@ -55,7 +55,7 @@ Class redsign_favorite extends CModule
 
 	function InstallFiles()
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.favorite/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/red.favorite/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		return TRUE;
 	}
 
@@ -68,8 +68,8 @@ Class redsign_favorite extends CModule
 	function UnInstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/redsign.favorite/install/db/".$DBType."/uninstall.sql");
-		UnRegisterModule("redsign.favorite");
+		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/red.favorite/install/db/".$DBType."/uninstall.sql");
+		UnRegisterModule("red.favorite");
 		return TRUE;
 	}
 
@@ -101,7 +101,7 @@ Class redsign_favorite extends CModule
 		$keyGoodOptions = $this->InstallOptions();
 		$keyGoodFiles = $this->InstallFiles();
 		$keyGoodPublic = $this->InstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.favorite/install/install.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/red.favorite/install/install.php");
     }
 
     function DoUninstall()
@@ -112,6 +112,6 @@ Class redsign_favorite extends CModule
 		$keyGoodOptions = $this->UnInstallOptions();
 		$keyGoodDB = $this->UnInstallDB();
 		$keyGoodPublic = $this->UnInstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.favorite/install/uninstall.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/red.favorite/install/uninstall.php");
     }
 }

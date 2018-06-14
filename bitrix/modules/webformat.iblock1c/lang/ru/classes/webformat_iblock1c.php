@@ -1,3 +1,3 @@
 <?php
 $webformatLangPrefix = 'WEBFORMAT_IBLOCK1C_';
-$MESS[$webformatLangPrefix.'EMPTY'] = 'Íå óêàçàí íè îäèí èíôîáëîê!';
+$MESS[$webformatLangPrefix.'EMPTY'] = 'ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ Ð½Ð¸ Ð¾Ð´Ð¸Ð½ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº!';

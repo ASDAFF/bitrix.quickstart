@@ -1,7 +1,7 @@
 <?
-$MESS["HEADER_WORKTIME"] = "Время работы:";
-$MESS["HEADER_PHONE"] = "Телефон:";
-$MESS["FOOTER_CONTACTS"] = "Контактная информация";
-$MESS["FOOTER_SITEMAP"] = "Карта сайта";
-$MESS["FOOTER_METAMAX"] = "Разработка сайта<br /> — <a href=\"http://www.metamax.ru/\">Метамакс</a>";
+$MESS["HEADER_WORKTIME"] = "Р’СЂРµРјСЏ СЂР°Р±РѕС‚С‹:";
+$MESS["HEADER_PHONE"] = "РўРµР»РµС„РѕРЅ:";
+$MESS["FOOTER_CONTACTS"] = "РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ";
+$MESS["FOOTER_SITEMAP"] = "РљР°СЂС‚Р° СЃР°Р№С‚Р°";
+$MESS["FOOTER_METAMAX"] = "Р Р°Р·СЂР°Р±РѕС‚РєР° СЃР°Р№С‚Р°<br /> вЂ” <a href=\"http://www.metamax.ru/\">РњРµС‚Р°РјР°РєСЃ</a>";
 ?>

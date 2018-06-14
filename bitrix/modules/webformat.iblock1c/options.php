@@ -2,7 +2,7 @@
 //Including lang-file
 IncludeModuleLangFile( __FILE__ );
 
-// Подключаем модуль (выполняем код в файле include.php)
+// РџРѕРґРєР»СЋС‡Р°РµРј РјРѕРґСѓР»СЊ (РІС‹РїРѕР»РЅСЏРµРј РєРѕРґ РІ С„Р°Р№Р»Рµ include.php)
 CModule::IncludeModule('iblock');
 CModule::IncludeModule('webformat.iblock1c');
 $webformatLangPrefix = $webformatLangPrefix = 'WEBFORMAT_IBLOCK1C_';

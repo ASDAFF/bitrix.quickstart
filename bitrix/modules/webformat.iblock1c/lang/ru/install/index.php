@@ -1,5 +1,5 @@
 <?php
 $webformatLangPrefix = 'WEBFORMAT_IBLOCK1C_';
-$MESS[$webformatLangPrefix.'MODULE_NAME'] = 'Èíôîáëîê 1Ñ';
-$MESS[$webformatLangPrefix.'MODULE_DESCRIPTION'] = 'Ìîäóëü àäàïòèðóåò óêàçàííûé èíôîáëîê äëÿ ïîñëåäóþùåé çàãðóçêè äàííûõ èç 1Ñ èìåííî â íåãî.';
-$MESS[$webformatLangPrefix.'PARTNER_NAME'] = 'Web-Ôîðìàò';
+$MESS[$webformatLangPrefix.'MODULE_NAME'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº 1Ð¡';
+$MESS[$webformatLangPrefix.'MODULE_DESCRIPTION'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ñ€ÑƒÐµÑ‚ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ð¹ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº Ð´Ð»Ñ Ð¿Ð¾ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¸Ð· 1Ð¡ Ð¸Ð¼ÐµÐ½Ð½Ð¾ Ð² Ð½ÐµÐ³Ð¾.';
+$MESS[$webformatLangPrefix.'PARTNER_NAME'] = 'Web-Ð¤Ð¾Ñ€Ð¼Ð°Ñ‚';

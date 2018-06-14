@@ -1,5 +1,5 @@
 <?php
 $webformatLangPrefix = 'WEBFORMAT_IBLOCK1C_';
-$MESS[$webformatLangPrefix.'TAB_MAIN'] = 'Èíôîáëîêè';
-$MESS[$webformatLangPrefix.'BSEND'] = 'Àäàïòèðîâàòü èíôîáëîêè';
-$MESS[$webformatLangPrefix.'SUCCESS'] = 'Âûáðàííûå èíôîáëîêè óñïåøíî àäàïòèðîâàíû!';
+$MESS[$webformatLangPrefix.'TAB_MAIN'] = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸';
+$MESS[$webformatLangPrefix.'BSEND'] = 'ÐÐ´Ð°Ð¿Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸';
+$MESS[$webformatLangPrefix.'SUCCESS'] = 'Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð½Ñ‹Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹!';

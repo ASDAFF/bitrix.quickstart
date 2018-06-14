@@ -1,7 +1,7 @@
 <?
-$MESS ['SCOM_INSTALL_NAME'] = "Ñàéò ìåäèöèíñêîé êëèíèêè";
-$MESS ['SCOM_INSTALL_DESCRIPTION'] = "Ìàñòåð ñîçäàíèÿ òèïîâîãî ñàéòà ìåäèöèíñêîé êëèíèêè";
+$MESS ['SCOM_INSTALL_NAME'] = "Ð¡Ð°Ð¹Ñ‚ Ð¼ÐµÐ´Ð¸Ñ†Ð¸Ð½ÑÐºÐ¾Ð¹ ÐºÐ»Ð¸Ð½Ð¸ÐºÐ¸";
+$MESS ['SCOM_INSTALL_DESCRIPTION'] = "ÐœÐ°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ñ‚Ð¸Ð¿Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ°Ð¹Ñ‚Ð° Ð¼ÐµÐ´Ð¸Ñ†Ð¸Ð½ÑÐºÐ¾Ð¹ ÐºÐ»Ð¸Ð½Ð¸ÐºÐ¸";
 
-$MESS ['SCOM_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ";
-$MESS ['SCOM_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ";
+$MESS ['SCOM_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['SCOM_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 ?>

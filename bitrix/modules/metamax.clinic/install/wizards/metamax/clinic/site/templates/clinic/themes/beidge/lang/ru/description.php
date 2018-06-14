@@ -1,3 +1,3 @@
 <?
-$MESS["CPST_BEIDGE"] = "Áåæåâûé";
+$MESS["CPST_BEIDGE"] = "Ð‘ÐµÐ¶ÐµÐ²Ñ‹Ð¹";
 ?>

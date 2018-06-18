@@ -55,13 +55,13 @@ Invisible reCaptcha и настройка:
 
 Доступна Invisible reCaptcha. Для ее работы  необходимо в настройках указать параметр "Размер"="Невидимый". При этом  можно указать положение логотипа reCaptcha на странице. Внимание, для работы в режиме "Invisible", необходимо обновить ключи.
 
-При режиме Invisible reCaptcha, на событие формы "submit" будет вызывать  проверку и возвращать callback функцию, которая будет отправлять  веб-форму методом submit. Поэтому, если у Вас есть проверки на submit() или отправка форм ajax,  необходимо переопределить функцию "RecaptchafreeSubmitForm". Обратите внимание, что функция будет вызываться для всех форм, где стоит рекапча, а в функцию передается только ссылка на форму текущую.
+При режиме Invisible reCaptcha, на событие формы "submit" будет вызывать  проверку и возвращать callback функцию, которая будет отправлять  веб-форму методом submit. Поэтому, если у Вас есть проверки на submit() или отправка форм ajax,  необходимо переопределить функцию "RecaptchaSubmitForm". Обратите внимание, что функция будет вызываться для всех форм, где стоит рекапча, а в функцию передается только ссылка на форму текущую.
 
 ссылка на веб-форму, которая прошла проверку ReCaptcha
 Recaptchafree.form_submit
 шаблон костомизации:
-var _RecaptchafreeSubmitForm = RecaptchafreeSubmitForm;
-RecaptchafreeSubmitForm = function(token){
+var _RecaptchaSubmitForm = RecaptchaSubmitForm;
+RecaptchaSubmitForm = function(token){
     if(Recaptchafree.form_submit !== undefined){
        // если ссылка есть на форму
        //token - ключ ответа, который необходимо передать для текущей формы, имя переменной g-recaptcha-response
@@ -71,14 +71,14 @@ RecaptchafreeSubmitForm = function(token){
 
 };
 Пример:
-var _RecaptchafreeSubmitForm = RecaptchafreeSubmitForm;
-RecaptchafreeSubmitForm = function(token){
-    if(Recaptchafree.form_submit !== undefined){ // если ссылка существует на форму
+var _RecaptchaSubmitForm = RecaptchaSubmitForm;
+RecaptchaSubmitForm = function(token){
+    if(Recaptcha.form_submit !== undefined){ // если ссылка существует на форму
         var x = document.createElement("INPUT"); //  создаем поле hidden
         x.setAttribute("type", "hidden");
         x.name = "g-recaptcha-response"; // имя поля g-recaptcha-response
         x.value = token; // значение token
-        Recaptchafree.form_submit.appendChild(x);  // добавляем в текущую форму
+        Recaptcha.form_submit.appendChild(x);  // добавляем в текущую форму
         var elements = Recaptchafree.form_submit.elements; // список элементов формы
         for (var i = 0; i < elements.length; i++) { // получаем submit и берем ее имя и значение, чтобы передать,
            //к примеру веб-формы Битрикс требуют обязательно при передачи ajax значения submit

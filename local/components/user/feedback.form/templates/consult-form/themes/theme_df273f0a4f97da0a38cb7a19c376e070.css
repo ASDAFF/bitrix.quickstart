@@ -1,0 +1,63 @@
+#alx_feed_back_FID1 .afbf_radio_circle
+{
+	border-color:#2196f3;
+}
+#alx_feed_back_FID1 .afbf_checkbox.toggle label input[type=checkbox]:checked + .afbf_checkbox_box:after,
+#alx_feed_back_FID1 .afbf_radio_check
+{
+	background-color:#2196f3;
+}
+#alx_feed_back_FID1 .afbf_feedback_poles .afbf_btn
+{
+	color:#fff !important;
+	background:#2196f3 !important;
+}
+#alx_feed_back_FID1 .afbf_feedback_poles .afbf_btn:hover
+{
+	color:#fff !important;
+	background:#0B5E9E !important;
+}
+#alx_feed_back_FID1 .afbf_checkbox.toggle label input[type=checkbox]:checked + .afbf_checkbox_box
+{
+	background-color:#bbdefb;
+}
+#alx_feed_back_FID1 .afbf_checkbox input[type=checkbox]:checked+.afbf_checkbox_box .afbf_checkbox_check:before,
+#alx_feed_back_FID1.floating_labels .afbf_item_pole.is_filled .afbf_name,
+#alx_feed_back_FID1.floating_labels .afbf_item_pole.is_focused .afbf_name
+{
+	color:#0B5E9E;
+}
+#alx_feed_back_FID1.form_inputs_line .afbf_select,
+#alx_feed_back_FID1.form_inputs_line .afbf_textarea,
+#alx_feed_back_FID1.form_inputs_line .afbf_inputtext,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.is_focused .afbf_select,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.is_focused .afbf_textarea,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.is_focused .afbf_inputtext{
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#2196f3), to(#2196f3)), -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));
+	background-image:-webkit-linear-gradient(#2196f3, #2196f3), -webkit-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:-o-linear-gradient(#2196f3, #2196f3), -o-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:linear-gradient(#2196f3, #2196f3), linear-gradient(#e0e0e0, #e0e0e0);
+}
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole .afbf_select,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole .afbf_textarea,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole .afbf_inputtext,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole.is_focused .afbf_select,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole.is_focused .afbf_textarea,
+#alx_feed_back_FID1.form_inputs_line .afbf_item_pole.error_pole.is_focused .afbf_inputtext{
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#f80000), to(#f80000)), -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));
+	background-image:-webkit-linear-gradient(#f80000, #f80000), -webkit-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:-o-linear-gradient(#f80000, #f80000), -o-linear-gradient(#e0e0e0, #e0e0e0);
+	background-image:linear-gradient(#f80000, #f80000), linear-gradient(#e0e0e0, #e0e0e0);
+	-moz-background-size:100% 2px, 100% 1px;
+	background-size:100% 2px, 100% 1px;
+}
+#alx_feed_back_FID1 .afbf_select, .afbf_textarea, .afbf_inputtext,
+#alx_feed_back_FID1 .afbf_checkbox label
+{
+	color:#212121;
+}
+#alx_feed_back_FID1 .afbf_item_pole.is_focused .afbf_select,
+#alx_feed_back_FID1 .afbf_item_pole.is_focused .afbf_textarea,
+#alx_feed_back_FID1 .afbf_item_pole.is_focused .afbf_inputtext{
+	border-color:#2196f3;
+}

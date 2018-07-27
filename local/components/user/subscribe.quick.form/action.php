@@ -23,7 +23,7 @@ if ($post['asd_subscribe']=='Y' && strlen(trim($post['asd_email'])) &&
 	check_bitrix_sessid()
 ) {
 	$arReturn = array();
-	CComponentUtil::__IncludeLang(substr(__FILE__, strpos(__FILE__, '/bitrix/components'), -strlen(basename(__FILE__))), basename(__FILE__));
+	CComponentUtil::__IncludeLang(substr(__FILE__, strpos(__FILE__, '/local/components'), -strlen(basename(__FILE__))), basename(__FILE__));
 
 	if (CModule::IncludeModule('subscribe')) {
 		$arRubrics = strlen($post['asd_rubrics']) ? explode('|', $post['asd_rubrics']) : array();

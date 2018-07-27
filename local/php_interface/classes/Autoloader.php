@@ -14,7 +14,7 @@
 		 * @var array $autoloadPath Array of paths to classes folders from site root
 		 **/
 		protected $autoloadPath = array(
-			'/local/classes/'
+			'/local/php_interface/classes/'
 		);
 
 

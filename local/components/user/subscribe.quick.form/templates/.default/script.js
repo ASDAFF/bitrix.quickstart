@@ -16,7 +16,7 @@ if (typeof($) !== 'undefined') {
 			});
 			$('#asd_subscribe_res').hide();
 			$('#asd_subscribe_submit').attr('disabled', 'disabled');
-			$.post('/bitrix/components/asd/subscribe.quick.form/action.php', arPost,
+			$.post('/local/components/user/subscribe.quick.form/action.php', arPost,
 					function(data) {
 						$('#asd_subscribe_submit').removeAttr('disabled');
 						if (data.status == 'error') {

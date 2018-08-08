@@ -1,6 +1,6 @@
 <?
-$MESS["yenisite.facebookcomments_MODULE_NAME"] = "Êîììåíòàðèè Facebook";
-$MESS["yenisite.facebookcomments_MODULE_DESC"] = "Êîììåíòàðèè îò ñîöèàëüíîé ñåòè Facebook";
-$MESS["yenisite.facebookcomments_PARTNER_NAME"] = "Èíòåðíåò-àãåíñòâî Åíèñàéò";
+$MESS["yenisite.facebookcomments_MODULE_NAME"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Facebook";
+$MESS["yenisite.facebookcomments_MODULE_DESC"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ð¾Ñ‚ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾Ð¹ ÑÐµÑ‚Ð¸ Facebook";
+$MESS["yenisite.facebookcomments_PARTNER_NAME"] = "Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð°Ð³ÐµÐ½ÑÑ‚Ð²Ð¾ Ð•Ð½Ð¸ÑÐ°Ð¹Ñ‚";
 $MESS["yenisite.facebookcomments_PARTNER_URI"] = "http://www.yenisite.ru";
 ?>

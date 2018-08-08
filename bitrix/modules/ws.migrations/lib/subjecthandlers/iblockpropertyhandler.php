@@ -169,7 +169,7 @@ class IblockPropertyHandler extends BaseSubjectHandler {
                 'IBLOCK_ID' => $data['IBLOCK_ID'],
             ));
             if (!$addRes->isSuccess()) {
-                throw new \Exception('Íå óäàëîñü âîçîáíîâèòü ñâîéñòâî òåêóùåé âåðñèè. ' . implode(', ', $addRes->getErrorMessages())."\n".var_export($data, true));
+                throw new \Exception('ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð²Ð¾Ð·Ð¾Ð±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ¹ Ð²ÐµÑ€ÑÐ¸Ð¸. ' . implode(', ', $addRes->getErrorMessages())."\n".var_export($data, true));
             }
         }
         if ($id && PropertyTable::getById($id)->fetch()) {

@@ -1,22 +1,22 @@
 <?
 $MESS ['MODULE_MAILATTACHING_MODULE_NAME'] = 'MailAttaching';
-$MESS ['MODULE_MAILATTACHING_MODULE_DESCRIPTION'] = 'Модуль позволяет прикреплять расположенные на сервере файлы к исходящим почтовым сообщениям сайта';
-$MESS ['MODULE_MAILATTACHING_INSTALL_COMPLETE_OK'] = 'Установка завершена.';
-$MESS ['MODULE_MAILATTACHING_INSTALL_COMPLETE_ERROR'] = 'Установка завершена с ошибками';
-$MESS ['MODULE_MAILATTACHING_INSTALL_PUBLIC_SETUP'] = 'Установить';
-$MESS ['MODULE_MAILATTACHING_INSTALL_TITLE'] = 'Установить модуль MailAttaching';
-$MESS ['MODULE_MAILATTACHING_UNINSTALL_TITLE'] = 'Удаление модуля MailAttaching';
-$MESS ['MODULE_MAILATTACHING_UNINSTALL_WARNING'] = 'Внимание! Модуль будет удален из системы.';
+$MESS ['MODULE_MAILATTACHING_MODULE_DESCRIPTION'] = 'РњРѕРґСѓР»СЊ РїРѕР·РІРѕР»СЏРµС‚ РїСЂРёРєСЂРµРїР»СЏС‚СЊ СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Рµ РЅР° СЃРµСЂРІРµСЂРµ С„Р°Р№Р»С‹ Рє РёСЃС…РѕРґСЏС‰РёРј РїРѕС‡С‚РѕРІС‹Рј СЃРѕРѕР±С‰РµРЅРёСЏРј СЃР°Р№С‚Р°';
+$MESS ['MODULE_MAILATTACHING_INSTALL_COMPLETE_OK'] = 'РЈСЃС‚Р°РЅРѕРІРєР° Р·Р°РІРµСЂС€РµРЅР°.';
+$MESS ['MODULE_MAILATTACHING_INSTALL_COMPLETE_ERROR'] = 'РЈСЃС‚Р°РЅРѕРІРєР° Р·Р°РІРµСЂС€РµРЅР° СЃ РѕС€РёР±РєР°РјРё';
+$MESS ['MODULE_MAILATTACHING_INSTALL_PUBLIC_SETUP'] = 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ';
+$MESS ['MODULE_MAILATTACHING_INSTALL_TITLE'] = 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»СЊ MailAttaching';
+$MESS ['MODULE_MAILATTACHING_UNINSTALL_TITLE'] = 'РЈРґР°Р»РµРЅРёРµ РјРѕРґСѓР»СЏ MailAttaching';
+$MESS ['MODULE_MAILATTACHING_UNINSTALL_WARNING'] = 'Р’РЅРёРјР°РЅРёРµ! РњРѕРґСѓР»СЊ Р±СѓРґРµС‚ СѓРґР°Р»РµРЅ РёР· СЃРёСЃС‚РµРјС‹.';
 
-$MESS ['MODULE_MAILATTACHING_UNINSTALL_DEL'] = 'Удалить';
-$MESS ['MODULE_MAILATTACHING_UNINSTALL_ERROR'] = 'Ошибки при удалении:';
-$MESS ['MODULE_MAILATTACHING_UNINSTALL_COMPLETE'] = 'Удаление завершено.';
-$MESS ['MODULE_MAILATTACHING_INSTALL_BACK'] = 'Вернуться в управление модулями';
+$MESS ['MODULE_MAILATTACHING_UNINSTALL_DEL'] = 'РЈРґР°Р»РёС‚СЊ';
+$MESS ['MODULE_MAILATTACHING_UNINSTALL_ERROR'] = 'РћС€РёР±РєРё РїСЂРё СѓРґР°Р»РµРЅРёРё:';
+$MESS ['MODULE_MAILATTACHING_UNINSTALL_COMPLETE'] = 'РЈРґР°Р»РµРЅРёРµ Р·Р°РІРµСЂС€РµРЅРѕ.';
+$MESS ['MODULE_MAILATTACHING_INSTALL_BACK'] = 'Р’РµСЂРЅСѓС‚СЊСЃСЏ РІ СѓРїСЂР°РІР»РµРЅРёРµ РјРѕРґСѓР»СЏРјРё';
 
-$MESS ['MODULE_MAILATTACHING_MOD_STEP_LIST'] = 'Вернуться';
-$MESS ['MODULE_MAILATTACHING_MOD_STEP_2'] = 'Установить модуль';
+$MESS ['MODULE_MAILATTACHING_MOD_STEP_LIST'] = 'Р’РµСЂРЅСѓС‚СЊСЃСЏ';
+$MESS ['MODULE_MAILATTACHING_MOD_STEP_2'] = 'РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»СЊ';
 
-$MESS ['MODULE_MAILATTACHING_PARTNER_NAME'] = "Первый Интегратор";
+$MESS ['MODULE_MAILATTACHING_PARTNER_NAME'] = "РџРµСЂРІС‹Р№ РРЅС‚РµРіСЂР°С‚РѕСЂ";
 $MESS ['MODULE_MAILATTACHING_PARTNER_SITE'] = "http://www.1-integrator.com";
 
-$MESS ['MODULE_MAILATTACHING_NOT_EFFECT_WARNING'] = 'Внимание!<br />Модуль в процессе своей работы использует функцию-перехватчик "custom_mail()", которая в данный момент уже задействована в системе. Установка модуля не даст результата.<br /><br />Обратитесь к техническим специалистам для устранения данной проблемы.';
+$MESS ['MODULE_MAILATTACHING_NOT_EFFECT_WARNING'] = 'Р’РЅРёРјР°РЅРёРµ!<br />РњРѕРґСѓР»СЊ РІ РїСЂРѕС†РµСЃСЃРµ СЃРІРѕРµР№ СЂР°Р±РѕС‚С‹ РёСЃРїРѕР»СЊР·СѓРµС‚ С„СѓРЅРєС†РёСЋ-РїРµСЂРµС…РІР°С‚С‡РёРє "custom_mail()", РєРѕС‚РѕСЂР°СЏ РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ СѓР¶Рµ Р·Р°РґРµР№СЃС‚РІРѕРІР°РЅР° РІ СЃРёСЃС‚РµРјРµ. РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»СЏ РЅРµ РґР°СЃС‚ СЂРµР·СѓР»СЊС‚Р°С‚Р°.<br /><br />РћР±СЂР°С‚РёС‚РµСЃСЊ Рє С‚РµС…РЅРёС‡РµСЃРєРёРј СЃРїРµС†РёР°Р»РёСЃС‚Р°Рј РґР»СЏ СѓСЃС‚СЂР°РЅРµРЅРёСЏ РґР°РЅРЅРѕР№ РїСЂРѕР±Р»РµРјС‹.';

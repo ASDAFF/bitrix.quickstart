@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME"=>GetMessage("SALON_TEMPLATE"), "DESCRIPTION"=>GetMessage("SALON_DESCRIPTION"));?>

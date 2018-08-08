@@ -3,7 +3,7 @@ IncludeModuleLangFile(__FILE__);
 
 class CWD_Pageprop_RadioButton extends CWD_PagepropsAll {
 	CONST CODE = 'RADIOBUTON';
-	CONST NAME = 'Ðàäèîêíîïêà (ïåðåêëþ÷àòåëü)';
+	CONST NAME = 'Ð Ð°Ð´Ð¸Ð¾ÐºÐ½Ð¾Ð¿ÐºÐ° (Ð¿ÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð°Ñ‚ÐµÐ»ÑŒ)';
 	function GetName() {
 		$Name = self::NAME;
 		if (CWD_Pageprops::IsUtf8()) {
@@ -16,13 +16,13 @@ class CWD_Pageprop_RadioButton extends CWD_PagepropsAll {
 	}
 	function GetMessage($Item) {
 		$arMess = array(
-			'OPTION_CODE' => 'Çíà÷åíèå',
-			'OPTION_NAME' => 'Îïèñàíèå çíà÷åíèÿ',
-			'SORT' => 'Ñîðòèðîâêà',
-			'DELETING' => 'Óäàëåíèå',
-			'DELETE' => 'Óäàëèòü',
-			'SELECT_OPTION_EMPTY' => '--- íå çàäàíî ---',
-			'ADD_ROW' => 'Äîáàâèòü çíà÷åíèå',
+			'OPTION_CODE' => 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ',
+			'OPTION_NAME' => 'ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ',
+			'SORT' => 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°',
+			'DELETING' => 'Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ',
+			'DELETE' => 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ',
+			'SELECT_OPTION_EMPTY' => '--- Ð½Ðµ Ð·Ð°Ð´Ð°Ð½Ð¾ ---',
+			'ADD_ROW' => 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ',
 		);
 		$strResult = $arMess[$Item];
 		if (CWD_Pageprops::IsUtf8()) {

@@ -1,6 +1,6 @@
 <?
 /**
- * Ìîäóëü shopolia.emailfields (Äîáàâëåíèå ïîëåé çàêàçà â ñòàíäàðòíûå ïî÷òîâûå ñîáûòèÿ 1Ñ-Áèòðèêñ)
+ * ÐœÐ¾Ð´ÑƒÐ»ÑŒ shopolia.emailfields (Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð»ÐµÐ¹ Ð·Ð°ÐºÐ°Ð·Ð° Ð² ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ 1Ð¡-Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ)
  */
 
 
@@ -17,7 +17,7 @@ Class shopolia_emailfields extends CModule {
 	var $MODULE_DESCRIPTION;
 	var $MODULE_CSS;
 
-	// Îïèñàíèå ìîäóëÿ
+	// ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 	function shopolia_emailfields () {
         global $APPLICATION;
 		$arModuleVersion = array();
@@ -38,30 +38,30 @@ Class shopolia_emailfields extends CModule {
 		$this->PARTNER_URI = "http://shopolia.com"; 
 	}
 
-	// Âûïîëíåíèå óñòàíîâî÷íûõ SQL-çàïðîñîâ, ïðèâÿçêà ê äðóãèì ìîäóëÿì
+	// Ð’Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¾Ñ‡Ð½Ñ‹Ñ… SQL-Ð·Ð°Ð¿Ñ€Ð¾ÑÐ¾Ð², Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ° Ðº Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¼Ð¾Ð´ÑƒÐ»ÑÐ¼
 	function InstallDB($arParams = array()) {
 		RegisterModule("shopolia.emailfields");
         RegisterModuleDependences("main", "OnBeforeEventAdd", "shopolia.emailfields", "CShopoliaEmailFieldsHandlers", "OnBeforeEventAdd", 9999);
 		return true;
 	}
 
-	// Óäàëåíèå áàçû äàííûõ è çàâèñèìîñòåé îò äðóãèõ ìîäóëåé
+	// Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð±Ð°Ð·Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¸ Ð·Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚ÐµÐ¹ Ð¾Ñ‚ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹
 	function UnInstallDB($arParams = array()) {       
         UnRegisterModuleDependences("main", "OnBeforeEventAdd", "shopolia.emailfields", "CShopoliaEmailFieldsHandlers", "OnBeforeEventAdd");
-		COption::RemoveOption("shopolia.emailfields"); // óäàëÿåì âñå íàñòðîéêè
+		COption::RemoveOption("shopolia.emailfields"); // ÑƒÐ´Ð°Ð»ÑÐµÐ¼ Ð²ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸
 		UnRegisterModule("shopolia.emailfields");
 		return true;
 	}
-	// Ïðîöåäóðû, âûïîëíÿåìûå ñðàçó ïîñëå çàïóñêà óñòàíîâêè ìîäóëÿ
+	// ÐŸÑ€Ð¾Ñ†ÐµÐ´ÑƒÑ€Ñ‹, Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÐ¼Ñ‹Ðµ ÑÑ€Ð°Ð·Ñƒ Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð¿ÑƒÑÐºÐ° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 	function DoInstall() {
 		global $DOCUMENT_ROOT, $APPLICATION, $MESS;
 		$step = intval($_POST['step']);
-        $this->InstallDB(); // ñòàâèì áàçó
+        $this->InstallDB(); // ÑÑ‚Ð°Ð²Ð¸Ð¼ Ð±Ð°Ð·Ñƒ
         $GLOBALS["errors"] = $this->errors;
         $APPLICATION->IncludeAdminFile(GetMessage("SHOPOLIA_EMAILFIELDS_INSTALL_TITLE"), $DOCUMENT_ROOT."/bitrix/modules/shopolia.emailfields/install/install_ready.php");
 	}
 
-	// Ïðîöåäóðû, âûïîëíÿåìûå ñðàçó ïîñëå çàïóñêà äåèíñòàëëÿöèè ìîäóëÿ
+	// ÐŸÑ€Ð¾Ñ†ÐµÐ´ÑƒÑ€Ñ‹, Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÐ¼Ñ‹Ðµ ÑÑ€Ð°Ð·Ñƒ Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð¿ÑƒÑÐºÐ° Ð´ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 	function DoUninstall() {
 		global $DOCUMENT_ROOT, $APPLICATION;
 		$this->UnInstallDB();

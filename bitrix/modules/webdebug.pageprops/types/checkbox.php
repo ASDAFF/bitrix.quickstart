@@ -3,7 +3,7 @@ IncludeModuleLangFile(__FILE__);
 
 class CWD_Pageprop_CheckBox extends CWD_PagepropsAll {
 	CONST CODE = 'CHECKBOX';
-	CONST NAME = '‘Î‡ÊÓÍ';
+	CONST NAME = '–§–ª–∞–∂–æ–∫';
 	function GetName() {
 		$Name = self::NAME;
 		if (CWD_Pageprops::IsUtf8()) {
@@ -16,7 +16,7 @@ class CWD_Pageprop_CheckBox extends CWD_PagepropsAll {
 	}
 	function GetMessage($Item) {
 		$arMess = array(
-			'NO_SETTINGS' => 'Õ‡ÒÚÓÈÍË ÌÂ ÚÂ·Û˛ÚÒˇ.',
+			'NO_SETTINGS' => '–ù–∞—Å—Ç—Ä–æ–π–∫–∏ –Ω–µ —Ç—Ä–µ–±—É—é—Ç—Å—è.',
 		);
 		$strResult = $arMess[$Item];
 		if (CWD_Pageprops::IsUtf8()) {

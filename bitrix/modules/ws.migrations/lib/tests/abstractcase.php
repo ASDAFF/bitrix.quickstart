@@ -23,7 +23,7 @@ abstract class AbstractCase {
     }
 
     /**
-     * Генерация сообщения об ошибке
+     * Р“РµРЅРµСЂР°С†РёСЏ СЃРѕРѕР±С‰РµРЅРёСЏ РѕР± РѕС€РёР±РєРµ
      * @param $path
      * @param null $replace
      * @return mixed

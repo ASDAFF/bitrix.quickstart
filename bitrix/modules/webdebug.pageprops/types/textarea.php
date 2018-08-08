@@ -3,7 +3,7 @@ IncludeModuleLangFile(__FILE__);
 
 class CWD_Pageprop_TextArea extends CWD_PagepropsAll {
 	CONST CODE = 'TEXTAREA';
-	CONST NAME = '“ÂÍÒÚÓ‚‡ˇ Ó·Î‡ÒÚ¸';
+	CONST NAME = '–¢–µ–∫—Å—Ç–æ–≤–∞—è –æ–±–ª–∞—Å—Ç—å';
 	function GetName() {
 		$Name = self::NAME;
 		if (CWD_Pageprops::IsUtf8()) {
@@ -16,13 +16,13 @@ class CWD_Pageprop_TextArea extends CWD_PagepropsAll {
 	}
 	function GetMessage($Item) {
 		$arMess = array(
-			'OPTION_COLUMN_PARAM' => 'œ‡‡ÏÂÚ',
-			'OPTION_COLUMN_VALUE' => '«Ì‡˜ÂÌËÂ',
-			'OPTION_COLS' => ' ÓÎ-‚Ó ÒÚÓÎ·ˆÓ‚',
-			'OPTION_ROWS' => ' ÓÎ-‚Ó ÒÚÓÍ',
-			'OPTION_RESIZE_Y' => '–Û˜ÌÓÂ ‡ÒÚˇ„Ë‚‡ÌËÂ ‚ ‚˚ÒÓÚÛ',
-			'OPTION_RESIZE_X' => '–Û˜ÌÓÂ ‡ÒÚˇ„Ë‚‡ÌËÂ ‚ ¯ËËÌÛ',
-			'OPTION_RESIZE_FULL' => '¿‚ÚÓÏ‡ÚË˜ÂÒÍÓÂ ‡ÒÚˇ„Ë‚‡ÌËÂ Ì‡ ‚Ò˛ ¯ËËÌÛ',
+			'OPTION_COLUMN_PARAM' => '–ü–∞—Ä–∞–º–µ—Ç—Ä',
+			'OPTION_COLUMN_VALUE' => '–ó–Ω–∞—á–µ–Ω–∏–µ',
+			'OPTION_COLS' => '–ö–æ–ª-–≤–æ —Å—Ç–æ–ª–±—Ü–æ–≤',
+			'OPTION_ROWS' => '–ö–æ–ª-–≤–æ —Å—Ç—Ä–æ–∫',
+			'OPTION_RESIZE_Y' => '–†—É—á–Ω–æ–µ —Ä–∞—Å—Ç—è–≥–∏–≤–∞–Ω–∏–µ –≤ –≤—ã—Å–æ—Ç—É',
+			'OPTION_RESIZE_X' => '–†—É—á–Ω–æ–µ —Ä–∞—Å—Ç—è–≥–∏–≤–∞–Ω–∏–µ –≤ —à–∏—Ä–∏–Ω—É',
+			'OPTION_RESIZE_FULL' => '–ê–≤—Ç–æ–º–∞—Ç–∏—á–µ—Å–∫–æ–µ —Ä–∞—Å—Ç—è–≥–∏–≤–∞–Ω–∏–µ –Ω–∞ –≤—Å—é —à–∏—Ä–∏–Ω—É',
 		);
 		$strResult = $arMess[$Item];
 		if (CWD_Pageprops::IsUtf8()) {

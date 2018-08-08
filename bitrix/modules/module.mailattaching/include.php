@@ -1,13 +1,13 @@
 <?
-###############################################
-# Mail Attaching                              #
-# Copyright "ÐŸÐµÑ€Ð²Ñ‹Ð¹ Ð˜Ð½Ñ‚ÐµÐ³Ñ€Ð°Ñ‚Ð¾Ñ€", 2011-2013    #
-# http://www.1-integrator.com/                #
-# ------------------------------------------- #
-# @author Sergey Leshchenko                   #
-###############################################
+/**
+ * Mail Attaching
+ *
+ * Copyright "Ïåðâûé Èíòåãðàòîð", 2011-2015
+ * http://www.1-integrator.com/
+ * @author Sergey Leshchenko
+ */
 
-// !!! Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ !!! Ð”Ð»Ñ ÑÐ¾ÐºÑ€Ð°Ñ‰ÐµÐ½Ð¸Ñ Ð¸Ð½ÐºÐ»ÑƒÐ´Ð¾Ð² Ð²ÑÐµ ÑÐ·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ð°Ð¹Ð»Ñ‹ ÑÐ¾Ð±Ñ€Ð°Ð½Ñ‹ Ð² Ð¾Ð´Ð¸Ð½
+// !!! Âíèìàíèå !!! Äëÿ ñîêðàùåíèÿ èíêëóäîâ âñå ÿçûêîâûå ôàéëû ñîáðàíû â îäèí
 IncludeModuleLangFile(__FILE__);
 
 // __autoloades
@@ -27,7 +27,7 @@ if(!defined('MODULE_MAILATTACHING_USE_CUSTOM_MAIL')) {
 	if(function_exists('custom_mail')) {
 		define('MODULE_MAILATTACHING_USE_CUSTOM_MAIL', false);
 
-		// Ð²Ñ‹Ð²ÐµÐ´ÐµÐ¼ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ðµ
+		// âûâåäåì óâåäîìëåíèå
 		if(class_exists('CAdminInformer')) {
 			CAdminInformer::AddItem(
 				array(

@@ -1,6 +1,6 @@
 <?
 /**
- * ŒÒÌÓ‚ÌÓÈ ÍÎ‡ÒÒ ÏÓ‰ÛÎˇ. ’‡ÌËÚ ‚ ÒÂ·Â ‚ÒÂ ÌÂÓ·ıÓ‰ËÏ˚Â ÔÓˆÂ‰Û˚
+ * –û—Å–Ω–æ–≤–Ω–æ–π –∫–ª–∞—Å—Å –º–æ–¥—É–ª—è. –•—Ä–∞–Ω–∏—Ç –≤ —Å–µ–±–µ –≤—Å–µ –Ω–µ–æ–±—Ö–æ–¥–∏–º—ã–µ –ø—Ä–æ—Ü–µ–¥—É—Ä—ã
  * @author Aleksandras Ostroumovas (info@shopolia.com)
  * @link http://www.shopolia.com/
  * @version 1.0.1
@@ -13,6 +13,6 @@ IncludeModuleLangFile(__FILE__);
 CModule::AddAutoloadClasses(
 	"shopolia.emailfields",
 	array(
-		"CShopoliaEmailFieldsHandlers" => "classes/".$DBType."/CShopoliaEmailFieldsHandlers.php", // –‡ÁÎË˜Ì˚Â ı˝Ì‰ÎÂ˚ ÏÓ‰ÛÎˇ
+		"CShopoliaEmailFieldsHandlers" => "classes/".$DBType."/CShopoliaEmailFieldsHandlers.php", // –†–∞–∑–ª–∏—á–Ω—ã–µ —Ö—ç–Ω–¥–ª–µ—Ä—ã –º–æ–¥—É–ª—è
 	)
 );

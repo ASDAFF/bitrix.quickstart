@@ -84,5 +84,5 @@ foreach ($module->getSubjectHandlers() as $handler) {
     $form->AddCheckBoxField('data[handlers]['.get_class($handler).']', $handler->getName(), true, '1', $options->isEnableSubjectHandler(get_class($handler)));
 }
 
-$form->Buttons(array('btnSave' => false, 'btnÀpply' => true));
+$form->Buttons(array('btnSave' => false, 'btnÐpply' => true));
 $form->Show();

@@ -43,6 +43,6 @@ $APPLICATION->GetCurUri()?>" ENCTYPE="multipart/form-data" name="apply"><?
     </tr><?
     $form->EndCustomField('version');
     $form->EndTab();
-    $form->Buttons(array('btnSave' => false, 'btnÀpply' => true));
+    $form->Buttons(array('btnSave' => false, 'btnÐpply' => true));
     $form->Show();
     ?></form><?

@@ -1,5 +1,5 @@
 <?
-	$MESS["FB_COMMENTS_NAME"] = "Êîììåíòàðèè Facebook";
-	$MESS["FB_COMMENTS_DESCRIPTION"] = "Êîììåíòàðèè èç ñîöèàëüíîé ñåòè Facebook";
+	$MESS["FB_COMMENTS_NAME"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Facebook";
+	$MESS["FB_COMMENTS_DESCRIPTION"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸ Ð¸Ð· ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾Ð¹ ÑÐµÑ‚Ð¸ Facebook";
 	$MESS["YENISITE_COMPONENTS"] = "ROMZA.RU";
 ?>

@@ -149,132 +149,148 @@ class CModuleMailAttachingAdmin {
 				};
 
 				(function() {
-					BX.ready(function(){
-						var bGetNext = true;
-						var obFieldRow = null;
-					
-						var addFileAttachesCtrl = function(obFieldRow, sNameFieldName, sValFieldName, sCheckboxId, sBlockId) {
-							var obNameField = BX.findChild(obFieldRow, {'tag': 'input', 'attr': {'name': sNameFieldName}}, true, false);
-							var obValField = BX.findChild(obFieldRow, {'tag': 'input', 'attr': {'name': sValFieldName}}, true, false);
+					BX.ready(
+						function() {
+							var bGetNext = true;
+							var obFieldRow = null;
 
-							var checkboxHandler = function(obCheckbox, sFileBoxId) {
-								var bReadonly = false;
-								var bContinue = true;
-								var sVal_1 = '';
-								var sVal_2 = '';
-
-								if(obCheckbox.checked) {
-									sVal_1 = BX.util.trim(obNameField.value);
-									sVal_2 = BX.util.trim(obValField.value);
-									if((sVal_1.length && sVal_1 != 'ATTACHED-FILES') || (sVal_1 != 'ATTACHED-FILES' && sVal_2.length)) {
-										var bConfirmed = confirm("<?=GetMessage('MODULE_MAILATTACHING_CHECKED_CONFIRM')?>");
-										bContinue = !bConfirmed ? false : bContinue;
-										if(!bConfirmed) {
-											obCheckbox.checked = false;
-											return false;
-										}
-									}
+							var addFileAttachesCtrl = function(obFieldRow, sNameFieldName, sValFieldName, sCheckboxId, sBlockId) {
+								var obNameField = BX.findChild(obFieldRow, {'tag': 'input', 'attr': {'name': sNameFieldName}}, true, false);
+								var obValField = BX.findChild(obFieldRow, {'tag': 'input', 'attr': {'name': sValFieldName}}, true, false);
+								if(!obNameField || !obValField) {
+									return false;
 								}
-								if(bContinue) {
+
+								var checkboxHandler = function(obCheckbox, sFileBoxId) {
+									var bReadonly = false;
+									var bContinue = true;
+									var sVal_1 = '';
+									var sVal_2 = '';
+
 									if(obCheckbox.checked) {
-										obNameField.value = 'ATTACHED-FILES';
-										bReadonly = true;
-										if(sVal_1 != 'ATTACHED-FILES' && sVal_2.length) {
-											obValField.value = '';
-										}
-
-										var obFilesBlock = document.getElementById(sBlockId);
-										var obFileBoxClone = null;
-										var obFileBoxCollect = null;
-										if(obFilesBlock) {
-											obFileBoxCollect = BX.findChild(obFilesBlock, {'tag': 'div', 'className': 'module-mailattaching-file-box'}, true, true);
-											if(obFileBoxCollect) {
-												var iCnt = obFileBoxCollect.length;
-												for(var mIdx in obFileBoxCollect) {
-													if(!obFileBoxClone) {
-														obFileBoxClone = module_mailattaching_getCloneFileBox(obFileBoxCollect[mIdx]);
-													}
-													obFilesBlock.removeChild(obFileBoxCollect[mIdx]);
-												}
+										sVal_1 = BX.util.trim(obNameField.value);
+										sVal_2 = BX.util.trim(obValField.value);
+										if((sVal_1.length && sVal_1 != 'ATTACHED-FILES') || (sVal_1 != 'ATTACHED-FILES' && sVal_2.length)) {
+											var bConfirmed = confirm("<?=GetMessage('MODULE_MAILATTACHING_CHECKED_CONFIRM')?>");
+											bContinue = !bConfirmed ? false : bContinue;
+											if(!bConfirmed) {
+												obCheckbox.checked = false;
+												return false;
 											}
-										}
-										if(obFilesBlock && obFileBoxClone) {
-											var arVals = [];
-											if(sVal_1 == 'ATTACHED-FILES' && sVal_2.length) {
-												arVals = sVal_2.split(/,|;/);
-               								}
-
-											if(arVals.length) {
-												for(var mIdx in arVals) {
-													var sValue = BX.util.trim(arVals[mIdx]);
-													if(sValue.length) {
-														var obFileField = BX.findChild(obFileBoxClone, {'tag': 'input', 'className': 'module-mailattaching-file-path'}, true, false);
-														var obChilds = obFileBoxClone.childNodes;
-														for(var iIdx in obChilds) {
-															if(obChilds[iIdx].type && obChilds[iIdx].type == 'text') {
-																obChilds[iIdx].value = sValue;
-															}
-														}
-			               								obFilesBlock.appendChild(obFileBoxClone);
-			               								obFileBoxClone = module_mailattaching_getCloneFileBox(obFileBoxClone);
-													}
-												}
-											}
-											obFilesBlock.appendChild(obFileBoxClone);
 										}
 									}
-									obNameField.readOnly = bReadonly;
-									obValField.readOnly = bReadonly;
+									if(bContinue) {
+										if(obCheckbox.checked) {
+											obNameField.value = 'ATTACHED-FILES';
+											bReadonly = true;
+											if(sVal_1 != 'ATTACHED-FILES' && sVal_2.length) {
+												obValField.value = '';
+											}
 
-									if(sFileBoxId) {
-										var obFileBox = document.getElementById(sFileBoxId);
-										if(obFileBox) {
-											obFileBox.style.display = bReadonly ? 'block' : 'none';
-											module_mailattaching_updateVals(obFileBox);
+											var obFilesBlock = document.getElementById(sBlockId);
+											var obFileBoxClone = null;
+											var obFileBoxCollect = null;
+											if(obFilesBlock) {
+												obFileBoxCollect = BX.findChild(obFilesBlock, {'tag': 'div', 'className': 'module-mailattaching-file-box'}, true, true);
+												if(obFileBoxCollect) {
+													var iCnt = obFileBoxCollect.length;
+													for(var mIdx in obFileBoxCollect) {
+														if(!obFileBoxClone) {
+															obFileBoxClone = module_mailattaching_getCloneFileBox(obFileBoxCollect[mIdx]);
+														}
+														obFilesBlock.removeChild(obFileBoxCollect[mIdx]);
+													}
+												}
+											}
+											if(obFilesBlock && obFileBoxClone) {
+												var arVals = [];
+												if(sVal_1 == 'ATTACHED-FILES' && sVal_2.length) {
+													arVals = sVal_2.split(/,|;/);
+												}
+
+												if(arVals.length) {
+													for(var mIdx in arVals) {
+														var sValue = BX.util.trim(arVals[mIdx]);
+														if(sValue.length) {
+															var obFileField = BX.findChild(obFileBoxClone, {'tag': 'input', 'className': 'module-mailattaching-file-path'}, true, false);
+															var obChilds = obFileBoxClone.childNodes;
+															for(var iIdx in obChilds) {
+																if(obChilds[iIdx].type && obChilds[iIdx].type == 'text') {
+																	obChilds[iIdx].value = sValue;
+																}
+															}
+															obFilesBlock.appendChild(obFileBoxClone);
+															obFileBoxClone = module_mailattaching_getCloneFileBox(obFileBoxClone);
+														}
+													}
+												}
+												obFilesBlock.appendChild(obFileBoxClone);
+											}
+										}
+										obNameField.readOnly = bReadonly;
+										obValField.readOnly = bReadonly;
+
+										if(sFileBoxId) {
+											var obFileBox = document.getElementById(sFileBoxId);
+											if(obFileBox) {
+												obFileBox.style.display = bReadonly ? 'block' : 'none';
+												module_mailattaching_updateVals(obFileBox);
+											}
+										}
+									}
+								};
+
+								try {
+									obFieldRow.style.display = 'table-row';
+								} catch(e) {
+									obFieldRow.style.display = 'block';
+								}
+								var obCells = BX.findChild(obFieldRow, {'tag': 'td'}, true, true);
+								var obCell_2 = null;
+								if(obCells && (obCell_2 = obCells[1])) {
+									obCell_2.appendChild(
+										BX.create('div', {
+											props: {'className': 'module-mailattaching-file-cont'},
+											style: {},
+											html: '<div style="margin: 0 0 5px 0;"><label style="vertical-align: middle;"><input style="vertical-align: middle;" id="'+sCheckboxId+'" type="checkbox" /><?=GetMessage('MODULE_MAILATTACHING_CHECKBOX')?></label></div>'
+											+'<div id="'+sBlockId+'" class="module-mailattaching-file-block" style="display: none; margin: 0 0 10px 0; padding: 6px 7px; border: dashed 1px #cccccc;">'
+												+'<div class="module-mailattaching-file-title" style="margin: 0 0 5px 0;"><?=GetMessage('MODULE_MAILATTACHING_CHECKBOX_TEXT')?></div>'
+												+'<?=$sFileStrJs?>'
+											+'</div>'
+										})
+									);
+									var obCheckbox = document.getElementById(sCheckboxId);
+									BX.bind(
+										obCheckbox, 
+										'click', 
+										function() {
+											checkboxHandler(this, sBlockId);
+										}
+									);
+
+									if(obNameField && obValField) {
+										if(obNameField.value == 'ATTACHED-FILES' && obValField.value.length) {
+											obCheckbox.click();
 										}
 									}
 								}
 							};
 
-							try {
-								obFieldRow.style.display = 'table-row';
-							} catch(e) {
-								obFieldRow.style.display = 'block';
-							}
-							var obCells = BX.findChild(obFieldRow, {'tag': 'td'}, true, true);
-							var obCell_2 = null;
-							if(obCells && (obCell_2 = obCells[1])) {
-								obCell_2.appendChild(
-									BX.create('div', {
-										props: {'className': 'module-mailattaching-file-cont'},
-										style: {},
-										html: '<div style="margin: 0 0 5px 0;"><label style="vertical-align: middle;"><input style="vertical-align: middle;" id="'+sCheckboxId+'" type="checkbox" /><?=GetMessage('MODULE_MAILATTACHING_CHECKBOX')?></label></div>'
-										+'<div id="'+sBlockId+'" class="module-mailattaching-file-block" style="display: none; margin: 0 0 10px 0; padding: 6px 7px; border: dashed 1px #cccccc;">'
-											+'<div class="module-mailattaching-file-title" style="margin: 0 0 5px 0;"><?=GetMessage('MODULE_MAILATTACHING_CHECKBOX_TEXT')?></div>'
-											+'<?=$sFileStrJs?>'
-										+'</div>'
-									})
-								);
-								var obCheckbox = document.getElementById(sCheckboxId);
-								BX.bind(obCheckbox, 'click', function(){
-									checkboxHandler(this, sBlockId);
-								});
-								
-								if(obNameField && obValField) {
-									if(obNameField.value == 'ATTACHED-FILES' && obValField.value.length) {
-										obCheckbox.click();
-									}
+							var bTmpRes = false;
+							if(bGetNext && (obFieldRow = document.getElementById('msg_ext6'))) {
+								bTmpRes = addFileAttachesCtrl(obFieldRow, 'FIELD1_NAME', 'FIELD1_VALUE', 'module-mailattaching-checkbox-1', 'module-mailattaching-files-block-1');
+								if(!bTmpRes) {
+									bTmpRes = addFileAttachesCtrl(obFieldRow, 'ADDITIONAL_FIELD[NAME][]', 'ADDITIONAL_FIELD[VALUE][]', 'module-mailattaching-checkbox-1', 'module-mailattaching-files-block-1');
 								}
 							}
-						};
-
-						if(bGetNext && (obFieldRow = document.getElementById('msg_ext6'))) {
-							addFileAttachesCtrl(obFieldRow, 'FIELD1_NAME', 'FIELD1_VALUE', 'module-mailattaching-checkbox-1', 'module-mailattaching-files-block-1');
+							if(bGetNext && (obFieldRow = document.getElementById('msg_ext7'))) {
+								bTmpRes = addFileAttachesCtrl(obFieldRow, 'FIELD2_NAME', 'FIELD2_VALUE', 'module-mailattaching-checkbox-2', 'module-mailattaching-files-block-2');
+								if(!bTmpRes) {
+									bTmpRes = addFileAttachesCtrl(obFieldRow, 'ADDITIONAL_FIELD[NAME][]', 'ADDITIONAL_FIELD[VALUE][]', 'module-mailattaching-checkbox-2', 'module-mailattaching-files-block-2');
+								}
+							}
 						}
-						if(bGetNext && (obFieldRow = document.getElementById('msg_ext7'))) {
-							addFileAttachesCtrl(obFieldRow, 'FIELD2_NAME', 'FIELD2_VALUE', 'module-mailattaching-checkbox-2', 'module-mailattaching-files-block-2');
-						}    	
-					});
+					);
 				}());
 			</script><?
 			$sContent = ob_get_clean();

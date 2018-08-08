@@ -1,8 +1,8 @@
 <?
-$MESS ['WEBDEBUG_RUBLE_PARTNER_NAME'] = "Âåá-ñòóäèÿ «Webdebug» [ÎÎÎ «Âåá äåáàã»]";
+$MESS ['WEBDEBUG_RUBLE_PARTNER_NAME'] = "Ð’ÐµÐ±-ÑÑ‚ÑƒÐ´Ð¸Ñ Â«WebdebugÂ» [ÐžÐžÐž Â«Ð’ÐµÐ± Ð´ÐµÐ±Ð°Ð³Â»]";
 $MESS ['WEBDEBUG_RUBLE_PARTNER_URI'] = "http://www.webdebug.ru/";
-$MESS ['WEBDEBUG_RUBLE_MODULE_NAME'] = "Ñèìâîë ðóáëÿ";
-$MESS ['WEBDEBUG_RUBLE_MODULE_DESC'] = "Ñïåöèàëüíûé ñèìâîë ðóáëÿ";
-$MESS ['WEBDEBUG_RUBLE_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ \"Ñèìâîë ðóáëÿ\"";
-$MESS ['WEBDEBUG_RUBLE_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ \"Ñèìâîë ðóáëÿ\"";
+$MESS ['WEBDEBUG_RUBLE_MODULE_NAME'] = "Ð¡Ð¸Ð¼Ð²Ð¾Ð» Ñ€ÑƒÐ±Ð»Ñ";
+$MESS ['WEBDEBUG_RUBLE_MODULE_DESC'] = "Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ¸Ð¼Ð²Ð¾Ð» Ñ€ÑƒÐ±Ð»Ñ";
+$MESS ['WEBDEBUG_RUBLE_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ \"Ð¡Ð¸Ð¼Ð²Ð¾Ð» Ñ€ÑƒÐ±Ð»Ñ\"";
+$MESS ['WEBDEBUG_RUBLE_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ \"Ð¡Ð¸Ð¼Ð²Ð¾Ð» Ñ€ÑƒÐ±Ð»Ñ\"";
 ?>

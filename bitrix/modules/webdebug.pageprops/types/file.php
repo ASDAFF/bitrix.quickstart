@@ -3,7 +3,7 @@ IncludeModuleLangFile(__FILE__);
 
 class CWD_Pageprop_FileSite extends CWD_PagepropsAll {
 	CONST CODE = 'FILE_SITE';
-	CONST NAME = '‘‡ÈÎ/Ô‡ÔÍ‡ Ì‡ Ò‡ÈÚÂ';
+	CONST NAME = '–§–∞–π–ª/–ø–∞–ø–∫–∞ –Ω–∞ —Å–∞–π—Ç–µ';
 	function GetName() {
 		$Name = self::NAME;
 		if (CWD_Pageprops::IsUtf8()) {
@@ -16,18 +16,18 @@ class CWD_Pageprop_FileSite extends CWD_PagepropsAll {
 	}
 	function GetMessage($Item) {
 		$arMess = array(
-			'OPTION_COLUMN_PARAM' => 'œ‡‡ÏÂÚ',
-			'OPTION_COLUMN_VALUE' => '«Ì‡˜ÂÌËÂ',
-			'OPTION_START_PATH' => 'Õ‡˜‡Î¸Ì˚È ÔÛÚ¸',
-			'OPTION_START_SITE' => 'Õ‡˜‡Î¸Ì˚È Ò‡ÈÚ',
-				'OPTION_START_SITE_EMPTY' => '--- ÔÓ ÛÏÓÎ˜‡ÌË˛ ---',
-			'OPTION_TYPE' => '“ËÔ ‚˚·Ë‡ÂÏÓ„Ó Ó·˙ÂÍÚ‡ (Ù‡ÈÎ ËÎË Ô‡ÔÍ‡)',
-				'OPTION_TYPE_F' => 'Ù‡ÈÎ',
-				'OPTION_TYPE_D' => 'Ô‡ÔÍ‡',
-			'OPTION_SHOW_UPLOAD_TAB' => '¬ÓÁÏÓÊÌÓÒÚ¸ Á‡„ÛÁÍË Ù‡ÈÎ‡',
-			'OPTION_FILE_EXTENSIONS' => '–‡Ò¯ËÂÌËˇ Ù‡ÈÎÓ‚ (˜ÂÂÁ Á‡ÔˇÚÛ˛)',
-			'OPTION_ALLOW_ALL_FILES' => '–‡ÁÂ¯ËÚ¸ ‚˚·Ó ‰Û„Ëı ‡ÁÂ¯ÂÌËÈ',
-			'OPTION_SAVE_CONFIG' => '—Óı‡ÌˇÚ¸ Ì‡ÒÚÓÈÍË',
+			'OPTION_COLUMN_PARAM' => '–ü–∞—Ä–∞–º–µ—Ç—Ä',
+			'OPTION_COLUMN_VALUE' => '–ó–Ω–∞—á–µ–Ω–∏–µ',
+			'OPTION_START_PATH' => '–ù–∞—á–∞–ª—å–Ω—ã–π –ø—É—Ç—å',
+			'OPTION_START_SITE' => '–ù–∞—á–∞–ª—å–Ω—ã–π —Å–∞–π—Ç',
+				'OPTION_START_SITE_EMPTY' => '--- –ø–æ —É–º–æ–ª—á–∞–Ω–∏—é ---',
+			'OPTION_TYPE' => '–¢–∏–ø –≤—ã–±–∏—Ä–∞–µ–º–æ–≥–æ –æ–±—ä–µ–∫—Ç–∞ (—Ñ–∞–π–ª –∏–ª–∏ –ø–∞–ø–∫–∞)',
+				'OPTION_TYPE_F' => '—Ñ–∞–π–ª',
+				'OPTION_TYPE_D' => '–ø–∞–ø–∫–∞',
+			'OPTION_SHOW_UPLOAD_TAB' => '–í–æ–∑–º–æ–∂–Ω–æ—Å—Ç—å –∑–∞–≥—Ä—É–∑–∫–∏ —Ñ–∞–π–ª–∞',
+			'OPTION_FILE_EXTENSIONS' => '–†–∞—Å—à–∏—Ä–µ–Ω–∏—è —Ñ–∞–π–ª–æ–≤ (—á–µ—Ä–µ–∑ –∑–∞–ø—è—Ç—É—é)',
+			'OPTION_ALLOW_ALL_FILES' => '–†–∞–∑—Ä–µ—à–∏—Ç—å –≤—ã–±–æ—Ä –¥—Ä—É–≥–∏—Ö —Ä–∞–∑—Ä–µ—à–µ–Ω–∏–π',
+			'OPTION_SAVE_CONFIG' => '–°–æ—Ö—Ä–∞–Ω—è—Ç—å –Ω–∞—Å—Ç—Ä–æ–π–∫–∏',
 		);
 		$strResult = $arMess[$Item];
 		if (CWD_Pageprops::IsUtf8()) {

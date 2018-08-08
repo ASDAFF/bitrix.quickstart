@@ -1,6 +1,6 @@
 <?
-$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'] = "Ðàñøèðåíèå óâåäîìëåíèé î çàêàçàõ";
-$MESS['SHOPOLIA_EMAILFIELDS_SHOP_MODULE_DESC'] = "Ìîäóëü ïîçâîëÿåò äîáàâèòü ïîëÿ çàêàçà â ñòàíäàðòíûå ïî÷òîâûå øàáëîíû 1Ñ-Áèòðèêñ";
-$MESS['SHOPOLIA_EMAILFIELDS_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ ".$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'];
-$MESS['SHOPOLIA_EMAILFIELDS_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ ".$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'];
+$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'] = "Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ðµ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ð¹ Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°Ñ…";
+$MESS['SHOPOLIA_EMAILFIELDS_SHOP_MODULE_DESC'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð° Ð² ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ðµ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½Ñ‹ 1Ð¡-Ð‘Ð¸Ñ‚Ñ€Ð¸ÐºÑ";
+$MESS['SHOPOLIA_EMAILFIELDS_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ ".$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'];
+$MESS['SHOPOLIA_EMAILFIELDS_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ ".$MESS['SHOPOLIA_EMAILFIELDS_MODULE_NAME'];
 ?>

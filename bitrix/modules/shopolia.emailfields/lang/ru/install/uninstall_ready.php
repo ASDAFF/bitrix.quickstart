@@ -1,3 +1,3 @@
 <?
-$MESS['SHOPOLIA_EMAILFIELDS_MODULE_UNINSTALL_READY'] = "Óäàëåíèå ìîäóëÿ óñïåøíî çàâåðøåíî";
+$MESS['SHOPOLIA_EMAILFIELDS_MODULE_UNINSTALL_READY'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¾";
 ?>

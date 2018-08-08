@@ -6,9 +6,11 @@
 use BitrixQuickStart;
 
 //Autoload
-require_once($_SERVER['DOCUMENT_ROOT'] . '/local/vendor/autoload.php');
 require_once(dirname(__FILE__) . '/classes/Autoloader.php');
 $autoloader = new \BitrixQuickStart\Autoloader();
+
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/local/vendor/autoload.php'))
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/local/vendor/autoload.php');
 
 //Consts
 if (file_exists(__DIR__ . '/config/const.php'))

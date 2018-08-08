@@ -1,3 +1,3 @@
 <?
-$MESS ['COMPOSITE_LOADING'] = "Çàãðóçêà...";
+$MESS ['COMPOSITE_LOADING'] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°...";
 ?>

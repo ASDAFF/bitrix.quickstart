@@ -3,8 +3,8 @@ if ($_POST['apply']) {
     !$_POST['isScheme'] && \WS\Migrations\Module::getInstance()->runRefreshVersion();
     if ($_POST['isScheme']) {
         $text = file_get_contents($_FILES['file']['tmp_name']);
-        // Èìïîðò äàííûõ, ïðè âûâîäå íóæåí îò÷åò
-        // Ñêîëüêî ñîçäàíî, ñêîëüêî îáíîâëåíî
+        // Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ…, Ð¿Ñ€Ð¸ Ð²Ñ‹Ð²Ð¾Ð´Ðµ Ð½ÑƒÐ¶ÐµÐ½ Ð¾Ñ‚Ñ‡ÐµÑ‚
+        // Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð¾, ÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾
         \WS\Migrations\Module::getInstance()->import($text);
     }
 }
@@ -38,7 +38,7 @@ $form->EndCustomField('version');
 $form->AddCheckBoxField('isScheme', $localization->getDataByPath('fields.isScheme'), false, 'Y', false);
 $form->AddFileField('file', $localization->getDataByPath('fields.file'), '');
 $form->EndTab();
-$form->Buttons(array('btnSave' => false, 'btnÀpply' => true));
+$form->Buttons(array('btnSave' => false, 'btnÐpply' => true));
 $form->Show();
 ?>
 </form>

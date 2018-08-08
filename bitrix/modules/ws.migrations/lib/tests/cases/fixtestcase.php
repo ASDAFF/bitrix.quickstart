@@ -52,7 +52,7 @@ class FixTestCase extends AbstractCase {
     /**
      * @param $process
      * @param null $subject
-     * @return array Ñïèñîê ìàññèâîâ äàííûõ
+     * @return array Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¼Ð°ÑÑÐ¸Ð²Ð¾Ð² Ð´Ð°Ð½Ð½Ñ‹Ñ…
      * @throws \Exception
      */
     private function _getCollectorFixes($process, $subject = null) {
@@ -115,19 +115,19 @@ class FixTestCase extends AbstractCase {
             ':lastError' => $ib->LAST_ERROR
         )));
 
-        // Â èòîãå äîëæíû ïîëó÷èòñÿ
+        // Ð’ Ð¸Ñ‚Ð¾Ð³Ðµ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑÑ
 
-        // äàííûå ïî äîáàâëåíèþ ÈÁ
+        // Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸ÑŽ Ð˜Ð‘
         $this->assertNotEmpty($this->_getCollectorFixes(AddProcess::className(), IblockHandler::className()), 'Iblock is not added');
-        // äàííûå ïî äîáàâëåíèþ ñâîéñòâà
+        // Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸ÑŽ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°
         $this->assertNotEmpty($this->_getCollectorFixes(AddProcess::className(), IblockPropertyHandler::className()), 'Iblock property is not added');
-        // äàííûå ïî äîáàâëåíèþ ñåêöèè
+        // Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸ÑŽ ÑÐµÐºÑ†Ð¸Ð¸
         $this->assertNotEmpty($this->_getCollectorFixes(AddProcess::className(), IblockSectionHandler::className()), 'Section is not added');
 
         $refFixes = $this->_getCollectorFixes('reference');
-        // ôèêñàöèÿ èçìåíåíèé
+        // Ñ„Ð¸ÐºÑÐ°Ñ†Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹
         Module::getInstance()->commitDutyChanges();
-        // äîáàâëåíû çàïèñè æóðíàëà îáíîâëåíèé (â áàçó)
+        // Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð¶ÑƒÑ€Ð½Ð°Ð»Ð° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ð¹ (Ð² Ð±Ð°Ð·Ñƒ)
         /** @var $logRecords AppliedChangesLogModel[] */
         $logRecords = AppliedChangesLogModel::find(array(
             'order' => array(
@@ -177,7 +177,7 @@ class FixTestCase extends AbstractCase {
             }
         }
 
-        // äîáàâëåíû òðè âèäà ññûëîê â ôèêñàöèÿõ
+        // Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ‚Ñ€Ð¸ Ð²Ð¸Ð´Ð° ÑÑÑ‹Ð»Ð¾Ðº Ð² Ñ„Ð¸ÐºÑÐ°Ñ†Ð¸ÑÑ…
         $this->assertEquals(3, count($refFixes), $this->errorMessage('links expected count', array(':count' => 3)));
 
         $this->_iblockId = $ibId;
@@ -186,7 +186,7 @@ class FixTestCase extends AbstractCase {
     }
 
     /**
-     * Çàâèñèìîñòü îò äîáàâëåíèÿ
+     * Ð—Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¾Ñ‚ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ
      * @after testAdd
      */
     public function testUpdate() {
@@ -203,17 +203,17 @@ class FixTestCase extends AbstractCase {
         $updateResult = $iblock->Update($this->_iblockId, $arIblock);
 
         $this->assertTrue($updateResult, $this->errorMessage('error update result'));
-        // äëÿ íà÷àëà îïðåäåëÿåòñÿ ïðîñòî êàê ñíèìîê
+        // Ð´Ð»Ñ Ð½Ð°Ñ‡Ð°Ð»Ð° Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÑ‚ÑÑ Ð¿Ñ€Ð¾ÑÑ‚Ð¾ ÐºÐ°Ðº ÑÐ½Ð¸Ð¼Ð¾Ðº
         $fixes = $this->_getCollectorFixes(UpdateProcess::className());
         $this->assertEquals(count($fixes), 1, $this->errorMessage('having one fixing updates'));
         $this->assertEquals($fixes[0]['data']['iblock']['NAME'], $name, $this->errorMessage('fixing name change'));
 
-        // ôèêñàöèÿ èçìåíåíèé
+        // Ñ„Ð¸ÐºÑÐ°Ñ†Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹
         Module::getInstance()->commitDutyChanges();
     }
 
     /**
-     * Çàâèñèìîñòü îò äîáàâëåíèÿ
+     * Ð—Ð°Ð²Ð¸ÑÐ¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¾Ñ‚ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ
      * @after testUpdate
      */
     public function testDelete() {
@@ -243,7 +243,7 @@ class FixTestCase extends AbstractCase {
         )));
         $this->assertNotEmpty($iblockFixData['originalData'], $this->errorMessage('data should be stored remotely information block'));
 
-        // ôèêñàöèÿ èçìåíåíèé
+        // Ñ„Ð¸ÐºÑÐ°Ñ†Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹
         Module::getInstance()->commitDutyChanges();
     }
 

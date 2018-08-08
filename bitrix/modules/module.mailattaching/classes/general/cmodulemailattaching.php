@@ -1,8 +1,6 @@
 <?
 /**
- * 
  * Основной класс модуля
- *
  */
 
 class CModuleMailAttaching {
@@ -51,6 +49,18 @@ class CModuleMailAttaching {
 	// Отправка письма с вложением (вызывается из custom_mail)
 	//
 	public static function ExecCustomMail($sTo, $sSubject, $sMessage, $sAdditionalHeaders, $sAdditionalParameters) {
+
+		self::SaveLog(
+			array(
+				'method' => __FUNCTION__,
+				'step' => 'start',
+				'$sTo' => $sTo, 
+				'$sSubject' => $sSubject,
+				'$sMessage' => $sMessage,
+				'$sAdditionalHeaders' => $sAdditionalParameters,
+			)
+		);
+
 		//
 		// OnStartCustomMail
 		//
@@ -63,9 +73,17 @@ class CModuleMailAttaching {
 			return;
 		}
 		
-
 		// прикрепленные файлы
 		$arAttaches = CModuleMailAttaching::GetAttachesEx();
+
+		self::SaveLog(
+			array(
+				'method' => __FUNCTION__,
+				'step' => 'attaches',
+				'$arAttaches' => $arAttaches
+			)
+		);
+
 		// очистим список прикреленных файлов
 		CModuleMailAttaching::FlushAttaches();
 		if(!empty($arAttaches)) {
@@ -114,6 +132,9 @@ class CModuleMailAttaching {
 					$sFullPath = $_SERVER['DOCUMENT_ROOT'].'/'.trim($sFilePath, '/');
 					// получим правильное имя файла
 					$sFullPath = self::GetPhysicalName($sFullPath);
+					$sFileName = '';
+					$sFileNameEncoded = '';
+					$sType = '';
 					if(file_exists($sFullPath) && is_file($sFullPath)) {
 						$sFileName = $arFileItem['FILE_NAME'];
 						if(!strlen($sFileName)) {
@@ -143,6 +164,19 @@ class CModuleMailAttaching {
 						$sMessage .= $sLF.$sLF; // !!!
 						$sMessage .= chunk_split(base64_encode(file_get_contents($sFullPath)), 72);
 					}
+
+					self::SaveLog(
+						array(
+							'method' => __FUNCTION__,
+							'step' => 'parse_files',
+							'$arFileItem' => $arFileItem,
+							'$sFilePath' => $sFilePath,
+							'$sFullPath' => $sFullPath,
+							'$sFileName' => $sFileName,
+							'$sType' => $sType,
+							'$sFileNameEncoded' => $sFileNameEncoded
+						)
+					);
 				}
 				$sMessage .= $sBoundaryClose;
 				$sMessage .= $sLF;
@@ -158,6 +192,13 @@ class CModuleMailAttaching {
 			$mEventResult = ExecuteModuleEventEx($arEvent, array(&$sTo, &$sSubject, &$sMessage, &$sAdditionalHeaders, &$sAdditionalParameters));
 		}
 		if($mEventResult === false) {
+			self::SaveLog(
+				array(
+					'method' => __FUNCTION__,
+					'step' => 'custom_sender',
+				)
+			);
+
 			return;
 		}
 
@@ -226,6 +267,16 @@ class CModuleMailAttaching {
 	//
 	public static function OnBeforeEventSendHandler(&$arFields, &$arMailResult) {
 		$arAttaches = array();
+
+		self::SaveLog(
+			array(
+				'method' => __FUNCTION__,
+				'step' => 'start',
+				'$arFields' => $arFields,
+				'$arMailResult' => $arMailResult,
+			)
+		);
+
 		if(strtoupper($arMailResult['FIELD1_NAME']) == 'ATTACHED-FILES') {
 			if(!empty($arMailResult['FIELD1_VALUE'])) {
 				$arFiles = preg_split('#,|;#', $arMailResult['FIELD1_VALUE']);
@@ -235,7 +286,7 @@ class CModuleMailAttaching {
 			}
 			$arMailResult['FIELD1_NAME'] = '';
 			$arMailResult['FIELD1_VALUE'] = '';
-		} 
+		}
 		if(strtoupper($arMailResult['FIELD2_NAME']) == 'ATTACHED-FILES') {
 			if(!empty($arMailResult['FIELD2_VALUE'])) {
 				$arFiles = preg_split('#,|;#', $arMailResult['FIELD2_VALUE']);
@@ -246,12 +297,34 @@ class CModuleMailAttaching {
 			$arMailResult['FIELD2_NAME'] = '';
 			$arMailResult['FIELD2_VALUE'] = '';
 		}
+		if(isset($arMailResult['ADDITIONAL_FIELD']) && is_array($arMailResult['ADDITIONAL_FIELD'])) {
+			foreach($arMailResult['ADDITIONAL_FIELD'] as $mKey => $arTmpItem) {
+				if($arTmpItem['NAME'] && $arTmpItem['NAME'] == 'ATTACHED-FILES') {
+					if($arTmpItem['VALUE']) {
+						$arFiles = preg_split('#,|;#', $arTmpItem['VALUE']);
+						if(!empty($arFiles) && is_array($arFiles)) {
+							$arAttaches = array_merge($arAttaches, $arFiles);
+						}
+					}
+					unset($arMailResult['ADDITIONAL_FIELD'][$mKey]);
+				}
+			}
+		}
+
+		self::SaveLog(
+			array(
+				'method' => __FUNCTION__,
+				'step' => 'parse_mail_result',
+				'$arAttaches' => $arAttaches,
+				'$arMailResult' => $arMailResult,
+			)
+		);
 
 		self::FlushAttaches();
 		if(!empty($arAttaches)) {
 
 			$mCallback = self::GetMessageFieldsParser($arFields, $arMailResult, $arAttaches);
-
+	
 			foreach($arAttaches as $sFile) {
 				$arCurAttachedFiles = array();
 				$sFile = trim($sFile);
@@ -260,6 +333,13 @@ class CModuleMailAttaching {
 					// вызов callback-функций
 					//
 					$arCurAttachedFiles = call_user_func_array($mCallback, array($sFile, $arFields, $arMailResult, $arAttaches));
+					self::SaveLog(
+						array(
+							'method' => __FUNCTION__,
+							'step' => 'callback_result',
+							'$arCurAttachedFiles' => $arCurAttachedFiles,
+						)
+					);
 				} else {
 					//
 					// попытка определить явно заданный файл или через макрос со значением пути файла
@@ -272,11 +352,26 @@ class CModuleMailAttaching {
 						}
 					}
 					if(strlen($sFile)) {
-						$arCurAttachedFiles[] = array(
-							'FILE' => $sFile, 
-							'FILE_NAME' => ''
-						);
+						$arTmpFiles = explode('|', $sFile);
+						foreach($arTmpFiles as $aTmpFile) {
+							$aTmpFile = trim($aTmpFile);
+							if(strlen($aTmpFile)) {
+								$arCurAttachedFiles[] = array(
+									'FILE' => $aTmpFile, 
+									'FILE_NAME' => ''
+								);
+							}
+						}
 					}
+
+					self::SaveLog(
+						array(
+							'method' => __FUNCTION__,
+							'step' => 'inner_result',
+							'$arCurAttachedFiles' => $arCurAttachedFiles,
+						)
+					);
+
 				}
 
 				if(!empty($arCurAttachedFiles)) {
@@ -356,6 +451,17 @@ class CModuleMailAttaching {
 		$sFilePath = isset($arFile['FILE']) ? $arFile['FILE'] : '';
 		$sFileAttachName = isset($arFile['FILE_NAME']) ? trim($arFile['FILE_NAME']) : '';
 		$sFilePath = self::TreatFilePath($sFilePath);
+
+		self::SaveLog(
+			array(
+				'method' => __FUNCTION__,
+				'step' => '-',
+				'$arFile' => $arFile,
+				'$sFilePath' => $sFilePath,
+				'$sFileAttachName' => $sFileAttachName,
+			)
+		);
+
 		if(strlen($sFilePath)) {
 			$mKey = count(self::$arAttachFilesPath);
 			self::$arAttachFilesPath[$mKey] = $sFilePath;
@@ -432,5 +538,11 @@ class CModuleMailAttaching {
 		}
 
 		return $sMimeType;
+	}
+
+	private static function SaveLog($mLogData) {
+		if(defined('MODULE_MAILATTACHING_LOG') && MODULE_MAILATTACHING_LOG) {
+			AddMessage2Log(is_scalar($mLogData) ? $mLogData : print_r($mLogData, true), 'module.mailattaching', 0);
+		}
 	}
 }

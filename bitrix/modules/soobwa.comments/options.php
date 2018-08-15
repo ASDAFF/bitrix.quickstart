@@ -20,7 +20,7 @@ $tabControl = new CAdminTabControl("tabControl", array(
 
 $tabControl->begin();
     /*
-     * TODO: äîáàâèòü èíñòðóêöèèþ ïî èñïîëüçîâàíèþ ìîäóëÿ.
+     * TODO: Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¸Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ð¸ÑŽ Ð¿Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸ÑŽ Ð¼Ð¾Ð´ÑƒÐ»Ñ.
      * */
     $tabControl->beginNextTab();
 

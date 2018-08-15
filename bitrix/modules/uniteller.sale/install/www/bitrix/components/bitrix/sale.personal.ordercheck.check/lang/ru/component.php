@@ -1,9 +1,9 @@
 <?
-$MESS['SALE_MODULE_NOT_INSTALL']="Ìîäóëü Èíòåðíåò-ìàãàçèí íå óñòàíîâëåí.";
+$MESS['SALE_MODULE_NOT_INSTALL']="ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
 // UnitellerPlugin change
-$MESS['SALE_ACCESS_DENIED'] = 'Äëÿ ïðîñìîòðà ÷åêà íåîáõîäèìî àâòîðèçîâàòüñÿ.';
-$MESS['SPOD_TITLE'] = 'Ìîé ÷åê äëÿ çàêàçà ¹#ID#';
-$MESS['SPOD_NO_ORDER'] = '×åê äëÿ çàêàçà ¹#ID# íå íàéäåí.';
+$MESS['SALE_ACCESS_DENIED'] = 'Ð”Ð»Ñ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ñ‡ÐµÐºÐ° Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒÑÑ.';
+$MESS['SPOD_TITLE'] = 'ÐœÐ¾Ð¹ Ñ‡ÐµÐº Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð° â„–#ID#';
+$MESS['SPOD_NO_ORDER'] = 'Ð§ÐµÐº Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð° â„–#ID# Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½.';
 // /UnitellerPlugin change
-$MESS['SALE_TAX_INPRICE'] = "âêëþ÷åí â öåíó";
+$MESS['SALE_TAX_INPRICE'] = "Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½ Ð² Ñ†ÐµÐ½Ñƒ";
 ?>

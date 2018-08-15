@@ -1,20 +1,20 @@
 <?
-$MESS ['S2U_SITE'] = "Ñàéò";
+$MESS ['S2U_SITE'] = "Ð¡Ð°Ð¹Ñ‚";
 $MESS ['S2U_URL'] = 'URL';
-$MESS ['S2U_REFERER_URL'] = 'Ðåôåðåð URL';
-$MESS ['S2U_REDIRECT_STATUS'] = 'Ðåäèðåêò ñòàòóñ';
+$MESS ['S2U_REFERER_URL'] = 'Ð ÐµÑ„ÐµÑ€ÐµÑ€ URL';
+$MESS ['S2U_REDIRECT_STATUS'] = 'Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ ÑÑ‚Ð°Ñ‚ÑƒÑ';
 $MESS ['S2U_URL'] = 'URL';
-$MESS ['S2U_DATE_TIME_GENERATE'] = 'Âðåìÿ çàõîäà';
-$MESS ['S2U_CREATE_RULE'] = 'Ñîçäàòü ðåäèðåêò ñ ýòîãî URL';
-$MESS ['S2U_TITLE'] = 'Áèòûå ññûëêè';
-$MESS ['S2U_LIST'] = 'Èñòîðèÿ';
-$MESS ['S2U_LIST_TITLE'] = 'Èñòîðèÿ ïîïàäàíèé íà áèòûå ññûëêè íà ñàéòå';
-$MESS ['S2U_DELETE_MESS'] = 'Âû óâåðåíû, ÷òî õîòèòå óäàëèòü ýòó çàïèñü?';
-$MESS ['S2U_IS_REDRECTED'] = 'Ðåäèðåêò';
-$MESS ['S2U_IS_REDRECTED_TITLE_Y'] = 'Åñòü ðåäèðåêò ñ ýòîãî URL';
-$MESS ['S2U_IS_REDRECTED_TITLE_N'] = 'Íåò ðåäèðåêòà ñ ýòîãî URL';
-$MESS ['S2U_CNT'] = 'Êîë-âî ïåðåõîäîâ';
-$MESS ['S2U_SHOW_LIST'] = 'Ïîñìîòðåòü ïåðåõîäû';
-$MESS ['S2U_IS_REDRECTED_EXISTS'] = 'Åñòü ðåäèðåêò';
-$MESS ['S2U_ADD_TO_IGNORE'] = 'Äîáàâèòü â èãíîðëèñò';
+$MESS ['S2U_DATE_TIME_GENERATE'] = 'Ð’Ñ€ÐµÐ¼Ñ Ð·Ð°Ñ…Ð¾Ð´Ð°';
+$MESS ['S2U_CREATE_RULE'] = 'Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ñ ÑÑ‚Ð¾Ð³Ð¾ URL';
+$MESS ['S2U_TITLE'] = 'Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸';
+$MESS ['S2U_LIST'] = 'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ';
+$MESS ['S2U_LIST_TITLE'] = 'Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð¿Ð¾Ð¿Ð°Ð´Ð°Ð½Ð¸Ð¹ Ð½Ð° Ð±Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ';
+$MESS ['S2U_DELETE_MESS'] = 'Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÑ‚Ñƒ Ð·Ð°Ð¿Ð¸ÑÑŒ?';
+$MESS ['S2U_IS_REDRECTED'] = 'Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚';
+$MESS ['S2U_IS_REDRECTED_TITLE_Y'] = 'Ð•ÑÑ‚ÑŒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ñ ÑÑ‚Ð¾Ð³Ð¾ URL';
+$MESS ['S2U_IS_REDRECTED_TITLE_N'] = 'ÐÐµÑ‚ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð° Ñ ÑÑ‚Ð¾Ð³Ð¾ URL';
+$MESS ['S2U_CNT'] = 'ÐšÐ¾Ð»-Ð²Ð¾ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð¾Ð²';
+$MESS ['S2U_SHOW_LIST'] = 'ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ñ‹';
+$MESS ['S2U_IS_REDRECTED_EXISTS'] = 'Ð•ÑÑ‚ÑŒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚';
+$MESS ['S2U_ADD_TO_IGNORE'] = 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð¸Ð³Ð½Ð¾Ñ€Ð»Ð¸ÑÑ‚';
 ?>

@@ -1,16 +1,16 @@
 <?
-$MESS ['S2U_REDIRECT_MAIN_MENU'] = "Ðåäèðåêò ìàñòåð";
-$MESS ['S2U_REDIRECT_MAIN_MENU_TITLE'] = "Óïðàâëåíèå ïðàâèëàìè URL ðåäèðåêòîâ";
-$MESS ['S2U_REDIRECT_ADMIN_MENU'] = "Ïðàâèëà";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_TITLE'] = "Ñïèñîê óñòàíîâëåííûõ ïðàâèë";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404'] = "Áèòûå ññûëêè (âñÿ èñòîðèÿ)";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404_TITLE'] = "Èñòîðèÿ ïîïàäàíèé íà áèòûå ññûëêè íà ñàéòå";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404_REPORT'] = "Áèòûå ññûëêè";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404_REPORT_TITLE'] = "Ñïèñîê áèòûõ ññûëîê è ñ÷åò÷èê ïåðåõîäîâ ïî íèì";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404_IGNORE'] = "Áèòûå ññûëêè (èãíîðëèñò)";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_404_IGNORE_TITLE'] = "Ñïèñîê èãíîðèðóåìûõ áèòûõ ññûëîê";
-$MESS ['S2U_REDIRECT_ADMIN_MENU_SETTINGS'] = 'Íàñòðîéêè';
-$MESS ['S2U_REDIRECT_ADMIN_MENU_CHECK_INDEX'] = 'Ïðîâåðèòü èíäåêñ ÏÑ';
-$MESS ['S2U_REDIRECT_ADMIN_CSV'] = "Èìïîðò csv-ôàéëà";
-$MESS ['S2U_REDIRECT_ADMIN_CSV_DESC'] = "Èìïîðòèðîâàòü ïðàâèëà ðåäèðåêòà èç csv-ôàéëà";
+$MESS ['S2U_REDIRECT_MAIN_MENU'] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ð¼Ð°ÑÑ‚ÐµÑ€";
+$MESS ['S2U_REDIRECT_MAIN_MENU_TITLE'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð°Ð¼Ð¸ URL Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ð²";
+$MESS ['S2U_REDIRECT_ADMIN_MENU'] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð°";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_TITLE'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ‹Ñ… Ð¿Ñ€Ð°Ð²Ð¸Ð»";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404'] = "Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸ (Ð²ÑÑ Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ñ)";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404_TITLE'] = "Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ Ð¿Ð¾Ð¿Ð°Ð´Ð°Ð½Ð¸Ð¹ Ð½Ð° Ð±Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404_REPORT'] = "Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404_REPORT_TITLE'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð±Ð¸Ñ‚Ñ‹Ñ… ÑÑÑ‹Ð»Ð¾Ðº Ð¸ ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð¾Ð² Ð¿Ð¾ Ð½Ð¸Ð¼";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404_IGNORE'] = "Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸ (Ð¸Ð³Ð½Ð¾Ñ€Ð»Ð¸ÑÑ‚)";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_404_IGNORE_TITLE'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¸Ð³Ð½Ð¾Ñ€Ð¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… Ð±Ð¸Ñ‚Ñ‹Ñ… ÑÑÑ‹Ð»Ð¾Ðº";
+$MESS ['S2U_REDIRECT_ADMIN_MENU_SETTINGS'] = 'ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸';
+$MESS ['S2U_REDIRECT_ADMIN_MENU_CHECK_INDEX'] = 'ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¸Ð½Ð´ÐµÐºÑ ÐŸÐ¡';
+$MESS ['S2U_REDIRECT_ADMIN_CSV'] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ csv-Ñ„Ð°Ð¹Ð»Ð°";
+$MESS ['S2U_REDIRECT_ADMIN_CSV_DESC'] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð° Ð¸Ð· csv-Ñ„Ð°Ð¹Ð»Ð°";
 ?>

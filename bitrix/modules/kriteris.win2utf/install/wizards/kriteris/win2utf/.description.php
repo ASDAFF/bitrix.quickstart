@@ -1,4 +1,4 @@
-<?
+﻿<?
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 if(!defined("WIZARD_DEFAULT_SITE_ID") && !empty($_REQUEST["wizardSiteID"])) 
 	define("WIZARD_DEFAULT_SITE_ID", $_REQUEST["wizardSiteID"]); 

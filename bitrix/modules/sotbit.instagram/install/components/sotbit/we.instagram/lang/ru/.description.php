@@ -1,5 +1,5 @@
 <?
-$MESS['STB_INSTAGRAM_TITLE'] = "Ìû â Instagram";
-$MESS['STB_INSTAGRAM_DESCR'] = "Âûâîäèò ôîòîãðàôèè èç çàäàííîãî àêêàóíòà Instagram";
-$MESS['SOTBIT_NAME'] = "Êîìïîíåíòû êîìïàíèè Ñîòáèò";
+$MESS['STB_INSTAGRAM_TITLE'] = "ÐœÑ‹ Ð² Instagram";
+$MESS['STB_INSTAGRAM_DESCR'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð¸Ð· Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð° Instagram";
+$MESS['SOTBIT_NAME'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸ Ð¡Ð¾Ñ‚Ð±Ð¸Ñ‚";
 ?>

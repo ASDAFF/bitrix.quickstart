@@ -1,10 +1,10 @@
 <?
-$MESS ['CATALOG_BUY'] = "Êóïèòü";
-$MESS ['CATALOG_ADD'] = "Â êîðçèíó";
-$MESS ['CATALOG_COMPARE'] = "Ñðàâíèòü";
-$MESS ['CATALOG_NOT_AVAILABLE'] = "(íåò íà ñêëàäå)";
-$MESS ['CATALOG_QUANTITY'] = "Êîëè÷åñòâî";
-$MESS ['CATALOG_QUANTITY_FROM_TO'] = "Îò #FROM# äî #TO#";
-$MESS ['CATALOG_QUANTITY_FROM'] = "Îò #FROM#";
-$MESS ['CATALOG_QUANTITY_TO'] = "Äî #TO#";
+$MESS ['CATALOG_BUY'] = "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ";
+$MESS ['CATALOG_ADD'] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS ['CATALOG_COMPARE'] = "Ð¡Ñ€Ð°Ð²Ð½Ð¸Ñ‚ÑŒ";
+$MESS ['CATALOG_NOT_AVAILABLE'] = "(Ð½ÐµÑ‚ Ð½Ð° ÑÐºÐ»Ð°Ð´Ðµ)";
+$MESS ['CATALOG_QUANTITY'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS ['CATALOG_QUANTITY_FROM_TO'] = "ÐžÑ‚ #FROM# Ð´Ð¾ #TO#";
+$MESS ['CATALOG_QUANTITY_FROM'] = "ÐžÑ‚ #FROM#";
+$MESS ['CATALOG_QUANTITY_TO'] = "Ð”Ð¾ #TO#";
 ?>

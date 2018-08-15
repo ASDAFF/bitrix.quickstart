@@ -1,5 +1,5 @@
 <?
-$MESS ['SPOD_DEFAULT_TEMPLATE_NAME'] = "Ïîäðîáíàÿ èíôîðìàöèÿ î çàêàçå";
-$MESS ['SPOD_DEFAULT_TEMPLATE_DESCRIPTION'] = "Âûâîäèò ïîäðîáíóþ èíôîðìàöèþ ïî çàêàçó";
-$MESS ['SPOD_NAME'] = "Ïåðñîíàëüíûé ðàçäåë";
+$MESS ['SPOD_DEFAULT_TEMPLATE_NAME'] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð·Ð°ÐºÐ°Ð·Ðµ";
+$MESS ['SPOD_DEFAULT_TEMPLATE_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½ÑƒÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¿Ð¾ Ð·Ð°ÐºÐ°Ð·Ñƒ";
+$MESS ['SPOD_NAME'] = "ÐŸÐµÑ€ÑÐ¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð´ÐµÐ»";
 ?>

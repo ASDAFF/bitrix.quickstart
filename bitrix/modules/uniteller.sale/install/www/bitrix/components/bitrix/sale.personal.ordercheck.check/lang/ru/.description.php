@@ -1,7 +1,7 @@
 <?
 // UnitellerPlugin change
-$MESS ['SPOD_DEFAULT_TEMPLATE_NAME'] = '×åê äëÿ çàêàçà';
-$MESS ['SPOD_DEFAULT_TEMPLATE_DESCRIPTION'] = 'Âûâîäèò ÷åê äëÿ çàêàçà';
+$MESS ['SPOD_DEFAULT_TEMPLATE_NAME'] = 'Ð§ÐµÐº Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð°';
+$MESS ['SPOD_DEFAULT_TEMPLATE_DESCRIPTION'] = 'Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ñ‡ÐµÐº Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð°';
 // /UnitellerPlugin change
-$MESS ['SPOD_NAME'] = "Ïåðñîíàëüíûé ðàçäåë";
+$MESS ['SPOD_NAME'] = "ÐŸÐµÑ€ÑÐ¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð´ÐµÐ»";
 ?>

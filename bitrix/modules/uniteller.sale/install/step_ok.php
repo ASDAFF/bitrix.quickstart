@@ -1,6 +1,6 @@
 <?php
 /**
- * Ñòðàíèöà ñ ðåçóëüòàòîì óñòàíîâêè ìîäóëÿ.
+ * Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð¼ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
@@ -8,7 +8,7 @@ if (!check_bitrix_sessid()) {
 	return;
 }
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // ïðîëîã ìîäóëÿ
+require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // Ð¿Ñ€Ð¾Ð»Ð¾Ð³ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 
 global $errors;
 

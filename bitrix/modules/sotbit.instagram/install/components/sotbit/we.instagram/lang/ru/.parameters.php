@@ -1,11 +1,11 @@
 <?
-$MESS["STB_INSTAGRAM_WIDTH"] = "Øèðèíà âèäæåòà";
-$MESS["STB_INSTAGRAM_HEIGHT"] = "Âûñîòà âèäæåòà";
-$MESS["STB_INSTAGRAM_INLINE"] = "Êîëè÷åñòâî ôîòîãðàôèé â ñòðîêå";
-$MESS["STB_INSTAGRAM_VIEW"] = "Ñêîëüêî ôîòîãðàôèé îòîáðàæàòü â âèäæåòå";
-$MESS["STB_INSTAGRAM_TOOLBAR"] = "Îòîáðàçèòü òóëáàð ñ àâàòàðêîé è ñòàòèñòèêîé";
-$MESS["STB_INSTAGRAM_PREVIEW"] = "Ðàçìåð è êà÷åñòâî èçîáðàæåíèé";
-$MESS["STB_INSTAGRAM_CACHE"] = "Âðåìÿ êåøèðîâàíèÿ, ñåê";
-$MESS["STB_INSTAGRAM_TITLE"] = "Çàãîëîâîê âèäæåòà";
-$MESS["STB_INSTAGRAM_TITLE_DESCR"] = "Ìû â Instagram:";
+$MESS["STB_INSTAGRAM_WIDTH"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð²Ð¸Ð´Ð¶ÐµÑ‚Ð°";
+$MESS["STB_INSTAGRAM_HEIGHT"] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð° Ð²Ð¸Ð´Ð¶ÐµÑ‚Ð°";
+$MESS["STB_INSTAGRAM_INLINE"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹ Ð² ÑÑ‚Ñ€Ð¾ÐºÐµ";
+$MESS["STB_INSTAGRAM_VIEW"] = "Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð² Ð²Ð¸Ð´Ð¶ÐµÑ‚Ðµ";
+$MESS["STB_INSTAGRAM_TOOLBAR"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð·Ð¸Ñ‚ÑŒ Ñ‚ÑƒÐ»Ð±Ð°Ñ€ Ñ Ð°Ð²Ð°Ñ‚Ð°Ñ€ÐºÐ¾Ð¹ Ð¸ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¾Ð¹";
+$MESS["STB_INSTAGRAM_PREVIEW"] = "Ð Ð°Ð·Ð¼ÐµÑ€ Ð¸ ÐºÐ°Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹";
+$MESS["STB_INSTAGRAM_CACHE"] = "Ð’Ñ€ÐµÐ¼Ñ ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ, ÑÐµÐº";
+$MESS["STB_INSTAGRAM_TITLE"] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð²Ð¸Ð´Ð¶ÐµÑ‚Ð°";
+$MESS["STB_INSTAGRAM_TITLE_DESCR"] = "ÐœÑ‹ Ð² Instagram:";
 ?>

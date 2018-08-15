@@ -1,4 +1,4 @@
 <?
-$MESS ['MAIN_CALLBACK_COMPONENT_NAME'] = "Ôîðìà çàêàçà îáðàòíîãî çâîíêà";
-$MESS ['MAIN_CALLBACK_COMPONENT_DESCR'] = "Ôîðìà äëÿ çàêàçà îáðàòíîãî çâîíêà ñ ñàéòà";
+$MESS ['MAIN_CALLBACK_COMPONENT_NAME'] = "Ð¤Ð¾Ñ€Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð° Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð³Ð¾ Ð·Ð²Ð¾Ð½ÐºÐ°";
+$MESS ['MAIN_CALLBACK_COMPONENT_DESCR'] = "Ð¤Ð¾Ñ€Ð¼Ð° Ð´Ð»Ñ Ð·Ð°ÐºÐ°Ð·Ð° Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð³Ð¾ Ð·Ð²Ð¾Ð½ÐºÐ° Ñ ÑÐ°Ð¹Ñ‚Ð°";
 ?>

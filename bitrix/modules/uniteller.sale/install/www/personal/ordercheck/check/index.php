@@ -1,6 +1,6 @@
 <?require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_before.php');?>
 <?
-// åñëè ýòî âåðñèÿ äëÿ ïå÷àòè, òî ñòàíäàðòíûé header íå íóæåí.
+// ÐµÑÐ»Ð¸ ÑÑ‚Ð¾ Ð²ÐµÑ€ÑÐ¸Ñ Ð´Ð»Ñ Ð¿ÐµÑ‡Ð°Ñ‚Ð¸, Ñ‚Ð¾ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ header Ð½Ðµ Ð½ÑƒÐ¶ÐµÐ½.
 if ($_GET['print'] == 'Y') {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -13,7 +13,7 @@ if ($_GET['print'] == 'Y') {
 	require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_after.php');
 }
 
-// îò ñèñòåìû Uniteller çàïðîñ ïðèõîäèò ñ ïàðàìåòðîì Order_ID, à îò èíòåðíåò ìàãàçèíà ñ ïàðàìåòðîì ID, è äàëüøå âñå îáðàùåíèÿ èäóò ïî $ID.
+// Ð¾Ñ‚ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Uniteller Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð¿Ñ€Ð¸Ñ…Ð¾Ð´Ð¸Ñ‚ Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ Order_ID, Ð° Ð¾Ñ‚ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ ID, Ð¸ Ð´Ð°Ð»ÑŒÑˆÐµ Ð²ÑÐµ Ð¾Ð±Ñ€Ð°Ñ‰ÐµÐ½Ð¸Ñ Ð¸Ð´ÑƒÑ‚ Ð¿Ð¾ $ID.
 if (isset($_GET['Order_ID'])) {
 	$ID = (int)$_GET['Order_ID'];
 } elseif (isset($_GET['ID'])) {
@@ -43,7 +43,7 @@ $APPLICATION->IncludeComponent(
 	$component
 );
 
-// åñëè ýòî âåðñèÿ äëÿ ïå÷àòè, òî ñòàíäàðòíûé footer íå íóæåí.
+// ÐµÑÐ»Ð¸ ÑÑ‚Ð¾ Ð²ÐµÑ€ÑÐ¸Ñ Ð´Ð»Ñ Ð¿ÐµÑ‡Ð°Ñ‚Ð¸, Ñ‚Ð¾ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ footer Ð½Ðµ Ð½ÑƒÐ¶ÐµÐ½.
 if ($_GET['print'] == 'Y') {
 ?></body></html><?php
 	require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/epilog_after.php');

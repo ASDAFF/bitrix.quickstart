@@ -116,5 +116,5 @@ else
 </div>
 
 <?if(strlen($arResult["NAV_STRING"]) > 0):?>
-	<div class="navigation"><?=$arResult["NAV_STRING"]?></p>
+	<div class="navigation"><?=$arResult["NAV_STRING"]?></div>
 <?endif?>

@@ -2,7 +2,7 @@
 IncludeModuleLangFile(__FILE__);
 
 /**
- * Êëàññ íàñòğîåê îáíîâëåíèÿ èíôîáëîêîâ
+ * ĞšĞ»Ğ°ÑÑ Ğ½Ğ°ÑÑ‚Ñ€Ğ¾ĞµĞº Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ĞµĞ½Ğ¸Ñ Ğ¸Ğ½Ñ„Ğ¾Ğ±Ğ»Ğ¾ĞºĞ¾Ğ²
  */
 class CTopsale_general
 {
@@ -10,7 +10,7 @@ class CTopsale_general
     protected static $arProperty = false;
 
     /**
-     * Ïîëÿ òàáëèöû
+     * ĞŸĞ¾Ğ»Ñ Ñ‚Ğ°Ğ±Ğ»Ğ¸Ñ†Ñ‹
      */
     protected static $arFieldsKey = array(
         'ID' => true,
@@ -21,14 +21,14 @@ class CTopsale_general
     );
 
     /**
-     * Ïîëÿ îáÿçàòåëüíûå äëÿ çàïîëíåíèÿ
+     * ĞŸĞ¾Ğ»Ñ Ğ¾Ğ±ÑĞ·Ğ°Ñ‚ĞµĞ»ÑŒĞ½Ñ‹Ğµ Ğ´Ğ»Ñ Ğ·Ğ°Ğ¿Ğ¾Ğ»Ğ½ĞµĞ½Ğ¸Ñ
      */
     protected static $arRequiredFieldsKey = array(
         'IBLOCK_ID' => true,
     );
 
     /**
-     * Ïîñëåäíèå âîçíèêøèå îøèáêè
+     * ĞŸĞ¾ÑĞ»ĞµĞ´Ğ½Ğ¸Ğµ Ğ²Ğ¾Ğ·Ğ½Ğ¸ĞºÑˆĞ¸Ğµ Ğ¾ÑˆĞ¸Ğ±ĞºĞ¸
      */
     public static $LAST_ERROR = '';
 
@@ -37,7 +37,7 @@ class CTopsale_general
     }
 
     /**
-     * Ôóíêöèÿ âîçâğàùàåò ìàññèâ âñåõ îáíîâëÿåìûõ ïîëåé èíôîáëîêîâ
+     * Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ²Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ¼Ğ°ÑÑĞ¸Ğ² Ğ²ÑĞµÑ… Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ÑĞµĞ¼Ñ‹Ñ… Ğ¿Ğ¾Ğ»ĞµĞ¹ Ğ¸Ğ½Ñ„Ğ¾Ğ±Ğ»Ğ¾ĞºĞ¾Ğ²
      *
      * @return Array
      */
@@ -54,7 +54,7 @@ class CTopsale_general
     }
 
     /**
-     * Àãåíò îáíîâëÿåò ñîğòèğîâêó âñåõ òîâàğîâ
+     * ĞĞ³ĞµĞ½Ñ‚ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ÑĞµÑ‚ ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²ĞºÑƒ Ğ²ÑĞµÑ… Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ¾Ğ²
      *
      * @return String
      */
@@ -65,7 +65,7 @@ class CTopsale_general
         $arPropertyUpdate = self::GetListArray();
         $time = time();
 
-        //ïğîâåğÿåì êàêèå ïîëÿ è èíôîáëîêè óñòàğåëè è ÷èñòèì îò íèõ
+        //Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑĞµĞ¼ ĞºĞ°ĞºĞ¸Ğµ Ğ¿Ğ¾Ğ»Ñ Ğ¸ Ğ¸Ğ½Ñ„Ğ¾Ğ±Ğ»Ğ¾ĞºĞ¸ ÑƒÑÑ‚Ğ°Ñ€ĞµĞ»Ğ¸ Ğ¸ Ñ‡Ğ¸ÑÑ‚Ğ¸Ğ¼ Ğ¾Ñ‚ Ğ½Ğ¸Ñ…
         if (!empty($arPropertyUpdate) && CModule::IncludeModule('iblock')) {
             $arIBlockList = array();
             $rsIBlock = CIBlock::GetList(array('SORT' => 'ASC', 'NAME' => 'ASC'));
@@ -98,7 +98,7 @@ class CTopsale_general
             }
         }
 
-        //åñëè åñòü ÷òî îáíîâëÿòü, îáğàáàòûâàåì êîğçèíó
+        //ĞµÑĞ»Ğ¸ ĞµÑÑ‚ÑŒ Ñ‡Ñ‚Ğ¾ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ÑÑ‚ÑŒ, Ğ¾Ğ±Ñ€Ğ°Ğ±Ğ°Ñ‚Ñ‹Ğ²Ğ°ĞµĞ¼ ĞºĞ¾Ñ€Ğ·Ğ¸Ğ½Ñƒ
         if (!empty($arIBlockFields) && CModule::IncludeModule('sale')) {
             $order = COption::GetOptionString("tatonimus.topsale", "order");
             $period = intval(COption::GetOptionString("tatonimus.topsale", "period"));
@@ -107,7 +107,7 @@ class CTopsale_general
                 $levelCount = 5;
             }
 
-            //Âûáèğàåì ğåàëüíîå êîëè÷åñòâî ïğîäàæ òîâàğîâ
+            //Ğ’Ñ‹Ğ±Ğ¸Ñ€Ğ°ĞµĞ¼ Ñ€ĞµĞ°Ğ»ÑŒĞ½Ğ¾Ğµ ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ¿Ñ€Ğ¾Ğ´Ğ°Ğ¶ Ñ‚Ğ¾Ğ²Ğ°Ñ€Ğ¾Ğ²
             $arProductSort = array();
             $arSaleCounts = array();
             $arFilter = array();
@@ -141,7 +141,7 @@ class CTopsale_general
                 $USER = new CUser();
                 $userClear = true;
             }
-            //âûáèğàåì èíôîáëîê è îáíîâëÿåì ğåéòèíãè
+            //Ğ²Ñ‹Ğ±Ğ¸Ñ€Ğ°ĞµĞ¼ Ğ¸Ğ½Ñ„Ğ¾Ğ±Ğ»Ğ¾Ğº Ğ¸ Ğ¾Ğ±Ğ½Ğ¾Ğ²Ğ»ÑĞµĞ¼ Ñ€ĞµĞ¹Ñ‚Ğ¸Ğ½Ğ³Ğ¸
             foreach ($arIBlockFields as $iblockID => $arFields) {
                 if ($time && time() - $time > 20) {
                     set_time_limit(0);

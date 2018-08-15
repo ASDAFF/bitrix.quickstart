@@ -1,16 +1,16 @@
 <?php
 /**
- * Странице настроек модуля.
+ * РЎС‚СЂР°РЅРёС†Рµ РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
 
 include_once(dirname(__FILE__) . '/include.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // пролог модуля
+require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // РїСЂРѕР»РѕРі РјРѕРґСѓР»СЏ
 
-$APPLICATION->SetAdditionalCSS('/bitrix/themes/' . ADMIN_THEME_ID . '/sysupdate.css'); // картинка для логов
+$APPLICATION->SetAdditionalCSS('/bitrix/themes/' . ADMIN_THEME_ID . '/sysupdate.css'); // РєР°СЂС‚РёРЅРєР° РґР»СЏ Р»РѕРіРѕРІ
 
-// Контекстное меню.
+// РљРѕРЅС‚РµРєСЃС‚РЅРѕРµ РјРµРЅСЋ.
 $arMenu = array(
 	array(
 		'TEXT' => GetMessage('UNITELLER.AGENT_LOGS'),

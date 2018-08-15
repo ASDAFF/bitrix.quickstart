@@ -2,7 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 /*
- * Ïîäêëþ÷àåì api ìîäóëÿ
+ * ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ api Ð¼Ð¾Ð´ÑƒÐ»Ñ
  * */
 use Bitrix\Main\Loader;
 use \Bitrix\Main\Localization\Loc;
@@ -13,7 +13,7 @@ global $USER;
 
 if(Loader::includeModule("soobwa.comments")){
     /*
-     * Óäàëèòü
+     * Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ
      * */
     if(htmlspecialchars($_REQUEST['DELETE_COMMENT']) == 'Y' and $USER->IsAdmin()){
         $GLOBALS['APPLICATION']->RestartBuffer();
@@ -25,7 +25,7 @@ if(Loader::includeModule("soobwa.comments")){
     }
 
     /*
-     * Îïðóâèì
+     * ÐžÐ¿Ñ€ÑƒÐ²Ð¸Ð¼
      * */
     if(htmlspecialchars($_REQUEST['ACTIVE_COMMENT']) == 'Y' and $USER->IsAdmin()){
         $GLOBALS['APPLICATION']->RestartBuffer();
@@ -37,17 +37,17 @@ if(Loader::includeModule("soobwa.comments")){
     }
 
     /*
-     * Ïðîâåðêà íà äîáîâëåíèå êîììåíòàðèÿ
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð° Ð´Ð¾Ð±Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ
      * */
     if(htmlspecialchars($_REQUEST['ADD_COMMENT']) == 'Y') {
         /*
-         * TODO: ñäåëàòü îáðàáîòêó äîáîâëåíèÿ êîììåíòàðèÿ
+         * TODO: ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÑƒ Ð´Ð¾Ð±Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ
          * */
 
         $GLOBALS['APPLICATION']->RestartBuffer();
 
         /*
-         * Îïðåäåëÿåì ACTIVE
+         * ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼ ACTIVE
          * */
         if(htmlspecialchars($arParams['MODERATION']) == 'Y'){
             $valActive = false;
@@ -56,7 +56,7 @@ if(Loader::includeModule("soobwa.comments")){
         }
 
         /*
-         * Ôîðìèðîâàíèå ìàññèâ äëÿ äîáîâëåíèÿ êîììåíòàðèÿ
+         * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð² Ð´Ð»Ñ Ð´Ð¾Ð±Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ
          * */
         $arFields = array(
             'ID_CHAT' => htmlspecialchars($_REQUEST['ID_COMMENTS']),
@@ -78,11 +78,11 @@ if(Loader::includeModule("soobwa.comments")){
 
     }else{
         /*
-         * TODO: ñäåëàòü êåø!
+         * TODO: ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ ÐºÐµÑˆ!
          * */
 
         /*
-         * Ôèëüòð
+         * Ð¤Ð¸Ð»ÑŒÑ‚Ñ€
          * */
         $filterParam =array(
             'ID_CHAT' => $arParams['ID_CHAT'],
@@ -90,14 +90,14 @@ if(Loader::includeModule("soobwa.comments")){
         );
 
         /*
-         * Ïåðåìåííûå
+         * ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ
          * */
         $arResult = array();
         $arResult['USERS'] = array();
         $arResult['ITEMS'] = array();
 
         /*
-         * Ïðîâåðêà ÿâëÿåòñÿ ëè ïîëüçîâàòåëü àäìíèñòðàòîðîì
+         * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð»Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð°Ð´Ð¼Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð¾Ð¼
          * */
         if ($USER->IsAdmin()){
             $arResult['USER']['IS_ADMIN'] = 'Y';
@@ -107,45 +107,45 @@ if(Loader::includeModule("soobwa.comments")){
         }
 
         /*
-         * Ïðîâåðêà çàðåãèñòðèðîâàí ÷åëîâåê èëè íåò, äîáîâëåíèå ID ïîëüçîâàòåëÿ
+         * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐº Ð¸Ð»Ð¸ Ð½ÐµÑ‚, Ð´Ð¾Ð±Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
          * */
         if($USER->IsAuthorized()){
             $arResult['USER']['IS_AUTHORIZED'] = 'Y';
 
             /*
-             * Ïîëó÷àåì ID ïîëüçîâàòåëÿ
+             * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
              * */
             $arResult['USER']['ID'] = $USER->GetID();
         }else{
             $arResult['USER']['IS_AUTHORIZED'] = 'N';
 
             /*
-             * Ïðèñâàèâàåì ID ïîëüçîâàòåëÿ
+             * ÐŸÑ€Ð¸ÑÐ²Ð°Ð¸Ð²Ð°ÐµÐ¼ ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
              * */
             $arResult['USER']['ID'] = 0;
         }
 
         /*
-         * ID ãðóïïû ñîîáùåíèé
+         * ID Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹
          * */
         $arResult['ID_COMMENTS'] = $arParams['ID_CHAT'];
 
         /*
-         * Êîëëè÷åñòâî êîìåíòàðèåâ
+         * ÐšÐ¾Ð»Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²
          * */
         $arResult['COUNT_MASSAGE'] = \Soobwa\Comments\Api::getCount($filterParam);
 
         /*
-         * Êîëëè÷åñòâî ñòðàííèö
+         * ÐšÐ¾Ð»Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð½Ð¸Ñ†
          * */
         $arResult['COUNT_PAGES'] = ceil($arResult['COUNT_MASSAGE'] / $arParams['COUNT']);
 
         /*
-         * Ñîáèðàåì âñå êîììåíòàðèè
+         * Ð¡Ð¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð²ÑÐµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸
          * */
 
         /*
-         * Ïàãèíàöèÿ
+         * ÐŸÐ°Ð³Ð¸Ð½Ð°Ñ†Ð¸Ñ
          * */
         $offset = 0;
 
@@ -158,11 +158,11 @@ if(Loader::includeModule("soobwa.comments")){
         $result = \Soobwa\Comments\Api::getList(array('ID', 'ID_CHAT', 'ACTIVE', 'ID_USER', 'DATA', 'TEXT'), $filterParam, array('ID'=>'DESC'), $arParams['COUNT'], $offset);
         while ($res = $result->fetch()) {
             /*
-             * Ïîëó÷àåì äàòó
+             * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð´Ð°Ñ‚Ñƒ
              * */
             $res['FORMAT_DATA'] = date('d.m.Y', $res['DATA']);
             /*
-             * Ïåðåâîäèì àêòèâíîñòü â ïîíÿòíûé âèä (Y/N)
+             * ÐŸÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ Ð² Ð¿Ð¾Ð½ÑÑ‚Ð½Ñ‹Ð¹ Ð²Ð¸Ð´ (Y/N)
              * */
             if($res['ACTIVE'] == '1'){
                 $res['ACTIVE'] = 'Y';
@@ -170,12 +170,12 @@ if(Loader::includeModule("soobwa.comments")){
                 $res['ACTIVE'] = 'N';
             }
             /*
-             * Ñáîð ïîëüçîâàòåëåé
+             * Ð¡Ð±Ð¾Ñ€ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹
              * */
             $arResult['USERS'][$res['ID_USER']]= $res['ID_USER'];
 
             /*
-             * íå ïîêàçûâàåì åñëè íå àäìèí íå àêòèâíûå ýëåìåíòû
+             * Ð½Ðµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ ÐµÑÐ»Ð¸ Ð½Ðµ Ð°Ð´Ð¼Ð¸Ð½ Ð½Ðµ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹
              * */
             if($USER->IsAdmin()){
                 $arResult['ITEMS'][] = $res;
@@ -187,7 +187,7 @@ if(Loader::includeModule("soobwa.comments")){
             //$arResult['ITEMS'][] = $res;
         }
         /*
-         * Ïîëó÷àåì äàííûå î ïîëüçîâàòåëÿõ
+         * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÑ…
          * */
         foreach ($arResult['USERS'] as $keyUser => $valUser){
             $arResult['USERS'][$keyUser] = CUser::GetByID($valUser)->Fetch();

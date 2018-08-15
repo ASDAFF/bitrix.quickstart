@@ -1,66 +1,66 @@
 <?
-$MESS["IMYIE_TAB_DIFFERENT"] = "Ðàçíûå ñòèëè";
-$MESS["IMYIE_TAB_DIFFERENT_TITLE"] = "Íàñòðîéêà ðàçíûõ ñòèëåé";
-$MESS["IMYIE_TAB_LEFT_MENU"] = "Ëåâîå ìåíþ";
-$MESS["IMYIE_TAB_LEFT_MENU_TITLE"] = "Ãëàâíîå ëåâîå ìåíþ";
-$MESS["IMYIE_TAB_PAGE_EDIT"] = "Ñòðàíèöà ðåäàêòèðîâàíèÿ";
-$MESS["IMYIE_TAB_PAGE_EDIT_TITLE"] = "Ñòðàíèöà ðåäàêòèðîâàíèÿ ýëåìåíòà èëè ñåêöèè è ïð.";
-$MESS["IMYIE_TAB_PAGE_LIST"] = "Ñòðàíèöà ñïèñêà";
-$MESS["IMYIE_TAB_PAGE_LIST_TITLE"] = "Ñòðàíèöà ñî ñïèñêîì ýëåìåíòîâ";
-$MESS["IMYIE_TAB_CONSTROLS"] = "Êîíòðîëû";
-$MESS["IMYIE_TAB_CONSTROLS_TITLE"] = "Âèä êíîïîê, ïîëåé ââîäà òåêñòà è ò.ï.";
-$MESS["IMYIE_TAB_NOT_STYLE"] = "Ðàçíîå";
-$MESS["IMYIE_TAB_NOT_STYLE_TITLE"] = "Ðàçíûå íàñòðîéêè";
+$MESS["IMYIE_TAB_DIFFERENT"] = "Ð Ð°Ð·Ð½Ñ‹Ðµ ÑÑ‚Ð¸Ð»Ð¸";
+$MESS["IMYIE_TAB_DIFFERENT_TITLE"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ñ€Ð°Ð·Ð½Ñ‹Ñ… ÑÑ‚Ð¸Ð»ÐµÐ¹";
+$MESS["IMYIE_TAB_LEFT_MENU"] = "Ð›ÐµÐ²Ð¾Ðµ Ð¼ÐµÐ½ÑŽ";
+$MESS["IMYIE_TAB_LEFT_MENU_TITLE"] = "Ð“Ð»Ð°Ð²Ð½Ð¾Ðµ Ð»ÐµÐ²Ð¾Ðµ Ð¼ÐµÐ½ÑŽ";
+$MESS["IMYIE_TAB_PAGE_EDIT"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ";
+$MESS["IMYIE_TAB_PAGE_EDIT_TITLE"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¸Ð»Ð¸ ÑÐµÐºÑ†Ð¸Ð¸ Ð¸ Ð¿Ñ€.";
+$MESS["IMYIE_TAB_PAGE_LIST"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÑÐ¿Ð¸ÑÐºÐ°";
+$MESS["IMYIE_TAB_PAGE_LIST_TITLE"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÑÐ¾ ÑÐ¿Ð¸ÑÐºÐ¾Ð¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+$MESS["IMYIE_TAB_CONSTROLS"] = "ÐšÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ‹";
+$MESS["IMYIE_TAB_CONSTROLS_TITLE"] = "Ð’Ð¸Ð´ ÐºÐ½Ð¾Ð¿Ð¾Ðº, Ð¿Ð¾Ð»ÐµÐ¹ Ð²Ð²Ð¾Ð´Ð° Ñ‚ÐµÐºÑÑ‚Ð° Ð¸ Ñ‚.Ð¿.";
+$MESS["IMYIE_TAB_NOT_STYLE"] = "Ð Ð°Ð·Ð½Ð¾Ðµ";
+$MESS["IMYIE_TAB_NOT_STYLE_TITLE"] = "Ð Ð°Ð·Ð½Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
 
 //_______________________ different _______________________//
-$MESS["IMYIE_HEADING_PAGE_TITLE"] = "Çàãîëîâîê ñòðàíèöû";
-	$MESS["IMYIE_PAGE_TITLE_MARGIN"] = "Âíåøíèå îòñòóïû çàãîëîâêà îò ñòðàíèöû";
-$MESS["IMYIE_HEADING_NOTES"] = "Ïîäñêàçêè";
-	$MESS["IMYIE_NOTES_MARGIN"] = "Âíåøíèå îòñòóïû ïîäñêàçîê";
-	$MESS["IMYIE_NOTES_PADDING"] = "Âíóòðåííèå îòñòóïû ïîäñêàçîê";
-$MESS["IMYIE_NAVI"] = "Íàâèãàöèÿ";
-	$MESS["IMYIE_NAVI_PADDING"] = "Âíóòðåííèå îòñòóïû íàâèãàöèè";
-	$MESS["IMYIE_NAVI_NUMBER"] = "Ïîçèöèîíèðîâàíèå áëîêà \"Íà ñòðàíèöå\"";
-		$MESS["IMYIE_NAVI_NUMBER_POST_LEFT"] = "ñëåâà";
-		$MESS["IMYIE_NAVI_NUMBER_POST_CENTER"] = "ïî öåíòðó";
-		$MESS["IMYIE_NAVI_NUMBER_POST_RIGHT"] = "ñïðàâà";
-$MESS["IMYIE_GADGET"] = "Ãàäæåòû";
-	$MESS["IMYIE_GADGET_USING"] = "Âêë/Âûêë ìèíèìàçàöèþ âèäà ãàäæåòîâ";
+$MESS["IMYIE_HEADING_PAGE_TITLE"] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+	$MESS["IMYIE_PAGE_TITLE_MARGIN"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ° Ð¾Ñ‚ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["IMYIE_HEADING_NOTES"] = "ÐŸÐ¾Ð´ÑÐºÐ°Ð·ÐºÐ¸";
+	$MESS["IMYIE_NOTES_MARGIN"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ Ð¿Ð¾Ð´ÑÐºÐ°Ð·Ð¾Ðº";
+	$MESS["IMYIE_NOTES_PADDING"] = "Ð’Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½Ð¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ Ð¿Ð¾Ð´ÑÐºÐ°Ð·Ð¾Ðº";
+$MESS["IMYIE_NAVI"] = "ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ";
+	$MESS["IMYIE_NAVI_PADDING"] = "Ð’Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½Ð¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸";
+	$MESS["IMYIE_NAVI_NUMBER"] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð±Ð»Ð¾ÐºÐ° \"ÐÐ° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ\"";
+		$MESS["IMYIE_NAVI_NUMBER_POST_LEFT"] = "ÑÐ»ÐµÐ²Ð°";
+		$MESS["IMYIE_NAVI_NUMBER_POST_CENTER"] = "Ð¿Ð¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ";
+		$MESS["IMYIE_NAVI_NUMBER_POST_RIGHT"] = "ÑÐ¿Ñ€Ð°Ð²Ð°";
+$MESS["IMYIE_GADGET"] = "Ð“Ð°Ð´Ð¶ÐµÑ‚Ñ‹";
+	$MESS["IMYIE_GADGET_USING"] = "Ð’ÐºÐ»/Ð’Ñ‹ÐºÐ» Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð·Ð°Ñ†Ð¸ÑŽ Ð²Ð¸Ð´Ð° Ð³Ð°Ð´Ð¶ÐµÑ‚Ð¾Ð²";
 
 
 //_______________________ left_menu _______________________//
-$MESS["IMYIE_LEFT_MENU_USING"] = "Âêë/Âûêë ìèíèìàçàöèþ ëåâîãî ìåíþ";
+$MESS["IMYIE_LEFT_MENU_USING"] = "Ð’ÐºÐ»/Ð’Ñ‹ÐºÐ» Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð·Ð°Ñ†Ð¸ÑŽ Ð»ÐµÐ²Ð¾Ð³Ð¾ Ð¼ÐµÐ½ÑŽ";
 
 
 //_______________________ page_edit _______________________//
-$MESS["IMYIE_PAGE_EDIT_PADDING"] = "Îòñòóï â ñòðî÷êàõ";
+$MESS["IMYIE_PAGE_EDIT_PADDING"] = "ÐžÑ‚ÑÑ‚ÑƒÐ¿ Ð² ÑÑ‚Ñ€Ð¾Ñ‡ÐºÐ°Ñ…";
 
 
 //_______________________ page_list _______________________//
-$MESS["IMYIE_PAGE_LIST_MINIMIZATION_LEVEL"] = "Âûáåðèòå óðîâåíü ìèíèìèçàöèè";
+$MESS["IMYIE_PAGE_LIST_MINIMIZATION_LEVEL"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ Ð¼Ð¸Ð½Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸";
 
 
 //_______________________ constrols _______________________//
-$MESS["IMYIE_CONSTROLS_INPUT_TEXT"] = "Âèä òåêñòîâûõ ïîëåé è âûïàäàþùèõ ñïèñêîâ";
-	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_HEIGHT"] = "Âûñîòà";
-	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_BORDER_RADIUS_USING"] = "Óáðàòü çàêðóãëåííûå óãëû";
-	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_BOX_SHADOW_USING"] = "Óáðàòü âíóòðåííþþ òåíü";
-	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_HOVER_SHADOW_USING"] = "Äîáàâèòü ïîäñâåòêó ïðè íàâåäåíèè";
-	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_FOCUS_SHADOW_USING"] = "Äîáàâèòü ïîäñâåòêó ïðè ôîêóñå";
+$MESS["IMYIE_CONSTROLS_INPUT_TEXT"] = "Ð’Ð¸Ð´ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ñ‹Ñ… Ð¿Ð¾Ð»ÐµÐ¹ Ð¸ Ð²Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð¸Ñ… ÑÐ¿Ð¸ÑÐºÐ¾Ð²";
+	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_HEIGHT"] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð°";
+	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_BORDER_RADIUS_USING"] = "Ð£Ð±Ñ€Ð°Ñ‚ÑŒ Ð·Ð°ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð½Ñ‹Ðµ ÑƒÐ³Ð»Ñ‹";
+	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_BOX_SHADOW_USING"] = "Ð£Ð±Ñ€Ð°Ñ‚ÑŒ Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½ÑŽÑŽ Ñ‚ÐµÐ½ÑŒ";
+	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_HOVER_SHADOW_USING"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð´ÑÐ²ÐµÑ‚ÐºÑƒ Ð¿Ñ€Ð¸ Ð½Ð°Ð²ÐµÐ´ÐµÐ½Ð¸Ð¸";
+	$MESS["IMYIE_CONSTROLS_INPUT_TEXT_FOCUS_SHADOW_USING"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð´ÑÐ²ÐµÑ‚ÐºÑƒ Ð¿Ñ€Ð¸ Ñ„Ð¾ÐºÑƒÑÐµ";
 
 
 //_______________________ not_style _______________________//
-$MESS["IMYIE_NOT_STYLE_ADD_BUTTONS"] = "Äîáàâëÿòü êíîïêè \"Äîáàâèòü ýëåìåíò\" è \"Äîáàâèòü ðàçäåë\"";
+$MESS["IMYIE_NOT_STYLE_ADD_BUTTONS"] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ \"Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚\" Ð¸ \"Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»\"";
 
 
 
 
-$MESS["IMYIE_TOP"] = "Ñâåðõó";
-$MESS["IMYIE_RIGHT"] = "Ñïðàâà";
-$MESS["IMYIE_BOT"] = "Ñíèçó";
-$MESS["IMYIE_LEFT"] = "Ñëåâà";
+$MESS["IMYIE_TOP"] = "Ð¡Ð²ÐµÑ€Ñ…Ñƒ";
+$MESS["IMYIE_RIGHT"] = "Ð¡Ð¿Ñ€Ð°Ð²Ð°";
+$MESS["IMYIE_BOT"] = "Ð¡Ð½Ð¸Ð·Ñƒ";
+$MESS["IMYIE_LEFT"] = "Ð¡Ð»ÐµÐ²Ð°";
 
-$MESS["IMYIE_BTN_RESTORE_DEFAULT_NOTE"] = "Âíèìàíèå! Âñå íàñòðîéêè áóäóò ïåðåçàïèñàíû çíà÷åíèÿìè ïî óìîë÷àíèþ. Ïðîäîëæèòü?";
-$MESS["IMYIE_BTN_SAVE"] = "Ñîõðàíèòü";
-$MESS["IMYIE_BTN_RESTORE_DEFAULT"] = "Ïî óìîë÷àíèþ";
+$MESS["IMYIE_BTN_RESTORE_DEFAULT_NOTE"] = "Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! Ð’ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð±ÑƒÐ´ÑƒÑ‚ Ð¿ÐµÑ€ÐµÐ·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
+$MESS["IMYIE_BTN_SAVE"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
+$MESS["IMYIE_BTN_RESTORE_DEFAULT"] = "ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
 ?>

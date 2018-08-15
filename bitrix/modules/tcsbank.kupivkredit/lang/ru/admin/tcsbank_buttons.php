@@ -1,1 +1,11 @@
-<?	$MESS["TCS_BUTTON_"]="Îòïðàâèòü çàÿâêó";	$MESS["TCS_BUTTON_STYLE"]="Ñòèëü êíîïêè çàêàçà";	$MESS["TCS_INSERT_BUTTONS"]="Êíîïêè äëÿ âñòàâêè";	$MESS["TCS_BUTTON_VIEW"]="Âèä êíîïêè";	$MESS["TCS_ORDER_VIEW"]="Âèä âûâîäèìûé íà<br/>ïîñëåäíåé ñòðàíèöå çàêàçà";	$MESS["TCS_CODE"]="Êîä äëÿ âñòàâêè";	$MESS["TCS_WIDTH"]="Øèðèíà";	$MESS["TCS_TYPE"]="òèï";	$MESS["TCS_GENERATE"]="Ñôîðìèðîâàòü";?>
+<?
+	$MESS["TCS_BUTTON_"]="ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð·Ð°ÑÐ²ÐºÑƒ";
+	$MESS["TCS_BUTTON_STYLE"]="Ð¡Ñ‚Ð¸Ð»ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_INSERT_BUTTONS"]="ÐšÐ½Ð¾Ð¿ÐºÐ¸ Ð´Ð»Ñ Ð²ÑÑ‚Ð°Ð²ÐºÐ¸";
+	$MESS["TCS_BUTTON_VIEW"]="Ð’Ð¸Ð´ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+	$MESS["TCS_ORDER_VIEW"]="Ð’Ð¸Ð´ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ð¹ Ð½Ð°<br/>Ð¿Ð¾ÑÐ»ÐµÐ´Ð½ÐµÐ¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_CODE"]="ÐšÐ¾Ð´ Ð´Ð»Ñ Ð²ÑÑ‚Ð°Ð²ÐºÐ¸";
+	$MESS["TCS_WIDTH"]="Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+	$MESS["TCS_TYPE"]="Ñ‚Ð¸Ð¿";
+	$MESS["TCS_GENERATE"]="Ð¡Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+?>

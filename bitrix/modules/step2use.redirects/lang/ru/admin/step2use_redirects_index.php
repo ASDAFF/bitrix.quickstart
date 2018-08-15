@@ -1,4 +1,4 @@
 <?
-$MESS ['S2U_REDIRECT_INDEX_TITLE'] = "Ðåäèðåêò ìàñòåð";
-$MESS ['ACCESS_DENIED'] = "Äîñòóï çàêðûò";
+$MESS ['S2U_REDIRECT_INDEX_TITLE'] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ð¼Ð°ÑÑ‚ÐµÑ€";
+$MESS ['ACCESS_DENIED'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°ÐºÑ€Ñ‹Ñ‚";
 ?>

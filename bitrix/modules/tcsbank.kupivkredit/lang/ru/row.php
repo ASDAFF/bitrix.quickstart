@@ -1,10 +1,10 @@
 <?
-	$MESS["TCS_ANOTHER"] = "Äðóãîå çíà÷åíèå";
-	$MESS["TCS_USER"] = "Ïàðàìåòð ïîëüçîâàòåëÿ";
-	$MESS["TCS_ORDER"] = "Ïàðàìåòð çàêàçà";
-	$MESS["TCS_PROPERTY"] = "Ñâîéñòâî çàêàçà";
-	$MESS["TCS_TYPE"] = "Òèï";
-	$MESS["TCS_VALUE"] = "Çíà÷åíèå";
-	$MESS["TCS_DELETE"] = "Óäàëèòü";
-	$MESS["TCS_MORE"] = "Åùå";
+	$MESS["TCS_ANOTHER"] = "Ð”Ñ€ÑƒÐ³Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+	$MESS["TCS_USER"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+	$MESS["TCS_ORDER"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_PROPERTY"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_TYPE"] = "Ð¢Ð¸Ð¿";
+	$MESS["TCS_VALUE"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+	$MESS["TCS_DELETE"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+	$MESS["TCS_MORE"] = "Ð•Ñ‰Ðµ";
 ?>

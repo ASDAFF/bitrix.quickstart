@@ -1,5 +1,5 @@
 <?
-$MESS ['SPOC_DEFAULT_TEMPLATE_NAME'] = "Îòìåíà çàêàçà";
-$MESS ['SPOC_DEFAULT_TEMPLATE_DESCRIPTION'] = "Ïîçâîëÿåò îòìåíèòü çàêàç";
-$MESS ['SPOC_NAME'] = "Ïåðñîíàëüíûé ðàçäåë";
+$MESS ['SPOC_DEFAULT_TEMPLATE_NAME'] = "ÐžÑ‚Ð¼ÐµÐ½Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS ['SPOC_DEFAULT_TEMPLATE_DESCRIPTION'] = "ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¾Ñ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·";
+$MESS ['SPOC_NAME'] = "ÐŸÐµÑ€ÑÐ¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð´ÐµÐ»";
 ?>

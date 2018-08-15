@@ -1,10 +1,10 @@
 <?php
-$MESS['S2U_MAIN'] = 'ŒÒÌÓ‚Ì˚Â';
-$MESS['S2U_MAIN_TITLE'] = 'ŒÒÌÓ‚Ì˚Â Ì‡ÒÚÓÈÍË';
-$MESS['S2U_REDIRECTS_IS_ACTIVE'] = '–Â‰ËÂÍÚ˚ ‚ÍÎ.';
-$MESS['S2U_404_IS_ACTIVE'] = 'ŒÚÒÎÂÊË‚‡ÌËÂ ·ËÚ˚ı ÒÒ˚ÎÓÍ ‚ÍÎ.';
-$MESS['S2U_404_LIMIT'] = '’‡ÌËÚ¸ ËÒÚÓË˛ ·ËÚ˚ı ÒÒ˚ÎÓÍ';
-$MESS['S2U_404_LIMIT_ALL'] = '‚Ò˛';
-$MESS['S2U_404_LIMIT_LAST_N'] = 'ÔÓÒÎÂ‰ÌËı Á‡ÔËÒÂÈ';
-$MESS['S2U_VALIDATE_URL_BY_RFC2396'] = 'œÓ‚ÂˇÚ¸ URL Ì‡ ÒÓÓÚ‚ÂÚÒÚ‚ËÂ ÒÔÂˆËÙËÍ‡ˆËË <a href="http://www.faqs.org/rfcs/rfc2396.html" target="_blank">RFC2396</a>';
+$MESS['S2U_MAIN'] = '–û—Å–Ω–æ–≤–Ω—ã–µ';
+$MESS['S2U_MAIN_TITLE'] = '–û—Å–Ω–æ–≤–Ω—ã–µ –Ω–∞—Å—Ç—Ä–æ–π–∫–∏';
+$MESS['S2U_REDIRECTS_IS_ACTIVE'] = '–†–µ–¥–∏—Ä–µ–∫—Ç—ã –≤–∫–ª.';
+$MESS['S2U_404_IS_ACTIVE'] = '–û—Ç—Å–ª–µ–∂–∏–≤–∞–Ω–∏–µ –±–∏—Ç—ã—Ö —Å—Å—ã–ª–æ–∫ –≤–∫–ª.';
+$MESS['S2U_404_LIMIT'] = '–•—Ä–∞–Ω–∏—Ç—å –∏—Å—Ç–æ—Ä–∏—é –±–∏—Ç—ã—Ö —Å—Å—ã–ª–æ–∫';
+$MESS['S2U_404_LIMIT_ALL'] = '–≤—Å—é';
+$MESS['S2U_404_LIMIT_LAST_N'] = '–ø–æ—Å–ª–µ–¥–Ω–∏—Ö –∑–∞–ø–∏—Å–µ–π';
+$MESS['S2U_VALIDATE_URL_BY_RFC2396'] = '–ü—Ä–æ–≤–µ—Ä—è—Ç—å URL –Ω–∞ —Å–æ–æ—Ç–≤–µ—Ç—Å—Ç–≤–∏–µ —Å–ø–µ—Ü–∏—Ñ–∏–∫–∞—Ü–∏–∏ <a href="http://www.faqs.org/rfcs/rfc2396.html" target="_blank">RFC2396</a>';
 ?>

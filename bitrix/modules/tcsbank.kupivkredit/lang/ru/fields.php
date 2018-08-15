@@ -1,19 +1,19 @@
 <?
-	$MESS["TCS_USER_ID"] = "ID ïîëüçîâàòåëÿ";
-	$MESS["TCS_FIO"] = "ÔÈÎ ïîëüçîâàòåëÿ (3 ïîëÿ)";
-	$MESS["TCS_LOGIN"] = "Ëîãèí";
-	$MESS["TCS_NAME"] = "Èìÿ";
-	$MESS["TCS_SECOND_NAME"] = "Îò÷åñòâî";
-	$MESS["TCS_LAST_NAME"] = "Ôàìèëèÿ";
+	$MESS["TCS_USER_ID"] = "ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+	$MESS["TCS_FIO"] = "Ð¤Ð˜Ðž Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ (3 Ð¿Ð¾Ð»Ñ)";
+	$MESS["TCS_LOGIN"] = "Ð›Ð¾Ð³Ð¸Ð½";
+	$MESS["TCS_NAME"] = "Ð˜Ð¼Ñ";
+	$MESS["TCS_SECOND_NAME"] = "ÐžÑ‚Ñ‡ÐµÑÑ‚Ð²Ð¾";
+	$MESS["TCS_LAST_NAME"] = "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ";
 	$MESS["TCS_EMAIL"] = "Email";
-	$MESS["TCS_PERSONAL_MOBILE"] = "Ìîáèëüíûé òåëåôîí";
-	$MESS["TCS_WORK_PHONE"] = "Ðàáî÷èé òåëåôîí";
-	$MESS["TCS_ORDER_ID"] = "ID çàêàçà";
-	$MESS["TCS_ORDER_USER_ID"] = "ID ïîëüçîâàòåëÿ";
-	$MESS["TCS_PERSONAL_PHONE"] = "Ëè÷íûé òåëåôîí";
+	$MESS["TCS_PERSONAL_MOBILE"] = "ÐœÐ¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
+	$MESS["TCS_WORK_PHONE"] = "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
+	$MESS["TCS_ORDER_ID"] = "ID Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_ORDER_USER_ID"] = "ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+	$MESS["TCS_PERSONAL_PHONE"] = "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½";
 	
-	$MESS["TCS_ANOTHER"] = "Äðóãîå çíà÷åíèå";
-	$MESS["TCS_USER"] = "Ïàðàìåòð ïîëüçîâàòåëÿ";
-	$MESS["TCS_ORDER"] = "Ïàðàìåòð çàêàçà";
-	$MESS["TCS_PROPERTY"] = "Ñâîéñòâî çàêàçà";
+	$MESS["TCS_ANOTHER"] = "Ð”Ñ€ÑƒÐ³Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+	$MESS["TCS_USER"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+	$MESS["TCS_ORDER"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_PROPERTY"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°";
 ?>

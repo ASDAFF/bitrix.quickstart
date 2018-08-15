@@ -1,9 +1,9 @@
 <?
-$MESS["SCOM_INSTALL_NAME"] = "Óìíàÿ êîðçèíà";
-$MESS["SCOM_INSTALL_DESCRIPTION"] = "Óìíûé øàáëîí êîðçèíû";
-$MESS["SCOM_INSTALL_TITLE"] = "Óñòàíîâêà ìîäóëÿ";
-$MESS["SCOM_UNINSTALL_TITLE"] = "Óäàëåíèå ìîäóëÿ";
-$MESS["SPER_PARTNER"] = "Ñòóäèÿ «ßðãà»";
+$MESS["SCOM_INSTALL_NAME"] = "Ð£Ð¼Ð½Ð°Ñ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð°";
+$MESS["SCOM_INSTALL_DESCRIPTION"] = "Ð£Ð¼Ð½Ñ‹Ð¹ ÑˆÐ°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹";
+$MESS["SCOM_INSTALL_TITLE"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["SCOM_UNINSTALL_TITLE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["SPER_PARTNER"] = "Ð¡Ñ‚ÑƒÐ´Ð¸Ñ Â«Ð¯Ñ€Ð³Ð°Â»";
 $MESS["PARTNER_URI"] = "http://iarga.net";
-$MESS['SUCCESS'] = "Ìîäóëü óñïåøíî óñòàíîâëåí. Òåïåðü âû ìîæåòå âûáðàòü øàáëîí iarga.cleverbasket â ñâîåé êîðçèíå.";
+$MESS['SUCCESS'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½. Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð²Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ ÑˆÐ°Ð±Ð»Ð¾Ð½ iarga.cleverbasket Ð² ÑÐ²Ð¾ÐµÐ¹ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ.";
 ?>

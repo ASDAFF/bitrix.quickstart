@@ -1,18 +1,18 @@
 <?
-$MESS ['SPO_ORDERS_PER_PAGE'] = "Êîëè÷åñòâî çàêàçîâ íà îäíîé ñòðàíèöå";
-$MESS ['SPO_DESC_YES'] = "Äà";
-$MESS ['SPO_DESC_NO'] = "Íåò";
-$MESS ['SPO_LIST_DESC'] = "Ñïèñîê çàêàçîâ";
-$MESS ['SPO_DETAIL_DESC'] = "Çàêàç ïîäðîáíî";
-$MESS ['SPO_CANCEL_DESC'] = "Îòìåíà çàêàçà";
+$MESS ['SPO_ORDERS_PER_PAGE'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð¾Ð² Ð½Ð° Ð¾Ð´Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ";
+$MESS ['SPO_DESC_YES'] = "Ð”Ð°";
+$MESS ['SPO_DESC_NO'] = "ÐÐµÑ‚";
+$MESS ['SPO_LIST_DESC'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+$MESS ['SPO_DETAIL_DESC'] = "Ð—Ð°ÐºÐ°Ð· Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½Ð¾";
+$MESS ['SPO_CANCEL_DESC'] = "ÐžÑ‚Ð¼ÐµÐ½Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
 // UnitellerPlugin add
-$MESS ['SPO_CHECK_DESC'] = '×åê';
+$MESS ['SPO_CHECK_DESC'] = 'Ð§ÐµÐº';
 // /UnitellerPlugin add
-$MESS ['SPO_PATH_TO_PAYMENT'] = "Ñòðàíèöà ïîäêëþ÷åíèÿ ïëàòåæíîé ñèñòåìû";
-$MESS ['SPO_PATH_TO_BASKET'] = "Ñòðàíèöà ñ êîðçèíîé";
-$MESS ['SPO_SAVE_IN_SESSION'] = "Ñîõðàíÿòü óñòàíîâêè ôèëüòðà â ñåññèè ïîëüçîâàòåëÿ";
+$MESS ['SPO_PATH_TO_PAYMENT'] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹";
+$MESS ['SPO_PATH_TO_BASKET'] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð¾Ð¹";
+$MESS ['SPO_SAVE_IN_SESSION'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð° Ð² ÑÐµÑÑÐ¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
 
-$MESS ['SPO_PROPS_NOT_SHOW'] = "Íå ïîêàçûâàòü ñâîéñòâà äëÿ òèïà ïëàòåëüùèêà";
-$MESS ['SPO_SHOW_ALL'] = "(ïîêàçûâàòü âñå)";
-$MESS ['SPOL_NAV_TEMPLATE'] = "Èìÿ øàáëîíà äëÿ ïîñòðàíè÷íîé íàâèãàöèè";
+$MESS ['SPO_PROPS_NOT_SHOW'] = "ÐÐµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð´Ð»Ñ Ñ‚Ð¸Ð¿Ð° Ð¿Ð»Ð°Ñ‚ÐµÐ»ÑŒÑ‰Ð¸ÐºÐ°";
+$MESS ['SPO_SHOW_ALL'] = "(Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð²ÑÐµ)";
+$MESS ['SPOL_NAV_TEMPLATE'] = "Ð˜Ð¼Ñ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° Ð´Ð»Ñ Ð¿Ð¾ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡Ð½Ð¾Ð¹ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸";
 ?>

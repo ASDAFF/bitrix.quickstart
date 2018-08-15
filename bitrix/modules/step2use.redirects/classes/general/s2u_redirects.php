@@ -19,7 +19,7 @@ class S2uRedirects {
         
         // 404 Not Found
         if($_404IsActive=='Y') {
-            // çàïîìèíàåì, åñëè òåêóùèé url íå ñòîèò â èãíîðëèñòå áèòûõ ññûëîê
+            // Ð·Ð°Ð¿Ð¾Ð¼Ð¸Ð½Ð°ÐµÐ¼, ÐµÑÐ»Ð¸ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ url Ð½Ðµ ÑÑ‚Ð¾Ð¸Ñ‚ Ð² Ð¸Ð³Ð½Ð¾Ñ€Ð»Ð¸ÑÑ‚Ðµ Ð±Ð¸Ñ‚Ñ‹Ñ… ÑÑÑ‹Ð»Ð¾Ðº
             $isIgnore = S2uRedirects404IgnoreDB::GetList(array(
                 'SITE_ID' => SITE_ID,
                 'ACTIVE' => 'Y', 

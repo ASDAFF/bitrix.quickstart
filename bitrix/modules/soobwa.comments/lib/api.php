@@ -7,9 +7,9 @@ use \Soobwa\Comments\CommentsTable;
 class Api
 {
     /*
-     * Добовление элемента
+     * Р”РѕР±РѕРІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
      *
-     * @arParams - принимает массив с параметрами комментария
+     * @arParams - РїСЂРёРЅРёРјР°РµС‚ РјР°СЃСЃРёРІ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё РєРѕРјРјРµРЅС‚Р°СЂРёСЏ
      *
      * @return
      * */
@@ -24,14 +24,14 @@ class Api
         }
     }
     /*
-     * Колличество элементов в таблице
+     * РљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ С‚Р°Р±Р»РёС†Рµ
      *
-     * @param array $filter - параметры фильтра
-     * @param array $order - параметры сортировки
-     * @param array $limit - лимит
-     * @param array $offset - смещение
+     * @param array $filter - РїР°СЂР°РјРµС‚СЂС‹ С„РёР»СЊС‚СЂР°
+     * @param array $order - РїР°СЂР°РјРµС‚СЂС‹ СЃРѕСЂС‚РёСЂРѕРІРєРё
+     * @param array $limit - Р»РёРјРёС‚
+     * @param array $offset - СЃРјРµС‰РµРЅРёРµ
      *
-     * @return int - колличество строк в выборке
+     * @return int - РєРѕР»Р»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РІ РІС‹Р±РѕСЂРєРµ
      * */
     public static function getCount($filter = array(), $order = array('ID'=>'ASC'), $limit = 0, $offset = 0){
         $arList = array();
@@ -52,10 +52,10 @@ class Api
         return count($arList);
     }
     /*
-     * Обновление элемента
+     * РћР±РЅРѕРІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
      *
-     * @param int $id - id сообщения
-     * @param array $arParams - массив с тем что нужно изменить
+     * @param int $id - id СЃРѕРѕР±С‰РµРЅРёСЏ
+     * @param array $arParams - РјР°СЃСЃРёРІ СЃ С‚РµРј С‡С‚Рѕ РЅСѓР¶РЅРѕ РёР·РјРµРЅРёС‚СЊ
      *
      * @return
      * */
@@ -65,9 +65,9 @@ class Api
         return $result;
     }
     /*
-     * Удаление элемента
+     * РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
      *
-     * @param int $arParams - id записи которую нужно удалить
+     * @param int $arParams - id Р·Р°РїРёСЃРё РєРѕС‚РѕСЂСѓСЋ РЅСѓР¶РЅРѕ СѓРґР°Р»РёС‚СЊ
      *
      * */
     public static function delElement($arParams){
@@ -75,15 +75,15 @@ class Api
         return  $result;
     }
     /*
-     * Возврашает список элементов в таблице
+     * Р’РѕР·РІСЂР°С€Р°РµС‚ СЃРїРёСЃРѕРє СЌР»РµРјРµРЅС‚РѕРІ РІ С‚Р°Р±Р»РёС†Рµ
      *
-     * @param array $filter - параметры фильтра
-     * @param array $order - параметры сортировки
-     * @param array $limit - лимит
-     * @param array $offset - смещение
+     * @param array $filter - РїР°СЂР°РјРµС‚СЂС‹ С„РёР»СЊС‚СЂР°
+     * @param array $order - РїР°СЂР°РјРµС‚СЂС‹ СЃРѕСЂС‚РёСЂРѕРІРєРё
+     * @param array $limit - Р»РёРјРёС‚
+     * @param array $offset - СЃРјРµС‰РµРЅРёРµ
      *
      *
-     * @return array() - выборка
+     * @return array() - РІС‹Р±РѕСЂРєР°
      * */
     public static function getList($select = array(), $filter = array(), $order = array('ID'=>'ASC'), $limit = 0, $offset = 0){
         $result = CommentsTable::getList(
@@ -99,10 +99,10 @@ class Api
     }
 
     /*
-     * Изменить статус удаленно для сообщения
+     * РР·РјРµРЅРёС‚СЊ СЃС‚Р°С‚СѓСЃ СѓРґР°Р»РµРЅРЅРѕ РґР»СЏ СЃРѕРѕР±С‰РµРЅРёСЏ
      *
-     * @param int $id - ид комментария
-     * @param bool $valParams - параметры (true/false)
+     * @param int $id - РёРґ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ
+     * @param bool $valParams - РїР°СЂР°РјРµС‚СЂС‹ (true/false)
      *
      * @return array()
      * */
@@ -116,9 +116,9 @@ class Api
     }
 
     /*
-     * Изменить статус активности для сообщения
-     * @param int $id - ид комментария
-     * @param bool $valParams - параметры (true/false)
+     * РР·РјРµРЅРёС‚СЊ СЃС‚Р°С‚СѓСЃ Р°РєС‚РёРІРЅРѕСЃС‚Рё РґР»СЏ СЃРѕРѕР±С‰РµРЅРёСЏ
+     * @param int $id - РёРґ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ
+     * @param bool $valParams - РїР°СЂР°РјРµС‚СЂС‹ (true/false)
      *
      * @return array()
      * */

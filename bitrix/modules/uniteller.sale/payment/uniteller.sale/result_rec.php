@@ -1,7 +1,7 @@
 <?php
 /**
- * Вызывается из публичной части электронного магазина при запросе на URL: http://домен_магазина/personal/ordercheck/result_rec.php
- * Обрабатывает этот запрос: если из платёжной системы пришли данные о смене статуса платежа, то меняет статус соответствующего заказа.
+ * Р’С‹Р·С‹РІР°РµС‚СЃСЏ РёР· РїСѓР±Р»РёС‡РЅРѕР№ С‡Р°СЃС‚Рё СЌР»РµРєС‚СЂРѕРЅРЅРѕРіРѕ РјР°РіР°Р·РёРЅР° РїСЂРё Р·Р°РїСЂРѕСЃРµ РЅР° URL: http://РґРѕРјРµРЅ_РјР°РіР°Р·РёРЅР°/personal/ordercheck/result_rec.php
+ * РћР±СЂР°Р±Р°С‚С‹РІР°РµС‚ СЌС‚РѕС‚ Р·Р°РїСЂРѕСЃ: РµСЃР»Рё РёР· РїР»Р°С‚С‘Р¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ РїСЂРёС€Р»Рё РґР°РЅРЅС‹Рµ Рѕ СЃРјРµРЅРµ СЃС‚Р°С‚СѓСЃР° РїР»Р°С‚РµР¶Р°, С‚Рѕ РјРµРЅСЏРµС‚ СЃС‚Р°С‚СѓСЃ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРіРѕ Р·Р°РєР°Р·Р°.
  *
  * @author r.smoliarenko
  * @author r.sarazhyn
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Order_ID']) && isset($
 		include(dirname(__FILE__) . '/tools.php');
 	}
 
-	// Получает данные для смены статуса.
+	// РџРѕР»СѓС‡Р°РµС‚ РґР°РЅРЅС‹Рµ РґР»СЏ СЃРјРµРЅС‹ СЃС‚Р°С‚СѓСЃР°.
 	$order_real_id = (int)$_POST['Order_ID'];
 	$status = trim($_POST['Status']);
 	$signature = trim($_POST['Signature']);
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Order_ID']) && isset($
 	if ($arOrder = CSaleOrder::GetByID($order_real_id)) {
 		CSalePaySystemAction::InitParamArrays($arOrder, $arOrder['ID']);
 
-		// Определяет ID обработчика платёжной системы Uniteller
+		// РћРїСЂРµРґРµР»СЏРµС‚ ID РѕР±СЂР°Р±РѕС‚С‡РёРєР° РїР»Р°С‚С‘Р¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ Uniteller
 		$uniteller_payment_id = -1;
 		$dbPaySystem = CSalePaySystem::GetList();
 		while ($arPaySystem = $dbPaySystem->Fetch()) {
@@ -37,37 +37,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['Order_ID']) && isset($
 		ps_uniteller::setMerchantData($order_real_id);
 		$sign = strtoupper(md5($order_real_id . $status . ps_uniteller::$Password));
 
-		// Сигнатура совпадает с данными заказа и заказ принадлежит платежной системе Uniteller.
+		// РЎРёРіРЅР°С‚СѓСЂР° СЃРѕРІРїР°РґР°РµС‚ СЃ РґР°РЅРЅС‹РјРё Р·Р°РєР°Р·Р° Рё Р·Р°РєР°Р· РїСЂРёРЅР°РґР»РµР¶РёС‚ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјРµ Uniteller.
 		if ($sign === $signature && $order_payment_id === $uniteller_payment_id) {
 			$status = strtolower($status);
 			$statusCode = ps_uniteller::getStatusCode($order_real_id);
 
-			// Заказ в состоянии 'до блокировки средств'.
+			// Р—Р°РєР°Р· РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'РґРѕ Р±Р»РѕРєРёСЂРѕРІРєРё СЃСЂРµРґСЃС‚РІ'.
 			if ($statusCode === 'O') {
 				ps_uniteller::setStatusCode($order_real_id, $status);
 			}
-			// Заказ в состоянии 'блокировка средств', а платёж - нет.
+			// Р—Р°РєР°Р· РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'Р±Р»РѕРєРёСЂРѕРІРєР° СЃСЂРµРґСЃС‚РІ', Р° РїР»Р°С‚С‘Р¶ - РЅРµС‚.
 			if ($statusCode === 'A'
 				&& ($status === 'paid' || $status === 'canceled')
 			) {
 				ps_uniteller::setStatusCode($order_real_id, $status);
 			}
-			// Заказ в состоянии 'средства сняты', а платёж - нет.
+			// Р—Р°РєР°Р· РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'СЃСЂРµРґСЃС‚РІР° СЃРЅСЏС‚С‹', Р° РїР»Р°С‚С‘Р¶ - РЅРµС‚.
 			if ($statusCode === 'P'
 				&& ($status === 'authorized' || $status === 'canceled')
 			) {
 				ps_uniteller::setStatusCode($order_real_id, $status);
 			}
-			// Заказ в состоянии 'средства возвращены', а платёж в состоянии 'средства заблокированны' или 'средства сняты'.
+			// Р—Р°РєР°Р· РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'СЃСЂРµРґСЃС‚РІР° РІРѕР·РІСЂР°С‰РµРЅС‹', Р° РїР»Р°С‚С‘Р¶ РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'СЃСЂРµРґСЃС‚РІР° Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅРЅС‹' РёР»Рё 'СЃСЂРµРґСЃС‚РІР° СЃРЅСЏС‚С‹'.
 			if ($statusCode === 'C'
 				&& ($status === 'authorized' || $status === 'paid')
 			) {
 				if (!ps_uniteller::setUnitellerCancel($order_real_id)) {
-					// Если отменить платёж не удалось, то меняем статус заказа.
+					// Р•СЃР»Рё РѕС‚РјРµРЅРёС‚СЊ РїР»Р°С‚С‘Р¶ РЅРµ СѓРґР°Р»РѕСЃСЊ, С‚Рѕ РјРµРЅСЏРµРј СЃС‚Р°С‚СѓСЃ Р·Р°РєР°Р·Р°.
 					ps_uniteller::setStatusCode($order_real_id, $status);
 				}
 			}
-			// Заказ в состоянии 'неизвестно'.
+			// Р—Р°РєР°Р· РІ СЃРѕСЃС‚РѕСЏРЅРёРё 'РЅРµРёР·РІРµСЃС‚РЅРѕ'.
 			if ($statusCode === 'W') {
 				ps_uniteller::setStatusCode($order_real_id, $status);
 			}

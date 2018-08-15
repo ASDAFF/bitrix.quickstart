@@ -9,7 +9,7 @@ Loc::loadMessages(__FILE__);
 
 if(!CModule::IncludeModule("soobwa.comments")){
     /*
-    * Ñîîáùåíèå ïðè îòñóòñòâèè ìîäóëÿ
+    * Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
     * */
     CAdminMessage::ShowMessage(array(
         "MESSAGE"   =>  Loc::getMessage('SOOBWA_COMMENTS_ADMIN_LIST_ERROR_MODULE'),
@@ -18,7 +18,7 @@ if(!CModule::IncludeModule("soobwa.comments")){
     die();
 }
 /*
- * Îáðàáîòêà ñîáûòèé
+ * ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹
  * */
 if(!empty($_REQUEST['event']) and !empty($_REQUEST['id_message'])){
     switch ($_REQUEST['event']){
@@ -34,13 +34,13 @@ if(!empty($_REQUEST['event']) and !empty($_REQUEST['id_message'])){
     }
 
     /*
-     * Ïîñëå âûïîëíåíèÿ âîçâðàøàåì ïîëüçîâàòåëÿ îáðàòíî
+     * ÐŸÐ¾ÑÐ»Ðµ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð²Ð¾Ð·Ð²Ñ€Ð°ÑˆÐ°ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾
      * */
     LocalRedirect('soobwa_comments_list.php?lang='.LANGUAGE_ID.'&id_group='.htmlspecialchars($_REQUEST['id_group']));
 }
 
 /*
- * Ìàññèâ ñ ìåíþ
+ * ÐœÐ°ÑÑÐ¸Ð² Ñ Ð¼ÐµÐ½ÑŽ
  * */
 $aContext = array();
 if(!empty($_REQUEST['id_group'])) {
@@ -53,24 +53,24 @@ if(!empty($_REQUEST['id_group'])) {
 }
 
 /*
- * Ïîêàçûâàåì ìåíþ
+ * ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð¼ÐµÐ½ÑŽ
  * */
 $oMenu = new CAdminContextMenu($aContext);
 $oMenu->Show();
  
 /*
- * ðàçäåëÿåì âûâîä åñëè âûáðàíà ãðóïïà
+ * Ñ€Ð°Ð·Ð´ÐµÐ»ÑÐµÐ¼ Ð²Ñ‹Ð²Ð¾Ð´ ÐµÑÐ»Ð¸ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð° Ð³Ñ€ÑƒÐ¿Ð¿Ð°
  * */
 if(empty($_REQUEST['id_group'])){
 
     /*
-     * Ñîáèðàåì âñå ãðóïïû è ïîêàçûâàåì â ñïèñêå
+     * Ð¡Ð¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð²ÑÐµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¸ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð² ÑÐ¿Ð¸ÑÐºÐµ
      * */
     $sTableID = "groups_list";
     $lAdmin = new CAdminList($sTableID);
 
     /*
-     * Äîáîâëÿåì çàãîëîâêè
+     * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¸
      * */
     $lAdmin->AddHeaders(array(
         array(
@@ -94,7 +94,7 @@ if(empty($_REQUEST['id_group'])){
     ));
 
     /*
-     * Ïîëó÷àåì ãðóïïû è êîëëè÷åñòâî êîììåíòàðèåâ â íèõ
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¸ ÐºÐ¾Ð»Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ² Ð² Ð½Ð¸Ñ…
      * */
     $arGroups = array();
 
@@ -102,7 +102,7 @@ if(empty($_REQUEST['id_group'])){
     while ($res = $result->fetch()) {
 
         /*
-         * Ïîëó÷àåì êîëëè÷åñòâî êîììåíòàðèåâ
+         * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÐºÐ¾Ð»Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²
          * */
         if(empty($arGroups[$res['ID_CHAT']])){
             $countMessage = 1;
@@ -111,7 +111,7 @@ if(empty($_REQUEST['id_group'])){
         }
 
         /*
-         * Ïîëó÷àåì êîëè÷åñòâî íå îòìîäåðèðîâàííûõ êîììåíòàðèåâ
+         * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½Ðµ Ð¾Ñ‚Ð¼Ð¾Ð´ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²
          * */
         if(empty($arGroups[$res['ID_CHAT']])){
             if($res['ACTIVE'] != '1'){
@@ -126,7 +126,7 @@ if(empty($_REQUEST['id_group'])){
         }
 
         /*
-         * Ñîáèðàåì ìàññèâ
+         * Ð¡Ð¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð¼Ð°ÑÑÐ¸Ð²
          * */
         $arGroups[$res['ID_CHAT']] = array(
             'ID' => $res['ID_CHAT'],
@@ -136,14 +136,14 @@ if(empty($_REQUEST['id_group'])){
     }
 
     /*
-     * Ôîðìèðóåì ñòðîêè òàáëèöû
+     * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹
      * */
     foreach ($arGroups as $keyGroup => $arGroup) {
 
         $row =& $lAdmin->AddRow($keyGroup);
 
         /*
-         * Äîáîâëÿåì ñàì òåêñò
+         * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ ÑÐ°Ð¼ Ñ‚ÐµÐºÑÑ‚
          * */
         foreach ($arGroup as $keyField => $valField){
             if($keyField == 'ID'){
@@ -154,7 +154,7 @@ if(empty($_REQUEST['id_group'])){
         }
 
         /*
-         * Äîáîâëÿåì êîíòåêñòíîå ìåíþ
+         * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚Ð½Ð¾Ðµ Ð¼ÐµÐ½ÑŽ
          * */
         $arActions = Array();
 
@@ -169,19 +169,19 @@ if(empty($_REQUEST['id_group'])){
     }
 
     /*
-     * Âûâîäèì ãðóïïû
+     * Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹
      * */
     $lAdmin->Display();
 }else{
 
     /*
-     * Ñîáèðàåì âñå ãðóïïû è ïîêàçûâàåì â ñïèñêå
+     * Ð¡Ð¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð²ÑÐµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¸ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð² ÑÐ¿Ð¸ÑÐºÐµ
      * */
     $sTableID = "groups_list";
     $lAdmin = new CAdminList($sTableID);
 
     /*
-     * Äîáîâëÿåì çàãîëîâêè
+     * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²ÐºÐ¸
      * */
     $lAdmin->AddHeaders(array(
         array(
@@ -225,7 +225,7 @@ if(empty($_REQUEST['id_group'])){
     ));
 
     /*
-     * Ïîëó÷àåì ñîîáùåíèÿ ãðóïïû
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹
      * */
     $arMessages = array();
 
@@ -240,14 +240,14 @@ if(empty($_REQUEST['id_group'])){
     }
 
     /*
-     * Ôîðìèðóåì ñòðîêè òàáëèöû
+     * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹
      * */
     foreach ($arMessages as $keyMessage => $arMessage) {
 
         $row =& $lAdmin->AddRow($keyGMessage);
 
         /*
-         * Äîáîâëÿåì ñàì òåêñò
+         * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ ÑÐ°Ð¼ Ñ‚ÐµÐºÑÑ‚
          * */
         foreach ($arMessage as $keyField => $valField){
 
@@ -266,7 +266,7 @@ if(empty($_REQUEST['id_group'])){
                     break;
                 case 'ID_USER':
                     /*
-                     * Ïîëó÷àåì äàííûå ïîëüçîâàòåë
+                     * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»
                      * */
                     if($valField == 0){
                         $html = Loc::getMessage('SOOBWA_COMMENTS_ADMIN_LIST_MASSAGE_USER_NO_AUTH');
@@ -293,7 +293,7 @@ if(empty($_REQUEST['id_group'])){
         }
 
         /*
-         * Äîáîâëÿåì êîíòåêñòíîå ìåíþ
+         * Ð”Ð¾Ð±Ð¾Ð²Ð»ÑÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÐµÐºÑÑ‚Ð½Ð¾Ðµ Ð¼ÐµÐ½ÑŽ
          * */
         $arActions = Array();
 
@@ -324,7 +324,7 @@ if(empty($_REQUEST['id_group'])){
     }
 
     /*
-     * Âûâîäèì ñîîáùåíèÿ
+     * Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ
      * */
     $lAdmin->Display();
 }

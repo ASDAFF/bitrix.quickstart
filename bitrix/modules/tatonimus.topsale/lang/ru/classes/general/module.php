@@ -1,5 +1,5 @@
 <?
-$MESS['TTSML_EMPTY_ID'] = "Пустое значение ID";
-$MESS['TTSML_EMPTY_FIELDS'] = "Нет значений для обновления";
-$MESS['TTSML_EMPTY_REQUIRED_FIELDS'] = "Незаполнены обязательные поля: ";
+$MESS['TTSML_EMPTY_ID'] = "РџСѓСЃС‚РѕРµ Р·РЅР°С‡РµРЅРёРµ ID";
+$MESS['TTSML_EMPTY_FIELDS'] = "РќРµС‚ Р·РЅР°С‡РµРЅРёР№ РґР»СЏ РѕР±РЅРѕРІР»РµРЅРёСЏ";
+$MESS['TTSML_EMPTY_REQUIRED_FIELDS'] = "РќРµР·Р°РїРѕР»РЅРµРЅС‹ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ: ";
 ?>

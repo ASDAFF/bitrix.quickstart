@@ -1,4 +1,4 @@
-<?
+﻿<?
 IncludeModuleLangFile(__FILE__);
 class CAutoSchool
 {

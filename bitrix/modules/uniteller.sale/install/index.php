@@ -1,63 +1,63 @@
 <?php
 /**
- * Обязательный файл с описанием модуля, содержащий инсталлятор/деинсталлятор модуля.
+ * РћР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ С„Р°Р№Р» СЃ РѕРїРёСЃР°РЅРёРµРј РјРѕРґСѓР»СЏ, СЃРѕРґРµСЂР¶Р°С‰РёР№ РёРЅСЃС‚Р°Р»Р»СЏС‚РѕСЂ/РґРµРёРЅСЃС‚Р°Р»Р»СЏС‚РѕСЂ РјРѕРґСѓР»СЏ.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // пролог модуля
+require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/prolog.php'); // РїСЂРѕР»РѕРі РјРѕРґСѓР»СЏ
 
 /**
- * Класс для инсталляции и деинсталляции модуля uniteller.sale.
+ * РљР»Р°СЃСЃ РґР»СЏ РёРЅСЃС‚Р°Р»Р»СЏС†РёРё Рё РґРµРёРЅСЃС‚Р°Р»Р»СЏС†РёРё РјРѕРґСѓР»СЏ uniteller.sale.
  * @author r.smoliarenko
  * @author r.sarazhyn
  *
  */
 class uniteller_sale extends CModule {
-	// Обязательные свойства.
+	// РћР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ СЃРІРѕР№СЃС‚РІР°.
 	/**
-	 * Имя партнера - автора модуля.
+	 * РРјСЏ РїР°СЂС‚РЅРµСЂР° - Р°РІС‚РѕСЂР° РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $PARTNER_NAME;
 	/**
-	 * URL партнера - автора модуля.
+	 * URL РїР°СЂС‚РЅРµСЂР° - Р°РІС‚РѕСЂР° РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $PARTNER_URI;
 	/**
-	 * Версия модуля.
+	 * Р’РµСЂСЃРёСЏ РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $MODULE_VERSION;
 	/**
-	 * Дата и время создания модуля.
+	 * Р”Р°С‚Р° Рё РІСЂРµРјСЏ СЃРѕР·РґР°РЅРёСЏ РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $MODULE_VERSION_DATE;
 	/**
-	 * Имя модуля.
+	 * РРјСЏ РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $MODULE_NAME;
 	/**
-	 * Описание модуля.
+	 * РћРїРёСЃР°РЅРёРµ РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $MODULE_DESCRIPTION;
 	/**
-	 * Массив с путями для инсталляции модуля.
+	 * РњР°СЃСЃРёРІ СЃ РїСѓС‚СЏРјРё РґР»СЏ РёРЅСЃС‚Р°Р»Р»СЏС†РёРё РјРѕРґСѓР»СЏ.
 	 * @var array
 	 */
 	var $aPaths;
 	/**
-	 * ID модуля.
+	 * ID РјРѕРґСѓР»СЏ.
 	 * @var string
 	 */
 	var $MODULE_ID = 'uniteller.sale';
 
 	/**
-	 * Конструктор класса. Задаёт начальные значения свойствам.
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°. Р—Р°РґР°С‘С‚ РЅР°С‡Р°Р»СЊРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ СЃРІРѕР№СЃС‚РІР°Рј.
 	 */
 	function uniteller_sale() {
 		$this->PARTNER_NAME = 'Uniteller';
@@ -88,7 +88,7 @@ class uniteller_sale extends CModule {
 	}
 
 	/**
-	 * Устанавливает модуль.
+	 * РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РјРѕРґСѓР»СЊ.
 	 */
 	function DoInstall() {
 		global $APPLICATION, $DB;
@@ -96,26 +96,26 @@ class uniteller_sale extends CModule {
 		$GLOBALS['errors'] = false;
 		$this->errors = false;
 
-		// Создаёт таблицу в БД.
+		// РЎРѕР·РґР°С‘С‚ С‚Р°Р±Р»РёС†Сѓ РІ Р‘Р”.
 		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/install/db/mysql/install.sql');
 
-		// Копирует нужные файлы в нужные места.
+		// РљРѕРїРёСЂСѓРµС‚ РЅСѓР¶РЅС‹Рµ С„Р°Р№Р»С‹ РІ РЅСѓР¶РЅС‹Рµ РјРµСЃС‚Р°.
 		if (!CModule::IncludeModule($this->MODULE_ID)) {
 			$this->InstallFiles();
 			RegisterModule($this->MODULE_ID);
 
-			// Создаёт агента
+			// РЎРѕР·РґР°С‘С‚ Р°РіРµРЅС‚Р°
 			CAgent::AddAgent('CUnitellerAgent::UnitellerAgent();', $this->MODULE_ID, 'Y', 60, '', 'Y', '', 0);
 		}
 
 		$GLOBALS['errors'] = $this->errors;
 
-		// Показывает страницу с результатом установки модуля.
+		// РџРѕРєР°Р·С‹РІР°РµС‚ СЃС‚СЂР°РЅРёС†Сѓ СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј СѓСЃС‚Р°РЅРѕРІРєРё РјРѕРґСѓР»СЏ.
 		$APPLICATION->IncludeAdminFile(GetMessage('UNITELLER.SALE_INSTALL_TITLE'), $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/install/step_ok.php');
 	}
 
 	/**
-	 * Удаляет модуль.
+	 * РЈРґР°Р»СЏРµС‚ РјРѕРґСѓР»СЊ.
 	 */
 	function DoUninstall() {
 		global $APPLICATION, $uninstall;
@@ -123,22 +123,22 @@ class uniteller_sale extends CModule {
 		if (isset($uninstall) && $uninstall == 'Y' && CModule::IncludeModule($this->MODULE_ID)) {
 			$this->UnInstallFiles();
 
-			// Удаляет агента
+			// РЈРґР°Р»СЏРµС‚ Р°РіРµРЅС‚Р°
 			CAgent::RemoveAgent('CUnitellerAgent::UnitellerAgent();', $this->MODULE_ID);
 			UnRegisterModule($this->MODULE_ID);
 
-			// Удаляет таблицу из БД, если пользователь решил удалить её.
+			// РЈРґР°Р»СЏРµС‚ С‚Р°Р±Р»РёС†Сѓ РёР· Р‘Р”, РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЂРµС€РёР» СѓРґР°Р»РёС‚СЊ РµС‘.
 			$this->UnInstallDB(array(
 				'savedata' => $_REQUEST['savedata'],
 			));
 		} else {
-			// Показывает страницу с настройками удаления модуля.
+			// РџРѕРєР°Р·С‹РІР°РµС‚ СЃС‚СЂР°РЅРёС†Сѓ СЃ РЅР°СЃС‚СЂРѕР№РєР°РјРё СѓРґР°Р»РµРЅРёСЏ РјРѕРґСѓР»СЏ.
 			$APPLICATION->IncludeAdminFile(GetMessage('UNITELLER.SALE_INSTALL_TITLE'), $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/uniteller.sale/install/unstep_ok.php');
 		}
 	}
 
 	/**
-	 * Копирует файлы модуля в нужные места.
+	 * РљРѕРїРёСЂСѓРµС‚ С„Р°Р№Р»С‹ РјРѕРґСѓР»СЏ РІ РЅСѓР¶РЅС‹Рµ РјРµСЃС‚Р°.
 	 * @return boolean
 	 */
 	function InstallFiles() {
@@ -168,7 +168,7 @@ class uniteller_sale extends CModule {
 	}
 
 	/**
-	 * Удаляет файлы модуля отовсюду.
+	 * РЈРґР°Р»СЏРµС‚ С„Р°Р№Р»С‹ РјРѕРґСѓР»СЏ РѕС‚РѕРІСЃСЋРґСѓ.
 	 * @return boolean
 	 */
 	function UnInstallFiles() {
@@ -198,7 +198,7 @@ class uniteller_sale extends CModule {
 	}
 
 	/**
-	 * Удаляет таблицу из БД.
+	 * РЈРґР°Р»СЏРµС‚ С‚Р°Р±Р»РёС†Сѓ РёР· Р‘Р”.
 	 * @return boolean
 	 */
 	function UnInstallDB($arParams = Array()) {

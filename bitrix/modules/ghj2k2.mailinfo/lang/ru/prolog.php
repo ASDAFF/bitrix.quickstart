@@ -1,4 +1,4 @@
 <?
-$MESS['MAIL_INFO_OPTIONS'] = 'Почтовые события';
-$MESS['MAIL_INFO_ICON_TITLE'] = 'Почтовые события';
+$MESS['MAIL_INFO_OPTIONS'] = 'РџРѕС‡С‚РѕРІС‹Рµ СЃРѕР±С‹С‚РёСЏ';
+$MESS['MAIL_INFO_ICON_TITLE'] = 'РџРѕС‡С‚РѕРІС‹Рµ СЃРѕР±С‹С‚РёСЏ';
 ?>

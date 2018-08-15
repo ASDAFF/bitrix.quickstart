@@ -3,16 +3,16 @@ wwww.tigir.com - 06.07.2006
 
 Source: http://www.tigir.com/js/opacity.js
 
-Библиотека opacity.js к статье "CSS прозрачность (css opacity, javascript opacity)" - http://www.tigir.com/opacity.htm
+Р‘РёР±Р»РёРѕС‚РµРєР° opacity.js Рє СЃС‚Р°С‚СЊРµ "CSS РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ (css opacity, javascript opacity)" - http://www.tigir.com/opacity.htm
 
-setElementOpacity - установка прозрачности
-getOpacityProperty - проверка, есть ли возможность менять прозрачность
-fadeOpacity - плавное изменение прозрачности
+setElementOpacity - СѓСЃС‚Р°РЅРѕРІРєР° РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
+getOpacityProperty - РїСЂРѕРІРµСЂРєР°, РµСЃС‚СЊ Р»Рё РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РјРµРЅСЏС‚СЊ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ
+fadeOpacity - РїР»Р°РІРЅРѕРµ РёР·РјРµРЅРµРЅРёРµ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
 */
 
-/* Функция кроссбраузерной установки прозрачности
+/* Р¤СѓРЅРєС†РёСЏ РєСЂРѕСЃСЃР±СЂР°СѓР·РµСЂРЅРѕР№ СѓСЃС‚Р°РЅРѕРІРєРё РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
 
-Пример: setElementOpacity(document.body, 0.5); //сделать документ прозрачным на половину
+РџСЂРёРјРµСЂ: setElementOpacity(document.body, 0.5); //СЃРґРµР»Р°С‚СЊ РґРѕРєСѓРјРµРЅС‚ РїСЂРѕР·СЂР°С‡РЅС‹Рј РЅР° РїРѕР»РѕРІРёРЅСѓ
 */
 function setElementOpacity(oElem, nOpacity)
 {
@@ -20,7 +20,7 @@ function setElementOpacity(oElem, nOpacity)
 	(setElementOpacity = p=="filter"?new Function('oElem', 'nOpacity', 'nOpacity *= 100;	var oAlpha = oElem.filters["DXImageTransform.Microsoft.alpha"] || oElem.filters.alpha;	if (oAlpha) oAlpha.opacity = nOpacity; else oElem.style.filter += "progid:DXImageTransform.Microsoft.Alpha(opacity="+nOpacity+")";'):p?new Function('oElem', 'nOpacity', 'oElem.style.'+p+' = nOpacity;'):new Function)(oElem, nOpacity);
 }
 
-// Функция getOpacityProperty() возвращает свойство которое используется для смены прозрачности или undefined, и может использоваться для проверки возможности изменения прозрачности
+// Р¤СѓРЅРєС†РёСЏ getOpacityProperty() РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРІРѕР№СЃС‚РІРѕ РєРѕС‚РѕСЂРѕРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ СЃРјРµРЅС‹ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё РёР»Рё undefined, Рё РјРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РґР»СЏ РїСЂРѕРІРµСЂРєРё РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РёР·РјРµРЅРµРЅРёСЏ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
 function getOpacityProperty()
 {
 	var p;
@@ -32,11 +32,11 @@ function getOpacityProperty()
 	return (getOpacityProperty = new Function("return '"+p+"';"))();
 }
 
-/* Функции для плавного изменения прозрачности:
+/* Р¤СѓРЅРєС†РёРё РґР»СЏ РїР»Р°РІРЅРѕРіРѕ РёР·РјРµРЅРµРЅРёСЏ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё:
 
-1) fadeOpacity.addRule('opacityRule1', 1, 0.5, 30); //вначале создаем правило, задаем имя правила, начальную прозрачность и конечную, необязательный параметр задержки, влийяющий на скорость смены прозрачности
-2) fadeOpacity('elemID', 'opacityRule1'); // выполнить плавную смену прозрачности элемента с id равным elemID, по правилу opacityRule1
-3) fadeOpacity.back('elemID'); //вернуться в исходное сотояние прозрачности
+1) fadeOpacity.addRule('opacityRule1', 1, 0.5, 30); //РІРЅР°С‡Р°Р»Рµ СЃРѕР·РґР°РµРј РїСЂР°РІРёР»Рѕ, Р·Р°РґР°РµРј РёРјСЏ РїСЂР°РІРёР»Р°, РЅР°С‡Р°Р»СЊРЅСѓСЋ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ Рё РєРѕРЅРµС‡РЅСѓСЋ, РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ Р·Р°РґРµСЂР¶РєРё, РІР»РёР№СЏСЋС‰РёР№ РЅР° СЃРєРѕСЂРѕСЃС‚СЊ СЃРјРµРЅС‹ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
+2) fadeOpacity('elemID', 'opacityRule1'); // РІС‹РїРѕР»РЅРёС‚СЊ РїР»Р°РІРЅСѓСЋ СЃРјРµРЅСѓ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё СЌР»РµРјРµРЅС‚Р° СЃ id СЂР°РІРЅС‹Рј elemID, РїРѕ РїСЂР°РІРёР»Сѓ opacityRule1
+3) fadeOpacity.back('elemID'); //РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РёСЃС…РѕРґРЅРѕРµ СЃРѕС‚РѕСЏРЅРёРµ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚Рё
 */
 function fadeOpacity(sElemId, sRuleName, bBackward)
 {

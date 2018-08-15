@@ -1,4 +1,4 @@
 <?
-$MESS["DEFAULT_ELEMENT_ADD"] = "Äîáàâèòü ýëåìåíò";
-$MESS["DEFAULT_SECTION_ADD"] = "Äîáàâèòü ðàçäåë";
+$MESS["DEFAULT_ELEMENT_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚";
+$MESS["DEFAULT_SECTION_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»";
 ?>

@@ -1,26 +1,26 @@
 <?
-$MESS ['MURL_USL'] = "Óñëîâèå";
-$MESS ['MURL_FILE'] = "Ôàéë";
-$MESS ['MURL_RULE'] = "Ïðàâèëî";
+$MESS ['MURL_USL'] = "Ð£ÑÐ»Ð¾Ð²Ð¸Ðµ";
+$MESS ['MURL_FILE'] = "Ð¤Ð°Ð¹Ð»";
+$MESS ['MURL_RULE'] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð¾";
 $MESS ['MURL_OLD_LINK'] = "URL";
-$MESS ['MURL_EDIT'] = "Èçìåíèòü";
-$MESS ['MURL_DELETE'] = "Óäàëèòü";
-$MESS ['MURL_DELETE_CONF'] = "Âû óâåðåíû, ÷òî õîòèòå óäàëèòü ýòó çàïèñü?";
-$MESS ['MURL_NEW'] = "Äîáàâèòü áèòóþ ñûëêó â èãíîð";
-$MESS ['MURL_NEW_TITLE'] = "Äîáàâëåíèå íîâîãî ïðàâèëà";
-$MESS ['MURL_TITLE'] = "Áèòûå ññûëêè (èãíîðëèñò)";
-$MESS ['MURL_FILTER_PATH'] = "Ïóòü";
-$MESS ['MURL_FILTER_SITE'] = "Ñàéò";
-$MESS ['SAA_NAV'] = "Ïðàâèëà";
+$MESS ['MURL_EDIT'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+$MESS ['MURL_DELETE'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS ['MURL_DELETE_CONF'] = "Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÑ‚Ñƒ Ð·Ð°Ð¿Ð¸ÑÑŒ?";
+$MESS ['MURL_NEW'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð±Ð¸Ñ‚ÑƒÑŽ ÑÑ‹Ð»ÐºÑƒ Ð² Ð¸Ð³Ð½Ð¾Ñ€";
+$MESS ['MURL_NEW_TITLE'] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð³Ð¾ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð°";
+$MESS ['MURL_TITLE'] = "Ð‘Ð¸Ñ‚Ñ‹Ðµ ÑÑÑ‹Ð»ÐºÐ¸ (Ð¸Ð³Ð½Ð¾Ñ€Ð»Ð¸ÑÑ‚)";
+$MESS ['MURL_FILTER_PATH'] = "ÐŸÑƒÑ‚ÑŒ";
+$MESS ['MURL_FILTER_SITE'] = "Ð¡Ð°Ð¹Ñ‚";
+$MESS ['SAA_NAV'] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð°";
 $MESS ['OLD_LINK'] = "URL";
-$MESS ['DATE_TIME_GENERATE'] = "Äàòà èçì";
-$MESS ['ACTIVE'] = "Àêòèâíîñòü";
-$MESS ['COMMENT'] = "Êîììåíòàðèé";
-$MESS ['ACTV'] = "Àêòèâíîñòü";
+$MESS ['DATE_TIME_GENERATE'] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼";
+$MESS ['ACTIVE'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS ['COMMENT'] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS ['ACTV'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
 $MESS ['TABL_OLD_LINK'] = "URL";
-$MESS ['TABLE_ACTIVE'] = "Àêòèâíîñòü";
-$MESS ['ABOUT_IGNORE'] = 'URL, íàõîäÿùèåñÿ â èãíîðëèñòå áèòûõ ññûëîê, íå ôèêñèðóþòñÿ â èñòîðèè ïðè ïåðåõîäå ïî íèì';
+$MESS ['TABLE_ACTIVE'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS ['ABOUT_IGNORE'] = 'URL, Ð½Ð°Ñ…Ð¾Ð´ÑÑ‰Ð¸ÐµÑÑ Ð² Ð¸Ð³Ð½Ð¾Ñ€Ð»Ð¸ÑÑ‚Ðµ Ð±Ð¸Ñ‚Ñ‹Ñ… ÑÑÑ‹Ð»Ð¾Ðº, Ð½Ðµ Ñ„Ð¸ÐºÑÐ¸Ñ€ÑƒÑŽÑ‚ÑÑ Ð² Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ð¸ Ð¿Ñ€Ð¸ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ðµ Ð¿Ð¾ Ð½Ð¸Ð¼';
 
-$MESS ['S2U_Y'] = "Äà";
-$MESS ['S2U_N'] = "Íåò";
+$MESS ['S2U_Y'] = "Ð”Ð°";
+$MESS ['S2U_N'] = "ÐÐµÑ‚";
 ?>

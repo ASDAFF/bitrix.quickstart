@@ -1,6 +1,6 @@
 <?php
-$MESS['S2U_NO_REDIRECTS'] = 'Внимание!';
-$MESS['S2U_NO_REDIRECTS_DESC'] = 'Редиректы деактивированы. Для активации перейдите в <a href="/bitrix/admin/settings.php?mid=step2use.redirects">настройки модуля</a>';
-$MESS['S2U_NO_404'] = 'Внимание!';
-$MESS['S2U_NO_404_DESC'] = 'Отлеживание битых ссылок деактивировано. Для активации перейдите в <a href="/bitrix/admin/settings.php?mid=step2use.redirects">настройки модуля</a>';
+$MESS['S2U_NO_REDIRECTS'] = 'Р’РЅРёРјР°РЅРёРµ!';
+$MESS['S2U_NO_REDIRECTS_DESC'] = 'Р РµРґРёСЂРµРєС‚С‹ РґРµР°РєС‚РёРІРёСЂРѕРІР°РЅС‹. Р”Р»СЏ Р°РєС‚РёРІР°С†РёРё РїРµСЂРµР№РґРёС‚Рµ РІ <a href="/bitrix/admin/settings.php?mid=step2use.redirects">РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ</a>';
+$MESS['S2U_NO_404'] = 'Р’РЅРёРјР°РЅРёРµ!';
+$MESS['S2U_NO_404_DESC'] = 'РћС‚Р»РµР¶РёРІР°РЅРёРµ Р±РёС‚С‹С… СЃСЃС‹Р»РѕРє РґРµР°РєС‚РёРІРёСЂРѕРІР°РЅРѕ. Р”Р»СЏ Р°РєС‚РёРІР°С†РёРё РїРµСЂРµР№РґРёС‚Рµ РІ <a href="/bitrix/admin/settings.php?mid=step2use.redirects">РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ</a>';
 ?>

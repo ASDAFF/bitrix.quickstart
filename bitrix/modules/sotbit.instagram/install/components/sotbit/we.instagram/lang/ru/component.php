@@ -1,3 +1,3 @@
 <?
-$MESS ['CC_INSTAGRAM_NOT_INSTALLED'] = "Модуль \"Мы в Instagram\" не установлен.";
+$MESS ['CC_INSTAGRAM_NOT_INSTALLED'] = "РњРѕРґСѓР»СЊ \"РњС‹ РІ Instagram\" РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ.";
 ?>

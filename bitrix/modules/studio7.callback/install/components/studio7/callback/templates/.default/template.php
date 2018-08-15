@@ -13,7 +13,7 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 ?>
 <?CJSCore::Init(array("jquery"));?>
 
-<!--Заказать звонок-->
+<!--Р—Р°РєР°Р·Р°С‚СЊ Р·РІРѕРЅРѕРє-->
 <div id="form_wrapper_call">
 <pre><?//print_r($_SESSION["CMPT_PARAMS"]);?></pre>
 <div id="fhead">

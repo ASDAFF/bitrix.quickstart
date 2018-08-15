@@ -16,17 +16,17 @@ $all=$CMailinfo->getMailTemplates();
 ksort($all);
 
 $sTableID = "mailinfo_success";
-$oSort = new CAdminSorting($sTableID, "id", "desc");// инициализация сортировки
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$oSort = new CAdminSorting($sTableID, "id", "desc");// РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё
+$lAdmin = new CAdminList($sTableID, $oSort);// РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃРїРёСЃРєР°
 
-//названия всех input'ов фильтра
+//РЅР°Р·РІР°РЅРёСЏ РІСЃРµС… input'РѕРІ С„РёР»СЊС‚СЂР°
 $arFilterFields = Array(
   "filter_period_from",
   "filter_period_to",
   "filter_event_type"
 );
 
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С„РёР»СЊС‚СЂР°
 $filter = new CAdminFilter(
   $sTableID."_filter", 
   array(

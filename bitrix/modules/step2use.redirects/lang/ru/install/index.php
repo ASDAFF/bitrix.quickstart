@@ -1,10 +1,10 @@
 <?
-$MESS ['S2U_REDIRECT_TITLE'] = "Ðåäèðåêò ìàñòåð";
-$MESS ['S2U_REDIRECT_DESC'] = "Ìîäóëü URL ðåäèðåêòîâ. Ïîçâîëÿåò ëåãêî, â âèçóàëüíîì ðåæèìå íàñòðàèâàòü ðåäèðåêòû URL";
-$MESS ['S2U_REDIRECT_DENIED'] = "Äîñòóï çàïðåù¸í";
-$MESS ['S2U_REDIRECT_READ'] = "Ïðîñìîòð";
-$MESS ['S2U_REDIRECT_WRITE'] = "Ïðîñìîòð, êîììåíòèðîâàíèå";
-$MESS ['S2U_REDIRECT_ALBUM_CREATING'] = "Ñîçäàíèå ïðàâèëà ðåäèðåêòà";
-$MESS ['S2U_REDIRECT_FULL'] = "Ïîëíûé äîñòóï";
-$MESS ['S2U_REDIRECT_GO_TO_MODULE'] = "Ïåðåéòè ê ìîäóëþ";
+$MESS ['S2U_REDIRECT_TITLE'] = "Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ð¼Ð°ÑÑ‚ÐµÑ€";
+$MESS ['S2U_REDIRECT_DESC'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ URL Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ð². ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð»ÐµÐ³ÐºÐ¾, Ð² Ð²Ð¸Ð·ÑƒÐ°Ð»ÑŒÐ½Ð¾Ð¼ Ñ€ÐµÐ¶Ð¸Ð¼Ðµ Ð½Ð°ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°Ñ‚ÑŒ Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ñ‹ URL";
+$MESS ['S2U_REDIRECT_DENIED'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰Ñ‘Ð½";
+$MESS ['S2U_REDIRECT_READ'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€";
+$MESS ['S2U_REDIRECT_WRITE'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€, ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['S2U_REDIRECT_ALBUM_CREATING'] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð° Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ð°";
+$MESS ['S2U_REDIRECT_FULL'] = "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿";
+$MESS ['S2U_REDIRECT_GO_TO_MODULE'] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð¼Ð¾Ð´ÑƒÐ»ÑŽ";
 ?>

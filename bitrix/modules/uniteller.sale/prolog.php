@@ -1,6 +1,6 @@
 <?php
 
-// Ïîäêëþ÷àåò ÿçûêîâîé ôàéë.
+// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ ÑÐ·Ñ‹ÐºÐ¾Ð²Ð¾Ð¹ Ñ„Ð°Ð¹Ð».
 global $MESS;
 $strPath2Lang = str_replace('\\', '/', __FILE__);
 $strPath2Lang = substr($strPath2Lang, 0, strlen($strPath2Lang) - strlen('/prolog.php'));

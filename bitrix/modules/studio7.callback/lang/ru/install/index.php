@@ -1,6 +1,6 @@
 <?
-$MESS["studio7.callback_MODULE_NAME"] = "Îòçûâû î òîâàðå ñ ßíäåêñ.Ìàðêåòà";
-$MESS["studio7.callback_MODULE_DESC"] = "Ìîäóëü ïîçâîëÿåò îòîáðàçèòü â êàðòî÷êàõ òîâàðîâ âàøåãî ìàãàçèíà îòçûâû èç ñèñòåìû ßíäåêñ.Ìàðêåò.";
+$MESS["studio7.callback_MODULE_NAME"] = "ÐžÑ‚Ð·Ñ‹Ð²Ñ‹ Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ðµ Ñ Ð¯Ð½Ð´ÐµÐºÑ.ÐœÐ°Ñ€ÐºÐµÑ‚Ð°";
+$MESS["studio7.callback_MODULE_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð·Ð¸Ñ‚ÑŒ Ð² ÐºÐ°Ñ€Ñ‚Ð¾Ñ‡ÐºÐ°Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð²Ð°ÑˆÐµÐ³Ð¾ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾Ñ‚Ð·Ñ‹Ð²Ñ‹ Ð¸Ð· ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð¯Ð½Ð´ÐµÐºÑ.ÐœÐ°Ñ€ÐºÐµÑ‚.";
 $MESS["studio7.callback_PARTNER_NAME"] = "Studio7";
 $MESS["studio7.callback_PARTNER_URI"] = "http://www.smart-d.ru";
 ?>

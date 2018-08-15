@@ -1,5 +1,5 @@
 <?
-$MESS ['GTECH_MODULE_NAME'] = "Ñëàéäåð êàðòèíîê èíôîáëîêà";
-$MESS ['GTECH_MODULE_DESCRIPTION'] = "Ñëàéäåð êàðòèíîê ñ ïðåâüþâ-áàðîì";
-$MESS ['GTECH_PARTNER_NAME'] = "Âåá-ñòóäèÿ G-tech";
+$MESS ['GTECH_MODULE_NAME'] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['GTECH_MODULE_DESCRIPTION'] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº Ñ Ð¿Ñ€ÐµÐ²ÑŒÑŽÐ²-Ð±Ð°Ñ€Ð¾Ð¼";
+$MESS ['GTECH_PARTNER_NAME'] = "Ð’ÐµÐ±-ÑÑ‚ÑƒÐ´Ð¸Ñ G-tech";
 ?>

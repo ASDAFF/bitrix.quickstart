@@ -1,92 +1,92 @@
 <?php
 /**
- * Массив языковых констант.
+ * РњР°СЃСЃРёРІ СЏР·С‹РєРѕРІС‹С… РєРѕРЅСЃС‚Р°РЅС‚.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
 global $MESS;
 
-// Для админки.
+// Р”Р»СЏ Р°РґРјРёРЅРєРё.
 $MESS['SALE_UNITELLER_DESCRIPTION'] = '<a href=\'http://www.uniteller.ru\' target=\'_blank\'>http://www.uniteller.ru</a>';
-$MESS['SALE_UNITELLER_DESC'] = 'Описание платежной системы Uniteller';
-$MESS['SALE_UNITELLER_SHOP_IDP'] = 'Код магазина';
-$MESS['SALE_UNITELLER_SHOP_IDP_DESC'] = 'Код магазина, полученный от Uniteller';
-$MESS['SALE_UNITELLER_SHOP_LOGIN'] = 'Логин';
-$MESS['SALE_UNITELLER_SHOP_LOGIN_DESC'] = 'Логин, полученный от Uniteller';
-$MESS['SALE_UNITELLER_SHOP_PASSWORD'] = 'Пароль';
-$MESS['SALE_UNITELLER_SHOP_PASSWORD_DESC'] = 'Пароль, полученный от Uniteller';
-$MESS['SALE_UNITELLER_SITE_NAME_LAT'] = 'Латинское наименование точки приема, присвоенное Uniteller';
-$MESS['SALE_UNITELLER_LIFE_TIME'] = 'Время жизни формы оплаты в секундах';
-$MESS['SALE_UNITELLER_LIFE_TIME_DESC'] = 'Должно быть целым положительным числом. Если покупатель проведет на форме дольше, чем указанное время, то форма оплаты будет считаться устаревшей, и платеж не будет принят. Покупателю в таком случае будет предложено вернуться на сайт.';
-$MESS['SALE_UNITELLER_TIME_PAID_CHANGE'] = 'Время, в течение которого статус "paid" может быть отменён';
-$MESS['SALE_UNITELLER_TIME_PAID_CHANGE_DESC'] = 'Время считается в днях (по умолчанию 14 дней)';
-$MESS['SALE_UNITELLER_TIME_ORDER_SYNC'] = 'Время, в течение которого будет выполняться синхронизация статусов платежей с заказами';
-$MESS['SALE_UNITELLER_TIME_ORDER_SYNC_DESC'] = 'Время считается в днях (по умолчанию 30 дней)';
-$MESS['SALE_UNITELLER_SUCCESS_URL'] = 'Адрес при успешной оплате (URL_RETURN_OK)';
-$MESS['SALE_UNITELLER_SUCCESS_URL_DESC'] = 'URL страницы, на которую должен вернуться покупатель после успешного осуществления платежа в системе Uniteller (максимум 128 символов)';
-$MESS['SALE_UNITELLER_FAIL_URL'] = 'Адрес при ошибке оплаты (URL_RETURN_NO)';
-$MESS['SALE_UNITELLER_FAIL_URL_DESC'] = 'URL страницы, на которую должен вернуться Покупатель после неуспешного осуществления платежа в системе Uniteller (максимум 128 символов)';
-$MESS['SALE_UNITELLER_TESTMODE'] = 'Тестовый режим';
-$MESS['SALE_UNITELLER_TESTMODE_DESC'] = 'Если пустое значение - магазин будет работать в обычном режиме';
-$MESS['SALE_UNITELLER_ORDER_ID'] = 'Номер заказа';
-$MESS['SALE_UNITELLER_ORDER_ID_DESC'] = 'Номер заказа в Вашем Интернет-магазине';
-$MESS['SALE_UNITELLER_EMAIL'] = 'E-mail покупателя';
-$MESS['SALE_UNITELLER_EMAIL_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_FIRST_NAME'] = 'Имя покупателя';
-$MESS['SALE_UNITELLER_FIRST_NAME_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_MIDDLE_NAME'] = 'Отчество покупателя';
-$MESS['SALE_UNITELLER_MIDDLE_NAME_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_LAST_NAME'] = 'Фамилия покупателя';
-$MESS['SALE_UNITELLER_LAST_NAME_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_ADDRESS'] = 'Адрес покупателя';
-$MESS['SALE_UNITELLER_ADDRESS_DESC'] = 'Максимум 128 символов';
-$MESS['SALE_UNITELLER_PHONE'] = 'Телефон покупателя';
-$MESS['SALE_UNITELLER_PHONE_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_CITY'] = 'Город покупателя';
-$MESS['SALE_UNITELLER_CITY_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_ZIP'] = 'Почтовый индекс';
-$MESS['SALE_UNITELLER_ZIP_DESC'] = 'Максимум 64 символа';
-$MESS['SALE_UNITELLER_LANGUAGE'] = 'Код языка интерфейса платёжной страницы';
-$MESS['SALE_UNITELLER_LANGUAGE_DESC'] = 'Максимум 2 символа. Может быть \'en\' или \'ru\'';
-$MESS['SALE_UNITELLER_COMMENT'] = 'Комментарий к платежу';
-$MESS['SALE_UNITELLER_COMMENT_DESC'] = 'Максимум 255 символов';
-$MESS['SALE_UNITELLER_COUNTRY'] = 'Код страны покупателя (ISO 3166)';
-$MESS['SALE_UNITELLER_COUNTRY_DESC'] = 'Максимум 3 символа';
-$MESS['SALE_UNITELLER_STATE'] = 'Код штата региона';
-$MESS['SALE_UNITELLER_STATE_DESC'] = 'Максимум 3 символа';
+$MESS['SALE_UNITELLER_DESC'] = 'РћРїРёСЃР°РЅРёРµ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹ Uniteller';
+$MESS['SALE_UNITELLER_SHOP_IDP'] = 'РљРѕРґ РјР°РіР°Р·РёРЅР°';
+$MESS['SALE_UNITELLER_SHOP_IDP_DESC'] = 'РљРѕРґ РјР°РіР°Р·РёРЅР°, РїРѕР»СѓС‡РµРЅРЅС‹Р№ РѕС‚ Uniteller';
+$MESS['SALE_UNITELLER_SHOP_LOGIN'] = 'Р›РѕРіРёРЅ';
+$MESS['SALE_UNITELLER_SHOP_LOGIN_DESC'] = 'Р›РѕРіРёРЅ, РїРѕР»СѓС‡РµРЅРЅС‹Р№ РѕС‚ Uniteller';
+$MESS['SALE_UNITELLER_SHOP_PASSWORD'] = 'РџР°СЂРѕР»СЊ';
+$MESS['SALE_UNITELLER_SHOP_PASSWORD_DESC'] = 'РџР°СЂРѕР»СЊ, РїРѕР»СѓС‡РµРЅРЅС‹Р№ РѕС‚ Uniteller';
+$MESS['SALE_UNITELLER_SITE_NAME_LAT'] = 'Р›Р°С‚РёРЅСЃРєРѕРµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ С‚РѕС‡РєРё РїСЂРёРµРјР°, РїСЂРёСЃРІРѕРµРЅРЅРѕРµ Uniteller';
+$MESS['SALE_UNITELLER_LIFE_TIME'] = 'Р’СЂРµРјСЏ Р¶РёР·РЅРё С„РѕСЂРјС‹ РѕРїР»Р°С‚С‹ РІ СЃРµРєСѓРЅРґР°С…';
+$MESS['SALE_UNITELLER_LIFE_TIME_DESC'] = 'Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ С†РµР»С‹Рј РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рј С‡РёСЃР»РѕРј. Р•СЃР»Рё РїРѕРєСѓРїР°С‚РµР»СЊ РїСЂРѕРІРµРґРµС‚ РЅР° С„РѕСЂРјРµ РґРѕР»СЊС€Рµ, С‡РµРј СѓРєР°Р·Р°РЅРЅРѕРµ РІСЂРµРјСЏ, С‚Рѕ С„РѕСЂРјР° РѕРїР»Р°С‚С‹ Р±СѓРґРµС‚ СЃС‡РёС‚Р°С‚СЊСЃСЏ СѓСЃС‚Р°СЂРµРІС€РµР№, Рё РїР»Р°С‚РµР¶ РЅРµ Р±СѓРґРµС‚ РїСЂРёРЅСЏС‚. РџРѕРєСѓРїР°С‚РµР»СЋ РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ Р±СѓРґРµС‚ РїСЂРµРґР»РѕР¶РµРЅРѕ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР° СЃР°Р№С‚.';
+$MESS['SALE_UNITELLER_TIME_PAID_CHANGE'] = 'Р’СЂРµРјСЏ, РІ С‚РµС‡РµРЅРёРµ РєРѕС‚РѕСЂРѕРіРѕ СЃС‚Р°С‚СѓСЃ "paid" РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РјРµРЅС‘РЅ';
+$MESS['SALE_UNITELLER_TIME_PAID_CHANGE_DESC'] = 'Р’СЂРµРјСЏ СЃС‡РёС‚Р°РµС‚СЃСЏ РІ РґРЅСЏС… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 14 РґРЅРµР№)';
+$MESS['SALE_UNITELLER_TIME_ORDER_SYNC'] = 'Р’СЂРµРјСЏ, РІ С‚РµС‡РµРЅРёРµ РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґРµС‚ РІС‹РїРѕР»РЅСЏС‚СЊСЃСЏ СЃРёРЅС…СЂРѕРЅРёР·Р°С†РёСЏ СЃС‚Р°С‚СѓСЃРѕРІ РїР»Р°С‚РµР¶РµР№ СЃ Р·Р°РєР°Р·Р°РјРё';
+$MESS['SALE_UNITELLER_TIME_ORDER_SYNC_DESC'] = 'Р’СЂРµРјСЏ СЃС‡РёС‚Р°РµС‚СЃСЏ РІ РґРЅСЏС… (РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ 30 РґРЅРµР№)';
+$MESS['SALE_UNITELLER_SUCCESS_URL'] = 'РђРґСЂРµСЃ РїСЂРё СѓСЃРїРµС€РЅРѕР№ РѕРїР»Р°С‚Рµ (URL_RETURN_OK)';
+$MESS['SALE_UNITELLER_SUCCESS_URL_DESC'] = 'URL СЃС‚СЂР°РЅРёС†С‹, РЅР° РєРѕС‚РѕСЂСѓСЋ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РїРѕРєСѓРїР°С‚РµР»СЊ РїРѕСЃР»Рµ СѓСЃРїРµС€РЅРѕРіРѕ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РїР»Р°С‚РµР¶Р° РІ СЃРёСЃС‚РµРјРµ Uniteller (РјР°РєСЃРёРјСѓРј 128 СЃРёРјРІРѕР»РѕРІ)';
+$MESS['SALE_UNITELLER_FAIL_URL'] = 'РђРґСЂРµСЃ РїСЂРё РѕС€РёР±РєРµ РѕРїР»Р°С‚С‹ (URL_RETURN_NO)';
+$MESS['SALE_UNITELLER_FAIL_URL_DESC'] = 'URL СЃС‚СЂР°РЅРёС†С‹, РЅР° РєРѕС‚РѕСЂСѓСЋ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РџРѕРєСѓРїР°С‚РµР»СЊ РїРѕСЃР»Рµ РЅРµСѓСЃРїРµС€РЅРѕРіРѕ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РїР»Р°С‚РµР¶Р° РІ СЃРёСЃС‚РµРјРµ Uniteller (РјР°РєСЃРёРјСѓРј 128 СЃРёРјРІРѕР»РѕРІ)';
+$MESS['SALE_UNITELLER_TESTMODE'] = 'РўРµСЃС‚РѕРІС‹Р№ СЂРµР¶РёРј';
+$MESS['SALE_UNITELLER_TESTMODE_DESC'] = 'Р•СЃР»Рё РїСѓСЃС‚РѕРµ Р·РЅР°С‡РµРЅРёРµ - РјР°РіР°Р·РёРЅ Р±СѓРґРµС‚ СЂР°Р±РѕС‚Р°С‚СЊ РІ РѕР±С‹С‡РЅРѕРј СЂРµР¶РёРјРµ';
+$MESS['SALE_UNITELLER_ORDER_ID'] = 'РќРѕРјРµСЂ Р·Р°РєР°Р·Р°';
+$MESS['SALE_UNITELLER_ORDER_ID_DESC'] = 'РќРѕРјРµСЂ Р·Р°РєР°Р·Р° РІ Р’Р°С€РµРј РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅРµ';
+$MESS['SALE_UNITELLER_EMAIL'] = 'E-mail РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_EMAIL_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_FIRST_NAME'] = 'РРјСЏ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_FIRST_NAME_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_MIDDLE_NAME'] = 'РћС‚С‡РµСЃС‚РІРѕ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_MIDDLE_NAME_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_LAST_NAME'] = 'Р¤Р°РјРёР»РёСЏ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_LAST_NAME_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_ADDRESS'] = 'РђРґСЂРµСЃ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_ADDRESS_DESC'] = 'РњР°РєСЃРёРјСѓРј 128 СЃРёРјРІРѕР»РѕРІ';
+$MESS['SALE_UNITELLER_PHONE'] = 'РўРµР»РµС„РѕРЅ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_PHONE_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_CITY'] = 'Р“РѕСЂРѕРґ РїРѕРєСѓРїР°С‚РµР»СЏ';
+$MESS['SALE_UNITELLER_CITY_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_ZIP'] = 'РџРѕС‡С‚РѕРІС‹Р№ РёРЅРґРµРєСЃ';
+$MESS['SALE_UNITELLER_ZIP_DESC'] = 'РњР°РєСЃРёРјСѓРј 64 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_LANGUAGE'] = 'РљРѕРґ СЏР·С‹РєР° РёРЅС‚РµСЂС„РµР№СЃР° РїР»Р°С‚С‘Р¶РЅРѕР№ СЃС‚СЂР°РЅРёС†С‹';
+$MESS['SALE_UNITELLER_LANGUAGE_DESC'] = 'РњР°РєСЃРёРјСѓРј 2 СЃРёРјРІРѕР»Р°. РњРѕР¶РµС‚ Р±С‹С‚СЊ \'en\' РёР»Рё \'ru\'';
+$MESS['SALE_UNITELLER_COMMENT'] = 'РљРѕРјРјРµРЅС‚Р°СЂРёР№ Рє РїР»Р°С‚РµР¶Сѓ';
+$MESS['SALE_UNITELLER_COMMENT_DESC'] = 'РњР°РєСЃРёРјСѓРј 255 СЃРёРјРІРѕР»РѕРІ';
+$MESS['SALE_UNITELLER_COUNTRY'] = 'РљРѕРґ СЃС‚СЂР°РЅС‹ РїРѕРєСѓРїР°С‚РµР»СЏ (ISO 3166)';
+$MESS['SALE_UNITELLER_COUNTRY_DESC'] = 'РњР°РєСЃРёРјСѓРј 3 СЃРёРјРІРѕР»Р°';
+$MESS['SALE_UNITELLER_STATE'] = 'РљРѕРґ С€С‚Р°С‚Р° СЂРµРіРёРѕРЅР°';
+$MESS['SALE_UNITELLER_STATE_DESC'] = 'РњР°РєСЃРёРјСѓРј 3 СЃРёРјРІРѕР»Р°';
 
-// Для чека и обновления статусов.
-$MESS['SASP_AS000'] = 'АВТОРИЗАЦИЯ УСПЕШНО ЗАВЕРШЕНА';
-$MESS['SASP_AS100'] = 'ОТКАЗ В АВТОРИЗАЦИИ';
-$MESS['SASP_AS101'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Ошибочный номер карты';
-$MESS['SASP_AS102'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Недостаточно средств';
-$MESS['SASP_AS104'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Неверный срок действия карты';
-$MESS['SASP_AS105'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Превышен лимит';
-$MESS['SASP_AS107'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Ошибка приема данных';
-$MESS['SASP_AS108'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Подозрение на мошенничество';
-$MESS['SASP_AS109'] = 'ОТКАЗ В АВТОРИЗАЦИИ. Превышен лимит операций Uniteller';
-$MESS['SASP_AS200'] = 'ПОВТОРИТЕ АВТОРИЗАЦИЮ';
-$MESS['SASP_AS998'] = 'ОШИБКА СИСТЕМЫ. Свяжитесь с Uniteller';
+// Р”Р»СЏ С‡РµРєР° Рё РѕР±РЅРѕРІР»РµРЅРёСЏ СЃС‚Р°С‚СѓСЃРѕРІ.
+$MESS['SASP_AS000'] = 'РђР’РўРћР РР—РђР¦РРЇ РЈРЎРџР•РЁРќРћ Р—РђР’Р•Р РЁР•РќРђ';
+$MESS['SASP_AS100'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР';
+$MESS['SASP_AS101'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РћС€РёР±РѕС‡РЅС‹Р№ РЅРѕРјРµСЂ РєР°СЂС‚С‹';
+$MESS['SASP_AS102'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃСЂРµРґСЃС‚РІ';
+$MESS['SASP_AS104'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РќРµРІРµСЂРЅС‹Р№ СЃСЂРѕРє РґРµР№СЃС‚РІРёСЏ РєР°СЂС‚С‹';
+$MESS['SASP_AS105'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РџСЂРµРІС‹С€РµРЅ Р»РёРјРёС‚';
+$MESS['SASP_AS107'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РћС€РёР±РєР° РїСЂРёРµРјР° РґР°РЅРЅС‹С…';
+$MESS['SASP_AS108'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РџРѕРґРѕР·СЂРµРЅРёРµ РЅР° РјРѕС€РµРЅРЅРёС‡РµСЃС‚РІРѕ';
+$MESS['SASP_AS109'] = 'РћРўРљРђР— Р’ РђР’РўРћР РР—РђР¦РР. РџСЂРµРІС‹С€РµРЅ Р»РёРјРёС‚ РѕРїРµСЂР°С†РёР№ Uniteller';
+$MESS['SASP_AS200'] = 'РџРћР’РўРћР РРўР• РђР’РўРћР РР—РђР¦РР®';
+$MESS['SASP_AS998'] = 'РћРЁРР‘РљРђ РЎРРЎРўР•РњР«. РЎРІСЏР¶РёС‚РµСЃСЊ СЃ Uniteller';
 
-// Для чека.
-$MESS['SALE_UNITELLER_MERCH_NAME'] = 'Торговое наименование мёрчанта: ';
-$MESS['SALE_UNITELLER_MERCH_NAME_LAT'] = 'Латинское наименование точки приема, присвоенное Uniteller: ';
-$MESS['SALE_UNITELLER_MERCH_UNIQ_URL'] = 'Электронный адрес магазина: ';
-$MESS['SALE_UNITELLER_MERCH_TEL'] = 'Контактный телефон предприятия: ';
-$MESS['SALE_UNITELLER_MERCH_EMAIL'] = 'Контактная электронная почта предприятия: ';
-$MESS['SALE_UNITELLER_PS_SUM'] = 'Сумма операции в валюте: ';
-$MESS['SALE_UNITELLER_PS_DATE'] = 'Дата операции: ';
-$MESS['SALE_UNITELLER_BILLNUMBER'] = 'Уникальный идентификатор транзакции: ';
-$MESS['SALE_UNITELLER_USER_FIO'] = 'Ф.И.О: ';
-$MESS['SALE_UNITELLER_APPROVEL_CODE'] = 'Код подтверждения: ';
-$MESS['SALE_UNITELLER_TRANSACTION_TYPE'] = 'Тип операции: ';
-$MESS['SALE_UNITELLER_ERROR'] = 'Для данного заказа в системе Uniteller не существует соответствующего платежа.';
-$MESS['SALE_UNITELLER_PRINT_CHECK'] = 'Печать чека';
-$MESS['SALE_UNITELLER_CLOSE_WINDOW'] = 'Закрыть окно';
+// Р”Р»СЏ С‡РµРєР°.
+$MESS['SALE_UNITELLER_MERCH_NAME'] = 'РўРѕСЂРіРѕРІРѕРµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РјС‘СЂС‡Р°РЅС‚Р°: ';
+$MESS['SALE_UNITELLER_MERCH_NAME_LAT'] = 'Р›Р°С‚РёРЅСЃРєРѕРµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ С‚РѕС‡РєРё РїСЂРёРµРјР°, РїСЂРёСЃРІРѕРµРЅРЅРѕРµ Uniteller: ';
+$MESS['SALE_UNITELLER_MERCH_UNIQ_URL'] = 'Р­Р»РµРєС‚СЂРѕРЅРЅС‹Р№ Р°РґСЂРµСЃ РјР°РіР°Р·РёРЅР°: ';
+$MESS['SALE_UNITELLER_MERCH_TEL'] = 'РљРѕРЅС‚Р°РєС‚РЅС‹Р№ С‚РµР»РµС„РѕРЅ РїСЂРµРґРїСЂРёСЏС‚РёСЏ: ';
+$MESS['SALE_UNITELLER_MERCH_EMAIL'] = 'РљРѕРЅС‚Р°РєС‚РЅР°СЏ СЌР»РµРєС‚СЂРѕРЅРЅР°СЏ РїРѕС‡С‚Р° РїСЂРµРґРїСЂРёСЏС‚РёСЏ: ';
+$MESS['SALE_UNITELLER_PS_SUM'] = 'РЎСѓРјРјР° РѕРїРµСЂР°С†РёРё РІ РІР°Р»СЋС‚Рµ: ';
+$MESS['SALE_UNITELLER_PS_DATE'] = 'Р”Р°С‚Р° РѕРїРµСЂР°С†РёРё: ';
+$MESS['SALE_UNITELLER_BILLNUMBER'] = 'РЈРЅРёРєР°Р»СЊРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ С‚СЂР°РЅР·Р°РєС†РёРё: ';
+$MESS['SALE_UNITELLER_USER_FIO'] = 'Р¤.Р.Рћ: ';
+$MESS['SALE_UNITELLER_APPROVEL_CODE'] = 'РљРѕРґ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ: ';
+$MESS['SALE_UNITELLER_TRANSACTION_TYPE'] = 'РўРёРї РѕРїРµСЂР°С†РёРё: ';
+$MESS['SALE_UNITELLER_ERROR'] = 'Р”Р»СЏ РґР°РЅРЅРѕРіРѕ Р·Р°РєР°Р·Р° РІ СЃРёСЃС‚РµРјРµ Uniteller РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРіРѕ РїР»Р°С‚РµР¶Р°.';
+$MESS['SALE_UNITELLER_PRINT_CHECK'] = 'РџРµС‡Р°С‚СЊ С‡РµРєР°';
+$MESS['SALE_UNITELLER_CLOSE_WINDOW'] = 'Р—Р°РєСЂС‹С‚СЊ РѕРєРЅРѕ';
 
-// Для страницы оплаты.
-$MESS['SUSP_DESC_TITLE'] = 'Описание платежной системы: ';
-$MESS['SUSP_ORDER_SUM'] = 'Сумма к оплате: ';
-$MESS['SUSP_ACCOUNT_NO'] = 'Заказ №: ';
-$MESS['SUSP_ORDER_FROM'] = ' от ';
-$MESS['SUSP_UNITELLER_PAY_BUTTON'] = 'Оплатить';
+// Р”Р»СЏ СЃС‚СЂР°РЅРёС†С‹ РѕРїР»Р°С‚С‹.
+$MESS['SUSP_DESC_TITLE'] = 'РћРїРёСЃР°РЅРёРµ РїР»Р°С‚РµР¶РЅРѕР№ СЃРёСЃС‚РµРјС‹: ';
+$MESS['SUSP_ORDER_SUM'] = 'РЎСѓРјРјР° Рє РѕРїР»Р°С‚Рµ: ';
+$MESS['SUSP_ACCOUNT_NO'] = 'Р—Р°РєР°Р· в„–: ';
+$MESS['SUSP_ORDER_FROM'] = ' РѕС‚ ';
+$MESS['SUSP_UNITELLER_PAY_BUTTON'] = 'РћРїР»Р°С‚РёС‚СЊ';

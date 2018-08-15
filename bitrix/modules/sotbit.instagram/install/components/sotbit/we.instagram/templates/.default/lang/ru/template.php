@@ -1,3 +1,3 @@
 <?
-$MESS["STB_INSTAGRAM_SHOW"] = "Посмотреть";
+$MESS["STB_INSTAGRAM_SHOW"] = "РџРѕСЃРјРѕС‚СЂРµС‚СЊ";
 ?>

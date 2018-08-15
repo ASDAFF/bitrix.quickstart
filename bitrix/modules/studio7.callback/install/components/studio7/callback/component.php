@@ -11,14 +11,14 @@ if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
  * @global CUser $USER
  */
 
-//óäàëÿåì ïàðàìåòðû èç ñåññèè
+//ÑƒÐ´Ð°Ð»ÑÐµÐ¼ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¸Ð· ÑÐµÑÑÐ¸Ð¸
 $_SESSION["CMPT_PARAMS"] = null;
 
 $arResult["PARAMS_HASH"] = md5(serialize($arParams).$this->GetTemplateName());
 
 $arParams["USE_CAPTCHA"] = (($arParams["USE_CAPTCHA"] != "N" && !$USER->IsAuthorized()) ? "Y" : "N");
 
-// ID ïî÷òîâîãî ñîáûòèÿ
+// ID Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ
 $arParams["EVENT_MESSAGE_ID"] = trim($arParams["EVENT_MESSAGE_ID"]);
 
 $arParams["EMAIL_TO"] = trim($arParams["EMAIL_TO"]);
@@ -29,12 +29,12 @@ $arParams["OK_TEXT"] = trim($arParams["OK_TEXT"]);
 if($arParams["OK_TEXT"] == '')
 	$arParams["OK_TEXT"] = GetMessage("MF_OK_MESSAGE");
 
-// ìîé êîä
+// Ð¼Ð¾Ð¹ ÐºÐ¾Ð´
 	if(isset($arParams['_POST'])){
-		//çäåñü ïðîèçâîäèòñÿ îòïðàâêà
+		//Ð·Ð´ÐµÑÑŒ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÑÑ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ°
 		
 		if(check_bitrix_sessid()){
-			// ñîáèðàåì îøèáêè
+			// ÑÐ¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð¾ÑˆÐ¸Ð±ÐºÐ¸
 			$arResult["ERROR_MESSAGE"] = array();
 			
 			if($arParams['_POST']['form_type'] == 'call_ord')
@@ -107,7 +107,7 @@ if($arParams["OK_TEXT"] == '')
 					if(CModule::IncludeModule('iblock')){
 						$el = new CIBlockElement;
 						
-						$elname = "Çàêàç îò ".$arParams["_POST"]["v_name"];
+						$elname = "Ð—Ð°ÐºÐ°Ð· Ð¾Ñ‚ ".$arParams["_POST"]["v_name"];
 						
 						$props = Array();
 						$props["VISITOR_FIO"] = $arParams["_POST"]["v_name"];
@@ -149,11 +149,11 @@ if($arParams["OK_TEXT"] == '')
 			$errTXT .= $arResult["ERROR_MESSAGE"][0];
 		}
 		
-		// âûâîäèì îøèáêè
+		// Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ð¾ÑˆÐ¸Ð±ÐºÐ¸
 		echo $errTXT;
 	}
 	else{
-		// äî îòïðàâêè
+		// Ð´Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸
 		if(empty($arResult["ERROR_MESSAGE"]))
 		{
 			if($USER->IsAuthorized())
@@ -173,7 +173,7 @@ if($arParams["OK_TEXT"] == '')
 		if($arParams["USE_CAPTCHA"] == "Y")
 			$arResult["capCode"] =  htmlspecialcharsbx($APPLICATION->CaptchaGetCode());
 		
-		// ñîõðàíÿåì ïàðàìåòðû â ñåññèè
+		// ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð² ÑÐµÑÑÐ¸Ð¸
 		$_SESSION["CMPT_PARAMS"] = $arParams;
 		
 		$this->IncludeComponentTemplate();	

@@ -1,3 +1,3 @@
 <?
-	$MESS["TCS_KUPIVKREDIT"] = "ÊóïèÂêðåäèò";
+	$MESS["TCS_KUPIVKREDIT"] = "ÐšÑƒÐ¿Ð¸Ð’ÐºÑ€ÐµÐ´Ð¸Ñ‚";
 ?>

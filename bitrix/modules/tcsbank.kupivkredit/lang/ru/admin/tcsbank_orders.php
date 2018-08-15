@@ -1,12 +1,12 @@
 <?
-	$MESS["TCS_ORDER_NUMBER"]="Íîìåð çàêàçà";
-	$MESS["TCS_BUYER"]="Ïîêóïàòåëü";
-	$MESS["TCS_DATE_CREATE"]="Äàòà äîáàâëåíèÿ";
-	$MESS["TCS_ORDER_NUMBER"]="Íîìåð çàêàçà";
-	$MESS["TCS_DATE_FROM"]="ñ";
-	$MESS["TCS_DATE_TO"]="ïî";
-	$MESS["TCS_DATE_CREATE"]="Äàòà äîáàâëåíèÿ";
-	$MESS["TCS_CLOSE"]="Çàêðûòü";
-	$MESS["TCS_BANK_STATUS"]="Ðåøåíèå";
-	$MESS["TCS_ORDER_STATUS"]="Òåêóùèé ñòàòóñ";
+	$MESS["TCS_ORDER_NUMBER"]="ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_BUYER"]="ÐŸÐ¾ÐºÑƒÐ¿Ð°Ñ‚ÐµÐ»ÑŒ";
+	$MESS["TCS_DATE_CREATE"]="Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ";
+	$MESS["TCS_ORDER_NUMBER"]="ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS["TCS_DATE_FROM"]="Ñ";
+	$MESS["TCS_DATE_TO"]="Ð¿Ð¾";
+	$MESS["TCS_DATE_CREATE"]="Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ";
+	$MESS["TCS_CLOSE"]="Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ";
+	$MESS["TCS_BANK_STATUS"]="Ð ÐµÑˆÐµÐ½Ð¸Ðµ";
+	$MESS["TCS_ORDER_STATUS"]="Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ ÑÑ‚Ð°Ñ‚ÑƒÑ";
 ?>

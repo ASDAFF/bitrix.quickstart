@@ -45,7 +45,7 @@ Class soobwa_comments extends CModule
         Base::getInstance('\Soobwa\Comments\CommentsTable')->createDbTable();
 
         /*
-         * Сохранил путь к модулю
+         * РЎРѕС…СЂР°РЅРёР» РїСѓС‚СЊ Рє РјРѕРґСѓР»СЋ
          * */
         Option::set("soobwa_comments", "path", $this->GetPath(true));
         return true;
@@ -58,7 +58,7 @@ Class soobwa_comments extends CModule
         Application::getConnection(\Soobwa\Comments\CommentsTable::getConnectionName())->queryExecute('drop table if exists '.Base::getInstance('\Soobwa\Comments\CommentsTable')->getDbTableName());
 
         /*
-         * Удаляем путь к модулю
+         * РЈРґР°Р»СЏРµРј РїСѓС‚СЊ Рє РјРѕРґСѓР»СЋ
          * */
         Option::delete("soobwa_comments", "path");
         return true;
@@ -77,12 +77,12 @@ Class soobwa_comments extends CModule
     function InstallFiles()
     {
         /*
-         * Копируем компоненты
+         * РљРѕРїРёСЂСѓРµРј РєРѕРјРїРѕРЅРµРЅС‚С‹
          * */
         CopyDirFiles($this->GetPath()."/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 
         /*
-         * Копируем админские файлы
+         * РљРѕРїРёСЂСѓРµРј Р°РґРјРёРЅСЃРєРёРµ С„Р°Р№Р»С‹
          * */
         CopyDirFiles($this->GetPath()."/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
         return true;
@@ -91,12 +91,12 @@ Class soobwa_comments extends CModule
     function UnInstallFiles()
     {
         /*
-         * Удоляем компоненты
+         * РЈРґРѕР»СЏРµРј РєРѕРјРїРѕРЅРµРЅС‚С‹
          * */
         DeleteDirFiles($this->GetPath()."/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components");
 
         /*
-         * Удоляем админские файлы
+         * РЈРґРѕР»СЏРµРј Р°РґРјРёРЅСЃРєРёРµ С„Р°Р№Р»С‹
          * */
         DeleteDirFiles($this->GetPath()."/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
         return true;
@@ -122,7 +122,7 @@ Class soobwa_comments extends CModule
     }
 
     /**
-     * Определяем место размешения модуля
+     * РћРїСЂРµРґРµР»СЏРµРј РјРµСЃС‚Рѕ СЂР°Р·РјРµС€РµРЅРёСЏ РјРѕРґСѓР»СЏ
      * @return string
      */
     public function GetPath($notDocRoot = false)

@@ -1,6 +1,6 @@
 <?
-$MESS['MAILINFO_INSTALL_NAME'] = 'Ïî÷òîâûå ñîáûòèÿ';
-$MESS['MAILINFO_INSTALL_DESCRIPTION'] = 'Èíôîðìàöèÿ î îòïðàâëåííûõ ïèñüìàõ ñ ñàéòà';
-$MESS['MAILINFO_INSTALL_TITLE'] = 'Óñòàíîâêà ìîäóëÿ';
-$MESS['MAILINFO_INSTALL_UNPOSSIBLE'] = "Äåèíñòàëëÿöèÿ ìîäóëÿ íåâîçìîæíà.";
+$MESS['MAILINFO_INSTALL_NAME'] = 'ÐŸÐ¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ðµ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ';
+$MESS['MAILINFO_INSTALL_DESCRIPTION'] = 'Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ñ… Ð¿Ð¸ÑÑŒÐ¼Ð°Ñ… Ñ ÑÐ°Ð¹Ñ‚Ð°';
+$MESS['MAILINFO_INSTALL_TITLE'] = 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ';
+$MESS['MAILINFO_INSTALL_UNPOSSIBLE'] = "Ð”ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð°.";
 ?>

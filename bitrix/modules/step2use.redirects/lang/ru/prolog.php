@@ -1,3 +1,3 @@
 <?
-$MESS ['S2U_REDIRECT_TITLE'] = "URL ðåäèðåêòû";
+$MESS ['S2U_REDIRECT_TITLE'] = "URL Ñ€ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚Ñ‹";
 ?>

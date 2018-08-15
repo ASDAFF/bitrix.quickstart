@@ -1,7 +1,7 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /*
- * Ïîäêëþ÷àåì jQuery
+ * ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ jQuery
  * */
 CJSCore::Init(array("jquery"));
 IncludeTemplateLangFile(__FILE__);

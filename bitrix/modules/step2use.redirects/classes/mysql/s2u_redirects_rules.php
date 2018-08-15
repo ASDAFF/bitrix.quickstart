@@ -251,7 +251,7 @@ class S2uRedirectsRulesDB {
         
         if($data) return $data;
         
-        // с использованием regexp
+        // СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј regexp
         $strSql = "
             SELECT 
                 *

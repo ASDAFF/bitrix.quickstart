@@ -1,14 +1,14 @@
 <?
-$MESS ['S2U_REDIRECT_ADMIN_TITLE'] = "Ãåíåðàöèÿ ññûëîê. Ïðàâèëà";
-$MESS ['S2U_REDIRECT_RULE'] = "Ïðàâèëî";
-$MESS ['S2U_REDIRECT_CLASS'] = "Êëàññ";
-$MESS ['S2U_REDIRECT_SITE_ID'] = "ID ñàéòà";
-$MESS ['S2U_REDIRECT_ACTIVE'] = "Àêòèâíî";
-$MESS ['S2U_REDIRECT_ADD'] = "Äîáàâèòü ïðàâèëî";
-$MESS ['S2U_REDIRECT_ADMIN'] = "Ïðàâèëà";
-$MESS ['S2U_REDIRECT_DELETE_ERROR'] = "Îøèáêà óäàëåíèÿ ïðàâèëà";
-$MESS ['S2U_REDIRECT_CONFIRM_DEL_MESSAGE'] = "Âû óâåðåíû, ÷òî õîòèòå óäàëèòü ïðàâèëî?";
-$MESS ['S2U_REDIRECT_BAD_RULE'] = "Íå óêàçàíî ïðàâèëî";
-$MESS ['S2U_REDIRECT_BAD_LINK'] = "Íå óêàçàíà ññûëêà";
-$MESS ['S2U_REDIRECT_BAD_SITE_ID'] = "Íå óêàçàí ID ñàéòà";
+$MESS ['S2U_REDIRECT_ADMIN_TITLE'] = "Ð“ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸Ñ ÑÑÑ‹Ð»Ð¾Ðº. ÐŸÑ€Ð°Ð²Ð¸Ð»Ð°";
+$MESS ['S2U_REDIRECT_RULE'] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð¾";
+$MESS ['S2U_REDIRECT_CLASS'] = "ÐšÐ»Ð°ÑÑ";
+$MESS ['S2U_REDIRECT_SITE_ID'] = "ID ÑÐ°Ð¹Ñ‚Ð°";
+$MESS ['S2U_REDIRECT_ACTIVE'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾";
+$MESS ['S2U_REDIRECT_ADD'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð¾";
+$MESS ['S2U_REDIRECT_ADMIN'] = "ÐŸÑ€Ð°Ð²Ð¸Ð»Ð°";
+$MESS ['S2U_REDIRECT_DELETE_ERROR'] = "ÐžÑˆÐ¸Ð±ÐºÐ° ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð°";
+$MESS ['S2U_REDIRECT_CONFIRM_DEL_MESSAGE'] = "Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹, Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð¾?";
+$MESS ['S2U_REDIRECT_BAD_RULE'] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½Ð¾ Ð¿Ñ€Ð°Ð²Ð¸Ð»Ð¾";
+$MESS ['S2U_REDIRECT_BAD_LINK'] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½Ð° ÑÑÑ‹Ð»ÐºÐ°";
+$MESS ['S2U_REDIRECT_BAD_SITE_ID'] = "ÐÐµ ÑƒÐºÐ°Ð·Ð°Ð½ ID ÑÐ°Ð¹Ñ‚Ð°";
 ?>

@@ -1,8 +1,8 @@
-<?
-$MESS ['KUTF8_INSTALL_NAME'] = "Ìîäóëü \"Êîíâåðòàöèÿ ñàéòà â utf8\" ";
-$MESS ['KUTF8_INSTALL_DESCRIPTION'] = "Ìàñòåð ñìåíû êîäèðîâêè ñ windows1251 íà utf8";
+ï»¿<?
+$MESS ['KUTF8_INSTALL_NAME'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ \"ÐšÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð°Ñ†Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð° Ð² utf8\" ";
+$MESS ['KUTF8_INSTALL_DESCRIPTION'] = "ÐœÐ°ÑÑ‚ÐµÑ€ ÑÐ¼ÐµÐ½Ñ‹ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ windows1251 Ð½Ð° utf8";
 
-$MESS ['SCOM_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ";
-$MESS ['SCOM_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ";
-$MESS ['SCOM_GO_TO_WIZARD'] = "Ïåðåéòè ê ìàñòåðó";
+$MESS ['SCOM_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['SCOM_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['SCOM_GO_TO_WIZARD'] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð¼Ð°ÑÑ‚ÐµÑ€Ñƒ";
 ?>

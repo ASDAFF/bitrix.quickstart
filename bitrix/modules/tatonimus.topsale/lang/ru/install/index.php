@@ -1,28 +1,28 @@
 <?
 $MESS ['TTSML_COMPANY_NAME'] = "tatonimus";
 $MESS ['TTSML_PARTNER_URI'] = "http://www.tatonimus.ru";
-$MESS ['TTSML_INSTALL_NAME'] = "Õèò-ïðîäàæ";
-$MESS ['TTSML_INSTALL_DESCRIPTION'] = "Ìîäóëü îïðåäëåëÿåò ðåéòèíã ïðîäàæ òîâàðîâ è îáíîâëÿåò èíôîðìàöèþ â ýëåìåíòàõ èíôîáëîêà";
-$MESS ['TTSML_INST_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ &laquo;Õèò-ïðîäàæ&raquo;";
-$MESS ['TTSML_INST_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ &laquo;Õèò-ïðîäàæ&raquo;";
+$MESS ['TTSML_INSTALL_NAME'] = "Ð¥Ð¸Ñ‚-Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
+$MESS ['TTSML_INSTALL_DESCRIPTION'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¾Ð¿Ñ€ÐµÐ´Ð»ÐµÐ»ÑÐµÑ‚ Ñ€ÐµÐ¹Ñ‚Ð¸Ð½Ð³ Ð¿Ñ€Ð¾Ð´Ð°Ð¶ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¸ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÑ‚ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð² ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ñ… Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['TTSML_INST_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;Ð¥Ð¸Ñ‚-Ð¿Ñ€Ð¾Ð´Ð°Ð¶&raquo;";
+$MESS ['TTSML_INST_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;Ð¥Ð¸Ñ‚-Ð¿Ñ€Ð¾Ð´Ð°Ð¶&raquo;";
 
 //step1.php
-$MESS ["TTSML_STEP1_INSTALL_MESS_1"] = "Âû óâåðåíû ÷òî õîòèòå óñòàíîâèòü äàííûé ìîäóëü?";
-$MESS ["TTSML_STEP1_INSTALL_MESS_2"] = "Óñòàíîâèòü";
+$MESS ["TTSML_STEP1_INSTALL_MESS_1"] = "Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹ Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ?";
+$MESS ["TTSML_STEP1_INSTALL_MESS_2"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ";
 
 //step2.php
-$MESS ["TTSML_SUCC_INST"] = "Ìîäóëü óñïåøíî óñòàíîâëåí";
-$MESS ["TTSML_ERR_INST"] = "Îøèáêè, âîçíèêøèå ïðè óñòàíîâêå";
-$MESS ['TTSML_BACK_TO_LIST'] = "Âåðíóòüñÿ ê ñïèñêó ìîäóëåé";
+$MESS ["TTSML_SUCC_INST"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS ["TTSML_ERR_INST"] = "ÐžÑˆÐ¸Ð±ÐºÐ¸, Ð²Ð¾Ð·Ð½Ð¸ÐºÑˆÐ¸Ðµ Ð¿Ñ€Ð¸ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ";
+$MESS ['TTSML_BACK_TO_LIST'] = "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº ÑÐ¿Ð¸ÑÐºÑƒ Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹";
 
 //unstep1.php
-$MESS ['TTSML_CAUTION_MESS'] = 'Âíèìàíèå! Ìîäóëü áóäåò óäàëåí èç ñèñòåìû';
-$MESS ['TTSML_UNINST_MESS_1'] = "Âû ìîæåòå ñîõðàíèòü íåêîòîðûå êîìïîíåíòû ìîäóëÿ:";
-$MESS ['TTSML_UNINST_MESS_2'] = "Ñîõðàíèòü òàáëèöû è äàííûå ÁÄ";
-$MESS ['TTSML_UNINST_MOD'] = "Óäàëèòü ìîäóëü";
+$MESS ['TTSML_CAUTION_MESS'] = 'Ð’Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð±ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½ Ð¸Ð· ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹';
+$MESS ['TTSML_UNINST_MESS_1'] = "Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»Ñ:";
+$MESS ['TTSML_UNINST_MESS_2'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð‘Ð”";
+$MESS ['TTSML_UNINST_MOD'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ";
 
 //unstep2.php
-$MESS ['TTSML_UNINSTALL_SUCCESS'] = "Ìîäóëü &laquo;Õèò-ïðîäàæ&raquo; óñïåøíî óäàëåí";
-$MESS ['TTSML_UNINSTALL_ERROR'] = "Îøèáêà äåèíñòàëëÿöèè ìîäóëÿ";
-$MESS ['TTSML_BACK_TO_MOD_LIST'] = "Âåðíóòüñÿ ê ñïèñêó ìîäóëåé";
+$MESS ['TTSML_UNINSTALL_SUCCESS'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ &laquo;Ð¥Ð¸Ñ‚-Ð¿Ñ€Ð¾Ð´Ð°Ð¶&raquo; ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ ÑƒÐ´Ð°Ð»ÐµÐ½";
+$MESS ['TTSML_UNINSTALL_ERROR'] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð´ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['TTSML_BACK_TO_MOD_LIST'] = "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ðº ÑÐ¿Ð¸ÑÐºÑƒ Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹";
 ?>

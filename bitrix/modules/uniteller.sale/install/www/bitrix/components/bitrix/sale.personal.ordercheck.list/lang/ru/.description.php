@@ -1,5 +1,5 @@
 <?
-$MESS ['SPOL_DEFAULT_TEMPLATE_NAME'] = "Ñïèñîê çàêàçîâ";
-$MESS ['SPOL_DEFAULT_TEMPLATE_DESCRIPTION'] = "Âûâîäèò ôèëüòð è ñïèñîê çàêàçîâ ïîëüçîâàòåëÿ";
-$MESS ['SPOL_NAME'] = "Ñïèñîê çàêàçîâ";
+$MESS ['SPOL_DEFAULT_TEMPLATE_NAME'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+$MESS ['SPOL_DEFAULT_TEMPLATE_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€ Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð² Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['SPOL_NAME'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
 ?>

@@ -3,7 +3,7 @@
 IncludeModuleLangFile(__FILE__);
 
 /**
- * Класс для работы с таблицей с логами ошибок.
+ * РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ С‚Р°Р±Р»РёС†РµР№ СЃ Р»РѕРіР°РјРё РѕС€РёР±РѕРє.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
@@ -11,7 +11,7 @@ class CUnitellerAgentLog {
 	var $LAST_ERROR = '';
 
 	/**
-	 * Возвращает список записей в соответствии с фильтром и сортировкой.
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃРїРёСЃРѕРє Р·Р°РїРёСЃРµР№ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ С„РёР»СЊС‚СЂРѕРј Рё СЃРѕСЂС‚РёСЂРѕРІРєРѕР№.
 	 * @param array $aSort
 	 * @param array $aFilter
 	 * @return object
@@ -91,7 +91,7 @@ class CUnitellerAgentLog {
 	}
 
 	/**
-	 * Возвращает список типов ошибок.
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃРїРёСЃРѕРє С‚РёРїРѕРІ РѕС€РёР±РѕРє.
 	 * @return object
 	 */
 	function GetTypeList() {
@@ -110,7 +110,7 @@ class CUnitellerAgentLog {
 	}
 
 	/**
-	 * Удаляет запись.
+	 * РЈРґР°Р»СЏРµС‚ Р·Р°РїРёСЃСЊ.
 	 * @param integer $ID
 	 * @return object
 	 */

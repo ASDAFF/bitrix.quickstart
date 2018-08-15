@@ -1,19 +1,19 @@
 <?php
 /**
- * Âûçûâàåòñÿ èç cron.bat. Ñòàâèò êîíñòàíòó è âûïîëíÿåò ïðîëîã, äëÿ òîãî, ÷òîáû îòðàáîòàë àãåíò UnitellerAgent();.
+ * Ð’Ñ‹Ð·Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð¸Ð· cron.bat. Ð¡Ñ‚Ð°Ð²Ð¸Ñ‚ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ñƒ Ð¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÑ‚ Ð¿Ñ€Ð¾Ð»Ð¾Ð³, Ð´Ð»Ñ Ñ‚Ð¾Ð³Ð¾, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¾Ñ‚Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ð» Ð°Ð³ÐµÐ½Ñ‚ UnitellerAgent();.
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
 ignore_user_abort(true);
 set_time_limit(0);
 
-// Ñîîáùàåò àãåíòó, ÷òî åãî âûçûâàåò êðîí.
+// Ð¡Ð¾Ð¾Ð±Ñ‰Ð°ÐµÑ‚ Ð°Ð³ÐµÐ½Ñ‚Ñƒ, Ñ‡Ñ‚Ð¾ ÐµÐ³Ð¾ Ð²Ñ‹Ð·Ñ‹Ð²Ð°ÐµÑ‚ ÐºÑ€Ð¾Ð½.
 define('UNITELLER_AGENT', true);
 
-// Âñå ïîäêëþ÷åíèÿ ìîäóëåé â 1C-Bitrix ïðîèçâîäÿòñÿ îòíîñèòåëüíî $_SERVER['DOCUMENT_ROOT'].
+// Ð’ÑÐµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹ Ð² 1C-Bitrix Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´ÑÑ‚ÑÑ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ $_SERVER['DOCUMENT_ROOT'].
 chdir(dirname(__FILE__) . '../../../');
 $_SERVER['DOCUMENT_ROOT'] = getcwd();
 
-// Àãåíò âûçûâàåòñÿ â ïðîëîãå.
+// ÐÐ³ÐµÐ½Ñ‚ Ð²Ñ‹Ð·Ñ‹Ð²Ð°ÐµÑ‚ÑÑ Ð² Ð¿Ñ€Ð¾Ð»Ð¾Ð³Ðµ.
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_before.php');
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/epilog_after.php');

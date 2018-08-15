@@ -1,9 +1,9 @@
 <?php
 /**
- * Ôîðìèðóåò ïàêåò äàííûõ äëÿ îòïðàâêè â ñèñòåìó Uniteller.
- * Ôîðìà ñ äàííûìè âñòàâëÿåòñÿ íà ñòðàíèöû:
- *  - "Îôîðìëåíèå çàêàçà" â ôîðìó "Çàêàç ñôîðìèðîâàí".
- *  - "Ìîé çàêàç ¹???" â ðàçäåë "Îïëàòà è äîñòàâêà".
+ * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÑ‚ Ð¿Ð°ÐºÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ñƒ Uniteller.
+ * Ð¤Ð¾Ñ€Ð¼Ð° Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð²ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ÑÑ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹:
+ *  - "ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°" Ð² Ñ„Ð¾Ñ€Ð¼Ñƒ "Ð—Ð°ÐºÐ°Ð· ÑÑ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½".
+ *  - "ÐœÐ¾Ð¹ Ð·Ð°ÐºÐ°Ð· â„–???" Ð² Ñ€Ð°Ð·Ð´ÐµÐ» "ÐžÐ¿Ð»Ð°Ñ‚Ð° Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°".
  * @author r.smoliarenko
  * @author r.sarazhyn
  */
@@ -20,15 +20,15 @@ $arOrder = CSaleOrder::GetByID($sOrderID);
 $aCheckData = array();
 ps_uniteller::doSyncStatus($arOrder, $aCheckData);
 
-// Ïîëó÷àåì äàííûå èç êîíñòàíò
+// ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸Ð· ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚
 ps_uniteller::setMerchantData($sOrderID);
 
-// Åñëè åñòü ïëàò¸æ, òî âûâîäèì ñòàòóñ çàêàçà.
+// Ð•ÑÐ»Ð¸ ÐµÑÑ‚ÑŒ Ð¿Ð»Ð°Ñ‚Ñ‘Ð¶, Ñ‚Ð¾ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð°.
 if ($aCheckData['response_code'] !== '') {
 	$arCurrentStatus = CSaleStatus::GetByID($arOrder['STATUS_ID']);
 	echo '<br><strong>' . $arCurrentStatus['NAME'] . '</strong>';
 } else {
-	// Åñëè îïëàòà åùå íå áûëà ïðîèçâåäåíà, òî âûâîäèì ôîðìó äëÿ îïëàòû çàêàçà.
+	// Ð•ÑÐ»Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ð° ÐµÑ‰Ðµ Ð½Ðµ Ð±Ñ‹Ð»Ð° Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð°, Ñ‚Ð¾ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ñ„Ð¾Ñ€Ð¼Ñƒ Ð´Ð»Ñ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°.
 	$sDateInsert = (strlen(CSalePaySystemAction::GetParamValue('DATE_INSERT')) > 0) ? CSalePaySystemAction::GetParamValue('DATE_INSERT') : $GLOBALS['SALE_INPUT_PARAMS']['ORDER']['DATE_INSERT'];
 	$sDateInsert = trim($sDateInsert);
 	$fHouldPay = (strlen(CSalePaySystemAction::GetParamValue('SHOULD_PAY')) > 0) ? CSalePaySystemAction::GetParamValue('SHOULD_PAY') : $GLOBALS['SALE_INPUT_PARAMS']['ORDER']['SHOULD_PAY'];

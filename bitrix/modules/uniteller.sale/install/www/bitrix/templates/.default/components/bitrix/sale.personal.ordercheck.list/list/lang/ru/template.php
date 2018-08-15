@@ -1,39 +1,39 @@
 <?
-$MESS ['P_PAY_SYS'] = "Ñïîñîá îïëàòû:";
-$MESS ['P_DELIVERY'] = "Äîñòàâêà:";
-$MESS ['STPOL_CUR_ORDERS'] = "Ïîñìîòðåòü òåêóùèå çàêàçû";
-$MESS ['STPOL_ORDERS_HISTORY'] = "Ïîñìîòðåòü èñòîðèþ çàêàçîâ";
-$MESS ['STPOL_STATUS'] = "Çàêàçû â ñòàòóñå";
-$MESS ['STPOL_ORDER_NO'] = "Çàêàç ¹";
-$MESS ['STPOL_FROM'] = "îò";
-$MESS ['STPOL_CANCELED'] = "Çàêàç îòìåíåí";
-$MESS ['STPOL_STATUS_T'] = "Ñòàòóñ: ";
-$MESS ['STPOL_STATUS_FROM'] = " îò ";
-$MESS ['STPOL_CONTENT'] = "Ñîñòàâ çàêàçà:";
-$MESS ['STPOL_SHT'] = "øò.";
-$MESS ['STPOL_DETAILS'] = "Ïîäðîáíåå";
-$MESS ['STPOL_REORDER'] = "Ïîâòîðèòü çàêàç (çàêàçàòü òå æå òîâàðû)";
-$MESS ['STPOL_REORDER1'] = "Ïîâòîðèòü çàêàç";
+$MESS ['P_PAY_SYS'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹:";
+$MESS ['P_DELIVERY'] = "Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°:";
+$MESS ['STPOL_CUR_ORDERS'] = "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ñ‹";
+$MESS ['STPOL_ORDERS_HISTORY'] = "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÑŽ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+$MESS ['STPOL_STATUS'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹ Ð² ÑÑ‚Ð°Ñ‚ÑƒÑÐµ";
+$MESS ['STPOL_ORDER_NO'] = "Ð—Ð°ÐºÐ°Ð· â„–";
+$MESS ['STPOL_FROM'] = "Ð¾Ñ‚";
+$MESS ['STPOL_CANCELED'] = "Ð—Ð°ÐºÐ°Ð· Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½";
+$MESS ['STPOL_STATUS_T'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ: ";
+$MESS ['STPOL_STATUS_FROM'] = " Ð¾Ñ‚ ";
+$MESS ['STPOL_CONTENT'] = "Ð¡Ð¾ÑÑ‚Ð°Ð² Ð·Ð°ÐºÐ°Ð·Ð°:";
+$MESS ['STPOL_SHT'] = "ÑˆÑ‚.";
+$MESS ['STPOL_DETAILS'] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ";
+$MESS ['STPOL_REORDER'] = "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð· (Ð·Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ñ‚Ðµ Ð¶Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹)";
+$MESS ['STPOL_REORDER1'] = "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·";
 // UnitellerPlugin add
-$MESS ['STPOL_CHECK'] = 'Ïðîñìîòðåòü ÷åê';
+$MESS ['STPOL_CHECK'] = 'ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ñ‡ÐµÐº';
 // /UnitellerPlugin add
-$MESS ['STPOL_CANCEL'] = "Îòìåíèòü çàêàç";
-$MESS ['STPOL_NO_ORDERS'] = "Çàêàçû íå íàéäåíû";
-$MESS ['STPOL_HINT'] = "×òîáû ïðîñìîòðåòü ñîñòàâ çàêàçà, ùåëêíèòå íà åãî íîìåðå.";
-$MESS ['STPOL_HINT1'] = "Åñëè Âû îáíàðóæèëè íåòî÷íîñòè â ýòîì ñïèñêå, ïîæàëóéñòà, íàïèøèòå â îòäåë ïî ðàáîòå ñ êëèåíòàìè.";
-$MESS ['STPOL_PAYED_Y'] = "(îïëà÷åí)";
-$MESS ['STPOL_PAYED_N'] = "(íå îïëà÷åí)";
+$MESS ['STPOL_CANCEL'] = "ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·";
+$MESS ['STPOL_NO_ORDERS'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹";
+$MESS ['STPOL_HINT'] = "Ð§Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ ÑÐ¾ÑÑ‚Ð°Ð² Ð·Ð°ÐºÐ°Ð·Ð°, Ñ‰ÐµÐ»ÐºÐ½Ð¸Ñ‚Ðµ Ð½Ð° ÐµÐ³Ð¾ Ð½Ð¾Ð¼ÐµÑ€Ðµ.";
+$MESS ['STPOL_HINT1'] = "Ð•ÑÐ»Ð¸ Ð’Ñ‹ Ð¾Ð±Ð½Ð°Ñ€ÑƒÐ¶Ð¸Ð»Ð¸ Ð½ÐµÑ‚Ð¾Ñ‡Ð½Ð¾ÑÑ‚Ð¸ Ð² ÑÑ‚Ð¾Ð¼ ÑÐ¿Ð¸ÑÐºÐµ, Ð¿Ð¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð°, Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ð² Ð¾Ñ‚Ð´ÐµÐ» Ð¿Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ðµ Ñ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°Ð¼Ð¸.";
+$MESS ['STPOL_PAYED_Y'] = "(Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½)";
+$MESS ['STPOL_PAYED_N'] = "(Ð½Ðµ Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½)";
 
-$MESS ['STPOL_DETAIL'] = "Ïîäðîáíîñòè çàêàçà";
-$MESS ['STPOL_SUM'] = "Ñóììà ê îïëàòå:";
-$MESS ['STPOL_PAYED'] = "Îïëà÷åí:";
-$MESS ['STPOL_Y'] = "Äà";
-$MESS ['STPOL_N'] = "Íåò";
+$MESS ['STPOL_DETAIL'] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½Ð¾ÑÑ‚Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS ['STPOL_SUM'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ðº Ð¾Ð¿Ð»Ð°Ñ‚Ðµ:";
+$MESS ['STPOL_PAYED'] = "ÐžÐ¿Ð»Ð°Ñ‡ÐµÐ½:";
+$MESS ['STPOL_Y'] = "Ð”Ð°";
+$MESS ['STPOL_N'] = "ÐÐµÑ‚";
 
-$MESS ['STPOL_F_NAME'] = "Ïîêàçàòü çàêàçû:";
-$MESS ['STPOL_F_ACTIVE'] = "àêòèâíûå";
-$MESS ['STPOL_F_ALL'] = "âñå";
-$MESS ['STPOL_F_COMPLETED'] = "âûïîëíåííûå";
-$MESS ['STPOL_F_CANCELED'] = "îòìåíåííûå";
-$MESS ['STPOL_NO_ORDERS_NEW'] = "Ó âàñ åùå íåò çàêàçîâ íà íàøåì ñàéòå.";
+$MESS ['STPOL_F_NAME'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·Ñ‹:";
+$MESS ['STPOL_F_ACTIVE'] = "Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ðµ";
+$MESS ['STPOL_F_ALL'] = "Ð²ÑÐµ";
+$MESS ['STPOL_F_COMPLETED'] = "Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ðµ";
+$MESS ['STPOL_F_CANCELED'] = "Ð¾Ñ‚Ð¼ÐµÐ½ÐµÐ½Ð½Ñ‹Ðµ";
+$MESS ['STPOL_NO_ORDERS_NEW'] = "Ð£ Ð²Ð°Ñ ÐµÑ‰Ðµ Ð½ÐµÑ‚ Ð·Ð°ÐºÐ°Ð·Ð¾Ð² Ð½Ð° Ð½Ð°ÑˆÐµÐ¼ ÑÐ°Ð¹Ñ‚Ðµ.";
 ?>

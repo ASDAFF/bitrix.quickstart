@@ -1,4 +1,4 @@
-$(document).ready(function(){
+п»ї$(document).ready(function(){
   $(".installer-block-cell-right .instal-btn-wrap").html("");
   start_convert(0,bitrix_sessid, 0);
   
@@ -29,7 +29,7 @@ function start_convert(step, break_point,code){
   $.post("/bitrix/wizards/kriteris/win2utf/convert_utf8.php",{"step":step, "break_point":break_point, "bitrix_sessid":bitrix_sessid, "code_error":code},function(json){
     if(json.error==""){
       if(json.break_point!="")
-        json.RES += "<br><small>Текущая позиция: " + json.break_point+"</small>";  
+        json.RES += "<br><small>РўРµРєСѓС‰Р°СЏ РїРѕР·РёС†РёСЏ: " + json.break_point+"</small>";  
       $(".ajax_convert").html(json.RES).attr("style","");
       if(json.STEEP < 5){
         setTimeout('start_convert("'+json.STEEP+'", "'+json.break_point+'")', 1000);
@@ -40,11 +40,11 @@ function start_convert(step, break_point,code){
       $(".ajax_convert").html(json.error).css("color", "red");
       code_error = json.code;
       if(code_error == 4)
-        $(".installer-block-cell-right .instal-btn-wrap").append('<input type="submit" class="wizard-next-button auto_change" name="StepNext" value="Изменить автоматически">');
+        $(".installer-block-cell-right .instal-btn-wrap").append('<input type="submit" class="wizard-next-button auto_change" name="StepNext" value="РР·РјРµРЅРёС‚СЊ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё">');
       if(code_error == 5)
-        $(".installer-block-cell-right .instal-btn-wrap").append('<input type="submit" class="wizard-next-button go2finish" name="StepNext" value="Пропустить шаг">');
+        $(".installer-block-cell-right .instal-btn-wrap").append('<input type="submit" class="wizard-next-button go2finish" name="StepNext" value="РџСЂРѕРїСѓСЃС‚РёС‚СЊ С€Р°Рі">');
 
-      $(".installer-block-cell-right .instal-btn-wrap").append('&nbsp;&nbsp;&nbsp;<input type="submit" class="wizard-next-button try_change" name="StepNext" value="Повторить попытку">');
+      $(".installer-block-cell-right .instal-btn-wrap").append('&nbsp;&nbsp;&nbsp;<input type="submit" class="wizard-next-button try_change" name="StepNext" value="РџРѕРІС‚РѕСЂРёС‚СЊ РїРѕРїС‹С‚РєСѓ">');
     }
   },"json");   
 }          

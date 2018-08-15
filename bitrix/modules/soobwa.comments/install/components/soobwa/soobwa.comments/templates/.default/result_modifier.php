@@ -1,6 +1,6 @@
 <?
 /*
- * Ïîëó÷àåì àâàòàðêó ïîëüçîâàòåëÿ
+ * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð°Ð²Ð°Ñ‚Ð°Ñ€ÐºÑƒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
  * */
 foreach ($arResult['USERS'] as $key => $arUser){
     if(!empty($arUser['PERSONAL_PHOTO'])){

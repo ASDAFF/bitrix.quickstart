@@ -1,20 +1,20 @@
 <?
-$MESS['DEMOEND'] = "<small style='color:red; margin-top: 10px; display: block;'>Демо-режим модуля \"Мотивируем на регистрацию\" истек. Вы можете приобрести модуль по ссылке <a target='_blank' href='http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/'>http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/</a></small>";
-$MESS['DEMONO'] = "<small style='color:red; margin-top: 10px; display: block;'>Установите <a target='_blank' href='http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/'>модуль \"Мотивируем на регистрацию\"</a></small>";
-$MESS["SOTBIT_DISCOUNTREGISTER_ZAREGISTRIROVALSA_NO"] = "Зарегистрировался новый пользователь(с купоном)";
-$MESS["SOTBIT_DISCOUNTREGISTER_POLQZOVATELA"] = "#USER_ID# - ID пользователя
-#LOGIN# - Логин
+$MESS['DEMOEND'] = "<small style='color:red; margin-top: 10px; display: block;'>Р”РµРјРѕ-СЂРµР¶РёРј РјРѕРґСѓР»СЏ \"РњРѕС‚РёРІРёСЂСѓРµРј РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЋ\" РёСЃС‚РµРє. Р’С‹ РјРѕР¶РµС‚Рµ РїСЂРёРѕР±СЂРµСЃС‚Рё РјРѕРґСѓР»СЊ РїРѕ СЃСЃС‹Р»РєРµ <a target='_blank' href='http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/'>http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/</a></small>";
+$MESS['DEMONO'] = "<small style='color:red; margin-top: 10px; display: block;'>РЈСЃС‚Р°РЅРѕРІРёС‚Рµ <a target='_blank' href='http://marketplace.1c-bitrix.ru/solutions/sotbit.discountregister/'>РјРѕРґСѓР»СЊ \"РњРѕС‚РёРІРёСЂСѓРµРј РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЋ\"</a></small>";
+$MESS["SOTBIT_DISCOUNTREGISTER_ZAREGISTRIROVALSA_NO"] = "Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°Р»СЃСЏ РЅРѕРІС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ(СЃ РєСѓРїРѕРЅРѕРј)";
+$MESS["SOTBIT_DISCOUNTREGISTER_POLQZOVATELA"] = "#USER_ID# - ID РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#LOGIN# - Р›РѕРіРёРЅ
 #EMAIL# - E-mail
-#NAME# - Имя
-#LAST_NAME# - Фамилия
-#USER_IP# - IP пользователя
-#USER_HOST# - Хост пользователя
-#COUPON# - Купон пользователя
-#DISCOUNT_DISPLAY_VALUE# - Величина скидки
+#NAME# - РРјСЏ
+#LAST_NAME# - Р¤Р°РјРёР»РёСЏ
+#USER_IP# - IP РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#USER_HOST# - РҐРѕСЃС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#COUPON# - РљСѓРїРѕРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#DISCOUNT_DISPLAY_VALUE# - Р’РµР»РёС‡РёРЅР° СЃРєРёРґРєРё
 ";
-$MESS["SOTBIT_DISCOUNTREGISTER_VAM_PODAROK_S_SAYTA"] = "Вам подарок с сайта #SITE_NAME#";
-$MESS["SOTBIT_DISCOUNTREGISTER_MY_RADY_PRIVESTVOVAT"] = "мы рады привествовать Вас!<br/><br />
- Благодарим вас за регистрацию на сайте нашего магазина! Надеемся, вам понравятся товары нашего ассортимента! В благодарность за ваше внимание примите наш скромный подарок - #DISCOUNT_DISPLAY_VALUE# скидки на вашу первую покупку!<br />
-<br />Ваш код, активирующий скидку - #COUPON#. Введите его в специальном поле в корзине при оформлении заказа.<br />
-<br />С наилучшими пожеланиями, <br /> <br />Ваш&nbsp;";
+$MESS["SOTBIT_DISCOUNTREGISTER_VAM_PODAROK_S_SAYTA"] = "Р’Р°Рј РїРѕРґР°СЂРѕРє СЃ СЃР°Р№С‚Р° #SITE_NAME#";
+$MESS["SOTBIT_DISCOUNTREGISTER_MY_RADY_PRIVESTVOVAT"] = "РјС‹ СЂР°РґС‹ РїСЂРёРІРµСЃС‚РІРѕРІР°С‚СЊ Р’Р°СЃ!<br/><br />
+ Р‘Р»Р°РіРѕРґР°СЂРёРј РІР°СЃ Р·Р° СЂРµРіРёСЃС‚СЂР°С†РёСЋ РЅР° СЃР°Р№С‚Рµ РЅР°С€РµРіРѕ РјР°РіР°Р·РёРЅР°! РќР°РґРµРµРјСЃСЏ, РІР°Рј РїРѕРЅСЂР°РІСЏС‚СЃСЏ С‚РѕРІР°СЂС‹ РЅР°С€РµРіРѕ Р°СЃСЃРѕСЂС‚РёРјРµРЅС‚Р°! Р’ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ Р·Р° РІР°С€Рµ РІРЅРёРјР°РЅРёРµ РїСЂРёРјРёС‚Рµ РЅР°С€ СЃРєСЂРѕРјРЅС‹Р№ РїРѕРґР°СЂРѕРє - #DISCOUNT_DISPLAY_VALUE# СЃРєРёРґРєРё РЅР° РІР°С€Сѓ РїРµСЂРІСѓСЋ РїРѕРєСѓРїРєСѓ!<br />
+<br />Р’Р°С€ РєРѕРґ, Р°РєС‚РёРІРёСЂСѓСЋС‰РёР№ СЃРєРёРґРєСѓ - #COUPON#. Р’РІРµРґРёС‚Рµ РµРіРѕ РІ СЃРїРµС†РёР°Р»СЊРЅРѕРј РїРѕР»Рµ РІ РєРѕСЂР·РёРЅРµ РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°.<br />
+<br />РЎ РЅР°РёР»СѓС‡С€РёРјРё РїРѕР¶РµР»Р°РЅРёСЏРјРё, <br /> <br />Р’Р°С€&nbsp;";
 ?>

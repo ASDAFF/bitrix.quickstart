@@ -1,4 +1,4 @@
-<?
-$MESS["PORTAL_WIZARD_NAME"] = "Ñìåíà êîäèðîâêè íà ñàéòå";
-$MESS["PORTAL_WIZARD_DESC"] = "ñ window1251 íà UTF8";
+ï»¿<?
+$MESS["PORTAL_WIZARD_NAME"] = "Ð¡Ð¼ÐµÐ½Ð° ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð½Ð° ÑÐ°Ð¹Ñ‚Ðµ";
+$MESS["PORTAL_WIZARD_DESC"] = "Ñ window1251 Ð½Ð° UTF8";
 ?>

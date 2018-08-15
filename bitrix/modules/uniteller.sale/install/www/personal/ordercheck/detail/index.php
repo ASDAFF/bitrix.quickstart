@@ -3,8 +3,8 @@ require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 ?>
 <?
 /**
- * Подключает компонент bitrix:sale.personal.ordercheck.detail сделанный по аналогии со стандартным компонентом bitrix:sale.personal.order.detail
- * Доступен по URL: http://домен_магазина/personal/ordercheck/detail/
+ * РџРѕРґРєР»СЋС‡Р°РµС‚ РєРѕРјРїРѕРЅРµРЅС‚ bitrix:sale.personal.ordercheck.detail СЃРґРµР»Р°РЅРЅС‹Р№ РїРѕ Р°РЅР°Р»РѕРіРёРё СЃРѕ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рј РєРѕРјРїРѕРЅРµРЅС‚РѕРј bitrix:sale.personal.order.detail
+ * Р”РѕСЃС‚СѓРїРµРЅ РїРѕ URL: http://РґРѕРјРµРЅ_РјР°РіР°Р·РёРЅР°/personal/ordercheck/detail/
  * @author r.smoliarenko
  * @author r.sarazhyn
  */

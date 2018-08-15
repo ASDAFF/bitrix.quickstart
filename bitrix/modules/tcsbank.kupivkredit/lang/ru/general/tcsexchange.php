@@ -1,18 +1,18 @@
 <?
-	$MESS["TCS_ORDER_NOT_FOUND"] = "Заказ с таким номером не найден";
-	$MESS["TCS_ERROR_ORDER_PROCESS"] = "Ошибка обработки заказа ORDER_ID";
-	$MESS["TCS_FILL_FIELD"] = "Не заполнено поле \"NAME\" ADDITIONAL_INFO";
-	$MESS["TCS_SITE"]="Сайт";
-	$MESS["TCS_FIO"]="ФИО";
-	$MESS["TCS_PHONE"]="Телефон";
+	$MESS["TCS_ORDER_NOT_FOUND"] = "Р—Р°РєР°Р· СЃ С‚Р°РєРёРј РЅРѕРјРµСЂРѕРј РЅРµ РЅР°Р№РґРµРЅ";
+	$MESS["TCS_ERROR_ORDER_PROCESS"] = "РћС€РёР±РєР° РѕР±СЂР°Р±РѕС‚РєРё Р·Р°РєР°Р·Р° ORDER_ID";
+	$MESS["TCS_FILL_FIELD"] = "РќРµ Р·Р°РїРѕР»РЅРµРЅРѕ РїРѕР»Рµ \"NAME\" ADDITIONAL_INFO";
+	$MESS["TCS_SITE"]="РЎР°Р№С‚";
+	$MESS["TCS_FIO"]="Р¤РРћ";
+	$MESS["TCS_PHONE"]="РўРµР»РµС„РѕРЅ";
 	$MESS["TCS_EMAIL"]="E-mail";
-	$MESS["TCS_COMMENT"]="Комментарий";	
-	$MESS["TCS_WRONG_EMAIL"]="Неверно заполнено поле \"E-mail\"";	
-	$MESS["TCS_SUCCESS_SEND"]="Ваша заявка была успешно отправлена";	
-	$MESS["TCS_CONNECTION_ERROR"]="Произошёл сбой при соединении с внешним источником";	
-	$MESS["TCS_SITE_NAME_SETTING_LINK"]="(настройка <a href = '/bitrix/admin/site_edit.php'>тут</a>)";	
-	$MESS["TCS_ERROR_NO_COURIER"]="Не выбран тип доставки документов";	
-	$MESS["TCS_ERROR_RETURNED_AMOUNT"]="Неверная сумма возврата банку";	
-	$MESS["TCS_CASH_RETURNED_TO_CUSTOMER"]="Неверная сумма возврата клиенту";	
-	$MESS["TCS_CUSTOMER_GT"]="Сумма возврата клиенту превышает сумму первоначального взноса";	
+	$MESS["TCS_COMMENT"]="РљРѕРјРјРµРЅС‚Р°СЂРёР№";	
+	$MESS["TCS_WRONG_EMAIL"]="РќРµРІРµСЂРЅРѕ Р·Р°РїРѕР»РЅРµРЅРѕ РїРѕР»Рµ \"E-mail\"";	
+	$MESS["TCS_SUCCESS_SEND"]="Р’Р°С€Р° Р·Р°СЏРІРєР° Р±С‹Р»Р° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°";	
+	$MESS["TCS_CONNECTION_ERROR"]="РџСЂРѕРёР·РѕС€С‘Р» СЃР±РѕР№ РїСЂРё СЃРѕРµРґРёРЅРµРЅРёРё СЃ РІРЅРµС€РЅРёРј РёСЃС‚РѕС‡РЅРёРєРѕРј";	
+	$MESS["TCS_SITE_NAME_SETTING_LINK"]="(РЅР°СЃС‚СЂРѕР№РєР° <a href = '/bitrix/admin/site_edit.php'>С‚СѓС‚</a>)";	
+	$MESS["TCS_ERROR_NO_COURIER"]="РќРµ РІС‹Р±СЂР°РЅ С‚РёРї РґРѕСЃС‚Р°РІРєРё РґРѕРєСѓРјРµРЅС‚РѕРІ";	
+	$MESS["TCS_ERROR_RETURNED_AMOUNT"]="РќРµРІРµСЂРЅР°СЏ СЃСѓРјРјР° РІРѕР·РІСЂР°С‚Р° Р±Р°РЅРєСѓ";	
+	$MESS["TCS_CASH_RETURNED_TO_CUSTOMER"]="РќРµРІРµСЂРЅР°СЏ СЃСѓРјРјР° РІРѕР·РІСЂР°С‚Р° РєР»РёРµРЅС‚Сѓ";	
+	$MESS["TCS_CUSTOMER_GT"]="РЎСѓРјРјР° РІРѕР·РІСЂР°С‚Р° РєР»РёРµРЅС‚Сѓ РїСЂРµРІС‹С€Р°РµС‚ СЃСѓРјРјСѓ РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅРѕРіРѕ РІР·РЅРѕСЃР°";	
 ?>

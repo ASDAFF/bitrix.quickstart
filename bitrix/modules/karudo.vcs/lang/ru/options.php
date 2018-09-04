@@ -1,14 +1,14 @@
 <?
-$MESS["VCS_DRIVER_ACTIVE"] = "Àêòèâíî";
-$MESS["VCS_DRIVER_DOC_ROOT"] = "Ïóòü ê êîðíåâîé äèðåêòîðèè";
-$MESS["VCS_DRIVER_EXTENSIONS"] = "Ðàñøèðåíèÿ";
-$MESS["VCS_DRIVER_IN_DIRS"] = "Èñêàòü òîëüêî â äèðåêòîðèÿõ";
-$MESS["VCS_DRIVER_EX_DIRS"] = "Èñêëþ÷åííûå äèðåêòîðèè";
-$MESS["VCS_DRIVER_ADD"] = "Äîáàâèòü";
-$MESS["VCS_DRIVER_TAB_SET"] = "Èñòî÷íèêè";
-$MESS["VCS_DRIVER_TAB_TITLE_SET"] = "Íàñòîéêè èñòî÷íèêîâ";
-$MESS["VCS_STEP_EXECUTION_TIME"] = "Äëèòåëüíîñòü øàãà";
-$MESS["VCS_GOTO_EDIT_DRIVERS"] = "Ïåðåéòè ê ðåäàêòèðîâàíèþ èñòî÷íèêîâ";
-$MESS["VCS_SHOW_DRIVERS_IN_MENU"] = "Ïîêàçûâàòü ïóíêò &quot;Ðåäàêòèðîâàòü èñòî÷íèêè äàííûõ&quot; â ìåíþ";
-$MESS["VCS_SHOW_PANEL_BUTTONS"] = "Ïîêàçûâàòü êíîïêè ìîäóëÿ â ïàíåëè";
+$MESS["VCS_DRIVER_ACTIVE"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾";
+$MESS["VCS_DRIVER_DOC_ROOT"] = "ÐŸÑƒÑ‚ÑŒ Ðº ÐºÐ¾Ñ€Ð½ÐµÐ²Ð¾Ð¹ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ð¸";
+$MESS["VCS_DRIVER_EXTENSIONS"] = "Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ñ";
+$MESS["VCS_DRIVER_IN_DIRS"] = "Ð˜ÑÐºÐ°Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð² Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸ÑÑ…";
+$MESS["VCS_DRIVER_EX_DIRS"] = "Ð˜ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð½Ñ‹Ðµ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸Ð¸";
+$MESS["VCS_DRIVER_ADD"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS["VCS_DRIVER_TAB_SET"] = "Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¸";
+$MESS["VCS_DRIVER_TAB_TITLE_SET"] = "ÐÐ°ÑÑ‚Ð¾Ð¹ÐºÐ¸ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð²";
+$MESS["VCS_STEP_EXECUTION_TIME"] = "Ð”Ð»Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ ÑˆÐ°Ð³Ð°";
+$MESS["VCS_GOTO_EDIT_DRIVERS"] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸ÑŽ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð²";
+$MESS["VCS_SHOW_DRIVERS_IN_MENU"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚ &quot;Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ…&quot; Ð² Ð¼ÐµÐ½ÑŽ";
+$MESS["VCS_SHOW_PANEL_BUTTONS"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð² Ð¿Ð°Ð½ÐµÐ»Ð¸";
 ?>

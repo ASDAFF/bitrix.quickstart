@@ -1,9 +1,9 @@
 <?
-$MESS["VCS_EMPTY_REVISION_ID"] = "Îøèáêà ïðè ñîçäàíèè ðåâèçèè";
-$MESS["VCS_NO_ITEMS_FOR_COMMIT"] = "Íå÷åãî ôèêñèðîâàòü";
-$MESS["VCS_UNKNOWN_REVISION"] = "Íåèçâåñòíàÿ ðåâèçèÿ";
-$MESS["VCS_UNKNOWN_FILE"] = "Íåò òàêîãî ôàéëà â ðåïîçèòîðèè";
-$MESS["VCS_EMPTY_REVISION_DESC"] = "Íå ââåäåíî îïèñàíèå ðåâèçèè";
-$MESS['VCS_CHECK_DELETED'] = 'Ïðîâåðêà óäàëåííûõ ôàéëîâ';
-$MESS['VCS_CHECK_DRIVER'] = 'Ïðîâåðêà èñòî÷íèêà äàííûõ: %NAME%';
+$MESS["VCS_EMPTY_REVISION_ID"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_NO_ITEMS_FOR_COMMIT"] = "ÐÐµÑ‡ÐµÐ³Ð¾ Ñ„Ð¸ÐºÑÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+$MESS["VCS_UNKNOWN_REVISION"] = "ÐÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ð°Ñ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ñ";
+$MESS["VCS_UNKNOWN_FILE"] = "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð° Ð² Ñ€ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¸";
+$MESS["VCS_EMPTY_REVISION_DESC"] = "ÐÐµ Ð²Ð²ÐµÐ´ÐµÐ½Ð¾ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS['VCS_CHECK_DELETED'] = 'ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑƒÐ´Ð°Ð»ÐµÐ½Ð½Ñ‹Ñ… Ñ„Ð°Ð¹Ð»Ð¾Ð²';
+$MESS['VCS_CHECK_DRIVER'] = 'ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ° Ð´Ð°Ð½Ð½Ñ‹Ñ…: %NAME%';
 ?>

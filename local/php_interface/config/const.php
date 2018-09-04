@@ -6,6 +6,8 @@
  * Time: 20:55
  */
 
+define("LOG_FILENAME", $_SERVER["DOCUMENT_ROOT"] . "/local/logs/AddMessage2Log.txt");
+
 /**
  * IBLOCK IDs
  */

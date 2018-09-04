@@ -1,13 +1,13 @@
 <?
-$MESS["PARAMETERS_LINK_NAME"] = "Èäåíòèôèêàòîð ñòðàíèöû";
-$MESS["PARAMETERS_TYPE_NAME"] = "Òèï";
-$MESS["PARAMETERS_VALUES_0"] = "Ó÷àñòíèêè";
-$MESS["PARAMETERS_VALUES_1"] = "Òîëüêî íàçâàíèå";
-$MESS["PARAMETERS_VALUES_2"] = "Íîâîñòè";
-$MESS["PARAMETERS_WIDTH_NAME"] = "Øèðèíà";
-$MESS["PARAMETERS_HEIGHT_NAME"] = "Âûñîòà";
-$MESS["PARAMETERS_COLOR_BACKGROUND_NAME"] = "Öâåò ôîíà";
-$MESS["PARAMETERS_COLOR_TEXT_NAME"] = "Öâåò òåêñòà";
-$MESS["PARAMETERS_COLOR_BUTTON_NAME"] = "Öâåò êíîïîê";
-$MESS["PARAMETERS_WIDE_NAME"] = "Ðàñøèðåííûé ðåæèì";
+$MESS["PARAMETERS_LINK_NAME"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹";
+$MESS["PARAMETERS_TYPE_NAME"] = "Ð¢Ð¸Ð¿";
+$MESS["PARAMETERS_VALUES_0"] = "Ð£Ñ‡Ð°ÑÑ‚Ð½Ð¸ÐºÐ¸";
+$MESS["PARAMETERS_VALUES_1"] = "Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["PARAMETERS_VALUES_2"] = "ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸";
+$MESS["PARAMETERS_WIDTH_NAME"] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS["PARAMETERS_HEIGHT_NAME"] = "Ð’Ñ‹ÑÐ¾Ñ‚Ð°";
+$MESS["PARAMETERS_COLOR_BACKGROUND_NAME"] = "Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð°";
+$MESS["PARAMETERS_COLOR_TEXT_NAME"] = "Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð°";
+$MESS["PARAMETERS_COLOR_BUTTON_NAME"] = "Ð¦Ð²ÐµÑ‚ ÐºÐ½Ð¾Ð¿Ð¾Ðº";
+$MESS["PARAMETERS_WIDE_NAME"] = "Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ñ‹Ð¹ Ñ€ÐµÐ¶Ð¸Ð¼";
 ?>

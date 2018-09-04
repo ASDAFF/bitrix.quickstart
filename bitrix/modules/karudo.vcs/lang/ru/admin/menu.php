@@ -1,16 +1,16 @@
 <?php
 
-$MESS ['VCS_MENU_ITEM'] = 'Ñèñòåìà êîíòðîëÿ âåðñèé';
-$MESS ['VCS_MENU_TITLE'] = 'Ñèñòåìà êîíòðîëÿ âåðñèé';
+$MESS ['VCS_MENU_ITEM'] = 'Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹';
+$MESS ['VCS_MENU_TITLE'] = 'Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹';
 
-$MESS ['VCS_CHECK_FOR_NEW'] = 'Ïðîâåðêà èçìåíèâøèõñÿ ôàéëîâ';
-$MESS ['VCS_CHECK_FOR_NEW_ALT'] = 'Ïðîâåðêà èçìåíèâøèõñÿ ôàéëîâ';
+$MESS ['VCS_CHECK_FOR_NEW'] = 'ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸Ð·Ð¼ÐµÐ½Ð¸Ð²ÑˆÐ¸Ñ…ÑÑ Ñ„Ð°Ð¹Ð»Ð¾Ð²';
+$MESS ['VCS_CHECK_FOR_NEW_ALT'] = 'ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð¸Ð·Ð¼ÐµÐ½Ð¸Ð²ÑˆÐ¸Ñ…ÑÑ Ñ„Ð°Ð¹Ð»Ð¾Ð²';
 
-$MESS ['VCS_REPOSITORY_ITEMS'] = 'Ôàéëû â ðåïîçèòîðèè';
-$MESS ['VCS_REPOSITORY_ITEMS_ALT'] = 'Ôàéëû â ðåïîçèòîðèè';
+$MESS ['VCS_REPOSITORY_ITEMS'] = 'Ð¤Ð°Ð¹Ð»Ñ‹ Ð² Ñ€ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¸';
+$MESS ['VCS_REPOSITORY_ITEMS_ALT'] = 'Ð¤Ð°Ð¹Ð»Ñ‹ Ð² Ñ€ÐµÐ¿Ð¾Ð·Ð¸Ñ‚Ð¾Ñ€Ð¸Ð¸';
 
-$MESS ['VCS_REVISIONS'] = 'Ðåâèçèè';
-$MESS ['VCS_REVISIONS_ALT'] = 'Ðåâèçèè';
+$MESS ['VCS_REVISIONS'] = 'Ð ÐµÐ²Ð¸Ð·Ð¸Ð¸';
+$MESS ['VCS_REVISIONS_ALT'] = 'Ð ÐµÐ²Ð¸Ð·Ð¸Ð¸';
 
-$MESS ['VCS_MENU_DRIVERS'] = 'Èñòî÷íèêè äàííûõ';
-$MESS ['VCS_MENU_DRIVERS_ALT'] = 'ðåäàêòèðîâàíèå èñòî÷íèêîâ äàííûõ';
+$MESS ['VCS_MENU_DRIVERS'] = 'Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ…';
+$MESS ['VCS_MENU_DRIVERS_ALT'] = 'Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð² Ð´Ð°Ð½Ð½Ñ‹Ñ…';

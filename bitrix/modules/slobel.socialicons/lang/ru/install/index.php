@@ -1,6 +1,6 @@
 <?
-$MESS["slobel.socialicons_MODULE_NAME"] = "Èêîíêè ñîöèàëüíûõ ñåòåé";
-$MESS["slobel.socialicons_MODULE_DESC"] = "Èêîíêè äëÿ ïåðåõîäà â ãðóïïû ñîçäàííûå â ñîöèàëüíûõ ñåòÿõ.";
+$MESS["slobel.socialicons_MODULE_NAME"] = "Ð˜ÐºÐ¾Ð½ÐºÐ¸ ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÐµÐ¹";
+$MESS["slobel.socialicons_MODULE_DESC"] = "Ð˜ÐºÐ¾Ð½ÐºÐ¸ Ð´Ð»Ñ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð° Ð² Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ ÑÐ¾Ð·Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð² ÑÐ¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑÐµÑ‚ÑÑ….";
 $MESS["slobel.socialicons_PARTNER_NAME"] = "SLOBEL Studio";
 $MESS["slobel.socialicons_PARTNER_URI"] = "http://slobel.ru/";
 ?>

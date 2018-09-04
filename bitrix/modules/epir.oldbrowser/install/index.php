@@ -64,7 +64,7 @@ Class epir_oldbrowser extends CModule
         $this->InstallDB(false);
         $this->InstallFiles();
 
-        // äëÿ âûáîðà áðàóçåðîâ
+        // Ð´Ð»Ñ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð²
         $ie_option = array('ie6','ie7','ie8');
         $ie_val = array('Y','Y','Y');
         $ie_option_descr = array(GetMessage("OBM_TEXT_MSIE6"),GetMessage("OBM_TEXT_MSIE7"),GetMessage("OBM_TEXT_MSIE8"));
@@ -79,7 +79,7 @@ Class epir_oldbrowser extends CModule
         COption::SetOptionString($this->MODULE_ID, $option_code[2], $option_val[2], $option_descr[2]);
         COption::SetOptionString($this->MODULE_ID, $option_code[3], $option_val[3], $option_descr[3]);
         COption::SetOptionString($this->MODULE_ID, $option_code[4], $option_val[4], $option_descr[4]);
-        // äëÿ áðàóçåðîâ
+        // Ð´Ð»Ñ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð²
         COption::SetOptionString($this->MODULE_ID, $ie_option[0], $ie_val[0],$ie_option_descr[0]);
         COption::SetOptionString($this->MODULE_ID, $ie_option[1], $ie_val[1],$ie_option_descr[1]);
         COption::SetOptionString($this->MODULE_ID, $ie_option[2], $ie_val[2],$ie_option_descr[2]);

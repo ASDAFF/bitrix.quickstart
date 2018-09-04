@@ -1,5 +1,5 @@
 <?
-$MESS["VCS_ERROR_NO_DRIVER"] = "Íå íàéäåí äðàéâåð";
-$MESS["VCS_ERROR_EMPTY_DIR"] = "Ââåäèòå äèðåêòîðèþ";
-$MESS["VCS_FILES_EXPORTED"] = "Âûãðóæåíî ôàéëîâ: ";
+$MESS["VCS_ERROR_NO_DRIVER"] = "ÐÐµ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð´Ñ€Ð°Ð¹Ð²ÐµÑ€";
+$MESS["VCS_ERROR_EMPTY_DIR"] = "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¸Ñ€ÐµÐºÑ‚Ð¾Ñ€Ð¸ÑŽ";
+$MESS["VCS_FILES_EXPORTED"] = "Ð’Ñ‹Ð³Ñ€ÑƒÐ¶ÐµÐ½Ð¾ Ñ„Ð°Ð¹Ð»Ð¾Ð²: ";
 ?>

@@ -1,14 +1,14 @@
 <?
-$MESS["VCS_REVISIONS"] = "Ðåâèçèè";
-$MESS["VCS_HEADER_REVISION_ID"] = "Íîìåð ðåâèçèè";
-$MESS["VCS_HEADER_REVISION_DESC"] = "Îïèñàíèå ðåâèçèè";
-$MESS["VCS_HEADER_TIMESTAMP_X"] = "Äàòà";
-$MESS["VCS_HEADER_USER_LOGIN"] = "Ïîëüçîâàòåëü";
-$MESS["VCS_SHOW_SOURCE"] = "Ïîñìîòðåòü";
-$MESS["VCS_SHOW_CHANGES"] = "Èçìåíåíèÿ ñ ïðåäûäóùåé âåðñèè";
-$MESS["VCS_PAGE_HEADER"] = "Ñïèñîê ðåâèçèé";
-$MESS["VCS_RESET_FROM_THIS_REV"] = "Âîññòàíîâèòü èç ýòîé ðåâèçèè";
-$MESS["VCS_SHOW_REVISIONS_NOTE"] = "Ïðîñìîòð èñòîðèè: ";
-$MESS["VCS_RESET_CONFIRM"] = "Âû óâåðåíû? Ýòî äåéñòâèå ìîæåò áûòü íåîáðàòèìî!";
-$MESS["VCS_DOWNLOAD"] = "Ñêà÷àòü";
+$MESS["VCS_REVISIONS"] = "Ð ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_HEADER_REVISION_ID"] = "ÐÐ¾Ð¼ÐµÑ€ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_HEADER_REVISION_DESC"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_HEADER_TIMESTAMP_X"] = "Ð”Ð°Ñ‚Ð°";
+$MESS["VCS_HEADER_USER_LOGIN"] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["VCS_SHOW_SOURCE"] = "ÐŸÐ¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ";
+$MESS["VCS_SHOW_CHANGES"] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ñ Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐ¹ Ð²ÐµÑ€ÑÐ¸Ð¸";
+$MESS["VCS_PAGE_HEADER"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¹";
+$MESS["VCS_RESET_FROM_THIS_REV"] = "Ð’Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¸Ð· ÑÑ‚Ð¾Ð¹ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_SHOW_REVISIONS_NOTE"] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ð¸: ";
+$MESS["VCS_RESET_CONFIRM"] = "Ð’Ñ‹ ÑƒÐ²ÐµÑ€ÐµÐ½Ñ‹? Ð­Ñ‚Ð¾ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð½ÐµÐ¾Ð±Ñ€Ð°Ñ‚Ð¸Ð¼Ð¾!";
+$MESS["VCS_DOWNLOAD"] = "Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ";
 ?>

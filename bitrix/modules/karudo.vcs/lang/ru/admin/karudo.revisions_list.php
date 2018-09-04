@@ -1,14 +1,14 @@
 <?
-$MESS["VCS_REVISIONS"] = "Ðåâèçèè";
-$MESS["VCS_REVISIONS_TITLE"] = "Ðåâèçèè";
-$MESS["VCS_HEADER_DESCRIPTION"] = "Îïèñàíèå";
-$MESS["VCS_HEADER_USER_LOGIN"] = "Ïîëüçîâàòåëü";
-$MESS["VCS_HEADER_DATEADD"] = "Äàòà";
-$MESS["VCS_HEADER_COUNT_ITEMS"] = "Ôàéëîâ â ðåâèçèè";
-$MESS["VCS_REVISION_ITEMS"] = "Ôàéëû â ðåâèçèè";
-$MESS["VCS_RESET_REV"] = "Âîññòàíîâèòü ôàéëû èçìåíåííûå ïîñëå ýòîé ðåâèçèè";
-$MESS["VCS_ACHTUNG"] = "Áóäüòå îñòîðîæíû, ïîñëåäñòâèÿ ýòîé îïåðàöèè ìîãóò áûòü íåîáðàòèìû";
-$MESS["VCS_DRIVERS_SEL"] = "Èñòî÷íèêè äàííûõ";
-$MESS["VCS_DRIVERS_SEL_TEXT"] = "Ôàéëû èç êàêèõ èñòî÷íèêîâ íóæíî âîññòàíîâèòü?";
-$MESS["VCS_DONE"] = "Ãîòîâî";
+$MESS["VCS_REVISIONS"] = "Ð ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_REVISIONS_TITLE"] = "Ð ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_HEADER_DESCRIPTION"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS["VCS_HEADER_USER_LOGIN"] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS["VCS_HEADER_DATEADD"] = "Ð”Ð°Ñ‚Ð°";
+$MESS["VCS_HEADER_COUNT_ITEMS"] = "Ð¤Ð°Ð¹Ð»Ð¾Ð² Ð² Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_REVISION_ITEMS"] = "Ð¤Ð°Ð¹Ð»Ñ‹ Ð² Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_RESET_REV"] = "Ð’Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ñ‹ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð¾ÑÐ»Ðµ ÑÑ‚Ð¾Ð¹ Ñ€ÐµÐ²Ð¸Ð·Ð¸Ð¸";
+$MESS["VCS_ACHTUNG"] = "Ð‘ÑƒÐ´ÑŒÑ‚Ðµ Ð¾ÑÑ‚Ð¾Ñ€Ð¾Ð¶Ð½Ñ‹, Ð¿Ð¾ÑÐ»ÐµÐ´ÑÑ‚Ð²Ð¸Ñ ÑÑ‚Ð¾Ð¹ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð½ÐµÐ¾Ð±Ñ€Ð°Ñ‚Ð¸Ð¼Ñ‹";
+$MESS["VCS_DRIVERS_SEL"] = "Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ…";
+$MESS["VCS_DRIVERS_SEL_TEXT"] = "Ð¤Ð°Ð¹Ð»Ñ‹ Ð¸Ð· ÐºÐ°ÐºÐ¸Ñ… Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸ÐºÐ¾Ð² Ð½ÑƒÐ¶Ð½Ð¾ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ?";
+$MESS["VCS_DONE"] = "Ð“Ð¾Ñ‚Ð¾Ð²Ð¾";
 ?>

@@ -1,11 +1,11 @@
 <?
-$MESS["VCS_LAST_CHECK_TIME"] = "Ïîñëåäíÿÿ ïðîâåðêà áûëà ïðîèçâåäåíà #DATETIME#";
-$MESS["VCS_LAST_CHECK_NEVER"] = "Ïðîâåðêà íèêîãäà íå ïðîèçâîäèëàñü";
-$MESS["KARUDO_VCS_TOCKA_VOSSTANOVLENIA"] = "Òî÷êà âîññòàíîâëåíèÿ";
-$MESS["KARUDO_VCS_TOCKA_VOSSTANOVLENIA1"] = "Òî÷êà âîññòàíîâëåíèÿ ñèñòåìû";
-$MESS["KARUDO_VCS_SOZDANIE_NOVOY_TOCKI"] = "Ñîçäàíèå íîâîé òî÷êè âîññòàíîâëåíèÿ ñèñòåìû èëè îòêàò ê ïðåäûäóùåé";
-$MESS["KARUDO_VCS_SOZDANIE_TOCKI_VOSST"] = "Ñîçäàíèå òî÷êè âîññòàíîâëåíèÿ";
-$MESS["KARUDO_VCS_SOZDANIE_NOVOY_TOCKI1"] = "Ñîçäàíèå íîâîé òî÷êè âîññòàíîâëåíèÿ ñèñòåìû";
-$MESS["KARUDO_VCS_OTKAT_K_PREDYDUSEY_T"] = "Îòêàò ê ïðåäûäóùåé òî÷êå";
-$MESS["KARUDO_VCS_OTKAT_K_PREDYDUSEY_T1"] = "Îòêàò ê ïðåäûäóùåé òî÷êå âîññòàíîâëåíèÿ ñèñòåìû";
+$MESS["VCS_LAST_CHECK_TIME"] = "ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÑÑ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð±Ñ‹Ð»Ð° Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð° #DATETIME#";
+$MESS["VCS_LAST_CHECK_NEVER"] = "ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð¸ÐºÐ¾Ð³Ð´Ð° Ð½Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ð»Ð°ÑÑŒ";
+$MESS["KARUDO_VCS_TOCKA_VOSSTANOVLENIA"] = "Ð¢Ð¾Ñ‡ÐºÐ° Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ";
+$MESS["KARUDO_VCS_TOCKA_VOSSTANOVLENIA1"] = "Ð¢Ð¾Ñ‡ÐºÐ° Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹";
+$MESS["KARUDO_VCS_SOZDANIE_NOVOY_TOCKI"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹ Ð¸Ð»Ð¸ Ð¾Ñ‚ÐºÐ°Ñ‚ Ðº Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐ¹";
+$MESS["KARUDO_VCS_SOZDANIE_TOCKI_VOSST"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ";
+$MESS["KARUDO_VCS_SOZDANIE_NOVOY_TOCKI1"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹";
+$MESS["KARUDO_VCS_OTKAT_K_PREDYDUSEY_T"] = "ÐžÑ‚ÐºÐ°Ñ‚ Ðº Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐ¹ Ñ‚Ð¾Ñ‡ÐºÐµ";
+$MESS["KARUDO_VCS_OTKAT_K_PREDYDUSEY_T1"] = "ÐžÑ‚ÐºÐ°Ñ‚ Ðº Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐ¹ Ñ‚Ð¾Ñ‡ÐºÐµ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹";
 ?>

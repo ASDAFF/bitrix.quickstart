@@ -1,6 +1,6 @@
 <?
-$MESS["slobel.statusmessenger_MODULE_NAME"] = "Îòîáðàæåíèå ñòàòóñîâ ìåññåíäæåðîâ";
-$MESS["slobel.statusmessenger_MODULE_DESC"] = "Îòîáðàæåíèå ñòàòóñîâ ìåññåíäæåðîâ ICQ, Jabber, Mail Agent, Skype è ò.ä.";
+$MESS["slobel.statusmessenger_MODULE_NAME"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ¾Ð² Ð¼ÐµÑÑÐµÐ½Ð´Ð¶ÐµÑ€Ð¾Ð²";
+$MESS["slobel.statusmessenger_MODULE_DESC"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ¾Ð² Ð¼ÐµÑÑÐµÐ½Ð´Ð¶ÐµÑ€Ð¾Ð² ICQ, Jabber, Mail Agent, Skype Ð¸ Ñ‚.Ð´.";
 $MESS["slobel.statusmessenger_PARTNER_NAME"] = "SLOBEL Studio";
 $MESS["slobel.statusmessenger_PARTNER_URI"] = "http://slobel.ru/";
 ?>

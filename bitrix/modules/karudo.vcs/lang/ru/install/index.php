@@ -1,11 +1,11 @@
 <?php
-$MESS['SCOM_INSTALL_NAME'] = 'Ñèñòåìà êîíòðîëÿ âåðñèé';
-$MESS['SCOM_INSTALL_DESCRIPTION'] = 'Ñèñòåìà êîíòðîëÿ âåðñèé ôàéëîâ, ñâîéñòâ èíôîáëîêîâ è ò.ï.';
-$MESS['SCOM_INSTALL_TITLE'] = 'Óñòàíîâêà ìîäóëÿ';
-$MESS['SCOM_UNINSTALL_TITLE'] = 'Óäàëåíèå ìîäóëÿ';
+$MESS['SCOM_INSTALL_NAME'] = 'Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹';
+$MESS['SCOM_INSTALL_DESCRIPTION'] = 'Ð¡Ð¸ÑÑ‚ÐµÐ¼Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»Ñ Ð²ÐµÑ€ÑÐ¸Ð¹ Ñ„Ð°Ð¹Ð»Ð¾Ð², ÑÐ²Ð¾Ð¹ÑÑ‚Ð² Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð² Ð¸ Ñ‚.Ð¿.';
+$MESS['SCOM_INSTALL_TITLE'] = 'Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ';
+$MESS['SCOM_UNINSTALL_TITLE'] = 'Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ';
 $MESS['SPER_PARTNER'] = 'Karudo Projects';
 $MESS['PARTNER_URI'] = 'http://www.karudo.ru/';
 
-$MESS['VCS_DRIVERNAME_KERNEL'] = 'ßäðî';
-$MESS['VCS_DRIVERNAME_SITE'] = 'Ïóáëè÷íàÿ ÷àñòü ñàéòà #NAME# (#CODE#)';
+$MESS['VCS_DRIVERNAME_KERNEL'] = 'Ð¯Ð´Ñ€Ð¾';
+$MESS['VCS_DRIVERNAME_SITE'] = 'ÐŸÑƒÐ±Ð»Ð¸Ñ‡Ð½Ð°Ñ Ñ‡Ð°ÑÑ‚ÑŒ ÑÐ°Ð¹Ñ‚Ð° #NAME# (#CODE#)';
 ?>

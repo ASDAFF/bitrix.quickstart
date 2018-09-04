@@ -42,7 +42,7 @@ $strTitle = "";
 			echo "\n",str_repeat("\t", $CURRENT_DEPTH-$TOP_DEPTH),"</li>";
 		}
 
-		$count = $arParams["COUNT_ELEMENTS"] && $arSection["ELEMENT_CNT"] ? " (".$arSection["ELEMENT_CNT"].")" : "";
+		$count = $arParams["COUNT_ELEMENTS"] && $arSection["ELEMENT_CNT"] ? "Â (".$arSection["ELEMENT_CNT"].")" : "";
 
 		if ($_REQUEST['SECTION_ID']==$arSection['ID'])
 		{

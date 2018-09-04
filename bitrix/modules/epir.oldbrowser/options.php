@@ -6,7 +6,7 @@ IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/options.ph
 IncludeModuleLangFile(__FILE__);
 
 $module_id = "epir.oldbrowser";
-// для выбора браузеров
+// РґР»СЏ РІС‹Р±РѕСЂР° Р±СЂР°СѓР·РµСЂРѕРІ
 $ie_option = array('ie6','ie7','ie8');
 $ie_val = array('Y','Y','Y');
 $ie_option_descr = array(GetMessage("OBM_TEXT_MSIE6"),GetMessage("OBM_TEXT_MSIE7"),GetMessage("OBM_TEXT_MSIE8"));
@@ -41,7 +41,7 @@ if($REQUEST_METHOD=="POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check
         COption::SetOptionString($module_id, $option_code[2], $option_val[2], $option_descr[2]);
         COption::SetOptionString($module_id, $option_code[3], $option_val[3], $option_descr[3]);
         COption::SetOptionString($module_id, $option_code[4], $option_val[4], $option_descr[4]);
-        // для браузеров
+        // РґР»СЏ Р±СЂР°СѓР·РµСЂРѕРІ
         COption::SetOptionString($module_id, $ie_option[0], $ie_val[0],$ie_option_descr[0]);
         COption::SetOptionString($module_id, $ie_option[1], $ie_val[1],$ie_option_descr[1]);
         COption::SetOptionString($module_id, $ie_option[2], $ie_val[2],$ie_option_descr[2]);
@@ -49,12 +49,12 @@ if($REQUEST_METHOD=="POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check
     else
     {
 
-        ////если галка стоит
+        ////РµСЃР»Рё РіР°Р»РєР° СЃС‚РѕРёС‚
         if($_REQUEST[$option_code[0]] == "Y" ){
             RegisterModuleDependences("main", "OnEpilog", $module_id, "oldbrowser_class", "oldbrowser_addScript");
             COption::SetOptionString($module_id, $option_code[0], 'Y');
         }else{
-            /// усли нет галки
+            /// СѓСЃР»Рё РЅРµС‚ РіР°Р»РєРё
             UnRegisterModuleDependences("main", "OnEpilog", $module_id, "oldbrowser_class", "oldbrowser_addScript");
         }
 
@@ -63,7 +63,7 @@ if($REQUEST_METHOD=="POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check
         $val_2 = $_POST[htmlspecialchars($option_code[2])];
         $val_3 = $_POST[htmlspecialchars($option_code[3])];
         $jquery = $_POST[htmlspecialchars($option_code[4])];
-        // добавляем возможность выбирать браузеры
+        // РґРѕР±Р°РІР»СЏРµРј РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІС‹Р±РёСЂР°С‚СЊ Р±СЂР°СѓР·РµСЂС‹
         $ie6 = $_POST[htmlspecialchars($ie_option[0])];
         $ie7 = $_POST[htmlspecialchars($ie_option[1])];
         $ie8 = $_POST[htmlspecialchars($ie_option[2])];
@@ -74,7 +74,7 @@ if($REQUEST_METHOD=="POST" && strlen($Update.$Apply.$RestoreDefaults)>0 && check
         COption::SetOptionString($module_id, $option_code[2], $val_2, $option_descr[2]);
         COption::SetOptionString($module_id, $option_code[3], $val_3, $option_descr[3]);
         COption::SetOptionString($module_id, $option_code[4], $jquery, $option_descr[4]);
-        // для браузеров
+        // РґР»СЏ Р±СЂР°СѓР·РµСЂРѕРІ
         COption::SetOptionString($module_id, $ie_option[0], $ie6, $ie_val[0]);
         COption::SetOptionString($module_id, $ie_option[1], $ie7, $ie_val[1]);
         COption::SetOptionString($module_id, $ie_option[2], $ie8, $ie_val[2]);

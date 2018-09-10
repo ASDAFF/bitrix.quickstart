@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	}
 }
 $aTabs = array(
-	array("DIV" => "main", "TAB" => "Íàñòðîéêè", "ICON" => "perfmon_settings", "TITLE" => GetMessage("MAIN_TAB_TITLE_SET")),	
+	array("DIV" => "main", "TAB" => "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸", "ICON" => "perfmon_settings", "TITLE" => GetMessage("MAIN_TAB_TITLE_SET")),	
 	array('DIV' => 'rights', 'TAB' => GetMessage('MAIN_TAB_RIGHTS'), 'ICON' => 'wiki_settings', 'TITLE' => GetMessage('MAIN_TAB_TITLE_RIGHTS')),
 );	
 $tabControl = new CAdminTabControl("tabControl", $aTabs);

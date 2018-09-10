@@ -1,12 +1,12 @@
 <?
-$MESS["SLOBEL_CONNECTJQ_INSTALL_TITLE"] = "Óñòàíîâêà ìîäóëÿ: Ïîäêëþ÷åíèå JQuery è äðóãèõ áèáëèîòåê";
-$MESS["SLOBEL_CONNECTJQ_UNINSTALL_TITLE"] = "Óäàëåíèå ìîäóëÿ: Ïîäêëþ÷åíèå JQuery è äðóãèõ áèáëèîòåê";
-$MESS["SLOBEL_CONNECTJQ_INSTALL_ACCESS_DENIED"] = "Äîñòóï çàïðåùåí";
-$MESS["SLOBEL_CONNECTJQ_INSTALL_FULL_ACCESS"] = "Ïîëíûé äîñòóï";
-$MESS["slobel.socialicons_MODULE_NAME"] = "Ïîäêëþ÷åíèå JQuery è äðóãèõ áèáëèîòåê";
-$MESS["slobel.socialicons_MODULE_DESC"] = "Íàñòðàèâàåìîå ïîäêëþ÷åíèå JQuery è äðóãèõ áèáëèîòåê";
+$MESS["SLOBEL_CONNECTJQ_INSTALL_TITLE"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ: ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ JQuery Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐº";
+$MESS["SLOBEL_CONNECTJQ_UNINSTALL_TITLE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ: ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ JQuery Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐº";
+$MESS["SLOBEL_CONNECTJQ_INSTALL_ACCESS_DENIED"] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½";
+$MESS["SLOBEL_CONNECTJQ_INSTALL_FULL_ACCESS"] = "ÐŸÐ¾Ð»Ð½Ñ‹Ð¹ Ð´Ð¾ÑÑ‚ÑƒÐ¿";
+$MESS["slobel.socialicons_MODULE_NAME"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ JQuery Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐº";
+$MESS["slobel.socialicons_MODULE_DESC"] = "ÐÐ°ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°ÐµÐ¼Ð¾Ðµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ JQuery Ð¸ Ð´Ñ€ÑƒÐ³Ð¸Ñ… Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐº";
 $MESS["slobel.socialicons_PARTNER_NAME"] = "SLOBEL Studio";
 $MESS["slobel.socialicons_PARTNER_URI"] = "http://slobel.ru/";
-$MESS["MOD_INST_ERR"]="Îøèáêà óñòàíîâêè";
-$MESS["MOD_INST_OK"]="Ìîäóëü óñòàíîâëåí";
+$MESS["MOD_INST_ERR"]="ÐžÑˆÐ¸Ð±ÐºÐ° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸";
+$MESS["MOD_INST_OK"]="ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
 ?>

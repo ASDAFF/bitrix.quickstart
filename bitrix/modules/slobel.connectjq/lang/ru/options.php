@@ -1,20 +1,20 @@
 <?
-$MESS['SLOBEL_COMPRESS'] = "Ñæàòèå";
-$MESS['SLOBEL_FILE'] = "Ïîäêëþ÷àòü ñ CDN";
+$MESS['SLOBEL_COMPRESS'] = "Ð¡Ð¶Ð°Ñ‚Ð¸Ðµ";
+$MESS['SLOBEL_FILE'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Ñ CDN";
 $MESS['SLOBEL_JQ'] = "JQuery Core";
 $MESS['SLOBEL_JQ_MIG'] = "JQuery Migrate";
 $MESS['SLOBEL_JQ_UI'] = "JQuery UI";
 $MESS['SLOBEL_JQ_M'] = "JQuery Mobile";
 $MESS['SLOBEL_JQ_C'] = "JQuery Color";
 $MESS['SLOBEL_QU'] = "QUnit";
-$MESS['SLOBEL_COLOR_CSV'] = "Ïîäêëþ÷èòü SVG Color Names";
+$MESS['SLOBEL_COLOR_CSV'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ SVG Color Names";
 $MESS['SLOBEL_JQ_UI_TOUCH'] = "JQuery UI Touch Punch";
-$MESS['SLOBEL_CONNECT'] = "Ïîäêëþ÷èòü";
-$MESS['SLOBEL_VERSION'] = "Âåðñèÿ";
-$MESS['SLOBEL_THEME'] = "Òåìà";
-$MESS['SLOBEL_NO_ITEMS'] = "Íå ïîäêëþ÷àòü";
-$MESS['SLOBEL_uncompressed'] = "Áåç ñæàòèÿ";
-$MESS['SLOBEL_minified'] = "Ìàêñèìàëüíîå ñæàòèå";
-$MESS['SLOBEL_general'] = "Áàçîâàÿ";
-$MESS['SLOBEL_structure'] = "Òîëüêî ñòðóêòóðà";
+$MESS['SLOBEL_CONNECT'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ";
+$MESS['SLOBEL_VERSION'] = "Ð’ÐµÑ€ÑÐ¸Ñ";
+$MESS['SLOBEL_THEME'] = "Ð¢ÐµÐ¼Ð°";
+$MESS['SLOBEL_NO_ITEMS'] = "ÐÐµ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ";
+$MESS['SLOBEL_uncompressed'] = "Ð‘ÐµÐ· ÑÐ¶Ð°Ñ‚Ð¸Ñ";
+$MESS['SLOBEL_minified'] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑÐ¶Ð°Ñ‚Ð¸Ðµ";
+$MESS['SLOBEL_general'] = "Ð‘Ð°Ð·Ð¾Ð²Ð°Ñ";
+$MESS['SLOBEL_structure'] = "Ð¢Ð¾Ð»ÑŒÐºÐ¾ ÑÑ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð°";
 ?>

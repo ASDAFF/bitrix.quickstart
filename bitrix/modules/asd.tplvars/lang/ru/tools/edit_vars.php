@@ -1,9 +1,9 @@
 <?php
-$MESS ['ASD_TPLVARS_TITLE'] = 'Ïåðåìåííûå ñàéòà';
-$MESS ['ASD_TPLVARS_DESC'] = 'Íàçâàíèå';
-$MESS ['ASD_TPLVARS_VAR'] = 'Ñèìâîëüíûé êîä';
-$MESS ['ASD_TPLVARS_VAL'] = 'Çíà÷åíèå';
-$MESS ['ASD_TPLVARS_DEL'] = 'Óäàëèòü';
-$MESS ['ASD_TPLVARS_DENIED'] = 'Äîñòóï çàïðåùåí';
-$MESS ['ASD_TPLVARS_NOT_INCL'] = 'Ìîäóëü íàñòðîåê íå óñòàíîâëåí';
-$MESS ['ASD_TPLVARS_SESSID'] = 'Âàøà ñåññèÿ èñòåêëà, ïåðåñîõðàíèòå';
+$MESS ['ASD_TPLVARS_TITLE'] = 'ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ ÑÐ°Ð¹Ñ‚Ð°';
+$MESS ['ASD_TPLVARS_DESC'] = 'ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ';
+$MESS ['ASD_TPLVARS_VAR'] = 'Ð¡Ð¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ¾Ð´';
+$MESS ['ASD_TPLVARS_VAL'] = 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ';
+$MESS ['ASD_TPLVARS_DEL'] = 'Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ';
+$MESS ['ASD_TPLVARS_DENIED'] = 'Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½';
+$MESS ['ASD_TPLVARS_NOT_INCL'] = 'ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½';
+$MESS ['ASD_TPLVARS_SESSID'] = 'Ð’Ð°ÑˆÐ° ÑÐµÑÑÐ¸Ñ Ð¸ÑÑ‚ÐµÐºÐ»Ð°, Ð¿ÐµÑ€ÐµÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚Ðµ';

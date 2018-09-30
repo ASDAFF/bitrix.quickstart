@@ -51,7 +51,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			Loc::loadMessages($_SERVER['DOCUMENT_ROOT'] . $this->getTemplate()->GetFile());
 		}
 
-		//Все настройки модуля
+		//Р’СЃРµ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
 		if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}
@@ -101,7 +101,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		$bShowPassword = ($arParams['SHOW_FIELDS'] && in_array('PASSWORD', $arParams['SHOW_FIELDS']));
 
 
-		//---------- Безопасная авторизация ----------//
+		//---------- Р‘РµР·РѕРїР°СЃРЅР°СЏ Р°РІС‚РѕСЂРёР·Р°С†РёСЏ ----------//
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if($bShowPassword && Option::get('main', 'use_encrypted_auth', 'N') == 'Y') //!CMain::IsHTTPS() &&
@@ -115,7 +115,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Социальные сервисы ----------//
+		//---------- РЎРѕС†РёР°Р»СЊРЅС‹Рµ СЃРµСЂРІРёСЃС‹ ----------//
 		$arResult['AUTH_SERVICES']   = false;
 		$arResult['CURRENT_SERVICE'] = false;
 		if($arParams["ALLOW_SOCSERV_AUTHORIZATION"] == 'Y' && !$USER->IsAuthorized() && Loader::includeModule('socialservices')) {
@@ -139,7 +139,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Группы пользователей ----------//
+		//---------- Р“СЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ ----------//
 		$arResult['GROUP_ID'] = array();
 		if($arParams['GROUP_ID']) {
 

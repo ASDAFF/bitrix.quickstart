@@ -1,4 +1,4 @@
 <?
-$MESS["APROF_LENTAZOOM_LENTA_FOTOGRAFIY"] = "Ëåíòà ôîòîãðàôèé";
-$MESS["APROF_LENTAZOOM_RAZNOE"] = "Ðàçíîå";
+$MESS["APROF_LENTAZOOM_LENTA_FOTOGRAFIY"] = "Ð›ÐµÐ½Ñ‚Ð° Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹";
+$MESS["APROF_LENTAZOOM_RAZNOE"] = "Ð Ð°Ð·Ð½Ð¾Ðµ";
 ?>

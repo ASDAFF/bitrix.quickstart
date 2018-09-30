@@ -39,7 +39,7 @@ $context = Application::getInstance()->getContext();
 $request = $context->getRequest();
 
 
-//---------- Òàáû ----------//
+//---------- Ð¢Ð°Ð±Ñ‹ ----------//
 $formId  = 'api_auth_settings';
 $aTabs[] = Array(
 	 'DIV'   => 'tab_general',
@@ -60,7 +60,7 @@ $aTabs[] = Array(
 $tabControl = new CAdminTabControl($formId, $aTabs, true, true);
 
 
-//---------- Ñîõðàíÿåì íàñòðîéêè ----------//
+//---------- Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ----------//
 if($request->isPost() && strlen($save) > 0 && check_bitrix_sessid()) {
 
 	if($arFields = $request->get('FIELDS')) {
@@ -177,7 +177,7 @@ if(!empty($arRes)) {
 }
 
 
-//Ãðóïïû ïîëüçîâàòåëåé
+//Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹
 $arGroups = array('' => Loc::getMessage('AAAS_NOT_SET'));
 $rsGroups = CGroup::GetList($by = "c_sort", $order = "asc", Array("ACTIVE" => "Y"));
 while($arGroup = $rsGroups->Fetch()) {
@@ -187,7 +187,7 @@ $countGroups = count($arGroups);
 
 
 
-//Ïîäãîòîâèì âñå íàñòðîéêè ìîäóëÿ äëÿ âûâîäà
+//ÐŸÐ¾Ð´Ð³Ð¾Ñ‚Ð¾Ð²Ð¸Ð¼ Ð²ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð´Ð»Ñ Ð²Ñ‹Ð²Ð¾Ð´Ð°
 $arSettings = array();
 $rsConfig   = SettingsTable::getList();
 while($setting = $rsConfig->fetch()) {
@@ -201,7 +201,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_admin_a
 // VIEW ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-//Âûâîäèì ñîîáùåíèÿ
+//Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ
 if($errorMsgs) {
 	$m = new CAdminMessage(array(
 		 'TYPE'    => 'ERROR',

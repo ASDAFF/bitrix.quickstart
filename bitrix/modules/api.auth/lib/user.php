@@ -11,7 +11,7 @@ Loc::loadMessages(__FILE__);
 class User
 {
 
-	//Àíàëîã: $USER->SendPassword($arUser['LOGIN'], $arUser['EMAIL'], SITE_ID);
+	//ÐÐ½Ð°Ð»Ð¾Ð³: $USER->SendPassword($arUser['LOGIN'], $arUser['EMAIL'], SITE_ID);
 	/**
 	 * @param        LOGIN
 	 * @param        EMAIL
@@ -135,7 +135,7 @@ class User
 	}
 
 
-	//Àíàëîã: $USER->ChangePassword()
+	//ÐÐ½Ð°Ð»Ð¾Ð³: $USER->ChangePassword()
 	/**
 	 * @param        $LOGIN
 	 * @param        $CHECKWORD

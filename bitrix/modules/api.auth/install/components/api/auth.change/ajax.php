@@ -43,7 +43,7 @@ $result = array(
 
 if($request->isPost() && $request->getPost('API_AUTH_CHANGE_AJAX')) {
 
-	//Если включено шифрование
+	//Р•СЃР»Рё РІРєР»СЋС‡РµРЅРѕ С€РёС„СЂРѕРІР°РЅРёРµ
 	if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 
 		$sec = new CRsaSecurity();
@@ -62,7 +62,7 @@ if($request->isPost() && $request->getPost('API_AUTH_CHANGE_AJAX')) {
 		}
 	}
 
-	//Данные формы авторизации
+	//Р”Р°РЅРЅС‹Рµ С„РѕСЂРјС‹ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 	$formData = $_REQUEST;
 	foreach($formData as &$data) {
 		$data = is_array($data) ? $data : trim($data);

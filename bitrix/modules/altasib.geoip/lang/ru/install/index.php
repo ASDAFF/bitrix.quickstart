@@ -8,11 +8,11 @@
 #################################################
 ?>
 <?
-$MESS["ALTASIB_GEOIP_MODULE_NAME"] = "Определение местоположения по IP-адресу";
-$MESS["ALTASIB_GEOIP_MODULE_DESCRIPTION"] = "Модуль для определения местоположения пользователя по его IP адресу.";
-$MESS["ALTASIB_GEOIP_INSTALL_TITLE"] = "Установка модуля: Geo IP";
-$MESS["ALTASIB_GEOIP_UNINSTALL_TITLE"] = "Удаление модуля: Geo IP";
-$MESS["ALTASIB_GEOIP_INSTALL_ACCESS_DENIED"] = "Доступ запрещен";
-$MESS["ALTASIB_GEOIP_INSTALL_FULL_ACCESS"] = "Полный доступ";
+$MESS["ALTASIB_GEOIP_MODULE_NAME"] = "РћРїСЂРµРґРµР»РµРЅРёРµ РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёСЏ РїРѕ IP-Р°РґСЂРµСЃСѓ";
+$MESS["ALTASIB_GEOIP_MODULE_DESCRIPTION"] = "РњРѕРґСѓР»СЊ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїРѕ РµРіРѕ IP Р°РґСЂРµСЃСѓ.";
+$MESS["ALTASIB_GEOIP_INSTALL_TITLE"] = "РЈСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»СЏ: Geo IP";
+$MESS["ALTASIB_GEOIP_UNINSTALL_TITLE"] = "РЈРґР°Р»РµРЅРёРµ РјРѕРґСѓР»СЏ: Geo IP";
+$MESS["ALTASIB_GEOIP_INSTALL_ACCESS_DENIED"] = "Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰РµРЅ";
+$MESS["ALTASIB_GEOIP_INSTALL_FULL_ACCESS"] = "РџРѕР»РЅС‹Р№ РґРѕСЃС‚СѓРї";
 
 ?>

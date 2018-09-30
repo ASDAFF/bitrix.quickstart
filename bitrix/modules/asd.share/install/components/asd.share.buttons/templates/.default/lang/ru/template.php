@@ -1,22 +1,22 @@
 <?
-$MESS ['ASD_VK_TITLE'] = "Ðàñøàðèòü ÂÊîíòàêò";
-$MESS ['ASD_VK'] = "ÂÊîíòàêò";
-$MESS ['ASD_FB_TITLE'] = "Ðàñøàðèòü â Facebook";
+$MESS ['ASD_VK_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð’ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚";
+$MESS ['ASD_VK'] = "Ð’ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚";
+$MESS ['ASD_FB_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Facebook";
 $MESS ['ASD_FB'] = "Facebook";
-$MESS ['ASD_BUZZ_TITLE'] = "Ðàñøàðèòü â Buzz";
+$MESS ['ASD_BUZZ_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Buzz";
 $MESS ['ASD_BUZZZ'] = "Buzz";
-$MESS ['ASD_TW_TITLE'] = "Ðàñøàðèòü â Twitter";
+$MESS ['ASD_TW_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Twitter";
 $MESS ['ASD_TW'] = "Twitter";
-$MESS ['ASD_MAILRU_TITLE'] = "Ðàñøàðèòü â Mail.Ru";
+$MESS ['ASD_MAILRU_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Mail.Ru";
 $MESS ['ASD_MAILRU'] = "Mail.Ru";
-$MESS ['ASD_YANDEX_TITLE'] = "Ðàñøàðèòü â ßíäåêñ";
-$MESS ['ASD_YANDEX'] = "ßíäåêñ";
-$MESS ['ASD_OD_TITLE'] = "Ðàñøàðèòü â Îäíîêëàññíèêè";
-$MESS ['ASD_OD'] = "Îäíîêëàññíèêè";
-$MESS ['ASD_LJ_TITLE'] = "Ðàñøàðèòü â Livejournal";
+$MESS ['ASD_YANDEX_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Ð¯Ð½Ð´ÐµÐºÑ";
+$MESS ['ASD_YANDEX'] = "Ð¯Ð½Ð´ÐµÐºÑ";
+$MESS ['ASD_OD_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² ÐžÐ´Ð½Ð¾ÐºÐ»Ð°ÑÑÐ½Ð¸ÐºÐ¸";
+$MESS ['ASD_OD'] = "ÐžÐ´Ð½Ð¾ÐºÐ»Ð°ÑÑÐ½Ð¸ÐºÐ¸";
+$MESS ['ASD_LJ_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Livejournal";
 $MESS ['ASD_LJ'] = "Livejournal";
-$MESS ['ASD_LI_TITLE'] = "Ðàñøàðèòü â Liveinternet";
+$MESS ['ASD_LI_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Liveinternet";
 $MESS ['ASD_LI'] = "Liveinternet";
-$MESS ['ASD_GP_TITLE'] = "Ðàñøàðèòü â Google Plus";
+$MESS ['ASD_GP_TITLE'] = "Ð Ð°ÑÑˆÐ°Ñ€Ð¸Ñ‚ÑŒ Ð² Google Plus";
 $MESS ['ASD_GP'] = "Google Plus";
 ?>

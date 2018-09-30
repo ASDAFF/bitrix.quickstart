@@ -37,7 +37,7 @@ if(!Loader::includeModule('api.auth'))
 use Api\Auth\Tools;
 use Api\Auth\SettingsTable as Settings;
 
-//Íàñòðîéêè ìîäóëÿ
+//ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 $arSettings = Settings::getAll();
 
 $context = Application::getInstance()->getContext();
@@ -50,7 +50,7 @@ $result = array(
 
 
 
-//Åñëè âêëþ÷åíî øèôðîâàíèå
+//Ð•ÑÐ»Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ
 if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') { //$_REQUEST['__RSA_DATA']
 
 	$sec = new CRsaSecurity();
@@ -70,22 +70,22 @@ if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') { //$_REQUEST['__RSA_D
 }
 
 
-//Ïàðìåòðû àâòîðèçàöèè ãëàâíîãî ìîäóëÿ
+//ÐŸÐ°Ñ€Ð¼ÐµÑ‚Ñ€Ñ‹ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð³Ð»Ð°Ð²Ð½Ð¾Ð³Ð¾ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 $bConfirmEmail = Option::get('main', 'new_user_registration_email_confirmation', 'Y') == 'Y';
 $bCheckEmail   = Option::get('main', 'new_user_email_uniq_check', 'Y') == 'Y';
 
 
-//Îáÿçàòåëüíûå ïîëÿ
+//ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ
 $reqFields = (array)$_REQUEST['REQUIRED_FIELDS'];
 
-//Äàííûå ôîðìû ðåãèñòðàöèè
+//Ð”Ð°Ð½Ð½Ñ‹Ðµ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸
 $formData = (array)$_REQUEST['FIELDS'];
 
 
 $bEmail    = (strlen($formData['EMAIL']) > 0);
 $bPassword = (strlen($formData['PASSWORD']) > 0);
 
-//Âàëèäàöèÿ ïîëåé ôîðìû
+//Ð’Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ Ð¿Ð¾Ð»ÐµÐ¹ Ñ„Ð¾Ñ€Ð¼Ñ‹
 foreach($formData as $key => &$val) {
 	if(is_array($val)) {
 		foreach($val as $k => $v) {
@@ -105,7 +105,7 @@ if($bCheckEmail && !$result['MESSAGE'] && !check_email($formData['EMAIL'])) {
 }
 
 
-//Àâòîãåíåðàöèÿ ïàðîëÿ
+//ÐÐ²Ñ‚Ð¾Ð³ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ
 $def_group = Option::get('main', 'new_user_registration_def_group', '');
 if(!$bPassword) {
 	if($def_group != '') {
@@ -186,7 +186,7 @@ if(!$result['MESSAGE']) {
 		}
 	}
 
-	//---------- Ñîçäàåì ïîëüçîâàòåëÿ ----------//
+	//---------- Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ----------//
 	$user = new CUser;
 
 	$userId = 0;
@@ -197,7 +197,7 @@ if(!$result['MESSAGE']) {
 	if(intval($userId) > 0) {
 		$register_done = true;
 
-		//Âåðíåò îøèáêó: Ëîãèí äîëæåí áûòü íå ìåíåå 3 ñèìâîëîâ.
+		//Ð’ÐµÑ€Ð½ÐµÑ‚ Ð¾ÑˆÐ¸Ð±ÐºÑƒ: Ð›Ð¾Ð³Ð¸Ð½ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 3 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð².
 		//$user->Update($userId, array('LOGIN' => $userId));
 
 		$userData['USER_ID']    = $userId;
@@ -214,14 +214,14 @@ if(!$result['MESSAGE']) {
 		}
 		else {
 
-			//Ïðîáóåì àâòîðèçîâàòü ïîëüçîâàòåëÿ
+			//ÐŸÑ€Ð¾Ð±ÑƒÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
 			//$USER->Authorize($userId, true);
 			if(!$authResult = $USER->Login($userData['LOGIN'], $userData['PASSWORD'], 'Y', 'Y')) {
 				$result = $authResult;
 			}
 			else {
 
-				//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Âû óñïåøíî çàðåãèñòðèðîâàíû', true);
+				//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹', true);
 				$result = array(
 					 'TYPE'    => 'SUCCESS',
 					 'MESSAGE' => Loc::getMessage('AARA_REGISTER_SUCCESS'),

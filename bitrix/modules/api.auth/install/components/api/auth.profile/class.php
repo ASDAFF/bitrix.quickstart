@@ -160,7 +160,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 					$lang = LANGUAGE_ID;
 
 					/*
-					Вернет только Город
+					Р’РµСЂРЅРµС‚ С‚РѕР»СЊРєРѕ Р“РѕСЂРѕРґ
 					$rsLocation = \Bitrix\Sale\Location\LocationTable::getByCode($code, array(
 						 'filter' => array('=NAME.LANGUAGE_ID' => LANGUAGE_ID),
 						 'select' => array('ID','CODE','PARENT_ID','NAME_RU' => 'NAME.NAME'),
@@ -170,7 +170,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 					*/
 
 
-					//Вернет полный адрес
+					//Р’РµСЂРЅРµС‚ РїРѕР»РЅС‹Р№ Р°РґСЂРµСЃ
 					$arLocations = \Bitrix\Sale\Location\LocationTable::getList(array(
 						 'filter' => array(
 								'=CODE'                          => $code,
@@ -208,7 +208,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 					$lang = LANGUAGE_ID;
 
 					/*
-					Вернет только Город
+					Р’РµСЂРЅРµС‚ С‚РѕР»СЊРєРѕ Р“РѕСЂРѕРґ
 					$rsLocation = \Bitrix\Sale\Location\LocationTable::getByCode($code, array(
 						 'filter' => array('=NAME.LANGUAGE_ID' => LANGUAGE_ID),
 						 'select' => array('ID','CODE','PARENT_ID','NAME_RU' => 'NAME.NAME'),
@@ -218,7 +218,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 					*/
 
 
-					//Вернет полный адрес
+					//Р’РµСЂРЅРµС‚ РїРѕР»РЅС‹Р№ Р°РґСЂРµСЃ
 					$arLocations = \Bitrix\Sale\Location\LocationTable::getList(array(
 						 'filter' => array(
 								'=CODE'                          => $code,
@@ -275,7 +275,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 		$arFields = array();
 		$arLang   = (array)Loc::getMessage('API_MAIN_PROFILE_TPL_FIELDS');
 
-		//Фильтрация данных
+		//Р¤РёР»СЊС‚СЂР°С†РёСЏ РґР°РЅРЅС‹С…
 		if($post['FIELDS']) {
 			foreach($post['FIELDS'] as $key => $val) {
 				$arFields[ $key ] = is_array($val) ? $val : trim($val);
@@ -283,7 +283,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 			unset($key, $val);
 		}
 
-		//Если в форме не выводится Логин или E-mail возьмем данные из пользователя
+		//Р•СЃР»Рё РІ С„РѕСЂРјРµ РЅРµ РІС‹РІРѕРґРёС‚СЃСЏ Р›РѕРіРёРЅ РёР»Рё E-mail РІРѕР·СЊРјРµРј РґР°РЅРЅС‹Рµ РёР· РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 		$rsUser = CUser::GetByID($arResult["ID"]);
 		if($arUser = $rsUser->Fetch()) {
 			if(!in_array('LOGIN', $this->arParams['USER_FIELDS']) || in_array('LOGIN', $this->arParams['READONLY_FIELDS']))
@@ -297,7 +297,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 		}
 
 
-		//Прикрепим файлы
+		//РџСЂРёРєСЂРµРїРёРј С„Р°Р№Р»С‹
 		if(in_array('PERSONAL_PHOTO', $this->arParams['USER_FIELDS'])) {
 			$arFields['PERSONAL_PHOTO'] = $_FILES['PERSONAL_PHOTO'];
 
@@ -311,7 +311,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 			$arFields['WORK_LOGO']['del']      = $post['WORK_LOGO_del'];
 		}
 
-		//Проверка обязательных полей
+		//РџСЂРѕРІРµСЂРєР° РѕР±СЏР·Р°С‚РµР»СЊРЅС‹С… РїРѕР»РµР№
 		$reqValues = $this->arParams['REQUIRED_FIELDS'];
 		foreach($reqValues as $key) {
 
@@ -337,7 +337,7 @@ class ApiAuthProfileComponent extends \CBitrixComponent
 
 		if($this->result->isSuccess()) {
 
-			//Если поле Пароль пустое, изменять не нужно, только когда введено пользователем
+			//Р•СЃР»Рё РїРѕР»Рµ РџР°СЂРѕР»СЊ РїСѓСЃС‚РѕРµ, РёР·РјРµРЅСЏС‚СЊ РЅРµ РЅСѓР¶РЅРѕ, С‚РѕР»СЊРєРѕ РєРѕРіРґР° РІРІРµРґРµРЅРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 			if(strlen($arFields['PASSWORD']) == 0) {
 				unset($arFields['PASSWORD'], $arFields['CONFIRM_PASSWORD']);
 			}

@@ -1,2 +1,2 @@
 <?php
-$MESS ['ASD_TPLVARS_PANEL_TITLE'] = 'Ïåðåìåííûå ñàéòà';
+$MESS ['ASD_TPLVARS_PANEL_TITLE'] = 'ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ ÑÐ°Ð¹Ñ‚Ð°';

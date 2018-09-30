@@ -66,7 +66,7 @@ if($action = $request->getPost('api_action')) {
 }
 
 
-//Если включено шифрование
+//Р•СЃР»Рё РІРєР»СЋС‡РµРЅРѕ С€РёС„СЂРѕРІР°РЅРёРµ
 if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 
 	$sec = new CRsaSecurity();
@@ -86,7 +86,7 @@ if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 }
 
 
-//Данные формы авторизации
+//Р”Р°РЅРЅС‹Рµ С„РѕСЂРјС‹ Р°РІС‚РѕСЂРёР·Р°С†РёРё
 $formData = $_REQUEST;
 foreach($formData as &$data) {
 	$data = is_array($data) ? $data : trim($data);
@@ -96,7 +96,7 @@ if(!Application::isUtfMode())
 	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
 
 
-//Настройки модуля
+//РќР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
 $arSettings = Settings::getAll();
 $arAuthFields = $arSettings['AUTH_FIELDS'];
 

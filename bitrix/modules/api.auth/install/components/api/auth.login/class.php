@@ -80,7 +80,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 
 		$params['COOKIE_NAME'] = Option::get('main', 'cookie_name', 'BITRIX_SM');
 
-		//Все настройки модуля
+		//Р’СЃРµ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
 		if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}
@@ -99,7 +99,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 
 		$arResult['FORM_ID'] = $this->getEditAreaId($this->randString());
 
-		//Безопасная авторизация
+		//Р‘РµР·РѕРїР°СЃРЅР°СЏ Р°РІС‚РѕСЂРёР·Р°С†РёСЏ
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') //!CMain::IsHTTPS() &&
@@ -112,7 +112,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 			}
 		}
 
-		//Авторизация через соц. сервисы
+		//РђРІС‚РѕСЂРёР·Р°С†РёСЏ С‡РµСЂРµР· СЃРѕС†. СЃРµСЂРІРёСЃС‹
 		$arResult['AUTH_SERVICES']   = false;
 		$arResult['CURRENT_SERVICE'] = false;
 		if($arParams["ALLOW_SOCSERV_AUTHORIZATION"] == 'Y' && !$USER->IsAuthorized() && Loader::includeModule('socialservices')) {
@@ -135,7 +135,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 			}
 		}
 
-		//Плейсхолдеры полей
+		//РџР»РµР№СЃС…РѕР»РґРµСЂС‹ РїРѕР»РµР№
 		$arResult['LOGIN_PLACEHOLDER']    = Loc::getMessage('API_AUTH_LOGIN_LOGIN_OR_EMAIL');
 		$arResult['PASSWORD_PLACEHOLDER'] = Loc::getMessage('API_AUTH_LOGIN_FIELD_PASSWORD');
 

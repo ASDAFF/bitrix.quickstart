@@ -2,132 +2,132 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 
-$MESS['MFP_AUTHOR_FIO']             = 'ФИО';
-$MESS['MFP_AUTHOR_NAME']            = 'Ваше имя';
-$MESS['MFP_AUTHOR_LAST_NAME']       = 'Фамилия';
-$MESS['MFP_AUTHOR_SECOND_NAME']     = 'Отчество';
+$MESS['MFP_AUTHOR_FIO']             = 'Р¤РРћ';
+$MESS['MFP_AUTHOR_NAME']            = 'Р’Р°С€Рµ РёРјСЏ';
+$MESS['MFP_AUTHOR_LAST_NAME']       = 'Р¤Р°РјРёР»РёСЏ';
+$MESS['MFP_AUTHOR_SECOND_NAME']     = 'РћС‚С‡РµСЃС‚РІРѕ';
 $MESS['MFP_AUTHOR_EMAIL']           = 'E-mail';
-$MESS['MFP_AUTHOR_PERSONAL_MOBILE'] = 'Контактный телефон';
-$MESS['MFP_AUTHOR_WORK_COMPANY']    = 'Компания';
-$MESS['MFP_AUTHOR_POSITION']        = 'Должность';
-$MESS['MFP_AUTHOR_PROFESSION']      = 'Профессия';
-$MESS['MFP_AUTHOR_STATE']           = 'Область, район';
-$MESS['MFP_AUTHOR_CITY']            = 'Город';
-$MESS['MFP_AUTHOR_STREET']          = 'Улица';
-$MESS['MFP_AUTHOR_ADRESS']          = 'Адрес';
-$MESS['MFP_AUTHOR_PERSONAL_PHONE']  = 'Домашний телефон';
-$MESS['MFP_AUTHOR_WORK_PHONE']      = 'Рабочий телефон';
-$MESS['MFP_AUTHOR_FAX']             = 'Факс';
-$MESS['MFP_AUTHOR_MAILBOX']         = 'Почтовый ящик';
-$MESS['MFP_AUTHOR_WORK_MAILBOX']    = 'Рабочий почтовый ящик';
-$MESS['MFP_AUTHOR_SKYPE']           = 'Скайп';
-$MESS['MFP_AUTHOR_ICQ']             = 'Номер ICQ';
-$MESS['MFP_AUTHOR_WWW']             = 'Персональный сайт';
-$MESS['MFP_AUTHOR_MESSAGE_THEME']   = 'Тема сообщения';
-$MESS['MFP_AUTHOR_WORK_WWW']        = 'Рабочий сайт';
-$MESS['MFP_AUTHOR_MESSAGE']         = 'Сообщение';
-$MESS['MFP_AUTHOR_NOTES']           = 'Заметки';
-$MESS['FORM_SUBMIT_VALUE_DEFAULT']  = 'Отправить';
-$MESS['MFP_USER_FIELDS_TITLE']      = 'Собственные названия полей';
-$MESS['MFP_FORM_TITLE_DISPLAY']     = 'Показывать заголовок';
-$MESS['MFP_FORM_TITLE']             = 'Текст заголовка';
-$MESS['MFP_FORM_TITLE_LEVEL']       = 'Уровень заголовка';
-$MESS['MFP_FORM_TITLE_H1']          = 'Заголовок H1';
-$MESS['MFP_FORM_TITLE_H2']          = 'Заголовок H2';
-$MESS['MFP_FORM_TITLE_H3']          = 'Заголовок H3';
-$MESS['MFP_FORM_TITLE_H4']          = 'Заголовок H4';
-$MESS['MFP_FORM_TITLE_H5']          = 'Заголовок H5';
-$MESS['MFP_FORM_TITLE_H6']          = 'Заголовок H6';
-$MESS['MFP_FORM_STYLE_TITLE']       = 'Стили для Заголовка';
-$MESS['MFP_FORM_STYLE']             = 'Стили для <div> формы';
-$MESS['MFP_FORM_STYLE_DIV']         = 'Стили для <div> строки';
-$MESS['MFP_FORM_STYLE_LABEL']       = 'Стили для <label>';
-$MESS['MFP_FORM_STYLE_TEXTAREA']    = 'Стили для <textarea>';
-$MESS['MFP_FORM_STYLE_INPUT']       = 'Стили для <input>';
-$MESS['MFP_FORM_STYLE_SELECT']      = 'Стили для <select>';
-$MESS['MFP_FORM_STYLE_SUBMIT']      = 'Стили для кнопки Отправить';
-$MESS['MFP_FORM_SUBMIT_VALUE']      = 'Текст для кнопки Отправить';
-$MESS['UNIQUE_FORM_ID']             = 'ID формы';
-$MESS['MFP_OK_MESSAGE']             = 'Сообщение, выводимое пользователю после отправки';
-$MESS['MFP_OK_TEXT']                = 'Спасибо, ваше сообщение принято.';
-$MESS['MFP_EMAIL_TO']               = 'E-mail, на который будет отправлено письмо';
-$MESS['MFP_REQUIRED_FIELDS']        = 'Обязательные поля';
-$MESS['MFP_ALL_REQ']                = '(все необязательные)';
-$MESS['MFP_EMAIL_TEMPLATES']        = 'Почтовые шаблоны для администратора';
-$MESS['MFP_USER_EMAIL_TEMPLATES']   = 'Почтовые шаблоны для посетителя';
-$MESS['REPLACE_FIELD_FROM']         = 'Подставлять в поле "От" e-mail посетителя';
-$MESS['MFP_DISPLAY_FIELDS']         = 'Выводимые поля';
-$MESS['FILE_SETTINGS']              = 'Настройки для файлов';
-$MESS['VALIDTE_REQUIRED_FIELDS']    = 'Включить проверку полей формы';
-$MESS['CUSTOM_FIELDS']              = 'Поля конструктора';
-$MESS['CUSTOM_FIELDS_VALUE_0']      = 'Флажки@input@checkbox@required@values=Значение 1#Значение 2#Значение 3';
-$MESS['CUSTOM_FIELDS_VALUE_1']      = 'Переключатели@input@radio@required@values=Значение 1#Значение 2#Значение 3';
-$MESS['CUSTOM_FIELDS_VALUE_2']      = 'Текстовое поле@input@text@required';
-$MESS['CUSTOM_FIELDS_VALUE_3']      = 'Дата@input@date@required';
-$MESS['CUSTOM_FIELDS_VALUE_4']      = 'Интервал дат@input@date@required@size=2';
-$MESS['CUSTOM_FIELDS_VALUE_5']      = 'Список опций@select@values=Опция 1#Опция 2#Опция 3';
-$MESS['CUSTOM_FIELDS_VALUE_6']      = 'Группа опций@select@multiple@size=5@required@values=Группа 1##Опция 1#Опция 2#Опция 3##Группа 2##Опция 1#Опция 2#Опция 3';
-$MESS['CUSTOM_FIELDS_VALUE_7']      = 'Текстовое поле@textarea@required';
+$MESS['MFP_AUTHOR_PERSONAL_MOBILE'] = 'РљРѕРЅС‚Р°РєС‚РЅС‹Р№ С‚РµР»РµС„РѕРЅ';
+$MESS['MFP_AUTHOR_WORK_COMPANY']    = 'РљРѕРјРїР°РЅРёСЏ';
+$MESS['MFP_AUTHOR_POSITION']        = 'Р”РѕР»Р¶РЅРѕСЃС‚СЊ';
+$MESS['MFP_AUTHOR_PROFESSION']      = 'РџСЂРѕС„РµСЃСЃРёСЏ';
+$MESS['MFP_AUTHOR_STATE']           = 'РћР±Р»Р°СЃС‚СЊ, СЂР°Р№РѕРЅ';
+$MESS['MFP_AUTHOR_CITY']            = 'Р“РѕСЂРѕРґ';
+$MESS['MFP_AUTHOR_STREET']          = 'РЈР»РёС†Р°';
+$MESS['MFP_AUTHOR_ADRESS']          = 'РђРґСЂРµСЃ';
+$MESS['MFP_AUTHOR_PERSONAL_PHONE']  = 'Р”РѕРјР°С€РЅРёР№ С‚РµР»РµС„РѕРЅ';
+$MESS['MFP_AUTHOR_WORK_PHONE']      = 'Р Р°Р±РѕС‡РёР№ С‚РµР»РµС„РѕРЅ';
+$MESS['MFP_AUTHOR_FAX']             = 'Р¤Р°РєСЃ';
+$MESS['MFP_AUTHOR_MAILBOX']         = 'РџРѕС‡С‚РѕРІС‹Р№ СЏС‰РёРє';
+$MESS['MFP_AUTHOR_WORK_MAILBOX']    = 'Р Р°Р±РѕС‡РёР№ РїРѕС‡С‚РѕРІС‹Р№ СЏС‰РёРє';
+$MESS['MFP_AUTHOR_SKYPE']           = 'РЎРєР°Р№Рї';
+$MESS['MFP_AUTHOR_ICQ']             = 'РќРѕРјРµСЂ ICQ';
+$MESS['MFP_AUTHOR_WWW']             = 'РџРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ СЃР°Р№С‚';
+$MESS['MFP_AUTHOR_MESSAGE_THEME']   = 'РўРµРјР° СЃРѕРѕР±С‰РµРЅРёСЏ';
+$MESS['MFP_AUTHOR_WORK_WWW']        = 'Р Р°Р±РѕС‡РёР№ СЃР°Р№С‚';
+$MESS['MFP_AUTHOR_MESSAGE']         = 'РЎРѕРѕР±С‰РµРЅРёРµ';
+$MESS['MFP_AUTHOR_NOTES']           = 'Р—Р°РјРµС‚РєРё';
+$MESS['FORM_SUBMIT_VALUE_DEFAULT']  = 'РћС‚РїСЂР°РІРёС‚СЊ';
+$MESS['MFP_USER_FIELDS_TITLE']      = 'РЎРѕР±СЃС‚РІРµРЅРЅС‹Рµ РЅР°Р·РІР°РЅРёСЏ РїРѕР»РµР№';
+$MESS['MFP_FORM_TITLE_DISPLAY']     = 'РџРѕРєР°Р·С‹РІР°С‚СЊ Р·Р°РіРѕР»РѕРІРѕРє';
+$MESS['MFP_FORM_TITLE']             = 'РўРµРєСЃС‚ Р·Р°РіРѕР»РѕРІРєР°';
+$MESS['MFP_FORM_TITLE_LEVEL']       = 'РЈСЂРѕРІРµРЅСЊ Р·Р°РіРѕР»РѕРІРєР°';
+$MESS['MFP_FORM_TITLE_H1']          = 'Р—Р°РіРѕР»РѕРІРѕРє H1';
+$MESS['MFP_FORM_TITLE_H2']          = 'Р—Р°РіРѕР»РѕРІРѕРє H2';
+$MESS['MFP_FORM_TITLE_H3']          = 'Р—Р°РіРѕР»РѕРІРѕРє H3';
+$MESS['MFP_FORM_TITLE_H4']          = 'Р—Р°РіРѕР»РѕРІРѕРє H4';
+$MESS['MFP_FORM_TITLE_H5']          = 'Р—Р°РіРѕР»РѕРІРѕРє H5';
+$MESS['MFP_FORM_TITLE_H6']          = 'Р—Р°РіРѕР»РѕРІРѕРє H6';
+$MESS['MFP_FORM_STYLE_TITLE']       = 'РЎС‚РёР»Рё РґР»СЏ Р—Р°РіРѕР»РѕРІРєР°';
+$MESS['MFP_FORM_STYLE']             = 'РЎС‚РёР»Рё РґР»СЏ <div> С„РѕСЂРјС‹';
+$MESS['MFP_FORM_STYLE_DIV']         = 'РЎС‚РёР»Рё РґР»СЏ <div> СЃС‚СЂРѕРєРё';
+$MESS['MFP_FORM_STYLE_LABEL']       = 'РЎС‚РёР»Рё РґР»СЏ <label>';
+$MESS['MFP_FORM_STYLE_TEXTAREA']    = 'РЎС‚РёР»Рё РґР»СЏ <textarea>';
+$MESS['MFP_FORM_STYLE_INPUT']       = 'РЎС‚РёР»Рё РґР»СЏ <input>';
+$MESS['MFP_FORM_STYLE_SELECT']      = 'РЎС‚РёР»Рё РґР»СЏ <select>';
+$MESS['MFP_FORM_STYLE_SUBMIT']      = 'РЎС‚РёР»Рё РґР»СЏ РєРЅРѕРїРєРё РћС‚РїСЂР°РІРёС‚СЊ';
+$MESS['MFP_FORM_SUBMIT_VALUE']      = 'РўРµРєСЃС‚ РґР»СЏ РєРЅРѕРїРєРё РћС‚РїСЂР°РІРёС‚СЊ';
+$MESS['UNIQUE_FORM_ID']             = 'ID С„РѕСЂРјС‹';
+$MESS['MFP_OK_MESSAGE']             = 'РЎРѕРѕР±С‰РµРЅРёРµ, РІС‹РІРѕРґРёРјРѕРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ РїРѕСЃР»Рµ РѕС‚РїСЂР°РІРєРё';
+$MESS['MFP_OK_TEXT']                = 'РЎРїР°СЃРёР±Рѕ, РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ РїСЂРёРЅСЏС‚Рѕ.';
+$MESS['MFP_EMAIL_TO']               = 'E-mail, РЅР° РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РѕС‚РїСЂР°РІР»РµРЅРѕ РїРёСЃСЊРјРѕ';
+$MESS['MFP_REQUIRED_FIELDS']        = 'РћР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ';
+$MESS['MFP_ALL_REQ']                = '(РІСЃРµ РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ)';
+$MESS['MFP_EMAIL_TEMPLATES']        = 'РџРѕС‡С‚РѕРІС‹Рµ С€Р°Р±Р»РѕРЅС‹ РґР»СЏ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂР°';
+$MESS['MFP_USER_EMAIL_TEMPLATES']   = 'РџРѕС‡С‚РѕРІС‹Рµ С€Р°Р±Р»РѕРЅС‹ РґР»СЏ РїРѕСЃРµС‚РёС‚РµР»СЏ';
+$MESS['REPLACE_FIELD_FROM']         = 'РџРѕРґСЃС‚Р°РІР»СЏС‚СЊ РІ РїРѕР»Рµ "РћС‚" e-mail РїРѕСЃРµС‚РёС‚РµР»СЏ';
+$MESS['MFP_DISPLAY_FIELDS']         = 'Р’С‹РІРѕРґРёРјС‹Рµ РїРѕР»СЏ';
+$MESS['FILE_SETTINGS']              = 'РќР°СЃС‚СЂРѕР№РєРё РґР»СЏ С„Р°Р№Р»РѕРІ';
+$MESS['VALIDTE_REQUIRED_FIELDS']    = 'Р’РєР»СЋС‡РёС‚СЊ РїСЂРѕРІРµСЂРєСѓ РїРѕР»РµР№ С„РѕСЂРјС‹';
+$MESS['CUSTOM_FIELDS']              = 'РџРѕР»СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°';
+$MESS['CUSTOM_FIELDS_VALUE_0']      = 'Р¤Р»Р°Р¶РєРё@input@checkbox@required@values=Р—РЅР°С‡РµРЅРёРµ 1#Р—РЅР°С‡РµРЅРёРµ 2#Р—РЅР°С‡РµРЅРёРµ 3';
+$MESS['CUSTOM_FIELDS_VALUE_1']      = 'РџРµСЂРµРєР»СЋС‡Р°С‚РµР»Рё@input@radio@required@values=Р—РЅР°С‡РµРЅРёРµ 1#Р—РЅР°С‡РµРЅРёРµ 2#Р—РЅР°С‡РµРЅРёРµ 3';
+$MESS['CUSTOM_FIELDS_VALUE_2']      = 'РўРµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ@input@text@required';
+$MESS['CUSTOM_FIELDS_VALUE_3']      = 'Р”Р°С‚Р°@input@date@required';
+$MESS['CUSTOM_FIELDS_VALUE_4']      = 'РРЅС‚РµСЂРІР°Р» РґР°С‚@input@date@required@size=2';
+$MESS['CUSTOM_FIELDS_VALUE_5']      = 'РЎРїРёСЃРѕРє РѕРїС†РёР№@select@values=РћРїС†РёСЏ 1#РћРїС†РёСЏ 2#РћРїС†РёСЏ 3';
+$MESS['CUSTOM_FIELDS_VALUE_6']      = 'Р“СЂСѓРїРїР° РѕРїС†РёР№@select@multiple@size=5@required@values=Р“СЂСѓРїРїР° 1##РћРїС†РёСЏ 1#РћРїС†РёСЏ 2#РћРїС†РёСЏ 3##Р“СЂСѓРїРїР° 2##РћРїС†РёСЏ 1#РћРїС†РёСЏ 2#РћРїС†РёСЏ 3';
+$MESS['CUSTOM_FIELDS_VALUE_7']      = 'РўРµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ@textarea@required';
 
 //GROUP_ANTISPAM_SETTINGS
-$MESS["GROUP_ANTISPAM_SETTINGS"] = "Антиспам";
-$MESS['MFP_CAPTCHA']             = 'Включить CAPTCHA-антиспам';
-$MESS['USE_HIDDEN_PROTECTION']   = 'Включить CSS-антиспам';
-$MESS['USE_PHP_ANTISPAM']        = 'Включить PHP-антиспам';
-$MESS['PHP_ANTISPAM_LEVEL']      = 'Число допустимых совпадений в полях формы, для PHP-антиспама';
+$MESS["GROUP_ANTISPAM_SETTINGS"] = "РђРЅС‚РёСЃРїР°Рј";
+$MESS['MFP_CAPTCHA']             = 'Р’РєР»СЋС‡РёС‚СЊ CAPTCHA-Р°РЅС‚РёСЃРїР°Рј';
+$MESS['USE_HIDDEN_PROTECTION']   = 'Р’РєР»СЋС‡РёС‚СЊ CSS-Р°РЅС‚РёСЃРїР°Рј';
+$MESS['USE_PHP_ANTISPAM']        = 'Р’РєР»СЋС‡РёС‚СЊ PHP-Р°РЅС‚РёСЃРїР°Рј';
+$MESS['PHP_ANTISPAM_LEVEL']      = 'Р§РёСЃР»Рѕ РґРѕРїСѓСЃС‚РёРјС‹С… СЃРѕРІРїР°РґРµРЅРёР№ РІ РїРѕР»СЏС… С„РѕСЂРјС‹, РґР»СЏ PHP-Р°РЅС‚РёСЃРїР°РјР°';
 
 //GROUP_JS_VALIDATE_SETTINGS
-$MESS["GROUPS_JS_VALIDATE_SETTINGS"] = "JavaScript и jQuery";
-$MESS['INCLUDE_JQUERY']              = 'Включить jQuery если не работают скрипты/проверки';
-$MESS['INCLUDE_PRETTY_COMMENTS']     = 'Включить автовысоту текстовых полей';
-$MESS['INCLUDE_FORM_STYLER']         = 'Включить обработчик флажков/переключателей';;
-$MESS['HIDE_FORM_AFTER_SEND']        = 'Прятать форму после отправки';
-$MESS['SCROLL_TO_FORM_IF_MESSAGES']  = 'Прокручивать страницу к форме';
-$MESS['SCROLL_TO_FORM_SPEED']        = 'Скорость прокрутки страницы';
-$MESS['INCLUDE_PLACEHOLDER']         = 'Включить placeholder';
+$MESS["GROUPS_JS_VALIDATE_SETTINGS"] = "JavaScript Рё jQuery";
+$MESS['INCLUDE_JQUERY']              = 'Р’РєР»СЋС‡РёС‚СЊ jQuery РµСЃР»Рё РЅРµ СЂР°Р±РѕС‚Р°СЋС‚ СЃРєСЂРёРїС‚С‹/РїСЂРѕРІРµСЂРєРё';
+$MESS['INCLUDE_PRETTY_COMMENTS']     = 'Р’РєР»СЋС‡РёС‚СЊ Р°РІС‚РѕРІС‹СЃРѕС‚Сѓ С‚РµРєСЃС‚РѕРІС‹С… РїРѕР»РµР№';
+$MESS['INCLUDE_FORM_STYLER']         = 'Р’РєР»СЋС‡РёС‚СЊ РѕР±СЂР°Р±РѕС‚С‡РёРє С„Р»Р°Р¶РєРѕРІ/РїРµСЂРµРєР»СЋС‡Р°С‚РµР»РµР№';;
+$MESS['HIDE_FORM_AFTER_SEND']        = 'РџСЂСЏС‚Р°С‚СЊ С„РѕСЂРјСѓ РїРѕСЃР»Рµ РѕС‚РїСЂР°РІРєРё';
+$MESS['SCROLL_TO_FORM_IF_MESSAGES']  = 'РџСЂРѕРєСЂСѓС‡РёРІР°С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ Рє С„РѕСЂРјРµ';
+$MESS['SCROLL_TO_FORM_SPEED']        = 'РЎРєРѕСЂРѕСЃС‚СЊ РїСЂРѕРєСЂСѓС‚РєРё СЃС‚СЂР°РЅРёС†С‹';
+$MESS['INCLUDE_PLACEHOLDER']         = 'Р’РєР»СЋС‡РёС‚СЊ placeholder';
 
 //GROUP_BRANCH_SETTINGS
-$MESS['BRANCH_SETTINGS']                    = 'Управление филиалами';
-$MESS["BRANCH_ACTIVE"]                      = "Задейстовать блок";
-$MESS["BRANCH_BLOCK_NAME"]                  = "Заголовок блока";
-$MESS["BRANCH_BLOCK_NAME_OTDEL"]            = "Отдел:";
-$MESS["BRANCH_FIELDS"]                      = "Значения выпадающего списка";
-$MESS["BRANCH_FIELDS_TEHNICESKAA_PODDERJK"] = "Техническая поддержка";
-$MESS["BRANCH_FIELDS_OTDEL_PRODAJ"]         = "Отдел Продаж";
-$MESS["BRANCH_FIELDS_OTDEL_OPLATY"]         = "Отдел Оплаты";
-$MESS["BRANCH_FIELDS_OTDEL_JALOB"]          = "Отдел жалоб";
-$MESS["BRANCH_FIELDS_ADMINISTRATIVNYY_OTD"] = "Административный отдел";
-$MESS["MSG_PRIORITY"]                       = "Показать блок «Важность»";
-$MESS["MSG_PRIORITY_BLOCK_NAME_VAJNOSTQ"]   = "Важность:";
+$MESS['BRANCH_SETTINGS']                    = 'РЈРїСЂР°РІР»РµРЅРёРµ С„РёР»РёР°Р»Р°РјРё';
+$MESS["BRANCH_ACTIVE"]                      = "Р—Р°РґРµР№СЃС‚РѕРІР°С‚СЊ Р±Р»РѕРє";
+$MESS["BRANCH_BLOCK_NAME"]                  = "Р—Р°РіРѕР»РѕРІРѕРє Р±Р»РѕРєР°";
+$MESS["BRANCH_BLOCK_NAME_OTDEL"]            = "РћС‚РґРµР»:";
+$MESS["BRANCH_FIELDS"]                      = "Р—РЅР°С‡РµРЅРёСЏ РІС‹РїР°РґР°СЋС‰РµРіРѕ СЃРїРёСЃРєР°";
+$MESS["BRANCH_FIELDS_TEHNICESKAA_PODDERJK"] = "РўРµС…РЅРёС‡РµСЃРєР°СЏ РїРѕРґРґРµСЂР¶РєР°";
+$MESS["BRANCH_FIELDS_OTDEL_PRODAJ"]         = "РћС‚РґРµР» РџСЂРѕРґР°Р¶";
+$MESS["BRANCH_FIELDS_OTDEL_OPLATY"]         = "РћС‚РґРµР» РћРїР»Р°С‚С‹";
+$MESS["BRANCH_FIELDS_OTDEL_JALOB"]          = "РћС‚РґРµР» Р¶Р°Р»РѕР±";
+$MESS["BRANCH_FIELDS_ADMINISTRATIVNYY_OTD"] = "РђРґРјРёРЅРёСЃС‚СЂР°С‚РёРІРЅС‹Р№ РѕС‚РґРµР»";
+$MESS["MSG_PRIORITY"]                       = "РџРѕРєР°Р·Р°С‚СЊ Р±Р»РѕРє В«Р’Р°Р¶РЅРѕСЃС‚СЊВ»";
+$MESS["MSG_PRIORITY_BLOCK_NAME_VAJNOSTQ"]   = "Р’Р°Р¶РЅРѕСЃС‚СЊ:";
 
 //GROUP_FILE_SETTINGS
-$MESS['SHOW_FILES']                 = 'Загружать файлы';
-$MESS['DELETE_FILES_AFTER_UPLOAD']  = 'Очищать папку с файлами';
-$MESS['SEND_ATTACHMENT']            = 'Отправлять как вложения';
-$MESS["SET_ATTACHMENT_REQUIRED"]    = "Обязательное";
-$MESS['SHOW_ATTACHMENT_EXTENSIONS'] = 'Показать список доступных раширений';
-$MESS['COUNT_INPUT_FILE']           = 'Число полей';
-$MESS['FILE_DESCRIPTION']           = 'Описание полей';
-$MESS['MAX_FILE_SIZE']              = 'Максимальный размер файла, KB';
-$MESS['FILE_EXTENSIONS']            = 'Допустимые расширения файлов';
-$MESS['UPLOAD_FOLDER']              = 'Папка для загружаемых файлов';
+$MESS['SHOW_FILES']                 = 'Р—Р°РіСЂСѓР¶Р°С‚СЊ С„Р°Р№Р»С‹';
+$MESS['DELETE_FILES_AFTER_UPLOAD']  = 'РћС‡РёС‰Р°С‚СЊ РїР°РїРєСѓ СЃ С„Р°Р№Р»Р°РјРё';
+$MESS['SEND_ATTACHMENT']            = 'РћС‚РїСЂР°РІР»СЏС‚СЊ РєР°Рє РІР»РѕР¶РµРЅРёСЏ';
+$MESS["SET_ATTACHMENT_REQUIRED"]    = "РћР±СЏР·Р°С‚РµР»СЊРЅРѕРµ";
+$MESS['SHOW_ATTACHMENT_EXTENSIONS'] = 'РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅС‹С… СЂР°С€РёСЂРµРЅРёР№';
+$MESS['COUNT_INPUT_FILE']           = 'Р§РёСЃР»Рѕ РїРѕР»РµР№';
+$MESS['FILE_DESCRIPTION']           = 'РћРїРёСЃР°РЅРёРµ РїРѕР»РµР№';
+$MESS['MAX_FILE_SIZE']              = 'РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЂР°Р·РјРµСЂ С„Р°Р№Р»Р°, KB';
+$MESS['FILE_EXTENSIONS']            = 'Р”РѕРїСѓСЃС‚РёРјС‹Рµ СЂР°СЃС€РёСЂРµРЅРёСЏ С„Р°Р№Р»РѕРІ';
+$MESS['UPLOAD_FOLDER']              = 'РџР°РїРєР° РґР»СЏ Р·Р°РіСЂСѓР¶Р°РµРјС‹С… С„Р°Р№Р»РѕРІ';
 
 //GROUP_CSS_MODAL_SETTINGS
-$MESS['GROUPS_CSS_MODAL_SETTINGS'] = 'Настройки модального окна';
-$MESS['SHOW_CSS_MODAL_AFTER_SEND'] = 'Выводить модальное окно с текстом после успешной отправки формы';
-$MESS['CSS_MODAL_HEADER']          = 'Текст в заголовке окна';
-$MESS['CSS_MODAL_HEADER_TXT']      = 'Информация';
-$MESS['CSS_MODAL_FOOTER']          = 'Текст в нижней части окна';
-$MESS['CSS_MODAL_FOOTER_TXT']      = '<a href="http://tuning-soft.ru/" target="_blank">Разработка модуля</a> - Тюнинг Софт';
-$MESS['CSS_MODAL_CONTENT']         = 'Текст сообщения';
-$MESS['CSS_MODAL_CONTENT_TXT']     = '<p>Модуль <b>расширенная форма обратной связи битрикс с вложением</b> предназначен для отправки сообщений с сайта, включая код CAPTCHA и скрытую защиту от спама, и отличается от стандартной формы Битрикс:
-<br> - <b>отправкой файлов вложениями или ссылками на файл</b>,
-<br> - <b>встроенным конструктором форм,</b>
-<br> - скрытой защитой от спама,
-<br> - работой нескольких форм на одной странице,
-<br> - встроенным фирменным валидатором форм,
-<br> - 4 встроенными WEB 2.0 шаблонами,
-<br> - дополнительными полями со своим именованием,
-<br> - и многими другими функциями...
-<br>подробнее читайте на странице модуля <a href="http://tuning-soft.ru/1c-bitrix/modules/main-feedback/" target="_blank">Расширенная форма обратной связи</a>
+$MESS['GROUPS_CSS_MODAL_SETTINGS'] = 'РќР°СЃС‚СЂРѕР№РєРё РјРѕРґР°Р»СЊРЅРѕРіРѕ РѕРєРЅР°';
+$MESS['SHOW_CSS_MODAL_AFTER_SEND'] = 'Р’С‹РІРѕРґРёС‚СЊ РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ СЃ С‚РµРєСЃС‚РѕРј РїРѕСЃР»Рµ СѓСЃРїРµС€РЅРѕР№ РѕС‚РїСЂР°РІРєРё С„РѕСЂРјС‹';
+$MESS['CSS_MODAL_HEADER']          = 'РўРµРєСЃС‚ РІ Р·Р°РіРѕР»РѕРІРєРµ РѕРєРЅР°';
+$MESS['CSS_MODAL_HEADER_TXT']      = 'РРЅС„РѕСЂРјР°С†РёСЏ';
+$MESS['CSS_MODAL_FOOTER']          = 'РўРµРєСЃС‚ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РѕРєРЅР°';
+$MESS['CSS_MODAL_FOOTER_TXT']      = '<a href="http://tuning-soft.ru/" target="_blank">Р Р°Р·СЂР°Р±РѕС‚РєР° РјРѕРґСѓР»СЏ</a> - РўСЋРЅРёРЅРі РЎРѕС„С‚';
+$MESS['CSS_MODAL_CONTENT']         = 'РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ';
+$MESS['CSS_MODAL_CONTENT_TXT']     = '<p>РњРѕРґСѓР»СЊ <b>СЂР°СЃС€РёСЂРµРЅРЅР°СЏ С„РѕСЂРјР° РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё Р±РёС‚СЂРёРєСЃ СЃ РІР»РѕР¶РµРЅРёРµРј</b> РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ РґР»СЏ РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёР№ СЃ СЃР°Р№С‚Р°, РІРєР»СЋС‡Р°СЏ РєРѕРґ CAPTCHA Рё СЃРєСЂС‹С‚СѓСЋ Р·Р°С‰РёС‚Сѓ РѕС‚ СЃРїР°РјР°, Рё РѕС‚Р»РёС‡Р°РµС‚СЃСЏ РѕС‚ СЃС‚Р°РЅРґР°СЂС‚РЅРѕР№ С„РѕСЂРјС‹ Р‘РёС‚СЂРёРєСЃ:
+<br> - <b>РѕС‚РїСЂР°РІРєРѕР№ С„Р°Р№Р»РѕРІ РІР»РѕР¶РµРЅРёСЏРјРё РёР»Рё СЃСЃС‹Р»РєР°РјРё РЅР° С„Р°Р№Р»</b>,
+<br> - <b>РІСЃС‚СЂРѕРµРЅРЅС‹Рј РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРѕРј С„РѕСЂРј,</b>
+<br> - СЃРєСЂС‹С‚РѕР№ Р·Р°С‰РёС‚РѕР№ РѕС‚ СЃРїР°РјР°,
+<br> - СЂР°Р±РѕС‚РѕР№ РЅРµСЃРєРѕР»СЊРєРёС… С„РѕСЂРј РЅР° РѕРґРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ,
+<br> - РІСЃС‚СЂРѕРµРЅРЅС‹Рј С„РёСЂРјРµРЅРЅС‹Рј РІР°Р»РёРґР°С‚РѕСЂРѕРј С„РѕСЂРј,
+<br> - 4 РІСЃС‚СЂРѕРµРЅРЅС‹РјРё WEB 2.0 С€Р°Р±Р»РѕРЅР°РјРё,
+<br> - РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹РјРё РїРѕР»СЏРјРё СЃРѕ СЃРІРѕРёРј РёРјРµРЅРѕРІР°РЅРёРµРј,
+<br> - Рё РјРЅРѕРіРёРјРё РґСЂСѓРіРёРјРё С„СѓРЅРєС†РёСЏРјРё...
+<br>РїРѕРґСЂРѕР±РЅРµРµ С‡РёС‚Р°Р№С‚Рµ РЅР° СЃС‚СЂР°РЅРёС†Рµ РјРѕРґСѓР»СЏ <a href="http://tuning-soft.ru/1c-bitrix/modules/main-feedback/" target="_blank">Р Р°СЃС€РёСЂРµРЅРЅР°СЏ С„РѕСЂРјР° РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё</a>
 </p>';

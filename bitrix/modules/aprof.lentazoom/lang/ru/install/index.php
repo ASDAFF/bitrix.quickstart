@@ -1,6 +1,6 @@
 <?
-$MESS["aprof.lentazoom_MODULE_NAME"] = "Ëåíòà ôîòîãðàôèé";
-$MESS["aprof.lentazoom_MODULE_DESC"] = "Âûâîäèò ëåíòó ôîòîãðàôèé, ñ âîçìîæíîñòüþ óâåëè÷åíèÿ ôîòîãðàôèè ïî êëèêó.";
-$MESS["aprof.lentazoom_PARTNER_NAME"] = "Òåõíîëîãèè ó÷åòà";
+$MESS["aprof.lentazoom_MODULE_NAME"] = "Ð›ÐµÐ½Ñ‚Ð° Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹";
+$MESS["aprof.lentazoom_MODULE_DESC"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ð»ÐµÐ½Ñ‚Ñƒ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹, Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒÑŽ ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð¸Ñ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð¿Ð¾ ÐºÐ»Ð¸ÐºÑƒ.";
+$MESS["aprof.lentazoom_PARTNER_NAME"] = "Ð¢ÐµÑ…Ð½Ð¾Ð»Ð¾Ð³Ð¸Ð¸ ÑƒÑ‡ÐµÑ‚Ð°";
 $MESS["aprof.lentazoom_PARTNER_URI"] = "http://www.a-prof.ru";
 ?>

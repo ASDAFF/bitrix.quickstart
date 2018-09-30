@@ -3,6 +3,6 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 
 $MESS['CP_NODE_NAME']   = 'Tuning-Soft';
-$MESS['CP_FOLDER_NAME'] = 'Разное';
-$MESS['CP_NAME']        = 'Форма обратной связи';
-$MESS['CP_DESCRIPTION'] = 'Расширенная форма для отправки сообщений и вложений с сайта на E-mail';
+$MESS['CP_FOLDER_NAME'] = 'Р Р°Р·РЅРѕРµ';
+$MESS['CP_NAME']        = 'Р¤РѕСЂРјР° РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё';
+$MESS['CP_DESCRIPTION'] = 'Р Р°СЃС€РёСЂРµРЅРЅР°СЏ С„РѕСЂРјР° РґР»СЏ РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёР№ Рё РІР»РѕР¶РµРЅРёР№ СЃ СЃР°Р№С‚Р° РЅР° E-mail';

@@ -29,10 +29,10 @@ header('Content-Type: text/html; charset=' . LANG_CHARSET);
 	<div class="api_tab" id="api_auth_tab">
 		<div class="api_tab_nav">
 			<div class="api_active">
-				<a class="api_tab_anchor" href="#api_auth_login">Вход</a>
+				<a class="api_tab_anchor" href="#api_auth_login">Р’С…РѕРґ</a>
 			</div>
 			<div>
-				<a class="api_tab_anchor" href="#api_auth_register">Регистрация</a>
+				<a class="api_tab_anchor" href="#api_auth_register">Р РµРіРёСЃС‚СЂР°С†РёСЏ</a>
 			</div>
 		</div>
 		<div class="api_tab_panel">

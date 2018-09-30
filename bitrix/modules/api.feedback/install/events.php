@@ -4,7 +4,7 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 
 IncludeModuleLangFile(__FILE__);
 
-//Тип почтового события
+//РўРёРї РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ
 $eventType         = new CEventType;
 $arEventTypeFields = array(
 	0 => array(
@@ -34,7 +34,7 @@ foreach($arEventTypeFields as $arField)
 
 unset($arField);
 
-//Почтовые шаблоны
+//РџРѕС‡С‚РѕРІС‹Рµ С€Р°Р±Р»РѕРЅС‹
 if(!empty($this->SITE_ID))
 {
 	$eventM            = new CEventMessage;

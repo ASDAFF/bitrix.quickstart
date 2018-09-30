@@ -55,7 +55,7 @@ if(!Application::isUtfMode())
 	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
 
 
-//Настройки модуля
+//РќР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
 $arSettings   = Settings::getAll();
 $arAuthFields = $arSettings['AUTH_FIELDS'];
 

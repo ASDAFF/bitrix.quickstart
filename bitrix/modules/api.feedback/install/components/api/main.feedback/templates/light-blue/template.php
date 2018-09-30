@@ -218,7 +218,7 @@ $tpl_class_name = 'tpl_light_blue';
 					case "input":
 						if($arFields[2]=="checkbox")
 						{
-							$values = array();//Извлекаемый массив
+							$values = array();//РР·РІР»РµРєР°РµРјС‹Р№ РјР°СЃСЃРёРІ
 							foreach($arFields as $arField)
 							{
 								if(substr($arField,0,6)=="values")
@@ -249,7 +249,7 @@ $tpl_class_name = 'tpl_light_blue';
 						}
 						elseif($arFields[2]=="radio")
 						{
-							$values = array();//Извлекаемый массив
+							$values = array();//РР·РІР»РµРєР°РµРјС‹Р№ РјР°СЃСЃРёРІ
 							foreach($arFields as $arField)
 							{
 								if(substr($arField,0,6)=="values")
@@ -279,7 +279,7 @@ $tpl_class_name = 'tpl_light_blue';
 						}
 						elseif($arFields[2]=="date")
 						{
-							$values = array();//Извлекаемый массив
+							$values = array();//РР·РІР»РµРєР°РµРјС‹Р№ РјР°СЃСЃРёРІ
 							$bDateMultiple = false;
 							foreach($arFields as $arField)
 							{

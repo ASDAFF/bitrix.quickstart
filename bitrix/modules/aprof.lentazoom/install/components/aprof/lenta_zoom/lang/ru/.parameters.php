@@ -1,15 +1,15 @@
 <?
-$MESS["APROF_LENTAZOOM_INCLUDE_JQUERY"] = "Ïîäêëþ÷èòü jQuery";
-$MESS["APROF_LENTAZOOM_KOLLEKCIA_MEDIABIBLI"] = "Êîëëåêöèÿ ìåäèàáèáëèîòåêè";
-$MESS["APROF_LENTAZOOM_SORTIROVATQ_PO"] = "Ñîðòèðîâàòü ïî";
-$MESS["APROF_LENTAZOOM_OPISANIU"] = "Îïèñàíèþ";
-$MESS["APROF_LENTAZOOM_KLUCEVYM_SLOVAM"] = "Êëþ÷åâûì ñëîâàì";
-$MESS["APROF_LENTAZOOM_PORADOK_SORTIROVKI"] = "Ïîðÿäîê ñîðòèðîâêè";
-$MESS["APROF_LENTAZOOM_PO_VOZRASTANIU"] = "Ïî âîçðàñòàíèþ";
-$MESS["APROF_LENTAZOOM_PO_UBYVANIU"] = "Ïî óáûâàíèþ";
-$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_SIRINA"] = "Ìàêñèìàëüíàÿ øèðèíà êàðòèíêè â ïðåâüþ";
-$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_VYSOTA"] = "Ìàêñèìàëüíàÿ âûñîòà êàðòèíêè â ïðåâüþ";
-$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_SIRINA1"] = "Ìàêñèìàëüíàÿ øèðèíà óâåëè÷åííîé êàðòèíêè";
-$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_VYSOTA1"] = "Ìàêñèìàëüíàÿ âûñîòà óâåëè÷åííîé êàðòèíêè";
-$MESS["APROF_LENTAZOOM_KOLICESTVO_SLAYDOV"] = "Êîëè÷åñòâî ñëàéäîâ";
+$MESS["APROF_LENTAZOOM_INCLUDE_JQUERY"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ jQuery";
+$MESS["APROF_LENTAZOOM_KOLLEKCIA_MEDIABIBLI"] = "ÐšÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ñ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸";
+$MESS["APROF_LENTAZOOM_SORTIROVATQ_PO"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾";
+$MESS["APROF_LENTAZOOM_OPISANIU"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸ÑŽ";
+$MESS["APROF_LENTAZOOM_KLUCEVYM_SLOVAM"] = "ÐšÐ»ÑŽÑ‡ÐµÐ²Ñ‹Ð¼ ÑÐ»Ð¾Ð²Ð°Ð¼";
+$MESS["APROF_LENTAZOOM_PORADOK_SORTIROVKI"] = "ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸";
+$MESS["APROF_LENTAZOOM_PO_VOZRASTANIU"] = "ÐŸÐ¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ";
+$MESS["APROF_LENTAZOOM_PO_UBYVANIU"] = "ÐŸÐ¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ";
+$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_SIRINA"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑˆÐ¸Ñ€Ð¸Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð² Ð¿Ñ€ÐµÐ²ÑŒÑŽ";
+$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_VYSOTA"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð²Ñ‹ÑÐ¾Ñ‚Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð² Ð¿Ñ€ÐµÐ²ÑŒÑŽ";
+$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_SIRINA1"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑˆÐ¸Ñ€Ð¸Ð½Ð° ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸";
+$MESS["APROF_LENTAZOOM_MAKSIMALQNAA_VYSOTA1"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð²Ñ‹ÑÐ¾Ñ‚Ð° ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð½Ð¾Ð¹ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸";
+$MESS["APROF_LENTAZOOM_KOLICESTVO_SLAYDOV"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»Ð°Ð¹Ð´Ð¾Ð²";
 ?>

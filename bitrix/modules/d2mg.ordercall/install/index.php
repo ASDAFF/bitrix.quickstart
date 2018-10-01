@@ -56,17 +56,17 @@ Class d2mg_ordercall extends CModule
 
         function DoInstall()
         {   
-			// Ñîçäàíèå òèïà ïî÷òîâîãî ñîáûòèÿ
+			// Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ñ‚Ð¸Ð¿Ð° Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ
 			COrderCall::EventTypeCreate();
-			// Ñîçäàíèå ïî÷òîâîãî øàáëîíà
+			// Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð°
 			COrderCall::EventMessageCreate();
-			// Ñîçäàíèå èíôîáëîêà
+			// Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°
 			COrderCall::IblockCreate();
             
-			//Êîïèðîâàíèå ôàéëà, ïîäêëþ÷àþùåãî ñòðàíèöó àäìèíèñòðàòèâíîé ÷àñòè ñ íàñòðîéêàìè ìîäóëÿ
+			//ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°, Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÑŽÑ‰ÐµÐ³Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ð¹ Ñ‡Ð°ÑÑ‚Ð¸ Ñ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ°Ð¼Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 			$t = copy($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/d2mg.ordercall/admin/d2mg_ordercall_admin.php', $_SERVER["DOCUMENT_ROOT"].'/bitrix/admin/d2mg_ordercall_admin.php');			
 
-			//Êîïèðîâàíèå êîìïîíåíòîâ
+			//ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð¾Ð²
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/d2mg.ordercall/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components/d2mg", true, true);			
 
             RegisterModule($this->MODULE_ID);
@@ -76,7 +76,7 @@ Class d2mg_ordercall extends CModule
 
         function DoUninstall()
         {          
-			// Óäàëåíèå ôàéëà, ïîäêëþ÷àþùåãî ñòðàíèöó àäìèíèñòðàòèâíîé ÷àñòè ñ íàñòðéêàìè ìîäóëÿ
+			// Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°, Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÑŽÑ‰ÐµÐ³Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ð¹ Ñ‡Ð°ÑÑ‚Ð¸ Ñ Ð½Ð°ÑÑ‚Ñ€Ð¹ÐºÐ°Ð¼Ð¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 			unlink($_SERVER["DOCUMENT_ROOT"].'/bitrix/admin/d2mg_ordercall_admin.php');
 			
             UnRegisterModule($this->MODULE_ID);

@@ -1,7 +1,7 @@
 <?
-$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME'] = "Óïðàâëåíèå êîðçèíîé ïîëüçîâàòåëÿ";
-$MESS ['BEONO_MODULE_USERBASKET_INSTALL_DESCRIPTION'] = "Ïðîñìîòð è ðåäàêòèðîâàíèå êîðçèíû ïîëüçîâàòåëÿ";
-$MESS ['BEONO_MODULE_USERBASKET_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ &laquo;".$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME']."&raquo;";
-$MESS ['BEONO_MODULE_USERBASKET_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ &laquo;".$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME']."&raquo;";
-$MESS ['BEONO_MODULE_USERBASKET_INSTALL_OK'] = "Ïåðåéòè íà ñòðàíèöó ìîäóëÿ";
+$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð¾Ð¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['BEONO_MODULE_USERBASKET_INSTALL_DESCRIPTION'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¸ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['BEONO_MODULE_USERBASKET_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;".$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME']."&raquo;";
+$MESS ['BEONO_MODULE_USERBASKET_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ &laquo;".$MESS ['BEONO_MODULE_USERBASKET_INSTALL_NAME']."&raquo;";
+$MESS ['BEONO_MODULE_USERBASKET_INSTALL_OK'] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 ?>

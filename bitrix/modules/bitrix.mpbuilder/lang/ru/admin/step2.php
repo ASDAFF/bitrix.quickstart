@@ -1,16 +1,16 @@
 <?
-$MESS["BITRIX_MPBUILDER_SAG_VTOROY_VYDELENI"] = "Âûäåëåíèå ÿçûêîâûõ ôðàç";
-$MESS["BITRIX_MPBUILDER_SAG"] = "Øàã 2";
-$MESS["BITRIX_MPBUILDER_VYDELENIE_AZYKOVYH_F"] = "Âûäåëåíèå ÿçûêîâûõ ôðàç";
-$MESS["BITRIX_MPBUILDER_PERED_PUBLIKACIEY_MO"] = "Ïåðåä ïóáëèêàöèåé ìîäóëÿ íåîáõîäèìî âûäåëèòü ÿçûêîâûå ôðàçû ÷òîáû ïðè óñòàíîâêå êëèåíòó îíè êîíâåðòèðîâàëèñü â êîäèðîâêó ñàéòà.";
-$MESS["BITRIX_MPBUILDER_ISHODNYE_FAYLY_BUDUT"] = "Èñõîäíûå ôàéëû áóäóò ïåðåïèñàíû, óáåäèòåñü, ÷òî ó âàñ ñîõðàíåíû ðåçåðâíûå êîïèè ôàéëîâ.";
-$MESS["BITRIX_MPBUILDER_OSIBKA_SOHRANENIA_FA"] = "Îøèáêà ñîõðàíåíèÿ ôàéëà: ";
-$MESS["BITRIX_MPBUILDER_OSIBKA_OTKRYTIA_FAYL"] = "Îøèáêà îòêðûòèÿ ôàéëà: ";
-$MESS["BITRIX_MPBUILDER_OSIBKA_OBRABOTKI_FAY"] = "Îøèáêà îáðàáîòêè ôàéëîâ";
-$MESS["BITRIX_MPBUILDER_VYBOR_MODULA"] = "Âûáîð ìîäóëÿ";
-$MESS["BITRIX_MPBUILDER_TEKUSIY_MODULQ"] = "Òåêóùèé ìîäóëü:";
-$MESS["BITRIX_MPBUILDER_VYBOR_FAYLOV"] = "Âûáîð ôàéëîâ";
-$MESS["BITRIX_MPBUILDER_VKLUCITQ_OBRABOTKU_F"] = "Âêëþ÷èòü îáðàáîòêó ôàéëà";
-$MESS["BITRIX_MPBUILDER_TEKUSAA_KODIROVKA_FA"] = "Òåêóùàÿ êîäèðîâêà ôàéëà";
-$MESS["BITRIX_MPBUILDER_PRODOLJITQ"] = "Ïðîäîëæèòü";
+$MESS["BITRIX_MPBUILDER_SAG_VTOROY_VYDELENI"] = "Ð’Ñ‹Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ ÑÐ·Ñ‹ÐºÐ¾Ð²Ñ‹Ñ… Ñ„Ñ€Ð°Ð·";
+$MESS["BITRIX_MPBUILDER_SAG"] = "Ð¨Ð°Ð³ 2";
+$MESS["BITRIX_MPBUILDER_VYDELENIE_AZYKOVYH_F"] = "Ð’Ñ‹Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ ÑÐ·Ñ‹ÐºÐ¾Ð²Ñ‹Ñ… Ñ„Ñ€Ð°Ð·";
+$MESS["BITRIX_MPBUILDER_PERED_PUBLIKACIEY_MO"] = "ÐŸÐµÑ€ÐµÐ´ Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ°Ñ†Ð¸ÐµÐ¹ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð²Ñ‹Ð´ÐµÐ»Ð¸Ñ‚ÑŒ ÑÐ·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ñ€Ð°Ð·Ñ‹ Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¿Ñ€Ð¸ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñƒ Ð¾Ð½Ð¸ ÐºÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð»Ð¸ÑÑŒ Ð² ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÑƒ ÑÐ°Ð¹Ñ‚Ð°.";
+$MESS["BITRIX_MPBUILDER_ISHODNYE_FAYLY_BUDUT"] = "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ Ñ„Ð°Ð¹Ð»Ñ‹ Ð±ÑƒÐ´ÑƒÑ‚ Ð¿ÐµÑ€ÐµÐ¿Ð¸ÑÐ°Ð½Ñ‹, ÑƒÐ±ÐµÐ´Ð¸Ñ‚ÐµÑÑŒ, Ñ‡Ñ‚Ð¾ Ñƒ Ð²Ð°Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹ Ñ€ÐµÐ·ÐµÑ€Ð²Ð½Ñ‹Ðµ ÐºÐ¾Ð¿Ð¸Ð¸ Ñ„Ð°Ð¹Ð»Ð¾Ð².";
+$MESS["BITRIX_MPBUILDER_OSIBKA_SOHRANENIA_FA"] = "ÐžÑˆÐ¸Ð±ÐºÐ° ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°: ";
+$MESS["BITRIX_MPBUILDER_OSIBKA_OTKRYTIA_FAYL"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°: ";
+$MESS["BITRIX_MPBUILDER_OSIBKA_OBRABOTKI_FAY"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ¸ Ñ„Ð°Ð¹Ð»Ð¾Ð²";
+$MESS["BITRIX_MPBUILDER_VYBOR_MODULA"] = "Ð’Ñ‹Ð±Ð¾Ñ€ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["BITRIX_MPBUILDER_TEKUSIY_MODULQ"] = "Ð¢ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ:";
+$MESS["BITRIX_MPBUILDER_VYBOR_FAYLOV"] = "Ð’Ñ‹Ð±Ð¾Ñ€ Ñ„Ð°Ð¹Ð»Ð¾Ð²";
+$MESS["BITRIX_MPBUILDER_VKLUCITQ_OBRABOTKU_F"] = "Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÑƒ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS["BITRIX_MPBUILDER_TEKUSAA_KODIROVKA_FA"] = "Ð¢ÐµÐºÑƒÑ‰Ð°Ñ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ° Ñ„Ð°Ð¹Ð»Ð°";
+$MESS["BITRIX_MPBUILDER_PRODOLJITQ"] = "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ";
 ?>

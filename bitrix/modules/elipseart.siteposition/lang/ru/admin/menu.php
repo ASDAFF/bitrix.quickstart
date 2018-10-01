@@ -1,12 +1,12 @@
 <?
-$MESS['SITE_POSITION'] = "Ïîçèöèè ñàéòà";
-$MESS['SITE_POSITION_ALT'] = "Ïîçèöèè ñàéòà â ïîèñêîâûõ ñèñòåìàõ";
-$MESS['SITE_POSITION_ALL'] = "Îáùàÿ ñòàòèñòèêà";
-$MESS['SITE_POSITION_ALL_ALT'] = "Îáùàÿ ñòàòèñòèêà ïîçèöèé";
-$MESS['SITE_POSITION_STAT'] = "Ñòàòèñòèêà ïîçèöèé";
-$MESS['SITE_POSITION_STAT_ALT'] = "Ñòàòèñòèêà ïîçèöèé ïî ïîèñêîâûì ôðàçàì";
-$MESS['SITE_POSITION_DOMAIN'] = "Äîìåííûå èìåíà";
-$MESS['SITE_POSITION_DOMAIN_ALT'] = "Äîìåííûå èìåíà äëÿ ñáîðà ñòàòèñòèêè ïîçèöèé";
-$MESS['SITE_POSITION_KEYWORD'] = "Ïîèñêîâûå ôðàçû";
-$MESS['SITE_POSITION_KEYWORD_ALT'] = "Ïîèñêîâûå ôðàçû äëÿ ñáîðà ñòàòèñòèêè ïîçèöèé";
+$MESS['SITE_POSITION'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS['SITE_POSITION_ALT'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð° Ð² Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼Ð°Ñ…";
+$MESS['SITE_POSITION_ALL'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ°";
+$MESS['SITE_POSITION_ALL_ALT'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+$MESS['SITE_POSITION_STAT'] = "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+$MESS['SITE_POSITION_STAT_ALT'] = "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹ Ð¿Ð¾ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ð¼ Ñ„Ñ€Ð°Ð·Ð°Ð¼";
+$MESS['SITE_POSITION_DOMAIN'] = "Ð”Ð¾Ð¼ÐµÐ½Ð½Ñ‹Ðµ Ð¸Ð¼ÐµÐ½Ð°";
+$MESS['SITE_POSITION_DOMAIN_ALT'] = "Ð”Ð¾Ð¼ÐµÐ½Ð½Ñ‹Ðµ Ð¸Ð¼ÐµÐ½Ð° Ð´Ð»Ñ ÑÐ±Ð¾Ñ€Ð° ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+$MESS['SITE_POSITION_KEYWORD'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ñ€Ð°Ð·Ñ‹";
+$MESS['SITE_POSITION_KEYWORD_ALT'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ñ€Ð°Ð·Ñ‹ Ð´Ð»Ñ ÑÐ±Ð¾Ñ€Ð° ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
 ?>

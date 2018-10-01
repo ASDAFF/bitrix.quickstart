@@ -4,7 +4,7 @@
 require_once($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/main/install/wizard_sol/wizard.php");
 
 
-//Разрабочик решения Антон Почкин Email:Kopernik83@gmail.com Skype:Odisei83
+//Р Р°Р·СЂР°Р±РѕС‡РёРє СЂРµС€РµРЅРёСЏ РђРЅС‚РѕРЅ РџРѕС‡РєРёРЅ Email:Kopernik83@gmail.com Skype:Odisei83
 
 class SelectSiteStep extends CSelectSiteWizardStep
 {
@@ -43,7 +43,7 @@ class SiteSettingsStep extends CSiteSettingsWizardStep
 		$siteLogo = "/bitrix/wizards/design2u/stindustrial/site/templates/electrocomp/images/Logo.png";
 		
              
-         //Устанавливаем переменные мастера
+         //РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РїРµСЂРµРјРµРЅРЅС‹Рµ РјР°СЃС‚РµСЂР°
 $wizard->SetDefaultVars(
 	     array
 		 ("siteLogo" => $siteLogo,				
@@ -69,7 +69,7 @@ $wizard->SetDefaultVars(
 				
 		$siteLogo = $wizard->GetVar("siteLogo", true);                
 
-         //Картинка для лого
+         //РљР°СЂС‚РёРЅРєР° РґР»СЏ Р»РѕРіРѕ
 		$this->content .= '<table width="100%" cellspacing="0" cellpadding="0">';
 		
 		$this->content .= '<tr><td>';
@@ -83,7 +83,7 @@ $wizard->SetDefaultVars(
 		
 		/*
 		$siteNameI = $wizard->GetVar("siteNameImage", true);                 
-		//картинка для названия
+		//РєР°СЂС‚РёРЅРєР° РґР»СЏ РЅР°Р·РІР°РЅРёСЏ
 		$this->content .= '<table width="100%" cellspacing="0" cellpadding="0">';
 		
 		$this->content .= '<tr><td>';
@@ -185,11 +185,11 @@ $wizard->SetDefaultVars(
 
          /*
 		 
-		 Контактная информация
+		 РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ
 
-Адрес :	332432, Россия, Город ул. Улица, 5а
-Тел :	 +7 812 111-93-49
-E-mаil :	info@kompany.ru
+РђРґСЂРµСЃ :	332432, Р РѕСЃСЃРёСЏ, Р“РѕСЂРѕРґ СѓР». РЈР»РёС†Р°, 5Р°
+РўРµР» :	 +7 812 111-93-49
+E-mР°il :	info@kompany.ru
 	CorpSkype                           443-111-3
 		 
 		 

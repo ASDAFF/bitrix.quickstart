@@ -1,42 +1,42 @@
 <?
-$MESS ['PANEL_TITLE'] = "Управление комментариями";
+$MESS ['PANEL_TITLE'] = "РЈРїСЂР°РІР»РµРЅРёРµ РєРѕРјРјРµРЅС‚Р°СЂРёСЏРјРё";
 
-$MESS ['PANEL_NOMODULE'] = "<p>Для работы модуля обязательно наличие модулей Информационные блоки и Форум.</p>";
-$MESS ['PANEL_NOFID'] = "Не задан форум с комментариями в настройках <a href=\"/bitrix/admin/settings.php?mid=itena.panel&lang=ru\">модуля</a>";
+$MESS ['PANEL_NOMODULE'] = "<p>Р”Р»СЏ СЂР°Р±РѕС‚С‹ РјРѕРґСѓР»СЏ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РЅР°Р»РёС‡РёРµ РјРѕРґСѓР»РµР№ РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ Р±Р»РѕРєРё Рё Р¤РѕСЂСѓРј.</p>";
+$MESS ['PANEL_NOFID'] = "РќРµ Р·Р°РґР°РЅ С„РѕСЂСѓРј СЃ РєРѕРјРјРµРЅС‚Р°СЂРёСЏРјРё РІ РЅР°СЃС‚СЂРѕР№РєР°С… <a href=\"/bitrix/admin/settings.php?mid=itena.panel&lang=ru\">РјРѕРґСѓР»СЏ</a>";
 
-$MESS ['PANEL_EDIT'] = "Редактировать";
-$MESS ['PANEL_ACT'] = "Активировать";
-$MESS ['PANEL_DEACT'] = "Деактивировать";
-$MESS ['PANEL_DEL'] = "Удалить";
-$MESS ['PANEL_DEL_CONF'] = "Удалить комментарий?";
+$MESS ['PANEL_EDIT'] = "Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ";
+$MESS ['PANEL_ACT'] = "РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ";
+$MESS ['PANEL_DEACT'] = "Р”РµР°РєС‚РёРІРёСЂРѕРІР°С‚СЊ";
+$MESS ['PANEL_DEL'] = "РЈРґР°Р»РёС‚СЊ";
+$MESS ['PANEL_DEL_CONF'] = "РЈРґР°Р»РёС‚СЊ РєРѕРјРјРµРЅС‚Р°СЂРёР№?";
 
-$MESS ['PANEL_F_DATE'] = "Дата комментария";
-$MESS ['PANEL_F_FID'] = "Источник комментариев";
-$MESS ['PANEL_F_FID_ALL'] = "(Все)";
-$MESS ['PANEL_F_NEWS'] = "ID элемента";
-$MESS ['PANEL_F_AUTHOR'] = "Автор";
+$MESS ['PANEL_F_DATE'] = "Р”Р°С‚Р° РєРѕРјРјРµРЅС‚Р°СЂРёСЏ";
+$MESS ['PANEL_F_FID'] = "РСЃС‚РѕС‡РЅРёРє РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ";
+$MESS ['PANEL_F_FID_ALL'] = "(Р’СЃРµ)";
+$MESS ['PANEL_F_NEWS'] = "ID СЌР»РµРјРµРЅС‚Р°";
+$MESS ['PANEL_F_AUTHOR'] = "РђРІС‚РѕСЂ";
 
 //errors
-$MESS ['PANEL_F_WRONG_START_DATE_FROM'] = "Введите в фильтре правильную дату \"c\" для \"Даты комментария\"";
-$MESS ['PANEL_F_WRONG_START_DATE_TILL'] = "Введите в фильтре правильную дату \"по\" для \"Даты комментария\"";
-$MESS ['PANEL_F_WRONG_START_FROM_TILL'] = "В фильтре дата \"по\" должна быть больше чем дата \"с\" для \"Даты комментария\"";
+$MESS ['PANEL_F_WRONG_START_DATE_FROM'] = "Р’РІРµРґРёС‚Рµ РІ С„РёР»СЊС‚СЂРµ РїСЂР°РІРёР»СЊРЅСѓСЋ РґР°С‚Сѓ \"c\" РґР»СЏ \"Р”Р°С‚С‹ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ\"";
+$MESS ['PANEL_F_WRONG_START_DATE_TILL'] = "Р’РІРµРґРёС‚Рµ РІ С„РёР»СЊС‚СЂРµ РїСЂР°РІРёР»СЊРЅСѓСЋ РґР°С‚Сѓ \"РїРѕ\" РґР»СЏ \"Р”Р°С‚С‹ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ\"";
+$MESS ['PANEL_F_WRONG_START_FROM_TILL'] = "Р’ С„РёР»СЊС‚СЂРµ РґР°С‚Р° \"РїРѕ\" РґРѕР»Р¶РЅР° Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ С‡РµРј РґР°С‚Р° \"СЃ\" РґР»СЏ \"Р”Р°С‚С‹ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ\"";
 
-$MESS ['PANEL_SAVE_ERROR'] = "Ошибка изменения комментария:";
-$MESS ['PANEL_DEL_ERROR'] = "Невозможно удалить комментарий";
-$MESS ['PANEL_NO_COMM'] = "Комментарий не найден";
+$MESS ['PANEL_SAVE_ERROR'] = "РћС€РёР±РєР° РёР·РјРµРЅРµРЅРёСЏ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ:";
+$MESS ['PANEL_DEL_ERROR'] = "РќРµРІРѕР·РјРѕР¶РЅРѕ СѓРґР°Р»РёС‚СЊ РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS ['PANEL_NO_COMM'] = "РљРѕРјРјРµРЅС‚Р°СЂРёР№ РЅРµ РЅР°Р№РґРµРЅ";
 
-$MESS ['PANEL_SAVE_ERROR'] = "Ошибка сохранения комментария";
+$MESS ['PANEL_SAVE_ERROR'] = "РћС€РёР±РєР° СЃРѕС…СЂР°РЅРµРЅРёСЏ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ";
 
 //tables
-$MESS ['PANEL_NAV'] = "Комментарии";
-$MESS ['PANEL_T_LAMP'] = "Инд.";
-$MESS ['PANEL_T_COMMENT'] = "Текст комментария";
-$MESS ['PANEL_T_DATE'] = "Дата";
-$MESS ['PANEL_T_AUTHOR'] = "Автор";
-$MESS ['PANEL_T_AUTHOR_EMAIL'] = "E-mail автора";
-$MESS ['PANEL_T_IP'] = "IP адрес";
-$MESS ['PANEL_T_NAME'] = "Имя элемента";
-$MESS ['PANEL_T_PREVIEW'] = "Анонс";
+$MESS ['PANEL_NAV'] = "РљРѕРјРјРµРЅС‚Р°СЂРёРё";
+$MESS ['PANEL_T_LAMP'] = "РРЅРґ.";
+$MESS ['PANEL_T_COMMENT'] = "РўРµРєСЃС‚ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ";
+$MESS ['PANEL_T_DATE'] = "Р”Р°С‚Р°";
+$MESS ['PANEL_T_AUTHOR'] = "РђРІС‚РѕСЂ";
+$MESS ['PANEL_T_AUTHOR_EMAIL'] = "E-mail Р°РІС‚РѕСЂР°";
+$MESS ['PANEL_T_IP'] = "IP Р°РґСЂРµСЃ";
+$MESS ['PANEL_T_NAME'] = "РРјСЏ СЌР»РµРјРµРЅС‚Р°";
+$MESS ['PANEL_T_PREVIEW'] = "РђРЅРѕРЅСЃ";
 
-$MESS ['PANEL_T_STOP_LIST'] = "стоп-лист";
+$MESS ['PANEL_T_STOP_LIST'] = "СЃС‚РѕРї-Р»РёСЃС‚";
 ?>

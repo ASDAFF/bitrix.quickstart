@@ -1,11 +1,11 @@
 <?
-$MESS ['BEONO_BANNER_SOURCE'] = "Èñòî÷íèê";
-$MESS ['BEONO_BANNER_SOURCE_MODULE'] = "Ìîäóëü \"Ðåêëàìà\"";
-$MESS ['BEONO_BANNER_SOURCE_MEDIALIB'] = "Ìåäèàáèáëèîòåêà";
-$MESS ['BEONO_BANNER_TYPE'] = "Òèï áàííåðà";
-$MESS ['BEONO_BANNER_LIMIT'] = "Êîë-âî áàííåðîâ";
-$MESS ['BEONO_BANNER_NOINDEX'] = "Äîáàâëÿòü â ññûëêè noindex/nofollow";
-$MESS ['BEONO_BANNER_NAME'] = "Íàçâàíèå";
-$MESS ['BEONO_BANNER_HREF'] = "Ññûëêà";
-$MESS ['BEONO_BANNER_IMAGE'] = "Áàííåð";
+$MESS ['BEONO_BANNER_SOURCE'] = "Ð˜ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº";
+$MESS ['BEONO_BANNER_SOURCE_MODULE'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ \"Ð ÐµÐºÐ»Ð°Ð¼Ð°\"";
+$MESS ['BEONO_BANNER_SOURCE_MEDIALIB'] = "ÐœÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
+$MESS ['BEONO_BANNER_TYPE'] = "Ð¢Ð¸Ð¿ Ð±Ð°Ð½Ð½ÐµÑ€Ð°";
+$MESS ['BEONO_BANNER_LIMIT'] = "ÐšÐ¾Ð»-Ð²Ð¾ Ð±Ð°Ð½Ð½ÐµÑ€Ð¾Ð²";
+$MESS ['BEONO_BANNER_NOINDEX'] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ Ð² ÑÑÑ‹Ð»ÐºÐ¸ noindex/nofollow";
+$MESS ['BEONO_BANNER_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['BEONO_BANNER_HREF'] = "Ð¡ÑÑ‹Ð»ÐºÐ°";
+$MESS ['BEONO_BANNER_IMAGE'] = "Ð‘Ð°Ð½Ð½ÐµÑ€";
 ?>

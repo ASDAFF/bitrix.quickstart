@@ -1,10 +1,10 @@
 <?
-$MESS["SHS_IBLOCK_TYPE"] = "Òèï èíôîáëîêà";
-$MESS["SHS_IBLOCK_IBLOCK"] = "Èíôîáëîê";
-$MESS["SHS_ELEMENT_ID"] = "ID ýëåìåíòà";
-$MESS["SHS_ELEMENT_CODE"] = "Êîä ýëåìåíòà";
-$MESS["SHS_TIME_ZADERZH"] = "Âðåìÿ çàäåðæêè äî ïîÿâëåíèÿ ñîîáùåíèÿ(â ñåêóíäàõ)";
-$MESS["SHS_TIME_SHOW"] = "Âðåìÿ ïîêàçà ñîîáùåíèÿ(â ñåêóíäàõ)";
-$MESS["SHS_JQUERY"] = "Ïîäêëþ÷èòü JQuery";
-$MESS["SHS_COLOR"] = "Öâåò ôîíà";
+$MESS["SHS_IBLOCK_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["SHS_IBLOCK_IBLOCK"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["SHS_ELEMENT_ID"] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["SHS_ELEMENT_CODE"] = "ÐšÐ¾Ð´ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["SHS_TIME_ZADERZH"] = "Ð’Ñ€ÐµÐ¼Ñ Ð·Ð°Ð´ÐµÑ€Ð¶ÐºÐ¸ Ð´Ð¾ Ð¿Ð¾ÑÐ²Ð»ÐµÐ½Ð¸Ñ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ(Ð² ÑÐµÐºÑƒÐ½Ð´Ð°Ñ…)";
+$MESS["SHS_TIME_SHOW"] = "Ð’Ñ€ÐµÐ¼Ñ Ð¿Ð¾ÐºÐ°Ð·Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ(Ð² ÑÐµÐºÑƒÐ½Ð´Ð°Ñ…)";
+$MESS["SHS_JQUERY"] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ JQuery";
+$MESS["SHS_COLOR"] = "Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð°";
 ?>

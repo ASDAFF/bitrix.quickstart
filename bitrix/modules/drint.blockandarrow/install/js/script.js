@@ -56,7 +56,7 @@ $(document).ready(function(){
 		}
 		if(url_img != '' && include_up == "Y")
 		{		
-			$("body").append("<div class='up_scroll' href='#'><img src='"+url_img+"' alt='Ββεπυ'></a>");
+			$("body").append("<div class='up_scroll' href='#'><img src='"+url_img+"' alt='Π’Π²ΠµΡ€Ρ…'></a>");
 			scroll_block = $('.up_scroll');
 			scroll_block.css("bottom", up_pos_xy+'px');
 			

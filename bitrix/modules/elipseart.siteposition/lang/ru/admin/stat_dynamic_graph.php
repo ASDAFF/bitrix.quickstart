@@ -1,14 +1,14 @@
 <?
-$MESS ['STAT_GRAPH_MONTH_01'] = "ÿíâ";
-$MESS ['STAT_GRAPH_MONTH_02'] = "ôåâ";
-$MESS ['STAT_GRAPH_MONTH_03'] = "ìàð";
-$MESS ['STAT_GRAPH_MONTH_04'] = "àïð";
-$MESS ['STAT_GRAPH_MONTH_05'] = "ìàÿ";
-$MESS ['STAT_GRAPH_MONTH_06'] = "èþí";
-$MESS ['STAT_GRAPH_MONTH_07'] = "èþë";
-$MESS ['STAT_GRAPH_MONTH_08'] = "àâã";
-$MESS ['STAT_GRAPH_MONTH_09'] = "ñåí";
-$MESS ['STAT_GRAPH_MONTH_10'] = "îêò";
-$MESS ['STAT_GRAPH_MONTH_11'] = "íîÿ";
-$MESS ['STAT_GRAPH_MONTH_12'] = "äåê";
+$MESS ['STAT_GRAPH_MONTH_01'] = "ÑÐ½Ð²";
+$MESS ['STAT_GRAPH_MONTH_02'] = "Ñ„ÐµÐ²";
+$MESS ['STAT_GRAPH_MONTH_03'] = "Ð¼Ð°Ñ€";
+$MESS ['STAT_GRAPH_MONTH_04'] = "Ð°Ð¿Ñ€";
+$MESS ['STAT_GRAPH_MONTH_05'] = "Ð¼Ð°Ñ";
+$MESS ['STAT_GRAPH_MONTH_06'] = "Ð¸ÑŽÐ½";
+$MESS ['STAT_GRAPH_MONTH_07'] = "Ð¸ÑŽÐ»";
+$MESS ['STAT_GRAPH_MONTH_08'] = "Ð°Ð²Ð³";
+$MESS ['STAT_GRAPH_MONTH_09'] = "ÑÐµÐ½";
+$MESS ['STAT_GRAPH_MONTH_10'] = "Ð¾ÐºÑ‚";
+$MESS ['STAT_GRAPH_MONTH_11'] = "Ð½Ð¾Ñ";
+$MESS ['STAT_GRAPH_MONTH_12'] = "Ð´ÐµÐº";
 ?>

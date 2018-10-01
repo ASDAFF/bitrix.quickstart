@@ -1,22 +1,22 @@
 <?
-$MESS ['STAT_POSITION_LIST'] = "Ïîçèöèè ñàéòà";
-$MESS ['STAT_KEYWORD'] = "Ïîèñêîâûå ôðàçû";
-$MESS ['STAT_KEYWORD_NAME'] = "Ïîèñêîâàÿ ôðàçà";
-$MESS ['STAT_ACTIVE'] = "Àêòèâíîñòü";
-$MESS ['STAT_SORT'] = "Ñîðòèðîâêà";
-$MESS ['STAT_SITE'] = "Ñàéò";
+$MESS ['STAT_POSITION_LIST'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS ['STAT_KEYWORD'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ñ€Ð°Ð·Ñ‹";
+$MESS ['STAT_KEYWORD_NAME'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ð°Ñ Ñ„Ñ€Ð°Ð·Ð°";
+$MESS ['STAT_ACTIVE'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS ['STAT_SORT'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS ['STAT_SITE'] = "Ð¡Ð°Ð¹Ñ‚";
 $MESS ['STAT_ID'] = "ID";
-$MESS ['STAT_HOST'] = "Äîìåí";
-$MESS ['STAT_REGION'] = "Ðåãèîí";
-$MESS ['EDIT'] = "Ðåäàêòèðîâàòü";
-$MESS ['DELETE'] = "Óäàëèòü";
-$MESS ['KEYWORD_ADD'] = "Äîáàâèòü ôðàçó";
-$MESS ['KEYWORD_ADD_TITLE'] = "Äîáàâèòü ïîèñêîâóþ ôðàçó";
-$MESS ['YES'] = "Äà";
-$MESS ['NO'] = "Íåò";
-$MESS ['EASP_SAVE_ERROR'] = "Îøèáêà ñîõðàíåíèÿ";
-$MESS ['EASP_ERROR_NO_KEYWORD'] = "Ïîèñêîâàÿ ôðàçà ñ òàêèì ID íå ñóùåñòâóåò";
-$MESS ['EASP_DEL_ERROR'] = "Îøèáêà óäàëåíèÿ";
+$MESS ['STAT_HOST'] = "Ð”Ð¾Ð¼ÐµÐ½";
+$MESS ['STAT_REGION'] = "Ð ÐµÐ³Ð¸Ð¾Ð½";
+$MESS ['EDIT'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+$MESS ['DELETE'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS ['KEYWORD_ADD'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ„Ñ€Ð°Ð·Ñƒ";
+$MESS ['KEYWORD_ADD_TITLE'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²ÑƒÑŽ Ñ„Ñ€Ð°Ð·Ñƒ";
+$MESS ['YES'] = "Ð”Ð°";
+$MESS ['NO'] = "ÐÐµÑ‚";
+$MESS ['EASP_SAVE_ERROR'] = "ÐžÑˆÐ¸Ð±ÐºÐ° ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ";
+$MESS ['EASP_ERROR_NO_KEYWORD'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ð°Ñ Ñ„Ñ€Ð°Ð·Ð° Ñ Ñ‚Ð°ÐºÐ¸Ð¼ ID Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚";
+$MESS ['EASP_DEL_ERROR'] = "ÐžÑˆÐ¸Ð±ÐºÐ° ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ";
 
-$MESS ['KEY_TO_ERROR'] = "Êëþ÷è äëÿ ïîèñêîâûõ ñèñòåì íå óêàçàíû. Ñáîð ñòàòèñòèêè íå ïðîèçâîäèòñÿ.";
+$MESS ['KEY_TO_ERROR'] = "ÐšÐ»ÑŽÑ‡Ð¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½Ñ‹. Ð¡Ð±Ð¾Ñ€ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð½Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÑÑ.";
 ?>

@@ -1,36 +1,36 @@
 <?
-$MESS ['STAT_POSITION_LIST'] = "Позиции сайта";
+$MESS ['STAT_POSITION_LIST'] = "РџРѕР·РёС†РёРё СЃР°Р№С‚Р°";
 $MESS ['STAT_ID'] = "ID";
-$MESS ['STAT_KEYWORD'] = "Поисковые фразы";
-$MESS ['STAT_KEYWORD_NAME'] = "Поисковая фраза";
-$MESS ['STAT_SORT'] = "Сортировка";
-$MESS ['STAT_POSITION'] = "Позиция";
-$MESS ['STAT_SEARCH_SYSTEM'] = "Поисковая система";
-$MESS ['STAT_CHANGE'] = "Изменение";
-$MESS ['STAT_VIEW_GRAPHIC'] = "Отобразить на графике";
-$MESS ['STAT_REGION'] = "Регион";
-$MESS ['STAT_SITE'] = "Сайт";
-$MESS ['STAT_HOST'] = "Домен";
-$MESS ['STAT_VIEW_GRAPH'] = "Показать график позиций";
-$MESS ['STAT_GRAPH_POSITION'] = "Общая статистика позиций в поисковой системе";
+$MESS ['STAT_KEYWORD'] = "РџРѕРёСЃРєРѕРІС‹Рµ С„СЂР°Р·С‹";
+$MESS ['STAT_KEYWORD_NAME'] = "РџРѕРёСЃРєРѕРІР°СЏ С„СЂР°Р·Р°";
+$MESS ['STAT_SORT'] = "РЎРѕСЂС‚РёСЂРѕРІРєР°";
+$MESS ['STAT_POSITION'] = "РџРѕР·РёС†РёСЏ";
+$MESS ['STAT_SEARCH_SYSTEM'] = "РџРѕРёСЃРєРѕРІР°СЏ СЃРёСЃС‚РµРјР°";
+$MESS ['STAT_CHANGE'] = "РР·РјРµРЅРµРЅРёРµ";
+$MESS ['STAT_VIEW_GRAPHIC'] = "РћС‚РѕР±СЂР°Р·РёС‚СЊ РЅР° РіСЂР°С„РёРєРµ";
+$MESS ['STAT_REGION'] = "Р РµРіРёРѕРЅ";
+$MESS ['STAT_SITE'] = "РЎР°Р№С‚";
+$MESS ['STAT_HOST'] = "Р”РѕРјРµРЅ";
+$MESS ['STAT_VIEW_GRAPH'] = "РџРѕРєР°Р·Р°С‚СЊ РіСЂР°С„РёРє РїРѕР·РёС†РёР№";
+$MESS ['STAT_GRAPH_POSITION'] = "РћР±С‰Р°СЏ СЃС‚Р°С‚РёСЃС‚РёРєР° РїРѕР·РёС†РёР№ РІ РїРѕРёСЃРєРѕРІРѕР№ СЃРёСЃС‚РµРјРµ";
 
-$MESS ['STAT_GRAPH_TYPE'] = "Тип графика";
-$MESS ['STAT_GRAPH_TYPE_STD'] = "Стандартный";
-$MESS ['STAT_GRAPH_TYPE_TOP10'] = "ТОП 10";
+$MESS ['STAT_GRAPH_TYPE'] = "РўРёРї РіСЂР°С„РёРєР°";
+$MESS ['STAT_GRAPH_TYPE_STD'] = "РЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№";
+$MESS ['STAT_GRAPH_TYPE_TOP10'] = "РўРћРџ 10";
 
-$MESS ['STAT_SS_YANDEX'] = "Яндекс";
+$MESS ['STAT_SS_YANDEX'] = "РЇРЅРґРµРєСЃ";
 $MESS ['STAT_SS_GOOGLE'] = "Google";
 $MESS ['STAT_SS_BING'] = "Bing";
 
-$MESS ['STAT_PERIOD'] = "Период";
+$MESS ['STAT_PERIOD'] = "РџРµСЂРёРѕРґ";
 
-$MESS ['STAT_KEYWORD_ALL_UPDATE'] = "Проверить позиции";
-$MESS ['STAT_KEYWORD_UPDATE'] = "Проверить позиции";
-$MESS ['STAT_KEYWORD_REUPDATE'] = "Обновить позиции";
+$MESS ['STAT_KEYWORD_ALL_UPDATE'] = "РџСЂРѕРІРµСЂРёС‚СЊ РїРѕР·РёС†РёРё";
+$MESS ['STAT_KEYWORD_UPDATE'] = "РџСЂРѕРІРµСЂРёС‚СЊ РїРѕР·РёС†РёРё";
+$MESS ['STAT_KEYWORD_REUPDATE'] = "РћР±РЅРѕРІРёС‚СЊ РїРѕР·РёС†РёРё";
 
-$MESS ['EASP_DEL_ERROR'] = "При удалении произошла ошибка";
-$MESS ['EASP_UPD_POS_ERROR'] = "При проверке произошла ошибка";
-$MESS ['EASP_REUPD_POS_ERROR'] = "При обновлении произошла ошибка";
+$MESS ['EASP_DEL_ERROR'] = "РџСЂРё СѓРґР°Р»РµРЅРёРё РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°";
+$MESS ['EASP_UPD_POS_ERROR'] = "РџСЂРё РїСЂРѕРІРµСЂРєРµ РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°";
+$MESS ['EASP_REUPD_POS_ERROR'] = "РџСЂРё РѕР±РЅРѕРІР»РµРЅРёРё РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°";
 
-$MESS ['KEY_TO_ERROR'] = "Ключи для поисковых систем не указаны. Сбор статистики не производится.";// Для работы модуля необходимо <a href=\"/bitrix/admin/settings.php?mid=elipseart.siteposition\">указать ключи</a>";
+$MESS ['KEY_TO_ERROR'] = "РљР»СЋС‡Рё РґР»СЏ РїРѕРёСЃРєРѕРІС‹С… СЃРёСЃС‚РµРј РЅРµ СѓРєР°Р·Р°РЅС‹. РЎР±РѕСЂ СЃС‚Р°С‚РёСЃС‚РёРєРё РЅРµ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ.";// Р”Р»СЏ СЂР°Р±РѕС‚С‹ РјРѕРґСѓР»СЏ РЅРµРѕР±С…РѕРґРёРјРѕ <a href=\"/bitrix/admin/settings.php?mid=elipseart.siteposition\">СѓРєР°Р·Р°С‚СЊ РєР»СЋС‡Рё</a>";
 ?>

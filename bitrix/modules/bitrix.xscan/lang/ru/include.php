@@ -1,3 +1,3 @@
 <?
-$MESS["BITRIX_XSCAN_SEARCH"] = "Поиск";
+$MESS["BITRIX_XSCAN_SEARCH"] = "РџРѕРёСЃРє";
 ?>

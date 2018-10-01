@@ -1,6 +1,6 @@
 <?
-$MESS ['COMMENTS_INSTALL_NAME'] = "Ðàñøèðåííîå ìåíþ";
-$MESS ['COMMENTS_INSTALL_DESCRIPTION'] = "Àíàëîã ìåíþ bitrix.menu.sections ñ âîçìîæíîñòüþ äîáàâèòü òèïû èíôîáëîêîâ è èíôîáëîêè";
-$MESS ['COMMENTS_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ";
-$MESS ['COMMENTS_UNINSTALL_TITLE'] = "Óäàëåíèå ìîäóëÿ";
+$MESS ['COMMENTS_INSTALL_NAME'] = "Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ð¾Ðµ Ð¼ÐµÐ½ÑŽ";
+$MESS ['COMMENTS_INSTALL_DESCRIPTION'] = "ÐÐ½Ð°Ð»Ð¾Ð³ Ð¼ÐµÐ½ÑŽ bitrix.menu.sections Ñ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒÑŽ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ‚Ð¸Ð¿Ñ‹ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð² Ð¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸";
+$MESS ['COMMENTS_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS ['COMMENTS_UNINSTALL_TITLE'] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 ?>

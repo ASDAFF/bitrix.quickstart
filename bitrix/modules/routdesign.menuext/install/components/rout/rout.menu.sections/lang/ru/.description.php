@@ -1,5 +1,5 @@
 <?
-$MESS ['T_IBLOCK_DESC_MENU_ITEMS'] = "Ïóíêòû ìåíþ (ðàñøèðåííûå)";
-$MESS ['T_IBLOCK_DESC_MENU_ITEMS_DESC'] = "Äîïîëíåíèå ìåíþ íàçâàíèÿìè èíôîáëîêîâ è ñåêöèé";
-$MESS ['MAIN_NAVIGATION_SERVICE'] = "Íàâèãàöèÿ";
+$MESS ['T_IBLOCK_DESC_MENU_ITEMS'] = "ÐŸÑƒÐ½ÐºÑ‚Ñ‹ Ð¼ÐµÐ½ÑŽ (Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ñ‹Ðµ)";
+$MESS ['T_IBLOCK_DESC_MENU_ITEMS_DESC'] = "Ð”Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ð¼ÐµÐ½ÑŽ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÑÐ¼Ð¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð² Ð¸ ÑÐµÐºÑ†Ð¸Ð¹";
+$MESS ['MAIN_NAVIGATION_SERVICE'] = "ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ";
 ?>

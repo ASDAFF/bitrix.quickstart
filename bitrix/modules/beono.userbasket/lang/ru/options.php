@@ -1,31 +1,31 @@
 <?php 
 
-$MESS['BEONO_USERBASKET_PAGETITLE'] = "Óïðàâëåíèå êîðçèíîé ïîëüçîâàòåëÿ";
-$MESS['BEONO_USERBASKET_SAVED'] = "Èçìåíåíèÿ ñîõðàíåíû";
-$MESS['BEONO_USERBASKET_ERROR_DELETE'] = "Îøèáêà ïðè óäàëåíèè";
-$MESS['BEONO_USERBASKET_USER'] = "ID ïîëüçîâàòåëÿ";
-$MESS['BEONO_USERBASKET_PRODUCT'] = "ID òîâàðà";
-$MESS['BEONO_USERBASKET_NOTE'] = "Íà äàííîé ñòðàíèöå ïðåäñòàâëåíû òîâàðû, íàõîäÿùèåñÿ â êîðçèíå ïîëüçîâàòåëåé, íî íå áîëåå 10 000 çàïèñåé.";
+$MESS['BEONO_USERBASKET_PAGETITLE'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð¾Ð¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS['BEONO_USERBASKET_SAVED'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹";
+$MESS['BEONO_USERBASKET_ERROR_DELETE'] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸";
+$MESS['BEONO_USERBASKET_USER'] = "ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS['BEONO_USERBASKET_PRODUCT'] = "ID Ñ‚Ð¾Ð²Ð°Ñ€Ð°";
+$MESS['BEONO_USERBASKET_NOTE'] = "ÐÐ° Ð´Ð°Ð½Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ Ð¿Ñ€ÐµÐ´ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ñ‹ Ñ‚Ð¾Ð²Ð°Ñ€Ñ‹, Ð½Ð°Ñ…Ð¾Ð´ÑÑ‰Ð¸ÐµÑÑ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹, Ð½Ð¾ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 10 000 Ð·Ð°Ð¿Ð¸ÑÐµÐ¹.";
 
 $MESS['BEONO_USERBASKET_LIST_ID'] = "ID ";
-$MESS['BEONO_USERBASKET_LIST_NAME'] = "Íàçâàíèå òîâàðà";
-$MESS['BEONO_USERBASKET_LIST_USER'] = "Ïîëüçîâàòåëü";
-$MESS['BEONO_USERBASKET_LIST_PRODUCT_ID'] = "Êîä òîâàðà";
-$MESS['BEONO_USERBASKET_LIST_PRODUCT_PRICE_ID'] = "Äîï. êîä òîâàðà";
-$MESS['BEONO_USERBASKET_LIST_PRICE'] = "Öåíà";
-$MESS['BEONO_USERBASKET_LIST_QUANTITY'] = "Êîëè÷åñòâî";
-$MESS['BEONO_USERBASKET_LIST_LID'] = "Ñàéò";
-$MESS['BEONO_USERBASKET_LIST_DELAY'] = "Îòëîæåí";
-$MESS['BEONO_USERBASKET_LIST_CAN_BUY'] = "Ðàçðåøåíî ïîêóïàòü";
-$MESS['BEONO_USERBASKET_LIST_DATE_INSERT'] = "Äàòà äîáàâëåíèÿ";
-$MESS['BEONO_USERBASKET_LIST_ORDER_ID'] = "Íîìåð çàêàçà";
-$MESS['BEONO_USERBASKET_LIST_PROPS'] = "Ñâîéñòâà";
+$MESS['BEONO_USERBASKET_LIST_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°";
+$MESS['BEONO_USERBASKET_LIST_USER'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
+$MESS['BEONO_USERBASKET_LIST_PRODUCT_ID'] = "ÐšÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°";
+$MESS['BEONO_USERBASKET_LIST_PRODUCT_PRICE_ID'] = "Ð”Ð¾Ð¿. ÐºÐ¾Ð´ Ñ‚Ð¾Ð²Ð°Ñ€Ð°";
+$MESS['BEONO_USERBASKET_LIST_PRICE'] = "Ð¦ÐµÐ½Ð°";
+$MESS['BEONO_USERBASKET_LIST_QUANTITY'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS['BEONO_USERBASKET_LIST_LID'] = "Ð¡Ð°Ð¹Ñ‚";
+$MESS['BEONO_USERBASKET_LIST_DELAY'] = "ÐžÑ‚Ð»Ð¾Ð¶ÐµÐ½";
+$MESS['BEONO_USERBASKET_LIST_CAN_BUY'] = "Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ñ‚ÑŒ";
+$MESS['BEONO_USERBASKET_LIST_DATE_INSERT'] = "Ð”Ð°Ñ‚Ð° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ";
+$MESS['BEONO_USERBASKET_LIST_ORDER_ID'] = "ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+$MESS['BEONO_USERBASKET_LIST_PROPS'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð°";
 
-$MESS['BEONO_USERBASKET_SHOWEMAIL'] = "Ïîêàçàòü ñïèñîê email äëÿ ðàññûëêè";
-$MESS['BEONO_USERBASKET_ADD2GROUP'] = 'Äîáàâèòü â íîâóþ ãðóïïó';
-$MESS['BEONO_USERBASKET_ADD2GROUP_OK'] = 'Ïîëüçîâàòåëè äîáàâëåíû â ãðóïïó';
-$MESS['BEONO_USERBASKET_GROUPNAME'] = "Óêàæèòå íàçâàíèå íîâîé ãðóïïû";
+$MESS['BEONO_USERBASKET_SHOWEMAIL'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº email Ð´Ð»Ñ Ñ€Ð°ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS['BEONO_USERBASKET_ADD2GROUP'] = 'Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² Ð½Ð¾Ð²ÑƒÑŽ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ';
+$MESS['BEONO_USERBASKET_ADD2GROUP_OK'] = 'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ð¸ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ð² Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ';
+$MESS['BEONO_USERBASKET_GROUPNAME'] = "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð¹ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹";
 
-$MESS['BEONO_MODULE_USERBASKET_ERROR_EXPIRED'] = "Ìîäóëü íåàêòèâåí! Âåðîÿòíî, äåìî-ðåæèì çàêîí÷èëñÿ.";
+$MESS['BEONO_MODULE_USERBASKET_ERROR_EXPIRED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð½ÐµÐ°ÐºÑ‚Ð¸Ð²ÐµÐ½! Ð’ÐµÑ€Ð¾ÑÑ‚Ð½Ð¾, Ð´ÐµÐ¼Ð¾-Ñ€ÐµÐ¶Ð¸Ð¼ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ð»ÑÑ.";
 
 ?>

@@ -1,32 +1,32 @@
 <?
-$MESS ['STAT_POSITION_LIST'] = "Ïîçèöèè ñàéòà";
+$MESS ['STAT_POSITION_LIST'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð°";
 $MESS ['STAT_ID'] = "ID";
-$MESS ['STAT_KEYWORD'] = "Ïîèñêîâûå ôðàçû";
-$MESS ['STAT_KEYWORD_NAME'] = "Ïîèñêîâàÿ ôðàçà";
-$MESS ['STAT_DATE'] = "Äàòà";
-//$MESS ['STAT_ACTIVE'] = "Àêòèâíîñòü";
-//$MESS ['STAT_SORT'] = "Ñîðòèðîâêà";
-$MESS ['STAT_POSITION'] = "Ïîçèöèÿ";
-$MESS ['STAT_SEARCH_SYSTEM'] = "Ïîèñêîâàÿ ñèñòåìà";
-$MESS ['STAT_CHANGE'] = "Èçìåíåíèå";
-$MESS ['STAT_VIEW_GRAPHIC'] = "Îòîáðàçèòü íà ãðàôèêå";
-$MESS ['STAT_REGION'] = "Ðåãèîí";
-$MESS ['STAT_SS_YANDEX'] = "ßíäåêñ";
+$MESS ['STAT_KEYWORD'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ðµ Ñ„Ñ€Ð°Ð·Ñ‹";
+$MESS ['STAT_KEYWORD_NAME'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ð°Ñ Ñ„Ñ€Ð°Ð·Ð°";
+$MESS ['STAT_DATE'] = "Ð”Ð°Ñ‚Ð°";
+//$MESS ['STAT_ACTIVE'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+//$MESS ['STAT_SORT'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS ['STAT_POSITION'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ";
+$MESS ['STAT_SEARCH_SYSTEM'] = "ÐŸÐ¾Ð¸ÑÐºÐ¾Ð²Ð°Ñ ÑÐ¸ÑÑ‚ÐµÐ¼Ð°";
+$MESS ['STAT_CHANGE'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ";
+$MESS ['STAT_VIEW_GRAPHIC'] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð·Ð¸Ñ‚ÑŒ Ð½Ð° Ð³Ñ€Ð°Ñ„Ð¸ÐºÐµ";
+$MESS ['STAT_REGION'] = "Ð ÐµÐ³Ð¸Ð¾Ð½";
+$MESS ['STAT_SS_YANDEX'] = "Ð¯Ð½Ð´ÐµÐºÑ";
 $MESS ['STAT_SS_GOOGLE'] = "Google";
 $MESS ['STAT_SS_BING'] = "Bing";
-$MESS ['STAT_SITE'] = "Ñàéò";
-$MESS ['STAT_HOST'] = "Äîìåí";
-$MESS ['STAT_VIEW_GRAPH'] = "Ïîêàçàòü ãðàôèê ïîçèöèé";
-$MESS ['STAT_GRAPH_POSITION'] = "Îáùàÿ ñòàòèñòèêà ïîçèöèé";
-$MESS ['STAT_GRAPH_POSITION_FULL'] = "Îáùàÿ ñòàòèñòèêà ïîçèöèé ïî ïîèñêîâîé ôðàçå";
-$MESS ['STAT_NOT_ENOUGH_DATA'] = "Íåäîñòàòî÷íî äàííûõ äëÿ ïîñòðîåíèÿ ãðàôèêà.";
-$MESS ['STAT_GRAPH_TYPE'] = "Òèï ãðàôèêà";
-$MESS ['STAT_GRAPH_TYPE_STD'] = "Ñòàíäàðòíûé";
-$MESS ['STAT_GRAPH_TYPE_TOP10'] = "ÒÎÏ 10";
-$MESS ['STAT_PERIOD'] = "Ïåðèîä";
+$MESS ['STAT_SITE'] = "Ð¡Ð°Ð¹Ñ‚";
+$MESS ['STAT_HOST'] = "Ð”Ð¾Ð¼ÐµÐ½";
+$MESS ['STAT_VIEW_GRAPH'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð³Ñ€Ð°Ñ„Ð¸Ðº Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+$MESS ['STAT_GRAPH_POSITION'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+$MESS ['STAT_GRAPH_POSITION_FULL'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹ Ð¿Ð¾ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ð¾Ð¹ Ñ„Ñ€Ð°Ð·Ðµ";
+$MESS ['STAT_NOT_ENOUGH_DATA'] = "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð»Ñ Ð¿Ð¾ÑÑ‚Ñ€Ð¾ÐµÐ½Ð¸Ñ Ð³Ñ€Ð°Ñ„Ð¸ÐºÐ°.";
+$MESS ['STAT_GRAPH_TYPE'] = "Ð¢Ð¸Ð¿ Ð³Ñ€Ð°Ñ„Ð¸ÐºÐ°";
+$MESS ['STAT_GRAPH_TYPE_STD'] = "Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹";
+$MESS ['STAT_GRAPH_TYPE_TOP10'] = "Ð¢ÐžÐŸ 10";
+$MESS ['STAT_PERIOD'] = "ÐŸÐµÑ€Ð¸Ð¾Ð´";
 
-$MESS ['STAT_KEYWORD_UPDATE'] = "Ïðîâåðèòü ïîçèöèè";
-$MESS ['STAT_KEYWORD_REUPDATE'] = "Îáíîâèòü ïîçèöèè";
+$MESS ['STAT_KEYWORD_UPDATE'] = "ÐŸÑ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸";
+$MESS ['STAT_KEYWORD_REUPDATE'] = "ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¸";
 
-$MESS ['KEY_TO_ERROR'] = "Êëþ÷è äëÿ ïîèñêîâûõ ñèñòåì íå óêàçàíû. Ñáîð ñòàòèñòèêè íå ïðîèçâîäèòñÿ.";
+$MESS ['KEY_TO_ERROR'] = "ÐšÐ»ÑŽÑ‡Ð¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ñ… ÑÐ¸ÑÑ‚ÐµÐ¼ Ð½Ðµ ÑƒÐºÐ°Ð·Ð°Ð½Ñ‹. Ð¡Ð±Ð¾Ñ€ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð½Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÑÑ.";
 ?>

@@ -9,30 +9,30 @@
 ######################################################
 ?>
 <?
-$MESS ['ES_LANGUAGE_EN'] = "Àíãëèéñêèé";
-$MESS ['ES_LANGUAGE_ID'] = "Èíäîíåçèéñêèé";
-$MESS ['ES_LANGUAGE_ES'] = "Èñïàíñêèé";
-$MESS ['ES_LANGUAGE_IT'] = "Èòàëüÿíñêèé";
-$MESS ['ES_LANGUAGE_KO'] = "Êîðåéñêèé";
-$MESS ['ES_LANGUAGE_DE'] = "Íåìåöêèé";
-$MESS ['ES_LANGUAGE_NL'] = "Íèäåðëàíäñêèé";
-$MESS ['ES_LANGUAGE_PT'] = "Ïîðòóãàëüñêèé";
-$MESS ['ES_LANGUAGE_RU'] = "Ðóññêèé";
-$MESS ['ES_LANGUAGE_TR'] = "Òóðåöêèé";
-$MESS ['ES_LANGUAGE_FR'] = "Ôðàíöóçñêèé";
-$MESS ['ES_LANGUAGE_JA'] = "ßïîíñêèé";
-$MESS ['ES_TWITTER'] = "Òâèòòåð-àêêàóíò";
-$MESS ['ES_DATA_COUNT'] = "Êíîïêà";
-$MESS ['ES_DATA_COUNT_NONE'] = "Áåç ñ÷¸ò÷èêà";
-$MESS ['ES_DATA_COUNT_VERTICAL'] = "Âåðòèêàëüíûé ñ÷¸ò÷èê";
-$MESS ['ES_DATA_COUNT_HORIZONTAL'] = "Ãîðèçîíòàëüíûé ñ÷¸ò÷èê";
-$MESS ['ES_DATA_TEXT'] = "Òåêñò";
-$MESS ['ES_DATA_TEXT_HEADER'] = "Çàãîëîâîê ñòðàíèöû, íà êîòîðîé ðàñïîëîæåíà êíîïêà";
-$MESS ['ES_DATA_TEXT_SELF'] = "Ñâîé òåêñò";
-$MESS ['ES_DATA_URL'] = "Ññûëêà";
-$MESS ['ES_DATA_URL_CURRENTPAGE'] = "Ññûëêà íà ñòðàíèöó, íà êîòîðîé ðàñïîëîæåíà êíîïêà";
-$MESS ['ES_DATA_URL_SELF'] = "Ñâîÿ ññûëêà";
-$MESS ['ES_DATA_RELATED'] = "Ïîõîæàÿ ó÷¸òíàÿ çàïèñü";
-$MESS ['ES_DATA_RELATED_DESCRIPTION'] = "Îïèñàíèå ó÷¸òíîé çàïèñè";
-$MESS ['ES_DATA_LANG'] = "ßçûê";
+$MESS ['ES_LANGUAGE_EN'] = "ÐÐ½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_ID'] = "Ð˜Ð½Ð´Ð¾Ð½ÐµÐ·Ð¸Ð¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_ES'] = "Ð˜ÑÐ¿Ð°Ð½ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_IT'] = "Ð˜Ñ‚Ð°Ð»ÑŒÑÐ½ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_KO'] = "ÐšÐ¾Ñ€ÐµÐ¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_DE'] = "ÐÐµÐ¼ÐµÑ†ÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_NL'] = "ÐÐ¸Ð´ÐµÑ€Ð»Ð°Ð½Ð´ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_PT'] = "ÐŸÐ¾Ñ€Ñ‚ÑƒÐ³Ð°Ð»ÑŒÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_RU'] = "Ð ÑƒÑÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_TR'] = "Ð¢ÑƒÑ€ÐµÑ†ÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_FR'] = "Ð¤Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_JA'] = "Ð¯Ð¿Ð¾Ð½ÑÐºÐ¸Ð¹";
+$MESS ['ES_TWITTER'] = "Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚";
+$MESS ['ES_DATA_COUNT'] = "ÐšÐ½Ð¾Ð¿ÐºÐ°";
+$MESS ['ES_DATA_COUNT_NONE'] = "Ð‘ÐµÐ· ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ°";
+$MESS ['ES_DATA_COUNT_VERTICAL'] = "Ð’ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸Ðº";
+$MESS ['ES_DATA_COUNT_HORIZONTAL'] = "Ð“Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸Ðº";
+$MESS ['ES_DATA_TEXT'] = "Ð¢ÐµÐºÑÑ‚";
+$MESS ['ES_DATA_TEXT_HEADER'] = "Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð° ÐºÐ½Ð¾Ð¿ÐºÐ°";
+$MESS ['ES_DATA_TEXT_SELF'] = "Ð¡Ð²Ð¾Ð¹ Ñ‚ÐµÐºÑÑ‚";
+$MESS ['ES_DATA_URL'] = "Ð¡ÑÑ‹Ð»ÐºÐ°";
+$MESS ['ES_DATA_URL_CURRENTPAGE'] = "Ð¡ÑÑ‹Ð»ÐºÐ° Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ, Ð½Ð° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð° ÐºÐ½Ð¾Ð¿ÐºÐ°";
+$MESS ['ES_DATA_URL_SELF'] = "Ð¡Ð²Ð¾Ñ ÑÑÑ‹Ð»ÐºÐ°";
+$MESS ['ES_DATA_RELATED'] = "ÐŸÐ¾Ñ…Ð¾Ð¶Ð°Ñ ÑƒÑ‡Ñ‘Ñ‚Ð½Ð°Ñ Ð·Ð°Ð¿Ð¸ÑÑŒ";
+$MESS ['ES_DATA_RELATED_DESCRIPTION'] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ ÑƒÑ‡Ñ‘Ñ‚Ð½Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÐ¸";
+$MESS ['ES_DATA_LANG'] = "Ð¯Ð·Ñ‹Ðº";
 ?>

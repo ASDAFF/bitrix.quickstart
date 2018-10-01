@@ -2,11 +2,11 @@
 <?
 global $errors;
 $install_public = (($install_public == "Y") ? "Y" : "N");
-$install_demo_data = "Y"; // устанавливаем демо данные по любому, так как без них разобраться в работе модуля очень сложно
+$install_demo_data = "Y"; // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј РґРµРјРѕ РґР°РЅРЅС‹Рµ РїРѕ Р»СЋР±РѕРјСѓ, С‚Р°Рє РєР°Рє Р±РµР· РЅРёС… СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ РІ СЂР°Р±РѕС‚Рµ РјРѕРґСѓР»СЏ РѕС‡РµРЅСЊ СЃР»РѕР¶РЅРѕ
 require($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/main/include/mainpage.php");
 
 
-// обрабатываем переменные по публичным файлам
+// РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РїРµСЂРµРјРµРЅРЅС‹Рµ РїРѕ РїСѓР±Р»РёС‡РЅС‹Рј С„Р°Р№Р»Р°Рј
 if ($install_public == "Y")
 {
 	$public_dir = Trim($public_dir);
@@ -20,7 +20,7 @@ else
 	$bReWritePublicFiles = False;
 }
 
-// копируем публичные файлы
+// РєРѕРїРёСЂСѓРµРј РїСѓР±Р»РёС‡РЅС‹Рµ С„Р°Р№Р»С‹
 if ($install_public == "Y" && !empty($public_dir))
 {
 	$dbSites = CSite::GetList(($b = ""), ($o = ""), Array("ACTIVE" => "Y", "ID" => CMainPage::GetSiteByHost()));
@@ -30,7 +30,7 @@ if ($install_public == "Y" && !empty($public_dir))
 	}
 }
 
-// обрабатываем переменные по импорту инфоблока
+// РѕР±СЂР°Р±Р°С‚С‹РІР°РµРј РїРµСЂРµРјРµРЅРЅС‹Рµ РїРѕ РёРјРїРѕСЂС‚Сѓ РёРЅС„РѕР±Р»РѕРєР°
 if ($install_demo_data == "Y")
 {
 	$demo_data_iblock_type = Trim($demo_data_iblock_type);
@@ -42,7 +42,7 @@ else
 	$demo_data_rewrite = False;
 }
 
-// если нет инфоблоков - создаем новый
+// РµСЃР»Рё РЅРµС‚ РёРЅС„РѕР±Р»РѕРєРѕРІ - СЃРѕР·РґР°РµРј РЅРѕРІС‹Р№
 if($install_demo_data == "Y" && !empty($install_demo_data_new_iblock_type))
 {
 	$arFields = Array(
@@ -52,9 +52,9 @@ if($install_demo_data == "Y" && !empty($install_demo_data_new_iblock_type))
 		'SORT'=>500,
 		'LANG'=>Array(
 			'ru'=>Array(
-				'NAME'=>'Компания',
-				'SECTION_NAME'=>'Разделы',
-				'ELEMENT_NAME'=>'Элементы'
+				'NAME'=>'РљРѕРјРїР°РЅРёСЏ',
+				'SECTION_NAME'=>'Р Р°Р·РґРµР»С‹',
+				'ELEMENT_NAME'=>'Р­Р»РµРјРµРЅС‚С‹'
 				)
 			)
 		);
@@ -67,7 +67,7 @@ if($install_demo_data == "Y" && !empty($install_demo_data_new_iblock_type))
 	if(!$res)
 	{
 		$DB->Rollback();
-		echo 'Ошибка: '.$obBlocktype->LAST_ERROR.'<br>';
+		echo 'РћС€РёР±РєР°: '.$obBlocktype->LAST_ERROR.'<br>';
 	}
 	else
 	{
@@ -76,7 +76,7 @@ if($install_demo_data == "Y" && !empty($install_demo_data_new_iblock_type))
 	}
 }
 
-// импортируем демо данные
+// РёРјРїРѕСЂС‚РёСЂСѓРµРј РґРµРјРѕ РґР°РЅРЅС‹Рµ
 if($install_demo_data == "Y" && !empty($demo_data_iblock_type))
 {
 	if(!CModule::IncludeModule("iblock"))
@@ -86,7 +86,7 @@ if($install_demo_data == "Y" && !empty($demo_data_iblock_type))
 	$iblockType = $demo_data_iblock_type; 
 	$iblockID = false; 
 	
-	// если выбрано затереть ранее импортированные данные и мы их находим - затираем
+	// РµСЃР»Рё РІС‹Р±СЂР°РЅРѕ Р·Р°С‚РµСЂРµС‚СЊ СЂР°РЅРµРµ РёРјРїРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Рµ РґР°РЅРЅС‹Рµ Рё РјС‹ РёС… РЅР°С…РѕРґРёРј - Р·Р°С‚РёСЂР°РµРј
 	$rsIBlock = CIBlock::GetList(array(), array("CODE" => $iblockCode));
 	if ($rsIBlock && $arIBlock = $rsIBlock->Fetch())
 	{
@@ -95,7 +95,7 @@ if($install_demo_data == "Y" && !empty($demo_data_iblock_type))
 		if ($demo_data_rewrite)
 		{
 			CIBlock::Delete($arIBlock["ID"]); 
-			echo CAdminMessage::ShowNote("Предыдущие демо данные обновлены");
+			echo CAdminMessage::ShowNote("РџСЂРµРґС‹РґСѓС‰РёРµ РґРµРјРѕ РґР°РЅРЅС‹Рµ РѕР±РЅРѕРІР»РµРЅС‹");
 			$iblockID = false; 
 		}
 	}
@@ -107,7 +107,7 @@ if (!$iblockID || $demo_data_rewrite)
 
 	if (!$iblock_import_success)
 	{
-		echo CAdminMessage::ShowMessage(Array("TYPE"=>"ERROR", "MESSAGE" =>"Демо данные не импортированы!", "DETAILS"=>"install_public: ".$install_public."<br />install_demo_data: ".$install_demo_data."<br />demo_data_iblock_type: ".$demo_data_iblock_type."<br />iblockXMLFile: ".$iblockXMLFile."<br />iblockType: ".$iblockType, "HTML"=>true));
+		echo CAdminMessage::ShowMessage(Array("TYPE"=>"ERROR", "MESSAGE" =>"Р”РµРјРѕ РґР°РЅРЅС‹Рµ РЅРµ РёРјРїРѕСЂС‚РёСЂРѕРІР°РЅС‹!", "DETAILS"=>"install_public: ".$install_public."<br />install_demo_data: ".$install_demo_data."<br />demo_data_iblock_type: ".$demo_data_iblock_type."<br />iblockXMLFile: ".$iblockXMLFile."<br />iblockType: ".$iblockType, "HTML"=>true));
 	}
 	else 
 	{
@@ -125,7 +125,7 @@ if (!$iblockID || $demo_data_rewrite)
 					$fp = fopen($filename, "rb");
 					if(!$fp) return;
 					$contents = fread($fp, filesize($filename));
-					//echo "Исходный файл: ".$filename."<br />Контент: <pre>".htmlspecialchars($contents)."</pre>";
+					//echo "РСЃС…РѕРґРЅС‹Р№ С„Р°Р№Р»: ".$filename."<br />РљРѕРЅС‚РµРЅС‚: <pre>".htmlspecialchars($contents)."</pre>";
 					if($install_public)
 					{
 						$pattern[] = "/\"IBLOCK_TYPE\" => \"(\w+)\"/i";
@@ -143,7 +143,7 @@ if (!$iblockID || $demo_data_rewrite)
 						$contents = preg_replace($pattern, $replacement, $contents);
 					}
 					$d_d_r=($demo_data_rewrite)?"Y":"N";
-					//echo "MAP_KEY: ".$MAP_KEY."<br />Измененный контент: <pre>".htmlspecialchars($contents)."</pre>";
+					//echo "MAP_KEY: ".$MAP_KEY."<br />РР·РјРµРЅРµРЅРЅС‹Р№ РєРѕРЅС‚РµРЅС‚: <pre>".htmlspecialchars($contents)."</pre>";
 					fclose($fp);
 					if($demo_data_rewrite || $MAP_KEY)
 					{

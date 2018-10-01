@@ -1,4 +1,4 @@
 <?
-$MESS ['PANEL_MENU_MAIN'] = "Êîììåíòàðèè";
-$MESS ['PANEL_MENU_MAIN_TITLE'] = "Óïðàâëåíèå êîììåíòàðèÿìè";
+$MESS ['PANEL_MENU_MAIN'] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸";
+$MESS ['PANEL_MENU_MAIN_TITLE'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÑÐ¼Ð¸";
 ?>

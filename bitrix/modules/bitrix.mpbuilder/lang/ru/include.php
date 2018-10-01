@@ -1,8 +1,8 @@
 <?
-$MESS["BITRIX_MPBUILDER_YCUKENGSSZHQFYVAPROL"] = "éöóêåíãøùçõúôûâàïðîëäæýÿ÷ñìèòüáþ¸¨ÉÖÓÊÅÍÃØÙÇÕÚÔÛÂÀÏÐÎËÄÆÝß×ÑÌÈÒÜÁÞ";
-$MESS["BITRIX_MPBUILDER_STRUKTURA_MODULA"] = "Ñòðóêòóðà ìîäóëÿ";
-$MESS["BITRIX_MPBUILDER_VYDELENIE_FRAZ"] = "Âûäåëåíèå ôðàç";
-$MESS["BITRIX_MPBUILDER_REDAKTOR_KLUCEY"] = "Ðåäàêòîð êëþ÷åé";
-$MESS["BITRIX_MPBUILDER_SOZDANIE_ARHIVA"] = "Ñîçäàíèå àðõèâà";
-$MESS["BITRIX_MPBUILDER_SBORKA_OBNOVLENIY"] = "Ñáîðêà îáíîâëåíèé";
+$MESS["BITRIX_MPBUILDER_YCUKENGSSZHQFYVAPROL"] = "Ð¹Ñ†ÑƒÐºÐµÐ½Ð³ÑˆÑ‰Ð·Ñ…ÑŠÑ„Ñ‹Ð²Ð°Ð¿Ñ€Ð¾Ð»Ð´Ð¶ÑÑÑ‡ÑÐ¼Ð¸Ñ‚ÑŒÐ±ÑŽÑ‘ÐÐ™Ð¦Ð£ÐšÐ•ÐÐ“Ð¨Ð©Ð—Ð¥ÐªÐ¤Ð«Ð’ÐÐŸÐ ÐžÐ›Ð”Ð–Ð­Ð¯Ð§Ð¡ÐœÐ˜Ð¢Ð¬Ð‘Ð®";
+$MESS["BITRIX_MPBUILDER_STRUKTURA_MODULA"] = "Ð¡Ñ‚Ñ€ÑƒÐºÑ‚ÑƒÑ€Ð° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["BITRIX_MPBUILDER_VYDELENIE_FRAZ"] = "Ð’Ñ‹Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ Ñ„Ñ€Ð°Ð·";
+$MESS["BITRIX_MPBUILDER_REDAKTOR_KLUCEY"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€ ÐºÐ»ÑŽÑ‡ÐµÐ¹";
+$MESS["BITRIX_MPBUILDER_SOZDANIE_ARHIVA"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð°Ñ€Ñ…Ð¸Ð²Ð°";
+$MESS["BITRIX_MPBUILDER_SBORKA_OBNOVLENIY"] = "Ð¡Ð±Ð¾Ñ€ÐºÐ° Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ð¹";
 ?>

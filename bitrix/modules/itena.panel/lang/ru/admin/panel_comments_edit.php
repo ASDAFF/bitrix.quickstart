@@ -1,9 +1,9 @@
 <?
-$MESS ['PANEL_EDIT_TITLE'] = "Ðåäàêòèðîâàíèå êîììåíòàðèÿ";
-$MESS ['PANEL_EDIT_LIST'] = "Ñïèñîê";
-$MESS ['PANEL_EDIT_COMMENT'] = "Êîììåíòàðèé";
-$MESS ['PANEL_EDIT_POST_DATE_LABEL'] = "Äàòà êîììåíòàðèÿ";
-$MESS ['PANEL_EDIT_AUTHOR_NAME_LABEL'] = "Àâòîð";
-$MESS ['PANEL_EDIT_AUTHOR_EMAIL_LABEL'] = "E-mail àâòîðà";
-$MESS ['PANEL_EDIT_TEXT_LABEL'] = "Òåêñò êîììåíòàðèÿ";
+$MESS ['PANEL_EDIT_TITLE'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ";
+$MESS ['PANEL_EDIT_LIST'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+$MESS ['PANEL_EDIT_COMMENT'] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS ['PANEL_EDIT_POST_DATE_LABEL'] = "Ð”Ð°Ñ‚Ð° ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ";
+$MESS ['PANEL_EDIT_AUTHOR_NAME_LABEL'] = "ÐÐ²Ñ‚Ð¾Ñ€";
+$MESS ['PANEL_EDIT_AUTHOR_EMAIL_LABEL'] = "E-mail Ð°Ð²Ñ‚Ð¾Ñ€Ð°";
+$MESS ['PANEL_EDIT_TEXT_LABEL'] = "Ð¢ÐµÐºÑÑ‚ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ";
 ?>

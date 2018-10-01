@@ -13,7 +13,7 @@ IncludeModuleLangFile(__FILE__);
 class COrderCall{
     
 	static function EventTypeCreate()
-	//Добавление нового типа почтового события (ORDER_CALL) для русского и английского языков
+	//Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ (ORDER_CALL) РґР»СЏ СЂСѓСЃСЃРєРѕРіРѕ Рё Р°РЅРіР»РёР№СЃРєРѕРіРѕ СЏР·С‹РєРѕРІ
 	{
 		$et = new CEventType;
 		$ru_ets = CEventType::GetByID("ORDER_CALL","ru");
@@ -60,7 +60,7 @@ class COrderCall{
 		);
 		if (!$ems_el = $ems->Fetch())
 		{
-			//Получение масива идентификаторов сайта
+			//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 			$arSites = array();
 			$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 			while ($arSite = $rsSites->Fetch())
@@ -93,7 +93,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					"
 				)
 			);
-			//Получение идентификатора созданного почтового шаблона для сохранения в настройках модуля.
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° СЃРѕР·РґР°РЅРЅРѕРіРѕ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ.
 			$ems = CEventMessage::GetList($by="", $order="desc", Array(				
 					"TYPE_ID"       => "ORDER_CALL",				
 					"ACTIVE"        => "Y",
@@ -101,7 +101,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					"BODY_TYPE"     => "text",
 				)
 			);
-			if ($ems_el = $ems->Fetch())//Установка идентификатора почтового шаблона в настройках модуля
+			if ($ems_el = $ems->Fetch())//РЈСЃС‚Р°РЅРѕРІРєР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ
 				COption::SetOptionString("d2mg.ordercall","event_mess_id",$ems_el['ID']);
 		}
 	}
@@ -110,7 +110,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 	{
 		CModule::IncludeModule('iblock');
 		
-		//Проверка наличия необходимого типа инфоблока
+		//РџСЂРѕРІРµСЂРєР° РЅР°Р»РёС‡РёСЏ РЅРµРѕР±С…РѕРґРёРјРѕРіРѕ С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР°
 		$db_iblock_type = CIBlockType::GetList(array(),array("ID"=>"orders_call"));
 		if (!$ar_iblock_type = $db_iblock_type->Fetch())
 		{
@@ -136,9 +136,9 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 			$obBlocktype = new CIBlockType;
 			
 			if ($res = $obBlocktype->Add($arFields))
-			//Если тип инфоблока успешно добавлен, добавляется инфоблок
+			//Р•СЃР»Рё С‚РёРї РёРЅС„РѕР±Р»РѕРєР° СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ, РґРѕР±Р°РІР»СЏРµС‚СЃСЏ РёРЅС„РѕР±Р»РѕРє
 			{
-				//Получение масива идентификаторов сайта
+				//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 				$arSites = array();
 				$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 				while ($arSite = $rsSites->Fetch())
@@ -146,7 +146,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					$arSites[] = $arSite['LID'];
 				}				
 				
-				//Получение идентификатора типа инфоблока перед добавлением инфоблока
+				//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР° РїРµСЂРµРґ РґРѕР±Р°РІР»РµРЅРёРµРј РёРЅС„РѕР±Р»РѕРєР°
 				$db_iblock_type = CIBlockType::GetByID("d2mg_orderscall");
 				if ($ar_iblock_type = $db_iblock_type->Fetch())
 					$iblock_type_id=$ar_iblock_type["ID"];
@@ -167,7 +167,7 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 					
 					if ($ib_id = $ib->Add($arFields))
 					{
-						//Установка идентификатора инфоблока в настройках модуля
+						//РЈСЃС‚Р°РЅРѕРІРєР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РёРЅС„РѕР±Р»РѕРєР° РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ
 							COption::SetOptionString("d2mg.ordercall","iblock_id",$ib_id);
 					}					
 				}
@@ -176,57 +176,57 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 	}
 	
 	static function Save(
-	//Сохранение заказа в инфоблок
+	//РЎРѕС…СЂР°РЅРµРЅРёРµ Р·Р°РєР°Р·Р° РІ РёРЅС„РѕР±Р»РѕРє
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"CALL_TIME_TEXT" //Время, удобное для звонка
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"CALL_TIME_TEXT" //Р’СЂРµРјСЏ, СѓРґРѕР±РЅРѕРµ РґР»СЏ Р·РІРѕРЅРєР°
 		)
 	)
     {
-		//Добавление инфоблока для сохранения заказов, если он отсутствует
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РёРЅС„РѕР±Р»РѕРєР° РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р·Р°РєР°Р·РѕРІ, РµСЃР»Рё РѕРЅ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚
 		COrderCall::IblockCreate();
 	
-		// Получение идентификатора инфоблока из настроек модуля
+		// РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РёРЅС„РѕР±Р»РѕРєР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ
 		$iblock_id=COption::GetOptionString("d2mg.ordercall","iblock_id");
 		
 		$ib_elem = new CIBlockElement;
 		
 		$arLoadFields = Array(
-			"IBLOCK_SECTION_ID" => false, // элемент лежит в корне раздела
+			"IBLOCK_SECTION_ID" => false, // СЌР»РµРјРµРЅС‚ Р»РµР¶РёС‚ РІ РєРѕСЂРЅРµ СЂР°Р·РґРµР»Р°
 			"IBLOCK_ID"      => $iblock_id,			
 			"NAME"           => $arFields['AUTHOR'],
-			"ACTIVE"         => "Y", // активен
+			"ACTIVE"         => "Y", // Р°РєС‚РёРІРµРЅ
 			"PREVIEW_TEXT"   => $arFields['AUTHOR_PHONE'],
 			"DETAIL_TEXT"    => $arFields['CALL_TIME_TEXT'],
 		);
 		$res=$ib_elem->Add($arLoadFields);
 	}
     static function SendEmail(
-	//Отправка заказа звонка на почту
+	//РћС‚РїСЂР°РІРєР° Р·Р°РєР°Р·Р° Р·РІРѕРЅРєР° РЅР° РїРѕС‡С‚Сѓ
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"CALL_TIME_TEXT" //Время, удобное для звонка
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"CALL_TIME_TEXT" //Р’СЂРµРјСЏ, СѓРґРѕР±РЅРѕРµ РґР»СЏ Р·РІРѕРЅРєР°
 		)
 	)
     {	
 	
 	
-		//Добавление нового типа почтового события (ORDER_CALL) для русского и английского языков
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ (ORDER_CALL) РґР»СЏ СЂСѓСЃСЃРєРѕРіРѕ Рё Р°РЅРіР»РёР№СЃРєРѕРіРѕ СЏР·С‹РєРѕРІ
 		COrderCall::EventTypeCreate();
-		//Добавление нового почтового шаблона для типа почтового события ORDER_CALL
+		//Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РґР»СЏ С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ ORDER_CALL
 		COrderCall::EventMessageCreate();
 		
 		
-		//Логика функции
+		//Р›РѕРіРёРєР° С„СѓРЅРєС†РёРё
 
 		$email_to=COption::GetOptionString("d2mg.ordercall","email");		
 		if (strlen($email_to)==0)
 			$email_to=COption::GetOptionString('main', 'email_from');		
 		if (strlen($email_to)!=0)
 		{			
-			//Получение масива идентификаторов сайта
+			//РџРѕР»СѓС‡РµРЅРёРµ РјР°СЃРёРІР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ СЃР°Р№С‚Р°
 			$arSites = array();
 			$rsSites = CSite::GetList($by="sort", $order="desc", Array());
 			while ($arSite = $rsSites->Fetch())
@@ -234,14 +234,14 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
 				$arSites[] = $arSite['LID'];
 			}
 			
-			//Получение идентификатора почтового шаблона из настроек модуля
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ
 			$event_mess_id=COption::GetOptionString("d2mg.ordercall","event_mess_id");			
-			//Получение имени типа почтового события для полученного идентификатора почтового шаблона			
+			//РџРѕР»СѓС‡РµРЅРёРµ РёРјРµРЅРё С‚РёРїР° РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ РґР»СЏ РїРѕР»СѓС‡РµРЅРЅРѕРіРѕ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂР° РїРѕС‡С‚РѕРІРѕРіРѕ С€Р°Р±Р»РѕРЅР°			
 			$ems = CEventMessage::GetByID($event_mess_id);
 			
 			if ($ems_el=$ems->Fetch())
 				$event_name=$ems_el["EVENT_NAME"];
-			//Установка email получателя перед отправкой сообщения
+			//РЈСЃС‚Р°РЅРѕРІРєР° email РїРѕР»СѓС‡Р°С‚РµР»СЏ РїРµСЂРµРґ РѕС‚РїСЂР°РІРєРѕР№ СЃРѕРѕР±С‰РµРЅРёСЏ
 			$arFields["EMAIL_TO"]=$email_to;									
 			
 			CEvent::Send($event_name, $arSites, $arFields, "N", $event_mess_id);			
@@ -250,19 +250,19 @@ GetMessage("EVENT_MESSAGE_HEADER_DESC")." #SITE_NAME#
     }
 	
 	static function SendSMS(
-	//Отправка заказа звонка на мобильный телефон
+	//РћС‚РїСЂР°РІРєР° Р·Р°РєР°Р·Р° Р·РІРѕРЅРєР° РЅР° РјРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ
 		$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"CALL_TIME_TEXT" //Время, удобное для звонка
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"CALL_TIME_TEXT" //Р’СЂРµРјСЏ, СѓРґРѕР±РЅРѕРµ РґР»СЏ Р·РІРѕРЅРєР°
 		)		
 	)
 	{
-		// Получение заничений login и api key из настроек модуля для дальнейшего использований класса LittleSMS
+		// РџРѕР»СѓС‡РµРЅРёРµ Р·Р°РЅРёС‡РµРЅРёР№ login Рё api key РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ РґР»СЏ РґР°Р»СЊРЅРµР№С€РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёР№ РєР»Р°СЃСЃР° LittleSMS
 		$LSMS_login=COption::GetOptionString("d2mg.ordercall","LSMS_login");
 		$LSMS_api_key=COption::GetOptionString("d2mg.ordercall","LSMS_api_key");		
 		
-		//Получение номера телефона из настроек модуля для отправки на него сообщений СМС
+		//РџРѕР»СѓС‡РµРЅРёРµ РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР° РёР· РЅР°СЃС‚СЂРѕРµРє РјРѕРґСѓР»СЏ РґР»СЏ РѕС‚РїСЂР°РІРєРё РЅР° РЅРµРіРѕ СЃРѕРѕР±С‰РµРЅРёР№ РЎРњРЎ
 		$phone=COption::GetOptionString("d2mg.ordercall","phone");
 		
 		$message=
@@ -271,23 +271,23 @@ GetMessage("EVENT_MESSAGE_AUTHOR_DESC").": #AUTHOR#
 ".GetMessage("EVENT_MESSAGE_CALLTIME_DESC").":
 #CALL_TIME_TEXT#";
 
-			//Заполняем почтовый шаблон данными для отправки
+			//Р—Р°РїРѕР»РЅСЏРµРј РїРѕС‡С‚РѕРІС‹Р№ С€Р°Р±Р»РѕРЅ РґР°РЅРЅС‹РјРё РґР»СЏ РѕС‚РїСЂР°РІРєРё
 			$message=str_replace("#SITE_NAME#",$SITE_NAME,$message);
 			$message=str_replace("#AUTHOR#",$arFields["AUTHOR"],$message);
 			$message=str_replace("#AUTHOR_PHONE#",$arFields["AUTHOR_PHONE"],$message);
 			$message=str_replace("#CALL_TIME_TEXT#",$arFields["CALL_TIME_TEXT"],$message);
 		
 		
-		// Подключение класса LittleSMS для отправки СМС сообщений
+		// РџРѕРґРєР»СЋС‡РµРЅРёРµ РєР»Р°СЃСЃР° LittleSMS РґР»СЏ РѕС‚РїСЂР°РІРєРё РЎРњРЎ СЃРѕРѕР±С‰РµРЅРёР№
 		require($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/d2mg.ordercall/classes/general/LittleSMS.class.php");
 		
 		$api = new LittleSMS($LSMS_login, $LSMS_api_key, false);
 		
-		// Получение имени отправителя
+		// РџРѕР»СѓС‡РµРЅРёРµ РёРјРµРЅРё РѕС‚РїСЂР°РІРёС‚РµР»СЏ
 		$sender=COption::GetOptionString("d2mg.ordercall","LSMS_sender_name");
 		
-		// отправка СМС
-		if (strlen(trim($sender," "))==0)// Если значение имени отправителя в настройках модуля пусто
+		// РѕС‚РїСЂР°РІРєР° РЎРњРЎ
+		if (strlen(trim($sender," "))==0)// Р•СЃР»Рё Р·РЅР°С‡РµРЅРёРµ РёРјРµРЅРё РѕС‚РїСЂР°РІРёС‚РµР»СЏ РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ РїСѓСЃС‚Рѕ
 		{
 			$res = $api->sendSMS($phone, $message);			
 		}
@@ -299,9 +299,9 @@ GetMessage("EVENT_MESSAGE_AUTHOR_DESC").": #AUTHOR#
 	
 	static function Order(
 	$arFields = Array(	
-			"AUTHOR", //Автор сообщения
-			"AUTHOR_PHONE", //Номер телефона автора для звонка
-			"CALL_TIME_TEXT" //Время, удобное для звонка
+			"AUTHOR", //РђРІС‚РѕСЂ СЃРѕРѕР±С‰РµРЅРёСЏ
+			"AUTHOR_PHONE", //РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР° Р°РІС‚РѕСЂР° РґР»СЏ Р·РІРѕРЅРєР°
+			"CALL_TIME_TEXT" //Р’СЂРµРјСЏ, СѓРґРѕР±РЅРѕРµ РґР»СЏ Р·РІРѕРЅРєР°
 		)
 	)
 	{		

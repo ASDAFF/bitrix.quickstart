@@ -1,3 +1,3 @@
 <?
-$MESS ['BEONO_MODULE_USERBASKET_MENU_TITLE'] = "Êîðçèíà ïîëüçîâàòåëÿ";
+$MESS ['BEONO_MODULE_USERBASKET_MENU_TITLE'] = "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð° Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
 ?>

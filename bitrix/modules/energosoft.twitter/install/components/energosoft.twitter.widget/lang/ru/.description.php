@@ -10,7 +10,7 @@
 ?>
 <?
 $MESS ['ENERGOSOFT'] = "Energosoft";
-$MESS ['ENERGOSOFT_GROUP'] = "Ñîöèàëüíûå ñåðâèñû";
-$MESS ['ENERGOSOFT_COMPONENT_NAME'] = "Òâèòòåð-âèäæåò";
-$MESS ['ENERGOSOFT_COMPONENT_DESCRIPTION'] = "Ñòàíäàðòíûé íàñòðàåâàåìûé Òâèòòåð-âèäæåò";
+$MESS ['ENERGOSOFT_GROUP'] = "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹";
+$MESS ['ENERGOSOFT_COMPONENT_NAME'] = "Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð²Ð¸Ð´Ð¶ÐµÑ‚";
+$MESS ['ENERGOSOFT_COMPONENT_DESCRIPTION'] = "Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ Ð½Ð°ÑÑ‚Ñ€Ð°ÐµÐ²Ð°ÐµÐ¼Ñ‹Ð¹ Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð²Ð¸Ð´Ð¶ÐµÑ‚";
 ?>

@@ -28,12 +28,12 @@ class CCetacs_sd {
         } else
             return;
 
-        //åñëè âûáðàíà êîìàíäà "óäàëèòü ïî øàãàì"
+        //ÐµÑÐ»Ð¸ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð° ÐºÐ¾Ð¼Ð°Ð½Ð´Ð° "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¿Ð¾ ÑˆÐ°Ð³Ð°Ð¼"
         if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] == "cetacs_stepdelete") {
             unset($_SESSION["cetacs_stepdelete"][$list->table_id]);
 
             if ($_POST["action_target"] == "selected") {
-                //åñëè îòìå÷åíà îïöèÿ, "äëÿ âñåõ"
+                //ÐµÑÐ»Ð¸ Ð¾Ñ‚Ð¼ÐµÑ‡ÐµÐ½Ð° Ð¾Ð¿Ñ†Ð¸Ñ, "Ð´Ð»Ñ Ð²ÑÐµÑ…"
                 $_SESSION["cetacs_stepdelete"][$list->table_id]["COUNT"] = $GLOBALS["rsData"]->SelectedRowsCount();
             } else {
                 $_SESSION["cetacs_stepdelete"][$list->table_id]["COUNT"] = count($GLOBALS["arID"]);

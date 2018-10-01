@@ -1,6 +1,6 @@
 <?
-$MESS ['CC_BCF_MODULE_NOT_INSTALLED'] = "Ìîäóëü Èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
-$MESS ['CC_CATALOG_MODULE_NOT_INSTALLED'] = "Ìîäóëü Êàòàëîãà íå óñòàíîâëåí";
-$MESS ['CC_SHS_PRODUCTVIEW_NOT_INSTALLED'] = "Òîâàò ñåé÷àñ ïðîñìàòðèâàþò íå óñòàíîâëåí";
-$MESS ['CC_SALE_MODULE_NOT_INSTALLED'] = "Ìîäóëü Èíòåðíåò-ìàãàçèí íå óñòàíîâëåí";
+$MESS ['CC_BCF_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS ['CC_CATALOG_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð° Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS ['CC_SHS_PRODUCTVIEW_NOT_INSTALLED'] = "Ð¢Ð¾Ð²Ð°Ñ‚ ÑÐµÐ¹Ñ‡Ð°Ñ Ð¿Ñ€Ð¾ÑÐ¼Ð°Ñ‚Ñ€Ð¸Ð²Ð°ÑŽÑ‚ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS ['CC_SALE_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½ Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
 ?>

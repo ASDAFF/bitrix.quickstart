@@ -79,7 +79,7 @@ class DSocialPosterGooglePlusEntity
 	public function Authorize(DSocialPosterConnection $connection, DSocialPosterParams $settings)
 	{
 
-		$post = "Email=".urlencode($settings->LOGIN)."&Passwd=".urlencode($settings->PASSWORD)."&PersistentCookie=yes&dnConn=https://accounts.youtube.com&dsh=&hl=en&pstMsg=1&rmShown=1&service=oz&signIn=Войти";
+		$post = "Email=".urlencode($settings->LOGIN)."&Passwd=".urlencode($settings->PASSWORD)."&PersistentCookie=yes&dnConn=https://accounts.youtube.com&dsh=&hl=en&pstMsg=1&rmShown=1&service=oz&signIn=Р’РѕР№С‚Рё";
 
 		$res = $connection->Send("https://accounts.google.com/LoginAuth", $post);
 		preg_match("/GALX=(.*?);Path/si", $res, $GALX);

@@ -10,9 +10,9 @@ IncludeModuleLangFile(__FILE__);
 if (function_exists('mb_internal_encoding'))
 	mb_internal_encoding('ISO-8859-1');
 
-define('START_PATH', $_SERVER['DOCUMENT_ROOT']); // стартовая папка для поиска
-define('LOG', $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/bitrix.xscan/file_list.txt'); // лог файл 
-define('START_TIME', time()); // засекаем время старта
+define('START_PATH', $_SERVER['DOCUMENT_ROOT']); // СЃС‚Р°СЂС‚РѕРІР°СЏ РїР°РїРєР° РґР»СЏ РїРѕРёСЃРєР°
+define('LOG', $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/bitrix.xscan/file_list.txt'); // Р»РѕРі С„Р°Р№Р» 
+define('START_TIME', time()); // Р·Р°СЃРµРєР°РµРј РІСЂРµРјСЏ СЃС‚Р°СЂС‚Р°
 
 $APPLICATION->SetTitle(GetMessage("BITRIX_XSCAN_SEARCH"));
 require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_after.php");
@@ -46,7 +46,7 @@ if ($file = $_REQUEST['file'])
 if ($_REQUEST['go'])
 {
 	if ($_REQUEST['break_point'])
-		define('SKIP_PATH',htmlspecialchars($_REQUEST['break_point'])); // промежуточный путь
+		define('SKIP_PATH',htmlspecialchars($_REQUEST['break_point'])); // РїСЂРѕРјРµР¶СѓС‚РѕС‡РЅС‹Р№ РїСѓС‚СЊ
 	elseif (file_exists(LOG))
 		unlink(LOG);
 
@@ -61,7 +61,7 @@ if ($_REQUEST['go'])
 			ShowMsg('<b>'.GetMessage("BITRIX_XSCAN_IN_PROGRESS").'...</b><br>
 			'.GetMessage("BITRIX_XSCAN_CURRENT_FILE").': <i>'.htmlspecialchars(str_replace(START_PATH,'',BREAK_POINT)).'</i>');
 			?>
-			<script>window.setTimeout("document.getElementById('postform').submit()",500);</script><? // таймаут чтобы браузер показал текст
+			<script>window.setTimeout("document.getElementById('postform').submit()",500);</script><? // С‚Р°Р№РјР°СѓС‚ С‡С‚РѕР±С‹ Р±СЂР°СѓР·РµСЂ РїРѕРєР°Р·Р°Р» С‚РµРєСЃС‚
 			die();
 	}
 	else
@@ -115,12 +115,12 @@ function Search($path)
 		return;
 	}
 
-	if (defined('SKIP_PATH') && !defined('FOUND')) // проверим, годится ли текущий путь
+	if (defined('SKIP_PATH') && !defined('FOUND')) // РїСЂРѕРІРµСЂРёРј, РіРѕРґРёС‚СЃСЏ Р»Рё С‚РµРєСѓС‰РёР№ РїСѓС‚СЊ
 	{
-		if (0 !== bin_strpos(SKIP_PATH, dirname($path))) // отбрасываем имя или идём ниже 
+		if (0 !== bin_strpos(SKIP_PATH, dirname($path))) // РѕС‚Р±СЂР°СЃС‹РІР°РµРј РёРјСЏ РёР»Рё РёРґС‘Рј РЅРёР¶Рµ 
 			return;
 
-		if (SKIP_PATH==$path) // путь найден, продолжаем искать текст
+		if (SKIP_PATH==$path) // РїСѓС‚СЊ РЅР°Р№РґРµРЅ, РїСЂРѕРґРѕР»Р¶Р°РµРј РёСЃРєР°С‚СЊ С‚РµРєСЃС‚
 			define('FOUND',true);
 	}
 
@@ -128,7 +128,7 @@ function Search($path)
 	{
 		if (is_link($path))
 		{
-			if (strpos(realpath($path), $_SERVER['DOCUMENT_ROOT']) !== false) // если симлинк ведет на папку внутри структуры сайта
+			if (strpos(realpath($path), $_SERVER['DOCUMENT_ROOT']) !== false) // РµСЃР»Рё СЃРёРјР»РёРЅРє РІРµРґРµС‚ РЅР° РїР°РїРєСѓ РІРЅСѓС‚СЂРё СЃС‚СЂСѓРєС‚СѓСЂС‹ СЃР°Р№С‚Р°
 				return true;
 		}
 

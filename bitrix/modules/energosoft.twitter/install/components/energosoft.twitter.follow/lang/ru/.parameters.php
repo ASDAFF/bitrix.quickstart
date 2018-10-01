@@ -9,28 +9,28 @@
 ######################################################
 ?>
 <?
-$MESS ['ES_YES'] = "Äà";
-$MESS ['ES_NO'] = "Íåò";
-$MESS ['ES_LANGUAGE_EN'] = "Àíãëèéñêèé";
-$MESS ['ES_LANGUAGE_ID'] = "Èíäîíåçèéñêèé";
-$MESS ['ES_LANGUAGE_ES'] = "Èñïàíñêèé";
-$MESS ['ES_LANGUAGE_IT'] = "Èòàëüÿíñêèé";
-$MESS ['ES_LANGUAGE_KO'] = "Êîðåéñêèé";
-$MESS ['ES_LANGUAGE_DE'] = "Íåìåöêèé";
-$MESS ['ES_LANGUAGE_NL'] = "Íèäåðëàíäñêèé";
-$MESS ['ES_LANGUAGE_PT'] = "Ïîðòóãàëüñêèé";
-$MESS ['ES_LANGUAGE_RU'] = "Ðóññêèé";
-$MESS ['ES_LANGUAGE_TR'] = "Òóðåöêèé";
-$MESS ['ES_LANGUAGE_FR'] = "Ôðàíöóçñêèé";
-$MESS ['ES_LANGUAGE_JA'] = "ßïîíñêèé";
-$MESS ['ES_TWITTER'] = "Òâèòòåð-àêêàóíò";
-$MESS ['ES_DATA_SHOW_COUNT'] = "Ïîêàçûâàòü ÷èñëî ÷èòàòåëåé";
-$MESS ['ES_DATA_BUTTON'] = "Öâåò êíîïêè";
-$MESS ['ES_DATA_TEXT_COLOR'] = "Öâåò òåêñòà";
-$MESS ['ES_DATA_LINK_COLOR'] = "Öâåò ññûëêè";
-$MESS ['ES_DATA_WIDTH'] = "Øèðèíà";
-$MESS ['ES_DATA_ALIGN'] = "Âûðàâíèâàíèå";
-$MESS ['ES_DATA_ALIGN_LEFT'] = "Íà ëåâî";
-$MESS ['ES_DATA_ALIGN_RIGHT'] = "Íà ïðàâî";
-$MESS ['ES_DATA_LANG'] = "ßçûê";
+$MESS ['ES_YES'] = "Ð”Ð°";
+$MESS ['ES_NO'] = "ÐÐµÑ‚";
+$MESS ['ES_LANGUAGE_EN'] = "ÐÐ½Ð³Ð»Ð¸Ð¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_ID'] = "Ð˜Ð½Ð´Ð¾Ð½ÐµÐ·Ð¸Ð¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_ES'] = "Ð˜ÑÐ¿Ð°Ð½ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_IT'] = "Ð˜Ñ‚Ð°Ð»ÑŒÑÐ½ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_KO'] = "ÐšÐ¾Ñ€ÐµÐ¹ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_DE'] = "ÐÐµÐ¼ÐµÑ†ÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_NL'] = "ÐÐ¸Ð´ÐµÑ€Ð»Ð°Ð½Ð´ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_PT'] = "ÐŸÐ¾Ñ€Ñ‚ÑƒÐ³Ð°Ð»ÑŒÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_RU'] = "Ð ÑƒÑÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_TR'] = "Ð¢ÑƒÑ€ÐµÑ†ÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_FR'] = "Ð¤Ñ€Ð°Ð½Ñ†ÑƒÐ·ÑÐºÐ¸Ð¹";
+$MESS ['ES_LANGUAGE_JA'] = "Ð¯Ð¿Ð¾Ð½ÑÐºÐ¸Ð¹";
+$MESS ['ES_TWITTER'] = "Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚";
+$MESS ['ES_DATA_SHOW_COUNT'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð¾ Ñ‡Ð¸Ñ‚Ð°Ñ‚ÐµÐ»ÐµÐ¹";
+$MESS ['ES_DATA_BUTTON'] = "Ð¦Ð²ÐµÑ‚ ÐºÐ½Ð¾Ð¿ÐºÐ¸";
+$MESS ['ES_DATA_TEXT_COLOR'] = "Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð°";
+$MESS ['ES_DATA_LINK_COLOR'] = "Ð¦Ð²ÐµÑ‚ ÑÑÑ‹Ð»ÐºÐ¸";
+$MESS ['ES_DATA_WIDTH'] = "Ð¨Ð¸Ñ€Ð¸Ð½Ð°";
+$MESS ['ES_DATA_ALIGN'] = "Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['ES_DATA_ALIGN_LEFT'] = "ÐÐ° Ð»ÐµÐ²Ð¾";
+$MESS ['ES_DATA_ALIGN_RIGHT'] = "ÐÐ° Ð¿Ñ€Ð°Ð²Ð¾";
+$MESS ['ES_DATA_LANG'] = "Ð¯Ð·Ñ‹Ðº";
 ?>

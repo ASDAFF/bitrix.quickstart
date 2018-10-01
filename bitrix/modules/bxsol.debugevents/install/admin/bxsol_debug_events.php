@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Mineev Aleksey (2016 ©)
+ * Mineev Aleksey (2016 Â©)
  * alekseym@bxsolutions.ru
  */
 

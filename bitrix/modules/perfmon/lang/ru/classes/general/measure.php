@@ -1,11 +1,11 @@
 <?
-$MESS["PERFMON_MEASURE_MEMORY_USAGE"] = "#percent#% èñïîëüçóåìîé ïàìÿòè";
-$MESS["PERFMON_MEASURE_CACHE_REC"] = "Óâåëè÷èòü ðàçìåð êåøà.";
-$MESS["PERFMON_MEASURE_SET_REC"] = "Óñòàíîâèòü ðàâíûì \"#value#\".";
-$MESS["PERFMON_MEASURE_GREATER_THAN_ZERO_REC"] = "Óñòàíîâèòü áîëüøå íóëÿ.";
-$MESS["PERFMON_MEASURE_EQUAL_OR_GREATER_THAN_REC"] = "Óñòàíîâèòü áîëüøå èëè ðàâíûì \"#value#\".";
-$MESS["PERFMON_MEASURE_CURRENT_VALUE"] = "òåêóùåå çíà÷åíèå:\"#value#\"";
-$MESS["PERFMON_MEASURE_OPCODE_CACHING"] = "êåøèðîâàíèå (àêñåëåðàöèÿ) php";
-$MESS["PERFMON_MEASURE_DISABLED"] = "íå ðàáîòàåò";
-$MESS["PERFMON_MEASURE_UP_AND_RUNNING"] = "ðàáîòàåò";
+$MESS["PERFMON_MEASURE_MEMORY_USAGE"] = "#percent#% Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼Ð¾Ð¹ Ð¿Ð°Ð¼ÑÑ‚Ð¸";
+$MESS["PERFMON_MEASURE_CACHE_REC"] = "Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÐºÐµÑˆÐ°.";
+$MESS["PERFMON_MEASURE_SET_REC"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°Ð²Ð½Ñ‹Ð¼ \"#value#\".";
+$MESS["PERFMON_MEASURE_GREATER_THAN_ZERO_REC"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ.";
+$MESS["PERFMON_MEASURE_EQUAL_OR_GREATER_THAN_REC"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð¸Ð»Ð¸ Ñ€Ð°Ð²Ð½Ñ‹Ð¼ \"#value#\".";
+$MESS["PERFMON_MEASURE_CURRENT_VALUE"] = "Ñ‚ÐµÐºÑƒÑ‰ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:\"#value#\"";
+$MESS["PERFMON_MEASURE_OPCODE_CACHING"] = "ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ (Ð°ÐºÑÐµÐ»ÐµÑ€Ð°Ñ†Ð¸Ñ) php";
+$MESS["PERFMON_MEASURE_DISABLED"] = "Ð½Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚";
+$MESS["PERFMON_MEASURE_UP_AND_RUNNING"] = "Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚";
 ?>

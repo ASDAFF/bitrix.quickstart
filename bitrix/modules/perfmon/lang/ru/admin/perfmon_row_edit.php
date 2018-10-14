@@ -1,14 +1,14 @@
 <?
-$MESS["PERFMON_ROW_EDIT_MODULE_ERROR"] = "Îøèáêà ïîäêëþ÷åíèÿ ìîäóëÿ ïðîèçâîäèòåëüíîñòè.";
-$MESS["PERFMON_ROW_EDIT_TABLE_ERROR"] = "Óêàçàííàÿ òàáëèöà (#TABLE_NAME#) íå ñóùåñòâóåò.";
-$MESS["PERFMON_ROW_EDIT_PK_ERROR"] = "Óêàçàííûõ çíà÷åíèé êëþ÷à íå äîñòàòî÷íî äëÿ îäíîçíà÷íîé èäåíòèôèêàöèè çàïèñè.";
-$MESS["PERFMON_ROW_EDIT_NOT_FOUND"] = "Çàïèñü íå íàéäåíà.";
-$MESS["PERFMON_ROW_EDIT_SAVE_ERROR"] = "Ïðè ñîõðàíåíèè ïðîèçîøëà îøèáêà.";
-$MESS["PERFMON_ROW_EDIT_TITLE"] = "Ðåäàêòèðîâàíèå çàïèñè: #TABLE_NAME#";
-$MESS["PERFMON_ROW_EDIT_MENU_LIST_TITLE"] = "Âîçâðàò ê ñïèñêó çàïèñåé òàáëèöû.";
-$MESS["PERFMON_ROW_EDIT_TAB"] = "Çàïèñü";
-$MESS["PERFMON_ROW_EDIT_TAB_TITLE"] = "Ðåäàêòèðîâàíèå çàïèñè â òàáëèöå #TABLE_NAME#";
-$MESS["PERFMON_ROW_CACHE_TAB"] = "Óïðàâëÿåìûé êåø";
-$MESS["PERFMON_ROW_CACHE_TAB_TITLE"] = "Óïðàâëåíèå ñáðîñîì óïðàâëÿåìîãî êåøà ïîñëå ñîõðàíåíèÿ çàïèñè.";
-$MESS["PERFMON_ROW_CACHE_CLEAR"] = "Ñáðîñèòü óïðàâëÿåìûé êåø";
+$MESS["PERFMON_ROW_EDIT_MODULE_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸.";
+$MESS["PERFMON_ROW_EDIT_TABLE_ERROR"] = "Ð£ÐºÐ°Ð·Ð°Ð½Ð½Ð°Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ð° (#TABLE_NAME#) Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚.";
+$MESS["PERFMON_ROW_EDIT_PK_ERROR"] = "Ð£ÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ ÐºÐ»ÑŽÑ‡Ð° Ð½Ðµ Ð´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´Ð»Ñ Ð¾Ð´Ð½Ð¾Ð·Ð½Ð°Ñ‡Ð½Ð¾Ð¹ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ†Ð¸Ð¸ Ð·Ð°Ð¿Ð¸ÑÐ¸.";
+$MESS["PERFMON_ROW_EDIT_NOT_FOUND"] = "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.";
+$MESS["PERFMON_ROW_EDIT_SAVE_ERROR"] = "ÐŸÑ€Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ð¸ Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°.";
+$MESS["PERFMON_ROW_EDIT_TITLE"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸: #TABLE_NAME#";
+$MESS["PERFMON_ROW_EDIT_MENU_LIST_TITLE"] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹.";
+$MESS["PERFMON_ROW_EDIT_TAB"] = "Ð—Ð°Ð¿Ð¸ÑÑŒ";
+$MESS["PERFMON_ROW_EDIT_TAB_TITLE"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ðµ #TABLE_NAME#";
+$MESS["PERFMON_ROW_CACHE_TAB"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ð¹ ÐºÐµÑˆ";
+$MESS["PERFMON_ROW_CACHE_TAB_TITLE"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ±Ñ€Ð¾ÑÐ¾Ð¼ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼Ð¾Ð³Ð¾ ÐºÐµÑˆÐ° Ð¿Ð¾ÑÐ»Ðµ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸.";
+$MESS["PERFMON_ROW_CACHE_CLEAR"] = "Ð¡Ð±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ð¹ ÐºÐµÑˆ";
 ?>

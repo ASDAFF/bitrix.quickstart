@@ -1,3 +1,3 @@
 <?
-$MESS ['P_GALLERY_AVATAR_SIZE'] = "Ðàçìåð àâàòàðà ãàëåðåè (px)";
+$MESS ['P_GALLERY_AVATAR_SIZE'] = "Ð Ð°Ð·Ð¼ÐµÑ€ Ð°Ð²Ð°Ñ‚Ð°Ñ€Ð° Ð³Ð°Ð»ÐµÑ€ÐµÐ¸ (px)";
 ?>

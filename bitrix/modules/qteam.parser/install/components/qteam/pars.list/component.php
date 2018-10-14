@@ -19,7 +19,7 @@ $copyDOC_ROOT=$_SERVER["DOCUMENT_ROOT"]; if($_SERVER["DOCUMENT_ROOT"][strlen($_S
 
 
 
-//-------------- Если включен режим автоматичексого добавления в БД сбрасываем все параметры ----------
+//-------------- Р•СЃР»Рё РІРєР»СЋС‡РµРЅ СЂРµР¶РёРј Р°РІС‚РѕРјР°С‚РёС‡РµРєСЃРѕРіРѕ РґРѕР±Р°РІР»РµРЅРёСЏ РІ Р‘Р” СЃР±СЂР°СЃС‹РІР°РµРј РІСЃРµ РїР°СЂР°РјРµС‚СЂС‹ ----------
 if($_GET['auto']>0)
 {
  $_SESSION['PARSKEY']='';
@@ -257,17 +257,17 @@ function PARS_GetDateFromStr($date)
 {
 
 /*
-   $tdate='<div>13 <b>марта</b> 2014, 14:42 (мск)</div>'; 
+   $tdate='<div>13 <b>РјР°СЂС‚Р°</b> 2014, 14:42 (РјСЃРє)</div>'; 
    $tdate=strip_tags($tdate);
 //  $date = preg_match('/^([1-31])\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{4})$/', $date);
-  preg_match('/^([1-31])\s(Января|января|Февраля|февраля|Марта|марта|Апреля|апреля|Мая|мая|Июня|июня|Июля|июля|Августа|августа|Сентября|сентября|Октября|октября|Ноября|ноября|Декабря|декабря)\s(\d{4})$/', $tdate, $date);
+  preg_match('/^([1-31])\s(РЇРЅРІР°СЂСЏ|СЏРЅРІР°СЂСЏ|Р¤РµРІСЂР°Р»СЏ|С„РµРІСЂР°Р»СЏ|РњР°СЂС‚Р°|РјР°СЂС‚Р°|РђРїСЂРµР»СЏ|Р°РїСЂРµР»СЏ|РњР°СЏ|РјР°СЏ|РСЋРЅСЏ|РёСЋРЅСЏ|РСЋР»СЏ|РёСЋР»СЏ|РђРІРіСѓСЃС‚Р°|Р°РІРіСѓСЃС‚Р°|РЎРµРЅС‚СЏР±СЂСЏ|СЃРµРЅС‚СЏР±СЂСЏ|РћРєС‚СЏР±СЂСЏ|РѕРєС‚СЏР±СЂСЏ|РќРѕСЏР±СЂСЏ|РЅРѕСЏР±СЂСЏ|Р”РµРєР°Р±СЂСЏ|РґРµРєР°Р±СЂСЏ)\s(\d{4})$/', $tdate, $date);
 
 echo 'dt=|'.$tdate.'|'.$date[0].$date[1].'<br />';
 */
 
 $rdt='';
 
-// $date= "<b>23 января 2014, 23:58 </b>"; //гггг.мм.дд
+// $date= "<b>23 СЏРЅРІР°СЂСЏ 2014, 23:58 </b>"; //РіРіРіРі.РјРј.РґРґ
 
 $date=trim(strip_tags($date));
 
@@ -416,7 +416,7 @@ function PARS_AutoConvrtStr($tstr)
 
 
 
-// echo '----------- 15 марта 2014, 16:06 (мск) --------------'.PARS_GetDateFromStr('15 марта 2014, 16:06 (мск) ').'---------------<br>';
+// echo '----------- 15 РјР°СЂС‚Р° 2014, 16:06 (РјСЃРє) --------------'.PARS_GetDateFromStr('15 РјР°СЂС‚Р° 2014, 16:06 (РјСЃРє) ').'---------------<br>';
 
 
 
@@ -502,7 +502,7 @@ function PARS_ClearTags($data)
   $data=PARS_striptags($data,'SCRIPT',TRUE);
 
 /*
-    // Убираем из текста все теги кроме <td <tr </tr  </td оставляем только текст
+    // РЈР±РёСЂР°РµРј РёР· С‚РµРєСЃС‚Р° РІСЃРµ С‚РµРіРё РєСЂРѕРјРµ <td <tr </tr  </td РѕСЃС‚Р°РІР»СЏРµРј С‚РѕР»СЊРєРѕ С‚РµРєСЃС‚
     preg_match_all('#<[^>]*>#', $data, $tags); 
 	foreach($tags[0] as $i) 
 	 {
@@ -537,7 +537,7 @@ function PARS_ClearTags($data)
 
 function PARS_delteg($vl)
 {
-	// Убираем из текста все теги в массив $tagList
+	// РЈР±РёСЂР°РµРј РёР· С‚РµРєСЃС‚Р° РІСЃРµ С‚РµРіРё РІ РјР°СЃСЃРёРІ $tagList
 	$data=$vl;
 	preg_match_all('#<[^>]*>#', $data, $tags); 
 	array_unique($tags);
@@ -690,19 +690,19 @@ function PARS_rus2translit($string) {
 
 function PARS_str2url($str) {
 
-    // переводим в транслит
+    // РїРµСЂРµРІРѕРґРёРј РІ С‚СЂР°РЅСЃР»РёС‚
 
     $str = PARS_rus2translit($str);
 
-    // в нижний регистр
+    // РІ РЅРёР¶РЅРёР№ СЂРµРіРёСЃС‚СЂ
 
     $str = strtolower($str);
 
-    // заменям все ненужное нам на "-"
+    // Р·Р°РјРµРЅСЏРј РІСЃРµ РЅРµРЅСѓР¶РЅРѕРµ РЅР°Рј РЅР° "-"
 
 //////    $str = preg_replace('~[^-a-z0-9_]+~u', '-', $str);
 
-    // удаляем начальные и конечные '-'
+    // СѓРґР°Р»СЏРµРј РЅР°С‡Р°Р»СЊРЅС‹Рµ Рё РєРѕРЅРµС‡РЅС‹Рµ '-'
 
     $str = trim($str, "-");
 
@@ -741,9 +741,9 @@ if($_SERVER['REQUEST_METHOD']=="POST")
  if(CModule::IncludeModule("iblock"))
   {
 /*  
-     //----------- выбираем все информационные блоки типа "shop" ---------
+     //----------- РІС‹Р±РёСЂР°РµРј РІСЃРµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ Р±Р»РѕРєРё С‚РёРїР° "shop" ---------
      $iblocks = GetIBlockList($PARSERTYPEIB);
-     while($arIBlock = $iblocks->GetNext()) //цикл по всем блокам
+     while($arIBlock = $iblocks->GetNext()) //С†РёРєР» РїРѕ РІСЃРµРј Р±Р»РѕРєР°Рј
       {
         if($arIBlock["CODE"]==$PARSERCODEIB)  {  $PARSERIB=$arIBlock["ID"];    }
        }  
@@ -775,32 +775,32 @@ foreach($_POST as $key=>$vl)
 
    
 
-   //------------------ Создаем директорию для хранения изображений ----------------
+   //------------------ РЎРѕР·РґР°РµРј РґРёСЂРµРєС‚РѕСЂРёСЋ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёР№ ----------------
 
 
-     // удаление файлов из папки /images/temp
+     // СѓРґР°Р»РµРЅРёРµ С„Р°Р№Р»РѕРІ РёР· РїР°РїРєРё /images/temp
     PARS_remove_dir($_SERVER["DOCUMENT_ROOT"]."upload/parser/images/temp", false); $INFO['MESSAGE'][]=GetMessage("QTEAM_PARSER_PAPKA_S_IZOBRAJENIAM"); 
 
 
 
 
-//	 $path = '/opt/lampp/htdocs/'; // - путь до создаваемой папки.
+//	 $path = '/opt/lampp/htdocs/'; // - РїСѓС‚СЊ РґРѕ СЃРѕР·РґР°РІР°РµРјРѕР№ РїР°РїРєРё.
 
 
 
-//     $folder = 'my-documents';     // - имя создаваемой папки.
-//     $mode = '0777';               // - права на создаваемую папку.
-//     $recursive = true;            // - несуществующие папки будут воссозданы
+//     $folder = 'my-documents';     // - РёРјСЏ СЃРѕР·РґР°РІР°РµРјРѕР№ РїР°РїРєРё.
+//     $mode = '0777';               // - РїСЂР°РІР° РЅР° СЃРѕР·РґР°РІР°РµРјСѓСЋ РїР°РїРєСѓ.
+//     $recursive = true;            // - РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ РїР°РїРєРё Р±СѓРґСѓС‚ РІРѕСЃСЃРѕР·РґР°РЅС‹
 	 
 	 
 /*	 
     if(mkdir($_SERVER["DOCUMENT_ROOT"]."upload/parsimgtmp/", $mode, $recursive)==false)
       {
-	   $INFO['ERROR'][]='Не удалось создать директорию "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
+	   $INFO['ERROR'][]='РќРµ СѓРґР°Р»РѕСЃСЊ СЃРѕР·РґР°С‚СЊ РґРёСЂРµРєС‚РѕСЂРёСЋ "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
 	   }
      else
 	  {
-       $INFO['MESSAGE'][]='Директория создана "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
+       $INFO['MESSAGE'][]='Р”РёСЂРµРєС‚РѕСЂРёСЏ СЃРѕР·РґР°РЅР° "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
 	   }
 */	   
 
@@ -859,7 +859,7 @@ foreach($_POST as $key=>$vl)
   
   
   
-   //-------------------------------------------- Добавляем изображение АНОНСА  -------------------------------
+   //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёРµ РђРќРћРќРЎРђ  -------------------------------
    if( ($PARSER_IMGANONSADD)&&($_SESSION['PARSDATA'][$nurec[1]]['FPIMAGE']) )
     {
   	  preg_match("#[^/]*$#i", trim($_SESSION['PARSDATA'][$nurec[1]]['FPIMAGE']), $timatch);
@@ -913,7 +913,7 @@ foreach($_POST as $key=>$vl)
 
   
   
-   //-------------------------------------------- Добавляем изображение Детального описания  -------------------------------
+   //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёРµ Р”РµС‚Р°Р»СЊРЅРѕРіРѕ РѕРїРёСЃР°РЅРёСЏ  -------------------------------
 //   if( ($PARSER_IMGDETAILADD)&&($_SESSION['PARSDATA'][$nurec[1]]['IMAGE']) )
    if($_SESSION['PARSDATA'][$nurec[1]]['IMAGE']) 
     {
@@ -980,14 +980,14 @@ foreach($_POST as $key=>$vl)
 
 //    echo '#############'.$_SESSION['PARSDATA'][$nurec[1]]['DATE'].'<br />';
 
-    //-------------------------------------------- Добавляем Дату  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј Р”Р°С‚Сѓ  -------------------------------
     if($_SESSION['PARSDATA'][$nurec[1]]['DATE']) $TMPArr["DATE"]=PARS_GetDateFromStr($_SESSION['PARSDATA'][$nurec[1]]['DATE']); else $TMPArr["DATE"]=PARS_GetDateFromStr('');
 
-    //-------------------------------------------- Добавляем Название  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РќР°Р·РІР°РЅРёРµ  -------------------------------
     if(strlen(trim($_SESSION['PARSDATA'][$nurec[1]]['HEADPAGE']))>2) $TMPArr["HEAD"]=$_SESSION['PARSDATA'][$nurec[1]]['HEADPAGE']; else $TMPArr["HEAD"]=$_SESSION['PARSDATA'][$nurec[1]]['FPNAME'];
 
 
-    //-------------------------------------------- Добавляем АНОНС  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РђРќРћРќРЎ  -------------------------------
     if($_SESSION['PARSDATA'][$nurec[1]]['ANONS']) $TMPArr["TEXT"]=PARS_ClearTags($_SESSION['PARSDATA'][$nurec[1]]['ANONS']);
     if($_SESSION['PARSDATA'][$nurec[1]]['FPANONS'])
 	 { 
@@ -1012,11 +1012,11 @@ foreach($_POST as $key=>$vl)
 
 
 
-//---------------------------- Добавление сообщения ---------------------------
+//---------------------------- Р”РѕР±Р°РІР»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ ---------------------------
 $rsarv=$TMPArr;
 
  
-       // Проверка существования записи 
+       // РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
        $arSelect = Array("ID", "NAME", "DATE_ACTIVE_FROM");
 //       $arFilter = Array("IBLOCK_ID"=>$IBLOCK_ID, "SECTION_ID"=>$_GET["tid"], "INCLUDE_SUBSECTIONS"=>"Y");
        $arFilter = Array("IBLOCK_ID"=>$PARSERIB, "SECTION_ID"=>$PARSSECTION);
@@ -1033,7 +1033,7 @@ $rsarv=$TMPArr;
               $FlagFindRec=$ar["ID"];
 	          $INFO['ERROR'][]=GetMessage("QTEAM_PARSER_ZAPISQ_NAYDENA").$rsarv["HEAD"].')!  ID='.$ar["ID"].'  DATE='.$ar["DATE_ACTIVE_FROM"].''; 
 		  } 
-	   else // теперь если не существует Проверка существования записи 
+	   else // С‚РµРїРµСЂСЊ РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
 	    {
 	        if(!$AddInDB) $INFO['MESSAGE'][]=GetMessage("QTEAM_PARSER_DOBAVLAEM_ZAPISQ").$rsarv["HEAD"].')!  ID='.$ar["ID"].'  DATE='.$ar["DATE_ACTIVE_FROM"].''; 
 		
@@ -1044,7 +1044,7 @@ $rsarv=$TMPArr;
 
 
 
-//--------- теги
+//--------- С‚РµРіРё
 
       $ftitle=str_replace('"', " ", $rsarv["HEAD"]);
       $tegi=str_replace('"', " ", $rsarv["HEAD"]);
@@ -1052,7 +1052,7 @@ $rsarv=$TMPArr;
 
       global $APPLICATION;
  
-//      $APPLICATION->SetTitle('В черном списке: '.$ftitle);
+//      $APPLICATION->SetTitle('Р’ С‡РµСЂРЅРѕРј СЃРїРёСЃРєРµ: '.$ftitle);
 
       $keywrd=PARS_RplTegHTML(str_replace("<br>", "", str_replace(chr(13).chr(10), "<br>", str_replace("&lt;br&gt;","<br>", $tegi))));
       $dscr=$keywrd;
@@ -1116,8 +1116,8 @@ $rsarv=$TMPArr;
         if(strlen($dscr)<=$i) $FlagEnd=true;
         $i++;
         }
-//      $APPLICATION->SetPageProperty("description", 'В черном списке: '.$resdesc);
-//end------ теги
+//      $APPLICATION->SetPageProperty("description", 'Р’ С‡РµСЂРЅРѕРј СЃРїРёСЃРєРµ: '.$resdesc);
+//end------ С‚РµРіРё
 
 
 
@@ -1145,10 +1145,10 @@ $rsarv=$TMPArr;
   
           $arLoadProductArray = Array(
 
-//           "MODIFIED_BY"    => $arUser["ID"],         // элемент изменен текущим пользователем
+//           "MODIFIED_BY"    => $arUser["ID"],         // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 
            "TAGS"=> $newstags,
-           "IBLOCK_SECTION" => $PARSSECTION,          // элемент лежит в указанном разделе
+           "IBLOCK_SECTION" => $PARSSECTION,          // СЌР»РµРјРµРЅС‚ Р»РµР¶РёС‚ РІ СѓРєР°Р·Р°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ
            "IBLOCK_ID"      => $PARSERIB,
 		   
            "PROPERTY_VALUES"=> $PROP,
@@ -1222,7 +1222,7 @@ $rsarv=$TMPArr;
 		
 		
 		
-		 } // end теперь если не существует Проверка существования записи 
+		 } // end С‚РµРїРµСЂСЊ РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
  
  
  
@@ -1246,21 +1246,21 @@ $rsarv=$TMPArr;
 
 
 
-  // $html - некий html-код некой страницы, \n - это переход на новую строку (верстальщики иногда это делают) 
-/// $html = 'Текст <img src="http://rs.mail.ru/b26972665.jpg" style="width:0;height:0;position:absolute;" alt=""/> и снова  конец <img src="//limg.imgsmail.ru/s/images/logo/logo.v3.png" width="195" height="46" class="logo__link__img logo__link__img_medium" alt=""/><img src="//limg.imgsmail.ru/s/images/logo/logo_wide.v3.png" width="211" height="53" class="logo__link__img logo__link__img_wide" alt=""/> qwerty dfgdfgdgf <img src="http://rs.mail.ru/b26986220.jpg" style="width:0;height:0;position:absolute;" alt=""/> dfgdfgdgdgdg';
+  // $html - РЅРµРєРёР№ html-РєРѕРґ РЅРµРєРѕР№ СЃС‚СЂР°РЅРёС†С‹, \n - СЌС‚Рѕ РїРµСЂРµС…РѕРґ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ (РІРµСЂСЃС‚Р°Р»СЊС‰РёРєРё РёРЅРѕРіРґР° СЌС‚Рѕ РґРµР»Р°СЋС‚) 
+/// $html = 'РўРµРєСЃС‚ <img src="http://rs.mail.ru/b26972665.jpg" style="width:0;height:0;position:absolute;" alt=""/> Рё СЃРЅРѕРІР°  РєРѕРЅРµС† <img src="//limg.imgsmail.ru/s/images/logo/logo.v3.png" width="195" height="46" class="logo__link__img logo__link__img_medium" alt=""/><img src="//limg.imgsmail.ru/s/images/logo/logo_wide.v3.png" width="211" height="53" class="logo__link__img logo__link__img_wide" alt=""/> qwerty dfgdfgdgf <img src="http://rs.mail.ru/b26986220.jpg" style="width:0;height:0;position:absolute;" alt=""/> dfgdfgdgdgdg';
 
    $TMPArr["EXTTEXT"]=$_SESSION['PARSDATA'][$nurec[1]]['DETAIL'];
   
    $html =$_SESSION['PARSDATA'][$nurec[1]]['DETAIL'];
 
-  // Вызываем функцию, которая все совпадения помещает в массив $matches 
+  // Р’С‹Р·С‹РІР°РµРј С„СѓРЅРєС†РёСЋ, РєРѕС‚РѕСЂР°СЏ РІСЃРµ СЃРѕРІРїР°РґРµРЅРёСЏ РїРѕРјРµС‰Р°РµС‚ РІ РјР°СЃСЃРёРІ $matches 
 //  preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc][^=]*=[ '\"\s]*([^ \"'>\s#]+)[^>]*>/", $html, $matches);
 
   preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc][^=]*=[ '\"]*([^\"'>#]+)[^>]*>/", $html, $matches);
 
 //  preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc]=([^>]+\s#)*>/", $html, $matches);
-  $urls = $matches[1]; // Берём то место, где сама ссылка (благодаря группирующим скобкам в регулярном выражении)
-  // Выводим все ссылки 
+  $urls = $matches[1]; // Р‘РµСЂС‘Рј С‚Рѕ РјРµСЃС‚Рѕ, РіРґРµ СЃР°РјР° СЃСЃС‹Р»РєР° (Р±Р»Р°РіРѕРґР°СЂСЏ РіСЂСѓРїРїРёСЂСѓСЋС‰РёРј СЃРєРѕР±РєР°Рј РІ СЂРµРіСѓР»СЏСЂРЅРѕРј РІС‹СЂР°Р¶РµРЅРёРё)
+  // Р’С‹РІРѕРґРёРј РІСЃРµ СЃСЃС‹Р»РєРё 
   $IMAGEPARS=array();
   for ($i = 0; $i < count($urls); $i++)
    {
@@ -1273,7 +1273,7 @@ $rsarv=$TMPArr;
 	
 	
 	
-// echo 'Ссылка на изображение к ссылки первой страницы: ';
+// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ Рє СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 	if((substr($turl,0,4)=='http')||(substr($turl,0,2)=='//')) 
 	 {  
 //echo'1. '.$turl.'<br>';
@@ -1358,16 +1358,16 @@ $rsarv=$TMPArr;
 
 
 
-      //-------------------------------------------- Изменяем ссылки в Детальном описании  -------------------------------
+      //-------------------------------------------- РР·РјРµРЅСЏРµРј СЃСЃС‹Р»РєРё РІ Р”РµС‚Р°Р»СЊРЅРѕРј РѕРїРёСЃР°РЅРёРё  -------------------------------
 
 	  $TMPArr["EXTTEXT"]=str_replace($IMAGEPARS[$key]["SOURCE"], $IMAGEPARS[$key]["UPLOAD"], $TMPArr["EXTTEXT"]);
 	  } // foreach($IMAGEPARS as $key=>$vl)
 
 
 
-    //-------------------------------------------- Добавляем Источник в Детальное описание  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РСЃС‚РѕС‡РЅРёРє РІ Р”РµС‚Р°Р»СЊРЅРѕРµ РѕРїРёСЃР°РЅРёРµ  -------------------------------
 
-//	if($PARSER_SOURCEADD) $TMPArr["EXTTEXT"].='<p><br /><em>Источник: '.$_SESSION['PARSDATA'][$nurec[1]]['SOURCE'].'</em></p>';
+//	if($PARSER_SOURCEADD) $TMPArr["EXTTEXT"].='<p><br /><em>РСЃС‚РѕС‡РЅРёРє: '.$_SESSION['PARSDATA'][$nurec[1]]['SOURCE'].'</em></p>';
 	if($PARSER_SOURCEADD) $arLoadProductArray["PROPERTY_VALUES"][$PARSER_SOURCEADD]=trim($_SESSION['PARSDATA'][$nurec[1]]['SOURCE']);
 
 
@@ -1476,7 +1476,7 @@ if( $curl = curl_init() ) {
    }
 */
 
-/*подключаем xml файл*/
+/*РїРѕРґРєР»СЋС‡Р°РµРј xml С„Р°Р№Р»*/
  $xml1= simplexml_load_file("http://qteam.ru/parser/getdatafromextsite.php?vr=230&pkey=".$PARSERKEY.'&numlnk='.$_SESSION['PARSPAGE'].'&countlnk='.$getcntpg, "SimpleXMLElement", LIBXML_NOCDATA);
 
 /////$xml1= simplexml_load_file("http://qteam.ru/parser/getdatafromextsite.php?pkey=-89-00H-D6-5E-A3-C8-EB", "SimpleXMLElement", LIBXML_NOCDATA);
@@ -1503,7 +1503,7 @@ else
 {
 
 /*
-// функция перекодировки
+// С„СѓРЅРєС†РёСЏ РїРµСЂРµРєРѕРґРёСЂРѕРІРєРё
 function utf_win($str, $type){
 static $co = '';
 if (!is_array($co))
@@ -1537,7 +1537,7 @@ return $str;
 
 
 
-/*проходим циклом по xml документу*/
+/*РїСЂРѕС…РѕРґРёРј С†РёРєР»РѕРј РїРѕ xml РґРѕРєСѓРјРµРЅС‚Сѓ*/
 
 //echo'<pre>'; print_r($xml1); echo'</pre>';
 
@@ -1570,7 +1570,7 @@ $numblock++;
 
 if($it->FPDATE) 
 {
-// echo 'Дата ссылки первой страницы: ';
+// echo 'Р”Р°С‚Р° СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 // echo iconv('UTF-8', 'windows-1251', $it->FPDATE);
 // echo '<br />';
  
@@ -1583,7 +1583,7 @@ if($it->FPDATE)
 
 if($it->FPIMAGE) 
 {
-// echo 'Ссылка на изображение к ссылки первой страницы: ';
+// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ Рє СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 ///////    $turl=PARS_ConvrtStr($it->FPIMAGE);
         $turl=$it->FPIMAGE; 
 	$turl=trim($turl);
@@ -1620,7 +1620,7 @@ if($it->FPIMAGE)
 
 if($it->FPNAME)
 {
-// echo 'Текст ссылки первой страницы: <br> <strong>'.iconv('UTF-8', 'windows-1251', $it->FPNAME).'</strong><br />';
+// echo 'РўРµРєСЃС‚ СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br> <strong>'.iconv('UTF-8', 'windows-1251', $it->FPNAME).'</strong><br />';
 
 // echo '<a id="lnk'.$numblock.'" href="javascript: void(0); return false;">'.iconv('UTF-8', 'windows-1251', $it->FPNAME).'</a>';
 // echo '<strong><span class="lnk'.$numblock.'">'.iconv('UTF-8', 'windows-1251', $it->FPNAME).'</span></strong>';
@@ -1636,7 +1636,7 @@ if($it->FPNAME)
 
 if($it->FPHREF) 
 {
-// echo 'Cсылка первой страницы: ';
+// echo 'CСЃС‹Р»РєР° РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 // echo iconv('UTF-8', 'windows-1251', $it->FPHREF);
 // echo '<br />';
 
@@ -1651,7 +1651,7 @@ if($it->FPHREF)
 
 if($it->FPANONS) 
 {
-// echo 'Анонс к ссылки первой страницы: ';
+// echo 'РђРЅРѕРЅСЃ Рє СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 // echo iconv('UTF-8', 'windows-1251', $it->FPANONS);
 // echo '<br />';
 
@@ -1669,7 +1669,7 @@ if($it->FPANONS)
 
 if($it->ERROR) 
 {
-// echo '<span style="color:#ff0000;"><b>Ошибка загрузки страницы</b><br />';
+// echo '<span style="color:#ff0000;"><b>РћС€РёР±РєР° Р·Р°РіСЂСѓР·РєРё СЃС‚СЂР°РЅРёС†С‹</b><br />';
 // echo iconv('UTF-8', 'windows-1251', $it->ERROR);
 // echo '</span><br />';
 
@@ -1680,14 +1680,14 @@ if($it->ERROR)
 
 
 
-///// echo '<a id="lnk'.$numblock.'"  class="lnk">Развернуть текст</a><br />';
+///// echo '<a id="lnk'.$numblock.'"  class="lnk">Р Р°Р·РІРµСЂРЅСѓС‚СЊ С‚РµРєСЃС‚</a><br />';
  
 ///// echo'<div id="blk'.$numblock.'" class="blk">';
 
 
 if($it->DATE) 
 {
-/// echo 'Дата второй страницы: ';
+/// echo 'Р”Р°С‚Р° РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
  $ttxtv='';
  foreach ($it->DATE->DATA as $dt){ $ttxtv.=PARS_ConvrtStr($dt);  }
 
@@ -1700,7 +1700,7 @@ if($it->DATE)
  
 if($it->HEADPAGE) 
 {
-//// echo 'Заголовок второй страницы: <br>';
+//// echo 'Р—Р°РіРѕР»РѕРІРѕРє РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br>';
  $ttxtv='';
  foreach ($it->HEADPAGE->DATA as $dt){  $ttxtv.=PARS_ConvrtStr(strip_tags($dt));  }
 
@@ -1714,7 +1714,7 @@ if($it->HEADPAGE)
 
 
 
-  // название ссылки может быть значительно длиннее настоящего заголовка, поэтому мы стараемся определить что является настоящим заголовком страницы
+  // РЅР°Р·РІР°РЅРёРµ СЃСЃС‹Р»РєРё РјРѕР¶РµС‚ Р±С‹С‚СЊ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ РґР»РёРЅРЅРµРµ РЅР°СЃС‚РѕСЏС‰РµРіРѕ Р·Р°РіРѕР»РѕРІРєР°, РїРѕСЌС‚РѕРјСѓ РјС‹ СЃС‚Р°СЂР°РµРјСЃСЏ РѕРїСЂРµРґРµР»РёС‚СЊ С‡С‚Рѕ СЏРІР»СЏРµС‚СЃСЏ РЅР°СЃС‚РѕСЏС‰РёРј Р·Р°РіРѕР»РѕРІРєРѕРј СЃС‚СЂР°РЅРёС†С‹
   if(($POSTDATA["HEADPAGE"]) && ($POSTDATA['FPNAME']))
    {
      if(strlen(trim($POSTDATA["FPNAME"]))>strlen(trim($POSTDATA["HEADPAGE"])))
@@ -1730,7 +1730,7 @@ if($it->HEADPAGE)
 
 if($it->ANONS) 
 {
-/// echo 'Анонс второй страницы: <br>';
+/// echo 'РђРЅРѕРЅСЃ РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br>';
  $ttxtv='';
  foreach ($it->ANONS->DATA as $dt){  $ttxtv.=strip_tags(trim(PARS_ConvrtStr($dt))).'. ';   }
 
@@ -1750,7 +1750,7 @@ if($it->ANONS)
 
 if($it->IMAGE) 
 {
-//// echo 'Ссылка на изображение второй страницы: <br>';
+//// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br>';
  $ttxtv='';
  foreach ($it->IMAGE as $dt)
   {  
@@ -1788,7 +1788,7 @@ if($it->IMAGE)
 
 if($it->DETAIL) 
 {
-// echo 'Подробное описание второй страницы: <br />';
+// echo 'РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br />';
  $ttxtv='';
  foreach ($it->DETAIL->DATA as $dt) { $ttxtv.=PARS_ConvrtStr($dt); }
 
@@ -1813,7 +1813,7 @@ if($it->DETAIL)
 
 if($it->SOURCE) 
 {
-// echo 'Источник: ';
+// echo 'РСЃС‚РѕС‡РЅРёРє: ';
 // echo iconv('UTF-8', 'windows-1251', $it->SOURCE);
 // echo '<br />';
 
@@ -1902,7 +1902,7 @@ foreach ($xml1->PARSTEMPLATES->PARSITEM as $it)
 
 
 
-//========================================== Автоматическое добавление записей в БД =================
+//========================================== РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ РґРѕР±Р°РІР»РµРЅРёРµ Р·Р°РїРёСЃРµР№ РІ Р‘Р” =================
 
 if($_GET['auto']>0)
 {
@@ -1919,19 +1919,19 @@ if($arResult["ERROR"])
  
  if(count($arResult["ERROR"])>0)
   {
-//   echo'<p><strong>Ошибки при загрузке страницы:</strong></p>';
+//   echo'<p><strong>РћС€РёР±РєРё РїСЂРё Р·Р°РіСЂСѓР·РєРµ СЃС‚СЂР°РЅРёС†С‹:</strong></p>';
 //   foreach($arResult["ERROR"] as $vl) echo'<p><font class="errortext">'.$vl.'</font></p>';
    } 
 
 
-// if($cnttmplt>0) { } else echo'<p align="center">&nbsp;<br />Что-то пошло не так... <a href="?prsgetlisttmpl=y">Обновить данные</a><br />&nbsp;</p>';
+// if($cnttmplt>0) { } else echo'<p align="center">&nbsp;<br />Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє... <a href="?prsgetlisttmpl=y">РћР±РЅРѕРІРёС‚СЊ РґР°РЅРЅС‹Рµ</a><br />&nbsp;</p>';
 
  
   }
 else
  {   
  
-// if($cnttmplt>0) { } else echo'<p align="center">&nbsp;<br />Что-то пошло не так... <a href="?prsgetlisttmpl=y">Обновить данные</a><br />&nbsp;</p>';
+// if($cnttmplt>0) { } else echo'<p align="center">&nbsp;<br />Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє... <a href="?prsgetlisttmpl=y">РћР±РЅРѕРІРёС‚СЊ РґР°РЅРЅС‹Рµ</a><br />&nbsp;</p>';
 
 
 //$homepage = file_get_contents('http://qteam.ru/parser/xmlfile.php');
@@ -2004,9 +2004,9 @@ if($it["DETAIL"])
 //// echo'<div class="parsbox parseffect8">';
 
 if($it["ERROR"]) 
-  continue;   // $_POST["PIADD_".$numblock]=''; //  echo '<p><input name="PIADD_'.$numblock.'" type="checkbox" /> сохранить статью</p>';
+  continue;   // $_POST["PIADD_".$numblock]=''; //  echo '<p><input name="PIADD_'.$numblock.'" type="checkbox" /> СЃРѕС…СЂР°РЅРёС‚СЊ СЃС‚Р°С‚СЊСЋ</p>';
 else
-  $_POST["PIADD_".$numblock]='checked'; // echo '<p><input name="PIADD_'.$numblock.'" type="checkbox" checked="checked" /> сохранить статью</p>';
+  $_POST["PIADD_".$numblock]='checked'; // echo '<p><input name="PIADD_'.$numblock.'" type="checkbox" checked="checked" /> СЃРѕС…СЂР°РЅРёС‚СЊ СЃС‚Р°С‚СЊСЋ</p>';
  
 
 
@@ -2039,7 +2039,7 @@ if($it["FPNAME"])
 
 
 
-// echo 'Текст ссылки первой страницы: <br> <strong>'.$it["FPNAME"].'</strong><br />';
+// echo 'РўРµРєСЃС‚ СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br> <strong>'.$it["FPNAME"].'</strong><br />';
 ///// echo '<strong>'.$it["FPNAME"].'</strong>';
 
 // echo '<a id="parslnk'.$numblock.'" href="javascript: void(0); return false;">'.iconv('UTF-8', 'windows-1251', $it->FPNAME).'</a>';
@@ -2052,7 +2052,7 @@ if($it["FPNAME"])
 if((!$it["FPIMAGE"])&&($it["IMAGE"])) $it["FPIMAGE"]=$it["IMAGE"];
 if(($it["FPIMAGE"]) && ($arParams["IMG_ANONS_ADD"]=='Y'))
 {
-// echo 'Ссылка на изображение к ссылки первой страницы: ';
+// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ Рє СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 ////	echo '<img src="'.$it["FPIMAGE"].'" border="0" align="left" height="80" style="margin-right:7px;" />'; 
 ////    echo '<br />';
 //  echo '<input name="FPIMAGE" type="hidden" value="'.$ttxtv.'" />';
@@ -2085,7 +2085,7 @@ if($it["FPANONS"])
 /*
 if($it["ERROR"]) 
 {
-echo '<p><span style="color:#ff0000;"><b>Ошибка загрузки страницы</b><br />';
+echo '<p><span style="color:#ff0000;"><b>РћС€РёР±РєР° Р·Р°РіСЂСѓР·РєРё СЃС‚СЂР°РЅРёС†С‹</b><br />';
 echo $it["ERROR"];
 echo '</span></p>';
 
@@ -2095,16 +2095,16 @@ echo '</span></p>';
 
 
 
-//echo '<p align="right"><a id="parslnk'.$numblock.'"  class="parslnk" style="cursor:pointer;"><em>Подробное описание &gt;&gt;</em></a></p>';
+//echo '<p align="right"><a id="parslnk'.$numblock.'"  class="parslnk" style="cursor:pointer;"><em>РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ &gt;&gt;</em></a></p>';
 
 
   $_POST['PARENTSECT_'.$it["NUMART"]]=$arParams["PARENT_SECTION"];
 
 
 /*
-echo'<p align="center">Родительский раздел:<br /><select id="PARENTSECT_'.$it["NUMART"].'" name="PARENTSECT_'.$it["NUMART"].'" >';
+echo'<p align="center">Р РѕРґРёС‚РµР»СЊСЃРєРёР№ СЂР°Р·РґРµР»:<br /><select id="PARENTSECT_'.$it["NUMART"].'" name="PARENTSECT_'.$it["NUMART"].'" >';
 
-                echo'<option  value="0" '.(($arParams["PARENT_SECTION"]=="0")? 'selected="selected"' : '').'>Верхний уровень</option>';
+                echo'<option  value="0" '.(($arParams["PARENT_SECTION"]=="0")? 'selected="selected"' : '').'>Р’РµСЂС…РЅРёР№ СѓСЂРѕРІРµРЅСЊ</option>';
 
 
 
@@ -2136,7 +2136,7 @@ echo '</select>';
 if($it["FPHREF"]) 
 {
 
-// echo 'Cсылка первой страницы: ';
+// echo 'CСЃС‹Р»РєР° РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 // echo '<br /><span style="color:#999999;font-size:11px;">'.$it["FPHREF"].'</span>';
 // echo '<div style="display:none;"><textarea id="PARS_FPHREF_'.$it["NUMART"].'" name="PARS_FPHREF_'.$it["NUMART"].'">'.$it["FPHREF"].'</textarea></div>';
 
@@ -2182,8 +2182,8 @@ if($it["HEADPAGE"])
 if(($it["FPIMAGE"])&&(!$it["IMAGE"])) $it["IMAGE"]=$it["FPIMAGE"];
 if(($it["IMAGE"]) && ($arParams["IMG_DETAIL_ADD"]=='Y'))
 {
-// echo 'Ссылка на изображение второй страницы: <br>';
-/////	echo '<table><tr><td><img src="'.$it["IMAGE"].'" border="0" align="center" /></td></tr><tr><td align="center"><small>изображение детального описания</small></td></tr></table>';
+// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: <br>';
+/////	echo '<table><tr><td><img src="'.$it["IMAGE"].'" border="0" align="center" /></td></tr><tr><td align="center"><small>РёР·РѕР±СЂР°Р¶РµРЅРёРµ РґРµС‚Р°Р»СЊРЅРѕРіРѕ РѕРїРёСЃР°РЅРёСЏ</small></td></tr></table>';
 ////	echo '<br />'; 
 ///    echo '<div style="display:none;"><textarea id="PARS_IMAGE_'.$it["NUMART"].'" name="PARS_IMAGE_'.$it["NUMART"].'">'.$it["IMAGE"].'</textarea></div>';
 
@@ -2211,7 +2211,7 @@ if($it["ANONS"])
 
 if($it["SOURCE"]) 
 {
-//// echo '<p style="color:#999999;font-size:11px;">Источник: '.$it["SOURCE"].'</p>';
+//// echo '<p style="color:#999999;font-size:11px;">РСЃС‚РѕС‡РЅРёРє: '.$it["SOURCE"].'</p>';
 //  echo '<input name="SOURCE" type="hidden" value="'.$ttxtv.'" />';
 //// echo '<div style="display:none;"><textarea id="PARS_SOURCE_'.$it["NUMART"].'" name="PARS_SOURCE_'.$it["NUMART"].'">'.$it["SOURCE"].'</textarea></div>';
  
@@ -2231,7 +2231,7 @@ if($it["SOURCE"])
 /*
 if($it->HEADPAGE) 
 {
- echo 'Заголовок второй страницы: ';
+ echo 'Р—Р°РіРѕР»РѕРІРѕРє РІС‚РѕСЂРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
  echo iconv('UTF-8', 'windows-1251', $it->HEADPAGE);
  echo '<br />';
  }
@@ -2272,7 +2272,7 @@ if($it->HEADPAGE)
 // return;
 
 
-//---------------- Данные подготовлены, теперь добавляем их в БД ----------------
+//---------------- Р”Р°РЅРЅС‹Рµ РїРѕРґРіРѕС‚РѕРІР»РµРЅС‹, С‚РµРїРµСЂСЊ РґРѕР±Р°РІР»СЏРµРј РёС… РІ Р‘Р” ----------------
 
 
 if($RealAddItem>0)
@@ -2284,9 +2284,9 @@ if($RealAddItem>0)
  if(CModule::IncludeModule("iblock"))
   {
 /*  
-     //----------- выбираем все информационные блоки типа "shop" ---------
+     //----------- РІС‹Р±РёСЂР°РµРј РІСЃРµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ Р±Р»РѕРєРё С‚РёРїР° "shop" ---------
      $iblocks = GetIBlockList($PARSERTYPEIB);
-     while($arIBlock = $iblocks->GetNext()) //цикл по всем блокам
+     while($arIBlock = $iblocks->GetNext()) //С†РёРєР» РїРѕ РІСЃРµРј Р±Р»РѕРєР°Рј
       {
         if($arIBlock["CODE"]==$PARSERCODEIB)  {  $PARSERIB=$arIBlock["ID"];    }
        }  
@@ -2318,32 +2318,32 @@ foreach($_POST as $key=>$vl)
 
    
 
-   //------------------ Создаем директорию для хранения изображений ----------------
+   //------------------ РЎРѕР·РґР°РµРј РґРёСЂРµРєС‚РѕСЂРёСЋ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёР№ ----------------
 
 
-     // удаление файлов из папки /images/temp
+     // СѓРґР°Р»РµРЅРёРµ С„Р°Р№Р»РѕРІ РёР· РїР°РїРєРё /images/temp
     PARS_remove_dir($_SERVER["DOCUMENT_ROOT"]."upload/parser/images/temp", false); $INFO['MESSAGE'][]=GetMessage("QTEAM_PARSER_PAPKA_S_IZOBRAJENIAM"); 
 
 
 
 
-//	 $path = '/opt/lampp/htdocs/'; // - путь до создаваемой папки.
+//	 $path = '/opt/lampp/htdocs/'; // - РїСѓС‚СЊ РґРѕ СЃРѕР·РґР°РІР°РµРјРѕР№ РїР°РїРєРё.
 
 
 
-//     $folder = 'my-documents';     // - имя создаваемой папки.
-//     $mode = '0777';               // - права на создаваемую папку.
-//     $recursive = true;            // - несуществующие папки будут воссозданы
+//     $folder = 'my-documents';     // - РёРјСЏ СЃРѕР·РґР°РІР°РµРјРѕР№ РїР°РїРєРё.
+//     $mode = '0777';               // - РїСЂР°РІР° РЅР° СЃРѕР·РґР°РІР°РµРјСѓСЋ РїР°РїРєСѓ.
+//     $recursive = true;            // - РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ РїР°РїРєРё Р±СѓРґСѓС‚ РІРѕСЃСЃРѕР·РґР°РЅС‹
 	 
 	 
 /*	 
     if(mkdir($_SERVER["DOCUMENT_ROOT"]."upload/parsimgtmp/", $mode, $recursive)==false)
       {
-	   $INFO['ERROR'][]='Не удалось создать директорию "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
+	   $INFO['ERROR'][]='РќРµ СѓРґР°Р»РѕСЃСЊ СЃРѕР·РґР°С‚СЊ РґРёСЂРµРєС‚РѕСЂРёСЋ "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
 	   }
      else
 	  {
-       $INFO['MESSAGE'][]='Директория создана "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
+       $INFO['MESSAGE'][]='Р”РёСЂРµРєС‚РѕСЂРёСЏ СЃРѕР·РґР°РЅР° "'.$_SERVER["DOCUMENT_ROOT"].'upload/parsimgtmp/"';
 	   }
 */	   
 
@@ -2402,7 +2402,7 @@ foreach($_POST as $key=>$vl)
   
   
   
-   //-------------------------------------------- Добавляем изображение АНОНСА  -------------------------------
+   //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёРµ РђРќРћРќРЎРђ  -------------------------------
    if( ($PARSER_IMGANONSADD)&&($_SESSION['PARSDATA'][$nurec[1]]['FPIMAGE']) )
     {
   	  preg_match("#[^/]*$#i", trim($_SESSION['PARSDATA'][$nurec[1]]['FPIMAGE']), $timatch);
@@ -2455,7 +2455,7 @@ foreach($_POST as $key=>$vl)
 
   
   
-   //-------------------------------------------- Добавляем изображение Детального описания  -------------------------------
+   //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёРµ Р”РµС‚Р°Р»СЊРЅРѕРіРѕ РѕРїРёСЃР°РЅРёСЏ  -------------------------------
 //   if( ($PARSER_IMGDETAILADD)&&($_SESSION['PARSDATA'][$nurec[1]]['IMAGE']) )
    if($_SESSION['PARSDATA'][$nurec[1]]['IMAGE']) 
     {
@@ -2522,14 +2522,14 @@ foreach($_POST as $key=>$vl)
 
 //    echo '#############'.$_SESSION['PARSDATA'][$nurec[1]]['DATE'].'<br />';
 
-    //-------------------------------------------- Добавляем Дату  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј Р”Р°С‚Сѓ  -------------------------------
     if($_SESSION['PARSDATA'][$nurec[1]]['DATE']) $TMPArr["DATE"]=PARS_GetDateFromStr($_SESSION['PARSDATA'][$nurec[1]]['DATE']); else $TMPArr["DATE"]=PARS_GetDateFromStr('');
 
-    //-------------------------------------------- Добавляем Название  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РќР°Р·РІР°РЅРёРµ  -------------------------------
     if(strlen(trim($_SESSION['PARSDATA'][$nurec[1]]['HEADPAGE']))>2) $TMPArr["HEAD"]=$_SESSION['PARSDATA'][$nurec[1]]['HEADPAGE']; else $TMPArr["HEAD"]=$_SESSION['PARSDATA'][$nurec[1]]['FPNAME'];
 
 
-    //-------------------------------------------- Добавляем АНОНС  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РђРќРћРќРЎ  -------------------------------
     if($_SESSION['PARSDATA'][$nurec[1]]['ANONS']) $TMPArr["TEXT"]=PARS_ClearTags($_SESSION['PARSDATA'][$nurec[1]]['ANONS']);
     if($_SESSION['PARSDATA'][$nurec[1]]['FPANONS'])
 	 { 
@@ -2554,11 +2554,11 @@ foreach($_POST as $key=>$vl)
 
 
 
-//---------------------------- Добавление сообщения ---------------------------
+//---------------------------- Р”РѕР±Р°РІР»РµРЅРёРµ СЃРѕРѕР±С‰РµРЅРёСЏ ---------------------------
 $rsarv=$TMPArr;
 
  
-       // Проверка существования записи 
+       // РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
        $arSelect = Array("ID", "NAME", "DATE_ACTIVE_FROM");
 //       $arFilter = Array("IBLOCK_ID"=>$IBLOCK_ID, "SECTION_ID"=>$_GET["tid"], "INCLUDE_SUBSECTIONS"=>"Y");
        $arFilter = Array("IBLOCK_ID"=>$PARSERIB, "SECTION_ID"=>$PARSSECTION);
@@ -2576,7 +2576,7 @@ $rsarv=$TMPArr;
 	          $INFO['ERROR'][]=GetMessage("QTEAM_PARSER_ZAPISQ_NAYDENA").$rsarv["HEAD"].')!  ID='.$ar["ID"].'  DATE='.$ar["DATE_ACTIVE_FROM"].'';  
 			  continue;
 		  } 
-	   else // теперь если не существует Проверка существования записи 
+	   else // С‚РµРїРµСЂСЊ РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
 	    {
 	        if(!$AddInDB) $INFO['MESSAGE'][]=GetMessage("QTEAM_PARSER_DOBAVLAEM_ZAPISQ").$rsarv["HEAD"].')!  ID='.$ar["ID"].'  DATE='.$ar["DATE_ACTIVE_FROM"].''; 
 		
@@ -2587,7 +2587,7 @@ $rsarv=$TMPArr;
 
 
 
-//--------- теги
+//--------- С‚РµРіРё
 
       $ftitle=str_replace('"', " ", $rsarv["HEAD"]);
       $tegi=str_replace('"', " ", $rsarv["HEAD"]);
@@ -2595,7 +2595,7 @@ $rsarv=$TMPArr;
 
       global $APPLICATION;
  
-//      $APPLICATION->SetTitle('В черном списке: '.$ftitle);
+//      $APPLICATION->SetTitle('Р’ С‡РµСЂРЅРѕРј СЃРїРёСЃРєРµ: '.$ftitle);
 
       $keywrd=PARS_RplTegHTML(str_replace("<br>", "", str_replace(chr(13).chr(10), "<br>", str_replace("&lt;br&gt;","<br>", $tegi))));
       $dscr=$keywrd;
@@ -2659,8 +2659,8 @@ $rsarv=$TMPArr;
         if(strlen($dscr)<=$i) $FlagEnd=true;
         $i++;
         }
-//      $APPLICATION->SetPageProperty("description", 'В черном списке: '.$resdesc);
-//end------ теги
+//      $APPLICATION->SetPageProperty("description", 'Р’ С‡РµСЂРЅРѕРј СЃРїРёСЃРєРµ: '.$resdesc);
+//end------ С‚РµРіРё
 
 
 
@@ -2688,10 +2688,10 @@ $rsarv=$TMPArr;
   
           $arLoadProductArray = Array(
 
-//           "MODIFIED_BY"    => $arUser["ID"],         // элемент изменен текущим пользователем
+//           "MODIFIED_BY"    => $arUser["ID"],         // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
 
            "TAGS"=> $newstags,
-           "IBLOCK_SECTION" => $PARSSECTION,          // элемент лежит в указанном разделе
+           "IBLOCK_SECTION" => $PARSSECTION,          // СЌР»РµРјРµРЅС‚ Р»РµР¶РёС‚ РІ СѓРєР°Р·Р°РЅРЅРѕРј СЂР°Р·РґРµР»Рµ
            "IBLOCK_ID"      => $PARSERIB,
 		   
            "PROPERTY_VALUES"=> $PROP,
@@ -2765,7 +2765,7 @@ $rsarv=$TMPArr;
 		
 		
 		
-		 } // end теперь если не существует Проверка существования записи 
+		 } // end С‚РµРїРµСЂСЊ РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РџСЂРѕРІРµСЂРєР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ Р·Р°РїРёСЃРё 
  
  
  
@@ -2789,21 +2789,21 @@ $rsarv=$TMPArr;
 
 
 
-  // $html - некий html-код некой страницы, \n - это переход на новую строку (верстальщики иногда это делают) 
-/// $html = 'Текст <img src="http://rs.mail.ru/b26972665.jpg" style="width:0;height:0;position:absolute;" alt=""/> и снова  конец <img src="//limg.imgsmail.ru/s/images/logo/logo.v3.png" width="195" height="46" class="logo__link__img logo__link__img_medium" alt=""/><img src="//limg.imgsmail.ru/s/images/logo/logo_wide.v3.png" width="211" height="53" class="logo__link__img logo__link__img_wide" alt=""/> qwerty dfgdfgdgf <img src="http://rs.mail.ru/b26986220.jpg" style="width:0;height:0;position:absolute;" alt=""/> dfgdfgdgdgdg';
+  // $html - РЅРµРєРёР№ html-РєРѕРґ РЅРµРєРѕР№ СЃС‚СЂР°РЅРёС†С‹, \n - СЌС‚Рѕ РїРµСЂРµС…РѕРґ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ (РІРµСЂСЃС‚Р°Р»СЊС‰РёРєРё РёРЅРѕРіРґР° СЌС‚Рѕ РґРµР»Р°СЋС‚) 
+/// $html = 'РўРµРєСЃС‚ <img src="http://rs.mail.ru/b26972665.jpg" style="width:0;height:0;position:absolute;" alt=""/> Рё СЃРЅРѕРІР°  РєРѕРЅРµС† <img src="//limg.imgsmail.ru/s/images/logo/logo.v3.png" width="195" height="46" class="logo__link__img logo__link__img_medium" alt=""/><img src="//limg.imgsmail.ru/s/images/logo/logo_wide.v3.png" width="211" height="53" class="logo__link__img logo__link__img_wide" alt=""/> qwerty dfgdfgdgf <img src="http://rs.mail.ru/b26986220.jpg" style="width:0;height:0;position:absolute;" alt=""/> dfgdfgdgdgdg';
 
    $TMPArr["EXTTEXT"]=$_SESSION['PARSDATA'][$nurec[1]]['DETAIL'];
   
    $html =$_SESSION['PARSDATA'][$nurec[1]]['DETAIL'];
 
-  // Вызываем функцию, которая все совпадения помещает в массив $matches 
+  // Р’С‹Р·С‹РІР°РµРј С„СѓРЅРєС†РёСЋ, РєРѕС‚РѕСЂР°СЏ РІСЃРµ СЃРѕРІРїР°РґРµРЅРёСЏ РїРѕРјРµС‰Р°РµС‚ РІ РјР°СЃСЃРёРІ $matches 
 //  preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc][^=]*=[ '\"\s]*([^ \"'>\s#]+)[^>]*>/", $html, $matches);
 
   preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc][^=]*=[ '\"]*([^\"'>#]+)[^>]*>/", $html, $matches);
 
 //  preg_match_all("/<[Ii][Mm][Gg][\s]{1}[^>]*[Ss][Rr][Cc]=([^>]+\s#)*>/", $html, $matches);
-  $urls = $matches[1]; // Берём то место, где сама ссылка (благодаря группирующим скобкам в регулярном выражении)
-  // Выводим все ссылки 
+  $urls = $matches[1]; // Р‘РµСЂС‘Рј С‚Рѕ РјРµСЃС‚Рѕ, РіРґРµ СЃР°РјР° СЃСЃС‹Р»РєР° (Р±Р»Р°РіРѕРґР°СЂСЏ РіСЂСѓРїРїРёСЂСѓСЋС‰РёРј СЃРєРѕР±РєР°Рј РІ СЂРµРіСѓР»СЏСЂРЅРѕРј РІС‹СЂР°Р¶РµРЅРёРё)
+  // Р’С‹РІРѕРґРёРј РІСЃРµ СЃСЃС‹Р»РєРё 
   $IMAGEPARS=array();
   for ($i = 0; $i < count($urls); $i++)
    {
@@ -2816,7 +2816,7 @@ $rsarv=$TMPArr;
 	
 	
 	
-// echo 'Ссылка на изображение к ссылки первой страницы: ';
+// echo 'РЎСЃС‹Р»РєР° РЅР° РёР·РѕР±СЂР°Р¶РµРЅРёРµ Рє СЃСЃС‹Р»РєРё РїРµСЂРІРѕР№ СЃС‚СЂР°РЅРёС†С‹: ';
 	if((substr($turl,0,4)=='http')||(substr($turl,0,2)=='//')) 
 	 {  
 //echo'1. '.$turl.'<br>';
@@ -2901,16 +2901,16 @@ $rsarv=$TMPArr;
 
 
 
-      //-------------------------------------------- Изменяем ссылки в Детальном описании  -------------------------------
+      //-------------------------------------------- РР·РјРµРЅСЏРµРј СЃСЃС‹Р»РєРё РІ Р”РµС‚Р°Р»СЊРЅРѕРј РѕРїРёСЃР°РЅРёРё  -------------------------------
 
 	  $TMPArr["EXTTEXT"]=str_replace($IMAGEPARS[$key]["SOURCE"], $IMAGEPARS[$key]["UPLOAD"], $TMPArr["EXTTEXT"]);
 	  } // foreach($IMAGEPARS as $key=>$vl)
 
 
 
-    //-------------------------------------------- Добавляем Источник в Детальное описание  -------------------------------
+    //-------------------------------------------- Р”РѕР±Р°РІР»СЏРµРј РСЃС‚РѕС‡РЅРёРє РІ Р”РµС‚Р°Р»СЊРЅРѕРµ РѕРїРёСЃР°РЅРёРµ  -------------------------------
 
-//	if($PARSER_SOURCEADD) $TMPArr["EXTTEXT"].='<p><br /><em>Источник: '.$_SESSION['PARSDATA'][$nurec[1]]['SOURCE'].'</em></p>';
+//	if($PARSER_SOURCEADD) $TMPArr["EXTTEXT"].='<p><br /><em>РСЃС‚РѕС‡РЅРёРє: '.$_SESSION['PARSDATA'][$nurec[1]]['SOURCE'].'</em></p>';
 	if($PARSER_SOURCEADD) $arLoadProductArray["PROPERTY_VALUES"][$PARSER_SOURCEADD]=trim($_SESSION['PARSDATA'][$nurec[1]]['SOURCE']);
 
 
@@ -3000,7 +3000,7 @@ $rsarv=$TMPArr;
    $cnti=0; 
    foreach($arResult["MESSAGE"] as $infvl) 
     {
-     $cnti++; if($cnti==1) echo'<p>&nbsp;<br /><strong>Сообщения:</strong></p>';
+     $cnti++; if($cnti==1) echo'<p>&nbsp;<br /><strong>РЎРѕРѕР±С‰РµРЅРёСЏ:</strong></p>';
      echo'<p>'.$infvl.'</p>'; 
      }
 
@@ -3008,12 +3008,12 @@ $rsarv=$TMPArr;
    $cnti=0; 
    foreach($arResult["ERROR"] as $infvl) 
     {
-     $cnti++; if($cnti==1) echo'<p>&nbsp;<br /><strong>Ошибки:</strong></p>';
+     $cnti++; if($cnti==1) echo'<p>&nbsp;<br /><strong>РћС€РёР±РєРё:</strong></p>';
      echo'<p style="color:#ff0000;">'.$infvl.'</p>'; 
      }
 
 
-   echo'<p>&nbsp;<br /><a href="?">&lt;&lt; Вернуться</a></p>';  
+   echo'<p>&nbsp;<br /><a href="?">&lt;&lt; Р’РµСЂРЅСѓС‚СЊСЃСЏ</a></p>';  
   */
   
   

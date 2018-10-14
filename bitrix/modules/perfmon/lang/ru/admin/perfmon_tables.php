@@ -1,13 +1,13 @@
 <?
-$MESS["PERFMON_TABLES_TITLE"] = "Òàáëèöû â áàçå äàííûõ";
-$MESS["PERFMON_TABLES_RECENTLY_BROWSED"] = "Ïîñëåäíèå ïðîñìîòðåííûå òàáëèöû";
-$MESS["PERFMON_TABLES_ALL"] = "Òàáëèöû áàçû äàííûõ";
-$MESS["PERFMON_TABLES_NAME"] = "Èìÿ òàáëèöû";
-$MESS["PERFMON_TABLES_CONVERT_ERROR"] = "Îøèáêà ïðåîáðàçîâàíèÿ òàáëèöû.";
-$MESS["PERFMON_TABLES_ENGINE_TYPE"] = "Òèï";
-$MESS["PERFMON_TABLES_ACTION_CONVERT"] = "Ïðåîáðàçîâàòü â #ENGINE_TYPE#";
-$MESS["PERFMON_TABLES_ACTION_OPTIMIZE"] = "Îïòèìèçèðîâàòü";
-$MESS["PERFMON_TABLES_NUM_ROWS"] = "Ñòðîê";
-$MESS["PERFMON_TABLES_BYTES"] = "Ðàçìåð";
-$MESS["PERFMON_TABLES_QUICK_SEARCH"] = "Ôèëüòð ïî èìåíè òàáëèöû";
+$MESS["PERFMON_TABLES_TITLE"] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð² Ð±Ð°Ð·Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ…";
+$MESS["PERFMON_TABLES_RECENTLY_BROWSED"] = "ÐŸÐ¾ÑÐ»ÐµÐ´Ð½Ð¸Ðµ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÐ½Ð½Ñ‹Ðµ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹";
+$MESS["PERFMON_TABLES_ALL"] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð±Ð°Ð·Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ…";
+$MESS["PERFMON_TABLES_NAME"] = "Ð˜Ð¼Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹";
+$MESS["PERFMON_TABLES_CONVERT_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ñ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹.";
+$MESS["PERFMON_TABLES_ENGINE_TYPE"] = "Ð¢Ð¸Ð¿";
+$MESS["PERFMON_TABLES_ACTION_CONVERT"] = "ÐŸÑ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ð² #ENGINE_TYPE#";
+$MESS["PERFMON_TABLES_ACTION_OPTIMIZE"] = "ÐžÐ¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+$MESS["PERFMON_TABLES_NUM_ROWS"] = "Ð¡Ñ‚Ñ€Ð¾Ðº";
+$MESS["PERFMON_TABLES_BYTES"] = "Ð Ð°Ð·Ð¼ÐµÑ€";
+$MESS["PERFMON_TABLES_QUICK_SEARCH"] = "Ð¤Ð¸Ð»ÑŒÑ‚Ñ€ Ð¿Ð¾ Ð¸Ð¼ÐµÐ½Ð¸ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñ‹";
 ?>

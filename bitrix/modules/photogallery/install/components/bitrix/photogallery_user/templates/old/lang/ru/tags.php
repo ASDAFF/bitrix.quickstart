@@ -1,4 +1,4 @@
 <?
-$MESS ['P_TITLE'] = "Òåãè";
-$MESS ["P_TAGS_CLOUD"] = "Îáëàêî òåãîâ";
+$MESS ['P_TITLE'] = "Ð¢ÐµÐ³Ð¸";
+$MESS ["P_TAGS_CLOUD"] = "ÐžÐ±Ð»Ð°ÐºÐ¾ Ñ‚ÐµÐ³Ð¾Ð²";
 ?>

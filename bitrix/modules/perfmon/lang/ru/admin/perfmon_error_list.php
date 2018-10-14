@@ -1,16 +1,16 @@
 <?
-$MESS ['PERFMON_ERR_TITLE'] = "Ìîíèòîð ïðîèçâîäèòåëüíîñòè: æóðíàë îøèáîê PHP";
-$MESS ['PERFMON_ERR_PAGE'] = "Îøèáêè";
+$MESS ['PERFMON_ERR_TITLE'] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸: Ð¶ÑƒÑ€Ð½Ð°Ð» Ð¾ÑˆÐ¸Ð±Ð¾Ðº PHP";
+$MESS ['PERFMON_ERR_PAGE'] = "ÐžÑˆÐ¸Ð±ÐºÐ¸";
 $MESS ['PERFMON_ERR_ID'] = "ID";
-$MESS ['PERFMON_ERR_HIT_ID'] = "Õèò";
-$MESS ['PERFMON_ERR_NO'] = "Êëàññ îøèáêè";
-$MESS ['PERFMON_ERR_FILE'] = "Ôàéë";
-$MESS ['PERFMON_ERR_LINE'] = "Ñòðîêà";
-$MESS ['PERFMON_ERR_TEXT'] = "Òåêñò";
-$MESS ['PERFMON_ERR_FIND'] = "Íàéòè";
-$MESS ['PERFMON_ERR_COUNT'] = "Êîëè÷åñòâî";
-$MESS ['PERFMON_ERR_GROUP'] = "Ãðóïïèðîâêà";
-$MESS ['PERFMON_ERR_GROUP_ON'] = "Ãðóïïèðîâêà âêëþ÷åíà";
-$MESS ['PERFMON_ERR_GROUP_OFF'] = "Ãðóïïèðîâêà âûêëþ÷åíà";
-$MESS ['PERFMON_ERR_ACTION_DELETE'] = "Óäàëèòü";
+$MESS ['PERFMON_ERR_HIT_ID'] = "Ð¥Ð¸Ñ‚";
+$MESS ['PERFMON_ERR_NO'] = "ÐšÐ»Ð°ÑÑ Ð¾ÑˆÐ¸Ð±ÐºÐ¸";
+$MESS ['PERFMON_ERR_FILE'] = "Ð¤Ð°Ð¹Ð»";
+$MESS ['PERFMON_ERR_LINE'] = "Ð¡Ñ‚Ñ€Ð¾ÐºÐ°";
+$MESS ['PERFMON_ERR_TEXT'] = "Ð¢ÐµÐºÑÑ‚";
+$MESS ['PERFMON_ERR_FIND'] = "ÐÐ°Ð¹Ñ‚Ð¸";
+$MESS ['PERFMON_ERR_COUNT'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+$MESS ['PERFMON_ERR_GROUP'] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS ['PERFMON_ERR_GROUP_ON'] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°";
+$MESS ['PERFMON_ERR_GROUP_OFF'] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°";
+$MESS ['PERFMON_ERR_ACTION_DELETE'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
 ?>

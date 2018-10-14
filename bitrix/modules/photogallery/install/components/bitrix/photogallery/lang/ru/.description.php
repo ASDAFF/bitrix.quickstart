@@ -1,5 +1,5 @@
 <?
-$MESS ['IBLOCK_PHOTO_NAME'] = "Ôîòîãàëåðåÿ 2.0";
-$MESS ['IBLOCK_PHOTO_DESCRIPTION'] = "Ïîëíàÿ ôîòîãàëåðåÿ";
-$MESS ['T_IBLOCK_DESC_PHOTO'] = "Ôîòîãàëåðåÿ 2.0";
+$MESS ['IBLOCK_PHOTO_NAME'] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ 2.0";
+$MESS ['IBLOCK_PHOTO_DESCRIPTION'] = "ÐŸÐ¾Ð»Ð½Ð°Ñ Ñ„Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ";
+$MESS ['T_IBLOCK_DESC_PHOTO'] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ 2.0";
 ?>

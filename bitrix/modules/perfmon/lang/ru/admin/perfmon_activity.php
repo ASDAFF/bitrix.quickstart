@@ -1,17 +1,17 @@
 <?
-$MESS['PERFMON_ACTIVITY_TITLE'] = "Óïðàâëåíèå àêòèâíîñòüþ";
-$MESS['PERFMON_ACTIVE_Y'] = "Ìîíèòîð âêëþ÷åí è âûïîëíÿåò ñáîð äàííûõ.";
-$MESS['PERFMON_ACTIVE_N'] = "Ìîíèòîð îòêëþ÷åí.";
-$MESS['PERFMON_ACT_ACTIVE_TO'] = "Äî îêîí÷àíèÿ àêòèâíîñòè îñòàëîñü";
-$MESS['PERFMON_ACT_MINUTES'] = "#HOURS#:#MINUTES#:#SECONDS# (÷àñîâ:ìèíóò:ñåêóíä)";
-$MESS['PERFMON_ACT_SET_IN_ACTIVE'] = "Îòêëþ÷èòü ìîíèòîð";
-$MESS['PERFMON_ACT_SET_ACTIVE'] = "Âêëþ÷èòü ìîíèòîð";
-$MESS['PERFMON_ACT_INTERVAL_NO'] = "íåò";
-$MESS['PERFMON_ACT_INTERVAL_60_SEC'] = "íà 1 ìèíóòó";
-$MESS['PERFMON_ACT_INTERVAL_300_SEC'] = "íà 5 ìèíóò";
-$MESS['PERFMON_ACT_INTERVAL_600_SEC'] = "íà 10 ìèíóò";
-$MESS['PERFMON_ACT_INTERVAL_1800_SEC'] = "íà 30 ìèíóò";
-$MESS['PERFMON_ACT_INTERVAL_3600_SEC'] = "íà 1 ÷àñ";
-$MESS['PERFMON_ACTION_BUTTON_OFF'] = "Îòêëþ÷èòü";
-$MESS['PERFMON_ACTION_BUTTON_ON'] = "Âêëþ÷èòü";
+$MESS['PERFMON_ACTIVITY_TITLE'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒÑŽ";
+$MESS['PERFMON_ACTIVE_Y'] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½ Ð¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÑ‚ ÑÐ±Ð¾Ñ€ Ð´Ð°Ð½Ð½Ñ‹Ñ….";
+$MESS['PERFMON_ACTIVE_N'] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð¾Ñ‚ÐºÐ»ÑŽÑ‡ÐµÐ½.";
+$MESS['PERFMON_ACT_ACTIVE_TO'] = "Ð”Ð¾ Ð¾ÐºÐ¾Ð½Ñ‡Ð°Ð½Ð¸Ñ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚Ð¸ Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ";
+$MESS['PERFMON_ACT_MINUTES'] = "#HOURS#:#MINUTES#:#SECONDS# (Ñ‡Ð°ÑÐ¾Ð²:Ð¼Ð¸Ð½ÑƒÑ‚:ÑÐµÐºÑƒÐ½Ð´)";
+$MESS['PERFMON_ACT_SET_IN_ACTIVE'] = "ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¼Ð¾Ð½Ð¸Ñ‚Ð¾Ñ€";
+$MESS['PERFMON_ACT_SET_ACTIVE'] = "Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¼Ð¾Ð½Ð¸Ñ‚Ð¾Ñ€";
+$MESS['PERFMON_ACT_INTERVAL_NO'] = "Ð½ÐµÑ‚";
+$MESS['PERFMON_ACT_INTERVAL_60_SEC'] = "Ð½Ð° 1 Ð¼Ð¸Ð½ÑƒÑ‚Ñƒ";
+$MESS['PERFMON_ACT_INTERVAL_300_SEC'] = "Ð½Ð° 5 Ð¼Ð¸Ð½ÑƒÑ‚";
+$MESS['PERFMON_ACT_INTERVAL_600_SEC'] = "Ð½Ð° 10 Ð¼Ð¸Ð½ÑƒÑ‚";
+$MESS['PERFMON_ACT_INTERVAL_1800_SEC'] = "Ð½Ð° 30 Ð¼Ð¸Ð½ÑƒÑ‚";
+$MESS['PERFMON_ACT_INTERVAL_3600_SEC'] = "Ð½Ð° 1 Ñ‡Ð°Ñ";
+$MESS['PERFMON_ACTION_BUTTON_OFF'] = "ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ";
+$MESS['PERFMON_ACTION_BUTTON_ON'] = "Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ";
 ?>

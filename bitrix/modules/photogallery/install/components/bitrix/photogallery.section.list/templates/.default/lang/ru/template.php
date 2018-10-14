@@ -1,18 +1,18 @@
 <?
-$MESS["P_SECT_PHOTOS"] = "ôîòî";
-$MESS["P_SECTION_EDIT"] = "Èçìåíèòü";
-$MESS["P_SECTION_EDIT_TITLE"] = "Èçìåíèòü àëüáîì";
-$MESS["P_SECTION_DELETE"] = "Óäàëèòü";
-$MESS["P_SECTION_DELETE_TITLE"] = "Óäàëèòü àëüáîì";
-$MESS["P_SECTION_DELETE_ASK"] = "Âû õîòèòå óäàëèòü àëüáîì áåç âîçìîæíîñòè âîññòàíîâëåíèÿ?";
-$MESS["P_EDIT_ICON"] = "Èçìåíèòü îáëîæêó";
-$MESS["P_EDIT_ICON_TITLE"] = "Èçìåíèòü îáëîæêó àëüáîìà";
-$MESS["P_ALBUM_IS_NOT_ACTIVE"] = "Àëüáîì ñêðûò.";
-$MESS["P_ALBUM_IS_NOT_ACTIVE_AND_PASSWORDED"] = "Ñêðûòûé àëüáîì çàêðûò ïàðîëåì.";
-$MESS["P_ALBUM_IS_PASSWORDED"] = "Àëüáîì çàêðûò ïàðîëåì.";
-$MESS["P_ALBUM_IS_PASSWORDED_SHORT"] = "çàêðûòûé àëüáîì";
-$MESS["P_EMPTY_DATA"] = "Ñïèñîê àëüáîìîâ ïóñò.";
-$MESS["P_OTHER_PHOTOS"] = "Âñå ôîòîãðàôèè àëüáîìà";
-$MESS["P_OTHER_PHOTOS_TITLE"] = "Ïåðåéòè â àëüáîì äëÿ ïðîñìîòðà îñòàëüíûõ ôîòîãðàôèé";
-$MESS["P_NO_PHOTOS"] = "íåò ôîòîãðàôèé";
+$MESS["P_SECT_PHOTOS"] = "Ñ„Ð¾Ñ‚Ð¾";
+$MESS["P_SECTION_EDIT"] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+$MESS["P_SECTION_EDIT_TITLE"] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð°Ð»ÑŒÐ±Ð¾Ð¼";
+$MESS["P_SECTION_DELETE"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS["P_SECTION_DELETE_TITLE"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð°Ð»ÑŒÐ±Ð¾Ð¼";
+$MESS["P_SECTION_DELETE_ASK"] = "Ð’Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ð°Ð»ÑŒÐ±Ð¾Ð¼ Ð±ÐµÐ· Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ?";
+$MESS["P_EDIT_ICON"] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¾Ð±Ð»Ð¾Ð¶ÐºÑƒ";
+$MESS["P_EDIT_ICON_TITLE"] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¾Ð±Ð»Ð¾Ð¶ÐºÑƒ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð°";
+$MESS["P_ALBUM_IS_NOT_ACTIVE"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ ÑÐºÑ€Ñ‹Ñ‚.";
+$MESS["P_ALBUM_IS_NOT_ACTIVE_AND_PASSWORDED"] = "Ð¡ÐºÑ€Ñ‹Ñ‚Ñ‹Ð¹ Ð°Ð»ÑŒÐ±Ð¾Ð¼ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ Ð¿Ð°Ñ€Ð¾Ð»ÐµÐ¼.";
+$MESS["P_ALBUM_IS_PASSWORDED"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ Ð¿Ð°Ñ€Ð¾Ð»ÐµÐ¼.";
+$MESS["P_ALBUM_IS_PASSWORDED_SHORT"] = "Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ñ‹Ð¹ Ð°Ð»ÑŒÐ±Ð¾Ð¼";
+$MESS["P_EMPTY_DATA"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð¾Ð² Ð¿ÑƒÑÑ‚.";
+$MESS["P_OTHER_PHOTOS"] = "Ð’ÑÐµ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð°";
+$MESS["P_OTHER_PHOTOS_TITLE"] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ð² Ð°Ð»ÑŒÐ±Ð¾Ð¼ Ð´Ð»Ñ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹";
+$MESS["P_NO_PHOTOS"] = "Ð½ÐµÑ‚ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹";
 ?>

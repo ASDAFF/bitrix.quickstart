@@ -1,14 +1,14 @@
 <?
-$MESS ['P_CREATE_NEW_IBLOCK'] = "Ñîçäàòü èíôîðìàöèîííûé áëîê";
-$MESS ['P_CREATE_NEW_IBLOCK_NAME'] = "Íàçâàíèå èíôîðìàöèîííîãî áëîêà";
-$MESS ['P_CREATE_NEW_IBLOCK_TYPE'] = "Òèï èíôîðìàöèîííîãî áëîêà";
-$MESS ['P_SELECT'] = "Âûáðàòü";
-$MESS ['P_CREATE'] = "Ñîçäàòü";
-$MESS ['P_ID'] = "Èäåíòèôèêàòîð";
-$MESS ['P_CREATE_NEW_BLOG'] = "Ñîçäàòü áëîã";
-$MESS ['P_NAME'] = "Íàçâàíèå";
-$MESS ['P_DESCRIPTION'] = "Îïèñàíèå";
-$MESS ['P_NAME_LATIN'] = "Íàçâàíèå ëàòèíñêèìè áóêâàìè";
-$MESS ['P_GROUP_BLOG'] = "Ãðóïïà áëîãîâ";
-$MESS ['P_INSTALL'] = "Óñòàíîâèòü";
+$MESS ['P_CREATE_NEW_IBLOCK'] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº";
+$MESS ['P_CREATE_NEW_IBLOCK_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['P_CREATE_NEW_IBLOCK_TYPE'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['P_SELECT'] = "Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ";
+$MESS ['P_CREATE'] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ";
+$MESS ['P_ID'] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€";
+$MESS ['P_CREATE_NEW_BLOG'] = "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð±Ð»Ð¾Ð³";
+$MESS ['P_NAME'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS ['P_DESCRIPTION'] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS ['P_NAME_LATIN'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð»Ð°Ñ‚Ð¸Ð½ÑÐºÐ¸Ð¼Ð¸ Ð±ÑƒÐºÐ²Ð°Ð¼Ð¸";
+$MESS ['P_GROUP_BLOG'] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ð±Ð»Ð¾Ð³Ð¾Ð²";
+$MESS ['P_INSTALL'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ";
 ?>

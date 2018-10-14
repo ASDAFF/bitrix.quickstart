@@ -1,8 +1,8 @@
 <?
-$MESS ['IBLOCK_MODULE_NOT_INSTALLED'] = "Ìîäóëü èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí.";
-$MESS ['P_MODULE_IS_NOT_INSTALLED'] = "Ìîäóëü Ôîòîãàëåðåÿ 2.0 íå óñòàíîâëåí.";
-$MESS ['P_GALLERIES'] = "Ãàëåðåè";
-$MESS ['P_GALLERIES_BY_USER'] = "Ãàëåðåè ïîëüçîâàòåëÿ ";
-$MESS ['P_USER_NOT_FOUND'] = "Ïîëüçîâàòåëü íå íàéäåí.";
-$MESS ['P_DENIED_ACCESS'] = "Äîñòóï çàïðåùåí.";
+$MESS ['IBLOCK_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
+$MESS ['P_MODULE_IS_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ 2.0 Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
+$MESS ['P_GALLERIES'] = "Ð“Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['P_GALLERIES_BY_USER'] = "Ð“Ð°Ð»ÐµÑ€ÐµÐ¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ";
+$MESS ['P_USER_NOT_FOUND'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½.";
+$MESS ['P_DENIED_ACCESS'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½.";
 ?>

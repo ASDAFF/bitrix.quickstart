@@ -1,3 +1,3 @@
 <?
-$MESS ['P_STANDARD'] = "Îáû÷íûé";
+$MESS ['P_STANDARD'] = "ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹";
 ?>

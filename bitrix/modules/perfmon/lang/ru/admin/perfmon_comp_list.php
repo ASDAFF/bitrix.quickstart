@@ -1,18 +1,18 @@
 <?
 $MESS["PERFMON_COMP_ID"] = "ID";
-$MESS["PERFMON_COMP_HIT_ID"] = "Õèò";
+$MESS["PERFMON_COMP_HIT_ID"] = "Ð¥Ð¸Ñ‚";
 $MESS["PERFMON_COMP_NN"] = "#";
-$MESS["PERFMON_COMP_COMPONENT_NAME"] = "Êîìïîíåíò";
-$MESS["PERFMON_COMP_COMPONENT_TIME"] = "Âðåìÿ";
-$MESS["PERFMON_COMP_QUERIES"] = "Çàïðîñû";
-$MESS["PERFMON_COMP_QUERIES_TIME"] = "Çàïðîñû-âðåìÿ";
-$MESS["PERFMON_COMP_PAGE"] = "Êîìïîíåíòû";
-$MESS["PERFMON_COMP_TITLE"] = "Ìîíèòîð ïðîèçâîäèòåëüíîñòè: êîìïîíåíòû";
-$MESS["PERFMON_COMP_FIND"] = "Íàéòè";
-$MESS["PERFMON_COMP_CACHE_TYPE"] = "Êåøèðîâàíèå";
-$MESS["PERFMON_COMP_CACHE_TYPE_YES"] = "Äà";
-$MESS["PERFMON_COMP_CACHE_TYPE_NO"] = "Íåò";
-$MESS["PERFMON_COMP_CACHE_TYPE_AUTO"] = "Àâòî";
-$MESS["PERFMON_COMP_CACHE_SIZE"] = "Êåø";
-$MESS["PERFMON_COMP_HIT_SCRIPT_NAME"] = "Ñòðàíèöà";
+$MESS["PERFMON_COMP_COMPONENT_NAME"] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚";
+$MESS["PERFMON_COMP_COMPONENT_TIME"] = "Ð’Ñ€ÐµÐ¼Ñ";
+$MESS["PERFMON_COMP_QUERIES"] = "Ð—Ð°Ð¿Ñ€Ð¾ÑÑ‹";
+$MESS["PERFMON_COMP_QUERIES_TIME"] = "Ð—Ð°Ð¿Ñ€Ð¾ÑÑ‹-Ð²Ñ€ÐµÐ¼Ñ";
+$MESS["PERFMON_COMP_PAGE"] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹";
+$MESS["PERFMON_COMP_TITLE"] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸: ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹";
+$MESS["PERFMON_COMP_FIND"] = "ÐÐ°Ð¹Ñ‚Ð¸";
+$MESS["PERFMON_COMP_CACHE_TYPE"] = "ÐšÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["PERFMON_COMP_CACHE_TYPE_YES"] = "Ð”Ð°";
+$MESS["PERFMON_COMP_CACHE_TYPE_NO"] = "ÐÐµÑ‚";
+$MESS["PERFMON_COMP_CACHE_TYPE_AUTO"] = "ÐÐ²Ñ‚Ð¾";
+$MESS["PERFMON_COMP_CACHE_SIZE"] = "ÐšÐµÑˆ";
+$MESS["PERFMON_COMP_HIT_SCRIPT_NAME"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°";
 ?>

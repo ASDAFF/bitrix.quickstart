@@ -1,11 +1,11 @@
 <?
-$MESS ['P_PHOTO_SORT_ID'] = "Íîâûå";
-$MESS ['P_PHOTO_SORT_ID_TITLE'] = "ïî äàòå äîáàâëåíèÿ";
-$MESS ['P_PHOTO_SORT_SHOWS'] = "Ïðîñìàòðèâàåìûå";
-$MESS ['P_PHOTO_SORT_SHOWS_TITLE'] = "ïî êîëè÷åñòâó ïðîñìîòðîâ";
-$MESS ['P_PHOTO_SORT_RATING'] = "Ëó÷øèå";
-$MESS ['P_PHOTO_SORT_RATING_TITLE'] = "ïî êîëè÷åñòâó ãîëîñîâ";
-$MESS ['P_PHOTO_SORT_COMMENTS'] = "Êîììåíòèðóåìûå";
-$MESS ['P_PHOTO_SORT_COMMENTS_TITLE'] = "ïî êîëè÷åñòâó êîììåíòàðèåâ";
-$MESS ['P_PHOTO'] = "Ôîòîãàëåðåÿ";
+$MESS ['P_PHOTO_SORT_ID'] = "ÐÐ¾Ð²Ñ‹Ðµ";
+$MESS ['P_PHOTO_SORT_ID_TITLE'] = "Ð¿Ð¾ Ð´Ð°Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ";
+$MESS ['P_PHOTO_SORT_SHOWS'] = "ÐŸÑ€Ð¾ÑÐ¼Ð°Ñ‚Ñ€Ð¸Ð²Ð°ÐµÐ¼Ñ‹Ðµ";
+$MESS ['P_PHOTO_SORT_SHOWS_TITLE'] = "Ð¿Ð¾ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ñƒ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð¾Ð²";
+$MESS ['P_PHOTO_SORT_RATING'] = "Ð›ÑƒÑ‡ÑˆÐ¸Ðµ";
+$MESS ['P_PHOTO_SORT_RATING_TITLE'] = "Ð¿Ð¾ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ñƒ Ð³Ð¾Ð»Ð¾ÑÐ¾Ð²";
+$MESS ['P_PHOTO_SORT_COMMENTS'] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð¸Ñ€ÑƒÐµÐ¼Ñ‹Ðµ";
+$MESS ['P_PHOTO_SORT_COMMENTS_TITLE'] = "Ð¿Ð¾ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ñƒ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²";
+$MESS ['P_PHOTO'] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ";
 ?>

@@ -1,14 +1,14 @@
 <?
-$MESS ['P_SELECT_ALL'] = "Âûáðàòü âñå";
-$MESS ['P_DELETE_SELECTED'] = "Óäàëèòü";
-$MESS ['P_MOVE_SELECTED'] = "Ïåðåíåñòè";
-$MESS ['P_MOVE_SELECTED_IN'] = "Ïåðåíåñòè â ";
-$MESS ['P_DELETE_CONFIRM'] = "Âû äåéñòâèòåëüíî õîòèòå óäàëèòü ôîòîãðàôèè áåç âîçìîæíîñòè âîññòàíîâëåíèÿ?";
-$MESS ['P_PHOTO_NOT_APPROVED'] = " [ñêðûòî]";
-$MESS ['P_DEFAULT_TEMPLATE'] = "îáû÷íûé";
-$MESS ['P_DEFAULT_TEMPLATE_TITLE'] = "Ýñêèçû ôîòîãðàôèé, ïðåäñòàâëåííûå áåç èçìåíåíèé";
-$MESS ['P_SQUARE_TEMPLATE'] = "êâàäðàòíûé";
-$MESS ['P_SQUARE_TEMPLATE_TITLE'] = "Êâàäðàòíûå ýñêèçû ôîòîãðàôèé";
-$MESS ['P_RECTANGLE_TEMPLATE'] = "ïðÿìîóãîëüíûé";
-$MESS ['P_RECTANGLE_TEMPLATE_TITLE'] = "Ýñêèçû ôîòîãðàôèé, ïîäîãíàííûå ïî âûñîòå";
+$MESS ['P_SELECT_ALL'] = "Ð’Ñ‹Ð±Ñ€Ð°Ñ‚ÑŒ Ð²ÑÐµ";
+$MESS ['P_DELETE_SELECTED'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+$MESS ['P_MOVE_SELECTED'] = "ÐŸÐµÑ€ÐµÐ½ÐµÑÑ‚Ð¸";
+$MESS ['P_MOVE_SELECTED_IN'] = "ÐŸÐµÑ€ÐµÐ½ÐµÑÑ‚Ð¸ Ð² ";
+$MESS ['P_DELETE_CONFIRM'] = "Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð±ÐµÐ· Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ?";
+$MESS ['P_PHOTO_NOT_APPROVED'] = " [ÑÐºÑ€Ñ‹Ñ‚Ð¾]";
+$MESS ['P_DEFAULT_TEMPLATE'] = "Ð¾Ð±Ñ‹Ñ‡Ð½Ñ‹Ð¹";
+$MESS ['P_DEFAULT_TEMPLATE_TITLE'] = "Ð­ÑÐºÐ¸Ð·Ñ‹ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹, Ð¿Ñ€ÐµÐ´ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ Ð±ÐµÐ· Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹";
+$MESS ['P_SQUARE_TEMPLATE'] = "ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð½Ñ‹Ð¹";
+$MESS ['P_SQUARE_TEMPLATE_TITLE'] = "ÐšÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð½Ñ‹Ðµ ÑÑÐºÐ¸Ð·Ñ‹ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹";
+$MESS ['P_RECTANGLE_TEMPLATE'] = "Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ñ‹Ð¹";
+$MESS ['P_RECTANGLE_TEMPLATE_TITLE'] = "Ð­ÑÐºÐ¸Ð·Ñ‹ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹, Ð¿Ð¾Ð´Ð¾Ð³Ð½Ð°Ð½Ð½Ñ‹Ðµ Ð¿Ð¾ Ð²Ñ‹ÑÐ¾Ñ‚Ðµ";
 ?>

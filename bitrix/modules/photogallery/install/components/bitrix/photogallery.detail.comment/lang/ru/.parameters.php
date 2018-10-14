@@ -1,18 +1,18 @@
 <?
-$MESS ['IBLOCK_TYPE'] = "Òèï èíôîáëîêà";
-$MESS ['IBLOCK_IBLOCK'] = "Èíôîáëîê";
-$MESS ['IBLOCK_DETAIL_URL'] = "Ñòðàíèöà äåòàëüíîãî ïðîñìîòðà";
-$MESS ['IBLOCK_ELEMENT_ID'] = "ID ýëåìåíòà";
-$MESS ['P_COMMENTS_TYPE'] = "Êîìïîíåíò êîììåíòàðèåâ";
-$MESS ['P_COMMENTS_TYPE_BLOG'] = "Áëîãè";
-$MESS ['P_COMMENTS_TYPE_FORUM'] = "Ôîðóì";
-$MESS ['F_COMMENTS_COUNT'] = "Êîëè÷åñòâî êîììåíòàðèåâ íà ñòðàíèöå";
-$MESS ['F_BLOG_URL'] = "Áëîã äëÿ êîììåíòàðèåâ";
-$MESS ['P_PATH_TO_USER'] = "Ïóòü ê ïðîôèëþ ïîëüçîâàòåëÿ";
-$MESS ['P_PATH_TO_BLOG'] = "Ïóòü ê áëîãó";
-$MESS ['F_PATH_TO_SMILE'] = "Ïóòü îòíîñèòåëüíî êîðíÿ ñàéòà ê ïàïêå ñî ñìàéëàìè";
-$MESS ['F_FORUM_ID'] = "ID ôîðóìà äëÿ îòçûâîâ";
-$MESS ['F_USE_CAPTCHA'] = "Èñïîëüçîâàòü CAPTCHA";
-$MESS ['F_READ_TEMPLATE'] = "Ñòðàíèöà ÷òåíèÿ òåìû";
-$MESS ['F_PREORDER'] = "Âûâîäèòü ñîîáùåíèÿ â ïðÿìîì ïîðÿäêå";
+$MESS ['IBLOCK_TYPE'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['IBLOCK_IBLOCK'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS ['IBLOCK_DETAIL_URL'] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð°";
+$MESS ['IBLOCK_ELEMENT_ID'] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['P_COMMENTS_TYPE'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²";
+$MESS ['P_COMMENTS_TYPE_BLOG'] = "Ð‘Ð»Ð¾Ð³Ð¸";
+$MESS ['P_COMMENTS_TYPE_FORUM'] = "Ð¤Ð¾Ñ€ÑƒÐ¼";
+$MESS ['F_COMMENTS_COUNT'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ² Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ";
+$MESS ['F_BLOG_URL'] = "Ð‘Ð»Ð¾Ð³ Ð´Ð»Ñ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²";
+$MESS ['P_PATH_TO_USER'] = "ÐŸÑƒÑ‚ÑŒ Ðº Ð¿Ñ€Ð¾Ñ„Ð¸Ð»ÑŽ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ";
+$MESS ['P_PATH_TO_BLOG'] = "ÐŸÑƒÑ‚ÑŒ Ðº Ð±Ð»Ð¾Ð³Ñƒ";
+$MESS ['F_PATH_TO_SMILE'] = "ÐŸÑƒÑ‚ÑŒ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ ÐºÐ¾Ñ€Ð½Ñ ÑÐ°Ð¹Ñ‚Ð° Ðº Ð¿Ð°Ð¿ÐºÐµ ÑÐ¾ ÑÐ¼Ð°Ð¹Ð»Ð°Ð¼Ð¸";
+$MESS ['F_FORUM_ID'] = "ID Ñ„Ð¾Ñ€ÑƒÐ¼Ð° Ð´Ð»Ñ Ð¾Ñ‚Ð·Ñ‹Ð²Ð¾Ð²";
+$MESS ['F_USE_CAPTCHA'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ CAPTCHA";
+$MESS ['F_READ_TEMPLATE'] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ‡Ñ‚ÐµÐ½Ð¸Ñ Ñ‚ÐµÐ¼Ñ‹";
+$MESS ['F_PREORDER'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ð² Ð¿Ñ€ÑÐ¼Ð¾Ð¼ Ð¿Ð¾Ñ€ÑÐ´ÐºÐµ";
 ?>

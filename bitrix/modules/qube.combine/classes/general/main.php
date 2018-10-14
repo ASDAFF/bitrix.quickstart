@@ -171,7 +171,7 @@ Class CQubeCombine
 			while ($ptype = $db_ptype->Fetch())
 				$arPersonTypes[] = $ptype;
 			
-			//‚ûâîä êîíòåíòà
+			//â€šÑ‹Ð²Ð¾Ð´ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°
 			if (count($arPersonTypes)>0)
 			{
 				if ($bNew || count($arPersonTypes)==count($arTypes))

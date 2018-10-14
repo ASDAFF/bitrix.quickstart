@@ -1,18 +1,18 @@
 <?
-$MESS ['PERFMON_EXPLAIN_SQL_ERROR'] = "Óêàçàííûé çàïðîñ íå íàéäåí èëè íå ÿâëÿåòñÿ âûáîðêîé (SELECT).";
-$MESS ['PERFMON_EXPLAIN_TITLE'] = "Ïëàí èñïîëíåíèÿ çàïðîñà";
-$MESS ['PERFMON_EXPLAIN_F_SELECT_TYPE'] = "Òèï çàïðîñà";
-$MESS ['PERFMON_EXPLAIN_F_TABLE'] = "Òàáëèöà";
-$MESS ['PERFMON_EXPLAIN_F_TYPE'] = "Âûáîðêà";
-$MESS ['PERFMON_EXPLAIN_F_POSSIBLE_KEYS'] = "Âîçìîæíûå èíäåêñû";
-$MESS ['PERFMON_EXPLAIN_F_KEY'] = "Èíäåêñ";
-$MESS ['PERFMON_EXPLAIN_F_KEY_LEN'] = "Äëèíà êëþ÷à";
-$MESS ['PERFMON_EXPLAIN_F_REF'] = "Óñëîâèÿ êëþ÷à";
-$MESS ['PERFMON_EXPLAIN_F_ROWS'] = "Ñòðîê";
-$MESS ['PERFMON_EXPLAIN_F_EXTRA'] = "Äîï. èíôîðìàöèÿ";
-$MESS ['PERFMON_EXPLAIN_F_OPERATION'] = "Îïåðàöèÿ";
-$MESS ['PERFMON_EXPLAIN_F_OBJECT_NAME'] = "Èìÿ îáúåêòà";
-$MESS ['PERFMON_EXPLAIN_F_OBJECT_TYPE'] = "Òèï îáúåêòà";
-$MESS ['PERFMON_EXPLAIN_F_COST'] = "Öåíà";
-$MESS ['PERFMON_EXPLAIN_F_OPTIMIZER'] = "Ðåæèì îïòèìèçàòîðà";
+$MESS ['PERFMON_EXPLAIN_SQL_ERROR'] = "Ð£ÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ð¹ Ð·Ð°Ð¿Ñ€Ð¾Ñ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð¸Ð»Ð¸ Ð½Ðµ ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð²Ñ‹Ð±Ð¾Ñ€ÐºÐ¾Ð¹ (SELECT).";
+$MESS ['PERFMON_EXPLAIN_TITLE'] = "ÐŸÐ»Ð°Ð½ Ð¸ÑÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°";
+$MESS ['PERFMON_EXPLAIN_F_SELECT_TYPE'] = "Ð¢Ð¸Ð¿ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°";
+$MESS ['PERFMON_EXPLAIN_F_TABLE'] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð°";
+$MESS ['PERFMON_EXPLAIN_F_TYPE'] = "Ð’Ñ‹Ð±Ð¾Ñ€ÐºÐ°";
+$MESS ['PERFMON_EXPLAIN_F_POSSIBLE_KEYS'] = "Ð’Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ñ‹Ðµ Ð¸Ð½Ð´ÐµÐºÑÑ‹";
+$MESS ['PERFMON_EXPLAIN_F_KEY'] = "Ð˜Ð½Ð´ÐµÐºÑ";
+$MESS ['PERFMON_EXPLAIN_F_KEY_LEN'] = "Ð”Ð»Ð¸Ð½Ð° ÐºÐ»ÑŽÑ‡Ð°";
+$MESS ['PERFMON_EXPLAIN_F_REF'] = "Ð£ÑÐ»Ð¾Ð²Ð¸Ñ ÐºÐ»ÑŽÑ‡Ð°";
+$MESS ['PERFMON_EXPLAIN_F_ROWS'] = "Ð¡Ñ‚Ñ€Ð¾Ðº";
+$MESS ['PERFMON_EXPLAIN_F_EXTRA'] = "Ð”Ð¾Ð¿. Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ";
+$MESS ['PERFMON_EXPLAIN_F_OPERATION'] = "ÐžÐ¿ÐµÑ€Ð°Ñ†Ð¸Ñ";
+$MESS ['PERFMON_EXPLAIN_F_OBJECT_NAME'] = "Ð˜Ð¼Ñ Ð¾Ð±ÑŠÐµÐºÑ‚Ð°";
+$MESS ['PERFMON_EXPLAIN_F_OBJECT_TYPE'] = "Ð¢Ð¸Ð¿ Ð¾Ð±ÑŠÐµÐºÑ‚Ð°";
+$MESS ['PERFMON_EXPLAIN_F_COST'] = "Ð¦ÐµÐ½Ð°";
+$MESS ['PERFMON_EXPLAIN_F_OPTIMIZER'] = "Ð ÐµÐ¶Ð¸Ð¼ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ‚Ð¾Ñ€Ð°";
 ?>

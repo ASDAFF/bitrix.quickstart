@@ -1,18 +1,18 @@
 <?
-$MESS ['IBLOCK_TYPE'] = "Òèï èíôîáëîêà";
-$MESS ['IBLOCK_IBLOCK'] = "Èíôîáëîê";
-$MESS ['IBLOCK_SECTION_URL'] = "URL ñòðàíèöû ñ ñîäåðæèìûì ðàçäåëà";
-$MESS ['IBLOCK_DETAIL_URL'] = "URL ñòðàíèöû ñ ñîäåðæèìûì ýëåìåíòà ðàçäåëà";
-$MESS ['IBLOCK_ELEMENT_ID'] = "ID ýëåìåíòà";
-$MESS ['IBLOCK_SECTION_ID'] = "ID ðàçäåëà";
-$MESS ['T_IBLOCK_DESC_NEWS_PANEL'] = "Äîáàâëÿòü â àäìèí. ïàíåëü êíîïêè äëÿ ýòîãî êîìïîíåíòà";
-$MESS ['T_DATE_TIME_FORMAT'] = "Ôîðìàò âûâîäà äàòû";
-$MESS ['IBLOCK_BEHAVIOUR'] = "Ðåæèì ðàáîòû ãàëåðåè";
-$MESS ['IBLOCK_BEHAVIOUR_SIMPLE'] = "ïðîñòîé";
-$MESS ['IBLOCK_BEHAVIOUR_USER'] = "ìíîãîïîëüçîâàòåëüñêèé";
-$MESS ['IBLOCK_USER_ALIAS'] = "Êîä ãàëåðåè";
-$MESS ['P_GALLERY_SIZE'] = "Ðàçìåð ãàëåðåè";
-$MESS ['P_ACTION'] = "Äåéñòâèå íàä ôîòîãðàôèåé";
-$MESS ['IBLOCK_GALLERY_URL'] = "Ñîäåðæèìîå ãàëåðåè";
-$MESS ['P_SET_STATUS_404'] = "Óñòàíàâëèâàòü ñòàòóñ 404, åñëè íå íàéäåíû ýëåìåíò èëè ðàçäåë"; 
+$MESS ['IBLOCK_TYPE'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['IBLOCK_IBLOCK'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS ['IBLOCK_SECTION_URL'] = "URL ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ñ‹Ð¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['IBLOCK_DETAIL_URL'] = "URL ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ñ‹Ð¼ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['IBLOCK_ELEMENT_ID'] = "ID ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['IBLOCK_SECTION_ID'] = "ID Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['T_IBLOCK_DESC_NEWS_PANEL'] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ Ð² Ð°Ð´Ð¼Ð¸Ð½. Ð¿Ð°Ð½ÐµÐ»ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð´Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°";
+$MESS ['T_DATE_TIME_FORMAT'] = "Ð¤Ð¾Ñ€Ð¼Ð°Ñ‚ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð´Ð°Ñ‚Ñ‹";
+$MESS ['IBLOCK_BEHAVIOUR'] = "Ð ÐµÐ¶Ð¸Ð¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['IBLOCK_BEHAVIOUR_SIMPLE'] = "Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ð¹";
+$MESS ['IBLOCK_BEHAVIOUR_USER'] = "Ð¼Ð½Ð¾Ð³Ð¾Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹";
+$MESS ['IBLOCK_USER_ALIAS'] = "ÐšÐ¾Ð´ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['P_GALLERY_SIZE'] = "Ð Ð°Ð·Ð¼ÐµÑ€ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['P_ACTION'] = "Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ð½Ð°Ð´ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸ÐµÐ¹";
+$MESS ['IBLOCK_GALLERY_URL'] = "Ð¡Ð¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['P_SET_STATUS_404'] = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ 404, ÐµÑÐ»Ð¸ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¸Ð»Ð¸ Ñ€Ð°Ð·Ð´ÐµÐ»"; 
 ?>

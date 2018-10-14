@@ -1,16 +1,16 @@
 <?
-$MESS["PERFMON_PHP_TITLE"] = "Ìîíèòîð ïðîèçâîäèòåëüíîñòè: Íàñòðîéêè PHP";
-$MESS["PERFMON_PHP_TUNING_NAME"] = "Íàñòðîéêè PHP";
-$MESS["PERFMON_PHP_TUNING_TITLE"] = "Ïàðàìåòðû îêðóæåíèÿ";
-$MESS["PERFMON_PHP_TUNING_PARAMETER"] = "Ïàðàìåòð";
-$MESS["PERFMON_PHP_TUNING_VALUE"] = "Çíà÷åíèå";
-$MESS["PERFMON_PHP_TUNING_RECOMMENDATION"] = "Ðåêîìåíäàöèè";
-$MESS["PERFMON_PHP_VERSION"] = "Âåðñèÿ PHP";
-$MESS["PERFMON_PHP_VERSION_REC"] = "Âåðñèÿ #value# è âûøå.";
-$MESS["PERFMON_PHP_OPEN_BASEDIR_REC"] = "Ïî âîçìîæíîñòè ýòîò ïàðàìåòð íå äîëæåí áûòü çàäàí.";
-$MESS["PERFMON_PHP_PATH_CACHE_REC2"] = "Óñòàíîâèòü áîëüøå èëè ðàâíûì 4096k.";
-$MESS["PERFMON_PHP_PRECOMPILER"] = "Ïðåêîìïèëÿòîð";
-$MESS["PERFMON_PHP_PRECOMPILER_NOT_INSTALLED"] = "íå óñòàíîâëåí";
-$MESS["PERFMON_PHP_PRECOMPILER_REC"] = "Óñòàíîâèòå îäèí èç àêñåëåðàòîðîâ:";
-$MESS["PERFMON_PHP_SETTINGS"] = "Íàñòðîéêè PHP";
+$MESS["PERFMON_PHP_TITLE"] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸: ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ PHP";
+$MESS["PERFMON_PHP_TUNING_NAME"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ PHP";
+$MESS["PERFMON_PHP_TUNING_TITLE"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¾ÐºÑ€ÑƒÐ¶ÐµÐ½Ð¸Ñ";
+$MESS["PERFMON_PHP_TUNING_PARAMETER"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€";
+$MESS["PERFMON_PHP_TUNING_VALUE"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+$MESS["PERFMON_PHP_TUNING_RECOMMENDATION"] = "Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸";
+$MESS["PERFMON_PHP_VERSION"] = "Ð’ÐµÑ€ÑÐ¸Ñ PHP";
+$MESS["PERFMON_PHP_VERSION_REC"] = "Ð’ÐµÑ€ÑÐ¸Ñ #value# Ð¸ Ð²Ñ‹ÑˆÐµ.";
+$MESS["PERFMON_PHP_OPEN_BASEDIR_REC"] = "ÐŸÐ¾ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ ÑÑ‚Ð¾Ñ‚ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð½Ðµ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð·Ð°Ð´Ð°Ð½.";
+$MESS["PERFMON_PHP_PATH_CACHE_REC2"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð¸Ð»Ð¸ Ñ€Ð°Ð²Ð½Ñ‹Ð¼ 4096k.";
+$MESS["PERFMON_PHP_PRECOMPILER"] = "ÐŸÑ€ÐµÐºÐ¾Ð¼Ð¿Ð¸Ð»ÑÑ‚Ð¾Ñ€";
+$MESS["PERFMON_PHP_PRECOMPILER_NOT_INSTALLED"] = "Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS["PERFMON_PHP_PRECOMPILER_REC"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¾Ð´Ð¸Ð½ Ð¸Ð· Ð°ÐºÑÐµÐ»ÐµÑ€Ð°Ñ‚Ð¾Ñ€Ð¾Ð²:";
+$MESS["PERFMON_PHP_SETTINGS"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ PHP";
 ?>

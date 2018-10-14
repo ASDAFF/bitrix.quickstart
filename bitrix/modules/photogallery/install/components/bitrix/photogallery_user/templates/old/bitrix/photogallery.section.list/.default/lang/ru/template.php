@@ -1,5 +1,5 @@
 <?
-$MESS ['P_ALBUMS_CNT_NO'] = "Íåò àëüáîìîâ";
-$MESS ['P_PHOTOS_CNT'] = "Ôîòî";
-$MESS ['P_ALBUMS_CNT'] = "Àëüáîìû";
+$MESS ['P_ALBUMS_CNT_NO'] = "ÐÐµÑ‚ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð¾Ð²";
+$MESS ['P_PHOTOS_CNT'] = "Ð¤Ð¾Ñ‚Ð¾";
+$MESS ['P_ALBUMS_CNT'] = "ÐÐ»ÑŒÐ±Ð¾Ð¼Ñ‹";
 ?>

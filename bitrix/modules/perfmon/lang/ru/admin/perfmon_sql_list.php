@@ -1,17 +1,17 @@
 <?
-$MESS["PERFMON_SQL_TITLE"] = "Ìîíèòîð ïðîèçâîäèòåëüíîñòè: çàïðîñû";
-$MESS["PERFMON_SQL_PAGE"] = "Çàïðîñû";
-$MESS["PERFMON_SQL_FIND"] = "Íàéòè";
+$MESS["PERFMON_SQL_TITLE"] = "ÐœÐ¾Ð½Ð¸Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸: Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹";
+$MESS["PERFMON_SQL_PAGE"] = "Ð—Ð°Ð¿Ñ€Ð¾ÑÑ‹";
+$MESS["PERFMON_SQL_FIND"] = "ÐÐ°Ð¹Ñ‚Ð¸";
 $MESS["PERFMON_SQL_ID"] = "ID";
-$MESS["PERFMON_SQL_HIT_ID"] = "Õèò";
+$MESS["PERFMON_SQL_HIT_ID"] = "Ð¥Ð¸Ñ‚";
 $MESS["PERFMON_SQL_NN"] = "#";
-$MESS["PERFMON_SQL_QUERY_TIME"] = "Âðåìÿ";
-$MESS["PERFMON_SQL_MODULE_NAME"] = "Ìîäóëü";
-$MESS["PERFMON_SQL_COMPONENT_NAME"] = "Êîìïîíåíò";
-$MESS["PERFMON_SQL_SQL_TEXT"] = "Çàïðîñ";
-$MESS["PERFMON_SQL_EXPLAIN"] = "Ïëàí èñïîëíåíèÿ";
-$MESS["PERFMON_SQL_COMPONENT_ID"] = "Êîìïîíåíò";
-$MESS["PERFMON_SQL_FILE"] = "Ôàéë";
-$MESS["PERFMON_SQL_LINE_NUMBER"] = "Ñòðîêà";
-$MESS["PERFMON_SQL_FUNCTION"] = "Ôóíêöèÿ";
+$MESS["PERFMON_SQL_QUERY_TIME"] = "Ð’Ñ€ÐµÐ¼Ñ";
+$MESS["PERFMON_SQL_MODULE_NAME"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ";
+$MESS["PERFMON_SQL_COMPONENT_NAME"] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚";
+$MESS["PERFMON_SQL_SQL_TEXT"] = "Ð—Ð°Ð¿Ñ€Ð¾Ñ";
+$MESS["PERFMON_SQL_EXPLAIN"] = "ÐŸÐ»Ð°Ð½ Ð¸ÑÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ";
+$MESS["PERFMON_SQL_COMPONENT_ID"] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚";
+$MESS["PERFMON_SQL_FILE"] = "Ð¤Ð°Ð¹Ð»";
+$MESS["PERFMON_SQL_LINE_NUMBER"] = "Ð¡Ñ‚Ñ€Ð¾ÐºÐ°";
+$MESS["PERFMON_SQL_FUNCTION"] = "Ð¤ÑƒÐ½ÐºÑ†Ð¸Ñ";
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS ['PHOTO_ELEMENT_NOT_FOUND'] = "Ôîòîãðàôèÿ íå íàéäåíà.";
-$MESS ['IBLOCK_MODULE_NOT_INSTALLED'] = "Ìîäóëü èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí.";
-$MESS ['P_MODULE_IS_NOT_INSTALLED'] = "Ìîäóëü Ôîòîãàëåðåÿ 2.0 íå óñòàíîâëåí.";
-$MESS ['P_DENIED_ACCESS'] = "Äîñòóï çàïðåùåí.";
+$MESS ['PHOTO_ELEMENT_NOT_FOUND'] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ñ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.";
+$MESS ['IBLOCK_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
+$MESS ['P_MODULE_IS_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ 2.0 Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½.";
+$MESS ['P_DENIED_ACCESS'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½.";
 ?>

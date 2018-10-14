@@ -1,4 +1,4 @@
 <?
-$MESS['PRMEDIA_INSTALL_NAME'] = 'Òâèòòåð-ëåíòà';
-$MESS['PRMEDIA_INSTALL_DESCRIPTION'] = 'Äîáàâëÿåò íà ñàéò òâèòòåð-ëåíòó';
+$MESS['PRMEDIA_INSTALL_NAME'] = 'Ð¢Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð»ÐµÐ½Ñ‚Ð°';
+$MESS['PRMEDIA_INSTALL_DESCRIPTION'] = 'Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÑ‚ Ð½Ð° ÑÐ°Ð¹Ñ‚ Ñ‚Ð²Ð¸Ñ‚Ñ‚ÐµÑ€-Ð»ÐµÐ½Ñ‚Ñƒ';
 ?>

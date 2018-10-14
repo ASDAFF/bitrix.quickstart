@@ -1,6 +1,6 @@
 <?
-$MESS ['NEWS_SHOW_COMPONENT_NAME'] = "Íîâîñòè RSS";
-$MESS ['NEWS_SHOW_COMPONENT_DESCRIPTION'] = "Âûâîäèò íîâîñòíóþ ëåíòó RSS";
-$MESS ['INFORMERS'] = "Èíôîðìåðû";
+$MESS ['NEWS_SHOW_COMPONENT_NAME'] = "ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸ RSS";
+$MESS ['NEWS_SHOW_COMPONENT_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ Ð½Ð¾Ð²Ð¾ÑÑ‚Ð½ÑƒÑŽ Ð»ÐµÐ½Ñ‚Ñƒ RSS";
+$MESS ['INFORMERS'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼ÐµÑ€Ñ‹";
 $MESS ['TITLE_PM'] = "P.M. Group";
 ?>

@@ -1,15 +1,15 @@
 <?
-$MESS["P_IBLOCK_ID_EMPTY"] = "Íå ïåðåäàí ID èíôîáëîêà.";
-$MESS["P_GALLERY_IS_BLOCKED"] = "Ãàëåðåÿ çàáëîêèðîâàíà.";
-$MESS["P_ALBUM_IS_BLOCKED"] = "Àëüáîì çàáëîêèðîâàí.";
-$MESS["P_DENIED_ACCESS"] = "Äîñòóï çàïðåùåí. ";
-$MESS["P_PARENT_ALBUM_IS_PASSWORDED"] = "Ðîäèòåëüñêèé àëüáîì çàêðûò ïàðîëåì. ";
-$MESS["P_ALBUM_IS_PASSWORDED"] = "Àëüáîì çàêðûò ïàðîëåì. ";
-$MESS["P_ALBUM_IS_PASSWORDED_TITLE"] = "×òîáû ïîñìîòðåòü ôîòîãðàôèè, ââåäèòå ïàðîëü ê àëüáîìó &laquo;#NAME#&raquo;.";
-$MESS["P_PASSWORD"] = "Ïàðîëü";
-$MESS["P_ENTER"] = "Âîéòè";
-$MESS["P_GALLERY_NOT_FOUND"] = "Ãàëåðåÿ íå íàéäåíà.";
-$MESS["P_SECTION_NOT_FOUND"] = "Àëüáîì íå íàéäåí.";
-$MESS["P_SECTION_IS_NOT_APPROVED"] = "Àëüáîì ñêðûò.";
-$MESS["P_SECTION_IS_EMPTY"] = "Â àëüáîìå íåò ôîòîãðàôèé.";
+$MESS["P_IBLOCK_ID_EMPTY"] = "ÐÐµ Ð¿ÐµÑ€ÐµÐ´Ð°Ð½ ID Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°.";
+$MESS["P_GALLERY_IS_BLOCKED"] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð°.";
+$MESS["P_ALBUM_IS_BLOCKED"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½.";
+$MESS["P_DENIED_ACCESS"] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½. ";
+$MESS["P_PARENT_ALBUM_IS_PASSWORDED"] = "Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ð¹ Ð°Ð»ÑŒÐ±Ð¾Ð¼ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ Ð¿Ð°Ñ€Ð¾Ð»ÐµÐ¼. ";
+$MESS["P_ALBUM_IS_PASSWORDED"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ Ð·Ð°ÐºÑ€Ñ‹Ñ‚ Ð¿Ð°Ñ€Ð¾Ð»ÐµÐ¼. ";
+$MESS["P_ALBUM_IS_PASSWORDED_TITLE"] = "Ð§Ñ‚Ð¾Ð±Ñ‹ Ð¿Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ðº Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñƒ &laquo;#NAME#&raquo;.";
+$MESS["P_PASSWORD"] = "ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";
+$MESS["P_ENTER"] = "Ð’Ð¾Ð¹Ñ‚Ð¸";
+$MESS["P_GALLERY_NOT_FOUND"] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.";
+$MESS["P_SECTION_NOT_FOUND"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½.";
+$MESS["P_SECTION_IS_NOT_APPROVED"] = "ÐÐ»ÑŒÐ±Ð¾Ð¼ ÑÐºÑ€Ñ‹Ñ‚.";
+$MESS["P_SECTION_IS_EMPTY"] = "Ð’ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ðµ Ð½ÐµÑ‚ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹.";
 ?>

@@ -1,14 +1,14 @@
 <?
-$MESS["OPINIONS_NAME"] = "Âàøå èìÿ";
-$MESS["OPINIONS_EMAIL"] = "Âàø E-Mail";
-$MESS["F_CAPTCHA_TITLE"] = "Çàùèòà îò àâòîìàòè÷åñêèõ ñîîáùåíèé";
-$MESS["F_CAPTCHA_PROMT"] = "Ñèìâîëû íà êàðòèíêå";
-$MESS["JQOUTE_AUTHOR_WRITES"] = "ïèøåò";
-$MESS["JERROR_NO_TOPIC_NAME"] = "Âû äîëæíû ââåñòè íàçâàíèå òåìû. ";
-$MESS["JERROR_NO_MESSAGE"] = "Âû äîëæíû ââåñòè ñîîáùåíèå. ";
-$MESS["JERROR_MAX_LEN"] = "Ìàêñèìàëüíàÿ äëèíà ñîîáùåíèÿ #MAX_LENGTH# ñèìâîëîâ. Âñåãî ñèìâîëîâ: #LENGTH#.";
-$MESS["ADD_COMMENT"] = "Äîáàâèòü êîììåíòàðèé";
-$MESS["ADD_COMMENT_TITLE"] = "Äîáàâèòü êîììåíòàðèé (Ctrl + Enter)";
-$MESS["MORE_COMMENTS"] = "Ïîêàçàòü ïðåäûäóùèå êîìåíòàðèè";
-$MESS["COMMENTS_N_FROM_M"] = "#N# èç #M#";
+$MESS["OPINIONS_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS["OPINIONS_EMAIL"] = "Ð’Ð°Ñˆ E-Mail";
+$MESS["F_CAPTCHA_TITLE"] = "Ð—Ð°Ñ‰Ð¸Ñ‚Ð° Ð¾Ñ‚ Ð°Ð²Ñ‚Ð¾Ð¼Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹";
+$MESS["F_CAPTCHA_PROMT"] = "Ð¡Ð¸Ð¼Ð²Ð¾Ð»Ñ‹ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐµ";
+$MESS["JQOUTE_AUTHOR_WRITES"] = "Ð¿Ð¸ÑˆÐµÑ‚";
+$MESS["JERROR_NO_TOPIC_NAME"] = "Ð’Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð²Ð²ÐµÑÑ‚Ð¸ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚ÐµÐ¼Ñ‹. ";
+$MESS["JERROR_NO_MESSAGE"] = "Ð’Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð²Ð²ÐµÑÑ‚Ð¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ. ";
+$MESS["JERROR_MAX_LEN"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð´Ð»Ð¸Ð½Ð° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ #MAX_LENGTH# ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð². Ð’ÑÐµÐ³Ð¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²: #LENGTH#.";
+$MESS["ADD_COMMENT"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS["ADD_COMMENT_TITLE"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ (Ctrl + Enter)";
+$MESS["MORE_COMMENTS"] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿Ñ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰Ð¸Ðµ ÐºÐ¾Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸";
+$MESS["COMMENTS_N_FROM_M"] = "#N# Ð¸Ð· #M#";
 ?>

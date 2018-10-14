@@ -1,4 +1,4 @@
 <?
-$MESS ['P_LOADING'] = "Çàãðóçêà...";
-$MESS ['P_GALLERY_NOT_FOUND'] = "Ãàëåðåÿ íå íàéäåíà.";
+$MESS ['P_LOADING'] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°...";
+$MESS ['P_GALLERY_NOT_FOUND'] = "Ð“Ð°Ð»ÐµÑ€ÐµÑ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð°.";
 ?>

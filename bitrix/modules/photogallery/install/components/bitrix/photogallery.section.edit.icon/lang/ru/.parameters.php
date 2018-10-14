@@ -1,17 +1,17 @@
 <?
-$MESS ['IBLOCK_TYPE'] = "Òèï èíôîáëîêà";
-$MESS ['IBLOCK_IBLOCK'] = "Èíôîáëîê";
-$MESS ['IBLOCK_SECTION_ID'] = "ID ðàçäåëà";
-$MESS ['T_IBLOCK_DESC_NEWS_PANEL'] = "Äîáàâëÿòü â àäìèí. ïàíåëü êíîïêè äëÿ äàííîãî êîìïîíåíòà";
-$MESS ['IBLOCK_SECTION_URL'] = "URL ñòðàíèöû ñ ñîäåðæèìûì ðàçäåëà";
-$MESS ['IBLOCK_SECTION_CODE'] = "Êîä ðàçäåëà";
-$MESS ['IBLOCK_INDEX_URL'] = "Ãëàâíàÿ ñòðàíèöà";
-$MESS ['P_ALBUM_PHOTO_WIDTH'] = "Ðàçìåð àëüáîìà (px)";
-$MESS ['P_ALBUM_PHOTO_THUMBS_WIDTH'] = "Ðàçìåð êàðòèíêè-àíîíñà àëüáîìà (px)";
-$MESS ['P_USER_ALIAS'] = "Êîä ôîòîãàëåðåè";
-$MESS ['P_BEHAVIOUR'] = "Ðåæèì ðàáîòû ôîòîãàëåðåè";
-$MESS ['IBLOCK_GALLERY_URL'] = "Ñîäåðæèìîå ãàëåðåè";
-$MESS ['IBLOCK_ELEMENT_SORT_FIELD'] = "Ïîëå ñîðòèðîâêè ôîòî";
-$MESS ['IBLOCK_ELEMENT_SORT_ORDER'] = "Ïîðÿäîê ñîðòèðîâêè ôîòî";
-$MESS ['P_SET_STATUS_404'] = "Óñòàíàâëèâàòü ñòàòóñ 404, åñëè íå íàéäåíû ýëåìåíò èëè ðàçäåë"; 
+$MESS ['IBLOCK_TYPE'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['IBLOCK_IBLOCK'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS ['IBLOCK_SECTION_ID'] = "ID Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['T_IBLOCK_DESC_NEWS_PANEL'] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÑÑ‚ÑŒ Ð² Ð°Ð´Ð¼Ð¸Ð½. Ð¿Ð°Ð½ÐµÐ»ÑŒ ÐºÐ½Ð¾Ð¿ÐºÐ¸ Ð´Ð»Ñ Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°";
+$MESS ['IBLOCK_SECTION_URL'] = "URL ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ñ‹Ð¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['IBLOCK_SECTION_CODE'] = "ÐšÐ¾Ð´ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['IBLOCK_INDEX_URL'] = "Ð“Ð»Ð°Ð²Ð½Ð°Ñ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°";
+$MESS ['P_ALBUM_PHOTO_WIDTH'] = "Ð Ð°Ð·Ð¼ÐµÑ€ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð° (px)";
+$MESS ['P_ALBUM_PHOTO_THUMBS_WIDTH'] = "Ð Ð°Ð·Ð¼ÐµÑ€ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸-Ð°Ð½Ð¾Ð½ÑÐ° Ð°Ð»ÑŒÐ±Ð¾Ð¼Ð° (px)";
+$MESS ['P_USER_ALIAS'] = "ÐšÐ¾Ð´ Ñ„Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['P_BEHAVIOUR'] = "Ð ÐµÐ¶Ð¸Ð¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ„Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['IBLOCK_GALLERY_URL'] = "Ð¡Ð¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
+$MESS ['IBLOCK_ELEMENT_SORT_FIELD'] = "ÐŸÐ¾Ð»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ„Ð¾Ñ‚Ð¾";
+$MESS ['IBLOCK_ELEMENT_SORT_ORDER'] = "ÐŸÐ¾Ñ€ÑÐ´Ð¾Ðº ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ñ„Ð¾Ñ‚Ð¾";
+$MESS ['P_SET_STATUS_404'] = "Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ 404, ÐµÑÐ»Ð¸ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¸Ð»Ð¸ Ñ€Ð°Ð·Ð´ÐµÐ»"; 
 ?>

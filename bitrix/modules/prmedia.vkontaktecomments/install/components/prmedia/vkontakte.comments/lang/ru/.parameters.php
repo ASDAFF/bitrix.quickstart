@@ -1,11 +1,11 @@
 <?
-$MESS['PRMEDIA_VK_APP_ID'] = 'ID ïðèëîæåíèÿ';
-$MESS['PRMEDIA_VK_INCLUDE_OPENAPI'] = 'Ïîäêëþ÷èòü áèáëèîòêó openapi.js';
-$MESS['PRMEDIA_VK_COUNT'] = 'Êîëè÷åñòâî êîììåíòàðèåâ';
-$MESS['PRMEDIA_VK_ALLOW_GRAFFITI'] = 'Ðàçðåøèòü ãðàôôèòè';
-$MESS['PRMEDIA_VK_ALLOW_PHOTOS'] = 'Ðàçðåøèòü ôîòîãðàôèè';
-$MESS['PRMEDIA_VK_ALLOW_VIDEOS'] = 'Ðàçðåøèòü âèäåî';
-$MESS['PRMEDIA_VK_ALLOW_AUDIO'] = 'Ðàçðåøèòü àóäèî';
-$MESS['PRMEDIA_VK_ALLOW_LINKS'] = 'Ðàçðåøèòü ññûëêè';
-$MESS['PRMEDIA_VK_WIDTH'] = 'Øèðèíà';
+$MESS['PRMEDIA_VK_APP_ID'] = 'ID Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ';
+$MESS['PRMEDIA_VK_INCLUDE_OPENAPI'] = 'ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐºÑƒ openapi.js';
+$MESS['PRMEDIA_VK_COUNT'] = 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²';
+$MESS['PRMEDIA_VK_ALLOW_GRAFFITI'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð³Ñ€Ð°Ñ„Ñ„Ð¸Ñ‚Ð¸';
+$MESS['PRMEDIA_VK_ALLOW_PHOTOS'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸';
+$MESS['PRMEDIA_VK_ALLOW_VIDEOS'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð²Ð¸Ð´ÐµÐ¾';
+$MESS['PRMEDIA_VK_ALLOW_AUDIO'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð°ÑƒÐ´Ð¸Ð¾';
+$MESS['PRMEDIA_VK_ALLOW_LINKS'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ ÑÑÑ‹Ð»ÐºÐ¸';
+$MESS['PRMEDIA_VK_WIDTH'] = 'Ð¨Ð¸Ñ€Ð¸Ð½Ð°';
 ?>

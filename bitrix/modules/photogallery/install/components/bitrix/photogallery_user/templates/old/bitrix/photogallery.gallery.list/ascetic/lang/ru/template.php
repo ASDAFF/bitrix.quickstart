@@ -1,3 +1,3 @@
 <?
-$MESS["P_GALLERY_VIEW_TITLE"] = "Ñìîòðåòü àëüáîìû ãàëåðåè &laquo;#GALLERY#&raquo;";
+$MESS["P_GALLERY_VIEW_TITLE"] = "Ð¡Ð¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð°Ð»ÑŒÐ±Ð¾Ð¼Ñ‹ Ð³Ð°Ð»ÐµÑ€ÐµÐ¸ &laquo;#GALLERY#&raquo;";
 ?>

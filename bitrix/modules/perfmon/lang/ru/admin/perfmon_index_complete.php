@@ -1,14 +1,14 @@
 <?
-$MESS["PERFMON_ICOMPLETE_STATUS"] = "Ñòàòóñ";
-$MESS["PERFMON_ICOMPLETE_TABLE_NAME"] = "Òàáëèöà";
-$MESS["PERFMON_ICOMPLETE_COLUMN_NAMES"] = "Êîëîíêè";
-$MESS["PERFMON_ICOMPLETE_INDEX_NAME"] = "Èíäåêñ";
-$MESS["PERFMON_ICOMPLETE_TITLE"] = "Ñïèñîê ñîçäàííûõ èíäåêñîâ";
-$MESS["PERFMON_ICOMPLETE_DELETE_INDEX"] = "Óäàëèòü èíäåêñ";
-$MESS["PERFMON_ICOMPLETE_DELETE_BAN"] = "Ïðîàíàëèçèðîâàòü ïîâòîðíî";
-$MESS["PERFMON_ICOMPLETE_PAGE"] = "Èíäåêñû";
-$MESS["PERFMON_ICOMPLETE_GREEN_ALT"] = "Èíäåêñ ñîçäàí";
-$MESS["PERFMON_ICOMPLETE_RED_ALT"] = "Èíäåêñ íå íóæåí";
-$MESS["PERFMON_ICOMPLETE_YELLOW_ALT"] = "Ñòàòóñ íå îïðåäåëåí";
-$MESS["PERFMON_ICOMPLETE_NO_INDEX"] = "Íå ïðåäëàãàòü ñîçäàâàòü.";
+$MESS["PERFMON_ICOMPLETE_STATUS"] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ";
+$MESS["PERFMON_ICOMPLETE_TABLE_NAME"] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð°";
+$MESS["PERFMON_ICOMPLETE_COLUMN_NAMES"] = "ÐšÐ¾Ð»Ð¾Ð½ÐºÐ¸";
+$MESS["PERFMON_ICOMPLETE_INDEX_NAME"] = "Ð˜Ð½Ð´ÐµÐºÑ";
+$MESS["PERFMON_ICOMPLETE_TITLE"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑÐ¾Ð·Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¸Ð½Ð´ÐµÐºÑÐ¾Ð²";
+$MESS["PERFMON_ICOMPLETE_DELETE_INDEX"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¸Ð½Ð´ÐµÐºÑ";
+$MESS["PERFMON_ICOMPLETE_DELETE_BAN"] = "ÐŸÑ€Ð¾Ð°Ð½Ð°Ð»Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾";
+$MESS["PERFMON_ICOMPLETE_PAGE"] = "Ð˜Ð½Ð´ÐµÐºÑÑ‹";
+$MESS["PERFMON_ICOMPLETE_GREEN_ALT"] = "Ð˜Ð½Ð´ÐµÐºÑ ÑÐ¾Ð·Ð´Ð°Ð½";
+$MESS["PERFMON_ICOMPLETE_RED_ALT"] = "Ð˜Ð½Ð´ÐµÐºÑ Ð½Ðµ Ð½ÑƒÐ¶ÐµÐ½";
+$MESS["PERFMON_ICOMPLETE_YELLOW_ALT"] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð½Ðµ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½";
+$MESS["PERFMON_ICOMPLETE_NO_INDEX"] = "ÐÐµ Ð¿Ñ€ÐµÐ´Ð»Ð°Ð³Ð°Ñ‚ÑŒ ÑÐ¾Ð·Ð´Ð°Ð²Ð°Ñ‚ÑŒ.";
 ?>

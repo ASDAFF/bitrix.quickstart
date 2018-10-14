@@ -1,5 +1,5 @@
 <?
-$MESS["T_IBLOCK_DESC_PHOTO"] = "Ôîòîãàëåðåÿ 2.0";
-$MESS["IBLOCK_ELEMENT_TEMPLATE_NAME"] = "Flash-ñëàéäøîó";
-$MESS["IBLOCK_ELEMENT_TEMPLATE_DESCRIPTION"] = "Öèêëè÷åñêè ïðîèãðûâàåò ôîòîãðàôèè èç ôîòîãàëåðåè";
+$MESS["T_IBLOCK_DESC_PHOTO"] = "Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ 2.0";
+$MESS["IBLOCK_ELEMENT_TEMPLATE_NAME"] = "Flash-ÑÐ»Ð°Ð¹Ð´ÑˆÐ¾Ñƒ";
+$MESS["IBLOCK_ELEMENT_TEMPLATE_DESCRIPTION"] = "Ð¦Ð¸ÐºÐ»Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¿Ñ€Ð¾Ð¸Ð³Ñ€Ñ‹Ð²Ð°ÐµÑ‚ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð¸Ð· Ñ„Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÐ¸";
 ?>

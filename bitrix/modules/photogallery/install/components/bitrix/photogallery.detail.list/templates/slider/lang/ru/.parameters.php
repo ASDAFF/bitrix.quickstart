@@ -1,9 +1,9 @@
 <?
-$MESS ['P_SHOW_PAGE_NAVIGATION'] = "Ïîêàçûâàòü íàâèãàöèþ";
-$MESS ['P_SHOW_PAGE_NAVIGATION_NONE'] = "íå ïîêàçûâàòü";
-$MESS ['P_SHOW_PAGE_NAVIGATION_TOP'] = "ñâåðõó";
-$MESS ['P_SHOW_PAGE_NAVIGATION_BOTTOM'] = "ñíèçó";
-$MESS ['P_SHOW_PAGE_NAVIGATION_BOTH'] = "ñâåðõó è ñíèçó";
-$MESS ['P_ELEMENT_ID'] = "ID àêòèâíîãî ýëåìåíòà";
-$MESS ['P_SLIDER_COUNT_CELL'] = "Ðàçìåð ñëàéäåðà (êîëè÷åñòâî ôîòîãðàôèé)";
+$MESS ['P_SHOW_PAGE_NAVIGATION'] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸ÑŽ";
+$MESS ['P_SHOW_PAGE_NAVIGATION_NONE'] = "Ð½Ðµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ";
+$MESS ['P_SHOW_PAGE_NAVIGATION_TOP'] = "ÑÐ²ÐµÑ€Ñ…Ñƒ";
+$MESS ['P_SHOW_PAGE_NAVIGATION_BOTTOM'] = "ÑÐ½Ð¸Ð·Ñƒ";
+$MESS ['P_SHOW_PAGE_NAVIGATION_BOTH'] = "ÑÐ²ÐµÑ€Ñ…Ñƒ Ð¸ ÑÐ½Ð¸Ð·Ñƒ";
+$MESS ['P_ELEMENT_ID'] = "ID Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS ['P_SLIDER_COUNT_CELL'] = "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð° (ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¹)";
 ?>

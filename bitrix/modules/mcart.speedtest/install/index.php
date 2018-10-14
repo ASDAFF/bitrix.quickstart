@@ -109,7 +109,7 @@ Class mcart_speedtest extends CModule
 	function FillIBlocks($iblock_id)
 	{
 	
-// ID ïîëüçîâàòåëÿ, Äàòà ñîçäàíèÿ, Äàòà íà÷àëà, Äàòà îêîí÷àíèÿ, Ñòàòóñ, ÈÍÍ, XML ñâåðêè	
+// ID Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ, Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ, Ð”Ð°Ñ‚Ð° Ð½Ð°Ñ‡Ð°Ð»Ð°, Ð”Ð°Ñ‚Ð° Ð¾ÐºÐ¾Ð½Ñ‡Ð°Ð½Ð¸Ñ, Ð¡Ñ‚Ð°Ñ‚ÑƒÑ, Ð˜ÐÐ, XML ÑÐ²ÐµÑ€ÐºÐ¸	
 	$arFields=array(
 		/*"0" => Array(	
 		'IBLOCK_ID' => $iblock_id,

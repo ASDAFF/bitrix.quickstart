@@ -1,14 +1,14 @@
 <?php
-$MESS["LS_CS_INVITE_TITLE"] = "Ïðîäâèíóòàÿ çàãëóøêà";
-$MESS["LS_CS_INVITE_SEND_COMPLETE"] = "Îòïðàâêà ïðîøëà óñïåøíî";
-$MESS["LS_CS_INVITE_SEND_COUNT_INVITE"] = "îòïðàâëåíî ïðèãëàøåíèé";
-$MESS["LS_CS_INVITE_SEND_COUNT_REGISTRATION"] = "ïðîèçâåäåíî ðåãèñòðàöèé";
-$MESS["LS_CS_INVITE_SITE"] = "Ñàéò";
-$MESS["LS_CS_INVITE_FORM_INVITES"] = "ïðèãëàøåíèé";
-$MESS["LS_CS_INVITE_FORM_NOT_CONFIRM_MAIL"] = "íå ïîäòâåðäèëè e-mail";
-$MESS["LS_CS_INVITE_FORM_NOT_CONFIRM_MAIL_NOTICE"] = "ïðèãëàøåíèÿ íå îòïðàâëÿþòñÿ";
-$MESS["LS_CS_INVITE_FORM_NEED_REGISTRATION"] = "ïðîèçâåñòè ðåãèñòðàöèþ ïîëüçîâàòåëåé";
-$MESS["LS_CS_INVITE_FORM_NEED_REGISTRATION_NOTICE"] = "òîëüêî ïðè íàëè÷èè ëîãèíà";
-$MESS["LS_CS_INVITE_FORM_SUBMIT"] = "Îòïðàâèòü ïðèãëàøåíèÿ";
+$MESS["LS_CS_INVITE_TITLE"] = "ÐŸÑ€Ð¾Ð´Ð²Ð¸Ð½ÑƒÑ‚Ð°Ñ Ð·Ð°Ð³Ð»ÑƒÑˆÐºÐ°";
+$MESS["LS_CS_INVITE_SEND_COMPLETE"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¿Ñ€Ð¾ÑˆÐ»Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾";
+$MESS["LS_CS_INVITE_SEND_COUNT_INVITE"] = "Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹";
+$MESS["LS_CS_INVITE_SEND_COUNT_REGISTRATION"] = "Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¾ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¹";
+$MESS["LS_CS_INVITE_SITE"] = "Ð¡Ð°Ð¹Ñ‚";
+$MESS["LS_CS_INVITE_FORM_INVITES"] = "Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹";
+$MESS["LS_CS_INVITE_FORM_NOT_CONFIRM_MAIL"] = "Ð½Ðµ Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð´Ð¸Ð»Ð¸ e-mail";
+$MESS["LS_CS_INVITE_FORM_NOT_CONFIRM_MAIL_NOTICE"] = "Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ñ Ð½Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑŽÑ‚ÑÑ";
+$MESS["LS_CS_INVITE_FORM_NEED_REGISTRATION"] = "Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÑÑ‚Ð¸ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸ÑŽ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹";
+$MESS["LS_CS_INVITE_FORM_NEED_REGISTRATION_NOTICE"] = "Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¿Ñ€Ð¸ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸ Ð»Ð¾Ð³Ð¸Ð½Ð°";
+$MESS["LS_CS_INVITE_FORM_SUBMIT"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ñ";
 
 ?>

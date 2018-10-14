@@ -1,7 +1,7 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
-$MESS['COMP_NAME'] = "Îôèñû";
-$MESS['COMP_DESCR'] = "Âàøà ñåòü îôèñîâ íà êàðòå";
-$MESS['ITHIVE_PARENT'] = "IT-Óëåé";
-$MESS['ITHIVE_SECTION'] = "Îôèñû íà êàðòå";
+$MESS['COMP_NAME'] = "ÐžÑ„Ð¸ÑÑ‹";
+$MESS['COMP_DESCR'] = "Ð’Ð°ÑˆÐ° ÑÐµÑ‚ÑŒ Ð¾Ñ„Ð¸ÑÐ¾Ð² Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
+$MESS['ITHIVE_PARENT'] = "IT-Ð£Ð»ÐµÐ¹";
+$MESS['ITHIVE_SECTION'] = "ÐžÑ„Ð¸ÑÑ‹ Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
 ?>

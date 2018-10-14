@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Îñíîâíîé êëàññ ìîäóëÿ
+ * ÐžÑÐ½Ð¾Ð²Ð½Ð¾Ð¹ ÐºÐ»Ð°ÑÑ Ð¼Ð¾Ð´ÑƒÐ»Ñ
  */
 class CLsCsMain {
 	/**
-	 * Îáðàáîòêà ñîáûòèÿ "OnBeforeProlog"
+	 * ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ "OnBeforeProlog"
 	 */
 	public static function OnBeforeProlog() {
 		if (self::CheckNeedShowComing()) {
@@ -13,7 +13,7 @@ class CLsCsMain {
 		}
 	}
 	/**
-	 * Ïðîâåðÿåò íåîáõîäèìîñòü ïîêàçà ñòðàíèöû "Coming soon" (çàãëóøêè)
+	 * ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÑ‚ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾ÐºÐ°Ð·Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ "Coming soon" (Ð·Ð°Ð³Ð»ÑƒÑˆÐºÐ¸)
 	 *
 	 * @return bool
 	 */
@@ -23,19 +23,19 @@ class CLsCsMain {
 			return false;
 		}
 		/**
-		 * Äëÿ ãîñòåé ïîêàçûâàåì çàãëóøêó
+		 * Ð”Ð»Ñ Ð³Ð¾ÑÑ‚ÐµÐ¹ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ð·Ð°Ð³Ð»ÑƒÑˆÐºÑƒ
 		 */
 		if (!$USER->IsAuthorized()) {
 			return true;
 		}
 		/**
-		 * Äëÿ àäìèíîâ íå ïîêàçûâàåì
+		 * Ð”Ð»Ñ Ð°Ð´Ð¼Ð¸Ð½Ð¾Ð² Ð½Ðµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼
 		 */
 		if ($USER->IsAdmin()) {
 			return false;
 		}
 		/**
-		 * Íå ïîêàçûâàåì òåì, ó êîãî åñòü ïðàâà íà ïðîïóñê çàãëóøêè
+		 * ÐÐµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°ÐµÐ¼ Ñ‚ÐµÐ¼, Ñƒ ÐºÐ¾Ð³Ð¾ ÐµÑÑ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð½Ð° Ð¿Ñ€Ð¾Ð¿ÑƒÑÐº Ð·Ð°Ð³Ð»ÑƒÑˆÐºÐ¸
 		 */
 		if ($APPLICATION->GetUserRight('lssoft.comingsoon')>='R') {
 			return false;
@@ -43,7 +43,7 @@ class CLsCsMain {
 		return true;
 	}
 	/**
-	 *	Ôîðìèðóåò äàííûå è ïîäêëþ÷àåò êîìïîíåíò äëÿ îòîáðàæåíèÿ çàãëóøêè
+	 *	Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÑ‚ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÑ‚ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð´Ð»Ñ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð·Ð°Ð³Ð»ÑƒÑˆÐºÐ¸
 	 */
 	public static function ShowComing() {
 		global $APPLICATION;
@@ -52,18 +52,18 @@ class CLsCsMain {
 			return;
 		}
 		/**
-		 * Ïîëó÷àåì òåêóùèé ñàéò
+		 * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ ÑÐ°Ð¹Ñ‚
 		 */
 		$aSiteItem=CSite::GetByID(SITE_ID)->Fetch();
 		/**
-		 * Îïðåäåëÿåì òåìó îôîðìëåíèÿ
+		 * ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼ Ñ‚ÐµÐ¼Ñƒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ñ
 		 */
 		$sTheme=self::GetOptionSite('LS_CS_THEME_CUSTOM');
 		if (!$sTheme) {
 			$sTheme=self::GetOptionSite('LS_CS_THEME');
 		}
 		/**
-		 * Ïîäêëþ÷àåì êîìïîíåíò
+		 * ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚
 		 */
 		$APPLICATION->IncludeComponent("lssoft:cs",'.default',array(
 				'SHOW_TIMER' => true,
@@ -92,7 +92,7 @@ class CLsCsMain {
 		die();
 	}
 	/**
-	 * Âðàïïåð äëÿ óäîáíîãî ïîëó÷åíèÿ íàñòðîåê ìîäóëÿ äëÿ òåêóùåãî ñàéòà
+	 * Ð’Ñ€Ð°Ð¿Ð¿ÐµÑ€ Ð´Ð»Ñ ÑƒÐ´Ð¾Ð±Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº Ð¼Ð¾Ð´ÑƒÐ»Ñ Ð´Ð»Ñ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ³Ð¾ ÑÐ°Ð¹Ñ‚Ð°
 	 *
 	 * @param string $sName
 	 * @param string $sDefault
@@ -103,7 +103,7 @@ class CLsCsMain {
 		return COption::GetOptionString('lssoft.comingsoon',$sName.'_'.SITE_ID,$sDefault);
 	}
 	/**
-	 * Ïðîèçâîäèò ðåãèñòðàöèþ ïîëüçîâàòåëÿ
+	 * ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸ÑŽ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
 	 *
 	 * @param string $sLogin
 	 * @param string $sMail
@@ -115,7 +115,7 @@ class CLsCsMain {
 		global $APPLICATION, $DB, $REMOTE_ADDR;
 
 		/**
-		 * Ïðîâåðÿåì íåçàíÿòîñòü ëîãèíà è åìàéëà
+		 * ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½ÐµÐ·Ð°Ð½ÑÑ‚Ð¾ÑÑ‚ÑŒ Ð»Ð¾Ð³Ð¸Ð½Ð° Ð¸ ÐµÐ¼Ð°Ð¹Ð»Ð°
 		 */
 		if (COption::GetOptionString('main','new_user_email_uniq_check','N')=='Y') {
     		if (CUser::GetList($by='id',$order='desc',array('=EMAIL'=>$sMail))->Fetch()) {
@@ -123,13 +123,13 @@ class CLsCsMain {
     		}
     	}
 		/**
-		 * Ïðîâåðÿåì êîððåêòíîñòü ëîãèí
+		 * ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾ÑÑ‚ÑŒ Ð»Ð¾Ð³Ð¸Ð½
 		 */
 		if (CUser::GetByLogin($sLogin)->Fetch()) {
     		return false;
     	}
 		/**
-		 * Çàïóñêàåì ïðîöåññ ðåãèñòðàöèè
+		 * Ð—Ð°Ð¿ÑƒÑÐºÐ°ÐµÐ¼ Ð¿Ñ€Ð¾Ñ†ÐµÑÑ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸
 		 */
 		$APPLICATION->ResetException();
 

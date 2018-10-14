@@ -1,5 +1,5 @@
 <?
-$MESS["itlogic.messages_MODULE_NAME"] = "Ïî÷òà ñ ñàéòà";
-$MESS["itlogic.messages_MODULE_DESC"] = "Ïî÷òà ñ ñàéòà";
-$MESS["ITLOGIC_MESSAGES_POCTA_S_SAYTA"] = "Ïðîñìîòð ïî÷òû";
+$MESS["itlogic.messages_MODULE_NAME"] = "ÐŸÐ¾Ñ‡Ñ‚Ð° Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["itlogic.messages_MODULE_DESC"] = "ÐŸÐ¾Ñ‡Ñ‚Ð° Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["ITLOGIC_MESSAGES_POCTA_S_SAYTA"] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¿Ð¾Ñ‡Ñ‚Ñ‹";
 ?>

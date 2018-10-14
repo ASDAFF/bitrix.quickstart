@@ -1,6 +1,6 @@
 <?
-$MESS ['xls_MODULE_NAME'] = "XLS-çàãðóç÷èê";
-$MESS ['xls_MODULE_DESCRIPTION'] = "Çàãðóçêà äàííûõ ëèñòà Excel â ýëåìåíòû èíôîáëîêà";
-$MESS ["PARTNER_NAME"] = "Ýì Ñè Àðò";
+$MESS ['xls_MODULE_NAME'] = "XLS-Ð·Ð°Ð³Ñ€ÑƒÐ·Ñ‡Ð¸Ðº";
+$MESS ['xls_MODULE_DESCRIPTION'] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð»Ð¸ÑÑ‚Ð° Excel Ð² ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ["PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
 
 ?>

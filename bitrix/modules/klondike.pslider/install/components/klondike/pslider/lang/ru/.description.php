@@ -1,3 +1,3 @@
 <?
-$MESS["KLONDIKE_PSLIDER_PRODAUSIY_SLAYDER"] = "Ñëàéäåð òîâàðîâ";
+$MESS["KLONDIKE_PSLIDER_PRODAUSIY_SLAYDER"] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
 ?>

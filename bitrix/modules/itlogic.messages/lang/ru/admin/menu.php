@@ -1,3 +1,3 @@
 <?
-$MESS["ITLOGIC_MESSAGES_POCTA_S_SAYTA"] = "Ïî÷òà ñ ñàéòà";
+$MESS["ITLOGIC_MESSAGES_POCTA_S_SAYTA"] = "ÐŸÐ¾Ñ‡Ñ‚Ð° Ñ ÑÐ°Ð¹Ñ‚Ð°";
 ?>

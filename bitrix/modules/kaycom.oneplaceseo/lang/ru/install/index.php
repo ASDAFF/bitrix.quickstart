@@ -1,16 +1,16 @@
 <?
-$MESS["kaycom.oneplaceseo_MODULE_NAME"] = "Óïðîùåííàÿ ïðàâêà ìåòà-òåãîâ äëÿ SEO";
-$MESS["kaycom.oneplaceseo_MODULE_DESC"] = "Èñïîëüçóåòñÿ äëÿ óäîáíîãî óïðàâëåíèÿ ìåòà-òåãàìè íà ëþáîé ñòðàíèöå âàøåãî ñàéòà";
-$MESS["kaycom.oneplaceseo_PARTNER_NAME"] = "ÊàéÊîì Ýêñïåðòñ";
+$MESS["kaycom.oneplaceseo_MODULE_NAME"] = "Ð£Ð¿Ñ€Ð¾Ñ‰ÐµÐ½Ð½Ð°Ñ Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¼ÐµÑ‚Ð°-Ñ‚ÐµÐ³Ð¾Ð² Ð´Ð»Ñ SEO";
+$MESS["kaycom.oneplaceseo_MODULE_DESC"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð´Ð»Ñ ÑƒÐ´Ð¾Ð±Ð½Ð¾Ð³Ð¾ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¼ÐµÑ‚Ð°-Ñ‚ÐµÐ³Ð°Ð¼Ð¸ Ð½Ð° Ð»ÑŽÐ±Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ Ð²Ð°ÑˆÐµÐ³Ð¾ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["kaycom.oneplaceseo_PARTNER_NAME"] = "ÐšÐ°Ð¹ÐšÐ¾Ð¼ Ð­ÐºÑÐ¿ÐµÑ€Ñ‚Ñ";
 $MESS["kaycom.oneplaceseo_PARTNER_URI"] = "http://www.kaycom.ru";
 
-$MESS["kaycom.oneplaceseo_IBLOCK_TYPE_NAME"] 	= "Ìåòà-òåãè äëÿ SEO";
+$MESS["kaycom.oneplaceseo_IBLOCK_TYPE_NAME"] 	= "ÐœÐµÑ‚Ð°-Ñ‚ÐµÐ³Ð¸ Ð´Ð»Ñ SEO";
 $MESS["kaycom.oneplaceseo_PROP_KEYWORDS"] 		= "Keywords";
 $MESS["kaycom.oneplaceseo_PROP_DESCRIPTION"] 	= "Description";
 $MESS["kaycom.oneplaceseo_PROP_TITLE"] 			= "Title";
 
 
-$MESS ['kaycom.UNINSTALL_TITLE'] = "Äåèíñòàëëÿöèÿ ìîäóëÿ \"Óïðîùåííàÿ ïðàâêà ìåòà-òåãîâ äëÿ SEO\"";
-$MESS ['kaycom.SAVE_IBLOCK'] = "Ñîõðàíèòü èíôîáëîê ñ äàííûìè";
+$MESS ['kaycom.UNINSTALL_TITLE'] = "Ð”ÐµÐ¸Ð½ÑÑ‚Ð°Ð»Ð»ÑÑ†Ð¸Ñ Ð¼Ð¾Ð´ÑƒÐ»Ñ \"Ð£Ð¿Ñ€Ð¾Ñ‰ÐµÐ½Ð½Ð°Ñ Ð¿Ñ€Ð°Ð²ÐºÐ° Ð¼ÐµÑ‚Ð°-Ñ‚ÐµÐ³Ð¾Ð² Ð´Ð»Ñ SEO\"";
+$MESS ['kaycom.SAVE_IBLOCK'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸";
 
 ?>

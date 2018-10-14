@@ -122,12 +122,12 @@ if (CModule::IncludeModule('iblock'))
 				$SEARCH_EL_ID = $search_el["ID"];
 		}
 		$arLoadProductArray = Array(
-		  "MODIFIED_BY"    => $USER->GetID(), // элемент изменен текущим пользователем
-		  "IBLOCK_SECTION_ID" => $SECTION,          // элемент лежит в корне раздела
+		  "MODIFIED_BY"    => $USER->GetID(), // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+		  "IBLOCK_SECTION_ID" => $SECTION,          // СЌР»РµРјРµРЅС‚ Р»РµР¶РёС‚ РІ РєРѕСЂРЅРµ СЂР°Р·РґРµР»Р°
 		  "IBLOCK_ID"      => $XLS_IBLOCK_ID,
 		  "PROPERTY_VALUES"=> $PROP,
 		  "NAME"           => $one_row[$NAME_ID],
-		  "ACTIVE"         => "Y",            // активен
+		  "ACTIVE"         => "Y",            // Р°РєС‚РёРІРµРЅ
 		  "PREVIEW_TEXT"   => $preview_text,
 		  "DETAIL_TEXT"    => $detail_text,
 		 // "CATALOG_PRICE_".$CATALOG_PRICE_BASE_ID =>$base_price, 
@@ -139,12 +139,12 @@ if (CModule::IncludeModule('iblock'))
 		if ($MAKE_TRANSLIT_CODE)
 		{
 			$params = Array(
-							"max_len" => "75", // обрезает символьный код до 75 символов
-							"change_case" => "L", // буквы преобразуются к нижнему регистру
-							"replace_space" => "-", // меняем пробелы на нижнее подчеркивание
-							"replace_other" => "-", // меняем левые символы на нижнее подчеркивание
-							"delete_repeat_replace" => "true", // удаляем повторяющиеся нижние подчеркивания
-							"use_google" => "false", // отключаем использование google
+							"max_len" => "75", // РѕР±СЂРµР·Р°РµС‚ СЃРёРјРІРѕР»СЊРЅС‹Р№ РєРѕРґ РґРѕ 75 СЃРёРјРІРѕР»РѕРІ
+							"change_case" => "L", // Р±СѓРєРІС‹ РїСЂРµРѕР±СЂР°Р·СѓСЋС‚СЃСЏ Рє РЅРёР¶РЅРµРјСѓ СЂРµРіРёСЃС‚СЂСѓ
+							"replace_space" => "-", // РјРµРЅСЏРµРј РїСЂРѕР±РµР»С‹ РЅР° РЅРёР¶РЅРµРµ РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ
+							"replace_other" => "-", // РјРµРЅСЏРµРј Р»РµРІС‹Рµ СЃРёРјРІРѕР»С‹ РЅР° РЅРёР¶РЅРµРµ РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ
+							"delete_repeat_replace" => "true", // СѓРґР°Р»СЏРµРј РїРѕРІС‚РѕСЂСЏСЋС‰РёРµСЃСЏ РЅРёР¶РЅРёРµ РїРѕРґС‡РµСЂРєРёРІР°РЅРёСЏ
+							"use_google" => "false", // РѕС‚РєР»СЋС‡Р°РµРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ google
 						 );
 				
 				$CODE = CUtil::Translit($one_row[$NAME_ID], "ru", $params);
@@ -180,12 +180,12 @@ if (CModule::IncludeModule('iblock'))
 			
 				$PROP[$CML2_LINK_CODE] = $PRODUCT_ID;
 				$arLoadSKUArray = Array(
-					  "MODIFIED_BY"    => $USER->GetID(), // элемент изменен текущим пользователем
-					  "IBLOCK_SECTION_ID" => $SECTION,          // элемент лежит в корне раздела
+					  "MODIFIED_BY"    => $USER->GetID(), // СЌР»РµРјРµРЅС‚ РёР·РјРµРЅРµРЅ С‚РµРєСѓС‰РёРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+					  "IBLOCK_SECTION_ID" => $SECTION,          // СЌР»РµРјРµРЅС‚ Р»РµР¶РёС‚ РІ РєРѕСЂРЅРµ СЂР°Р·РґРµР»Р°
 					  "IBLOCK_ID"      => $SKU_IBLOCK_ID,
 					  "PROPERTY_VALUES"=> $PROP,
 					  "NAME"           => $one_row[$NAME_ID],
-					  "ACTIVE"         => "Y",            // активен
+					  "ACTIVE"         => "Y",            // Р°РєС‚РёРІРµРЅ
 					  "PREVIEW_TEXT"   => $preview_text,
 					  "DETAIL_TEXT"    => $detail_text,
 					 // "CATALOG_PRICE_".$CATALOG_PRICE_BASE_ID =>$base_price, 
@@ -205,7 +205,7 @@ if (CModule::IncludeModule('iblock'))
 
 			if ($MCART_IS_SKU)
 			{	
-			 if ($base_price>0)// добавление базовой цены
+			 if ($base_price>0)// РґРѕР±Р°РІР»РµРЅРёРµ Р±Р°Р·РѕРІРѕР№ С†РµРЅС‹
 			  {
 			  CCatalogProduct::Add(array("ID"=>$PRICE_PROD_ID));
 				
@@ -250,10 +250,10 @@ if (CModule::IncludeModule('iblock'))
 		  
 			  }
 			  
-			  if($purchasing_price>0)// добавление закупочной цены
+			  if($purchasing_price>0)// РґРѕР±Р°РІР»РµРЅРёРµ Р·Р°РєСѓРїРѕС‡РЅРѕР№ С†РµРЅС‹
 			  {
 			  
-				$arPurchFields = array("PURCHASING_PRICE" => $purchasing_price);// зарезервированное количество
+				$arPurchFields = array("PURCHASING_PRICE" => $purchasing_price);// Р·Р°СЂРµР·РµСЂРІРёСЂРѕРІР°РЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ
 				CCatalogProduct::Update($PRICE_PROD_ID, $arPurchFields);
 			  }
 			 

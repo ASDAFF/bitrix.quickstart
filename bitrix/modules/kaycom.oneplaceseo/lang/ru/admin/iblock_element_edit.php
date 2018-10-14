@@ -1,4 +1,4 @@
 <?
-$MESS["kaycom.oneplaceseo_FIRST_TAB"] = "Ññûëêà";
-$MESS["kaycom.oneplaceseo_PROPS"] = "Çíà÷åíèÿ ìåòàòåãîâ";
+$MESS["kaycom.oneplaceseo_FIRST_TAB"] = "Ð¡ÑÑ‹Ð»ÐºÐ°";
+$MESS["kaycom.oneplaceseo_PROPS"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼ÐµÑ‚Ð°Ñ‚ÐµÐ³Ð¾Ð²";
 ?>

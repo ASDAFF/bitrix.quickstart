@@ -15,7 +15,7 @@ foreach ($temp as $k=>$val) {
 function getSimCode($arReplace, $name, $action, $str_space_replace, $str_other_replace) {
 	$code = strtr(trim($str), $arReplace);
 	$code = preg_replace("@\s+@i", $str_space_replace, $code);
-	$code = preg_replace('@(\++|\'+|\.+|\"+|\*+|\(+|\)+|\/+|\î+|\,+|\:+|)@i', '', $code);
+	$code = preg_replace('@(\++|\'+|\.+|\"+|\*+|\(+|\)+|\/+|\‚Äù+|\,+|\:+|)@i', '', $code);
 	$code = preg_replace('@\_+@i',$str_other_replace, $code);
 	
 	switch ($action) {

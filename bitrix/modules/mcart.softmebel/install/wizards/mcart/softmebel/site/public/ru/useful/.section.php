@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Покупателям";
-$arDirProperties = array(
-
-);
-?>

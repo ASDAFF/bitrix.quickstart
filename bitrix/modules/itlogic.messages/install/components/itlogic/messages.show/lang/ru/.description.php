@@ -1,5 +1,5 @@
 <?
-$MESS["MESSAGE_SHOW_NAME"] = "Îòïðàâëåííàÿ ïî÷òà";
-$MESS["MESSAGE_SHOW_DESC"] = "Ïîêàçàòü îòïðàâëåííóþ ïî÷òó ñ ñàéòà";
+$MESS["MESSAGE_SHOW_NAME"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ð°Ñ Ð¿Ð¾Ñ‡Ñ‚Ð°";
+$MESS["MESSAGE_SHOW_DESC"] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½ÑƒÑŽ Ð¿Ð¾Ñ‡Ñ‚Ñƒ Ñ ÑÐ°Ð¹Ñ‚Ð°";
 $MESS["ITLOGIC_COMPONENTS"] = "IT:LOGIC";
 ?>

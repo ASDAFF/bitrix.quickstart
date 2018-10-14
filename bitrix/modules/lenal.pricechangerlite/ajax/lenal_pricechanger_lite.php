@@ -83,7 +83,7 @@ elseif ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' && CModule::Includ
     //sssss;
     //$rsParentSection = CIBlockSection::GetByID();
     //if ($arParentSection = $rsParentSection->GetNext()) {
-    $arFilter = array('IBLOCK_ID' => intval($_REQUEST["id"]), "ACTIVE" => 'Y'); // выберет потомков без учета активности 'DEPTH_LEVEL' => 3,
+    $arFilter = array('IBLOCK_ID' => intval($_REQUEST["id"]), "ACTIVE" => 'Y'); // РІС‹Р±РµСЂРµС‚ РїРѕС‚РѕРјРєРѕРІ Р±РµР· СѓС‡РµС‚Р° Р°РєС‚РёРІРЅРѕСЃС‚Рё 'DEPTH_LEVEL' => 3,
     $rsSect = CIBlockSection::GetList(array('sort' => 'asc'), $arFilter);
     while ($arSect = $rsSect->GetNext()) {
 //        pre($arSect);
@@ -100,7 +100,7 @@ elseif ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' && CModule::Includ
             case 5: $dl = '..... ';
                 break;
         endswitch;
-        $data .= '<option value="' . $arSect["ID"] . '">' . $dl . '' . $arSect["NAME"] . ' [' . $arSect["ID"] . ']</option>'; // получаем подразделы
+        $data .= '<option value="' . $arSect["ID"] . '">' . $dl . '' . $arSect["NAME"] . ' [' . $arSect["ID"] . ']</option>'; // РїРѕР»СѓС‡Р°РµРј РїРѕРґСЂР°Р·РґРµР»С‹
     }
     //}
     echo $data;

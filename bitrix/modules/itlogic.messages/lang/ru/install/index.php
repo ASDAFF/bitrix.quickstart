@@ -1,7 +1,7 @@
 <?
-$MESS["itlogic.messages_MODULE_NAME"] = "Ïî÷òà ñ ñàéòà";
-$MESS["itlogic.messages_MODULE_DESC"] = "Ïî÷òà ñ ñàéòà";
-$MESS["itlogic.messages_MENU"] = "Ïðîñìîòð ïî÷òû";
+$MESS["itlogic.messages_MODULE_NAME"] = "ÐŸÐ¾Ñ‡Ñ‚Ð° Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["itlogic.messages_MODULE_DESC"] = "ÐŸÐ¾Ñ‡Ñ‚Ð° Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["itlogic.messages_MENU"] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¿Ð¾Ñ‡Ñ‚Ñ‹";
 $MESS["itlogic.messages_PARTNER_NAME"] = "IT:LOGIC";
 $MESS["itlogic.messages_PARTNER_URI"] = "http://www.itlogic-ua.com/";
 ?>

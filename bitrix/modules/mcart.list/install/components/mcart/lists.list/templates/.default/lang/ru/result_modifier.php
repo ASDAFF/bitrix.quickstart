@@ -1,4 +1,4 @@
 <?
-$MESS ['CT_BLL_ENLARGE'] = "Óâåëè÷èòü";
-$MESS ['CT_BLL_DOWNLOAD'] = "Ñêà÷àòü";
+$MESS ['CT_BLL_ENLARGE'] = "Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ";
+$MESS ['CT_BLL_DOWNLOAD'] = "Ð¡ÐºÐ°Ñ‡Ð°Ñ‚ÑŒ";
 ?>

@@ -1,6 +1,6 @@
 <?
-$MESS["IBLOCK_MODULE_NOT_INSTALLED"]            = "Ìîäóëü èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
-$MESS["KLONDIKE_PSLIDER_MODULE_NOT_INSTALLED"]  = "Ìîäóëü ñëàéäåðà òîâàðîâ íå óñòàíîâëåí";
-$MESS['CATALOG_ERROR2BASKET']                  = "Îøèáêà äîáàâëåíèÿ òîâàðà â êîðçèíó";
-$MESS['IBLOCK_ERROR']                          = "Íå âûáðàí èíôîáëîê";
+$MESS["IBLOCK_MODULE_NOT_INSTALLED"]            = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS["KLONDIKE_PSLIDER_MODULE_NOT_INSTALLED"]  = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS['CATALOG_ERROR2BASKET']                  = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS['IBLOCK_ERROR']                          = "ÐÐµ Ð²Ñ‹Ð±Ñ€Ð°Ð½ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
 ?>

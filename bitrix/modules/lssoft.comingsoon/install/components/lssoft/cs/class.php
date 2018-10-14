@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Êëàññ êîìïîíåíòà
+ * ÐšÐ»Ð°ÑÑ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°
  */
 class CLssoftCs extends CBitrixComponent {
 	/**
-	 * Îáðàáîòêà êîìïîíåíòà
+	 * ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð°
 	 */
 	public function executeComponent() {
 		/**
-		 * Ïîëó÷àåì ïåðåìåííûå
+		 * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ
 		 */
 		$arDefaultVariableAliases = array('CS_PAGE'=>'CSP');
 		$arComponentVariables = array('CS_PAGE');
@@ -17,14 +17,14 @@ class CLssoftCs extends CBitrixComponent {
 		$arVariableAliases=CComponentEngine::MakeComponentVariableAliases($arDefaultVariableAliases,$this->arParams["VARIABLE_ALIASES"]);
 		CComponentEngine::InitComponentVariables(false,$arComponentVariables,$arVariableAliases,$arVariables);
 		/**
-		 * Âàëèäàöèÿ ïåðåìåííûõ
+		 * Ð’Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ñ…
 		 */
 		$sPage=isset($arVariables['CS_PAGE']) ? $arVariables['CS_PAGE'] : 'show';
 		if (!in_array($sPage,array('show','registration'))) {
 			$sPage='show';
 		}
 		/**
-		 * Ïîäêëþ÷àåì øàáëîí
+		 * ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ ÑˆÐ°Ð±Ð»Ð¾Ð½
 		 */
 		$this->includeComponentTemplate($sPage);
     }

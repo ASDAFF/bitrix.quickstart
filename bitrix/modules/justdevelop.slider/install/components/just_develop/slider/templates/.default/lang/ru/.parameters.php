@@ -1,6 +1,6 @@
 <?
-$MESS["IBLOCK_CB_TMPL_WIDTH"] = "Ìàêñèìàëüíàÿ øèðèíà èçîáðàæåíèÿ";
-$MESS["IBLOCK_CB_TMPL_HEIGHT"] = "Ìàêñèìàëüíàÿ âûñîòà èçîáðàæåíèÿ";
-$MESS["IBLOCK_CB_TMPL_INTERVAL"] = "Èíòåðâàë (ñåê.)";
+$MESS["IBLOCK_CB_TMPL_WIDTH"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ ÑˆÐ¸Ñ€Ð¸Ð½Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+$MESS["IBLOCK_CB_TMPL_HEIGHT"] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ð²Ñ‹ÑÐ¾Ñ‚Ð° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+$MESS["IBLOCK_CB_TMPL_INTERVAL"] = "Ð˜Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» (ÑÐµÐº.)";
 
 ?>

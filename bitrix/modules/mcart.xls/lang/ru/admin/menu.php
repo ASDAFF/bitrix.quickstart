@@ -1,6 +1,6 @@
 <?
 $MESS ['MCART_EXCEL'] = "Excel";
-$MESS["MCART_EXCEL_IMPORT"] = "Çàãðóçêà";
+$MESS["MCART_EXCEL_IMPORT"] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°";
 
 
 ?>

@@ -1,5 +1,5 @@
 <?
-$MESS["MAIL_TEMPLATE_TYPE"] = "Âûáåðèòå òèï ïî÷òîâîãî øàáëîíà";
-$MESS["MAIL_TEMPLATE_EVENT_ID"] = "èëè óêàæèòå èäåíòèôèêàòîð (b_events ID)";
-$MESS["ITLOGIC_MESSAGES_NE_VAJNO"] = "íå âàæíî -";
+$MESS["MAIL_TEMPLATE_TYPE"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð°";
+$MESS["MAIL_TEMPLATE_EVENT_ID"] = "Ð¸Ð»Ð¸ ÑƒÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¸Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ (b_events ID)";
+$MESS["ITLOGIC_MESSAGES_NE_VAJNO"] = "Ð½Ðµ Ð²Ð°Ð¶Ð½Ð¾ -";
 ?>

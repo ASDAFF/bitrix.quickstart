@@ -124,14 +124,14 @@ Class kaycom_oneplaceseo extends CModule
 		global $APPLICATION;
 		if(!CModule::IncludeModule('iblock')) return false;
 		
-		//получаем тип инфоблока
+		//РїРѕР»СѓС‡Р°РµРј С‚РёРї РёРЅС„РѕР±Р»РѕРєР°
     	$iblockType = CIBlockType::GetList(
     		array(),
     		array(
     			"ID" => "kaycom_ONEPLACESEO"
     		)
     	);
-		//создаем, если такого нет
+		//СЃРѕР·РґР°РµРј, РµСЃР»Рё С‚Р°РєРѕРіРѕ РЅРµС‚
     	if(!$iblockType = $iblockType->GetNext()){
 			$iT = new CIBlockType();
     		$iblockType["ID"] =  $iT->Add(
@@ -147,18 +147,18 @@ Class kaycom_oneplaceseo extends CModule
     		);
     	}
     	
-		//если не создался, выходим
+		//РµСЃР»Рё РЅРµ СЃРѕР·РґР°Р»СЃСЏ, РІС‹С…РѕРґРёРј
     	if(!$iblockType["ID"]){
     		return false;
     	}
-		//получаем список всех сайтов
+		//РїРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє РІСЃРµС… СЃР°Р№С‚РѕРІ
     	$arSites = array();
     	$rsSites = CSite::GetList($by="sort", $order="desc", Array("ACTIVE" => "Y"));
 		while ($arSite = $rsSites->Fetch()){
 			$arSites[] = $arSite["ID"]; 
 		}
     	
-		//пытаемся найти инфоблок в нашем типе инфоблока
+		//РїС‹С‚Р°РµРјСЃСЏ РЅР°Р№С‚Рё РёРЅС„РѕР±Р»РѕРє РІ РЅР°С€РµРј С‚РёРїРµ РёРЅС„РѕР±Р»РѕРєР°
     	$iblocks = CIBlock::GetList(
     		array(),
     		array(
@@ -166,7 +166,7 @@ Class kaycom_oneplaceseo extends CModule
     			"CODE" => "kaycom_ONEPLACESEO"
     		)
     	);
-		//если нет - создаем инфоблок с заданным набором полей
+		//РµСЃР»Рё РЅРµС‚ - СЃРѕР·РґР°РµРј РёРЅС„РѕР±Р»РѕРє СЃ Р·Р°РґР°РЅРЅС‹Рј РЅР°Р±РѕСЂРѕРј РїРѕР»РµР№
     	if(!$iblock = $iblocks->GetNext()){
 			$ib = new CIBlock();
 			$iblock["ID"] = $ib->Add(
@@ -180,7 +180,7 @@ Class kaycom_oneplaceseo extends CModule
 					"SITE_ID" => $arSites,
 					"SORT" => 10,
 					"WORKFLOW" => "N",
-					"EDIT_FILE_AFTER" => (strpos (SM_VERSION, '12')!==false ? "/bitrix/modules/".$this->MODULE_ID."/admin/iblock_element_edit.php" : "") // TODO: добавить файл редактирования для 11 версии
+					"EDIT_FILE_AFTER" => (strpos (SM_VERSION, '12')!==false ? "/bitrix/modules/".$this->MODULE_ID."/admin/iblock_element_edit.php" : "") // TODO: РґРѕР±Р°РІРёС‚СЊ С„Р°Р№Р» СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёСЏ РґР»СЏ 11 РІРµСЂСЃРёРё
 				)
 			);
 			

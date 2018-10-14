@@ -1,7 +1,7 @@
 <?
-$MESS ['list_MODULE_NAME'] = "Êîìïîíåíò 'ñïèñîê'";
-$MESS ['list_MODULE_DESCRIPTION'] = "Ñïèñîê îò MCART";
-$MESS ["PARTNER_NAME"] = "Ýì Ñè Àðò";
+$MESS ['list_MODULE_NAME'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ 'ÑÐ¿Ð¸ÑÐ¾Ðº'";
+$MESS ['list_MODULE_DESCRIPTION'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¾Ñ‚ MCART";
+$MESS ["PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
 
 
 ?>

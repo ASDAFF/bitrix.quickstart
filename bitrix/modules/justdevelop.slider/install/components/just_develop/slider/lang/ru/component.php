@@ -1,4 +1,4 @@
 <?
-$MESS["IBLOCK_CBB_IBLOCK_NOT_INSTALLED"] = "Íå óñòàíîâëåí ìîäóëü \"Èíôîðìàöèîííûå áëîêè\"";
-$MESS["IBLOCK_CBB_HLIBLOCK_NOT_INSTALLED"] = "Íå óñòàíîâëåí ìîäóëü \"Highload Èíôîáëîêè\"";
+$MESS["IBLOCK_CBB_IBLOCK_NOT_INSTALLED"] = "ÐÐµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ \"Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ðµ Ð±Ð»Ð¾ÐºÐ¸\"";
+$MESS["IBLOCK_CBB_HLIBLOCK_NOT_INSTALLED"] = "ÐÐµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ \"Highload Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¸\"";
 ?>

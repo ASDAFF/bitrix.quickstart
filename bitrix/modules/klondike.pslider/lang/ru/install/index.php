@@ -1,6 +1,6 @@
 <?
-$MESS["klondike.pslider_MODULE_NAME"] = "Ñëàéäåð òîâàðîâ";
-$MESS["klondike.pslider_MODULE_DESC"] = "Ñëàéäåð òîâàðîâ ñ ýôôåêòîì ïàðàëàêñ";
-$MESS["klondike.pslider_PARTNER_NAME"] = "Êëîíäàéê Ãðóïï";
+$MESS["klondike.pslider_MODULE_NAME"] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
+$MESS["klondike.pslider_MODULE_DESC"] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ñ ÑÑ„Ñ„ÐµÐºÑ‚Ð¾Ð¼ Ð¿Ð°Ñ€Ð°Ð»Ð°ÐºÑ";
+$MESS["klondike.pslider_PARTNER_NAME"] = "ÐšÐ»Ð¾Ð½Ð´Ð°Ð¹Ðº Ð“Ñ€ÑƒÐ¿Ð¿";
 $MESS["klondike.pslider_PARTNER_URI"] = "http://klondike-studio.ru";
 ?>

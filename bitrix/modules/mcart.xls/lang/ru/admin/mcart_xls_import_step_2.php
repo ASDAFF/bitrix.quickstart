@@ -1,13 +1,13 @@
 <?
-$MESS["NEXT_STEP"] = "Äàëåå";
-$MESS["MCART_IMPORT_XLS_STEP_2"]='Èìïîðò xls-ïðàéñà, ØÀÃ 2';
-$MESS["MCART_COLUMN_DIAPAZONE"] = "Äèàïàçîí êîëîíîê (íàïðèìåð, B-E)";
-$MESS["XLS_SELECT_IBLOCK"] = "Âûáåðèòå èíôîáëîê";
-$MESS["XLS_MCART_READY"] = 'Ãîòîâî';
-$MESS["XLS_ELEMENT_ADDED"] = "Äîáàâëåí ýëåìåíò";
-$MESS["XLS_ELEMENT_UPDATED"] = "Îáíîâëåí ýëåìåíò";
-$MESS["XLS_ADDED_COUNT"] = "Âñåãî ýëåìåíòîâ äîáàâëåíî: ";
-$MESS["XLS_UPDATED_COUNT"] = "Âñåãî ýëåìåíòîâ îáíîâëåíî: ";
-$MESS["XLS_WITH_ERROR_COUNT"] = "Ñ îøèáêàìè: ";
+$MESS["NEXT_STEP"] = "Ð”Ð°Ð»ÐµÐµ";
+$MESS["MCART_IMPORT_XLS_STEP_2"]='Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ xls-Ð¿Ñ€Ð°Ð¹ÑÐ°, Ð¨ÐÐ“ 2';
+$MESS["MCART_COLUMN_DIAPAZONE"] = "Ð”Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½ ÐºÐ¾Ð»Ð¾Ð½Ð¾Ðº (Ð½Ð°Ð¿Ñ€Ð¸Ð¼ÐµÑ€, B-E)";
+$MESS["XLS_SELECT_IBLOCK"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["XLS_MCART_READY"] = 'Ð“Ð¾Ñ‚Ð¾Ð²Ð¾';
+$MESS["XLS_ELEMENT_ADDED"] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚";
+$MESS["XLS_ELEMENT_UPDATED"] = "ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚";
+$MESS["XLS_ADDED_COUNT"] = "Ð’ÑÐµÐ³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾: ";
+$MESS["XLS_UPDATED_COUNT"] = "Ð’ÑÐµÐ³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾: ";
+$MESS["XLS_WITH_ERROR_COUNT"] = "Ð¡ Ð¾ÑˆÐ¸Ð±ÐºÐ°Ð¼Ð¸: ";
 
 ?>

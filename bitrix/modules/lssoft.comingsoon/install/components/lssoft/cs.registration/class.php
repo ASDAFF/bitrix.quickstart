@@ -34,7 +34,7 @@ class CLssoftCsRegistration extends CBitrixComponent {
 				if (!CModule::IncludeModule("iblock")) {
 					LocalRedirect($APPLICATION->GetCurPage());
 				}
-				// Ñìîòðèì êëþ÷
+				// Ð¡Ð¼Ð¾Ñ‚Ñ€Ð¸Ð¼ ÐºÐ»ÑŽÑ‡
 				$res=CIBlock::GetList(Array(), Array("CODE"=>'ls_cs_user'));
     			if ($aIBlock=$res->Fetch()) {
     				if ($aInvite=CIBlockElement::GetList(array(),array('IBLOCK_ID'=>$aIBlock['ID'],'PROPERTY_KEY'=>$arVariables['CS_CONFIRM_KEY']))->Fetch()) {
@@ -55,12 +55,12 @@ class CLssoftCsRegistration extends CBitrixComponent {
     
     public function SubmitRegistration() {
     	if (!CModule::IncludeModule("iblock")) {
-    		$this->sError='Íå óäàëîñü ïîäêëþ÷èòü ìîäóëü èíôîáëîêîâ';
+    		$this->sError='ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²';
     		return false;
     	}
     	$res=CIBlock::GetList(Array(), Array("CODE"=>'ls_cs_user'));
     	if (!($aIBlock=$res->Fetch())) {
-    		$this->sError='Íå óäàëîñü íàéòè èíôîáëîê';
+    		$this->sError='ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð½Ð°Ð¹Ñ‚Ð¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº';
     		return false;
     	}
 
@@ -70,44 +70,44 @@ class CLssoftCsRegistration extends CBitrixComponent {
 			$this->sLogin=isset($_POST['login']) ? (string)$_POST['login'] : false;
 		}
 
-    	// Ïðîâåðÿåì êîððåêòíîñòü åìàéëà
+    	// ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾ÑÑ‚ÑŒ ÐµÐ¼Ð°Ð¹Ð»Ð°
     	$this->sMail=isset($_POST['mail']) ? (string)$_POST['mail'] : false;
     	if (!check_email($this->sMail,true)) {
-    		$this->sErrorMail='Ïðîâåðüòå ôîðìàò åìàéë àäðåñà';
+    		$this->sErrorMail='ÐŸÑ€Ð¾Ð²ÐµÑ€ÑŒÑ‚Ðµ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ ÐµÐ¼Ð°Ð¹Ð» Ð°Ð´Ñ€ÐµÑÐ°';
     		return false;
     	}
     	if (COption::GetOptionString('main','new_user_email_uniq_check','N')=='Y') {
     		if (CUser::GetList($by='id',$order='desc',array('=EMAIL'=>$this->sMail))->Fetch()) {
-    			$this->sErrorMail='E-mail óæå çàíÿò äðóãèì ïîëüçîâàòåëåì';
+    			$this->sErrorMail='E-mail ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚ Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼';
     			return false;
     		}
     	}
     	if (CIBlockElement::GetList(array(),array('IBLOCK_ID'=>$aIBlock['ID'],'NAME'=>$this->sMail))->Fetch()) {
-    		$this->sErrorMail='E-mail óæå çàíÿò äðóãèì ïîëüçîâàòåëåì';
+    		$this->sErrorMail='E-mail ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚ Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼';
     		return false;
     	}
 
 		if ($bNeedLogin) {
-			// Ïðîâåðÿåì êîððåêòíîñòü ëîãèí
+			// ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾ÑÑ‚ÑŒ Ð»Ð¾Ð³Ð¸Ð½
 			if ($this->sLogin!=trim($this->sLogin)) {
-				$this->sErrorLogin='Ëîãèí ñîäåðæèò êðàéíèå ïðîáåëû';
+				$this->sErrorLogin='Ð›Ð¾Ð³Ð¸Ð½ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ ÐºÑ€Ð°Ð¹Ð½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±ÐµÐ»Ñ‹';
 				return false;
 			}
 			if (strlen($this->sLogin)<3) {
-				$this->sErrorLogin='Ëîãèí äîëæåí áûòü íå ìåíåå 3 ñèìâîëîâ';
+				$this->sErrorLogin='Ð›Ð¾Ð³Ð¸Ð½ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 3 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²';
 				return false;
 			}
 			if (CUser::GetByLogin($this->sLogin)->Fetch()) {
-				$this->sErrorLogin='Ëîãèí óæå çàíÿò äðóãèì ïîëüçîâàòåëåì';
+				$this->sErrorLogin='Ð›Ð¾Ð³Ð¸Ð½ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚ Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼';
 				return false;
 			}
 			if (CIBlockElement::GetList(array(),array('IBLOCK_ID'=>$aIBlock['ID'],'PROPERTY_LOGIN'=>$this->sLogin))->Fetch()) {
-				$this->sErrorLogin='Ëîãèí óæå çàíÿò äðóãèì ïîëüçîâàòåëåì';
+				$this->sErrorLogin='Ð›Ð¾Ð³Ð¸Ð½ ÑƒÐ¶Ðµ Ð·Ð°Ð½ÑÑ‚ Ð´Ñ€ÑƒÐ³Ð¸Ð¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼';
 				return false;
 			}
 		}
     	
-    	// Ñîõðàíÿåì
+    	// Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼
     	$sKey=md5(uniqid(mt_rand(),true));
 
     	$oElement=new CIBlockElement;
@@ -144,7 +144,7 @@ class CLssoftCsRegistration extends CBitrixComponent {
 			}
 			return true;
 		} else {
-  			$this->sError='Âîçíèêëà îøèáêà: '.$oElement->LAST_ERROR;
+  			$this->sError='Ð’Ð¾Ð·Ð½Ð¸ÐºÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°: '.$oElement->LAST_ERROR;
     		return false;
 		}
     }

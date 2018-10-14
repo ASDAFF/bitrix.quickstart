@@ -1,14 +1,14 @@
 <?
-$MESS ['SPEEDTEST_MODULE_NAME'] = "Òåñò ñêîðîñòè èíòåðíåò-ñîåäèíåíèÿ";
-$MESS ['SPEEDTEST_MODULE_DESCRIPTION'] = "Çàìåðÿåò ñêîðîñòü íà ïðèìåðå ïåðåäà÷è âðåìåííîãî ôàéëà";
-$MESS ["PARTNER_NAME"] = "Ýì Ñè Àðò";
-//$MESS['SPEEDTEST_IP_ADDRESS'] = "ip àäðåñ ïîñåòèòåëÿ";
-$MESS['SPEEDTEST_DATE_TEST'] = "Äàòà è âðåìÿ çàìåðà";
-$MESS["SPEEDTEST_SPEED_UP"] = "Èñõîäÿùàÿ ñêîðîñòü";
-$MESS["SPEEDTEST_SPEED_DOWN"] = "Âõîäÿùàÿ ñêîðîñòü";
+$MESS ['SPEEDTEST_MODULE_NAME'] = "Ð¢ÐµÑÑ‚ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸ Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚-ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ";
+$MESS ['SPEEDTEST_MODULE_DESCRIPTION'] = "Ð—Ð°Ð¼ÐµÑ€ÑÐµÑ‚ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ Ð½Ð° Ð¿Ñ€Ð¸Ð¼ÐµÑ€Ðµ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‡Ð¸ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°";
+$MESS ["PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
+//$MESS['SPEEDTEST_IP_ADDRESS'] = "ip Ð°Ð´Ñ€ÐµÑ Ð¿Ð¾ÑÐµÑ‚Ð¸Ñ‚ÐµÐ»Ñ";
+$MESS['SPEEDTEST_DATE_TEST'] = "Ð”Ð°Ñ‚Ð° Ð¸ Ð²Ñ€ÐµÐ¼Ñ Ð·Ð°Ð¼ÐµÑ€Ð°";
+$MESS["SPEEDTEST_SPEED_UP"] = "Ð˜ÑÑ…Ð¾Ð´ÑÑ‰Ð°Ñ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ";
+$MESS["SPEEDTEST_SPEED_DOWN"] = "Ð’Ñ…Ð¾Ð´ÑÑ‰Ð°Ñ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ";
 $MESS['SPEEDTEST_IB_TYPE_NAME'] = "SpeedTest";
-$MESS['SPEEDTEST_IB_TYPE_NAME_RU'] = "Òåñò ñêîðîñòè";
+$MESS['SPEEDTEST_IB_TYPE_NAME_RU'] = "Ð¢ÐµÑÑ‚ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚Ð¸";
 $MESS['SPEEDTEST_IB_NAME'] = "SpeedTest_stetistic";
-$MESS['SPEEDTEST_IB_NAME_RU'] = "Ñòàòèñòèêà SpeedTest";
+$MESS['SPEEDTEST_IB_NAME_RU'] = "Ð¡Ñ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ° SpeedTest";
 
 ?>

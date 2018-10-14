@@ -10,9 +10,9 @@ if ($POST_RIGHT == "D")
     $APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
 $arSite       = CSite::GetByID("s1")->Fetch();
-$sTableID     = "tbl_messages"; // ID таблицы
-$oSort        = new CAdminSorting($sTableID, "ID", "asc"); // объект сортировки
-$lAdmin       = new CAdminList($sTableID, $oSort); // основной объект списка
+$sTableID     = "tbl_messages"; // ID С‚Р°Р±Р»РёС†С‹
+$oSort        = new CAdminSorting($sTableID, "ID", "asc"); // РѕР±СЉРµРєС‚ СЃРѕСЂС‚РёСЂРѕРІРєРё
+$lAdmin       = new CAdminList($sTableID, $oSort); // РѕСЃРЅРѕРІРЅРѕР№ РѕР±СЉРµРєС‚ СЃРїРёСЃРєР°
 $messages     = array();
 $events       = array();
 $reference    = array();
@@ -21,7 +21,7 @@ $where        = '';
 $where_count  = 0;
 
 // ******************************************************************** //
-//                ПОДГОТОВКА ИМЕН ШАБЛОНОВ                              //
+//                РџРћР”Р“РћРўРћР’РљРђ РРњР•Рќ РЁРђР‘Р›РћРќРћР’                              //
 // ******************************************************************** //
 $res = $DB->Query( "SELECT `b_event_message`.`ID`, `b_event_message`.`EVENT_NAME`, `b_event_message`.`MESSAGE`, `b_event_type`.`NAME`
 	FROM `b_event_type`,`b_event_message`
@@ -46,7 +46,7 @@ $arDialogParams = array(
 );
 
 // ******************************************************************** //
-//                           ФИЛЬТР                                     //
+//                           Р¤РР›Р¬РўР                                      //
 // ******************************************************************** //
 
 $arr_if_send = array(
@@ -62,7 +62,7 @@ $arr_if_send = array(
 
 $arr_find_code = array("reference"=>$reference,"reference_id"=>$reference_id);
 
-// опишем элементы фильтра
+// РѕРїРёС€РµРј СЌР»РµРјРµРЅС‚С‹ С„РёР»СЊС‚СЂР°
 $FilterArr = Array(
     "find_id",
     "find_code",
@@ -73,10 +73,10 @@ $FilterArr = Array(
     "find_if_send",
 );
 
-// инициализируем фильтр
+// РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј С„РёР»СЊС‚СЂ
 $lAdmin->InitFilter($FilterArr);
 
-// создадим массив фильтрации на основе значений фильтра
+// СЃРѕР·РґР°РґРёРј РјР°СЃСЃРёРІ С„РёР»СЊС‚СЂР°С†РёРё РЅР° РѕСЃРЅРѕРІРµ Р·РЅР°С‡РµРЅРёР№ С„РёР»СЊС‚СЂР°
 if(count($lAdmin->arFilterErrors)==0){
     $arFilter = Array(
         "ID"             => $find_id,
@@ -138,18 +138,18 @@ foreach($arFilter as $key=>$val){
 
 $res = $DB->Query( "SELECT * FROM `b_event` ".$where." ORDER BY ".$DB->ForSql(strtolower($by))." ".$DB->ForSql(strtolower($order)) );
 
-// преобразуем список в экземпляр класса CAdminResult
+// РїСЂРµРѕР±СЂР°Р·СѓРµРј СЃРїРёСЃРѕРє РІ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° CAdminResult
 $rsData = new CAdminResult($res, $sTableID);
 
-// аналогично CDBResult инициализируем постраничную навигацию.
+// Р°РЅР°Р»РѕРіРёС‡РЅРѕ CDBResult РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РїРѕСЃС‚СЂР°РЅРёС‡РЅСѓСЋ РЅР°РІРёРіР°С†РёСЋ.
 $rsData->NavStart();
 
-// отправим вывод переключателя страниц в основной объект $lAdmin
+// РѕС‚РїСЂР°РІРёРј РІС‹РІРѕРґ РїРµСЂРµРєР»СЋС‡Р°С‚РµР»СЏ СЃС‚СЂР°РЅРёС† РІ РѕСЃРЅРѕРІРЅРѕР№ РѕР±СЉРµРєС‚ $lAdmin
 $lAdmin->NavText($rsData->GetNavPrint(""));
 
 
 // ******************************************************************** //
-//                ПОДГОТОВКА СПИСКА К ВЫВОДУ                            //
+//                РџРћР”Р“РћРўРћР’РљРђ РЎРџРРЎРљРђ Рљ Р’Р«Р’РћР”РЈ                            //
 // ******************************************************************** //
 
 $lAdmin->AddHeaders(array(
@@ -204,7 +204,7 @@ while($arRes = $rsData->NavNext(true, "f_")){
         }
     }
 
-    // создаем строку. результат - экземпляр класса CAdminListRow
+    // СЃРѕР·РґР°РµРј СЃС‚СЂРѕРєСѓ. СЂРµР·СѓР»СЊС‚Р°С‚ - СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° CAdminListRow
     $row =& $lAdmin->AddRow($f_ID, $arRes);
     $row->AddViewField("EVENT_NAME_ROW", $event_name);
     $row->AddViewField("DATE_INSERT_ROW", $f_DATE_INSERT);
@@ -212,15 +212,15 @@ while($arRes = $rsData->NavNext(true, "f_")){
     $row->AddViewField("DATE_EXEC_ROW", $f_DATE_EXEC);
 
     $arDialogParams["content"] = htmlspecialcharsback($mess);
-    // преобразование в объект и замена кавычек
+    // РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёРµ РІ РѕР±СЉРµРєС‚ Рё Р·Р°РјРµРЅР° РєР°РІС‹С‡РµРє
     $strParams = CUtil::PhpToJsObject($arDialogParams);
     $strParams = str_replace('\'[code]', '', $strParams);
     $strParams = str_replace('[code]\'', '', $strParams);
 
-    // сформируем контекстное меню
+    // СЃС„РѕСЂРјРёСЂСѓРµРј РєРѕРЅС‚РµРєСЃС‚РЅРѕРµ РјРµРЅСЋ
     $arActions = Array();
 
-    // редактирование элемента
+    // СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ СЌР»РµРјРµРЅС‚Р°
     $arActions[] = array(
         "ICON"=>"edit",
         "DEFAULT"=>true,
@@ -228,19 +228,19 @@ while($arRes = $rsData->NavNext(true, "f_")){
         "ACTION"=>"(new BX.CDialog(".$strParams.")).Show()"
     );
 
-    // если последний элемент - разделитель, почистим мусор.
+    // РµСЃР»Рё РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ - СЂР°Р·РґРµР»РёС‚РµР»СЊ, РїРѕС‡РёСЃС‚РёРј РјСѓСЃРѕСЂ.
     if(is_set($arActions[count($arActions)-1], "SEPARATOR"))
         unset($arActions[count($arActions)-1]);
 
-    // применим контекстное меню к строке
+    // РїСЂРёРјРµРЅРёРј РєРѕРЅС‚РµРєСЃС‚РЅРѕРµ РјРµРЅСЋ Рє СЃС‚СЂРѕРєРµ
     $row->AddActions($arActions);
 }
 
 // ******************************************************************** //
-//                ВЫВОД                                                 //
+//                Р’Р«Р’РћР”                                                 //
 // ******************************************************************** //
 
-// альтернативный вывод
+// Р°Р»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Р№ РІС‹РІРѕРґ
 $lAdmin->CheckListMode();
 
 $APPLICATION->SetTitle(GetMessage("TITLE"));
@@ -248,10 +248,10 @@ $APPLICATION->SetTitle(GetMessage("TITLE"));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 
 // ******************************************************************** //
-//                ВЫВОД ФИЛЬТРА                                         //
+//                Р’Р«Р’РћР” Р¤РР›Р¬РўР Рђ                                         //
 // ******************************************************************** //
 
-// создадим объект фильтра
+// СЃРѕР·РґР°РґРёРј РѕР±СЉРµРєС‚ С„РёР»СЊС‚СЂР°
 $oFilter = new CAdminFilter(
     $sTableID."_filter",
     array(
@@ -294,7 +294,7 @@ $oFilter = new CAdminFilter(
 </form>
 
 <?
-// выведем таблицу списка элементов
+// РІС‹РІРµРґРµРј С‚Р°Р±Р»РёС†Сѓ СЃРїРёСЃРєР° СЌР»РµРјРµРЅС‚РѕРІ
 $lAdmin->DisplayList();
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");

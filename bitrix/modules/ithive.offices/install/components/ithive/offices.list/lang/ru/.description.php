@@ -1,5 +1,5 @@
 <?
-$MESS ['T_IBLOCK_DESC_LIST'] = "Ñïèñîê îôèñîâ";
-$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "Ñïèñîê îôèñîâ èç îäíîãî èíôîðìàöèîííîãî áëîêà.";
-$MESS ['T_IBLOCK_DESC_NEWS'] = "Îôèñû";
+$MESS ['T_IBLOCK_DESC_LIST'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¾Ñ„Ð¸ÑÐ¾Ð²";
+$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¾Ñ„Ð¸ÑÐ¾Ð² Ð¸Ð· Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð³Ð¾ Ð±Ð»Ð¾ÐºÐ°.";
+$MESS ['T_IBLOCK_DESC_NEWS'] = "ÐžÑ„Ð¸ÑÑ‹";
 ?>

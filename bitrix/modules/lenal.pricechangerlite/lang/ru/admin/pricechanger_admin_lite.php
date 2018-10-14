@@ -1,51 +1,51 @@
 <?
-$MESS["MODULE_ADMIN_TITLE_DESC"] = "Ìîäóëü ìàññîâîãî èçìåíåíèÿ öåí Lite";
+$MESS["MODULE_ADMIN_TITLE_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¼Ð°ÑÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ñ†ÐµÐ½ Lite";
 
-$MESS["PROPERTIES_TITLE_DESC"] = "Óêàæèòå ïàðàìåòðû ìîäóëÿ";
-$MESS["PROPERTIES_DESC"] = "Ìîäóëü ìàññîâîãî èçìåíåíèÿ öåí";
+$MESS["PROPERTIES_TITLE_DESC"] = "Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["PROPERTIES_DESC"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¼Ð°ÑÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ñ†ÐµÐ½";
 
-$MESS["MODULE_PARAMETERS_TITLE"] = "Ïàðàìåòðû ìîäóëÿ";
-$MESS["MODULE_PARAMETERS_DESC"] = "Íàñòðîéêè ïàðàìåòðîâ ìîäóëÿ";
-$MESS["MODULE_PARAMETERS_TITLE2"] = "Ðåçóëüòàò";
-$MESS["MODULE_PARAMETERS_DESC2"] = "Ðåçóëüòàò ðàáîòû ìîäóëÿ";
+$MESS["MODULE_PARAMETERS_TITLE"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["MODULE_PARAMETERS_DESC"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["MODULE_PARAMETERS_TITLE2"] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚";
+$MESS["MODULE_PARAMETERS_DESC2"] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 
-$MESS["LL_error"] = "Îøèáêà";
+$MESS["LL_error"] = "ÐžÑˆÐ¸Ð±ÐºÐ°";
 
-$MESS["ACT_HEADER_DESC"] = "Àêòèâíîñòü";
-$MESS["PARAMETER_HEADER_DESC"] = "Ïàðàìåòð";
-$MESS["VALUE_HEADER_DESC"] = "Çíà÷åíèå";
-$MESS["PERSENT_DESC"] = "Ïðîöåíò íàöåíêè (%)";
+$MESS["ACT_HEADER_DESC"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["PARAMETER_HEADER_DESC"] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€";
+$MESS["VALUE_HEADER_DESC"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ";
+$MESS["PERSENT_DESC"] = "ÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð½Ð°Ñ†ÐµÐ½ÐºÐ¸ (%)";
 
-$MESS["IBLOCK_DESC"] = "Âûáåðèòå èíôîáëîê";
-$MESS["IBLOCK_OPTION_DESC"] = "Ñâîéñòâî èíôîáëîêà";
-$MESS["IBLOCK_OPTION_VAL_DESC"] = "Çíà÷åíèå ñâîéñòâà";
+$MESS["IBLOCK_DESC"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["IBLOCK_OPTION_DESC"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_OPTION_VAL_DESC"] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°";
 
-$MESS["BUTTON_VAL_DESC"] = "Çàïóñòèòü îáíîâëåíèå";
-$MESS["BUTTON_TITLE_DESC"] = "Ñîõðàíèòü èçìåíåíèÿ è âåðíóòüñÿ";
-$MESS ['LL_LOADING'] = "Çàãðóçêà...";
-$MESS ['LL_FIND'] = "Íàéäåíî òîâàðîâ:";
-$MESS["LL_SELECT_OPTION"] = "--âûáåðèòå ñâîéñòâî--";
-$MESS["LL_SELECT_IBLOCK"] = "--âûáåðèòå èíôîáëîê--"; 
+$MESS["BUTTON_VAL_DESC"] = "Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ";
+$MESS["BUTTON_TITLE_DESC"] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ð¸ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ";
+$MESS ['LL_LOADING'] = "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°...";
+$MESS ['LL_FIND'] = "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²:";
+$MESS["LL_SELECT_OPTION"] = "--Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð¾--";
+$MESS["LL_SELECT_IBLOCK"] = "--Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº--"; 
 
-$MESS["LL_PRICE_ITEM"] = "Èçìåíåíèå öåíû";  
-$MESS["LL_NAME_ITEM"] = "Íàçâàíèå òîâàðà";  
+$MESS["LL_PRICE_ITEM"] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ Ñ†ÐµÐ½Ñ‹";  
+$MESS["LL_NAME_ITEM"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°";  
 
-$MESS["imp_results"] = "Ðåçóëüòàòû îáíîâëåíèÿ:";
-$MESS["imp_results_total"] = "Âñåãî âûáðàíî òîâàðîâ:";
-$MESS["imp_results_added"] = "Îáíîâëåíî:";
-$MESS["imp_results_added_torg"] = "Òîðãîâûõ:";
-$MESS["imp_results_err"] = "Îøèáîê:";
+$MESS["imp_results"] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ:";
+$MESS["imp_results_total"] = "Ð’ÑÐµÐ³Ð¾ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²:";
+$MESS["imp_results_added"] = "ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾:";
+$MESS["imp_results_added_torg"] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ñ…:";
+$MESS["imp_results_err"] = "ÐžÑˆÐ¸Ð±Ð¾Ðº:";
 
-$MESS['LL_LOG_TYPE'] = '[LL_PRICE_UPDATE] Ìîäóëü ìàññîâîãî èçìåíåíèÿ öåí Lite';
-$MESS['LL_SKU_UPD'] = 'Îáíîâèòü öåíû òîðãîâûì';
-$MESS['LL_ALL_SUBDIR'] = 'Âñå êàòåãîðèè';
-$MESS['LL_SUBDIR'] = 'Êàòåãîðèÿ';
-$MESS['LL_SUBDIR_CHILD'] = 'Îáíîâèòü äëÿ äî÷åðíèõ';
-$MESS['LL_YES'] = 'äà';
-$MESS['LL_PRICE_UD'] = 'Èçìåíåíèå öåíû';
-$MESS['LL_PRICE_D'] = 'Óìåíüøèòü';
-$MESS['LL_PRICE_U'] = 'Óâåëè÷èòü';
-$MESS['LL_COMMENT'] = 'Êîììåíòàðèé';
-$MESS['LL_FIND_SKU'] = 'Ó ýòîãî èíôîáëîêà åñòü òîðãîâûå! Îáíîâèòü äëÿ íèõ öåíû?';
-$MESS['LL_PRICE'] = 'Ñâîéñòâî â êîòîðîì óêàçàíà öåíà';
+$MESS['LL_LOG_TYPE'] = '[LL_PRICE_UPDATE] ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð¼Ð°ÑÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ Ñ†ÐµÐ½ Lite';
+$MESS['LL_SKU_UPD'] = 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ†ÐµÐ½Ñ‹ Ñ‚Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ð¼';
+$MESS['LL_ALL_SUBDIR'] = 'Ð’ÑÐµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸';
+$MESS['LL_SUBDIR'] = 'ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ';
+$MESS['LL_SUBDIR_CHILD'] = 'ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð´Ð»Ñ Ð´Ð¾Ñ‡ÐµÑ€Ð½Ð¸Ñ…';
+$MESS['LL_YES'] = 'Ð´Ð°';
+$MESS['LL_PRICE_UD'] = 'Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ Ñ†ÐµÐ½Ñ‹';
+$MESS['LL_PRICE_D'] = 'Ð£Ð¼ÐµÐ½ÑŒÑˆÐ¸Ñ‚ÑŒ';
+$MESS['LL_PRICE_U'] = 'Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ';
+$MESS['LL_COMMENT'] = 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹';
+$MESS['LL_FIND_SKU'] = 'Ð£ ÑÑ‚Ð¾Ð³Ð¾ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° ÐµÑÑ‚ÑŒ Ñ‚Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ! ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð´Ð»Ñ Ð½Ð¸Ñ… Ñ†ÐµÐ½Ñ‹?';
+$MESS['LL_PRICE'] = 'Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¼ ÑƒÐºÐ°Ð·Ð°Ð½Ð° Ñ†ÐµÐ½Ð°';
 ?>

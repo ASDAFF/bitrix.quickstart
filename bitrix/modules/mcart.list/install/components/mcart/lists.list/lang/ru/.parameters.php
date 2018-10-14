@@ -1,14 +1,14 @@
 <?
-$MESS["CP_BLL_IBLOCK_TYPE_ID"] = "Òèï èíôîáëîêà";
-$MESS["CP_BLL_IBLOCK_ID"] = "Èíôîáëîê";
-$MESS["CP_BLL_SECTION_ID"] = "Ðàçäåë";
-$MESS["CP_BLL_LISTS_URL"] = "URL ãëàâíîé ñòðàíèöû ñïèñêîâ";
-$MESS["CP_BLL_LIST_EDIT_URL"] = "URL íàñòðîéêè ñïèñêà";
-$MESS["CP_BLL_LIST_URL"] = "URL ñïèñêà";
-$MESS["CP_BLL_LIST_SECTION_URL"] = "Óïðàâëåíèå ðàçäåëàìè";
-$MESS["CP_BLL_LIST_ELEMENT_URL"] = "Ðåäàêòèðîâàíèå ýëåìåíòà";
-$MESS["CP_BLL_BIZPROC_WORKFLOW_START_URL"] = "URL çàïóñêà áèçíåñ-ïðîöåññà";
-$MESS["CP_BLL_BIZPROC_LOG_URL"] = "URL ïðîñìîòðà æóðíàëà áèçíåñ-ïðîöåññà";
-$MESS["CP_BLL_LIST_FILE_URL"] = "URL ôàéëà";
-$MESS["CP_BLL_BIZPROC_WORKFLOW_ADMIN_URL"] = "URL ñïèñêà áèçíåñ-ïðîöåññîâ";
+$MESS["CP_BLL_IBLOCK_TYPE_ID"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["CP_BLL_IBLOCK_ID"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+$MESS["CP_BLL_SECTION_ID"] = "Ð Ð°Ð·Ð´ÐµÐ»";
+$MESS["CP_BLL_LISTS_URL"] = "URL Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ ÑÐ¿Ð¸ÑÐºÐ¾Ð²";
+$MESS["CP_BLL_LIST_EDIT_URL"] = "URL Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÑÐ¿Ð¸ÑÐºÐ°";
+$MESS["CP_BLL_LIST_URL"] = "URL ÑÐ¿Ð¸ÑÐºÐ°";
+$MESS["CP_BLL_LIST_SECTION_URL"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°Ð¼Ð¸";
+$MESS["CP_BLL_LIST_ELEMENT_URL"] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["CP_BLL_BIZPROC_WORKFLOW_START_URL"] = "URL Ð·Ð°Ð¿ÑƒÑÐºÐ° Ð±Ð¸Ð·Ð½ÐµÑ-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐ°";
+$MESS["CP_BLL_BIZPROC_LOG_URL"] = "URL Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€Ð° Ð¶ÑƒÑ€Ð½Ð°Ð»Ð° Ð±Ð¸Ð·Ð½ÐµÑ-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐ°";
+$MESS["CP_BLL_LIST_FILE_URL"] = "URL Ñ„Ð°Ð¹Ð»Ð°";
+$MESS["CP_BLL_BIZPROC_WORKFLOW_ADMIN_URL"] = "URL ÑÐ¿Ð¸ÑÐºÐ° Ð±Ð¸Ð·Ð½ÐµÑ-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐ¾Ð²";
 ?>

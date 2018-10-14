@@ -2,7 +2,7 @@
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_before.php");
 
 /**
- * Ðàçðåøàåì äîñòóï òîëüêî àäìèíàì
+ * Ð Ð°Ð·Ñ€ÐµÑˆÐ°ÐµÐ¼ Ð´Ð¾ÑÑ‚ÑƒÐ¿ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð°Ð´Ð¼Ð¸Ð½Ð°Ð¼
  */
 if (!$USER->IsAdmin()) {
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
@@ -23,49 +23,49 @@ if (!CModule::IncludeModule("iblock") or !CModule::IncludeModule("lssoft.comings
 
 $aData=array();
 /**
- * Äëÿ êàæäîãî èç ñàéòà ïîäñ÷èòûâàåì êîëè÷åñòâî ïðèãëàøåíèé
+ * Ð”Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ Ð¸Ð· ÑÐ°Ð¹Ñ‚Ð° Ð¿Ð¾Ð´ÑÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÐ¼ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹
  */
 $res=CSite::GetDefList();
 $aSiteIdItems=array();
 while($aSite=$res->Fetch()) {
 	$aDataItem=array();
 	/**
-	 * Ôîðìèðóåì äàííûå
+	 * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ
 	 */
 	$aDataItem['SITE_ID']=$aSite['LID'];
 	$aDataItem['SITE_NAME']=$aSite['NAME'] ? $aSite['NAME'].' ('.$aSite['LID'].')' : $aSite['LID'];
 	$aDataItem['COUNT_INVITE']=CIBlockElement::GetList(array(),array('PROPERTY_SITE'=>$aSite['LID']),true);
 	$aDataItem['COUNT_NOT_CONFIRM']=CIBlockElement::GetList(array(),array('PROPERTY_SITE'=>$aSite['LID'],'!=PROPERTY_CONFIRM'=>1),true);
 	/**
-	 * Äîïîëíèòåëüíî ñîõðàíÿåì ñïèñîê ñàéòîâ
+	 * Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ ÑÐ¾Ñ…Ñ€Ð°Ð½ÑÐµÐ¼ ÑÐ¿Ð¸ÑÐ¾Ðº ÑÐ°Ð¹Ñ‚Ð¾Ð²
 	 */
 	$aSiteIdItems[$aSite['LID']]=$aSite;
 	$aData[]=$aDataItem;
 }
 
 /**
- * Îáðàáîòêà îòïðàâêè ôîðìû
+ * ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹
  */
 if (isset($_POST['submit'])) {
 	if (isset($_POST['site_id']) and isset($aSiteIdItems[$_POST['site_id']])) {
 		$aSite=$aSiteIdItems[$_POST['site_id']];
 		$bNeedRegistration=isset($_POST['make_registration']) ? true : false;
 		/**
-		 * Äàííûå äëÿ ñòàòèñòèêè âûïîëíåíèÿ îòïðàâêè ïðèãëàøåíèé
+		 * Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ ÑÑ‚Ð°Ñ‚Ð¸ÑÑ‚Ð¸ÐºÐ¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹
 		 */
 		$aResultSend=array(
 			'count_send'=>0,
 			'count_registration'=>0,
 		);
 		/**
-		 * Äåëàåì âûáîðêó ïðèãëàøåíèé (èòåðàöèÿìè ïî 100 øòóê)
+		 * Ð”ÐµÐ»Ð°ÐµÐ¼ Ð²Ñ‹Ð±Ð¾Ñ€ÐºÑƒ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ð¹ (Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸ÑÐ¼Ð¸ Ð¿Ð¾ 100 ÑˆÑ‚ÑƒÐº)
 		 */
 		$iPage=1;
 		$res=CIBlockElement::GetList(array('created'=>'asc'),array('PROPERTY_SITE'=>$aSite['LID'],'PROPERTY_CONFIRM'=>1),false,array('iNumPage'=>$iPage,'nPageSize'=>100),array('ID','PROPERTY_LOGIN','NAME','PROPERTY_SITE'));
 		while($res->NavPageCount>=$iPage) {
 			while($aItem=$res->Fetch()) {
 				/**
-				 * Ôîðìèðóåì äàííûå äëÿ øàáëîíà ïèñüìà
+				 * Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° Ð¿Ð¸ÑÑŒÐ¼Ð°
 				 */
 				$aDataNotify=array(
 					'EMAIL_TO'=>$aItem['NAME'],
@@ -75,11 +75,11 @@ if (isset($_POST['submit'])) {
 					$aDataNotify['URL_SITE']='';
 				}
 				/**
-				 * Òèï ïî÷òîâîãî óâåäîìëåíèÿ
+				 * Ð¢Ð¸Ð¿ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑƒÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ
 				 */
 				$sNotifyType='LS_CS_INVITE_SEND';
 				/**
-				 * Ïðîâåðÿåì íåîáõîäèìîñòü ðåãèñòðàöèè
+				 * ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸
 				 */
 				if ($bNeedRegistration and $aItem['PROPERTY_LOGIN_VALUE']) {
 					if ($aUser=CLsCsMain::RegisterUser($aItem['PROPERTY_LOGIN_VALUE'],$aItem['NAME'],$aSite['LID'])) {
@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
 					}
 				}
 				/**
-				 * Îòïðàâëÿåì ïðèãëàøåíèå
+				 * ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ðµ
 				 */
 				$aFilter = Array(
 					"TYPE_ID"=> $sNotifyType,

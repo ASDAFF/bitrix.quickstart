@@ -1,7 +1,7 @@
 <?php
 
-$MESS['LS_CS_REGISTRATION'] = "Ïîëó÷èòü ïðèãëàøåíèå";
-$MESS['LS_CS_CLOSE'] = "Çàêðûòü";
-$MESS['LS_CS_FORM_LOGIN'] = "Æåëàåìûé ëîãèí";
-$MESS['LS_CS_FORM_MAIL'] = "Ýëåêòðîííàÿ ïî÷òà";
-$MESS['LS_CS_FORM_SUBMIT'] = "Çàðåãèñòðèðîâàòüñÿ";
+$MESS['LS_CS_REGISTRATION'] = "ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ðµ";
+$MESS['LS_CS_CLOSE'] = "Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ";
+$MESS['LS_CS_FORM_LOGIN'] = "Ð–ÐµÐ»Ð°ÐµÐ¼Ñ‹Ð¹ Ð»Ð¾Ð³Ð¸Ð½";
+$MESS['LS_CS_FORM_MAIL'] = "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¾Ð½Ð½Ð°Ñ Ð¿Ð¾Ñ‡Ñ‚Ð°";
+$MESS['LS_CS_FORM_SUBMIT'] = "Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ";

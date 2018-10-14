@@ -1,15 +1,15 @@
 <?
-$MESS["justdevelop.slider_MODULE_NAME"] = "Ñëàéäåð (Highload)";
-$MESS["justdevelop.slider_MODULE_DESC"] = "Ïðîñòî ñëàéäåð";
+$MESS["justdevelop.slider_MODULE_NAME"] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ (Highload)";
+$MESS["justdevelop.slider_MODULE_DESC"] = "ÐŸÑ€Ð¾ÑÑ‚Ð¾ ÑÐ»Ð°Ð¹Ð´ÐµÑ€";
 $MESS["justdevelop.slider_PARTNER_NAME"] = "Just Develop";
 $MESS["justdevelop.slider_PARTNER_URI"] = "http://justdevelop.pro";
 
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_FILE'] = 'Èçîáðàæåíèå';
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_LINK'] = 'Ññûëêà';
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_HEAD'] = 'Çàãîëîâîê';
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_DESC'] = 'Îïèñàíèå';
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_BTNAME'] = 'Òåêñò êíîïêè';
-$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_SORT'] = 'Ñîðòèðîâêà';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_FILE'] = 'Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_LINK'] = 'Ð¡ÑÑ‹Ð»ÐºÐ°';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_HEAD'] = 'Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_DESC'] = 'ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_BTNAME'] = 'Ð¢ÐµÐºÑÑ‚ ÐºÐ½Ð¾Ð¿ÐºÐ¸';
+$MESS['JD_CUSTOM_FIELD_NAME_RU_UF_SORT'] = 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°';
 
 $MESS['JD_CUSTOM_FIELD_NAME_EN_UF_FILE'] = 'Image';
 $MESS['JD_CUSTOM_FIELD_NAME_EN_UF_LINK'] = 'Link';

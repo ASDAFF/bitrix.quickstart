@@ -1,7 +1,7 @@
 <?
-$MESS ['CC_BCF_ALL'] = "(âñå)";
-$MESS ['CC_BCF_TILL'] = "ïî";
-$MESS ['CC_BCF_TOP_LEVEL'] = "Âåðõíèé óðîâåíü";
-$MESS ['CC_BCF_INCLUDE_SUBSECTIONS'] = "âêëþ÷àÿ ïîäðàçäåëû";
-$MESS ['CC_BCF_MODULE_NOT_INSTALLED'] = "Ìîäóëü Èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
+$MESS ['CC_BCF_ALL'] = "(Ð²ÑÐµ)";
+$MESS ['CC_BCF_TILL'] = "Ð¿Ð¾";
+$MESS ['CC_BCF_TOP_LEVEL'] = "Ð’ÐµÑ€Ñ…Ð½Ð¸Ð¹ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ";
+$MESS ['CC_BCF_INCLUDE_SUBSECTIONS'] = "Ð²ÐºÐ»ÑŽÑ‡Ð°Ñ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS ['CC_BCF_MODULE_NOT_INSTALLED'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
 ?>

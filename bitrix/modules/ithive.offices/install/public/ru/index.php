@@ -1,8 +1,8 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Èíòåðàêòèâíàÿ êàðòà ñ îôèñàìè ãäå îñóùåñòâëÿåòñÿ ïðîäàæà íàøåé ïðîäóêöèè");
-$APPLICATION->SetPageProperty("keywords", "Èíòåðàêòèâíàÿ êàðòà, îôèñ, íàøà ïðîäóêöèÿ");
-$APPLICATION->SetPageProperty("title", "Ãäå êóïèòü íàøó ïðîäóêöèþ");
-$APPLICATION->SetTitle("Ãäå êóïèòü");
+$APPLICATION->SetPageProperty("description", "Ð˜Ð½Ñ‚ÐµÑ€Ð°ÐºÑ‚Ð¸Ð²Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð° Ñ Ð¾Ñ„Ð¸ÑÐ°Ð¼Ð¸ Ð³Ð´Ðµ Ð¾ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð»ÑÐµÑ‚ÑÑ Ð¿Ñ€Ð¾Ð´Ð°Ð¶Ð° Ð½Ð°ÑˆÐµÐ¹ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ†Ð¸Ð¸");
+$APPLICATION->SetPageProperty("keywords", "Ð˜Ð½Ñ‚ÐµÑ€Ð°ÐºÑ‚Ð¸Ð²Ð½Ð°Ñ ÐºÐ°Ñ€Ñ‚Ð°, Ð¾Ñ„Ð¸Ñ, Ð½Ð°ÑˆÐ° Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ†Ð¸Ñ");
+$APPLICATION->SetPageProperty("title", "Ð“Ð´Ðµ ÐºÑƒÐ¿Ð¸Ñ‚ÑŒ Ð½Ð°ÑˆÑƒ Ð¿Ñ€Ð¾Ð´ÑƒÐºÑ†Ð¸ÑŽ");
+$APPLICATION->SetTitle("Ð“Ð´Ðµ ÐºÑƒÐ¿Ð¸Ñ‚ÑŒ");
 ?>
  <?$APPLICATION->IncludeComponent(
 	"ithive:offices",
@@ -54,7 +54,7 @@ $APPLICATION->SetTitle("Ãäå êóïèòü");
 		"DETAIL_PROPERTY_CODE" => array(),
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "N",
-		"DETAIL_PAGER_TITLE" => "Ñòðàíèöà",
+		"DETAIL_PAGER_TITLE" => "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°",
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_SHOW_ALL" => "N",
 		"DISPLAY_PANEL" => "N",
@@ -69,7 +69,7 @@ $APPLICATION->SetTitle("Ãäå êóïèòü");
 		"CACHE_GROUPS" => "N",
 		"DISPLAY_TOP_PAGER" => "Y",
 		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "Íîâîñòè",
+		"PAGER_TITLE" => "ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => "",
 		"PAGER_DESC_NUMBERING" => "N",

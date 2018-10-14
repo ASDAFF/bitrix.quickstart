@@ -1,4 +1,4 @@
 <?php
-$MESS["TASK_NAME_LS_CS_SKEEP_DENIED"] = "Îáÿçàòåëüíî ïîêàçûâàòü ñòðàíèöó Coming Soon";
-$MESS["TASK_NAME_LS_CS_SKEEP_ALLOW"] = "Íå ïîêàçûâàòü ñòðàíèöó Coming Soon";
+$MESS["TASK_NAME_LS_CS_SKEEP_DENIED"] = "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Coming Soon";
+$MESS["TASK_NAME_LS_CS_SKEEP_ALLOW"] = "ÐÐµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ Coming Soon";
 ?>

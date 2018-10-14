@@ -36,7 +36,7 @@ endif; //if($MOD_RIGHT>="W"):
 
 ?>
 
-<?//èíèàöèàëèçàöèÿ âêëàäîê
+<?//Ð¸Ð½Ð¸Ð°Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð²ÐºÐ»Ð°Ð´Ð¾Ðº
 $aTabs = array();
 $aTabs[] = array("DIV" => "edit0", "TAB" => GetMessage("MAIN_TAB_RIGHTS"), "ICON" => "main_settings", "TITLE" => GetMessage("MAIN_TAB_RIGHTS"));
 $aTabs[] = array("DIV" => "edit1", "TAB" => GetMessage("MCART_TAB_EXTRAMAIL_SETTINGSOUTSMTP"), "ICON" => "extramail_settings", "TITLE" => GetMessage("MCART_TAB_TITLE_EXTRAMAIL_SETTINGSOUTSMTP"));

@@ -1,7 +1,7 @@
 <?
 $MESS["MCART_TEST_SPEED"] = 'TestSpeed';
-$MESS["MCART_TEST_SPEED_DESC"] = "Âû÷èñëÿåò ñêîðîñòü äî ñåðâåðà è îáðàòíî";
-$MESS["MCART_PARTNER_NAME"] = "Ýì Ñè Àðò";
-$MESS["MCART_UTILS"] = "Èíñòðóìåíòû";
+$MESS["MCART_TEST_SPEED_DESC"] = "Ð’Ñ‹Ñ‡Ð¸ÑÐ»ÑÐµÑ‚ ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ Ð´Ð¾ ÑÐµÑ€Ð²ÐµÑ€Ð° Ð¸ Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾";
+$MESS["MCART_PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚";
+$MESS["MCART_UTILS"] = "Ð˜Ð½ÑÑ‚Ñ€ÑƒÐ¼ÐµÐ½Ñ‚Ñ‹";
 		
 ?>

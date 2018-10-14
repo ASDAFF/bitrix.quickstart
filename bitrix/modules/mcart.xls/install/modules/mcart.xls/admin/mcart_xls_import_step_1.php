@@ -186,7 +186,7 @@ foreach ($rowTitleData as $row_str)
 <?
 global $MCART_IS_SKU;
 
-	// определение базовой цены	
+	// РѕРїСЂРµРґРµР»РµРЅРёРµ Р±Р°Р·РѕРІРѕР№ С†РµРЅС‹	
 	if ((CModule::IncludeModule('catalog'))&&(CModule::IncludeModule('sale')))
 	{
 	$MCART_IS_SKU = true;

@@ -1,5 +1,5 @@
 <?
-$MESS ['IBLOCK_CB_DESC_SLIDE'] = "Ñëàéäåðû è áàíåðû";
-$MESS ['IBLOCK_CB_DESC_NAME'] = "Ñëàéäåð (Highload)";
-$MESS ['IBLOCK_CB_DESC_DESC'] = "Ïðîñòî ñëàéäåð";
+$MESS ['IBLOCK_CB_DESC_SLIDE'] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€Ñ‹ Ð¸ Ð±Ð°Ð½ÐµÑ€Ñ‹";
+$MESS ['IBLOCK_CB_DESC_NAME'] = "Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ (Highload)";
+$MESS ['IBLOCK_CB_DESC_DESC'] = "ÐŸÑ€Ð¾ÑÑ‚Ð¾ ÑÐ»Ð°Ð¹Ð´ÐµÑ€";
 ?>

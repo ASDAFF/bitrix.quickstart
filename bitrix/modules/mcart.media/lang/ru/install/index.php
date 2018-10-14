@@ -1,9 +1,9 @@
 <?
-$MESS ['MM_MODULE_NAME'] = "Ñèíõðîíèçàöèÿ ìåäèàáèáëèîòåêè";
-$MESS ['MM_MODULE_DESCRIPTION'] = "Ñèíõðîíèçèðóåò ôîòîãðàôèè ìåäèàáèáëèîòåêè è èíôîáëîêà";
-$MESS ["MM_PARTNER_NAME"] = "Ýì Ñè Àðò"; 
-$MESS ['MM_IBLOCK_NAME'] = "Ìåäèàáèáëèîòåêà";
+$MESS ['MM_MODULE_NAME'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸";
+$MESS ['MM_MODULE_DESCRIPTION'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€ÑƒÐµÑ‚ Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ð¸ Ð¼ÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ Ð¸ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ["MM_PARTNER_NAME"] = "Ð­Ð¼ Ð¡Ð¸ ÐÑ€Ñ‚"; 
+$MESS ['MM_IBLOCK_NAME'] = "ÐœÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°";
 $MESS ["MM_IBLOCK_TYPE_EN"] = 'medialibrary';
-$MESS ["MM_IBLOCK_TYPE_RU"] = 'Ìåäèàáèáëèîòåêà';
-$MESS ['MM_UF_COLLECTION_NAME'] = 'id êîëëåêöèè';
+$MESS ["MM_IBLOCK_TYPE_RU"] = 'ÐœÐµÐ´Ð¸Ð°Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ°';
+$MESS ['MM_UF_COLLECTION_NAME'] = 'id ÐºÐ¾Ð»Ð»ÐµÐºÑ†Ð¸Ð¸';
 ?>

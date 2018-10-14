@@ -1,19 +1,19 @@
 <?
-$MESS["SPECIALOFFER_TITLE"] = "Ñïåöïðåäëîæåíèå";
-$MESS["SALELEADER_TITLE"] = "Õèò ïðîäàæ";
-$MESS["NEWPRODUCT_TITLE"] = "Íîâèíêà";
-$MESS["CATALOG_COMPARE"] = "Ñðàâíèòü";
-$MESS["CATALOG_ADD"] = "Êóïèòü";
-$MESS["CATALOG_ADD_TITLE"] = "Äîáàâèòü òîâàð â êîðçèíó";
-$MESS["CATALOG_MORE"] = "Ïîäðîáíåå";
-$MESS["CR_PRICE_OT"] = "îò ";
-$MESS["CATALOG_SUBSCRIBE"] = "Ïîäïèñàòüñÿ";
-$MESS["CATALOG_IN_SUBSCRIBE"] = "Ïîäïèñàí";
-$MESS["CATALOG_ADD_TO_CART"] = "Äîáàâèòü â êîðçèíó";
-$MESS["CATALOG_IN_CART"] = "Â êîðçèíå";
-$MESS["CATALOG_IN_CART_DELAY"] = "Îòëîæåí";
-$MESS["CATALOG_OFFER_NAME"] = "Íàçâàíèå";
-$MESS["EMPTY_VALUE_SKU"] = "Íå çàäàíî";
-$MESS["CATALOG_NOT_AVAILABLE"] = "Îòñóòñòâóåò";
-$MESS["CATALOG_CHOOSE"] = "Âûáåðèòå";
+$MESS["SPECIALOFFER_TITLE"] = "Ð¡Ð¿ÐµÑ†Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ";
+$MESS["SALELEADER_TITLE"] = "Ð¥Ð¸Ñ‚ Ð¿Ñ€Ð¾Ð´Ð°Ð¶";
+$MESS["NEWPRODUCT_TITLE"] = "ÐÐ¾Ð²Ð¸Ð½ÐºÐ°";
+$MESS["CATALOG_COMPARE"] = "Ð¡Ñ€Ð°Ð²Ð½Ð¸Ñ‚ÑŒ";
+$MESS["CATALOG_ADD"] = "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ";
+$MESS["CATALOG_ADD_TITLE"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ‚Ð¾Ð²Ð°Ñ€ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS["CATALOG_MORE"] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ";
+$MESS["CR_PRICE_OT"] = "Ð¾Ñ‚ ";
+$MESS["CATALOG_SUBSCRIBE"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐ°Ñ‚ÑŒÑÑ";
+$MESS["CATALOG_IN_SUBSCRIBE"] = "ÐŸÐ¾Ð´Ð¿Ð¸ÑÐ°Ð½";
+$MESS["CATALOG_ADD_TO_CART"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS["CATALOG_IN_CART"] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ";
+$MESS["CATALOG_IN_CART_DELAY"] = "ÐžÑ‚Ð»Ð¾Ð¶ÐµÐ½";
+$MESS["CATALOG_OFFER_NAME"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["EMPTY_VALUE_SKU"] = "ÐÐµ Ð·Ð°Ð´Ð°Ð½Ð¾";
+$MESS["CATALOG_NOT_AVAILABLE"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚";
+$MESS["CATALOG_CHOOSE"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ";
 ?>

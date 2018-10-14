@@ -1,13 +1,13 @@
 <?php
 
-$MESS['LS_CS_TIMER'] = "Äî çàïóñêà ñàéòà îñòàëîñü";
-$MESS['LS_CS_TIMER_DAY'] = "äíåé";
-$MESS['LS_CS_TIMER_HOUR'] = "÷àñîâ";
-$MESS['LS_CS_TIMER_MINITS'] = "ìèíóò";
-$MESS['LS_CS_FEEDBACK'] = "Íàïèñàòü íàì";
-$MESS['LS_CS_LOGIN_PAGE'] = "Ñëóæåáíûé âõîä";
+$MESS['LS_CS_TIMER'] = "Ð”Ð¾ Ð·Ð°Ð¿ÑƒÑÐºÐ° ÑÐ°Ð¹Ñ‚Ð° Ð¾ÑÑ‚Ð°Ð»Ð¾ÑÑŒ";
+$MESS['LS_CS_TIMER_DAY'] = "Ð´Ð½ÐµÐ¹";
+$MESS['LS_CS_TIMER_HOUR'] = "Ñ‡Ð°ÑÐ¾Ð²";
+$MESS['LS_CS_TIMER_MINITS'] = "Ð¼Ð¸Ð½ÑƒÑ‚";
+$MESS['LS_CS_FEEDBACK'] = "ÐÐ°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð½Ð°Ð¼";
+$MESS['LS_CS_LOGIN_PAGE'] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ñ‹Ð¹ Ð²Ñ…Ð¾Ð´";
 $MESS['LS_CS_SHARE_FB'] = "Facebook";
 $MESS['LS_CS_SHARE_TW'] = "Twitter";
-$MESS['LS_CS_SHARE_VK'] = "Âêîíòàêòå";
-$MESS['LS_CS_SHARE_ODN'] = "Îäíîêëàññíèêè";
+$MESS['LS_CS_SHARE_VK'] = "Ð’ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ðµ";
+$MESS['LS_CS_SHARE_ODN'] = "ÐžÐ´Ð½Ð¾ÐºÐ»Ð°ÑÑÐ½Ð¸ÐºÐ¸";
 $MESS['LS_CS_SHARE_GP'] = "Google+";

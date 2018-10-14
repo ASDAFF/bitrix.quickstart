@@ -1,8 +1,8 @@
 <?
-$MESS["IBLOCK_CB_IBLOCK_TYPE"] = "Òèï èíôîáëîêà";
-$MESS["IBLOCK_CB_IBLOCK_ID"] = "Èäåíòèôèêàòîð èíôîáëîêà";
-$MESS["IBLOCK_CB_ELEMENT_ID"] = "Èäåíòèôèêàòîð ýëåìåíòà èíôîáëîêà";
-$MESS["IBLOCK_CB_ELEMENT_CODE"] = "Êîä ýëåìåíòà èíôîáëîêà";
-$MESS["IBLOCK_CB_PROP_CODE"] = "Òàáëèöà áðåíäîâ";
-$MESS["IBLOCK_CB_CACHE_GROUPS"] = "Ó÷èòûâàòü ïðàâà äîñòóïà";
+$MESS["IBLOCK_CB_IBLOCK_TYPE"] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_CB_IBLOCK_ID"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_CB_ELEMENT_ID"] = "Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_CB_ELEMENT_CODE"] = "ÐšÐ¾Ð´ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["IBLOCK_CB_PROP_CODE"] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° Ð±Ñ€ÐµÐ½Ð´Ð¾Ð²";
+$MESS["IBLOCK_CB_CACHE_GROUPS"] = "Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
 ?>

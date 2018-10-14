@@ -1,29 +1,29 @@
 <?php
 
-$MESS['LS_CS_MODULE_NAME'] = "Продвинутая заглушка";
-$MESS['LS_CS_MODULE_DESC'] = "Модуль для закрытия сайта на разработку";
+$MESS['LS_CS_MODULE_NAME'] = "РџСЂРѕРґРІРёРЅСѓС‚Р°СЏ Р·Р°РіР»СѓС€РєР°";
+$MESS['LS_CS_MODULE_DESC'] = "РњРѕРґСѓР»СЊ РґР»СЏ Р·Р°РєСЂС‹С‚РёСЏ СЃР°Р№С‚Р° РЅР° СЂР°Р·СЂР°Р±РѕС‚РєСѓ";
 $MESS['LS_CS_PARTNER_NAME'] = "LS-SOFT";
 $MESS['LS_CS_PARTNER_URI'] = "http://ls-soft.livestreetcms.com";
-$MESS['LS_CS_IBLOCK_TYPE_NAME'] = "Приглашения";
-$MESS['LS_CS_IBLOCK_NAME'] = "Список пользователей";
+$MESS['LS_CS_IBLOCK_TYPE_NAME'] = "РџСЂРёРіР»Р°С€РµРЅРёСЏ";
+$MESS['LS_CS_IBLOCK_NAME'] = "РЎРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№";
 $MESS['LS_CS_IBLOCK_MAIL'] = "E-mail";
-$MESS['LS_CS_IBLOCK_PROPERTY_LOGIN'] = "Логин";
-$MESS['LS_CS_IBLOCK_PROPERTY_SITE'] = "Сайт";
-$MESS['LS_CS_IBLOCK_PROPERTY_KEY'] = "Уникальный ключ";
-$MESS['LS_CS_IBLOCK_PROPERTY_CONFIRM_MAIL'] = "Подтверждение почты";
-$MESS['LS_CS_IBLOCK_EVENT_CONFIRM_REGISTRATION'] = "Подтверждение регистрации";
-$MESS['LS_CS_IBLOCK_EVENT_CONFIRM_REGISTRATION_MSG_TITLE'] = "Подтверждение почты";
+$MESS['LS_CS_IBLOCK_PROPERTY_LOGIN'] = "Р›РѕРіРёРЅ";
+$MESS['LS_CS_IBLOCK_PROPERTY_SITE'] = "РЎР°Р№С‚";
+$MESS['LS_CS_IBLOCK_PROPERTY_KEY'] = "РЈРЅРёРєР°Р»СЊРЅС‹Р№ РєР»СЋС‡";
+$MESS['LS_CS_IBLOCK_PROPERTY_CONFIRM_MAIL'] = "РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ РїРѕС‡С‚С‹";
+$MESS['LS_CS_IBLOCK_EVENT_CONFIRM_REGISTRATION'] = "РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ СЂРµРіРёСЃС‚СЂР°С†РёРё";
+$MESS['LS_CS_IBLOCK_EVENT_CONFIRM_REGISTRATION_MSG_TITLE'] = "РџРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ РїРѕС‡С‚С‹";
 $MESS['LS_CS_IBLOCK_EVENT_CONFIRM_REGISTRATION_MSG_TEXT'] = '
-					Необходимо подтвердить адрес почты.<br/>
-					Для подтверждения пройдите по ссылке <a href="http://#SERVER_NAME##LINK_CONFIRM#">http://#SERVER_NAME##LINK_CONFIRM#</a>
+					РќРµРѕР±С…РѕРґРёРјРѕ РїРѕРґС‚РІРµСЂРґРёС‚СЊ Р°РґСЂРµСЃ РїРѕС‡С‚С‹.<br/>
+					Р”Р»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РїСЂРѕР№РґРёС‚Рµ РїРѕ СЃСЃС‹Р»РєРµ <a href="http://#SERVER_NAME##LINK_CONFIRM#">http://#SERVER_NAME##LINK_CONFIRM#</a>
 ';
-$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND'] = "Уведомление об открытии сайта";
-$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_MSG_TITLE'] = "Сообщаем об открытии сайта";
-$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_MSG_TEXT'] = 'Сообщаем вам об открытии нашего сайта - <a href="http://#SERVER_NAME##URL_SITE#">http://#SERVER_NAME##URL_SITE#</a>!<br/>';
-$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_REGISTRATION'] = "Уведомление об открытии сайта с регистрацией";
+$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND'] = "РЈРІРµРґРѕРјР»РµРЅРёРµ РѕР± РѕС‚РєСЂС‹С‚РёРё СЃР°Р№С‚Р°";
+$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_MSG_TITLE'] = "РЎРѕРѕР±С‰Р°РµРј РѕР± РѕС‚РєСЂС‹С‚РёРё СЃР°Р№С‚Р°";
+$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_MSG_TEXT'] = 'РЎРѕРѕР±С‰Р°РµРј РІР°Рј РѕР± РѕС‚РєСЂС‹С‚РёРё РЅР°С€РµРіРѕ СЃР°Р№С‚Р° - <a href="http://#SERVER_NAME##URL_SITE#">http://#SERVER_NAME##URL_SITE#</a>!<br/>';
+$MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_REGISTRATION'] = "РЈРІРµРґРѕРјР»РµРЅРёРµ РѕР± РѕС‚РєСЂС‹С‚РёРё СЃР°Р№С‚Р° СЃ СЂРµРіРёСЃС‚СЂР°С†РёРµР№";
 $MESS['LS_CS_IBLOCK_EVENT_INVITE_SEND_REGISTRATION_MSG_TEXT'] = '
-					Сообщаем вам об открытии нашего сайта - <a href="http://#SERVER_NAME##URL_SITE#">http://#SERVER_NAME##URL_SITE#</a>!<br/>
-					Ваши регистрационные данные:<b/>
-					логин: #USER_LOGIN#<br/>
-					пароль: #USER_PASSWORD#<br/>
+					РЎРѕРѕР±С‰Р°РµРј РІР°Рј РѕР± РѕС‚РєСЂС‹С‚РёРё РЅР°С€РµРіРѕ СЃР°Р№С‚Р° - <a href="http://#SERVER_NAME##URL_SITE#">http://#SERVER_NAME##URL_SITE#</a>!<br/>
+					Р’Р°С€Рё СЂРµРіРёСЃС‚СЂР°С†РёРѕРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ:<b/>
+					Р»РѕРіРёРЅ: #USER_LOGIN#<br/>
+					РїР°СЂРѕР»СЊ: #USER_PASSWORD#<br/>
 ';

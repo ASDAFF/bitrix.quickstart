@@ -1,11 +1,11 @@
 <?
-$MESS["CT_BLL_TOOLBAR_ADD_ELEMENT_TITLE"] = "Äîáàâèòü íîâûé ýëåìåíò â òåêóùèé ðàçäåë ñïèñêà";
-$MESS["CT_BLL_TOOLBAR_EDIT_SECTION"] = "Óïðàâëåíèå ðàçäåëàìè";
-$MESS["CT_BLL_TOOLBAR_EDIT_SECTION_TITLE"] = "Óäàëåíèå è ðåäàêòèðîâàíèå ðàçäåëîâ";
-$MESS["CT_BLL_TOOLBAR_LIST"] = "Íàñòðîéêè ñïèñêà";
-$MESS["CT_BLL_TOOLBAR_LIST_TITLE"] = "Íàñòðîèòü ñïèñîê";
-$MESS["CT_BLL_MOVE_TO_SECTION"] = "ïåðåíåñòè â ðàçäåë";
-$MESS["CT_BLL_SELECTED"] = "Âûáðàíî";
-$MESS["CT_BLL_TOOLBAR_BIZPROC"] = "Áèçíåñ-ïðîöåññû";
-$MESS["CT_BLL_TOOLBAR_BIZPROC_TITLE"] = "Áèçíåñ-ïðîöåññû";
+$MESS["CT_BLL_TOOLBAR_ADD_ELEMENT_TITLE"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ñ€Ð°Ð·Ð´ÐµÐ» ÑÐ¿Ð¸ÑÐºÐ°";
+$MESS["CT_BLL_TOOLBAR_EDIT_SECTION"] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°Ð¼Ð¸";
+$MESS["CT_BLL_TOOLBAR_EDIT_SECTION_TITLE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¸ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS["CT_BLL_TOOLBAR_LIST"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÑÐ¿Ð¸ÑÐºÐ°";
+$MESS["CT_BLL_TOOLBAR_LIST_TITLE"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº";
+$MESS["CT_BLL_MOVE_TO_SECTION"] = "Ð¿ÐµÑ€ÐµÐ½ÐµÑÑ‚Ð¸ Ð² Ñ€Ð°Ð·Ð´ÐµÐ»";
+$MESS["CT_BLL_SELECTED"] = "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾";
+$MESS["CT_BLL_TOOLBAR_BIZPROC"] = "Ð‘Ð¸Ð·Ð½ÐµÑ-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÑ‹";
+$MESS["CT_BLL_TOOLBAR_BIZPROC_TITLE"] = "Ð‘Ð¸Ð·Ð½ÐµÑ-Ð¿Ñ€Ð¾Ñ†ÐµÑÑÑ‹";
 ?>

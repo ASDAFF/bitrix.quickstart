@@ -8,7 +8,7 @@ if (!CModule::IncludeModule($sModuleId)) {
 	return;
 }
 /**
- * Разрешаем только админам
+ * Р Р°Р·СЂРµС€Р°РµРј С‚РѕР»СЊРєРѕ Р°РґРјРёРЅР°Рј
  */
 if (!$USER->IsAdmin()) {
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
@@ -16,7 +16,7 @@ if (!$USER->IsAdmin()) {
 }
 
 /**
- * Определяем список возможных тем оформления
+ * РћРїСЂРµРґРµР»СЏРµРј СЃРїРёСЃРѕРє РІРѕР·РјРѕР¶РЅС‹С… С‚РµРј РѕС„РѕСЂРјР»РµРЅРёСЏ
  */
 $sDirComponent=$_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/'.$sModuleId.'/install/components/lssoft/cs';
 $aPaths = glob("$sDirComponent/templates/.default/themes/*", GLOB_ONLYDIR);
@@ -27,7 +27,7 @@ if($aPaths) {
 	}
 }
 /**
- * Дефолтный код для шаринга с социальных сетях
+ * Р”РµС„РѕР»С‚РЅС‹Р№ РєРѕРґ РґР»СЏ С€Р°СЂРёРЅРіР° СЃ СЃРѕС†РёР°Р»СЊРЅС‹С… СЃРµС‚СЏС…
  */
 $sDefaultLike="
 <span class='st_facebook_hcount' displayText='Facebook'></span><br/><br/>
@@ -39,7 +39,7 @@ $sDefaultLike="
 ";
 
 /**
- * Формируем настройки в виде табов для каждого сайта
+ * Р¤РѕСЂРјРёСЂСѓРµРј РЅР°СЃС‚СЂРѕР№РєРё РІ РІРёРґРµ С‚Р°Р±РѕРІ РґР»СЏ РєР°Р¶РґРѕРіРѕ СЃР°Р№С‚Р°
  */
 $aTabs=array();
 $aOptions=array();
@@ -47,7 +47,7 @@ $oSiteItems = CSite::GetList($by="sort",$order="desc");
 while($aSite=$oSiteItems->Fetch()) {
 	$sDateCalendar='<span id="calendar_'.$aSite['LID'].'">'.Calendar("LS_CS_TIMER_DATE_".$aSite['LID'],'cs_form').'</span>';
 	/**
-	 * Формируем список полей для каждого сайта
+	 * Р¤РѕСЂРјРёСЂСѓРµРј СЃРїРёСЃРѕРє РїРѕР»РµР№ РґР»СЏ РєР°Р¶РґРѕРіРѕ СЃР°Р№С‚Р°
 	 */
 	$aOptions[$aSite['LID']]=array(
     	Array("LS_CS_ENABLED_".$aSite['LID'],GetMessage('LS_CS_FORM_ENABLED'), "N", Array("checkbox", "Y")),
@@ -79,7 +79,7 @@ while($aSite=$oSiteItems->Fetch()) {
 }
 
 /**
- * Вкладка с настройками прав доступа
+ * Р’РєР»Р°РґРєР° СЃ РЅР°СЃС‚СЂРѕР№РєР°РјРё РїСЂР°РІ РґРѕСЃС‚СѓРїР°
  */
 $aTabs[]=array(
 		'DIV' => 'access_settings',
@@ -89,7 +89,7 @@ $aTabs[]=array(
 
 
 /**
- * Обработка отправки формы
+ * РћР±СЂР°Р±РѕС‚РєР° РѕС‚РїСЂР°РІРєРё С„РѕСЂРјС‹
  */
 if (isset($_POST['submit']) and check_bitrix_sessid()) {
 		$Update='Y';
@@ -98,7 +98,7 @@ if (isset($_POST['submit']) and check_bitrix_sessid()) {
 				continue;
 			}
 			/**
-			 * Теперь проходим по настройкам для каждого сайта
+			 * РўРµРїРµСЂСЊ РїСЂРѕС…РѕРґРёРј РїРѕ РЅР°СЃС‚СЂРѕР№РєР°Рј РґР»СЏ РєР°Р¶РґРѕРіРѕ СЃР°Р№С‚Р°
 			 */
 			foreach($aOptions[$aTab['_SID']] as $aOption) {
 				$sOptionName=$aOption[0];
@@ -108,7 +108,7 @@ if (isset($_POST['submit']) and check_bitrix_sessid()) {
 		}
 }
 /**
- * Обработка сброса параметров модуля
+ * РћР±СЂР°Р±РѕС‚РєР° СЃР±СЂРѕСЃР° РїР°СЂР°РјРµС‚СЂРѕРІ РјРѕРґСѓР»СЏ
  */
 if (isset($_POST['restore']) and check_bitrix_sessid()) {
 	COption::RemoveOption($sModuleId);
@@ -122,7 +122,7 @@ $oTabControl->Begin();
 <form method="POST" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=htmlspecialchars($mid)?>&lang=<?echo LANG?>" name="cs_form">
 	<?php
 	/**
-	 * Выводим табы с настройками
+	 * Р’С‹РІРѕРґРёРј С‚Р°Р±С‹ СЃ РЅР°СЃС‚СЂРѕР№РєР°РјРё
 	 */
 	foreach($aTabs as $aTab) {
 		$oTabControl->BeginNextTab();
@@ -132,7 +132,7 @@ $oTabControl->Begin();
 		__AdmSettingsDrawList('lssoft.comingsoon',$aTab['_OPT']);
 	}
 	/**
-	 * Подключаем страницу с настройками прав доступа
+	 * РџРѕРґРєР»СЋС‡Р°РµРј СЃС‚СЂР°РЅРёС†Сѓ СЃ РЅР°СЃС‚СЂРѕР№РєР°РјРё РїСЂР°РІ РґРѕСЃС‚СѓРїР°
 	 */
 	$module_id=$sModuleId;
 	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/admin/group_rights2.php");

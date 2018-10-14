@@ -2,7 +2,7 @@
 	IncludeModuleLangFile(__FILE__);
 	 $bCustomForm = true;
 	 
-	// îïèñûâàåì ñâîè âêëàäêè
+	// Ð¾Ð¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ ÑÐ²Ð¾Ð¸ Ð²ÐºÐ»Ð°Ð´ÐºÐ¸
 	$aTabs = array(
 		array("DIV" => "edit1",
 		    "TAB" => GetMessage("kaycom.oneplaceseo_FIRST_TAB"),

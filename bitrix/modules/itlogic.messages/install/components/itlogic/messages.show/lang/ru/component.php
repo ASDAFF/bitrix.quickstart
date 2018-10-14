@@ -1,4 +1,4 @@
 <?
-$MESS["ITLOGIC_MESSAGES_DA"] = "Äà";
-$MESS["ITLOGIC_MESSAGES_NET"] = "Íåò";
+$MESS["ITLOGIC_MESSAGES_DA"] = "Ð”Ð°";
+$MESS["ITLOGIC_MESSAGES_NET"] = "ÐÐµÑ‚";
 ?>

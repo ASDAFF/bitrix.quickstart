@@ -48,12 +48,12 @@
                 <!--
                     <li class="in"><a href="#" title="LinkedIn">LinkedIn</a></li>
                     <li class="lj"><a href="#" title="LiveJournal">LiveJournal</a></li>
-                    <li class="ml"><a href="#" title="Мой Круг">"Мой Круг</a></li>
+                    <li class="ml"><a href="#" title="РњРѕР№ РљСЂСѓРі">"РњРѕР№ РљСЂСѓРі</a></li>
                     <li class="yt"><a href="#" title="Youtube">Youtube</a></li>
                     <li class="pt"><a href="#" title="Pinterest">Pinterest</a></li>
                     <li class="su"><a href="#" title="Stumbleupon">Stumbleupon</a></li>
-                    <li class="ya"><a href="#" title="Яндекс">Яндекс</a></li>
-                    <li class="hb"><a href="#" title="ХабраХабр">ХабраХабр</a></li>
+                    <li class="ya"><a href="#" title="РЇРЅРґРµРєСЃ">РЇРЅРґРµРєСЃ</a></li>
+                    <li class="hb"><a href="#" title="РҐР°Р±СЂР°РҐР°Р±СЂ">РҐР°Р±СЂР°РҐР°Р±СЂ</a></li>
                     <li class="vm"><a href="#" title="Vimeo">Vimeo</a></li>
                     <li class="tb"><a href="#" title="Tumblr">Tumblr</a></li>
                 -->

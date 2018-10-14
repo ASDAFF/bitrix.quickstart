@@ -18,7 +18,7 @@ Class lssoft_comingsoon extends CModule {
         $arModuleVersion=array();
 		include(dirname(__FILE__)."/version.php");
 		/**
-		 * Îïğåäåëÿåì îñíîâíûå ïàğàìåòğû ìîäóëÿ
+		 * ĞĞ¿Ñ€ĞµĞ´ĞµĞ»ÑĞµĞ¼ Ğ¾ÑĞ½Ğ¾Ğ²Ğ½Ñ‹Ğµ Ğ¿Ğ°Ñ€Ğ°Ğ¼ĞµÑ‚Ñ€Ñ‹ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ
 		 */
 		$this->MODULE_VERSION = $arModuleVersion["VERSION"];
         $this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
@@ -28,7 +28,7 @@ Class lssoft_comingsoon extends CModule {
 		$this->PARTNER_URI = GetMessage("LS_CS_PARTNER_URI");		
 	}
 	/**
-	 * Ôîğìèğóåì ñïèñîê ïğàâ è îïåğàöèé
+	 * Ğ¤Ğ¾Ñ€Ğ¼Ğ¸Ñ€ÑƒĞµĞ¼ ÑĞ¿Ğ¸ÑĞ¾Ğº Ğ¿Ñ€Ğ°Ğ² Ğ¸ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¹
 	 *
 	 * @return array
 	 */
@@ -49,7 +49,7 @@ Class lssoft_comingsoon extends CModule {
 		);
 	}
 	/**
-	 * Çàïóñêàåò óñòàíîâêó ìîäóëÿ
+	 * Ğ—Ğ°Ğ¿ÑƒÑĞºĞ°ĞµÑ‚ ÑƒÑÑ‚Ğ°Ğ½Ğ¾Ğ²ĞºÑƒ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ
 	 */
 	public function DoInstall(){
 		RegisterModule($this->MODULE_ID);
@@ -61,7 +61,7 @@ Class lssoft_comingsoon extends CModule {
 		$this->InstallEvent();
 	}
 	/**
-	 * Çàïóñêàåò óäàëåíèå ìîäóëÿ
+	 * Ğ—Ğ°Ğ¿ÑƒÑĞºĞ°ĞµÑ‚ ÑƒĞ´Ğ°Ğ»ĞµĞ½Ğ¸Ğµ Ğ¼Ğ¾Ğ´ÑƒĞ»Ñ
 	 */
 	public function DoUninstall(){
 		UnRegisterModule($this->MODULE_ID);
@@ -196,7 +196,7 @@ Class lssoft_comingsoon extends CModule {
 
 
 				/**
-				 * Íàñòğàèâàåì îòîáğàæåíèå ôîğìû ñïèñêà è ôîğìû äîáàâëåíèÿ
+				 * ĞĞ°ÑÑ‚Ñ€Ğ°Ğ¸Ğ²Ğ°ĞµĞ¼ Ğ¾Ñ‚Ğ¾Ğ±Ñ€Ğ°Ğ¶ĞµĞ½Ğ¸Ğµ Ñ„Ğ¾Ñ€Ğ¼Ñ‹ ÑĞ¿Ğ¸ÑĞºĞ° Ğ¸ Ñ„Ğ¾Ñ€Ğ¼Ñ‹ Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ
 				 */
 				$sColumns='NAME,PROPERTY_'.$sIdPropLogin.',PROPERTY_'.$sIdPropSite.',PROPERTY_'.$sIdPropConfirm.',TIMESTAMP_X';
 				$sOptionHash="tbl_iblock_list_".md5($sIdType.".".$ID);
@@ -215,12 +215,12 @@ Class lssoft_comingsoon extends CModule {
 				);
 				CUserOptions::SetOptionsFromArray($arOptions);
 				/**
-				 * Ôîğìà äîáàâëåíèÿ
+				 * Ğ¤Ğ¾Ñ€Ğ¼Ğ° Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ñ
 				 */
 				$aTabs = array(
 					array(
 						'CODE' => 'edit1',
-						'TITLE' => 'Îñíîâíîå',
+						'TITLE' => 'ĞÑĞ½Ğ¾Ğ²Ğ½Ğ¾Ğµ',
 						'FIELDS' => array(
 							array(
 								'NAME' => 'NAME',
@@ -316,7 +316,7 @@ Class lssoft_comingsoon extends CModule {
 			$oEventMsg->Add($aData);
 		}
 		
-		// Óâåäîìëåíèå î ïğèãëàøåíèè
+		// Ğ£Ğ²ĞµĞ´Ğ¾Ğ¼Ğ»ĞµĞ½Ğ¸Ğµ Ğ¾ Ğ¿Ñ€Ğ¸Ğ³Ğ»Ğ°ÑˆĞµĞ½Ğ¸Ğ¸
 		$oEventType=new CEventType;
 		$aData=array(
 			"LID"           => 'ru',
@@ -346,7 +346,7 @@ Class lssoft_comingsoon extends CModule {
 		}
 		
 		
-		// Óâåäîìëåíèå î ïğèãëàøåíèè ñ ğåãèñòğàöèåé
+		// Ğ£Ğ²ĞµĞ´Ğ¾Ğ¼Ğ»ĞµĞ½Ğ¸Ğµ Ğ¾ Ğ¿Ñ€Ğ¸Ğ³Ğ»Ğ°ÑˆĞµĞ½Ğ¸Ğ¸ Ñ Ñ€ĞµĞ³Ğ¸ÑÑ‚Ñ€Ğ°Ñ†Ğ¸ĞµĞ¹
 		$oEventType=new CEventType;
 		$aData=array(
 			"LID"           => 'ru',

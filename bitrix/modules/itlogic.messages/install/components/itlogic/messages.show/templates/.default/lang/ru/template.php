@@ -1,9 +1,9 @@
 <?
-$MESS["ITLOGIC_MESSAGES_KOD_SABLONA"] = "Êîä øàáëîíà";
-$MESS["ITLOGIC_MESSAGES_DATA_USTANOVKI"] = "Äàòà óñòàíîâêè";
-$MESS["ITLOGIC_MESSAGES_V_OCEREDQ_OTPRAVKI"] = "â î÷åðåäü îòïðàâêè";
-$MESS["ITLOGIC_MESSAGES_OTPRAVLENO"] = "Îòïðàâëåíî?";
-$MESS["ITLOGIC_MESSAGES_DATA_OTPRAVKI"] = "Äàòà îòïðàâêè";
-$MESS["ITLOGIC_MESSAGES_SODERJANIE_SOOBSENIA"] = "Ñîäåðæàíèå ñîîáùåíèÿ";
-$MESS["ITLOGIC_MESSAGES_SOOBSENIY_NE_NAYDENO"] = "Ñîîáùåíèé íå íàéäåíî";
+$MESS["ITLOGIC_MESSAGES_KOD_SABLONA"] = "ÐšÐ¾Ð´ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð°";
+$MESS["ITLOGIC_MESSAGES_DATA_USTANOVKI"] = "Ð”Ð°Ñ‚Ð° ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸";
+$MESS["ITLOGIC_MESSAGES_V_OCEREDQ_OTPRAVKI"] = "Ð² Ð¾Ñ‡ÐµÑ€ÐµÐ´ÑŒ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["ITLOGIC_MESSAGES_OTPRAVLENO"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾?";
+$MESS["ITLOGIC_MESSAGES_DATA_OTPRAVKI"] = "Ð”Ð°Ñ‚Ð° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸";
+$MESS["ITLOGIC_MESSAGES_SODERJANIE_SOOBSENIA"] = "Ð¡Ð¾Ð´ÐµÑ€Ð¶Ð°Ð½Ð¸Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ";
+$MESS["ITLOGIC_MESSAGES_SOOBSENIY_NE_NAYDENO"] = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾";
 ?>

@@ -17,8 +17,8 @@ if (($_REQUEST['put_statistic']==1)&&(CModule::IncludeModule('iblock'))):
 	$PROP['SPEED_DOWN'] = $speed_down;
 
 $arLoadProductArray = Array(
-  "MODIFIED_BY"    => $USER->GetID(), // ýëåìåíò èçìåíåí òåêóùèì ïîëüçîâàòåëåì
-  "IBLOCK_SECTION_ID" => false,          // ýëåìåíò ëåæèò â êîðíå ðàçäåëà
+  "MODIFIED_BY"    => $USER->GetID(), // ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¼
+  "IBLOCK_SECTION_ID" => false,          // ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð»ÐµÐ¶Ð¸Ñ‚ Ð² ÐºÐ¾Ñ€Ð½Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°
   "IBLOCK_ID"      => SPEEDTEST_IBLOCK_ID,
   "PROPERTY_VALUES"=> $PROP,
   "NAME"           => $name,

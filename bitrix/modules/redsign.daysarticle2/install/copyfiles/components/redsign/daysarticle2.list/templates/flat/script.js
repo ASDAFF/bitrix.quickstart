@@ -1,32 +1,32 @@
 function QB_get_timer(dateto) {
-	var datenow = new Date; //сегодн¤шн¤¤ дата
-	datenow = (Date.parse(datenow))/1000; //вычисл¤ет в секундах???
-	var diff = dateto - datenow; //до конца акции в секундах
-	/* вычисл¤ем дни */
+	var datenow = new Date; //СЃРµРіРѕРґРЅВ¤С€РЅВ¤В¤ РґР°С‚Р°
+	datenow = (Date.parse(datenow))/1000; //РІС‹С‡РёСЃР»В¤РµС‚ РІ СЃРµРєСѓРЅРґР°С…???
+	var diff = dateto - datenow; //РґРѕ РєРѕРЅС†Р° Р°РєС†РёРё РІ СЃРµРєСѓРЅРґР°С…
+	/* РІС‹С‡РёСЃР»В¤РµРј РґРЅРё */
 	var days = parseInt((diff / (60 * 60 ))/24);
 	if (days < 10) {
 		days = "0" + days;
 	}
 	days = days.toString(); 
-	/* вычисл¤ем часы */
+	/* РІС‹С‡РёСЃР»В¤РµРј С‡Р°СЃС‹ */
 	var hours = parseInt((diff / (60 * 60 )) % 24);
 	if (hours < 10) {
 		hours = "0" + hours;
 	}
 	hours = hours.toString();    
-	/* вычисл¤ем минуты */			
+	/* РІС‹С‡РёСЃР»В¤РµРј РјРёРЅСѓС‚С‹ */			
 	var minutes = parseInt(diff / (60)) % 60;
 	if (minutes < 10) {
 		minutes = "0" + minutes;
 	}
 	minutes = minutes.toString();
-	/* вычисл¤ем секунды */
+	/* РІС‹С‡РёСЃР»В¤РµРј СЃРµРєСѓРЅРґС‹ */
 	var seconds = parseInt(diff) % 60;
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
 	seconds = seconds.toString();
-	/* результаты всех вычислений */
+	/* СЂРµР·СѓР»СЊС‚Р°С‚С‹ РІСЃРµС… РІС‹С‡РёСЃР»РµРЅРёР№ */
 	var array = {'days' : days, 'hours' : hours, 'minutes' : minutes, 'seconds' : seconds};
 	return array;    
 }

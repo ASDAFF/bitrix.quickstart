@@ -1,5 +1,0 @@
-<?
-$MESS['RSGOPRO.SMALLBASKET_TITLE'] = 'Моя корзина';
-$MESS['RSGOPRO.SMALLBASKET_TOVAR'] = 'товар';
-$MESS['RSGOPRO.SMALLBASKET_NA'] = 'на';
-$MESS['RSGOPRO.SMALLBASKET_PUSTO'] = 'Сейчас ваша корзина пуста';

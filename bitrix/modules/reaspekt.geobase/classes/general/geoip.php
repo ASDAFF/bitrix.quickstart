@@ -33,7 +33,7 @@ class ReaspGeoIP {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
         if (SITE_CHARSET == 'windows-1251') {
@@ -70,13 +70,13 @@ class ReaspGeoIP {
         $arResult["DEFAULT_CITY_ID"] = array();
         $arResult["DEFAULT_CITY_NAME"] = array();
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
         $setLocalDB = Option::get(self::MID, "reaspekt_set_local_sql");
     
         if ($setLocalDB == "local_db") {
-            //ãîðîäà ïî óìîë÷àíèþ
+            //Ð³Ð¾Ñ€Ð¾Ð´Ð° Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ
             $reaspekt_city_manual_default = Option::get(self::MID, "reaspekt_city_manual_default");
             $ar_reaspekt_city_manual_default = unserialize($reaspekt_city_manual_default);
             
@@ -95,18 +95,18 @@ class ReaspGeoIP {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
-        //Óáèðàåì äóáëè
+        //Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð´ÑƒÐ±Ð»Ð¸
         $arCityXmlId = array_unique($arCityXmlId);
         
-        //Äîáàâëÿåì êàâû÷êè äëÿ ïîèñêà ïî òðîêå
+        //Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÐºÐ°Ð²Ñ‹Ñ‡ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¿Ð¾ Ñ‚Ñ€Ð¾ÐºÐµ
         foreach ($arCityXmlId as &$cityId) {
             $cityId = "'" . $DB->ForSql($cityId) . "'";
         }
         
-        //ïåðåâîäèì â ñòðîêó
+        //Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² ÑÑ‚Ñ€Ð¾ÐºÑƒ
         $strCityId = implode(" OR `UF_XML_ID` = ", $arCityXmlId);
         
         $strReplaceCityId = str_replace(" ", "", $strCityId);
@@ -149,18 +149,18 @@ class ReaspGeoIP {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
-        //Óáèðàåì äóáëè
+        //Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð´ÑƒÐ±Ð»Ð¸
         $arCityId = array_unique($arCityId);
         
-        //Äîáàâëÿåì êàâû÷êè äëÿ ïîèñêà ïî òðîêå
+        //Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÐºÐ°Ð²Ñ‹Ñ‡ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¿Ð¾ Ñ‚Ñ€Ð¾ÐºÐµ
         foreach ($arCityId as &$cityId) {
             $cityId = "'" . $DB->ForSql($cityId) . "'";
         }
         
-        //ïåðåâîäèì â ñòðîêó
+        //Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² ÑÑ‚Ñ€Ð¾ÐºÑƒ
         $strCityId = implode(" OR `ID` = ", $arCityId);
         
         $strReplaceCityId = str_replace(" ", "", $strCityId);
@@ -203,17 +203,17 @@ class ReaspGeoIP {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
-        //Óáèðàåì äóáëè
+        //Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð´ÑƒÐ±Ð»Ð¸
         $arCityName = array_unique($arCityName);
         
-        //Äîáàâëÿåì êàâû÷êè äëÿ ïîèñêà ïî òðîêå
+        //Ð”Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÐºÐ°Ð²Ñ‹Ñ‡ÐºÐ¸ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ° Ð¿Ð¾ Ñ‚Ñ€Ð¾ÐºÐµ
         foreach ($arCityName as &$cityName) {
             $cityName = "'" . $DB->ForSql($cityName) . "'";
         }
-        //ïåðåâîäèì â ñòðîêó
+        //Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² ÑÑ‚Ñ€Ð¾ÐºÑƒ
         $strCityName = implode(" OR `UF_NAME` = ", $arCityName);
         
         $strReplaceCityId = str_replace(" ", "", $strCityName);
@@ -248,15 +248,15 @@ class ReaspGeoIP {
         return $arResult;
     }
     
-    function SelectCityId($ñityId = 0) {
+    function SelectCityId($ÑityId = 0) {
         
         global $DB;
         
-        if (!$ñityId) {
+        if (!$ÑityId) {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
         $arResult = array();
@@ -264,7 +264,7 @@ class ReaspGeoIP {
         if (ReaspGeoIP::StatusTabelDB()) {
             $data = $DB->Query("
                 SELECT * FROM `reaspekt_geobase_cities` 
-                WHERE `ID` = " . $DB->ForSql($ñityId) . "
+                WHERE `ID` = " . $DB->ForSql($ÑityId) . "
             "
 			);
             
@@ -313,7 +313,7 @@ class ReaspGeoIP {
             return false;
         }
         
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
         
         if(SITE_CHARSET == 'windows-1251'){
@@ -325,7 +325,7 @@ class ReaspGeoIP {
         $arResult["STATUS"] = "N";
         
         if (!empty($arData)) {
-            //ïåðåâîäèì â ôîðìàò json äëÿ çàïèñè â êóêè
+            //Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ json Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² ÐºÑƒÐºÐ¸
             $strData = ReaspGeoIP::CodeJSON($arData);
             
             $_SESSION["REASPEKT_GEOBASE"] = $arData;
@@ -343,7 +343,7 @@ class ReaspGeoIP {
 		global $APPLICATION;
         $strData = $APPLICATION->get_cookie("REASPEKT_GEOBASE");
         
-		//Åñëè ñåññèè íåò
+		//Ð•ÑÐ»Ð¸ ÑÐµÑÑÐ¸Ð¸ Ð½ÐµÑ‚
 		if (
             !$strData
             || !isset($_SESSION["REASPEKT_GEOBASE"]) 
@@ -352,26 +352,26 @@ class ReaspGeoIP {
         
         ) {
             
-			//Îïðåäåëÿåì IP
+			//ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼ IP
 			$ip = ReaspGeoIP::getUserHostIP();
 			
-            //Ïðîâåðÿåì  Êóêè
+            //ÐŸÑ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Â ÐšÑƒÐºÐ¸
 			$last_ip = $APPLICATION->get_cookie("REASPEKT_LAST_IP");
 			
             
             $arData = array();
             
-            //åñëè äàííûå î ìåñòîïîëîæåíèè çàïèñàíû è ëåæàò â êóêè
+            //ÐµÑÐ»Ð¸ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ð¸ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ñ‹ Ð¸ Ð»ÐµÐ¶Ð°Ñ‚ Ð² ÐºÑƒÐºÐ¸
             if(($ip == $last_ip) && $strData && count(ReaspGeoIP::deCodeJSON($strData)) > 0){
                 $arData = ReaspGeoIP::deCodeJSON($strData);
             } else {
-                //Ïîëó÷àåì äàííûå
+                //ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ
 				$arData = ReaspGeoIP::GetDataIp($ip); // local_db
                 
-                //ïåðåâîäèì â ôîðìàò json äëÿ çàïèñè â êóêè
+                //Ð¿ÐµÑ€ÐµÐ²Ð¾Ð´Ð¸Ð¼ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ json Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² ÐºÑƒÐºÐ¸
                 $strData = ReaspGeoIP::CodeJSON($arData);
                 
-                //ïèøåì êóêè
+                //Ð¿Ð¸ÑˆÐµÐ¼ ÐºÑƒÐºÐ¸
                 $APPLICATION->set_cookie("REASPEKT_LAST_IP", $ip, time() + 31104000); // 60*60*24*30*12
                 $APPLICATION->set_cookie("REASPEKT_GEOBASE", $strData, time() + 31104000); // 60*60*24*30*12
 				
@@ -389,25 +389,25 @@ class ReaspGeoIP {
             return false;
         }
         
-        //Ñìîòðèì íàñòðîéêè ìîäóëÿ
+        //Ð¡Ð¼Ð¾Ñ‚Ñ€Ð¸Ð¼ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 		$source = Option::get(self::MID, "reaspekt_set_local_sql", "local_db");
 		
         $arData = array();
         
 		if ($source == "not_using") {
-			//÷åðåç ñåðâèñ
+			//Ñ‡ÐµÑ€ÐµÐ· ÑÐµÑ€Ð²Ð¸Ñ
 			if(!$arData = ReaspGeoIP::GetGeoDataIpgeobase_ru($ip)) {
 				if(!$arData = ReaspGeoIP::GetGeoDataGeoip_Elib_ru($ip)) {
 					return false;
 				}
 			}
 		} elseif($source == "local_db") {
-            //÷åðåç ëîêàëüíóþ ÁÄ
+            //Ñ‡ÐµÑ€ÐµÐ· Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½ÑƒÑŽ Ð‘Ð”
 			$arData = ReaspGeoIP::GetGeoData($ip);
 		}
         
         if (!empty($arData)) {
-            //Ïðèâîäèì äàííûå ê îäíîìó ôîðìàòó ò.ê. èç ðàçíûõ ñåðâèñîâ ïðèõîäÿò ðàçíûå êëþ÷è
+            //ÐŸÑ€Ð¸Ð²Ð¾Ð´Ð¸Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ðº Ð¾Ð´Ð½Ð¾Ð¼Ñƒ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ñƒ Ñ‚.Ðº. Ð¸Ð· Ñ€Ð°Ð·Ð½Ñ‹Ñ… ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð² Ð¿Ñ€Ð¸Ñ…Ð¾Ð´ÑÑ‚ Ñ€Ð°Ð·Ð½Ñ‹Ðµ ÐºÐ»ÑŽÑ‡Ð¸
             $arData = ReaspGeoIP::StandartFormat($arData);
         }
         
@@ -422,22 +422,22 @@ class ReaspGeoIP {
         
         $strName = trim($strName);
         
-        //Ñìîòðèì íàñòðîéêè ìîäóëÿ
+        //Ð¡Ð¼Ð¾Ñ‚Ñ€Ð¸Ð¼ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 		$source = Option::get(self::MID, "reaspekt_set_local_sql");
 		
         $arData = array();
         
 		if ($source == "not_using") {
-			//÷åðåç ñåðâèñ
+			//Ñ‡ÐµÑ€ÐµÐ· ÑÐµÑ€Ð²Ð¸Ñ
             $arData["UF_NAME"] = $strName;
             
 		} elseif($source == "local_db") {
-            //÷åðåç ëîêàëüíóþ ÁÄ
+            //Ñ‡ÐµÑ€ÐµÐ· Ð»Ð¾ÐºÐ°Ð»ÑŒÐ½ÑƒÑŽ Ð‘Ð”
 			$arData = ReaspGeoIP::GetGeoDataName($strName);
 		}
         
         if (!empty($arData)) {
-            //Ïðèâîäèì äàííûå ê îäíîìó ôîðìàòó ò.ê. èç ðàçíûõ ñåðâèñîâ ïðèõîäÿò ðàçíûå êëþ÷è
+            //ÐŸÑ€Ð¸Ð²Ð¾Ð´Ð¸Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ðº Ð¾Ð´Ð½Ð¾Ð¼Ñƒ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ñƒ Ñ‚.Ðº. Ð¸Ð· Ñ€Ð°Ð·Ð½Ñ‹Ñ… ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð² Ð¿Ñ€Ð¸Ñ…Ð¾Ð´ÑÑ‚ Ñ€Ð°Ð·Ð½Ñ‹Ðµ ÐºÐ»ÑŽÑ‡Ð¸
             $arData = ReaspGeoIP::StandartFormat($arData);
         }
         
@@ -452,14 +452,14 @@ class ReaspGeoIP {
         
         $arDataStandart = array();
         
-        //Ñîçäàåì ãðóïïû ãäå ïåðåñåêàþòñÿ çíà÷åíèÿ
+        //Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð³Ð´Ðµ Ð¿ÐµÑ€ÐµÑÐµÐºÐ°ÑŽÑ‚ÑÑ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ
         $group["CITY"] = array('city','Town','UF_NAME');
         $group["COUNTRY_CODE"] = array('country','Country','UF_COUNTRY_CODE');
         $group["REGION"] = array('region','Region','UF_REGION_NAME');
         $group["OKRUG"] = array('district','UF_COUNTY_NAME');
-        $group["LAT"] = array('lat','Lat','UF_BREADTH_CITY'); //øèðîòà
-        $group["LON"] = array('lng','Lon','UF_LONGITUDE_CITY'); //äîëãîòà
-        $group["INETNUM"] = array('inetnum','UF_BLOCK_ADDR'); // ip ïðåäåëû
+        $group["LAT"] = array('lat','Lat','UF_BREADTH_CITY'); //ÑˆÐ¸Ñ€Ð¾Ñ‚Ð°
+        $group["LON"] = array('lng','Lon','UF_LONGITUDE_CITY'); //Ð´Ð¾Ð»Ð³Ð¾Ñ‚Ð°
+        $group["INETNUM"] = array('inetnum','UF_BLOCK_ADDR'); // ip Ð¿Ñ€ÐµÐ´ÐµÐ»Ñ‹
         
         foreach ($arData as $keyCity => $valCity) {
             $status = true;
@@ -492,7 +492,7 @@ class ReaspGeoIP {
                 $arDataStandart["INETNUM"] = $valCity;
                 $status = false;
             }
-            //Åñëè åñòü óíèêàëüíûå äëÿ ñåðâèñà ïîëÿ íà âñ¤êèé çàïîìèíàåì èõ
+            //Ð•ÑÐ»Ð¸ ÐµÑÑ‚ÑŒ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ðµ Ð´Ð»Ñ ÑÐµÑ€Ð²Ð¸ÑÐ° Ð¿Ð¾Ð»Ñ Ð½Ð° Ð²ÑÂ¤ÐºÐ¸Ð¹ Ð·Ð°Ð¿Ð¾Ð¼Ð¸Ð½Ð°ÐµÐ¼ Ð¸Ñ…
             if ($status) {
                 $arDataStandart[$keyCity] = $valCity;
             }
@@ -508,11 +508,11 @@ class ReaspGeoIP {
         
 		global $DB;
 		
-        //ïðîâåðÿåì íà áîòîâ (÷òîá ëèøíèé ðàç çàïðîñû íå äåëàòü)
+        //Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ Ð½Ð° Ð±Ð¾Ñ‚Ð¾Ð² (Ñ‡Ñ‚Ð¾Ð± Ð»Ð¸ÑˆÐ½Ð¸Ð¹ Ñ€Ð°Ð· Ð·Ð°Ð¿Ñ€Ð¾ÑÑ‹ Ð½Ðµ Ð´ÐµÐ»Ð°Ñ‚ÑŒ)
 		if (ReaspGeoIP::InitBots()) return false;
 			
 		if(ReaspGeoIP::StatusTabelDB()){
-			//÷åðåç òàáëèöó
+			//Ñ‡ÐµÑ€ÐµÐ· Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñƒ
 			$arIP	= explode('.', $ip);
 			$codeIP = $arIP[0] * pow(256, 3) + $arIP[1] * pow(256, 2) + $arIP[2] * 256 + $arIP[3];
 			
@@ -537,7 +537,7 @@ class ReaspGeoIP {
 		global $DB;
 					
 		if($DB->TableExists('reaspekt_geobase_cities')){
-			//÷åðåç òàáëèöó
+			//Ñ‡ÐµÑ€ÐµÐ· Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñƒ
 			$data = $DB->Query("SELECT * FROM `reaspekt_geobase_cities`
 					WHERE ID = '" . $DB->ForSql($id) . "'"
 			);
@@ -560,7 +560,7 @@ class ReaspGeoIP {
 		$arData = array();
 		
 		if($DB->TableExists('reaspekt_geobase_cities')){
-			//÷åðåç òàáëèöó
+			//Ñ‡ÐµÑ€ÐµÐ· Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñƒ
 			$data = $DB->Query("SELECT * FROM `reaspekt_geobase_cities`
 					WHERE UF_NAME = '" . $DB->ForSql($strName) . "'"
 			);

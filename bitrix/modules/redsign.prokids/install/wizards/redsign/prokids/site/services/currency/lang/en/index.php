@@ -1,3 +1,0 @@
-<?
-$MESS['ALFA_CURRENCY_RU_NAME'] = 'Ruble';
-$MESS['ALFA_CURRENCY_RU_FORMAT'] = '# rub.';

@@ -48,8 +48,20 @@ local/
 ├── logs/
 ├── modules/
 ├── php_interface/
+│   ├── classes
+│   │     └── Autoloader.php
+│   ├── config
+│   │     ├── const.php
+│   │     ├── events.php
+│   │     └── frontend.php
+│   │
+│   ├── include
+│   │     └── handlers.php
+│   │
 │   ├── cn_log.php
+│   ├── admin_header.php
 │   └── init.php
+│
 └── templates/
     ├── .default/
     │   ├── components/

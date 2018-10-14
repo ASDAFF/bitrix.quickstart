@@ -1,2 +1,0 @@
-<?
-$sSectionName = 'Tell a friend';

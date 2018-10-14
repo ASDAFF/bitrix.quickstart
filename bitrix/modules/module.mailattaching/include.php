@@ -2,12 +2,12 @@
 /**
  * Mail Attaching
  *
- * Copyright "Первый Интегратор", 2011-2015
+ * Copyright "РџРµСЂРІС‹Р№ РРЅС‚РµРіСЂР°С‚РѕСЂ", 2011-2015
  * http://www.1-integrator.com/
  * @author Sergey Leshchenko
  */
 
-// !!! Внимание !!! Для сокращения инклудов все языковые файлы собраны в один
+// !!! Р’РЅРёРјР°РЅРёРµ !!! Р”Р»СЏ СЃРѕРєСЂР°С‰РµРЅРёСЏ РёРЅРєР»СѓРґРѕРІ РІСЃРµ СЏР·С‹РєРѕРІС‹Рµ С„Р°Р№Р»С‹ СЃРѕР±СЂР°РЅС‹ РІ РѕРґРёРЅ
 IncludeModuleLangFile(__FILE__);
 
 // __autoloades
@@ -27,7 +27,7 @@ if(!defined('MODULE_MAILATTACHING_USE_CUSTOM_MAIL')) {
 	if(function_exists('custom_mail')) {
 		define('MODULE_MAILATTACHING_USE_CUSTOM_MAIL', false);
 
-		// выведем уведомление
+		// РІС‹РІРµРґРµРј СѓРІРµРґРѕРјР»РµРЅРёРµ
 		if(class_exists('CAdminInformer')) {
 			CAdminInformer::AddItem(
 				array(

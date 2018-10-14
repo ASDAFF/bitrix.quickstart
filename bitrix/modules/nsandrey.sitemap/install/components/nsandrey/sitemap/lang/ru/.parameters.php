@@ -1,7 +1,7 @@
 <?
-$MESS["NSANDREY_SITEMAP_VSE_NASTROYKI"] = "Âñå íàñòðîéêè";
-$MESS["NSANDREY_SITEMAP_NET"] = "Íåò --";
-$MESS["NSANDREY_SITEMAP_AKTIVNOSTQ_RAZDELOV"] = "Àêòèâíîñòü ðàçäåëîâ";
-$MESS["NSANDREY_SITEMAP_NAZVANIA_RAZDELOV"] = "Íàçâàíèÿ ðàçäåëîâ";
-$MESS["NSANDREY_SITEMAP_NASTROYKA_RAZDELOV"] = "Íàñòðîéêà ðàçäåëîâ";
+$MESS["NSANDREY_SITEMAP_VSE_NASTROYKI"] = "Ð’ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+$MESS["NSANDREY_SITEMAP_NET"] = "ÐÐµÑ‚ --";
+$MESS["NSANDREY_SITEMAP_AKTIVNOSTQ_RAZDELOV"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS["NSANDREY_SITEMAP_NAZVANIA_RAZDELOV"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
+$MESS["NSANDREY_SITEMAP_NASTROYKA_RAZDELOV"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ñ€Ð°Ð·Ð´ÐµÐ»Ð¾Ð²";
 ?>

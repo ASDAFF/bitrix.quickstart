@@ -1,11 +1,11 @@
 <?
-// Ïîäêëþ÷àåì ìîäóëü (âûïîëíÿåì êîä â ôàéëå include.php)
+// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ (Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ ÐºÐ¾Ð´ Ð² Ñ„Ð°Ð¹Ð»Ðµ include.php)
 CModule::IncludeModule('nimax.stat');
 
-// Ïîäêëþ÷àåì ÿçûêîâûå êîíñòàíòû
+// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ ÑÐ·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ñ‹
 IncludeModuleLangFile( __FILE__ );
 
-// Îïèñûâàåì òàáû àäìèíèñòðàòèâíîé ïàíåëè áèòðèêñà
+// ÐžÐ¿Ð¸ÑÑ‹Ð²Ð°ÐµÐ¼ Ñ‚Ð°Ð±Ñ‹ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ð¹ Ð¿Ð°Ð½ÐµÐ»Ð¸ Ð±Ð¸Ñ‚Ñ€Ð¸ÐºÑÐ°
 $aTabs = array();
 foreach(Nimax_Stat_Option::getTemplateList() as $id => $name)
 {
@@ -17,7 +17,7 @@ foreach(Nimax_Stat_Option::getTemplateList() as $id => $name)
     );
 }
 
-// Èíèöèàëèçèðóåì òàáû
+// Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð¸Ñ€ÑƒÐµÐ¼ Ñ‚Ð°Ð±Ñ‹
 $oTabControl = new CAdmintabControl('tabControl', $aTabs);
 $oTabControl->Begin();
 ?>

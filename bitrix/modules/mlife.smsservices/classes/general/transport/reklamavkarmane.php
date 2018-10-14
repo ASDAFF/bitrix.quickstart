@@ -1,7 +1,7 @@
 <?
 class CMlifeSmsTransport{
 	
-	//конструктор, получаем данные доступа к шлюзу
+	//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РїРѕР»СѓС‡Р°РµРј РґР°РЅРЅС‹Рµ РґРѕСЃС‚СѓРїР° Рє С€Р»СЋР·Сѓ
 	function __construct() {
          
 		 $this->config = $this->getConfig();
@@ -161,7 +161,7 @@ class CMlifeSmsTransport{
 	
 	protected function _getBalance () {
 	/*
-	отправите запрос с uid и sig на метод projects.getInfo и параметр ids который равен ID-смс-сервиса
+	РѕС‚РїСЂР°РІРёС‚Рµ Р·Р°РїСЂРѕСЃ СЃ uid Рё sig РЅР° РјРµС‚РѕРґ projects.getInfo Рё РїР°СЂР°РјРµС‚СЂ ids РєРѕС‚РѕСЂС‹Р№ СЂР°РІРµРЅ ID-СЃРјСЃ-СЃРµСЂРІРёСЃР°
 	*/
 		$url = 'http://api.user.reklamavkarmane.ru/projects.getInfo';
 		$request_params = array();
@@ -223,7 +223,7 @@ class CMlifeSmsTransport{
 	}
 	
 	/**
-	 * Подпись параметров для передачи в АПИ
+	 * РџРѕРґРїРёСЃСЊ РїР°СЂР°РјРµС‚СЂРѕРІ РґР»СЏ РїРµСЂРµРґР°С‡Рё РІ РђРџР
 	 * 
 	 * @param array $api_params
 	 * @param string $api_method
@@ -233,10 +233,10 @@ class CMlifeSmsTransport{
 	  return md5($this->config->login[0] . $api_method . $params . $this->config->passw);
 	}
 	/**
-	 * Сбор параметров в строку
+	 * РЎР±РѕСЂ РїР°СЂР°РјРµС‚СЂРѕРІ РІ СЃС‚СЂРѕРєСѓ
 	 * 
 	 * @param array $api_params
-	 * @param mixed $parent_key - родительский ключ для рекурсии
+	 * @param mixed $parent_key - СЂРѕРґРёС‚РµР»СЊСЃРєРёР№ РєР»СЋС‡ РґР»СЏ СЂРµРєСѓСЂСЃРёРё
 	 */
 	private function getSigParamsString($api_params, $parent_key=null) {
 		$params = '';
@@ -270,7 +270,7 @@ class CMlifeSmsTransport{
 	}
 	
 	private function _checkStatus($code) {
-		//queued, wait, accepted, delivered, failed и not_delivered
+		//queued, wait, accepted, delivered, failed Рё not_delivered
 		
 		if($code=='queued') return 3;
 		if($code=='wait') return 6;

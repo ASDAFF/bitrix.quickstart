@@ -1,20 +1,20 @@
 <?
-// Подключаем языковые константы
+// РџРѕРґРєР»СЋС‡Р°РµРј СЏР·С‹РєРѕРІС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
 IncludeModuleLangFile( __FILE__ );
 
 /**
- * Добавление счетчиков в шаблоны Битрикс
+ * Р”РѕР±Р°РІР»РµРЅРёРµ СЃС‡РµС‚С‡РёРєРѕРІ РІ С€Р°Р±Р»РѕРЅС‹ Р‘РёС‚СЂРёРєСЃ
  */
 class Nimax_Stat_Option
 {
-    public $template_id = null; // ИД шаблона
-    private $tpl_path = null; // Путь до выбранного шаблона
-    // Контент шаблона
+    public $template_id = null; // РР” С€Р°Р±Р»РѕРЅР°
+    private $tpl_path = null; // РџСѓС‚СЊ РґРѕ РІС‹Р±СЂР°РЅРЅРѕРіРѕ С€Р°Р±Р»РѕРЅР°
+    // РљРѕРЅС‚РµРЅС‚ С€Р°Р±Р»РѕРЅР°
     private $tpl_content = array(
         'header' => null,
         'footer' => null
     );
-    // Массив кодов
+    // РњР°СЃСЃРёРІ РєРѕРґРѕРІ
     public $code_array = array(
         'GA' => array(
             'place' => 'header',
@@ -44,7 +44,7 @@ class Nimax_Stat_Option
     );
 
     /**
-     * Проверка файлов шаблона на совместимость
+     * РџСЂРѕРІРµСЂРєР° С„Р°Р№Р»РѕРІ С€Р°Р±Р»РѕРЅР° РЅР° СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚СЊ
      * @param $file_name
      * @throws Exception
      */
@@ -67,7 +67,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Инициализация шаблона
+     * РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С€Р°Р±Р»РѕРЅР°
      * @param $tpl_id
      * @throws Exception
      */
@@ -88,7 +88,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Список доступных шаблонов сайта
+     * РЎРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅС‹С… С€Р°Р±Р»РѕРЅРѕРІ СЃР°Р№С‚Р°
      * @return array
      */
     public static function getTemplateList()
@@ -102,7 +102,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Получение текущего код счетчиков
+     * РџРѕР»СѓС‡РµРЅРёРµ С‚РµРєСѓС‰РµРіРѕ РєРѕРґ СЃС‡РµС‚С‡РёРєРѕРІ
      * @param $code_id
      * @return string
      */
@@ -123,7 +123,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Генерация хеша кода счетчика
+     * Р“РµРЅРµСЂР°С†РёСЏ С…РµС€Р° РєРѕРґР° СЃС‡РµС‚С‡РёРєР°
      * @param $code
      * @return string
      */
@@ -133,7 +133,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Сохраняем ИД шаблона в массиве всех использованных шалонов
+     * РЎРѕС…СЂР°РЅСЏРµРј РР” С€Р°Р±Р»РѕРЅР° РІ РјР°СЃСЃРёРІРµ РІСЃРµС… РёСЃРїРѕР»СЊР·РѕРІР°РЅРЅС‹С… С€Р°Р»РѕРЅРѕРІ
      * @param $tpl_id
      */
     private function saveTemplate($tpl_id)
@@ -148,7 +148,7 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Сохранение кодов счетчиков
+     * РЎРѕС…СЂР°РЅРµРЅРёРµ РєРѕРґРѕРІ СЃС‡РµС‚С‡РёРєРѕРІ
      * @param $data
      * @throws Exception
      */
@@ -157,7 +157,7 @@ class Nimax_Stat_Option
         if(!isset($data['Update']) && !check_bitrix_sessid())
             throw new Exception(GetMessage('DATA_NOT_SAVE'));
 
-        // Сохраняем шаблон в используемых
+        // РЎРѕС…СЂР°РЅСЏРµРј С€Р°Р±Р»РѕРЅ РІ РёСЃРїРѕР»СЊР·СѓРµРјС‹С…
         $this->saveTemplate($this->template_id);
 
         foreach($this->code_array as $codeId => $codeVal)
@@ -165,12 +165,12 @@ class Nimax_Stat_Option
             if(!isset($data[$codeId][$this->template_id])) continue;
             $cur_code = trim($data[$codeId][$this->template_id]);
 
-            // Удаляем старый код
+            // РЈРґР°Р»СЏРµРј СЃС‚Р°СЂС‹Р№ РєРѕРґ
             $content = preg_replace("/(<!--{$codeId}_start-->.*<!--{$codeId}_end-->?\r\n)/iUs",'',$this->tpl_content[$codeVal['place']]);
 
             if(!empty($cur_code))
             {
-                // Добавление кода
+                // Р”РѕР±Р°РІР»РµРЅРёРµ РєРѕРґР°
                 $cur_code_new = "<!--{$codeId}_start-->\r\n{$cur_code}\r\n<!--{$codeId}_end-->\r\n";
                 $tag = ($codeVal['place'] == 'header' ? 'head' : 'body');
 
@@ -188,26 +188,26 @@ class Nimax_Stat_Option
     }
 
     /**
-     * Удаление кодов счетчиков
+     * РЈРґР°Р»РµРЅРёРµ РєРѕРґРѕРІ СЃС‡РµС‚С‡РёРєРѕРІ
      */
     public function deleteOption()
     {
-        // Получаем все шаблоны
+        // РџРѕР»СѓС‡Р°РµРј РІСЃРµ С€Р°Р±Р»РѕРЅС‹
         $tpls = unserialize(COption::GetOptionString('nimax_stat', 'templates'));
         if($tpls)
         {
             foreach($tpls as $tpl_id)
             {
-                // Инициализируем шаблон
+                // РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј С€Р°Р±Р»РѕРЅ
                 $this->templateInit($tpl_id);
                 foreach($this->code_array as $codeId => $codeVal)
                 {
-                    // Получаем код из шаблона
+                    // РџРѕР»СѓС‡Р°РµРј РєРѕРґ РёР· С€Р°Р±Р»РѕРЅР°
                     $cur_code = $this->getCurCode($codeId);
                     $hash_name = $codeId.'_'.$tpl_id.'_hash';
                     if(!empty($cur_code) && $this->getCodeHash($cur_code) == COption::GetOptionString('nimax_stat', $hash_name))
                     {
-                        // Удаляем код из шаблонов
+                        // РЈРґР°Р»СЏРµРј РєРѕРґ РёР· С€Р°Р±Р»РѕРЅРѕРІ
                         $this->tpl_content[$codeVal['place']] = preg_replace("/(<!--{$codeId}_start-->.*<!--{$codeId}_end-->?\r\n)/iUs",'',$this->tpl_content[$codeVal['place']]);
                     }
                     COption::RemoveOption('nimax_stat', $hash_name);

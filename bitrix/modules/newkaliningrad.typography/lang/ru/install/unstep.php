@@ -1,3 +1,3 @@
 <?php
-$MESS['NK_UNINSTALL_SUCCESS'] = "Модуль успешно удален";
+$MESS['NK_UNINSTALL_SUCCESS'] = "РњРѕРґСѓР»СЊ СѓСЃРїРµС€РЅРѕ СѓРґР°Р»РµРЅ";
 ?>

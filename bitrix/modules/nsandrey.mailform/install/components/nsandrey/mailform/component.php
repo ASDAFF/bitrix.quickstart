@@ -13,12 +13,12 @@ if ($arParams['JQUERY'] == 'Y')
 }
 
 
-// Типы полей
+// РўРёРїС‹ РїРѕР»РµР№
 $arTypes = array('HIDDEN', 'STRING', 'INT', 'CHECKBOX', 'DATE_TIME', 'DATE_TIME_INTERVAL', 'TEXTAREA', 'EMAIL', 'FILE', 'SELECT', 'MULTISELECT');
-// Поля для антиспама
+// РџРѕР»СЏ РґР»СЏ Р°РЅС‚РёСЃРїР°РјР°
 $arResult['ANTISPAM_FIELDS'] = $arAntiSpamFields = array('IMPORTANT_EMAIL_TO', 'IMPORTANT_EMAIL_FROM', 'IMPORTANT_PHONE', 'IMPORTANT_DATE', 'IMPORTANT_MESSAGE');
 
-//Инициализация параметров
+//РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїР°СЂР°РјРµС‚СЂРѕРІ
 if ($arParams['EVENT_ID'] == '')
 {
 	ShowError(GetMessage('UNIF_NEED_SETTINGS'));
@@ -44,7 +44,7 @@ if (strlen($arParams['OK_TEXT']) <= 0)
 	$arParams['OK_TEXT'] = GetMessage('UNIF_OK_MESSAGE');
 }
 
-//Выборка полей из почтового события - $arFields
+//Р’С‹Р±РѕСЂРєР° РїРѕР»РµР№ РёР· РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ - $arFields
 $dbType = CEventType::GetList(array('TYPE_ID' => $arParams['EVENT_ID'], 'LID' => LANGUAGE_ID));
 if ($arType = $dbType->GetNext())
 {
@@ -57,7 +57,7 @@ if ($arType = $dbType->GetNext())
 	}
 }
 
-//Подготовка полей для вывода
+//РџРѕРґРіРѕС‚РѕРІРєР° РїРѕР»РµР№ РґР»СЏ РІС‹РІРѕРґР°
 foreach ($arFields as $key => $value)
 {
 	if (SITE_CHARSET != 'UTF-8')
@@ -69,7 +69,7 @@ foreach ($arFields as $key => $value)
 	$arReadyFields[$key]['LABEL'] = $value;
 }
 
-// Проверка скрытых полей для борьбы со спамом
+// РџСЂРѕРІРµСЂРєР° СЃРєСЂС‹С‚С‹С… РїРѕР»РµР№ РґР»СЏ Р±РѕСЂСЊР±С‹ СЃРѕ СЃРїР°РјРѕРј
 $antiSpamPassed = true;
 if ($arParams['ENABLE_HIDDEN_ANTISPAM_FIELDS'] == 'Y')
 {
@@ -82,14 +82,14 @@ if ($arParams['ENABLE_HIDDEN_ANTISPAM_FIELDS'] == 'Y')
 	}
 }
 
-//Проверка полей и генерация почтового события
+//РџСЂРѕРІРµСЂРєР° РїРѕР»РµР№ Рё РіРµРЅРµСЂР°С†РёСЏ РїРѕС‡С‚РѕРІРѕРіРѕ СЃРѕР±С‹С‚РёСЏ
 $errors = array();
 
 if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID'] == $formID)
 {
 	$arSend = array();
 
-	// проверка капчи
+	// РїСЂРѕРІРµСЂРєР° РєР°РїС‡Рё
 	if ($arParams['USE_CAPTCHA'])
 	{
 		include_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/classes/general/captcha.php');
@@ -127,7 +127,7 @@ if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID
 			}
 		}
 
-		//Проверка полей
+		//РџСЂРѕРІРµСЂРєР° РїРѕР»РµР№
 		foreach ($arReadyFields as $fieldName => $fieldData)
 		{
 			$additional = $fieldData['TYPE'] == 'FILE' ? $arParams['FILE_EXT'] : '';
@@ -153,7 +153,7 @@ if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID
 					continue;
 				}
 
-				//Сохраняем поле для отправки
+				//РЎРѕС…СЂР°РЅСЏРµРј РїРѕР»Рµ РґР»СЏ РѕС‚РїСЂР°РІРєРё
 				$sValue = '';
 				$arFiles = array();
 
@@ -204,7 +204,7 @@ if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID
 				$arSend[$key] = $sValue != '' ? $sValue : GetMessage('UNIF_NOT_SET');
 			}
 
-			//Поля файлов
+			//РџРѕР»СЏ С„Р°Р№Р»РѕРІ
 			foreach ($arFiles as $f)
 			{
 				$temp_f = $arReadyFields[$f]['VALUE'];
@@ -221,14 +221,14 @@ if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID
 				}
 			}
 			
-			//Подписка на рассылки
+			//РџРѕРґРїРёСЃРєР° РЅР° СЂР°СЃСЃС‹Р»РєРё
 			if ($_REQUEST['SIGN'] == 'Y' && $arParams['SIGN'] == 'Y' && $arParams[$arParams['SIGN_EMAIL']] == 'EMAIL' && CModule::IncludeModule('subscribe'))
 			{
 				$subscr = new CSubscription;
 				$subscr->Add(array('EMAIL' => $arReadyFields[$arParams['SIGN_EMAIL']]['VALUE'], 'ACTIVE' => 'Y', 'RUB_ID' => $arParams['SIGN_ON'], 'SEND_CONFIRM' => ($arParams['SIGN_CONFIRM'] == 'Y' ? 'Y' : 'N'), 'CONFIRMED' => ($arParams['SIGN_CONFIRM'] == 'Y' ? 'N' : 'Y')));
 			}
 
-			//Сохранение в инфоблок
+			//РЎРѕС…СЂР°РЅРµРЅРёРµ РІ РёРЅС„РѕР±Р»РѕРє
 			if ($arParams['SAVE_TO_IBLOCK'] == 'Y' && $arParams['IBLOCK_ID'] > 0 && CModule::IncludeModule('iblock'))
 			{
 				$to_ibl = new CIBlockElement;
@@ -259,10 +259,10 @@ if ($antiSpamPassed && $_REQUEST['REQUEST_TYPE'] == 'SEND' && $_REQUEST['FORM_ID
 				$to_ibl->Add($arFieldsS);
 			}
 
-			//Поле с e-mail'ом на который отправлять все
+			//РџРѕР»Рµ СЃ e-mail'РѕРј РЅР° РєРѕС‚РѕСЂС‹Р№ РѕС‚РїСЂР°РІР»СЏС‚СЊ РІСЃРµ
 			$arSend['EMAIL_TO'] = $arParams['EMAIL_TO'];
 
-			//Посылаем сообщения
+			//РџРѕСЃС‹Р»Р°РµРј СЃРѕРѕР±С‰РµРЅРёСЏ
 			foreach ($arParams['EVENT_MESSAGE_ID'] as $v)
 			{
 				if (IntVal($v) > 0)

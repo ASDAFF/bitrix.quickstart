@@ -13,8 +13,8 @@ if (isset($_REQUEST["action_button"]) && $_REQUEST["action_button"] == 'DELETE')
 
 
 $sTableID = "c_millcom_phpthumb";
-$oSort = new CAdminSorting($sTableID, "ID", "desc"); // îáúåêò ñîðòèðîâêè
-$lAdmin = new CAdminList($sTableID, $oSort); // îñíîâíîé îáúåêò ñïèñêà
+$oSort = new CAdminSorting($sTableID, "ID", "desc"); // Ð¾Ð±ÑŠÐµÐºÑ‚ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸
+$lAdmin = new CAdminList($sTableID, $oSort); // Ð¾ÑÐ½Ð¾Ð²Ð½Ð¾Ð¹ Ð¾Ð±ÑŠÐµÐºÑ‚ ÑÐ¿Ð¸ÑÐºÐ°
 
 
 
@@ -100,7 +100,7 @@ $top_menu = array(
 		"TEXT"  => GetMessage("MILLCOM_PHPTHUMB_ADD"),
 		"ICON"  => "btn_new",
 		"LINK"  => "millcom_phpthumb_edit.php?" . bitrix_sessid_get() . "&lang=".LANG,
-		"TITLE" => "Äîáàâèòü"
+		"TITLE" => "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ"
 	),
 );
 $lAdmin->AddAdminContextMenu($top_menu, false, false);

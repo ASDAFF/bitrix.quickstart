@@ -1,9 +1,9 @@
 <?
-$MESS['UNIF_OK_MESSAGE'] = 'Спасибо, ваше сообщение принято.';
+$MESS['UNIF_OK_MESSAGE'] = 'РЎРїР°СЃРёР±Рѕ, РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ РїСЂРёРЅСЏС‚Рѕ.';
 
-$MESS['UNIF_NEED_SETTINGS'] = 'Компонент не настроен!';
-$MESS['UNIF_CHECKBOX_TRUE'] = 'Да';
-$MESS['UNIF_CHECKBOX_FALSE'] = 'Нет';
-$MESS['UNIF_NOT_SET'] = '<Не указано>';
-$MESS['UNIF_FILE_LINK'] = 'Ссылка на файл';
+$MESS['UNIF_NEED_SETTINGS'] = 'РљРѕРјРїРѕРЅРµРЅС‚ РЅРµ РЅР°СЃС‚СЂРѕРµРЅ!';
+$MESS['UNIF_CHECKBOX_TRUE'] = 'Р”Р°';
+$MESS['UNIF_CHECKBOX_FALSE'] = 'РќРµС‚';
+$MESS['UNIF_NOT_SET'] = '<РќРµ СѓРєР°Р·Р°РЅРѕ>';
+$MESS['UNIF_FILE_LINK'] = 'РЎСЃС‹Р»РєР° РЅР° С„Р°Р№Р»';
 ?>

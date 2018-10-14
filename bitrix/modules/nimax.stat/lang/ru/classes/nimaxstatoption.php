@@ -1,10 +1,10 @@
 <?
-$MESS['FILE_NOT_FOUND'] = 'Ôàéë #FILENAME#.php íå íàéäåí â óêàçàííîì øàáëîíå (#TEMPLATE_ID#)';
-$MESS['FILE_NOT_WR'] = 'Ôàéë #FILENAME#.php â óêàçàííîì øàáëîíå (#TEMPLATE_ID#) íåäîñòóïåí äëÿ ÷òåíèÿ/çàïèñèè';
-$MESS['FILE_NOT_TAG'] = 'Íå óäàëîñü íàéòè òåã &lt;/#TAG#&gt; â ôàéëå #FILENAME#.php â óêàçàííîì øàáëîíå (#TEMPLATE_ID#)';
+$MESS['FILE_NOT_FOUND'] = 'Ð¤Ð°Ð¹Ð» #FILENAME#.php Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½ Ð² ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ð¼ ÑˆÐ°Ð±Ð»Ð¾Ð½Ðµ (#TEMPLATE_ID#)';
+$MESS['FILE_NOT_WR'] = 'Ð¤Ð°Ð¹Ð» #FILENAME#.php Ð² ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ð¼ ÑˆÐ°Ð±Ð»Ð¾Ð½Ðµ (#TEMPLATE_ID#) Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð´Ð»Ñ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ/Ð·Ð°Ð¿Ð¸ÑÐ¸Ð¸';
+$MESS['FILE_NOT_TAG'] = 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð½Ð°Ð¹Ñ‚Ð¸ Ñ‚ÐµÐ³ &lt;/#TAG#&gt; Ð² Ñ„Ð°Ð¹Ð»Ðµ #FILENAME#.php Ð² ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ð¾Ð¼ ÑˆÐ°Ð±Ð»Ð¾Ð½Ðµ (#TEMPLATE_ID#)';
 
-$MESS['TPL_NOT_SELECT'] = 'Íå âûáðàí øàáëîí!';
-$MESS['TPL_NOT_FOUND'] = 'Óêàçàííûé øàáëîí íå íàéäåí (#TPL_PATH#)!';
+$MESS['TPL_NOT_SELECT'] = 'ÐÐµ Ð²Ñ‹Ð±Ñ€Ð°Ð½ ÑˆÐ°Ð±Ð»Ð¾Ð½!';
+$MESS['TPL_NOT_FOUND'] = 'Ð£ÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ð¹ ÑˆÐ°Ð±Ð»Ð¾Ð½ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½ (#TPL_PATH#)!';
 
-$MESS['DATA_NOT_SAVE'] = 'Íå óäàëîñü ñîõðàíèòü äàííûå';
-$MESS['CODE_NOT_SAVE'] = 'Íå óäàëîñü ïîäêëþ÷èòü êîä äëÿ #CODE_ID#';
+$MESS['DATA_NOT_SAVE'] = 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ';
+$MESS['CODE_NOT_SAVE'] = 'ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð´ Ð´Ð»Ñ #CODE_ID#';

@@ -1,5 +1,5 @@
 <?
-$MESS['MAIN_UNIVERSAL_FORMS_COMPONENT_NAME'] = 'Íàñòðàèâàåìàÿ ôîðìà';
-$MESS['MAIN_UNIVERSAL_FORMS_COMPONENT_DESCRIPTION'] = 'Íàñòðàèâàåìàÿ ôîðìà äëÿ îòïðàâêè ñîîáùåíèÿ ñ ñàéòà íà E-mail';
-$MESS['MAIN_UNIVERSAL_FORMS_GROUP_NAME'] = 'Ïîëåçíûå êîìïîíåíòû îò ÍÀÑ';
+$MESS['MAIN_UNIVERSAL_FORMS_COMPONENT_NAME'] = 'ÐÐ°ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°ÐµÐ¼Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð°';
+$MESS['MAIN_UNIVERSAL_FORMS_COMPONENT_DESCRIPTION'] = 'ÐÐ°ÑÑ‚Ñ€Ð°Ð¸Ð²Ð°ÐµÐ¼Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð° Ð´Ð»Ñ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ñ Ñ ÑÐ°Ð¹Ñ‚Ð° Ð½Ð° E-mail';
+$MESS['MAIN_UNIVERSAL_FORMS_GROUP_NAME'] = 'ÐŸÐ¾Ð»ÐµÐ·Ð½Ñ‹Ðµ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ Ð¾Ñ‚ ÐÐÐ¡';
 ?>

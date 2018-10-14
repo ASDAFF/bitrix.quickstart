@@ -2,17 +2,17 @@
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 
-//Èíèöèàëèçàöèÿ âñïîìîãàòåëüíûõ ìàññèâîâ
+//Ð˜Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ Ð²ÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ð¼Ð°ÑÑÐ¸Ð²Ð¾Ð²
 $arEvent = $arFields = $arEventTypes = Array();
 
-//Ìàññèâ òèïîâ ïî÷òîâûõ ñîáûòèé
+//ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð¾Ð² Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ñ… ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ð¹
 $dbType = CEventType::GetList(array('LID' => LANGUAGE_ID));
 while($arType = $dbType->GetNext())
 {
 	$arEventTypes[$arType['EVENT_NAME']] = '[' . $arType['EVENT_NAME'] . '] ' . $arType['NAME'];
 }
 
-//Ìàññèâ òèïîâ ïîëåé (ñòðîêà, ÷èñëî, äàòà...)
+//ÐœÐ°ÑÑÐ¸Ð² Ñ‚Ð¸Ð¿Ð¾Ð² Ð¿Ð¾Ð»ÐµÐ¹ (ÑÑ‚Ñ€Ð¾ÐºÐ°, Ñ‡Ð¸ÑÐ»Ð¾, Ð´Ð°Ñ‚Ð°...)
 $arTypes = array(
 	'HIDDEN' => GetMessage('UNIF_HIDDEN'),
 	'STRING' => GetMessage('UNIF_STRING'),
@@ -29,7 +29,7 @@ $arTypes = array(
 	'FILE'	=> GetMessage('UNIF_FILE')
 );
 
-// ìàññèâû äåôîëòíûõ ñâîéñòâ
+// Ð¼Ð°ÑÑÐ¸Ð²Ñ‹ Ð´ÐµÑ„Ð¾Ð»Ñ‚Ð½Ñ‹Ñ… ÑÐ²Ð¾Ð¹ÑÑ‚Ð²
 $arPropertyF = array(
 	'DETAIL_PICTURE' => GetMessage('UNIF_DETAIL_PICTURE'),
 	'PREVIEW_PICTURE' => GetMessage('UNIF_PREVIEW_PICTURE')
@@ -43,13 +43,13 @@ $arPropertyS = array(
 	'SORT' => GetMessage('UNIF_SORT')
 );
 
-//Ìàññèâ ãðóïï
+//ÐœÐ°ÑÑÐ¸Ð² Ð³Ñ€ÑƒÐ¿Ð¿
 $arMGroups = array(
 	'FIELD_SETTINGS' => array('NAME' => GetMessage('UNIF_FIELD_SETTINGS_GROUP')),
 	'SAVE_SETTINGS' => array('NAME' => GetMessage('UNIF_SAVE_SETTINGS_GROUP')),
 );
 
-//Ìàññèâ ïàðàìåòðîâ
+//ÐœÐ°ÑÑÐ¸Ð² Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
 $arMParams = array(
 	'FORM_ID' => Array(
 		'NAME' => GetMessage('UNIF_FORM_ID'),
@@ -79,17 +79,17 @@ $arMParams = array(
 	)
 );
 
-//Åñëè óêàçàí òèï ïî÷òîâîãî ñîáûòèÿ - âûâîäèì âñå ïàðàìåòðû   
+//Ð•ÑÐ»Ð¸ ÑƒÐºÐ°Ð·Ð°Ð½ Ñ‚Ð¸Ð¿ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ - Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ Ð²ÑÐµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹   
 if($arCurrentValues['EVENT_ID'] != '')
 {
-	//Âûáîðêà øàáëîíîâ ïðèâÿçàííûõ ê ïî÷òîâîìó ñîáûòèþ - $arEvent
+	//Ð’Ñ‹Ð±Ð¾Ñ€ÐºÐ° ÑˆÐ°Ð±Ð»Ð¾Ð½Ð¾Ð² Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ð½Ð½Ñ‹Ñ… Ðº Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð¼Ñƒ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸ÑŽ - $arEvent
 	$dbType = CEventMessage::GetList($by = 'ID', $order = 'DESC', array('TYPE_ID' => $arCurrentValues['EVENT_ID'], 'ACTIVE' => 'Y'));
 	while($arType = $dbType->GetNext())
 	{
 		$arEvent[$arType['ID']] = '[' . $arType['ID'] . '] ' . $arType['SUBJECT'];
 	}
 	
-	//Âûáîðêà ïîëåé èç ïî÷òîâîãî ñîáûòèÿ - $arFields
+	//Ð’Ñ‹Ð±Ð¾Ñ€ÐºÐ° Ð¿Ð¾Ð»ÐµÐ¹ Ð¸Ð· Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ð¾Ð³Ð¾ ÑÐ¾Ð±Ñ‹Ñ‚Ð¸Ñ - $arFields
 	$dbType = CEventType::GetList(array('TYPE_ID' => $arCurrentValues['EVENT_ID'], 'LID' => LANGUAGE_ID));
 	if($arType = $dbType->GetNext())
 	{
@@ -281,7 +281,7 @@ if($arCurrentValues['SAVE_TO_IBLOCK'] == 'Y' && CModule::IncludeModule('iblock')
 	}
 }
 
-//Ïîäïèñêè
+//ÐŸÐ¾Ð´Ð¿Ð¸ÑÐºÐ¸
 if(CModule::IncludeModule('subscribe'))
 {
 	$arMGroups['SIGN_SETTINGS'] = array('NAME' => GetMessage('UNIF_SIGN_SETTINGS_GROUP'));

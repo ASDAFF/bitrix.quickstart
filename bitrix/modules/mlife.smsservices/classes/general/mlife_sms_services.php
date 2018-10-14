@@ -1,5 +1,5 @@
 <?
-//îáÿâëÿåì êëàññ äëÿ ðàáîòû ñ ñìñ øëþçîì
+//Ð¾Ð±ÑÐ²Ð»ÑÐµÐ¼ ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÑÐ¼Ñ ÑˆÐ»ÑŽÐ·Ð¾Ð¼
 $classname = COption::GetOptionString("mlife.smsservices","transport","smsc.php");
 if(strpos($classname,'php')===false) $classname .= '.php';
 require_once("transport/".$classname);
@@ -7,25 +7,25 @@ require_once("transport/".$classname);
 
 class CMlifeSmsServices extends CMlifeSmsTransport {
 	
-	//êîíñòðóêòîð
+	//ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€
 	function __construct() {
 		parent::__construct();
 	}
 	
 	/**
-	* Ìåòîä äëÿ ïðîâåðêè íîìåðà òåëåôîíà
-	* @param string      $phone    íîìåð òåëåôîíà äëÿ ïðîâåðêè
-	* @param boolean     $all      íåîáÿçàòåëüíûé ïàðàìåòð ïî óìîë÷àíèþ true (âåñü ìèð), false (òîëüêî ñíã)
-	* @return array                phone - íîìåð áåç ìóñîðà, check - ðåçóëüòàò ïðîâåðêè(boolean)
+	* ÐœÐµÑ‚Ð¾Ð´ Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸ Ð½Ð¾Ð¼ÐµÑ€Ð° Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°
+	* @param string      $phone    Ð½Ð¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð° Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸
+	* @param boolean     $all      Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ true (Ð²ÐµÑÑŒ Ð¼Ð¸Ñ€), false (Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÐ½Ð³)
+	* @return array                phone - Ð½Ð¾Ð¼ÐµÑ€ Ð±ÐµÐ· Ð¼ÑƒÑÐ¾Ñ€Ð°, check - Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸(boolean)
 	*/
 	public function checkPhoneNumber ($phone,$all=true) {
 		
-		//î÷èñòêà îò ëèøíåãî ìóñîðà
+		//Ð¾Ñ‡Ð¸ÑÑ‚ÐºÐ° Ð¾Ñ‚ Ð»Ð¸ÑˆÐ½ÐµÐ³Ð¾ Ð¼ÑƒÑÐ¾Ñ€Ð°
 		$phoneFormat = '+'.preg_replace("/[^0-9A-Za-z]/", "", $phone);
 		
-		//ïðîâåðêà íîìåðà ìèð
+		//Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð¾Ð¼ÐµÑ€Ð° Ð¼Ð¸Ñ€
 		$pattern_world = "/^\+?([87](?!95[4-79]|99[^2457]|907|94[^0]|336|986)([348]\d|9[0-689]|7[0247])\d{8}|[1246]\d{9,13}|68\d{7}|5[1-46-9]\d{8,12}|55[1-9]\d{9}|55119\d{8}|500[56]\d{4}|5016\d{6}|5068\d{7}|502[45]\d{7}|5037\d{7}|50[457]\d{8}|50855\d{4}|509[34]\d{7}|376\d{6}|855\d{8}|856\d{10}|85[0-4789]\d{8,10}|8[68]\d{10,11}|8[14]\d{10}|82\d{9,10}|852\d{8}|90\d{10}|96(0[79]|17[01]|13)\d{6}|96[23]\d{9}|964\d{10}|96(5[69]|89)\d{7}|96(65|77)\d{8}|92[023]\d{9}|91[1879]\d{9}|9[34]7\d{8}|959\d{7}|989\d{9}|97\d{8,12}|99[^4568]\d{7,11}|994\d{9}|9955\d{8}|996[57]\d{8}|9989\d{8}|380[34569]\d{8}|381\d{9}|385\d{8,9}|375[234]\d{8}|372\d{7,8}|37[0-4]\d{8}|37[6-9]\d{7,11}|30[69]\d{9}|34[67]\d{8}|3[12359]\d{8,12}|36\d{9}|38[1679]\d{8}|382\d{8,9})$/";
-		//ïðîâåðêà íîìåðà ñíã
+		//Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ð½Ð¾Ð¼ÐµÑ€Ð° ÑÐ½Ð³
 		$pattern_sng = "/^((\+?7|8)(?!95[4-79]|99[^2457]|907|94[^0]|336)([348]\d|9[0-689]|7[07])\d{8}|\+?(99[^456]\d{7,11}|994\d{9}|9955\d{8}|996[57]\d{8}|380[34569]\d{8}|375[234]\d{8}|372\d{7,8}|37[0-4]\d{8}))$/";
 		
 		if($all) {
@@ -43,7 +43,7 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 	
 	}
 	
-	//îòïðàâêà ñìñ, ïîñò îòïðàâêà, äîáàâëåíèå çàïèñè â èñòîðèþ ñìñ
+	//Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ° ÑÐ¼Ñ, Ð¿Ð¾ÑÑ‚ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ°, Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°Ð¿Ð¸ÑÐ¸ Ð² Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÑŽ ÑÐ¼Ñ
 	public function sendSms($phones, $mess, $time=0, $sender=false, $prim='', $addHistory=true, $update=false, $error=false) {
 			//print_r($error['send']);
 			if(($time==0 || $time<time()) && !$error) {
@@ -108,7 +108,7 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 				
 	}
 	
-	//ìåòîä ïîëó÷àåò îòïðàâèòåëåé + êåøèðóåò îòâåò (äîïîëíèòåëüíî CMlifeSmsTransport::_getAllSender())
+	//Ð¼ÐµÑ‚Ð¾Ð´ Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÑ‚ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÐµÐ¹ + ÐºÐµÑˆÐ¸Ñ€ÑƒÐµÑ‚ Ð¾Ñ‚Ð²ÐµÑ‚ (Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ CMlifeSmsTransport::_getAllSender())
 	private function getAllSender() {
 	
 		$obCache = new CPHPCache();
@@ -131,7 +131,7 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 		
 	}
 	
-	//õòìë ñïèñêà îòïðàâèòåëåé (options)
+	//Ñ…Ñ‚Ð¼Ð» ÑÐ¿Ð¸ÑÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÐµÐ»ÐµÐ¹ (options)
 	public function getAllSenderOptions() {
 	
 		if(COption::GetOptionString("mlife.smsservices", "listotp")!='Y') return '';
@@ -161,7 +161,7 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 		
 	}
 	
-	//ìåòîä äëÿ ïîëó÷åíèÿ áàëàíñà + êåøèðîâàíèå îòâåòà (äîïîëíèòåëüíî CMlifeSmsTransport::_getBalance())
+	//Ð¼ÐµÑ‚Ð¾Ð´ Ð´Ð»Ñ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ñ Ð±Ð°Ð»Ð°Ð½ÑÐ° + ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¾Ñ‚Ð²ÐµÑ‚Ð° (Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ CMlifeSmsTransport::_getBalance())
 	public function getBalance(){
 	
 		$obCache = new CPHPCache();
@@ -188,22 +188,22 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 	
 	}
 	
-	//ïîëó÷åíèå èñòîðèè ñìñ
+	//Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ð¸ ÑÐ¼Ñ
 	public function GetList($arOrder, $arFilter, $arSelect) {
 		return CMlifeSmsServicesSql::getList($arOrder, $arFilter, $arSelect);
 	}
 	
-	//óäàëåíèå ñìñ èç èñòîðèè
+	//ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ ÑÐ¼Ñ Ð¸Ð· Ð¸ÑÑ‚Ð¾Ñ€Ð¸Ð¸
 	public function DeleteSms($id) {
 		return CMlifeSmsServicesSql::DeleteSms($id);
 	}
 	
-	//äîáàâëåíèå ñìñ â èñòîðèþ
+	//Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ¼Ñ Ð² Ð¸ÑÑ‚Ð¾Ñ€Ð¸ÑŽ
 	private function addSms($arFields) {
 		return CMlifeSmsServicesSql::addSms($arFields);
 	}
 	
-	//ïîëó÷àåì ñïèñîê íåîòïðàâëåííûõ ñìñ è îòïðàâëÿåì èõ
+	//Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÑÐ¿Ð¸ÑÐ¾Ðº Ð½ÐµÐ¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð½Ñ‹Ñ… ÑÐ¼Ñ Ð¸ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÐµÐ¼ Ð¸Ñ…
 	public function getTurnSms() {
 		
 		global $DB;
@@ -214,13 +214,13 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 		$res = $this->GetList(array(),$arFilter,$arSel);
 		
 		while ($ob = $res->GetNext(false,false)){
-			usleep(100000); //íà âñÿêèé ñëó÷àé íå áîëåå 10 çàïðîñîâ â ñåêóíäó (íåêîòîðûå øëþçû ìîãóò áëîêèðîâàòü ip)
+			usleep(100000); //Ð½Ð° Ð²ÑÑÐºÐ¸Ð¹ ÑÐ»ÑƒÑ‡Ð°Ð¹ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 10 Ð·Ð°Ð¿Ñ€Ð¾ÑÐ¾Ð² Ð² ÑÐµÐºÑƒÐ½Ð´Ñƒ (Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ ÑˆÐ»ÑŽÐ·Ñ‹ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ip)
 			$send = $this->sendSms($ob['phone'], $ob['mess'], 0, $ob['sender'], '', false, array('id'=>$ob['id']));
 		}
 	
 	}
 	
-	//ïîëó÷àåì íåîáíîâëåííûå ñòàòóñû è îáíîâëÿåì
+	//Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ð½ÐµÐ¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð½Ñ‹Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÑ‹ Ð¸ Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÐ¼
 	public function getStatusSms() {
 		
 		global $DB;
@@ -231,10 +231,10 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 		$res = $this->GetList(array(),$arFilter,$arSel);
 		
 		while ($ob = $res->GetNext(false,false)){
-		usleep(100000); //íà âñÿêèé ñëó÷àé íå áîëåå 10 çàïðîñîâ â ñåêóíäó (íåêîòîðûå øëþçû ìîãóò áëîêèðîâàòü ip)
-			//ïîëó÷àåì ñòàòóñ ñî øëþçà
+		usleep(100000); //Ð½Ð° Ð²ÑÑÐºÐ¸Ð¹ ÑÐ»ÑƒÑ‡Ð°Ð¹ Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 10 Ð·Ð°Ð¿Ñ€Ð¾ÑÐ¾Ð² Ð² ÑÐµÐºÑƒÐ½Ð´Ñƒ (Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ ÑˆÐ»ÑŽÐ·Ñ‹ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ip)
+			//Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÑÑ‚Ð°Ñ‚ÑƒÑ ÑÐ¾ ÑˆÐ»ÑŽÐ·Ð°
 			$resp = $this->getStatusSmsS($ob['smsid'],$ob['phone']);
-			//åñëè íåò îøèáîê îáíîâëÿåì â áàçå
+			//ÐµÑÐ»Ð¸ Ð½ÐµÑ‚ Ð¾ÑˆÐ¸Ð±Ð¾Ðº Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÐ¼ Ð² Ð±Ð°Ð·Ðµ
 			if(!$resp->error_code) {
 				$this->updateSmsStatus($ob['id'],$resp->status,false,$resp->last_timestamp);
 			}
@@ -242,12 +242,12 @@ class CMlifeSmsServices extends CMlifeSmsTransport {
 		
 	}
 	
-	//îáíîâëåíèå ñòàòóñà ñìñ
+	//Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° ÑÐ¼Ñ
 	private function updateSmsStatus($id,$status_code,$sms_id=false,$time=false) {
 		return CMlifeSmsServicesSql::updateSmsStatus($id,$status_code,$sms_id,$time);
 	}
 	
-	//ïîëó÷åíèå ñòàòóñà ñîîáùåíèé ñî øëþçà
+	//Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ð¹ ÑÐ¾ ÑˆÐ»ÑŽÐ·Ð°
 	private function getStatusSmsS($smsid,$phone=false) {
 		return $this->_getStatusSms($smsid,$phone);
 	}

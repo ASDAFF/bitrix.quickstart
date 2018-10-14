@@ -1,4 +1,4 @@
 <?php
-$MESS['NK_MODULE_NAME'] = "Òèïîãðàô Ìóðàâü¸âà";
-$MESS['NK_MODULE_DESCRIPTION'] = "Òèïîãðàôèðîâàíèå òåêñòà";
+$MESS['NK_MODULE_NAME'] = "Ð¢Ð¸Ð¿Ð¾Ð³Ñ€Ð°Ñ„ ÐœÑƒÑ€Ð°Ð²ÑŒÑ‘Ð²Ð°";
+$MESS['NK_MODULE_DESCRIPTION'] = "Ð¢Ð¸Ð¿Ð¾Ð³Ñ€Ð°Ñ„Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ‚ÐµÐºÑÑ‚Ð°";
 ?>

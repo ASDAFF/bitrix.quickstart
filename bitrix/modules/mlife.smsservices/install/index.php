@@ -55,12 +55,12 @@ Class mlife_smsservices extends CModule
 			RegisterModuleDependences("sale", "OnSaleCancelOrder", $this->MODULE_ID, "\\Mlife\\Smsservices\\Handlers", "OnSaleCancelOrderHandler");
 			RegisterModuleDependences("sale", "OnSaleDeliveryOrder", $this->MODULE_ID, "\\Mlife\\Smsservices\\Handlers", "OnSaleDeliveryOrderHandler");
 			
-			//Ðåäèðåêò íà íàñòðîéêè ïðèëîæåíèÿ
+			//Ð ÐµÐ´Ð¸Ñ€ÐµÐºÑ‚ Ð½Ð° Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¿Ñ€Ð¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ
 			LocalRedirect('/bitrix/admin/settings.php?lang=ru&mid='.$this->MODULE_ID.'&mid_menu=1');
         }
 
         function DoUninstall() {
-			//Óäàëåíèå ôàéëîâ âèçóàëüíîé ÷àñòè àäìèí ïàíåëè
+			//Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð¾Ð² Ð²Ð¸Ð·ÑƒÐ°Ð»ÑŒÐ½Ð¾Ð¹ Ñ‡Ð°ÑÑ‚Ð¸ Ð°Ð´Ð¼Ð¸Ð½ Ð¿Ð°Ð½ÐµÐ»Ð¸
 			DeleteDirFiles(
 			$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/admin",
 			$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");

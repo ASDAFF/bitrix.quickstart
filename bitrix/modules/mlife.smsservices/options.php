@@ -23,7 +23,7 @@ $bollModuleSale = \Bitrix\Main\Loader::includeModule("sale");
 		$arStatus = array();
 		$arPerson = array();
 		
-		//ñâîéñòâà
+		//ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°
 		//$db_props = \CSaleOrderProps::GetList(array("SORT" => "ASC"),array("TYPE" => array('TEXT','TEXTAREA'))); //old module sale
 		$db_props = \CSaleOrderProps::GetList(array("SORT" => "ASC"),array("TYPE" => array('STRING')));
 		while($arProperty = $db_props->Fetch()) {
@@ -38,13 +38,13 @@ $bollModuleSale = \Bitrix\Main\Loader::includeModule("sale");
 			$arMakros[$arProperty["PERSON_TYPE_ID"]]['ORDER_SUM'] = Loc::getMessage("MLIFESS_IM_MACROS7");
 		}
 		
-		//ñòàòóñû
+		//ÑÑ‚Ð°Ñ‚ÑƒÑÑ‹
 		$obStatus = \CSaleStatus::GetList();
 		while($ar = $obStatus->Fetch()) {
 			$arStatus[$ar['ID']][$ar['LID']] = $ar['NAME'];
 		}
 		
-		//òèïû ïëàòåëüùèêîâ
+		//Ñ‚Ð¸Ð¿Ñ‹ Ð¿Ð»Ð°Ñ‚ÐµÐ»ÑŒÑ‰Ð¸ÐºÐ¾Ð²
 		$db_ptype = \CSalePersonType::GetList(Array("SORT" => "ASC"), Array());
 		$bFirst = True;
 		while ($ptype = $db_ptype->Fetch())

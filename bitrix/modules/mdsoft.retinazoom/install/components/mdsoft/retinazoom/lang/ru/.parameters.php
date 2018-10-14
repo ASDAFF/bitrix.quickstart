@@ -1,14 +1,14 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 
 <?
-$MESS ['MDSOFT_RETINA_EFFECT_1'] = 'Áåç ýôôåêòà';
-$MESS ['MDSOFT_RETINA_EFFECT_2'] = 'Ïðîçðà÷íûé';
-$MESS ['MDSOFT_RETINA_EFFECT_3'] = 'Ðàçìûòèå';
-$MESS ['MDSOFT_RETINA_EFFECT_4'] = 'Ãðàäàöèè ñåðîãî';
-$MESS ['MDSOFT_RETINA_IBLOCK_TYPE_NAME'] = "Òèï èíôîáëîêà";
-$MESS ['MDSOFT_RETINA_BOX_SIZE_NAME'] = "Ðàçìåðû ðàìêè";
-$MESS ['MDSOFT_RETINA_BOX_ELEMENT_ID'] = "ID Ýëåìåíòà èíôîáëîêà";
-$MESS ['MDSOFT_RETINA_ZOOM_NAME'] = "Íà÷àëüíîå óâåëè÷åíèå";
-$MESS ['MDSOFT_RETINA_EFFECT_NAME'] = "Ýôôåêò ïðè íàâåäåíèè";
-$MESS ['MDSOFT_RETINA_INCLUDE_JQUERY'] = "Ïîäêëþ÷èòü áèáëèîòåêó jQuery";
+$MESS ['MDSOFT_RETINA_EFFECT_1'] = 'Ð‘ÐµÐ· ÑÑ„Ñ„ÐµÐºÑ‚Ð°';
+$MESS ['MDSOFT_RETINA_EFFECT_2'] = 'ÐŸÑ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ñ‹Ð¹';
+$MESS ['MDSOFT_RETINA_EFFECT_3'] = 'Ð Ð°Ð·Ð¼Ñ‹Ñ‚Ð¸Ðµ';
+$MESS ['MDSOFT_RETINA_EFFECT_4'] = 'Ð“Ñ€Ð°Ð´Ð°Ñ†Ð¸Ð¸ ÑÐµÑ€Ð¾Ð³Ð¾';
+$MESS ['MDSOFT_RETINA_IBLOCK_TYPE_NAME'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['MDSOFT_RETINA_BOX_SIZE_NAME'] = "Ð Ð°Ð·Ð¼ÐµÑ€Ñ‹ Ñ€Ð°Ð¼ÐºÐ¸";
+$MESS ['MDSOFT_RETINA_BOX_ELEMENT_ID'] = "ID Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS ['MDSOFT_RETINA_ZOOM_NAME'] = "ÐÐ°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð¸Ðµ";
+$MESS ['MDSOFT_RETINA_EFFECT_NAME'] = "Ð­Ñ„Ñ„ÐµÐºÑ‚ Ð¿Ñ€Ð¸ Ð½Ð°Ð²ÐµÐ´ÐµÐ½Ð¸Ð¸";
+$MESS ['MDSOFT_RETINA_INCLUDE_JQUERY'] = "ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ jQuery";
 ?>

@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die(); ?>
 
 <?
-$MESS ['MDSOFT_RETINA_NAME'] = "Ðåòèíà çóììåð";
-$MESS ['MDSOFT_RETINA_DESCR'] = "Çóììåð äëÿ êàðòèíîê êàê íà iPad";
+$MESS ['MDSOFT_RETINA_NAME'] = "Ð ÐµÑ‚Ð¸Ð½Ð° Ð·ÑƒÐ¼Ð¼ÐµÑ€";
+$MESS ['MDSOFT_RETINA_DESCR'] = "Ð—ÑƒÐ¼Ð¼ÐµÑ€ Ð´Ð»Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½Ð¾Ðº ÐºÐ°Ðº Ð½Ð° iPad";
 $MESS ['MDSOFT_RETINA_PATH_ID'] = "MDSoft";
 ?>

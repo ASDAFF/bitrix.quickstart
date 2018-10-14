@@ -1,8 +1,8 @@
 <?
-$MESS["NSANDREY_SITEMAP_SKRYTQ_RAZDEL"] = "Ñêðûòü ðàçäåë ";
-$MESS["NSANDREY_SITEMAP_NASTROYKI_DLA_RAZDEL"] = "Íàñòðîéêè äëÿ ðàçäåëà ";
-$MESS["NSANDREY_SITEMAP_NAZVANIE_DLA_RAZDELA"] = "Íàçâàíèå äëÿ ðàçäåëà ";
-$MESS["NSANDREY_SITEMAP_INFOBLOKA"] = "Èíôîáëîêà";
-$MESS["NSANDREY_SITEMAP_RAZDELA"] = "Ðàçäåëà";
-$MESS["NSANDREY_SITEMAP_GLUBINA"] = "Ãëóáèíà";
+$MESS["NSANDREY_SITEMAP_SKRYTQ_RAZDEL"] = "Ð¡ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ€Ð°Ð·Ð´ÐµÐ» ";
+$MESS["NSANDREY_SITEMAP_NASTROYKI_DLA_RAZDEL"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° ";
+$MESS["NSANDREY_SITEMAP_NAZVANIE_DLA_RAZDELA"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð´Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° ";
+$MESS["NSANDREY_SITEMAP_INFOBLOKA"] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+$MESS["NSANDREY_SITEMAP_RAZDELA"] = "Ð Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS["NSANDREY_SITEMAP_GLUBINA"] = "Ð“Ð»ÑƒÐ±Ð¸Ð½Ð°";
 ?>

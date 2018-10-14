@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 echo '<form id="'.$arResult['FORM_ID'].'" class="unif-form" action="'.$arResult['COMPONENT_PATH'].'/ajax.php" method="POST" enctype="multipart/form-data">
 		<div class="success">'.$arParams['OK_TEXT'].'</div>';
 
-// поля
+// РїРѕР»СЏ
 foreach($arResult['FIELDS'] as $fieldName => $fieldData)
 {
 	if ($fieldName != 'EMAIL_TO')
@@ -25,7 +25,7 @@ foreach($arResult['FIELDS'] as $fieldName => $fieldData)
 	}
 }
 
-// Поля для антиспама
+// РџРѕР»СЏ РґР»СЏ Р°РЅС‚РёСЃРїР°РјР°
 if ($arParams['ENABLE_HIDDEN_ANTISPAM_FIELDS'] == 'Y')
 {
 	foreach($arResult['ANTISPAM_FIELDS'] as $antiSpamFieldName)
@@ -36,7 +36,7 @@ if ($arParams['ENABLE_HIDDEN_ANTISPAM_FIELDS'] == 'Y')
 	}
 }
 
-// подписка
+// РїРѕРґРїРёСЃРєР°
 if($arResult['SIGN'] != '')
 {
 	echo    '<div class="field sign">
@@ -45,7 +45,7 @@ if($arResult['SIGN'] != '')
 			</div>';
 }
 
-// капча
+// РєР°РїС‡Р°
 if($arParams['USE_CAPTCHA'])
 {
 	echo	'<div id="captcha" class="field captcha">

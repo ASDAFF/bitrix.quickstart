@@ -3,7 +3,7 @@ BX.ready(function () {
     arButtons['newkaliningrad_typography'] = [
         'BXButton',
         {
-            title: 'Типографировать текст',
+            title: 'РўРёРїРѕРіСЂР°С„РёСЂРѕРІР°С‚СЊ С‚РµРєСЃС‚',
             iconkit: 'newkaliningrad_typography.gif',
             id: 'newkaliningrad_typography',
             name: 'newkaliningrad_typography',

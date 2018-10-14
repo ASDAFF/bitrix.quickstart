@@ -1,8 +1,8 @@
 <?
-// Подключаем модуль (выполняем код в файле include.php)
+// РџРѕРґРєР»СЋС‡Р°РµРј РјРѕРґСѓР»СЊ (РІС‹РїРѕР»РЅСЏРµРј РєРѕРґ РІ С„Р°Р№Р»Рµ include.php)
 CModule::IncludeModule('nimax.stat');
 
-// Подключаем языковые константы
+// РџРѕРґРєР»СЋС‡Р°РµРј СЏР·С‹РєРѕРІС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
 IncludeModuleLangFile(__FILE__);
 
 class nimax_stat extends CModule {
@@ -14,7 +14,7 @@ class nimax_stat extends CModule {
     var $MODULE_DESCRIPTION;
 
     /**
-     * Инициализация модуля для страницы "Управление модулями"
+     * РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РјРѕРґСѓР»СЏ РґР»СЏ СЃС‚СЂР°РЅРёС†С‹ "РЈРїСЂР°РІР»РµРЅРёРµ РјРѕРґСѓР»СЏРјРё"
      */
     public function nimax_stat() {
 
@@ -34,7 +34,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Устанавливаем модуль
+     * РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РјРѕРґСѓР»СЊ
      */
     public function DoInstall() {
         if( !$this->InstallDB() || !$this->InstallEvents() || !$this->InstallFiles() ) {
@@ -45,14 +45,14 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Удаляем модуль
+     * РЈРґР°Р»СЏРµРј РјРѕРґСѓР»СЊ
      */
     public function DoUninstall() {
         if( !$this->UnInstallDB() || !$this->UnInstallEvents() || !$this->UnInstallFiles() ) {
             return;
         }
         try{
-            // Удаление счетчиков и настроек
+            // РЈРґР°Р»РµРЅРёРµ СЃС‡РµС‚С‡РёРєРѕРІ Рё РЅР°СЃС‚СЂРѕРµРє
             $NSO = new Nimax_Stat_Option();
             $NSO->deleteOption();
         }
@@ -63,7 +63,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Добавляем почтовые события
+     * Р”РѕР±Р°РІР»СЏРµРј РїРѕС‡С‚РѕРІС‹Рµ СЃРѕР±С‹С‚РёСЏ
      *
      * @return bool
      */
@@ -72,7 +72,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Удаляем почтовые события
+     * РЈРґР°Р»СЏРµРј РїРѕС‡С‚РѕРІС‹Рµ СЃРѕР±С‹С‚РёСЏ
      *
      * @return bool
      */
@@ -81,7 +81,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Копируем файлы административной части
+     * РљРѕРїРёСЂСѓРµРј С„Р°Р№Р»С‹ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РёРІРЅРѕР№ С‡Р°СЃС‚Рё
      *
      * @return bool
      */
@@ -90,7 +90,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Удаляем файлы административной части
+     * РЈРґР°Р»СЏРµРј С„Р°Р№Р»С‹ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РёРІРЅРѕР№ С‡Р°СЃС‚Рё
      *
      * @return bool
      */
@@ -99,7 +99,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Добавляем таблицы в БД
+     * Р”РѕР±Р°РІР»СЏРµРј С‚Р°Р±Р»РёС†С‹ РІ Р‘Р”
      *
      * @return bool
      */
@@ -108,7 +108,7 @@ class nimax_stat extends CModule {
     }
 
     /**
-     * Удаляем таблицы из БД
+     * РЈРґР°Р»СЏРµРј С‚Р°Р±Р»РёС†С‹ РёР· Р‘Р”
      *
      * @return bool
      */

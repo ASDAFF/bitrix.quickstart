@@ -1,7 +1,7 @@
 <?
-$MESS ['IBLOCK_INSTALL_NAME'] = "Óâåëè÷èòåëüíîå ñòåêëî RetinaZoom";
-$MESS ['IBLOCK_INSTALL_DESCRIPTION'] = "Ïîçâîëÿåò óâåëè÷èâàòü îáëàñòü èçîáðàæåíèÿ êàê íà óñòðîéñòâàõ ñ Retina äèñïëååì";
-$MESS ['IBLOCK_INSTALL_TITLE'] = "Óñòàíîâêà ìîäóëÿ \"RetinaZoom\"";
-$MESS["SPER_PARTNER"] = "Äìèòðèé Ìîñêâèòèí";
+$MESS ['IBLOCK_INSTALL_NAME'] = "Ð£Ð²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ ÑÑ‚ÐµÐºÐ»Ð¾ RetinaZoom";
+$MESS ['IBLOCK_INSTALL_DESCRIPTION'] = "ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ð²Ð°Ñ‚ÑŒ Ð¾Ð±Ð»Ð°ÑÑ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ ÐºÐ°Ðº Ð½Ð° ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°Ñ… Ñ Retina Ð´Ð¸ÑÐ¿Ð»ÐµÐµÐ¼";
+$MESS ['IBLOCK_INSTALL_TITLE'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ \"RetinaZoom\"";
+$MESS["SPER_PARTNER"] = "Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹ ÐœÐ¾ÑÐºÐ²Ð¸Ñ‚Ð¸Ð½";
 $MESS["PARTNER_URI"] = "http://www.moskvitin.pro/";
 ?>

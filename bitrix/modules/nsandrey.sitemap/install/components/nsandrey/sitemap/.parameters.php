@@ -18,13 +18,13 @@ while($arr = $rsIBlock->Fetch())
 
 $settings = $sitemap->buildSectionSettings($arCurrentValues, $arIBlock);
 
-//Ìàññèâ ãðóïï
+//ÐœÐ°ÑÑÐ¸Ð² Ð³Ñ€ÑƒÐ¿Ð¿
 $arMGroups = array_merge(array(
 	'ACTIVE_SETTINGS' => array('NAME' => GetMessage("NSANDREY_SITEMAP_AKTIVNOSTQ_RAZDELOV")),
 	'NAME_SETTINGS' => array('NAME' => GetMessage("NSANDREY_SITEMAP_NAZVANIA_RAZDELOV"))
 ), $settings['GROUPS']);
 
-//Ìàññèâ ïàðàìåòðîâ
+//ÐœÐ°ÑÑÐ¸Ð² Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²
 $arMParams = $settings['PARAMETERS'];
 
 $tabs->addTab('ACTIVE_TAB', GetMessage("NSANDREY_SITEMAP_AKTIVNOSTQ_RAZDELOV"), array('ACTIVE_SETTINGS'));

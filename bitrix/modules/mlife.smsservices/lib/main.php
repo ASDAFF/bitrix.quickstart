@@ -19,7 +19,7 @@ class Main {
 	protected $adminResult = false;
 	
 	public function __construct($params) {
-		//загрузка языковых сущности
+		//Р·Р°РіСЂСѓР·РєР° СЏР·С‹РєРѕРІС‹С… СЃСѓС‰РЅРѕСЃС‚Рё
 		$entity = $params["ENTITY"];
 		Loc::loadMessages($entity::getFilePath());
 		
@@ -34,10 +34,10 @@ class Main {
 		
 		if(!isset($params["TABLEID"])) $params["TABLEID"] = strtolower(str_replace("_LIST_","",$params["LANG_CODE"]));
 		
-		//сортировка по умолчанию
+		//СЃРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 		if(!isset($params["ORDER"])){
 			
-			//костыль с перегоном сортировки из сессии в глобальную переменную
+			//РєРѕСЃС‚С‹Р»СЊ СЃ РїРµСЂРµРіРѕРЅРѕРј СЃРѕСЂС‚РёСЂРѕРІРєРё РёР· СЃРµСЃСЃРёРё РІ РіР»РѕР±Р°Р»СЊРЅСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ
 			$oSort = new \CAdminSorting($params["TABLEID"], $params["PRIMARY"], "desc");
 			
 			//echo'<pre>';print_r($oSort);echo'</pre>';
@@ -107,7 +107,7 @@ class Main {
 		return $this->filter;
 	}
 	
-	//получение параметра
+	//РїРѕР»СѓС‡РµРЅРёРµ РїР°СЂР°РјРµС‚СЂР°
 	public function getParam($param){
 		
 		if(!isset($this->params[$param])) return false;
@@ -116,7 +116,7 @@ class Main {
 		
 	}
 	
-	//установка параметров
+	//СѓСЃС‚Р°РЅРѕРІРєР° РїР°СЂР°РјРµС‚СЂРѕРІ
 	public function setParams($params,$key=false){
 		
 		if($key) {
@@ -196,21 +196,21 @@ class Main {
 	
 	public function checkActions($right){
 		
-		// обработка одиночных и групповых действий
+		// РѕР±СЂР°Р±РѕС‚РєР° РѕРґРёРЅРѕС‡РЅС‹С… Рё РіСЂСѓРїРїРѕРІС‹С… РґРµР№СЃС‚РІРёР№
 		if(($arID = $this->getAdminList()->GroupAction()) && $right=="W")
 		{
 			$arID = $this->defaultGetActionId($arID);
 			$resActions = $this->defaultGetAction($arID);
 		}
 		
-		// сохранение отредактированных элементов
+		// СЃРѕС…СЂР°РЅРµРЅРёРµ РѕС‚СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ
 		if($this->getAdminList()->EditAction() && $right=="W")
 		{
 			global $FIELDS;
 			
 			$act = $this->getParam("CALLBACK_ACTIONS");
 			
-			// пройдем по списку переданных элементов
+			// РїСЂРѕР№РґРµРј РїРѕ СЃРїРёСЃРєСѓ РїРµСЂРµРґР°РЅРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ
 			foreach($FIELDS as $ID=>$arFields)
 			{
 				if(!$this->getAdminList()->IsUpdated($ID))
@@ -395,7 +395,7 @@ class Main {
 			}
 		}
 		
-		// создадим объект фильтра
+		// СЃРѕР·РґР°РґРёРј РѕР±СЉРµРєС‚ С„РёР»СЊС‚СЂР°
 		$oFilter = new \CAdminFilter(
 		  $this->getParam("TABLEID")."_filter", $title
 		);
@@ -461,7 +461,7 @@ class Main {
 						if(is_array($field["VALUES"])){
 							$values = $field["VALUES"];
 						}else{
-							//TODO - добавить получение полей списка с описания сущности
+							//TODO - РґРѕР±Р°РІРёС‚СЊ РїРѕР»СѓС‡РµРЅРёРµ РїРѕР»РµР№ СЃРїРёСЃРєР° СЃ РѕРїРёСЃР°РЅРёСЏ СЃСѓС‰РЅРѕСЃС‚Рё
 						}
 					?>
 						<?echo SelectBoxFromArray($row, $values, ${$row}, Loc::getMessage("MLIFE_ADMIN_LIST_SELECT_EMPTY"), "");?>
@@ -582,7 +582,7 @@ class Main {
 		}
 	}
 	
-	//вывод заметки в подвале
+	//РІС‹РІРѕРґ Р·Р°РјРµС‚РєРё РІ РїРѕРґРІР°Р»Рµ
 	public function getNote(){
 		if(Loc::getMessage($this->getParam("LANG_CODE")."NOTE")){
 			echo BeginNote();
@@ -596,32 +596,32 @@ class Main {
 		
 		global $APPLICATION, $adminPage, $USER, $adminMenu, $adminChain, $POST_RIGHT;
 		
-		//инициализация фильтра
+		//РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ С„РёР»СЊС‚СЂР°
 		$this->initFilter();
-		//добавление фильтра
+		//РґРѕР±Р°РІР»РµРЅРёРµ С„РёР»СЊС‚СЂР°
 		$this->checkFilter();
-		//проверка действий
+		//РїСЂРѕРІРµСЂРєР° РґРµР№СЃС‚РІРёР№
 		$this->checkActions($POST_RIGHT);
 		
-		//доступные колонки
+		//РґРѕСЃС‚СѓРїРЅС‹Рµ РєРѕР»РѕРЅРєРё
 		$this->AddHeaders();
-		//устанавливает только нужные поля в выборку
+		//СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ С‚РѕР»СЊРєРѕ РЅСѓР¶РЅС‹Рµ РїРѕР»СЏ РІ РІС‹Р±РѕСЂРєСѓ
 		
-		//формирование списка
+		//С„РѕСЂРјРёСЂРѕРІР°РЅРёРµ СЃРїРёСЃРєР°
 		$this->getAdminRow();
 		
-		//текст навигации
+		//С‚РµРєСЃС‚ РЅР°РІРёРіР°С†РёРё
 		$this->setNavText();
 		
-		//групповые действия
+		//РіСЂСѓРїРїРѕРІС‹Рµ РґРµР№СЃС‚РІРёСЏ
 		$this->AddGroupActionTable();
-		//навигация и подсчет
+		//РЅР°РІРёРіР°С†РёСЏ Рё РїРѕРґСЃС‡РµС‚
 		$this->addFooter();
-		//кнопка на панели
+		//РєРЅРѕРїРєР° РЅР° РїР°РЅРµР»Рё
 		$this->AddAdminContextMenu();
-		//непонятно
+		//РЅРµРїРѕРЅСЏС‚РЅРѕ
 		$this->getAdminList()->CheckListMode();
-		//заголовок
+		//Р·Р°РіРѕР»РѕРІРѕРє
 		$APPLICATION->SetTitle(Loc::getMessage($this->getParam("LANG_CODE")."TITLE"));
 		
 		require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");

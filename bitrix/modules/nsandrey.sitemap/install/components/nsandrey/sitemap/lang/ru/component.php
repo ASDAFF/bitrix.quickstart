@@ -1,5 +1,5 @@
 <?
-$MESS["NSANDREY_SITEMAP_NO_SETTINGS"] = "Êîìïîíåíò íå íàñòðîåí!";
-$MESS["NSANDREY_SITEMAP_POZVOLAET_DOBAVITQ_N"] = "Ïîçâîëÿåò äîáàâèòü íà ñòðàíè÷êó ðàñøèðåííóþ êàðòó ñàéòà";
-$MESS["NSANDREY_SITEMAP_POLEZNYE_KOMPONENTY"] = "Ïîëåçíûå êîìïîíåíòû îò ÍÀÑ";
+$MESS["NSANDREY_SITEMAP_NO_SETTINGS"] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð½Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐ½!";
+$MESS["NSANDREY_SITEMAP_POZVOLAET_DOBAVITQ_N"] = "ÐŸÐ¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð´Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡ÐºÑƒ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½ÑƒÑŽ ÐºÐ°Ñ€Ñ‚Ñƒ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["NSANDREY_SITEMAP_POLEZNYE_KOMPONENTY"] = "ÐŸÐ¾Ð»ÐµÐ·Ð½Ñ‹Ðµ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ñ‹ Ð¾Ñ‚ ÐÐÐ¡";
 ?>

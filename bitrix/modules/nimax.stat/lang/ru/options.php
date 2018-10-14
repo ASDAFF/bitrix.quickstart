@@ -1,22 +1,22 @@
 <?
-$MESS['TITLE_SECTION_counter'] = 'Системы статистики';
-$MESS['TITLE_SECTION_meta'] = 'Системы контроля индексации';
+$MESS['TITLE_SECTION_counter'] = 'РЎРёСЃС‚РµРјС‹ СЃС‚Р°С‚РёСЃС‚РёРєРё';
+$MESS['TITLE_SECTION_meta'] = 'РЎРёСЃС‚РµРјС‹ РєРѕРЅС‚СЂРѕР»СЏ РёРЅРґРµРєСЃР°С†РёРё';
 
-$MESS['LABEL_GA'] = 'Код Google Analytics';
-$MESS['DESC_GA'] = 'Адрес для добавления сайта и получения кода: <a href="https://www.google.com/analytics/" target="_blank">https://www.google.com/analytics/</a>';
+$MESS['LABEL_GA'] = 'РљРѕРґ Google Analytics';
+$MESS['DESC_GA'] = 'РђРґСЂРµСЃ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃР°Р№С‚Р° Рё РїРѕР»СѓС‡РµРЅРёСЏ РєРѕРґР°: <a href="https://www.google.com/analytics/" target="_blank">https://www.google.com/analytics/</a>';
 
-$MESS['LABEL_YA'] = 'Код Яндекс.Метрика';
-$MESS['DESC_YA'] = 'Адрес для добавления сайта и получения кода: <a href="http://metrika.yandex.ru/" target="_blank">http://metrika.yandex.ru/</a>';
+$MESS['LABEL_YA'] = 'РљРѕРґ РЇРЅРґРµРєСЃ.РњРµС‚СЂРёРєР°';
+$MESS['DESC_YA'] = 'РђРґСЂРµСЃ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃР°Р№С‚Р° Рё РїРѕР»СѓС‡РµРЅРёСЏ РєРѕРґР°: <a href="http://metrika.yandex.ru/" target="_blank">http://metrika.yandex.ru/</a>';
 
-$MESS['LABEL_LI'] = 'Код LiveInternet';
-$MESS['DESC_LI'] = 'Адрес для добавления сайта и получения кода: <a href="http://www.liveinternet.ru/add/" target="_blank">http://www.liveinternet.ru/add/</a>';
+$MESS['LABEL_LI'] = 'РљРѕРґ LiveInternet';
+$MESS['DESC_LI'] = 'РђРґСЂРµСЃ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃР°Р№С‚Р° Рё РїРѕР»СѓС‡РµРЅРёСЏ РєРѕРґР°: <a href="http://www.liveinternet.ru/add/" target="_blank">http://www.liveinternet.ru/add/</a>';
 
-$MESS['LABEL_GW'] = 'Мета-тег Google Webmasters';
-$MESS['DESC_GW'] = 'Адрес для добавления сайта и получения мета-тега: <a href="https://www.google.com/webmasters/" target="_blank">https://www.google.com/webmasters/</a>';
+$MESS['LABEL_GW'] = 'РњРµС‚Р°-С‚РµРі Google Webmasters';
+$MESS['DESC_GW'] = 'РђРґСЂРµСЃ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃР°Р№С‚Р° Рё РїРѕР»СѓС‡РµРЅРёСЏ РјРµС‚Р°-С‚РµРіР°: <a href="https://www.google.com/webmasters/" target="_blank">https://www.google.com/webmasters/</a>';
 
-$MESS['LABEL_YW'] = 'Мета-тег Яндекс.Вебмастер';
-$MESS['DESC_YW'] = 'Адрес для добавления сайта и получения мета-тега: <a href="http://webmaster.yandex.ru/" target="_blank">http://webmaster.yandex.ru/</a>';
+$MESS['LABEL_YW'] = 'РњРµС‚Р°-С‚РµРі РЇРЅРґРµРєСЃ.Р’РµР±РјР°СЃС‚РµСЂ';
+$MESS['DESC_YW'] = 'РђРґСЂРµСЃ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЃР°Р№С‚Р° Рё РїРѕР»СѓС‡РµРЅРёСЏ РјРµС‚Р°-С‚РµРіР°: <a href="http://webmaster.yandex.ru/" target="_blank">http://webmaster.yandex.ru/</a>';
 
 
-$MESS['BUTTON_SAVE']  = 'Сохранить';
-$MESS['BUTTON_RESET'] = 'Сбросить';
+$MESS['BUTTON_SAVE']  = 'РЎРѕС…СЂР°РЅРёС‚СЊ';
+$MESS['BUTTON_RESET'] = 'РЎР±СЂРѕСЃРёС‚СЊ';

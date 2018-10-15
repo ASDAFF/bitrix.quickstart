@@ -5,7 +5,10 @@
  * Date: 01.10.2018
  * Time: 19:55
  */
+
 ?>
+<link rel="stylesheet" type="text/css" href="/local/lib/backend/css/global.css">
+<script type="text/javascript" src="/local/lib/backend/js/global.js"></script>
 <script>
     // опишем всплывающее окно (средствами Битрикса)
     var Dialog = new BX.CDialog({
@@ -26,13 +29,13 @@
             BX.ajax({
                 method: 'GET',
                 dataType: 'html',
-                url: '/bitrix/admin/all_orders.php?id='+id,
-                data: { id: id },
-                onsuccess: function(data){
+                url: '/bitrix/admin/all_orders.php?id=' + id,
+                data: {id: id},
+                onsuccess: function (data) {
                     BX('all_orders').innerHTML = data;
                     Dialog.Show(); // вызвали окно, которое описано выше
                 },
-                onfailure: function(){
+                onfailure: function () {
                     alert('Возникла ошибка');
                 }
             });
@@ -63,19 +66,23 @@
 // теперь в ajax-е обратимся к странице, на которой выполним нужный нам код и отправим письмо
         $('.btnSubmit').on('click', function () {
             var comment = $('#comment').val();
-            if($('#sostav').is(":checked")) {var sostav = 'on';} else {var sostav = 'off';}
+            if ($('#sostav').is(":checked")) {
+                var sostav = 'on';
+            } else {
+                var sostav = 'off';
+            }
 
             $.ajax({
                 type: 'GET',
                 url: '/bitrix/admin/button.php',
-                data: { id: id, comment: comment, sostav: sostav },
-                success: function(data) {
+                data: {id: id, comment: comment, sostav: sostav},
+                success: function (data) {
 // в случае успеха закроем окно
                     Dialog.Close();
 // и перезагрузим страницу
-                    location='<?=$_SERVER["REQUEST_URI"]?>';
+                    location = '<?=$_SERVER["REQUEST_URI"]?>';
                 },
-                error: function(xhr, str){
+                error: function (xhr, str) {
                     alert('Возникла ошибка: ' + xhr.responseCode);
                 }
             });

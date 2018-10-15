@@ -32,32 +32,44 @@ function loadLocalLib()
 if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
     AddEventHandler("main", "OnEpilog", "InitPHPHighlight");
 }
+/**
+ * AdminArea
+ **/
+
+
+
+
+/**
+ * IBlockProps
+ **/
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropSection', 'GetUserTypeDescription'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropElement', 'GetUserTypeDescription'));
 
 /**
  * BASKET
  * basket add
  **/
-AddEventHandler("sale", "OnBeforeBasketAdd", array('Local\Lib\Handlers\Basket', 'beforeAdd'));
-AddEventHandler("sale", "OnBasketAdd", array('Local\Lib\Handlers\Basket', 'afterAdd'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketAdd", array('Local\Lib\Handlers\Basket', 'beforeAdd'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketAdd", array('Local\Lib\Handlers\Basket', 'afterAdd'));
 
 /**
  * basket update
  **/
-AddEventHandler("sale", "OnBeforeBasketUpdate", array('Local\Lib\Handlers\Basket', 'beforeUpdate'));
-AddEventHandler("sale", "OnBasketUpdate", array('Local\Lib\Handlers\Basket', 'afterUpdate'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketUpdate", array('Local\Lib\Handlers\Basket', 'beforeUpdate'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketUpdate", array('Local\Lib\Handlers\Basket', 'afterUpdate'));
 
 /**
  * basket delete
  **/
-AddEventHandler("sale", "OnBeforeBasketDelete", array('Local\Lib\Handlers\Basket', 'beforeDelete'));
-AddEventHandler("sale", "OnBasketDelete", array('Local\Lib\Handlers\Basket', 'afterDelete'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketDelete", array('Local\Lib\Handlers\Basket', 'beforeDelete'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketDelete", array('Local\Lib\Handlers\Basket', 'afterDelete'));
 
 
 /**
  * order
  **/
-AddEventHandler("sale", "OnOrderAdd", array('Local\Lib\Handlers\Order', 'afterAdd'));
-AddEventHandler("sale", "OnOrderUpdate", array('Local\Lib\Handlers\Order', 'afterUpdate'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderAdd", array('Local\Lib\Handlers\Order', 'afterAdd'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderUpdate", array('Local\Lib\Handlers\Order', 'afterUpdate'));
 
 /**
  * property types

@@ -2,7 +2,7 @@
 $arParams['PICTURE_WIDTH'] = ($arParams['PICTURE_WIDTH'] > 0 ) ? $arParams['PICTURE_WIDTH'] : 100;
 
 if($arParams['INCLUDE_BXSLIDER'] == 'Y'):?>
-	<script type="text/javascript" src="/bitrix/js/alfa1c.adsectlist/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="<?=__DIR__?>/js/jquery.bxslider.min.js"></script>
 <?endif;?>
 <script>
 $(document).ready(function(){

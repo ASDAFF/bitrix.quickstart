@@ -1,11 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-
 # IntelliJ project files
-.idea
 *.iml
 .gitignore
-.idea/bitrix.quickstart.iml
-.idea/deployment.xml
-.idea/modules.xml
-.idea/workspace.xml
 
+/.idea/

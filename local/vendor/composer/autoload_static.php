@@ -6,10 +6,34 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit4a4e406c74c5e54730ea661a673eb1c1
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'Vendor\\Namespace\\' => 17,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Php72\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
         'M' => 
         array (
             'Maximaster\\' => 11,
+        ),
+        'D' => 
+        array (
+            'DebugBar\\' => 9,
         ),
         'C' => 
         array (
@@ -22,9 +46,33 @@ class ComposerStaticInit4a4e406c74c5e54730ea661a673eb1c1
     );
 
     public static $prefixDirsPsr4 = array (
+        'Vendor\\Namespace\\' => 
+        array (
+            0 => '/local/php_interface/classes',
+        ),
+        'Symfony\\Polyfill\\Php72\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Maximaster\\' => 
         array (
             0 => __DIR__ . '/..' . '/maximaster/tools.events/src/Maximaster',
+        ),
+        'DebugBar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar',
         ),
         'Composer\\Installers\\' => 
         array (

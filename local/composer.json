@@ -10,7 +10,8 @@
   "require": {
     "php": ">=5.6.0",
     "aak74/bx-data": "dev-master",
-    "maximaster/tools.events": "dev-master"
+    "maximaster/tools.events": "dev-master",
+    "citfact/debugbar": "dev-master"
   },
   "autoload": {
     "psr-4": {

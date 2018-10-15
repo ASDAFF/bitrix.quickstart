@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 if($arParams["INCLUDE_JQUERY"]=="Y"){
-	$APPLICATION->AddHeadScript("/bitrix/components/aprof/lenta_zoom/js/jquery-1.7.min.js");
+	$APPLICATION->AddHeadScript(__DIR__ . "/js/jquery-1.7.min.js");
 }
 CModule::IncludeModule("fileman");
 CMedialib::Init();

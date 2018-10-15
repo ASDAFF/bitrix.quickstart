@@ -36,7 +36,7 @@ if ($obCache->StartDataCache($arParams["CACHE_TIME"], $cache_id, $cache_path))
 			if (strpos($arParams['BANNER_IMAGE_'.$i], '.swf') !== false) {				
 				
 				if ($arParams['BANNER_HREF_'.$i]) {
-					$banner_html = '<div style="position:absolute;"><a href="'.$arParams['BANNER_HREF_'.$i].'"><img src="/bitrix/images/1.gif" width="'.str_replace('px', '', $arParams['WIDTH']).'" height="'.str_replace('px', '', $arParams['HEIGHT']).'" border="0" /></a></div>';
+					$banner_html = '<div style="position:absolute;"><a href="'.$arParams['BANNER_HREF_'.$i].'"><img src="'. __DIR__ .'/images/1.gif" width="'.str_replace('px', '', $arParams['WIDTH']).'" height="'.str_replace('px', '', $arParams['HEIGHT']).'" border="0" /></a></div>';
 				}
 					
 				$banner_html .= '

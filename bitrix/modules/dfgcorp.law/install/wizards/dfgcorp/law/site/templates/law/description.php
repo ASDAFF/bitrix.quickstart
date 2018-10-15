@@ -1,1 +1,0 @@
-<?$arTemplate = array("NAME"=>GetMessage("LAW_TEMPLATE_DESCRIPTION_NAME"), "DESCRIPTION"=>GetMessage("LAW_TEMPLATE_DESCRIPTION_DESC"));?>

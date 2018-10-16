@@ -39,8 +39,6 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
  **/
 
 
-
-
 /**
  * IBlockProps
  **/

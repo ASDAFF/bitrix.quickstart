@@ -1,5 +1,8 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+/**
+ * ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ 'ÑÐ¿Ð¸ÑÐ¾Ðº'
+ */
 
 if(!CModule::IncludeModule('lists'))
 {
@@ -509,7 +512,7 @@ $arFilter["CHECK_PERMISSIONS"] = ($lists_perm >= CListPermissions::CAN_READ? "N"
 if(!$arResult["ANY_SECTION"])
 	$arFilter["SECTION_ID"] = $arResult["SECTION_ID"];
 //===============================================================
-//============================================================== ôîðìèðîâàíèå âûâîäà èç Excel
+//============================================================== Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð²Ñ‹Ð²Ð¾Ð´Ð° Ð¸Ð· Excel
 $rsElements = CIBlockElement::GetList(
 	$grid_sort["sort"], $arFilter, false, /*$grid_options->GetNavParams()*/ false, $arSelect
 );

@@ -4,11 +4,11 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 if (empty($arResult['ERRORS'])) {
 	if ($arParams['USE_JQUERY'])
-		$APPLICATION->AddHeadString('<script type="text/javascript" src="/bitrix/js/rrr.ajaxBasket/jquery-1.9.0.min.js"></script>', true);
+		$APPLICATION->AddHeadString('<script type="text/javascript" src="/local/components/eshop/ajaxBasket/js/jquery-1.9.0.min.js"></script>', true);
     if ($arParams['USE_AJAXFORM'])
-		$APPLICATION->AddHeadString('<script type="text/javascript" src="/bitrix/js/rrr.ajaxBasket/jquery.form.js"></script>', true);
+		$APPLICATION->AddHeadString('<script type="text/javascript" src="/local/components/eshop/ajaxBasket/js/jquery.form.js"></script>', true);
     if ($arParams['USE_FANCYBOX'])
-		$APPLICATION->AddHeadString('<link rel="stylesheet" href="/bitrix/js/rrr.ajaxBasket/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" /><script type="text/javascript" src="/bitrix/js/rrr.ajaxBasket/jquery.fancybox.pack.js?v=2.1.5"></script>
+		$APPLICATION->AddHeadString('<link rel="stylesheet" href="/local/components/eshop/ajaxBasket/js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" /><script type="text/javascript" src="/local/components/eshop/ajaxBasket/js/jquery.fancybox.pack.js?v=2.1.5"></script>
 ', true);
 
 
@@ -51,20 +51,17 @@ if (empty($arResult['ERRORS'])) {
          $("<?=$arParams['FORM_SELECTOR']?>").ajaxForm(options);         
       }
    );
-
-
-   
 </script>
 
 
 <a class="various" href="#inline" style="text-align: center;"></a>
 <div id="inline" style="width: 350px; display: none; text-align: center;">
-	<h2>Товар добавлен в корзину</h2>
+	<h2>РўРѕРІР°СЂ РґРѕР±Р°РІР»РµРЅ РІ РєРѕСЂР·РёРЅСѓ</h2>
 
 	<p style="text-align: center;">
-		<a id="add_paragraph" title="Add" class="button button-blue" href="<?=$arParams['BASKET_URL']?>">Перейти в корзину</a>
+		<a id="add_paragraph" title="Add" class="button button-blue" href="<?=$arParams['BASKET_URL']?>">РџРµСЂРµР№С‚Рё РІ РєРѕСЂР·РёРЅСѓ</a>
 		&nbsp;
-		<a href="javascript:$.fancybox.close();">Продолжить покупки</a>
+		<a href="javascript:$.fancybox.close();">РџСЂРѕРґРѕР»Р¶РёС‚СЊ РїРѕРєСѓРїРєРё</a>
 	</p>
 	
 </div>

@@ -1,9 +1,50 @@
 <?
-
-namespace Cosmos\Urlrewrite;
-
 /**
  * Класс для работы с urlrewrite.php битрикса.
+ *
+ * # Сортировка urlrewrite
+ * Всем известно, что правила обработки адресов в БУСе сортируются по длине условия.
+ * Чем длиннее условие, тем оно выше располагается в файле urlrewrite.php.
+ * На практике часто необходимо изменить порядок сортировки условий не опираясь на длину.
+ * Класс организует сортировку правил обработки адресов согласно полю SORT, которое добавляется в массив описывающий правила.
+ * файл urlrewrite.php, было:
+ * $arUrlRewrite = array(
+array(
+"CONDITION" => "#^/news/(.*?)/#",
+"RULE" => "SECTION_CODE=$1",
+"ID" => "",
+"PATH" => "/news/index.php",
+),
+array(
+"CONDITION" => "#^/news/x/#",
+"RULE" => "SECTION_CODE=main&CODE=x",
+"ID" => "",
+"PATH" => "/news_main/index.php",
+
+)
+);
+ *
+Станет:
+ *
+$arUrlRewrite = array(
+array(
+"CONDITION" => "#^/news/x/#",
+"RULE" => "SECTION_CODE=main&CODE=x",
+"ID" => "",
+"PATH" => "/news_main/index.php",
+"SORT" => "90",
+),
+array(
+"CONDITION" => "#^/news/(.*?)/#",
+"RULE" => "SECTION_CODE=$1",
+"ID" => "",
+"PATH" => "/news/index.php",
+"SORT" => "100",
+)
+);
+
+ *Класс отслеживает состояние файла urlrewrite.php и, при обнаружении изменений, запускает свой механизм сортировки по увеличению значению поля SORT.
+ * В случае, если у правила не задано поле SORT, модуль создаст его и присвоит значение = 100.
  */
 class Urlrewrite {
 

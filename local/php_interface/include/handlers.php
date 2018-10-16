@@ -26,6 +26,8 @@ function loadLocalLib()
     Loader::includeModule('local.lib');
 }
 
+AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog'));
+
 /**
  * Подсветки PHP в редакторе
  **/
@@ -92,3 +94,4 @@ AddEventHandler("main", "OnBeforeUserUpdate", array('\Local\Lib\Handlers\User', 
  **/
 $eventManager->addEventHandler('', 'UserDataOnUpdate', array('\Local\Lib\Handlers\UserData', 'afterUpdate'));
 $eventManager->addEventHandler('', 'UserDataOnAdd', array('\Local\Lib\Handlers\UserData', 'afterAdd'));
+

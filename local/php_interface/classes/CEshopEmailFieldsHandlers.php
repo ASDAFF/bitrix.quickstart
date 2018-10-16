@@ -1,18 +1,24 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: ASDAFF
+ * Date: 16.10.2018
+ * Time: 15:10
+ */
 
-if (!function_exists("d")) {
-    function d ($v) {
-        echo "<pre>";
-        print_r($v);
-        echo "</pre>";
-    }
-}
+/**
+ * Расширение уведомлений о заказах
+ * Добавляет в стандартные почтовые шаблоны значения свойств заказа.
+ * Применимо для писем с уведомлением об оформлении нового заказа, о разрешении доставки.
+ *
+ **/
 
-class CShopoliaEmailFieldsHandlers {
+class CEshopEmailFieldsHandlers
+{
     function OnBeforeEventAdd (&$event, &$lid, &$arFields, &$message_id) {
         if ($arFields['ORDER_ID']>0) {
             $order = CSaleOrder::GetByID($arFields['ORDER_ID']);
-            if ($event=="SALE_NEW_ORDER" AND $arFields['ORDER_ID']>0) { 
+            if ($event=="SALE_NEW_ORDER" AND $arFields['ORDER_ID']>0) {
                 CModule::IncludeModule("sale");
                 $fields4email = array();
                 $arOrderProps = array();
@@ -39,10 +45,8 @@ class CShopoliaEmailFieldsHandlers {
                 }
             } elseif ($event=="SALE_ORDER_DELIVERY") {
                 $arFields['DELIVERY_DOC_NUM'] = $order['DELIVERY_DOC_NUM'];
-                $arFields['DATE_ALLOW_DELIVERY'] = $order['DATE_ALLOW_DELIVERY'];            
+                $arFields['DATE_ALLOW_DELIVERY'] = $order['DATE_ALLOW_DELIVERY'];
             }
         }
     }
 }
-
-?>

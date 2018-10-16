@@ -1,8 +1,8 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
-<?$APPLICATION->AddHeadString('<link href="/bitrix/js/photoslider/photoslider.css" type="text/css" rel="stylesheet" />',true)?>
-<?$APPLICATION->AddHeadString('<script  type="text/javascript" src="/bitrix/js/photoslider/jquery.js"></script>',true)?>
-<?$APPLICATION->AddHeadString('<script  type="text/javascript" src="/bitrix/js/photoslider/photoslider.js"></script>',true)?>
+<?$APPLICATION->AddHeadString('<link href="/local/components/content/simple.slider.gallery/js/photoslider.css" type="text/css" rel="stylesheet" />',true)?>
+<?$APPLICATION->AddHeadString('<script  type="text/javascript" src="/local/components/content/simple.slider.gallery/js/jquery.js"></script>',true)?>
+<?$APPLICATION->AddHeadString('<script  type="text/javascript" src="/local/components/content/simple.slider.gallery/js/photoslider.js"></script>',true)?>
 
 <div id="default" class="photoslider"></div>
 <script type="text/javascript">

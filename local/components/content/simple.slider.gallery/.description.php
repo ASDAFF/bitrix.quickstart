@@ -4,7 +4,7 @@ $arComponentDescription = array(
  "NAME" =>GetMessage("SS_SSG_NAME"),
  "DESCRIPTION" => GetMessage("SS_SSG_DESCRIPTION"),
  "PATH" => array(
- 	"ID" => "softserv",
+ 	"ID" => "asdaff",
 	"NAME" => GetMessage("SS_NAME"),
 	"SORT" => 10,
  ),

@@ -29,6 +29,12 @@ function loadLocalLib()
 AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
 AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
 
+/**
+ * Свойство инфоблока Привязка к медиабиблиотеке
+ **/
+AddEventHandler("main", "OnUserTypeBuildList", array('PropMediaLibUserType', 'GetUserTypeDescription'));
+AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblockProperty', 'GetUserTypeDescription'));
+
 
 /**
  * Подсветки PHP в редакторе

@@ -1,6 +1,11 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
+/**
+ * Дизайн веб-форм
+ * возможность изменения дизайна веб-форм расположенных на сайте
+ */
+
 $arParams["WEB_FORM"] = explode("||",$arParams["WEB_FORM_PARAMS"]);
 
 $y = 0;

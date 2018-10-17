@@ -29,10 +29,10 @@ if($arParams['SHOW_KAPCHA']==0) {
 	$arResult['SHOW_KAPCHA'] = 1;
 }
 
-//Р’РђР›РР”РђР¦РРЇ Р”РђРќРќР«РҐ Р¤РћР РњР«
+//ВАЛИДАЦИЯ ДАННЫХ ФОРМЫ
 if(intval($_REQUEST["name_bk"])==1){
 
-	//РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёСЏ label
+	//получаем значения label
 	$dbResultList = CSaleOrderProps::GetList(
 		array(),
 		array(),
@@ -115,7 +115,7 @@ else{
 //mprint($arParams);
 if($showform) {
 
-	//РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёСЏ label
+	//получаем значения label
 	$dbResultList = CSaleOrderProps::GetList(
 		array(),
 		array(),
@@ -128,7 +128,7 @@ if($showform) {
 		if($arR['IS_LOCATION']=='Y') $arResult['LOC_ID'] = $arR["ID"];
 	}
 	
-	//РїРѕР»СѓС‡Р°РµРј РЅР°Р·РІР°РЅРёСЏ РґРѕСЃС‚Р°РІРєРё
+	//получаем названия доставки
 	$db_dtype = CSaleDelivery::GetList(
 		array(
 				"SORT" => "ASC",
@@ -147,7 +147,7 @@ if($showform) {
 		$arResult['DELIVERY_NAME'][$ar_dtype["ID"]] = $ar_dtype["NAME"];
 	}
 	
-	//РїРѕР»СѓС‡Р°РµРј РЅР°Р·РІР°РЅРёРµ РѕРїР»Р°С‚С‹
+	//получаем название оплаты
 	$db_ptype = CSalePaySystem::GetList(Array("SORT"=>"ASC", "PSA_NAME"=>"ASC"), Array("ID" => $arParams["FIELD_PAYSYSTEM"]));
 	while ($ptype = $db_ptype->Fetch())
 	{
@@ -156,8 +156,8 @@ if($showform) {
 
 	$arResult['IBLOCK_ID'] = intval($arParams['IBLOCK_ID']);
 
-	$key=trim($arParams['KEY']);//РєР»СЋС‡ РґР»СЏ РґРѕСЃС‚СѓРїР° Рє С„РѕСЂРјРµ
-	$referer_start = trim($_REQUEST['referer']); //С…РµС€ Р°РґСЂРµСЃР° СЃС‚СЂР°РЅРёС†С‹ СЃ РєРѕС‚РѕСЂРѕРіРѕ Р·Р°РїСѓС‰РµРЅР° С„РѕСЂРјР°
+	$key=trim($arParams['KEY']);//ключ для доступа к форме
+	$referer_start = trim($_REQUEST['referer']); //хеш адреса страницы с которого запущена форма
 	$date_ref=strtotime(date("M-d-Y H:00:00"));
 	$ref1 = CMlifeBistrockick::getref($date_ref,$key,$arResult['REF_START'],1);
 	$ref2 = CMlifeBistrockick::getref($date_ref,$key,$arResult['REF_START'],2);
@@ -167,11 +167,11 @@ if($showform) {
 	if($arResult['SHOW_FORM']==1 && $arResult['CHECK_SPAM']!=1) {
 			global $USER;
 			
-			//С‚РѕРІР°СЂ
+			//товар
 			$arFilter = array('IBLOCK_ID' => $arResult['IBLOCK_ID'], 'ID' => $arResult['PRODUCT_ID'], 'ACTIVE' => 'Y');
 			$rsProduct = CIBlockElement::GetList(array(),$arFilter,false,false,array());
 			
-			//РґРѕР±Р°РІР»СЏРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ РґР°РЅРЅС‹Рµ РІ С„РѕСЂРјСѓ РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р°РІС‚РѕСЂРёР·РёСЂРѕРІР°РЅ
+			//добавляем пользовательские данные в форму если пользователь авторизирован
 			$uid = intval($USER->GetID());
 			if($uid > 0) {
 				$rsUser = CUser::GetByID($uid);
@@ -240,7 +240,7 @@ if($showform) {
 				}
 			}
 			
-			//С‚РѕСЂРіРѕРІС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ
+			//торговые предложения
 			$arCatalog = CCatalog::GetByIDExt($arParams['IBLOCK_ID']);
 			$arFilter = array('IBLOCK_ID' => $arCatalog['OFFERS_IBLOCK_ID'], 'PROPERTY_'.$arCatalog['OFFERS_PROPERTY_ID'] => $arResult['PRODUCT_ID'], 'ACTIVE' => 'Y');
 			$rsOffers = CIBlockElement::GetList(array(),$arFilter,false,false,array());
@@ -299,7 +299,7 @@ if($showform) {
 			
 			$i++;
 			}
-			//С‚СѓС‚ РїРѕР»СѓС‡Р°РµРј РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ Рё РјРёРЅРёРјР°Р»СЊРЅС‹Рµ С†РµРЅС‹ С‚РѕРІР°СЂР°
+			//тут получаем максимальную и минимальные цены товара
 			$price_min = 10000000000000;
 			$price_max = 0;
 			if(is_array($arResult['OFFERS'])) {
@@ -328,10 +328,10 @@ if($showform) {
 	}
 }
 
-//РµСЃР»Рё РґР°РЅРЅС‹Рµ РІР°Р»РёРґРЅС‹
+//если данные валидны
 if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 
-	//РїРѕР»СѓС‡Р°РµРј Р·РЅР°С‡РµРЅРёСЏ label
+	//получаем значения label
 	$dbResultList = CSaleOrderProps::GetList(
 		array(),
 		array(),
@@ -345,25 +345,25 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 
 	$product_id = intval($_REQUEST["pr_id"]);
 	
-	//РґР°РЅРЅС‹Рµ Рѕ С‚РѕРІР°СЂРµ
+	//данные о товаре
 	$offer_code = intval($_REQUEST['offer']);
 	//mprint($offer_code);
 	$arProduct = CMlifeBistrockick::formatTovar($product_id,$arResult,$arProduct,$offer_code);
 	$arEventUser = array();
-	//Р·Р°РїРёСЃСЊ Р·Р°РєР°Р·Р° РІ Р±Р°Р·Сѓ
+	//запись заказа в базу
 	if($arParams['CREATE_ORDER']=='Y'){
 
 		$newuser = false;
 		global $USER;
-		//РµСЃР»Рё Р°РІС‚РѕСЂРёР·РёСЂРѕРІР°РЅ, РїРѕР»СѓС‡Р°РµРј РёРґ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+		//если авторизирован, получаем ид пользователя
 		if(intval($USER->GetID())>0) $newuser = intval($USER->GetID());
 		
-		//РёС‰РµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїРѕ РµРіРѕ email
+		//ищем пользователя по его email
 		if($arParams['CHECK_USER']=='Y' && !$newuser && $arResult['SEND']['email']){
 			$newuser = CMlifeBistrockick::getuserforEmail($arResult);
 		}
 		
-		//РµСЃР»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСѓСЃС‚ РґРµР»Р°РµРј РЅРѕРІРѕРіРѕ
+		//если пользователь пуст делаем нового
 		if(!$newuser && $arParams['CREATE_USER']=='CUR') {
 
 			$prefix = 'user_';
@@ -402,7 +402,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 			$newuser = intval($arParams['CUR_USER']);
 		}
 		
-		//СЃРѕР·РґР°РµРј Р·Р°РєР°Р·
+		//создаем заказ
 		if(isset($arResult['SEND']['mess']) && !$arResult['SEND']['mess']) $arResult['SEND']['mess'] = '';
 		
 		if(!$_REQUEST['offer']) {
@@ -412,6 +412,8 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 			$product_offer_id = intval($_REQUEST['offer']);
 			$price = $_REQUEST['price_'.$product_offer_id];
 		}
+		
+		if($arProduct["CATALOG_PRICE_1"] && $arParams["CHECK_PRICE"]!="N") $price = $arProduct["CATALOG_PRICE_1"];
 		
 		$arFields = CMlifeBistrockick::fieldarr(SITE_ID,$arParams['PERSON_TYPE'],$price,$arParams['CURRENCY_ID'],$newuser,$arResult['SEND'],GetMessage("MLIFE_CAT_BK_MESS_ORDER"));
 
@@ -424,7 +426,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 		
 		$arEventUser["ORDER_ID"] = $ORDER_ID;
 		
-		//РґРѕР±Р°РІР»СЏРµРј Р·РЅР°С‡РµРЅРёСЏ СЃРІРѕР№СЃС‚РІ Р·Р°РєР°Р·Р°
+		//добавляем значения свойств заказа
 		foreach($arResult['SEND'] as $key=>$namefield) {
 			if($namefield) {
 				if(isset($arParams['PERSON_FIELD_'.strtoupper($key)])){
@@ -439,7 +441,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 			}
 		}
 		
-		//РґРѕР±Р°РІР»РµРЅРёРµ С‚РѕРІР°СЂРѕРІ Рє Р·Р°РєР°Р·Сѓ
+		//добавление товаров к заказу
 		if ($ORDER_ID>0){
 			
 			if(isset($arProduct["ID"]) && $arProduct["ID"]>0) {
@@ -454,7 +456,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 		if($value) $arEventUser['USER_'.strtoupper($key)] = $value;
 	}
 	
-	//РїРѕРґРіРѕС‚РѕРІРєР° РјР°СЃСЃРёРІР° РјР°РєСЂРѕСЃРѕРІ, РґР»СЏ РїРѕРґСЃС‚Р°РЅРѕРІРєРё РІ С€Р°Р±Р»РѕРЅС‹ РїРёСЃРµРј Рё СЃРјСЃ
+	//подготовка массива макросов, для подстановки в шаблоны писем и смс
 	$arEventFields = array();
 	
 	$arEventFields['PRODUCT_ID'] = $arProduct['ID'];
@@ -479,12 +481,12 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 	
 	if($arParams['CREATE_ORDER']=='Y') $arEventFields['ORDER_ID'] = $ORDER_ID;
 
-	//РѕС‚РїСЂР°РІРєР° СѓРІРµРґРѕРјР»РµРЅРёСЏ РЅР° email Р°РґРјРёРЅСѓ
+	//отправка уведомления на email админу
 	if($arParams['NOTICE_ADMIN']=='Y' && $arParams['NOTICE_ADMIN_MAIL']=='Y' && $arParams['NOTICE_ADMIN_MAIL_EMAIL']) {
 		$arEventFields['SEND_EMAIL'] = $arParams['NOTICE_ADMIN_MAIL_EMAIL'];
 		CEvent::Send("MLIFE_BISTROKLICK", SITE_ID, $arEventFields, 'Y', $arParams['NOTICE_ADMIN_MAIL_EVENT_MESSAGE_ID']);
 	}
-	//РѕС‚РїСЂР°РІРєР° СѓРІРµРґРѕРјР»РµРЅРёСЏ РЅР° email РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ
+	//отправка уведомления на email пользователю
 	if($arParams['NOTICE_ADMIN']=='Y' && $arParams['NOTICE_USER_MAIL']=='Y') {
 		
 		if(isset($arEventFields['USER_PASS'])) {
@@ -493,7 +495,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 			CEvent::Send("MLIFE_BISTROKLICK", SITE_ID, $arEventFields, 'Y', $arParams['NOTICE_USER_MAIL_EVENT_MESSAGE_ID']);
 		}
 	}
-	//РѕС‚РїСЂР°РІРєР° СѓРІРµРґРѕРјР»РµРЅРёСЏ РїРѕ СЃРјСЃ Р°РґРјРёРЅСѓ
+	//отправка уведомления по смс админу
 	if($arParams['NOTICE_ADMIN']=='Y' && $arParams['NOTICE_ADMIN_SMS']=='Y' && $arParams['NOTICE_ADMIN_SMS_PHONE']) {
 		if((CModule::IncludeModule("mlife.smsservices") &&  $arParams['NOTICE_SMS_MODULE']=='smsservices') 
 		|| (CModule::IncludeModule("asd.smsswitcher") && $arParams['NOTICE_SMS_MODULE']=='smsswitcher')) {
@@ -511,7 +513,7 @@ if(count($arResult['ERROR'])==0 && intval($_REQUEST["name_bk"])==1) {
 				}
 		}
 	}
-	//РѕС‚РїСЂР°РІРєР° СѓРІРµРґРѕРјР»РµРЅРёСЏ РїРѕ СЃРјСЃ РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ
+	//отправка уведомления по смс пользователю
 	if($arParams['NOTICE_ADMIN']=='Y' && $arParams['NOTICE_USER_SMS']=='Y') {
 		if((CModule::IncludeModule("mlife.smsservices") &&  $arParams['NOTICE_SMS_MODULE']=='smsservices') 
 		|| (CModule::IncludeModule("asd.smsswitcher") && $arParams['NOTICE_SMS_MODULE']=='smsswitcher')) {

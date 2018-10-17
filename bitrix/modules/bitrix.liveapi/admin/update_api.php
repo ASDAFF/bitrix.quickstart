@@ -171,7 +171,7 @@ if ($module_id || $search)
 
 				if ($type == 0)
 				{
-					$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]";
+					$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func";
 					if ($c = strpos($func, "::"))
 						$str = '<span class=class>'.substr($func,0,$c).'</span>::<a href="'.$link.'" target=_blank><span class=method>'.substr($func,$c+2).'</span></a>';
 					else

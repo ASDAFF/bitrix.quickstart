@@ -29,4 +29,5 @@ $MESS["BITRIX_LIVEAPI_KONSTANTA1"] = "константа";
 $MESS["BITRIX_LIVEAPI_IZMENENIA_API_POSLE"] = "Изменения АПИ после обновления";
 $MESS["BITRIX_LIVEAPI_SOHRANENY_DANNYE_PRO"] = "Сохранены данные прошлого сканирования модулей";
 $MESS["BITRIX_LIVEAPI_POKAZATQ_IZMENENIA"] = "Показать изменения";
+$MESS["BITRIX_LIVEAPI_TOCNO"] = "точно";
 ?>

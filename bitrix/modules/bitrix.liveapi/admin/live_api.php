@@ -77,7 +77,7 @@ echo '<div><input type=button value="'.GetMessage("BITRIX_LIVEAPI_SKANIROVATQ_MO
 if (file_exists(DATA_FILE))
 {
 	echo '<div id="live_api">';
-	echo '<form method=GET>'.GetMessage("BITRIX_LIVEAPI_POISK_PO_VSEM_MODULA").': <input name=search value="'.htmlspecialchars($_REQUEST['search']).'" size=30> <input type=submit value='.GetMessage("BITRIX_LIVEAPI_POISK").'></form>';
+	echo '<form method=GET>'.GetMessage("BITRIX_LIVEAPI_POISK_PO_VSEM_MODULA").': <input name=search value="'.htmlspecialchars($_REQUEST['search']).'" size=30> <label><input type="checkbox" name="exact" '.($_REQUEST['exact'] ? 'checked' : '').'> '.GetMessage("BITRIX_LIVEAPI_TOCNO").'</label> <input type=submit value='.GetMessage("BITRIX_LIVEAPI_POISK").'></form>';
 
 	include(DATA_FILE);
 	$arModules = array_keys($DATA);
@@ -110,12 +110,66 @@ if (file_exists(DATA_FILE))
 
 	if ($_REQUEST['search'])
 	{
-		foreach($DATA as $module_id=>$sar)
+		$search = strtolower($_REQUEST['search']);
+		$arFound = array();
+		$exact = $_REQUEST['exact'] ? 1 : 0;
+		foreach($DATA as $module_id => $sar)
 		{
 			$ar = unserialize($sar);
-			list($arRes,$arEvt,$arConst) = $ar;
-			$bFound = false;
 
+			list($arRes,$arEvt,$arConst) = $ar;
+
+			foreach($arRes as $k => $v)
+			{
+				$k0 = strtolower($k);
+				if (strpos($k0, $search) !== false && (!$exact || $search == $k0 || $search == preg_replace('#^[^:]+::#','',$k0)))
+				{
+					$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$k";
+					$arFound[$module_id][] = '<tr>'.
+						'<td class="method">'.GetMessage("BITRIX_LIVEAPI_METOD1").'</td>'.
+						'<td class="code">'.CBitrixLiveapi::colorize($k,$v,false,$module_id).'</td>'.
+					'</tr>';
+
+				}
+			}
+
+			foreach($arEvt as $evt => $func)
+			{
+				$evt0 = strtolower($evt);
+				if (strpos($evt0, $search) !== false && (!$exact || $evt0 == $search))
+				{
+					$ar = $arRes[$func];
+					$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$evt.'#'.$evt;
+					$arFound[$module_id][] = '<tr>'.
+						'<td class="event">'.GetMessage("BITRIX_LIVEAPI_SOBYTIE1").'</td>'.
+						($func ? "<td class=code><a href='$link' target=_blank>$evt</a> ($func)</td>" : "<td class=code>$evt</td>").
+					'</tr>';
+				}
+			}
+			foreach($arConst as $const => $func)
+			{
+				$const0 = strtolower($const);
+				if (strpos($const0,$search) !== false && (!$exact || $const0 == $search))
+				{
+					$ar = $arRes[$func];
+					$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$const.'#'.$const;
+					$arFound[$module_id][] = '<tr>'.
+						'<td class="const">'.GetMessage("BITRIX_LIVEAPI_KONSTANTA1").'</td>'.
+						"<td class=code><a href='$link' target=_blank>$const</a> ($func)</td>".
+					'</tr>';
+				}
+			}
+		}
+
+		if (count($arFound) == 1 && count(reset($arFound)) == 1)
+			LocalRedirect($link);
+
+		ksort($arFound);
+		if ($arFound['main'])
+			$arFound = array_merge(array('main' => array()), $arFound); // to make 'main' first
+
+		foreach($arFound as $module_id => $ar)
+		{
 			$header = 
 				'<h2><a href="?module_id='.$module_id.'">'.$module_id.'</a></h2>'.
 				'<table border=1 cellpadding=4 cellspacing=0>'.
@@ -123,60 +177,7 @@ if (file_exists(DATA_FILE))
 					"<td><b>".GetMessage("BITRIX_LIVEAPI_GDE_NAYDENO")."</td>".
 					"<td><b>".GetMessage("BITRIX_LIVEAPI_METOD")."</td>".
 				'</tr>';
-
-			foreach($arRes as $k=>$v)
-			{
-				if (stripos($k,$_REQUEST['search']) !== false)
-				{
-					if (!$bFound)
-						echo $header;
-
-					echo '<tr>'.
-						'<td class="method">'.GetMessage("BITRIX_LIVEAPI_METOD1").'</td>'.
-						'<td class="code">'.CBitrixLiveapi::colorize($k,$v,false,$module_id).'</td>'.
-					'</tr>';
-
-					$bFound = true;
-				}
-			}
-			foreach($arEvt as $evt => $func)
-			{
-				if (stripos($evt,$_REQUEST['search']) !== false)
-				{
-					if (!$bFound)
-						echo $header;
-
-					$ar = $arRes[$func];
-					$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$evt.'#'.$evt;
-					echo 
-					'<tr>'.
-						'<td class="event">'.GetMessage("BITRIX_LIVEAPI_SOBYTIE1").'</td>'.
-						"<td class=code><a href='$link' target=_blank>$evt</a> ($func)</td>".
-					'</tr>';
-
-					$bFound = true;
-				}
-			}
-			foreach($arConst as $const => $func)
-			{
-				if (stripos($const,$_REQUEST['search']) !== false)
-				{
-					if (!$bFound)
-						echo $header;
-
-					$ar = $arRes[$func];
-					$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$const.'#'.$const;
-					echo 
-					'<tr>'.
-						'<td class="const">'.GetMessage("BITRIX_LIVEAPI_KONSTANTA1").'</td>'.
-						"<td class=code><a href='$link' target=_blank>$const</a> ($func)</td>".
-					'</tr>';
-
-					$bFound = true;
-				}
-			}
-			if ($bFound)
-				echo '</table>';
+				echo $header.implode("\n", $ar).'</table>';
 		}
 	}
 	elseif (isset($DATA[$_REQUEST['module_id']]))
@@ -198,7 +199,7 @@ if (file_exists(DATA_FILE))
 			foreach($arEvt as $evt => $func)
 			{
 				$ar = $arRes[$func];
-				$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$evt.'#'.$evt;
+				$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$evt.'#'.$evt;
 				echo 
 				'<tr>'.
 					"<td valign=top class=code><a href='$link' target=_blank>$evt</td>".
@@ -221,7 +222,7 @@ if (file_exists(DATA_FILE))
 			foreach($arConst as $const => $func)
 			{
 				$ar = $arRes[$func];
-				$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$const.'#'.$const;
+				$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$const.'#'.$const;
 				echo 
 				'<tr>'.
 					"<td valign=top class=code><a href='$link' target=_blank>$const</td>".
@@ -282,7 +283,7 @@ if (file_exists(DATA_FILE))
 					foreach($tmp as $const=>$func)
 					{
 						$ar = $ar_new[0][$func];
-						$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$const.'#'.$const;
+						$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$const.'#'.$const;
 						echo 
 						'<tr>'.
 							'<td class="const">'.GetMessage("BITRIX_LIVEAPI_KONSTANTA1").'</td>'.
@@ -299,7 +300,7 @@ if (file_exists(DATA_FILE))
 					foreach($tmp as $evt=>$func)
 					{
 						$ar = $ar_new[0][$func];
-						$link = "bitrix.liveapi_live_src.php?file=$ar[FILE]&offset=$ar[OFFSET]&name=$func&line=$ar[LINE]&highlight=".$evt.'#'.$evt;
+						$link = "bitrix.liveapi_live_src.php?module_id=$module_id&name=$func&highlight=".$evt.'#'.$evt;
 						echo 
 						'<tr>'.
 							'<td class="event">'.GetMessage("BITRIX_LIVEAPI_SOBYTIE1").'</td>'.

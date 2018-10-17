@@ -1,7 +1,9 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 if (!CModule::IncludeModule("iblock")) return false;
-if (!CModule::IncludeModule("millcom.menu")) return false;
+/**
+ * Пункты меню из элементов инфоблока
+ */
 
  
 if(!isset($arParams["CACHE_TIME"]))
@@ -35,10 +37,10 @@ if ($this->StartResultCache()) {
 
 if ($arParams["SORT"] == 'Y') {
 	foreach ($arResult['ITEMS'] as &$arMenuItem)
-		usort($arMenuItem, 'MillcomMenu::sort');
+		usort($arMenuItem, 'IBlockMenu::sort');
 }
 
-MillcomMenu::display($arResult['ITEMS'], 0, 1, $aMenuLinks, $arParams);
+IBlockMenu::display($arResult['ITEMS'], 0, 1, $aMenuLinks, $arParams);
 
 
 return $aMenuLinks;

@@ -318,9 +318,9 @@ if(isset($arResult["ID"]))
 	{
 		$APPLICATION->SetTitle($arResult["NAME"], $arTitleOptions);
 	}
-	
-	if($arParams["INSECO_JQUERY"]=="Y") $APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"/bitrix/js/inseco/jquery-1.7.1.min.js\"></script>", true);
-$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"/bitrix/js/inseco/coda-slider.js\"></script><script type=\"text/javascript\" src=\"/bitrix/js/inseco/jquery.localscroll.js\"></script><script type=\"text/javascript\" src=\"/bitrix/js/inseco/jquery.scrollTo.js\"></script><script type=\"text/javascript\" src=\"/bitrix/js/inseco/jquery.serialScroll.js\"></script>", true);
+
+	if($arParams["INSECO_JQUERY"]=="Y") $APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"/local/components/content/inseco.slider/js/jquery-1.7.1.min.js\"></script>", true);
+$APPLICATION->AddHeadString("<script type=\"text/javascript\" src=\"/local/components/content/inseco.slider/js/coda-slider.js\"></script><script type=\"text/javascript\" src=\"/local/components/content/inseco.slider/js/jquery.localscroll.js\"></script><script type=\"text/javascript\" src=\"/local/components/content/inseco.slider/js/jquery.scrollTo.js\"></script><script type=\"text/javascript\" src=\"/local/components/content/inseco.slider/js/jquery.serialScroll.js\"></script>", true);
 
 	
 

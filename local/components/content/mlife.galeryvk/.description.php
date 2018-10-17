@@ -7,10 +7,10 @@ $arComponentDescription = array(
 	"ICON" => "/images/component.gif",
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "mlife",
+		"ID" => "ASDAFF",
 		"NAME" => GetMessage("MLIFE"),
 		"CHILD" => array(
-			"ID" => 'mlife_galery',
+			"ID" => 'custom',
 			"NAME" => GetMessage("MLIFE_GALERY"),
 			"SORT" => 10,
 		),

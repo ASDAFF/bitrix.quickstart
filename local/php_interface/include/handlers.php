@@ -26,7 +26,9 @@ function loadLocalLib()
     Loader::includeModule('local.lib');
 }
 
-AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog'));
+AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
+AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
+
 
 /**
  * Подсветки PHP в редакторе

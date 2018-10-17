@@ -5,7 +5,7 @@ $strPath2Lang = substr($strPath2Lang, 0, strlen($strPath2Lang)-strlen("/install/
 include(GetLangFileName($strPath2Lang."/lang/", "/install/index.php")); 
 include($strPath2Lang."/install/version.php");
 Class epir_comingsoon extends CModule{ 
-	var $MODULE_ID = "epir.comingsoon"; 
+	var $MODULE_ID = "asdaff.comingsoon";
 	var $MODULE_VERSION; 
 	var $MODULE_VERSION_DATE; 
 	var $MODULE_NAME; 
@@ -41,32 +41,32 @@ Class epir_comingsoon extends CModule{
 //			copy($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/epir.comingsoon/'.$file_name, $file_dir.$file_name);
 //		}
 		$this->InstallFiles();
-		RegisterModule("epir.comingsoon");
+		RegisterModule("asdaff.comingsoon");
 
-        RegisterModuleDependences("main", "OnBeforeProlog", "epir.comingsoon", "CComingsoon", "MyOnBeforePrologHandler");
+        RegisterModuleDependences("main", "OnBeforeProlog", "asdaff.comingsoon", "CComingsoon", "MyOnBeforePrologHandler");
 	} 
 	function InstallFiles()
 	{
 		global $DOCUMENT_ROOT;
 
 
-		$ToDir = $DOCUMENT_ROOT."/bitrix/images/epir.comingsoon";		
+		$ToDir = $DOCUMENT_ROOT."/bitrix/images/asdaff.comingsoon";
 		CheckDirPath($ToDir);
-		CopyDirFiles($DOCUMENT_ROOT."/bitrix/modules/epir.comingsoon/install/images", $ToDir);
+		CopyDirFiles($DOCUMENT_ROOT."/bitrix/modules/asdaff.comingsoon/install/images", $ToDir);
 		
-		$ToDir = $DOCUMENT_ROOT."/bitrix/js/epir.comingsoon";		
+		$ToDir = $DOCUMENT_ROOT."/bitrix/js/asdaff.comingsoon";
 		CheckDirPath($ToDir);
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon/install/js", $ToDir);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.comingsoon/install/js", $ToDir);
 		
-		$ToDir = $DOCUMENT_ROOT."/bitrix/themes/epir.comingsoon";		
+		$ToDir = $DOCUMENT_ROOT."/bitrix/themes/asdaff.comingsoon";
 		CheckDirPath($ToDir);
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon/install/themes", $ToDir);		
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.comingsoon/install/themes", $ToDir);
 
 		return true;
 	}	
 	function DoUninstall(){
 
-        UnRegisterModuleDependences("main", "OnBeforeProlog", "epir.comingsoon", "CComingsoon", "MyOnBeforePrologHandler");
+        UnRegisterModuleDependences("main", "OnBeforeProlog", "asdaff.comingsoon", "CComingsoon", "MyOnBeforePrologHandler");
 
 //		$sites_ids = array();
 //		$sites_list = CSite::GetList($by="sort", $order="desc");
@@ -85,15 +85,15 @@ Class epir_comingsoon extends CModule{
 //			}
 //		}
 		$this->InstallFiles();
-		UnRegisterModule("epir.comingsoon"); 		
+		UnRegisterModule("asdaff.comingsoon");
 	} 
 	function UnInstallFiles()
 	{
 		global $DOCUMENT_ROOT;
 
-		DeleteDirFilesEx("/bitrix/images/epir.comingsoon/");
-		DeleteDirFilesEx("/bitrix/js/epir.comingsoon/");
-		DeleteDirFilesEx("/bitrix/themes/epir.comingsoon/");		
+		DeleteDirFilesEx("/bitrix/images/asdaff.comingsoon/");
+		DeleteDirFilesEx("/bitrix/js/asdaff.comingsoon/");
+		DeleteDirFilesEx("/bitrix/themes/asdaff.comingsoon/");
 			
 		return true;
 	} 

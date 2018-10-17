@@ -1,13 +1,13 @@
 <?
-$header = COption::GetOptionString("epir.comingsoon", "CS_header_".SITE_ID);
-$bg = COption::GetOptionString("epir.comingsoon", "CS_bg_".SITE_ID);
-$logo = COption::GetOptionString("epir.comingsoon", "CS_logo_".SITE_ID);
-$text = COption::GetOptionString("epir.comingsoon", "CS_text_".SITE_ID);
-$default_time = COption::GetOptionString("epir.comingsoon", "CS_date_".SITE_ID);
+$header = COption::GetOptionString("asdaff.comingsoon", "CS_header_".SITE_ID);
+$bg = COption::GetOptionString("asdaff.comingsoon", "CS_bg_".SITE_ID);
+$logo = COption::GetOptionString("asdaff.comingsoon", "CS_logo_".SITE_ID);
+$text = COption::GetOptionString("asdaff.comingsoon", "CS_text_".SITE_ID);
+$default_time = COption::GetOptionString("asdaff.comingsoon", "CS_date_".SITE_ID);
 if($default_time)
     $ar_time = explode('.',$default_time);
 
-IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon/underconstruction.php");
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.comingsoon/underconstruction.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//RU	"
@@ -18,11 +18,11 @@ IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon
 <meta http-equiv="Content-Type" content="text/html; charset=<?=LANG_CHARSET;?>">
 <?header('Content-Type: text/html; charset=echo LANG_CHARSET');?>
 	<title><?=$header;?></title>
-	<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/style.css" type="text/css" charset="utf-8" />
-	<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/ie.css" type="text/css" charset="utf-8" />	
-	<script language="Javascript" type="text/javascript" src="/bitrix/js/epir.comingsoon/jquery-1.7.1.min.js"></script>
-	<script language="Javascript" type="text/javascript" src="/bitrix/js/epir.comingsoon/jquery.lwtCountdown-1.0.js"></script>
-	<script language="Javascript" type="text/javascript" src="/bitrix/js/epir.comingsoon/misc.js"></script>
+	<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/style.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/ie.css" type="text/css" charset="utf-8" />
+	<script language="Javascript" type="text/javascript" src="/bitrix/js/asdaff.comingsoon/jquery-1.7.1.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="/bitrix/js/asdaff.comingsoon/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="/bitrix/js/asdaff.comingsoon/misc.js"></script>
  
 </head>
 

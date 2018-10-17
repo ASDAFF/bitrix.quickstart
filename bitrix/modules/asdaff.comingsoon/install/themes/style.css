@@ -18,7 +18,7 @@ img {
 	margin: 20px auto 0px auto;
 }
 #main {
-	background: url(/bitrix/images/epir.comingsoon/main.png) no-repeat center;
+	background: url(/bitrix/images/asdaff.comingsoon/main.png) no-repeat center;
 	width: 847px;
 	height: 395px;
 	overflow:hidden;
@@ -34,7 +34,7 @@ img {
 	left: 25px;
 }
 #copyright{
-	background: url('/bitrix/images/epir.comingsoon/c.png') no-repeat center;
+	background: url('/bitrix/images/asdaff.comingsoon/c.png') no-repeat center;
 	position: absolute;
 	bottom: 45px;
 	width: 50px;
@@ -52,7 +52,7 @@ img {
 .dash {
 	width: 127px;
 	height: 125px;
-	background: transparent url(/bitrix/images/epir.comingsoon/box.jpg) 0 0 no-repeat;
+	background: transparent url(/bitrix/images/asdaff.comingsoon/box.jpg) 0 0 no-repeat;
 	float: left;
 	margin-left: 20px;
 	position: relative;

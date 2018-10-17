@@ -2,8 +2,8 @@
 //CJSCore::Init(array("jquery"));
 ?>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="/bitrix/js/epir.comingsoon/farbtastic.js"></script>
-<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/farbtastic.css" type="text/css" />
+<script type="text/javascript" src="/bitrix/js/asdaff.comingsoon/farbtastic.js"></script>
+<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/farbtastic.css" type="text/css" />
 
 <?
 $date_today = date("d.m.Y");
@@ -100,10 +100,10 @@ while ($site = $sites_arr->Fetch())
 
 
 global $MESS;
-include(GetLangFileName($GLOBALS["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon/lang/", "/install/options.php"));
+include(GetLangFileName($GLOBALS["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.comingsoon/lang/", "/install/options.php"));
 IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/main/options.php');
-IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/epir.comingsoon/options.php');
-$module_id = "epir.comingsoon";
+IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/asdaff.comingsoon/options.php');
+$module_id = "asdaff.comingsoon";
 CModule::IncludeModule($module_id);
 $MOD_RIGHT = $APPLICATION->GetGroupRight($module_id);
 if($MOD_RIGHT>="R"):
@@ -129,7 +129,7 @@ if($MOD_RIGHT>="R"):
             Array("CS_checkbox_".$keys[0], GetMessage("CS_CHECKBOX"), "N", Array("checkbox", "Y")),
             Array("CS_header_".$keys[0], GetMessage("CS_HEADER"), GetMessage("CS_HEADER_EX"), Array("text", "")),
             Array("CS_bg_".$keys[0], GetMessage("CS_BG"), "#ffffff", Array("text", "")),
-            Array("CS_logo_".$keys[0], GetMessage("CS_LOGO"), "/bitrix/images/epir.comingsoon/logo.png", Array("text", "")),
+            Array("CS_logo_".$keys[0], GetMessage("CS_LOGO"), "/bitrix/images/asdaff.comingsoon/logo.png", Array("text", "")),
             Array("CS_text_".$keys[0], GetMessage("CS_TEXT"), GetMessage("CS_TEXT_EX"), Array("textarea", "3","20")),
             Array("CS_date_".$keys[0], GetMessage("CS_DATE"), $date_today, Array("text", "")),
             Array("CS_allow_user_".$keys[0], GetMessage("allow_groups"), false, Array("multiselectbox", $activeGroups)),
@@ -194,7 +194,7 @@ if($MOD_RIGHT>="R"):
     $tabControl->Begin();
     ?>
 
-<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/style.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/style.css" type="text/css" charset="utf-8" />
 <div id="colorpicker" style="display:none;"></div>
 <input type="hidden" id="color" value="#ffffff">
 <form method="POST" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=htmlspecialchars($mid)?>&lang=<?echo LANG?>" name="curform">
@@ -212,11 +212,11 @@ if($MOD_RIGHT>="R"):
         <?$keys = array_keys($sites_list[$i]);?>
         <?$tabControl->BeginNextTab();?>
         <?
-        // убиваем поле даты у нас поле ставится вручную
+
         unset( $arAllOptions[$i][5])
         ?>
 
-        <?__AdmSettingsDrawList('epir.comingsoon', $arAllOptions[$i]);?>
+        <?__AdmSettingsDrawList('asdaff.comingsoon', $arAllOptions[$i]);?>
 <!--        <span id="calendar_--><?//=$keys[0]?><!--">--><?//=Calendar("CS_date_".$keys[0], "curform")?><!--</span>-->
         <tr>
             <td><?=GetMessage("CS_DATE")?></td>

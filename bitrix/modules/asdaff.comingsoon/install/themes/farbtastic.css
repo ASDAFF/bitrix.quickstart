@@ -17,7 +17,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 #colorpicker{
-    background: url("/bitrix/images/epir.comingsoon/marker.png") no-repeat scroll 0 0 transparent;
+    background: url("/bitrix/images/asdaff.comingsoon/marker.png") no-repeat scroll 0 0 transparent;
     height: 17px;
     position: relative;
     width: 17px;
@@ -57,18 +57,18 @@
   height: 101px;
 }
 .farbtastic .wheel {
-  background: url(/bitrix/images/epir.comingsoon/wheel.png) no-repeat;
+  background: url(/bitrix/images/asdaff.comingsoon/wheel.png) no-repeat;
   width: 195px;
   height: 195px;
 }
 .farbtastic .overlay {
-  background: url(/bitrix/images/epir.comingsoon/mask.png) no-repeat;
+  background: url(/bitrix/images/asdaff.comingsoon/mask.png) no-repeat;
 }
 .farbtastic .marker {
   width: 17px;
   height: 17px;
   margin: -3px 0 0 -3px;
   overflow: hidden; 
-  background: url(/bitrix/images/epir.comingsoon/marker.png) no-repeat;
+  background: url(/bitrix/images/asdaff.comingsoon/marker.png) no-repeat;
 }
 

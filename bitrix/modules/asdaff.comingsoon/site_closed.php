@@ -1,9 +1,9 @@
 <?
-$header = COption::GetOptionString("epir.comingsoon", "CS_header_".SITE_ID);
-$bg = COption::GetOptionString("epir.comingsoon", "CS_bg_".SITE_ID);
-$logo = COption::GetOptionString("epir.comingsoon", "CS_logo_".SITE_ID);
-$text = COption::GetOptionString("epir.comingsoon", "CS_text_".SITE_ID);
-$default_time = COption::GetOptionString("epir.comingsoon", "CS_date_".SITE_ID);
+$header = COption::GetOptionString("asdaff.comingsoon", "CS_header_".SITE_ID);
+$bg = COption::GetOptionString("asdaff.comingsoon", "CS_bg_".SITE_ID);
+$logo = COption::GetOptionString("asdaff.comingsoon", "CS_logo_".SITE_ID);
+$text = COption::GetOptionString("asdaff.comingsoon", "CS_text_".SITE_ID);
+$default_time = COption::GetOptionString("asdaff.comingsoon", "CS_date_".SITE_ID);
 
 if(!$default_time)
     $default_time = '00.00.00 00:00:00';
@@ -15,7 +15,7 @@ $Date_time_arr = ParseDateTime($default_time, $format);
     if(!$Date_time_arr['MI'])  $Date_time_arr['MI'] = '00';
     if(!$Date_time_arr['SS'])  $Date_time_arr['SS'] = '00';
 
-IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/epir.comingsoon/site_closed.php");
+IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.comingsoon/site_closed.php");
 
 header ("Content-Type: text/html; charset=".SITE_CHARSET);
 
@@ -27,11 +27,11 @@ header ("Content-Type: text/html; charset=".SITE_CHARSET);
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?=SITE_CHARSET;?>">
 	<title><?=$header;?></title>
-	<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/style.css" type="text/css" charset="utf-8" />
-	<link rel="stylesheet" href="/bitrix/themes/epir.comingsoon/ie.css" type="text/css" charset="utf-8" />	
+	<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/style.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="/bitrix/themes/asdaff.comingsoon/ie.css" type="text/css" charset="utf-8" />
 	<script language="Javascript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script language="Javascript" type="text/javascript" src="/bitrix/js/epir.comingsoon/jquery.lwtCountdown-1.0.js"></script>
-	<script language="Javascript" type="text/javascript" src="/bitrix/js/epir.comingsoon/misc.js"></script>
+	<script language="Javascript" type="text/javascript" src="/bitrix/js/asdaff.comingsoon/jquery.lwtCountdown-1.0.js"></script>
+	<script language="Javascript" type="text/javascript" src="/bitrix/js/asdaff.comingsoon/misc.js"></script>
  
 </head>
 

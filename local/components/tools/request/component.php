@@ -1,8 +1,20 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
-if(!CModule::Includemodule("micros.request"))
+/**
+ * Умная обратная связь на базе Технической поддержки
+ */
+Class MDTicket
 {
-die("MODULE NOT FOUND");
-return false;
+    function CheckUser($email)
+    {
+        $rsUser = CUser::GetList(($by="id"), ($order="desc"), array("EMAIL"=>$email))->Fetch();
+        if($rsUser["ID"]>0)
+        {
+            return false;
+        }
+        return true;
+    }
+
+
 }
 
 $arParams["USE_CAPTCHA"] = (($arParams["USE_CAPTCHA"] != "N" && !$USER->IsAuthorized()) ? "Y" : "N");

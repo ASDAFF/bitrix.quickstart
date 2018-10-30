@@ -22,7 +22,12 @@ $arLibs = array(
      *      'skip_core'         => '', // отключает необходимость загрузки ядра JS битрикс
      *      'lang_additional'   => '', // Путь до дополнительного lang файла с php массивом, который будет транслирован в js
      * )
+     *
+     * Для подключения зарегистрированной библиотеки на какой-то странице сайта, используйте конструкцию:
+     *      CJSCore::Init(array('library_name'));
+     * Ваша библиотека будет подключена с использованием AddHeadScript.
      */
+
     'jquery_ui' => array(
         'js'   => '/local/lib/frontend/jquery_ui/jquery-ui.min.js',
         'css'  => '/local/lib/frontend/jquery_ui/jquery-ui.min.css',

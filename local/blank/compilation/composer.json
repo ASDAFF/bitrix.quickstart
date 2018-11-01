@@ -1,0 +1,26 @@
+{
+    "name": "vitaliisestrenskiy/sest",
+    "description": "class for work with bitrix methods",
+    "keywords": ["print_r", "var_dump", "debug", "pretty", "print", "dump"],
+    "type": "library",
+    "homepage": "https://github.com/VitaliiSestrenskiy/sest/sest.php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitalii Sestrenskyi",
+            "email": "sestrinskiy@mail.ru",
+            "homepage": "https://github.com/VitaliiSestrenskiy",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "suggest": {
+        "jdorn/sql-formatter": "class for work with bitrix methods"
+    },
+    "autoload": {
+        "files": ["sest.php"],
+        "psr-0": {"sest": "/"}
+    }
+}

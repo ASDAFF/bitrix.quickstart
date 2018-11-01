@@ -1,0 +1,2 @@
+# файлы html обраб. как php
+Addtype application/x-httpd-php .php .html

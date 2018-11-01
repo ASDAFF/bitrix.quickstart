@@ -14,11 +14,11 @@ class DevDebug
     }
 
     /**
-     * Замена print_r
-     * Вставить код в init.php
-     * Использование: DevDebug::echo_r($arResult);
-     * Показывается по нажатию "z"
-     * Поля с тильдой скрыты по умолчанию
+     * Р—Р°РјРµРЅР° print_r
+     * Р’СЃС‚Р°РІРёС‚СЊ РєРѕРґ РІ init.php
+     * РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ: DevDebug::echo_r($arResult);
+     * РџРѕРєР°Р·С‹РІР°РµС‚СЃСЏ РїРѕ РЅР°Р¶Р°С‚РёСЋ "z"
+     * РџРѕР»СЏ СЃ С‚РёР»СЊРґРѕР№ СЃРєСЂС‹С‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
      **/
     function echo_r($data, $hideMe = true, $removeTilda = true)
     {
@@ -39,7 +39,7 @@ class DevDebug
     </script>'."\n<pre class='dbg t$rnd'>$out</pre>";
 
         if($hideMe)
-        {   // Показывается по нажатию Z
+        {   // РџРѕРєР°Р·С‹РІР°РµС‚СЃСЏ РїРѕ РЅР°Р¶Р°С‚РёСЋ Z
             echo '<style>.t'.$rnd.'{display:none; text-align:left}</style>';
             echo '<script language="JavaScript">document.onkeydown=function(e){if(e.keyCode==90)/*z*/{
         var dbglist=document.getElementsByClassName("dbg");
@@ -54,7 +54,7 @@ class DevDebug
 
 
     /**
-     * Подсветки PHP в редакторе
+     * РџРѕРґСЃРІРµС‚РєРё PHP РІ СЂРµРґР°РєС‚РѕСЂРµ
      **/
     function InitPHPHighlight()
     {

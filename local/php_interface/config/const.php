@@ -21,5 +21,9 @@ define("IBLOCK_ID__VIDEO", 9);
 /**
  * PATHS
  */
-define('PATH_TO__BASKET', '/personal/order/make/');
-define('PATH_TO__ORDER', '/personal/order/make/');
+define('SITE_PATH_LOGO', '/local/codenails/frontend/images/logo/');             //путь до логотипов сайта
+define('SITE_PATH_CSS', '/local/codenails/frontend/css/');                      //путь до файлов со стилями
+define('SITE_PATH_JS', '/local/codenails/frontend/js/');                        //путь до файлов со js скриптами
+define('SITE_PATH_LIB', '/local/codenails/frontend/lib/');                      //путь до файлов библиотек
+define('PATH_INCLUDE', '/include/');                                            //путь до включаемых областей
+define('PATH_AJAX', '/local/codenails/ajax/');                                  //путь до директории ajax

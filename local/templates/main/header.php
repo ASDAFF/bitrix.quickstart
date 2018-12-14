@@ -27,6 +27,11 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     //Тут стили шаблона сайта
     $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/style.css');
 
+    //Custom styles for this template
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'global.css');
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'responsive.css');
+
     //Тут выводим стили
     $APPLICATION->ShowCSS(true, false);
     ?>

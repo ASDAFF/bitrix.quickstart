@@ -51,6 +51,11 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/uikit/core.min.js');
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/uikit/grid.min.js');
 
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'bootstrap.min.js');
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'ie10-viewport-bug-workaround.js'); // IE10 viewport hack for Surface/desktop Windows 8 bug
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'velocity.min.js');
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
+
     //Тут выводим скрипты
     $APPLICATION->ShowHeadStrings();
     $APPLICATION->ShowHeadScripts();

@@ -51,7 +51,7 @@ if(count($arResult["ITEMS"]) > 0):
 	"CACHE_GROUPS" => "Y",
 	"DISPLAY_TOP_PAGER" => "N",
 	"DISPLAY_BOTTOM_PAGER" => "N",
-	"PAGER_TITLE" => "Новости",
+	"PAGER_TITLE" => "РќРѕРІРѕСЃС‚Рё",
 	"PAGER_SHOW_ALWAYS" => "Y",
 	"PAGER_TEMPLATE" => "",
 	"PAGER_DESC_NUMBERING" => "N",

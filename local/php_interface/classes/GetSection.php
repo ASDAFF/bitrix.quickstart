@@ -12,8 +12,8 @@ class GetSection
      * @param $filter
      * @param $select
      * @return mixed
-     * Ïîëó÷àåì ðàçäåëû è âëîæåííûå ïîäðàçäåëû â èåðàðõè÷åñêîì âèäå
-     * Èñïîëüçîâàíèå: GetSection::getSectionList(Array('IBLOCK_ID' => 'ID èíôîáëîêà'), Array('NAME','SECTION_PAGE_URL'));
+     * ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹ Ð¸ Ð²Ð»Ð¾Ð¶ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð¾Ð´Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹ Ð² Ð¸ÐµÑ€Ð°Ñ€Ñ…Ð¸Ñ‡ÐµÑÐºÐ¾Ð¼ Ð²Ð¸Ð´Ðµ
+     * Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ: GetSection::getSectionList(Array('IBLOCK_ID' => 'ID Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°'), Array('NAME','SECTION_PAGE_URL'));
      *
      */
     function getSectionList($filter, $select)

@@ -8,6 +8,7 @@
 
 /**
  * Пользовательское свойcтво тип HTML
+ * http://marketplace.1c-bitrix.ru/solutions/d2mg.ufhtml/
  */
 
 class PropertyHTML{

@@ -1,0 +1,14 @@
+div.alx_waitwindowlocalshadow
+{
+   position:absolute;
+   z-index:9999;
+
+   background-image:url(/images/loader_blue.gif);
+   border:0px solid #808080;
+   background-color: #EDF9F9;
+   background-position:center center;
+   background-repeat:no-repeat;
+   opacity: 0.5;
+   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+

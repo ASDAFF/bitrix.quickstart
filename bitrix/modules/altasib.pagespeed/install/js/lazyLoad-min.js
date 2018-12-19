@@ -1,0 +1,1 @@
+class LazyLoad{constructor(){this.init()}init(){document.addEventListener("DOMContentLoaded",function(){for(var t=document.getElementsByTagName("img"),e=0;e<t.length;++e)t[e].src=t[e].getAttribute("data-src")})}}let lazyLoad=new LazyLoad;

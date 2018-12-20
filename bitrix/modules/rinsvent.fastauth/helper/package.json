@@ -1,0 +1,13 @@
+{
+  "name": "client-js",
+  "version": "0.1.0",
+  "description": "JavaScript client",
+  "devDependencies": {
+    "grunt": "^1.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "grunt-sync": "^0.6.2"
+  }
+}

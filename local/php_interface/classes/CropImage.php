@@ -15,12 +15,15 @@ class CropImage
      * @param int $aNewImageHeight - высота выходного обрезанного изображения
      */
 
-/*
- Пользоваться функцией достаточно просто. Сначала формируем обрезанное изображение:
-CropImage::cropImage($_SERVER['DOCUMENT_ROOT'] . "/1.jpg", $_SERVER['DOCUMENT_ROOT'] . "/1_cropped.jpg", 480, 320);
-После чего отображаем его на странице:
-<img src="/1_cropped.jpg">
- */
+    /**
+     *
+     * Пользоваться функцией достаточно просто. Сначала формируем обрезанное изображение:
+     * CropImage::cropImage($_SERVER['DOCUMENT_ROOT'] . "/1.jpg", $_SERVER['DOCUMENT_ROOT'] . "/1_cropped.jpg", 480, 320);
+     * После чего отображаем его на странице:
+     * <img src="/1_cropped.jpg">
+     *
+     **/
+
     function cropImage($aInitialImageFilePath, $aNewImageFilePath, $aNewImageWidth, $aNewImageHeight) {
         if (($aNewImageWidth < 0) || ($aNewImageHeight < 0)) {
             return false;

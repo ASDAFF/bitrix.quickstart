@@ -35,6 +35,12 @@ AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); 
 AddEventHandler("main", "OnUserTypeBuildList", array('PropMediaLibUserType', 'GetUserTypeDescription'));
 AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblockProperty', 'GetUserTypeDescription'));
 
+/**
+ * Пользовательские свойства для инфоблоков
+ **/
+AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
+AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyColor', 'GetUserTypeDescription')); // свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
+
 
 /**
  * Подсветки PHP в редакторе

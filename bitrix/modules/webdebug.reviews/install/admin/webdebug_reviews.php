@@ -1,0 +1,1 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/webdebug.reviews/admin/webdebug_reviews.php");?>

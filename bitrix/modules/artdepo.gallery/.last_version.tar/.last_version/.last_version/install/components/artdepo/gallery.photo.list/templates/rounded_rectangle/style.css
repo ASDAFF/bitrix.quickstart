@@ -1,0 +1,42 @@
+.gall_wr_artdepo {
+  width: 100%; }
+
+.mult_gallery_tmpl1 {
+  margin: 0;
+  padding: 0; }
+  .mult_gallery_tmpl1 li,
+  #popup-gallery .mult_gallery_tmpl1 li {
+    list-style-type: none;
+    width: 205px;
+    height: 155px;
+    display: inline-block;
+    margin: 0 18px 40px 18px;
+    position: relative; }
+    .mult_gallery_tmpl1 li:before{
+      content: ""!important; }
+  .mult_gallery_tmpl1 .gall_img_link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.1s ease-in;
+    background: #fff; }
+    .mult_gallery_tmpl1 .gall_img_link img {
+      width: 205px;
+      height: 155px;
+      transition: all 0.1s ease-in;
+      border-radius: 10px; }
+    .mult_gallery_tmpl1 .gall_img_link:hover {
+      top: -3px;
+      bottom: -3px;
+      right: -3px;
+      left: -3px; }
+      .mult_gallery_tmpl1 .gall_img_link:hover img {
+        width: 211px;
+        height: 161px;
+        opacity: 0.9;
+        -webkit-filter: contrast(130%);
+        -moz-filter: contrast(130%);
+        filter: contrast(130%); }

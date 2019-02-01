@@ -1,0 +1,339 @@
+#SDEK_pvz{
+	position         : absolute;
+	z-index          : 2100;
+	display          : none;
+	background-color : white;
+	padding          : 10px;
+	overflow         : hidden;
+	font-family             : Arial;
+	width            : 900px;
+	height           : 543px;
+}
+#SDEK_mask{
+	width            : 100%;
+	height           : 100%;
+	opacity          : 0.8;
+	position         : fixed;
+	z-index          : 2000;
+	background-color : black;
+	display          : none;
+	top              : 0px;
+	left             : 0px;
+	padding          : 5px
+}
+#SDEK_head{
+	height:35px;
+	clear: both;
+	padding-top: 7px;
+}
+#SDEK_logo{
+	background : url('/bitrix/images/ipol.sdek/widjet/logo.png') no-repeat transparent;
+	width      : 169px;
+	height     : 11px;
+	margin-top : 15px;
+}
+#SDEK_logo:hover{
+	background-position: 0px -12px;
+}
+#SDEK_logo a{
+	text-decoration : none;
+	width           : 100%;
+	height          : 100%;
+	display         : block;
+}
+#SDEK_closer{
+	position   : absolute;
+	background : url('/bitrix/images/ipol.sdek/widjet/close.png') no-repeat transparent;
+	height     : 22px;
+	width      : 22px;
+	right      : 15px;
+	top        : 15px;
+	z-index    : 1000;
+	cursor     : pointer;
+}
+#SDEK_closer:hover{
+	background-position: 0px -22px;
+}
+#SDEK_map{
+	float: left;
+	height: 500px;
+	width: 900px;
+}
+#SDEK_info{
+	float:left;
+	position:relative;
+	height: 480px;
+	overflow: hidden;
+	width: 245px;
+	color: black;
+	top: -490px;
+	left: 10px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #5D5D5D;
+}
+#SDEK_sign{
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 98px;
+	background: url('/bitrix/images/ipol.sdek/widjet/widjetLogo.png') no-repeat;
+	border-bottom: 1px solid #e3e3e3;
+}
+#SDEK_delivInfo_PVZ,#SDEK_delivInfo_POSTOMAT{
+	/* height: 30px; */
+	/* font-weight: bold; */
+	font-size: 12px;
+	/* border-bottom: 1px dashed #e3e3e3; */
+	line-height: 35px;
+	padding: 0px 9px;
+	background-color: #fafafa;
+	color: #808080;
+	display: none;
+}
+#SDEK_wrapper{
+	height: 405px;
+	overflow: auto;
+	width: 245px;
+	border: none;
+	outline: none;
+	background-color: #fafafa;
+}
+#SDEK_wrapper p{
+	cursor : pointer;
+	padding: 5px 6px;
+	margin:  5px 6px;
+	font-size: 12px;
+}
+.sdek_chosen{
+	background-color : #ebebeb;
+}
+#SDEK_ten{
+	position: relative;
+	top: -5px;
+	background-color: white;
+	height: 10px;
+	box-shadow: 0 0 5px 5px white;
+	width: 235px;
+
+	opacity: 0.7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+}
+/*балун*/
+#SDEK_baloon{
+	background-color:white;
+	max-width: 258px;
+	font-family: Arial;
+	font-size: 12px;
+	padding-left: 3px;
+}
+#SDEK_baloon > div{
+	margin-top: 5px;
+}
+.sdek_baloonInfo{
+	color: #666666;
+	max-height: 80px;
+	overflow: hidden;
+}
+.sdek_baloonDiv{
+	max-width: 235px;
+	padding-left:8px;
+	float:left;
+	text-align: left;
+}
+.sdek_icon{
+	float:left;
+	width:12px;
+	min-height: 12px;
+}
+.SDEK_iAdress{
+	margin-top: 0px !important;
+	font-size: 14px;
+}
+.SDEK_iTelephone{background: url('/bitrix/images/ipol.sdek/widjet/phone.png') no-repeat;}
+.SDEK_iTime{background: url('/bitrix/images/ipol.sdek/widjet/clock.png') no-repeat;}
+#SDEK_button{
+	width:130px;
+	height:25px;
+	background: url('/bitrix/images/ipol.sdek/widjet/chooze.png') no-repeat;
+	display: block;
+	margin: 0px auto 5px;
+	text-decoration:none;
+}
+#SDEK_button:hover{
+	background-position: 0px -25px;
+}
+#SDEK_head > div{
+	font-size: 12px;
+	font-family: Arial;
+	float:left;
+}
+#SDEK_logoPlace{
+	width: 300px;
+	height: 38px;
+	background-image: url("/bitrix/images/ipol.sdek/SDEKogo.png");
+	background-repeat:no-repeat;
+	background-position: 241px 2px;
+}
+#SDEK_separator{
+	background-color: #e3e3e3;
+	width: 1px;
+	height: 38px;
+}
+.SDEK_mark{
+	margin-left:12px;
+}
+.sdek_baloonDiv a{
+	cursor: help;
+}
+
+.SDEK_arrow{
+	width: 23px;
+	height: 14px;
+	/*background: #000 none repeat scroll 0% 0%;*/
+	background: url("/bitrix/images/ipol.sdek/arr.png") no-repeat bottom left;
+	display: block;
+	float: right;
+	margin-top: 12px;
+	/* margin-right: 5px; */
+	display: none;
+}
+
+.SDEK_arrow:hover{
+	background-position: bottom right;
+}
+
+.SDEK_arrow.up{
+	background-position: top left;
+
+}
+
+.SDEK_arrow.up:hover{
+	background-position: top right;
+}
+
+.SDEK_labelMode_SHORT{
+	display:none;
+}
+.SDEK_labelMode_FULL{
+	display:inline;
+}
+
+@media screen and (max-width: 919px){
+	/* .SDEK_labelMode_SHORT{
+		display:inline;
+	}
+	.SDEK_labelMode_FULL{
+		display:none;
+	} */
+	#SDEK_pvz{
+		width: 700px;
+		padding: 0;
+	}
+	#SDEK_closer{
+		right: 11px;
+		top: 11px;
+	}
+
+	#SDEK_logo{
+		display: none;
+	}
+
+	#SDEK_info{
+		box-shadow: none;
+		left: 0px;
+		top: -538px;
+		width: 270px;
+		height: auto;
+		overflow: auto;
+	}
+
+	#SDEK_sign{
+		padding-left: 124px;
+	}
+
+	#SDEK_wrapper{
+		width: 100% !important;
+		height: 460px;
+	}
+
+	/*.jspContainer{
+		width: 100% !important;
+		height: 452px !important;
+	}*/
+
+	#SDEK_ten{
+		width: 256px;
+		height: 17px;
+		top: -9px;
+	}
+
+	#SDEK_delivInfo_PVZ,#SDEK_delivInfo_POSTOMAT{
+		border: none;
+		font-size: 15px;
+		text-shadow: 0px 0px 0px rgb(0, 0, 0);
+		font-weight: normal;
+
+	}
+
+	#SDEK_wrapper p{
+		font-size: 15px;
+	}
+
+	/*.jspPane{
+		width: 100% !important;
+	}*/
+
+	.SDEK_all-items{
+		border-top: 1px dashed #E3E3E3;
+		display: none;
+	}
+
+	.SDEK_arrow{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 700px){
+	#SDEK_pvz{
+		width: 100%;
+		min-width: 195px;
+	}
+}
+
+@media screen and (max-width: 294px){
+	#SDEK_sign {
+		padding-left: 103px;
+	}
+
+	#SDEK_info{
+		width: 100%;
+		min-width: 195px;
+	}
+
+	#SDEK_closer{
+		right: 12px;
+	}
+
+	.SDEK_arrow{
+		margin-right: 2px;
+	}
+}
+
+@media screen and (max-width: 268px){
+	#SDEK_sign span{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 222px){
+	#SDEK_delivInfo_POSTOMAT,#SDEK_delivInfo_PVZ{
+		font-size: 12px;
+	}
+
+	#SDEK_pPrice{
+		font-size: 14px;
+	}
+}

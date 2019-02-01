@@ -1,0 +1,5 @@
+/*Menu icon*/
+.uniplug_logviewer_menu_icon {
+	background-image: url('icons/uniplug.logviewer/mnu_logviewer.png') !important;
+	background-position: 5px 4px;
+}

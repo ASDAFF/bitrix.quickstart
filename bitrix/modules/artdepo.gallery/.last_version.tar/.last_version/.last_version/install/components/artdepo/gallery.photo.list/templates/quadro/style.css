@@ -1,0 +1,39 @@
+.gall_wr_artdepo {
+  width: 100%;
+  overflow: hidden; }
+
+.mult_gallery_tmpl4 {
+  margin: 0;
+  padding: 0; }
+  .mult_gallery_tmpl4 li,
+  #popup-gallery .mult_gallery_tmpl4 li {
+    list-style-type: none;
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    margin: 0 0 4px 0;
+    vertical-align: top; }
+    .mult_gallery_tmpl4 li:hover img {
+      opacity: 0.6;
+      cursor: zoom-in; }
+    .mult_gallery_tmpl4 li:hover .quadro2 {
+      clip: rect(95px, 210px, 210px, 95px);
+      opacity: 0.6; }
+    .mult_gallery_tmpl4 li:hover .quadro1 {
+      clip: rect(0, 125px, 125px, 0px);
+      opacity: 0.6; }
+    .mult_gallery_tmpl4 li .quadro1,
+    .mult_gallery_tmpl4 li .quadro2,
+    .mult_gallery_tmpl4 li img {
+      opacity: 0.5;
+      display: block;
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      transition: all 1s cubic-bezier(0.39, 1.62, 0.62, -0.48);
+      cursor: zoom-in; }
+    .mult_gallery_tmpl4 li .quadro1,
+    .mult_gallery_tmpl4 li .quadro2 {
+      clip: rect(0, 210px, 210px, 0);
+      opacity: 1;
+      position: absolute; }

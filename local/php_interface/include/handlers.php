@@ -94,6 +94,9 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
 AddEventHandler("main", "OnUserTypeBuildList", array('Local\Lib\Properties\Complect', 'GetUserTypeDescription'));
 AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('Local\Lib\Properties\Complect', 'GetUserTypeDescription'));
 
+// Добавляем фильтр на изображение, если только в CFile::ResizeImageGet в $arFilters есть ключ irf_text
+AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'));
+
 
 /**
  * user

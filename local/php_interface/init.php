@@ -33,3 +33,6 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/vendor/bitrix-helpe
 
 // Helpers Function
 require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/helpers/helpers.function.php');
+
+// Окружение
+require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/helpers/environment.php');

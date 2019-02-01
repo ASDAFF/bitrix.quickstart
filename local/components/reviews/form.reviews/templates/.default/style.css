@@ -1,0 +1,35 @@
+
+.alert-success {
+	color: #fff;
+	padding: 5px;
+    text-align: center;
+    background-color: #A2D284;
+}
+
+.alert-error {
+	color: #fff;
+	padding: 5px;
+    text-align: center;
+    background-color: #ff7979;
+}
+
+
+.image_list  div.item { 
+	float: left;
+	border: 3px solid transparent;
+	width: 50%;
+}
+.image_list > div img {
+	width: 100%;
+}
+.image_list div.item.active {
+	border: 3px solid #ff7979;
+}
+
+/*.image_list  {
+	    border-right: 2px solid #ff7979;
+    border-left: 2px solid #ff7979;
+}*/
+/*.image_list > div:hover{
+	border: 3px solid #ffc0c0;
+}*/

@@ -14,5 +14,5 @@ return array(
     'Maximaster\\' => array($vendorDir . '/maximaster/tools.events/src/Maximaster'),
     'DebugBar\\' => array($vendorDir . '/maximebf/debugbar/src/DebugBar'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
-    'Akop\\' => array($baseDir . '/bitrix/modules/aak74.bx-data/src'),
+    'Akop\\' => array($vendorDir . '/aak74/bx-data/src'),
 );

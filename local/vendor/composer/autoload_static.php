@@ -80,7 +80,7 @@ class ComposerStaticInit4a4e406c74c5e54730ea661a673eb1c1
         ),
         'Akop\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/bitrix/modules/aak74.bx-data/src',
+            0 => __DIR__ . '/..' . '/aak74/bx-data/src',
         ),
     );
 

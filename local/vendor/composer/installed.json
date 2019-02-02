@@ -6,23 +6,22 @@
         "source": {
             "type": "git",
             "url": "https://github.com/aak74/bx-data.git",
-            "reference": "abf44ce7833464e1f0b697db6c941eea6be16983"
+            "reference": "51e6e2e4ef7d651a4d71555c0fb6b2d1639e24fb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/aak74/bx-data/zipball/abf44ce7833464e1f0b697db6c941eea6be16983",
-            "reference": "abf44ce7833464e1f0b697db6c941eea6be16983",
+            "url": "https://api.github.com/repos/aak74/bx-data/zipball/51e6e2e4ef7d651a4d71555c0fb6b2d1639e24fb",
+            "reference": "51e6e2e4ef7d651a4d71555c0fb6b2d1639e24fb",
             "shasum": ""
         },
         "require": {
-            "composer/installers": "^1.0",
-            "php": ">=5.4.0"
+            "php": ">=5.6.0"
         },
         "require-dev": {
             "phpunit/phpunit": "4.*"
         },
-        "time": "2018-12-18T10:35:09+00:00",
-        "type": "bitrix-d7-module",
+        "time": "2019-01-25T07:53:38+00:00",
+        "type": "library",
         "installation-source": "source",
         "autoload": {
             "psr-4": {
@@ -92,6 +91,44 @@
             "debug bar",
             "debugbar"
         ]
+    },
+    {
+        "name": "citfact/filter.year",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/studiofact/citfact.filter.year.git",
+            "reference": "73515b9118b004c3ba1167d11f08cd411956b38e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/studiofact/citfact.filter.year/zipball/73515b9118b004c3ba1167d11f08cd411956b38e",
+            "reference": "73515b9118b004c3ba1167d11f08cd411956b38e",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "~1.0",
+            "php": ">=5.3.3"
+        },
+        "time": "2014-10-03T09:07:59+00:00",
+        "type": "bitrix-component",
+        "extra": {
+            "installer-name": "citfact.filter.year"
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kulichkin Denis",
+                "email": "onexhovia@gmail.com"
+            }
+        ],
+        "description": "Simple filtering by years and months",
+        "homepage": "https://github.com/studiofact/citfact.filter.year"
     },
     {
         "name": "composer/installers",
@@ -491,17 +528,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.2.1",
-        "version_normalized": "4.2.1.0",
+        "version": "v4.2.2",
+        "version_normalized": "4.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "db61258540350725f4beb6b84006e32398acd120"
+            "reference": "85bde661b178173d85c6f11ea9d03b61d1212bb2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/db61258540350725f4beb6b84006e32398acd120",
-            "reference": "db61258540350725f4beb6b84006e32398acd120",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/85bde661b178173d85c6f11ea9d03b61d1212bb2",
+            "reference": "85bde661b178173d85c6f11ea9d03b61d1212bb2",
             "shasum": ""
         },
         "require": {
@@ -515,6 +552,7 @@
         },
         "require-dev": {
             "ext-iconv": "*",
+            "symfony/console": "~3.4|~4.0",
             "symfony/process": "~3.4|~4.0",
             "twig/twig": "~1.34|~2.4"
         },
@@ -523,7 +561,7 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2018-11-25T12:50:42+00:00",
+        "time": "2019-01-03T09:07:35+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],

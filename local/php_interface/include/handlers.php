@@ -43,12 +43,6 @@ AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCol
 
 
 /**
- * Подсветки PHP в редакторе
- **/
-if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
-    AddEventHandler("main", "OnEpilog", "InitPHPHighlight");
-}
-/**
  * AdminArea
  **/
 
@@ -65,34 +59,31 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
  * BASKET
  * basket add
  **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketAdd", array('Local\Lib\Handlers\Basket', 'beforeAdd'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketAdd", array('Local\Lib\Handlers\Basket', 'afterAdd'));
+
+
 
 /**
  * basket update
  **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketUpdate", array('Local\Lib\Handlers\Basket', 'beforeUpdate'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketUpdate", array('Local\Lib\Handlers\Basket', 'afterUpdate'));
+
+
 
 /**
  * basket delete
  **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBeforeBasketDelete", array('Local\Lib\Handlers\Basket', 'beforeDelete'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnBasketDelete", array('Local\Lib\Handlers\Basket', 'afterDelete'));
+
+
 
 
 /**
  * order
  **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderAdd", array('Local\Lib\Handlers\Order', 'afterAdd'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderUpdate", array('Local\Lib\Handlers\Order', 'afterUpdate'));
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnBeforeEventAdd", array('CEshopEmailFieldsHandlers', 'OnBeforeEventAdd'));
 
 /**
  * property types
  **/
-AddEventHandler("main", "OnUserTypeBuildList", array('Local\Lib\Properties\Complect', 'GetUserTypeDescription'));
-AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('Local\Lib\Properties\Complect', 'GetUserTypeDescription'));
+
 
 // Добавляем фильтр на изображение, если только в CFile::ResizeImageGet в $arFilters есть ключ irf_text
 AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'));
@@ -101,12 +92,10 @@ AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'))
 /**
  * user
  **/
-AddEventHandler("main", "OnBeforeUserRegister", array('\Local\Lib\Handlers\User', 'beforeUpdate'));
-AddEventHandler("main", "OnBeforeUserUpdate", array('\Local\Lib\Handlers\User', 'beforeUpdate'));
+
 
 /**
  * highload blocks
  **/
-$eventManager->addEventHandler('', 'UserDataOnUpdate', array('\Local\Lib\Handlers\UserData', 'afterUpdate'));
-$eventManager->addEventHandler('', 'UserDataOnAdd', array('\Local\Lib\Handlers\UserData', 'afterAdd'));
+
 

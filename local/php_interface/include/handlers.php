@@ -43,6 +43,14 @@ AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCol
 
 
 /**
+ * Подсветки PHP в редакторе
+ **/
+if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
+    AddEventHandler("main", "OnEpilog", "InitPHPHighlight");
+}
+
+
+/**
  * AdminArea
  **/
 
@@ -97,5 +105,3 @@ AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'))
 /**
  * highload blocks
  **/
-
-

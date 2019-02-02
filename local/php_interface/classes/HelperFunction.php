@@ -219,6 +219,7 @@ JS;
         return $url;
     }
 
+    // Проверка E-mail
     function checkEmail($email)
     {
         return preg_match('|^[_a-z0-9:()-]+(\.[_a-z0-9:()-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$|i', $email);

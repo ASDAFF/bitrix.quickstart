@@ -31,8 +31,5 @@ if (file_exists(__DIR__ . '/include/handlers.php'))
 // BitrixHelper
 require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/vendor/bitrix-helper/src/autoload.php');
 
-// Helpers Function
-require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/helpers/helpers.function.php');
-
 // Окружение
 require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/helpers/environment.php');

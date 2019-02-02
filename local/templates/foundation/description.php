@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>"Foundation front-end framework", "DESCRIPTION"=>"Foundation by ZURB is the most advanced responsive front-end framework in the world.");?>

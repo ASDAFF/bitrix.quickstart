@@ -9,7 +9,7 @@
 namespace Cpeople\Classes\Base;
 
 
-class Object
+class ObjectBaseClass
 {
     protected $data;
 

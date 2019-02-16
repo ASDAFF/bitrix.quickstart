@@ -1,0 +1,50 @@
+
+#bx-admin-prefix .aat-iblockprops-list {
+    background: #ffffff;    
+    border: 1px solid;
+    border-color: #87919c #959ea9 #9ea7b1 #959ea9;
+    border-radius: 4px;
+    -webkit-box-shadow:0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    box-shadow:0 1px 0 0 rgba(255,255,255,0.3), inset 0 2px 2px -1px rgba(180,188,191,0.7);
+    margin: 0;
+    padding: 0 10px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#bx-admin-prefix .aat-iblockprops-list li{
+    list-style: none;
+    margin: 4px 0;
+}
+
+#bx-admin-prefix .aat-iblockprops-list li input[type=checkbox],
+#bx-admin-prefix .aat-iblockprops-list li input[type=radio]{
+    cursor: pointer;
+}
+
+#bx-admin-prefix .aat-iblockprops-list.aat-iblockprops-multy li{
+    margin: 7px 0;
+}
+
+#bx-admin-prefix .aat-iblockprops-list li label.parent {
+    border-bottom: 1px dotted;
+    cursor: pointer;
+}
+
+#bx-admin-prefix .aat-iblockprops-list li ul{
+    padding: 0 0 0 20px;
+}
+
+#bx-admin-prefix .aat-iblockprops-list li ul{
+    display: none;
+}
+
+#bx-admin-prefix .aat-iblockprops-list + .reset{
+    margin: 5px 0;
+}
+
+#bx-admin-prefix .aat-iblockprops-list + .reset span{
+    cursor: pointer;
+    border-bottom: 1px dotted;
+}

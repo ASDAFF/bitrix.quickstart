@@ -6,7 +6,7 @@
  * Time: 13:50
  */
 
-namespace Cpeople\Classes\Search;
+namespace Search;
 
 
 class SearchException extends \Exception

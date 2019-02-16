@@ -1,8 +1,8 @@
 <?php
 
-namespace Cpeople\Classes\Section;
+namespace Section;
 
-class Getter extends \Cpeople\Classes\Base\Getter
+class Getter extends \Base\Getter
 {
     protected $arOrder = array('SORT' => 'asc');
     protected $arFilter = null;
@@ -10,7 +10,7 @@ class Getter extends \Cpeople\Classes\Base\Getter
     protected $arSelectFields = null;
     protected $bIncCnt = false;
     protected $bAddUFToSelect = true;
-    protected $className = '\Cpeople\Classes\Section\Object';
+    protected $className = '\Section\ObjectSection';
 
     /**
      * @static
@@ -77,11 +77,11 @@ class Getter extends \Cpeople\Classes\Base\Getter
     }
 
     /**
-     * @return \Cpeople\Classes\Section\Object[]
+     * @return \Section\Object[]
      */
     public function get()
     {
-        if (\Cpeople\Classes\Registry::bitrixCacheEnabled() && ($retval = $this->getCachedResult()))
+        if (\Registry::bitrixCacheEnabled() && ($retval = $this->getCachedResult()))
         {
             return $retval;
         }
@@ -132,7 +132,7 @@ class Getter extends \Cpeople\Classes\Base\Getter
             }
         }
 
-        if (\Cpeople\Classes\Registry::bitrixCacheEnabled())
+        if (\Registry::bitrixCacheEnabled())
         {
             $this->cacheResult($retval);
         }

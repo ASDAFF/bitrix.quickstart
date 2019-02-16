@@ -1,6 +1,6 @@
 <?php
 
-namespace Cpeople\Classes\Services;
+namespace Services;
 
 
 class YandexSpeller

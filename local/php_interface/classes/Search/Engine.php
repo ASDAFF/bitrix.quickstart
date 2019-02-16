@@ -6,13 +6,13 @@
  * Time: 13:47
  */
 
-namespace Cpeople\Classes\Search;
+namespace Search;
 
 
 class Engine
 {
-    protected $defaultClassName = '\Cpeople\Classes\Search\Result';
-    protected $className = '\Cpeople\Classes\Search\Result';
+    protected $defaultClassName = '\Search\Result';
+    protected $className = '\Search\Result';
     protected $modulesList = array();
     protected $tryInvertedLayout = false;
     protected $tryYandexSpeller = false;
@@ -34,7 +34,7 @@ class Engine
      * @param null $query
      * @param null $offset
      * @param null $limit
-     * @return \Cpeople\Classes\Search\Result[];
+     * @return \Search\Result[];
      */
     public function makeSearch($query = null, $offset = null, $limit = null)
     {
@@ -71,7 +71,7 @@ class Engine
      * @param null $query
      * @param null $offset
      * @param null $limit
-     * @return \Cpeople\Classes\Search\Result[];
+     * @return \Search\Result[];
      */
     public function search($query = null, $offset = null, $limit = null)
     {
@@ -345,7 +345,7 @@ class Engine
 
     protected function makeYandexSpeller($query)
     {
-        return \Cpeople\Classes\Services\YandexSpeller::correctText($query);
+        return \Services\YandexSpeller::correctText($query);
     }
 
     public function setPageSize($size)
@@ -372,7 +372,7 @@ class Engine
 
     /**
      * @param $urlTemplate
-     * @return \Cpeople\paging
+     * @return \Paging
      */
     public function getPagingObject($urlTemplate)
     {
@@ -381,7 +381,7 @@ class Engine
             $this->total = $this->getFoundRows($this->query);
         }
 
-        $paging = new \Cpeople\paging($this->arNavStartParams['iNumPage'], $this->total, $this->arNavStartParams['nPageSize']);
+        $paging = new \Paging($this->arNavStartParams['iNumPage'], $this->total, $this->arNavStartParams['nPageSize']);
         $paging->setFormat($urlTemplate);
 
         return $paging;

@@ -1,15 +1,20 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Администратор
+ * Date: 17.03.14
+ * Time: 9:47
+ */
 
-namespace Infoblock;
+namespace Base;
 
-class Field {
 
+class ObjectBase
+{
     protected $data;
 
-    public function __construct($key, $data = array())
+    public function __construct($data = array())
     {
-        $data['CODE'] = $key;
-
         if (!is_array($data))
         {
             throw new \Exception('Argument should be an array to ' . __METHOD__);
@@ -32,4 +37,24 @@ class Field {
             ' line ' . $trace[0]['line'], E_USER_NOTICE
         );
     }
-}
+
+    public function unescape($name)
+    {
+        return html_entity_decode($this->{$name});
+    }
+
+    public function escape($name)
+    {
+        return $this->escaped($name);
+    }
+
+    public function escaped($name)
+    {
+        return htmlspecialchars($this->{$name});
+    }
+
+    public function getData()
+    {
+        return $this->data;
+    }
+} 

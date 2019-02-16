@@ -6,7 +6,7 @@
  * Time: 13:47
  */
 
-namespace Cpeople\Classes\Search;
+namespace Search;
 
 
 class Result
@@ -108,7 +108,7 @@ class Result
     }
 
     /**
-     * @return \Cpeople\Classes\Block\Object|\Cpeople\Classes\Section\Object
+     * @return \Block\Object|\Section\Object
      */
     public function getElement()
     {
@@ -120,11 +120,11 @@ class Result
             if($isSection)
             {
                 $itemId = substr($itemId, 1);
-                $instance = \Cpeople\Classes\Section\Getter::instance();
+                $instance = \Section\Getter::instance();
             }
             else
             {
-                $instance = \Cpeople\Classes\Block\Getter::instance();
+                $instance = \Block\Getter::instance();
             }
 
             $this->element = $instance->getById($itemId);

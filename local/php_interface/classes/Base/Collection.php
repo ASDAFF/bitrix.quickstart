@@ -6,7 +6,7 @@
  * Time: 9:39
  */
 
-namespace Cpeople\Classes\Base;
+namespace Base;
 
 class Collection implements \Countable, \ArrayAccess, \SeekableIterator
 {

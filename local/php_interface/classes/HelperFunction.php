@@ -638,7 +638,7 @@ JS;
         static $list;
 
         if (!isset($list)) {
-            $list = \Cpeople\Classes\Block\Getter::instance()
+            $list = \Block\Getter::instance()
                 ->addFilter('IBLOCK_TYPE', 'texts')
                 ->setClassName('MultilangDummy')
                 ->get();
@@ -809,8 +809,8 @@ JS;
     }
 
     /**
-     * Фунцкция принимает список инфоблоков \Cpeople\Classes\Block\Object,
-     * делает выборку разделов и возвращает список разделов \Cpeople\Classes\Section\Object
+     * Фунцкция принимает список инфоблоков \Block\ObjectBlock,
+     * делает выборку разделов и возвращает список разделов \Section\ObjectSection
      * с полем elements, содержащим инфорблоки
      *
      * @param $iblocks
@@ -822,7 +822,7 @@ JS;
 
         $sectionsIds = array();
 
-        $list = new \Cpeople\Classes\Block\Collection($iblocks);
+        $list = new \Block\Collection($iblocks);
 
         foreach ($list as $item) {
             $sectionsIds[] = $item->iblock_section_id;
@@ -830,7 +830,7 @@ JS;
 
         if (empty_array($sectionsIds)) return false;
 
-        $sections = \Cpeople\Classes\Section\Getter::instance()->setFilter(array(
+        $sections = \Section\Getter::instance()->setFilter(array(
             'ID' => $sectionsIds
         ))->checkPermissions(false)->get();
 
@@ -845,10 +845,10 @@ JS;
     {
         $dates = array();
 
-        \Cpeople\Classes\Block\Getter::instance()
+        \Block\Getter::instance()
             ->setOrder(array('DATE_ACTIVE_FROM' => 'DESC'))
             ->setFilter($filter)
-            ->setHydrationMode(\Cpeople\Classes\Block\Getter::HYDRATION_MODE_ARRAY)
+            ->setHydrationMode(\Block\Getter::HYDRATION_MODE_ARRAY)
             ->setSelectFields(array('DATE_ACTIVE_FROM'))
             ->addCallback(function ($element) use (&$dates) {
                 $timestamp = strtotime($element['ACTIVE_FROM']);

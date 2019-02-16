@@ -6,7 +6,7 @@
  * Time: 12:00
  */
 
-namespace Cpeople\Classes\Cache;
+namespace Cache;
 
 interface Engine
 {

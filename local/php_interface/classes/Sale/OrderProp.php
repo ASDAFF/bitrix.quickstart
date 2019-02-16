@@ -1,5 +1,5 @@
 <?
-namespace Cpeople\Classes\Sale;
+namespace Sale;
 
 class OrderProp
 {

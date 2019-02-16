@@ -1,5 +1,4 @@
 <?php
-namespace HBlock;
 
 use Bitrix\Highloadblock\HighloadBlockTable;
 use Bitrix\Main\Entity\Query;

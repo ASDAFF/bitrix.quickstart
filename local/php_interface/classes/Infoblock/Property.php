@@ -2,20 +2,28 @@
 
 namespace Infoblock;
 
-class Field {
-
+class Property extends \Base\ObjectBase
+{
     protected $data;
+    protected $options;
 
-    public function __construct($key, $data = array())
+    public function getOptions()
     {
-        $data['CODE'] = $key;
-
-        if (!is_array($data))
+        if (!isset($this->options))
         {
-            throw new \Exception('Argument should be an array to ' . __METHOD__);
+            $res = \CIBlockProperty::GetPropertyEnum(
+                $this->data['ID'],
+                Array("SORT"=>"asc"),
+                Array()
+            );
+
+            while ($row = $res->Fetch())
+            {
+                $this->options[] = $row;
+            }
         }
 
-        $this->data = $data;
+        return $this->options;
     }
 
     public function __get($name)

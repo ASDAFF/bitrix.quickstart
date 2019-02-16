@@ -29,7 +29,10 @@ if (file_exists(__DIR__ . '/include/handlers.php'))
     require_once(__DIR__ . '/include/handlers.php');
 
 // BitrixHelper
-require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/vendor/bitrix-helper/src/autoload.php');
+if (file_exists(__DIR__ . '/vendor/bitrix-helper/src/autoload.php'))
+    require_once(__DIR__ . '/vendor/bitrix-helper/src/autoload.php');
+
 
 // Окружение
-require_once($_SERVER['DOCUMENT_ROOT'].'/local/php_interface/helpers/environment.php');
+if (file_exists(__DIR__ . '/vendor/bitrix-helper/src/autoload.php'))
+    require_once(__DIR__ . '/helpers/environment.php');

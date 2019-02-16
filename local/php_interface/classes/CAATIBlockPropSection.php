@@ -6,6 +6,9 @@
  * Time: 20:26
  *
  * Удобная привязка к разделам инфоблока
+ *
+ * JS и CSS находятся в директории /bitrix/js/aat.iblockprops/ и /bitrix/css/aat.iblockprops/
+ *
  */
 
 class CAATIBlockPropSection

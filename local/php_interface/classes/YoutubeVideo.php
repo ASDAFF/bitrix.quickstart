@@ -6,7 +6,12 @@
  * Time: 0:50
  */
 
-// Класс для работы с видео Youtube
+
+/**
+ * Class YoutubeVideo
+ *
+ * Класс для работы с видео Youtube
+ */
 class YoutubeVideo
 {
     function __construct($video)

@@ -34,3 +34,22 @@ https://marketplace.1c-bitrix.ru/solutions/fgsoft.propmedia/
 ![alt-текст](img_md/2016-10-13_15-09-04.png "1")
 ![alt-текст](img_md/2016-10-13_15-13-07.png "1")
 ![alt-текст](img_md/2016-10-13_15-14-45.png "1")
+
+---
+
+# Класс GetSection
+Получаем разделы и вложенные подразделы в иерархическом виде
+
+Использование: 
+
+```php
+ GetSection::getSectionList(Array('IBLOCK_ID' => 'ID инфоблока'), Array('NAME','SECTION_PAGE_URL'));
+```
+
+---
+
+# Класс HelperFunctionGetSection
+Задаем формат показа размера файла
+
+---
+

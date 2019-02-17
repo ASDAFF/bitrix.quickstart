@@ -20,6 +20,12 @@ class HelperFunction
         return false;
     }
 
+    /**
+     * @return bool
+     *
+     * Распечатка массива
+     * Использование echo HelperFunction::dv($array);
+     */
     function dv()
     {
         $args = func_get_args();
@@ -30,6 +36,12 @@ class HelperFunction
         }
     }
 
+    /**
+     * @return bool
+     *
+     * Распечатка массива
+     * Использование echo HelperFunction::dvv($array);
+     */
     function dvv()
     {
         $args = func_get_args();
@@ -42,12 +54,28 @@ class HelperFunction
         }
     }
 
+    /**
+     * @param $time
+     * @param string $format
+     *
+     * Формат времени
+     * Использование HelperFunction::dt($time)
+     */
+
     function dt($time, $format = 'd.m.Y H:i:s')
     {
         foreach ((array)$time as $t) {
-            dv(date($format, $t));
+            self::dv(date($format, $t));
         }
     }
+
+    /**
+     * @param $size
+     * @param int $precision
+     * @return string
+     *
+     * Задаем формат показа размера файла
+     */
 
     function format_file_size($size, $precision = 0)
     {
@@ -65,6 +93,10 @@ class HelperFunction
         }
     }
 
+    /**
+     * @param $location
+     * @param int $timeout
+     */
     function redirect($location, $timeout = 0)
     {
         if (($timeout == 0) && (!headers_sent())) {
@@ -150,6 +182,12 @@ JS;
         }
     }
 
+    /**
+     * @param $string
+     * @param $from_encoding
+     * @param $to_encoding
+     * @return null|string|string[]
+     */
     function enconvert($string, $from_encoding, $to_encoding)
     {
         if (function_exists('mb_convert_encoding')) {
@@ -161,6 +199,12 @@ JS;
         }
     }
 
+    /**
+     * @param $filename
+     * @param $from_encoding
+     * @param $to_encoding
+     * @return bool|int
+     */
     function enconvert_file($filename, $from_encoding, $to_encoding)
     {
         return file_put_contents($filename, enconvert(file_get_contents($filename), 'CP1251', 'UTF8'));
@@ -184,6 +228,9 @@ JS;
         return str_repeat('0', $length - strlen($number)) . (int)$number;
     }
 
+    /**
+     * @return mixed
+     */
     function coalesce()
     {
         $args = func_get_args();
@@ -195,16 +242,30 @@ JS;
         return end($args);
     }
 
+    /**
+     * @param $string
+     * @param bool $allow_slash
+     * @return string
+     */
     function url_name($string, $allow_slash = false)
     {
         return trim(preg_replace('/[^a-z0-9\-_' . ($allow_slash ? '\/' : '') . ']/', '', $string), '/');
     }
 
+    /**
+     * @param $url
+     * @return string
+     */
     function url_trailing_sign($url)
     {
         return strstr($url, '?') ? '&' : '?';
     }
 
+    /**
+     * @param $url
+     * @param $varnames
+     * @return null|string|string[]
+     */
     function url_rm_vars($url, $varnames)
     {
         if (!is_array($varnames)) {
@@ -219,12 +280,22 @@ JS;
         return $url;
     }
 
-    // Проверка E-mail
+
+    /**
+     * @param $email
+     * @return false|int
+     *
+     * Проверка E-mail
+     */
     function checkEmail($email)
     {
         return preg_match('|^[_a-z0-9:()-]+(\.[_a-z0-9:()-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$|i', $email);
     }
 
+    /**
+     * @param $array
+     * @return bool
+     */
     function empty_array($array)
     {
         foreach ((array)$array as $k => $v) {
@@ -258,6 +329,9 @@ JS;
         return $time ? time_borders($time, $mode) : false;
     }
 
+    /**
+     * @param bool $show
+     */
     function count_time($show = false)
     {
         static $start;
@@ -265,7 +339,7 @@ JS;
         if (!$show) {
             $start = getmicrotime();
         } else {
-            dv(getmicrotime() - $start);
+            self::dv(getmicrotime() - $start);
             $start = 0;
         }
     }
@@ -286,15 +360,15 @@ JS;
     function dm($object)
     {
         if (!is_object($object)) {
-            dv($object);
+            self::dv($object);
             return;
         }
 
-        dv(get_class($object) . ':');
+        self::dv(get_class($object) . ':');
 
         $methods = get_class_methods($object);
         sort($methods);
-        dv($methods);
+        self::dv($methods);
     }
 
     function array_split($array, $chunks = 2, $preserveKeys = false)

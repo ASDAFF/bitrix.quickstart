@@ -6,6 +6,6 @@ class MultilangDummy extends Block\ObjectBlock
 
     public function getLangTitle()
     {
-        return coalesce($this->getLangPropText('TITLE'), $this->name);
+        return HelperFunction::coalesce($this->getLangPropText('TITLE'), $this->name);
     }
 }

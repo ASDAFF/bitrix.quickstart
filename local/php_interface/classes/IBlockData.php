@@ -4,6 +4,7 @@
  * User: ASDAFF
  * Date: 16.05.2018
  * Time: 21:36
+ *
  * Class name: IBlockData
  * Script URI: http://www.verstaem.com/examples/bitrix_start/IBlockData.php
  * Description: Class for getting iblock id by code

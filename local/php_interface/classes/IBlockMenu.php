@@ -8,6 +8,11 @@
 
 class IBlockMenu
 {
+    /**
+     * @param $a
+     * @param $b
+     * @return int
+     */
     function sort($a, $b) {
         if ($a['SORT'] == $b['SORT']) {
             if ($a['ID'] == $b['ID']) return 0;
@@ -15,6 +20,15 @@ class IBlockMenu
         }
         return ($a['SORT'] < $b['SORT']) ? -1 : 1;
     }
+
+    /**
+     * @param $arMenu
+     * @param $id
+     * @param $level
+     * @param $aMenuLinks
+     * @param $arParams
+     * @return bool
+     */
 
     function display($arMenu, $id, $level, &$aMenuLinks, $arParams) {
         if (!isset($arMenu[$id])) return false;

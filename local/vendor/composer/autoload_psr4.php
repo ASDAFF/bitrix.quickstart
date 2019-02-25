@@ -7,12 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Vendor\\Namespace\\' => array('/local/php_interface/classes'),
-    'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
-    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
-    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
-    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Maximaster\\' => array($vendorDir . '/maximaster/tools.events/src/Maximaster'),
-    'DebugBar\\' => array($vendorDir . '/maximebf/debugbar/src/DebugBar'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
-    'Akop\\' => array($vendorDir . '/aak74/bx-data/src'),
 );

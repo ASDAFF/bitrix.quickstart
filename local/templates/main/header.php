@@ -25,10 +25,19 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     $APPLICATION->ShowLink("canonical", null, false);
 
     //Тут стили шаблона сайта
-    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . '/css/style.css');
-
-    //Custom styles for this template
+    // Bootstrap core CSS
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
+
+    // Animate.css
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'animate.min.css');
+
+    // FancyBox CSS
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'jquery.fancybox.min.css');
+
+    // Owl Carousel
+    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'owl.carousel.min.css');
+
+    // Custom styles for this template
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'global.css');
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'responsive.css');
 
@@ -48,18 +57,24 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     //CJSCore::Init(array('jquery'));
 
     //Тут скрипты
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/uikit/core.min.js');
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . '/js/uikit/grid.min.js');
-
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'modernizr.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'bootstrap.min.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'ie10-viewport-bug-workaround.js'); // IE10 viewport hack for Surface/desktop Windows 8 bug
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'velocity.min.js');
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.appear.js');
+    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.fancybox.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
 
     //Тут выводим скрипты
     $APPLICATION->ShowHeadStrings();
     $APPLICATION->ShowHeadScripts();
     ?>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>

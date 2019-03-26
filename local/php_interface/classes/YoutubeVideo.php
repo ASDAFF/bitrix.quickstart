@@ -11,6 +11,11 @@
  * Class YoutubeVideo
  *
  * Класс для работы с видео Youtube
+ *
+ * Использование:
+ * $youtube = new YoutubeVideo($arItem["PROPERTIES"]["VIDEO"]["VALUE"]);
+ * $img = $youtube->GetPreview();
+ *
  */
 class YoutubeVideo
 {
@@ -39,6 +44,20 @@ class YoutubeVideo
             $image = 'http://img.youtube.com/vi/' . $prefix . '/0.jpg';
             $arFile = CFile::MakeFileArray($image); // функция Битрикс
             return $arFile;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public function GetPreview()
+    {
+        $prefix = $this->Prefix();
+        if ($prefix)
+        {
+            $preview = 'https://img.youtube.com/vi/' . $prefix . '/mqdefault.jpg';
+            return $preview;
         }
         else
         {

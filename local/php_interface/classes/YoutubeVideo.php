@@ -39,28 +39,34 @@ class YoutubeVideo
     public function GetImage()
     {
         $prefix = $this->Prefix();
-        if ($prefix)
-        {
+        if ($prefix) {
             $image = 'http://img.youtube.com/vi/' . $prefix . '/0.jpg';
             $arFile = CFile::MakeFileArray($image); // функция Битрикс
             return $arFile;
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
-    public function GetPreview()
+    /**
+     * $size = default -- default.jpg width=120, height=90
+     * $size = mqdefault -- mqdefault.jpg width=320 height=180
+     * $size = hqdefault -- hqdefault.jpg width=480 height=360
+     * $size = sddefault -- sddefault.jpg width=640 height=480
+     * $size = maxresdefault -- maxresdefault.jpg
+     */
+
+    public function GetPreview($size)
     {
         $prefix = $this->Prefix();
-        if ($prefix)
-        {
-            $preview = 'https://img.youtube.com/vi/' . $prefix . '/mqdefault.jpg';
-            return $preview;
+        if (empty($size)) {
+            $size = 'default';
         }
-        else
-        {
+
+        if ($prefix) {
+            $preview = 'https://img.youtube.com/vi/' . $prefix . '/' . $size . '.jpg';
+            return $preview;
+        } else {
             return false;
         }
     }
@@ -68,13 +74,10 @@ class YoutubeVideo
     public function GetLink()
     {
         $prefix = $this->Prefix();
-        if ($prefix)
-        {
+        if ($prefix) {
             $video = 'https://www.youtube.com/embed/' . $prefix . '';
             return $video;
-        }
-        else
-        {
+        } else {
             return false;
         }
     }

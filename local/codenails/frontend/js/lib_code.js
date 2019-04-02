@@ -15,7 +15,6 @@ function checkInput(){
     });
 }
 
-
 // Функция подсветки незаполненных полей
 function lightEmpty(){
     $('form').find('.empty_field').css({'border-color':'#d8512d'});
@@ -24,7 +23,6 @@ function lightEmpty(){
         $('form').find('.empty_field').removeAttr('style');
     },500);
 }
-
 
 // Проверка E-Mail по маске
 function validEmail(mail) {
@@ -36,7 +34,6 @@ function validEmail(mail) {
         return false;
     }
 }
-
 
 //Проверка значения поля на наличие одного или более символов
 function isNotEmpty(elem) {
@@ -52,13 +49,11 @@ function isNotEmpty(elem) {
     }
 }
 
-
 //Функция вызова всплывающего окна popup (работает совместно с плагином fancybox)
 function popUp() {
     $.fancybox.open('<div class="lightbox thanks-popup" id="popup03"><span class="title">Заявка отправлена</span><p>В ближайшее время с вами свяжется наш менеджер.</p></div>');
     $('.consult-form').trigger('reset');
 }
-
 
 // Проверка в режиме реального времени
 setInterval(function(){
@@ -78,7 +73,6 @@ setInterval(function(){
     }
 },500);
 
-
 // Событие клика по кнопке отправить
 $('form').find('.btn_submit').click(function(){
     if($(this).hasClass('disabled')){
@@ -90,7 +84,6 @@ $('form').find('.btn_submit').click(function(){
         $('form').submit();
     }
 });
-
 
 /* (работает совместно с плагином jquery.validate.js)
  * http://jqueryvalidation.org/

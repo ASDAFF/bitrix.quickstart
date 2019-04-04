@@ -55,5 +55,5 @@ $APPLICATION->SetTitle("Персональный раздел");
 		"USER_PROPERTY_PRIVATE" => array(),
 		"USE_AJAX_LOCATIONS_PROFILE" => "N"
 	)
-);?><br>
-	<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -49,7 +49,7 @@
 	</form>
 
 	<?
-		$APPLICATION->IncludeComponent("electro:sale.viewed.product", "profile", array(
+		$APPLICATION->IncludeComponent("user:sale.viewed.product", "profile", array(
 		   "VIEWED_COUNT" => "12",
 		   "VIEWED_NAME" => "Y",
 		   "VIEWED_IMAGE" => "Y",

@@ -6,7 +6,6 @@
  * Time: 0:50
  */
 
-
 /**
  * Class YoutubeVideo
  *
@@ -17,6 +16,7 @@
  * $img = $youtube->GetPreview();
  *
  */
+
 class YoutubeVideo
 {
     function __construct($video)

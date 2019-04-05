@@ -26,4 +26,4 @@ define('PATH_TEMPLATE_CSS', '/local/codenails/frontend/css/');                  
 define('PATH_TEMPLATE_JS', '/local/codenails/frontend/js/');                    //путь до файлов со js скриптами
 define('SITE_PATH_LIB', '/local/codenails/frontend/lib/');                      //путь до файлов библиотек
 define('PATH_INCLUDE', '/include/');                                            //путь до включаемых областей
-define('PATH_AJAX', '/local/codenails/ajax/');                                  //путь до директории ajax
+define('PATH_AJAX', '/local/ajax/');                                            //путь до директории ajax

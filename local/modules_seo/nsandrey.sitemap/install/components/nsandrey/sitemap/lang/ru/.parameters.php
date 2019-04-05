@@ -1,7 +1,0 @@
-<?
-$MESS["NSANDREY_SITEMAP_VSE_NASTROYKI"] = "Все настройки";
-$MESS["NSANDREY_SITEMAP_NET"] = "Нет --";
-$MESS["NSANDREY_SITEMAP_AKTIVNOSTQ_RAZDELOV"] = "Активность разделов";
-$MESS["NSANDREY_SITEMAP_NAZVANIA_RAZDELOV"] = "Названия разделов";
-$MESS["NSANDREY_SITEMAP_NASTROYKA_RAZDELOV"] = "Настройка разделов";
-?>

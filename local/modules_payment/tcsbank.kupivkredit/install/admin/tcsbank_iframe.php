@@ -1,1 +1,0 @@
-<?require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/tcsbank.kupivkredit/admin/tcsbank_iframe.php");?>

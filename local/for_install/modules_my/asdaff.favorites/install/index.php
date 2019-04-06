@@ -4,7 +4,7 @@ IncludeModuleLangFile(__FILE__);
 
 Class asdaff_favorite extends CModule
 {
-    var $MODULE_ID = "asdaff.favorite";
+    var $MODULE_ID = "asdaff.favorites";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -38,8 +38,8 @@ Class asdaff_favorite extends CModule
 	function InstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		RegisterModule("asdaff.favorite");
-		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/asdaff.favorite/install/db/".$DBType."/install.sql");
+		RegisterModule("asdaff.favorites");
+		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/asdaff.favorites/install/db/".$DBType."/install.sql");
 		return TRUE;
 	}
 
@@ -55,7 +55,7 @@ Class asdaff_favorite extends CModule
 
 	function InstallFiles()
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorite/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorites/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		return TRUE;
 	}
 
@@ -68,8 +68,8 @@ Class asdaff_favorite extends CModule
 	function UnInstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/asdaff.favorite/install/db/".$DBType."/uninstall.sql");
-		UnRegisterModule("asdaff.favorite");
+		$DB->RunSQLBatch($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/asdaff.favorites/install/db/".$DBType."/uninstall.sql");
+		UnRegisterModule("asdaff.favorites");
 		return TRUE;
 	}
 
@@ -101,7 +101,7 @@ Class asdaff_favorite extends CModule
 		$keyGoodOptions = $this->InstallOptions();
 		$keyGoodFiles = $this->InstallFiles();
 		$keyGoodPublic = $this->InstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorite/install/install.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorites/install/install.php");
     }
 
     function DoUninstall()
@@ -112,6 +112,6 @@ Class asdaff_favorite extends CModule
 		$keyGoodOptions = $this->UnInstallOptions();
 		$keyGoodDB = $this->UnInstallDB();
 		$keyGoodPublic = $this->UnInstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorite/install/uninstall.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/asdaff.favorites/install/uninstall.php");
     }
 }

@@ -3,7 +3,7 @@ global $DBType, $DB, $MESS, $APPLICATION;
 IncludeModuleLangFile(__FILE__);
 
 CModule::AddAutoloadClasses(
-	"asdaff.favorite",
+	"asdaff.favorites",
 	array(
 		"CAPIFavorite" => "classes/".$DBType."/favorite.php",
 	)

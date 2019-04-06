@@ -1,3 +1,3 @@
 <?
-$MESS ['ASD_CORE_FAVORITE'] = "Избранное";
+$MESS ['ASDAFF_CORE_FAVORITE'] = "Избранное";
 ?>

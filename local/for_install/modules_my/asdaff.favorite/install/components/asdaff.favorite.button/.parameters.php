@@ -5,7 +5,7 @@ if (!CModule::IncludeModule("asdaff.favorite"))
 	return;
 
 $arTypes = array();
-$rsTypes = CFavorite::GetTypes();
+$rsTypes = CMFavorite::GetTypes();
 while ($arType = $rsTypes->GetNext())
 	$arTypes[$arType["CODE"]] = $arType["NAME"];
 
@@ -13,34 +13,34 @@ $arComponentParameters = array(
 	"PARAMETERS" => array(
 		"FAV_TYPE" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_FAV_TYPE"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_FAV_TYPE"),
 			"TYPE" => "LIST",
 			"VALUES" => $arTypes,
 		),
 		"BUTTON_TYPE" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_BUTTON_TYPE"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_BUTTON_TYPE"),
 			"TYPE" => "LIST",
-			"VALUES" => array("fav" => GetMessage("ASD_CMP_PARAM_BUTTON_TYPE_FAV"), "lik" => GetMessage("ASD_CMP_PARAM_BUTTON_TYPE_LIK")),
+			"VALUES" => array("fav" => GetMessage("ASDAFF_CMP_PARAM_BUTTON_TYPE_FAV"), "lik" => GetMessage("ASDAFF_CMP_PARAM_BUTTON_TYPE_LIK")),
 		),
 		"ELEMENT_ID" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_ELEMENT_ID"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_ELEMENT_ID"),
 			"TYPE" => "STRING",
 		),
 		"GET_COUNT_AFTER_LOAD" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_GET_COUNT_AFTER_LOAD"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_GET_COUNT_AFTER_LOAD"),
 			"TYPE" => "CHECKBOX",
 		),
 		"SET_COUNT" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_SET_COUNT"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_SET_COUNT"),
 			"TYPE" => "STRING",
 		),
 		"FAVED" => array(
 			"PARENT" => "BASE",
-			"NAME" => GetMessage("ASD_CMP_PARAM_FAVED"),
+			"NAME" => GetMessage("ASDAFF_CMP_PARAM_FAVED"),
 			"TYPE" => "STRING",
 		),
 	    ),

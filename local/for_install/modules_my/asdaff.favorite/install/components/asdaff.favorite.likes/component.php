@@ -5,12 +5,12 @@ CPageOption::SetOptionString('main', 'nav_page_in_session', 'N');
 
 if (!$USER->IsAuthorized() && $arParams['USER_ID']<=0)
 {
-	$APPLICATION->ShowAuthForm(GetMessage('ASD_CMP_NOT_AUTH'));
+	$APPLICATION->ShowAuthForm(GetMessage('ASDAFF_CMP_NOT_AUTH'));
 	return;
 }
 if (!CModule::IncludeModule('asdaff.favorite'))
 {
-	ShowError(GetMessage('ASD_CMP_NOT_INSTALLED'));
+	ShowError(GetMessage('ASDAFF_CMP_NOT_INSTALLED'));
 	return;
 }
 if ($arParams['NOT_SHOW_WITH_NOT_FOLDER']=='Y' && $arParams['FOLDER_ID']<=0)
@@ -37,12 +37,12 @@ if ($arParams['PREVIEW_HEIGHT'] <= 0)
 
 if ($_REQUEST['del']>0 && check_bitrix_sessid())
 {
-    CFavorite::UnLike($_REQUEST['del'], $arParams['FAV_TYPE']);
+    CMFavorite::UnLike($_REQUEST['del'], $arParams['FAV_TYPE']);
 	LocalRedirect($APPLICATION->GetCurPageParam('', array('a', 'sessid', 'del')));
 }
 if ($_REQUEST['move']>0 && $_REQUEST['moveto']>0 && check_bitrix_sessid())
 {
-    CFavorite::MoveLike($_REQUEST['move'], $arParams['FAV_TYPE'], $_REQUEST['moveto']);
+    CMFavorite::MoveLike($_REQUEST['move'], $arParams['FAV_TYPE'], $_REQUEST['moveto']);
 	LocalRedirect($APPLICATION->GetCurPageParam('', array('a', 'sessid', 'move', 'moveto')));
 }
 
@@ -50,18 +50,18 @@ $arResult = array(
 				'FAVS' => array(),
 				'FOLDERS' => array(),
 				'CURRENT_FOLDER' => array(),
-				'TYPE' => CFavorite::GetType($arParams['FAV_TYPE'])->Fetch(),
+				'TYPE' => CMFavorite::GetType($arParams['FAV_TYPE'])->Fetch(),
 				'CAN_EDIT' => $USER->GetID()==$arParams['USER_ID'] ? 'Y' : 'N');
 $arFilter = array('CODE' => $arParams['FAV_TYPE'], 'USER_ID' => $arParams['USER_ID']);
 if ($arParams['FOLDER_ID'] > 0)
 	$arFilter['FOLDER_ID'] = $arParams['FOLDER_ID'];
-$rsLikes = CFavorite::GetLikes($arFilter);
+$rsLikes = CMFavorite::GetLikes($arFilter);
 while ($arLikes = $rsLikes->Fetch())
 	$arResult['FAVS'][$arLikes['ELEMENT_ID']] = array();
 
 if ($arParams['FOLDER_ID'] > 0)
 {
-	$arResult['FOLDERS'] = CFavorite::GetFolders($arParams['FAV_TYPE'], $arParams['USER_ID']);
+	$arResult['FOLDERS'] = CMFavorite::GetFolders($arParams['FAV_TYPE'], $arParams['USER_ID']);
 	if (isset($arResult['FOLDERS'][$arParams['FOLDER_ID']]))
 		$arResult['CURRENT_FOLDER'] = $arResult['FOLDERS'][$arParams['FOLDER_ID']];
 }

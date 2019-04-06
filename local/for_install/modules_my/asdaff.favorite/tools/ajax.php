@@ -26,11 +26,11 @@ if ((check_bitrix_sessid() || $bNotCheckSess) && CModule::IncludeModule('asdaff.
 			$_REQUEST['folder_' . $i] = $APPLICATION->ConvertCharset($_REQUEST['folder_' . $i], 'UTF-8', $_REQUEST['charset']);
 	}
 	if ($_REQUEST['action'] == 'add')
-		echo intval(CFavorite::AddFolder(array('NAME' => substr($_REQUEST['name'], 0, $_REQUEST['maxchars']), 'CODE' => $_REQUEST['type'])));
+		echo intval(CMFavorite::AddFolder(array('NAME' => substr($_REQUEST['name'], 0, $_REQUEST['maxchars']), 'CODE' => $_REQUEST['type'])));
 	elseif ($_REQUEST['action'] == 'del')
-        CFavorite::DeleteFolder($_REQUEST['id']);
+        CMFavorite::DeleteFolder($_REQUEST['id']);
 	elseif ($_REQUEST['action'] == 'default')
-        CFavorite::SetFolderDefault($USER->GetID(), $_REQUEST['type'], $_REQUEST['id']);
+        CMFavorite::SetFolderDefault($USER->GetID(), $_REQUEST['type'], $_REQUEST['id']);
 	elseif ($_REQUEST['action'] == 'like') {
 		if (CModule::IncludeModule('statistic')) {
 			if (!isset($_SESSION['ASD_FAVS_LIKES'])) {
@@ -41,8 +41,8 @@ if ((check_bitrix_sessid() || $bNotCheckSess) && CModule::IncludeModule('asdaff.
 				CStatEvent::AddCurrent('favotite', 'like', $_REQUEST['id']);
 			}
 		}
-        CFavorite::Like($_REQUEST['id'], $_REQUEST['type']);
-		$arLikes = CFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID')->GetNext();
+        CMFavorite::Like($_REQUEST['id'], $_REQUEST['type']);
+		$arLikes = CMFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID')->GetNext();
 		header('Content-type: application/json');
 		echo json_encode(array('COUNT' => intval($arLikes['CNT'])));
 	} elseif ($_REQUEST['action'] == 'unlike') {
@@ -55,8 +55,8 @@ if ((check_bitrix_sessid() || $bNotCheckSess) && CModule::IncludeModule('asdaff.
 				CStatEvent::AddCurrent('favotite', 'unlike', $_REQUEST['id']);
 			}
 		}
-        CFavorite::UnLike($_REQUEST['id'], $_REQUEST['type']);
-		$arLikes = CFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID')->GetNext();
+        CMFavorite::UnLike($_REQUEST['id'], $_REQUEST['type']);
+		$arLikes = CMFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID')->GetNext();
 		header('Content-type: application/json');
 		echo json_encode(array('COUNT' => intval($arLikes['CNT'])));
 	} elseif ($_REQUEST['action'] == 'getlike') {
@@ -74,12 +74,12 @@ if ((check_bitrix_sessid() || $bNotCheckSess) && CModule::IncludeModule('asdaff.
 				'FAVED' => false,
 			);
 		}
-		$rsLikes = CFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID');
+		$rsLikes = CMFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type']), 'ELEMENT_ID');
 		while ($arLike = $rsLikes->GetNext()) {
 			$arResult['ELEMENTS'][$arLike['ELEMENT_ID']]['COUNT'] = $arLike['CNT'];
 		}
 		if ($USER->IsAuthorized()) {
-			$rsList = CFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type'], 'USER_ID' => $USER->GetID()));
+			$rsList = CMFavorite::GetLikes(array('ELEMENT_ID' => $_REQUEST['id'], 'CODE' => $_REQUEST['type'], 'USER_ID' => $USER->GetID()));
 			while ($arLike = $rsList->GetNext()) {
 				$arResult['ELEMENTS'][$arLike['ELEMENT_ID']]['FAVED'] = true;
 			}
@@ -89,7 +89,7 @@ if ((check_bitrix_sessid() || $bNotCheckSess) && CModule::IncludeModule('asdaff.
 	} elseif ($_REQUEST['action'] == 'upd') {
 		for ($i = 0; $i < $_REQUEST['count']; $i++) {
 			list($id, $name) = explode('|', $_REQUEST['folder_' . $i]);
-            CFavorite::UpdateFolder($id, array('NAME' => substr($name, 0, $_REQUEST['maxchars'])));
+            CMFavorite::UpdateFolder($id, array('NAME' => substr($name, 0, $_REQUEST['maxchars'])));
 		}
 	}
 }

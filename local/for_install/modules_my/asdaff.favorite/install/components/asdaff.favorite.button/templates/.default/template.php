@@ -2,9 +2,9 @@
 <?= $arResult['STYLES'];?>
 <? if (!$GLOBALS['ASD_FAV_SHOWED']): ?>
     <script type="text/javascript">
-        var sTitleAddFav = '<?= CUtil::JSescape(GetMessage('ASD_TPL_ADD_' . $arParams['BUTTON_TYPE_UPP'])) ?>';
-        var sTitleDelFav = '<?= CUtil::JSescape(GetMessage('ASD_TPL_DEL_' . $arParams['BUTTON_TYPE_UPP'])) ?>';
-        var sMessDeniedGuest = '<?= CUtil::JSescape(GetMessage('ASD_TPL_DENIED_GUEST')) ?>';
+        var sTitleAddFav = '<?= CUtil::JSescape(GetMessage('ASDAFF_TPL_ADD_' . $arParams['BUTTON_TYPE_UPP'])) ?>';
+        var sTitleDelFav = '<?= CUtil::JSescape(GetMessage('ASDAFF_TPL_DEL_' . $arParams['BUTTON_TYPE_UPP'])) ?>';
+        var sMessDeniedGuest = '<?= CUtil::JSescape(GetMessage('ASDAFF_TPL_DENIED_GUEST')) ?>';
         var sType = '<?= $arParams['FAV_TYPE'] ?>';
         var sButton = '<?= $arParams['BUTTON_TYPE'] ?>';
     <? if ($arParams['GET_COUNT_AFTER_LOAD'] != 'Y'): ?>

@@ -1,7 +1,7 @@
 <?php if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 
 if ($arParams['ELEMENT_ID'] <= 0) {
-	ShowError(GetMessage('ASD_ERROR_NOT_ID'));
+	ShowError(GetMessage('ASDAFF_ERROR_NOT_ID'));
 	return;
 }
 if (!CModule::IncludeModule('asdaff.favorite')) {
@@ -21,14 +21,14 @@ $arParams['BUTTON_TYPE_UPP'] = strtoupper($arParams['BUTTON_TYPE']);
 
 if ($arParams['GET_COUNT_AFTER_LOAD'] != 'Y') {
 	if (empty($arParams['COUNT'])) {
-		$rsLikes = CFavorite::GetLikes(array('ELEMENT_ID' => $arParams['ELEMENT_ID'], 'CODE' => $arParams['FAV_TYPE']));
+		$rsLikes = CMFavorite::GetLikes(array('ELEMENT_ID' => $arParams['ELEMENT_ID'], 'CODE' => $arParams['FAV_TYPE']));
 		$arResult = array('COUNT' => $rsLikes->SelectedRowsCount(), 'FAVED' => 'N');
 	} else {
 		$arResult = array('COUNT' => $arParams['COUNT'], 'FAVED' => 'N');
 	}
 	if ($USER->IsAuthorized()) {
 		if ($arParams['FAVED'] != 'Y') {
-			if (CFavorite::GetLikes(array('ELEMENT_ID' => $arParams['ELEMENT_ID'], 'CODE' => $arParams['FAV_TYPE'], 'USER_ID' => $USER->GetID()))->Fetch()) {
+			if (CMFavorite::GetLikes(array('ELEMENT_ID' => $arParams['ELEMENT_ID'], 'CODE' => $arParams['FAV_TYPE'], 'USER_ID' => $USER->GetID()))->Fetch()) {
 				$arResult['FAVED'] = 'Y';
 			}
 		} else {

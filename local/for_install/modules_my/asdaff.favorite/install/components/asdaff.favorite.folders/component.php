@@ -21,9 +21,9 @@ if ($arParams['USER_ID'] != $USER->GetID())
 else
 	$arParams['ALLOW_EDIT'] = 'Y';
 
-$arResult = array('ITEMS' => CFavorite::GetFolders($arParams['FAV_TYPE'], $arParams['USER_ID']), 'COUNTS' => array());
+$arResult = array('ITEMS' => CMFavorite::GetFolders($arParams['FAV_TYPE'], $arParams['USER_ID']), 'COUNTS' => array());
 
-$rsLikes = CFavorite::GetLikes(array('FOLDER_ID' => array_keys($arResult['ITEMS'])), 'FOLDER_ID');
+$rsLikes = CMFavorite::GetLikes(array('FOLDER_ID' => array_keys($arResult['ITEMS'])), 'FOLDER_ID');
 while ($arLikes = $rsLikes->Fetch())
 	$arResult['COUNTS'][$arLikes['FOLDER_ID']] = $arLikes['CNT'];
 

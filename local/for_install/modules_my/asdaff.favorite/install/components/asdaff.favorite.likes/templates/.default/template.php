@@ -2,7 +2,7 @@
 
 <script type="text/javascript">
 	var sCurPage = '<?= CUtil::JSescape($APPLICATION->GetCurPageParam('a', array('a', 'sessid', 'move', 'moveto', 'del')))?>&'+'<?= bitrix_sessid_get()?>';
-	var sMessConfirmDel = '<?= CUtil::JSescape(GetMessage('ASD_TPL_FAV_DEL_CONF'))?>';
+	var sMessConfirmDel = '<?= CUtil::JSescape(GetMessage('ASDAFF_TPL_FAV_DEL_CONF'))?>';
 </script>
 
 <?if (!empty($arResult['CURRENT_FOLDER'])):?>
@@ -29,13 +29,13 @@
 		<?if ($arResult['CAN_EDIT'] == 'Y'):?>
 		<div class="asd_fav_menu">
 			<?if ($arParams['ALLOW_MOVED'] == 'Y'):?>
-			<a href="#" class="asd_fav_move" id="asd_fm_<?= $ID?>"><?= GetMessage('ASD_TPL_FAV_MOVE')?></a>
+			<a href="#" class="asd_fav_move" id="asd_fm_<?= $ID?>"><?= GetMessage('ASDAFF_TPL_FAV_MOVE')?></a>
 			<select id="asd_fs_<?= $ID?>">
 				<option val="">...</option>
 				<?= $moveOptions?>
 			</select> |
 			<?endif;?>
-			<a href="#" class="asd_fav_delete" id="asd_fd_<?= $ID?>"><?= GetMessage('ASD_TPL_FAV_DEL')?></a>
+			<a href="#" class="asd_fav_delete" id="asd_fd_<?= $ID?>"><?= GetMessage('ASDAFF_TPL_FAV_DEL')?></a>
 		</div>
 		<?endif;?>
 	</div>
@@ -48,7 +48,7 @@
 	<?endif;?>
 
 <?elseif ($arParams['FOLDER_ID'] > 0):?>
-	<?= GetMessage('ASD_TPL_FAV_EMPTY')?>
+	<?= GetMessage('ASDAFF_TPL_FAV_EMPTY')?>
 <?else:?>
-	<?= GetMessage('ASD_TPL_FAV_NOTHING')?>
+	<?= GetMessage('ASDAFF_TPL_FAV_NOTHING')?>
 <?endif;?>

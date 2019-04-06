@@ -1,9 +1,9 @@
 <?
 IncludeModuleLangFile(__FILE__);
 
-class CFavorite {
+class CMFavorite {
 
-	const mysqlError = 'MySQL Error in CFavorite on line: ';
+	const mysqlError = 'MySQL Error in CMFavorite on line: ';
 
 	public static function AddFolder($arFields) {
 		$codeOrig = trim($arFields['CODE']);
@@ -236,7 +236,7 @@ class CFavorite {
 		if ($arDef = $GLOBALS['DB']->Query("SELECT ID FROM b_asdaff_favorite_folders WHERE USER_ID=$UID AND CODE='$CODE' AND `DEFAULT`='Y';")->Fetch())
 			$FOLDER_ID = $arDef['ID'];
 		else
-			$FOLDER_ID = self::AddFolder(array('NAME' => GetMessage('ASD_CORE_FAVORITE'), 'CODE' => $CODE, 'USER_ID' => $UID, 'DEFAULT' => 'Y'));
+			$FOLDER_ID = self::AddFolder(array('NAME' => GetMessage('ASDAFF_CORE_FAVORITE'), 'CODE' => $CODE, 'USER_ID' => $UID, 'DEFAULT' => 'Y'));
 
 		if (!self::GetType($CODE)->Fetch())
 			self::AddType(array('CODE' => $CODE, 'NAME' => $CODE));

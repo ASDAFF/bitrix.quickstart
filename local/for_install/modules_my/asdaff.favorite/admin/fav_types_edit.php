@@ -7,7 +7,7 @@ if (!$USER->IsAdmin())
 	$APPLICATION->AuthForm(GetMessage('ACCESS_DENIED'));
 
 $aTabs = array(
-	array('DIV' => 'edit1', 'TAB' => GetMessage('asd_mod_tab_1'), 'TITLE' => GetMessage('asd_mod_tab_1_title')),
+	array('DIV' => 'edit1', 'TAB' => GetMessage('asdaff_mod_tab_1'), 'TITLE' => GetMessage('asdaff_mod_tab_1_title')),
 );
 $tabControl = new CAdminTabControl('tabControl', $aTabs);
 
@@ -31,18 +31,18 @@ if(
 		$arRef = $BLOG_REF=='Y' ? array('blog') : array();
 
 	if (!strlen($NAME))
-		$error = GetMessage('asd_mod_error_required_fields');
+		$error = GetMessage('asdaff_mod_error_required_fields');
 	elseif (strlen($NEW_CODE)>0 && !preg_match('/^[a-z0-9]+$/is', $NEW_CODE))
-		$error = GetMessage('asd_mod_error_bad_code');
-	elseif (strlen($NEW_CODE)>0 && CFavorite::GetType($NEW_CODE)->Fetch())
-		$error = GetMessage('asd_mod_error_code_exist');
+		$error = GetMessage('asdaff_mod_error_bad_code');
+	elseif (strlen($NEW_CODE)>0 && CMFavorite::GetType($NEW_CODE)->Fetch())
+		$error = GetMessage('asdaff_mod_error_code_exist');
 
 	if (!strlen($error))
 	{
 		if (strlen($NEW_CODE))
-            CFavorite::AddType(array('CODE' => $NEW_CODE, 'MODULE' => $MODULE, 'NAME' => $NAME, 'REF' => $arRef));
+            CMFavorite::AddType(array('CODE' => $NEW_CODE, 'MODULE' => $MODULE, 'NAME' => $NAME, 'REF' => $arRef));
 		elseif (strlen($CODE))
-            CFavorite::UpdateType($CODE, array('NAME' => $NAME, 'REF' => $arRef));
+            CMFavorite::UpdateType($CODE, array('NAME' => $NAME, 'REF' => $arRef));
 		if (strlen($save))
 			LocalRedirect('asdaff_fav_types_list.php?lang='.LANG);
 		else
@@ -57,15 +57,15 @@ if(
 
 if (strlen($CODE)>0 && $_REQUEST['action']=='delete' && check_bitrix_sessid())
 {
-    CFavorite::DeleteType($CODE);
+    CMFavorite::DeleteType($CODE);
 	LocalRedirect('asdaff_fav_types_list.php?lang='.LANG);
 }
 
 if (strlen($CODE)>0)
-	if (!CFavorite::GetType($CODE)->ExtractFields('str_'))
+	if (!CMFavorite::GetType($CODE)->ExtractFields('str_'))
 		$CODE = '';
 	elseif (!$bVarsFromForm)
-		${strtoupper($str_MODULE)._REF} = CFavorite::GetRefType($CODE);
+		${strtoupper($str_MODULE)._REF} = CMFavorite::GetRefType($CODE);
 
 if ($bVarsFromForm)
 	$DB->InitTableVarsForEdit('b_asdaff_favorite_types', '', 'str_');
@@ -87,15 +87,15 @@ $aContext[] = array(
 if (strlen($CODE) > 0)
 {
 	$aContext[] = array(
-				'TEXT'	=> GetMessage('asd_mod_but_new'),
-				'TITLE'	=> GetMessage('asd_mod_but_new_title'),
+				'TEXT'	=> GetMessage('asdaff_mod_but_new'),
+				'TITLE'	=> GetMessage('asdaff_mod_but_new_title'),
 				'LINK'	=> 'asdaff_fav_types_edit.php?lang='.LANG,
 				'ICON'	=> 'btn_new',
 				);
 	$aContext[] = array(
-				'TEXT'	=> GetMessage('asd_mod_but_del'),
-				'TITLE'	=> GetMessage('asd_mod_but_del_title'),
-				'LINK'	=> 'javascript:if(confirm(\''.GetMessage('asd_mod_confirm_delete').'\'))window.location=\'asdaff_fav_types_edit.php?CODE='.$CODE.'&amp;action=delete&amp;'.bitrix_sessid_get().'&amp;lang='.LANG.'\';',
+				'TEXT'	=> GetMessage('asdaff_mod_but_del'),
+				'TITLE'	=> GetMessage('asdaff_mod_but_del_title'),
+				'LINK'	=> 'javascript:if(confirm(\''.GetMessage('asdaff_mod_confirm_delete').'\'))window.location=\'asdaff_fav_types_edit.php?CODE='.$CODE.'&amp;action=delete&amp;'.bitrix_sessid_get().'&amp;lang='.LANG.'\';',
 				'ICON'	=> 'btn_delete',
 				);
 }
@@ -112,7 +112,7 @@ $tabControl->Begin();
 $tabControl->BeginNextTab();
 ?>
 	<tr>
-		<td width="30%"><?if (!strlen($CODE)){?><span class="required">*</span><?}?><?= GetMessage('asd_mod_label_code')?>:</td>
+		<td width="30%"><?if (!strlen($CODE)){?><span class="required">*</span><?}?><?= GetMessage('asdaff_mod_label_code')?>:</td>
 		<td width="70%">
 			<?if (strlen($CODE) > 0):?>
 				<b><?= $str_CODE?></b>
@@ -122,22 +122,22 @@ $tabControl->BeginNextTab();
 		</td>
 	</tr>
 	<tr>
-		<td><?if (!strlen($CODE)){?><span class="required">*</span><?}?><?= GetMessage('asd_mod_label_module')?>:</td>
+		<td><?if (!strlen($CODE)){?><span class="required">*</span><?}?><?= GetMessage('asdaff_mod_label_module')?>:</td>
 		<td>
 			<?if (strlen($CODE) > 0):?>
-				<b><?= GetMessage('asd_mod_label_module_'.$str_MODULE)?></b>
+				<b><?= GetMessage('asdaff_mod_label_module_'.$str_MODULE)?></b>
 				<input type="hidden" name="MODULE" value="<?= $str_MODULE?>" />
 			<?else:?>
 				<select name="MODULE">
-					<option value="iblock"<?if ($str_MODULE == 'iblock'){?> selected="selected"<?}?>><?= GetMessage('asd_mod_label_module_iblock')?></option>
-					<option value="blog"<?if ($str_MODULE == 'blog'){?> selected="selected"<?}?>><?= GetMessage('asd_mod_label_module_blog')?></option>
-					<option value="forum"<?if ($str_MODULE == 'forum'){?> selected="selected"<?}?>><?= GetMessage('asd_mod_label_module_forum')?></option>
+					<option value="iblock"<?if ($str_MODULE == 'iblock'){?> selected="selected"<?}?>><?= GetMessage('asdaff_mod_label_module_iblock')?></option>
+					<option value="blog"<?if ($str_MODULE == 'blog'){?> selected="selected"<?}?>><?= GetMessage('asdaff_mod_label_module_blog')?></option>
+					<option value="forum"<?if ($str_MODULE == 'forum'){?> selected="selected"<?}?>><?= GetMessage('asdaff_mod_label_module_forum')?></option>
 				</select>
 			<?endif;?>
 		</td>
 	</tr>
 	<tr>
-		<td><span class="required">*</span><?= GetMessage('asd_mod_label_name')?>:</td>
+		<td><span class="required">*</span><?= GetMessage('asdaff_mod_label_name')?>:</td>
 		<td>
 			<input type="text" name="NAME" value="<?=$str_NAME?>" size="32" />
 		</td>
@@ -168,7 +168,7 @@ $tabControl->BeginNextTab();
 		usort($arIBblocks, create_function('$a, $b', 'if ($a[\'SORT\'] == $b[\'SORT\']) return 0; return ($a[\'SORT\'] < $b[\'SORT\']) ? -1 : 1;'));
 	?>
 	<tr valign="top">
-		<td><?= GetMessage('asd_mod_label_like_iblock')?>:</td>
+		<td><?= GetMessage('asdaff_mod_label_like_iblock')?>:</td>
 		<td>
 			<?
 			$s = '<select name="IBLOCK_REF[]" multiple="multiple" size="10">';
@@ -198,7 +198,7 @@ $tabControl->BeginNextTab();
 	<?endif;?>
 	<?if (strlen($CODE) && $str_MODULE=='blog'):?>
 	<tr valign="top">
-		<td><?= GetMessage('asd_mod_label_like_blog')?>:</td>
+		<td><?= GetMessage('asdaff_mod_label_like_blog')?>:</td>
 		<td><input type="checkbox" name="BLOG_REF" value="Y"<?if (is_array($BLOG_REF) && in_array('blog', $BLOG_REF)) {?> checked="checked"<?}?> /></td>
 	</tr>
 	<?endif;?>

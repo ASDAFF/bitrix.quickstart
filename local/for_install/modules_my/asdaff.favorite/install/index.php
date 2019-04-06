@@ -5,9 +5,9 @@ $PathInstall = substr($PathInstall, 0, strlen($PathInstall)-strlen('/index.php')
 IncludeModuleLangFile($PathInstall.'/install.php');
 include($PathInstall.'/version.php');
 
-if (class_exists('asd_favorite')) return;
+if (class_exists('asdaff_favorite')) return;
 
-class asd_favorite extends CModule
+class asdaff_favorite extends CModule
 {
 	var $MODULE_ID = "asdaff.favorite";
 	public $MODULE_VERSION;
@@ -34,11 +34,11 @@ class asd_favorite extends CModule
 			$this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
 		}
 
-		$this->PARTNER_NAME = GetMessage("ASD_PARTNER_NAME");
-		$this->PARTNER_URI = 'http://www.d-it.ru/solutions/modules/';
+		$this->PARTNER_NAME = GetMessage("PARTNER_NAME");
+		$this->PARTNER_URI = 'http://asdaff.ru/';
 
-		$this->MODULE_NAME = GetMessage('ASD_MODULE_FVR_NAME');
-		$this->MODULE_DESCRIPTION = GetMessage('ASD_MODULE_FVR_DESCRIPTION');
+		$this->MODULE_NAME = GetMessage('MODULE_FVR_NAME');
+		$this->MODULE_DESCRIPTION = GetMessage('MODULE_FVR_DESCRIPTION');
 	}
 
 	public function DoInstall()
@@ -49,15 +49,15 @@ class asd_favorite extends CModule
 		if (is_array($this->NEED_MODULES) && !empty($this->NEED_MODULES))
 			foreach ($this->NEED_MODULES as $module)
 				if (!IsModuleInstalled($module))
-					$this->ShowForm('ERROR', GetMessage('ASD_NEED_MODULES', array('#MODULE#' => $module)));
+					$this->ShowForm('ERROR', GetMessage('ASDAFF_NEED_MODULES', array('#MODULE#' => $module)));
 
 		if (strlen($this->NEED_MAIN_VERSION)<=0 || version_compare(SM_VERSION, $this->NEED_MAIN_VERSION)>=0)
 		{
-			RegisterModuleDependences('main', 'OnAddRatingVote', 'asdaff.favorite', 'CFavorite', 'OnAddRatingVoteHandler');
-			RegisterModuleDependences('main', 'OnUserDelete', 'asdaff.favorite', 'CFavorite', 'OnUserDeleteHandler');
-			RegisterModuleDependences('blog', 'OnPostDelete', 'asdaff.favorite', 'CFavorite', 'OnBlogPostDeleteHandler');
-			RegisterModuleDependences('iblock', 'OnIBlockElementDelete', 'asdaff.favorite', 'CFavorite', 'OnIBlockElementDeleteHandler');
-			RegisterModuleDependences('forum', 'OnAfterTopicDelete', 'asdaff.favorite', 'CFavorite', 'OnAfterTopicDeleteHandler');
+			RegisterModuleDependences('main', 'OnAddRatingVote', 'asdaff.favorite', 'CMFavorite', 'OnAddRatingVoteHandler');
+			RegisterModuleDependences('main', 'OnUserDelete', 'asdaff.favorite', 'CMFavorite', 'OnUserDeleteHandler');
+			RegisterModuleDependences('blog', 'OnPostDelete', 'asdaff.favorite', 'CMFavorite', 'OnBlogPostDeleteHandler');
+			RegisterModuleDependences('iblock', 'OnIBlockElementDelete', 'asdaff.favorite', 'CMFavorite', 'OnIBlockElementDeleteHandler');
+			RegisterModuleDependences('forum', 'OnAfterTopicDelete', 'asdaff.favorite', 'CMFavorite', 'OnAfterTopicDeleteHandler');
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/components/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/components/bitrix/', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/tools/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/tools/', true, true);
@@ -67,7 +67,7 @@ class asd_favorite extends CModule
 			$this->ShowForm('OK', GetMessage('MOD_INST_OK'));
 		}
 		else
-			$this->ShowForm('ERROR', GetMessage('ASD_NEED_RIGHT_VER', array('#NEED#' => $this->NEED_MAIN_VERSION)));
+			$this->ShowForm('ERROR', GetMessage('ASDAFF_NEED_RIGHT_VER', array('#NEED#' => $this->NEED_MAIN_VERSION)));
 	}
 
 	public function DoUninstall()
@@ -79,11 +79,11 @@ class asd_favorite extends CModule
 			$this->ShowDataSaveForm();
 		elseif ($_REQUEST['step'] == 2)
 		{
-			UnRegisterModuleDependences('main', 'OnUserDelete', 'asdaff.favorite', 'CFavorite', 'OnUserDeleteHandler');
-			UnRegisterModuleDependences('main', 'OnAddRatingVote', 'asdaff.favorite', 'CFavorite', 'OnAddRatingVoteHandler');
-			UnRegisterModuleDependences('blog', 'OnPostDelete', 'asdaff.favorite', 'CFavorite', 'OnBlogPostDeleteHandler');
-			UnRegisterModuleDependences('iblock', 'OnIBlockElementDelete', 'asdaff.favorite', 'CFavorite', 'OnIBlockElementDeleteHandler');
-			UnRegisterModuleDependences('forum', 'OnAfterTopicDelete', 'asdaff.favorite', 'CFavorite', 'OnAfterTopicDeleteHandler');
+			UnRegisterModuleDependences('main', 'OnUserDelete', 'asdaff.favorite', 'CMFavorite', 'OnUserDeleteHandler');
+			UnRegisterModuleDependences('main', 'OnAddRatingVote', 'asdaff.favorite', 'CMFavorite', 'OnAddRatingVoteHandler');
+			UnRegisterModuleDependences('blog', 'OnPostDelete', 'asdaff.favorite', 'CMFavorite', 'OnBlogPostDeleteHandler');
+			UnRegisterModuleDependences('iblock', 'OnIBlockElementDelete', 'asdaff.favorite', 'CMFavorite', 'OnIBlockElementDeleteHandler');
+			UnRegisterModuleDependences('forum', 'OnAfterTopicDelete', 'asdaff.favorite', 'CMFavorite', 'OnAfterTopicDeleteHandler');
 			DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/'.$this->MODULE_ID.'/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/');
 			DeleteDirFilesEx('/bitrix/tools/asdaff_favorite.php');
 			if ($_REQUEST['savedata'] != 'Y')
@@ -104,7 +104,7 @@ class asd_favorite extends CModule
 		$PathInstall = substr($PathInstall, 0, strlen($PathInstall)-strlen('/index.php'));
 		IncludeModuleLangFile($PathInstall.'/install.php');
 
-		$APPLICATION->SetTitle(GetMessage('ASD_MODULE_FVR_NAME'));
+		$APPLICATION->SetTitle(GetMessage('MODULE_FVR_NAME'));
 		include($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_admin_after.php');
 		echo CAdminMessage::ShowMessage(array('MESSAGE' => $message, 'TYPE' => $type));
 		?>
@@ -130,7 +130,7 @@ class asd_favorite extends CModule
 		$PathInstall = substr($PathInstall, 0, strlen($PathInstall)-strlen('/index.php'));
 		IncludeModuleLangFile($PathInstall.'/install.php');
 
-		$APPLICATION->SetTitle(GetMessage('ASD_MODULE_FVR_NAME'));
+		$APPLICATION->SetTitle(GetMessage('MODULE_FVR_NAME'));
 		include($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_admin_after.php');
 		?>
 		<form action="<?= $APPLICATION->GetCurPage()?>" method="get">

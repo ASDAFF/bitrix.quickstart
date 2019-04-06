@@ -1,0 +1,144 @@
+#da2{
+	width:980px;
+	background:url('img/bg.png') 0 0 no-repeat;
+	padding-bottom:40px;
+}
+#da2 .da2-leftblock,
+#da2 .da2-centerblock,
+#da2 .da2-rightblock{
+	float:left;
+}
+
+/* left block */
+#da2 .da2-leftblock{
+	width:300px;
+	margin:75px 20px 10px 42px;
+}
+#da2 .da2-title1{
+	font-weight:bold;
+	font-size:14px;
+	color:#2B3347;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+#da2 .da2-super_price{
+	font-weight:bold;
+	font-size:20px;
+	color:#2B3347;
+}
+#da2 .da2-super_price-price{
+	font-size:30px;
+}
+#da2 .da2-price_and_discount{
+	margin-top:9px;
+}
+#da2 .da2-price_and_discount-lp{
+	float:left;
+	font-weight:bold;
+	font-size:16px;
+	color:#2B3347;
+}
+#da2 .da2-price{
+	text-decoration: line-through;
+}
+#da2 .da2-price_and_discount-rp{
+	float:right;
+	color:white;
+	width:90px;
+	margin-right:52px;
+	text-align:center;
+	font-weight:bold;
+}
+#da2 .da2-economy{
+	font-size:20px;
+}
+
+/* center block */
+#da2 .da2-centerblock{
+	position:relative;
+	width:265px;
+	margin:75px 0px 0px 0px;
+	text-align:center;
+}
+#da2 .da-buy_link{
+	display:block;
+	position:absolute;
+	top:0px;
+	right:-52px;
+}
+
+/* right block */
+#da2 .da2-rightblock{
+	width:250px;
+	margin:75px 0px 20px 58px;
+	text-align:right;
+}
+#da2 .da2-name{
+	margin-bottom:10px;
+}
+#da2 .da2-name a{
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:10px;
+	color:black;
+	text-decoration:none;
+}
+#da2 .da2-name a:hover{
+	text-decoration:underline;
+}
+#da2 .da2-text{
+	font-size:12px;
+	color:#222;
+	font-weight:normal;
+}
+
+/* bottom block */
+#da2 .da2-bottomblock{
+	position:relative;
+	float:left;
+	width:923px;
+	height:58px;
+	margin-left:30px;
+	margin-top:4px;
+	background:url('img/progress_bar.png') 0 0 no-repeat;
+}
+#da2 .da2-already_selled{
+	float:left;
+	font-size:24px;
+	color:white;
+	width:250px;
+	text-align:center;
+	margin-top:18px;
+}
+#da2 .da2-already_selled span{
+	font-size:24px;
+}
+#da2 .da2-progress_bar{
+	position:relative;
+	float:right;
+	font-size:16px;
+	color:white;
+	width:658px;
+	height:31px;
+	margin:15px 14px 0px 0px;
+	text-align:center;
+	background:url('img/line_bg.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-line{
+	position:absolute;
+	height:31px;
+	z-index:10;
+	background:url('img/line.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-text{
+	position:absolute;
+	width:656px;
+	z-index:20;
+	top:6px;
+	text-align:center;
+}
+
+/* other */
+#da2 .da2-clear{
+	clear:both;
+}

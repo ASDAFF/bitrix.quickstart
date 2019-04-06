@@ -1,0 +1,291 @@
+#SDEK_pvz{
+	background-color : white;
+	padding          : 10px;
+	overflow         : hidden;
+	font-family      : Arial;
+	width            : 900px;
+	height           : 586px;
+}
+#SDEK_mask{
+	width            : 100%;
+	height           : 100%;
+	opacity          : 0.8;
+	position         : fixed;
+	z-index          : 2000;
+	background-color : black;
+	display          : none;
+	top              : 0px;
+	padding          : 5px
+}
+#SDEK_head{
+	height:35px;
+	clear: both;
+	padding-top: 7px;
+	position: relative;
+	top: -480px;
+}
+#SDEK_logo{
+	background  : url('/bitrix/images/ipol.sdek/widjet/logo.png') no-repeat transparent;
+	width       : 169px;
+	height      : 11px;
+}
+#SDEK_logo:hover{
+	background-position: 0px -12px;
+}
+#SDEK_logo a{
+	text-decoration : none;
+	width           : 100%;
+	height          : 100%;
+	display         : block;
+}
+#SDEK_closer{
+	position   : absolute;
+	background : url('/bitrix/images/ipol.sdek/widjet/close.png') no-repeat transparent;
+	height     : 22px;
+	width      : 22px;
+	right      : 15px;
+	top        : 18px;
+	z-index    : 1000;
+	cursor     : pointer;
+}
+#SDEK_closer:hover{
+	background-position: 0px -22px;
+}
+#SDEK_map{
+	float: left;
+	height: 500px;
+	width: 900px;
+}
+#SDEK_info{
+	float:left;
+	position:relative;
+	height: 480px;
+	overflow: hidden;
+	width: 245px;
+	color: black;
+	top: -490px;
+	left: 10px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #5D5D5D;
+}
+#SDEK_sign{
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 98px;
+	background: url('/bitrix/images/ipol.sdek/widjet/widjetLogo.png') no-repeat;
+}
+#SDEK_delivInfo_PVZ,#SDEK_delivInfo_POSTOMAT{
+	height: 30px;
+	/* font-weight: bold; */
+	font-size: 12px;
+	/* border-bottom: 1px dashed #e3e3e3; */
+	line-height: 35px;
+	padding: 0px 11px;
+	background-color: #fafafa;
+	color: #808080;
+	display: none;
+	border-top: 1px solid #e3e3e3;
+}
+#SDEK_wrapper{
+	height: 400px;
+	overflow: auto;
+	width: 245px;
+	border: none;
+	outline: none;
+	background-color: #fafafa;
+}
+#SDEK_wrapper p{
+	cursor : pointer;
+	padding: 5px 6px;
+	margin:  5px 6px;
+	font-size: 12px;
+}
+#SDEK_wrapper p span{
+	font-size: 12px;
+	white-space: nowrap;
+	display: inline-block;
+	line-height: 10px;
+}
+#SDEK_wrapper p .IPOLSDEK_subPunct{
+	width: 130px;
+	overflow: hidden;
+}
+.IPOLSDEK_subPunct_detail_PVZ, .IPOLSDEK_subPunct_detail_POSTOMAT{
+	color: #bfbfbf;
+}
+.sdek_chosen{
+	background-color : #ebebeb;
+}
+#SDEK_ten{
+	position: relative;
+	top: -5px;
+	background-color: white;
+	height: 10px;
+	box-shadow: 0 0 5px 5px white;
+	width: 235px;
+
+	opacity: 0.7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+}
+/*Переключатель режимов*/
+#SDEK_modController{
+	padding: 0px 10px;
+	padding-bottom: 10px;
+}
+.SDEK_mC_block {
+	float: left;
+	height: 30px;
+	font-size: 13px;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+	cursor: pointer;
+}
+.SDEK_mC_block.active{
+	border: 1px solid #e98535;
+	background-color: #f8ece1;
+	color: #e98535;
+}
+#SDEK_mC_ALL{
+	border-radius: 5px 0px 0px 5px;
+	width: 34px;
+}
+#SDEK_mC_PVZ{
+	width: 105px;
+}
+#SDEK_mC_POSTOMAT{
+	border-radius: 0px 5px 5px 0px;
+	width: 80px;
+}
+
+/*балун*/
+#SDEK_baloon{
+	background-color:white;
+	max-width: 258px;
+	font-family: Arial;
+	font-size: 12px;
+	padding-left: 3px;
+}
+#SDEK_baloon > div{
+	margin-top: 5px;
+}
+.sdek_baloonInfo{
+	color: #666666;
+	max-height: 80px;
+	overflow: hidden;
+}
+.sdek_baloonDiv{
+	max-width: 235px;
+	padding-left:8px;
+	float:left;
+}
+.sdek_baloonPrice{
+	height: 20px;
+	text-align: center;
+}
+.sdek_icon{
+	float:left;
+	width:12px;
+	min-height: 12px;
+	margin-top:4px;
+}
+.SDEK_iAdress{
+	margin-top: 0px !important;
+	font-size: 14px;
+}
+.SDEK_iTelephone{background: url('/bitrix/images/ipol.sdek/widjet/phone.png') no-repeat;}
+.SDEK_iTime{background: url('/bitrix/images/ipol.sdek/widjet/clock.png') no-repeat;}
+.SDEK_iPrTerm{background: url('/bitrix/images/ipol.sdek/widjet/prTerm.png') no-repeat;}
+#SDEK_button{
+	width:130px;
+	height:25px;
+	background: url('/bitrix/images/ipol.sdek/widjet/chooze.png') no-repeat;
+	display: block;
+	margin: auto;
+	text-decoration:none;
+}
+#SDEK_button:hover{
+	background-position: 0px -25px;
+}
+#SDEK_title{
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e5e5e5;
+	width: 898px;
+}
+#SDEK_title > div,#SDEK_cityPicker > div{
+	font-size: 12px;
+	font-family: Arial;
+	float:left;
+}
+#SDEK_cityPicker > div:first-child{
+	padding-top:9px;
+	margin-bottom: 10px;
+}
+#SDEK_cityPicker{
+	width: 300px;
+}
+#SDEK_citySel{
+	display:none;
+}
+#SDEK_cityName{
+	text-decoration:none;
+	border-bottom:1px dotted #007ACF;
+}
+#SDEK_cityLabel{
+	padding: 9px 12px 0px 12px;
+}
+#SDEK_cityLabel a{
+	margin-bottom: 9px;
+	color: #3366CC;
+	display:block;
+}
+#SDEK_cityLabel a:hover{
+	color: #24478F;
+	text-decoration: none !important;
+}
+#SDEK_cityLabel:hover {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.506);
+	position: absolute;
+	z-index: 100;
+}
+#SDEK_cityLabel:hover > #SDEK_citySel{
+	display: block;
+}
+#SDEK_cityLabel:hover > #SDEK_cityName{
+	text-decoration:underline;
+	border-bottom:none;
+}
+.SDEK_mark{
+	height: 32px;
+	padding-left: 460px;
+	line-height: 20px;
+	cursor: default;
+	text-align: right;
+}
+.SDEK_mark .SDEK_courierInfo{
+	float: left;
+	padding: 0px 2px;
+}
+#SDEK_logoPlace{
+	width: 300px;
+	height: 38px;
+	background-image: url("/bitrix/images/ipol.sdek/SDEKogo.png");
+	background-repeat:no-repeat;
+	background-position: 241px 2px;
+}
+#SDEK_separator{
+	background-color: #e3e3e3;
+	width: 1px;
+	height: 38px;
+}
+#SDEK_citySearcher{
+	margin-bottom: 5px;
+}
+.sdek_baloonDiv a{
+	cursor: help;
+}

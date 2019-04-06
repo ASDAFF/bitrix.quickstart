@@ -1,0 +1,9 @@
+<Files result_receive.php>
+Allow from all
+</Files>
+<Files payanyway_invoice.php>
+Allow from all
+</Files>
+<Files logo.png>
+Allow from all
+</Files>

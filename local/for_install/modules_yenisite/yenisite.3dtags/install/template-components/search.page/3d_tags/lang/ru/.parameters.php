@@ -1,0 +1,31 @@
+<?
+$MESS ['YS_HEIGHT'] = "Высота Flash-блока в пикселах или процентах";
+$MESS ['YS_WIDTH'] = "Ширина Flash-блока в пикселах или процентах";
+$MESS ['YS_BGCOLOR'] = "Цвет фона Flash-блока";
+$MESS ['YS_TEXTCOLOR'] = "Цвет текста ссылок Flash-блока (пример: \"FEFEFE\")";
+$MESS ['YS_SPEED'] = "Скорость вращения ссылок Flash-блока при наведении";
+$MESS ['SEARCH_FONT_MAX'] = "Максимальный размер шрифта (px)";
+$MESS ['SEARCH_FONT_MIN'] = "Минимальный  размер шрифта (px)";
+$MESS ['SEARCH_COLOR_OLD'] = "Цвет более раннего тега (пример: \"FEFEFE\")";
+$MESS ['SEARCH_COLOR_NEW'] = "Цвет более позднего тега (пример: \"C0C0C0\")";
+$MESS ['SEARCH_PERIOD_NEW_TAGS'] = "Период,  в течение которого считать тег новым (дней)";
+$MESS ['SEARCH_SHOW_CHAIN'] = "Показывать цепочку навигации";
+$MESS ['SEARCH_COLOR_TYPE'] = "Плавное изменение цвета";
+$MESS ['SEARCH_WIDTH'] = "Ширина облака тегов (пример: \"100%\" или \"100px\", \"100pt\", \"100in\")";
+$MESS ['SEARCH_FONT_MAX'] = "Максимальный размер шрифта (px)";
+$MESS ['SEARCH_FONT_MIN'] = "Минимальный размер шрифта (px)";
+$MESS ['SEARCH_COLOR_OLD'] = "Цвет раннего тега (пример: \"FEFEFE\")";
+$MESS ['SEARCH_COLOR_NEW'] = "Цвет позднего тега (пример: \"C0C0C0\")";
+$MESS ['SEARCH_CNT'] = "По популярности";
+$MESS ['SEARCH_COLOR_TYPE'] = "Плавное изменение цвета";
+$MESS ['SEARCH_NAME'] = "По имени";
+$MESS ['SEARCH_PAGE_ELEMENTS'] = "Количество тегов";
+$MESS ['SEARCH_PERIOD'] = "Период выборки тегов (дней)";
+$MESS ['SEARCH_PERIOD_NEW_TAGS'] = "Период, в течение которого считать тег новым (дней)";
+$MESS ['SEARCH_TAGS_INHERIT'] = "Сужать область поиска";
+$MESS ['SEARCH_WIDTH'] = "Ширина облака тегов (пример: \"100%\" или \"100px\", \"100pt\", \"100in\")";
+$MESS ['SEARCH_URL_SEARCH'] = "Путь к странице поиска (от корня сайта)";
+$MESS ['SEARCH_SHOW_CHAIN'] = "Показывать цепочку навигации";
+$MESS ['SEARCH_SORT'] = "Сортировка тегов";
+$MESS ['TP_BSP_USE_SUGGEST'] = "Показывать подсказку с поисковыми фразами";
+?>

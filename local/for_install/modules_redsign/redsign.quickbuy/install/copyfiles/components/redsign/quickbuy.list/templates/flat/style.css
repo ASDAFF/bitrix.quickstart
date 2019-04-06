@@ -1,0 +1,688 @@
+﻿@font-face {
+	font-family: "UbuntuBold";
+	src: url("fonts/Ubuntu-B.ttf");
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url("fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+	font-family: "UbuntuPrice";
+	src: url("fonts/Ubuntu-R.ttf");
+}
+
+@font-face {
+	font-family: "Ruble";
+	src: url("fonts/PTS55F.ttf");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div {
+	display: block;
+}
+
+.daysarticle.flat_wrap .price,
+.daysarticle.flat_wrap .discount_price {
+	font-family: UbuntuPrice;
+}
+
+.daysarticle.flat_wrap .percent {
+	font-size: 17px !important;
+}
+
+/* first view styles */
+.daysarticle.flat_wrap.view1 {
+	margin: 20px; /*временно*/
+	width: 460px;
+	height: 287px;
+	border: 1px solid #c3c3c3;
+	font-family: Ubuntu;
+}
+
+.daysarticle.flat_wrap.view1 .top_info{
+	height: 213px;	
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part{
+	width: 180px;
+	margin: 27px 0px 0px 17px;
+	float: left;
+	height: 186px;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .discount_price, 
+.daysarticle.flat_wrap.view1 .top_info .left_part .price {
+	color: #555;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .discount_price {
+	text-decoration: line-through;
+	margin-top: 60px;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .price {
+	font-size: 34px;
+	250px;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .discount {
+	background-color: #d45837;
+	color: white;
+	height: 12px;
+	width: 123px;
+	padding: 6px 15px;
+	line-height: 11px;
+	margin-left: -13px;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .discount .triangle {
+	border: 12px solid transparent;	
+	border-left: 12px solid #d45837;
+	float: right;
+	position: absolute;
+	/* left: 39px; */
+	/* bottom: 6px; */
+	margin: -17px 0px 0px 138px;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .left_part .discount span {
+	font-size: 12px;	
+}
+
+.daysarticle.flat_wrap.view1 .top_info .right_part{
+	float: right;
+	width: 254px;	
+	height: 197px;
+	padding: 3px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.daysarticle.flat_wrap.view1 .top_info .right_part img {
+	max-height: 100%;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: UbuntuBold;
+}
+
+.daysarticle.flat_wrap.view1 h4 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: UbuntuBold;
+	/* white-space: nowrap; */
+	overflow: hidden;
+	/* text-overflow: ellipsis; */
+	position: absolute;
+	width: 250px;
+	height: 60px;
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info {
+	height: 75px;
+	width: 100%;
+	background-color: #52535d;
+	border: 1px solid #52535d;
+	margin-left: -1px;
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info .time_icon {
+	width: 94px;
+	height: 95px;
+	/*background-color: #d45837;*/
+	margin-top: -6px;
+	margin-left: 16px;
+	background-image: url("img/time_icon_back.png");
+	background-repeat: no-repeat;
+	/*background-position: 18px 13px;*/
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info .tinytriangle {
+	position: absolute;
+	border: 3px solid transparent;	
+	border-right: 3px solid #639a57; 
+	border-bottom: 3px solid #639a57;
+	margin-left: 10px;
+	margin-top: -7px;
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info .triangle{
+	border: 44px solid transparent;
+	border-top: 13px solid #d45837;
+	position: absolute;
+	margin-left: 15px;
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info .time_icon_wrap {
+	float: left;
+	/*margin-left: -190px;*/
+}
+
+.daysarticle.flat_wrap.view1 .bottom_info .title{
+	float: left;
+	text-transform: uppercase;
+	color: #d45837;
+	font-weight: bolder;
+	padding: 10px 19px;
+	font-size: 21px;
+}
+
+.daysarticle.flat_wrap .digits {
+	width: 220px;
+	height: 75px;
+	float: right;
+}
+
+.daysarticle.flat_wrap .digits span {
+	font-size: 12px;
+	color: #d3d3d3;
+	width: 100%;
+	display: block;
+	text-align: center;
+	height: 17px;
+	line-height: 17px;
+}
+
+.daysarticle.flat_wrap .digits .time {
+	width: 150px;
+	float: left;
+}
+
+.daysarticle.flat_wrap .digits .percentage {
+	width: 70px;
+	float: right;
+}
+
+.daysarticle.flat_wrap .digits .digit {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	
+	float: left;
+	margin: 0px 3px;
+	margin-left: 5px;
+	box-shadow: 0px 3px 0px 0px rgba( 0, 0, 0, 0.2 );
+}
+
+.daysarticle.flat_wrap.view1 .digits .percentage .number {
+	color: #d45837;
+}
+
+.daysarticle.flat_wrap .digits .digit .number,
+.daysarticle.flat_wrap .digits .percentage .number {
+	line-height: 39px;
+	color: #52535d;
+	font-weight: bold;
+	font-family: UbuntuBold;
+	font-size: 30px;
+	padding-top: 0px;
+}
+
+.daysarticle.flat_wrap.view2 .percentage .number {
+	color: #70c45d;
+}
+
+.daysarticle.flat_wrap.view3 .percentage .number {
+	color: #fcb002;
+}
+
+.daysarticle.flat_wrap .digits .digit:nth-child(2) {
+	margin-left: 8px;
+}
+
+.daysarticle.flat_wrap .digits .digit.progress
+{
+	color: #d45837;
+	float: none; 
+	margin: 0 auto;
+}
+
+.daysarticle.flat_wrap.view2 .digits .digit.progress {
+	color: #70c45d;
+}
+
+.daysarticle.flat_wrap .digits hr {
+	margin: 0px;
+	position: absolute;
+	width: 38px;
+	/* margin-top: -22px; */
+	height: 1px;
+	border: 0px;
+	background: #fff;
+	opacity: 0.5;
+}
+
+.daysarticle.flat_wrap .digits .digit span {
+	font-weight: normal;
+	font-family: Ubuntu;
+	padding-top: 40px;
+}
+
+.daysarticle.flat_wrap .digits .digit .digit_outter {
+	width: 38px;
+	height: 20px;
+	background-color: #eee;
+	position: absolute;
+	/*margin-top: -40px;*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	/*opacity: 0.5;*/
+	border: 1px solid #fff;
+}
+
+/* /first view styles */
+/* second view styles */
+.daysarticle.flat_wrap.view2 {
+	margin: 20px; /*временно*/
+	width: 221px;
+	height: 374px;
+	border: 1px solid #c3c3c3;
+	font-family: Ubuntu;
+}
+
+.daysarticle.flat_wrap.view2 .top_info {
+	width: 100%;
+	height: 46px;
+	background-color: #52535d;
+	border: 1px solid #52535d;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+.daysarticle.flat_wrap.view2 .top_info .time_icon {
+	width: 63px;
+	height: 61px;
+	/*background-color: #d45837;*/
+	margin-top: -6px;
+	margin-left: 16px;
+	background-image: url("img/time_icon_small.png");
+	background-repeat: no-repeat;
+	/*background-position: 13px 13px;*/
+	/*background-size: 44px;*/
+}
+
+.daysarticle.flat_wrap.view2 .top_info .tinytriangle {
+	position: absolute;
+	border: 3px solid transparent;	
+	border-right: 3px solid #639a57; 
+	border-bottom: 3px solid #639a57;
+	margin-left: 10px;
+	margin-top: -7px;
+}
+
+.daysarticle.flat_wrap.view2 .top_info .triangle{
+	border: 29px solid transparent;
+	border-top: 13px solid #70c45d;
+	position: absolute;
+	margin-left: 15px;
+}
+
+.daysarticle.flat_wrap.view2 .top_info .time_icon_wrap {
+	float: left;
+	/*margin-left: -190px;*/
+}
+
+.daysarticle.flat_wrap.view2 .top_info .title{
+	float: left;
+	text-transform: uppercase;
+	color: #70c45d;
+	font-weight: bolder;
+	padding: 10px 5px;
+	font-size: 18px;
+}
+
+.daysarticle.flat_wrap .body_info h4 a:hover {
+	text-decoration: none;
+}
+
+.daysarticle.flat_wrap.view2 .body_info h4 {
+	width: 100%;
+	height: 32px;
+	line-height: 16px;	
+	text-align: center;
+	margin-top: 13px;
+}
+
+.daysarticle.flat_wrap.view2 .body_info {
+	text-align: center;
+}
+
+.daysarticle.flat_wrap.view2 .body_info img {
+	max-height: 180px;
+	margin-top: 5px;
+}
+
+.daysarticle.flat_wrap.view2 .discount_price, 
+.daysarticle.flat_wrap.view2 .price {
+	color: #555;
+	text-align: left;
+	padding-left: 17px;
+}
+
+.daysarticle.flat_wrap.view2 .discount_price {
+	text-decoration: line-through;
+}
+
+.daysarticle.flat_wrap.view2 .price {
+	font-size: 34px;
+}
+
+.daysarticle.flat_wrap.view2 .discount {
+	background-color: #70c45d;
+	color: white;
+	height: 12px;
+	width: 123px;
+	padding: 6px 15px;
+	line-height: 11px;
+	margin-left: -1px;
+	position: absolute;
+	margin-top: 5px;
+}
+
+.daysarticle.flat_wrap.view2 .discount .triangle {
+	border: 12px solid transparent;	
+	border-left: 12px solid #70c45d;
+	float: right;
+	position: absolute;
+	/* left: 39px; */
+	/* bottom: 6px; */
+	margin: -17px 0px 0px 138px;
+}
+
+.daysarticle.flat_wrap.view2 .discount span {
+	font-size: 12px;	
+}
+
+.daysarticle.flat_wrap .discount span.rub {
+	font-size: 15px !important;
+}
+
+.daysarticle.flat_wrap.view2 .body_info .price_wrap {
+	position: relative;
+	margin-top: -63px;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 73px;
+}
+
+.daysarticle.flat_wrap.view2 .digits {
+	height: 75px;
+	width: 100%;
+	background-color: #52535d;
+	border: 1px solid #52535d;
+	margin: -1px;
+	padding-top: 10px;
+}
+/* /second view styles */
+/* third view styles */
+.daysarticle.flat_wrap.view3 {
+	margin: 20px; /*временно*/
+	width: 700px;
+	height: 287px;
+	border: 1px solid #c3c3c3;
+	font-family: Ubuntu;
+}
+
+.daysarticle.flat_wrap.view3 .top_info{
+	height: 213px;	
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part{
+	width: 180px;
+	margin: 27px 0px 0px 17px;
+	float: left;
+	height: 186px;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part h4 {
+	font-size: 26px;
+	width: 450px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part h4 a:hover {
+	text-decoration: none;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .discount_price, 
+.daysarticle.flat_wrap.view3 .top_info .left_part .price {
+	color: #555;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .discount_price {
+	text-decoration: line-through;
+	margin-top: 40px;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .price {
+	font-size: 34px;
+	width: 300px;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .discount {
+	background-color: #fcb002;
+	color: white;
+	height: 12px;
+	width: 123px;
+	padding: 6px 15px;
+	line-height: 11px;
+	margin-left: -13px;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .discount .triangle {
+	border: 12px solid transparent;
+	border-left: 12px solid #fcb002;
+	float: right;
+	position: absolute;
+	/* left: 39px; */
+	/* bottom: 6px; */
+	margin: -17px 0px 0px 138px;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .left_part .discount span {
+	font-size: 12px;	
+}
+
+.daysarticle.flat_wrap.view3 .top_info .right_part{
+	float: right;
+	width: 254px;	
+	height: 197px;
+	padding: 3px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.daysarticle.flat_wrap.view3 .top_info .right_part img {
+	max-height: 100%;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info {
+	height: 75px;
+	width: 100%;
+	background-color: #52535d;
+	border: 1px solid #52535d;
+	margin-left: -1px;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .time_icon {
+	width: 94px;
+	height: 95px;
+	/*background-color: #d45837;*/
+	margin-top: -6px;
+	margin-left: 16px;
+	background-image: url("img/time_icon_back_view3.png");
+	background-repeat: no-repeat;
+	/*background-position: 18px 13px;*/
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .tinytriangle {
+	position: absolute;
+	border: 3px solid transparent;	
+	border-right: 3px solid #639a57; 
+	border-bottom: 3px solid #639a57;
+	margin-left: 10px;
+	margin-top: -7px;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .triangle{
+	border: 44px solid transparent;
+	border-top: 13px solid #d45837;
+	position: absolute;
+	margin-left: 15px;
+}
+
+.daysarticle.flat_wrap.view3 .digits .digit.progress {
+	color: #fcb002;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .time_icon_wrap {
+	float: left;
+	/*margin-left: -190px;*/
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .title{
+	float: left;
+	text-transform: uppercase;
+	color: #fcb002;
+	font-weight: bolder;
+	padding: 10px 19px;
+	font-size: 21px;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .progress_bar {
+	width: 250px;
+	height: 75px;
+	float: left;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .progress_bar .empty_bar {
+	width: 230px;
+	height: 23px;
+	background-color: #404048;
+	border-radius: 18px;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	margin-top: 22px;
+}
+
+.daysarticle.flat_wrap.view3 .bottom_info .progress_bar .full_bar {
+	height: 23px;
+	border-radius: 18px;
+	border-radius: 1px solid #000;
+	border: 1px solid #000;
+	background-image: -moz-linear-gradient( 90deg, rgb(255,121,1) 0%, rgb(252,176,2) 48%, rgb(251,195,3) 48%, rgb(252,212,3) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(255,121,1) 0%, rgb(252,176,2) 48%, rgb(251,195,3) 48%, rgb(252,212,3) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(255,121,1) 0%, rgb(252,176,2) 48%, rgb(251,195,3) 48%, rgb(252,212,3) 100%);
+	position: relative;
+	top: -1px;
+	color: #d45837;
+	text-align: center;
+	line-height: 23px;
+}
+
+.daysarticle.flat_wrap.view3 span.endtitle {
+	color: #c50000;
+	font-size: 18px;
+	font-family: "Segoe Print";
+	position: absolute;
+	height: 75px;
+	background-image: url("img/arrow_end.png");
+	background-repeat: no-repeat;
+	margin: -45px 0px 0px -227px;
+	background-position: 178px 28px;
+	width: 190px;
+	padding-right: 21px;
+	text-align: right;
+	font-weight: 600;
+}
+/* /third view styles */
+
+span.rub {
+	text-transform: uppercase;
+	font-family: Ruble;
+	font-weight: 300;
+}
+
+/*.daysarticle.flat_wrap .discount_price span.rub {
+	display: inline-block; 
+	font-size: 16px; 
+	line-height: 5px; 
+	border-bottom: 1px solid #555; 
+	width:0.4em; 
+}
+
+.daysarticle.flat_wrap .price span.rub {
+	display: inline-block; 
+	font-size: 34px; 
+	line-height: 13px; 
+	border-bottom: 2px solid #555; 
+	width:0.4em; 
+}
+
+.daysarticle.flat_wrap .discount span.rub {
+	display: inline-block; 
+	font-size: 16px; 
+	line-height: 4px; 
+	border-bottom: 1px solid white; 
+	width:0.4em; 
+}*/
+
+.daysarticle.flat_wrap .price {
+	font-weight: 600;
+}
+
+.daysarticle.flat_wrap .img_wrap {
+	height: 187px;
+	display: block;
+}

@@ -1,0 +1,13 @@
+div.search-popup{border: 1px solid #333333;background: #FFFFFF;padding: 2px;margin: 0px;position:absolute;font-size:10pt;}
+div.search-popup-row, div.search-popup-row-active{position: relative; padding: 2px 4px;margin: 0px;cursor: hand;cursor: pointer;}
+div.search-popup-row{background:#FFFFFF;}
+div.search-popup-row-active{background:#EEEEEE;}
+div.search-popup-el-name, div.search-popup-el-cnt{position: relative; margin:0px;padding:0px;text-align:left;}
+div.search-popup-el-cnt{text-align:right; float:right;}
+.complete-table span{padding:0 10px 0 0; font-size:11px;}
+.complete-table i{display:-moz-inline-stack; display:inline-block; width:15px; height:15px; background: url(../images/i-del.gif) right no-repeat;}
+.complete-table, .complete-table td {border:0 !important;padding:0 !important;}
+.complete-table td.input {display:block;}
+.complete-table td.label {display:none;}
+.complete-table-active td.input {display:none;}
+.complete-table-active td.label {display:block;}

@@ -1,0 +1,208 @@
+.message.error td div{border:2px solid red;color:red;display:inline-block;font-size:12px;text-align:left;padding:9px}
+.message.success td div{border:2px solid #149123;color:#149123;display:inline-block;font-size:12px;text-align:left;padding:9px}
+.tcsbank_menu_icon{
+    background-image: url("icons/tcsbank.kupivkredit/tcsbank_menu_icon.gif");
+    background-position: 8px 5px;
+}
+#tcsbank_menu_icon{background-image:url(icons/tcsbank.kupivkredit/tcsbank_menu_icon.gif)}
+.aRefreshRow{background-image:url(icons/tcsbank.kupivkredit/refresh.png);float:left;height:20px;width:20px}
+
+.dCourierMode font {
+    display: block;
+    padding: 10px 0 10px 4px;
+}
+.dCourierMode .pDeliveryMode {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.dCourierMode .dLabels{
+    margin-left: 4px;
+}
+.dCourierMode .dLabels .dLinks a.active
+{
+	display:block;
+}
+.dCourierMode .dLabels .dLinks.all_active a
+{
+	display:block;
+}
+.dCourierMode .dLabels .dLinks a
+{
+	display:none;
+}
+.dCourierMode label {
+    display: block;
+    height: 20px;
+}
+
+
+.dCourierMode .dLinks {
+    height: 26px;
+    margin: 0 0 10px;
+}
+.dCourierMode.no_margin a {
+    margin-left: 5px !important;
+    padding-left: 29px !important;
+}
+.dCourierMode .dLinks span {
+    background: none repeat scroll 0 0 transparent;
+    height: auto;
+    padding: 0;
+}
+.dApplyContract a
+{
+	height:24px!important;
+}
+.dCourierMode a.aPartnerCourier,.dCourierMode a.aBankCourier{display:block;font-size:12px;height:30px;padding-left:34px;padding-top:8px}
+
+.dCourierMode a.aBankCourier {
+    background: url("icons/tcsbank.kupivkredit/bank_courier.png") no-repeat scroll 0 3px transparent;
+    margin-left: 25px;
+    padding-left: 26px;
+    padding-top: 0;
+}
+.dCourierMode .all_active a.aBankCourier {
+    margin-left: 0px;
+}
+.dApplyContract a.aPartnerCourier{background:url(icons/tcsbank.kupivkredit/apply.png) no-repeat scroll 0 0 transparent}
+.dApplyContract a.choose, .dApplyContract span.choose{
+	display:none;
+}
+.dApplyContract a.choose.show, .dApplyContract span.choose.show{
+	display:block;
+}
+.dApplyContract a.aPartnerCourier, .dApplyContract span {
+    font-size: 12px;
+    height: 28px!important;
+    line-height: 12px;
+    overflow: hidden;
+    padding-left: 34px;
+    padding-top: 7px;
+    width: 180px;
+}
+.dApplyContract span {
+	display:block;
+}
+
+span.dTCSLoader {
+    background: url("icons/tcsbank.kupivkredit/ajax-loader2.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+.dApplyContract span{background:url(icons/tcsbank.kupivkredit/apply.png) no-repeat scroll 0 -31px transparent}
+.dApplyContract {margin-bottom:7px}
+.dPrintContract a{background:url(icons/tcsbank.kupivkredit/print.png) no-repeat scroll 0 0 transparent}
+.dPrintContract span{background:url(icons/tcsbank.kupivkredit/print.png) no-repeat scroll 0 -31px transparent}
+.dPrintContract a, .dPrintContract span {
+    display: block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 12px;
+    overflow: hidden;
+    padding-left: 34px;
+    padding-top: 1%;
+    width: 180px;
+}
+.aClose{display:block;font-size:16px;padding: 1px 0 13px 31px;}
+.dContractResult label{display:block;font-size:12px;height:auto;margin-bottom:4px;width:215px}
+.dContractResult label input{float:left}
+.dContractResult label span{float:left;margin-left:4px;padding-top:3px}
+.clear{clear:both}
+.dContractResult button{margin-left:24px;margin-top:4px}
+.dContractResult .dDecline select{width:180px}
+.dContractResult .dDecline{padding:6px 5px 1px 26px}
+.dUploadDocuments ol li{margin-bottom:4px}
+.dUploadDocuments ol{font-family:Verdana,Arial,helvetica,sans-serif;font-size:12px;list-style:decimal inside none;margin:0;padding:0}
+.tBasketItems td.no-border{border:none!important}
+.dBottomButtons{float:right;position:relative;margin:20px 0}
+.dBottomButtons button{margin-left:15px}
+.dCommentWrapper {
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-left: 270px;
+    position: relative;
+   /*  width: 100%; */
+}
+.dCommentWrapper .dLimits{float:right;width:100%}
+.dCommentWrapper .dComment {
+    float: left;
+    margin-left: -251px;
+    position: relative;
+    width: 250px;
+}
+.dComment textarea {
+    border: 1px solid #777777;
+    float: left;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.dCommentWrapper .dLimits .dLeft {
+    float: left;
+    padding-bottom: 20px;
+    width: 200px;
+}
+.dCommentWrapper .dLimits .dAllowed{color:#008509;font-size:18px;font-weight:700}
+.dCommentWrapper .dLimits .dRight {
+    border-left: 1px solid #888888;
+    float: right;
+    padding-left: 20px;
+    width: 370px;
+}
+#tbl_tcs_order{border:1px solid #BDC6E0;border-collapse:collapse}
+.dError{color:red;font-size:14px;font-weight:700;text-align:center;margin:20px 0}
+.dDeclineForm select{margin-bottom:10px;margin-left:15px}
+.dDeclineForm p{font-size:12px;margin-left:15px;margin-top:3px}
+.dDeclineForm{background:none repeat scroll 0 0 #FFF!important;border:2px solid #CECECE;display:none;left:0;position:absolute;top:20px;z-index:10;margin:7px 15px;padding:10px;z-index:90}
+.tReform{width:100%;border-collapse:collapse}
+#ID_BASKET_CONTAINER{padding:0!important}
+.ui-slider{background:none repeat scroll 0 0 #49545E;border:1px solid #AAA;color:#384451;margin-top:4px;position:relative;width:450px}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{border-bottom-right-radius:3px}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{border-bottom-left-radius:3px}
+.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{border-top-right-radius:3px}
+.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{border-top-left-radius:3px}
+.ui-slider .ui-slider-range{background:url(icons/tcsbank.kupivkredit/kvk_sprite.png) no-repeat scroll left top transparent;border-radius:0 0 0 0;height:8px;margin-top:1px;border-width:0 1px}
+.ui-widget .ui-widget{background:none repeat scroll 0 0 #49545E;height:8px}
+.ui-slider a.ui-slider-handle{background:url(icons/tcsbank.kupivkredit/kvk_sprite.png) no-repeat scroll left -10px transparent;border:medium none;cursor:pointer;height:29px;position:absolute;width:22px;z-index:2;margin:0 0 0 -11px}
+.dSlideWrapper .dInput{float:left;margin-left:15px;margin-top:9px}
+.dSlideWrapper .dInput input{border:1px solid #777;font-size:14px!important;height:27px;width:80px}
+.dSlideWrapper .dSliderOuter{float:left;margin-left:20px;width:450px}
+.dSlideWrapper .dTitle{float:left;font-size:12px;margin-top:15px;width:180px}
+.dSlideWrapper .dSliderOuter .dLeft{color:#777;float:left;font-size:12px;font-style:italic}
+.dSlideWrapper .dSliderOuter .dRight{color:#777;float:right;font-size:12px;font-style:italic}
+#slider_month{margin-top:18px}
+.sError{color:red;font-weight:700}
+.dInform .dLeft{float:left;font-size:15px}
+.dInform .dRight{float:right;font-size:15px}
+.hidden,.dDecline{display:none}
+.tOrder,.tBasketItems{border-collapse:collapse;float:right;width:100%}
+.tOrder td,.tBasketItems td{border:1px solid #D5D5D5!important;padding:8px!important}
+.dApplyContract .sNoActive,.dPrintContract .sNoActive,.dUploadDocuments,.dUploadDocuments ol.sNoActive li span{text-decoration:underline}
+.sNoActive,.dUploadDocuments ol.sNoActive{color:#888}
+.dCommentWrapper p,.dError p,.pAllowed{font-size:12px}
+.dSlideWrapper,.dInform{margin:20px 0}
+
+.sHostSelect
+{
+    width: 210px;
+}
+.iHostAddress
+{
+    margin-top: 5px;
+    width: 100%;
+}
+.pHostText
+{
+    font-size: 10px;
+    margin: 5px 0 0;
+}
+.dShowCourier {
+    font-size: 12px;
+    padding: 10px 0 10px 5px;
+}
+
+.dReturnForm input{margin-bottom:10px;margin-left:15px}
+.dReturnForm p{font-size:12px;margin-left:15px;margin-top:3px}
+.dReturnForm{background:none repeat scroll 0 0 #FFF!important;border:2px solid #CECECE;display:none;left:0;position:absolute;top:20px;z-index:10;margin:7px 15px;padding:10px;z-index:90}

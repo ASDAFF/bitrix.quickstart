@@ -1,0 +1,11 @@
+#quickpayform * {box-sizing:content-box;}
+#quickpayform {display:block; margin:0 auto; font-size:18px; color:#333;}
+#quickpayform table {border-collapse:collapse !important; width:100%;}
+#quickpayform table td {border:none !important; vertical-align:middle !important; padding:10px !important;}
+#quickpayform table td:first-child {width:30%;} 
+#quickpayform table td input[type=text] {width:90%; font-size:18px;}
+#quickpayform table td textarea {width:90%; min-height:50px; font-size:18px; min-width:90%; max-width:90%;}
+#quickpayform table td label {display:block; cursor:pointer; margin-top:10px;}
+#quickpayform table td label .jq-radio {margin-right:10px; top:-2px;}
+#quickpayform .quickpaybtncontainer {text-align:center; margin:20px 0 10px 0;}
+#quickpayform .quickpaybtncontainer .quickpaybtn {display:inline-block; padding:10px 20px; background:#6BBA50; border-radius:5px; cursor:pointer; color:#FFF; letter-spacing:0.04em;}

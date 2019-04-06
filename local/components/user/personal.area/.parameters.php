@@ -32,7 +32,7 @@ $arComponentParameters = array(
 	    ),
 	),
 	"PARAMETERS" => array(
-		// Íàñòðîéêè ìåíþ
+		// ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼ÐµÐ½ÑŽ
 		"ORDERS" => Array(
 			"PARENT" => "TABS",
 			"NAME" => GetMessage("ORDERS"),
@@ -52,7 +52,7 @@ $arComponentParameters = array(
 			"TYPE" => "CHECKBOX",
 			"DEFAULT" => "Y",
 		),
-		// Íàñòðîéêè êîìïîíåíòà ëè÷íîé èíôîðìàöèè
+		// ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð»Ð¸Ñ‡Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸
 		"USER_PROPERTY"=>array(
 			"PARENT" => "PERSONAL",
 			"NAME" => GetMessage("USER_PROPERTY"),
@@ -73,7 +73,7 @@ $arComponentParameters = array(
 			"TYPE" => "CHECKBOX",
 			"DEFAULT" => "N",
 		),
-		// Íàñòðîéêè êîìïîíåíòà çàêàçîâ
+		// ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð¾Ð²
 		"PATH_TO_COPY" => Array(
 			"NAME" => GetMessage("SPOL_PATH_TO_COPY"),
 			"TYPE" => "STRING",
@@ -125,7 +125,7 @@ $arComponentParameters = array(
 			"COLS" => 25,
 			"PARENT" => "ORDERS",
 		),
-		// Íàñòðîéêè êîìïîíåíòà Àäðåñîâ
+		// ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° ÐÐ´Ñ€ÐµÑÐ¾Ð²
 		"PER_PAGE_ADR" => Array(
 			"NAME" => GetMessage("SPPL_PER_PAGE"),
 			"TYPE" => "STRING",

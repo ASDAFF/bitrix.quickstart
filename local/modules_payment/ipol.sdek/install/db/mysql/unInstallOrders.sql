@@ -1,1 +1,0 @@
-drop table if exists ipol_sdek;

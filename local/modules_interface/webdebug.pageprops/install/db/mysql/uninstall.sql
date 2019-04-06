@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS `b_webdebug_pageprops`;

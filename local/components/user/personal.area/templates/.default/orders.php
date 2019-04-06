@@ -5,15 +5,15 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 	
 <?$APPLICATION->IncludeComponent("bitrix:sale.personal.order.list", "", 
 	Array(
-		"PATH_TO_DETAIL" => $APPLICATION->GetCurPageParam("page=orders&ID=#ID#",array("page","ID","PID")),	// Ñòðàíèöà c ïîäðîáíîé èíôîðìàöèåé î çàêàçå
-		"PATH_TO_COPY" => $arParams["PATH_TO_COPY"],	// Ñòðàíèöà ïîâòîðåíèÿ çàêàçà
-		"PATH_TO_CANCEL" => $arParams["PATH_TO_CANCEL"],	// Ñòðàíèöà îòìåíû çàêàçà
-		"PATH_TO_BASKET" => $arParams["PATH_TO_BASKET"],	// Ñòðàíèöà êîðçèíû
-		"ORDERS_PER_PAGE" => $arParams["ORDERS_PER_PAGE"],	// Êîëè÷åñòâî çàêàçîâ, âûâîäèìûõ íà ñòðàíèöó
-		"ID" => $ID,	// Èäåíòèôèêàòîð çàêàçà
-		"SET_TITLE" => $arParams["SET_TITLE"],	// Óñòàíàâëèâàòü çàãîëîâîê ñòðàíèöû
-		"SAVE_IN_SESSION" => $arParams["SAVE_IN_SESSION"],	// Ñîõðàíÿòü óñòàíîâêè ôèëüòðà â ñåññèè ïîëüçîâàòåëÿ
-		"NAV_TEMPLATE" => $arParams["NAV_TEMPLATE"],	// Èìÿ øàáëîíà äëÿ ïîñòðàíè÷íîé íàâèãàöèè
+		"PATH_TO_DETAIL" => $APPLICATION->GetCurPageParam("page=orders&ID=#ID#",array("page","ID","PID")),	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° c Ð¿Ð¾Ð´Ñ€Ð¾Ð±Ð½Ð¾Ð¹ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÐµÐ¹ Ð¾ Ð·Ð°ÐºÐ°Ð·Ðµ
+		"PATH_TO_COPY" => $arParams["PATH_TO_COPY"],	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð°
+		"PATH_TO_CANCEL" => $arParams["PATH_TO_CANCEL"],	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¾Ñ‚Ð¼ÐµÐ½Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°
+		"PATH_TO_BASKET" => $arParams["PATH_TO_BASKET"],	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹
+		"ORDERS_PER_PAGE" => $arParams["ORDERS_PER_PAGE"],	// ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð¾Ð², Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ñ… Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñƒ
+		"ID" => $ID,	// Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð·Ð°ÐºÐ°Ð·Ð°
+		"SET_TITLE" => $arParams["SET_TITLE"],	// Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹
+		"SAVE_IN_SESSION" => $arParams["SAVE_IN_SESSION"],	// Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÑÑ‚ÑŒ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸ Ñ„Ð¸Ð»ÑŒÑ‚Ñ€Ð° Ð² ÑÐµÑÑÐ¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
+		"NAV_TEMPLATE" => $arParams["NAV_TEMPLATE"],	// Ð˜Ð¼Ñ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° Ð´Ð»Ñ Ð¿Ð¾ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ‡Ð½Ð¾Ð¹ Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¸
 	),
 	false
 );?>

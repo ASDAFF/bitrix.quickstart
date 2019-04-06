@@ -6,12 +6,12 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 	
 <?$APPLICATION->IncludeComponent("bitrix:sale.personal.order.detail", "", 
 	Array(
-		"PATH_TO_LIST" => $APPLICATION->GetCurPageParam("page=orders",array("page","ID","PID")),	// Ñòðàíèöà ñî ñïèñêîì çàêàçîâ
-		"PATH_TO_CANCEL" => $arParams["PATH_TO_CANCEL"],	// Ñòðàíèöà îòìåíû çàêàçà
-		"PATH_TO_PAYMENT" => $arParams["PATH_TO_PAYMENT"],	// Ñòðàíèöà ïîäêëþ÷åíèÿ ïëàòåæíîé ñèñòåìû
-		"ID" => $_REQUEST["ID"],	// Èäåíòèôèêàòîð çàêàçà
-		"SET_TITLE" => $arParams["SET_TITLE"],	// Óñòàíàâëèâàòü çàãîëîâîê ñòðàíèöû
-		"PROP_1" => $arParams["PROP_1"],	// Íå ïîêàçûâàòü ñâîéñòâà äëÿ òèïà ïëàòåëüùèêà "Ôèç. ëèöî" (s1)
+		"PATH_TO_LIST" => $APPLICATION->GetCurPageParam("page=orders",array("page","ID","PID")),	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÑÐ¾ ÑÐ¿Ð¸ÑÐºÐ¾Ð¼ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²
+		"PATH_TO_CANCEL" => $arParams["PATH_TO_CANCEL"],	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¾Ñ‚Ð¼ÐµÐ½Ñ‹ Ð·Ð°ÐºÐ°Ð·Ð°
+		"PATH_TO_PAYMENT" => $arParams["PATH_TO_PAYMENT"],	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ Ð¿Ð»Ð°Ñ‚ÐµÐ¶Ð½Ð¾Ð¹ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹
+		"ID" => $_REQUEST["ID"],	// Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð·Ð°ÐºÐ°Ð·Ð°
+		"SET_TITLE" => $arParams["SET_TITLE"],	// Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹
+		"PROP_1" => $arParams["PROP_1"],	// ÐÐµ Ð¿Ð¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð´Ð»Ñ Ñ‚Ð¸Ð¿Ð° Ð¿Ð»Ð°Ñ‚ÐµÐ»ÑŒÑ‰Ð¸ÐºÐ° "Ð¤Ð¸Ð·. Ð»Ð¸Ñ†Ð¾" (s1)
 		"PROP_2" => $arParams["PROP_2"]
 	),
 	false

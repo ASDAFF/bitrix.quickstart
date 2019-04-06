@@ -6,11 +6,11 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 	
 <?$APPLICATION->IncludeComponent("bitrix:sale.personal.profile.detail", "", 
 	Array(
-		"PATH_TO_LIST" => $APPLICATION->GetCurPageParam("page=addreses",array("page","ID","PID")),	// Ñòðàíèöà ñî ñïèñêîì ïðîôèëåé
-		"PATH_TO_DETAIL" => $APPLICATION->GetCurPageParam("page=addreses&PID=#PID#",array("page","ID","PID")),	// Ñòðàíèöà ðåäàêòèðîâàíèÿ ïðîôèëÿ
-		"ID" => (int)$_REQUEST["PID"],	// Èäåíòèôèêàòîð ïðîôèëÿ
-		"USE_AJAX_LOCATIONS" => $arParams["USE_AJAX_LOCATIONS"],	// Èñïîëüçîâàòü ðàñøèðåííûé âûáîð ìåñòîïîëîæåíèÿ
-		"SET_TITLE" => $arParams["SET_TITLE"],	// Óñòàíàâëèâàòü çàãîëîâîê ñòðàíèöû
+		"PATH_TO_LIST" => $APPLICATION->GetCurPageParam("page=addreses",array("page","ID","PID")),	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° ÑÐ¾ ÑÐ¿Ð¸ÑÐºÐ¾Ð¼ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»ÐµÐ¹
+		"PATH_TO_DETAIL" => $APPLICATION->GetCurPageParam("page=addreses&PID=#PID#",array("page","ID","PID")),	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ
+		"ID" => (int)$_REQUEST["PID"],	// Ð˜Ð´ÐµÐ½Ñ‚Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ
+		"USE_AJAX_LOCATIONS" => $arParams["USE_AJAX_LOCATIONS"],	// Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð½Ñ‹Ð¹ Ð²Ñ‹Ð±Ð¾Ñ€ Ð¼ÐµÑÑ‚Ð¾Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ
+		"SET_TITLE" => $arParams["SET_TITLE"],	// Ð£ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹
 	),
 	false
 );?>

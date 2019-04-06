@@ -1,0 +1,1 @@
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/asd.favorite/tools/ajax.php');?>

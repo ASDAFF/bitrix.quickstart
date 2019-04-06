@@ -1,0 +1,33 @@
+.asd_lik_button,
+.asd_fav_button {
+	width: 32px;
+	height: 20px;
+	background: url('images/fav.png') top left no-repeat;
+	cursor: pointer;
+	float: left;
+}
+.asd_lik_button {
+	background: url('images/like.png') top left no-repeat;
+}
+.asd_faved {
+	background: url('images/faved.png') top left no-repeat;
+}
+.asd_liked {
+	background: url('images/unlike.png?v2') top left no-repeat;
+}
+.asd_fav_count {
+	width: 29px;
+	height: 20px;
+	background: url('images/fav_count.png') top left no-repeat;
+	float: left;
+	font-size: 11px;
+	font-family: arial,sans-serif;
+	color: #666;
+	line-height: 20px;
+	text-align: center;
+	padding: 0 0 0 1px;
+	margin-left: 2px;
+}
+.asd_fav_clear {
+	clear: both;
+}

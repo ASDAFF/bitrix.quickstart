@@ -21,7 +21,7 @@ $(function () {
 		});
 	}
 
-	$('.asd_fav_simple').live('click',function(){
+	$('.asd_fav_simple').on('click',function(){
 		if (bGuest) {
 			if (!bGuestAlert) {
 				alert(sMessDeniedGuest);

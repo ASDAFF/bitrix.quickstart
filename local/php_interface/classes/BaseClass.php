@@ -517,4 +517,39 @@ class BaseClass
         return false; // Мобильный браузер не обнаружен
     }
 
+    /**
+     *  Excel 파일을 CSV 파일로 변환
+     *
+     *  @param  $excelPath string excel 파일 경로
+     *  @param  $csvPath   string csv 파일 경로
+     *  @return void
+     */
+    public static function convertExcelIntoCsv(string $excelPath, string $csvPath)
+    {
+        echo "\nConverting Excel into CSV format...\n";
+        try {
+            // excel 파일을 로드하여 PHPExcel 선언
+            $objPhpExcel = \PHPExcel_IOFactory::load($excelPath);
+            // Excel->CSV 형식의 Object로 변환
+            $objWriter = new \PHPExcel_Writer_CSV($objPhpExcel);
+            // csv 경로에 같은 파일이 있으면 삭제
+            if (file_exists($csvPath)) {
+                echo "CSV file rewriting...\n";
+                unlink($csvPath);
+            }
+            // 해당 경로에 csv 파일 저장
+            $objWriter->save($csvPath);
+            echo "Conversion success! \n";
+        } catch (\PHPExcel_Reader_Exception $re) {
+            die('Error loading file: ' . $e->getMessage());
+        } finally {
+            // 메모리 release 작업
+            if ($objPhpExcel instanceof \PHPExcel_IOFactory) {
+                $objPhpExcel->disconnectWorksheets();
+                unset($objPhpExcel);
+            }
+            unset($objWriter);
+        }
+    }
+
 }

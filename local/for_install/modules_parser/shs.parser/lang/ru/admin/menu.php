@@ -1,7 +1,10 @@
 <?
-$MESS ['mnu_shs_parser_sect'] = "ÐŸÐ°Ñ€ÑÐµÑ€";
-$MESS ['mnu_shs_list_parser'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿Ð°Ñ€ÑÐµÑ€Ð¾Ð²";
-$MESS ['mnu_shs_list_result'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð² Ð¿Ð°Ñ€ÑÐ¸Ð½Ð³Ð°";
-$MESS ['mnu_shs_list_parser_alt'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿Ð°Ñ€ÑÐµÑ€Ð¾Ð²";
-$MESS ['mnu_shs_parser_sect_title'] = "Ð£Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð°Ñ€ÑÐµÑ€Ð°Ð¼Ð¸";
+/**
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS ['mnu_shs_parser_sect'] = "Ïàðñåð";
+$MESS ['mnu_shs_list_parser'] = "Ñïèñîê ïàðñåðîâ";
+$MESS ['mnu_shs_list_parser_alt'] = "Ñïèñîê ïàðñåðîâ";
+$MESS ['mnu_shs_parser_sect_title'] = "Óïðàâëåíèå ïàðñåðàìè";
 ?>

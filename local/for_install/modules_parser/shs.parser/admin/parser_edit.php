@@ -12,6 +12,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/prolog.php");
 define("HELP_FILE", "add_issue.php");
 CJSCore::Init(array("jquery"));
 
+
+
 ?>
 
 <?
@@ -139,6 +141,7 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $POST_RIGHT=="W" &&
 //Edit/Add part
 ClearVars();
 
+
 if($ID>0 || $copy)
 {
     if($ID)$parser = ShsParserContent::GetByID($ID);
@@ -168,7 +171,7 @@ if($ID>0 || $copy)
     
     $properties = CIBlockProperty::GetList(Array("sort"=>"asc", "name"=>"asc"), Array("ACTIVE"=>"Y", "IBLOCK_ID"=>$shs_IBLOCK_ID, "PROPERTY_TYPE"=>"S"));
     while($arProp = $properties->Fetch())
-    {   
+    {   //printr($arProp);
         $arrProp['REFERENCE'][] = "[".$arProp["CODE"]."] ".$arProp["NAME"];
         $arrProp['REFERENCE_ID'][] = $arProp["CODE"];
     }
@@ -227,8 +230,6 @@ if($ID>0 || $copy)
                     'select' => $directorySelect,
                     'order' => $directoryOrder
                 );
-                if(strlen($nameTable)==0)
-                    continue 1;
                 $highBlock = \Bitrix\Highloadblock\HighloadBlockTable::getList(array("filter" => array('TABLE_NAME' => $nameTable)))->fetch();
                 $entity = \Bitrix\Highloadblock\HighloadBlockTable::compileEntity($highBlock);
                 $entityDataClass = $entity->getDataClass();
@@ -248,7 +249,8 @@ if($ID>0 || $copy)
 
 /*if($bVarsFromForm)
     $DB->InitTableVarsForEdit("b_shs_list_parser", "", "shs_");*/
-$APPLICATION->SetTitle(($ID>0? GetMessage("parser_title_edit").' "'.$shs_NAME.'"' : GetMessage("parser_title_add")));
+
+$APPLICATION->SetTitle(($ID>0? GetMessage("parser_title_edit") : GetMessage("parser_title_add")));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 
 $aMenu = array(
@@ -304,20 +306,6 @@ if($ID>0)
             "LINK"=>"parser_edit.php?start=1&lang=".LANG."&ID=".$ID,
             "ICON"=>"btn_start_xml"
         );
-        elseif($shs_TYPE=="csv" || $_GET["type"]=="csv"):
-        $aMenu[] = array(
-            "TEXT"=>GetMessage("parser_start"),
-            "TITLE"=>GetMessage("parser_start_title"),
-            "LINK"=>"parser_edit.php?start=1&lang=".LANG."&ID=".$ID,
-            "ICON"=>"btn_start_csv"
-        );
-        elseif($shs_TYPE=="xls" || $_GET["type"]=="xls"):
-        $aMenu[] = array(
-            "TEXT"=>GetMessage("parser_start"),
-            "TITLE"=>GetMessage("parser_start_title"),
-            "LINK"=>"parser_edit.php?start=1&lang=".LANG."&ID=".$ID,
-            "ICON"=>"btn_start_xls"
-        );
         endif;
     }
     if($shs_TYPE=="catalog" || $_GET["type"]=="catalog")
@@ -339,7 +327,6 @@ if($ID>0)
         );
     }
 }
-
 $context = new CAdminContextMenu($aMenu);
 $context->Show();
 
@@ -383,12 +370,12 @@ if(isset($_REQUEST['start']) && $ID>0){
 **** Парсинг каталог и XML
 ***/
 
-if($shs_TYPE=="catalog" || $_GET["type"]=="catalog" || $shs_TYPE=="xml" || $_GET["type"]=="xml" || $shs_TYPE=="csv" || $_GET["type"]=="csv" || $shs_TYPE=="xls" || $_GET["type"]=="xls")
+if($shs_TYPE=="catalog" || $_GET["type"]=="catalog" || $shs_TYPE=="xml" || $_GET["type"]=="xml")
 {   $isOfferCatalog = false;
     if(isset($shs_IBLOCK_ID) && $shs_IBLOCK_ID && CModule::IncludeModule('catalog'))
     {
         $arIblock = CCatalogSKU::GetInfoByIBlock($shs_IBLOCK_ID);
-        
+        //printr($arIblock);
         if(is_array($arIblock) && !empty($arIblock) && $arIblock["PRODUCT_IBLOCK_ID"]!=0 && $arIblock["SKU_PROPERTY_ID"]!=0)$isOfferCatalog = true;
         
         
@@ -500,14 +487,13 @@ if($shs_TYPE=="catalog" || $_GET["type"]=="catalog" || $shs_TYPE=="xml" || $_GET
     **** Табы для XML
     ***/
     
-    if ($shs_TYPE=="xml" || $_GET["type"]=="xml" || $shs_TYPE=="csv" || $_GET["type"]=="csv")
+    if ($shs_TYPE=="xml" || $_GET["type"]=="xml")
     {
         if(CModule::IncludeModule('catalog') && (($shs_IBLOCK_ID && CCatalog::GetList(Array("name" => "asc"), Array("ACTIVE"=>"Y", "ID"=>$shs_IBLOCK_ID))->Fetch()) || (is_array($arIblock) && !empty($arIblock) && $arIblock["PRODUCT_IBLOCK_ID"]!=0 && $arIblock["SKU_PROPERTY_ID"]!=0)  || !$shs_IBLOCK_ID))
         {
             $aTabs = array(
                 array("DIV" => "edit1", "TAB" => GetMessage("parser_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_tab")),
                 //array("DIV" => "edit2", "TAB" => GetMessage("parser_pagenavigation_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_pagenavigation_tab")),
-                array("DIV" => "edit12", "TAB" => GetMessage("parser_catalog_file_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_catalog_file_tab")),
                 array("DIV" => "edit2", "TAB" => GetMessage("parser_basic_settings_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_basic_settings_tab")),
                 //array("DIV" => "edit4", "TAB" => GetMessage("parser_detail_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_detail_tab")),
                 array("DIV" => "edit3", "TAB" => GetMessage("parser_props_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_props_tab")),
@@ -527,39 +513,6 @@ if($shs_TYPE=="catalog" || $_GET["type"]=="catalog" || $shs_TYPE=="xml" || $_GET
                 //array("DIV" => "edit2", "TAB" => GetMessage("parser_pagenavigation_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_pagenavigation_tab")),
                 array("DIV" => "edit2", "TAB" => GetMessage("parser_preview_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_preview_tab")),
                 //array("DIV" => "edit4", "TAB" => GetMessage("parser_detail_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_detail_tab")),
-                array("DIV" => "edit3", "TAB" => GetMessage("parser_props_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_props_tab")),
-                array("DIV" => "edit4", "TAB" => GetMessage("parser_settings_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_settings_tab")),
-                array("DIV" => "edit5", "TAB" => GetMessage("parser_uniq_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_uniq_tab")),
-                array("DIV" => "edit6", "TAB" => GetMessage("parser_auth"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_auth")),
-                array("DIV" => "edit7", "TAB" => GetMessage("parser_logs_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_logs_tab")),
-                array("DIV" => "edit8", "TAB" => GetMessage("parser_local_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_local_tab")),
-                array("DIV" => "edit9", "TAB" => GetMessage("parser_video_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_video_tab")),
-            );
-            $isCatalog = false;
-        }
-    } elseif ($shs_TYPE=="xls" || $_GET["type"]=="xls") //Табы для XLS
-    {
-        if(CModule::IncludeModule('catalog') && (($shs_IBLOCK_ID && CCatalog::GetList(Array("name" => "asc"), Array("ACTIVE"=>"Y", "ID"=>$shs_IBLOCK_ID))->Fetch()) || (is_array($arIblock) && !empty($arIblock) && $arIblock["PRODUCT_IBLOCK_ID"]!=0 && $arIblock["SKU_PROPERTY_ID"]!=0)  || !$shs_IBLOCK_ID))
-        {
-            $aTabs = array(
-                array("DIV" => "edit1", "TAB" => GetMessage("parser_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_tab")),
-                array("DIV" => "edit12", "TAB" => GetMessage("parser_preview_xls_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_preview_xls_tab")),
-                array("DIV" => "edit2", "TAB" => GetMessage("parser_basic_settings_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_basic_settings_tab")),
-                array("DIV" => "edit3", "TAB" => GetMessage("parser_props_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_props_tab")),
-                array("DIV" => "edit4", "TAB" => GetMessage("parser_catalog_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_catalog_tab")),
-                array("DIV" => "edit5", "TAB" => GetMessage("parser_offer_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_offer_tab")),
-                array("DIV" => "edit6", "TAB" => GetMessage("parser_settings_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_settings_tab")),
-                array("DIV" => "edit7", "TAB" => GetMessage("parser_uniq_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_uniq_tab")),
-                array("DIV" => "edit8", "TAB" => GetMessage("parser_auth"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_auth")),
-                array("DIV" => "edit9", "TAB" => GetMessage("parser_logs_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_logs_tab")),
-                array("DIV" => "edit10", "TAB" => GetMessage("parser_local_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_local_tab")),
-                array("DIV" => "edit11", "TAB" => GetMessage("parser_video_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_video_tab")),
-            );
-            $isCatalog = true;
-        }else{
-            $aTabs = array(
-                array("DIV" => "edit1", "TAB" => GetMessage("parser_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_tab")),
-                array("DIV" => "edit2", "TAB" => GetMessage("parser_preview_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_preview_tab")),
                 array("DIV" => "edit3", "TAB" => GetMessage("parser_props_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_props_tab")),
                 array("DIV" => "edit4", "TAB" => GetMessage("parser_settings_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_settings_tab")),
                 array("DIV" => "edit5", "TAB" => GetMessage("parser_uniq_tab"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_uniq_tab")),
@@ -571,7 +524,7 @@ if($shs_TYPE=="catalog" || $_GET["type"]=="catalog" || $shs_TYPE=="xml" || $_GET
             $isCatalog = false;
         }
     }
-    $aTabs[] = array("DIV" => "edit_notification", "TAB" => GetMessage("parser_notification"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("parser_notification"));
+    
     //$rsIBlock = CCatalog::GetList(Array("name" => "asc"), Array("ACTIVE"=>"Y"));
     $rsIBlock = CIBlock::GetList(Array("name" => "asc"), Array("ACTIVE"=>"Y"));
     while($arr=$rsIBlock->Fetch()){
@@ -612,6 +565,9 @@ if(!empty($shs_IBLOCK_ID)){
         $arSection['REFERENCE'][] = $arr["NAME"];
         $arSection['REFERENCE_ID'][] = $arr["ID"];
     }
+
+
+
 }
 $arrDateActive['REFERENCE'][0] =  GetMessage("parser_date_active_now");
 $arrDateActive['REFERENCE'][1] =  GetMessage("parser_date_active_now_time");
@@ -619,9 +575,6 @@ $arrDateActive['REFERENCE'][2] =  GetMessage("parser_date_active_public");
 $arrDateActive['REFERENCE_ID'][0] = "NOW";
 $arrDateActive['REFERENCE_ID'][1] = "NOW_TIME";
 $arrDateActive['REFERENCE_ID'][2] = "PUBLIC";
-
-unset($arParamIndex['REFERENCE'][0]);
-unset($arParamIndex['REFERENCE_ID'][0]);
 ?>
 <a target="blank" href=""><?=GetMessage("parser_instruction")?></a>
 <div id="status_bar" style="display:none;overflow:hidden;">
@@ -649,14 +602,13 @@ if(isset($_REQUEST['end']) && $_REQUEST['end']==1 && $ID>0){
     if(isset($_GET['ERROR'][0])){
         foreach($_GET['ERROR'] as $error) CAdminMessage::ShowMessage($error);
     }
+
 }
 $shs_SETTINGS = (string)$shs_SETTINGS;
 $shs_SETTINGS = unserialize(base64_decode($shs_SETTINGS));
 
 $shsDebug = $shs_SETTINGS["catalog"]["mode"];
 
-if(!function_exists('curl_getinfo')) CAdminMessage::ShowMessage(array("MESSAGE"=>GetMessage("parser_exists_libcurl")));
-if(!class_exists('XMLReader')) CAdminMessage::ShowMessage(array("MESSAGE"=>GetMessage("parser_class_exists_XMLReader")));
 
 if($shs_DEMO==2)CAdminMessage::ShowMessage(array("MESSAGE"=>GetMessage("parser_demo")));
 if($shs_DEMO==3)CAdminMessage::ShowMessage(array("MESSAGE"=>GetMessage("parser_demo_end")));
@@ -670,10 +622,13 @@ $tabControl->Begin();
 if($shs_TYPE=="page" || (isset($_GET["type"]) && $_GET["type"]=="page")) include("parser_edit_page.php");
 elseif($shs_TYPE=="catalog" || (isset($_GET["type"]) && $_GET["type"]=="catalog")) include("parser_edit_catalog.php");
 elseif($shs_TYPE=="xml" || (isset($_GET["type"]) && $_GET["type"]=="xml")) include("parser_edit_xml.php");
-elseif($shs_TYPE=="csv" || (isset($_GET["type"]) && $_GET["type"]=="csv")) include("parser_edit_csv.php");
-elseif($shs_TYPE=="xls" || (isset($_GET["type"]) && $_GET["type"]=="xls")) include("parser_edit_xls.php");
 elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET["type"]=="rss") || !isset($ID) || !$ID) include("parser_edit_rss.php");
 ?>
+
+
+
+
+
 
 <?echo BeginNote();?>
 <span class="required">*</span><?echo GetMessage("REQUIRED_FIELDS")?>
@@ -721,7 +676,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                 }
             }
             function createSectionProperty(id, name, type)
-            {                                     
+            {   
                 jQuery.ajax({
                     url: "",
                     type: "POST",
@@ -748,15 +703,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                             str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][selector_prop]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
                             target_shadow_id.before(str);
                     
-                        }
-                        else if(target_select_id=="loadFilterProps")
-                        {
-                            selectFilter = '<select name="SETTINGS[props_filter_circs]['+code+']"><option value="equally"><?=GetMessage('parser_filter_equally');?></option><option value="strpos"><?=GetMessage('parser_filter_strpos');?></option><option value="stripos"><?=GetMessage('parser_filter_stripos');?></option></select>';
-                            str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r">'+selectFilter+'<input type="text" value="" name="SETTINGS[props_filter_value]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
-                            target_shadow_id.before(str);
-                    
-                        }
-                        else if(target_select_id=="loadDopProp1")
+                        }else if(target_select_id=="loadDopProp1")
                         {
                             str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][find_prop]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
                             target_shadow_id.before(str);    
@@ -771,9 +718,9 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                         }
                         else if(target_select_id=="loadPropField")
                         {
-                            str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+code+'][]" data-code="'+code+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+code+']" name="SETTINGS[catalog][action_props]['+code+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option><option value="lower"><?=GetMessage("parser_action_props_to_lower")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
+                            str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+code+'][]" data-code="'+code+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+code+']" name="SETTINGS[catalog][action_props]['+code+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
                             target_shadow_id.before(str);    
-                        }   
+                        }
                     }
 
                  })
@@ -793,15 +740,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                             str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][selector_prop]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
                             target_shadow_id.before(str);
                     
-                        }
-                        if(target_select_id=="loadFilterProps")
-                        {
-                            selectFilter = '<select name="SETTINGS[props_filter_circs]['+code+']"><option value="equally"><?=GetMessage('parser_filter_equally');?></option><option value="strpos"><?=GetMessage('parser_filter_strpos');?></option><option value="stripos"><?=GetMessage('parser_filter_stripos');?></option></select>';
-                            str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r">'+selectFilter+'<input type="text" value="" name="SETTINGS[props_filter_value]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
-                            target_shadow_id.before(str);
-                    
-                        }
-                        else if(target_select_id=="loadDopProp1")
+                        }else if(target_select_id=="loadDopProp1")
                         {
                             str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+name+'&nbsp;['+code+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][find_prop]['+code+']" data-code="'+code+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
                             target_shadow_id.before(str);    
@@ -836,9 +775,10 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                     tr.style.display = display;
                 }
             }
-</script>                                                                              
+</script>    
 <script language="JavaScript">
-    jQuery(document).ready(function(){        
+    jQuery(document).ready(function(){
+        
         
         $("#loadDopPropOffer").on("click", function(e){
             e.preventDefault();
@@ -854,18 +794,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             }
             str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[offer][selector_prop]['+v+']" data-code="'+v+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
             tr.before(str);
-        });
-        
-        $(".add_index_csv").on("click", function(e){
-            var popup = new BX.CDialog({
-               'title': 'Заголовок окна',
-               'content': '<div class="dfdfdf">Привет</div>',
-               'draggable': true,
-               'resizable': true,
-               'buttons': [BX.CDialog.btnClose]
-            });
-         
-            popup.Show(); 
         });
         
         $("#loadDopPropOffer2").on("click", function(e){
@@ -900,142 +828,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             tr.before(str);
         });
         
-        $("#addPrice").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            
-            v = tr.find("select[name=arrPricetypes] option:selected").val();
-            t = tr.find("select[name=arrPricetypes] option:selected").text();
-            if(v=="" || v=='[]') return false;             
-            if($("tr.adittional_preview_prices_id_"+v).length > 0) return false;
-            
-            str = '<tr class="adittional_preview_prices_id_'+v+'"><td width="40%" class="adm-detail-content-cell-l">'+'<?php echo GetMessage('parser_preview_price');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[prices_preview]['+v+'][value]" size="40" maxlength="250">&nbsp;<a href="#" class="price_delete" data-price-id="'+v+'">Delete</a><input type="hidden" name="SETTINGS[prices_preview]['+v+'][name]" value="'+t+'"></td></tr>';
-                                                                                                                                                                                                                                          
-            tr.before(str);  
-            
-            r = $("tr.adittional_prices_settings").eq(0);
-            str='';                                                         
-            if($(".adittional_prices_settings_id_"+v).length == 0){
-                str = '<tr width="40%" class="adittional_prices_settings_id_'+v+'"><td class="adm-detail-content-cell-l"><?echo GetMessage('parser_aditt_currency');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><?=SelectBoxFromArray('SETTINGS[adittional_currency][currency_id]', $arCurrency, "RUB", "", "");?></td></tr>';
-                r.after(str);
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("name",'SETTINGS[adittional_currency]['+v+']');
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("id",'SETTINGS[adittional_currency]['+v+']');
-            }
-        });
-        
-        $("#addPriceDetail").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            
-            v = tr.find("select[name=arrPricetypes] option:selected").val();
-            t = tr.find("select[name=arrPricetypes] option:selected").text();
-            
-            if(v=="" || v=='[]') return false;
-            if($("tr.adittional_detail_prices_id_"+v).length > 0) return false;
-    
-            str = '<tr class="adittional_detail_prices_id_'+v+'"><td width="40%" class="adm-detail-content-cell-l">'+'<?php echo GetMessage('parser_preview_price');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[prices_detail]['+v+'][value]" size="40" maxlength="250">&nbsp;<a href="#" class="price_delete" data-price-id="'+v+'">Delete</a><input type="hidden" name="SETTINGS[prices_detail]['+v+'][name]" value="'+t+'"></td></tr>';
-            tr.before(str);
-            
-            r = $("tr.adittional_prices_settings").eq(0);
-            str='';                                                         
-            if($(".adittional_prices_settings_id_"+v).length == 0) {
-                str = '<tr width="40%" class="adittional_prices_settings_id_'+v+'"><td class="adm-detail-content-cell-l"><?echo GetMessage('parser_aditt_currency');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><?=SelectBoxFromArray('SETTINGS[adittional_currency][currency_id]', $arCurrency, "RUB", "", "");?></td></tr>';
-                r.after(str);
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("name",'SETTINGS[adittional_currency]['+v+']');
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("id",'SETTINGS[adittional_currency]['+v+']');
-            }
-        });
-        
-        $("#addPriceOffer").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            
-            v = tr.find("select[name=arrPricetypes] option:selected").val();
-            t = tr.find("select[name=arrPricetypes] option:selected").text();
-            
-            if(v=="" || v=='[]') return false;
-            if($("tr.offer_additional_prices_id_"+v).length > 0) return false;
-    
-            str = '<tr class="offer_additional_prices_id_'+v+'"><td width="40%" class="adm-detail-content-cell-l">'+'<?php echo GetMessage('parser_preview_price');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[offer][selector_additional_prices]['+v+'][value]" size="40" maxlength="250">&nbsp;<a href="#" class="price_delete" data-price-id="'+v+'">Delete</a><input type="hidden" name="SETTINGS[offer][selector_additional_prices]['+v+'][name]" value="'+t+'"></td></tr>';
-            tr.before(str);
-            
-            r = $("tr.adittional_prices_settings").eq(0);
-            str='';                                                         
-            if($(".adittional_prices_settings_id_"+v).length == 0) {
-                str = '<tr width="40%" class="adittional_prices_settings_id_'+v+'"><td class="adm-detail-content-cell-l"><?echo GetMessage('parser_aditt_currency');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><?=SelectBoxFromArray('SETTINGS[adittional_currency][currency_id]', $arCurrency, "RUB", "", "");?></td></tr>';
-                r.after(str);
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("name",'SETTINGS[adittional_currency]['+v+']');
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("id",'SETTINGS[adittional_currency]['+v+']');
-            }
-        });
-        
-        $("#addNamePriceOffer").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            
-            v = tr.find("select[name=arrPricetypes] option:selected").val();
-            t = tr.find("select[name=arrPricetypes] option:selected").text();
-            
-            if(v=="" || v=='[]') return false;
-            if($("tr.offer_additional_prices_name_id_"+v).length > 0) return false;
-    
-            str = '<tr class="offer_additional_prices_name_id_'+v+'"><td width="40%" class="adm-detail-content-cell-l">'+'<?php echo GetMessage('parser_preview_price');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[offer][find_price]['+v+'][value]" size="40" maxlength="250">&nbsp;<a href="#" class="price_delete" data-price-id="'+v+'">Delete</a><input type="hidden" name="SETTINGS[offer][find_price]['+v+'][name]" value="'+t+'"></td></tr>';
-            tr.before(str);
-            
-            r = $("tr.adittional_prices_settings").eq(0);
-            str='';                                                         
-            if($(".adittional_prices_settings_id_"+v).length == 0) {
-                str = '<tr width="40%" class="adittional_prices_settings_id_'+v+'"><td class="adm-detail-content-cell-l"><?echo GetMessage('parser_aditt_currency');?>'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><?=SelectBoxFromArray('SETTINGS[adittional_currency][currency_id]', $arCurrency, "RUB", "", "");?></td></tr>';
-                r.after(str);
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("name",'SETTINGS[adittional_currency]['+v+']');
-                document.getElementById('SETTINGS[adittional_currency][currency_id]').setAttribute("id",'SETTINGS[adittional_currency]['+v+']');
-            }
-        });
-        
-        
-        $("body").on("click", ".price_delete", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            tr.remove();   
-            price_id = $(this).attr("data-price-id");
-            console.log(price_id);
-            if($("tr.adittional_detail_prices_id_"+price_id).length == 0 && $("tr.adittional_preview_prices_id_"+price_id).length == 0 && $("tr.offer_additional_prices_id_"+price_id).length == 0&&$("tr.offer_additional_prices_name_id_"+price_id).length == 0){
-                $("tr.adittional_prices_settings_id_"+price_id).remove();    
-            }            
-        });
-        
-        $("body").on("click", ".delete_availability_row", function(e){  
-            e.preventDefault();
-            $(this).parent().parent().remove();
-        }); 
-        
-        $("body").on("click", ".delete_proxy_server", function(e){  
-            e.preventDefault();
-            $(this).parent().parent().remove();
-        });   
-        
-        $("body").on("click", "#addProxyServer", function(e){  
-            e.preventDefault();                  
-            tr = $(this).parent().parent().prev();
-            id = tr.attr('data-id');
-            if(id==undefined)
-                id = 0;
-            id++;            
-            str = '<tr data-id="'+id+'"><td class="adm-detail-content-cell-l"><?php echo GetMessage('parser_proxy');?> '+id+':</td><td class="adm-detail-content-cell-r"><input size="40" type="text" name="SETTINGS[proxy][servers]['+id+'][ip]"> <input placeholder="username:password" size="30" type="text" name="SETTINGS[proxy][servers]['+id+'][username_password]"> <a href="#" class="delete_proxy_server"><?php echo GetMessage('delete');?></a></td></tr>';
-            tr.after(str);
-        });
-        
-        $("#addAvailabilityRow").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parent().parent().prev();
-            count = tr.attr('data-count');
-            if(count==undefined)
-                count = 0;
-            count++;            
-            str = '<tr data-count="'+count+'"><td width="40%" class="adm-detail-content-cell-l"><?php echo GetMessage('parser_availability_row').':';?></td><td width="60%" class="adm-detail-content-cell-r"><?php echo GetMessage('parser_availability_informer');?> <input type="text" name="SETTINGS[availability][list]['+count+'][text]"><?php echo ' - '.GetMessage('parser_availability_count');?> <input type="text" name="SETTINGS[availability][list]['+count+'][count]"><a href="#" class="delete_availability_row">Delete</a></td></tr>';
-            tr.after(str);
-        });
-        
         $("#loadDopProp").on("click", function(e){
             e.preventDefault();
             tr = $(this).parents("tr").eq(0);
@@ -1048,26 +840,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                 sotbit_iblock_edit_property("loadDopProp", tr);
                 return false;
             }
-            str = '<tr class="row_dop_prop"><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][selector_prop]['+v+']" data-code="'+v+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
-            tr.before(str);
-        });
-        
-        $("#loadFilterProps").on("click", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            
-            v = tr.find("select[name=arrPropsFilter] option:selected").val();
-            t = tr.find("select[name=arrPropsFilter] option:selected").text();
-            if(v=="") return false;
-            else if(v=="[]")
-            {
-                sotbit_iblock_edit_property("loadFilterProps", tr);
-                return false;
-            }
-            
-            selectFilter = '<select name="SETTINGS[props_filter_circs][]['+v+']"><option value="equally"><?=GetMessage('parser_filter_equally');?></option><option value="strpos"><?=GetMessage('parser_filter_strpos');?></option><option value="stripos"><?=GetMessage('parser_filter_stripos');?></option></select>';
-            
-            str = '<tr class="row_dop_prop"><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r">'+selectFilter+'<input type="text" value="" name="SETTINGS[props_filter_value][]['+v+']" data-code="'+v+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
+            str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][selector_prop]['+v+']" data-code="'+v+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
             tr.before(str);
         });
         
@@ -1174,8 +947,8 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                 return false;
             }
             //str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][find_prop_preview]['+v+']" data-code="'+v+'" size="40">&nbsp;<a href="#" class="prop_delete">Delete</a></td></tr>';
-            if(v=="SOTBIT_PARSER_NAME_E") str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+':</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+v+'][]" data-code="'+v+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+v+']" name="SETTINGS[catalog][action_props]['+v+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option><option value="lower"><?=GetMessage("parser_action_props_to_lower")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
-            else str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+v+'][]" data-code="'+v+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+v+']" name="SETTINGS[catalog][action_props]['+v+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option><option value="lower"><?=GetMessage("parser_action_props_to_lower")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
+            if(v=="SOTBIT_PARSER_NAME_E") str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+':</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+v+'][]" data-code="'+v+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+v+']" name="SETTINGS[catalog][action_props]['+v+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
+            else str = '<tr><td width="40%" class="adm-detail-content-cell-l">'+t+'&nbsp;['+v+']:</td><td width="60%" class="adm-detail-content-cell-r"><input type="text" value="" name="SETTINGS[catalog][action_props_val]['+v+'][]" data-code="'+v+'" size="40">&nbsp; <select id="SETTINGS[catalog][action_props]['+v+']" name="SETTINGS[catalog][action_props]['+v+'][]"><option value=""><?=GetMessage("shs_parser_select_action_props")?></option><option value="delete"><?=GetMessage("parser_action_props_delete")?></option><option value="add_b"><?=GetMessage("parser_action_props_add_begin")?></option><option value="add_e"><?=GetMessage("parser_action_props_add_end")?></option></select> <a href="#" class="find_delete">Delete</a></td></tr>';
             
             tr.before(str);
         });
@@ -1192,7 +965,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
         
         
         $("#instruction").attr("target", "_blank");
-        
         $("body").on("click", ".prop_delete", function(e){
             e.preventDefault();
             tr = $(this).parents("tr").eq(0);
@@ -1201,7 +973,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             v = tr.find("input").attr("data-code");
             prev = $("#delete_selector_prop").val();
             $("#delete_selector_prop").val(prev+","+v);
-        });    
+        });
         
         $("body").on("click", ".dop_rss_delete", function(e){
             e.preventDefault();
@@ -1223,31 +995,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                 input = td_2.children("input").eq(0);
                 select.attr("name", "SETTINGS[catalog][section_dop]["+numer+"]");
                 input.attr("name", "SETTINGS[catalog][rss_dop]["+numer+"]");
-                numer ++;
-            });
-        }
-        
-        
-        $("body").on("click", ".id_category_main", function(e){
-            e.preventDefault();
-            tr = $(this).parents("tr").eq(0);
-            tr.html("");
-            tr.remove();
-            var arrDopRss = $(".admin_tr_rss_dop");
-            remove_element_dop_rss();
-        });
-
-        function remove_element_dop_rss()
-        {
-            numer = 1;
-            $(".admin_tr_rss_dop").each(function(){
-                td_1 = $(this).children("td").eq(0);
-                td_2 = $(this).children("td").eq(1);
-                td_1.html("<?echo GetMessage("parser_dop_load_rss");?>" + numer);
-                select = td_2.children("select").eq(0);
-                input = td_2.children("input").eq(0);
-                select.attr("name", "SETTINGS[catalog][section_main]["+numer+"]");
-                input.attr("name", "SETTINGS[catalog][id_category_main]["+numer+"]");
                 numer ++;
             });
         }
@@ -1383,30 +1130,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             })
 
         })
-        
-        jQuery('#loadMainCategory').click(function(){
-            iblock = jQuery("#iblock").val();
-            var el = $(this);
-            jQuery.ajax({
-               url: "",
-               type: "POST",
-               data: 'ajax=1&iblock='+iblock,
-               dataType: 'html',
-               beforeSend: function(){BX.showWait();},
-               success: function(data){
-                 var ar = new Array();
-                 ar = data.split("#SOTBIT#");
-                 var count_rss = $(".admin_tr_rss_dop").length;
-                 count_rss = count_rss*1 + 1;
-                 var str = '<tr class="admin_tr_rss_dop"><td class="adm-detail-content-cell-l"><?echo GetMessage("parser_id_category_main");?>'+count_rss+'</td><td class="adm-detail-content-cell-r"><input type="text" name="SETTINGS[catalog][id_category_main]['+count_rss+']" value="" size="50" maxlength="500"/><select style="width:262px;" name="SETTINGS[catalog][section_main]['+count_rss+']">'+ar[0]+'</select><a class="id_category_main" href="#"><?=GetMessage("parser_caption_detete_button");?></a></td></tr>';
-                 var element = el.closest("tr");
-                 element.before(str);
-                 BX.closeWait();
-               }
-
-            })
-
-        })
 
         $('.bool-delete').change(function(){
           if($(this).prop('checked')){
@@ -1533,80 +1256,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
                 })    
         }
         
-        function sotbitAjaxCsv(href2, start)
-        {
-                if(start==1)
-                {
-                    sotbitStopStart = 0;
-                    href = href2+"&begin=1";
-                    sotbitStop = 0;
-                }
-                else href=href2;
-                BX.ajax.get(href, "", function(data){
-                    //clearInterval(ajaxInterval);
-                    prog = 100;
-                    $('#progress_text').html(prog + '%');
-                    $('#progress_bar_inner').width(500 * prog / 100);
-                    //$("#status_bar").hide();
-                    $('#progress_text').html(100 + '%');
-                    if(data!="stop")$("#shs_message").html(data);
-                    //if(sotbitStop!=1)sotbitAjaxCatalog(href2, 0);
-                    //else sotbitStop = 0;
-                    
-                    if(data!="stop" && sotbitStopStart!=1 && debug!=1) sotbitAjaxCsv(href2, 0);
-                    else
-                    {   
-                        if(sotbitStopStart==1)sotbitStop = 1;
-                        //if(debug==1) 
-                        sotbitStop = 1;
-                        $("#btn_stop_csv").attr("id", "btn_start_csv");
-                        $("#btn_start_csv").text(<?echo '"'.GetMessage("parser_start").'"'?>); 
-                        setTimeout(function(){
-                            sotbitCountAjax(href1, 1);    
-                        },1000)
-                            
-                    }                            
-                    
-                })    
-        }
-        
-        function sotbitAjaxXls(href2, start)
-        {
-                if(start==1)
-                {
-                    sotbitStopStart = 0;
-                    href = href2+"&begin=1";
-                    sotbitStop = 0;
-                }
-                else href=href2;
-                BX.ajax.get(href, "", function(data){
-                    //clearInterval(ajaxInterval);
-                    prog = 100;
-                    $('#progress_text').html(prog + '%');
-                    $('#progress_bar_inner').width(500 * prog / 100);
-                    //$("#status_bar").hide();
-                    $('#progress_text').html(100 + '%');
-                    if(data!="stop")$("#shs_message").html(data);
-                    //if(sotbitStop!=1)sotbitAjaxCatalog(href2, 0);
-                    //else sotbitStop = 0;
-                    
-                    if(data!="stop" && sotbitStopStart!=1 && debug!=1) sotbitAjaxXls(href2, 0);
-                    else
-                    {   
-                        if(sotbitStopStart==1)sotbitStop = 1;
-                        //if(debug==1) 
-                        sotbitStop = 1;
-                        $("#btn_stop_xls").attr("id", "btn_start_xls");
-                        $("#btn_start_xls").text(<?echo '"'.GetMessage("parser_start").'"'?>); 
-                        setTimeout(function(){
-                            sotbitCountAjax(href1, 1);    
-                        },1000)
-                            
-                    }                            
-                    
-                })    
-        }
-        
         $("body").on("click", "#btn_stop_catalog", function(e){
             e.preventDefault();
             sotbitStopStart = 1;
@@ -1614,11 +1263,6 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
         
         //stop parsing xml
         $("body").on("click", "#btn_stop_xml", function(e){
-            e.preventDefault();
-            sotbitStopStart = 1;
-        })
-        
-        $("body").on("click", "#btn_stop_csv, #btn_stop_xls", function(e){
             e.preventDefault();
             sotbitStopStart = 1;
         })
@@ -1634,9 +1278,13 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             //ajaxInterval = setInterval(function(){
             sotbitCountAjax(href1, 0);
             //}, 1000);
+            
+            
+
             sotbitAjaxCatalog(href2, 1);
 
             return false;
+
         })
          //start parsing xml
          $("body").on('click', "#btn_start_xml", function(e) {   
@@ -1646,43 +1294,17 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
             $(this).text(<?echo '"'.GetMessage("btn_stop_catalog").'"'?>);
             href1 = $(this).attr("href")+"&ajax_count=1&type=xml";
             href2 = $(this).attr("href")+"&ajax_start=1&type=xml";
+
             //ajaxInterval = setInterval(function(){
             sotbitCountAjax(href1, 0);
             //}, 1000);
+            
+         
+
             sotbitAjaxXML(href2, 1);
 
             return false;
 
-        })
-        
-         $("body").on('click', "#btn_start_csv", function(e) {   
-            e.preventDefault();
-            $(this).attr("id", "btn_stop_csv");
-            $("#status_bar").show();
-            $(this).text(<?echo '"'.GetMessage("btn_stop_catalog").'"'?>);
-            href1 = $(this).attr("href")+"&ajax_count=1&type=csv";
-            href2 = $(this).attr("href")+"&ajax_start=1&type=csv";
-            //ajaxInterval = setInterval(function(){
-            sotbitCountAjax(href1, 0);
-            //}, 1000);
-            sotbitAjaxCsv(href2, 1);
-
-            return false;
-        })
-        
-        $("body").on('click', "#btn_start_xls", function(e) {   
-            e.preventDefault();
-            $(this).attr("id", "btn_stop_xls");
-            $("#status_bar").show();
-            $(this).text(<?echo '"'.GetMessage("btn_stop_catalog").'"'?>);
-            href1 = $(this).attr("href")+"&ajax_count=1&type=xls";
-            href2 = $(this).attr("href")+"&ajax_start=1&type=xls";
-            //ajaxInterval = setInterval(function(){
-            sotbitCountAjax(href1, 0);
-            //}, 1000);
-            sotbitAjaxXls(href2, 1);
-
-            return false;
         })
         
         function sotbitCountAjax(href1, num)
@@ -1809,7 +1431,7 @@ elseif((!$shs_TYPE && $ID) || $shs_TYPE=="rss" || (isset($_GET["type"]) && $_GET
     }else{
         echo "0|0";
     }
-    if($_GET["type"]=="catalog"  || $_GET["type"]=="csv" || $_GET["type"]=="xml" || $_GET["type"]=="xls")
+    if($_GET["type"]=="catalog" || $_GET["type"]=="xml")
     {
         $file1 = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/include/count_parser_catalog".$_REQUEST["ID"].".txt";
         if(isset($_REQUEST["ID"]) && file_exists($file1))

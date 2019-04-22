@@ -6,17 +6,11 @@ use Bitrix\Main\Text\Converter;
 use Bitrix\Main\Localization\Loc;
 use Bitrix\Main\IO\Path;
 
-
 \Bitrix\Main\Loader::includeModule('seo');
 \Bitrix\Main\Loader::includeModule('socialservices');
 
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/lib/result_parser.php");
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/lib/result_parser_product.php");
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/classes/general/smart_logs.php");
-
 class SotbitContentParser {
     
-    public $result_id;
     public $id = false;
     public $rss;
     public $typeN;
@@ -53,7 +47,6 @@ class SotbitContentParser {
     public $countPage = 0;
     public $countItem = 0;
     public $stepStart = false;
-    public $paramIndex = array();
 
     public $page;
     const TEST = 0;
@@ -61,15 +54,15 @@ class SotbitContentParser {
     const DEFAULT_DEBUG_ITEM = 3;
     
     public function __construct()
-    {                
+    {
         global $zis, $shs_ID, $shs_TYPE, $shs_ACTIVE, $shs_IBLOCK_ID, $shs_RSS, $shs_SECTION_ID, $shs_SELECTOR, $shs_ENCODING, $shs_PREVIEW_DELETE_TAG, $shs_PREVIEW_TEXT_TYPE, $shs_DETAIL_TEXT_TYPE, $shs_BOOL_PREVIEW_DELETE_TAG,$shs_PREVIEW_FIRST_IMG, $shs_PREVIEW_SAVE_IMG, $shs_DETAIL_DELETE_TAG, $shs_BOOL_DETAIL_DELETE_TAG,$shs_DETAIL_FIRST_IMG, $shs_DETAIL_SAVE_IMG, $shs_PREVIEW_DELETE_ELEMENT, $shs_DETAIL_DELETE_ELEMENT, $shs_PREVIEW_DELETE_ATTRIBUTE, $shs_DETAIL_DELETE_ATTRIBUTE, $shs_INDEX_ELEMENT, $shs_CODE_ELEMENT, $shs_RESIZE_IMAGE, $shs_META_DESCRIPTION, $shs_META_KEYWORDS, $shs_ACTIVE_ELEMENT, $shs_FIRST_TITLE, $shs_DATE_PUBLIC, $shs_FIRST_URL, $shs_DATE_ACTIVE, $shs_META_TITLE, $shs_SETTINGS, $shs_TMP;
-        $this->id = $shs_ID;  
+        $this->id = $shs_ID;
         $this->typeN = $shs_TYPE;
         $this->rss = $shs_RSS;
         $this->active = $shs_ACTIVE;
         $this->iblock_id = $shs_IBLOCK_ID;
         $this->section_id = $shs_SECTION_ID;
-        $this->detail_dom = htmlspecialchars_decode($shs_SELECTOR);
+        $this->detail_dom = $shs_SELECTOR;
         $this->first_url = trim($shs_FIRST_URL);
         $this->encoding = $shs_ENCODING;
         $this->preview_text_type = $shs_PREVIEW_TEXT_TYPE;
@@ -96,11 +89,11 @@ class SotbitContentParser {
         $this->first_title = $shs_FIRST_TITLE;
         $this->date_public = $shs_DATE_PUBLIC;
         $this->date_active = $shs_DATE_ACTIVE;
-        $this->tmp = $shs_TMP;     
+        $this->tmp = $shs_TMP;
         $this->settings = unserialize(base64_decode($shs_SETTINGS));
         $this->header_url = "";
         $this->sleep = (int)$this->settings[$this->typeN]["sleep"];
-        $this->proxy = array_merge(array($this->settings[$this->typeN]["proxy"]), $this->settings["proxy"]['servers']);           
+        $this->proxy = (int)$this->settings[$this->typeN]["proxy"];
         $this->errors = array();
         $this->auth = $this->settings[$this->typeN]["auth"]["active"]?true:false;
         $this->currentPage = 0;
@@ -109,11 +102,11 @@ class SotbitContentParser {
         $this->stepStart = false;
         $this->pagePrevElement = array();
         $this->pagenavigationPrev = array();
-        $this->pagenavigation = array();     
+        $this->pagenavigation = array(); 
     }
     
-    public function startParser($agent=false){                                        
-        global $DB, $shs_DEMO; //$agent = true;   
+    public function startParser($agent=false){
+        global $DB, $shs_DEMO; //$agent = true;
         if($shs_DEMO==3) return;
         $this->createFolder();
         $this->createAlbum();
@@ -127,14 +120,14 @@ class SotbitContentParser {
         $now = time()+CTimeZone::GetOffset();
         $arFieldsTime['START_LAST_TIME_X'] = date($DB->DateFormatToPHP(FORMAT_DATETIME), $now);
         $parser->Update($this->id, $arFieldsTime);
-        $this->convetCyrillic($this->rss);    
+        $this->convetCyrillic($this->rss);
         if($this->meta_description!="N"){
             $propDescr = CIBlockProperty::GetList(Array("sort"=>"asc", "name"=>"asc"), Array("ACTIVE"=>"Y", "IBLOCK_ID"=>$this->iblock_id, "CODE"=>$this->meta_description))->Fetch();
             if(!$propDescr){
                 $result["ERROR"][] = GetMessage("parser_error_description");
                 $this->errors[] = GetMessage("parser_error_description");
             }
-        }                                      
+        }
         if($this->meta_keywords!="N"){
             $propKey = CIBlockProperty::GetList(Array("sort"=>"asc", "name"=>"asc"), Array("ACTIVE"=>"Y", "IBLOCK_ID"=>$this->iblock_id, "CODE"=>$this->meta_keywords))->Fetch();
             if(!$propKey){
@@ -168,6 +161,7 @@ class SotbitContentParser {
             }
         }
 
+
         if(isset($result['ERROR']))
         {
             if(!$agent)foreach($result['ERROR'] as $error) CAdminMessage::ShowMessage($error);
@@ -188,13 +182,6 @@ class SotbitContentParser {
                 ExecuteModuleEventEx($arEvent, array($this->id, &$this));
         }
         
-        if($this->settings['smart_log']['enabled']=='Y' && $_GET["begin"]){
-            $settings = $this->settings["smart_log"]["settings"];
-            $this->settings['smart_log']['result_id'] = \Bitrix\Shs\ParserResultTable::saveParserResult($this->id, $settings, intval($this->settings["smart_log"]["iteration"])!=0?intval($this->settings["smart_log"]["iteration"]):1);
-            unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-            file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt", $this->settings['smart_log']['result_id']);
-        }
-        
         if($this->typeN=="catalog")
         {
             $this->isCatalog();
@@ -205,100 +192,44 @@ class SotbitContentParser {
             $this->DoPageNavigation();
             $this->CheckFields($this->settings["catalog"]);
             
-            if(!$this->errors) {
-                $this->parseCatalog();     
-            } else { 
+            if(!$this->errors)$this->parseCatalog();
+            else{    
                 if(!$agent)foreach($this->errors as $error) CAdminMessage::ShowMessage($error);
                 $this->SaveLog();
-                \Bitrix\Shs\ParserResultTable::updateStatus($this->settings['smart_log']['result_id'],-1);
                 return false;
-            }                                                                                        
+            } 
             if($this->debugErrors && $this->settings["catalog"]["mode"]=="debug")
             {
                 if(!$agent)foreach($this->debugErrors as $error) CAdminMessage::ShowMessage($error);
                 $this->SaveLog();
-                return false;
-            }            
-            return true;
-        }
-        if ($this->typeN=="xml")
-        {
-            $this->isCatalog(); //если каталог
-            $this->getUniqElement(); //уникальность элементов
-            $this->isUpdateElement(); //если элементы обновляется
-            $this->GetSortFields(); //формируем массив из тех что постоянно обновляются 
-            $this->getArrayIblock(); //массив полей инфоблока
-            $this->CheckFields($this->settings["catalog"]); //проверки правльности данных и вывод ошибок
-            
-            if(!$this->errors) {
-                $this->parseXmlCatalog();    
-            } else {    
-                if(!$agent)foreach($this->errors as $error) CAdminMessage::ShowMessage($error);
-                $this->SaveLog();
-                \Bitrix\Shs\ParserResultTable::updateStatus($this->settings['smart_log']['result_id'],-1);
-                return false;
-            }                                                                                          
-            if($this->debugErrors && $this->settings["catalog"]["mode"]=="debug")
-            {
-                if(!$agent)foreach($this->debugErrors as $error) CAdminMessage::ShowMessage($error);
-                $this->SaveLog();                                                                         
                 return false;
             }
             return true;
         }
-        
-        if ($this->typeN=="csv")
-        {                                                                                        
-            $this->isCatalog(); //если каталог
-            $this->getUniqElementXls(); //уникальность элементов
-            $this->isUpdateElement(); //если элементы обновляется
-            $this->GetSortFields(); //формируем массив из тех что постоянно обновляются 
-            $this->getArrayIblock(); //массив полей инфоблока
-            $this->CheckFields($this->settings["catalog"]); //проверки правльности данных и вывод ошибок
-                   
-            if(!$this->errors) {
-                $this->parseCsvCatalog();                                            
-            } else {    
+        if ($this->typeN=="xml")
+        {
+            $this->isCatalog(); //���� �������
+            $this->getUniqElement(); //������������ ���������
+            $this->isUpdateElement(); //���� �������� �����������
+            $this->GetSortFields(); //��������� ������ �� ��� ��� ��������� ����������� 
+            $this->getArrayIblock(); //������ ����� ���������
+            $this->CheckFields($this->settings["catalog"]); //�������� ����������� ������ � ����� ������
+            
+            if(!$this->errors)$this->parseXmlCatalog();
+            else{    
                 if(!$agent)foreach($this->errors as $error) CAdminMessage::ShowMessage($error);
                 $this->SaveLog();
-                \Bitrix\Shs\ParserResultTable::updateStatus($this->settings['smart_log']['result_id'],-1);
                 return false;
-            }                                                                                                                
+            } 
             if($this->debugErrors && $this->settings["catalog"]["mode"]=="debug")
             {
                 if(!$agent)foreach($this->debugErrors as $error) CAdminMessage::ShowMessage($error);
                 $this->SaveLog();
                 return false;
-            }                          
+            }
             return true;
         }
-        
-        if ($this->typeN=="xls")
-        {                                                                                  
-            $this->isCatalog(); //если каталог
-            $this->getUniqElementXls(); //уникальность элементов
-            $this->isUpdateElement(); //если элементы обновляется
-            $this->GetSortFields(); //формируем массив из тех что постоянно обновляются 
-            $this->getArrayIblock(); //массив полей инфоблока
-            $this->CheckFields($this->settings["catalog"]); //проверки правльности данных и вывод ошибок
-                   
-            if(!$this->errors) {
-                $this->parseXlsCatalog();         
-            } else {    
-                if(!$agent)foreach($this->errors as $error) CAdminMessage::ShowMessage($error);
-                $this->SaveLog();
-                \Bitrix\Shs\ParserResultTable::updateStatus($this->settings['smart_log']['result_id'],-1);
-                return false;
-            }                          
-            if($this->debugErrors && $this->settings["catalog"]["mode"]=="debug")
-            {
-                if(!$agent)foreach($this->debugErrors as $error) CAdminMessage::ShowMessage($error);
-                $this->SaveLog();
-                return false;
-            }                          
-            return true;
-        }
-         
+
         $this->rss = str_replace(array('http://', 'www.', 'https://'), '', $this->rss);
         $arSite = explode('/', $this->rss);
         $level = explode('.', $arSite[0]);
@@ -326,7 +257,6 @@ class SotbitContentParser {
                 }
             }
         }
-        
         if($this->errors)
         {
             if(!$agent)foreach($this->errors as $error) CAdminMessage::ShowMessage($error);
@@ -337,21 +267,22 @@ class SotbitContentParser {
             //if(!$agent)foreach($result['ERROR'] as $error) CAdminMessage::ShowMessage($error);
             if($this->typeN!="page")return false;
         }
-                                      
+
+
         return $this->setContentIblock($arContent, $this->iblock_id, $this->section_id, $this->detail_dom, $this->encoding);
     }
     
     protected function convetCyrillic(&$url)
-    {                              
+    {
         if(preg_match("/^\/{2}www/", $url))
         {
             $url = preg_replace("/^\/{2}www/", "www", $url);
-        }                                        
+        }
         $converter = new sotbit_idna_convert();
         $url = $converter->encode($url);
     }
     
-    private function setContentIblock($arContent=array(), $iblock_id=false, $section_id=false, $detail_dom="", $encoding="utf-8")   {
+    private function setContentIblock($arContent=array(), $iblock_id=false, $section_id=false, $detail_dom="", $encoding="utf-8"){
         $first = false;
         global $shs_preview, $shs_first, $DB, $shs_DEMO;
         set_time_limit(0);
@@ -382,7 +313,8 @@ class SotbitContentParser {
             else{
                 $md5 = md5($item['link']);
                 $isElement = CIBlockElement::GetList(Array(), array("XML_ID"=>$md5, "SECTION_ID"=>$section_id, "IBLOCK_ID"=>$iblock_id), false, Array("nTopCount"=>1), array("ID"))->Fetch();
-            }            
+            }
+            
             
             $ci++;
             if($isElement && !self::TEST && $shs_DEMO==1) continue;
@@ -393,7 +325,7 @@ class SotbitContentParser {
             $fileHtml = new FileGetHtml();
             $this->date_public_text = $item["pubDate"];
             $proxy = $this->proxy;
-                                                                                                                         
+            
             $data = $fileHtml->file_get_html(mb_ereg_replace("\n", "", $item['link']), $proxy, $this->auth, $this); 
             $this->header_url = $fileHtml->headerUrl;
             if($this->first_url && strpos($this->header_url, $this->first_url)===false && strpos($item['link'], $this->first_url)==false) continue;
@@ -435,6 +367,9 @@ class SotbitContentParser {
             if(!empty($this->detail_delete_attribute)){
                 $detail_html = $this->deleteAttributeStart($detail_html, htmlspecialchars_decode($this->detail_delete_attribute));
             }
+            
+            
+            
             
             $detail_html = $this->changeImgSrc($detail_html);
             $preview_html = $this->changeImgSrc($preview_html);
@@ -621,14 +556,15 @@ class SotbitContentParser {
          
         
         $url = $this->settings[$this->typeN]["auth"]["url"]?$this->settings["catalog"]["auth"]["url"]:$this->rss;
-        $form = $this->settings[$this->typeN]["auth"]["selector"];            
+        $form = $this->settings[$this->typeN]["auth"]["selector"];
+        $proxy = $this->settings[$this->typeN]["proxy"];
         
         $auth = new FileGetHtml();
-        $data = $auth->file_get_html($url, $this->proxy, false, null, null);
+        $data = $auth->file_get_html($url, $proxy);
         $this->urlCatalog = $auth->headerUrl;
         $this->urlSite = $this->getCatalogUrlSite();
         
-        $this->CheckAuthForm($data, $form, $this->proxy);
+        $this->CheckAuthForm($data, $form, $proxy);
         
         if($check)if(isset($this->errors) && count(isset($this->errors))>0)
         {
@@ -784,9 +720,10 @@ class SotbitContentParser {
 
     protected function CheckOnePageNavigation()
     {
-        if($this->settings["catalog"]["pagenavigation_begin"]==1 && $this->settings["catalog"]["pagenavigation_end"]==1) {
+        if($this->settings["catalog"]["pagenavigation_begin"]==1 && $this->settings["catalog"]["pagenavigation_end"]==1)
+        {
             return true;
-        } elseif (!$this->settings["catalog"]["pagenavigation_selector"] && (!isset($this->settings["catalog"]["pagenavigation_var"]) || !$this->settings["catalog"]["pagenavigation_var"])) return true;
+        }elseif(!$this->settings["catalog"]["pagenavigation_selector"] && (!isset($this->settings["catalog"]["pagenavigation_var"]) || !$this->settings["catalog"]["pagenavigation_var"])) return true;
         
         return false;
     }
@@ -858,37 +795,6 @@ class SotbitContentParser {
             }
         }
     }
-
-    protected function getUniqElementXls()
-    {
-        //if($this->settings["catalog"]["update"]["active"]=="Y")
-        {
-            $this->uniqFields["NAME"] = "NAME";
-            //$this->uniqFields["LINK"] = "LINK";
-
-            if($this->settings["catalog"]["uniq"]["prop"])
-            {
-                unset($this->uniqFields["NAME"]);
-                $prop = $this->settings["catalog"]["uniq"]["prop"];
-                $this->uniqFields[$prop] = $prop;
-            }
-            if($this->settings["catalog"]["uniq"]["id"])
-            {
-                unset($this->uniqFields["NAME"]);
-                $this->uniqFields["LINK"] = "LINK";
-            }
-            if($this->settings["catalog"]["uniq"]["xml_id"])
-            {
-                unset($this->uniqFields["NAME"]);
-                $this->uniqFields["XML_ID"] = "XML_ID";
-            }
-            if($this->settings["catalog"]["uniq"]["name"])
-            {
-                unset($this->uniqFields["NAME"]);
-                $this->uniqFields["NAME"] = "NAME";
-            }
-        }
-    }
     
     protected function GetSortFields()
     {
@@ -908,7 +814,7 @@ class SotbitContentParser {
     }
 
     protected function checkUniq()
-    {                                   
+    {   
         if($this->elementUpdate) return $this->elementUpdate;
         if(!isset($this->arSortUpdate)) $this->arSortUpdate = array();
         
@@ -916,14 +822,14 @@ class SotbitContentParser {
         {
             $uniq = md5($this->arFields["NAME"].$this->arFields["LINK"]);
             $isElement = CIBlockElement::GetList(Array(), array("XML_ID"=>$uniq, "IBLOCK_ID"=>$this->iblock_id), false, Array("nTopCount"=>1), array_merge(array("ID"), $this->arSortUpdate))->Fetch();
-            $this->elementUpdate = $isElement["ID"];    
+            $this->elementUpdate = $isElement["ID"];
             if($isElement)
             {
-                $this->arEmptyUpdate = $isElement;   
+                $this->arEmptyUpdate = $isElement;
                 return $isElement["ID"];
             }
-            else return false;    
-        }else{ 
+            else return false;
+        }else{
             if($this->settings["catalog"]["uniq"]["prop"])
             {
                 $prop = $this->settings["catalog"]["uniq"]["prop"];
@@ -976,7 +882,7 @@ class SotbitContentParser {
         $this->iblockOffer = 0;
         if(CModule::IncludeModule('catalog') && ($this->iblock_id && CCatalog::GetList(Array("name" => "asc"), Array("ACTIVE"=>"Y", "ID"=>$this->iblock_id))->Fetch()))
         {
-            if((isset($this->settings["catalog"]["preview_price"]) && $this->settings["catalog"]["preview_price"]!=='') || (isset($this->settings["catalog"]["detail_price"]) && $this->settings["catalog"]["detail_price"]!=='') || (isset($this->settings["catalog"]["detail_count"]) && $this->settings["catalog"]["detail_count"]!=="") || (isset($this->settings["catalog"]["preview_count"]) && $this->settings["catalog"]["preview_count"]!=="") || (isset($this->settings["catalog"]["count_default"]) && $this->settings["catalog"]["count_default"]!==""))
+            if($this->settings["catalog"]["preview_price"] || $this->settings["catalog"]["detail_price"])
             {
                 $this->isCatalog = true;
             }else $this->isCatalog = false;
@@ -1008,6 +914,7 @@ class SotbitContentParser {
                            
             }else $this->isOfferParsing = false; 
         }
+        
         
     }
 
@@ -1046,7 +953,10 @@ class SotbitContentParser {
                     }   
                 }    
             }    
-        }        
+        }
+        
+        
+        
 
         $properties = CIBlockProperty::GetList(Array("sort"=>"asc", "name"=>"asc"), Array("ACTIVE"=>"Y", "IBLOCK_ID"=>$this->iblock_id));
         while ($prop_fields = $properties->GetNext())
@@ -1143,13 +1053,13 @@ class SotbitContentParser {
         else
         {
             $this->arUrlSave = $this->arUrl;
-        }            
+        } 
         
         //if(($this->arUrlSave === false) || !is_array($this->arUrlSave)) return false;
         //if(!$this->connectCatalogPage($this->rss));
         //return;
         foreach($this->arUrlSave as $rss):
-            $rss = trim($rss);      
+            $rss = trim($rss);
             if(empty($rss)) continue;
             
             $this->rss = $rss;
@@ -1185,16 +1095,7 @@ class SotbitContentParser {
                     unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog_step".$this->id.".txt");
                 $this->DeleteCopyPage();
             } 
-            
-            if((!$this->CheckOnePageNavigation() && $this->agent) || 
-            (!$this->CheckOnePageNavigation() && !$this->agent && $this->settings["catalog"]["mode"]=="debug"))
-                $this->parseCatalogPages();                   
-                           
-            if($this->settings['smart_log']['enabled']=='Y'){                                                                                                              
-                $this->settings['smart_log']['result_id'] = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-                $this->settings['smart_log']['result_id'] = \Bitrix\Shs\ParserResultTable::updateEndTime($this->settings['smart_log']['result_id']);
-            }
-                
+            if((!$this->CheckOnePageNavigation() && $this->agent) || (!$this->CheckOnePageNavigation() && !$this->agent && $this->settings["catalog"]["mode"]=="debug"))$this->parseCatalogPages();
             if($this->CheckOnePageNavigation() && $this->stepStart)
             {   
                 if($this->IsEndSectionUrl())$this->ClearBufferStop();
@@ -1203,7 +1104,7 @@ class SotbitContentParser {
             }
         endforeach;
         
-        $this->checkActionAgent($this->agent);
+        $this->checkActionAgent();
 
         if($this->agent || $this->settings["catalog"]["mode"]=="debug"){
             foreach(GetModuleEvents("shs.parser", "EndPars", true) as $arEvent)
@@ -1212,9 +1113,8 @@ class SotbitContentParser {
     }
     
     protected function PageFromFile()
-    {   
+    {
         if($this->settings["catalog"]["mode"]=="debug" || $this->agent || $_GET["begin"]) return true;
-        
         $prevPage = $prevElement = $currentPage = 0;
         if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_page".$this->id.".txt"))
             $prevPage = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_page".$this->id.".txt");
@@ -1265,16 +1165,15 @@ class SotbitContentParser {
             }
         }
         
-        if(isset($this->pagenavigation) && is_array($this->pagenavigation))
-            foreach($this->pagenavigation as $p)
-            {
-                $isContinue = true;
-                $this->rss = $p;
-                break;
-            }
-            
+        if(isset($this->pagenavigation) && is_array($this->pagenavigation))foreach($this->pagenavigation as $p)
+        {
+            $isContinue = true;
+            $this->rss = $p;
+            break;
+        }
         if(!$isContinue && !empty($this->pagenavigationPrev) && $this->IsEndSectionUrl())
-        {        
+        {
+                 
             //if($this->IsEndSectionUrl())
             $this->ClearBufferStop();
             //else $this->ClearBufferStep();
@@ -1297,26 +1196,26 @@ class SotbitContentParser {
     protected function IsEndSectionUrl()
     {
         if(empty($this->arUrl)) return true;
-        //if((!isset($this->settings["catalog"]["url_dop"]) || empty($this->settings["catalog"]["url_dop"])) && (!isset($this->settings["catalog"]["rss_dop"]) || empty($this->settings["catalog"]["rss_dop"]))) return true;
+        if((!isset($this->settings["catalog"]["url_dop"]) || empty($this->settings["catalog"]["url_dop"])) && (!isset($this->settings["catalog"]["rss_dop"]) || empty($this->settings["catalog"]["rss_dop"]))) return true;
         
         $count = 0;
         foreach($this->arUrl as $i=>$url)
         {
             if(isset($this->pagenavigationPrev[$url])) $count++;   
-        }                                                                                           
+        }
         if($count==count($this->arUrl)) return true;
          
         else return false;
     }
     
     protected function GetUrlRss()
-    {  
+    {
         foreach($this->arUrl as $i=>$url)
         {
             if(isset($this->pagenavigationPrev[$url])) continue;
             return $url;
         }        
-    } 
+    }
     
     protected function ClearBufferStop()
     {
@@ -1328,6 +1227,7 @@ class SotbitContentParser {
             $this->checkActionAgent(false);
             foreach(GetModuleEvents("shs.parser", "EndPars", true) as $arEvent)
                 ExecuteModuleEventEx($arEvent, array($this->id));
+
             die("stop");    
         }
     }
@@ -1349,13 +1249,12 @@ class SotbitContentParser {
         $this->activeCurrentPage++;
         $this->SetCatalogElementsResult($this->activeCurrentPage);
         
-        $element = htmlspecialchars_decode($this->settings["catalog"]["selector"]); 
+        $element = $this->settings["catalog"]["selector"];
 
         if($this->preview_delete_element)$this->deleteCatalogElement($this->preview_delete_element, $element, $this->html[$element]);
         if($this->preview_delete_attribute)$this->deleteCatalogAttribute($this->preview_delete_attribute, $element, $this->html[$element]);
         $i = 0;
-        $ci = 0;                        
-        
+        $ci = 0;
         foreach($this->html[$element] as $el)
         {
             $count++;
@@ -1381,13 +1280,12 @@ class SotbitContentParser {
         if($count==0)
         {
             $this->errors[] = GetMessage("parser_error_selector_notfound")."[".$element."]";
-            $this->clearFields();   
+            $this->clearFields();
             //die();
         }
 
-
         foreach($this->html[$element] as $el)
-        {      
+        {
             $ci++;
             if($this->StepContinue($ci, $count)) continue;
             if ($this->typeN == "xml") $debug_item = SotbitXmlParser::DEFAULT_DEBUG_ITEM;
@@ -1407,13 +1305,11 @@ class SotbitContentParser {
             
         }
         unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser".$this->id.".txt");
-        
     }
 
     protected function parseCatalogProductElement(&$el)
-    {                    
+    {
         $this->countItem++;
-            
         if(!$this->parserCatalogPreview($el))
         {
             //$this->SaveLog();
@@ -1427,7 +1323,8 @@ class SotbitContentParser {
         $this->parseCatalogMeta();
         $this->parseCatalogFirstUrl();
         $this->parseCatalogDate();
-        $this->parseCatalogAllFields();   
+        $this->parseCatalogAllFields();
+
 
         $db_events = GetModuleEvents("shs.parser", "parserBeforeAddElementCatalog", true); //27.10.2015
         $error = false;
@@ -1441,18 +1338,24 @@ class SotbitContentParser {
             }
         }
 
-        if(!$error && !$error_isad) {//27.10.2015 
-            $this->AddElementCatalog();   
+        if(!$error && !$error_isad) //27.10.2015
+        {
+            $this->AddElementCatalog();
             foreach(GetModuleEvents("shs.parser", "parserAfterAddElementCatalog", true) as $arEvent)
-                ExecuteModuleEventEx($arEvent, array(&$this, &$el));   
-        }                                 
-        if($this->isCatalog && $this->elementID) {                  
+                ExecuteModuleEventEx($arEvent, array(&$this, &$el));
+        }
+
+        if($this->isCatalog && $this->elementID)
+        {   
             /*if($this->boolOffer)
             {
                 return true;    
             }*/
+            
+            
+            
             if($this->isOfferCatalog && !$this->boolOffer)
-            {                              
+            {                                  
                 $this->AddElementOfferCatalog();
                 $this->elementID = $this->elementOfferID;
                 $this->elementUpdate = $this->elementOfferUpdate;
@@ -1460,26 +1363,20 @@ class SotbitContentParser {
             if($this->boolOffer)
             {
                 $this->addProductPriceOffers();
-            } else {         
+            }else{
+                
                 $this->AddProductCatalog();
                 $this->AddMeasureCatalog();
                 $this->AddPriceCatalog();
                 $this->addAvailable();    
             }
             
-            $this->parseStore();
-            $this->updateQuantity();
-            
         }/*else{
             $this->AddElementOfferCatalog();
             $this->AddProductCatalog();
             $this->AddMeasureCatalog();
             $this->AddPriceCatalog();    
-        }*/                                                                           
-        if($this->settings['smart_log']['enabled']=='Y' && $this->elementID) {        
-            $this->settings['smart_log']['result_id'] = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-            SmartLogs::saveNewValues($this->elementID, $this->settings["smart_log"], $this->arFields, isset($this->arPrice['PRICE'])?$this->arPrice['PRICE']:null, $this->arProduct);
-        }        
+        }*/
 
         $this->SetCatalogElementsResult();
         $this->clearFilesTemp();
@@ -1497,19 +1394,12 @@ class SotbitContentParser {
                 {
                     $this->AddElementOfferCatalogTable($field);
                     $arPrice = $this->arOfferAll["PRICE"][$i];
-                    $arAdditPrice = $this->arOfferAll["ADDIT_PRICE"][$i];
                     $arQuantity = $this->arOfferAll["QUANTITY"][$i];
                     $this->arPrice = $arPrice;
-                    $this->arAdditionalPrice = $arAdditPrice;
                     $this->AddProductCatalogOffer($field);
                     $this->AddMeasureCatalogOffer($field);
                     $this->AddPriceCatalogOffer($arPrice, $field);
-                    $this->AddQuantityCatalogOffer($arQuantity, $field);                         
-                    if($this->settings['smart_log']['enabled']=='Y' && $this->elementOfferID) {      
-                        $arFields = array_merge($this->arOfferAll,array('AVAILABLE_PREVIEW'=>$arQuantity["QUANTITY"]));  
-                        $this->settings['smart_log']['result_id'] = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-                        SmartLogs::saveNewValuesOffer($this->elementOfferID, $this->settings["smart_log"], $arFields, $arPrice["PRICE"], $this->arProduct, true);
-                    }
+                    $this->AddQuantityCatalogOffer($arQuantity, $field);
                     
                     if(isset($this->elementOfferID))
                         unset($this->elementOfferID);
@@ -1517,8 +1407,12 @@ class SotbitContentParser {
                     if(isset($this->elementOfferUpdate))
                         unset($this->elementOfferUpdate);
                 }
-            } 
-        }     
+            }
+        
+            
+        }
+        
+        //printr($this->arOfferAll);
     }
     
     protected function AddElementOfferCatalogTable($arFields)
@@ -1530,25 +1424,19 @@ class SotbitContentParser {
         $arFields["PROPERTY_VALUES"][$this->offerArray["SKU_PROPERTY_ID"]] = $this->elementID; 
         if(!$isElement)
         {   
+
             $id = $el->Add($arFields, "N", $this->index_element, $this->resize_image);
-    
             if(!$id)
             {   
                 $this->errors[] = GetMessage("parser_offer_name").$arFields["NAME"]."[".$this->arFields["LINK"]."] - ".$el->LAST_ERROR;
             }else{
                 $this->elementOfferID = $id;
                 $this->addTmp($id);    
-                if($this->settings['smart_log']['enabled']=='Y') {
-                    SmartLogs::saveOldValuesOffer($isElement,$this->settings['smart_log'], $this->iblock_id,$id);
-                }
             } 
-        }else{               
+        }else{
             $this->elementOfferID = $isElement;
-            if($this->settings['smart_log']['enabled']=='Y') {
-                SmartLogs::saveOldValuesOffer($isElement,$this->settings['smart_log'], $this->iblock_id, $this->elementOfferID);
-            }
             $el->Update($isElement, $arFields);
-            $this->addTmp($isElement);    
+            $this->addTmp($isElement);
         } 
        
         unset($el);    
@@ -1563,7 +1451,6 @@ class SotbitContentParser {
         
         if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog_step".$this->id.".txt"))
             $file = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog_step".$this->id.".txt");
-                      
         if($file)
         {
             $arFile = explode("|", $file);
@@ -1571,16 +1458,17 @@ class SotbitContentParser {
             $currentElement = (int)$arFile[1];    
         }else{
             return false;
-        }                                                                                                                            
+        }
+
         if($currentElement>0 && $n<=$currentElement && $currentElement%$step==0) return true;
         else return false;    
     }
     
     protected function CalculateStep($count = 0)
-    {   
+    {           
+
         if($this->settings["catalog"]["mode"]=="debug" || $this->agent || $this->stepStart) return true;
         $step = $this->settings["catalog"]["step"];
-        
         if($step>$count && $count>0)
         {
             $this->stepStart = true;
@@ -1597,21 +1485,22 @@ class SotbitContentParser {
         }else{
             $countElement = $count;
             $currentElement = 0;   
-        }                                         
-        
+        }
         if($countElement-$currentElement<=$step && $countElement>0 && $count==0)
         {
             $this->stepStart = true;
-        }                                                                             
+        }
          
-        if($count==0) return true;   
+        if($count==0) return true;
         $currentElement++;
         file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog_step".$this->id.".txt", $countElement."|".$currentElement);
         if($currentElement%$step==0 && !$this->stepStart)
         {
             $this->clearFields();
             $this->ClearBufferStep();
-        }                   
+        }
+        
+            
     }
     
     protected function SetCatalogElementsResult($page=false)
@@ -1644,11 +1533,9 @@ class SotbitContentParser {
             if(isset($this->errors) && count($this->errors))$errorElement++;
             $this->SavePrevPageDetail($this->arFields["LINK"]);    
         }
-        
         if(isset($this->errors) && count($this->errors)>0)$allError = $allError+count($this->errors);
         file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog".$this->id.".txt", "|".$countPage."|".$ciElement."|".$errorElement."|".$allError."|".$this->countSection);
     }
-    
     /*?????????? ? ????? ?????? ????????*/
     protected function SaveCatalogError()
     {
@@ -1690,114 +1577,66 @@ class SotbitContentParser {
         {
             $this->arFields["CODE"] = $this->getCodeElement($this->arFields["NAME"]);
         }
+
         if($this->uniqFields["LINK"])
         {
             $uniq = md5($this->arFields["NAME"].$this->arFields["LINK"]);
             $this->arFields["XML_ID"] = $uniq;
         }
+        
         if($this->date_active=="NOW") $this->arFields["DATE_ACTIVE_FROM"] = ConvertTimeStamp(time() + CTimeZone::GetOffset(), "SHORT");
         elseif($this->date_active=="NOW_TIME") $this->arFields["DATE_ACTIVE_FROM"] = ConvertTimeStamp(time() + CTimeZone::GetOffset(), "FULL");
         //elseif($this->date_active=="PUBLIC" && $unix) $this->arFields["DATE_ACTIVE_FROM"] = ConvertTimeStamp($unix, "FULL");
     }
-    
-    
-    protected function GetElementFilter()
-    {
-        if($this->settings["catalog"]["section_main_filter"] != "Y" && $this->settings["catalog"]["enable_props_filter"] != "Y"){
-            //������� ���������    
-            return true;
-        }    
-                                                             
-        //var_dump($this->settings["catalog"]["section_main"]); 
-        if($this->settings["catalog"]["section_main_filter"] == "Y") {  
-            //��� ������ ���������                   
-            if(!in_array($this->arFields["IBLOCK_SECTION_ID"], $this->settings["catalog"]["section_main"]))
-            {                                                     
-                return false;
-            }
-        }                                                 
-        
-        if($this->settings["catalog"]["enable_props_filter"] == "Y") {  
-            //��� ������ �������
-            if(isset($this->settings["props_filter_value"]) && count($this->settings["props_filter_value"]) > 0) {
-                if(isset($this->propsFilter) && count($this->propsFilter) > 0)
-                {                                
-                    $count = 0;                  
-                    foreach($this->propsFilter as $id => $val)
-                    {
-                        if($val == "Y")
-                        {
-                            $count ++;
-                            break;
-                        } 
-                    }
-                    if($count > 0) return true;
-                    else return false;
-                    
-                }
-                else 
-                {
-                    return false;
-                }    
-            } else {
-                return true;
-            }
-        }
-    }
 
-    protected function AddElementCatalog() {      
-        if($this->checkUniq() && !$this->isUpdate) return false;   
-        if($this->GetElementFilter() === false) return false;      
-        $el = new CIBlockElement;
+    protected function AddElementCatalog()
+    {
+        if($this->checkUniq() && !$this->isUpdate) return false;
+        $el = new CIBlockElement;   
         $isElement = $this->checkUniq();
-        $this->boolUpdate = true;              
-                                     
-        
-        if(!$isElement) {
-            if($this->settings["catalog"]["update"]["add_element"] == "Y") {
+        $this->boolUpdate = true;
+
+        if(!$isElement)
+        {   
+            if($this->settings["catalog"]["update"]["add_element"] == "Y")
+            {
                 $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] - ".GetMessage("parser_error_id_not_add_element");
                 return false;
             }
             $id = $el->Add($this->arFields, "N", $this->index_element, $this->resize_image);
-            if($this->settings['smart_log']['enabled']=='Y') {
-                SmartLogs::saveOldValues($isElement,$this->settings['smart_log'], $this->iblock_id,$id);
-            }
-            
             if(!$id)
             {   
-                $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] - ".$el->LAST_ERROR;            
+                $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] - ".$el->LAST_ERROR;
             }else{
                 $this->elementID = $id; 
                 $this->addTmp($id);
-                $this->addSeoUniqYandex($this->arFields);     
+                $this->addSeoUniqYandex($this->arFields);   
             } 
-        } else {                       
-            $this->clearFieldsUpdate();
-            $this->elementID = $isElement;
-            
-            if($this->settings['smart_log']['enabled']=='Y') {
-                SmartLogs::saveOldValues($isElement,$this->settings['smart_log'], $this->iblock_id ,$this->elementID);         
-            }
-            $el->Update($isElement, $this->arFields);
-            $this->arFields["NAME"] = $this->elementName;
-            $this->addTmp($isElement);
-        }    
+        }else{
+             $this->clearFieldsUpdate();
+             $this->elementID = $isElement;
+             $el->Update($isElement, $this->arFields);
+             $this->arFields["NAME"] = $this->elementName;
+             $this->addTmp($isElement);
+        }
         
         unset($el);
     }
     
-    protected function AddElementOfferCatalog() {  
+    protected function AddElementOfferCatalog()
+    {   
         if($this->elementUpdate && !$this->isUpdate) return false;
         $el = new CIBlockElement;  
-                                   
-        $isElement = $this->checkOfferUniq();  
-        if(!$isElement) {   
+        
+        $isElement = $this->checkOfferUniq(); 
+        if(!$isElement)
+        {   
             $this->arOfferFields["XML_ID"] = "offer#".md5($this->arFields["NAME"].$this->arFields["LINK"]);
             $this->arOfferFields["NAME"] = $this->arFields["NAME"];
             $this->arOfferFields["IBLOCK_ID"] = $this->offerArray["IBLOCK_ID"];
             $this->arOfferFields["PROPERTY_VALUES"][$this->offerArray["SKU_PROPERTY_ID"]] = $this->elementID;
             
-            $id = $el->Add($this->arOfferFields, "N", $this->index_element, $this->resize_image);           
+            $id = $el->Add($this->arOfferFields, "N", $this->index_element, $this->resize_image); 
             if(!$id)
             {   
                 $this->errors[] = GetMessage("parser_offer_name").$this->arOfferFields["NAME"]."[".$this->arFields["LINK"]."] - ".$el->LAST_ERROR;
@@ -1805,8 +1644,8 @@ class SotbitContentParser {
                 $this->elementOfferID = $id;
                 $this->addTmp($id);    
             } 
-        } else {
-            $this->elementOfferID = $isElement;          
+        }else{
+            $this->elementOfferID = $isElement;
             $this->addTmp($isElement);    
         } 
         
@@ -1959,7 +1798,7 @@ class SotbitContentParser {
         $this->arProduct["VAT_ID"] = $this->settings["catalog"]["cat_vat_id"];
         $this->arProduct["VAT_INCLUDED"] = $this->settings["catalog"]["cat_vat_included"];
         $this->arProduct["ID"] = $this->elementID;
-                                            
+
         $isElement = $this->elementUpdate;
         if(!$isElement)
         {
@@ -2032,16 +1871,9 @@ class SotbitContentParser {
     protected function ConvertCurrency()
     {
         if($this->settings["catalog"]["convert_currency"])
-        {                                                                                   
+        {
             $this->arPrice["CURRENCY"] = $this->settings["catalog"]["convert_currency"];
             $this->arPrice["PRICE"] = CCurrencyRates::ConvertCurrency($this->arPrice["PRICE"], $this->settings["catalog"]["currency"], $this->settings["catalog"]["convert_currency"]);    
-                                                                                
-            if(!empty($this->arAdditionalPrice)){
-                foreach($this->arAdditionalPrice as $id=>$one_price){        
-                    $this->arAdditionalPrice[$id]["CURRENCY"] = $this->settings["catalog"]["convert_currency"];
-                    $this->arAdditionalPrice[$id]["PRICE"] = CCurrencyRates::ConvertCurrency($one_price["PRICE"], $one_price["CURRENCY"], $this->settings["catalog"]["convert_currency"]);    
-                }
-            }                                                                                 
         }    
     }
     
@@ -2157,155 +1989,26 @@ class SotbitContentParser {
         }
 
     }
-    
-    protected function ChangeAdittionalPrice()
-    {
-        foreach($this->arAdditionalPrice as $id => $price)
-        {
-            if(is_array($this->settings["catalog"]["price_updown"]) && count($this->settings["catalog"]["price_updown"])>0)
-            {     
-                foreach($this->settings["catalog"]["price_updown"] as $i=>$val)
-                {
-                    if($this->settings["catalog"]["price_updown"][$i] && $this->settings["catalog"]["price_value"][$i])
-                    {
-                        if($this->typeN == "catalog")
-                        {
-                            if($this->settings["catalog"]["price_updown_section_dop"][$i] != "section_all")
-                            {
-                                if($current_section = $this->GetCatalogSectionId())
-                                {
-                                    if($current_section != $this->settings["catalog"]["price_updown_section_dop"][$i])
-                                    {
-                                        continue 1;    
-                                    }
-                                } else {
-                                    if($this->section_id != $this->settings["catalog"]["price_updown_section_dop"][$i])
-                                    {
-                                        continue 1;
-                                    }
-                                }
-                            }
-                        }
-                        if($this->settings["catalog"]["price_terms"][$i]=="delta")
-                        {
-                            if(empty($this->settings["catalog"]["price_terms_value"][$i]) && !empty($this->settings["catalog"]["price_terms_value_to"][$i]))
-                            {   
-                                if($this->arAdditionalPrice[$id]["PRICE"]>$this->settings["catalog"]["price_terms_value_to"][$i]) continue;
-                            }
-                        
-                            if(!empty($this->settings["catalog"]["price_terms_value"][$i]) && empty($this->settings["catalog"]["price_terms_value_to"][$i]))
-                            {
-                                if($this->arAdditionalPrice[$id]["PRICE"]<$this->settings["catalog"]["price_terms_value"][$i]) continue;
-                            }
-
-                            if(!empty($this->settings["catalog"]["price_terms_value"][$i]) && !empty($this->settings["catalog"]["price_terms_value_to"][$i]))
-                            {
-                                if($this->arAdditionalPrice[$id]["PRICE"]<$this->settings["catalog"]["price_terms_value"][$i] || $this->arAdditionalPrice[$id]["PRICE"]>$this->settings["catalog"]["price_terms_value_to"][$i]) continue;
-                            }
-                        }
-                        if($this->settings["catalog"]["price_type_value"][$i]=="percent")
-                        {
-                            $delta = $this->arAdditionalPrice[$id]["PRICE"]*$this->settings["catalog"]["price_value"][$i]/100; 
-                        }else{
-                            $delta = $this->settings["catalog"]["price_value"][$i]; 
-                        }
-                        if($this->settings["catalog"]["price_updown"][$i]=="up")
-                        {   
-                            $this->arAdditionalPrice[$id]["PRICE"] += $delta;
-                        }
-                        elseif($this->settings["catalog"]["price_updown"][$i]=="down")
-                        {    
-                            $this->arAdditionalPrice[$id]["PRICE"] -= $delta;
-                        }
-                        break;
-                    }
-                }
-            }else{
-                if($this->settings["catalog"]["price_updown"] && $this->settings["catalog"]["price_value"])
-                { 
-                    if($this->typeN == "catalog")
-                    {
-                        if($this->settings["catalog"]["price_updown_section_dop"] != "section_all")
-                        {
-                            if($current_section = $this->GetCatalogSectionId())
-                            {
-                                if($current_section != $this->settings["catalog"]["price_updown_section_dop"])
-                                {
-                                    return false;    
-                                }
-                            }
-                            else
-                            {
-                                if($this->section_id != $this->settings["catalog"]["price_updown_section_dop"])
-                                {
-                                    return false;
-                                }
-                            }
-                        }  
-                    }
-                    if($this->settings["catalog"]["price_terms"]=="up" && $this->settings["catalog"]["price_terms_value"])
-                    {
-                        if($this->arAdditionalPrice[$id]["PRICE"]<$this->settings["catalog"]["price_terms_value"]) return false;
-                    }
-                    if($this->settings["catalog"]["price_terms"]=="down" && $this->settings["catalog"]["price_terms_value"])
-                    {
-                        if($this->arAdditionalPrice[$id]["PRICE"]>$this->settings["catalog"]["price_terms_value"]) return false;
-                    }
-            
-                    if($this->settings["catalog"]["price_type_value"]=="percent")
-                    {
-                        $delta = $this->arAdditionalPrice[$id]["PRICE"]*$this->settings["catalog"]["price_value"]/100; 
-                    }else{
-                        $delta = $this->settings["catalog"]["price_value"];
-                    }
-                    if($this->settings["catalog"]["price_updown"]=="up")
-                    {
-                        $this->arAdditionalPrice[$id]["PRICE"] += $delta;
-                    }
-                    elseif($this->settings["catalog"]["price_updown"]=="down")
-                    {
-                        $this->arAdditionalPrice[$id]["PRICE"] -= $delta;
-                    }
-                }    
-            }
-        } 
-    }
 
     protected function AddPriceCatalog()
-    {   
+    {
         if($this->elementUpdate && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
 
-        if(!$this->arPrice || strlen($this->arPrice["PRICE"])<=0) return false;
+        if(!$this->arPrice || !$this->arPrice["PRICE"]) return false;
         $isElement = $this->elementUpdate;
         $this->arPrice["PRODUCT_ID"] = $this->elementID;
-        foreach($this->arAdditionalPrice as $id_price => $price){
-            $this->arAdditionalPrice[$id_price]["PRODUCT_ID"] = $this->elementID;
-        }
         $this->ChangePrice();
-        $this->ChangeAdittionalPrice();
-        $this->ConvertCurrency();      
+        $this->ConvertCurrency();
         $this->arPrice["PRICE"] = $this->parseCatalogPriceOkrug($this->arPrice["PRICE"]);
-        
-        foreach($this->arAdditionalPrice as $id_price => $price){
-            $this->arAdditionalPrice[$id_price]['PRICE'] = $this->parseCatalogPriceOkrug($this->arAdditionalPrice[$id_price]["PRICE"]); 
-        }      
-                                     
         $obPrice = new CPrice();
         if(!$isElement)
-        {                             
+        {
             $price = $obPrice->Add($this->arPrice);
             if(!$price)
             {
                 $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] ".GetMessage("parser_error_add_price").$obPrice->LAST_ERROR;
-            }                                      
-            foreach($this->arAdditionalPrice as $arPrice){    
-                $price = $obPrice->Add($arPrice);
-                if(!$price)
-                {
-                    $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."][".$arPrice['name']."] ".GetMessage("parser_error_add_price").$obPrice->LAST_ERROR;
-                }    
             }
-        } else $this->UpdatePriceCatalog($isElement);
+        }else $this->UpdatePriceCatalog($isElement);
 
         unset($obPrice);
     }
@@ -2315,34 +2018,19 @@ class SotbitContentParser {
         if($this->elementOfferUpdate && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
         if(!$this->arPrice || !$this->arPrice["PRICE"]) return false;
         $isElement = $this->elementOfferUpdate;
-        $this->arPrice["PRODUCT_ID"] = $this->elementOfferID; 
-        
+        $this->arPrice["PRODUCT_ID"] = $this->elementOfferID;
         $this->ChangePrice();
-        $this->ChangeAdittionalPrice();
         $this->ConvertCurrency();
 
         $this->arPrice["PRICE"] = $this->parseCatalogPriceOkrug($this->arPrice["PRICE"]);
-        
-        foreach($this->arAdditionalPrice as $id_price => $price){
-            $this->arAdditionalPrice[$id_price]['PRODUCT_ID'] = $this->elementOfferID;
-            $this->arAdditionalPrice[$id_price]['PRICE'] = $this->parseCatalogPriceOkrug($this->arAdditionalPrice[$id_price]["PRICE"]);    
-        }                                         
+
         $obPrice = new CPrice();
         if(!$isElement)
         {
-            
             $price = $obPrice->Add($this->arPrice);
             if(!$price)
             {
                 $this->errors[] = $this->arFields["NAME"]." - ".$arFields["NAME"]."[".$this->arFields["LINK"]."] ".GetMessage("parser_error_add_price_offer").$obPrice->LAST_ERROR;
-            }
-            
-            foreach($this->arAdditionalPrice as $arPrice){    
-                $price = $obPrice->Add($arPrice);
-                if(!$price)
-                {
-                    $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."][".$arPrice['name']."] ".GetMessage("parser_error_add_price_offer").$obPrice->LAST_ERROR;
-                }    
             }
         }else $this->UpdatePriceCatalog($isElement);
 
@@ -2367,175 +2055,140 @@ class SotbitContentParser {
         {
             CPrice::Update($arr["ID"], $this->arPrice);
         }
-        
-        foreach($this->arAdditionalPrice as $id_price => $price){
-            
-            $res = CPrice::GetList(
-                array(),
-                array(
-                    "PRODUCT_ID" => $elementID,
-                    "CATALOG_GROUP_ID" => $price["CATALOG_GROUP_ID"]
-                ));
-
-            if ($arr = $res->Fetch())
-            {
-                CPrice::Update($arr["ID"], $price);
-            }    
-        }
-        /*else
-        {
-            CPrice::Add($this->arPrice);
-        }  */
     }
 
     protected function parserCatalogPreview(&$el)
-    {    
+    {
         foreach(GetModuleEvents("shs.parser", "parserCatalogPreview", true) as $arEvent)
             ExecuteModuleEventEx($arEvent, array($this->id, &$el, &$this->arFields));
-            
         if(!$this->parseCatalogUrlPreview($el)) return false;
         $this->parseCatalogNamePreview($el);
         $this->parseCatalogPropertiesPreview($el);
         if($this->isCatalog)$this->parseCatalogPricePreview($el);
-        if($this->isCatalog)$this->parseCatalogAdditionalPricesPreview($el);
         if($this->isCatalog)$this->ParseCatalogAvailablePreview($el);
         $this->parseCatalogPreviewPicturePreview($el);
         $this->parseCatalogDescriptionPreview($el);
-        $this->parserOffers($el, "Y");
+
         return true;
     }
 
     protected function parserCatalogDetail()
     {
+
         if($this->checkUniq() && !$this->isUpdate) return false;
-        
         foreach(GetModuleEvents("shs.parser", "parserCatalogDetailBefore", true) as $arEvent)
             ExecuteModuleEventEx($arEvent, array($this->id, &$el, &$this->arFields));
         $el = $this->parserCatalogDetailPage();
         foreach(GetModuleEvents("shs.parser", "parserCatalogDetail", true) as $arEvent)
             ExecuteModuleEventEx($arEvent, array($this->id, &$el, &$this->arFields));
         $this->parseCatalogNameDetail($el);
-        
         $this->parseCatalogProperties($el);
         $this->parseCatalogDetailPicture($el);
         $this->parseCatalogDetailMorePhoto($el);
         if($this->isCatalog)$this->parseCatalogPriceDetail($el);
-        if($this->isCatalog)$this->parseCatalogAdittionalPriceDetail($el);
-        if($this->isCatalog)$this->ParseCatalogAvailableDetail($el); 
+        if($this->isCatalog)$this->ParseCatalogAvailableDetail($el);
         $this->parseCatalogDescriptionDetail($el);
         $this->parserOffers($el);
     }
     
-    protected function parserOffers($el, $check="")
+    protected function parserOffers($el)
     {
-        if($this->settings["offer"]["preview_or_detail"] == $check)
+        $this->boolOffer = false;
+        if($this->settings["offer"]["load"]=="table" && $this->isOfferParsing && isset($this->settings["offer"]["selector"]) && $this->settings["offer"]["selector"] && isset($this->settings["offer"]["selector_item"]) && $this->settings["offer"]["selector_item"])
         {
-        
-            $this->boolOffer = (isset($this->arOfferAll) && !empty($this->arOfferAll))?true:false;
-            
-            if($this->settings["offer"]["load"]=="table" && $this->isOfferParsing && isset($this->settings["offer"]["selector"]) && $this->settings["offer"]["selector"] && isset($this->settings["offer"]["selector_item"]) && $this->settings["offer"]["selector_item"])
-            {
-                //$this->arFields["NAME"] = htmlspecialchars_decode(trim(strip_tags(pq($el)->find($name)->html())));
-               $offerItem = $this->settings["offer"]["selector"]." ".$this->settings["offer"]["selector_item"];
-               $this->parserHeadTableOffer($el);
-               
-               foreach(pq($el)->find($offerItem) as $offer)
-               {
-                    $this->boolOffer = true;
-                    if($this->parseOfferName($offer))
-                    {
-                        $this->parseOfferPrice($offer);
-                        $this->parseOfferAdditionalPrice($offer);
-                        $this->parseOfferQuantity($offer);
-                        $this->parseOfferProps($offer);
-                        if(!$this->parseOfferGetUniq())
-                        {
-                            $this->deleteOfferFields();;
-                            continue 1;
-                        }
+            //$this->arFields["NAME"] = htmlspecialchars_decode(trim(strip_tags(pq($el)->find($name)->html())));
+           $offerItem = $this->settings["offer"]["selector"]." ".$this->settings["offer"]["selector_item"];
+           $this->parserHeadTableOffer($el);
 
-                    }else
-                        continue 1;
-
-                    $this->arOfferAll["FIELDS"][] = $this->arOffer;
-                    $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
-                    $this->arOfferAll["ADDIT_PRICE"][] = $this->arAdditionalPriceOffer;
-                    $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;                
-                    $this->deleteOfferFields();
-                        
-               }
-            }elseif($this->settings["offer"]["load"]=="one" && $this->isOfferParsing && isset($this->settings["offer"]["one"]["selector"]) && $this->settings["offer"]["one"]["selector"])
-            {
-                $offerItem = trim($this->settings["offer"]["one"]["selector"]);
-                $arr = $this->GetArraySrcAttr($offerItem);
-                $path = $arr["path"];
-                $attr = $arr["attr"];
-                
-                foreach(pq($el)->find($path) as $offer)
-                {    
-                    $this->boolOffer = true;
-                    if($this->parseOfferName($offer))
-                    {
-                        $this->parseOfferDetailImg($offer);
-                        $this->parseOfferPrice($offer);
-                        $this->parseOfferAdditionalPrice($offer);
-                        $this->parseOfferQuantity($offer);
-                        $this->parseOfferProps($offer);
-                        
-                        if(!$this->parseOfferGetUniq())
-                        {
-                            $this->deleteOfferFields();;
-                            continue 1;
-                        }
-
-                    }else
-                        continue 1;
-                        
-                    $this->arOfferAll["FIELDS"][] = $this->arOffer;
-                    $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
-                    $this->arOfferAll["ADDIT_PRICE"][] = $this->arAdditionalPriceOffer;
-                    $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;                               
-                    $this->deleteOfferFields();
-                }    
-            }
-            elseif($this->settings["offer"]["load"]=="more" && $this->isOfferParsing && isset($this->settings["offer"]["selector_prop_more"]) && count($this->settings["offer"]["selector_prop_more"] > 0))
-            {
-                $allOfferProps = $this->parseOffersSelectorPropMore($el);
-                if(($allOfferProps !== false) && is_array($allOfferProps))
+           foreach(pq($el)->find($offerItem) as $offer)
+           {
+                $this->boolOffer = true;
+                if($this->parseOfferName($offer))
                 {
-                    $nm = 0;
-                    $arRes = array();
-                    $count = count($allOfferProps);
-            
-                    foreach($allOfferProps as $code => $props)
+                    $this->parseOfferPrice($offer);
+                    $this->parseOfferQuantity($offer);
+                    $this->parseOfferProps($offer);
+                    if(!$this->parseOfferGetUniq())
                     {
-                       $nm ++;
-                       
-                       foreach($props as $id => $valProps)
-                       {
-                            $val = $valProps["value"];
-                            $arTemp[] = $valProps;
+                        $this->deleteOfferFields();;
+                        continue 1;
+                    }
 
-                            $this->funcX($val, $nm, $allOfferProps, $arRes, $arTemp, $count);
-                       }
-                       break 1; 
-                    }
+                }else
+                    continue 1;
+
+                $this->arOfferAll["FIELDS"][] = $this->arOffer;
+                $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
+                $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;
+                
+                $this->deleteOfferFields();
                     
-                    /*$countOffers = 1;
-                    foreach($allOfferProps as $prop)
+           }
+        }elseif($this->settings["offer"]["load"]=="one" && $this->isOfferParsing && isset($this->settings["offer"]["one"]["selector"]) && $this->settings["offer"]["one"]["selector"])
+        {
+            $offerItem = trim($this->settings["offer"]["one"]["selector"]);
+            foreach(pq($el)->find($offerItem) as $offer)
+            {    
+                $this->boolOffer = true;
+                if($this->parseOfferName($offer))
+                {
+                    $this->parseOfferPrice($offer);
+                    $this->parseOfferQuantity($offer);
+                    $this->parseOfferProps($offer);
+                    if(!$this->parseOfferGetUniq())
                     {
-                        $countOffers = $countOffers*count($prop);
+                        $this->deleteOfferFields();;
+                        continue 1;
                     }
+
+                }else
+                    continue 1;
+
+                $this->arOfferAll["FIELDS"][] = $this->arOffer;
+                $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
+                $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;
+                
+                $this->deleteOfferFields();
                     
-                    if(count($arRes) == $countOffers)
-                    {
-                        file_put_contents(dirname(__FILE__)."/logvvvvvv.log", print_r($arRes, true), FILE_APPEND);    
-                    }*/
-                    $this->parseAllOffersMoreProps($arRes);
-                    
+            }    
+        }
+        elseif($this->settings["offer"]["load"]=="more" && $this->isOfferParsing && isset($this->settings["offer"]["selector_prop_more"]) && count($this->settings["offer"]["selector_prop_more"] > 0))
+        {
+            $allOfferProps = $this->parseOffersSelectorPropMore($el);
+            if(($allOfferProps !== false) && is_array($allOfferProps))
+            {
+                $nm = 0;
+                $arRes = array();
+                $count = count($allOfferProps);
+        
+                foreach($allOfferProps as $code => $props)
+                {
+                   $nm ++;
+                   
+                   foreach($props as $id => $valProps)
+                   {
+                        $val = $valProps["value"];
+                        $arTemp[] = $valProps;
+
+                        $this->funcX($val, $nm, $allOfferProps, $arRes, $arTemp, $count);
+                   }
+                   break 1; 
                 }
                 
+                /*$countOffers = 1;
+                foreach($allOfferProps as $prop)
+                {
+                    $countOffers = $countOffers*count($prop);
+                }
+                
+                if(count($arRes) == $countOffers)
+                {
+                    file_put_contents(dirname(__FILE__)."/logvvvvvv.log", print_r($arRes, true), FILE_APPEND);    
+                }*/
+                $this->parseAllOffersMoreProps($arRes);
+                
             }
+            
         }
     
     }
@@ -2607,6 +2260,7 @@ class SotbitContentParser {
         $arTemp = array_slice($arTemp, 0, $nm-1); 
         
     }
+    
     
     protected function parseOffersSelectorPropMore($el)
     {
@@ -2863,33 +2517,6 @@ class SotbitContentParser {
         return true;
     }
     
-    protected function parseOfferDetailImg($offer)
-    {
-         if(isset($this->settings["offer"]["one"]["selector"]) && !empty($this->settings["offer"]["one"]["selector"]) && isset($this->settings["offer"]["add_name"]) && !empty($this->settings["offer"]["add_name"]) && isset($this->settings["offer"]["one"]["detail_img"]) && !empty($this->settings["offer"]["one"]["detail_img"]))
-         {
-             $arr = $this->GetArraySrcAttr(trim($this->settings["offer"]["one"]["detail_img"]));
-             if(empty($arr["path"]) && !empty($arr["attr"]))
-             {
-                 $src = pq($offer)->attr($arr["attr"]);
-             }
-             elseif(!empty($arr["path"]) && empty($arr["attr"]))
-             {
-                 $src = pq($offer)->find($arr["path"])->html();
-             }
-             elseif(!empty($arr["path"]) && !empty($arr["attr"]))
-             {
-                $src = pq($offer)->find($arr["path"])->attr($arr["attr"]);
-             }
-             $src = strip_tags($src);
-             
-             $src = $this->parseCaralogFilterSrc($src);
-             $src = $this->getCatalogLink($src);
-
-             $this->arOffer["DETAIL_PICTURE"] = CFile::MakeFileArray($src);   
-             $this->arrFilesTemp[] = $this->arOffer["DETAIL_PICTURE"]["tmp_name"];
-         }
-    }
-    
     protected function getOfferDeleteSelector()
     {
         $deleteSymb = array();
@@ -3007,25 +2634,27 @@ class SotbitContentParser {
     }
     
     protected function parseOfferPrice($offer)
-    {                         
+    {
         if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
         if(isset($this->settings["offer"]["selector_price"]) && $this->settings["offer"]["selector_price"])
-        {                          
+        {   
             $arr = $this->GetArraySrcAttr($this->settings["offer"]["selector_price"]);
             if (empty($arr["path"]) && !empty($arr["attr"]))
             {
                 $price = trim(pq($offer)->attr($arr["attr"]));
-            } else {
+            }
+            else{
                 if(empty($arr["attr"])){
                     $price = trim(strip_tags(pq($offer)->find($arr["path"])->html()));
-                } elseif (!empty($arr["attr"]))
+                }
+                elseif (!empty($arr["attr"]))
                 {
                     $price = trim(pq($offer)->find($arr["path"])->attr($arr["attr"]));
-                }               
-            }                    
+                }
+            }
             $price = $this->parseCatalogPriceFormat($price);
             //$price = $this->parseCatalogPriceOkrug($price);
-            $this->arPriceOffer["PRICE"] = $price;             
+            $this->arPriceOffer["PRICE"] = $price;
             $this->arPriceOffer["CATALOG_GROUP_ID"] = $this->settings["catalog"]["price_type"];
             $this->arPriceOffer["CURRENCY"] = $this->settings["catalog"]["currency"];
                
@@ -3064,84 +2693,6 @@ class SotbitContentParser {
         }
         
         if(!isset($this->arPriceOffer["PRICE"]))
-        {
-            $this->errors[] = GetMessage("parser_error_name_notfound_offer");
-            return false;
-        }
-        return true;        
-    }
-    
-    protected function parseOfferAdditionalPrice($offer)
-    {                                            
-        if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
-        $this->arAdditionalPriceOffer = array();
-        if(isset($this->settings["offer"]["selector_additional_prices"]) && !empty($this->settings["offer"]["selector_additional_prices"]))
-        {   
-            foreach($this->settings["offer"]["selector_additional_prices"] as $id_price => $price1){
-                if($price1['value']==='')
-                    continue;
-                    
-                $arr_price = array();    
-                
-                $arr = $this->GetArraySrcAttr($price1['value']);  
-                if (empty($arr["path"]) && !empty($arr["attr"]))
-                {
-                    $price = trim(pq($offer)->attr($arr["attr"]));
-                } else {
-                    if(empty($arr["attr"])){
-                        $price = trim(strip_tags(pq($offer)->find($arr["path"])->html()));
-                    } elseif (!empty($arr["attr"]))
-                    {
-                        $price = trim(pq($offer)->find($arr["path"])->attr($arr["attr"]));
-                    }               
-                }                    
-                $price = $this->parseCatalogPriceFormat($price);
-                //$price = $this->parseCatalogPriceOkrug($price);
-                $arr_price["PRICE"] = $price;                               
-                $arr_price["CATALOG_GROUP_ID"] = $id_price;                           
-                $arr_price['CURRENCY'] = $this->settings['adittional_currency'][$id_price];
-                $this->arAdditionalPriceOffer[$id_price] = $arr_price;
-            }  
-        }elseif(isset($this->settings["offer"]["find_additional_price"]) && !empty($this->settings["offer"]["find_additional_price"]))
-        {
-            if(isset($this->settings["offer"]["selector_item_td"]) && $this->settings["offer"]["selector_item_td"])
-            {
-                foreach($this->settings["offer"]["find_additional_price"] as $id_price => $price1){
-                    if($price1['value']==='')
-                        continue;      
-                    
-                    $arr_price = array();    
-                    $name = $price1['value'];
-                    if(isset($this->tableHeaderNumber[$name]))
-                    {
-                        $n = $this->tableHeaderNumber[$name];
-                        $price = pq($offer)->find($this->settings["offer"]["selector_item_td"].":eq(".$n.")");
-                        $price = trim(strip_tags($price));
-                        $price = $this->parseCatalogPriceFormat($price);
-                        //$price = $this->parseCatalogPriceOkrug($price);                           
-                        $arr_price["PRICE"] = $price;                               
-                        $arr_price["CATALOG_GROUP_ID"] = $id_price;                           
-                        $arr_price['CURRENCY'] = $this->settings['adittional_currency'][$id_price];
-                        $this->arAdditionalPriceOffer[$id_price] = $arr_price;
-                    }
-                }
-            }        
-        } elseif(isset($this->settings["offer"]["one"]["price"]) && $this->settings["offer"]["one"]["price"]) 
-        {
-            $attr = $this->settings["offer"]["one"]["price"];
-            $price = pq($offer)->attr($attr);
-            $price = trim(strip_tags($price));
-            $this->arPriceOffer["PRICE"] = $price;
-            $this->arPriceOffer["CATALOG_GROUP_ID"] = $this->settings["catalog"]["price_type"];
-            $this->arPriceOffer["CURRENCY"] = $this->settings["catalog"]["currency"];
-        }
-        
-        if(isset($this->arAdditionalPrice) && !empty($this->arAdditionalPrice) && (!isset($this->arAdditionalPriceOffer) || empty($this->arAdditionalPriceOffer)))
-        {
-             $this->arAdditionalPriceOffer = $this->arAdditionalPrice;     
-        }
-        
-        if(!isset($this->arAdditionalPriceOffer))
         {
             $this->errors[] = GetMessage("parser_error_name_notfound_offer");
             return false;
@@ -3223,20 +2774,11 @@ class SotbitContentParser {
             $arProperties = $this->settings["offer"]["add_name"];
             $deleteSymb = $this->getOfferDeleteSelector();
             $deleteSymbRegular = $this->getOfferDeleteSelectorRegular();
-            
-            $arr = $this->GetArraySrcAttr(trim($this->settings["offer"]["one"]["selector"]));
-            $path = $arr["path"];
-            $attr = $arr["attr"];
-            
             foreach($arProperties as $code)
             {
                 if($nameOffer === false)
                 {
-                    if(!empty($path))
-                    {
-                        if(empty($attr)) $text = pq($offer)->html();
-                        elseif(!empty($attr)) $text = pq($offer)->attr($attr);
-                    }
+                    $text = pq($offer)->html();
                 }
                 elseif($nameOffer !== false)
                 {
@@ -3312,6 +2854,8 @@ class SotbitContentParser {
         $this->parseCatalogFindPropertiesPreview($el);
         //$this->AllDoProps();
     }
+    
+
 
     protected function AllDoProps()
     {
@@ -3342,8 +2886,6 @@ class SotbitContentParser {
             unset($this->arProduct);
         if(isset($this->arPrice))
             unset($this->arPrice);
-        if(isset($this->arAdditionalPrice))
-            unset($this->arAdditionalPrice);
         unset($this->elementUpdate);
         if(isset($this->elementOfferUpdate))
             unset($this->elementOfferUpdate);
@@ -3452,7 +2994,7 @@ class SotbitContentParser {
         $arProperties = $this->arFindProduct;
         if(!$arProperties) return false;
         if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["param"])) return false;
-        $find = htmlspecialchars_decode($this->settings["catalog"]["selector_find_size"]);
+        $find = $this->settings["catalog"]["selector_find_size"];
         if($this->settings["catalog"]["catalog_delete_find_symb"])
         {
             $deleteSymb = explode(",", $this->settings["catalog"]["catalog_delete_find_symb"]);
@@ -3470,6 +3012,7 @@ class SotbitContentParser {
                 {
                     $deleteSymb[$i] = ",";
                 }
+
             }
         }
 
@@ -3529,7 +3072,7 @@ class SotbitContentParser {
 
         foreach($arProperties as $code=>$val)
         {
-            $text = pq($el)->find(htmlspecialchars_decode($this->settings["catalog"]["selector_product"][$code]))->html();
+            $text = pq($el)->find($this->settings["catalog"]["selector_product"][$code])->html();
             $text = strip_tags($text);
             $text = str_replace($deleteSymb, "", $text);
             $text = trim($text);
@@ -3580,7 +3123,7 @@ class SotbitContentParser {
             {
                 $this->parseCatalogPropFile($code, $el);
             }else{
-                $ar = $this->GetArraySrcAttr(htmlspecialchars_decode($this->settings["catalog"]["selector_prop"][$code]));
+                $ar = $this->GetArraySrcAttr($this->settings["catalog"]["selector_prop"][$code]);
                 $path = $ar["path"];
                 $attr = $ar["attr"];
                 
@@ -3592,7 +3135,6 @@ class SotbitContentParser {
                 if($arProp["USER_TYPE"]!="HTML")
                     $text = strip_tags($text);
                 $text = str_replace($deleteSymb, "", $text);
-                
                 $this->parseCatalogProp($code, $val, $text);
             }
 
@@ -3639,7 +3181,7 @@ class SotbitContentParser {
             {
                 $this->parseCatalogPropFilePreview($code, $el);
             }else{
-                $ar = $this->GetArraySrcAttr(htmlspecialchars_decode($this->settings["catalog"]["selector_prop_preview"][$code]));
+                $ar = $this->GetArraySrcAttr($this->settings["catalog"]["selector_prop_preview"][$code]);
                 $path = $ar["path"];
                 $attr = $ar["attr"];
                 if($attr)
@@ -3660,7 +3202,7 @@ class SotbitContentParser {
     {   
         $arProperties = $this->arFindProperties;
         if(!$arProperties) return false;
-        $find = htmlspecialchars_decode($this->settings["catalog"]["selector_find_props"]);
+        $find = $this->settings["catalog"]["selector_find_props"];
         if($this->settings["catalog"]["catalog_delete_selector_find_props_symb"])
         {
             $deleteSymb = explode(",", $this->settings["catalog"]["catalog_delete_selector_find_props_symb"]);
@@ -3719,42 +3261,13 @@ class SotbitContentParser {
                     }
                     
                 }
-            } elseif(strpos($vFind,' dl')!==false) {
-
+            }else
+            { 
                 foreach(pq($el)->find($vFind) as $prop)
                 {
                     $text = pq($prop)->html();
-                    $text = str_replace('</dd>','<br>',$text);
-                    $text = str_replace('</dt>',' ',$text);
-                    $text = strip_tags($text ,'<br>');
-                    $arTextBr = explode('<br>', $text);
-					//file_put_contents(dirname(__FILE__).'/3440.txt',print_r($arTextBr,true),FILE_APPEND);
-
-                    if(!empty($arTextBr) && count($arTextBr)>1) {
-                        foreach($arTextBr as $textBr)
-                        {
-                            foreach($arProperties as $code=>$val)
-                            {
-                                /*if(SITE_CHARSET == "windows-1251") {
-                                    $val = html_entity_decode($val, ENT_COMPAT, 'WINDOWS-1251');
-                                }*/
-
-                                if($this->CheckFindProps($code, $val, $textBr)) {
-                                    $this->parseCatalogProp($code, $val, $textBr);
-                                }
-                            }
-                        }
-                    }
-                }
-
-            } else {
-                foreach(pq($el)->find($vFind) as $prop)
-                {
-                    $text = pq($prop)->html();
-                    
                     //$text = strip_tags($text);
                     $text = str_replace($deleteSymb, "", $text);
-                    
                     $text1 = $text;
                     foreach($arProperties as $code=>$val)
                     {
@@ -3763,7 +3276,7 @@ class SotbitContentParser {
                         $arProp = $this->arProperties[$code];
                         if($arProp["USER_TYPE"]!="HTML")
                             $text1 = strip_tags($text);
-                            
+                
                         if($this->CheckFindProps($code, $val, $text1))
                         {   
                             $this->parseCatalogProp($code, $val, $text1);
@@ -3778,7 +3291,7 @@ class SotbitContentParser {
     {   
         $arProperties = $this->arFindPropertiesPreview;
         if(!$arProperties) return false;
-        $find = htmlspecialchars_decode($this->settings["catalog"]["selector_find_props_preview"]);
+        $find = $this->settings["catalog"]["selector_find_props_preview"];
         if($this->settings["catalog"]["catalog_delete_selector_find_props_symb_preview"])
         {
             $deleteSymb = explode(",", $this->settings["catalog"]["catalog_delete_selector_find_props_symb_preview"]);
@@ -3995,7 +3508,7 @@ class SotbitContentParser {
     }
 
     protected function parseCatalogPropFile($code, $el)
-    {                              
+    {
         if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["props"])) return false;
         $ar = $this->GetArraySrcAttr($this->settings["catalog"]["selector_prop"][$code]);
         $file = $ar["path"];
@@ -4081,70 +3594,17 @@ class SotbitContentParser {
         }
     }
 
-    public function filterProps($code, $val)
-    {
-        if(count($this->settings["props_filter_value"]) > 0 && count($this->settings["props_filter_circs"]) > 0)
-        {
-            $count = 0;
-            foreach($this->settings["props_filter_value"] as $id => $props)
-            {
-                if(strlen($id) <= 0) continue 1;
-                if(isset($props[$code]) && strlen($props[$code]) > 0)
-                {
-                    if($this->settings["props_filter_circs"][$id][$code] == "equally")
-                    {                   
-                         if($props[$code] == $val)
-                         {
-                             $this->propsFilter[$code] = "Y";
-                             $count ++;
-                             break;
-                         }
-                    }
-                    elseif($this->settings["props_filter_circs"][$id][$code] == "strpos")
-                    {
-                        if(strpos($val, $props[$code]))
-                        {
-                            $this->propsFilter[$code] = "Y";
-                            $count ++;
-                            break;
-                        }
-                    }
-                    elseif($this->settings["props_filter_circs"][$id][$code] == "stripos")
-                    {
-                        if(stripos($val, $props[$code]))
-                        {
-                            $this->propsFilter[$code] = "Y";
-                            $count ++;
-                            break;
-                        }
-                    }
-                }
-            }                             
-            if($count <= 0)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-        return true;
-    }
-    
     public function parseCatalogProp($code, $val, $text)
     {
         //$text = str_replace($val, "", $text);
+        
         $val = preg_quote($val, "/");
         $text = preg_replace("/(".$val.")/", "", $text, 1);
         
         $val = trim($text);
         
-        //if(strlen($val) == 0) return false;
+        if(empty($val)) return false;
         $val = html_entity_decode($val);
-                                                                                              
-        $this->filterProps($code, $val);
-        
         $arProp = $this->arProperties[$code];
         
         //$default = $this->settings["catalog"]["default_prop"][$code];
@@ -4635,7 +4095,7 @@ class SotbitContentParser {
             foreach($this->settings["catalog"]["selector_prop"] as $i=>$prop)
             {
                 $prop = trim($prop);
-                if($prop!='')
+                if(!empty($prop))
                 {
                     $arProps[$i] = $prop;
                 }
@@ -4645,6 +4105,7 @@ class SotbitContentParser {
         }
         
         return false;
+
     }
     
     protected function getSelectorPropertiesOffer()
@@ -4757,30 +4218,23 @@ class SotbitContentParser {
     {
         $this->catalogSleep();
         $this->detailFileHtml = new FileGetHtml();
-        $this->detailPage = $this->fileHtml->file_get_html($this->arFields["LINK"], $this->proxy, $this->auth, $this);
-
-        /*$addedData = '';
-        if(strpos($this->arFields["LINK"],'http://www.mvideo.ru/products')!==FALSE) {
-            $addedData = $this->fileHtml->file_get_html($this->arFields["LINK"].'/specification?ssb_block=descriptionTabContentBlock' , $this->settings["catalog"]["proxy"], $this->auth, $this);
-        }*/
-
+        $this->detailPage = $this->fileHtml->file_get_html($this->arFields["LINK"], $this->settings["catalog"]["proxy"], $this->auth, $this); 
         foreach(GetModuleEvents("shs.parser", "parserCatalogDetailPageAfter", true) as $arEvent)
             ExecuteModuleEventEx($arEvent, array(&$this));
         $this->DeleteCharsetHtml5($this->detailPage);
         $this->detailHttpCode = $this->fileHtml->httpCode;
         if($this->detailHttpCode!=200 && $this->detailHttpCode!=301 && $this->detailHttpCode!=302 && $this->detailHttpCode!=303)
-        {                   
+        {
             $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."]".GetMessage("parser_error_connect")."[".$this->detailHttpCode."]";
             //return false;
         }
         $this->detailHtml = phpQuery::newDocument($this->detailPage, "text/html;charset=".LANG_CHARSET);
-
         $this->base = $this->GetMetaBase($this->detailHtml);
+        //if($this->detail_delete_element)$this->deleteCatalogElement($this->detail_delete_element, $this->detail_dom, $this->detailHtml[$this->detail_dom]);
+        //if($this->detail_delete_attribute)$this->deleteCatalogAttribute($this->detail_delete_attribute, $this->detail_dom, $this->detailHtml[$this->detail_dom]);
 
-        foreach($this->detailHtml[$this->detail_dom] as $detail) {
-            /*if($addedData!='') {
-                pq($detail)->html($addedData);
-            }*/
+        foreach($this->detailHtml[$this->detail_dom] as $detail)
+        {
             return $detail;
         }
         $this->errors[] = GetMessage("parser_error_selecto_detail_notfound");
@@ -4795,7 +4249,7 @@ class SotbitContentParser {
             $p = pq($el)->attr("href");        
         }else{
             $url = $this->settings["catalog"]["href"]?$this->settings["catalog"]["href"]:"a:eq(0)";
-            $this->settings["catalog"]["href"] = htmlspecialchars_decode($url);
+            $this->settings["catalog"]["href"] = $url;
             $p = pq($el)->find($url)->attr("href");  
         }
         if(!$p)
@@ -4803,9 +4257,7 @@ class SotbitContentParser {
             $this->errors[] = GetMessage("parser_error_href_notfound");
             return false;
         }
-        /*file_put_contents(dirname(__FILE__)."/log.log", $p."\n", FILE_APPEND);
-        $arr = explode("#", $p);
-        $p = $arr[0];*/
+
         $p = $this->getCatalogLink($p);
         //$this->convetCyrillic($p);
         $this->arFields["LINK"] = $p;
@@ -4814,10 +4266,9 @@ class SotbitContentParser {
     }
 
     protected function parseCatalogNamePreview($el)
-    {                                          
+    {
         if(isset($this->settings["catalog"]["detail_name"]) && $this->settings["catalog"]["detail_name"]) return false;
-        $name = $this->settings["catalog"]["name"]?$this->settings["catalog"]["name"]:$this->settings["catalog"]["href"];    
-        $name = htmlspecialchars_decode($name);    
+        $name = $this->settings["catalog"]["name"]?$this->settings["catalog"]["name"]:$this->settings["catalog"]["href"];
         $ar = $this->GetArraySrcAttr($name); 
         $img = $ar["path"];
         $attr = $ar["attr"];
@@ -4864,15 +4315,10 @@ class SotbitContentParser {
                     if($this->settings["catalog"]["action_props"][$code][$i]=="add_e")
                     {
                         $val = $val.$v;    
-                    } 
-                    if($this->settings["catalog"]["action_props"][$code][$i]=="lower")
-                    {
-                        $val = strtolower($val);
-                        $fc = mb_strtoupper(mb_substr($val, 0, 1));
-                        $val = $fc.mb_substr($val, 1);       
                     }    
                 }
-            }      
+            }
+                    
         }
         return trim($val);
     }
@@ -4883,7 +4329,8 @@ class SotbitContentParser {
         if($this->detail_delete_attribute)$this->deleteCatalogAttribute($this->detail_delete_attribute, $this->detail_dom, $this->detailHtml[$this->detail_dom]);
         
         if(!isset($this->settings["catalog"]["detail_name"]) || !$this->settings["catalog"]["detail_name"]) return false;
-        $name = htmlspecialchars_decode($this->settings["catalog"]["detail_name"]);                                                                 
+        $name = $this->settings["catalog"]["detail_name"];
+
         $this->arFields["NAME"] = htmlspecialchars_decode(trim(strip_tags(pq($el)->find($name)->html())));
         if($this->arFields["NAME"])
         {
@@ -4901,7 +4348,7 @@ class SotbitContentParser {
     }
     
     protected function parseCatalogPriceFormat($price)
-    {                                                               
+    {
         $price = trim($price);
         
         if(isset($this->settings["catalog"]["price_format1"]) && $this->settings["catalog"]["price_format1"] && isset($this->settings["catalog"]["price_format2"]) && $this->settings["catalog"]["price_format2"])
@@ -4917,7 +4364,7 @@ class SotbitContentParser {
     }
     
     protected function parseCatalogPriceOkrug($price)
-    {
+    {   
         $price = trim($price);
         if($price)
         {
@@ -4949,77 +4396,15 @@ class SotbitContentParser {
         if($this->settings["catalog"]["preview_price"])
         {
             if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
-            $price = htmlspecialchars_decode($this->settings["catalog"]["preview_price"]);  
+            $price = $this->settings["catalog"]["preview_price"];
             $price = $this->GetArraySrcAttr($price);
             $path = $price["path"];
             $attr = $price["attr"];
-                                          
             if (empty($attr)) $price = strip_tags(pq($el)->find($path)->html());
             elseif(!empty($attr)) $price = trim(pq($el)->find($path)->attr($attr));
             $price = $this->parseCatalogPriceFormat($price);
             //$price = $this->parseCatalogPriceOkrug($price);
-
-            $this->arPrice["PRICE"] = $price;
-            $this->arPrice["PRICE"] = trim($this->arPrice["PRICE"]);          
-            if(!$this->arPrice["PRICE"])
-            {
-                $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."]".GetMessage("parser_error_price_notfound");
-                unset($this->arPrice["PRICE"]);
-                return false;
-            }                        
-            $this->arPrice["CATALOG_GROUP_ID"] = $this->settings["catalog"]["price_type"];
-            $this->arPrice["CURRENCY"] = $this->settings["catalog"]["currency"];
-        }
-
-    }
-
-    protected function parseCatalogAdditionalPricesPreview(&$el)
-    {
-        if($this->settings["prices_preview"] && !empty($this->settings["prices_preview"]))
-        {
-            if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
-            foreach($this->settings["prices_preview"] as $id_price => $price_arr){
-                if($price_arr['value']=='')
-                    continue;
-                    
-                $addit_price = array();
-                
-                $price = htmlspecialchars_decode($price_arr['value']);
-                $price = $this->GetArraySrcAttr($price);
-                $path = $price["path"];
-                $attr = $price["attr"];
-                
-                if (empty($attr)) 
-                    $price = strip_tags(pq($el)->find($path)->html());
-                elseif(!empty($attr)) 
-                    $price = trim(pq($el)->find($path)->attr($attr));
-                $price = $this->parseCatalogPriceFormat($price);
-                //$price = $this->parseCatalogPriceOkrug($price);
-
-                $addit_price["PRICE"] = $price;
-                $addit_price["PRICE"] = trim($addit_price["PRICE"]);
-                if(!$addit_price["PRICE"])
-                {
-                    $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] ".$price_arr['name'].GetMessage("parser_error_price_notfound");
-                    unset($addit_price["PRICE"]);
-                    return false;
-                }
-                $addit_price["CATALOG_GROUP_ID"] = $id_price;                           
-                $addit_price['CURRENCY'] = $this->settings['adittional_currency'][$id_price]; 
-                $this->arAdditionalPrice[$id_price] = $addit_price;
-            }            
-        }                                    
-    }
-
-    protected function parseCatalogPriceDetail(&$el)
-    {                                                          
-        if($this->settings["catalog"]["detail_price"])
-        {
-            if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
-            $price = htmlspecialchars_decode($this->settings["catalog"]["detail_price"]);   
-            $price = strip_tags(pq($el)->find($price)->html());        
-            $price = $this->parseCatalogPriceFormat($price);
-            //$price = $this->parseCatalogPriceOkrug($price);
+            
             $this->arPrice["PRICE"] = $price;
             $this->arPrice["PRICE"] = trim($this->arPrice["PRICE"]);
             if(!$this->arPrice["PRICE"])
@@ -5027,45 +4412,36 @@ class SotbitContentParser {
                 $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."]".GetMessage("parser_error_price_notfound");
                 unset($this->arPrice["PRICE"]);
                 return false;
-            }                             
+            }
             $this->arPrice["CATALOG_GROUP_ID"] = $this->settings["catalog"]["price_type"];
-            $this->arPrice["CURRENCY"] = $this->settings["catalog"]["currency"];                   
-        }    
+            $this->arPrice["CURRENCY"] = $this->settings["catalog"]["currency"];
+        }
+
     }
 
-    protected function parseCatalogAdittionalPriceDetail(&$el)
-    {                                                          
-        if($this->settings["prices_detail"] && !empty($this->settings["prices_detail"]))
+    protected function parseCatalogPriceDetail(&$el)
+    {
+
+        if($this->settings["catalog"]["detail_price"])
         {
             if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["price"])) return false;
-            foreach($this->settings["prices_detail"] as $id_price => $price_arr){
-                $addit_price = array();
-                
-                $price = htmlspecialchars_decode($price_arr['value']);
-                $price = $this->GetArraySrcAttr($price);
-                $path = $price["path"];
-                $attr = $price["attr"];
-                
-                if (empty($attr)) 
-                    $price = strip_tags(pq($el)->find($path)->html());
-                elseif(!empty($attr)) 
-                    $price = trim(pq($el)->find($path)->attr($attr));
-                $price = $this->parseCatalogPriceFormat($price);
-                //$price = $this->parseCatalogPriceOkrug($price);
+            $price = $this->settings["catalog"]["detail_price"];
+            $price = strip_tags(pq($el)->find($price)->html());
+            $price = $this->parseCatalogPriceFormat($price);
+            //$price = $this->parseCatalogPriceOkrug($price);
+            
+            $this->arPrice["PRICE"] = $price;
+            $this->arPrice["PRICE"] = trim($this->arPrice["PRICE"]);
+            if(!$this->arPrice["PRICE"])
+            {
+                $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."]".GetMessage("parser_error_price_notfound");
+                unset($this->arPrice["PRICE"]);
+                return false;
+            }
+            $this->arPrice["CATALOG_GROUP_ID"] = $this->settings["catalog"]["price_type"];
+            $this->arPrice["CURRENCY"] = $this->settings["catalog"]["currency"];
+        }
 
-                $addit_price["PRICE"] = $price;
-                $addit_price["PRICE"] = trim($addit_price["PRICE"]);
-                if(!$addit_price["PRICE"])
-                {
-                    $this->errors[] = $this->arFields["NAME"]."[".$this->arFields["LINK"]."] ".$price_arr['name'].GetMessage("parser_error_price_notfound");
-                    unset($addit_price["PRICE"]);
-                    return false;
-                }
-                $addit_price["CATALOG_GROUP_ID"] = $id_price;                        
-                $addit_price['CURRENCY'] = $this->settings['adittional_currency'][$id_price]; 
-                $this->arAdditionalPrice[$id_price] = $addit_price;
-            }   
-        }                                  
     }
 
     protected function parseCatalogDescriptionPreview(&$el)
@@ -5073,7 +4449,7 @@ class SotbitContentParser {
         if($this->checkUniq() && (!$this->isUpdate || $this->isUpdate["preview_descr"]=="N")) return false;
         if($this->settings["catalog"]["preview_text_selector"] && $this->settings["catalog"]["text_preview_from_detail"]!="Y")
         {
-            $preview = htmlspecialchars_decode($this->settings["catalog"]["preview_text_selector"]);
+            $preview = $this->settings["catalog"]["preview_text_selector"];
             foreach(pq($el)->find($preview." img") as $img)
             {
                 $src = pq($img)->attr("src");
@@ -5156,7 +4532,7 @@ class SotbitContentParser {
     {   
         if($this->checkUniq() && (!$this->isUpdate || (!$this->isUpdate["detail_img"] && (!$this->isUpdate["preview_img"] && !$this->settings["catalog"]["img_preview_from_detail"]!="Y")))) return false;
         if($this->settings["catalog"]["detail_picture"])
-        {
+        {    
             $arSelPic = explode(",", $this->settings["catalog"]["detail_picture"]);
 
             foreach($arSelPic as $sel)
@@ -5175,27 +4551,19 @@ class SotbitContentParser {
                 {
                     $src = pq($el)->find($img)->text();  
                 }
+                /*
+                **????? ??? ??????? base64 ????????? ????????
+                **$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+                **file_put_contents('image.png', $data);
+                */
                 
                 $src = $this->parseCaralogFilterSrc($src);
                 $src = $this->getCatalogLink($src);
                 foreach(GetModuleEvents("shs.parser", "ParserDetailPicture", true) as $arEvent) //27.10.2015
                     ExecuteModuleEventEx($arEvent, array(&$this, $src));
-
                 if(!self::CheckImage($src)) continue;
-                $this->arPhoto[$src] = 1;   
-
-                //if($this->proxy) {
-                    /*$falseImage = dirname(__FILE__)."/proxyImageHack.".pathinfo($src,PATHINFO_EXTENSION);
-                    $falseImage =$this->fileHtml->file_get_image(
-                        $src,
-                        true,
-                        $this->auth,
-                        $this,
-                        $falseImage
-                    );
-                    $src = $falseImage;*/
-                //}
-
+                $this->arPhoto[$src] = 1;
+                //$src = str_replace("cdn.", "", $src);
                 $this->arFields["DETAIL_PICTURE"] = CFile::MakeFileArray($src);
                 
                 $this->arrFilesTemp[] = $this->arFields["DETAIL_PICTURE"]["tmp_name"];
@@ -5222,7 +4590,7 @@ class SotbitContentParser {
         if($this->checkUniq() && (!$this->isUpdate || !$this->isUpdate["preview_img"])) return false;
         if($this->settings["catalog"]["preview_picture"] && $this->settings["catalog"]["img_preview_from_detail"]!="Y")
         {   
-            $ar = $this->GetArraySrcAttr(htmlspecialchars_decode($this->settings["catalog"]["preview_picture"]));
+            $ar = $this->GetArraySrcAttr($this->settings["catalog"]["preview_picture"]);
             $img = $ar["path"];
             $attr = $ar["attr"];
             if(!empty($attr)) 
@@ -5239,11 +4607,8 @@ class SotbitContentParser {
             foreach(GetModuleEvents("shs.parser", "ParserPreviewPicture", true) as $arEvent) //27.10.2015
                     ExecuteModuleEventEx($arEvent, array(&$this, $src));
             //$src = str_replace("cdn.", "", $src);
-            if(!self::CheckImage($src)) return;                                                                                                            
-            
-            $arImg = CFile::MakeFileArray($src);            
-        
-            $this->arFields["PREVIEW_PICTURE"] = $arImg;
+            if(!self::CheckImage($src)) return;
+            $this->arFields["PREVIEW_PICTURE"] = CFile::MakeFileArray($src);
             $this->arrFilesTemp[] = $this->arFields["PREVIEW_PICTURE"]["tmp_name"];
         }
     }
@@ -5266,31 +4631,27 @@ class SotbitContentParser {
         
         $arImg = CFile::MakeFileArray($src);
         $this->arrFilesTemp[] = $arImg["tmp_name"];
+        
         if(isset($this->albumID) && $this->albumID)
             $this->addAlbumCollection($arImg, $img);
         else{
             $fid = CFile::SaveFile($arImg, "shs.parser");
             pq($img)->attr('src', CFile::GetPath($fid));    
         }
+        
+
     }
     
     protected function createAlbum()
     {   
         CModule::IncludeModule("fileman");
         CMedialib::Init();
-        $collection_id = $this->settings['madialibrary_id'];
-        $collection = CMedialibCollection::GetList(array('arOrder'=>Array('ID'=>'ASC'),'arFilter' => array('ACTIVE' => 'Y', "ID"=>$collection_id)));
-        if($collection_id!='' && is_array($collection) && !empty($collection)){
-            $this->albumID = $collection_id;
-        } else {
-            $arCollections = CMedialibCollection::GetList(array('arOrder'=>Array('ID'=>'ASC'),'arFilter' => array('ACTIVE' => 'Y', "NAME"=>"SOTBIT_PARSER")));
-            if(!$arCollections)
-            {
-                $this->albumID = CMedialibCollection::Edit(array("arFields" => array("NAME"=>"SOTBIT_PARSER","ML_TYPE" => "1")));    
-            }else {
-                $this->albumID = $arCollections[0]["ID"];
-            }
-        }
+        $arCollections = CMedialibCollection::GetList(array('arOrder'=>Array('NAME'=>'ASC'),'arFilter' => array('ACTIVE' => 'Y', "NAME"=>"SOTBIT_PARSER")));
+        if(!$arCollections)
+        {
+            $this->albumID = CMedialibCollection::Edit(array("arFields" => array("NAME"=>"SOTBIT_PARSER")));    
+        }else
+            $this->albumID = $arCollections[0]["ID"];
     }
     
     protected function addAlbumCollection($arImg, $img)
@@ -5305,7 +4666,6 @@ class SotbitContentParser {
                 ),
                 'arCollections' => array($this->albumID)
         ));
-
         if($res)
         {
             pq($img)->attr('src', $res['PATH']);    
@@ -5322,30 +4682,20 @@ class SotbitContentParser {
         $src = str_replace('//', '/', $src);
         $src = str_replace('http:/', 'http://', $src);
         $src = str_replace('https:/', 'https://', $src);
-        $src = str_replace('ftp:/', 'ftp://', $src);
-        $src = str_replace('ftps:/', 'ftps://', $src);
-        if(preg_match("/www\./", $src) || preg_match("/http:\//", $src) || preg_match("/https:\//", $src)|| preg_match("/ftp:\//", $src)|| preg_match("/ftps:\//", $src))
+        if(preg_match("/www\./", $src) || preg_match("/http:\//", $src) || preg_match("/https:\//", $src))
         {
             if(preg_match("/https:\//", $src))
                 $src = preg_replace("/^\/{2}/", "https://", $src);
             elseif(preg_match("/http:\//", $src) || preg_match("/www\./", $src))
                 $src = preg_replace("/^\/{2}/", "http://", $src);
-            elseif(preg_match("/ftp:\//", $src))
-                $src = preg_replace("/^\/{2}/", "ftp://", $src);
-            elseif(preg_match("/ftps:\//", $src))
-                $src = preg_replace("/^\/{2}/", "ftps://", $src);
         }
         
-        if(preg_match("/www\./", $src) || preg_match("/http:\//", $src) || preg_match("/https:\//", $src)|| preg_match("/ftp:\//", $src)|| preg_match("/ftps:\//", $src))
+        if(preg_match("/www\./", $src) || preg_match("/http:\//", $src) || preg_match("/https:\//", $src))
         {
             if(preg_match("/https:\//", $src))
                 $src = preg_replace("/^\/{1}/", "https://", $src);
             elseif(preg_match("/http:\//", $src) || preg_match("/www\./", $src))
-                $src = preg_replace("/^\/{1}/", "http://", $src);   
-            elseif(preg_match("/ftp:\//", $src))
-                $src = preg_replace("/^\/{1}/", "ftp://", $src); 
-            elseif(preg_match("/ftps:\//", $src))
-                $src = preg_replace("/^\/{1}/", "ftps://", $src); 
+                $src = preg_replace("/^\/{1}/", "http://", $src);    
         }
         
         //$src = str_replace('//', '/', $src);
@@ -5374,6 +4724,8 @@ class SotbitContentParser {
             {
                 continue;    
             } 
+
+            
             $zis++;
            
             if($this->currentPage>=self::DEFAULT_DEBUG_LIST && $this->settings["catalog"]["mode"]=="debug") return;
@@ -5386,7 +4738,9 @@ class SotbitContentParser {
             {
                 $this->parseCatalogProducts();
             }
+
             $i++;
+
         }
         foreach($this->pagenavigationPrev as $i=>$v)
         {
@@ -5400,6 +4754,7 @@ class SotbitContentParser {
         {
             $this->parseCatalogPages();
         }
+
     }
     
     protected function SaveCopyPage()
@@ -5449,13 +4804,11 @@ class SotbitContentParser {
         $this->sectionPage = $page;
         $this->fileHtml = new FileGetHtml();
         $this->page = $this->GetCopyPage();
-        
         if(!$this->page)
         {   
             if ($this->ValidateUrl($page) === true)
-            {
-
-                $this->page = $this->fileHtml->file_get_html($page, $this->proxy, $this->auth, $this);
+            {   
+                $this->page = $this->fileHtml->file_get_html($page, $this->settings["catalog"]["proxy"], $this->auth, $this);
             }
             elseif ($this->ValidateUrl($page) === false) 
             {
@@ -5538,14 +4891,15 @@ class SotbitContentParser {
     }
     
     protected function SaveCurrentPage($arPage)
-    {               
+    {
         if(!$this->agent && $this->settings["catalog"]["mode"]!="debug" && $this->stepStart)
-        {                  
-            $page = implode("|", $arPage);                                                                                                              
+        {    
+            $page = implode("|", $arPage);
             if(!empty($arPage))file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_page".$this->id.".txt", $page."|"); 
             elseif($this->IsEndSectionUrl()) file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_page".$this->id.".txt", "");
             else file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_page".$this->id.".txt", "0");   
         }
+            
     }
     
     protected function ClearAjaxFiles()
@@ -5562,40 +4916,13 @@ class SotbitContentParser {
             if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_copy_page".$this->id.".txt"))unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_copy_page".$this->id.".txt"); 
             if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/loc".$this->id.".txt"))unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/loc".$this->id.".txt"); 
             if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_section".$this->id.".txt")) unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_section".$this->id.".txt");
-            
-            if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_list".$this->id.".txt"))unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_list".$this->id.".txt");
 
         }elseif($this->agent)
         {
             if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/loc".$this->id.".txt"))unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/loc".$this->id.".txt");
             if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_section".$this->id.".txt")) unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_section".$this->id.".txt");
         }
-        
-        if(is_dir($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/".$this->id)) 
-        {
-           $this->removeFolder($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/".$this->id); 
-        } 
            
-    }
-    
-    protected function removeFolder($folder)
-    {
-        if ($files = glob($folder . "/*")) 
-        {
-            foreach($files as $file) 
-            {
-                if(is_dir($file))
-                {
-                    $this->removeFolder($file);
-                } 
-                else
-                {
-                    unlink($file);
-                }
-            }
-        }
-        
-        rmdir($folder);
     }
     
     protected function checkActionBegin()
@@ -5630,18 +4957,19 @@ class SotbitContentParser {
                 }
                 
             }
-        }  
+        }
+            
     }
     
     protected function checkActionAgent($agent = true)
-    {                        
+    {
         if((($this->agent && $agent) || !$agent) && $this->updateActive && isset($this->settings["catalog"]["uniq"]["action"]) && $this->settings["catalog"]["uniq"]["action"]!="N")
-        {            
+        {   
             $filterValues = array("PARSER_ID"=>$this->id);
             $arr = array(
                 "select" => array('ID', "PRODUCT_ID"),
                 "filter" => $filterValues
-            );         
+            );
             if($this->tmp=="b_shs_parser_tmp" || !$this->tmp)
             {
                 $rsData = ShsParserTmpTable::GetList($arr);
@@ -5657,11 +4985,9 @@ class SotbitContentParser {
                 {
                     $arProdOld[$arDataOld["PRODUCT_ID"]] = $arDataOld["PRODUCT_ID"];    
                 }
-                      
-                //var_dump($arProdOld);                  
+                
                 if(isset($arProdOld) && !empty($arProdOld))
-                {         
-                //var_dump($arProdOld);         
+                {
                     foreach($arProdOld as $p)
                     {
                         if(!isset($arProd[$p]))
@@ -5705,7 +5031,7 @@ class SotbitContentParser {
     }
     
     protected function doProductAction($ID)
-    {                              
+    {
         if($this->settings["catalog"]["uniq"]["action"]=="D")
         {
             CIBlockElement::Delete($ID);
@@ -6037,14 +5363,15 @@ class SotbitContentParser {
 
     protected function getCatalogLink($url)
     {
-        $url = trim($url); 
+        $url = trim($url);
+
         
         if(empty($url)) return false;
         elseif(preg_match("/^\/{2}www/", $url))
         {
             $url = preg_replace("/^\/{2}www/", "www", $url);
         }
-        elseif(preg_match('/^ftp:/', $url) || preg_match('/^http:/', $url) || preg_match('/www\./', $url) || preg_match('/^https:/', $url))
+        elseif(preg_match('/^http:/', $url) || preg_match('/www\./', $url) || preg_match('/^https:/', $url))
         {
             $url = $url;
         }elseif(preg_match("/^\//", $url))
@@ -6193,7 +5520,7 @@ class SotbitContentParser {
     public function saveImgServer($html){
         foreach($html["img"] as $img){
             $arImg = CFile::MakeFileArray(pq($img)->attr("src"));
-            $this->arrFilesTemp[] = $arImg["tmp_name"];  
+            $this->arrFilesTemp[] = $arImg["tmp_name"];
             
             if(isset($this->albumID) && $this->albumID)
                 $this->addAlbumCollection($arImg, $img);
@@ -6241,6 +5568,7 @@ class SotbitContentParser {
                 $data = $this->deleteElements($item, $selector, $nextSelector+1);
             }
         }
+
     }
 
     public function deleteAttributeStart(&$html, $selector_delete_attribute){
@@ -6261,7 +5589,9 @@ class SotbitContentParser {
         phpQuery::selectDocument($html);
         pq($selector)->removeAttr($attribute);
     }
-        
+    
+    
+    
     protected function getPageRssLink($url, $path, $site)
     {
         $url = trim($url);
@@ -6342,7 +5672,8 @@ class SotbitContentParser {
                 $uri = preg_replace('#/[^/]+$#','',$urlCatalog);
                 $url = $uri."/".$url;    
             }
-        }          
+        }
+        
         
         //$this->convetCyrillic($url);
         return $url;
@@ -6360,7 +5691,6 @@ class SotbitContentParser {
             if($query)$url = $url."?".$query;
             $fileHtml = new FileGetHtml();
             $data = $fileHtml->file_get_html($url, $this->proxy, $this->auth, $this);
-
             $this->header_url = $url = $fileHtml->headerUrl;
             $this->DeleteCharsetHtml5($data);
             $html = phpQuery::newDocument($data, "text/html;charset=".LANG_CHARSET);
@@ -6430,10 +5760,11 @@ class SotbitContentParser {
         {
             if(count($arLevel)==2) return 'https://www.'.$site;
             else return 'https://'.$site;    
-        } else {
+        }else{
             if(count($arLevel)==2) return 'http://www.'.$site;
             else return 'http://'.$site;    
-        }        
+        }
+        
     }
 
     public function filterSrc($src){
@@ -6480,178 +5811,21 @@ class SotbitContentParser {
         $newArSel = array();
         $selStr = "";
         foreach($arSel as $i=>$val){
-            if(preg_match('/\[/', $val) && preg_match('/\]/', $val) && !$bool) $newArSel[] = $val;
-            elseif(!preg_match('/\[/', $val) && !preg_match('/\]/', $val) && !$bool) $newArSel[] = $val;
-            elseif(preg_match('/\[/', $val) && !preg_match('/\]/', $val)){
-                $bool = true;
-                $selStr .= $val;
-            }elseif(!preg_match('/\[/', $val) && !preg_match('/\]/', $val) && $bool){
-                $selStr .= " ".$val;
-            }elseif(preg_match('/\]/', $val) && $bool){
-                $selStr .= " ".$val;
-                $bool = false;
-                $newArSel[] = $selStr;
-                $selStr = "";
-            }
+          if(preg_match('/\[/', $val) && preg_match('/\]/', $val) && !$bool) $newArSel[] = $val;
+          elseif(!preg_match('/\[/', $val) && !preg_match('/\]/', $val) && !$bool) $newArSel[] = $val;
+          elseif(preg_match('/\[/', $val) && !preg_match('/\]/', $val)){
+            $bool = true;
+            $selStr .= $val;
+          }elseif(!preg_match('/\[/', $val) && !preg_match('/\]/', $val) && $bool){
+            $selStr .= " ".$val;
+          }elseif(preg_match('/\]/', $val) && $bool){
+            $selStr .= " ".$val;
+            $bool = false;
+            $newArSel[] = $selStr;
+            $selStr = "";
+          }
         }
         return $newArSel;
-    }
-    
-    public function parseStore(){
-        if(!$this->elementID)
-            return false;
-        if(!isset($this->settings['store']['list']) || $this->settings['store']['list']==''){
-            return false;
-        }
-        
-        $storeId = intval($this->settings['store']['list']);
-        $arFilter = array(
-            'PRODUCT_ID' => $this->elementID,
-            'STORE_ID' => $storeId,
-            );
-        $count =  CCatalogProduct::GetByID($this->elementID);
-        $count = $count['QUANTITY'];
-        $arFields = array(
-            "PRODUCT_ID" => $this->elementID,
-            "STORE_ID" => $storeId,
-            "AMOUNT" => $count,
-        );
-                
-        $id = CCatalogStoreProduct::UpdateFromForm($arFields);   
-        
-        $arInfo = CCatalogSKU::GetInfoByProductIBlock($this->iblock_id); 
-        if (is_array($arInfo)) { 
-            $rsOffers = CIBlockElement::GetList(array(),array('IBLOCK_ID' => $arInfo['IBLOCK_ID'], 'PROPERTY_'.$arInfo['SKU_PROPERTY_ID'] => $this->elementID)); 
-            while ($arOffer = $rsOffers->GetNext()) { 
-               $count =  CCatalogProduct::GetByID($arOffer["ID"]);
-               $count = $count['QUANTITY'];
-               $arFields = array(
-                        "PRODUCT_ID" => $arOffer["ID"],
-                        "STORE_ID" => $storeId,
-                        "AMOUNT" => $count,
-                        );
-               CCatalogStoreProduct::UpdateFromForm($arFields); 
-            } 
-        }
-               
-        return $id;
-    }
-    
-    public function updateQuantity(){
-        if(!$this->elementID)
-            return false;
-        switch($this->settings['store']['available_quantity']){
-            case 'from_stores':
-                $count = $this->getAmountAllStores($this->elementID);
-                $arFields = array(
-                    'QUANTITY' => $count,
-                );
-                CCatalogProduct::Update($this->elementID, $arFields);
-                               
-                $arInfo = CCatalogSKU::GetInfoByProductIBlock($this->iblock_id); 
-                if (is_array($arInfo)) { 
-                    $rsOffers = CIBlockElement::GetList(array(),array('IBLOCK_ID' => $arInfo['IBLOCK_ID'], 'PROPERTY_'.$arInfo['SKU_PROPERTY_ID'] => $this->elementID)); 
-                    while ($arOffer = $rsOffers->GetNext()) { 
-                        $count = $this->getAmountAllStores($arOffer["ID"]);                        
-                        $arFields = array(
-                            "QUANTITY" => $count,
-                        );
-                        CCatalogProduct::Update($arOffer["ID"], $arFields);
-                    } 
-                }
-                $this->arFields["AVAILABLE_PREVIEW"]=$count;                
-                break;
-        }           
-    }
-    
-    public function getAmountAllStores($product_id=null){
-        if($product_id==null)
-            return false;  
-        if(CModule::IncludeModule('catalog')){
-            $arResult = CCatalogProduct::GetByID($product_id);            
-            // список ID складов
-            $select_fields = Array('ID', 'ACTIVE');
-            $filter = Array("ACTIVE" => "Y");
-            $resStore = CCatalogStore::GetList(array(),$filter,false,false,$select_fields);
-            while($sklad = $resStore->Fetch()){
-                $stores[] = $sklad['ID'];
-            }
-            // собственно сами склады
-            $arFilter = Array("PRODUCT_ID"=>$product_id,"STORE_ID"=>$stores);
-            $res = CCatalogStoreProduct::GetList(Array(),$arFilter,false,false,Array());
- 
-            while($arRes = $res->GetNext()){
-                $sum[] = $arRes['AMOUNT'];
-            }
-            return array_sum($sum);
-        }    
-    }
-
-//    Фунция для определения типа кодировки
-    public function get_codepage($text) {
-        if (!empty($text)) {
-            $utflower  = 7;
-            $utfupper  = 5;
-            $lowercase = 3;
-            $uppercase = 1;
-            $last_simb = 0;
-            $charsets = array(
-                'UTF-8'       => 0,
-                'CP1251'      => 0,
-                'KOI8-R'      => 0,
-                'IBM866'      => 0,
-                'ISO-8859-5'  => 0,
-                'MAC'         => 0,
-            );
-            for ($a = 0; $a < strlen($text); $a++) {
-                $char = ord($text[$a]);
-
-                // non-russian characters
-                if ($char<128 || $char>256)
-                    continue;
-
-                // UTF-8
-                if (($last_simb==208) && (($char>143 && $char<176) || $char==129))
-                    $charsets['UTF-8'] += ($utfupper * 2);
-                if ((($last_simb==208) && (($char>175 && $char<192) || $char==145))
-                    || ($last_simb==209 && $char>127 && $char<144))
-                    $charsets['UTF-8'] += ($utflower * 2);
-
-                // CP1251
-                if (($char>223 && $char<256) || $char==184)
-                    $charsets['CP1251'] += $lowercase;
-                if (($char>191 && $char<224) || $char==168)
-                    $charsets['CP1251'] += $uppercase;
-
-                // KOI8-R
-                if (($char>191 && $char<224) || $char==163)
-                    $charsets['KOI8-R'] += $lowercase;
-                if (($char>222 && $char<256) || $char==179)
-                    $charsets['KOI8-R'] += $uppercase;
-
-                // IBM866
-                if (($char>159 && $char<176) || ($char>223 && $char<241))
-                    $charsets['IBM866'] += $lowercase;
-                if (($char>127 && $char<160) || $char==241)
-                    $charsets['IBM866'] += $uppercase;
-
-                // ISO-8859-5
-                if (($char>207 && $char<240) || $char==161)
-                    $charsets['ISO-8859-5'] += $lowercase;
-                if (($char>175 && $char<208) || $char==241)
-                    $charsets['ISO-8859-5'] += $uppercase;
-
-                // MAC
-                if ($char>221 && $char<255)
-                    $charsets['MAC'] += $lowercase;
-                if ($char>127 && $char<160)
-                    $charsets['MAC'] += $uppercase;
-
-                $last_simb = $char;
-            }
-            arsort($charsets);
-            return key($charsets);
-        }
     }
 }
 ?>

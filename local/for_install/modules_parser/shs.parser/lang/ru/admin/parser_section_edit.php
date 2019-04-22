@@ -1,20 +1,24 @@
 <?
-$MESS["shs_parser_section_title_edit"]  = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ Ð¿Ð°Ñ€ÑÐµÑ€Ð°";
-$MESS["shs_parser_section_title_add"]  = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ Ð¿Ð°Ñ€ÑÐµÑ€Ð°";
-$MESS["shs_parser_category_name"] = "ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ";
-$MESS["parser_section_act"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
-$MESS["parser_section_sort"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
-$MESS["parser_section_name"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
-$MESS["parser_category_title"] = "Ð Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒÑÐºÐ°Ñ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ";
-$MESS["parser_category_select"] = "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑŽ";
-$MESS["parser_category_description"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
-$MESS["parser_list"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
-$MESS["parser_list_title"] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿Ð°Ñ€ÑÐµÑ€Ð¾Ð² Ð¸ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¹";
-$MESS["parser_section_add"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
-$MESS["parser_section_add_title"] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑŽ";
-$MESS["parser_section_copy"] = "ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
-$MESS["parser_section_copy_title"] = "ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑŽ";
-$MESS["parser_section_delete"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
-$MESS["parser_section_delete_title"] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸ÑŽ";
-$MESS["parser_section_descr"] = "Ð’Ð¸Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ! ÐŸÑ€Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ð¸ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸ ÑƒÐ´Ð°Ð»ÑÐµÑ‚ÑÑ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ ÑÐ°Ð¼Ð° ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ñ. ÐŸÐ°Ñ€ÑÐµÑ€Ñ‹ Ð¸ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸, Ð¿Ñ€Ð¸Ð²ÑÐ·Ð°Ð½Ð½Ñ‹Ðµ Ðº ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ð¾Ð¹ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸, ÑƒÐ´Ð°Ð»ÑÑ‚ÑŒÑÑ Ð½Ðµ Ð±ÑƒÐ´ÑƒÑ‚. Ð’Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¸Ñ… Ð² Ð¾Ð±Ñ‰ÐµÐ¼ ÑÐ¿Ð¸ÑÐºÐµ Ð²ÑÐµÑ… ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¹ Ð¸ Ð¿Ð°Ñ€ÑÐµÑ€Ð¾Ð².";
+/**
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS["shs_parser_section_title_edit"]  = "Ðåäàêòèðîâàíèå êàòåãîðèè ïàðñåðà";
+$MESS["shs_parser_section_title_add"]  = "Äîáàâëåíèå êàòåãîðèè ïàðñåðà";
+$MESS["shs_parser_category_name"] = "Êàòåãîðèÿ";
+$MESS["parser_section_act"] = "Àêòèâíîñòü";
+$MESS["parser_section_sort"] = "Ñîðòèðîâêà";
+$MESS["parser_section_name"] = "Íàçâàíèå";
+$MESS["parser_category_title"] = "Ðîäèòåëüñêàÿ êàòåãîðèÿ";
+$MESS["parser_category_select"] = "Âûáåðèòå êàòåãîðèþ";
+$MESS["parser_category_description"] = "Îïèñàíèå";
+$MESS["parser_list"] = "Ñïèñîê";
+$MESS["parser_list_title"] = "Ñïèñîê ïàðñåðîâ è êàòåãîðèé";
+$MESS["parser_section_add"] = "Äîáàâèòü";
+$MESS["parser_section_add_title"] = "Äîáàâèòü êàòåãîðèþ";
+$MESS["parser_section_copy"] = "Êîïèðîâàòü";
+$MESS["parser_section_copy_title"] = "Êîïèðîâàòü êàòåãîðèþ";
+$MESS["parser_section_delete"] = "Óäàëèòü";
+$MESS["parser_section_delete_title"] = "Óäàëèòü êàòåãîðèþ";
+$MESS["parser_section_descr"] = "Âèíèìàíèå! Ïðè óäàëåíèè êàòåãîðèè óäàëÿåòñÿ òîëüêî ñàìà êàòåãîðèÿ. Ïàðñåðû è êàòåãîðèè, ïðèâÿçàííûå ê óäàëÿåìîé êàòåãîðèè, óäàëÿòüñÿ íå áóäóò. Âû ìîæåòå ïðîñìîòðåòü èõ â îáùåì ñïèñêå âñåõ êàòåãîðèé è ïàðñåðîâ.";
 ?>

@@ -1,3 +1,7 @@
 <?
-$MESS ['shs_parser_prolog_title'] = "ÐŸÐ°Ñ€ÑÐµÑ€ ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ð°";
+/**
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS ['shs_parser_prolog_title'] = "Ïàðñåð êîíòåíòà";
 ?>

@@ -50,15 +50,11 @@ class SotbitXmlParser extends SotbitContentParser{
     public $countSection = 0;
 
     public $page;*/
-    protected $xmlfirst;
-    protected $catalog_ids;    
     const TEST = 0;
     const DEFAULT_DEBUG_ITEM = 30;
-    
     public function __construct()
     {
         parent::__construct();     
-        $this->xmlfirst = true;
     }
 
     protected function parseXmlCatalog()
@@ -71,28 +67,18 @@ class SotbitXmlParser extends SotbitContentParser{
         if(isset($this->settings["catalog"]["url_dop"]) && !empty($this->settings["catalog"]["url_dop"]))$this->arUrl = explode("\r\n", $this->settings["catalog"]["url_dop"]);
         
         $this->arUrl = array_merge(array($this->rss), $this->arUrl);
-        $this->arUrlSave = $this->arUrl;                                                   
-                                                                                
-        if($this->settings["part_xml"] == "Y")
-        {
-            $this->newXmlUrl();                                                            
-            $this->arUrl = $this->arUrlSave;                                                                                
-            $this->rss = $this->arUrlSave[0];                                                         
-            file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/".$this->id."/xml_explode.txt",$this->rss." \n");                                    
-        }      
+        $this->arUrlSave = $this->arUrl;
         
-        if(!$this->PageFromFileXml()) return false; 
-        parent::CalculateStep();                               
-                                                                                              
+        if(!parent::PageFromFile()) return false; 
+        parent::CalculateStep();
         if($this->settings["catalog"]["mode"]!="debug" && !$this->agent) $this->arUrlSave = array($this->rss);
         else $this->arUrlSave = $this->arUrl; 
-                                                                                                           
-        foreach($this->arUrlSave as $rss):   
+        //if(!$this->connectCatalogPage($this->rss));
+        //return;
+        foreach($this->arUrlSave as $rss):
             $rss = trim($rss);
             if(empty($rss)) continue;
-            $this->rss = $rss;         
-            file_put_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/test.txt",$rss." \n", FILE_APPEND);                                                                                           
-            
+            $this->rss = $rss;
             parent::convetCyrillic($this->rss);
             parent::connectCatalogPage($this->rss);
             
@@ -103,7 +89,6 @@ class SotbitXmlParser extends SotbitContentParser{
                 unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_copy_page".$this->id.".txt");
                 return false;    
             }
-            
             if ($this->parseCatalogSectionXml($this->rss) === false)
             {
                 if ($this->settings["catalog"]["add_parser_section"] == "Y")
@@ -113,13 +98,13 @@ class SotbitXmlParser extends SotbitContentParser{
                 }   
             }
             $n = $this->currentPage;
-            
             parent::parseCatalogProducts();
             if($this->settings["catalog"]["mode"]!="debug" && !$this->agent)
             {
                 $this->stepStart = true;
                 parent::SavePrevPage($this->rss);    
-            }                                     
+            }
+         
             parent::SaveCurrentPage($this->pagenavigation);
             if($this->stepStart)
             {
@@ -127,323 +112,34 @@ class SotbitXmlParser extends SotbitContentParser{
                     unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/count_parser_catalog_step".$this->id.".txt");
                 parent::DeleteCopyPage();
             } 
-            
-            if((!parent::CheckOnePageNavigation() && $this->agent) || 
-            (!parent::CheckOnePageNavigation() && !$this->agent && $this->settings["catalog"]["mode"]=="debug")) 
-                parent::parseCatalogPages();            
-                           
-            if($this->settings['smart_log']['enabled']=='Y'){                                                                                                              
-                $this->settings['smart_log']['result_id'] = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-                $this->settings['smart_log']['result_id'] = \Bitrix\Shs\ParserResultTable::updateEndTime($this->settings['smart_log']['result_id']);
-            }
-        
+            if((!parent::CheckOnePageNavigation() && $this->agent) || (!parent::CheckOnePageNavigation() && !$this->agent && $this->settings["catalog"]["mode"]=="debug")) parent::parseCatalogPages();
             if(parent::CheckOnePageNavigation() && $this->stepStart)
-            {    
-                if(parent::IsEndSectionUrl())
-                {                                                                                                     
-                   parent::ClearBufferStop(); 
-                } 
+            {
+                if(parent::IsEndSectionUrl()) parent::ClearBufferStop();
                 else parent::ClearBufferStep();
                 return false;    
             }
-            
         endforeach;
         
-        parent::checkActionAgent($this->agent);
-        
-        if($this->agent || $this->settings["catalog"]["mode"]=="debug"){
-            foreach(GetModuleEvents("shs.parser", "EndPars", true) as $arEvent)
-                ExecuteModuleEventEx($arEvent, array($this->id));
-        }
+        parent::checkActionAgent();
     }
-    
-    protected function newXmlUrl()
-    {
-        if(count($this->arUrlSave) <= 0) return false;
-        $newUrlXml = array();
-        foreach($this->arUrlSave as $url)
-        {
-            if(strlen($url) == 0) continue 1;            
-            parent::connectCatalogPage($url);
-            //$this->page = file_get_contents($url);
-            if(isset($this->page) && strlen($this->page) > 0)
-            {   
-                $offerSelector = explode(' ',$this->settings['catalog']['selector']);  
-                $offerSelector = $offerSelector[count($offerSelector)-1]?:'offer';
-                preg_match_all("/<".$offerSelector."([\s\S]*?)>([\s\S]*?)<\/".$offerSelector.">/i", $this->page, $out, PREG_PATTERN_ORDER);
-                                                          
-                if(isset($out[0]) && count($out[0]) > 0)
-                { 
-                    if(isset($out[1]))
-                        unset($out[1]);
-                    if(isset($out[2]))
-                        unset($out[2]);
-                    
-                    $this->deleteStrReplace($out[0]);
-                                     
-                    if(isset($out))
-                        unset($out);
-                                                                                                                              
-                    if(isset($this->arrOffersNewXml) && count($this->arrOffersNewXml) > 0)
-                    {     
-                        if(!isset($this->XmlHeader) || !isset($this->XmlFooter) || (strlen($this->XmlFooter) == 0) || (strlen($this->XmlHeader) == 0))
-                        {
-                            continue 1;
-                        }                      
-                        
-                        if(!$this->startNewFolder())
-                        {
-                            break 1;
-                        }
-                        
-                        foreach($this->arrOffersNewXml as $id=>$val)
-                        {
-                            //write header
-                            if(!$this->WriteNewXmlFile($this->XmlHeader, $url, $id, "HEADER")) continue 1; 
-                            foreach($val as $item)
-                            {
-                                if(strlen($item) <= 0) continue 1;
-                                if(!$this->WriteNewXmlFile($item, $url, $id))
-                                {
-                                    break 1;
-                                }
-                            } 
-                            //write footer
-                            if($file = $this->WriteNewXmlFile($this->XmlFooter, $url, $id, "FOOTER"))
-                            {
-                                if(!in_array($file, $newUrlXml))
-                                {
-                                    $newUrlXml[] =  trim($file,'/');
-                                }  
-                            }
-                        }               
-                    }               
-                }                     
-            }
-                                              
-            if(isset($this->page))
-                unset($this->page);
-        }                     
-        
-        if(count($newUrlXml) > 0)
-        {
-            $this->arUrlSave = $newUrlXml;            
-            unset($newUrlXml);
-        }   
-        if(!$this->agent && $this->settings["catalog"]["mode"]!="debug" && file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_copy_url".$this->id.".txt"))
-        {
-            unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_copy_url".$this->id.".txt");  
-        }
-        if(!$this->agent && $this->settings["catalog"]["mode"]!="debug" && file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_copy_page".$this->id.".txt"))
-        {
-            unlink($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_copy_page".$this->id.".txt"); 
-        }    
-    }        
-    
-    protected function WriteNewXmlFile($srt, $link, $id, $cursor=false)
-    {
-        if((strlen($srt) == 0) && (strlen($link) == 0) && (strlen($id) == 0)) return false;
-        
-        $file = $_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/".$this->id."/".md5($link)."_".$id.".xml";
-        if($cursor == false)
-        {
-            if(file_exists($file))
-            {
-                 if(!file_put_contents($file, $srt."\n", FILE_APPEND))
-                 {
-                     return false;
-                 }
-            }
-            else
-            {
-                return false;
-            }
-        }
-        elseif($cursor == "HEADER")
-        {
-             if(!file_put_contents($file, $srt."\n"))
-             {
-                return false; 
-             }
-        }
-        elseif($cursor == "FOOTER")
-        {
-             if(!file_put_contents($file, $srt, FILE_APPEND))
-             {
-                 unlink($file);
-                 return false;
-             }
-        }
-        return $file;
-    }
-    
-    protected function parseXmlHeader($page, $arr)
-    {
-        if((strlen($page) > 0) && (count($arr) > 0))
-        {
-            $arrH = explode($arr[0], $page);                                                               
-            $this->XmlHeader = $arrH[0];  
-        }
-    }
-    
-    protected function parseXmlFooter($page, $arr)
-    {
-        if((strlen($page) > 0) && (count($arr) > 0))
-        {                       
-            $l = count($arr) - 1;             
-            $arrF = explode($arr[$l], $page);                                      
-            $l = count($arrF) - 1;             
-            $this->XmlFooter = $arrF[$l];                                                                         
-        }
-    }
-        
-    protected function startNewFolder()
-    {
-         $dir = $_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/".$this->id;
-         if(!is_dir($dir)) 
-         { 
-            if(!mkdir($dir, 0775))
-            {
-                //РІС‹РІРµСЃС‚СЊ РѕС€РёР±РєР° Рѕ СЃРѕР·РґР°РЅРёРё РїР°РїРєРё
-                return false;
-            }  
-         }
-         return true;
-    }
-    
-    protected function deleteStrReplace($arr)
-    {
-        
-        if(count($arr) <= 0) return false;
-        $iter = 0;
-        $item = 0;
-        $count = 2000;
-        $newArr = array();
-        foreach($arr as $id => &$val)
-        {
-            if(strlen($val) <= 0)
-            {
-                //unset($arr[$id]);
-                continue 1;
-            } 
-            $offerSelector = explode(' ',$this->settings['catalog']['selector']);  
-            $offerSelector = $offerSelector[0]?:'offers';
-            $val = preg_replace("/<".$offerSelector."(.*?)>/", "", $val);
-            
-            if($item == $count)
-            {
-                $iter ++;
-                $item = 0;
-            }
-            $newArr[$iter][$item] = $val;
-            $item ++;
-            
-        }
-                                  
-        if(count($newArr) > 0)
-        {
-            $this->parseXmlHeader($this->page, $arr);
-            $this->parseXmlFooter($this->page, $arr);
-            $this->arrOffersNewXml = $newArr;
-            
-            unset($newArr);            
-        }   
-    }  
-    
-    protected function PageFromFileXml()
-    {   
-        if($this->settings["catalog"]["mode"]=="debug" || $this->agent || $_GET["begin"]) return true;
-        $prevPage = $prevElement = $currentPage = 0;
-        if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_page".$this->id.".txt"))
-            $prevPage = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_page".$this->id.".txt");
-        if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_element".$this->id.".txt"))
-            $prevElement = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_prev_element".$this->id.".txt");
-        if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_page".$this->id.".txt"))
-            $currentPage = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/catalog_parser_current_page".$this->id.".txt");
-        
-        if($prevPage)
-        {
-            $arPrevPage = explode("|", $prevPage);
-            $arPrevElement = explode("|", $prevElement);
-            $arCurrentPage = explode("|", $currentPage);    
-        }else{
-            $arPrevPage = array();
-            $arCurrentPage = array();
-        }
-        
-        if(isset($arPrevElement) && is_array($arPrevElement))foreach($arPrevElement as $i=>$p)
-        {
-            $p = trim($p);
-            if(empty($p)) continue;
-            $this->pagePrevElement[$p] = $p;
-        }                                         
-        
-        if(!$_GET["begin"] && !$prevPage) return true;
-        
-        if(isset($arPrevPage) && is_array($arPrevPage))foreach($arPrevPage as $i=>$p)
-        {
-            $p = trim($p);
-            if(empty($p)) continue;
-            $this->pagenavigationPrev[$p] = $p;
-        }                                          
-        
-        
-        if(isset($arCurrentPage) && is_array($arCurrentPage))foreach($arCurrentPage as $p)
-        {
-            $p = trim($p);
-            if(empty($p)) continue;
-            $this->pagenavigation[$p] = $p;    
-        }                                    
-        
-        if(isset($this->pagenavigationPrev) && is_array($this->pagenavigationPrev))foreach($this->pagenavigationPrev as $i=>$v)
-        {
-            foreach($this->pagenavigation as $i1=>$v1)
-            {
-                if($v1==$v) unset($this->pagenavigation[$i1]);   
-            }
-        }                        
-        
-        $isContinue = false;          
-        if(isset($this->pagenavigation) && is_array($this->pagenavigation))
-            foreach($this->pagenavigation as $p)
-            {
-                $isContinue = true;
-                $this->rss = $p;
-                break;
-            }                 
-                             
-            
-        if(!$isContinue && !empty($this->pagenavigationPrev) && $this->IsEndSectionUrl())
-        {        
-            //if($this->IsEndSectionUrl())
-            $this->ClearBufferStop();
-            //else $this->ClearBufferStep();
-            return false;
-        }elseif(!$isContinue && !empty($this->pagenavigationPrev) && !$this->IsEndSectionUrl())
-        {
-            $isContinue = true;
-            $this->rss = $this->GetUrlRss();        
-        }      
-             
-        $this->currentPage = count($this->pagenavigationPrev);
-        if($this->IsNumberPageNavigation() && $this->CheckPageNavigation($this->currentPage))
-        {   
-            $this->activeCurrentPage = $this->currentPage-$this->arPageNavigationDelta[0]+1;
-        } elseif (!$this->IsNumberPageNavigation()) 
-            $this->activeCurrentPage = $this->currentPage;                                         
-        return true;                                                                         
-    }        
  
     protected function parseCatalogProductElementXml(&$el)
     {
-        $this->countItem++;            
+        $this->countItem++;
+        //$this->parseCatalogSection();
         if(!$this->parserCatalogPreviewXml($el))
         {
             parent::SaveCatalogError();
             parent::clearFields();
             return false;    
-        }                    
-        if($this->settings["catalog"]["add_parser_section"] != "Y" && empty($this->settings['catalog']['section_main'])) parent::parseCatalogSection();
+        }
+
+        /*$this->parserCatalogDetail();
+        $this->parseCatalogSection();
+        $this->parseCatalogMeta();
+        $this->parseCatalogFirstUrl();*/
+        if($this->settings["catalog"]["add_parser_section"] != "Y") parent::parseCatalogSection();
         parent::parseCatalogDate();
         parent::parseCatalogAllFields();
 
@@ -476,7 +172,7 @@ class SotbitXmlParser extends SotbitContentParser{
                 $this->elementUpdate = $this->elementOfferUpdate;
             }
             if($this->boolOffer)
-            {                                                
+            {
                 parent::addProductPriceOffers();
             }else{
                 
@@ -486,20 +182,12 @@ class SotbitXmlParser extends SotbitContentParser{
                 $this->addAvailable();   
             }
             
-            $this->parseStore();
-            $this->updateQuantity();
-            
         }/*else{
             $this->AddElementOfferCatalog();
             $this->AddProductCatalog();
             $this->AddMeasureCatalog();
             $this->AddPriceCatalog();    
-        }*/   
-                                                                   
-        if($this->settings['smart_log']['enabled']=='Y') {        
-            $this->settings['smart_log']['result_id'] = file_get_contents($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/shs.parser/include/result_id".$this->id.".txt");
-            SmartLogs::saveNewValues($this->elementID, $this->settings["smart_log"], $this->arFields, isset($this->arPrice['PRICE'])?$this->arPrice['PRICE']:null, $this->arProduct);
-        }
+        }*/
 
         parent::SetCatalogElementsResult();
         parent::clearFilesTemp();
@@ -513,16 +201,13 @@ class SotbitXmlParser extends SotbitContentParser{
         parent::parseCatalogNamePreview($el);
         //$this->parseCatalogPropertiesPreview($el);
         if($this->isCatalog)parent::parseCatalogPricePreview($el);
-        if($this->isCatalog)parent::parseCatalogAdditionalPricesPreview($el);
-        if($this->isCatalog)$this->ParseCatalogAvailablePreview($el);                                                          
-        if ($this->settings["catalog"]["add_parser_section"] == "Y" || (count($this->settings["catalog"]["id_category_main"]) > 0)) $this->parseCatalogParrentSection($el);
+        if($this->isCatalog)$this->ParseCatalogAvailablePreview($el);
+        if ($this->settings["catalog"]["add_parser_section"] == "Y") $this->parseCatalogParrentSection($el);
         parent::parseCatalogPreviewPicturePreview($el);
         parent::parseCatalogDetailPicture($el);
         $this->parseCatalogDescriptionXml($el);
         parent::parseCatalogDetailMorePhoto($el);
         $this->parseCatalogPropertiesXml($el);
-        foreach(GetModuleEvents("shs.parser", "parserBeforeOffers", true) as $arEvent)
-                ExecuteModuleEventEx($arEvent, array(&$this, &$el));
         $this->parserOffersXml($el);
         
         return true;
@@ -551,10 +236,7 @@ class SotbitXmlParser extends SotbitContentParser{
             if(parent::parseOfferName($offer))
             {
                 parent::parseOfferPrice($offer);
-                parent::parseOfferAdditionalPrice($offer);
                 $this->parseOfferQuantity($offer);
-                foreach(GetModuleEvents("shs.parser", "OnBeforeOfferPropertySave", true) as $arEvent)
-                    ExecuteModuleEventEx($arEvent, array(&$this, &$offer));
                 $this->parseOfferPropsXml($offer);
                 if(!parent::parseOfferGetUniq())
                 {
@@ -567,12 +249,11 @@ class SotbitXmlParser extends SotbitContentParser{
 
             $this->arOfferAll["FIELDS"][] = $this->arOffer;
             $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
-            $this->arOfferAll["ADDIT_PRICE"][] = $this->arAdditionalPriceOffer; 
             $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;
 
             parent::deleteOfferFields();
                 
-       }                                          
+       }
     }
     
     protected function parserOffersOne(&$el)
@@ -585,7 +266,6 @@ class SotbitXmlParser extends SotbitContentParser{
                 if($this->parseOfferNameOneXml($offer))
                 {
                     parent::parseOfferPrice($offer);
-                    parent::parseOfferAdditionalPrice($offer);
                     $this->parseOfferQuantity($offer);
                     parent::parseOfferProps($offer);
                     if(!parent::parseOfferGetUniq())
@@ -598,7 +278,7 @@ class SotbitXmlParser extends SotbitContentParser{
                     continue 1;
 
                 $this->arOfferAll["FIELDS"][] = $this->arOffer;
-                $this->arOfferAll["PRICE"][] = $this->arPriceOffer;      
+                $this->arOfferAll["PRICE"][] = $this->arPriceOffer;
                 $this->arOfferAll["QUANTITY"][] = $this->arOfferQuantity;
                 
                 parent::deleteOfferFields(); 
@@ -613,7 +293,6 @@ class SotbitXmlParser extends SotbitContentParser{
                         if($this->parseOfferNameOneXml($offer, $nameOffer))
                         {
                             parent::parseOfferPrice($offer);
-                            parent::parseOfferAdditionalPrice($offer);
                             $this->parseOfferQuantity($offer);
                             parent::parseOfferProps($offer, $nameOffer);
                             if(!parent::parseOfferGetUniq())
@@ -750,7 +429,6 @@ class SotbitXmlParser extends SotbitContentParser{
     {
         if(parent::checkUniq() && !$this->isUpdate) return false;
         parent::parseCatalogDefaultProperties($el);
-        $this->propsFilter = array();
         parent::parseCatalogSelectorProperties($el);
         $this->parseCatalogAutoProps($el);
         $this->parseCatalogAutoPropsAdd();
@@ -766,7 +444,7 @@ class SotbitXmlParser extends SotbitContentParser{
         $props = $this->settings["catalog"]["selector_find_props"];
         $props_name = parent::GetArraySrcAttr($this->settings["catalog"]["attr_auto_props"]);
         $arr_val = parent::GetArraySrcAttr($this->settings["catalog"]["selector_attr_value_auto_props"]);
-        $this->arPropertiesParseAuto = array();
+        
         foreach(pq($el)->find($props) as $property)
         {
             $isset_props = false;
@@ -846,8 +524,7 @@ class SotbitXmlParser extends SotbitContentParser{
     
     protected function parseCatalogAutoPropsAdd()
     {
-        $arProperties = $this->arPropertiesParseAuto;     
-        
+        $arProperties = $this->arPropertiesParseAuto;
         if(!$arProperties) return false;
         if($this->settings["catalog"]["catalog_delete_selector_find_props_symb"])
         {
@@ -872,7 +549,6 @@ class SotbitXmlParser extends SotbitContentParser{
         foreach($arProperties as $code => $value)
         {
             $arProp = $this->arProperties[$code];
-            
             if(($arProp["PROPERTY_TYPE"] == "S") || ($arProp["PROPERTY_TYPE"] == "L") || ($arProp["PROPERTY_TYPE"] == "N")) 
             {   
                 $text = $value;
@@ -888,9 +564,6 @@ class SotbitXmlParser extends SotbitContentParser{
     {
         if(empty($code)) return false;
         $val = html_entity_decode($val);
-        
-        parent::filterProps($code, $val);
-        
         $arProp = $this->arProperties[$code];
         //$default = $this->settings["catalog"]["default_prop"][$code];
         
@@ -1016,13 +689,11 @@ class SotbitXmlParser extends SotbitContentParser{
         }
         $this->arFields["LINK"] = $p;
         return true;
-    }      
+    }
     
     protected function parseCatalogParrentSection(&$el)             //parse parent section
     {
-        if($this->checkUniq()) return false; 
-        
-        if ((($this->settings["catalog"]["add_parser_section"] == "N") || (($this->settings["catalog"]["add_parser_section"] == "N") && count($this->settings["catalog"]["id_category_main"]) <= 0)) || empty($this->settings["catalog"]["id_section"]))  return false;
+        if (($this->settings["catalog"]["add_parser_section"] == "N") || empty($this->settings["catalog"]["id_section"])) return false;
         $ar = parent::GetArraySrcAttr($this->settings["catalog"]["id_section"]);
         $selector = $ar["path"];
         $attr = $ar["attr"];
@@ -1034,58 +705,15 @@ class SotbitXmlParser extends SotbitContentParser{
         {
             if(empty($attr)) $parrent_id = trim(strip_tags(pq($el)->find($selector)->html()));
             elseif(!empty($attr)) $parrent_id = trim(pq($el)->find($selector)->attr());
-        }                      
-        /*$parrent_id = trim($this->settings["catalog"]["id_section"]);
-        $parrent_id = trim(pq($el)->find($parrent_id)->text());*/
+        }
+        $parrent_id = trim($this->settings["catalog"]["id_section"]);
+        $parrent_id = trim(pq($el)->find($parrent_id)->text());
         if(empty($parrent_id)) return false;
-        elseif (!empty($parrent_id))
-        {                                                                                                                                                 
-           if(($this->settings["catalog"]["add_parser_section"] == "Y") && count($this->settings["catalog"]["id_category_main"]) <= 0) // если стоит галочка создавать новые разделы и нет своих разделов
-           {
-               $parrent_id = $this->issetSectionCatalog($parrent_id);
-           } 
-           else
-           {
-               $parrent_id = $this->issetMainSectionCatalog($parrent_id); 
-           }
-        }                      
+        elseif (!empty($parrent_id)) $parrent_id = $this->issetSectionCatalog($parrent_id);
         if($parrent_id !== false)
         {
             $this->arFields["IBLOCK_SECTION_ID"] = $parrent_id;
-        }                                                
-        /*else
-        {
-            $this->arFields["IBLOCK_SECTION_ID"] = $this->section_id;
-        }*/
-    }
-    
-    protected function issetMainSectionCatalog($parrent_id)
-    {
-        if(empty($parrent_id)) return false;
-        
-        if(count($this->settings["catalog"]["id_category_main"]) <= 0 || count($this->settings["catalog"]["section_main"]) <= 0) return false;
-        
-        $idSec = $this->settings["catalog"]["id_category_main"];
-        $idMainSec = $this->settings["catalog"]["section_main"];
-        
-        if(in_array($parrent_id, $idSec))
-        {
-            foreach($idSec as $id => &$val)
-            {
-                $val = trim($val);
-                if(empty($val)) continue 1;
-                
-                if($val == $parrent_id)
-                {
-                    $returnVal = $idMainSec[$id];
-                    break;
-                }
-            }
-            
-            if(isset($returnVal) && !empty($returnVal)) return $returnVal;
-            else return false;
         }
-        else return false;
     }
 
     protected function parseCatalogSectionXml($pageHref)            //parse section
@@ -1211,7 +839,7 @@ class SotbitXmlParser extends SotbitContentParser{
             $new_section_arr[$v['parentId']][$k]['text'] = $v['text'];
             $new_section_arr[$v['parentId']][$k]['parentId'] = $v['parentId'];
         }
-        
+    
         return $new_section_arr;
     }
     
@@ -1231,13 +859,15 @@ class SotbitXmlParser extends SotbitContentParser{
                 }
                  $this->addSectionXlm(array("id_section" => $parent_Id, "text_section" => $arr[$parent_Id]["text"], "id_parrent" => $parent_section));
             }  
-        }     
+        }        
          if(is_array($cats) and  isset($cats[$parent_id]))
          {
+            
             foreach($cats[$parent_id] as $id => $cat)
             {
+               
                $id_sec = $this->issetSectionCatalog($id);
-               //var_dump($id.' - '.$id_sec);
+               
                if($id_sec === false)
                {   
                     if($cat["parentId"] == 0)
@@ -1299,8 +929,7 @@ class SotbitXmlParser extends SotbitContentParser{
         $ID = $new_section->Add($arFields, false, $index_category);
         if ($ID !== false)
         {   
-            $this->countSection++;
-            //$this->catalog_ids[];
+            $this->countSection++; 
         } 
         elseif ($ID === false)
         {
@@ -1342,36 +971,13 @@ class SotbitXmlParser extends SotbitContentParser{
               "DESCRIPTION" => GetMessage("parser_add_category_description"),
               "DESCRIPTION_TYPE" => "text"
         );
-        //string for write fields
-        if(isset($this->settings["catalog"]["uniq_category"]["dop_fields_category"]) && !empty($this->settings["catalog"]["uniq_category"]["dop_fields_category"]))
-        {
-            $strFilter = "shs_";
-            if($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "id_category")
-            {
-                $strFilter = $strFilter.$settings["id_section"];
-            }
-            elseif($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "link_xml_file")
-            {
-                $strFilter = $strFilter.md5($this->rss)."_".$settings["id_section"];
-            }
-            elseif($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "id_parser")
-            {
-                $strFilter = $strFilter.$this->id."_".$settings["id_section"];
-            }
-        }
-        else
-        {
-            $strFilter = "shs_".md5($this->rss)."_".$settings["id_section"]; 
-        }
-        
-        
         if ($this->settings["catalog"]["field_id_category"] == "XML_ID")
         {
-            $arFields["XML_ID"] = $strFilter;
+            $arFields["XML_ID"] = "shs_".md5($this->rss)."_".$settings["id_section"];
         }
         elseif ($this->settings["catalog"]["field_id_category"] == "EXT_FIELD")
         {
-            $arFields["UF_SHS_PARSER"] = $strFilter;
+            $arFields["UF_SHS_PARSER"] = "shs_".md5($this->rss)."_".$settings["id_section"];
         }
         return $arFields;
     }
@@ -1431,37 +1037,14 @@ class SotbitXmlParser extends SotbitContentParser{
     
     protected function GetArrFilterSection($settings)
     {
-        $arFilter["IBLOCK_ID"] = $this->iblock_id;
-        if(isset($this->settings["catalog"]["uniq_category"]["dop_fields_category"]) && !empty($this->settings["catalog"]["uniq_category"]["dop_fields_category"]))
-        {
-            $strFilter = "shs_";
-            if($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "id_category")
-            {
-                $strFilter = $strFilter.$settings;
-            }
-            elseif($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "link_xml_file")
-            {
-                $strFilter = $strFilter.md5($this->rss)."_".$settings;
-            }
-            elseif($this->settings["catalog"]["uniq_category"]["dop_fields_category"] == "id_parser")
-            {
-                $strFilter = $strFilter.$this->id."_".$settings;
-            }
-        }
-        else
-        {
-            $strFilter = "shs_".md5($this->rss)."_".$settings;
-        }
-        
         if ($this->settings["catalog"]["field_id_category"] == "XML_ID")
         {
-            $arFilter['=XML_ID'] = $strFilter;  
+            $arFilter = Array('IBLOCK_ID'=>$this->iblock_id, '=XML_ID'=>"shs_".md5($this->rss)."_".$settings);  
         }
         elseif ($this->settings["catalog"]["field_id_category"] == "EXT_FIELD") 
         {
-            $arFilter['=UF_SHS_PARSER'] = $strFilter;  
+            $arFilter = Array('IBLOCK_ID'=>$this->iblock_id, '=UF_SHS_PARSER'=>"shs_".md5($this->rss)."_".$settings);  
         }
-        
         return $arFilter;
     }
     
@@ -1514,30 +1097,18 @@ class SotbitXmlParser extends SotbitContentParser{
             }
         }
     }
-                
+    
     protected function ValidateUrl($url)
-    {                                                                                                                   
-        if (preg_match("/^(http|https)?(:\/\/)?([A-Z0-9][A-Z0-9_-]*(?:\..[A-Z0-9][A-Z0-9_-]*)+):?(d+)?\/?/Diu", $url)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+    {
+        if (preg_match("/^(http|https)?(:\/\/)?([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*)+):?(d+)?\/?/Diu", $url))
         {
-            return true; 
+           return true; 
         }
         else 
         {
             return false;
         }
-    }    
-                
-    protected function ValidateFtpUrl($url)
-    {                                                                                                                   
-        if (preg_match("/^(ftp|ftps)?(:\/\/)?([a-zA-Z0-9_-]+:[a-zA-Z0-9_-]+@)?([A-Z0-9][A-Z0-9_-]*(?:\..[A-Z0-9][A-Z0-9_-]*)+):?(d+)?\/?/Diu", $url)) //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
-        {
-            return true; 
-        }
-        else 
-        {
-            return false;
-        }
-    }                                                                                                                
+    }
     
     protected function ParseCatalogAvailablePreview(&$el)
     {
@@ -1559,12 +1130,9 @@ class SotbitXmlParser extends SotbitContentParser{
             {
                 $available = pq($el)->attr($attr);
             }
-            $available = trim(strip_tags($available));      
-            $value = $this->findAvailabilityValue($available);
-            if($value){                                             
-                $available = $value['count']; 
-            }            
-            $available = preg_replace('/[^0-9.]/', "", $available);            
+            $available = trim(strip_tags($available));
+            $available = preg_replace('/[^0-9.]/', "", $available);
+            
             if(is_numeric($available))
             {
                 $available = intval($available);
@@ -1577,10 +1145,7 @@ class SotbitXmlParser extends SotbitContentParser{
                     $this->arFields["AVAILABLE_PREVIEW"] = $available;
                 }
             }
-        } elseif(is_numeric($this->settings["catalog"]["count_default"]))
-            {
-               $this->arFields["AVAILABLE_PREVIEW"] = intval($this->settings["catalog"]["count_default"]);
-            }
+        }
     }
     
     protected function ParseCatalogAvailableDetail(&$el)
@@ -1604,37 +1169,21 @@ class SotbitXmlParser extends SotbitContentParser{
                 $available = pq($el)->attr($attr);
             }
             
-            $available = trim(strip_tags($available));        
-            $value = $this->findAvailabilityValue($available);
-            if($value){                                             
-                $available = $value['count']; 
-            }                      
+            $available = trim(strip_tags($available));
             $available = preg_replace('/[^0-9.]/', "", $available);
-            if(is_numeric($available)/*&& strlen($available)>0*/)
+            if(is_numeric($available))
             {
                 $available = intval($available);
-                if($available == 0){
+                if($available == 0)
+                {
                     $this->arFields["AVAILABLE_DETAIL"] = 0;
-                } else {
+                }
+                else
+                {
                     $this->arFields["AVAILABLE_DETAIL"] = $available;
                 }
-            }  
-        } elseif(is_numeric($this->settings["catalog"]["count_default"])){
-            $this->arFields["AVAILABLE_DETAIL"] = intval($this->settings["catalog"]["count_default"]);
-        }
-    }
-    
-    protected function findAvailabilityValue($value){
-        if(isset($this->settings['availability']['list']) && !empty($this->settings['availability']['list'])){
-            foreach($this->settings['availability']['list'] as $i => $av){
-                if($av['text']==$value){ 
-                    return $av;   
-                }       
             }
-            return false;                    
-        } else {
-            return false;
-        }        
+        }
     }
     
     protected function addAvailable()
@@ -1707,10 +1256,6 @@ class SotbitXmlParser extends SotbitContentParser{
                 }
             }
             $quantity = trim(strip_tags($quantity));
-            $value = $this->findAvailabilityValue($quantity);
-            if($value){                                             
-                $quantity = $value['count']; 
-            }    
             $quantity = preg_replace('/[^0-9.]/', "", $quantity);
 
             if(is_numeric($quantity))
@@ -1735,10 +1280,6 @@ class SotbitXmlParser extends SotbitContentParser{
                     $n = $this->tableHeaderNumber[$name];
                     $quantity = pq($offer)->find($this->settings["offer"]["selector_item_td"].":eq(".$n.")");
                     $quantity = trim(strip_tags($price));
-                    $value = $this->findAvailabilityValue($quantity);
-                    if($value){                                             
-                        $quantity = $value['count']; 
-                    }    
                     $quantity = preg_replace('/[^0-9.]/', "", $quantity);
                     if(is_numeric($quantity))
                     {
@@ -1758,10 +1299,6 @@ class SotbitXmlParser extends SotbitContentParser{
             $attr = $this->settings["offer"]["one"]["quantity"];
             $quantity = pq($offer)->attr($attr);
             $quantity = trim(strip_tags($quantity));
-            $value = $this->findAvailabilityValue($quantity);
-            if($value){                                             
-                $quantity = $value['count']; 
-            }    
             $quantity = preg_replace('/[^0-9.]/', "", $quantity);
             
             if(is_numeric($quantity))
@@ -1817,6 +1354,8 @@ class SotbitXmlParser extends SotbitContentParser{
         } 
 
     }
+    
+    
     
 }
 ?>

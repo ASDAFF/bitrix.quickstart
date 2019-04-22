@@ -12,8 +12,8 @@ $arEncoding['reference_id'] = array('utf-8', 'windows-1251');
 $arType['reference'] = array('html', 'text');
 $arType['reference_id'] = array('html', 'text');
 
-$arTypeParser['reference'] = array('rss', 'page', 'catalog', 'xml', 'csv', 'xls');
-$arTypeParser['reference_id'] = array('rss', 'page', 'catalog', 'xml', 'csv', 'xls');
+$arTypeParser['reference'] = array('rss', 'page', 'catalog', 'xml');
+$arTypeParser['reference_id'] = array('rss', 'page', 'catalog', 'xml');
 
 $arrDate = ParseDateTime($shs_START_LAST_TIME_X, "YYYY.MM.DD HH:MI:SS");
 
@@ -24,48 +24,47 @@ $arrUniq["reference_id"] = array("name", "url");
 
 if($shs_TYPE) $disabled = 'disabled=""';
 ?>
-
     <tr>
-        <td><?echo GetMessage("parser_type")?></td>
-        <td><?=SelectBoxFromArray('TYPE', $arTypeParser, $shs_TYPE?$shs_TYPE:$_GET["type"], "", $disabled);?>
+		<td><?echo GetMessage("parser_type")?></td>
+		<td><?=SelectBoxFromArray('TYPE', $arTypeParser, $shs_TYPE?$shs_TYPE:$_GET["type"], "", $disabled);?>
         <?if($disabled):?><input type="hidden" name="TYPE" value="<?=$shs_TYPE?>" /><?endif;?>
         </td>
-    </tr>
-    <tr>
-        <td width="40%"><?echo GetMessage("parser_act")?></td>
-        <td width="60%"><input type="checkbox" name="ACTIVE" value="Y"<?if($shs_ACTIVE == "Y" || !$ID) echo " checked"?>>
+	</tr>
+	<tr>
+		<td width="40%"><?echo GetMessage("parser_act")?></td>
+		<td width="60%"><input type="checkbox" name="ACTIVE" value="Y"<?if($shs_ACTIVE == "Y" || !$ID) echo " checked"?>>
         </td>
-    </tr>
+	</tr>
     <tr>
-        <td><?echo GetMessage("parser_sort")?></td>
-        <td><input type="text" name="SORT" value="<?echo !$ID?"100":$shs_SORT;?>" size="4"></td>
-    </tr>
+		<td><?echo GetMessage("parser_sort")?></td>
+		<td><input type="text" name="SORT" value="<?echo !$ID?"100":$shs_SORT;?>" size="4"></td>
+	</tr>
     <?if(isset($arCategory) && !empty($arCategory)):?>
     <tr>
         <td><?echo GetMessage("parser_category_title")?></td>
         <td><?=SelectBoxFromArray('CATEGORY_ID', $arCategory, isset($shs_CATEGORY_ID)?$shs_CATEGORY_ID:$parentID, GetMessage("parser_category_select"), "id='category' style='width:262px'");?></td>
     </tr>
     <?endif;?>
+	<tr>
+		<td><span class="required">*</span><?echo GetMessage("parser_name")?></td>
+		<td><input type="text" name="NAME" value="<?echo $shs_NAME;?>" size="40" maxlength="250"></td>
+	</tr>
     <tr>
-        <td><span class="required">*</span><?echo GetMessage("parser_name")?></td>
-        <td><input type="text" name="NAME" value="<?echo $shs_NAME;?>" size="40" maxlength="250"></td>
-    </tr>
+		<td><span class="required">*</span><?echo GetMessage("parser_rss")?></td>
+		<td><input type="text" name="RSS" value="<?echo $shs_RSS;?>" size="40" maxlength="250"></td>
+	</tr>
+	<tr>
+		<td><span class="required">*</span><?echo GetMessage("parser_iblock_id")?></td>
+		<td><?=SelectBoxFromArray('IBLOCK_ID', $arIBlock, $shs_IBLOCK_ID, GetMessage("parser_iblock_id"), "id='iblock' style='width:262px'");?></td>
+	</tr>
     <tr>
-        <td><span class="required">*</span><?echo GetMessage("parser_rss")?></td>
-        <td><input type="text" name="RSS" value="<?echo $shs_RSS;?>" size="40" maxlength="250"></td>
-    </tr>
+		<td><?echo GetMessage("parser_section_id")?></td>
+		<td><?=SelectBoxFromArray('SECTION_ID', $arSection, $shs_SECTION_ID, GetMessage("parser_section_id"), "id='section' style='width:262px'");?></td>
+	</tr>
     <tr>
-        <td><span class="required">*</span><?echo GetMessage("parser_iblock_id")?></td>
-        <td><?=SelectBoxFromArray('IBLOCK_ID', $arIBlock, $shs_IBLOCK_ID, GetMessage("parser_iblock_id"), "id='iblock' style='width:262px'");?></td>
-    </tr>
-    <tr>
-        <td><?echo GetMessage("parser_section_id")?></td>
-        <td><?=SelectBoxFromArray('SECTION_ID', $arSection, $shs_SECTION_ID, GetMessage("parser_section_id"), "id='section' style='width:262px'");?></td>
-    </tr>
-    <tr>
-        <td><?echo GetMessage("parser_selector")?></td>
-        <td><input type="text" name="SELECTOR" value="<?echo $shs_SELECTOR;?>" size="40" maxlength="250"></td>
-    </tr>
+		<td><?echo GetMessage("parser_selector")?></td>
+		<td><input type="text" name="SELECTOR" value="<?echo $shs_SELECTOR;?>" size="40" maxlength="250"></td>
+	</tr>
     <tr>
         <td></td>
         <td>
@@ -75,9 +74,9 @@ if($shs_TYPE) $disabled = 'disabled=""';
         </td>
     </tr>
     <tr>
-        <td><?echo GetMessage("parser_first_url")?></td>
-        <td><input type="text" name="FIRST_URL" value="<?echo $shs_FIRST_URL;?>" size="40" maxlength="250"></td>
-    </tr>
+		<td><?echo GetMessage("parser_first_url")?></td>
+		<td><input type="text" name="FIRST_URL" value="<?echo $shs_FIRST_URL;?>" size="40" maxlength="250"></td>
+	</tr>
     <tr>
         <td></td>
         <td>
@@ -87,9 +86,9 @@ if($shs_TYPE) $disabled = 'disabled=""';
         </td>
     </tr>
     <tr>
-        <td><?echo GetMessage("parser_encoding")?></td>
-        <td><?=SelectBoxFromArray('ENCODING', $arEncoding, $shs_ENCODING);?></td>
-    </tr>
+		<td><?echo GetMessage("parser_encoding")?></td>
+		<td><?=SelectBoxFromArray('ENCODING', $arEncoding, $shs_ENCODING);?></td>
+	</tr>
     <tr>
         <td></td>
         <td>
@@ -99,9 +98,9 @@ if($shs_TYPE) $disabled = 'disabled=""';
         </td>
     </tr>
     <tr>
-        <td><?echo GetMessage("parser_start_last_time")?></td>
-        <td><input type="text" disabled name="START_LAST_TIME_X" value="<?echo $arrDate[DD].'.'.$arrDate[MM].'.'.$arrDate[YYYY].' '.$arrDate[HH].':'.$arrDate[MI].':'.$arrDate[SS];?>" size="20"></td>
-    </tr>
+		<td><?echo GetMessage("parser_start_last_time")?></td>
+		<td><input type="text" disabled name="START_LAST_TIME_X" value="<?echo $arrDate[DD].'.'.$arrDate[MM].'.'.$arrDate[YYYY].' '.$arrDate[HH].':'.$arrDate[MI].':'.$arrDate[SS];?>" size="20"></td>
+	</tr>
 <?
 //********************
 //Auto params
@@ -114,13 +113,13 @@ if($shs_TYPE) $disabled = 'disabled=""';
 $tabControl->BeginNextTab();
 ?>
     <tr>
-        <td><?echo GetMessage("parser_preview_text_type")?></td>
-        <td><?=SelectBoxFromArray('PREVIEW_TEXT_TYPE', $arType, $shs_PREVIEW_TEXT_TYPE, "", "");?></td>
-    </tr>
+		<td><?echo GetMessage("parser_preview_text_type")?></td>
+		<td><?=SelectBoxFromArray('PREVIEW_TEXT_TYPE', $arType, $shs_PREVIEW_TEXT_TYPE, "", "");?></td>
+	</tr>
     <tr>
-        <td><?echo GetMessage("parser_preview_delete_tag")?></td>
+		<td><?echo GetMessage("parser_preview_delete_tag")?></td>
         <td><input class="bool-delete" type="checkbox" name="BOOL_PREVIEW_DELETE_TAG" value="Y"<?if($shs_BOOL_PREVIEW_DELETE_TAG == "Y") echo " checked"?>> <?echo GetMessage("parser_bool_preview_delete_tag")?><input <?if($shs_BOOL_PREVIEW_DELETE_TAG != "Y"):?>disabled <?endif?> type="text" name="PREVIEW_DELETE_TAG" value="<?echo $shs_PREVIEW_DELETE_TAG;?>" size="40" maxlength="300"></td>
-    </tr>
+	</tr>
     <tr>
         <td></td>
         <td>
@@ -185,13 +184,13 @@ $tabControl->BeginNextTab();
 $tabControl->BeginNextTab();
 ?>
     <tr>
-        <td><?echo GetMessage("parser_detail_text_type")?></td>
-        <td><?=SelectBoxFromArray('DETAIL_TEXT_TYPE', $arType, $shs_DETAIL_TEXT_TYPE, "", "");?></td>
-    </tr>
+		<td><?echo GetMessage("parser_detail_text_type")?></td>
+		<td><?=SelectBoxFromArray('DETAIL_TEXT_TYPE', $arType, $shs_DETAIL_TEXT_TYPE, "", "");?></td>
+	</tr>
     <tr>
-        <td><?echo GetMessage("parser_detail_delete_tag")?></td>
+		<td><?echo GetMessage("parser_detail_delete_tag")?></td>
         <td><input class="bool-delete" type="checkbox" name="BOOL_DETAIL_DELETE_TAG" value="Y"<?if($shs_BOOL_DETAIL_DELETE_TAG == "Y") echo " checked"?>> <?echo GetMessage("parser_bool_detail_delete_tag")?><input <?if($shs_BOOL_DETAIL_DELETE_TAG != "Y"):?>disabled <?endif?> type="text" name="DETAIL_DELETE_TAG" value="<?echo $shs_DETAIL_DELETE_TAG;?>" size="40" maxlength="300"></td>
-    </tr>
+	</tr>
     <tr>
         <td></td>
         <td>
@@ -319,46 +318,19 @@ $tabControl->BeginNextTab();
             <?echo GetMessage("parser_sleep_descr")?>
             <?=EndNote();?>
         </td>
-    </tr> 
-    <tr class="heading">
-        <td colspan="2"><?php echo GetMessage('parser_proxy_header');?></td>
     </tr>
     <tr>
-        <td width="40%"><?echo GetMessage("parser_proxy").':'?></td>
-        <td width="60%">
-            <input type="text" size="40" name="SETTINGS[catalog][proxy]" value="<?=$shs_SETTINGS["catalog"]["proxy"]?>">
-            <input placeholder="username:password" type="text" size="30" name="SETTINGS[proxy][username_password]" value="<?=$shs_SETTINGS["proxy"]["username_password"]?>">
-        </td>
-    </tr>   
-    <?php
-    if(isset($shs_SETTINGS['proxy']['servers']) && !empty($shs_SETTINGS['proxy']['servers'])){
-    $i = 1;
-        foreach($shs_SETTINGS['proxy']['servers'] as $id => $server){
-            if(empty($server))
-                continue;  
-            ?>
-            <tr data-id="<?php echo $id?>">
-                <td><?php echo GetMessage('parser_proxy').' '.$i.':';?></td>
-                <td><input type="text"  size="40" name="SETTINGS[proxy][servers][<?php echo $id?>][ip]" value="<?php echo $server['ip'];?>"> <input placeholder="username:password" type="text" size="30" name="SETTINGS[proxy][servers][<?php echo $id?>][username_password]" value="<?=$server["username_password"]?>"> <a href="#" class="delete_proxy_server"><?php echo GetMessage('delete');?></a></td>
-            </tr>
-            <?php
-            $i++;
-        }
-    }
-    ?>
-    <tr>     
-        <td colspan="2" align="center">
-            <input type="submit" id="addProxyServer" name="refresh" value="<? echo GetMessage('add_proxy_server')?>">
-        </td>
-    </tr>   
+        <td width="40%"><?echo GetMessage("parser_proxy")?></td>
+        <td width="60%"><input type="text" size="40" name="SETTINGS[rss][proxy]" value="<?=$shs_SETTINGS["rss"]["proxy"]?>"></td>
+    </tr>
     <tr>
         <td></td>
         <td>
             <?=BeginNote();?>
-            <?echo GetMessage("parser_proxy_username_descr")?>
+            <?echo GetMessage("parser_proxy_descr")?>
             <?=EndNote();?>
         </td>
-    </tr>      
+    </tr>
     <?
     $tabControl->BeginNextTab();
     ?>
@@ -478,17 +450,17 @@ $tabControl->BeginNextTab();
     </tr>
 <?
 $tabControl->Buttons(
-    array(
-        "disabled"=>($POST_RIGHT<"W"),
-        "back_url"=>"list_parser_admin.php?lang=".LANG,
+	array(
+		"disabled"=>($POST_RIGHT<"W"),
+		"back_url"=>"list_parser_admin.php?lang=".LANG,
 
-    )
+	)
 );
 ?>
 <?echo bitrix_sessid_post();?>
 <input type="hidden" name="lang" value="<?=LANG?>">
 <?if($ID>0 && !$bCopy):?>
-    <input type="hidden" name="ID" value="<?=$ID?>">
+	<input type="hidden" name="ID" value="<?=$ID?>">
 <?endif;?>
 <?
 $tabControl->End();

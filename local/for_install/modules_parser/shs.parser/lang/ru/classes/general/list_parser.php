@@ -1,7 +1,11 @@
 <?
-$MESS["class_parser_err_name"] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¿ÑƒÑÑ‚Ñ‹Ð¼.";
-$MESS["class_parser_err_sort"] = "ÐŸÐ¾Ð»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ Ñ‡Ð¸ÑÐ»Ð¾Ð¼";
-$MESS["class_parser_err_rss"] = "RSS ÐºÐ°Ð½Ð°Ð» Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¿ÑƒÑÑ‚Ñ‹Ð¼";
-$MESS["class_parser_err_iblock"] = "ÐŸÐ¾Ð»Ðµ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ð¹ Ð±Ð»Ð¾Ðº Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¿ÑƒÑÑ‚Ñ‹Ð¼";
-$MESS["class_parser_err_time_agent"] = "ÐŸÐµÑ€Ð¸Ð¾Ð´Ð¸Ñ‡Ð½Ð¾ÑÑ‚ÑŒ Ð·Ð°Ð¿ÑƒÑÐºÐ° Ð·Ð°Ð´Ð°Ð½Ð° Ð½Ðµ Ð²ÐµÑ€Ð½Ð¾";        
+/**
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS["class_parser_err_name"] = "Íàçâàíèå íå ìîæåò áûòü ïóñòûì.";
+$MESS["class_parser_err_sort"] = "Ïîëå ñîðòèðîâêà äîëæíî áûòü ÷èñëîì";
+$MESS["class_parser_err_rss"] = "RSS êàíàë íå ìîæåò áûòü ïóñòûì";
+$MESS["class_parser_err_iblock"] = "Ïîëå èíôîðìàöèîííûé áëîê íå ìîæåò áûòü ïóñòûì";
+$MESS["class_parser_err_time_agent"] = "Ïåðèîäè÷íîñòü çàïóñêà çàäàíà íå âåðíî";
 ?>

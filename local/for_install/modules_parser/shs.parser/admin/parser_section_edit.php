@@ -154,6 +154,9 @@ while($arSection = $rsSection->Fetch())
 
 $tabControl = new CAdminTabControl("tabControl", $aTabs);
 
+
+
+
 ?>
 <form method="POST" id="shs-parser" Action="<?echo $APPLICATION->GetCurPage()?>" ENCTYPE="multipart/form-data" name="post_form">
 <?
@@ -179,16 +182,16 @@ $tabControl->BeginNextTab();
         <td><?=SelectBoxFromArray('PARENT_CATEGORY_ID', $arCategory, isset($arDataTable["PARENT_CATEGORY_ID"])?$arDataTable["PARENT_CATEGORY_ID"]:$parentID, GetMessage("parser_category_select"), "id='category' style='width:262px'");?></td>
     </tr>
     <tr>
-        <td colspan="2" align="center"><?echo GetMessage("parser_category_description")?>:</td>
-    </tr>
+		<td colspan="2" align="center"><?echo GetMessage("parser_category_description")?>:</td>
+	</tr>
     <tr>
-        <td colspan="2" align="center">
-            <textarea cols="60" rows="15"  name="DESCRIPTION" style="width:100%"><?echo $arDataTable["DESCRIPTION"]?></textarea>
+		<td colspan="2" align="center">
+			<textarea cols="60" rows="15"  name="DESCRIPTION" style="width:100%"><?echo $arDataTable["DESCRIPTION"]?></textarea>
             <?=BeginNote();?>
             <?echo GetMessage("parser_section_descr")?>
             <?=EndNote();?>
-        </td>
-    </tr>
+		</td>
+	</tr>
     <?echo bitrix_sessid_post();?>
     <input type="hidden" name="lang" value="<?=LANG?>">
     <?if($ID>0 && !$bCopy):?>
@@ -206,7 +209,11 @@ $tabControl->Buttons(
     )
 );
 
+
+
 $APPLICATION->SetTitle(($ID>0? GetMessage("shs_parser_section_title_edit") : GetMessage("shs_parser_section_title_add")));
+
+
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");
 ?>

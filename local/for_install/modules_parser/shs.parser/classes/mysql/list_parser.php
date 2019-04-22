@@ -104,7 +104,6 @@ class ShsParserContent extends ShsParserContentGeneral
 				,P.RSS
 				,P.SORT
 				,P.ACTIVE
-                ,P.IBLOCK_ID
 				,P.SECTION_ID
 				,P.SELECTOR
 				,P.ENCODING
@@ -117,17 +116,6 @@ class ShsParserContent extends ShsParserContentGeneral
 			".$sFilter.$sOrder;
 		return $DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
 	}
-    
-    function GetSettingsById($ID){
-        global $DB;
-        $strSql = 'SELECT
-                 P.ID
-                ,P.SETTINGS    
-                ,P.IBLOCK_ID                                                          
-            FROM b_shs_parser P
-            WHERE P.ID ='.intval($ID);
-        return $DB->Query($strSql, false, "File: ".__FILE__."<br>Line: ".__LINE__);
-    }
 
     function GetMixedList($aSort=Array(), $arFilter=Array(), $show="all")
     {

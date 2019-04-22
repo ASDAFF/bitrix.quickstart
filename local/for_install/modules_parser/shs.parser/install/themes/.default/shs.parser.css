@@ -1,0 +1,111 @@
+/*Menu icon*/
+#shs_parser_menu_icon {background:url(icons/shs.parser/mnu_shs_parser.gif) no-repeat 50% 50%!important;}
+#shs_parser_page_icon {background:url(icons/shs.parser/title.gif) no-repeat 50% 50%!important;}
+.shs_parser_menu_icon {background:url(icons/shs.parser/mnu_shs_parser.gif) no-repeat 50% 50%!important;}
+.shs_parser_page_icon {background:url(icons/shs.parser/title.gif) no-repeat 50% 50%!important;}
+
+.shs_parser_border {border:1px solid #BDC6E0; padding:4px;}
+
+div.set-scroll,
+div.wrap-table {
+    overflow: auto;
+    width: 100%;
+    position: relative;
+}
+div.wrap-table {
+    min-height: 300px;
+    margin-bottom: 20px;
+}
+.list_xls_name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.check_list {
+    margin-left: 10px;
+}
+table.preview-xls-data tr td {
+    border:1px solid #c5c5c5; 
+    min-width:200px; 
+    min-height:30px;
+    line-height: 1.4em; 
+    letter-spacing: 0.02em; 
+    font-size: 12px;
+    padding: 3px;
+}
+table.preview-xls-data tr td.num-cell{
+    min-width: 15px;
+    max-width: 30px;
+    text-align: center;
+}
+table.preview-xls-data tr.params-row td {
+    background-color: #e9f1f3;
+}
+.chosen-container{
+    min-width:180px;
+    max-width: 200px;
+}
+.row_buttons_property{
+    margin-bottom: 20px;
+}
+.menu-cell{
+    max-width: 133px;
+    min-width: 133px;
+    position: relative;
+    min-height: 33px;
+    vertical-align: top;
+}
+.menu-cell select {
+    max-width: 133px;
+}
+.color-red{
+    color:red;
+}
+.color-green{
+    color:green;
+}
+.color-gray{
+    color:gray;
+}
+.color-yellow{
+    color:#de9c23;
+}
+.badge {
+    display: inline-block;
+    width: 7px;
+    height: 7px;   
+    background-color: black;  
+    margin-right: 5px; 
+    border-radius: 50%; 
+}
+.badge.color-red{
+    background-color:red;
+}
+.badge.color-green{
+    background-color:green;
+}   
+.badge.color-yellow{
+    background-color:#de9c23;
+}
+.shs_parser_result_info {
+    margin-bottom: 20px;
+}
+.shs_parser_result_info td{
+    padding-top: 5px;
+}
+.shs_parser_result_info td:first-child {
+    font-weight: bold;
+    padding-right: 15px;
+}
+.shs_table_properties{
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-collapse: collapse;
+}
+.shs_table_properties th,
+.shs_table_properties td{
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}

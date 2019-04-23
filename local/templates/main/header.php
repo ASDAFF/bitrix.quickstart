@@ -5,7 +5,8 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
  * @var CMain $APPLICATION
  * @var $full_width - переменная в которой будет true если выполнится условие из  $arFullWidthPages
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="<?= LANGUAGE_ID ?>">
 <head>
     <meta charset="<?= SITE_CHARSET ?>">
@@ -21,14 +22,18 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <?
+    //$APPLICATION->ShowHead();
+
     //Тут канонический url
     $APPLICATION->ShowLink("canonical", null, false);
 
     //Тут стили шаблона сайта
     // Bootstrap core CSS
+    //Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
 
     // Animate.css
+    //Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'animate.min.css');
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'animate.min.css');
 
     // FancyBox CSS
@@ -57,12 +62,18 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     //CJSCore::Init(array('jquery'));
 
     //Тут скрипты
+    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'modernizr.js');
+    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'bootstrap.min.js');
+    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
+
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'modernizr.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'bootstrap.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.appear.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.fancybox.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
+
+    //Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 
     //Тут выводим скрипты
     $APPLICATION->ShowHeadStrings();

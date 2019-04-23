@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+/*Menu icon*/
+#sota_parser_menu_icon {
+    background: url(icons/sota.parser/sota_parser.gif) no-repeat 50% 50% !important;
+}
+
+#sota_parser_page_icon {
+    background: url(icons/sota.parser/sota_parser.gif) no-repeat 50% 50% !important;
+}
+
+.sota_parser_menu_icon {
+    background: url(icons/sota.parser/sota_parser.gif) no-repeat 50% 50% !important;
+}
+
+.sota_parser_page_icon {
+    background: url(icons/sota.parser/sota_parser.gif) no-repeat 50% 50% !important;
+}
+
+.sota_parser_border {
+    border: 1px solid #BDC6E0;
+    padding: 4px;
+}

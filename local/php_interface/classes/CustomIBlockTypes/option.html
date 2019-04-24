@@ -1,0 +1,24 @@
+<div class="js-custom-option">
+<input placeholder="Заголовок опции" type="text" name="$strHTMLControlName[optionTitle]" value="$optionTitle">
+<br>
+<br>
+<label for="option-type">Тип опции:</label>
+<br>
+<select id="option-type" name="$strHTMLControlName[type]">
+	<option value="S">Строка</option>
+	<option value="N">Число</option>
+	<option value="L">Список</option>
+</select>
+<br>
+<br>
+<div style="display: none" class="js-value-type-l">
+	<span>Значения списка:</span><br>
+	<div class="js-list-inputs">
+		$valuesInList
+	</div>
+	<input class="js-add-value-in-list" type="button" value="Добавить значение списка" data-name="$strHTMLControlName">
+</div>
+<br>
+	
+	<input class="js-remove-option" type="button" value="Удлить опцию">
+</div>

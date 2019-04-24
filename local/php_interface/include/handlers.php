@@ -20,10 +20,10 @@ use \Bitrix\Main\Loader;
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
 //page start
-AddEventHandler("main", "OnPageStart", "loadLocalLib", 1);
-function loadLocalLib()
+AddEventHandler('main', 'OnPageStart', 'loadLemaLib', 1);
+function loadLemaLib()
 {
-    Loader::includeModule('local.lib');
+    \Bitrix\Main\Loader::includeModule('lema.lib');
 }
 
 AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
@@ -49,7 +49,6 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
     AddEventHandler("main", "OnEpilog", "InitPHPHighlight");
 }
 
-
 /**
  * AdminArea
  **/
@@ -64,21 +63,26 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
 
 
 /**
- * BASKET
- * basket add
- **/
+ * @TODO make all handlers
+ */
 
 
+//BASKET
+//basket add
+AddEventHandler('sale', 'OnBeforeBasketAdd', array('Lema\Handlers\Basket', 'beforeAdd'));
+AddEventHandler('sale', 'OnBasketAdd', array('Lema\Handlers\Basket', 'afterAdd'));
 
-/**
- * basket update
- **/
+//basket update
+AddEventHandler('sale', 'OnBeforeBasketUpdate', array('Lema\Handlers\Basket', 'beforeUpdate'));
+AddEventHandler('sale', 'OnBasketUpdate', array('Lema\Handlers\Basket', 'afterUpdate'));
 
+// basket delete
+AddEventHandler('sale', 'OnBeforeBasketDelete', array('Lema\Handlers\Basket', 'beforeDelete'));
+AddEventHandler('sale', 'OnBasketDelete', array('Lema\Handlers\Basket', 'afterDelete'));
 
-
-/**
- * basket delete
- **/
+//order
+AddEventHandler('sale', 'OnOrderAdd', array('Lema\Handlers\Order', 'afterAdd'));
+AddEventHandler('sale', 'OnOrderUpdate', array('Lema\Handlers\Order', 'afterUpdate'));
 
 
 

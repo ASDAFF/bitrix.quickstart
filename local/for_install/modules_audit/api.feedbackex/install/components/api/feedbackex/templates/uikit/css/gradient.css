@@ -1,0 +1,178 @@
+#form_id .uk-form input,
+#form_id .uk-form select,
+#form_id .uk-form textarea{ -moz-box-sizing:border-box; box-sizing:border-box; margin:0; border-radius:0; font:inherit; color:inherit }
+#form_id .uk-form select{ text-transform:none }
+#form_id .uk-form optgroup{ font:inherit; font-weight:700 }
+#form_id .uk-form input::-moz-focus-inner{ border:0; padding:0 }
+#form_id .uk-form input[type=checkbox],
+#form_id .uk-form input[type=radio]{ padding:0 }
+#form_id .uk-form input[type=checkbox]:not(:disabled),
+#form_id .uk-form input[type=radio]:not(:disabled){ cursor:pointer }
+#form_id .uk-form input:not([type]),
+#form_id .uk-form input[type=text],
+#form_id .uk-form textarea{ -webkit-appearance:none }
+#form_id .uk-form fieldset{ border:none; margin:0; padding:0 }
+#form_id .uk-form textarea{ overflow:auto; vertical-align:top }
+#form_id .uk-form::-moz-placeholder{ opacity:1 }
+#form_id .uk-form:invalid{ box-shadow:none }
+#form_id .uk-form input:not([type=radio]):not([type=checkbox]),
+#form_id .uk-form select{ vertical-align:middle }
+#form_id .uk-form > :last-child{ margin-bottom:0 }
+#form_id .uk-form input:not([type]),
+#form_id .uk-form input[type=text],
+#form_id .uk-form input[type=password],
+#form_id .uk-form select,
+#form_id .uk-form textarea{
+	height:34px;
+	max-width:100%;
+	padding:4px 6px;
+	background:#fff;
+	color:#444;
+	border:1px solid #cbcbcb;
+	border-top-color:#a6a6a6;
+	-webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	-moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	-webkit-transition:box-shadow ease .3s, border ease .3s;
+	-moz-transition:box-shadow ease .3s, border ease .3s;
+	transition:box-shadow ease .3s, border ease .3s;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+	width:100%;
+	font-family:inherit;
+	font-size:inherit;
+	vertical-align:middle;
+}
+#form_id .uk-form input:not([type]):focus,
+#form_id .uk-form input[type=text]:focus,
+#form_id .uk-form input[type=password]:focus,
+#form_id .uk-form select:focus,
+#form_id .uk-form textarea:focus{
+	background:#f8fbff;
+	border:1px solid #4d98de;
+	outline:#4d98de solid 1px;
+	outline-offset:0;
+	outline-color:rgba(0, 0, 0, 0);
+	box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #4d98de;
+}
+#form_id .uk-form input:not([type]):disabled,
+#form_id .uk-form input[type=text]:disabled,
+#form_id .uk-form select:disabled,
+#form_id .uk-form textarea:disabled{ border-color:#ddd; background-color:#fafafa; color:#999 }
+#form_id .uk-form :-ms-input-placeholder{ color:#999 !important }
+#form_id .uk-form ::-moz-placeholder{ color:#999 }
+#form_id .uk-form ::-webkit-input-placeholder{ color:#999 }
+#form_id .uk-form :disabled:-ms-input-placeholder{ color:#999 !important }
+#form_id .uk-form :disabled::-moz-placeholder{ color:#999 }
+#form_id .uk-form :disabled::-webkit-input-placeholder{ color:#999 }
+#form_id .uk-form legend{ width:100%; border:0; padding:0; padding-bottom:15px; font-size:18px; line-height:30px }
+#form_id .uk-form legend:after{ content:""; display:block; border-bottom:1px solid #ddd; width:100% }
+#form_id input:not([type]).uk-form-small,
+#form_id input[type="text"].uk-form-small,
+#form_id input[type="password"].uk-form-small,
+#form_id select.uk-form-small,
+#form_id textarea.uk-form-small{ height:25px; padding:3px; font-size:12px }
+#form_id input:not([type]).uk-form-large,
+#form_id input[type="text"].uk-form-large,
+#form_id input[type="password"].uk-form-large,
+#form_id select.uk-form-large,
+#form_id textarea.uk-form-large{ height:40px; padding:8px 6px; font-size:16px }
+#form_id .uk-form select[multiple],
+#form_id .uk-form select[size],
+#form_id .uk-form textarea{ height:auto }
+#form_id .uk-form-danger{ border:1px solid; border-color:#db2822 !important; background:#fff7f8 !important; color:#d85030 !important; }
+#form_id .uk-form-danger:focus{
+	background:#fff;
+	outline-color:#db2822;
+	outline-color:rgba(0, 0, 0, 0);
+	-webkit-box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+	-moz-box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+	box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+}
+#form_id .uk-form-success{ border:1px solid; border-color:#8ec73b !important; background:#fafff2 !important; color:#659f13 !important }
+#form_id .uk-form-success:focus{ -webkit-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; -moz-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; }
+#form_id .uk-form-blank{ border-color:transparent !important; border-style:dashed !important; background:none !important }
+#form_id .uk-form-blank:focus{ border-color:#ddd !important }
+#form_id .uk-width-1-1{ width:100%; }
+#form_id .uk-form-row:after, .uk-form-row:before{ content:""; display:table }
+#form_id .uk-form-row:after{ clear:both }
+#form_id .uk-form-row + .uk-form-row{ margin-top:15px }
+#form_id .uk-form-help-inline{ display:inline-block; margin:0 0 0 10px }
+#form_id .uk-form-help-block{ margin:5px 0 0 }
+#form_id .uk-form-controls{position: relative}
+#form_id .uk-form-controls label{ display:block }
+#form_id .uk-form-controls .api-inline-block{ display:inline-block; margin:0 5px 5px 0 }
+#form_id .uk-form-controls > :first-child{ margin-top:0 }
+#form_id .uk-form-controls > :last-child{ margin-bottom:0 }
+#form_id .uk-form-controls-condensed{ margin:5px 0; position:relative }
+#form_id .uk-form-stacked .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left }
+#form_id .uk-form-stacked .group-button .uk-form-label{ display:none }
+@media (max-width:959px){
+	#form_id .uk-form-horizontal .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left !important; }
+	#form_id .group-button .uk-form-label{ display:none; }
+}
+@media (min-width:960px){
+	#form_id .uk-form-horizontal .uk-form-label{ width:200px; margin-top:5px; float:left; font-weight:700;}
+	#form_id .uk-form-horizontal .uk-form-controls{ margin-left:215px }
+	#form_id .uk-form-horizontal .uk-form-controls-text{ padding-top:5px }
+}
+#form_id .uk-form-horizontal .uk-form-controls label{ width:auto !important; margin:0; padding:0; float:none; }
+#form_id .uk-form-stacked .one-checkbox > *{ display:inline-block; vertical-align:top }
+/**/
+#form_id .uk-button::-moz-focus-inner{ border:0; padding:0 }
+#form_id .uk-button{ -webkit-appearance:none; margin:0; overflow:visible; font:inherit; color:#444; text-transform:none; display:inline-block; -moz-box-sizing:border-box; box-sizing:border-box; padding:0 12px; background:#f7f7f7; vertical-align:middle; line-height:32px; min-height:34px; font-size:inherit; text-decoration:none; text-align:center; border:1px solid rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .3); background-origin:border-box; background-image:-webkit-linear-gradient(top, #fff, #eee); background-image:linear-gradient(to bottom, #fff, #eee); border-radius:4px; text-shadow:0 1px 0 #fff }
+#form_id .uk-button:not(:disabled){ cursor:pointer }
+#form_id .uk-button:focus,
+#form_id .uk-button:hover{ background-color:#fafafa; color:#444; outline:0; text-decoration:none; background-image:none }
+#form_id .uk-button.uk-active,
+#form_id .uk-button:active{ background-color:#f5f5f5; color:#444; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .3); background-image:none; box-shadow:inset 0 2px 4px rgba(0, 0, 0, .1) }
+#form_id .uk-button-primary{ background-color:#009dd8; color:#fff; background-image:-webkit-linear-gradient(top, #00b4f5, #008dc5); background-image:linear-gradient(to bottom, #00b4f5, #008dc5); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+#form_id .uk-button-primary:focus,
+#form_id .uk-button-primary:hover{ background-color:#00aff2; color:#fff; background-image:none }
+#form_id .uk-button-primary.uk-active,
+#form_id .uk-button-primary:active{ background-color:#008abf; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+#form_id .uk-button-success{ background-color:#82bb42; color:#fff; background-image:-webkit-linear-gradient(top, #9fd256, #6fac34); background-image:linear-gradient(to bottom, #9fd256, #6fac34); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+#form_id .uk-button-success:focus,
+#form_id .uk-button-success:hover{ background-color:#8fce48; color:#fff; background-image:none }
+#form_id .uk-button-success.uk-active,
+#form_id .uk-button-success:active{ background-color:#76b430; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+#form_id .uk-button-danger{ background-color:#d32c46; color:#fff; background-image:-webkit-linear-gradient(top, #ee465a, #c11a39); background-image:linear-gradient(to bottom, #ee465a, #c11a39); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+#form_id .uk-button-danger:focus,
+#form_id .uk-button-danger:hover{ background-color:#e33551; color:#fff; background-image:none }
+#form_id .uk-button-danger.uk-active,
+#form_id .uk-button-danger:active{ background-color:#c91c37; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+#form_id .uk-button:disabled{ background-color:#fafafa; color:#999; border-color:rgba(0, 0, 0, .2); background-image:none; box-shadow:none; text-shadow:0 1px 0 #fff }
+#form_id .uk-button-mini{ min-height:20px; padding:0 6px; line-height:18px; font-size:11px }
+#form_id .uk-button-small{ min-height:25px; padding:0 10px; line-height:23px; font-size:12px }
+#form_id .uk-button-large{ min-height:40px; padding:0 15px; line-height:38px; font-size:16px; border-radius:5px }
+/* CUSTOM CSS */
+#form_id *:before,
+#form_id *:after{ -moz-box-sizing:border-box; box-sizing:border-box; }
+#form_id select option[value=""]{ color:#a9a9a9; }
+#form_id .api-label{display:block;padding-right:15px}
+#form_id .api-asterisk{ color:#f51f29; font-size:16px; font-weight:700; margin-left:3px }
+#form_id .api-antibot{ border:0 none !important; font-size:0 !important; height:0 !important; line-height:0 !important; padding:0 !important; position:absolute !important; right:0 !important; top:0 !important; width:0 !important }
+/* .api-field-success */
+#form_id .api-field-error{ display:none; margin:0; background:none; color:#fff; font-size:12px; background:#ee4055; padding:1px 6px; }
+#form_id .api-field-warning{ display:none; margin:0; background:none; color:#2d7091; font-size:12px; background:#ebf7fd; padding:1px 6px; }
+#form_id .api-field-success{ }
+/* .api-success-message */
+#form_id .api-success-message{ background:#fcfcfb; padding:15px; margin:10px 0; color:#000; text-align:center; }
+#form_id .api-success-message .api-title{ font-size:30px; font-weight:400; }
+#form_id .api-success-message .api-text{ font-size:16px; margin:20px auto auto; }
+#form_id .api-icon-load{ background:url("../images/load.gif") no-repeat 50% 50%; display:none; width:20px; height:20px; vertical-align:middle; margin-top:-3px; }
+#form_id button:disabled .api-icon-load{ display:inline-block }
+/* .api-h1 */
+#form_id .api-h1,
+#form_id .api-h2,
+#form_id .api-h3,
+#form_id .api-h4{ color:#2a2a2a; text-transform:uppercase; margin:0 0 30px 0; padding:0; position:relative; line-height:1; }
+#form_id .api-h1{ font-size:56px; }
+#form_id .api-h2{ font-size:46px; }
+#form_id .api-h3{ font-size:36px; }
+#form_id .api-h4{ font-size:26px; }
+/* .api-rules-error */
+#form_id .api-rules-label{font-size: 12px;cursor: pointer;padding-left: 20px;display: block;font-weight: normal;}
+#form_id .api-rules .api-field{position: absolute;left: 0;top: 3px;margin: 0;padding: 0;}
+#form_id .api-rules-error{margin: 15px 0;color: #ff0f00;font-size: 12px;font-weight: bold;display: none;padding-left: 20px;}

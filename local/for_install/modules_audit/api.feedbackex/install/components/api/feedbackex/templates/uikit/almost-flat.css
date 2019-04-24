@@ -1,0 +1,202 @@
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+.api-feedbackex .theme-almost-flat .uk-form input,
+.api-feedbackex .theme-almost-flat .uk-form select,
+.api-feedbackex .theme-almost-flat .uk-form textarea{ -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; margin:0; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; font:inherit; color:inherit }
+.api-feedbackex .theme-almost-flat .uk-form select{ text-transform:none }
+.api-feedbackex .theme-almost-flat .uk-form optgroup{ font:inherit; font-weight:700 }
+.api-feedbackex .theme-almost-flat .uk-form input::-moz-focus-inner{ border:0; padding:0 }
+.api-feedbackex .theme-almost-flat .uk-form input[type=checkbox],
+.api-feedbackex .theme-almost-flat .uk-form input[type=radio]{ padding:0 }
+.api-feedbackex .theme-almost-flat .uk-form input[type=checkbox]:not(:disabled),
+.api-feedbackex .theme-almost-flat .uk-form input[type=radio]:not(:disabled){ cursor:pointer }
+.api-feedbackex .theme-almost-flat .uk-form input:not([type]),
+.api-feedbackex .theme-almost-flat .uk-form input[type=text],
+.api-feedbackex .theme-almost-flat .uk-form textarea{ -webkit-appearance:none }
+.api-feedbackex .theme-almost-flat .uk-form fieldset{ border:none; margin:0; padding:0 }
+.api-feedbackex .theme-almost-flat .uk-form textarea{ overflow:auto; vertical-align:top }
+.api-feedbackex .theme-almost-flat .uk-form ::-moz-placeholder{ opacity:1 }
+.api-feedbackex .theme-almost-flat .uk-form :invalid{ -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+.api-feedbackex .theme-almost-flat .uk-form input:not([type=radio]):not([type=checkbox]),
+.api-feedbackex .theme-almost-flat .uk-form select{ vertical-align:middle }
+.api-feedbackex .theme-almost-flat .uk-form > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-almost-flat .uk-form input:not([type]),
+.api-feedbackex .theme-almost-flat .uk-form input[type=text],
+.api-feedbackex .theme-almost-flat .uk-form input[type=password],
+.api-feedbackex .theme-almost-flat .uk-form select,
+.api-feedbackex .theme-almost-flat .uk-form textarea{
+	font-family:inherit;
+	font-size:inherit;
+	width:265px;
+	vertical-align:middle;
+	height:34px;
+	max-width:100%;
+	padding:4px 6px;
+	color:#444;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	border: 1px solid #aaa;
+	background: #fff;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
+	background-image: -webkit-linear-gradient(#eeeeee 1%, #ffffff 15%);
+	background-image: -moz-linear-gradient(#eeeeee 1%, #ffffff 15%);
+	background-image: -o-linear-gradient(#eeeeee 1%, #ffffff 15%);
+	background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+}
+.api-feedbackex .theme-almost-flat .uk-form input:not([type]):focus,
+.api-feedbackex .theme-almost-flat .uk-form input[type=text]:focus,
+.api-feedbackex .theme-almost-flat .uk-form input[type=password]:focus,
+.api-feedbackex .theme-almost-flat .uk-form select:focus,
+.api-feedbackex .theme-almost-flat .uk-form textarea:focus{
+	border-color:#2b88f6;
+	outline:0;
+	background:#f8fbff;
+	color:#222;
+	-webkit-box-shadow:0 0 2px #69adff,  0 2px 2px #EDEDED inset;
+	-moz-box-shadow:0 0 2px #69adff,  0 2px 2px #EDEDED inset;
+	box-shadow:0 0 2px #69adff,  0 2px 2px #EDEDED inset;
+
+}
+.api-feedbackex .theme-almost-flat .uk-form input:not([type]):disabled,
+.api-feedbackex .theme-almost-flat .uk-form input[type=text]:disabled,
+.api-feedbackex .theme-almost-flat .uk-form select:disabled,
+.api-feedbackex .theme-almost-flat .uk-form textarea:disabled{ border-color:#ddd; background-color:#fafafa; color:#999 }
+.api-feedbackex .theme-almost-flat .uk-form :-ms-input-placeholder{ color:#999 !important }
+.api-feedbackex .theme-almost-flat .uk-form ::-moz-placeholder{ color:#999 }
+.api-feedbackex .theme-almost-flat .uk-form ::-webkit-input-placeholder{ color:#999 }
+.api-feedbackex .theme-almost-flat .uk-form :disabled:-ms-input-placeholder{ color:#999 !important }
+.api-feedbackex .theme-almost-flat .uk-form :disabled::-moz-placeholder{ color:#999 }
+.api-feedbackex .theme-almost-flat .uk-form :disabled::-webkit-input-placeholder{ color:#999 }
+.api-feedbackex .theme-almost-flat .uk-form legend{ width:100%; border:0; padding:0; padding-bottom:15px; font-size:18px; line-height:30px }
+.api-feedbackex .theme-almost-flat .uk-form legend:after{ content:""; display:block; border-bottom:1px solid #ddd; width:100% }
+.api-feedbackex .theme-almost-flat input:not([type]).uk-form-small,
+.api-feedbackex .theme-almost-flat input[type="text"].uk-form-small,
+.api-feedbackex .theme-almost-flat input[type="password"].uk-form-small,
+.api-feedbackex .theme-almost-flat select.uk-form-small,
+.api-feedbackex .theme-almost-flat textarea.uk-form-small{ height:25px; padding:3px; font-size:12px }
+.api-feedbackex .theme-almost-flat input:not([type]).uk-form-large,
+.api-feedbackex .theme-almost-flat input[type="text"].uk-form-large,
+.api-feedbackex .theme-almost-flat input[type="password"].uk-form-large,
+.api-feedbackex .theme-almost-flat select.uk-form-large,
+.api-feedbackex .theme-almost-flat textarea.uk-form-large{ height:40px; padding:8px 6px; font-size:16px }
+.api-feedbackex .theme-almost-flat .uk-form select[multiple],
+.api-feedbackex .theme-almost-flat .uk-form select[size],
+.api-feedbackex .theme-almost-flat .uk-form textarea{ height:auto }
+.api-feedbackex .theme-almost-flat .uk-form-danger{ border:1px solid; border-color:#ee4055 !important; background:#fff7f8 !important; color:#d85030 !important; }
+.api-feedbackex .theme-almost-flat .uk-form-danger:focus{ -webkit-box-shadow:0 0 2px #f99, 0 2px 2px #ededed inset !important; -moz-box-shadow:0 0 2px #f99, 0 2px 2px #ededed inset !important; box-shadow:0 0 2px #f99, 0 2px 2px #ededed inset !important; }
+.api-feedbackex .theme-almost-flat .uk-form-success{ border:1px solid; border-color:#8ec73b !important; background:#fafff2 !important; color:#659f13 !important }
+.api-feedbackex .theme-almost-flat .uk-form-success:focus{ -webkit-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; -moz-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; }
+.api-feedbackex .theme-almost-flat .uk-form-blank{ border-color:transparent !important; border-style:dashed !important; background:none !important }
+.api-feedbackex .theme-almost-flat .uk-form-blank:focus{ border-color:#ddd !important }
+.api-feedbackex .theme-almost-flat input.uk-form-width-mini{ width:40px }
+.api-feedbackex .theme-almost-flat select.uk-form-width-mini{ width:65px }
+.api-feedbackex .theme-almost-flat .uk-form-width-small{ width:130px }
+.api-feedbackex .theme-almost-flat .uk-form-width-medium{ width:200px }
+.api-feedbackex .theme-almost-flat .uk-form-width-large{ width:500px }
+.api-feedbackex .theme-almost-flat [class*=uk-width]{ box-sizing:border-box; width:100% }
+.api-feedbackex .theme-almost-flat .uk-width-1-1{width: 100%;}
+.api-feedbackex .theme-almost-flat .uk-form-row:after,
+.api-feedbackex .theme-almost-flat .uk-form-row:before{ content:""; display:table }
+.api-feedbackex .theme-almost-flat .uk-form-row:after{ clear:both }
+.api-feedbackex .theme-almost-flat .uk-form-row + .uk-form-row{ margin-top:15px }
+.api-feedbackex .theme-almost-flat .uk-form-help-inline{ display:inline-block; margin:0 0 0 10px }
+.api-feedbackex .theme-almost-flat .uk-form-help-block{ margin:5px 0 0 }
+.api-feedbackex .theme-almost-flat .uk-form-controls{ width:265px }
+.api-feedbackex .theme-almost-flat .uk-form-controls label{ display:block }
+.api-feedbackex .theme-almost-flat .uk-form-controls .api-inline-block{display:inline-block !important;margin:0 5px 5px 0}
+.api-feedbackex .theme-almost-flat .uk-form-controls > :first-child{ margin-top:0 }
+.api-feedbackex .theme-almost-flat .uk-form-controls > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-almost-flat .uk-form-controls-condensed{ margin:5px 0; position:relative }
+.api-feedbackex .theme-almost-flat .uk-form-stacked .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left }
+.api-feedbackex .theme-almost-flat .uk-form-stacked .group-button .uk-form-label{ display:none }
+@media (max-width:959px){
+	.api-feedbackex .theme-almost-flat .uk-form-horizontal .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left }
+	.api-feedbackex .theme-almost-flat .group-button .uk-form-label{ display:none; }
+}
+@media (min-width:960px){
+	.api-feedbackex .theme-almost-flat .uk-form-horizontal .uk-form-label{ width:200px; margin-top:5px; float:left; font-weight:700; text-align:right }
+	.api-feedbackex .theme-almost-flat .uk-form-horizontal .uk-form-controls{ margin-left:215px }
+	.api-feedbackex .theme-almost-flat .uk-form-horizontal .uk-form-controls-text{ padding-top:5px }
+}
+.api-feedbackex .theme-almost-flat .uk-form-horizontal .uk-form-controls label{width:auto !important; margin:0; padding:0; float:none;}
+.api-feedbackex .theme-almost-flat .uk-form-stacked .one-checkbox > *{display:inline-block; vertical-align:top; width:auto}
+
+.api-feedbackex .theme-almost-flat .uk-alert{ margin-bottom:15px; padding:10px; background:#ebf7fd; color:#2d7091; border:1px solid rgba(45, 112, 145, .3); -webkit-border-radius:0; -moz-border-radius:0; border-radius:0; text-shadow:0 1px 0 #fff; position:relative }
+.api-feedbackex .theme-almost-flat * + .uk-alert{ margin-top:15px }
+.api-feedbackex .theme-almost-flat .uk-alert > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-almost-flat .uk-alert > div{ padding:0 0 0 55px !important; }
+.api-feedbackex .theme-almost-flat .uk-alert > .uk-close:first-child{ float:right }
+.api-feedbackex .theme-almost-flat .uk-alert > .uk-close:first-child + *{ margin-top:0 }
+.api-feedbackex .theme-almost-flat .uk-alert-success{ background:#f2fae3; color:#659f13; border-color:rgba(101, 159, 19, .3) }
+.api-feedbackex .theme-almost-flat .uk-alert-success span{ background:url("images/uk-alert-success.png") no-repeat 0 0; display:block; width:36px; height:33px; left:15px; margin-top:-16px; position:absolute; top:50%; }
+.api-feedbackex .theme-almost-flat .uk-alert-warning{ background:#fffceb; color:#e28327; border-color:rgba(226, 131, 39, .3) }
+.api-feedbackex .theme-almost-flat .uk-alert-danger{ background:#fff1f0; color:#d85030; border-color:rgba(216, 80, 48, .3) }
+.api-feedbackex .theme-almost-flat .uk-alert-large{ padding:20px }
+.api-feedbackex .theme-almost-flat .uk-alert-large > .uk-close:first-child{ margin:-10px -10px 0 0 }
+
+
+.api-feedbackex .theme-almost-flat .uk-button::-moz-focus-inner{ border:0; padding:0 }
+.api-feedbackex .theme-almost-flat .uk-button{ -webkit-appearance:none; margin:0; border:none; overflow:visible; font:inherit; color:#444; text-transform:none; display:inline-block; box-sizing:border-box; padding:0 12px; background:#f5f5f5; vertical-align:middle; line-height:28px; min-height:30px; font-size:1rem; text-decoration:none; text-align:center; border:1px solid rgba(0, 0, 0, .06); border-radius:4px; text-shadow:0 1px 0 #fff }
+.api-feedbackex .theme-almost-flat .uk-button:not(:disabled){ cursor:pointer }
+.api-feedbackex .theme-almost-flat .uk-button:focus,
+.api-feedbackex .theme-almost-flat .uk-button:hover{ background-color:#fafafa; color:#444; outline:0; text-decoration:none; border-color:rgba(0, 0, 0, .16) }
+.api-feedbackex .theme-almost-flat .uk-button.uk-active,
+.api-feedbackex .theme-almost-flat .uk-button:active{ background-color:#eee; color:#444 }
+.api-feedbackex .theme-almost-flat .uk-button-primary{ background-color:#00a8e6; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-primary:focus,
+.api-feedbackex .theme-almost-flat .uk-button-primary:hover{ background-color:#35b3ee; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-primary.uk-active,
+.api-feedbackex .theme-almost-flat .uk-button-primary:active{ background-color:#0091ca; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-success{ background-color:#8cc14c; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-success:focus,
+.api-feedbackex .theme-almost-flat .uk-button-success:hover{ background-color:#8ec73b; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-success.uk-active,
+.api-feedbackex .theme-almost-flat .uk-button-success:active{ background-color:#72ae41; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-danger{ background-color:#da314b; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-danger:focus,
+.api-feedbackex .theme-almost-flat .uk-button-danger:hover{ background-color:#e4354f; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button-danger.uk-active,
+.api-feedbackex .theme-almost-flat .uk-button-danger:active{ background-color:#c91032; color:#fff }
+.api-feedbackex .theme-almost-flat .uk-button:disabled{ background-color:#fafafa; color:#999; border-color:rgba(0, 0, 0, .06); box-shadow:none; text-shadow:0 1px 0 #fff }
+.api-feedbackex .theme-almost-flat .uk-button-mini{ min-height:20px; padding:0 6px; line-height:18px; font-size:11px }
+.api-feedbackex .theme-almost-flat .uk-button-small{ min-height:25px; padding:0 10px; line-height:23px; font-size:12px }
+.api-feedbackex .theme-almost-flat .uk-button-large{ min-height:40px; padding:0 15px; line-height:38px; font-size:16px; border-radius:5px }
+.api-feedbackex .theme-almost-flat .uk-button-danger,
+.api-feedbackex .theme-almost-flat .uk-button-primary,
+.api-feedbackex .theme-almost-flat .uk-button-success{ box-shadow:inset 0 0 5px rgba(0, 0, 0, .05); text-shadow:0 -1px 0 rgba(0, 0, 0, .1) }
+.api-feedbackex .theme-almost-flat .uk-button-danger:focus,
+.api-feedbackex .theme-almost-flat .uk-button-danger:hover,
+.api-feedbackex .theme-almost-flat .uk-button-primary:focus,
+.api-feedbackex .theme-almost-flat .uk-button-primary:hover,
+.api-feedbackex .theme-almost-flat .uk-button-success:focus,
+.api-feedbackex .theme-almost-flat .uk-button-success:hover{ border-color:rgba(0, 0, 0, .21) }
+
+.api-feedbackex .theme-almost-flat .uk-button-mini{ min-height:20px; padding:0 6px; line-height:18px; font-size:11px }
+.api-feedbackex .theme-almost-flat .uk-button-small{ min-height:25px; padding:0 10px; line-height:23px; font-size:12px }
+.api-feedbackex .theme-almost-flat .uk-button-large{ min-height:40px; padding:0 15px; line-height:38px; font-size:16px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; }
+
+/* ========================================================================
+   Component: Other
+ ========================================================================== */
+.api-feedbackex .theme-almost-flat{ position:relative; display:inline-block }
+.api-feedbackex .theme-almost-flat select option[value=""]{ color:#a9a9a9; }
+.api-feedbackex .theme-almost-flat .afex-asterisk{ color:#ff3737; font-size:14px; font-weight:700; margin-left:3px }
+.api-feedbackex .theme-almost-flat .afex-text-after{ margin:15px 0 }
+.api-feedbackex .theme-almost-flat .afex-antibot{ border:0 none !important; font-size:0 !important; height:0 !important; line-height:0 !important; padding:0 !important; position:absolute !important; right:0 !important; top:0 !important; width:0 !important }
+
+/* ========================================================================
+   NEW
+ ========================================================================== */
+/* .api-field-success */
+.api-feedbackex .theme-almost-flat .api-field-error{ display:none; margin:0; background:none; color:#fff; font-size:12px; background:#ee4055; padding:1px 6px; }
+.api-feedbackex .theme-almost-flat .api-field-warning{ display:none; margin:0; background:none; color:#2d7091; font-size:12px; background:#ebf7fd; padding:1px 6px; }
+.api-feedbackex .theme-almost-flat .api-field-success{ }
+
+/* .api-success-message */
+.api-feedbackex .theme-almost-flat .api-success-message{ background:#fcfcfb; padding:15px; margin:10px 0; color:#000; text-align:center; }
+.api-feedbackex .theme-almost-flat .api-success-message .api-title{ font-size:30px; font-weight:400; }
+.api-feedbackex .theme-almost-flat .api-success-message .api-text{ font-size:16px; margin:20px auto auto; }
+.api-feedbackex .theme-almost-flat .api-icon-load{background:url("images/load.gif") no-repeat 50% 50%; display:none; width:20px; height:20px;vertical-align:middle;margin-top: -3px; }
+.api-feedbackex .theme-almost-flat button:disabled .api-icon-load{display:inline-block}

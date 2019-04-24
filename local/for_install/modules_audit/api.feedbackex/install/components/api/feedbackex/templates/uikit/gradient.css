@@ -1,0 +1,183 @@
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+.api-feedbackex .theme-gradient .uk-form input,
+.api-feedbackex .theme-gradient .uk-form select,
+.api-feedbackex .theme-gradient .uk-form textarea{ -moz-box-sizing:border-box; box-sizing:border-box; margin:0; border-radius:0; font:inherit; color:inherit }
+.api-feedbackex .theme-gradient .uk-form select{ text-transform:none }
+.api-feedbackex .theme-gradient .uk-form optgroup{ font:inherit; font-weight:700 }
+.api-feedbackex .theme-gradient .uk-form input::-moz-focus-inner{ border:0; padding:0 }
+.api-feedbackex .theme-gradient .uk-form input[type=checkbox], .api-feedbackex .theme-gradient .uk-form input[type=radio]{ padding:0 }
+.api-feedbackex .theme-gradient .uk-form input[type=checkbox]:not(:disabled), .api-feedbackex .theme-gradient .uk-form input[type=radio]:not(:disabled){ cursor:pointer }
+.api-feedbackex .theme-gradient .uk-form input:not([type]), .api-feedbackex .theme-gradient .uk-form input[type=text], .api-feedbackex .theme-gradient .uk-form textarea{ -webkit-appearance:none }
+.api-feedbackex .theme-gradient .uk-form fieldset{ border:none; margin:0; padding:0 }
+.api-feedbackex .theme-gradient .uk-form textarea{ overflow:auto; vertical-align:top }
+.api-feedbackex .theme-gradient .uk-form ::-moz-placeholder{ opacity:1 }
+.api-feedbackex .theme-gradient .uk-form :invalid{ box-shadow:none }
+.api-feedbackex .theme-gradient .uk-form input:not([type=radio]):not([type=checkbox]), .api-feedbackex .theme-gradient .uk-form select{ vertical-align:middle }
+.api-feedbackex .theme-gradient .uk-form > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-gradient .uk-form input:not([type]),
+.api-feedbackex .theme-gradient .uk-form input[type=text],
+.api-feedbackex .theme-gradient .uk-form input[type=password],
+.api-feedbackex .theme-gradient .uk-form select,
+.api-feedbackex .theme-gradient .uk-form textarea{
+	height:34px;
+	max-width:100%;
+	padding:4px 6px;
+	background:#fff;
+	color:#444;
+	border:1px solid #cbcbcb;
+	border-top-color:#a6a6a6;
+	-webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	-moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	box-shadow:0 1px 3px 0 rgba(0, 0, 0, .1) inset, 0 0 0 1px transparent;
+	-webkit-transition:box-shadow ease .3s, border ease .3s;
+	-moz-transition:box-shadow ease .3s, border ease .3s;
+	transition:box-shadow ease .3s, border ease .3s;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+	width:100%;
+	font-family:inherit;
+	font-size:inherit;
+	vertical-align:middle;
+}
+.api-feedbackex .theme-gradient .uk-form input:not([type]):focus,
+.api-feedbackex .theme-gradient .uk-form input[type=text]:focus,
+.api-feedbackex .theme-gradient .uk-form input[type=password]:focus,
+.api-feedbackex .theme-gradient .uk-form select:focus,
+.api-feedbackex .theme-gradient .uk-form textarea:focus{
+	background:#f8fbff;
+	border:1px solid #4d98de;
+	outline:#4d98de solid 1px;
+	outline-offset:0;
+	outline-color:rgba(0, 0, 0, 0);
+	box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #4d98de;
+}
+.api-feedbackex .theme-gradient .uk-form input:not([type]):disabled, .api-feedbackex .theme-gradient .uk-form input[type=text]:disabled, .api-feedbackex .theme-gradient .uk-form select:disabled, .api-feedbackex .theme-gradient .uk-form textarea:disabled{ border-color:#ddd; background-color:#fafafa; color:#999 }
+.api-feedbackex .theme-gradient .uk-form :-ms-input-placeholder{ color:#999 !important }
+.api-feedbackex .theme-gradient .uk-form ::-moz-placeholder{ color:#999 }
+.api-feedbackex .theme-gradient .uk-form ::-webkit-input-placeholder{ color:#999 }
+.api-feedbackex .theme-gradient .uk-form :disabled:-ms-input-placeholder{ color:#999 !important }
+.api-feedbackex .theme-gradient .uk-form :disabled::-moz-placeholder{ color:#999 }
+.api-feedbackex .theme-gradient .uk-form :disabled::-webkit-input-placeholder{ color:#999 }
+.api-feedbackex .theme-gradient .uk-form legend{ width:100%; border:0; padding:0; padding-bottom:15px; font-size:18px; line-height:30px }
+.api-feedbackex .theme-gradient .uk-form legend:after{ content:""; display:block; border-bottom:1px solid #ddd; width:100% }
+.api-feedbackex .theme-gradient input:not([type]).uk-form-small,
+.api-feedbackex .theme-gradient input[type="text"].uk-form-small,
+.api-feedbackex .theme-gradient input[type="password"].uk-form-small,
+.api-feedbackex .theme-gradient select.uk-form-small,
+.api-feedbackex .theme-gradient textarea.uk-form-small{ height:25px; padding:3px; font-size:12px }
+.api-feedbackex .theme-gradient input:not([type]).uk-form-large,
+.api-feedbackex .theme-gradient input[type="text"].uk-form-large,
+.api-feedbackex .theme-gradient input[type="password"].uk-form-large,
+.api-feedbackex .theme-gradient select.uk-form-large,
+.api-feedbackex .theme-gradient textarea.uk-form-large{ height:40px; padding:8px 6px; font-size:16px }
+.api-feedbackex .theme-gradient .uk-form select[multiple], .api-feedbackex .theme-gradient .uk-form select[size], .api-feedbackex .theme-gradient .uk-form textarea{ height:auto }
+.api-feedbackex .theme-gradient .uk-form-danger{ border:1px solid; border-color:#db2822 !important; background:#fff7f8 !important; color:#d85030 !important; }
+.api-feedbackex .theme-gradient .uk-form-danger:focus{
+	background:#fff;
+	outline-color:#db2822;
+	outline-color:rgba(0, 0, 0, 0);
+	-webkit-box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+	-moz-box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+	box-shadow:0 1px 3px 0 transparent inset, 0 0 0 1px #db2822 !important;
+}
+.api-feedbackex .theme-gradient .uk-form-success{ border:1px solid; border-color:#8ec73b !important; background:#fafff2 !important; color:#659f13 !important }
+.api-feedbackex .theme-gradient .uk-form-success:focus{ -webkit-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; -moz-box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; box-shadow:0 0 2px #a6d75a, 0 2px 2px #ededed inset !important; }
+.api-feedbackex .theme-gradient .uk-form-blank{ border-color:transparent !important; border-style:dashed !important; background:none !important }
+.api-feedbackex .theme-gradient .uk-form-blank:focus{ border-color:#ddd !important }
+.api-feedbackex .theme-gradient input.uk-form-width-mini{ width:40px }
+.api-feedbackex .theme-gradient select.uk-form-width-mini{ width:65px }
+.api-feedbackex .theme-gradient .uk-form-width-small{ width:130px }
+.api-feedbackex .theme-gradient .uk-form-width-medium{ width:200px }
+.api-feedbackex .theme-gradient .uk-form-width-large{ width:500px }
+.api-feedbackex .theme-gradient .uk-width-1-1{ width:100%; }
+.api-feedbackex .theme-gradient .uk-form-row:after, .uk-form-row:before{ content:""; display:table }
+.api-feedbackex .theme-gradient .uk-form-row:after{ clear:both }
+.api-feedbackex .theme-gradient .uk-form-row + .uk-form-row{ margin-top:15px }
+.api-feedbackex .theme-gradient .uk-form-help-inline{ display:inline-block; margin:0 0 0 10px }
+.api-feedbackex .theme-gradient .uk-form-help-block{ margin:5px 0 0 }
+.api-feedbackex .theme-gradient .uk-form-controls{ width:320px }
+.api-feedbackex .theme-gradient .uk-form-controls label{ display:block }
+.api-feedbackex .theme-gradient .uk-form-controls .api-inline-block{ display:inline-block; margin:0 5px 5px 0 }
+.api-feedbackex .theme-gradient .uk-form-controls > :first-child{ margin-top:0 }
+.api-feedbackex .theme-gradient .uk-form-controls > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-gradient .uk-form-controls-condensed{ margin:5px 0; position:relative }
+.api-feedbackex .theme-gradient .uk-form-stacked .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left }
+.api-feedbackex .theme-gradient .uk-form-stacked .group-button .uk-form-label{ display:none }
+@media (max-width:959px){
+	.api-feedbackex .theme-gradient .uk-form-horizontal .uk-form-label{ display:block; margin-bottom:5px; font-weight:700; text-align:left }
+	.api-feedbackex .theme-gradient .group-button .uk-form-label{ display:none; }
+}
+@media (min-width:960px){
+	.api-feedbackex .theme-gradient .uk-form-horizontal .uk-form-label{ width:200px; margin-top:5px; float:left; font-weight:700; text-align:right }
+	.api-feedbackex .theme-gradient .uk-form-horizontal .uk-form-controls{ margin-left:215px }
+	.api-feedbackex .theme-gradient .uk-form-horizontal .uk-form-controls-text{ padding-top:5px }
+}
+.api-feedbackex .theme-gradient .uk-form-horizontal .uk-form-controls label{ width:auto !important; margin:0; padding:0; float:none; }
+.api-feedbackex .theme-gradient .uk-form-stacked .one-checkbox > *{ display:inline-block; vertical-align:top }
+/**/
+.api-feedbackex .theme-gradient .uk-alert{ margin-bottom:15px; padding:10px; background:#ebf7fd; color:#2d7091; border:1px solid rgba(45, 112, 145, .3); border-radius:4px; text-shadow:0 1px 0 #fff; position:relative }
+.api-feedbackex .theme-gradient * + .uk-alert{ margin-top:15px }
+.api-feedbackex .theme-gradient .uk-alert > :last-child{ margin-bottom:0 }
+.api-feedbackex .theme-gradient .uk-alert > div{ padding:0 0 0 55px !important; }
+.api-feedbackex .theme-gradient .uk-alert h1, .api-feedbackex .theme-gradient .uk-alert h2, .api-feedbackex .theme-gradient .uk-alert h3, .api-feedbackex .theme-gradient .uk-alert h4, .api-feedbackex .theme-gradient .uk-alert h5, .api-feedbackex .theme-gradient .uk-alert h6{ color:inherit }
+.api-feedbackex .theme-gradient .uk-alert > .uk-close:first-child{ float:right }
+.api-feedbackex .theme-gradient .uk-alert > .uk-close:first-child + *{ margin-top:0 }
+.api-feedbackex .theme-gradient .uk-alert-success{ background:#f2fae3; color:#659f13; border-color:rgba(101, 159, 19, .3) }
+.api-feedbackex .theme-gradient .uk-alert-success span{ background:url("images/uk-alert-success.png") no-repeat 0 0; display:block; width:36px; height:33px; left:15px; margin-top:-16px; position:absolute; top:50%; }
+.api-feedbackex .theme-gradient .uk-alert-warning{ background:#fffceb; color:#e28327; border-color:rgba(226, 131, 39, .3) }
+.api-feedbackex .theme-gradient .uk-alert-danger{ background:#fff1f0; color:#d85030; border-color:rgba(216, 80, 48, .3) }
+.api-feedbackex .theme-gradient .uk-alert-large{ padding:20px }
+.api-feedbackex .theme-gradient .uk-alert-large > .uk-close:first-child{ margin:-10px -10px 0 0 }
+/**/
+.api-feedbackex .theme-gradient .uk-button::-moz-focus-inner{ border:0; padding:0 }
+.api-feedbackex .theme-gradient .uk-button{ -webkit-appearance:none; margin:0; overflow:visible; font:inherit; color:#444; text-transform:none; display:inline-block; -moz-box-sizing:border-box; box-sizing:border-box; padding:0 12px; background:#f7f7f7; vertical-align:middle; line-height:32px; min-height:34px; font-size:inherit; text-decoration:none; text-align:center; border:1px solid rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .3); background-origin:border-box; background-image:-webkit-linear-gradient(top, #fff, #eee); background-image:linear-gradient(to bottom, #fff, #eee); border-radius:4px; text-shadow:0 1px 0 #fff }
+.api-feedbackex .theme-gradient .uk-button:not(:disabled){ cursor:pointer }
+.api-feedbackex .theme-gradient .uk-button:focus,
+.api-feedbackex .theme-gradient .uk-button:hover{ background-color:#fafafa; color:#444; outline:0; text-decoration:none; background-image:none }
+.api-feedbackex .theme-gradient .uk-button.uk-active,
+.api-feedbackex .theme-gradient .uk-button:active{ background-color:#f5f5f5; color:#444; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .3); background-image:none; box-shadow:inset 0 2px 4px rgba(0, 0, 0, .1) }
+.api-feedbackex .theme-gradient .uk-button-primary{ background-color:#009dd8; color:#fff; background-image:-webkit-linear-gradient(top, #00b4f5, #008dc5); background-image:linear-gradient(to bottom, #00b4f5, #008dc5); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button-primary:focus,
+.api-feedbackex .theme-gradient .uk-button-primary:hover{ background-color:#00aff2; color:#fff; background-image:none }
+.api-feedbackex .theme-gradient .uk-button-primary.uk-active,
+.api-feedbackex .theme-gradient .uk-button-primary:active{ background-color:#008abf; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button-success{ background-color:#82bb42; color:#fff; background-image:-webkit-linear-gradient(top, #9fd256, #6fac34); background-image:linear-gradient(to bottom, #9fd256, #6fac34); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button-success:focus,
+.api-feedbackex .theme-gradient .uk-button-success:hover{ background-color:#8fce48; color:#fff; background-image:none }
+.api-feedbackex .theme-gradient .uk-button-success.uk-active,
+.api-feedbackex .theme-gradient .uk-button-success:active{ background-color:#76b430; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button-danger{ background-color:#d32c46; color:#fff; background-image:-webkit-linear-gradient(top, #ee465a, #c11a39); background-image:linear-gradient(to bottom, #ee465a, #c11a39); border-color:rgba(0, 0, 0, .2); border-bottom-color:rgba(0, 0, 0, .4); text-shadow:0 -1px 0 rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button-danger:focus,
+.api-feedbackex .theme-gradient .uk-button-danger:hover{ background-color:#e33551; color:#fff; background-image:none }
+.api-feedbackex .theme-gradient .uk-button-danger.uk-active,
+.api-feedbackex .theme-gradient .uk-button-danger:active{ background-color:#c91c37; color:#fff; background-image:none; border-color:rgba(0, 0, 0, .2); border-top-color:rgba(0, 0, 0, .4); box-shadow:inset 0 2px 4px rgba(0, 0, 0, .2) }
+.api-feedbackex .theme-gradient .uk-button:disabled{ background-color:#fafafa; color:#999; border-color:rgba(0, 0, 0, .2); background-image:none; box-shadow:none; text-shadow:0 1px 0 #fff }
+.api-feedbackex .theme-gradient .uk-button-mini{ min-height:20px; padding:0 6px; line-height:18px; font-size:11px }
+.api-feedbackex .theme-gradient .uk-button-small{ min-height:25px; padding:0 10px; line-height:23px; font-size:12px }
+.api-feedbackex .theme-gradient .uk-button-large{ min-height:40px; padding:0 15px; line-height:38px; font-size:16px; border-radius:5px }
+/* ========================================================================
+   Component: Other
+ ========================================================================== */
+.api-feedbackex .theme-gradient{ position:relative; display:inline-block }
+.api-feedbackex .theme-gradient select option[value=""]{ color:#a9a9a9; }
+.api-feedbackex .theme-gradient .afex-asterisk{ color:#ff3737; font-size:14px; font-weight:700; margin-left:3px }
+.api-feedbackex .theme-gradient .afex-text-after{ margin:15px 0 }
+.api-feedbackex .theme-gradient .afex-antibot{ border:0 none !important; font-size:0 !important; height:0 !important; line-height:0 !important; padding:0 !important; position:absolute !important; right:0 !important; top:0 !important; width:0 !important }
+
+/* ========================================================================
+   NEW
+ ========================================================================== */
+/* .api-field-success */
+.api-feedbackex .theme-gradient .api-field-error{ display:none; margin:0; background:none; color:#fff; font-size:12px; background:#ee4055; padding:1px 6px; }
+.api-feedbackex .theme-gradient .api-field-warning{ display:none; margin:0; background:none; color:#2d7091; font-size:12px; background:#ebf7fd; padding:1px 6px; }
+.api-feedbackex .theme-gradient .api-field-success{ }
+
+/* .api-success-message */
+.api-feedbackex .theme-gradient .api-success-message{ background:#fcfcfb; padding:15px; margin:10px 0; color:#000; text-align:center; }
+.api-feedbackex .theme-gradient .api-success-message .api-title{ font-size:30px; font-weight:400; }
+.api-feedbackex .theme-gradient .api-success-message .api-text{ font-size:16px; margin:20px auto auto; }
+.api-feedbackex .theme-gradient .api-icon-load{background:url("images/load.gif") no-repeat 50% 50%; display:none; width:20px; height:20px;vertical-align:middle;margin-top: -3px; }
+.api-feedbackex .theme-gradient button:disabled .api-icon-load{display:inline-block}

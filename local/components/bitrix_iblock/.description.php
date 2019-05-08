@@ -8,7 +8,7 @@ $arComponentDescription = array(
 	"SORT" => 2,
 	"CACHE_PATH" => "N",
 	"PATH" => array(
-		"ID" => "it-delta",
+		"ID" => "ASDAFF",
 	),
 );
 

@@ -1,0 +1,4 @@
+<?
+$MESS['PIXELPLUS_UF_MOD_YES'] = "Да";
+$MESS['PIXELPLUS_UF_MOD_NO'] = "Нет";
+?>

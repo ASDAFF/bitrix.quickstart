@@ -3,7 +3,7 @@
  * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
  */
 
-$module_id = S2uRedirects::MODULE_ID;
+$module_id = seo2Redirects::MODULE_ID;
 global $MESS;
 IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'].BX_ROOT.'/modules/main/options.php');
 IncludeModuleLangFile(__FILE__);

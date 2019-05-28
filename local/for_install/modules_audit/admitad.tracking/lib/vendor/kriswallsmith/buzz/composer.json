@@ -1,0 +1,36 @@
+{
+    "name": "kriswallsmith/buzz",
+    "description": "Lightweight HTTP client",
+    "keywords": ["http client", "curl"],
+    "homepage": "https://github.com/kriswallsmith/Buzz",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kris Wallsmith",
+            "email": "kris.wallsmith@gmail.com",
+            "homepage": "http://kriswallsmith.net/"
+        }
+    ],
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.3"
+    },
+    "suggest": {
+        "ext-curl": "*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buzz\\": "lib/Buzz"
+        }
+    },
+    "scripts": {
+        "test": "./bin/simple-phpunit",
+        "test-ci": "./bin/simple-phpunit --coverage-text --coverage-clover=build/coverage.xml"
+    }
+}

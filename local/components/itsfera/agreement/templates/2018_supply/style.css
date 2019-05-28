@@ -1,0 +1,37 @@
+.agreement-wrapper
+{
+    
+    text-align:left;
+    display: block !important;
+}
+
+.agreement-wrapper .jq-checkbox{
+	top: 23px !important;
+}
+
+.agreement-wrapper label {
+    height:auto !important;
+}
+.agreement-wrapper a{
+    margin-left:25px;
+	color:#e6330a !important;
+	display:block;
+	
+}
+.agreement-detail-wrapper
+{
+    width:500px;
+}
+
+.registration_page .registration .form_block table tr td input.agreement-input {
+	display:block;
+	width:20px;
+	float:left;
+	margin-top:3px;
+}
+
+#suppliers .add_block form table tr td .submit.disabled {
+	background:#ccc;
+	background-image:none;
+	cursor:default !important;	
+}

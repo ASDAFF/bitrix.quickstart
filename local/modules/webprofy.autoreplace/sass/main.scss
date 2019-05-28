@@ -1,0 +1,119 @@
+@import "compass/css3";
+
+.autoreplace-root{
+	@include transition-property(opacity);
+	@include transition-duration(150ms);
+	&.loading{
+		opacity: 0.5;
+	}
+	input[type=text],
+	input[type=checkbox],
+	label,
+	button,
+	input[type=button]{
+		&:focus,
+		&:active{
+			box-shadow: 0 0 5px rgba(48, 48, 255, 0.65);
+		}
+	}
+	textarea{
+		width: 100%;
+		height: 200px;
+	}
+
+	.select2-results li.select2-result-with-children > .select2-result-label{
+		font-weight: bold;
+		font-size: 14px;
+		margin: 8px 0 6px 0;
+	}
+
+	table.example{
+		border-collapse: collapse;
+		margin-bottom: 20px !important;
+		width: 100%;
+		thead{
+			td{
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+		td{
+			border: 1px solid #E0E9EA;
+			padding: 10px;
+		}
+	}
+
+	.centrify{
+		display: block;
+		padding: 20px;
+		text-align: center;
+	}
+	.select2-container{
+	    min-width: 200px;
+	    &.smaller{
+	    	min-width: 80px;
+	    }
+	}
+	.hover-show{
+		opacity: 0.3;
+		&:hover{
+			opacity: 1;
+		}
+	}
+	.header{
+		display: block;
+		background-color: #E0E9EA;
+		padding: 8px;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 16px;
+		position: relative;
+		top: 0;
+		.buttons{
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			margin-top: -15px;
+		}
+		&.h3,
+		&.h2{
+			font-weight: normal;
+			font-size: 14px;
+		}
+		&.h3{
+			background-color: #EFF0F0;
+			font-size: 12px;
+		}
+	}
+	.row{
+		margin-bottom: 20px;
+		display: block;
+
+		.label,
+		.value{
+			vertical-align: middle;
+			display: inline-block;
+		}
+		
+		.label{
+			width: 30%;
+			text-align: right;
+			margin-right: 10px;
+		}
+		.value{
+			width: 60%;
+		}
+	}
+	.templates{
+		display: none !important;
+	}
+
+	.attributes{
+		&:hover{
+			background-color: rgba(255, 255, 0, 0.04);
+		}
+		box-sizing: border-box;
+	}
+}

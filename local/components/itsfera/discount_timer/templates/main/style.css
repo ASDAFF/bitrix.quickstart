@@ -1,0 +1,321 @@
+.stock_main .slick-prev,
+.stock_main .slick-next {
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 30px;
+    display: block;
+    transition: all ease .3s;
+    cursor: pointer;
+    background-size: 100%;
+    z-index: 1;
+    display: inline-block;
+}
+
+.stock_main .slick-prev {
+    left: -6px;
+    background: url(img/pagination_left@2x.png) 50% no-repeat;
+    background-position: 50%;
+}
+
+.stock_main .slick-next {
+    right: -6px;
+    background: url(img/pagination_right@2x.png) 50% no-repeat;
+    background-position: 50%;
+}
+
+.stock_main {
+    max-width: 1140px;
+    width: 100%;
+    margin: 30px auto;
+    outline: none;
+    font-family: 'Gotham';
+    box-sizing: border-box;
+}
+
+.stock_main .dsc_item-left-block {
+    position: relative;
+}
+
+.dsc_slider {
+    margin: 30px 0 0;
+    padding: 0;
+}
+
+.dsc_product {
+    max-width: 272px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+}
+
+.dsc_item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #000000;
+    max-width: 170px;
+}
+
+.dsc_item:hover,
+.dsc_item:focus,
+.dsc_item:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.dsc_item:hover .item_title {
+    color: #e6320a;
+    text-decoration: none;
+}
+
+.dsc_image {
+    width: 100%;
+    height: 170px;
+    line-height: 170px;
+    overflow: hidden;
+}
+
+.dsc_image img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.dsc_item-right-block {
+    list-style: none;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.stock_main a.item-info {
+    text-decoration: none;
+    outline: none;
+}
+
+.stock_main .item-title {
+
+    text-align: left;
+    font-family: "Gotham";
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 0 0;
+    height: 66px;
+    overflow: hidden;
+
+}
+
+.stock_main .item-block-price {
+    position: relative;
+    padding-top: 23px;
+    text-align: left;
+    background: url(https://rrstatic.retailrocket.net/moshoztorg/widget/price_border.png) center bottom repeat-x;
+}
+
+.stock_main .dsc_product .item-price {
+    display: inline-block;
+    background-color: #ffffff;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 28px;
+    position: relative;
+    bottom: -5px;
+    margin: 0;
+}
+
+.stock_main .dsc_product .item-price .item-price-value {
+    font-family: Gotham;
+    background-color: #fff;
+    float: left;
+    padding-right: 5px;
+}
+
+.stock_main .item-actions-buy {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 29px;
+    height: 28px;
+    cursor: pointer;
+    padding: 0;
+    background: #fff url(img/shopping-cart-2.png) right center no-repeat;
+}
+
+.stock_main .item-actions-buy:hover,
+.stock_main .item-actions-buy:focus {
+    /*            background: url(https://rrstatic.retailrocket.net/moshoztorg/widget/cart_hover.png);*/
+}
+
+.stock_wrap {
+    position: relative;
+}
+
+.stock_main .dsc {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-family: 'Gotham';
+    font-weight: 500;
+    color: #000000;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.stock_main .dsc::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 1px;
+    background: #000000;
+
+}
+
+.stock_main .dsc_all {
+    margin-top: 10px;
+    float: right;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 16px;
+    color: #aaaaaa;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.stock_main .dsc_all:hover,
+.stock_main .dsc_all:focus,
+.stock_main .dsc_all:active {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.stock_main .dsc_all::after {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+
+}
+
+.dsc_count {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 8px;
+    background: #e6320a;
+    font-family: 'Gotham';
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 10px;
+    z-index: 2;
+    margin: 0;
+}
+
+.chrono {
+    width: 428px;
+    margin-left: 45px;
+    display: inline-block;
+    background: #e6320a;
+    border-radius: 2px;
+}
+
+.counter2 {
+    padding: 0 10px;
+    min-width: 205px;
+    box-sizing: border-box;
+}
+
+#clockdiv {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+
+}
+
+#clockdiv div {
+    display: inline-block;
+}
+
+#clockdiv .clock_div {
+    height: 40px;
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'Gotham';
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    margin-right: 5px;
+}
+
+#clockdiv .clock_div:last-child {
+    margin-right: 0;
+}
+
+#clockdiv .clock_div::after {
+    content: ":";
+    position: absolute;
+    right: -8px;
+    top: -1px;
+    bottom: 0;
+}
+
+#clockdiv .clock_div:last-child::after {
+    content: "";
+}
+
+/*
+
+.clock_div:nth-child(2) {
+    margin: 0 5px;
+}
+*/
+
+.clock_div:first-child {
+    position: relative;
+    margin-left: 35px;
+}
+
+#clockdiv .clock_div:last-child {
+    margin-right: 5px;
+}
+
+.clock_div:first-child::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/chronometer.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.smalltext {
+    /*    margin-left: -5px;*/
+    font-size: 0;
+    position: absolute;
+    top:0;
+}

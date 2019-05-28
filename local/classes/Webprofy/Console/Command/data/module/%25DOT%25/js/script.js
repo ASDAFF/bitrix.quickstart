@@ -1,0 +1,1 @@
+console.log('in %DOT%/js/script.js');

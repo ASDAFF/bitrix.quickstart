@@ -1,0 +1,27 @@
+.asd-sect-cont {
+	margin:0 0 0 12px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 31px;
+	height: 31px;
+}
+
+.asd-sect-input {
+	margin:auto 0 auto 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.asd-sect-descr {
+	margin:0 0 0 12px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 31px;
+	height: 31px;
+	max-width: 70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.asd_iblock_input_backlight {
+	background-color:#e0e9ec!important;
+}

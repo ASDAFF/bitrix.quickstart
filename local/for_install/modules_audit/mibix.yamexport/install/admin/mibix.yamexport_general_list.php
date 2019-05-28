@@ -1,0 +1,1 @@
+<?require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mibix.yamexport/admin/general_list.php");?>

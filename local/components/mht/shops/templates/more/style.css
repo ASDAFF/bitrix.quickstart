@@ -1,0 +1,169 @@
+.hidden {
+    display: none;
+}
+
+.breadcrumbs  {
+    display: none;
+}
+
+.dealer_left {
+    width: 100%;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+}
+
+.dealer_build {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#global-wrapper .headerspacer {
+    margin-bottom: 0;
+}
+
+.dealer_build:after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    display: inline-block;
+    background: #e6330a;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dealer_street, .dealer_build {
+        font-weight: 600;
+}
+
+.ya-taxi-widget {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 20px;
+}
+
+.ya-taxi-widget__title, .ya-taxi-widget__description {
+text-align: center !important;
+}
+
+.ya-taxi-widget_size_s.ya-taxi-widget_theme_action .ya-taxi-widget__content {
+        padding: 0 20px 0 20px !important;
+}
+
+
+.ya-taxi-widget_size_s .ya-taxi-widget__content:after, .ya-taxi-widget_size_xs .ya-taxi-widget__content:after {
+    display: none !important;
+}
+
+
+.ymaps-2-1-62-balloon__close+.ymaps-2-1-62-balloon__content {
+    margin-right: 10px !important;
+}
+
+.balloonContent .image img {
+    width: 100%;
+}
+
+.contacts_page .contacts .area_block .selectwrap,
+.contacts_page .contacts .area_block .checkwrap {
+    float: left;
+    margin-right: 20px;
+}
+
+.contacts_page .contacts .area_block .checkwrap {
+    margin-top: 13px;
+    position: relative;
+}
+
+.contacts_page .contacts .area_block .checkwrap label {
+    font-family: Gotham;
+    font-size: 14px;
+}
+
+.map_preloader {
+    z-index: 10;
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.map_preloader img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.map_preloader .preload-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+
+.map_preloader img.preload-moving {
+    z-index: 2;
+    -webkit-animation: rotate 2s infinite;
+    animation: rotate 2s infinite;
+}
+
+.map_preloader img.preload-unmoving {
+    -webkit-animation: unrotate 2s infinite;
+    animation: unrotate 2s infinite;  
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes unrotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes unrotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}

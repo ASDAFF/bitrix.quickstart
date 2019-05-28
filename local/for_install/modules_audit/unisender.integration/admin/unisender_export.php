@@ -1,113 +1,151 @@
 <?php
 set_time_limit(0);
 ob_implicit_flush(1);
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_before.php");
-if (empty($_POST['export'])) LocalRedirect("/bitrix/admin/unisender_index.php");
-$APPLICATION->SetTitle("UniSender Import...");
-require_once ($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_after.php");
+$module_id = 'unisender.integration';
+require_once($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_admin_before.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/main/include/prolog_admin_after.php');
+require_once $_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/'.$module_id.'/include.php';
 
-require_once $_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/unisender.integration/include.php";
+if (empty($_POST['export'])) {
+    LocalRedirect('/bitrix/admin/unisender_index.php');
+}
 
 IncludeModuleLangFile(__FILE__);
+$APPLICATION->SetTitle(GetMessage('UNI_EXPORT_START'));
+$API_KEY = COption::GetOptionString($module_id, 'UNISENDER_API_KEY');
 
-$API_KEY = COption::GetOptionString($module_id, "UNISENDER_API_KEY");
-if (empty($API_KEY))
-{
-	echo "<span class=\"errortext\">".GetMessage("UNI_API_KEY_EMPTY", array("#MODULE_ID#"=>$module_id))."</span>";
-}
-else
-{
-	echo "<span class=\"notetext\">".GetMessage("UNI_IMPORT_START")."</span><br/>";
-	$API = new UniAPI($API_KEY);
-	if (($fields = $API->getFields(array('string', 'text')))!==false)
-	{
-		$params = array();
-		// ????? ???????
-		$params['field_names'][] = 'email';
-		if (!empty($_POST['phone'])) $params['field_names'][] = "phone";
-		if (!empty($_POST['name'])) $params['field_names'][] = $fields[intval($_POST['name'])]['name'];
-		if (!empty($_POST['fam'])) $params['field_names'][] = $fields[intval($_POST['fam'])]['name'];
-		if (!empty($_POST['otch'])) $params['field_names'][] = $fields[intval($_POST['otch'])]['name'];
-		$params['field_names'][] = "email_confirm_time";
-		if (!empty($_POST['phone']))
-		{
-			$params['field_names'][] = "phone_add_time";
-			$params['field_names'][] = "phone_list_ids";
-		}
-		
-		$params['field_names'][] = "email_list_ids";
-		
-		
-		$filter = Array
-		(
-			"ACTIVE"              => "Y",
-			"GROUPS_ID"           => $groups
-		);
-		$rsUsers = CUser::GetList(($by="id"), ($order="desc"), $filter); // ???????? ?????????????
-		$i = 0;
-		while($user = $rsUsers->Fetch())
-		{
-			//echo $user['ID']." / ".$user['DATE_REGISTER']."<br/>";
-			$date_register = ConvertDateTime($user['DATE_REGISTER'], "YYYY-MM-DD HH:MI:SS", "ru");
-			$list_id = intval($_POST['list_id']);
-			$data = array();
-			$data[] = $user['EMAIL'];
-			if (!empty($_POST['phone'])) $data[] = $user['PERSONAL_MOBILE'];
-			if (!empty($_POST['name'])) $data[] = $user['NAME'];
-			if (!empty($_POST['fam'])) $data[] = $user['LAST_NAME'];
-			if (!empty($_POST['otch'])) $data[] = $user['SECOND_NAME'];
-			$data[] = $date_register;
-			if (!empty($_POST['phone']))
-			{
-				$data[] = $date_register;
-				$data[] = $list_id;
-			}
-			
-			$data[] = $list_id;
-			
-			$params['data'][] = $data;
-			$i++;
-			if ($i%400==0)
-			{
-				if (($res = $API->importContacts($params))!==false)
-				{
-					echo GetMessage("UNI_IMPORT_STAT", array("#TOTAL#"=>$res['total'], "#INSERTED#"=>$res['inserted'], "#UPDATED#"=>$res['updated'], "#DELETED#"=>$res['deleted'], "#NEW_EMAILS#"=>$res['new_emails']))."<br/>";
-					unset($params['data']);
-					$params['data'] = array();
-					sleep(1);
-					flush();
-				}
-				else
-				{
-					$API->showError();
-					break;
-				}
-			}
-		}
-		
-		if ($i%400!=0)
-		{
-			if (($res = $API->importContacts($params))!==false)
-			{
-				echo GetMessage("UNI_IMPORT_STAT", array("#TOTAL#"=>$res['total'], "#INSERTED#"=>$res['inserted'], "#UPDATED#"=>$res['updated'], "#DELETED#"=>$res['deleted'], "#NEW_EMAILS#"=>$res['new_emails']))."<br/>";
-				flush();
-			}
-			else {
-				$API->showError();
-			}
-		}
-		
-		echo "<span class=\"notetext\">".GetMessage("UNI_IMPORT_FINISH")."</span><br/><br/>";
-		
-		echo GetMessage("UNI_END_LINK", array("#LIST_ID#"=>$list_id));
-		//print_r($params);
-		//echo urldecode(http_build_query($params));
-	}
-	else
-	{
-		$API->showError();
-	}
+if ($API_KEY !== '') {
+    $API = new UniAPI($API_KEY);
+    $lists = $API->getLists();
+    $uniFields = $API->getFields();
+    $userFields = Unisender::getUserFields();
+
+    if (!is_array($lists) || !is_array($uniFields)) {
+        $API->showError();
+    } else {
+
+        $fieldIterator = 8;
+        $list_id = (int)$_POST['list_id'];
+        $response = array();
+
+        $params = array();
+        $params['double_optin'] = 1;
+        $params['field_names[0]'] = 'email';
+        $params['field_names[1]'] = 'email_status';
+        $params['field_names[2]'] = 'email_add_time';
+        $params['field_names[3]'] = 'email_list_ids';
+
+        if (!empty($_POST['phone'])) {
+            $params['field_names[4]'] = 'phone';
+            $params['field_names[5]'] = 'phone_status';
+            $params['field_names[6]'] = 'phone_add_time';
+            $params['field_names[7]'] = 'phone_list_ids';
+        }
+
+        $fieldId = $fieldIterator;
+        foreach ($_POST['fields'] as $name => $userField) {
+            $params['field_names['.$fieldId.']'] = $name;
+            $fieldId++;
+        }
+
+        $groups = implode(',', $_POST['groups']);
+        $filter = array(
+            'ACTIVE' => 'Y',
+            'GROUPS_ID' => $groups
+        );
+        $by = 'id';
+        $order = 'desc';
+        $rsUsers = CUser::GetList($by, $order, $filter, array('SELECT' => array('UF_*')));
+
+        $i = 0;
+        while ($user = $rsUsers->Fetch()) {
+            $currId = 'data['.$i.']';
+
+            $data = array(
+                $currId.'[0]' => $user['EMAIL'],
+                $currId.'[1]' => 'active',
+                $currId.'[2]' => ConvertDateTime($user['DATE_REGISTER'], 'YYYY-MM-DD HH:MI:SS'),
+                $currId.'[3]' => $list_id
+            );
+            if (!empty($_POST['phone']) && !empty($user[$_POST['phone']])) {
+                $data = array_merge($data, array(
+                    $currId.'[4]' => $user[$_POST['phone']],
+                    $currId.'[5]' => 'active',
+                    $currId.'[6]' => $data[$currId.'[2]'],
+                    $currId.'[7]' => $list_id
+                ));
+            }
+
+            $fieldId = $fieldIterator;
+            foreach ($_POST['fields'] as $name => $userField) {
+                if (!empty($user[$userField])) {
+                    $data[$currId.'['.$fieldId.']'] = $user[$userField];
+                }
+                $fieldId++;
+            }
+
+            $params = array_merge($params, $data);
+
+            $i++;
+            if ($i >= 500) {
+                $result = $API->importContacts($params);
+                if ($result === false) {
+                    $API->showError();
+                    break;
+                } else {
+                    unset($params['data']);
+                    $i = 0;
+                    foreach ($result as $name => $value) {
+                        if (!isset($response[$name])) {
+                            $response[$name] = $value;
+                        } else {
+                            $response[$name] += $value;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (!empty($params)) {
+            $result = $API->importContacts($params);
+            if ($result === false) {
+                $API->showError();
+            } else {
+                unset($params['data']);
+                $i = 0;
+                foreach ($result as $name => $value) {
+                    if (!isset($response[$name])) {
+                        $response[$name] = $value;
+                    } else {
+                        $response[$name] += $value;
+                    }
+                }
+            }
+        }
+
+        if (!$API->getError()) {
+            echo '<p>' . GetMessage('UNI_EXPORT_STAT', array(
+                    '#TOTAL#' => $response['total'],
+                    '#INSERTED#' => $response['inserted'],
+                    '#UPDATED#' => $response['updated'],
+                    '#NEW_EMAILS#' => $response['new_emails']))
+                . '</p>';
+
+            if (!empty($response['logs'])) {
+                echo '<p><b>' . GetMessage('UNI_EXPORT_LOG_TITLE') . ':</b><ul>';
+                foreach ($response['logs'] as $log) {
+                    echo '<li>' . $log . '</li>';
+                }
+                echo '</ul></p>';
+            }
+            echo '<span class="notetext">' . GetMessage('UNI_EXPORT_FINISH') . '</span><br/>';
+            echo GetMessage('UNI_END_LINK', array('#LIST_ID#' => $list_id));
+        }
+    }
+
+} else {
+    echo '<span class="errortext">' . GetMessage('UNI_API_KEY_EMPTY', array('#MODULE_ID#' => $module_id)) . '</span>';
 }
 
-require_once($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/epilog_admin.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . BX_ROOT . "/modules/main/include/epilog_admin.php");
 ?>

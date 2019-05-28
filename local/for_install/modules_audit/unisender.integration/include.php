@@ -1,17 +1,16 @@
-<?
+<?php
 global $DB, $MESS, $APPLICATION;
 
-define("ADMIN_MODULE_NAME", "unisender");
-define("ADMIN_MODULE_ICON", "uni_menu_icon");
+define('ADMIN_MODULE_NAME', 'unisender');
+define('ADMIN_MODULE_ICON', 'uni_menu_icon');
 
-require_once (dirname(__FILE__)."/classes/general/unisender.php");
+require_once(__DIR__ . '/classes/general/unisender.php');
+require_once(__DIR__ . '/classes/general/unisenderAPI.php');
 
-CModule::AddAutoloadClasses("triggmine", array(
-		"UniAPI" => dirname(__FILE__)."/classes/general/unisender.php"
+CModule::AddAutoloadClasses('unisender.integration', array(
+		'Unisender' => __DIR__.'/classes/general/unisender.php',
+		'UniAPI' => __DIR__.'/classes/general/unisenderAPI.php'
 	)
 );
 
-$module_id = "unisender.integration";
-
 IncludeModuleLangFile(__FILE__);
-?>

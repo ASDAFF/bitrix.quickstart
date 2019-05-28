@@ -1,6 +1,6 @@
 <?
 $MESS ['ASKARON_IBVOTE_MODULE_NAME'] = "Correct voting";
-$MESS ['ASKARON_IBVOTE_MODULE_DESCRIPTION'] = "Extended ibloñk.vote component. Saves results in the database.";
+$MESS ['ASKARON_IBVOTE_MODULE_DESCRIPTION'] = "Extended ibloÑk.vote component. Saves results in the database.";
 $MESS ['ASKARON_IBVOTE_PARTNER_NAME'] = "Askaron Systems";
 $MESS ['ASKARON_IBVOTE_SITE_URI']= "http://askaron.ru";
 $MESS ['ASKARON_IBVOTE_NEED_RIGHT_VER'] = "This solution needs main module version #NEED# or newer.";

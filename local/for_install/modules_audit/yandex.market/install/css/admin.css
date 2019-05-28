@@ -1,0 +1,9 @@
+.b-log-icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	position: relative;
+	top: -1px;
+
+	margin-right: 4px;
+}

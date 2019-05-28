@@ -1,0 +1,139 @@
+/* line 3, ../sass/main.scss */
+.autoreplace-root {
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  -webkit-transition-duration: 150ms;
+  transition-duration: 150ms;
+}
+/* line 6, ../sass/main.scss */
+.autoreplace-root.loading {
+  opacity: 0.5;
+}
+/* line 14, ../sass/main.scss */
+.autoreplace-root input[type=text]:focus, .autoreplace-root input[type=text]:active,
+.autoreplace-root input[type=checkbox]:focus,
+.autoreplace-root input[type=checkbox]:active,
+.autoreplace-root label:focus,
+.autoreplace-root label:active,
+.autoreplace-root button:focus,
+.autoreplace-root button:active,
+.autoreplace-root input[type=button]:focus,
+.autoreplace-root input[type=button]:active {
+  box-shadow: 0 0 5px rgba(48, 48, 255, 0.65);
+}
+/* line 19, ../sass/main.scss */
+.autoreplace-root textarea {
+  width: 100%;
+  height: 200px;
+}
+/* line 24, ../sass/main.scss */
+.autoreplace-root .select2-results li.select2-result-with-children > .select2-result-label {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 8px 0 6px 0;
+}
+/* line 30, ../sass/main.scss */
+.autoreplace-root table.example {
+  border-collapse: collapse;
+  margin-bottom: 20px !important;
+  width: 100%;
+}
+/* line 35, ../sass/main.scss */
+.autoreplace-root table.example thead td {
+  font-weight: bold;
+  text-align: center;
+}
+/* line 40, ../sass/main.scss */
+.autoreplace-root table.example td {
+  border: 1px solid #E0E9EA;
+  padding: 10px;
+}
+/* line 46, ../sass/main.scss */
+.autoreplace-root .centrify {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+/* line 51, ../sass/main.scss */
+.autoreplace-root .select2-container {
+  min-width: 200px;
+}
+/* line 53, ../sass/main.scss */
+.autoreplace-root .select2-container.smaller {
+  min-width: 80px;
+}
+/* line 57, ../sass/main.scss */
+.autoreplace-root .hover-show {
+  opacity: 0.3;
+}
+/* line 59, ../sass/main.scss */
+.autoreplace-root .hover-show:hover {
+  opacity: 1;
+}
+/* line 63, ../sass/main.scss */
+.autoreplace-root .header {
+  display: block;
+  background-color: #E0E9EA;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: 0;
+}
+/* line 74, ../sass/main.scss */
+.autoreplace-root .header .buttons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+/* line 80, ../sass/main.scss */
+.autoreplace-root .header.h3, .autoreplace-root .header.h2 {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 85, ../sass/main.scss */
+.autoreplace-root .header.h3 {
+  background-color: #EFF0F0;
+  font-size: 12px;
+}
+/* line 90, ../sass/main.scss */
+.autoreplace-root .row {
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 94, ../sass/main.scss */
+.autoreplace-root .row .label,
+.autoreplace-root .row .value {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 100, ../sass/main.scss */
+.autoreplace-root .row .label {
+  width: 30%;
+  text-align: right;
+  margin-right: 10px;
+}
+/* line 105, ../sass/main.scss */
+.autoreplace-root .row .value {
+  width: 60%;
+}
+/* line 109, ../sass/main.scss */
+.autoreplace-root .templates {
+  display: none !important;
+}
+/* line 113, ../sass/main.scss */
+.autoreplace-root .attributes {
+  box-sizing: border-box;
+}
+/* line 114, ../sass/main.scss */
+.autoreplace-root .attributes:hover {
+  background-color: rgba(255, 255, 0, 0.04);
+}

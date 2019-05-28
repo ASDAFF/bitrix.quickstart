@@ -1,0 +1,3 @@
+<?
+$MESS["LIFEPAY_CLOUDPRINT_DOSTAVKA"] = "Доставка";
+?>

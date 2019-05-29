@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:49:02">
+	<Metadata>
+		<Id>projectphotogallery_redsign_monopoly</Id>
+		<Title>Gallery projects</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+		</Properties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>projectphotogallery_redsign_monopoly</Id>
+		<MetadataId>projectphotogallery_redsign_monopoly</MetadataId>
+		<Title>Gallery projects</Title>
+		<BitrixCode>projectphotogallery_redsign_monopoly</BitrixCode>
+		<BitrixSort>700</BitrixSort>
+		<BitrixListURL>#SITE_DIR#about/fotogallery/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#about/fotogallery/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#about/fotogallery/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>32</Id>
+				<Title>Kitchen</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>projectphotogallery_files/iblock/135/135a73975166f600eebe5f85b6a004ff.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kukhni</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum viverra varius. Donec nunc tellus, sollicitudin nec nulla sed, maximus posuere leo. Nulla facilisi. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In dapibus dapibus dolor. Nulla tortor arcu, volutpat et nisi id, iaculis sagittis nunc. Pellentesque in leo sed diam cursus vulputate et tempor nisl. Vestibulum hendrerit dui placerat massa molestie, eget fringilla nisi finibus. Curabitur ut fringilla tellus, egestas tristique ligula.
+
+Phasellus lectus nisi, fermentum a leo at, fermentum vulputate lacus. Mauris ut massa condimentum, rutrum velit nec, luctus leo. Aliquam ornare at nisl a rhoncus. Nullam sed enim condimentum, scelerisque mi a, pulvinar tortor. Pellentesque posuere, ipsum vitae malesuada vestibulum, purus mauris pharetra ante, porta consectetur libero ipsum in tortor. Nam vestibulum venenatis convallis. Sed egestas at nisl et vulputate.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>projectphotogallery_files/iblock/ed8/ed8888a8a148fa171e889a61ee9b3347.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>33</Id>
+				<Title>Bathroom furniture</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>projectphotogallery_files/iblock/641/641c8e702669ca6decc0e1be62f9a90a.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>mebel-dlya-vannoy-komnaty</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum viverra varius. Donec nunc tellus, sollicitudin nec nulla sed, maximus posuere leo. Nulla facilisi. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In dapibus dapibus dolor. Nulla tortor arcu, volutpat et nisi id, iaculis sagittis nunc. Pellentesque in leo sed diam cursus vulputate et tempor nisl. Vestibulum hendrerit dui placerat massa molestie, eget fringilla nisi finibus. Curabitur ut fringilla tellus, egestas tristique ligula.
+
+Phasellus lectus nisi, fermentum a leo at, fermentum vulputate lacus. Mauris ut massa condimentum, rutrum velit nec, luctus leo. Aliquam ornare at nisl a rhoncus. Nullam sed enim condimentum, scelerisque mi a, pulvinar tortor. Pellentesque posuere, ipsum vitae malesuada vestibulum, purus mauris pharetra ante, porta consectetur libero ipsum in tortor. Nam vestibulum venenatis convallis. Sed egestas at nisl et vulputate.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>projectphotogallery_files/iblock/dc7/dc719080ca92196827d3807866a50d32.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>34</Id>
+				<Title>Several species</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>vannyy-garnitur-na-vybor</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>In the settings you can change the display format in the Project Gallery. To do this, log in as administrator and activate the editing mode. Hovering on the block projects will gear. Clicking on it will take you to the configuration mode of the block.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>35</Id>
+				<Title>Setting the slider</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>projectphotogallery_files/iblock/c68/c681f8e9bd9ae095e869bfcb0c68c624.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>modern-divan</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Do not forget that in the settings of the unit can be switched on &quot; carousel &quot; projects and set the time automatically turning the slide. Try to experiment.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>projectphotogallery_files/iblock/d8f/d8f7a279fda2f840d73b423a2bdf0430.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>36</Id>
+				<Title>Projects gallery</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>projectphotogallery_files/iblock/e42/e42323ad0158d38ccad9c366ca9baee1.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>stilnyy-stul</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>In this unit, you can show the completed projects. This is especially true if the company is engaged in the design, followed by the implementation, or sells goods that are significantly izmeyanyayut appearance of the premises, or other objects.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>projectphotogallery_files/iblock/76d/76dc7e53a8f8063fa330e1b4449c2a19.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>37</Id>
+				<Title>Classic sofa</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>projectphotogallery_files/iblock/309/3090e25b2ae68a38df4d39bc01e129f5.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>klassicheskiy-divan</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum viverra varius. Donec nunc tellus, sollicitudin nec nulla sed, maximus posuere leo. Nulla facilisi. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In dapibus dapibus dolor. Nulla tortor arcu, volutpat et nisi id, iaculis sagittis nunc. Pellentesque in leo sed diam cursus vulputate et tempor nisl. Vestibulum hendrerit dui placerat massa molestie, eget fringilla nisi finibus. Curabitur ut fringilla tellus, egestas tristique ligula.
+
+Phasellus lectus nisi, fermentum a leo at, fermentum vulputate lacus. Mauris ut massa condimentum, rutrum velit nec, luctus leo. Aliquam ornare at nisl a rhoncus. Nullam sed enim condimentum, scelerisque mi a, pulvinar tortor. Pellentesque posuere, ipsum vitae malesuada vestibulum, purus mauris pharetra ante, porta consectetur libero ipsum in tortor. Nam vestibulum venenatis convallis. Sed egestas at nisl et vulputate.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae condimentum nunc, sit amet rhoncus metus. Sed eu mi nisl. Praesent eu ex nec leo faucibus lacinia. Nulla commodo, ante et interdum egestas, felis libero dapibus metus, at lacinia magna massa sed dolor. Nulla porttitor interdum tortor vitae fermentum. Ut pharetra tortor eget vulputate varius. Phasellus faucibus ex odio, sit amet tristique nisl euismod pharetra. Mauris eros erat, dignissim vitae tellus eget, malesuada facilisis enim. Nunc tempus vel orci at elementum.
+
+Cras arcu magna, iaculis et dictum non, posuere eu mauris. Vivamus urna mauris, porta id tristique pellentesque, varius semper nisl. Cras finibus libero id sem congue sollicitudin. Phasellus tellus est, tempus non semper quis, tincidunt et odio. Nulla ut purus eget elit dapibus lacinia sed vitae neque. In id tortor vel ipsum lacinia congue. Cras lacus nunc, porta et dui dapibus, pulvinar laoreet eros. Mauris non eleifend orci, et sollicitudin odio. Praesent velit libero, facilisis ac semper facilisis, commodo vel nulla.
+
+Pellentesque nunc nunc, vestibulum ac justo at, fermentum fermentum ipsum. Vestibulum et felis vel purus lacinia interdum sit amet et erat. Nullam id purus vel ipsum commodo sollicitudin nec et ante. Sed ut cursus tortor, nec sollicitudin dui. Aliquam eleifend sapien ante, a lacinia nisi aliquam in. Duis sodales ullamcorper nisi, in tincidunt odio dignissim eget. Fusce massa dui, vehicula vel lacinia quis, porta a augue. Ut gravida auctor leo, eu placerat nisl faucibus eget. Maecenas convallis nisl in nisl ultricies posuere. Quisque ac purus at ipsum porttitor pulvinar.
+
+In vehicula efficitur diam eget condimentum. Ut nec leo ac libero iaculis convallis in ut ante. Nam et placerat odio. Proin in eros id ante auctor elementum. Proin sit amet diam eget ligula aliquam accumsan a vel orci. Suspendisse dictum, tellus sed aliquet tincidunt, est eros rhoncus neque, ac porttitor erat quam eu dui. Sed sagittis ornare felis id blandit. Aenean vehicula mauris et efficitur bibendum. Vestibulum nec nibh sit amet leo facilisis ultrices. Donec lectus odio, rhoncus vel aliquam sit amet, lacinia sit amet ante.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>projectphotogallery_files/iblock/57d/57d45f326be5737732c3348ba88b2095.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

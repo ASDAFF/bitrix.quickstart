@@ -1,0 +1,3 @@
+<?
+$MESS['RS.MONOPOLY.PLACEHOLDER'] = "Search";
+$MESS['RS.MONOPOLY.BTN'] = "Search";

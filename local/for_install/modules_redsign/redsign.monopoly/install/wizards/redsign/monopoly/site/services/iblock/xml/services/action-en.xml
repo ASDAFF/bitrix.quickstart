@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:49:23">
+	<Metadata>
+		<Id>action_redsign_monopoly</Id>
+		<Title>Deals</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>17</Id>
+				<Title>Marker text</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>MARKER_TEXT</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>18</Id>
+				<Title>Marker color</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>200</BitrixSort>
+				<BitrixCode>MARKER_COLOR</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>19</Id>
+				<Title>Deals date</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>300</BitrixSort>
+				<BitrixCode>ACTION_DATE</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>17</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+			<Property>
+				<Id>18</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+			<Property>
+				<Id>19</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+		</ElementProperties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>action_redsign_monopoly</Id>
+		<MetadataId>action_redsign_monopoly</MetadataId>
+		<Title>Deals</Title>
+		<BitrixCode>action_redsign_monopoly</BitrixCode>
+		<BitrixSort>900</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/action/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/action/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/action/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>53</Id>
+				<Title>Use marketing campaigns</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>action_files/iblock/4b9/4b9c8de5f69c3a21eb24a539eede3990.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>monopoliya-provodit-novogodnyuyu-aktsiyu-sovmestno-so-sberbankom-rossii-</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-04-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Marketing activities are a great tool not only increase sales, but the return of visitors to your website.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros erat, finibus in risus id, cursus pellentesque metus. Duis quis erat metus. Ut consectetur faucibus leo vestibulum consectetur. &lt;b&gt;Maecenas ac facilisis ligula&lt;/b&gt;, ac vestibulum neque. Ut tempor ut ligula sit amet malesuada. Phasellus a justo urna. Nunc risus eros, interdum sit amet nisl sollicitudin, mattis condimentum ipsum. Vivamus viverra vulputate ipsum eu sollicitudin. Cras erat erat, pulvinar quis lacinia quis, fermentum tempor felis. Aenean rhoncus erat nulla, id porttitor dui facilisis eget. Sed sodales auctor molestie.
+&lt;/p&gt;
+&lt;p&gt;
+	 Sed ultrices massa ac metus aliquet commodo. Duis vitae tortor massa. Mauris tincidunt eget est a scelerisque. Duis venenatis tincidunt risus. Duis suscipit erat id quam lacinia pulvinar. Sed dapibus efficitur ipsum a pharetra. Cras dictum vehicula ligula non vehicula. Etiam ultrices rutrum justo id lobortis. Nunc accumsan malesuada quam, id mollis nibh fermentum id. Sed consequat pulvinar erat suscipit dignissim.
+&lt;/p&gt;
+&lt;p&gt;
+	 Nam congue leo viverra neque consectetur, sodales imperdiet lacus pretium. Nulla imperdiet, sem vitae ornare auctor, tellus nunc posuere sem, placerat hendrerit ex metus tempus dolor. Morbi eget pulvinar risus, in commodo erat. Nulla ac mi sapien. Phasellus dictum feugiat augue, a congue dolor tristique a. Nulla vehicula dapibus urna, id posuere risus laoreet non. Fusce aliquam metus at nunc pulvinar eleifend. Fusce mollis est ac odio congue interdum. Curabitur a pellentesque nulla, non efficitur dui. Nam lorem augue, semper sit amet nisl a, sagittis volutpat ante. Maecenas a tincidunt neque. Vivamus porta a velit a congue. Maecenas at tincidunt magna. Fusce sagittis semper erat, ac consequat libero auctor in.
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Aenean sit amet velit ligula&lt;/li&gt;
+	&lt;li&gt;Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis ac eros luctus, consequat elit quis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+	 Nunc quis ipsum sed odio pellentesque sagittis a nec diam. Quisque ullamcorper commodo magna id laoreet. Proin a enim id nulla commodo interdum non non enim. Aenean feugiat eros ac tortor porta, at mollis nulla pulvinar. Suspendisse pretium accumsan ante, id facilisis libero varius vitae. Integer maximus neque in fringilla luctus. Donec laoreet neque eget fringilla facilisis. Sed rutrum ornare nunc in fermentum. Etiam id semper nisl, consequat tempus felis. Nullam mollis nec libero eget condimentum. Vivamus eleifend arcu ut gravida accumsan. Aliquam erat odio, egestas et risus at, finibus pretium magna.
+&lt;/p&gt;
+&lt;p&gt;
+	 Morbi accumsan eu tortor in egestas. Morbi rhoncus eros in dui suscipit ultricies vel ac elit. In consectetur in odio et aliquet. Etiam euismod ipsum at faucibus consequat. Fusce accumsan interdum tristique. Duis eget tellus felis. Duis convallis auctor blandit. Integer sapien ex, faucibus ullamcorper laoreet vel, fringilla ut nulla. Donec fringilla ligula sollicitudin elit auctor dapibus.
+&lt;/p&gt;
+ &lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>action_files/iblock/e0d/e0d97578a0d1dcc89b9b20914535ca44.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>Deals</Value>
+						<PropertyValue>
+							<Value>Deals</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>#ec7070</Value>
+						<PropertyValue>
+							<Value>#ec7070</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>December 20, 2015 - January 10, 2016</Value>
+						<PropertyValue>
+							<Value>December 20 - 2015 January 10, 2016</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>54</Id>
+				<Title>All flexibly configurable</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>action_files/iblock/78e/78e2a0874171d3192e8ed0ecbb967f14.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>novogodnie-skidki-na-vsyu-kollektsiyu-spalen-v-kompanii-monopoliya</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-03-25 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>The action, sale, discounts, product day or Things to buy. Create your unique marketing campaign in just a few minutes. Add selling text, vivid images and a call to action. Titles and texts of the flags can be easily changed.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Aliquam vehicula iaculis urna, eu accumsan sem lacinia non. Vestibulum congue tincidunt imperdiet. Suspendisse potenti. Pellentesque interdum sapien lacus, a laoreet mi pellentesque vel. Ut vitae mattis libero. Pellentesque non pellentesque nulla, non euismod nulla. Vivamus tempor tortor vel laoreet suscipit. Nullam in eleifend est. Phasellus vel purus fermentum eros faucibus mollis ac ut lectus. Sed nulla ipsum, finibus ut magna non, ornare bibendum mi. Nullam quam velit, consectetur nec justo vitae, posuere imperdiet justo. Sed congue mi at libero mollis mattis. Duis lobortis sollicitudin est, sit amet efficitur nisi. &lt;i&gt;Proin posuere&lt;/i&gt; imperdiet odio eu finibus. Nullam tortor sem, gravida eu mi nec, ultrices iaculis orci. Etiam lacus odio, convallis vitae augue ac, posuere imperdiet purus.
+&lt;/p&gt;
+&lt;p&gt;
+	 Cras quis sem nec lectus mattis cursus id nec nunc. Etiam tristique vitae quam at placerat. Mauris non nulla et velit finibus tempus vitae ac risus. Sed dignissim vitae lacus vitae feugiat. Nunc cursus faucibus dictum. Donec ac diam velit. Proin at erat pulvinar, ultricies lorem in, mattis felis. Integer et mauris lorem. Pellentesque quis laoreet mauris.
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;i&gt;Suspendisse potenti. Nullam tempor vitae odio sit amet lobortis. Curabitur imperdiet eros quis ante fermentum hendrerit. Praesent eu libero id leo efficitur congue quis sed purus. Proin iaculis massa et libero blandit, sed vestibulum velit dictum&lt;/i&gt;. Phasellus elementum, metus suscipit venenatis sagittis, metus augue maximus tellus, sed vestibulum urna dui non lacus. Nunc finibus erat nec faucibus mattis. Nulla vitae dictum tortor. Aliquam quis sollicitudin ante, nec iaculis dolor. Vestibulum nisl ante, feugiat a rutrum vel, sodales placerat velit. Cras molestie urna non ex pretium egestas quis sit amet lacus. Fusce eget quam sed ante mattis malesuada non vel quam. Nam porta augue molestie faucibus auctor. Cras hendrerit auctor lacus at posuere.
+&lt;/p&gt;
+&lt;p&gt;
+	 Phasellus iaculis lectus ligula, vel venenatis risus vehicula ut. Vestibulum eget consectetur eros. Integer in enim non velit tincidunt blandit sed vitae leo. Nunc ut massa ultricies, tristique purus eu, bibendum odio. Fusce vestibulum eros vitae velit porttitor, id faucibus libero condimentum. Proin efficitur aliquam turpis at placerat. Sed lorem neque, dignissim quis dolor sit amet, pharetra tristique erat. Suspendisse porttitor odio vitae risus pellentesque, non facilisis sapien vulputate. Donec ultricies lectus in nisi mollis semper. Phasellus eu nunc dapibus metus auctor consectetur. Nulla viverra ligula a risus accumsan, ac volutpat velit congue. Cras sit amet efficitur purus. Quisque posuere, mi ac tristique dignissim, arcu lacus tincidunt mi, vel lacinia felis lorem ac odio. Ut ligula diam, &lt;i&gt;pulvinar et condimentum sit amet&lt;/i&gt;, bibendum sit amet nunc. Integer dignissim libero quam, vitae congue orci ultrices eget. Integer semper felis in ante gravida cursus vel ut elit.
+&lt;/p&gt;
+ &lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>action_files/iblock/488/4881d4651d2794858e48e2d2d3257a7c.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>Super Sale autumn</Value>
+						<PropertyValue>
+							<Value>Super Sale autumn</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>#de9200</Value>
+						<PropertyValue>
+							<Value>#de9200</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>28.08.2015 - 28.12.2016</Value>
+						<PropertyValue>
+							<Value>28.08.2015 - 28.12.2016</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>55</Id>
+				<Title>Create texts formula AIDA</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>action_files/iblock/fc4/fc4120af56d3fb8ca3e12b1f21930cbe.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>novogodnie-skidki-na-vsyu-kollektsiyu-spalen-v-kompanii-monopoliya1</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-03-15 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Any advertising appeal should attract the attention of a potential customer, then call it interest, which goes to the desire to possess goods, and finally, to encourage action - purchase.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+&lt;/p&gt;
+&lt;p&gt;
+	 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris a ante risus. Duis placerat nulla nec gravida tristique. Mauris ut bibendum tortor. Phasellus mi nunc, sollicitudin nec tortor eu, gravida aliquet libero. Ut nec purus nec tortor dictum imperdiet. Mauris non mattis tortor. Cras eleifend lectus gravida tortor sollicitudin vestibulum. Praesent id tortor id orci interdum tempor. Integer a ullamcorper lacus, et pulvinar felis. Donec a euismod massa, et sagittis ex. Aenean cursus ante a cursus porta. Integer in tincidunt diam. Morbi lobortis sapien sodales nunc sodales, id consequat metus rutrum. Ut id rhoncus purus, in molestie erat. Ut malesuada lacus euismod, porttitor neque vitae, accumsan ex.
+&lt;/p&gt;
+&lt;p&gt;
+	 Ut sollicitudin varius eros et ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dignissim vestibulum nulla at rutrum. Morbi a metus in quam auctor hendrerit eget ut sapien. Fusce aliquet eget odio ac pretium. In ut augue velit. Fusce ultricies, eros sit amet semper gravida, eros nulla vulputate dolor, quis tincidunt mauris ipsum at libero. Pellentesque dolor libero, cursus vitae tellus eget, ultrices dapibus neque. Nam sem dui, tincidunt eleifend porttitor sit amet, luctus eget nisl. Maecenas accumsan metus dui. Integer rutrum nisl id ipsum feugiat consequat. Fusce consectetur nunc nec porttitor ullamcorper.
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Proin porta faucibus magna, eu rhoncus est molestie vel&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Suspendisse vitae tellus magna. Maecenas commodo tristique mollis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+	 Aenean auctor efficitur augue a pharetra. Mauris eleifend, libero nec lobortis maximus, neque lectus ullamcorper lacus, sed varius augue ante ut leo. Ut id est elit. Fusce condimentum non ex ut consectetur. Sed ipsum turpis, placerat nec finibus sed, semper in lacus. Donec metus felis, ultrices ut tempor eget, accumsan vitae magna. Etiam feugiat leo a ante venenatis pulvinar. Vivamus quis tellus cursus, dignissim sapien vitae, pharetra quam. Phasellus eu orci dui. Praesent tincidunt ipsum felis, in luctus mauris consectetur in. Etiam a turpis eget dui finibus auctor. Quisque a bibendum ligula. Sed pretium justo id turpis eleifend posuere.
+&lt;/p&gt;
+ &lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>action_files/iblock/f78/f78a49e94678f8e4026bdbba6dd82ba2.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>Sale 50%</Value>
+						<PropertyValue>
+							<Value>Sale 50%</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>#7dbd4e</Value>
+						<PropertyValue>
+							<Value>#7dbd4e</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>before 10 January 2016</Value>
+						<PropertyValue>
+							<Value>before 10 January 2016</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>56</Id>
+				<Title>Win a trip to Italy!</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>action_files/iblock/925/92586871d80122c887dfab33fb1f10ae.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>lorem-ipsum-dolor-sit-amet</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-03-07 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Sed mattis tortor nulla, in venenatis libero posuere nec. Etiam vitae lobortis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non turpis elit. Praesent et accumsan ipsum. Praesent volutpat neque sit amet dui consectetur, vitae lobortis eros gravida. Fusce nulla risus, posuere vel facilisis non, efficitur non massa. Morbi quam est, hendrerit id pharetra a, gravida at magna. Pellentesque eget nisi ipsum. Etiam non tellus vitae elit porta tempor quis at erat. Aenean ac nisi eget orci consectetur aliquam. </Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;b&gt;Aliquam ultrices magna vel pharetra maximus&lt;/b&gt;. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+&lt;/p&gt;
+&lt;p&gt;
+	 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris a ante risus. Duis placerat nulla nec gravida tristique. Mauris ut bibendum tortor. Phasellus mi nunc, sollicitudin nec tortor eu, gravida aliquet libero. Ut nec purus nec tortor dictum imperdiet. Mauris non mattis tortor. Cras eleifend lectus gravida tortor sollicitudin vestibulum. Praesent id tortor id orci interdum tempor. Integer a ullamcorper lacus, et pulvinar felis. Donec a euismod massa, et sagittis ex. Aenean cursus ante a cursus porta. Integer in tincidunt diam. Morbi lobortis sapien sodales nunc sodales, id consequat metus rutrum. Ut id rhoncus purus, in molestie erat. Ut malesuada lacus euismod, porttitor neque vitae, accumsan ex.
+&lt;/p&gt;
+&lt;p&gt;
+	 Ut sollicitudin varius eros et ornare. &lt;i&gt;Vestibulum ante ipsum primis&lt;/i&gt; in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dignissim vestibulum nulla at rutrum. Morbi a metus in quam auctor hendrerit eget ut sapien. Fusce aliquet eget odio ac pretium. In ut augue velit. Fusce ultricies, eros sit amet semper gravida, eros nulla vulputate dolor, quis tincidunt mauris ipsum at libero. Pellentesque dolor libero, cursus vitae tellus eget, ultrices dapibus neque. Nam sem dui, tincidunt eleifend porttitor sit amet, luctus eget nisl. Maecenas accumsan metus dui. Integer rutrum nisl id ipsum feugiat consequat. Fusce consectetur nunc nec porttitor ullamcorper.
+&lt;/p&gt;
+&lt;p&gt;
+	 Aenean auctor efficitur augue a pharetra. Mauris eleifend, libero nec lobortis maximus, neque lectus ullamcorper lacus, sed varius augue ante ut leo. Ut id est elit. Fusce condimentum non ex ut consectetur. Sed ipsum turpis, placerat nec finibus sed, semper in lacus. Donec metus felis, ultrices ut tempor eget, accumsan vitae magna. &lt;b&gt;Etiam&lt;/b&gt; feugiat leo a ante venenatis pulvinar. Vivamus quis tellus cursus, dignissim sapien vitae, pharetra quam. Phasellus eu orci dui. Praesent tincidunt ipsum felis, in luctus mauris consectetur in. Etiam a turpis eget dui finibus auctor. Quisque a bibendum ligula. Sed pretium justo id turpis eleifend posuere. &lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>action_files/iblock/13e/13edde6a5cf829280b1e1ef3dd2a87d4.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>Two for the price of one</Value>
+						<PropertyValue>
+							<Value>Two for the price of one</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>#90729b</Value>
+						<PropertyValue>
+							<Value>#90729b</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>before 10 January 2016</Value>
+						<PropertyValue>
+							<Value>before 10 January 2016</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>57</Id>
+				<Title>The new collection of sofas</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>action_files/iblock/7e5/7e53c97d09fc4813de611f2093f31af3.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2013-12-22 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Aenean eu nisi et mauris maximus sagittis. Integer quis lacus tortor. Mauris pulvinar magna ut eros bibendum molestie. Praesent commodo bibendum metus, lobortis porttitor tellus volutpat vitae. Praesent congue congue gravida. Aliquam dignissim ornare lorem, eu tristique metus tincidunt et. Donec vestibulum eget erat ut gravida. Curabitur vulputate libero et ornare tincidunt. Donec ut quam lectus. </Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Nullam finibus rhoncus erat at faucibus. Curabitur risus magna, maximus in lacus et, pulvinar imperdiet libero. Maecenas et enim vitae felis rutrum tincidunt. Proin non congue sem. Sed ut metus nunc. Quisque vitae justo at ex aliquet ornare. Praesent blandit, leo eu consequat ullamcorper, velit felis viverra nulla, in volutpat ante massa sit amet sapien. Fusce eu nunc vel nibh tincidunt condimentum.
+&lt;/p&gt;
+&lt;p&gt;
+	 Aenean eu nisi et mauris maximus sagittis. Integer quis lacus tortor. Mauris pulvinar magna ut eros bibendum molestie. Praesent commodo bibendum metus, lobortis porttitor tellus volutpat vitae. Praesent congue congue gravida. Aliquam dignissim ornare lorem, eu tristique metus tincidunt et. Donec vestibulum eget erat ut gravida. Curabitur vulputate libero et ornare tincidunt. Donec ut quam lectus.
+&lt;/p&gt;
+&lt;p&gt;
+	 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla quis mollis eros. Vivamus diam eros, sodales at nibh at, hendrerit tristique mauris. In sit amet velit quis enim tristique semper. Pellentesque eu est lorem. Vivamus lacinia dui quis pellentesque placerat. Nam eleifend blandit eros in tempus. Nullam auctor sagittis velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean suscipit arcu non imperdiet consequat. Maecenas est mi, viverra vel ligula vel, posuere luctus purus. Duis arcu purus, pharetra at elit at, posuere mollis lorem.
+&lt;/p&gt;
+&lt;p&gt;
+	 Curabitur ut blandit arcu. Pellentesque at interdum erat, quis elementum leo. Integer eu nisl nec augue suscipit pellentesque. Aenean fringilla diam lectus, sed cursus massa pharetra ac. Curabitur id efficitur quam, vel viverra erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris tortor est, scelerisque eu vulputate ut, tincidunt a erat. Nulla purus ligula, sollicitudin vitae aliquam sit amet, vulputate vitae magna. Integer aliquam nisl a odio tincidunt, a fermentum est pellentesque. Sed vitae ex consequat tellus ornare ultricies. Donec dictum, mauris eu ultricies venenatis, augue metus viverra sem, quis sodales nunc tellus id felis.
+&lt;/p&gt;
+&lt;p&gt;
+	 Fusce tincidunt erat et ligula feugiat pharetra. Donec lacinia dui augue, sit amet lacinia purus mollis at. Pellentesque tristique nisi sed efficitur porta. Integer ac tincidunt neque. Vivamus nec metus vel elit aliquam convallis id sit amet ligula. In porta tincidunt nisl eget ultrices. Vestibulum pretium est a consequat dignissim.
+&lt;/p&gt;
+&lt;p&gt;
+	 Aenean egestas, tortor eget consequat scelerisque, enim est luctus orci, in laoreet lacus lacus vel ligula. Nam nunc nisi, ultricies bibendum sem a, lacinia auctor nunc. Vivamus vehicula quam fermentum tellus varius consequat. In augue metus, faucibus nec tortor id, placerat iaculis augue. Phasellus sagittis sagittis diam, eu fringilla diam feugiat eget. Nunc venenatis commodo tempor. Duis nibh eros, tristique non quam eu, accumsan pellentesque eros.
+&lt;/p&gt;
+ &lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>action_files/iblock/2d1/2d192e04d8a4b213a2cac68ed8c74485.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>3+1</Value>
+						<PropertyValue>
+							<Value>3+1</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>#4ebdb4</Value>
+						<PropertyValue>
+							<Value>#4ebdb4</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>before 10 January 2016</Value>
+						<PropertyValue>
+							<Value>before 10 January 2016</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

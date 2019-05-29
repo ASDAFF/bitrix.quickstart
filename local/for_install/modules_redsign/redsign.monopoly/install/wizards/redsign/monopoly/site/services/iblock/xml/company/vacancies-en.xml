@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:44:57">
+	<Metadata>
+		<Id>vacancies_redsign_monopoly</Id>
+		<Title>Jobs</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>37</Id>
+				<Title>Job Type</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>Sale</Value>
+					<Choice>
+						<Id>vac1</Id>
+						<Value>Sale</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>100</Sort>
+					</Choice>
+					<Value>Heads of departments</Value>
+					<Choice>
+						<Id>vac2</Id>
+						<Value>Heads of departments</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>200</Sort>
+					</Choice>
+					<Value>Specialists</Value>
+					<Choice>
+						<Id>vac3</Id>
+						<Value>Specialists</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>300</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>VACANCY_TYPE</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>38</Id>
+				<Title>Signature</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>200</BitrixSort>
+				<BitrixCode>SIGNATURE</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>37</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+			<Property>
+				<Id>38</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+		</ElementProperties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>vacancies_redsign_monopoly</Id>
+		<MetadataId>vacancies_redsign_monopoly</MetadataId>
+		<Title>Jobs</Title>
+		<BitrixCode>vacancies_redsign_monopoly</BitrixCode>
+		<BitrixSort>1000</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/about/vacancies/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/about/vacancies/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/about/vacancies/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>135</Id>
+				<Title>Stockman</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;
+ &lt;b&gt;Duties.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra. Vivamus sed arcu urna. Integer finibus suscipit eros scelerisque gravida. Donec at vestibulum erat. Morbi eget sodales neque, vel pellentesque risus. Cras in dolor nec velit tristique elementum tempor ut quam. Integer varius sollicitudin sem et pellentesque. Nunc vitae diam ut velit vestibulum pellentesque pharetra quis mi. Integer dignissim, turpis sit amet sollicitudin dignissim, dui elit viverra erat, quis faucibus leo orci id tortor. Pellentesque enim elit, luctus vel massa a, efficitur accumsan urna.
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;b&gt;Demands&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Morbi malesuada fermentum sodales. Mauris vitae venenatis nisi. Vivamus dignissim sollicitudin mauris sed volutpat. Etiam sit amet sodales tortor, at luctus neque. Sed at ante aliquet, euismod orci nec, auctor eros. Nunc vel sollicitudin diam. Fusce urna massa, finibus efficitur posuere at, varius vitae augue. Mauris mollis ipsum quis velit commodo, vitae molestie nulla accumsan. Fusce ac blandit risus. Aliquam sed ligula suscipit, placerat neque non, rutrum purus.
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>37</Id>
+						<Value>vac3</Value>
+						<PropertyValue>
+							<Value>vac3</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>38</Id>
+						<Value>from 25 000 rub.</Value>
+						<PropertyValue>
+							<Value>from 25 000 rub.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>136</Id>
+				<Title>Collector</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>37</Id>
+						<Value>vac3</Value>
+						<PropertyValue>
+							<Value>vac3</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>38</Id>
+						<Value>from 14 000 rub.</Value>
+						<PropertyValue>
+							<Value>from 14 000 rub.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>137</Id>
+				<Title>Master warranty</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis.&amp;nbsp;&lt;b&gt;Cum sociis&lt;/b&gt;&amp;nbsp;natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra. Vivamus sed arcu urna. Integer finibus suscipit eros scelerisque gravida.&amp;nbsp;&lt;b&gt;Donec at vestibulum erat.&lt;/b&gt;&amp;nbsp;Morbi eget sodales neque, vel pellentesque risus. Cras in dolor nec velit tristique elementum tempor ut quam. Integer varius sollicitudin sem et pellentesque.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>37</Id>
+						<Value>vac3</Value>
+						<PropertyValue>
+							<Value>vac3</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>38</Id>
+						<Value>Negotiated individually</Value>
+						<PropertyValue>
+							<Value>Negotiated individually</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>151</Id>
+				<Title>Sales Manager</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>100</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Etiam hendrerit dui at rutrum vehicula. Proin in nisl ut ante pellentesque ornare a ut ex. Pellentesque volutpat orci in dui consequat malesuada.&lt;br&gt;
+&lt;b&gt;&lt;br&gt;
+ &lt;/b&gt;&lt;b&gt;Necessarily&lt;/b&gt;:&lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Maecenas mollis ex non ex aliquet iaculis.&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ &lt;b&gt;Welcomed&lt;/b&gt;:&lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh.&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed. Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at. Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh. In ultricies, purus quis tristique lacinia, libero lacus eleifend nunc, at pharetra sem dui sed dolor.&lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>37</Id>
+						<Value>vac1</Value>
+						<PropertyValue>
+							<Value>vac1</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>38</Id>
+						<Value>from 30 000 rub.</Value>
+						<PropertyValue>
+							<Value>from 30 000 rub.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>152</Id>
+				<Title>The expert in quality</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed. Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at. Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh. In ultricies, purus quis tristique lacinia, libero lacus eleifend nunc, at pharetra sem dui sed dolor.&lt;br&gt;
+ &lt;br&gt;
+ Vivamus laoreet tellus sed vulputate suscipit. Proin in nulla suscipit, sagittis arcu eu, pellentesque enim. Phasellus tristique dui sit amet nulla posuere, sed gravida arcu egestas. Nunc quam turpis, ultricies vitae arcu nec, blandit iaculis felis. Praesent semper nisl congue turpis convallis, sed sollicitudin sem vestibulum. Nulla sit amet est ac arcu congue consectetur. Quisque nec gravida felis. Duis eleifend leo lobortis mauris blandit, a scelerisque ex fringilla. Integer commodo lorem sit amet neque viverra tincidunt.&lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>37</Id>
+						<Value>vac2</Value>
+						<PropertyValue>
+							<Value>vac2</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>38</Id>
+						<Value>80 000 rub.</Value>
+						<PropertyValue>
+							<Value>80 000 rub.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

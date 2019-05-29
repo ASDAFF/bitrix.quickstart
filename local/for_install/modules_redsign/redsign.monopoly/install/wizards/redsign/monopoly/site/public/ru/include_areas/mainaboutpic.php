@@ -1,0 +1,1 @@
+<a href="#"><img src="#SITE_DIR#include_areas/picture.jpg" alt="" title="" style="margin-bottom: 10px;"></a>

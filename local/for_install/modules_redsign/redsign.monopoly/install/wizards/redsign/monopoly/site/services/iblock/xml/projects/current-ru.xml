@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2015-06-02T10:09:37">
+	<Классификатор>
+		<Ид>current_redsign_monopoly</Ид>
+		<Наименование>Текущие</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>44</Ид>
+				<Наименование>Доп. изображения</Наименование>
+				<Множественное>true</Множественное>
+				<БитриксСортировка>100</БитриксСортировка>
+				<БитриксКод>MORE_PHOTO</БитриксКод>
+				<БитриксТипСвойства>F</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>44</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>current_redsign_monopoly</Ид>
+		<ИдКлассификатора>current_redsign_monopoly</ИдКлассификатора>
+		<Наименование>Текущие</Наименование>
+		<БитриксКод>current_redsign_monopoly</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/projects/current/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/projects/current/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/projects/current/</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>110</Ид>
+				<Наименование>Зеленая гостиная</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>current_files/iblock/171/1716af80891f8c51ff5550b9eaa24350.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>zelenaya_gostinnaya</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Nam eget interdum dui. In hac habitasse platea dictumst. Ut tristique erat et purus tempor pellentesque.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, odio sit amet facilisis rutrum, nisl ex porttitor sem, a vestibulum enim eros nec dui. Nullam id eleifend metus. Sed et faucibus mauris, quis efficitur arcu.&amp;nbsp;&lt;b&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti&lt;/b&gt;. Integer pharetra enim sapien, ut posuere mauris dictum at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae tortor eu dui efficitur suscipit sit amet a urna. Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit. Fusce enim libero, fermentum in imperdiet et, fermentum a nisi. Duis ac eros luctus, consequat elit quis, congue elit. Aliquam ut vestibulum erat. Aenean sit amet velit ligula.&lt;br&gt;
+ &lt;br&gt;
+ Integer facilisis cursus nibh, at commodo nibh varius et. Aenean a nunc vitae ante lobortis vulputate. Donec tempor et lacus eget laoreet. In hendrerit at mauris nec venenatis. Quisque vulputate egestas felis, nec tristique neque ultrices quis. Aliquam cursus at odio at mattis. Proin ac tempus sapien. Pellentesque laoreet sollicitudin nisl.&lt;br&gt;
+ &lt;br&gt;
+&lt;ol&gt;
+	&lt;li&gt;Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Proin porta faucibus magna, eu rhoncus est molestie vel&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Suspendisse vitae tellus magna. Maecenas commodo tristique mollis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+ &lt;br&gt;
+ &lt;u&gt;In et efficitur velit. Proin porta faucibus magna, eu rhoncus est molestie vel.&lt;/u&gt;&amp;nbsp;Nulla eu porttitor risus, et aliquet lectus. Nunc felis lacus, cursus vel suscipit at, blandit non leo. Nam semper, nisl ac accumsan aliquam, dolor libero scelerisque tellus, sed condimentum erat ex ut lectus. Suspendisse vitae tellus magna. Maecenas commodo tristique mollis. Pellentesque placerat felis nisi, et tempor ipsum lobortis sed. Etiam id suscipit ex. In suscipit laoreet magna, in dictum augue dapibus eget. Nam quis placerat metus. Cras quam ipsum, scelerisque eget pulvinar vel, eleifend et leo.&lt;br&gt;
+</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>current_files/iblock/243/2438d60b76f3199781f650d082c7f7fd.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>44</Ид>
+						<Значение>current_files/iblock/189/1899d2df436fa2ea2e1e353aaa7d5a14.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/189/1899d2df436fa2ea2e1e353aaa7d5a14.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/1f7/1f72fdc3cca71406f4d25600b46ed99e.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/1f7/1f72fdc3cca71406f4d25600b46ed99e.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/7a2/7a27ca50acefc992853cc49f89848d29.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/7a2/7a27ca50acefc992853cc49f89848d29.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/91a/91a80197cbbfc11a8425d9c8b29413b3.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/91a/91a80197cbbfc11a8425d9c8b29413b3.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/44b/44b08890bb75c00026ceab90f2df0c85.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/44b/44b08890bb75c00026ceab90f2df0c85.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/7d2/7d26dd181d8531f74c18c263a096fab1.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/7d2/7d26dd181d8531f74c18c263a096fab1.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/0c7/0c7909466667322af3ad716c7c7dfc59.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/0c7/0c7909466667322af3ad716c7c7dfc59.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>111</Ид>
+				<Наименование>Кабинет переговоров</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>current_files/iblock/5b7/5b76b7f45aa2125f1395156806e4ac5b.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>kabinet_peregovorov</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>В этом блоке вы можете показать реализованные проекты. Особенно это актуально, если компания занимается проектированием с последующей реализацией, или реализует товары, которые значительно изменяют внешний вид помещения или других объектов.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Integer facilisis cursus nibh, at commodo nibh varius et. Aenean a nunc vitae ante lobortis vulputate. Donec tempor et lacus eget laoreet. In hendrerit at mauris nec venenatis. Quisque vulputate egestas felis, nec tristique neque ultrices quis. Aliquam cursus at odio at mattis. Proin ac tempus sapien. Pellentesque laoreet sollicitudin nisl.&lt;br&gt;
+ &lt;br&gt;
+ Integer ut erat mauris.&amp;nbsp;&lt;b&gt;Fusce et fermentum dui. Nunc eget dui sed neque semper tincidunt et vitae risus. Mauris sed varius elit.&lt;/b&gt;&amp;nbsp;Donec dolor orci, ornare et purus id, tristique placerat urna. Suspendisse mollis elit quis dignissim accumsan. Integer condimentum arcu ut velit sagittis faucibus. Nulla mollis urna ut euismod maximus. Vivamus vitae accumsan est, vitae vehicula neque. Etiam in accumsan dolor. Pellentesque placerat lacus quis justo imperdiet, nec&amp;nbsp;&lt;b&gt;laoreet quam pellentesque.&lt;/b&gt;&amp;nbsp;Maecenas ornare arcu vitae dignissim finibus. Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante.&lt;br&gt;
+ &lt;br&gt;
+&lt;ol&gt;
+	&lt;li&gt;Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Proin porta faucibus magna, eu rhoncus est molestie vel&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Suspendisse vitae tellus magna. Maecenas commodo tristique mollis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, odio sit amet facilisis rutrum, nisl ex porttitor sem, a vestibulum enim eros nec dui. Nullam id eleifend metus. Sed et faucibus mauris, quis efficitur arcu.&amp;nbsp;&lt;b&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti&lt;/b&gt;. Integer pharetra enim sapien, ut posuere mauris dictum at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae tortor eu dui efficitur suscipit sit amet a urna. Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit. Fusce enim libero, fermentum in imperdiet et, fermentum a nisi. Duis ac eros luctus, consequat elit quis, congue elit. Aliquam ut vestibulum erat. Aenean sit amet velit ligula.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Aenean sit amet velit ligula&lt;/li&gt;
+	&lt;li&gt;Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis ac eros luctus, consequat elit quis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>current_files/iblock/6e3/6e392fa81b1a8c4d9a2d85486f30c019.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>44</Ид>
+						<Значение>current_files/iblock/6bd/6bd3d37e48edd4a9dbe463e9f8bf83fd.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/6bd/6bd3d37e48edd4a9dbe463e9f8bf83fd.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/937/937fe3e5e9d902d9c7a90ee5d44c02a7.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/937/937fe3e5e9d902d9c7a90ee5d44c02a7.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/a54/a548683cc90583494140ad7ab0a1967c.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/a54/a548683cc90583494140ad7ab0a1967c.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/904/904b8dfdf8d56fdd25ba95c9f075cf7f.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/904/904b8dfdf8d56fdd25ba95c9f075cf7f.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/e76/e768d6f510a78c53b003276434bd99ee.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/e76/e768d6f510a78c53b003276434bd99ee.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/7bf/7bf5f3250ed2c6892cf1fa266b6262fa.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/7bf/7bf5f3250ed2c6892cf1fa266b6262fa.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/10e/10e8793b7505843d18ac69551e39b18c.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/10e/10e8793b7505843d18ac69551e39b18c.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>112</Ид>
+				<Наименование>Гостиная с зеленым диваном</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>current_files/iblock/cdb/cdbd514a4b7908f9ad8d148e2cde76a7.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>gostinaya_s_zelenym_divanom</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu ante bibendum, tincidunt augue in, pretium ipsum. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, odio sit amet facilisis rutrum, nisl ex porttitor sem, a vestibulum enim eros nec dui. Nullam id eleifend metus. Sed et faucibus mauris, quis efficitur arcu.&amp;nbsp;&lt;b&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti&lt;/b&gt;. Integer pharetra enim sapien, ut posuere mauris dictum at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae tortor eu dui efficitur suscipit sit amet a urna. Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit. Fusce enim libero, fermentum in imperdiet et, fermentum a nisi. Duis ac eros luctus, consequat elit quis, congue elit. Aliquam ut vestibulum erat. Aenean sit amet velit ligula.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Aenean sit amet velit ligula&lt;/li&gt;
+	&lt;li&gt;Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis ac eros luctus, consequat elit quis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ Integer facilisis cursus nibh, at commodo nibh varius et. Aenean a nunc vitae ante lobortis vulputate. Donec tempor et lacus eget laoreet. In hendrerit at mauris nec venenatis. Quisque vulputate egestas felis, nec tristique neque ultrices quis. Aliquam cursus at odio at mattis. Proin ac tempus sapien. Pellentesque laoreet sollicitudin nisl.&lt;br&gt;
+ &lt;br&gt;
+ Integer ut erat mauris.&amp;nbsp;&lt;b&gt;Fusce et fermentum dui. Nunc eget dui sed neque semper tincidunt et vitae risus. Mauris sed varius elit.&lt;/b&gt;&amp;nbsp;Donec dolor orci, ornare et purus id, tristique placerat urna. Suspendisse mollis elit quis dignissim accumsan. Integer condimentum arcu ut velit sagittis faucibus. Nulla mollis urna ut euismod maximus. Vivamus vitae accumsan est, vitae vehicula neque. Etiam in accumsan dolor. Pellentesque placerat lacus quis justo imperdiet, nec&amp;nbsp;&lt;b&gt;laoreet quam pellentesque.&lt;/b&gt;&amp;nbsp;Maecenas ornare arcu vitae dignissim finibus. Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante.&lt;br&gt;
+ &lt;br&gt;
+&lt;ol&gt;
+	&lt;li&gt;Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Proin porta faucibus magna, eu rhoncus est molestie vel&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Suspendisse vitae tellus magna. Maecenas commodo tristique mollis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+ &lt;br&gt;
+ &lt;u&gt;In et efficitur velit. Proin porta faucibus magna, eu rhoncus est molestie vel.&lt;/u&gt;&amp;nbsp;Nulla eu porttitor risus, et aliquet lectus. Nunc felis lacus, cursus vel suscipit at, blandit non leo. Nam semper, nisl ac accumsan aliquam, dolor libero scelerisque tellus, sed condimentum erat ex ut lectus. Suspendisse vitae tellus magna. Maecenas commodo tristique mollis. Pellentesque placerat felis nisi, et tempor ipsum lobortis sed. Etiam id suscipit ex. In suscipit laoreet magna, in dictum augue dapibus eget. Nam quis placerat metus. Cras quam ipsum, scelerisque eget pulvinar vel, eleifend et leo.&lt;br&gt;
+</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>current_files/iblock/811/811ae3901b8a2a99fa52941fabb4f1ba.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>44</Ид>
+						<Значение>current_files/iblock/00d/00d3d6181052d1da542e303f4c01f551.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/00d/00d3d6181052d1da542e303f4c01f551.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/56c/56cf0953d4e020507880a7bd3423d7e9.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/56c/56cf0953d4e020507880a7bd3423d7e9.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/420/420ca1ed99b0194d95c21b6252e1fa72.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/420/420ca1ed99b0194d95c21b6252e1fa72.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/df9/df9b23612d07a43cbeb43f19f3412d5c.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/df9/df9b23612d07a43cbeb43f19f3412d5c.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+						<Значение>current_files/iblock/c2a/c2ab90e167be57d8557ad2f90ec725f1.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>current_files/iblock/c2a/c2ab90e167be57d8557ad2f90ec725f1.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

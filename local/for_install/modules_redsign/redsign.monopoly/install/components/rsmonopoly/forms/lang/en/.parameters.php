@@ -1,0 +1,19 @@
+<?
+$MESS["RS.MONOPOLY.EVENT_TYPE"] = "Mail event ID";
+$MESS["RS.MONOPOLY.FORM_TITLE"] = "Form title";
+$MESS["RS.MONOPOLY.FORM_DESCRIPTION"] = "Form description";
+$MESS["RS.MONOPOLY.EMAIL_TO"] = "E-mail recipient";
+$MESS["RS.MONOPOLY.SHOW_FIELDS"] = "Show fields";
+$MESS["RS.MONOPOLY.REQUIRED_FIELDS"] = "Required fields";
+$MESS["RS.MONOPOLY.USE_CAPTCHA"] = "Use CAPTCH'a";
+$MESS["RS.MONOPOLY.MESSAGE_AGREE"] = "Message sent successfully";
+$MESS["RS.MONOPOLY.MESSAGE_AGREE_DEFAULT"] = "Thank you, your application is accepted!";
+$MESS["RS.MONOPOLY.NONE"] = "Not specified";
+$MESS["RS.MONOPOLY.NAME"] = "Your name";
+$MESS["RS.MONOPOLY.PHONE"] = "Phone";
+$MESS["RS.MONOPOLY.PERSONAL_SITE"] = "Your website";
+$MESS["RS.MONOPOLY.ORGANISATION_NAME"] = "Company name";
+$MESS["RS.MONOPOLY.EMAIL"] = "Your E-mail";
+$MESS["RS.MONOPOLY.TEXTAREA"] = "Comment";
+$MESS["RS.MONOPOLY.EXT_FIELDS_COUNT"] = "Number of additional field";
+$MESS["RS.MONOPOLY.EXT_FIELDS_NAME"] = "Name ext. fields №";

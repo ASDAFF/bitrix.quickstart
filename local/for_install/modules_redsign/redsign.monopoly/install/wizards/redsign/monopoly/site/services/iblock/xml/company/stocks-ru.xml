@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2015-10-29T09:24:34">
+	<Классификатор>
+		<Ид>stocks_redsign_monopoly</Ид>
+		<Наименование>Акции</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>stocks_redsign_monopoly</Ид>
+		<ИдКлассификатора>stocks_redsign_monopoly</ИдКлассификатора>
+		<Наименование>Акции</Наименование>
+		<БитриксКод>stocks_redsign_monopoly</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/stocks/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/stocks/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/stocks/</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>204</Ид>
+				<Наименование>Выиграйте поездку в Италию!</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>stocks_files/iblock/ba4/ba486385735d94d2bdcdce2299163ca5.png</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum-dolor-sit-amet</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2015-10-11 16:25:00</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Sed mattis tortor nulla, in venenatis libero posuere nec. Etiam vitae lobortis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non turpis elit. Praesent et accumsan ipsum. Praesent volutpat neque sit amet dui consectetur, vitae lobortis eros gravida. Fusce nulla risus, posuere vel facilisis non, efficitur non massa. Morbi quam est, hendrerit id pharetra a, gravida at magna. Pellentesque eget nisi ipsum. Etiam non tellus vitae elit porta tempor quis at erat. Aenean ac nisi eget orci consectetur aliquam. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris a ante risus. Duis placerat nulla nec gravida tristique. Mauris ut bibendum tortor. Phasellus mi nunc, sollicitudin nec tortor eu, gravida aliquet libero. Ut nec purus nec tortor dictum imperdiet. Mauris non mattis tortor. Cras eleifend lectus gravida tortor sollicitudin vestibulum. Praesent id tortor id orci interdum tempor. Integer a ullamcorper lacus, et pulvinar felis. Donec a euismod massa, et sagittis ex. Aenean cursus ante a cursus porta. Integer in tincidunt diam. Morbi lobortis sapien sodales nunc sodales, id consequat metus rutrum. Ut id rhoncus purus, in molestie erat. Ut malesuada lacus euismod, porttitor neque vitae, accumsan ex.
+
+Ut sollicitudin varius eros et ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dignissim vestibulum nulla at rutrum. Morbi a metus in quam auctor hendrerit eget ut sapien. Fusce aliquet eget odio ac pretium. In ut augue velit. Fusce ultricies, eros sit amet semper gravida, eros nulla vulputate dolor, quis tincidunt mauris ipsum at libero. Pellentesque dolor libero, cursus vitae tellus eget, ultrices dapibus neque. Nam sem dui, tincidunt eleifend porttitor sit amet, luctus eget nisl. Maecenas accumsan metus dui. Integer rutrum nisl id ipsum feugiat consequat. Fusce consectetur nunc nec porttitor ullamcorper.
+
+Aenean auctor efficitur augue a pharetra. Mauris eleifend, libero nec lobortis maximus, neque lectus ullamcorper lacus, sed varius augue ante ut leo. Ut id est elit. Fusce condimentum non ex ut consectetur. Sed ipsum turpis, placerat nec finibus sed, semper in lacus. Donec metus felis, ultrices ut tempor eget, accumsan vitae magna. Etiam feugiat leo a ante venenatis pulvinar. Vivamus quis tellus cursus, dignissim sapien vitae, pharetra quam. Phasellus eu orci dui. Praesent tincidunt ipsum felis, in luctus mauris consectetur in. Etiam a turpis eget dui finibus auctor. Quisque a bibendum ligula. Sed pretium justo id turpis eleifend posuere. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>stocks_files/iblock/eb9/eb90c0c37a33b7794a15ab6e2ba2c25f.png</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

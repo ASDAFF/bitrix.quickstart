@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:49:45">
+	<Metadata>
+		<Id>articles_redsign_monopoly</Id>
+		<Title>Interesting articles</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+		</Properties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>articles_redsign_monopoly</Id>
+		<MetadataId>articles_redsign_monopoly</MetadataId>
+		<Title>Interesting articles</Title>
+		<BitrixCode>articles_redsign_monopoly</BitrixCode>
+		<BitrixSort>500</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/info/interesnye-stati/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/info/interesnye-stati/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/info/interesnye-stati/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>98</Id>
+				<Title>&quot;Monopoly&quot; company awarded best employees</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/c16/c16cc79a37cb54f5fd80e370b7e8df99.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kompaniya_monopoliya_nagradila_luchshikh_sotrudnikov</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Sed venenatis magna dolor, nec facilisis dui varius id. Nunc pellentesque mi quis neque commodo pretium. Morbi sed semper tellus. Sed efficitur nisi at justo laoreet, quis tincidunt enim vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec luctus dolor in tincidunt eleifend. Nullam sagittis rhoncus erat non gravida. Nullam sed augue neque. Nam fringilla mi vel consequat porta. In vitae urna ac elit accumsan aliquam non quis tortor. Nullam semper tristique odio, non volutpat augue egestas quis. Proin id rhoncus turpis.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Proin id rhoncus turpis&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Nullam sagittis rhoncus erat non gravida&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Sed efficitur nisi at justo laoreet&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Proin ut convallis felis. Quisque eget sagittis felis. Donec mattis sapien eros, in volutpat odio suscipit id. Cras luctus, nunc viverra pulvinar auctor, ex augue tempus mauris, id viverra risus risus at justo. Ut non diam porta, egestas ex consectetur, pharetra lacus. Fusce venenatis non nisl pretium fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum felis diam, eu vulputate massa ornare a. Vestibulum eleifend eget dui id hendrerit. Phasellus ut mi vel ligula porttitor ultricies ut a purus. Nam condimentum congue magna eget commodo.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Quisque eget sagittis felis&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Donec mattis sapien eros&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Fusce venenatis non nisl pretium fermentum&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/0f9/0f904ebcb518202e783915043df65122.png</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>99</Id>
+				<Title>The new office in Prague</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/96e/96e218707ac32c424bde4600445285c0.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>novyy_ofis_v_prage</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat erat, molestie ut nunc eu, hendrerit sagittis dui. Mauris tincidunt magna velit, a faucibus urna egestas eget. Vivamus finibus lacinia orci, nec vehicula ligula egestas convallis. Donec faucibus fringilla libero, at tristique risus mattis a. Etiam ante quam, volutpat vitae est et, bibendum facilisis lorem. &lt;b&gt;Donec ut tristique orci. Aenean eu laoreet orci. Quisque egestas vulputate sollicitudin.&lt;/b&gt; Aenean tempus elit nec augue venenatis, quis tincidunt diam rutrum. Duis congue mauris non elit pretium, vel pellentesque ligula tempor. Maecenas scelerisque pretium dignissim. Sed ultrices sapien sem, at lobortis risus convallis et. In hac habitasse platea dictumst. Aenean dictum lectus augue, vitae cursus purus ornare nec. Sed lorem eros, facilisis et quam id, placerat molestie magna.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Sed venenatis magna dolor, nec facilisis dui&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Nunc pellentesque mi quis neque&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Sed venenatis magna dolor, nec facilisis dui varius id. Nunc pellentesque mi quis neque commodo pretium. Morbi sed semper tellus. Sed efficitur nisi at justo laoreet, quis tincidunt enim vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec luctus dolor in tincidunt eleifend. Nullam sagittis rhoncus erat non gravida. Nullam sed augue neque. Nam fringilla mi vel consequat porta. In vitae urna ac elit accumsan aliquam non quis tortor. Nullam semper tristique odio, non volutpat augue egestas quis. Proin id rhoncus turpis.
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/d99/d9961ce4ddb8df88ac7af689eedee099.png</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>100</Id>
+				<Title>Unbelievable but true!</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/90a/90aeebcd40a2696dabdc4188d8d2e791.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>neveroyatno_no_fakt</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Donec mattis sapien eros&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Praesent interdum felis diam&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Phasellus ut mi vel ligula porttitor&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Proin ut convallis felis. &lt;b&gt;Quisque eget sagittis felis.&lt;/b&gt; Donec mattis sapien eros, in volutpat odio suscipit id. Cras luctus, nunc viverra pulvinar auctor, ex augue tempus mauris, id viverra risus risus at justo. Ut non diam porta, egestas ex consectetur, pharetra lacus. Fusce venenatis non nisl pretium fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum felis diam, eu vulputate massa ornare a. Vestibulum eleifend eget dui id hendrerit. Phasellus ut mi vel ligula porttitor ultricies ut a purus. Nam condimentum congue magna eget commodo.
+&lt;/p&gt;
+&lt;p&gt;
+	 Integer placerat eu velit ut varius. Quisque tristique placerat eros vitae accumsan. Ut vel lacinia ante. Vestibulum ipsum mi, feugiat non felis id, fringilla convallis tellus. Nulla tristique risus ac tellus finibus facilisis sed eu purus. Integer fringilla semper facilisis. Sed quis lacus sed turpis malesuada tempus. Donec pharetra dui ut felis pulvinar, nec dictum elit consequat. &lt;b&gt;Pellentesque molestie tincidunt turpis&lt;/b&gt;, ut ornare felis volutpat vitae. Vivamus odio orci, facilisis a odio vitae, lobortis volutpat nunc. Nam hendrerit risus id elit gravida tristique. Proin eu tortor mauris. Nulla ut posuere felis, at elementum elit. Ut ligula libero, viverra mattis massa ut, cursus efficitur elit. Integer efficitur dolor nec accumsan tempor. Aenean tempus porta consectetur.
+&lt;/p&gt;
+&lt;p&gt;
+	 Phasellus eu mauris elit. Mauris accumsan neque mi, vitae faucibus nulla imperdiet id. Nunc non ligula aliquet est hendrerit faucibus. Nam aliquam accumsan tortor, sed cursus nunc. Phasellus quis convallis dolor. Pellentesque lobortis scelerisque varius. Vestibulum eu risus magna. Morbi enim felis, pretium sed purus mollis, auctor pretium dui. Aliquam aliquet orci augue, eget malesuada libero convallis id. Integer vel pretium dui, id bibendum augue. Morbi finibus ornare lectus, nec tempor purus. Nunc nec malesuada urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque iaculis imperdiet quam finibus vehicula.
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/908/908b778012cb58da63eb0f473f263616.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>101</Id>
+				<Title>Everything is new - well forgotten old</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/eb3/eb3875a88e68e98f780e5cf8ef4d319e.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>vse_novoe_khorosho_zabytoe_staroe</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Sed venenatis magna dolor, nec facilisis dui varius id. Nunc pellentesque mi quis neque commodo pretium. &lt;b&gt;Morbi sed semper tellus.&lt;/b&gt; Sed efficitur nisi at justo laoreet, quis tincidunt enim vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec luctus dolor in tincidunt eleifend. Nullam sagittis rhoncus erat non gravida. Nullam sed augue neque. Nam fringilla mi vel consequat porta. In vitae urna ac elit accumsan aliquam non quis tortor. Nullam semper tristique odio, non volutpat augue egestas quis. Proin id rhoncus turpis.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Sed venenatis magna dolor&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Nunc pellentesque mi quis neque&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Class aptent taciti sociosqu ad litora&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Proin id rhoncus turpis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Proin ut convallis felis. Quisque eget sagittis felis. Donec mattis sapien eros, in volutpat odio suscipit id. Cras luctus, nunc viverra pulvinar auctor, ex augue tempus mauris, id viverra risus risus at justo. Ut non diam porta, egestas ex consectetur, pharetra lacus. &lt;i&gt;Fusce venenatis non nisl pretium fermentum.&lt;/i&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum felis diam, eu vulputate massa ornare a. Vestibulum eleifend eget dui id hendrerit. Phasellus ut mi vel ligula porttitor ultricies ut a purus. Nam condimentum congue magna eget commodo.
+&lt;/p&gt;
+&lt;p&gt;
+	 Integer placerat eu velit ut varius. Quisque tristique placerat eros vitae accumsan. Ut vel lacinia ante. Vestibulum ipsum mi, feugiat non felis id, fringilla convallis tellus. Nulla tristique risus ac tellus finibus facilisis sed eu purus. Integer fringilla semper facilisis. &lt;u&gt;Sed quis lacus sed turpis malesuada tempus.&lt;/u&gt; Donec pharetra dui ut felis pulvinar, nec dictum elit consequat. Pellentesque molestie tincidunt turpis, ut ornare felis volutpat vitae. Vivamus odio orci, facilisis a odio vitae, lobortis volutpat nunc. Nam hendrerit risus id elit gravida tristique. Proin eu tortor mauris. Nulla ut posuere felis, at elementum elit. Ut ligula libero, viverra mattis massa ut, cursus efficitur elit. Integer efficitur dolor nec accumsan tempor. Aenean tempus porta consectetur.
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/076/0760005f65076a6c48329509436a008d.png</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>102</Id>
+				<Title>Market leader</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/3ad/3ad1ef3312f98e5b946a6025b04cb0f6.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>lider_rynka</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Excepteur sint occaecat cupidatat non proident&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis aute irure dolor in reprehenderit in voluptate&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/eac/eac4d95b857f355d531e2490a82fcc0a.png</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>103</Id>
+				<Title>Rating advertising platforms</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>articles_files/iblock/627/627e42688c1ad1c6472181fbcecb8cc4.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>reyting_reklamnykh_ploshchadok</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat erat, molestie ut nunc eu, hendrerit sagittis dui. Mauris tincidunt magna velit, a faucibus urna egestas eget. Vivamus finibus lacinia orci, nec vehicula ligula egestas convallis. Donec faucibus fringilla libero, at tristique risus mattis a. Etiam ante quam, volutpat vitae est et, bibendum facilisis lorem. Donec ut tristique orci. Aenean eu laoreet orci. Quisque egestas vulputate sollicitudin. Aenean tempus elit nec augue venenatis, quis tincidunt diam rutrum. Duis congue mauris non elit pretium, vel pellentesque ligula tempor. Maecenas scelerisque pretium dignissim. Sed ultrices sapien sem, at lobortis risus convallis et. In hac habitasse platea dictumst. Aenean dictum lectus augue, vitae cursus purus ornare nec. Sed lorem eros, facilisis et quam id, placerat molestie magna.
+&lt;/p&gt;
+&lt;p&gt;
+	 Sed venenatis magna dolor, nec facilisis dui varius id. Nunc pellentesque mi quis neque commodo pretium. Morbi sed semper tellus. Sed efficitur nisi at justo laoreet, quis tincidunt enim vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec luctus dolor in tincidunt eleifend. Nullam sagittis rhoncus erat non gravida. Nullam sed augue neque. Nam fringilla mi vel consequat porta. In vitae urna ac elit accumsan aliquam non quis tortor. Nullam semper tristique odio, non volutpat augue egestas quis. Proin id rhoncus turpis.
+&lt;/p&gt;
+&lt;p&gt;
+	 Proin ut convallis felis. Quisque eget sagittis felis. Donec mattis sapien eros, in volutpat odio suscipit id. Cras luctus, nunc viverra pulvinar auctor, ex augue tempus mauris, id viverra risus risus at justo. Ut non diam porta, egestas ex consectetur, pharetra lacus. Fusce venenatis non nisl pretium fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum felis diam, eu vulputate massa ornare a. Vestibulum eleifend eget dui id hendrerit. Phasellus ut mi vel ligula porttitor ultricies ut a purus. Nam condimentum congue magna eget commodo.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Proin ut convallis felis. Quisque eget sagittis felis&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Donec mattis sapien eros, in volutpat odio suscipit id&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Nam condimentum congue magna eget commodo&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/b02/b026b9ecad61552d05bdc962eb4d8c70.png</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

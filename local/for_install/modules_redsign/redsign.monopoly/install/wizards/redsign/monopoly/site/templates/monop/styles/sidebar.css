@@ -1,0 +1,172 @@
+/* line 4, ../sass/sidebar.scss */
+#sidebar {
+  padding-top: 7px;
+}
+
+/* line 8, ../sass/sidebar.scss */
+ul.nav-sidebar {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  counter-reset: list 0;
+  line-height: 1.38462;
+}
+/* line 14, ../sass/sidebar.scss */
+ul.nav-sidebar.nav {
+  border: 1px solid #eee;
+}
+/* line 17, ../sass/sidebar.scss */
+ul.nav-sidebar li {
+  display: block;
+}
+/* line 19, ../sass/sidebar.scss */
+ul.nav-sidebar li:before {
+  position: static;
+  left: 0px;
+  content: '';
+}
+/* line 25, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu i {
+  position: relative;
+  display: block;
+  float: left;
+  width: 0px;
+  height: 15px;
+  font-style: normal;
+}
+/* line 32, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu i:before {
+  position: absolute;
+  top: -2px;
+  left: -22px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #585f69;
+  display: inline-block;
+  font-family: 'FontAwesome';
+}
+/* line 42, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu i:before {
+  content: "\2212";
+}
+/* line 45, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu i.collapsed:before {
+  content: "\2b";
+}
+/* line 50, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu.showed > a {
+  color: #0084c9;
+  background-color: #fff;
+}
+/* line 53, ../sass/sidebar.scss */
+ul.nav-sidebar li.dropdown-submenu.showed > a:hover {
+  background-color: #eee;
+}
+/* line 60, ../sass/sidebar.scss */
+ul.nav-sidebar li.active > a {
+  color: #0084c9;
+}
+/* line 65, ../sass/sidebar.scss */
+ul.nav-sidebar li:last-child a {
+  border-bottom: none;
+}
+/* line 69, ../sass/sidebar.scss */
+ul.nav-sidebar li a {
+  display: block;
+  padding: 7px 25px;
+  color: #585f69;
+  text-decoration: none;
+  margin-top: -1px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+/* line 77, ../sass/sidebar.scss */
+ul.nav-sidebar li a:hover {
+  background-color: #eee;
+}
+/* line 83, ../sass/sidebar.scss */
+ul.nav-sidebar .dropdown-submenu > ul {
+  padding-left: 0px;
+  background-color: #f3f3f3;
+}
+/* line 88, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl2 > li > a {
+  padding-left: 35px;
+}
+/* line 89, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl3 > li > a {
+  padding-left: 45px;
+}
+/* line 90, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl4 > li > a {
+  padding-left: 55px;
+}
+/* line 91, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl5 > li > a {
+  padding-left: 65px;
+}
+/* line 92, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl6 > li > a {
+  padding-left: 75px;
+}
+/* line 93, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl7 > li > a {
+  padding-left: 85px;
+}
+/* line 94, ../sass/sidebar.scss */
+ul.nav-sidebar .lvl8 > li > a {
+  padding-left: 95px;
+}
+
+/* line 98, ../sass/sidebar.scss */
+.widgets a {
+  display: block;
+  margin-bottom: 9px;
+  padding: 18px 0px;
+  text-decoration: none;
+  border: 1px solid #ebebeb;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+/* line 105, ../sass/sidebar.scss */
+.widgets a:hover {
+  border-color: #b8b8b8;
+}
+/* line 108, ../sass/sidebar.scss */
+.widgets a > i {
+  display: block;
+  float: left;
+  width: 95px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+}
+/* line 119, ../sass/sidebar.scss */
+.widgets a > span {
+  display: block;
+  float: left;
+  width: 142px;
+  font-size: 18px;
+}
+/* line 126, ../sass/sidebar.scss */
+.widgets .widget1,
+.widgets .widget3,
+.widgets .widget4 {
+  line-height: 41px;
+}
+
+@media (max-width: 1199px) {
+  /* line 136, ../sass/sidebar.scss */
+  .widgets a > i,
+  .widgets a > span {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

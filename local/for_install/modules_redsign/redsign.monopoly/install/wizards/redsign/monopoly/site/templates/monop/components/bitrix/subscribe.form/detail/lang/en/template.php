@@ -1,0 +1,4 @@
+<?
+$MESS['RS.MONOPOLY.DETAIL_SUBSCRIBE_NOTE_DEFAULT'] = 'Type e-mail and get the latest news';
+$MESS['RS.MONOPOLY.DETAIL_SUBSCRIBE_PLACEHOLDER'] = 'Your email address';
+$MESS['RS.MONOPOLY.SUBSCRIBE_BTN_SEND'] = 'Send';

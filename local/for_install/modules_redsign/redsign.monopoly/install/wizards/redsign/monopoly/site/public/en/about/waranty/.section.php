@@ -1,0 +1,3 @@
+<?
+$sSectionName="Warranty and service";
+?>

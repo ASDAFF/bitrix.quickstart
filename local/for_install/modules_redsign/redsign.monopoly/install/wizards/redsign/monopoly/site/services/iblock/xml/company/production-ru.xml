@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2015-05-19T09:44:06">
+	<Классификатор>
+		<Ид>production_redsign_monopoly</Ид>
+		<Наименование>Производство - страница</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>production_redsign_monopoly</Ид>
+		<ИдКлассификатора>production_redsign_monopoly</ИдКлассификатора>
+		<Наименование>Производство - страница</Наименование>
+		<БитриксКод>production_redsign_monopoly</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/about/proizvodstvo/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/about/proizvodstvo/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/about/proizvodstvo/</БитриксURLРаздел>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>88</Ид>
+				<Наименование>Производство</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>production_files/iblock/e55/e55d84137afa810de46730bb176057bb.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>proizvodstvo</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac justo lorem. Proin tempus maximus nisl eget cursus. Sed pretium viverra arcu, ut gravida neque facilisis non. Etiam maximus dignissim mi pellentesque euismod. Praesent congue diam a felis dapibus, sit amet fringilla arcu cursus. Maecenas vehicula neque lacus, id ornare purus congue sed. Phasellus placerat dui ornare ex ultrices tempus. Donec imperdiet fermentum orci nec condimentum. Etiam at lacus tristique, rutrum nisi ut, malesuada velit. Sed quis ante velit. Praesent sagittis auctor turpis sed tincidunt.
+
+Nullam massa nisi, lacinia in elementum non, pharetra in tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sagittis vehicula enim sed venenatis. Cras quis elit elit. Etiam id felis ut lectus placerat tristique non id ipsum. Quisque vel nibh ut ante ullamcorper convallis vitae ac tortor. Praesent ut tellus non ex sagittis mollis at ac nibh. Etiam quis eros a quam tincidunt vehicula rhoncus non purus.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla rhoncus, est a euismod dictum, lacus velit varius diam, at euismod diam tortor at justo. Sed aliquam sapien nibh, non luctus lorem eleifend ac. Sed eu commodo nisl. Duis at nisl eros. Fusce urna nisl, malesuada at ligula et, fermentum imperdiet felis. Etiam porta mauris tortor, a rhoncus metus tincidunt et. Duis a blandit libero. Phasellus et sodales nisi, a egestas tellus. Nulla consequat felis rhoncus dictum gravida. Nunc euismod egestas varius. Pellentesque tristique eget quam vel faucibus.
+
+Aenean in est ex. Morbi vel tempus lorem, malesuada blandit ligula. Nullam felis nisi, aliquam eu blandit ac, sollicitudin ac nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent egestas viverra efficitur. Mauris sodales ipsum lorem, vitae sodales urna efficitur id. Aenean eget vestibulum lorem.
+
+Nullam ultricies arcu at quam porta, in molestie nisl ullamcorper. In vitae ex purus. Nullam erat tellus, finibus consectetur congue quis, porta placerat purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean dapibus, nunc eu dignissim molestie, mi nulla auctor mauris, et varius tortor lorem nec nunc. Phasellus consequat libero felis, ac sagittis enim porttitor ut. Morbi ullamcorper auctor erat eget molestie.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

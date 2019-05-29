@@ -1,0 +1,6 @@
+<?
+$sSectionName = "About";
+$arDirProperties = Array(
+
+);
+?>

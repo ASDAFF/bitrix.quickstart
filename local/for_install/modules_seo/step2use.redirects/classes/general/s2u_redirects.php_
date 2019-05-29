@@ -1,0 +1,736 @@
+<?php
+ 
+class S2uRedirects { 
+    const MODULE_ID = 'step2use.redirects';
+	
+	static public function addSlash ($url){
+		$arrUrl = array();
+		$arrUrl = parse_url($url);
+		if(substr($arrUrl["path"], -4) != ".php" && 
+			substr($arrUrl["path"], -5) != ".html" && 
+				substr($arrUrl["path"], -1) != "/")
+		$arrUrl["path"] .= "/";			
+		if(array_key_exists ( "scheme" , $arrUrl )) $newUrl .= $arrUrl["scheme"]."://";
+		if(array_key_exists ( "host" , $arrUrl )) $newUrl .= $arrUrl["host"];
+		if(array_key_exists ( "path" , $arrUrl )) $newUrl .= $arrUrl["path"];
+		if(array_key_exists ( "query" , $arrUrl )) $newUrl .="?".$arrUrl["query"];
+		return $newUrl;		
+	}
+	
+	static public function mainMirror ($url, $main_mirror){
+		$arrUrl = array();
+		$arrUrl = parse_url($url);
+		$arrNewUrl = parse_url($main_mirror);
+		if($arrNewUrl["scheme"] != $arrUrl["scheme"] || $arrNewUrl["host"] != $arrUrl["host"]){
+			$url = $arrNewUrl["scheme"]."://".$arrNewUrl["host"].$arrUrl["path"];
+			if(array_key_exists ( "query" , $arrUrl )) $url .="?".$arrUrl["query"];
+		}
+		return $url;		
+	}
+	
+	static public function curPageURL() {  
+		global $APPLICATION;
+		$CURRENT_PAGE = (CMain::IsHTTPS()) ? "https://" : "http://";
+		$CURRENT_PAGE .= $_SERVER["SERVER_NAME"];
+		$CURRENT_PAGE .= $APPLICATION->GetCurUri();
+		return $CURRENT_PAGE;
+	}
+
+    static public function handlerOnBeforeProlog() {
+		if(!defined('ADMIN_SECTION') && PHP_SAPI!="cli" && PHP_SAPI!="cli-server" && CModule::IncludeModuleEx(self::MODULE_ID)!=MODULE_DEMO_EXPIRED) { 
+			global $APPLICATION;		
+			$redirectIsActive = COption::GetOptionString(self::MODULE_ID, 'REDIRECTS_IS_ACTIVE', 'Y');
+			
+			//var_dump($APPLICATION->GetCurUri("", false));exit;
+			
+			if($redirectIsActive=='Y') 
+				$redirect = S2uRedirectsRulesDB::FindRedirect($APPLICATION->GetCurUri("", false), SITE_ID);
+			$_404IsActive = COption::GetOptionString(self::MODULE_ID, '404_IS_ACTIVE', 'Y');
+			
+			$main_mirror = COption::GetOptionString(self::MODULE_ID, 'main_mirror_' . SITE_ID);
+			$slash_redirect = COption::GetOptionString(self::MODULE_ID, 'slash_add_' . SITE_ID);
+			
+			if($redirect) {
+				if($redirect['STATUS'] == "410"){
+					header("HTTP/1.0 410 Gone");
+				}else{					
+					$newUrl = $redirect['NEW_LINK'];
+					$oldUrl = $redirect['OLD_LINK'];
+					if($main_mirror != ""){
+						$newUrl = self::mainMirror($newUrl, $main_mirror);	
+					}
+					if($slash_redirect == "Y"){
+						$newUrl = self::addSlash($newUrl);
+					}
+					if($oldUrl != $newUrl ){
+						LocalRedirect($newUrl, false, $redirect['STATUS']); 
+					}									
+				}
+				return true;
+			} else {
+				$url = $oldUrl = self::curPageURL();
+				$arrUrl = array();
+				$arrUrl = parse_url($url);
+				if(substr($arrUrl["path"], 0, 8) != "/bitrix/"){						
+					if($main_mirror != ""){
+						$url = self::mainMirror($url, $main_mirror);					
+					}
+					if($slash_redirect == "Y"){
+						$url = self::addSlash($url);
+					}
+					if($url != $oldUrl){
+						LocalRedirect($url, false, "301 Moved permanently");
+					}	
+				}
+			}			
+		}
+	}
+
+	static public function handlerOnEpilog(){
+		global $APPLICATION;
+
+		$_404IsActive = COption::GetOptionString(self::MODULE_ID, '404_IS_ACTIVE', 'Y');
+		$repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+
+		// 404 Not Found
+		if($_404IsActive=='Y') {
+			// remember if current url not in ignore list
+			$isIgnore = S2uRedirects404IgnoreDB::GetList(array(
+				'SITE_ID' => SITE_ID,
+				'ACTIVE' => 'Y',
+				'OLD_LINK' => $APPLICATION->GetCurUri("", false)
+			));
+
+
+			$isIgnore = (bool) count($isIgnore);
+			if((defined('ERROR_404') && ERROR_404=='Y') && !defined('ADMIN_SECTION') && !$isIgnore) {
+				// try to get guest from statistic module
+				$guestID = 0;
+				if(CModule::IncludeModule('statistic')) {
+					$guestID = $_SESSION["SESS_GUEST_ID"];
+				}
+				
+				if(function_exists('http_response_code')) {
+				    $httpCode = http_response_code();
+				}
+				else {
+                    $headers = get_headers($_SERVER["SCRIPT_URI"]."?".$_SERVER["QUERY_STRING"]);
+                    $httpCode = substr($headers[0], 9, 3);
+                }
+				
+				$arrDbFields = array(
+					'URL' => $APPLICATION->GetCurUri("", false),
+					'REFERER_URL' => $_SERVER['HTTP_REFERER'],
+					'REDIRECT_STATUS' => $httpCode,
+					'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+					'SITE_ID' => SITE_ID,
+					'GUEST_ID' => $guestID,
+				);
+				
+				/*if ($repair_conflicts) {
+					S2uRedirectsRulesDB::RepairConflicts($arrDbFields);
+				} else {
+					S2uRedirects404DB::Add($arrDbFields);
+				}*/
+				S2uRedirects404DB::Add($arrDbFields);
+
+				$rowsLimit = COption::GetOptionInt(self::MODULE_ID, '404_LIMIT', 0);
+				if($rowsLimit) {
+					$rowsCnt = S2uRedirects404DB::GetCount();
+					if($rowsCnt>$rowsLimit) S2uRedirects404DB::DeleteOldest();
+				}
+			}
+		}
+	} 
+	
+	static public function ____handlerOnBeforeIBlockSectionUpdate($arFields){		
+		global $DB;
+		$repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+		$arIblock = CIBlock::GetArrayByID($arFields["IBLOCK_ID"]);		
+		$rsSites = CIBlock::GetSite($arFields["IBLOCK_ID"]);
+		while($arSite = $rsSites->Fetch()){			
+			if(COption::GetOptionString("step2use.redirects", 'remember_changing_code_'.$arSite["LID"])=="Y"){
+				$arSites[] = $arSite["LID"];				
+			}			
+		}
+		if(count($arSites)){
+			$rsSections = CIBlockSection::GetList(array(), array("ID" => $arFields["ID"]), false, array("SECTION_PAGE_URL"));
+			$rsSections->SetUrlTemplates($arIblock["SECTION_PAGE_URL"]);
+			if($arSection = $rsSections->GetNext()){
+				if(isset($arFields["CODE"]) && $arFields["CODE"] != $arSection["CODE"]){
+					$pos = strrpos($arSection["SECTION_PAGE_URL"], $arSection["CODE"]);
+					if($pos !== false)    {
+						$NEW_LINK = substr_replace($arSection["SECTION_PAGE_URL"], $arFields["CODE"], $pos, strlen($arSection["CODE"]));
+					}
+					$COMMENT = GetMessage("S2U_MAIN_AUTO_SECTION", Array ("#ID#" => $arFields["ID"], "#IBLOCK_ID#"=>$arFields["IBLOCK_ID"]));
+					
+					foreach ($arSites as $site){
+						$arrDbFields = array(
+							'OLD_LINK' => '^'.$arSection["SECTION_PAGE_URL"],
+							'NEW_LINK' => trim($NEW_LINK),
+							'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+							'STATUS' => "301",
+							'ACTIVE' => "Y",
+							'COMMENT' => $COMMENT,
+							'SITE_ID' => $site,
+							'WITH_INCLUDES' => "N",
+							'USE_REGEXP' => "Y",
+						);
+						if($repair_conflicts){
+							$Res__ = S2uRedirectsRulesDB::RepairConflicts($arrDbFields);
+						} else {
+							$Res__ = S2uRedirectsRulesDB::Add($arrDbFields);
+						}						
+					}				
+				}
+			}
+		}
+	}
+
+    /**
+     *
+     * Событие изменения раздела ИБ
+     * Служит для создания авторедиректов
+     *
+     */
+    static public function handlerOnBeforeIBlockSectionUpdate($arFields){		
+		global $DB;
+		
+		// список ID инфоблоков, для которых включено создание автоматических редиректов
+        $iblocksAutoredirect = explode(",", COption::GetOptionString(self::MODULE_ID, "autoredirects_iblocks", ""));
+        
+    	if(in_array($arFields["IBLOCK_ID"], $iblocksAutoredirect) && COption::GetOptionString("step2use.redirects", 'autoredirects_change_section_url')=="Y") {
+		
+		    $repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+    		$arIblock = CIBlock::GetArrayByID($arFields["IBLOCK_ID"]);		
+    		$rsSites = CIBlock::GetSite($arFields["IBLOCK_ID"]);
+    		while($arSite = $rsSites->Fetch()) {			
+    		
+				$siteID = $arSite["LID"];	
+				
+				$rsSections = CIBlockSection::GetList(array(), array("ID" => $arFields["ID"]), false, array("SECTION_PAGE_URL"));
+    			$rsSections->SetUrlTemplates($arIblock["SECTION_PAGE_URL"]);
+    			$arSection = $rsSections->GetNext();
+				
+				if($arSection && isset($arFields["CODE"]) && isset($arSection["CODE"]) && $arFields["CODE"] != $arSection["CODE"]) {
+				
+				    // Генерируем старый URL раздела
+				    $arFieldsForUrlOld = $arFields;
+	        	    $arFieldsForUrlOld["LID"] = $siteID;				
+				    $urlOld = CIBlock::ReplaceSectionUrl($arIblock["SECTION_PAGE_URL"], $arFieldsForUrlOld, $_SERVER["SERVER_NAME"], "S");
+				
+				    $pos = strrpos($urlOld, $arSection["CODE"]);
+					if($pos !== false)    {
+					    // Подключаем языковой файл для генерации Комментария к авторедиректу
+                        IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/'.self::MODULE_ID.'/classes/general/s2u_redirects.php');
+                        
+                        // Куда редирект (новый url)
+						$NEW_LINK = substr_replace($urlOld, $arFields["CODE"], $pos, strlen($arSection["CODE"]));
+						
+						// Откуда редирект
+						$OLD_LINK = '^'.$urlOld;
+						$COMMENT = GetMessage("S2U_MAIN_AUTO_SECTION", Array ("#ID#" => $arFields["ID"], "#IBLOCK_ID#"=>$arFields["IBLOCK_ID"]));
+						
+						$arrDbFields = array(
+							'OLD_LINK' => '^'.$urlOld,
+							'NEW_LINK' => trim($NEW_LINK),
+							'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+							'STATUS' => "301",
+							'ACTIVE' => "Y",
+							'COMMENT' => $COMMENT,
+							'SITE_ID' => $siteID,
+							'WITH_INCLUDES' => "N",
+							'USE_REGEXP' => "Y",
+						);
+						if($repair_conflicts){
+							$Res__ = S2uRedirectsRulesDB::RepairConflicts($arrDbFields);
+						} else {
+							$Res__ = S2uRedirectsRulesDB::Add($arrDbFields);
+						}	
+					}
+					
+				}
+					
+		    }
+		}
+		
+	}
+
+// нужно в updater добавить удаление старого события и добавление нового
+//    static public function handlerOnBeforeIBlockElementUpdate(&$arFields) {
+//    static public function handlerOnIBlockElementUpdate($arFieldsNew, $arFieldsOld) {
+    static public function handlerOnBeforeIBlockElementUpdate($arFieldsNew) {
+        global $DB;
+        global $module_id;
+        
+        $res = CIBlockElement::GetByID($arFieldsNew["ID"]);
+        $arFieldsOld = $res->GetNext();
+        
+        // список ID инфоблоков, для которых включено создание автоматических редиректов
+        $iblocksAutoredirect = explode(",", COption::GetOptionString(self::MODULE_ID, "autoredirects_iblocks", ""));
+        
+        // проверяем, нужно ли создавать авторедиректы для текущего инфоблока
+        // а также то, активирована ли опция генерации авторедиректов (при изменении url элемента, или деактивации элемента)
+        if(in_array($arFieldsNew["IBLOCK_ID"], $iblocksAutoredirect) && (COption::GetOptionString(self::MODULE_ID, "autoredirects_change_detail_url", "N")=="Y" || COption::GetOptionString(self::MODULE_ID, "autoredirects_element_deactivate", "N")=="Y")) {
+        
+            // Подключаем языковой файл для генерации Комментария к авторедиректу
+            IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/'.self::MODULE_ID.'/classes/general/s2u_redirects.php');
+            
+            $arIblock = CIBlock::GetArrayByID($arFieldsNew["IBLOCK_ID"]);
+            
+            // Получаем массив сайтов, которые привязаны к инфоблоку
+            $arIblockSites = array();
+            $rsSites = CIBlock::GetSite($arFieldsNew["IBLOCK_ID"]);
+            while($arSite = $rsSites->Fetch()) {
+                $arIblockSites[] = $arSite["SITE_ID"];
+            }
+            
+            // Проходимся по каждому сайту, привязанному к инфоблоку, и для каждого сайта проверяем и генерируем авторедиректы
+            foreach($arIblockSites as $siteID) {
+                
+                // Получаем данные для формирования старого URL элемента
+                $arFieldsForUrlOld = $arFieldsOld;
+                $arFieldsForUrlOld["LID"] = $siteID;
+				$arFieldsForUrlOld["EXTERNAL_ID"] = $arFieldsForUrlOld["XML_ID"];
+                
+                // Формируем список разделов, привязанных к старому элементу. Почему-то в текущем массиве arFields не фигурируют все разделы, а только первый
+                $arFieldsForUrlOld["IBLOCK_SECTION"] = array();
+                $db_old_groups = CIBlockElement::GetElementGroups($arFieldsForUrlOld["ID"], true);
+                while($ar_group = $db_old_groups->Fetch()) {
+                    $arFieldsForUrlOld["IBLOCK_SECTION"][] = $ar_group["ID"];
+                }
+                               
+                // Получаем новый URL элемента
+                $arFieldsForUrlNew = $arFieldsNew;
+				$arFieldsForUrlNew["LID"] = $siteID;
+				$arFieldsForUrlNew["EXTERNAL_ID"] = $arFieldsForUrlNew["XML_ID"];
+				
+				// Если манипулируем элементом из списка элементов ИБ, то IBLOCK_SECTION не задан - берем его из БД
+				if(!isset($arFieldsForUrlNew["IBLOCK_SECTION"]) && !isset($arFieldsForUrlNew["IBLOCK_SECTION_ID"])) {
+				    $arFieldsForUrlNew["IBLOCK_SECTION"] = $arFieldsForUrlOld["IBLOCK_SECTION"];
+				}
+				// Если манипулируем элементом из списка элементов ИБ, то CODE не задан - берем его из БД
+				if(!isset($arFieldsForUrlNew["CODE"])) {
+				    $arFieldsForUrlNew["CODE"] = $arFieldsForUrlOld["CODE"];
+				}
+                
+                // Обходим все разделы товара, т.к. для каждого раздела может быть уникальная ссылка на элемент
+                foreach($arFieldsForUrlNew["IBLOCK_SECTION"] as $sectionID) {
+                    // смотрим только набор разделов у новой версии элемента
+                    if(in_array($sectionID, $arFieldsForUrlOld["IBLOCK_SECTION"])) {
+                        $arFieldsForUrlNew["IBLOCK_SECTION_ID"] = $sectionID;
+                        $urlNew = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrlNew, $_SERVER["SERVER_NAME"], "E");
+                        
+                        $arFieldsForUrlOld["IBLOCK_SECTION_ID"] = $sectionID;
+                        $urlOld = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrlOld, $_SERVER["SERVER_NAME"], "E");
+                        
+                        // Если URL поменялся, то создаем редирект
+                        if($urlNew && $urlOld && $urlNew!=$urlOld && COption::GetOptionString(self::MODULE_ID, "autoredirects_change_detail_url", "N")=="Y") {
+                        
+                            // Установлена ли настройка исправления конфликтов редиректов
+                            $repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+                        
+                            // Комментарий авторедиректа
+                            $COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT", Array ("#ID#" => $arFieldsForUrlNew["ID"], "#IBLOCK_ID#"=>$arFieldsNew["IBLOCK_ID"]));
+                            
+                            // Вот такой редирект будет создан
+                            $arrRedirectDbFields = array(
+	    						'OLD_LINK' => $urlOld,
+	    						'NEW_LINK' => $urlNew,
+	    						'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+	    						'STATUS' => "301",
+	    						'ACTIVE' => "Y",
+	    						'COMMENT' => $COMMENT,
+	    						'SITE_ID' => $siteID,
+	    						'WITH_INCLUDES' => "N",
+	    						'USE_REGEXP' => "N",
+	    					);	
+                            
+                            if($repair_conflicts){
+	    						$Res__ = S2uRedirectsRulesDB::RepairConflicts($arrRedirectDbFields);
+	    					} else {
+	    						$Res__ = S2uRedirectsRulesDB::Add($arrRedirectDbFields);
+	    					}
+						
+                        }
+                        
+                        //Если элемент деактивировали, то создаем редирект на раздел
+                        if($arFieldsNew["ACTIVE"]=="N" && $arFieldsOld["ACTIVE"]=="Y" && COption::GetOptionString(self::MODULE_ID, "autoredirects_element_deactivate", "N")=="Y") {
+                        
+                            $res = CIBlockSection::GetByID($sectionID);
+							$res->SetUrlTemplates($arIblock["SECTION_PAGE_URL"]);
+							if($arSectionFields = $res->GetNext()) {
+							
+							    // Это URL раздела
+								//$urlSection = $arSectionFields["SECTION_PAGE_URL"];
+								
+								//$arFieldsForUrlNew["IBLOCK_SECTION_ID"] = $sectionID;
+								$arSectionFields["LID"] = $siteID;
+								
+								$urlSection = CIBlock::ReplaceDetailUrl($arIblock["SECTION_PAGE_URL"],  $arSectionFields, $_SERVER["SERVER_NAME"], "S");
+								
+								// Комментарий авторедиректа
+								$COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT_DEACTIVATE", Array ("#ID#" => $arFieldsForUrlNew["ID"], "#IBLOCK_ID#"=>$arFieldsForUrlNew["IBLOCK_ID"]));			
+								
+								// Вот такой редирект будет создан
+                                $arrRedirectDbFields = array(
+	    						    'OLD_LINK' => $urlNew,
+    	    						'NEW_LINK' => $urlSection,
+    	    						'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+    	    						'STATUS' => "301",
+    	    						'ACTIVE' => "Y",
+    	    						'COMMENT' => $COMMENT,
+    	    						'SITE_ID' => $siteID,
+    	    						'WITH_INCLUDES' => "N",
+    	    						'USE_REGEXP' => "N",
+    	    					);	
+								
+								if($repair_conflicts){
+	    						    $Res__ = S2uRedirectsRulesDB::RepairConflicts($arrRedirectDbFields);
+	    					    } else {
+	    						    $Res__ = S2uRedirectsRulesDB::Add($arrRedirectDbFields);
+	    					    }
+							}	
+                        
+                        }
+                        
+                        //Если элемент снова активируется, то надо убрать все авторедиректы типа "редирект при деактивации элемента"
+                        if($arFieldsNew["ACTIVE"]=="Y" && $arFieldsOld["ACTIVE"]=="N" && COption::GetOptionString(self::MODULE_ID, "autoredirects_element_deactivate", "N")=="Y") {
+                            // Комментарий авторедиректа, который записывался ранее при генерации редиректа
+							$COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT_DEACTIVATE", Array ("#ID#" => $arFieldsForUrlNew["ID"], "#IBLOCK_ID#"=>$arFieldsForUrlNew["IBLOCK_ID"]));			
+							
+							// Ищем в БД все редиректы, созданные при прошлой деактивации элемента
+                            $redirects = S2uRedirectsRulesDB::GetList(array(
+                                "ACTIVE" => "Y",
+                                'SITE_ID' => $siteID,
+                                "COMMENT" => $COMMENT
+                            ));
+                            
+                            // Обходим все такие редиректы и деактивируем их
+                            foreach($redirects as $redirect) {
+                                $redirect["ACTIVE"] = "N";
+                                S2uRedirectsRulesDB::Update($redirect["ID"], $redirect);
+                            }
+                        }
+                        
+                        /*
+                        var_dump($arFieldsForUrlOld);
+                        var_dump($arFieldsForUrlNew);
+                        var_dump($urlOld);
+                        var_dump($urlNew);
+                        var_dump("----------");
+                        exit;
+                        */
+                    }
+                    // Обрабатываем ситуацию, когда новый раздел всего 1
+                    // Тогда со всех старых разделов делаем редирект на новый
+                    elseif(count($arFieldsForUrlNew["IBLOCK_SECTION"])==1) {
+                        foreach($arFieldsForUrlOld["IBLOCK_SECTION"] as $oldSectionID) {
+                            if($oldSectionID!=$arFieldsForUrlNew["IBLOCK_SECTION"][0]) {
+                                // новый URL - относится к единственному разделу
+                                $arFieldsForUrlNew["IBLOCK_SECTION_ID"] = $arFieldsForUrlNew["IBLOCK_SECTION"][0];
+                                $urlNew = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrlNew, $_SERVER["SERVER_NAME"], "E");
+                                
+                                $arFieldsForUrlOld["IBLOCK_SECTION_ID"] = $oldSectionID;
+                                $urlOld = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrlOld, $_SERVER["SERVER_NAME"], "E");
+                                
+                                // Если URL поменялся, то создаем редирект
+                                if($urlNew && $urlOld && $urlNew!=$urlOld && COption::GetOptionString(self::MODULE_ID, "autoredirects_change_detail_url", "N")=="Y") {
+                        
+                                    // Установлена ли настройка исправления конфликтов редиректов
+                                    $repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+                        
+                                    // Комментарий авторедиректа
+                                    $COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT", Array ("#ID#" => $arFieldsForUrlNew["ID"], "#IBLOCK_ID#"=>$arFieldsNew["IBLOCK_ID"]));
+                                
+                                    // Вот такой редирект будет создан
+                                    $arrRedirectDbFields = array(
+    	        						'OLD_LINK' => $urlOld,
+    	        						'NEW_LINK' => $urlNew,
+	            						'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+    	        						'STATUS' => "301",
+    	        						'ACTIVE' => "Y",
+	        						    'COMMENT' => $COMMENT,
+    	        						'SITE_ID' => $siteID,
+    	        						'WITH_INCLUDES' => "N",
+	            						'USE_REGEXP' => "N",
+    	        					);	
+                            
+                                    if($repair_conflicts){
+	        						    $Res__ = S2uRedirectsRulesDB::RepairConflicts($arrRedirectDbFields);
+    	        					} else {
+	            						$Res__ = S2uRedirectsRulesDB::Add($arrRedirectDbFields);
+	            					}
+	    					
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+
+        }
+    }
+
+	/**
+	 * @param $arFields
+     */
+	static public function ___handlerOnBeforeIBlockElementUpdate(&$arFields){
+
+		global $DB; 
+		$arrMethod = array();
+		$repair_conflicts = COption::GetOptionString(self::MODULE_ID, 'REPAIR_CONFLICTS', 'N');
+		$arIblock = CIBlock::GetArrayByID($arFields["IBLOCK_ID"]);
+		$rsSites = CIBlock::GetSite($arFields["IBLOCK_ID"]);
+		while($arSite = $rsSites->Fetch()){	
+			if(COption::GetOptionString("step2use.redirects", 'remember_changing_code_'.$arSite["LID"])=="Y"){
+				$arrMethod[$arSite["LID"]][] = ('changing_code');
+			}
+			if(COption::GetOptionString("step2use.redirects", 'remember_changing_section_'.$arSite["LID"])=="Y"){
+				$arrMethod[$arSite["LID"]][] = ('changing_section');
+			}
+			if(COption::GetOptionString("step2use.redirects", 'deactivation_'.$arSite["LID"])=="Y"){
+				$arrMethod[$arSite["LID"]][] = ('deactivation');				
+			}
+		}	
+
+		if(count($arrMethod)){
+			$rsElements = CIBlockElement::GetList(array(), array("ID" => $arFields["ID"]), false, false, array("DETAIL_PAGE_URL", "ACTIVE"));
+			$rsElements->SetUrlTemplates($arIblock["DETAIL_PAGE_URL"]);
+			$OLD_LINK = array();
+			$COMMENT = "";
+			$NEW_LINK = "";
+			foreach ($arrMethod as $site => $method){
+				// if(in_array("changing_code", $method) && !in_array("deactivation", $method)){
+				if(in_array("changing_code", $method)){
+					$rsElements = CIBlockElement::GetList(array(), array("ID" => $arFields["ID"]), false, false, array("DETAIL_PAGE_URL", "ACTIVE"));
+					$rsElements->SetUrlTemplates($arIblock["DETAIL_PAGE_URL"]);
+					if($arElement = $rsElements->GetNext()){
+
+                        // Если не задан $arFields["CODE"] - берем его из БД
+						// Такая ситуация возможна, если товар переносится в новый раздел из списка элементов ИБ
+						if(!isset($arFields["CODE"])) {
+							$arFields["CODE"] = $arElement["CODE"];
+						}
+
+						if(isset($arFields["CODE"]) && $arFields["CODE"] != $arElement["CODE"]){
+							//$pos = strrpos($arElement["DETAIL_PAGE_URL"], $arElement["CODE"]);
+							//if($pos !== false){
+							//	$NEW_LINK = substr_replace($arElement["DETAIL_PAGE_URL"], $arFields["CODE"], $pos, strlen($arElement["CODE"]));
+							
+							// Определили URL для нового элемента
+							$arFieldsForUrl = $arFields;
+							$arFieldsForUrl["IBLOCK_SECTION_ID"] = $arFieldsForUrl["IBLOCK_SECTION"][0];
+							$arFieldsForUrl["LID"] = $site;
+							$NEW_LINK = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrl, $_SERVER["SERVER_NAME"], "E");
+							$COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT", Array ("#ID#" => $arFields["ID"], "#IBLOCK_ID#"=>$arFields["IBLOCK_ID"]));
+							//}
+						}
+					}
+				} 
+				if(in_array("changing_section", $method)){
+					$rsElements = CIBlockElement::GetList(array(), array("ID" => $arFields["ID"]), false, false, array("DETAIL_PAGE_URL", "ACTIVE"));
+					$rsElements->SetUrlTemplates($arIblock["DETAIL_PAGE_URL"]); 
+					$pos = strpos ($arIblock["DETAIL_PAGE_URL"], "SECTION_CODE");
+					if($pos !== false){
+						$rsElements->SetUrlTemplates($arIblock["DETAIL_PAGE_URL"]);
+						if($arElement = $rsElements->GetNext()){
+						
+							// Если не задан $arFields["CODE"] - берем его из БД
+							// Такая ситуация возможна, если товар переносится в новый раздел из списка элементов ИБ
+							if(!isset($arFields["CODE"])) {
+								$arFields["CODE"] = $arElement["CODE"];
+							}						
+						
+							$db_old_groups = CIBlockElement::GetElementGroups($arElement["ID"], true);
+							while($ar_group = $db_old_groups->Fetch()){
+								$ar_old_groups[] = $ar_group["ID"];
+							}
+							$delete_sections = array_diff($ar_old_groups, $arFields["IBLOCK_SECTION"]);
+							if(count($delete_sections)){
+								foreach($delete_sections as $key => $section){
+									$res = CIBlockSection::GetByID($section);
+									if($ar_res = $res->GetNext()){
+										$old_section_code = $ar_res['CODE'];
+									}
+									$res = CIBlockSection::GetByID($arFields["IBLOCK_SECTION"]["0"]);
+									if($ar_res = $res->GetNext()){
+										$new_section_code = $ar_res['CODE'];
+									}
+									
+									if($old_section_code && $new_section_code){
+										$ArrLink = explode("/", $arElement["DETAIL_PAGE_URL"]);
+										$ArrLink[2] = $old_section_code;
+										
+										//$OLD_LINK[] = implode("/", $ArrLink);
+										
+										// Получаем старый урл универсальным способом
+										$arElementForOldLink = $arElement;
+										$arElementForOldLink["IBLOCK_SECTION_ID"] = $section;
+										$arElementForOldLink["LID"] = $site;
+										$OLD_LINK[] = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arElement, $_SERVER["SERVER_NAME"], "E");
+									}
+									
+								}
+								
+								if(count($OLD_LINK)){
+								    // Определили новый URL универсальным способом
+									$arFieldsForUrl = $arFields;
+									$arFieldsForUrl["IBLOCK_SECTION_ID"] = $arFieldsForUrl["IBLOCK_SECTION"][0];
+									$arFieldsForUrl["LID"] = $site;
+									$NEW_LINK = CIBlock::ReplaceDetailUrl($arIblock["DETAIL_PAGE_URL"], $arFieldsForUrl, $_SERVER["SERVER_NAME"], "E");
+									/*if(!$NEW_LINK){
+										$ArrLink_ = explode("/", $arElement["DETAIL_PAGE_URL"]);
+										$ArrLink_[2] = $new_section_code;
+										$NEW_LINK = implode("/", $ArrLink_);;
+									} else {
+										$ArrLink_ = explode("/", $NEW_LINK);
+										$ArrLink_[2] = $new_section_code;
+										$NEW_LINK = implode("/", $ArrLink_);
+									}*/
+
+									$COMMENT = GetMessage("S2U_MAIN_AUTO_SECTIONS_CNANGE", Array ("#ID#" => $arFields["ID"], "#IBLOCK_ID#"=>$arFields["IBLOCK_ID"]));			
+								}								
+							}
+						}		
+					}		
+				}
+				
+				if(in_array("deactivation", $method)){
+					$rsElements = CIBlockElement::GetList(array(), array("ID" => $arFields["ID"]), false, false, array("DETAIL_PAGE_URL", "ACTIVE"));
+					$rsElements->SetUrlTemplates($arIblock["DETAIL_PAGE_URL"]);
+					if($arElement = $rsElements->GetNext()){
+					
+						// Если не задан $arFields["CODE"] - берем его из БД
+						// Такая ситуация возможна, если товар переносится в новый раздел из списка элементов ИБ
+						if(!isset($arFields["CODE"])) {
+							$arFields["CODE"] = $arElement["CODE"];
+						}
+					
+						if(!$NEW_LINK){
+							if($arElement["ACTIVE"] == "Y" && $arFields["ACTIVE"] == "N"){
+								if(!$arFields["IBLOCK_SECTION"]["0"]){
+									$res = CIBlockElement::GetByID($arFields["ID"]);
+									if($ar_res = $res->GetNext()){
+										$arFields["IBLOCK_SECTION"]["0"] = $ar_res["IBLOCK_SECTION_ID"];
+									}
+								}									
+								$res = CIBlockSection::GetByID($arFields["IBLOCK_SECTION"]["0"]);
+								$res->SetUrlTemplates($arIblock["SECTION_PAGE_URL"]);
+								if($ar_res = $res->GetNext()){
+									$NEW_LINK = $ar_res["SECTION_PAGE_URL"];
+									$COMMENT = GetMessage("S2U_MAIN_AUTO_ELEMENT_DEACTIVATE", Array ("#ID#" => $arFields["ID"], "#IBLOCK_ID#"=>$arFields["IBLOCK_ID"]));			
+								}	
+							}
+							// Если элемент активируем после периода деактивации, то надо отключить созданное ранее правило
+							/*elseif($arElement["ACTIVE"] == "N" && $arFields["ACTIVE"] == "Y") {
+							
+							    $res = CIBlockSection::GetByID($arFields["IBLOCK_SECTION"]["0"]);
+								$res->SetUrlTemplates($arIblock["SECTION_PAGE_URL"]);
+								if($ar_res = $res->GetNext()){
+									$sectionURL = $ar_res["SECTION_PAGE_URL"];
+								
+							
+							        //$oldRedirect = S2uRedirectsRulesDB::FindRedirect($arElement["DETAIL_PAGE_URL"], $site);
+							    
+							        $oldRedirect = S2uRedirectsRulesDB::GetList(array(
+							            "OLD_LINK" => $arElement["DETAIL_PAGE_URL"],
+							            "NEW_LINK" => $sectionURL,
+							            "ACTIVE" => "Y",
+							            "SITE_ID" => $site,
+							        ));
+							        if(is_array($oldRedirect) && count($oldRedirect)>0) {
+							            $oldRedirect = $oldRedirect[0];
+							            if($oldRedirect) {
+							                $oldRedirect["ACTIVE"] = "N";
+							                $q = S2uRedirectsRulesDB::Update($oldRedirect["ID"], array("ACTIVE"=>"N"));
+							                var_dump($oldRedirect["ID"]);var_dump($oldRedirect);exit;
+							            }
+							        }
+							    }
+							}*/
+						}else{
+							$link = str_replace($arElement["CODE"]."/", "", $NEW_LINK);
+							$link = str_replace($arElement["CODE"], "", $NEW_LINK);			
+						}
+					}
+				}
+				if($NEW_LINK){
+					if(count($OLD_LINK)){
+						foreach ($OLD_LINK as $oldlink){
+							$arrDbFields = array(
+								'OLD_LINK' => $oldlink,
+								'NEW_LINK' => trim($NEW_LINK),
+								'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+								'STATUS' => "301",
+								'ACTIVE' => "Y",
+								'COMMENT' => $COMMENT,
+								'SITE_ID' => $site,
+								'WITH_INCLUDES' => "N",
+								'USE_REGEXP' => "N",
+							);	
+							if($repair_conflicts){
+								$Res__ = S2uRedirectsRulesDB::RepairConflicts($arrDbFields);
+							} else {
+								$Res__ = S2uRedirectsRulesDB::Add($arrDbFields);
+							}						
+						}								
+					} else {
+						$arrDbFields = array(
+							'OLD_LINK' => $arElement["DETAIL_PAGE_URL"],
+							'NEW_LINK' => trim($NEW_LINK),
+							'DATE_TIME_CREATE' => ConvertTimeStamp(time(), 'FULL'),
+							'STATUS' => "301",
+							'ACTIVE' => "Y",
+							'COMMENT' => $COMMENT,
+							'SITE_ID' => $site,
+							'WITH_INCLUDES' => "N",
+							'USE_REGEXP' => "N",
+						);		
+						if($repair_conflicts){
+							$Res__ = S2uRedirectsRulesDB::RepairConflicts($arrDbFields);
+						} else {
+							$Res__ = S2uRedirectsRulesDB::Add($arrDbFields);
+						}					
+					}					
+				}			
+			}
+		} 
+	}
+	
+	
+	/**
+	* Показываем предложение продлить Битрикс, если лицензия истекает скоро (45 дней)
+	*/
+	static public function getLicenseRenewalBanner() {
+    	IncludeModuleLangFile($_SERVER['DOCUMENT_ROOT'] . BX_ROOT . '/modules/'.self::MODULE_ID.'/classes/general/s2u_redirects.php');
+	    require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/classes/general/update_client.php');
+        $errors = null;
+        $stableVersionsOnly = COption::GetOptionString('main', 'stable_versions_only', 'Y');
+        $arUpdateList = CUpdateClient::GetUpdatesList($errors, LANG, $stableVersionsOnly);
+	    $expired_date = $arUpdateList['CLIENT']['0']['@']['DATE_TO'];
+	    
+	    $expired_timestamp = strtotime($expired_date);
+	    
+	    $result = "";
+	    
+	    if(CModule::IncludeModuleEx(self::MODULE_ID)==MODULE_DEMO_EXPIRED) {
+	        $result .= BeginNote();
+            $result .= GetMessage('atl_module_expired');
+	        $result .= EndNote();
+	    }
+	    
+	    if(time() >= $expired_timestamp-45*86400) {
+	        $result .= BeginNote();
+            $result .= GetMessage('atl_license_expired', array("#DATE#"=>$expired_date));
+	        $result .= EndNote();
+	    }
+	    
+	    return $result;
+	}
+}
+
+?>

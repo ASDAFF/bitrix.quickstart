@@ -1,0 +1,42 @@
+<?
+$MESS ['MURL_NO_USL'] = "Not specified condition";
+$MESS ['MURL_DUPL_CONDITION'] = "Recording with the condition '# CONDITION #' already exists";
+$MESS ['MURL_EDIT'] = "Changing rule";
+$MESS ['MURL_ADD'] = "Add rule";
+$MESS ['MURL_2_LIST'] = "List of rules";
+$MESS ['MURL_2_LIST_ALT'] = "Go to the list of rules";
+$MESS ['MURL_ACT_ADD'] = "Add";
+$MESS ['MURL_ACT_ADD_ALT'] = "Add new rule";
+$MESS ['MURL_ACT_DEL'] = "Remove";
+$MESS ['MURL_ACT_DEL_CONF'] = "Are you sure you want to delete this record?";
+$MESS ['MURL_TAB'] = "Options";
+$MESS ['MURL_TAB_ALT'] = "Recording options";
+$MESS ['MURL_USL'] = "Condition";
+$MESS ['MURL_OLD_LINK'] = "Redirect from";
+$MESS ['MURL_NEW_LINK'] = "to";
+$MESS ['MURL_RULE'] = "Activity";
+$MESS ['MURL_COMMENT'] = "Comment";
+$MESS ['MURL_STATUS'] = "HTTP status code";
+$MESS ['STATUS_301'] = "301: Moved permanently";
+$MESS ['STATUS_302'] = "302: Moved temporarily";
+$MESS ['STATUS_303'] = "303: View more";
+$MESS ['STATUS_410'] = "410: Removed";
+$MESS ['SAE_ERROR'] = "Error saving rules";
+$MESS ['SH_ERRORS'] = "Address to which you want to generate a rule already exists. Generation impossible";
+$MESS ['SH1_ERRORS'] = "You have not entered an address in the Address field";
+$MESS ['GEN_MESSG'] = "Generated redirect:";
+$MESS ['ERROR_NO_URL'] = "You must specify how and where will be made redirects";
+$MESS ['ERROR_DUPLICATE_URL'] = "You are trying to create a cyclical redirect!";
+$MESS ['ERROR_INVALID_URL'] = "URL is incorrect!";
+$MESS ['ERROR_INVALID_URL_DESC'] = 'URL is not been tested for compliance with the specification <a href="http://www.faqs.org/rfcs/rfc2396.html" target="_blank"> RFC2396 </a>. <br/> You can disable this in the <a href = "/bitrix/admin/settings.php?mid=step2use.redirects" target = "_ blank"> module settings </a>. This is useful, for example, if you use Cyrillic URL ';
+$MESS ['ERROR_NOSLASH_URL'] = "URL must start with a slash";
+$MESS ['ERROR_410'] = "For this type of redirection is necessary to specify only the start URL";
+$MESS ['ERROR_DEMO'] = "You are using the trial version of the module 'Redirect Master'! <br/> In demo mode, you can not create more than 5 forwarding rules. <br/> To purchase the full version of this module, use the <a href = 'http: //marketplace.1c -bitrix.ru/solutions/step2use.redirects/'>ссылкой </a>.";
+$MESS ['S2U_INFORMATION_TITLE'] = 'Attention!';
+$MESS ['S2U_INFORMATION_DESC'] = "<i> Redirect a master </ u> makes changes to the file <i> .htaccess </ i>! <br/> Before application module is recommended to make a backup copy of the file and <a href='http://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirect' target='_blank'> acquainted with the official documentation Apache </a>. ";
+$MESS ['S2U_ERROR_DUPLICATE_OLD_LINK'] = "With this URL is already set up a redirect!";
+$MESS ['S2U_WITH_INCLUDES'] = 'All occurrences';
+$MESS ['S2U_WITH_INCLUDES_TIP'] = 'This feature means that it is necessary to redirect spending from all url, starting with the specified. <br/> <br/> <I> For example, if you specify the url of the form / prt Set and sign&quot; all occurrences of&quot;, then the redirect will be produced and with / ptr12 and / prt13 and / prt / help / etc. </ i> ';
+$MESS ['S2U_USE_REGEXP'] = 'Use regular expressions';
+$MESS ['S2U_USE_REGEXP_DESC'] = '<a href="https://atlant2010.ru/blog/slozhnye-pravila-redirektov-redirekt-master/" target="_blank">Example of use</a>'
+?>

@@ -24,7 +24,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if (!array_key_exists("COMMENT", $_POST["CALLBACK"]))
         $_POST["CALLBACK"]["COMMENT"] = "-";
 
-    CEvent::SendImmediate("CALLBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CALLBACK"]);
+    CEvent::SendImmediate("CALLBACK_FORM", $SITE_ID, $_POST["CALLBACK"]);
 
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
@@ -62,7 +62,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
 
     //$el = new CIBlockElement;
     //if($el->add($arLoadParams))
-    CEvent::SendImmediate("CALLBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CALLBACK_MODAL"]);
+    CEvent::SendImmediate("CALLBACK_FORM", $SITE_ID, $_POST["CALLBACK_MODAL"]);
     //else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
@@ -84,7 +84,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         $LANG_CHARSET = $arSite["CHARSET"];
 
     SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
-    CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["FEEDBACK"]);
+    CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["FEEDBACK"]);
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
 
@@ -104,7 +104,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         $LANG_CHARSET = $arSite["CHARSET"];
 
     SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
-    CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["FEEDBACK_MODAL"]);
+    CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["FEEDBACK_MODAL"]);
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
 
@@ -147,7 +147,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     }
 
     if ($arr["MESSAGE"]["ERROR"] < 1)
-        CEvent::SendImmediate("VACANCIES_FORM_EFFORTLESS", $SITE_ID, $_POST["VACANCIES"]);
+        CEvent::SendImmediate("VACANCIES_FORM", $SITE_ID, $_POST["VACANCIES"]);
 
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
@@ -187,7 +187,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
 
     $el = new CIBlockElement;
     if ($el->add($arLoadParams))
-        CEvent::SendImmediate("COMMENTS_FORM_EFFORTLESS", $SITE_ID, $_POST["COMMENTS"]);
+        CEvent::SendImmediate("COMMENTS_FORM", $SITE_ID, $_POST["COMMENTS"]);
     else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
@@ -229,7 +229,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
 
     $el = new CIBlockElement;
     if ($el->add($arLoadParams))
-        CEvent::SendImmediate("ORDER_FORM_EFFORTLESS", $SITE_ID, $_POST["ORDER"]);
+        CEvent::SendImmediate("ORDER_FORM", $SITE_ID, $_POST["ORDER"]);
     else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
@@ -251,7 +251,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         $LANG_CHARSET = $arSite["CHARSET"];
 
     SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
-    CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CONTACTS"]);
+    CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["CONTACTS"]);
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
 
@@ -271,7 +271,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         $LANG_CHARSET = $arSite["CHARSET"];
 
     SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
-    CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CONTACTS_MODAL"]);
+    CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["CONTACTS_MODAL"]);
     SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
     echo json_encode($arr);
 

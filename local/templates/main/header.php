@@ -72,6 +72,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.appear.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.fancybox.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
+    $APPLICATION->AddHeadScript(PATH_AJAX . 'ajax.js');
 
     //Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 

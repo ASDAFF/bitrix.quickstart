@@ -1,0 +1,41 @@
+<?
+global $MESS;
+$MESS ['ONPAY.SALE_PARTNER_NAME'] = "ООО \"МАГНУМ\"";
+$MESS ['ONPAY.SALE_INSTALL_NAME'] = "Платежная система Onpay";
+$MESS ['ONPAY.SALE_INSTALL_DESCRIPTION'] = "Платежная система для интернет-магазинов. Организация приема и выплаты всеми основными способами: Яндекс.Деньги, Webmoney, другие электронные системы платежей, терминалы, банковские и почтовые переводы.";
+$MESS ['ONPAY.SALE_INSTALL_TITLE'] = "Установка модуля платёжных сервисов";
+$MESS ['ONPAY.SALE_INSTALL_PUBLIC_DIR'] = "Публичная папка";
+$MESS ['ONPAY.SALE_INSTALL_SETUP'] = "Установить";
+$MESS ['ONPAY.SALE_INSTALL_COMPLETE_OK'] = "Установка завершена. Для дополнительной помощи обратитесь в раздел помощи.";
+$MESS ['ONPAY.SALE_INSTALL_COMPLETE_ERROR'] = "Установка завершена с ошибками";
+$MESS ['ONPAY.SALE_INSTALL_ERROR'] = "Ошибки при установке";
+$MESS ['ONPAY.SALE_INSTALL_BACK'] = "Вернуться в управление модулями";
+$MESS ['ONPAY.SALE_UNINSTALL_WARNING'] = "Внимание! Модуль будет удален из системы.";
+$MESS ['ONPAY.SALE_UNINSTALL_SAVEDATA'] = "Вы можете сохранить данные в таблицах базы данных, если установите флажок &quot;Сохранить таблицы&quot;";
+$MESS ['ONPAY.SALE_UNINSTALL_SAVETABLE'] = "Сохранить таблицы";
+$MESS ['ONPAY.SALE_UNINSTALL_DEL'] = "Удалить";
+$MESS ['ONPAY.SALE_UNINSTALL_ERROR'] = "Ошибки при удалении:";
+$MESS ['ONPAY.SALE_UNINSTALL_COMPLETE'] = "Удаление завершено.";
+$MESS ['ONPAY.SALE_INSTALL_PUBLIC_SETUP'] = "Установить";
+$MESS ['ONPAY.SALE_INSTALL_UNPOSSIBLE'] = "Деинсталляция модуля невозможна.";
+$MESS ['ONPAY.SALE_INSTALL_LOGIN_EMPTY'] = "Необходимо указать \"Логин в системе Onpay.ru\"";
+
+$MESS ['ONPAY.SALE_OPTIONS_HOST_IP'] = "IP-адрес вашего сервера";
+$MESS ['ONPAY.SALE_OPTIONS_URL_API'] = "URL скрипта для API-запросов";
+$MESS ['ONPAY.SALE_OPTIONS_URL_API_DESC'] = "Параметр \"URL API\" в личном кабинете системы Onpay.ru";
+$MESS ['ONPAY.SALE_OPTIONS_LOGIN'] = "Логин в системе Onpay.ru <font color='red'>*</font>";
+$MESS ['ONPAY.SALE_OPTIONS_LOGIN_DESC'] = "Ваше Имя пользователя в системе Onpay.ru";
+$MESS ['ONPAY.SALE_OPTIONS_API_IN_KEY'] = "Ключ API IN";
+$MESS ['ONPAY.SALE_OPTIONS_API_IN_KEY_DESC'] = "Секретный ключ API IN указанный в личном кабинете системы Onpay.ru";
+$MESS ['ONPAY.SALE_OPTIONS_SUCCESS_URL'] = "Адрес при успешной оплате";
+$MESS ['ONPAY.SALE_OPTIONS_SUCCESS_URL_DESC'] = "URL скрипта (на сайте продавца) обрабатывающего оповещения о результате платежа";
+$MESS ['ONPAY.SALE_OPTIONS_FAIL_URL'] = "Адрес при ошибке оплаты";
+$MESS ['ONPAY.SALE_OPTIONS_FAIL_URL_DESC'] = "URL (на сайте продавца) для перенаправления плательщика при неуспешном платеже";
+$MESS ['ONPAY.SALE_OPTIONS_IFRAME_FORM'] = "Платёжная форма в IFRAME";
+$MESS ['ONPAY.SALE_OPTIONS_IFRAME_FORM_DESC'] = "Показывать платёжную форму в IFRAME, по-умолчанию, она будет открываться в новом окне";
+$MESS ['ONPAY.SALE_OPTIONS_CONVERT'] = "Конвертировать поступающие платежи в валюту заказа";
+$MESS ['ONPAY.SALE_OPTIONS_CONVERT_DESC'] = "Параметр платёжной ссылки";
+$MESS ['ONPAY.SALE_OPTIONS_CURRENCY'] = "Валюта для #CURRENCY#";
+$MESS ['ONPAY.SALE_OPTIONS_CURRENCY_DESC'] = "Выберите соответсвующую в модуле Onpay";
+$MESS ['ONPAY.SALE_OPTIONS_CURRENCY_EMPTY'] = "Выберите";
+?>

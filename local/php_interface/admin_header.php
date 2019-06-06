@@ -8,5 +8,12 @@
  * Header административной части
  */
 ?>
-<link rel="stylesheet" type="text/css" href="/local/lib/backend/css/global.css">
-<script type="text/javascript" src="/local/lib/backend/js/global.js"></script>
+// CSS
+<link rel="stylesheet" type="text/css" href="/local/codenails/backend/css/aat.iblockprops/interface.css">
+<link rel="stylesheet" type="text/css" href="/local/codenails/backend/css/global.css">
+
+// JS
+<script type="text/javascript" src="/local/codenails/backend/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="/local/codenails/backend/js/aat.iblockprops/interface.js"></script>
+<script type="text/javascript" src="/local/codenails/backend/js/global.js"></script>

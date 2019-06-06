@@ -1,9 +1,13 @@
+/*
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
 .colorpicker {
 	width: 356px;
 	height: 176px;
 	overflow: hidden;
 	position: absolute;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_background.png);
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_background.png);
 	font-family: Arial, Helvetica, sans-serif;
 	display: none;
 	z-index: 10;
@@ -24,7 +28,7 @@
 	left: 0;
 	width: 150px;
 	height: 150px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_overlay.png);
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_overlay.png);
 }
 .colorpicker_color div div {
 	position: absolute;
@@ -33,7 +37,7 @@
 	width: 11px;
 	height: 11px;
 	overflow: hidden;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_select.gif);
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_select.gif);
 	margin: -5px 0 0 -5px;
 }
 .colorpicker_hue {
@@ -49,7 +53,7 @@
 	width: 35px;
 	height: 9px;
 	overflow: hidden;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_indic.gif) left top;
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_indic.gif) left top;
 	margin: -4px 0 0 0;
 	left: 0px;
 }
@@ -87,7 +91,7 @@
 	position: absolute;
 	width: 72px;
 	height: 22px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_hex.png) top;
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_hex.png) top;
 	left: 212px;
 	top: 142px;
 }
@@ -110,32 +114,32 @@
 	cursor: n-resize;
 }
 .colorpicker_rgb_r {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_rgb_r.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_rgb_r.png);
 	top: 52px;
 	left: 212px;
 }
 .colorpicker_rgb_g {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_rgb_g.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_rgb_g.png);
 	top: 82px;
 	left: 212px;
 }
 .colorpicker_rgb_b {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_rgb_b.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_rgb_b.png);
 	top: 112px;
 	left: 212px;
 }
 .colorpicker_hsb_h {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_hsb_h.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_hsb_h.png);
 	top: 52px;
 	left: 282px;
 }
 .colorpicker_hsb_s {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_hsb_s.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_hsb_s.png);
 	top: 82px;
 	left: 282px;
 }
 .colorpicker_hsb_b {
-	background-image: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_hsb_b.png);
+	background-image: url(../../images/therabbit.iblock_props_color/colorpicker_hsb_b.png);
 	top: 112px;
 	left: 282px;
 }
@@ -143,7 +147,7 @@
 	position: absolute;
 	width: 22px;
 	height: 22px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/colorpicker_submit.png) top;
+	background: url(../../images/therabbit.iblock_props_color/colorpicker_submit.png) top;
 	left: 322px;
 	top: 142px;
 	overflow: hidden;
@@ -170,7 +174,7 @@
 	left: 0;
 	width: 36px;
 	height: 36px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/select2.png);
+	background: url(../../images/therabbit.iblock_props_color/select2.png);
 }
 .colorSelector div {
 	position: absolute;
@@ -178,7 +182,7 @@
 	left: 4px;
 	width: 28px;
 	height: 28px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/select2.png) center;
+	background: url(../../images/therabbit.iblock_props_color/select2.png) center;
 }
 
 .customWidgetView {
@@ -187,7 +191,7 @@
 .colorSelectorView {
 	width: 36px;
 	height: 36px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/select2.png);
+	background: url(../../images/therabbit.iblock_props_color/select2.png);
 }
 .colorSelectorView div {
 	position: relative;
@@ -195,6 +199,6 @@
 	left: 4px;
 	width: 28px;
 	height: 28px;
-	background: url(/bitrix/themes/.default/images/therabbit.iblock_props_color/select2.png) center;
+	background: url(../../images/therabbit.iblock_props_color/select2.png) center;
 }
 

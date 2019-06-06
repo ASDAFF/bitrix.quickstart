@@ -1,0 +1,120 @@
+.form-box {
+    box-shadow: 0 0 46px rgba(1, 2, 2, .27);
+}
+#rule_personal, .modal-form, .modal-thank, input[type=radio] {
+    display: none;
+}
+.form-box .form {
+    padding: 20px 20px 0;
+}
+.form-box .item {
+    margin-top: 15px;
+}
+.form-box .item:first-child {
+    margin-top: 0;
+}
+.form-box input[type=email], .form-box input[type=text] {
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 50px;
+}
+.form-box input[type=email], .form-box input[type=text], .form-box textarea {
+    width: 85%;
+    background: #dedede;
+    border: 0;
+    font-size: 18px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-box textarea {
+    width: 85%;
+    height: 126px;
+    border-radius: 20px;
+    padding: 10px 18px;
+	resize: none;
+}
+.form-box .bt {
+    margin-top: 24px;
+}
+.form-box button {
+    width: 100%}
+a.button, button {
+    height: 42px;
+    border-radius: 21px;
+    background: #3cd247;
+    font-size: 22px!important;
+    color: #fff!important;
+    text-transform: uppercase;
+}
+.form-box .title {
+    padding: 0 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+.form-box {
+    margin: auto;
+    background: #f5f4f4;
+    width: 344px;
+    padding: 30px 0;
+    text-align: center;
+}
+* {
+    outline: 0;
+    max-height: 999999px;
+}
+.text_block {
+    font-size: 16px;
+    padding: 10px;
+    background: #f5f4f4;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+@media (max-width:992px) {
+    .fon_scroll {
+    background-image: none!important;
+	}
+	.form-box {
+		width: 90%!important;
+		margin: 45px auto!important;
+	}
+}
+.modal_div {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 46px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_div .modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}

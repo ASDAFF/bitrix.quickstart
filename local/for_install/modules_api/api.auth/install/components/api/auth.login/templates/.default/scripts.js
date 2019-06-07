@@ -30,20 +30,6 @@
 					$(form).find('.api-captcha').slideDown();
 				}
 
-				if (options.usePrivacy) {
-					$(form).find('.api-row-privacy').on('click','.api-accept-label',function(){
-						if($(this).find(':checkbox').is(':checked')){
-							$(this).find(':checkbox').prop('checked',false).change();
-							$(this).parents('.api_controls').find('.api-error').slideDown(200);
-						}
-						else{
-							$(this).find(':checkbox').prop('checked',true).change();
-							$(this).parents('.api_controls').find('.api-error').slideUp(200);
-						}
-					});
-				}
-
-
 				//---------- Refresh captcha ----------//
 				$(form).on('click', '.api-captcha-refresh', function (e) {
 					e.preventDefault();
@@ -68,36 +54,6 @@
 
 				//---------- Form submit ----------//
 				$(form).on('click', '[type="button"]', function (e) {
-
-					var bError = false;
-
-					if (options.usePrivacy) {
-
-						$(form).find('.api-row-privacy :checkbox').each(function(){
-							if (!$(this).prop('checked')) {
-								$(this).parents('.api_controls').find('.api-error').slideDown(200);
-								bError = true;
-							}
-							else {
-								$(this).parents('.api_controls').find('.api-error').slideUp(200);
-							}
-						});
-					}
-
-					if (options.useConsent) {
-						$(form).find('input[name*=USER_CONSENT]').each(function () {
-							if (!$(this).prop('checked')) {
-								$(this).parents('.api_control').find('.api-error').slideDown(200);
-								bError = true;
-							}
-							else {
-								$(this).parents('.api_control').find('.api-error').slideUp(200);
-							}
-						});
-					}
-
-					if(bError)
-						return false;
 
 					$.fn.apiAuthLogin('showWait', form);
 

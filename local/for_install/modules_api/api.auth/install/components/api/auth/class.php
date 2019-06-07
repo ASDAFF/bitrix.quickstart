@@ -22,6 +22,7 @@
  */
 
 use Bitrix\Main\Loader,
+	 Bitrix\Main\Config\Option,
 	 Bitrix\Main\Localization\Loc;
 
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
@@ -41,6 +42,13 @@ class ApiAuthComponent extends \CBitrixComponent
 	{
 		$params['SET_TITLE'] = ($params['SET_TITLE'] <> 'N' ? 'Y' : 'N');
 
+		$params['ALLOW_NEW_USER_REGISTRATION'] = (Option::get('main', 'new_user_registration', 'Y') != 'N' ? 'Y' : 'N');
+
+		//Все настройки модуля
+		/*if($arSettings = Settings::getAll()) {
+			$params = array_merge($params, $arSettings);
+		}*/
+
 		return $params;
 	}
 
@@ -57,7 +65,7 @@ class ApiAuthComponent extends \CBitrixComponent
 				 'api_modal',
 				 'api_button',
 				 'api_form',
-				 'api_alert'
+				 'api_alert',
 			));
 		}
 

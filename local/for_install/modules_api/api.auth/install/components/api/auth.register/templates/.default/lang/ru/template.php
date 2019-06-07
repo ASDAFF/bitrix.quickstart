@@ -3,7 +3,9 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 
 //---------- class.php ----------//
-$MESS['API_AUTH_REGISTER_PAGE_TITLE'] = 'Регистрация';
+$MESS['API_AUTH_REGISTER_PAGE_TITLE']    = 'Регистрация';
+$MESS['API_AUTH_REGISTER_NOT_SET']       = '(не выбрано)';
+$MESS['API_AUTH_REGISTER_COUNTRY_EMPTY'] = '-- Страна --';
 
 
 //---------- template.php ----------//

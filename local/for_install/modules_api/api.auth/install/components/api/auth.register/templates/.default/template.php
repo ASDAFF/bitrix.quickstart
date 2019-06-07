@@ -44,9 +44,9 @@ $this->addExternalCss($dataCss);
 $this->addExternalJs($dataJs);
 
 ?>
-	<div id="<?=$formId?>" class="api-auth-register" data-css="<?=$dataCss?>" data-js="<?=$dataJs?>">
-		<form id="<?=$formId?>_form"
-		      name="<?=$formId?>_form"
+	<div id="<?=$formId?>_wrap" class="api-auth-register" data-css="<?=$dataCss?>" data-js="<?=$dataJs?>">
+		<form id="<?=$formId?>"
+		      name="<?=$formId?>"
 		      action=""
 		      method="post"
 		      class="api_form">
@@ -57,7 +57,9 @@ $this->addExternalJs($dataJs);
 					<div class="api_label"><?=Loc::getMessage('REGISTER_FIELD_GROUP_ID')?></div>
 					<div class="api_controls">
 						<? foreach($arResult['GROUP_ID'] as $groupId => $groupName): ?>
-							<label class="api_label_inline api_radio"><input type="radio" name="FIELDS[GROUP_ID][]" value="<?=$groupId?>"><span><?=$groupName?></span></label>
+							<label class="api_label_inline api_radio">
+								<input type="radio" name="FIELDS[GROUP_ID][]" value="<?=$groupId?>"> <span><?=$groupName?></span>
+							</label>
 						<? endforeach ?>
 					</div>
 				</div>
@@ -132,7 +134,12 @@ $this->addExternalJs($dataJs);
 									case "PERSONAL_COUNTRY":
 									case "WORK_COUNTRY":
 										?>
-										<?
+										<select name="FIELDS[<?=$FIELD?>]" placeholder="<?=$placeholder?>" class="api_field">
+											<? foreach($arResult["COUNTRY_LIST"] as $key => $value): ?>
+												<option value="<?=$key?>"<? if($key == $arResult["VALUES"][ $FIELD ]): ?> selected="selected"<? endif ?>><?=$value?></option>
+											<? endforeach; ?>
+										</select>
+										<?/*
 										if(\Bitrix\Main\Loader::includeModule('sale')):?>
 											<?
 											CSaleLocation::proxySaleAjaxLocationsComponent(
@@ -150,12 +157,8 @@ $this->addExternalJs($dataJs);
 											);
 											?>
 										<? else: ?>
-											<select name="FIELDS[<?=$FIELD?>]" placeholder="<?=$placeholder?>" class="api_field">
-												<? foreach($arResult["COUNTRIES"]["reference_id"] as $key => $value): ?>
-													<option value="<?=$value?>"<? if($value == $arResult["VALUES"][ $FIELD ]): ?> selected="selected"<? endif ?>><?=$arResult["COUNTRIES"]["reference"][ $key ]?></option>
-												<? endforeach; ?>
-											</select>
-										<? endif ?>
+										<? endif */
+										?>
 										<?
 										break;
 
@@ -171,25 +174,34 @@ $this->addExternalJs($dataJs);
 										?>
 										<textarea cols="30" rows="5" name="FIELDS[<?=$FIELD?>]" placeholder="<?=$placeholder?>" class="api_field"><?=$arResult["VALUES"][ $FIELD ]?></textarea><?
 										break;
+
+									case "PERSONAL_BIRTHDAY":
+										?>
+										<?/*if($FIELD == "PERSONAL_BIRTHDAY"):?>
+										<small><?=$arResult["DATE_FORMAT"]?></small><br/>
+										<?endif;*/
+										?>
+										<input type="text" name="FIELDS[<?=$FIELD?>]" value="<?=$arResult["VALUES"][ $FIELD ]?>" placeholder="<?=$placeholder?>" class="api_field">
+										<?
+										$APPLICATION->IncludeComponent(
+											 'bitrix:main.calendar',
+											 '',
+											 array(
+													'SHOW_INPUT' => 'N',
+													'FORM_NAME'  => 'regform',
+													'INPUT_NAME' => 'FIELDS[PERSONAL_BIRTHDAY]',
+													'SHOW_TIME'  => 'N',
+											 ),
+											 null,
+											 array("HIDE_ICONS" => "Y")
+										);
+										?>
+										<?
+										break;
+
 									default:
-										if($FIELD == "PERSONAL_BIRTHDAY"):?>
-											<small><?=$arResult["DATE_FORMAT"]?></small><br/><?endif;
 										?>
 										<input type="text" name="FIELDS[<?=$FIELD?>]" value="<?=$arResult["VALUES"][ $FIELD ]?>" placeholder="<?=$placeholder?>" class="api_field"><?
-										if($FIELD == "PERSONAL_BIRTHDAY")
-											$APPLICATION->IncludeComponent(
-												 'bitrix:main.calendar',
-												 '',
-												 array(
-														'SHOW_INPUT' => 'N',
-														'FORM_NAME'  => 'regform',
-														'INPUT_NAME' => 'FIELDS[PERSONAL_BIRTHDAY]',
-														'SHOW_TIME'  => 'N',
-												 ),
-												 null,
-												 array("HIDE_ICONS" => "Y")
-											);
-										?><?
 								} ?>
 							</div>
 						</div>
@@ -197,24 +209,31 @@ $this->addExternalJs($dataJs);
 				<? endforeach ?>
 			<? endif ?>
 
-			<? // ********************* User properties ***************************************************?>
-			<? if($arResult["USER_PROPERTIES"]["SHOW"] == "Y"): ?>
-				<tr>
-					<td colspan="2"><?=strlen(trim($arParams["USER_PROPERTY_NAME"])) > 0 ? $arParams["USER_PROPERTY_NAME"] : GetMessage("USER_TYPE_EDIT_TAB")?></td>
-				</tr>
-				<? foreach($arResult["USER_PROPERTIES"]["DATA"] as $FIELD_NAME => $arUserField): ?>
-					<tr>
-						<td><?=$arUserField["EDIT_FORM_LABEL"]?>:<? if($arUserField["MANDATORY"] == "Y"): ?>
-								<span class="starrequired">*</span><? endif; ?></td>
-						<td>
+			<? if($arParams['USER_FIELDS']): ?>
+				<? foreach($arResult['USER_FIELDS'] as $key => $arUserField): ?>
+					<?
+					$name = $arUserField['EDIT_FORM_LABEL'] ? $arUserField['EDIT_FORM_LABEL'] : $arUserField['FIELD_NAME'];
+					$req  = ($arUserField['MANDATORY'] == 'Y' || ($arParams['REQUIRED_FIELDS'] && in_array($key, $arParams['REQUIRED_FIELDS'])));
+					?>
+					<div class="api_row api-custom-field">
+						<div class="api_label"><?=$name?><?=($req ? '<span class="api_required">*</span>' : '')?></div>
+						<div class="api_controls">
 							<? $APPLICATION->IncludeComponent(
-								 "bitrix:system.field.edit",
-								 $arUserField["USER_TYPE"]["USER_TYPE_ID"],
-								 array("bVarsFromForm" => $arResult["bVarsFromForm"], "arUserField" => $arUserField, "form_name" => "regform"), null, array("HIDE_ICONS" => "Y")); ?></td>
-					</tr>
+								 'bitrix:system.field.edit',
+								 $arUserField['USER_TYPE']['USER_TYPE_ID'],
+								 array(
+										"bVarsFromForm" => false,
+										"arUserField"   => $arUserField,
+										"form_name"     => $formId,
+								 ),
+								 null,
+								 array('HIDE_ICONS' => 'Y')
+							);
+							?>
+						</div>
+					</div>
 				<? endforeach; ?>
 			<? endif; ?>
-			<? // ******************** /User properties ***************************************************?>
 
 			<div class="api_row">
 				<div class="api-req"><?=Loc::getMessage("API_AUTH_REGISTER_REQ")?></div>
@@ -240,10 +259,10 @@ $this->addExternalJs($dataJs);
 				</div>
 			<? endif ?>
 
-			<?if($arResult['DISPLAY_USER_CONSENT']):?>
+			<? if($arResult['DISPLAY_USER_CONSENT']): ?>
 				<div class="api_row api-row-user-consent api-row-accept">
 					<div class="api_controls">
-						<?foreach($arResult['DISPLAY_USER_CONSENT'] as $agreementId=>$arAgreement):?>
+						<? foreach($arResult['DISPLAY_USER_CONSENT'] as $agreementId => $arAgreement): ?>
 							<div class="api_control">
 								<div class="api-accept-label" data-id="<?=$agreementId?>">
 									<input type="checkbox"
@@ -253,10 +272,10 @@ $this->addExternalJs($dataJs);
 									<div class="api-error"><?=$arParams['~MESS_PRIVACY_CONFIRM']?></div>
 								</div>
 							</div>
-						<?endforeach;?>
+						<? endforeach; ?>
 					</div>
 				</div>
-			<?endif;?>
+			<? endif; ?>
 
 			<? /* if($arParams['USE_PRIVACY'] == 'Y' && $arParams['MESS_PRIVACY']): ?>
 				<div class="api_row api_privacy">
@@ -315,17 +334,14 @@ ob_start();
 		jQuery(document).ready(function ($) {
 
 			$.fn.apiAuthRegister({
-				wrapperId: '#<?=$formId?>',
-				formId: '#<?=$formId?>_form',
+				wrapperId: '#<?=$formId?>_wrap',
+				formId: '#<?=$formId?>',
 				secureAuth: <?=($arResult["SECURE_AUTH"] ? 'true' : 'false')?>,
 				secureData: <?=Json::encode($arResult['SECURE_DATA'])?>,
 				REQUIRED_FIELDS: <?=Json::encode($arParams['REQUIRED_FIELDS'])?>,
 				usePrivacy: '<?=$arParams['USE_PRIVACY'] == 'Y'?>',
 				useConsent: '<?=!empty($arResult['DISPLAY_USER_CONSENT'])?>',
 			});
-
-			$('#<?=$formId?>_form').apiForm();
-
 
 			//---------- User consent ----------//
 			<?if($arResult['DISPLAY_USER_CONSENT']):?>
@@ -346,30 +362,30 @@ ob_start();
 				$.ajax({
 					type: 'POST',
 					url: '/bitrix/components/bitrix/main.userconsent.request/ajax.php',
-					data: $.extend({},data,config),
+					data: $.extend({}, data, config),
 					error: function (jqXHR, textStatus, errorThrown) {
 						console.error('textStatus: ' + textStatus);
 						console.error('errorThrown: ' + errorThrown);
 					},
 					success: function (response) {
-						if(!!response.text){
+						if (!!response.text) {
 							$.fn.apiAlert({
 								type: 'confirm',
-								title:'<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_TITLE')?>',
+								title: '<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_TITLE')?>',
 								width: 600,
-								content: '<textarea rows="50" readonly>'+ response.text +'</textarea>',
+								content: '<textarea rows="50" readonly>' + response.text + '</textarea>',
 								labels: {
-									ok:'<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_BTN_ACCEPT')?>',
-									cancel:'<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_BTN_REJECT')?>',
+									ok: '<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_BTN_ACCEPT')?>',
+									cancel: '<?=Loc::getMessage('API_AUTH_REGISTER_USER_CONSENT_BTN_REJECT')?>',
 								},
 								callback: {
 									onConfirm: function (isConfirm) {
 										if (isConfirm) {
-											checkbox.prop('checked',true).change();
+											checkbox.prop('checked', true).change();
 											checkbox.parents('.api_control').find('.api-error').slideUp(200);
 										}
 										else {
-											checkbox.prop('checked',false).change();
+											checkbox.prop('checked', false).change();
 											checkbox.parents('.api_control').find('.api-error').slideDown(200);
 										}
 									}

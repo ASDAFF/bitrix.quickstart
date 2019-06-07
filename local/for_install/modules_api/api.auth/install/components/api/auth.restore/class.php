@@ -57,12 +57,12 @@ class ApiAuthRestoreComponent extends \CBitrixComponent
 		$arParams['RESTORE_MESS_HEADER']  = ($arParams['RESTORE_MESS_HEADER'] ? $arParams['RESTORE_MESS_HEADER'] : Loc::getMessage('API_AUTH_RESTORE_RESTORE_URL'));
 		$arParams['REGISTER_MESS_HEADER'] = ($arParams['REGISTER_MESS_HEADER'] ? $arParams['REGISTER_MESS_HEADER'] : Loc::getMessage('API_AUTH_RESTORE_REGISTER_URL'));
 
-		//Р’СЃРµ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
+		//Все настройки модуля
 		if($arSettings = SettingsTable::getAll()){
 			$arParams = array_merge($arParams,$arSettings);
 		}
 
-		$arParams['MESS_PRIVACY'] = str_replace('#BUTTON#',Loc::getMessage('API_AUTH_RESTORE_BUTTON'),$arParams['MESS_PRIVACY']);
+		//$arParams['MESS_PRIVACY'] = str_replace('#BUTTON#',Loc::getMessage('API_AUTH_RESTORE_BUTTON'),$arParams['MESS_PRIVACY']);
 
 		return $arParams;
 	}

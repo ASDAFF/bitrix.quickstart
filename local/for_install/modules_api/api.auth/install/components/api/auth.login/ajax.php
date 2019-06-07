@@ -66,7 +66,7 @@ if($action = $request->getPost('api_action')) {
 }
 
 
-//Р•СЃР»Рё РІРєР»СЋС‡РµРЅРѕ С€РёС„СЂРѕРІР°РЅРёРµ
+//Если включено шифрование
 if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 
 	$sec = new CRsaSecurity();
@@ -86,8 +86,8 @@ if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 }
 
 
-//Р”Р°РЅРЅС‹Рµ С„РѕСЂРјС‹ Р°РІС‚РѕСЂРёР·Р°С†РёРё
-$formData = $_REQUEST;
+//Данные формы авторизации
+$formData = (array)$_REQUEST;
 foreach($formData as &$data) {
 	$data = is_array($data) ? $data : trim($data);
 }
@@ -96,7 +96,7 @@ if(!Application::isUtfMode())
 	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
 
 
-//РќР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
+//Настройки модуля
 $arSettings = Settings::getAll();
 $arAuthFields = $arSettings['AUTH_FIELDS'];
 
@@ -110,22 +110,14 @@ elseif(!$formData['LOGIN'])
 elseif(!$formData['PASSWORD'])
 	$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_PASSWORD');
 
-if($arSettings['USER_CONSENT_ID']){
-	$userConsentError = array_diff(
-		 (array)$arSettings['USER_CONSENT_ID'], (array)$formData['USER_CONSENT_ID']
-	);
-	if($userConsentError){
-		$result['MESSAGE'] = $arSettings['MESS_PRIVACY_CONFIRM'];
-	}
-	unset($userConsentError);
-}
-
-
 if(!$result['MESSAGE']) {
 	foreach($arAuthFields as $field) {
 
-		$select = array('ID', 'LOGIN', 'EMAIL', 'PERSONAL_PHONE');
-		$filter = array('=' . $field => $formData['LOGIN']);
+		$select = array('ID', 'ACTIVE', 'LOGIN', 'EMAIL', 'PERSONAL_PHONE');
+		$filter = array(
+			 '=EXTERNAL_AUTH_ID' => '',
+			 '=' . $field => $formData['LOGIN']
+		);
 
 		$arUser = UserTable::getRow(array(
 			 'select' => $select,
@@ -133,38 +125,53 @@ if(!$result['MESSAGE']) {
 		));
 
 		if($arUser['ID']) {
-			$authResult = $USER->Login($arUser['LOGIN'], $formData['PASSWORD'], "Y");
+			if($arUser['ACTIVE'] == 'Y'){
+				$authResult = $USER->Login($arUser['LOGIN'], $formData['PASSWORD'], "Y");
+				if($authResult['TYPE'] == 'ERROR') {
 
-			if($authResult['TYPE'] == 'ERROR') {
+					$result['MESSAGE'] = $authResult['MESSAGE'];
 
-				$result['MESSAGE'] = $authResult['MESSAGE'];
+					if($APPLICATION->NeedCAPTHAForLogin($formData['LOGIN'])) {
+						$captchaCode       = htmlspecialcharsbx($APPLICATION->CaptchaGetCode());
+						$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_CAPTCHA');
+						$result['CAPTCHA'] = array(
+							 'SID' => $captchaCode,
+							 'SRC' => '/bitrix/tools/captcha.php?captcha_sid=' . $captchaCode,
+						);
+					}
+				}
+				else {
 
-				if($APPLICATION->NeedCAPTHAForLogin($formData['LOGIN'])) {
-					$captchaCode       = htmlspecialcharsbx($APPLICATION->CaptchaGetCode());
-					$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_CAPTCHA');
-					$result['CAPTCHA'] = array(
-						 'SID' => $captchaCode,
-						 'SRC' => '/bitrix/tools/captcha.php?captcha_sid=' . $captchaCode,
+					//$ttfile=dirname(__FILE__).'/1_txt.php';
+					//file_put_contents($ttfile, "<pre>".print_r($_SESSION['SPREAD_COOKIE'],1)."</pre>\n");
+
+					//special login form in the control panel
+					if($authResult === true)
+					{
+						//store cookies for next hit (see CMain::GetSpreadCookieHTML())
+						//bitrix/modules/main/include.php:455
+						$APPLICATION->StoreCookies();
+						//$APPLICATION->SetAuthResult($authResult);
+					}
+
+					//$ttfile=dirname(__FILE__).'/1_txt.php';
+					//file_put_contents($ttfile, "<pre>".print_r($_SESSION['SPREAD_COOKIE'],1)."</pre>\n", FILE_APPEND);
+
+					$result = array(
+						 'TYPE'    => 'SUCCESS',
+						 'MESSAGE' => $formData['messSuccess'],
 					);
 				}
 			}
-			else {
-
-				//logUserConsent
-				if($arSettings['USER_CONSENT_ID']){
-					Tools::logUserConsent($arSettings['USER_CONSENT_ID'], 'api:auth.login');
-				}
-
-				$result = array(
-					 'TYPE'    => 'SUCCESS',
-					 'MESSAGE' => $formData['messSuccess'],
-				);
+			else{
+				$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_ACTIVE');
 			}
 
+			//Если пользователь найден, выходим из цикла
 			break;
 		}
 		else {
-			$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_USER');
+			$result['MESSAGE'] = Loc::getMessage('AALA_ERROR_SEARCH');
 		}
 	}
 }

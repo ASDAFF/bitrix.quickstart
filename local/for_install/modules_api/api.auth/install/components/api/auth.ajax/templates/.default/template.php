@@ -1,17 +1,10 @@
 <?php
 
-use Bitrix\Main\Page\Asset,
-	 Bitrix\Main\Page\AssetLocation,
-	 Bitrix\Main\Localization\Loc;
-
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
-	die();
-
 /**
  * Bitrix vars
  *
  * @var CBitrixComponentTemplate $this
- * @var ApiQaList                $component
+ * @var ApiAuthAjaxComponent     $component
  *
  * @var array                    $arParams
  * @var array                    $arResult
@@ -28,6 +21,13 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
  * @var CUser                    $USER
  * @var CMain                    $APPLICATION
  */
+
+use Bitrix\Main\Page\Asset,
+	 Bitrix\Main\Page\AssetLocation,
+	 Bitrix\Main\Localization\Loc;
+
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+	die();
 
 Loc::loadMessages(__FILE__);
 
@@ -59,7 +59,7 @@ if($arParams) {
 				<a class="api_link <?=$arParams['LOGIN_BTN_CLASS']?>" href="#api_auth_login"
 				   data-header="<?=CUtil::JSEscape($arParams['LOGIN_MESS_HEADER'])?>"><?=$arParams['LOGIN_MESS_LINK']?></a>
 			<? endif ?>
-			<? if($arParams['REGISTER_MESS_LINK']): ?>
+			<? if($arParams['REGISTER_MESS_LINK'] && $arParams['ALLOW_NEW_USER_REGISTRATION'] == 'Y'): ?>
 				<a class="api_link <?=$arParams['REGISTER_BTN_CLASS']?>" href="#api_auth_register"
 				   data-header="<?=CUtil::JSEscape($arParams['REGISTER_MESS_HEADER'])?>"><?=$arParams['REGISTER_MESS_LINK']?></a>
 			<? endif ?>
@@ -71,9 +71,11 @@ if($arParams) {
 						<div id="api_auth_login">
 							<? $APPLICATION->IncludeComponent('api:auth.login', '', $arParams); ?>
 						</div>
-						<div id="api_auth_register">
-							<? $APPLICATION->IncludeComponent('api:auth.register', '', $arParams); ?>
-						</div>
+						<?if($arParams['ALLOW_NEW_USER_REGISTRATION'] == 'Y'):?>
+							<div id="api_auth_register">
+								<? $APPLICATION->IncludeComponent('api:auth.register', '', $arParams); ?>
+							</div>
+						<?endif?>
 						<div id="api_auth_restore">
 							<? $APPLICATION->IncludeComponent('api:auth.restore', '', $arParams); ?>
 						</div>

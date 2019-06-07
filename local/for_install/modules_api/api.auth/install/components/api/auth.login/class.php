@@ -71,6 +71,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 
 
 		$params['ALLOW_SOCSERV_AUTHORIZATION'] = (Option::get('main', 'allow_socserv_authorization', 'Y') != 'N' ? 'Y' : 'N');
+		$params['ALLOW_NEW_USER_REGISTRATION'] = (Option::get('main', 'new_user_registration', 'Y') != 'N' ? 'Y' : 'N');
 
 		$params['LOGIN_MESS_HEADER']    = ($params['LOGIN_MESS_HEADER'] ? $params['LOGIN_MESS_HEADER'] : Loc::getMessage('API_AUTH_LOGIN_LOGIN_URL'));
 		$params['RESTORE_MESS_HEADER']  = ($params['RESTORE_MESS_HEADER'] ? $params['RESTORE_MESS_HEADER'] : Loc::getMessage('API_AUTH_LOGIN_RESTORE_URL'));
@@ -80,12 +81,12 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 
 		$params['COOKIE_NAME'] = Option::get('main', 'cookie_name', 'BITRIX_SM');
 
-		//Ð’ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
+		//Âñå íàñòðîéêè ìîäóëÿ
 		if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}
 
-		$params['MESS_PRIVACY'] = str_replace('#BUTTON#',Loc::getMessage('API_AUTH_LOGIN_BUTTON'),$params['MESS_PRIVACY']);
+		//$params['MESS_PRIVACY'] = str_replace('#BUTTON#',Loc::getMessage('API_AUTH_LOGIN_BUTTON'),$params['MESS_PRIVACY']);
 
 		return $params;
 	}
@@ -99,7 +100,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 
 		$arResult['FORM_ID'] = $this->getEditAreaId($this->randString());
 
-		//Ð‘ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ
+		//Áåçîïàñíàÿ àâòîðèçàöèÿ
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') //!CMain::IsHTTPS() &&
@@ -112,7 +113,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 			}
 		}
 
-		//ÐÐ²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ Ñ‡ÐµÑ€ÐµÐ· ÑÐ¾Ñ†. ÑÐµÑ€Ð²Ð¸ÑÑ‹
+		//Àâòîðèçàöèÿ ÷åðåç ñîö. ñåðâèñû
 		$arResult['AUTH_SERVICES']   = false;
 		$arResult['CURRENT_SERVICE'] = false;
 		if($arParams["ALLOW_SOCSERV_AUTHORIZATION"] == 'Y' && !$USER->IsAuthorized() && Loader::includeModule('socialservices')) {
@@ -135,7 +136,7 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 			}
 		}
 
-		//ÐŸÐ»ÐµÐ¹ÑÑ…Ð¾Ð»Ð´ÐµÑ€Ñ‹ Ð¿Ð¾Ð»ÐµÐ¹
+		//Ïëåéñõîëäåðû ïîëåé
 		$arResult['LOGIN_PLACEHOLDER']    = Loc::getMessage('API_AUTH_LOGIN_LOGIN_OR_EMAIL');
 		$arResult['PASSWORD_PLACEHOLDER'] = Loc::getMessage('API_AUTH_LOGIN_FIELD_PASSWORD');
 
@@ -156,16 +157,6 @@ class ApiAuthLoginComponent extends \CBitrixComponent
 		$arResult['CAPTCHA_CODE'] = false;
 		if($APPLICATION->NeedCAPTHAForLogin($arResult['LAST_LOGIN'])){
 			$arResult['CAPTCHA_CODE'] = $APPLICATION->CaptchaGetCode();
-		}
-
-
-		$arResult['DISPLAY_USER_CONSENT'] = array();
-		if($arParams['USER_CONSENT_ID']) {
-			$arResult['DISPLAY_USER_CONSENT'] = Tools::getUserConsent(
-				 $arParams['USER_CONSENT_ID'],
-				 Loc::getMessage('API_AUTH_LOGIN_BUTTON'),
-				 Loc::getMessage('API_AUTH_LOGIN_USER_CONSENT_FIELDS')
-			);
 		}
 
 

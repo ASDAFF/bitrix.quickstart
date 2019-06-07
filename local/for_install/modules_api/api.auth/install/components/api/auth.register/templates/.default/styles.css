@@ -45,6 +45,8 @@
 }
 .api-auth-register .api-req{ font-size: 12px }
 .api-auth-register .api-asterisk{ color: red; font-weight: bold; margin: 0 5px }
+.api-auth-register .api-custom-field .api_controls input + label{margin-left: 5px}
+.api-auth-register .api-custom-field .api_controls select{width: 100% !important;}
 /* api-row-accept */
 .api-auth-register .api-row-accept .api_control{ position: relative }
 .api-auth-register .api-accept-label{ font-size: 12px; line-height: 18px; font-weight: bold; cursor: pointer; padding-left: 20px; display: block; }
@@ -56,6 +58,7 @@
 .api-auth-register .api-accept-text p + p{ margin-top: 8px }
 .api-auth-register .api-accept-desc{ display: none; }
 .api-auth-register .api-row-accept .api-error{ font-size: 12px; color: #ff3737; display: none }
+.api-auth-register .calendar-icon{margin-top: -10px;position: absolute;right: 5px;top: 50%;z-index:10}
 /* .api-soc-auth */
 .api-soc-auth{ padding: 20px 0 0 }
 .api-soc-auth-title{ border-top: 1px solid #444; border-bottom: 1px solid #444; margin: 0 0 10px; padding: 5px 0; }

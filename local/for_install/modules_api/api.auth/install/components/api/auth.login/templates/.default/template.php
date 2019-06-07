@@ -1,17 +1,9 @@
 <?php
-use Bitrix\Main\Web\Json,
-	 Bitrix\Main\Page\Asset,
-	 Bitrix\Main\Page\AssetLocation,
-	 Bitrix\Main\Localization\Loc;
-
-if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
-	die();
-
 /**
  * Bitrix vars
  *
  * @var CBitrixComponentTemplate $this
- * @var ApiQaList                $component
+ * @var ApiAuthLoginComponent    $component
  *
  * @var array                    $arParams
  * @var array                    $arResult
@@ -28,6 +20,14 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
  * @var CUser                    $USER
  * @var CMain                    $APPLICATION
  */
+
+use Bitrix\Main\Web\Json,
+	 Bitrix\Main\Page\Asset,
+	 Bitrix\Main\Page\AssetLocation,
+	 Bitrix\Main\Localization\Loc;
+
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+	die();
 
 Loc::loadMessages(__FILE__);
 
@@ -83,44 +83,6 @@ $this->addExternalJs($dataJs);
 			</div>
 			<?//endif;?>
 
-			<? if($arParams['USE_PRIVACY'] == 'Y' && $arParams['MESS_PRIVACY']): ?>
-				<div class="api_row api-row-privacy api-row-accept">
-					<div class="api_controls">
-						<div class="api-accept-label">
-							<input type="checkbox"
-							       name="PRIVACY_ACCEPTED"
-							       value="Y">
-							<div class="api-accept-text">
-								<? if($arParams['MESS_PRIVACY_LINK']): ?>
-									<a href="<?=$arParams['~MESS_PRIVACY_LINK']?>" target="_blank"><?=$arParams['~MESS_PRIVACY']?></a>
-								<? else: ?>
-									<?=$arParams['~MESS_PRIVACY']?>
-								<? endif ?>
-							</div>
-							<div class="api-error"><?=$arParams['~MESS_PRIVACY_CONFIRM']?></div>
-						</div>
-					</div>
-				</div>
-			<? endif ?>
-
-			<?if($arResult['DISPLAY_USER_CONSENT']):?>
-				<div class="api_row api-row-user-consent api-row-accept">
-					<div class="api_controls">
-						<?foreach($arResult['DISPLAY_USER_CONSENT'] as $agreementId=>$arAgreement):?>
-							<div class="api_control">
-								<div class="api-accept-label" data-id="<?=$agreementId?>">
-									<input type="checkbox"
-									       name="USER_CONSENT_ID[]"
-									       value="<?=$agreementId?>">
-									<div class="api-accept-text"><?=$arAgreement['LABEL_TEXT'];?></div>
-									<div class="api-error"><?=$arParams['~MESS_PRIVACY_CONFIRM']?></div>
-								</div>
-							</div>
-						<?endforeach;?>
-					</div>
-				</div>
-			<?endif;?>
-
 			<div class="api_row">
 				<button type="button" class="api_button api_button_primary api_button_large api_button_wait api_width_1_1"><?=Loc::getMessage('API_AUTH_LOGIN_BUTTON')?></button>
 			</div>
@@ -130,11 +92,13 @@ $this->addExternalJs($dataJs);
 					   href="<?=$arParams['RESTORE_URL']?>"
 					   data-header="<?=CUtil::JSEscape($arParams['RESTORE_MESS_HEADER'])?>"><?=Loc::getMessage('API_AUTH_LOGIN_RESTORE_URL')?></a>
 				</div>
-				<div class="api_text_right">
-					<a class="api_link api_auth_register_url"
-					   href="<?=$arParams['REGISTER_URL']?>"
-					   data-header="<?=CUtil::JSEscape($arParams['REGISTER_MESS_HEADER'])?>"><?=Loc::getMessage('API_AUTH_LOGIN_REGISTER_URL')?></a>
-				</div>
+				<?if($arParams['ALLOW_NEW_USER_REGISTRATION'] == 'Y'):?>
+					<div class="api_text_right">
+						<a class="api_link api_auth_register_url"
+						   href="<?=$arParams['REGISTER_URL']?>"
+						   data-header="<?=CUtil::JSEscape($arParams['REGISTER_MESS_HEADER'])?>"><?=Loc::getMessage('API_AUTH_LOGIN_REGISTER_URL')?></a>
+					</div>
+				<?endif?>
 			</div>
 		</form>
 		<? if($arResult['AUTH_SERVICES']): ?>
@@ -172,9 +136,7 @@ ob_start();
 				secureData: <?=Json::encode($arResult['SECURE_DATA'])?>,
 				messLogin: '<?=$arResult['LOGIN_PLACEHOLDER']?>',
 				messSuccess: '<?=CUtil::JSEscape($arParams['~LOGIN_MESS_SUCCESS'])?>',
-				usePrivacy: '<?=$arParams['USE_PRIVACY'] == 'Y'?>',
 				useCaptcha: '<?=$arResult['CAPTCHA_CODE'] != false?>',
-				useConsent: '<?=!empty($arResult['DISPLAY_USER_CONSENT'])?>',
 			});
 
 

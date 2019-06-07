@@ -41,13 +41,13 @@ $request = Application::getInstance()->getContext()->getRequest();
 			<?=$arParams['~MESS_AUTHORIZED']?>
 		</div>
 	<? else: ?>
-		<? if($request->get('reg') || $request->get('register')): ?>
+		<? if($arParams['ALLOW_NEW_USER_REGISTRATION'] == 'Y' && ($request->get('reg') || $request->get('register'))): ?>
 			<? $APPLICATION->IncludeComponent('api:auth.register', '', $arParams); ?>
 		<? elseif($request->get('restore') || $request->get('forgot_password')): ?>
 			<? $APPLICATION->IncludeComponent('api:auth.restore', '', $arParams); ?>
 		<? elseif($request->get('change') || $request->get('change_password')): ?>
 			<? $APPLICATION->IncludeComponent('api:auth.change', '', $arParams); ?>
-		<? elseif($request->get('confirm') || $request->get('confirm_registration')): ?>
+		<? elseif($arParams['ALLOW_NEW_USER_REGISTRATION'] == 'Y' && ($request->get('confirm') || $request->get('confirm_registration'))): ?>
 			<? $APPLICATION->IncludeComponent('api:auth.confirm', '', $arParams); ?>
 		<? else: ?>
 			<? $APPLICATION->IncludeComponent('api:auth.login', '', $arParams); ?>

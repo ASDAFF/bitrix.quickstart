@@ -1,5 +1,4 @@
 .api-auth-profile *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-.api-auth-profile .api_label{font-size: 14px;}
 .api-auth-profile .bx-sls .bx-ui-sls-container{min-height: 35px}
 /* soc-serv-main */
 .api-auth-profile .bx-socserv-auth-split{margin-top: 30px; padding-top: 30px;border-top: 1px solid rgba(0,0,0,.1);}

@@ -68,7 +68,7 @@ class ApiAuthConfirmComponent extends \CBitrixComponent
 
 		//---------- $request ----------//
 		$userId      = intval($request->get('uid') ? $request->get('uid') : $request->get('confirm_user_id'));
-		$confirmCode = htmlspecialcharsbx($request->get('code') ? $request->get('code') : $request->get('confirm_code'));
+		$confirmCode = trim($request->get('code') ? $request->get('code') : $request->get('confirm_code'));
 
 		$arMessage = array();
 

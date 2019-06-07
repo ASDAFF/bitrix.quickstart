@@ -2,12 +2,13 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 
-$MESS['AARA_ERROR_SESS_CHECK']  = 'Ваша сессия истекла, повторите попытку';
-$MESS['AARA_ERROR_RSA_DECODE']  = 'Ошибка дешифрования пароля (#CODE#)';
-$MESS['AARA_ERROR_FIELD']       = 'Введите #FIELD#';
-$MESS['AARA_ERROR_CHECK_EMAIL'] = 'Указанный e-mail некорректный';
-$MESS['AARA_REGISTER_CONFIRM']  = 'Вы успешно зарегистрированы, проверьте пожалуйста почту и перейдите по ссылке для подтверждения регистрации';
-$MESS['AARA_REGISTER_SUCCESS']  = 'Добро пожаловать на сайт!';
+$MESS['AARA_ERROR_SESS_CHECK']   = 'Ваша сессия истекла, повторите попытку';
+$MESS['AARA_ERROR_RSA_DECODE']   = 'Ошибка дешифрования пароля (#CODE#)';
+$MESS['AARA_ERROR_FIELD']        = 'Введите #FIELD#';
+$MESS['AARA_ERROR_CHECK_EMAIL']  = 'Указанный e-mail некорректный';
+$MESS['AARA_ERROR_REGISTRATION'] = 'Ошибка! Регистрация на сайте запрещена';
+$MESS['AARA_REGISTER_CONFIRM']   = 'Вы успешно зарегистрированы, проверьте пожалуйста почту и перейдите по ссылке для подтверждения регистрации';
+$MESS['AARA_REGISTER_SUCCESS']   = 'Добро пожаловать на сайт!';
 
 //$MESS['AARA_ERROR_SETTINGS']   = 'Ошибка настроек авторизации';
 //$MESS['AARA_ERROR_PASSWORD']   = 'Введите пароль';

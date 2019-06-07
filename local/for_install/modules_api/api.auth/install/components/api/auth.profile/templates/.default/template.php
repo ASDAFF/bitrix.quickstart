@@ -42,7 +42,7 @@ $user   = $arResult['USER'];
 		      enctype="multipart/form-data"
 		      method="post"
 		      action="<?=POST_FORM_ACTION_URI;?>"
-		      class="api_form">
+		      class="api_form api_form_horizontal">
 			<?=bitrix_sessid_post()?>
 
 			<? if($arParams['READONLY_FIELDS']): ?>
@@ -101,7 +101,7 @@ $user   = $arResult['USER'];
 
 						$req = ($arParams['REQUIRED_FIELDS'] && in_array($key, $arParams['REQUIRED_FIELDS']));
 						?>
-						<div class="api_row">
+						<div class="api_row api_row_group">
 							<? if($arParams['SHOW_LABEL'] == 'Y'): ?>
 								<div class="api_label"><?=$name?>:<?=($req ? '<span class="api_required">*</span>' : '')?></div>
 							<? endif ?>
@@ -153,17 +153,17 @@ $user   = $arResult['USER'];
 											 'api_location'
 										); ?>
 									<? else: ?>
-										<input type="text" name="FIELDS[<?=$key?>]" value="<?=$value?>" placeholder="<?=$name?>">
+										<input type="text" name="FIELDS[<?=$key?>]" value="<?=$value?>">
 									<? endif ?>
 								<? elseif($key == 'PERSONAL_NOTES' || $key == 'WORK_NOTES'): ?>
-									<textarea name="FIELDS[<?=$key?>]" cols="30" rows="4" placeholder="<?=$name?>"><?=$value?></textarea>
+									<textarea name="FIELDS[<?=$key?>]" cols="30" rows="4"><?=$value?></textarea>
 								<? elseif($key == 'PASSWORD' || $key == 'CONFIRM_PASSWORD'): ?>
-									<input type="password" name="FIELDS[<?=$key?>]" value="<?=$value?>" placeholder="<?=$name?>">
+									<input type="password" name="FIELDS[<?=$key?>]" value="<?=$value?>">
 									<? if($key == 'PASSWORD' && $arResult['GROUP_POLICY'] && $arResult['GROUP_POLICY']['PASSWORD_REQUIREMENTS']): ?>
 										<div class="api-group-policy"><?=$arResult['GROUP_POLICY']['PASSWORD_REQUIREMENTS']?></div>
 									<? endif; ?>
 								<? else: ?>
-									<input type="text" name="FIELDS[<?=$key?>]" value="<?=$value?>" placeholder="<?=$name?>">
+									<input type="text" name="FIELDS[<?=$key?>]" value="<?=$value?>">
 								<? endif; ?>
 							</div>
 						</div>
@@ -207,14 +207,14 @@ $user   = $arResult['USER'];
 						$name = $arUserField['EDIT_FORM_LABEL'] ? $arUserField['EDIT_FORM_LABEL'] : $arUserField['FIELD_NAME'];
 						$req  = ($arUserField['MANDATORY'] == 'Y' || ($arParams['REQUIRED_FIELDS'] && in_array($key, $arParams['REQUIRED_FIELDS'])));
 
-						if(!$arUserField['VALUE'] && $arUserField['USER_TYPE_ID'] == 'api_auth_location'){
+						/*if(!$arUserField['VALUE'] && $arUserField['USER_TYPE_ID'] == 'api_auth_location'){
 							if(Loader::includeModule('sale')){
 								if(class_exists('\Bitrix\Main\Service\GeoIp\Manager') && class_exists('\Bitrix\Sale\Location\GeoIp')) {
 									if($ipAddress = \Bitrix\Main\Service\GeoIp\Manager::getRealIp())
 										$arUserField['VALUE'] = \Bitrix\Sale\Location\GeoIp::getLocationCode($ipAddress, LANGUAGE_ID);
 								}
 							}
-						}
+						}*/
 						?>
 						<div class="api_row">
 							<? if($arParams['SHOW_LABEL'] == 'Y'): ?>
@@ -242,6 +242,7 @@ $user   = $arResult['USER'];
 			<? endif ?>
 
 			<div class="api_row api_buttons">
+				<div class="api_label"></div>
 				<div class="api_controls">
 					<button type="submit" value="Y" class="api_button api_button_primary"><?=Loc::getMessage('API_MAIN_PROFILE_TPL_BUTTON')?></button>
 				</div>

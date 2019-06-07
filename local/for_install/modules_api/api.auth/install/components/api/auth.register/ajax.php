@@ -18,6 +18,7 @@ define('BX_SECURITY_SHOW_MESSAGE', true);
 use Bitrix\Main\Loader,
 	 Bitrix\Main\Config\Option,
 	 Bitrix\Main\Web\Json,
+	 Bitrix\Main\Text,
 	 Bitrix\Main\Localization\Loc,
 	 Bitrix\Main\Application;
 
@@ -37,9 +38,6 @@ if(!Loader::includeModule('api.auth'))
 use Api\Auth\Tools;
 use Api\Auth\SettingsTable as Settings;
 
-//ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
-$arSettings = Settings::getAll();
-
 $context = Application::getInstance()->getContext();
 $request = $context->getRequest();
 
@@ -48,9 +46,17 @@ $result = array(
 	 'MESSAGE' => '',
 );
 
+//Íàñòðîéêè ìîäóëÿ
+$arSettings = Settings::getAll();
+
+//Ðàçðåøåíà ëè âîîáùå íà ñàéòå ðåãèñòðàöèÿ
+$allow_registration = (Option::get('main', 'new_user_registration', 'Y') != 'N' ? 'Y' : 'N');
+if($allow_registration != 'Y'){
+	$result['MESSAGE'] = Loc::getMessage('AARA_ERROR_REGISTRATION');
+}
 
 
-//Ð•ÑÐ»Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ
+//Åñëè âêëþ÷åíî øèôðîâàíèå
 if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') { //$_REQUEST['__RSA_DATA']
 
 	$sec = new CRsaSecurity();
@@ -70,22 +76,27 @@ if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') { //$_REQUEST['__RSA_D
 }
 
 
-//ÐŸÐ°Ñ€Ð¼ÐµÑ‚Ñ€Ñ‹ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð³Ð»Ð°Ð²Ð½Ð¾Ð³Ð¾ Ð¼Ð¾Ð´ÑƒÐ»Ñ
+//Ïàðìåòðû àâòîðèçàöèè ãëàâíîãî ìîäóëÿ
 $bConfirmEmail = Option::get('main', 'new_user_registration_email_confirmation', 'Y') == 'Y';
 $bCheckEmail   = Option::get('main', 'new_user_email_uniq_check', 'Y') == 'Y';
 
 
-//ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ
+//Îáÿçàòåëüíûå ïîëÿ
 $reqFields = (array)$_REQUEST['REQUIRED_FIELDS'];
 
-//Ð”Ð°Ð½Ð½Ñ‹Ðµ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸
+//Äàííûå ôîðìû ðåãèñòðàöèè
 $formData = (array)$_REQUEST['FIELDS'];
 
+//Ïîëüçîâàòåëüñêèå äîï. ïîëÿ
+$USER_FIELD_MANAGER->EditFormAddFields("USER", $formData);
+
+if(!Application::isUtfMode())
+	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
 
 $bEmail    = (strlen($formData['EMAIL']) > 0);
 $bPassword = (strlen($formData['PASSWORD']) > 0);
 
-//Ð’Ð°Ð»Ð¸Ð´Ð°Ñ†Ð¸Ñ Ð¿Ð¾Ð»ÐµÐ¹ Ñ„Ð¾Ñ€Ð¼Ñ‹
+//Âàëèäàöèÿ ïîëåé ôîðìû
 foreach($formData as $key => &$val) {
 	if(is_array($val)) {
 		foreach($val as $k => $v) {
@@ -105,7 +116,7 @@ if($bCheckEmail && !$result['MESSAGE'] && !check_email($formData['EMAIL'])) {
 }
 
 
-//ÐÐ²Ñ‚Ð¾Ð³ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ
+//Àâòîãåíåðàöèÿ ïàðîëÿ
 $def_group = Option::get('main', 'new_user_registration_def_group', '');
 if(!$bPassword) {
 	if($def_group != '') {
@@ -138,7 +149,6 @@ if($arSettings['USER_CONSENT_ID']){
 	}
 	unset($userConsentError);
 }
-
 
 
 if(!$result['MESSAGE']) {
@@ -186,7 +196,7 @@ if(!$result['MESSAGE']) {
 		}
 	}
 
-	//---------- Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ----------//
+	//---------- Ñîçäàåì ïîëüçîâàòåëÿ ----------//
 	$user = new CUser;
 
 	$userId = 0;
@@ -197,7 +207,7 @@ if(!$result['MESSAGE']) {
 	if(intval($userId) > 0) {
 		$register_done = true;
 
-		//Ð’ÐµÑ€Ð½ÐµÑ‚ Ð¾ÑˆÐ¸Ð±ÐºÑƒ: Ð›Ð¾Ð³Ð¸Ð½ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð½Ðµ Ð¼ÐµÐ½ÐµÐµ 3 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð².
+		//Âåðíåò îøèáêó: Ëîãèí äîëæåí áûòü íå ìåíåå 3 ñèìâîëîâ.
 		//$user->Update($userId, array('LOGIN' => $userId));
 
 		$userData['USER_ID']    = $userId;
@@ -214,14 +224,14 @@ if(!$result['MESSAGE']) {
 		}
 		else {
 
-			//ÐŸÑ€Ð¾Ð±ÑƒÐµÐ¼ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ
+			//Ïðîáóåì àâòîðèçîâàòü ïîëüçîâàòåëÿ
 			//$USER->Authorize($userId, true);
 			if(!$authResult = $USER->Login($userData['LOGIN'], $userData['PASSWORD'], 'Y', 'Y')) {
 				$result = $authResult;
 			}
 			else {
 
-				//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹', true);
+				//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Âû óñïåøíî çàðåãèñòðèðîâàíû', true);
 				$result = array(
 					 'TYPE'    => 'SUCCESS',
 					 'MESSAGE' => Loc::getMessage('AARA_REGISTER_SUCCESS'),

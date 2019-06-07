@@ -18,6 +18,7 @@ define('BX_SECURITY_SHOW_MESSAGE', true);
 use Bitrix\Main\Loader,
 	 Bitrix\Main\Config\Option,
 	 Bitrix\Main\Web\Json,
+	 Bitrix\Main\Text,
 	 Bitrix\Main\Localization\Loc,
 	 Bitrix\Main\Application;
 
@@ -43,7 +44,7 @@ $result = array(
 
 if($request->isPost() && $request->getPost('API_AUTH_CHANGE_AJAX')) {
 
-	//Ð•ÑÐ»Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾ ÑˆÐ¸Ñ„Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ
+	//Åñëè âêëþ÷åíî øèôðîâàíèå
 	if(Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {
 
 		$sec = new CRsaSecurity();
@@ -62,8 +63,12 @@ if($request->isPost() && $request->getPost('API_AUTH_CHANGE_AJAX')) {
 		}
 	}
 
-	//Ð”Ð°Ð½Ð½Ñ‹Ðµ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸
-	$formData = $_REQUEST;
+	//Äàííûå ôîðìû àâòîðèçàöèè
+	$formData = (array)$_REQUEST;
+
+	if(!Application::isUtfMode())
+		$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
+
 	foreach($formData as &$data) {
 		$data = is_array($data) ? $data : trim($data);
 	}
@@ -80,6 +85,7 @@ if($request->isPost() && $request->getPost('API_AUTH_CHANGE_AJAX')) {
 	);
 
 	$result = Api\Auth\User::change($params);
+
 	/*$result = $USER->ChangePassword(
 		 $formData['USER_LOGIN'],
 		 $formData['USER_CHECKWORD'],

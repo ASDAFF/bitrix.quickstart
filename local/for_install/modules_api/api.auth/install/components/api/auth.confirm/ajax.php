@@ -19,6 +19,7 @@ use Bitrix\Main\Loader,
 	 Bitrix\Main\Config\Option,
 	 Bitrix\Main\UserTable,
 	 Bitrix\Main\Web\Json,
+	 Bitrix\Main\Text,
 	 Bitrix\Main\Localization\Loc,
 	 Bitrix\Main\Application;
 
@@ -40,9 +41,13 @@ $request = $context->getRequest();
 
 $result = array();
 
-$formData = $_REQUEST;
+$formData = (array)$_REQUEST;
+
+if(!Application::isUtfMode())
+	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
+
 foreach($formData as &$data) {
-	$data = htmlspecialcharsbx(trim($data));
+	$data = trim($data);
 }
 
 $bConfirmEmail = Option::get('main', 'new_user_registration_email_confirmation', 'Y') == 'Y';
@@ -90,7 +95,7 @@ if(!$result) {
 		$user = new CUser;
 
 		if(!$bPassword) {
-			//Ð”Ð»Ð¸Ð½Ñƒ Ð¿Ð°Ñ€Ð¾Ð»Ñ Ð¿Ñ€Ð¾ÑÐ¸Ð¼ Ñƒ ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹, Ð½Ð°Ð¿Ñ€Ð¸Ð¼ÐµÑ€, ÐµÑÐ»Ð¸ Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½ Ð¿Ð¾Ð²Ñ‹ÑˆÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ€Ð¾Ð²ÐµÐ½ÑŒ Ð±ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚Ð¸ Ð¸ Ð¿Ð°Ñ€Ð¾Ð»Ð¸ Ð´Ð»Ð¸Ð½ÑŒÑˆÐµ 6
+			//Äëèíó ïàðîëÿ ïðîñèì ó ñèñòåìû, íàïðèìåð, åñëè âêëþ÷åí ïîâûøåííûé óðîâåíü áåçîïàñíîñòè è ïàðîëè äëèíüøå 6
 			if($def_group != "") {
 				$groupID  = explode(",", $def_group);
 				$arPolicy = $USER->GetGroupPolicy($groupID);
@@ -143,7 +148,7 @@ if(!$result) {
 			}
 		}
 
-		//---------- Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ ----------//
+		//---------- Ñîçäàåì ïîëüçîâàòåëÿ ----------//
 		$userId = 0;
 		if($bOk) {
 			$userId = (int)$user->Add($userData);
@@ -180,7 +185,7 @@ if(!$result) {
 
 				$USER->Authorize($userId);
 				if($USER->IsAuthorized()) {
-					//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹', true);
+					//CUser::SendUserInfo($USER->GetID(), $context->getSite(), 'Âû óñïåøíî çàðåãèñòðèðîâàíû', true);
 					$result = array(
 						 'TYPE'    => 'SUCCESS',
 						 'MESSAGE' => Loc::getMessage('AACA_REGISTER_SUCCESS'), //$USER->GetFormattedName()

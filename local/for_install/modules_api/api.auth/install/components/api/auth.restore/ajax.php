@@ -46,7 +46,7 @@ $result = array(
 	 'MESSAGE' => '',
 );
 
-$formData = $_REQUEST;
+$formData = (array)$_REQUEST;
 foreach($formData as &$data) {
 	$data = is_array($data) ? $data : trim($data);
 }
@@ -55,7 +55,7 @@ if(!Application::isUtfMode())
 	$formData = Text\Encoding::convertEncoding($formData, 'UTF-8', $context->getCulture()->getCharset());
 
 
-//ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
+//Íàñòðîéêè ìîäóëÿ
 $arSettings   = Settings::getAll();
 $arAuthFields = $arSettings['AUTH_FIELDS'];
 
@@ -64,17 +64,6 @@ if(!check_bitrix_sessid())
 	$result['MESSAGE'] = Loc::getMessage('AARA_ERROR_SESS_CHECK');
 elseif(!$formData['LOGIN'])
 	$result['MESSAGE'] = Loc::getMessage('AARA_ERROR_EMPTY_LOGIN');
-
-
-if($arSettings['USER_CONSENT_ID']) {
-	$userConsentError = array_diff(
-		 (array)$arSettings['USER_CONSENT_ID'], (array)$formData['USER_CONSENT_ID']
-	);
-	if($userConsentError) {
-		$result['MESSAGE'] = $arSettings['MESS_PRIVACY_CONFIRM'];
-	}
-	unset($userConsentError);
-}
 
 
 if(!$result['MESSAGE']) {
@@ -102,11 +91,6 @@ if(!$result['MESSAGE']) {
 
 			$result = Api\Auth\User::restore($params);
 
-			//logUserConsent
-			if($arSettings['USER_CONSENT_ID']){
-				Tools::logUserConsent($arSettings['USER_CONSENT_ID'], 'api:auth.restore');
-			}
-
 			break;
 		}
 		else {
@@ -114,7 +98,6 @@ if(!$result['MESSAGE']) {
 		}
 	}
 }
-
 
 $APPLICATION->RestartBuffer();
 header('Content-Type: application/json');

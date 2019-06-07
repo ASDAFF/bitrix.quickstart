@@ -1,10 +1,4 @@
 <?
-use Bitrix\Main\Loader,
-	 Bitrix\Main\Localization\Loc;
-
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
-	die();
-
 /**
  * Bitrix vars
  *
@@ -27,6 +21,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
  * @var CMain            $APPLICATION
  */
 
+use Bitrix\Main\Loader,
+	 Bitrix\Main\Config\Option,
+	 Bitrix\Main\Localization\Loc;
+
+if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+	die();
+
 if(!Loader::includeModule('api.auth')) {
 	ShowError(Loc::getMessage('API_AUTH_MODULE_ERROR'));
 	return;
@@ -34,26 +35,28 @@ if(!Loader::includeModule('api.auth')) {
 
 class ApiAuthAjaxComponent extends \CBitrixComponent
 {
-	public function onPrepareComponentParams($arParams)
+	public function onPrepareComponentParams($params)
 	{
 		//Inc template lang
 		if($this->initComponentTemplate()) {
 			Loc::loadMessages($_SERVER['DOCUMENT_ROOT'] . $this->getTemplate()->GetFile());
 		}
 
-		//Р—Р°РіРѕР»РѕРІРєРё РјРѕРґР°Р»СЊРЅРѕРіРѕ РѕРєРЅР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
-		$arParams['LOGIN_MESS_HEADER']    = ($arParams['LOGIN_MESS_HEADER'] ? $arParams['LOGIN_MESS_HEADER'] : Loc::getMessage('AAAP_LOGIN_MESS_HEADER'));
-		$arParams['REGISTER_MESS_HEADER'] = ($arParams['REGISTER_MESS_HEADER'] ? $arParams['REGISTER_MESS_HEADER'] : Loc::getMessage('AAAP_REGISTER_MESS_HEADER'));
-		$arParams['RESTORE_MESS_HEADER']  = ($arParams['RESTORE_MESS_HEADER'] ? $arParams['RESTORE_MESS_HEADER'] : Loc::getMessage('AAAP_RESTORE_MESS_HEADER'));
+		//Заголовки модального окна по умолчанию
+		$params['LOGIN_MESS_HEADER']    = ($params['LOGIN_MESS_HEADER'] ? $params['LOGIN_MESS_HEADER'] : Loc::getMessage('AAAP_LOGIN_MESS_HEADER'));
+		$params['REGISTER_MESS_HEADER'] = ($params['REGISTER_MESS_HEADER'] ? $params['REGISTER_MESS_HEADER'] : Loc::getMessage('AAAP_REGISTER_MESS_HEADER'));
+		$params['RESTORE_MESS_HEADER']  = ($params['RESTORE_MESS_HEADER'] ? $params['RESTORE_MESS_HEADER'] : Loc::getMessage('AAAP_RESTORE_MESS_HEADER'));
 
-		$arParams['PROFILE_URL']  = ($arParams['PROFILE_URL'] ? $arParams['PROFILE_URL'] : '/personal/');
-		$arParams['LOGOUT_URL']   = ($arParams['LOGOUT_URL'] ? $arParams['LOGOUT_URL']   : '?logout=yes');
+		$params['PROFILE_URL']  = ($params['PROFILE_URL'] ? $params['PROFILE_URL'] : '/personal/');
+		$params['LOGOUT_URL']   = ($params['LOGOUT_URL'] ? $params['LOGOUT_URL']   : '?logout=yes');
 
-		$arParams['LOGIN_URL']    = '#api_auth_login';
-		$arParams['RESTORE_URL']  = '#api_auth_restore';
-		$arParams['REGISTER_URL'] = '#api_auth_register';
+		$params['LOGIN_URL']    = '#api_auth_login';
+		$params['RESTORE_URL']  = '#api_auth_restore';
+		$params['REGISTER_URL'] = '#api_auth_register';
 
-		return $arParams;
+		$params['ALLOW_NEW_USER_REGISTRATION'] = (Option::get('main', 'new_user_registration', 'Y') != 'N' ? 'Y' : 'N');
+
+		return $params;
 	}
 
 	public function executeComponent()
@@ -64,7 +67,11 @@ class ApiAuthAjaxComponent extends \CBitrixComponent
 
 		if(Loader::includeModule('api.core')){
 			CUtil::InitJSCore(array(
-				 'api_utility', 'api_width', 'api_form', 'api_modal', 'api_alert'
+				 'api_utility',
+				 'api_width',
+				 'api_form',
+				 'api_modal',
+				 'api_alert'
 			));
 		}
 

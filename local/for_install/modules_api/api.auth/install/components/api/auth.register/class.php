@@ -1,13 +1,4 @@
 <?
-
-use Bitrix\Main\Loader,
-	 Bitrix\Main\Config\Option,
-	 Bitrix\Main\Application,
-	 Bitrix\Main\Localization\Loc;
-
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
-	die();
-
 /**
  * Bitrix vars
  *
@@ -30,6 +21,14 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
  * @var CMain            $APPLICATION
  */
 
+use Bitrix\Main\Loader,
+	 Bitrix\Main\Config\Option,
+	 Bitrix\Main\Application,
+	 Bitrix\Main\Localization\Loc;
+
+if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+	die();
+
 if(!Loader::includeModule('api.auth')) {
 	ShowError(Loc::getMessage('API_AUTH_MODULE_ERROR'));
 	return;
@@ -51,7 +50,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			Loc::loadMessages($_SERVER['DOCUMENT_ROOT'] . $this->getTemplate()->GetFile());
 		}
 
-		//Ð’ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
+		//Âñå íàñòðîéêè ìîäóëÿ
 		if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}
@@ -65,6 +64,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		$params['ALLOW_SOCSERV_AUTHORIZATION'] = (Option::get('main', 'allow_socserv_authorization', 'Y') != 'N' ? 'Y' : 'N');
 
 		if($arRegister = $params['REGISTER']) {
+			$params['USER_FIELDS']     = (array)$arRegister['USER_FIELDS'];
 			$params['SHOW_FIELDS']     = (array)$arRegister['SHOW_FIELDS'];
 			$params['REQUIRED_FIELDS'] = (array)$arRegister['REQUIRED_FIELDS'];
 			$params['GROUP_ID']        = (array)$arRegister['GROUP_ID'];
@@ -80,8 +80,8 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			$params['REQUIRED_FIELDS'] = array('NAME', 'EMAIL');
 
 
-		$params['LOGIN_MESS_HEADER']    = ($params['LOGIN_MESS_HEADER'] ? $params['LOGIN_MESS_HEADER'] : Loc::getMessage('API_AUTH_REGISTER_LOGIN_URL'));
-		$params['RESTORE_MESS_HEADER']  = ($params['RESTORE_MESS_HEADER'] ? $params['RESTORE_MESS_HEADER'] : Loc::getMessage('API_AUTH_REGISTER_RESTORE_URL'));
+		$params['LOGIN_MESS_HEADER']    = ($params['LOGIN_MESS_HEADER']    ? $params['LOGIN_MESS_HEADER']    : Loc::getMessage('API_AUTH_REGISTER_LOGIN_URL'));
+		$params['RESTORE_MESS_HEADER']  = ($params['RESTORE_MESS_HEADER']  ? $params['RESTORE_MESS_HEADER']  : Loc::getMessage('API_AUTH_REGISTER_RESTORE_URL'));
 		$params['REGISTER_MESS_HEADER'] = ($params['REGISTER_MESS_HEADER'] ? $params['REGISTER_MESS_HEADER'] : Loc::getMessage('API_AUTH_REGISTER_REGISTER_URL'));
 
 		$params['MESS_PRIVACY'] = str_replace('#BUTTON#', Loc::getMessage('API_AUTH_REGISTER_BUTTON'), $params['MESS_PRIVACY']);
@@ -91,7 +91,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 
 	public function executeComponent()
 	{
-		global $USER, $APPLICATION;
+		global $USER, $APPLICATION, $USER_FIELD_MANAGER;
 
 		$arParams = &$this->arParams;
 		$arResult = &$this->arResult;
@@ -101,7 +101,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		$bShowPassword = ($arParams['SHOW_FIELDS'] && in_array('PASSWORD', $arParams['SHOW_FIELDS']));
 
 
-		//---------- Ð‘ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ ----------//
+		//---------- Áåçîïàñíàÿ àâòîðèçàöèÿ ----------//
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if($bShowPassword && Option::get('main', 'use_encrypted_auth', 'N') == 'Y') //!CMain::IsHTTPS() &&
@@ -115,7 +115,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹ ----------//
+		//---------- Ñîöèàëüíûå ñåðâèñû ----------//
 		$arResult['AUTH_SERVICES']   = false;
 		$arResult['CURRENT_SERVICE'] = false;
 		if($arParams["ALLOW_SOCSERV_AUTHORIZATION"] == 'Y' && !$USER->IsAuthorized() && Loader::includeModule('socialservices')) {
@@ -139,7 +139,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ----------//
+		//---------- Ãðóïïû ïîëüçîâàòåëåé ----------//
 		$arResult['GROUP_ID'] = array();
 		if($arParams['GROUP_ID']) {
 
@@ -151,6 +151,26 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 
 			foreach($arParams['GROUP_ID'] as $groupId) {
 				$arResult['GROUP_ID'][ $groupId ] = $arGroups[ $groupId ];
+			}
+		}
+
+
+		//---------- Ïîëüçîâàòåëüñêèå äîï. ïîëÿ ----------//
+		$arResult['USER_FIELDS'] = array();
+		if($arParams['USER_FIELDS']){
+			$arUserFields = $USER_FIELD_MANAGER->GetUserFields("USER", 0, LANGUAGE_ID);
+
+			if($arUserFields){
+				foreach($arUserFields as $key => $arUserField){
+					if (!in_array($key, $arParams["USER_FIELDS"]))
+						continue;
+
+					$arUserField["EDIT_FORM_LABEL"] = strLen($arUserField["EDIT_FORM_LABEL"]) > 0 ? $arUserField["EDIT_FORM_LABEL"] : $arUserField["FIELD_NAME"];
+					$arUserField["EDIT_FORM_LABEL"] = htmlspecialcharsEx($arUserField["EDIT_FORM_LABEL"]);
+					$arUserField["~EDIT_FORM_LABEL"] = $arUserField["EDIT_FORM_LABEL"];
+
+					$arResult['USER_FIELDS'][$key] = $arUserField;
+				}
 			}
 		}
 
@@ -172,6 +192,10 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			);
 		}
 
+		//---------- COUNTRY_LIST ----------//
+		//$arMsg = (array)IncludeModuleLangFile('/bitrix/modules/main/tools.php', LANGUAGE_ID, true);
+		//$arMsg = Loc::loadMessages('/bitrix/modules/main/tools.php');
+		$arResult['COUNTRY_LIST'] = $this->getCountryList();
 
 		//---------- ComponentTemplate ----------//
 		$this->includeComponentTemplate();
@@ -183,5 +207,22 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			$APPLICATION->SetPageProperty('title', $pageTitle);
 			$APPLICATION->AddChainItem($pageTitle);
 		}
+	}
+
+	public function getCountryList(){
+		$arCountry = array();
+		$arMsg = Loc::loadLanguageFile($_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/tools.php', LANGUAGE_ID);
+		if($arMsg && is_array($arMsg)){
+			$arCountry[] = Loc::getMessage('API_AUTH_REGISTER_COUNTRY_EMPTY');
+
+			foreach($arMsg as $mId=>$mName){
+				if(strpos($mId, "COUNTRY_") !== false)
+					$arCountry[intval(substr($mId, 8))] = $mName;
+			}
+			asort($arCountry);
+		}
+		unset($arMsg);
+
+		return $arCountry;
 	}
 }

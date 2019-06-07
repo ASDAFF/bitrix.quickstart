@@ -100,7 +100,7 @@ class ApiAuthChangeComponent extends \CBitrixComponent
 		$arResult['GROUP_POLICY'] = CUser::GetGroupPolicy($userId);
 
 
-		//Р‘РµР·РѕРїР°СЃРЅР°СЏ Р°РІС‚РѕСЂРёР·Р°С†РёСЏ
+		//Безопасная авторизация
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if(!CMain::IsHTTPS() && Option::get('main', 'use_encrypted_auth', 'N') == 'Y') {

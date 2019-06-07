@@ -69,14 +69,14 @@ Class api_auth extends CModule
 
 	function InstallEvents()
 	{
-		//РџРѕР»СѓС‡РёРј РІСЃРµ СЏР·С‹РєРё СЃР°Р№С‚Р° РґР»СЏ РїСЂРёРІСЏР·РєРё С‚РёРїРѕРІ
+		//Получим все языки сайта для привязки типов
 		$arLangs = array();
 		$rsLangs = CLanguage::GetList($by = "lid", $order = "desc", Array("ACTIVE" => "Y"));
 		while($row = $rsLangs->Fetch()) {
 			$arLangs[] = $row['LID'];
 		}
 
-		//Р”РѕР±Р°РІР»СЏРµРј С‚РёРїС‹ РїРѕС‡С‚РѕРІС‹С… СЃРѕР±С‹С‚РёР№
+		//Добавляем типы почтовых событий
 		$eventType   = new CEventType;
 		$arEventType = (array)Loc::getMessage('API_AUTH_INSTALL_EVENT_TYPE');
 		foreach($arEventType as $arFields) {
@@ -88,7 +88,7 @@ Class api_auth extends CModule
 		unset($arFields);
 
 
-		//РџРѕР»СѓС‡РёРј РІСЃРµ Р°РєС‚РёРІРЅС‹Рµ СЃР°Р№С‚С‹ РґР»СЏ РїСЂРёРІСЏР·РєРё Рє РїРѕС‡С‚РѕРІС‹Рј С€Р°Р±Р»РѕРЅР°Рј
+		//Получим все активные сайты для привязки к почтовым шаблонам
 		$arSiteId = array();
 		$rsSites  = \Bitrix\Main\SiteTable::getList(array(
 			 'select' => array('LID'),
@@ -98,7 +98,7 @@ Class api_auth extends CModule
 			$arSiteId[] = $row['LID'];
 
 
-		//Р”РѕР±Р°РІР»СЏРµРј РїРѕС‡С‚РѕРІС‹Рµ С€Р°Р±Р»РѕРЅС‹
+		//Добавляем почтовые шаблоны
 		$eventM         = new CEventMessage;
 		$arEventMessage = (array)Loc::getMessage('API_AUTH_INSTALL_EVENT_MESSAGE');
 

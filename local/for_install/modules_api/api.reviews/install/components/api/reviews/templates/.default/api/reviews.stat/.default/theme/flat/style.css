@@ -1,0 +1,85 @@
+.arstat-color-orange1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-orange1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/orange1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-orange1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/orange1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-orange1 .api-info .api-info-bar{ background-color: #f66128;}
+
+.arstat-color-orange2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange2/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-orange2 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/orange2/sprite.png") no-repeat 0 -15px; }
+.arstat-color-orange2 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/orange2/sprite.png") no-repeat 0 -36px; }
+.arstat-color-orange2 .api-info .api-info-bar5{ background-color: #79c471; }
+.arstat-color-orange2 .api-info .api-info-bar4{ background-color: #3fbcef; }
+.arstat-color-orange2 .api-info .api-info-bar3{ background-color: #c790b9; }
+.arstat-color-orange2 .api-info .api-info-bar2{ background-color: #ef9c00; }
+.arstat-color-orange2 .api-info .api-info-bar1{ background-color: #f66128; }
+
+.arstat-color-orange3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange3/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-orange3 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/orange3/sprite.png") no-repeat 0 -15px; }
+.arstat-color-orange3 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/orange3/sprite.png") no-repeat 0 -36px; }
+.arstat-color-orange3 .api-info .api-info-bar5{ background-color: #79c471; }
+.arstat-color-orange3 .api-info .api-info-bar4{ background-color: #3fbcef; }
+.arstat-color-orange3 .api-info .api-info-bar3{ background-color: #c790b9; }
+.arstat-color-orange3 .api-info .api-info-bar2{ background-color: #ef9c00; }
+.arstat-color-orange3 .api-info .api-info-bar1{ background-color: #f66128; }
+
+.arstat-color-blue1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-blue1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/blue1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-blue1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/blue1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-blue1 .api-info .api-info-bar{ background-color: #33b5e5; border: 1px solid #1e1e1e; }
+
+.arstat-color-blue2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue2/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-blue2 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/blue2/sprite.png") no-repeat 0 -15px; }
+.arstat-color-blue2 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/blue2/sprite.png") no-repeat 0 -36px; }
+.arstat-color-blue2 .api-info .api-info-bar{ background-color: #0083d1; }
+
+.arstat-color-blue3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue3/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-blue3 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/blue3/sprite.png") no-repeat 0 -15px; }
+.arstat-color-blue3 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/blue3/sprite.png") no-repeat 0 -36px; }
+.arstat-color-blue3 .api-info .api-info-bar{ background-color: #3fbcef;}
+
+.arstat-color-black1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/black1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-black1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/black1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-black1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/black1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-black1 .api-info .api-info-bar{ background-color: #222; }
+
+.arstat-color-red1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/red1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-red1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/red1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-red1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/red1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-red1 .api-info .api-info-bar{ background-color: #ed1c24; }
+
+.arstat-color-pink1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/pink1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-pink1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/pink1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-pink1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/pink1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-pink1 .api-info .api-info-bar{ background-color: #FF28A8; }
+
+.arstat-color-yellow1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-yellow1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-yellow1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-yellow1 .api-info .api-info-bar{ background-color: #ffc733; }
+
+.arstat-color-green1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/green1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/green1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green1 .api-info .api-info-bar{ background-color: #79c471; }
+
+.arstat-color-green2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green2/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green2 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/green2/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green2 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/green2/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green2 .api-info .api-info-bar5{ background-color: #57bb8a; }
+.arstat-color-green2 .api-info .api-info-bar4{ background-color: #9ace6a; }
+.arstat-color-green2 .api-info .api-info-bar3{ background-color: #ffeb3b; }
+.arstat-color-green2 .api-info .api-info-bar2{ background-color: #ffbb50; }
+.arstat-color-green2 .api-info .api-info-bar1{ background-color: #ff8a65; }
+
+.arstat-color-green3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green3/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green3 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/green3/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green3 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/green3/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green3 .api-info .api-info-bar5{ background-color: #57bb8a; }
+.arstat-color-green3 .api-info .api-info-bar4{ background-color: #9ace6a; }
+.arstat-color-green3 .api-info .api-info-bar3{ background-color: #ffeb3b; }
+.arstat-color-green3 .api-info .api-info-bar2{ background-color: #ffbb50; }
+.arstat-color-green3 .api-info .api-info-bar1{ background-color: #ff8a65; }
+
+.arstat-color-purple1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/purple1/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-purple1 .api-stars-empty{ background: url("/bitrix/images/api.reviews/flat/purple1/sprite.png") no-repeat 0 -15px; }
+.arstat-color-purple1 .api-stars-full{ background: url("/bitrix/images/api.reviews/flat/purple1/sprite.png") no-repeat 0 -36px; }
+.arstat-color-purple1 .api-info .api-info-bar{ background-color: #c790b9; }

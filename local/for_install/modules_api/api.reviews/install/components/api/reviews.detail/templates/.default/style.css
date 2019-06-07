@@ -1,0 +1,98 @@
+/* General
+ ========================================================================== */
+.api-reviews *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-reviews .api-back-link{margin: 30px 0}
+/* .api-header
+ ========================================================================== */
+.api-reviews-detail .api-header .api-icon-star{ display: inline-block; width: 16px; height: 15px; }
+.api-reviews-detail .api-header .api-user-info{ overflow: hidden }
+.api-reviews-detail .api-header .api-guest-picture{ float: left; margin-right: 15px }
+.api-reviews-detail .api-header .api-guest-info{ padding: 9px 0; overflow: hidden}
+.api-reviews-detail .api-header .api-guest-info > div{ display: block;float: left; margin:0 15px 5px 0;line-height: 1; min-height: 16px }
+.api-reviews-detail .api-header .api-guest-name{ font-weight: bold }
+.api-reviews-detail .api-header .api-date{ font-size: 10px; font-style: italic; color: #999;}
+.api-reviews-detail .api-header .api-date:before{ content: " "; display: inline-block; margin: 0 6px -2px 0; width: 15px; height: 13px; background: url("/bitrix/images/api.reviews/sprite.png") no-repeat -51px 0 transparent; }
+.api-reviews-detail .api-header .api-true-buyer{
+	background: url("/bitrix/css/api.core/images/components/buyer.svg") no-repeat 0 50%;
+	display: inline-block;height: 18px;background-size: contain;margin-top: -2px !important;padding-left: 23px;line-height:16px !important;color: #29ad2e;font-weight: 700;font-size: 12.8px;
+}
+.api-reviews-detail .api-header .api-userpic{ width: 36px; height: 36px; display: inline-block; border: 1px solid #fff; background-color: #c5c5c5; /*background-color: #3194F4;*/ background-size: contain; background-position: center; background-repeat: no-repeat; /*box-shadow: 0 1px 2px rgba(0,0,0,.2);*/-webkit-border-radius:100%; -moz-border-radius:100%; border-radius:100%;}
+.api-reviews-detail .api-header .api-prodpic{ width: 36px; height: 36px; display: inline-block; background-size: contain; background-position: center; background-repeat: no-repeat; }
+/* .api-content
+ ========================================================================== */
+.api-reviews-detail .api-content{ padding: 15px 0; border-bottom: 1px solid #dfdfdf }
+/* .api-item */
+.api-reviews-detail .api-item{background: #f8f8f8; padding: 30px; position: relative; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.api-reviews-detail .api-item.api-active{ background: #fffbe6 }
+.api-reviews-detail .api-item + *{ margin-top: 30px; }
+.api-reviews-detail .api-item-hidden{ background: #f3f2f2 !important; border: 1px solid #ccc !important; }
+.api-reviews-detail .api-item-hidden .api-item-status{ background: #212121; display: block; position: absolute; right: 0; top: 0; color: #f3f2f2; font-size: 12px; padding: 3px 10px; min-width: 140px; text-align: center }
+.api-reviews-detail .api-review-link{float: right;}
+.api-reviews-detail .api-review-link a{line-height: normal; cursor: pointer}
+.api-reviews-detail .api-item .api-icon-active{ background-position: 0 0; }
+/* .api-fields */
+.api-reviews-detail .api-field{ margin: 0 0 15px }
+.api-reviews-detail .api-field-label{ font-weight: bold; display: block; vertical-align: top; min-width: 120px }
+.api-reviews-detail .api-field-value{ display: inline-block }
+.api-reviews-detail .api-field-title{ font-size: 16px; font-weight: bold; font-style: italic; color: #eb6132; background: #fff; padding: 5px 12px; margin: 0 0 20px; }
+.api-reviews-detail .api-field-advantage{ color: #0b700d }
+.api-reviews-detail .api-field-disadvantage{ color: #c51111 }
+.api-reviews-detail input[type=text],
+.api-reviews-detail textarea{ background: #fff; border: 1px solid #c0c0be; padding: 4px 10px; font-weight: normal; font-size: 14px; width: 100%; display: block; transition: none; overflow: hidden; resize: none; outline: none; }
+.api-reviews-detail textarea{ height: auto; }
+.api-reviews-detail [data-fake-field]{ display: none; }
+/* .api-footer
+ ========================================================================== */
+.api-reviews-detail .api-footer{ padding: 8px 0 0; }
+.api-reviews-detail .api-footer .api-user-info{ overflow: hidden }
+.api-reviews-detail .api-footer .api-user-info .api-left{float: left}
+.api-reviews-detail .api-footer .api-user-info .api-right{float: right; text-align: right;}
+.api-reviews-detail .api-footer .api-guest-contacts{ display: inline-block }
+/* .api-answer */
+.api-reviews-detail .api-answer{ background: #fff; color: #444; padding: 10px; margin: 25px 0 0 60px; position: relative; }
+.api-reviews-detail .api-answer:before{ content: " "; display: block; position: absolute; top: 50%; left: -57px; margin-top: -10px; width: 33px; height: 20px; background: url("/bitrix/images/api.reviews/sprite.png") no-repeat 0 -13px transparent; }
+.api-reviews-detail .api-answer .api-shop-name{ font-weight: bold; font-size: 15px }
+.api-reviews-detail .api-answer-send .api-shop-name:after{ content: ""; background: url("images/ok.svg") no-repeat 50% 50%; background-size: contain; width: 14px; height: 14px; display: inline-block; margin: 0 0 -2px 5px; }
+.api-reviews-detail .api-answer .api-badge{ display: inline-block; vertical-align: middle; color: #fff; height: 20px; line-height: 21px; padding: 0 8px; font-size: 8px; text-transform: uppercase; letter-spacing: 1px;	-webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px;}
+.api-reviews-detail .api-answer .api-shop-text{ margin-top: 10px; }
+/* .api-thumbs */
+.api-reviews-detail .api-thumbs{white-space: nowrap}
+.api-reviews-detail .api-thumbs .api-thumbs-label{ font-size: 12px }
+.api-reviews-detail .api-thumbs > *{ margin-right: 10px; display: inline-block; white-space: nowrap }
+.api-reviews-detail .api-thumbs-up,
+.api-reviews-detail .api-thumbs-down{ cursor: pointer; font-size: 12px   }
+.api-reviews-detail .api-thumbs .api-hand{background-image: url("/bitrix/images/api.reviews/sprite.png"); background-repeat:no-repeat;  display: inline-block; width: 14px; height: 15px; line-height: 0; font-size: 0;  }
+.api-reviews-detail .api-thumbs-up .api-hand{ background-position: -46px -33px; margin-bottom: -2px }
+.api-reviews-detail .api-thumbs-up.api-thumbs-active .api-hand{ background-position: -61px -33px }
+.api-reviews-detail .api-thumbs-up .api-counter{ color: #298800 }
+.api-reviews-detail .api-thumbs-down .api-hand{ background-position: -76px -33px; margin-bottom: -5px }
+.api-reviews-detail .api-thumbs-down.api-thumbs-active .api-hand{ background-position: -91px -33px }
+.api-reviews-detail .api-thumbs-down .api-counter{ color: #f81f1f }
+.api-reviews-detail .api-wait-small:after{ content: ""; display: inline-block; vertical-align: middle; background-size: contain !important; width: 16px; height: 16px; -webkit-animation: loader 5s linear infinite; animation: loader 5s linear infinite; }
+@keyframes loader{
+	100%{ -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+/* .api-admin-controls */
+.api-reviews-detail .api-admin-controls{ margin:0;position: relative; bottom: -15px }
+
+/* #api-reply */
+.api-reviews-detail #api-reply{position: relative; bottom: -20px; margin: 0}
+.api-reviews-detail #api-reply .api-reply-button{ margin: 5px 0 0 }
+.api-reviews-detail #api-reply button, #api-reply .api-label{ display: inline-block; vertical-align: middle }
+.api-reviews-detail #api-reply button{ margin-right: 5px }
+.api-reviews-detail #api-reply .api-label{ margin-left: 15px }
+.api-reviews-detail #api-reply .api-label input{ margin: 0 5px 0 0 }
+/* .api-pagination
+ ========================================================================== */
+.api-reviews-detail .api-pagination{ margin: 50px 0 25px; text-align: center }
+/* @media
+ ========================================================================== */
+@media (max-width: 600px){
+	.api-reviews-detail .api-footer .api-user-info > div{width: 100% !important;}
+	.api-reviews-detail .api-footer .api-user-info .api-right{margin-top: 15px}
+}
+@media (max-width: 480px){
+	.api-reviews-detail .api-answer{margin-left: 0}
+	.api-reviews-detail .api-answer:before{display: none}
+	.api-reviews-detail .api-footer .api-user-info .api-right{text-align: center;}
+}

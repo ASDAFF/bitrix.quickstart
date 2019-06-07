@@ -1,0 +1,136 @@
+/* ========================================================================
+   Component:.api-button
+ ========================================================================== */
+.api-button::-moz-focus-inner{border: 0;padding: 0;}
+.api-button{
+	position: relative;
+	-webkit-appearance: none;
+	margin: 0;
+	font: inherit;
+	font-size: inherit;
+	overflow: visible;
+	color: #000;
+	text-transform: none;
+	display: inline-block;
+	padding: 0 12px;
+	background: #fff;
+	vertical-align: middle;
+	line-height: 28px;
+	min-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #ccc;
+	outline: none;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+	-webkit-transition: border-color .1s ease-out 0s; -moz-transition: border-color .1s ease-out 0s; -ms-transition: border-color .1s ease-out 0s; -o-transition: border-color .1s ease-out 0s; transition: border-color .1s ease-out 0s;
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+.api-button:not(:disabled){cursor: pointer;}
+.api-button:hover,
+.api-button:focus{color: #000;background-color: #fafafa;border-color: rgba(0, 0, 0, 0.3);}
+.api-button:active{color: #000;background-color: #eee;}
+.api-button:disabled,
+.api-button[disabled] {background: #fafafa;color: #999;border-color: rgba(0, 0, 0, 0.2);}
+
+.api-button-primary {background-color: #00a8e6;color: #fff;}
+.api-button-primary:hover,
+.api-button-primary:focus {background-color: #35b3ee;color: #fff;}
+.api-button-primary:active,
+.api-button-primary.api-active {background-color: #0091ca;	color: #fff;}
+
+.api-button-success {background-color: #8cc14c;color: #fff;}
+.api-button-success:hover,
+.api-button-success:focus {background-color: #8ec73b;color: #fff;}
+.api-button-success:active,
+.api-button-success.api-active {background-color: #72ae41;color: #fff;}
+
+.api-button-danger {background-color: #da314b;color: #fff;}
+.api-button-danger:hover,
+.api-button-danger:focus {background-color: #e4354f;color: #fff;}
+.api-button-danger:active,
+.api-button-danger.api-active {background-color: #c91032;color: #fff;}
+
+.api-button-primary,
+.api-button-success,
+.api-button-danger {border: 1px solid rgba(0, 0, 0, 0.06);box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);}
+.api-button-primary:hover,
+.api-button-primary:focus,
+.api-button-success:hover,
+.api-button-success:focus,
+.api-button-danger:hover,
+.api-button-danger:focus {border-color: rgba(0, 0, 0, 0.21);}
+
+.api-button-mini {min-height: 20px;padding: 0 6px;line-height: 18px;font-size: 11px;}
+.api-button-small {min-height: 25px;padding: 0 10px;line-height: 23px;font-size: 12px;}
+.api-button-large {min-height: 44px;padding: 0 20px;line-height: 42px;font-size: 16px;}
+.api-button .api-icon{display: inline-block;vertical-align: middle;}
+
+/* .api-button-busy */
+.api-button.api-button-busy{cursor: wait;}
+.api-button-busy:after{
+	content: "";
+	border: 1px solid  rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	z-index: 2;
+	background: url("images/busy.gif") no-repeat 50% 50% #fafafa;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+/* Color
+ ========================================================================== */
+
+.api-button-grey{background: #E0E1E2;color: #444;}
+.api-button-grey:hover,
+.api-button-grey:focus{background: #CACBCD;color: #222;border-color: rgba(0, 0, 0, 0.1);}
+.api-button-grey:active,
+.api-button-grey.api-active{background: #BABBBC;color: #222;}
+
+.api-button-yellow{
+	color: #000;
+	text-shadow: none;
+	/*background-color: #ffdb4d;*/
+	border: 1px solid rgba(0, 0, 0, .2);
+	-webkit-transition: background .1s ease-out 0s; -moz-transition: background .1s ease-out 0s; -ms-transition: background .1s ease-out 0s; -o-transition: background .1s ease-out 0s; transition: background .1s ease-out 0s;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .07); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .07); box-shadow: 0 1px 0 rgba(0, 0, 0, .07);
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffdf60+0,ffcc00+100 */
+	background: #ffdf60; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffdf60 0%, #fc0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffdf60 0%, #fc0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffdf60 0%, #fc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf60', endColorstr='#ffcc00', GradientType=0); /* IE6-9 */
+}
+.api-button-yellow:hover{
+	color: #000;
+	/*background-color: #ffd633;*/
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffe681+0,ffd428+100 */
+	background: #ffe681; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffe681 0%, #ffd428 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffe681 0%, #ffd428 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffe681 0%, #ffd428 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe681', endColorstr='#ffd428', GradientType=0); /* IE6-9 */
+}
+.api-button-yellow:focus{
+	color: #000;
+	/*background-color: #ffd633;*/
+	-webkit-box-shadow: inset 0 0 0 1px rgba(193, 154, 0, .2), 0 0 6px 2px rgba(255, 204, 0, .7); -moz-box-shadow: inset 0 0 0 1px rgba(193, 154, 0, .2), 0 0 6px 2px rgba(255, 204, 0, .7); box-shadow: inset 0 0 0 1px rgba(193, 154, 0, .2), 0 0 6px 2px rgba(255, 204, 0, .7);
+}
+.api-button-yellow:active{
+	color: #000;
+	/*background-color: #ffd633;*/
+	/*box-shadow: inset 0 2px 2px -1px rgba(0, 0, 0, .3), 0 0 2px 3px rgba(255, 214, 48, 0.4);*/
+	-webkit-box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, .5), 0 0 6px 2px rgba(255, 204, 0, .7); -moz-box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, .5), 0 0 6px 2px rgba(255, 204, 0, .7); box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, .5), 0 0 6px 2px rgba(255, 204, 0, .7);
+}
+.api-button-yellow:disabled{
+	background: #e7e7e7;
+	color: #999;
+	border-color: #ddd;
+	text-shadow: none;
+	-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
+}

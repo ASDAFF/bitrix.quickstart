@@ -1,0 +1,56 @@
+.arstat-color-yellow .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/yellow/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-yellow .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/yellow/sprite.png") no-repeat 0 -15px; }
+.arstat-color-yellow .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/yellow/sprite.png") no-repeat 0 -36px; }
+.arstat-color-yellow .api-info .api-info-bar{ background-color: #faaa00; }
+
+.arstat-color-orange .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/orange/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-orange .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/orange/sprite.png") no-repeat 0 -15px; }
+.arstat-color-orange .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/orange/sprite.png") no-repeat 0 -36px; }
+.arstat-color-orange .api-info .api-info-bar{ background-color: #ff6d00; }
+
+.arstat-color-red .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/red/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-red .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/red/sprite.png") no-repeat 0 -15px; }
+.arstat-color-red .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/red/sprite.png") no-repeat 0 -36px; }
+.arstat-color-red .api-info .api-info-bar{ background-color: #de002b; }
+
+.arstat-color-magenta .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/magenta/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-magenta .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/magenta/sprite.png") no-repeat 0 -15px; }
+.arstat-color-magenta .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/magenta/sprite.png") no-repeat 0 -36px; }
+.arstat-color-magenta .api-info .api-info-bar{ background-color: #b82945; }
+
+.arstat-color-orchid .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/orchid/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-orchid .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/orchid/sprite.png") no-repeat 0 -15px; }
+.arstat-color-orchid .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/orchid/sprite.png") no-repeat 0 -36px; }
+.arstat-color-orchid .api-info .api-info-bar{ background-color: #d75cb6; }
+
+.arstat-color-navy .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/navy/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-navy .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/navy/sprite.png") no-repeat 0 -15px; }
+.arstat-color-navy .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/navy/sprite.png") no-repeat 0 -36px; }
+.arstat-color-navy .api-info .api-info-bar{ background-color: #006dca; }
+
+.arstat-color-blue .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/blue/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-blue .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/blue/sprite.png") no-repeat 0 -15px; }
+.arstat-color-blue .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/blue/sprite.png") no-repeat 0 -36px; }
+.arstat-color-blue .api-info .api-info-bar{ background-color: #01aae3; }
+
+.arstat-color-green_sea .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/green_sea/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green_sea .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/green_sea/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green_sea .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/green_sea/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green_sea .api-info .api-info-bar{ background-color: #01b1af; }
+
+.arstat-color-green .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/green/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/green/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/green/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green .api-info .api-info-bar{ background-color: #009f4f; }
+
+.arstat-color-irish_green .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/irish_green/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-irish_green .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/irish_green/sprite.png") no-repeat 0 -15px; }
+.arstat-color-irish_green .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/irish_green/sprite.png") no-repeat 0 -36px; }
+.arstat-color-irish_green .api-info .api-info-bar{ background-color: #6db900; }
+
+.arstat-color-purple .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/purple/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-purple .api-stars-empty{ background: url("/bitrix/images/api.reviews/aspro/purple/sprite.png") no-repeat 0 -15px; }
+.arstat-color-purple .api-stars-full{ background: url("/bitrix/images/api.reviews/aspro/purple/sprite.png") no-repeat 0 -36px; }
+.arstat-color-purple .api-info .api-info-bar{ background-color: #9d57fb; }
+
+

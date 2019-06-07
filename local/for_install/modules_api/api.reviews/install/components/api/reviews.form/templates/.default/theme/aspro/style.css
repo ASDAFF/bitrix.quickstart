@@ -1,0 +1,66 @@
+.arform-color-yellow .api-button{ background: #ffad00;}
+.arform-color-yellow .api-button:hover{ background: #d8ae46; }
+.arform-color-yellow .api-button:active{ background: #cba145; }
+.arform-color-yellow .api-button:disabled{ background: #caa045; }
+.arform-color-yellow .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/yellow/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-orange .api-button{ background: #ff6d00;}
+.arform-color-orange .api-button:hover{ background: #f7510d; }
+.arform-color-orange .api-button:active{ background: #e8441e; }
+.arform-color-orange .api-button:disabled{ background: #c8421e; }
+.arform-color-orange .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/orange/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-red .api-button{ background: #de002b;}
+.arform-color-red .api-button:hover{ background: #d02c47; }
+.arform-color-red .api-button:active{ background: #c32d46; }
+.arform-color-red .api-button:disabled{ background: #a52b45; }
+.arform-color-red .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/red/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-magenta .api-button{ background: #b82945;}
+.arform-color-magenta .api-button:hover{ background: #a52946; }
+.arform-color-magenta .api-button:active{ background: #912943; }
+.arform-color-magenta .api-button:disabled{ background: #7d2641; }
+.arform-color-magenta .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/magenta/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-orchid .api-button{ background: #d75cb6;}
+.arform-color-orchid .api-button:hover{ background: #c35aa2; }
+.arform-color-orchid .api-button:active{ background: #af588e; }
+.arform-color-orchid .api-button:disabled{ background: #9b527b; }
+.arform-color-orchid .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/orchid/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-navy .api-button{ background: #006dca; }
+.arform-color-navy .api-button:hover{ background: #005db9; }
+.arform-color-navy .api-button:active{ background: #0053a5; }
+.arform-color-navy .api-button:disabled{ background: #004991; }
+.arform-color-navy .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/navy/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-blue .api-button{ background: #01aae3; }
+.arform-color-blue .api-button:hover{ background: #0194cd; }
+.arform-color-blue .api-button:active{ background: #0180b9; }
+.arform-color-blue .api-button:disabled{ background: #016da5; }
+.arform-color-blue .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/blue/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green_sea .api-button{ background: #01b1af; }
+.arform-color-green_sea .api-button:hover{ background: #01a5a3; }
+.arform-color-green_sea .api-button:active{ background: #01918f; }
+.arform-color-green_sea .api-button:disabled{ background: #017371; }
+.arform-color-green_sea .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/green_sea/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green .api-button{ background: #009f4f; }
+.arform-color-green .api-button:hover{ background: #00914a; }
+.arform-color-green .api-button:active{ background: #007d3e; }
+.arform-color-green .api-button:disabled{ background: #006934; }
+.arform-color-green .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/green/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-irish_green .api-button{ background: #6db900; }
+.arform-color-irish_green .api-button:hover{ background: #5aa500; }
+.arform-color-irish_green .api-button:active{ background: #4a9100; }
+.arform-color-irish_green .api-button:disabled{ background: #3e7d00; }
+.arform-color-irish_green .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/irish_green/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-purple .api-button{ background: #9d57fb; }
+.arform-color-purple .api-button:hover{ background: #8a56e7; }
+.arform-color-purple .api-button:active{ background: #7455d0; }
+.arform-color-purple .api-button:disabled{ background: #684cba; }
+.arform-color-purple .api-star-rating i{ background: url("/bitrix/images/api.reviews/aspro/purple/sprite.png") no-repeat 0 -57px;}
+

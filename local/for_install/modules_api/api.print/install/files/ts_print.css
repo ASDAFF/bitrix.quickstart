@@ -1,0 +1,43 @@
+/* START system styles */
+#print_wrapper .errortext{
+    display: block;
+    background: #FFF1F0;
+    border-color: rgba(216, 80, 48, 0.3);
+    color: #D85030;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#print_panel{text-align: right;margin: 10px 0;}
+/* END system styles */
+
+/* START content styles */
+/*v 1.0.0 */
+#print_wrapper {color: #000000;font: 13px/21px Arial,sans-serif;}
+#print_wrapper .delimiter{overflow: hidden; clear: both; padding: 5px 0; margin: 1px 0;}
+#print_wrapper img[align="left"]{margin: 0 15px 10px 0;}
+#print_wrapper img[align="right"]{margin: 0 0 10px 15px;}
+#print_wrapper h1, #print_wrapper h2, #print_wrapper h3, #print_wrapper h4, #print_wrapper h5, #print_wrapper h6 { font-weight: bold; font-family: Arial,sans-serif;  color: #444444; clear: both;}
+#print_wrapper h1{ font-size: 30px; line-height: 35px; }
+#print_wrapper h2{ font-size: 25px; line-height: 30px; }
+#print_wrapper h3{ font-size: 20px; line-height: 25px; margin: 10px 0;}
+#print_wrapper h4{ font-size: 16px; line-height: 19px; margin: 10px 0;}
+#print_wrapper h5{ font-size: 14px; line-height: 17px; margin: 10px 0; }
+#print_wrapper h6{ font-size: 12px; line-height: 18px; margin: 10px 0; }
+
+/*v 1.0.4 */
+#print_wrapper [class*="preview-"]{display: block; margin-bottom:10px;}
+#print_wrapper [class*="preview-"] p{text-align: center; margin: 5px 0;}
+#print_wrapper .preview-align-none{}
+#print_wrapper .preview-align-middle{text-align: center}
+#print_wrapper .preview-align-middle p{margin: 5px auto;}
+#print_wrapper .preview-align-left{float: left;margin: 0 15px 10px 0;}
+#print_wrapper .preview-align-right{float: right;margin: 0 0 10px 15px;}
+#print_wrapper img.border{background: #FFFFFF;border: 1px solid #D5D5D5; padding: 5px;}
+#print_wrapper .post-item{overflow: hidden;}
+#print_wrapper table{font-size: 13px;}
+#print_wrapper table th{text-align: left;}
+#print_wrapper .table{border-collapse: collapse; border-spacing: 0; margin:0 0 15px;}
+/* END content styles */

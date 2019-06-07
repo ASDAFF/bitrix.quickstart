@@ -1,0 +1,28 @@
+.api-reviews .api-block-title,
+.api-reviews .api-block-sort,
+.api-reviews .api-block-title a,
+.api-reviews .api-block-sort a{ color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.2) }
+.api-reviews .api-block-sort a{border-color: #fff}
+.api-reviews .api-block-sort a.api-active,
+.api-reviews .api-block-sort a:hover{color: #000}
+
+.arbt-color-turquoise .api-block-title,
+.arbt-color-turquoise .api-block-sort{ background: #159EBB; }
+
+.arbt-color-green .api-block-title,
+.arbt-color-green .api-block-sort{ background: #70BB18; }
+
+.arbt-color-blue .api-block-title,
+.arbt-color-blue .api-block-sort{ background: #0083d1; }
+
+.arbt-color-yellow .api-block-title,
+.arbt-color-yellow .api-block-sort{ background: #F9A91D; }
+
+.arbt-color-red .api-block-title,
+.arbt-color-red .api-block-sort{ background: #E22B2B; }
+
+.arbt-color-black .api-block-title,
+.arbt-color-black .api-block-sort{ background: #222425; }
+.arbt-color-black .api-block-sort a.api-active,
+.arbt-color-black .api-block-sort a:hover{color: #ff6d00}
+

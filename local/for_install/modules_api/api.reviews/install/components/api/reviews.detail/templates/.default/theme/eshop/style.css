@@ -1,0 +1,29 @@
+.ardetail-color-turquoise .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/turquoise/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-turquoise .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/turquoise/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-turquoise .api-field-title{ color: #159EBB }
+.ardetail-color-turquoise .api-item{ background: rgba(21, 158, 187, 0.1); }
+
+.ardetail-color-green .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/green/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-green .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/green/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-green .api-field-title{ color: #70BB18 }
+.ardetail-color-green .api-item{ background: rgba(112, 187, 24, 0.1); }
+
+.ardetail-color-blue .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/blue/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-blue .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/blue/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-blue .api-field-title{ color: #0083d1 }
+.ardetail-color-blue .api-item{ background: rgba(0, 131, 209, 0.1); }
+
+.ardetail-color-yellow .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/yellow/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-yellow .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/yellow/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-yellow .api-field-title{ color: #F9A91D }
+.ardetail-color-yellow .api-item{ background: rgba(249, 169, 29, 0.1); }
+
+.ardetail-color-red .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/red/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-red .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/red/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-red .api-field-title{ color: #E22B2B }
+.ardetail-color-red .api-item{ background: rgba(226, 43, 43, 0.1); }
+
+.ardetail-color-black .api-wait-small:after{ background: url("/bitrix/images/api.reviews/eshop/black/wait.svg") no-repeat 50% 50% transparent; }
+.ardetail-color-black .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/black/sprite.png") no-repeat -16px 0 transparent; }
+.ardetail-color-black .api-field-title{ color: #222425 }
+.ardetail-color-black .api-item{ background: rgba(34, 36, 37, 0.1); }

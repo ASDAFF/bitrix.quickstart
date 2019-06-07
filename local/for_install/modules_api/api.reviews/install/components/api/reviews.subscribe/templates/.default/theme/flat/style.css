@@ -1,0 +1,2 @@
+.api-reviews .api-reviews-subscribe .api-link{ color: #444; font-size: 13px; border-bottom: 1px dotted #333; cursor: pointer; text-decoration: none; display: inline-block; }
+.api-reviews .api-reviews-subscribe .api-link:hover{ text-decoration: none; border-bottom: 1px solid; color: #eb6132; }

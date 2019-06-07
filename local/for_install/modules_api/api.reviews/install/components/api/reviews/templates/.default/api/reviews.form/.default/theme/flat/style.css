@@ -1,0 +1,79 @@
+.arform-color-orange1 .api-button{ background: #f7682c; color: #fff; border: none;}
+.arform-color-orange1 .api-button:hover{ background: #f7510d; }
+.arform-color-orange1 .api-button:active{ background: #e8441e; }
+.arform-color-orange1 .api-button:disabled{ background: #c8421e; }
+.arform-color-orange1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/orange1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-orange2 .api-button{ background: #f7682c; color: #fff; border: none; }
+.arform-color-orange2 .api-button:hover{ background: #f7510d; }
+.arform-color-orange2 .api-button:active{ background: #e8441e; }
+.arform-color-orange2 .api-button:disabled{ background: #c8421e; }
+.arform-color-orange2 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/orange2/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-orange3 .api-button{ background: #f7682c; color: #fff; border: none; }
+.arform-color-orange3 .api-button:hover{ background: #f7510d; }
+.arform-color-orange3 .api-button:active{ background: #e8441e; }
+.arform-color-orange3 .api-button:disabled{ background: #c8421e; }
+.arform-color-orange3 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/orange3/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-blue1 .api-button{ background: #33b5e5; color: #fff; border: 1px solid rgba(0, 0, 0, 0.3); }
+.arform-color-blue1 .api-button:hover{ background: #05aadf; }
+.arform-color-blue1 .api-button:active{ background: #0591c5; }
+.arform-color-blue1 .api-button:disabled{ background: #0573a8; }
+.arform-color-blue1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/blue1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-blue2 .api-button{ background: #0083d1; color: #fff; border: none; }
+.arform-color-blue2 .api-button:hover{ background: #006cb9; }
+.arform-color-blue2 .api-button:active{ background: #0063aa; }
+.arform-color-blue2 .api-button:disabled{ background: #00559b; }
+.arform-color-blue2 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/blue2/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-blue3 .api-button{ background: #3fbcef; color: #fff; border: none; }
+.arform-color-blue3 .api-button:hover{ background: #05aadf; }
+.arform-color-blue3 .api-button:active{ background: #0591c5; }
+.arform-color-blue3 .api-button:disabled{ background: #0573a8; }
+.arform-color-blue3 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/blue3/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-black1 .api-button{ background: #000; color: #fff; border: none; }
+.arform-color-black1 .api-button:hover{ background: #222; }
+.arform-color-black1 .api-button:active{ background: #444; }
+.arform-color-black1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/black1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-red1 .api-button{ background: #ed1c24; color: #fff; border: none; }
+.arform-color-red1 .api-button:hover{ background: #cb302b; }
+.arform-color-red1 .api-button:active{ background: #b11116 }
+.arform-color-red1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/red1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-pink1 .api-button{ background: #ff28a8; color: #fff; border: 1px solid #ff28a8; }
+.arform-color-pink1 .api-button:hover{ background: #ea0093; border: 1px solid #ea0093; }
+.arform-color-pink1 .api-button:active{ background: #ca0178; border: 1px solid #ca0178; }
+.arform-color-pink1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/pink1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-yellow1 .api-button{ background: #ffc733; color: #fff; border: 1px solid #eaae00; }
+.arform-color-yellow1 .api-button:hover{ background: #eaae00; border: 1px solid #daa300; }
+.arform-color-yellow1 .api-button:active{ background: #daa300; border: 1px solid #daa300; }
+.arform-color-yellow1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green1 .api-button{ background: #79c471; color: #fff; border: 1px solid #79c471; }
+.arform-color-green1 .api-button:hover{ background: #6eb966; border: 1px solid #6eb966; }
+.arform-color-green1 .api-button:active{ background: #5faa57; border: 1px solid #5faa57; }
+.arform-color-green1 .api-button:disabled{ background: #519b4e; }
+.arform-color-green1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/green1/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green2 .api-button{ background: #57bb8a; color: #fff; border: 1px solid #57bb8a; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);}
+.arform-color-green2 .api-button:hover{ background: #59af7d; border: 1px solid #59af7d; }
+.arform-color-green2 .api-button:active{ background: #50a070; border: 1px solid #50a070; }
+.arform-color-green2 .api-button:disabled{ background: #468c60; }
+.arform-color-green2 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/green2/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green3 .api-button{ background: #57bb8a; color: #fff; border: 1px solid #57bb8a; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);}
+.arform-color-green3 .api-button:hover{ background: #59af7d; border: 1px solid #59af7d; }
+.arform-color-green3 .api-button:active{ background: #50a070; border: 1px solid #50a070; }
+.arform-color-green3 .api-button:disabled{ background: #468c60; }
+.arform-color-green3 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/green3/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-purple1 .api-button{ background: #c790b9; color: #fff; border: 1px solid #c790b9; }
+.arform-color-purple1 .api-button:hover{ background: #b982ab; border: 1px solid #b982ab; }
+.arform-color-purple1 .api-button:active{ background: #aa749c; border: 1px solid #aa749c; }
+.arform-color-purple1 .api-button:disabled{ background: #9b658d; }
+.arform-color-purple1 .api-star-rating i{ background: url("/bitrix/images/api.reviews/flat/purple1/sprite.png") no-repeat 0 -57px;}

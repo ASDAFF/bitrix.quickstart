@@ -1,0 +1,55 @@
+.arlist-color-yellow .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/yellow/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-yellow .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/yellow/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-yellow .api-field-title{ color: #faaa00 }
+.arlist-color-yellow .api-item{ background: rgba(250, 170, 0, 0.1); }
+
+.arlist-color-orange .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/orange/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-orange .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/orange/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-orange .api-field-title{ color: #ff6d00 }
+.arlist-color-orange .api-item{ background: rgba(255, 109, 0, 0.1); }
+
+.arlist-color-red .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/red/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-red .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/red/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-red .api-field-title{ color: #de002b }
+.arlist-color-red .api-item{ background: rgba(222, 0, 43, 0.1); }
+
+.arlist-color-magenta .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/magenta/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-magenta .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/magenta/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-magenta .api-field-title{ color: #b82945 }
+.arlist-color-magenta .api-item{ background: rgba(184, 41, 69, 0.1); }
+
+.arlist-color-orchid .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/orchid/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-orchid .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/orchid/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-orchid .api-field-title{ color: #d75cb6 }
+.arlist-color-orchid .api-item{ background: rgba(215, 92, 182, 0.1); }
+
+.arlist-color-navy .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/navy/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-navy .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/navy/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-navy .api-field-title{ color: #006dca }
+.arlist-color-navy .api-item{ background: rgba(0, 109, 202, 0.1); }
+
+.arlist-color-blue .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/blue/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-blue .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/blue/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-blue .api-field-title{ color: #01aae3 }
+.arlist-color-blue .api-item{ background: rgba(1, 170, 227, 0.1); }
+
+.arlist-color-green_sea .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/green_sea/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-green_sea .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/green_sea/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-green_sea .api-field-title{ color: #01b1af }
+.arlist-color-green_sea .api-item{ background: rgba(1, 177, 175, 0.1); }
+
+.arlist-color-green .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/green/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-green .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/green/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-green .api-field-title{ color: #009f4f }
+.arlist-color-green .api-item{ background: rgba(0, 159, 79, 0.1); }
+
+.arlist-color-irish_green .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/irish_green/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-irish_green .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/irish_green/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-irish_green .api-field-title{ color: #6db900 }
+.arlist-color-irish_green .api-item{ background: rgba(109, 185, 0, 0.1); }
+
+.arlist-color-purple .api-wait-small:after{ background: url("/bitrix/images/api.reviews/aspro/purple/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-purple .api-icon-star{ background: url("/bitrix/images/api.reviews/aspro/purple/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-purple .api-field-title{ color: #9d57fb }
+.arlist-color-purple .api-item{ background: rgba(157, 87, 251, 0.1); }
+

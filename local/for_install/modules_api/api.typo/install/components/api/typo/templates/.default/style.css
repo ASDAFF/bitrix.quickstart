@@ -1,0 +1,252 @@
+.api-typo-modal-active body{ overflow: hidden !important; }
+.api-typo-modal{
+	color: #000;
+	display: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	background: rgba(0, 0, 0, 0.3);
+	-webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear;
+	touch-action: cross-slide-y pinch-zoom double-tap-zoom;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.api-typo-modal *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-typo-modal.api-typo-open{ }
+.api-typo-modal .api-typo-modal-dialog{
+	position: relative;
+	margin: 30px auto;
+	width: 450px;
+	max-width: 100%;
+	max-width: calc(100% - 20px);
+	background: #fff;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	-webkit-transform: translateY(-100px);
+	transform: translateY(-100px);
+	-webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+	transition: opacity 0.3s linear, transform 0.3s ease-out;
+}
+/* Phone landscape and smaller */
+@media (max-width: 767px){
+	.api-typo-modal .api-typo-modal-dialog{
+		width: auto;
+		margin: 10px auto;
+	}
+}
+.api-typo-open .api-typo-modal-dialog{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.api-typo-modal .api-typo-close{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.api-typo-modal .api-typo-close::-moz-focus-inner{ border: 0; padding: 0; }
+.api-typo-modal .api-typo-close{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box;
+	-webkit-appearance: none;
+}
+.api-typo-modal .api-typo-close:after{
+	display: block;
+	width: 14px;
+	height: 14px;
+	content: url("images/close.svg");
+}
+.api-typo-modal .api-typo-close:hover,
+.api-typo-modal .api-typo-close:focus{
+	opacity: 1;
+	filter: alpha(opacity=100);
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* component template info */
+.api-typo{
+	display: inline-block;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.25;
+
+	/*background: #0084bc;*/
+	/*color: #85cbea;*/
+	/*border: 1px solid #3bb9e4;*/
+	background: rgba(0, 0, 0, .2);
+	color: #454d5d;
+	border: 1px solid rgba(69, 77, 93, 0.5);
+}
+.api-typo-modal .api-header{
+	padding: 15px 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.api-typo-modal .api-title{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+.api-typo-modal .api-content{
+	padding: 20px;
+}
+.api-typo-modal .api-content input[type="text"]{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	font-family: inherit;
+	font-size: inherit;
+	border: 1px solid #c0c0be;
+	padding: 0 10px;
+}
+.api-typo-modal .api-content input[type="text"]:focus{
+	border: 1px solid #999;
+}
+.api-typo-modal .api-content input[type="text"][readonly]{
+	background-color: #fafafa;
+	color: #999;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	text-shadow: none;
+}
+.api-typo-modal .api-form .api-fields{
+	margin-bottom: 10px;
+}
+/*---------- .api-buttons ----------*/
+.api-typo-modal .api-buttons{
+	text-align: right;
+}
+.api-typo-modal .api-buttons button::-moz-focus-inner{
+	border: 0;
+	padding: 0;
+}
+.api-typo-modal .api-buttons button{
+	-webkit-appearance: none;
+	margin: 0;
+	font: inherit;
+	font-size: inherit;
+	overflow: visible;
+	color: #000;
+	text-transform: none;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 12px;
+	background: #fff;
+	vertical-align: middle;
+	line-height: 28px;
+	min-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 3px;
+	transition: border-color .1s ease-out 0s;
+}
+.api-typo-modal .api-buttons button:not(:disabled){
+	cursor: pointer;
+}
+.api-typo-modal .api-buttons button:hover,
+.api-typo-modal .api-buttons button:focus{
+	color: #000;
+	background-color: #fafafa;
+	border-color: rgba(0, 0, 0, 0.3);
+}
+.api-typo-modal .api-buttons button:active{
+	color: #000;
+	background-color: #eee;
+}
+.api-typo-modal .api-buttons .api-button-send{
+	color: #000;
+	/*background-color: #ffdb4d;*/
+	-webkit-transition: background .1s ease-out 0s;
+	transition: background .1s ease-out 0s;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .07);
+	border: 1px solid rgba(0, 0, 0, .2);
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffdf60+0,ffcc00+100 */
+	background: #ffdf60; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffdf60 0%, #fc0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffdf60 0%, #fc0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffdf60 0%, #fc0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf60', endColorstr='#ffcc00', GradientType=0); /* IE6-9 */
+}
+.api-typo-modal .api-buttons .api-button-send:hover{
+	color: #000;
+	/*background-color: #ffd633;*/
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffe681+0,ffd428+100 */
+	background: #ffe681; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffe681 0%, #ffd428 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffe681 0%, #ffd428 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffe681 0%, #ffd428 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe681', endColorstr='#ffd428', GradientType=0); /* IE6-9 */
+}
+.api-typo-modal .api-buttons .api-button-send:focus{
+	color: #000;
+	/*background-color: #ffd633;*/
+	box-shadow: inset 0 0 0 1px rgba(193, 154, 0, .2), 0 0 6px 2px rgba(255, 204, 0, .7);
+}
+.api-typo-modal .api-buttons .api-button-send:active{
+	color: #000;
+	/*background-color: #ffd633;*/
+	/*box-shadow: inset 0 2px 2px -1px rgba(0, 0, 0, .3), 0 0 2px 3px rgba(255, 214, 48, 0.4);*/
+	box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, .5), 0 0 6px 2px rgba(255, 204, 0, .7);
+}
+.api-typo-modal .api-buttons .api-button-send:disabled{
+	background: #e7e7e7;
+	color: #999;
+	border-color: #ddd;
+	box-shadow: none;
+	text-shadow: none;
+}
+/*---------- .api-alert ----------*/
+.api-typo-modal .api-alert{ }
+.api-typo-modal .api-alert span{
+	background: url("images/alert.png") -36px 0;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -18px;
+}
+.api-typo-modal .api-alert-danger{ background-color: #f2dede; border-color: #ebcccc; color: #a94442; }
+.api-typo-modal .api-alert-danger span{ background-position: 0 0; }
+.api-typo-modal .api-alert-warning{ background-color: #fcf8e3; border-color: #faf2cc; color: #8a6d3b; }
+.api-typo-modal .api-alert-warning span{ background-position: -72px 0; }
+.api-typo-modal .api-alert-success{
+	background: #fcfcfb;
+	padding: 25px 15px;
+	color: #000;
+	text-align: center;
+}
+.api-typo-modal .api-alert-success span{
+	background: transparent url("images/success.svg") no-repeat scroll 0 0 / contain;
+	height: 80px;
+	width: 80px;
+	margin: 0 0 20px;
+	display: inline-block;
+	position: relative;
+	top: auto;
+	left: auto;
+}
+.api-typo-modal .api-alert-title{
+	display: block;
+	margin: 0;
+	font-size: 26px;
+	line-height: 32px;
+}
+.api-typo-modal .api-alert-success .api-alert-desc{ margin: 15px 0 0 }

@@ -1,0 +1,35 @@
+.arform-color-turquoise .api-button{ background: #159EBB;}
+.arform-color-turquoise .api-button:hover{ background: #1588A5; }
+.arform-color-turquoise .api-button:active{ background: #157491; }
+.arform-color-turquoise .api-button:disabled{ background: #155F7D; }
+.arform-color-turquoise .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/turquoise/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-green .api-button{ background: #70BB18;}
+.arform-color-green .api-button:hover{ background: #5CA517; }
+.arform-color-green .api-button:active{ background: #499118; }
+.arform-color-green .api-button:disabled{ background: #407D18; }
+.arform-color-green .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/green/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-blue .api-button{ background: #0083d1;}
+.arform-color-blue .api-button:hover{ background: #006DB9; }
+.arform-color-blue .api-button:active{ background: #005BA5; }
+.arform-color-blue .api-button:disabled{ background: #004E91; }
+.arform-color-blue .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/blue/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-yellow .api-button{ background: #F9A91D;}
+.arform-color-yellow .api-button:hover{ background: #E1921D; }
+.arform-color-yellow .api-button:active{ background: #CD801D; }
+.arform-color-yellow .api-button:disabled{ background: #B9721E; }
+.arform-color-yellow .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/yellow/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-red .api-button{ background: #E22B2B;}
+.arform-color-red .api-button:hover{ background: #CD2B2B; }
+.arform-color-red .api-button:active{ background: #B92B2B; }
+.arform-color-red .api-button:disabled{ background: #A52828; }
+.arform-color-red .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/red/sprite.png") no-repeat 0 -57px;}
+
+.arform-color-black .api-button{ background: #222425;}
+.arform-color-black .api-button:hover{ background: #0B0D0E; }
+.arform-color-black .api-button:active{ background: #000; }
+.arform-color-black .api-button:disabled{ background: #5F5F5F; }
+.arform-color-black .api-star-rating i{ background: url("/bitrix/images/api.reviews/eshop/black/sprite.png") no-repeat 0 -57px;}

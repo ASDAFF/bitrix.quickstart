@@ -1,0 +1,42 @@
+/* General
+ ========================================================================== */
+.api-reviews-subscribe *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-reviews-subscribe{ display: inline-block; line-height: 18px; position: relative; }
+.api-reviews-subscribe .api-link{ color: #444; font-size: 13px; border-bottom: 1px dotted #333; cursor: pointer; text-decoration: none; display: inline-block; }
+.api-reviews-subscribe .api-link:hover{ text-decoration: none; border-bottom: 1px solid; color: #eb6132; }
+.api-reviews-subscribe .api-form-edge{ position: absolute; overflow: hidden; left: 50%; top: -15px; margin-left: -12px; width: 24px; height: 16px; }
+.api-reviews-subscribe .api-form-edge:after{ position: absolute; content: ''; left: 50%; top: 15px; width: 12px; height: 12px; margin: -6px; background-color: #fff;
+	-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2); box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+	-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);
+}
+.api-reviews-subscribe .api-subscribe-form{
+	display: none; text-align: center; position: absolute; top: 30px; width: 100%; padding: 15px; z-index: 10; background: #fff;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 8px 30px -5px rgba(0, 0, 0, .5); -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 8px 30px -5px rgba(0, 0, 0, .5); box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 8px 30px -5px rgba(0, 0, 0, .5);
+}
+.api-reviews-subscribe .api-form-row + .api-form-row{ margin-top: 10px }
+.api-reviews-subscribe input[type="text"]{ height: 25px; width: 100%; padding: 4px 6px; margin: 0; border: 1px solid #ddd; background: #fff; color: #444;
+	-webkit-transition: all linear .2s; -moz-transition: all linear .2s; -ms-transition: all linear .2s; -o-transition: all linear .2s; transition: all linear .2s;
+	-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+}
+.api-reviews-subscribe input[type="text"]:focus{ outline: 0; color: #444; border: 1px solid #cacaca; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .2); box-shadow: 0 0 3px rgba(0, 0, 0, .2); }
+.api-reviews-subscribe input[type="text"][readonly]{ background-color: #fafafa; color: #999; border: 1px solid #ddd; text-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.api-reviews-subscribe .api-button{ width: 100% }
+.api-reviews-subscribe .api-field-error{font-size: 12px;line-height: 14px;color: #fff;background: #ee4055;padding: 1px 5px;}
+.api-reviews-subscribe .api-form-success{text-align: center}
+.api-reviews-subscribe .api-form-success span{display: inline-block;background: url("images/check.svg") no-repeat 0 0;width: 24px;height: 24px;}
+.api-reviews-subscribe .api-form-success div{margin: 5px 0 0;color: #6FBF4A;}
+
+/* Wait
+ ========================================================================== */
+#api-subscribe-wait{ display: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 9999; overflow: hidden; }
+#api-subscribe-wait .api-image{
+	z-index: 2; position: absolute; top: 50%; left: 50%; height: 24px; width: 24px; margin: -12px 0 0 -12px;
+	background-image: url("images/wait.svg"); background-repeat: no-repeat; background-size: contain;background-color: rgba(255, 255, 255, .7);
+	-webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+	-webkit-box-shadow: 0 0 7px 3px rgba(255, 255, 255, .7); -moz-box-shadow: 0 0 7px 3px rgba(255, 255, 255, .7); box-shadow: 0 0 7px 3px rgba(255, 255, 255, .7);
+	-webkit-animation:loader 5s linear infinite; -o-animation:loader 5s linear infinite; animation:loader 5s linear infinite;
+}
+@keyframes loader{
+	100%{-webkit-transform: rotate(-360deg);transform: rotate(-360deg); }
+}
+#api-subscribe-wait .api-bg{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: #fff; opacity: .4; }

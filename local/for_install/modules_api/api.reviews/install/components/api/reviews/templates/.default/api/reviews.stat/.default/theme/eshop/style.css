@@ -1,0 +1,29 @@
+.arstat-color-turquoise .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/turquoise/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-turquoise .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/turquoise/sprite.png") no-repeat 0 -15px; }
+.arstat-color-turquoise .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/turquoise/sprite.png") no-repeat 0 -36px; }
+.arstat-color-turquoise .api-info .api-info-bar{ background-color: #159EBB; }
+
+.arstat-color-green .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/green/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-green .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/green/sprite.png") no-repeat 0 -15px; }
+.arstat-color-green .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/green/sprite.png") no-repeat 0 -36px; }
+.arstat-color-green .api-info .api-info-bar{ background-color: #70BB18; }
+
+.arstat-color-blue .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/blue/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-blue .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/blue/sprite.png") no-repeat 0 -15px; }
+.arstat-color-blue .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/blue/sprite.png") no-repeat 0 -36px; }
+.arstat-color-blue .api-info .api-info-bar{ background-color: #0083d1; }
+
+.arstat-color-yellow .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/yellow/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-yellow .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/yellow/sprite.png") no-repeat 0 -15px; }
+.arstat-color-yellow .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/yellow/sprite.png") no-repeat 0 -36px; }
+.arstat-color-yellow .api-info .api-info-bar{ background-color: #F9A91D; }
+
+.arstat-color-red .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/red/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-red .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/red/sprite.png") no-repeat 0 -15px; }
+.arstat-color-red .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/red/sprite.png") no-repeat 0 -36px; }
+.arstat-color-red .api-info .api-info-bar{ background-color: #E22B2B; }
+
+.arstat-color-black .api-icon-star{ background: url("/bitrix/images/api.reviews/eshop/black/sprite.png") no-repeat 0 0 transparent; }
+.arstat-color-black .api-stars-empty{ background: url("/bitrix/images/api.reviews/eshop/black/sprite.png") no-repeat 0 -15px; }
+.arstat-color-black .api-stars-full{ background: url("/bitrix/images/api.reviews/eshop/black/sprite.png") no-repeat 0 -36px; }
+.arstat-color-black .api-info .api-info-bar{ background-color: #222425; }

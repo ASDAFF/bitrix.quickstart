@@ -1,0 +1,29 @@
+/* General
+ ========================================================================== */
+.api-reviews-recent *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-reviews-recent{border: 1px solid #ddd;margin-bottom: 30px;border-radius: 4px; font-size: 14px;}
+.api-reviews-recent .api-header{padding: 8px 10px;font-size: 16px;background-color: #f5f5f5;border-bottom: 1px solid #ddd; text-align: center; text-transform: uppercase; font-weight: bold}
+.api-reviews-recent .api-footer{padding: 8px 10px;background-color: #f5f5f5;text-align: center;}
+.api-reviews-recent .api-item{border-bottom: 1px solid #ddd;padding: 8px 10px;}
+.api-reviews-recent .api-field-title{}
+.api-reviews-recent .api-field-advantage{ color: #0b700d }
+.api-reviews-recent .api-field-disadvantage{ color: #c51111 }
+.api-reviews-recent .api-icon-star{display: inline-block;width: 16px;height: 15px;background-repeat: no-repeat;background-position: -16px 0;background-color: transparent;}
+.api-reviews-recent .api-icon-active{ background-position: 0 0; }
+.api-reviews-recent .api-field-date{margin: 5px 0 0; font-size: 12px;	line-height: 18px;	color: #999; font-style: italic;}
+/* Color
+ ========================================================================== */
+.arrecent-color-orange1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/orange1/sprite.png"); }
+.arrecent-color-orange2 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/orange2/sprite.png"); }
+.arrecent-color-orange3 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/orange3/sprite.png"); }
+.arrecent-color-blue1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/blue1/sprite.png"); }
+.arrecent-color-blue2 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/blue2/sprite.png"); }
+.arrecent-color-blue3 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/blue3/sprite.png"); }
+.arrecent-color-black1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/black1/sprite.png"); }
+.arrecent-color-red1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/red1/sprite.png"); }
+.arrecent-color-pink1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/pink1/sprite.png"); }
+.arrecent-color-yellow1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png"); }
+.arrecent-color-green1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/green1/sprite.png"); }
+.arrecent-color-green2 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/green2/sprite.png"); }
+.arrecent-color-green3 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/green3/sprite.png"); }
+.arrecent-color-purple1 .api-icon-star{ background-image: url("/bitrix/images/api.reviews/flat/purple1/sprite.png"); }

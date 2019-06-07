@@ -1,0 +1,17 @@
+.api-reviews-sort *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.api-reviews-sort{ font-size: 13px; overflow: hidden }
+.api-reviews-sort > div{overflow: hidden}
+.api-reviews-sort .api-left{ float: left }
+.api-reviews-sort .api-right{ float: right; text-align: right }
+.api-reviews-sort .api-sort-label{ float: left; margin: 0 15px 5px 0 }
+.api-reviews-sort a{ text-decoration: none !important; position: relative; margin: 0 40px 5px 0; border-bottom: 1px dotted #333; font-size: 13px; color: #444; display: block; float: left; }
+.api-reviews-sort a.api-active,
+.api-reviews-sort a:hover{ text-decoration: none; border-bottom: 1px solid; color: #eb6132 }
+.api-reviews-sort a:after{ content: " "; position: absolute; display: block; right: -22px; top: 50%; margin-top: -3px; width: 17px; height: 12px; background: url("/bitrix/images/api.reviews/sprite.png") no-repeat 0 0 transparent; }
+.api-reviews-sort a.api-active.desc:after{ background-position: -17px 0; }
+.api-reviews-sort a.api-active.asc:after{ background-position: -34px 0; }
+
+/* @media */
+@media screen and (max-width: 1024px){
+	.api-reviews-sort > div{ width: 100% !important; float: none !important; text-align: left !important; }
+}

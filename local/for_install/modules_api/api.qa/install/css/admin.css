@@ -1,0 +1,11 @@
+/* list styles */
+.api-qa .qa-active{display: block;vertical-align: middle;width: 14px;height: 14px;}
+.api-qa .qa-green{background: url("images/green.gif") no-repeat 0 0;}
+.api-qa .qa-red{background: url("images/red.gif") no-repeat 0 0;}
+
+/* .topbar */
+.api-qa .topbar{margin: 0 0 15px;}
+.api-qa .topbar > div{display: inline-block}
+.api-qa .topbar a{text-decoration: none}
+.api-qa .topbar .active{color: #000}
+

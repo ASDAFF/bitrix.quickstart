@@ -1,0 +1,17 @@
+<?
+if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
+	die();
+
+$MESS['AOS_TPL_SHIPMENT_BLOCK']                     = 'Отгрузка';
+$MESS['AOS_TPL_SHIPMENT_BLOCK_EDIT_SHIPMENT_TITLE'] = 'Отгрузка №#ID# от #DATE_INSERT#';
+$MESS['AOS_TPL_SHIPMENT_DELIVERY_STATUS']           = 'Статус';
+$MESS['AOS_TPL_SHIPMENT_DELIVERY_PRICE']            = 'Стоимость';
+
+$MESS['AOS_TPL_SHIPMENT_DELIVERY_SERVICE']   = 'Служба доставки';
+$MESS['AOS_TPL_SHIPMENT_ALLOW_DELIVERY']     = 'Доставка разрешена';
+$MESS['AOS_TPL_SHIPMENT_ALLOW_DELIVERY_YES'] = 'Да';
+$MESS['AOS_TPL_SHIPMENT_ALLOW_DELIVERY_NO']  = 'Нет';
+
+$MESS['AOS_TPL_SHIPMENT_DEDUCTED']     = 'Отгружено';
+$MESS['AOS_TPL_SHIPMENT_DEDUCTED_YES'] = 'Да';
+$MESS['AOS_TPL_SHIPMENT_DEDUCTED_NO']  = 'Нет';

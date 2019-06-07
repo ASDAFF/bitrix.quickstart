@@ -5,7 +5,7 @@
 .api_alert_dialog{ margin: 30px auto; padding: 0; max-width: 100%; max-width: calc(100% - 20px); overflow: hidden; position: relative; background: #fff; color: #000; text-shadow: none; text-align: center; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);}
 .api_alert .api_alert_header{ padding: 12px 20px; font-size: 18px; font-weight: bold; line-height: normal; text-align: left; border-bottom: 1px solid #e5e5e5;}
 .api_alert .api_alert_content{ font-size: 16px; padding: 15px 20px;}
-.api_alert .api_alert_footer{ text-align: center; border-top: 1px solid rgba(0, 0, 0, .1); padding: 15px 20px;}
+.api_alert .api_alert_footer{ text-align: center; border-top: 1px solid rgba(0, 0, 0, .1); padding-top: 15px;}
 .api_alert .api_title{ font-size: 17px; text-align: center; font-weight: bold; margin: 0 0 15px; display: block;}
 .api_alert .api_content{ margin: 15px 0;}
 .api_alert .api_title + .api_content{margin-top: 10px;}
@@ -22,6 +22,7 @@
 .api_alert_error .api_alert_icon{background: url("images/alert/error.png") no-repeat 50% 50%;}
 .api_alert_info .api_alert_icon{background: url("images/alert/info.svg") no-repeat 50% 50%;}
 .api_alert .api_alert_busy{cursor: wait !important;height: 5px;background: url("images/button/busy.gif") no-repeat 50% 50% transparent;}
+.api_alert .api_alert_wait{position: absolute;left: 0;top: 0;right: 0;bottom: 0;cursor: wait !important;background: url("images/button/busy.gif") no-repeat 50% 50% rgba(255,255,255,.8);}
 /*--- Themes ---*/
 /*--- jbox ---*/
 .api_alert_theme_jbox.api_alert_info .api_alert_dialog{color: #fff; background: #07d;}

@@ -1,16 +1,14 @@
-/**
+/*!
  * $.fn.apiForm
  */
-(function ($) {
+(function ($, undefined ) {
 
 	"use strict"; // Hide scope, no $ conflict
 
-	// настройки со значением по умолчанию
 	var defaults = {};
 	var options = {};
 
 	var methods = {
-
 		init: function (params) {
 
 			var options = $.extend(true, {}, defaults, options, params);
@@ -19,13 +17,12 @@
 				this.data('apiForm', options);
 			}
 
-			// код плагина
+			if($(this).hasClass('api_form_style')){
 
-			//-----------------------------------//
-			//            api_checkbox           //
-			//-----------------------------------//
-			$(this).find('.api_checkbox').each(function () {
-				$(this).on('click', function (e) {
+				//-----------------------------------//
+				//            api_checkbox           //
+				//-----------------------------------//
+				$(this).find('.api_checkbox').on('click touch', function (e) {
 					e.preventDefault();
 
 					if (!$(this).is('.api_active')) {
@@ -35,22 +32,19 @@
 						$(this).removeClass('api_active').find(':checkbox').prop('checked', false).change();
 					}
 				});
-			});
 
 
-			//-----------------------------------//
-			//            api_radio              //
-			//-----------------------------------//
-			$(this).find('.api_radio').each(function () {
-				$(this).on('click', function (e) {
+				//-----------------------------------//
+				//            api_radio              //
+				//-----------------------------------//
+				$(this).find('.api_radio').on('click touch', function (e) {
 					e.preventDefault();
 
 					$(this).addClass('api_active').siblings().removeClass('api_active');
 					$(this).find(':radio').prop('checked', true).change();
 
 				});
-			});
-
+			}
 
 			return this;
 		}

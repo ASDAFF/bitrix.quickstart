@@ -1,0 +1,89 @@
+.api_tooltip *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api_tooltip{
+	display: block;
+	opacity: 0;
+	/*pointer-events: none;*/
+	position: absolute;
+	z-index: 1030;
+}
+.api_tooltip_dialog{}
+.api_tooltip_active{opacity: 1 !important;}
+.api_tooltip_content{max-height: 100%;max-width: 100%;overflow: auto;}
+.api_tooltip:after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px dashed #565656
+}
+.api_tooltip_top_left:after,
+.api_tooltip_top_right:after,
+.api_tooltip_top:after{
+	bottom: -8px;
+	border-top-style: solid;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	/*border-top-color: #000*/
+}
+.api_tooltip_bottom_left:after,
+.api_tooltip_bottom_right:after,
+.api_tooltip_bottom:after{
+	top: -5px;
+	border-bottom-style: solid;
+	border-top: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	/*border-bottom-color: #000*/
+}
+.api_tooltip_bottom:after, .api_tooltip_top:after{
+	left: 50%;
+	margin-left: -5px
+}
+.api_tooltip_bottom_left:after, .api_tooltip_top_left:after{
+	left: 10px
+}
+.api_tooltip_bottom_right:after, .api_tooltip_top_right:after{
+	right: 10px
+}
+.api_tooltip_left:after{
+	right: -8px;
+	top: 50%;
+	margin-top: -10px;
+	border-left-style: solid;
+	border-right: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	/*border-left-color: #565656*/
+}
+.api_tooltip_right:after{
+	left: -8px;
+	top: 50%;
+	margin-top: -10px;
+	border-right-style: solid;
+	border-left: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	/*border-right-color: #565656*/
+}
+/* animation */
+.api_tooltip_fade{
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	-ms-transition-property: opacity;
+	transition-property: opacity;
+}
+/* theme */
+.api_tooltip_theme_default .api_tooltip_dialog{
+	background: #565656;
+	border: 2px solid #000;
+	-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+	/*text-shadow:0 1px 0 rgba(0,0,0,.5)*/
+}
+.api_tooltip_theme_default .api_tooltip_content{
+	color: #fff;
+	line-height: 18px;
+	padding: 6px 14px;
+}

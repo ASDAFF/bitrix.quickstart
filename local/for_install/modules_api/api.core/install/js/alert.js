@@ -1,12 +1,15 @@
-/**
+/*!
  * $.fn.apiAlert
  */
-(function ($) {
+(function ($, undefined ) {
+
+	"use strict"; // Hide scope, no $ conflict
 
 	var defaults = {
 		type: 'alert', //['confirm','prompt']
 		class: 'info', //['info', 'error', 'warning', 'success']
 		//single: true,
+		close: true,
 		theme: 'default', //['jbox', 'noty', 'sweetalert', 'dark', 'uikit2', 'bootstrap4']
 		title: '',
 		content: '',
@@ -34,9 +37,9 @@
 		form: {
 			text: '',
 		},
-		load:{
-			url:'',
-			data:{},
+		load: {
+			url: '',
+			data: {},
 			callback: function (responseText, textStatus, jqXHR) {
 				//console.info(responseText);
 				//console.info(textStatus);
@@ -60,6 +63,7 @@
 
 		init: function (params) {
 
+			var $html = $('html');
 			var options = $.extend(true, {}, defaults, params);
 
 			if (!this.data('apiAlert')) {
@@ -71,8 +75,11 @@
 					//options.title = 'Are you sure?';
 				}
 
+				if (!$html.hasClass('api-alert-init'))
+					$html.addClass('api-alert-init');
+
 				//api_alert_alert
-				$('html').addClass('api_alert_active');
+				$html.addClass('api_alert_active');
 
 				if (!$('.api_alert_overlay').length) {
 					$('body').append('<div class="api_alert_overlay"/>');
@@ -86,7 +93,7 @@
 				html += '<div class="api_alert_close api_icon_close">&#10005;</div>';
 
 				if (options.header.text.length) {
-					html += '<div class="api_alert_header" style="text-align: '+ options.header.align +'">' + options.header.text + '</div>';
+					html += '<div class="api_alert_header" style="text-align: ' + options.header.align + '">' + options.header.text + '</div>';
 				}
 
 				//start content
@@ -100,9 +107,8 @@
 					html += '<div class="api_title">' + options.title + '</div>';
 				}
 
-				//if (options.content.length) {
-					html += '<div class="api_content">' + options.content + '</div>';
-				//}
+				//START content!!!
+				html += '<div class="api_content">' + options.content;
 
 				if (options.input.text.length) {
 					html += '<div class="api_input"><input type="text" value="' + options.input.text + '" class="' + options.input.class + '" placeholder="' + options.input.placeholder + '"></div>';
@@ -118,14 +124,14 @@
 				}
 
 				//{{buttons}}
-				if(!options.hideButtons)
+				if (!options.hideButtons)
 					html += '<div class="api_buttons">{{buttons}}</div>';
 
-				//end content
+				//END content!!!
 				html += '</div>';
 
 				if (options.footer.text.length) {
-					html += '<div class="api_alert_footer" style="text-align: '+ options.footer.align +'">' + options.footer.text + '</div>';
+					html += '<div class="api_alert_footer" style="text-align: ' + options.footer.align + '">' + options.footer.text + '</div>';
 				}
 
 				html += '</div>';
@@ -171,7 +177,9 @@
 				//confirm
 				$(alertId).on('click', '.api_alert_confirm', function () {
 					options.callback.onConfirm.call(options, true);
-					methods.close(alertId);
+					if (options.close) {
+						methods.close(alertId);
+					}
 				});
 
 				//prompt
@@ -187,7 +195,9 @@
 						promptData = promptInput.val();
 
 					options.callback.onPrompt.call(options, true, promptData);
-					methods.close(alertId);
+					if (options.close) {
+						methods.close(alertId);
+					}
 				});
 
 				//$.load()
@@ -198,7 +208,7 @@
 					$(alertId).find('.api_content').load(
 						 options.load.url,
 						 options.load.data,
-						 function(responseText, textStatus, jqXHR){
+						 function (responseText, textStatus, jqXHR) {
 							 $(alertId).find('.api_alert_header, .api_alert_footer').show();
 							 $.fn.apiAlert('resize', options);
 							 options.load.callback.call(options, responseText, textStatus, jqXHR);
@@ -230,6 +240,13 @@
 				$(dialog).css({top: ''}, 100);
 			}
 
+		},
+
+		showWait: function (alertId) {
+			$(alertId).find('.api_alert_content').append('<div class="api_alert_wait"></div>');
+		},
+		hideWait: function (alertId) {
+			$(alertId).find('.api_alert_wait').remove();
 		},
 	};
 

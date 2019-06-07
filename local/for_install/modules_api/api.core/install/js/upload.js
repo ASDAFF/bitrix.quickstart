@@ -7,7 +7,7 @@
 
 	// Настройки по умолчанию
 	var defaults = {
-
+		formId: '',
 		url: document.URL,
 		method: 'POST',
 		extraData: {},
@@ -30,7 +30,16 @@
 		callback: {
 			onLoad: function (node, event) {},
 			onAbort: function (node, event) {},
-			onLoadend: function (node, event) {},
+			onLoadStart: function (node, event) {
+				if(this.formId.length){
+					$(this.formId).find(':submit').attr('disabled',true);
+				}
+			},
+			onLoadEnd: function (node, event) {
+				if(this.formId.length){
+					$(this.formId).find(':submit').attr('disabled',false);
+				}
+			},
 			onError: function (node, errors) {
 				//console.log('this', this);
 				var mess = '';
@@ -259,7 +268,7 @@
 
 
 			/////////////////////////////////////////////////////////////////////////
-			//Отслеживание событий "исходящего"  процесса загрузки (onloadstart,timeout)
+			//Отслеживание событий "исходящего"  процесса загрузки (loadstart,timeout)
 			/////////////////////////////////////////////////////////////////////////
 
 			// состояние передачи от сервера к клиенту (загрузка)
@@ -301,10 +310,17 @@
 				//console.error('abort','Abort uploading on server');
 			}, false);
 
+			//Начало загрузки
+			xhr.upload.addEventListener("loadstart", function(e) {
+				//Передача данных завершена (но мы не знаем, успешно ли)
+				settings.callback.onLoadStart.call(settings, node, e);
+				//console.info('loadstart','Data transfer complete');
+			}, false);
+
 			//Также возможно засечь все три события, завершающие загрузку (abort, load, or error) через событие loadend:
 			xhr.upload.addEventListener("loadend", function(e) {
 				//Передача данных завершена (но мы не знаем, успешно ли)
-				settings.callback.onLoadend.call(settings, node, e);
+				settings.callback.onLoadEnd.call(settings, node, e);
 				//console.error('loadend','Data transfer complete');
 			}, false);
 

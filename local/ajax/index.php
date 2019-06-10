@@ -19,14 +19,14 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     if (!array_key_exists("COMMENT", $_POST["CALLBACK"]))
         $_POST["CALLBACK"]["COMMENT"] = "-";
 
     CEvent::SendImmediate("CALLBACK_FORM", $SITE_ID, $_POST["CALLBACK"]);
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -44,7 +44,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     if (!array_key_exists("COMMENT", $_POST["CALLBACK_MODAL"]))
         $_POST["CALLBACK_MODAL"]["COMMENT"] = "-";
@@ -65,7 +65,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     CEvent::SendImmediate("CALLBACK_FORM", $SITE_ID, $_POST["CALLBACK_MODAL"]);
     //else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -83,9 +83,9 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
     CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["FEEDBACK"]);
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -103,9 +103,9 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
     CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["FEEDBACK_MODAL"]);
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -121,7 +121,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     $SITE_ID = $_POST["VACANCIES"]["SITE_ID"];
     $arr["MESSAGE"]["ERROR"] = 0;
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     $dbSite = CSite::GetByID($SITE_ID);
     if ($arSite = $dbSite->Fetch()) {
@@ -131,7 +131,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     }
 
     if (!empty($_FILES['FILE']['tmp_name'])) {
-        SendForms::convert_charset_array($_FILES, "UTF-8", $LANG_CHARSET);
+        //SendForms::convert_charset_array($_FILES, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
         //создаем папку загрузки файла
         $uploaddir = $SITE_DIR . 'images/' . md5(time()) . '/';
@@ -149,7 +149,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arr["MESSAGE"]["ERROR"] < 1)
         CEvent::SendImmediate("VACANCIES_FORM", $SITE_ID, $_POST["VACANCIES"]);
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -167,7 +167,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     if (!array_key_exists("STARS", $_POST["COMMENTS"]))
         $_POST["COMMENTS"]["STARS"] = "";
@@ -190,7 +190,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         CEvent::SendImmediate("COMMENTS_FORM", $SITE_ID, $_POST["COMMENTS"]);
     else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -208,7 +208,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     // save to infoblock information
     \Bitrix\Main\Loader::includeModule("iblock");
@@ -232,7 +232,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         CEvent::SendImmediate("ORDER_FORM", $SITE_ID, $_POST["ORDER"]);
     else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -250,9 +250,10 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
+
     CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["CONTACTS"]);
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -270,9 +271,9 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
     CEvent::SendImmediate("FEEDBACK_FORM", $SITE_ID, $_POST["CONTACTS_MODAL"]);
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -290,7 +291,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
     // save to infoblock information
     \Bitrix\Main\Loader::includeModule("iblock");
@@ -316,7 +317,7 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
         CEvent::SendImmediate("ORDER_SCHEME_FORM", $SITE_ID, $_POST["ORDER_SCHEME"]);
     else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;
@@ -330,17 +331,16 @@ if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "P
     $_POST["NETWORK"]["DATE_ACTIVE_FROM"] = ConvertTimeStamp(time(), "FULL");
     $arr["MESSAGE"]["ERROR"] = 0;
 
-    DevDebug::log($_POST);
 
     $dbSite = CSite::GetByID($SITE_ID);
     if ($arSite = $dbSite->Fetch())
         $LANG_CHARSET = $arSite["CHARSET"];
 
-    SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+    //SendForms::convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);// если сайт работает в кодировке windows-1251 убрать комментарии
 
         CEvent::SendImmediate("NETWORK", $SITE_ID, $_POST["NETWORK"]);
 
-    SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+    //SendForms::convert_charset_array($arr, $LANG_CHARSET, "UTF-8");// если сайт работает в кодировке windows-1251 убрать комментарии
     echo json_encode($arr);
 
     return;

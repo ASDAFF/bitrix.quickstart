@@ -29,13 +29,26 @@ $arLibs = array(
      */
 
     'jquery_ui' => array(
-        'js' => '/local/lib/frontend/jquery_ui/jquery-ui.min.js',
-        'css' => '/local/lib/frontend/jquery_ui/jquery-ui.min.css',
+        'js' => '/local/codenails/frontend/lib/jquery_ui/jquery-ui.min.js',
+        'css' => '/local/codenails/frontend/lib/jquery_ui/jquery-ui.min.css',
         'rel' => array('jquery'),
     ),
     'jquery_fancybox' => array(
         'js' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.js',
         'css' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.css',
+        'rel' => array('jquery'),
+    ),
+    'owl_carousel' => array(
+        'js' => '/local/codenails/frontend/lib/owl_carousel/owl.carousel.min.js',
+        'css' => '/local/codenails/frontend/lib/owl_carousel/assets/owl.carousel.min.css',
+        'rel' => array('jquery'),
+    ),
+    'jquery_mousewheel' => array(
+        'js' => '/local/codenails/frontend/lib/jquery_mousewheel/jquery.mousewheel.min.js',
+        'rel' => array('jquery'),
+    ),
+    'jquery_touchSwipe' => array(
+        'js' => '/local/codenails/frontend/lib/jquery_touchSwipe/jquery.touchSwipe.min.js',
         'rel' => array('jquery'),
     ),
     'iblock_props' => array(
@@ -44,8 +57,12 @@ $arLibs = array(
     ),
     'mask_input' => array(
         'js' => '/local/codenails/frontend/lib/mask_input/mask.input.js',
+        'rel' => array('jquery'),
+    ),
+    'jquery_validate' => array(
+        'js' => '/local/codenails/frontend/lib/jquery.validate.js',
+        'rel' => array('jquery'),
     )
-
 );
 
 foreach ($arLibs as $libName => $arLib) {

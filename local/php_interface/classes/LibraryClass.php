@@ -7,9 +7,9 @@
  */
 
 /**
- * Class BaseClass
+ * Class LibraryClass
  *
- * BaseClass::paginator($page=1,$sizePage=10,$total) - выводит пагинацию в виде:
+ * LibraryClass::paginator($page=1,$sizePage=10,$total) - выводит пагинацию в виде:
  *      <div class="counter">
  *      <a href="/url/">Назад</a>
  *      <a href="/url/">1</a>
@@ -22,34 +22,34 @@
  * $page=1 - текущая страница
  * $sizePage=10 - элементов на странице
  * $total - всего элементов
- * BaseClass::getEndWord($count,$text0='товаров',$text1='товар',$text2='товара') - возвращает слово с нужным окончанием
+ * LibraryClass::getEndWord($count,$text0='товаров',$text1='товар',$text2='товара') - возвращает слово с нужным окончанием
  *
  * $count - кол-во (в данном случае товаров)
  * 0 товаров
  * 1 товар
  * 2 товара
- * BaseClass::getPropOrderVal($order_id, $prop_id, [$or_prop_id=false]) - возвращает значение свойства заказа
+ * LibraryClass::getPropOrderVal($order_id, $prop_id, [$or_prop_id=false]) - возвращает значение свойства заказа
  *
  * $order_id - ID заказа
  * $prop_id - ID свойства
  * $or_prop_id - ID альтернативного свойства
- * BaseClass::getResizeImg($idImg,[[[$width=220],$height=220],$width_size=false]) - ресайз фото
+ * LibraryClass::getResizeImg($idImg,[[[$width=220],$height=220],$width_size=false]) - ресайз фото
  * $idImg - ID фото
  * $width - максимальная ширина
  * $height - максимальная высота
  * $width_size - FALSE - вернуть url, TRUE вернуть массив c url фото, с получившейся шириной, высотой и тп
- * BaseClass::getCountProductsBasket(group=false) - получить общее кол-во товара в корзине
+ * LibraryClass::getCountProductsBasket(group=false) - получить общее кол-во товара в корзине
  *
  * false - общее кол-во товара в корзине
  * true - получить кол-во позиций в корзине
- * BaseClass::getSubSections($iblockID,[[[$sect_id=0],$active='Y'],$arSort=array('SORT'=>'ASC'),$arUF=array()]) - получить массив разделов (в коде массив array(...,array('id'=>...,'name'=>...,'url'=>...,'img'=>...),...) )
+ * LibraryClass::getSubSections($iblockID,[[[$sect_id=0],$active='Y'],$arSort=array('SORT'=>'ASC'),$arUF=array()]) - получить массив разделов (в коде массив array(...,array('id'=>...,'name'=>...,'url'=>...,'img'=>...),...) )
  *
  * $iblockID - ID инфоблока (обязательно)
  * $sect_id - в каком разделе (по-умолчанию в корне)
  * $active - активность (по-умолчанию только активные)
  * $arSort - сортировка (по-умолчанию array('SORT'=>'ASC'))
  * $arUF - массив пользовательских полей
- * BaseClass::getBasket($id="NULL",$idUser='') - получить содержимое корзины. В коде массив. По-умолчанию текущая корзина.
+ * LibraryClass::getBasket($id="NULL",$idUser='') - получить содержимое корзины. В коде массив. По-умолчанию текущая корзина.
  *
  * $id - ID заказа
  * $idUser - ID пользователя
@@ -73,17 +73,17 @@
  * 'totalProduct'=>...(общее кол-во товара)...,
  * 'totalSumm'=>...(общая сумма)...
  * );
- * BaseClass::checkProductToCart($id) - проверить есть ли товар в корзине. Возвращает true|false
+ * LibraryClass::checkProductToCart($id) - проверить есть ли товар в корзине. Возвращает true|false
  *
- * BaseClass::getNewCodeSection($iblockID,$name) - создать уникальный символьный код для разделов
- *
- * $iblockID - ID информационного блока
- * $name - имя
- * BaseClass::getNewCodeElement($iblockID,$name) - создать уникальный символьный код для элементов
+ * LibraryClass::getNewCodeSection($iblockID,$name) - создать уникальный символьный код для разделов
  *
  * $iblockID - ID информационного блока
  * $name - имя
- * BaseClass::getNews($iblock_id,$page,$count) - получить массив новостей с пагинацией (необходим myCache)
+ * LibraryClass::getNewCodeElement($iblockID,$name) - создать уникальный символьный код для элементов
+ *
+ * $iblockID - ID информационного блока
+ * $name - имя
+ * LibraryClass::getNews($iblock_id,$page,$count) - получить массив новостей с пагинацией (необходим myCache)
  *
  * $iblock_id - ID инфоблока
  * $page - страница
@@ -105,12 +105,11 @@
  * ),
  * 'paginator'=>...Строка. Пагинация согласно шаблона .default компонента system.pagenavigation...
  * );
- * BaseClass::is_mobile() - проверка на мобильный браузер
+ * LibraryClass::is_mobile() - проверка на мобильный браузер
  *
  */
-class BaseClass
+class LibraryClass
 {
-
 
     // вывод правильного окончания
     public static function getEndWord($count, $text0 = 'товаров', $text1 = 'товар', $text2 = 'товара')

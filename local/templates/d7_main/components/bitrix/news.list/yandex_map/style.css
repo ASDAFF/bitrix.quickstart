@@ -1,0 +1,23 @@
+#map_container {
+	width:100%;
+	height:600px;
+	display:block;
+}
+
+.marker-circ {
+    color: #404040;
+    font-size: 14px;
+    font-weight: normal;
+    height: 80px;
+    line-height: 56px;
+    width: 58px;
+}
+
+.claster {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    height: 80px;
+    line-height: 56px;
+    width: 58px;
+}

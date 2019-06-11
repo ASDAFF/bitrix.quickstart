@@ -51,6 +51,10 @@ $arLibs = array(
         'js' => '/local/codenails/frontend/lib/jquery_touchSwipe/jquery.touchSwipe.min.js',
         'rel' => array('jquery'),
     ),
+    'jquery_sudoSlider' => array(
+        'js' => '/local/codenails/frontend/lib/jquery_sudoSlider/jquery.sudoSlider.min.js',
+        'rel' => array('jquery'),
+    ),
     'iblock_props' => array(
         'js' => '/local/codenails/frontend/lib/iblockprops/js/interface.js',
         'css' => '/local/codenails/frontend/lib/iblockprops/css/interface.css',

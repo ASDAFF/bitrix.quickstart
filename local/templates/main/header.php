@@ -29,11 +29,9 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
     //Тут стили шаблона сайта
     // Bootstrap core CSS
-    //Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
 
     // Animate.css
-    //Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'animate.min.css');
     $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'animate.min.css');
 
     // FancyBox CSS
@@ -62,10 +60,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     //CJSCore::Init(array('jquery'));
 
     //Тут скрипты
-    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'modernizr.js');
-    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'bootstrap.min.js');
-    //Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
-
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'modernizr.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'bootstrap.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
@@ -73,8 +67,6 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.fancybox.min.js');
     $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
     $APPLICATION->AddHeadScript(PATH_AJAX . 'ajax.js');
-
-    //Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 
     //Тут выводим скрипты
     $APPLICATION->ShowHeadStrings();

@@ -1,5 +1,0 @@
-<?php
-
-// no module includes
-
-?>

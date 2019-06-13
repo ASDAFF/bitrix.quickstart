@@ -1,0 +1,83 @@
+.alfa1c-dirs {
+    float: left;
+    width: 20%;
+}
+.alfa1c-dirs-list {
+    max-height: 500px;
+    overflow-y: auto;
+}
+.alfa1c-dirs a {
+    background: url("/bitrix/panel/main/images/icons-sprite-6.png") no-repeat center -1512px;
+    background-position: left -117px;
+    padding-left: 25px;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+.alfa1c-files {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    float: left;
+    overflow-y: auto;
+    min-height: 480px;
+    max-height: 480px;
+}
+.alfa1c-files label {
+    font-size: 12px;
+    display: block;
+    width: 40%;
+    float: left;
+    min-width: 350px;
+    margin-left: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.alfa1c-files div.img {
+    display: none;
+    position: absolute;
+    max-width: 400px;
+    border: 1px solid #A4B9CC;
+    background: #fff;
+    z-index: 100;
+    left: 50px;
+}
+.alfa1c-files img {
+    max-width: 400px;
+}
+.alfa1c-files label.img-type-png {
+    background: url(/bitrix/images/fileman/types/png.gif) no-repeat;
+}
+.alfa1c-files label.img-type-jpg,
+.alfa1c-files label.img-type-jpeg,
+.alfa1c-files label.img-type-JPG,
+.alfa1c-files label.img-type-JPEG {
+    background: url(/bitrix/images/fileman/types/jpeg.gif) no-repeat;
+}
+.alfa1c-crumbs a {
+    display: block;
+    font-size: 18px;
+    padding-left: 25px;
+    background: url("/bitrix/panel/main/images/icons-sprite-11.png") no-repeat center -1512px;
+    background-position: left -1569px;
+}
+.alfa1c-ready {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.alfa1c-ready span {
+    font-size: 12px;
+}
+.alfa1c-ready span.sccss {
+    color: green;
+}
+.alfa1c-ready span.errors {
+    color: red;
+    display: block;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.alfa1c-filesize {
+    font-style: italic;
+}

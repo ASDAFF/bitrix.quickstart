@@ -1,0 +1,21 @@
+<?php
+
+$MESS['2GIS_MAP_DATA'] = 'Map data';
+$MESS['2GIS_PARAM_DATA_SET'] = 'Set data';
+
+$MESS['2GIS_PARAM_DATA_DEFAULT_LAT'] = '55.7383';
+$MESS['2GIS_PARAM_DATA_DEFAULT_LON'] = '37.5946';
+
+$MESS["2GIS_PARAM_MAP_HEIGHT"] = "Map height";
+$MESS["2GIS_PARAM_MAP_WIDTH"] = "map width";
+$MESS["2GIS_PARAM_MAP_ZOOM"] = "Map scale (0 .. 17)";
+
+$MESS['2GIS_PARAM_ENABLE_ZOOM_CONTROL'] = 'Zoom slider';
+$MESS['2GIS_PARAM_ENABLE_DBLCLICK_ZOOM'] = 'Zoom on double click';
+$MESS['2GIS_PARAM_ENABLE_FULLSCREEN_BUTTON'] = 'Fullscreen button';
+$MESS['2GIS_PARAM_ENABLE_GEOCLICKER'] = 'Geoclicker';
+$MESS['2GIS_PARAM_ENABLE_RIGHTBUTTON_MAGNIFIER'] = 'Right button magnifier';
+
+$MESS["2GIS_DESC_PAGER_NEWS"] = "2GIS maps settings";
+
+?>

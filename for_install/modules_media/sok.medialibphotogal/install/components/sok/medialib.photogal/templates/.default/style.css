@@ -1,0 +1,63 @@
+.thumbnail img{
+max-height: 110px;
+max-width: 150px;
+display: table;
+margin: 0 auto;
+}
+
+.thumbnail,.caption {
+display: table;
+margin: 0 auto;
+}
+.galthumbnails li
+{
+display: block;
+width: 160px;
+height: 150px;
+float: left;
+list-style: none;
+border: 1px solid #c6c6c6;
+border-radius: 5px;
+margin-right: 20px;
+margin-bottom: 15px;
+}
+.workarea .galspan2::before{
+
+content:none;
+}
+galspan2{
+padding: 0;
+color:#333333;
+}
+.galimg{
+height: 110px;
+padding-top: 8px;
+}
+.ntc {
+padding: 0 10px;
+text-align: center;
+}
+.caption .blue{
+margin: 5px 0 5px 0;
+}
+.workarea .caption h3 {
+font-size: 18px;
+}
+.caption h3{
+font-size:18px;
+}
+.caption {
+font-size:14px;
+color:#333333;
+}
+.galspan2 a:visited{
+color:#333333;
+}
+
+.galthumbnails{
+display: table;
+width: 100%;
+}
+.galblink{
+text-decoration:none;
+}

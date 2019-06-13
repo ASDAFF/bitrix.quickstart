@@ -1,0 +1,20 @@
+.ft-image-block {	
+	display: inline-block;
+	/*background: #eee;*/
+}
+
+.ft-image-block.ft-loading {
+	background: url('/bitrix/js/fairytale.tpic/css/preloader.gif') no-repeat 50% #eee;
+}
+
+.ft-image-block img.ft-image {
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	transition: opacity .5s;
+}
+
+.ft-image-block.ft-loaded img.ft-image {
+	opacity: 1;
+}

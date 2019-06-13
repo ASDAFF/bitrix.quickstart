@@ -1,4 +1,0 @@
-<?
-$MESS['DEFATOOLS_MODULE_NAME'] = "DefaTools";
-$MESS['DEFATOOLS_MODULE_TITLE'] = "DefaTools";
-?>

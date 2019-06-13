@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shs.parser/admin/list_parser_result_admin.php");?>

@@ -1,0 +1,33 @@
+<?
+$MESS["VCS_CHITEMS_TITLE"] = "Проверка изменившихся файлов";
+$MESS["VCS_NO"] = "Нет";
+$MESS["VCS_YES"] = "Да";
+$MESS["VCS_DELETE"] = "Удалить из результатов проверки";
+$MESS["VCS_DELETE_CONFIRMATION"] = "Правда удалить?";
+$MESS["VCS_RESTORE_CONFIRMATION"] = "Точно восстановить? Текущее содержиме файла будет уничтожено!";
+$MESS["VCS_SHOW_SOURCE"] = "Показать содержимое";
+$MESS["VCS_SHOW_CHANGES"] = "Показать различия";
+$MESS["VCS_SHOW_LAST_SOURCE"] = "Показать последнее содержимое";
+$MESS["VCS_RESTORE_ITEM"] = "Восстановить из репозитария";
+$MESS["VCS_RESTORE_LAST_ITEM"] = "Восстановить из репозитария последнее содержимое";
+$MESS["VCS_DELETE_FROM_DISK"] = "Удалить с диска";
+$MESS["VCS_CHECK_FOR_NEW"] = "Проверить на изменения";
+$MESS["VCS_COMMIT"] = "Зафиксировать изменения";
+$MESS["VCS_CHENGED_ITEMS"] = "Измененные";
+$MESS["VCS_HEADER_DRIVER_CODE"] = "Источник данных";
+$MESS["VCS_HEADER_ORIG_ID"] = "Идентификатор";
+$MESS["VCS_HEADER_IS_NEW"] = "Новинка";
+$MESS["VCS_HEADER_TIMESTAMP_X"] = "Дата";
+$MESS["VCS_HEADER_STATUS"] = "Статус";
+$MESS["VCS_FILTER_FILE"] = "Файл";
+$MESS["VCS_FILTER_ALL"] = "Все";
+$MESS["VCS_FILTER_FRIVER_CODE"] = "Источник данных";
+$MESS["VCS_FILTER_IS_NEW"] = "Новинка";
+$MESS["VCS_FILTER_STATUS"] = "Статус";
+$MESS["VCS_NEW_FILES_FOUNDED"] = "Новых файлов: ";
+$MESS["VCS_STATUS_NEW"] = "Новый";
+$MESS["VCS_STATUS_UPD"] = "Обновлен ";
+$MESS["VCS_STATUS_DEL"] = "Удален";
+$MESS["VCS_SET_DELETED"] = "Удалить из репозитория";
+$MESS["VCS_SET_DELETED_CONFIRMATION"] = "Удалить из репозитория?";
+?>

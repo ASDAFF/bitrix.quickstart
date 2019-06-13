@@ -1,0 +1,69 @@
+.map2gis_wrapper {
+    float: left;
+    margin-right: 25px;
+}
+
+.map2gis_set_row {
+    margin-bottom: 15px;
+}
+
+.map2gis_point_row {
+    font-style: italic;
+}
+
+ul.simai-address-search-results {
+    display: block;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 4px 8px;
+    font-size: 12px;
+    position: absolute;
+    border: solid 1px #BDBDBD;
+    z-index: 2005;
+    width: 400px;
+    color: black;
+    background-color: white;
+}
+
+ul.simai-address-search-results li {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0px;
+	border-top: solid 1px #D2D2D2;
+	height: 26px;
+}
+
+ul.simai-address-search-results li.simai-address-search-result-first {
+	border-top: none;
+}
+
+ul.simai-address-search-results li.address-notfound {
+	border-top: none;
+	padding-top: 5px;
+}
+
+ul.simai-address-search-results li a {
+	display: block;
+	text-decoration: none;
+	padding-top: 6px;
+	height: 26px;
+}
+
+ul.simai-address-search-results li a span {
+    padding-left: 13px;
+    display: block;
+    color: black;
+}
+
+ul.simai-address-search-results li a:hover {
+	background-image: url('/bitrix/components/simai/maps.2gis.simple/images/gradient.gif');
+}
+
+ul.simai-address-search-results li a:hover span {
+	background-image: url('/bitrix/components/simai/maps.2gis.simple/images/arrow.gif');
+	background-position: left center;
+	background-repeat: no-repeat;
+}

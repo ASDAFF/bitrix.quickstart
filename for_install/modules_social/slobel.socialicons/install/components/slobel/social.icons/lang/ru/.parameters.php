@@ -1,0 +1,29 @@
+<?
+$MESS["CACHE_GROUPS"] = "Учитывать права доступа";
+$MESS["VK"] = "В контакте";
+$MESS["FB"] = "Facebook";
+$MESS["OK"] = "Одноклассники";
+$MESS["TW"] = "Twitter";
+$MESS["GP"] = "Google+";
+$MESS["MM"] = "Мой мир";
+$MESS["HH"] = "Habrahabr";
+$MESS["BX"] = "Битрикс";
+$MESS["GH"] = "Github";
+$MESS["IG"] = "Instagram";
+$MESS["YT"] = "YouTube";
+$MESS["SOCIAL"] = "Социальные сети";
+$MESS["OTHER"] = "Остальное";
+$MESS["ID_GROUPS"] = "Идентификатор группы";
+$MESS["ID_BLOGS"] = "Идентификатор блога";
+$MESS["ID_PARTNER"] = "Идентификатор парнера";
+$MESS["NICKNAME"] = "Имя пользователя";
+$MESS["CHANEL"] = "Название канала";
+$MESS["ICONS"] = "Иконка";
+$MESS["ICONS_HOVER"] = "Иконка при наведении";
+$MESS["SIZE"] = "Размер иконки";
+$MESS["Y_ICONS"] = "Свои иконки";
+$MESS["POSITION"] = "Расположить вертикально";
+$MESS["BACKGROUND"] = "Темный фон";
+$MESS["JQUERY"] = "Подключать jquery";
+$MESS["JQUERY_UI"] = "Подключать jquery ui";
+?>

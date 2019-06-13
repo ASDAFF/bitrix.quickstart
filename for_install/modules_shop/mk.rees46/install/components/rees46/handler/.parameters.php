@@ -1,0 +1,3 @@
+<?php
+
+$arComponentParameters = array();

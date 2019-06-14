@@ -28,20 +28,21 @@ $arLibs = array(
      * Ваша библиотека будет подключена с использованием AddHeadScript.
      */
 
-    'jquery_ui' => array(
-        'js' => '/local/codenails/frontend/lib/jquery_ui/jquery-ui.min.js',
-        'css' => '/local/codenails/frontend/lib/jquery_ui/jquery-ui.min.css',
-        'rel' => array('jquery'),
+    'jquery_3' => array(
+        'js' => PATH_BOWER_COMPONENTS . '/jquery/dist/jquery.min.js',
     ),
     'jquery_fancybox' => array(
-        'js' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.js',
-        'css' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.css',
+        'js' => PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.js',
+        'css' => PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.css',
         'rel' => array('jquery'),
     ),
     'owl_carousel' => array(
-        'js' => '/local/codenails/frontend/lib/owl_carousel/owl.carousel.min.js',
-        'css' => '/local/codenails/frontend/lib/owl_carousel/assets/owl.carousel.min.css',
+        'js' => PATH_BOWER_COMPONENTS . '/owl.carousel/dist/owl.carousel.min.js',
+        'css' => PATH_BOWER_COMPONENTS . '/owl.carousel/dist/assets/owl.carousel.min.css',
         'rel' => array('jquery'),
+    ),
+    'animate-css' => array(
+        'css' => PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css',
     ),
     'jquery_mousewheel' => array(
         'js' => '/local/codenails/frontend/lib/jquery_mousewheel/jquery.mousewheel.min.js',

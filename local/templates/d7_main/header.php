@@ -37,8 +37,6 @@ Loc::loadMessages(__FILE__);
     // Bootstrap core CSS
     Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap.css');
     Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap-theme.css');
-    // Animate.css
-    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css');
     // FancyBox CSS
     Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.css');
     Asset::getInstance()->addCss(PATH_GLOBAL_CSS);
@@ -50,9 +48,8 @@ Loc::loadMessages(__FILE__);
     //Это встроенная в ядро Битрикс jQuery, если подключать ее, то строку подключения jQuery 1.11.2 выше надо удалить.
     //CJSCore::Init(array('jquery'));
     //CJSCore::Init(array("jquery2"));
+    //CJSCore::Init(array("jquery_3"));
 
-    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/jquery/dist/jquery.min.js');
-    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/owl.carousel/dist/owl.carousel.min.js');
     Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.js');
     Asset::getInstance()->addJs(PATH_GLOBAL_JS);
     Asset::getInstance()->addJs(PATH_AJAX_JS);

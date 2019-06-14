@@ -1,0 +1,23 @@
+.messenger{
+	text-align: center;
+}
+.messenger a{
+	vertical-align: top;
+	display: inline-block;
+	padding: 8px;
+}
+.messenger a>div{
+	position: relative;
+	width: 100%;
+}
+.messenger a.horizontal{
+	display: inline-block;
+}
+.messenger a.vertical{
+	display: block;
+}
+.messenger img{
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}

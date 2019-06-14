@@ -1,0 +1,11 @@
+.b-field-filter-table > thead > tr > th,
+.b-field-filter-table > tbody > tr > td {
+	border-left: 1px solid #ababab;
+
+	text-align: left;
+}
+
+.b-field-filter-table > thead > tr > th:first-child,
+.b-field-filter-table > tbody > tr > td:first-child {
+	border-left: 0;
+}

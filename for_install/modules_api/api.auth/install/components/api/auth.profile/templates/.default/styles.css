@@ -1,0 +1,16 @@
+.api-auth-profile *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.api-auth-profile .bx-sls .bx-ui-sls-container{min-height: 35px}
+/* soc-serv-main */
+.api-auth-profile .bx-socserv-auth-split{margin-top: 30px; padding-top: 30px;border-top: 1px solid rgba(0,0,0,.1);}
+.api-auth-profile .soc-serv-title{width: 60%;height: auto;padding: 3px 7px}
+.api-auth-profile .soc-serv-accounts{margin-top: 10px}
+.api-auth-profile .soc-serv-accounts table td{padding: 3px 7px !important;vertical-align: middle !important;}
+.api-auth-profile .soc-serv-accounts .bx-ss-icons > *{vertical-align: middle}
+.api-auth-profile .api-group-policy{color: #757575;font-size: 12px;margin-top: 3px}
+.api-readonly-fields{font-size: 13px;}
+.api-readonly-fields .api_name:after{content: ':';}
+.api-readonly-fields .api_value{}
+.api-custom-fields .api_controls input + label{margin-left: 5px}
+@media (max-width: 767px) {
+	.api-auth-profile .soc-serv-title{width: 100%}
+}

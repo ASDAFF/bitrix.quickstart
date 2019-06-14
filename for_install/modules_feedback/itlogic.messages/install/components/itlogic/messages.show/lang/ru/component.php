@@ -1,0 +1,4 @@
+<?
+$MESS["ITLOGIC_MESSAGES_DA"] = "Да";
+$MESS["ITLOGIC_MESSAGES_NET"] = "Нет";
+?>

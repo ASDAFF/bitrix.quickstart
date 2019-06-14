@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2015-05-19T10:59:15">
+	<Классификатор>
+		<Ид>news_redsign_monopoly</Ид>
+		<Наименование>Новости компании</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>news_redsign_monopoly</Ид>
+		<ИдКлассификатора>news_redsign_monopoly</ИдКлассификатора>
+		<Наименование>Новости компании</Наименование>
+		<БитриксКод>news_redsign_monopoly</БитриксКод>
+		<БитриксСортировка>100</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/about/press_center/news/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/about/press_center/news/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/about/press_center/news/</БитриксURLРаздел>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>45</Ид>
+				<Наименование>Компания «Монополия» наградила лучших сотрудников</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/e4e/e4e6923ec5c1e4b8bfa4b57a468e76df.gif</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>kompaniya-monopoliya-nagradila-luchshikh-sotrudnikov</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2014-05-24 09:51:37</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.
+
+Duis sit amet dolor blandit, ultrices sapien quis, pretium lectus. Proin at tortor a libero congue interdum. Pellentesque vulputate turpis mattis mauris semper aliquet. Pellentesque ac lacus ac sapien auctor aliquam a vel elit. Morbi elementum facilisis facilisis. Mauris odio sapien, sagittis a ex vitae, tincidunt auctor lectus. Donec quis ex urna. Nam id dolor vehicula, efficitur justo et, sodales neque. Integer finibus nisl sollicitudin libero consectetur, aliquet pretium elit congue. Donec lacinia, leo non sagittis tincidunt, metus tellus congue tortor, in volutpat est quam non arcu. Duis vitae lacinia diam, et sollicitudin nulla. Quisque mollis felis sit amet mi consequat, quis ullamcorper metus sagittis. Curabitur ut blandit lorem, non pharetra nunc. Etiam consequat sed nibh vitae imperdiet. Vestibulum vitae porta enim. Curabitur porta volutpat massa, eu aliquet arcu tempor quis.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nibh eget nunc cursus, ut interdum ante commodo. Sed porta metus ut orci placerat, a tristique lectus eleifend. Maecenas quis urna eu orci lobortis congue ac vel lacus. Sed suscipit metus fermentum orci bibendum auctor. Maecenas ac justo pulvinar, accumsan erat id, tempor lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu dolor dapibus, varius tellus id, ultrices tellus. Phasellus semper risus a tellus dapibus venenatis. Sed in sapien eu ante lobortis tincidunt. Sed nunc odio, cursus sit amet venenatis non, faucibus nec libero. Integer imperdiet at augue ac vulputate. Nunc at urna eget ante vehicula venenatis.
+
+Curabitur interdum neque ipsum, luctus luctus tellus mattis a. Sed convallis pellentesque leo, sit amet varius diam vulputate sit amet. Cras vestibulum finibus elementum. Vestibulum arcu enim, dapibus euismod libero ac, placerat placerat dui. Duis erat dolor, condimentum nec elementum at, elementum eu turpis. Nulla rutrum ut nisi nec molestie. Sed pretium porta purus, id dapibus mauris.
+
+Aliquam erat volutpat. Morbi eu molestie diam. Nunc ligula nunc, pellentesque eu scelerisque rhoncus, sollicitudin sed diam. Integer condimentum, odio ultrices pharetra suscipit, augue mauris fringilla neque, fringilla molestie magna ante laoreet nulla. Curabitur malesuada velit odio, et rhoncus massa pellentesque sed. In vitae pellentesque est, a gravida nibh. Vestibulum id enim a quam blandit volutpat pellentesque et neque. Mauris iaculis dui sit amet consequat laoreet. Aliquam interdum lorem a viverra consectetur. Aliquam vel venenatis ipsum, quis convallis augue. Sed quis est condimentum, porttitor leo quis, aliquam arcu. Sed non porttitor elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/f54/f544bf771acb3ff33feff3b411665314.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>46</Ид>
+				<Наименование>Новый офис в Праге</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novyy-ofis-v-prage</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2014-05-20 09:54:14</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.
+
+Duis sit amet dolor blandit, ultrices sapien quis, pretium lectus. Proin at tortor a libero congue interdum. Pellentesque vulputate turpis mattis mauris semper aliquet. Pellentesque ac lacus ac sapien auctor aliquam a vel elit. Morbi elementum facilisis facilisis. Mauris odio sapien, sagittis a ex vitae, tincidunt auctor lectus. Donec quis ex urna. Nam id dolor vehicula, efficitur justo et, sodales neque. Integer finibus nisl sollicitudin libero consectetur, aliquet pretium elit congue. Donec lacinia, leo non sagittis tincidunt, metus tellus congue tortor, in volutpat est quam non arcu. Duis vitae lacinia diam, et sollicitudin nulla. Quisque mollis felis sit amet mi consequat, quis ullamcorper metus sagittis. Curabitur ut blandit lorem, non pharetra nunc. Etiam consequat sed nibh vitae imperdiet. Vestibulum vitae porta enim. Curabitur porta volutpat massa, eu aliquet arcu tempor quis.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nibh eget nunc cursus, ut interdum ante commodo. Sed porta metus ut orci placerat, a tristique lectus eleifend. Maecenas quis urna eu orci lobortis congue ac vel lacus. Sed suscipit metus fermentum orci bibendum auctor. Maecenas ac justo pulvinar, accumsan erat id, tempor lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu dolor dapibus, varius tellus id, ultrices tellus. Phasellus semper risus a tellus dapibus venenatis. Sed in sapien eu ante lobortis tincidunt. Sed nunc odio, cursus sit amet venenatis non, faucibus nec libero. Integer imperdiet at augue ac vulputate. Nunc at urna eget ante vehicula venenatis.
+
+Curabitur interdum neque ipsum, luctus luctus tellus mattis a. Sed convallis pellentesque leo, sit amet varius diam vulputate sit amet. Cras vestibulum finibus elementum. Vestibulum arcu enim, dapibus euismod libero ac, placerat placerat dui. Duis erat dolor, condimentum nec elementum at, elementum eu turpis. Nulla rutrum ut nisi nec molestie. Sed pretium porta purus, id dapibus mauris.
+
+Aliquam erat volutpat. Morbi eu molestie diam. Nunc ligula nunc, pellentesque eu scelerisque rhoncus, sollicitudin sed diam. Integer condimentum, odio ultrices pharetra suscipit, augue mauris fringilla neque, fringilla molestie magna ante laoreet nulla. Curabitur malesuada velit odio, et rhoncus massa pellentesque sed. In vitae pellentesque est, a gravida nibh. Vestibulum id enim a quam blandit volutpat pellentesque et neque. Mauris iaculis dui sit amet consequat laoreet. Aliquam interdum lorem a viverra consectetur. Aliquam vel venenatis ipsum, quis convallis augue. Sed quis est condimentum, porttitor leo quis, aliquam arcu. Sed non porttitor elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/d25/d250d85e0878acbe89edf784533cdcb0.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>47</Ид>
+				<Наименование>Невероятно, но факт!</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>neveroyatno-no-fakt</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2014-03-15 09:55:09</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.
+
+Duis sit amet dolor blandit, ultrices sapien quis, pretium lectus. Proin at tortor a libero congue interdum. Pellentesque vulputate turpis mattis mauris semper aliquet. Pellentesque ac lacus ac sapien auctor aliquam a vel elit. Morbi elementum facilisis facilisis. Mauris odio sapien, sagittis a ex vitae, tincidunt auctor lectus. Donec quis ex urna. Nam id dolor vehicula, efficitur justo et, sodales neque. Integer finibus nisl sollicitudin libero consectetur, aliquet pretium elit congue. Donec lacinia, leo non sagittis tincidunt, metus tellus congue tortor, in volutpat est quam non arcu. Duis vitae lacinia diam, et sollicitudin nulla. Quisque mollis felis sit amet mi consequat, quis ullamcorper metus sagittis. Curabitur ut blandit lorem, non pharetra nunc. Etiam consequat sed nibh vitae imperdiet. Vestibulum vitae porta enim. Curabitur porta volutpat massa, eu aliquet arcu tempor quis.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nibh eget nunc cursus, ut interdum ante commodo. Sed porta metus ut orci placerat, a tristique lectus eleifend. Maecenas quis urna eu orci lobortis congue ac vel lacus. Sed suscipit metus fermentum orci bibendum auctor. Maecenas ac justo pulvinar, accumsan erat id, tempor lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu dolor dapibus, varius tellus id, ultrices tellus. Phasellus semper risus a tellus dapibus venenatis. Sed in sapien eu ante lobortis tincidunt. Sed nunc odio, cursus sit amet venenatis non, faucibus nec libero. Integer imperdiet at augue ac vulputate. Nunc at urna eget ante vehicula venenatis.
+
+Curabitur interdum neque ipsum, luctus luctus tellus mattis a. Sed convallis pellentesque leo, sit amet varius diam vulputate sit amet. Cras vestibulum finibus elementum. Vestibulum arcu enim, dapibus euismod libero ac, placerat placerat dui. Duis erat dolor, condimentum nec elementum at, elementum eu turpis. Nulla rutrum ut nisi nec molestie. Sed pretium porta purus, id dapibus mauris.
+
+Aliquam erat volutpat. Morbi eu molestie diam. Nunc ligula nunc, pellentesque eu scelerisque rhoncus, sollicitudin sed diam. Integer condimentum, odio ultrices pharetra suscipit, augue mauris fringilla neque, fringilla molestie magna ante laoreet nulla. Curabitur malesuada velit odio, et rhoncus massa pellentesque sed. In vitae pellentesque est, a gravida nibh. Vestibulum id enim a quam blandit volutpat pellentesque et neque. Mauris iaculis dui sit amet consequat laoreet. Aliquam interdum lorem a viverra consectetur. Aliquam vel venenatis ipsum, quis convallis augue. Sed quis est condimentum, porttitor leo quis, aliquam arcu. Sed non porttitor elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/4ad/4adb94d137a7cdfd09132fe0a770d0a0.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>48</Ид>
+				<Наименование>Все новое — хорошо забытое старое</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>vse-novoe-khorosho-zabytoe-staroe</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2014-02-25 09:56:12</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.
+
+Duis sit amet dolor blandit, ultrices sapien quis, pretium lectus. Proin at tortor a libero congue interdum. Pellentesque vulputate turpis mattis mauris semper aliquet. Pellentesque ac lacus ac sapien auctor aliquam a vel elit. Morbi elementum facilisis facilisis. Mauris odio sapien, sagittis a ex vitae, tincidunt auctor lectus. Donec quis ex urna. Nam id dolor vehicula, efficitur justo et, sodales neque. Integer finibus nisl sollicitudin libero consectetur, aliquet pretium elit congue. Donec lacinia, leo non sagittis tincidunt, metus tellus congue tortor, in volutpat est quam non arcu. Duis vitae lacinia diam, et sollicitudin nulla. Quisque mollis felis sit amet mi consequat, quis ullamcorper metus sagittis. Curabitur ut blandit lorem, non pharetra nunc. Etiam consequat sed nibh vitae imperdiet. Vestibulum vitae porta enim. Curabitur porta volutpat massa, eu aliquet arcu tempor quis.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nibh eget nunc cursus, ut interdum ante commodo. Sed porta metus ut orci placerat, a tristique lectus eleifend. Maecenas quis urna eu orci lobortis congue ac vel lacus. Sed suscipit metus fermentum orci bibendum auctor. Maecenas ac justo pulvinar, accumsan erat id, tempor lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu dolor dapibus, varius tellus id, ultrices tellus. Phasellus semper risus a tellus dapibus venenatis. Sed in sapien eu ante lobortis tincidunt. Sed nunc odio, cursus sit amet venenatis non, faucibus nec libero. Integer imperdiet at augue ac vulputate. Nunc at urna eget ante vehicula venenatis.
+
+Curabitur interdum neque ipsum, luctus luctus tellus mattis a. Sed convallis pellentesque leo, sit amet varius diam vulputate sit amet. Cras vestibulum finibus elementum. Vestibulum arcu enim, dapibus euismod libero ac, placerat placerat dui. Duis erat dolor, condimentum nec elementum at, elementum eu turpis. Nulla rutrum ut nisi nec molestie. Sed pretium porta purus, id dapibus mauris.
+
+Aliquam erat volutpat. Morbi eu molestie diam. Nunc ligula nunc, pellentesque eu scelerisque rhoncus, sollicitudin sed diam. Integer condimentum, odio ultrices pharetra suscipit, augue mauris fringilla neque, fringilla molestie magna ante laoreet nulla. Curabitur malesuada velit odio, et rhoncus massa pellentesque sed. In vitae pellentesque est, a gravida nibh. Vestibulum id enim a quam blandit volutpat pellentesque et neque. Mauris iaculis dui sit amet consequat laoreet. Aliquam interdum lorem a viverra consectetur. Aliquam vel venenatis ipsum, quis convallis augue. Sed quis est condimentum, porttitor leo quis, aliquam arcu. Sed non porttitor elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/a2b/a2bf9d395f0a1943b59f95439cba0921.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>49</Ид>
+				<Наименование>Лидер рынка</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lider-rynka</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2014-02-08 09:57:50</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis augue urna. Mauris a elit non risus rutrum auctor eu nec elit. Nunc ultrices eget mi ac porttitor. Aenean eget libero in augue laoreet sagittis quis at ipsum. Donec molestie lorem in orci elementum, ac ullamcorper tellus fringilla. Cras ut magna mollis eros mollis malesuada in non elit. Nunc quis euismod mauris. Ut vel laoreet velit, nec iaculis orci. Donec eget lectus placerat, posuere lectus non, convallis augue. Proin porta nunc sit amet pharetra consequat. Vivamus pellentesque orci quis mauris sodales sollicitudin. Etiam vel enim eget ipsum facilisis interdum.
+
+Duis sit amet dolor blandit, ultrices sapien quis, pretium lectus. Proin at tortor a libero congue interdum. Pellentesque vulputate turpis mattis mauris semper aliquet. Pellentesque ac lacus ac sapien auctor aliquam a vel elit. Morbi elementum facilisis facilisis. Mauris odio sapien, sagittis a ex vitae, tincidunt auctor lectus. Donec quis ex urna. Nam id dolor vehicula, efficitur justo et, sodales neque. Integer finibus nisl sollicitudin libero consectetur, aliquet pretium elit congue. Donec lacinia, leo non sagittis tincidunt, metus tellus congue tortor, in volutpat est quam non arcu. Duis vitae lacinia diam, et sollicitudin nulla. Quisque mollis felis sit amet mi consequat, quis ullamcorper metus sagittis. Curabitur ut blandit lorem, non pharetra nunc. Etiam consequat sed nibh vitae imperdiet. Vestibulum vitae porta enim. Curabitur porta volutpat massa, eu aliquet arcu tempor quis.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In placerat nibh eget nunc cursus, ut interdum ante commodo. Sed porta metus ut orci placerat, a tristique lectus eleifend. Maecenas quis urna eu orci lobortis congue ac vel lacus. Sed suscipit metus fermentum orci bibendum auctor. Maecenas ac justo pulvinar, accumsan erat id, tempor lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eu dolor dapibus, varius tellus id, ultrices tellus. Phasellus semper risus a tellus dapibus venenatis. Sed in sapien eu ante lobortis tincidunt. Sed nunc odio, cursus sit amet venenatis non, faucibus nec libero. Integer imperdiet at augue ac vulputate. Nunc at urna eget ante vehicula venenatis.
+
+Curabitur interdum neque ipsum, luctus luctus tellus mattis a. Sed convallis pellentesque leo, sit amet varius diam vulputate sit amet. Cras vestibulum finibus elementum. Vestibulum arcu enim, dapibus euismod libero ac, placerat placerat dui. Duis erat dolor, condimentum nec elementum at, elementum eu turpis. Nulla rutrum ut nisi nec molestie. Sed pretium porta purus, id dapibus mauris.
+
+Aliquam erat volutpat. Morbi eu molestie diam. Nunc ligula nunc, pellentesque eu scelerisque rhoncus, sollicitudin sed diam. Integer condimentum, odio ultrices pharetra suscipit, augue mauris fringilla neque, fringilla molestie magna ante laoreet nulla. Curabitur malesuada velit odio, et rhoncus massa pellentesque sed. In vitae pellentesque est, a gravida nibh. Vestibulum id enim a quam blandit volutpat pellentesque et neque. Mauris iaculis dui sit amet consequat laoreet. Aliquam interdum lorem a viverra consectetur. Aliquam vel venenatis ipsum, quis convallis augue. Sed quis est condimentum, porttitor leo quis, aliquam arcu. Sed non porttitor elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/706/70630c78698755672b82b2b8dd4ceea6.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>50</Ид>
+				<Наименование>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2013-07-31 14:24:16</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur interdum posuere. Duis lacinia sodales ullamcorper. Proin blandit arcu accumsan odio molestie, in viverra sapien pulvinar. Nulla ac sem at ipsum sollicitudin mollis. Ut egestas fermentum turpis, sed eleifend velit tincidunt eget. Ut id tincidunt ipsum. Maecenas posuere cursus facilisis. Mauris ut mollis mi. Aenean ullamcorper lectus eget eros tincidunt, quis ultrices nisl placerat. Curabitur eget sodales enim, sed efficitur purus. Phasellus sed accumsan mi.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur interdum posuere. Duis lacinia sodales ullamcorper. Proin blandit arcu accumsan odio molestie, in viverra sapien pulvinar. Nulla ac sem at ipsum sollicitudin mollis. Ut egestas fermentum turpis, sed eleifend velit tincidunt eget. Ut id tincidunt ipsum. Maecenas posuere cursus facilisis. Mauris ut mollis mi. Aenean ullamcorper lectus eget eros tincidunt, quis ultrices nisl placerat. Curabitur eget sodales enim, sed efficitur purus. Phasellus sed accumsan mi.
+
+Cras facilisis nunc leo, non cursus felis tincidunt vitae. Nam ut enim in ipsum ultricies varius at sit amet sapien. Phasellus eros purus, viverra in orci sed, lobortis sodales purus. Nunc gravida dapibus magna, non ullamcorper tellus. Cras ac risus non ex hendrerit accumsan nec a libero. Vestibulum et lectus magna. Donec pretium, nulla eget consequat lobortis, lectus leo feugiat massa, id volutpat tortor erat laoreet turpis. Integer sagittis aliquet nisl sed placerat. Ut tempor, mauris vitae fringilla vehicula, dui massa mattis nunc, quis ultrices ipsum odio in felis. Maecenas magna nisl, consequat quis eros at, dictum tempus sapien. Cras feugiat risus sed nulla pretium tristique. Morbi dapibus convallis sem non feugiat. Pellentesque pellentesque lobortis dapibus. Nullam urna est, finibus in urna nec, pulvinar volutpat enim. Praesent ornare euismod augue, ut faucibus justo dignissim a. Cras aliquam sed massa in placerat.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/a25/a25ee47e654238bb350c1246c4662c8d.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>51</Ид>
+				<Наименование>Lorem ipsum</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2013-08-25 14:25:06</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Morbi volutpat ligula a cursus fermentum. Suspendisse tempor dolor ut arcu dignissim, sed blandit sapien mattis. Proin pretium turpis eu cursus congue. Morbi euismod vulputate consectetur. Aliquam erat volutpat. Vivamus eget lorem eros. Phasellus ornare tellus eleifend ex blandit, vitae fringilla enim aliquam. Suspendisse sit amet iaculis lorem. Cras sit amet lectus eget tortor fringilla finibus.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur interdum posuere. Duis lacinia sodales ullamcorper. Proin blandit arcu accumsan odio molestie, in viverra sapien pulvinar. Nulla ac sem at ipsum sollicitudin mollis. Ut egestas fermentum turpis, sed eleifend velit tincidunt eget. Ut id tincidunt ipsum. Maecenas posuere cursus facilisis. Mauris ut mollis mi. Aenean ullamcorper lectus eget eros tincidunt, quis ultrices nisl placerat. Curabitur eget sodales enim, sed efficitur purus. Phasellus sed accumsan mi.
+
+Cras facilisis nunc leo, non cursus felis tincidunt vitae. Nam ut enim in ipsum ultricies varius at sit amet sapien. Phasellus eros purus, viverra in orci sed, lobortis sodales purus. Nunc gravida dapibus magna, non ullamcorper tellus. Cras ac risus non ex hendrerit accumsan nec a libero. Vestibulum et lectus magna. Donec pretium, nulla eget consequat lobortis, lectus leo feugiat massa, id volutpat tortor erat laoreet turpis. Integer sagittis aliquet nisl sed placerat. Ut tempor, mauris vitae fringilla vehicula, dui massa mattis nunc, quis ultrices ipsum odio in felis. Maecenas magna nisl, consequat quis eros at, dictum tempus sapien. Cras feugiat risus sed nulla pretium tristique. Morbi dapibus convallis sem non feugiat. Pellentesque pellentesque lobortis dapibus. Nullam urna est, finibus in urna nec, pulvinar volutpat enim. Praesent ornare euismod augue, ut faucibus justo dignissim a. Cras aliquam sed massa in placerat.
+
+Morbi volutpat ligula a cursus fermentum. Suspendisse tempor dolor ut arcu dignissim, sed blandit sapien mattis. Proin pretium turpis eu cursus congue. Morbi euismod vulputate consectetur. Aliquam erat volutpat. Vivamus eget lorem eros. Phasellus ornare tellus eleifend ex blandit, vitae fringilla enim aliquam. Suspendisse sit amet iaculis lorem. Cras sit amet lectus eget tortor fringilla finibus.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/525/525cc54203cfaedd628cffd546055d89.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>52</Ид>
+				<Наименование>Lorem ipsum dolor sit amet</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum-dolor-sit-amet</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2013-10-27 14:25:38</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur interdum posuere. Duis lacinia sodales ullamcorper. Proin blandit arcu accumsan odio molestie, in viverra sapien pulvinar. Nulla ac sem at ipsum sollicitudin mollis. Ut egestas fermentum turpis, sed eleifend velit tincidunt eget.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur interdum posuere. Duis lacinia sodales ullamcorper. Proin blandit arcu accumsan odio molestie, in viverra sapien pulvinar. Nulla ac sem at ipsum sollicitudin mollis. Ut egestas fermentum turpis, sed eleifend velit tincidunt eget. Ut id tincidunt ipsum. Maecenas posuere cursus facilisis. Mauris ut mollis mi. Aenean ullamcorper lectus eget eros tincidunt, quis ultrices nisl placerat. Curabitur eget sodales enim, sed efficitur purus. Phasellus sed accumsan mi.
+
+Cras facilisis nunc leo, non cursus felis tincidunt vitae. Nam ut enim in ipsum ultricies varius at sit amet sapien. Phasellus eros purus, viverra in orci sed, lobortis sodales purus. Nunc gravida dapibus magna, non ullamcorper tellus. Cras ac risus non ex hendrerit accumsan nec a libero. Vestibulum et lectus magna. Donec pretium, nulla eget consequat lobortis, lectus leo feugiat massa, id volutpat tortor erat laoreet turpis. Integer sagittis aliquet nisl sed placerat. Ut tempor, mauris vitae fringilla vehicula, dui massa mattis nunc, quis ultrices ipsum odio in felis. Maecenas magna nisl, consequat quis eros at, dictum tempus sapien. Cras feugiat risus sed nulla pretium tristique. Morbi dapibus convallis sem non feugiat. Pellentesque pellentesque lobortis dapibus. Nullam urna est, finibus in urna nec, pulvinar volutpat enim. Praesent ornare euismod augue, ut faucibus justo dignissim a. Cras aliquam sed massa in placerat.
+
+Morbi volutpat ligula a cursus fermentum. Suspendisse tempor dolor ut arcu dignissim, sed blandit sapien mattis. Proin pretium turpis eu cursus congue. Morbi euismod vulputate consectetur. Aliquam erat volutpat. Vivamus eget lorem eros. Phasellus ornare tellus eleifend ex blandit, vitae fringilla enim aliquam. Suspendisse sit amet iaculis lorem. Cras sit amet lectus eget tortor fringilla finibus.
+
+Nunc at facilisis turpis. Curabitur tincidunt mi ultrices enim ornare, vitae varius urna eleifend. Donec pulvinar risus nisl. Sed pretium ornare mi in laoreet. Nam consequat dapibus urna, eget ornare ante bibendum id. Aenean dolor arcu, maximus non sapien vitae, hendrerit lobortis ex. Sed sagittis elit a risus hendrerit hendrerit. Fusce nec massa augue. Etiam pharetra nisi ligula, rutrum varius purus bibendum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/d3a/d3ab71fd978e8fc0325711f9994465ef.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

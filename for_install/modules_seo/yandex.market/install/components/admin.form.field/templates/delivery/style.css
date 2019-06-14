@@ -1,0 +1,70 @@
+/* field delivery layout */
+
+.b-field-delivery.is--empty {
+	display: inline;
+}
+
+.b-field-delivery__summary-list.is--fill {
+	margin-bottom: 18px;
+}
+
+.b-field-delivery__summary {
+	margin-top: 9px;
+}
+
+.b-field-delivery__summary:first-child {
+	margin-top: 0;
+}
+
+.b-field-delivery__edit-button {
+	margin-right: 20px;
+}
+
+.b-field-delivery.is--invalid .b-field-delivery__edit-button {
+	box-shadow: 0 0 10px red;
+}
+
+/* delivery table */
+
+.b-delivery-table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.b-delivery-table__header {
+	padding-bottom: 8px;
+	padding-left: 20px;
+	border-bottom: 1px solid #cacfd8;
+
+	font-weight: normal;
+}
+
+span.b-delivery-table__header-note { /* проблема специфичности */
+	color: #9d9d9d;
+}
+
+.b-delivery-table__cell {
+	padding-top: 24px;
+	padding-left: 20px;
+
+	white-space: nowrap;
+}
+
+.b-delivery-table__header:first-child,
+.b-delivery-table__cell:first-child {
+	padding-left: 0;
+}
+
+.b-delivery-table__action-math {
+	vertical-align: top !important;
+
+	width: 36px !important;
+}
+
+.b-delivery-table__input-count {
+	width: 45px;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+
+	text-align: center;
+}

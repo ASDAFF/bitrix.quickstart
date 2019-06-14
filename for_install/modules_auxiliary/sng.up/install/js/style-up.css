@@ -1,0 +1,21 @@
+.scrollup {
+    display: none;
+    opacity: 1;
+    position: fixed;
+    z-index: 999;
+}
+.field-str td{
+	padding:10px;
+}
+.field-str td table td{
+	border: 1px solid #C4CED2;
+}
+.field-str td table td:hover{
+	background:#ffffff;
+	cursor:pointer;	
+	border: 1px solid red;	
+}
+.selected_file{
+	background:#ffffff;	
+	border: 1px solid red;		
+}

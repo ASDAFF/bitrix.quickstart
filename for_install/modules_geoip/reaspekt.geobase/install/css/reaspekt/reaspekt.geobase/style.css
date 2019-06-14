@@ -1,0 +1,45 @@
+.ReaspektPopupOverlay {
+	height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+	background-color: #000;
+	filter: alpha(opacity=60); 	/*Filter for IE*/
+}
+#ReaspektPopupBody {
+    position: absolute !important;
+    padding: 30px 50px;
+    left: 0;
+    top: 0;
+    /*width: 500px;
+    min-height: 100%;
+    height: 1000px;*/
+    z-index: 510;
+    background-color: #fff;
+	box-shadow: 0px 0px 15px #000000;
+    box-sizing: border-box;
+}
+#ReaspektPopupBody .ReaspektClosePosition {
+	position: relative;
+}
+
+#ReaspektPopupBody #ReaspektCloseBtn {
+	position: absolute;
+	right: -40px;
+    top: -20px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	background:url("images/close-button-sprite.png") no-repeat top;
+}
+
+#ReaspektPopupBody #ReaspektCloseBtn:hover {
+	background: url("images/close-button-sprite.png") no-repeat 0 -24px;
+}
+
+#ReaspektPopupContainer {
+	max-width: 900px;
+}

@@ -1,0 +1,9 @@
+/*Menu icon*/
+#s2u_redirect_menu_icon, .s2u_redirect_menu_icon {background-image:url(icons/s2u_redirects/mnu_index.gif);}
+
+/*Pages & menu icons*/
+#s2u_redirect_page_icon {background-image:url(icons/s2u_redirects/title_index.gif);}
+#s2u_redirect_listpage_icon {background-image:url(icons/s2u_redirects/title_gallery.gif);}
+
+#s2u_redirect_page_icon_gallery {background-image:url(icons/s2u_redirects/title_gallery.gif);}
+#s2u_redirect_menu_icon_gallery, .s2u_redirect_menu_icon_gallery {background-image:url(icons/s2u_redirects/mnu_gallery.gif);}

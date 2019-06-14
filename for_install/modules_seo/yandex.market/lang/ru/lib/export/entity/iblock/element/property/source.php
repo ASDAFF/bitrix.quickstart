@@ -1,0 +1,3 @@
+<?php
+
+$MESS['YANDEX_MARKET_IBLOCK_ELEMENT_PROPERTY_TITLE'] = 'Свойство элемента';

@@ -1,0 +1,65 @@
+body {width:600px;padding:0;margin:0;background:#ffffff;}
+html{padding:0;margin:0;}
+
+#bistrclick {margin:0px 10px;width:580px;display:block;overflow:hidden;font-family:'Arial','Verdana';padding:10px 0;}
+
+#bistrclick .mlf_product {width:192px;float:left;display:block;overflow:hidden;}
+#bistrclick .mlf_product .imager {width:100%;clear:both;display:block;position:relative;overflow:hidden;height:162px;float:left;}
+#bistrclick .mlf_product .imager .imageWp {text-align:center;width:173px;height:160px;display:block;clear:both;border:1px solid #a7a7a7;overflow:hidden;background:#ffffff;position:absolute;}
+#bistrclick .mlf_product .imager .imageWp img {max-width:150px;height:auto;max-height:150px;position:relative;top:5px;left:5px;}
+#bistrclick .mlf_product .imager .imageWp .no-photo130 {display:block;background:url('images/nophoto130.jpg') 50% 50% no-repeat;width:100%;height:100%;}
+#bistrclick .mlf_product .naz {width:95%;clear:both;display:block;overflow:hidden;font-size:14px;color:#000000;padding-top:5px;line-height:16px;font-weight:bold;}
+#bistrclick .mlf_product .imager .pricen {background:url('images/price1.png') 0 0 no-repeat;width:119px;height:45px;display:block;position:absolute;bottom:0px;right:5px;}
+#bistrclick .mlf_product .imager .pricen .priceFirst {font-size:14px;display:block;width:100%;line-height:18px;color:#ffffff;padding-top:8px;text-align:center;
+}
+#bistrclick .mlf_product .imager .pricen .priceSecond {clear:both;display:block;width:68%;line-height:12px;color:#8be0ff;text-align:center;font-size:12px;padding-top:6px;}
+#bistrclick .field, .mlf_capcha {display:block;width:100%;clear:both;display:block;overflow:hidden;padding-top:5px;}
+#bistrclick .field label, .mlf_capcha .label {width:140px;float:left;display:block;font-size:14px;}
+#bistrclick .field input, .mlf_capcha input {
+font-size:14px;
+background-color: #FFFFFF;
+border-bottom: 1px solid #C1C5C8;
+border-left: 1px solid #BDC1C3;
+border-radius: 2px;
+border-right: 1px solid #BDC1C3;
+border-top: 1px solid #B9BCBE;
+box-shadow: 0px 1px 2px 0px #DEDEDE inset;
+float: left;
+padding: 3px;
+width: 190px;
+float:right;
+}
+.mlf_capcha img {margin-bottom:5px;width:198px;margin-left:2px;}
+.mlf_capcha .fieldcp {width: 200px;display:block;float:right;overflow:hidden;}
+#bistrclick .field textarea {
+float:right;
+font-size:14px;
+background-color: #FFFFFF;
+border-bottom: 1px solid #C1C5C8;
+border-left: 1px solid #BDC1C3;
+border-radius: 2px;
+border-right: 1px solid #BDC1C3;
+border-top: 1px solid #B9BCBE;
+box-shadow: 0px 1px 2px 0px #DEDEDE inset;
+padding: 3px;
+width: 190px;
+height:60px;
+resize:none;
+}
+.mlfform {width:345px;float:left;display:block;overflow:hidden;margin-left:20px;}
+table.offers {width:100%;clear:both;margin-bottom:10px;border-top:1px solid #B9BCBE;border-left:1px solid #B9BCBE;font-size:14px;}
+table.offers td {border-right:1px solid #B9BCBE;border-bottom:1px solid #B9BCBE;padding:3px;}
+#bistrclick .errorField {display:block;overflow:hidden;padding:5px 5px 15px 40px;text-align:left;color:red;line-height:18px;font-size:14px;width:500px;clear:both;background:url('images/error.png') 0 0 no-repeat;}
+.sendmessages {display:block;overflow:hidden;padding:5px 5px 15px 40px;text-align:left;color:#000000;line-height:18px;font-size:16px;width:500px;clear:both;background:url('images/error.png') 4px -106px no-repeat;margin:10px 5px;}
+input.mlfsubmitbk {display:block;width:130px;height:25px;background:url('images/klickspr2.png') 0 0 no-repeat;text-align:center;line-height:25px;color:#000000;text-transform:uppercase;font-size:12px;text-decoration:none;
+background-position:0 -49px;color:#5e5e5e;border:none;
+float:right;clear:both;margin-top:10px;margin-right:23px;
+}
+input.mlfsubmitbk:hover {background-position:0 -74px;color:#ffffff;cursor:pointer;}
+table.offers {width:100%;border-top:1px solid #B9BCBE;border-left:1px solid #B9BCBE;border-spacing:0;}
+table.offers td {border-right:1px solid #B9BCBE;border-bottom:1px solid #B9BCBE;border-spacing:0;}
+table.offers td .naz {width:100%;clear:both;display:block;font-size:14px;font-weight:bold;}
+table.offers td .price {width:100%;clear:both;display:block;font-size:14px;color:#2cb6e9;}
+
+#bistrclick .mlfOfferProps {width:100%;clear:both;display:block;font-size:12px;color:#555555;padding:0 0 5px 0;overflow:hidden;}
+.locationwrap select {float:right;width:198px;margin: 0 0 5px 0;}

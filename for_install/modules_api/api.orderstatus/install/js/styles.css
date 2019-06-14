@@ -1,0 +1,126 @@
+.api-upload *{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.api-upload{margin:0 0 15px}
+.api-upload .api-file-list{ list-style:none; margin:0; padding:0;}
+.api-upload .api-file-list li{ margin:0 0 10px; position:relative; height:28px; line-height:28px }
+.api-upload .api-upload-file{position:absolute;z-index: 1;width: 100%;cursor: pointer;left:0;right:0;top:0;bottom:0;opacity:0;filter:alpha(opacity=0);}
+.api-upload .api-upload-drop{
+	position:relative; margin-bottom:15px; padding:15px; border:2px dashed #ddd; background:#fafafa; color:#aebac3; border-radius:4px;
+	-webkit-transition:all 0.1s ease-out 0s; -moz-transition:all 0.1s ease-out 0s; -ms-transition:all 0.1s ease-out 0s; -o-transition:all 0.1s ease-out 0s; transition:all 0.1s ease-out 0s;
+}
+.api-upload .api-upload-drop.api-dragover,
+.api-upload .api-upload-drop:hover{ cursor:pointer; border:2px dashed #929ba1; color:#929ba1; box-shadow:0 0 15px rgba(100, 100, 100, .2) }
+.api-upload .api-upload-drop > :last-child{ margin-bottom:0 }
+.api-upload .api-progress-bar{position:absolute;top:0;right:0;left:0;bottom:0;box-shadow:0 0 0 1px rgba(0, 0, 0, 0.24) inset;}
+.api-upload .api-error .api-progress-bar{background:#FCAFBB}
+.api-upload .api-error .api-progress-bar .api-progress{width:0 !important;}
+.api-upload .api-progress-bar .api-progress{
+	height:100%;
+	width:0;
+	background:#ffeca6;
+	-webkit-box-shadow:0 0 0 1px rgba(0, 0, 0, 0.24) inset; -moz-box-shadow:0 0 0 1px rgba(0, 0, 0, 0.24) inset; box-shadow:0 0 0 1px rgba(0, 0, 0, 0.24) inset;
+	-webkit-transition:width 0.5s ease-out 0s; -moz-transition:width 0.5s ease-out 0s; -ms-transition:width 0.5s ease-out 0s; -o-transition:width 0.5s ease-out 0s; transition:width 0.5s ease-out 0s;
+}
+.api-upload .api-progress-bar .api-progress{ background-image:-webkit-linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); background-image:linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); background-size:30px 30px }
+.api-upload .api-progress-bar .api-progress.api-active{ -webkit-animation:api-progress-bar-stripes 2s linear infinite; animation:api-progress-bar-stripes 2s linear infinite }
+@-webkit-keyframes api-progress-bar-stripes{
+	0%{ background-position:0 0 }
+	100%{ background-position:30px 0 }
+}
+@keyframes api-progress-bar-stripes{
+	0%{ background-position:0 0 }
+	100%{ background-position:30px 0 }
+}
+.api-upload .api-progress-bar .api-icon-cancel{
+	position:absolute;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAYAAAArzdW1AAAAVklEQVR42nWOgQnAMAgE3aCjOJEDuY3DZJ8rqZYipg8KPgen7GACvpAKLFCBgCxcYfeSYAHVFUhYHqdRR96w/A/40hRNzXUAJpiQdcVQB+QuYPxo8XQ33NCTVnhoHP8AAAAASUVORK5CYII=") no-repeat 50% 50%;
+	width:28px;
+	cursor:pointer;
+	opacity:.6;
+}
+.api-upload .api-progress-bar .api-icon-cancel:hover{opacity:1}
+.api-upload .api-file-label{
+	position:absolute;
+	top:0;
+	left:8px;
+	right:32px;
+	bottom:0;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.api-upload .api-file-label span{display:inline-block;}
+.api-upload .api-file-size:before{content:"-";	margin:0 5px;}
+.api-upload .api-upload-button{height:27px;}
+
+[class^="api-file-ext"]{
+	display:inline-block;
+	width:16px;
+	height:15px;
+	margin:0 3px -3px 0;
+	background-image:url("images/file-ext.png");
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+.api-file-ext-zip,
+.api-file-ext-zipx,
+.api-file-ext-rar,
+.api-file-ext-7z,
+.api-file-ext-cab,
+.api-file-ext-cbr,
+.api-file-ext-deb,
+.api-file-ext-gz,
+.api-file-ext-gzip,
+.api-file-ext-bzip,
+.api-file-ext-jar,
+.api-file-ext-tar,
+.api-file-ext-tar-gz,
+.api-file-ext-tgz,
+.api-file-ext-xar,
+.api-file-ext-arj{background-position: -16px 0;}
+.api-file-ext-gif{background-position: -32px 0;}
+.api-file-ext-jpg,
+.api-file-ext-jpeg{background-position: -48px 0;}
+.api-file-ext-png{background-position: -64px 0;}
+.api-file-ext-cml{background-position: -80px 0;}
+.api-file-ext-exe{background-position: -96px 0;}
+.api-file-ext-mkv{background-position: -112px 0;}
+.api-file-ext-mov{background-position: -128px 0;}
+.api-file-ext-wmv{background-position: -144px 0;}
+.api-file-ext-mp4{background-position: -160px 0;}
+.api-file-ext-avi{background-position: -176px 0;}
+.api-file-ext-ods,
+.api-file-ext-xls,
+.api-file-ext-xlsx{background-position: -192px 0;}
+.api-file-ext-odt,
+.api-file-ext-doc,
+.api-file-ext-docx{background-position: -208px 0;}
+.api-file-ext-txt{background-position: -224px 0;}
+.api-file-ext-pdf{background-position: -240px 0;}
+.api-file-ext-odp,
+.api-file-ext-ppt{background-position: -256px 0;}
+.api-file-ext-ogg{background-position: -272px 0;}
+.api-file-ext-mp3{background-position: -288px 0;}
+.api-file-ext-waw{background-position: -304px 0;}
+.api-file-ext-wma{background-position: -320px 0;}
+
+
+/* .history-files */
+.history-files{margin: 5px 0;}
+.history-files > div{white-space:nowrap;margin:2px 0}
+.history-files a:hover{border-bottom:1px dotted}
+
+/* sms */
+.aos-message textarea,
+.aos-sms-message textarea{min-height:80px;width:100%;	-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.aos-message textarea{min-height:120px}
+
+/* other */
+.api-order-view .api-progress-bar,
+.api-order-view .api-upload-button,
+.api-order-view .api-upload-drop,
+.api-order-view.api-sale-custom-checkbox,
+.api-order-view.aos-sms-tr{display:none;}
+.api-order-view .api-file-list li{margin:0}
+

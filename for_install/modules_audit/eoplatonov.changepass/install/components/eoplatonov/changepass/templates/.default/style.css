@@ -1,0 +1,54 @@
+.changepass{
+    font-family: Tahoma, Verdana;
+    width:285px;
+}
+.changepass_caption{
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom: 15px;
+}
+.clear{
+    clear:both;
+}
+.changepass_name_field{
+    float:left;
+    width:120px;
+    height:30px;
+    font-size:14px;
+}
+.changepass_last_pass,
+.changepass_new_pass{
+        line-height: 30px;
+}
+.changepass_input_box{
+    margin-bottom:10px;
+}
+.changepass_input_box input[type=password]{
+    float: right;
+    width: 150px;
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+.changepass input[type=submit]{
+    float: right;
+    height: 30px;
+    padding: 0px 15px;
+    margin-top: 5px;
+    background: #1576bd;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor:pointer;
+}
+.changepass_error{
+    color:red;
+    font-size:14px;
+    margin-bottom:20px;
+}
+.changepass_success{
+    color:green;
+    font-size:14px;
+    margin-bottom:20px;
+}

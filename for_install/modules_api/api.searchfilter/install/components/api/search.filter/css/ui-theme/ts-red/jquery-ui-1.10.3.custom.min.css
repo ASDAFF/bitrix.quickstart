@@ -1,0 +1,32 @@
+.ui-widget-content a{ color: #333 }
+.ui-widget{ font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.1em }
+.ui-widget-content{
+    border: 1px solid #DDD;
+    background: #EEE;
+    color: #333
+}
+.ui-widget-header{
+    border: 1px solid;
+    color: #FFF;
+
+    cursor: pointer;
+    color:              #FFFFFF;
+    border-color:       #FC0003 #DC020B #AD0517;
+    text-shadow:        0 -1px 0 rgba(0, 0, 0, 0.2);
+    background:         #FF0000;
+    background:         url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMjA1MWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:         -moz-linear-gradient(top, #FF0000 0%, #C2051A 100%);
+    background:         -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FF0000), color-stop(100%, #C2051A));
+    background:         -webkit-linear-gradient(top, #FF0000 0%, #C2051A 100%);
+    background:         -o-linear-gradient(top, #FF0000 0%, #C2051A 100%);
+    background:         -ms-linear-gradient(top, #FF0000 0%, #C2051A 100%);
+    background:         linear-gradient(to bottom, #FF0000 0%, #C2051A 100%);
+}
+.ui-slider{ position: relative; text-align: left }
+.ui-slider-horizontal{ height: .8em }
+.ui-slider .ui-slider-range{ position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0 }
+.ui-slider-horizontal .ui-slider-range{ top: 0; height: 100% }
+.ui-slider .ui-slider-handle{ position: absolute; z-index: 2; width: 22px; height: 22px; cursor: default }
+.ui-slider-horizontal .ui-slider-handle{ top: -6px; margin-left: -9px }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background: url(images/handle.png) 50% 50% no-repeat transparent;}

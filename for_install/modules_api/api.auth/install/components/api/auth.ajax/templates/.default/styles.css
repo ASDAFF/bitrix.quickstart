@@ -1,0 +1,10 @@
+.api_auth_ajax *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api_auth_ajax .api_link{ color: #039be5; border-bottom: 1px dashed; text-decoration: none; cursor: pointer; display: inline-block; font-size: 12px; margin: 0; }
+.api_auth_ajax .api_link + .api_link{ margin-left: 10px }
+.api_auth_ajax .api_link:hover{ color: #0056a1; border-bottom: 1px dashed; }
+.api_auth_ajax .api_link.api_button{ border-bottom: 1px solid }
+.api_auth_ajax .api_profile a{ text-decoration: none; white-space: nowrap; }
+.api_auth_ajax .api_profile a:hover{ color: #0056a1; }
+#api_auth_ajax_modal{ z-index: 990 }
+#api_auth_ajax_modal .api_modal_content > div{ display: none }
+#api_auth_ajax_modal .api_modal_content > div.api_active{ display: block }

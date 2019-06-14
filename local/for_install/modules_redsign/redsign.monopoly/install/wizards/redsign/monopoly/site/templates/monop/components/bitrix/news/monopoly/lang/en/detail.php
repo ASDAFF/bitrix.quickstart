@@ -1,3 +1,0 @@
-<?
-$MESS['RS.MONOPOLY.BACK'] = 'Back';
-$MESS['RS.MONOPOLY.YASHARE'] = 'Share:';

@@ -1,0 +1,30 @@
+<?
+$MESS ['VACANCY_MODULE_DESCRIPTION'] = "Добавляет инфоблок Вакансии и организует выгрузку в Яндекс";
+$MESS ['VACANCY_INSTALL_TITLE'] = "Установка модуля Вакансии";
+$MESS ['VACANCY_UNINSTALL_TITLE'] = "Удаление модуля Вакансии";
+$MESS ['VACANCY_MODULE_NAME'] = "Вакансии";
+$MESS ['VACANCY_MODULE_IBLOCK_NOT_INSTALLED'] = 'Не установлен модуль Информационные блоки. Продолжение не возможно';
+$MESS ['VACANCY'] = 'Вакансии';
+$MESS ["VACANCY_INSTALL_QUESTION"] = "Шаг1: инфоблок с вакансиями существует или его необходимо создать?";
+$MESS ["VACANCY_STEP2_TITLE"] = "Шаг2: выберите инфоблок, содержащий вакансии";
+$MESS ["VACANCY_IBLOCK_TYPE_EN"] = "vacancies";
+$MESS ["VACANCY_IBLOCK_TYPE_RU"] = "Вакансии";
+$MESS ["VACANCY_PARTNER_NAME"] = "Эм Си Арт";
+$MESS ["VACANCY_IBLOCK_TYPE_ID"] = "vacancies";
+$MESS["VACANCY_FIELD_EMPLOYMENT"] = "Занятость";
+$MESS["VACANCY_FIELD_EMPLOYMENT_VALUE_FULL"] = "Полная";
+$MESS["VACANCY_FIELD_EMPLOYMENT_VALUE_SOME"] = "Частичная";
+$MESS["VACANCY_FIELD_EMPLOYMENT_VALUE_TEMPORARLY"] = "Временная";
+$MESS["VACANCY_FIELD_EMPLOYMENT_VALUE_STAGE"] = "Стажировка";
+$MESS["VACANCY_FIELD_STATUS"] = "Статус";
+$MESS["VACANCY_FIELD_STATUS_VALUE_ACTIVE"] = "Активная";
+$MESS["VACANCY_FIELD_STATUS_VALUE_ARCHIVE"] = "Архивная";
+$MESS["VACANCY_FIELD_TOP"] = "Топовая вакансия";
+$MESS["VACANCY_FIELD_CONTACT"] = "Контактное лицо";
+$MESS["VACANCY_FIELD_SALARY"] = "Зарплата";
+$MESS["VACANCY_FIELD_SHEDULE"] = "График работы";
+$MESS["VACANCY_FIELD_SHEDULE_VALUE_1"] = "Сменный";
+$MESS["VACANCY_FIELD_SHEDULE_VALUE_2"] = "Гибкий";
+$MESS["VACANCY_FIELD_SHEDULE_VALUE_3"] = "Удаленная работа";						
+$MESS["VACANCY_VERSION_PHP_NOT_CORRECT"] = "Требуется версия PHP не ниже 5.2.6";
+?>						

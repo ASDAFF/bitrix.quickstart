@@ -1,0 +1,16 @@
+.item_coll li{
+    float: left;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.item_coll li img{
+    margin: 5px;
+}
+
+.item_coll:after{
+    content: '';
+    clear: both;
+    display: block;
+}

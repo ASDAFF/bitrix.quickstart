@@ -1,0 +1,16 @@
+.b-hidden-input {
+	display: inline-block;
+	vertical-align: middle;
+
+	position: relative;
+}
+
+.b-hidden-input__control,
+.b-hidden-input.is--active .b-hidden-input__toggle,
+.b-hidden-input.is--active .b-hidden-input__addition {
+	display: none;
+}
+
+.b-hidden-input.is--active .b-hidden-input__control {
+	display: block;
+}

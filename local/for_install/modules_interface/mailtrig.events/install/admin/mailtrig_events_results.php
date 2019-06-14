@@ -1,1 +1,0 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mailtrig.events/admin/mailtrig_events_results.php");?>

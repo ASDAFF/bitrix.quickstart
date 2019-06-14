@@ -1,0 +1,9 @@
+.b-collapse {
+	display: none;
+	overflow: hidden;
+}
+
+.b-collapse.is--active {
+	display: block;
+	max-height: none;
+}

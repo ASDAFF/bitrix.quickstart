@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ */
+
+/*Menu icon*/
+#seo2_redirect_menu_icon, .seo2_redirect_menu_icon {
+    background-image: url(icons/seo2_redirects/mnu_index.gif);
+    background-position: 8px 4px
+}
+
+/*Pages & menu icons*/
+#seo2_redirect_page_icon {
+    background-image: url(icons/seo2_redirects/title_index.gif);
+    background-position: 8px 4px
+}
+
+#seo2_redirect_listpage_icon {
+    background-image: url(icons/seo2_redirects/title_gallery.gif);
+    background-position: 8px 4px
+}
+
+#seo2_redirect_page_icon_gallery {
+    background-image: url(icons/seo2_redirects/title_gallery.gif);
+    background-position: 8px 4px
+}
+
+#seo2_redirect_menu_icon_gallery, .seo2_redirect_menu_icon_gallery {
+    background-image: url(icons/seo2_redirects/mnu_gallery.gif);
+    background-position: 8px 4px
+}

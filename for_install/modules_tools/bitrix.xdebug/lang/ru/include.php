@@ -1,0 +1,6 @@
+<?
+$MESS["BITRIX_XDEBUG_OTLADCIK"] = "Отладчик";
+$MESS["BITRIX_XDEBUG_OBZOR"] = "Обзор";
+$MESS["BITRIX_XDEBUG_OTLADKA"] = "Отладка";
+$MESS["BITRIX_XDEBUG_PROFILIROVANIE"] = "Профилирование";
+?>

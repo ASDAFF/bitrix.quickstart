@@ -1,0 +1,58 @@
+.ts-print-form{
+    padding: 10px;
+    margin: 0;
+}
+.ts-date-field{
+    margin: 0 0 10px;
+    padding: 0;
+}
+.ts-icon-pdf{
+    font: normal 14px/24px Arial,Verdana,sans-serif;
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #08608C;
+    white-space: nowrap;
+    outline: medium none;
+    border: 0;
+    background: none;
+}
+.ts-icon-pdf:hover, .ts-icon-pdf:active, .ts-icon-pdf:focus{text-decoration: none;}
+.ts-icon-pdf span{
+    margin-left: 3px;
+    border-bottom: 1px solid;
+}
+.ts-icon-pdf:hover span{
+    color: #EF3225;
+}
+
+.ts-print-form input[type="text"], .ts-print-form .ts-print-btn{
+    border: 1px solid #b6b6b6;
+    padding: 3px 5px;
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGUwZTAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #ffffff 0%, #fefefe 42%, #f0f0f0 74%, #e0e0e0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(42%,#fefefe), color-stop(74%,#f0f0f0), color-stop(100%,#e0e0e0));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#fefefe 42%,#f0f0f0 74%,#e0e0e0 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#fefefe 42%,#f0f0f0 74%,#e0e0e0 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#fefefe 42%,#f0f0f0 74%,#e0e0e0 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#fefefe 42%,#f0f0f0 74%,#e0e0e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );
+}
+.ts-print-form input[type="text"]:focus, .ts-print-form .ts-print-btn:hover{
+    background: #FFFFFF;
+    border: 1px solid #37A2E2;
+    outline: medium none;
+    -webkit-box-shadow: 0 1px #FFFFFF, 0 2px 6px 2px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:    0 1px #FFFFFF, 0 2px 6px 2px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:         0 1px #FFFFFF, 0 2px 6px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.ts-print-form img{
+    vertical-align: middle;
+}
+.ts-print-form button{cursor: pointer;}
+.ts-print-form .ts-print-btn{
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+}

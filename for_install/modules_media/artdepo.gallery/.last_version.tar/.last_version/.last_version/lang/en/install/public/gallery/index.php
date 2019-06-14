@@ -1,0 +1,3 @@
+<?
+$MESS['ADG_INSTALL_PUBLIC_TITLE_INDEX'] = "Gallery";
+?>

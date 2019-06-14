@@ -1,0 +1,47 @@
+{
+  "name": "jquery-touchswipe",
+  "title": "Touch Swipe",
+  "description": "A jquery plugin to be used on touch devices such as iPad, iPhone, Android etc, to react to swipe gestures.",
+  "keywords": [
+    "touchSwipe",
+    "touch",
+    "swipe",
+    "gestures",
+    "tocuhevent",
+    "jquery"
+  ],
+  "main": "./jquery.touchSwipe.min.js",
+  "author": {
+    "name": "Matt Bryson"
+  },
+  "version": "1.6.19",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/mattbryson/TouchSwipe-Jquery-Plugin/master/LICENCE"
+    },
+    {
+      "type": "GPL V2",
+      "url": "https://raw.githubusercontent.com/mattbryson/TouchSwipe-Jquery-Plugin/master/LICENCE"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "homepage": "http://labs.rampinteractive.co.uk/touchSwipe/demos/",
+  "devDependencies": {
+    "docdash": "^0.3.0",
+    "jsdoc": "^3.5.5",
+    "uglify-js": "^2.6.2"
+  },
+  "scripts": {
+    "docs": "jsdoc jquery.touchSwipe.js --readme README.md --destination ./docs --template node_modules/docdash --tutorials ./demos ",
+    "minify": "uglifyjs jquery.touchSwipe.js --output jquery.touchSwipe.min.js --compress  --comments",
+    "build": "npm run docs && npm run minify"
+  }
+}

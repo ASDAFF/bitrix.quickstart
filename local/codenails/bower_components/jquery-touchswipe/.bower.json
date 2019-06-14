@@ -1,0 +1,20 @@
+{
+  "name": "jquery-touchswipe",
+  "main": "./jquery.touchSwipe.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git"
+  },
+  "homepage": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin",
+  "version": "1.6.19",
+  "_release": "1.6.19",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.6.19",
+    "commit": "f0d71bf645779358e1458e212102c5d59b7702ec"
+  },
+  "_source": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git",
+  "_target": "^1.6.19",
+  "_originalSource": "jquery-touchswipe",
+  "_direct": true
+}

@@ -1,0 +1,80 @@
+.jtf-wrp {
+	text-align: justify;
+}
+
+.jtf-wrp:before{
+    content: '';
+    display: block;
+    width: 100%;
+}
+
+.jtf-wrp:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.jtf-item {
+	display: inline-block;
+	position: relative;
+	top: 0;
+}
+
+@mixin transition($val:0.4s, $ease:ease-in-out, $target:all) {
+	-webkit-transition: $target $val $ease;
+	   -moz-transition: $target $val $ease;
+	    -ms-transition: $target $val $ease;
+	     -o-transition: $target $val $ease;
+	        transition: $target $val $ease;
+}
+
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+@mixin vertical-align-reset($position: relative) {
+	position: $position;
+	top: auto;
+	-webkit-transform: none;
+	   -moz-transform: none;
+	    -ms-transform: none;
+	     -o-transform: none;
+	        transform: none;
+}
+
+@mixin centered() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+@mixin centered-reset($position: relative) {
+	position: $position;
+	top: auto;
+	left: auto;
+	-webkit-transform: none;
+	   -moz-transform: none;
+	    -ms-transform: none;
+	     -o-transform: none;
+	        transform: none;
+}
+
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+       -moz-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+         -o-transform: rotate($deg);
+            transform: rotate($deg);
+}

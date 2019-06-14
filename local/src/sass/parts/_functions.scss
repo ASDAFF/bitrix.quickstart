@@ -1,0 +1,32 @@
+/* пересчет из px в em */
+
+$browser-context: 14; // Default
+
+@function em($pixels, $context: $browser-context) { 
+	@return #{$pixels/$context}em;
+}
+
+/* пересчет из px в vw */
+
+$max-breakpoint: 1920;
+
+$wide-screen: "(min-width: #{$max-breakpoint}px)";
+
+@function get-vw($target) { 
+	$vw-context: ($max-breakpoint*.01) * 1px;
+	@return ($target/$vw-context) * 1vw;
+}
+
+// Mixin
+@mixin vw($size) {
+	font-size: get-vw($size);
+	// Prevent font-size from getting too big
+	@media #{$wide-screen} {
+		font-size: $size;
+	}
+}
+
+// .block-header {
+//   font-size: 4.5em; // Fallback
+//   @include vw(72px);
+// }

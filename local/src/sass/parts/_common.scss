@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	font-family: 'SFUIText';
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'SFUIText';
+}
+
+b {
+	font-family: 'SFUIText';
+	font-weight: bold;
+}
+
+.font-light {
+	font-family: 'SFUIText';
+	font-weight: 300;
+}
+
+.ta-l {
+	text-align: left;
+}
+
+.ta-c {
+	text-align: center;
+}
+
+.ta-r {
+	text-align: right;
+}
+
+.transitioned {
+	transition: 0.2s ease;
+}
+
+.z1 {
+	z-index: 1;
+}
+
+.z2 {
+	z-index: 2;
+}
+
+.z3 {
+	z-index: 3;
+}
+
+.iflex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&--grow {
+		flex-grow: 1;
+	}
+}
+
+.pos-rel {
+	position: relative;
+}

@@ -7,9 +7,9 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
  * @var $full_width - переменная в которой будет true если выполнится условие из  $arFullWidthPages
  */
 
-use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Application;
 use Bitrix\Main\Page\Asset;
-
+use Bitrix\Main\Localization\Loc;
 Loc::loadMessages(__FILE__);
 ?>
 <!DOCTYPE html>
@@ -35,14 +35,14 @@ Loc::loadMessages(__FILE__);
     $APPLICATION->ShowLink("canonical", null, false);
 
     // Bootstrap core CSS
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'bootstrap.css');
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'bootstrap-theme.css');
+    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap.css');
+    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap-theme.css');
     // Animate.css
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'animate.min.css');
+    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css');
     // FancyBox CSS
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'jquery.fancybox.min.css');
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'global.css');
-    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . 'responsive.css');
+    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.css');
+    Asset::getInstance()->addCss(PATH_GLOBAL_CSS);
+    Asset::getInstance()->addCss(PATH_RESPONSIVE_CSS);
 
     //Тут выводим стили
     $APPLICATION->ShowCSS(true, false);
@@ -51,10 +51,11 @@ Loc::loadMessages(__FILE__);
     //CJSCore::Init(array('jquery'));
     //CJSCore::Init(array("jquery2"));
 
-    Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'bootstrap.min.js');
-    Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
-    Asset::getInstance()->addJs(PATH_TEMPLATE_JS . 'global.js');
-    Asset::getInstance()->addJs(PATH_AJAX . 'ajax.js');
+    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/jquery/dist/jquery.min.js');
+    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/owl.carousel/dist/owl.carousel.min.js');
+    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.js');
+    Asset::getInstance()->addJs(PATH_GLOBAL_JS);
+    Asset::getInstance()->addJs(PATH_AJAX_JS);
 
     //Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 

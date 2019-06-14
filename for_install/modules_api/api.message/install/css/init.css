@@ -1,0 +1,62 @@
+.asm-alert *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.asm-alert{ display: none; width: 100%; position: relative; z-index: 900; background: url("/bitrix/images/api.message/border.png") repeat-x 50% 100%; padding-bottom: 4px; text-align: center; color: white; text-shadow: 1px 1px 2px #5c5c5c; }
+.asm-alert .asm-inner{ padding: 10px 30px; }
+.asm-alert .asm-content{ position: relative; margin: 0 auto; display: table; width: 100%; }
+.asm-alert .asm-content > div{ display: table-cell; text-align: center; vertical-align: middle; overflow: hidden }
+.asm-alert .asm-close{ white-space: nowrap; padding-left: 15px }
+.asm-alert .asm-close-icon{ content: ""; display: inline-block; cursor: pointer; width: 20px; height: 20px; background-image: url('/bitrix/images/api.message/close.png'); }
+
+/* themes */
+.asm-alert-clear .asm-inner{ background: transparent; }
+.asm-alert-blue .asm-inner{
+	background: #00b4f5; /* Old browsers */
+	background: -moz-linear-gradient(top, #00b4f5 0%, #008dc5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #00b4f5 0%, #008dc5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #00b4f5 0%, #008dc5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b4f5', endColorstr='#008dc5',GradientType=0 ); *//* IE6-9 */
+	-webkit-box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+	-moz-box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+	box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+}
+.asm-alert-green .asm-inner{
+	background: #3da35c; /* Old browsers */
+	background: -moz-linear-gradient(top, #3da35c 0%, #348c4f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #3da35c 0%, #348c4f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3da35c 0%, #348c4f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da35c', endColorstr='#348c4f',GradientType=0 ); *//* IE6-9 */
+	-webkit-box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+	-moz-box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+	box-shadow: inset 0px -4px 7px -5px #000, inset 0px 0px 7px -5px #000, inset 0px 5px 9px -5px #000;
+}
+.asm-alert-orange .asm-inner{
+	background: #fbb450; /* Old browsers */
+	background: -moz-linear-gradient(top, #fbb450 0%, #f89406 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fbb450 0%, #f89406 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fbb450 0%, #f89406 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb450', endColorstr='#f89406',GradientType=0 ); *//* IE6-9 */
+	-webkit-box-shadow: inset 0px -2px 7px -5px #000, inset 0px -2px 7px -5px #000, inset 0px 4px 9px -5px #000;
+	-moz-box-shadow: inset 0px -2px 7px -5px #000, inset 0px -2px 7px -5px #000, inset 0px 4px 9px -5px #000;
+	box-shadow: inset 0px -2px 7px -5px #000, inset 0px -2px 7px -5px #000, inset 0px 4px 9px -5px #000;
+}
+.asm-alert-red .asm-inner{
+	background: #7c1919; /* Old browsers */
+	background: -moz-linear-gradient(top, #7c1919 0%, #9d2020 3%, #b62525 6%, #c82828 9%, #d42b2b 13%, #d92b2b 16%, #a42121 91%, #9e2020 94%, #821a1a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7c1919 0%, #9d2020 3%, #b62525 6%, #c82828 9%, #d42b2b 13%, #d92b2b 16%, #a42121 91%, #9e2020 94%, #821a1a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7c1919 0%, #9d2020 3%, #b62525 6%, #c82828 9%, #d42b2b 13%, #d92b2b 16%, #a42121 91%, #9e2020 94%, #821a1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c1919', endColorstr='#821a1a',GradientType=0 );*//* IE6-9 */
+}
+
+/* @media */
+@media (max-width: 767px){
+	.asm-alert .asm-inner{
+		padding: 10px 15px;
+	}
+	.asm-alert .asm-inner *{
+		font-size: 13px;
+	}
+}
+@media (max-width: 479px){
+	.asm-alert .asm-content{ display: block }
+	.asm-alert .asm-content > div{ display: block }
+	.asm-alert .asm-close{ padding: 5px 0 0 0 }
+}

@@ -1,0 +1,6 @@
+<Files "gateway.php">
+Allow from all
+</Files>
+<Files "ajax.php">
+Allow from all
+</Files>

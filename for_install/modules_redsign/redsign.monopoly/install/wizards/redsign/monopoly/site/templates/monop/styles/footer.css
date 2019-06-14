@@ -1,0 +1,112 @@
+/* line 3, ../sass/footer.scss */
+footer {
+  margin-top: 30px;
+  border-top: 2px solid #0084c9;
+}
+/* line 6, ../sass/footer.scss */
+footer .container {
+  padding-top: 18px;
+}
+/* line 9, ../sass/footer.scss */
+footer .social_icons {
+  margin-top: 10px;
+}
+/* line 11, ../sass/footer.scss */
+footer .social_icons img {
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+/* line 17, ../sass/footer.scss */
+footer .other_buttons_wrap {
+  width: 60%;
+  text-align: center;
+  margin: 15px auto;
+}
+/* line 21, ../sass/footer.scss */
+footer .other_buttons_wrap .btn {
+  width: 100%;
+  margin-bottom: 5px;
+}
+/* line 26, ../sass/footer.scss */
+footer .footer_logo_wrap {
+  max-width: 265px;
+  height: 50px;
+  border-bottom: 2px solid #0084c9;
+}
+/* line 30, ../sass/footer.scss */
+footer .footer_logo_wrap img {
+  max-width: 85%;
+  max-height: 90%;
+  margin-bottom: 10px;
+}
+/* line 36, ../sass/footer.scss */
+footer .contacts {
+  margin-top: 10px;
+}
+/* line 38, ../sass/footer.scss */
+footer .contacts .phone {
+  font-size: 20px;
+}
+/* line 40, ../sass/footer.scss */
+footer .contacts .phone span {
+  color: #0084c9;
+}
+/* line 43, ../sass/footer.scss */
+footer .contacts .phone a {
+  text-decoration: none;
+}
+/* line 49, ../sass/footer.scss */
+footer .bottom_subs {
+  margin-top: 10px;
+}
+
+/* line 54, ../sass/footer.scss */
+.footer_copyright {
+  background-color: #f4f4f4;
+  border-top: 1px solid #cacaca;
+  width: 100%;
+  margin-top: 35px;
+  line-height: 60px;
+}
+/* line 60, ../sass/footer.scss */
+.footer_copyright .alfa_title {
+  text-align: right;
+}
+/* line 63, ../sass/footer.scss */
+.footer_copyright a {
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  /* line 69, ../sass/footer.scss */
+  footer .other_buttons_wrap {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 75, ../sass/footer.scss */
+  .footer_copyright {
+    padding: 15px 0px;
+    line-height: 20px;
+  }
+
+  /* line 79, ../sass/footer.scss */
+  #bx-composite-banner {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 88, ../sass/footer.scss */
+  .footer_copyright .alright {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  /* line 95, ../sass/footer.scss */
+  .alfa_title {
+    display: none;
+  }
+}

@@ -1,0 +1,1 @@
+$(function(){console.log("sdfasd");(function(){return 2})&&console.log("sdfsdfg")});

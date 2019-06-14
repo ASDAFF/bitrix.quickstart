@@ -1,0 +1,1 @@
+DROP TABLE b_comments;

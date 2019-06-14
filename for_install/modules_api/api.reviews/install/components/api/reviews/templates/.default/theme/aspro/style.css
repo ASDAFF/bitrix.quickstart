@@ -1,0 +1,41 @@
+.api-reviews .api-block-title,
+.api-reviews .api-block-sort,
+.api-reviews .api-block-title a,
+.api-reviews .api-block-sort a{ color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.2) }
+.api-reviews .api-block-sort a{border-color: #fff}
+.api-reviews .api-block-sort a.api-active,
+.api-reviews .api-block-sort a:hover{color: #000}
+
+.arbt-color-yellow .api-block-title,
+.arbt-color-yellow .api-block-sort{ background: #faaa00; }
+
+.arbt-color-orange .api-block-title,
+.arbt-color-orange .api-block-sort{ background: #ff6d00; }
+
+.arbt-color-red .api-block-title,
+.arbt-color-red .api-block-sort{ background: #de002b; }
+
+.arbt-color-magenta .api-block-title,
+.arbt-color-magenta .api-block-sort{ background: #b82945; }
+
+.arbt-color-orchid .api-block-title,
+.arbt-color-orchid .api-block-sort{ background: #d75cb6; }
+
+.arbt-color-navy .api-block-title,
+.arbt-color-navy .api-block-sort{ background: #006dca; }
+
+.arbt-color-blue .api-block-title,
+.arbt-color-blue .api-block-sort{ background: #01aae3; }
+
+.arbt-color-green_sea .api-block-title,
+.arbt-color-green_sea .api-block-sort{ background: #01b1af; }
+
+.arbt-color-green .api-block-title,
+.arbt-color-green .api-block-sort{ background: #009f4f; }
+
+.arbt-color-irish_green .api-block-title,
+.arbt-color-irish_green .api-block-sort{ background: #6db900; }
+
+.arbt-color-purple .api-block-title,
+.arbt-color-purple .api-block-sort{ background: #9d57fb; }
+

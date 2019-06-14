@@ -1,3 +1,0 @@
-<?
-$sSectionName="Warranty and service";
-?>

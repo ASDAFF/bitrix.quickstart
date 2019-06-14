@@ -1,0 +1,6 @@
+<?
+$MESS["ML2WEBFORMS_FD_NAME"] = "Веб-форма";
+$MESS["ML2WEBFORMS_FD_DESCRIPTION"] = "Веб-форма";
+$MESS["ML2WEBFORMS_FD_MENU_NAME"] = "Веб-формы";
+$MESS["ML2WEBFORMS_FD_COMPONENTS"] = "Multiline";
+?>

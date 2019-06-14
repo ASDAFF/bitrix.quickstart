@@ -1,0 +1,68 @@
+/* left main menu */
+.adm-main-menu-item{height: auto;}
+.adm-main-menu-item:hover .adm-main-menu-hover,
+.adm-main-menu-item-active .adm-main-menu-hover{height: 100%;}
+.adm-main-menu-item-text{padding-bottom: 5px}
+
+/* left submenu menu */
+.adm-submenu-item-name{height: auto;margin: 0;}
+.adm-submenu-item-name-link,
+.adm-submenu-item-arrow,
+.adm-submenu-item-name:hover,
+.adm-submenu-current-fav,
+.adm-submenu-item-name:hover .adm-submenu-item-name-link,
+.adm-submenu-current-fav .adm-submenu-item-name-link{height: 26px;}
+.adm-submenu-item-name-link-text{padding: 3px 0;}
+.adm-submenu-item-arrow{top: -3px;}
+.adm-submenu-item-name:hover,
+.adm-submenu-current-fav{padding-top: 1px;}
+.adm-submenu-item-name:hover .adm-submenu-item-name-link,
+.adm-submenu-current-fav .adm-submenu-item-name-link{padding-top: 0;}
+.adm-submenu-item-active > .adm-submenu-item-name,
+.adm-submenu-item-active > .adm-submenu-item-name > .adm-submenu-item-name-link{height: 26px !important;}
+
+.adm-title{margin: 5px 0 10px;}
+
+/* adm-info-message */
+#bx-admin-prefix .adm-info-message{padding-top: 10px !important;padding-bottom: 10px !important;margin: 13px 0 !important;}
+
+/* list table */
+.adm-list-table-header .adm-list-table-cell{padding: 4px 0 4px 0;}
+.adm-list-table-cell-inner{padding: 0 10px 0 10px;}
+.adm-list-table-cell.adm-list-table-checkbox,
+.adm-list-table-cell.adm-list-table-popup-block{padding:5px 0 1px 0;}
+.adm-list-table-cell{padding:6px 0 6px 12px;}
+.adm-list-table-cell.align-center {padding:6px 0 6px 0;}
+.adm-list-table-cell.align-right{padding:6px 12px 6px 0;}
+.adm-list-table-cell.align-left{padding:6px 0 6px 12px;}
+
+/* form edit */
+.adm-detail-content-cell-l,
+.adm-detail-content-cell-r {padding:3px;}
+.adm-detail-title{padding: 0px 53px 10px 2px;}
+.adm-detail-tab{padding: 8px 12px 0;}
+
+/* internal table */
+#bx-admin-prefix table.list-table td,
+#bx-admin-prefix table.internal td{padding: 5px !important;}
+#bx-admin-prefix table.list-table .heading td,
+#bx-admin-prefix table.internal .heading td{padding: 10px !important;}
+
+/* adm-filter */
+.adm-filter-content{padding: 10px 0;}
+
+/* context menu */
+#bx-admin-prefix .bx-core-popup-menu-item-text{height: 25px !important;line-height: 25px !important;}
+#bx-admin-prefix .bx-core-popup-menu-separator{margin: 5px 10px !important;}
+
+/* navigation */
+.adm-navigation{padding:0;}
+
+#upd_partner_modules_new_result_div{display: none;}
+#upd_partner_modules_all .adm-list-table-cell-last{white-space: nowrap}
+#upd_partner_modules_all .adm-list-table-cell a{color: #1565dd;}
+
+/* modules.css */
+/* sale  */
+.adm-s-order-table-ddi-table thead td{height: 35px;}
+.adm-s-result-container-itog-table td{height: 28px}

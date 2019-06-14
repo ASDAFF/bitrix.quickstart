@@ -1,0 +1,172 @@
+#da2{
+	width:978px;
+	background:url('img/bg.png') 0 0 no-repeat;
+	padding-bottom:40px;
+}
+#da2 .da2-leftblock,
+#da2 .da2-centerblock,
+#da2 .da2-rightblock{
+	float:left;
+}
+
+/* left block */
+#da2 .da2-leftblock{
+	width:332px;
+	margin:115px 0px 10px 15px;
+	text-align:center;
+}
+#da2 .da2-title1{
+	font-weight:bold;
+	font-size:14px;
+	color:#2B3347;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+#da2 .da2-super_price{
+	font-weight:bold;
+	font-size:18px;
+	color:#2B3347;
+	margin-left:26px;
+}
+#da2 .da2-super_price-price{
+	font-size:24px;
+	color:#DB2012;
+}
+#da2 .da2-price_and_discount{
+	margin-top:15px;
+}
+#da2 .da2-price_and_discount-lp{
+	float:left;
+	width:82px;
+	font-size:16px;
+	margin-left:42px;
+	text-align:center;
+	color:#FFFFFF;
+}
+#da2 .da2-price{
+	font-size:16px;
+	text-decoration:line-through;
+}
+#da2 .da2-price_and_discount-rp{
+	float:right;
+	color:white;
+	width:90px;
+	margin-right:16px;
+	text-align:center;
+	font-size:16px;
+}
+#da2 .da2-economy{
+	font-size:16px;
+}
+
+/* center block */
+#da2 .da2-centerblock{
+	position:relative;
+	width:360px;
+	margin:50px 0px 0px 0px;
+	text-align:center;
+}
+#da2 .da-buy_link{
+	display:block;
+	float:right;
+	margin-top:10px;
+}
+
+/* right block */
+#da2 .da2-rightblock{
+	width:243px;
+	margin:81px 0px 0px 10px;
+}
+#da2 .da2-name{
+	
+}
+#da2 .da2-name a{
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:10px;
+	color:black;
+	text-decoration:none;
+}
+#da2 .da2-name a:hover{
+	text-decoration:underline;
+}
+#da2 .da2-text{
+	font-size:12px;
+	color:#222;
+	font-weight:normal;
+}
+
+/* bottom block */
+#da2 .da2-bot1{
+	float:left;
+	text-align:center;
+}
+#da2 .da2-bot2{
+	float:right;
+	width:562px;
+	margin-right:10px;
+}
+#da2 .da2-bottomblock{
+	position:relative;
+	float:left;
+	width:918px;
+	height:58px;
+	margin-left:30px;
+	margin-top:4px;
+	background:url('img/progress_bar.png') 0 0 no-repeat;
+}
+#da2 .da2-already_selled{
+	font-size:16px;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	margin-top:18px;
+}
+#da2 .da2-already_selled span{
+	font-size:16px;
+}
+#da2 .da2-progress_bar{
+	position:relative;
+	font-size:16px;
+	color:white;
+	width:287px;
+	height:31px;
+	margin-top:5px;
+	margin-left:19px;
+	text-align:center;
+	background:url('img/line_bg.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-line{
+	position:absolute;
+	height:19px;
+	z-index:10;
+	margin:3px 3px;
+	background:url('img/line.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-text{
+	width:298px;
+	text-align:center;
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-top:8px;
+}
+#da2 .da2-time_block{
+	display:inline-block;
+	font-size:12px;
+	font-weight:normal;
+}
+#da2 .da2-js-h,
+#da2 .da2-js-m,
+#da2 .da2-js-s{
+	font-size:30px;
+}
+#da2 .da2-do_okon_prodag{
+	color:#FFE000;
+	font-size:19px;
+	display:block;
+}
+
+/* other */
+#da2 .da2-clear{
+	clear:both;
+}

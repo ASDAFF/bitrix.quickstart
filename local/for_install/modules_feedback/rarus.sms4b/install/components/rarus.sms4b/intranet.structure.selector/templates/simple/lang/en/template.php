@@ -1,6 +1,0 @@
-<?
-$MESS['ISS_TPL_SIMPLE_FILTER_DEPARTMENT'] = "Department";
-$MESS['ISS_TPL_SIMPLE_FILTER_FIO'] = "Full Name";
-$MESS['ISS_TPL_FILTER_SUBMIT'] = "Search";
-$MESS['ISS_TPL_FILTER_CANCEL'] = "Cancel";
-?>

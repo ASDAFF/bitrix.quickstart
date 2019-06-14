@@ -1,0 +1,1270 @@
+/* line 3, ../sass/header.scss */
+.topline {
+  line-height: 22px;
+}
+
+/*Header v4
+------------------------------------*/
+/* line 9, ../sass/header.scss */
+header {
+  z-index: 99;
+  position: relative;
+}
+/* line 12, ../sass/header.scss */
+header .vertical_blue_line {
+  border-left: 1px solid #0083c7;
+}
+/* line 15, ../sass/header.scss */
+header .topline {
+  padding-top: 1px;
+}
+/* line 18, ../sass/header.scss */
+header .head {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+/* line 22, ../sass/header.scss */
+header .slogan {
+  font-size: 20px;
+  color: #202020;
+}
+/* line 26, ../sass/header.scss */
+header .box {
+  display: inline-block;
+  line-height: 24px;
+  vertical-align: middle;
+}
+/* line 30, ../sass/header.scss */
+header .box .in {
+  line-height: 1.38462;
+}
+/* line 35, ../sass/header.scss */
+header .contacts .phone {
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+}
+/* line 38, ../sass/header.scss */
+header .contacts .phone span {
+  color: #0084c9;
+}
+/* line 41, ../sass/header.scss */
+header .contacts .phone a {
+  text-decoration: none;
+}
+/* line 46, ../sass/header.scss */
+header .buttons {
+  text-align: right;
+}
+/* line 48, ../sass/header.scss */
+header .buttons .btn {
+  min-width: 175px;
+  margin-bottom: 3px;
+}
+
+/* line 55, ../sass/header.scss */
+header .navbar.type2 .contacts .phone {
+  font-size: 18px;
+}
+
+/* line 59, ../sass/header.scss */
+header .navbar {
+  margin: 0;
+}
+
+/* line 63, ../sass/header.scss */
+header .navbar-default {
+  border: none;
+  background: none;
+}
+
+/* line 70, ../sass/header.scss */
+header.style2 .navbar-header {
+  margin: 0px;
+}
+/* line 74, ../sass/header.scss */
+header .navbar-header {
+  float: none;
+  margin: 13px 0px 24px 0px;
+}
+/* line 80, ../sass/header.scss */
+header .navbar-header > .row:first-child > .col .box {
+  vertical-align: middle;
+}
+/* line 82, ../sass/header.scss */
+header .navbar-header > .row:first-child > .col .box h4 {
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  /* line 95, ../sass/header.scss */
+  header .navbar-header > .row:first-child > .col {
+    min-height: 75px;
+    line-height: 75px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 104, ../sass/header.scss */
+  header .navbar-default .navbar-nav > .open > a,
+  header .navbar-default .navbar-nav > .open > a:hover,
+  header .navbar-default .navbar-nav > .open > a:focus {
+    border-bottom-color: #ebebeb;
+  }
+}
+@media (max-width: 991px) {
+  /* line 112, ../sass/header.scss */
+  header .navbar-default {
+    margin-bottom: 10px;
+  }
+
+  /* line 115, ../sass/header.scss */
+  header .navbar-header,
+  header .container > .navbar-header {
+    margin: 20px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 124, ../sass/header.scss */
+  header .container > .navbar-header > .row:last-child > .col {
+    padding-left: 1px;
+    padding-right: 0px;
+  }
+}
+/*Navbar Brand*/
+/* line 134, ../sass/header.scss */
+header .navbar-brand {
+  z-index: 1;
+  display: block;
+  margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+  /* line 141, ../sass/header.scss */
+  header .navbar-brand img {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 147, ../sass/header.scss */
+  header .navbar-brand {
+    padding: 0;
+    float: none;
+  }
+
+  /* line 152, ../sass/header.scss */
+  header .navbar-brand img {
+    display: block;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+}
+/* line 159, ../sass/header.scss */
+header .navbar-nav {
+  float: left;
+  margin-top: -1px;
+}
+
+/*Header Banner*/
+@media (max-width: 1199px) {
+  /* line 166, ../sass/header.scss */
+  header img.header-banner {
+    margin-bottom: 20px;
+  }
+}
+/*Navbar Toggle*/
+/* line 172, ../sass/header.scss */
+header .navbar-default .navbar-toggle {
+  position: relative;
+  width: 100%;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  border-color: #ebebeb;
+  overflow: hidden;
+}
+
+/* line 181, ../sass/header.scss */
+header.color .navbar-default .navbar-toggle {
+  color: #fff;
+  background-color: #0084c9;
+}
+
+/* line 185, ../sass/header.scss */
+header.color .navbar-default .navbar-toggle:hover {
+  background-color: #006396;
+}
+
+/* line 189, ../sass/header.scss */
+header .full-width-menu {
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* line 195, ../sass/header.scss */
+header .navbar-default .navbar-toggle .icon-toggle {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  float: right;
+  width: 25px;
+  height: 1px;
+  margin: 2px 0 7px;
+  font-size: 19px;
+}
+
+/* line 206, ../sass/header.scss */
+header.color .navbar-default .navbar-toggle .icon-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 211, ../sass/header.scss */
+header .navbar-default .navbar-toggle .icon-toggle:last-child {
+  margin-bottom: 0;
+}
+
+/* line 215, ../sass/header.scss */
+header .navbar-toggle,
+header .navbar-default .navbar-toggle:hover,
+header .navbar-default .navbar-toggle:focus {
+  padding: 8px 25px;
+}
+
+@media (max-width: 768px) {
+  /* line 222, ../sass/header.scss */
+  header .navbar-default .navbar-toggle {
+    margin: 25px 0px 0px 0px;
+  }
+
+  /* line 225, ../sass/header.scss */
+  header .navbar-responsive-collapse .container {
+    padding-right: 0px;
+    padding-left: 1px;
+  }
+}
+/*Navbar Collapse*/
+/* line 232, ../sass/header.scss */
+header .navbar-collapse {
+  padding: 0;
+  border-top: none;
+  position: relative;
+}
+
+/*Navbar Menu*/
+/* line 242, ../sass/header.scss */
+header .navbar-default .navbar-nav li.open > a > span > i:before {
+  content: "\2212";
+}
+/* line 247, ../sass/header.scss */
+header .navbar-default .navbar-nav li > a {
+  padding: 7px 25px;
+  color: #585f69;
+  text-decoration: none;
+}
+/* line 251, ../sass/header.scss */
+header .navbar-default .navbar-nav li > a > span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+}
+/* line 258, ../sass/header.scss */
+header .navbar-default .navbar-nav li > a > span > i {
+  position: relative;
+  top: 8px;
+  left: 6px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 16px;
+  vertical-align: -15%;
+}
+/* line 269, ../sass/header.scss */
+header .navbar-default .navbar-nav li > a > span > i:before {
+  content: "\2b";
+}
+
+/* line 277, ../sass/header.scss */
+header .navbar-default .navbar-nav > .active > a {
+  color: #0084c9;
+}
+
+@media (min-width: 768px) {
+  /* line 282, ../sass/header.scss */
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+}
+/*Responsive Navbar*/
+@media (max-width: 991px) {
+  /*Responsive code for max-width: $screen-md-max*/
+  /* line 290, ../sass/header.scss */
+  header .navbar-header {
+    float: none;
+  }
+
+  /* line 294, ../sass/header.scss */
+  header .navbar-toggle {
+    display: block;
+  }
+
+  /* line 298, ../sass/header.scss */
+  header .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* line 302, ../sass/header.scss */
+  header .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  /* line 306, ../sass/header.scss */
+  header .navbar-nav {
+    margin: 0px;
+    float: none !important;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+
+  /* line 313, ../sass/header.scss */
+  header .navbar-nav.navbar-border-bottom {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* line 318, ../sass/header.scss */
+  header .navbar-nav > li {
+    float: none;
+  }
+
+  /* line 322, ../sass/header.scss */
+  header .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  /*Dropdown Menu Slide Down Effect*/
+  /* line 328, ../sass/header.scss */
+  header .navbar-nav .open .dropdown-menu {
+    border: 0;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: static;
+    box-shadow: none;
+    background-color: #f3f3f3;
+  }
+
+  /* line 340, ../sass/header.scss */
+  header .navbar-nav .open .dropdown-menu > li > a,
+  header .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 8px 25px;
+  }
+
+  /* line 345, ../sass/header.scss */
+  header .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 28px;
+  }
+
+  /* line 349, ../sass/header.scss */
+  header .navbar-nav .open .dropdown-menu > li > a:hover,
+  header .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+
+  /* line 354, ../sass/header.scss */
+  header .navbar-default .dropdown-menu.no-bottom-space {
+    padding-bottom: 0;
+  }
+
+  /* line 358, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li > a {
+    padding: 8px 25px;
+    line-height: 28px;
+  }
+
+  /* line 363, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li a {
+    border-bottom: solid 1px #ebebeb;
+  }
+
+  /* line 367, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li > a:focus {
+    background: none;
+  }
+
+  /* line 371, ../sass/header.scss */
+  header .navbar-default .navbar-nav > .active > a,
+  header .navbar-default .navbar-nav > .active > a:hover,
+  header .navbar-default .navbar-nav > .active > a:focus {
+    background: inherit;
+  }
+}
+@media (min-width: 992px) {
+  /* line 379, ../sass/header.scss */
+  header {
+    border-bottom: none;
+    border-bottom: 2px solid #0084c9;
+  }
+
+  /* line 384, ../sass/header.scss */
+  header .navbar-default .navbar-collapse {
+    border-top: 1px solid #ebebeb;
+  }
+
+  /*Navbar Nav*/
+  /* line 389, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li {
+    margin-left: -1px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+
+  /* line 395, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li.no-border,
+  header .navbar-default .navbar-nav > li.no-border:first-child {
+    border-left: none;
+    border-right: none;
+  }
+
+  /* line 401, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li > a,
+  header .navbar-default .navbar-nav > li > a:focus {
+    border-top: solid 2px transparent;
+  }
+
+  /* line 406, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li > a:hover {
+    background-color: #ebebeb;
+  }
+
+  /* line 410, ../sass/header.scss */
+  header .navbar-default .navbar-nav > .active > a {
+    background-color: inherit;
+  }
+
+  /* line 414, ../sass/header.scss */
+  header .navbar-default .navbar-nav > li:hover > a {
+    background-color: #ebebeb;
+  }
+
+  /*Dropdown Menu*/
+  /* line 419, ../sass/header.scss */
+  header .dropdown-menu {
+    padding: 4px 0px 0px 0px;
+    border: none;
+    min-width: 200px;
+    border-radius: 0;
+    z-index: 9999 !important;
+    background-color: transparent;
+    border-bottom: solid 2px #0084c9;
+    border-top: solid 1px transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 432, ../sass/header.scss */
+  header .dropdown-menu li {
+    background-color: #fff;
+  }
+
+  /* line 435, ../sass/header.scss */
+  header .dropdown-menu li a {
+    padding: 6px 15px;
+    border-top: 1px solid #ebebeb;
+  }
+
+  /* line 440, ../sass/header.scss */
+  header .dropdown-menu > .active > a,
+  header .dropdown-menu > .active > a:hover,
+  header .dropdown-menu > .active > a:focus
+  header .dropdown-menu .active > a,
+  header .dropdown-menu li > a:hover {
+    color: #585f69;
+    filter: none !important;
+    background: #ebebeb;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  /* line 454, ../sass/header.scss */
+  header .dropdown-menu li > a:focus {
+    background: none;
+    filter: none !important;
+  }
+
+  /* line 459, ../sass/header.scss */
+  header .navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
+  /* line 463, ../sass/header.scss */
+  header .open > .dropdown-menu {
+    display: none;
+  }
+
+  /*Search*/
+  /* line 468, ../sass/header.scss */
+  header .navbar .search-open {
+    width: 330px;
+  }
+}
+/*Dropdown Submenu for BS3
+------------------------------------*/
+/* line 475, ../sass/header.scss */
+header .dropdown-submenu {
+  position: relative;
+}
+
+/* line 478, ../sass/header.scss */
+header .navbar ul > li {
+  position: relative;
+}
+
+/* line 481, ../sass/header.scss */
+header.color .navbar ul > li {
+  background-color: #0084c9;
+}
+
+/* line 484, ../sass/header.scss */
+header .navbar ul > li:before {
+  content: none;
+  position: static;
+  top: 0px;
+  left: 0px;
+  font-size: 0px;
+}
+
+/* line 492, ../sass/header.scss */
+header .dropdown-submenu > a:after {
+  top: 5px;
+  right: 9px;
+  font-size: 18px;
+  content: "\f105";
+  position: absolute;
+  font-weight: normal;
+  display: inline-block;
+  font-family: 'FontAwesome';
+}
+
+@media (max-width: 992px) {
+  /* line 504, ../sass/header.scss */
+  header .dropdown-submenu > a:after {
+    content: " ";
+  }
+}
+/* line 509, ../sass/header.scss */
+header .dropdown-submenu > .dropdown-menu {
+  top: 0px;
+  left: 100%;
+  margin-top: -4px;
+  margin-left: 0px;
+}
+
+/*Submenu comes from LEFT side*/
+/* line 517, ../sass/header.scss */
+header .dropdown-submenu > .dropdown-menu.submenu-left {
+  left: -100%;
+}
+
+/* line 521, ../sass/header.scss */
+header .dropdown-submenu.pull-left {
+  float: none;
+}
+
+/* line 525, ../sass/header.scss */
+header .dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+}
+
+/* line 530, ../sass/header.scss */
+header .dropdown-menu li [class^="fa-"],
+header .dropdown-menu li [class*=" fa-"] {
+  left: -3px;
+  width: 1.25em;
+  margin-right: 1px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 539, ../sass/header.scss */
+header .dropdown-menu li [class^="fa-"].fa-lg,
+header .dropdown-menu li [class*=" fa-"].fa-lg {
+  /* increased font size for fa-lg */
+  width: 1.5625em;
+}
+
+/*Search Box
+------------------------------------*/
+/* line 547, ../sass/header.scss */
+header .navbar .nav > li > .search {
+  color: #b8b8b8;
+  cursor: pointer;
+  min-width: 35px;
+  font-size: 13px;
+  text-align: center;
+  padding: 12px 3px 10px 3px;
+  display: inline-block;
+  background-color: #ebebeb;
+}
+
+/* line 557, ../sass/header.scss */
+header .navbar .nav > li > .search.lupa:before {
+  content: '\f002';
+}
+
+/* line 560, ../sass/header.scss */
+header .navbar .nav > li > .search.remove:before {
+  content: '\f00d';
+}
+
+/* line 564, ../sass/header.scss */
+header .navbar .nav > li > .search:hover {
+  color: #0084c9;
+}
+
+/* line 568, ../sass/header.scss */
+header .navbar .search-open {
+  right: 0;
+  top: 42px;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  border: solid 1px #ebebeb;
+  border-bottom: 2px solid #0084c9;
+  background-color: #fff;
+}
+
+/* line 579, ../sass/header.scss */
+header .navbar .search-open form {
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 584, ../sass/header.scss */
+  header .navbar > .container .navbar-brand,
+  header .navbar > .container-fluid .navbar-brand {
+    margin-left: -10px;
+  }
+
+  /* line 589, ../sass/header.scss */
+  header .navbar-toggle {
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  /* line 595, ../sass/header.scss */
+  header .navbar .search-open {
+    width: 92%;
+  }
+
+  /* line 599, ../sass/header.scss */
+  header .navbar .nav > li > .search:hover {
+    color: #202020 !important;
+  }
+
+  /* line 603, ../sass/header.scss */
+  header .navbar .search-open {
+    top: 5px;
+    padding: 0;
+    left: 48px;
+    border-top: none;
+    box-shadow: none;
+    background: none;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 615, ../sass/header.scss */
+  html .main-menu-nav.nav .open > a,
+  html .main-menu-nav.nav .open > a:hover,
+  html .main-menu-nav.nav .open > a:focus {
+    border-top: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 622, ../sass/header.scss */
+  html .main-menu-nav.nav .open > a,
+  html .main-menu-nav.nav .open > a:hover,
+  html .main-menu-nav.nav .open > a:focus {
+    border-color: #ebebeb;
+  }
+}
+/*Mega Menu
+------------------------------------*/
+/* line 631, ../sass/header.scss */
+header .mega-menu .nav,
+header .mega-menu .dropup,
+header .mega-menu .dropdown,
+header .mega-menu .collapse {
+  position: static;
+}
+
+/* line 637, ../sass/header.scss */
+header .mega-menu .collapse {
+  overflow-y: visible;
+}
+
+/* line 641, ../sass/header.scss */
+header .mega-menu .navbar-inner,
+header .mega-menu .container {
+  position: relative;
+}
+
+/* line 646, ../sass/header.scss */
+header .mega-menu .dropdown-menu {
+  left: auto;
+}
+
+/* line 650, ../sass/header.scss */
+header .mega-menu .dropdown-menu > li {
+  display: block;
+  height: auto;
+}
+
+/* line 655, ../sass/header.scss */
+header .mega-menu .dropdown-submenu .dropdown-menu {
+  left: 100%;
+}
+
+/* line 659, ../sass/header.scss */
+header .mega-menu .nav.pull-right .dropdown-menu {
+  right: 0;
+}
+
+/* line 663, ../sass/header.scss */
+header .mega-menu .mega-menu-content {
+  *zoom: 1;
+  padding: 0;
+}
+
+/* line 668, ../sass/header.scss */
+header .mega-menu .mega-menu-content:before,
+header .mega-menu .mega-menu-content:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+/* line 675, ../sass/header.scss */
+header .mega-menu .mega-menu-content:after {
+  clear: both;
+}
+
+/* line 679, ../sass/header.scss */
+header .mega-menu.navbar .nav > li > .dropdown-menu:after,
+header .mega-menu.navbar .nav > li > .dropdown-menu:before {
+  display: none;
+}
+
+/* line 684, ../sass/header.scss */
+header .mega-menu .dropdown.mega-menu-fullwidth .dropdown-menu {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  /* line 691, ../sass/header.scss */
+  header .mega-menu .dropdown.mega-menu-fullwidth .dropdown-menu {
+    margin: 0 15px;
+  }
+}
+/*Equal Height Lists*/
+@media (min-width: 992px) {
+  /* line 698, ../sass/header.scss */
+  header .mega-menu .equal-height {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /*-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+  }
+
+  /* line 708, ../sass/header.scss */
+  header .mega-menu .equal-height-in {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*Mega Menu Style Effect*/
+/* line 716, ../sass/header.scss */
+header .mega-menu .equal-height-list h3 {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 10px 0 13px;
+  text-transform: uppercase;
+}
+
+/*Space for only Big Resolution*/
+@media (min-width: 992px) {
+  /* line 725, ../sass/header.scss */
+  header .mega-menu .big-screen-space {
+    margin-bottom: 20px;
+  }
+}
+/*Mega Menu Content*/
+@media (min-width: 992px) {
+  /* line 732, ../sass/header.scss */
+  header .mega-menu .equal-height-in {
+    padding: 20px 0;
+    border-left: 1px solid #eee;
+  }
+
+  /* line 737, ../sass/header.scss */
+  header .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+
+  /* line 741, ../sass/header.scss */
+  header .mega-menu .equal-height-in:first-child {
+    border-left: none;
+    margin-left: -1px;
+  }
+
+  /* line 746, ../sass/header.scss */
+  header .mega-menu .equal-height-list {
+    width: 100%;
+  }
+
+  /* line 750, ../sass/header.scss */
+  header .mega-menu .equal-height-list li a {
+    display: block;
+    position: relative;
+    border-bottom: none;
+    padding: 5px 10px 5px 15px;
+  }
+
+  /* line 757, ../sass/header.scss */
+  header .mega-menu .equal-height-list a:hover {
+    text-decoration: none;
+  }
+
+  /*Dropdown Arrow Icons*/
+  /* line 762, ../sass/header.scss */
+  header .mega-menu .mega-menu-fullwidth li a {
+    padding: 5px 10px 5px 30px;
+  }
+
+  /* line 766, ../sass/header.scss */
+  header .mega-menu .mega-menu-fullwidth li a:after {
+    top: 7px;
+    left: 15px;
+    font-size: 11px;
+    content: "\f105";
+    position: absolute;
+    font-weight: normal;
+    display: inline-block;
+    font-family: FontAwesome;
+  }
+
+  /*Dropdown Arrow Icons Disable class*/
+  /* line 778, ../sass/header.scss */
+  header .mega-menu .mega-menu-fullwidth .disable-icons li a {
+    padding: 5px 10px 5px 15px;
+  }
+
+  /* line 782, ../sass/header.scss */
+  header .mega-menu .mega-menu-fullwidth .disable-icons li a:after {
+    display: none;
+  }
+}
+/*Space Effect inside the container to avoid scroll bar*/
+@media (max-width: 1199px) {
+  /* line 789, ../sass/header.scss */
+  header .mega-menu .equal-height {
+    margin-right: 0;
+  }
+
+  /* line 793, ../sass/header.scss */
+  header .mega-menu .equal-height-in {
+    padding-right: 0;
+  }
+}
+/*Equal Hight List Style*/
+@media (max-width: 1199px) {
+  /* line 800, ../sass/header.scss */
+  header .mega-menu .dropdown.mega-menu-fullwidth .dropdown-menu {
+    width: auto;
+  }
+
+  /* line 804, ../sass/header.scss */
+  header .mega-menu .equal-height-in,
+  header .mega-menu .equal-height-list {
+    display: block;
+  }
+
+  /* line 809, ../sass/header.scss */
+  header .mega-menu .mega-menu-fullwidth .dropdown-menu > li > ul {
+    display: block;
+  }
+
+  /*Equal Height List Style*/
+  /* line 814, ../sass/header.scss */
+  header .mega-menu .equal-height-list h3 {
+    color: #333;
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 6px 25px 5px;
+    border-bottom: solid 1px #eee;
+  }
+
+  /* line 823, ../sass/header.scss */
+  header .mega-menu .equal-height-list li {
+    margin-left: 15px;
+  }
+
+  /* line 827, ../sass/header.scss */
+  header .mega-menu .equal-height-list li a {
+    color: #687074;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 6px 25px;
+    border-bottom: solid 1px #eee;
+  }
+
+  /* line 836, ../sass/header.scss */
+  header .mega-menu .equal-height-list > h3.active,
+  header .mega-menu .equal-height-list > .active > a,
+  header .mega-menu .equal-height-list > .active > a:hover,
+  header .mega-menu .equal-height-list > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+
+  /* line 844, ../sass/header.scss */
+  header .mega-menu .equal-height-list li a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+}
+/* header style2 version styles */
+/* line 851, ../sass/header.scss */
+header.style2 {
+  border-bottom: 2px solid #0084c9;
+}
+
+/* line 856, ../sass/header.scss */
+header.style2 .row:first-child > .col .box {
+  vertical-align: inherit;
+}
+/* line 860, ../sass/header.scss */
+header.style2 .navbar-responsive-collapse .container {
+  padding-left: 0px;
+}
+/* line 864, ../sass/header.scss */
+header.style2 .navbar-header .container {
+  width: 100%;
+  padding-right: 0px;
+  float: right;
+}
+/* line 870, ../sass/header.scss */
+header.style2 .navbar-default .navbar-collapse {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 26px;
+}
+/* line 875, ../sass/header.scss */
+header.style2 .navbar-right {
+  max-width: 35px;
+}
+/* line 879, ../sass/header.scss */
+header.style2 .navbar-nav.navbar-right:last-child {
+  position: absolute;
+  right: 0px;
+}
+/* line 884, ../sass/header.scss */
+header.style2 .container > .navbar-header {
+  width: 100%;
+}
+/* line 888, ../sass/header.scss */
+header.style2 .navbar-header > .row > .col .box {
+  width: 100%;
+}
+/* line 892, ../sass/header.scss */
+header.style2 .navbar .nav > li > .search {
+  margin: 0px;
+}
+
+/* line 898, ../sass/header.scss */
+header .navbar-nav {
+  margin-top: 0px;
+}
+
+@media (min-width: 992px) {
+  /* line 906, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav {
+    background-color: #0084c9;
+  }
+  /* line 909, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li.active {
+    background-color: #006396;
+  }
+  /* line 911, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li.active > a {
+    background-color: #006396;
+  }
+  /* line 915, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li:hover {
+    background-color: #ebebeb;
+  }
+  /* line 917, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li:hover > a {
+    color: #585f69;
+    background-color: #ebebeb;
+  }
+  /* line 922, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li > a {
+    color: #fff;
+  }
+  /* line 926, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav .search-btn {
+    border-color: #fff;
+  }
+  /* line 932, ../sass/header.scss */
+  header .navbar-collapse {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 943, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav,
+  header.color .navbar-default .navbar-nav .open {
+    background-color: #0084c9;
+  }
+  /* line 947, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li.active, header.color .navbar-default .navbar-nav li.open,
+  header.color .navbar-default .navbar-nav .open li.active,
+  header.color .navbar-default .navbar-nav .open li.open {
+    background-color: #006396;
+  }
+  /* line 950, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li.active > a, header.color .navbar-default .navbar-nav li.open > a,
+  header.color .navbar-default .navbar-nav .open li.active > a,
+  header.color .navbar-default .navbar-nav .open li.open > a {
+    color: #fff;
+    background-color: #006396;
+  }
+  /* line 955, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li:hover,
+  header.color .navbar-default .navbar-nav .open li:hover {
+    background-color: #006396;
+  }
+  /* line 957, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li:hover > a,
+  header.color .navbar-default .navbar-nav .open li:hover > a {
+    color: #fff;
+    background-color: #006396;
+  }
+  /* line 962, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav li > a,
+  header.color .navbar-default .navbar-nav .open li > a {
+    color: #fff;
+  }
+  /* line 969, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav .dropdown-menu li > a,
+  header.color .navbar-default .navbar-nav .dropdown-menu li.active > a,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li > a,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li.active > a {
+    color: #fff;
+    background-color: #0084c9;
+  }
+  /* line 972, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav .dropdown-menu li > a:hover, header.color .navbar-default .navbar-nav .dropdown-menu li > a:focus,
+  header.color .navbar-default .navbar-nav .dropdown-menu li.active > a:hover,
+  header.color .navbar-default .navbar-nav .dropdown-menu li.active > a:focus,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li > a:hover,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li > a:focus,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li.active > a:hover,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li.active > a:focus {
+    color: #fff;
+    background-color: #006396;
+  }
+  /* line 979, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav .dropdown-menu li.open > a,
+  header.color .navbar-default .navbar-nav .dropdown-menu li.active.open > a,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li.open > a,
+  header.color .navbar-default .navbar-nav .open .dropdown-menu li.active.open > a {
+    background-color: #006396;
+  }
+  /* line 985, ../sass/header.scss */
+  header.color .navbar-default .navbar-nav .search-btn,
+  header.color .navbar-default .navbar-nav .open .search-btn {
+    border-color: #fff;
+  }
+  /* line 997, ../sass/header.scss */
+  header .navbar-default .navbar-nav .dropdown-menu li > a,
+  header .navbar-default .navbar-nav .dropdown-menu li.active > a,
+  header .navbar-default .navbar-nav .open .dropdown-menu li > a,
+  header .navbar-default .navbar-nav .open .dropdown-menu li.active > a {
+    color: #585f69;
+    background-color: #eee;
+  }
+  /* line 1000, ../sass/header.scss */
+  header .navbar-default .navbar-nav .dropdown-menu li > a:hover, header .navbar-default .navbar-nav .dropdown-menu li > a:focus,
+  header .navbar-default .navbar-nav .dropdown-menu li.active > a:hover,
+  header .navbar-default .navbar-nav .dropdown-menu li.active > a:focus,
+  header .navbar-default .navbar-nav .open .dropdown-menu li > a:hover,
+  header .navbar-default .navbar-nav .open .dropdown-menu li > a:focus,
+  header .navbar-default .navbar-nav .open .dropdown-menu li.active > a:hover,
+  header .navbar-default .navbar-nav .open .dropdown-menu li.active > a:focus {
+    color: #585f69;
+    background-color: #ebebeb;
+  }
+  /* line 1011, ../sass/header.scss */
+  header .navbar-default .navbar-nav .open > a,
+  header .navbar-default .navbar-nav .open > a:focus {
+    color: #0084c9;
+  }
+  /* line 1017, ../sass/header.scss */
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    padding-left: 40px;
+  }
+  /* line 1020, ../sass/header.scss */
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > ul > li > a {
+    padding-left: 55px;
+  }
+  /* line 1023, ../sass/header.scss */
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > ul > li > ul > li > a {
+    padding-left: 70px;
+  }
+  /* line 1028, ../sass/header.scss */
+  header .navbar-default .navbar-nav .open .dropdown-menu.open .dropdown-menu {
+    display: block;
+  }
+}
+@media (min-width: 991px) {
+  /* line 1040, ../sass/header.scss */
+  header .mega-menu .nav,
+  header .mega-menu .dropup,
+  header .mega-menu .dropdown,
+  header .mega-menu .collapse {
+    position: static;
+    height: 35px;
+  }
+
+  /* line 1048, ../sass/header.scss */
+  header .navbar-nav.navbar-right:last-child {
+    position: absolute;
+    right: 15px;
+  }
+
+  /* line 1053, ../sass/header.scss */
+  .nav.main-menu-nav .other {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  /* line 1059, ../sass/header.scss */
+  .nav.main-menu-nav .other > a {
+    text-align: center;
+  }
+
+  /* line 1063, ../sass/header.scss */
+  .nav.main-menu-nav {
+    padding-right: 36px;
+    width: 100%;
+  }
+
+  /* line 1069, ../sass/header.scss */
+  header.no-border .nav.navbar-nav.main-menu-nav li.lvl1,
+  header.no-border .nav.navbar-nav.main-menu-nav li.other,
+  header.no-border .collapse.navbar-collapse.navbar-responsive-collapse {
+    border: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 1078, ../sass/header.scss */
+  .nav.main-menu-nav .other {
+    display: none;
+  }
+
+  /* line 1083, ../sass/header.scss */
+  header.style2 .navbar-default .navbar-collapse {
+    margin-top: 0px;
+  }
+}
+/* logo */
+/* line 1091, ../sass/header.scss */
+.logo a {
+  display: inline-block;
+}
+/* line 1094, ../sass/header.scss */
+.logo .m {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+/* line 1100, ../sass/header.scss */
+.logo .m .p {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+}
+/* line 1106, ../sass/header.scss */
+.logo .m .p > div {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+}
+/* line 1114, ../sass/header.scss */
+.logo .m .m1 {
+  border-bottom-color: #0084c9;
+  border-top: 0;
+  border-left: 0;
+  border-bottom-width: 39px;
+}
+/* line 1119, ../sass/header.scss */
+.logo .m .m1 > div {
+  top: 3px;
+  left: 1px;
+  border-bottom-color: #fff;
+  border-top: 0;
+  border-left: 0;
+  border-bottom-width: 36px;
+}
+/* line 1128, ../sass/header.scss */
+.logo .m .m2 {
+  border-right-color: #0084c9;
+  border-left: 0;
+  border-bottom: 0;
+  border-top-width: 39px;
+}
+/* line 1133, ../sass/header.scss */
+.logo .m .m2 > div {
+  bottom: 0px;
+  left: 1px;
+  border-right-color: #fff;
+  border-left: 0;
+  border-bottom: 0;
+  border-top-width: 35px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 1145, ../sass/header.scss */
+  header .logo img,
+  footer .footer_logo_wrap.logo img {
+    max-width: 170px;
+    margin-top: 9px;
+  }
+}

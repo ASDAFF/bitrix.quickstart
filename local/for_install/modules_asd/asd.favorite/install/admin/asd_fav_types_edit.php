@@ -1,1 +1,0 @@
-<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/asd.favorite/admin/fav_types_edit.php');?>

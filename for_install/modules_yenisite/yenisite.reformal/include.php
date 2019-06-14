@@ -1,0 +1,6 @@
+<?
+Class CYenisiteReformal 
+{
+	
+}
+?>

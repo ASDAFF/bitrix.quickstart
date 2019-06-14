@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS `px_propertylink_exept`;

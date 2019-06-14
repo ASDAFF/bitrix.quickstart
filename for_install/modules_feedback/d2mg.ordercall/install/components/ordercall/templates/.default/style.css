@@ -1,0 +1,19 @@
+div.mfeedback {}
+div.mf-name, div.mf-phone, div.mf-captcha, div.mf-message {
+	width: 98%;
+	padding-bottom: 0.4em;
+	#font-family: Tahoma;
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 16px;
+	color: #005F6D;
+
+	}
+div.mf-name input, div.mf-phone input {width:100%;}
+div.mf-message textarea {width: 100%;}
+span.mf-req {color:red;}
+div.mf-ok-text {color:green; font-weight:bold; padding-bottom: 1em; font-family: 'Open Sans Condensed',sans-serif;}
+.order_call
+{
+	width: 100%;
+}
+div.mfeedback div.error {font-family: 'Open Sans Condensed',sans-serif;}

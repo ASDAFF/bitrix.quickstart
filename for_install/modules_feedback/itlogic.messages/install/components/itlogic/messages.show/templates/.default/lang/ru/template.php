@@ -1,0 +1,9 @@
+<?
+$MESS["ITLOGIC_MESSAGES_KOD_SABLONA"] = "Код шаблона";
+$MESS["ITLOGIC_MESSAGES_DATA_USTANOVKI"] = "Дата установки";
+$MESS["ITLOGIC_MESSAGES_V_OCEREDQ_OTPRAVKI"] = "в очередь отправки";
+$MESS["ITLOGIC_MESSAGES_OTPRAVLENO"] = "Отправлено?";
+$MESS["ITLOGIC_MESSAGES_DATA_OTPRAVKI"] = "Дата отправки";
+$MESS["ITLOGIC_MESSAGES_SODERJANIE_SOOBSENIA"] = "Содержание сообщения";
+$MESS["ITLOGIC_MESSAGES_SOOBSENIY_NE_NAYDENO"] = "Сообщений не найдено";
+?>

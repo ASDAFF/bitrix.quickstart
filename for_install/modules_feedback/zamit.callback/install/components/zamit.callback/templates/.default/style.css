@@ -1,0 +1,8 @@
+div.mcallback {}
+div.mf-name, div.mf-phone, div.mf-captcha, div.mf-time, div.mf-message {width:80%; padding-bottom:0.4em;}
+div.mf-name input, div.mf-phone input {width:60%;}
+div.mf-time div {display:inline-block; width: 15%;}
+div.mf-time div.mf-text {display:block; padding-bottom:0.4em;}
+div.mf-message textarea {width: 60%;}
+span.mf-req {color:red;}
+div.mf-ok-text {color:green; font-weight:bold; padding-bottom: 1em;}

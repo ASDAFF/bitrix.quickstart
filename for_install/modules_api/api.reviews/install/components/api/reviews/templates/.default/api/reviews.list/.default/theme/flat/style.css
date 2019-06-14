@@ -1,0 +1,76 @@
+.arlist-color-orange1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/orange1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-orange1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-orange1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-orange1 .api-item{ background: #f8f8f8;}
+
+.arlist-color-orange2 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/orange2/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-orange2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange2/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-orange2 .api-icon-active{ background-position: 0 0; }
+.arlist-color-orange2 .api-item{ background: #fffefb;border: 1px solid #ededed;}
+.arlist-color-orange2 .api-item .api-field-title{background: transparent; padding: 0; font-size: 16px; color: #000}
+.arlist-color-orange2 .api-answer{ border: 2px dashed #f66128; }
+
+.arlist-color-orange3 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/orange3/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-orange3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/orange3/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-orange3 .api-icon-active{ background-position: 0 0; }
+.arlist-color-orange3 .api-item{ background: #fff;border: 1px solid #ededed;}
+.arlist-color-orange3 .api-item .api-field-title{background: transparent; padding: 0; font-size: 16px; color: #000}
+.arlist-color-orange3 .api-answer{ border: 2px dashed #f66128; }
+
+.arlist-color-blue1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/blue1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-blue1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-blue1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-blue1 .api-item{ background: #edf5f8;}
+
+.arlist-color-blue2 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/blue2/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-blue2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue2/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-blue2 .api-icon-active{ background-position: 0 0; }
+.arlist-color-blue2 .api-item{ background: rgba(0, 131, 209, 0.1); }
+
+.arlist-color-blue3 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/blue3/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-blue3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/blue3/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-blue3 .api-icon-active{ background-position: 0 0; }
+.arlist-color-blue3 .api-item{ background: rgba(63, 188, 239, 0.1);}
+
+.arlist-color-black1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/black1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-black1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/black1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-black1 .api-icon-active{ background-position: 0 0; }
+
+.arlist-color-red1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/red1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-red1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/red1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-red1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-red1 .api-item{ background: #fff9f9 }
+.arlist-color-red1 .api-field-title{ border: 1px solid #ececec; }
+.arlist-color-red1 .api-answer{ border: 1px dashed #f6b4b4; }
+
+.arlist-color-pink1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/pink1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-pink1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/pink1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-pink1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-pink1 .api-item{ background: transparent; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25); box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+.arlist-color-pink1 .api-field-title{ border: 1px solid #ececec; color: #000; background: #fbfbfb }
+.arlist-color-pink1 .api-answer{ border: 2px dashed #f799d4; }
+
+.arlist-color-yellow1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/yellow1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-yellow1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/yellow1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-yellow1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-yellow1 .api-item{ background: #fcf8e3 }
+
+.arlist-color-green1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/green1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-green1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-green1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-green1 .api-item{ background: rgba(121, 196, 113, 0.1) }
+
+.arlist-color-green2 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/green2/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-green2 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green2/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-green2 .api-icon-active{ background-position: 0 0; }
+.arlist-color-green2 .api-item{ background: #e2f3eb }
+
+.arlist-color-green3 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/green3/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-green3 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/green3/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-green3 .api-icon-active{ background-position: 0 0; }
+.arlist-color-green3 .api-item{ background: #e2f3eb }
+
+.arlist-color-purple1 .api-wait-small:after{ background: url("/bitrix/images/api.reviews/flat/purple1/wait.svg") no-repeat 50% 50% transparent; }
+.arlist-color-purple1 .api-icon-star{ background: url("/bitrix/images/api.reviews/flat/purple1/sprite.png") no-repeat -16px 0 transparent; }
+.arlist-color-purple1 .api-icon-active{ background-position: 0 0; }
+.arlist-color-purple1 .api-item{ background: rgba(199, 144, 185, 0.1); }

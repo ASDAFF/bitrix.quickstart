@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fsms4b%2Fcomponents_2%2Fsms4b_sub_mini.php.html"; </script>
+
+<title>Компонент мини-подписки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/sms4b/components_2/sms4b_sub_mini.php.html";
+</script>
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+ 
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компонент мини-подписки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="pagetitlebanner">
+	<h1 class="Banner">Компонент мини-подписки</h1>
+</div>
+</div>
+
+<div id="pagebody" valign="bottom">
+<p><b><a href = "../sms4b_index.php.html">Обратно к содержанию</a></b></p>  
+<p>Компонента для компактного отображения ссылок на страницы подписки на рассылки различного типа (почтовые, SMS, RSS).</p>
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">
+$APPLICATION->IncludeComponent(&quot;sms4b:subscribe.minisub", ".default", Array(
+	"PAGE"				=>	"#SITE_DIR#dev/egza/index.php",
+	"SHOW_POST_SUB"			=>	"Y",
+	"SHOW_RSS_SUB"			=>	"Y",
+	"URL_FOR_FEEDBURNER"		=>	"http://feeds.feedburner.com/",
+	"FEED_NAME"			=>	"retaildotru",
+	"SHOW_SMS_SUB"			=>	"Y"
+	)
+);
+</pre>
+
+<h4>Описание параметров</h4>
+
+<dl><dt><span style="font-weight: bold;">PAGE </span> 	</dt><dd>Путь к странице с регистрацией подписок.  </dd></dl>
+<dl><dt><span style="font-weight: bold;">SHOW_POST_SUB</span> 	</dt><dd>При выбранной опции отображается ссылка на подписку по почте.  </dd></dl>
+<dl><dt><span style="font-weight: bold;">SHOW_RSS_SUB </span> 	</dt><dd>При выбранной опции отображается ссылка на подписку по RSS.  </dd></dl>
+<dl><dt><span style="font-weight: bold;">SHOW_SMS_SUB </span> 	</dt><dd>При выбранной опции отображается ссылка на подписку по SMS.  </dd></dl>
+<dl><dt><span style="font-weight: bold;">URL_FOR_FEEDBURNER </span> 	</dt><dd>Адрес сайта FEEDBURNER. </dd></dl>
+<dl><dt><span style="font-weight: bold;">FEED_NAME </span> 	</dt><dd>Имя зарегистрированного потока на сайте FEEDBURNER'a. </dd></dl>
+
+
+<p><b>Для корректной работы подсчета RSS-подписчиков</b>, необходимо на сайте FEEDBURNER в настройках потока <b>включить поддержку AWARENESS API</b>.
+В противном случае подсчет RSS подписчиков производиться не будет. <a href = "../sample/sms4b_mini.php.html">Подробнее</a></p>
+
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table>
+</div>
+
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+
+</body>
+</html>

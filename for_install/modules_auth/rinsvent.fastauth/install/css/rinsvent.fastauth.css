@@ -1,0 +1,77 @@
+.cell {
+	display:inline-block;
+	width:19%;
+	height:19%;
+}
+.row {
+	height:19%;
+	width:100%;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    background: #7fee1d;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	margin:0 auto;
+	vertical-align:middle;
+	cursor:pointer;
+}
+svg circle{
+	cursor:pointer;
+}
+svg.move circle{
+	cursor:auto;
+}
+svg{
+	margin:0 auto;
+}
+.rinsvent_fastauth_modal{
+	position: absolute;
+	margin: 0 auto;
+}
+#rinsvent_fastauth_overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1100;
+
+	background-color: rgb(119, 119, 119);
+	opacity: 0.7;
+	cursor: pointer;
+	height: 4081px;
+	display: block;
+}
+
+#rinsvent_fastauth_wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1101;
+	outline: none;
+	background-color: white;
+	/*display: none;*/
+}
+#rinsvent_fastauth_wrap svg{
+	text-align: center;
+}
+#rinsvent_fastauth_loading{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1104;
+	display: none;
+}
+#rinsvent_menu_settings{
+	position: absolute;
+	top:50px;
+	left:50px;
+}

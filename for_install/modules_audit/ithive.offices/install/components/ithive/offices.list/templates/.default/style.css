@@ -1,0 +1,168 @@
+/*Где купить*/
+
+#YMapsID {
+width:530px;
+height:300px;
+border:1px solid #aaa;
+float:left;
+}
+
+.show_all {
+display:block;
+font-size: 12px;
+position: absolute;
+right: 5px;
+top: 5px;
+z-index: 1000;
+}
+
+.dealer_invite {
+margin:120px 50px 0 50px;
+text-align:center;
+font-size:16px;
+line-height:18px;
+display:none;
+}
+
+.shop_search {
+color:#000;
+font-size:110%;
+float:right;
+width:220px;
+}
+
+.shop_search_form {
+height:234px;
+}
+
+.shop_search p {
+margin:10px 0 5px 0;
+font-weight:bold;
+}
+
+.shop_search label {
+display:block;
+line-height:170%;
+}
+
+.shop_search input {
+margin:4px 10px 0 0;
+vertical-align:text-bottom;
+}
+
+.shop_search_result {
+/*margin:19px 0 0 0;
+margin:9px 0 0 0;*/
+margin-top:10px;
+}
+
+.margin-0-20-15-20 {
+margin:10px 20px;
+_margin:0 20px 5px 20px;
+}
+
+.scrollable {
+height:208px;
+overflow:auto;
+}
+
+table.odd_grey_body {
+width:100%;
+*width:880px;
+border:1px solid #c0c0c0;
+color:#000;
+border-collapse:collapse;
+font-family:Trebuchet MS;
+font-size:11px;
+}
+
+table.odd_grey_head {
+width:100%;
+_width:880px;
+border:1px solid #c0c0c0;
+color:#000;
+border-collapse:collapse;
+font-family:Trebuchet MS;
+font-size:11px;
+font-weight:bold;
+background-color:#c0c0c0;
+height:33px;
+text-align:center;
+}
+
+table.odd_grey_body tr{
+height:24px;
+*height:18px;
+}
+
+table.odd_grey_body tr.odd{
+background-color:#eeeeee;
+}
+
+table.odd_grey_body td {
+padding:2px;
+border:0px;
+*height:18px;
+}
+
+table.odd_grey_body td.center {
+text-align:center;
+}
+
+table.odd_grey_body tr.hover{
+background-color:#ffe4c4;
+}
+
+table.odd_grey_body tr.selected{
+background-color:#ffe4c4;
+}
+
+table.odd_grey_body a{
+color:#406e96;
+}
+
+.send_mail {
+height:10px;
+width:14px;
+padding:0 7px;
+background:url(/images/mail_icon.gif) no-repeat;
+text-decoration:none;
+}
+
+.map_shop_info {
+margin-left:70px;
+width:250px;
+color:#000;
+font-family:Trebuchet MS;
+font-size:90%;
+_float:left;
+_margin-left:10px;
+}
+
+html[xmlns*=""] .map_shop_info {float:none\9;]float:default}
+html[xmlns*=""] .map_shop_info {margin-left:70px\9;]margin-left:default}
+
+.map_shop_img {
+float:left;
+}
+
+.map_shop_adress, .map_shop_anounce{
+line-height:100%;
+}
+
+.map_shop_phone {
+font-weight:bold;
+margin-top:5px;
+}
+
+.map_shop_www {
+margin-top:8px;
+font-size:90%;
+}
+
+div.clear {
+	clear:both;
+	font-size:0px;
+	line-height:0px;
+	height:0px;
+}

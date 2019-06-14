@@ -1,0 +1,50 @@
+div.ws-project-settings-popup {}
+div.ws-project-settings-popup  .line{
+    padding: 5px 0;
+}
+div.ws-project-settings-popup  .line .label{
+    width: 200px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.ws-project-settings-popup  .line .input{
+}
+
+div.ws-project-settings-popup  .list-values {
+    margin-top: 10px;
+}
+
+div.ws-project-settings-popup  .list-values .title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+div.ws-project-settings-popup  .list-values .line {
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.ws-project-settings-popup  .list-values .line .value {
+    float: left;
+    width: 150px;
+}
+div.ws-project-settings-popup  .list-values .line .name {
+    float: left;
+    width: 300px;
+}
+div.ws-project-settings-popup  .list-values .line .default {
+    float: left;
+    width: 100px;
+}
+a.ws-project-settings {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+a.ws-project-settings.remove {
+    color: red;
+}
+td.ws-project-settings label{
+    font-size: 12px;
+}

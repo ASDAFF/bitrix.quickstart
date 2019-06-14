@@ -1,0 +1,29 @@
+.api-reviews-stat *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.api-reviews-stat{margin-bottom: 15px }
+.api-reviews-stat > *{ float: left; width: 50% }
+.api-reviews-stat .api-title{ font-weight: bold; margin-bottom: 10px }
+.api-reviews-stat .api-average{ font-weight: bold; margin-bottom: 5px; }
+.api-reviews-stat .api-average-rating{ font-size: 36px; line-height: 53px }
+.api-reviews-stat .api-subtitle{ color: #999; font-size: 13px; }
+.api-reviews-stat .api-stars-empty{ height: 21px; width: 110px; display: block; margin-bottom: 5px }
+.api-reviews-stat .api-stars-full{ height: 21px; display: block; width: 0; }
+.api-reviews-stat .api-full-rating{ font-size: 18px }
+/* .api-info */
+.api-reviews-stat .api-info .api-info-row{ position: relative; padding: 5px 0 }
+.api-reviews-stat .api-info .api-info-title{ position: absolute; left: 5px; bottom: 0; top: 50%; margin-top: -12.5px }
+.api-reviews-stat .api-info .api-info-progress{ background: #ececec; height: 18px; margin: 0 50px 0 50px; overflow: hidden; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+.api-reviews-stat .api-info .api-info-qty{ position: absolute; right: 0; top: 0; bottom: 0; font-weight: bold; font-size: 14px; line-height: 30px; min-width: 40px; }
+.api-reviews-stat .api-info .api-info-bar{ float: left; height: 100%; width: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+/* .api-icon-star */
+.api-reviews-stat .api-info .api-icon-star{ display: block; width: 27px; height: 25px; }
+.api-reviews-stat .api-info .api-icon-star5{ background-position: -110px 0; }
+.api-reviews-stat .api-info .api-icon-star4{ background-position: -110px -25px; }
+.api-reviews-stat .api-info .api-icon-star3{ background-position: -110px -50px; }
+.api-reviews-stat .api-info .api-icon-star2{ background-position: -110px -75px; }
+.api-reviews-stat .api-info .api-icon-star1{ background-position: -110px -100px; }
+
+/* @media
+ ========================================================================== */
+@media (max-width: 360px){
+	.api-reviews-stat > *{ width: 100%; margin-bottom: 15px; }
+}

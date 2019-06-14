@@ -1,1 +1,0 @@
-<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/asdaff.favorite/admin/fav_types_list.php');?>

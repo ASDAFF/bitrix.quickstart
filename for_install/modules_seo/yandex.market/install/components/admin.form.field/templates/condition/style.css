@@ -1,0 +1,56 @@
+/* filter-condition-field */
+
+.b-filter-condition-fields {
+	display: table;
+	table-layout: fixed;
+	width: 600px;
+}
+
+.b-filter-condition-field {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 20px;
+}
+
+.b-filter-condition-field.type--field {
+	width: 180px;
+}
+
+.b-filter-condition-field.type--value {
+	width: 200px;
+}
+
+.b-filter-condition-field__label {
+	display: block;
+	margin-bottom: 9px;
+}
+
+.b-filter-condition-field__input {
+	width: 100%;
+}
+
+.b-filter-condition-field.type--compare option[disabled] {
+	display: none;
+}
+
+/* filter-condition-junction */
+
+.b-filter-condition-junction,
+.bx-core-adm-dialog .b-filter-condition-junction { /* specifity */
+	display: block;
+	width: 40px;
+	height: 24px;
+	border-radius: 2px;
+
+	background-color: #9cbd6d;
+	color: #fff;
+
+	margin-top: -4px;
+	margin-bottom: -4px;
+	margin-left: -15px;
+
+	line-height: 24px;
+
+	font-weight: bold;
+	text-align: center;
+}

@@ -1,8 +1,0 @@
-<?
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
-	die();
-
-$MESS['AOS_FILE_ID']        = 'ID';
-$MESS['AOS_FILE_ORDER_ID']  = 'ORDER_ID';
-$MESS['AOS_FILE_FILE_ID']   = 'FILE_ID';
-$MESS['AOS_FILE_STATUS_ID'] = 'STATUS_ID';

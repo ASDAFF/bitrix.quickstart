@@ -1,3 +1,0 @@
-<?
-$MESS["ML2WEBFORMS_ID_MESSAGE"] = "ID формы";
-?>

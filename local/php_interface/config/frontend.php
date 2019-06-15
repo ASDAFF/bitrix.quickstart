@@ -42,19 +42,19 @@ $arLibs = array(
         'rel' => array('jquery'),
     ),
     'jquery_mousewheel' => array(
-        'js' => '/local/codenails/frontend/lib/jquery_mousewheel/jquery.mousewheel.min.js',
+        'js' => PATH_LIBRARY . '/jquery_mousewheel/jquery.mousewheel.min.js',
         'rel' => array('jquery'),
     ),
     'jquery_touchSwipe' => array(
-        'js' => '/local/codenails/frontend/lib/jquery_touchSwipe/jquery.touchSwipe.min.js',
+        'js' => PATH_BOWER_COMPONENTS . '/jquery-touchswipe/jquery.touchSwipe.min.js',
         'rel' => array('jquery'),
     ),
     'jquery_sudoSlider' => array(
-        'js' => '/local/codenails/frontend/lib/jquery_sudoSlider/jquery.sudoSlider.min.js',
+        'js' => PATH_LIBRARY . '/jquery_sudoSlider/jquery.sudoSlider.min.js',
         'rel' => array('jquery'),
     ),
     'mask_input' => array(
-        'js' => '/local/codenails/frontend/lib/mask_input/mask.input.js',
+        'js' => PATH_LIBRARY . '/mask_input/mask.input.js',
         'rel' => array('jquery'),
     ),
     'jquery_validate' => array(

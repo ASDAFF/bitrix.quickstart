@@ -60,10 +60,6 @@ $arLibs = array(
     'jquery_validate' => array(
         'js' => PATH_BOWER_COMPONENTS . '/jquery-validation/dist/jquery.validate.min.js',
         'rel' => array('jquery'),
-    ),
-    'iblock_props' => array(
-        'js' => '/local/codenails/frontend/lib/iblockprops/js/interface.js',
-        'css' => '/local/codenails/frontend/lib/iblockprops/css/interface.css',
     )
 );
 

@@ -37,6 +37,7 @@ Loc::loadMessages(__FILE__);
     // Bootstrap core CSS
     Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap.css');
     Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap-theme.css');
+    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css');
     // FancyBox CSS
     Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.css');
     Asset::getInstance()->addCss(PATH_GLOBAL_CSS);

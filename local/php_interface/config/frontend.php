@@ -41,9 +41,6 @@ $arLibs = array(
         'css' => PATH_BOWER_COMPONENTS . '/owl.carousel/dist/assets/owl.carousel.min.css',
         'rel' => array('jquery'),
     ),
-    'animate-css' => array(
-        'css' => PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css',
-    ),
     'jquery_mousewheel' => array(
         'js' => '/local/codenails/frontend/lib/jquery_mousewheel/jquery.mousewheel.min.js',
         'rel' => array('jquery'),

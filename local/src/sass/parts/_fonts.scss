@@ -25,6 +25,6 @@
 	}
 }
 
-@include font-face('SFUIText', '../fonts/SFUIText-Regular', normal, normal)
-@include font-face('SFUIText', '../fonts/SFUIText-Bold', bold, normal)
-@include font-face('SFUIText', '../fonts/SFUIText-Light', 300, normal)
+@include font-face('SFUIText', '../fonts/SFUIText-Regular', normal, normal);
+@include font-face('SFUIText', '../fonts/SFUIText-Bold', bold, normal);
+@include font-face('SFUIText', '../fonts/SFUIText-Light', 300, normal);

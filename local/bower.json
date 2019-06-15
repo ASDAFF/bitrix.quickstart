@@ -16,6 +16,7 @@
     "MouseWheel": "^1.0.0",
     "jquery-ui": "jquery.ui#^1.12.1",
     "jquery-touchswipe": "^1.6.19",
-    "animate.css": "animate-css#^3.7.2"
+    "animate.css": "animate-css#^3.7.2",
+    "vue": "^2.6.10"
   }
 }

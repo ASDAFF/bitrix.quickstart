@@ -56,17 +56,17 @@ $arLibs = array(
         'js' => '/local/codenails/frontend/lib/jquery_sudoSlider/jquery.sudoSlider.min.js',
         'rel' => array('jquery'),
     ),
-    'iblock_props' => array(
-        'js' => '/local/codenails/frontend/lib/iblockprops/js/interface.js',
-        'css' => '/local/codenails/frontend/lib/iblockprops/css/interface.css',
-    ),
     'mask_input' => array(
         'js' => '/local/codenails/frontend/lib/mask_input/mask.input.js',
         'rel' => array('jquery'),
     ),
     'jquery_validate' => array(
-        'js' => '/local/codenails/frontend/lib/jquery.validate.js',
+        'js' => PATH_BOWER_COMPONENTS . '/jquery-validation/dist/jquery.validate.min.js',
         'rel' => array('jquery'),
+    ),
+    'iblock_props' => array(
+        'js' => '/local/codenails/frontend/lib/iblockprops/js/interface.js',
+        'css' => '/local/codenails/frontend/lib/iblockprops/css/interface.css',
     )
 );
 

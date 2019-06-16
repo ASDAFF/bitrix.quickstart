@@ -1,15 +1,23 @@
 <?
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
+
 /**
  * @var CUser $USER
  * @var CMain $APPLICATION
  * @var $full_width - переменная в которой будет true если выполнится условие из  $arFullWidthPages
  */
+
+use Bitrix\Main\Application;
+use Bitrix\Main\Page\Asset;
+use Bitrix\Main\Localization\Loc;
+Loc::loadMessages(__FILE__);
 ?>
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE_ID ?>">
 <head>
     <meta charset="<?= SITE_CHARSET ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><? $APPLICATION->ShowTitle() ?></title>
     <?
     //Тут мета-теги
@@ -23,50 +31,31 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <?
     //$APPLICATION->ShowHead();
-
     //Тут канонический url
     $APPLICATION->ShowLink("canonical", null, false);
 
-    //Тут стили шаблона сайта
     // Bootstrap core CSS
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'bootstrap.min.css');
-
-    // Animate.css
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'animate.min.css');
-
+    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap.css');
+    Asset::getInstance()->addCss(PATH_TEMPLATE_CSS . '/bootstrap-theme.css');
+    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/animate.css/animate.min.css');
     // FancyBox CSS
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'jquery.fancybox.min.css');
-
-    // Owl Carousel
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'owl.carousel.min.css');
-
-    // Custom styles for this template
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'global.css');
-    $APPLICATION->SetAdditionalCSS(PATH_TEMPLATE_CSS . 'responsive.css');
+    Asset::getInstance()->addCss(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.css');
+    Asset::getInstance()->addCss(PATH_GLOBAL_CSS);
+    Asset::getInstance()->addCss(PATH_RESPONSIVE_CSS);
 
     //Тут выводим стили
     $APPLICATION->ShowCSS(true, false);
-    ?>
-    <!--[if lt IE 9]>
-    <script type="text/javascript"
-            src="<?=CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH.'/js/ie8-polyfill.js');?>"></script>
 
-
-    <![endif]-->
-    <script type="text/javascript"
-            src="<?= CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/js/jquery-1.11.2_min.js'); ?>"></script>
-    <?
     //Это встроенная в ядро Битрикс jQuery, если подключать ее, то строку подключения jQuery 1.11.2 выше надо удалить.
     //CJSCore::Init(array('jquery'));
+    //CJSCore::Init(array("jquery2"));
+    //CJSCore::Init(array("jquery_3"));
 
-    //Тут скрипты
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'modernizr.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'bootstrap.min.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'owl.carousel.min.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.appear.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'jquery.fancybox.min.js');
-    $APPLICATION->AddHeadScript(PATH_TEMPLATE_JS . 'global.js');
-    $APPLICATION->AddHeadScript(PATH_AJAX . 'ajax.js');
+    Asset::getInstance()->addJs(PATH_BOWER_COMPONENTS . '/fancybox/dist/jquery.fancybox.min.js');
+    Asset::getInstance()->addJs(PATH_GLOBAL_JS);
+    Asset::getInstance()->addJs(PATH_AJAX_JS);
+
+    //Asset::getInstance()->addString("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 
     //Тут выводим скрипты
     $APPLICATION->ShowHeadStrings();

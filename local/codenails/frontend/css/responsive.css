@@ -1,26 +1,27 @@
 @charset "UTF-8";
-/*!
- * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
- */
-/*!
- * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
- */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /*Styles*/
-  body {
-    font-size: 12px;
-  }
+    /*Styles*/
+    body {
+        font-size: 12px;
+    }
 }
+
 @media (max-width: 575px) {
-  body {
-    font-size: 14px;
-  }
+    body {
+        font-size: 14px;
+    }
 }
+
 @media (min-width: 1170px) {
-  body {
-    font-size: 16px;
-  }
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+    /* Styles */
 }
 
 /*# sourceMappingURL=responsive.css.map */

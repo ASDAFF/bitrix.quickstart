@@ -19,9 +19,9 @@
 
 	@font-face {
 		font-family: quote($name);
+		src: $src;
 		font-style: $style;
 		font-weight: $weight;
-		src: $src;
 	}
 }
 

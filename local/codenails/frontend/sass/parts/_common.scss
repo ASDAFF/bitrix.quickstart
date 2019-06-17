@@ -1,71 +1,89 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
-	background: #fff;
-	color: #000;
-	font-size: 16px;
-	font-family: 'SFUIText';
-	margin: 0;
-	padding: 0;
+  background: #fff;
+  color: #000;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'SFUIText';
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'SFUIText';
+  font-family: 'SFUIText';
 }
 
 b {
-	font-family: 'SFUIText';
-	font-weight: bold;
+  font-family: 'SFUIText';
+  font-weight: bold;
+}
+
+main > .container {
+  padding: 60px 15px 0;
 }
 
 .font-light {
-	font-family: 'SFUIText';
-	font-weight: 300;
+  font-family: 'SFUIText';
+  font-weight: 300;
 }
 
 .ta-l {
-	text-align: left;
+  text-align: left;
 }
 
 .ta-c {
-	text-align: center;
+  text-align: center;
 }
 
 .ta-r {
-	text-align: right;
+  text-align: right;
 }
 
 .transitioned {
-	transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .z1 {
-	z-index: 1;
+  z-index: 1;
 }
 
 .z2 {
-	z-index: 2;
+  z-index: 2;
 }
 
 .z3 {
-	z-index: 3;
+  z-index: 3;
 }
 
 .iflex {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-	&--grow {
-		flex-grow: 1;
-	}
+  &--grow {
+    flex-grow: 1;
+  }
 }
 
 .pos-rel {
-	position: relative;
+  position: relative;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }

@@ -27,6 +27,12 @@ b {
   font-weight: bold;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto \9; /* ie8 */
+}
+
 main > .container {
   padding: 60px 15px 0;
 }

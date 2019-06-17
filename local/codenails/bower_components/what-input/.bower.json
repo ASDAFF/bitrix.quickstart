@@ -1,0 +1,14 @@
+{
+  "name": "what-input",
+  "homepage": "https://github.com/ten1seven/what-input",
+  "version": "5.2.3",
+  "_release": "5.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v5.2.3",
+    "commit": "6fd86fd847b263a443e7e0753e63c80778a2a84a"
+  },
+  "_source": "https://github.com/ten1seven/what-input.git",
+  "_target": ">=4.1.0",
+  "_originalSource": "what-input"
+}

@@ -1,0 +1,17 @@
+:block(directions) {
+    padding: 70px;
+
+    &:elem(cell) {
+        padding: 8px;
+
+        &:mod(border yes) {
+            border: 1px solid #ccc;
+        }
+
+        @each $direction in left, center, right {
+            &:mod(align $direction) {
+                text-align: $direction;
+            }
+        }
+    }
+}

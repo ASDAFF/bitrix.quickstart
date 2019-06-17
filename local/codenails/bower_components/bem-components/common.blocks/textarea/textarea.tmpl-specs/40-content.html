@@ -1,0 +1,1 @@
+<textarea class="textarea textarea__control i-bem" data-bem="{&quot;textarea&quot;:{}}">textarea</textarea>

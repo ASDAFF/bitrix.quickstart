@@ -1,0 +1,126 @@
+//----------------------------------------------------------------------------
+// typography.scss
+// Headings, body text, lists, code, and more
+//----------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// @BODY
+
+//p
+//{
+//  margin: 0 0 $baseLineHeight / 2;
+//  font-family: $baseFontFamily;
+//  font-size: $baseFontSize;
+//  line-height: $baseLineHeight;
+//
+//  small
+//  {
+//    font-size: $baseFontSize - 2;
+//    color: $grayLight;
+//  }
+//}
+//
+//.lead
+//{
+//  margin-bottom: $baseLineHeight;
+//  font-size: 20px;
+//  font-weight: 200;
+//  line-height: $baseLineHeight * 1.5;
+//}
+//
+//
+//// ---------------------------------------------------------------------------
+//// @LINKS
+//
+//a
+//{
+//  color: $linkColor;
+//  text-decoration: none;
+//}
+//a:hover
+//{
+//  color: $linkColorHover;
+//  text-decoration: underline;
+//}
+//
+//// ---------------------------------------------------------------------------
+//// @HEADINGS
+//
+//h1, h2, h3, h4, h5, h6
+//{
+//  margin: 0;
+//  font-family: $headingsFontFamily;
+//  font-weight: $headingsFontWeight;
+//  color: $headingsColor;
+//  text-rendering: optimizelegibility; // Fix the character spacing for headings
+//
+//  small
+//  {
+//    font-weight: normal;
+//    color: $grayLight;
+//  }
+//}
+//
+//h1
+//{
+//  font-size: 30 ÷ $baseFontSize;
+//  line-height: $baseLineHeight * 2;
+//
+//  small
+//  {
+//    font-size: 18px;
+//  }
+//}
+
+h1 {
+  font-family: 'Rubik-Medium', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  @extend h1;
+  font-size: 60px;
+}
+
+h3 {
+  @extend h1;
+  font-size: 40px;
+}
+
+h4 {
+  @extend h1;
+}
+
+h5 {
+  @extend h1;
+}
+
+h6 {
+  @extend h1;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #262626;
+  &:hover {
+    @extend a;
+  }
+  &:focus {
+    @extend a;
+  }
+  &:active {
+    @extend a;
+  }
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+

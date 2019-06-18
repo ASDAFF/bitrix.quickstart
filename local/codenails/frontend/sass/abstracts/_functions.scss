@@ -1,15 +1,11 @@
-/* пересчет из px в em */
-
+// пересчет из px в em
 $browser-context: 14; // Default
-
 @function em($pixels, $context: $browser-context) { 
 	@return #{$pixels/$context}em;
 }
 
-/* пересчет из px в vw */
-
+// пересчет из px в vw
 $max-breakpoint: 1920;
-
 $wide-screen: "(min-width: #{$max-breakpoint}px)";
 
 @function get-vw($target) { 

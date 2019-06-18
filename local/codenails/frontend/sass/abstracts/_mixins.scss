@@ -1,0 +1,115 @@
+/// Подключение шрифтов font-face
+///
+/// @access public
+///
+/// @param {name font} $name - имя шрифта
+/// @param {path font} $path - путь до шрифта
+///
+/// @example scss - Использование
+///     @include font-face('Rubik-Black', '../fonts/Rubik-Black', normal, normal);
+///
+/// @example scss - Использование
+///     @include font-face('Rubik-Black', '../fonts/Rubik-Black', normal, normal);
+///
+/// @example css - Вывод CSS
+///     @font-face {
+///       font-family: "Rubik-Black";
+///       src: url("../fonts/Rubik-Black.eot");
+///       src: url("../fonts/Rubik-Black.eot?#iefix") format("embedded-opentype"),
+///            url("../fonts/Rubik-Black.woff") format("woff"),
+///            url("../fonts/Rubik-Black.ttf") format("truetype"),
+///            url("../fonts/Rubik-Black.otf") format("opentype"),
+///            url('../fonts/Rubik-Black.svg#str-replace("Rubik-Black", " ", "_")') format("svg");
+///       font-style: normal;
+///       font-weight: normal;
+///     }
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot/* woff2*/ woff ttf otf svg) {
+  $src: null;
+  $src_eot: null;
+
+  $extmods: (
+          eot: "?#iefix",
+          svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+          eot: "embedded-opentype",
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    @if ($ext == eot) {
+      $src_eot: url(quote($path + "." + $ext));
+    }
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    src: $src_eot;
+    src: $src;
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@mixin transition($val:0.4s, $ease:ease-in-out, $target:all) {
+  -webkit-transition: $target $val $ease;
+  -moz-transition: $target $val $ease;
+  -ms-transition: $target $val $ease;
+  -o-transition: $target $val $ease;
+  transition: $target $val $ease;
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin vertical-align-reset($position: relative) {
+  position: $position;
+  top: auto;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+@mixin centered() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin centered-reset($position: relative) {
+  position: $position;
+  top: auto;
+  left: auto;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}

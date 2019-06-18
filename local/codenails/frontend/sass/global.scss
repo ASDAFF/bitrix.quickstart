@@ -1,5 +1,8 @@
-@import "parts/fonts";
-@import "parts/common";
-@import "parts/functions";
-@import "parts/mixins";
-@import "parts/main";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "base/fonts";
+@import "base/common";
+@import "base/typography";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";

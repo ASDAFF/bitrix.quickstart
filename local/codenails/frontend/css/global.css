@@ -1,22 +1,78 @@
-@charset "UTF-8";
+/* Fonts
+------------------------------------------------ */
 @font-face {
-  font-family: "SFUIText";
-  src: url("../fonts/SFUIText-Regular.eot?") format("eot"), url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype"), url('../fonts/SFUIText-Regular.svg#str-replace("SFUIText", " ", "_")') format("svg");
+  font-family: "Rubik-Black";
+  src: url("../fonts/Rubik-Black.eot");
+  src: url("../fonts/Rubik-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Black.woff") format("woff"), url("../fonts/Rubik-Black.ttf") format("truetype"), url("../fonts/Rubik-Black.otf") format("opentype"), url('../fonts/Rubik-Black.svg#str-replace("Rubik-Black", " ", "_")') format("svg");
   font-style: normal;
+  font-weight: normal;
 }
 @font-face {
-  font-family: "SFUIText";
-  src: url("../fonts/SFUIText-Bold.eot?") format("eot"), url("../fonts/SFUIText-Bold.woff2") format("woff2"), url("../fonts/SFUIText-Bold.woff") format("woff"), url("../fonts/SFUIText-Bold.ttf") format("truetype"), url('../fonts/SFUIText-Bold.svg#str-replace("SFUIText", " ", "_")') format("svg");
+  font-family: "Rubik-BlackItalic";
+  src: url("../fonts/Rubik-BlackItalic.eot");
+  src: url("../fonts/Rubik-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-BlackItalic.woff") format("woff"), url("../fonts/Rubik-BlackItalic.ttf") format("truetype"), url("../fonts/Rubik-BlackItalic.otf") format("opentype"), url('../fonts/Rubik-BlackItalic.svg#str-replace("Rubik-BlackItalic", " ", "_")') format("svg");
   font-style: normal;
+  font-weight: normal;
 }
 @font-face {
-  font-family: "SFUIText";
-  src: url("../fonts/SFUIText-Light.eot?") format("eot"), url("../fonts/SFUIText-Light.woff2") format("woff2"), url("../fonts/SFUIText-Light.woff") format("woff"), url("../fonts/SFUIText-Light.ttf") format("truetype"), url('../fonts/SFUIText-Light.svg#str-replace("SFUIText", " ", "_")') format("svg");
+  font-family: "Rubik-Bold";
+  src: url("../fonts/Rubik-Bold.eot");
+  src: url("../fonts/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype"), url("../fonts/Rubik-Bold.otf") format("opentype"), url('../fonts/Rubik-Bold.svg#str-replace("Rubik-Bold", " ", "_")') format("svg");
   font-style: normal;
+  font-weight: normal;
 }
-*,
-*::before,
-*::after {
+@font-face {
+  font-family: "Rubik-BoldItalic";
+  src: url("../fonts/Rubik-BoldItalic.eot");
+  src: url("../fonts/Rubik-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-BoldItalic.woff") format("woff"), url("../fonts/Rubik-BoldItalic.ttf") format("truetype"), url("../fonts/Rubik-BoldItalic.otf") format("opentype"), url('../fonts/Rubik-BoldItalic.svg#str-replace("Rubik-BoldItalic", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-Italic";
+  src: url("../fonts/Rubik-Italic.eot");
+  src: url("../fonts/Rubik-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Italic.woff") format("woff"), url("../fonts/Rubik-Italic.ttf") format("truetype"), url("../fonts/Rubik-Italic.otf") format("opentype"), url('../fonts/Rubik-Italic.svg#str-replace("Rubik-Italic", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-Light";
+  src: url("../fonts/Rubik-Light.eot");
+  src: url("../fonts/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Light.woff") format("woff"), url("../fonts/Rubik-Light.ttf") format("truetype"), url("../fonts/Rubik-Light.otf") format("opentype"), url('../fonts/Rubik-Light.svg#str-replace("Rubik-Light", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-LightItalic";
+  src: url("../fonts/Rubik-LightItalic.eot");
+  src: url("../fonts/Rubik-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-LightItalic.woff") format("woff"), url("../fonts/Rubik-LightItalic.ttf") format("truetype"), url("../fonts/Rubik-LightItalic.otf") format("opentype"), url('../fonts/Rubik-LightItalic.svg#str-replace("Rubik-LightItalic", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url("../fonts/Rubik-Medium.eot");
+  src: url("../fonts/Rubik-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype"), url("../fonts/Rubik-Medium.otf") format("opentype"), url('../fonts/Rubik-Medium.svg#str-replace("Rubik-Medium", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-MediumItalic";
+  src: url("../fonts/Rubik-MediumItalic.eot");
+  src: url("../fonts/Rubik-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-MediumItalic.woff") format("woff"), url("../fonts/Rubik-MediumItalic.ttf") format("truetype"), url("../fonts/Rubik-MediumItalic.otf") format("opentype"), url('../fonts/Rubik-MediumItalic.svg#str-replace("Rubik-MediumItalic", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url("../fonts/Rubik-Regular.eot");
+  src: url("../fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.otf") format("opentype"), url('../fonts/Rubik-Regular.svg#str-replace("Rubik-Regular", " ", "_")') format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* Common styles
+------------------------------------------------ */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -26,21 +82,12 @@ html {
 
 body {
   background: #fff;
-  color: #000;
+  color: #262626;
   height: 100%;
   font-size: 16px;
-  font-family: "SFUIText";
+  font-family: "Rubik-Regular", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "SFUIText";
-}
-
-b {
-  font-family: "SFUIText";
-  font-weight: bold;
 }
 
 img {
@@ -54,85 +101,74 @@ main > .container {
   padding: 60px 15px 0;
 }
 
-.font-light {
-  font-family: "SFUIText";
-  font-weight: 300;
+h1, h6, h5, h4, h3, h2 {
+  font-family: "Rubik-Medium", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
-.ta-l {
-  text-align: left;
+h2 {
+  font-size: 60px;
 }
 
-.ta-c {
+h3 {
+  font-size: 40px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a, a:active, a:focus, a:hover {
+  color: #262626;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header
+------------------------------------------------ */
+/* Main
+------------------------------------------------ */
+.worth .list-worth {
+  padding-left: 0;
+}
+.worth .list-worth li {
+  display: inline-block;
   text-align: center;
+  width: 12%;
 }
 
-.ta-r {
-  text-align: right;
-}
-
-.transitioned {
-  transition: 0.2s ease;
-}
-
-.z1 {
-  z-index: 1;
-}
-
-.z2 {
-  z-index: 2;
-}
-
-.z3 {
-  z-index: 3;
-}
-
-.iflex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.iflex--grow {
-  flex-grow: 1;
-}
-
-.pos-rel {
-  position: relative;
-}
-
+/* Footer
+------------------------------------------------ */
 .footer {
-  background-color: #f5f5f5;
+  background-color: #262626;
 }
 
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
-
-/* пересчет из px в em */
-/* пересчет из px в vw */
-.jtf-wrp {
-  text-align: justify;
+.footer > .container .phone {
+  color: #999999;
+  font-size: 15px;
 }
-
-.jtf-wrp:before {
-  content: "";
-  display: block;
-  width: 100%;
+.footer > .container .copy {
+  color: #999999;
+  font-size: 12px;
 }
-
-.jtf-wrp:after {
-  content: "";
+.footer > .container .copy p {
+  margin-bottom: 1px;
+}
+.footer > .container .bottom-menu li {
   display: inline-block;
-  width: 100%;
-  height: 0;
 }
-
-.jtf-item {
-  display: inline-block;
-  position: relative;
-  top: 0;
+.footer > .container .bottom-menu li a {
+  color: #999999;
+  font-family: "Rubik-Medium", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=global.css.map */

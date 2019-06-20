@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "homepage": "https://github.com/ASDAFF/bitrix.quickstart",
+  "authors": [
+    "ASDAFF <asdaff.asad@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bourbon": "^5.1.0",
+    "sass-rem": "^2.0.1"
+  }
+}

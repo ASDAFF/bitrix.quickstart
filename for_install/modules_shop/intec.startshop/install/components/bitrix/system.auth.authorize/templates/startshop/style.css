@@ -1,0 +1,119 @@
+.startshop-authorize {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.startshop-authorize .startshop-button {
+    color: #fff;
+    padding: 14px 30px;
+    -webkit-transition-property: background-color, background;
+    -moz-transition-property: background-color, background;
+    -ms-transition-property: background-color, background;
+    -o-transition-property: background-color, background;
+    transition-property: background-color, background;
+    border-radius: 7px;
+}
+
+.startshop-authorize .startshop-authorize-notify {
+    display: block;
+    color: #898989;
+    margin-bottom: 20px;
+    width: 370px;
+}
+
+.startshop-authorize .startshop-authorize-authorize {
+    display: block;
+    width: 370px;
+    float: left;
+    position: relative;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-title {
+    color: #1a1a1a;
+    font-size: 21px;
+    line-height: 21px;
+    height: 21px;
+    margin-bottom: 25px;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-form {
+    display: block;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-form .startshop-authorize-authorize-form-input-text {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+	font-size: 13px;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-form .startshop-authorize-authorize-form-forgot_password {
+    display: block;
+    float: left;
+    margin-bottom: 25px;
+	font-size: 14px;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-form .startshop-authorize-authorize-form-remember_me {
+    display: block;
+    cursor: pointer;
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-right: -20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.startshop-authorize .startshop-authorize-authorize .startshop-authorize-authorize-form .startshop-authorize-authorize-form-authorize {
+    display: block;
+    text-align: right;
+    clear: both;
+}
+
+.startshop-authorize .startshop-authorize-registration {
+    display: block;
+    width: 220px;
+    padding-left: 30px;
+    margin-left: 400px;
+    padding-top: 46px;
+}
+
+.startshop-authorize .startshop-authorize-registration .startshop-authorize-registration-description {
+    display: block;
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #898989;
+}
+
+.startshop-authorize .startshop-authorize-delimiter {
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    height: 100%;
+    width: 1px;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+@media all and (max-width: 650px) {
+    .startshop-authorize.adaptiv .startshop-authorize-authorize {
+        width: auto;
+        float: none;
+        overflow: hidden;
+    }
+
+    .startshop-authorize .startshop-authorize-registration {
+        width: auto;
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-top: 20px;
+        overflow: hidden;
+    }
+
+    .startshop-authorize .startshop-authorize-delimiter {
+        display: none;
+    }
+}

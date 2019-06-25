@@ -1,0 +1,806 @@
+/*Товар дня*/
+.startshop-catalog .startshop-item .product-of-day {
+	position: relative;
+	display: block;
+	background: #fed000;
+	font-size: 0px;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.startshop-catalog .startshop-item .product-of-day .valign {
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	height: 100%;
+	width: 0px;
+}
+
+.startshop-catalog .startshop-item .product-of-day .day {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+	text-align: center;
+	color: #202020;
+	font-weight: bold;
+}
+
+.startshop-catalog .startshop-item .product-of-day .day .number {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.startshop-catalog .startshop-item .product-of-day .day .month {
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer > .title,
+.startshop-catalog .startshop-item .product-of-day > .title {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	color: #202020;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.startshop-catalog .startshop-item .product-of-day > .title {
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer > .title {
+	margin-right: 20px;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer {
+	position: absolute;
+	padding: 15px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer .countdown {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer .countdown .pd_td {
+	background: #fff;
+	font-size: 16px;
+	color: #000;
+	padding: 7px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.startshop-catalog .startshop-item .product-of-day .timer .countdown .pd_num_separator {
+	font-size: 16px;
+	color: #000;
+	padding: 5px;
+	font-weight: bold;
+}
+/**/
+
+.startshop-catalog .startshop-item {
+	
+}
+
+.startshop-catalog .startshop-item .startshop-row {
+	display: block;
+	overflow: hidden;
+}
+
+.startshop-catalog .startshop-item .startshop-title {
+	font-size: 21px;
+	color: #444648;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+/*Слайдер картинок*/
+.startshop-catalog .startshop-item .startshop-slider {
+	position: relative;
+	float: left;
+	width: 450px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-preview {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 100%;
+	text-align: center;
+	font-size: 0px;
+	white-space: nowrap;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-preview .startshop-slider-preview-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-preview .startshop-slider-preview-wrapper .marks {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-preview .startshop-slider-preview-images,
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-preview .startshop-slider-preview-images .startshop-slider-preview-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides {
+	position: relative;
+	display: block;
+    margin-top: 20px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-buttons {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-buttons .startshop-slider-buttons-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-buttons .startshop-slider-button-small {
+	position:absolute;
+}.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-buttons .startshop-slider-button-small.startshop-slider-button-left {
+	left: 0px;
+}.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-buttons .startshop-slider-button-small.startshop-slider-button-right {
+	right: 0px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list {
+	margin-left: 30px;
+	margin-right: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	padding-top: 25%;
+	white-space: nowrap;
+	font-size: 0px;
+	text-align: center;
+	cursor: pointer;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image .startshop-slider-image-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: 0px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image .startshop-slider-image-wrapper .startshop-slider-image-wrapper-wrapper {
+	position: relative;
+	padding: 4px;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image .startshop-slider-image-wrapper .startshop-slider-image-wrapper-wrapper .startshop-slider-image-wrapper-wrapper-wrapper {
+	height: 100%;
+	padding: 4px;
+	border: 3px solid transparent;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition-property: border-color;
+	transition: 0.3s;
+	font-size: 0px;
+}
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image.startshop-ui-state-active .startshop-slider-image-wrapper .startshop-slider-image-wrapper-wrapper .startshop-slider-image-wrapper-wrapper-wrapper,
+.startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image:hover .startshop-slider-image-wrapper .startshop-slider-image-wrapper-wrapper .startshop-slider-image-wrapper-wrapper-wrapper {
+	border: 3px solid #1a58d7;
+}
+/*Конец слайдера картинок*/
+
+.startshop-catalog .startshop-item .startshop-information {
+	position: relative;
+	margin-left: 500px;
+}
+.startshop-catalog .startshop-item.with-menu .startshop-information {
+    margin-left: 250px;
+}
+.startshop-catalog .startshop-item.with-menu .startshop-information.with-menu {
+    margin-left: 0px;
+}
+
+/*Картинки с меню*/
+.startshop-catalog .startshop-item.with-menu .startshop-slider {
+    width: 200px;
+}
+.startshop-catalog .startshop-item.with-menu .startshop-slider > .startshop-slider-slides .startshop-slider-list .startshop-slider-image {
+    width: 50%;
+    padding-top: 50%;
+}
+
+/* Артикуль */
+.startshop-catalog .startshop-item .startshop-information .startshop-article {
+	position: relative;
+	float: left;
+	margin-right: 32px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #a7a7a7;
+}
+
+/* В наличии/ не в наличии*/
+.startshop-catalog .startshop-item .startshop-information .startshop-state {
+	position: relative;
+	float: left;
+	font-size: 11px;
+	line-height: 18px;
+	color: #474747;
+}
+.startshop-catalog .startshop-item .startshop-prices .startshop-state.available,
+.startshop-catalog .startshop-item .startshop-information .startshop-state.available {
+	
+}
+.startshop-catalog .startshop-item .startshop-prices .startshop-state.unavailable,
+.startshop-catalog .startshop-item .startshop-information .startshop-state.unavailable {
+	
+}
+
+.startshop-catalog .startshop-item .startshop-prices .startshop-state {
+	display: inline-block;
+	float: none;
+}
+
+.startshop-catalog .startshop-item .startshop-prices .startshop-state .startshop-icon,
+.startshop-catalog .startshop-item .startshop-information .startshop-state .startshop-icon {
+	position: relative;
+	display: block;
+	float: left;
+	margin-top: 4px;
+	margin-right: 6px;
+	width: 14px;
+	height: 10px;
+	background: url('images/state.png');
+}
+.startshop-catalog .startshop-item .startshop-prices .startshop-state.available .startshop-icon,
+.startshop-catalog .startshop-item .startshop-information .startshop-state.available .startshop-icon {
+	background-position: top;
+}
+.startshop-catalog .startshop-item .startshop-prices .startshop-state.unavailable .startshop-icon,
+.startshop-catalog .startshop-item .startshop-information .startshop-state.unavailable .startshop-icon {
+	background-position: bottom;
+}
+
+/* Торговые предложения */
+
+.startshop-item .startshop-information .startshop-offers-properties {
+    display: block;
+    overflow: hidden;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-properties-wrapper {
+    display: block;
+    margin: -6px;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property {
+    display: block;
+    overflow: hidden;
+    font-size: 0px;
+    padding: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-property-wrapper {
+    display: block;
+    margin: -4px;
+    font-size: inherit;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-title {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1d1d1d;
+    white-space: nowrap;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-value {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: inherit;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-value .startshop-offers-value-wrapper {
+    font-size: inherit;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-text .startshop-offers-value .startshop-offers-value-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 10px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    -webkit-transition-property: border-color, bacnground;
+    -moz-transition-property: border-color, bacnground;
+    -ms-transition-property: border-color, bacnground;
+    -o-transition-property: border-color, bacnground;
+    transition-property: border-color, bacnground;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #b2b2b2;
+    text-align: center;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-text .startshop-offers-value .startshop-offers-value-wrapper:hover {
+    border-color: #f1f1f1;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-text .startshop-offers-value.selected .startshop-offers-value-wrapper {
+    background: #f1f1f1;
+    border-color: #f1f1f1;
+    color: #ffffff;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-text .startshop-offers-value .startshop-offers-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    line-height: 15px;
+    color: inherit;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value .startshop-offers-value-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 0px 0px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #f1f1f1;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value.selected .startshop-offers-value-wrapper {
+    background: #f1f1f1 !important;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value.startshop-offers-value-empty .startshop-offers-value-wrapper {
+    background: transparent !important;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value.startshop-offers-value-empty .startshop-offers-image {
+    background: #c2c2c2;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value .startshop-offers-image {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value.selected .startshop-offers-image,
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value .startshop-offers-value-wrapper:hover .startshop-offers-image {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value .startshop-offers-sprite {
+    display: none;
+    position: absolute;
+    background: url('images/sku.properties.pictures.sprite.png') no-repeat 0px 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property.startshop-offers-property-image .startshop-offers-value.selected .startshop-offers-sprite {
+    display: block;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-value {
+    display: none;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-value.displayed {
+    display: inline-block;
+}
+
+.startshop-item .startshop-information .startshop-offers-properties .startshop-offers-property .startshop-offers-value.disabled {
+	display: none;
+}
+
+/*Цена*/
+.startshop-catalog .startshop-item .startshop-information .startshop-price {
+	position: relative;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-price .startshop-current {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+	font-size: 30px;
+	line-height: 36px;
+	color: #252525;
+	font-weight: bold;
+}
+
+/* Сторона заказа */
+.startshop-catalog .startshop-item .startshop-information .startshop-order {
+	position: relative;
+	font-size: 0px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy-block {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy-block > div,
+.startshop-catalog .startshop-item .startshop-information .startshop-order > div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-order .valign {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy-block {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0px;
+}
+
+/*Контрол количества*/
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-input-numeric {
+	height: 38px;
+}
+/**Контрол количества**/
+
+.startshop-catalog .startshop-item .startshop-information .startshop-order > .startshop-buy,
+.startshop-catalog .startshop-item .startshop-information .startshop-order > .startshop-buy-block > .startshop-buy {
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+}
+.startshop-catalog .startshop-item .startshop-information .startshop-order > .min-buttons {
+	display: inline-block;
+	vertical-align: middle;
+}
+.startshop-catalog .startshop-item .startshop-information .startshop-order > .startshop-buy-block > .startshop-buy {
+	height: 36px;
+}
+
+/*Кнопки*/
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy > .to-cart-added,
+.startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy > .to-cart  {
+	font-size: 14px;
+	line-height: 14px;
+	padding: 12px 50px;
+}
+
+/* Описание */
+.startshop-catalog .startshop-item .startshop-description,
+.startshop-catalog .startshop-item .startshop-description {
+	color: #8b8b8b;
+}
+
+/* Сокращенные характеристики */
+.startshop-catalog .startshop-item .startshop-information .startshop-properties {
+	color: #707070;
+	font-size: 13px;
+	line-height: 20px;
+	overflow: hidden;	
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-properties .startshop-property:before {
+	content: '';
+	position: absolute;
+	display: block;
+	background: #1a58d7;
+	width: 3px;
+	height: 3px;
+	border-radius: 1.5px;
+	left: 0px;
+	top: 9px;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-properties .startshop-property {
+	position: relative;
+	float: left;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 13px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding-left: 10px;
+}
+
+.startshop-catalog .startshop-item .startshop-information .startshop-properties .startshop-all-properties {
+	float: left;
+	width: 100%;
+	margin-top: 8px;
+	text-decoration: underline;
+	cursor: pointer;
+	list-style: none;
+	padding-left: 10px;
+}
+
+/* Все характеристики */
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties,
+.startshop-catalog .startshop-item > .startshop-properties {
+	position: relative;
+	color: #707070;
+}
+
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property:before,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property:before {
+	content: '';
+	position: absolute;
+	display: block;
+	background: #1a58d7;
+	width: 3px;
+	height: 3px;
+	border-radius: 1.5px;
+	left: 0px;
+	top: 9px;
+}
+
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property {
+	position: relative;
+	float: left;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 13px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding-left: 10px;
+}
+
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property .startshop-name,
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property .startshop-value,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property .startshop-name,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property .startshop-value {
+	float: left;
+	width: 50%;
+	overflow: hidden;
+}
+
+/*Документы*/
+.startshop-item  .startshop-documents {
+	display: block;
+	overflow: hidden;
+}
+
+.startshop-item  .startshop-documents .startshop-document {
+	display: inline-block;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.startshop-item  .startshop-documents .startshop-document .startshop-document-image {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url("images/file.png");
+}
+
+.startshop-item  .startshop-documents .startshop-document .startshop-document-information {
+	display: block;
+	margin-left: 55px;
+}
+
+.startshop-item  .startshop-documents .startshop-document .startshop-document-information .startshop-document-name {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 3px;
+	text-decoration: underline;
+}
+
+.startshop-item  .startshop-documents .startshop-document .startshop-document-information .startshop-document-size {
+	font-size: 12px;
+	line-height: 16px;
+	color: #9d9d9d;
+	text-decoration: none;
+}
+/**Документы**/
+
+@media all and (max-width: 1150px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider {
+		width: 300px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information {
+		margin-left: 350px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-price {
+		float: none;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order {
+		margin-top: 20px;
+		float: none;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image {
+		width: 50%;
+		padding-top: 50%;
+	}
+}
+
+@media all and (max-width: 950px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider {
+		width: 200px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information {
+		margin-left: 250px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-prices tr,
+    .startshop-catalog.adaptiv .startshop-item.with-menu .startshop-prices tr {
+		width: 33.33% !important;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-item_description > .startshop-properties .startshop-property,
+	.startshop-catalog.adaptiv .startshop-item > .startshop-properties .startshop-property {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider {
+		float: none;
+		width: 400px;
+		margin: 0 auto;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information,
+    .startshop-catalog.adaptiv .startshop-item.with-menu .startshop-information,
+    .startshop-catalog.adaptiv .startshop-item.with-menu .startshop-information.with-menu {
+		margin-left: 0px;
+		padding-top: 20px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order > .uni-indents-horizontal,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order .startshop-buy-block > .uni-indents-horizontal {
+		display: none;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order .startshop-buy-block {
+		display: block;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order > .startshop-count,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order > .startshop-buy,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order .startshop-buy-block > .startshop-count,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order .startshop-buy-block > .startshop-buy,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order .startshop-buy-block > .min-buttons	{
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item > .startshop-row {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-properties .startshop-property {
+		width: 100%;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-price {
+		float: none;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-order {
+		margin-top: 20px;
+		float: none;
+		height: auto;
+	}
+
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image {
+		width: 25%;
+		padding-top: 25%;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-price {
+		float: none;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider {
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.startshop-catalog.adaptiv .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image {
+		width: 50%;
+		padding-top: 50%;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .article,
+	.startshop-catalog.adaptiv .startshop-item .startshop-information .startshop-state {
+		float: none;
+		margin: 0px;
+		padding-top: 10px;
+	}
+}
+
+.startshop-catalog.startshop-item .standart_block {
+    margin: 0px;
+}

@@ -1,0 +1,13 @@
+.startshop-register.confirm {
+    display: block;
+}
+
+.startshop-register.confirm .startshop-register-notify {
+    display: block;
+    color: #898989;
+    margin-bottom: 20px;
+}
+
+.startshop-register.confirm .startshop-register-table .startshop-input-text {
+    margin-left: 20px;
+}

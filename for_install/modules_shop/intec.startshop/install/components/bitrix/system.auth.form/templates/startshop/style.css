@@ -1,0 +1,52 @@
+.startshop-auth {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.startshop-auth .startshop-auth-login,
+.startshop-auth .startshop-auth-profile {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.startshop-auth .startshop-auth-logout {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.startshop-auth .startshop-auth-logout:hover,
+.startshop-auth .startshop-auth-logout:focus {
+    outline: none;
+}
+
+#popup-window-overlay-AuthorizePopup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    opacity: 0.3;
+}
+
+#AuthorizePopup,
+#AuthorizePopup .popup-window,
+#AuthorizePopup .popup-window .popup-window-content-row .popup-window-center-column {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+}
+
+#AuthorizePopup .popup-window-close-icon {
+    background-image: url('images/ajax.popup.close.png');
+    width: 10px;
+    height: 11px;
+}
+
+.startshop-ajax-authorize {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}

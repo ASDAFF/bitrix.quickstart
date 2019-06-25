@@ -1,0 +1,159 @@
+.startshop-basket.default {
+    display: block;
+}
+
+.startshop-basket.default .startshop-basket-notify {
+    display: block;
+    padding: 10px;
+    background: #ffd777;
+    border: 1px solid #ddaa40;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.startshop-basket.default .startshop-basket-notify.startshop-basket-notify-green {
+    background: #b6ff66;
+    border: 1px solid #59d11a;
+}
+.startshop-basket.default .startshop-basket-notify.startshop-basket-notify-red {
+    background: #ffdac4;
+    border: 1px solid #dd3638;
+}
+
+.startshop-basket.default .startshop-basket-notify .startshop-basket-notify-wrapper {
+    display: block;
+    overflow: hidden;
+    color: #1d1d1d;
+}
+
+.startshop-basket.default .startshop-basket-table-wrapper {
+    display: block;
+    position: relative;
+    overflow-x: auto;
+}
+
+.startshop-basket.default .startshop-basket-table {
+    width: 100%;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row {
+
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row.startshop-basket-row-header {
+    height: auto;
+    border-bottom: 3px solid #ededed;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column {
+
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell {
+    display: block;
+    margin: 10px 20px;
+    overflow: hidden;
+    color: #787878;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    white-space: normal;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row.startshop-basket-row-header .startshop-basket-column .startshop-basket-cell {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell .startshop-link {
+    text-decoration: none;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell .startshop-image {
+    height: 100px;
+    width: 100px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell .startshop-button-custom.startshop-button-delete {
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 0px;
+    text-decoration: none;
+    background: url('images/button.delete.sprite.png') no-repeat;
+    background-position: 0px 0px;
+}
+.startshop-basket.default .startshop-basket-table .startshop-basket-row .startshop-basket-column .startshop-basket-cell .startshop-button-custom.startshop-button-delete:hover {
+    background-position: 0px -16px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property {
+    display: block;
+    font-size: 0px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property .startshop-basket-name {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-text .startshop-basket-value {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-picture .startshop-basket-value {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.startshop-basket.default .startshop-basket-table .startshop-basket-property.startshop-basket-property-picture .startshop-basket-value .startshop-basket-value-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.startshop-basket.default .startshop-basket-sum {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.startshop-basket.default .startshop-basket-buttons {
+    display: block;
+    overflow: hidden;
+}
+
+.startshop-basket.default .startshop-basket-buttons .startshop-basket-buttons-wrapper {
+    display: block;
+    overflow: hidden;
+    margin: -4px;
+}
+
+.startshop-basket.default .startshop-basket-buttons .startshop-button {
+    display: block;
+    float: right;
+    margin: 4px;
+    padding: 11px 23px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.startshop-basket.default .startshop-basket-buttons .startshop-button.sale_back{
+    float: left;
+}

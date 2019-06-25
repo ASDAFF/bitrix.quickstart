@@ -1,0 +1,68 @@
+.startshop-catalog .startshop-catalog-sections-list {
+	position: relative;
+	display: block;
+	background: transparent;
+	white-space: nowrap;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element {
+	position: relative;
+	display: block;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-wrapper {
+	position: relative;
+	display: block;
+	border: 1px solid #ebebeb;
+	text-decoration: none;
+	width: auto;
+}.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-wrapper:focus {
+	outline: none;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-image-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-image-wrapper > div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-weight: bold;
+    font-size: 0px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-image-wrapper > div img {
+	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+	border: none;
+    max-width: 100%;
+	max-height: 100%;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-text {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.startshop-catalog .startshop-catalog-sections-list .startshop-element .startshop-text .startshop-text-wrapper {
+	font-size: 13px;
+	line-height: 19px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	white-space: normal;
+	height: 38px;
+	overflow: hidden;
+}

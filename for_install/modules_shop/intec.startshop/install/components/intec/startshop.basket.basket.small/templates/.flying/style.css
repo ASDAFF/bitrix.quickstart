@@ -1,0 +1,240 @@
+.startshop-basket-small.flying .startshop-button {
+	color: #000;
+	border-radius: 3px;
+	font-size: 12px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	line-height: 12px;
+}
+
+.startshop-basket-small.flying .startshop-button.startshop-button-standart {
+	color: #fff;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.startshop-basket-small.flying .startshop-small-button.startshop-delete {
+	background: url('images/product.delete.png');
+}
+
+.startshop-basket-small.flying .startshop-small-button {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	border: none;
+}.startshop-basket-small.flying .startshop-small-button:hover {
+	background-position: bottom;
+}.startshop-basket-small.flying .startshop-small-button:focus {
+	outline: none;
+}
+
+/* Количество */
+.startshop-basket-small.flying .startshop-numeric {
+	display: block;
+	height: 40px;
+	font-size: 0px;
+	width: 120px;
+	text-align: left;
+}
+
+.startshop-basket-small.flying .startshop-numeric .startshop-numeric-button {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	background: #fafafa;
+	border: 1px solid #e6e6e6;
+	font-size: 14px;
+	line-height: 14px;
+	cursor: pointer;
+	padding: 12px 12px;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+
+.startshop-basket-small.flying .startshop-numeric .startshop-numeric-button:hover {
+	background: #e6e6e6;
+}
+
+.startshop-basket-small.flying .startshop-numeric .startshop-numeric-button.startshop-increase {
+	border-radius: 0px 5px 5px 0px;
+}
+
+.startshop-basket-small.flying .startshop-numeric .startshop-numeric-button.startshop-decrease {
+	border-radius: 5px 0px 0px 5px;
+}
+
+
+.startshop-basket-small.flying .startshop-numeric .startshop-numeric-field {
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 40px;
+	background: #fcfcfc;
+	border: 1px solid #e6e6e6;
+	border-left: none;
+	border-right: none;
+	font-size: 14px;
+	line-height: 14px;
+	padding: 12px 5px;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/** Количество **/
+
+.startshop-basket-small.flying {
+	display: block;
+	position: fixed;
+	right: -2px;
+	top: 100px;
+	z-index: 10;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-overlay {
+	position: absolute;
+	width: 60px;
+	left: -60px;
+	background: #f2f2f2;
+	height: 40px;
+	border-radius: 7px 0 0 7px;
+	text-align: center;
+	font-size: 0px;
+	cursor: pointer;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-overlay .startshop-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	background: url('images/startshop.basket.icon.png');
+}
+
+.startshop-basket-small.flying .startshop-basket-small-overlay .startshop-text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #e8e8e8;
+	background: #fff;
+	box-shadow: 0 0 7px rgba(0,0,0,0.1);
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections {
+	display: block;
+	width: 0px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section {
+	min-height: 38px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket {
+	display: block;
+	width: 840px;
+}
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket.startshop-empty {
+	width: 500px;
+	padding: 10px 0 30px 0;
+	text-align: center;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-header {
+	margin: 20px 30px;
+	font-size: 16px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products .startshop-products-header {
+	border-top: 1px solid #e8e8e8;
+	height: 39px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products tr td,
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products tr th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products tr td {
+	height: 100px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products tr td .startshop-wrapper,
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-products tr th .startshop-wrapper {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-container .startshop-basket-fly-sections .startshop-basket-fly-section#StartshopFlyingBasket .startshop-buttons {
+	margin: 20px 30px;
+	overflow: hidden;
+}
+
+/* Торговые предложения */
+
+.startshop-basket-small.flying .startshop-basket-small-table .startshop-basket-small-property {
+	display: block;
+	font-size: 0px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-property .startshop-basket-small-name {
+	display: inline-block;
+	font-size: 10px;
+	vertical-align: middle;
+	font-weight: bold;
+	margin-right: 6px;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-property.startshop-basket-small-property-text .startshop-basket-small-value {
+	display: inline-block;
+	font-size: 10px;
+	vertical-align: middle;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-property.startshop-basket-small-property-picture .startshop-basket-small-value {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	background: #f1f1f1;
+	overflow: hidden;
+}
+
+.startshop-basket-small.flying .startshop-basket-small-property.startshop-basket-small-property-picture .startshop-basket-small-value .startshop-basket-small-value-wrapper {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	right: 4px;
+	overflow: hidden;
+	border-radius: 50%;
+}

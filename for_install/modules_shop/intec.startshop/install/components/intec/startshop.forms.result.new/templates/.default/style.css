@@ -1,0 +1,116 @@
+.startshop-forms-result-new.default {
+    display: block;
+    margin: 0px;
+    padding: 20px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-wrapper {
+    display: block;
+    position: relative;
+    width: 250px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-caption {
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row {
+    display: block;
+    margin-top: 15px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-name {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control {
+
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-input-textarea,
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-input-select,
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-input-multiselect,
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-input-text,
+.startshop-forms-result-new.default .startshop-forms-result-new-captcha .startshop-forms-result-new-captcha-code .startshop-input-text {
+    width: 100%;
+    outline: none !important;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-input-textarea {
+    resize: vertical;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-forms-result-new-row-control-box {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-row .startshop-forms-result-new-row-control .startshop-forms-result-new-row-control-box .startshop-forms-result-new-row-control-box-wrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-button {
+    display: block;
+    font-size: 12px;
+    padding: 11px 11px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-captcha {
+    display: block;
+    margin-top: 20px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-captcha .startshop-forms-result-new-captcha-caption {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-captcha .startshop-forms-result-new-captcha-image {
+    display: block;
+    text-align: center;
+    font-size: 0px;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-captcha .startshop-forms-result-new-captcha-image img {
+    display: inline-block;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-message-error {
+    display: block;
+    background: #ff114a;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 5px 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 1px 1px 2px #cd0c3b;
+    -moz-box-shadow: inset 1px 1px 2px #cd0c3b;
+    box-shadow: inset 1px 1px 2px #cd0c3b;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-required {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.startshop-forms-result-new.default .startshop-forms-result-new-sent {
+    display: block;
+    text-align: center;
+}

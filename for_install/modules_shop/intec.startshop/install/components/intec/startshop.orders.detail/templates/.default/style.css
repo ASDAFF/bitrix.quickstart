@@ -1,0 +1,141 @@
+.startshop-orders-detail.default {
+    display: block;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-notify {
+    display: block;
+    padding: 10px;
+    background: #ffd777;
+    border: 1px solid #ddaa40;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.startshop-orders-detail.default .startshop-orders-detail-notify.startshop-orders-detail-notify-green {
+    background: #b6ff66;
+    border: 1px solid #59d11a;
+}
+.startshop-orders-detail.default .startshop-orders-detail-notify.startshop-orders-detail-notify-red {
+    background: #ffdac4;
+    border: 1px solid #dd3638;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-notify .startshop-orders-detail-notify-wrapper {
+    display: block;
+    overflow: hidden;
+    color: #1d1d1d;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section {
+    display: block;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-title {
+    display: block;
+    background: #f5f5f5;
+    color: #626262;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 15px 25px 15px 25px;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-row {
+    display: block;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+    color: #626262;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-row.startshop-orders-detail-section-content-row-single {
+    float: none;
+    clear: both;
+    width: auto;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table-wrapper {
+    display: block;
+    overflow: auto;
+    padding: 20px;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table {
+    width: 100%;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-section-content-table-row {
+    color: #6a6f82;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-section-content-table-row.startshop-orders-detail-section-content-table-row-filled {
+    background: #f8f8f8;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-section-content-table-row-column {
+
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-section-content-table-row-column .startshop-orders-detail-section-content-table-row-column-indents {
+    display: block;
+    padding: 10px 20px;
+    color: inherit;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-property {
+    display: block;
+    font-size: 0px;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-property .startshop-orders-detail-name {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-property.startshop-orders-detail-property-text .startshop-orders-detail-value {
+    display: inline-block;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-property.startshop-orders-detail-property-picture .startshop-orders-detail-value {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #f1f1f1;
+    overflow: hidden;
+}
+
+.startshop-orders-detail.default .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-table .startshop-orders-detail-property.startshop-orders-detail-property-picture .startshop-orders-detail-value .startshop-orders-detail-value-wrapper {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+@media all and (max-width: 550px) {
+    .startshop-orders-detail.default.adaptiv .startshop-orders-detail-section .startshop-orders-detail-section-content .startshop-orders-detail-section-content-row {
+        float: none;
+        width: auto;
+    }
+}

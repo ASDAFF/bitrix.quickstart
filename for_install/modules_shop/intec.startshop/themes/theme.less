@@ -1,0 +1,167 @@
+@COLOR_HOVER = lighten(spin(@COLOR, -5), 10%);
+@COLOR_FOCUS = lighten(spin(@COLOR, -5), 10%);
+@ANIMATION_TIME = 0.4s;
+
+/* Кнопка "Стандарт" */
+.startshop-button.startshop-button-standart {
+	background: @COLOR !important;
+}.startshop-button.startshop-button-standart:hover {
+	background: @COLOR_HOVER !important;
+}.startshop-button.startshop-button-standart:focus {
+	background: @COLOR_FOCUS !important;
+}
+
+.startshop-button.startshop-button-standart.startshop-status-hover {
+	background: @COLOR_HOVER !important;
+}.startshop-button.startshop-button-standart.startshop-status-hover:hover {
+	background: @COLOR_HOVER !important;
+}.startshop-button.startshop-button-standart.startshop-status-hover:focus {
+	background: @COLOR_HOVER !important;
+}
+
+.startshop-button.startshop-button-standart.startshop-status-focus {
+	background: @COLOR_FOCUS !important;
+}.startshop-button.startshop-button-standart.startshop-status-focus:hover {
+	background: @COLOR_FOCUS !important;
+}.startshop-button.startshop-button-standart.startshop-status-focus:focus {
+	background: @COLOR_FOCUS !important;
+}
+/** Кнопка "Стандарт" **/
+
+/* Кнопка "Серая" */
+.startshop-button.startshop-button-gray {
+	background: #ffffff !important;
+	border: 1px solid #cbcbcb !important;
+}.startshop-button.startshop-button-gray:hover {
+	background: #cbcbcb !important;
+}.startshop-button.startshop-button-gray:focus {
+	background: #cbcbcb !important;
+}
+
+.startshop-button.startshop-button-gray.startshop-status-hover {
+	background: #cbcbcb !important;
+}.startshop-button.startshop-button-gray.startshop-status-hover:hover {
+	background: #cbcbcb !important;
+}.startshop-button.startshop-button-gray.startshop-status-hover:focus {
+	background: #cbcbcb !important;
+}
+
+.startshop-button.startshop-button-gray.startshop-status-focus {
+	background: #cbcbcb !important;
+}.startshop-button.startshop-button-gray.startshop-status-focus:hover {
+	background: #cbcbcb !important;
+}.startshop-button.startshop-button-gray.startshop-status-focus:focus {
+	background: #cbcbcb !important;
+}
+/** Кнопка "Серая" **/
+
+.startshop-link {
+	-webkit-transition: @ANIMATION_TIME;
+	   -moz-transition: @ANIMATION_TIME;
+		-ms-transition: @ANIMATION_TIME;
+		 -o-transition: @ANIMATION_TIME;
+			transition: @ANIMATION_TIME;
+	-webkit-transition: color;
+	   -moz-transition: color;
+		-ms-transition: color;
+		 -o-transition: color;
+			transition: color;
+}
+
+/* Ссылка "Стандарт" */
+.startshop-link.startshop-link-standart {
+	color: @COLOR !important;
+}.startshop-link.startshop-link-standart:hover {
+	color: @COLOR_HOVER !important;
+}.startshop-link.startshop-link-standart:focus {
+	color: @COLOR_FOCUS !important;
+}
+/** Ссылка "Стандарт" **/
+
+/* Ссылка "Темная" */
+.startshop-link.startshop-link-hover-dark {
+	color: @COLOR_DARK !important;
+}.startshop-link.startshop-link-hover-dark:hover {
+	color: @COLOR_HOVER !important;
+}.startshop-link.startshop-link-hover-dark:focus {
+	color: @COLOR_FOCUS !important;
+}
+/** Ссылка "Темная" **/
+
+.startshop-link.startshop-status-hover {
+	color: @COLOR_HOVER !important;
+}.startshop-link.startshop-status-hover:hover {
+	color: @COLOR_HOVER !important;
+}.startshop-link.startshop-status-hover:focus {
+	color: @COLOR_HOVER !important;
+}.startshop-link.startshop-status-focus {
+	color: @COLOR_FOCUS !important;
+}.startshop-link.startshop-status-focus:hover {
+	color: @COLOR_FOCUS !important;
+}.startshop-link.startshop-status-focus:focus {
+	color: @COLOR_FOCUS !important;
+}
+
+.startshop-input-box {
+	color: @COLOR_INPUT_TEXT_STANDARD_COLOR !important;
+	background: @COLOR_INPUT_TEXT_STANDARD_BACKGROUND !important;
+}
+
+.startshop-input-text.startshop-input-text-standart {
+	color: @COLOR_INPUT_TEXT_STANDARD_COLOR !important;
+	background: @COLOR_INPUT_TEXT_STANDARD_BACKGROUND !important;
+}
+.startshop-input-textarea.startshop-input-textarea-standart {
+  color: @COLOR_INPUT_TEXT_STANDARD_COLOR !important;
+  background: @COLOR_INPUT_TEXT_STANDARD_BACKGROUND !important;
+}
+.startshop-input-select.startshop-input-select-standart {
+	color: @COLOR_INPUT_TEXT_STANDARD_COLOR !important;
+	background: @COLOR_INPUT_TEXT_STANDARD_BACKGROUND !important;
+}
+
+/* Вкладки */
+.startshop-tabs .tabs .tab.current,
+.startshop-tabs .tabs .tab.ui-state-hover,
+.startshop-tabs .tabs .tab:hover,
+.startshop-tabs .tabs .tab.ui-state-active {
+	border-color: @COLOR !important;
+}
+/** Вкладки **/
+
+.startshop-element-text,
+.bx-filter .bx-filter-popup-result a {
+	color: @COLOR !important;
+}
+.bx-filter .bx-filter-parameters-box.bx-active .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint,
+.bx-filter .bx-filter-parameters-box:hover .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint,
+.bx-filter .bx-filter-parameters-box:focus .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint {
+	color: @COLOR_HOVER !important;
+}
+
+.startshop-element-background,
+.startshop-button-radio input:checked + .selector:before,
+.startshop-button-checkbox input:checked + .selector:before,
+.startshop-catalog .startshop-item .startshop-information .startshop-properties .startshop-property:before,
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property:before,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property:before,
+.startshop-slider-button-small:hover,
+.startshop-slider-button:hover,
+.bx-filter .bx-filter-popup-result.right,
+.bx-filter .bx-ui-slider-pricebar-v,
+.bx-filter .bx-ui-slider-pricebar-vd {
+	background: @COLOR !important;
+}
+
+.startshop-element-border {
+  border-color: @COLOR !important;
+}
+
+.bx-filter .bx-filter-popup-result.right:before {
+	border-right-color: @COLOR !important;
+}
+
+.startshop-catalog .startshop-item .startshop-image-slider > .startshop-list .startshop-image-small.selected .startshop-image-small-wrapper > div > div,
+.startshop-catalog .startshop-item .startshop-image-slider > .startshop-list .startshop-image-small:hover .startshop-image-small-wrapper > div > div {
+	border-color: @COLOR !important;
+}

@@ -1,0 +1,63 @@
+.startshop-profile.personal {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: -12px;
+    margin-bottom: -12px;
+}
+
+.startshop-profile.personal .startshop-button-standart {
+    padding: 14px 24px;
+}
+
+.startshop-profile.personal .startshop-profile-personal {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    width: 50%;
+    float: left;
+}
+
+.startshop-profile.personal .startshop-profile-password {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 50%;
+}
+
+.startshop-profile.personal .startshop-profile-row {
+    display: block;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.startshop-profile.personal .startshop-profile-row-caption {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    padding-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.startshop-profile.personal .startshop-profile-row-input {
+    display: block;
+    width: 100%;
+}
+
+@media all and (max-width: 500px) {
+    .startshop-profile.personal.adaptiv .startshop-profile-password {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .startshop-profile.personal.adaptiv .startshop-profile-personal {
+        display: block;
+        position: relative;
+        padding-right: 20px;
+        width: auto;
+        float: none;
+    }
+}
+

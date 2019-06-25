@@ -1,0 +1,6 @@
+<?
+    $sSectionName = "Каталог";
+    $arDirProperties = Array(
+
+    );
+?>

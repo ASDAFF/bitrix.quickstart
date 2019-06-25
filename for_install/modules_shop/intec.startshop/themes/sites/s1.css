@@ -1,0 +1,157 @@
+.startshop-button.startshop-button-standart {
+  background: #0040e3 !important;
+}
+.startshop-button.startshop-button-standart:hover {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart:focus {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-hover {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-hover:hover {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-hover:focus {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-focus {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-focus:hover {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-standart.startshop-status-focus:focus {
+  background: #176cff !important;
+}
+.startshop-button.startshop-button-gray {
+  background: #ffffff !important;
+  border: 1px solid #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray:hover {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray:focus {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-hover {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-hover:hover {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-hover:focus {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-focus {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-focus:hover {
+  background: #cbcbcb !important;
+}
+.startshop-button.startshop-button-gray.startshop-status-focus:focus {
+  background: #cbcbcb !important;
+}
+.startshop-link {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transition: color;
+  -moz-transition: color;
+  -ms-transition: color;
+  -o-transition: color;
+  transition: color;
+}
+.startshop-link.startshop-link-standart {
+  color: #0040e3 !important;
+}
+.startshop-link.startshop-link-standart:hover {
+  color: #176cff !important;
+}
+.startshop-link.startshop-link-standart:focus {
+  color: #176cff !important;
+}
+.startshop-link.startshop-link-hover-dark {
+  color: #292929 !important;
+}
+.startshop-link.startshop-link-hover-dark:hover {
+  color: #176cff !important;
+}
+.startshop-link.startshop-link-hover-dark:focus {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-hover {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-hover:hover {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-hover:focus {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-focus {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-focus:hover {
+  color: #176cff !important;
+}
+.startshop-link.startshop-status-focus:focus {
+  color: #176cff !important;
+}
+.startshop-input-box {
+  color: #474747 !important;
+  background: #f2f2f2 !important;
+}
+.startshop-input-text.startshop-input-text-standart {
+  color: #474747 !important;
+  background: #f2f2f2 !important;
+}
+.startshop-input-textarea.startshop-input-textarea-standart {
+  color: #474747 !important;
+  background: #f2f2f2 !important;
+}
+.startshop-input-select.startshop-input-select-standart {
+  color: #474747 !important;
+  background: #f2f2f2 !important;
+}
+.startshop-tabs .tabs .tab.current,
+.startshop-tabs .tabs .tab.ui-state-hover,
+.startshop-tabs .tabs .tab:hover,
+.startshop-tabs .tabs .tab.ui-state-active {
+  border-color: #0040e3 !important;
+}
+.startshop-element-text,
+.bx-filter .bx-filter-popup-result a {
+  color: #0040e3 !important;
+}
+.bx-filter .bx-filter-parameters-box.bx-active .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint,
+.bx-filter .bx-filter-parameters-box:hover .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint,
+.bx-filter .bx-filter-parameters-box:focus .bx-filter-parameters-box-title div.bx-filter-parameters-box-hint {
+  color: #176cff !important;
+}
+.startshop-element-background,
+.startshop-button-radio input:checked + .selector:before,
+.startshop-button-checkbox input:checked + .selector:before,
+.startshop-catalog .startshop-item .startshop-information .startshop-properties .startshop-property:before,
+.startshop-catalog .startshop-item .startshop-item_description > .startshop-properties .startshop-property:before,
+.startshop-catalog .startshop-item > .startshop-properties .startshop-property:before,
+.startshop-slider-button-small:hover,
+.startshop-slider-button:hover,
+.bx-filter .bx-filter-popup-result.right,
+.bx-filter .bx-ui-slider-pricebar-v,
+.bx-filter .bx-ui-slider-pricebar-vd {
+  background: #0040e3 !important;
+}
+.startshop-element-border {
+  border-color: #0040e3 !important;
+}
+.bx-filter .bx-filter-popup-result.right:before {
+  border-right-color: #0040e3 !important;
+}
+.startshop-catalog .startshop-item .startshop-image-slider > .startshop-list .startshop-image-small.selected .startshop-image-small-wrapper > div > div,
+.startshop-catalog .startshop-item .startshop-image-slider > .startshop-list .startshop-image-small:hover .startshop-image-small-wrapper > div > div {
+  border-color: #0040e3 !important;
+}

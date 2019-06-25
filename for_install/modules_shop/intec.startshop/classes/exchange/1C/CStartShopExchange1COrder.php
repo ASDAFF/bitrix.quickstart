@@ -1,0 +1,1 @@
+<?class CStartShopExchange1COrder{private $Root = null;public function __construct($oRoot){$this->Root = $oRoot;}}?>

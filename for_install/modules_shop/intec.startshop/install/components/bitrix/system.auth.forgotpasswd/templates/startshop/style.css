@@ -1,0 +1,19 @@
+.startshop-password.forgot {
+    display: block;
+}
+
+.startshop-password.forgot .startshop-password-notify,
+.startshop-password.forgot .startshop-password-description {
+    display: block;
+    color: #898989;
+    padding-bottom: 20px;
+}
+
+.startshop-password.forgot .startshop-password-table {
+    color: #898989;
+    margin-bottom: 20px;
+}
+
+.startshop-password.forgot .startshop-password-table .startshop-input-text {
+    margin-left: 20px;
+}

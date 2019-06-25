@@ -1,0 +1,30 @@
+.startshop-button.to-cart {
+	background: #1a58d7;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}.startshop-button.to-cart:hover {
+	background: #6B8ED6;
+	color: #ffffff;
+}
+
+.startshop-button.to-cart-added {
+	background: #6B8ED6;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}.startshop-button.to-cart-added:hover {
+	color: #ffffff;
+}
+
+ @media all and (max-width: 800px) {
+    .startshop-column-left.adaptiv {
+        float: none !important;
+        width: auto !important;
+ 	}
+
+     .startshop-column-right.adaptiv {
+         float: none !important;
+         width: auto !important;
+     }
+ }

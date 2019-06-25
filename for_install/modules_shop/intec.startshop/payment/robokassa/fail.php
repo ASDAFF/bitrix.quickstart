@@ -1,0 +1,3 @@
+<?
+    return $_REQUEST['InvId'];
+?>

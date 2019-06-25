@@ -1,0 +1,152 @@
+.startshop-catalog .startshop-catalog-section {
+	width:100%;	
+	display:block;
+}
+
+.startshop-catalog .startshop-catalog-section * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:  border-box;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element {
+	position: relative;
+	width: 100%;
+	height: auto;
+	white-space: nowrap;
+	font-size: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element + .startshop-element {
+    border-top: 1px solid #f0f0f0;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element:hover + .startshop-element {
+    border-top: 1px solid transparent;
+}
+
+.startshop-catalog .startshop-catalog-section > .startshop-element:hover {
+    border-color: #f7f7f7;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-name {
+	display: inline-block;
+	vertical-align: middle;
+	width:40%;
+	overflow: hidden;
+	white-space: normal;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: left;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-name div {
+	margin-left: 35px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-name div a {
+	text-decoration: none;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys {
+	display: inline-block;
+	width: 60%;
+    padding-right: 20px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys .startshop-price {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys .startshop-price .startshop-new {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys > .startshop-buy {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys > .min-buttons {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+	width: 35px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys > .startshop-buy .startshop-button {
+	width: 90px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-state-unavailable {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 22px;
+	margin-right: 3px;
+	width: 90px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #797979;
+}
+
+@media all and (max-width: 800px) {
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-name {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-name div {
+		margin-left: 0px;
+		font-size: 18px;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-buys {
+		display: block;
+		width: 100%;
+		text-align: center;
+        padding-right: 0px;
+	}
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-buys > .min-buttons {
+		width: auto;
+	}
+}
+
+@media all and (max-width: 350px) {
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-name {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-name div {
+		margin-left: 0px;
+		font-size: 18px;
+	}
+
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-buys {
+		display: block;
+		width: 100%;
+		text-align: center;
+		white-space: normal;
+	}
+	
+	.startshop-catalog.adaptiv .startshop-catalog-section .startshop-element .startshop-buys > .startshop-buy {
+		display: block;
+		margin: 0 auto;
+		white-space: nowrap;
+		margin-top: 10px;
+	}
+}

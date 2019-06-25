@@ -1,0 +1,63 @@
+.startshop-catalog .startshop-catalog-sections-list.startshop-text {
+	position: relative;
+	display: block;
+	background: transparent;
+	white-space: nowrap;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content {
+	display: block;
+	text-decoration: inherit;	
+	overflow: hidden;
+    height: 135px;
+	min-height: auto;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content a {
+	display: block;
+	text-decoration: none;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content .startshop-text .startshop-name {
+	display: block;
+	text-decoration: underline;
+	overflow: hidden;
+	font-size: 18px;
+	line-height: 24px;
+    max-height: 48px;
+	margin-bottom: 10px;
+	white-space: normal;
+    color: #292929;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content .startshop-text .startshop-description {
+	display: block;
+	text-decoration: inherit;
+	white-space: normal;
+	overflow: hidden;
+	font-size: 12px;
+	line-height: 16px;
+	height: 64px;
+	color: #000;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content .startshop-text .startshop-subsections {
+    display: block;
+    overflow: hidden;
+    height: 72px;
+}
+
+.startshop-catalog .startshop-catalog-sections-list.startshop-text .startshop-element .startshop-content .startshop-text .startshop-subsections .startshop-subsection {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 18px;
+    height: 18px;
+    color: #292929;
+}

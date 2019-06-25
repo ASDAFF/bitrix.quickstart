@@ -1,0 +1,785 @@
+.startshop-column-left {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.startshop-column-right {
+	display: block;
+	float: right;
+	width: 73.5%;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+.startshop-clear {
+    display: block;
+    clear: both;
+}
+
+.startshop-hover-shadow {
+	-webkit-transition: 0.2s;
+	   -moz-transition: 0.2s;
+		-ms-transition: 0.2s;
+		 -o-transition: 0.2s;
+			transition: 0.2s;
+}.startshop-hover-shadow:hover {
+	-webkit-box-shadow: 0px 14px 40px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 14px 40px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 14px 40px 1px rgba(0,0,0,0.2);
+}
+
+.startshop_parent_col {
+	margin: -8px !important;
+}
+.startshop_parent_col:after {
+	content:"" !important;
+	visibility:hidden !important;
+	display:block !important;
+	clear:both !important;
+}
+.startshop_col {
+	padding:8px !important;
+	-moz-box-sizing: border-box !important;
+	-webkit-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+	float:left !important;
+}
+.startshop-100 {
+	width:100% !important; 
+}
+.startshop-50 {
+	width:50% !important;
+}
+.startshop-75 {
+	width:75% !important;
+}
+.startshop-66 {
+	width:66.666666666% !important;
+}
+.startshop-33 {
+	width:33.333333333% !important;
+}
+.startshop-25 {
+	width:25% !important;
+}
+.startshop-20 {
+	width:20% !important;
+}
+.startshop-16 {
+	width:16.66% !important;
+}
+.startshop-100 {
+	width:100% !important;
+}
+@media all and (max-width:1000px) {
+	.adaptiv .startshop-25 {
+		width: 33.33% !important;		
+	}	
+
+	.adaptiv .startshop-20 {
+		width: 25% !important;
+	}
+	.adaptiv .startshop-16 {
+		width:25% !important;
+	}
+}
+@media all and (max-width:600px) {
+	.adaptiv .startshop-25 {
+		width: 50% !important;		
+	}
+	.adaptiv .startshop-20 {
+		width: 50% !important;
+	}
+	.adaptiv .startshop-75 {
+		width:100% !important;
+	}
+    .adaptiv .startshop-66 {
+		width:100% !important;
+	}
+	.adaptiv .startshop-50 {
+		width: 100% !important;
+	}
+	
+	.adaptiv .startshop-33 {
+		width: 50% !important;
+	}
+	.adaptiv .startshop-16 {
+		width:33.33% !important;
+	}
+}
+@media all and (max-width:550px) {
+	.adaptiv .startshop-16 {
+		width:50% !important;
+	}
+}
+@media all and (max-width:400px) {
+	.adaptiv .startshop-25 {
+		width: 100% !important;		
+	}
+	
+	.adaptiv .startshop-20 {
+		width: 100% !important;
+	}
+	
+	.adaptiv .startshop-33 {
+		width: 100% !important;
+	}
+	.adaptiv .startshop-16 {
+		width:100% !important;
+	}
+}
+
+/* Кнопка */
+.startshop-button {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: center;
+	padding: 7px 11px 6px 11px;
+	cursor: pointer;
+	border-radius: 3px;
+	border: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: background-color, border;
+	-moz-transition-property: background-color, border;
+	-ms-transition-property: background-color, border;
+	-o-transition-property: background-color, border;
+	transition-property: background-color, border;
+	-webkit-transition: 0.4s;
+	   -moz-transition: 0.4s;
+		-ms-transition: 0.4s;
+		 -o-transition: 0.4s;
+			transition: 0.4s;
+	color: #fff;
+}.startshop-button:hover {
+	text-decoration: none;
+	color: #fff;
+}.startshop-button:focus {
+	outline: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Выравниватель*/
+.startshop-aligner-vertical {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 0px;
+	overflow: hidden;
+}
+/**Выравниватель**/
+
+/*Изображения*/
+.startshop-image {
+	font-size: 0px !important;
+	text-align: center !important;
+	white-space: nowrap !important;
+}
+
+.startshop-image * {
+	white-space: normal !important;
+	text-align: left !important;
+	font-size: 14px !important;
+}
+
+.startshop-image > img {
+	display: inline-block !important;
+	vertical-align: middle !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+}
+/**Изображения**/
+
+/*Отступы*/
+.startshop-indents-vertical {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}.startshop-indents-vertical.indent-5 {
+	padding-top: 5px;
+}.startshop-indents-vertical.indent-10 {
+	padding-top: 10px;
+}.startshop-indents-vertical.indent-15 {
+	padding-top: 15px;
+}.startshop-indents-vertical.indent-20 {
+	padding-top: 20px;
+}.startshop-indents-vertical.indent-25 {
+	padding-top: 25px;
+}.startshop-indents-vertical.indent-30 {
+	padding-top: 30px;
+}.startshop-indents-vertical.indent-35 {
+	padding-top: 35px;
+}.startshop-indents-vertical.indent-40 {
+	padding-top: 40px;
+}.startshop-indents-vertical.indent-45 {
+	padding-top: 45px;
+}.startshop-indents-vertical.indent-50 {
+	padding-top: 50px;
+}
+
+.startshop-indents-horizontal {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	min-height: 1px;
+	height: 100%;
+}.startshop-indents-horizontal.indent-5 {
+	padding-left: 5px;
+}.startshop-indents-horizontal.indent-10 {
+	padding-left: 10px;
+}.startshop-indents-horizontal.indent-15 {
+	padding-left: 15px;
+}.startshop-indents-horizontal.indent-20 {
+	padding-left: 20px;
+}.startshop-indents-horizontal.indent-25 {
+	padding-left: 25px;
+}.startshop-indents-horizontal.indent-30 {
+	padding-left: 30px;
+}.startshop-indents-horizontal.indent-35 {
+	padding-left: 35px;
+}.startshop-indents-horizontal.indent-40 {
+	padding-left: 40px;
+}.startshop-indents-horizontal.indent-45 {
+	padding-left: 45px;
+}.startshop-indents-horizontal.indent-50 {
+	padding-left: 50px;
+}
+/**Отступы**/
+
+/*Панель сортировки*/
+.startshop-panel-sort {
+    position: relative;
+    display: block;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background: #f7f7f7;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.startshop-panel-sort .sort,
+.startshop-panel-sort .view {
+    display: block;
+    height: 100%;
+    font-size: 0px;
+}
+
+.startshop-panel-sort .sort {
+    float: left;
+    padding-left: 20px;
+}
+
+.startshop-panel-sort .view {
+    float: right;
+    padding-right: 20px;
+}
+
+.startshop-panel-sort .caption {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.startshop-panel-sort .sort .values {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.startshop-panel-sort .sort .values .value {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 3px 7px;
+}
+.startshop-panel-sort .sort .values .value a {
+    text-decoration: none;
+    color: #363636;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+}
+.startshop-panel-sort .sort .values .value a .icon {
+    display: none;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    background: url('../images/startshop.panel.sort.png') no-repeat;
+    background-position: -48px 0px;
+}
+.startshop-panel-sort .sort .values .value:hover,
+.startshop-panel-sort .sort .values .value.ui-state-active {
+    background: #363636;
+    border-radius: 3px;
+	border: none;
+}
+.startshop-panel-sort .sort .values .value:hover a,
+.startshop-panel-sort .sort .values .value.ui-state-active a {
+    color: #fff;
+}
+
+.startshop-panel-sort .sort .values .value.ui-state-active a .icon {
+    display: inline-block;
+}
+.startshop-panel-sort .sort .values .value.ui-state-active a .icon.desc {
+    background-position: -48px 0px;
+}
+.startshop-panel-sort .sort .values .value.ui-state-active a .icon.asc {
+    background-position: -48px -16px;
+}
+
+.startshop-panel-sort .view .views {
+    display: inline-block;
+    vertical-align:  middle;
+}
+
+.startshop-panel-sort .view .views > a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url('../images/startshop.panel.sort.png') no-repeat;
+}
+.startshop-panel-sort .view .views > a.view-text {
+    background-position: -16px 0px;
+}
+.startshop-panel-sort .view .views > a.view-text.ui-state-active,
+.startshop-panel-sort .view .views > a.view-text:hover {
+    background-position: -16px -16px;
+}
+.startshop-panel-sort .view .views > a.view-list {
+    background-position: 0px 0px;
+}
+.startshop-panel-sort .view .views > a.view-list.ui-state-active,
+.startshop-panel-sort .view .views > a.view-list:hover {
+    background-position: 0px -16px;
+}
+.startshop-panel-sort .view .views > a.view-tile {
+    background-position: -32px 0px;
+}
+.startshop-panel-sort .view .views > a.view-tile.ui-state-active,
+.startshop-panel-sort .view .views > a.view-tile:hover {
+    background-position: -32px -16px;
+}
+.startshop-panel-sort .view .views > a.ui-state-active,
+.startshop-panel-sort .view .views > a:hover {
+    border: none;
+}
+.startshop-panel-sort .view .views > a:focus {
+    outline: none;
+	border: none;
+}
+/**Панель сортировки**/
+
+/*Текст*/
+.startshop-text-default {
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+}
+/**Текст**/
+
+/*Кнопки прокрутки*/
+.startshop-slider-button-small,
+.startshop-slider-button {
+	position: relative;
+	border: none;
+	background: transparent;
+	transition: 0.3s;
+	padding: 0px;
+	cursor: pointer;
+}
+.startshop-slider-button-small {
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+}
+.startshop-slider-button {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+}
+.startshop-slider-button-small:hover,
+.startshop-slider-button:hover {
+	background: #1a58d7;
+}
+.startshop-slider-button-small:focus,
+.startshop-slider-button:focus {
+	outline: none;
+}
+
+.startshop-slider-button-small .icon, 
+.startshop-slider-button .icon {
+	position: absolute;
+	
+	background: url('../images/startshop.slider.buttons.png') no-repeat;
+}
+.startshop-slider-button-small .icon {
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+}
+.startshop-slider-button .icon {
+	top: 7px;
+	left: 7px;
+	right: 7px;
+	bottom: 7px;
+}
+
+.startshop-slider-button-small.startshop-slider-button-left .icon,
+.startshop-slider-button.startshop-slider-button-left .icon {
+	background-position: -16px 0px;
+}
+.startshop-slider-button-small.startshop-slider-button-left:hover .icon,
+.startshop-slider-button.startshop-slider-button-left:hover .icon {
+	background-position: -16px -16px;
+}
+
+.startshop-slider-button-small.startshop-slider-button-right .icon,
+.startshop-slider-button.startshop-slider-button-right .icon {
+	background-position: 0px 0px;
+}
+.startshop-slider-button-small.startshop-slider-button-right:hover .icon,
+.startshop-slider-button.startshop-slider-button-right:hover .icon {
+    background-position: 0px -16px;
+}
+/**Кнопки прокрутки**/
+
+/*Радиокнопка*/
+.startshop-button-radio {
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.startshop-button-radio input {
+	display: none;
+}
+
+.startshop-button-radio .selector {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 7px;
+	background: #e9e9e9;
+	margin-right: 4px;
+	border: 1px solid #c9c9c9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.startshop-button-radio input:disabled + .selector,
+.startshop-button-radio:hover .selector {
+	border-color: #b9b9b9;
+	background: #d9d9d9;
+}
+
+.startshop-button-radio input:checked + .selector:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	border-radius: 4px;
+	background: #1a58d7;
+}
+
+.startshop-button-radio .text {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	margin-right: 20px;
+}
+/**Радиокнопка**/
+
+/*Чекбокс*/
+.startshop-button-checkbox {
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.startshop-button-checkbox input {
+	display: none;
+}
+
+.startshop-button-checkbox .selector {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 2px;
+	background: #e9e9e9;
+	margin-right: 4px;
+	border: 1px solid #c9c9c9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.startshop-button-checkbox input:disabled + .selector,
+.startshop-button-checkbox:hover .selector {
+	border-color: #b9b9b9;
+	background: #d9d9d9;
+}
+
+.startshop-button-checkbox input:checked + .selector:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	background: #1a58d7;
+	border-radius: 2px;
+}
+
+.startshop-button-checkbox .text {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	margin-right: 20px;
+}
+/**Чекбокс**/
+
+/* Поле ввода */
+.startshop-input-text {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 14px;
+	border-radius: 6px;
+	border: none;
+	padding: 10px 19px;
+	-webkit-box-shadow: inset 1px 1px 2px #e9e9e9;
+	-moz-box-shadow: inset 1px 1px 2px #e9e9e9;
+	box-shadow: inset 1px 1px 2px #e9e9e9;
+}
+
+.startshop-input-text-standart {
+	background: #e9e9e9;
+	color: #1a1a1a;
+}
+/** Поле ввода **/
+
+/* Поле ввода большое */
+.startshop-input-textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    border: none;
+    padding: 19px 19px;
+	-webkit-box-shadow: inset 1px 1px 2px #e9e9e9;
+	-moz-box-shadow: inset 1px 1px 2px #e9e9e9;
+	box-shadow: inset 1px 1px 2px #e9e9e9;
+}
+
+.startshop-input-textarea-standart {
+    background: #e9e9e9;
+    color: #1a1a1a;
+}
+/** Поле ввода большое **/
+
+/* Поле выбора */
+.startshop-input-select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    border: none;
+    padding: 9px 19px;
+	-webkit-box-shadow: inset 1px 1px 2px #e9e9e9;
+	-moz-box-shadow: inset 1px 1px 2px #e9e9e9;
+	box-shadow: inset 1px 1px 2px #e9e9e9;
+}
+
+.startshop-input-select-standart {
+    background: #e9e9e9;
+    color: #1a1a1a;
+}
+/** Поле выбора **/
+
+/* Поле выбора множественное */
+.startshop-input-multiselect {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 14px;
+	border-radius: 6px;
+	border: none;
+	padding: 9px 9px;
+	-webkit-box-shadow: inset 1px 1px 2px #e9e9e9;
+	-moz-box-shadow: inset 1px 1px 2px #e9e9e9;
+	box-shadow: inset 1px 1px 2px #e9e9e9;
+}
+
+.startshop-input-multiselect-standart {
+	background: #e9e9e9;
+	color: #1a1a1a;
+}
+/** Поле выбора множественное **/
+
+.startshop-input-box {
+	-webkit-box-shadow: inset 1px 1px 3px #e9e9e9;
+	-moz-box-shadow: inset 1px 1px 3px #e9e9e9;
+	box-shadow: inset 1px 1px 3px #e9e9e9;
+}
+
+/*Вкладки*/
+.startshop-tabs .tabs
+{
+	display: block;
+	white-space: nowrap;
+	padding-left: 0px;
+	margin-bottom: 30px;
+	font-size: 0px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.startshop-tabs .tabs .tab {
+	display: inline-block;
+	color: #7a7a7a;
+	cursor: pointer;
+	border: 0px;
+	border-bottom: 2px solid transparent;
+	-webkit-transition-property: background-color, border;
+	-moz-transition-property: background-color, border;
+	-ms-transition-property: background-color, border;
+	-o-transition-property: background-color, border;
+	transition-property: background-color, border;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	margin: 0px 10px;
+}
+
+.startshop-tabs .tabs .tab a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	padding: 7px 0px;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-transition: 0.2s color;
+	-moz-transition: 0.2s color;
+	-ms-transition: 0.2s color;
+	-o-transition: 0.2s color;
+	transition: 0.2s color;
+}
+
+.startshop-tabs .tabs .tab a:focus {
+	outline: none;
+}
+
+.startshop-tabs .tabs .bottom-line {
+	position: absolute;
+	left: 0px;
+	background: #f1f1f1;
+	height: 1px;
+	width: 100%;
+}
+
+.startshop-tabs .tabs .tab.current,
+.startshop-tabs .tabs .tab.ui-state-hover,
+.startshop-tabs .tabs .tab:hover,
+.startshop-tabs .tabs .tab.ui-state-active {
+	color: #000;
+	border-color: #1a58d7;
+}
+
+.startshop-tabs .tabs .tab:focus {
+	outline: none;
+}
+/**Вкладки**/
+
+/* Нумерованое поле */
+.startshop-input-numeric {
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    font-size: 0px;
+    white-space: nowrap;
+}
+
+.startshop-input-numeric .startshop-input-numeric-button {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 12px;
+    color: #1d1d1d;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+    cursor: pointer;
+    padding: 0px 12px;
+}
+.startshop-input-numeric .startshop-input-numeric-button:hover {
+    background: #e6e6e6;
+}
+
+.startshop-input-numeric .startshop-input-numeric-button.startshop-input-numeric-button-left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.startshop-input-numeric .startshop-input-numeric-button.startshop-input-numeric-button-right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.startshop-input-numeric .startshop-input-numeric-text {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    width: 48px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 12px;
+    color: #1d1d1d;
+    padding: 0px 6px;
+}
+/**Нумерованое поле**/

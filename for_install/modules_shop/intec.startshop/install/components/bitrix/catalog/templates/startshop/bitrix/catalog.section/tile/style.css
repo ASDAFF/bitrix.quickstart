@@ -1,0 +1,223 @@
+.startshop-catalog .startshop-catalog-section {
+	position: relative;
+	display:block;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element {
+	height: auto;
+	white-space: nowrap;
+	font-size: 0px;
+	overflow: hidden;
+	border: 1px solid #e8e8e8;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-image-container {
+	position: relative;
+	display: block;
+	height: auto;
+	margin: 12px;
+	vertical-align: top;
+	overflow: hidden;
+	text-align: center;
+	font-size: 0px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-image-container .startshop-image-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-image-container .startshop-image-wrapper .startshop-image-wrapper-wrapper {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+    top: 0px;
+    left: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-information {
+	display: block;
+	vertical-align: top;
+	overflow: hidden;
+	white-space: normal;
+	text-align: left;
+	font-size: 14px;
+	margin: 12px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-information .startshop-name {
+	display: block;
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: none;
+	height: 32px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys {
+	position: relative;
+	right: 0px;
+	text-align: left;
+	white-space: nowrap;
+	margin: 12px;
+	border-top: 1px solid #e8e8e8;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys .startshop-price {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	text-align: left;
+	margin-top: 15px;
+	white-space: nowrap;
+	height: 36px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-buys .startshop-price .startshop-new {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .buys > .startshop-buy {
+	position: absolute;
+	display: block;
+	right: 0px;
+	top: -2px;
+}
+
+.startshop-catalog .startshop-catalog-section .startshop-element .startshop-state-unavailable {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin-top: 19px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #797979;
+}
+
+//
+.startshop-catalog .startshop-catalog-section .startshop-element {
+margin-left:8px;
+margin-right:8px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .marks {
+	top: 12px;
+	left: 12px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element:first-child {
+	margin-left:0!important;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element:nth-child(4n+1) {
+	margin-left:0;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .image_product {
+	width: 68%;
+	padding-top: 68%;
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	position: static;
+	outline:0;
+	margin-bottom:10px;
+	margin-top: 15px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element.image_product:hover {
+	-webkit-filter: contrast(110%);
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .name_product {
+	overflow:hidden;	
+	width: 88%;
+	margin:0 auto;
+	line-height:18px;
+	border-bottom:1px solid #e8e8e8;
+	margin-top:30px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block {		
+	width:100%;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block .old_price {
+	float:right;
+	line-height: 28px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block .old_price, 
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block .old_price span{
+	color:#2d2d2d;
+	font-size:12px;
+	font-weight:normal;
+	text-decoration:line-through;
+	
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .name_product a.name {
+	display: block;
+	font-size: 15px;
+	font-weight:normal;
+	margin-bottom: 10px;
+	height:37px;
+	overflow:hidden;
+	display:block;
+	text-decoration:none;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .name_product a.name_group {
+	display: block;
+	font-size:11px;
+	line-height: 14px;
+	height: 14px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	color:#b4b4b4;
+	text-decoration:none;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element {
+	padding-top: 23px;
+	position:relative;
+	margin-bottom:14px;
+	padding-bottom:8px;	
+	border:1px solid #e8e8e8;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .name_product a:hover{
+	color:#444648;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .buys {
+	position: relative;
+	width: 88%;
+	margin:15px auto;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .min-buttons {
+	position:absolute;
+	top:12px;
+	right: 12px;
+	margin: -4px 0px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .min-buttons .min-button {
+	margin: 4px 0px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block {
+	margin-left:0;
+	float:left;
+	height:25px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block .new_price {
+	font-size:17px;
+	font-weight:bold;
+	color:#3b3b43;	
+	border-radius:3px;
+	float:left;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .price_block .new_price span { 
+	font-size:17px;
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .buy_block {	
+	float:right;    
+}
+.startshop-catalog .startshop-catalog-section .startshop-element .big_buy{
+	width:100%;
+} 

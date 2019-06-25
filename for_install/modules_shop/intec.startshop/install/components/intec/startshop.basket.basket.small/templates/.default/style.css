@@ -1,0 +1,50 @@
+.startshop-basket-small.default {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	padding-left: 10px;
+}
+
+.startshop-basket-small.default.startshop-basket-small-with-count {
+	padding-left: 11px;
+	padding-top: 9px;
+}
+
+.startshop-basket-small .startshop-basket-small-count {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	margin-left: -11px;
+	margin-top: -9px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	text-align: center;
+	font-size: 0px;
+}
+
+.startshop-basket-small .startshop-basket-small-count .startshop-basket-small-text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 11px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.startshop-basket-small .startshop-basket-small-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+    height: 20px;
+	background: url('images/startshop.basket.icon.png') no-repeat;
+}
+
+.startshop-basket-small .startshop-basket-small-text-total {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 5px;
+	color: inherit;
+}

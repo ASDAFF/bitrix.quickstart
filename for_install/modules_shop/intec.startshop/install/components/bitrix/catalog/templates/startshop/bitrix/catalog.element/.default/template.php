@@ -90,7 +90,7 @@
 		</div>
 		<?
 		$properties = $arResult['DISPLAY_PROPERTIES'];
-		unset($properties['ARTICLE']); // Óäàëÿåì àðòèêóë		
+		unset($properties['ARTICLE']); // Ð£Ð´Ð°Ð»ÑÐµÐ¼ Ð°Ñ€Ñ‚Ð¸ÐºÑƒÐ»		
 		?>
 		<?if ($options['CATALOG_PRODUCT_VIEW']['ACTIVE_VALUE'] == 'WITH_TABS'):?>
 		<div class="startshop-indents-vertical indent-50"></div>

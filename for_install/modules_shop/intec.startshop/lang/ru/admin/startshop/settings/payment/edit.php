@@ -1,27 +1,27 @@
 <?
-    $MESS['title.add'] = "Äîáàâèòü ñïîñîá îïëàòû";
-    $MESS['title.edit'] = "Ðåäàêòèðîâàíèå ñïîñîáà îïëàòû";
-    $MESS['title.buttons.back'] = "Ñïèñîê";
-    $MESS['title.buttons.add'] = "Äîáàâèòü";
-    $MESS['tabs.common'] = "Ñïîñîá îïëàòû";
-    $MESS['tabs.handler'] = "Ïàðàìåòðû îáðàáîò÷èêà";
+    $MESS['title.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['title.edit'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+    $MESS['title.buttons.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['tabs.common'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['tabs.handler'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ°";
 
-    $MESS['messages.warning.empty_fields'] = "Íå çàïîëíåíû ñëåäóþùèå ïîëÿ: #FIELDS#";
-    $MESS['messages.warning.exists'] = "Ñïîñîá îïëàòû ñ òàêèì êîäîì óæå ñóùåñòâóåò!";
+    $MESS['messages.warning.empty_fields'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ Ð¿Ð¾Ð»Ñ: #FIELDS#";
+    $MESS['messages.warning.exists'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ ÐºÐ¾Ð´Ð¾Ð¼ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.name'] = "Íàçâàíèå";
-    $MESS['fields.sort'] = "Ñîðòèðîâêà";
-    $MESS['fields.code'] = "Êîä";
-    $MESS['fields.currency'] = "Âàëþòà îïëàòû";
-    $MESS['fields.active'] = "Àêòèâíîñòü";
-    $MESS['fields.handler'] = "Îáðàáîò÷èê";
-    $MESS['fields.handler.empty'] = "Íåò";
+    $MESS['fields.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['fields.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['fields.code'] = "ÐšÐ¾Ð´";
+    $MESS['fields.currency'] = "Ð’Ð°Ð»ÑŽÑ‚Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['fields.active'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS['fields.handler'] = "ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸Ðº";
+    $MESS['fields.handler.empty'] = "ÐÐµÑ‚";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 
-    $MESS['fields.handler.caption'] = "Ïàðàìåòðû îáðàáîò÷èêà";
-    $MESS['fields.language.caption'] = "ßçûêîâûå ïàðàìåòðû";
-    $MESS['fields.language.language'] = "ßçûê";
-    $MESS['fields.language.name'] = "Íàçâàíèå";
+    $MESS['fields.handler.caption'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¾Ð±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐ°";
+    $MESS['fields.language.caption'] = "Ð¯Ð·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹";
+    $MESS['fields.language.language'] = "Ð¯Ð·Ñ‹Ðº";
+    $MESS['fields.language.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
 ?>

@@ -1,5 +1,5 @@
 <?
-    $MESS['SOD_COMPONENT_NAME'] = "Çàêàç äåòàëüíî";
-    $MESS['SOD_COMPONENT_DESCRIPTION'] = "Êîìïîíåíò, îòîáðàæàþùèé äåòàëüíóþ èíôîðìàöèþ î çàêàçå";
-    $MESS['SOD_MODULE_NAME'] = "Ìàãàçèí";
+    $MESS['SOD_COMPONENT_NAME'] = "Ð—Ð°ÐºÐ°Ð· Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾";
+    $MESS['SOD_COMPONENT_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚, Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°ÑŽÑ‰Ð¸Ð¹ Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ Ð¾ Ð·Ð°ÐºÐ°Ð·Ðµ";
+    $MESS['SOD_MODULE_NAME'] = "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 ?>

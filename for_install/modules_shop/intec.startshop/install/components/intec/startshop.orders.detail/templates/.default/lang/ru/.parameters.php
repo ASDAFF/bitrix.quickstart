@@ -1,3 +1,3 @@
 <?
-    $MESS['SOD_DEFAULT_USE_ADAPTABILITY'] = 'Èñïîëüçîâàòü àäàïòèâíîñòü';
+    $MESS['SOD_DEFAULT_USE_ADAPTABILITY'] = 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ';
 ?>

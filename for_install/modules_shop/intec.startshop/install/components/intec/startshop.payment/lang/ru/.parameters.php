@@ -1,7 +1,7 @@
 <?
-    $MESS['SP_REQUEST_VARIABLE_ACTION'] = "Ïåðåìåííàÿ, â êîòîðîé ïåðåäàåòñÿ äåéñòâèå";
-    $MESS['SP_REQUEST_VARIABLE_PAYMENT'] = "Ïåðåìåííàÿ, â êîòîðîé ïåðåäàåòñÿ êîä ñïîñîáà îïëàòû";
-    $MESS['SP_REQUEST_VARIABLE_VALUE_RESULT'] = "Çíà÷åíèå ïåðåìåííîé äåéñòâèÿ Result";
-    $MESS['SP_REQUEST_VARIABLE_VALUE_SUCCESS'] = "Çíà÷åíèå ïåðåìåííîé äåéñòâèÿ Success";
-    $MESS['SP_REQUEST_VARIABLE_VALUE_FAIL'] = "Çíà÷åíèå ïåðåìåííîé äåéñòâèÿ Fail";
+    $MESS['SP_REQUEST_VARIABLE_ACTION'] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¿ÐµÑ€ÐµÐ´Ð°ÐµÑ‚ÑÑ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ";
+    $MESS['SP_REQUEST_VARIABLE_PAYMENT'] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¿ÐµÑ€ÐµÐ´Ð°ÐµÑ‚ÑÑ ÐºÐ¾Ð´ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['SP_REQUEST_VARIABLE_VALUE_RESULT'] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Result";
+    $MESS['SP_REQUEST_VARIABLE_VALUE_SUCCESS'] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Success";
+    $MESS['SP_REQUEST_VARIABLE_VALUE_FAIL'] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ Fail";
 ?>

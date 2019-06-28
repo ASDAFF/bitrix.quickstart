@@ -1,45 +1,45 @@
 <?
-    $MESS['title'] = "Ïîëÿ ôîðìû #FORM#";
-    $MESS['title.buttons.back'] = "Ñïèñîê ôîðì";
+    $MESS['title'] = "ÐŸÐ¾Ð»Ñ Ñ„Ð¾Ñ€Ð¼Ñ‹ #FORM#";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ„Ð¾Ñ€Ð¼";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.active'] = "Àêòèâíîñòü";
-    $MESS['table.header.sort'] = "Ñîðòèðîâêà";
-    $MESS['table.header.name'] = "Íàçâàíèå";
-    $MESS['table.header.code'] = "Êîä";
-    $MESS['table.header.required'] = "Îáÿçàòåëüíîå";
-    $MESS['table.header.readonly'] = "Òîëüêî äëÿ ÷òåíèÿ";
-    $MESS['table.header.type'] = "Òèï";
+    $MESS['table.header.active'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['table.header.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['table.header.code'] = "ÐšÐ¾Ð´";
+    $MESS['table.header.required'] = "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ";
+    $MESS['table.header.readonly'] = "Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ñ‡Ñ‚ÐµÐ½Ð¸Ñ";
+    $MESS['table.header.type'] = "Ð¢Ð¸Ð¿";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.activate'] = "Àêòèâèðîâàòü";
-    $MESS['actions.deactivate'] = "Äåàêòèâèðîâàòü";
-    $MESS['actions..require'] = "Ñäåëàòü îáÿçàòåëüíûì";
-    $MESS['actions.unrequire'] = "Ñäåëàòü íåîáÿçàòåëüíûì";
-    $MESS['actions.readonly'] = "Ðàçðåøèòü òîëüêî ÷òåíèå";
-    $MESS['actions.unreadonly'] = "Ðàçðåøèòü èçìåíåíèå";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.activate'] = "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions..require'] = "Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼";
+    $MESS['actions.unrequire'] = "Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼";
+    $MESS['actions.readonly'] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ";
+    $MESS['actions.unreadonly'] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.activate'] = "àêòèâèðîâàòü";
-    $MESS['actions.group.deactivate'] = "äåàêòèâèðîâàòü";
-    $MESS['actions.group.require'] = "ñäåëàòü îáÿçàòåëüíûìè";
-    $MESS['actions.group.unrequire'] = "ñäåëàòü íåîáÿçàòåëüíûìè";
-    $MESS['actions.group.readonly'] = "ðàçðåøèòü òîëüêî ÷òåíèå";
-    $MESS['actions.group.unreadonly'] = "ðàçðåøèòü èçìåíåíèå";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.activate'] = "Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.group.deactivate'] = "Ð´ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.group.require'] = "ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼Ð¸";
+    $MESS['actions.group.unrequire'] = "ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼Ð¸";
+    $MESS['actions.group.readonly'] = "Ñ€Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ";
+    $MESS['actions.group.unreadonly'] = "Ñ€Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ";
 
-    $MESS['nav.title'] = "Ïîëÿ ôîðìû";
+    $MESS['nav.title'] = "ÐŸÐ¾Ð»Ñ Ñ„Ð¾Ñ€Ð¼Ñ‹";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 
-    $MESS['types.text'] = "[text] Òåêñòîâîå ïîëå";
-    $MESS['types.textarea'] = "[textarea] Áîëüøîå òåêñòîâîå ïîëå";
-    $MESS['types.radio'] = "[radio] Ñïèñîê ðàäèîêíîïîê";
-    $MESS['types.checkbox'] = "[checkbox] ×åêáîêñ";
-    $MESS['types.select'] = "[select] Ñïèñîê";
-    $MESS['types.multiselect'] = "[multiselect] Ñïèñîê ñ ìíîæåñòâåííûì âûáîðîì";
-    $MESS['types.password'] = "[password] Ïàðîëü";
-    $MESS['types.hidden'] = "[hidden] Ñêðûòîå ïîëå";
+    $MESS['types.text'] = "[text] Ð¢ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ðµ Ð¿Ð¾Ð»Ðµ";
+    $MESS['types.textarea'] = "[textarea] Ð‘Ð¾Ð»ÑŒÑˆÐ¾Ðµ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ðµ Ð¿Ð¾Ð»Ðµ";
+    $MESS['types.radio'] = "[radio] Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð´Ð¸Ð¾ÐºÐ½Ð¾Ð¿Ð¾Ðº";
+    $MESS['types.checkbox'] = "[checkbox] Ð§ÐµÐºÐ±Ð¾ÐºÑ";
+    $MESS['types.select'] = "[select] Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+    $MESS['types.multiselect'] = "[multiselect] Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¼ Ð²Ñ‹Ð±Ð¾Ñ€Ð¾Ð¼";
+    $MESS['types.password'] = "[password] ÐŸÐ°Ñ€Ð¾Ð»ÑŒ";
+    $MESS['types.hidden'] = "[hidden] Ð¡ÐºÑ€Ñ‹Ñ‚Ð¾Ðµ Ð¿Ð¾Ð»Ðµ";
 ?>

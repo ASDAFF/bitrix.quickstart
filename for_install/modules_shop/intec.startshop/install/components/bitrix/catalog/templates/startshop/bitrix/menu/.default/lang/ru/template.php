@@ -1,4 +1,4 @@
 <?// PHPLOCKITOPT NOENCODE?><?
-$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Доступ запрещен";
-$MESS ['MENU_SEE_CATALOG'] = "смотреть каталог";
+$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰РµРЅ";
+$MESS ['MENU_SEE_CATALOG'] = "СЃРјРѕС‚СЂРµС‚СЊ РєР°С‚Р°Р»РѕРі";
 ?>

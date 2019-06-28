@@ -1,9 +1,9 @@
 <?
-    $MESS['USE_ADAPTABILITY'] = 'Èñïîëüçîâàòü àäàïòèâíîñòü';
-    $MESS['AUTHORIZE_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà àâòîðèçàöèè (bitrix:system.auth.authorize)';
-    $MESS['PROFILE_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà ïðîôèëÿ (bitrix:main.profile)';
-    $MESS['REGISTER_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà ðåãèñòðàöèè (bitrix:system.auth.registration)';
-    $MESS['REGISTER_CONFIRM_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà ïîäòâåðæäåíèÿ ðåãèñòðàöèè (bitrix:system.auth.confirmation)';
-    $MESS['PASSWORD_CHANGE_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà ñìåíû ïàðîëÿ (bitrix:system.auth.changepasswd)';
-    $MESS['PASSWORD_FORGOT_TEMPLATE'] = 'Øàáëîí êîìïîíåíòà âîññòàíîâëåíèÿ ïàðîëÿ (bitrix:system.auth.forgotpasswd)';
+    $MESS['USE_ADAPTABILITY'] = 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ';
+    $MESS['AUTHORIZE_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ð¸ (bitrix:system.auth.authorize)';
+    $MESS['PROFILE_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð¿Ñ€Ð¾Ñ„Ð¸Ð»Ñ (bitrix:main.profile)';
+    $MESS['REGISTER_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ (bitrix:system.auth.registration)';
+    $MESS['REGISTER_CONFIRM_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð¿Ð¾Ð´Ñ‚Ð²ÐµÑ€Ð¶Ð´ÐµÐ½Ð¸Ñ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ (bitrix:system.auth.confirmation)';
+    $MESS['PASSWORD_CHANGE_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° ÑÐ¼ÐµÐ½Ñ‹ Ð¿Ð°Ñ€Ð¾Ð»Ñ (bitrix:system.auth.changepasswd)';
+    $MESS['PASSWORD_FORGOT_TEMPLATE'] = 'Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð²Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ (bitrix:system.auth.forgotpasswd)';
 ?>

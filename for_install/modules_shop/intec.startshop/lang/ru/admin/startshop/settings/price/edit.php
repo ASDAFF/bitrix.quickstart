@@ -1,25 +1,25 @@
 <?
-    $MESS['title.add'] = "Добавить тип цены";
-    $MESS['title.edit'] = "Редактирование типа цены";
-    $MESS['title.buttons.back'] = "Список";
-    $MESS['title.buttons.add'] = "Добавить";
-    $MESS['tabs.common'] = "Тип цены";
+    $MESS['title.add'] = "Р”РѕР±Р°РІРёС‚СЊ С‚РёРї С†РµРЅС‹";
+    $MESS['title.edit'] = "Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ С‚РёРїР° С†РµРЅС‹";
+    $MESS['title.buttons.back'] = "РЎРїРёСЃРѕРє";
+    $MESS['title.buttons.add'] = "Р”РѕР±Р°РІРёС‚СЊ";
+    $MESS['tabs.common'] = "РўРёРї С†РµРЅС‹";
 
-    $MESS['messages.warning.empty_fields'] = "Не заполнены следующие поля: #FIELDS#";
-    $MESS['messages.warning.exists'] = "Тип цены с таким кодом уже существует!";
+    $MESS['messages.warning.empty_fields'] = "РќРµ Р·Р°РїРѕР»РЅРµРЅС‹ СЃР»РµРґСѓСЋС‰РёРµ РїРѕР»СЏ: #FIELDS#";
+    $MESS['messages.warning.exists'] = "РўРёРї С†РµРЅС‹ СЃ С‚Р°РєРёРј РєРѕРґРѕРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
 
-    $MESS['messages.notify.added'] = "Тип цены успешно добавлен!";
-    $MESS['messages.notify.saved'] = "Тип цены успешно изменен!";
+    $MESS['messages.notify.added'] = "РўРёРї С†РµРЅС‹ СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅ!";
+    $MESS['messages.notify.saved'] = "РўРёРї С†РµРЅС‹ СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅРµРЅ!";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.code'] = "Код";
-    $MESS['fields.sort'] = "Сортировка";
-    $MESS['fields.active'] = "Активность";
-    $MESS['fields.base'] = "Базовый тип";
-    $MESS['fields.groups'] = "Группы пользователей";
-    $MESS['fields.groups.description'] = "Тип цен будет доступен только для выбранных групп в поле <b>Группы пользователей</b>, если <b>не будет выбрано</b> ни одной <b>группы</b>, то тип цены будет <b>доступен всем пользователям</b>.";
-    $MESS['fields.group.not_selected'] = "(не выбрано)";
-    $MESS['fields.language.caption'] = "Языковые настройки";
-    $MESS['fields.language.language'] = "Язык";
-    $MESS['fields.language.name'] = "Название";
+    $MESS['fields.code'] = "РљРѕРґ";
+    $MESS['fields.sort'] = "РЎРѕСЂС‚РёСЂРѕРІРєР°";
+    $MESS['fields.active'] = "РђРєС‚РёРІРЅРѕСЃС‚СЊ";
+    $MESS['fields.base'] = "Р‘Р°Р·РѕРІС‹Р№ С‚РёРї";
+    $MESS['fields.groups'] = "Р“СЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№";
+    $MESS['fields.groups.description'] = "РўРёРї С†РµРЅ Р±СѓРґРµС‚ РґРѕСЃС‚СѓРїРµРЅ С‚РѕР»СЊРєРѕ РґР»СЏ РІС‹Р±СЂР°РЅРЅС‹С… РіСЂСѓРїРї РІ РїРѕР»Рµ <b>Р“СЂСѓРїРїС‹ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№</b>, РµСЃР»Рё <b>РЅРµ Р±СѓРґРµС‚ РІС‹Р±СЂР°РЅРѕ</b> РЅРё РѕРґРЅРѕР№ <b>РіСЂСѓРїРїС‹</b>, С‚Рѕ С‚РёРї С†РµРЅС‹ Р±СѓРґРµС‚ <b>РґРѕСЃС‚СѓРїРµРЅ РІСЃРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏРј</b>.";
+    $MESS['fields.group.not_selected'] = "(РЅРµ РІС‹Р±СЂР°РЅРѕ)";
+    $MESS['fields.language.caption'] = "РЇР·С‹РєРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";
+    $MESS['fields.language.language'] = "РЇР·С‹Рє";
+    $MESS['fields.language.name'] = "РќР°Р·РІР°РЅРёРµ";
 ?>

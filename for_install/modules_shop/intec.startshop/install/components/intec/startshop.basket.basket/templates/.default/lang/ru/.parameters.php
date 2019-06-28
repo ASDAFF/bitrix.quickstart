@@ -1,8 +1,8 @@
 <?
-    $MESS["SBB_DEFAULT_USE_ADAPTABILITY"] = "Èñïîëüçîâàòü àäàïòèâíîñòü";
-    $MESS["SBB_DEFAULT_USE_ITEMS_PICTURES"] = "Âûâîäèòü èçîáðàæåíèÿ òîâàðîâ";
-    $MESS["SBB_DEFAULT_USE_BUTTON_CLEAR"] = "Îòîáðàæàòü êíîïêó î÷èñòêè êîðçèíû";
-    $MESS["SBB_DEFAULT_USE_BUTTON_ORDER"] = "Îòîáðàæàòü êíîïêó îôîðìëåíèÿ çàêàçà";
-    $MESS["SBB_DEFAULT_URL_ORDER"] = "Ñòðàíèöà îôîðìëåíèÿ çàêàçà";
-    $MESS["SBB_DEFAULT_USE_SUM_FIELD"] = "Îòîáðàæàòü ïîëå ñ îáùåé ñóììîé";
+    $MESS["SBB_DEFAULT_USE_ADAPTABILITY"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS["SBB_DEFAULT_USE_ITEMS_PICTURES"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
+    $MESS["SBB_DEFAULT_USE_BUTTON_CLEAR"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¾Ñ‡Ð¸ÑÑ‚ÐºÐ¸ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹";
+    $MESS["SBB_DEFAULT_USE_BUTTON_ORDER"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS["SBB_DEFAULT_URL_ORDER"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS["SBB_DEFAULT_USE_SUM_FIELD"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»Ðµ Ñ Ð¾Ð±Ñ‰ÐµÐ¹ ÑÑƒÐ¼Ð¼Ð¾Ð¹";
 ?>

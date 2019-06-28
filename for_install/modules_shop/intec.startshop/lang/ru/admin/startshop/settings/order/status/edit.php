@@ -1,26 +1,26 @@
 <?
-    $MESS['title.add'] = "Äîáàâèòü ñòàòóñ çàêàçà";
-    $MESS['title.edit'] = "Ðåäàêòèðîâàíèå ñòàòóñà çàêàçà";
-    $MESS['title.buttons.back'] = "Ñïèñîê";
-    $MESS['title.buttons.add'] = "Äîáàâèòü";
-    $MESS['tabs.common'] = "Ñòàòóñ çàêàçà";
+    $MESS['title.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['title.edit'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚Ð°Ñ‚ÑƒÑÐ° Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+    $MESS['title.buttons.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['tabs.common'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð°";
 
-    $MESS['messages.warning.empty_fields'] = "Íå çàïîëíåíû ñëåäóþùèå ïîëÿ: #FIELDS#";
-    $MESS['messages.warning.add_error'] = "Îøèáêà äîáàâëåíèÿ ñòàòóñà!";
-    $MESS['messages.warning.exists'] = "Ñòàòóñ ñ òàêèì êîäîì óæå ñóùåñòâóåò!";
+    $MESS['messages.warning.empty_fields'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ Ð¿Ð¾Ð»Ñ: #FIELDS#";
+    $MESS['messages.warning.add_error'] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÑ‚Ð°Ñ‚ÑƒÑÐ°!";
+    $MESS['messages.warning.exists'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ ÐºÐ¾Ð´Ð¾Ð¼ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 
-    $MESS['messages.notify.added'] = "Ñòàòóñ çàêàçà óñïåøíî äîáàâëåí!";
-    $MESS['messages.notify.saved'] = "Ñòàòóñ çàêàçà óñïåøíî èçìåíåí!";
+    $MESS['messages.notify.added'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½!";
+    $MESS['messages.notify.saved'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½!";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.code'] = "Êîä";
-    $MESS['fields.sort'] = "Ñîðòèðîâêà";
-    $MESS['fields.can_pay'] = "Çàêàç ìîæíî îïëàòèòü";
-    $MESS['fields.can_pay.description'] = "Åñëè âûáðàí äàííûé ñòàòóñ, çàêàç åùå íå îïëà÷åí è âûáðàí ñïîñîá îïëàòû, ñ ïîìîùüþ êîòîðîãî ìîæíî îïëàòèòü ñ ñàéòà, òî ïîëüçîâàòåëü ñìîæåò îïëàòèòü äàííûé çàêàç.";
-    $MESS['fields.site'] = "Ñàéò";
-    $MESS['fields.default'] = "Ïî óìîë÷àíèþ";
+    $MESS['fields.code'] = "ÐšÐ¾Ð´";
+    $MESS['fields.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['fields.can_pay'] = "Ð—Ð°ÐºÐ°Ð· Ð¼Ð¾Ð¶Ð½Ð¾ Ð¾Ð¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ";
+    $MESS['fields.can_pay.description'] = "Ð•ÑÐ»Ð¸ Ð²Ñ‹Ð±Ñ€Ð°Ð½ Ð´Ð°Ð½Ð½Ñ‹Ð¹ ÑÑ‚Ð°Ñ‚ÑƒÑ, Ð·Ð°ÐºÐ°Ð· ÐµÑ‰Ðµ Ð½Ðµ Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½ Ð¸ Ð²Ñ‹Ð±Ñ€Ð°Ð½ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹, Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð¼Ð¾Ð¶Ð½Ð¾ Ð¾Ð¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ Ñ ÑÐ°Ð¹Ñ‚Ð°, Ñ‚Ð¾ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ ÑÐ¼Ð¾Ð¶ÐµÑ‚ Ð¾Ð¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð·Ð°ÐºÐ°Ð·.";
+    $MESS['fields.site'] = "Ð¡Ð°Ð¹Ñ‚";
+    $MESS['fields.default'] = "ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
 
-    $MESS['fields.language.caption'] = "ßçûêîâûå íàñòðîéêè";
-    $MESS['fields.language.language'] = "ßçûê";
-    $MESS['fields.language.name'] = "Íàçâàíèå";
+    $MESS['fields.language.caption'] = "Ð¯Ð·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+    $MESS['fields.language.language'] = "Ð¯Ð·Ñ‹Ðº";
+    $MESS['fields.language.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
 ?>

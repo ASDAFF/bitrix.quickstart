@@ -1,25 +1,25 @@
 <?
-    $MESS['title.add'] = "Äîáàâèòü âåá ôîðìó";
-    $MESS['title.edit'] = "Ðåäàêòèðîâàíèå âåá ôîðìû";
-    $MESS['title.buttons.back'] = "Ñïèñîê";
-    $MESS['title.buttons.add'] = "Äîáàâèòü";
-    $MESS['tabs.common'] = "Âåá ôîðìà";
+    $MESS['title.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð²ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñƒ";
+    $MESS['title.edit'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð²ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+    $MESS['title.buttons.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['tabs.common'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ð°";
 
-    $MESS['messages.warning.empty_fields'] = "Íå çàïîëíåíû ñëåäóþùèå ïîëÿ: #FIELDS#";
-    $MESS['messages.warning.exists'] = "Âåá ôîðìà ñ òàêèì êîäîì óæå ñóùåñòâóåò!";
+    $MESS['messages.warning.empty_fields'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ Ð¿Ð¾Ð»Ñ: #FIELDS#";
+    $MESS['messages.warning.exists'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ð° Ñ Ñ‚Ð°ÐºÐ¸Ð¼ ÐºÐ¾Ð´Ð¾Ð¼ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 
-    $MESS['messages.notify.added'] = "Âåá ôîðìà óñïåøíî äîáàâëåíà!";
-    $MESS['messages.notify.saved'] = "Âåá ôîðìà óñïåøíî èçìåíåíà!";
+    $MESS['messages.notify.added'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð°!";
+    $MESS['messages.notify.saved'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð°!";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.code'] = "Êîä";
-    $MESS['fields.sort'] = "Ñîðòèðîâêà";
-    $MESS['fields.site'] = "Ñàéòû";
-    $MESS['fields.use_post'] = "Îòïðàâëÿòü ðåçóëüòàòû íà ýë. ïî÷òó";
-    $MESS['fields.use_captcha'] = "Èñïîëüçîâàòü ïðîâåðî÷íûé êîä";
-    $MESS['fields.language.caption'] = "ßçûêîâûå íàñòðîéêè";
-    $MESS['fields.language.language'] = "ßçûê";
-    $MESS['fields.language.name'] = "Íàçâàíèå";
-    $MESS['fields.language.button'] = "Êíîïêà";
-    $MESS['fields.language.sent'] = "Ñîîáùåíèå ïðè óñïåøíîé îòïðàâêå";
+    $MESS['fields.code'] = "ÐšÐ¾Ð´";
+    $MESS['fields.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['fields.site'] = "Ð¡Ð°Ð¹Ñ‚Ñ‹";
+    $MESS['fields.use_post'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð½Ð° ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ñƒ";
+    $MESS['fields.use_captcha'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð²ÐµÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´";
+    $MESS['fields.language.caption'] = "Ð¯Ð·Ñ‹ÐºÐ¾Ð²Ñ‹Ðµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+    $MESS['fields.language.language'] = "Ð¯Ð·Ñ‹Ðº";
+    $MESS['fields.language.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['fields.language.button'] = "ÐšÐ½Ð¾Ð¿ÐºÐ°";
+    $MESS['fields.language.sent'] = "Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾Ð¹ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐµ";
 ?>

@@ -1,4 +1,3 @@
 <?
-    $MESS['SO_SELECT_EMPTY'] = "(íå âûáðàíî)";
-	$MESS['SOA_SHT'] = 'øò.';
+    $MESS['SO_SELECT_EMPTY'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 ?>

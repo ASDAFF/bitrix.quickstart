@@ -1,7 +1,7 @@
 <?
-    $MESS['SOL_DEFAULT_COLUMN_ID'] = "¹ çàêàçà";
-    $MESS['SOL_DEFAULT_COLUMN_DATE'] = "Äàòà çàêàçà";
-    $MESS['SOL_DEFAULT_COLUMN_STATUS'] = "Ñòàòóñ çàêàçà";
-    $MESS['SOL_DEFAULT_COLUMN_AMOUNT'] = "Ñóììà çàêàçà";
-    $MESS['SOL_DEFAULT_NOTIFY_EMPTY'] = "Çàêàçîâ íåò";
+    $MESS['SOL_DEFAULT_COLUMN_ID'] = "â„– Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['SOL_DEFAULT_COLUMN_DATE'] = "Ð”Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['SOL_DEFAULT_COLUMN_STATUS'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['SOL_DEFAULT_COLUMN_AMOUNT'] = "Ð¡ÑƒÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['SOL_DEFAULT_NOTIFY_EMPTY'] = "Ð—Ð°ÐºÐ°Ð·Ð¾Ð² Ð½ÐµÑ‚";
 ?>

@@ -1,6 +1,6 @@
 <?
-	$MESS['theme_colors.color'] = "Îáùèé öâåò";
-	$MESS['theme_colors.color_dark'] = "Òåìíûé öâåò";
-	$MESS['theme_colors.input_text_standart_color'] = "Öâåò òåêñòà ïîëåé ââîäà";
-	$MESS['theme_colors.input_text_standart_background'] = "Öâåò ôîíà ïîëåé ââîäà";
+	$MESS['theme_colors.color'] = "ÐžÐ±Ñ‰Ð¸Ð¹ Ñ†Ð²ÐµÑ‚";
+	$MESS['theme_colors.color_dark'] = "Ð¢ÐµÐ¼Ð½Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚";
+	$MESS['theme_colors.input_text_standart_color'] = "Ð¦Ð²ÐµÑ‚ Ñ‚ÐµÐºÑÑ‚Ð° Ð¿Ð¾Ð»ÐµÐ¹ Ð²Ð²Ð¾Ð´Ð°";
+	$MESS['theme_colors.input_text_standart_background'] = "Ð¦Ð²ÐµÑ‚ Ñ„Ð¾Ð½Ð° Ð¿Ð¾Ð»ÐµÐ¹ Ð²Ð²Ð¾Ð´Ð°";
 ?>

@@ -1,31 +1,31 @@
 <?
-    $MESS['title'] = "Çàêàçû";
+    $MESS['title'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹";
 
-    $MESS['table.header.id'] = "Íîìåð çàêàçà";
-    $MESS['table.header.user'] = "Ïîëüçîâàòåëü";
-    $MESS['table.header.sid'] = "Ñàéò";
-    $MESS['table.header.status'] = "Ñòàòóñ";
-    $MESS['table.header.delivery'] = "Ñïîñîá äîñòàâêè";
-    $MESS['table.header.payment'] = "Ñïîñîá îïëàòû";
-    $MESS['table.header.payed'] = "Îïëà÷åí";
-    $MESS['table.header.amount'] = "Ñòîèìîñòü";
-    $MESS['table.header.date_create'] = "Äàòà ñîçäàíèÿ";
+    $MESS['table.header.id'] = "ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['table.header.user'] = "ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ";
+    $MESS['table.header.sid'] = "Ð¡Ð°Ð¹Ñ‚";
+    $MESS['table.header.status'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ";
+    $MESS['table.header.delivery'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+    $MESS['table.header.payment'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['table.header.payed'] = "ÐžÐ¿Ð»Ð°Ñ‡ÐµÐ½";
+    $MESS['table.header.amount'] = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.date_create'] = "Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.view'] = "Ïðîñìîòðåòü äåòàëüíóþ èíôîðìàöèþ";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.payed'] = "Óñòàíîâèòü ôëàã îïëàòû";
-    $MESS['actions.unpayed'] = "Óáðàòü ôëàã îïëàòû";
-    $MESS['actions.status'] = "Óñòàíîâèòü ñòàòóñ";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.view'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð´ÐµÑ‚Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸ÑŽ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.payed'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.unpayed'] = "Ð£Ð±Ñ€Ð°Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.status'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.payed'] = "óñòàíîâèòü ôëàã îïëàòû";
-    $MESS['actions.group.unpayed'] = "óáðàòü ôëàã îïëàòû";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.payed'] = "ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.group.unpayed'] = "ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
-    $MESS['nav.title'] = "Çàêàçû";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
+    $MESS['nav.title'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

@@ -1,5 +1,5 @@
 <?
-    $MESS['sections.form'] = 'Ïàðàìåòðû ôîðìû';
-    $MESS['sections.results'] = 'Ðåçóëüòàòû (#COUNT#)';
-    $MESS['sections.fields'] = 'Ïîëÿ (#COUNT#)';
+    $MESS['sections.form'] = 'ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ„Ð¾Ñ€Ð¼Ñ‹';
+    $MESS['sections.results'] = 'Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ (#COUNT#)';
+    $MESS['sections.fields'] = 'ÐŸÐ¾Ð»Ñ (#COUNT#)';
 ?>

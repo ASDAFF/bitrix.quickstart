@@ -1,27 +1,27 @@
 <?
-    $MESS['SO_DEFAULT_SECTIONS_PROPERTIES'] = "Îáùàÿ èíôîðìàöèÿ";
-    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES'] = "Èíôîðìàöèÿ î äîñòàâêå";
-    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES_DELIVERY'] = "Ñïîñîá äîñòàâêè";
-    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES_DELIVERY_FREE'] = "áåñïëàòíî";
-    $MESS['SO_DEFAULT_SECTIONS_PAYMENTS'] = "Èíôîðìàöèÿ îá îïëàòå";
-    $MESS['SO_DEFAULT_SECTIONS_PAYMENTS_PAYMENT'] = "Ñïîñîá îïëàòû";
-    $MESS['SO_DEFAULT_SECTIONS_ITEMS'] = "Ïîçèöèè â çàêàçå";
-    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_NAME'] = "Íàèìåíîâàíèå";
-    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_QUANTITY'] = "Êîëè÷åñòâî";
-    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_PRICE'] = "Öåíà";
-    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_TOTAL'] = "Èòîãî";
-    $MESS['SO_DEFAULT_TOTAL_ITEMS'] = "Ñòîèìîñòü ïîçèöèé";
-    $MESS['SO_DEFAULT_TOTAL_DELIVERY'] = "Ñòîèìîñòü äîñòàâêè";
-    $MESS['SO_DEFAULT_TOTAL'] = "Îáùàÿ ñòîèìîñòü";
+    $MESS['SO_DEFAULT_SECTIONS_PROPERTIES'] = "ÐžÐ±Ñ‰Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ";
+    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐµ";
+    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES_DELIVERY'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+    $MESS['SO_DEFAULT_SECTIONS_DELIVERIES_DELIVERY_FREE'] = "Ð±ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð¾";
+    $MESS['SO_DEFAULT_SECTIONS_PAYMENTS'] = "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ";
+    $MESS['SO_DEFAULT_SECTIONS_PAYMENTS_PAYMENT'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['SO_DEFAULT_SECTIONS_ITEMS'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ Ð² Ð·Ð°ÐºÐ°Ð·Ðµ";
+    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_NAME'] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_QUANTITY'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_PRICE'] = "Ð¦ÐµÐ½Ð°";
+    $MESS['SO_DEFAULT_SECTIONS_ITEMS_COLUMN_TOTAL'] = "Ð˜Ñ‚Ð¾Ð³Ð¾";
+    $MESS['SO_DEFAULT_TOTAL_ITEMS'] = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹";
+    $MESS['SO_DEFAULT_TOTAL_DELIVERY'] = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+    $MESS['SO_DEFAULT_TOTAL'] = "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ";
 
-    $MESS['SO_DEFAULT_BUTTONS_ORDER'] = "Çàâåðøèòü îôîðìëåíèå";
-    $MESS['SO_DEFAULT_BUTTONS_BASKET'] = "Âåðíóòüñÿ â êîðçèíó";
+    $MESS['SO_DEFAULT_BUTTONS_ORDER'] = "Ð—Ð°Ð²ÐµÑ€ÑˆÐ¸Ñ‚ÑŒ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ";
+    $MESS['SO_DEFAULT_BUTTONS_BASKET'] = "Ð’ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
 
-    $MESS['SO_DEFAULT_ERRORS_DELIVERY_EMPTY'] = "Íå çàïîëíåíà èíôîðìàöèÿ î äîñòàâêå!";
-    $MESS['SO_DEFAULT_ERRORS_PAYMENT_EMPTY'] = "Íå çàïîëíåíà èíôîðìàöèÿ îá îïëàòå!";
-    $MESS['SO_DEFAULT_ERRORS_PROPERTIES_EMPTY'] = "Ïîëÿ íå çàïîëíåíû èëè èõ çíà÷åíèÿ íå êîððåêòíû: #FIELDS#!";
-    $MESS['SO_DEFAULT_NOTIFIES_ITEMS_EMPTY'] = "Â êîðçèíå íåò òîâàðîâ!";
-    $MESS['SO_DEFAULT_NOTIFIES_ORDER_CREATED'] = "Çàêàç ¹#NUMBER# óñïåøíî îôîðìëåí!";
+    $MESS['SO_DEFAULT_ERRORS_DELIVERY_EMPTY'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð° Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐµ!";
+    $MESS['SO_DEFAULT_ERRORS_PAYMENT_EMPTY'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð° Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ!";
+    $MESS['SO_DEFAULT_ERRORS_PROPERTIES_EMPTY'] = "ÐŸÐ¾Ð»Ñ Ð½Ðµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ Ð¸Ð»Ð¸ Ð¸Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð½Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹: #FIELDS#!";
+    $MESS['SO_DEFAULT_NOTIFIES_ITEMS_EMPTY'] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ Ð½ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²!";
+    $MESS['SO_DEFAULT_NOTIFIES_ORDER_CREATED'] = "Ð—Ð°ÐºÐ°Ð· â„–#NUMBER# ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½!";
 
-    $MESS['SO_DEFAULT_SELECT_EMPTY'] = "(íå âûáðàíî)";
+    $MESS['SO_DEFAULT_SELECT_EMPTY'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 ?>

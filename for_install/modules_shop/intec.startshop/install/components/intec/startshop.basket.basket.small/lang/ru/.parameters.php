@@ -1,9 +1,9 @@
 <?
-	$MESS["SBBS_GROUP_URL"] = "Íàñòðîéêà ïåðåàäðåñàöèè";
+	$MESS["SBBS_GROUP_URL"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° Ð¿ÐµÑ€ÐµÐ°Ð´Ñ€ÐµÑÐ°Ñ†Ð¸Ð¸";
 
-	$MESS["SBBS_URL_BASKET"] = "Àäðåñ ñòðàíèöû ñ êîðçèíîé";
-	$MESS["SBBS_CURRENCY"] = "Âàëþòà";
-	$MESS["SBBS_REQUEST_VARIABLE_ACTION"] = "Ïåðåìåííàÿ, â êîòîðîé ïåðåäàåòñÿ äåéñòâèå";
-	$MESS["SBBS_REQUEST_VARIABLE_ITEM"] = "Ïåðåìåííàÿ, â êîòîðîé ïåðåäàåòñÿ ïîçèöèÿ";
-	$MESS["SBBS_REQUEST_VARIABLE_QUANTITY"] = "Ïåðåìåííàÿ, â êîòîðîé ïåðåäàåòñÿ êîëè÷åòñâî";
+	$MESS["SBBS_URL_BASKET"] = "ÐÐ´Ñ€ÐµÑ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð¾Ð¹";
+	$MESS["SBBS_CURRENCY"] = "Ð’Ð°Ð»ÑŽÑ‚Ð°";
+	$MESS["SBBS_REQUEST_VARIABLE_ACTION"] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¿ÐµÑ€ÐµÐ´Ð°ÐµÑ‚ÑÑ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ";
+	$MESS["SBBS_REQUEST_VARIABLE_ITEM"] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¿ÐµÑ€ÐµÐ´Ð°ÐµÑ‚ÑÑ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ñ";
+	$MESS["SBBS_REQUEST_VARIABLE_QUANTITY"] = "ÐŸÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð°Ñ, Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð¿ÐµÑ€ÐµÐ´Ð°ÐµÑ‚ÑÑ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑ‚ÑÐ²Ð¾";
 ?>

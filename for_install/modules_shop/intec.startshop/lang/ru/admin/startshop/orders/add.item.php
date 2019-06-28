@@ -1,18 +1,18 @@
 <?
-    $MESS['title'] = "Äîáàâèòü ïîçèöèþ â çàêàç";
-    $MESS['title.buttons.back'] = "Íàçàä";
-    $MESS['tabs.common'] = "Ïîçèöèÿ â çàêàçå";
+    $MESS['title'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ Ð² Ð·Ð°ÐºÐ°Ð·";
+    $MESS['title.buttons.back'] = "ÐÐ°Ð·Ð°Ð´";
+    $MESS['tabs.common'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ Ð² Ð·Ð°ÐºÐ°Ð·Ðµ";
 
-    $MESS['messages.warning.exists'] = "Ïîçèöèÿ ñ òàêèì òîâàðîì óæå ñóùåñòâóåò!";
-    $MESS['messages.warning.not_exists'] = "Ýëåìåíò íå íàõîäèòñÿ â òîðãîâîì êàòàëîãå èëè åãî íå ñóùåñòâóåò!";
+    $MESS['messages.warning.exists'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð¼ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
+    $MESS['messages.warning.not_exists'] = "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ðµ Ð½Ð°Ñ…Ð¾Ð´Ð¸Ñ‚ÑÑ Ð² Ñ‚Ð¾Ñ€Ð³Ð¾Ð²Ð¾Ð¼ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ðµ Ð¸Ð»Ð¸ ÐµÐ³Ð¾ Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 
-    $MESS['fields.item'] = "Òîâàð";
-    $MESS['fields.name'] = "Íàèìåíîâàíèå";
-    $MESS['fields.quantity'] = "Êîëè÷åñòâî";
-    $MESS['fields.quantity.total'] = "(Âñåãî èìååòñÿ #QUANTITY#)";
-    $MESS['fields.price'] = "Öåíà";
+    $MESS['fields.item'] = "Ð¢Ð¾Ð²Ð°Ñ€";
+    $MESS['fields.name'] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['fields.quantity'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+    $MESS['fields.quantity.total'] = "(Ð’ÑÐµÐ³Ð¾ Ð¸Ð¼ÐµÐµÑ‚ÑÑ #QUANTITY#)";
+    $MESS['fields.price'] = "Ð¦ÐµÐ½Ð°";
 
-    $MESS['button.create'] = "Äîáàâèòü ïîçèöèþ";
-    $MESS['button.next'] = "Äàëåå";
-    $MESS['button.prev'] = "Íàçàä";
+    $MESS['button.create'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ";
+    $MESS['button.next'] = "Ð”Ð°Ð»ÐµÐµ";
+    $MESS['button.prev'] = "ÐÐ°Ð·Ð°Ð´";
 ?>

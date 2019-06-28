@@ -1,5 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Êîğçèíà");
+$APPLICATION->SetTitle("ĞšĞ¾Ñ€Ğ·Ğ¸Ğ½Ğ°");
 $APPLICATION->IncludeComponent(
 	"intec:startshop.basket",
 	".default",
@@ -15,9 +15,9 @@ $APPLICATION->IncludeComponent(
 		"USE_BUTTON_CLEAR" => "Y",
 		"USE_BUTTON_BASKET" => "Y",
 		"USE_SUM_FIELD" => "Y",
-		"TITLE_BASKET" => "Êîğçèíà",
-		"TITLE_ORDER" => "Îôîğìëåíèå çàêàçà",
-		"TITLE_PAYMENT" => "Îïëàòà",
+		"TITLE_BASKET" => "ĞšĞ¾Ñ€Ğ·Ğ¸Ğ½Ğ°",
+		"TITLE_ORDER" => "ĞÑ„Ğ¾Ñ€Ğ¼Ğ»ĞµĞ½Ğ¸Ğµ Ğ·Ğ°ĞºĞ°Ğ·Ğ°",
+		"TITLE_PAYMENT" => "ĞĞ¿Ğ»Ğ°Ñ‚Ğ°",
 		"URL_ORDER_CREATED" => "#PERSONAL_PATH#orders/?ORDER_ID=#ID#",
 		"USE_ADAPTABILITY" => "Y",
 		"REQUEST_VARIABLE_PAYMENT" => "payment",

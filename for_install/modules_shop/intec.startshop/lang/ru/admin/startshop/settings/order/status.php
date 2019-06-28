@@ -1,27 +1,27 @@
 <?
-    $MESS['title'] = "Ñòàòóñû çàêàçà";
+    $MESS['title'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹ Ð·Ð°ÐºÐ°Ð·Ð°";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.code'] = "Êîä";
-    $MESS['table.header.active'] = "Àêòèâíîñòü";
-    $MESS['table.header.name'] = "Íàçâàíèå";
-    $MESS['table.header.sort'] = "Ñîðòèðîâêà";
-    $MESS['table.header.can_pay'] = "Çàêàç âîçìîæíî îïëàòèòü";
-    $MESS['table.header.default'] = "Ïî óìîë÷àíèþ";
+    $MESS['table.header.code'] = "ÐšÐ¾Ð´";
+    $MESS['table.header.active'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['table.header.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['table.header.can_pay'] = "Ð—Ð°ÐºÐ°Ð· Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð¾Ð¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ";
+    $MESS['table.header.default'] = "ÐŸÐ¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.can_pay'] = "Óñòàíîâèòü ôëàã âîçìîæíîñòè îïëàòû";
-    $MESS['actions.can_not_pay'] = "Óáðàòü ôëàã âîçìîæíîñòè îïëàòû";
-    $MESS['actions.default'] = "Ñäåëàòü ñòàòóñîì ïî óìîë÷àíèþ";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.can_pay'] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.can_not_pay'] = "Ð£Ð±Ñ€Ð°Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.default'] = "Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑÐ¾Ð¼ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.can_pay'] = "óñòàíîâèòü ôëàã âîçìîæíîñòè îïëàòû";
-    $MESS['actions.group.can_not_pay'] = "óáðàòü ôëàã âîçìîæíîñòè îïëàòû";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.can_pay'] = "ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['actions.group.can_not_pay'] = "ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ Ñ„Ð»Ð°Ð³ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚Ð¸ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
 
-    $MESS['nav.title'] = "Ñòàòóñû çàêàçà";
+    $MESS['nav.title'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹ Ð·Ð°ÐºÐ°Ð·Ð°";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

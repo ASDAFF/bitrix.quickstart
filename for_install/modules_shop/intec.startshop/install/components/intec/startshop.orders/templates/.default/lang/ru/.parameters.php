@@ -1,4 +1,4 @@
 <?
-    $MESS['SO_DEFAULT_URL_AUTHORIZE'] = "Àäðåñ ñòðàíèöû ñ àâòîðèçàöèåé";
-    $MESS['SO_DEFAULT_USE_ADAPTABILITY'] = 'Èñïîëüçîâàòü àäàïòèâíîñòü';
+    $MESS['SO_DEFAULT_URL_AUTHORIZE'] = "ÐÐ´Ñ€ÐµÑ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸ÐµÐ¹";
+    $MESS['SO_DEFAULT_USE_ADAPTABILITY'] = 'Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ';
 ?>

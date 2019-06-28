@@ -1,12 +1,7 @@
 <?
-    $MESS["SB_DEFAULT_USE_ADAPTABILITY"] = "Èñïîëüçîâàòü àäàïòèâíîñòü";
-    $MESS["SB_DEFAULT_USE_ITEMS_PICTURES"] = "Âûâîäèòü èçîáðàæåíèÿ òîâàðîâ";
-    $MESS["SB_DEFAULT_USE_BUTTON_CLEAR"] = "Îòîáðàæàòü êíîïêó î÷èñòêè êîðçèíû";
-    $MESS["SB_DEFAULT_USE_SUM_FIELD"] = "Îòîáðàæàòü ïîëå ñ îáùåé ñóììîé";
-    $MESS["SB_DEFAULT_USE_BUTTON_BASKET"] = "Îòîáðàæàòü êíîïêó ïåðåõîäà â êîðçèíó";
-	
-	$MESS['CFO_USE_FASTORDER'] = "Èñïîëüçîâàòü \"Áûñòðûé çàêàç\"";
-	$MESS['CFO_PROP_NAME'] = "Ñâîéñòâî \"Èìÿ\"";
-	$MESS['CFO_PROP_PHONE'] = "Ñâîéñòâî \"Òåëåôîí\"";
-	$MESS['CFO_PROP_COMMENT'] = "Ñâîéñòâî \"Êîììåíòàðèé\"";
+    $MESS["SB_DEFAULT_USE_ADAPTABILITY"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS["SB_DEFAULT_USE_ITEMS_PICTURES"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
+    $MESS["SB_DEFAULT_USE_BUTTON_CLEAR"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¾Ñ‡Ð¸ÑÑ‚ÐºÐ¸ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹";
+    $MESS["SB_DEFAULT_USE_SUM_FIELD"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð¿Ð¾Ð»Ðµ Ñ Ð¾Ð±Ñ‰ÐµÐ¹ ÑÑƒÐ¼Ð¼Ð¾Ð¹";
+    $MESS["SB_DEFAULT_USE_BUTTON_BASKET"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð° Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
 ?>

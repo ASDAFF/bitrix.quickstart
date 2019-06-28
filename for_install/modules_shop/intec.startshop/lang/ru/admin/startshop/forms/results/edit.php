@@ -1,28 +1,28 @@
 <?
-    $MESS['title.add'] = "Äîáàâèòü ðåçóëüòàò âåá ôîðìû #NAME#";
-    $MESS['title.edit'] = "Ðåäàêòèðîâàíèå ðåçóëüòàòà âåá ôîðìû #NAME#";
-    $MESS['title.view'] = "Ïðîñìîòð ðåçóëüòàòà âåá ôîðìû #NAME#";
-    $MESS['title.buttons.back'] = "Ñïèñîê";
-    $MESS['title.buttons.add'] = "Äîáàâèòü";
-    $MESS['title.buttons.edit'] = "Ðåäàêòèðîâàòü";
-    $MESS['title.buttons.view'] = "Ïðîñìîòðåòü";
-    $MESS['tabs.common'] = "Ðåçóëüòàò";
+    $MESS['title.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹ #NAME#";
+    $MESS['title.edit'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð° Ð²ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹ #NAME#";
+    $MESS['title.view'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð° Ð²ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹ #NAME#";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº";
+    $MESS['title.buttons.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['title.buttons.edit'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['title.buttons.view'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ";
+    $MESS['tabs.common'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚";
 
-    $MESS['messages.warning.empty_fields'] = "Íå çàïîëíåíû ñëåäóþùèå ïîëÿ: #FIELDS#";
-    $MESS['messages.warning.invalid_fields'] = "Çíà÷åíèÿ ñëåäóþùèõ ïîëåé íåêîððåêòíû: #FIELDS#";
-    $MESS['messages.warning.not_exists_fields'] = "Ó äàííîé ôîðìû íåò ïîëåé";
-    $MESS['messages.warning.exists'] = "Ïîëå ñ òàêèì êîäîì óæå ñóùåñòâóåò!";
+    $MESS['messages.warning.empty_fields'] = "ÐÐµ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ñ‹ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ðµ Ð¿Ð¾Ð»Ñ: #FIELDS#";
+    $MESS['messages.warning.invalid_fields'] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… Ð¿Ð¾Ð»ÐµÐ¹ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹: #FIELDS#";
+    $MESS['messages.warning.not_exists_fields'] = "Ð£ Ð´Ð°Ð½Ð½Ð¾Ð¹ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð½ÐµÑ‚ Ð¿Ð¾Ð»ÐµÐ¹";
+    $MESS['messages.warning.exists'] = "ÐŸÐ¾Ð»Ðµ Ñ Ñ‚Ð°ÐºÐ¸Ð¼ ÐºÐ¾Ð´Ð¾Ð¼ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 
-    $MESS['messages.notify.added'] = "Ðåçóëüòàò óñïåøíî äîáàâëåí!";
-    $MESS['messages.notify.saved'] = "Ðåçóëüòàò óñïåøíî èçìåíåí!";
+    $MESS['messages.notify.added'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½!";
+    $MESS['messages.notify.saved'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½!";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 
-    $MESS['checked.yes'] = "Äà";
-    $MESS['checked.no'] = "Íåò";
+    $MESS['checked.yes'] = "Ð”Ð°";
+    $MESS['checked.no'] = "ÐÐµÑ‚";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.date_create'] = "Äàòà ñîçäàíèÿ";
-    $MESS['fields.date_modify'] = "Äàòà èçìåíåíèÿ";
-    $MESS['fields.fields.caption'] = "Çíà÷åíèÿ ïîëåé";
+    $MESS['fields.date_create'] = "Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
+    $MESS['fields.date_modify'] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ";
+    $MESS['fields.fields.caption'] = "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»ÐµÐ¹";
 ?>

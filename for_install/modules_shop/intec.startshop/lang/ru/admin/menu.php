@@ -1,19 +1,19 @@
 <?
-	$MESS['menu.name'] = "Ìàãàçèí";
-	$MESS['menu.settings.name'] = "Íàñòðîéêè";
-	$MESS['menu.settings.catalog.name'] = "Òîðãîâûå êàòàëîãè";
-	$MESS['menu.settings.sites.name'] = "Ïàðàìåòðû ñàéòîâ";
-	$MESS['menu.settings.order.name'] = "Çàêàç";
-	$MESS['menu.settings.order.fields.name'] = "Ñâîéñòâà";
-	$MESS['menu.settings.order.statuses.name'] = "Ñòàòóñû";
-    $MESS['menu.settings.price.name'] = "Òèïû öåí";
-	$MESS['menu.settings.delivery.name'] = "Ñïîñîáû äîñòàâêè";
-	$MESS['menu.settings.currency.name'] = "Âàëþòû";
-	$MESS['menu.settings.payment.name'] = "Ñïîñîáû îïëàòû";
-	$MESS['menu.settings.1c.name'] = "Îáìåí äàííûìè ñ \"1Ñ: Ïðåäïðèÿòèå\"";
-	$MESS['menu.settings.rights.name'] = "Ïðàâà";
-	$MESS['menu.orders.name'] = "Çàêàçû";
-	$MESS['menu.forms.name'] = "Âåá ôîðìû";
-	$MESS['menu.import.name'] = "Èìïîðò òîâàðîâ";
-	$MESS['menu.export.name'] = "Ýêñïîðò òîâàðîâ";
+	$MESS['menu.name'] = "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
+	$MESS['menu.settings.name'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+	$MESS['menu.settings.catalog.name'] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð¸";
+	$MESS['menu.settings.sites.name'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÑÐ°Ð¹Ñ‚Ð¾Ð²";
+	$MESS['menu.settings.order.name'] = "Ð—Ð°ÐºÐ°Ð·";
+	$MESS['menu.settings.order.fields.name'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð°";
+	$MESS['menu.settings.order.statuses.name'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹";
+    $MESS['menu.settings.price.name'] = "Ð¢Ð¸Ð¿Ñ‹ Ñ†ÐµÐ½";
+	$MESS['menu.settings.delivery.name'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+	$MESS['menu.settings.currency.name'] = "Ð’Ð°Ð»ÑŽÑ‚Ñ‹";
+	$MESS['menu.settings.payment.name'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+	$MESS['menu.settings.1c.name'] = "ÐžÐ±Ð¼ÐµÐ½ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ñ \"1Ð¡: ÐŸÑ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ðµ\"";
+	$MESS['menu.settings.rights.name'] = "ÐŸÑ€Ð°Ð²Ð°";
+	$MESS['menu.orders.name'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹";
+	$MESS['menu.forms.name'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹";
+	$MESS['menu.import.name'] = "Ð˜Ð¼Ð¿Ð¾Ñ€Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
+	$MESS['menu.export.name'] = "Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
 ?>

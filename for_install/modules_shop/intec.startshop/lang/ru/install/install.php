@@ -1,12 +1,12 @@
 <?
-	$MESS['module.install.form.submit'] = "Установить модуль";
-	$MESS['module.install.form.back'] = "Отмена";
-	$MESS['module.install.form.description'] = "Вас приветствует мастер установки модуля \"Магазин «Старт»\".<br />Выберите необходимые вам параметры и нажмите \"Установить модуль\".";
+	$MESS['module.install.form.submit'] = "РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»СЊ";
+	$MESS['module.install.form.back'] = "РћС‚РјРµРЅР°";
+	$MESS['module.install.form.description'] = "Р’Р°СЃ РїСЂРёРІРµС‚СЃС‚РІСѓРµС‚ РјР°СЃС‚РµСЂ СѓСЃС‚Р°РЅРѕРІРєРё РјРѕРґСѓР»СЏ \"РњР°РіР°Р·РёРЅ В«РЎС‚Р°СЂС‚В»\".<br />Р’С‹Р±РµСЂРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РІР°Рј РїР°СЂР°РјРµС‚СЂС‹ Рё РЅР°Р¶РјРёС‚Рµ \"РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РјРѕРґСѓР»СЊ\".";
 
-	$MESS['module.install.sections.sections'] = 'Разделы';
-	$MESS['module.install.sections.sections.install_catalog'] = 'Создать раздел с каталогом';
-	$MESS['module.install.sections.sections.install_cart'] = 'Создать раздел с корзиной';
-	$MESS['module.install.sections.sections.install_personal'] = 'Создать раздел с личным кабинетом';
-	$MESS['module.install.sections.sections.path_to_section'] = 'Путь к разделу';
-	$MESS['module.install.sections.sections.iblock_product'] = 'Инфоблок с товарами';
+	$MESS['module.install.sections.sections'] = 'Р Р°Р·РґРµР»С‹';
+	$MESS['module.install.sections.sections.install_catalog'] = 'РЎРѕР·РґР°С‚СЊ СЂР°Р·РґРµР» СЃ РєР°С‚Р°Р»РѕРіРѕРј';
+	$MESS['module.install.sections.sections.install_cart'] = 'РЎРѕР·РґР°С‚СЊ СЂР°Р·РґРµР» СЃ РєРѕСЂР·РёРЅРѕР№';
+	$MESS['module.install.sections.sections.install_personal'] = 'РЎРѕР·РґР°С‚СЊ СЂР°Р·РґРµР» СЃ Р»РёС‡РЅС‹Рј РєР°Р±РёРЅРµС‚РѕРј';
+	$MESS['module.install.sections.sections.path_to_section'] = 'РџСѓС‚СЊ Рє СЂР°Р·РґРµР»Сѓ';
+	$MESS['module.install.sections.sections.iblock_product'] = 'РРЅС„РѕР±Р»РѕРє СЃ С‚РѕРІР°СЂР°РјРё';
 ?>

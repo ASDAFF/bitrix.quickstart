@@ -1,38 +1,38 @@
 <?
-    $MESS['title.add'] = "Добавить валюту";
-    $MESS['title.edit'] = "Редактирование валюты";
-    $MESS['title.buttons.back'] = "Список";
-    $MESS['title.buttons.add'] = "Добавить";
-    $MESS['tabs.common'] = "Валюта";
-    $MESS['tabs.lang&format'] = "Языковые настройки и формат";
+    $MESS['title.add'] = "Р”РѕР±Р°РІРёС‚СЊ РІР°Р»СЋС‚Сѓ";
+    $MESS['title.edit'] = "Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РІР°Р»СЋС‚С‹";
+    $MESS['title.buttons.back'] = "РЎРїРёСЃРѕРє";
+    $MESS['title.buttons.add'] = "Р”РѕР±Р°РІРёС‚СЊ";
+    $MESS['tabs.common'] = "Р’Р°Р»СЋС‚Р°";
+    $MESS['tabs.lang&format'] = "РЇР·С‹РєРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё Рё С„РѕСЂРјР°С‚";
 
-    $MESS['messages.warning.empty_fields'] = "Не заполнены следующие поля: #FIELDS#";
-    $MESS['messages.warning.exists'] = "Валюта с таким кодом уже существует!";
+    $MESS['messages.warning.empty_fields'] = "РќРµ Р·Р°РїРѕР»РЅРµРЅС‹ СЃР»РµРґСѓСЋС‰РёРµ РїРѕР»СЏ: #FIELDS#";
+    $MESS['messages.warning.exists'] = "Р’Р°Р»СЋС‚Р° СЃ С‚Р°РєРёРј РєРѕРґРѕРј СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
 
-    $MESS['messages.notify.added'] = "Валюта успешно добавлена!";
-    $MESS['messages.notify.saved'] = "Валюта успешно изменена!";
+    $MESS['messages.notify.added'] = "Р’Р°Р»СЋС‚Р° СѓСЃРїРµС€РЅРѕ РґРѕР±Р°РІР»РµРЅР°!";
+    $MESS['messages.notify.saved'] = "Р’Р°Р»СЋС‚Р° СѓСЃРїРµС€РЅРѕ РёР·РјРµРЅРµРЅР°!";
 
     $MESS['fields.id'] = "ID";
-    $MESS['fields.code'] = "Код";
-    $MESS['fields.sort'] = "Сортировка";
-    $MESS['fields.active'] = "Активность";
-    $MESS['fields.base'] = "Базовая валюта";
-    $MESS['fields.rating'] = "Номинал";
-    $MESS['fields.rating.description'] = "Используются <b>прямые котировки</b> валют по отношению к базовой. Для правильной конвертации необходимо указывать стоймость единицы редактируемой валюты в базовой. Для <b>базовой валюты</b> номинал и курс должны быть равны единице.";
-    $MESS['fields.rate'] = "Курс";
+    $MESS['fields.code'] = "РљРѕРґ";
+    $MESS['fields.sort'] = "РЎРѕСЂС‚РёСЂРѕРІРєР°";
+    $MESS['fields.active'] = "РђРєС‚РёРІРЅРѕСЃС‚СЊ";
+    $MESS['fields.base'] = "Р‘Р°Р·РѕРІР°СЏ РІР°Р»СЋС‚Р°";
+    $MESS['fields.rating'] = "РќРѕРјРёРЅР°Р»";
+    $MESS['fields.rating.description'] = "РСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ <b>РїСЂСЏРјС‹Рµ РєРѕС‚РёСЂРѕРІРєРё</b> РІР°Р»СЋС‚ РїРѕ РѕС‚РЅРѕС€РµРЅРёСЋ Рє Р±Р°Р·РѕРІРѕР№. Р”Р»СЏ РїСЂР°РІРёР»СЊРЅРѕР№ РєРѕРЅРІРµСЂС‚Р°С†РёРё РЅРµРѕР±С…РѕРґРёРјРѕ СѓРєР°Р·С‹РІР°С‚СЊ СЃС‚РѕР№РјРѕСЃС‚СЊ РµРґРёРЅРёС†С‹ СЂРµРґР°РєС‚РёСЂСѓРµРјРѕР№ РІР°Р»СЋС‚С‹ РІ Р±Р°Р·РѕРІРѕР№. Р”Р»СЏ <b>Р±Р°Р·РѕРІРѕР№ РІР°Р»СЋС‚С‹</b> РЅРѕРјРёРЅР°Р» Рё РєСѓСЂСЃ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹ РµРґРёРЅРёС†Рµ.";
+    $MESS['fields.rate'] = "РљСѓСЂСЃ";
 
-    $MESS['fields.lang&format.name'] = "Название";
-    $MESS['fields.lang&format.format'] = "Формат";
-    $MESS['fields.lang&format.format.description'] = "Формат валюты вида <b>..#..</b>, где символ <b>#</b> будет заменен на отформатированное значение цены, а <b>..</b> могут быть любым текстом или отсутствовать.";
-    $MESS['fields.lang&format.delimiter.decimal'] = "Разделитель десятичной части";
-    $MESS['fields.lang&format.delimiter.thousands'] = "Разделитель тысяч";
-    $MESS['fields.lang&format.delimiter.type.none'] = "Без разделителя";
-    $MESS['fields.lang&format.delimiter.type.point'] = "Точка";
-    $MESS['fields.lang&format.delimiter.type.comma'] = "Запятая";
-    $MESS['fields.lang&format.delimiter.type.whitespace'] = "Пробел";
-    $MESS['fields.lang&format.delimiter.type.other'] = "Другое значение";
-    $MESS['fields.lang&format.decimals.count'] = "Количество десятичных знаков";
-    $MESS['fields.lang&format.decimals.count.description'] = "Количество десятичных знаков дробной части влияет только на <b>отображение</b> цены.";
-    $MESS['fields.lang&format.decimals.display_zero'] = "Отображать незначащие нули в дробной части цены";
-    $MESS['fields.lang&format.decimals.display_zero.description'] = "Если дробная часть числа отсутствует, то в зависимости от параметра она либо будет выведена, либо не будет.";
+    $MESS['fields.lang&format.name'] = "РќР°Р·РІР°РЅРёРµ";
+    $MESS['fields.lang&format.format'] = "Р¤РѕСЂРјР°С‚";
+    $MESS['fields.lang&format.format.description'] = "Р¤РѕСЂРјР°С‚ РІР°Р»СЋС‚С‹ РІРёРґР° <b>..#..</b>, РіРґРµ СЃРёРјРІРѕР» <b>#</b> Р±СѓРґРµС‚ Р·Р°РјРµРЅРµРЅ РЅР° РѕС‚С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С†РµРЅС‹, Р° <b>..</b> РјРѕРіСѓС‚ Р±С‹С‚СЊ Р»СЋР±С‹Рј С‚РµРєСЃС‚РѕРј РёР»Рё РѕС‚СЃСѓС‚СЃС‚РІРѕРІР°С‚СЊ.";
+    $MESS['fields.lang&format.delimiter.decimal'] = "Р Р°Р·РґРµР»РёС‚РµР»СЊ РґРµСЃСЏС‚РёС‡РЅРѕР№ С‡Р°СЃС‚Рё";
+    $MESS['fields.lang&format.delimiter.thousands'] = "Р Р°Р·РґРµР»РёС‚РµР»СЊ С‚С‹СЃСЏС‡";
+    $MESS['fields.lang&format.delimiter.type.none'] = "Р‘РµР· СЂР°Р·РґРµР»РёС‚РµР»СЏ";
+    $MESS['fields.lang&format.delimiter.type.point'] = "РўРѕС‡РєР°";
+    $MESS['fields.lang&format.delimiter.type.comma'] = "Р—Р°РїСЏС‚Р°СЏ";
+    $MESS['fields.lang&format.delimiter.type.whitespace'] = "РџСЂРѕР±РµР»";
+    $MESS['fields.lang&format.delimiter.type.other'] = "Р”СЂСѓРіРѕРµ Р·РЅР°С‡РµРЅРёРµ";
+    $MESS['fields.lang&format.decimals.count'] = "РљРѕР»РёС‡РµСЃС‚РІРѕ РґРµСЃСЏС‚РёС‡РЅС‹С… Р·РЅР°РєРѕРІ";
+    $MESS['fields.lang&format.decimals.count.description'] = "РљРѕР»РёС‡РµСЃС‚РІРѕ РґРµСЃСЏС‚РёС‡РЅС‹С… Р·РЅР°РєРѕРІ РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё РІР»РёСЏРµС‚ С‚РѕР»СЊРєРѕ РЅР° <b>РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ</b> С†РµРЅС‹.";
+    $MESS['fields.lang&format.decimals.display_zero'] = "РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РЅРµР·РЅР°С‡Р°С‰РёРµ РЅСѓР»Рё РІ РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё С†РµРЅС‹";
+    $MESS['fields.lang&format.decimals.display_zero.description'] = "Р•СЃР»Рё РґСЂРѕР±РЅР°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р° РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚, С‚Рѕ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РїР°СЂР°РјРµС‚СЂР° РѕРЅР° Р»РёР±Рѕ Р±СѓРґРµС‚ РІС‹РІРµРґРµРЅР°, Р»РёР±Рѕ РЅРµ Р±СѓРґРµС‚.";
 ?>

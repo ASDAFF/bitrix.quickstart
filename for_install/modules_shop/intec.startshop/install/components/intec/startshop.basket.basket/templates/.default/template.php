@@ -166,18 +166,7 @@
             <div class="startshop-indents-vertical indent-15"></div>
             <div class="startshop-basket-buttons">
                 <div class="startshop-basket-buttons-wrapper">
-					<?
-						if (!empty($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], "/catalog/")) {
-							$saleBack = $_SERVER['HTTP_REFERER'];
-						} else {
-							$saleBack = SITE_DIR.'catalog/';
-						}
-					?>
-					<a href="<?=$saleBack?>" class="startshop-button startshop-button-standart sale_back"><?=GetMessage("SALE_BACK")?></a>
-                    <?if ($arParams['CFO_USE_FASTORDER']== 'Y'):?>
-						<a class="startshop-button startshop-button-standart" href="javascript:void(0);" onclick="createFastOrder('<?=SITE_DIR?>', '<?=$arParams['CFO_PROP_NAME']?>', '<?=$arParams['CFO_PROP_PHONE']?>', '<?=$arParams['CFO_PROP_COMMENT']?>', '<?=$arParams['CURRENCY']?>')" style="margin-left: 10px;"><?=GetMessage('SBB_DEFAULT_BUTTONS_FAST_ORDER')?></a>
-					<?endif?>
-					<?if ($arParams['USE_BUTTON_ORDER'] == "Y"):?>
+                    <?if ($arParams['USE_BUTTON_ORDER'] == "Y"):?>
                         <a class="startshop-button startshop-button-standart" href="<?=$arParams['URL_ORDER']?>"><?=GetMessage("SBB_DEFAULT_BUTTON_ORDER")?></a>
                     <?endif;?>
                     <?if ($arParams['USE_BUTTON_CLEAR'] == "Y"):?>

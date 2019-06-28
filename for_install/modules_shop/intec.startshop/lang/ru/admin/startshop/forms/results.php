@@ -1,20 +1,20 @@
 <?
-    $MESS['title'] = "Ðåçóëüòàòû ôîðìû #FORM#";
-    $MESS['title.buttons.back'] = "Ñïèñîê ôîðì";
+    $MESS['title'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ñ„Ð¾Ñ€Ð¼Ñ‹ #FORM#";
+    $MESS['title.buttons.back'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ„Ð¾Ñ€Ð¼";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.date_create'] = "Äàòà ñîçäàíèÿ";
-    $MESS['table.header.date_modify'] = "Äàòà èçìåíåíèÿ";
+    $MESS['table.header.date_create'] = "Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
+    $MESS['table.header.date_modify'] = "Ð”Ð°Ñ‚Ð° Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.view'] = "Ïðîñìîòð";
-    $MESS['actions.add'] = "Äîáàâèòü";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.view'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
 
-    $MESS['nav.title'] = "Ðåçóëüòàòû ôîðìû";
+    $MESS['nav.title'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ñ„Ð¾Ñ€Ð¼Ñ‹";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

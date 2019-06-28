@@ -1,9 +1,9 @@
 <?
-    $MESS['SFRN_CAPTCHA_CAPTION'] = 'Ââåäèòå êîä ñ èçîáðàæåíèÿ';
-    $MESS['SFRN_CAPTCHA_INVALID'] = 'Êîä ñ èçîáðàæåíèÿ áûë ââåäåí íåâåðíî';
-    $MESS['SFRN_FIELD_EMPTY'] = 'Ïîëå äîëæíî áûòü çàïîëíåíî';
-    $MESS['SFRN_FIELD_INVALID'] = 'Çíà÷åíèå ïîëÿ íåâåðíî';
-    $MESS['SFRN_ERROR_FORM_NOT_EXISTS'] = 'Ôîðìà íå ñóùåñòâóåò';
-    $MESS['SFRN_ERROR_FORM_INBOUND_SITE'] = 'Ôîðìà íå ïðèíàäëåæèò ê äàííîìó ñàéòó';
-    $MESS['SFRN_ERROR_FORM_FIELDS_NOT_EXISTS'] = 'Ó ôîðìû íåò ïîëåé';
+    $MESS['SFRN_CAPTCHA_CAPTION'] = 'Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð´ Ñ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ';
+    $MESS['SFRN_CAPTCHA_INVALID'] = 'ÐšÐ¾Ð´ Ñ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð±Ñ‹Ð» Ð²Ð²ÐµÐ´ÐµÐ½ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾';
+    $MESS['SFRN_FIELD_EMPTY'] = 'ÐŸÐ¾Ð»Ðµ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¾';
+    $MESS['SFRN_FIELD_INVALID'] = 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð»Ñ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾';
+    $MESS['SFRN_ERROR_FORM_NOT_EXISTS'] = 'Ð¤Ð¾Ñ€Ð¼Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚';
+    $MESS['SFRN_ERROR_FORM_INBOUND_SITE'] = 'Ð¤Ð¾Ñ€Ð¼Ð° Ð½Ðµ Ð¿Ñ€Ð¸Ð½Ð°Ð´Ð»ÐµÐ¶Ð¸Ñ‚ Ðº Ð´Ð°Ð½Ð½Ð¾Ð¼Ñƒ ÑÐ°Ð¹Ñ‚Ñƒ';
+    $MESS['SFRN_ERROR_FORM_FIELDS_NOT_EXISTS'] = 'Ð£ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð½ÐµÑ‚ Ð¿Ð¾Ð»ÐµÐ¹';
 ?>

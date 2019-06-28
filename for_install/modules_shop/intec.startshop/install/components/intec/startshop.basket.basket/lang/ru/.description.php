@@ -1,5 +1,5 @@
 <?
-    $MESS['SBB_COMPONENT_NAME'] = "Êîðçèíà";
-    $MESS['SBB_COMPONENT_DESCRIPTION'] = "Êîìïîíåíò êîðçèíû ìàãàçèíà";
-    $MESS['SBB_MODULE_NAME'] = "Ìàãàçèí";
+    $MESS['SBB_COMPONENT_NAME'] = "ÐšÐ¾Ñ€Ð·Ð¸Ð½Ð°";
+    $MESS['SBB_COMPONENT_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñ‹ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+    $MESS['SBB_MODULE_NAME'] = "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 ?>

@@ -1,5 +1,5 @@
 <?
-    $MESS['SOL_COMPONENT_NAME'] = "Ñïèñîê çàêàçîâ";
-    $MESS['SOL_COMPONENT_DESCRIPTION'] = "Êîìïîíåíò, îòîáðàæàþùèé ñïèñîê çàêàçîâ";
-    $MESS['SOL_MODULE_NAME'] = "Ìàãàçèí";
+    $MESS['SOL_COMPONENT_NAME'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+    $MESS['SOL_COMPONENT_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚, Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°ÑŽÑ‰Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+    $MESS['SOL_MODULE_NAME'] = "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 ?>

@@ -1,5 +1,5 @@
 <?
-    $MESS['SO_COMPONENT_NAME'] = "Îôîðìëåíèå çàêàçà";
-    $MESS['SO_COMPONENT_DESCRIPTION'] = "Êîìïîíåíò, ïîçâîëÿþùèé îôîðìèòü çàêàç êëèåíòó";
-    $MESS['SO_MODULE_NAME'] = "Ìàãàçèí";
+    $MESS['SO_COMPONENT_NAME'] = "ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°";
+    $MESS['SO_COMPONENT_DESCRIPTION'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚, Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÑŽÑ‰Ð¸Ð¹ Ð¾Ñ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð· ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñƒ";
+    $MESS['SO_MODULE_NAME'] = "ÐœÐ°Ð³Ð°Ð·Ð¸Ð½";
 ?>

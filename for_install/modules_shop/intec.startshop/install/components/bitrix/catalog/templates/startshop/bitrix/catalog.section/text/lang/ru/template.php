@@ -1,8 +1,8 @@
 <?
-    $MESS['SH_CS_TEXT_ELEMENT_DELETE_CONFIRM'] = "Âû äåéñòâèòåëüíî õîòèòå óäàëèòü òîâàð?";
-    $MESS['SH_CS_TEXT_ADD_TO_BASKET'] = "Â êîðçèíó";
-    $MESS['SH_CS_TEXT_ADDED_TO_BASKET'] = "Äîáàâëåíî";
-    $MESS['SH_CS_TEXT_PRODUCT_NOT_AVAILABLE'] = "Íåò â íàëè÷èè";
-    $MESS['SH_CS_TEXT_SHOW_MORE'] = "Ïîäðîáíåå";
-    $MESS['SH_CS_TEXT_FROM'] = "îò";
+    $MESS['SH_CS_TEXT_ELEMENT_DELETE_CONFIRM'] = "Ð’Ñ‹ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ Ñ‚Ð¾Ð²Ð°Ñ€?";
+    $MESS['SH_CS_TEXT_ADD_TO_BASKET'] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+    $MESS['SH_CS_TEXT_ADDED_TO_BASKET'] = "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¾";
+    $MESS['SH_CS_TEXT_PRODUCT_NOT_AVAILABLE'] = "ÐÐµÑ‚ Ð² Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸";
+    $MESS['SH_CS_TEXT_SHOW_MORE'] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ";
+    $MESS['SH_CS_TEXT_FROM'] = "Ð¾Ñ‚";
 ?>

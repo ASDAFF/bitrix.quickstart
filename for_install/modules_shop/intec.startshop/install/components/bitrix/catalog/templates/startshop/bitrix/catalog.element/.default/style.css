@@ -1,4 +1,4 @@
-/*Товар дня*/
+/*РўРѕРІР°СЂ РґРЅСЏ*/
 .startshop-catalog .startshop-item .product-of-day {
 	position: relative;
 	display: block;
@@ -106,7 +106,7 @@
 	margin-top: 0px;
 }
 
-/*Слайдер картинок*/
+/*РЎР»Р°Р№РґРµСЂ РєР°СЂС‚РёРЅРѕРє*/
 .startshop-catalog .startshop-item .startshop-slider {
 	position: relative;
 	float: left;
@@ -227,7 +227,7 @@
 .startshop-catalog .startshop-item .startshop-slider .startshop-slider-slides .startshop-slider-list .startshop-slider-image:hover .startshop-slider-image-wrapper .startshop-slider-image-wrapper-wrapper .startshop-slider-image-wrapper-wrapper-wrapper {
 	border: 3px solid #1a58d7;
 }
-/*Конец слайдера картинок*/
+/*РљРѕРЅРµС† СЃР»Р°Р№РґРµСЂР° РєР°СЂС‚РёРЅРѕРє*/
 
 .startshop-catalog .startshop-item .startshop-information {
 	position: relative;
@@ -240,7 +240,7 @@
     margin-left: 0px;
 }
 
-/*Картинки с меню*/
+/*РљР°СЂС‚РёРЅРєРё СЃ РјРµРЅСЋ*/
 .startshop-catalog .startshop-item.with-menu .startshop-slider {
     width: 200px;
 }
@@ -249,7 +249,7 @@
     padding-top: 50%;
 }
 
-/* Артикуль */
+/* РђСЂС‚РёРєСѓР»СЊ */
 .startshop-catalog .startshop-item .startshop-information .startshop-article {
 	position: relative;
 	float: left;
@@ -259,7 +259,7 @@
 	color: #a7a7a7;
 }
 
-/* В наличии/ не в наличии*/
+/* Р’ РЅР°Р»РёС‡РёРё/ РЅРµ РІ РЅР°Р»РёС‡РёРё*/
 .startshop-catalog .startshop-item .startshop-information .startshop-state {
 	position: relative;
 	float: left;
@@ -301,7 +301,7 @@
 	background-position: bottom;
 }
 
-/* Торговые предложения */
+/* РўРѕСЂРіРѕРІС‹Рµ РїСЂРµРґР»РѕР¶РµРЅРёСЏ */
 
 .startshop-item .startshop-information .startshop-offers-properties {
     display: block;
@@ -465,7 +465,7 @@
 	display: none;
 }
 
-/*Цена*/
+/*Р¦РµРЅР°*/
 .startshop-catalog .startshop-item .startshop-information .startshop-price {
 	position: relative;
 }
@@ -480,7 +480,7 @@
 	font-weight: bold;
 }
 
-/* Сторона заказа */
+/* РЎС‚РѕСЂРѕРЅР° Р·Р°РєР°Р·Р° */
 .startshop-catalog .startshop-item .startshop-information .startshop-order {
 	position: relative;
 	font-size: 0px;
@@ -510,11 +510,11 @@
 	font-size: 0px;
 }
 
-/*Контрол количества*/
+/*РљРѕРЅС‚СЂРѕР» РєРѕР»РёС‡РµСЃС‚РІР°*/
 .startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-input-numeric {
 	height: 38px;
 }
-/**Контрол количества**/
+/**РљРѕРЅС‚СЂРѕР» РєРѕР»РёС‡РµСЃС‚РІР°**/
 
 .startshop-catalog .startshop-item .startshop-information .startshop-order > .startshop-buy,
 .startshop-catalog .startshop-item .startshop-information .startshop-order > .startshop-buy-block > .startshop-buy {
@@ -530,7 +530,7 @@
 	height: 36px;
 }
 
-/*Кнопки*/
+/*РљРЅРѕРїРєРё*/
 .startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy > .to-cart-added,
 .startshop-catalog .startshop-item .startshop-information .startshop-order .startshop-buy > .to-cart  {
 	font-size: 14px;
@@ -538,13 +538,13 @@
 	padding: 12px 50px;
 }
 
-/* Описание */
+/* РћРїРёСЃР°РЅРёРµ */
 .startshop-catalog .startshop-item .startshop-description,
 .startshop-catalog .startshop-item .startshop-description {
 	color: #8b8b8b;
 }
 
-/* Сокращенные характеристики */
+/* РЎРѕРєСЂР°С‰РµРЅРЅС‹Рµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё */
 .startshop-catalog .startshop-item .startshop-information .startshop-properties {
 	color: #707070;
 	font-size: 13px;
@@ -587,7 +587,7 @@
 	padding-left: 10px;
 }
 
-/* Все характеристики */
+/* Р’СЃРµ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё */
 .startshop-catalog .startshop-item .startshop-item_description > .startshop-properties,
 .startshop-catalog .startshop-item > .startshop-properties {
 	position: relative;
@@ -630,7 +630,7 @@
 	overflow: hidden;
 }
 
-/*Документы*/
+/*Р”РѕРєСѓРјРµРЅС‚С‹*/
 .startshop-item  .startshop-documents {
 	display: block;
 	overflow: hidden;
@@ -668,7 +668,7 @@
 	color: #9d9d9d;
 	text-decoration: none;
 }
-/**Документы**/
+/**Р”РѕРєСѓРјРµРЅС‚С‹**/
 
 @media all and (max-width: 1150px) {
 	.startshop-catalog.adaptiv .startshop-item .startshop-slider {

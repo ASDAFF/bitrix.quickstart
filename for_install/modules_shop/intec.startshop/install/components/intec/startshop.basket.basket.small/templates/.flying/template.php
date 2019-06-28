@@ -2,9 +2,8 @@
 <?$this->setFrameMode(true)?>
 <?$sUniqueID = 'startshop_basket_small_fly_'.spl_object_hash($this);?>
 <?$frame = $this->createFrame()->begin()?>
-<script type="text/javascript" src="/bitrix/modules/intec.startshop/themes/js/controls.js"></script>
 <div class="startshop-basket-small flying" id="<?=$sUniqueID?>">
-	<div class="startshop-basket-small-overlay" title="<?=$arResult['SUM']['PRINT_VALUE']?>" onClick="return StartShopFlyBasket.switchSectionByID('StartshopFlyingBasket')">
+	<div class="startshop-basket-small-overlay" onClick="return StartShopFlyBasket.switchSectionByID('StartshopFlyingBasket')">
 		<div class="startshop-aligner-vertical"></div>
 		<div class="startshop-text startshop-element-text"><?=$arResult['COUNT']?></div>
 		<div class="startshop-icon"></div>
@@ -135,16 +134,7 @@
                                                     });
 
                                                     function Reload() {
-                                                        setQuantityInBasket('<?=SITE_DIR?>', 
-																			'SetQuantity', 
-																			'<?=$arItem['ID']?>', 
-																			Quantity.GetValue(), 
-																			'Y', 
-																			'<?=$arParams["CFO_USE_FASTORDER"]?>',
-																			'<?=$arParams["CFO_PROP_NAME"]?>',
-																			'<?=$arParams["CFO_PROP_PHONE"]?>',
-																			'<?=$arParams["CFO_PROP_COMMENT"]?>')
-														//window.location.href = Startshop.Functions.stringReplace({'%23QUANTITY%23': Quantity.GetValue()}, <?=CUtil::PhpToJSObject($arItem['ACTIONS']['SET_QUANTITY'])?>);
+                                                        window.location.href = Startshop.Functions.stringReplace({'%23QUANTITY%23': Quantity.GetValue()}, <?=CUtil::PhpToJSObject($arItem['ACTIONS']['SET_QUANTITY'])?>);
                                                     }
 												});
 											</script>
@@ -157,15 +147,7 @@
 									</td>
 									<td>
 										<div class="startshop-wrapper">
-											<a class="startshop-small-button startshop-delete" onclick="removeToBasket('<?=SITE_DIR?>', 
-																														'Delete', 
-																														'<?=$arItem["ID"]?>', 
-																														'Y',
-																														'<?=$arParams["CFO_USE_FASTORDER"]?>',
-																														'<?=$arParams["CFO_PROP_NAME"]?>',
-																														'<?=$arParams["CFO_PROP_PHONE"]?>',
-																														'<?=$arParams["CFO_PROP_COMMENT"]?>');">
-											</a>
+											<a class="startshop-small-button startshop-delete" href="<?=$arItem['ACTIONS']['DELETE']?>"></a>
 										</div>
 									</td>
 									<td style="width: 20px;"><div style="width: 20px;"></div></td>
@@ -184,16 +166,12 @@
 							<?if (!empty($arParams['URL_ORDER'])):?>
 								<a class="startshop-button startshop-button-standart" href="<?=$arParams['URL_ORDER']?>" style="margin-left: 10px;"><?=GetMessage('SBBS_FLYING_BUTTONS_ORDER')?></a>
 							<?endif?>
-							<?if ($arParams['CFO_USE_FASTORDER']== 'Y'):?>
-								<a class="startshop-button startshop-button-gray" href="javascript:void(0);" onclick="createFastOrder('<?=SITE_DIR?>', '<?=$arParams['CFO_PROP_NAME']?>', '<?=$arParams['CFO_PROP_PHONE']?>', '<?=$arParams['CFO_PROP_COMMENT']?>', '<?=$arParams['CURRENCY']?>')" style="margin-left: 10px;"><?=GetMessage('SBBS_FLYING_BUTTONS_FAST_ORDER')?></a>
-							<?endif?>
 						</div>
 					</div>
 				<?else:?>
-					<div class="startshop-header" style="text-align: center;">
+					<div class="startshop-header startshop-element-text" style="text-align: center;">
 						<?=GetMessage('SBBS_FLYING_EMPTY')?>
 					</div>
-					<a class="startshop-button startshop-button-gray" href="<?=SITE_DIR.'catalog'?>"><?=GetMessage('SBBS_FLYING_BUTTONS_BUY')?></a>
 				<?endif?>
 			</div>
 		</div>

@@ -1,25 +1,25 @@
 <?
-    $MESS['SOD_DEFAULT_SECTION_COMMON'] = 'Îñíîâíàÿ èíôîðìàöèÿ';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_ID'] = '¹ çàêàçà';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_STATUS'] = 'Ñòàòóñ';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_AMOUNT'] = 'Ê îïëàòå';
+    $MESS['SOD_DEFAULT_SECTION_COMMON'] = 'ÐžÑÐ½Ð¾Ð²Ð½Ð°Ñ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_ID'] = 'â„– Ð·Ð°ÐºÐ°Ð·Ð°';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_STATUS'] = 'Ð¡Ñ‚Ð°Ñ‚ÑƒÑ';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_AMOUNT'] = 'Ðš Ð¾Ð¿Ð»Ð°Ñ‚Ðµ';
 
-    $MESS['SOD_DEFAULT_SECTION_COMMON_POSITIONS'] = 'Ïîçèöèè â çàêàçå';
-    $MESS['SOD_DEFAULT_SECTION_COLUMN_NAME'] = 'Íàèìåíîâàíèå';
-    $MESS['SOD_DEFAULT_SECTION_COLUMN_PRICE'] = 'Ñòîèìîñòü';
-    $MESS['SOD_DEFAULT_SECTION_COLUMN_COUNT'] = 'Êîëè÷åòñâî';
-    $MESS['SOD_DEFAULT_SECTION_COLUMN_SUM'] = 'Ñóììà';
+    $MESS['SOD_DEFAULT_SECTION_COMMON_POSITIONS'] = 'ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ð¸ Ð² Ð·Ð°ÐºÐ°Ð·Ðµ';
+    $MESS['SOD_DEFAULT_SECTION_COLUMN_NAME'] = 'ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ';
+    $MESS['SOD_DEFAULT_SECTION_COLUMN_PRICE'] = 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ';
+    $MESS['SOD_DEFAULT_SECTION_COLUMN_COUNT'] = 'ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑ‚ÑÐ²Ð¾';
+    $MESS['SOD_DEFAULT_SECTION_COLUMN_SUM'] = 'Ð¡ÑƒÐ¼Ð¼Ð°';
 
-    $MESS['SOD_DEFAULT_SECTION_DELIVERY'] = 'Äîñòàâêà';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_DELIVERY'] = 'Ñïîñîá äîñòàâêè';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_DELIVERY_PRICE'] = 'Ñòîèìîñòü äîñòàâêè';
+    $MESS['SOD_DEFAULT_SECTION_DELIVERY'] = 'Ð”Ð¾ÑÑ‚Ð°Ð²ÐºÐ°';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_DELIVERY'] = 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_DELIVERY_PRICE'] = 'Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸';
 
-    $MESS['SOD_DEFAULT_SECTION_PAYMENT'] = 'Îïëàòà';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED'] = 'Îïëà÷åí';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED_YES'] = 'Äà';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED_NO'] = 'Íåò';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYMENT'] = 'Ñïîñîá îïëàòû';
-    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYMENT_BUTTON'] = 'Îïëàòèòü çàêàç';
+    $MESS['SOD_DEFAULT_SECTION_PAYMENT'] = 'ÐžÐ¿Ð»Ð°Ñ‚Ð°';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED'] = 'ÐžÐ¿Ð»Ð°Ñ‡ÐµÐ½';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED_YES'] = 'Ð”Ð°';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYED_NO'] = 'ÐÐµÑ‚';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYMENT'] = 'Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹';
+    $MESS['SOD_DEFAULT_SECTION_PROPERTY_PAYMENT_BUTTON'] = 'ÐžÐ¿Ð»Ð°Ñ‚Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·';
 
-    $MESS['SOD_DEFAULT_NOTIFY_ORDDER_NOT_EXISTS'] = 'Çàêàçà íå íàéäåí';
+    $MESS['SOD_DEFAULT_NOTIFY_ORDDER_NOT_EXISTS'] = 'Ð—Ð°ÐºÐ°Ð·Ð° Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½';
 ?>

@@ -1,26 +1,26 @@
 <?
-    $MESS['title'] = "Ñïîñîáû îïëàòû";
+    $MESS['title'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.active'] = "Àêòèâíîñòü";
-    $MESS['table.header.sort'] = "Ñîðòèðîâêà";
-    $MESS['table.header.name'] = "Íàçâàíèå";
-    $MESS['table.header.code'] = "Êîä";
-    $MESS['table.header.handler'] = "Îáðàáîò÷èê";
+    $MESS['table.header.active'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['table.header.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['table.header.code'] = "ÐšÐ¾Ð´";
+    $MESS['table.header.handler'] = "ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸Ðº";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.activate'] = "Àêòèâèðîâàòü";
-    $MESS['actions.deactivate'] = "Äåàêòèâèðîâàòü";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.activate'] = "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.activate'] = "àêòèâèðîâàòü";
-    $MESS['actions.group.deactivate'] = "äåàêòèâèðîâàòü";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.activate'] = "Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.group.deactivate'] = "Ð´ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
 
-    $MESS['nav.title'] = "Ñïîñîáû îïëàòû";
-    $MESS['field.handler.empty'] = "Îáðàáîò÷èê íå óñòàíîâëåí";
+    $MESS['nav.title'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['field.handler.empty'] = "ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸Ðº Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

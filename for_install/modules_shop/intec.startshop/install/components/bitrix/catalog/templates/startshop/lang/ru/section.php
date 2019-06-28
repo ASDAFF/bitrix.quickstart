@@ -1,11 +1,11 @@
 <?
-$MESS["SECTION_SEARCH"] = "Íàéäåíî";
-$MESS["SECTION_MODEL"] = "ìîäåëåé";
-$MESS["SECTION_SORT_TITLE"] = "Ñîðòèðîâàòü:";
-$MESS["SECTION_SORT_NAME"] = "Ïî íàçâàíèþ";
-$MESS["SECTION_SORT_PRICE"] = "Ïî öåíå";
-$MESS["SECTION_SORT_POPUL"] = "Ïî ïîïóëÿðíîñòè";
-$MESS["SECTION_SORT_NONE"] = "Íåò";
-$MESS["SECTION_SHOW"] = "Ïîêàçàòü ïî";
-$MESS["SECTION_SORT_TITLE_VIEW"] = "Âèä:";
+$MESS["SECTION_SEARCH"] = "ÐÐ°Ð¹Ð´ÐµÐ½Ð¾";
+$MESS["SECTION_MODEL"] = "Ð¼Ð¾Ð´ÐµÐ»ÐµÐ¹";
+$MESS["SECTION_SORT_TITLE"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ:";
+$MESS["SECTION_SORT_NAME"] = "ÐŸÐ¾ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÑŽ";
+$MESS["SECTION_SORT_PRICE"] = "ÐŸÐ¾ Ñ†ÐµÐ½Ðµ";
+$MESS["SECTION_SORT_POPUL"] = "ÐŸÐ¾ Ð¿Ð¾Ð¿ÑƒÐ»ÑÑ€Ð½Ð¾ÑÑ‚Ð¸";
+$MESS["SECTION_SORT_NONE"] = "ÐÐµÑ‚";
+$MESS["SECTION_SHOW"] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¿Ð¾";
+$MESS["SECTION_SORT_TITLE_VIEW"] = "Ð’Ð¸Ð´:";
 ?>

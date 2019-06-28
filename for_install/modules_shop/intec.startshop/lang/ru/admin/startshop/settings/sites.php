@@ -1,31 +1,31 @@
 <?
-	$MESS['title'] = "Ïàðàìåòðû ñàéòîâ";
-	$MESS['buttons.save'] = "Ñîõðàíèòü";
+	$MESS['title'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÑÐ°Ð¹Ñ‚Ð¾Ð²";
+	$MESS['buttons.save'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
 	
-	$MESS['sections.common'] = "Îáùèå";
-	$MESS['sections.common.order_register_new_user'] = "Àâòîðåãèñòðàöèÿ àíîíèìíûõ ïîëüçîâàòåëåé ïðè îôîðìëåíèè çàêàçà";
-	$MESS['sections.common.order_register_new_user_group'] = "Ãðóïïà äëÿ àâòîðåãèñòðèðóåìûõ ïîëüçîâàòåëåé";
+	$MESS['sections.common'] = "ÐžÐ±Ñ‰Ð¸Ðµ";
+	$MESS['sections.common.order_register_new_user'] = "ÐÐ²Ñ‚Ð¾Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ð°Ð½Ð¾Ð½Ð¸Ð¼Ð½Ñ‹Ñ… Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ Ð¿Ñ€Ð¸ Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°";
+	$MESS['sections.common.order_register_new_user_group'] = "Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ð´Ð»Ñ Ð°Ð²Ñ‚Ð¾Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹";
 
-	$MESS['sections.theme'] = "Öâåòîâàÿ òåìà";
-	$MESS['sections.delivery_and_payment'] = "Îïëàòà è äîñòàâêà";
-	$MESS['sections.delivery_and_payment.delivery.use'] = "Èñïîëüçîâàòü äîñòàâêó";
-	$MESS['sections.delivery_and_payment.payment.use'] = "Èñïîëüçîâàòü ðàçëè÷íûå ñïîñîáû îïëàòû";
-	$MESS['sections.delivery_and_payment.payment.order.status'] = "Ñòàòóñ çàêàçà ïîñëå åãî îïëàòû";
-	$MESS['sections.delivery_and_payment.payment.order.status.empty'] = "(íå ìåíÿòü ñòàòóñ)";
+	$MESS['sections.theme'] = "Ð¦Ð²ÐµÑ‚Ð¾Ð²Ð°Ñ Ñ‚ÐµÐ¼Ð°";
+	$MESS['sections.delivery_and_payment'] = "ÐžÐ¿Ð»Ð°Ñ‚Ð° Ð¸ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°";
+	$MESS['sections.delivery_and_payment.delivery.use'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÑƒ";
+	$MESS['sections.delivery_and_payment.payment.use'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð°Ð·Ð»Ð¸Ñ‡Ð½Ñ‹Ðµ ÑÐ¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+	$MESS['sections.delivery_and_payment.payment.order.status'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑ Ð·Ð°ÐºÐ°Ð·Ð° Ð¿Ð¾ÑÐ»Ðµ ÐµÐ³Ð¾ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+	$MESS['sections.delivery_and_payment.payment.order.status.empty'] = "(Ð½Ðµ Ð¼ÐµÐ½ÑÑ‚ÑŒ ÑÑ‚Ð°Ñ‚ÑƒÑ)";
 
-    $MESS['messages.notify.saved'] = "Èçìåíåíèÿ ñîõðàíåíû!";
-    $MESS['messages.error.rights'] = "Íåäîñòàòî÷íî ïðàâ äëÿ ñîõðàíåíèÿ èçìåíåíèé, äîñòóïåí òîëüêî ïðîñìîòð!";
+    $MESS['messages.notify.saved'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹!";
+    $MESS['messages.error.rights'] = "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¿Ñ€Ð°Ð² Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹, Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€!";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 
-	$MESS['sections.mail'] = "Ðàññûëêà ïî÷òû";
-	$MESS['sections.mail.use'] = "Èñïîëüçîâàòü ðàññûëêó ïî÷òû";
-	$MESS['sections.mail.mail'] = "Ýë. ïî÷òà ìàãàçèíà";
-	$MESS['sections.mail.order.property'] = "Ñâîéñòâî çàêàçà, èç êîòîðîãî áåðåòñÿ ýë. ïî÷òà êëèåíòà";
-	$MESS['sections.mail.admin.order.create'] = "Îòñûëàòü ïèñüìî î íîâîì çàêàçå ìàãàçèíó";
-	$MESS['sections.mail.admin.order.create.event'] = "Ñîáûòèå, îòïðàâëÿþùåå ïèñüìî î íîâîì çàêàçå ìàãàçèíó";
-	$MESS['sections.mail.admin.order.pay'] = "Îòñûëàòü ïèñüìî îá îïëàòå çàêàçà ìàãàçèíó";
-	$MESS['sections.mail.admin.order.pay.event'] = "Ñîáûòèå, îòïðàâëÿþùåå ïèñüìî îá îïëàòå çàêàçà ìàãàçèíó";
-	$MESS['sections.mail.client.order.create'] = "Îòñûëàòü ïèñüìî î ñäåëàííîì çàêàçå êëèåíòó";
-	$MESS['sections.mail.client.order.create.event'] = "Ñîáûòèå, îòïðàâëÿþùåå ïèñüìî î ñäåëàííîì çàêàçå êëèåíòó";
+	$MESS['sections.mail'] = "Ð Ð°ÑÑÑ‹Ð»ÐºÐ° Ð¿Ð¾Ñ‡Ñ‚Ñ‹";
+	$MESS['sections.mail.use'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð°ÑÑÑ‹Ð»ÐºÑƒ Ð¿Ð¾Ñ‡Ñ‚Ñ‹";
+	$MESS['sections.mail.mail'] = "Ð­Ð». Ð¿Ð¾Ñ‡Ñ‚Ð° Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+	$MESS['sections.mail.order.property'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð·Ð°ÐºÐ°Ð·Ð°, Ð¸Ð· ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÐµÑ€ÐµÑ‚ÑÑ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ð° ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°";
+	$MESS['sections.mail.admin.order.create'] = "ÐžÑ‚ÑÑ‹Ð»Ð°Ñ‚ÑŒ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾ Ð½Ð¾Ð²Ð¾Ð¼ Ð·Ð°ÐºÐ°Ð·Ðµ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ñƒ";
+	$MESS['sections.mail.admin.order.create.event'] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ðµ, Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑŽÑ‰ÐµÐµ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾ Ð½Ð¾Ð²Ð¾Ð¼ Ð·Ð°ÐºÐ°Ð·Ðµ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ñƒ";
+	$MESS['sections.mail.admin.order.pay'] = "ÐžÑ‚ÑÑ‹Ð»Ð°Ñ‚ÑŒ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ Ð·Ð°ÐºÐ°Ð·Ð° Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ñƒ";
+	$MESS['sections.mail.admin.order.pay.event'] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ðµ, Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑŽÑ‰ÐµÐµ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ðµ Ð·Ð°ÐºÐ°Ð·Ð° Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ñƒ";
+	$MESS['sections.mail.client.order.create'] = "ÐžÑ‚ÑÑ‹Ð»Ð°Ñ‚ÑŒ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾ ÑÐ´ÐµÐ»Ð°Ð½Ð½Ð¾Ð¼ Ð·Ð°ÐºÐ°Ð·Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñƒ";
+	$MESS['sections.mail.client.order.create.event'] = "Ð¡Ð¾Ð±Ñ‹Ñ‚Ð¸Ðµ, Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑŽÑ‰ÐµÐµ Ð¿Ð¸ÑÑŒÐ¼Ð¾ Ð¾ ÑÐ´ÐµÐ»Ð°Ð½Ð½Ð¾Ð¼ Ð·Ð°ÐºÐ°Ð·Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ñƒ";
 ?>

@@ -1,5 +1,5 @@
 <?
-    $MESS['SP_DEFAULT_SUCCESS_TEXT'] = "Âàø çàêàç ¹ID óñïåøíî îïëà÷åí!";
-    $MESS['SP_DEFAULT_FAIL_TEXT_WITH_ORDER'] = "Âàø çàêàç ¹ID íå îïëà÷åí, âî âðåìÿ îïëàòû ïðîèçîøëà îøèáêà!";
-    $MESS['SP_DEFAULT_FAIL_TEXT_WITHOUT_ORDER'] = "Îøèáêà îïëàòû!";
+    $MESS['SP_DEFAULT_SUCCESS_TEXT'] = "Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· â„–ID ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½!";
+    $MESS['SP_DEFAULT_FAIL_TEXT_WITH_ORDER'] = "Ð’Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· â„–ID Ð½Ðµ Ð¾Ð¿Ð»Ð°Ñ‡ÐµÐ½, Ð²Ð¾ Ð²Ñ€ÐµÐ¼Ñ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹ Ð¿Ñ€Ð¾Ð¸Ð·Ð¾ÑˆÐ»Ð° Ð¾ÑˆÐ¸Ð±ÐºÐ°!";
+    $MESS['SP_DEFAULT_FAIL_TEXT_WITHOUT_ORDER'] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹!";
 ?>

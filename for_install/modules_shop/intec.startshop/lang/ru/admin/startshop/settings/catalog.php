@@ -1,21 +1,21 @@
 <?
-    $MESS['title'] = "Òîðãîâûå êàòàëîãè";
+    $MESS['title'] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð¸";
 
-    $MESS['table.header.iblock'] = "Èíôîáëîê";
-    $MESS['table.header.use_quantity'] = "Èñïîëüçóåòñÿ êîëè÷åñòâåííûé ó÷åò";
+    $MESS['table.header.iblock'] = "Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº";
+    $MESS['table.header.use_quantity'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ‡ÐµÑ‚";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.enable_quantity'] = "Âêëþ÷èòü êîëè÷åñòâåííûé ó÷åò";
-    $MESS['actions.disable_quantity'] = "Îòêëþ÷èòü êîëè÷åñòâåííûé ó÷åò";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.enable_quantity'] = "Ð’ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ‡ÐµÑ‚";
+    $MESS['actions.disable_quantity'] = "ÐžÑ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ‡ÐµÑ‚";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.enable_quantity'] = "âêëþ÷èòü êîëè÷åñòâåííûé ó÷åò";
-    $MESS['actions.group.disable_quantity'] = "îòêëþ÷èòü êîëè÷åñòâåííûé ó÷åò";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.enable_quantity'] = "Ð²ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ‡ÐµÑ‚";
+    $MESS['actions.group.disable_quantity'] = "Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²ÐµÐ½Ð½Ñ‹Ð¹ ÑƒÑ‡ÐµÑ‚";
 
-    $MESS['nav.title'] = "Òîðãîâûå êàòàëîãè";
+    $MESS['nav.title'] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð¸";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

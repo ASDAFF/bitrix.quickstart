@@ -1,12 +1,12 @@
 <?
-$MESS["MENU_THEME"] = "Òåìà ìåíþ";
-$MESS["F_THEME_SITE"] = "Áðàòü òåìó èç íàñòðîåê ñàéòà (äëÿ ðåøåíèÿ bitrix.eshop)";
-$MESS["F_THEME_BLUE"] = "Ñèíÿÿ";
-$MESS["F_THEME_WOOD"] = "Äåðåâî";
-$MESS["F_THEME_YELLOW"] = "Æåëòàÿ";
-$MESS["F_THEME_GREEN"] = "Çåëåíàÿ";
-$MESS["F_THEME_RED"] = "Êðàñíàÿ";
-$MESS["F_THEME_BLACK"] = "Òåìíàÿ";
-$MESS["HIDE_CATALOG"] = "Êàòàëîã ñâåðíóò";
-$MESS["COUNT_ITEMS_CATALOG"] = "Êîëè÷åñòâî îòîáðàæàåìûõ ýëåìåíòîâ";
+$MESS["MENU_THEME"] = "Ð¢ÐµÐ¼Ð° Ð¼ÐµÐ½ÑŽ";
+$MESS["F_THEME_SITE"] = "Ð‘Ñ€Ð°Ñ‚ÑŒ Ñ‚ÐµÐ¼Ñƒ Ð¸Ð· Ð½Ð°ÑÑ‚Ñ€Ð¾ÐµÐº ÑÐ°Ð¹Ñ‚Ð° (Ð´Ð»Ñ Ñ€ÐµÑˆÐµÐ½Ð¸Ñ bitrix.eshop)";
+$MESS["F_THEME_BLUE"] = "Ð¡Ð¸Ð½ÑÑ";
+$MESS["F_THEME_WOOD"] = "Ð”ÐµÑ€ÐµÐ²Ð¾";
+$MESS["F_THEME_YELLOW"] = "Ð–ÐµÐ»Ñ‚Ð°Ñ";
+$MESS["F_THEME_GREEN"] = "Ð—ÐµÐ»ÐµÐ½Ð°Ñ";
+$MESS["F_THEME_RED"] = "ÐšÑ€Ð°ÑÐ½Ð°Ñ";
+$MESS["F_THEME_BLACK"] = "Ð¢ÐµÐ¼Ð½Ð°Ñ";
+$MESS["HIDE_CATALOG"] = "ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³ ÑÐ²ÐµÑ€Ð½ÑƒÑ‚";
+$MESS["COUNT_ITEMS_CATALOG"] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°ÐµÐ¼Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
 ?>

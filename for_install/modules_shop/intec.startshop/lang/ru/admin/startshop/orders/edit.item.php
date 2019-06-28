@@ -1,15 +1,15 @@
 <?
-    $MESS['title'] = "Ðåäàêòèðîâàòü ïîçèöèþ â çàêàçå";
-    $MESS['title.buttons.back'] = "Íàçàä";
-    $MESS['tabs.common'] = "Ïîçèöèÿ â çàêàçå";
+    $MESS['title'] = "Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ Ð² Ð·Ð°ÐºÐ°Ð·Ðµ";
+    $MESS['title.buttons.back'] = "ÐÐ°Ð·Ð°Ð´";
+    $MESS['tabs.common'] = "ÐŸÐ¾Ð·Ð¸Ñ†Ð¸Ñ Ð² Ð·Ð°ÐºÐ°Ð·Ðµ";
 
-    $MESS['fields.item'] = "Òîâàð";
-    $MESS['fields.item.removed'] = "(Óäàëåí èç êàòàëîãà)";
-    $MESS['fields.name'] = "Íàèìåíîâàíèå";
-    $MESS['fields.quantity'] = "Êîëè÷åñòâî";
-    $MESS['fields.quantity.total'] = "(Âñåãî èìååòñÿ #QUANTITY#)";
-    $MESS['fields.price'] = "Öåíà";
+    $MESS['fields.item'] = "Ð¢Ð¾Ð²Ð°Ñ€";
+    $MESS['fields.item.removed'] = "(Ð£Ð´Ð°Ð»ÐµÐ½ Ð¸Ð· ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð°)";
+    $MESS['fields.name'] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['fields.quantity'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+    $MESS['fields.quantity.total'] = "(Ð’ÑÐµÐ³Ð¾ Ð¸Ð¼ÐµÐµÑ‚ÑÑ #QUANTITY#)";
+    $MESS['fields.price'] = "Ð¦ÐµÐ½Ð°";
 
-    $MESS['button.apply'] = "Ïðèìåíèòü";
-    $MESS['button.cancel'] = "Îòìåíà";
+    $MESS['button.apply'] = "ÐŸÑ€Ð¸Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['button.cancel'] = "ÐžÑ‚Ð¼ÐµÐ½Ð°";
 ?>

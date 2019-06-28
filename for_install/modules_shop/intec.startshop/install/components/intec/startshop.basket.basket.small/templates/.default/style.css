@@ -37,7 +37,7 @@
 	vertical-align: middle;
 	width: 20px;
     height: 20px;
-	background: url('images/startshop.basket.icon.png') no-repeat;
+	background: url('images/startshop.basket.icon.png');
 }
 
 .startshop-basket-small .startshop-basket-small-text-total {

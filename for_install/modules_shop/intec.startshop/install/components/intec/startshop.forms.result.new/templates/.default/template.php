@@ -1,16 +1,6 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();?>
 <?$this->setFrameMode(true);?>
 <?
-
-	if ( !empty($_REQUEST) ) {
-		foreach($_REQUEST as $key=>$val) {
-			if(SITE_CHARSET == 'windows-1251'){ 
-				if (iconv('UTF-8','windows-1251',$_REQUEST[$key]))
-				$_REQUEST[$key]= iconv('UTF-8','windows-1251',$_REQUEST[$key]); 
-			} 
-		}
-	}
-
     $sUniqueID = 'form_'.spl_object_hash($this);
 
     if ($arParams['AJAX_MODE'] == 'Y') {

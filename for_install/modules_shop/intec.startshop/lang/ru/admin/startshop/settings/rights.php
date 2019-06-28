@@ -1,24 +1,24 @@
 <?
-    $MESS['title'] = "Ïðàâà";
-    $MESS['buttons.save'] = "Ñîõðàíèòü";
+    $MESS['title'] = "ÐŸÑ€Ð°Ð²Ð°";
+    $MESS['buttons.save'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
 
-    $MESS['tabs.common'] = "Ïðàâà äëÿ ãðóïïû \"#GROUP#\"";
+    $MESS['tabs.common'] = "ÐŸÑ€Ð°Ð²Ð° Ð´Ð»Ñ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ \"#GROUP#\"";
 
-    $MESS['messages.notify.saved'] = "Èçìåíåíèÿ ñîõðàíåíû!";
+    $MESS['messages.notify.saved'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹!";
 
-    $MESS['rights.NONE'] = "[D] Íåò äîñòóïà";
-    $MESS['rights.V'] = "[V] Òîëüêî ïðîñìîòð";
-    $MESS['rights.E.V'] = "[E] Ïðîñìîòð è ðåäàêòèðîâàíèå";
+    $MESS['rights.NONE'] = "[D] ÐÐµÑ‚ Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°";
+    $MESS['rights.V'] = "[V] Ð¢Ð¾Ð»ÑŒÐºÐ¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€";
+    $MESS['rights.E.V'] = "[E] ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ Ð¸ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ";
 
-    $MESS['sections.catalog'] = "Òîðãîâûå êàòàëîãè";
-    $MESS['sections.sites'] = "Ïàðàìåòðû ñàéòîâ";
-    $MESS['sections.order.properties'] = "Ñâîéñòâà çàêàçîâ";
-    $MESS['sections.order.statuses'] = "Ñòàòóñû çàêàçîâ";
-    $MESS['sections.price'] = "Òèïû öåí";
-    $MESS['sections.delivery'] = "Ñïîñîáû äîñòàâêè";
-    $MESS['sections.currency'] = "Âàëþòû";
-    $MESS['sections.payment'] = "Ñïîñîáû îïëàòû";
-    $MESS['sections.1c'] = "Îáìåí äàííûìè ñ \"1Ñ: Ïðåäïðèÿòèå\"";
-    $MESS['sections.orders'] = "Çàêàçû";
-    $MESS['sections.forms'] = "Âåá ôîðìû";
+    $MESS['sections.catalog'] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð¸";
+    $MESS['sections.sites'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ ÑÐ°Ð¹Ñ‚Ð¾Ð²";
+    $MESS['sections.order.properties'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+    $MESS['sections.order.statuses'] = "Ð¡Ñ‚Ð°Ñ‚ÑƒÑÑ‹ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²";
+    $MESS['sections.price'] = "Ð¢Ð¸Ð¿Ñ‹ Ñ†ÐµÐ½";
+    $MESS['sections.delivery'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+    $MESS['sections.currency'] = "Ð’Ð°Ð»ÑŽÑ‚Ñ‹";
+    $MESS['sections.payment'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð±Ñ‹ Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['sections.1c'] = "ÐžÐ±Ð¼ÐµÐ½ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ñ \"1Ð¡: ÐŸÑ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ðµ\"";
+    $MESS['sections.orders'] = "Ð—Ð°ÐºÐ°Ð·Ñ‹";
+    $MESS['sections.forms'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹";
 ?>

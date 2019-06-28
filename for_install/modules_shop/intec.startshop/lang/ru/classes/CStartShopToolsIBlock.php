@@ -1,6 +1,6 @@
 <?
-    $MESS['cstartshoptoolsiblock.properties.quantity'] = "Êîëè÷åñòâî";
-    $MESS['cstartshoptoolsiblock.properties.quantity_ratio'] = "Êîýôôèöèåíò êîëè÷åñòâà";
-    $MESS['cstartshoptoolsiblock.properties.currency'] = "Âàëþòà äëÿ \"#PRICE_TYPE#\"";
-    $MESS['cstartshoptoolsiblock.properties.offers_link_property'] = "Ñâîéñòâî ïðèâÿçêè ê òîâàðó";
+    $MESS['cstartshoptoolsiblock.properties.quantity'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+    $MESS['cstartshoptoolsiblock.properties.quantity_ratio'] = "ÐšÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð°";
+    $MESS['cstartshoptoolsiblock.properties.currency'] = "Ð’Ð°Ð»ÑŽÑ‚Ð° Ð´Ð»Ñ \"#PRICE_TYPE#\"";
+    $MESS['cstartshoptoolsiblock.properties.offers_link_property'] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¸ Ðº Ñ‚Ð¾Ð²Ð°Ñ€Ñƒ";
 ?>

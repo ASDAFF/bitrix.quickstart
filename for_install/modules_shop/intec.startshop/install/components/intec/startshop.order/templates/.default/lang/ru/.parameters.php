@@ -1,6 +1,6 @@
 <?
-    $MESS["SO_DEFAULT_USE_ADAPTABILITY"] = "Èñïîëüçîâàòü àäàïòèâíîñòü";
-    $MESS["SO_DEFAULT_USE_ITEMS_PICTURES"] = "Âûâîäèòü èçîáðàæåíèÿ òîâàðîâ";
-    $MESS["SO_DEFAULT_USE_BUTTON_BASKET"] = "Îòîáðàæàòü êíîïêó ïåðåõîäà â êîðçèíó";
-    $MESS["SO_DEFAULT_URL_BASKET"] = "Ñòðàíèöà ñ êîðçèíîé";
+    $MESS["SO_DEFAULT_USE_ADAPTABILITY"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS["SO_DEFAULT_USE_ITEMS_PICTURES"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
+    $MESS["SO_DEFAULT_USE_BUTTON_BASKET"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ ÐºÐ½Ð¾Ð¿ÐºÑƒ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ð° Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+    $MESS["SO_DEFAULT_URL_BASKET"] = "Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ð¾Ð¹";
 ?>

@@ -1,7 +1,7 @@
 <?
-    $MESS["IBLOCK_OFFERS_PREFIX"] = "Òîðãîâûå ïðåäëîæåíèÿ";
-    $MESS["IBLOCK_OFFERS_LINK_PROPERTY_NAME"] = "Ñâîéñòâî ïðèâÿçêè";
-    $MESS["IBLOCK_PROPERTY_PICTURES"] = "Èçîáðàæåíèÿ";
-    $MESS["IBLOCK_PROPERTY_ARTICLE"] = "Àðòèêóë";
-    $MESS["IBLOCK_PROPERTY_TRAITS"] = "Ðåêâèçèòû";
+    $MESS["IBLOCK_OFFERS_PREFIX"] = "Ð¢Ð¾Ñ€Ð³Ð¾Ð²Ñ‹Ðµ Ð¿Ñ€ÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ";
+    $MESS["IBLOCK_OFFERS_LINK_PROPERTY_NAME"] = "Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¸";
+    $MESS["IBLOCK_PROPERTY_PICTURES"] = "Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ";
+    $MESS["IBLOCK_PROPERTY_ARTICLE"] = "ÐÑ€Ñ‚Ð¸ÐºÑƒÐ»";
+    $MESS["IBLOCK_PROPERTY_TRAITS"] = "Ð ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ñ‹";
 ?>

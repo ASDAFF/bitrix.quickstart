@@ -48,7 +48,7 @@
                 $arPropertyValues = array("0" => array("ID" => "0", "NAME" => GetMessage('SO_SELECT_EMPTY')));
 
                 if (!empty($arProperty['DATA']['IBLOCK_ID'])) {
-                    $arPropertyValuesTemp = CStartShopUtil::DBResultToArray(CIBlockElement::GetList(array('SORT' => 'ASC'), array('IBLOCK_ID' => $arProperty['DATA']['IBLOCK_ID'], 'ACTIVE'=>'Y')), 'ID');
+                    $arPropertyValuesTemp = CStartShopUtil::DBResultToArray(CIBlockElement::GetList(array('SORT' => 'ASC'), array('IBLOCK_ID' => $arProperty['DATA']['IBLOCK_ID'])), 'ID');
 
                     foreach ($arPropertyValuesTemp as $iPropertyValueTempID => $arPropertyValueTemp)
                         $arPropertyValues[$iPropertyValueTempID] = $arPropertyValueTemp;
@@ -61,26 +61,23 @@
             }
 
         $arPropertiesCommon = $arProperties;
-		$arResult['DELIVERIES_PROPERTIES'] = array();
-        if (!empty($arResult['DELIVERIES'])) {			
+
+        if (!empty($arResult['DELIVERIES']))
             foreach ($arResult['DELIVERIES'] as $iDeliveryID => $arDelivery) {
                 $arResult['DELIVERIES'][$iDeliveryID]['PRICE'] = CStartShopCurrency::FormatAsArray(CStartShopCurrency::Convert($arDelivery['PRICE'], null, $arParams['CURRENCY']), $arParams['CURRENCY']);
                 $arDeliveryProperties = array();
+
                 if (!empty($arDelivery['PROPERTIES']))
-					
                     foreach ($arDelivery['PROPERTIES'] as $iDeliveryProperty) {
-                        if ( !empty($arProperties[$iDeliveryProperty])) {
+                        if (!empty($arProperties[$iDeliveryProperty]))
                             $arDeliveryProperties[$iDeliveryProperty] = $arProperties[$iDeliveryProperty];
-							if (!in_array($iDeliveryProperty,$arResult['DELIVERIES_PROPERTIES']))
-								$arResult['DELIVERIES_PROPERTIES'][$iDeliveryProperty] = $arProperties[$iDeliveryProperty];
-						}
+
                         unset($arPropertiesCommon[$iDeliveryProperty]);
                     }
 
                 $arResult['DELIVERIES'][$iDeliveryID]['PROPERTIES'] = $arDeliveryProperties;
                 unset($arDeliveryProperties);
             }
-		}
 
         $arResult['PROPERTIES'] = $arPropertiesCommon;
         unset($arPropertiesCommon, $arProperties);
@@ -136,7 +133,7 @@
         if (empty($arResult['CURRENCY']))
             $arResult['ERRORS'][] = array("CODE" => "CURRENCY_EMPTY");
 
-		if (empty($arDelivery) && !empty($arResult['DELIVERIES']))
+        if (empty($arDelivery) && !empty($arResult['DELIVERIES']))
             $arResult['ERRORS'][] = array("CODE" => "DELIVERY_EMPTY");
 
         if (empty($arPayment) && !empty($arResult['PAYMENTS']))
@@ -242,41 +239,7 @@
                 $arResult['ORDER'] = $iOrderID;
 
                 $arOrder = CStartShopOrder::GetByID($iOrderID)->Fetch();
-				
-				$strOrderList = "";
-				foreach ($arOrder["ITEMS"] as $val)
-				{
-					$strOrderList .= $val["NAME"]." - ".$val["QUANTITY"]." ".GetMessage("SOA_SHT").": ".CStartShopCurrency::FormatAsString(CStartShopCurrency::Convert($val["PRICE"] , $arOrder['CURRENCY']));
-					$strOrderList .= "\n";
-				}
-				
-				$orderProperty = CStartShopUtil::DBResultToArray(CStartShopOrderProperty::GetList(array('SORT' => 'ASC'), array('SID' => SITE_ID, 'ACTIVE' => 'Y')), 'ID');
-				$strOrderProp = "";
-				foreach ($arOrder["PROPERTIES"] as $key=>$val)
-				{
-					if ($orderProperty[$key]['TYPE'] =='L' && $orderProperty[$key]['SUBTYPE'] == 'IBLOCK_ELEMENT') {
-						if (!empty($orderProperty[$key]['DATA']['IBLOCK_ID'])) {
-							$arPropertyValue = CIBlockElement::GetList(array(), array('IBLOCK_ID' => $orderProperty[$key]['DATA']['IBLOCK_ID'], 'ID'=>$val))->Fetch();
-							$val = $arPropertyValue['NAME'];
-						}
-					}
-					$strOrderProp .= $orderProperty[$key]['LANG'][LANGUAGE_ID]['NAME']." - ".$val;
-					$strOrderProp .= "\n";
-				}
-				
-				$orderDeliveryPrice = 0;
-				if (!empty($arOrder['DELIVERY'])) {
-					$arOrderDelivery = CStartShopDelivery::GetByID($arOrder['DELIVERY'])->Fetch();
-					$orderDeliveryPrice = $arOrderDelivery['PRICE'];
-				}
-				
-				$orderPayment = '';
-				if (!empty($arOrder['PAYMENT'])) {
-					$arPayment = CStartShopPayment::GetByID($arOrder['PAYMENT'])->Fetch();
-					$orderPayment = $arPayment['LANG'][LANGUAGE_ID]['NAME'];
-				}
-				
-				
+
                 if (CStartShopVariables::Get('MAIL_USE', 'N', SITE_ID) == "Y") {
                     if (CStartShopVariables::Get('MAIL_ADMIN_ORDER_CREATE', 'N', SITE_ID) == "Y") {
                         $sEvent = CStartShopVariables::Get('MAIL_ADMIN_ORDER_CREATE_EVENT', '', SITE_ID);
@@ -288,10 +251,6 @@
                                 "ORDER_ID" => $arOrder['ID'],
                                 "ORDER_AMOUNT" => CStartShopCurrency::FormatAsString(CStartShopCurrency::Convert($arOrder['AMOUNT'] , $arOrder['CURRENCY'])),
                                 "STARTSHOP_SHOP_EMAIL" => $sMail,
-								"STARTSHOP_ORDER_LIST" => $strOrderList,
-								"STARTSHOP_ORDER_PROPERTY" => $strOrderProp,
-								"ORDER_DELIVERY" => $orderDeliveryPrice,
-								"ORDER_PAYMENT" => $orderPayment
                             ), "N", "");
 
                         unset($oEvent);
@@ -308,10 +267,7 @@
                                 "ORDER_ID" => $arOrder['ID'],
                                 "ORDER_AMOUNT" => CStartShopCurrency::FormatAsString(CStartShopCurrency::Convert($arOrder['AMOUNT'] , $arOrder['CURRENCY'])),
                                 "STARTSHOP_CLIENT_EMAIL" => $sMail,
-                                "STARTSHOP_SHOP_EMAIL" => $sMailShop,
-								"STARTSHOP_ORDER_LIST" => $strOrderList,
-								"ORDER_DELIVERY" => $orderDeliveryPrice,
-								"ORDER_PAYMENT" => $orderPayment
+                                "STARTSHOP_SHOP_EMAIL" => $sMailShop
                             ), "N", "");
 
                         unset($oEvent);

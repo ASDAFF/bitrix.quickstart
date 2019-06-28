@@ -1,33 +1,33 @@
 <?
-    $MESS['title'] = "Âåá ôîðìû";
+    $MESS['title'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.code'] = "Êîä";
-    $MESS['table.header.name'] = "Íàçâàíèå";
-    $MESS['table.header.sort'] = "Ñîðòèðîâêà";
-    $MESS['table.header.sid'] = "Ñàéòû";
-    $MESS['table.header.use_post'] = "Îòïðàâëÿòü ðåçóëüòàòû ïî ýë. ïî÷òå";
-    $MESS['table.header.use_captcha'] = "Èñïîëüçîâàòü ïðîâåðî÷íûé êîä";
-    $MESS['table.header.results'] = "Ðåçóëüòàòû";
-    $MESS['table.header.fields'] = "Ïîëÿ";
-    $MESS['table.header.payment'] = "Ñïîñîá îïëàòû";
-    $MESS['table.header.payed'] = "Îïëà÷åí";
-    $MESS['table.header.amount'] = "Ñòîèìîñòü";
-    $MESS['table.header.date_create'] = "Äàòà ñîçäàíèÿ";
+    $MESS['table.header.code'] = "ÐšÐ¾Ð´";
+    $MESS['table.header.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['table.header.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['table.header.sid'] = "Ð¡Ð°Ð¹Ñ‚Ñ‹";
+    $MESS['table.header.use_post'] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð»ÑÑ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾ ÑÐ». Ð¿Ð¾Ñ‡Ñ‚Ðµ";
+    $MESS['table.header.use_captcha'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð¾Ð²ÐµÑ€Ð¾Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´";
+    $MESS['table.header.results'] = "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹";
+    $MESS['table.header.fields'] = "ÐŸÐ¾Ð»Ñ";
+    $MESS['table.header.payment'] = "Ð¡Ð¿Ð¾ÑÐ¾Ð± Ð¾Ð¿Ð»Ð°Ñ‚Ñ‹";
+    $MESS['table.header.payed'] = "ÐžÐ¿Ð»Ð°Ñ‡ÐµÐ½";
+    $MESS['table.header.amount'] = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.date_create'] = "Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
 
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.clear_results'] = "Î÷èñòèòü ðåçóëüòàòû";
-    $MESS['actions.results'] = "Ïðîñìîòðåòü ðåçóëüòàòû";
-    $MESS['actions.fields'] = "Ïðîñìîòðåòü ïîëÿ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.clear_results'] = "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹";
+    $MESS['actions.results'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹";
+    $MESS['actions.fields'] = "ÐŸÑ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€ÐµÑ‚ÑŒ Ð¿Ð¾Ð»Ñ";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.clear_results'] = "î÷èñòèòü ðåçóëüòàòû";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.clear_results'] = "Ð¾Ñ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
-    $MESS['nav.title'] = "Âåá ôîðìû";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
+    $MESS['nav.title'] = "Ð’ÐµÐ± Ñ„Ð¾Ñ€Ð¼Ñ‹";
 
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

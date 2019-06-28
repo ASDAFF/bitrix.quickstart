@@ -1,6 +1,6 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();?>
 <?$this->setFrameMode(true);?>
-<a class="startshop-basket-small default startshop-link startshop-link-hover-dark<?=$arParams['DISPLAY_COUNT'] == "Y" ? ' startshop-with-count' : ''?>" title="<?=$arResult['SUM']['PRINT_VALUE']?>" href="<?=$arParams['URL_BASKET']?>">
+<a class="startshop-basket-small default startshop-link startshop-link-hover-dark<?=$arParams['DISPLAY_COUNT'] == "Y" ? ' startshop-with-count' : ''?>" href="<?=$arParams['URL_BASKET']?>">
 	<?$frame = $this->createFrame()->begin()?>
         <?if ($arParams['USE_COUNT'] == "Y"):?>
 		    <?if ($arResult['COUNT'] > 0 || $arParams['USE_COUNT_IF_EMPTY'] == "Y"):?>

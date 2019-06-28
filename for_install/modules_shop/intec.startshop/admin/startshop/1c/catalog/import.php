@@ -97,10 +97,10 @@
         foreach ($arSites as $arSite)
             $arIBlock["SITE_ID"][] = $arSite["ID"];
 
-        if ($oNode = $oXml->SelectNodes("/Êîììåð÷åñêàÿÈíôîðìàöèÿ/Êëàññèôèêàòîð/Èä"))
+        if ($oNode = $oXml->SelectNodes("/ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°ÑÐ˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ/ÐšÐ»Ð°ÑÑÐ¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€/Ð˜Ð´"))
             $arIBlock['EXTERNAL_ID'] = $fConvert($oNode->textContent());
 
-        if ($oNode = $oXml->SelectNodes("/Êîììåð÷åñêàÿÈíôîðìàöèÿ/Êëàññèôèêàòîð/Íàèìåíîâàíèå"))
+        if ($oNode = $oXml->SelectNodes("/ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°ÑÐ˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ/ÐšÐ»Ð°ÑÑÐ¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€/ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ"))
             $arIBlock['NAME'] = $fConvert($oNode->textContent());
 
         if (!empty($arIBlock["IBLOCK_TYPE_ID"]) && !empty($arIBlock["SITE_ID"]) && !empty($arIBlock["EXTERNAL_ID"]) && !empty($arIBlock["NAME"])) {
@@ -130,7 +130,7 @@
                 array("IBLOCK_ID" => $arIBlock["ID"])
             ), 'EXTERNAL_ID');
 
-            if ($oNode = $oXml->SelectNodes("/Êîììåð÷åñêàÿÈíôîðìàöèÿ/Êëàññèôèêàòîð/Ãðóïïû"))
+            if ($oNode = $oXml->SelectNodes("/ÐšÐ¾Ð¼Ð¼ÐµÑ€Ñ‡ÐµÑÐºÐ°ÑÐ˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ/ÐšÐ»Ð°ÑÑÐ¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€/Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹"))
                 $arIBlockSectionsNodes = CheckSectionsByNodes($arIBlock, $arIBlockSections, $oNode->children());
 
             if ($arOptions["IBLOCK_SECTION_ACTION"] != "NOTHING") {

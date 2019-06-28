@@ -152,8 +152,10 @@
                                     </select>
                                 </div>
                             </div>
-                            <?foreach ($arResult['DELIVERIES_PROPERTIES'] as $arDeliveryProperty):?>
+                            <?foreach ($arResult['DELIVERIES'] as $iDeliveryKey => $arDelivery):?>
+                                <?foreach ($arDelivery['PROPERTIES'] as $arDeliveryProperty):?>
                                     <?$fPropertyDraw($arDeliveryProperty, $arUser);?>
+                                <?endforeach;?>
                             <?endforeach;?>
                         </div>
                     </div>

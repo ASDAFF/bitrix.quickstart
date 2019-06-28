@@ -1,12 +1,10 @@
 <?
-    $MESS['SBB_DEFAULT_COLUMN_NAME'] = "Íàèìåíîâàíèå";
-    $MESS['SBB_DEFAULT_COLUMN_QUANTITY'] = "Êîëè÷åñòâî";
-    $MESS['SBB_DEFAULT_COLUMN_PRICE'] = "Öåíà";
-    $MESS['SBB_DEFAULT_COLUMN_TOTAL'] = "Èòîãî";
-    $MESS['SBB_DEFAULT_FIELD_SUM'] = "Èòîãî";
-    $MESS['SBB_DEFAULT_BUTTON_CLEAR'] = "Î÷èñòèòü";
-    $MESS['SBB_DEFAULT_BUTTON_ORDER'] = "Îôîðìèòü çàêàç";
-	$MESS['SALE_BACK'] = "Ïðîäîëæèòü ïîêóïêè";
-    $MESS['SBB_DEFAULT_NOTIFIES_ITEMS_EMPTY'] = "Â êîðçèíå íåò òîâàðîâ!";
-	$MESS['SBB_DEFAULT_BUTTONS_FAST_ORDER'] = "Áûñòðûé çàêàç";
+    $MESS['SBB_DEFAULT_COLUMN_NAME'] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['SBB_DEFAULT_COLUMN_QUANTITY'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+    $MESS['SBB_DEFAULT_COLUMN_PRICE'] = "Ð¦ÐµÐ½Ð°";
+    $MESS['SBB_DEFAULT_COLUMN_TOTAL'] = "Ð˜Ñ‚Ð¾Ð³Ð¾";
+    $MESS['SBB_DEFAULT_FIELD_SUM'] = "Ð˜Ñ‚Ð¾Ð³Ð¾";
+    $MESS['SBB_DEFAULT_BUTTON_CLEAR'] = "ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ";
+    $MESS['SBB_DEFAULT_BUTTON_ORDER'] = "ÐžÑ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·";
+    $MESS['SBB_DEFAULT_NOTIFIES_ITEMS_EMPTY'] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ Ð½ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²!";
 ?>

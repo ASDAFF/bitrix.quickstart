@@ -1,6 +1,6 @@
 <?
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-	$APPLICATION->SetTitle("Ëè÷íûé êàáèíåò");
+	$APPLICATION->SetTitle("Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð±Ð¸Ð½ÐµÑ‚");
 ?>
 <?if ($USER->IsAuthorized()):?>
 	<?$APPLICATION->IncludeComponent(
@@ -33,8 +33,8 @@
 				"404_SET_STATUS" => "Y",
 				"404_REDIRECT" => "Y",
 				"404_PAGE" => "/404.php",
-				"TITLE_ORDERS_LIST" => "Çàêàçû",
-				"TITLE_ORDERS_DETAIL" => "Çàêàç",
+				"TITLE_ORDERS_LIST" => "Ð—Ð°ÐºÐ°Ð·Ñ‹",
+				"TITLE_ORDERS_DETAIL" => "Ð—Ð°ÐºÐ°Ð·",
 				"URL_AUTHORIZE" => "#PERSONAL_PATH#"
 		),
 		false

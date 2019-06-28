@@ -1,32 +1,32 @@
 <?
-    $MESS['title'] = "Îáìåí äàííûìè ñ \"1Ñ: Ïðåäïðèÿòèå\"";
-    $MESS['tabs.1c'] = "Ïàðàìåòðû îáìåíà äàííûìè ñ \"1Ñ: Ïðåäïðèÿòèå\"";
-    $MESS['buttons.save'] = "Ñîõðàíèòü";
+    $MESS['title'] = "ÐžÐ±Ð¼ÐµÐ½ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ñ \"1Ð¡: ÐŸÑ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ðµ\"";
+    $MESS['tabs.1c'] = "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ð¾Ð±Ð¼ÐµÐ½Ð° Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ñ \"1Ð¡: ÐŸÑ€ÐµÐ´Ð¿Ñ€Ð¸ÑÑ‚Ð¸Ðµ\"";
+    $MESS['buttons.save'] = "Ð¡Ð¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ";
 
-    $MESS['sections.exchange'] = "Îáìåí";
-    $MESS['sections.exchange.allow'] = "Ðàçðåøèòü îáìåí";
-    $MESS['sections.exchange.file_size'] = "Ìàêñèìàëüíûé ðàçìåð ôàéëà (â áàéòàõ)";
-    $MESS['sections.exchange.iblock_type'] = "Òèï èíôîáëîêà äëÿ âûãðóçêè";
-    $MESS['sections.exchange.iblock_synchronize_name'] = "Ñèíõðîíèçèðîâàòü íàçâàíèå èíôîáëîêà";
-    $MESS['sections.exchange.iblock_section_synchronize_name'] = "Ñèíõðîíèçèðîâàòü íàçâàíèå êàòåãîðèé";
-    $MESS['sections.exchange.iblock_property_synchronize_name'] = "Ñèíõðîíèçèðîâàòü íàçâàíèÿ ñâîéñòâ";
-    $MESS['sections.exchange.iblock_element_synchronize_name'] = "Ñèíõðîíèçèðîâàòü íàçâàíèÿ ýëåìåíòîâ";
-    $MESS['sections.exchange.iblock_section_action'] = "Äåéñòâèå ñ îòñóòñòâóþùèìè íîìåíêëàòóðàìè â ôàéëå âûãðóçêè";
-    $MESS['sections.exchange.iblock_section_action.nothing'] = "Íå òðåáóåòñÿ";
-    $MESS['sections.exchange.iblock_section_action.deactivate'] = "Äåàêòèâèðîâàòü";
-    $MESS['sections.exchange.iblock_section_action.delete'] = "Óäàëèòü";
-    $MESS['sections.exchange.iblock_property_action'] = "Äåéñòâèå ñ îòñóòñòâóþùèìè ñâîéñòâàìè â ôàéëå âûãðóçêè";
-    $MESS['sections.exchange.iblock_property_action.nothing'] = "Íå òðåáóåòñÿ";
-    $MESS['sections.exchange.iblock_property_action.deactivate'] = "Äåàêòèâèðîâàòü";
-    $MESS['sections.exchange.iblock_property_action.delete'] = "Óäàëèòü";
-    $MESS['sections.exchange.iblock_element_action'] = "Äåéñòâèå ñ îòñóòñòâóþùèìè òîâàðàìè â ôàéëå âûãðóçêè";
-    $MESS['sections.exchange.iblock_element_action.nothing'] = "Íå òðåáóåòñÿ";
-    $MESS['sections.exchange.iblock_element_action.deactivate'] = "Äåàêòèâèðîâàòü";
-    $MESS['sections.exchange.iblock_element_action.delete'] = "Óäàëèòü";
-    $MESS['sections.exchange.iblock_element_import_length'] = "Êîëè÷åñòâî èìïîðòèðóåìûõ ïîçèöèé çà ðàç";
+    $MESS['sections.exchange'] = "ÐžÐ±Ð¼ÐµÐ½";
+    $MESS['sections.exchange.allow'] = "Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¾Ð±Ð¼ÐµÐ½";
+    $MESS['sections.exchange.file_size'] = "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ñ„Ð°Ð¹Ð»Ð° (Ð² Ð±Ð°Ð¹Ñ‚Ð°Ñ…)";
+    $MESS['sections.exchange.iblock_type'] = "Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ° Ð´Ð»Ñ Ð²Ñ‹Ð³Ñ€ÑƒÐ·ÐºÐ¸";
+    $MESS['sections.exchange.iblock_synchronize_name'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°";
+    $MESS['sections.exchange.iblock_section_synchronize_name'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¹";
+    $MESS['sections.exchange.iblock_property_synchronize_name'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²";
+    $MESS['sections.exchange.iblock_element_synchronize_name'] = "Ð¡Ð¸Ð½Ñ…Ñ€Ð¾Ð½Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ñ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²";
+    $MESS['sections.exchange.iblock_section_action'] = "Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ñ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¼Ð¸ Ð½Ð¾Ð¼ÐµÐ½ÐºÐ»Ð°Ñ‚ÑƒÑ€Ð°Ð¼Ð¸ Ð² Ñ„Ð°Ð¹Ð»Ðµ Ð²Ñ‹Ð³Ñ€ÑƒÐ·ÐºÐ¸";
+    $MESS['sections.exchange.iblock_section_action.nothing'] = "ÐÐµ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ";
+    $MESS['sections.exchange.iblock_section_action.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_section_action.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_property_action'] = "Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ñ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¼Ð¸ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð°Ð¼Ð¸ Ð² Ñ„Ð°Ð¹Ð»Ðµ Ð²Ñ‹Ð³Ñ€ÑƒÐ·ÐºÐ¸";
+    $MESS['sections.exchange.iblock_property_action.nothing'] = "ÐÐµ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ";
+    $MESS['sections.exchange.iblock_property_action.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_property_action.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_element_action'] = "Ð”ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ Ñ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÑŽÑ‰Ð¸Ð¼Ð¸ Ñ‚Ð¾Ð²Ð°Ñ€Ð°Ð¼Ð¸ Ð² Ñ„Ð°Ð¹Ð»Ðµ Ð²Ñ‹Ð³Ñ€ÑƒÐ·ÐºÐ¸";
+    $MESS['sections.exchange.iblock_element_action.nothing'] = "ÐÐµ Ñ‚Ñ€ÐµÐ±ÑƒÐµÑ‚ÑÑ";
+    $MESS['sections.exchange.iblock_element_action.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_element_action.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['sections.exchange.iblock_element_import_length'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼Ñ‹Ñ… Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹ Ð·Ð° Ñ€Ð°Ð·";
 
-    $MESS['messages.notify.saved'] = "Èçìåíåíèÿ ñîõðàíåíû!";
-    $MESS['messages.error.rights'] = "Íåäîñòàòî÷íî ïðàâ äëÿ ñîõðàíåíèÿ èçìåíåíèé, äîñòóïåí òîëüêî ïðîñìîòð!";
+    $MESS['messages.notify.saved'] = "Ð˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ñ‹!";
+    $MESS['messages.error.rights'] = "ÐÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¿Ñ€Ð°Ð² Ð´Ð»Ñ ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹, Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¿Ñ€Ð¾ÑÐ¼Ð¾Ñ‚Ñ€!";
 
-    $MESS['select.empty'] = "(íå âûáðàíî)";
+    $MESS['select.empty'] = "(Ð½Ðµ Ð²Ñ‹Ð±Ñ€Ð°Ð½Ð¾)";
 ?>

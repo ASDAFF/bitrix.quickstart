@@ -1,12 +1,11 @@
 <?
-	$MESS['SBBS_FLYING_PRODUCTS'] = "Òîâàðîâ â êîðçèíå";
-	$MESS['SBBS_FLYING_FIELD_NAME'] = "Íàèìåíîâàíèå";
-	$MESS['SBBS_FLYING_FIELD_PRICE'] = "Öåíà";
-	$MESS['SBBS_FLYING_FIELD_COUNT'] = "Êîëè÷åñòâî";
-	$MESS['SBBS_FLYING_FIELD_TOTAL'] = "Èòîãî";
-	$MESS['SBBS_FLYING_BUTTONS_BUY'] = "Ïðîäîëæèòü ïîêóïêè";
-	$MESS['SBBS_FLYING_BUTTONS_CART'] = "Ïåðåéòè â êîðçèíó";
-	$MESS['SBBS_FLYING_BUTTONS_ORDER'] = "Îôîðìèòü çàêàç";
-	$MESS['SBBS_FLYING_EMPTY'] = "Âàøà êîðçèíà ïóñòà";
-	$MESS['SBBS_FLYING_BUTTONS_FAST_ORDER'] = 'Áûñòðûé çàêàç';
+	$MESS['SBBS_FLYING_PRODUCTS'] = "Ð¢Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ";
+	$MESS['SBBS_FLYING_FIELD_NAME'] = "ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ";
+	$MESS['SBBS_FLYING_FIELD_PRICE'] = "Ð¦ÐµÐ½Ð°";
+	$MESS['SBBS_FLYING_FIELD_COUNT'] = "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾";
+	$MESS['SBBS_FLYING_FIELD_TOTAL'] = "Ð˜Ñ‚Ð¾Ð³Ð¾";
+	$MESS['SBBS_FLYING_BUTTONS_BUY'] = "ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸";
+	$MESS['SBBS_FLYING_BUTTONS_CART'] = "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+	$MESS['SBBS_FLYING_BUTTONS_ORDER'] = "ÐžÑ„Ð¾Ñ€Ð¼Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·";
+	$MESS['SBBS_FLYING_EMPTY'] = "Ð’ ÐºÐ¾Ñ€Ð·Ð¸Ð½Ðµ Ð½ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð²";
 ?>

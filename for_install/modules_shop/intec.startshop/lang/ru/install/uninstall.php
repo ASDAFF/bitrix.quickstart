@@ -1,8 +1,8 @@
 <?
-	$MESS['module.uninstall.form.warning'] = "Ìîäóëü áóäåò óäàëåí èç ñèñòåìû!";
-	$MESS['module.uninstall.form.delete_data'] = "Óäàëÿåìûå äàííûå:";
-	$MESS['module.uninstall.form.tables'] = "Òàáëèöû áàç äàííûõ";
-	$MESS['module.uninstall.form.settings'] = "Íàñòðîéêè";
-	$MESS['module.uninstall.form.submit'] = "Óäàëèòü ìîäóëü";
-	$MESS['module.uninstall.form.back'] = "Íàçàä";
+	$MESS['module.uninstall.form.warning'] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð±ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½ Ð¸Ð· ÑÐ¸ÑÑ‚ÐµÐ¼Ñ‹!";
+	$MESS['module.uninstall.form.delete_data'] = "Ð£Ð´Ð°Ð»ÑÐµÐ¼Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ:";
+	$MESS['module.uninstall.form.tables'] = "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ñ‹ Ð±Ð°Ð· Ð´Ð°Ð½Ð½Ñ‹Ñ…";
+	$MESS['module.uninstall.form.settings'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸";
+	$MESS['module.uninstall.form.submit'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ð¼Ð¾Ð´ÑƒÐ»ÑŒ";
+	$MESS['module.uninstall.form.back'] = "ÐÐ°Ð·Ð°Ð´";
 ?>

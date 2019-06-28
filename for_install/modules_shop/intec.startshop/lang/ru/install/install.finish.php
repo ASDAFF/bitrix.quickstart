@@ -1,5 +1,5 @@
 <?
-    $MESS['module.install.finish.text'] = "Òåïåðü âû ìîæåòå ïåðåéòè ê íàñòðîéêå ìîäóëÿ, ÷òîáû ñêîíôèãóðèðîâàòü åãî ïîä ñâîè çàäà÷è.";
-    $MESS['module.install.finish.buttons.settings'] = "Íàñòðîéêè ìàãàçèíà";
-    $MESS['module.install.finish.buttons.modules'] = "Ñïèñîê ìîäóëåé";
+    $MESS['module.install.finish.text'] = "Ð¢ÐµÐ¿ÐµÑ€ÑŒ Ð²Ñ‹ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ Ð¿ÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐµ Ð¼Ð¾Ð´ÑƒÐ»Ñ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ ÑÐºÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐµÐ³Ð¾ Ð¿Ð¾Ð´ ÑÐ²Ð¾Ð¸ Ð·Ð°Ð´Ð°Ñ‡Ð¸.";
+    $MESS['module.install.finish.buttons.settings'] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°";
+    $MESS['module.install.finish.buttons.modules'] = "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¼Ð¾Ð´ÑƒÐ»ÐµÐ¹";
 ?>

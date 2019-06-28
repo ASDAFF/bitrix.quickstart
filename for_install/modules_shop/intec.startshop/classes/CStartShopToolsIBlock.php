@@ -178,7 +178,7 @@
                 while ($arIBlockProperty = $dbIBlockProperties->Fetch())
                     $arIBlockProperties[$arIBlockProperty['CODE']] = $arIBlockProperty;
 
-                /*  оличество */
+                /* В РѕР»РёС‡РµСЃС‚РІРѕ */
                 $arQuantityProperty = $arIBlockProperties[static::$PrefixQuantity];
                 $arQuantityPropertyFields = array(
                     "NAME" => GetMessage('cstartshoptoolsiblock.properties.quantity'),
@@ -202,13 +202,13 @@
                     $oIBlockProperty->Add($arQuantityPropertyFields);
                 }
 
-                /* Ўаг количества */
+                /* РЋР°Рі РєРѕР»РёС‡РµСЃС‚РІР° */
 
                 $arQuantityRatioProperty = $arIBlockProperties[static::$PrefixQuantityRatio];
                 $arQuantityRatioPropertyFields = array(
                     "NAME" => GetMessage('cstartshoptoolsiblock.properties.quantity_ratio'),
                     "SORT" => $iSort++,
-                    "ACTIVE" => 'Y',
+                    "ACTIVE" => CStartShopCatalog::IsUseQuantity($iIBlockID) ? 'Y' : 'N',
                     "PROPERTY_TYPE" => "N",
                     "USER_TYPE" => "",
                     "IS_REQUIRED" => "Y",
@@ -227,14 +227,14 @@
                     $oIBlockProperty->Add($arQuantityRatioPropertyFields);
                 }
 
-                /* “ипы цен */
+                /* вЂњРёРїС‹ С†РµРЅ */
                 $arPricesTypes = array();
                 $dbPricesTypes = CStartShopPrice::GetList(array('SORT' => 'ASC'));
 
                 while ($arPriceType = $dbPricesTypes->Fetch())
                     $arPricesTypes[] = $arPriceType;
 
-                /* ¬алюта */
+                /* В¬Р°Р»СЋС‚Р° */
                 $arCurrencies = array();
                 $dbCurrencies = CStartShopCurrency::GetList(array('SORT' => 'ASC'), array('ACTIVE' => 'Y'));
 
@@ -244,9 +244,9 @@
                 $arPricesProperties = array();
                 $arCurrenciesProperties = array();
 
-                /* “ипы цен и валюта */
+                /* вЂњРёРїС‹ С†РµРЅ Рё РІР°Р»СЋС‚Р° */
                 foreach ($arPricesTypes as $arPriceType) {
-                    /* ¬алюта цены */
+                    /* В¬Р°Р»СЋС‚Р° С†РµРЅС‹ */
                     $sCurrencyPropertyCode = static::$PrefixCurrency.'_'.$arPriceType['ID'];
                     $arCurrencyProperty = $arIBlockProperties[$sCurrencyPropertyCode];
 
@@ -309,7 +309,7 @@
                                 CIBlockPropertyEnum::Delete($arCurrenciesPropertyEnum['ID']);
                     }
 
-                    /* “ип цены */
+                    /* вЂњРёРї С†РµРЅС‹ */
                     $sPricePropertyCode = static::$PrefixPrice.'_'.$arPriceType['ID'];
                     $arPriceProperty = $arIBlockProperties[$sPricePropertyCode];
                     $arPricePropertyFields = array(

@@ -13,11 +13,7 @@
         "USE_SUM_FIELD" => $arParams['USE_SUM_FIELD'],
         "USE_BUTTON_ORDER" => "Y",
         "URL_ORDER" => $arResult['URL_ORDER'],
-        "URL_BASKET_EMPTY" => $arParams['URL_BASKET_EMPTY'],
-		"CFO_USE_FASTORDER" => $arParams['CFO_USE_FASTORDER'],
-		"CFO_PROP_NAME" => $arParams['CFO_PROP_NAME'],
-		"CFO_PROP_PHONE" => $arParams['CFO_PROP_PHONE'],
-		"CFO_PROP_COMMENT" => $arParams['CFO_PROP_COMMENT']
+        "URL_BASKET_EMPTY" => $arParams['URL_BASKET_EMPTY']
     ),
     $component
 );?>

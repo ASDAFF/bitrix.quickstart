@@ -1,28 +1,28 @@
 <?
-    $MESS['title'] = "Âàëþòû";
+    $MESS['title'] = "Ð’Ð°Ð»ÑŽÑ‚Ñ‹";
 
     $MESS['table.header.id'] = "ID";
-    $MESS['table.header.active'] = "Àêòèâíîñòü";
-    $MESS['table.header.sort'] = "Ñîðòèðîâêà";
-    $MESS['table.header.base'] = "Áàçîâàÿ âàëþòà";
-    $MESS['table.header.name'] = "Íàçâàíèå";
-    $MESS['table.header.code'] = "Êîä";
-    $MESS['table.header.rating'] = "Íîìèíàë";
-    $MESS['table.header.rate'] = "Êóðñ";
+    $MESS['table.header.active'] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+    $MESS['table.header.sort'] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+    $MESS['table.header.base'] = "Ð‘Ð°Ð·Ð¾Ð²Ð°Ñ Ð²Ð°Ð»ÑŽÑ‚Ð°";
+    $MESS['table.header.name'] = "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+    $MESS['table.header.code'] = "ÐšÐ¾Ð´";
+    $MESS['table.header.rating'] = "ÐÐ¾Ð¼Ð¸Ð½Ð°Ð»";
+    $MESS['table.header.rate'] = "ÐšÑƒÑ€Ñ";
 
-    $MESS['actions.delete'] = "Óäàëèòü";
-    $MESS['actions.edit'] = "Èçìåíèòü";
-    $MESS['actions.add'] = "Äîáàâèòü";
-    $MESS['actions.activate'] = "Àêòèâèðîâàòü";
-    $MESS['actions.deactivate'] = "Äåàêòèâèðîâàòü";
-    $MESS['actions.base'] = "Ñäåëàòü áàçîâîé";
+    $MESS['actions.delete'] = "Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.edit'] = "Ð˜Ð·Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ";
+    $MESS['actions.add'] = "Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ";
+    $MESS['actions.activate'] = "ÐÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.deactivate'] = "Ð”ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.base'] = "Ð¡Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð±Ð°Ð·Ð¾Ð²Ð¾Ð¹";
 
-    $MESS['actions.group.delete'] = "óäàëèòü";
-    $MESS['actions.group.activate'] = "àêòèâèðîâàòü";
-    $MESS['actions.group.deactivate'] = "äåàêòèâèðîâàòü";
+    $MESS['actions.group.delete'] = "ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ";
+    $MESS['actions.group.activate'] = "Ð°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
+    $MESS['actions.group.deactivate'] = "Ð´ÐµÐ°ÐºÑ‚Ð¸Ð²Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ";
 
-    $MESS['nav.title'] = "Âàëþòû";
+    $MESS['nav.title'] = "Ð’Ð°Ð»ÑŽÑ‚Ñ‹";
     
-    $MESS['active.yes'] = "Äà";
-    $MESS['active.no'] = "Íåò";
+    $MESS['active.yes'] = "Ð”Ð°";
+    $MESS['active.no'] = "ÐÐµÑ‚";
 ?>

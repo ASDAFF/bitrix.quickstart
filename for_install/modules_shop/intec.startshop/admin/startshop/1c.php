@@ -19,6 +19,7 @@
     if (!empty($sType) && !empty($sMode) && CStartShopVariables::Get("1C_EXCHANGE_ALLOW") == "Y") {
         if ($sType == "catalog") {
             if ($sMode == "checkauth") {
+                DeleteDirFilesEx($sUploadDirectoryRelative);
                 CStartShopExchange1CResponse::Authorize(
                     "STARTSHOP",
                     "EXCHANGE"
@@ -35,10 +36,6 @@
                 $sFileDirectory = dirname($sFilePath);
 
                 if (!empty($sFileName) && !empty($sFileData)) {
-					$bom = pack('H*','EFBBBF');
-					if (preg_match("/^import/", $sFileName) && preg_match("/^($bom)?<\?xml/", $sFileData)) {
-						DeleteDirFilesEx($sUploadDirectoryRelative);
-					}
                     if (!is_dir($sFileDirectory))
                         mkdir($sFileDirectory, 0777, true);
 

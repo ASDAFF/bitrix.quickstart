@@ -1,10 +1,10 @@
 <?
-$MESS ['CT_BCSF_FILTER_TITLE'] = "Ïîäáîð ïàðàìåòðîâ";
-$MESS ['CT_BCSF_FILTER_FROM'] = "Îò";
-$MESS ['CT_BCSF_FILTER_TO'] = "Äî";
-$MESS ['CT_BCSF_SET_FILTER'] = "Ïîêàçàòü";
-$MESS ['CT_BCSF_DEL_FILTER'] = "Cáðîñèòü";
-$MESS ['CT_BCSF_FILTER_COUNT'] = "Âûáðàíî: #ELEMENT_COUNT#";
-$MESS ['CT_BCSF_FILTER_SHOW'] = "Ïîêàçàòü";
-$MESS ['CT_BCSF_FILTER_ALL'] = "Âñå";
+$MESS ['CT_BCSF_FILTER_TITLE'] = "ÐŸÐ¾Ð´Ð±Ð¾Ñ€ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²";
+$MESS ['CT_BCSF_FILTER_FROM'] = "ÐžÑ‚";
+$MESS ['CT_BCSF_FILTER_TO'] = "Ð”Ð¾";
+$MESS ['CT_BCSF_SET_FILTER'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
+$MESS ['CT_BCSF_DEL_FILTER'] = "CÐ±Ñ€Ð¾ÑÐ¸Ñ‚ÑŒ";
+$MESS ['CT_BCSF_FILTER_COUNT'] = "Ð’Ñ‹Ð±Ñ€Ð°Ð½Ð¾: #ELEMENT_COUNT#";
+$MESS ['CT_BCSF_FILTER_SHOW'] = "ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ";
+$MESS ['CT_BCSF_FILTER_ALL'] = "Ð’ÑÐµ";
 ?>

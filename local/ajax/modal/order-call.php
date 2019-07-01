@@ -6,26 +6,26 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
-                <h4>Заказать звонок</h4>
+                <h4>Р—Р°РєР°Р·Р°С‚СЊ Р·РІРѕРЅРѕРє</h4>
             </div>
             <form name="CALLBACK_MODAL" action="<?= PATH_AJAX ?>" method="POST" role="form">
                 <input type="hidden" name="CALLBACK_MODAL[SITE_ID]" value="<?= SITE_ID ?>"/>
-                <input type="hidden" name="CALLBACK_MODAL[TITLE]" value="Обратный звонок"/>
+                <input type="hidden" name="CALLBACK_MODAL[TITLE]" value="РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"/>
                 <div class="modal-body">
                     <div id="results-callback-modal">
                         <div class="alert alert-danger" id="beforesend-callback-modal">
-                            Пожалуйста заполните все поля.
+                            РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ.
                         </div>
-                        <div class="alert alert-danger" id="error-callback-modal">Ошибка отправки формы.</div>
-                        <div class="alert alert-success" id="success-callback-modal">Мы получили Вашу заявку и скоро перезвоним.</div>
+                        <div class="alert alert-danger" id="error-callback-modal">РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё С„РѕСЂРјС‹.</div>
+                        <div class="alert alert-success" id="success-callback-modal">РњС‹ РїРѕР»СѓС‡РёР»Рё Р’Р°С€Сѓ Р·Р°СЏРІРєСѓ Рё СЃРєРѕСЂРѕ РїРµСЂРµР·РІРѕРЅРёРј.</div>
                     </div>
 
                     <div class="clearfix"><img src="/local/codenails/ajax/images/loading.gif" alt="Loading"
                                                id="form-loading-callback-modal" class="pull-right"/></div>
-                    <input type="text" name="CALLBACK_MODAL[NAME]" class="inp req" placeholder="Ваше имя *">
-                    <input type="tel" name="CALLBACK_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="inp req" placeholder="Телефон *">
+                    <input type="text" name="CALLBACK_MODAL[NAME]" class="inp req" placeholder="Р’Р°С€Рµ РёРјСЏ *">
+                    <input type="tel" name="CALLBACK_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="inp req" placeholder="РўРµР»РµС„РѕРЅ *">
                     <div class="wrp-bttn">
-                        <button type="submit" class="btn btn-submit">Отправить</button>
+                        <button type="submit" class="btn btn-submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
                     </div>
                 </div>
             </form>

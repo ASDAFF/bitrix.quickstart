@@ -30,7 +30,7 @@ while ($el = $rsData->fetch()) {
             </div>
             <form name="ORDER_SCHEME" action="<?= PATH_AJAX ?>" method="POST" role="form">
                 <input type="hidden" name="ORDER_SCHEME[SITE_ID]" value="<?= SITE_ID ?>"/>
-                <input type="hidden" name="ORDER_SCHEME[TITLE]" value="Заказ схемы"/>
+                <input type="hidden" name="ORDER_SCHEME[TITLE]" value="Р—Р°РєР°Р· СЃС…РµРјС‹"/>
                 <input type="hidden" name="ORDER_SCHEME[IBLOCK_ID]" value="31"/>
                 <input type="hidden" name="ORDER_SCHEME[ID]" value="" id="id_scheme">
                 <input type="hidden" name="ORDER_SCHEME[SECT]" value="" id="sect_scheme">
@@ -39,10 +39,10 @@ while ($el = $rsData->fetch()) {
 
                     <div id="results-order-scheme">
                         <div class="alert alert-danger" id="beforesend-order-scheme">
-                            Пожалуйста заполните все поля.
+                            РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ.
                         </div>
-                        <div class="alert alert-danger" id="error-order-scheme">Ошибка отправки формы.</div>
-                        <div class="alert alert-success" id="success-order-scheme">Спасибо за заказ. С вами свяжется наш специалист в ближайшее время. </div>
+                        <div class="alert alert-danger" id="error-order-scheme">РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё С„РѕСЂРјС‹.</div>
+                        <div class="alert alert-success" id="success-order-scheme">РЎРїР°СЃРёР±Рѕ Р·Р° Р·Р°РєР°Р·. РЎ РІР°РјРё СЃРІСЏР¶РµС‚СЃСЏ РЅР°С€ СЃРїРµС†РёР°Р»РёСЃС‚ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ. </div>
                     </div>
                     <div class="clearfix">
                         <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-order-scheme" class="pull-right"/>
@@ -50,53 +50,53 @@ while ($el = $rsData->fetch()) {
 
 
                     <section id="step-1">
-                        <h4>Что будем красить?</h4>
+                        <h4>Р§С‚Рѕ Р±СѓРґРµРј РєСЂР°СЃРёС‚СЊ?</h4>
 
-                        <label for="area">Площадь окраски</label>
+                        <label for="area">РџР»РѕС‰Р°РґСЊ РѕРєСЂР°СЃРєРё</label>
                         <input type="number" class="inp" name="ORDER_SCHEME[SPACE]" id="area" placeholder="">
                         <span>M<sup>3</sup></span>
 
-                        <p class="bold-text">Метод окраски:</p>
+                        <p class="bold-text">РњРµС‚РѕРґ РѕРєСЂР°СЃРєРё:</p>
 
                         <div class="form-group">
-                            <input name="ORDER_SCHEME[METHOD]" id="roller" type="radio" class="radio" value="Окраска кисточкой или валиком" checked>
-                            <label for="roller">Окраска кисточкой или валиком</label>
+                            <input name="ORDER_SCHEME[METHOD]" id="roller" type="radio" class="radio" value="РћРєСЂР°СЃРєР° РєРёСЃС‚РѕС‡РєРѕР№ РёР»Рё РІР°Р»РёРєРѕРј" checked>
+                            <label for="roller">РћРєСЂР°СЃРєР° РєРёСЃС‚РѕС‡РєРѕР№ РёР»Рё РІР°Р»РёРєРѕРј</label>
                         </div>
 
 
                         <div class="form-group">
-                            <input name="ORDER_SCHEME[METHOD]" id="pistol" type="radio" class="radio" value="Пистолетная окраска">
-                            <label for="pistol">Пистолетная окраска</label>
+                            <input name="ORDER_SCHEME[METHOD]" id="pistol" type="radio" class="radio" value="РџРёСЃС‚РѕР»РµС‚РЅР°СЏ РѕРєСЂР°СЃРєР°">
+                            <label for="pistol">РџРёСЃС‚РѕР»РµС‚РЅР°СЏ РѕРєСЂР°СЃРєР°</label>
                         </div>
 
 
                         <div class="form-group">
-                            <input name="ORDER_SCHEME[METHOD]" id="airless" type="radio" class="radio" value="Окраска Безвоздушным распылением">
-                            <label for="airless">Окраска Безвоздушным распылением</label>
+                            <input name="ORDER_SCHEME[METHOD]" id="airless" type="radio" class="radio" value="РћРєСЂР°СЃРєР° Р‘РµР·РІРѕР·РґСѓС€РЅС‹Рј СЂР°СЃРїС‹Р»РµРЅРёРµРј">
+                            <label for="airless">РћРєСЂР°СЃРєР° Р‘РµР·РІРѕР·РґСѓС€РЅС‹Рј СЂР°СЃРїС‹Р»РµРЅРёРµРј</label>
                         </div>
 
 
                         <div class="form-group">
-                            <input name="ORDER_SCHEME[METHOD]" id="electrostatic" type="radio" class="radio" value="Окраска электростатическим методом">
-                            <label for="electrostatic">Окраска электростатическим методом</label>
+                            <input name="ORDER_SCHEME[METHOD]" id="electrostatic" type="radio" class="radio" value="РћРєСЂР°СЃРєР° СЌР»РµРєС‚СЂРѕСЃС‚Р°С‚РёС‡РµСЃРєРёРј РјРµС‚РѕРґРѕРј">
+                            <label for="electrostatic">РћРєСЂР°СЃРєР° СЌР»РµРєС‚СЂРѕСЃС‚Р°С‚РёС‡РµСЃРєРёРј РјРµС‚РѕРґРѕРј</label>
                         </div>
 
                         <div class="wrp-bttn">
-                            <a href="javascript:void(0);" class="btn btn-next">Далее</a>
+                            <a href="javascript:void(0);" class="btn btn-next">Р”Р°Р»РµРµ</a>
                         </div>
                     </section>
 
 
                     <section id="step-2">
-                        <h4>В какой цвет?</h4>
+                        <h4>Р’ РєР°РєРѕР№ С†РІРµС‚?</h4>
 
                         <div class="form-group">
                             <div class="scheme-input">
-                                <label class="scheme-label" for="color-ral">Код цвета по системе RAL</label>
+                                <label class="scheme-label" for="color-ral">РљРѕРґ С†РІРµС‚Р° РїРѕ СЃРёСЃС‚РµРјРµ RAL</label>
                                 <input type="text" class="inp" name="ORDER_SCHEME[COLOR]" id="color-ral" placeholder="">
                                 <div id="color-ico" class="color-disk"></div>
                             </div>
-                            <div class="tbl-scheme-ral">Или воспользуйтесь палитрой</div>
+                            <div class="tbl-scheme-ral">РР»Рё РІРѕСЃРїРѕР»СЊР·СѓР№С‚РµСЃСЊ РїР°Р»РёС‚СЂРѕР№</div>
                             <div class="wrap-color clearfix">
                                 <? foreach ($arResult as $arItem) { ?>
                                     <a href="javascript:void(0);" title="<?= $arItem['UF_DESCRIPTION'] ?>"
@@ -109,25 +109,25 @@ while ($el = $rsData->fetch()) {
 
 
                         <div class="wrp-bttn">
-                            <a href="javascript:void(0);" class="btn btn-next">Далее</a>
+                            <a href="javascript:void(0);" class="btn btn-next">Р”Р°Р»РµРµ</a>
                         </div>
                     </section>
 
 
                     <section id="step-3">
-                        <h4>Ваши личные данные</h4>
+                        <h4>Р’Р°С€Рё Р»РёС‡РЅС‹Рµ РґР°РЅРЅС‹Рµ</h4>
 
                         <div class="form-group">
-                            <label class="order-scheme-label" for="name">Ваше имя *</label>
+                            <label class="order-scheme-label" for="name">Р’Р°С€Рµ РёРјСЏ *</label>
                             <input type="text" class="inp req" name="ORDER_SCHEME[NAME]" id="name" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label class="order-scheme-label" for="tel">Телефон *</label>
+                            <label class="order-scheme-label" for="tel">РўРµР»РµС„РѕРЅ *</label>
                             <input type="tel" class="inp req" name="ORDER_SCHEME[PHONE]" id="tel" placeholder="">
                         </div>
 
                         <div class="wrp-bttn">
-                            <button type="submit" class="btn btn-submit">Заказать схему</button>
+                            <button type="submit" class="btn btn-submit">Р—Р°РєР°Р·Р°С‚СЊ СЃС…РµРјСѓ</button>
                         </div>
                     </section>
 

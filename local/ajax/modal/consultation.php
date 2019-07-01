@@ -6,31 +6,31 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
-                <h4>Отправить сообщение</h4>
+                <h4>РћС‚РїСЂР°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ</h4>
             </div>
             <form name="CALLBACK" action="<?= PATH_AJAX ?>" method="POST" role="form">
                 <input type="hidden" name="CALLBACK[SITE_ID]" value="<?= SITE_ID ?>"/>
                 <div class="modal-body">
                     <div id="results-callback">
                         <div class="alert alert-danger" id="beforesend-callback">
-                            Пожалуйста заполните обязательные поля.
+                            РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ.
                         </div>
                         <div class="alert alert-danger" id="error-callback">
-                            Ошибка отправки сообщения.
+                            РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ.
                         </div>
                         <div class="alert alert-success" id="success-callback">
-                            Заявка принята. Ожидайте звонка эксперта.
+                            Р—Р°СЏРІРєР° РїСЂРёРЅСЏС‚Р°. РћР¶РёРґР°Р№С‚Рµ Р·РІРѕРЅРєР° СЌРєСЃРїРµСЂС‚Р°.
                         </div>
                     </div>
                     <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-callback"
                          class="pull-right"/>
                     <div class="clearfix"></div>
-                    <input type="text" name="CALLBACK[NAME]" class="inp req" placeholder="Ваше имя *">
-                    <input type="tel" class="inp req" placeholder="Телефон *" name="CALLBACK[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
-                    <input type="text" name="CALLBACK[TITLE]" class="inp" placeholder="Тема">
-                    <textarea name="CALLBACK[COMMENT]" placeholder="Комментарий"></textarea>
+                    <input type="text" name="CALLBACK[NAME]" class="inp req" placeholder="Р’Р°С€Рµ РёРјСЏ *">
+                    <input type="tel" class="inp req" placeholder="РўРµР»РµС„РѕРЅ *" name="CALLBACK[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
+                    <input type="text" name="CALLBACK[TITLE]" class="inp" placeholder="РўРµРјР°">
+                    <textarea name="CALLBACK[COMMENT]" placeholder="РљРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
                     <div class="wrp-bttn">
-                        <button type="submit" class="btn btn-submit">Отправить</button>
+                        <button type="submit" class="btn btn-submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
                     </div>
                 </div>
             </form>

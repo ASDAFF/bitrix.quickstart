@@ -6,31 +6,31 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"></span>
                 </button>
-                <h4>Обратная связь</h4>
+                <h4>РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ</h4>
             </div>
             <form name="CONTACTS_MODAL" action="<?= PATH_AJAX ?>" method="POST" role="form">
                 <input type="hidden" name="CONTACTS_MODAL[SITE_ID]" value="<?= SITE_ID ?>"/>
                 <div class="modal-body">
                     <div id="results-contacts-modal">
                         <div class="alert alert-danger" id="beforesend-contacts-modal">
-                            Пожалуйста заполните обязательные поля.
+                            РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ.
                         </div>
                         <div class="alert alert-danger" id="error-contacts-modal">
-                            Ошибка отправки сообщения.
+                            РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ.
                         </div>
                         <div class="alert alert-success" id="success-contacts-modal">
-                            Спасибо за обращение. В ближайшее время с вами свяжутся, для уточнения деталей.
+                            РЎРїР°СЃРёР±Рѕ Р·Р° РѕР±СЂР°С‰РµРЅРёРµ. Р’ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ СЃ РІР°РјРё СЃРІСЏР¶СѓС‚СЃСЏ, РґР»СЏ СѓС‚РѕС‡РЅРµРЅРёСЏ РґРµС‚Р°Р»РµР№.
                         </div>
                     </div>
                     <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-contacts-modal"
                          class="pull-right"/>
                     <div class="clearfix"></div>
-                    <input type="text" name="CONTACTS_MODAL[NAME]" class="inp req" placeholder="Ваше имя *">
-                    <input type="tel" class="inp req" placeholder="Телефон *" name="CONTACTS_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
-                    <input type="text" name="CONTACTS_MODAL[TITLE]" class="inp" placeholder="Тема">
-                    <textarea name="CONTACTS_MODAL[COMMENT]" placeholder="Комментарий"></textarea>
+                    <input type="text" name="CONTACTS_MODAL[NAME]" class="inp req" placeholder="Р’Р°С€Рµ РёРјСЏ *">
+                    <input type="tel" class="inp req" placeholder="РўРµР»РµС„РѕРЅ *" name="CONTACTS_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
+                    <input type="text" name="CONTACTS_MODAL[TITLE]" class="inp" placeholder="РўРµРјР°">
+                    <textarea name="CONTACTS_MODAL[COMMENT]" placeholder="РљРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
                     <div class="wrp-bttn">
-                        <button type="submit" class="btn btn-submit">Отправить</button>
+                        <button type="submit" class="btn btn-submit">РћС‚РїСЂР°РІРёС‚СЊ</button>
                     </div>
                 </div>
             </form>

@@ -4,7 +4,7 @@
  */
 
 IncludeModuleLangFile(__FILE__);
-Class pp_acomponents extends CModule
+Class more_acomponents extends CModule
 {
 	const MODULE_ID = 'more.acomponents';
 	var $MODULE_ID = 'more.acomponents';

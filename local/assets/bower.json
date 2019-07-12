@@ -1,0 +1,14 @@
+{
+  "name": "asdaff",
+  "homepage": "https://github.com/ASDAFF/bitrix.quickstart",
+  "authors": [
+    "ASDAFF <asdaff.asad@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+
+  "license": "MIT",
+  "dependencies": {
+    "sort.panel": "https://github.com/ASDAFF/sort.panel.git"
+  }
+}

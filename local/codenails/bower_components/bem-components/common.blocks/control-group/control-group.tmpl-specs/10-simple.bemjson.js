@@ -1,3 +1,0 @@
-({
-    block : 'control-group'
-})

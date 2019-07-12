@@ -1,5 +1,0 @@
-:block(modal):mod(theme islands) {
-    :block(modal):elem(table) {
-        background: repeat url(bg.png);
-    }
-}

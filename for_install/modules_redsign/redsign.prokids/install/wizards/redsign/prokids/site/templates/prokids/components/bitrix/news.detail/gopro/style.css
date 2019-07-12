@@ -1,0 +1,41 @@
+.iblockdetail{
+	line-height:18px;
+}
+.iblockdetail .pic{
+	width:25%;
+	min-width:90px;
+	float:left;
+	padding:0px 20px 10px 0px;
+}
+.iblockdetail .text{
+	text-align:justify;
+}
+.iblockdetail .bot{
+	margin-top:15px;
+	padding-top:15px;
+	border-top:1px solid #F2F2F2;
+}
+.iblockdetail .bot .back{
+	float:left;
+}
+.iblockdetail .bot .date{
+	float:right;
+	color:#666666;
+	font-style:italic;
+}
+
+@media screen and (max-width:480px){
+	body.adaptive .iblockdetail .pic{
+		width:100%;
+		text-align:center;
+	}
+	body.adaptive .iblockdetail .bot{
+		margin-top:5px;
+		padding-top:5px;
+	}
+	body.adaptive .iblockdetail .bot .back,
+	body.adaptive .iblockdetail .bot .date{
+		float:none;
+		margin:3px 0px;
+	}
+}

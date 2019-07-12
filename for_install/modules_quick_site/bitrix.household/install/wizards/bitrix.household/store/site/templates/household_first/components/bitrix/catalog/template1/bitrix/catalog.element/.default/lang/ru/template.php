@@ -1,0 +1,49 @@
+<?
+$MESS ['CATALOG_ADD_TO_BASKET'] = "В корзину";
+$MESS ['CATALOG_IN_BASKET'] = "Уже в корзине";
+$MESS ['CATALOG_MORE_PHOTO'] = "Еще фото";
+$MESS ['CATALOG_DOWNLOAD'] = "Скачать";
+$MESS ['CATALOG_BACK'] = "Назад в раздел";
+$MESS ['CATALOG_BUY'] = "Купить";
+$MESS ['CATALOG_QUANTITY'] = "Количество";
+$MESS ['CATALOG_QUANTITY_FROM_TO'] = "От #FROM# до #TO#";
+$MESS ['CATALOG_QUANTITY_FROM'] = "От #FROM#";
+$MESS ['CATALOG_QUANTITY_TO'] = "До #TO#";
+$MESS ['CATALOG_PRICE_VAT'] = "с НДС";
+$MESS ['CATALOG_PRICE_NOVAT'] = "без НДС";
+$MESS ['CATALOG_VAT'] = "НДС";
+$MESS ['CATALOG_NO_VAT'] = "не облагается";
+$MESS ['CATALOG_VAT_INCLUDED'] = "НДС включен в цену";
+$MESS ['CATALOG_VAT_NOT_INCLUDED'] = "НДС не включен в цену";
+$MESS ['CT_BCE_QUANTITY'] = "Количество";
+$MESS ['CATALOG_NOT_AVAILABLE'] = "Нет в наличии";
+$MESS ['CATALOG_COMPARE'] = "Сравнить товар";
+$MESS ['CATALOG_IN_COMPARE'] = "В списке сравнения";
+$MESS ['CATALOG_COMPARE2'] = "Сравнить выбранные товары";
+$MESS ['CATALOG_COMPARE3'] = "Сравнить товары (";
+$MESS ['CATALOG_COMPARE4'] = ")";
+$MESS ['CATALOG_PROPERTIES'] = "Характеристики";
+$MESS ['CATALOG_FULL_DESC'] = "Описание";
+$MESS ['CATALOG_PRICE'] = "цена:";
+$MESS ['CATALOG_PRODUCT_DELETE_CONFIRM'] = "Вы уверены, что хотите удалить этот товар?";
+$MESS ['CATALOG_IN_CART_DELAY'] = "Уже отложен";
+$MESS ['CATALOG_ELEMENT_YES'] = 'есть';
+$MESS ['CATALOG_ELEMENT_NO'] = 'нет';
+$MESS ['CATALOG_ELEMENT_RATING'] = 'Рейтинг';
+$MESS ['CATALOG_ELEMENT_FEEDBACK'] = 'Отзывы';
+$MESS ['CATALOG_ELEMENT_ABOUT'] = 'Подробнее о товаре';
+$MESS ['CATALOG_AVAILABLE'] = 'В наличии';
+$MESS ['CATALOG_PICTURE'] = 'Другие изображения';
+$MESS ['CATALOG_COUNT'] = 'шт.';
+
+$MESS ['CATALOG_TECH'] = 'Технические характеристики';
+$MESS ['CATALOG_ANALOG'] = 'Аналоги';
+$MESS ['CATALOG_ACCESS'] = 'Аксессуары';
+$MESS ['CATALOG_SHOP'] = 'Наличие в магазинах';
+$MESS ['CATALOG_FEEDBACK'] = 'Отзывы';
+$MESS ['CATALOG_VARIANT'] = 'Варианты поставки';
+
+$MESS ['TECH_NOT_SET'] = 'Технические характеристики не настроены. Для настройки выберите в настройках компонента отображение необходимых свойств в деатальном просмотре и заполните данные свойства у текущего товара. ';
+$MESS ['ANALOG_NOT_SET'] = 'Аналоги не настроены. Для настройки аналогов в настройках детального просмотра компонента выберите Аналог и/или Список свойств для определения аналогов и заполните одно или оба этих свойства у текущего товара.';
+$MESS ['ACPLI_NOT_SET'] = 'Аксессуары не настроены. Для настройки аксессуаров в настройках детального просмотра компонента выберите свойство Аксессуар и заполните данное свойство у текущего товара.';
+?>

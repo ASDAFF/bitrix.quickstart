@@ -1,0 +1,53 @@
+div.news-detail img.detail_picture
+{
+	float:left;
+	margin:30px 8px 6px 11px;
+}
+.news-date-time
+{
+	color:#486DAA;
+}
+
+#date
+{
+	margin-left:15px;
+	margin-right:15px;
+	margin-bottom:25px;
+	
+	font-weight:bold;
+
+	
+	
+}
+
+#text
+{
+	margin-left:15px;
+	margin-right:15px;
+    padding-bottom:15px;
+
+	
+	
+	
+}
+
+#dimg
+{
+		margin-left:15px;
+	margin-right:15px;
+	float:left;
+	
+	
+	
+	}
+	
+#nname
+{
+	padding-top:15px;
+			margin-left:15px;
+	margin-right:15px;
+	color:#1A70C0;
+
+
+	
+}	

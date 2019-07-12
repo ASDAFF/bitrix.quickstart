@@ -1,0 +1,61 @@
+<?php
+$MESS ['B_ERROR_LOAD_MODULE'] = 'Ошибка при загрузке модуля "СмартРиэлт"';
+$MESS ['B_TITLE'] = 'Элементы рубрикатора';
+$MESS ['B_UPDATE_FIELD_EMPTY'] = 'Незаполнено поле "#FIELD_NAME#"!';                        
+$MESS ['B_CODE_ALREADY_EXISTS'] = 'Элемент с таким мнемокодом уже существет!';
+$MESS ['B_SAVE_ERROR'] = 'При сохранении записи произошла ошибка!';
+$MESS ['B_DELETE_ERROR'] = 'При удалении записи произошла ошибка!';
+$MESS ['B_DELETE_IMPOSSIBLE'] = 'Запись невозможно удалить, возможно она используется!';
+$MESS ['B_PAGES'] = 'Страницы';
+
+$MESS ['B_NAME'] = 'Название';
+$MESS ['B_ACTIVE'] = 'Активность';   
+$MESS ['B_SORT'] = 'Сортировка';
+$MESS ['B_EXTERNAL_ID'] = 'Идентификатор';
+$MESS ['B_NOTE'] = 'Примечание';
+$MESS ['B_CREATE_DATE'] = 'Дата создания';
+$MESS ['B_UPDATE_DATE'] = 'Дата изменения'; 
+$MESS ['B_RubricGroupId'] = 'Группа рубрикатора';
+$MESS ['B_TransactionType'] = 'Тип сделки';
+$MESS ['B_TypeId'] = 'Идентификатор типа';
+$MESS ['B_TransactionTypeId'] = 'Тип сделки';
+$MESS ['B_TypeName'] = 'Название типа';
+$MESS ['B_Code'] = 'Мнемокод';
+$MESS ['B_SectionId'] = 'Раздел'; 
+$MESS ['B_EstateMarket'] = 'Рынок недвижимости'; 
+
+$MESS ['B_FILTER_FIND_TEXT'] = 'Найти';
+$MESS ['B_FILTER_NAME'] = 'Название';
+$MESS ['B_FILTER_ACTIVE'] = 'Активность';      
+$MESS ['B_FILTER_RubricGroupId'] = 'Группа рубрикатора';      
+$MESS ['B_FILTER_CREATE_DATE'] = 'Дата создания';
+$MESS ['B_FILTER_UPDATE_DATE'] = 'Дата изменения';
+
+$MESS ['B_EDIT'] = 'Редактировать';
+$MESS ['B_COPY'] = 'Копировать';
+$MESS ['B_DELETE'] = 'Удалить';
+$MESS ['B_ACTIVATE'] = 'Активировать';
+$MESS ['B_DEACTIVATE'] = 'Деактивировать';
+$MESS ['B_DELETE_CONFIRM'] = 'Удалить тип помещения #NAME# из справочника?';
+$MESS ['B_ALL_AMOUNT'] = 'Всего:';
+$MESS ['B_SELECTED_AMOUNT'] = 'Выбрано:';
+$MESS ['B_ADD_BTN'] = 'Добавить';
+$MESS ['B_ADD_BTN_TITLE'] = 'Добавить элемент рубрикатора';
+$MESS ['B_ALL'] = 'Все';
+$MESS ['B_YES'] = 'Да';
+$MESS ['B_NO'] = 'Нет'; 
+$MESS ['B_F_YES'] = 'Да';
+$MESS ['B_F_NO'] = 'Нет';            
+$MESS ['B_F_ACTIVE'] = 'Активен';
+$MESS ['B_F_NO_ACTIVE'] = 'Не активен';
+$MESS ['B_SALE'] = 'Продажа';
+$MESS ['B_RENT'] = 'Аренда';
+$MESS ['B_DAILY_RENT'] = 'Посуточная аренда';
+$MESS ['B_PRIMARY'] = 'Первичный';
+$MESS ['B_SECONDARY'] = 'Вторичный';
+$MESS ['B_SECTION_CITY_IN'] = 'Жилая';
+$MESS ['B_SECTION_CITY_OUT'] = 'Загородняя';
+$MESS ['B_SECTION_COMMERCIAL'] = 'Коммерческая';
+$MESS ['B_SECTION_FOREIGN'] = 'Зарубежная';
+$MESS ['B_SECTION_OTHER'] = 'Прочая';
+?>

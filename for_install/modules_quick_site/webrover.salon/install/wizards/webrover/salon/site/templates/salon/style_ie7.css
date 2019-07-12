@@ -1,0 +1,23 @@
+/*Ubiraem scroll po umolchaniyu*/
+html, body {
+	overflow:auto;	
+}
+/*\Ubiraem scroll po umolchaniyu*/
+
+/*Коррекция отступов, поожений*/
+#index .hortable ul{
+	display:block;
+}
+
+#index .hortable li{
+	display:inline-block;
+}
+
+#index .hortable li{
+	display:inline;
+}
+/*\Коррекция отступов, поожений*/
+
+/*prozrachnost'*/
+
+/*\prozrachnost'*/

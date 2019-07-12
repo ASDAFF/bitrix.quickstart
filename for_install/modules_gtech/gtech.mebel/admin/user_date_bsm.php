@@ -1,0 +1,1 @@
+<?define("gtech_mebel_TEMPORARY_CACHE", "dzYGBipmCVY8Vns3U2QHcVFw");?>

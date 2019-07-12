@@ -1,0 +1,22 @@
+.b-partners-list-item {
+    *display: inline;
+    display: inline-block;
+	margin: 10px 10px 0 0;
+	overflow: hidden;
+}
+.b-partners-date {
+	font-style: italic;
+	font-size: 85%;
+	display: block;
+	color: #666;
+}
+.b-partners-list-item-name {
+	font-size: 2em;
+}
+.b-partners-preview-logo {
+	float: left;
+	margin: 1em 1em 1em 0;
+}
+.b-partners-text {
+	margin-top: 1em;
+}

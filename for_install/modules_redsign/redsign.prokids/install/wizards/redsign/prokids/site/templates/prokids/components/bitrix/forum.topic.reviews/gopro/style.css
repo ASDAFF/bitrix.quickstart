@@ -1,0 +1,89 @@
+.detailtabs .contents .add2review{
+	position:absolute;
+	top:12px;
+	right:0px;
+	padding:8px 8px;
+}
+
+.reviewform{
+	margin-bottom:25px;
+}
+.reviewform .rating{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.reviewform .rating span{
+	margin-right:10px;
+}
+.reviewform .rating a{
+	margin-bottom:5px;
+	width:21px;
+	height:20px;
+	background-position:0px -168px;
+}
+.reviewform .rating a.hover,
+.reviewform .rating a.selected{
+	background-position:-22px -168px;
+}
+.reviewform .fieldname{
+	margin-top:10px;
+	text-transform:uppercase;
+}
+.reviewform input[type="text"],
+.reviewform textarea{
+	width:100%;
+	max-width:500px;
+}
+.reviewform textarea{
+	height:44px;
+}
+.reviewform textarea.comment{
+	height:114px;
+}
+.reviewform .send{
+	margin-top:10px;
+}
+
+.reviewmessages .message{
+	margin-bottom:25px;
+}
+.reviewmessages .message .head{
+	padding:8px 24px;
+	background-color:#F3F3F3;
+}
+.reviewmessages .message .name{
+	float:left;
+}
+.reviewmessages .message .name .icon{
+	width:20px;
+	height:19px;
+	margin-right:10px;
+	background-position:0px -206px;
+}
+.reviewmessages .message .date{
+	float:right;
+}
+.reviewmessages .message .line{
+	margin-top:10px;
+}
+.reviewmessages .message .line.rating .icon{
+	width:17px;
+	height:16px;
+	margin-right:3px;
+	background-position:0px -190px;
+}
+.reviewmessages .message .line.rating .icon.active{
+	background-position:-17px -190px;
+}
+.reviewmessages .message .part{
+	font-weight:bold;
+}
+
+@media screen and (max-width: 605px){
+	body.adaptive .detailtabs .contents .add2review{
+		position:relative;
+		top:0px;
+		right:0px;
+		margin-left:24px;
+	}
+}

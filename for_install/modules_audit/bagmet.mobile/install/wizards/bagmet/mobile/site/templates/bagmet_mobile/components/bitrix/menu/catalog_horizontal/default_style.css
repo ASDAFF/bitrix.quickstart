@@ -1,0 +1,46 @@
+ul.dropdown{font-family: Helvetica, Arial; height: 38px;}
+ul.dropdown > li > ul{border: 1px solid #f6f6f6;}
+
+ul.dropdown .menu_title{font-size: 14px; /*border-right: 1px solid #d6d6d6; border-left: 1px solid #fff;*/ margin-right: 3px;}
+ul.dropdown .menu_title > a{font-size: 14px;}
+ul.dropdown .menu_sale{background-color: #7fd6f6; color: #fff;}
+ul.dropdown .menu_sale > a{color: #fff !important;}
+
+/*ul.dropdown .menu_title:first-child{border-left: none;}
+ul.dropdown .menu_title:last-child{border-right: none;}*/
+
+ul.dropdown .menu_folder > a.active{background-color: #ffb93a; color: #fff !important;}
+
+ul.dropdown li{padding: 0; background-color: transparent; color: #564747;}
+ul.dropdown li.hover, .menu_title:hover{background-color: #ffb93a; color: #fff; /*border-left-color: #ffb93a !important;*/}
+ul.dropdown li.active{background-color: #ffb93a; /*border-left-color: #ffb93a !important;*/}
+ul.dropdown li.dir.active{background-position: 97% -22px;}
+ul.dropdown li.active > a{color: #fff !important;}
+
+ul.dropdown li a{display: block; padding: 10px 20px 10px;}
+
+ul.dropdown a:link, ul.dropdown a:visited{color: #000; text-decoration: none;}
+ul.dropdown a:hover{color: #fff;}
+ul.dropdown a:active{color: #ffb93a;}
+
+ul.dropdown > li > ul{border: 1px solid #a6a6a6;
+	background-color: rgb(255, 255, 255); /* The Fallback */ background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -webkit-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -moz-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -o-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px;
+}
+
+ul.dropdown ul{font-size: 12px; letter-spacing: normal;}
+ul.dropdown ul li{font-weight: bold; font-size: 12px;}
+ul.dropdown li.last ul li{float: right;}
+
+ul.dropdown ul {margin-top: 2px; text-transform: none;}
+ul.dropdown ul ul li{font-weight: normal; font-size: 11px;}
+
+ul.dropdown > .dir {padding: 0px 22px 0px 0px; background-image: url(images/nav_arrow.png); background-position: 97% 12px; background-repeat: no-repeat;}
+ul.dropdown > .dir:hover{padding-bottom: 3px;}
+ul.dropdown *.dir:hover{background-position: 97% -22px;}
+ul.dropdown ul *.dir{background-image: none;}
+
+ul.dropdown *.menu_title:hover >a{color: #fff;}
+
+ul.dropdown ul a {width: 140px; padding: 3px 5px;}
+ul.dropdown ul a:hover {background-color: #ffb93a; color: #fff;}

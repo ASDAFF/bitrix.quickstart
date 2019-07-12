@@ -1,0 +1,159 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section.list",
+	"",
+	Array(
+		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
+		"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+		"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+		"CACHE_TIME" => $arParams["CACHE_TIME"],
+		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+		"COUNT_ELEMENTS" => $arParams["SECTION_COUNT_ELEMENTS"],
+		"TOP_DEPTH" => $arParams["SECTION_TOP_DEPTH"],
+		"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
+	),
+	$component
+);?>
+<div class="view-location">
+    <a href="?view_type=list" title="<?=GetMessage("VIEW_LIST")?>" <?=($_SESSION['view_type']=='list')?'class="active"':''?>><img src="<?=$templateFolder?>/../../../../images/view-location-list.gif" alt="<?=GetMessage("VIEW_LIST")?>" style="max-width: 13px;"></a>
+    <a href="?view_type=default" title="<?=GetMessage("VIEW_COLS")?>" <?=($_SESSION['view_type']=='.default')?'class="active"':''?>><img src="<?=$templateFolder?>/../../../../images/view-location-col.gif" alt="<?=GetMessage("VIEW_LIST")?>" style="max-width: 13px;"></a>
+</div>
+
+<br />
+<?if(0 && $arParams["USE_FILTER"]=="Y"):?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.filter",
+	"",
+	Array(
+		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
+		"FILTER_NAME" => $arParams["FILTER_NAME"],
+		"FIELD_CODE" => $arParams["FILTER_FIELD_CODE"],
+		"PROPERTY_CODE" => $arParams["FILTER_PROPERTY_CODE"],
+		"PRICE_CODE" => $arParams["FILTER_PRICE_CODE"],
+		"OFFERS_FIELD_CODE" => $arParams["FILTER_OFFERS_FIELD_CODE"],
+		"OFFERS_PROPERTY_CODE" => $arParams["FILTER_OFFERS_PROPERTY_CODE"],
+		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+		"CACHE_TIME" => $arParams["CACHE_TIME"],
+		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+	),
+	$component
+);
+?>
+<br />
+<?endif?>
+<?if($arParams["USE_COMPARE"]=="Y"):?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.compare.list",
+	"",
+	Array(
+		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
+		"NAME" => $arParams["COMPARE_NAME"],
+		"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
+		"COMPARE_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["compare"],
+	),
+	$component
+);?>
+<br />
+<?endif?>
+
+<?
+$par_sec = false;
+if($arResult['VARIABLES']['SECTION_ID'] != ""){
+	$par_sec = $arResult['VARIABLES']['SECTION_ID'];
+}elseif($arResult['VARIABLES']['SECTION_CODE']!=""){
+	$sect = CIBlockSection::GetList(Array(),Array("IBLOCK_ID"=>$arParams['IBLOCK_ID'],"CODE"=>$arResult['VARIABLES']['SECTION_CODE']))->GetNext();
+	if($sect) $par_sec = $sect['ID'];
+}
+
+$item = CIBlockElement::GetList(Array(),Array("IBLOCK_ID"=>$arParams['IBLOCK_ID']))->GetNext();
+$price = CCatalogProduct::GetOptimalPrice($item['ID'],1,$USER->GetUserGroupArray());
+$price_id = $price['PRICE']['CATALOG_GROUP_ID'];
+$price_arr = (CCatalogGroup::GetByID($price_id));
+?>
+<aside>
+    <?$APPLICATION->IncludeComponent (
+    "bitrix:catalog.smart.filter",
+        "",
+        Array(
+            "IBLOCK_TYPE" => "",
+            "IBLOCK_ID" => $arParams['IBLOCK_ID'],
+            "SECTION_ID" => $par_sec,
+            "FILTER_NAME" => "arrFilter",
+            "PRICE_CODE" => array($price_arr['XML_ID']),
+            "CACHE_TYPE" => "A",
+            "CACHE_TIME" => "3600",
+            "CACHE_GROUPS" => "Y",
+            "SAVE_IN_SESSION" => "N",
+            "INSTANT_RELOAD" => "Y"
+        ),$component
+    );?>
+</aside>
+
+
+
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section",
+	$_SESSION['view_type'],
+	Array(
+		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
+		"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
+		"ELEMENT_SORT_ORDER" => $arParams["ELEMENT_SORT_ORDER"],
+		"PROPERTY_CODE" => $arParams["LIST_PROPERTY_CODE"],
+		"META_KEYWORDS" => $arParams["LIST_META_KEYWORDS"],
+		"META_DESCRIPTION" => $arParams["LIST_META_DESCRIPTION"],
+		"BROWSER_TITLE" => $arParams["LIST_BROWSER_TITLE"],
+		"INCLUDE_SUBSECTIONS" => $arParams["INCLUDE_SUBSECTIONS"],
+		"BASKET_URL" => $arParams["BASKET_URL"],
+		"ACTION_VARIABLE" => $arParams["ACTION_VARIABLE"],
+		"PRODUCT_ID_VARIABLE" => $arParams["PRODUCT_ID_VARIABLE"],
+		"SECTION_ID_VARIABLE" => $arParams["SECTION_ID_VARIABLE"],
+		"PRODUCT_QUANTITY_VARIABLE" => $arParams["PRODUCT_QUANTITY_VARIABLE"],
+		"FILTER_NAME" => $arParams["FILTER_NAME"],
+		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
+		"CACHE_TIME" => $arParams["CACHE_TIME"],
+		"CACHE_FILTER" => $arParams["CACHE_FILTER"],
+		"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+		"SET_TITLE" => $arParams["SET_TITLE"],
+		"SET_STATUS_404" => $arParams["SET_STATUS_404"],
+		"DISPLAY_COMPARE" => $arParams["USE_COMPARE"],
+		"PAGE_ELEMENT_COUNT" => $arParams["PAGE_ELEMENT_COUNT"],
+		"LINE_ELEMENT_COUNT" => $arParams["LINE_ELEMENT_COUNT"],
+		"PRICE_CODE" => $arParams["PRICE_CODE"],
+		"USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
+		"SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
+
+		"PRICE_VAT_INCLUDE" => $arParams["PRICE_VAT_INCLUDE"],
+		"USE_PRODUCT_QUANTITY" => $arParams['USE_PRODUCT_QUANTITY'],
+
+		"DISPLAY_TOP_PAGER" => $arParams["DISPLAY_TOP_PAGER"],
+		"DISPLAY_BOTTOM_PAGER" => $arParams["DISPLAY_BOTTOM_PAGER"],
+		"PAGER_TITLE" => $arParams["PAGER_TITLE"],
+		"PAGER_SHOW_ALWAYS" => $arParams["PAGER_SHOW_ALWAYS"],
+		"PAGER_TEMPLATE" => $arParams["PAGER_TEMPLATE"],
+		"PAGER_DESC_NUMBERING" => $arParams["PAGER_DESC_NUMBERING"],
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => $arParams["PAGER_DESC_NUMBERING_CACHE_TIME"],
+		"PAGER_SHOW_ALL" => $arParams["PAGER_SHOW_ALL"],
+
+		"OFFERS_CART_PROPERTIES" => $arParams["OFFERS_CART_PROPERTIES"],
+		"OFFERS_FIELD_CODE" => $arParams["LIST_OFFERS_FIELD_CODE"],
+		"OFFERS_PROPERTY_CODE" => $arParams["LIST_OFFERS_PROPERTY_CODE"],
+		"OFFERS_SORT_FIELD" => $arParams["OFFERS_SORT_FIELD"],
+		"OFFERS_SORT_ORDER" => $arParams["OFFERS_SORT_ORDER"],
+		"OFFERS_LIMIT" => $arParams["LIST_OFFERS_LIMIT"],
+
+		"SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+		"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+		"SECTION_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["section"],
+		"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
+		'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
+		'CURRENCY_ID' => $arParams['CURRENCY_ID'],
+		'SHOW_ALL_WO_SECTION' => 'Y'
+	),
+	$component
+);
+?>

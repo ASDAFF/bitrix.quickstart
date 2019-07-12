@@ -1,0 +1,3 @@
+<?
+CJSCore::Init(array('jquery'));
+?>

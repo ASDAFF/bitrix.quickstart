@@ -1,0 +1,86 @@
+.color_choice{
+display: block;
+position: fixed;
+top: 140px;
+left: -50px;
+background: #fff;
+width: 80px;
+overflow: hidden;
+-webkit-box-shadow: 2px 2px 3px #CACACA;
+-moz-box-shadow: 2px 2px 3px #CACACA;
+box-shadow: 2px 2px 3px #CACACA;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.color_choice>.change_color{
+height: 50px;
+line-height: 50px;
+font-size: 18px;
+text-align: center;
+width: 170px;
+padding-left: 2px;
+display: block;
+font-weight: 600;
+text-decoration: none;
+border-bottom: 1px solid #f3f3f3;
+margin: 0;
+}
+.color_choice>ul{
+width: 50px;
+display: inline-block;
+float: left;
+}
+.color_choice>ul>li{
+display: block;
+height: 50px;
+}
+.color_choice>ul>li>a{
+display: inline-block;
+width: 40px;
+height: 40px;
+line-height: 50px;
+font-size: 16px;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+margin: 5px;
+border-radius: 5px;
+posr
+}
+.color_choice>ul>li>a.main_color{
+background: #FC7A38;
+}
+.color_choice>ul>li>a.blue_color{
+background: #3498DB;
+}
+.color_choice>ul>li>a.yellow_color{
+background: #FFD700;
+}
+.color_choice>ul>li>a.red_color{
+background: #E74C3C;
+}
+.color_choice>ul>li>a.purple_color{
+background: #9B59B6;
+}
+.color_choice>ul>.color_open{
+width: 250px;
+height: 30px;
+line-height: 195px;
+position: absolute;
+font-size: 16px;
+text-decoration: none;
+font-weight: bold;
+text-align: center;
+background: url("../images/open_arrow.png") no-repeat center center;
+display: block;
+right: -25px;
+top: 113px;
+-webkit-transform: rotate(270deg);
+-moz-transform: rotate(270deg); 
+-o-transform: rotate(270deg); 
+-ms-transform: rotate(270deg); 
+transform: rotate(270deg); 
+}
+.color_choice.active>.color_open{
+background:url("../images/close_arrow.png") no-repeat center center;	
+}

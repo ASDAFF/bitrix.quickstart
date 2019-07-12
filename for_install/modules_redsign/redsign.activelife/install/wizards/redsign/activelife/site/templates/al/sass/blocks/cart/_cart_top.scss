@@ -1,0 +1,70 @@
+.cart_top {
+	position: relative;
+    
+  & > a {
+    color: $text-color;
+  }
+
+  .icon-cart {
+    float: left;
+    height: 35px;
+    width: 40px;
+  }
+  
+  &__text {
+    float: left;
+  }
+  
+  &__title {
+    @extend %theme-link;
+    display: none;
+  }
+  
+  &__num {
+    background: $skin0_bg;
+    border-radius: $base-line-height*0.75;
+    box-sizing: border-box;
+    color: $skin0_color;
+    display: inline-block;
+    font-size: $font-size-h4;
+    margin: -5px 0 0 -12px;
+    min-width: $base-line-height*1.5;
+    padding: $base-line-height*0.25;
+    text-align: center;
+  }
+  
+  .activelife &:hover { 
+    color: $text-color;
+  }
+  
+  &:hover &__title {
+    color: $skin1_bg;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .cart_top {
+    margin-right: 20px;
+    
+    .icon-cart {
+      padding-right: 12px;
+    }
+
+    &__title {
+      display: block;
+      font-size: $font-size-h4;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    &__num {
+      background: transparent;
+      color: $text-color;
+      display: inline;
+      font-size: inherit;
+      margin: 0;
+      min-width: 0;
+      padding: 0;
+    }
+  }
+}

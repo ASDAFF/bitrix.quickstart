@@ -1,0 +1,7 @@
+<IfModule mod_mime.c>
+	RemoveHandler      .php .php3 .php4 .php5 .php6 .phtml .pl .asp .aspx .cgi .dll .exe .shtm .shtml .fcg .fcgi .fpl .asmx .pht
+	AddType text/plain .php .php3 .php4 .php5 .php6 .phtml .pl .asp .aspx .cgi .dll .exe .shtm .shtml .fcg .fcgi .fpl .asmx .pht
+</IfModule>
+<IfModule mod_php5.c>
+	php_flag engine off
+</IfModule>

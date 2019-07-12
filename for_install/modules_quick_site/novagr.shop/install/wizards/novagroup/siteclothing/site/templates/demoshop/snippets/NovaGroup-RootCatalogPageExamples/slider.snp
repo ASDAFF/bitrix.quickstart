@@ -1,0 +1,7 @@
+<?$APPLICATION->IncludeComponent("novagr.shop:catalog.section.recommends", ".default", array(
+	"CACHE_TYPE" => "A",
+	"CACHE_TIME" => "3600",
+	"MAP_DATA" => "MAP_DATA[TITLE][12]=&MAP_DATA[URL][12]=&MAP_DATA[TITLE][11]=&MAP_DATA[URL][11]=&MAP_DATA[TITLE][10]=&MAP_DATA[URL][10]=&MAP_DATA[TITLE][9]=&MAP_DATA[URL][9]=&MAP_DATA[TITLE][8]=%23&MAP_DATA[URL][8]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_7.jpg&MAP_DATA[TITLE][7]=%23&MAP_DATA[URL][7]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_6.jpg&MAP_DATA[TITLE][6]=%23&MAP_DATA[URL][6]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_5.jpg&MAP_DATA[TITLE][5]=%23&MAP_DATA[URL][5]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_4.jpg&MAP_DATA[TITLE][4]=%23&MAP_DATA[URL][4]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_3.jpg&MAP_DATA[TITLE][3]=%23&MAP_DATA[URL][3]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_2.jpg&MAP_DATA[TITLE][2]=%23&MAP_DATA[URL][2]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_1.jpg&MAP_DATA[TITLE][1]=%23&MAP_DATA[URL][1]=%2Flocal%2Fcomponents%2Fnovagr.shop%2Fcatalog.section.recommends%2Fimages%2Fdemo%2F89_119_0.jpg&sessid=a0cde1428ec69150161799a7ab557d46"
+	),
+	false
+);?>

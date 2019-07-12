@@ -1,0 +1,3 @@
+<?php
+
+class Novagroup_Classes_General_CatalogRecommend extends Novagroup_Classes_Abstract_CatalogRecommend {}

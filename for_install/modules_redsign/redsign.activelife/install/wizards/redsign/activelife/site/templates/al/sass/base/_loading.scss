@@ -1,0 +1,110 @@
+.loading {
+	position:relative;
+	width:125px;
+	height:125px;
+	margin:auto;
+	transform:scale(0.6);
+  
+  &__in {
+    position:absolute;
+    background: transparent;
+    height:22px;
+    width:22px;
+    border-radius:12px;
+    animation-name:f_fadeG;
+    animation-duration:0.362s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+  }
+  
+  &__1 {
+    left:0;
+    top:51px;
+	animation-delay:0.0195s;
+  }
+  &__2 {
+    left:15px;
+    top:15px;
+	animation-delay:0.026s;
+  }
+  &__3 {
+    left:51px;
+    top:0;
+	animation-delay:0.0325s;
+  }
+  &__4 {
+    right:15px;
+    top:15px;
+	animation-delay:0.039s;
+  }
+  &__5 {
+    right:0;
+    top:51px;
+	animation-delay:0.0455s;
+  }
+  &__6 {
+    right:15px;
+    bottom:15px;
+	animation-delay:0.052s;
+  }
+  &__7 {
+    left:51px;
+    bottom:0;
+	animation-delay:0.0585s;
+  }
+  &__8 {
+    left:15px;
+    bottom:15px;
+	animation-delay:0.065s;
+  }
+}
+
+@keyframes f_fadeG{
+	0%{
+		background-color:$skin0_bg;
+	}
+
+	100%{
+		background-color:transparent;
+	}
+}
+
+@-o-keyframes f_fadeG{
+	0%{
+		background-color:$skin0_bg;
+	}
+
+	100%{
+		background-color:transparent;
+	}
+}
+
+@-ms-keyframes f_fadeG{
+	0%{
+		background-color:$skin0_bg;
+	}
+
+	100%{
+		background-color:transparent;
+	}
+}
+
+@-webkit-keyframes f_fadeG{
+	0%{
+		background-color:$skin0_bg;
+	}
+
+	100%{
+		background-color:transparent;
+	}
+}
+
+@-moz-keyframes f_fadeG{
+	0%{
+		background-color:$skin0_bg;
+	}
+
+	100%{
+		background-color:transparent;
+	}
+}

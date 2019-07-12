@@ -1,0 +1,594 @@
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+a, .text-default {
+	color: #ffa500;
+}
+a:hover, a:focus,
+.default-bg .white-bg p a:hover,
+.default-bg .gray-bg p a:hover,
+.dark-bg .gray-bg p a:hover {
+	color: #e09200;
+}
+mark,
+.mark {
+	background-color: #ffa500;
+	color: #ffffff;
+}
+.table > thead > tr > th {
+	border-bottom: 1px solid #ffa500;
+	background-color: #ffa500;
+	color: #fff;
+}
+.underline,
+.table-bordered {
+	border-color: #ffa500;
+}
+
+/* 2 Layout
+----------------------------------------------------------------------------- */
+.default-bg {
+	background-color: #ffa500;
+	color: #ffffff;
+}
+.header-top {
+	border-top: 3px solid #ffa500;
+}
+.header-top.default {
+	background-color:#ffa500;
+}
+.header-top.default .default_bg i,
+.header-top.default .header-top-dropdown .dropdown.open > button i,
+.header-top.default .header-top-dropdown .dropdown > button:hover i {
+	color:#ffa500;
+}
+
+/* Backgrounds
+---------------------------------- */
+.default-translucent-bg:after {
+	background-color: rgba(255,165,0,0.7);
+}
+
+/* 3 Pages
+----------------------------------------------------------------------------- */
+.blogpost .post-info {
+	background-color: #ffa500;
+	color: #fff;
+}
+.blogpost .side .social-links li a {
+	background-color: transparent;
+	border-color: transparent;
+	color: #ffa500;
+}
+.blogpost ul.links li a:hover {
+	color: #ffa500;
+}
+
+/* timeline layout */
+.timeline-date-label {
+	color: #ffa500;
+}
+@media (min-width:768px) {
+	.timeline .timeline-item:before {
+		background-color: #fff;
+		border: 1px solid #ffa500;
+	}
+}
+
+/* 4 Template Components
+----------------------------------------------------------------------------- */
+/* Buttons
+---------------------------------- */
+/* Gray Buttons */
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+	color: #ffffff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+
+/* Light Gray Buttons */
+.btn-light-gray:hover,
+.btn-light-gray:focus,
+.btn-light-gray:active,
+.btn-light-gray.active,
+.open .dropdown-toggle.btn-light-gray {
+	color: #ffffff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+
+/* Default Buttons */
+.dark-bg .white-bg .btn-default,
+.dark-bg .tp-caption .btn-default,
+.dark-bg .tp-caption .btn-white:hover,
+.dark-bg .tp-caption .btn-white:focus,
+.dark-bg .tp-caption .btn-white:active,
+.default-bg .white-bg .btn-default,
+.default-bg .tp-caption .btn-default,
+.default-bg .tp-caption .btn-white:hover,
+.default-bg .tp-caption .btn-white:focus,
+.default-bg .tp-caption .btn-white:active,
+.btn-default {
+	background-color: #ffa500;
+	color: #fff;
+	border-color: #ffa500;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.dark-bg .white-bg .btn-default:hover,
+.default-bg .white-bg .btn-default:hover,
+.open .dropdown-toggle.btn-default {
+	color: #ffa500;
+	background-color: transparent;
+	border-color: #ffa500;
+}
+.default-bg .tp-caption .btn-white,
+.default-bg .tp-caption .btn-default:hover,
+.default-bg .tp-caption .btn-default:focus,
+.default-bg .tp-caption .btn-default:active,
+.dark-bg .tp-caption .btn-white,
+.dark-bg .tp-caption .btn-default:hover,
+.dark-bg .tp-caption .btn-default:focus,
+.dark-bg .tp-caption .btn-default:active {
+	border-color:#ffa500;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default {
+	background-color: #e09200;
+	border-color: #e09200;
+}
+
+/* Button with transparent bg
+---------------------------------- */
+.btn-white {
+	background-color: transparent;
+	color: #e09200;
+	border: 1px solid #ffa500;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.light .footer-content .btn-white:hover,
+.open .dropdown-toggle.btn-white {
+	color: #fff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+
+/* Button background transitions
+---------------------------------- */
+.hvr-sweep-to-right:before,
+.hvr-sweep-to-left:before,
+.hvr-sweep-to-bottom:before,
+.hvr-sweep-to-top:before,
+.hvr-bounce-to-right:before,
+.hvr-bounce-to-left:before,
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before,
+.hvr-radial-out:before,
+.hvr-rectangle-out:before,
+.hvr-shutter-out-horizontal:before,
+.hvr-shutter-out-vertical:before {
+	background: #e09200;
+}
+
+/* Forms
+---------------------------------- */
+.default-bg .form-control {
+	border-color: #ffa500;
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .35);
+	color: #ffffff;
+}
+.default-bg .form-control:focus {
+	border-color: #ffa500;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+.default-bg .input-group-addon {
+	background-color: #e09200;
+	border-color: #ffa500;
+	color: #fff;
+}
+.dropdown .active>a>.badge,
+.dropdown a:hover .badge,
+.dropdown .open > a > .badge {
+	border-color: #ffa500;
+}
+
+/* Pager
+---------------------------------- */
+ul.pagination li > a:hover {
+	background-color: transparent;
+	color: #ffffff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+ul.pagination li.active a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+	color: #ffffff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+
+/* Tabs
+---------------------------------- */
+.nav-tabs > li.active > a:after {
+	background-color: #ffa500;
+}
+.tab-content:after {
+	background-color: #ffa500;
+}
+@media (max-width:480px) {
+	.nav-tabs > li > a:hover:after {
+		background-color: #ffa500;
+	}
+}
+
+/* Horizontal tabs version 2 */
+.tabs-style-2 .nav-tabs {
+	border-bottom: 1px solid #ffa500;
+}
+.tabs-style-2 .nav-tabs > li.active > a,
+.tabs-style-2 .nav-tabs > li.active > a:hover,
+.tabs-style-2 .nav-tabs > li.active > a:focus,
+.tabs-style-2 .nav-tabs > li > a:hover {
+	border: 1px solid #ffa500;
+	background-color: #ffa500;
+	color: #fff;
+}
+
+/* vertical tabs */
+.vertical .nav-tabs > li > a:hover:after {
+	background-color: #ffa500;
+}
+
+/* Nav pills
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus,
+.nav-pills > li > ul li.active,
+.nav-pills > li > ul li:hover,
+.nav-pills > li.active > a:after,
+.nav-pills > li.active > a:hover:after,
+.nav-pills > li.active > a:focus:after,
+.nav-pills > li > a:hover:after,
+.nav-pills > li > a:focus:after {
+	color: #ffa500;
+}
+.light .footer-content .nav-pills > li.active > a:hover,
+.light .footer-content .nav-pills > li > a:hover {
+	color: #e09200;
+}
+.nav-pills > .active > a > .badge {
+	color: #ffa500;
+	background-color: #fff;
+	border-color: #ffa500;	
+}
+.default-bg .filters .nav-pills a:hover,
+.dark-bg .filters .nav-pills a:hover {
+	color: #ffa500;
+}
+/* Collapse
+---------------------------------- */
+.panel-heading span,
+.panel-heading a {
+	background-color: #ffa500;
+	color: #ffffff;
+}
+.panel-heading a:hover,
+.panel-transparent .panel-heading a:hover {
+	background-color: #ffa500;
+	color: #ffffff;
+}
+
+/* Progress bars
+---------------------------------- */
+.progress-bar-default {
+	background-color: #ffa500;
+}
+
+/* Modals
+---------------------------------- */
+.modal-content .modal-header {
+	background-color: #ffa500;
+}
+
+/* Images and Images overlay
+---------------------------------- */
+.overlay a {
+	color: #ffa500;
+	background-color: #ffffff;
+}
+.overlay-links a + a {
+	color: #ffffff;
+	background-color: #ffa500;
+}
+a.overlay i {
+	color: #ffa500;
+}
+.default-bg .overlay a ,
+.dark-bg .overlay a {
+	color:#ffa500;
+}
+
+/* 5 Navigations
+----------------------------------------------------------------------------- */
+/* first level active menu items on hover/focus */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #ffa500;
+	background-color: transparent;
+}
+
+.main-navigation .navbar-nav > .open > a, 
+.main-navigation .navbar-nav > .open > a:hover, 
+.main-navigation .navbar-nav > .open > a:focus { 
+	color: #666666; 
+	background-color: #fafafa; 
+}
+
+/* second level menu items on focus/hover and when opened */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu .menu > .active > a,
+.dropdown-menu .menu > .active > a:hover,
+.dropdown-menu .menu > .active > a:focus {
+	background-color: #ffffff;
+	color: #ffa500;
+	border-color: #f1f1f1;
+}
+#offcanvas .nav .open > a,
+#offcanvas .nav .open > a:hover,
+#offcanvas .nav .open > a:focus,
+#offcanvas .nav > li > a:hover, 
+#offcanvas .nav > li > a:focus,
+#offcanvas .navbar-nav > li.active > a {
+	color: #ffa500;
+	background-color: #ffffff;
+}
+
+/* mega menu menu items on focus/hover and when opened */
+.mega-menu .menu > li > a:hover,
+.mega-menu .menu > li > a:focus {
+	background-color: #ffffff;
+	color: #ffa500;
+	border-color: #f1f1f1;
+}
+
+/* arrows for parent menu items */
+.navbar-default .navbar-nav > .active.dropdown > a:before {
+	color: #ffa500;
+}
+.navbar-default .navbar-nav > .dropdown.open > a:before { 
+	color: #e5e5e5; 
+}
+.dropdown .dropdown.open>a:before,
+.transparent.header:not(.dark) .dropdown .dropdown.open>a:before {
+	color: #ffa500;
+}
+
+/* mobile menu toggle button on hover/focus */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fafafa;
+	border-color: #ffa500;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+	background-color: #ffa500;
+}
+.default.header {
+	background-color:#ffa500;
+}
+.fixed-header-on .default.header.float {
+	border-bottom:1px solid #ffa500;
+	background-color:rgba(255, 165, 0, 0.85);
+}
+.fixed-header-on .default.header.non-transparent {
+	background-color:#ffa500;
+}
+.default .navbar-default .navbar-nav > li.open > a {
+	color:#ffa500;
+}
+@media (max-width:767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus { 
+		color: #ffa500; 
+		background-color: transparent; 
+	}
+	
+	/* first level items hover and focus states */
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #ffa500;
+		background-color: #fff;
+	}
+	
+	/* second level items on hover/focus */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ffa500;
+	}
+}
+
+/* 6 Blocks/Widgets
+----------------------------------------------------------------------------- */
+/* Boxes
+---------------------------------- */
+.box.gray-bg:hover {
+	color: #ffa500;
+}
+.box.default-bg:hover {
+	background-color: #fff;
+	border: 1px solid #ffa500;
+}
+.box.default-bg:hover * {
+	color: #ffa500;
+}
+.box-style-1:not(.team-member):hover i {
+	color: #ffa500;
+}
+.box-style-1.default-bg:hover i, 
+.box-style-1.dark-bg:hover i {
+	color: inherit;
+}
+.box-style-2:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ffa500;
+}
+.box-style-2:hover .default-bg * {
+	color: #ffa500;
+}
+.box-style-2:hover .white-bg * {
+	color: #ffa500;
+}
+.box-style-3:hover .default-bg {
+	background-color: #fff;
+	border: 1px solid #ffa500;
+}
+.box-style-3:hover .default-bg * {
+	color: #ffa500;
+}
+.box-style-3:hover .white-bg * {
+	color: #ffa500;
+}
+
+/* Tags cloud block
+---------------------------------- */
+.tag a:hover {
+	color: #ffffff;
+	background-color: #ffa500;
+	border-color: #ffa500;
+}
+
+/* Social icons block
+---------------------------------- */
+.social-links li a {
+	background: #ffa500;
+	border: 1px solid #ffa500;
+	color: #fff;
+}
+.social-links li a:hover {
+	background-color: transparent;
+	border-color: #e09200;
+	color: #e09200;
+}
+.social-links .dropdown.open>button>i:before {
+	content: "\f00d";
+	color: #ffa500;
+}
+.header-top .social-links li a:hover {
+	color: #e09200;
+}
+
+/* search and login
+---------------------------------- */
+.header-top-dropdown .dropdown.open>button,
+.header-top-dropdown .dropdown>button:hover {
+
+	color: #ffa500;
+}
+
+/* Pricing tables
+---------------------------------- */
+.plan .popover-title {
+	background-color: #ffa500;
+	color: #ffffff;
+}
+.gray .plan .header h3 {
+	color: #ffa500;
+}
+.white .plan .header {
+	color: #fff;
+	background: #ffa500;
+}
+.stripped .header {
+	background: #ffa500;
+	-webkit-box-shadow: 0px 0px 60px #e09200 inset;
+	-moz-box-shadow: 0px 0px 60px #e09200 inset;
+	box-shadow: 0px 0px 60px #e09200 inset;
+	color: #fff;
+}
+
+/* 7 Main Slideshow
+----------------------------------------------------------------------------- */
+/* Slider Revolution captions */
+.default_bg {
+	background-color: #ffa500;
+	color: #fff;
+}
+
+/* Revolution Nav Controls */
+.tparrows.round:hover {
+	color: #ffffff;
+	background-color: #ffa500;
+}
+.tp-bullets.simplebullets.round .bullet:hover,
+.tp-bullets.simplebullets.round .bullet.selected {
+	background-color: #ffa500;
+}
+.tp-bannertimer {
+	background-color: rgba(255,165,0,0.7);
+}
+.default-bg .tp-bullets.preview4 .bullet:hover,
+.default-bg .tp-bullets.preview4 .bullet.selected {
+	background-color: #ffa500;
+}
+/* 8 Owl carousel
+----------------------------------------------------------------------------- */
+.owl-prev {
+	background-color: #ffa500;
+	color: #f1f1f1;
+}
+.owl-next {
+	background-color: #f1f1f1;
+	color: #ffa500;
+}
+.content-slider-with-controls .owl-buttons div,
+.content-slider-with-controls-autoplay .owl-buttons div {
+	background-color: #ffa500;
+	color: #f1f1f1;
+}
+.content-slider-with-controls .owl-prev:hover,
+.content-slider-with-controls .owl-next:hover,
+.content-slider-with-controls-autoplay .owl-prev:hover,
+.content-slider-with-controls-autoplay .owl-next:hover {
+	background-color: #f1f1f1;
+	color: #ffa500;
+}
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+	background: #ffa500;
+}
+
+/* 9 Services and News
+----------------------------------------------------------------------------- */
+.dark-bg .gray-bg p a, .default-bg .gray-bg p a, .default-bg .white-bg p a,
+.white-bg .box-style-1 .default-bg.icon-container i ,
+.white-bg .box-style-1:hover .default-bg.icon-container i,
+.gray-bg .box-style-1 .default-bg.icon-container i ,
+.gray-bg .box-style-1:hover .default-bg.icon-container i  {
+	color:#ffa500;
+}

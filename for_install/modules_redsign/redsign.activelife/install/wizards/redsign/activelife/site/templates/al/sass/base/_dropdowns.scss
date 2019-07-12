@@ -1,0 +1,69 @@
+.dropdown {
+  position: relative;
+
+  &-menu {
+    @extend %theme-background4;
+
+    background-clip: padding-box;
+    border: 1px solid $dropdown-border;
+    border-top: none;
+    background-clip: padding-box;
+    box-shadow: 3px 8px 8px 0 rgba($gray-dark, 0.75);
+    box-sizing: border-box;
+    display: none;
+    float: left;
+    left: 0;
+    list-style: none;
+    margin: -3px 0 0;
+    min-width: 100%;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+
+    > li > a,
+    > li > label {
+      display: block;
+      clear: both;
+      font-weight: normal;
+      color: $dropdown-link-color;
+      padding: $base-line-height*0.5 $base-line-height;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    
+    > li > a:hover,
+    > li > a:focus,
+    > .active > a,
+    > .active > a:hover
+    > .active > a:focus,
+    > li > label:hover,
+    > li > label:focus,
+    > .active > label,
+    > .active > label:hover
+    > .active > label:focus {
+      background-color: $dropdown-link-hover-bg;
+      color: $dropdown-link-hover-color;
+      outline: 0;
+      text-decoration: none;
+    }
+    
+    > .disabled > a,
+    > .disabled > label {
+      &,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $dropdown-link-disabled-color;
+        cursor: default;
+        text-decoration: line-through;
+      }
+    }
+  }
+  
+  //&-hover:hover > .dropdown-menu,
+  &.open > .dropdown-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,43 @@
+.profillist .item{
+	display:block;
+	margin-bottom:15px;
+	padding:10px 20px;
+	border:1px solid #F2F2F2;
+}
+.profillist .item:hover{
+	text-decoration:none;
+	border:1px solid #EE8131;
+}
+.profillist .item:hover .name{
+	text-decoration:underline;
+}
+.profillist .item .name{
+	font-size:18px;
+	line-height:22px;
+}
+.profillist .item .data{
+	color:#666;
+}
+.profillist .item .data,
+.profillist .item .action{
+	margin-top:5px;
+}
+.profillist .item .action .edit:hover,
+.profillist .item .action .delete:hover{
+	text-decoration:underline;
+}
+.profillist .item .action .edit .icon,
+.profillist .item .action .delete .icon{
+	margin-right:5px;
+	margin-bottom:2px;
+}
+.profillist .item .action .edit .icon{
+	width:15px;
+	height:10px;
+	background-position:0px -953px;
+}
+.profillist .item .action .delete .icon{
+	width:10px;
+	height:9px;
+	background-position:0px -890px;
+}

@@ -1,0 +1,1 @@
+<img src="<?=SITE_DIR?>include/logo.png" alt="" height="37" width="214">

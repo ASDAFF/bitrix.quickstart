@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>GetMessage("KIDSHOP_ORANGE_MAINPAGE"), "DESCRIPTION"=>"");?>

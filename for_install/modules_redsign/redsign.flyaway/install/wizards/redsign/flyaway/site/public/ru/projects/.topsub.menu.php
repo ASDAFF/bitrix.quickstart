@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Реализованные", 
+		"#SITE_DIR#projects/finished/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Текущие", 
+		"#SITE_DIR#projects/current/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Перспективные", 
+		"#SITE_DIR#projects/perspective/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

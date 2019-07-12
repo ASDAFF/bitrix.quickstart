@@ -1,0 +1,174 @@
+@charset "windows-1251";
+.item-block .preview img {
+	width: 175px
+}
+.logo img {
+	width: 219px !important;
+}
+.logo {
+	width: 219px !important;
+	overflow: hidden;
+}
+
+.logo-footer img {
+	width: 100px
+}
+
+.officeDealer .logo img {
+    width: 171px !important;
+}
+.individ input {
+    *display: inline;
+    *margin-left: .3em;
+    *line-height: 20px;
+    *zoom: 1;
+}
+.btn.bt3:hover, .btnsel:hover{
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#fb8c1c',endColorstr='#FFA040',GradientType=0);
+    *zoom: 1;
+
+
+}
+.btnsel {
+    *display: inline;
+    *margin-left: .3em;
+    *line-height: 20px;
+    *border: 0;
+    *zoom: 1;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.modal .reg-form .btn {
+    *display: inline;
+    *border: 0;
+    *margin-left: .3em;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    *zoom: 1;
+    line-height: 20px;
+}
+.modal .reg-form .btn {
+    *background-color: #e6e6e6;
+}
+.individ input:hover,
+.individ input:active,
+.individ input.active,
+.individ input.disabled,
+.individ input[disabled] {
+    *background-color: #d9d9d9;
+}
+.individ input:hover {*background-color: #d9d9d9;}
+.individ input {*display: inline; *margin-left: .3em;*line-height: 20px; *zoom: 1;}
+.individ input:hover,
+.individ input:active,
+.individ input.active,
+.individ input.disabled,
+.individ input[disabled] {
+    *background-color: #d9d9d9;
+}
+.individ input:hover {
+    *background-color: #d9d9d9;
+}
+.select select {filter: alpha(opacity=0);
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.s-dw input {filter: alpha(opacity=0);}
+.preview-info-boxover .middle .link-popover-card {filter: alpha(opacity=70);}
+.gdparent .sonet-log-item:hover, .gdparent-l .sonet-log-item:hover{filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color='#000000', strength=10);}
+.bx-wrapper {
+    *zoom: 1;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    *zoom: 1;
+    *display: inline;
+}
+.bx_kit_item_title { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);}
+.modal-backdrop,
+.modal-backdrop.fade.in {filter: alpha(opacity=70);}
+
+/**BOOTSTRAP**
+audio, canvas, video {
+    *display: inline;
+    *zoom: 1
+}*/
+.card-new-min {
+    background: url("/local/templates/demoshop/images/min-new.png") no-repeat left top;
+    height: 48px;
+    width: 48px;
+}
+.card-spec-min {
+    background: url("/local/templates/demoshop/images/min-spec.png") no-repeat left top;
+    height: 48px;
+    width: 48px;
+}
+.card-lider-min {
+    background: url("/local/templates/demoshop/images/min-lider.png") no-repeat left top;
+    height: 48px;
+    width: 48px;
+}
+.card-time-min {background: url("/local/templates/demoshop/images/min-time.png") no-repeat left top}
+.btn.dropdown-toggle {background: none}
+.title-search-result img {width: auto; height: 96px;}
+.color-catalog {height: 15px}
+.color-min {height: 12px; width: 12px}
+.b-C span {display: inline-block;height: 12px}
+.carousel-control.left {
+    background: url("/local/templates/demoshop/images/lightBox/lightbox-btn-prev.gif") no-repeat scroll 0 50% transparent;
+}
+.carousel-control.right {
+    background: url("/local/templates/demoshop/images/lightBox/lightbox-btn-next.gif") no-repeat right 50% transparent;
+}
+.tab-choice .message-demo {
+    background: url("/local/templates/demoshop/images/messeg.png") no-repeat left top;
+}
+.set-tool.message-demo {
+    background: url("/local/templates/demoshop/images/messeg.png") no-repeat left top);
+}
+#left .accordion-heading a.accordion-toggle {
+    background: url("/local/templates/demoshop/images/open.gif") no-repeat left 10px;
+}
+#left .accordion-heading a.accordion-toggle.collapsed {
+    background: url("/local/templates/demoshop/images/close.gif") no-repeat left 10px;
+}
+#left .accordion-heading span.accordion-toggle.all {
+    background: none repeat 0 0;
+    color: #000000;
+    cursor: default;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-top: -7px;
+    background-color: #fff;
+}
+.basket .icon-arrow-basket {
+    background: url("/local/templates/demoshop/images/basket-active.png") no-repeat left top;
+}
+.ui.header .span9 {
+    width: 765px
+}
+/** over***/
+#canvas {
+    position:relative;
+    width:988px;
+    margin:0 auto;
+}
+.contact-sh {display: none}
+.icon-exit {
+    font-size: 13px;
+}.icon-exit {
+     background: none;
+     border: medium none;
+     height: 31px;
+
+     text-decoration: underline;
+     width: 50px !important;
+ }
+/** /over***/
+ .n-01 a {display: inline-block;}
+.top-img-t {padding-left: 1px}
+/*.zoomContainer {z-index: 1050}
+.top_nav {z-index: 1055!important;}*/
+.zoomContainer {z-index: 1000}

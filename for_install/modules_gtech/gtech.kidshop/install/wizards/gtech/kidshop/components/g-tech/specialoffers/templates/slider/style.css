@@ -1,0 +1,42 @@
+.sliding{
+    position:relative;
+    left:0px;
+}
+
+#sliding{
+    overflow: hidden;
+    position:relative;
+}
+
+#left, #right{
+    cursor: pointer;
+}
+
+.specialsliderbg{
+	width: 695px;
+	height: 166px;
+	background: url(images/specialsliderbg.jpg) left top no-repeat;
+}
+
+.specialslidername{
+	color:#fff;
+	font-family: Georgia;
+	font-size: 14px;
+}
+
+.specialslidertext{
+	padding-left:10px;
+	height: 70px;
+	overflow:hidden;
+
+	color:#eee;
+	font-family: Georgia;
+	font-size: 12px;
+}
+
+.specbuttonbg{
+	background: url(images/button_bg.png) left top repeat-x;
+	color:#000;
+	font-family: Verdana;
+	font-size: 14px;
+}

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Поступающим";
+$arDirProperties = Array(
+
+);
+?>

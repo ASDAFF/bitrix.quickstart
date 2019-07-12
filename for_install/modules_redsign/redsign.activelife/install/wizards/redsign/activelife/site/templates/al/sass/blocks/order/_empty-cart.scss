@@ -1,0 +1,26 @@
+.empty-cart {
+    text-align: center;
+
+  & &__image {
+    width: 131px;
+    height: 116px;
+    margin: 50px auto 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  & &__text {
+    font-size: $font-size-h1;
+    margin-bottom: $base-line-height*2;
+    margin-top: $base-line-height*2;
+    color: $gray;
+  }
+
+  & &__descr {
+    font-size: 16px;
+    margin-bottom: $base-line-height*4;
+    margin-top: $base-line-height*4;
+  }
+}

@@ -1,0 +1,18 @@
+div.navigation {
+    margin: 40px 0px;
+    text-align: center;
+    /*color: #2280bc;*/
+    font-size: 17px;
+    font-family: 'Trebuchet MS',Tahoma,sans-serif;
+}    
+    div.navigation a {
+        /*color: #2280bc;*/
+        font-size: 17px;
+        margin: 0px 4px;
+    }    
+    div.navigation a.sel {
+        /*background-color: #7D5F48;*/
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0 2px;
+    }

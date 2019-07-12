@@ -1,0 +1,24 @@
+.b-photo-line {
+	overflow: hidden;
+}
+
+.b-photo-line-item {
+	margin: 0 1.5em 1.5em 0;
+	*display: inline;
+	display: -moz-inline-box;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+
+.b-photo-line-picture {
+/*	float: left;
+	margin: 0 1em 1em 0;*/
+}
+
+.b-photo-line-name {
+	margin-top: 1em;
+	font-size: 1.2em;
+	display: block;
+	overflow: hidden;
+}

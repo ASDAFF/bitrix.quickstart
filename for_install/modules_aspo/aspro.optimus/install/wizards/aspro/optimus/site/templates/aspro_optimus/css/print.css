@@ -1,0 +1,27 @@
+.basket_wrapp .module-cart table.bottom.middle td.row_values{float:none !important;display:table-cell !important;padding-top: 39px;}
+.scroll-to-top{display:none !important;}
+.form_demo-switcher{display:none;}
+header{background: none !important;}
+.phone_text{color:#000 !important;}
+.left_block, body .bx_item_list_you_looked_horizontal, .bx_ordercart .bx_sort_container{display:none;}
+.right_block{padding:0px;}
+.bx_ordercart .bx_ordercart_order_pay_center, #basket_quantity_control{display:none;}
+.bx_ordercart .bx_ordercart_order_table_container table.counter td:first-child{border: none !important;}
+.bx_ordercart .bx_ordercart_order_table_container table.counter input{background:none;border: none;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.itemphoto{opacity:0;height:0px;width: 0px;}
+.bx_ordercart .bx_ordercart_coupon:first-of-type{opacity:0;height:0px;}
+.slogan{display:none;}
+.print #header .middle-h-row .basket_wrapp{display:block !important;}
+.basket_wrapp  .header-cart, .middle_phone .phones .order_wrap_btn{display:none;}
+.print_basket{display:block;}
+.bx_ordercart .bx_ordercart_order_table_container table thead td{text-align:left;}
+.bx_ordercart .bx_ordercart_order_table_container table thead td.item, .bx_ordercart .bx_ordercart_order_table_container tbody td.item{padding-left:30px;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.itemphoto{padding:0px;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.itemphoto >div{min-width:0px;}
+.bx_ordercart .bx_ordercart_order_table_container table tbody td{padding-left:12px;}
+.bx_ordercart .bx_ordercart_order_table_container table thead td{font-size:12px;}
+.bx_ordercart .bx_ordercart_order_table_container .bx_ordercart_itemtitle a{font-size:14px;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.price .current_price, .bx_ordercart .bx_ordercart_order_table_container tbody td.custom>div:not(.centered){font-size:15px;}
+.bx_ordercart .bx_ordercart_order_sum tr #allSum_FORMATED, .bx_ordercart .bx_ordercart_order_sum tr #allSum_wVAT_FORMATED, .bx_ordercart .bx_ordercart_order_sum tr td:first-child{font-size:15px;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.price .old_price{font-size:11px;}
+.bx_ordercart .bx_ordercart_order_table_container tbody td.price .type_price, .bx_ordercart .bx_ordercart_order_table_container tbody td.price .type_price_value{font-size:10px;}

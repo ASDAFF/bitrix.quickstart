@@ -1,0 +1,30 @@
+.post{
+    font-size:14px
+}
+.post h3{
+    font-size:16px; margin: 10px 0
+}
+.post p{
+    margin: 0 0 15px
+}
+.post ul{
+    margin: 0 0 15px 20px
+}
+
+.post ul li{
+    list-style-type: disc
+}
+.post table{
+    margin: 0 0 15px;
+    width: 100%
+}
+.post table tr:nth-child(even){
+    background: #eee;
+}
+.post table tr td{
+    padding: 5px 10px
+}
+.post img {
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+}

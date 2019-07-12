@@ -1,0 +1,81 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О школе", 
+		SITE_DIR."about/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+ Array(
+		"История", 
+		SITE_DIR."about/history/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Наши достижения", 
+		SITE_DIR."about/achievements/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		SITE_DIR."about/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Мероприятия", 
+		SITE_DIR."about/events/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гимн школы", 
+		SITE_DIR."about/school_hymn/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Коллектив", 
+		SITE_DIR."about/staff/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Предметы", 
+		SITE_DIR."about/subjects/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Кабинеты", 
+		SITE_DIR."about/audience/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+ Array(
+		"Фотографии, видео", 
+		SITE_DIR."about/mediagallery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+ Array(
+		"Контакты", 
+		SITE_DIR."about/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

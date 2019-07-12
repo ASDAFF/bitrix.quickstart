@@ -1,0 +1,1 @@
+body{behavior:url('/js/csshover.htc')}#layout{width:expression(document.documentElement.clientWidth < 990? "989px":document.documentElement.clientWidth>1280? "1279px":"100%")}#content .main_content .filter .block{height:105px}#content .group .cart .info p{height:105px}

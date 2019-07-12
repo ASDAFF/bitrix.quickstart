@@ -1,0 +1,52 @@
+.feedback
+{
+    
+}
+    .feedback form
+    {
+        margin-top: 10px;
+    }
+    .feedback .field
+    {
+        margin-top: 7px;
+    }
+        .feedback .field input
+        {
+            width: 200px; 
+        }
+        .feedback .field input,
+        .feedback .field textarea
+        {
+            border: 1px solid #aaa;
+        }
+    .feedback .req
+    {
+        color: red;
+    }
+    .feedback .label
+    {
+        float: left;
+        width: 150px;
+    }
+    .feedback .message .label,
+    .feedback .captcha .label
+    {
+        float: none;
+        width: auto;
+        margin-bottom: 5px;
+    }
+        .feedback .message textarea
+        {
+            width: 350px;
+            padding: 0px;
+            height: 100px;
+        }
+        .feedback .captcha img
+        {
+            margin: 0px 60px 0px 0px;
+            height: 20px;
+        }
+    .feedback .submit
+    {
+        margin-top: 20px;
+    }

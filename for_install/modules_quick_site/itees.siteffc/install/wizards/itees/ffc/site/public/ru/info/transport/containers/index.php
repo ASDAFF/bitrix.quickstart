@@ -1,0 +1,77 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Типы контейнеров");
+?>
+<?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", ".default", array(
+	"IBLOCK_TYPE" => "info",
+	"IBLOCK_ID" => "#CONTAINERS_IBLOCK_ID#",
+	"SECTION_ID" => $_REQUEST["SECTION_ID"],
+	"SECTION_CODE" => "",
+	"COUNT_ELEMENTS" => "N",
+	"TOP_DEPTH" => "1",
+	"SECTION_URL" => "?SECTION_ID=#SECTION_ID#",
+	"CACHE_TYPE" => "A",
+	"CACHE_TIME" => "3600",
+	"CACHE_GROUPS" => "Y",
+	"ADD_SECTIONS_CHAIN" => "Y"
+	),
+	false
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section",
+	"",
+	Array(
+		"AJAX_MODE" => "N",
+		"IBLOCK_TYPE" => "info",
+		"IBLOCK_ID" => "#CONTAINERS_IBLOCK_ID#",
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_CODE" => "",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"FILTER_NAME" => "arrFilter",
+		"INCLUDE_SUBSECTIONS" => "N",
+		"SHOW_ALL_WO_SECTION" => "N",
+		"SECTION_URL" => "?SECTION_ID=#SECTION_ID#",
+		"DETAIL_URL" => "detail.php?ID=#ID#",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"SET_TITLE" => "N",
+		"SET_STATUS_404" => "N",
+		"PAGE_ELEMENT_COUNT" => "30",
+		"LINE_ELEMENT_COUNT" => "1",
+		"PROPERTY_CODE" => array("maxbrutto", "tara", "maxload", "volume", "outlength", "outwidth", "outheight", "intlength", "intwidth", "intheight", "doorwidth", "doorheight", "diameter", "venttop", "ventbase", "comment"),
+		"PRICE_CODE" => array(),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRODUCT_PROPERTIES" => array(),
+		"USE_PRODUCT_QUANTITY" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "3600",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"PAGER_TITLE" => "Статьи",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "Y",
+		"AJAX_OPTION_SHADOW" => "Y",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N"
+	),
+false
+);?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

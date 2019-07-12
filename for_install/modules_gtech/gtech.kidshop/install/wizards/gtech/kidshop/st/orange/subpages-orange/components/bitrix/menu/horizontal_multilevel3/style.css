@@ -1,0 +1,112 @@
+/* Top menu */
+#top-menu-layout { width: 100%; height:47px; position:relative; z-index:501; background: url('images/ul_l.png') left top no-repeat; margin-left: -10px; padding-right: 10px;}
+#top-menu { padding:0; margin:0;  list-style-type: none; display: block; height:47px; overflow: hidden;
+  background: url('images/right.png') right top no-repeat;
+  margin-left: 11px;
+  width: 100%;
+  padding-right: 10px;
+}
+#top-menu li { float: left; /*margin: 0 4px 0; height:42px;*/margin-left: -5;}
+#top-menu a
+{
+	display: block;
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight:bold;
+	outline: none;
+	line-height:47px;
+	cursor:pointer;
+        color: #534741;
+        /*padding-left: 2px;*/
+        /*margin: 0 3px;*/
+        
+}
+
+#top-menu .left-corner { display:inline-block; width:5px; height:47px; vertical-align:top; background: url('images/l-t_bg.png') top left no-repeat; posiotion: relative; z-index: 500;}
+#top-menu .root-item-text {display:inline-block; height:47px; vertical-align:top;  padding:0 4px; position: relative; z-index: 200;}
+#top-menu .root-item-text-line {display:inline-block; height:47px; vertical-align:top; position: relative; z-index: 200;}
+#top-menu .right-corner { display:inline-block; width:5px; height:47px; vertical-align:top; background: url('images/r-t_bg.png') top right no-repeat; posiotion: relative; z-index: 500;}
+
+#top-menu a:hover { /*margin:0; padding:0;*/ text-decoration:none;}
+#top-menu a:hover .left-corner { height:47px; background: url(images/sprite.png) no-repeat -36px -645px; }
+#top-menu a:hover .root-item-text { height:47px; background: url(images/sprite.png) repeat-x 0 -699px; line-height:47px; }
+#top-menu a:hover .root-item-text-line {  /*border:none;*/}
+#top-menu a:hover .right-corner { height:47px; background: url(images/sprite.png) no-repeat -42px -645px; }
+#top-menu li.home a:hover .root-item-text { background: none;}
+
+
+#top-menu li.selected a {  color: #000;  }
+#top-menu li.selected .left-corner {  height:47px; background: url(images/sprite.png) no-repeat -24px -644px; }
+#top-menu li.selected .root-item-text {  border:none; height:47px; background: url(images/sprite.png) repeat-x 0 -608px; }
+#top-menu li.selected .right-corner {  height:47px; background: url(images/sprite.png) no-repeat -30px -644px; }
+#top-menu li.selected .root-item-text-line {  border:none;}
+
+#top-menu li.hover { position:relative; z-index:2000; }
+#top-menu li.hover a { /*margin:0; padding:0;*/ text-decoration:none; }
+#top-menu li.hover .left-corner { height:47px; background: url(images/sprite.png) no-repeat 0 -645px; }
+#top-menu li.hover .root-item-text { height:47px; background: url(images/sprite.png) repeat-x 0 -528px; line-height:47px; }
+#top-menu li.hover .root-item-text-line {  border:none;}
+#top-menu li.hover .right-corner { height:47px; background: url(images/sprite.png) no-repeat -6px -645px; }
+
+#top-menu li.home { margin-left: 0;}
+#top-menu li.home .left-corner { display:none;}
+#top-menu li.home .root-item-text { padding-left: 0; }
+#top-menu li.home .right-corner{ display:none; }
+#top-menu li.selected.home .left-corner { display:inline-block; height:36px; background: url(images/sprite.png) no-repeat -12px -643px; }
+#top-menu li.selected.home .root-item-text { height:36px; background: url(images/sprite.png) repeat-x 0 -572px; line-height:34px; border: none; padding-left: 4px;}
+#top-menu li.selected.home .right-corner { display:inline-block; height:36px; background: url(images/sprite.png) no-repeat -18px -643px; }
+
+#top-menu li.home i { display:inline-block; width:16px; height:32px; background: transparent url(images/sprite.png) no-repeat 2px 10px; }
+#top-menu li.selected.home i { background: transparent url(images/sprite.png) no-repeat -43px 11px;}
+
+#top-menu li:hover .submenu { display: block;}
+#top-menu li:hover {
+	background: url(images/hover-left.png) left 50% no-repeat;
+}
+#top-menu li:hover span.root-item-text-line{
+	background: url(images/hover-bg.png) left top repeat-x;
+}
+#top-menu li:hover span.root-item-text{
+	background: url(images/hover-right.png) right 50% no-repeat;
+}
+div.submenu {
+	display: none;
+	position: absolute;
+	width:220px;
+	min-width:220px;
+	max-width:400px;
+	margin-top: 0px;
+	margin-left: 0px;
+	z-index:1999;
+	overflow:hidden;
+        
+}
+
+div.submenu-two-columns { width:440px; }
+div.submenu-two-columns table { width: 100%; }
+div.submenu-two-columns td.left { width: 180px; vertical-align:top; }
+div.submenu-two-columns td.right { width: 180px; vertical-align:top;}
+div.submenu-two-columns td.center { width: 20px; vertical-align:top; }
+
+div.submenu-top { position:relative; height:6px; overflow:hidden;  }
+div.submenu-top div.left { height:6px; background: url('images/l-t_bg.png') top left no-repeat; }
+div.submenu-top div.right { height:6px; background: url('images/r-t_bg.png') top right no-repeat;}
+div.submenu-top div.center { height:6px; margin: 0 6px; background: #ffea53;}
+
+div.submenu div.content { background: #ffea53;}
+div.submenu div.content-inner { background: #ffea53;  margin: 0 4px 0 0; padding: 3px 13px 5px 15px;}
+
+div.submenu-bottom { height:6px; overflow:hidden;  }
+div.submenu-bottom div.left { height:6px; background: url('images/l-b_bg.png') bottom left no-repeat; }
+div.submenu-bottom div.right { height:6px; background: url('images/r-b_bg.png') bottom right no-repeat;}
+div.submenu-bottom div.center { height:6px; margin: 0 6px; background: #ffea53;}
+
+div.submenu ul { list-style: none; margin:0; padding:0; min-width:160px;}
+div.submenu li { display: block !important; border-top: 1px solid #feea55 !important; float:none !important; margin:4px 0 0 !important; padding:4px 0 0 !important; height:auto !important;}
+div.submenu li.first { border: none !important; margin-top:0 !important; padding-top:0 !important;}
+div.submenu a { display:block !important; outline:none !important; border: none !important; background: none !important; padding:5px 0 5px 0 !important; margin:0 !important; font-family:Verdana !important; font-weight:normal !important; font-size:13px !important; line-height:1 !important; color: #534741 !important; text-decoration:none !important;}
+div.submenu a:hover { color: #e00000 !important; text-decoration:underline !important;}
+div.submenu ul ul { margin-left:1.2em !important; min-width:100px !important;}
+div.submenu ul ul li { margin:0 0 0.1em 0 !important; padding:0 0 0.1em 0 !important; border: none !important;}
+div.submenu ul ul a { font-size: 11px !important; color: #716c69 !important; padding: 3px 0 !important;}

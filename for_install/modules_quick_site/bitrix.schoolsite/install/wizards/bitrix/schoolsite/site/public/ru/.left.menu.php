@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О школе", 
+		"about/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"about/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Мероприятия", 
+		"about/events/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Коллектив", 
+		"about/staff/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Расписание уроков", 
+		"about/schedule/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

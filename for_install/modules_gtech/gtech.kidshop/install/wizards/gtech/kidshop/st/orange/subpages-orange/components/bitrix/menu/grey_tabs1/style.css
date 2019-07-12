@@ -1,0 +1,58 @@
+td.mainmenu-left{
+	width: 11px; height: 37px;
+	background: url(images/mainmenu-left.png) right top no-repeat;
+	font-size: 1px;
+}
+
+td.mainmenu-right{
+	width: 11px; height: 37px;
+	background: url(images/mainmenu-right.png) left top no-repeat;
+	font-size: 1px;
+	padding-right: 10px;
+}
+
+td.mainmenu-bg{
+	height: 37px;
+	background: url(images/mainmenu-bg.png) left top repeat-x;
+}
+
+a.mainmenu-link{
+	font-family: tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	color: #534741;
+}
+
+a.mainmenu-link:hover{
+	text-decoration: underline;
+}
+
+table.selected a.mainmenu-link{
+	font-family: tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #534741;
+}
+
+table.selected a.mainmenu-link:hover{
+	text-decoration: none;
+}
+
+table.selected td.mainmenu-left{
+	width: 11px; height: 37px;
+	background: url(images/mainmenu-sleft.png) right top no-repeat;
+	font-size: 1px;
+}
+
+table.selected td.mainmenu-right{
+	width: 11px; height: 37px;
+	background: url(images/mainmenu-sright.png) left top no-repeat;
+	font-size: 1px;
+	padding-right: 10px;
+}
+
+table.selected td.mainmenu-bg{
+	height: 37px;
+	background: url(images/mainmenu-sbg.png) left top repeat-x;
+}

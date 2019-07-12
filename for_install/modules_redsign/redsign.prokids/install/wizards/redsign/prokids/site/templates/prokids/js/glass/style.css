@@ -1,0 +1,21 @@
+.glass{
+	position:relative;
+	display:inline-block;
+	//display:inline;
+	//zoom:1;
+}
+.glass_lupa{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	width:295px;
+	height:295px;
+	border:4px solid #F2F2F2;
+	cursor:pointer;
+	z-index:110;
+	background-color:#fff;
+}
+.js_picture_glass{
+	cursor:pointer;
+}

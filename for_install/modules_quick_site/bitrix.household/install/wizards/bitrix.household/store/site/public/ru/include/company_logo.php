@@ -1,0 +1,1 @@
+<a href="#SITE_DIR#"><img src="<?=SITE_TEMPLATE_PATH?>/images/logo.png" width="208px" height="53px" alt="БытТехника" /></a>

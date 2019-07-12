@@ -1,0 +1,51 @@
+#bottomShapMenu {display:block;width:100%;float:left;display:block;position:relative;}
+#bottomShapMenu li {float: left;display:inline-block;height:40px;line-height:40px;}
+#bottomShapMenu li a {text-decoration:none;height:40px;line-height:40px;color:#ffffff;display:block;padding:0 1.5em;
+font-size:12px;}
+#bottomShapMenu li a:hover, #bottomShapMenu li.active > a {background:#005D99;}
+#bottomShapMenu li ul {display:none;}
+
+#bottomShapMenu  .flexMenu-popup a {
+  display: block;
+}
+#bottomShapMenu  .flexMenu-popup {
+list-style-type: none;
+padding: 0;
+background: #F7F7F7;
+margin: 0;
+z-index:5;
+display:block;width:300px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+-moz-box-shadow:    0 2px 3px rgba(0, 0, 0, 0.2);
+box-shadow:         0 2px 3px rgba(0, 0, 0, 0.2);
+}
+#bottomShapMenu  .flexMenu-popup li {display:block;width:100%;clear:both;overflow:hidden;border-bottom:1px solid #E8E8E8;
+line-height:14px;font-size:12px;height:auto;padding:5px 0;margin:0 10px;}
+#bottomShapMenu  .flexMenu-popup li a {color:#000000;height:auto;line-height:16px;}
+#bottomShapMenu  .flexMenu-popup li a:hover {color:#0072BC;background:none;}
+
+#bottomShapMenu .level2 {display:block;width:100%;clear:both;overflow:hidden;background:#EDEDED;
+display:none;
+position:absolute;top:40px;z-index:10;
+}
+#bottomShapMenu .level2 .mlf_children_block {display:block;width:100%;clear:both;padding-bottom:5px;}
+#bottomShapMenu .level2 .mlf_children_block  a {text-decoration:none;height:auto;line-height:15px;color:#ffffff;display:inline-block;padding:0;
+font-size:13px;}
+#bottomShapMenu .level2 .mlf_children_block li {height:auto;display:inline-block;}
+#bottomShapMenu .level2 .mlf_children_block  a:hover {background:none;}
+#bottomShapMenu .level2 .childrenBlocker {display:block;float:left;}
+#bottomShapMenu .level2 .column3 .childrenBlocker {width:31%;padding:10px 1%;}
+#bottomShapMenu .level2 .column2 .childrenBlocker {width:48%;padding:10px 1%;}
+#bottomShapMenu .level2 .column1 .childrenBlocker {width:98%;padding:10px 1%;}
+#bottomShapMenu .level2 .childrenBlocker li.parent {display:block;width:100%;clear:both;padding-bottom:5px;}
+#bottomShapMenu .level2 .childrenBlocker li.parent a {font-size:13px;font-weight:bold;color:#000000;text-decoration:none;}
+#bottomShapMenu .level2 .childrenBlocker li.parent a:hover {color:#02558B;}
+#bottomShapMenu .level2 .childrenBlocker li.parent ul {display:block;width:100%;clear:both;padding:3px 0 5px 0;overflow:hidden;}
+#bottomShapMenu .level2 .childrenBlocker li.parent ul li {display:inline-block;float:left;padding:3px 20px 3px 10px;
+background:url('images/li_arr.png') 0 -59px no-repeat;
+}
+#bottomShapMenu .level2 .childrenBlocker li.parent ul li a {font-weight:normal;text-decoration:none;color:#0072BC;font-size:13px;}
+#bottomShapMenu .level2 .childrenBlocker li.parent ul li a:hover {color:#00233A;}

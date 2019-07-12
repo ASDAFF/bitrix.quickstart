@@ -1,0 +1,178 @@
+ul.emarket-catalog-menu, .emarket-catalog-menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style: none;
+	font-size:12px;
+	border:1px solid #94bfdc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	z-index:955 !important;
+}
+
+.emarket-catalog-menu > li {
+	position:relative;
+}
+.emarket-catalog-menu > li:before{
+	content: " ";
+	display:block;
+	position:absolute;
+	right:6px;
+	top:50%;
+	margin-top:-3px;
+	width:7px;height:11px;
+	background-image:url(/images/sprite.png);
+	background-repeat:no-repeat;
+	background-position: -1px -202px;
+	opacity:.2;
+}
+.emarket-catalog-menu > li:hover{
+	background-color: #94bfdc;
+}
+.emarket-catalog-menu > li:hover > a{
+	background-color: #94bfdc;
+	color:#fff;
+}
+.emarket-catalog-menu > li:hover:before{
+	background-position: -1px -215px;
+	opacity: 1;
+}
+
+/*Submenu box*/
+.emarket-catalog-menu li ul {
+	position:absolute;
+	/*top:-999em;*/
+	top:-1px;
+	display:none;
+	z-index:990;
+	height:auto;
+	border:1px solid #94bfdc;
+	padding-bottom: 9px;
+	width:237px;
+}
+
+/* Submenu Items */ 
+.emarket-catalog-menu li a {
+	display: block; 
+	text-decoration: none; 
+	color: #000;
+	font-size:14px;
+	padding: 12px 0 12px 9px;
+}
+
+/*Items selected*/
+.emarket-catalog-menu li a.item-selected{ 
+	background-color: #94bfdc;
+	color:#fff;
+}
+
+/*Items Hover */
+.emarket-catalog-menu li a:hover{	
+	background-color: #94bfdc;
+	color:#fff;
+}
+
+/*Rootmenu Items*/
+.emarket-catalog-menu a.root-item {
+	color:#000;
+	padding: 12px 0 12px 9px;
+	border:none;
+}
+
+/*Rootmenu Items hover*/
+.emarket-catalog-menu a.root-item:hover, .emarket-catalog-menu a.root-item-selected:hover {
+	background-color: #94bfdc;
+	color:#fff;
+}
+
+/*Rootmenu Items Selected*/
+.emarket-catalog-menu a.root-item-selected {
+	background-color: #94bfdc;
+	color:#fff;
+}
+
+/*Parent item*/
+.emarket-catalog-menu a.parent {}
+
+/*Denied items*/
+.emarket-catalog-menu a.denied {
+	background: #F5F5F5 url(images/lock.gif) center right no-repeat;
+	color:#DDDDDD;
+	padding-right:10px;
+}
+
+/* Holly Hack. IE Requirement \*/ 
+* html ul.emarket-catalog-menu li { float: left; height: 1%; } 
+* html ul.emarket-catalog-menu li a { height: 1%; } 
+/* End */ 
+
+
+/*Submenu margin*/
+.emarket-catalog-menu li ul.root-item {margin:0 0 0 214px;}
+.emarket-catalog-menu li ul {margin:-40px 0 0 213px;}
+
+/*Submenu show*/
+.emarket-catalog-menu li:hover ul,
+.emarket-catalog-menu li.jsvhover ul,
+.emarket-catalog-menu li li:hover ul,
+.emarket-catalog-menu li li.jsvhover ul,
+.emarket-catalog-menu li li li:hover ul,
+.emarket-catalog-menu li li li.jsvhover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+/*Submenu lvl-2*/
+.emarket-catalog-menu li ul.lvl-2 {
+	background:#fff;
+}
+.emarket-catalog-menu li ul.lvl-2 > li{
+	border-bottom: 1px solid #c9dfed;
+	margin:0 10px;
+}
+.emarket-catalog-menu li ul.lvl-2 > li:hover{background:none;}
+.emarket-catalog-menu li ul.lvl-2 > li:before{
+	display:none;
+}
+.emarket-catalog-menu li ul.lvl-2 > li a{
+	color:#000;
+	padding: 12px 0 0 0;
+	display: inline-block;
+	height: 15px;
+	margin-bottom: 12px;
+}
+.emarket-catalog-menu li ul.lvl-2 > li a.item-selected,
+.emarket-catalog-menu li ul.lvl-2 > li a:hover{
+	border-bottom:1px solid #9f9f9f;
+	margin-bottom: 11px;
+	background:none;
+}
+
+/*Submenu lvl-3*/
+.emarket-catalog-menu li ul.lvl-3 {
+	position:static;
+	display:block;
+	margin:0;
+	border:0;
+	padding:0;
+}
+.emarket-catalog-menu li ul.lvl-3 > li{}
+.emarket-catalog-menu li ul.lvl-3 > li:hover{background:none;}
+.emarket-catalog-menu li ul.lvl-3 > li:before{
+	display:none;
+}
+.emarket-catalog-menu li ul.lvl-3 > li a{
+	color:#999999;
+	font-size:12px;
+	line-height:8px;
+	padding: 0 0 1px 0;
+	margin-left:9px;
+	height: 8px;
+}
+.emarket-catalog-menu li ul.lvl-3 > li a.item-selected,
+.emarket-catalog-menu li ul.lvl-3 > li a:hover{
+	border-bottom:1px solid #9f9f9f;
+	margin-bottom: 11px;
+}

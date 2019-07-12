@@ -1,0 +1,39 @@
+table.groupedprops th{
+	padding-top:25px;
+	text-transform:uppercase;
+}
+table.groupedprops th.first{
+	padding-top:0px;
+}
+.groupedprops th,
+.groupedprops td{
+	padding:8px 0px;
+	text-align:left;
+}
+.groupedprops .line,
+.groupedprops .val{
+	height:12px;
+}
+.groupedprops .line{
+	padding-right:50px;
+	border-bottom:1px dotted #CCC;
+}
+.groupedprops .line span{
+	color:#777;
+	background-color:#FFF;
+}
+
+@media screen and (max-width: 605px){
+	.body .groupedprops{
+		min-width:100px;
+	}
+}
+@media screen and (max-width: 480px){
+	.body .groupedprops .line,
+	.body .groupedprops .val{
+		height:auto;
+	}
+	.body .groupedprops .line{
+		border-bottom:none;
+	}
+}

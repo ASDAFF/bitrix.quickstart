@@ -1,0 +1,186 @@
+a:hover,
+.btn-link:hover,
+a > *:hover,
+.btn-link > *:hover{
+	color: #599961;
+}
+
+#MainNav section .btn-link:hover{
+	color: #599961;
+}
+
+#MainNav nav .navbar-header .navbar-toggle:hover{
+	background: #599961;
+	border-color: #599961;
+}
+
+#MainNav nav .navbar-collapse .navbar-nav > li.active > a,
+#MainNav nav .navbar-collapse .navbar-nav > li.open > a,
+#MainNav nav .navbar-collapse .navbar-nav > li > a:hover{
+	color: #599961;
+}
+
+#MainNav nav .navbar-collapse .navbar-nav .dropdown-menu li a:focus,
+#MainNav nav .navbar-collapse .navbar-nav .dropdown-menu li a:hover{
+	background: #599961;
+}
+
+#MainNav nav .navbar-collapse .navbar-nav .dropdown-menu > .dropdown > a:hover,
+#MainNav nav .navbar-collapse .navbar-nav .dropdown-menu > .dropdown > a:active,
+#MainNav nav .navbar-collapse .navbar-nav .dropdown-menu > .dropdown > a:focus{
+	background: #599961;
+}
+
+.shopping-cart-widget > button:hover{
+	color: #599961;
+}
+.shop-item.shop-item-featured .shop-item-actions .btn-default:hover,
+.shop-item.shop-item-regular .shop-item-actions .btn-default:hover{
+	border-color: #599961;
+}
+.post-preview-mini .post-info-name-date-comments h4 a:hover{
+	color: #599961;
+}
+.post-info-name-date-comments h2 a:hover{
+	color: #599961;
+}
+.tweets_display.flexslider .tweet_list .tweet_time a:hover{
+	color: #599961;
+}
+.recent-posts-widget h5 a:hover{
+	color: #599961;
+}
+.calltoaction-box h4{
+	color: #599961;
+}
+em.strong{
+	background: #599961;
+}
+.tabs .nav-tabs a:hover{
+	color: #599961;
+	background: none;
+}
+.tabs .nav-tabs .active a:hover{
+	border: none;
+	color: #599961;
+}
+.tabs .nav-tabs .active a:hover:after{
+	background: #599961;
+}
+.four-o-four{
+	background: #599961;
+}
+.pager ul .next a:hover,
+.pager ul .prev a:hover{
+	color: #599961;
+}
+
+.rating img[src$="on.png"]{
+	background: #599961;
+}
+.rating img[src$="half.png"]{
+	background: #599961;
+}
+.rate img[src$="on-big.png"]{
+	background: #599961;
+}
+.rate img[src$="half-big.png"]{
+	background: #599961;
+}
+
+[class^="item-info"] h4 a:hover,
+[class^="post-info"] h4 a:hover{
+	color: #599961;
+}
+
+.chosen-container .chosen-single:hover div b:before{
+	border-color: transparent transparent #599961 transparent;
+}
+.chosen-container .chosen-single:hover div b:after{
+	border-color: #599961 transparent transparent transparent;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single div b:before{
+	border-color: transparent transparent #599961 transparent;
+}
+.chosen-container.chosen-container-active.chosen-with-drop .chosen-single div b:after{
+	border-color: #599961 transparent transparent transparent;
+}
+.chosen-container .chosen-drop .chosen-results li.highlighted{
+	background: #599961;
+}
+.btn:hover{
+	border-color: #599961;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active{
+	background: #599961;
+	border-color: #599961;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active{
+	background: #599961;
+	border-color: #599961;
+}
+.btn-link:hover{
+	color: #599961;
+}
+.btn-link:focus{
+	color: #599961;
+}
+.navbar-default .navbar-nav > .dropdown a:hover .caret,
+.shopping-cart-widget > button:hover .caret,
+.navbar-default .navbar-nav > .dropdown afocus .caret,
+.shopping-cart-widget > buttonfocus .caret{
+	border-top-color: #599961;
+	border-bottom-color: #599961;
+}
+.navbar-default .navbar-nav > .open a .caret,
+.navbar-default .navbar-nav > .open a:hover .caret,
+.navbar-default .navbar-nav > .open a:focus .caret{
+	border-top-color: #599961;
+	border-bottom-color: #599961;
+}
+.isotope-options .filters-links .options a:hover{
+	color: #599961;
+}
+.btn-group.myFilters:hover .caret:before{
+	border-color: transparent transparent #599961 transparent;
+}
+.btn-group.myFilters:hover .caret:after{
+	border-color: #599961 transparent transparent transparent;
+}
+.btn-group.myFilters .dropdown-menu > li > a:hover{
+	background: #599961;
+}
+.flexslider-full-width .flexslider .flexslider-full-width-controls-wrapper .container .row > div > div .flex-prev:hover,
+.flexslider-full-width .flexslider .flexslider-full-width-controls-wrapper .container .row > div > div .flex-next:hover{
+	color: #599961;
+}
+
+.flexslider-full-width .flexslider .flex-direction-nav .flex-prev:hover:before,
+.flexslider-full-width .flexslider .flex-direction-nav .flex-next:hover:before,
+.flexslider-full-width .flexslider .flex-direction-nav .flex-prev:hover:after,
+.flexslider-full-width .flexslider .flex-direction-nav .flex-next:hover:after {
+	color: #599961;
+}
+.thumbnailSlider .flexslider .flex-direction-nav .flex-prev:hover:before,
+.thumbnailSlider .flexslider .flex-direction-nav .flex-next:hover:before {
+	color: #599961;
+}
+.post-preview .flexslider .flex-direction-nav .flex-prev:hover:before,
+.post-preview .flexslider .flex-direction-nav .flex-next:hover:before,
+.post-preview .flexslider .flex-direction-nav .flex-prev:hover:after,
+.post-preview .flexslider .flex-direction-nav .flex-next:hover:after {
+	color: #599961;
+}
+
+a.pp_previous:hover:before, a.pp_next:hover:before {
+	color: #599961;
+}
+
+
+
+
+

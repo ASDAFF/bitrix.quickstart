@@ -1,0 +1,37 @@
+/*Menu icons*/
+#smartrealt_menu_icon,
+.smartrealt_menu_icon
+{
+	background:url(icons/webdoka.smartrealt/menu_smartrealt.gif) 10px 5px no-repeat !important;
+}
+
+#smartrealt_page_icon,
+.smartrealt_page_icon
+{
+	background:url(icons/webdoka.smartrealt/smartrealt.gif) 10px 5px no-repeat !important;
+}
+
+#smartrealt_guide_menu_icon,
+.smartrealt_guide_menu_icon
+{
+	background:url(icons/webdoka.smartrealt/menu_smartrealt_guides.gif) 10px 5px no-repeat !important;
+}
+
+#smartrealt_guide_page_icon,
+.smartrealt_guide_page_icon
+{
+    background:url(icons/webdoka.smartrealt/smartrealt_guides.gif) 10px 5px no-repeat !important;
+}
+
+#smartrealt_update_menu_icon,
+.smartrealt_update_menu_icon
+{
+    background:url(icons/webdoka.smartrealt/menu_smartrealt_update.gif) 10px 5px no-repeat !important;
+}
+
+#smartrealt_update_page_icon,
+.smartrealt_update_page_icon
+{
+	background:url(icons/webdoka.smartrealt/smartrealt_update.gif) 10px 5px no-repeat !important;
+	
+}

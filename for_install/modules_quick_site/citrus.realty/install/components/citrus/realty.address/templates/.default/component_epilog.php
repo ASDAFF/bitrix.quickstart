@@ -1,0 +1,2 @@
+<?
+CJsCore::Init(array("realtyAddress"));

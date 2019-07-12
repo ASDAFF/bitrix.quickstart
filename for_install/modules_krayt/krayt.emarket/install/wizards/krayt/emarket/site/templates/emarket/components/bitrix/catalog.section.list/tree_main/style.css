@@ -1,0 +1,37 @@
+.mainpage-catalog-list {
+    border: 1px solid;
+    overflow: hidden;
+    padding: 27px 0 10px;
+    border: 1px solid #94bfdc;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    margin-bottom: 40px;
+}
+.mainpage-catalog-list > ul > li {
+    float: left;
+    width:  295px;
+    margin: 0 10px 20px 10px;
+    padding-bottom: 10px;
+}
+.mainpage-catalog-list > ul > li:nth-child(3n+4) {
+    clear: both;
+}
+.mainpage-catalog-list > ul > li > a {
+    color: #1763a6;
+    font-size: 16px;
+}
+.mainpage-catalog-list ul li a {
+    text-decoration: none;
+}
+.mainpage-catalog-list ul li a:hover {
+    text-decoration: underline;
+}
+.mainpage-catalog-list ul li ul {
+    padding: 18px 0 0 12px;
+    line-height: 20px;
+}
+.mainpage-catalog-list ul li ul li a {
+    color: #999;
+    font-size: 14px;
+}

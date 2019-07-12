@@ -1,0 +1,221 @@
+
+.mainbanners {
+  @extend .clearfix;
+
+  height: 160px;
+  width: 100%;
+  margin-bottom: 32px;
+
+  & &__owl {
+    height: 100%;
+  }
+
+  & &__owl .owl-stage-outer,
+  & &__owl .owl-stage,
+  & &__owl .owl-item {
+    height: 100%;
+  }
+
+  & &__owl .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  & &__owl .fadeOut {
+    animation-name: fadeOut;
+  }
+
+  & &__owl .owl-dots {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  & &__owl .animated {
+    animation-duration: 2s;
+  }
+
+  & &__additionals {
+    position: relative;
+    top: 50%;
+    text-align: right;
+  }
+
+  @media(min-width: $screen-xs-min) {
+    height: 220px;
+  }
+
+  @media(min-width: $screen-sm-min) {
+    height: 320px;
+    margin-bottom: 0;
+
+    & &__owl {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: auto;
+      right: 0;
+      z-index: 1;
+    }
+
+    & &__owl .owl-dots {
+      position: absolute;
+      bottom: 15px;
+    }
+  }
+
+  @media(min-width: $screen-md-min) {
+    height: 480px;
+  }
+
+
+}
+
+.mainbanner {
+
+  display: block;
+  height: 100%;
+
+  & &__link {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  & &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+}
+
+.additional-banners {
+  position: relative;
+
+  & &__banner {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 20%;
+    opacity: 0;
+    transform: translateX(9999px);
+    transition: transform 1s step-end, opacity .5s;
+  }
+
+  .owl-item.active & &__banner {
+    opacity: 1;
+    transition: transform 2s, opacity 2s step-end;
+  }
+
+
+  .mainbanners__owl.is-initialized .owl-item.active & &__banner:nth-child(1) {
+    transform: translateX(0);
+    transition: transform 2s, opacity 2s step-end;
+    @include transition-timing-function(cubic-bezier(1, 0.7, 0.3, 1.07));
+  }
+  .mainbanners__owl.is-initialized .owl-item.active &__banner:nth-child(2) {
+    transform: translateX(-100%);
+    transition: transform 1.9s, opacity 2s step-end;
+    @include transition-timing-function(cubic-bezier(1, 0.7, 0.3, 1.06));
+  }
+  .mainbanners__owl.is-initialized .owl-item.active &__banner:nth-child(3) {
+    transform: translateX(-200%);
+    transition: transform 1.8s, opacity 2s step-end;
+    @include transition-timing-function(cubic-bezier(1, 0.7, 0.3, 1.05));
+  }
+  .mainbanners__owl.is-initialized .owl-item.active &__banner:nth-child(4) {
+    transform: translateX(-300%);
+    transition: transform 1.7s, opacity 2s step-end;
+    @include transition-timing-function(cubic-bezier(1, 0.7, 0.3, 1.04));
+  }
+  .mainbanners__owl.is-initialized .owl-item.active &__banner:nth-child(5) {
+    transform: translateX(-400%);
+    transition: transform 1.6s, opacity 2s step-end;
+    @include transition-timing-function(cubic-bezier(1, 0.7, 0.3, 1.03));
+
+  }
+  .owl-item.active &__banner:nth-child(n+6) {
+    display: none;
+  }
+
+
+  & &__banner img {
+    transition: transform .5s;
+    -webkit-backface-visibility: hidden;
+    transform: scale(0.6);
+  }
+  .mainbanners__owl.is-initialized .owl-item.active  & &__banner img {
+    transform: scale(1);
+  }
+
+  & &__banner:hover img,
+  .mainbanners__owl.is-initialized .owl-item.active  & &__banner:hover img {
+    transform: translateY(-7px) scale(1);
+  }
+
+  .owl-item & img {
+    max-width: 90%;
+    width: auto;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    & &__banner {
+      top: 270px;
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    & &__banner {
+      top: 320px;
+    }
+  }
+
+}
+
+.mainbanner-progressline {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 3;
+}
+
+.mainbanner-progressline__progress {
+  content: "";
+  width: 0;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

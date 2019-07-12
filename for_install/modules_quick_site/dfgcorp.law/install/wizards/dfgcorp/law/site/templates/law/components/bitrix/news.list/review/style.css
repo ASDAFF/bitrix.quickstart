@@ -1,0 +1,31 @@
+.review-list{
+	padding: 20px;
+	padding-bottom: 0px;
+	background: #FFF;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top:10px;
+	width:960px;
+	overflow:hidden;
+}
+
+.review-item {
+	float: left;
+	width: 280px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+.review-item.last {
+	margin-right:0;
+}
+
+.author-text{
+	color:#333;
+}
+
+.author-name{
+	font-style:italic;
+	color:#666;
+	text-align:right;
+}

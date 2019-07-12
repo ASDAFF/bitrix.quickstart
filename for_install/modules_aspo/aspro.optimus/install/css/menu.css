@@ -1,0 +1,10 @@
+/* ADMIN MENU */
+#global_menu_global_menu_aspro_optimus .adm-main-menu-item-icon{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/global.png") no-repeat scroll 18px 9px;opacity:0.9;}
+#global_menu_global_menu_aspro_optimus.adm-main-menu-item-active .adm-main-menu-item-icon, #global_menu_global_menu_aspro_optimus:hover .adm-main-menu-item-icon{opacity:1;}
+#global_menu_global_menu_aspro_optimus .adm-main-menu-item-text{line-height: 11px;}
+#_global_menu_aspro_optimus_items .imi_control_center{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll 8px 3px;}
+#_global_menu_aspro_optimus_items .imi_typography{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll -23px 3px;}
+#_global_menu_aspro_optimus_items .imi_pages{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll -55px 3px;}
+#_global_menu_aspro_optimus_items .imi_contacts{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll -151px 4px;}
+#_global_menu_aspro_optimus_items .imi_sale{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll -119px 4px;}
+#_global_menu_aspro_optimus_items .imi_marketing{background:rgba(0, 0, 0, 0) url("../../images/aspro.optimus/menu.png") no-repeat scroll -87px 3px;}

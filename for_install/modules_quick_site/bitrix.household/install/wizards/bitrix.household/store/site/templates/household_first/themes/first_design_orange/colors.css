@@ -1,0 +1,341 @@
+html,body {
+color: #4C4D48;
+background-color: #FFF;
+}
+
+a {
+color: #4C4D48;
+}
+
+#main .sidebar {
+background-color: #F1EDF1;
+}
+
+#sidebar .block .menu li a {
+color: #747373;
+}
+
+#sidebar .block .menu li.active a {
+color: #FE5A1F;
+}
+
+#sidebar .block .menu li li a {
+color: #E43C00;
+}
+
+#sidebar .block .menu li li li a {
+color: #747373;
+}
+
+#sidebar .block .search .input {
+color: #4C4D48;
+border: 1px solid #9C9C9C;
+}
+
+#sidebar .block .search .button {
+color: #666666;
+}
+
+#sidebar .block h2 {
+color: #E43C00;
+}
+
+span.date {
+color: #EE6100;
+}
+
+#sidebar .block .more a {
+color: #E43C00;
+}
+
+#content .header {
+border-bottom: 1px solid #A7A6A6;
+}
+
+#content .header .header_main {
+background: #E43B00 url('images/bg_header.gif') no-repeat;
+}
+
+#content .header .grad .signup {
+color: #FFF;
+}
+
+#content .header .grad .signup a {
+color: #FFF;
+}
+
+#content .header .grad .basket .money {
+color: #F6DF20;
+}
+
+#content .header .grad .basket .money strong {
+color: #FFF;
+}
+
+#content .header .grad .basket .order {
+color: #F6DF20;
+}
+
+#content .header .grad .basket .order a {
+color: #FFF;
+}
+
+#content .header .grad .contacts {
+color: #F6DF20;
+}
+
+#content .header .grad .contacts .phone strong {
+color: #FFF;
+}
+
+#content .breadcrumb ul {
+background: #EE6100 url('images/bg_breadcrumb.gif') 100% 0 no-repeat;
+}
+
+#content .breadcrumb ul li {
+color: #FFF;
+}
+
+#content .breadcrumb ul li a {
+color: #FFF;
+}
+
+#content .main_content h1 {
+color: #E43C00;
+}
+
+#content .main_content h2 {
+color: #525862;
+}
+
+#content .main_content table {
+border-bottom: 1px solid #CCC;
+}
+
+#content .main_content table tr th {
+border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
+border-top: 1px solid #CCC;
+background-color: #F1EDF1;
+}
+
+#content .main_content table tr td {
+border-left: 1px solid #CCC;
+border-right: 1px solid #CCC;
+}
+
+#content .main_content table.aj_star tr td {
+border: 0px solid #CCC;
+}
+
+#content .main_content table.taboffer{
+border:0;
+margin-top: 10px;
+}
+
+#content .main_content table.taboffer tr td {
+border:0;
+}
+
+#content .main_content table tr.compare_price td {
+border-top: 1px solid #CCC;
+}
+
+#content .main_content table tr td.compare_main .back a {
+color: #EE6100;
+}
+
+#content .main_content table tr td.compare_item .delete a {
+color: #EE6100;
+}
+
+#content .main_content table tr td.compare_item h2 {
+color: #E43C00;
+}
+
+#content .main_content .catalog-section h2 {
+color: #E43C00;
+}
+
+#content .main_content table tr td.compare_item .rating span {
+color: #FFF;
+background-color: #EE6100;
+}
+
+#content .main_content table tr td.compare_item .rating em.yes {
+color: #108101;
+}
+
+#content .main_content table tr td.compare_item .rating em.no {
+color: #DA251D;
+}
+
+#content .main_content table tr.compare_price td p.price {
+color: #5E5959;
+}
+
+#content .main_content table.table_sort {
+border: 0px solid #CCC;
+}
+
+
+#content .main_content table.analog,  {
+border-bottom: 1px solid #CCC;
+}
+
+#content .main_content .filter .tabs li.active a {
+background-color: #F1EDF1;
+}
+
+#content .main_content .filter .block {
+border: 1px solid #CCC;
+}
+
+#content .main_content .filter .block label.active {
+color: #EE6100;
+}
+
+#content .main_content .filter .block label.active span {
+color: #000;
+}
+
+#content .main_content .filter .sort .array div.compare a{
+color: #EE6100;
+}
+
+#content .main_content .filter .view ul li {
+color: #9C35CD;
+background-color: #CFCFCF;
+border: 1px solid #9B9B9B;
+}
+
+#content .main_content .filter .view ul li.active {
+color: #000;
+background-color: #FFF;
+}
+
+#content .main_content .filter_sort .table_sort .info h2 {
+color: #E43C00;
+}
+
+#content .main_content .filter_sort .table_sort .info .rating span {
+color: #FFF;
+background-color: #EE6100;
+}
+
+#content .main_content .filter_sort .table_sort .info .rating em.yes {
+color: #108101;
+}
+
+#content .main_content .filter_sort .table_sort .info .rating em.no {
+color: #DA251D;
+}
+
+#content .main_content .filter_sort .table_sort .info .more a {
+color: #EE6100;
+}
+
+#content .main_content .filter_sort .table_sort .price p {
+color: #5E5959;
+}
+
+#content .main_content .filter_sort .table_sort .price .place_1,  #content .main_content .card .info .info_body .catalog-detail-price .place_1{
+color: #FFF;
+background: #EE6100 url('images/bg_place_sort_1.gif') no-repeat;
+}
+
+#content .main_content .filter_sort .table_sort .price .place_2, #content .main_content .card .info .info_body .catalog-detail-price .place_2 {
+color: #FFF;
+background: #C83407 url('images/bg_place_sort_2.gif') no-repeat;
+}
+
+#content .main_content .card .info ul li {
+border: 1px solid #C0C6CB;
+}
+
+#content .main_content .card .info .rating span {
+color: #FFF;
+background-color: #EE6100;
+}
+
+#content .main_content .card .info .rating em.yes {
+color: #108101;
+}
+
+#content .main_content .card .info .rating em.no {
+color: #DA251D;
+}
+
+#content .main_content .card .info p.price {
+color: #5E5959;
+}
+
+#content .main_content  .tabs .technical{
+border-bottom: 1px solid #CCC;
+}
+
+#content .main_content .tabs .technical li a {
+border: 1px solid #CCC;
+}
+
+#content .main_content .tabs .technical li a.active {
+background-color: #F1EDF1;
+}
+
+#content .main_content .settings_filter .settings_filter_main {
+border: 1px solid #CCC;
+}
+
+#content .main_content .settings_filter .settings_filter_main .settings_filter_main_table tr td h3 {
+color: #E43C00;
+}
+
+#content .banner .grad .action .title {
+background-color: #F1EDF1;
+}
+
+#content .banner .grad .action .title .title_body {
+background: #EE6100 url('images/bg_title_action.gif') 100% 0 no-repeat;
+}
+
+#content .banner .grad .action .title h2 {
+color: #E43C00;
+background-color: #F1EDF1;
+}
+
+#content .group .title_body {
+background-color: #F1EDF1;
+}
+
+#content .group .title_body {
+background: #EE6100 url('images/bg_title_action.gif') 100% 0 no-repeat;
+}
+
+#content .group .title h2 {
+color: #E43C00;
+background-color: #F1EDF1;
+}
+
+#content .group .cart h2 {
+color: #E43C00;
+}
+
+#content .group .cart .image .price {
+color: #5E5959;
+}
+
+#footer .copy {
+color: #666;
+}
+
+#footer .create {
+color: #999;
+}
+
+#footer .create a {
+color: #999;
+}
+
+ul.left-menu2 li a{
+	color: #FE5A1F;
+}

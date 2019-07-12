@@ -1,0 +1,32 @@
+.catalog-section-list {
+    
+}
+.catalog-section-list li {
+    clear: both;
+    list-style: none;
+    margin-top:  21px;
+    padding-bottom: 21px;
+    border-bottom: 1px #3FA7F3 dotted;
+}
+.catalog-section-list li:last-child {
+    border: none;
+}
+.catalog-section-list li h2, .catalog-section-list li h2 a {
+    font-weight: normal;
+    font-size: 21px;
+}
+.catalog-section-list li p {
+    margin-top: 10px;
+}
+.catalog-section-list li ul li {
+    clear: none;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.catalog-section-list li ul li h2 a {
+    font-size: 18px;
+} 

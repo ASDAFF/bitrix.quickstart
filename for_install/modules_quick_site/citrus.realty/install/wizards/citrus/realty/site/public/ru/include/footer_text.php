@@ -1,0 +1,1 @@
+<p>© 2010 <a href="#SITE_DIR#">#SITE_NAME#</a></p>

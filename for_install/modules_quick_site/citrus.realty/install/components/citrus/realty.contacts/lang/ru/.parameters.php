@@ -1,0 +1,2 @@
+<?
+$MESS["CITRUS_REALTY_OFFICE"] = "ќфис";

@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Главная",
+		SITE_DIR,
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Каталог",
+		"#SITE_DIR#catalog/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Новости",
+		"#SITE_DIR#news/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Обзоры",
+		"#SITE_DIR#reviews/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Контакты",
+		"#SITE_DIR#about/contacts/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Доставка",
+		"about/delivery/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"О магазине",
+		"about/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Гарантия",
+		"about/guaranty/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Мой кабинет",
+		"personal/",
+		Array(),
+		Array(),
+		"CUser::IsAuthorized()"
+	),
+);
+?>

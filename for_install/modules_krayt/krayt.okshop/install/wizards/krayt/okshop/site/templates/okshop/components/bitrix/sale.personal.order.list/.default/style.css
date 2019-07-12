@@ -1,0 +1,67 @@
+/*Table*/
+table.sale-personal-order-list {
+	width:100%;
+	border-collapse:collapse;
+	font-size:100%;
+	margin-bottom:20px;
+}
+
+/*Table head*/
+table.sale-personal-order-list th {
+	background: none repeat scroll 0 0 #eee;
+    color: #000000;
+    font-size: 14px;
+    min-height: 39px;
+    padding: 0 5px;
+}
+
+/* Table cells and heads*/
+table.sale-personal-order-list th, table.sale-personal-order-list td {
+	border:1px solid #ccc;
+	padding: 3px 5px;
+	vertical-align:top;
+}
+
+/* Only table cells*/
+table.sale-personal-order-list td {}
+
+
+/*Filter*/
+
+table.sale-personal-order-list-filter {
+	border:1px solid #ccc;
+	background-color:#F9FAFB;
+	font-size:100%;
+	border-collapse:collapse;
+    width: 100%;
+}
+
+table.sale-personal-order-list-filter .head {
+	font-size: 24px;
+	font-weight: 300;
+	text-align: left;
+	background: #fff;
+}
+
+table.sale-personal-order-list-filter th {
+	background: none repeat scroll 0 0 #F5F5F5;
+    color: #000000;
+    font-size: 12px;
+    line-height: 39px;
+    min-height: 39px;
+    padding: 0 5px;
+}
+
+table.sale-personal-order-list-filter td, table.sale-personal-order-list-filter th { padding:3px; }
+table.sale-personal-order-list-filter td { vertical-align: top; }
+table.sale-personal-order-list a{ color: #000000; }
+table.sale-personal-order-list ul {
+    margin: 0;
+    padding: 0;
+}
+table.sale-personal-order-list ul li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+table.sale-personal-order-list ul li a { color: #000000; }

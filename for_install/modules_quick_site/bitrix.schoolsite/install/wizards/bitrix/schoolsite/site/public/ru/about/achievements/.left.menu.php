@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"2011", 
+		SITE_DIR."about/achievements/2011/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"2010", 
+		SITE_DIR."about/achievements/2010/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"2009", 
+		SITE_DIR."about/achievements/2009/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

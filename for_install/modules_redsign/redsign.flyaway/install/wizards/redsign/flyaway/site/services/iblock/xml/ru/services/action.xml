@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2016-04-22T14:26:27">
+	<Классификатор>
+		<Ид>action_redsign_flyaway</Ид>
+		<Наименование>Акции</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>47</Ид>
+				<Наименование>Текст маркера:</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>TEXT_MARKER</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>48</Ид>
+				<Наименование>Цвет маркера:</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>COLOR_MARKER</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>49</Ид>
+				<Наименование>Дата проведения акции:</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>DATA_ACTION</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>47</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>48</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>49</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>action_redsign_flyaway</Ид>
+		<ИдКлассификатора>action_redsign_flyaway</ИдКлассификатора>
+		<Наименование>Акции</Наименование>
+		<БитриксКод>action_redsign_flyaway</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/action/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/action/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/action/</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>58</Ид>
+				<Наименование>Выиграйте поездку в Италию!</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>action_files/iblock/85f/85fe96e29192b4f2b2c78dcb0b0c05ab.png</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum-dolor-sit-amet</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Sed mattis tortor nulla, in venenatis libero posuere nec. Etiam vitae lobortis massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non turpis elit. Praesent et accumsan ipsum. Praesent volutpat neque sit amet dui consectetur, vitae lobortis eros gravida. Fusce nulla risus, posuere vel facilisis non, efficitur non massa. Morbi quam est, hendrerit id pharetra a, gravida at magna. Pellentesque eget nisi ipsum. Etiam non tellus vitae elit porta tempor quis at erat. Aenean ac nisi eget orci consectetur aliquam. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris a ante risus. Duis placerat nulla nec gravida tristique. Mauris ut bibendum tortor. Phasellus mi nunc, sollicitudin nec tortor eu, gravida aliquet libero. Ut nec purus nec tortor dictum imperdiet. Mauris non mattis tortor. Cras eleifend lectus gravida tortor sollicitudin vestibulum. Praesent id tortor id orci interdum tempor. Integer a ullamcorper lacus, et pulvinar felis. Donec a euismod massa, et sagittis ex. Aenean cursus ante a cursus porta. Integer in tincidunt diam. Morbi lobortis sapien sodales nunc sodales, id consequat metus rutrum. Ut id rhoncus purus, in molestie erat. Ut malesuada lacus euismod, porttitor neque vitae, accumsan ex.
+
+Ut sollicitudin varius eros et ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dignissim vestibulum nulla at rutrum. Morbi a metus in quam auctor hendrerit eget ut sapien. Fusce aliquet eget odio ac pretium. In ut augue velit. Fusce ultricies, eros sit amet semper gravida, eros nulla vulputate dolor, quis tincidunt mauris ipsum at libero. Pellentesque dolor libero, cursus vitae tellus eget, ultrices dapibus neque. Nam sem dui, tincidunt eleifend porttitor sit amet, luctus eget nisl. Maecenas accumsan metus dui. Integer rutrum nisl id ipsum feugiat consequat. Fusce consectetur nunc nec porttitor ullamcorper.
+
+Aenean auctor efficitur augue a pharetra. Mauris eleifend, libero nec lobortis maximus, neque lectus ullamcorper lacus, sed varius augue ante ut leo. Ut id est elit. Fusce condimentum non ex ut consectetur. Sed ipsum turpis, placerat nec finibus sed, semper in lacus. Donec metus felis, ultrices ut tempor eget, accumsan vitae magna. Etiam feugiat leo a ante venenatis pulvinar. Vivamus quis tellus cursus, dignissim sapien vitae, pharetra quam. Phasellus eu orci dui. Praesent tincidunt ipsum felis, in luctus mauris consectetur in. Etiam a turpis eget dui finibus auctor. Quisque a bibendum ligula. Sed pretium justo id turpis eleifend posuere.
+
+</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>action_files/iblock/302/302347b1987f1b8d561880c3874c97b0.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>47</Ид>
+						<Значение>#90729b</Значение>
+						<ЗначениеСвойства>
+							<Значение>#90729b</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>48</Ид>
+						<Значение>до 10 января 2016г.</Значение>
+						<ЗначениеСвойства>
+							<Значение>до 10 января 2016г.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>49</Ид>
+						<Значение>Два по цене одного</Значение>
+						<ЗначениеСвойства>
+							<Значение>Два по цене одного</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>59</Ид>
+				<Наименование>Все гибко настраивается</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>action_files/iblock/521/5217be8ef19c08943b52b28b341e69c7.png</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novogodnie-skidki-na-vsyu-kollektsiyu-spalen-v-kompanii-monopoliya</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Акция, распродажа, скидки, товар дня или успей купить. Создайте вашу уникальную маркетинговую акцию всего за несколько минут. Добавьте продающий текст, яркие изображения и призыв к действию. Заголовки и тексты флажков легко меняются. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Aliquam vehicula iaculis urna, eu accumsan sem lacinia non. Vestibulum congue tincidunt imperdiet. Suspendisse potenti. Pellentesque interdum sapien lacus, a laoreet mi pellentesque vel. Ut vitae mattis libero. Pellentesque non pellentesque nulla, non euismod nulla. Vivamus tempor tortor vel laoreet suscipit. Nullam in eleifend est. Phasellus vel purus fermentum eros faucibus mollis ac ut lectus. Sed nulla ipsum, finibus ut magna non, ornare bibendum mi. Nullam quam velit, consectetur nec justo vitae, posuere imperdiet justo. Sed congue mi at libero mollis mattis. Duis lobortis sollicitudin est, sit amet efficitur nisi. Proin posuere imperdiet odio eu finibus. Nullam tortor sem, gravida eu mi nec, ultrices iaculis orci. Etiam lacus odio, convallis vitae augue ac, posuere imperdiet purus.
+
+Cras quis sem nec lectus mattis cursus id nec nunc. Etiam tristique vitae quam at placerat. Mauris non nulla et velit finibus tempus vitae ac risus. Sed dignissim vitae lacus vitae feugiat. Nunc cursus faucibus dictum. Donec ac diam velit. Proin at erat pulvinar, ultricies lorem in, mattis felis. Integer et mauris lorem. Pellentesque quis laoreet mauris.
+
+Suspendisse potenti. Nullam tempor vitae odio sit amet lobortis. Curabitur imperdiet eros quis ante fermentum hendrerit. Praesent eu libero id leo efficitur congue quis sed purus. Proin iaculis massa et libero blandit, sed vestibulum velit dictum. Phasellus elementum, metus suscipit venenatis sagittis, metus augue maximus tellus, sed vestibulum urna dui non lacus. Nunc finibus erat nec faucibus mattis. Nulla vitae dictum tortor. Aliquam quis sollicitudin ante, nec iaculis dolor. Vestibulum nisl ante, feugiat a rutrum vel, sodales placerat velit. Cras molestie urna non ex pretium egestas quis sit amet lacus. Fusce eget quam sed ante mattis malesuada non vel quam. Nam porta augue molestie faucibus auctor. Cras hendrerit auctor lacus at posuere.
+
+Phasellus iaculis lectus ligula, vel venenatis risus vehicula ut. Vestibulum eget consectetur eros. Integer in enim non velit tincidunt blandit sed vitae leo. Nunc ut massa ultricies, tristique purus eu, bibendum odio. Fusce vestibulum eros vitae velit porttitor, id faucibus libero condimentum. Proin efficitur aliquam turpis at placerat. Sed lorem neque, dignissim quis dolor sit amet, pharetra tristique erat. Suspendisse porttitor odio vitae risus pellentesque, non facilisis sapien vulputate. Donec ultricies lectus in nisi mollis semper. Phasellus eu nunc dapibus metus auctor consectetur. Nulla viverra ligula a risus accumsan, ac volutpat velit congue. Cras sit amet efficitur purus. Quisque posuere, mi ac tristique dignissim, arcu lacus tincidunt mi, vel lacinia felis lorem ac odio. Ut ligula diam, pulvinar et condimentum sit amet, bibendum sit amet nunc. Integer dignissim libero quam, vitae congue orci ultrices eget. Integer semper felis in ante gravida cursus vel ut elit.
+
+</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>action_files/iblock/532/5324c90049c159bd29242855dafe9f72.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>47</Ид>
+						<Значение>#de9200</Значение>
+						<ЗначениеСвойства>
+							<Значение>#de9200</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>48</Ид>
+						<Значение>c 28.08.2015г. по 28.12.2016г.</Значение>
+						<ЗначениеСвойства>
+							<Значение>c 28.08.2015г. по 28.12.2016г.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>49</Ид>
+						<Значение>Супер распродажа осени</Значение>
+						<ЗначениеСвойства>
+							<Значение>Супер распродажа осени</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>60</Ид>
+				<Наименование>Создавайте тексты по формуле AIDA</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>action_files/iblock/5e4/5e4eeba38e4d2477eabad76ca8c97a37.png</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novogodnie-skidki-na-vsyu-kollektsiyu-spalen-v-kompanii-monopoliya1</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Любое рекламное обращение должно привлечь внимание потенциального потребителя, затем вызвать его интерес, который перейдет в желание обладать товаром и, наконец, побудить к действию — покупке.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris a ante risus. Duis placerat nulla nec gravida tristique. Mauris ut bibendum tortor. Phasellus mi nunc, sollicitudin nec tortor eu, gravida aliquet libero. Ut nec purus nec tortor dictum imperdiet. Mauris non mattis tortor. Cras eleifend lectus gravida tortor sollicitudin vestibulum. Praesent id tortor id orci interdum tempor. Integer a ullamcorper lacus, et pulvinar felis. Donec a euismod massa, et sagittis ex. Aenean cursus ante a cursus porta. Integer in tincidunt diam. Morbi lobortis sapien sodales nunc sodales, id consequat metus rutrum. Ut id rhoncus purus, in molestie erat. Ut malesuada lacus euismod, porttitor neque vitae, accumsan ex.
+
+Ut sollicitudin varius eros et ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse dignissim vestibulum nulla at rutrum. Morbi a metus in quam auctor hendrerit eget ut sapien. Fusce aliquet eget odio ac pretium. In ut augue velit. Fusce ultricies, eros sit amet semper gravida, eros nulla vulputate dolor, quis tincidunt mauris ipsum at libero. Pellentesque dolor libero, cursus vitae tellus eget, ultrices dapibus neque. Nam sem dui, tincidunt eleifend porttitor sit amet, luctus eget nisl. Maecenas accumsan metus dui. Integer rutrum nisl id ipsum feugiat consequat. Fusce consectetur nunc nec porttitor ullamcorper.
+
+    Proin porta faucibus magna, eu rhoncus est molestie vel
+    Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante
+    Suspendisse vitae tellus magna. Maecenas commodo tristique mollis
+
+Aenean auctor efficitur augue a pharetra. Mauris eleifend, libero nec lobortis maximus, neque lectus ullamcorper lacus, sed varius augue ante ut leo. Ut id est elit. Fusce condimentum non ex ut consectetur. Sed ipsum turpis, placerat nec finibus sed, semper in lacus. Donec metus felis, ultrices ut tempor eget, accumsan vitae magna. Etiam feugiat leo a ante venenatis pulvinar. Vivamus quis tellus cursus, dignissim sapien vitae, pharetra quam. Phasellus eu orci dui. Praesent tincidunt ipsum felis, in luctus mauris consectetur in. Etiam a turpis eget dui finibus auctor. Quisque a bibendum ligula. Sed pretium justo id turpis eleifend posuere.
+
+</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>action_files/iblock/5ba/5bade518299e6fbe9d4ceb6579daa4ff.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>47</Ид>
+						<Значение>#7dbd4e</Значение>
+						<ЗначениеСвойства>
+							<Значение>#7dbd4e</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>48</Ид>
+						<Значение>до 10 января 2016г.</Значение>
+						<ЗначениеСвойства>
+							<Значение>до 10 января 2016г.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>49</Ид>
+						<Значение>Скидка до 50%</Значение>
+						<ЗначениеСвойства>
+							<Значение>Скидка до 50%</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>61</Ид>
+				<Наименование>Используйте маркетинговые акции</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>action_files/iblock/3ed/3edae7caf087fc237684e71977ecd803.png</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>monopoliya-provodit-novogodnyuyu-aktsiyu-sovmestno-so-sberbankom-rossii-</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Маркетинговые акции являются прекрасным инструментом не только увеличения продаж, но и возвращения посетителей на ваш сайт.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros erat, finibus in risus id, cursus pellentesque metus. Duis quis erat metus. Ut consectetur faucibus leo vestibulum consectetur. Maecenas ac facilisis ligula, ac vestibulum neque. Ut tempor ut ligula sit amet malesuada. Phasellus a justo urna. Nunc risus eros, interdum sit amet nisl sollicitudin, mattis condimentum ipsum. Vivamus viverra vulputate ipsum eu sollicitudin. Cras erat erat, pulvinar quis lacinia quis, fermentum tempor felis. Aenean rhoncus erat nulla, id porttitor dui facilisis eget. Sed sodales auctor molestie.
+
+Sed ultrices massa ac metus aliquet commodo. Duis vitae tortor massa. Mauris tincidunt eget est a scelerisque. Duis venenatis tincidunt risus. Duis suscipit erat id quam lacinia pulvinar. Sed dapibus efficitur ipsum a pharetra. Cras dictum vehicula ligula non vehicula. Etiam ultrices rutrum justo id lobortis. Nunc accumsan malesuada quam, id mollis nibh fermentum id. Sed consequat pulvinar erat suscipit dignissim.
+
+Nam congue leo viverra neque consectetur, sodales imperdiet lacus pretium. Nulla imperdiet, sem vitae ornare auctor, tellus nunc posuere sem, placerat hendrerit ex metus tempus dolor. Morbi eget pulvinar risus, in commodo erat. Nulla ac mi sapien. Phasellus dictum feugiat augue, a congue dolor tristique a. Nulla vehicula dapibus urna, id posuere risus laoreet non. Fusce aliquam metus at nunc pulvinar eleifend. Fusce mollis est ac odio congue interdum. Curabitur a pellentesque nulla, non efficitur dui. Nam lorem augue, semper sit amet nisl a, sagittis volutpat ante. Maecenas a tincidunt neque. Vivamus porta a velit a congue. Maecenas at tincidunt magna. Fusce sagittis semper erat, ac consequat libero auctor in.
+
+    Aenean sit amet velit ligula
+    Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit
+    Duis ac eros luctus, consequat elit quis
+
+Nunc quis ipsum sed odio pellentesque sagittis a nec diam. Quisque ullamcorper commodo magna id laoreet. Proin a enim id nulla commodo interdum non non enim. Aenean feugiat eros ac tortor porta, at mollis nulla pulvinar. Suspendisse pretium accumsan ante, id facilisis libero varius vitae. Integer maximus neque in fringilla luctus. Donec laoreet neque eget fringilla facilisis. Sed rutrum ornare nunc in fermentum. Etiam id semper nisl, consequat tempus felis. Nullam mollis nec libero eget condimentum. Vivamus eleifend arcu ut gravida accumsan. Aliquam erat odio, egestas et risus at, finibus pretium magna.
+
+Morbi accumsan eu tortor in egestas. Morbi rhoncus eros in dui suscipit ultricies vel ac elit. In consectetur in odio et aliquet. Etiam euismod ipsum at faucibus consequat. Fusce accumsan interdum tristique. Duis eget tellus felis. Duis convallis auctor blandit. Integer sapien ex, faucibus ullamcorper laoreet vel, fringilla ut nulla. Donec fringilla ligula sollicitudin elit auctor dapibus.
+
+</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>action_files/iblock/3e9/3e9ae5d5e59c54e1faf2bc8f31f7ac04.png</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>47</Ид>
+						<Значение>#ec7070</Значение>
+						<ЗначениеСвойства>
+							<Значение>#ec7070</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>48</Ид>
+						<Значение>с 20 декабря 2015 г. по 10 января 2016 г.</Значение>
+						<ЗначениеСвойства>
+							<Значение>с 20 декабря 2015 г. по 10 января 2016 г.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>49</Ид>
+						<Значение>Акция</Значение>
+						<ЗначениеСвойства>
+							<Значение>Акция</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>62</Ид>
+				<Наименование>Новая коллекция диванов</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>action_files/iblock/620/620706729c1c542372c05ce8a0d1c828.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Aenean eu nisi et mauris maximus sagittis. Integer quis lacus tortor. Mauris pulvinar magna ut eros bibendum molestie. Praesent commodo bibendum metus, lobortis porttitor tellus volutpat vitae. Praesent congue congue gravida. Aliquam dignissim ornare lorem, eu tristique metus tincidunt et. Donec vestibulum eget erat ut gravida. Curabitur vulputate libero et ornare tincidunt. Donec ut quam lectus. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Nullam finibus rhoncus erat at faucibus. Curabitur risus magna, maximus in lacus et, pulvinar imperdiet libero. Maecenas et enim vitae felis rutrum tincidunt. Proin non congue sem. Sed ut metus nunc. Quisque vitae justo at ex aliquet ornare. Praesent blandit, leo eu consequat ullamcorper, velit felis viverra nulla, in volutpat ante massa sit amet sapien. Fusce eu nunc vel nibh tincidunt condimentum.
+
+Aenean eu nisi et mauris maximus sagittis. Integer quis lacus tortor. Mauris pulvinar magna ut eros bibendum molestie. Praesent commodo bibendum metus, lobortis porttitor tellus volutpat vitae. Praesent congue congue gravida. Aliquam dignissim ornare lorem, eu tristique metus tincidunt et. Donec vestibulum eget erat ut gravida. Curabitur vulputate libero et ornare tincidunt. Donec ut quam lectus.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla quis mollis eros. Vivamus diam eros, sodales at nibh at, hendrerit tristique mauris. In sit amet velit quis enim tristique semper. Pellentesque eu est lorem. Vivamus lacinia dui quis pellentesque placerat. Nam eleifend blandit eros in tempus. Nullam auctor sagittis velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean suscipit arcu non imperdiet consequat. Maecenas est mi, viverra vel ligula vel, posuere luctus purus. Duis arcu purus, pharetra at elit at, posuere mollis lorem.
+
+Curabitur ut blandit arcu. Pellentesque at interdum erat, quis elementum leo. Integer eu nisl nec augue suscipit pellentesque. Aenean fringilla diam lectus, sed cursus massa pharetra ac. Curabitur id efficitur quam, vel viverra erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris tortor est, scelerisque eu vulputate ut, tincidunt a erat. Nulla purus ligula, sollicitudin vitae aliquam sit amet, vulputate vitae magna. Integer aliquam nisl a odio tincidunt, a fermentum est pellentesque. Sed vitae ex consequat tellus ornare ultricies. Donec dictum, mauris eu ultricies venenatis, augue metus viverra sem, quis sodales nunc tellus id felis.
+
+Fusce tincidunt erat et ligula feugiat pharetra. Donec lacinia dui augue, sit amet lacinia purus mollis at. Pellentesque tristique nisi sed efficitur porta. Integer ac tincidunt neque. Vivamus nec metus vel elit aliquam convallis id sit amet ligula. In porta tincidunt nisl eget ultrices. Vestibulum pretium est a consequat dignissim.
+
+Aenean egestas, tortor eget consequat scelerisque, enim est luctus orci, in laoreet lacus lacus vel ligula. Nam nunc nisi, ultricies bibendum sem a, lacinia auctor nunc. Vivamus vehicula quam fermentum tellus varius consequat. In augue metus, faucibus nec tortor id, placerat iaculis augue. Phasellus sagittis sagittis diam, eu fringilla diam feugiat eget. Nunc venenatis commodo tempor. Duis nibh eros, tristique non quam eu, accumsan pellentesque eros.
+
+</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>action_files/iblock/b92/b92f1f30261fafe5543bef7284780644.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>47</Ид>
+						<Значение>#4ebdb4</Значение>
+						<ЗначениеСвойства>
+							<Значение>#4ebdb4</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>48</Ид>
+						<Значение>до 10 января 2016г.</Значение>
+						<ЗначениеСвойства>
+							<Значение>до 10 января 2016г.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>49</Ид>
+						<Значение>3+1</Значение>
+						<ЗначениеСвойства>
+							<Значение>3+1</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

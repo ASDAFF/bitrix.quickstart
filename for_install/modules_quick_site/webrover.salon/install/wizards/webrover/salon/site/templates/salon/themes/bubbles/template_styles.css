@@ -1,0 +1,66 @@
+#foot,
+#foot a{
+	color:#FFFFFF;
+}
+
+#mainmenu li .sublevel a:hover,
+#leftmenu a:hover,
+#content.column .column-left .submenu a:hover,
+#leftmenu a.selected,
+#content.column .column-left .submenu a.selected{
+	color:#68a001;
+}
+
+#leftmenu a,
+#leftmenu .selected ul a,
+.content h1,
+#main .blue,
+#content.column .column-left .submenu a,
+.news-item a,
+.content a{
+	color:#02a6a5;
+}
+
+#index{
+	background:#47B4B1 url(images/index-bg-bottom.jpg) repeat-y center 730px;
+}
+
+#top{
+	background:url(images/index-bg-top.jpg) no-repeat center top;
+}
+
+#collage .navigation{
+	background-image:url(images/collage-navigation.png);
+}
+
+.content .gallery a:hover img{
+	border-color:#0072e7;
+}
+
+#leftmenu{
+	background-image:url(images/left-menu-item-marker-active.gif) no-repeat -100000px -100000px;
+}
+
+#leftmenu ul a,
+#content.column .column-left .submenu ul a{
+	background-image:url(images/left-menu-item-marker.gif);
+}
+
+#leftmenu ul a:hover,
+#leftmenu ul a.selected,
+#content.column .column-left .submenu ul a:hover,
+#content.column .column-left .submenu ul a.selected{
+	background-image:url(images/left-menu-item-marker-active.gif);
+}
+
+#leftmenu ul ul a,
+#content.column .column-left .submenu ul ul a{
+	background:url(images/left-menu-subitem-marker.gif) no-repeat left 9px;
+}
+
+#leftmenu ul ul a:hover,
+#content.column .column-left .submenu ul ul a:hover,
+#leftmenu ul ul a.selected,
+#content.column .column-left .submenu ul ul a.selected{
+	background:url(images/left-menu-subitem-marker-active.gif) no-repeat left 9px;
+}

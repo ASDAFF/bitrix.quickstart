@@ -1,0 +1,5 @@
+<?
+$sSectionName = "Delivery";
+$arDirProperties = array(
+);
+?>

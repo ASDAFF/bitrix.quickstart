@@ -1,0 +1,135 @@
+/* line 1, ../sass/styles_1080.scss */
+.container {
+  width: auto;
+}
+
+/* line 5, ../sass/styles_1080.scss */
+.footer-block {
+  margin-right: 0;
+}
+
+/* line 9, ../sass/styles_1080.scss */
+.footer-block_subscribe {
+  width: 100%;
+}
+
+/* line 13, ../sass/styles_1080.scss */
+.footer-block_social {
+  width: auto;
+}
+
+/* line 17, ../sass/styles_1080.scss */
+.footer-contacts {
+  padding-top: 0;
+}
+
+/* line 21, ../sass/styles_1080.scss */
+.informer-menu {
+  min-width: 700px;
+}
+
+/* line 26, ../sass/styles_1080.scss */
+.informer-product:after {
+  display: block;
+}
+
+/* line 33, ../sass/styles_1080.scss */
+.inner-wrap-capcha__img {
+  margin-bottom: 15px;
+}
+
+/* line 39, ../sass/styles_1080.scss */
+.tooltip {
+  left: 0;
+}
+
+/*--PRODUCTS--*/
+/* line 45, ../sass/styles_1080.scss */
+.products_list .products__prices-item + .products__prices-item {
+  display: none;
+}
+/* line 49, ../sass/styles_1080.scss */
+.products_table .products__prices-item + .products__prices-item {
+  display: none;
+}
+
+/*--/Products--*/
+/* line 55, ../sass/styles_1080.scss */
+.sections-description {
+  width: 66%;
+}
+
+/*--Widgets--*/
+/* line 62, ../sass/styles_1080.scss */
+.widgets a > i {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 68, ../sass/styles_1080.scss */
+.widgets a > span {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*--/Widgets--*/
+/*SHOP*/
+/* line 79, ../sass/styles_1080.scss */
+.shops-filter {
+  margin-top: 20px;
+}
+
+/* line 82, ../sass/styles_1080.scss */
+.shops_list {
+  margin-bottom: 20px;
+}
+
+/*/SHOP*/
+/*-- SMALLBANNERS-*/
+/* line 90, ../sass/styles_1080.scss */
+.smallbanners__item:nth-child(6) ~ .smallbanners__item {
+  width: 50%;
+}
+/* line 94, ../sass/styles_1080.scss */
+.smallbanners__item:nth-child(6) ~ .smallbanners__item .smallbanners__info {
+  right: auto;
+  min-width: 61%;
+  margin-right: 10px;
+}
+/* line 100, ../sass/styles_1080.scss */
+.smallbanners__item_wide .smallbanners__info {
+  right: 10px;
+  width: auto;
+}
+/* line 105, ../sass/styles_1080.scss */
+.smallbanners__name {
+  font-size: 14px;
+}
+/* line 109, ../sass/styles_1080.scss */
+.smallbanners__price {
+  font-size: 12px;
+}
+
+/*-- /smallbanners-*/
+/*ISTORY*/
+/* line 117, ../sass/styles_1080.scss */
+.timeline-item .timeline-body .image {
+  height: 150px;
+}
+/* line 120, ../sass/styles_1080.scss */
+.timeline-item .timeline-body .data {
+  max-height: 100px;
+}
+/* line 123, ../sass/styles_1080.scss */
+.timeline-item .timeline-body {
+  height: 280px;
+}
+
+/* line 99, ../sass/styles_1080.scss */
+.header-contacts {
+  display: none;
+}
+
+/*/ISTORY*/

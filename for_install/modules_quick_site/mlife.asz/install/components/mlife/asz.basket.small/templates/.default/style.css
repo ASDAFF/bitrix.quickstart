@@ -1,0 +1,3 @@
+.mlfSmallcart {display:block;padding-left:35px;line-height:20px;background:url('images/korz.png') 0 0 no-repeat;text-decoration:none;}
+.mlfSmallcart .cartempty, .mlfSmallcart .cart {font-size:14px;color:#2779D5;text-decoration:none;display:block;overflow:hidden;}
+.mlfSmallcart .cart:hover {color:#990099;}

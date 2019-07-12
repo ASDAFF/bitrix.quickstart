@@ -1,0 +1,18 @@
+
+
+
+
+ input[class="required form-control"]::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #C0C0C0;
+}
+ input[class="required form-control"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #C0C0C0;
+   opacity:  1;
+}
+ input[class="required form-control"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #C0C0C0;
+   opacity:  1;
+}
+ input[class="required form-control"]:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #C0C0C0;
+}

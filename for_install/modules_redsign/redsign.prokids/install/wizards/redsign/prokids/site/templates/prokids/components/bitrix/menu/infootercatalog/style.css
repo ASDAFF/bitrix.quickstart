@@ -1,0 +1,61 @@
+.footer .catmenu{
+	margin-bottom:15px;
+}
+.footer .catmenu .title{
+	margin-bottom:6px;
+	text-transform:uppercase;
+}
+.footer .catmenu .aroundlevel{
+	width:33%;
+	float:left;
+	padding-right:10px;
+}
+.footer .catmenu .item{
+	margin:3px 0px;
+}
+.footer .catmenu .item.depth_level1 a{
+	color:#0077cb;
+	text-decoration:none;
+}
+.footer .catmenu .item.depth_level1 a:hover,
+.footer .catmenu .item.depth_level1 a:hover span{
+	text-decoration:underline;
+}
+.footer .catmenu .item.depth_level2 a{
+	color:#666;
+	font-size:12px;
+	text-decoration:none;
+}
+.footer .catmenu .item.depth_level2 a:hover,
+.footer .catmenu .item.depth_level2 a:hover span{
+	text-decoration: underline;
+}
+.footer .catmenu.ellipsisnames .item.depth_level1 a span,
+.footer .catmenu.ellipsisnames .item.depth_level2 a span{
+	display:block;
+	max-width:100%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	//zoom:1;
+}
+
+
+@media screen and (max-width:1010px) and (min-width:751px){
+	body.adaptive .footer .catmenu .aroundlevel{
+		width:50%;
+	}
+}
+@media screen and (max-width:750px) and (min-width:481px){
+	body.adaptive .footer .catmenu .aroundlevel{
+		width:33%;
+	}
+	body.adaptive .footer .catmenu .title{
+		text-align:center;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .footer .catmenu{
+		display:none;
+	}
+}

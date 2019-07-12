@@ -1,0 +1,1 @@
+<img src="<?=SITE_DIR?>upload/images/logo.png" alt="logo" title="Элегант" />

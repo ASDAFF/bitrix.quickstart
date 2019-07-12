@@ -1,0 +1,8 @@
+div.news-detail img.detail_picture{
+	float:left;
+	margin: 0px 8px 6px 1px;
+}
+.news-date-time{
+	color:#336699; /*#486DAA;*/
+        margin-bottom: 10px;
+}

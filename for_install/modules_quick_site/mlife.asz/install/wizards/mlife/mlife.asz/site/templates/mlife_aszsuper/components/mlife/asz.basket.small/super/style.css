@@ -1,0 +1,3 @@
+.mlfSmallcart {display:block;padding-left:33px;line-height:30px;background:url('images/cart_3.png') 5px 5px no-repeat;text-decoration:none;}
+.mlfSmallcart .cartempty, .mlfSmallcart .cart {font-size:13px;color:#ffffff;text-decoration:none;display:block;overflow:hidden;}
+.mlfSmallcart:hover {background:#005D99 url('images/cart_3.png') 5px 5px no-repeat;}

@@ -1,0 +1,28 @@
+div.vacancy-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.vacancy-date-time {
+	color:#486DAA;
+}
+div.vacancy-list div.vacancy-item h3{
+	color:#003C7E;
+	font-weight:bold;
+}
+
+div.vacancy-list div.vacancy-item h4{
+	margin-bottom:0;
+	font-weight:bold;
+	color:#2C2C2C;
+}
+
+div.vacancy-list div.line{
+	padding-top:0px;
+	margin-bottom:10px;
+	margin-top:10px;
+	border-top:1px #fff solid;
+	border-bottom:1px #cfcfcf solid;
+	
+	
+}

@@ -1,0 +1,71 @@
+.pic-image {
+    position: relative;
+}
+.pic-image .depiction {
+    position: relative;
+}
+.pic-image .link-popover-card {
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    margin-top: 15px;
+    padding-left: 6px;
+}
+.pic-image .link-popover-card img {
+    height: 18px;
+    width: 21px;
+}
+.pic-image .wrapped-depiction {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 20px;
+    padding: 0;
+    position: absolute;
+    width: 98px;
+    top: auto;
+}
+.depiction {
+    position: relative;
+    display: block;
+}
+.wrapped-depiction {
+    position: absolute;
+    display: none;
+    background: url("/local/templates/demoshop/images/wid-bl.png");
+    width: 100px;
+    bottom: 0;
+    padding: 5px;
+}
+.wrapped-depiction span {
+    display: block;
+    font-size: 11px;
+
+}
+.depiction:hover .wrapped-depiction {
+    display: block;
+}
+
+.pic-image:first-child {
+    margin-top: 0;
+}
+.pic-image div {
+    font-size: 14px;
+}
+.pic-image img {
+    height: 98px;
+}
+.pic-image div.block-pr {
+    float: left;
+    height: 130px;
+    margin-left: 36px;
+}
+.pic-image div.block-pr:first-child {
+    margin: 0 0 40px;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
+.pic-image .block-pr {
+    overflow: hidden;
+    width: 262px;
+}

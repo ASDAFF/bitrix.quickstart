@@ -1,0 +1,264 @@
+/*popover*/
+.popover {
+  background-color: @popover-bg;
+  border: 1px solid @popover-border-color;
+}
+
+.popover-title {
+  background-color: @popover-title-bg;
+  border-bottom: 1px solid darken(@popover-title-bg, 5%);
+}
+
+// Arrows
+.popover {
+  &.top > .arrow {
+    border-top-color: @popover-arrow-outer-color;
+    &:after {
+      border-top-color: @popover-arrow-color;
+    }
+  }
+  &.right > .arrow {
+    border-right-color: @popover-arrow-outer-color;
+    &:after {
+      border-right-color: @popover-arrow-color;
+    }
+  }
+  &.bottom > .arrow {
+    border-bottom-color: @popover-arrow-outer-color;
+    &:after {
+      border-bottom-color: @popover-arrow-color;
+    }
+  }
+
+  &.left > .arrow {
+    border-left-color: @popover-arrow-outer-color;
+    &:after {
+      border-left-color: @popover-arrow-color;
+    }
+  }
+
+}
+
+
+/* scaffolding.less */
+a {
+  color: @link-color;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+  }
+}
+
+/* buttons.less */
+.btn {
+  &:hover,
+  &:focus {
+    color: @btn-default-color;
+  }
+}
+
+.btn-default {
+	color: @btn-default-color;
+	
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+//.btn-default,
+//.btn-default.active,
+.bg-primary {
+	background: @brand-primary;
+	border-color: @brand-primary;
+}
+
+.btn-link {
+  color: @link-color;
+	
+	&:hover,
+  &:focus {
+    color: @link-hover-color;
+	}
+}
+
+/* carousel.less */
+.carousel-control {
+  color: @carousel-control-color;
+	
+  &:hover,
+  &:focus {
+    outline: 0;
+    color: @carousel-control-color;
+	}
+}
+
+/* dropdowns.less */
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    background-color: @dropdown-link-active-bg;
+  }
+}
+
+/* labels.less */
+.label-primary {
+  background-color: @label-primary-bg;
+}
+
+/* list-group.less */
+.list-group-item {
+  &.active,
+  &.active:hover,
+  &.active:focus {
+    background-color: @list-group-active-bg;
+		border-color: @list-group-active-border;
+		
+    .list-group-item-text {
+      color: @list-group-active-text-color;
+    }
+	}
+}
+
+/* navs.less */
+.nav {
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      border-color: @link-color;
+    }
+  }
+}
+
+.nav-pills {
+  > li {
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+}
+
+/* pagination.less */
+.pagination {
+  > li {
+    > a,
+    > span {
+      color: @pagination-color;
+      
+      &:hover,
+      &:focus {
+        background-color: @pagination-active-bg;
+        border-color: @pagination-active-border;
+      }
+		}
+	}
+}
+
+/* panels.less */
+.panel-primary {	
+	border-color: @panel-primary-border;
+
+  & > .panel-heading {
+    background-color: @panel-primary-heading-bg;
+
+    + .panel-collapse > .panel-body {
+      border-top-color: @panel-primary-border;
+    }
+  }
+  & > .panel-footer {
+    + .panel-collapse > .panel-body {
+      border-bottom-color: @panel-primary-border;
+    }
+  }
+}
+
+/* progress.less */
+.progress-bar {
+  background-color: @progress-bar-bg;
+}
+
+/* theme.less */
+.btn-primary { //.btn-styles(@btn-primary-bg);
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: darken(@dropdown-link-active-bg, 5%);
+}
+
+/* thumbnails.less */
+.thumbnail {
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: @link-color;
+  }
+}
+
+/* type.less */
+.text-primary {
+	.text-emphasis-variant(@brand-primary) {
+		color: @brand-primary;
+		a&:hover {
+			color: darken(@brand-primary, 10%);
+		}
+	}
+}
+
+.bg-primary {
+	background-color: @brand-primary;
+  a&:hover {
+    background-color: darken(@brand-primary, 10%);
+  }
+}
+
+.btn-default .badge,
+.btn-primary .badge,
+.panel-primary>.panel-heading .badge {
+	color:  @brand-primary;
+}
+
+.popover {
+	background-color: @brand-secondary;
+	border: 1px solid @brand-secondary;
+}
+.popover-title {
+	background-color: @brand-secondary;
+}
+.popover.top>.arrow {
+	&,
+	&:after {
+		border-top-color: @brand-secondary;
+	}
+}
+.popover.right>.arrow {
+	&,
+	&:after {
+		border-right-color: @brand-secondary;
+	}
+}
+.popover.bottom>.arrow {
+	&,
+	&:after {
+		border-bottom-color: @brand-secondary;
+	}
+}
+.popover.left>.arrow {
+	&,
+	&:after {
+		border-left-color: @brand-secondary;
+	}
+}
+
+//modal
+.modal-content {
+  border: 5px solid @brand-primary;
+}

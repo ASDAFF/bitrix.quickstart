@@ -1,0 +1,46 @@
+.vk, .fb, .twi, .odkl, .mail, .google{
+    display: inline-block;
+    outline: medium none;
+    padding: 0;
+    vertical-align: bottom;
+	margin:0 -3px;
+}
+
+.share .vk, .share .fb, .share .twi, .share .odkl, .share .mail, .share .google{
+    background: url(#SITE_DIR#images/share/06-big.png) no-repeat scroll 0 0 transparent;
+	height: 40px;
+    width: 41px;
+}
+
+.share2 .vk, .share2 .fb, .share2 .twi, .share2 .odkl, .share2 .mail, .share2 .google{
+    background: url(#SITE_DIR#images/share/06-medium.png) no-repeat scroll 0 0 transparent;
+	height: 30px;
+    width: 30px;
+}
+
+.share3 .vk, .share3 .fb, .share3 .twi, .share3 .odkl, .share3 .mail, .share3 .google{
+    background: url(#SITE_DIR#images/share/06-small.png) no-repeat scroll 0 0 transparent;
+	height: 20px;
+    width: 21px;
+}
+
+.share .vk		{background-position: -168px 0;}
+.share .fb		{background-position: 	0 	 0;}
+.share .twi		{background-position: -42px  0;}
+.share .odkl		{background-position: -126px 0;}
+.share .mail		{background-position: -294px 0;}
+.share .google	{background-position: -252px 0;}
+
+.share2 .vk		{background-position: -124px 0;}
+.share2 .fb		{background-position: 	0 	 0;}
+.share2 .twi		{background-position: -31px  0;}
+.share2 .odkl	{background-position: -93px  0;}
+.share2 .mail	{background-position: -217px 0;}
+.share2 .google	{background-position: -186px 0;}
+
+.share3 .vk		{background-position: -84px  0;}
+.share3 .fb		{background-position: 	0 	 0;}
+.share3 .twi		{background-position: -21px  0;}
+.share3 .odkl	{background-position: -63px  0;}
+.share3 .mail	{background-position: -147px 0;}
+.share3 .google	{background-position: -126px 0;}

@@ -1,0 +1,6 @@
+<?
+$MESS["MLIFE_ASZ_QUANTLIST_MENU_DELETE"] = "Удалить";
+$MESS["MLIFE_ASZ_QUANTLIST_TITLE"] = "Список остатков";
+$MESS["MLIFE_ASZ_QUANTLIST_NAV"] = "Остатки";
+$MESS["MLIFE_ASZ_QUANTLIST_MENU_EDIT"] = "Изменить";
+?>

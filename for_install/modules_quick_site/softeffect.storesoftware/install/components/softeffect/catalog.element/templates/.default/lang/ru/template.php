@@ -1,0 +1,30 @@
+<?
+$MESS['SE_CATALOGELEMENT_PLATFORM'] = 'Платформа';
+$MESS['SE_CATALOGELEMENT_ALLPROD'] = 'Все продукты';
+$MESS['SE_CATALOGELEMENT_VIEWGOODS'] = 'Посмотреть товары';
+$MESS['SE_CATALOGELEMENT_GARANTIYA'] = 'Гарантия';
+$MESS['SE_CATALOGELEMENT_FROMMANUF'] = 'От производителя';
+$MESS['SE_CATALOGELEMENT_ARTICUL'] = 'Артикул';
+$MESS['SE_CATALOGELEMENT_ALLPRICE'] = 'Все цены';
+$MESS['SE_CATALOGELEMENT_USERS'] = 'Пользователи';
+$MESS['SE_CATALOGELEMENT_UPDATES'] = 'Обновления';
+$MESS['SE_CATALOGELEMENT_DELIVERY'] = 'Доставка';
+$MESS['SE_CATALOGELEMENT_DELIVERY_DATE'] = 'Срок доставки';
+$MESS['SE_CATALOGELEMENT_STOREAMOUNT'] = 'Наличие на складах';
+$MESS['SE_CATALOGELEMENT_PRICE'] = 'Цена';
+$MESS['SE_CATALOGELEMENT_COUNT'] = 'Количество';
+$MESS['SE_CATALOGELEMENT_BUY'] = 'Купить';
+$MESS['SE_CATALOGELEMENT_ONELICK'] = 'Закажи в 1 клик';
+$MESS['SE_CATALOGELEMENT_BUY_NOTICE'] = 'Чтобы заказать, нажмите на кнопку Купить';
+$MESS['SE_CATALOGELEMENT_DESCR'] = 'Описание';
+$MESS['SE_CATALOGELEMENT_COMPARE_RED'] = 'Сравнение <br/>редакций';
+$MESS['SE_CATALOGELEMENT_BUY_VARIANTS'] = 'Варианты <br/>покупки';
+$MESS['SE_CATALOGELEMENT_REVIEWS'] = 'Отзывы';
+$MESS['SE_CATALOGELEMENT_VOZM'] = 'Возможности';
+$MESS['SE_CATALOGELEMENT_BOOKS'] = 'Книги';
+$MESS['SE_CATALOGELEMENT_DO_REVIEW'] = 'Оставить отзыв';
+$MESS['SE_CATALOGELEMENT_RATING_NETRAL'] = 'Воздержался';
+$MESS['SE_CATALOGELEMENT_REVIEWS_NAV'] = 'Отзывы';
+$MESS['SE_CATALOGELEMENT_POHOJ'] = 'Похожие продукты';
+$MESS['SE_CATALOGELEMENT_SHARE'] = 'Посоветуйтесь с друзьями';
+?>

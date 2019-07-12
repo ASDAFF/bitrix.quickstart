@@ -1,0 +1,17 @@
+a.bx_login_top_inline_link{
+	color: #576e75;
+	vertical-align: bottom;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 13px;
+}
+a.bx_login_top_inline_link:hover{text-decoration: underline}
+.bx_login_top_inline_icon{
+	display: inline-block;
+	margin-left: 15px;
+	width: 16px;
+	height: 13px;
+	background: url('images/gui.png') no-repeat bottom center;
+	vertical-align: middle;
+	line-height: 13px;
+}

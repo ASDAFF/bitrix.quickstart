@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-06-02T10:09:45">
+	<Metadata>
+		<Id>perspective_redsign_monopoly</Id>
+		<Title>Prospective</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>45</Id>
+				<Title>Ext. images</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>MORE_PHOTO</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>45</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+		</ElementProperties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>perspective_redsign_monopoly</Id>
+		<MetadataId>perspective_redsign_monopoly</MetadataId>
+		<Title>Prospective</Title>
+		<BitrixCode>perspective_redsign_monopoly</BitrixCode>
+		<BitrixSort>500</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/projects/perspective/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/projects/perspective/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/projects/perspective/</BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>104</Id>
+				<Title>The dining room</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>perspective_files/iblock/db3/db335fc9cd800d4cef9345f0a518ef7f.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>obedennaya_komnata</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>In this unit, you can show the completed projects. This is especially true if the company is engaged in the design, followed by the implementation, or sells products that significantly alter the appearance of the premises, or other objects.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, odio sit amet facilisis rutrum, nisl ex porttitor sem, a vestibulum enim eros nec dui. Nullam id eleifend metus. Sed et faucibus mauris, quis efficitur arcu.&amp;nbsp;&lt;b&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti&lt;/b&gt;. Integer pharetra enim sapien, ut posuere mauris dictum at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae tortor eu dui efficitur suscipit sit amet a urna. Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit. Fusce enim libero, fermentum in imperdiet et, fermentum a nisi. Duis ac eros luctus, consequat elit quis, congue elit. Aliquam ut vestibulum erat. Aenean sit amet velit ligula.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Aenean sit amet velit ligula&lt;/li&gt;
+	&lt;li&gt;Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis ac eros luctus, consequat elit quis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ Integer ut erat mauris.&amp;nbsp;&lt;b&gt;Fusce et fermentum dui. Nunc eget dui sed neque semper tincidunt et vitae risus. Mauris sed varius elit.&lt;/b&gt;&amp;nbsp;Donec dolor orci, ornare et purus id, tristique placerat urna. Suspendisse mollis elit quis dignissim accumsan. Integer condimentum arcu ut velit sagittis faucibus. Nulla mollis urna ut euismod maximus. Vivamus vitae accumsan est, vitae vehicula neque. Etiam in accumsan dolor. Pellentesque placerat lacus quis justo imperdiet, nec&amp;nbsp;&lt;b&gt;laoreet quam pellentesque.&lt;/b&gt;&amp;nbsp;Maecenas ornare arcu vitae dignissim finibus. Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante.&lt;br&gt;
+ &lt;br&gt;
+&lt;ol&gt;
+	&lt;li&gt;Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Proin porta faucibus magna, eu rhoncus est molestie vel&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Suspendisse vitae tellus magna. Maecenas commodo tristique mollis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ol&gt;
+ &lt;br&gt;
+Nullam consequat felis nibh, nec volutpat magna porta sed. Vestibulum non nisi ultrices quam aliquet convallis. Cras vitae massa porta, cursus nunc vitae, hendrerit neque. Sed placerat justo ac sem elementum, quis interdum urna sodales. In vitae nibh quis mauris mattis imperdiet hendrerit vitae ex. Donec venenatis augue nunc, lacinia auctor ipsum euismod sed. In ultricies magna sollicitudin nibh bibendum aliquet. Nunc orci dolor, finibus eu risus vel, scelerisque pretium purus. Suspendisse ac tortor mi. Pellentesque fringilla aliquam vehicula. Morbi ut odio ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>perspective_files/iblock/04b/04bfafbe60296ca425c0f83db06476af.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>45</Id>
+						<Value>perspective_files/iblock/85e/85e09089a87c0201cc2b8e8b0e2cb9f7.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/85e/85e09089a87c0201cc2b8e8b0e2cb9f7.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/5b4/5b48cc180eb6347cbd2335b7cd3326cc.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/5b4/5b48cc180eb6347cbd2335b7cd3326cc.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/769/7694d03ef88896eed30971f7de0b9681.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/769/7694d03ef88896eed30971f7de0b9681.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/a00/a00e9f83875cb22e2228810f7322210a.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/a00/a00e9f83875cb22e2228810f7322210a.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/da3/da34f24b5ef285a659f9b0863de45c5c.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/da3/da34f24b5ef285a659f9b0863de45c5c.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/56c/56c7781d0b8ab351171f0d40cd8004d3.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/56c/56c7781d0b8ab351171f0d40cd8004d3.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/b5c/b5c32315b74a095247d72e6690291672.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/b5c/b5c32315b74a095247d72e6690291672.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>105</Id>
+				<Title>Exclusive room</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>perspective_files/iblock/411/411c800d3e3d0eb8ef654070515ccedb.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>eksklyuzivnaya_komnata</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value> Quisque varius scelerisque feugiat. Vivamus auctor, tellus in gravida molestie, ante enim scelerisque metus, at finibus arcu velit sit amet odio. Fusce ut scelerisque ipsum. Sed ac mattis eros.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Proin risus mauris, tincidunt nec eros eget, placerat bibendum velit. &lt;b&gt;Vivamus auctor&lt;/b&gt; euismod ante ut sagittis. Suspendisse potenti. Fusce at enim purus. Quisque sed dui sed magna elementum mattis. Aenean metus massa, molestie accumsan rhoncus eu, molestie eu massa. Duis congue, ex ut finibus lacinia, felis nunc condimentum ante, ac finibus leo dui molestie augue. Praesent consequat diam ac sapien pulvinar, ut pretium massa lacinia. Etiam eu urna nec arcu tempor facilisis. Nam pretium ligula nec facilisis accumsan. Integer dapibus nibh non nisi placerat, vitae hendrerit leo pellentesque. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. &lt;b&gt;Vestibulum&lt;/b&gt; convallis dui eros, vel finibus leo facilisis sit amet. Suspendisse arcu risus, consequat vulputate ipsum vel, pellentesque euismod lorem. Maecenas id ultrices turpis. 
+&lt;br&gt;&lt;br&gt;
+ Integer ut erat mauris.&amp;nbsp;&lt;b&gt;Fusce et fermentum dui. Nunc eget dui sed neque semper tincidunt et vitae risus. Mauris sed varius elit.&lt;/b&gt;&amp;nbsp;Donec dolor orci, ornare et purus id, tristique placerat urna. Suspendisse mollis elit quis dignissim accumsan. Integer condimentum arcu ut velit sagittis faucibus. Nulla mollis urna ut euismod maximus. Vivamus vitae accumsan est, vitae vehicula neque. Etiam in accumsan dolor. Pellentesque placerat lacus quis justo imperdiet, nec&amp;nbsp;&lt;b&gt;laoreet quam pellentesque.&lt;/b&gt;&amp;nbsp;Maecenas ornare arcu vitae dignissim finibus. Ut hendrerit, mi quis cursus convallis, urna risus suscipit nulla, in ultricies neque ante sit amet ante.
+&lt;br&gt;&lt;br&gt;
+&lt;u&gt;In et efficitur velit. Proin porta faucibus magna, eu rhoncus est molestie vel.&lt;/u&gt;&amp;nbsp;Nulla eu porttitor risus, et aliquet lectus. Nunc felis lacus, cursus vel suscipit at, blandit non leo. Nam semper, nisl ac accumsan aliquam, dolor libero scelerisque tellus, sed condimentum erat ex ut lectus. Suspendisse vitae tellus magna. Maecenas commodo tristique mollis. Pellentesque placerat felis nisi, et tempor ipsum lobortis sed. Etiam id suscipit ex. In suscipit laoreet magna, in dictum augue dapibus eget. Nam quis placerat metus. Cras quam ipsum, scelerisque eget pulvinar vel, eleifend et leo.&lt;br&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>perspective_files/iblock/4fd/4fdf0403ab10bc7a89575ff865e85764.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>45</Id>
+						<Value>perspective_files/iblock/640/640b894771628708d063a44413ec4c7f.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/640/640b894771628708d063a44413ec4c7f.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/2a2/2a2cc1d6d40917f0f8a649bfd980f476.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/2a2/2a2cc1d6d40917f0f8a649bfd980f476.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/3ae/3ae43d7914bb0676b4e8caac34975f0e.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/3ae/3ae43d7914bb0676b4e8caac34975f0e.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/a05/a05b09fe2c9352e278eab5433cd5b188.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/a05/a05b09fe2c9352e278eab5433cd5b188.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/02c/02c9b9d7689a69b2d0d0615312d5c96f.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/02c/02c9b9d7689a69b2d0d0615312d5c96f.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/bae/bae6d3cdd4665b6dd1b1d6cfb7af9aae.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/bae/bae6d3cdd4665b6dd1b1d6cfb7af9aae.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/c7a/c7a8c6fc1a1dd7626e5fbea4bed800cf.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/c7a/c7a8c6fc1a1dd7626e5fbea4bed800cf.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>106</Id>
+				<Title>Head of Cabinet</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>perspective_files/iblock/eb7/eb7e7b91780fec52406f16307998f98d.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>ofisnyy_kabinet_rukovoditelya</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Cras vel felis condimentum, pellentesque nibh in, pulvinar enim. Donec id aliquam ex. Suspendisse auctor accumsan tellus eu eleifend.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Integer pharetra enim sapien, ut posuere mauris dictum at. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vitae tortor eu dui efficitur suscipit sit amet a urna. Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit. Fusce enim libero, fermentum in imperdiet et, fermentum a nisi. Duis ac eros luctus, consequat elit quis, congue elit. Aliquam ut vestibulum erat. Aenean sit amet velit ligula.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Aenean sit amet velit ligula&lt;/li&gt;
+	&lt;li&gt;Nunc vulputate diam id est convallis efficitur. Vestibulum nec elementum felis. In nunc nisl, ornare quis consequat sit amet, porttitor id elit&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Duis ac eros luctus, consequat elit quis&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Quisque varius scelerisque feugiat. Vivamus auctor, tellus in gravida molestie, ante enim scelerisque metus, at finibus arcu velit sit amet odio. Fusce ut scelerisque ipsum. Sed ac mattis eros. Duis sit amet consectetur risus, in interdum nisi. Mauris a ullamcorper erat. Curabitur vel sollicitudin ex, sit amet semper lorem. Fusce elementum erat sem, eu aliquet eros cursus et. Etiam ut nisi libero. </Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>perspective_files/iblock/86c/86cf6689fea0d08266cf3ff43d33c6eb.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>45</Id>
+						<Value>perspective_files/iblock/83b/83bb83a5e3f19231377980f442663a7f.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/83b/83bb83a5e3f19231377980f442663a7f.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/703/70342a90aa8b9614b7b5cf50745b15f7.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/703/70342a90aa8b9614b7b5cf50745b15f7.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/3c0/3c0f4cc367a94425b2735930cd82f84d.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/3c0/3c0f4cc367a94425b2735930cd82f84d.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/6cf/6cfe7dcc75345d9b2fbddc3f8bed146c.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/6cf/6cfe7dcc75345d9b2fbddc3f8bed146c.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/95f/95f34009d27160efbc7e615ab5e11ebe.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/95f/95f34009d27160efbc7e615ab5e11ebe.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/813/813516f3204ce8140cf6f4d292d824a4.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/813/813516f3204ce8140cf6f4d292d824a4.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>perspective_files/iblock/796/796f96c14704931a8552d78ad365870d.jpg</Value>
+						<PropertyValue>
+							<Value>perspective_files/iblock/796/796f96c14704931a8552d78ad365870d.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

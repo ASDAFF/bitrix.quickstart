@@ -1,0 +1,55 @@
+div.aerofilter{
+	position: fixed;
+	right: -219px; top: 200px;
+	z-index: 110;
+	width: 219px; height: 185px;
+	background: url(images/aerofilter-bg.png) left top repeat-x;
+	color: #fff;
+	font-size: 14px;
+}
+div.aerofilterbookmark{
+	position: absolute;
+	left: -39px; top: -6px;
+	width: 39px; height: 156px;
+	background: url(images/aerofilterbookmark.png) left top no-repeat;
+	cursor: pointer;
+}
+div.aerofilter-submit{
+	position: absolute;
+	bottom: 0px; left: 50%;
+	margin-left: -43px;
+	width: 87px; height: 24px;
+	background: #a59284;
+	padding: 9px 0 0 16px;
+	color: #fff; font-size: 14px;
+	cursor: pointer;
+}
+div.colorsselector{
+	display: inline-block;
+	width: 30px; height: 30px;
+	padding: 3px; margin: 3px;
+	background: #ccc;
+	cursor: pointer;
+}
+div.colorselected{
+	background: #d01616;
+}
+div.colorDetail{
+	position: absolute;
+	top: 15px; right: -2px;
+	width: 90px; min-height: 90px;
+	padding: 5px;
+	display: none;
+	background: #ccc;
+	z-index: 120;
+}
+div.colorsselector:hover div.colorDetail{
+	display: block;
+}
+div.colorDetail-arrow{
+	position: absolute;
+	top: -10px; right: 7px;
+	width: 19px; height: 10px;
+	background: url(images/colorDetail-arrow.png) left top no-repeat;
+	z-index: 120;
+}

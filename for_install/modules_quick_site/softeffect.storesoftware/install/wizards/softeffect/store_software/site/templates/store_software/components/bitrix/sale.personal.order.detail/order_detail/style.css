@@ -1,0 +1,36 @@
+/*Table*/
+table.sale_personal_order_detail
+{
+	width:100%;
+	border-collapse:collapse;
+	/*font-size:12px;*/
+}
+
+/*Table head*/
+table.sale_personal_order_detail th
+{
+	/*background-image:url(images/table_head.gif);*/
+	background-repeat:repeat-x;
+	background-color:#D5EBE6;
+	#text-align: left;
+	color:#333333;
+}
+
+/* Table cells and heads*/
+table.sale_personal_order_detail th, table.sale_personal_order_detail td
+{
+	border:1px solid #ADC3D5;
+	padding: 3px 5px;
+	vertical-align:top;
+}
+
+.sale_personal_order_detail_no_border
+{
+	border: 0px;
+	padding: 3px;
+	vertical-align:top;
+}
+
+table.sale_personal_order_detail a {
+	font-weight: normal!important;
+}

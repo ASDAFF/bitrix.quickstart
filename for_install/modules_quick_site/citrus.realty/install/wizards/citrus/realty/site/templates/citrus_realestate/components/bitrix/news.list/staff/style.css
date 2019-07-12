@@ -1,0 +1,44 @@
+.b-staff-list-item {
+	margin: 0 0 2em 0;
+	overflow: hidden;
+	max-height: 20em;
+}
+.b-staff-item-highlight {
+    overflow: hidden;
+    padding: .5em 0 .5em .5em;
+}
+.b-staff-item-highlight:target {
+    background-color: #ffc85e;
+    -webkit-transition: background-color 1000ms ease-out;
+    -moz-transition: background-color 1000ms ease-out;
+    -o-transition: background-color 1000ms ease-out;
+    -ms-transition: background-color 1000ms ease-out;
+    transition: background-color 1000ms ease-out;
+}
+.b-staff-date {
+	font-style: italic;
+	font-size: 85%;
+	display: block;
+	color: #666;
+}
+.b-staff-list-item-name {
+	font-size: 1.5em;
+}
+.b-staff-preview-picture {
+	float: left;
+	margin: 0 1em 0 0;
+}
+.b-staff-text {
+	margin-top: 1em;
+}
+
+.b-staff-props {
+    margin: 1em 0;
+    overflow: hidden;
+}
+.b-staff-props dt {
+    font-weight: bold;
+}
+.b-staff-props dd {
+    padding-left: 2em; margin: 0 0 .5em 0;
+}

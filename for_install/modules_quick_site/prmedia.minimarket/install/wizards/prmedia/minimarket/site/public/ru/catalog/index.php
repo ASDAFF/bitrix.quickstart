@@ -1,0 +1,122 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetTitle("Все продукты");
+?>
+<h1><?= $APPLICATION->ShowTitle(false); ?></h1>
+<?
+$APPLICATION->IncludeComponent(
+	"bitrix:catalog", 
+	"mm", 
+	array(
+		"OFFERS_FIELDS" => array(
+			0 => "NAME",
+		),
+		"OFFERS_PROPERTIES" => "",
+		"AJAX_MODE" => "N",
+		"SEF_MODE" => "Y",
+		"IBLOCK_ID" => "#PRMEDIA_MINIMARKET_CATALOG_IBLOCK_ID#",
+		"USE_FILTER" => "N",
+		"USE_REVIEW" => "N",
+		"USE_COMPARE" => "N",
+		"SHOW_TOP_ELEMENTS" => "Y",
+		"PAGE_ELEMENT_COUNT" => "12",
+		"LINE_ELEMENT_COUNT" => "2",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"LIST_PROPERTY_CODE" => array(
+			0 => "WAY_TO_SELL",
+			1 => "",
+		),
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"LIST_META_KEYWORDS" => "-",
+		"LIST_META_DESCRIPTION" => "-",
+		"LIST_BROWSER_TITLE" => "-",
+		"DETAIL_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"DETAIL_META_KEYWORDS" => "-",
+		"DETAIL_META_DESCRIPTION" => "-",
+		"DETAIL_BROWSER_TITLE" => "-",
+		"BASKET_URL" => SITE_DIR . "basket/",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "N",
+		"SET_TITLE" => "Y",
+		"SET_STATUS_404" => "N",
+		"PRICE_CODE" => array(
+			0 => "BASE",
+		),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRICE_VAT_SHOW_VALUE" => "N",
+		"LINK_IBLOCK_TYPE" => "",
+		"LINK_IBLOCK_ID" => "",
+		"LINK_PROPERTY_SID" => "",
+		"LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
+		"USE_ALSO_BUY" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"PAGER_TITLE" => "Товары",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "mm",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"TOP_ELEMENT_COUNT" => "12",
+		"TOP_LINE_ELEMENT_COUNT" => "2",
+		"TOP_ELEMENT_SORT_FIELD" => "sort",
+		"TOP_ELEMENT_SORT_ORDER" => "asc",
+		"TOP_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "VALUE_ENUM_ID",
+			2 => "",
+		),
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"SEF_FOLDER" => SITE_DIR . "catalog/",
+		"USE_PRODUCT_QUANTITY" => "Y",
+		"ALSO_BUY_MIN_BUYES" => "2",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"USE_ELEMENT_COUNTER" => "Y",
+		"CONVERT_CURRENCY" => "N",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"TOP_ELEMENT_SORT_FIELD2" => "id",
+		"TOP_ELEMENT_SORT_ORDER2" => "desc",
+		"SECTION_COUNT_ELEMENTS" => "Y",
+		"SECTION_TOP_DEPTH" => "2",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"ALSO_BUY_ELEMENT_COUNT" => "5",
+		"USE_STORE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"SEF_URL_TEMPLATES" => array(
+			"sections" => "",
+			"section" => "#SECTION_CODE_PATH#/",
+			"element" => "#SECTION_CODE_PATH#/#ELEMENT_ID#/",
+			"compare" => "compare.php?action=#ACTION_CODE#",
+		),
+		"VARIABLE_ALIASES" => array(
+			"compare" => array(
+				"ACTION_CODE" => "action",
+			),
+		)
+	),
+	false
+);
+?> 
+
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

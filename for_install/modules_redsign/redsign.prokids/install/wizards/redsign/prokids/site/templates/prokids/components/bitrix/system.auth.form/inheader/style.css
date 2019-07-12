@@ -1,0 +1,27 @@
+.authinhead{
+	display:inline-block;
+	padding-top:16px;
+	text-align:right;
+}
+.authinhead .logged .icon{
+	width:10px;
+	height:12px;
+	margin-right:3px;
+	margin-bottom:3px;
+	background-position:0px -12px;
+}
+.authinhead .guest .icon{
+	width:14px;
+	height:9px;
+	margin-right:5px;
+	margin-left:15px;
+	margin-bottom:2px;
+	background-position:0px -24px;
+}
+
+@media screen and (max-width: 480px){
+	body.adaptive .authinhead{
+		display:block;
+		float:right;
+	}
+}

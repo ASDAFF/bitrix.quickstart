@@ -1,0 +1,22 @@
+.side_list{
+	position:relative;
+	top:15px;
+	background:#ebebeb;
+	padding:5px 10px 3px 10px;
+	margin:0;
+	font-weight:bold
+}
+.side_list li{
+	padding:5px 0 6px 20px;
+	border-bottom:1px dotted #727381;
+	background:url(images/side_list_li.png) no-repeat 0 9px;
+}
+.side_list li.last{
+	border:none;
+}
+.side_list a{
+	text-decoration:none;
+}
+.side_list a.active{
+	color:#c73c3c
+}

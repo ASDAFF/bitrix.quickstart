@@ -1,0 +1,302 @@
+#ORDER_FORM h4 {
+	font-weight: bold;
+    color: #7f8a92;
+    margin-bottom: 15px;
+    font-weight: 16px;
+}
+#ORDER_FORM .label {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 0;
+}
+#ORDER_FORM .label input[type=radio] {
+	width: 20px;
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+#ORDER_FORM .label label {
+	height: 21px;
+	font-weight: lighter;
+	margin-left: 0;
+	color: #7f8a92;
+	font-size: 14px;
+	padding-left: 30px;
+	background-position: 0px;
+	background-repeat: no-repeat;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NkYzN0E5N0YzRDQxMUUzOUYwNkI2NTY5QzJEMTJCMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NkYzN0E5OEYzRDQxMUUzOUYwNkI2NTY5QzJEMTJCMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY2RjM3QTk1RjNENDExRTM5RjA2QjY1NjlDMkQxMkIzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY2RjM3QTk2RjNENDExRTM5RjA2QjY1NjlDMkQxMkIzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HaCtLwAAAihJREFUeNqslT1vE0EQhvfOd/6qaHF1tpCVmgIXyL8AkcS0qUHUdI7pkiIVAiqQaIEOJIKo/BeQsGSJFLSREIqoovP3XZ53dRudoyCcOCONzrsz88zs7Ie9fr9v8uJ5nvF9PywUCpt8O3zvozXmJ5iP0zT9vlgsPqNfkiSZtdvtpfggPwBgCH4YBMGLYrF4JwxDI2VOiYq4bADcALYzm81+oc+YO1wqyFUIzAO0D6hbLpc91MKYc0DrB9AANPP53ABMx+PxAdprtVrpeYWqjMC9Uqm0W61WjWBSgfIwJyzVJiO5h72LJkw/tyw5q18YLcwpY1udksknr0oim3wy/93hcLiVFeeHGF9pmZVKxVaWB/1Lss2zvlnsy8FgEAZk65ApEogln8NWFQclNqKvj1Rh58JumquKawOMbZ8f924Q2BKwpsH/erYKFEZNu5y43VtXYNjuH5sbkKyg3z4n/8jdgHVE8egPn1N/qGuk078OVLEwvvrcy48A/zrodYVYMT4IeMol76H20l8Hqhhie/V6/VRAM51O3/BivJ9MJvYVucrS5avKiH1rXxvRVR3AJ5zHW5ylB9awwhVULLBvFPS40WjYKnz3vpEhHo1GW3Ecd4GrDeayzcqaL5t8usRtRlEUL73YmYMBuCDggATvGD/l0dim0rt6fF1R6E/8P2F/TWUnzWbz8r+ArBdaur4nZN/nbkortOI2B3eM2x/85ioAmG3VRTkTYACHiksmsUhG0wAAAABJRU5ErkJggg==);
+}
+#ORDER_FORM .label input[type=radio]:checked + label {
+	background-position: 1px 0px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NzI5OTU5QUYzRDQxMUUzQTAwQkY2Q0ExQjExNTk2MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NzI5OTU5QkYzRDQxMUUzQTAwQkY2Q0ExQjExNTk2MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc3Mjk5NTk4RjNENDExRTNBMDBCRjZDQTFCMTE1OTYxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc3Mjk5NTk5RjNENDExRTNBMDBCRjZDQTFCMTE1OTYxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+dTLtoAAAAopJREFUeNqMlDtvE0EUhcfr9a7Xj5ASJ9sYDLjnYRJk8RccyUZCdNRQQOEo/ACEkpqWLg1OSCJaSwbJPAUCIRc8nAIJ4xYiS/auX5wz2rHWL5krXe3uzL3fnJm9dwLlcln4LRAICE3TjGAwmMMzh+cafAXjLqZ/DYfDT/1+/wB+NBgM3Gw2O5av+z8AEEje0HV92zCMVCgUEnR8c9qApwFMA3az2+3W4ZsYezYmSCkELIjEhwAVw+GwoCsgF6JyGoACQNHr9QSAotPpbMMfZDKZ/kghEwgzTbMYiUSEZVkC71QrXcGUYatyISzOvCJjYJuSxWAM5KmMMAX0gkfq/E4A5xjDWOQUa7VaXm65Uqlg3DiORqN2LBaTAQr0pv1D7J28F9+cplR2wUyIwlJGXLVSY2q5/Xa73Wi1Wmd0rFYA0OaZcZsK9uTPS7H799XYVj93fkq/deqauL18XfiOi7mrAN/QWBrqPNR5vW3Xp2B+4xzV+0uNuWDkNLxcVqWhgKWTd2KR8SgmgWBcIvC0//Bp393mQuBkjNcQCc3rgKnSWGQoxymTUDyn5Jw3EguB/OMzrKmh8r+w+oe+JfNLVxYCZ8WA8UFDGx2ylVhPCrpmnZOlMc84x5gJGBmHgWq1aqCgj+PxuK2KWp3na5TGPv7mV+e3/E6bK1LZLBhqsIGePqvzCkKT34c/9dcibR2J6xPJs3+QvDDuJZNJh1sWruuWQN9xHEe2Ebf/v+a13o5t2yV526heBHAL6iyou8M2VFufV07qRyL3MXNHF6y636Cyj8K8i7EXGHuE3kzNu768nDp8C8r2pm5sn0q+7yPwOb4LaMkN+EUstOpBG4B9RMwBzrwEdyeV/xNgABRSSjYpvsv8AAAAAElFTkSuQmCC);
+}
+#sale_order_props {
+	position: relative;
+	display: block;
+	margin-bottom: 40px;
+}
+#sale_order_props .bx_block {
+	position: relative;
+	display: block;
+	width: 50%;
+	float: left;
+	line-height: 20px;
+	margin-bottom: 5px;
+	color: #7f8a92;
+}
+#sale_order_props .bx_block.r1x3 {
+	width: 20%;
+	margin-top: 28px;
+	white-space: nowrap;
+}
+#sale_order_props .bx_block.r3x1 {
+	width: 80%;
+	margin-top: 20px;
+}
+#sale_order_props .bx_block input.search-suggest {
+	margin-top: 0;
+}
+.bx_block textarea {
+	height: 80px;
+}
+.bx_element input[type=radio] {
+	display: none;
+}
+.bx_element label {
+	min-height: 92px;
+	height: auto;
+	margin-bottom: 20px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 160px;
+}
+.bx_element label .bx_logotype {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 160px;
+	min-height: 90px;
+}
+.bx_element label .bx_logotype span {
+	display: block;
+	height: auto;
+	width: 140px;
+	min-height: 90px;
+	background: none no-repeat scroll center center #FFFFFF;
+	border: 3px solid #ebebeb;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.bx_element label .bx_result_price a {
+	text-decoration: none;
+}
+.bx_element label .bx_result_price a:hover {
+	text-decoration: none;
+	border-bottom: 1px dashed transparent;
+}
+.bx_element input[type=radio]:checked + label .bx_logotype span {
+	border: 3px solid #34495e;
+}
+#ORDER_FORM .bx_ordercart_order_pay_center,#ORDER_FORM .bx_ordercart_order_pay {
+	border: 0px;
+	padding: 0px;
+}
+#ORDER_FORM .bx_ordercart_order_pay_center .checkout {
+	float: right;
+	font-weight: 900;
+}
+.bx_ordercart_order_table_container table{
+	position: relative;
+	width: 100%;
+	border-collapse: separate;
+	border-radius: 5px;
+	box-sizing:border-box;
+}
+.bx_ordercart_order_table_container td.margin{
+	padding: 0px;
+	margin: 0px;
+}
+.bx_ordercart_order_table_container thead{
+	border-top-left-radius: 5px;
+}
+.bx_ordercart_order_table_container thead td{
+	position: relative;
+	height: 54px;
+	background: #ecf0f1;
+	color: #7f8a92;
+	font-weight: bold; 
+	vertical-align: middle;
+	box-sizing:border-box;
+	padding-left: 15px;
+	border: 0px;
+	text-align: center;
+}
+.bx_ordercart_order_table_container thead td.item {
+	text-align: left;
+}
+.bx_ordercart_order_table_container table tbody tr td.itemphoto {
+	width: 135px;
+	max-width: 135px;
+}
+.bx_ordercart_order_table_container table tbody tr td.item {
+	width: 450px;
+	max-width: 450px;
+	text-align: left;
+}
+.order_hide_mobile_2, .order_hide_mobile_3 {
+	width: 100px;
+	min-width: 100px;
+}
+.bx_ordercart_order_table_container thead td:nth-child(2){
+	border-top-left-radius: 5px;
+}
+.bx_ordercart_order_table_container thead td:nth-child(6){
+	border-top-right-radius: 5px;
+}
+.bx_ordercart_order_table_container thead .price{
+	display: table-cell;
+	border-radius: 0px;
+}
+.bx_ordercart_order_table_container tbody td:nth-child(2){
+	border-left: 1px solid #ecf0f1;
+}
+.bx_ordercart_order_table_container tbody td:nth-child(7){
+	border-right: 1px solid #ecf0f1;
+}
+.bx_ordercart_order_table_container tbody td{
+	position: relative;
+	padding: 20px 0px 20px 15px;
+	box-sizing:border-box;
+	vertical-align: middle;
+	text-align: center;
+}
+.bx_ordercart .bx_ordercart_order_table_container  .bx_ordercart_photo_container{
+	position: relative;
+	padding: 0px;
+	border: 0px;
+	vertical-align: top;
+}
+.bx_ordercart_photo {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.bx_ordercart_order_table_container tbody tr td{
+	border-bottom: 1px solid #ecf0f1;
+}
+.bx_ordercart_order_table_container tbody tr:last-child td:nth-child(2){
+	border-bottom-left-radius: 5px;
+}
+.bx_ordercart_order_table_container tbody tr:last-child td:nth-child(7){
+	border-bottom-right-radius: 5px;
+}
+.bx_ordercart_order_table_container tbody{
+	font-size: 12px;
+	font-weight: lighter;
+	color: #7f8a92;
+}
+.bx_ordercart_order_table_container .custom span,.bx_ordercart_order_table_container .custom .some-class{
+	display: none;
+}
+.bx_ordercart_order_table_container tbody .price{
+	display: table-cell;
+	background: none;
+}
+.bx_ordercart_order_table_container tbody .current_price,.bx_ordercart_order_table_container tbody .old_price{
+	position: relative;
+	color: #7f8a92; 
+	font-weight: lighter;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+}
+.bx_ordercart_order_pay_right {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin: 15px 0px 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ecf0f1;
+}
+.bx_ordercart_order_sum {
+	position: relative;
+	float: right;
+	text-align: right;
+	margin-right: 5px;
+}
+.bx_ordercart_order_sum td{
+	padding-left: 10px;
+}
+.bx_ordercart_order_sum .fwb{
+	font-weight: bold;
+}
+.sale_order_full_table{
+	position: relative;
+	width: 100%;
+}
+.order-auth h4 {
+	position: relative;
+	font-weight: bold;
+    margin-bottom: 16px;
+    color: #7f8a92;
+}
+.order-auth img {
+	position: relative;
+	margin-bottom: 15px;
+}
+.bx_ordercart_order_table_container {
+	overflow: auto;
+}
+.bx_order_make {
+    color: #7f8a92;
+}
+.order-auth input {
+	margin: 5px 0 15px;
+}
+.bx_order_make .slide {
+	text-decoration: none;
+}
+.bx_order_make .slide:hover {
+	border-bottom: 1px dashed transparent;
+}
+.basket_price, .basket_old_price {
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 16px;
+	color: #7f8a92;
+	font-weight: normal;
+}
+.basket_old_price {
+	color: #CCCCCC;
+	text-decoration: line-through;
+}
+.basket_price .rub, .basket_old_price .rub {
+	font-size: 12px;
+	line-height: 4px;
+	padding-top: 6px;
+	border-bottom: 1px solid #7f8a92;
+	width: 0.4em;
+	vertical-align: top;
+	display: inline-block !important;
+	*display: inline;
+	*zoom: 1;
+}
+.basket_old_price .rub {
+	border-color: #CCCCCC;
+}
+.bx_ordercart_order_sum .rub {
+	border-bottom: 1px solid #7f8a92;
+	font-size: 14px;
+	line-height: 5px;
+	padding-top: 7px;
+}

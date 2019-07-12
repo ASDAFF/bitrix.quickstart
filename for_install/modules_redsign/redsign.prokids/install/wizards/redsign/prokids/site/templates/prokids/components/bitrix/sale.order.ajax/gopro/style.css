@@ -1,0 +1,186 @@
+/* orderauth */
+.order_form_div .someform .title{
+	margin-bottom:10px;
+}
+.order_form_div .ordertable{
+	float:left;
+	width:48%;
+}
+.order_form_div .ordertable.t1{
+	margin-right:4%;
+}
+
+/* person types */
+.someform.orderforma .persontypes{
+	margin-bottom:10px;
+}
+.someform.orderforma .persontypes .subtitle,
+.someform.orderforma .persontypes .label.left{
+	float:left;
+	margin-right:15px;
+}
+
+/* props */
+.someform.orderforma{
+	max-width:600px;
+}
+.someform.orderforma .subtitle{
+	width:100%;
+	font-weight:bold;
+}
+.someform.orderforma h4{
+	display:block;
+	padding:10px 25px;
+	font-weight:normal;
+	background-color:#F2F2F2;
+}
+.someform.orderforma .body{
+	padding:10px 25px;
+	border-right:1px solid #F2F2F2;
+	border-bottom:1px solid #F2F2F2;
+	border-left:1px solid #F2F2F2;
+}
+.someform.orderforma .body .line{
+	margin-top:10px;
+}
+.someform.orderforma .body .line.choseprofile{
+	width:100%;
+}
+.someform.orderforma .body .line.f_location .default{
+	margin-bottom:5px;
+}
+.someform.orderforma .body .line.f_location select{
+	margin-top:5px;
+}
+.someform.orderforma .body .line.f_checkbox label{
+	font-weight:bold;
+}
+.someform.orderforma .body .line .nm{
+	margin-bottom:5px;
+	font-weight:bold;
+}
+.someform.orderforma .body .line .vl{
+	position:relative;
+}
+.someform.orderforma .body .line .vl .description{
+	color:#666;
+}
+.someform.orderforma .body .line .vl .description .arrow{
+	display:none;
+}
+.someform.orderforma .body .line.f_text .vl .description,
+.someform.orderforma .body .line.f_textarea .vl .description{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:100%;
+	display:none;
+	z-index:100;
+}
+.someform.orderforma .body .line.f_text .vl .description .in,
+.someform.orderforma .body .line.f_textarea .vl .description .in{
+	width:100%;
+	margin-top:11px;
+	padding:5px 10px;
+	background-color:#fff;
+	border:1px solid #EE8131;
+}
+.someform.orderforma .body .line.f_text .vl .description .arrow,
+.someform.orderforma .body .line.f_textarea .vl .description .arrow{
+	position:absolute;
+	top:5px;
+	right:20%;
+	display:block;
+	width:14px;
+	height:7px;
+	background-position:0px -946px;
+}
+.someform.orderforma .separator{
+	float:left;
+	width:100%;
+}
+
+/* delivery & paysystem */
+.someform.orderforma .delivery,
+.someform.orderforma .delivery .item,
+.someform.orderforma .paysystem,
+.someform.orderforma .paysystem .item{
+	margin-bottom:15px;
+}
+.someform.orderforma .delivery .item .img,
+.someform.orderforma .paysystem .item .img{
+	margin-right:15px;
+	cursor:pointer;
+}
+.someform.orderforma .delivery .item .img span,
+.someform.orderforma .paysystem .item .img span{
+	display:block;
+	width:100px;
+	height:60px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.someform.orderforma .delivery .item .data .note,
+.someform.orderforma .paysystem .item .data .note{
+	color:#666;
+}
+.someform.orderforma .delivery .item .data strong,
+.someform.orderforma .paysystem .item .data strong{
+	cursor:pointer;
+}
+
+.someform.orderforma .orderbtn{
+	float:right;
+}
+
+/* summary */
+.someform.orderforma .summary .body{
+	width:100%;
+	overflow-x:auto;
+	overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+.someform.orderforma .summary .body .products{
+	width:100%;
+}
+.someform.orderforma .summary .body .products th,
+.someform.orderforma .summary .body .products td{
+	padding:5px 10px;
+	border:1px solid #F2F2F2;
+}
+.someform.orderforma .summary .body .products .img{
+	margin-right:15px;
+}
+.someform.orderforma .summary .body .products .img img{
+	min-width: 50px;
+	min-height: 50px;
+}
+.someform.orderforma .summary .body .products .img span{
+	display:block;
+	width:100px;
+	height:60px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.someform.orderforma .summary .body .order_pay .right{
+	float:right;
+}
+.someform.orderforma .summary .body .order_pay table{
+	margin-top:10px;
+}
+.someform.orderforma .summary .body .order_pay table th,
+.someform.orderforma .summary .body .order_pay table td{
+	padding:5px 10px;
+}
+.someform.orderforma .summary .body .order_pay table td.price{
+	font-size:16px;
+	font-weight:bold;
+}
+
+@media screen and (max-width:875px){
+	body.adaptive .order_form_div .ordertable{
+		width:100%;
+		margin-bottom:25px;
+	}
+}

@@ -1,0 +1,38 @@
+<style>
+.instal-bg{
+	-webkit-transition: all 1s ease !important;
+	-moz-transition: all 1s ease !important;
+	-o-transition: all 1s ease !important;
+	transition: all 1s ease !important;
+}
+#solution-preview-image {
+    height: auto !important;
+    width: auto !important;
+}
+.solution-inner-item{
+	border-top: 1px solid #e5e5e5 !important;
+	padding-top: 30px !important;
+	margin-top: 30px !important;
+}
+.solution-inner-item:first-child{
+	margin-top: 0 !important;
+}
+.solution-inner-item h4{
+	display: inline-block !important;
+	margin: 0 0 5px 8px !important;
+	vertical-align:top !important;
+}
+.solution-inner-item h4 + p{
+	margin: 0 0 0 30px !important;
+	font-size: 14px !important;
+}
+.instal-load-block .instal-load-label{
+	font-size: 14px !important;
+}
+.wizard-field{width:100% !important;}
+.inst-templ-color-name {
+    display: block !important;
+    font-size: 12px !important;
+    width: 106px !important;
+}
+</style>

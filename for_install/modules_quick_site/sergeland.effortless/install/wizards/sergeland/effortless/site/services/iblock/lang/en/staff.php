@@ -1,0 +1,41 @@
+<?
+$MESS["WZD_OPTION_STAFF_1"] = "Employee";
+$MESS["WZD_OPTION_STAFF_2"] = "Activity";
+$MESS["WZD_OPTION_STAFF_3"] = "Sort";
+$MESS["WZD_OPTION_STAFF_4"] = "Photo";
+$MESS["WZD_OPTION_STAFF_5"] = "*Name";
+$MESS["WZD_OPTION_STAFF_6"] = "*Character code";
+$MESS["WZD_OPTION_STAFF_7"] = "Position";
+$MESS["WZD_OPTION_STAFF_8"] = "Email";
+$MESS["WZD_OPTION_STAFF_9"] = "Phone number";
+$MESS["WZD_OPTION_STAFF_10"] = "Skype";
+$MESS["WZD_OPTION_STAFF_11"] = "Description";
+$MESS["WZD_OPTION_STAFF_12"] = "Customer Feedback";
+$MESS["WZD_OPTION_STAFF_13"] = "Round picture";
+$MESS["WZD_OPTION_STAFF_14"] = "Background reviews";
+$MESS["WZD_OPTION_STAFF_15"] = "Navigation";
+$MESS["WZD_OPTION_STAFF_16"] = "Feedback";
+$MESS["WZD_OPTION_STAFF_17"] = "Photo Gallery";
+$MESS["WZD_OPTION_STAFF_18"] = "Autoscroll";
+$MESS["WZD_OPTION_STAFF_19"] = "Photo";
+$MESS["WZD_OPTION_STAFF_20"] = "Description for photo";
+$MESS["WZD_OPTION_STAFF_21"] = "Link to photo";
+$MESS["WZD_OPTION_STAFF_22"] = "Form callback";
+$MESS["WZD_OPTION_STAFF_23"] = "Show form";
+$MESS["WZD_OPTION_STAFF_24"] = "Button Label";
+$MESS["WZD_OPTION_STAFF_25"] = "License";
+$MESS["WZD_OPTION_STAFF_26"] = "Title";
+$MESS["WZD_OPTION_STAFF_27"] = "License";
+$MESS["WZD_OPTION_STAFF_28"] = "Services";
+$MESS["WZD_OPTION_STAFF_29"] = "Title";
+$MESS["WZD_OPTION_STAFF_30"] = "Services";
+$MESS["WZD_OPTION_STAFF_31"] = "Articles";
+$MESS["WZD_OPTION_STAFF_32"] = "Title";
+$MESS["WZD_OPTION_STAFF_33"] = "Articles";
+$MESS["WZD_OPTION_STAFF_34"] = "Projects";
+$MESS["WZD_OPTION_STAFF_35"] = "Title";
+$MESS["WZD_OPTION_STAFF_36"] = "Projects";
+
+$MESS["WZD_OPTION_STAFF_301"] = "Service";
+$MESS["WZD_OPTION_STAFF_302"] = "External code (used when re-importing items)";
+?>

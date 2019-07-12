@@ -1,0 +1,4 @@
+<?
+$MESS["MLIFE_ASZ_FUNCTIONS_OT"] = "от";
+$MESS["MLIFE_ASZ_FUNCTIONS_DO"] = "до";
+?>

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Нормативные";
+$arDirProperties = Array(
+
+);
+?>

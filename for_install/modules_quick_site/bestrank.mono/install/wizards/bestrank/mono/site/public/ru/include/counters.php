@@ -1,0 +1,2 @@
+<img src="/bitrix/templates/#TEMPLATE_NAME#/images/counter_r.png" border="0" width="88" height="31"  />
+<img src="/bitrix/templates/#TEMPLATE_NAME#/images/counter_y.png" border="0" width="88" height="31"  />

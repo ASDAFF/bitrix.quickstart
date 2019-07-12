@@ -1,0 +1,28 @@
+.rsfavorite{
+	text-align:left;
+}
+.rsfavorite a,
+.rsfavorite a:hover{
+	display:block;
+	color:#000;
+	text-decoration:none;
+}
+.rsfavorite a .title{
+	font-size:14px;
+}
+.rsfavorite a:hover .title{
+	text-decoration:underline;
+}
+.rsfavorite .icon{
+	display:block;
+	float:left;
+	width:23px;
+	height:26px;
+	margin-top:6px;
+	margin-right:10px;
+	background-position:0px -438px;
+}
+.rsfavorite .title,
+.rsfavorite .descr{
+	margin-left:33px;
+}

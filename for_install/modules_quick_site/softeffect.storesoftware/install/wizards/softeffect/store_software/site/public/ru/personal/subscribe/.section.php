@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Подписка";
+$arDirProperties = array(
+
+);
+?>

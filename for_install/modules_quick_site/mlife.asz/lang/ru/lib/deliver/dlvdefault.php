@@ -1,0 +1,1 @@
+<?$MESS["MLIFE_ASZ_DLVDEFAULT_LOGO"] = "Логотип";$MESS["MLIFE_ASZ_DLVDEFAULT_SUMM"] = "Сумма заказа";$MESS["MLIFE_ASZ_DLVDEFAULT_TAX"] = "Наценка %";$MESS["MLIFE_ASZ_DLVDEFAULT_COST"] = "Стоимость в базовой валюте";$MESS["MLIFE_ASZ_PAYDEFAULT_LOCATION"] = "Местоположение";$MESS["MLIFE_ASZ_PAYDEFAULT_LOCATION_DEF"] = "Все местоположения";?>

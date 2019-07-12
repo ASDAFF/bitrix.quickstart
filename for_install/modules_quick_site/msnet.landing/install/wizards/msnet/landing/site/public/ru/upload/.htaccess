@@ -1,0 +1,9 @@
+<IfModule mod_mime.c>
+	<Files ~ \.(php|php3|php4|php5|php6|phtml|pl|asp|aspx|cgi|dll|exe|shtm|shtml|fcg|fcgi|fpl|asmx|pht|py|psp|rb|var)>
+		SetHandler text/plain
+		ForceType text/plain
+	</Files>
+</IfModule>
+<IfModule mod_php5.c>
+	php_flag engine off
+</IfModule>

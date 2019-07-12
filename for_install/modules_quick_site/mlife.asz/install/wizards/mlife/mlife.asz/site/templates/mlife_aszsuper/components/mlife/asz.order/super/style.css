@@ -1,0 +1,53 @@
+.orderDetail {width:100%;display:block;clear:both;overflow:hidden;padding:10px 0;}
+.orderDetail .wrapBlockOrder {width:100%;clear:both;overflow:hidden;padding-bottom:10px;}
+.orderDetail .wrapBlockOrder h3 {width:100%;clear:both;display:block;padding:5px 0;text-transform:uppercase;color:#0e4b7c;font-size:16px;font-weight:bold;}
+.orderDetail .wrapBlockOrder .rowZakaz {display:block;width:100%;clear:both;overflow:hidden;text-align:left;padding:5px 0;font-size:14px;
+border-bottom:1px dotted #cccccc;color:#000000;
+}
+.orderDetail .wrapBlockOrder .rowZakaz .left {width:25%;display:block;float:left;font-weight:bold;}
+.orderDetail .wrapBlockOrder .rowZakaz .right{width:70%;display:block;float:right;}
+
+.orderDetail .wrapBlockOrder .productWrap {width:100%;margin-top:5px;border-spacing:0;border-top:1px solid #0e4b7c;border-left:1px solid #0e4b7c;}
+.orderDetail .wrapBlockOrder .productWrap th, .orderDetail .wrapBlockOrder .productWrap td {padding:3px;border-bottom:1px solid #0e4b7c;border-right:1px solid #0e4b7c;}
+.orderDetail .wrapBlockOrder .productWrap th {border-right:1px solid #ffffff;font-size:14px;font-weight:bold;color:#ffffff;
+background: #0e4b7c;}
+.orderDetail .wrapBlockOrder .productWrap th.finprice {border-right:1px solid #0e4b7c;}
+.orderDetail .wrapBlockOrder .productWrap td {font-size:12px;line-height:14px;color:#000000;vertical-align:top;}
+
+.orderDetail .wrapBlockOrder .itogWrap {width:50%;margin-top:5px;border-spacing:0;float:right;}
+.orderDetail .wrapBlockOrder .itogWrap td {padding:5px;border-bottom:1px dotted #cccccc;font-size:12px;color:#000000;vertical-align:top;}
+.orderDetail .wrapBlockOrder .itogWrap td.left {font-weight:bold;width:250px;text-align:right;}
+.orderDetail .wrapBlockOrder .itogWrap td.right {text-align:left;}
+
+.orderDetailerror {display:block;font-size:14px;width;100%;overflow:hidden;display:block;margin-top:10px;color:red;}
+
+.formAutZakaz {display:block;width:100%;clear:both;overflow:hidden;padding:10px 0;}
+.formAutZakaz .field {display:block;width:100%;clear:both;overflow:hidden;padding:5px 0;}
+.formAutZakaz .field label {display:block;width:150px;float:left;overflow:hidden;line-height:22px;font-size:14px;color:#000000;font-weight:bold;}
+.formAutZakaz .field input {font-size:14px;color:#000000;padding:3px;border-radius:3px;border:none;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+width:220px;
+}
+.formAutZakaz .button {display:block;width:100%;clear:both;overflow:hidden;padding:5px 0;}
+.formAutZakaz .button input {display:block;width:145px;text-align:center;color:#ffffff;background:#0e4b7c;text-decoration:none;padding:4px 0;border-radius:3px;
+font-size:12px;text-transform:uppercase;margin:auto;float:left;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #2d7eb7 0%, #0e4b7c 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d7eb7), color-stop(100%,#0e4b7c));
+background: -webkit-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -o-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -ms-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: linear-gradient(to bottom, #2d7eb7 0%,#0e4b7c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7eb7', endColorstr='#0e4b7c',GradientType=0 );
+border:none;
+}
+.formAutZakaz .button input:hover {cursor:pointer;background: #2d7eb7;
+background: -moz-linear-gradient(top, #0e4b7c 0%, #2d7eb7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4b7c), color-stop(100%,#2d7eb7));
+background: -webkit-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -o-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -ms-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: linear-gradient(to bottom, #0e4b7c 0%,#2d7eb7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4b7c', endColorstr='#2d7eb7',GradientType=0 );}

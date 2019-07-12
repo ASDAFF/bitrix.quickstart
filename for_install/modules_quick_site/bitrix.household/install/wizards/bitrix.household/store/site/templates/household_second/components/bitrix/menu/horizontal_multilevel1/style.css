@@ -1,0 +1,208 @@
+/**Top menu**/
+#horizontal-multilevel, #horizontal-multilevel ul
+{
+	margin:0; padding:0;
+	background:url(images/bg_menu_right.jpg) no-repeat;
+        background-position:right center;
+	list-style:none;
+	font-size:12px;
+	font-weight: bold;
+	float:left;
+	font-family:Arial;
+	height:46px;
+	width: 100%;
+}
+
+#horizontal-multilevel
+{
+	padding-left:15px;
+}
+
+/*Links*/
+#horizontal-multilevel a
+{
+	display:block;
+	padding:7px 15px;
+	color:#404040;
+	text-decoration:none;
+	position:relative;
+	float:left;
+}
+
+#horizontal-multilevel li 
+{
+	text-align:center;
+	/*background:url(images/menu_separator.gif) right center no-repeat;*/
+        border-right:1px solid #a0a0a0;
+        border-collapse: collapse;
+	float:left;	
+        width:16%;
+}
+
+/*Root items*/
+#horizontal-multilevel li a.root-item
+{
+	display:block;
+	padding:5px 10px;
+	color:#404040;
+	text-decoration:none;
+	position:relative;
+	float:left;
+        height: 35px;
+        width:88%;
+        text-align: center;
+border-bottom:1px solid #a0a0a0;
+border-collapse: collapse;
+}
+
+/*Root menu selected*/
+#horizontal-multilevel li a.root-item-selected
+{
+	background:#D6D6D6;
+	color:#fff;
+	height: 30px;
+    margin-top: 1px;
+    width:83%;
+
+}
+/*Root items: hover*/
+#horizontal-multilevel li:hover a.root-item, #horizontal-multilevel li.jshover a.root-item
+{
+	background:#D6D6D6;
+	color:#fff;
+	border-collapse: collapse;
+        border-left:1px solid #a0a0a0;
+        border-top:1px solid #a0a0a0;
+}
+
+/*Item-parents*/
+#horizontal-multilevel a.parent
+{
+	background: url(images/arrow.gif) center right no-repeat;
+}
+
+/*Denied items*/
+#horizontal-multilevel a.denied
+{
+	background: url(images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+#horizontal-multilevel li:hover, #horizontal-multilevel li.jshover
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Child-items selected*/
+#horizontal-multilevel li.item-selected
+{
+	background:#D6D6D6;
+	color:#fff;
+}
+
+/*Sub-menu box*/
+#horizontal-multilevel li ul
+{
+	position:absolute;
+	/*top:-999em;*/
+	top:auto;
+	display:none;
+	z-index:500;
+
+	height:auto;
+	/*width:12em;*/
+	width:178px;
+	background:#F5F5F5;
+	border:1px solid #C1C1C1;
+	margin-top: 46px;
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel li li 
+{
+	width:100%;
+	border-bottom:1px solid #DEDEDE;
+}
+
+/*Item link*/
+#horizontal-multilevel li ul a
+{
+	text-align:left;
+}
+
+/*Items text color & size */
+#horizontal-multilevel li a,
+#horizontal-multilevel li:hover li a,
+#horizontal-multilevel li.jshover li a,
+#horizontal-multilevel li:hover li:hover li a,
+#horizontal-multilevel li.jshover li.jshover li a,
+#horizontal-multilevel li:hover li:hover li:hover li a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel li:hover li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li.jshover li.jshover li a
+{
+	color:#4F4F4F;
+}
+
+/*Items text color & size: hover*/
+#horizontal-multilevel li:hover li:hover a,
+#horizontal-multilevel li.jshover li.jshover a,
+#horizontal-multilevel li:hover li:hover li:hover a,
+#horizontal-multilevel li.jshover li.jshover li.jshover a,
+#horizontal-multilevel li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel li:hover li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a
+{
+	color:#4F4F4F;
+}
+
+#horizontal-multilevel li ul ul
+{
+	margin:0 0 0 170px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+#horizontal-multilevel li ul ul.left_menu
+{
+	margin:0 0 0 -170px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+
+#horizontal-multilevel li:hover ul ul,
+#horizontal-multilevel li.jshover ul ul,
+#horizontal-multilevel li:hover ul ul ul,
+#horizontal-multilevel li.jshover ul ul ul,
+#horizontal-multilevel li:hover ul ul ul ul,
+#horizontal-multilevel li.jshover ul ul ul ul,
+#horizontal-multilevel li:hover ul ul ul ul ul,
+#horizontal-multilevel li.jshover ul ul ul ul ul
+{
+	/*top:-999em;*/
+	display:none;
+}
+
+#horizontal-multilevel li:hover ul,
+#horizontal-multilevel li.jshover ul,
+#horizontal-multilevel li li:hover ul,
+#horizontal-multilevel li li.jshover ul,
+#horizontal-multilevel li li li:hover ul,
+#horizontal-multilevel li li li.jshover ul,
+#horizontal-multilevel li li li li:hover ul,
+#horizontal-multilevel li li li li.jshover ul,
+#horizontal-multilevel li li li li li:hover ul,
+#horizontal-multilevel li li li li li.jshover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}

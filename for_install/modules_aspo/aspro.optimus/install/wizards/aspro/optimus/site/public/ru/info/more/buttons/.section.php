@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Кнопки";
+$arDirProperties = Array(
+
+);
+?>

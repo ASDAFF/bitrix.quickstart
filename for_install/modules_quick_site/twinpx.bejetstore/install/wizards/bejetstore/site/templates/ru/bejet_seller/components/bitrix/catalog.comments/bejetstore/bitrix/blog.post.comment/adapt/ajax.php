@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/templates/bejetstore_purple_white/components/bitrix/catalog.comments/bejetstore/ajax.php"); ?>

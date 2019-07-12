@@ -1,0 +1,1 @@
+<?$MESS["WZD_OPTION_DOP_1"] = "Услуга";$MESS["WZD_OPTION_DOP_2"] = "Активность";$MESS["WZD_OPTION_DOP_3"] = "Название";$MESS["WZD_OPTION_DOP_4"] = "Символьный код";$MESS["WZD_OPTION_DOP_5"] = "Стоимость";$MESS["WZD_OPTION_DOP_6"] = "Сортировка";?>

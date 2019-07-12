@@ -1,0 +1,7 @@
+<?
+$MESS["SERGELAND_BASKET_SMALL_ORDER"] = "Оформить заказ";
+$MESS["SERGELAND_BASKET_SMALL_EDIT_BASKET"] = "Редактировать корзину";
+$MESS["SERGELAND_BASKET_SMALL_QUANTITY"] = "шт.";
+$MESS["SERGELAND_BASKET_SMALL_ITOGO"] = "Итого";
+$MESS["SERGELAND_BASKET_SMALL_EMPTY_BASKET"] = "Вы еще ничего не выбрали.";
+?>

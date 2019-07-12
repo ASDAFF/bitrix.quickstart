@@ -1,0 +1,22 @@
+.client-list{
+	padding: 20px 0px;
+	background: #FFF;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top:10px;
+	width:1000px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.client-logo{
+	height:75px;
+	width:150px;
+	display:inline-block;
+	overflow:hidden;
+	margin: 0 5px;
+}
+.client-logo img{
+	display:block;
+	margin:0 auto;
+}

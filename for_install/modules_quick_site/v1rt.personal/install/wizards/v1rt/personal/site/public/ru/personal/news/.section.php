@@ -1,0 +1,6 @@
+<?
+$sSectionName = "События";
+$arDirProperties = Array(
+
+);
+?>

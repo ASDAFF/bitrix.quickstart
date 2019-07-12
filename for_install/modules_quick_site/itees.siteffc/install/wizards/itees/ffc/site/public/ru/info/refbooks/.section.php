@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Справочники";
+$arDirProperties = Array(
+
+);
+?>

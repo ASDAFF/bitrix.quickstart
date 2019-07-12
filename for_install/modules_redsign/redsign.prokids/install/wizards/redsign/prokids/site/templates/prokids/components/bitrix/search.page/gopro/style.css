@@ -1,0 +1,78 @@
+.search_page .form_search .q{
+	margin-right:10px;
+}
+.search_page .form_search .btn.btn1{
+	padding:11px 14px;
+}
+
+.spage{
+	margin-top:20px;
+}
+.spage .iblock .title{
+	margin-bottom:10px;
+	font-weight:bold;
+}
+.spage .iblock{
+	margin-bottom:25px;
+	border-bottom:1px solid #F2F2F2;
+}
+
+.spage .iblock .sitem{
+	margin-bottom:25px;
+}
+.spage .iblock .sitem.catitem{
+	display:block;
+	width:100%;
+}
+.spage .iblock .sitem.catitem .pic{
+	display:block;
+	width:15%;
+	float:left;
+	padding:0 20px 20px 0;
+	text-align:center;
+}
+.spage .iblock .sitem.catitem .telo{
+	width:85%;
+	float:left;
+}
+.spage .iblock .sitem .name,
+.spage .iblock .sitem .description,
+.spage .iblock .sitem .price,
+.spage .iblock .sitem div.chain{
+	margin-bottom:5px;
+}
+.spage .iblock .sitem.catitem .telo .price{
+	font-size:18px;
+}
+.spage .iblock .sitem.catitem .telo .chain{
+	margin-left:30px;
+}
+.spage .iblock .sitem .chain .icon{
+	width:7px;
+	height:14px;
+	margin:0px 8px 3px 8px;
+	/*background-position:0px -545px;*/
+	background-position:-21px -545px;
+}
+
+
+@media screen and (max-width:875px){
+	body.adaptive .spage .iblock .sitem .name .nm{
+		display:block;
+		margin-bottom:5px;
+	}
+	body.adaptive .spage .iblock .sitem.catitem .telo .chain{
+		margin-left:0px;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .search_page .form_search .q{
+		margin-right:0px;
+		margin-bottom:15px;
+	}
+	body.adaptive .search_page .form_search .q,
+	body.adaptive .search_page .form_search .btn.btn1{
+		width:100%;
+		padding:5px 14px;
+	}
+}

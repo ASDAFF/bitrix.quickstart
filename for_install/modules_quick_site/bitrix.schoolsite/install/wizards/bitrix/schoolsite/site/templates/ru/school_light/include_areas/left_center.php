@@ -1,0 +1,1 @@
+<img src="<?=SITE_DIR?>files/b2.jpg">

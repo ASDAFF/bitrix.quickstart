@@ -1,0 +1,5 @@
+<?
+$MESS["TEMPLATES_TYPE_NAME"] = "Template";
+$MESS["TEMPLATES_ELEMENT_NAME"] = "Elements";
+$MESS["TEMPLATES_SECTION_NAME"] = "Sections";
+?>

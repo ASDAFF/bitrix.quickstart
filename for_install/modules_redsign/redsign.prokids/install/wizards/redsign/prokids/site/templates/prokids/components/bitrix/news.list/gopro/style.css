@@ -1,0 +1,57 @@
+.iblocklist{
+	line-height:18px;
+}
+.iblocklist .item{
+	width:100%;
+	margin-bottom:25px;
+}
+.iblocklist .item .pic,
+.iblocklist .item .info{
+	float:left;
+}
+.iblocklist .item .pic{
+	width:20%;
+	min-width:90px;
+	padding:0px 20px 10px 0px;
+}
+.iblocklist .item .info{
+	width:80%;
+	text-align:justify;
+}
+.iblocklist .item.noimage .info{
+	width: 100%;
+}
+.iblocklist .item .name{
+	margin-bottom:5px;
+}
+.iblocklist .item .more{
+	margin-top:20px;
+	text-align:right;
+}
+.iblocklist .item .more a .icon{
+	width:7px;
+	height:14px;
+	margin-left:5px;
+	margin-bottom:3px;
+	background-position:0px -545px;
+}
+.iblocklist .item .more a:hover .icon{
+	background-position:-21px -545px;
+}
+
+@media screen and (max-width:480px){
+	body.adaptive .iblocklist .item.line{
+		padding-top:10px;
+		border-top:1px solid #F2F2F2;
+	}
+	body.adaptive .iblocklist .item .pic,
+	body.adaptive .iblocklist .item .info{
+		width:100%;
+	}
+	body.adaptive .iblocklist .item .pic{
+		text-align:center;
+	}
+	body.adaptive .iblocklist .item .more{
+		margin-top:5px;
+	}
+}

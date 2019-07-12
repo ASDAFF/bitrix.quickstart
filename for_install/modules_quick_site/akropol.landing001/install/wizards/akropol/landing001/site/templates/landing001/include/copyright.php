@@ -1,0 +1,1 @@
+<p class="copyright text-muted small"><a href="http://akropol-st.ru/" target="_blank"><?=GetMessage("TEMPLATE_TEXT")?></a> <img src="<?=SITE_TEMPLATE_PATH?>/img/copilogo.png"></p>

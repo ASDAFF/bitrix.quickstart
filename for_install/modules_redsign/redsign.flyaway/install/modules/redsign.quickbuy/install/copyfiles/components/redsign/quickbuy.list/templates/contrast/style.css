@@ -1,0 +1,424 @@
+﻿@font-face {
+	font-family: "Ruble";
+	src: url("fonts/PTS55F.ttf");
+}
+
+@font-face {
+	font-family: "ArialN";
+	src: url("fonts/ARIALN.TTF");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div {
+	display: block;
+}
+
+span.rub {
+	text-transform: uppercase;
+	font-family: Ruble;
+	font-weight: 300;
+}
+
+.daysarticle.contrast_wrap.view1 {
+	margin: 20px; /*временно*/
+	width: 460px;
+	height: 287px;
+	border: 1px solid #52535d;
+	font-family: Ubuntu;
+}
+
+.daysarticle.contrast_wrap.view2 {
+	margin: 20px; /*временно*/
+	width: 221px;
+	height: 374px;
+	border: 1px solid #52535d;
+	font-family: Ubuntu;
+}
+
+.daysarticle.contrast_wrap.view3 {
+	margin: 20px; /*временно*/
+	width: 700px;
+	height: 287px;
+	border: 1px solid #52535d;
+	font-family: Ubuntu;
+}
+
+.daysarticle.contrast_wrap.view3 .right_part {
+	float: right;
+	width: 280px;
+}
+
+.daysarticle.contrast_wrap.view3 .img_wrap {
+	width: 320px;
+	height: 210px;
+	display: block;
+}
+
+.daysarticle.contrast_wrap.view3 .img_wrap img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.daysarticle.contrast_wrap .main_title {
+	font-family: ArialN;
+	font-size: 30px;
+	color: #f17763;
+	padding-left: 15px;
+}
+
+.daysarticle.contrast_wrap h4 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 15px;
+	margin-top: 18px;
+}
+
+.daysarticle.contrast_wrap.view1 .top_info,
+.daysarticle.contrast_wrap.view3 .top_info {
+	height: 217px;
+}
+
+/*.daysarticle.contrast_wrap.view1 .top_info .left_part .discount_price, 
+.daysarticle.contrast_wrap.view1 .top_info .left_part .price,
+.daysarticle.contrast_wrap.view3 .top_info .left_part .discount_price, 
+.daysarticle.contrast_wrap.view3 .top_info .left_part .priceview3 {
+	color: #555;
+}*/
+
+.daysarticle.contrast_wrap .discount_price {
+	text-decoration: line-through;
+	margin-top: 60px;
+	font-size: 16px;
+	font-family: "Arial";
+	padding-left: 15px;
+}
+
+.daysarticle.contrast_wrap .discount_price {
+	text-decoration: line-through;
+	margin-top: 23px;
+	font-size: 16px;
+	font-family: "Arial";
+	padding-left: 15px;	
+	color: #000;
+}
+
+.daysarticle.contrast_wrap .price {
+	font-size: 34px;
+	font-family: "Arial";
+	padding-left: 15px;
+}
+
+.daysarticle.contrast_wrap .discount {
+	background-color: #f17763;
+	color: white;
+	height: 12px;
+	min-width: 123px;
+	padding: 6px 17px;
+	line-height: 11px;
+	margin-left: -1px;
+	font-family: "Arial";
+	font-weight: bold;
+	float: left;
+}
+
+.daysarticle.contrast_wrap .discount .rub {
+	font-size: 16px !important;
+	font-weight: bold;
+}
+
+.daysarticle.contrast_wrap .discount .triangle {
+	/*border: 12px solid transparent;	
+	border-left: 12px solid #f17763;*/
+	float: right;
+	position: relative;
+	left: 29px;
+	bottom: 6px;
+	width: 0px;
+	height: 0px;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 12px solid #f17763;
+}
+
+.daysarticle.contrast_wrap .discount span {
+	font-size: 12px;	
+	font-weight: normal;
+}
+
+.daysarticle.contrast_wrap.view3 .left_part {
+	width: 400px;
+	float: left;
+	height: 200px;
+}
+
+.daysarticle.contrast_wrap.view1 .left_part {
+	width: 270px;
+	float: left;
+}
+
+.daysarticle.contrast_wrap a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.daysarticle.contrast_wrap .right_part {
+	text-align: center;
+	padding: 5px;
+}
+
+.daysarticle.contrast_wrap .bottom_info {
+	width: 100%;
+	height: 70px;
+	background-color: #313137;
+}
+
+.daysarticle.contrast_wrap .bottom_info {
+	color: #c6c6c6;
+	font-family: ArialN;
+	font-size: 16px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits{
+	float: left;
+	font-family: ArialN;
+	font-size: 30px;
+	color: #f17763;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .digit {
+	float: left;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .digit.progress {
+	border: none;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .time {
+	float: left;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .percentage {
+	float: right;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .separator {
+	height: 21px;
+	width: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
+	float: left;
+	margin: 5px;
+	margin-top: 14px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .digits .percentage .separator {
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .title_part {
+	height: 22px;
+	background-color: #52535d;
+	margin-left: -1px;
+}
+
+.daysarticle.contrast_wrap.view3 .bottom_info .title_part {
+	width: 702px;
+}
+
+.daysarticle.contrast_wrap.view1 .bottom_info .title_part {
+	width: 462px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .title_part {
+	width: 188px;
+	margin-top: 10px;
+	padding-left: 35px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .time_wrap {
+	height: 48px;
+	line-height: 48px;
+	padding-left: 60px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .time_wrap span {
+	float: left;
+	margin-right: 20px;
+	padding-top: 4px;
+}
+
+.daysarticle.contrast_wrap .bottom_info .title_part span {
+	font-size: 11px;
+	font-family: "Arial";
+	color: #fff;
+	line-height: 22px;
+	margin-right: 10px;
+	margin-left: 9px;
+	width: 20px;
+	display: block;
+	float: left;
+}
+
+.daysarticle.contrast_wrap .bottom_info .title_part span.percent {
+	margin-left: 23px;
+	font-size: 16px;
+}
+
+.daysarticle.contrast_wrap.view3 .bottom_info .time_wrap {
+	padding-left: 62px;
+}
+
+
+.daysarticle.contrast_wrap.view3 .left_part:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+.daysarticle.contrast_wrap.view2 h4 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 13px;
+}
+
+.daysarticle.contrast_wrap.view2 .img_wrap {
+	width: 100%;
+	text-align: center;
+	padding-top: 8px;
+	min-height: 205px;
+}
+
+
+
+.daysarticle.contrast_wrap.view2 .discount_price {
+	margin-top: -62px;
+}
+
+.daysarticle.contrast_wrap.view2 .price_wrap {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 70px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info span {
+	width: 222px;
+	text-align: center;
+	height: 15px;
+	float: left;
+	line-height: 15px;
+	/*margin-top: -6px;*/
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info {
+	height: 80px;
+	margin-top: 10px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .time_wrap {
+	width: 222px;
+	padding: 0px;
+	line-height: 36px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .digits .separator {
+	margin-top: 9px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .digits {
+	padding-left: 39px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .title_part span {
+	width: auto;
+	margin-top: 0px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .title_part span.percent {
+	margin-left: 30px;
+}
+
+.daysarticle.contrast_wrap.view3 .main_title {
+	padding-top: 20px;
+	display: block;
+}
+
+.daysarticle.contrast_wrap.view3 .discount {
+	background-color: #fe8501;
+}
+
+.daysarticle.contrast_wrap.view3 .discount .triangle {
+	border-left: 12px solid #fe8501;
+}
+
+.daysarticle.contrast_wrap.view3 .main_title,
+.daysarticle.contrast_wrap.view3 .bottom_info .digits {
+	color: #fe8501;
+}
+
+.daysarticle.contrast_wrap.view1 .discount {
+	background-color: #61bceb;
+}
+
+.daysarticle.contrast_wrap.view1 .discount .triangle {
+	border-left: 12px solid #61bceb;
+}
+
+.daysarticle.contrast_wrap.view1 .main_title,
+.daysarticle.contrast_wrap.view1 .bottom_info .digits {
+	color: #61bceb;
+}
+
+.daysarticle.contrast_wrap.view2 .bottom_info .title_part span {
+	min-width: 23px;
+}
+
+.daysarticle.contrast_wrap  span.quantity {
+	width: auto;
+	margin-left: 14px !important;
+}

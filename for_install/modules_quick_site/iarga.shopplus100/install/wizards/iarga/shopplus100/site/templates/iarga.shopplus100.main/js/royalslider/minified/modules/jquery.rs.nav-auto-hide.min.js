@@ -1,0 +1,2 @@
+// jquery.rs.nav-auto-hide v1.0
+(function(b){b.extend(b.rsProto,{_s4:function(){var a=this;if(a.st.navAutoHide&&!a.hasTouch)a.ev.one("rsAfterInit",function(){if(a._t4){a._t4.addClass("rsHidden");var b=a.slider;b.one("mousemove.controlnav",function(){a._t4.removeClass("rsHidden")});b.hover(function(){a._t4.removeClass("rsHidden")},function(){a._t4.addClass("rsHidden")})}})}});b.rsModules.autoHideNav=b.rsProto._s4})(jQuery);

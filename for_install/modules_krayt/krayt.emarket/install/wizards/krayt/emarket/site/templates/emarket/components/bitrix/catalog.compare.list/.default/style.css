@@ -1,0 +1,82 @@
+#emarket-compare-list{
+    width: 105px;
+height: 60px;
+}
+.emarket-compare-list {
+	float: left;
+font-size: 14px;
+max-width: 50px;
+padding: 3px 28px 46px;
+position: absolute;
+z-index: 990;
+}
+.emarket-compare-list  a{
+	display: inline-block;
+	margin-bottom: -5px;
+	width: 34px;
+	height: 32px;
+	background-position: 0px 0px !important;
+}
+/*
+.emarket-compare-list  a:hover{
+	background-position: 0px -34px !important;
+}*/
+.emarket-compare-list  a.deactivated:hover{
+	background-position: 0px 0px !important;
+}
+.emarket-compare-list .list-compare-hide{
+    display: none;
+}
+.emarket-compare-list:hover .list-compare-hide{
+    display: block;
+    margin-left: -165px;
+    top: 56px;
+    z-index: 1000;
+}
+.list-compare-hide ul{
+    margin: 0;
+    padding: 0;
+}
+.list-compare-hide ul li{
+    border-bottom: 1px solid #94bfdc ;   
+    padding: 3px;
+}
+.list-compare-hide ul li div{
+    display: inline-block;
+    vertical-align: top;
+}
+.list-compare-hide ul li div.compare-prod-name{
+    width: 76%;
+}
+.list-compare-hide ul li a{
+     font-size: 13px;
+    height: auto;
+    line-height: 20px;
+    text-decoration: none;
+    width: 100%;
+    color: #3f3f3f;
+    padding: 10px 0;
+}
+.list-compare-hide ul li a:hover{
+     color:#1763a6;
+}
+.list-compare-hide ul li.btn-item{
+    text-align: center;
+    background-color: #dceaf3;
+    padding: 15px 0;
+}
+.link-compare{
+    color: #fff !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    width: 270px !important;
+    padding: 5px 0 !important;
+    line-height: 20px !important;
+}
+.link-compare:active{
+    padding: 5px 0 !important;
+    line-height: 20px !important;
+}
+.link-compare.disabled{
+    color: #000 !important;
+}

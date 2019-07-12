@@ -1,0 +1,54 @@
+div.star-active
+{
+	cursor: pointer;
+}
+
+div.star-empty
+{
+	background-image: url(images/star_hole.png);
+	width:12px;
+	height:11px;
+	overflow:hidden;
+}
+
+div.star-voted
+{
+	background-image: url(images/star.png);
+	width:12px;
+	height:11px;
+	overflow:hidden;
+}
+
+div.star-over
+{
+	background-image: url(images/star.png);
+	width:12px;
+	height:11px;
+	overflow:hidden;
+}
+
+table.aj_star
+{
+    border: 0px !important;
+    border-collapse: collapse;
+	width: auto;
+    margin-left: 7px;
+	margin-right: 10px;
+}
+
+table.aj_star td
+{
+    border: 0px !important;
+	padding: 0 1px !important;
+	margin: 0 1px !important;
+}
+
+table.aj_star td.vote_result
+{
+    background-color:#127839;
+    color: #FFFFFF;
+	font-weight: bold;
+    margin: 0 12px 0 0;
+    padding: 0 3px;
+	font-size: 11px;
+}

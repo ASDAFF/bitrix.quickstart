@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2015-05-19T09:49:34">
+	<Классификатор>
+		<Ид>3d_design_redsign_monopoly</Ид>
+		<Наименование>3D-дизайн</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>3d_design_redsign_monopoly</Ид>
+		<ИдКлассификатора>3d_design_redsign_monopoly</ИдКлассификатора>
+		<Наименование>3D-дизайн</Наименование>
+		<БитриксКод>3d_design_redsign_monopoly</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/services/3d-design/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/services/3d-design/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/services/3d-design/</БитриксURLРаздел>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>92</Ид>
+				<Наименование>Дизайн кухни</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>3d_design_files/iblock/ca8/ca8763262a79d98b8403ddc08366e643.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>dizayn-kukhni</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. Sed quis eleifend tortor. Proin quis ornare magna. Aliquam erat volutpat. Mauris ultrices sapien in neque pulvinar ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eu urna laoreet leo vestibulum ultrices. Nam in sapien ac erat facilisis laoreet. Cras nec magna faucibus, mattis odio at, efficitur tortor.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. Sed quis eleifend tortor. Proin quis ornare magna. Aliquam erat volutpat. Mauris ultrices sapien in neque pulvinar ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eu urna laoreet leo vestibulum ultrices. Nam in sapien ac erat facilisis laoreet. Cras nec magna faucibus, mattis odio at, efficitur tortor.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Nam in sapien ac erat facilisis laoreet&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Nunc ut tristique velit, ut fringilla nisi&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Mauris ultrices sapien in neque pulvinar ultricies&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ &lt;br&gt;
+ Proin mauris nunc, ullamcorper eu congue id, viverra a nibh. Curabitur viverra volutpat urna eu condimentum. Integer ac felis id diam maximus pharetra et id erat. Ut vel tellus metus. Morbi id arcu leo. Vivamus iaculis, sem sed sodales tristique, lectus turpis ornare nisi, a mattis arcu lorem non ipsum. Etiam non nibh eget augue ultrices commodo. Aenean elementum urna nec velit rutrum, vel sollicitudin est tristique. Pellentesque sit amet scelerisque augue, vitae dictum lorem. Morbi imperdiet tellus mollis nibh pretium elementum. Fusce porta, ligula at semper rutrum, libero augue placerat felis, ut sollicitudin justo sapien id enim. Phasellus placerat pharetra suscipit. Praesent eleifend eget est ultrices placerat. In volutpat ornare ipsum in pretium. In quis purus mauris. Maecenas scelerisque eu ligula et auctor.&lt;br&gt;
+ &lt;br&gt;
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pharetra diam eros, sed pellentesque arcu auctor vel. Vestibulum pellentesque est quis consequat rutrum. Proin eleifend ultricies tortor id accumsan. Morbi massa risus, scelerisque at euismod vel, malesuada sed lectus. Maecenas eget metus ullamcorper, finibus risus ut, convallis mi. Nunc ipsum justo, aliquet eget dapibus et, iaculis nec tellus. Morbi quis justo maximus, elementum mi nec, vulputate nisi. Aliquam nec lobortis lectus. Mauris enim dolor, interdum eget rutrum id, mattis at elit.&lt;br&gt;
+ &lt;br&gt;
+ Morbi id sem erat. Curabitur auctor ex diam, eu imperdiet velit ullamcorper semper. Curabitur non scelerisque est. &lt;b&gt;Curabitur sed eros justo. Mauris fermentum&lt;/b&gt;, ipsum ut egestas laoreet, purus turpis sollicitudin urna, non hendrerit sapien elit sed nisl. Vestibulum vulputate, est eget faucibus mollis, nisl dui dignissim urna, id pretium nisl massa et nunc. Ut congue purus eu consequat placerat. Pellentesque laoreet, massa a convallis molestie, magna justo congue justo, ut tempus arcu est aliquam diam. Morbi ullamcorper egestas dignissim.&lt;br&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>3d_design_files/iblock/4ea/4eaebf041b6c59fce1c33d7cc152cd3a.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>93</Ид>
+				<Наименование>Проектирование прихожей</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>proektirovanie-prikhozhey</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. Sed quis eleifend tortor. Proin quis ornare magna. Aliquam erat volutpat. Mauris ultrices sapien in neque pulvinar ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eu urna laoreet leo vestibulum ultrices. Nam in sapien ac erat facilisis laoreet. Cras nec magna faucibus, mattis odio at, efficitur tortor.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. Sed quis eleifend tortor. Proin quis ornare magna. Aliquam erat volutpat. Mauris ultrices sapien in neque pulvinar ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eu urna laoreet leo vestibulum ultrices. Nam in sapien ac erat facilisis laoreet. Cras nec magna faucibus, mattis odio at, efficitur tortor.
+
+Proin mauris nunc, ullamcorper eu congue id, viverra a nibh. Curabitur viverra volutpat urna eu condimentum. Integer ac felis id diam maximus pharetra et id erat. Ut vel tellus metus. Morbi id arcu leo. Vivamus iaculis, sem sed sodales tristique, lectus turpis ornare nisi, a mattis arcu lorem non ipsum. Etiam non nibh eget augue ultrices commodo. Aenean elementum urna nec velit rutrum, vel sollicitudin est tristique. Pellentesque sit amet scelerisque augue, vitae dictum lorem. Morbi imperdiet tellus mollis nibh pretium elementum. Fusce porta, ligula at semper rutrum, libero augue placerat felis, ut sollicitudin justo sapien id enim. Phasellus placerat pharetra suscipit. Praesent eleifend eget est ultrices placerat. In volutpat ornare ipsum in pretium. In quis purus mauris. Maecenas scelerisque eu ligula et auctor.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pharetra diam eros, sed pellentesque arcu auctor vel. Vestibulum pellentesque est quis consequat rutrum. Proin eleifend ultricies tortor id accumsan. Morbi massa risus, scelerisque at euismod vel, malesuada sed lectus. Maecenas eget metus ullamcorper, finibus risus ut, convallis mi. Nunc ipsum justo, aliquet eget dapibus et, iaculis nec tellus. Morbi quis justo maximus, elementum mi nec, vulputate nisi. Aliquam nec lobortis lectus. Mauris enim dolor, interdum eget rutrum id, mattis at elit.
+
+Morbi id sem erat. Curabitur auctor ex diam, eu imperdiet velit ullamcorper semper. Curabitur non scelerisque est. Curabitur sed eros justo. Mauris fermentum, ipsum ut egestas laoreet, purus turpis sollicitudin urna, non hendrerit sapien elit sed nisl. Vestibulum vulputate, est eget faucibus mollis, nisl dui dignissim urna, id pretium nisl massa et nunc. Ut congue purus eu consequat placerat. Pellentesque laoreet, massa a convallis molestie, magna justo congue justo, ut tempus arcu est aliquam diam. Morbi ullamcorper egestas dignissim.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>3d_design_files/iblock/060/0606261fae2872c8511ab56b7f1bde81.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>94</Ид>
+				<Наименование>Расстановка мебели</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>3d_design_files/iblock/7d4/7d4972672d88c54b3ee186cff07cbd73.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>rasstanovka-mebeli</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pharetra diam eros, sed pellentesque arcu auctor vel. Vestibulum pellentesque est quis consequat rutrum. Proin eleifend ultricies tortor id accumsan. Morbi massa risus, scelerisque at euismod vel, malesuada sed lectus. Maecenas eget metus ullamcorper, finibus risus ut, convallis mi. Nunc ipsum justo, aliquet eget dapibus et, iaculis nec tellus. Morbi quis justo maximus, elementum mi nec, vulputate nisi. Aliquam nec lobortis lectus. Mauris enim dolor, interdum eget rutrum id, mattis at elit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. Sed quis eleifend tortor.&lt;br&gt;
+ &lt;br&gt;
+ Proin mauris nunc, ullamcorper eu congue id, viverra a nibh. Curabitur viverra volutpat urna eu condimentum. Integer ac felis id diam maximus pharetra et id erat. Ut vel tellus metus. Morbi id arcu leo. Vivamus iaculis, sem sed sodales tristique, lectus turpis ornare nisi, a mattis arcu lorem non ipsum. Etiam non nibh eget augue ultrices commodo. Aenean elementum urna nec velit rutrum, vel sollicitudin est tristique. Pellentesque sit amet scelerisque augue, vitae dictum lorem.&lt;br&gt;
+ &lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Pellentesque sit amet scelerisque augue, vitae dictum lorem&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Vivamus iaculis, sem sed sodales tristique&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Integer consequat nec dolor ut eleifend&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ &lt;br&gt;
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pharetra diam eros, sed pellentesque arcu auctor vel. Vestibulum pellentesque est quis consequat rutrum. Proin eleifend ultricies tortor id accumsan. Morbi massa risus, scelerisque at euismod vel, malesuada sed lectus. Maecenas eget metus ullamcorper, finibus risus ut, convallis mi.&lt;br&gt;
+ &lt;br&gt;
+ Morbi id sem erat. Curabitur auctor ex diam, eu imperdiet velit ullamcorper semper. Curabitur non scelerisque est. Curabitur sed eros justo. Mauris fermentum, ipsum ut egestas laoreet, purus turpis sollicitudin urna, non hendrerit sapien elit sed nisl.&lt;br&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>3d_design_files/iblock/9eb/9ebe60a262fcba21fe702a01018a551b.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>95</Ид>
+				<Наименование>Декор помещения</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>3d_design_files/iblock/c08/c082c649ae1fa780ccd50af050cafabe.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>dekor-pomeshcheniya</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Fusce porta, ligula at semper rutrum, libero augue placerat felis, ut sollicitudin justo sapien id enim. Phasellus placerat pharetra suscipit. Praesent eleifend eget est ultrices placerat. In volutpat ornare ipsum in pretium. In quis purus mauris. Maecenas scelerisque eu ligula et auctor.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus quis eros elementum, ut volutpat mi consectetur. In vitae pellentesque tortor. Nunc ut tristique velit, ut fringilla nisi. Cras eget accumsan felis. Integer consequat nec dolor ut eleifend. &lt;b&gt;Sed quis eleifend tortor.&lt;/b&gt; Proin quis ornare magna. Aliquam erat volutpat. Mauris ultrices sapien in neque pulvinar ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eu urna laoreet leo vestibulum ultrices. Nam in sapien ac erat facilisis laoreet. &lt;u&gt;Cras nec magna faucibus, mattis odio at, efficitur tortor.&lt;/u&gt;&lt;br&gt;
+ &lt;br&gt;
+ Proin mauris nunc, ullamcorper eu congue id, viverra a nibh. Curabitur viverra volutpat urna eu condimentum. Integer ac felis id diam maximus pharetra et id erat. Ut vel tellus metus. Morbi id arcu leo. Vivamus iaculis, sem sed sodales tristique, lectus turpis ornare nisi, a mattis arcu lorem non ipsum. Etiam non nibh eget augue ultrices commodo. Aenean elementum urna nec velit rutrum, vel sollicitudin est tristique. Pellentesque sit amet scelerisque augue, vitae dictum lorem. Morbi imperdiet tellus mollis nibh pretium elementum. Fusce porta, ligula at semper rutrum, libero augue placerat felis, ut sollicitudin justo sapien id enim. Phasellus placerat pharetra suscipit. &lt;u&gt;Praesent eleifend eget est ultrices placerat&lt;/u&gt;. In volutpat ornare ipsum in pretium. In quis purus mauris. Maecenas scelerisque eu ligula et auctor.&lt;br&gt;
+ &lt;br&gt;
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pharetra diam eros, sed pellentesque arcu auctor vel. Vestibulum pellentesque est quis consequat rutrum. Proin eleifend ultricies tortor id accumsan. Morbi massa risus, scelerisque at euismod vel, malesuada sed lectus. Maecenas eget metus ullamcorper, finibus risus ut, convallis mi. Nunc ipsum justo, aliquet eget dapibus et, iaculis nec tellus. Morbi quis justo maximus, elementum mi nec, vulputate nisi. Aliquam nec lobortis lectus. Mauris enim dolor, interdum eget rutrum id, mattis at elit.&lt;br&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>3d_design_files/iblock/676/67664e86bf5cf3f533784c478de8360d.jpg</Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

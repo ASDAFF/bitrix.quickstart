@@ -1,0 +1,48 @@
+.product {
+
+  & .added2cart,
+  &.is-incart .add2cart {
+    @extend .outpage;
+  }
+  
+  &.is-incart .added2cart {
+    height: auto;
+    position: static;
+    width: auto;
+  }
+  
+  .corner {
+    display: none;
+  }
+
+  &.da .corner,
+  &.qb .corner {
+    display: block;
+  }
+  
+  &.da .corner__in {
+    background: $skin1_bg;
+  }
+  
+  &.qb .corner__in {
+    background: $skin0_bg;
+  }
+
+  .js-add2cart {
+    &.disabled {
+      @extend .outpage;
+    }
+  }
+
+  .js-buy1click {
+    &.disabled {
+      @extend .outpage;
+    }
+  }
+
+  &__article {
+    color: $gray-darker;
+    font-size: $font-size-small;
+    line-height: $base-line-height;
+  }
+}

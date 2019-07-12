@@ -1,0 +1,6 @@
+.catalog-price {
+	 color:red;
+}
+.zag {text-align:center;font-weight:bold;padding:0.7em;margin-bottom:1.2em;}
+.kuzovFoto {overflow: hidden;margin-bottom: 1em;}
+.kuzovFoto a{display: block;width: 150px;float: left;padding: 0.5em;border: 1px solid #6F6F6F;margin-right: 2em;text-align: center;}

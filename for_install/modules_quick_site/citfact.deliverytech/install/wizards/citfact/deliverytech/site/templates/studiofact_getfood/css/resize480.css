@@ -1,0 +1,88 @@
+#header {
+	min-width: 320px;
+}
+.banner_box .name {
+	font-size: 16px;
+	line-height: 18px;
+}
+.banner_box .small_description {
+	font-size: 13px;
+	line-height: 14px;	
+}
+.scrollSectionName {
+	width: 100px;
+}
+.scroll-wrapper > .scroll-content {
+	margin-top: 10px;
+}
+span.mobile {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+}
+div.mobile {
+	display: block;
+}
+.desktop {
+	display: none;
+}
+.header .logo img {
+	max-width: 140px;
+}
+.bx_item_detail .tabs_header .tabs_head a {
+	font-size: 12px;
+}
+.advantage {
+	max-width: 90px;
+}
+.content {
+	padding-left: 0;
+}
+.header .search_box,
+.header_menu,
+.header .phone {
+	display: none;
+}
+.bx-auth-service-form {
+	text-align: center;
+}
+div.bx-auth-service-form input.button {
+	left: 0;
+	margin: 15px auto 0;
+}
+.add_to_basket_box {
+	width: 250px;
+}
+.add_to_basket_box .button_white {
+	width: auto;
+}
+.bx_ordercart_order_table_container table tbody tr td.itemphoto {
+	width: 0;
+	max-width: 0;
+}
+.bx_ordercart_order_table_container table tbody tr td.itemphoto img {
+	display: none;
+}
+.order_hide_mobile_3 {
+	width: 70px;
+	min-width: 70px;
+}
+.bx_ordercart_order_table_container thead td {
+	font-size: 12px;
+	padding-left: 5px;
+}
+.bx_ordercart_order_table_container tbody td {
+	padding-left: 5px;
+}
+.bx_element label {
+	padding-left: 120px;
+}
+.bx_element label .bx_logotype {
+	width: 120px;
+}
+.bx_element label .bx_logotype span {
+	width: 100px;
+}
+#feedback_form {
+	width: 240px;
+}

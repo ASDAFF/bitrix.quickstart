@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Компания";
+$arDirProperties = Array(
+
+);
+?>

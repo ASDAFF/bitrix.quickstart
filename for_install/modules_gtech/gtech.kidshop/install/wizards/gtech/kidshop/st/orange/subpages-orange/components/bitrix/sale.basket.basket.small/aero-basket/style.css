@@ -1,0 +1,62 @@
+div.aero-basket{
+	position: fixed;
+	right: 155px; top: 0px;
+	width: 322px; min-height: 45px; height: auto;
+	z-index: 1000;
+}
+
+div.aero-basket-bookmark{
+	position: relative;
+	width: 322px; height: 45px;
+	font-family: tahoma;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 4px;
+	background: url(images/aero-basket-bookmark.png) left top no-repeat;
+}
+
+td.aero-basket-button-down, td.aero-basket-button-up{
+	width: 32px;
+	background: url(images/aero-basket-button-down.png) left 50% no-repeat;
+	font-size: 1px;
+	cursor: pointer;
+}
+td.aero-basket-button-up{background: url(images/aero-basket-button-up.png) left 50% no-repeat;}
+
+div.aero-basket-inner{
+	position: relative;
+	display: none;
+	background: url(images/aero-basket-inner-bg.png) left top repeat-y;
+	padding-top: 10px;
+}
+
+div.aero-basket-inner-shadow{
+	position: absolute;
+	bottom: 0px; left: 3px;
+	width: 315px; height: 4px;
+	font-size: 1px;
+	background: url(images/aero-basket-inner-shadow.png) left top no-repeat;
+}
+
+td.aero-basket-item{
+	padding-bottom: 10px;
+	font-family: tahoma;
+	font-size: 14px;
+	color: #534741;
+}
+
+td.aero-basket-item span.rouble{
+	font-family:rouble;
+}
+
+a.aero-basket-link{
+	font-family: tahoma;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+
+td.aero-basket-button-img{
+	padding-left: 35px;
+	background: url(images/basket-img.png) left top no-repeat;
+}

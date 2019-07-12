@@ -1,0 +1,1 @@
+Phone support is available 24/7

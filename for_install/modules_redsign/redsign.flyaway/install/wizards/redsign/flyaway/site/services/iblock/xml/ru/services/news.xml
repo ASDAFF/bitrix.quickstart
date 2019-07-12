@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2016-04-22T14:27:43">
+	<Классификатор>
+		<Ид>news_redsign_flyaway</Ид>
+		<Наименование>Новости</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>46</Ид>
+				<Наименование>Строка под статьей</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>STROKA_POD_STATI</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>46</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>news_redsign_flyaway</Ид>
+		<ИдКлассификатора>news_redsign_flyaway</ИдКлассификатора>
+		<Наименование>Новости</Наименование>
+		<БитриксКод>news_redsign_flyaway</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/news/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/news/#ELEMENT_CODE#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/news/</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>53</Ид>
+				<Наименование>Гаджет будущего</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/b6b/b6b50d3b80a8ffe49a355ff036fe20c4.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novost_4</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Etiam finibus odio a euismod iaculis. Morbi sagittis enim urna, aliquet blandit orci vestibulum at. Suspendisse eleifend dignissim ipsum, ac pellentesque ex viverra ac. Nam aliquet lorem nisl, in auctor nunc pharetra vitae. Cras at dolor et enim convallis rhoncus. Suspendisse consectetur turpis in molestie vestibulum. Nulla facilisi. Vestibulum eget mi lacinia, placerat ex eget, facilisis tellus. Nulla nisl metus, sodales ac accumsan sed, volutpat sed mauris. Maecenas blandit nunc vel nibh dignissim, sit amet vehicula ante pretium. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Integer aliquet nunc nunc, et faucibus ex fermentum non. Sed aliquet sagittis tempor. Phasellus pretium faucibus orci varius placerat. Sed augue neque, suscipit ac mi et, ornare fermentum enim. Etiam quis nisl ut orci lacinia lacinia sed vel tellus. Aenean orci tortor, bibendum nec quam quis, dignissim consectetur nisl. Nunc vitae commodo enim, egestas hendrerit ligula. Pellentesque blandit est eros, quis eleifend tellus accumsan quis. Aliquam posuere turpis ligula, sed rutrum nisi dignissim id. Proin hendrerit tortor turpis, id maximus orci placerat sed. Aliquam sed nunc ac turpis tincidunt condimentum. Mauris viverra dolor eu neque sollicitudin elementum. Nam pellentesque, erat nec convallis egestas, mauris quam sagittis odio, sit amet pretium lorem eros interdum est. In a justo consequat, laoreet lorem elementum, ullamcorper urna. Etiam id nunc tristique, pretium felis in, pharetra nunc.
+
+Donec vestibulum ultrices ipsum et faucibus. Sed ullamcorper enim quis nibh ultricies, ac porta nunc bibendum. Curabitur arcu urna, vulputate quis enim vel, vestibulum consequat mi. Duis quis mauris volutpat odio dapibus venenatis. Suspendisse feugiat, dolor vitae euismod porta, purus nunc ornare odio, id dictum elit arcu ac ante. Nunc sit amet placerat ante, vitae posuere tortor. Nulla porta tristique magna, in bibendum lacus malesuada non. Nullam a nulla ac magna pretium tempus. Cras varius nibh non tempor gravida. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/ae0/ae0d85e0424af91f5e5dfc24b3041995.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>46</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>54</Ид>
+				<Наименование>Скоро в продаже Xperia™ M4 Aqua Dual</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/371/37192a382b61772200f79ce9ee2b544d.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novost_3</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Suspendisse in aliquet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec aliquet augue, eu gravida erat. In vehicula tristique est vel lobortis. Suspendisse laoreet auctor turpis, vitae consectetur felis. Praesent sagittis metus porttitor urna consectetur pellentesque. Nullam euismod mi eu vulputate pharetra. Maecenas iaculis urna ipsum, ac lacinia turpis viverra non. Phasellus eget tortor et orci commodo lacinia sit amet non augue. Quisque scelerisque odio sed pretium lobortis. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Suspendisse in aliquet lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed nec aliquet augue, eu gravida erat. In vehicula tristique est vel lobortis. Suspendisse laoreet auctor turpis, vitae consectetur felis. Praesent sagittis metus porttitor urna consectetur pellentesque. Nullam euismod mi eu vulputate pharetra. Maecenas iaculis urna ipsum, ac lacinia turpis viverra non. Phasellus eget tortor et orci commodo lacinia sit amet non augue. Quisque scelerisque odio sed pretium lobortis.
+
+Aenean elementum nibh luctus odio accumsan eleifend. Proin mollis consectetur justo id rhoncus. Nunc eu nulla erat. Phasellus dui nisi, luctus vitae interdum in, varius a dui. Proin blandit ligula nisl, quis dictum ligula feugiat nec. Maecenas accumsan ullamcorper erat, eu tempor risus pulvinar nec. Pellentesque commodo porttitor vehicula. Praesent tincidunt nulla porta neque lobortis finibus. Duis mattis augue non erat consectetur, aliquam accumsan purus bibendum. Morbi congue mi et accumsan pulvinar.
+
+Maecenas et sollicitudin diam. Integer lobortis, erat ut gravida pharetra, metus neque commodo sapien, eu suscipit magna urna eget tellus. Vivamus auctor porttitor dignissim. Fusce sagittis enim sit amet nibh congue, ut rutrum magna faucibus. Praesent ut augue ornare, condimentum lectus sed, feugiat magna. Vivamus blandit pellentesque augue, at sollicitudin ipsum hendrerit nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet nulla velit, ut hendrerit ligula imperdiet quis. Vestibulum in velit efficitur justo placerat tristique. Nullam semper augue et massa mattis, eu iaculis quam commodo. Duis vitae urna id magna suscipit rutrum a eu ante. Vivamus ullamcorper tristique nunc at tincidunt. Aenean et porttitor ipsum. Phasellus efficitur diam sed dignissim auctor. In ac blandit mauris. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/15b/15b27695c7aae86610b2df74625639ab.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>46</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>55</Ид>
+				<Наименование>Новый телефон с мощной батареей</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/534/5344cb697214e717ed315755016f9934.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novost_2</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut magna quis nisi hendrerit varius. Curabitur imperdiet, dolor egestas dapibus dictum, libero mi lacinia libero, at lacinia turpis enim in quam. Praesent laoreet, orci non mollis rhoncus, ante turpis sodales massa, eu consequat turpis tortor ac sem. Vivamus urna erat, hendrerit sit amet tempor sit amet, laoreet nec nulla. Curabitur rhoncus neque et magna molestie fermentum. Aenean non nunc arcu, ac lacinia velit. Praesent tristique tincidunt diam vel molestie. Fusce auctor imperdiet nunc, convallis feugiat mauris gravida in. Suspendisse ipsum nibh, molestie faucibus porttitor ut, auctor vel tellus. Duis a laoreet orci. Aliquam ac lorem ac augue fermentum ornare sit amet quis ante. Donec ultrices dolor leo. Aliquam non luctus arcu. Aenean et elit eu libero mattis sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas molestie commodo sollicitudin.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut magna quis nisi hendrerit varius. Curabitur imperdiet, dolor egestas dapibus dictum, libero mi lacinia libero, at lacinia turpis enim in quam. Praesent laoreet, orci non mollis rhoncus, ante turpis sodales massa, eu consequat turpis tortor ac sem. Vivamus urna erat, hendrerit sit amet tempor sit amet, laoreet nec nulla. Curabitur rhoncus neque et magna molestie fermentum. Aenean non nunc arcu, ac lacinia velit. Praesent tristique tincidunt diam vel molestie. Fusce auctor imperdiet nunc, convallis feugiat mauris gravida in. Suspendisse ipsum nibh, molestie faucibus porttitor ut, auctor vel tellus. Duis a laoreet orci. Aliquam ac lorem ac augue fermentum ornare sit amet quis ante. Donec ultrices dolor leo. Aliquam non luctus arcu. Aenean et elit eu libero mattis sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas molestie commodo sollicitudin.
+
+Nunc scelerisque, ligula ut pellentesque venenatis, enim nisi consequat risus, vel cursus ante orci at nibh. Proin ornare aliquam ipsum, id lobortis nunc tempor ut. Cras dui nibh, porttitor vel sodales in, luctus non lorem. Nam turpis neque, semper ac nunc vel, hendrerit finibus nisi. Pellentesque tincidunt arcu a felis accumsan interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod turpis quis rutrum volutpat. Donec tincidunt eros eget nunc porttitor, quis porttitor felis pulvinar. Proin eget tincidunt nisi. Aenean vitae maximus metus, vestibulum consequat ex. Curabitur sollicitudin est vitae nisl ultrices elementum.
+
+In ut nisi a mi placerat bibendum quis quis ipsum. Nunc posuere lacinia ante. Phasellus turpis velit, sagittis a ultricies eu, interdum interdum magna. Sed lacinia aliquam aliquam. Donec congue sodales tortor, sed eleifend arcu finibus et. Morbi commodo sapien sit amet felis luctus, in placerat dolor scelerisque. Fusce elementum imperdiet neque, sed consequat arcu porta id. Etiam dignissim leo ut mi sagittis, ut vehicula nisl vestibulum. </Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/443/443ad004032a01677976e3515461e9b4.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>46</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>56</Ид>
+				<Наименование>Светодиодные драйверы</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/338/3380a8562e014b216b87d2287d6e086c.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novost_1</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2016-01-24 13:26:00</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение>2018-01-25 13:26:00</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Praesent malesuada magna nec venenatis tempor. Nullam et hendrerit lorem. Sed rhoncus vitae elit quis iaculis. Suspendisse sit amet arcu ligula. Curabitur pulvinar at est non commodo. Etiam lacus erat, feugiat quis aliquet quis, interdum ac ex. Quisque vehicula libero sed turpis semper, et fringilla libero porttitor. Duis pulvinar lacus ante, condimentum pellentesque neque interdum id. Sed sed dolor finibus, luctus urna a, mattis est. Vestibulum in lorem dignissim, tincidunt arcu ultricies, vestibulum neque. Fusce varius commodo magna, quis sodales nisi pretium eleifend. Etiam commodo nibh augue, eu rhoncus sem facilisis et. Phasellus vitae felis quis nibh dignissim commodo. Vestibulum id odio et erat blandit blandit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Praesent malesuada magna nec venenatis tempor. Nullam et hendrerit lorem. Sed rhoncus vitae elit quis iaculis. Suspendisse sit amet arcu ligula. Curabitur pulvinar at est non commodo. Etiam lacus erat, feugiat quis aliquet quis, interdum ac ex. Quisque vehicula libero sed turpis semper, et fringilla libero porttitor. Duis pulvinar lacus ante, condimentum pellentesque neque interdum id. Sed sed dolor finibus, luctus urna a, mattis est. Vestibulum in lorem dignissim, tincidunt arcu ultricies, vestibulum neque. Fusce varius commodo magna, quis sodales nisi pretium eleifend. Etiam commodo nibh augue, eu rhoncus sem facilisis et. Phasellus vitae felis quis nibh dignissim commodo. Vestibulum id odio et erat blandit blandit.
+
+Nulla mattis sem egestas nulla molestie, finibus laoreet purus lacinia. Cras dolor leo, condimentum a maximus in, mollis id massa. Curabitur porttitor velit id leo pellentesque fermentum. Nam placerat diam posuere felis congue, id ultricies mauris dapibus. Cras maximus facilisis lacus, nec sagittis quam fermentum quis. Aenean auctor mi dolor, quis hendrerit quam volutpat vel. Duis sed ultricies orci, ut bibendum ipsum. Phasellus facilisis eu enim quis tincidunt.
+
+Cras viverra mollis diam et eleifend. Vivamus rutrum mi in lectus hendrerit viverra. Mauris vel massa facilisis, maximus dui a, fringilla nisl. Proin gravida rhoncus rutrum. Curabitur mi velit, ultrices ornare justo ac, molestie fringilla neque. Aenean congue, neque vel finibus consequat, orci neque commodo magna, et malesuada ligula purus at odio. Etiam et ultricies velit. Aenean consequat sem dolor, non sodales dolor feugiat ac. Maecenas ac augue metus. Donec massa turpis, lobortis et consectetur quis, luctus vitae felis. Mauris finibus orci vitae dui sodales, interdum venenatis metus sagittis. Mauris volutpat, libero bibendum posuere commodo, ipsum metus aliquam nulla, sit amet condimentum ante est eu mi. Vestibulum ac dui ac urna commodo consequat ac vitae tellus. Cras dolor lectus, tempor et dignissim ut, fermentum ac purus. Nunc facilisis imperdiet nunc, ut varius est efficitur non.
+
+Vivamus pellentesque ipsum et purus venenatis, at accumsan arcu tristique. Ut eleifend molestie purus nec tempus. Aenean diam tortor, maximus quis mauris sed, ultrices egestas nisi. Morbi venenatis finibus fringilla. Phasellus enim lorem, mollis blandit libero sit amet, vehicula sollicitudin est. Pellentesque a ullamcorper quam. Sed sed elit velit. In in dolor a purus sagittis sagittis ut in libero. Maecenas ac magna eu arcu gravida blandit. Proin sollicitudin mauris et risus sodales, in malesuada ligula ultricies. Nullam id augue sed orci laoreet hendrerit at in urna.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/a21/a21d3c0df3ae5f4287115ac8d119f333.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>46</Ид>
+						<Значение>Журнал «Стройка», №65 (256)  2015</Значение>
+						<ЗначениеСвойства>
+							<Значение>Журнал «Стройка», №65 (256)  2015</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>57</Ид>
+				<Наименование>Светодиодные драйверы</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>news_files/iblock/46d/46dcb04ca2c24ea922aa4f52436e6feb.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение>novost_1</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение>2016-01-24 13:26:00</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение>2018-01-25 13:26:00</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Praesent malesuada magna nec venenatis tempor. Nullam et hendrerit lorem. Sed rhoncus vitae elit quis iaculis. Suspendisse sit amet arcu ligula. Curabitur pulvinar at est non commodo. Etiam lacus erat, feugiat quis aliquet quis, interdum ac ex. Quisque vehicula libero sed turpis semper, et fringilla libero porttitor. Duis pulvinar lacus ante, condimentum pellentesque neque interdum id. Sed sed dolor finibus, luctus urna a, mattis est. Vestibulum in lorem dignissim, tincidunt arcu ultricies, vestibulum neque. Fusce varius commodo magna, quis sodales nisi pretium eleifend. Etiam commodo nibh augue, eu rhoncus sem facilisis et. Phasellus vitae felis quis nibh dignissim commodo. Vestibulum id odio et erat blandit blandit.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение>Praesent malesuada magna nec venenatis tempor. Nullam et hendrerit lorem. Sed rhoncus vitae elit quis iaculis. Suspendisse sit amet arcu ligula. Curabitur pulvinar at est non commodo. Etiam lacus erat, feugiat quis aliquet quis, interdum ac ex. Quisque vehicula libero sed turpis semper, et fringilla libero porttitor. Duis pulvinar lacus ante, condimentum pellentesque neque interdum id. Sed sed dolor finibus, luctus urna a, mattis est. Vestibulum in lorem dignissim, tincidunt arcu ultricies, vestibulum neque. Fusce varius commodo magna, quis sodales nisi pretium eleifend. Etiam commodo nibh augue, eu rhoncus sem facilisis et. Phasellus vitae felis quis nibh dignissim commodo. Vestibulum id odio et erat blandit blandit.
+
+Nulla mattis sem egestas nulla molestie, finibus laoreet purus lacinia. Cras dolor leo, condimentum a maximus in, mollis id massa. Curabitur porttitor velit id leo pellentesque fermentum. Nam placerat diam posuere felis congue, id ultricies mauris dapibus. Cras maximus facilisis lacus, nec sagittis quam fermentum quis. Aenean auctor mi dolor, quis hendrerit quam volutpat vel. Duis sed ultricies orci, ut bibendum ipsum. Phasellus facilisis eu enim quis tincidunt.
+
+Cras viverra mollis diam et eleifend. Vivamus rutrum mi in lectus hendrerit viverra. Mauris vel massa facilisis, maximus dui a, fringilla nisl. Proin gravida rhoncus rutrum. Curabitur mi velit, ultrices ornare justo ac, molestie fringilla neque. Aenean congue, neque vel finibus consequat, orci neque commodo magna, et malesuada ligula purus at odio. Etiam et ultricies velit. Aenean consequat sem dolor, non sodales dolor feugiat ac. Maecenas ac augue metus. Donec massa turpis, lobortis et consectetur quis, luctus vitae felis. Mauris finibus orci vitae dui sodales, interdum venenatis metus sagittis. Mauris volutpat, libero bibendum posuere commodo, ipsum metus aliquam nulla, sit amet condimentum ante est eu mi. Vestibulum ac dui ac urna commodo consequat ac vitae tellus. Cras dolor lectus, tempor et dignissim ut, fermentum ac purus. Nunc facilisis imperdiet nunc, ut varius est efficitur non.
+
+Vivamus pellentesque ipsum et purus venenatis, at accumsan arcu tristique. Ut eleifend molestie purus nec tempus. Aenean diam tortor, maximus quis mauris sed, ultrices egestas nisi. Morbi venenatis finibus fringilla. Phasellus enim lorem, mollis blandit libero sit amet, vehicula sollicitudin est. Pellentesque a ullamcorper quam. Sed sed elit velit. In in dolor a purus sagittis sagittis ut in libero. Maecenas ac magna eu arcu gravida blandit. Proin sollicitudin mauris et risus sodales, in malesuada ligula ultricies. Nullam id augue sed orci laoreet hendrerit at in urna.</Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>news_files/iblock/5ba/5ba37ae8342d871cd4daf604952b94c2.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>46</Ид>
+						<Значение>Журнал «Стройка», №65 (256)  2015</Значение>
+						<ЗначениеСвойства>
+							<Значение>Журнал «Стройка», №65 (256)  2015</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

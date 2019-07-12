@@ -1,0 +1,49 @@
+.someform.profil{
+	max-width:600px;
+}
+.someform.profil span.likeinput{
+	display:block;
+	font:13px Opensanslight,Arial,Helvetica,sans-serif;
+	margin:0px 10px 0px 0px;
+	padding:10px 9px;
+	outline:-webkit-focus-ring-color auto 0;
+}
+.someform.profil input[type="text"],
+.someform.profil input[type="password"],
+.someform.profil select,
+.someform.profil span,
+.someform.profil a
+.someform.profil .buttons a,
+.someform.profil .line.buttons a,
+.someform.profil .buttons a.btn,
+.someform.profil .line.buttons a.btn{
+	width:48%;
+	float:left;
+	margin-right:10px;
+}
+.someform.profil textarea{
+	margin-bottom:10px;
+}
+
+
+@media screen and (max-width:775px){
+	body.adaptive .someform.profil input[type="text"],
+	body.adaptive .someform.profil input[type="password"],
+	body.adaptive .someform.profil select,
+	body.adaptive .someform.profil span{
+		width:100%;
+		max-width:300px;
+		margin-right:0px;
+	}
+	body.adaptive .someform.profil input.first{
+		margin-bottom:10px;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .someform.profil input[type="text"],
+	body.adaptive .someform.profil input[type="password"],
+	body.adaptive .someform.profil select,
+	body.adaptive .someform.profil span{
+		max-width:500px;
+	}
+}

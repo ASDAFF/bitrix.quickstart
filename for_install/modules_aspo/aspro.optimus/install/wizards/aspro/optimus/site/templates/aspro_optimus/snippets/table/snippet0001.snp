@@ -1,0 +1,38 @@
+<div class="border_block_wide">
+<table class="props_list">
+		<tbody>
+			<tr>
+				<td class="char_name">
+					<div class="txt">Text</div >
+				</td>
+				<td class="char_value">
+					<div class="txt">Text</div >
+				</td>
+			</tr>
+<tr>
+				<td class="char_name">
+					<div class="txt">Text</div >
+				</td>
+				<td class="char_value">
+					<div class="txt">Text</div >
+				</td>
+			</tr>
+<tr>
+				<td class="char_name">
+					<div class="txt">Text</div >
+				</td>
+				<td class="char_value">
+					<div class="txt">Text</div >
+				</td>
+			</tr>
+<tr>
+				<td class="char_name">
+					<div class="txt">Text</div >
+				</td>
+				<td class="char_value">
+					<div class="txt">Text</div >
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

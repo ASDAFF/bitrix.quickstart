@@ -1,0 +1,22 @@
+iframe.waitwindowlocal 
+{
+	position:absolute; 
+	border:0px; 
+	z-index:9999;
+	
+}
+div.waitwindowlocal 
+{
+	position:absolute; 
+	width:25px; 
+	height: 25px; 
+	padding:0px; 
+	z-index:10000; 
+	display: none;
+}
+div.waitwindowlocalshadow
+ {
+	position:absolute; 
+	background: rgba(255,255,255, .6); 
+	z-index: 2;
+}

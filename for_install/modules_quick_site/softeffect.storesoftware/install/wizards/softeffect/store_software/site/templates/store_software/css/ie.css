@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* Fixes incorrect styling of legend in IE6. */
+* html legend {margin: -18px -8px 16px 0; padding: 0;}
+/* Fixes incorrect placement of ol numbers in IE6/7. */
+ol {margin-left: 2em;}
+/* Fixes wrong line-height on sup/sub in IE. */
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+/* Fixes IE7 missing wrapping of code elements. */
+html>body p code { *white-space: normal;} 
+/* IE 6&7 has problems with setting proper <hr> margins. */
+hr {margin: -8px auto 11px;}
+/* place css fixes for all versions of IE in this conditional comment */
+#content {zoom: 1;}
+#content.iepageboxfix {width: 635px; margin: 0px;}
+#content .pageboxfix { margin-right: -3px; }
+/* --- additional fixes --- */
+#header #searchbar #quicksearch {padding-top: 0px;}
+#header #searchbar #go {padding-top: 1px;}
+.sidebox ul.sidelistbull li {background-position: 3px 9px;}
+#quickbasket ul.sidecart div.item {margin-left: 13px; padding-top: 0px;}
+#quickbasket ul.sidecart li.totals {padding-bottom: 7px;}
+#relatedblock .related .item {min-height: 32px; height: 32px; overflow: hidden;}
+#relatedblock .related .pricebox {margin-top: 5px;}
+#formmessage .message.info, #formmessage .message.success, #formmessage .message.error, #formmessage .message.warning {background-position: 15px 10px;}

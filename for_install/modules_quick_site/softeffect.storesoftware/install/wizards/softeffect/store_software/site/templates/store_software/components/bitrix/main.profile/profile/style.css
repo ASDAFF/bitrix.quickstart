@@ -1,0 +1,31 @@
+.profile-block-hidden
+{
+	display: none;
+}
+
+.profile-block-shown
+{
+	display:block;
+}
+
+
+
+
+.profile-table
+{
+	width: 100%;
+}
+
+.profile-link
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.profile-table td {
+	vertical-align: top;
+	width:50%;
+}

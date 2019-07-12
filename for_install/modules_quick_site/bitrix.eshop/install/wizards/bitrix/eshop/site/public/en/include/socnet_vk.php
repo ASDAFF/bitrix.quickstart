@@ -1,0 +1,1 @@
+<a href="http://vk.com/bitrix_1c"></a>

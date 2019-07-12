@@ -1,0 +1,8 @@
+<?
+$MESS['MLIFE_SHARECOUNT_SHARE'] = "Àêöèÿ!";
+$MESS['MLIFE_SHARECOUNT_FIN'] = "ÄÎ ÊÎÍÖÀ ÀÊÖÈÈ:";
+$MESS['MLIFE_SHARECOUNT_TEXT_D'] = "äíåé";
+$MESS['MLIFE_SHARECOUNT_TEXT_H'] = "÷àñîâ";
+$MESS['MLIFE_SHARECOUNT_TEXT_M'] = "ìèíóò";
+$MESS['MLIFE_SHARECOUNT_TEXT_S'] = "ñåêóíä";
+?>

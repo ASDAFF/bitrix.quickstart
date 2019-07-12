@@ -1,0 +1,60 @@
+<?
+global $MESS;
+
+$MESS["SIBP_DTITLE"] = "SberBank Payment Receipt (Russian payment system) [softeffect.ru version]";
+$MESS["SIBP_TITLE_DESC"] = "SberBank Payment Receipt";
+
+$MESS["SIBP_NAME"] = "Наименование получателя платежа";
+$MESS["SIBP_INN"] = "ИНН получателя платежа";
+$MESS["SIBP_KPP"] = "КПП получателя платежа";
+$MESS["SIBP_NUMBER"] = "Номер счета получателя платежа";
+$MESS["SIBP_NAME_BANK"] = "Наименование банка";
+$MESS["SIBP_REK"] = "Банковские реквизиты";
+$MESS["SIBP_CALC"] = "Номер кор./сч. банка получателя платежа";
+$MESS["SIBP_ORDER_NUM"] = "Номер заказа";
+$MESS["SIBP_DATA"] = "Дата создания заказа";
+$MESS["SIBP_FIO"] = "Ф.И.О. плательщика";
+$MESS["SIBP_ZIP"] = "Почтовый индекс плательщика";
+$MESS["SIBP_COUNTRY"] = "Страна плательщика";
+$MESS["SIBP_TOWN"] = "Город плательщика";
+$MESS["SIBP_ADRESS"] = "Адрес плательщика";
+$MESS["SIBP_SUMM"] = "Сумма к оплате";
+
+$MESS['SE_SBER_KVITANCIA'] = "Квитанция";
+$MESS['SE_SBER_IZVESHHENIE'] = "Извещение";
+$MESS['SE_SBER_KASSIR'] = "Кассир";
+$MESS['SE_SBER_FORM_PD'] = "Форма № ПД-4";
+$MESS['SE_SBER_NAME_POL'] = "наименование получателя платежа";
+$MESS['SE_SBER_INN_POL'] = "ИНН получателя платежа";
+$MESS['SE_SBER_NUM_POL'] = "номер счета получателя платежа";
+$MESS['SE_SBER_IN'] = "в";
+$MESS['SE_SBER_BIK'] = "БИК";
+$MESS['SE_SBER_BANK_POL'] = "наименование банка получателя платежа";
+$MESS['SE_SBER_KOR_POL'] = "Номер кор./сч. банка получателя платежа";
+$MESS['SE_SBER_ORDER_ID'] = "Оплата заказа №";
+$MESS['SE_SBER_ORDER_ID_FROM'] = "от";
+$MESS['SE_SBER_NAME_PLAT'] = "наименование платежа";
+$MESS['SE_SBER_LS_PLAT'] = "номер лицевого счета (код) плательщика";
+$MESS['SE_SBER_FIO_PLAT'] = "Ф.И.О. плательщика";
+$MESS['SE_SBER_ADRESS_PLAT'] = "Адрес плательщика";
+$MESS['SE_SBER_GOD_B'] = "Г.";
+$MESS['SE_SBER_SUMM'] = "Сумма платежа";
+$MESS['SE_SBER_RUB'] = "руб.";
+$MESS['SE_SBER_KOP'] = "коп.";
+$MESS['SE_SBER_SUMM_SERVICE'] = "Сумма платы за услуги";
+$MESS['SE_SBER_ITOG'] = "Итого";
+$MESS['SE_SBER_GOD'] = "г.";
+$MESS['SE_SBER_USLOVIA'] = "С условиями приема указанной в платежном документе суммы, в т.ч. с суммой взимаемой платы за услуги банка, ознакомлен и согласен.";
+$MESS['SE_SBER_PODPIS'] = "Подпись плательщика";
+$MESS['SE_SBER_VNIMANIE'] = "Внимание! В стоимость заказа не включена комиссия банка.";
+$MESS['SE_SBER_METOD_OPLATI'] = "Метод оплаты";
+$MESS['SE_SBER_METOD_OPLATI_1'] = "Распечатайте квитанцию. Если у вас нет принтера, перепишите верхнюю часть квитанции и заполните по этому образцу стандартный бланк квитанции в вашем банке.";
+$MESS['SE_SBER_METOD_OPLATI_2'] = "Вырежьте по контуру квитанцию.";
+$MESS['SE_SBER_METOD_OPLATI_3'] = "Оплатите квитанцию в любом отделении банка, принимающего платежи от частных лиц.";
+$MESS['SE_SBER_METOD_OPLATI_4'] = "Сохраните квитанцию до подтверждения исполнения заказа.";
+$MESS['SE_SBER_USLOVIA_POSTAVKI'] = "Условия поставки";
+$MESS['SE_SBER_USLOVIA_POSTAVKI_1'] = "Отгрузка оплаченного товара производится после подтверждения факта платежа.";
+$MESS['SE_SBER_USLOVIA_POSTAVKI_2'] = "Идентификация платежа производится по квитанции, поступившей в наш банк.";
+$MESS['SE_SBER_PRIM'] = "Примечание";
+$MESS['SE_SBER_PRIM_EX'] = "не может гарантировать конкретные сроки проведения вашего платежа. За дополнительной информацией о сроках доставки квитанции в банк получателя, обращайтесь в свой банк.";
+?>

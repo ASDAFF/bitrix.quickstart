@@ -1,0 +1,35 @@
+.corner {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  &__in {
+    @extend .vcenter;
+    height: 140%;
+    left: -70%;
+    position: absolute;
+    top: -70%;
+    transform: rotate(-45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11='-0.7071067811865476', M12='0.7071067811865475', M21='-0.7071067811865475', M22='-0.7071067811865476', sizingMethod='auto expand');
+    width: 140%;
+  }
+
+  &__text {
+    @extend .vcenter__in;
+    color: $body-bg;
+    font-weight: bold;
+    margin-bottom: .8em;
+    vertical-align: bottom;
+  }
+  @media(max-width: $screen-xs) {
+      & &__text {
+          font-size: 9px;
+      }
+  }
+}

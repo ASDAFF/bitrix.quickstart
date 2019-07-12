@@ -1,0 +1,34 @@
+<?
+$MESS["SHOES_REFRESH"] = "       Обновить       ";
+$MESS["SHOES_ORDER"] = "Оформить заказ";
+$MESS["SHOES_NAME"] = "Товар";
+$MESS["SHOES_PROPS"] = "Свойства";
+$MESS["SHOES_PRICE"] = "Цена";
+$MESS["SHOES_PRICE_TYPE"] = "Тип цены";
+$MESS["SHOES_QUANTITY"] = "Количество";
+$MESS["SHOES_DELETE"] = "Удалить";
+$MESS["SHOES_OTLOG"] = "Отложить<br>товар";
+$MESS["SHOES_WEIGHT"] = "Вес";
+$MESS["SHOES_WEIGHT_G"] = "г";
+$MESS["SHOES_ITOGO"] = "Итого";
+$MESS["SHOES_REFRESH_DESCR"] = "Нажмите эту кнопку, чтобы пересчитать, удалить или отложить товары.";
+$MESS["SHOES_ORDER_DESCR"] = "Нажмите эту кнопку, чтобы заказать товары, находящиеся в корзине";
+$MESS["SHOES_OTLOG_TITLE"] = "Отложено";
+$MESS["SHOES_UNAVAIL_TITLE"] = "Отсутствуют в продаже";
+$MESS["SHOES_ORDER_PROMT"] = "Для того чтобы начать оформление заказа, нажмите кнопку \"Оформить заказ\".";
+$MESS["SHOES_COUPON_PROMT"] = "Введите код купона для скидки";
+$MESS["SHOES_VAT"] = "НДС:";
+$MESS["SHOES_VAT_INCLUDED"] = "В том числе НДС:";
+$MESS["SHOES_TOTAL"] = "Всего:";
+$MESS["SHOES_CONTENT_DISCOUNT"] = "Скидка";
+$MESS["SHOES_DISCOUNT"] = "Скидка";
+$MESS["SHOES_NOTIFY_TITLE"] = "Ожидаемые товары";
+$MESS["SHOES_REFRESH_NOTIFY_DESCR"] = "Нажмите эту кнопку, чтобы удалить товары.";
+$MESS["SHOES_PRD_IN_BASKET"] = "Товары в корзине";
+$MESS ['SHOES_PRD_IN_BASKET_ACT'] = "Готовые к заказу";
+$MESS ['SHOES_PRD_IN_BASKET_SHELVE'] = "Отложенные";
+$MESS ['SHOES_PRD_IN_BASKET_SUBSCRIBE'] = "Ожидаемые";
+$MESS ['SHOES_PRD_IN_BASKET_NOTA'] = "Отсутствуют";
+$MESS ['SHOES_ADD_CART'] = "Добавить<br/>к заказу";
+$MESS ['SHOES_EMPTY_CART'] = "К сожалению, пока ваша корзина пуста.";
+?>

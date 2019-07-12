@@ -1,0 +1,34 @@
+.basketinhead{
+	text-align:left;
+}
+.basketinhead a,
+.basketinhead a:hover{
+	display:block;
+	color:#000;
+	text-decoration:none;
+}
+.basketinhead a .title{
+	font-size:14px;
+}
+.basketinhead a:hover .title{
+	text-decoration:underline;
+}
+.basketinhead .icon{
+	display:block;
+	float:left;
+	width:37px;
+	height:33px;
+	margin-top:0px;
+	margin-right:10px;
+	background-position:0px -367px;
+}
+.basketinhead .descr{
+	color:#214496;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.basketinhead .title,
+.basketinhead .descr{
+	margin-left:47px;
+}

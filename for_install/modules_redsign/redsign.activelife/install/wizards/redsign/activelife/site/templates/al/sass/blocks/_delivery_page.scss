@@ -1,0 +1,159 @@
+/* Delivery page */
+
+$bg-color-dark: $gray-lighter !default;
+$price-color: #9d0000 !default;
+$new-color: #82d026 !default;
+
+.p-delivery {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  & &__guarantee {
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+    display: inline-block;
+  }
+
+  & &__guarantee-icon {
+    display: inline-block;
+    padding: 20px 0 30px 15px;
+    width: 30%;
+    vertical-align: middle;
+
+    img {
+      max-width: 80%;
+    }
+  }
+
+  & &__guarantee-text {
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: middle;
+    max-width: 475px;
+    width: 70%;
+    margin-top: -15px;
+  }
+
+  & &__table-wrap {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 40px;
+  }
+
+  & &__table-wrap .table {
+    border-collapse: separate;
+  }
+
+  & &__table-wrap .table tr th {
+    background-color: $bg-color-dark;
+    border: 0;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+
+  & &__table-wrap .table tr td {
+    border: 0;
+    border-bottom: 1px solid $bg-color-dark;
+    border-right: 1px solid $bg-color-dark;
+  }
+  & &__table-wrap .table tr td:last-child {
+    border-right: 0;
+  }
+
+  & &__freeprice,
+  & &__price {
+    font-weight: bold;
+  }
+
+  & &__freeprice {
+    color: $new-color;
+  }
+
+  & &__price {
+    color: $price-color;
+  }
+
+  & &__table-wrap .table tr td,
+  & &__table-wrap .table tr th {
+    width: 150px;
+  }
+  & &__table-wrap .table tr td:nth-child(1),
+  & &__table-wrap .table tr th:nth-child(1) {
+    width: auto;
+  }
+
+  & &__delivery-point,
+  & &__delivery-time {
+    padding-top: 75px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  & &__delivery-time {
+    width: 40%;
+    font-size: 16px;
+    text-align: center;
+    max-width: 205px;
+    margin-right: 10%;
+  }
+  & &__delivery-point {
+    margin: -4px;
+    width: 50%;
+  }
+  /**& &__delivery-point:before,
+  & &__delivery-time:before {
+    font-family: PeIcon7Stroke;
+    position: absolute;
+    top: 0;
+    font-size: 64px;
+    color: $price-color;
+  }
+  & &__delivery-time:before {
+    content: "\e67e";
+    left: 0;
+    right: 0;
+  }
+  & &__delivery-point:before {
+    content: "\e673";
+    left: 0;
+  } **/
+
+  & &__svg-icon {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    left: 0;
+    width: 40px;
+  }
+
+  & &__delivery-time &__svg-icon {
+    width: 100%;
+  }
+
+  @media(max-width: $screen-xs-max) {
+    & &__delivery-point,
+    & &__delivery-time {
+      display: block;
+      margin: auto;
+      width: auto;
+    }
+    & &__delivery-point {
+      max-width: 250px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    & &__delivery-point &__svg-icon {
+      width: 100%;
+    }
+    & &__delivery-point:before {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+/* /Delivery page */

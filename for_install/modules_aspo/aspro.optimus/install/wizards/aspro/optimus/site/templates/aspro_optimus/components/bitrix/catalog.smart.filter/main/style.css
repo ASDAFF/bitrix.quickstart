@@ -1,0 +1,32 @@
+/*BIZ*/
+.bx_filter .bx_filter_parameter_biz{
+	font-size:15px;
+	display:inline-block;
+	margin-right:10px;
+	text-decoration:none;
+	color:#215968;
+	border-bottom:1px dashed;
+}
+.bx_filter .bx_filter_parameter_biz:hover{
+	text-decoration:none;
+	border-bottom:1px solid;
+}
+.bx_filter .bx_filter_parameter_biz.active{
+	position:relative;
+	padding-left:20px;
+	color:#d54a4a;
+	border-bottom:1px solid;
+}
+.bx_filter .bx_filter_parameter_biz.active:hover{
+	border-bottom:1px dashed;
+}
+.bx_filter .bx_filter_parameter_biz.active:before{
+	position:absolute;
+	top:4px;
+	left:1px;
+	display:block;
+	width:13px;
+	height:13px;
+	content:' ';
+	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAABFElEQVQoz2NgIBJcl+Qzui7J33Vdgo+RWA38NxQknwDp/zekhRoIarghyc94Q15iC5D+f1NJ5v/n7dumE7ZFWqgYbANQ08c1a37+///fAL8GCT7L6zLCf0CaXjbUAdX/j0aWdAJKTACaxookJnJTUeoFyIaHIYH////8ORHZzdw35MTegyRvSAkeAdISYH8oSu4Fid0x0f//5/nzo0BbWOCagBzur0ePvrujp/kf5Aygc54DbZkDYt9UkPj/7czpl0A1ohhuBwra/Lp//809Zwewh8GagfSHpUt+A+VMcXoaKKn45+PHK0/iY8EaX1SUgzyeRDB4gYp4//3+veX9/Hn//379OpPY1ALSyAzEOUDMhksNAKf2po+AEPuKAAAAAElFTkSuQmCC') no-repeat center left;
+}

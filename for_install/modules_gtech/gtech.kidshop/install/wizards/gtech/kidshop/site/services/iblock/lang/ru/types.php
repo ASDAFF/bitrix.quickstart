@@ -1,0 +1,5 @@
+<?
+$MESS ['CATALOGS_TYPE_NAME'] = "Каталоги";
+$MESS ['CATALOGS_SECTION_NAME'] = "";
+$MESS ['CATALOGS_ELEMENT_NAME'] = "";
+?>

@@ -1,0 +1,25 @@
+.bx_topnav{
+	margin: 0;
+	padding: 16px 0 5px;
+}
+.bx_topnav li{
+	display: inline-block;
+	margin-right: 2%;
+}
+.bx_topnav li a{
+	color: #7f8a92;
+	text-decoration: none;
+	font-size: 14px;
+}
+.bx_topnav li a:hover{text-decoration: underline;}
+.bx_topnav li a:active{color: #f82d2d;}
+
+
+.bx_topnav,
+.bx_topnav *{
+		-webkit-transition: all 0.3s ease;
+		   -moz-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		     -o-transition: all 0.3s ease;
+		 		transition: all 0.3s ease;
+	}

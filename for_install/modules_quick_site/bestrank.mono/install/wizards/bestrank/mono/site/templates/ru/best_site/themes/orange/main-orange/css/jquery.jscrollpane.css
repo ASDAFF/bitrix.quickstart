@@ -1,0 +1,138 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 6px;
+	height: 100%;
+	background: #fff;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 15px;
+	/* background: red; */
+}
+
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	box-shadow:0 1px #fff,inset 0 1px 5px rgba(0,0,0,.4);
+	border-radius:5px;
+	background-color:#606060;
+	background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.09),rgba(255,255,255,.09));
+	background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.09),rgba(255,255,255,.09));
+	background-image:-o-linear-gradient(bottom,rgba(0,0,0,.09),rgba(255,255,255,.09));
+	background-image:-ms-linear-gradient(bottom,rgba(0,0,0,.09),rgba(255,255,255,.09));
+	background-image:linear-gradient(to top,rgba(0,0,0,.09),rgba(255,255,255,.09));
+	border:none;
+	position: relative
+}
+
+.jspDrag
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	border-radius:3px;
+	border:1px solid #c2c2c2;
+	text-shadow:0 1px 1px rgba(255,255,255,0.9);
+	background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWVhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background:-moz-linear-gradient(top,#fefefe 0%,#eaeaea 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#fefefe),color-stop(100%,#eaeaea));
+	background:-webkit-linear-gradient(top,#fefefe 0%,#eaeaea 100%);
+	background:-o-linear-gradient(top,#fefefe 0%,#eaeaea 100%);
+	background:-ms-linear-gradient(top,#fefefe 0%,#eaeaea 100%);
+	background:linear-gradient(to bottom,#fefefe 0%,#eaeaea 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe',endColorstr='#eaeaea',GradientType=0)
+}
+
+.jspHorizontalBar .jspTrack
+{
+	float: left;
+	height: 13px;
+}
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 11px;
+}
+
+.jspArrow
+{
+	/* background: #50506d; */
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	/* background: #80808d;  */
+} 
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+.jspHorizontalBar .jspArrow{
+	width: 2px;
+	float: left;
+	height: 100%;
+} 
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+
+.jspCorner
+{
+	/* background: #eeeef4; */
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

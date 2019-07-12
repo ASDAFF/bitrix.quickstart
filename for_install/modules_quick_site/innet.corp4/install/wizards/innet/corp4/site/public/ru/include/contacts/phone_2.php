@@ -1,0 +1,1 @@
+<a href="tel:#COMPANY_PHONE#">#COMPANY_PHONE#</a>

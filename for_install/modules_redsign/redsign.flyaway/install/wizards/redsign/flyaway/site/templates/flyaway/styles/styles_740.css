@@ -1,0 +1,80 @@
+/*
+Error: Undefined variable: "$navbar-padding-horizontal".
+        on line 171 of c:/OpenServer/domains/flyaway/bitrix/templates/flyaway/sass/styles_740.scss
+
+166: 		&_list &__col {
+167: 			height: auto;
+168: 		}
+169: 		
+170: 		&_list &__col_last {
+171: 			padding-left: $navbar-padding-horizontal;
+172: 			border-left-width: 0;
+173: 			line-height: normal;
+174: 		}
+175: 		
+176: 		&_list &__pic {
+
+Backtrace:
+c:/OpenServer/domains/flyaway/bitrix/templates/flyaway/sass/styles_740.scss:171
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$navbar-padding-horizontal\".\A         on line 171 of c:/OpenServer/domains/flyaway/bitrix/templates/flyaway/sass/styles_740.scss\A \A 166: 		&_list &__col {\A 167: 			height: auto;\A 168: 		}\A 169: 		\A 170: 		&_list &__col_last {\A 171: 			padding-left: $navbar-padding-horizontal;\A 172: 			border-left-width: 0;\A 173: 			line-height: normal;\A 174: 		}\A 175: 		\A 176: 		&_list &__pic {"; }

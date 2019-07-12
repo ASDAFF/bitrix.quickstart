@@ -1,0 +1,1 @@
+<a href="http://studiologica.ru/" target="_blank" class="logic_box">Создано с помощью Логики</a>

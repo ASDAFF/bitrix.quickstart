@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2014-01-19T13:01:50">
+<Metadata>
+<Id>news-streetstyle</Id>
+<Title> News</Title>
+<Properties>
+<Property>
+<Id>CML2_ACTIVE</Id>
+<Title>BitrixActive</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_CODE</Id>
+<Title>Code</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_SORT</Id>
+<Title>The Sort</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_ACTIVE_FROM</Id>
+<Title>Start time</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_ACTIVE_TO</Id>
+<Title>End time</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Title>Anons</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_DETAIL_TEXT</Id>
+<Title>Description</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Title>Preview picture</Title>
+<Multiple>false</Multiple>
+</Property>
+</Properties>
+<Sections>
+</Sections>
+</Metadata>
+<Catalog>
+<Id>news-streetstyle</Id>
+<MetadataId>news-streetstyle</MetadataId>
+<Title> News</Title>
+<BitrixCode>news-streetstyle</BitrixCode>
+<BitrixSort>500</BitrixSort>
+<BitrixListURL>#SITE_DIR#news/</BitrixListURL>
+<BitrixDetailURL>#SITE_DIR#news/#ELEMENT_CODE#/</BitrixDetailURL>
+<BitrixSectionURL></BitrixSectionURL>
+<BitrixPicture></BitrixPicture>
+<BitrixIndexElements>true</BitrixIndexElements>
+<BitrixIndexSections>false</BitrixIndexSections>
+<BitrixWorkflow>false</BitrixWorkflow>
+<BitrixLabels>
+<BitrixLabel>
+<Id>ELEMENT_NAME</Id>
+<Value>News</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENTS_NAME</Id>
+<Value>News</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_ADD</Id>
+<Value>Add news</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_EDIT</Id>
+<Value>Edit news</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_DELETE</Id>
+<Value>Delete news</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_NAME</Id>
+<Value></Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTIONS_NAME</Id>
+<Value>Topics</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_ADD</Id>
+<Value>Add</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_EDIT</Id>
+<Value>Edit</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_DELETE</Id>
+<Value>Delete partition</Comment>
+</BitrixLabel>
+</BitrixLabels>
+<Elements>
+<Element>
+<Id>1</Id>
+<Title>Celebrate Halloween with us!!!</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>celebrate-halloween-with-us</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-10-21 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>1 November 2013 we will run the &lt;b&gt;Black Halloween&lt;/b&gt;. In this day in our online-store will be sold black clothes at a discount to the &lt;b&gt;70%&lt;/b&gt; the following brands: 0044, Maison Martin Margiela, &lt;u&gt;SultanWash&lt;/u&gt;, Vivienne Westwood, &lt;u&gt;Grunge John Orchestra&lt;/u&gt;. Hurry and buy, the quantity of goods &lt;b&gt;LIMITED&lt;/b&gt;!!!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>1 November 2013 we will run the &lt;b&gt;Black Halloween&lt;/b&gt;. In this day in our online-store will be sold black clothes at a discount to the &lt;b&gt;70%&lt;/b&gt; the following brands: 0044, Maison Martin Margiela, &lt;u&gt;SultanWash&lt;/u&gt;, Vivienne Westwood, &lt;u&gt;Grunge John Orchestra&lt;/u&gt;. Hurry and buy, the quantity of goods &lt;b&gt;LIMITED&lt;/b&gt;!!!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>8</Id>
+<Title>Brand new online boutique «SergeLand»</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>brand-new-online-store</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-11-15 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>Five new brands appeared in our store, where the known brands of clothes on every day, such as &lt;b&gt;Elizabeth and James&lt;/b&gt; or &lt;b&gt;J Brand&lt;/b&gt;. Now joined by the &lt;b&gt;Bella Luxx&lt;/b&gt, &lt;b&gt;Good hYOUman&lt;/b&gt, &lt;b&gt;Design Tees&lt;/b&gt;new York &lt;b&gt;Paper Denim &Cloth&lt;/b&gt;advocating a relaxed style, monophonic clothes and flat-soled shoes and brand dresses-holders with optical illusions &lt;b&gt;Black Halo&lt;/b&gt;, perfect for any holiday, where you want to look beautiful, but not to attract the attention of all.</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>Five new brands appeared in our store, where the known brands of clothes on every day, such as &lt;b&gt;Elizabeth and James&lt;/b&gt; or &lt;b&gt;J Brand&lt;/b&gt;. Now joined by the &lt;b&gt;Bella Luxx&lt;/b&gt, &lt;b&gt;Good hYOUman&lt;/b&gt, &lt;b&gt;Design Tees&lt;/b&gt;new York &lt;b&gt;Paper Denim &Cloth&lt;/b&gt;advocating a relaxed style, monophonic clothes and flat-soled shoes and brand dresses-holders with optical illusions &lt;b&gt;Black Halo&lt;/b&gt;, perfect for any holiday, where you want to look beautiful, but not to attract the attention of all.</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>9</Id>
+<Title>Sending packages</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>sending-parcels</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-12-01 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>Hasten to inform You that due to delays in Mail Russia before the new year holidays, a parcel of 10 December to 15 January, will be &lt;b&gt;sent, provided 1OO% pre-payment&lt;/b&gt;. Parcels can be sent to other transport companies, according to Your wishes!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>Hasten to inform You that due to delays in Mail Russia before the new year holidays, a parcel of 10 December to 15 January, will be &lt;b&gt;sent, provided 1OO% pre-payment&lt;/b&gt;. Parcels can be sent to other transport companies, according to Your wishes!
+</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>144</Id>
+<Title>Wine for your purchase!</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>wine-for-purchase</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-06-01 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>From now until the end of the summer to everyone who will make a purchase at our online store more than 5,000 roubles, &lt;b&gt;we give a bottle of excellent ros&amp;#233;&lt;/b&gt;( rose wine)! relax in European style with &amp;quot;SergeLand&amp;quot;!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>From now until the end of the summer to everyone who will buy in the our online store more than 5,000 roubles, &lt;b&gt;we give a bottle of excellent ros&amp;#233;&lt;/b&gt;( rose wine)! relax in European style with &amp;quot;SergeLand&amp;quot;!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>145</Id>
+<Title>BLACKBOOK MAG</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>we-blackbook-mag</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-04-20 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>About us already wrote &lt;b&gt;Superfuture news&lt;/b&gt;now, here is &lt;b&gt;Blackbook Mag&lt;/b&gt;. We have included in the &lt;u&gt;Blackbook guide&lt;/u&gt;. Oh.. how I want to open a shop somewhere in new York!..</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>About us already wrote &lt;b&gt;Superfuture news&lt;/b&gt;now, here is &lt;b&gt;Blackbook Mag&lt;/b&gt;. We have included in the &lt;u&gt;Blackbook guide&lt;/u&gt;. Oh.. how I want to open a shop somewhere in new York!..</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>146</Id>
+<Title>Sunny Sale - 30%</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>sunny-sale</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-09-10 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>Great news for all! Today in our store starts a big summer sale on men's and women's clothing, shoes and accessories, discount &lt;b&gt;30% for ALL!!!&lt;/b&gt; + &lt;u&gt;free Express delivery on the whole Russia!&lt;/u&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>Great news for all! Today in our store starts a big summer sale on men's and women's clothing, shoes and accessories, discount &lt;b&gt;30% for ALL!!!&lt;/b&gt; + &lt;u&gt;free Express delivery on the whole Russia!&lt;/u&gt;
+&lt;br&gt;&lt;br&gt;
+When ordering on the website, use promo code: &lt;b&gt;SERGELAND30&lt;/b&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>147</Id>
+<Title>Gift of life!</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>give-life</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-12-15 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>Friends! We are launching the annual new year's share Fund &amp;nbsp;the gift of life!&amp;rdquo;.&lt;br&gt;
+In the period from 15 December to 7 January (inclusive), &lt;b&gt;14%&lt;/b&gt; with each purchased items at the shop &amp;laquo;SergeLand&amp;raquo; translated into the Fund &amp;nbsp;the gift of life!&amp;rdquo;, which pays the operation of children with cancer.
+
+</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>&lt;p&gt;Friends! We are launching the annual new year's share Fund &amp;nbsp;the gift of life!&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt; the period from 15 December to 7 January (inclusive), &lt;b&gt;14%&lt;/b&gt; with each purchased items at the shop &amp;laquo;SergeLand&amp;raquo; translated into the Fund &amp;nbsp;the gift of life!&amp;rdquo;, which pays the operation of children with cancer.&lt;/p&gt;
+
+&lt;i&gt;Together we can do much more! (C)&lt;/i&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>148</Id>
+<Title>Will Refund 50% of the cost down jacket</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>refund-50-of-the-down-jacket</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-03-10 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>With 10.03.2013 on 10.04.2013 when buying in a shop down-padded coat or jacket women's, men's or children's collection, you will receive a discount of 50% from cost of down-padded coat or jacket. Promotional code &lt;strong&gt;SERGELAND50&lt;/strong&gt;!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>With 10.03.2013 on 10.04.2013 when buying in a shop down-padded coat or jacket women's, men's or children's collection, you will receive a discount of 50% from cost of down-padded coat or jacket. Promotional code &lt;strong&gt;SERGELAND50&lt;/strong&gt;!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>149</Id>
+<Title>Second dress for half the price!</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>second-dress-for-half-price</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-07-15 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>In the period from July 15 to August 17, 2013, all the stores of our network there are special discounts dresses and summer dresses of the women's and children's collections: all shoppers can get discount &lt;b&gt;50%&lt;/b&gt; the second thing!</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>&lt;p&gt;In the period from July 15 to 17 August 2013 inclusive, all the stores of our network there are special discounts dresses and summer dresses of the women's and children's collections: all shoppers can get discount &lt;b&gt;50%&lt;/b&gt; the second thing!&lt;/p&gt;
+
+&lt;p&gt;Discount &lt;b&gt;50%&lt;/b&gt; is when you hit the check 2 units of goods of the same category (dress + dress + skirt) and is available to the product with the least cost&lt;/p&gt;
+
+&lt;p&gt;Use your chance of a good update summer wardrobe! A pleasant shopping and see you in the &amp;quot;SergeLand&amp;quot;!&lt;/p&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value></Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+</Elements>
+</Catalog>
+</CommerceInformation>

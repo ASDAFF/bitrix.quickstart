@@ -1,0 +1,175 @@
+/* Zahalski Andrew (mlife_development@mail.ru) */
+
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;overflow:hidden;}
+body {line-height:1.0;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+html {font-size:100.01%;overflow-y:scroll;}
+body {font-family: 'Arial', 'Helvetica CY', 'Nimbus Sans L', sans-serif;font-size:14px;background:#ffffff;color:#3b3b3b;}
+*:first-child+html body {overflow-y:hidden;}
+a {color:#009fd4;text-decoration:underline;outline:none;}
+a:hover {color:#4F4F4E;}
+.clear {clear:both;}
+
+#mlfSite {width:100%;min-width:980px;margin:auto;clear:both;}
+
+.wrap980 {display:block;margin:auto;width:980px;min-width:980px;overflow:hidden;}
+.mlfShap {width:100%;clear:both;display:block;background:#ffffff;overflow:hidden;}
+.mlfShap .logo {width:60%;float:left;display:block;overflow:hidden;padding:10px 0;}
+.mlfShap .logo img {float:left;margin-right:20px;margin-top:10px;}
+.mlfShap .logo h1 {color:#bd0000;font-size:36px;padding:5px 0 0 0;text-transform:uppercase;}
+.mlfShap .logo h2 {color:#ff0000;font-size:24px;padding-bottom:5px;}
+
+.mlfShap .phoneTop {width:35%;float:right;display:block;overflow:hidden;padding:20px 0}
+.mlfShap .phoneTop .phone, .mlfFoot .phoneBottom .phone {width:100%;display:block;text-align:right;overflow:hidden;font-size:30px;}
+.mlfShap .phoneTop .phone b, .mlfFoot .phoneBottom .phone b {font-weight:normal;color:#ff0101;}
+.mlfShap .zvonok, .mlfFoot .zvonok {display:block;width:100%;clear:both;margin-top:5px;text-align:right;}
+.mlfShap .zvonok a, .mlfFoot .zvonok a {color:#24e07c;border-bottom:1px dashed #24e07c;padding-bottom:0px;font-size:14px;text-decoration:none;}
+.mlfShap .zvonok a:hover, .mlfFoot .zvonok a:hover {color:#05a751;border-bottom:1px dashed #05a751;}
+
+.mlfContent {display:block;clear:both;width:100%;overflow:hidden;background:url('images/bg.jpg') 50% 0;height:733px;}
+.mlfContent .text {display:block;width:100%;clear:both;text-align:center;font-size:48px;color:#ff0101;text-transform:uppercase;padding-top:40px;line-height:54px;font-weight:bold;height:162px;}
+
+.mlfContent .share {width:790px;height:390px;margin:auto;clear:both;display:block;margin-top:40px;overflow:visible;}
+.mlfContent .share .wrapshare {position:relative;top:0;left:0;z-index:2;width:100%;height:390px;display:block;background:url('images/bg_share.png') 0 0 no-repeat;overflow:visible;}
+.mlfContent .share .contekstShare {position:absolute;top:10px;left:10px;z-index:3;width:430px;height:360px;}
+.mlfContent .share .formShare {position:absolute;top:-1px;right:0px;z-index:3;width:335px;height:376px;border:2px solid #ffffff;border-radius:3px;background:#8dc63f;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.mlfContent .share .contekstShare .desc {color:#2f2f2f;font-size:30px;line-height:34px;text-align:center;width:80%;clear:both;display:block;margin:auto;padding:15px 0 10px 0;}
+.mlfContent .share .contekstShare .skidka {display:block;width:60%;clear:both;margin:auto;padding:20px 10px;text-align:center;background:#ff0101;
+font-size:30px;color:#ffffff;font-weight:bold;margin-top:20px;}
+.mlfContent .share .contekstShare .counterTitle {width:100%;text-align:center;clear:both;margin-top:40px;font-size:18px;color:#000000;text-transform:uppercase;display:block;}
+
+.mlfContent .share .contekstShare .countdownHolder {width:377px;height:100px;margin:auto;clear:both;display:block;margin-top:10px;}
+.mlfContent .share .contekstShare .countdownHolder .countDays,
+.mlfContent .share .contekstShare .countdownHolder .countHours,
+.mlfContent .share .contekstShare .countdownHolder .countMinutes,
+.mlfContent .share .contekstShare .countdownHolder .countSeconds {
+	display:block;width:88px;float:left;height:100px; margin: 0 3px;
+}
+.mlfContent .share .contekstShare .countdownHolder .position {width:41px;height:59px;display:block;position:relative;float:left;margin:0 1px;background:url('images/counter.png') 0 0 no-repeat;}
+.mlfContent .share .contekstShare .countdownHolder .countDiv {clear:both;display:block;width:100%;padding:5px 0;font-size:14px;text-align:center;color:#000000;}
+.mlfContent .share .contekstShare .countdownHolder .digit, .mlfContent .share .contekstShare .countdownHolder .static {position:absolute;top:0;left:0;width:41px;height:59px;}
+.mlfContent .share .contekstShare .countdownHolder .digit b, .mlfContent .share .contekstShare .countdownHolder .static b {display:block;width:100%;height:100%;background:url('images/counter.png') 0 0 no-repeat;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_0 {background-position:0 -570px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_1 {background-position:0 -57px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_2 {background-position:0 -115px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_3 {background-position:0 -171px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_4 {background-position:0 -228px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_5 {background-position:0 -284px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_6 {background-position:0 -342px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_7 {background-position:0 -399px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_8 {background-position:0 -456px;}
+.mlfContent .share .contekstShare .countdownHolder b.bgc_item_9 {background-position:0 -513px;}
+.mlfContent .share .contekstShare .countdownHolder .static b {opacity:0.6;}
+.mlfContent .share .contekstShare .countdownHolder .digit b {opacity:1;}
+
+/*Форма акция*/
+.mlfContent .share .formShare   h4 {display:block;width:100%;color:#ffffff;font-weight:bold;font-size:24px;text-transform:uppercase;padding:15px 0% 5px 0%;text-align:center;}
+.mlfContent .share .formShare   p {display:block;width:100%;color:#ffffff;font-size:16px;padding:0px 0% 5px 0%;line-height:20px;text-align:center;}
+.mlfContent .share .formShare  .wrapfield {width:80%;display:block;margin:auto;overflow:hidden;}
+.mlfContent .share .formShare  .wrapfield .bg1 {display:block;width:100%;height:100%;background:none;position:relative;}
+.mlfContent .share .formShare  .wrapfield .bg2 {display:block;width:100%;height:100%;background:none;width:331px;padding:10px 20px;}
+.mlfContent .share .formShare  .wrapfield .name, .mlfContent .share .formShare  .wrapfield .phone, .mlfContent .share .formShare  .wrapfield .mess, 
+.mlfContent .share .formShare  .wrapfield .email, .mlfContent .share .formShare  .wrapfield .button 
+{width:100%;display:block;padding:15px 0 0 0;clear:both;position:relative;overflow:hidden;clear:both;}
+.mlfContent .share .formShare  .wrapfield input.mlfinp,  .mlfContent .share .formShare  .wrapfield textarea.mlftarea 
+{padding:5px 10px;width:85%;height:35px;line-height:35px;color:#b0afaf;font-size:18px;
+background:#ffffff;
+border-radius:5px;
+border:none;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+font-family:'Arial';
+}
+.mlfContent .share .formShare  .wrapfield textarea.mlftarea {height:90px;line-height:22px;resize:none;}
+.mlfContent .share .formShare  .wrapfield .button a {background:url('images/button.png') 0 0 no-repeat;width:249px;height:62px;display:block;margin:auto;color:#4f4f4f;font-size:30px;text-align:center;
+line-height:62px;text-decoration:none;margin-bottom:10px;
+}
+.mlfContent .share .formShare  .wrapfield .button a:hover {background-position: 0 100%;}
+.mlfContent .share .formShare  .wrapfield .bg1 {position:relative;}
+.mlfContent .share .formShare  .preload {width:100%;height:100%;position:absolute;top:0;display:block;z-index:4;background: url('images/formbg.png') 0 0 repeat;}
+.mlfContent .share .formShare  .preload .load {background: url('images/load.gif') 50% 50% no-repeat;display:block;width:100%;height:100%;}
+.mlfContent .share .formShare  .fielderror {position:absolute;top:5px;left:5px;padding:5px;font-size:12px;background:#FF0101;color:#ffffff;border-radius:5px;}
+.mlfContent .share .formShare  .fielderrordesc {padding:10px 0;text-align:center;color:#555555;font-size:16px;line-height:20px;text-transform:uppercase;}
+.mlfContent .share .formShare .descerr {display:block;width:80%;margin:auto;display:block;color:#ffffff;font-size:22px;line-height:28px;text-align:center;padding-top:50px;}
+.mlfContent .share .formShare  .wrapfield .name input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 12px no-repeat;}
+.mlfContent .share .formShare  .wrapfield .phone input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 -78px no-repeat;}
+.mlfContent .share .formShare  .wrapfield .email input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 -167px no-repeat;}
+
+.mlfQuest {display:block;width:100%;clear:both;overflow:hidden;background:#ffffff;}
+.mlfQuest h4 {display:block;width:100%;clear:both;padding:30px 0 10px 0;text-align:center;color:#555555;font-size:60px;font-weight:bold;text-transform:uppercase;}
+.mlfQuest h4 b {color:#fbd140;}
+.mlfQuest .formlink {display:block;width:100%;clear:both;margin-bottom:30px;text-align:center;}
+.mlfQuest .formlink a {font-size:30px;color:#ff0101;padding-bottom:3px;border-bottom: 1px dashed #ff0101;text-decoration:none;}
+.mlfQuest .formlink a:hover {color:#810101;border-bottom: 1px dashed #810101;}
+
+.mlfFoot {display:block;width:100%;clear:both;border-top:2px solid #ff0101;overflow:hidden;}
+.mlfFoot .phoneBottom {width:35%;float:left;display:block;overflow:hidden;padding:20px 0}
+.mlfFoot .developer {width:45%;float:right;display:block;overflow:hidden;padding:30px 0 0 0;}
+.mlfFoot .developer .ancor {display:block;color:#000000;text-transform:uppercase;font-size:14px;line-height:32px;float:left;}
+.mlfFoot .developer a {padding-left:80px;font-size:14px;color:#000000;display:block;float:left;background:url('images/mlife.png') 25px 50% no-repeat;line-height:16px;text-decoration:none;}
+
+.modalform {display:block;position:fixed;width:100%;height:100%;min-width:980px;background: url('images/formbg.png') 0 0 repeat;z-index:20;top:0;}
+.modalform .wrap {display:block;width:680px;max-height:80%;margin:0 auto;overflow-x:hidden;overflow-y:auto;background:#91c44a;}
+.modalform .wrap {width:680px;
+border-radius: 10px;border:1px solid #ffffff;
+}
+.modalform .wrap .bg1 {display:block;width:100%;height:100%;position:relative;}
+.modalform .wrap .bg2 {display:block;width:100%;height:100%;width:640px;padding:10px 20px;}
+.modalform .wrap .title{display:block;padding:10px 0 10px 0;color:#ffffff;font-size:36px;font-weight:bold;text-align:center;clear:both;width:100%;text-transform:uppercase;margin-top:10px;}
+.modalform .wrap .desc {display:block;padding:0 0 10px 0;width:100%;clear:both;color:#000000;font-size:18px;font-weight:normal;text-align:center;}
+.modalform .wrap .name, .modalform .wrap .phone, .modalform .wrap .mess, .modalform .wrap .button, .modalform .wrap .email
+{width:100%;display:block;padding:20px 0 0 0;clear:both;position:relative;}
+.modalform .wrap input.mlfinp,  .modalform .wrap textarea.mlftarea {padding:5px 10px;width:93%;height:40px;line-height:40px;color:#b0afaf;font-size:18px;
+background:#ffffff;
+border-radius:5px;
+border:none;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75) inset;
+font-family:'Arial';
+}
+.modalform .wrap .name input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 14px no-repeat;}
+.modalform .wrap .name {width:30%;float:left;margin-left:15%;clear:none;}
+.modalform .wrap .phone input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 -75px no-repeat;}
+.modalform .wrap .phone {width:30%;float:left;margin-left:7%;clear:none;}
+.modalform .wrap .email input {padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 -164px no-repeat;}
+
+.modalform .wrap textarea.mlftarea {height:140px;line-height:22px;resize:none;}
+.modalform .wrap .button a {background:url('images/button.png') 0 0 no-repeat;width:249px;height:62px;display:block;margin:auto;color:#4f4f4f;font-size:30px;text-align:center;
+line-height:62px;text-decoration:none;margin-bottom:10px;
+}
+.modalform .wrap .button a:hover {background-position: 0 100%;}
+.modalform .wrap .closewrap {display:block;width:100%;clear:both;overflow:visible;position:absolute;top:0;z-index:2;}
+.modalform .wrap .closewrap .close {display:block;width:35px;height:35px;float:right;background:url('images/close.png') 0 0 no-repeat;margin-right:35px;margin-top:10px;}
+.modalform .wrap .closewrap .close:hover {cursor:pointer;background-position: 0 100%;}
+.modalform .wrap .preload {width:100%;height:100%;position:absolute;top:0;display:block;z-index:2;background: url('images/formbg.png') 0 0 repeat;border-radius:5px;}
+.modalform .wrap .preload .load {background: url('images/load.gif') 50% 50% no-repeat;display:block;width:100%;height:100%;}
+.modalform .wrap .fielderror {position:absolute;top:5px;left:5px;padding:5px;font-size:12px;background:#FF0101;color:#ffffff;border-radius:5px;}
+.modalform .wdetail .closewrap {position:fixed;z-index:25;width:25px;margin-left:585px;margin-top:-20px;}
+.modalform .wdetail {width:600px;padding: 5px 10px 10px 10px;overflow-y:auto;} 
+.modalform .wdetail .ajaxdescr {display:block;width:100%;overflow:hidden;padding-top:10px;line-height:18px;}
+.modalform .wdetail .ajaxdescr  img {max-width:100%;height:auto;}
+.modalform .wdetail .ajaxdescr p {padding-bottom:10px;font-size:14px;line-height:18px;}
+.modalform .wrapform {position:relative;top:0;z-index:1;}
+
+#modalform2 .wrapfield {width:40%;float:left;margin-left:5%;}
+#modalform2 .wrap .name {width:80%;float:none;margin-left:15%;clear:both;}
+#modalform2 .wrap .phone {width:80%;float:none;margin-left:15%;clear:both;}
+#modalform2 .wrap .email {width:80%;float:none;margin-left:15%;clear:both;}
+#modalform2 .wrapmess {width:40%;float:left;display:block;margin-left:5%;}
+#modalform2 .wrapmess textarea {height:180px;padding-left:30px;background:#ffffff url('images/fotm_inp_bg.png') 0 -254px no-repeat;}
+
+.close {cursor:pointer;}

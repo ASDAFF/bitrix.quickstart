@@ -1,0 +1,13 @@
+<?
+$MESS["WZD_OPTION_BANNER_CATALOG_1"] = "Picture1";
+$MESS["WZD_OPTION_BANNER_CATALOG_2"] = "Picture";
+$MESS["WZD_OPTION_BANNER_CATALOG_3"] = "Activity";
+$MESS["WZD_OPTION_BANNER_CATALOG_4"] = "Sort";
+$MESS["WZD_OPTION_BANNER_CATALOG_5"] = "*Name";
+$MESS["WZD_OPTION_BANNER_CATALOG_6"] = "Picture";
+$MESS["WZD_OPTION_BANNER_CATALOG_7"] = "Link";
+$MESS["WZD_OPTION_BANNER_CATALOG_8"] = "Description for image";
+
+$MESS["WZD_OPTION_BANNER_CATALOG_301"] = "Service";
+$MESS["WZD_OPTION_BANNER_CATALOG_302"] = "External code (used when re-importing items)";
+?>

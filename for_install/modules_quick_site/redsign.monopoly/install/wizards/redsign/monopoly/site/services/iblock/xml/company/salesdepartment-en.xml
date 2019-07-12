@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:44:36">
+	<Metadata>
+		<Id>salesdepartment_redsign_monopoly</Id>
+		<Title>Sales department</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+		</Properties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>salesdepartment_redsign_monopoly</Id>
+		<MetadataId>salesdepartment_redsign_monopoly</MetadataId>
+		<Title>Sales department</Title>
+		<BitrixCode>salesdepartment_redsign_monopoly</BitrixCode>
+		<BitrixSort>810</BitrixSort>
+		<BitrixListURL>#SITE_DIR#about/emploeye/sales_department/</BitrixListURL>
+		<BitrixDetailURL></BitrixDetailURL>
+		<BitrixSectionURL></BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>78</Id>
+				<Title>Yevgeny Stepanov</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>100</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Senior manager
+E-mail: manager@monopoly.ru
+Phone: +7 999 888 77 66</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>salesdepartment_files/iblock/1d0/1d0c1997f38819b48a869e8001488699.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>79</Id>
+				<Title>Svetlana Semechkina</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>200</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Sales Manager
+Phone: +7 111 222 33 44</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>salesdepartment_files/iblock/73f/73f28be4e8073e86914d2434e3ade2a4.jpg</Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

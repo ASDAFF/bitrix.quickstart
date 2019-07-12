@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2016-04-06T18:20:12">
+	<Классификатор>
+		<Ид>history-effortless</Ид>
+		<Наименование>История компании</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>61</Ид>
+				<Наименование>Цветной заголовок</Наименование>
+				<Множественное>false</Множественное>
+				<ВариантыЗначений>
+					<Значение>YES</Значение>
+					<Вариант>
+						<Ид>YES</Ид>
+						<Значение>YES</Значение>
+						<ПоУмолчанию>false</ПоУмолчанию>
+						<Сортировка>10</Сортировка>
+					</Вариант>
+				</ВариантыЗначений>
+				<БитриксСортировка>10</БитриксСортировка>
+				<БитриксКод>COLOR</БитриксКод>
+				<БитриксТипСвойства>L</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>C</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>278</Ид>
+				<Наименование>Иконка</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>20</БитриксСортировка>
+				<БитриксКод>ICON</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>50</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:11:&quot;fa-calendar&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>61</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>278</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>history-effortless</Ид>
+		<ИдКлассификатора>history-effortless</ИдКлассификатора>
+		<Наименование>История компании</Наименование>
+		<БитриксКод>history-effortless</БитриксКод>
+		<БитриксСортировка>170</БитриксСортировка>
+		<БитриксURLСписок>#</БитриксURLСписок>
+		<БитриксURLДеталь>#</БитриксURLДеталь>
+		<БитриксURLРаздел>#</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>false</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>false</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Описание</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Описание</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить описание</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить описание</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить описание</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>73</Ид>
+				<Наименование>2016</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>40</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>61</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>278</Ид>
+						<Значение>fa-calendar</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-calendar</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>74</Ид>
+				<Наименование>2015</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>30</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h4&gt;
+&lt;p&gt;Perspiciatis necessitatibus accusamus eligendi ducimus architecto reiciendis odit officiis? Alias repellendus veritatis consectetur, aliquam laborum possimus dolorem quidem, sit saepe explicabo sint.&lt;/p&gt;
+&lt;h4&gt;Nostrum, consequuntur laudantium ea suscipit minima&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, consequuntur laudantium ea suscipit minima aliquid vitae possimus dolor voluptatibus autem minus alias quos praesentium debitis veniam nemo et odit dolores!&lt;/p&gt;
+&lt;p&gt;Alias odio, cupiditate sed, possimus aut quasi ullam. Provident dicta, officia sunt quis doloribus sed nobis, fuga ab repudiandae. Quam atque, consequuntur non nesciunt enim dolores incidunt quis officiis voluptate est asperiores mollitia quia accusamus a nulla architecto repellendus placeat. Explicabo cum nihil, recusandae numquam repudiandae temporibus aliquid saepe ea nobis aliquam vero eaque odit doloribus tempore dicta ratione! Rerum numquam doloribus delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium unde perferendis beatae asperiores aspernatur vero, veritatis! Vel libero cum, culpa odio, est totam eaque, ipsam voluptates saepe, quo id!&lt;/p&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>61</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>278</Ид>
+						<Значение>fa-calendar</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-calendar</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>75</Ид>
+				<Наименование>2014</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>20</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>61</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>278</Ид>
+						<Значение>fa-calendar</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-calendar</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>76</Ид>
+				<Наименование>2013</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>10</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;h4&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h4&gt;
+&lt;p&gt;Perspiciatis necessitatibus accusamus eligendi ducimus architecto reiciendis odit officiis? Alias repellendus veritatis consectetur, aliquam laborum possimus dolorem quidem, sit saepe explicabo sint.&lt;/p&gt;
+&lt;h4&gt;Nostrum, consequuntur laudantium ea suscipit minima&lt;/h4&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, consequuntur laudantium ea suscipit minima aliquid vitae possimus dolor voluptatibus autem minus alias quos praesentium debitis veniam nemo et odit dolores!&lt;/p&gt;
+&lt;p&gt;Alias odio, cupiditate sed, possimus aut quasi ullam. Provident dicta, officia sunt quis doloribus sed nobis, fuga ab repudiandae. Quam atque, consequuntur non nesciunt enim dolores incidunt quis officiis voluptate est asperiores mollitia quia accusamus a nulla architecto repellendus placeat. Explicabo cum nihil, recusandae numquam repudiandae temporibus aliquid saepe ea nobis aliquam vero eaque odit doloribus tempore dicta ratione! Rerum numquam doloribus delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta praesentium unde perferendis beatae asperiores aspernatur vero, veritatis! Vel libero cum, culpa odio, est totam eaque, ipsam voluptates saepe, quo id!&lt;/p&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>61</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>278</Ид>
+						<Значение>fa-calendar</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-calendar</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

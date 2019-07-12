@@ -1,0 +1,41 @@
+
+@brandPrimary: #ababab;
+@brandSecondary: #5b5b5b;
+
+@brand-primary: @brandPrimary;
+@brand-secondary: @brandSecondary;
+
+.brand-primary {color: @brand-primary;}
+.brand-secondary {color: @brand-secondary;}
+
+@link-color: @brand-secondary;//darken(@brand-primary, 23%);
+@link-hover-color: darken(@link-color, 5%);
+@component-active-bg: @brand-primary;
+@btn-default-color: @link-color;
+@btn-primary-bg: @brand-primary;
+@btn-primary-border: darken(@btn-primary-bg, 5%);
+@dropdown-link-active-bg: @component-active-bg;
+@nav-pills-active-link-hover-bg: @component-active-bg;
+@pagination-color: @link-color;
+@pagination-active-bg: @brand-secondary;
+@pagination-active-border: @brand-secondary;
+@pager-active-bg: @pagination-active-bg;
+@label-primary-bg: @brand-primary;
+@progress-bar-bg: @brand-primary;
+@list-group-active-bg: @component-active-bg;
+@list-group-active-border: @list-group-active-bg;
+@list-group-active-text-color: lighten(@list-group-active-bg, 40%);
+@panel-primary-border: @brand-primary;
+@panel-primary-heading-bg: @brand-primary;
+@badge-active-color: @link-color;
+@carousel-control-color: @link-color;
+@popover-bg:                          @brand-secondary;
+@popover-border-color:                @brand-secondary;
+@popover-title-bg:                    darken(@popover-bg, 3%);
+@popover-arrow-color:                 @brand-secondary;
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+@import url("bootstrap.less");
+@import url("template_styles.less");
+@import url("components.less");

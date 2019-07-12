@@ -1,0 +1,21 @@
+<?
+$MESS['EMARKET_COMMENTS_TITLE'] = 'Customer Reviews ';
+$MESS['EMARKET_COMMENTS_BT_SHOW'] = 'Leave a comment ';
+$MESS['EMARKET_COMMENTS_BT_ADD'] = 'Publish';
+$MESS['EMARKET_COMMENTS_BT_CANCEL'] = 'Cancel';
+$MESS['EMARKET_COMMENTS_BT_COMPLAIN'] = 'Complain';
+$MESS['EMARKET_COMMENTS_BT_COMPLAIN_SEND'] = 'Complain send';
+$MESS['EMARKET_COMMENTS_MESS_ADV'] = 'Pluses:';
+$MESS['EMARKET_COMMENTS_MESS_LIM'] = 'Limitations:';
+$MESS['EMARKET_COMMENTS_MESS_COMM'] = 'Comment:';
+$MESS['EMARKET_COMMENTS_TITLE_CAPTCHA'] = 'Code:';
+$MESS['EMARKET_COMMENTS_NOCOMMENT'] = 'Be the first to review.';
+$MESS['EMARKET_COMMENTS_ANONYM'] = 'Anonym';
+$MESS['EMARKET_COMMENTS_USER_NAME'] = 'Your name';
+$MESS['EMARKET_COMMENTS_RATING_OVERALL'] = 'Overall rating';
+$MESS['EMARKET_COMMENTS_RATING_SHOW'] = 'Detailed assessment';
+$MESS['EMARKET_COMMENTS_TERM_OF_USE'] = 'Term of use';
+$MESS['EMARKET_COMMENTS_TIME_1'] = 'Less than a month ';
+$MESS['EMARKET_COMMENTS_TIME_2'] = 'Not more than a year ';
+$MESS['EMARKET_COMMENTS_TIME_3'] = 'More than a year';
+?>

@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Преимущества", 
+		"#features", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О нас", 
+		"#about", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Цены", 
+		"#pricing", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сотрудники", 
+		"#team", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Галерея", 
+		"#gallery", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"#contact", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

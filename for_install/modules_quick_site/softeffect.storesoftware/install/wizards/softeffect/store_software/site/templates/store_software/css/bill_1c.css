@@ -1,0 +1,181 @@
+body {
+font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+table.invoice_preview_account {
+    width: 100%;
+    margin-bottom: 45px;
+
+}
+
+.invoice_preview span.label {
+    color: #C0C0C0;
+}
+
+table.invoice_preview_account caption {
+    font-size: 0.84em;
+    text-align: left;
+    padding: 0 0 3px 3px;
+}
+
+table.invoice_preview_account td {
+    font-size: 0.84em;
+    border: 1px solid #c0c0c0;
+    padding: 2px 3px;
+    vertical-align: bottom;
+}
+
+h3 {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+#invoice_conteiner { 
+    width: 800px; 
+    padding: 20px;
+    padding: 40px; 
+   
+    float: left;
+	font-size: 0.84em;
+	line-height: 18px;
+   }
+
+table.invoice_preview_items {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+table.invoice_preview_items td {
+    font-size: 0.84em;
+    vertical-align: top;
+}
+
+table.invoice_preview_items td {
+    font-size: 0.84em;
+    border: 1px solid #c0c0c0;
+    padding: 10px 3px;
+}
+
+table.invoice_preview_items tbody td {
+    padding: 12px 3px;  
+}
+
+table.invoice_preview_items thead td {
+    background-color: #e7f1ff;
+    border-color: #5e823f;
+    border-bottom: none;
+    border: 1px solid #c0c0c0;
+}
+
+table.invoice_preview_items tr.amount td {
+    padding: 3px;
+}
+
+table.invoice_preview_items tr.amount td.label {
+    border: none;
+    text-align: right;
+}
+
+table.invoice_preview_items td.number {
+    text-align: right;
+    white-space: nowrap;
+}
+
+table.invoice_preview_items tr.amount td.number {
+    padding-left: 10px;
+}
+
+table.invoice_preview_items tr.amount td.amount {
+    font-weight: bold;
+}
+
+table.signature {
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+table.signature td {
+    border-bottom: 1px solid #000;
+    width: 99%;
+    font-size: 0.84em;
+    text-align: right;
+}
+
+table.signature td.label {
+    border: none;
+    width: 1%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+
+table {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table,
+td,
+th,
+form,
+ul,
+ol,
+dl,
+dd,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol,
+dl,
+p {
+	margin-bottom: 1.5em;
+}
+
+li {
+	margin: 0 0 1em 0;
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+a {
+	color: #00f;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.bold {
+	font-weight: bold;	
+}
+
+span.label {
+    color: #C0C0C0;
+	
+    line-height: 1.2em;
+	}
+	
+table.payers td {
+    line-height: 16px;
+	font-size: 80%;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+	}
+	
+.dogovor_name
+	{
+		padding-top: 60px;
+		width: 1000px;
+		float: center;
+		margin-left: 250px;
+	}

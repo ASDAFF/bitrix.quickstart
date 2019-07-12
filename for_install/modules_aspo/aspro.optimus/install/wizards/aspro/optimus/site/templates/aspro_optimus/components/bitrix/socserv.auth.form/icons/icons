@@ -1,0 +1,3 @@
+<?
+$arResult["AUTH_FORGOT_PASSWORD_URL"] = $arParams["PROFILE_URL"]."?forgot_password=yes";
+?>

@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Политика качества", 
+		"#SITE_DIR#about/quality_policy/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Корпоративным клиентам", 
+		"#SITE_DIR#about/corporate_clients/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнеры", 
+		"#SITE_DIR#about/partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"#SITE_DIR#about/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Реквизиты", 
+		"#SITE_DIR#about/contacts/props/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"#SITE_DIR#about/reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,8 @@
+<?
+$MESS['MLIFE_SHARECOUNT_SHARE'] = "Акция!";
+$MESS['MLIFE_SHARECOUNT_FIN'] = "до окончания акции:";
+$MESS['MLIFE_SHARECOUNT_TEXT_D'] = "дней";
+$MESS['MLIFE_SHARECOUNT_TEXT_H'] = "часов";
+$MESS['MLIFE_SHARECOUNT_TEXT_M'] = "минут";
+$MESS['MLIFE_SHARECOUNT_TEXT_S'] = "секунд";
+?>

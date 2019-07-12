@@ -1,0 +1,3 @@
+<?
+$MESS["MLIFE_ASZ_WZD_OPTION_CATALOG_1"] = "";
+?>

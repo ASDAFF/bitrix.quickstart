@@ -1,0 +1,1 @@
+<?$MESS["MLIFE_ASZ_BASKET_SMALL_T_TOVAR"] = "Товаров";$MESS["MLIFE_ASZ_BASKET_SMALL_T_SUMM"] = "на сумму";$MESS["MLIFE_ASZ_BASKET_SMALL_T_EMPTY"] = "Ваша корзина пуста";?>

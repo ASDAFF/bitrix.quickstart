@@ -1,0 +1,41 @@
+.mlf_menu_horizontal {width:100%;margin:auto;display:block;overflow:visible;position:relative;}
+.mlf_menu_horizontal ul.level1{
+	padding: 0 0 0 0;
+	background: #E91653; /* for non-css3 browsers */ 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990099', endColorstr='#E91653'); /* для IE6-9 */
+	background: -webkit-linear-gradient(left, #990099, #E91653); /* для webkit-браузеров */
+	background: -moz-linear-gradient(left,  #990099,  #E91653); /* для firefox 3.6+ */ 
+	background: -o-linear-gradient(left,  #990099,  #E91653); /* для Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #990099,  #E91653); /* для IE10+ */
+	display:block;
+	overflow:hidden;
+	height:30px;
+}
+.mlf_menu_horizontal ul.level1 .line {display:block;width:50px;float:right;display:block;height:30px;background:#ffffff;}
+.mlf_menu_horizontal ul.level1 .line .line1 {display:block;width:40px;height:6px;background:#E91653;clear:both;}
+.mlf_menu_horizontal ul.level1 .line .line2 {display:block;width:15px;height:6px;background:#E91653;clear:both;}
+.mlf_menu_horizontal ul.level1 .line .line3 {display:block;width:50px;height:6px;background:#E91653;clear:both;}
+.mlf_menu_horizontal ul.level1 .line .line4 {display:block;width:0px;height:6px;background:#E91653;clear:both;}
+.mlf_menu_horizontal ul.level1 .line .line5 {display:block;width:30px;height:6px;background:#E91653;clear:both;}
+.mlf_menu_horizontal ul.level1 li {list-style:none;display:inline-block;float:left;}
+.mlf_menu_horizontal ul.level1 li a {padding:5px 20px;text-decoration:none;display:inline-block;color:#ffffff;font-size:14px;line-height:20px;}
+.mlf_menu_horizontal ul.level1 li a:hover {background: rgba(0,0,0,0.2); }
+.mlf_menu_horizontal ul.level1 li.active a {background:#EDEDED;color:#4D4D4D;}
+.level2 {display:block;width:100%;clear:both;overflow:hidden;background:#EDEDED;
+display:none;
+position:absolute;top:30px;z-index:10;
+}
+.level2 .mlf_children_block {display:block;width:100%;clear:both;padding-bottom:5px;}
+.level2 .childrenBlocker {display:block;float:left;}
+.level2 .column3 .childrenBlocker {width:31%;padding:10px 1%;}
+.level2 .column2 .childrenBlocker {width:48%;padding:10px 1%;}
+.level2 .column1 .childrenBlocker {width:98%;padding:10px 1%;}
+.level2 .childrenBlocker li.parent {display:block;width:100%;clear:both;padding-bottom:5px;}
+.level2 .childrenBlocker li.parent a {font-size:14px;color:#4D4D4D;}
+.level2 .childrenBlocker li.parent a:hover {color:#EA1653;}
+.level2 .childrenBlocker li.parent ul {display:block;width:100%;clear:both;padding:3px 0 5px 0;overflow:hidden;}
+.level2 .childrenBlocker li.parent ul li {display:inline-block;float:left;padding:3px 20px 3px 10px;
+background:url('images/li_arr.png') 0 -59px no-repeat;
+}
+.level2 .childrenBlocker li.parent ul li a {font-weight:normal;text-decoration:none;color:#0072BC;}
+.level2 .childrenBlocker li.parent ul li a:hover {color:#EA1653;}

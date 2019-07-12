@@ -1,0 +1,182 @@
+
+.table_items {
+  @extend .clearfix;
+
+  &,
+  & > tbody, 
+  & > tbody > tr {
+    display: block;
+  }
+
+  & > tbody > tr > td {
+    display: block;
+    border: none;
+    padding: 0;
+  }
+}
+
+.table_item {
+  @extend .clearfix;
+
+  border-bottom: 1px solid $gray-light;
+  margin-bottom: $base-line-height;
+  padding-bottom: $base-line-height;
+  position: relative;
+  
+  &__td {
+    //text-align: center;
+    
+    &:first-line {
+      line-height: $base-line-height*2;
+    }
+  }
+
+  &__item {
+    @extend .clearfix;
+  }
+  
+  &__pic {
+    box-sizing: border-box;
+    float: left;
+    //max-height: 90px;
+    padding: 0 $base-line-height/2 $base-line-height/2 0;
+    text-align: center;
+    width: 25%;
+  }
+
+  &__img {
+    max-height: $base-line-height*5;
+  }
+
+  &__head {
+    margin-bottom: $base-line-height/2;
+    text-align: left;
+  }
+  
+  &__name {
+    margin: 0;
+  }
+
+  &__offer_props {
+    margin-bottom: $base-line-height/2;
+  }
+
+  & &__price {
+    float: left;
+  }
+
+  & &__sum {
+    clear: right;
+    float: right;
+  }
+
+  &__quantity {
+    float: right;
+    margin-bottom: $base-line-height/2;
+  }
+
+  &__total {
+    clear: both;
+    text-align: center;
+  }
+
+  &__link {
+    margin-left: em($base-line-height * .5);
+    margin-right: em($base-line-height * .5);
+    white-space: nowrap;
+  }
+
+  .price__pdv {
+    color: $skin1_bg;
+  }
+
+  .dl-list {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: $screen-xs-min) {
+  .table_item {
+
+  }
+}
+
+
+@media (min-width: $screen-sm-min) {
+  
+  .table_items {
+
+  }
+
+
+  .table_item {
+
+    &__name {
+      font-size: $font-size-h4;
+    }
+    
+    &__pic {
+      padding: 0 $base-line-height $base-line-height 0;
+    }
+    
+    &__props {
+      clear: none;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .table_items {
+    display: table;
+    min-height: auto;
+    width: 100%;
+
+    & > tbody {
+      display: table-row-group;
+    }
+    & > tbody > tr {
+      display: table-row;
+    }
+  }
+
+    
+  .table_item__td,
+  .table_items > tbody > tr > td,
+  .table_item .table_item__quantity,
+  .table_item .table_item__price,
+  .table_item .table_item__total,
+  .table_item .table_item__sum {
+    display: table-cell;
+    float: none;
+    margin: 0;
+    padding: $base-line-height*1.5 $base-line-height*0.25;
+    vertical-align: top;
+  }
+
+
+  .table_item {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+    position: static;
+    
+    &__title {
+      display: none;
+    }
+
+    & &__total {
+      float: right;
+      text-align: left;
+    }
+
+    
+    &__img {
+      max-height: none;
+    }
+    &__link {
+      display: block;
+      margin: 0 0 $base-line-height*0.5 0;
+    }
+  }
+}
+

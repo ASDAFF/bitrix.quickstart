@@ -1,0 +1,281 @@
+html,body {
+color: #4C4D48;
+}
+h5
+{
+	color:#000;
+}
+#text
+{
+color:#000;
+}
+#menu
+{
+color:#227827;
+}
+#menu a
+{
+color:#227827;
+}
+#menu1 a, #menu1 span
+{
+color:#227827;
+}
+.form2 .txt input {
+	color:#8B8A8A;
+}
+.form1 .txt1 input {
+	color:#8B8A8A;
+}
+#l
+{
+color: #4C4D48;
+}
+#r
+{
+color: #999999;
+}
+.menu2 a
+{
+color:#585858 !important;
+}
+#acsii-mtext
+{
+color:#127839;
+}
+.maintext
+{
+color:#127839;
+}
+.maintext a
+{
+color: #127839 !important;
+}
+.maintext1
+{
+color:#127839;
+}
+#headline
+{
+color:#127839;
+}
+.cart h2 {
+color: #127839;
+}
+.price {
+color: #5E5959;
+}
+.pr_c1
+{
+	background-color:#fff;
+}
+.menusp  li a{
+color: #227827;
+}
+#c a{
+color: #227827;
+}
+#r a{
+color: #227827;
+}
+#main_content h2 {
+color: #127839;
+}
+ table.table_polos tr th {
+background-color: #F1EDF1;
+}
+#road a
+{
+	color:#000000;
+}
+.home
+{
+color: #000;
+}
+.home a
+{
+color:#000000 !important;
+}
+.block label.active {
+color: #9C35CD;
+}
+
+.block label.active span {
+color: #000;
+}
+.makers h3
+{
+	color:#127839;
+}
+.hide a
+{
+color:#4c4d48 !important;
+}
+.prise  h3{
+color:#127839;
+}
+.td_filter h3
+{
+	color:#127839;
+}
+.li1
+{
+color: #000;
+}
+.li1 a
+{
+color: #000 !important;
+}
+.li2
+{
+color: #000;
+}
+.li2 a
+{
+color: #000 !important;
+}
+.breadcrumb ul li a {
+color: #fff;
+}
+.filter1 .sort .array p  strong{
+color:#000;
+}
+ .view ul li a {
+	color: #227827;
+}
+
+.view ul li a:hover,
+.view ul li.active a,
+.view ul li.active span {
+	color:#000;
+}
+.table_sort .info1 h3 {
+color: #127839;
+}
+.table_sort .info h3 {
+color: #127839;
+}
+.table_sort .info .lable {
+color:#000;
+}
+.table_sort .info .rating span {
+color: #FFF;
+}
+ .table_sort .info .rating em.yes {
+color: #108101;
+}
+.table_sort .info .rating em.no {
+color: #DA251D;
+}
+.table_sort .info .more a {
+color: #9F3BD0;
+}
+.table_sort .price p {
+color: #5E5959;
+}
+.table_sort .price .place_1 {
+color: #FFF;
+}
+.table_sort .price .place_1 p {
+color: #FFF;
+}
+.table_sort .price .place_2 {
+color: #FFF;
+}
+.table_sort .price .place_2 p {
+color: #FFF;
+}
+.card .info1 h2 {
+color:#127839;
+}
+.card .info1 .rating span {
+color: #FFF;
+}
+.card .info1 .rating em.yes {
+color: #108101;
+}
+ .card .info1 .rating em.no {
+color: #DA251D;
+}
+.card .info1 .price {
+color: #5E5959;
+}
+.card .main_content1 table tr th {
+background-color: #F1EDF1;
+}
+.otz_text
+{
+color:#000;
+}
+.inf span
+{
+color:#127839;
+}
+ table tr td.compare_main .back a {
+color: #9C35CD;
+}
+ table tr td.compare_item .delete a {
+color: #9F3BD0;
+}
+ table tr td.compare_item h2 {
+color: #127839;
+}
+ table tr td.compare_item .rating span {
+color: #FFF;
+}
+table tr td.compare_item .rating em.yes {
+color: #108101;
+}
+ table tr td.compare_item .rating em.no {
+color: #DA251D;
+}
+
+table tr.compare_price td p.price {
+color: #5E5959;
+}
+#main_content2 table.aj_star tr td.vote_result{
+    background-color: #227827;
+    color: #FFFFFF;
+}
+#main_content2 table.r tr th {
+background-color: #F1EDF1;
+}
+#main_content2 table.r tr th.th1 {
+background-color: #F1EDF1;
+}
+
+.slider .item3 h2,
+.slider .item3 h3 {
+color: #FFF;
+}
+.slider .item3 h2 strong a,
+.slider .item3 h3 strong a {
+color: #FFF;
+}
+.slider .item3 .title .name {
+color: #FFF;
+}
+
+.slider .item3 .title .name a {
+color: #FFF;
+}
+td.cart-item-actions a.cart-delete-item, th.cart-item-actions a.cart-delete-item  {
+background-color: transparent;
+}
+.cart-items tr th, .cart-items tr td
+{
+	color:#4C4D48;
+}
+.table_sort .info .rating span {
+background-color: #227827;
+}
+.card .info1 .rating span {
+background-color: #227827;
+}
+ table tr td.compare_item .rating span {
+background-color: #227827;
+}
+.slider .item3 h2 strong,
+.slider .item3 h3 strong {
+background-color: #210023;
+}

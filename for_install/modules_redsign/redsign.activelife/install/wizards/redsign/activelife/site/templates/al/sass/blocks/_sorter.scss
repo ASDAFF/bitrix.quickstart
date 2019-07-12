@@ -1,0 +1,73 @@
+.sorter {
+  
+  &__by {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    
+    &.asc {
+      border-bottom: 4px solid;
+      
+    }
+    
+    &.desc {
+      border-top: 4px solid;
+    }
+  }
+}
+.sorter .asc{
+	background-position: -18px -575px;
+}
+.sorter .desc{
+	background-position: -18px -564px;
+}
+.sorter .personal-tabsheader a.select{
+	cursor: pointer;
+}
+/* output */
+.sorter .sorter-output{
+	float: left;
+	position: relative;
+}
+.sorter .personal-tabsheader a.select{
+	cursor: pointer;
+}
+.sorter a.incative.select.true_select{
+	margin-right: 0;
+}
+.sorter a.incative.select .asc,
+.sorter a.incative:hover .asc{
+	background-position: -3px -575px;
+}
+.sorter a.incative.select .desc,
+.sorter a.incative:hover .desc{
+	background-position: -3px -564px;
+}
+.sorter .sorter-output-popup{
+	background-color: $body-bg;
+	border: 2px solid $skin0_bg;
+	-khtml-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	overflow: hidden;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	width: 46px;
+	z-index: 50;
+}
+.sorter .sorter-output-popup a{
+	border: 1px solid $body-bg;
+	display: block;
+	font-size: 13px;
+	min-width: 26px;
+	padding: 3px 9px 5px 7px;
+	text-decoration: none;
+}
+.sorter .sorter-output-popup a:hover{
+	color: $skin0_bg;
+	text-decoration: none;
+}

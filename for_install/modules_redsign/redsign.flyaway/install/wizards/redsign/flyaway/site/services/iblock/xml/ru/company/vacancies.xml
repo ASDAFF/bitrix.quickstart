@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2016-04-22T14:20:36">
+	<Классификатор>
+		<Ид>vacancies_redsign_flyaway</Ид>
+		<Наименование>Вакансии</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>37</Ид>
+				<Наименование>Тип вакансии</Наименование>
+				<Множественное>false</Множественное>
+				<ВариантыЗначений>
+					<Значение>Продажи</Значение>
+					<Вариант>
+						<Ид>vac1</Ид>
+						<Значение>Продажи</Значение>
+						<ПоУмолчанию>false</ПоУмолчанию>
+						<Сортировка>100</Сортировка>
+					</Вариант>
+					<Значение>Руководители отделов</Значение>
+					<Вариант>
+						<Ид>vac2</Ид>
+						<Значение>Руководители отделов</Значение>
+						<ПоУмолчанию>false</ПоУмолчанию>
+						<Сортировка>200</Сортировка>
+					</Вариант>
+					<Значение>Специалисты</Значение>
+					<Вариант>
+						<Ид>vac3</Ид>
+						<Значение>Специалисты</Значение>
+						<ПоУмолчанию>false</ПоУмолчанию>
+						<Сортировка>300</Сортировка>
+					</Вариант>
+				</ВариантыЗначений>
+				<БитриксСортировка>100</БитриксСортировка>
+				<БитриксКод>VACANCY_TYPE</БитриксКод>
+				<БитриксТипСвойства>L</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>38</Ид>
+				<Наименование>Подпись</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>200</БитриксСортировка>
+				<БитриксКод>SIGNATURE</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>37</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>38</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения>F</ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>vacancies_redsign_flyaway</Ид>
+		<ИдКлассификатора>vacancies_redsign_flyaway</ИдКлассификатора>
+		<Наименование>Вакансии</Наименование>
+		<БитриксКод>vacancies_redsign_flyaway</БитриксКод>
+		<БитриксСортировка>1000</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/about/vacancies/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/about/vacancies/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/about/vacancies/</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>true</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>135</Ид>
+				<Наименование>Кладовщик</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;p&gt;
+ &lt;b&gt;Обязанности.&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra. Vivamus sed arcu urna. Integer finibus suscipit eros scelerisque gravida. Donec at vestibulum erat. Morbi eget sodales neque, vel pellentesque risus. Cras in dolor nec velit tristique elementum tempor ut quam. Integer varius sollicitudin sem et pellentesque. Nunc vitae diam ut velit vestibulum pellentesque pharetra quis mi. Integer dignissim, turpis sit amet sollicitudin dignissim, dui elit viverra erat, quis faucibus leo orci id tortor. Pellentesque enim elit, luctus vel massa a, efficitur accumsan urna.
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;b&gt;Требования&lt;/b&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	 Morbi malesuada fermentum sodales. Mauris vitae venenatis nisi. Vivamus dignissim sollicitudin mauris sed volutpat. Etiam sit amet sodales tortor, at luctus neque. Sed at ante aliquet, euismod orci nec, auctor eros. Nunc vel sollicitudin diam. Fusce urna massa, finibus efficitur posuere at, varius vitae augue. Mauris mollis ipsum quis velit commodo, vitae molestie nulla accumsan. Fusce ac blandit risus. Aliquam sed ligula suscipit, placerat neque non, rutrum purus.
+&lt;/p&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>37</Ид>
+						<Значение>vac3</Значение>
+						<ЗначениеСвойства>
+							<Значение>vac3</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>38</Ид>
+						<Значение>От 25 000 руб.</Значение>
+						<ЗначениеСвойства>
+							<Значение>От 25 000 руб.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>136</Ид>
+				<Наименование>Сборщик</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra.</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>37</Ид>
+						<Значение>vac3</Значение>
+						<ЗначениеСвойства>
+							<Значение>vac3</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>38</Ид>
+						<Значение>От 14 000 руб.</Значение>
+						<ЗначениеСвойства>
+							<Значение>От 14 000 руб.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>137</Ид>
+				<Наименование>Мастер по гарантии</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque quam, efficitur id nunc ac, cursus commodo ipsum. Curabitur tincidunt leo ut eros elementum mollis.&amp;nbsp;&lt;b&gt;Cum sociis&lt;/b&gt;&amp;nbsp;natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer accumsan tincidunt diam ac fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc rhoncus lacus at mattis viverra. Vivamus sed arcu urna. Integer finibus suscipit eros scelerisque gravida.&amp;nbsp;&lt;b&gt;Donec at vestibulum erat.&lt;/b&gt;&amp;nbsp;Morbi eget sodales neque, vel pellentesque risus. Cras in dolor nec velit tristique elementum tempor ut quam. Integer varius sollicitudin sem et pellentesque.</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>37</Ид>
+						<Значение>vac3</Значение>
+						<ЗначениеСвойства>
+							<Значение>vac3</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>38</Ид>
+						<Значение>Оговаривается индивидуально</Значение>
+						<ЗначениеСвойства>
+							<Значение>Оговаривается индивидуально</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>151</Ид>
+				<Наименование>Менеджер по продажам</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>100</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Etiam hendrerit dui at rutrum vehicula. Proin in nisl ut ante pellentesque ornare a ut ex. Pellentesque volutpat orci in dui consequat malesuada.&lt;br&gt;
+&lt;b&gt;&lt;br&gt;
+ &lt;/b&gt;&lt;b&gt;Обязательно&lt;/b&gt;:&lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Maecenas mollis ex non ex aliquet iaculis.&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ &lt;b&gt;Приветствуется&lt;/b&gt;:&lt;br&gt;
+&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at.&lt;br&gt;
+ &lt;/li&gt;
+	&lt;li&gt;Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh.&lt;br&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed. Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at. Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh. In ultricies, purus quis tristique lacinia, libero lacus eleifend nunc, at pharetra sem dui sed dolor.&lt;br&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>37</Ид>
+						<Значение>vac1</Значение>
+						<ЗначениеСвойства>
+							<Значение>vac1</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>38</Ид>
+						<Значение>от 30 000 руб.</Значение>
+						<ЗначениеСвойства>
+							<Значение>от 30 000 руб.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>152</Ид>
+				<Наименование>Эксперт по качеству</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex arcu, ultrices vel turpis et, sollicitudin tempus turpis. Proin vitae fermentum ipsum. Aliquam volutpat feugiat lacus, id cursus risus tincidunt sed. Maecenas mollis ex non ex aliquet iaculis. Maecenas placerat ligula in mi malesuada gravida. Nulla aliquet elit erat, a hendrerit sem fermentum at. Ut blandit tellus quis commodo tempus. Etiam at quam in velit tempus volutpat non eget nibh. In ultricies, purus quis tristique lacinia, libero lacus eleifend nunc, at pharetra sem dui sed dolor.&lt;br&gt;
+ &lt;br&gt;
+ Vivamus laoreet tellus sed vulputate suscipit. Proin in nulla suscipit, sagittis arcu eu, pellentesque enim. Phasellus tristique dui sit amet nulla posuere, sed gravida arcu egestas. Nunc quam turpis, ultricies vitae arcu nec, blandit iaculis felis. Praesent semper nisl congue turpis convallis, sed sollicitudin sem vestibulum. Nulla sit amet est ac arcu congue consectetur. Quisque nec gravida felis. Duis eleifend leo lobortis mauris blandit, a scelerisque ex fringilla. Integer commodo lorem sit amet neque viverra tincidunt.&lt;br&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>37</Ид>
+						<Значение>vac2</Значение>
+						<ЗначениеСвойства>
+							<Значение>vac2</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>38</Ид>
+						<Значение>80 000 руб.</Значение>
+						<ЗначениеСвойства>
+							<Значение>80 000 руб.</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

@@ -1,0 +1,12 @@
+.favorite {
+  cursor: pointer;
+
+  &__icon {
+    fill: $gray;
+  }
+
+  &.checked &__icon,
+  &:hover &__icon {
+    fill: $brand-danger;
+  }
+}

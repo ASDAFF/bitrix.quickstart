@@ -1,0 +1,1 @@
+<?$APPLICATION->AddChainItem($arResult['NAME'])?>

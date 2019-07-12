@@ -1,0 +1,34 @@
+.bx_filter_horizontal.bx_green .bx_filter_section{
+	background: #d2e7be;
+	border: 7px solid #e9f3e1;
+}
+.bx_filter_horizontal.bx_green .bx_ui_slider_track{background: #a6ce81}
+.bx_filter_horizontal.bx_green .bx_ui_slider_range{
+	background: url(images/range_bg.png);
+	border: none;
+	box-shadow: none;
+}
+.bx_filter_horizontal.bx_green .bx_filter_control_section{text-align: center}
+.bx_filter_horizontal.bx_green .bx_filter_search_button{
+	height: 33px;
+	color: #4a7e1d;
+
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjM2Q2YjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ffffff 0%, #c3d6b2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#c3d6b2));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#c3d6b2 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#c3d6b2 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#c3d6b2 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#c3d6b2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c3d6b2',GradientType=0 );
+
+	line-height:33px;
+}
+.bx_filter_horizontal.bx_green .bx_filter_search_button:hover{background:#c3d6b2}
+.bx_filter_horizontal.bx_green .bx_filter_search_button:active{
+	background:#c3d6b2 ;
+}
+.bx_filter_horizontal.bx_green span.icon_lupe{
+	background: url(images/searchicon.png) no-repeat center;
+}

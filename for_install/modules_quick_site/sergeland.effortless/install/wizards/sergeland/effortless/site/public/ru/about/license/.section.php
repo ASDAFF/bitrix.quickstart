@@ -1,0 +1,4 @@
+<?
+$sSectionName = "Лицензии";
+$arDirProperties = Array();
+?>

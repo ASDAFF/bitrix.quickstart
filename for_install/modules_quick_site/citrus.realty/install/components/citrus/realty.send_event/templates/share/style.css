@@ -1,0 +1,52 @@
+form.cse-form {
+	width: 100%;
+	height: 100%;
+}
+
+.cse-field {
+	margin-bottom: 1em!important;
+}
+
+.cse-field-title, 
+.cse-field-input {
+	display: block;
+	margin-bottom: .2em;
+}
+
+.cse-field-required {
+	color: red;
+	margin-left: .3em;
+}
+
+.cse-field-input input, .cse-field-input textarea {
+	width: 99%;
+	
+	
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cse-field small {
+	display: block;
+	color: #999;
+	font-style: italic;
+	font-size: 85.1%;
+}
+
+.cse-captcha-image {
+	display: block;
+	margin-bottom: .4em;
+	margin-right:15px;
+}
+.cse-captcha-input {
+	width: 174px;
+}
+
+.tooltip-block {
+	margin-top:20px;
+}
+
+.tooltip-block .required-fields {
+	color:red;
+}

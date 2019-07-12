@@ -1,0 +1,159 @@
+.basketWrap {width:100%;display:block;clear:both;overflow:hidden;padding:10px 0;}
+.basketWrap .errorBasket {display:block;width:100%;clear:both;font-size:14px;color:red;}
+.basketWrap .basketItems {width:100%;border-spacing:0;border-top:1px solid #0e4b7c;border-left:1px solid #0e4b7c;margin-bottom:0px;}
+.basketWrap .basketItems td, .basketWrap .basketItems th {padding:3px;border-bottom:1px solid #0e4b7c;border-right:1px solid #0e4b7c;}
+.basketWrap .basketItems th {border-right:1px solid #ffffff;}
+.basketWrap .basketItems th.delete {border-right:1px solid #0e4b7c;}
+.basketWrap .basketItems td {font-size:12px;}
+.basketWrap .basketItems th {font-size:14px;font-weight:bold;color:#ffffff;
+background: #0e4b7c; /* for non-css3 browsers */ 
+}
+.basketWrap .basketItems th.photo {width:50px;}
+.basketWrap .basketItems th.price {width:190px;}
+.basketWrap .basketItems th.quant {width:120px;}
+.basketWrap .basketItems th.priceall {width:140px;}
+.basketWrap .basketItems th.delete {width:30px;}
+.basketWrap .basketItems td.quant input {width:30px;}
+.basketWrap .basketItems td.photo img {max-width:50px;height:auto;}
+
+.basketWrap .basketItems .buttonPl {display:block;width:80px;float:right;}
+.basketWrap .basketItems .buttonPl a, .basketWrap .basketItems  a.delete {width:24px;margin:1px;border-radius:2px;display:block;height:24px;text-indent:-9999px;
+background:url('images/icn_korz.png') 0 0 no-repeat;text-decoration:none;float:left;}
+.basketWrap .basketItems .buttonPl a.update {background-position:-1px -2px;}
+.basketWrap .basketItems .buttonPl a.plus {background-position:-27px -2px;}
+.basketWrap .basketItems .buttonPl a.minus {background-position:-50px -2px;}
+.basketWrap .basketItems a.delete {background-position:-76px -3px;}
+.basketWrap .basketItems .buttonPl a:hover {border-radius:10px;}
+.basketWrap .basketItems  a.delete:hover {border-radius:10px;}
+
+.basketWrap .preload {display:block;width:100%;height:100%;position:absolute;top:0;left:0;background:#ffffff;opacity:0.2;z-index:2;}
+
+.basketWrap .orderPriceAll {display:block;width:400px;float:right;padding:5px;margin-bottom:20px;margin-top:5px;}
+.basketWrap .orderPriceAll .wrapPriceAll {display:block;width:100%;clear:both;padding:5px 0;border-bottom:1px dotted #cccccc;font-size:12px;overflow:hidden;}
+.basketWrap .orderPriceAll .wrapPriceAll .left {width:220px;float:left;text-align:left;}
+.basketWrap .orderPriceAll .wrapPriceAll .right {width:175px;float:right;text-align:right;}
+
+.basketWrap .titleOrder {width:100%;clear:both;display:block;padding:5px 0;text-transform:uppercase;color:#0e4b7c;font-size:16px;font-weight:bold;}
+.basketWrap .deliveryItems {width:100%;clear:both;margin-bottom:20px;border-top:1px solid #cccccc;}
+.basketWrap .deliveryItems td {padding:5px;border-bottom:1px solid #cccccc;}
+.basketWrap .deliveryItems td.image {width:110px;}
+.basketWrap .deliveryItems td.image img {border:1px solid #cccccc;border-radius:3px;cursor:pointer;}
+.basketWrap .deliveryItems td.image img:hover {cursor:pointer;}
+.basketWrap .deliveryItems td.image img.active {border:1px solid #2779D5;}
+.basketWrap .deliveryItems tr.active {background:#efefef;}
+.basketWrap .deliveryItems .name {color:#2779D5;font-weight:bold;}
+
+.basketWrap .paymentItems {width:100%;clear:both;margin-bottom:20px;border-top:1px solid #cccccc;}
+.basketWrap .paymentItems td {padding:5px;border-bottom:1px solid #cccccc;}
+.basketWrap .paymentItems td.image {width:110px;}
+.basketWrap .paymentItems td.image img {border:1px solid #cccccc;border-radius:3px;cursor:pointer;}
+.basketWrap .paymentItems td.image img:hover {cursor:pointer;}
+.basketWrap .paymentItems td.image img.active {border:1px solid #2779D5;}
+.basketWrap .paymentItems tr.active {background:#efefef;}
+.basketWrap .paymentItems .name {color:#2779D5;font-weight:bold;}
+
+.basketWrap .userPropsList {width:100%;clear:both;margin-bottom:20px;}
+.basketWrap .userPropsList td {padding:5px;}
+.basketWrap .userPropsList label {font-size:14px;color:#000000;}
+.basketWrap .userPropsList label:hover {cursor:pointer;}
+.basketWrap .userPropsList td.label {width:150px;vertical-align:top;}
+.basketWrap .userPropsList td.field {vertical-align:top;}
+.basketWrap .userPropsList td.field input {font-size:14px;color:#000000;padding:3px;border-radius:3px;border:none;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+width:220px;
+}
+.basketWrap .userPropsList td.field textarea {font-size:14px;color:#000000;padding:3px;border-radius:3px;border:none;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 42, 0.43);
+width:220px;
+resize:none;height:60px;}
+.basketWrap .userPropsList td.field select {
+	font-size:14px;color:#000000;padding:3px;width:220px;
+}
+
+.basketWrap .errorsOrder {display:block;width:100%;padding:10px 0;color:red;font-size:14px;clear:both;}
+.basketWrap .buttons {display:block;width:100%;padding:10px 0;clear:both;}
+.basketWrap .buttons  a {display:block;width:145px;text-align:center;color:#ffffff;background:#0e4b7c;text-decoration:none;padding:4px 0;border-radius:3px;
+font-size:12px;text-transform:uppercase;margin:auto;float:left;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #2d7eb7 0%, #0e4b7c 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d7eb7), color-stop(100%,#0e4b7c));
+background: -webkit-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -o-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -ms-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: linear-gradient(to bottom, #2d7eb7 0%,#0e4b7c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7eb7', endColorstr='#0e4b7c',GradientType=0 );
+}
+.basketWrap .buttons  a:hover {
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #0e4b7c 0%, #2d7eb7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4b7c), color-stop(100%,#2d7eb7));
+background: -webkit-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -o-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -ms-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: linear-gradient(to bottom, #0e4b7c 0%,#2d7eb7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4b7c', endColorstr='#2d7eb7',GradientType=0 );
+}
+
+.basketWrap .textOrder {display:block;width:100%;clear:both;padding:10px 0;font-size:14px;}
+.basketWrap .textOrder p {padding-bottom:10px;}
+
+.basketWrap .basketItems .zakazItem {display:block;width:100%;padding-top:5px;color:red;}
+.basketWrap .zakaz {display:block;width:100%;color:red;padding:15px 0 15px 0;font-size:14px;text-align:right;}
+
+.corzMessage {display:block;position:fixed;width:100%;height:100%;min-width:980px;background: url('images/bg_opacity2.png') 0 0 repeat;
+z-index:25;top:0;}
+.corzMessage .wrapFixerPopup {display:block;width:480px;max-height:80%;margin:10% auto;
+overflow-x:hidden;overflow-y:auto;background:#efefef;border-radius: 10px;border:1px solid #efefef;
+overflow:hidden;
+-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+padding-bottom:30px;
+}
+.corzMessage .wrapFixerPopup .tovarName {display:block;width:100%;clear:both;overflow:hidden;
+color:#ffffff;font-size:18px;line-height:22px;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #0e4b7c 0%, #2d7eb7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4b7c), color-stop(100%,#2d7eb7));
+background: -webkit-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -o-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -ms-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: linear-gradient(to bottom, #0e4b7c 0%,#2d7eb7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4b7c', endColorstr='#2d7eb7',GradientType=0 );
+text-align:center;padding:10px 0;
+}
+.corzMessage .wrapFixerPopup .tovarImage {display:block;width:100%;clear:both;padding:10px 0;overflow:hidden;text-align:center;
+background:#ffffff;}
+.corzMessage .wrapFixerPopup .tovarImage img {max-height:100px;width:auto;}
+.corzMessage .wrapFixerPopup .wrapMess {display:block;width:100%;clear:both;padding:10px 0;overflow:hidden;text-align:center;
+font-size:18px;color:#0e4b7c;line-height:22px;padding-top:30px;}
+.corzMessage .wrapFixerPopup .btn {display:block;width:48%;float:left;overflow:hidden;}
+.corzMessage .wrapFixerPopup .button {display:block;width:48%;float:right;overflow:hidden;}
+.corzMessage .wrapFixerPopup .btn a, .corzMessage .wrapFixerPopup .button a  {
+text-align:center;color:#ffffff;text-decoration:none;padding:4px 0;border-radius:3px;
+font-size:12px;text-transform:uppercase;margin:auto;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #2d7eb7 0%, #0e4b7c 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d7eb7), color-stop(100%,#0e4b7c));
+background: -webkit-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -o-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -ms-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: linear-gradient(to bottom, #2d7eb7 0%,#0e4b7c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7eb7', endColorstr='#0e4b7c',GradientType=0 );
+display:block;
+width:80%;margin:20px auto 0 auto;
+}
+.corzMessage .wrapFixerPopup .btn a:hover, .corzMessage .wrapFixerPopup .button a:hover {
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #0e4b7c 0%, #2d7eb7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4b7c), color-stop(100%,#2d7eb7));
+background: -webkit-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -o-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -ms-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: linear-gradient(to bottom, #0e4b7c 0%,#2d7eb7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4b7c', endColorstr='#2d7eb7',GradientType=0 );
+}

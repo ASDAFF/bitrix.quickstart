@@ -1,0 +1,14 @@
+.docs .doc {
+    background: url(images/iWord.png) 0 0 no-repeat;}
+.docs .pdf {
+    background: url(images/iPdf.png) 0 0 no-repeat;}
+.docs .xls {
+    background: url(images/iExcel.png) 0 0 no-repeat;}
+.docs .ppt {
+    background: url(images/iPpt.png) 0 0 no-repeat;}
+.docs .zip {
+    background: url(images/iArchive.png) 0 0 no-repeat;}
+.docs .img {
+    background: url(images/iImage.png) 0 0 no-repeat;}
+.docs .none {
+    background: url(images/iNone.png) 0 0 no-repeat;}

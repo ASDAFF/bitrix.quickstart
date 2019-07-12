@@ -1,0 +1,2 @@
+<?
+$aMenuLinks = Array();

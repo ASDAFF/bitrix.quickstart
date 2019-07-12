@@ -1,0 +1,54 @@
+.subscribe .line{
+	margin-bottom:15px;
+	line-height:18px;
+}
+.subscribe .line.border{
+	padding-top:15px;
+	border-top:1px solid #F2F2F2;
+}
+.subscribe .line .title{
+	font-weight:bold;
+	color:#444;
+	margin-bottom:7px;
+}
+.subscribe .line input{
+	width:100%;
+	max-width:300px;
+}
+
+.subscribe .line.type label{
+	margin-right:15px;
+}
+
+.subscribe .item{
+	margin-bottom:5px;
+}
+.subscribe .item b{
+	color:#444;
+}
+.subscribe .item .sbscr{
+	color:#333;
+	font-size:11px;
+	margin-left:17px;
+}
+
+.subscribe .note{
+	display:block;
+	margin-bottom:7px;
+	color:#666;
+}
+
+.subscribe .line .text{
+	margin-right:15px;
+	margin-bottom:15px;
+}
+.subscribe .line .btn{
+	padding:11px 14px;
+}
+
+
+@media screen and (max-width:480px){
+	body.adaptive .subscribe .line input{
+		max-width:500px;
+	}
+}

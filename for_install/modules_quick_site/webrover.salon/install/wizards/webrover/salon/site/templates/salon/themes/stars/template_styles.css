@@ -1,0 +1,65 @@
+#foot,
+#foot a{
+	color:#FFFFFF;
+}
+
+#mainmenu li .sublevel a:hover,
+#leftmenu a:hover,
+#content.column .column-left .submenu a:hover,
+#leftmenu a.selected,
+#content.column .column-left .submenu a.selected,
+.news-item a,
+.content a,
+.content h1{
+	color:#42A2DF;
+}
+
+#leftmenu a,
+#leftmenu .selected ul a,
+#content.column .column-left .submenu a{
+	color:#000000;
+}
+
+#index{
+	background:#409EDE url(images/index-bg-bottom.gif) repeat-y center 730px;
+}
+
+#top{
+	background:url(images/index-bg-top.gif) no-repeat center top;
+}
+
+#collage .navigation{
+	background-image:url(images/collage-navigation.png);
+}
+
+.content .gallery a:hover img{
+	border-color:#0072e7;
+}
+
+#leftmenu{
+	background-image:url(images/left-menu-item-marker-active.gif) no-repeat -100000px -100000px;
+}
+
+#leftmenu ul a,
+#content.column .column-left .submenu ul a{
+	background-image:url(images/left-menu-item-marker.gif);
+}
+
+#leftmenu ul a:hover,
+#leftmenu ul a.selected,
+#content.column .column-left .submenu ul a:hover,
+#content.column .column-left .submenu ul a.selected{
+	background-image:url(images/left-menu-item-marker-active.gif);
+}
+
+#leftmenu ul ul a,
+#content.column .column-left .submenu ul ul a{
+	background:url(images/left-menu-subitem-marker.gif) no-repeat left 9px;
+}
+
+#leftmenu ul ul a:hover,
+#content.column .column-left .submenu ul ul a:hover,
+#leftmenu ul ul a.selected,
+#content.column .column-left .submenu ul ul a.selected{
+	background:url(images/left-menu-subitem-marker-active.gif) no-repeat left 9px;
+}

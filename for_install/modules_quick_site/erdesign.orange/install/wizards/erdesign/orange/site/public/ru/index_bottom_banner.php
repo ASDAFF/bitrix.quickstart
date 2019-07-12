@@ -1,0 +1,1 @@
+<a href="/" title="Banner" ><img src="<?=SITE_TEMPLATE_PATH?>/img/common/banner.png" alt="BannerAd"  /></a>

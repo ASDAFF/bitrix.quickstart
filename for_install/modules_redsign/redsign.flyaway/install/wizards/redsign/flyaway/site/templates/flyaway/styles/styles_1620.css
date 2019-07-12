@@ -1,0 +1,21 @@
+/*--PRODUCTS--*/
+/* line 4, ../sass/styles_1620.scss */
+.products_table .products__prices-item {
+  clear: right;
+  margin-left: 0;
+}
+
+/*--/products--*/
+/*-- SMALLBANNERS-*/
+/* line 13, ../sass/styles_1620.scss */
+.smallbanners__label {
+  height: 180px;
+}
+/* line 17, ../sass/styles_1620.scss */
+.smallbanners__name {
+  font-size: 16px;
+}
+
+/*-- /smallbanners-*/
+
+/*# sourceMappingURL=styles_1620.css.map */

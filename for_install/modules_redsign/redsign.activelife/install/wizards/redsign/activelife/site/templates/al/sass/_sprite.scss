@@ -1,0 +1,217 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$box-name: 'box';
+$box-x: 95px;
+$box-y: 47px;
+$box-offset-x: -95px;
+$box-offset-y: -47px;
+$box-width: 30px;
+$box-height: 28px;
+$box-total-width: 143px;
+$box-total-height: 114px;
+$box-image: '../img/icons.png';
+$box: (95px, 47px, -95px, -47px, 30px, 28px, 143px, 114px, '../img/icons.png', 'box', );
+$file-default-name: 'file_default';
+$file-default-x: 0px;
+$file-default-y: 47px;
+$file-default-offset-x: 0px;
+$file-default-offset-y: -47px;
+$file-default-width: 34px;
+$file-default-height: 45px;
+$file-default-total-width: 143px;
+$file-default-total-height: 114px;
+$file-default-image: '../img/icons.png';
+$file-default: (0px, 47px, 0px, -47px, 34px, 45px, 143px, 114px, '../img/icons.png', 'file_default', );
+$file-excel-name: 'file_excel';
+$file-excel-x: 42px;
+$file-excel-y: 0px;
+$file-excel-offset-x: -42px;
+$file-excel-offset-y: 0px;
+$file-excel-width: 43px;
+$file-excel-height: 45px;
+$file-excel-total-width: 143px;
+$file-excel-total-height: 114px;
+$file-excel-image: '../img/icons.png';
+$file-excel: (42px, 0px, -42px, 0px, 43px, 45px, 143px, 114px, '../img/icons.png', 'file_excel', );
+$file-pdf-name: 'file_pdf';
+$file-pdf-x: 0px;
+$file-pdf-y: 0px;
+$file-pdf-offset-x: 0px;
+$file-pdf-offset-y: 0px;
+$file-pdf-width: 42px;
+$file-pdf-height: 47px;
+$file-pdf-total-width: 143px;
+$file-pdf-total-height: 114px;
+$file-pdf-image: '../img/icons.png';
+$file-pdf: (0px, 0px, 0px, 0px, 42px, 47px, 143px, 114px, '../img/icons.png', 'file_pdf', );
+$file-word-name: 'file_word';
+$file-word-x: 85px;
+$file-word-y: 0px;
+$file-word-offset-x: -85px;
+$file-word-offset-y: 0px;
+$file-word-width: 43px;
+$file-word-height: 45px;
+$file-word-total-width: 143px;
+$file-word-total-height: 114px;
+$file-word-image: '../img/icons.png';
+$file-word: (85px, 0px, -85px, 0px, 43px, 45px, 143px, 114px, '../img/icons.png', 'file_word', );
+$missing-v2-name: 'missing_v2';
+$missing-v2-x: 34px;
+$missing-v2-y: 47px;
+$missing-v2-offset-x: -34px;
+$missing-v2-offset-y: -47px;
+$missing-v2-width: 32px;
+$missing-v2-height: 32px;
+$missing-v2-total-width: 143px;
+$missing-v2-total-height: 114px;
+$missing-v2-image: '../img/icons.png';
+$missing-v2: (34px, 47px, -34px, -47px, 32px, 32px, 143px, 114px, '../img/icons.png', 'missing_v2', );
+$sec-unlocked-name: 'sec-unlocked';
+$sec-unlocked-x: 23px;
+$sec-unlocked-y: 92px;
+$sec-unlocked-offset-x: -23px;
+$sec-unlocked-offset-y: -92px;
+$sec-unlocked-width: 19px;
+$sec-unlocked-height: 18px;
+$sec-unlocked-total-width: 143px;
+$sec-unlocked-total-height: 114px;
+$sec-unlocked-image: '../img/icons.png';
+$sec-unlocked: (23px, 92px, -23px, -92px, 19px, 18px, 143px, 114px, '../img/icons.png', 'sec-unlocked', );
+$sec-name: 'sec';
+$sec-x: 128px;
+$sec-y: 0px;
+$sec-offset-x: -128px;
+$sec-offset-y: 0px;
+$sec-width: 15px;
+$sec-height: 18px;
+$sec-total-width: 143px;
+$sec-total-height: 114px;
+$sec-image: '../img/icons.png';
+$sec: (128px, 0px, -128px, 0px, 15px, 18px, 143px, 114px, '../img/icons.png', 'sec', );
+$track-handle-name: 'track_handle';
+$track-handle-x: 0px;
+$track-handle-y: 92px;
+$track-handle-offset-x: 0px;
+$track-handle-offset-y: -92px;
+$track-handle-width: 23px;
+$track-handle-height: 22px;
+$track-handle-total-width: 143px;
+$track-handle-total-height: 114px;
+$track-handle-image: '../img/icons.png';
+$track-handle: (0px, 92px, 0px, -92px, 23px, 22px, 143px, 114px, '../img/icons.png', 'track_handle', );
+$wallet-name: 'wallet';
+$wallet-x: 66px;
+$wallet-y: 47px;
+$wallet-offset-x: -66px;
+$wallet-offset-y: -47px;
+$wallet-width: 29px;
+$wallet-height: 29px;
+$wallet-total-width: 143px;
+$wallet-total-height: 114px;
+$wallet-image: '../img/icons.png';
+$wallet: (66px, 47px, -66px, -47px, 29px, 29px, 143px, 114px, '../img/icons.png', 'wallet', );
+$breadcrumb-last-name: 'breadcrumb_last';
+$breadcrumb-last-x: 42px;
+$breadcrumb-last-y: 92px;
+$breadcrumb-last-offset-x: -42px;
+$breadcrumb-last-offset-y: -92px;
+$breadcrumb-last-width: 18px;
+$breadcrumb-last-height: 17px;
+$breadcrumb-last-total-width: 143px;
+$breadcrumb-last-total-height: 114px;
+$breadcrumb-last-image: '../img/icons.png';
+$breadcrumb-last: (42px, 92px, -42px, -92px, 18px, 17px, 143px, 114px, '../img/icons.png', 'breadcrumb_last', );
+$breadcrumb-separator-name: 'breadcrumb_separator';
+$breadcrumb-separator-x: 34px;
+$breadcrumb-separator-y: 79px;
+$breadcrumb-separator-offset-x: -34px;
+$breadcrumb-separator-offset-y: -79px;
+$breadcrumb-separator-width: 26px;
+$breadcrumb-separator-height: 11px;
+$breadcrumb-separator-total-width: 143px;
+$breadcrumb-separator-total-height: 114px;
+$breadcrumb-separator-image: '../img/icons.png';
+$breadcrumb-separator: (34px, 79px, -34px, -79px, 26px, 11px, 143px, 114px, '../img/icons.png', 'breadcrumb_separator', );
+$spritesheet-width: 143px;
+$spritesheet-height: 114px;
+$spritesheet-image: '../img/icons.png';
+$spritesheet-sprites: ($box, $file-default, $file-excel, $file-pdf, $file-word, $missing-v2, $sec-unlocked, $sec, $track-handle, $wallet, $breadcrumb-last, $breadcrumb-separator, );
+$spritesheet: (143px, 114px, '../img/icons.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

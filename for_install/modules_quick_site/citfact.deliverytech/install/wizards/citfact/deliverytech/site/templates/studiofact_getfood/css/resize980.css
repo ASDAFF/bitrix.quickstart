@@ -1,0 +1,56 @@
+#header {
+	min-width: 768px;
+}
+.header .search_box {
+	display: none;
+}
+.header .phone {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin: 20px 0 20px -110px;
+}
+.header #small_basket {
+	margin-left: 0;
+}
+.header .logo {
+	margin-right: 0;
+}
+.header_menu li {
+	margin-right: 10px;
+}
+.mobile {
+	display: none;
+}
+footer .col-md-6 {
+	text-align: center;
+	margin-top: 10px;
+}
+footer .col-md-6:first-child {
+	margin-top: 0;
+}
+#bx-composite-banner {
+	float: none;
+	margin: -20px auto 0;
+}
+.NiceCheck {
+	width: 49%;
+}
+.smart_filter .control_button, .smart_filter .control_button_hide {
+	text-align: center;
+	float: none;
+	width: 100%;
+	margin: 15px 0;
+}
+.smart_filter .control_button {
+	margin-bottom: 0;
+}
+.bx_filter_horizontal .bx_filter_popup_result {
+	display: none !important;
+}
+.order_hide_mobile_1 {
+	display: none;
+}
+.order_hide_mobile_2 {
+	display: none !important;
+}

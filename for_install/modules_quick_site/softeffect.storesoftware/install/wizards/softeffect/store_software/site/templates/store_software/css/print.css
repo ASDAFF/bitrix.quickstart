@@ -1,0 +1,29 @@
+@charset "utf-8";
+.noprint {display: none !important;}
+.nobgp {background: none !important;}
+#body {width: auto; background-color: #FFFFFF;}
+#container {width: auto; background: none;}
+#header {background: #FFF none left top; border-bottom: medium solid #666666; margin-bottom: 5px; padding: 0;}
+#header #logoprintable {display: inline; padding-bottom: 5px;}
+#header #orderline {padding-top: 20px;}
+#header #bbblogo {padding: 10px 5px 0px 0px; float: right;}
+#enclosure, #content {float: none; width: auto;}
+#orderline {padding-top: 30px;}
+#footer {background: none; padding: 10px 0px;}
+#footer .content {border-top: 1px solid #666666;}
+#footer .copyright {float: none; text-align: center;}
+#content.pagebox {border: 1px solid #FFFFFF !important;}
+/* - generic - */
+.formheader {border-bottom: 1px dashed #666666 !important; background-image: none !important;}
+.subheader.dotlinebot {border-bottom: 1px dashed #666666; background-image: none !important;}
+#content h1 {border: 1px solid #CCCCCC !important;}
+/* - home - */
+.featured {border: thin solid #999999; margin-right: 10px;}
+.featured h2 {border-bottom: thin solid #999999; margin-right: 0;}
+/* - checkout / account - */
+#basket tr.product td, #dispatches tr.dispatch td {background-image: none !important; border-top: 1px dashed #999999 !important;}
+.searchprd {background-image: none !important; border-bottom: 1px dashed #999999 !important;}
+#orders tr td {border-top: 1px dashed #999999 !important;}
+/* - help - */
+#helpfaq .faqentry h2.subheader {background-image: none; border-bottom: 1px dashed;}
+#help h2 {padding-left: 0px; border-bottom: 1px solid #CCCCCC !important;}

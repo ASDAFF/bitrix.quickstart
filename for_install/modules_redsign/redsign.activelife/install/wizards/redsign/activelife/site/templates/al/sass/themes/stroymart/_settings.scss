@@ -1,0 +1,116 @@
+// ******************skin0******************
+// #7c7c7c linear-gradient(180deg, #7c7c7c, #576069) repeat scroll 0 0
+$skin0_color:                           #fff;
+$skin0_bg:                              #7c7c7c; // main catalog menu
+$skin0_bg0:                             $skin0_bg;
+$skin0_bg100:                           darken( saturate( adjust-hue( $skin0_bg, 210deg ), 9 ), 11 ); // #576069
+$skin0_border:                          $skin0_bg;
+
+// #979797 linear-gradient(180deg, #979797, #727b84) repeat scroll 0 0
+$skin0_hover_bg:                        lighten( $skin0_bg, 10 ); // #034d95;
+$skin0_hover_bg0:                       $skin0_hover_bg;
+$skin0_hover_bg100:                     darken( saturate( adjust-hue( $skin0_bg, 210deg ), 7 ), 1 ); // #727b84
+
+// #686868 none repeat scroll 0 0
+$skin0_active_bg:                       darken( $skin0_bg, 8 ); // #004a8f;
+
+// ******************skin1******************
+// #f9730e linear-gradient(180deg, #fa8f11, #f9730e) repeat scroll 0 0
+$skin1_color:                           #fff;
+$skin1_bg:                              #f9730e; // seond button (add2basket in catalog.element)
+$skin1_bg0:                             saturate( adjust-hue( $skin1_bg, 6deg ), 1 ); // #fa8f11
+$skin1_bg100:                           $skin1_bg;
+$skin1_border:                          $skin1_bg;
+
+// #fc8e3a linear-gradient(180deg, #fda948, #fc8e3a) repeat scroll 0 0
+$skin1_hover_bg:                        lighten( saturate( $skin1_bg, 2 ), 9 ); //#fc8e3a
+$skin1_hover_bg0:                       lighten( saturate( adjust-hue( $skin1_bg, 6deg ), 3 ), 12 ); // #fda948
+$skin1_hover_bg100:                     $skin1_hover_bg;
+
+// #e16a00 none repeat scroll 0 0
+$skin1_active_bg:                       darken( saturate( adjust-hue( $skin1_bg, 2deg ), 5 ), 8 ); // #e16a00;
+
+// ******************skin2******************
+$skin2_color:                           $skin0_color;
+$skin2_bg:                              $skin0_bg;
+$skin2_bg0:                             $skin0_bg0;
+$skin2_bg100:                           $skin0_bg100;
+$skin2_border:                          $skin0_border;
+
+$skin2_hover_bg:                        $skin0_hover_bg;
+$skin2_hover_bg0:                       $skin0_hover_bg0;
+$skin2_hover_bg100:                     $skin0_hover_bg100;
+
+$skin2_active_bg:                       $skin0_active_bg;
+
+// ******************skin3******************
+// #e0e0e0 linear-gradient(180deg, #ffffff, #e0e0e0) repeat scroll 0 0
+$skin3_color:                           $text-color;
+$skin3_bg:                              #e0e0e0;
+$skin3_bg0:                             #fff;
+$skin3_bg100:                           $skin3_bg;
+$skin3_border:                          $gray-light;
+
+// #efefef linear-gradient(180deg, #ffffff, #efefef) repeat scroll 0 0
+$skin3_hover_bg:                        lighten($skin3_bg, 6); // #f0f0f0;
+$skin3_hover_bg0:                       $skin3_bg0;
+$skin3_hover_bg100:                     $skin3_hover_bg;
+
+// #f4e6fe linear-gradient(180deg, #ffffff, #f4e6fe) repeat scroll 0 0
+$skin3_active_bg:                       lighten(saturate(adjust-hue($skin3_bg, 276deg), 93), 7); // #f4e5fe;
+$skin3_active_bg0:                      $skin3_bg0;
+$skin3_active_bg100:                    $skin3_active_bg;
+
+// ******************skin4******************
+$skin4_bg:                              #17ba3e;
+
+// ******************skin_topline******************
+$skin_topline_background:				#FBFBFB;
+$skin_topline_from_color:				#FBFBFB;
+$skin_topline_to_color:					#F2F2F2;
+$skin_topline_border:					#b4b4b4;
+$skin_topline_link_color:				#3B3B3B;
+$skin_topline_icon_color:               $skin1_bg;
+
+// ******************vml_menu******************
+$vml_menu_bg_from:						#FFF;
+$vml_menu_bg_to:						#F9F9F9;
+$vml_menu_bg_hover_from: 				#F9F9F9;
+$vml_menu_bg_hover_to: 					#fff;
+$vml_menu_border_color:					#E2E2E2;
+$vml_menu_color:						#000;
+$vml_menu_hover_color:					$skin1_bg;
+$vml_menu_sub_bg_from:					#F9F9F9;
+$vml_menu_sub_bg_to:					#FFF;
+$vml_menu_sub_bg_hover_from:			$vml_menu_sub_bg_to;
+$vml_menu_sub_bg_hover_to:				$vml_menu_sub_bg_from;
+$vml_menu_sub_color:					#000;
+$vml_menu_sub_color_hover:				$skin1_bg;
+$vml_svg_stroke_color:					#c2c2c2;
+$vml_svg_stroke_color_hover:			$skin1_bg;
+$vml_svg_sub_stroke_color:				#c2c2c2;
+$vml_svg_sub_stroke_color_hover:		$skin1_bg;
+
+// ******************navbar_link******************
+$navbar_link_hover_color:               $skin1_bg;
+$navbar_link_hover_border:              $navbar_link_hover_color;
+
+// ******************skin_footer******************
+// #D2D8DE linear-gradient(180deg, #EBEBEB, #D2D8DE) repeat scroll 0 0
+$skin_footer_background:                #D2D8DE;
+$skin_footer_from_color:                #EBEBEB;
+$skin_footer_to_color:                  #dedede;
+$skin_footer_border:                    #E5EBF1;
+$skin_footer_title_color:				$skin0_bg;
+$skin_footer_link_color:				#666;
+$skin_footer_icon_color:				$skin1_bg;
+
+$link-color:                            $skin1_bg;
+$link-hover-color:                      darken($link-color, 15%);
+$link-hover-decoration:                 underline;
+//$link-hover-color:                        #7DA831;
+
+$price-color:                           $skin1_bg;
+
+$header_icon_color:                     $skin1_bg;
+$footer_icon_color:                     $skin1_bg;

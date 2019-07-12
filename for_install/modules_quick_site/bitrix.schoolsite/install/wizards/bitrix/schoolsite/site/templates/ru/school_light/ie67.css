@@ -1,0 +1,53 @@
+@import "style.css";
+
+.nav a.current {
+    background: url("images/btn.png") 0 0 repeat-x;
+    z-index:  expression(
+       runtimeStyle.zIndex = 0,
+       insertBefore(
+           createElement("d"), firstChild),
+       insertBefore(
+           createElement("d1"), firstChild),
+       this == parentNode.firstChild ? (className += " first-child") : 0
+    );
+    zoom: 1;
+}
+.nav a.current d, .nav a.current d1 {
+    position: absolute;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+}
+.nav a.current d {
+    left: -3px;
+}
+.nav a.current d1 {
+    right: -3px;
+}
+.nav .level a d, .nav .level a d1 {
+    display: none;}
+.breadcrumbs li {
+    z-index:  expression(
+       runtimeStyle.zIndex = 0,
+       insertBefore(
+           createElement("m"), firstChild),
+       this == parentNode.firstChild ? (className += " first-child") : 0
+    );
+    position: relative;
+    padding-right: 11px;
+}
+.breadcrumbs li m {
+    font: 12px 'arial';
+    zoom:  expression(
+       runtimeStyle.zoom = 0,
+       innerHTML = "&rarr;"
+    );
+    position: absolute;
+    right: 0;
+}
+.logsTable tr td {
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    border-bottom: none;}
+
+.logsTable .time, .logsTable .class {}

@@ -1,0 +1,36 @@
+<?
+$MESS ['IBLOCK_DETAIL_URL'] = "URL, ведущий на страницу с содержимым элемента раздела";
+$MESS ['IBLOCK_PRICES'] = "Цены";
+$MESS ['IBLOCK_TYPE'] = "Тип инфо-блока";
+$MESS ['IBLOCK_IBLOCK'] = "Инфо-блок";
+$MESS ['IBLOCK_PROPERTY'] = "Свойства";
+$MESS ['IBLOCK_PROPERTY_FLAG'] = "Необходимый для отображения флаг";
+$MESS ['IBLOCK_SORT_SHOWS'] = "количество просмотров в среднем";
+$MESS ['IBLOCK_SORT_SORT'] = "индекс сортировки";
+$MESS ['IBLOCK_SORT_TIMESTAMP'] = "дата изменения";
+$MESS ['IBLOCK_SORT_NAME'] = "название";
+$MESS ['IBLOCK_SORT_ID'] = "ID";
+$MESS ['IBLOCK_SORT_ACTIVE_FROM'] = "дата активности (с)";
+$MESS ['IBLOCK_SORT_ACTIVE_TO'] = "дата активности (по)";
+$MESS ['IBLOCK_SORT_ASC'] = "по возрастанию";
+$MESS ['IBLOCK_SORT_DESC'] = "по убыванию";
+$MESS ['IBLOCK_SECTION_URL'] = "URL, ведущий на страницу с содержимым раздела";
+$MESS ['IBLOCK_ELEMENT_COUNT'] = "Количество выводимых элементов";
+$MESS ['IBLOCK_LINE_ELEMENT_COUNT'] = "Количество элементов выводимых в одной строке таблицы";
+$MESS ['IBLOCK_ELEMENT_SORT_FIELD'] = "По какому полю сортируем элементы";
+$MESS ['IBLOCK_ELEMENT_SORT_ORDER'] = "Порядок сортировки элементов";
+$MESS ['IBLOCK_PRICE_CODE'] = "Тип цены";
+$MESS ['IBLOCK_BASKET_URL'] = "URL, ведущий на страницу с корзиной покупателя";
+$MESS ['IBLOCK_ACTION_VARIABLE'] = "Название переменной, в которой передается действие";
+$MESS ['IBLOCK_PRODUCT_ID_VARIABLE'] = "Название переменной, в которой передается код товара для покупки";
+$MESS ['IBLOCK_SECTION_ID_VARIABLE'] = "Название переменной, в которой передается код группы";
+$MESS ['IBLOCK_USE_PRICE_COUNT'] = "Использовать вывод цен с диапазонами";
+$MESS ['IBLOCK_SHOW_PRICE_COUNT'] = "Выводить цены для количества";
+$MESS ['T_IBLOCK_DESC_DISPLAY_COMPARE'] = "Выводить кнопку сравнения";
+$MESS ['IBLOCK_VAT_INCLUDE'] = "Включать НДС в цену";
+$MESS ['CP_BCT_CACHE_GROUPS'] = "Учитывать права доступа";
+$MESS ['CP_BCT_PRODUCT_QUANTITY_VARIABLE'] = "Название переменной, в которой передается количество товара";
+$MESS ['CP_BCT_PRODUCT_PROPS_VARIABLE'] = "Название переменной, в которой передаются характеристики товара";
+$MESS ['CP_BCT_USE_PRODUCT_QUANTITY'] = "Разрешить указание количества товара";
+$MESS ['CP_BCT_PRODUCT_PROPERTIES'] = "Характеристики товара";
+?>

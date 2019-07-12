@@ -1,0 +1,32 @@
+<?
+$MESS["IBLOCK_PRICES"] = "Цены";
+$MESS["T_IBLOCK_DESC_ELEMENT_BOX"] = "Выводить список элементов инфоблока";
+$MESS["IBLOCK_TYPE"] = "Тип инфоблока";
+$MESS["IBLOCK_IBLOCK"] = "Инфоблок";
+$MESS["IBLOCK_PROPERTY"] = "Свойства";
+$MESS["IBLOCK_SORT_ASC"] = "по возрастанию";
+$MESS["IBLOCK_SORT_DESC"] = "по убыванию";
+$MESS["IBLOCK_ELEMENT_SORT_FIELD"] = "По какому полю сортируем элементы";
+$MESS["IBLOCK_ELEMENT_SORT_ORDER"] = "Порядок сортировки элементов";
+$MESS["IBLOCK_PRICE_CODE"] = "Тип цены";
+$MESS["IBLOCK_BASKET_URL"] = "URL, ведущий на страницу с корзиной покупателя";
+$MESS["IBLOCK_ACTION_VARIABLE"] = "Название переменной, в которой передается действие";
+$MESS["IBLOCK_PRODUCT_ID_VARIABLE"] = "Название переменной, в которой передается код товара для покупки";
+$MESS["IBLOCK_SECTION_ID_VARIABLE"] = "Название переменной, в которой передается код группы";
+$MESS["IBLOCK_USE_PRICE_COUNT"] = "Использовать вывод цен с диапазонами";
+$MESS["IBLOCK_SHOW_PRICE_COUNT"] = "Выводить цены для количества";
+$MESS["IBLOCK_DETAIL_URL"] = "URL, ведущий на страницу с содержимым элемента раздела";
+$MESS["IBLOCK_ELEMENT_SORT_FIELD_BOX"] = "По какому полю сортируем список элементов";
+$MESS["IBLOCK_ELEMENT_SORT_ORDER_BOX"] = "Порядок сортировки списка элементов";
+$MESS["IBLOCK_ELEMENT_SORT_FIELD_BOX2"] = "Поле для второй сортировки списка элементов";
+$MESS["IBLOCK_ELEMENT_SORT_ORDER_BOX2"] = "Порядок второй сортировки списка элементов";
+$MESS["IBLOCK_COMPARE_NAME"] = "Уникальное имя для списка сравнения";
+$MESS["IBLOCK_FIELD"] = "Поля";
+$MESS["IBLOCK_VAT_INCLUDE"] = "Включать НДС в цену";
+$MESS["CP_BCCR_OFFERS_FIELD_CODE"] = "Поля предложений";
+$MESS["CP_BCCR_OFFERS_PROPERTY_CODE"] = "Свойства предложений";
+$MESS["CP_BCCR_CONVERT_CURRENCY"] = "Показывать цены в одной валюте";
+$MESS["CP_BCCR_CURRENCY_ID"] = "Валюта, в которую будут сконвертированы цены";
+$MESS["CP_BCCR_HIDE_NOT_AVAILABLE"] = "Не отображать в списке товары, которых нет на складах";
+$MESS["HIDE_NOT_AVAILABLE_TIP"] = "При отмеченной опции будут скрыты товары, для которых общее количество на складах меньше либо равно нулю, включен количественный учет и не разрешена покупка при отсутствии товара";
+?>

@@ -1,0 +1,34 @@
+<?
+$MESS["B_BY_LIST"] = "Списком";
+$MESS["B_BY_ALFAVIT"] = "По алфавиту";
+$MESS["B_PRODUCTS"] = "Товары бренда";
+$MESS["B_BACK_TO_LIST"] = "Назад к списку брендов";
+$MESS["NOVAGR_SHOP_A"] = "А";
+$MESS["NOVAGR_SHOP_B"] = "Б";
+$MESS["NOVAGR_SHOP_V"] = "В";
+$MESS["NOVAGR_SHOP_G"] = "Г";
+$MESS["NOVAGR_SHOP_D"] = "Д";
+$MESS["NOVAGR_SHOP_E"] = "Е";
+$MESS["NOVAGR_SHOP_J"] = "Ж";
+$MESS["NOVAGR_SHOP_Z"] = "З";
+$MESS["NOVAGR_SHOP_I"] = "И";
+$MESS["NOVAGR_SHOP_K"] = "К";
+$MESS["NOVAGR_SHOP_L"] = "Л";
+$MESS["NOVAGR_SHOP_M"] = "М";
+$MESS["NOVAGR_SHOP_N"] = "Н";
+$MESS["NOVAGR_SHOP_O"] = "О";
+$MESS["NOVAGR_SHOP_P"] = "П";
+$MESS["NOVAGR_SHOP_R"] = "Р";
+$MESS["NOVAGR_SHOP_S"] = "С";
+$MESS["NOVAGR_SHOP_T"] = "Т";
+$MESS["NOVAGR_SHOP_U"] = "У";
+$MESS["NOVAGR_SHOP_F"] = "Ф";
+$MESS["NOVAGR_SHOP_H"] = "Х";
+$MESS["NOVAGR_SHOP_C"] = "Ц";
+$MESS["NOVAGR_SHOP_C1"] = "Ч";
+$MESS["NOVAGR_SHOP_S1"] = "Ш";
+$MESS["NOVAGR_SHOP_S2"] = "Щ";
+$MESS["NOVAGR_SHOP_E1"] = "Э";
+$MESS["NOVAGR_SHOP_U1"] = "Ю";
+$MESS["NOVAGR_SHOP_A1"] = "Я";
+?>

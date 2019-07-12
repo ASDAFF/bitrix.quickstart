@@ -1,0 +1,38 @@
+.theme-bgcolor {
+    background-color: #7d5f48!important;
+}
+.theme-color {
+    color: #582600!important;
+}
+a {
+	color: #582600;
+}
+a:hover {
+	color: #582600;
+}
+h1.logo {
+    color: #582600;
+}
+    h1.logo a {
+        color: #582600;
+    }
+div.news-line a.all {
+    color: #582600;
+}
+div.navigation a.sel {
+    background-color: #7D5F48;
+}
+
+div.offer div.info a {
+    color: #582600;
+}
+p.all-offers {
+    color: #582600;
+}
+    p.all-offers a {
+        color: #582600;
+    }
+
+div.offer div.info  a.type1 {
+    background-color: #7d5f48;
+}

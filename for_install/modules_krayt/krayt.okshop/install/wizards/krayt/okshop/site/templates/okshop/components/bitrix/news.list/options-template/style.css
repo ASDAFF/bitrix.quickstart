@@ -1,0 +1,18 @@
+.options-list {}
+.options-list .options-item {
+	text-align:center;
+	width:33%;
+	float:left;
+	padding:40px 0 15px 0;
+}
+.options-list .options-item img{
+	display:block;
+	margin:auto;
+}
+.options-list .options-item h2{
+	font-size:16px;
+	line-height:16px;
+	color:#999999;
+	padding:17px 0 15px;
+    margin-bottom: 0;
+}

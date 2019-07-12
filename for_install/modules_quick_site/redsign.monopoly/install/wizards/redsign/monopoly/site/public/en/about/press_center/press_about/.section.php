@@ -1,0 +1,3 @@
+<?
+$sSectionName="Press about us";
+?>

@@ -1,0 +1,218 @@
+.sorter_and_name .catalogsorter{
+	position:relative;
+	top:-5px;
+}
+
+.catalogsorter{
+	padding-left:17px;
+}
+.catalogsorter .sortaou{
+	float:left;
+}
+.bottom  .catalogsorter{
+	padding-top:12px;
+}
+.bottom  .catalogsorter .sortaou{
+	float:right;
+}
+.catalogsorter .sort,
+.catalogsorter .shortsort{
+	float:left;
+	margin-right:25px;
+}
+.catalogsorter .output{
+	float:right;
+}
+.catalogsorter .template{
+	float:right;
+}
+.catalogsorter .dropdown{
+	position:relative;
+	float:left;
+}
+.catalogsorter .title{
+	float:left;
+	margin-right:5px;
+	padding:5px 0px;
+}
+.catalogsorter .dropdownin{
+	position:absolute;
+	left:-14px;
+	display:none;
+	min-width:50px;
+	background-color:#FFF;
+	border:1px solid #F2F2F2;
+	z-index:101;
+}
+.catalogsorter .dropdown.hover .dropdownin{
+	display:block;
+}
+.catalogsorter .dropdown a.select,
+.catalogsorter .dropdown a.select:hover{
+	color:#000;
+	text-decoration:none;
+}
+.catalogsorter .dropdownin a{
+	display:block;
+	padding:5px 14px;
+	text-decoration:none;
+}
+.catalogsorter .dropdownin a:hover{
+	color:#FFF;
+	background-color:#EE8131;
+}
+.catalogsorter .dropdownin a.selected{
+	text-decoration:underline;
+}
+/* shortsort & sort */
+.catalogsorter .shortsort i,
+.catalogsorter .sort i{
+	width:8px;
+	height:4px;
+	margin-left:6px;
+	margin-bottom:2px;
+	background-position:-8px 0px;
+}
+.catalogsorter .shortsort a i.asc,
+.catalogsorter .sort .dropdownin a i.asc{
+	background-position:-8px 0px;
+}
+.catalogsorter .shortsort a:hover i.asc,
+.catalogsorter .shortsort a.selected i.asc,
+.catalogsorter .sort .dropdownin a:hover i.asc{
+	background-position:-8px -8px;
+}
+.catalogsorter .shortsort a i.desc,
+.catalogsorter .sort .dropdownin a i.desc{
+	background-position:0px 0px;
+}
+.catalogsorter .shortsort a:hover i.desc,
+.catalogsorter .shortsort a.selected i.desc,
+.catalogsorter .sort .dropdownin a:hover i.desc{
+	background-position:0px -8px;
+}
+/* output */
+.catalogsorter .output i{
+	width:8px;
+	height:4px;
+	margin-left:6px;
+	margin-bottom:2px;
+	background-position:0px 0px;
+}
+.catalogsorter .output .dropdownin a i{
+	display:none;
+}
+.catalogsorter .sort .dropdown,
+.catalogsorter .output .dropdown{
+	padding:5px 0px;
+}
+/* template & shortsort */
+.catalogsorter .template a{
+	float:right;
+}
+.catalogsorter .shortsort a{
+	float:left;
+}
+.catalogsorter .template a,
+.catalogsorter .shortsort a{
+	display:block;
+	padding:5px 14px;
+	margin-left:2px;
+	text-decoration:none;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.catalogsorter .template a:hover,
+.catalogsorter .shortsort a:hover{
+	color:#FFF;
+	background-color:#EE8131;
+	text-decoration:underline;
+}
+.catalogsorter .template a.selected,
+.catalogsorter .shortsort a.selected{
+	color:#FFF;
+	background-color:#EE8131;
+}
+.catalogsorter .template a:active,
+.catalogsorter .shortsort a:active,
+.catalogsorter .template a.selected:active,
+.catalogsorter .shortsort a.selected:active{
+	text-decoration:underline;
+	color:#fff;
+	background-color:#d36f25;
+}
+.catalogsorter .template i{
+	margin-right:4px;
+	margin-bottom:1px;
+}
+.catalogsorter .template i.table{
+	width:10px;
+	height:10px;
+	background-position:-10px -336px;
+}
+.catalogsorter .template a:hover i.table,
+.catalogsorter .template a.selected i.table,
+.catalogsorter .template a:active i.table,
+.catalogsorter .template a.selected:active i.table{
+	background-position:0px -336px;
+}
+.catalogsorter .template i.showcase{
+	width:11px;
+	height:11px;
+	background-position:-11px -346px;
+}
+.catalogsorter .template a:hover i.showcase,
+.catalogsorter .template a.selected i.showcase,
+.catalogsorter .template a:active i.showcase,
+.catalogsorter .template a.selected:active i.showcase{
+	background-position:0px -346px;
+}
+.catalogsorter .template i.gallery{
+	width:10px;
+	height:10px;
+	background-position:-10px -357px;
+}
+.catalogsorter .template a:hover i.gallery,
+.catalogsorter .template a.selected i.gallery,
+.catalogsorter .template a:active i.gallery,
+.catalogsorter .template a.selected:active i.gallery{
+	background-position:0px -357px;
+}
+
+.catalogsorter span.drop{
+	display:none;
+}
+
+
+@media screen and (max-width:850px){
+	body.adaptive .catalogsorter .template a i{
+		margin-right:0px;
+	}
+	body.adaptive .catalogsorter .template a span{
+		display:none;
+	}
+}
+@media screen and (max-width:665px) and (min-width:606px){
+	body.adaptive .catalogsorter .title{
+		display:none;
+	}
+}
+@media screen and (max-width:390px){
+	body.adaptive .catalogsorter .sort .title{
+		display:none;
+	}
+}
+@media screen and (max-width:650px){
+	body.adaptive .catalogsorter .sort,
+	body.adaptive .catalogsorter .shortsort,
+	body.adaptive .catalogsorter .output{
+		margin-right:10px;
+	}
+}
+@media screen and (max-width:605px){
+	body.adaptive .catalogsorter{
+		padding-left:0px;
+	}
+}

@@ -1,0 +1,1 @@
+<a href="http://krayt.ru/" target="_blank" ><img src="<?=SITE_DIR?>images/79b6e3efc8a0a8bee19930b3c8591078.jpg" align="middle" title="Скидка 10%.jpg" alt="Скидка 10%.jpg" width="196" height="196"  /></a>

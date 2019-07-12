@@ -1,0 +1,36 @@
+<?
+$MESS["CT_BSP_ALL"] = "(ьberall)";
+$MESS["CT_BSP_GO"] = "Suchen";
+$MESS["CT_BSP_ITEM_TAGS"] = "Tags";
+$MESS["CT_BSP_DATE_CHANGE"] = "Geдndert";
+$MESS["CT_BSP_FOUND"] = "Gefunden";
+$MESS["CT_BSP_ORDER"] = "Sortiert nach";
+$MESS["CT_BSP_ORDER_BY_RANK"] = "Wichtigkeit";
+$MESS["CT_BSP_ORDER_BY_DATE"] = "Datum";
+$MESS["CT_BSP_ADVANCED_SEARCH"] = "Erweiterte Suche";
+$MESS["CT_BSP_WHERE_LABEL"] = "Suchbereich";
+$MESS["CT_BSP_TAGS"] = "Tags";
+$MESS["CT_BSP_WHERE"] = "Bereiche";
+$MESS["CT_BSP_EVERYWHERE"] = "ьberall";
+$MESS["CT_BSP_WHEN"] = "Datum";
+$MESS["CT_BSP_DATES_FROM_TO"] = "von #FROM# bis #TO#";
+$MESS["CT_BSP_DATES_FROM"] = "von #FROM#";
+$MESS["CT_BSP_DATES_TO"] = "bis #TO#";
+$MESS["CT_BSP_DATES_ALL"] = "alle";
+$MESS["CT_BSP_ERROR"] = "Die Suchabfrage enthдlt einen Fehler:";
+$MESS["CT_BSP_CORRECT_AND_CONTINUE"] = "Bitte ьberprьfen Sie den Suchbegriff und suchen Sie erneut.";
+$MESS["CT_BSP_SINTAX"] = "<b>Syntax einer Suchanfrage:</b><br /><br />Normalerweise besteht eine Suchanfrage aus einem oder mehreren Wцrtern, z.B.: <br/><i>Kontakt Information</i><br/> Auf diese Suchanfrage werden Seiten gefunden, auf denen beide Wцrter vorkommen. <br/><br/> Logische Operanden erlauben kompliziertere Suchanfragen, z.B.: <br/><i>Kontakt Information oder Telefon</i><br/> Auf diese Suchanfrage werden Seiten gefunden, auf denen entweder beide Wцrter &quot;Kontakt&quot; und &quot;Information&quot;, oder das Wort &quot;Telefon&quot; vorkommen.<br/><br/><i>Kontakt Information nicht Telefon</i><br/> Auf diese Suchanfrage werden Seiten gefunden, auf denen entweder beide Wцrter &quot;Kontakt&quot; und &quot;Information&quot; aber nicht &quot;Telefon&quot; vorkommen.<br/> Sie kцnnen auch Klammern benutzen, um noch kompliziertere Suchanfragen zu starten.<br />";
+$MESS["CT_BSP_LOGIC"] = "Logische Operanden:";
+$MESS["CT_BSP_OPERATOR"] = "Operand";
+$MESS["CT_BSP_SYNONIM"] = "Synonyme";
+$MESS["CT_BSP_DESCRIPTION"] = "Beschreibung";
+$MESS["CT_BSP_AND"] = "und";
+$MESS["CT_BSP_AND_ALT"] = "Der <i>logische &quot;und&quot;</i>Operand ist inbegriffen und kann fehlen: Suchanfrage &quot;Kontakt Information&quot; ist komplett equivalent zu &quot;Kontakt und Information&quot;.";
+$MESS["CT_BSP_OR"] = "oder";
+$MESS["CT_BSP_OR_ALT"] = "Der <i>logische &quot;oder&quot;</i> Operand sucht nach Produkten, die mindestens einen Suchbegriff enthalten.";
+$MESS["CT_BSP_NOT"] = "nicht";
+$MESS["CT_BSP_NOT_ALT"] = "Der <i>logische &quot;nicht&quot;</i> Operand durchsucht Seiten, die keine Suchbegriffe, die nach dem Operanden angegeben wurden, enthalten.";
+$MESS["CT_BSP_BRACKETS_ALT"] = "<i>Runde Klammern</i> definieren die Reihenfolge der logischen Operanden.";
+$MESS["CT_BSP_NOTHING_TO_FOUND"] = "Leider wurden keine Ergebnisse auf Ihre Suchanfrage gefunden.";
+$MESS["CT_BSP_KEYBOARD_WARNING"] = "Die Sprache der Suchanfrage wurde fьr die \"#query#\" gewechselt.";
+?>

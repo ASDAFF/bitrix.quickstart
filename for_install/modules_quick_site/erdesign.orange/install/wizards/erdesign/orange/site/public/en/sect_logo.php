@@ -1,0 +1,1 @@
+<a href="<?=SITE_DIR?>" id="logotype"></a>

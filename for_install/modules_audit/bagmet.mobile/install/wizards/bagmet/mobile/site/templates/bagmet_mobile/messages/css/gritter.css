@@ -1,0 +1,55 @@
+/* the norm */
+/*ƒл€ пользователей, у которых по€вл€етс€ развернута€ административна€ панель нужно добавить в html style="top: 180px;", если панель свернута€, то добавл€ем style="top: 72px;"
+ од проверки:
+if ($GLOBALS["APPLICATION"]->PanelShowed !== true)
+  return "";
+ $userOptions = CUserOptions::GetOption("admin_panel", "settings");
+ return ' style="top:'.($userOptions["collapsed"] == "on" ? "39" : "147").'px"';
+*/
+#gritter-notice-wrapper{position:fixed; top:35px; right:20px; width:301px; z-index:9995;}
+#gritter-notice-wrapper.top-left{left: 20px; right: auto;}
+#gritter-notice-wrapper.bottom-right{top: auto; left: auto; bottom: 20px; right: 20px;}
+#gritter-notice-wrapper.bottom-left{top: auto; right: auto; bottom: 20px; left: 20px;}
+.gritter-item-wrapper{position:relative; margin:0 0 10px 0; background:url('../images/ie-spacer.gif'); /* ie7/8 fix */ }
+.gritter-top{background:url(../images/gritter.png) no-repeat left -30px; height:10px;}
+.hover .gritter-top{background-position:right -30px;}
+.gritter-bottom{background:url(../images/gritter.png) no-repeat left bottom; height:8px; margin:0;}
+.hover .gritter-bottom{background-position: bottom right;}
+
+.gritter-item{display:block; background:url(../images/gritter.png) no-repeat left -40px; color:#eee; padding:2px 11px 8px 11px; font-size: 11px; font-family:verdana;}
+.hover .gritter-item{background-position:right -40px;}
+.gritter-item p{padding:0; margin:0; word-wrap:break-word;}
+.gritter-close{display:none; position:absolute; top:5px; right:3px; background:url(../images/gritter.png) no-repeat left top; cursor:pointer; width:30px; height:30px;}
+.gritter-title{font-size:14px; font-weight:bold; padding:0 0 7px 0; display:block; text-shadow:1px 1px 0 #000; /* Not supported by IE :( */}
+.gritter-image{width:48px; height:48px; float:left;}
+.gritter-with-image, .gritter-without-image{padding:0;}
+.gritter-with-image{width:220px; float:right;}
+/* for the light (white) version of the gritter notice */
+.gritter-light .gritter-item, .gritter-light .gritter-bottom, .gritter-light .gritter-top, .gritter-light .gritter-close{background-image: url(../images/gritter-light.png); color: #222;}
+.gritter-light .gritter-title{text-shadow: none;}
+
+.message_buy_btn{display: inline-block; margin-top: 15px; border: 1px solid #9cc83d; background: #9cc83d; padding: 6px 15px 6px 15px; text-shadow: #7ea4bd 0 1px 0; text-decoration: none;
+	color: #ffffff !important; font-size: 14px; font-family: font-family: 'didact_gothicmedium', sans-serif; font-weight: normal; text-decoration: none; vertical-align: middle;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cbdc2e), to(#9cc83d)); background: -webkit-linear-gradient(top, #cbdc2e, #9cc83d); background: -moz-linear-gradient(top, #cbdc2e, #9cc83d); background: -ms-linear-gradient(top, #cbdc2e, #9cc83d); background: -o-linear-gradient(top, #cbdc2e, #9cc83d); background-image: -ms-linear-gradient(top, #cbdc2e 0%, #9cc83d 100%);
+	-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0; -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0; box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+}
+.message_buy_btn:hover {border: 1px solid #9cc83d; text-shadow: #7ea4bd 0 1px 0; background: #abdc2e; color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#d7ea31), to(#abdc2e)); background: -webkit-linear-gradient(top, #d7ea31, #abdc2e); background: -moz-linear-gradient(top, #d7ea31, #abdc2e); background: -ms-linear-gradient(top, #d7ea31, #abdc2e); background: -o-linear-gradient(top, #d7ea31, #abdc2e); background-image: -ms-linear-gradient(top, #d7ea31 0%, #abdc2e 100%);
+}
+.message_buy_btn:active {text-shadow: #7ea4bd 0 1px 0; border: 1px solid #9cc83d; background: #d7ea31; color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#abdc2e), to(#abdc2e)); background: -webkit-linear-gradient(top, #abdc2e, #d7ea31); background: -moz-linear-gradient(top, #abdc2e, #d7ea31); background: -ms-linear-gradient(top, #abdc2e, #d7ea31); background: -o-linear-gradient(top, #abdc2e, #d7ea31); background-image: -ms-linear-gradient(top, #abdc2e 0%, #d7ea31 100%);
+}
+
+.message_compare_btn{display: inline-block; margin-top: 15px; padding: 5px 15px 5px 15px; font-weight: normal; text-align: center; font-size: 11px; color: #ffffff !important; border: 1px solid #3e779d; text-shadow: #1e4158 0 1px 0; text-decoration: none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d)); background: -webkit-linear-gradient(top, #65a9d7, #3e779d); background: -moz-linear-gradient(top, #65a9d7, #3e779d); background: -ms-linear-gradient(top, #65a9d7, #3e779d); background: -o-linear-gradient(top, #65a9d7, #3e779d); background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0; -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0; box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+}
+.message_compare_btn:hover {border: 1px solid #3e779d; text-shadow: #1e4158 0 1px 0; background: #65a9d7; color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#87d4f0), to(#65a9d7)); background: -webkit-linear-gradient(top, #87d4f0, #65a9d7); background: -moz-linear-gradient(top, #87d4f0, #65a9d7); background: -ms-linear-gradient(top, #87d4f0, #65a9d7); background: -o-linear-gradient(top, #87d4f0, #65a9d7); background-image: -ms-linear-gradient(top, #87d4f0 0%, #65a9d7 100%);
+}
+.message_compare_btn:active {text-shadow: #1e4158 0 1px 0; border: 1px solid #3e779d; background: #87d4f0; color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#65a9d7)); background: -webkit-linear-gradient(top, #65a9d7, #87d4f0); background: -moz-linear-gradient(top, #65a9d7, #87d4f0); background: -ms-linear-gradient(top, #65a9d7, #87d4f0); background: -o-linear-gradient(top, #65a9d7, #87d4f0); background-image: -ms-linear-gradient(top, #65a9d7 0%, #87d4f0 100%);
+}
+
+.message_one_click_buy{font-size: 12px; text-decoration: none; color: #fff; position: absolute; bottom: 24px; right: 15px;}
+.message_one_click_buy:hover{text-decoration: underline;}

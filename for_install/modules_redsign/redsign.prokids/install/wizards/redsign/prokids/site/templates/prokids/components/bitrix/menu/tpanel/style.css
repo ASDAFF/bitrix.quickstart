@@ -1,0 +1,11 @@
+.tpanel_menu{
+	height:48px;
+	overflow:hidden;
+}
+.tpanel_menu a{
+	font-family:Opensanslight,Arial,Helvetica,sans-serif;
+	display:block;
+	float:left;
+	margin-top:16px;
+	margin-right:14px;
+}

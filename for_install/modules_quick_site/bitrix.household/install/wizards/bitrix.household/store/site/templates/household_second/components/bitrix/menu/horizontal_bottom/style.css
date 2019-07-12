@@ -1,0 +1,44 @@
+	/* Menu Bottom */
+	.menuBotBread{
+		background-color:#298C7E;
+		margin:0 0 24px 0;
+		overflow:hidden;
+		*zoom:1;}
+		.menuBotBread ul{
+			padding:0 0 0 16px;}
+			.menuBotBread li{
+				background:url(images/menubot.gif) no-repeat right -40px;
+				float:left;
+				padding:0 12px 0 8px;}
+			.menuBotBread li.last{
+				background-position: center 29px;}
+				.menuBotBread li a{
+					color:#fff;
+					float:left;
+					line-height:33px;
+					text-decoration:none;}
+				.menuBotBread li a:hover{
+					color:#fff;
+					text-decoration:underline;}
+	.menuBot{
+		float:left;
+		width:72%;
+		_width:740px;
+		*zoom:1;}
+		.menuBot li{
+			padding:3px 0 3px 20px;}
+		.menuBotBlock{
+			float:left;
+			width:20%;}
+			.menuBot .menuBotBlock li{
+				padding:3px 0 3px 0px;}
+				.menuBotBlock a{
+					color:#414141;
+					font-size:14px;
+					font-weight:bold;
+					text-decoration:none;}
+				.menuBotBlock a:hover{
+					color:#c52121;}
+					.menuBotBlock ul a{
+						font-size:11px;
+						font-weight: normal;}

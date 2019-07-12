@@ -1,0 +1,2 @@
+<?
+$sSectionName = 'Viewed goods';

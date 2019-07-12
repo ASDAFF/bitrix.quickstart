@@ -1,0 +1,31 @@
+div.news-detail
+{
+    overflow: hidden;
+}
+    div.news-detail h1
+    {
+        float: left;
+        margin-right: 55px;
+    }
+    div.news-detail img.detail_picture
+    {
+	    border-radius: 6px 6px 6px 6px;
+        display: block;
+        float: left;
+        margin: 0 10px 5px 0;
+        position: relative;
+        top: 3px;
+    }
+    div.news-detail .date
+    {
+        font-size: 10px;
+        color: #999;
+        position: relative;
+        /*margin-top: -47px;*/
+        margin-left: -49px;
+        float: left;
+    }
+    div.news-detail .preview
+    {
+	    font-style: italic;
+    }

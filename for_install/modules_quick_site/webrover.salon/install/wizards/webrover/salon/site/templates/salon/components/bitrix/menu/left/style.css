@@ -1,0 +1,51 @@
+/* Left menu*/
+div.left-menu
+{
+	width:170px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin-bottom:8px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+div.left-menu a:link,
+div.left-menu a:visited,
+div.left-menu a:active,
+div.left-menu a:hover
+{
+	color:#575752;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div.left-menu a.selected:link,
+div.left-menu a.selected:visited,
+div.left-menu a.selected:active,
+div.left-menu a.selected:hover
+{
+	color:#e30000;
+}
+
+.bl
+{
+	margin-bottom:4px;
+	background:#E5E5D8 url(images/bl.gif) 0 100% no-repeat;
+	width:100%;
+}
+.br 
+{
+	background: url(images/br.gif) 100% 100% no-repeat;
+}
+.tl
+{
+	background: url(images/tl.gif) 0 0 no-repeat;
+}
+.tr 
+{
+	background: url(images/tr.gif) 100% 0 no-repeat;
+	padding:5px 10px;
+}
+.clear {font-size: 1px; height: 1px}
+
+

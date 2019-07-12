@@ -1,0 +1,12 @@
+.frame_box iframe {
+	width:100%}
+
+.toggle.box,
+h3.toggle.box {
+	border-top:2px solid #e0e0e0;}
+
+.widget_twitter .tweet_item {
+	padding:15px 15px 1px 15px;}
+
+.widget_login .submit input.btn-submit {
+	padding:0 2px}

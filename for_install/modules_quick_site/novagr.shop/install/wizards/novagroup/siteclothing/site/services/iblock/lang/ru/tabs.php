@@ -1,0 +1,35 @@
+<?
+$MESS["TIMETOBUY"] = 'Акция "Успей купить"';
+$MESS['OFFERS'] = "Торговые предложения";
+$MESS['SECTIONS'] = "Разделы";
+$MESS['SEO_ADDITIONAL'] = "Дополнительно";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_DETAIL_PICTURE_FILE_NAME'] = "Шаблон имени файла";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_DETAIL_PICTURE_FILE_TITLE'] = "Шаблон TITLE";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_DETAIL_PICTURE_FILE_ALT'] = "Шаблон ALT";
+$MESS['IPROPERTY_TEMPLATES_ELEMENTS_DETAIL_PICTURE'] = "Настройки для детальных картинок элементов";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_PREVIEW_PICTURE_FILE_NAME'] = "Шаблон имени файла";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_PREVIEW_PICTURE_FILE_TITLE'] = "Шаблон TITLE";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_PREVIEW_PICTURE_FILE_ALT'] = "Шаблон ALT";
+$MESS['IPROPERTY_TEMPLATES_ELEMENTS_PREVIEW_PICTURE'] = "Настройки для картинок анонса элементов";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_PAGE_TITLE'] = "Заголовок товара";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_META_DESCRIPTION'] = "Шаблон META DESCRIPTION";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_META_KEYWORDS'] = "Шаблон META KEYWORDS";
+$MESS['IPROPERTY_TEMPLATES_ELEMENT_META_TITLE'] = "Шаблон META TITLE";
+$MESS['TAGS'] = "Теги";
+$MESS['DETAIL_TEXT'] = "Детальное описание";
+$MESS['DETAIL_PICTURE'] = "Детальная картинка";
+$MESS['TAB_DETAIL'] = "Подробно";
+$MESS['PREVIEW_TEXT'] = "Описание для анонса";
+$MESS['PREVIEW_PICTURE'] = "Картинка для анонса";
+$MESS['TAB_PREVIEW'] = "Анонс";
+$MESS['LINKED_PROP'] = "Связанные элементы";
+$MESS['IBLOCK_ELEMENT_PROP_VALUE'] = $MESS['IBLOCK_ELEMENT_PROPERTY'] = "Значения свойств";
+$MESS['TAB_PROPERTY'] = "Товар";
+$MESS['ACTIVE'] = "Активность";
+$MESS['ACTIVE_FROM'] = "Начало активности";
+$MESS['ACTIVE_TO'] = "Окончание активности";
+$MESS['NAME'] = "Название";
+$MESS['CODE'] = "Символьный код";
+$MESS['XML_ID'] = "Внешний код";
+$MESS['SORT'] = "Сортировка";
+?>

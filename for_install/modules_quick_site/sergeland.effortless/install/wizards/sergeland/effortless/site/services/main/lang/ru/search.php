@@ -1,0 +1,3 @@
+<?
+$MESS["SALE_WIZARD_SEARCH_CATEGORY"] = "Товары";
+?>

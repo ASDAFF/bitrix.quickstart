@@ -1,0 +1,2 @@
+<?
+$sSectionName = "Catalog";

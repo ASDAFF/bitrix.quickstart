@@ -1,0 +1,70 @@
+.authform {
+
+  & &__title {
+    font-size: 16px;
+    line-height: $base-line-height;
+  }
+
+  & &__nonsecure-note,
+  & &__btn,
+  & &__title {
+    margin-bottom: $base-line-height;
+  }
+
+  & &__captcha-input {
+    float: left;
+    max-width: 138.5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  & &__restore-link:hover {
+    color: $skin0_bg;
+    text-decoration: underline;
+  }
+
+  & input {
+    max-width: 275px;
+  }
+
+  & &__btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+.authform {
+
+ &.is-popup &__btns > div {
+   display: inline-block;
+   vertical-align: middle;
+   text-align: right;
+   margin-left: -4px;
+ }
+
+ &.is-popup &__btns > div:nth-child(1) {
+   width: 40%;
+ }
+ &.is-popup &__btns > div:nth-child(1) .btn {
+   width: 100%;
+ }
+ &.is-popup &__btns > div:nth-child(2) {
+   width: 60%;
+ }
+ &.is-popup input {
+   max-width: 100%;
+ }
+
+ &.is-popup div.bx-auth-services div {
+   width: auto;
+ }
+
+ &.is-popup div.bx-auth-services b {
+   display: none;
+ }
+
+ &.is-popup &__captcha-input {
+   padding: $base-line-height*0.5 0;
+ }
+
+}

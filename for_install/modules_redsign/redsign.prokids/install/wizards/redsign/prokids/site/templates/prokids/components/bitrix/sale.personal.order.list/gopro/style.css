@@ -1,0 +1,79 @@
+.orderlist .switch{
+	margin-bottom:15px;
+}
+.orderlist .switch a{
+	display:block;
+	float:left;
+	margin-right:2px;
+	margin-bottom:2px;
+	padding:5px 14px;
+	text-decoration:none;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.orderlist .switch a:hover,
+.orderlist .switch a.selected{
+	color:#FFF;
+	background-color:#EE8131;
+}
+.orderlist .switch .separator{
+	float:left;
+}
+
+.orderlist .item .namedate{
+	float:left;
+}
+.orderlist .item{
+	display:block;
+	margin-bottom:15px;
+	padding:10px 20px;
+	border:1px solid #F2F2F2;
+}
+.orderlist .item:hover{
+	text-decoration:none;
+	border:1px solid #EE8131;
+}
+.orderlist .item .name{
+	font-size:18px;
+	line-height:22px;
+}
+.orderlist .item:hover .name{
+	text-decoration:underline;
+}
+.orderlist .item .float{
+	float:right;
+	color:#000;
+	line-height:26px;
+}
+.orderlist .item .status{
+	margin-right:40px;
+}
+.orderlist .item .price{
+	font-size:14px;
+}
+.orderlist .item .date,
+.orderlist .item .products{
+	color:#666;
+}
+.orderlist .item .products{
+	margin-top:5px;
+}
+
+
+@media screen and (max-width:775px){
+	body.adaptive .orderlist .switch .separator{
+		width:100%;
+	}
+	body.adaptive .orderlist .item .namedate,
+	body.adaptive .orderlist .item .float{
+		width:100%;
+	}
+	body.adaptive .orderlist .item .float{
+		float:none;
+	}
+	body.adaptive .orderlist .item .status{
+		margin-right:10px;
+	}
+}

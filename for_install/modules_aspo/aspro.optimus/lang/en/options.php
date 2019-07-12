@@ -1,0 +1,40 @@
+<?
+$MESS["NO_RIGHTS_FOR_VIEWING"] = "Недостаточно прав для просмотра";
+$MESS["MAIN_OPTIONS"] = "Настройки сайта &laquo;#SITE_NAME#&raquo; (#SITE_ID#)";
+$MESS["MAIN_OPT_APPLY"] = "Применить";
+$MESS["MAIN_OPT_APPLY_TITLE"] = "Применить настройки сайта";
+$MESS["MAIN_OPT_CANCEL"] = "Отменить";
+$MESS["MAIN_OPT_CANCEL_TITLE"] = "Отменить настройки сатйа";
+$MESS["MAIN_OPTIONS_TITLE"] = "Основные настройки";
+$MESS["TEMPLATE_OPTIONS"] = "Шаблон";
+$MESS["COLOR_THEME"] = "Цветовая схема";
+$MESS["COLOR_THEME_BLUE"] = "синяя";
+$MESS["COLOR_THEME_CARROT"] = "морковная";
+$MESS["COLOR_THEME_GREEN"] = "зеленая";
+$MESS["COLOR_THEME_GREEN_SEA"] = "зелено-морская";
+$MESS["COLOR_THEME_RED"] = "красная";
+$MESS["COLOR_THEME_YELLOW"] = "желтая";
+$MESS["COLOR_THEME_CERICE"] = "светло-вишневая";
+$MESS["COLOR_THEME_VIOLET"] = "фиолетовая";
+$MESS["COLOR_THEME_AZURE_GREY"] = "лазурно-серая";
+$MESS["COLOR_THEME_TURQUOISE"] = "бирюзовая";
+$MESS["COLOR_THEME_AUBERGINE"] = "баклажановая";
+$MESS["PHONE_MASK"] = "Маска ввода телефона";
+$MESS["VALIDATE_PHONE_MASK"] = "Валидация ввода телефона";
+$MESS["SHOW_BREADCRUMBS_CATALOG_SUBSECTIONS"] = "Показывать подразделы каталога в навигационной цепочке";
+$MESS["BANNER_WIDTH"] = "Ширина баннера";
+$MESS["BANNER_WIDTH_AUTO"] = "по ширине браузера";
+$MESS["BANNER_WIDTH_WIDE"] = "широкий";
+$MESS["BANNER_WIDTH_MIDDLE"] = "средний";
+$MESS["BANNER_WIDTH_NARROW"] = "узкий";
+$MESS["HEAD"] = "Шапка сайта";
+$MESS["TYPE_1"] = "тип 1";
+$MESS["TYPE_2"] = "тип 2";
+$MESS["BASKET"] = "Корзина";
+$MESS["BASKET_NORMAL"] = "в шапке страницы";
+$MESS["BASKET_FLY"] = "летающая, слева";
+$MESS['NO_COMPOSITE_NOTE'] = 'Включение отображения переключателя тем в публичной части сайта отменит композитное кеширование.';
+$MESS["NO_SITE_INSTALLED"] = 'Не найдено сайтов с установленным решением &laquo;Аспро: Маркет - Адаптивный интернет-магазин&raquo;<br />
+<input type="button" value="Установить" style="margin-top: 10px;" onclick="document.location.href=\'/bitrix/admin/wizard_install.php?lang=ru&wizardName=aspro:optimus&#SESSION_ID#\'">';
+$MESS["WILL_CLEAR_HTML_CACHE_NOTE"] = "Будет выполнена очистка композитного (html) кеша";
+?>

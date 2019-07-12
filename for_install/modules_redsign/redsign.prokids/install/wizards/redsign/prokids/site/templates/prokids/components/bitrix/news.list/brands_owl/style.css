@@ -1,0 +1,106 @@
+.brandslistimgowl1.mainstyles {
+	margin-top:25px;
+}
+.brandslistimgowl1.mainstyles .title {
+	margin-bottom:15px;
+	padding:0px 17px 15px 17px;
+	border-bottom:1px solid #F2F2F2;
+}
+.brandslistimgowl1.mainstyles .title a {
+	color:#EE8131;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+/* nav */
+.brandslistimgowl1 .owl-nav{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+	-webkit-transition:all .2s ease-in-out 0s;
+	-moz-transition:all .2s ease-in-out 0s;
+	-o-transition:all .2s ease-in-out 0s;
+}
+.brandslistimgowl1 .owl-carousel:hover .owl-nav{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	-moz-opacity:.5;
+	-khtml-opacity:.5;
+	opacity:.5;
+}
+.brandslistimgowl1 .owl-nav div.owl-prev,
+.brandslistimgowl1 .owl-nav div.owl-next{
+	position:absolute;
+	top:50px;
+	margin-top:-32px;
+	cursor:pointer;
+}
+.brandslistimgowl1 .owl-nav div.owl-prev{
+	left:0px;
+}
+.brandslistimgowl1 .owl-nav div.owl-next{
+	right:0px;
+}
+.brandslistimgowl1 .owl-nav div span{
+	display:block;
+	width:25px;
+	height:25px;
+	margin:20px;
+	cursor:pointer;
+	background-color:#FAFAFA;
+}
+.brandslistimgowl1 .owl-nav div span:hover{
+	background-color:#214496;
+}
+.brandslistimgowl1 .owl-nav div span .icon{
+	width:7px;
+	height:10px;
+	margin-top:5px;
+	margin-left:9px;
+}
+.brandslistimgowl1 .owl-nav div.owl-prev span .icon{
+	background-position:0px -111px;
+}
+.brandslistimgowl1 .owl-nav div.owl-prev span:hover .icon{
+	background-position:-7px -111px;
+}
+.brandslistimgowl1 .owl-nav div.owl-next span .icon{
+	background-position:0px -121px;
+}
+.brandslistimgowl1 .owl-nav div.owl-next span:hover .icon{
+	background-position:-7px -121px;
+}
+
+/* dots */
+.brandslistimgowl1 .owl-dots{
+	display: none;
+}
+
+/* items */
+.brandslistimgowl1 .owl-item {
+	max-height: 100px;
+	text-align: center;
+}
+.brandslistimgowl1 .owl-item .in {
+	height: 80px;
+	padding: 10px 10px;
+}
+.brandslistimgowl1 .owl-item .pic {
+	display: table;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+}
+.brandslistimgowl1 .owl-item .pic a {
+	display: table-cell;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.brandslistimgowl1 .item .pic img {
+	display: inline;
+	width: auto;
+	max-width: 100%;
+	max-height: 80px;
+	vertical-align: middle;
+}

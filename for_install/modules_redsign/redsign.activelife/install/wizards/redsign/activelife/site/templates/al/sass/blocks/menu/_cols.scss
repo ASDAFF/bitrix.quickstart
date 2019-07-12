@@ -1,0 +1,41 @@
+.menu_cols {
+
+  &__menu,
+  &__menu ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: $base-line-height;
+    padding: 0;
+  }
+  
+  &__menu {
+  
+    & > li > a {
+      color: $skin_footer_title_color;
+      font-size: $font-size-large;
+      font-weight: bold;
+      margin-bottom: $base-line-height/2;
+    }
+    
+    ul > li {
+      margin-bottom: $base-line-height/2;
+    }
+    
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+    
+    &.ellipsis li {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

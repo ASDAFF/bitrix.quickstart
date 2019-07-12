@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2015-05-19T09:48:42">
+	<Metadata>
+		<Id>press_about_us_redsign_monopoly</Id>
+		<Title>Press about us</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>14</Id>
+				<Title>Publisher name(external resource)</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>PUBLISHER_NAME</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>16</Id>
+				<Title>Publisher description</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>300</BitrixSort>
+				<BitrixCode>PUBLISHER_DESCR</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>14</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+			<Property>
+				<Id>16</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+			</Property>
+		</ElementProperties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>press_about_us_redsign_monopoly</Id>
+		<MetadataId>press_about_us_redsign_monopoly</MetadataId>
+		<Title>Press about us</Title>
+		<BitrixCode>press_about_us_redsign_monopoly</BitrixCode>
+		<BitrixSort>400</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/about/press_center/press_about/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/about/press_center/press_about/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/about/press_center/press_about/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Items</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete item</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>19</Id>
+				<Title>Section &quot;Press about us&quot;</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>razdel-pressa-o-nas</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>This section is used by companies whose products or services are mentioned in the media. He's a very positive effect on the perception of the company and talks about its reliability.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis congue justo, eget auctor sapien. Donec ac neque nunc. Curabitur vel turpis fermentum, auctor turpis ut, egestas enim. Maecenas eu aliquam augue, nec hendrerit massa. Nullam nec nisl sollicitudin, eleifend erat et, tempus massa. Nulla nibh nibh, bibendum at est quis, molestie egestas risus. Morbi felis mi, suscipit in lectus non, semper convallis justo. Integer in nisl vitae tortor lacinia egestas nec blandit purus. In sollicitudin luctus fermentum. Phasellus ante libero, tincidunt sit amet lacus at, tincidunt ornare velit.
+
+Nulla commodo lorem nec ipsum pulvinar, quis feugiat neque cursus. Nunc congue euismod diam nec accumsan. Pellentesque nibh leo, tristique sit amet sapien a, volutpat ultrices mauris. Nunc rutrum condimentum turpis, nec finibus quam pulvinar sit amet. Nulla sagittis lorem neque, in pretium risus viverra sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec dictum, orci non vestibulum congue, dui erat tincidunt urna, nec egestas metus tellus eu sapien. Proin erat diam, luctus sed tristique vitae, sagittis sagittis mauris. Ut nec justo nisl. Cras volutpat ante id erat finibus lobortis. Aenean tempus dignissim ex dignissim rhoncus. In gravida quis massa sit amet maximus. Pellentesque a ipsum eros. Suspendisse sed vehicula turpis, eu ullamcorper augue. Fusce vel facilisis nunc. Cras facilisis, sapien nec dictum imperdiet, quam turpis aliquet arcu, ac hendrerit justo nulla at lectus.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Projector</Value>
+						<PropertyValue>
+							<Value>Projector</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>, №5 (168) 2015.</Value>
+						<PropertyValue>
+							<Value>, №5 (168) 2015.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>20</Id>
+				<Title>Press about us writes regularly</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>press_about_us_files/iblock/f36/f36478f2af14904f0227c8142b04d8ad.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>pressa-o-nas-pishet-regulyarno</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Nulla commodo lorem nec ipsum pulvinar, quis feugiat neque cursus. Nunc congue euismod diam nec accumsan. Pellentesque nibh leo, tristique sit amet sapien a, volutpat ultrices mauris. Nunc rutrum condimentum turpis, nec finibus quam pulvinar sit amet. Nulla sagittis lorem neque, in pretium risus viverra sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Nulla commodo lorem nec ipsum pulvinar, quis feugiat neque cursus. Nunc congue euismod diam nec accumsan. Pellentesque nibh leo, tristique sit amet sapien a, volutpat ultrices mauris. Nunc rutrum condimentum turpis, nec finibus quam pulvinar sit amet. Nulla sagittis lorem neque, in pretium risus viverra sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec dictum, orci non vestibulum congue, dui erat tincidunt urna, nec egestas metus tellus eu sapien. Proin erat diam, luctus sed tristique vitae, sagittis sagittis mauris. Ut nec justo nisl. Cras volutpat ante id erat finibus lobortis. Aenean tempus dignissim ex dignissim rhoncus. In gravida quis massa sit amet maximus. Pellentesque a ipsum eros. Suspendisse sed vehicula turpis, eu ullamcorper augue. Fusce vel facilisis nunc. Cras facilisis, sapien nec dictum imperdiet, quam turpis aliquet arcu, ac hendrerit justo nulla at lectus.
+
+Morbi risus urna, scelerisque vel ipsum dictum, pharetra eleifend tortor. Suspendisse lorem odio, varius a dolor a, lacinia dignissim leo. Quisque ornare libero posuere, porttitor tortor eget, dignissim sem. Mauris quis sapien blandit, tempor nibh rhoncus, elementum libero. Sed sagittis libero risus, quis lobortis magna dapibus rutrum. Aliquam tristique imperdiet sem, non cursus lectus. Quisque non arcu vel urna feugiat mollis ac vel odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra viverra est, sed ullamcorper sem condimentum vel. Pellentesque pulvinar faucibus congue.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>press_about_us_files/iblock/895/8950acaccca85743b00e7530e7fc341c.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>RIA News</Value>
+						<PropertyValue>
+							<Value>RIA News</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>“WeekyNews”, №5 (200) 2015</Value>
+						<PropertyValue>
+							<Value>“WeekyNews”, №5 (200) 2015</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>21</Id>
+				<Title>Press about us</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>press_about_us_files/iblock/f0a/f0a96b0b676aa389fcc5b8509a229279.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>pressa-o-nas</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>If you talk about in newspapers or magazines, you need to talk about this website visitors.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Morbi risus urna, scelerisque vel ipsum dictum, pharetra eleifend tortor. Suspendisse lorem odio, varius a dolor a, lacinia dignissim leo. Quisque ornare libero posuere, porttitor tortor eget, dignissim sem. Mauris quis sapien blandit, tempor nibh rhoncus, elementum libero. Sed sagittis libero risus, quis lobortis magna dapibus rutrum. Aliquam tristique imperdiet sem, non cursus lectus. Quisque non arcu vel urna feugiat mollis ac vel odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra viverra est, sed ullamcorper sem condimentum vel. Pellentesque pulvinar faucibus congue.
+
+Vivamus porttitor ullamcorper ullamcorper. Nunc suscipit, nisi eget gravida ullamcorper, est libero rutrum turpis, sit amet molestie massa augue quis nisi. Nullam quis lacinia lectus, id pharetra eros. Curabitur semper eget dui at viverra. Integer elementum tristique massa, sit amet tincidunt nunc finibus vel. Nullam sed efficitur purus. Quisque nec placerat augue. Mauris non vulputate lorem, eu dapibus elit. Quisque lobortis felis vel tortor congue vehicula. Duis justo dolor, finibus ac dui euismod, condimentum blandit dui. Integer commodo erat id felis commodo rhoncus. Cras quam tortor, ornare ut nisi a, tincidunt mattis arcu. Integer tempus metus id ultrices suscipit. Nullam interdum sodales feugiat. Morbi semper efficitur ipsum, ut bibendum diam euismod a. Fusce velit quam, hendrerit ac sollicitudin a, porttitor et magna.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>press_about_us_files/iblock/282/282b74b441e1ddfcf7e325da0a891fc3.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>22</Id>
+				<Title>Consumer confidence</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+				</Sections>
+				<Picture>press_about_us_files/iblock/248/24856f426415d3f584231336aab6f652.jpg</Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>doverie-pokupateley</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Each section of the site is designed to increase the confidence of customers or clients to your company.</Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta posuere diam. Phasellus at nulla eu nisl laoreet tincidunt. Maecenas egestas risus nunc, id blandit quam fringilla a. In vitae erat at purus luctus euismod. Pellentesque pellentesque fringilla tellus. Sed bibendum ut est at blandit. Pellentesque semper neque id condimentum elementum. Etiam vulputate ligula vitae arcu malesuada ullamcorper. Etiam rutrum velit ac arcu eleifend porta. Vestibulum id risus vitae massa sodales fermentum ut et eros. Nunc non metus eu diam pretium tincidunt vitae sed mauris. Praesent vel convallis ipsum. Ut in lorem egestas eros dignissim tristique.
+
+
+Sed consequat mi ipsum, dictum ornare arcu condimentum in. Fusce ultrices ut tellus sit amet ultricies. Ut urna sem, vestibulum vitae velit blandit, luctus placerat ligula. Ut nec libero purus. Mauris in nulla nulla. Fusce ex velit, eleifend eget lobortis sit amet, fermentum nec sem. Nam auctor lorem ut leo maximus scelerisque. Maecenas erat nulla, sagittis eget luctus vitae, dictum sed nulla. Proin sed laoreet odio. Nunc nisl risus, dictum a imperdiet sed, consequat a ante. Donec pellentesque maximus rhoncus. Praesent vel mauris a felis volutpat placerat a ac mauris. Nulla non pretium tortor, id tincidunt elit. Phasellus erat nisl, vestibulum fermentum venenatis nec, aliquet a justo. Sed ut purus sit amet massa mattis facilisis. Duis porttitor ut felis eu vestibulum.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>press_about_us_files/iblock/be7/be7cd4475817ecc63dfc2b7c60b27451.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>First channel</Value>
+						<PropertyValue>
+							<Value>First channel</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>, №888 (888) from 18.03.2015</Value>
+						<PropertyValue>
+							<Value>, №888 (888) from 18.03.2015</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

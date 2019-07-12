@@ -1,0 +1,36 @@
+#navigation{font:14px/14px Helvetica, Arial, sans-serif;padding:10px 0;text-align: center;width: 1000px;float: none;margin:0 auto;}
+
+.nav { z-index:99; margin:0; padding:0; list-style:none; line-height:1; display: inline-block;}
+.nav a  { position:relative; color:#225F97; display:block; z-index:100; padding:5px 12px; line-height:18px; text-decoration:none; text-shadow: none; font-weight: bold; }
+.nav a:hover, 
+.nav li.current_page_item a, 
+.nav li.current_page_parent a,
+.nav li.current-menu-ancestor a,
+.nav li.current-menu-item a,
+.nav li.sfHover { color: #333; }
+.nav li  { float:left; width: auto; }
+.nav li a.sf-with-ul { padding-right:20px; }
+
+/* 2.2.1 Drop-down menus */
+.nav li ul  { background: #FFF; position: absolute; left: -999em; width: 200px; border: 1px solid #BFD4D9; border-width:1px 1px 0; z-index:999; }
+.nav li ul li  { border-bottom:1px solid #BFD4D9;}
+.nav li ul li a  { padding:8px 10px; width:180px; color:#555; font-size:0.8em; }
+.nav li ul li a.sf-with-ul { padding:5px 10px; }
+.nav li ul li a:hover,
+.nav li ul li.current_page_item a,
+.nav li ul li.current-menu-item a { background:#F1F4F4;}
+.nav li ul ul  { margin: -30px 0 0 180px; }
+.nav li ul ul li a  {  }
+.nav li ul li ul li a  {  }
+
+.nav li:hover,.nav li.hover  { position:static; }
+.nav li:hover ul ul, .nav li.sfhover ul ul,
+.nav li:hover ul ul ul, .nav li.sfhover ul ul ul,
+.nav li:hover ul ul ul ul, .nav li.sfhover ul ul ul ul { left:-999em; }
+.nav li:hover ul, .nav li.sfhover ul,
+.nav li li:hover ul, .nav li li.sfhover ul,
+.nav li li li:hover ul, .nav li li li.sfhover ul,
+.nav li li li li:hover ul, .nav li li li li.sfhover ul  { left:auto; }
+
+.nav .sf-sub-indicator {background:	url(images/arrow-superfish.png) no-repeat;position:absolute;display:block;right:0.4em;top:0.9em;width:10px;height:10px;text-indent:-999em;overflow:hidden;}
+.nav li ul .sf-sub-indicator {background:url(images/arrow-superfish-right.png) no-repeat;}

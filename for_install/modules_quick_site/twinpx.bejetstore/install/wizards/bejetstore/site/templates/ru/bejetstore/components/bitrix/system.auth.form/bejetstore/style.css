@@ -1,0 +1,27 @@
+.bx_login_block{
+	float: left;
+	padding-left: 35px;
+	background: url('images/gui.png') no-repeat  10% center;
+}
+a.bx_login_top_inline_link{
+	color: #576e75;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: 13px;
+	/*line-height: 13px;*/
+	margin: 0 8px 0 5px;
+}
+a.bx_login_top_inline_link:hover{text-decoration: underline}
+/*.bx_login_top_inline_icon{
+	display: inline-block;
+	margin-left: 15px;
+	width: 16px;
+	height: 13px;
+	background: url('images/gui.png') no-repeat bottom center;
+	line-height: 13px;
+}*/
+.bx_login_popup_form {
+	min-width:310px;
+	min-height:350px;
+	padding: 0 0 10px 10px;
+}

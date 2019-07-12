@@ -1,0 +1,19 @@
+<?
+$MESS['CATALOG_COMPARE_BUY'] = 'Купить';
+$MESS['CATALOG_NOT_AVAILABLE'] = '(нет на складе)';
+$MESS['CATALOG_ONLY_DIFFERENT'] = 'Различающиеся';
+$MESS['CATALOG_ALL_CHARACTERISTICS'] = 'Все характеристики';
+$MESS['CATALOG_REMOVE_PRODUCTS'] = 'Удалить товары';
+$MESS['CATALOG_REMOVE_FEATURES'] = 'Удалить свойства';
+$MESS['CATALOG_REMOVED_FEATURES'] = 'Удаленные свойства';
+$MESS['CATALOG_ADD_TO_COMPARE_LIST'] = 'Добавить в список сравнения';
+$MESS['MSG_LINK_ALL_PROPS'] = 'Все характеристики';
+$MESS['MSG_LINK_DIFFERENT_PROPS'] = 'Только различающиеся';
+$MESS['MSG_NOT_GROUPED_PROPS'] = 'Остальные характеристики';
+$MESS['PRICE_FROM'] = 'от';
+$MESS['ADD2BASKET'] = 'В корзину';
+$MESS['ALREADY_IN_BASKET'] = 'Уже в корзине';
+$MESS['LINK_GO2BASKET'] = 'Перейти в корзину';
+$MESS['GO2DETAIL'] = 'Подробнее';
+$MESS['SLIDER_BTB_PREV'] = 'Назад';
+$MESS['SLIDER_BTB_NEXT'] = 'Далее';

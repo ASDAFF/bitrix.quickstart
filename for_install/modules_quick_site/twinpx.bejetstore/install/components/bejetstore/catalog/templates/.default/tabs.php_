@@ -1,0 +1,559 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+/** @var array $arParams */
+/** @var array $arResult */
+/** @global CMain $APPLICATION */
+/** @global CUser $USER */
+/** @global CDatabase $DB */
+/** @var CBitrixComponentTemplate $this */
+/** @var string $templateName */
+/** @var string $templateFile */
+/** @var string $templateFolder */
+/** @var string $componentPath */
+/** @var CBitrixComponent $component */
+$this->setFrameMode(true);
+global ${$arParams["FILTER_NAME"]};
+$arFilter = ${$arParams["FILTER_NAME"]};
+?>
+<div class="bj-catalogue-tabs">
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs nav-justified" role="tablist">
+	  <li class="active"><a href="#recommend-0" role="tab" data-toggle="tab" class="bj-icon-link">
+		<span class="bj-icon i-thumbs-up bj-icon-link__icon"></span>
+		<span class="bj-icon-link__link"><?=GetMessage("CP_BC_TPL_DML_RECOMMEND")?></span>
+	  </a></li>
+	  <li><a href="#new-0" role="tab" data-toggle="tab" class="bj-icon-link">
+		<span class="bj-icon i-new bj-icon-link__icon"></span>
+		<span class="bj-icon-link__link"><?=GetMessage("CP_BC_TPL_DML_NEW")?></span>
+	  </a></li>
+	  <li><a href="#hit-0" role="tab" data-toggle="tab" class="bj-icon-link">
+		<span class="bj-icon i-hit bj-icon-link__icon"></span>
+		<span class="bj-icon-link__link"><?=GetMessage("CP_BC_TPL_DML_BESTSELLER")?></span>
+	  </a></li>
+	  <li><a href="#sales-0" role="tab" data-toggle="tab" class="bj-icon-link">
+		<span class="bj-icon i-flash bj-icon-link__icon"></span>
+		<span class="bj-icon-link__link"><?=GetMessage("CP_BC_TPL_DML_SALE")?></span>
+	  </a></li>
+	</ul>
+
+	<div class="tab-content">
+		<?
+		global $arrFILTER;
+		$arrFILTER = array(
+			"!PROPERTY_SALE_RECOMMEND" => false
+		);
+		if(!empty($arFilter)){
+			$arrFILTER = array_merge($arrFILTER, $arFilter);
+		}
+		?>
+		<div class="tab-pane active" id="recommend-0">
+		<?$APPLICATION->IncludeComponent("bejetstore:catalog.section", "tabs", array(
+			"IBLOCK_TYPE" => "catalog",
+		    "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+		    "ELEMENT_SORT_FIELD" => $arParams["TOP_ELEMENT_SORT_FIELD"],
+		    "ELEMENT_SORT_ORDER" => $arParams["TOP_ELEMENT_SORT_ORDER"],
+		    "ELEMENT_SORT_FIELD2" => $arParams["TOP_ELEMENT_SORT_FIELD2"],
+		    "ELEMENT_SORT_ORDER2" => $arParams["TOP_ELEMENT_SORT_ORDER2"],
+		    "PROPERTY_CODE" => Array
+		        (
+		            "0" => "NEWPRODUCT",
+		            "1" => "SALELEADER",
+		            "2" => "SPECIALOFFER",
+		            "3" => ""
+		        ),
+
+		    "META_KEYWORDS" => "UF_KEYWORDS",
+		    "META_DESCRIPTION" => "UF_META_DESCRIPTION",
+		    "BROWSER_TITLE" => "UF_BROWSER_TITLE",
+		    "INCLUDE_SUBSECTIONS" => "Y",
+		    "BASKET_URL" => SITE_DIR."personal/cart/",
+		    "ACTION_VARIABLE" => "action",
+		    "PRODUCT_ID_VARIABLE" => "id",
+		    "SECTION_ID_VARIABLE" => "SECTION_ID",
+		    "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		    "PRODUCT_PROPS_VARIABLE" => "prop",
+		    "FILTER_NAME" => "arrFILTER",
+		    "CACHE_TYPE" => "A",
+		    "CACHE_TIME" => "36000000",
+		    "CACHE_FILTER" => "N",
+		    "CACHE_GROUPS" => "Y",
+		    "SET_TITLE" => "Y",
+		    "SET_STATUS_404" => "Y",
+		    "DISPLAY_COMPARE" => "N",
+		    "PAGE_ELEMENT_COUNT" => $arParams["TOP_ELEMENT_COUNT"],
+		    "LINE_ELEMENT_COUNT" => "3",
+		    "PRICE_CODE" => Array
+		        (
+		            "0" => "BASE"
+		        ),
+
+		    "USE_PRICE_COUNT" => "N",
+		    "SHOW_PRICE_COUNT" => "1",
+		    "PRICE_VAT_INCLUDE" => "Y",
+		    "USE_PRODUCT_QUANTITY" => "Y",
+		    "ADD_PROPERTIES_TO_BASKET" => "",
+		    "PARTIAL_PRODUCT_PROPERTIES" => "",
+		    "PRODUCT_PROPERTIES" => "",
+		    "DISPLAY_TOP_PAGER" => "N",
+		    "DISPLAY_BOTTOM_PAGER" => "N",
+		    "PAGER_TITLE" => "Товары",
+		    "PAGER_SHOW_ALWAYS" => "N",
+		    "PAGER_TEMPLATE" => "bejetstore",
+		    "PAGER_DESC_NUMBERING" => "N",
+		    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+		    "PAGER_SHOW_ALL" => "N",
+		    "OFFERS_CART_PROPERTIES" => Array
+		        (
+		            "0" => "SIZES_SHOES",
+		            "1" => "SIZES_CLOTHES",
+		            "2" => "COLOR_REF"
+		        ),
+
+		    "OFFERS_FIELD_CODE" => Array
+		        (
+		            "0" => "NAME",
+		            "1" => "PREVIEW_PICTURE",
+		            "2" => "DETAIL_PICTURE",
+		            "3" => ""
+		        ),
+
+		    "OFFERS_PROPERTY_CODE" => Array
+		        (
+		            "0" => "SIZES_SHOES",
+		            "1" => "SIZES_CLOTHES",
+		            "2" => "COLOR_REF",
+		            "3" => "MORE_PHOTO",
+		            "4" => "ARTNUMBER",
+		            "5" => ""
+		        ),
+
+		    "OFFERS_SORT_FIELD" => "sort",
+		    "OFFERS_SORT_ORDER" => "asc",
+		    "OFFERS_SORT_FIELD2" => "id",
+		    "OFFERS_SORT_ORDER2" => "desc",
+		    "OFFERS_LIMIT" => "0",
+		    "SECTION_ID" => "",
+		    "SECTION_CODE" => "",
+		    "SECTION_URL" => SITE_DIR."catalog/#SECTION_CODE#/",
+		    "DETAIL_URL" => SITE_DIR."catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
+		    "CONVERT_CURRENCY" => "Y",
+		    "CURRENCY_ID" => "RUB",
+		    "HIDE_NOT_AVAILABLE" => "N",
+		    "LABEL_PROP" => "NEWPRODUCT",
+		    "ADD_PICT_PROP" => "MORE_PHOTO",
+		    "PRODUCT_DISPLAY_MODE" => "Y",
+		    "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+		    "OFFER_TREE_PROPS" => Array
+		        (
+		            "0" => "SIZES_SHOES",
+		            "1" => "SIZES_CLOTHES",
+		            "2" => "COLOR_REF",
+		            "3" => ""
+		        ),
+
+		    "PRODUCT_SUBSCRIPTION" => "",
+		    "SHOW_DISCOUNT_PERCENT" => "Y",
+		    "SHOW_OLD_PRICE" => "Y",
+		    "MESS_BTN_BUY" => GetMessage("CP_BC_TPL_DML_BUY"),
+		    "MESS_BTN_ADD_TO_BASKET" => GetMessage("CP_BC_TPL_DML_TO_BASKET"),
+		    "MESS_BTN_SUBSCRIBE" => "",
+		    "MESS_BTN_DETAIL" => GetMessage("CP_BC_TPL_DML_DETAIL"),
+		    "MESS_NOT_AVAILABLE" => GetMessage("CP_BC_TPL_DML_NOT_AVAILABLE"),
+		    "TEMPLATE_THEME" => "site",
+		    "ADD_SECTIONS_CHAIN" => "N",
+		    "SHOW_ALL_WO_SECTION" => "Y"
+			),
+			false
+		);?>
+		</div>
+		<?
+		unset($arrFILTER);
+		global $arrFILTER;
+		$arrFILTER = array(
+			"!PROPERTY_NEWPRODUCT" => false
+		);
+		if(!empty($arFilter)){
+			$arrFILTER = array_merge($arrFILTER, $arFilter);
+		}
+		?>
+		<div class="tab-pane" id="new-0">
+		<?$APPLICATION->IncludeComponent("bejetstore:catalog.section", "tabs", array(
+				"IBLOCK_TYPE" => "catalog",
+			    "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+			    "ELEMENT_SORT_FIELD" => $arParams["TOP_ELEMENT_SORT_FIELD"],
+			    "ELEMENT_SORT_ORDER" => $arParams["TOP_ELEMENT_SORT_ORDER"],
+			    "ELEMENT_SORT_FIELD2" => $arParams["TOP_ELEMENT_SORT_FIELD2"],
+			    "ELEMENT_SORT_ORDER2" => $arParams["TOP_ELEMENT_SORT_ORDER2"],
+			    "PROPERTY_CODE" => Array
+			        (
+			            "0" => "NEWPRODUCT",
+			            "1" => "SALELEADER",
+			            "2" => "SPECIALOFFER",
+			            "3" => ""
+			        ),
+
+			    "META_KEYWORDS" => "UF_KEYWORDS",
+			    "META_DESCRIPTION" => "UF_META_DESCRIPTION",
+			    "BROWSER_TITLE" => "UF_BROWSER_TITLE",
+			    "INCLUDE_SUBSECTIONS" => "Y",
+			    "BASKET_URL" => SITE_DIR."personal/cart/",
+			    "ACTION_VARIABLE" => "action",
+			    "PRODUCT_ID_VARIABLE" => "id",
+			    "SECTION_ID_VARIABLE" => "SECTION_ID",
+			    "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+			    "PRODUCT_PROPS_VARIABLE" => "prop",
+			    "FILTER_NAME" => "arrFILTER",
+			    "CACHE_TYPE" => "A",
+			    "CACHE_TIME" => "36000000",
+			    "CACHE_FILTER" => "N",
+			    "CACHE_GROUPS" => "Y",
+			    "SET_TITLE" => "Y",
+			    "SET_STATUS_404" => "Y",
+			    "DISPLAY_COMPARE" => "N",
+			    "PAGE_ELEMENT_COUNT" => $arParams["TOP_ELEMENT_COUNT"],
+			    "LINE_ELEMENT_COUNT" => "3",
+			    "PRICE_CODE" => Array
+			        (
+			            "0" => "BASE"
+			        ),
+
+			    "USE_PRICE_COUNT" => "N",
+			    "SHOW_PRICE_COUNT" => "1",
+			    "PRICE_VAT_INCLUDE" => "Y",
+			    "USE_PRODUCT_QUANTITY" => "Y",
+			    "ADD_PROPERTIES_TO_BASKET" => "",
+			    "PARTIAL_PRODUCT_PROPERTIES" => "",
+			    "PRODUCT_PROPERTIES" => "",
+			    "DISPLAY_TOP_PAGER" => "N",
+			    "DISPLAY_BOTTOM_PAGER" => "N",
+			    "PAGER_TITLE" => "Товары",
+			    "PAGER_SHOW_ALWAYS" => "N",
+			    "PAGER_TEMPLATE" => "bejetstore",
+			    "PAGER_DESC_NUMBERING" => "N",
+			    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+			    "PAGER_SHOW_ALL" => "N",
+			    "OFFERS_CART_PROPERTIES" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF"
+			        ),
+
+			    "OFFERS_FIELD_CODE" => Array
+			        (
+			            "0" => "NAME",
+			            "1" => "PREVIEW_PICTURE",
+			            "2" => "DETAIL_PICTURE",
+			            "3" => ""
+			        ),
+
+			    "OFFERS_PROPERTY_CODE" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => "MORE_PHOTO",
+			            "4" => "ARTNUMBER",
+			            "5" => ""
+			        ),
+
+			    "OFFERS_SORT_FIELD" => "sort",
+			    "OFFERS_SORT_ORDER" => "asc",
+			    "OFFERS_SORT_FIELD2" => "id",
+			    "OFFERS_SORT_ORDER2" => "desc",
+			    "OFFERS_LIMIT" => "0",
+			    "SECTION_ID" => "",
+			    "SECTION_CODE" => "",
+			    "SECTION_URL" => SITE_DIR."catalog/#SECTION_CODE#/",
+			    "DETAIL_URL" => SITE_DIR."catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
+			    "CONVERT_CURRENCY" => "Y",
+			    "CURRENCY_ID" => "RUB",
+			    "HIDE_NOT_AVAILABLE" => "N",
+			    "LABEL_PROP" => "NEWPRODUCT",
+			    "ADD_PICT_PROP" => "MORE_PHOTO",
+			    "PRODUCT_DISPLAY_MODE" => "Y",
+			    "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+			    "OFFER_TREE_PROPS" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => ""
+			        ),
+
+			    "PRODUCT_SUBSCRIPTION" => "",
+			    "SHOW_DISCOUNT_PERCENT" => "Y",
+			    "SHOW_OLD_PRICE" => "Y",
+			    "MESS_BTN_BUY" => GetMessage("CP_BC_TPL_DML_BUY"),
+			    "MESS_BTN_ADD_TO_BASKET" => GetMessage("CP_BC_TPL_DML_TO_BASKET"),
+			    "MESS_BTN_SUBSCRIBE" => "",
+			    "MESS_BTN_DETAIL" => GetMessage("CP_BC_TPL_DML_DETAIL"),
+			    "MESS_NOT_AVAILABLE" => GetMessage("CP_BC_TPL_DML_NOT_AVAILABLE"),
+			    "TEMPLATE_THEME" => "site",
+			    "ADD_SECTIONS_CHAIN" => "N",
+			    "SHOW_ALL_WO_SECTION" => "Y"
+			),
+			false
+		);?>
+		</div>
+		<?
+		unset($arrFILTER);
+		global $arrFILTER;
+		$arrFILTER = array(
+			"!PROPERTY_SALELEADER" => false
+		);
+		if(!empty($arFilter)){
+			$arrFILTER = array_merge($arrFILTER, $arFilter);
+		}
+		?>
+		<div class="tab-pane" id="hit-0">
+		<?$APPLICATION->IncludeComponent("bejetstore:catalog.section", "tabs", array(
+				"IBLOCK_TYPE" => "catalog",
+			    "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+			    "ELEMENT_SORT_FIELD" => $arParams["TOP_ELEMENT_SORT_FIELD"],
+			    "ELEMENT_SORT_ORDER" => $arParams["TOP_ELEMENT_SORT_ORDER"],
+			    "ELEMENT_SORT_FIELD2" => $arParams["TOP_ELEMENT_SORT_FIELD2"],
+			    "ELEMENT_SORT_ORDER2" => $arParams["TOP_ELEMENT_SORT_ORDER2"],
+			    "PROPERTY_CODE" => Array
+			        (
+			            "0" => "NEWPRODUCT",
+			            "1" => "SALELEADER",
+			            "2" => "SPECIALOFFER",
+			            "3" => ""
+			        ),
+
+			    "META_KEYWORDS" => "UF_KEYWORDS",
+			    "META_DESCRIPTION" => "UF_META_DESCRIPTION",
+			    "BROWSER_TITLE" => "UF_BROWSER_TITLE",
+			    "INCLUDE_SUBSECTIONS" => "Y",
+			    "BASKET_URL" => SITE_DIR."personal/cart/",
+			    "ACTION_VARIABLE" => "action",
+			    "PRODUCT_ID_VARIABLE" => "id",
+			    "SECTION_ID_VARIABLE" => "SECTION_ID",
+			    "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+			    "PRODUCT_PROPS_VARIABLE" => "prop",
+			    "FILTER_NAME" => "arrFILTER",
+			    "CACHE_TYPE" => "A",
+			    "CACHE_TIME" => "36000000",
+			    "CACHE_FILTER" => "N",
+			    "CACHE_GROUPS" => "Y",
+			    "SET_TITLE" => "Y",
+			    "SET_STATUS_404" => "Y",
+			    "DISPLAY_COMPARE" => "N",
+			    "PAGE_ELEMENT_COUNT" => $arParams["TOP_ELEMENT_COUNT"],
+			    "LINE_ELEMENT_COUNT" => "3",
+			    "PRICE_CODE" => Array
+			        (
+			            "0" => "BASE"
+			        ),
+
+			    "USE_PRICE_COUNT" => "N",
+			    "SHOW_PRICE_COUNT" => "1",
+			    "PRICE_VAT_INCLUDE" => "Y",
+			    "USE_PRODUCT_QUANTITY" => "Y",
+			    "ADD_PROPERTIES_TO_BASKET" => "",
+			    "PARTIAL_PRODUCT_PROPERTIES" => "",
+			    "PRODUCT_PROPERTIES" => "",
+			    "DISPLAY_TOP_PAGER" => "N",
+			    "DISPLAY_BOTTOM_PAGER" => "N",
+			    "PAGER_TITLE" => "Товары",
+			    "PAGER_SHOW_ALWAYS" => "N",
+			    "PAGER_TEMPLATE" => "bejetstore",
+			    "PAGER_DESC_NUMBERING" => "N",
+			    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+			    "PAGER_SHOW_ALL" => "N",
+			    "OFFERS_CART_PROPERTIES" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF"
+			        ),
+
+			    "OFFERS_FIELD_CODE" => Array
+			        (
+			            "0" => "NAME",
+			            "1" => "PREVIEW_PICTURE",
+			            "2" => "DETAIL_PICTURE",
+			            "3" => ""
+			        ),
+
+			    "OFFERS_PROPERTY_CODE" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => "MORE_PHOTO",
+			            "4" => "ARTNUMBER",
+			            "5" => ""
+			        ),
+
+			    "OFFERS_SORT_FIELD" => "sort",
+			    "OFFERS_SORT_ORDER" => "asc",
+			    "OFFERS_SORT_FIELD2" => "id",
+			    "OFFERS_SORT_ORDER2" => "desc",
+			    "OFFERS_LIMIT" => "0",
+			    "SECTION_ID" => "",
+			    "SECTION_CODE" => "",
+			    "SECTION_URL" => SITE_DIR."catalog/#SECTION_CODE#/",
+			    "DETAIL_URL" => SITE_DIR."catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
+			    "CONVERT_CURRENCY" => "Y",
+			    "CURRENCY_ID" => "RUB",
+			    "HIDE_NOT_AVAILABLE" => "N",
+			    "LABEL_PROP" => "NEWPRODUCT",
+			    "ADD_PICT_PROP" => "MORE_PHOTO",
+			    "PRODUCT_DISPLAY_MODE" => "Y",
+			    "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+			    "OFFER_TREE_PROPS" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => ""
+			        ),
+
+			    "PRODUCT_SUBSCRIPTION" => "",
+			    "SHOW_DISCOUNT_PERCENT" => "Y",
+			    "SHOW_OLD_PRICE" => "Y",
+			    "MESS_BTN_BUY" => GetMessage("CP_BC_TPL_DML_BUY"),
+			    "MESS_BTN_ADD_TO_BASKET" => GetMessage("CP_BC_TPL_DML_TO_BASKET"),
+			    "MESS_BTN_SUBSCRIBE" => "",
+			    "MESS_BTN_DETAIL" => GetMessage("CP_BC_TPL_DML_DETAIL"),
+			    "MESS_NOT_AVAILABLE" => GetMessage("CP_BC_TPL_DML_NOT_AVAILABLE"),
+			    "TEMPLATE_THEME" => "site",
+			    "ADD_SECTIONS_CHAIN" => "N",
+			    "SHOW_ALL_WO_SECTION" => "Y"
+			),
+			false
+		);?>
+		</div>
+		<?
+		unset($arrFILTER);
+		global $arrFILTER;
+		$arrFILTER = array(
+			"!PROPERTY_SPECIALOFFER" => false
+		);
+		if(!empty($arFilter)){
+			$arrFILTER = array_merge($arrFILTER, $arFilter);
+		}
+		?>
+		<div class="tab-pane" id="sales-0">
+		<?$APPLICATION->IncludeComponent("bejetstore:catalog.section", "tabs", array(
+				"IBLOCK_TYPE" => "catalog",
+			    "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+			    "ELEMENT_SORT_FIELD" => $arParams["TOP_ELEMENT_SORT_FIELD"],
+			    "ELEMENT_SORT_ORDER" => $arParams["TOP_ELEMENT_SORT_ORDER"],
+			    "ELEMENT_SORT_FIELD2" => $arParams["TOP_ELEMENT_SORT_FIELD2"],
+			    "ELEMENT_SORT_ORDER2" => $arParams["TOP_ELEMENT_SORT_ORDER2"],
+			    "PROPERTY_CODE" => Array
+			        (
+			            "0" => "NEWPRODUCT",
+			            "1" => "SALELEADER",
+			            "2" => "SPECIALOFFER",
+			            "3" => ""
+			        ),
+
+			    "META_KEYWORDS" => "UF_KEYWORDS",
+			    "META_DESCRIPTION" => "UF_META_DESCRIPTION",
+			    "BROWSER_TITLE" => "UF_BROWSER_TITLE",
+			    "INCLUDE_SUBSECTIONS" => "Y",
+			    "BASKET_URL" => SITE_DIR."personal/cart/",
+			    "ACTION_VARIABLE" => "action",
+			    "PRODUCT_ID_VARIABLE" => "id",
+			    "SECTION_ID_VARIABLE" => "SECTION_ID",
+			    "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+			    "PRODUCT_PROPS_VARIABLE" => "prop",
+			    "FILTER_NAME" => "arrFILTER",
+			    "CACHE_TYPE" => "A",
+			    "CACHE_TIME" => "36000000",
+			    "CACHE_FILTER" => "N",
+			    "CACHE_GROUPS" => "Y",
+			    "SET_TITLE" => "Y",
+			    "SET_STATUS_404" => "Y",
+			    "DISPLAY_COMPARE" => "N",
+			    "PAGE_ELEMENT_COUNT" => $arParams["TOP_ELEMENT_COUNT"],
+			    "LINE_ELEMENT_COUNT" => "3",
+			    "PRICE_CODE" => Array
+			        (
+			            "0" => "BASE"
+			        ),
+
+			    "USE_PRICE_COUNT" => "N",
+			    "SHOW_PRICE_COUNT" => "1",
+			    "PRICE_VAT_INCLUDE" => "Y",
+			    "USE_PRODUCT_QUANTITY" => "Y",
+			    "ADD_PROPERTIES_TO_BASKET" => "",
+			    "PARTIAL_PRODUCT_PROPERTIES" => "",
+			    "PRODUCT_PROPERTIES" => "",
+			    "DISPLAY_TOP_PAGER" => "N",
+			    "DISPLAY_BOTTOM_PAGER" => "N",
+			    "PAGER_TITLE" => "Товары",
+			    "PAGER_SHOW_ALWAYS" => "N",
+			    "PAGER_TEMPLATE" => "bejetstore",
+			    "PAGER_DESC_NUMBERING" => "N",
+			    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
+			    "PAGER_SHOW_ALL" => "N",
+			    "OFFERS_CART_PROPERTIES" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF"
+			        ),
+
+			    "OFFERS_FIELD_CODE" => Array
+			        (
+			            "0" => "NAME",
+			            "1" => "PREVIEW_PICTURE",
+			            "2" => "DETAIL_PICTURE",
+			            "3" => ""
+			        ),
+
+			    "OFFERS_PROPERTY_CODE" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => "MORE_PHOTO",
+			            "4" => "ARTNUMBER",
+			            "5" => ""
+			        ),
+
+			    "OFFERS_SORT_FIELD" => "sort",
+			    "OFFERS_SORT_ORDER" => "asc",
+			    "OFFERS_SORT_FIELD2" => "id",
+			    "OFFERS_SORT_ORDER2" => "desc",
+			    "OFFERS_LIMIT" => "0",
+			    "SECTION_ID" => "",
+			    "SECTION_CODE" => "",
+			    "SECTION_URL" => SITE_DIR."catalog/#SECTION_CODE#/",
+			    "DETAIL_URL" => SITE_DIR."catalog/#SECTION_CODE#/#ELEMENT_CODE#/",
+			    "CONVERT_CURRENCY" => "Y",
+			    "CURRENCY_ID" => "RUB",
+			    "HIDE_NOT_AVAILABLE" => "N",
+			    "LABEL_PROP" => "NEWPRODUCT",
+			    "ADD_PICT_PROP" => "MORE_PHOTO",
+			    "PRODUCT_DISPLAY_MODE" => "Y",
+			    "OFFER_ADD_PICT_PROP" => "MORE_PHOTO",
+			    "OFFER_TREE_PROPS" => Array
+			        (
+			            "0" => "SIZES_SHOES",
+			            "1" => "SIZES_CLOTHES",
+			            "2" => "COLOR_REF",
+			            "3" => ""
+			        ),
+
+			    "PRODUCT_SUBSCRIPTION" => "",
+			    "SHOW_DISCOUNT_PERCENT" => "Y",
+			    "SHOW_OLD_PRICE" => "Y",
+			    "MESS_BTN_BUY" => GetMessage("CP_BC_TPL_DML_BUY"),
+			    "MESS_BTN_ADD_TO_BASKET" => GetMessage("CP_BC_TPL_DML_TO_BASKET"),
+			    "MESS_BTN_SUBSCRIBE" => "",
+			    "MESS_BTN_DETAIL" => GetMessage("CP_BC_TPL_DML_DETAIL"),
+			    "MESS_NOT_AVAILABLE" => GetMessage("CP_BC_TPL_DML_NOT_AVAILABLE"),
+			    "TEMPLATE_THEME" => "site",
+			    "ADD_SECTIONS_CHAIN" => "N",
+			    "SHOW_ALL_WO_SECTION" => "Y"
+			),
+			false
+		);?>
+		</div>
+	</div>
+</div>

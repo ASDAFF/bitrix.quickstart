@@ -1,0 +1,34 @@
+<?
+$MESS["MLIFE_ASZ_DISCOUNTEL_EDIT"] = "Редактирование скидки ID:";
+$MESS["MLIFE_ASZ_DISCOUNTEL_ADD"] = "Добавление скидки";
+$MESS["MLIFE_ASZ_DISCOUNTEL_SAVED"] = "Скидка сохранена";
+$MESS["MLIFE_ASZ_DISCOUNTEL_ADD_CERENCY"] = "Добавить скидку";
+$MESS["MLIFE_ASZ_DISCOUNTEL_ERROR_ID"] = "Скидка не найдена";
+$MESS["MLIFE_ASZ_DISCOUNTEL_ERROR_BASE"] = "Базовая валюта c такими параметрами уже существует";
+$MESS["MLIFE_ASZ_DISCOUNTEL_ERROR_CODE"] = "Валюта с таким кодом уже существует для данного сайта";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM"] = "Параметры скидки";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_NAME"] = "Название";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_ACTIVE"] = "Активность";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_IBLOCK"] = "Инфоблок";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_CATEGORY"] = "Раздел";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_NOCATEGORY"] = "Все разделы";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_NOIBLOCK"] = "Выберите инфоблок";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TOVAR"] = "Ид товара";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_SHOWTYPE"] = "Применить к";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_SHOWTYPE1"] = "категории";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_SHOWTYPE2"] = "товару";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TOVAR_1"] = "Наименование";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TOVAR_2"] = "Товар не найден";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TYPE1"] = "Сумма";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TYPE2"] = "Процент";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TYPE3"] = "Тип цены";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_TYPE"] = "Тип скидки";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_VALUE"] = "Значение, для типа цены укажите ид типа цены";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_DESC"] = "Описание скидки";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_MAXSUMM"] = "Максимальная сумма";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_PRIOR"] = "Приоритет(1-999)";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_PRIORFIX"] = "Прекратить расчет";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_DATE_START"] = "Дата начала";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_DATE_END"] = "Дата окончания";
+$MESS["MLIFE_ASZ_DISCOUNTEL_PARAM_USERGROUP"] = "Группы пользователей";
+?>

@@ -1,0 +1,2 @@
+<?
+$MESS['RS_SLINE.BM_MODERN.ACCESS_DENIED'] = 'Access denied';

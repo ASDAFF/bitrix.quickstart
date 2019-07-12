@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2014-01-19T15:38:55">
+<Metadata>
+<Id>articles-streetstyle</Id>
+<Title>Articles</Title>
+<Properties>
+<Property>
+<Id>CML2_ACTIVE</Id>
+<Title>BitrixActive</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_CODE</Id>
+<Title>Code</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_SORT</Id>
+<Title>The Sort</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_ACTIVE_FROM</Id>
+<Title>Start time</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_ACTIVE_TO</Id>
+<Title>End time</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Title>Anons</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_DETAIL_TEXT</Id>
+<Title>Description</Title>
+<Multiple>false</Multiple>
+</Property>
+<Property>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Title>Preview picture</Title>
+<Multiple>false</Multiple>
+</Property>
+</Properties>
+<Sections>
+</Sections>
+</Metadata>
+<Catalog>
+<Id>articles-streetstyle</Id>
+<MetadataId>articles-streetstyle</MetadataId>
+<Title>Articles</Title>
+<BitrixCode>articles-streetstyle</BitrixCode>
+<BitrixSort>500</BitrixSort>
+<BitrixListURL>#SITE_DIR#articles/</BitrixListURL>
+<BitrixDetailURL>#SITE_DIR#articles/#ELEMENT_CODE#/</BitrixDetailURL>
+<BitrixSectionURL></BitrixSectionURL>
+<BitrixPicture></BitrixPicture>
+<BitrixIndexElements>true</BitrixIndexElements>
+<BitrixIndexSections>false</BitrixIndexSections>
+<BitrixWorkflow>false</BitrixWorkflow>
+<BitrixLabels>
+<BitrixLabel>
+<Id>ELEMENT_NAME</Id>
+<Value>Article</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENTS_NAME</Id>
+<Value>Article</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_ADD</Id>
+<Value>Add article</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_EDIT</Id>
+<Value>Edit the article</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>ELEMENT_DELETE</Id>
+<Value>Delete article</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_NAME</Id>
+<Value>Section</Comment>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTIONS_NAME</Id>
+<Value>Sections</Value>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_ADD</Id>
+<Value>Add section</Comment>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_EDIT</Id>
+<Value>Modify section</Comment>
+</BitrixLabel>
+<BitrixLabel>
+<Id>SECTION_DELETE</Id>
+<Value>Delete section</Comment>
+</BitrixLabel>
+</BitrixLabels>
+<Elements>
+<Element>
+<Id>162</Id>
+<Title>Men's shirt in a cage or striped, what to choose?</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>mens-plaid-shirt-or-striped-what-to-choose</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-11-30 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>If your wardrobe mislaid at least one shirt with a pattern in a cage or strip, then you have a very fashionable in the new season the thing. If such things can't be found even in the most distant corners of your Cabinet, do not despair. Maybe we should postpone a fashionable purchase...</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>&lt;p&gt;If your wardrobe mislaid at least one shirt with a pattern in a cage or strip, then you have a very fashionable in the new season the thing. If such things can't be found even in the most distant corners of your Cabinet, do not despair. Maybe we should postpone a fashionable purchase.&lt;/p&gt;
+
+&lt;h4&gt;Cell&lt;/h4&gt;
+
+&lt;p&gt;Pattern in a cage on your shirt is all. In this case, running the same rule as with red color: no people who do not talking, just need to choose which is the correct option. The cage can be classical equilateral, can be fancy asymmetric can combine two or more colors ten, may be Scottish.&lt;/p&gt;
+
+&lt;p&gt;Checked Shirt often sewn from natural or semi-synthetic fabrics, fairly thick and textured. So combine them with light chiffon things, flowing silk or satin wrong. Still contrasts can afford to do that designers on the catwalks. Refuse worth and from all other prints. The cage itself is so expressive. What supplements do not require.&lt;/p&gt;
+
+&lt;p&gt;Underbody kit must be either light, pastel tones or deep dark colours any colors. It is better, if the color of the pants or skirt will meet and among the numerous cells shirts. For example, Scottish tartan combine well with dark green and purple. These combinations complete the look and give the impression of any single style.&lt;/p&gt;
+
+&lt;h4&gt;Strip&lt;/h4&gt;
+
+&lt;p&gt;Striped Pattern is much more insidious than the cell. Strip visually strongly affect the shape. It should take into account not only the horizontal or vertical arrangement. If you want to reduce the volume, select either fabric with thin stripes or with a predominance of dark bands. Otherwise, the opposite.&lt;/p&gt;
+
+&lt;p&gt;And check, stripe on the shirt should become virtually the only dyeing attire. If you still want to put dyeing, observe the orientation of the strips. The vertical bar pick the long earrings and chains, elongated pendants and necklaces. If you do not follow this rule, you get a visual effect of «cutting» the shape of the part, and this is almost always not advantageous for the appearance.&lt;/p&gt;
+
+&lt;p&gt;Striped Shirt is sewn from a lighter fabric than checkered shirt. So for hot weather these models fit much more than a cell. Yes and short sleeve better suited to a pattern of stripes.&lt;/p&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value>articles_files/iblock/34e/34e08ca85a44bafcf13d60cffa4c138d.jpg</Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>163</Id>
+<Title>Six classic things that don't go out of fashion.</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>six-classic-things-that-do-not-go-out-of-fashion</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-10-05 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>Fashion - whimsical and changeable, and catch up hard. But, according to fashion designers, there is always the possibility to remain stylish in the eyes of others, having a wardrobe six classical things that never go out of fashion...</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>&lt;h4&gt;1. Ideally fitting jeans&lt;/h4&gt;
+
+&lt;p&gt;Jeans are always in fashion and never expires. So your task is to find
+suitable jeans at a reasonable price. Skinny jeans have certain advantages:
+they slim, simply fill in the high shoes, you can wear with sports shoes. And
+if the jeans match with the shoes on high heels and with a beautiful blouse, then you can safely
+go to a party.&lt;/p&gt;
+
+
+&lt;h4&gt;2. The classic jacket&lt;/h4&gt;
+
+&lt;p&gt;Is an Indispensable thing in winter and summer. The classic jacket does not require strict attachment to
+style, that is why its application is almost unlimited. In combination with a skirt, trousers or
+shorts that are with him costume, this jacket becomes even more essential.&lt;/p&gt;
+
+
+&lt;h4&gt;3. Sweaters, jumpers, cardigans from delicate cashmere or a pleasant knitwear&lt;/h4&gt;
+
+&lt;p&gt;Cosy, dear to our hearts the things of cashmere or knitted always take a certain amount of
+place in our wardrobe and warm in winter.&lt;/p&gt;
+
+&lt;p&gt;High Quality cashmere sweater will serve long years of service, at correct storage and Laundry
+(it should be stored in a folded position, only washed by hand in warm water).&lt;/p&gt;
+
+&lt;p&gt;Putting once again your favorite cashmere sweater, add some salt in the form of a brooch or
+any other jewelry. Dear cashmere, if stored correctly, will last not one
+the season. Keep cashmere things in the closet folded. Put them with the means to
+scare of the mole, and erase manually with special shampoo for washing wool garments.&lt;/p&gt;
+
+
+&lt;h4&gt;4. Stylish cloak&lt;/h4&gt;
+
+&lt;p&gt;Such a thing as a cloak is considered one of the best options demi-season clothes. He is not just
+protect you from the weather, but will look very chic. These clothes are always fashionable, to
+the same goes with any shoes, skirts and trousers.&lt;/p&gt;
+
+
+&lt;h4&gt;5. White shirt&lt;/h4&gt;
+
+&lt;p&gt;Classic white shirt you can wear and to strict trousers and skirt and jeans.
+Thanks to the popular actress Marlene Dietrich, she became one of the most popular and always
+fashion items of female clothing.&lt;/p&gt;
+
+&lt;h4&gt;6. Skirt pencil&lt;/h4&gt;
+
+&lt;p&gt;Basically - it's A knee-length skirt with a small slit, sometimes decorated with
+buttons, bow. Color of a skirt, not eye-catching. The model is very like many women and
+is considered a classic. Such a skirt to wear to work, to parties. With her perfectly
+combination of many things a woman's wardrobe.&lt;/p&gt;
+
+&lt;p&gt;&lt;Strong&gt;All these things we talked about in the article, don't just not go out of fashion, but also fit
+for any piece with their correct selection. They can emphasize the dignity and beauty
+the figures. And if we dream and add to these things stylish accessories, you can
+create a lot of interesting variations that will appeal not only to you but to all
+to others!&lt;/strong&gt;&lt;/p&gt;
+</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value>articles_files/iblock/273/27396ea7c20b0a7a2f3616d32fb7d75e.jpg</Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+<Element>
+<Id>164</Id>
+<Title>How should I dress to impress?</Title>
+<BitrixTags></BitrixTags>
+<Sections>
+</Sections>
+<Picture></Picture>
+<PropertiesValues>
+<PropertyValues>
+<Id>CML2_ACTIVE</Id>
+<Value>true</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_CODE</Id>
+<Value>how-to-dress-to-impress</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_SORT</Id>
+<Value>500</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_FROM</Id>
+<Value>2013-09-16 00:00:00</Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_ACTIVE_TO</Id>
+<Value></Value>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_TEXT</Id>
+<Value>As yet, the right dress? First of all, You must show the people my «one». Everything should be subordinated to one theme or style. Remember, you need to &lt;u&gt;highlight&lt;/u&gt; their dignity...</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_DETAIL_TEXT</Id>
+<Value>&lt;p&gt;How you should ideally look like, largely depends on the branches of
+belongs to your profession. Let's look at an example of several industries:&lt;/p&gt;
+
+&lt;h4&gt;Technical subjects&lt;/h4&gt;
+
+&lt;p&gt;If you want to get a job in this sphere, here the suit is not necessary. You are quite
+can wear a sweater or blouse with the trousers or skirt. But if you are applying to work more
+a high level or even to a managerial position, and the suit will be appropriate. Wear
+the best that you have.&lt;/p&gt;
+
+&lt;h4&gt;Finance&lt;/h4&gt;
+
+&lt;p&gt;If you are going for an interview to get a job in this area, remember that no
+nothing more precise than the account money. Therefore, you must look very carefully and strictly:
+business style clothing, little makeup and jewelry, hair collected and bayoneted.&lt;/p&gt;
+
+
+&lt;h4&gt;Public service&lt;/h4&gt;
+
+&lt;p&gt;Here is your challenge is to show that you are responsible, reliable and honest. Clothes
+you should choose a classic style with a white blouse here would be very handy. Be
+conservative in the selection of jewellery, hair and makeup.&lt;/p&gt;
+
+
+&lt;h4&gt;people&lt;/h4&gt;
+
+&lt;p&gt;If you want to get a job in any field that involves communication with people, you
+must look professional and authoritatively. Your view would say that you
+are able to deal with any crisis situation. So you should not wear things with
+frivolous details: thingies, frills, with colors in the flower and the like.&lt;/p&gt;
+
+
+&lt;h4&gt;Trade&lt;/h4&gt;
+
+&lt;p&gt;Here you can choose the clothes the more daring design and color. You need to focus on the
+a product or service that you offer. But in any case, the buyer willing
+acquire goods from the beautiful and fashionable dressed seller, not the invisible «gray mouse».&lt;/p&gt;
+
+
+&lt;h4&gt;Hotel, tourism, and others, where it is required to show hospitality&lt;/h4&gt;
+
+&lt;p&gt;This better would be a suit, but not necessarily. The main thing to remember is that you
+you represent the company, and you can be the first who will see the guest. Therefore, you should
+look like he had a good impression of you and the place in which
+he got.&lt;/p&gt;</Value>
+<Type>html</Type>
+</PropertyValues>
+<PropertyValues>
+<Id>CML2_PREVIEW_PICTURE</Id>
+<Value>articles_files/iblock/234/234c5d8af13dddf6f159061d905fe5e5.jpg</Value>
+</PropertyValues>
+</PropertiesValues>
+</Element>
+</Elements>
+</Catalog>
+</CommerceInformation>

@@ -1,0 +1,2 @@
+<?
+$MESS['RS_FLYAWAY.RNA_FLYAWAY.ARCHIVE'] = 'Archive';

@@ -1,0 +1,1 @@
+<a href="#SITE_DIR#" ><img src="#SITE_DIR#images/logo.png" border="0" alt="#SITE_NAME#" /></a>

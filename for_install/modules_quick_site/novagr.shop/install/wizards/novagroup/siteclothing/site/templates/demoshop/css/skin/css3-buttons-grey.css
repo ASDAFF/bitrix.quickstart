@@ -1,0 +1,29 @@
+@charset "windows-1251";
+a.ddm span.icon, a.button span.icon {
+	background-image: url(../../images/button-sprite-grey.png);
+}
+
+a.button {
+	color: #484848 !important;
+	border: solid 1px #B0B0B0;
+}
+
+a.button:hover, a.button.negative:hover, a.button.positive:hover {
+	color: #282828 !important;
+	border: solid 1px #999;
+}
+
+div.dropdown-slider {
+	border-right: solid 1px #B0B0B0;
+	border-bottom: solid 1px #B0B0B0;
+	border-left: solid 1px #B0B0B0;
+}
+
+div.dropdown-slider a.ddm {
+	color: #484848 !important;
+	border-bottom: 1px solid #B0B0B0;
+}
+
+div.dropdown-slider a.ddm:hover {
+	color: #282828 !important;
+}

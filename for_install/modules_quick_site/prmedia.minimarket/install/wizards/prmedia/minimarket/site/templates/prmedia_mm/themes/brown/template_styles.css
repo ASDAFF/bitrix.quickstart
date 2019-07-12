@@ -1,0 +1,107 @@
+
+/*** brown theme ***/
+
+body {background: #fff; }
+a {color:#8b3802; }
+
+#header .brand {color: #8b3802; }
+#header .schedule .trd {color: #959595; }
+
+#menu {background: #a16737; }
+#menu .msearch {border-bottom: 1px solid #7b401c; }
+#menu .msearch input {color: #959595; }
+#menu .search-icon{color: #a16737;}
+#menu li {border-top: 1px solid #bc8d60; border-bottom: 1px solid #7b401c; border-right: solid 1px #7b401c; border-left: solid 1px #bc8d60; }
+#menu li:first-child {border-left: none; }
+#menu li:last-child {border-right: none; }
+#menu a {color: #fff; }
+#menu .dash {background: #fff; }
+#menu .trg {border-top: 0.5em solid #fff; border-bottom: none; }
+#menu .active > .smenu > .trg {border-bottom: 0.5em solid #fff; border-top: none; }
+#menu ul ul {border-top: 1px solid #bc8d60; background: #7b401c; }
+#menu ul ul li {border-top: 1px solid #9e693e; border-bottom: 1px solid #2f0e05; }
+#menu ul ul li {border-left: none; border-right: none; border-bottom: none; }
+#menu ul ul ul {background: #52210c; border-top: 1px solid #7b401c; }
+#menu ul ul ul li {border-top: none; border-bottom: none; }
+@media screen and (min-width: 641px) {
+	#menu li:hover > .smenu a, #menu a:hover, #menu a.active {background: #863B0E; }
+	#menu li {border-top: none; border-bottom: none; }
+	#menu ul ul li {border-left: none; border-right: none; }
+}
+@media screen and (min-width: 641px) and (max-width: 800px) {
+	#menu ul {border-top: 1px solid #bc8d60; }
+}
+@media screen and (min-width: 801px) {
+	#menu .msearch {border-bottom: none; }
+}
+
+.input-radio.active .input-radio-status {background: #8b3802; }
+.input-checkbox.active:after{color: #8b3802;}
+.left-column .active {color: #f50300; }
+.right-column th {background-color: #8b3802; }
+.right-column tr:nth-child(2n) {background-color: #f1f1f1; }
+#content input[type="text"],
+#content input[type="password"],
+#content input[type="email"],
+#content input[type="tel"],
+#content textarea {
+	border: solid 1px #959595;
+	color: #363636;
+}
+#content input[type="text"]:focus,
+#content input[type="password"]:focus,
+#content input[type="email"]:focus,
+#content input[type="tel"]:focus,
+#content textarea:focus {
+	border-color: #8b3802;
+}
+#content input.error {
+	border-color: #ff5200;
+}
+#content input[type='submit'],
+#content button {
+	color: #fff;
+	background: #8b3802;
+}
+#content input[type='submit']:hover,
+#content button:hover {
+	opacity: 0.85;
+}
+.cusel {border: solid 1px #959595; }
+.cuselFrameRight {background: #15948b; }
+.cuselFrameRight:after {color: #fff; }
+.cuselText {color: #363636; }
+.cusel-scroll-pane > span:hover, .cusel-scroll-pane .cuselOptHover {color: #fff; background: #15948b; }
+.cusel.classDisCusel, .cusel.classDisCusel .cuselFrameRight {background: #fff; }
+.cusel-scroll-pane {background: #fff; }
+.cusel-scroll-wrap .jScrollPaneContainer {border: 1px solid #999; }
+.cusel-scroll-wrap .jScrollPaneTrack {background: #ccc; }
+#content .count-field {border: 1px solid #959595; }
+#content .count-btn {background: #15948b; color: #fff; }
+#content .to-basket {background: #a16737; color: #fff;}
+#content .price {color: #363636; }
+#content .price span {color: #15948b; }
+
+#content .basket th {background: #a16737; }
+#content .basket tr:nth-child(2n+1) {background: #f1f1f1; }
+#content .basket tr:nth-child(2n) {background: #fff; }
+#content .basket tr:nth-child(2n) td {border-bottom: 1px solid #f1f1f1;}
+#content .basket tfoot tr:nth-child(2n+1) {background: #fff;}
+#content .basket tfoot td {border-bottom: none;}
+#content .mobile-basket table {border: 2px solid #a16737; }
+#content .mobile-basket .fst {background: #a16737; border-bottom: 2px solid #fff; color: #fff; }
+
+#content .content-split button span {
+	color: #a16737;
+	border-bottom: 1px dashed #a16737;
+}
+#content .content-split button:before {
+	border-left: 8px solid #a16737;
+}
+#content .content-split-active button:before {
+	border-top: 8px solid #a16737;
+}
+
+#footer {border-top: solid 1px #bebebe; }
+#footer .copy {color: #363636; }
+#footer .contacts p {color: #959595; }

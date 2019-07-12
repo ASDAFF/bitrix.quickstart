@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Realized", 
+		"finished/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Current", 
+		"current/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Prospective", 
+		"perspective/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Gallery", 
+		"#SITE_DIR#about/fotogallery/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

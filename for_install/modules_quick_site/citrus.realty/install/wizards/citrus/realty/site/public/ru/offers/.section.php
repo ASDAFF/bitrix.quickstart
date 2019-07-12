@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Предложения";
+$arDirProperties = Array(
+
+);
+?>

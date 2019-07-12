@@ -1,0 +1,19 @@
+.headerTop {background: url(images/c.png) 0 bottom no-repeat;}
+.footer {background: url(images/c.png) center 0 no-repeat;}
+.nav {background: url(images/navS.png) 0 bottom repeat-x;}
+.navInner a:hover, .navInner a:focus {color: #72cb5f;}
+.navInner .current a {color: #72cb5f;}
+.navInner .navItem .level .current a {color: #72cb5f;}
+.nav .level a:hover, .nav .level a:active {color: #72cb5f;}
+.navItem:hover a {color: #72cb5f;}
+.navItem:hover .level a:hover, .navItem:hover .level a:active {color: #72cb5f;}
+.headerBot {background: #baeb9e url(images/hd.png) 0 0 repeat-x;}
+.block {background: #baeb9e;}
+.galleryWrap{background: #baeb9e;}
+.sideNav {background: #baeb9e;}
+.sideNav a:hover, .sideNav .current a  {background: #80d16b; color: #305728;}
+.sideNav .secondLevel a {color: #29313c; background: none;}
+.sideNav .secondLevel a:hover, .sideNav .secondLevel .current a {color: #cd3d5c;}
+.logsTable thead td, .logsTable thead th {background: #6ab058; border: solid 1px #fff;}
+.logsTable thead td, .logsTable thead th {border-left: solid 1px #6ab058; border-top: solid 1px #6ab058;}
+.workTypes td.abbr {background: #6ab058;}

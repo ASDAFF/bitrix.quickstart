@@ -1,0 +1,1 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?><?global $APPLICATION;$APPLICATION->AddHeadScript($templateFolder."/js/jquery-ui-1.10.4.custom.min.js");$APPLICATION->AddHeadScript($templateFolder."/js/jquery.formstyler.min.js");?>

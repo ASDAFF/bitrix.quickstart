@@ -1,0 +1,123 @@
+.filter {width:100%;display:block;float:right;overflow:hidden;padding-bottom:10px;}
+.filter  .propwrap {padding:5px 5px 5px 5px;clear:both;overflow:hidden;border:1px solid #efefef;border-top:0px solid #efefef;}
+.filter  .propwrap .propLabel {font-weight:bold;padding-bottom:5px;padding-left:0px;font-size:12px;color:#000000;width:100%;}
+.filter  .propwrap .propValues {display:block;width:100%;overflow:hidden;clear:both;}
+.filter  .propwrap .propValues .propVal {display:inline;padding:0 10px 0 0;overflow:hidden;}
+.filter  .propwrap .propValues .propVal:hover{}
+.filter  .propwrap .propValues .propVal a, .filter  .propwrap .propValues .propVal span {text-decoration:none;padding:5px 0px 5px 15px;
+font-size:12px;color:#000000;
+display:inline-block;font-family:'Arial';}
+.filter  .propwrap .propValues .propVal a:hover {color:#0072BC;}
+.filter  .propwrap .propValues .propVal span {background:url('images/check.png') 0px -203px no-repeat;opacity:0.4;}
+.filter  .propwrap .propValues .propVal a.normal {background:url('images/check.png') 0px -203px no-repeat;}
+.filter  .propwrap .propValues .propVal a.active {background:url('images/check.png') 0px 5px no-repeat;}
+
+
+.filter  .propwrap input {border-radius:3px;border:1px solid #D9E1EA;background:#ffffff;padding:3px;
+font-size:12px;width:56px;float:left;margin-right:10px;margin-top:5px;}
+.filter  .propwrap .otdo {width:20px;font-size:12px;line-height:22px;display:block;float:left;padding-left:0px;margin-top:5px;}
+
+.filter .buttons {padding:10px 5px 0 5px;clear:both;overflow:hidden;border:1px solid #efefef;border-top:0px solid #efefef;}
+.filter .buttons a {display:block;padding:0px;background:#E91653;color:#ffffff;text-decoration:none;margin:5px;width:98px;float:left;text-align:center;height:22px;
+font-size:11px;text-transform:uppercase;line-height:22px;border-radius:3px;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #2d7eb7 0%, #0e4b7c 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d7eb7), color-stop(100%,#0e4b7c));
+background: -webkit-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -o-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -ms-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: linear-gradient(to bottom, #2d7eb7 0%,#0e4b7c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7eb7', endColorstr='#0e4b7c',GradientType=0 );
+}
+.filter .buttons a:hover {
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #0e4b7c 0%, #2d7eb7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e4b7c), color-stop(100%,#2d7eb7));
+background: -webkit-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -o-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: -ms-linear-gradient(top, #0e4b7c 0%,#2d7eb7 100%);
+background: linear-gradient(to bottom, #0e4b7c 0%,#2d7eb7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e4b7c', endColorstr='#2d7eb7',GradientType=0 );
+}
+.filter .buttons a.rightf {float:right;}
+
+.filter .headfilter {display:block;padding:5px 5px;
+background: #2d7eb7;
+background: -moz-linear-gradient(top, #2d7eb7 0%, #0e4b7c 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d7eb7), color-stop(100%,#0e4b7c));
+background: -webkit-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -o-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: -ms-linear-gradient(top, #2d7eb7 0%,#0e4b7c 100%);
+background: linear-gradient(to bottom, #2d7eb7 0%,#0e4b7c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d7eb7', endColorstr='#0e4b7c',GradientType=0 );
+}
+.filter .headfilter h4 {display:block;width:100%;font-size:14px;text-transform:uppercase;color:#ffffff;}
+.filter .headfilter h4 span {float:right;display:block;width:140px;color:#ffffff;text-align:right;line-height:14px;text-transform:lowercase;display:none;}
+
+/* Ширина слайдера */
+#slider {
+}
+/* Контейнер слайдера */
+.ui-slider {
+	position: relative;
+	z-index:1;
+	margin:0px 0 0 7px;
+	width: 92%;
+	clear:both;
+	overflow:visible;
+	padding-top:5px;
+}
+
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 13px;   /* Задаем нужную ширину */
+	height: 13px;  /* и высоту */
+	cursor: pointer
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+	 height: 15px; /* задаем высоту согласно дизайна */
+	 margin-top:0px;
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+	top: 3px;
+	margin-left: -7px;
+	background:#2D2D2D;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 6px;
+	height: 8px;
+	overflow:auto;
+}
+.ui-slider-horizontal .ui-slider-range-min { 
+	left: 0px;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0px;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content { 
+	background:url('images/slider.jpg') 0 0px repeat-x;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header { 
+	border: 1px solid #D4D4D4;
+	background: #3DA9D6;
+}
+/* скругление для полосы слайдера */
+.ui-corner-all {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2012-12-06T17:18:42">
+	<Классификатор>
+		<Ид>109</Ид>
+		<Наименование>Партнеры</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>1282</Ид>
+				<Наименование>Сертификаты</Наименование>
+				<Множественное>true</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>SERT</БитриксКод>
+				<БитриксТипСвойства>F</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>1283</Ид>
+				<Наименование>Сайт</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>SITE</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>1284</Ид>
+				<Наименование>Статус партнерства</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>STATUS</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа>HTML</БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>b:0;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>1285</Ид>
+				<Наименование>Дата начала партнерства</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>DATE</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа>DateTime</БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>N;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>1286</Ид>
+				<Наименование>Привязка к разделам</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>500</БитриксСортировка>
+				<БитриксКод>SECTION</БитриксКод>
+				<БитриксТипСвойства>G</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок>soft_s12</БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<Группы>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>109</Ид>
+		<ИдКлассификатора>109</ИдКлассификатора>
+		<Наименование>Партнеры</Наименование>
+		<БитриксКод>sw_partners</БитриксКод>
+		<БитриксСортировка>500</БитриксСортировка>
+		<БитриксURLСписок>#SITE_DIR#/about/partners/</БитриксURLСписок>
+		<БитриксURLДеталь>#SITE_DIR#/about/partners/#ID#/</БитриксURLДеталь>
+		<БитриксURLРаздел>#SITE_DIR#/about/partners/</БитриксURLРаздел>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>true</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>false</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Элементы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить элемент</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>305166</Ид>
+				<Наименование>1С-Битрикс</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+				</Группы>
+				<Картинка>partners_files/iblock/e6e/e6e015050b37c2b374658d80d706bf75.jpg</Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>500</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>
+&lt;div&gt;&amp;laquo;&lt;b&gt;1С-Битрикс&lt;/b&gt;&amp;raquo; - совместное предприятие, созданное фирмой «1С» и компанией «Битрикс» для развития веб-направления, разработки новых интернет-решений. &lt;/div&gt;
+ 
+&lt;br /&gt;
+ Программные продукты «&lt;b&gt;1С-Битрикс&lt;/b&gt;» - профессиональные системы для управления веб-проектами и создания корпоративных порталов: «&lt;i&gt;1С-Битрикс: Управление сайтом&lt;/i&gt;», «&lt;i&gt;1С-Битрикс: Корпоративный портал&lt;/i&gt;», «&lt;i&gt;1С-Битрикс: Управление сайтом ASP.NET&lt;/i&gt;», «&lt;i&gt;1С-Битрикс: Аренда приложений&lt;/i&gt;». </Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>text</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение>partners_files/iblock/89a/89a704ecb6f14ecab5ffdca4cf0e7c4c.jpg</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>1282</Ид>
+						<Значение>partners_files/iblock/88a/88aa8f9cce332cdbbcc82df4fc549be4.jpg</Значение>
+						<ЗначениеСвойства>
+							<Значение>partners_files/iblock/88a/88aa8f9cce332cdbbcc82df4fc549be4.jpg</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>1283</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>1284</Ид>
+						<Значение>a:2:{s:4:&quot;TEXT&quot;;s:2992:&quot;
+&lt;div style=&quot;text-align: -webkit-left;&quot;&gt; 
+  &lt;div style=&quot;text-align: -webkit-auto;&quot;&gt; 
+    &lt;br class=&quot;Apple-interchange-newline&quot; /&gt;
+   
+    &lt;table border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; style=&quot;border-collapse: collapse;&quot;&gt; 
+      &lt;tbody&gt; 
+        &lt;tr&gt;&lt;td&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: -webkit-left; background-color: rgb(255, 255, 255);&quot;&gt;Компания &amp;quot;Компания&amp;quot; является &lt;/span&gt;&lt;a id=&quot;bxid_62450&quot; href=&quot;http://1c-bitrix.ru/partners/301486.php&quot; title=&quot;ссылка на карточку партнера&quot; style=&quot;font-style: inherit; font-weight: bold; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(77, 137, 125); text-decoration: none; &quot; &gt;золотым партнером компании 1С-Битрикс&lt;/a&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: -webkit-left; background-color: rgb(255, 255, 255);&quot;&gt; и обладает необходимой компетенцией для внедрения продуктов компании.   
+              &lt;br /&gt;
+             
+              &lt;br /&gt;
+             &lt;/span&gt; &lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;Качество внедрения и консалтинговой поддержки по продукту гарантируется более чем 5 летним опытом работы наших специалистов с данной платформой.    &lt;/span&gt;               
+            &lt;br /&gt;
+           
+            &lt;br /&gt;
+           &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;img id=&quot;bxid_686292&quot; src=&quot;http://softeffect.ru/upload/medialibrary/c53/c532848a9bd332b42fe9a9835234f1c9.gif&quot; title=&quot;gold_sm.gif&quot; border=&quot;0&quot; alt=&quot;gold_sm.gif&quot; width=&quot;88&quot; height=&quot;88&quot;  /&gt;   
+            &lt;br /&gt;
+           &lt;/td&gt;&lt;td style=&quot;text-align: -webkit-left;&quot;&gt;&lt;img id=&quot;bxid_428448&quot; src=&quot;http://softeffect.ru/upload/medialibrary/360/360901edcb3ba2e9256c493b656fb531.gif&quot; title=&quot;Компетенция Корпоративный портал&quot; border=&quot;0&quot; alt=&quot;Компетенция Корпоративный портал&quot; width=&quot;104&quot; height=&quot;29&quot;  /&gt;&lt;span style=&quot;text-align: -webkit-auto;&quot;&gt; &lt;/span&gt; 
+            &lt;br style=&quot;text-align: -webkit-auto;&quot; /&gt;
+           
+            &lt;br style=&quot;text-align: -webkit-auto;&quot; /&gt;
+           &lt;img id=&quot;bxid_990751&quot; src=&quot;http://softeffect.ru/upload/medialibrary/493/493a3681222782feb5ce642971227f94.gif&quot; title=&quot;comp_b24.gif&quot; border=&quot;0&quot; alt=&quot;comp_b24.gif&quot; width=&quot;104&quot; height=&quot;29&quot;  /&gt; &lt;font color=&quot;#333333&quot; face=&quot;Tahoma, Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 11px; line-height: 14px;&quot;&gt; &lt;/span&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;/tbody&gt;
+     &lt;/table&gt;
+   &lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;  &lt;/span&gt;   
+    &lt;br /&gt;
+     &lt;/div&gt;
+ 
+  &lt;div style=&quot;text-align: -webkit-auto;&quot;&gt; 
+    &lt;br class=&quot;Apple-interchange-newline&quot; /&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &quot;;s:4:&quot;TYPE&quot;;s:4:&quot;html&quot;;}</Значение>
+						<ЗначениеСвойства>
+							<Сериализовано>true</Сериализовано>
+							<Значение>a:2:{s:4:&quot;TEXT&quot;;s:2992:&quot;
+&lt;div style=&quot;text-align: -webkit-left;&quot;&gt; 
+  &lt;div style=&quot;text-align: -webkit-auto;&quot;&gt; 
+    &lt;br class=&quot;Apple-interchange-newline&quot; /&gt;
+   
+    &lt;table border=&quot;0&quot; cellpadding=&quot;1&quot; cellspacing=&quot;1&quot; style=&quot;border-collapse: collapse;&quot;&gt; 
+      &lt;tbody&gt; 
+        &lt;tr&gt;&lt;td&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: -webkit-left; background-color: rgb(255, 255, 255);&quot;&gt;Компания &amp;quot;Компания&amp;quot; является &lt;/span&gt;&lt;a id=&quot;bxid_62450&quot; href=&quot;http://1c-bitrix.ru/partners/301486.php&quot; title=&quot;ссылка на карточку партнера&quot; style=&quot;font-style: inherit; font-weight: bold; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(77, 137, 125); text-decoration: none; &quot; &gt;золотым партнером компании 1С-Битрикс&lt;/a&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: -webkit-left; background-color: rgb(255, 255, 255);&quot;&gt; и обладает необходимой компетенцией для внедрения продуктов компании.   
+              &lt;br /&gt;
+             
+              &lt;br /&gt;
+             &lt;/span&gt; &lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;Качество внедрения и консалтинговой поддержки по продукту гарантируется более чем 5 летним опытом работы наших специалистов с данной платформой.    &lt;/span&gt;               
+            &lt;br /&gt;
+           
+            &lt;br /&gt;
+           &lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;img id=&quot;bxid_686292&quot; src=&quot;http://softeffect.ru/upload/medialibrary/c53/c532848a9bd332b42fe9a9835234f1c9.gif&quot; title=&quot;gold_sm.gif&quot; border=&quot;0&quot; alt=&quot;gold_sm.gif&quot; width=&quot;88&quot; height=&quot;88&quot;  /&gt;   
+            &lt;br /&gt;
+           &lt;/td&gt;&lt;td style=&quot;text-align: -webkit-left;&quot;&gt;&lt;img id=&quot;bxid_428448&quot; src=&quot;http://softeffect.ru/upload/medialibrary/360/360901edcb3ba2e9256c493b656fb531.gif&quot; title=&quot;Компетенция Корпоративный портал&quot; border=&quot;0&quot; alt=&quot;Компетенция Корпоративный портал&quot; width=&quot;104&quot; height=&quot;29&quot;  /&gt;&lt;span style=&quot;text-align: -webkit-auto;&quot;&gt; &lt;/span&gt; 
+            &lt;br style=&quot;text-align: -webkit-auto;&quot; /&gt;
+           
+            &lt;br style=&quot;text-align: -webkit-auto;&quot; /&gt;
+           &lt;img id=&quot;bxid_990751&quot; src=&quot;http://softeffect.ru/upload/medialibrary/493/493a3681222782feb5ce642971227f94.gif&quot; title=&quot;comp_b24.gif&quot; border=&quot;0&quot; alt=&quot;comp_b24.gif&quot; width=&quot;104&quot; height=&quot;29&quot;  /&gt; &lt;font color=&quot;#333333&quot; face=&quot;Tahoma, Arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 11px; line-height: 14px;&quot;&gt; &lt;/span&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;
+       &lt;/tbody&gt;
+     &lt;/table&gt;
+   &lt;span style=&quot;color: rgb(51, 51, 51); font-family: Tahoma, Arial, sans-serif; font-size: 11px; line-height: 14px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;  &lt;/span&gt;   
+    &lt;br /&gt;
+     &lt;/div&gt;
+ 
+  &lt;div style=&quot;text-align: -webkit-auto;&quot;&gt; 
+    &lt;br class=&quot;Apple-interchange-newline&quot; /&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+ &quot;;s:4:&quot;TYPE&quot;;s:4:&quot;html&quot;;}</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>1285</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>1286</Ид>
+						<Значение>5230088d-dbe9-11e0-a329-0016e64c9e02</Значение>
+						<ЗначениеСвойства>
+							<Значение>5230088d-dbe9-11e0-a329-0016e64c9e02</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

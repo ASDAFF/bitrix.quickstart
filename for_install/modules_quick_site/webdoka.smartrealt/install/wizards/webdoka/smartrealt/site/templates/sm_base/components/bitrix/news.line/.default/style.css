@@ -1,0 +1,33 @@
+.news-list
+{
+}
+    .news-list  .item {
+        margin-top: 10px;
+    }
+    .news-list  .date {
+	    color: #000000;
+        font-size: 10px;
+    }
+    .news-list .title
+    {
+        color: #000000;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .news-list div.text
+    {
+        overflow: hidden;
+        margin-top: 4px;
+    }
+    .news-list .image
+    {
+        border-radius: 6px 6px 6px 6px;
+        display: block;
+        float: left;
+        margin: 0 10px 0 0;
+        position: relative;
+        top: 1px;
+        width: 110px;    
+    }
+    
+    

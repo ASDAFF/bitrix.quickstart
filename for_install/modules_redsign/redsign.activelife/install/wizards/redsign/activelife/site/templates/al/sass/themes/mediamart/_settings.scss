@@ -1,0 +1,116 @@
+// ******************skin0******************
+// #096cbd linear-gradient(180deg, #319df6, #096cbd) repeat scroll 0 0
+$skin0_color:                           #fff;
+$skin0_bg:                              #096cbd; // main catalog menu
+$skin0_bg0:                             lighten( saturate( #096cbd, 1 ), 19 ); // #319df6
+$skin0_bg100:                           $skin0_bg;
+$skin0_border:                          $skin0_bg;
+
+// #319df5 linear-gradient(180deg, #086bbc, #319df5) repeat scroll 0 0
+$skin0_hover_bg:                        lighten( $skin0_bg, 19 ); // #319df5;
+$skin0_hover_bg0:                       darken( saturate( #319df5, 1 ), 20 ); // #086bbc;
+$skin0_hover_bg100:                     $skin0_hover_bg;
+
+// #0a6dbe none repeat scroll 0 0
+$skin0_active_bg:                       desaturate( $skin0_bg, 1 ); // #0a6dbe;
+
+// ******************skin1******************
+// #f3ac00 linear-gradient(180deg, #f9d100, #f3ac00) repeat scroll 0 0
+$skin1_color:                           #fff;
+$skin1_bg:                              #f3ac00;
+$skin1_bg0:                             lighten( adjust-hue( #f3ac00, 8deg ), 1 ); // #f9d100
+$skin1_bg100:                           $skin1_bg;
+$skin1_border:                          $skin1_bg;
+
+// #f9d100 linear-gradient(180deg, #f3ac00, #f9d100) repeat scroll 0 0
+$skin1_hover_bg:                        $skin1_bg0;
+$skin1_hover_bg0:                       darken( adjust-hue( $skin1_hover_bg, -8deg ), 1 ); // #f3ac00
+$skin1_hover_bg100:                     $skin1_bg0;
+
+// #f3ae00 none repeat scroll 0 0
+$skin1_active_bg:                       adjust-hue( $skin1_bg, 1deg ); // #f3ae00;
+
+// ******************skin2******************
+$skin2_color:                           $skin0_color;
+$skin2_bg:                              $skin0_bg;
+$skin2_bg0:                             $skin0_bg0;
+$skin2_bg100:                           $skin0_bg100;
+$skin2_border:                          $skin0_border;
+
+$skin2_hover_bg:                        $skin0_hover_bg;
+$skin2_hover_bg0:                       $skin0_hover_bg0;
+$skin2_hover_bg100:                     $skin0_hover_bg100;
+
+$skin2_active_bg:                       $skin0_active_bg;
+
+// ******************skin3******************
+// #e0e0e0 linear-gradient(180deg, #ffffff, #e0e0e0) repeat scroll 0 0
+$skin3_color:                           $text-color;
+$skin3_bg:                              #e0e0e0;
+$skin3_bg0:                             #fff;
+$skin3_bg100:                           $skin3_bg;
+$skin3_border:                          $gray-light;
+
+// #efefef linear-gradient(180deg, #ffffff, #efefef) repeat scroll 0 0
+$skin3_hover_bg:                        lighten($skin3_bg, 6); // #f0f0f0;
+$skin3_hover_bg0:                       $skin3_bg0;
+$skin3_hover_bg100:                     $skin3_hover_bg;
+
+// #f4e6fe linear-gradient(180deg, #ffffff, #f4e6fe) repeat scroll 0 0
+$skin3_active_bg:                       lighten(saturate(adjust-hue($skin3_bg, 276deg), 93), 7); // #f4e5fe;
+$skin3_active_bg0:                      $skin3_bg0;
+$skin3_active_bg100:                    $skin3_active_bg;
+
+// ******************skin4******************
+$skin4_bg:                              #17ba3e;
+
+// ******************skin_topline******************
+$skin_topline_background:				#444444;
+$skin_topline_from_color:				$skin_topline_background;
+$skin_topline_to_color:					#2d2d2d;
+$skin_topline_border:					#4c4a49;
+$skin_topline_link_color:				#b3b3b3;
+$skin_topline_icon_color:               $skin0_bg;
+
+// ******************vml_menu******************
+$vml_menu_bg_from:						#FFF;
+$vml_menu_bg_to:						#F9F9F9;
+$vml_menu_bg_hover_from: 				#F9F9F9;
+$vml_menu_bg_hover_to: 					#fff;
+$vml_menu_border_color:					#E2E2E2;
+$vml_menu_color:						#000;
+$vml_menu_hover_color:					#1E85DA;
+$vml_menu_sub_bg_from:					#F9F9F9;
+$vml_menu_sub_bg_to:					#FFF;
+$vml_menu_sub_bg_hover_from:			$vml_menu_sub_bg_to;
+$vml_menu_sub_bg_hover_to:				$vml_menu_sub_bg_from;
+$vml_menu_sub_color:					#000;
+$vml_menu_sub_color_hover:				#1E85DA;
+$vml_svg_stroke_color:					#c2c2c2;
+$vml_svg_stroke_color_hover:			#47b5dc;
+$vml_svg_sub_stroke_color:				#c2c2c2;
+$vml_svg_sub_stroke_color_hover:		#47b5dc;
+
+// ******************navbar_link******************
+$navbar_link_hover_color:               $skin0_bg;
+$navbar_link_hover_border:              $navbar_link_hover_color;
+
+// ******************skin_footer******************
+// #1577c7 linear-gradient(180deg, #2285d5, #1577c7) repeat scroll 0 0
+$skin_footer_background:                #1577c7;
+$skin_footer_from_color:                #2285d5;
+$skin_footer_to_color:                  #1577c7;
+$skin_footer_border:                    #146cb2;
+$skin_footer_title_color:				#165181;
+$skin_footer_link_color:				#fff;
+$skin_footer_icon_color:				$skin1_bg;
+
+$link-color:                            $skin0_bg;
+$link-hover-color:                      darken($link-color, 15%);
+$link-hover-decoration:                 underline;
+//$link-hover-color:                        #7DA831;
+
+$price-color:                           $skin0_bg;
+
+$header_icon_color:                     $skin0_bg;
+$footer_icon_color:                     $skin0_bg;

@@ -1,0 +1,31 @@
+.brand {
+  @extend .catalog__head;
+  color: $gray-darker;
+
+  &__logo {
+    display: inline-block;
+    min-width: 100px;
+    width: 150px;
+  }
+
+  
+  &__text {
+    font-size: $font-size-h4;
+    padding: $base-line-height  * .5 0
+  }
+  
+  > .media-left {
+    display: block;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .brand {
+    
+    > .media-left {
+      display: table-cell;
+      padding-right: $base-line-height;
+    }
+  }
+}

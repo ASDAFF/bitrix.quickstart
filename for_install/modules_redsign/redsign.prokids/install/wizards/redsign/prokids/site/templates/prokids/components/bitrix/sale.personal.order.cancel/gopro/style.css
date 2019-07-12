@@ -1,0 +1,11 @@
+.ordercancel .reason{
+	width:60%;
+	height:150px;
+}
+
+
+@media screen and (max-width:875px){
+	body.adaptive .ordercancel .reason{
+		width:100%;
+	}
+}

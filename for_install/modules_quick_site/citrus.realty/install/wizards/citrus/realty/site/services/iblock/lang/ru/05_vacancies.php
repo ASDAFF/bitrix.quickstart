@@ -1,0 +1,2 @@
+<?
+$MESS['CITRUS_FORM_FIELDS_TABS'] = 'edit1--#--Вакансия--,--ACTIVE--#--Опубликована--,--ACTIVE_FROM--#--Дата вакансии--,--ACTIVE_TO--#--Окончание публикации вакансии--,--NAME--#--*Название--,--CODE--#--*Символьный код--,--SORT--#--Порядок в списке--,--PROPERTY_requirements--#--Требования к кандидату--,--PROPERTY_function--#--Должностные обязанности--,--PROPERTY_conditions--#--Условия работы--,--PROPERTY_address--#--Место работы--,--PROPERTY_contact--#--Контактное лицо--,--PREVIEW_TEXT--#--Дополнительный текст--;--';

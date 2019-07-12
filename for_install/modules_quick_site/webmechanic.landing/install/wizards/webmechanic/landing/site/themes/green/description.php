@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME" => GetMessage("GREEN_THEME"));?>

@@ -1,0 +1,15 @@
+.news-item {
+  .news-item-prev_text {
+    max-height: 110px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 590px){
+    .news_text_sm {
+      width:100%;
+    }
+    .news_pic_sm {
+      width:100%;
+    }
+  }
+}

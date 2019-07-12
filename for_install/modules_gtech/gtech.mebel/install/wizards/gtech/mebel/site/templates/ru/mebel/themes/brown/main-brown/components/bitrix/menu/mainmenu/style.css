@@ -1,0 +1,26 @@
+a.mainmenu-link{
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.mainmenu-link:hover{
+	text-decoration: underline;
+}
+
+td.mainmenu-item{
+	cursor: pointer;
+}
+
+td.mainmenu-item:hover a{
+	text-decoration: underline;
+}
+
+td.mainmenu-selected{
+	background: url(images/mainmenu-selected.jpg) left top repeat-x;
+}
+
+td.mainmenu-selected a:hover{
+	text-decoration: none;
+	cursor: default;
+}

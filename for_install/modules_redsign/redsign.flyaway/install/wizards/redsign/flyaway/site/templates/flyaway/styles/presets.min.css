@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Undefined variable: \"$bg-color-dark\".\A         on line 4 of D:/WorkSpace/OpenServer/domains/flyaway.dev/bitrix/templates/flyaway/sass/presets.scss\A \A 1: /* PRESET 1 */\A 2: .preset_2 {\A 3:   & .headline {\A 4:     background-color: $bg-color-dark;\A 5:   }\A 6: }\A 7: \A 8: .preset_3 {\A 9:   & .headline {"}

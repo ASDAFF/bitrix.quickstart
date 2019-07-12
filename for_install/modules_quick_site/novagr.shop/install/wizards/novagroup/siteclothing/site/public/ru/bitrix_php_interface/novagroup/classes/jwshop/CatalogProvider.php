@@ -1,0 +1,3 @@
+<?
+class Novagroup_Classes_General_CatalogProvider extends Novagroup_Classes_Abstract_CatalogProvider{}
+

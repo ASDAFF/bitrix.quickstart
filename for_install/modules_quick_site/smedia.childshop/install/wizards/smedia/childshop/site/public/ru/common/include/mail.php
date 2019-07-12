@@ -1,0 +1,1 @@
+<p><b>Ёлектронна€ почта</b>: <a href="mailto:#EMAIL#">#EMAIL#</a></p>

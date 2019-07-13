@@ -1,1 +1,0 @@
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/sota.parser/admin/parser_section_edit.php"); ?>

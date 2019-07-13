@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME"=>"Womanizer", "DESCRIPTION"=>"Женский интернет-магазин");?>

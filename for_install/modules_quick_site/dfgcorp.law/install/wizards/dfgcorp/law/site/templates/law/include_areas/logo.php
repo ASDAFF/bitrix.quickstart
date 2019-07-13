@@ -1,1 +1,0 @@
-<a href="/" ><img src="<?=SITE_TEPMPLATE_PATH?>/include/logo.png" border="0" width="244" height="71"  /></a>

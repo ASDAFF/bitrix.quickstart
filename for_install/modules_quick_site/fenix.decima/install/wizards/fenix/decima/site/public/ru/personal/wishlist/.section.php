@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Избранное";
-$arDirProperties = Array(
-
-);
-?>

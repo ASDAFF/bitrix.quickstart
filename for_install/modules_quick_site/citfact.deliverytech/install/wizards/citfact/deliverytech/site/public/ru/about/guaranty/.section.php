@@ -1,5 +1,0 @@
-<?
-$sSectionName = "Гарантия";
-$arDirProperties = array(
-);
-?>

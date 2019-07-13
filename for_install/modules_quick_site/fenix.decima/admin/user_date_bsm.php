@@ -1,1 +1,0 @@
-<?define("fenix_decima_TEMPORARY_CACHE", "JGEDAypmVQY8BitqV2YJfFx0");?>

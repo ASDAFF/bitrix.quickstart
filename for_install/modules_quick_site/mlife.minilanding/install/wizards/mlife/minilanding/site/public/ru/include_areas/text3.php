@@ -1,1 +1,0 @@
-<img src="#SITE_DIR#images/ifon.png" />

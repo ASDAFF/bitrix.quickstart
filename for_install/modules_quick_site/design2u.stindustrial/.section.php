@@ -1,3 +1,0 @@
-<?
-$sSectionName=".last_version";
-?>

@@ -1,4 +1,0 @@
-<?
-$MESS ['MLIFE_MINILANDING_BUTTON_DESCRIPTION'] = "Çàïóñòèòü ìàñòåð óñòàíîâêè \"Landing ÎÏÒ, ÐÎÇÍÈÖÀ, ÓÑËÓÃÈ\"";
-$MESS ['MLIFE_MINILANDING_BUTTON_NAME'] = "Landing ÎÏÒ, ÐÎÇÍÈÖÀ, ÓÑËÓÃÈ";
-?>

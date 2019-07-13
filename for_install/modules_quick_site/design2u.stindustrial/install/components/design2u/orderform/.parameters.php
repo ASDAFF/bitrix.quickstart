@@ -1,5 +1,0 @@
-<?
-$arComponentParameters = array(
-	"GROUPS" => array(
-	))
-	?>

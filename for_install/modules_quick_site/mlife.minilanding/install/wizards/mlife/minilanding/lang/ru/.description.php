@@ -1,4 +1,0 @@
-<?
-$MESS["MLIFE_MINILANDING_WIZARD_NAME"] = "Landing - ÎÏÒ, ÐÎÇÍÈÖÀ, ÓÑËÓÃÈ.";
-$MESS["MLIFE_MINILANDING_WIZARD_DESC"] = "Ìàñòåð ñîçäàíèÿ \"Landing - ÎÏÒ, ÐÎÇÍÈÖÀ, ÓÑËÓÃÈ.\"";
-?>

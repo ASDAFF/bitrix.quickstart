@@ -1,1 +1,0 @@
-&copy; <?= date('Y'); ?> «Womanizer»

@@ -1,1 +1,0 @@
-<p class="icq">#SITE_ICQ#</p>

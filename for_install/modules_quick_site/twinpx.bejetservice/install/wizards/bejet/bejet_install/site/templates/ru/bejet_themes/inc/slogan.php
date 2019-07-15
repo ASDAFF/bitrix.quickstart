@@ -1,1 +1,0 @@
-<div class="b-index-block__slogan">Ремонт телевизоров</div>

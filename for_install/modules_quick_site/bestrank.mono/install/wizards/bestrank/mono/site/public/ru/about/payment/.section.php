@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Оплата";
-$arDirProperties = Array(
-
-);
-?>

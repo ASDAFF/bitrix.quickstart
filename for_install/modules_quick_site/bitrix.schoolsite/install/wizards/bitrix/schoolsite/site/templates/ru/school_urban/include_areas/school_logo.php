@@ -1,1 +1,0 @@
-<img src="#SCHOOL_LOGO#" alt=""/>

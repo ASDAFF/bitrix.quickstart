@@ -1,1 +1,0 @@
-<img width="143" alt="Новый логотип" src="/include/logo.png" height="40" title="Новый логотип">

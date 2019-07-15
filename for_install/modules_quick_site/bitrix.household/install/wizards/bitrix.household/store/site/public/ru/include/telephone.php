@@ -1,1 +1,0 @@
-<p class="phone">(#CODE#) <strong>#S_PHONE#</strong></p>

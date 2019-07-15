@@ -1,9 +1,0 @@
-@import "style.css";
-
-.navInner .under {
-    display: none;}
-.navInner {
-    text-align-last: justify;
-}
-.nav .navInner a {
-    padding-bottom: 15px;}

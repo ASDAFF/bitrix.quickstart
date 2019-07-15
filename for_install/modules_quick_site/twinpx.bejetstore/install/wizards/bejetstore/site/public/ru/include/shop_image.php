@@ -1,1 +1,0 @@
-<img width="370" alt="about.jpg" src="<?=SITE_TEMPLATE_PATH?>/images/shop_image.jpg" title="about.jpg" class="img-responsive">

@@ -1,6 +1,0 @@
-<?
-$sSectionName = "FAQ";
-$arDirProperties = Array(
-
-);
-?>

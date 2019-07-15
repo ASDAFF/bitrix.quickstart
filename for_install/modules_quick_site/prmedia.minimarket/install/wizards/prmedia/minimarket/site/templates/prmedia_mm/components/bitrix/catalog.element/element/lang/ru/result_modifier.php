@@ -1,3 +1,0 @@
-<?php
-
-$MESS ['PRMEDIA_MM_CEE_FOR_DEFAULT'] = 'шт';

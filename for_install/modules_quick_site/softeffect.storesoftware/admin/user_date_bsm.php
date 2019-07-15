@@ -1,1 +1,0 @@
-<?define("softeffect_storesoftware_TEMPORARY_CACHE", "dTUKUXA2AlVhAyhiVjYJLFwn");?>

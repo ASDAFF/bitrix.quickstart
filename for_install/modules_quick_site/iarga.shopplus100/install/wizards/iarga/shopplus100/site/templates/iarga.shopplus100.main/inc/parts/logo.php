@@ -1,1 +1,0 @@
-<?=COption::GetOptionString("main","site_name")?>

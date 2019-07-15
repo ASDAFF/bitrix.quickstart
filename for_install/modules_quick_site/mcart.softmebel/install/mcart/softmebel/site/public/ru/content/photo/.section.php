@@ -1,4 +1,0 @@
-<?
-$sSectionName = "Галерея";
-$arDirProperties = array();
-?>

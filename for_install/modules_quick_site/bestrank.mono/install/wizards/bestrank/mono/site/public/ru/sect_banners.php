@@ -1,1 +1,0 @@
-<a href="http://marketplace.1c-bitrix.ru/solutions/bestrank.bijou/" ><img src="<?=SITE_TEMPLATE_PATH?>/images/banner.png" border="0"  /></a>

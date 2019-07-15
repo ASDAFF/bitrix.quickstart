@@ -1,5 +1,0 @@
-<?
-$MESS["AVTOSERVICE_TYPE_NAME"] = "Автосервис";
-$MESS["AVTOSERVICE_ELEMENT_NAME"] = "Элементы";
-$MESS["AVTOSERVICE_SECTION_NAME"] = "Разделы";
-?>

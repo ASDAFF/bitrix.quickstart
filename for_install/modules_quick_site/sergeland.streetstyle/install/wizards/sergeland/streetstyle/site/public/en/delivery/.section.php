@@ -1,5 +1,0 @@
-<?
-$sSectionName = "Delivery";
-$arDirProperties = array(
-);
-?>

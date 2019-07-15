@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Поступающим";
-$arDirProperties = Array(
-
-);
-?>

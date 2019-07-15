@@ -1,1 +1,0 @@
-<a href = "/">#COMPANY_NAME#</a>

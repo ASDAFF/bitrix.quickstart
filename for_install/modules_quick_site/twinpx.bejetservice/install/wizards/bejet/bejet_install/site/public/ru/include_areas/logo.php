@@ -1,1 +1,0 @@
-<img src="<?=SITE_DIR?>images/logo.png" width="201" height="30" alt="Сервисная компания" />

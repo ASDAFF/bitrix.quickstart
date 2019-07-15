@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Ученикам";
-$arDirProperties = Array(
-
-);
-?>

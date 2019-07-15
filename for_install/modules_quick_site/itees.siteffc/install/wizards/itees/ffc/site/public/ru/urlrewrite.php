@@ -1,6 +1,0 @@
-<?
-$arUrlRewrite = array(
-	
-);
-
-?>

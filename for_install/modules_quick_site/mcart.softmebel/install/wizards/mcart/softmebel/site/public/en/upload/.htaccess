@@ -1,3 +1,0 @@
-<IfModule mod_mime.c>
-	AddType text/plain .php .php3 .php4 .php5 .php6 .phtml .pl .asp .aspx .cgi .exe
-</IfModule>

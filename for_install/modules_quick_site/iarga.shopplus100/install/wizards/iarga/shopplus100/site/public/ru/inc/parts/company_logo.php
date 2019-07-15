@@ -1,1 +1,0 @@
-<a href="/"><img src="/inc/parts/logo.jpg"  /></a>

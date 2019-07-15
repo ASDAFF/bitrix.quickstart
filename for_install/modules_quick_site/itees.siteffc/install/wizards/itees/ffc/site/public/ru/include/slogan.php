@@ -1,1 +1,0 @@
-#COMPANY_SLOGAN#

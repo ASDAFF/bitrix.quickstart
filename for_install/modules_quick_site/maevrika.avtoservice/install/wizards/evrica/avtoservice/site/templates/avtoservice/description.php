@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME"=>GetMessage("SERVICE_TEMPLATE_DESCRIPTION_NAME"), "DESCRIPTION"=>"");?>

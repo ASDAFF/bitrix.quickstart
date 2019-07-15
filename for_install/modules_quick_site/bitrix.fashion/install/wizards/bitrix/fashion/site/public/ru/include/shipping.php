@@ -1,1 +1,0 @@
-<strong style="color:#c41e3a">Бесплатная доставка</strong> на заказы больше 6 000 руб. Покупай <strong style="color:#c41e3a">выгодно</strong>!

@@ -1,5 +1,0 @@
-<?
-$sSectionName = "Contacts";
-$arDirProperties = array(
-);
-?>

@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /bitrix/
-Disallow: /upload/
-Disallow: /js/
-Disallow: /styles/
-Disallow: /images/
-Disallow: /auth/

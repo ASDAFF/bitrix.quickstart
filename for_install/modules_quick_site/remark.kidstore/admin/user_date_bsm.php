@@ -1,1 +1,0 @@
-<?define("remark_kidstore_TEMPORARY_CACHE", "fWdVUC9iB1ZqCnA3AWwIfwMg");?>

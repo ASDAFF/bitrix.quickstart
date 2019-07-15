@@ -1,4 +1,0 @@
-<?
-$MESS["SERGELAND_FILTER_PRICE"] = "Price";
-$MESS["SERGELAND_FILTER_SUBMIT"] = "Show";
-?>

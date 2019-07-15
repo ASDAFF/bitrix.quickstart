@@ -1,1 +1,0 @@
-<?define("bitrix_household_TEMPORARY_CACHE", "cTAOBCwwAwU+CX5hAmNSegF2");?>

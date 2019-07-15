@@ -1,3 +1,0 @@
-<?
-$MESS['sale_weight_unit'] = 'êã';
-?>

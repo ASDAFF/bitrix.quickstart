@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME" => GetMessage("CPST_BROWN"), "SORT"=>20);?>

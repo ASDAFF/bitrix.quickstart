@@ -1,1 +1,0 @@
-<img itemprop = "image" class="logo fn org" alt="Fasion" src="<?=SITE_TEMPLATE_PATH?>/i/logo.png" width="208" height="46" />

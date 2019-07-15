@@ -1,1 +1,0 @@
-<a href="#" ><img src="<?=SITE_TEMPLATE_PATH?>/images/c1.png"  /></a> <a href="#" ><img src="<?=SITE_TEMPLATE_PATH?>/images/c2.png"  /></a>

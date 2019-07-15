@@ -1,4 +1,0 @@
-<?
-$MESS["ESHOP_SOCNET_TITLE"] = "Folgen";
-$MESS["ESHOP_FACEBOOK_PLUGIN_SET"] = "de_DE";
-?>

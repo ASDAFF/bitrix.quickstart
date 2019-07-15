@@ -41,5 +41,5 @@ $arResult['PRODUCTS'] = $wblProd;
 
 
 $this->IncludeComponentTemplate();
-$rsDirContent->NavPrint('',false,'',SITE_TEMPLATE_PATH.'/include/custom_nav_template.php');
+$rsDirContent->NavPrint('',false,'',__DIR__.'/include/custom_nav_template.php');
 ?>

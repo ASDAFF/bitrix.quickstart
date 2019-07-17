@@ -5,8 +5,13 @@ $arComponentDescription = array(
 	'DESCRIPTION' => GetMessage('COMPONENT_DESCRIPTION'),
 	'ICON' => '/images/component.gif',
 	'PATH' => array(
-		'ID' => 'fotorama',
+		'ID' => 'ASDAFF',
 		'NAME' => GetMessage('CATEGORY_NAME'),
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 	'CACHE_PATH' => 'Y',
 );

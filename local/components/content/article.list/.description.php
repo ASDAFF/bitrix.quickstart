@@ -7,7 +7,7 @@ $arComponentDescription = array(
 		"ID" => "ASDAFF",
         "NAME" => "ASDAFF",
 		"CHILD" => array(
-            "ID" => "content",
+            "ID" => 'Статьи и новости',
 			"NAME" => 'Статьи и новости',
 			"SORT" => 30
 		),

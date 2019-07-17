@@ -8,8 +8,13 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "kstudio",
-
+		"ID" => "ASDAFF",
+        "NAME" => 'Слайдер товаров',
+        "CHILD" => array(
+            "ID" => 'media',
+            "NAME" => 'Мультимедиа',
+            "SORT" => 10,
+        ),
 	),
 	"COMPLEX" => "N",
 );

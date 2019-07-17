@@ -11,8 +11,8 @@ $arComponentDescription = array(
 		"SORT" => 500,
 		"NAME" => GetMessage("SORT.PANEL_COMPONENTS_FOLDER_NAME"),
 		"CHILD" => array(
-			"ID" => GetMessage("SORT_PANEL_COMPONENT_TYPE_CONTENT_VALUE"),
-			"NAME" => '',
+			"ID" => 'content',
+			"NAME" => GetMessage("SORT_PANEL_COMPONENT_TYPE_CONTENT_VALUE"),
 			"SORT" => 500,
 		)
 	),

@@ -10,7 +10,7 @@ $arComponentDescription = array(
 		"ID" => "ASDAFF",
 		"NAME" => GetMessage("MLIFE"),
 		"CHILD" => array(
-			"ID" => 'custom',
+			"ID" => 'media',
 			"NAME" => GetMessage("MLIFE_GALERY"),
 			"SORT" => 10,
 		),

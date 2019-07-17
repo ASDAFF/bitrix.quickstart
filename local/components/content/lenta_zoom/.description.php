@@ -6,9 +6,9 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("APROF_LENTAZOOM_LENTA_FOTOGRAFIY"),
 	"ICON" => "/images/icon.gif",
 	"PATH" => array(
-		"ID" => "utility",
+		"ID" => "ASDAFF",
 		"CHILD" => array(
-			"ID" => "slider",
+			"ID" => "media",
 			"NAME" => GetMessage("APROF_LENTAZOOM_RAZNOE")
 		)
 	),

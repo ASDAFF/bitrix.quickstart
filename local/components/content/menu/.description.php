@@ -6,9 +6,9 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("MAIN_MENU_ITEMS_DESC"),
 	"ICON" => "/images/menu.gif",
 	"PATH" => array(
-		"ID" => "mcart.menu",
+		"ID" => "ASDAFF",
 		"CHILD" => array(
-			"ID" => "mcart",
+			"ID" => "navigation",
 			"NAME" => GetMessage("MAIN_NAVIGATION_SERVICE")
 		)
 	),

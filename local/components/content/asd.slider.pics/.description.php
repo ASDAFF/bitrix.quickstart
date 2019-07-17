@@ -8,10 +8,10 @@ $arComponentDescription = array(
 	"SORT" => 100,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "utility",
-		"NAME" => GetMessage("ASD_CMP_GLOBAL_DIR_NAME"),
+		"ID" => "ASDAFF",
+		"NAME" => GetMessage("ASD_CMP_NAME"),
 		"CHILD" => array(
-			"ID" => "asd_other",
+			"ID" => "media",
 			"NAME" => GetMessage("ASD_CMP_DIR_NAME")
 		),
 

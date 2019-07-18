@@ -7,7 +7,6 @@ $arComponentDescription = array(
 	"SORT" => 30,
 	"PATH" => array(
 		"ID" => "ASDAFF",
-		"NAME" => GetMessage('CP_CATALOG_SERVICES_MAIN_SECTION'),
 		"CHILD" => array(
 			"ID" => "catalog",
 			"NAME" => GetMessage("CP_CATALOG_SERVICES_PARENT_SECTION"),

@@ -7,8 +7,12 @@ $arComponentDescription = array(
 	"SORT" => 11,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "itlogic",
+		"ID" => "ASDAFF",
 		"SORT" => 2000,
-		"NAME" => GetMessage("ITLOGIC_COMPONENTS"),
+        "CHILD" => array(
+            "ID" => "utilites",
+            "NAME" => 'Разное',
+            "SORT" => 500,
+        )
 	),
 );

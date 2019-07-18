@@ -9,9 +9,9 @@ $arComponentDescription = array(
 	"LOGOTYPE" => GetMessage("LNG_IMG_SSTAT"),
 	"CACHE_PATH" => "N",
     "PATH" => array(
-              "ID" => GetMessage("LNG_ID_PARTNER"),
+              "ID" => 'ASDAFF',
               "CHILD" => array(
-                      "ID" => "imstatus",
+                      "ID" => "widgets",
                       "NAME" => GetMessage("LNG_CAT_STATUS")
                 )
         ),

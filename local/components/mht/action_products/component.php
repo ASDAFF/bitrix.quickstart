@@ -1,13 +1,13 @@
 <?
-if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 $ids = $arParams['IDS'];
 $products = array();
 
-foreach($ids as $id) {
-	$product = MHT\Product::byID($id);
-	$product->moreFields($id);
-	$products[] = $product;
+foreach ($ids as $id) {
+    $product = MHT\Product::byID($id);
+    $product->moreFields($id);
+    $products[] = $product;
 }
 
 // создадим объект класса CDBResult
@@ -16,11 +16,11 @@ $rsDirContent = new CDBResult;
 // инициализируем этот объект исходным массивом
 $rsDirContent->InitFromArray($products);
 $rsDirContent->NavStart(36);
-$rsDirContent->NavPrint('',false,'',SITE_TEMPLATE_PATH.'/include/custom_nav_template.php');
+$rsDirContent->NavPrint('', false, '', SITE_TEMPLATE_PATH . '/include/custom_nav_template.php');
 
 $wblProd = array();
-while($tmp = $rsDirContent->Fetch()){
-	$wblProd[] = $tmp;
+while ($tmp = $rsDirContent->Fetch()) {
+    $wblProd[] = $tmp;
 }
 
 
@@ -41,5 +41,5 @@ $arResult['PRODUCTS'] = $wblProd;
 
 
 $this->IncludeComponentTemplate();
-$rsDirContent->NavPrint('',false,'',__DIR__.'/include/custom_nav_template.php');
+$rsDirContent->NavPrint('', false, '', __DIR__ . '/include/custom_nav_template.php');
 ?>

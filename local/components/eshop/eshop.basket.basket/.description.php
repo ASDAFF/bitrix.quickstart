@@ -6,9 +6,9 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("SBB_DEFAULT_TEMPLATE_DESCRIPTION"),
 	"ICON" => "/images/sale_basket.gif",
 	"PATH" => array(
-		"ID" => "eshop",
+		"ID" => "ASDAFF",
 		"CHILD" => array(
-			"ID" => "eshop_sale_basket",
+			"ID" => "order",
 			"NAME" => GetMessage("SBB_NAME")
 		)
 	),

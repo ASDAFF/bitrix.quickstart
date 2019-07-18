@@ -6,10 +6,10 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("SOF_DEFAULT_TEMPLATE_DESCRIPTION"),
 	"ICON" => "/images/sale_order_full.gif",
 	"PATH" => array(
-		"ID" => "e-store",
+		"ID" => "ASDAFF",
 		"CHILD" => array(
-			"ID" => "sale_order",
-			"NAME" => GetMessage("SOF_NAME")
+			"ID" => "order",
+			"NAME" => 'Корзина, заказы'
 		)
 	),
 );

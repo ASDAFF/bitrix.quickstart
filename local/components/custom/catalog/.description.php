@@ -8,10 +8,10 @@ $arComponentDescription = array(
 	"COMPLEX" => "Y",
 	"SORT" => 10,
 	"PATH" => array(
-		"ID" => "content",
+		"ID" => "ASDAFF",
 		"CHILD" => array(
 			"ID" => "catalog",
-			"NAME" => GetMessage("T_IBLOCK_DESC_CATALOG"),
+			"NAME" => 'Каталог',
 			"SORT" => 30,
 		)
 	)

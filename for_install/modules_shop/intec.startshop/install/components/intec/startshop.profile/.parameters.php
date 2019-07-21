@@ -1,7 +1,0 @@
-<?
-    $arComponentParameters = array(
-        "PARAMETERS" => array(
-
-        )
-    )
-?>

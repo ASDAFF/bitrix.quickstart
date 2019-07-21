@@ -1,5 +1,0 @@
-<?
-$arComponentDescription = array(
-    "COMPLEX" => "Y"
-);
-?>

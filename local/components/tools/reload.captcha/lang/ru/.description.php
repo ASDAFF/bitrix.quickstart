@@ -1,7 +1,7 @@
 <?
-$MESS ['RELOAD_CAPTCHA'] = "Îáíîâèòü êàðòèíêó CAPTCHA";
-$MESS ['RELOAD_CAPTCHA_DESC'] = "Êîìïîíåíò ïîçâîëÿåò ïåðåãðóæàòü êàðòèíêó CAPTCHA";
-$MESS ['C_FORM_ID'] = "Èìÿ ôîðìû ñ CAPTCHA";
-$MESS ['C_USE_GLOBAL'] = "Èñïîëüçîâàòü íà âñåé ñòðàíèöå (ãëîáàëüíî)";
-$MESS ['IMAGE_DIALOG'] = "Ïóòü ê êàðòèíêå";
+$MESS ['RELOAD_CAPTCHA'] = "ÐžÐ±Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ CAPTCHA";
+$MESS ['RELOAD_CAPTCHA_DESC'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¿ÐµÑ€ÐµÐ³Ñ€ÑƒÐ¶Ð°Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ CAPTCHA";
+$MESS ['C_FORM_ID'] = "Ð˜Ð¼Ñ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ñ CAPTCHA";
+$MESS ['C_USE_GLOBAL'] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ Ð½Ð° Ð²ÑÐµÐ¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ðµ (Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½Ð¾)";
+$MESS ['IMAGE_DIALOG'] = "ÐŸÑƒÑ‚ÑŒ Ðº ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐµ";
 ?>

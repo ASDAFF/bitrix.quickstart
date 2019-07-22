@@ -6,8 +6,14 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("MAIN_GETCODE_COMPONENT_DESCR"),
 	"ICON" => "/images/main.getcode.gif",
 	"SORT" => 1,
-	"PATH" => array(
-		"ID" => "utility",
-	),
+    "PATH" => array(
+        "ID" => "ASDAFF",
+        "NAME" => "ASDAFF",
+        "CHILD" => array(
+            "ID" => 'utility',
+            "NAME" => 'Разное',
+            "SORT" => 30
+        ),
+    ),
 );
 ?>

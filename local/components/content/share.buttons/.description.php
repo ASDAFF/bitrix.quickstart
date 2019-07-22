@@ -8,7 +8,13 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "utility",
+		"ID" => "ASDAFF",
+        "NAME" => GetMessage("$MESS ['NAME']"),
+        "CHILD" => array(
+            "ID" => 'utility',
+            "NAME" => 'Разное',
+            "SORT" => 10,
+        ),
 	),
 );
 

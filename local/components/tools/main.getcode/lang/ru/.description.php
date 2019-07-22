@@ -1,4 +1,4 @@
 <?
-$MESS ['MAIN_GETCODE_COMPONENT_NAME'] = "Âòñâêà bitrix api èëè php êîíñòðóêöèé";
-$MESS ['MAIN_GETCODE_COMPONENT_DESCR'] = "Êîìïîíåíò, äëÿ ïîäêëþ÷åíèÿ api èëè php êîíñòðóêöèé íà ñòðàíèöàõ.";
+$MESS ['MAIN_GETCODE_COMPONENT_NAME'] = "Ð’Ñ‚ÑÐ²ÐºÐ° bitrix api Ð¸Ð»Ð¸ php ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ð¹";
+$MESS ['MAIN_GETCODE_COMPONENT_DESCR'] = "ÐšÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚, Ð´Ð»Ñ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ñ api Ð¸Ð»Ð¸ php ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ†Ð¸Ð¹ Ð½Ð° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°Ñ….";
 ?>

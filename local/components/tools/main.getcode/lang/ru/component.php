@@ -1,3 +1,3 @@
 <?
-$MESS ['COMPONENT_MESSAGE1'] = "Òåêñò â êîìïîíåíòå 1";
+$MESS ['COMPONENT_MESSAGE1'] = "Ð¢ÐµÐºÑÑ‚ Ð² ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ðµ 1";
 ?>

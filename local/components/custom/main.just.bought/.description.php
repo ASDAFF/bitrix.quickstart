@@ -6,10 +6,10 @@ $arComponentDescription = array(
 	"ICON" => "/images/sale_rec.gif",
 	"SORT" => 30,
 	"PATH" => array(
-		"ID" => "e-store",
+		"ID" => "ASDAFF",
 		"NAME" => GetMessage('CP_CATALOG_SERVICES_MAIN_SECTION'),
 		"CHILD" => array(
-			"ID" => "catalog-services",
+			"ID" => "catalog",
 			"NAME" => GetMessage("CP_CATALOG_SERVICES_PARENT_SECTION"),
 			"SORT" => 500,
 		)

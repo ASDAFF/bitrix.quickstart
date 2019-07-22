@@ -39,7 +39,7 @@ class CCatalogElementsComponent extends CCustomCatalogViewedProductsComponent
      *
      * @return array
      */
-    protected function getSort() : array
+    protected function getSort() // : array
     {
         $sortFields = array();
         
@@ -256,7 +256,7 @@ class CCatalogElementsComponent extends CCustomCatalogViewedProductsComponent
      * @param $arFilter
      * @return array
      */
-    private function SetFilterForOffers($arFilter): array
+    private function SetFilterForOffers($arFilter)//: array
     {
         $priceFilterKeys = [];
         foreach (array_keys($arFilter) as $key) {

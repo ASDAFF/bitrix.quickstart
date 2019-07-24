@@ -8,13 +8,13 @@ ymaps.ready(function () {
             'typeSelector',
             'zoomControl'
         ],
-        zoom: 6
+        zoom: 5
     });
     
     var obContactsCollection = new ymaps.GeoObjectCollection({},{
         iconLayout: 'default#image',
-        iconImageHref: pathMarker,
-        iconImageSize: [36, 51]
+        iconImageHref: '/bitrix/templates/greenline/components/bitrix/catalog.sections.top/contacts_yamaps_v2_1/images/ymap-contact-mark.png',
+        iconImageSize: [23, 36]
     });
     
     for (var i = 0; i < obYAMap.length; ++i) {

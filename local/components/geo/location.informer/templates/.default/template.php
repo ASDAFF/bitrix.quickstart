@@ -2,12 +2,12 @@
 CJSCore::Init(array("jquery")); ?>
 <script src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 
-<div id="evalga_informer_location"></div>
+<div id="informer_location"></div>
 
 <script>
-    ymaps.ready(evalga_informer_init);
+    ymaps.ready(informer_init);
 
-    function evalga_informer_init() {
+    function informer_init() {
         var geolocation = ymaps.geolocation;
         var show_country = '<?=$arParams['SHOW_COUNTRY']?>';
         var show_city = '<?=$arParams['SHOW_CITY']?>';
@@ -16,6 +16,6 @@ CJSCore::Init(array("jquery")); ?>
         if (show_country == 'Y') location = geolocation.country;
         if (show_country == 'Y' && show_city == 'Y') location += ', '; 
         if (show_city == 'Y') location += geolocation.city;
-        $("#evalga_informer_location").text(location);
+        $("#informer_location").text(location);
     }
 </script>

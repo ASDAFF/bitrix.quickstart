@@ -1,7 +1,7 @@
 <?
 $MESS['WEBPROFY_AUTOREPLACE_PARTNER_NAME']				= 'Webprofy';
 $MESS['WEBPROFY_AUTOREPLACE_INSTALL_NAME']				= 'Автоз"АвтозамАвтозамена от Webprofy';
-$MESS['WEBPROFY_AUTOREPLACE_INSTALL_DESCRIPTION']		= 'А�Позво�ляет изменять свойства, поля и тор�го�вые �характеристики у элементов инфоблоков';
+$MESS['WEBPROFY_AUTOREPLACE_INSTALL_DESCRIPTION']		= 'Позволяет изменять свойства, поля и торговые характеристики у элементов инфоблоков';
 $MESS['WEBPROFY_AUTOREPLACE_INSTALL_TITLE']				= 'Установка. Автоз"АвтозамАвтозамена от Webprofy';
 $MESS['WEBPROFY_AUTOREPLACE_INSTALL_SETUP']				= 'Установить';
 $MESS['WEBPROFY_AUTOREPLACE_INSTALL_COMPLETE_OK']		= 'Установка завершена.';

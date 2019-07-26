@@ -1,9 +1,5 @@
 <?php
 /**
- * Copyright (c) 2018 Created by ASDAFF asdaff.asad@yandex.ru
- */
-
-/**
  * Created by PhpStorm.
  * User: ASDAFF
  * Date: 21.11.2018
@@ -17,7 +13,7 @@ class SendForms
      * @param $LANG_CHARSET_BEGIN
      * @param $LANG_CHARSET_END
      *
-     * Ôóíêöèÿ êîíâåðòåð êîäèðîâêè
+     * Ð¤ÑƒÐ½ÐºÑ†Ð¸Ñ ÐºÐ¾Ð½Ð²ÐµÑ€Ñ‚ÐµÑ€ ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐ¸
      */
     function convert_charset_array(&$arItem, $LANG_CHARSET_BEGIN, $LANG_CHARSET_END)
     {

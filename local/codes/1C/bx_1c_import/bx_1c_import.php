@@ -19,28 +19,28 @@ $is_bitrix_dir=strpos($_SERVER['DOCUMENT_ROOT'].$script_name,$_SERVER['DOCUMENT_
 
 
 $mess=Array(
-		'OPTIONS'=>'Проверка доступа к методам',
-		'PROPFIND'=>'Получение структуры файлов и папок',
-		'CREATE_FOLDER'=>'Создание папки',
-		'DELETE_FOLDER'=>'Удаление папки',
-		'EDIT_FOLDER'=>'Удаление папки',
-		'COPY_FOLDER'=>'Копирование папки',
-		'CREATE_FILE'=>'Создание файла',
-		'COPY_FILE'=>'Копирование файла',
-		'DELETE_FILE'=>'Удаление файла',
-		'PROPPATCH_FILE'=>'Изменение свойства файла',
-		'EDIT_FILE'=>'Удаление файла',
-		'PATH'=>'Путь',
-		'ROOT'=>'Корень',
-		'LOGIN'=>'Логин',
-		'PASS'=>'Пароль',
-		'SERVER'=>'Сервер',
-		'TAB_TEST'=>'Тест',
-		'TAB_EXPLORER'=>'Обзор',
+		'OPTIONS'=>'РџСЂРѕРІРµСЂРєР° РґРѕСЃС‚СѓРїР° Рє РјРµС‚РѕРґР°Рј',
+		'PROPFIND'=>'РџРѕР»СѓС‡РµРЅРёРµ СЃС‚СЂСѓРєС‚СѓСЂС‹ С„Р°Р№Р»РѕРІ Рё РїР°РїРѕРє',
+		'CREATE_FOLDER'=>'РЎРѕР·РґР°РЅРёРµ РїР°РїРєРё',
+		'DELETE_FOLDER'=>'РЈРґР°Р»РµРЅРёРµ РїР°РїРєРё',
+		'EDIT_FOLDER'=>'РЈРґР°Р»РµРЅРёРµ РїР°РїРєРё',
+		'COPY_FOLDER'=>'РљРѕРїРёСЂРѕРІР°РЅРёРµ РїР°РїРєРё',
+		'CREATE_FILE'=>'РЎРѕР·РґР°РЅРёРµ С„Р°Р№Р»Р°',
+		'COPY_FILE'=>'РљРѕРїРёСЂРѕРІР°РЅРёРµ С„Р°Р№Р»Р°',
+		'DELETE_FILE'=>'РЈРґР°Р»РµРЅРёРµ С„Р°Р№Р»Р°',
+		'PROPPATCH_FILE'=>'РР·РјРµРЅРµРЅРёРµ СЃРІРѕР№СЃС‚РІР° С„Р°Р№Р»Р°',
+		'EDIT_FILE'=>'РЈРґР°Р»РµРЅРёРµ С„Р°Р№Р»Р°',
+		'PATH'=>'РџСѓС‚СЊ',
+		'ROOT'=>'РљРѕСЂРµРЅСЊ',
+		'LOGIN'=>'Р›РѕРіРёРЅ',
+		'PASS'=>'РџР°СЂРѕР»СЊ',
+		'SERVER'=>'РЎРµСЂРІРµСЂ',
+		'TAB_TEST'=>'РўРµСЃС‚',
+		'TAB_EXPLORER'=>'РћР±Р·РѕСЂ',
 		'TAB_XML'=>'XML',
-		'TAB_HEADERS'=>'Заголовки',
-		'START_TEST'=>'протестировать',
-		'TEST_CONTENT'=>'Это тестовый файл, содержащий тестовый контент!',
+		'TAB_HEADERS'=>'Р—Р°РіРѕР»РѕРІРєРё',
+		'START_TEST'=>'РїСЂРѕС‚РµСЃС‚РёСЂРѕРІР°С‚СЊ',
+		'TEST_CONTENT'=>'Р­С‚Рѕ С‚РµСЃС‚РѕРІС‹Р№ С„Р°Р№Р», СЃРѕРґРµСЂР¶Р°С‰РёР№ С‚РµСЃС‚РѕРІС‹Р№ РєРѕРЅС‚РµРЅС‚!',
 		);
 
 function __ShowMessage($text,$lamp='red')
@@ -146,9 +146,9 @@ class iWebDav
 			{
 				$f = fopen($_SERVER['DOCUMENT_ROOT'].$this->logfile, 'a+');
 				fwrite ($f,$this->crlf.'----------'.$this->crlf);
-				fwrite ($f,'Запрос:'.$this->crlf);
+				fwrite ($f,'Р—Р°РїСЂРѕСЃ:'.$this->crlf);
 				fwrite ($f,$this->headers);
-				fwrite ($f,$this->crlf.$this->crlf.'Ответ:'.$this->crlf);
+				fwrite ($f,$this->crlf.$this->crlf.'РћС‚РІРµС‚:'.$this->crlf);
 				fwrite ($f,print_r($aResult['~headers'],true));
 				fclose($f);
 			}
@@ -427,7 +427,7 @@ if ($_REQUEST['action']=="PROPFIND" || $_REQUEST['action']=="GET" )
 	else
 	{
 		$cdata['error']=$result['error'];
-		$cdata['file_list']='Ошибка запроса, смотрите раздел "заголовки"';
+		$cdata['file_list']='РћС€РёР±РєР° Р·Р°РїСЂРѕСЃР°, СЃРјРѕС‚СЂРёС‚Рµ СЂР°Р·РґРµР» "Р·Р°РіРѕР»РѕРІРєРё"';
 
 	}
 	echo json_encode($cdata);
@@ -461,10 +461,10 @@ if ($_REQUEST['mode']=='test')
 			{
 				$cdata['lamp']='red';
 				$FailMethod=implode(',',$FailMethod);
-				$cdata['text']=__ShowMessage($mess['OPTIONS'].": не поддерживаются методы - ".$FailMethod);
+				$cdata['text']=__ShowMessage($mess['OPTIONS'].": РЅРµ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ РјРµС‚РѕРґС‹ - ".$FailMethod);
 			}
 			else
-				$cdata['text']=__ShowMessage($mess['OPTIONS'].": все методы поддерживаются",'green');
+				$cdata['text']=__ShowMessage($mess['OPTIONS'].": РІСЃРµ РјРµС‚РѕРґС‹ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚СЃСЏ",'green');
 
 			break;
 		case 'CREATE_FILE':
@@ -587,7 +587,7 @@ if (@$_REQUEST['type']=='catalog')
 			if (($a || $b))
 			{
 
-				echo "debug:<br>"."<b>Эта информация выводится потому, что включён SkipMode</b><hr><pre style='font-size:11px;font-family:Arial;'>";
+				echo "debug:<br>"."<b>Р­С‚Р° РёРЅС„РѕСЂРјР°С†РёСЏ РІС‹РІРѕРґРёС‚СЃСЏ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ РІРєР»СЋС‡С‘РЅ SkipMode</b><hr><pre style='font-size:11px;font-family:Arial;'>";
 					print_r($arFields);
 				echo '</pre>';
 				die('<hr>');
@@ -638,175 +638,175 @@ if (@$_REQUEST['type']=='catalog')
 	die();
 
 }
-//Готовим кнопки
+//Р“РѕС‚РѕРІРёРј РєРЅРѕРїРєРё
 $MenuArray=Array(
             'main_info'=>Array(
-                "msg"=>'откроется окно информации по файлам',
-                "title"=>'Поиск',
+                "msg"=>'РѕС‚РєСЂРѕРµС‚СЃСЏ РѕРєРЅРѕ РёРЅС„РѕСЂРјР°С†РёРё РїРѕ С„Р°Р№Р»Р°Рј',
+                "title"=>'РџРѕРёСЃРє',
                 "onclick"=>"BX('main_info').style.display='block'",
                 "class"=>'small_but'
                 ),
 
             'param'=>Array(
-                    "msg"=>'откроется окно параметров выгрузки заказов',
-                    "title"=>'Выгрузка заказов',
+                    "msg"=>'РѕС‚РєСЂРѕРµС‚СЃСЏ РѕРєРЅРѕ РїР°СЂР°РјРµС‚СЂРѕРІ РІС‹РіСЂСѓР·РєРё Р·Р°РєР°Р·РѕРІ',
+                    "title"=>'Р’С‹РіСЂСѓР·РєР° Р·Р°РєР°Р·РѕРІ',
                     "onclick"=>"BX('param').style.display='block'",
                     "class"=>'small_but'
             ),
 
             'crtiblock'=>Array(
-                        "msg"=>'откроется окно создания типа инфоблока',
-                        "title"=>'Создать тип инфоблока',
+                        "msg"=>'РѕС‚РєСЂРѕРµС‚СЃСЏ РѕРєРЅРѕ СЃРѕР·РґР°РЅРёСЏ С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР°',
+                        "title"=>'РЎРѕР·РґР°С‚СЊ С‚РёРї РёРЅС„РѕР±Р»РѕРєР°',
                         "onclick"=>"AddWindowRequest('".$script_name."?action=createiblocktypeform','custom_windows','iblock');",
                         "class"=>'small_but'
                         ),
 			'fileman_but'=>Array(
-							"msg"=>'откроется FileMan',
+							"msg"=>'РѕС‚РєСЂРѕРµС‚СЃСЏ FileMan',
 							"title"=>'FileMan (shift+~)',
 							"onclick"=>"BX('test_window').style.display='block';GetFileList2('','testfileman');",
 							"class"=>'small_but'
 							),
             'xmltree'=>Array(
-                                    "msg"=>'будет отображено содержимое временной таблицы',
-                                    "title"=>'Временная таблица',
+                                    "msg"=>'Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶РµРЅРѕ СЃРѕРґРµСЂР¶РёРјРѕРµ РІСЂРµРјРµРЅРЅРѕР№ С‚Р°Р±Р»РёС†С‹',
+                                    "title"=>'Р’СЂРµРјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС†Р°',
                                     "onclick"=>"AjaxRequest('".$script_name."?action=show_bxmltree','log2',false);bxtabs.AlertActiveTab('tab1');",
                                     "class"=>'small_but'
                                     ),
 
                     );
 
-//  $CustomButton - массив кастомных кнопок
+//  $CustomButton - РјР°СЃСЃРёРІ РєР°СЃС‚РѕРјРЅС‹С… РєРЅРѕРїРѕРє
 $CustomButton['searchbutton']=Array(
-							"msg"=>'произойдёт поиск',
-							"title"=>'найти',
+							"msg"=>'РїСЂРѕРёР·РѕР№РґС‘С‚ РїРѕРёСЃРє',
+							"title"=>'РЅР°Р№С‚Рё',
 							"onclick"=>"searchbyxmlid();",
 							"class"=>'small_but_float'
 							);
 $CustomButton['searchbutton_iblock']=Array(
-							"msg"=>'произойдёт поиск',
-							"title"=>'найти',
+							"msg"=>'РїСЂРѕРёР·РѕР№РґС‘С‚ РїРѕРёСЃРє',
+							"title"=>'РЅР°Р№С‚Рё',
 							"onclick"=>"search_iblock_byxmlid();",
 							"class"=>'small_but_float'
 							);
 $CustomButton['change1']=Array(
-							"msg"=>'сменится время последнего обмена с 1С, после этого посмотреть список заказов, которые выгрузятся в 1С при следующем обмене',
-							"title"=>'Сменить',
+							"msg"=>'СЃРјРµРЅРёС‚СЃСЏ РІСЂРµРјСЏ РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР° СЃ 1РЎ, РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ СЃРїРёСЃРѕРє Р·Р°РєР°Р·РѕРІ, РєРѕС‚РѕСЂС‹Рµ РІС‹РіСЂСѓР·СЏС‚СЃСЏ РІ 1РЎ РїСЂРё СЃР»РµРґСѓСЋС‰РµРј РѕР±РјРµРЅРµ',
+							"title"=>'РЎРјРµРЅРёС‚СЊ',
 							"onclick"=>"ChangeLastMoment();",
 							"class"=>'small_but'
 							);
 $CustomButton['delete']=Array(
-							"msg"=>'удалится весь этот скрипт',
+							"msg"=>'СѓРґР°Р»РёС‚СЃСЏ РІРµСЃСЊ СЌС‚РѕС‚ СЃРєСЂРёРїС‚',
 							"title"=>'',
 							"onclick"=>"delete_file()",
 							"class"=>'delete_but light'
 							);
 $CustomButton['refresh']=Array(
-							"msg"=>'обнулится шаг импорта',
+							"msg"=>'РѕР±РЅСѓР»РёС‚СЃСЏ С€Р°Рі РёРјРїРѕСЂС‚Р°',
 							"title"=>'',
 							"onclick"=>"reset()",
 							"class"=>'refresh_but light'
 							);
 $CustomButton['cat_imp']=Array(
-							"msg"=>"Импорт файла, это импорт каталога",
-							"title"=>'Каталог',
+							"msg"=>"РРјРїРѕСЂС‚ С„Р°Р№Р»Р°, СЌС‚Рѕ РёРјРїРѕСЂС‚ РєР°С‚Р°Р»РѕРіР°",
+							"title"=>'РљР°С‚Р°Р»РѕРі',
 							"onclick"=>"ConfirmImport('import.xml');",
 							"class"=>'small_but'
 							);
 $CustomButton['cat_off']=Array(
-							"msg"=>"Импорт файла, это импорт предложений",
-							"title"=>'Предложения',
+							"msg"=>"РРјРїРѕСЂС‚ С„Р°Р№Р»Р°, СЌС‚Рѕ РёРјРїРѕСЂС‚ РїСЂРµРґР»РѕР¶РµРЅРёР№",
+							"title"=>'РџСЂРµРґР»РѕР¶РµРЅРёСЏ',
 							"onclick"=>"ConfirmImport('offers.xml');",
 							"class"=>'small_but'
 							);
 $CustomButton['order_import']=Array(
-							"msg"=>"Импорт файла, это импорт заказов",
-							"title"=>'Импорт заказов',
+							"msg"=>"РРјРїРѕСЂС‚ С„Р°Р№Р»Р°, СЌС‚Рѕ РёРјРїРѕСЂС‚ Р·Р°РєР°Р·РѕРІ",
+							"title"=>'РРјРїРѕСЂС‚ Р·Р°РєР°Р·РѕРІ',
 							"onclick"=>"OrderImport('ord_imp');",
 							"class"=>'small_but'
 							);
 $CustomButton['cat_comp']=Array(
-							"msg"=>"Импорт файла, это импорт сотрудников",
-							"title"=>'Сотрудники',
+							"msg"=>"РРјРїРѕСЂС‚ С„Р°Р№Р»Р°, СЌС‚Рѕ РёРјРїРѕСЂС‚ СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ",
+							"title"=>'РЎРѕС‚СЂСѓРґРЅРёРєРё',
 							"onclick"=>"ConfirmImport('company.xml');",
 							"class"=>'small_but'
 							);
 $CustomButton['iblockbut']=Array(
-							"msg"=>'создастся тип инфоблока',
-							"title"=>'создать',
+							"msg"=>'СЃРѕР·РґР°СЃС‚СЃСЏ С‚РёРї РёРЅС„РѕР±Р»РѕРєР°',
+							"title"=>'СЃРѕР·РґР°С‚СЊ',
 							"onclick"=>"CreateIBlock();",
 							"class"=>'small_but'
 							);
 $CustomButton['test_123']=Array(
-							"msg"=>'откроется FileMan',
+							"msg"=>'РѕС‚РєСЂРѕРµС‚СЃСЏ FileMan',
 							"title"=>'FileMan (shift+~)',
 							"onclick"=>"BX('test_window').style.display='block';GetFileList2('','testfileman');",
 							"class"=>'small_but'
 							);
 $CustomButton['crfile']=Array(
-							"msg"=>'будем создавть файл',
-							"title"=>'создать файл',
+							"msg"=>'Р±СѓРґРµРј СЃРѕР·РґР°РІС‚СЊ С„Р°Р№Р»',
+							"title"=>'СЃРѕР·РґР°С‚СЊ С„Р°Р№Р»',
 							"onclick"=>"CreateFile('cfilename','path_fileman','testfileman')",
 							"class"=>'small_but'
 							);
 $CustomButton['upfile']=Array(
-							"msg"=>'будем загружать файл',
-							"title"=>'загрузить файл',
+							"msg"=>'Р±СѓРґРµРј Р·Р°РіСЂСѓР¶Р°С‚СЊ С„Р°Р№Р»',
+							"title"=>'Р·Р°РіСЂСѓР·РёС‚СЊ С„Р°Р№Р»',
 							"onclick"=>"BX('upload_file').style.display='block'",
 							"class"=>'small_but'
 							);
 $CustomButton['go']=Array(
-							"msg"=>'перейти',
-							"title"=>'перейти',
+							"msg"=>'РїРµСЂРµР№С‚Рё',
+							"title"=>'РїРµСЂРµР№С‚Рё',
 							"onclick"=>"GetFileList('path_fileman','testfileman');",
 							"class"=>'small_but'
 							);
 
 
 
-//пункты контекстого меню
+//РїСѓРЅРєС‚С‹ РєРѕРЅС‚РµРєСЃС‚РѕРіРѕ РјРµРЅСЋ
 $ContextMenu=Array(
 		Array(
-				'msg'=>"файл откроется на просмотр",
+				'msg'=>"С„Р°Р№Р» РѕС‚РєСЂРѕРµС‚СЃСЏ РЅР° РїСЂРѕСЃРјРѕС‚СЂ",
 				'id'=>"view",
 				'class'=>"menu",
 				'aid'=>"v",
-				'point_name'=>"просмотр"
+				'point_name'=>"РїСЂРѕСЃРјРѕС‚СЂ"
 			),
 			Array(
-				'msg'=>"файл откроется на просмотр в UTF",
+				'msg'=>"С„Р°Р№Р» РѕС‚РєСЂРѕРµС‚СЃСЏ РЅР° РїСЂРѕСЃРјРѕС‚СЂ РІ UTF",
 				'id'=>"viewu",
 				'class'=>"menu",
 				'aid'=>"vu",
-				'point_name'=>"просмотр utf"
+				'point_name'=>"РїСЂРѕСЃРјРѕС‚СЂ utf"
 			),
 		Array(
-				'msg'=>"файл откроется на редактирование",
+				'msg'=>"С„Р°Р№Р» РѕС‚РєСЂРѕРµС‚СЃСЏ РЅР° СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ",
 				'id'=>"edit",
 				'class'=>"menu2",
 				'aid'=>"e",
-				'point_name'=>"правка"
+				'point_name'=>"РїСЂР°РІРєР°"
 			),
 
 		Array(
-				'msg'=>"файл будет удалён",
+				'msg'=>"С„Р°Р№Р» Р±СѓРґРµС‚ СѓРґР°Р»С‘РЅ",
 				'id'=>"del",
 				'class'=>"menu_del",
 				'aid'=>"d",
-				'point_name'=>"удалить"
+				'point_name'=>"СѓРґР°Р»РёС‚СЊ"
 			),
 		Array(
-				'msg'=>"это архив и он будет распакован",
+				'msg'=>"СЌС‚Рѕ Р°СЂС…РёРІ Рё РѕРЅ Р±СѓРґРµС‚ СЂР°СЃРїР°РєРѕРІР°РЅ",
 				'id'=>"unzip_",
 				'class'=>"menu_unzip",
 				'aid'=>"u",
-				'point_name'=>"распаковать"
+				'point_name'=>"СЂР°СЃРїР°РєРѕРІР°С‚СЊ"
 			),
 		Array(
-				'msg'=>"скачается файл",
+				'msg'=>"СЃРєР°С‡Р°РµС‚СЃСЏ С„Р°Р№Р»",
 				'id'=>"down",
 				'class'=>"menu_dw",
 				'aid'=>"dw",
-				'point_name'=>"скачать"
+				'point_name'=>"СЃРєР°С‡Р°С‚СЊ"
 			),
 
 );
@@ -815,7 +815,7 @@ foreach ($ContextMenu as $point)
 $mainmenu.="var ".$point['id']."=BX('".$point['aid']."');\n";
 
 
-//описание стилей окон
+//РѕРїРёСЃР°РЅРёРµ СЃС‚РёР»РµР№ РѕРєРѕРЅ
 $DefaultWinStyle=Array(
                 "width"=>'40%',
                 "border"=>'3px solid #c3d0e9;',
@@ -912,7 +912,7 @@ $EditStyle=Array(
 					"border-radius"=>"3px"
 					);
 
-//строим меню
+//СЃС‚СЂРѕРёРј РјРµРЅСЋ
 function BuildContextMenu()
 {
 	global $ContextMenu;
@@ -924,7 +924,7 @@ function BuildContextMenu()
 	<iframe id="dwframe" style="display:none" src=""></iframe>';
 }
 
-//список файлов указаной директории
+//СЃРїРёСЃРѕРє С„Р°Р№Р»РѕРІ СѓРєР°Р·Р°РЅРѕР№ РґРёСЂРµРєС‚РѕСЂРёРё
 function ShowFileSelect($listid='test',$Title='undefined',$dir,$ext='xml',$listsize=1,$DblClickAction='')
 {
 	$ifile=Array();
@@ -1023,7 +1023,7 @@ function AddWindow($NewId="newwindow",$NewName="NoNameWindow",$WorkID=false,$inn
        $inner="<div style='background-color:".$WinStyle['workcolor']."' id=".$WorkID."></div>".$button;
     if ($WinStyle['is_moveable']=='Y')
        $content.='<div id="'.$NewId.'" class="divwin_'.$NewId.' round_win"><b>'.$NewName.'</b><hr>
-               <div class="closeButton" OnMouseOver="LightOn(this,\'закроется окно\');" OnMouseOut="LightOff();" onclick="Close(\''.$NewId.'\')">X</div>';
+               <div class="closeButton" OnMouseOver="LightOn(this,\'Р·Р°РєСЂРѕРµС‚СЃСЏ РѕРєРЅРѕ\');" OnMouseOut="LightOff();" onclick="Close(\''.$NewId.'\')">X</div>';
     else
          $content.='<div id="'.$NewId.'" class="divwin_'.$NewId.' round_win"><b>'.$NewName.'</b><hr>';
     $content.=$beforeInner;
@@ -1089,7 +1089,7 @@ function AddField($NewId="newwindow",$NewName="NoNameWindow",$WorkID=false,$inne
     </script>';
     echo $content;
 }
-//удаление скрипта
+//СѓРґР°Р»РµРЅРёРµ СЃРєСЂРёРїС‚Р°
 if (@$_GET['delete']=="Y")
 {
     header("Content-type:text/html; charset=windows-1251");
@@ -1099,7 +1099,7 @@ if (@$_GET['delete']=="Y")
        text-align:center;
        color:red;
        height:30;
-       z-index:10000;'> Файла теперь нет - он удалён!</div>";
+       z-index:10000;'> Р¤Р°Р№Р»Р° С‚РµРїРµСЂСЊ РЅРµС‚ - РѕРЅ СѓРґР°Р»С‘РЅ!</div>";
     die();
 }
 
@@ -1107,7 +1107,7 @@ $UPLOAD_DIR="/".COption::GetOptionString("main", "upload_dir");
 $interval=COption::GetOptionString("catalog", "1C_INTERVAL", "-");
 if ((!$USER->IsAdmin())&&(@($_GET['mode']!='query')))
 {
-    echo 'Доступ запрещён. Вы не администратор сайта. До свидания.';
+    echo 'Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰С‘РЅ. Р’С‹ РЅРµ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°. Р”Рѕ СЃРІРёРґР°РЅРёСЏ.';
     localredirect("/404.php");
 }
 
@@ -1146,10 +1146,10 @@ if (@$_GET['action']=="createfile")
 if (@$_GET['action']=="createiblocktypeform")
 {
     $inner='<div id="successiblock"></div>
-    Введите ID типа инфоблока:<br>
+    Р’РІРµРґРёС‚Рµ ID С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР°:<br>
     <input id="iblocktype" size=45 value="support_test_iblock_type"><br>'.
-    'Выгружать в этот тип инфоблока <input type="checkbox" id="1ciblock" checked>'.AddButton('iblockbut',false,true);
-    AddWindow('iblock','Создание типа инфоблока',false,$inner,$WinStyleIBlock);
+    'Р’С‹РіСЂСѓР¶Р°С‚СЊ РІ СЌС‚РѕС‚ С‚РёРї РёРЅС„РѕР±Р»РѕРєР° <input type="checkbox" id="1ciblock" checked>'.AddButton('iblockbut',false,true);
+    AddWindow('iblock','РЎРѕР·РґР°РЅРёРµ С‚РёРїР° РёРЅС„РѕР±Р»РѕРєР°',false,$inner,$WinStyleIBlock);
     die();
 }
 
@@ -1181,14 +1181,14 @@ if(!$res)
 }
 else
 {
-    echo '<div style="color:green;border:1px dashed green;padding:5">Тип инфоблока создан успешно!';
+    echo '<div style="color:green;border:1px dashed green;padding:5">РўРёРї РёРЅС„РѕР±Р»РѕРєР° СЃРѕР·РґР°РЅ СѓСЃРїРµС€РЅРѕ!';
     $DB->Commit();
 }
 if (@$_GET['USE_IBLOCK_TYPE']=='Y')
 {
     COption::SetOptionString("catalog",'1C_IBLOCK_TYPE', $_GET['iblocktype']);
     COption::SetOptionString("catalog", "1C_USE_IBLOCK_TYPE_ID", "Y");
-    echo 'Каталог будет выгружаться в тип инфоблока '.$_GET['iblocktype'].'</div></br>';
+    echo 'РљР°С‚Р°Р»РѕРі Р±СѓРґРµС‚ РІС‹РіСЂСѓР¶Р°С‚СЊСЃСЏ РІ С‚РёРї РёРЅС„РѕР±Р»РѕРєР° '.$_GET['iblocktype'].'</div></br>';
 }
 else
     echo '</div></br>';
@@ -1231,7 +1231,7 @@ if ($_REQUEST['action']=='xmlgetinfo')
 	$string=fgets($f);
 	$string=$APPLICATION->ConvertCharset($string,$cdata['encoding'],'windows-1251');
 	echo $string;
-	preg_match('/<КоммерческаяИнформация/is',$string, $matches);
+	preg_match('/<РљРѕРјРјРµСЂС‡РµСЃРєР°СЏРРЅС„РѕСЂРјР°С†РёСЏ/is',$string, $matches);
 	$cdata['version']=$matches[1];
 	print_r($matches);
 	die();
@@ -1342,7 +1342,7 @@ if(@$_GET['action']=="getfiles")
 
                     <img src='/bitrix/images/fileman/file.gif'>
                     <a id="<?=$id?>" style="font-size:12;" href="javascript:ShowFile('<?=$file?>','<?=$realpath?>','N')" oncontextmenu="return ShowMenu(event);" OnMouseOver="LinkLightOn('<?=$id?>','#1C1C1C');" OnMouseOut="LinkLightOff();" href="#" onmousedown="moveState = false;" onmousemove="moveState = false;"><?if (strlen($file)>50) echo substr($file,0,-(strlen($file)-8))."...".substr($file,-4); else echo $file;?></a>
-                    <a  style="color:red;font-size:10;" href=javascript:Delete('<?=$file?>','<?=$wa?>') OnMouseOver="LightOn(this,'! удалится <b> <?=$file?></b> !');" OnMouseOut=LightOff()>[X]</a><a style="color:green;font-size:10;" href=javascript:ShowInfo('<?=$realpath.$file?>') OnMouseOver="LightOn(this,'отобразится информация по <b> <?=$file?></b>');" OnMouseOut=LightOff()>[!]</a>
+                    <a  style="color:red;font-size:10;" href=javascript:Delete('<?=$file?>','<?=$wa?>') OnMouseOver="LightOn(this,'! СѓРґР°Р»РёС‚СЃСЏ <b> <?=$file?></b> !');" OnMouseOut=LightOff()>[X]</a><a style="color:green;font-size:10;" href=javascript:ShowInfo('<?=$realpath.$file?>') OnMouseOver="LightOn(this,'РѕС‚РѕР±СЂР°Р·РёС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ РїРѕ <b> <?=$file?></b>');" OnMouseOut=LightOff()>[!]</a>
                     </div>
                     <?endif;?>
                     <?
@@ -1356,7 +1356,7 @@ if(@$_GET['action']=="getfiles")
     echo '</div>';
     die();
 }
-//распаковка файла
+//СЂР°СЃРїР°РєРѕРІРєР° С„Р°Р№Р»Р°
 if (@$_POST['action']=="unzip")
 {
     $zip = $_POST['filename'];
@@ -1366,7 +1366,7 @@ if (@$_POST['action']=="unzip")
     die();
 }
 
-//грузим  любой файл в указанную папку
+//РіСЂСѓР·РёРј  Р»СЋР±РѕР№ С„Р°Р№Р» РІ СѓРєР°Р·Р°РЅРЅСѓСЋ РїР°РїРєСѓ
 if (@$_GET['upload']=="Y")
 {
     if(is_array($_FILES['test_file']))
@@ -1384,31 +1384,31 @@ if (@$_GET['upload']=="Y")
                 echo "error";
                 echo '<br>';
     }
-    //форма для загрузки файла на сервер
+    //С„РѕСЂРјР° РґР»СЏ Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»Р° РЅР° СЃРµСЂРІРµСЂ
     if (isset($_POST['test_file']))
-       echo "Файл ".$_POST['test_file']." загружен";
+       echo "Р¤Р°Р№Р» ".$_POST['test_file']." Р·Р°РіСЂСѓР¶РµРЅ";
     echo "<div style='background-color:#FFE4B5'>
     <form action='".$script_name."?upload=Y' method=post enctype='multipart/form-data'>
     <input onmousedown='moveState = false;' onmousemove='moveState = false;' type='file' name='test_file'>
-    <input type='submit' value='загрузить' name='upload_file'>
+    <input type='submit' value='Р·Р°РіСЂСѓР·РёС‚СЊ' name='upload_file'>
     </form></div>
     ";
     die();
 }
-//поиск элемента в файле и на сайте по XML_ID
+//РїРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РІ С„Р°Р№Р»Рµ Рё РЅР° СЃР°Р№С‚Рµ РїРѕ XML_ID
 if (isset($_GET['search']))
 {
 	if ($_GET['iblock']=="Y")
 	{
 		  CModule::IncludeModule("iblock");
 		$check=CIBlock::GetList(Array(),Array("XML_ID"=>'%'.$_GET['search'].'%'));
-		    if (!$check) echo 'на сайте таких нет';
+		    if (!$check) echo 'РЅР° СЃР°Р№С‚Рµ С‚Р°РєРёС… РЅРµС‚';
 		while($res=$check->Fetch())
 		{
 	//	/bitrix/admin/iblock_edit.php?type=1c_catalog&ID=23&admin=Y
-			echo "Название - <em>".$res['NAME']."</em><br>
-			Внешний код - <em>".$res['XML_ID']."</em><br>
-			<a style=\"float:right\" href='/bitrix/admin/iblock_edit.php?type=".$res['IBLOCK_TYPE_ID']."&ID=".$res['ID']."&admin=Y'>перейти</a><br clear='both'>
+			echo "РќР°Р·РІР°РЅРёРµ - <em>".$res['NAME']."</em><br>
+			Р’РЅРµС€РЅРёР№ РєРѕРґ - <em>".$res['XML_ID']."</em><br>
+			<a style=\"float:right\" href='/bitrix/admin/iblock_edit.php?type=".$res['IBLOCK_TYPE_ID']."&ID=".$res['ID']."&admin=Y'>РїРµСЂРµР№С‚Рё</a><br clear='both'>
 			<hr>";
 		}
 		die();
@@ -1416,13 +1416,13 @@ if (isset($_GET['search']))
     $q=$_GET['search'];
     CModule::IncludeModule("iblock");
     $check=CIBlockElement::GetList(Array(),Array("EXTERNAL_ID"=>$q));
-    if (!$check) echo 'на сайте таких нет';
+    if (!$check) echo 'РЅР° СЃР°Р№С‚Рµ С‚Р°РєРёС… РЅРµС‚';
     while($res=$check->Fetch())
-    echo 'IBLOCK_ID='.$res["IBLOCK_ID"].' <a href="/bitrix/admin/iblock_element_edit.php?ID='.$res["ID"].'&IBLOCK_ID='.$res["IBLOCK_ID"].'&type='.$res["IBLOCK_TYPE_ID"].'" target="_blank">Перейти</a><br>';
+    echo 'IBLOCK_ID='.$res["IBLOCK_ID"].' <a href="/bitrix/admin/iblock_element_edit.php?ID='.$res["ID"].'&IBLOCK_ID='.$res["IBLOCK_ID"].'&type='.$res["IBLOCK_TYPE_ID"].'" target="_blank">РџРµСЂРµР№С‚Рё</a><br>';
     die();
 }
 
-//получение  текста xml-файла, который будет переправлен с сайта в 1С при следующем обмене.
+//РїРѕР»СѓС‡РµРЅРёРµ  С‚РµРєСЃС‚Р° xml-С„Р°Р№Р»Р°, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРµСЂРµРїСЂР°РІР»РµРЅ СЃ СЃР°Р№С‚Р° РІ 1РЎ РїСЂРё СЃР»РµРґСѓСЋС‰РµРј РѕР±РјРµРЅРµ.
 if($_GET["mode"] == "query")
 {
     CModule::IncludeModule("sale");
@@ -1473,7 +1473,7 @@ if($_GET["mode"] == "query")
         fwrite ($f,$xml);
         fclose($f);
         $xml=trim($xml);
-        echo '<pre style="background:white; text-align:right">текст xml-файла, который будет передан в 1С при следующем обмене</pre>';
+        echo '<pre style="background:white; text-align:right">С‚РµРєСЃС‚ xml-С„Р°Р№Р»Р°, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РїРµСЂРµРґР°РЅ РІ 1РЎ РїСЂРё СЃР»РµРґСѓСЋС‰РµРј РѕР±РјРµРЅРµ</pre>';
         echo '<div onmousedown="moveState = false;" onmousemove="moveState = false;" style="overflow-y:scroll;height:90%;width:100%;background:white;">';
         highlight_string($xml);
         echo '</div>';
@@ -1515,11 +1515,11 @@ if ($_GET["action"]=="show_bxmltree")
     die();
 }
 
-//вывод содержимого файлов
+//РІС‹РІРѕРґ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ С„Р°Р№Р»РѕРІ
 if ($_GET["mode"]=="show_xml")
 {
     $filename=$_SERVER['DOCUMENT_ROOT'].$_GET["path"].$_GET["file"];
-    echo '<pre style="background:white; text-align:left">Редактировать: <a href="/bitrix/admin/fileman_file_edit.php?path='.$_GET["path"].$_GET["file"].'&full_src=Y" target="_blank">'.$filename.'</a></pre>';
+    echo '<pre style="background:white; text-align:left">Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ: <a href="/bitrix/admin/fileman_file_edit.php?path='.$_GET["path"].$_GET["file"].'&full_src=Y" target="_blank">'.$filename.'</a></pre>';
     if (isset($_GET["path"]))
         $filename=$_SERVER['DOCUMENT_ROOT'].$_GET["path"].$_GET["file"]; else
     $filename=$_SERVER['DOCUMENT_ROOT'].$UPLOAD_DIR."/1c_catalog/".$_GET["file"];
@@ -1531,7 +1531,7 @@ if ($_GET["mode"]=="show_xml")
     }
     $xml = file_get_contents($filename);
     if (!$xml)
-        echo "Нет такого файла";
+        echo "РќРµС‚ С‚Р°РєРѕРіРѕ С„Р°Р№Р»Р°";
     if(@$_GET['isutf']=='Y')
         $xml=$APPLICATION->ConvertCharset($xml,"UTF-8","windows-1251");
     elseif (ToUpper(SITE_CHARSET)!='WINDOWS-1251')
@@ -1541,12 +1541,12 @@ if ($_GET["mode"]=="show_xml")
     {
         if (round(filesize($_SERVER['DOCUMENT_ROOT'].$UPLOAD_DIR."/1c_catalog/".$_GET['offers'])/1024,2)<2000)
         {
-            $pattern=Array('/Товар/','/ЗначенияСвойства/');
-            $replacements=Array("<b style='color:red'>Товар</b>","<b style='color:green'>ЗначенияСвойства</b>");
+            $pattern=Array('/РўРѕРІР°СЂ/','/Р—РЅР°С‡РµРЅРёСЏРЎРІРѕР№СЃС‚РІР°/');
+            $replacements=Array("<b style='color:red'>РўРѕРІР°СЂ</b>","<b style='color:green'>Р—РЅР°С‡РµРЅРёСЏРЎРІРѕР№СЃС‚РІР°</b>");
             $buffer=preg_replace($pattern, $replacements, $buffer);
         }
         if (!$f=fopen($_SERVER['DOCUMENT_ROOT'].$_GET["path"].$_GET["file"],'a'))
-            $WriteError="<p style='font-size:10px;color:red;'>Открыть на запись файл не удастся!</p>";
+            $WriteError="<p style='font-size:10px;color:red;'>РћС‚РєСЂС‹С‚СЊ РЅР° Р·Р°РїРёСЃСЊ С„Р°Р№Р» РЅРµ СѓРґР°СЃС‚СЃСЏ!</p>";
         fclose($f);
         return '
 
@@ -1575,7 +1575,7 @@ echo '<pre style="background:white; text-align:right"><a href="/bitrix/admin/fil
     }
     $xml = file_get_contents($filename);
 
-    if (!$xml) echo "Нет такого файла";
+    if (!$xml) echo "РќРµС‚ С‚Р°РєРѕРіРѕ С„Р°Р№Р»Р°";
     if(@$_GET['isutf']=='Y')
             $xml=$APPLICATION->ConvertCharset($xml,"UTF-8","windows-1251");
     elseif (ToUpper(SITE_CHARSET)!='WINDOWS-1251')
@@ -1587,10 +1587,10 @@ echo '<pre style="background:white; text-align:right"><a href="/bitrix/admin/fil
     <table>
     <tr>
             <td>
-                    <div onmousedown="moveState = false;" onmousemove="moveState = false;" id="savefile" align="center"  onclick="SaveFile('<?=$_GET["path"].$_GET["file"]?>')" OnMouseOver="LightOn(this,'сделанные изменения будут сохранены');" OnMouseOut="LightOff()"; class="small_but">Сохранить</div>
+                    <div onmousedown="moveState = false;" onmousemove="moveState = false;" id="savefile" align="center"  onclick="SaveFile('<?=$_GET["path"].$_GET["file"]?>')" OnMouseOver="LightOn(this,'СЃРґРµР»Р°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅРёСЏ Р±СѓРґСѓС‚ СЃРѕС…СЂР°РЅРµРЅС‹');" OnMouseOut="LightOff()"; class="small_but">РЎРѕС…СЂР°РЅРёС‚СЊ</div>
             </td>
             <td>
-                    <div onmousedown="moveState = false;" onmousemove="moveState = false;" id="viewfile" align="center"  onclick="ShowFile('<?=$_GET["file"]?>','<?=$_GET["path"]?>','N')" OnMouseOver="LightOn(this,'переход в режим просмотра текущего файла');" OnMouseOut="LightOff()"; class="small_but">Посмотреть</div>
+                    <div onmousedown="moveState = false;" onmousemove="moveState = false;" id="viewfile" align="center"  onclick="ShowFile('<?=$_GET["file"]?>','<?=$_GET["path"]?>','N')" OnMouseOver="LightOn(this,'РїРµСЂРµС…РѕРґ РІ СЂРµР¶РёРј РїСЂРѕСЃРјРѕС‚СЂР° С‚РµРєСѓС‰РµРіРѕ С„Р°Р№Р»Р°');" OnMouseOut="LightOff()"; class="small_but">РџРѕСЃРјРѕС‚СЂРµС‚СЊ</div>
             </td>
     </tr>
     </table>
@@ -1614,7 +1614,7 @@ echo '<pre style="background:white; text-align:right"><a href="/bitrix/admin/fil
 		fclose($f);
 		die();
 	}
-//проверка файла,  не существует или нет прав на чтение?
+//РїСЂРѕРІРµСЂРєР° С„Р°Р№Р»Р°,  РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РёР»Рё РЅРµС‚ РїСЂР°РІ РЅР° С‡С‚РµРЅРёРµ?
 if (@$_GET['check_file']=="Y")
 {
     unset($_SESSION["BX_CML2_IMPORT"]);
@@ -1622,9 +1622,9 @@ if (@$_GET['check_file']=="Y")
     if(file_exists($_SERVER['DOCUMENT_ROOT'].$UPLOAD_DIR."/1c_catalog/".$_GET['file'])) $c=$c+2;
     else $c=$c+3;
     if($c==2)
-        echo "<div style='width:270;font-size:11;border-left:1px solid black;border-right:1px solid black;border-bottom:1px solid black;background-color:FA8072;padding:5'>Нет прав на чтение файла!</div>";
+        echo "<div style='width:270;font-size:11;border-left:1px solid black;border-right:1px solid black;border-bottom:1px solid black;background-color:FA8072;padding:5'>РќРµС‚ РїСЂР°РІ РЅР° С‡С‚РµРЅРёРµ С„Р°Р№Р»Р°!</div>";
     if ($c==3)
-        echo "<div style='width:270;font-size:11;border-left:1px solid black;border-right:1px solid black;border-bottom:1px solid black;background-color:FA8072;padding:5'>Файла ".$_GET['file']." не сущестует!</div>";
+        echo "<div style='width:270;font-size:11;border-left:1px solid black;border-right:1px solid black;border-bottom:1px solid black;background-color:FA8072;padding:5'>Р¤Р°Р№Р»Р° ".$_GET['file']." РЅРµ СЃСѓС‰РµСЃС‚СѓРµС‚!</div>";
     die();
 }
 
@@ -1632,28 +1632,28 @@ $items[0]=Array();
 $group[0]=Array();
 $c_offers[0]=Array();
 
-//получение  информации по количеству групп, товаров и предложений, путём анализа файлов каталога и предложений
+//РїРѕР»СѓС‡РµРЅРёРµ  РёРЅС„РѕСЂРјР°С†РёРё РїРѕ РєРѕР»РёС‡РµСЃС‚РІСѓ РіСЂСѓРїРї, С‚РѕРІР°СЂРѕРІ Рё РїСЂРµРґР»РѕР¶РµРЅРёР№, РїСѓС‚С‘Рј Р°РЅР°Р»РёР·Р° С„Р°Р№Р»РѕРІ РєР°С‚Р°Р»РѕРіР° Рё РїСЂРµРґР»РѕР¶РµРЅРёР№
 if (@$_GET['info']=="Y")
 {
     $content=file_get_contents($_SERVER['DOCUMENT_ROOT'].$_GET['file']);
-    $offer=iconv("WINDOWS-1251", "UTF-8", '<Предложение>');
-    //	$product=iconv("WINDOWS-1251", "UTF-8", '<Товар>');
-    $section=iconv("WINDOWS-1251", "UTF-8", '<Группа>');
+    $offer=iconv("WINDOWS-1251", "UTF-8", '<РџСЂРµРґР»РѕР¶РµРЅРёРµ>');
+    //	$product=iconv("WINDOWS-1251", "UTF-8", '<РўРѕРІР°СЂ>');
+    $section=iconv("WINDOWS-1251", "UTF-8", '<Р“СЂСѓРїРїР°>');
     preg_match_all('/'.$product.'/', $content , $items);
     preg_match_all('/'.$section.'/', $content , $group);
     preg_match_all('/'.$offer.'/', $content, $c_offers);
     $file_size=round(filesize($_SERVER['DOCUMENT_ROOT'].$_GET['file'])/1024,2);
     ?>
 
-    <table style="font-size:11;" cellpadding="0"><tr><td align="right">Размер файла: </td><td><b><?=$file_size.' kb';?></b> | </td>
-    <td align="right" >Предложений: </td><td><b><?=count($c_offers[0]);?></b> | </td>
-    <td align="right">Товаров: </td><td><b><?=count($items[0]);?></b> | </td>
-    <td align="right">Групп: </td><td><b><?=count($group[0]);?></b></td></tr>
+    <table style="font-size:11;" cellpadding="0"><tr><td align="right">Р Р°Р·РјРµСЂ С„Р°Р№Р»Р°: </td><td><b><?=$file_size.' kb';?></b> | </td>
+    <td align="right" >РџСЂРµРґР»РѕР¶РµРЅРёР№: </td><td><b><?=count($c_offers[0]);?></b> | </td>
+    <td align="right">РўРѕРІР°СЂРѕРІ: </td><td><b><?=count($items[0]);?></b> | </td>
+    <td align="right">Р“СЂСѓРїРї: </td><td><b><?=count($group[0]);?></b></td></tr>
     </table>
     <?	die();
 }
 
-//смена метки времени последнего обмена
+//СЃРјРµРЅР° РјРµС‚РєРё РІСЂРµРјРµРЅРё РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР°
 if (!$_REQUEST['path1']==''):
     $path_companent = substr($_REQUEST['path1'], 0, 22);
     $full_path=$_REQUEST['path1'];
@@ -1684,7 +1684,7 @@ if (isset($_REQUEST['AJAX']))
 	die();
 }
 
-//получнеие списка заказов, которые будут выгружены в 1с при следующем обмене
+//РїРѕР»СѓС‡РЅРµРёРµ СЃРїРёСЃРєР° Р·Р°РєР°Р·РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РІС‹РіСЂСѓР¶РµРЅС‹ РІ 1СЃ РїСЂРё СЃР»РµРґСѓСЋС‰РµРј РѕР±РјРµРЅРµ
 if (isset($_REQUEST['check'])):
 	CModule::IncludeModule("sale");
 	$path_companent = substr($_REQUEST['path'], 0, 22);
@@ -1702,21 +1702,21 @@ if (isset($_REQUEST['check'])):
 						array("ID", "LID", "PERSON_TYPE_ID", "PAYED", "DATE_PAYED", "EMP_PAYED_ID", "CANCELED", "DATE_CANCELED", "EMP_CANCELED_ID", "REASON_CANCELED", "STATUS_ID", "DATE_STATUS", "PAY_VOUCHER_NUM", "PAY_VOUCHER_DATE", "EMP_STATUS_ID", "PRICE_DELIVERY", "ALLOW_DELIVERY", "DATE_ALLOW_DELIVERY", "EMP_ALLOW_DELIVERY_ID", "PRICE", "CURRENCY", "DISCOUNT_VALUE", "SUM_PAID", "USER_ID", "PAY_SYSTEM_ID", "DELIVERY_ID", "DATE_INSERT", "DATE_INSERT_FORMAT", "DATE_UPDATE", "USER_DESCRIPTION", "ADDITIONAL_INFO", "PS_STATUS", "PS_STATUS_CODE", "PS_STATUS_DESCRIPTION", "PS_STATUS_MESSAGE", "PS_SUM", "PS_CURRENCY", "PS_RESPONSE_DATE", "COMMENTS", "TAX_VALUE", "STAT_GID", "RECURRING_ID")
 					);
 ?>
-	Изменения в заказах <hr>
-	<div style="font-size:12;padding:3;background: white;"> Дата последнего обмена - <?=$arFilter[">=DATE_UPDATE"]?></div>
+	РР·РјРµРЅРµРЅРёСЏ РІ Р·Р°РєР°Р·Р°С… <hr>
+	<div style="font-size:12;padding:3;background: white;"> Р”Р°С‚Р° РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР° - <?=$arFilter[">=DATE_UPDATE"]?></div>
 	<br>
 <?	$n=0;
 	echo '<div style="font-size:11;padding:3;background: white;">';
 	while($arOrder = $dbOrderList->Fetch())
 	{
 		$n++;
-		echo '<a href="/bitrix/admin/sale_order_detail.php?ID='.$arOrder["ID"].'" target="_blank" >Заказ №'.$arOrder["ID"].'</a>';
-		echo ' - дата именения ',$arOrder["DATE_UPDATE"];
+		echo '<a href="/bitrix/admin/sale_order_detail.php?ID='.$arOrder["ID"].'" target="_blank" >Р—Р°РєР°Р· в„–'.$arOrder["ID"].'</a>';
+		echo ' - РґР°С‚Р° РёРјРµРЅРµРЅРёСЏ ',$arOrder["DATE_UPDATE"];
 		echo '<br>';
 		$change=true;
 	}
-	if (!$change) echo "На сайте нет заказов, изменённых после даты последнего обмена с 1С!!!";
-	echo '<br><b>ВСЕГО ЗАКАЗОВ: '.$n.'</b><br>';
+	if (!$change) echo "РќР° СЃР°Р№С‚Рµ РЅРµС‚ Р·Р°РєР°Р·РѕРІ, РёР·РјРµРЅС‘РЅРЅС‹С… РїРѕСЃР»Рµ РґР°С‚С‹ РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР° СЃ 1РЎ!!!";
+	echo '<br><b>Р’РЎР•Р“Рћ Р—РђРљРђР—РћР’: '.$n.'</b><br>';
 	echo "</div>";
 	die();
 endif;
@@ -1726,8 +1726,8 @@ if (isset($_REQUEST['setstep']))
 	echo $_SESSION["BX_CML2_IMPORT"]["NS"]["STEP"];
 	die();
 }
-unset($_SESSION["BX_CML2_IMPORT"]);//сброс шага импорта
-$host='http://'.$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];//хост
+unset($_SESSION["BX_CML2_IMPORT"]);//СЃР±СЂРѕСЃ С€Р°РіР° РёРјРїРѕСЂС‚Р°
+$host='http://'.$_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];//С…РѕСЃС‚
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -2444,8 +2444,8 @@ ob_start();
 <table class="file_panel" width=100%>
 <tr>
 <td class="auth_form_text">
-<input id=search_str placeholder="фильтр" style='width:90%;margin-bottom:2px;'  name='search_str' OnChange=GetFileList('path_fileman','testfileman') value='<?if(isset($_SESSION['bx_1c_import']['filter'])) echo $_SESSION['bx_1c_import']['filter'].'\'>'; else echo '\'>'?><br>
-<input placeholder="путь"  onmousedown="moveState = false;" onmousemove="moveState = false;" OnChange="GetFileList('path_fileman','testfileman');" id="path_fileman" style="width:90%;" name="path_fileman" value='<?if(isset($_SESSION['bx_1c_import']['path'])) echo $_SESSION['bx_1c_import']['path']; else echo $UPLOAD_DIR.'/1c_catalog/';?>'>
+<input id=search_str placeholder="С„РёР»СЊС‚СЂ" style='width:90%;margin-bottom:2px;'  name='search_str' OnChange=GetFileList('path_fileman','testfileman') value='<?if(isset($_SESSION['bx_1c_import']['filter'])) echo $_SESSION['bx_1c_import']['filter'].'\'>'; else echo '\'>'?><br>
+<input placeholder="РїСѓС‚СЊ"  onmousedown="moveState = false;" onmousemove="moveState = false;" OnChange="GetFileList('path_fileman','testfileman');" id="path_fileman" style="width:90%;" name="path_fileman" value='<?if(isset($_SESSION['bx_1c_import']['path'])) echo $_SESSION['bx_1c_import']['path']; else echo $UPLOAD_DIR.'/1c_catalog/';?>'>
 </td>
 </tr>
 <tr><td colspan=2 align=left>
@@ -2460,15 +2460,15 @@ ob_end_clean();
 $afterinner='<hr><div id="info">----</div>';
 
 $inner='<table cellspacing="0" cellpadding="0" style="width:100%;font-size:10px;"><tr><td>
-<div id="testfileman" class="file_panel">загрузка...</disv></td>
+<div id="testfileman" class="file_panel">Р·Р°РіСЂСѓР·РєР°...</disv></td>
 <td class="file_panel" valign=top width=100>
-<input type=checkbox id=isdir>папку<br>
+<input type=checkbox id=isdir>РїР°РїРєСѓ<br>
 <input  id=cfilename style="font-size:11px; onmousedown="moveState = false;" onmousemove="moveState = false;" value=\'bx_test.php\'>'.AddButton('crfile',false,true).'<hr>'.AddButton('upfile',false,true).'</td>
 </tr>
 </table>';
 
-AddWindow("test_window","Файловая структура",'testsfileman',$inner,false,"",false,$beforeInner,$afterinner);
-AddWindow("upload_file","Загрузка файла файл",'upload_file_id','<iframe id="file_panel"  height=150 src="'.$script_name.'?upload=Y"></iframe>',$DefaultWinStyleSmall);
+AddWindow("test_window","Р¤Р°Р№Р»РѕРІР°СЏ СЃС‚СЂСѓРєС‚СѓСЂР°",'testsfileman',$inner,false,"",false,$beforeInner,$afterinner);
+AddWindow("upload_file","Р—Р°РіСЂСѓР·РєР° С„Р°Р№Р»Р° С„Р°Р№Р»",'upload_file_id','<iframe id="file_panel"  height=150 src="'.$script_name.'?upload=Y"></iframe>',$DefaultWinStyleSmall);
 ?>
 
 </div>
@@ -2476,11 +2476,11 @@ AddWindow("upload_file","Загрузка файла файл",'upload_file_id','<iframe id="file
 
 
 <div id='ind_'style="width:300px;display:none;left:360px;padding:1px;z-index:10000;position:absolute;background-color:#EEE8CD;border:1px solid grey;height:30px;cursor:move;">
-<div>Прогресс выполнения шага импорта...</div>
+<div>РџСЂРѕРіСЂРµСЃСЃ РІС‹РїРѕР»РЅРµРЅРёСЏ С€Р°РіР° РёРјРїРѕСЂС‚Р°...</div>
 <div id='indicate' style="width:0;background-color:green;border:none;z-index:1;height:10;text-align:center;"></div>
 </div><br>
 <div id="main_info" class="divwin_info round_win">
-<b>Поиск по XML_ID</b><hr>
+<b>РџРѕРёСЃРє РїРѕ XML_ID</b><hr>
 <div class="closeButton" onclick="Close('main_info')">X</div>
 <table>
 
@@ -2490,14 +2490,14 @@ AddWindow("upload_file","Загрузка файла файл",'upload_file_id','<iframe id="file
 		<table style='width:310px;font-size:11px;border:1px solid #ADC3D5;background-color:white;'>
 							<tr>
 						<td align="left">
-Инфоблок<br>
+РРЅС„РѕР±Р»РѕРє<br>
 <input style="font-size:11px" size=40 id="q_iblock" type="text" name="search_iblock" value="XML_ID">
 <?AddButton('searchbutton_iblock');?>
 						</td>
 					</tr>
 					<tr>
 						<td align="left">
-Элемент<br>
+Р­Р»РµРјРµРЅС‚<br>
 										<input style="font-size:11px" size=40 id="q" type="text" name="search" value="XML_ID">
 										<?AddButton('searchbutton');?>
 						</td>
@@ -2514,42 +2514,42 @@ AddWindow("upload_file","Загрузка файла файл",'upload_file_id','<iframe id="file
 </div>
 
 <div class="divwin round_win" id="log3">
-<b>Лог импорта файла</b>
+<b>Р›РѕРі РёРјРїРѕСЂС‚Р° С„Р°Р№Р»Р°</b>
 <hr>
-<div class="closeButton" onclick="winClose()">Х</div>
+<div class="closeButton" onclick="winClose()">РҐ</div>
 <div id="log" style='font-size:10px;padding:3px;background: white;overflow-y:scroll;height:300px'></div>
 <div id="timer" style='font-size:12px;padding:5px;background: white;'></div>
 </div>
 
 <div id="param" class="divwin_param round_win" onselectstart="return false" >
 <div class="closeButton" onclick="Close('param')">X</div>
-<b>Проверка выгрузки заказов</b><hr>
+<b>РџСЂРѕРІРµСЂРєР° РІС‹РіСЂСѓР·РєРё Р·Р°РєР°Р·РѕРІ</b><hr>
 <div style="background-color:white;border-top:1px solid #ADC3D5;font-size:11px;padding:5px;">
 <table align="center" width="100%">
 <tr><td COLSPAN=2>
-<b>Настройки выгрузки</b>
+<b>РќР°СЃС‚СЂРѕР№РєРё РІС‹РіСЂСѓР·РєРё</b>
 	<hr>
-<input id="PAYED" type="checkbox" <?if(isset($_POST['PAYED'])) echo "checked";?> value='Y' name="PAYED"> Оплаченные|<input onmousedown="moveState = false;" onmousemove="moveState = false;" id="DELIVERY" type="checkbox" <?if (isset($_POST['ALLOW_DELIVERY'])) echo "checked";?> value='Y' name="ALLOW_DELIVERY">Доставленные
+<input id="PAYED" type="checkbox" <?if(isset($_POST['PAYED'])) echo "checked";?> value='Y' name="PAYED"> РћРїР»Р°С‡РµРЅРЅС‹Рµ|<input onmousedown="moveState = false;" onmousemove="moveState = false;" id="DELIVERY" type="checkbox" <?if (isset($_POST['ALLOW_DELIVERY'])) echo "checked";?> value='Y' name="ALLOW_DELIVERY">Р”РѕСЃС‚Р°РІР»РµРЅРЅС‹Рµ
 </td></tr>
 <tr>
 <td class="auth_form_text">
-Путь:<br>
+РџСѓС‚СЊ:<br>
 <input id="path"
 type="text" size="40" value="<?=$catalog_import_path;?>" name="path"></td>
 </tr>
 
 
 <tr><td COLSPAN=2 align="center">
-<input type="button" class="small_but" OnClick="GetOrders()" value="Проверить"></td></tr>
+<input type="button" class="small_but" OnClick="GetOrders()" value="РџСЂРѕРІРµСЂРёС‚СЊ"></td></tr>
 
     <tr>
 
 	<td COLSPAN=2 class="auth_form_text">
 	<hr>
-	<b>Дата последнего обмена</b>
+	<b>Р”Р°С‚Р° РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР°</b>
 	<hr>
 
-    <input id="date_e" placeholder = "дата поледнего обмена в формате сайта" type="text" size="40" value="<?=ConvertTimeStamp(COption::GetOptionString("sale", "last_export_time_committed_".substr($catalog_import_path, 0, 22), ""), "FULL");?>" name="date_e"></td>
+    <input id="date_e" placeholder = "РґР°С‚Р° РїРѕР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР° РІ С„РѕСЂРјР°С‚Рµ СЃР°Р№С‚Р°" type="text" size="40" value="<?=ConvertTimeStamp(COption::GetOptionString("sale", "last_export_time_committed_".substr($catalog_import_path, 0, 22), ""), "FULL");?>" name="date_e"></td>
     </tr>
 	<tr><td COLSPAN=2 align="center"><?=AddButton('change1',false,true)?></td></tr>
 </table>
@@ -2580,23 +2580,23 @@ AddButton('delete');
 ?>
 </div>
 <?
-echo '<hr><div  style="padding:4px;text-align:center;background:#d8dcf0;width:124px;">Основное меню</div>';
+echo '<hr><div  style="padding:4px;text-align:center;background:#d8dcf0;width:124px;">РћСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ</div>';
 foreach($MenuArray as $key=>$value)
 AddButton($key,true);
 
 ?>
 <hr>
-<div style="padding:4px;text-align:center;background:#d8dcf0">Заказы</div>
-<div class="small_but" align=center OnClick="SaveMe('<?=$host;?>')"> XML-файл заказов</div>
+<div style="padding:4px;text-align:center;background:#d8dcf0">Р—Р°РєР°Р·С‹</div>
+<div class="small_but" align=center OnClick="SaveMe('<?=$host;?>')"> XML-С„Р°Р№Р» Р·Р°РєР°Р·РѕРІ</div>
 
-   <div class="small_but" align=center onclick="javascript:_BlankXML('<?='view-source:'.$host.'?mode=query'?>')" OnMouseOver="LightOn(this,'будет открыто <b>отдельное</b> окно с текстом xml-файла заказов, которые отдаст сайт 1с-ке при следующем обмене заказаим с 1С')" OnMouseOut="LightOff()">XML в отдельном окне</div>
+   <div class="small_but" align=center onclick="javascript:_BlankXML('<?='view-source:'.$host.'?mode=query'?>')" OnMouseOver="LightOn(this,'Р±СѓРґРµС‚ РѕС‚РєСЂС‹С‚Рѕ <b>РѕС‚РґРµР»СЊРЅРѕРµ</b> РѕРєРЅРѕ СЃ С‚РµРєСЃС‚РѕРј xml-С„Р°Р№Р»Р° Р·Р°РєР°Р·РѕРІ, РєРѕС‚РѕСЂС‹Рµ РѕС‚РґР°СЃС‚ СЃР°Р№С‚ 1СЃ-РєРµ РїСЂРё СЃР»РµРґСѓСЋС‰РµРј РѕР±РјРµРЅРµ Р·Р°РєР°Р·Р°РёРј СЃ 1РЎ')" OnMouseOut="LightOff()">XML РІ РѕС‚РґРµР»СЊРЅРѕРј РѕРєРЅРµ</div>
 </div>
 <br clear="both" />
 <br>
 <?if (file_exists($_SERVER["DOCUMENT_ROOT"]."/import_element_log.txt")) $display='block';
 else $display='none';?>
 
-<div id="element_log" class='left_panel' style="display:<?=$display?>"><a href='javascript:ShowFile("import_element_log.txt","/","N")'>посмотреть лог</a><span onclick='javascript:Delete("import_element_log.txt","","/");this.parentNode.style.display="none";'> X</span></div>
+<div id="element_log" class='left_panel' style="display:<?=$display?>"><a href='javascript:ShowFile("import_element_log.txt","/","N")'>РїРѕСЃРјРѕС‚СЂРµС‚СЊ Р»РѕРі</a><span onclick='javascript:Delete("import_element_log.txt","","/");this.parentNode.style.display="none";'> X</span></div>
 			</td>
 </tr>
 	<tr>
@@ -2615,7 +2615,7 @@ else $display='none';?>
 		</td></tr>
 </table>
 <div id="load" align="right" style='border:1px solid black;width:200px;z-index:10000;font-size:15px;position:fixed;top:85%;background-color:white;display:none;'>
-Загрузка...
+Р—Р°РіСЂСѓР·РєР°...
 </div>
 
 
@@ -2624,17 +2624,17 @@ else $display='none';?>
 </div>
 
 <div id="menu_2" style="z-index:7000;display:none;background:white;border:1px solid #B0C4DE;">
-	<button class = "small_but_m" OnClick="GetXmlInfo();" style="border:1px solid #B0C4DE" id='checkiblock' >Куда выгружается?</button><br>
-	<div style="text-align:center;background:black;color:white;padding:2px;">Шаг импорта</div>
-	<button class="small_but_m" OnClick="StartStep(0)">Удаление таблицы</button><br>
-	<button class="small_but_m" OnClick="StartStep(1)">Создание таблицы</button><br>
-	<button class="small_but_m" OnClick="StartStep(2)">Импорт втаблицу</button><br>
-	<button class="small_but_m" OnClick="StartStep(3)">Создание индекса</button><br>
-	<button class="small_but_m" OnClick="StartStep(4)">Импорт метаданных</button><br>
-	<button class="small_but_m" OnClick="StartStep(5)">Импорт секций</button><br>
-	<button class="small_but_m" OnClick="StartStep(6)">Удаление секций</button><br>
-	<button class="small_but_m" OnClick="StartStep(7)">Обработка элементов</button><br>
-	<button class="small_but_m" OnClick="StartStep(8)">Удаление элементов</button><br>
+	<button class = "small_but_m" OnClick="GetXmlInfo();" style="border:1px solid #B0C4DE" id='checkiblock' >РљСѓРґР° РІС‹РіСЂСѓР¶Р°РµС‚СЃСЏ?</button><br>
+	<div style="text-align:center;background:black;color:white;padding:2px;">РЁР°Рі РёРјРїРѕСЂС‚Р°</div>
+	<button class="small_but_m" OnClick="StartStep(0)">РЈРґР°Р»РµРЅРёРµ С‚Р°Р±Р»РёС†С‹</button><br>
+	<button class="small_but_m" OnClick="StartStep(1)">РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹</button><br>
+	<button class="small_but_m" OnClick="StartStep(2)">РРјРїРѕСЂС‚ РІС‚Р°Р±Р»РёС†Сѓ</button><br>
+	<button class="small_but_m" OnClick="StartStep(3)">РЎРѕР·РґР°РЅРёРµ РёРЅРґРµРєСЃР°</button><br>
+	<button class="small_but_m" OnClick="StartStep(4)">РРјРїРѕСЂС‚ РјРµС‚Р°РґР°РЅРЅС‹С…</button><br>
+	<button class="small_but_m" OnClick="StartStep(5)">РРјРїРѕСЂС‚ СЃРµРєС†РёР№</button><br>
+	<button class="small_but_m" OnClick="StartStep(6)">РЈРґР°Р»РµРЅРёРµ СЃРµРєС†РёР№</button><br>
+	<button class="small_but_m" OnClick="StartStep(7)">РћР±СЂР°Р±РѕС‚РєР° СЌР»РµРјРµРЅС‚РѕРІ</button><br>
+	<button class="small_but_m" OnClick="StartStep(8)">РЈРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ</button><br>
 </div>
 <div style="width:100%" id="webdav">
 <table height="50%";>
@@ -2644,7 +2644,7 @@ else $display='none';?>
 				<span class="auth_form_text" >
 				<input style="width:60%;" id="server_" placeholder="<?=$mess['SERVER']?>" name="server" size="30" value="<?=$_COOKIE['DV_SERVER']?>">
 				</span>
-				<input class="small_but" style="right:2px" type=button onclick="document.getElementById('action_').value='PROPFIND';document.getElementById('current_path_').value=document.getElementById('server_').value;dav_request()" name="post" value="обзор">
+				<input class="small_but" style="right:2px" type=button onclick="document.getElementById('action_').value='PROPFIND';document.getElementById('current_path_').value=document.getElementById('server_').value;dav_request()" name="post" value="РѕР±Р·РѕСЂ">
 				<input class="small_but" type=button onclick="Start_Dav();" value="<?=$mess['START_TEST'];?>">
 	 </div>
 	 </td>
@@ -2682,19 +2682,19 @@ else $display='none';?>
 		<td valign="top" id="ext_log" style="position:relative;background:white;width:50%;padding:5px">
 		</td>
 		<td class="auth_form" valign="top">
-		<h3  style="padding:4px;text-align:center;background:#d8dcf0">Данные для авторизации</h3>
+		<h3  style="padding:4px;text-align:center;background:#d8dcf0">Р”Р°РЅРЅС‹Рµ РґР»СЏ Р°РІС‚РѕСЂРёР·Р°С†РёРё</h3>
 		<div class = "auth_form_text">
-				Путь<br/>
+				РџСѓС‚СЊ<br/>
 				<input class="auth_field" id="ext_path" name="current_path" placeholder="http://mysite/bitrix/admin/1c_exchange.php" value=""><br/>
-				Имя файла<br/>
+				РРјСЏ С„Р°Р№Р»Р°<br/>
 				<input  class="auth_field"id="ext_filename"  name="ext_filename" placeholder="import.xml"><br/>
-				Логин<br/>
+				Р›РѕРіРёРЅ<br/>
 				<input class="auth_field" id="login" name="login" placeholder="admin"><br/>
 				<input id="phpsessid" type="hidden" value="">
-				Пароль<br/>
+				РџР°СЂРѕР»СЊ<br/>
 				<input class="auth_field" id="pass" name="pass" type="password" value="123456"><br/>
 		</div>
-				<input class='small_but' type='button' name="start_ext_import" value="начать" onclick="ext_start()"><hr/><h3  style="padding:4px;text-align:center;background:#d8dcf0">Заголовки ответа</h3>
+				<input class='small_but' type='button' name="start_ext_import" value="РЅР°С‡Р°С‚СЊ" onclick="ext_start()"><hr/><h3  style="padding:4px;text-align:center;background:#d8dcf0">Р—Р°РіРѕР»РѕРІРєРё РѕС‚РІРµС‚Р°</h3>
 			<div id="ext_headers_log" style="height:40%;overflow:auto;padding:3px;">
 			</div>
 		</td>
@@ -2706,24 +2706,24 @@ else $display='none';?>
     $inner.="<div>
 	<table width='100%'>
 	<tr><td colspan=2>
-	Режим диагностики
+	Р РµР¶РёРј РґРёР°РіРЅРѕСЃС‚РёРєРё
 	<hr>
 	</td></tr>
 	<tr>
 	<td width='15px'>
-	<input title='Импорт осуществляется стандартным компонентом + все изменения и добавления товаров пишутся в лог' type='checkbox' id='impself'></td><td align='left' width='100%'><label for='impself'>Импортировать этим скриптом</label></td>
+	<input title='РРјРїРѕСЂС‚ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Рј РєРѕРјРїРѕРЅРµРЅС‚РѕРј + РІСЃРµ РёР·РјРµРЅРµРЅРёСЏ Рё РґРѕР±Р°РІР»РµРЅРёСЏ С‚РѕРІР°СЂРѕРІ РїРёС€СѓС‚СЃСЏ РІ Р»РѕРі' type='checkbox' id='impself'></td><td align='left' width='100%'><label for='impself'>РРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ СЌС‚РёРј СЃРєСЂРёРїС‚РѕРј</label></td>
 	</tr>
 	<tr>
 	<td width='15px'>
-	<input type='checkbox' OnChange='CheckSkipMode(this)' title='Отладочный режим. Ненужные элементы при импорте будут пропускаться. ' id='skipmode' name='skipmode'></td><td align='left' width='100%'><label for='skipmode' >SkipMode</label>
+	<input type='checkbox' OnChange='CheckSkipMode(this)' title='РћС‚Р»Р°РґРѕС‡РЅС‹Р№ СЂРµР¶РёРј. РќРµРЅСѓР¶РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РїСЂРё РёРјРїРѕСЂС‚Рµ Р±СѓРґСѓС‚ РїСЂРѕРїСѓСЃРєР°С‚СЊСЃСЏ. ' id='skipmode' name='skipmode'></td><td align='left' width='100%'><label for='skipmode' >SkipMode</label>
 	</td>
 	</tr>
 	<tr>
 	<td colspan=3 >
 	<div id='xml_id_stop' class='auth_form_text' style='display:none;'>
-	  Внешний код элемента:<br>
+	  Р’РЅРµС€РЅРёР№ РєРѕРґ СЌР»РµРјРµРЅС‚Р°:<br>
 	  <input  OnChange='SetSessionParam(\"xml_id\",this.value)' size='60' value='".$_SESSION['bx_1c_import']['xml_id']."' id='external_id'><br>
-	  Имя элемента:<br>
+	  РРјСЏ СЌР»РµРјРµРЅС‚Р°:<br>
 	  <input  OnChange='SetSessionParam(\"element_name\",this.value)' size='60' value='".$_SESSION['bx_1c_import']['element_name']."' id='external_id'>
 	</div>
 	</td>
@@ -2731,13 +2731,13 @@ else $display='none';?>
 	</div>
 	</table>
 	<hr>";
-    $inner.='<a href="javascript:OpenWin(\'/bitrix/admin/1c_admin.php?lang=ru\')">Настройки интеграции</a><hr>';
+    $inner.='<a href="javascript:OpenWin(\'/bitrix/admin/1c_admin.php?lang=ru\')">РќР°СЃС‚СЂРѕР№РєРё РёРЅС‚РµРіСЂР°С†РёРё</a><hr>';
 
     ob_start();
-    ShowFileSelect('cat_file','Файл каталога в '.$UPLOAD_DIR.'/1c_catalog/:',$UPLOAD_DIR.'/1c_catalog/','xml',2,'ConfirmImport(\'catalog\')');
-    //ShowFileSelect('off_file','Файл предложений в /upload/1c_catalog/:','/upload/1c_catalog/','xml',2,'start(\'offers.xml\')');
-    ShowFileSelect('order_file','Файл заказов в '.$UPLOAD_DIR.'/1c_exchange/:',$UPLOAD_DIR.'/1c_exchange/','xml',2,'OrderImport(\'hz\')');
-    ShowFileSelect('worker','Файл сотрудников в '.$UPLOAD_DIR.'/1c_intranet/:',$UPLOAD_DIR.'/1c_intranet/','xml',2,'ConfirmImport(\'users\')');
+    ShowFileSelect('cat_file','Р¤Р°Р№Р» РєР°С‚Р°Р»РѕРіР° РІ '.$UPLOAD_DIR.'/1c_catalog/:',$UPLOAD_DIR.'/1c_catalog/','xml',2,'ConfirmImport(\'catalog\')');
+    //ShowFileSelect('off_file','Р¤Р°Р№Р» РїСЂРµРґР»РѕР¶РµРЅРёР№ РІ /upload/1c_catalog/:','/upload/1c_catalog/','xml',2,'start(\'offers.xml\')');
+    ShowFileSelect('order_file','Р¤Р°Р№Р» Р·Р°РєР°Р·РѕРІ РІ '.$UPLOAD_DIR.'/1c_exchange/:',$UPLOAD_DIR.'/1c_exchange/','xml',2,'OrderImport(\'hz\')');
+    ShowFileSelect('worker','Р¤Р°Р№Р» СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ РІ '.$UPLOAD_DIR.'/1c_intranet/:',$UPLOAD_DIR.'/1c_intranet/','xml',2,'ConfirmImport(\'users\')');
 
     $inner.=ob_get_contents();
      ob_end_clean();
@@ -2795,7 +2795,7 @@ function CreateFileDialog(Name,where)
 	var TabID=NewFieldID+'_tab';
 		NewFieldID++;
 		//alert(TabID);
-		//создаём поле для таба
+		//СЃРѕР·РґР°С‘Рј РїРѕР»Рµ РґР»СЏ С‚Р°Р±Р°
 		newField.style.width='350px';
 		newField.style.height='80px';
 		newField.style.padding='5px';
@@ -2806,8 +2806,8 @@ function CreateFileDialog(Name,where)
 		newField.style.display='block';
 		newField.style.border='1px solid #00C5CD';
 		newField.style.zIndex='99';
-		newField.innerHTML='<input type=checkbox id=isdir>Создаём папку, а не файл<br><br>';
-		newField.innerHTML+='Имя файла/папки:<br>'+'<input id=cfilename value=\'bx_test.php\'size=40><input type=button value=\'создать\' onclick=CreateFile(\'cfilename\',\'path_fileman\',\'testfileman\')>';
+		newField.innerHTML='<input type=checkbox id=isdir>РЎРѕР·РґР°С‘Рј РїР°РїРєСѓ, Р° РЅРµ С„Р°Р№Р»<br><br>';
+		newField.innerHTML+='РРјСЏ С„Р°Р№Р»Р°/РїР°РїРєРё:<br>'+'<input id=cfilename value=\'bx_test.php\'size=40><input type=button value=\'СЃРѕР·РґР°С‚СЊ\' onclick=CreateFile(\'cfilename\',\'path_fileman\',\'testfileman\')>';
 		BX(where).appendChild(newField);
 
 		return newField.id;
@@ -2842,7 +2842,7 @@ function AjaxRequest(url,id,AddResult)
 {
 	var ajaxreq=createHttpRequest();
 	load.style.display="block";
-	load.innerHTML=' <img align="center" src="http://vkontakte.ru/images/upload.gif" width="50"/> загрузка...';
+	load.innerHTML=' <img align="center" src="http://vkontakte.ru/images/upload.gif" width="50"/> Р·Р°РіСЂСѓР·РєР°...';
 	var callback=function(ajaxreq)
 	{
 		if (ajaxreq.readyState == 4)
@@ -2869,7 +2869,7 @@ function Download(file,path)
 	BX("dwframe").src="<?=$script_name?>?action=download&file="+file+"&path="+path;
 }
 
-// создание объекта XMLHttpRequest
+// СЃРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° XMLHttpRequest
 function createHttpRequest()
 
    {
@@ -2894,7 +2894,7 @@ function createHttpRequest()
 	var	del=BX('d');
 	var	unzip=BX('u');
 	var	down=BX('dw');
-// показываем недоменю
+// РїРѕРєР°Р·С‹РІР°РµРј РЅРµРґРѕРјРµРЅСЋ
 function ShowMenu(event)
 {
 	<?=$mainmenu;?>
@@ -2936,7 +2936,7 @@ function ShowMenuExp(event)
 	   return false;
 }
 
-//функция запускает процесс импорта
+//С„СѓРЅРєС†РёСЏ Р·Р°РїСѓСЃРєР°РµС‚ РїСЂРѕС†РµСЃСЃ РёРјРїРѕСЂС‚Р°
 function CStart()
 {
 	var path;
@@ -2953,7 +2953,7 @@ function CatalogImport()
 {
 	var file=BX('cat_file').options[BX('cat_file').selectedIndex].innerHTML;
 	if(!file)
-		alert('Не указан файл!');
+		alert('РќРµ СѓРєР°Р·Р°РЅ С„Р°Р№Р»!');
 	path='<?=$script_name?>';
 	if(BX('impself').checked==false)
 		path='<?=$catalog_import_path?>';
@@ -2971,8 +2971,8 @@ function CatalogImport()
 		BX("tab1_field").appendChild(log2);
 	}
 	log=BX("log2");
-	log.innerHTML="<b>Импорт "+file+"</b><hr>";
-	load.innerHTML='идёт загрузка...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
+	log.innerHTML="<b>РРјРїРѕСЂС‚ "+file+"</b><hr>";
+	load.innerHTML='РёРґС‘С‚ Р·Р°РіСЂСѓР·РєР°...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
 	query_1c(url);
 }
 
@@ -2980,7 +2980,7 @@ function UserImport()
 {
 	var file=BX('worker').options[BX('worker').selectedIndex].innerHTML;
 	if(!file)
-		alert('Не указан файл!');
+		alert('РќРµ СѓРєР°Р·Р°РЅ С„Р°Р№Р»!');
 	else
 	{
 		if (!BX('log2'))
@@ -2996,8 +2996,8 @@ function UserImport()
 			BX("tab1_field").appendChild(log2);
 		}
 		log=BX("log2");
-		log.innerHTML="<b>Импорт "+file+"</b><hr>";
-		load.innerHTML='идёт загрузка...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
+		log.innerHTML="<b>РРјРїРѕСЂС‚ "+file+"</b><hr>";
+		load.innerHTML='РёРґС‘С‚ Р·Р°РіСЂСѓР·РєР°...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
 			path='<?=$user_import_path;?>';
 			url=path+"?type=catalog&mode=import&filename="+file;
 			query_1c(url);
@@ -3033,7 +3033,7 @@ function AjaxGet(url,callback)
 
 function ext_start()
 {
-	load.innerHTML='Тихо, идёт импорт... <img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
+	load.innerHTML='РўРёС…Рѕ, РёРґС‘С‚ РёРјРїРѕСЂС‚... <img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
 	var login=BX('login').value;
 	var filename=BX('ext_filename').value;
 	var pass=BX('pass').value;
@@ -3076,13 +3076,13 @@ function ExtImportCallBack(ajaxreq)
 		{
 			bxtabs.AlertActiveTab('tab3');
 			load.style.display="none";
-			BX('ext_log').innerHTML+="Ошибочный ответ сервера:<br>"+ajaxreq.responseText+"<br>";
+			BX('ext_log').innerHTML+="РћС€РёР±РѕС‡РЅС‹Р№ РѕС‚РІРµС‚ СЃРµСЂРІРµСЂР°:<br>"+ajaxreq.responseText+"<br>";
 		}
 
 	}
 
 }
-//функция осущетсвляет импорт из файла
+//С„СѓРЅРєС†РёСЏ РѕСЃСѓС‰РµС‚СЃРІР»СЏРµС‚ РёРјРїРѕСЂС‚ РёР· С„Р°Р№Р»Р°
 function query_1c(url)
 		{
 		sInd=0;
@@ -3107,8 +3107,8 @@ function query_1c(url)
 				a=log.innerHTML;
 				if (import_1c.readyState == 4 && import_1c.status == 0)
 						{
-						error_text="<em>Ошибка в процессе выгрузки</em><div style='width:270px;font-size:11px;border:1px solid 				black;background-color:#ADC3D5;padding:5px'>Сервер упал и не вернул заголовков.</div>"
-							log.innerHTML=a+"Шаг "+i+": "+error_text;
+						error_text="<em>РћС€РёР±РєР° РІ РїСЂРѕС†РµСЃСЃРµ РІС‹РіСЂСѓР·РєРё</em><div style='width:270px;font-size:11px;border:1px solid 				black;background-color:#ADC3D5;padding:5px'>РЎРµСЂРІРµСЂ СѓРїР°Р» Рё РЅРµ РІРµСЂРЅСѓР» Р·Р°РіРѕР»РѕРІРєРѕРІ.</div>"
+							log.innerHTML=a+"РЁР°Рі "+i+": "+error_text;
 							load.style.display="none";
 							status="continue"
 							alert("Import is crashed!");
@@ -3119,8 +3119,8 @@ function query_1c(url)
 							{
 							if ((import_1c.responseText.substr(0,8)!="progress")&&(import_1c.responseText.substr(0,7)!="success")&&(import_1c.responseText.substr(0,5)!="debug"))
 							{
-								error_text="<em>Ошибка в процессе выгрузки</em><div style='font-size:11px;border:1px solid black;background-color:#ADC3D5;padding:5px'>"+import_1c.responseText+"</div>"
-								log.innerHTML=a+"Шаг "+i+": "+error_text;
+								error_text="<em>РћС€РёР±РєР° РІ РїСЂРѕС†РµСЃСЃРµ РІС‹РіСЂСѓР·РєРё</em><div style='font-size:11px;border:1px solid black;background-color:#ADC3D5;padding:5px'>"+import_1c.responseText+"</div>"
+								log.innerHTML=a+"РЁР°Рі "+i+": "+error_text;
 								status="error"
 								circul=false;
 							}
@@ -3136,7 +3136,7 @@ function query_1c(url)
 									n=import_1c.responseText.lastIndexOf('s')+1;
 									l=import_1c.responseText.length;
 									mess=import_1c.responseText.substr(n,l);
-									log.innerHTML=a+"Шаг "+i+": "+mess+"<br>";
+									log.innerHTML=a+"РЁР°Рі "+i+": "+mess+"<br>";
 									i++;
 								}
 							}
@@ -3146,15 +3146,15 @@ function query_1c(url)
 							//alert(BX('cat_file').options.length);
 							//alert(numfile);
 								load.style.display="none";
-								load.innerHTML=' <img align="center" src="http://vkontakte.ru/images/upload.gif" width="50"/> загрузка...';
+								load.innerHTML=' <img align="center" src="http://vkontakte.ru/images/upload.gif" width="50"/> Р·Р°РіСЂСѓР·РєР°...';
 								BX('ind_').style.display='none';
 								status="continue"
 								proccess="N";
-								timer.innerHTML="<hr>Время выгрузки: <b>"+minute+" мин. "+m_second+" сек.</b>";
+								timer.innerHTML="<hr>Р’СЂРµРјСЏ РІС‹РіСЂСѓР·РєРё: <b>"+minute+" РјРёРЅ. "+m_second+" СЃРµРє.</b>";
 								//alert(BX('cat_file').options[numfile].text)
 								if (circule==true && numfile<=BX('cat_file').options.length-1)
 								{
-									log.innerHTML+='<br><b>Импорт '+BX('cat_file').options[numfile].text+'</b><hr>';
+									log.innerHTML+='<br><b>РРјРїРѕСЂС‚ '+BX('cat_file').options[numfile].text+'</b><hr>';
 									query_1c(BX('cat_file').options[numfile].text);
 									numfile++;
 								}
@@ -3209,7 +3209,7 @@ function OrderImport(elem)
 							{
 				                log.innerHTML=ajaxreq.responseText;
 								proccess='N';
-								alert('Длительность импорта заказов: '+seconds+' сек.');
+								alert('Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ РёРјРїРѕСЂС‚Р° Р·Р°РєР°Р·РѕРІ: '+seconds+' СЃРµРє.');
 								bxtabs.AlertActiveTab('tab1');
 							}
 
@@ -3217,7 +3217,7 @@ function OrderImport(elem)
 	AjaxGet("<?=$catalog_import_path?>?type=sale&mode=file&filename="+file,callback)
 }
 
-//проверка, существует ли файл, права на него
+//РїСЂРѕРІРµСЂРєР°, СЃСѓС‰РµСЃС‚РІСѓРµС‚ Р»Рё С„Р°Р№Р», РїСЂР°РІР° РЅР° РЅРµРіРѕ
 function check_file(file)
 {
 	var callback= function(ajaxreq)
@@ -3366,7 +3366,7 @@ function StartStep(numstep)
 	AjaxGet("<?=$script_name?>?setstep="+numstep,callback)
 }
 
-	//отображаем  информацию по товарам, группам и предложениям
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј  РёРЅС„РѕСЂРјР°С†РёСЋ РїРѕ С‚РѕРІР°СЂР°Рј, РіСЂСѓРїРїР°Рј Рё РїСЂРµРґР»РѕР¶РµРЅРёСЏРј
 function ShowInfo(file)
 {
 	var fileinfo=BX("info");
@@ -3386,13 +3386,13 @@ function ShowInfo(file)
 
 
 
-	//сбрасываем шаг импорта
+	//СЃР±СЂР°СЃС‹РІР°РµРј С€Р°Рі РёРјРїРѕСЂС‚Р°
 function reset()
 {
 	var callback=function(ajaxreq)
 	{
 		if (ajaxreq.readyState == 4 && ajaxreq.status == 200)
-		alert("Шаг импорта обнулён!");
+		alert("РЁР°Рі РёРјРїРѕСЂС‚Р° РѕР±РЅСѓР»С‘РЅ!");
 	}
 	AjaxGet("<?=$script_name?>",callback);
 
@@ -3401,17 +3401,17 @@ function reset()
 
 
 
-	//удаляем скрипт
+	//СѓРґР°Р»СЏРµРј СЃРєСЂРёРїС‚
 function delete_file()
 	{
-		if (confirm('Удалить файл?'))
+		if (confirm('РЈРґР°Р»РёС‚СЊ С„Р°Р№Р»?'))
 			//edirect("bx_1c_import.php?delete=Y");
 			document.location = "<?=$script_name?>?delete=Y";
 	}
 
 function ConfirmImport(type)
 	{
-		if (confirm('Импортировать файл?'))
+		if (confirm('РРјРїРѕСЂС‚РёСЂРѕРІР°С‚СЊ С„Р°Р№Р»?'))
 		{
 			if (type=='catalog')
 				CatalogImport();
@@ -3421,7 +3421,7 @@ function ConfirmImport(type)
 	}
 
 
-	//ищем товар по xml_id
+	//РёС‰РµРј С‚РѕРІР°СЂ РїРѕ xml_id
 function searchbyxmlid()
 {
 	var qs=BX("q");
@@ -3435,7 +3435,7 @@ function searchbyxmlid()
 
 		AjaxGet("<?=$script_name?>?search="+qs.value,callback);
 }
-	//ищем товар по xml_id
+	//РёС‰РµРј С‚РѕРІР°СЂ РїРѕ xml_id
 function search_iblock_byxmlid()
 {
 	var qs=BX("q_iblock");
@@ -3452,7 +3452,7 @@ function search_iblock_byxmlid()
 
 
 
-var Linkoldelem,Linkoldop,Linkborderold//переменные цвета
+var Linkoldelem,Linkoldop,Linkborderold//РїРµСЂРµРјРµРЅРЅС‹Рµ С†РІРµС‚Р°
 
 function GetXmlInfo()
 {
@@ -3468,7 +3468,7 @@ function GetXmlInfo()
 	AjaxGet("<?=$script_name?>?action=xmlgetinfo&path="+xmlpath,callback);
 }
 
-//подцветка ссылки
+//РїРѕРґС†РІРµС‚РєР° СЃСЃС‹Р»РєРё
 function LinkLightOn(elem,lcolor)
 {
 	var el=BX(elem);
@@ -3484,14 +3484,14 @@ function OpenWin(path)
 	window.open(path,'new','width=1000,height=700, top=100, left=200,toolbar=1 scrollbars=yes');
 }
 
-//возвращаение цвета ссылки
+//РІРѕР·РІСЂР°С‰Р°РµРЅРёРµ С†РІРµС‚Р° СЃСЃС‹Р»РєРё
 function LinkLightOff()
 {
 	var el= BX(Linkoldelem);
 	el.style.color=Linkborderold;
 }
 
-// задаём переменные таймера процесса импорта
+// Р·Р°РґР°С‘Рј РїРµСЂРµРјРµРЅРЅС‹Рµ С‚Р°Р№РјРµСЂР° РїСЂРѕС†РµСЃСЃР° РёРјРїРѕСЂС‚Р°
 var m_second=0
 var seconds=0
 var minute=0
@@ -3499,7 +3499,7 @@ var proccess="Y"
 var sInd=0;
 var sIntStep=<?=IntVal(300/$interval);?>
 
-//собственно таймер
+//СЃРѕР±СЃС‚РІРµРЅРЅРѕ С‚Р°Р№РјРµСЂ
 		function display()
 		{
 		var indicate=BX('indicate');
@@ -3550,14 +3550,14 @@ var sIntStep=<?=IntVal(300/$interval);?>
 		}
 
 
-//окна дивные
+//РѕРєРЅР° РґРёРІРЅС‹Рµ
 var sStep = 16;
 var sTimeout = 15;
 var sLeft = 160;
 var sRight = 160;
 var wObj;
 
-//закрываем окно
+//Р·Р°РєСЂС‹РІР°РµРј РѕРєРЅРѕ
 function Close(param)
 {
 BX(param).style.display='none';
@@ -3575,7 +3575,7 @@ function winOpen()
 }
 
 
-//закрывем окно красиво
+//Р·Р°РєСЂС‹РІРµРј РѕРєРЅРѕ РєСЂР°СЃРёРІРѕ
 function winClose()
 {
 	if (sLeft < sRight)
@@ -3596,7 +3596,7 @@ var lastwin=false;
 
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
-////////////////////////Заказы и XML///////////////////
+////////////////////////Р—Р°РєР°Р·С‹ Рё XML///////////////////
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 
@@ -3611,7 +3611,7 @@ function Showforedit(file,path,is_utf)
         {
             if (ajaxreq.responseText=='')
             {
-                    elem.innerHTML='Файл отсутстует. Произведите выгрузку из 1С.';
+                    elem.innerHTML='Р¤Р°Р№Р» РѕС‚СЃСѓС‚СЃС‚СѓРµС‚. РџСЂРѕРёР·РІРµРґРёС‚Рµ РІС‹РіСЂСѓР·РєСѓ РёР· 1РЎ.';
                     tb.style.display="block";
             }
             else
@@ -3657,10 +3657,10 @@ function SaveFile(file)
 				{
 				//alert(save.responseText);
 				if (save.responseText=='OK')
-					sfstatus.innerHTML="<b>Изменения в файле сохранены<b>"
+					sfstatus.innerHTML="<b>РР·РјРµРЅРµРЅРёСЏ РІ С„Р°Р№Р»Рµ СЃРѕС…СЂР°РЅРµРЅС‹<b>"
 					//sfstatus.innerHTML=save.responseText;
 					else
-					sfstatus.innerHTML="<b style='color:red'>Ошибка при сохранении файла</b>";
+					sfstatus.innerHTML="<b style='color:red'>РћС€РёР±РєР° РїСЂРё СЃРѕС…СЂР°РЅРµРЅРёРё С„Р°Р№Р»Р°</b>";
 					//sfstatus.innerHTML=save.responseText;
 					sfstatus.style.display='block';
 					load.style.display="none";
@@ -3681,7 +3681,7 @@ function SaveFile(file)
 	{
 				if (clastmoment.readyState == 4)
 				{
-					alert('Теперь дата последнего обмена: '+clastmoment.responseText);
+					alert('РўРµРїРµСЂСЊ РґР°С‚Р° РїРѕСЃР»РµРґРЅРµРіРѕ РѕР±РјРµРЅР°: '+clastmoment.responseText);
 					load.style.display="none";
 				}
 			};
@@ -3692,7 +3692,7 @@ function Delete(file,workarea,full)
 {
 	var del=createHttpRequest();
 	menu.style.display="none";
-	if (confirm('Удалить '+file+'?'))
+	if (confirm('РЈРґР°Р»РёС‚СЊ '+file+'?'))
 	{
 	load.style.display="block";
 	del.open("POST", "<?=$script_name?>", true);
@@ -3702,7 +3702,7 @@ function Delete(file,workarea,full)
 				if (del.readyState == 4)
 				{
 					if (del.responseText!='success')
-						alert("Ошибка удаления файла");
+						alert("РћС€РёР±РєР° СѓРґР°Р»РµРЅРёСЏ С„Р°Р№Р»Р°");
 					GetFileList2(globalpath,workarea);
 					load.style.display="none";
 				}
@@ -3718,7 +3718,7 @@ function DeleteLog(file,workarea,full)
 {
 	var del=createHttpRequest();
 	menu.style.display="none";
-	if (confirm('Удалить '+file+'?'))
+	if (confirm('РЈРґР°Р»РёС‚СЊ '+file+'?'))
 	{
 	load.style.display="block";
 	del.open("POST", "<?=$script_name?>", true);
@@ -3728,7 +3728,7 @@ function DeleteLog(file,workarea,full)
 				if (del.readyState == 4)
 				{
 					if (del.responseText!='success')
-						alert("Ошибка удаления файла");
+						alert("РћС€РёР±РєР° СѓРґР°Р»РµРЅРёСЏ С„Р°Р№Р»Р°");
 					GetFileList2(globalpath,workarea);
 				}
 			};
@@ -3743,7 +3743,7 @@ function UnZip(file,workarea)
 {
 JustHide();
 var unzipfile=createHttpRequest();
-if (confirm('Распаковать '+file+'?'))
+if (confirm('Р Р°СЃРїР°РєРѕРІР°С‚СЊ '+file+'?'))
 {
 menu.style.display="none";
 load.style.display="block";
@@ -3753,7 +3753,7 @@ unzipfile.onreadystatechange = function()
 {
 			if (unzipfile.readyState == 4)
 			{
-			if (unzipfile.responseText!='1') alert("Ошибка распаковки файла");
+			if (unzipfile.responseText!='1') alert("РћС€РёР±РєР° СЂР°СЃРїР°РєРѕРІРєРё С„Р°Р№Р»Р°");
 			GetFileList2(globalpath,workarea);
 			}
 		};
@@ -3770,7 +3770,7 @@ function ShowHideSection(elem)
 			BX(elem).style.display=t;
 		}
 
-//показываем файлы импорта
+//РїРѕРєР°Р·С‹РІР°РµРј С„Р°Р№Р»С‹ РёРјРїРѕСЂС‚Р°
 function ShowFile(file,path,is_utf,workid)
 {
 JustHide();
@@ -3789,7 +3789,7 @@ var callback= function(ajaxreq)
 	{
 	if (ajaxreq.responseText=='')
 		{
-		elem.innerHTML='Файл отсутстует или он пустой.';
+		elem.innerHTML='Р¤Р°Р№Р» РѕС‚СЃСѓС‚СЃС‚СѓРµС‚ РёР»Рё РѕРЅ РїСѓСЃС‚РѕР№.';
 		tb.style.display="block";
 		}
 		else
@@ -3805,7 +3805,7 @@ var callback= function(ajaxreq)
 AjaxGet("<?=$script_name?>?mode=show_xml&file="+file+"&path="+path+"&isutf="+is_utf+"&target=blank",callback);
 }
 
-//сохраняем xml заказов
+//СЃРѕС…СЂР°РЅСЏРµРј xml Р·Р°РєР°Р·РѕРІ
 function SaveMe(path)
 {
 	var load= BX("load");
@@ -3816,7 +3816,7 @@ function SaveMe(path)
 				if (ajaxreq.readyState == 4 && ajaxreq.status == 200)
 				{
 					if (ajaxreq.responseText=='')
-						elem.innerHTML='Ошибка формирования XML';
+						elem.innerHTML='РћС€РёР±РєР° С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ XML';
 					else
 					{
 						elem.innerHTML=ajaxreq.responseText;
@@ -3830,7 +3830,7 @@ function SaveMe(path)
 	load.style.display="none";
 }
 
-//получаем список заказов
+//РїРѕР»СѓС‡Р°РµРј СЃРїРёСЃРѕРє Р·Р°РєР°Р·РѕРІ
 function GetOrders()
 {
 
@@ -3844,24 +3844,24 @@ r='<?=$script_name?>?path='+elemc.value+'&check=Y';
 if (elema.checked==true) r=r+'&PAYED=Y';
 if (elemb.checked==true) r=r+'&ALLOW_DELIVERY=Y';
 elem.style.display="block";
-elem.innerHTML='Загрузка...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
+elem.innerHTML='Р—Р°РіСЂСѓР·РєР°...<img align="center" src="http://gifanimation.ru/images/ludi/17_3.gif" width="30"/>';
 elem.innerHTML='<iframe style="border:none;position:relative;margin-top:5px;font-size:11px;padding:3px;background: white;" width="98%" src="'+r+'"></iframe>';
 }
 
-//xml в отдельном окне
+//xml РІ РѕС‚РґРµР»СЊРЅРѕРј РѕРєРЅРµ
 function _BlankXML(path)
 		{
 		//alert(path);
 		window.open(path,'new','width=700,height=500,toolbar=1 scrollbars=yes');
 		}
 
-// закрыть список заказов
+// Р·Р°РєСЂС‹С‚СЊ СЃРїРёСЃРѕРє Р·Р°РєР°Р·РѕРІ
 function CloseOrderList()
 {
  BX("list").style.display="none";
 }
 
-// неважно
+// РЅРµРІР°Р¶РЅРѕ
 function Hide(event)
 {
 var element;
@@ -3919,9 +3919,9 @@ function CreateFile(name,pathe,workarea)
             if (filelist.readyState == 4 && filelist.status == 200)
             {
                 if (filelist.responseText=='error001')
-                        alert('Файл/папка уже существует, задайте другое имя!');
+                        alert('Р¤Р°Р№Р»/РїР°РїРєР° СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚, Р·Р°РґР°Р№С‚Рµ РґСЂСѓРіРѕРµ РёРјСЏ!');
                 if (filelist.responseText=='fail')
-                        alert('Файл/папку создать не удалось:(');
+                        alert('Р¤Р°Р№Р»/РїР°РїРєСѓ СЃРѕР·РґР°С‚СЊ РЅРµ СѓРґР°Р»РѕСЃСЊ:(');
                 if (filelist.responseText=='success')
                         GetFileList(pathe,workarea);
                 fileman.style.display='block';
@@ -4180,18 +4180,18 @@ function TabZone(tab_zone_id,field_zone_id,prefix,classtab,classfield, tabclick)
 }
 
 var bxtabs=new TabZone('tab_zone','field_zone','tab');
-bxtabs.TabCreate('Файлы',true);
-bxtabs.TabCreate('Импорт файлов 1C');
-bxtabs.TabCreate('Заказы');
+bxtabs.TabCreate('Р¤Р°Р№Р»С‹',true);
+bxtabs.TabCreate('РРјРїРѕСЂС‚ С„Р°Р№Р»РѕРІ 1C');
+bxtabs.TabCreate('Р—Р°РєР°Р·С‹');
 bxtabs.TabCreate('WebDav');
-//bxtabs.TabCreate('Импорт на удалённом сервере');
+//bxtabs.TabCreate('РРјРїРѕСЂС‚ РЅР° СѓРґР°Р»С‘РЅРЅРѕРј СЃРµСЂРІРµСЂРµ');
 //BX('tab1_field').appendChild(BX('ipfs'));
 BX('tab3_field').appendChild(BX('webdav'));
 var wd_tabs=new TabZone('dav_tab_zone','dav_field_zone','tab_dav','tab_dav','tab_field_dav');
-wd_tabs.TabCreate('Обзор',true);
+wd_tabs.TabCreate('РћР±Р·РѕСЂ',true);
 wd_tabs.TabCreate('XML');
-wd_tabs.TabCreate('Заголовки');
-wd_tabs.TabCreate('Тестирование');
+wd_tabs.TabCreate('Р—Р°РіРѕР»РѕРІРєРё');
+wd_tabs.TabCreate('РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ');
 
 
 		var log2=document.createElement('DIV');
@@ -4233,8 +4233,8 @@ var smtabs=new TabZone('small_tabs','small_tabs_fields','tab_small','tab_s','fie
 	}
 );
 
-smtabs.TabCreate('Локальный импорт',true);
-smtabs.TabCreate('Удаленный импорт',false);
+smtabs.TabCreate('Р›РѕРєР°Р»СЊРЅС‹Р№ РёРјРїРѕСЂС‚',true);
+smtabs.TabCreate('РЈРґР°Р»РµРЅРЅС‹Р№ РёРјРїРѕСЂС‚',false);
 
 
 if (!BX('log2'))

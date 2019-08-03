@@ -1,0 +1,33 @@
+<?
+$MESS["ESOL_IX_EVENTLOG_WRONG_TIMESTAMP_X_FROM"] = "Enter the correct log starting date in the filter.";
+$MESS["ESOL_IX_EVENTLOG_WRONG_TIMESTAMP_X_TO"] = "Enter the correct log end date in the filter.";
+$MESS["ESOL_IX_EVENTLOG_ID"] = "ID";
+$MESS["ESOL_IX_EVENTLOG_TIMESTAMP_X"] = "Time";
+$MESS["ESOL_IX_EVENTLOG_SEVERITY"] = "Severity";
+$MESS["ESOL_IX_EVENTLOG_AUDIT_TYPE_ID"] = "Event";
+$MESS["ESOL_IX_EVENTLOG_PROFILE_ID"] = "Profile";
+$MESS["ESOL_IX_EVENTLOG_MODULE_ID"] = "Source";
+$MESS["ESOL_IX_EVENTLOG_ITEM_ID"] = "Object";
+$MESS["ESOL_IX_EVENTLOG_REMOTE_ADDR"] = "IP";
+$MESS["ESOL_IX_EVENTLOG_USER_AGENT"] = "User Agent";
+$MESS["ESOL_IX_EVENTLOG_REQUEST_URI"] = "URL";
+$MESS["ESOL_IX_EVENTLOG_SITE_ID"] = "Site";
+$MESS["ESOL_IX_EVENTLOG_USER_ID"] = "User";
+$MESS["ESOL_IX_EVENTLOG_DESCRIPTION"] = "Description";
+$MESS["ESOL_IX_EVENTLOG_GUEST_ID"] = "Guest";
+$MESS["ESOL_IX_EVENTLOG_LIST_PAGE"] = "Records";
+$MESS["ESOL_IX_EVENTLOG_PAGE_TITLE"] = "Import statistics";
+$MESS["ESOL_IX_EVENTLOG_SEARCH"] = "Find";
+$MESS["ESOL_IX_EVENTLOG_STOP_LIST"] = "stop list";
+$MESS["ESOL_IX_EVENTLOG_FORUM_MESSAGE"] = "Message";
+$MESS["ESOL_IX_EVENTLOG_FORUM_TOPIC"] = "Topic";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT"] = "Element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_ADD"] = "Adding element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_UPDATE"] = "Updating element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_DELETE"] = "Removing element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_NOT_FOUND"] = "Element of infoblock not found";
+$MESS["ESOL_IX_ALL"] = "(all)";
+$MESS["ESOL_IX_EVENTLOG_ESOL_IX_ADD_ELEMENT"] = "Add element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_ESOL_IX_UPDATE_ELEMENT"] = "Update element of infoblock";
+$MESS["ESOL_IX_EVENTLOG_FILTER_FIELDS"] = "Fields for search";
+?>

@@ -1,6 +1,6 @@
 <? 
 /**
- * РРјРїРѕСЂС‚ РєР°С‚Р°Р»РѕРіР° РёР· xml-С„Р°Р№Р»РѕРІ CML2.0 Р±РµР· РїСЂСЏРјРѕРіРѕ РѕР±РјРµРЅР° СЃ 1РЎ 8.1
+ * Импорт каталога из xml-файлов CML2.0 без прямого обмена с 1С 8.1
  * http://dev.1c-bitrix.ru/community/webdev/group/78/blog/1654/
  */
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php"); 
@@ -8,11 +8,11 @@ header("Content-type:text/html; charset=windows-1251");
 $_SESSION["BX_CML2_IMPORT"]["NS"]["STEP"]=0; 
 ?>
 <html>
-<a  href="javascript:start('import.xml')">РёРјРїРѕСЂС‚ import.xml</a> 
-<a href="javascript:start('offers.xml')">РёРјРїРѕСЂС‚ offers.xml</a> 
-<a href="javascript:start('company.xml')"> РёРјРїРѕСЂС‚ company.xml</a> 
-<a style='color:red;' href="javascript:reset()">РѕР±РЅСѓР»РёС‚СЊ С€Р°Рі</a> 
-<a style='color:red;' href="javascript:status='stop'">РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РёРјРїРѕСЂС‚</a><hr> 
+<a  href="javascript:start('import.xml')">импорт import.xml</a> 
+<a href="javascript:start('offers.xml')">импорт offers.xml</a> 
+<a href="javascript:start('company.xml')"> импорт company.xml</a> 
+<a style='color:red;' href="javascript:reset()">обнулить шаг</a> 
+<a style='color:red;' href="javascript:status='stop'">остановить импорт</a><hr> 
 <div id='main' style='display:none;width:400;font-size:12;border:1px solid #ADC3D5; padding:5'> 
 <div id="log"></div> 
 <div align=right id="load"></div> 
@@ -25,11 +25,11 @@ log=document.getElementById("log");
 timer=document.getElementById("timer"); 
 load=document.getElementById("load"); 
 var zup_import=false; 
-//РїРµСЂРµРјРµРЅРЅС‹Рµ С‚Р°Р№РјРµСЂР° 
+//переменные таймера 
 m_second=0; 
 seconds=0; 
 minute=0; 
-//РїРµСЂРµРјРµРЅРЅС‹Рµ РёРјРїРѕСЂС‚Р° 
+//переменные импорта 
 i=1; 
 a=''; 
 proccess=true; 
@@ -57,7 +57,7 @@ function createHttpRequest()
 function start(file) 
       { 
       document.getElementById("main").style.display='block'; 
-      load.innerHTML="<b>Р—Р°РіСЂСѓР·РєР°</b>...<img align='center'                 src='http://gifanimation.ru/images/ludi/17_3.gif' width='30'/>" 
+      load.innerHTML="<b>Загрузка</b>...<img align='center'                 src='http://gifanimation.ru/images/ludi/17_3.gif' width='30'/>" 
              i=1; 
       a=""; 
       m_second=0; 
@@ -66,7 +66,7 @@ function start(file)
       start_timer(); 
       timer.innerHTML=""; 
       if (file=="company.xml") {zup_import=true;} 
-      log.innerHTML="<b>РРјРїРѕСЂС‚ "+file+"</b><hr>"; 
+      log.innerHTML="<b>Импорт "+file+"</b><hr>"; 
       query_1c(file) 
       }
 	  
@@ -84,8 +84,8 @@ function start(file)
             a=log.innerHTML; 
             if (import_1c.readyState == 4 && import_1c.status == 0) 
                   { 
-                  error_text="<em>РћС€РёР±РєР° РІ РїСЂРѕС†РµСЃСЃРµ РІС‹РіСЂСѓР·РєРё</em><div style='width:270;font-size:11;border:1px solid             black;background-color:#ADC3D5;padding:5'>РЎРµСЂРІРµСЂ СѓРїР°Р» Рё РЅРµ РІРµСЂРЅСѓР» Р·Р°РіРѕР»РѕРІРєРѕРІ.</div>" 
-                     log.innerHTML=a+"РЁР°Рі "+i+": "+error_text; 
+                  error_text="<em>Ошибка в процессе выгрузки</em><div style='width:270;font-size:11;border:1px solid             black;background-color:#ADC3D5;padding:5'>Сервер упал и не вернул заголовков.</div>" 
+                     log.innerHTML=a+"Шаг "+i+": "+error_text; 
                      load.style.display="none"; 
                      status="continue" 
                      alert("Import is crashed!"); 
@@ -95,8 +95,8 @@ function start(file)
                      { 
                         if ((import_1c.responseText.substr(0,8 )!="progress")&&(import_1c.responseText.substr(0,7)!="success")) 
                         { 
-                           error_text="<em>РћС€РёР±РєР° РІ РїСЂРѕС†РµСЃСЃРµ РІС‹РіСЂСѓР·РєРё</em><div style='width:270;font-size:11;border:1px solid black;background-color:#ADC3D5;padding:5'>"+import_1c.responseText+"</div>" 
-                           log.innerHTML=a+"РЁР°Рі "+i+": "+error_text; 
+                           error_text="<em>Ошибка в процессе выгрузки</em><div style='width:270;font-size:11;border:1px solid black;background-color:#ADC3D5;padding:5'>"+import_1c.responseText+"</div>" 
+                           log.innerHTML=a+"Шаг "+i+": "+error_text; 
                            status="error"; 
                         } 
                         else 
@@ -104,7 +104,7 @@ function start(file)
                            n=import_1c.responseText.lastIndexOf('s')+1; 
                            l=import_1c.responseText.length; 
                            mess=import_1c.responseText.substr(n,l); 
-                           log.innerHTML=a+"РЁР°Рі "+i+": "+mess+" ("+seconds+" СЃРµРє.)"+"<br>"; 
+                           log.innerHTML=a+"Шаг "+i+": "+mess+" ("+seconds+" сек.)"+"<br>"; 
                            seconds=0; 
                            load.style.display="none"; 
                            i++; 
@@ -114,7 +114,7 @@ function start(file)
                            load.style.display="none"; 
                            status="continue" 
                            proccess=false; 
-                           timer.innerHTML="<hr>Р’СЂРµРјСЏ РІС‹РіСЂСѓР·РєРё: <b>"+minute+" РјРёРЅ. "+m_second+" СЃРµРє.</b>"; 
+                           timer.innerHTML="<hr>Время выгрузки: <b>"+minute+" мин. "+m_second+" сек.</b>"; 
                         } 
                         else 
                         { 
@@ -151,7 +151,7 @@ function reset()
                rest.onreadystatechange=function() 
                         { 
                         if (rest.readyState == 4 && rest.status == 200)   
-                           alert("РЁР°Рі РёРјРїРѕСЂС‚Р° РѕР±РЅСѓР»С‘РЅ!"); 
+                           alert("Шаг импорта обнулён!"); 
                         } 
                 
                rest.send(null); 

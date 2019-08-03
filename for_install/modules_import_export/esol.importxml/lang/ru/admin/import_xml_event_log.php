@@ -1,0 +1,33 @@
+<?
+$MESS["ESOL_IX_EVENTLOG_WRONG_TIMESTAMP_X_FROM"] = "Введите в фильтре правильную дату \"c\" записи в журнал.";
+$MESS["ESOL_IX_EVENTLOG_WRONG_TIMESTAMP_X_TO"] = "Введите в фильтре правильную дату \"по\" записи в журнал.";
+$MESS["ESOL_IX_EVENTLOG_ID"] = "ID";
+$MESS["ESOL_IX_EVENTLOG_TIMESTAMP_X"] = "Время";
+$MESS["ESOL_IX_EVENTLOG_SEVERITY"] = "Срочность";
+$MESS["ESOL_IX_EVENTLOG_AUDIT_TYPE_ID"] = "Событие";
+$MESS["ESOL_IX_EVENTLOG_PROFILE_ID"] = "Профиль импорта";
+$MESS["ESOL_IX_EVENTLOG_MODULE_ID"] = "Источник";
+$MESS["ESOL_IX_EVENTLOG_ITEM_ID"] = "Объект";
+$MESS["ESOL_IX_EVENTLOG_REMOTE_ADDR"] = "IP";
+$MESS["ESOL_IX_EVENTLOG_USER_AGENT"] = "User Agent";
+$MESS["ESOL_IX_EVENTLOG_REQUEST_URI"] = "URL";
+$MESS["ESOL_IX_EVENTLOG_SITE_ID"] = "Сайт";
+$MESS["ESOL_IX_EVENTLOG_USER_ID"] = "Пользователь";
+$MESS["ESOL_IX_EVENTLOG_DESCRIPTION"] = "Описание";
+$MESS["ESOL_IX_EVENTLOG_GUEST_ID"] = "Гость";
+$MESS["ESOL_IX_EVENTLOG_LIST_PAGE"] = "Записи";
+$MESS["ESOL_IX_EVENTLOG_PAGE_TITLE"] = "Статистика импорта";
+$MESS["ESOL_IX_EVENTLOG_SEARCH"] = "Найти";
+$MESS["ESOL_IX_EVENTLOG_STOP_LIST"] = "стоп-лист";
+$MESS["ESOL_IX_EVENTLOG_FORUM_MESSAGE"] = "Сообщение";
+$MESS["ESOL_IX_EVENTLOG_FORUM_TOPIC"] = "Тема";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT"] = "Элемент инфоблока";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_ADD"] = "Создание элемента инфоблока";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_UPDATE"] = "Обновление элемента инфоблока";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_DELETE"] = "Удаление элемента инфоблока";
+$MESS["ESOL_IX_EVENTLOG_IBLOCK_ELEMENT_NOT_FOUND"] = "Элемент инфоблока не найден";
+$MESS["ESOL_IX_ALL"] = "(все)";
+$MESS["ESOL_IX_EVENTLOG_ESOL_IX_ADD_ELEMENT"] = "Создание элемента инфоблока";
+$MESS["ESOL_IX_EVENTLOG_ESOL_IX_UPDATE_ELEMENT"] = "Обновление элемента инфоблока";
+$MESS["ESOL_IX_EVENTLOG_FILTER_FIELDS"] = "Поля для поиска";
+?>

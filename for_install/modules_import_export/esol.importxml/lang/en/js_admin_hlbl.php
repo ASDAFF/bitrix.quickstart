@@ -1,0 +1,30 @@
+<?
+$MESS['ESOL_IX_GROUP_ELEMENT'] = "Element";
+$MESS['ESOL_IX_GROUP_OFFER'] = "Offer";
+$MESS['ESOL_IX_GROUP_SECTION'] = "Section";
+$MESS['ESOL_IX_GROUP_SUBSECTION'] = "Subsection";
+$MESS['ESOL_IX_GROUP_PROPERTY'] = "Property of element";
+$MESS['ESOL_IX_ADD_FIELD'] = "Add field";
+$MESS['ESOL_IX_REMOVE_FIELD'] = "Remove field";
+$MESS['ESOL_IX_FIELD_SETTINGS'] = "Field settings";
+$MESS['ESOL_IX_SHOW_ALL_ATTRIBUTES'] = "Show all values";
+$MESS['ESOL_IX_POPUP_FIELD_SETTINGS_TITLE'] = "Field import settings";
+$MESS['ESOL_IX_TOOLS_IMG_LOADER_TITLE'] = "Mass picture uploader";
+$MESS['ESOL_IX_INSERT_FIND_FIELD'] = "substituting the field";
+$MESS['ESOL_IX_POPUP_CRON_TITLE'] = "Cron settings";
+$MESS['ESOL_IX_POPUP_LIST_SETTINGS_TITLE'] = "Sheet import settings";
+$MESS['ESOL_IX_POPUP_NEW_PROPERTY_TITLE'] = "New property";
+$MESS['ESOL_IX_POPUP_HELP_TITLE'] = "Help";
+$MESS['ESOL_IX_IS_SECTION_NAME'] = "The cell contains a section name";
+$MESS['ESOL_IX_SECTION_FIELD_SETTINGS'] = "Import settings field";
+$MESS['ESOL_IX_RESET_ACTION'] = "Undo";
+$MESS['ESOL_IX_INSERT_ALL_FIND_VALUES'] = "Insert all the values found";
+$MESS['ESOL_IX_POPUP_SOURCE_EMAIL'] = "Import settings for Email-address";
+$MESS['ESOL_IX_SOURCE_EMAIL_SUCCESS'] = "Success";
+$MESS['ESOL_IX_SOURCE_EMAIL_FAIL'] = "Fail";
+$MESS['ESOL_IX_POPUP_SOURCE_LINKAUTH'] = "Import settings with authorization";
+$MESS['ESOL_IX_SOURCE_LAUTH_SUCCESS'] = "Download successful";
+$MESS['ESOL_IX_SOURCE_LAUTH_FAIL'] = "Error loading";
+$MESS['ESOL_IX_POPUP_MISSINGELEM_FIELDS_TITLE'] = "Field values for missing elements in the file";
+$MESS['ESOL_IX_POPUP_MISSINGOFFER_FIELDS_TITLE'] = "Field values for missing offers in the file";
+?>

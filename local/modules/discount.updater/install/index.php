@@ -25,8 +25,8 @@ class discount_updater extends CModule
         $this->MODULE_ID          = basename(dirname(dirname(__FILE__)));
         $this->MODULE_NAME        = 'Обновление скидочных карт';
         $this->MODULE_DESCRIPTION = 'Обновляет данные из xml-файла по скидочным картам клиентов сайта moshoztorg.ru';
-        $this->PARTNER_NAME       = 'ITsfera';
-        $this->PARTNER_URI        = 'http://web.it-sfera.ru';
+        $this->PARTNER_NAME       = 'ASDAFF';
+        $this->PARTNER_URI        = 'https://asdaff.github.io/';
         $this->MODULE_DIR         = rtrim(preg_replace('~[\\\\/]+~', '/', dirname(dirname(__FILE__))), '/');
 
         // Получаем версию модуля из файла

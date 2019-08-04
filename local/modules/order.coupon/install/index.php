@@ -29,8 +29,8 @@ class order_coupon extends CModule
         $this->MODULE_ID          = basename(dirname(dirname(__FILE__)));
         $this->MODULE_NAME        = 'Купон за заказ';
         $this->MODULE_DESCRIPTION = 'Создает персональный купон на следующую покупку при оплате заказа';
-        $this->PARTNER_NAME       = 'ITsfera';
-        $this->PARTNER_URI        = 'http://web.it-sfera.ru';
+        $this->PARTNER_NAME       = 'ASDAFF';
+        $this->PARTNER_URI        = 'https://asdaff.github.io/';
         $this->MODULE_DIR         = rtrim(preg_replace('~[\\\\/]+~', '/', dirname(dirname(__FILE__))), '/');
 
         // Получаем версию модуля из файла

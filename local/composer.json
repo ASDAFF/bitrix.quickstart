@@ -10,7 +10,8 @@
   "require": {
     "php": ">=5.6.0",
     "composer/installers": "~1.0",
-    "maximaster/tools.events": "dev-master"
+    "maximaster/tools.events": "dev-master",
+    "phpoffice/phpword": "v0.16.*"
   },
   "autoload": {
     "psr-4": {

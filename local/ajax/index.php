@@ -11,6 +11,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 if (isset($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["REQUEST_METHOD"] == "POST" && is_array($_POST["CALLBACK"])) {
     header("Cache-Control: no-store, no-cache, must-revalidate");
 
+
     $SITE_ID = $_POST["CALLBACK"]["SITE_ID"];
     $_POST["CALLBACK"]["DATE_ACTIVE_FROM"] = ConvertTimeStamp(time(), "FULL");
     $arr["MESSAGE"]["ERROR"] = 0;

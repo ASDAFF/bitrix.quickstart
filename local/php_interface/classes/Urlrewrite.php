@@ -231,7 +231,7 @@ class Urlrewrite {
          * @todo Организовать многоуровневое логирование и управление им в админке
          */
         $this->_aLogMessage[] = "";
-        $this->_aLogMessage[] = "==========LOG from Cosmos\UrlRewrite. Date " . date( "d:m:Y H:i:s" ) . "(time: " .  time(). ")==========";
+        $this->_aLogMessage[] = "==========LOG from UrlRewrite. Date " . date( "d:m:Y H:i:s" ) . "(time: " .  time(). ")==========";
         $this->_aLogMessage[] = "USER: " . print_r( $USER->GetID(), true );
         $this->_aLogMessage[] = "db_hash:\t" . $this->_getHashFile();
         $this->_aLogMessage[] = "file";

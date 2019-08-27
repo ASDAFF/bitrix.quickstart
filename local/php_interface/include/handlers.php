@@ -26,6 +26,13 @@ function loadLemaLib()
     \Bitrix\Main\Loader::includeModule('lema.lib');
 }
 
+////page start
+//AddEventHandler("main", "OnPageStart", "loadLocalLib", 1);
+//function loadLocalLib()
+//{
+//    Loader::includeModule('local.lib');
+//}
+
 AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
 AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
 

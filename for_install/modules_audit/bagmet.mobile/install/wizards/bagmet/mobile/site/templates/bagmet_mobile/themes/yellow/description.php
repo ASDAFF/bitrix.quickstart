@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME" => GetMessage("THEME_DEFAULT"), "SORT" => "200");?>

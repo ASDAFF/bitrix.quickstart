@@ -1,1 +1,0 @@
-<?define("bagmet_mobile_TEMPORARY_CACHE", "JzEHVXlgVQVqAn4xVDADKgB7");?>

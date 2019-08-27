@@ -1,2 +1,0 @@
-<?
-$MESS['UNIPLUG_LOGVIEWER_ADMIN_MENU_TITLE']	= 'Просмотр логов';

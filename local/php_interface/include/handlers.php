@@ -19,13 +19,6 @@ use \Bitrix\Main\Loader;
 
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
-//page start
-AddEventHandler('main', 'OnPageStart', 'loadLmLib', 1);
-function loadLmLib()
-{
-    \Bitrix\Main\Loader::includeModule('lm.lib');
-}
-
 ////page start
 //AddEventHandler("main", "OnPageStart", "loadLocalLib", 1);
 //function loadLocalLib()
@@ -53,7 +46,7 @@ AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCol
  * Подсветки PHP в редакторе
  **/
 if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
-    AddEventHandler("main", "OnEpilog", "InitPHPHighlight");
+    AddEventHandler("main", "OnEpilog", array("AdminArea", "InitPHPHighlight"));
 }
 
 /**
@@ -67,31 +60,6 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropSection', 'GetUserTypeDescription'));
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropElement', 'GetUserTypeDescription'));
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('PropertyHTML', 'GetUserTypeDescription'));
-
-
-/**
- * @TODO make all handlers
- */
-
-
-//BASKET
-//basket add
-AddEventHandler('sale', 'OnBeforeBasketAdd', array('Lm\Handlers\Basket', 'beforeAdd'));
-AddEventHandler('sale', 'OnBasketAdd', array('Lm\Handlers\Basket', 'afterAdd'));
-
-//basket update
-AddEventHandler('sale', 'OnBeforeBasketUpdate', array('Lm\Handlers\Basket', 'beforeUpdate'));
-AddEventHandler('sale', 'OnBasketUpdate', array('Lm\Handlers\Basket', 'afterUpdate'));
-
-// basket delete
-AddEventHandler('sale', 'OnBeforeBasketDelete', array('Lm\Handlers\Basket', 'beforeDelete'));
-AddEventHandler('sale', 'OnBasketDelete', array('Lm\Handlers\Basket', 'afterDelete'));
-
-//order
-AddEventHandler('sale', 'OnOrderAdd', array('Lm\Handlers\Order', 'afterAdd'));
-AddEventHandler('sale', 'OnOrderUpdate', array('Lm\Handlers\Order', 'afterUpdate'));
-
-
 
 
 /**

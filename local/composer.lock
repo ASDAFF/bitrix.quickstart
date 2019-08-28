@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -73,6 +73,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -95,6 +96,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -124,7 +126,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2019-08-12T15:00:31+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -431,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "9df68f12e2ebe2987ceee8bdfe1a04b8c3fe5691"
+                "reference": "a972943ac56895905d9cbaf103d17e9e25fb8b50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/9df68f12e2ebe2987ceee8bdfe1a04b8c3fe5691",
-                "reference": "9df68f12e2ebe2987ceee8bdfe1a04b8c3fe5691",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/a972943ac56895905d9cbaf103d17e9e25fb8b50",
+                "reference": "a972943ac56895905d9cbaf103d17e9e25fb8b50",
                 "shasum": ""
             },
             "require": {
@@ -516,7 +518,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2019-08-12T03:11:36+00:00"
+            "time": "2019-08-24T19:42:22+00:00"
         },
         {
             "name": "phpoffice/phpword",

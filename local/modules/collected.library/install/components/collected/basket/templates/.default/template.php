@@ -1,4 +1,8 @@
 <?php
+/**
+ * Copyright (c) 29/8/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     die();
 
@@ -6,7 +10,7 @@ use Bitrix\Main\Localization\Loc;
 
 Loc::loadMessages(__FILE__);
 
-$basket = new \Site\Basket\Basket();
+$basket = new \Collected\Basket\Basket();
 if($basket->hasProducts()):?>
     <div class="basket-page__table">
         <div class="basket-page__table_top">

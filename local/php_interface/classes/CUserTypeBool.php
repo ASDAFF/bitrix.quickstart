@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Логическое
  * Пользовательское свойство инфоблока
@@ -101,8 +101,3 @@ HTML;
   }
 
 }
-
-// добавляем тип для инфоблока
-AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeBool", "GetIBlockPropertyDescription"));
-/*// добавляем тип для главного модуля
-AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTypeDescription"));*/

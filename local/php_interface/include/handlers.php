@@ -41,6 +41,13 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblock
 AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
 AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyColor', 'GetUserTypeDescription')); // свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
 
+/**
+ * Пользовательское свойство инфоблока типа "Логическое" (true/false). Внешний вид - чекбокс.
+ */
+// добавляем тип для инфоблока
+AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeBool", "GetIBlockPropertyDescription"));
+/*// добавляем тип для главного модуля
+AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTypeDescription"));*/
 
 /**
  * Подсветки PHP в редакторе

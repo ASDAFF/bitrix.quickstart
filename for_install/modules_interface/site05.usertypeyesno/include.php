@@ -1,5 +1,5 @@
 <?
-//AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CUserTypeYesNo', 'GetUserTypeDescription')); //построение списка свойств инфоблока
+//AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CUserTypeYesNo', 'GetUserTypeDescription')); //РїРѕСЃС‚СЂРѕРµРЅРёРµ СЃРїРёСЃРєР° СЃРІРѕР№СЃС‚РІ РёРЅС„РѕР±Р»РѕРєР°
 
 $arClasses = array(
 	"CUserTypeYesNo" => "classes/usertypeyesno.php"

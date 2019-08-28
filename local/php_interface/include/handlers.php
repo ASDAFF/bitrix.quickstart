@@ -20,10 +20,10 @@ use \Bitrix\Main\Loader;
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
 //page start
-AddEventHandler('main', 'OnPageStart', 'loadLemaLib', 1);
-function loadLemaLib()
+AddEventHandler('main', 'OnPageStart', 'loadLmLib', 1);
+function loadLmLib()
 {
-    \Bitrix\Main\Loader::includeModule('lema.lib');
+    \Bitrix\Main\Loader::includeModule('lm.lib');
 }
 
 ////page start
@@ -76,20 +76,20 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
 
 //BASKET
 //basket add
-AddEventHandler('sale', 'OnBeforeBasketAdd', array('Lema\Handlers\Basket', 'beforeAdd'));
-AddEventHandler('sale', 'OnBasketAdd', array('Lema\Handlers\Basket', 'afterAdd'));
+AddEventHandler('sale', 'OnBeforeBasketAdd', array('Lm\Handlers\Basket', 'beforeAdd'));
+AddEventHandler('sale', 'OnBasketAdd', array('Lm\Handlers\Basket', 'afterAdd'));
 
 //basket update
-AddEventHandler('sale', 'OnBeforeBasketUpdate', array('Lema\Handlers\Basket', 'beforeUpdate'));
-AddEventHandler('sale', 'OnBasketUpdate', array('Lema\Handlers\Basket', 'afterUpdate'));
+AddEventHandler('sale', 'OnBeforeBasketUpdate', array('Lm\Handlers\Basket', 'beforeUpdate'));
+AddEventHandler('sale', 'OnBasketUpdate', array('Lm\Handlers\Basket', 'afterUpdate'));
 
 // basket delete
-AddEventHandler('sale', 'OnBeforeBasketDelete', array('Lema\Handlers\Basket', 'beforeDelete'));
-AddEventHandler('sale', 'OnBasketDelete', array('Lema\Handlers\Basket', 'afterDelete'));
+AddEventHandler('sale', 'OnBeforeBasketDelete', array('Lm\Handlers\Basket', 'beforeDelete'));
+AddEventHandler('sale', 'OnBasketDelete', array('Lm\Handlers\Basket', 'afterDelete'));
 
 //order
-AddEventHandler('sale', 'OnOrderAdd', array('Lema\Handlers\Order', 'afterAdd'));
-AddEventHandler('sale', 'OnOrderUpdate', array('Lema\Handlers\Order', 'afterUpdate'));
+AddEventHandler('sale', 'OnOrderAdd', array('Lm\Handlers\Order', 'afterAdd'));
+AddEventHandler('sale', 'OnOrderUpdate', array('Lm\Handlers\Order', 'afterUpdate'));
 
 
 

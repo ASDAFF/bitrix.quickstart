@@ -1,1 +1,0 @@
-drop table if exists b_askaron_ibvote_event;

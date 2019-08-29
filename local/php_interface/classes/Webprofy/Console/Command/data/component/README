@@ -1,6 +1,0 @@
-Usage:
-<?
-	$APPLICATION->IncludeComponent('%TWODOTS%', '.default', array(
-
-	));
-?>

@@ -50,6 +50,11 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeBool", "G
 AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTypeDescription"));*/
 
 /**
+ * Пользовательское свойство "Да/Нет в виде Input Checkbox (Флажок)
+ */
+AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "GetUserTypeDescription"), 50);
+
+/**
  * Подсветки PHP в редакторе
  **/
 if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {

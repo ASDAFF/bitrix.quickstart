@@ -1,6 +1,6 @@
 <?
-$MESS ['MAP_PHONE'] = "Òåëåôîí";
-$MESS ['MAP_ADRES'] = "Àäðåñ";
-$MESS ['MAP_WORK'] = "Ðåæèì ðàáîòû";
-$MESS ['MAP_STORE'] = "Ñêëàä";
+$MESS ['MAP_PHONE'] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS ['MAP_ADRES'] = "ÐÐ´Ñ€ÐµÑ";
+$MESS ['MAP_WORK'] = "Ð ÐµÐ¶Ð¸Ð¼ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹";
+$MESS ['MAP_STORE'] = "Ð¡ÐºÐ»Ð°Ð´";
 ?>

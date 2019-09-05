@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['CAT_BK_IBLOCK_TYPE'] = "Тип информационного блока";
 $MESS['CAT_BK_IBLOCK_IBLOCK'] = "Информационный блок";
 $MESS['CAT_BK_KEY'] = "Ключ для шифрования параметров формы";

@@ -1,4 +1,6 @@
- /*!
+ /*
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */ /*!
  * Thumbnail helper for fancyBox
  * version: 1.0.7 (Mon, 01 Oct 2012)
  * @requires fancyBox v2.0 or later

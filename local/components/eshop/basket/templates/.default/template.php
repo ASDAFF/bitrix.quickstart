@@ -81,4 +81,8 @@
 } else {
 	ShowError($arResult["ERROR_MESSAGE"]);
 }
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 ?>

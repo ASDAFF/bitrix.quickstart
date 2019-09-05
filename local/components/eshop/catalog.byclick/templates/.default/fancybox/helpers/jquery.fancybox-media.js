@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 /*!
  * Media helper for fancyBox
  * version: 1.0.5 (Tue, 23 Oct 2012)

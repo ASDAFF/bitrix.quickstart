@@ -1,4 +1,8 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 global $APPLICATION;
 if($arResult['SHOW_FORM']==1 and $arResult['CHECK_SPAM']!=1 and !$arResult['SENDFORM']) {
 $APPLICATION->RestartBuffer();

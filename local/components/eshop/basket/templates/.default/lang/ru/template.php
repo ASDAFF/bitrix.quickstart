@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['BEONO_BASKET_REFRESH'] = "Обновить";
 $MESS ['BEONO_BASKET_ORDER'] = "Оформить заказ";
 $MESS ['BEONO_BASKET_NAME'] = "Название";

@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['CAT_BK_FIELD_ERROR_NAME'] = "Введите ваше имя";
 $MESS['CAT_BK_FIELD_ERROR_EMAIL'] = "Email не указан";
 $MESS['CAT_BK_FIELD_ERROR_EMAIL2'] = "Неверный формат Email адреса";

@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['BEONO_BASKET_DESC_YES'] = "Да";
 $MESS ['BEONO_BASKET_DESC_NO'] = "Нет";
 $MESS ['BEONO_BASKET_PATH_TO_ORDER'] = "Страница оформления заказа";

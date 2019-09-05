@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['BEONO_BASKET_STYLE'] = "Стиль";
 $MESS['BEONO_BASKET_STYLE_SIMPLE'] = "Простой";
 $MESS['BEONO_BASKET_STYLE_BLUE'] = "Синий";

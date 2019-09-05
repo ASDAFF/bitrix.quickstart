@@ -36,7 +36,11 @@
 </thead>	
 <tbody>
 	<?
-	foreach($arResult["ITEMS"]['CURRENT'] as $arBasketItems):?>
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+foreach($arResult["ITEMS"]['CURRENT'] as $arBasketItems):?>
 		<tr>
 			<?if ($arParams["AJAX_ACTIONS"]!="Y"):?>
 			<td class="beono-basket-action">				

@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['LINK'] = "Ссылка на отдельную страницу с компонентом catalog.section и корзины (если не нужно, то оставляем пустым, по умолчанию на текущую страницу)";
 $MESS['USE_JQUERY'] = "Подключать JQuery (если уже подключен, то отключите здесь)";
 $MESS['USE_AJAXFORM'] = "Подключать Ajax Form Jquery (если уже подключен, то отключите здесь)";

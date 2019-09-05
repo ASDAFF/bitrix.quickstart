@@ -1,0 +1,17 @@
+###
+# MVC with URL route support
+# 
+# @category
+# @copyright	2014  LTD
+# @link		http://.ru
+###
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/ajax/index.php$
+  RewriteRule ^(.*)$ /ajax/index.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>

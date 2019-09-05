@@ -1,0 +1,106 @@
+#no-old-browser-frame {
+	border: none;
+	display: block;
+	height: 340px;
+	width: 100%;
+}
+.no-old-browser {
+	background: #1f2030;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 25px 100px;
+	position: relative;
+}
+.no-old-browser a,
+.no-old-browser a:link,
+.no-old-browser a:active,
+.no-old-browser a:visited {
+	color: #00ccff;
+}
+.no-old-browser a:hover {
+	color: #fff;
+}
+.no-old-browser-close {
+	background: url(images/close.gif) no-repeat top left;
+	display: block;
+	height: 28px;
+	position: absolute;
+	line-height: 28px;
+	right: 22px;
+	text-decoration: none;
+	top: 22px;
+	width: 27px;
+}
+.no-old-browser-video {
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	right: 110px;
+	top: 30px;
+}
+.no-old-browser-title {
+	font-size: 23px;
+	line-height: 35px;
+	margin-right: 160px;
+}
+.no-old-browser-icons {
+	border: 0;
+	border-collapse: separate;
+	font-size: 18px;
+	margin-top: 50px;
+	width: 100%;
+}
+.no-old-browser-icons td,
+.no-old-browser-icons tr {
+	border: 0;
+}
+.no-old-browser-icons td {
+	text-align: center;
+	width: 20%;
+}
+.no-old-browser-icons a {
+	display: block;
+	width: 100%;
+}
+.no-old-browser-icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer !important;
+	//cursor: hand;
+	display: block;
+	height: 130px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+.no-old-browser-chrome {
+	background-image: url(images/chrome.png) !important;
+	//background-image: none;
+	//filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/local/components/site/no.old.browser/images/chrome.png', sizingMethod='scale');
+	width: 114px;
+}
+.no-old-browser-safari {
+	background-image: url(images/safari.png) !important;
+	//background-image: none;
+	//filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/local/components/site/no.old.browser/images/safari.png', sizingMethod='scale');
+	width: 117px;
+}
+.no-old-browser-firefox {
+	background-image: url(images/firefox.png) !important;
+	//background-image: none;
+	//filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/local/components/site/no.old.browser/images/firefox.png', sizingMethod='scale');
+	width: 113px;
+}
+.no-old-browser-opera {
+	background-image: url(images/opera.png) !important;
+	//background-image: none;
+	//filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/local/components/site/no.old.browser/images/opera.png', sizingMethod='scale');
+	width: 104px;
+}
+.no-old-browser-ie {
+	background-image: url(images/ie.png) !important;
+	//background-image: none;
+	//filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/local/components/site/no.old.browser/images/ie.png', sizingMethod='scale');
+	width: 131px;
+}

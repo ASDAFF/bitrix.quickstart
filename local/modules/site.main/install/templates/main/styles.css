@@ -1,0 +1,78 @@
+/**
+ * @category
+ * @link		http://.ru
+ * @revision	$Revision$
+ * @date		$Date$
+ */
+
+
+
+
+/**
+* XXX: Шрифты 
+*/
+@font-face {
+	font-family: 'Rubl';
+	src: url('fonts/rouble.eot');
+	src: local('☺'), 
+		url('fonts/rouble.woff') format('woff'),
+		url('fonts/rouble.ttf') format('truetype'),
+		url('fonts/rouble.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/**
+* XXX: Стили по умолчанию 
+*/
+a[href] {
+	text-decoration: underline;
+}
+a:focus {
+	outline: none;
+}
+
+
+
+/* Псевдоссылки */
+a.fake {
+	border-bottom: 1px dashed;
+	text-decoration: none;
+}
+a.fake:hover {
+}
+
+
+
+
+/* Плоские списки (с обнулёнными стилями) */
+ul.flat,
+ol.flat {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.flat li,
+ol.flat li {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/* Картинки в тексте */
+.img-embed {
+	float: left;
+	margin: 0 1em .5em 0;
+}
+.img-embed-right {
+	float: right;
+	margin-left: .5em;
+	margin-right: 0;
+}

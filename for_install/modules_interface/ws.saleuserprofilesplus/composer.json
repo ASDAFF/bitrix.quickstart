@@ -1,8 +1,0 @@
-{
-    "name": "ws.saleuserprofilesplus",
-    "autoload": {
-        "psr-4": {
-            "WS\\SaleUserProfilesPlus\\": "lib"
-        }
-    }
-}

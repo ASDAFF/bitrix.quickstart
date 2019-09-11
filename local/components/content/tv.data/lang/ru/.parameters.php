@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS["DAYS"] = "Отметьте рабочие дни";
 $MESS["MONDAY"] = "Понедельник";
 $MESS["TUESDAY"] = "Вторник";

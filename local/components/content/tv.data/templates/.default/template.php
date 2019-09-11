@@ -3,6 +3,10 @@
 
 <div class='ys-timeline'>
 <? $arDays = array('MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY');
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 foreach ($arDays as $day): ?>
 	<div
 		<? 	if ($arParams[$day]=='Y'):?>

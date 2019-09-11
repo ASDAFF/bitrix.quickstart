@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['KFF_OK_MESSAGE'] = "Your message is accepted. Our managers will contact you in the nearest future. Have a nice day.";
 $MESS ['KFF_REQ_NAME'] = "Please type your name.";
 $MESS ['KFF_REQ_PHONE'] = "Please type your phone.";

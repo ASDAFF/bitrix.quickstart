@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['KFF_CAPTCHA'] = "To use protection against automatic messages (CAPTCHA) for not authorized users";
 $MESS ['KFF_OK_MESSAGE'] = "The message, displayed to the user after sending";
 $MESS ['KFF_OK_TEXT'] = "Your message is accepted. Our managers will contact you in the nearest future. Have a nice day.";

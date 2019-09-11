@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['COMPONENT_FOLDER_NAME'] = "КРЕАТТИКА";
 $MESS ['COMPONENT_SUBFOLDER_NAME'] = "Формы";
 $MESS ['MAIN_FEEDBACK_COMPONENT_NAME'] = "Настраиваемая форма обратной связи";

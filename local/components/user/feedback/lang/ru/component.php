@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['KFF_OK_MESSAGE'] = "Ваше сообщение принято. Наши менеджеры свяжутся с Вами в самое ближайшее время. Удачного дня.";
 $MESS ['KFF_REQ_NAME'] = "Укажите ваше имя.";
 $MESS ['KFF_REQ_PHONE'] = "Укажите ваш телефон.";

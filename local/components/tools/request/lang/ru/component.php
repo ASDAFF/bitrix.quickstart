@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS["MD_OK_MESSAGE"] = "Спасибо, ваше сообщение принято.";
 $MESS["MD_REQ_NAME"] = "Укажите ваше имя.";
 $MESS["MD_REQ_EMAIL"] = "Укажите E-mail, на который хотите получить ответ.";

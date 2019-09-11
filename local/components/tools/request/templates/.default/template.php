@@ -5,6 +5,10 @@
 	foreach($arResult["ERROR_MESSAGE"]["CUSTOM"] as $v)
 		ShowError($v);
 }
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if(strlen($arResult["OK_MESSAGE"]) > 0)
 {
 	?><div style='color:green; margin-bottom:15px;' class="mf-ok-text"><?=$arResult["OK_MESSAGE"]?></div><?

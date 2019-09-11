@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['MAIN_PARAMS'] = "Main settings";
 $MESS ['ADDITIONAL_PARAMS'] = "Additional Settings";
 $MESS ['C_FORM_ID'] = "Name form with CAPTCHA";

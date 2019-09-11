@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!window.BX_YMapAddPlacemark)
 {
 	window.BX_YMapAddPlacemark = function(map, arPlacemark)

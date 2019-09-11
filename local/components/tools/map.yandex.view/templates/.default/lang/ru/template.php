@@ -1,8 +1,12 @@
 <?
-$MESS['MYMS_TPL_SEARCH'] = 'Поиск по адресу';
-$MESS['MYMS_TPL_SUBMIT'] = 'Искать';
-$MESS['MYMS_TPL_JS_ERROR'] = 'Ошибка';
-$MESS['MYMS_TPL_JS_SEARCH'] = 'Результаты поиска';
-$MESS['MYMS_TPL_JS_RESULTS'] = 'результатов найдено';
-$MESS['MYMS_TPL_JS_RESULTS_EMPTY'] = 'Ничего не найдено';
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS['MYMS_TPL_SEARCH'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_TPL_SUBMIT'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_TPL_JS_ERROR'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_TPL_JS_SEARCH'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_TPL_JS_RESULTS'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_TPL_JS_RESULTS_EMPTY'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
 ?>

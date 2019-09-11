@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS["MD_ALLOW_NONUSER"]="Разрешать оставлять обращения без авторизации";
 $MESS["MD_AUTO_REG"]="Регистрировать пользователя при обращении";
 $MESS["MD_EXT_FIELDS"]="Доп. поля для вывода";

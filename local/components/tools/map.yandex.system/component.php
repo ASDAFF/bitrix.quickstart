@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 if (!isset($arParams['YANDEX_VERSION']))
@@ -51,7 +55,7 @@ if (!defined('BX_YMAP_SCRIPT_LOADED'))
 			'<script src="http://api-maps.yandex.ru/'.$arParams['YANDEX_VERSION'].'/?key='.$arParams['KEY'].'&wizard=bitrix'.$modules.'" type="text/javascript" charset="utf-8"></script>'
 		);
 		$APPLICATION->AddHeadString(
-			'<script type="text/javascript">YMaps.MapType.PMAP.setName("Схема НК");YMaps.MapType.PHYBRID.setName("Гибрид НК");</script>'
+			'<script type="text/javascript">YMaps.MapType.PMAP.setName("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ");YMaps.MapType.PHYBRID.setName("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ");</script>'
 		);
 		$APPLICATION->AddHeadString('<script type="text/javascript">window.plainstyle = "'.htmlspecialchars($arParams['PLAINSTYLE']).'";</script>');
 		define('BX_YMAP_SCRIPT_LOADED', 1);

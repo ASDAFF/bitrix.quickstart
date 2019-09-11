@@ -1,35 +1,39 @@
 <?
-$MESS ['MYMV_SET_POPUP_TITLE'] = "Настройки карты";
-$MESS ['MYMV_SET_POPUP_WINDOW_TITLE'] = "Редактирование настроек карты";
-$MESS ['MYMV_SET_POPUP_WINDOW_DESCRIPTION'] = "Управление видом карты и списком отображаемых объектов";
-$MESS ['MYMV_SET_START_POS'] = "Начальная позиция карты";
-$MESS ['MYMV_SET_START_POS_FIX'] = "зафиксировать";
-$MESS ['MYMV_SET_START_POS_RESTORE'] = "восстановить";
-$MESS ['MYMV_SET_START_POS_LAT'] = "Широта";
-$MESS ['MYMV_SET_START_POS_LON'] = "Долгота";
-$MESS ['MYMV_SET_START_POS_SCALE'] = "Масштаб";
-$MESS ['MYMV_SET_START_POS_VIEW'] = "Вид";
-$MESS ['MYMV_SET_POINTS'] = "Точки карты";
-$MESS ['MYMV_SET_POINTS_ADD'] = "Добавить точки";
-$MESS ['MYMV_SET_POINTS_ADD_DESCRIPTION'] = "Отметьте двойным щелчком мыши произвольное количество точек на карте.";
-$MESS ['MYMV_SET_POINTS_ADD_FINISH'] = "Закончить";
-$MESS ['MYMV_SET_SUBMIT'] = "Сохранить";
-$MESS ['MYMV_SET_NONAME'] = "--- без названия ---";
-$MESS ['MYMS_PARAM_INIT_MAP_TYPE_MAP'] = "схема";
-$MESS ['MYMS_PARAM_INIT_MAP_TYPE_SATELLITE'] = "спутник";
-$MESS ['MYMS_PARAM_INIT_MAP_TYPE_HYBRID'] = "гибрид";
-$MESS ['MYMS_PARAM_INIT_MAP_NOTHING_FOUND'] = "(не найдено)";
-$MESS ['MYMV_SET_ADDRESS_SEARCH'] = "Найти на карте";
-$MESS ['MYMV_SET_POLY'] = "Линии на карте";
-$MESS ['MYMV_SET_POLY_ADD'] = "Добавить линию";
-$MESS ['MYMV_SET_POLY_START_POINT'] = "Старт";
-$MESS ['MYMV_SET_POLY_ADD_DESCRIPTION'] = "Отметьте двойным щелчком мыши начальную точку линии.";
-$MESS ['MYMV_SET_POLY_ADD_DESCRIPTION1'] = "Теперь отметьте щелчками мыши точки линии. Нажмите на балун на конце линии для ее завершения.";
-$MESS ['MYMV_SET_POLY_ADD_FINISH'] = "Закончить добавление линий.";
-$MESS ['MYMV_SET_POLY_SETTINGS'] = "Настройки";
-$MESS ['MYMV_SET_POLY_TITLE'] = "Название";
-$MESS ['MYMV_SET_POLY_COLOR'] = "Цвет линии";
-$MESS ['MYMV_SET_POLY_WIDTH'] = "Толщина (px)";
-$MESS ['MYMV_SET_POLY_OPACITY'] = "Непрозрачность (%)";
-$MESS ['MYMV_SET_POLY_FINISH'] = "Закончить";
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS ['MYMV_SET_POPUP_TITLE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POPUP_WINDOW_TITLE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POPUP_WINDOW_DESCRIPTION'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_FIX'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_RESTORE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_LAT'] = "пїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_LON'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_SCALE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_START_POS_VIEW'] = "пїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POINTS'] = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POINTS_ADD'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POINTS_ADD_DESCRIPTION'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.";
+$MESS ['MYMV_SET_POINTS_ADD_FINISH'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_SUBMIT'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_NONAME'] = "--- пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ---";
+$MESS ['MYMS_PARAM_INIT_MAP_TYPE_MAP'] = "пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMS_PARAM_INIT_MAP_TYPE_SATELLITE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMS_PARAM_INIT_MAP_TYPE_HYBRID'] = "пїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMS_PARAM_INIT_MAP_NOTHING_FOUND'] = "(пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)";
+$MESS ['MYMV_SET_ADDRESS_SEARCH'] = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY'] = "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_ADD'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_START_POINT'] = "пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_ADD_DESCRIPTION'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.";
+$MESS ['MYMV_SET_POLY_ADD_DESCRIPTION1'] = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.";
+$MESS ['MYMV_SET_POLY_ADD_FINISH'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ.";
+$MESS ['MYMV_SET_POLY_SETTINGS'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_TITLE'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_COLOR'] = "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ";
+$MESS ['MYMV_SET_POLY_WIDTH'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (px)";
+$MESS ['MYMV_SET_POLY_OPACITY'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (%)";
+$MESS ['MYMV_SET_POLY_FINISH'] = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 ?>

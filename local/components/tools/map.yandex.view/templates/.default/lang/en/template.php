@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['MYMS_TPL_SEARCH'] = "Search Address";
 $MESS['MYMS_TPL_SUBMIT'] = "Search";
 $MESS['MYMS_TPL_JS_ERROR'] = "Error";

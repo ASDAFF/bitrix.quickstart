@@ -1,4 +1,7 @@
 <? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
 
 if ($this->StartResultCache())
 {
@@ -8,8 +11,8 @@ if ($this->StartResultCache())
     $templateFolder = $template->GetFolder() ;
     $codePath = $_SERVER["DOCUMENT_ROOT"] . $template->GetFolder() . "/code.php" ;
 
-    /* В папке шаблона должен лежать файл code.php,
-        в котором выполняются операции с $arResult */
+    /* пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ code.php,
+        пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ $arResult */
     if(file_exists( $codePath )){
         include $codePath;
     }

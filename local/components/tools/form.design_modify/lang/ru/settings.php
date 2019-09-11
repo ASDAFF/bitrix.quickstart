@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['ACCESS_DENIED']="Необходимо авторизоваться.";
 $MESS['TITLE']="Дополнительные настройки формы";
 $MESS['TITLE2']="Дополнительные настройки полей формы";

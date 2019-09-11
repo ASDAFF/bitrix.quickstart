@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 $MAP_KEY = '';
@@ -35,8 +39,8 @@ $arComponentParameters = array(
 				'MAP' => GetMessage('MYMS_PARAM_INIT_MAP_TYPE_MAP'),
 				'SATELLITE' => GetMessage('MYMS_PARAM_INIT_MAP_TYPE_SATELLITE'),
 				'HYBRID' => GetMessage('MYMS_PARAM_INIT_MAP_TYPE_HYBRID'),
-				'PMAP' => 'Схема (Народная карта)',
-				'PHYBRID' => 'Гибрид (Народная карта)'
+				'PMAP' => 'пїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)',
+				'PHYBRID' => 'пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)'
 			),
 			'DEFAULT' => 'PMAP',
 			'ADDITIONAL_VALUES' => 'N',
@@ -44,10 +48,10 @@ $arComponentParameters = array(
 		),
 		
 		'PLAINSTYLE' => array(
-			'NAME' => "Цвет и стиль метки",
+			'NAME' => "пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ",
 			'TYPE' => 'LIST',
 			'VALUES' => array(
-				"default#lightbluePoint" => "стандартный",
+				"default#lightbluePoint" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 				"default#lightblueSmallPoint" => "default#lightblueSmallPoint",          
 				"default#whiteSmallPoint" => "default#whiteSmallPoint",
 				"default#whitePoint" => "default#whitePoint",

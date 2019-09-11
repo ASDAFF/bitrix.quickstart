@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['COMP_FORM_PARAMS_WEB_FORM_ID'] = "Заменяемые веб-формы";
 $MESS ['WEB_FORM_DATA_SET'] = "Изменить";
 $MESS ['SELECT_NONE'] = "(не выбрано)";

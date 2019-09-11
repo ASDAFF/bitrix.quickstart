@@ -1,23 +1,27 @@
 <?
-$MESS['MYMS_PARAM_KEY'] = 'Ключ доступа';
-$MESS['MYMS_PARAM_INIT_MAP_TYPE'] = 'Стартовый тип карты';
-$MESS['MYMS_PARAM_INIT_MAP_TYPE_MAP'] = 'схема';
-$MESS['MYMS_PARAM_INIT_MAP_TYPE_SATELLITE'] = 'спутник';
-$MESS['MYMS_PARAM_INIT_MAP_TYPE_HYBRID'] = 'гибрид';
-$MESS['MYMS_PARAM_OPTIONS'] = 'Настройки';
-$MESS['MYMS_PARAM_OPTIONS_ENABLE_SCROLL_ZOOM'] = 'изменение масштаба колесом мыши';
-$MESS['MYMS_PARAM_OPTIONS_ENABLE_DBLCLICK_ZOOM'] = 'изменение масштаба двойным щелчком мыши';
-$MESS['MYMS_PARAM_OPTIONS_ENABLE_DRAGGING'] = 'перетаскивание карты';
-$MESS['MYMS_PARAM_OPTIONS_ENABLE_HOTKEYS'] = 'горячие клавиши';
-$MESS['MYMS_PARAM_OPTIONS_ENABLE_RULER'] = 'инструмент "линейка"';
-$MESS['MYMS_PARAM_CONTROLS'] = 'Элементы управления';
-$MESS['MYMS_PARAM_CONTROLS_TOOLBAR'] = 'Панель инструментов';
-$MESS['MYMS_PARAM_CONTROLS_ZOOM'] = 'Ползунок масштаба';
-$MESS['MYMS_PARAM_CONTROLS_SMALLZOOM'] = 'Кнопки масштаба';
-$MESS['MYMS_PARAM_CONTROLS_MINIMAP'] = 'Мини-карта';
-$MESS['MYMS_PARAM_CONTROLS_TYPECONTROL'] = 'Тип карты';
-$MESS['MYMS_PARAM_CONTROLS_SCALELINE'] = 'Шкала масштаба';
-$MESS['MYMS_PARAM_MAP_HEIGHT'] = 'Высота карты';
-$MESS['MYMS_PARAM_MAP_WIDTH'] = 'Ширина карты';
-$MESS['MYMS_PARAM_MAP_ID'] = 'Идентификатор карты';
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS['MYMS_PARAM_KEY'] = 'пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_INIT_MAP_TYPE'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_INIT_MAP_TYPE_MAP'] = 'пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_INIT_MAP_TYPE_SATELLITE'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_INIT_MAP_TYPE_HYBRID'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS_ENABLE_SCROLL_ZOOM'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS_ENABLE_DBLCLICK_ZOOM'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS_ENABLE_DRAGGING'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS_ENABLE_HOTKEYS'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_OPTIONS_ENABLE_RULER'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ"';
+$MESS['MYMS_PARAM_CONTROLS'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_TOOLBAR'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_ZOOM'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_SMALLZOOM'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_MINIMAP'] = 'пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_TYPECONTROL'] = 'пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_CONTROLS_SCALELINE'] = 'пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_MAP_HEIGHT'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_MAP_WIDTH'] = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
+$MESS['MYMS_PARAM_MAP_ID'] = 'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
 ?>

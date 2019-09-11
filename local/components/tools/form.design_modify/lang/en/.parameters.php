@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['COMP_FORM_PARAMS_WEB_FORM_ID'] = "Replaceable Web forms";
 $MESS ['WEB_FORM_DATA_SET'] = "Change";
 $MESS ['SELECT_NONE'] = "(not selected)";

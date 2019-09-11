@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS["MYMS_PARAM_KEY"] = "Access Key";
 $MESS["MYMS_PARAM_INIT_MAP_TYPE"] = "Initial Map Type";
 $MESS["MYMS_PARAM_INIT_MAP_TYPE_MAP"] = "Map";

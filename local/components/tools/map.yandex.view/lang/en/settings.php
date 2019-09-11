@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS ['MYMV_SET_POPUP_TITLE'] = "Map Settings";
 $MESS ['MYMV_SET_POPUP_WINDOW_TITLE'] = "Edit Map Settings";
 $MESS ['MYMV_SET_POPUP_WINDOW_DESCRIPTION'] = "Configure map layout and visible objects";

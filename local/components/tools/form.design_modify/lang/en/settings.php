@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS['ACCESS_DENIED']="You must log in.";
 $MESS['TITLE']="Additional settings form";
 $MESS['TITLE2']="Advanced preferences form fields";

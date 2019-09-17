@@ -1,5 +1,9 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
-//отправка данных из форм
+/**
+ * Copyright (c) 17/9/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+//РѕС‚РїСЂР°РІРєР° РґР°РЅРЅС‹С… РёР· С„РѕСЂРј
 
 $email_to = "";
 $outName = "";
@@ -7,31 +11,31 @@ $outPhone = "";
 $outText = "";
 $message = "";
 
-//e-mail кому отправляем
+//e-mail РєРѕРјСѓ РѕС‚РїСЂР°РІР»СЏРµРј
 if(isset($_POST['EMAIL_TO']))
 {
 	$email_to = $_POST['EMAIL_TO'];
 }
-//имя
+//РёРјСЏ
 if(isset($_POST['NAME']))
 {
 	$message .= "\r\n".GetMessage("WAPXAZ_AJAXFORM_IMA").$_POST['NAME'];
 }
-//телефон
+//С‚РµР»РµС„РѕРЅ
 if(isset($_POST['PHONE']))
 {
 	$message .= "\r\n".GetMessage("WAPXAZ_AJAXFORM_TELEFON").$_POST['PHONE'];
 }
-//текст сообщения
+//С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
 if(isset($_POST['MESSAGE']))
 {
 	$message .= "\r\n".GetMessage("WAPXAZ_AJAXFORM_TEKST_SOOBSENIA").$_POST['MESSAGE'];
 }
 
-//отправляем c e-mail, указанный в настройках сайта
+//РѕС‚РїСЂР°РІР»СЏРµРј c e-mail, СѓРєР°Р·Р°РЅРЅС‹Р№ РІ РЅР°СЃС‚СЂРѕР№РєР°С… СЃР°Р№С‚Р°
 $rsSites = CSite::GetByID(SITE_ID); 
 $arSite = $rsSites->Fetch(); 
-$email_from = $arSite["EMAIL"];//email админа(из настроек сайта)
+$email_from = $arSite["EMAIL"];//email Р°РґРјРёРЅР°(РёР· РЅР°СЃС‚СЂРѕРµРє СЃР°Р№С‚Р°)
 
 if($email_to != "") { 
 	mail($email_to, GetMessage("WAPXAZ_AJAXFORM_DANNYE_S_FORMY"), $message, "From: ".$email_from." \r\n");

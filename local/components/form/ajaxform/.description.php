@@ -11,6 +11,7 @@ $arComponentDescription = array(
         "ID" => "ASDAFF",
         "CHILD" => array(
             "ID" => "feedback",
+            "NAME" => "Формы",
             "SORT" => 10,
             "CHILD" => array(
                 "ID" => "form",

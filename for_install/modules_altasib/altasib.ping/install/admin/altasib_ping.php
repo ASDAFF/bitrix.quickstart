@@ -1,1 +1,0 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/altasib.ping/admin/altasib_ping.php");?>

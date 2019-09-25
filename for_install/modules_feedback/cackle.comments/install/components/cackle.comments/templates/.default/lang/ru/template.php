@@ -1,6 +1,0 @@
-<?
-$MESS["CACKLE_COMPONENT_NAME"] = "Cackle";
-$MESS["CACKLE_COMPONENT_DESC"] = "Cackle";
-$MESS["CACKLE_MODULE_NAME"] = "Cackle";
-
-?>

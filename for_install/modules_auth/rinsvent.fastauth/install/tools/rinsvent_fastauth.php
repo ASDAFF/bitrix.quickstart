@@ -1,1 +1,0 @@
-<?php require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/rinsvent.fastauth/tools/rinsvent_fastauth.php"); ?>

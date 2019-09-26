@@ -9,11 +9,11 @@ $arComponentDescription = array(
 	"PATH" => array(
 		"ID" => "ASDAFF",
 		"NAME" => GetMessage("MLIFE"),
-		"CHILD" => array(
-			"ID" => 'media',
-			"NAME" => GetMessage("MLIFE_GALERY"),
-			"SORT" => 10,
-		),
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 );
 ?>

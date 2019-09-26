@@ -9,14 +9,11 @@ $arComponentDescription = array(
 	"SORT" => 30,
 	"PATH" => array(
 		"ID" => "ASDAFF",
-		"CHILD" => array(
-			"ID" => "catalog",
-			"NAME" => GetMessage("T_IBLOCK_DESC_CATALOG"),
-			"SORT" => 30,
-			"CHILD" => array(
-				"ID" => "catalog_cmpx",
-			),
-		),
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 );
 

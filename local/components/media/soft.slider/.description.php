@@ -10,11 +10,11 @@ $arComponentDescription = array(
 	"PATH" => array(
 		"ID" => "ASDAFF",
 		"NAME" => GetMessage("ENERGOSOFT"),
-		"CHILD" => array(
-			"ID" => "custom",
-			"NAME" => GetMessage("ENERGOSOFT_GROUP"),
-			"SORT" => 30,
-		),
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 );
 ?>

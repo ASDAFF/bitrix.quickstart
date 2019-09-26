@@ -7,10 +7,11 @@ $arComponentDescription = array(
 	"ICON" => "/images/icon.gif",
 	"PATH" => array(
 		"ID" => "ASDAFF",
-		"CHILD" => array(
-			"ID" => "media",
-			"NAME" => GetMessage("APROF_LENTAZOOM_RAZNOE")
-		)
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 );
 ?>

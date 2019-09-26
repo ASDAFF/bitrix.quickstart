@@ -10,11 +10,11 @@ $arComponentDescription = array(
 	"PATH" => array(
 		"ID" => "ASDAFF",
 		"NAME" => GetMessage("INSECO"),
-		"CHILD" => array(
-			"ID" => "INSECO_MULTIMEDIA",
-			"NAME" => GetMessage("INSECO_GROUP"),
-			"SORT" => 30,
-		),
+        "CHILD" => array(
+            "ID" => "media",
+            "NAME" => "Мультимедия",
+            "SORT" => 30
+        ),
 	),
 );
 ?>

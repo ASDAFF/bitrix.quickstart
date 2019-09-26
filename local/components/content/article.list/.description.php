@@ -1,4 +1,8 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $arComponentDescription = array(
 	"NAME" => 'Статьи деревом',
 	"ICON" => "/images/icon.gif",
@@ -7,8 +11,8 @@ $arComponentDescription = array(
 		"ID" => "ASDAFF",
         "NAME" => "ASDAFF",
 		"CHILD" => array(
-            "ID" => 'Статьи и новости',
-			"NAME" => 'Статьи и новости',
+            "ID" => "content",
+            "NAME" => 'Контент',
 			"SORT" => 30
 		),
 	),

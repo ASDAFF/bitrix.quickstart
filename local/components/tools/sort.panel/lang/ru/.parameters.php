@@ -1,14 +1,17 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
+/**
+ * Copyright (c) 26/9/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
 
-$MESS['SORT_PANEL_IBLOCK_TYPE_TITLE']       = 'Òèï èíôîáëîêà';
-$MESS['SORT_PANEL_IBLOCK_ID_TITLE']         = 'Èíôîáëîê';
-$MESS['SORT_PANEL_PROPERTY_CODE_TITLE']     = 'Ñâîéñòâà äëÿ ñîðòèðîâêè (ìíîæåñòâåííîå)';
-$MESS['SORT_PANEL_FIELD_CODE_TITLE']        = 'Ïîëÿ äëÿ ñîðòèðîâêè (ìíîæåñòâåííîå)';
-$MESS['SORT_PANEL_PRICE_CODE_TITLE']        = 'Òèï öåíû äëÿ ñîðòèðîâêè (ìíîæåñòâåííîå)';
-$MESS['SORT_PANEL_SORT_ORDER_TITLE']        = 'Äîñòóïíûå íàïðàâëåíèÿ ñîðòèðîâêè';
-$MESS['SORT_PANEL_PREFIX_NAME_CODE']        = 'Çíà÷åíèå äîï.êîäà íàçâàíèÿ è íàïðàâëåíèÿ ñîðòèðîâêè (äëÿ óíèêàëüíîñòè)';
-$MESS['SORT_PANEL_INCLUDE_SORT_TO_SESSION'] = 'Õðàíèòü çíà÷åíèå ñâîéñòâà è íàïðàâëåíèÿ ñîðòèðîâêè â ñåññèè ïîëüçîâàòåëÿ';
-$MESS['SORT_PANEL_CODE_SORT_RETURN']        = 'Âûâîäèòü êîä ñâîéñòâà ñîðòèðîâêè â ãëîáàëüíóþ ïåðåìåííóþ ñ íàçâàíèåì';
-$MESS['SORT_PANEL_CODE_ORDER_RETURN']       = 'Âûâîäèòü êîä íàïðàâëåíèÿ ñîðòèðîâêè â ãëîáàëüíóþ ïåðåìåííóþ ñ íàçâàíèåì';
+$MESS['SORT_PANEL_IBLOCK_TYPE_TITLE']       = 'Ð¢Ð¸Ð¿ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ°';
+$MESS['SORT_PANEL_IBLOCK_ID_TITLE']         = 'Ð˜Ð½Ñ„Ð¾Ð±Ð»Ð¾Ðº';
+$MESS['SORT_PANEL_PROPERTY_CODE_TITLE']     = 'Ð¡Ð²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ (Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ)';
+$MESS['SORT_PANEL_FIELD_CODE_TITLE']        = 'ÐŸÐ¾Ð»Ñ Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ (Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ)';
+$MESS['SORT_PANEL_PRICE_CODE_TITLE']        = 'Ð¢Ð¸Ð¿ Ñ†ÐµÐ½Ñ‹ Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ (Ð¼Ð½Ð¾Ð¶ÐµÑÑ‚Ð²ÐµÐ½Ð½Ð¾Ðµ)';
+$MESS['SORT_PANEL_SORT_ORDER_TITLE']        = 'Ð”Ð¾ÑÑ‚ÑƒÐ¿Ð½Ñ‹Ðµ Ð½Ð°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸';
+$MESS['SORT_PANEL_PREFIX_NAME_CODE']        = 'Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð¿.ÐºÐ¾Ð´Ð° Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ñ Ð¸ Ð½Ð°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ (Ð´Ð»Ñ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸)';
+$MESS['SORT_PANEL_INCLUDE_SORT_TO_SESSION'] = 'Ð¥Ñ€Ð°Ð½Ð¸Ñ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° Ð¸ Ð½Ð°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð² ÑÐµÑÑÐ¸Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ';
+$MESS['SORT_PANEL_CODE_SORT_RETURN']        = 'Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ ÐºÐ¾Ð´ ÑÐ²Ð¾Ð¹ÑÑ‚Ð²Ð° ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð² Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ Ñ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÐµÐ¼';
+$MESS['SORT_PANEL_CODE_ORDER_RETURN']       = 'Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ ÐºÐ¾Ð´ Ð½Ð°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð² Ð³Ð»Ð¾Ð±Ð°Ð»ÑŒÐ½ÑƒÑŽ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½ÑƒÑŽ Ñ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸ÐµÐ¼';

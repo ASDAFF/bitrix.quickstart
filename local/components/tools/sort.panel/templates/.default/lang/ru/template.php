@@ -1,6 +1,9 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
+/**
+ * Copyright (c) 26/9/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
 
-$MESS['CODEBLOGPRO_SORT_PANEL_COMPONENT_TEMPALTE_SORT_BY_VALUE']    = 'Ñîðòèðîâàòü ïî';
-$MESS['CODEBLOGPRO_SORT_PANEL_COMPONENT_TEMPALTE_SORT_ORDER_VALUE'] = 'Íàïðàâëåíèå ñîðòèðîâêè';
+$MESS['CODEBLOGPRO_SORT_PANEL_COMPONENT_TEMPALTE_SORT_BY_VALUE']    = 'Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾';
+$MESS['CODEBLOGPRO_SORT_PANEL_COMPONENT_TEMPALTE_SORT_ORDER_VALUE'] = 'ÐÐ°Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸';

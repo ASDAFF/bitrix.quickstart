@@ -1,17 +1,20 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     die();
 }
+/**
+ * Copyright (c) 26/9/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
 
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_NO_MODULE']                   = 'Модуль не установлен';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_ASC_VALUE']        = 'по возрастанию';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_NULL_ASC_VALUE']   = 'по возрастанию с пустыми значениями в начале выборки';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_ASC_NULLS_VALUE']  = 'по возрастанию с пустыми значениями в конце выборки';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_DESC_VALUE']       = 'по убыванию';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_NULLS_DESC_VALUE'] = 'по убыванию с пустыми значениями в начале выборки';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_DESC_NULLS_VALUE'] = 'по убыванию с пустыми значениями в конце выборки';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_NAME_VALUE']       = 'По названию';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_RAND_VALUE']       = 'В случайном порядке';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_ACTIVE_VALUE']     = 'Признак активности элемента';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_SORT_VALUE']       = 'По индексу сортировки';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_POPULAR_VALUE']    = 'По популярности';
-$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_DATE_VALUE']       = 'По новизне';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_NO_MODULE']                   = 'РњРѕРґСѓР»СЊ РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_ASC_VALUE']        = 'РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_NULL_ASC_VALUE']   = 'РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ СЃ РїСѓСЃС‚С‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё РІ РЅР°С‡Р°Р»Рµ РІС‹Р±РѕСЂРєРё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_ASC_NULLS_VALUE']  = 'РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ СЃ РїСѓСЃС‚С‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё РІ РєРѕРЅС†Рµ РІС‹Р±РѕСЂРєРё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_DESC_VALUE']       = 'РїРѕ СѓР±С‹РІР°РЅРёСЋ';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_NULLS_DESC_VALUE'] = 'РїРѕ СѓР±С‹РІР°РЅРёСЋ СЃ РїСѓСЃС‚С‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё РІ РЅР°С‡Р°Р»Рµ РІС‹Р±РѕСЂРєРё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_ORDER_DESC_NULLS_VALUE'] = 'РїРѕ СѓР±С‹РІР°РЅРёСЋ СЃ РїСѓСЃС‚С‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё РІ РєРѕРЅС†Рµ РІС‹Р±РѕСЂРєРё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_NAME_VALUE']       = 'РџРѕ РЅР°Р·РІР°РЅРёСЋ';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_RAND_VALUE']       = 'Р’ СЃР»СѓС‡Р°Р№РЅРѕРј РїРѕСЂСЏРґРєРµ';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_ACTIVE_VALUE']     = 'РџСЂРёР·РЅР°Рє Р°РєС‚РёРІРЅРѕСЃС‚Рё СЌР»РµРјРµРЅС‚Р°';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_SORT_VALUE']       = 'РџРѕ РёРЅРґРµРєСЃСѓ СЃРѕСЂС‚РёСЂРѕРІРєРё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_POPULAR_VALUE']    = 'РџРѕ РїРѕРїСѓР»СЏСЂРЅРѕСЃС‚Рё';
+$MESS['COMPONENT_SORT_PANEL_COMPONENT_SORT_TYPES_DATE_VALUE']       = 'РџРѕ РЅРѕРІРёР·РЅРµ';

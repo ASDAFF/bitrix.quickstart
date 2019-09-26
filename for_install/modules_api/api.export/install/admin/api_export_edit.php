@@ -1,1 +1,0 @@
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/api.export/admin/edit.php"); ?>

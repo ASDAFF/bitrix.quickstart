@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 26/9/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 $arComponentDescription = array(
@@ -7,7 +11,7 @@ $arComponentDescription = array(
 	"ICON" => "/images/icon.gif",
 	"SORT" => 100,
 	"PATH" => array(
-		"ID" => "codeblog.pro",
+		"ID" => "ASDAFF",
 		"SORT" => 500,
 		"NAME" => GetMessage("CODEBLOGPRO_SORT.PANEL_COMPONENTS_FOLDER_NAME"),
 		"CHILD" => array(

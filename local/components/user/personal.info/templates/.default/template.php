@@ -4,9 +4,9 @@
 </script>
 <div id="mainProfile">
 	<form action="" method="GET" id="personalForm">
-		<table class="profileTable">
-			<tr>
-				<td class="left">
+		<div class="row profileTable">
+
+				<div class="col-xl-6">
 					<span class="heading"><?=GetMessage("HEADING")?></span>
 					<ul class="profileSettings">
 	                    <li>
@@ -32,8 +32,8 @@
 	                            <a href="#" class="submit"><?=GetMessage("SAVE")?></a>
 	                    </li>
 	                </ul>
-	    		</td>
-				<td class="right">
+	    		</div>
+				<div class="col-xl-6">
 					<div class="wrap">
 						<span class="heading"><?=GetMessage("SETTINGS")?></span>
 						<ul>
@@ -43,27 +43,10 @@
 							<li><a href="<?=SITE_DIR?>callback/"><?=GetMessage("CALLBACK")?></a></li>
 						</ul>
 					</div>
-				</td>
-			</tr>
-		</table>
-	</form>
+				</div>
 
-	<?
-		$APPLICATION->IncludeComponent("user:sale.viewed.product", "profile", array(
-		   "VIEWED_COUNT" => "12",
-		   "VIEWED_NAME" => "Y",
-		   "VIEWED_IMAGE" => "Y",
-		   "VIEWED_PRICE" => "Y",
-		   "VIEWED_CANBUY" => "N",
-		   "VIEWED_CANBUSKET" => "N",
-		   "VIEWED_IMG_HEIGHT" => 150,
-		   "VIEWED_IMG_WIDTH" => 150,
-		   "BASKET_URL" => SITE_DIR."/personal/cart/",
-		   "ACTION_VARIABLE" => "action",
-		   "PRODUCT_ID_VARIABLE" => "id"
-		   )
-		);
-	?>
+		</div>
+	</form>
 </div>
 
 <div id="elementError">

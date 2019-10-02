@@ -1,5 +1,9 @@
 <?
-	$MESS["HEADING"] = "Персональные данные";
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS["HEADING"] = "Персональные данные";
 	$MESS["CHANGE_PASS"] = "Изменить пароль";
 	$MESS["PASS"] = "Введите новый пароль";
 	$MESS["REPASS"] = "Подтверждение пароля";

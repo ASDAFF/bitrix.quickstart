@@ -1,6 +1,10 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
 <?
-	if(isset($_GET["USER_PASSWORD"]) &&
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+if(isset($_GET["USER_PASSWORD"]) &&
 	   isset($_GET["USER_PASSWORD_CONFIRM"]) &&
 	   isset($_GET["USER_STREET"]) &&
 	   isset($_GET["USER_MOBILE"]) &&

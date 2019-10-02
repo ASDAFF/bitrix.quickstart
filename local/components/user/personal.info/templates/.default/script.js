@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $(window).bind('load', function(){
 	var sendPersonalInfo = function(event){
 		var $form = $("#personalForm");

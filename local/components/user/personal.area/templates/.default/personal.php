@@ -1,11 +1,15 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 ?>
 <?=$arResult["NAVIGATION"];?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:main.profile",
-	"infouser",
+	"",
 	Array(
 		"USER_PROPERTY_NAME" => $arParams["USER_PROPERTY_NAME"],
 		"SET_TITLE" => $arParams["SET_TITLE"],

@@ -1,5 +1,9 @@
 <?
-	$MESS["TABS"] = "Настройки меню";
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS["TABS"] = "Настройки меню";
 	$MESS["ORDERS"] = "Показывать Мои заказы?";
 	$MESS["VIEWED"] = "Показывать Просмотренные товары?";
 	$MESS["USER_ADDRESES"] = "Показывать Мои адреса?";

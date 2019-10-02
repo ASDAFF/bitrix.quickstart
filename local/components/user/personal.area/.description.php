@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 $arComponentDescription = array(
@@ -9,10 +13,10 @@ $arComponentDescription = array(
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
 		"ID" => "ASDAFF", // for example "my_project"
-		/*"CHILD" => array(
-			"ID" => "", // for example "my_project:services"
-			"NAME" => "",  // for example "Services"
-		),*/
+		"CHILD" => array(
+			"ID" => "personal", // for example "my_project:services"
+			"NAME" => "Личный кабинет",  // for example "Services"
+		),
 	),
 	"COMPLEX" => "Y",
 );

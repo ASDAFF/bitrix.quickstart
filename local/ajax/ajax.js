@@ -1,6 +1,7 @@
 /*
- * Copyright (c) 2019 Created by ASDAFF asdaff.asad@yandex.ru
+ * Copyright (c) 25/7/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
  */
+
 /*----------- ORDER Form -----------*/
 jQuery(function () {
 
@@ -532,4 +533,92 @@ jQuery(function () {
         });
         return false;
     };
+});
+
+/*----------- openGeneralModal -----------*/
+jQuery(function () {
+    function openGeneralModal(html, title) {
+        if (!title) {
+            title =  ' ';
+        }
+        $("#generalModal").html(html);
+        $("#generalModal").attr("title", title);
+        $("#generalModal").dialog('open');
+        $('.ui-widget-overlay').on("click", function() {
+            //Close the dialog
+            $("#generalModal").dialog("close");
+        });
+        $("#generalModal").find('a').blur();
+    }
+});
+
+jQuery(function () {
+    function cartPopup() {
+        var html = '' +
+            'Товар добавлен в корзину<br />' +
+            '<a class="fr"  onclick="ym(4916878, \'reachGoal\', \'click_cart\'); return true;" style="outline: none;" href="/personal/cart/"><i style="position: relative; margin-bottom: -12px;" class="ico-main ico-main-basket-on"></i>Перейти в корзину</a>';
+        return html;
+    }
+});
+
+jQuery(function () {
+    function comparePopup() {
+        var html = '' +
+            'Товар добавлен к списку сравнения<br />' +
+            '<a class="fr" style="outline: none;" href="/catalog/compare.php"><i style="position: relative; margin-bottom: -12px;" class="ico-main ico-main-compare-on"></i>К списку сравнения</a>';
+        return html;
+    }
+});
+
+/*----------- Add2Cart -----------*/
+jQuery(function () {
+    function Add2Cart(ID, url) {
+        ID = checkID(ID);
+        if (ID != false) {
+            var html = cartPopup();
+            openGeneralModal(html, 'Товар добавлен в корзину');
+            $.ajax({
+                data: {action: 'ADD2BASKET', id: ID},
+                url: url,
+                type: "POST",
+                success: function(data, textStatus, j) {
+                    updateBasketWidget();
+                }
+            });
+        }
+    }
+});
+
+/*----------- Add2Compare/DeleteFromCompare -----------*/
+jQuery(function () {
+    function Add2Compare(ID) {
+        ID = checkID(ID);
+        if (ID != false) {
+            var html = comparePopup();
+            openGeneralModal(html, 'Товар добавлен к списку сравнения');
+            $.ajax({
+                data: {action: 'ADD_TO_COMPARE_LIST', id: ID},
+                url: "/catalog/",
+                type: "POST",
+                success: function(data, textStatus, j) {
+                    //updateCompareWidget();
+                }
+            });
+        }
+    }
+
+function DeleteFromCompare(ID) {
+    ID = checkID(ID);
+    if (ID != false) {
+        $.ajax({
+            data: {action: 'DELETE_FROM_COMPARE', id: ID},
+            url: "/catalog/",
+            type: "POST",
+            success: function(data, textStatus, j) {
+                //updateCompareWidget();
+            }
+        });
+    }
+}
+
 });

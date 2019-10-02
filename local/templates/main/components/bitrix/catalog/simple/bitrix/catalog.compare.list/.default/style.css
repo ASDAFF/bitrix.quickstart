@@ -1,0 +1,19 @@
+.table-compare {
+    margin-bottom: 0 !important;
+}
+
+.table-compare th{
+    border-bottom: 0 !important;
+    text-align: center;
+}
+
+.table-compare td{
+    line-height: 1 !important;
+    padding: 6px !important;
+}
+
+.catalog-compare-list .btn-blue {
+    padding: 6px 10px;
+    float: right;
+    margin-right: 20px;
+}

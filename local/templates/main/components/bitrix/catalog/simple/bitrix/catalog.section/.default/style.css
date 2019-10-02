@@ -1,0 +1,99 @@
+/* catalog.section */
+.p-item .p-title {
+    display: block;
+    font-size: 18px;
+}
+
+.p-item a.thumb {
+    width: 205px;
+}
+
+.p-item a.detailed-link {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.p-item .p-descr {
+    font-size: 12px;
+}
+
+.p-item .table-striped-c  > tbody > tr:nth-child(2n+1) > td {
+    background-color: #E9F8FF;
+}
+
+.p-item .table td {
+    font-size: 12px;
+    line-height: 1;
+    padding: 6px;
+}
+
+.p-item .table td.title {
+    font-weight: bold;
+    border-right: 2px solid white;
+    padding-right: 5px;
+    width: 50%;
+    text-align: right;
+}
+
+.p-item .h-line {
+    border-bottom: 1px dotted #B2B2B2;
+}
+
+.p-item .price-old {
+    color: #444444;
+    font-size: 18px;
+}
+
+.p-item .price-old span {
+    background-color: #D8212B;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 1px 10px;
+    margin-left: 10px;
+}
+
+.p-item .price {
+    color: #d9212b;
+    font-size: 20px;
+}
+
+.p-item .price-yours {
+    font-size: 22px;
+    color: #009900;
+}
+
+.p-item .price-yours span {
+    color: #a0a0a0;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.p-item .av {
+    color: #009900;
+    font-size: 12px;
+}
+
+.p-item .na {
+    /*color: #B2B2B2;*/
+    color: red;
+    font-size: 12px;
+}
+
+.p-item .p-buttons {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.p-item .p-buttons div.holder {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.p-item .p-buttons a span{
+    margin-bottom: -10px;
+}
+
+.p-item .p-buttons span.ico-nolink {
+    margin-bottom: -10px;
+}

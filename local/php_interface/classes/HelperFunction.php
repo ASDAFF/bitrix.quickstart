@@ -93,6 +93,14 @@ class HelperFunction
         }
     }
 
+    public static function FormatFilesize($_bytes, $_dec = 2){
+        $_dec = intval($_dec);
+        $size = array('B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
+        $factor = floor((strlen($_bytes) - 1) / 3);
+
+        return sprintf("%.{$_dec}f", $_bytes / pow(1024, $factor)) ." ". @$size[$factor];
+    }
+
     /**
      * @param $location
      * @param int $timeout

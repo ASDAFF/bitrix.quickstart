@@ -6,6 +6,8 @@ https://github.com/ASDAFF/additional.bitrix.git
 
 _Базовый класс для упрощения создания компонентов и их унификации_
 
+###################################################################
+
 ### additional.sectlist
 
 https://github.com/ASDAFF/additional.sectlist.git
@@ -25,10 +27,18 @@ _Модуль содержит компонент, для показа разд�
 
 ### altasib.pagespeed
 
-
+https://github.com/ASDAFF/altasib.pagespeed.git
 
 ### altasib.starterkit
+
+https://github.com/ASDAFF/altasib.starterkit.git
+
+**Базовый набор разработчика(altasib)**
+
+
 ### api.auth
+
+
 ### api.bxeditor
 ### api.bxminimizer
 ### api.checkout

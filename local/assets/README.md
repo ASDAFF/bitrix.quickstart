@@ -224,6 +224,12 @@ https://github.com/ASDAFF/asd.currencyrate.git
 
 __________________________________________________________________
 
+### asd.asd.events
+
+https://github.com/ASDAFF/asd.events.git
+
+__________________________________________________________________
+
 ### auto.reindex
 
 https://github.com/ASDAFF/auto.reindex.git

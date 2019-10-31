@@ -218,6 +218,12 @@ https://github.com/ASDAFF/asd.agents.git
 
 __________________________________________________________________
 
+### asd.currencyrate
+
+https://github.com/ASDAFF/asd.currencyrate.git
+
+__________________________________________________________________
+
 ### auto.reindex
 
 https://github.com/ASDAFF/auto.reindex.git

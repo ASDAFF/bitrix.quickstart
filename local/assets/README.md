@@ -90,93 +90,171 @@ __________________________________________________________________
 
 ### api.feedback
 
+https://github.com/ASDAFF/api.feedback.git
+
+**TS Умная форма обратной связи (api.feedback)**
+
 __________________________________________________________________
 
 ### api.feedbackex
+
+https://github.com/ASDAFF/api.feedbackex.git
+
+**TS Расширенная форма обратной связи (api.feedbackex)**
 
 __________________________________________________________________
 
 ### api.formdesigner
 
+https://github.com/ASDAFF/api.formdesigner.git
+
+**TS Умный конструктор форм на инфоблоках (api.formdesigner)**
+
 __________________________________________________________________
 
 ### api.mail
+
+https://github.com/ASDAFF/api.mail.git
+
+**TS Умная почта (api.mail)**
 
 __________________________________________________________________
 
 ### api.message
 
+https://github.com/ASDAFF/api.message.git
+
+**TS Умное сообщение (api.message)**
+
 __________________________________________________________________
 
 ### api.orderstatus
+
+https://github.com/ASDAFF/api.orderstatus.git
+
+**TS Умные статусы и письма заказов (api.orderstatus)**
 
 __________________________________________________________________
 
 ### api.print
 
+https://github.com/ASDAFF/api.print.git
+
+**TS Печать элементов (api.print)**
+
 __________________________________________________________________
 
 ### api.qa
+
+https://github.com/ASDAFF/api.qa.git
+
+**TS Умные вопросы и ответы (api.qa)**
 
 __________________________________________________________________
 
 ### api.reviews
 
+https://github.com/ASDAFF/api.reviews.git
+
+**TS Умные отзывы (api.reviews)**
+
 __________________________________________________________________
 
 ### api.search
+
+https://github.com/ASDAFF/api.search.git
+
+**TS Умный поиск по инфоблокам (api.search)**
 
 __________________________________________________________________
 
 ### api.searchfilter
 
+https://github.com/ASDAFF/api.searchfilter.git
+
+**TS Простой фильтр (api.searchfilter)**
+
 __________________________________________________________________
 
 ### api.typo
+
+https://github.com/ASDAFF/api.typo.git
+
+**TS Умное сообщение об ошибке (api.typo)**
 
 __________________________________________________________________
 
 ### api.uncachedarea
 
+https://github.com/ASDAFF/api.uncachedarea.git
+
+**TS Некешируемая область (api.uncachedarea)**
+
 __________________________________________________________________
 
 ### api.yashare
+
+https://github.com/ASDAFF/api.yashare.git
+
+**TS Умный блок "Поделиться" (api.yashare)**
 
 __________________________________________________________________
 
 ### asd.favorite
 
-__________________________________________________________________
-
-### askaron.pro1c.3.1.2
+https://github.com/ASDAFF/asd.favorite.git
 
 __________________________________________________________________
 
 ### auto.reindex
 
+https://github.com/ASDAFF/auto.reindex.git
+
 __________________________________________________________________
 
 ### bagmet.menu
+
+https://github.com/ASDAFF/bagmet.menu.git
+
+**Многоуровневое выпадающее меню для каталога интернет-магазина или сайта.**
 
 __________________________________________________________________
 
 ### bejet.service
 
+https://github.com/ASDAFF/bejet.service.git
+
 __________________________________________________________________
 
 ### bejet.store
+
+https://github.com/ASDAFF/bejet.store.git
+
+**Seller — продажа одежды и аксессуаров**
+
+_Готовый интернет-магазин Seller — решение для быстрого запуска интернет-магазина модной одежды или аксессуаров._
 
 __________________________________________________________________
 
 ### bitrix.fashion
 
+https://github.com/ASDAFF/bitrix.fashion.git
+
+**Дело в сайте: Интернет-магазин одежды**
+
 __________________________________________________________________
 
 ### bitrix.household
 
+https://github.com/ASDAFF/bitrix.household.git
+
 __________________________________________________________________
 
 ### bitrix.mpbuilder
+
+https://github.com/ASDAFF/bitrix.mpbuilder.git
+
+**Конструктор модулей для Маркетплейса**
 
 __________________________________________________________________
 

@@ -50,21 +50,41 @@ __________________________________________________________________
 
 ### api.bxeditor
 
+https://github.com/ASDAFF/api.bxeditor.git
+
+**TS Кнопки кода и цитаты (api.bxeditor)**
+
 __________________________________________________________________
 
 ### api.bxminimizer
+
+https://github.com/ASDAFF/api.bxminimizer.git
+
+**TS Умный минимизатор админки (api.bxminimizer)**
 
 __________________________________________________________________
 
 ### api.checkout
 
+https://github.com/ASDAFF/api.checkout.git
+
+**TS Оформление заказа в 1 клик (api.checkout)**
+
 __________________________________________________________________
 
 ### api.core
 
+https://github.com/ASDAFF/api.core.git
+
+**TS UX/UI (api.core)**
+
 __________________________________________________________________
 
 ### api.export
+
+https://github.com/ASDAFF/api.export.git
+
+**TS Умный экспорт (api.export)**
 
 __________________________________________________________________
 

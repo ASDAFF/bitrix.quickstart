@@ -260,21 +260,31 @@ __________________________________________________________________
 
 ### bitrix.schoolsite
 
+https://github.com/ASDAFF/bitrix.schoolsite.git
+
 __________________________________________________________________
 
 ### bitrix.uniplug.logviewer
+
+https://github.com/ASDAFF/bitrix.uniplug.logviewer.git
 
 __________________________________________________________________
 
 ### Bitrix-Component-Carousel
 
+https://github.com/ASDAFF/Bitrix-Component-Carousel.git
+
 __________________________________________________________________
 
 ### bitrix-parser
 
+https://github.com/ASDAFF/bitrix-parser.git
+
 __________________________________________________________________
 
 ### block.arrow
+
+https://github.com/ASDAFF/block.arrow.git
 
 __________________________________________________________________
 

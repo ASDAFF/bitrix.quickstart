@@ -200,6 +200,12 @@ https://github.com/ASDAFF/api.yashare.git
 
 __________________________________________________________________
 
+### asd.advmini
+
+https://github.com/ASDAFF/asd.advmini.git
+
+__________________________________________________________________
+
 ### asd.favorite
 
 https://github.com/ASDAFF/asd.favorite.git

@@ -212,6 +212,12 @@ https://github.com/ASDAFF/asd.favorite.git
 
 __________________________________________________________________
 
+### asd.agents
+
+https://github.com/ASDAFF/asd.agents.git
+
+__________________________________________________________________
+
 ### auto.reindex
 
 https://github.com/ASDAFF/auto.reindex.git

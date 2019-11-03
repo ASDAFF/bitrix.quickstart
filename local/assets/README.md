@@ -334,6 +334,12 @@ https://github.com/ASDAFF/block.arrow.git
 
 __________________________________________________________________
 
+### custom.settings
+
+https://github.com/ASDAFF/custom.settings.git
+
+__________________________________________________________________
+
 ### change.pass
 
 https://github.com/ASDAFF/change.pass.git

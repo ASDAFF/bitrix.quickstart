@@ -334,7 +334,9 @@ https://github.com/ASDAFF/block.arrow.git
 
 __________________________________________________________________
 
-### bxApiDocs
+### change.pass
+
+https://github.com/ASDAFF/change.pass.git
 
 __________________________________________________________________
 

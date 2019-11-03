@@ -212,6 +212,12 @@ https://github.com/ASDAFF/asd.favorite.git
 
 __________________________________________________________________
 
+### asd.iblock
+
+https://github.com/ASDAFF/asd.iblock.git
+
+__________________________________________________________________
+
 ### asd.agents
 
 https://github.com/ASDAFF/asd.agents.git
@@ -224,13 +230,29 @@ https://github.com/ASDAFF/asd.currencyrate.git
 
 __________________________________________________________________
 
-### asd.asd.events
+### asd.events
 
 https://github.com/ASDAFF/asd.events.git
 
 __________________________________________________________________
 
-### auto.reindex
+### asd.slidertext
+
+https://github.com/ASDAFF/asd.slidertext.git
+
+__________________________________________________________________
+
+### asd.subscribequick
+
+https://github.com/ASDAFF/asd.subscribequick.git
+
+__________________________________________________________________
+
+### asd.tplvars
+
+https://github.com/ASDAFF/asd.tplvars.git
+
+__________________________________________________________________### auto.reindex
 
 https://github.com/ASDAFF/auto.reindex.git
 

@@ -1,1 +1,0 @@
-<?define("ambersite_quickpay_TEMPORARY_CACHE", "czZRBH0yBVRvB3BqUzZSfQ11");?>

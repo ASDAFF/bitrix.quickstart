@@ -1,1 +1,0 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/w2a.fastermitage/admin/w2a_fastermitage.php");?>

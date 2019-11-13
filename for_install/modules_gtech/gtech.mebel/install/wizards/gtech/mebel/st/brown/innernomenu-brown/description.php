@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME"=>"Внутренние страницы без меню раздела", "DESCRIPTION"=>"");?>

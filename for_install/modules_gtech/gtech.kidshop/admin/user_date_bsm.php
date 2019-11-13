@@ -1,1 +1,0 @@
-<?define("gtech_kidshop_TEMPORARY_CACHE", "IGwIAnhlVFM+ACpqAmwGeVFz");?>

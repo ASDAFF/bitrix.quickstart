@@ -48,7 +48,7 @@ if($this->StartResultCache(false, $_REQUEST[$arParams['COLLECTION_VARIABLE']])){
     }
 
 
-    // Сортируем разделы
+    // РЎРѕСЂС‚РёСЂСѓРµРј СЂР°Р·РґРµР»С‹
     if($arParams['SECTION_SORT'] == 'Y'){
         $tmp_sec = array();
         foreach($arCollections as $Section){
@@ -84,7 +84,7 @@ if($this->StartResultCache(false, $_REQUEST[$arParams['COLLECTION_VARIABLE']])){
     }
 //    echo '<pre>'; print_r($arCollectionItems); echo '</pre>';
 
-    // Сортировка
+    // РЎРѕСЂС‚РёСЂРѕРІРєР°
     if($arParams['SORT_BY']){
         $ar = array();
         foreach($arCollectionItems as &$ArItem){

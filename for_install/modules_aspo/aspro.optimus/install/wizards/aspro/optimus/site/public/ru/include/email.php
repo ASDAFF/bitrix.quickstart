@@ -1,1 +1,0 @@
-<a rel="nofollow" href="mailto:#SITE_EMAIL#">#SITE_EMAIL#</a>

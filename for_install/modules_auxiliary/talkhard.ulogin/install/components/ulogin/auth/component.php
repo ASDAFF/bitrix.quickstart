@@ -31,7 +31,7 @@ if (!empty($_POST['token']) && !$USER->isAuthorized()) {
         $arResult['USER']['NETWORK'] = $profile['network'];
 
 
-        // проверяем есть ли пользователь в БД.	Если есть - то авторизуем, нет  - регистрируем и авторизуем
+        // РїСЂРѕРІРµСЂСЏРµРј РµСЃС‚СЊ Р»Рё РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІ Р‘Р”.	Р•СЃР»Рё РµСЃС‚СЊ - С‚Рѕ Р°РІС‚РѕСЂРёР·СѓРµРј, РЅРµС‚  - СЂРµРіРёСЃС‚СЂРёСЂСѓРµРј Рё Р°РІС‚РѕСЂРёР·СѓРµРј
         $rsUsers = CUser::GetList(
             ($by = "email"),
             ($order = "desc"),
@@ -42,7 +42,7 @@ if (!empty($_POST['token']) && !$USER->isAuthorized()) {
         $arUser = $rsUsers->GetNext();
 
         $emailExist = false;
-        // проверка уникальности email
+        // РїСЂРѕРІРµСЂРєР° СѓРЅРёРєР°Р»СЊРЅРѕСЃС‚Рё email
         if ($arParams['UNIQUE_EMAIL'] == 'Y'){
           $emailUsers = CUser::GetList(
                                 ($by = "id"),
@@ -59,18 +59,18 @@ if (!empty($_POST['token']) && !$USER->isAuthorized()) {
 
         if ($arUser["EXTERNAL_AUTH_ID"] == $arResult['USER']["EXTERNAL_AUTH_ID"]) {
 
-            // такой пользователь есть, авторизуем пользователя
+            // С‚Р°РєРѕР№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РµСЃС‚СЊ, Р°РІС‚РѕСЂРёР·СѓРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 
             $ID_INFO = explode('=',$arUser['ADMIN_NOTES']);
 
-            if ($arResult['USER']['NETWORK'] == $ID_INFO[0] && $arUser['ACTIVE'] == 'Y'){//старый формат хранения аккаунтов, конвертируем
+            if ($arResult['USER']['NETWORK'] == $ID_INFO[0] && $arUser['ACTIVE'] == 'Y'){//СЃС‚Р°СЂС‹Р№ С„РѕСЂРјР°С‚ С…СЂР°РЅРµРЅРёСЏ Р°РєРєР°СѓРЅС‚РѕРІ, РєРѕРЅРІРµСЂС‚РёСЂСѓРµРј
 
                 $USER->Update($arUser['ID'], array('EXTERNAL_AUTH_ID'=>''));
                 Ulogin::createUloginAccount($arResult['USER'], $arUser['ID']);
                 $ID_INFO[1] = $arUser['ID'];
             }
 
-            //Если имя и фамилия изменились, то обновляем
+            //Р•СЃР»Рё РёРјСЏ Рё С„Р°РјРёР»РёСЏ РёР·РјРµРЅРёР»РёСЃСЊ, С‚Рѕ РѕР±РЅРѕРІР»СЏРµРј
 
             $rsUsers = CUser::GetList(
                 ($by = "email"),
@@ -110,7 +110,7 @@ if (!empty($_POST['token']) && !$USER->isAuthorized()) {
                 LocalRedirect($APPLICATION->GetCurPageParam("", array("logout")));
 
         }else if (!$emailExist){
-            // регистрируем пользователя, и добавляем его в группы, указанные в параметрах
+            // СЂРµРіРёСЃС‚СЂРёСЂСѓРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ, Рё РґРѕР±Р°РІР»СЏРµРј РµРіРѕ РІ РіСЂСѓРїРїС‹, СѓРєР°Р·Р°РЅРЅС‹Рµ РІ РїР°СЂР°РјРµС‚СЂР°С…
             $user = new CUser;
             $GroupID = "5";
             $passw = rand(1000000,10000000);
@@ -122,7 +122,7 @@ if (!empty($_POST['token']) && !$USER->isAuthorized()) {
             if (!$arResult['USER']["EMAIL"])
                 $arResult['USER']["EMAIL"] = "yourmail@domain.com";
 
-            # проверяем есть ли такой логин
+            # РїСЂРѕРІРµСЂСЏРµРј РµСЃС‚СЊ Р»Рё С‚Р°РєРѕР№ Р»РѕРіРёРЅ
             $rsUsers = CUser::GetList(
                 ($by = "email"),
                 ($order = "desc"),

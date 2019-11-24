@@ -30,7 +30,7 @@ if (!empty($_POST['token']) && $USER->isAuthorized()) {
         $arResult['USER']['PHOTO_BIG'] = $profile['photo_big'];
         $arResult['USER']['NETWORK'] = $profile['network'];
 
-        // ïðîâåðÿåì åñòü ëè ïîëüçîâàòåëü â ÁÄ.	Åñëè åñòü - òî àâòîðèçóåì, íåò  - ðåãèñòðèðóåì è àâòîðèçóåì
+        // Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼ ÐµÑÑ‚ÑŒ Ð»Ð¸ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ Ð² Ð‘Ð”.	Ð•ÑÐ»Ð¸ ÐµÑÑ‚ÑŒ - Ñ‚Ð¾ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·ÑƒÐµÐ¼, Ð½ÐµÑ‚  - Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐµÐ¼ Ð¸ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·ÑƒÐµÐ¼
         $rsUsers = CUser::GetList(
             ($by = "email"),
             ($order = "desc"),
@@ -43,18 +43,18 @@ if (!empty($_POST['token']) && $USER->isAuthorized()) {
 
         if ($arUser["EXTERNAL_AUTH_ID"] == $arResult['USER']["EXTERNAL_AUTH_ID"]) {
 
-            // òàêîé ïîëüçîâàòåëü åñòü
+            // Ñ‚Ð°ÐºÐ¾Ð¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ ÐµÑÑ‚ÑŒ
 
             $ID_INFO   = explode('=',$arUser['ADMIN_NOTES']);
             $UloginID = $arUser['ID'];
 
-            if ($arResult['USER']['NETWORK'] == $ID_INFO[0] && $arUser['ACTIVE'] == 'Y'){//ñòàðûé ôîðìàò õðàíåíèÿ àêêàóíòîâ, êîíâåðòèðóåì
+            if ($arResult['USER']['NETWORK'] == $ID_INFO[0] && $arUser['ACTIVE'] == 'Y'){//ÑÑ‚Ð°Ñ€Ñ‹Ð¹ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ñ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð¾Ð², ÐºÐ¾Ð½Ð²ÐµÑ€Ñ‚Ð¸Ñ€ÑƒÐµÐ¼
                 $USER->Update($arUser['ID'], array('EXTERNAL_AUTH_ID'=>''));
                 $ID_INFO[1] = $arUser['ID'];
                 $UloginID = Ulogin::createUloginAccount($arResult['USER'], $arUser['ID']);
             }
 
-            if ($UserID != $ID_INFO[1] && !in_array($ID_INFO[0], $networks)) { //íå òåêóùèé àêêàóíò
+            if ($UserID != $ID_INFO[1] && !in_array($ID_INFO[0], $networks)) { //Ð½Ðµ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚
 
                 $networks = implode(',',$networks).','.$ID_INFO[0];
                 $second_user = CUser::GetByID($ID_INFO[1])->GetNext();
@@ -74,7 +74,7 @@ if (!empty($_POST['token']) && $USER->isAuthorized()) {
 
         }else{
 
-            if (!in_array($arResult['USER']['NETWORK'], $networks)){ //äîáàâëÿåì, åñëè òàêîãî ñåðâèñà íåò
+            if (!in_array($arResult['USER']['NETWORK'], $networks)){ //Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼, ÐµÑÐ»Ð¸ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ ÑÐµÑ€Ð²Ð¸ÑÐ° Ð½ÐµÑ‚
                 Ulogin::createUloginAccount($arResult['USER'], $UserID);
                 $networks = implode(',', $networks). ','.$arResult['USER']['NETWORK'];
                 $USER->Update($UserID, array('ADMIN_NOTES' => $networks));

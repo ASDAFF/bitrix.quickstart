@@ -1,0 +1,15 @@
+.adm-submenu-item-link-icon.byteeightlab_sitemap_menu_icon {background: url(icons/byteeightlab.sitemap/bel_silemap.png) no-repeat 11px 5px !important;}
+
+#bel_but_green{
+	background-color: #86AD00!important;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px 0 #CBDC00;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px 0 #CBDC00;
+	border-color: #97C004 #7EA502 #648900;
+	background-image: -webkit-linear-gradient(bottom, #729E00, #97BA00)!important;
+	background-image: -moz-linear-gradient(bottom, #729e00, #97ba00)!important;
+	background-image: -ms-linear-gradient(bottom, #729e00, #97ba00)!important;
+	background-image: -o-linear-gradient(bottom, #729e00, #97ba00)!important;
+	background-image: linear-gradient(bottom, #729e00, #97ba00)!important;
+	color: #FFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1)
+}

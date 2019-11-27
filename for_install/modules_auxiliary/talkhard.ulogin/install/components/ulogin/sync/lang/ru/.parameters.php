@@ -1,5 +1,0 @@
-<?
-$MESS["TALKHARD_ULOGIN_PROVAYDERY"] = "Провайдеры";
-$MESS["TALKHARD_ULOGIN_SKRYTYE_PROVAYDERY"] = "Скрытые провайдеры";
-$MESS["TALKHARD_ULOGIN_TIP"] = "Тип";
-?>

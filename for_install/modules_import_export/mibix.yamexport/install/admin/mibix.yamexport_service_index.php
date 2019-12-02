@@ -1,1 +1,0 @@
-<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mibix.yamexport/admin/service_index.php");?>

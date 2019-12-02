@@ -1,1 +1,0 @@
-<?require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mibix.yamexport/admin/datasource_edit.php");?>

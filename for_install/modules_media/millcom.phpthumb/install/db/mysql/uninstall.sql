@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS `c_millcom_phpthumb`;

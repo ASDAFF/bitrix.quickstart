@@ -1,6 +1,0 @@
-<?
-
-class DefaToolsException extends Exception
-{
-
-}

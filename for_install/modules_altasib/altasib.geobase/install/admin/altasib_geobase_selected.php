@@ -1,1 +1,0 @@
-<?require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/altasib.geobase/admin/selected.php");?>

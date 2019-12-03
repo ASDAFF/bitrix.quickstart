@@ -1,11 +1,11 @@
 <?
-$MESS["T_IBLOCK_DESC_NEWS_DATE"] = "Âûâîäèòü äàòó ýëåìåíòà";
-$MESS["T_IBLOCK_DESC_NEWS_PICTURE"] = "Âûâîäèòü èçîáðàæåíèå äëÿ àíîíñà";
-$MESS["T_IBLOCK_DESC_NEWS_TEXT"] = "Âûâîäèòü òåêñò àíîíñà";
-$MESS["T_IBLOCK_DESC_NEWS_USE_SHARE"] = "Îòîáðàæàòü ïàíåëü ñîö. çàêëàäîê";
-$MESS["T_IBLOCK_DESC_NEWS_SHARE_HIDE"] = "Íå ðàñêðûâàòü ïàíåëü ñîö. çàêëàäîê ïî óìîë÷àíèþ";
-$MESS["T_IBLOCK_DESC_NEWS_SHARE_TEMPLATE"] = "Øàáëîí êîìïîíåíòà ïàíåëè ñîö. çàêëàäîê";
-$MESS["T_IBLOCK_DESC_NEWS_SHARE_SYSTEM"] = "Èñïîëüçóåìûå ñîö. çàêëàäêè è ñåòè";
-$MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_LOGIN"] = "Ëîãèí äëÿ bit.ly";
-$MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_KEY"] = "Êëþ÷ äëÿ äëÿ bit.ly";
+$MESS["T_IBLOCK_DESC_NEWS_DATE"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð´Ð°Ñ‚Ñƒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°";
+$MESS["T_IBLOCK_DESC_NEWS_PICTURE"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð°Ð½Ð¾Ð½ÑÐ°";
+$MESS["T_IBLOCK_DESC_NEWS_TEXT"] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ‚ÐµÐºÑÑ‚ Ð°Ð½Ð¾Ð½ÑÐ°";
+$MESS["T_IBLOCK_DESC_NEWS_USE_SHARE"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð¿Ð°Ð½ÐµÐ»ÑŒ ÑÐ¾Ñ†. Ð·Ð°ÐºÐ»Ð°Ð´Ð¾Ðº";
+$MESS["T_IBLOCK_DESC_NEWS_SHARE_HIDE"] = "ÐÐµ Ñ€Ð°ÑÐºÑ€Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð°Ð½ÐµÐ»ÑŒ ÑÐ¾Ñ†. Ð·Ð°ÐºÐ»Ð°Ð´Ð¾Ðº Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ";
+$MESS["T_IBLOCK_DESC_NEWS_SHARE_TEMPLATE"] = "Ð¨Ð°Ð±Ð»Ð¾Ð½ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½Ñ‚Ð° Ð¿Ð°Ð½ÐµÐ»Ð¸ ÑÐ¾Ñ†. Ð·Ð°ÐºÐ»Ð°Ð´Ð¾Ðº";
+$MESS["T_IBLOCK_DESC_NEWS_SHARE_SYSTEM"] = "Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼Ñ‹Ðµ ÑÐ¾Ñ†. Ð·Ð°ÐºÐ»Ð°Ð´ÐºÐ¸ Ð¸ ÑÐµÑ‚Ð¸";
+$MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_LOGIN"] = "Ð›Ð¾Ð³Ð¸Ð½ Ð´Ð»Ñ bit.ly";
+$MESS["T_IBLOCK_DESC_NEWS_SHARE_SHORTEN_URL_KEY"] = "ÐšÐ»ÑŽÑ‡ Ð´Ð»Ñ Ð´Ð»Ñ bit.ly";
 ?>

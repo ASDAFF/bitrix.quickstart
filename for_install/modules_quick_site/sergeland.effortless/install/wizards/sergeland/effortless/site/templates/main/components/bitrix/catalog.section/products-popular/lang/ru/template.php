@@ -1,11 +1,11 @@
 <?
-$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ACTION"] = "Àêöèÿ";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_NEW"] = "Íîâèíêà";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_ACTION"] = "ÐÐºÑ†Ð¸Ñ";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_NEW"] = "ÐÐ¾Ð²Ð¸Ð½ÐºÐ°";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_PRESENCE"] = "Â íàëè÷èè";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_EXPECTED"] = "Îæèäàåòñÿ";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_UNDER"] = "Ïîä çàêàç";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_UNAVAILABLE"] = "Îòñóòñòâóåò";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_PRESENCE"] = "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_EXPECTED"] = "ÐžÐ¶Ð¸Ð´Ð°ÐµÑ‚ÑÑ";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_UNDER"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·";
+$MESS["SERGELAND_EFFORTLESS_CATALOG_UNAVAILABLE"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚";
 ?>

@@ -1,11 +1,11 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_ERROR"] = "Îøèáêà îòïðàâêè ôîðìû.";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_SUCCESS"] = "Ñïàñèáî, âàøå ðåçþìå îòïðàâëåíî àäìèíèñòðàöèè ñàéòà.";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_NAME"] = "Âàøå Èìÿ";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_PHONE"] = "Òåëåôîí";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹.";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°ÑˆÐµ Ñ€ÐµÐ·ÑŽÐ¼Ðµ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð°.";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_NAME"] = "Ð’Ð°ÑˆÐµ Ð˜Ð¼Ñ";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
 $MESS["SERGELAND_EFFORTLESS_VACANCIES_EMAIL"] = "Email";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_COMMENT"] = "Êîììåíòàðèé";
-$MESS["SERGELAND_EFFORTLESS_VACANCIES_SEND"] = "Îòïðàâèòü ðåçþìå";
-$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_COMMENT"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS["SERGELAND_EFFORTLESS_VACANCIES_SEND"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€ÐµÐ·ÑŽÐ¼Ðµ";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 ?>

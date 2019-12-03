@@ -1,0 +1,50 @@
+<?
+/**
+ * Copyright (c) 3/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$aMenuLinks = Array(
+	Array(
+		"Главная",
+		"index.php",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Калькулятор",
+		"calc/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Услуги",
+		"services/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Галерея",
+		"gallery/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Полезное",
+		"articles/",
+		Array(),
+		Array(),
+		""
+	),
+	Array(
+		"Контакты",
+		"contacts/",
+		Array(),
+		Array(),
+		""
+	)
+);
+?>

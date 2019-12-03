@@ -1,9 +1,0 @@
-.adm-novagr.adm-default .adm-main-menu-item-icon {
-    background: url('icons/ico-trendylist.png') no-repeat scroll center 13px rgba(0, 0, 0, 0);
-    height: 37px;
-}
-
-.adm-novagr.adm-default .adm-main-menu-item-icon:hover, .adm-novagr.adm-default.adm-main-menu-item-active  .adm-main-menu-item-icon {
-    background-position: center 13px;
-}
-.adm-main-menu-item {width: 66px}

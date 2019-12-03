@@ -1,1 +1,0 @@
-<a class="btn bt2" href="#oneClickCart" data-toggle="modal" href="#">Купить в один клик</a>

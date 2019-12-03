@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Лендинг";
-$arDirProperties = array(
-
-);
-?>

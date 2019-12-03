@@ -1,12 +1,12 @@
 <div id="results-callback">
 	<div class="alert alert-danger" id="beforesend-callback">
-		Пожалуйста заполните обязательные поля.
+		РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ.
 	</div>
 	<div class="alert alert-danger" id="error-callback">
-		Ошибка отправки сообщения.
+		РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ.
 	</div> 
 	<div class="alert alert-success" id="success-callback">
-		Спасибо, ждите звонка.
+		РЎРїР°СЃРёР±Рѕ, Р¶РґРёС‚Рµ Р·РІРѕРЅРєР°.
 	</div>
 </div>
 <div class="contact-form mb-35">
@@ -15,25 +15,25 @@
 	<form name="CALLBACK" action="#SITE_DIR#include/" method="POST" role="form">
 		<input type="hidden" name="CALLBACK[SITE_ID]" value="<?=SITE_ID?>"/>
 		<div class="form-group has-feedback">
-			<label for="name">Имя*</label>
+			<label for="name">РРјСЏ*</label>
 			<input type="text" name="CALLBACK[NAME]" class="form-control req">
 			<i class="fa fa-user form-control-feedback"></i>
 		</div>
 		<div class="form-group has-feedback">
-			<label for="phone">Телефон*</label>
+			<label for="phone">РўРµР»РµС„РѕРЅ*</label>
 			<input type="tel" name="CALLBACK[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
 			<i class="fa fa-phone form-control-feedback"></i>
 		</div>
 		<div class="form-group has-feedback">
-			<label for="subject">Тема*</label>
+			<label for="subject">РўРµРјР°*</label>
 			<input type="text" name="CALLBACK[TITLE]" class="form-control req">
 			<i class="fa fa-navicon form-control-feedback"></i>
 		</div>
 		<div class="form-group has-feedback">
-			<label for="message">Комментарий</label>
+			<label for="message">РљРѕРјРјРµРЅС‚Р°СЂРёР№</label>
 			<textarea name="CALLBACK[COMMENT]" class="form-control" rows="6"></textarea>
 			<i class="fa fa-pencil form-control-feedback"></i>
 		</div>
-		<input type="submit" value="Отправить" class="submit-button btn btn-default pull-right">
+		<input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ" class="submit-button btn btn-default pull-right">
 	</form>
 </div>

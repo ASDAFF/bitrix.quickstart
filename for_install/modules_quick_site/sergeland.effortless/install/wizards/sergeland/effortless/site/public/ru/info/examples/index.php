@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Служебная");
+$APPLICATION->SetTitle("РЎР»СѓР¶РµР±РЅР°СЏ");
 ?>
-<h2 class="title">Пример наполнения страницы текстом</h2>
-<p class="text-muted">Для вашего контент-менеджера на этой странице приведен пример заполнения страницы текстом.</p>
+<h2 class="title">РџСЂРёРјРµСЂ РЅР°РїРѕР»РЅРµРЅРёСЏ СЃС‚СЂР°РЅРёС†С‹ С‚РµРєСЃС‚РѕРј</h2>
+<p class="text-muted">Р”Р»СЏ РІР°С€РµРіРѕ РєРѕРЅС‚РµРЅС‚-РјРµРЅРµРґР¶РµСЂР° РЅР° СЌС‚РѕР№ СЃС‚СЂР°РЅРёС†Рµ РїСЂРёРІРµРґРµРЅ РїСЂРёРјРµСЂ Р·Р°РїРѕР»РЅРµРЅРёСЏ СЃС‚СЂР°РЅРёС†С‹ С‚РµРєСЃС‚РѕРј.</p>
 
 <p>Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 <h4 class="mb-20">Lorem ipsum dolor sit amet</h4>

@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Âàêàíñèè êîìïàíèè");
+$APPLICATION->SetTitle("Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸ ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "vacancies", array(
 		"TEMPLATE_THEME" => "blue",

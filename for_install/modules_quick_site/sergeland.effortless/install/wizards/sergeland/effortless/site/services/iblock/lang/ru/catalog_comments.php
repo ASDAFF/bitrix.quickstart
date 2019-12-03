@@ -1,13 +1,13 @@
 <?
-$MESS["WZD_OPTION_CATALOG_COMMENTS_1"] = "Êîììåíòàðèé";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_2"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_3"] = "*Íà÷àëî àêòèâíîñòè";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_4"] = "Ðåéòèíã (1-5)";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_5"] = "*Èìÿ";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_1"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_2"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_3"] = "*ÐÐ°Ñ‡Ð°Ð»Ð¾ Ð°ÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚Ð¸";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_4"] = "Ð ÐµÐ¹Ñ‚Ð¸Ð½Ð³ (1-5)";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_5"] = "*Ð˜Ð¼Ñ";
 $MESS["WZD_OPTION_CATALOG_COMMENTS_6"] = "Email";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_7"] = "*Òîâàð";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_8"] = "Îïèñàíèå";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_7"] = "*Ð¢Ð¾Ð²Ð°Ñ€";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_8"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
 
-$MESS["WZD_OPTION_CATALOG_COMMENTS_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_CATALOG_COMMENTS_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_CATALOG_COMMENTS_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

@@ -1,8 +1,8 @@
 <?
-$MESS["SERVICE_COPY_FILES"] = "Êîïèðîâàíèå ôàéëîâ";
-$MESS["SERVICE_COPY_DESIGN_FILES"] = "Ñìåíà äèçàéíà ñàéòà";
-$MESS["SERVICE_MAIN_SETTINGS"] = "Íàñòðîéêà ñàéòà";
-$MESS["SERVICE_IBLOCK_CREATE"] = "Ñîçäàíèå èíôîáëîêîâ";
-$MESS["SERVICE_EMAIL_TEMPLATES"] = "Ñîçäàíèå ïî÷òîâûõ øàáëîíîâ";
-$MESS["SERVICE_COMPLECT_INSTALLATION"] = "Çàâåðøåíèå óñòàíîâêè";
+$MESS["SERVICE_COPY_FILES"] = "ÐšÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð¾Ð²";
+$MESS["SERVICE_COPY_DESIGN_FILES"] = "Ð¡Ð¼ÐµÐ½Ð° Ð´Ð¸Ð·Ð°Ð¹Ð½Ð° ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["SERVICE_MAIN_SETTINGS"] = "ÐÐ°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ° ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["SERVICE_IBLOCK_CREATE"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¸Ð½Ñ„Ð¾Ð±Ð»Ð¾ÐºÐ¾Ð²";
+$MESS["SERVICE_EMAIL_TEMPLATES"] = "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð¾Ñ‡Ñ‚Ð¾Ð²Ñ‹Ñ… ÑˆÐ°Ð±Ð»Ð¾Ð½Ð¾Ð²";
+$MESS["SERVICE_COMPLECT_INSTALLATION"] = "Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ¸";
 ?>

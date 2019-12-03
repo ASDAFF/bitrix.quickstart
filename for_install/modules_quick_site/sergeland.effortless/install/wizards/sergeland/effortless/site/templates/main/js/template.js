@@ -542,7 +542,7 @@ jQuery(function(){
 				loop: true,
 				autoplay: true,
 				position: "50% 60%", // Similar to the CSS `background-position` property.
-				posterType: "jpg", // Poster image type. "detect" × auto-detection; "none" × no poster; "jpg", "png", "gif",... - extensions.
+				posterType: "jpg", // Poster image type. "detect" Ð§ auto-detection; "none" Ð§ no poster; "jpg", "png", "gif",... - extensions.
 				resizing: true 
 			});
 		} else {
@@ -557,7 +557,7 @@ jQuery(function(){
 				loop: true,
 				autoplay: true,
 				position: "50% 60%", // Similar to the CSS `background-position` property.
-				posterType: "jpg", // Poster image type. "detect" × auto-detection; "none" × no poster; "jpg", "png", "gif",... - extensions.
+				posterType: "jpg", // Poster image type. "detect" Ð§ auto-detection; "none" Ð§ no poster; "jpg", "png", "gif",... - extensions.
 				resizing: true 
 			});
 		};

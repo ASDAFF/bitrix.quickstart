@@ -1,22 +1,22 @@
 <?
-$MESS["WZD_OPTION_PHOTO_1"] = "Ôîòî1";
-$MESS["WZD_OPTION_PHOTO_2"] = "Ôîòî";
-$MESS["WZD_OPTION_PHOTO_3"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_PHOTO_4"] = "Ïîêàçûâàòü íà ãëàâíîé";
-$MESS["WZD_OPTION_PHOTO_5"] = "Ñîðòèðîâêà íà ãëàâíîé";
-$MESS["WZD_OPTION_PHOTO_6"] = "Ñîðòèðîâêà";
-$MESS["WZD_OPTION_PHOTO_7"] = "*Íàçâàíèå";
-$MESS["WZD_OPTION_PHOTO_8"] = "*Ñèìâîëüíûé êîä";
-$MESS["WZD_OPTION_PHOTO_9"] = "Ôîòî";
-$MESS["WZD_OPTION_PHOTO_10"] = "Îïèñàíèå ê ôîòî";
-$MESS["WZD_OPTION_PHOTO_11"] = "Äîïîëíèòåëüíûå ôîòî";
-$MESS["WZD_OPTION_PHOTO_12"] = "Ôîòî";
-$MESS["WZD_OPTION_PHOTO_13"] = "Îïèñàíèå ê ôîòî";
-$MESS["WZD_OPTION_PHOTO_14"] = "Ïîäðîáíî";
-$MESS["WZD_OPTION_PHOTO_15"] = "Äåòàëüíîå îïèñàíèå";
-$MESS["WZD_OPTION_PHOTO_16"] = "Ñîöèàëüíûå èêîíêè";
-$MESS["WZD_OPTION_PHOTO_17"] = "Îòîáðàæàòü ïàíåëü ñîö. çàêëàäîê";
+$MESS["WZD_OPTION_PHOTO_1"] = "Ð¤Ð¾Ñ‚Ð¾1";
+$MESS["WZD_OPTION_PHOTO_2"] = "Ð¤Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_3"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_PHOTO_4"] = "ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹";
+$MESS["WZD_OPTION_PHOTO_5"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹";
+$MESS["WZD_OPTION_PHOTO_6"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS["WZD_OPTION_PHOTO_7"] = "*ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_PHOTO_8"] = "*Ð¡Ð¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ñ‹Ð¹ ÐºÐ¾Ð´";
+$MESS["WZD_OPTION_PHOTO_9"] = "Ð¤Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_10"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ðº Ñ„Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_11"] = "Ð”Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ñ„Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_12"] = "Ð¤Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_13"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ðº Ñ„Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_PHOTO_14"] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½Ð¾";
+$MESS["WZD_OPTION_PHOTO_15"] = "Ð”ÐµÑ‚Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_PHOTO_16"] = "Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¸ÐºÐ¾Ð½ÐºÐ¸";
+$MESS["WZD_OPTION_PHOTO_17"] = "ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶Ð°Ñ‚ÑŒ Ð¿Ð°Ð½ÐµÐ»ÑŒ ÑÐ¾Ñ†. Ð·Ð°ÐºÐ»Ð°Ð´Ð¾Ðº";
 
-$MESS["WZD_OPTION_PHOTO_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_PHOTO_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_PHOTO_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_PHOTO_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

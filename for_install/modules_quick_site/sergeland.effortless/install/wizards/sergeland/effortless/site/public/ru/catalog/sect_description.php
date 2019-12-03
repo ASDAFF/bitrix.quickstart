@@ -1,8 +1,8 @@
 <div class="block">
-	Товары из каталога соответствуют стандартам РосТест и имеют официальную гарантию от производителя!
+	РўРѕРІР°СЂС‹ РёР· РєР°С‚Р°Р»РѕРіР° СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‚ СЃС‚Р°РЅРґР°СЂС‚Р°Рј Р РѕСЃРўРµСЃС‚ Рё РёРјРµСЋС‚ РѕС„РёС†РёР°Р»СЊРЅСѓСЋ РіР°СЂР°РЅС‚РёСЋ РѕС‚ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ!
 </div>
 <div class="block doc">
-	<i class="fa fa-file-text-o"></i><a href="#SITE_DIR#catalog/price.xls">Скачать прайс-лист на продукцию</a><span class="file-type">[XLSX, 13,5 kB]</span>
+	<i class="fa fa-file-text-o"></i><a href="#SITE_DIR#catalog/price.xls">РЎРєР°С‡Р°С‚СЊ РїСЂР°Р№СЃ-Р»РёСЃС‚ РЅР° РїСЂРѕРґСѓРєС†РёСЋ</a><span class="file-type">[XLSX, 13,5 kB]</span>
 </div>
 <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "banner", Array(
 		"IBLOCK_TYPE" => "#IBLOCK_TYPE_BANNER_CATALOG#",
@@ -81,7 +81,7 @@
 );?>
 <div class="block">
 	<blockquote class="margin-clear">
-		<p>Кто боится неудач, тот ограничивает свою деятельность.</p>	
-		<footer><cite title="Генри Форд">Генри Форд</cite></footer>
+		<p>РљС‚Рѕ Р±РѕРёС‚СЃСЏ РЅРµСѓРґР°С‡, С‚РѕС‚ РѕРіСЂР°РЅРёС‡РёРІР°РµС‚ СЃРІРѕСЋ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ.</p>	
+		<footer><cite title="Р“РµРЅСЂРё Р¤РѕСЂРґ">Р“РµРЅСЂРё Р¤РѕСЂРґ</cite></footer>
 	</blockquote>
 </div>

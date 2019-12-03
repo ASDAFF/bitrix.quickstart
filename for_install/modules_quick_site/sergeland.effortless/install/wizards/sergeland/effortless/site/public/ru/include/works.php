@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="underline">Наши проекты</h2>
+				<h2 class="underline">РќР°С€Рё РїСЂРѕРµРєС‚С‹</h2>
 				<p>Sed ut Perspiciatis Unde Omnis Iste Sed ut sit  voluptatem accusan tium</p>				
 				<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "works", Array(
 						"IBLOCK_TYPE" => "#IBLOCK_TYPE_WORKS#",

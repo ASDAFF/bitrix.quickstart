@@ -1,10 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Консультация специалиста");
+$APPLICATION->SetTitle("РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ СЃРїРµС†РёР°Р»РёСЃС‚Р°");
 ?>
 <div class="row">
 	<div class="col-md-9 col-md-offset-1">
-		<h1 class="page-title">Форма заказа обратного звонка</h1>
+		<h1 class="page-title">Р¤РѕСЂРјР° Р·Р°РєР°Р·Р° РѕР±СЂР°С‚РЅРѕРіРѕ Р·РІРѕРЅРєР°</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 		<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
 				"AREA_FILE_SHOW" => "file",

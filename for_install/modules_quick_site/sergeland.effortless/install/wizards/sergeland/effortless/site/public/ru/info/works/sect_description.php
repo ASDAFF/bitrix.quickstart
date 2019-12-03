@@ -1,8 +1,8 @@
 <div class="block">
-	При оказании услуг мы гарантируем соблюдение профессиональных и этических норм принятых в профессиональном сообществе.
+	РџСЂРё РѕРєР°Р·Р°РЅРёРё СѓСЃР»СѓРі РјС‹ РіР°СЂР°РЅС‚РёСЂСѓРµРј СЃРѕР±Р»СЋРґРµРЅРёРµ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹С… Рё СЌС‚РёС‡РµСЃРєРёС… РЅРѕСЂРј РїСЂРёРЅСЏС‚С‹С… РІ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРј СЃРѕРѕР±С‰РµСЃС‚РІРµ.
 </div>
 <div class="block doc">
-	<i class="fa fa-file-text-o"></i><a href="#SITE_DIR#services/price.xls">Скачать прайс-лист на услуги</a><span class="file-type">[XLSX, 13,5 kB]</span>
+	<i class="fa fa-file-text-o"></i><a href="#SITE_DIR#services/price.xls">РЎРєР°С‡Р°С‚СЊ РїСЂР°Р№СЃ-Р»РёСЃС‚ РЅР° СѓСЃР»СѓРіРё</a><span class="file-type">[XLSX, 13,5 kB]</span>
 </div>
 <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "banner", Array(
 		"IBLOCK_TYPE" => "#IBLOCK_TYPE_BANNER_WORKS#",
@@ -81,7 +81,7 @@
 );?>
 <div class="block">
 	<blockquote class="margin-clear">
-		<p>Кто боится неудач, тот ограничивает свою деятельность.</p>	
-		<footer><cite title="Генри Форд">Генри Форд</cite></footer>
+		<p>РљС‚Рѕ Р±РѕРёС‚СЃСЏ РЅРµСѓРґР°С‡, С‚РѕС‚ РѕРіСЂР°РЅРёС‡РёРІР°РµС‚ СЃРІРѕСЋ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ.</p>	
+		<footer><cite title="Р“РµРЅСЂРё Р¤РѕСЂРґ">Р“РµРЅСЂРё Р¤РѕСЂРґ</cite></footer>
 	</blockquote>
 </div>

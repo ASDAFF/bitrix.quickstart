@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Контактная информация");
+$APPLICATION->SetTitle("РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ");
 ?>
 <?$APPLICATION->IncludeComponent("sergeland:google.maps", "", 
 	array(
@@ -26,7 +26,7 @@ $APPLICATION->SetTitle("Контактная информация");
 );?>
 <div class="row mt-35">
 	<div class="main col-md-7">
-		<h1 class="page-title">Оставить сообщение</h1>
+		<h1 class="page-title">РћСЃС‚Р°РІРёС‚СЊ СЃРѕРѕР±С‰РµРЅРёРµ</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
 		<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
 				"AREA_FILE_SHOW" => "file",

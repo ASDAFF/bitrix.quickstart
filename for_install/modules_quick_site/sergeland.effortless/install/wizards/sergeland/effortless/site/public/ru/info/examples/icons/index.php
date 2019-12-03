@@ -1,11 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Иконки");
+$APPLICATION->SetTitle("РРєРѕРЅРєРё");
 ?>
-<h1 class="page-title">Иконки Font Awesome 4.5</h1>
-<p class="text-muted">Для вашего удобства иконки разбиты на категории</p>
+<h1 class="page-title">РРєРѕРЅРєРё Font Awesome 4.5</h1>
+<p class="text-muted">Р”Р»СЏ РІР°С€РµРіРѕ СѓРґРѕР±СЃС‚РІР° РёРєРѕРЅРєРё СЂР°Р·Р±РёС‚С‹ РЅР° РєР°С‚РµРіРѕСЂРёРё</p>
 
-<div class="alert alert-info" role="alert">Сайт разработчика иконок <a class="alert-link" target="_blank" href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a></div>
+<div class="alert alert-info" role="alert">РЎР°Р№С‚ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєР° РёРєРѕРЅРѕРє <a class="alert-link" target="_blank" href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a></div>
 <style>.fontawesome-icon-list{font-size:12px;}.fontawesome-icon-list i{font-size:18px; margin:7px 10px 7px 0;}</style>
 
 <section id="web-application">
@@ -976,7 +976,7 @@ $APPLICATION->SetTitle("Иконки");
     <ul class="fa-ul">
       <li>
         <i class="fa fa-info-circle fa-lg fa-li"></i>
-        Для задания вращения, добавьте <code>fa-spin</code> <strong>класс к иконке</strong>. См. ниже.
+        Р”Р»СЏ Р·Р°РґР°РЅРёСЏ РІСЂР°С‰РµРЅРёСЏ, РґРѕР±Р°РІСЊС‚Рµ <code>fa-spin</code> <strong>РєР»Р°СЃСЃ Рє РёРєРѕРЅРєРµ</strong>. РЎРј. РЅРёР¶Рµ.
       </li>
     </ul>
   </div>

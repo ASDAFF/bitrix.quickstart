@@ -1,13 +1,13 @@
 <?
-$MESS["WZD_OPTION_BANNER_WORKS_1"] = "Êàðòèíêà1";
-$MESS["WZD_OPTION_BANNER_WORKS_2"] = "Êàðòèíêà";
-$MESS["WZD_OPTION_BANNER_WORKS_3"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_BANNER_WORKS_4"] = "Ñîðòèðîâêà";
-$MESS["WZD_OPTION_BANNER_WORKS_5"] = "*Íàçâàíèå";
-$MESS["WZD_OPTION_BANNER_WORKS_6"] = "Êàðòèíêà";
-$MESS["WZD_OPTION_BANNER_WORKS_7"] = "Ññûëêà";
-$MESS["WZD_OPTION_BANNER_WORKS_8"] = "Îïèñàíèå ê êàðòèíêå";
+$MESS["WZD_OPTION_BANNER_WORKS_1"] = "ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°1";
+$MESS["WZD_OPTION_BANNER_WORKS_2"] = "ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°";
+$MESS["WZD_OPTION_BANNER_WORKS_3"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_BANNER_WORKS_4"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS["WZD_OPTION_BANNER_WORKS_5"] = "*ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_BANNER_WORKS_6"] = "ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°";
+$MESS["WZD_OPTION_BANNER_WORKS_7"] = "Ð¡ÑÑ‹Ð»ÐºÐ°";
+$MESS["WZD_OPTION_BANNER_WORKS_8"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ðº ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐµ";
 
-$MESS["WZD_OPTION_BANNER_WORKS_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_BANNER_WORKS_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_BANNER_WORKS_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_BANNER_WORKS_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

@@ -3,12 +3,12 @@
 		<div class="call-to-action">
 			<div class="row">
 				<div class="col-md-8">
-					<h1 class="title text-center">Консультация по услугам</h1>
-					<p class="text-center">Сотрудники компании с радостью ответят на все ваши вопросы, произведут расчет стоимости услуг и подготовят коммерческое предложение совершенно бесплатно.</p>
+					<h1 class="title text-center">РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ РїРѕ СѓСЃР»СѓРіР°Рј</h1>
+					<p class="text-center">РЎРѕС‚СЂСѓРґРЅРёРєРё РєРѕРјРїР°РЅРёРё СЃ СЂР°РґРѕСЃС‚СЊСЋ РѕС‚РІРµС‚СЏС‚ РЅР° РІСЃРµ РІР°С€Рё РІРѕРїСЂРѕСЃС‹, РїСЂРѕРёР·РІРµРґСѓС‚ СЂР°СЃС‡РµС‚ СЃС‚РѕРёРјРѕСЃС‚Рё СѓСЃР»СѓРі Рё РїРѕРґРіРѕС‚РѕРІСЏС‚ РєРѕРјРјРµСЂС‡РµСЃРєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ СЃРѕРІРµСЂС€РµРЅРЅРѕ Р±РµСЃРїР»Р°С‚РЅРѕ.</p>
 				</div>
 				<div class="col-md-4">
 					<div class="text-center">
-						<a href="#" class="btn btn-lg <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID))?>" data-toggle="modal" data-target=".FEEDBACK">Задать вопрос</a>
+						<a href="#" class="btn btn-lg <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID))?>" data-toggle="modal" data-target=".FEEDBACK">Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ</a>
 					</div>
 				</div>
 			</div>

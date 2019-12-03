@@ -153,14 +153,14 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	{
 		sergeland_convert_charset_array($_FILES, "UTF-8", $LANG_CHARSET);
 
-		//создаем папку загрузки файла	
+		//СЃРѕР·РґР°РµРј РїР°РїРєСѓ Р·Р°РіСЂСѓР·РєРё С„Р°Р№Р»Р°	
 		$uploaddir = $SITE_DIR.'images/'.md5(time()).'/';
 		mkdir($_SERVER["DOCUMENT_ROOT"].$uploaddir);
 
-		//адрес расположения нового файла
+		//Р°РґСЂРµСЃ СЂР°СЃРїРѕР»РѕР¶РµРЅРёСЏ РЅРѕРІРѕРіРѕ С„Р°Р№Р»Р°
 		$uploadfile = $uploaddir.$_FILES['FILE']['name'];
 
-		// Копируем файл из каталога для временного хранения файлов
+		// РљРѕРїРёСЂСѓРµРј С„Р°Р№Р» РёР· РєР°С‚Р°Р»РѕРіР° РґР»СЏ РІСЂРµРјРµРЅРЅРѕРіРѕ С…СЂР°РЅРµРЅРёСЏ С„Р°Р№Р»РѕРІ
 		if(!copy($_FILES['FILE']['tmp_name'], $_SERVER["DOCUMENT_ROOT"].$uploadfile))
 			$arr["MESSAGE"]["ERROR"] = 1;
 		else $_POST["VACANCIES"]["FILE"] = "http://".$_SERVER["SERVER_NAME"].$uploadfile;

@@ -1,3 +1,3 @@
 <?
-$MESS["SALE_WIZARD_SEARCH_CATEGORY"] = "Òîâàðû";
+$MESS["SALE_WIZARD_SEARCH_CATEGORY"] = "Ð¢Ð¾Ð²Ð°Ñ€Ñ‹";
 ?>

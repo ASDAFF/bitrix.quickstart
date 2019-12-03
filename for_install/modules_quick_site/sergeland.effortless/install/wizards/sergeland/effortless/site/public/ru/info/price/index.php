@@ -1,89 +1,89 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Прайс-лист");
+$APPLICATION->SetTitle("РџСЂР°Р№СЃ-Р»РёСЃС‚");
 ?>
 <center>
-	<h2 class="title">Прайс-лист на бухгалтерское обслуживание</h2>		
-	<p>Действует гибкая система скидок на наши услуги</p>
+	<h2 class="title">РџСЂР°Р№СЃ-Р»РёСЃС‚ РЅР° Р±СѓС…РіР°Р»С‚РµСЂСЃРєРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ</h2>		
+	<p>Р”РµР№СЃС‚РІСѓРµС‚ РіРёР±РєР°СЏ СЃРёСЃС‚РµРјР° СЃРєРёРґРѕРє РЅР° РЅР°С€Рё СѓСЃР»СѓРіРё</p>
 </center>
 <div class="table-responsive">
 <table class="table table-striped table-bordered">
 <tbody>
-	<tr><td nowrap="nowrap" colspan="4"><p align="center"><strong>ДЛЯ ОРГАНИЗАЦИЙ</strong></p></td></tr>
+	<tr><td nowrap="nowrap" colspan="4"><p align="center"><strong>Р”Р›РЇ РћР Р“РђРќРР—РђР¦РР™</strong></p></td></tr>
 	<tr>
-		<td rowspan="2"><p><strong>Количество обрабатываемых документов в месяц</strong></p></td>
-		<td colspan="3"><p align="center"><strong>Сумма ежемесячного платежа (руб.)</strong></p></td>
+		<td rowspan="2"><p><strong>РљРѕР»РёС‡РµСЃС‚РІРѕ РѕР±СЂР°Р±Р°С‚С‹РІР°РµРјС‹С… РґРѕРєСѓРјРµРЅС‚РѕРІ РІ РјРµСЃСЏС†</strong></p></td>
+		<td colspan="3"><p align="center"><strong>РЎСѓРјРјР° РµР¶РµРјРµСЃСЏС‡РЅРѕРіРѕ РїР»Р°С‚РµР¶Р° (СЂСѓР±.)</strong></p></td>
 	</tr>
 	<tr>
-		<td valign="bottom"><p align="center"><strong>ОСНО</strong></p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center"><strong>УСНО 6%, ЕНВД</strong></p></td>
-		<td><p align="center"><strong>УСНО 15%</strong></p></td>
+		<td valign="bottom"><p align="center"><strong>РћРЎРќРћ</strong></p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center"><strong>РЈРЎРќРћ 6%, Р•РќР’Р”</strong></p></td>
+		<td><p align="center"><strong>РЈРЎРќРћ 15%</strong></p></td>
 	</tr>
 	<tr>
-		<td><p>Нулевая отчетность, в квартал</p></td>
+		<td><p>РќСѓР»РµРІР°СЏ РѕС‚С‡РµС‚РЅРѕСЃС‚СЊ, РІ РєРІР°СЂС‚Р°Р»</p></td>
 		<td valign="bottom"><p align="center">1800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">900</p></td>
 		<td><p align="center">900</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 0 до 20</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 0 РґРѕ 20</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 20 до 50</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 20 РґРѕ 50</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">4800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">3200</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">3800</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 51 до 100</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 51 РґРѕ 100</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">6400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">4900</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">5400</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 101 до 200</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 101 РґРѕ 200</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">6500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">7000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 201 до 300</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 201 РґРѕ 300</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">9500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 301 до 400</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 301 РґРѕ 400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">11000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">9500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">10000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 401 до 600</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 401 РґРѕ 600</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">14000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">12500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">13000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 601 до 800</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 601 РґРѕ 800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">17000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">15500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">16000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 801 до 1000</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 801 РґРѕ 1000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">20000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">18500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">19000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 1001</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 1001</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
 	</tr>
 </tbody>
 </table>
@@ -91,86 +91,86 @@ $APPLICATION->SetTitle("Прайс-лист");
 <div class="table-responsive">
 <table class="table table-striped table-bordered">
 <tbody>
-	<tr><td nowrap="nowrap" colspan="4"><p align="center"><strong>ДЛЯ ИНДИВИДУАЛЬНЫХ ПРЕДПРИНИМАТЕЛЕЙ</strong></p></td></tr>
+	<tr><td nowrap="nowrap" colspan="4"><p align="center"><strong>Р”Р›РЇ РРќР”РР’РР”РЈРђР›Р¬РќР«РҐ РџР Р•Р”РџР РРќРРњРђРўР•Р›Р•Р™</strong></p></td></tr>
 	<tr>
-		<td rowspan="2"><p><strong>Количество обрабатываемых документов в месяц</strong></p></td>
-		<td colspan="3"><p align="center"><strong>Сумма ежемесячного платежа (руб.)</strong></p></td>
+		<td rowspan="2"><p><strong>РљРѕР»РёС‡РµСЃС‚РІРѕ РѕР±СЂР°Р±Р°С‚С‹РІР°РµРјС‹С… РґРѕРєСѓРјРµРЅС‚РѕРІ РІ РјРµСЃСЏС†</strong></p></td>
+		<td colspan="3"><p align="center"><strong>РЎСѓРјРјР° РµР¶РµРјРµСЃСЏС‡РЅРѕРіРѕ РїР»Р°С‚РµР¶Р° (СЂСѓР±.)</strong></p></td>
 	</tr>
 	<tr>
-		<td valign="bottom"><p align="center"><strong>ОСНО</strong></p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center"><strong>УСНО 6%, ЕНВД</strong></p></td>
-		<td><p align="center"><strong>УСНО 15%</strong></p></td>
+		<td valign="bottom"><p align="center"><strong>РћРЎРќРћ</strong></p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center"><strong>РЈРЎРќРћ 6%, Р•РќР’Р”</strong></p></td>
+		<td><p align="center"><strong>РЈРЎРќРћ 15%</strong></p></td>
 	</tr>
 	<tr>
-		<td><p>Нулевая отчетность, в квартал</p></td>
+		<td><p>РќСѓР»РµРІР°СЏ РѕС‚С‡РµС‚РЅРѕСЃС‚СЊ, РІ РєРІР°СЂС‚Р°Р»</p></td>
 		<td valign="bottom"><p align="center">900</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">900</p></td>
 		<td><p align="center">900</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 0 до 20</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 0 РґРѕ 20</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">1800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">1400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">1800</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от20 до 50</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚20 РґРѕ 50</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 50 до 100</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 50 РґРѕ 100</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">5400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">4900</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">4900</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 101 до 200</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 101 РґРѕ 200</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">7000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">6500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">6500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 201 до 300</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 201 РґРѕ 300</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">8000</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 301 до 400</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 301 РґРѕ 400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">10000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">9500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">9500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 401 до 600</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 401 РґРѕ 600</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">13000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">12500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">12500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 601 до 800</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 601 РґРѕ 800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">16000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">15500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">15500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 801 до 1000</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 801 РґРѕ 1000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">19000</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">18500</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">18500</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от 1001</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
-		<td valign="bottom" nowrap="nowrap"><p align="center">по договоренности</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚ 1001</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
+		<td valign="bottom" nowrap="nowrap"><p align="center">РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p></td>
 	</tr>
 </tbody>
 </table>
 </div>	
-<h4>Примечание к расчету стоимости услуг</h4>
-	<p><small>1. Ежемесячная оплата по договору включает в себя услуги по ведению бухгалтерского учета на основании представленных заказчиком первичных документов, расчет заработной платы исходя из численности не более 10 сотрудников, составление и сдачу бухгалтерской и налоговой отчетности по ТКС, подготовку отчетности в фонд социального страхования, пенсионный фонд, органы статистики и сдачу ее курьером.</small></p>
-	<p><small>2. Стоимость подготовки и сдачи отчетов 2-НДФЛ и персонифицированного учета в пенсионный фонд рассчитана исходя из численности не более 10 сотрудников. При превышении численности работающих более 10 человек, каждый последующий сотрудник оплачивается отдельно.</small></p>
+<h4>РџСЂРёРјРµС‡Р°РЅРёРµ Рє СЂР°СЃС‡РµС‚Сѓ СЃС‚РѕРёРјРѕСЃС‚Рё СѓСЃР»СѓРі</h4>
+	<p><small>1. Р•Р¶РµРјРµСЃСЏС‡РЅР°СЏ РѕРїР»Р°С‚Р° РїРѕ РґРѕРіРѕРІРѕСЂСѓ РІРєР»СЋС‡Р°РµС‚ РІ СЃРµР±СЏ СѓСЃР»СѓРіРё РїРѕ РІРµРґРµРЅРёСЋ Р±СѓС…РіР°Р»С‚РµСЂСЃРєРѕРіРѕ СѓС‡РµС‚Р° РЅР° РѕСЃРЅРѕРІР°РЅРёРё РїСЂРµРґСЃС‚Р°РІР»РµРЅРЅС‹С… Р·Р°РєР°Р·С‡РёРєРѕРј РїРµСЂРІРёС‡РЅС‹С… РґРѕРєСѓРјРµРЅС‚РѕРІ, СЂР°СЃС‡РµС‚ Р·Р°СЂР°Р±РѕС‚РЅРѕР№ РїР»Р°С‚С‹ РёСЃС…РѕРґСЏ РёР· С‡РёСЃР»РµРЅРЅРѕСЃС‚Рё РЅРµ Р±РѕР»РµРµ 10 СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ, СЃРѕСЃС‚Р°РІР»РµРЅРёРµ Рё СЃРґР°С‡Сѓ Р±СѓС…РіР°Р»С‚РµСЂСЃРєРѕР№ Рё РЅР°Р»РѕРіРѕРІРѕР№ РѕС‚С‡РµС‚РЅРѕСЃС‚Рё РїРѕ РўРљРЎ, РїРѕРґРіРѕС‚РѕРІРєСѓ РѕС‚С‡РµС‚РЅРѕСЃС‚Рё РІ С„РѕРЅРґ СЃРѕС†РёР°Р»СЊРЅРѕРіРѕ СЃС‚СЂР°С…РѕРІР°РЅРёСЏ, РїРµРЅСЃРёРѕРЅРЅС‹Р№ С„РѕРЅРґ, РѕСЂРіР°РЅС‹ СЃС‚Р°С‚РёСЃС‚РёРєРё Рё СЃРґР°С‡Сѓ РµРµ РєСѓСЂСЊРµСЂРѕРј.</small></p>
+	<p><small>2. РЎС‚РѕРёРјРѕСЃС‚СЊ РїРѕРґРіРѕС‚РѕРІРєРё Рё СЃРґР°С‡Рё РѕС‚С‡РµС‚РѕРІ 2-РќР”Р¤Р› Рё РїРµСЂСЃРѕРЅРёС„РёС†РёСЂРѕРІР°РЅРЅРѕРіРѕ СѓС‡РµС‚Р° РІ РїРµРЅСЃРёРѕРЅРЅС‹Р№ С„РѕРЅРґ СЂР°СЃСЃС‡РёС‚Р°РЅР° РёСЃС…РѕРґСЏ РёР· С‡РёСЃР»РµРЅРЅРѕСЃС‚Рё РЅРµ Р±РѕР»РµРµ 10 СЃРѕС‚СЂСѓРґРЅРёРєРѕРІ. РџСЂРё РїСЂРµРІС‹С€РµРЅРёРё С‡РёСЃР»РµРЅРЅРѕСЃС‚Рё СЂР°Р±РѕС‚Р°СЋС‰РёС… Р±РѕР»РµРµ 10 С‡РµР»РѕРІРµРє, РєР°Р¶РґС‹Р№ РїРѕСЃР»РµРґСѓСЋС‰РёР№ СЃРѕС‚СЂСѓРґРЅРёРє РѕРїР»Р°С‡РёРІР°РµС‚СЃСЏ РѕС‚РґРµР»СЊРЅРѕ.</small></p>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

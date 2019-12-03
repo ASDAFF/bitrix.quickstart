@@ -1,14 +1,14 @@
 <?
-$MESS["T_ARTICLES_DETAIL_BACK"] = "Âîçâðàò ê ñïèñêó";
-$MESS["SERGELAND_EFFORTLESS_OF"] = "èç";
+$MESS["T_ARTICLES_DETAIL_BACK"] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
+$MESS["SERGELAND_EFFORTLESS_OF"] = "Ð¸Ð·";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_ERROR"] = "Îøèáêà îòïðàâêè ôîðìû. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_SUCCESS"] = "Ñïàñèáî, æäèòå çâîíêà.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð¶Ð´Ð¸Ñ‚Ðµ Ð·Ð²Ð¾Ð½ÐºÐ°.";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_NAME"] = "Âàøå èìÿ";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_PHONE"] = "Òåëåôîí";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_SEND"] = "Çàêàçàòü óñëóãó";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_SEND"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑƒÑÐ»ÑƒÐ³Ñƒ";
 
-$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 ?>

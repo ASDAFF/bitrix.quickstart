@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="text-center">О компании</h1>
+				<h1 class="text-center">Рћ РєРѕРјРїР°РЅРёРё</h1>
 				<div class="separator"></div>
 				<p class="lead text-center mb-40">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p>
 				<div class="row">
@@ -17,7 +17,7 @@
 						</div>
 						<p>Esse sequi veniam, assumenda voluptate necessitatibus ipsa dicta vero, minima natus cum cupiditate magnam et placeat quo adipisci.</p>
 						<p>Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.</p>
-						<a href="#SITE_DIR#about/" class="btn btn-white">Подробнее</a>
+						<a href="#SITE_DIR#about/" class="btn btn-white">РџРѕРґСЂРѕР±РЅРµРµ</a>
 						<div class="space hidden-md hidden-lg"></div>
 					</div>
 					<div class="col-md-6">

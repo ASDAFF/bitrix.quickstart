@@ -1,12 +1,12 @@
 <?
-$MESS["WZD_OPTION_HISTORY_1"] = "Îïèñàíèå";
-$MESS["WZD_OPTION_HISTORY_2"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_HISTORY_3"] = "Öâåòíîé çàãîëîâîê";
-$MESS["WZD_OPTION_HISTORY_4"] = "Ñîðòèðîâêà";
-$MESS["WZD_OPTION_HISTORY_5"] = "*Íàçâàíèå";
-$MESS["WZD_OPTION_HISTORY_6"] = "Èêîíêà";
-$MESS["WZD_OPTION_HISTORY_7"] = "Îïèñàíèå";
+$MESS["WZD_OPTION_HISTORY_1"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_HISTORY_2"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_HISTORY_3"] = "Ð¦Ð²ÐµÑ‚Ð½Ð¾Ð¹ Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº";
+$MESS["WZD_OPTION_HISTORY_4"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS["WZD_OPTION_HISTORY_5"] = "*ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_HISTORY_6"] = "Ð˜ÐºÐ¾Ð½ÐºÐ°";
+$MESS["WZD_OPTION_HISTORY_7"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
 
-$MESS["WZD_OPTION_HISTORY_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_HISTORY_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_HISTORY_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_HISTORY_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

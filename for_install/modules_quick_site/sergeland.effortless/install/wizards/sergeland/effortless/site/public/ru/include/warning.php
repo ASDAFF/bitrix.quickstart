@@ -3,10 +3,10 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="call-to-action">
-					<h1 class="title">Бесплатная консультация специалиста</h1>
-					<p class="col-md-8 col-md-offset-2">Сотрудники компании с радостью <strong>ответят</strong> на все ваши вопросы и произведут расчет стоимости услуг совершенно <strong>бесплатно</strong>.</p>
+					<h1 class="title">Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ СЃРїРµС†РёР°Р»РёСЃС‚Р°</h1>
+					<p class="col-md-8 col-md-offset-2">РЎРѕС‚СЂСѓРґРЅРёРєРё РєРѕРјРїР°РЅРёРё СЃ СЂР°РґРѕСЃС‚СЊСЋ <strong>РѕС‚РІРµС‚СЏС‚</strong> РЅР° РІСЃРµ РІР°С€Рё РІРѕРїСЂРѕСЃС‹ Рё РїСЂРѕРёР·РІРµРґСѓС‚ СЂР°СЃС‡РµС‚ СЃС‚РѕРёРјРѕСЃС‚Рё СѓСЃР»СѓРі СЃРѕРІРµСЂС€РµРЅРЅРѕ <strong>Р±РµСЃРїР»Р°С‚РЅРѕ</strong>.</p>
 					<div class="clearfix"></div>
-					<a class="btn btn-white more" data-toggle="modal" data-target=".FEEDBACK">Задать вопрос<i class="pl-10 fa fa-info"></i></a>
+					<a class="btn btn-white more" data-toggle="modal" data-target=".FEEDBACK">Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ<i class="pl-10 fa fa-info"></i></a>
 					<a href="callto:+74954567890" class="btn btn-default contact">+7(495) 456 7890<i class="pl-10 fa fa-phone"></i></a>
 				</div>
 			</div>

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2 class="underline">Популярные товары</h2>
+				<h2 class="underline">РџРѕРїСѓР»СЏСЂРЅС‹Рµ С‚РѕРІР°СЂС‹</h2>
 				<p>Sed ut Perspiciatis Unde Omnis Iste Sed ut sit  voluptatem accusan tium </p>
 				<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "products-popular", Array(
 						"IBLOCK_TYPE" => "#IBLOCK_TYPE_CATALOG#",

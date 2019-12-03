@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Effortless - Êîðïîðàòèâíûé, àäàïòèâíûé ñàéò");
+$APPLICATION->SetTitle("Effortless - ÐšÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹, Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÑÐ°Ð¹Ñ‚");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
 		"AREA_FILE_SHOW" => "file",

@@ -1,6 +1,6 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_NUMBER1"] = "âîïðîñîâ";
-$MESS["SERGELAND_EFFORTLESS_NUMBER2"] = "âîïðîñ";
-$MESS["SERGELAND_EFFORTLESS_NUMBER3"] = "âîïðîñà";
-$MESS["CT_BCSL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["SERGELAND_EFFORTLESS_NUMBER1"] = "Ð²Ð¾Ð¿Ñ€Ð¾ÑÐ¾Ð²";
+$MESS["SERGELAND_EFFORTLESS_NUMBER2"] = "Ð²Ð¾Ð¿Ñ€Ð¾Ñ";
+$MESS["SERGELAND_EFFORTLESS_NUMBER3"] = "Ð²Ð¾Ð¿Ñ€Ð¾ÑÐ°";
+$MESS["CT_BCSL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 ?>

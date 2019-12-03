@@ -1,5 +1,5 @@
 <?
 $MESS ['T_IBLOCK_DESC_LIST'] = "Google maps";
-$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "Êàðòà Google";
+$MESS ['T_IBLOCK_DESC_LIST_DESC'] = "ÐšÐ°Ñ€Ñ‚Ð° Google";
 $MESS ['T_IBLOCK_DESC_SLIDER'] = "Google maps";
 ?>

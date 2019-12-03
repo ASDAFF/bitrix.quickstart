@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Контент");
+$APPLICATION->SetTitle("РљРѕРЅС‚РµРЅС‚");
 ?>
-<h1 class="page-title">Примеры наполнения контентом страниц сайта</h1>
-<div class="text-muted">Для вашего удобства примеры разбиты на категории</div>
+<h1 class="page-title">РџСЂРёРјРµСЂС‹ РЅР°РїРѕР»РЅРµРЅРёСЏ РєРѕРЅС‚РµРЅС‚РѕРј СЃС‚СЂР°РЅРёС† СЃР°Р№С‚Р°</h1>
+<div class="text-muted">Р”Р»СЏ РІР°С€РµРіРѕ СѓРґРѕР±СЃС‚РІР° РїСЂРёРјРµСЂС‹ СЂР°Р·Р±РёС‚С‹ РЅР° РєР°С‚РµРіРѕСЂРёРё</div>
 <div class="space-bottom"></div>
 
 <h2 class="mb-30">Horizontal Tabs - Version 1</h2>

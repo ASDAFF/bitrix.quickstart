@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="text-center title">Услуги компании</h1>
+				<h1 class="text-center title">РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРё</h1>
 				<div class="separator"></div>
 				<p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p>
 				<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", "services-ver-1", SITE_ID)), SITE_ID)), 

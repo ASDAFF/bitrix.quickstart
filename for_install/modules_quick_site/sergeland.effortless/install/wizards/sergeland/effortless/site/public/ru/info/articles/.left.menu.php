@@ -1,7 +1,7 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Ñòàòüè", 
+		"Ð¡Ñ‚Ð°Ñ‚ÑŒÐ¸", 
 		"#SITE_DIR#info/articles/", 
 		Array(), 
 		Array(), 

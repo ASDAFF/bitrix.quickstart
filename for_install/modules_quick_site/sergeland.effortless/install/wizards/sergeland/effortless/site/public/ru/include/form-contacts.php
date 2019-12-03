@@ -1,12 +1,12 @@
 <div id="results-contacts">
 	<div class="alert alert-danger" id="beforesend-contacts">
-		Пожалуйста заполните обязательные поля.
+		РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РїРѕР»СЏ.
 	</div>
 	<div class="alert alert-danger" id="error-contacts">
-		Ошибка отправки сообщения.
+		РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ.
 	</div> 
 	<div class="alert alert-success" id="success-contacts">
-		Спасибо, ваше сообщение отправлено администрации сайта.
+		РЎРїР°СЃРёР±Рѕ, РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё СЃР°Р№С‚Р°.
 	</div>
 </div>
 <img src="#SITE_DIR#images/loading.gif" alt="Loading" id="form-loading-contacts" class="pull-right" />
@@ -15,7 +15,7 @@
 	<form name="CONTACTS" action="#SITE_DIR#include/" method="POST" role="form">
 		<input type="hidden" name="CONTACTS[SITE_ID]" value="<?=SITE_ID?>"/>
 		<div class="form-group has-feedback">
-			<label for="name">Имя*</label>
+			<label for="name">РРјСЏ*</label>
 			<input type="text" name="CONTACTS[NAME]" class="form-control req">
 			<i class="fa fa-user form-control-feedback"></i>
 		</div>
@@ -25,16 +25,16 @@
 			<i class="fa fa-envelope form-control-feedback"></i>
 		</div>
 		<div class="form-group has-feedback">
-			<label for="subject">Тема*</label>
+			<label for="subject">РўРµРјР°*</label>
 			<input type="text" name="CONTACTS[TITLE]" class="form-control req">
 			<i class="fa fa-navicon form-control-feedback"></i>
 		</div>
 		<div class="form-group has-feedback">
-			<label for="message">Сообщение*</label>
+			<label for="message">РЎРѕРѕР±С‰РµРЅРёРµ*</label>
 			<textarea name="CONTACTS[COMMENT]" class="form-control req" rows="6"></textarea>
 			<i class="fa fa-pencil form-control-feedback"></i>
 		</div>
-		<input type="submit" value="Отправить" class="submit-button btn btn-default pull-right">
+		<input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ" class="submit-button btn btn-default pull-right">
 		<div class="clearfix"></div>
 	</form>
 </div>

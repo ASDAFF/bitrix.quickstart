@@ -2,28 +2,28 @@
 	<div id="results-callback-modal">
 		<!--
 		<div class="alert alert-danger" id="beforesend-callback-modal">
-			Пожалуйста заполните все поля.
+			РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ.
 		</div>
 		-->
 		<div class="alert alert-danger" id="error-callback-modal">
-			Ошибка отправки формы.
+			РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё С„РѕСЂРјС‹.
 		</div>		
 		<div class="alert alert-success" id="success-callback-modal">
-			Спасибо, ждите звонка.
+			РЎРїР°СЃРёР±Рѕ, Р¶РґРёС‚Рµ Р·РІРѕРЅРєР°.
 		</div>
 	</div>	
 	<div class="clearfix"><img src="#SITE_DIR#images/loading.gif" alt="Loading" id="form-loading-callback-modal" class="pull-right" /></div>	
 	<input type="hidden" name="CALLBACK_MODAL[SITE_ID]" value="<?=SITE_ID?>"/>
-	<input type="hidden" name="CALLBACK_MODAL[TITLE]" value="Обратный звонок"/>
+	<input type="hidden" name="CALLBACK_MODAL[TITLE]" value="РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"/>
 	<div class="form-group has-feedback">
-		<label class="control-label">Ваше имя</label>
-		<input type="text" name="CALLBACK_MODAL[NAME]" placeholder="Имя" class="form-control req">
+		<label class="control-label">Р’Р°С€Рµ РёРјСЏ</label>
+		<input type="text" name="CALLBACK_MODAL[NAME]" placeholder="РРјСЏ" class="form-control req">
 		<i class="fa fa-user form-control-feedback"></i>
 	</div>
 	<div class="form-group has-feedback">
-		<label class="control-label">Телефон</label>
+		<label class="control-label">РўРµР»РµС„РѕРЅ</label>
 		<input type="tel" name="CALLBACK_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" placeholder="+7 (000) 000 00 00" class="form-control req">
 		<i class="fa fa-phone form-control-feedback"></i>
 	</div>
-	<button type="submit" class="btn btn-group btn-default btn-sm pull-right">Заказать звонок</button>
+	<button type="submit" class="btn btn-group btn-default btn-sm pull-right">Р—Р°РєР°Р·Р°С‚СЊ Р·РІРѕРЅРѕРє</button>
 </form>

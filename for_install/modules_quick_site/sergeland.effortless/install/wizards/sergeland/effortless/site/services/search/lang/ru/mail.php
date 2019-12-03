@@ -1,14 +1,14 @@
 <?
 //FEEDBACK_FORM
 
-$MESS["FEEDBACK_FORM_NAME"] = "Отправка сообщения через форму обратной связи";
-$MESS["FEEDBACK_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - дата создания сообщения
-#TITLE# - тема сообщения
-#NAME# - имя пользователя
-#EMAIL# - Email пользователя
-#PHONE# - телефон пользователя
-#COMMENT# - комментарий";
-$MESS["FEEDBACK_FORM_SUBJECT"] = "#SERVER_NAME#: Сообщение из формы обратной связи";
+$MESS["FEEDBACK_FORM_NAME"] = "РћС‚РїСЂР°РІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ С‡РµСЂРµР· С„РѕСЂРјСѓ РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё";
+$MESS["FEEDBACK_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ СЃРѕРѕР±С‰РµРЅРёСЏ
+#TITLE# - С‚РµРјР° СЃРѕРѕР±С‰РµРЅРёСЏ
+#NAME# - РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#EMAIL# - Email РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#PHONE# - С‚РµР»РµС„РѕРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#COMMENT# - РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS["FEEDBACK_FORM_SUBJECT"] = "#SERVER_NAME#: РЎРѕРѕР±С‰РµРЅРёРµ РёР· С„РѕСЂРјС‹ РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё";
 $MESS["FEEDBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 <html>
 <head>
@@ -28,7 +28,7 @@ $MESS["FEEDBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 		<td height=\"83\" width=\"850\" bgcolor=\"#eaf3f5\" style=\"border: none; padding-top: 23px; padding-right: 17px; padding-bottom: 24px; padding-left: 17px;\">
 			<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
 				<tr>
-					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">Информационное сообщение сайта &laquo;#SITE_NAME#&raquo;</td>
+					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃР°Р№С‚Р° &laquo;#SITE_NAME#&raquo;</td>
 				</tr>
 				<tr>
 					<td bgcolor=\"#bad3df\" height=\"11\"></td>
@@ -38,18 +38,18 @@ $MESS["FEEDBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 	</tr>
 	<tr>
 		<td width=\"850\" bgcolor=\"#f7f7f7\" valign=\"top\" style=\"border: none; padding-top: 0; padding-right: 44px; padding-bottom: 16px; padding-left: 44px;\">
-			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">Уважаемый администратор сайта.</p>
-			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">Пользователем оставлено сообщение.<br />
+			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">РЈРІР°Р¶Р°РµРјС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°.</p>
+			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">РџРѕР»СЊР·РѕРІР°С‚РµР»РµРј РѕСЃС‚Р°РІР»РµРЅРѕ СЃРѕРѕР±С‰РµРЅРёРµ.<br />
 				<br />
-				Дата:  <i>#DATE_ACTIVE_FROM#</i><br />
-				Тема:  <b>#TITLE#</b><br />
+				Р”Р°С‚Р°:  <i>#DATE_ACTIVE_FROM#</i><br />
+				РўРµРјР°:  <b>#TITLE#</b><br />
 				<br />
-				Имя: <i>#NAME#</i><br /> 
+				РРјСЏ: <i>#NAME#</i><br /> 
 				Email: <i>#EMAIL#</i><br />
-				Телефон: <i>#PHONE#</i><br />
-				Сообщение: <i>#COMMENT#</i><br />
+				РўРµР»РµС„РѕРЅ: <i>#PHONE#</i><br />
+				РЎРѕРѕР±С‰РµРЅРёРµ: <i>#COMMENT#</i><br />
 				<br />
-				<i>Это письмо сгенерировано автоматически. Пожалуйста не отвечайте на него.</i>
+				<i>Р­С‚Рѕ РїРёСЃСЊРјРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅРµ РѕС‚РІРµС‡Р°Р№С‚Рµ РЅР° РЅРµРіРѕ.</i>
 			</p>
 		</td>
 	</tr>
@@ -60,14 +60,14 @@ $MESS["FEEDBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 
 // ORDER_FORM
 
-$MESS["ORDER_FORM_NAME"] = "Уведомление о заказе товара";
-$MESS["ORDER_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - дата заказа
-#PRODUCT_NAME# - название товара
-#NAME# - имя покупателя
-#PHONE# - телефон
+$MESS["ORDER_FORM_NAME"] = "РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ Р·Р°РєР°Р·Рµ С‚РѕРІР°СЂР°";
+$MESS["ORDER_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - РґР°С‚Р° Р·Р°РєР°Р·Р°
+#PRODUCT_NAME# - РЅР°Р·РІР°РЅРёРµ С‚РѕРІР°СЂР°
+#NAME# - РёРјСЏ РїРѕРєСѓРїР°С‚РµР»СЏ
+#PHONE# - С‚РµР»РµС„РѕРЅ
 #EMAIL# - Email
-#COMMENT# - комментарий";
-$MESS["ORDER_FORM_SUBJECT"] = "#SERVER_NAME#: Заказ товара - #PRODUCT_NAME#";
+#COMMENT# - РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS["ORDER_FORM_SUBJECT"] = "#SERVER_NAME#: Р—Р°РєР°Р· С‚РѕРІР°СЂР° - #PRODUCT_NAME#";
 $MESS["ORDER_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 <html>
 <head>
@@ -87,7 +87,7 @@ $MESS["ORDER_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Tra
 		<td height=\"83\" width=\"850\" bgcolor=\"#eaf3f5\" style=\"border: none; padding-top: 23px; padding-right: 17px; padding-bottom: 24px; padding-left: 17px;\">
 			<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
 				<tr>
-					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">Информационное сообщение сайта &laquo;#SITE_NAME#&raquo;</td>
+					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃР°Р№С‚Р° &laquo;#SITE_NAME#&raquo;</td>
 				</tr>
 				<tr>
 					<td bgcolor=\"#bad3df\" height=\"11\"></td>
@@ -97,18 +97,18 @@ $MESS["ORDER_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Tra
 	</tr>
 	<tr>
 		<td width=\"850\" bgcolor=\"#f7f7f7\" valign=\"top\" style=\"border: none; padding-top: 0; padding-right: 44px; padding-bottom: 16px; padding-left: 44px;\">
-			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">Уважаемый администратор сайта.</p>
-			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">Покупателем оформлен заказ - <b>#PRODUCT_NAME#</b>.<br />
+			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">РЈРІР°Р¶Р°РµРјС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°.</p>
+			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">РџРѕРєСѓРїР°С‚РµР»РµРј РѕС„РѕСЂРјР»РµРЅ Р·Р°РєР°Р· - <b>#PRODUCT_NAME#</b>.<br />
 				<br />
-				Дата:  <i>#DATE_ACTIVE_FROM#</i><br />
-				Название: <i><b>#PRODUCT_NAME#</b></i><br />
+				Р”Р°С‚Р°:  <i>#DATE_ACTIVE_FROM#</i><br />
+				РќР°Р·РІР°РЅРёРµ: <i><b>#PRODUCT_NAME#</b></i><br />
 				<br />
-				Покупатель: <i>#NAME#</i><br /> 
-				Телефон: <i><b>#PHONE#</b></i><br /> 
+				РџРѕРєСѓРїР°С‚РµР»СЊ: <i>#NAME#</i><br /> 
+				РўРµР»РµС„РѕРЅ: <i><b>#PHONE#</b></i><br /> 
 				Email: <i>#EMAIL#</i><br /> 
-				Комментарий к заказу: <i>#COMMENT#</i><br />
+				РљРѕРјРјРµРЅС‚Р°СЂРёР№ Рє Р·Р°РєР°Р·Сѓ: <i>#COMMENT#</i><br />
 				<br />
-				<i>Это письмо сгенерировано автоматически. Пожалуйста не отвечайте на него.</i>
+				<i>Р­С‚Рѕ РїРёСЃСЊРјРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅРµ РѕС‚РІРµС‡Р°Р№С‚Рµ РЅР° РЅРµРіРѕ.</i>
 			</p>
 		</td>
 	</tr>
@@ -119,13 +119,13 @@ $MESS["ORDER_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Tra
 
 // CALLBACK_FORM
 
-$MESS["CALLBACK_FORM_NAME"] = "Уведомление об обратном звонке";
-$MESS["CALLBACK_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - дата создания сообщения
-#TITLE# - тема
-#NAME# - имя пользователя
-#PHONE# - телефон
-#COMMENT# - комментарий";
-$MESS["CALLBACK_FORM_SUBJECT"] = "#SERVER_NAME#: Запрос на обратный звонок - #PHONE#";
+$MESS["CALLBACK_FORM_NAME"] = "РЈРІРµРґРѕРјР»РµРЅРёРµ РѕР± РѕР±СЂР°С‚РЅРѕРј Р·РІРѕРЅРєРµ";
+$MESS["CALLBACK_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ СЃРѕРѕР±С‰РµРЅРёСЏ
+#TITLE# - С‚РµРјР°
+#NAME# - РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+#PHONE# - С‚РµР»РµС„РѕРЅ
+#COMMENT# - РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS["CALLBACK_FORM_SUBJECT"] = "#SERVER_NAME#: Р—Р°РїСЂРѕСЃ РЅР° РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє - #PHONE#";
 $MESS["CALLBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 <html>
 <head>
@@ -145,7 +145,7 @@ $MESS["CALLBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 		<td height=\"83\" width=\"850\" bgcolor=\"#eaf3f5\" style=\"border: none; padding-top: 23px; padding-right: 17px; padding-bottom: 24px; padding-left: 17px;\">
 			<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
 				<tr>
-					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">Информационное сообщение сайта &laquo;#SITE_NAME#&raquo;</td>
+					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃР°Р№С‚Р° &laquo;#SITE_NAME#&raquo;</td>
 				</tr>
 				<tr>
 					<td bgcolor=\"#bad3df\" height=\"11\"></td>
@@ -155,17 +155,17 @@ $MESS["CALLBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 	</tr>
 	<tr>
 		<td width=\"850\" bgcolor=\"#f7f7f7\" valign=\"top\" style=\"border: none; padding-top: 0; padding-right: 44px; padding-bottom: 16px; padding-left: 44px;\">
-			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">Уважаемый администратор сайта.</p>
-			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">Пользователь заказал обратный звонок.<br />
+			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">РЈРІР°Р¶Р°РµРјС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°.</p>
+			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°РєР°Р·Р°Р» РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє.<br />
 				<br />
-				Дата:  <i>#DATE_ACTIVE_FROM#</i><br />
-				Тема:  <b>#TITLE#</b><br />
+				Р”Р°С‚Р°:  <i>#DATE_ACTIVE_FROM#</i><br />
+				РўРµРјР°:  <b>#TITLE#</b><br />
 				<br />
-				Имя: <i>#NAME#</i><br /> 
-				Телефон: <i>#PHONE#</i><br /> 
-				Сообщение: <i>#COMMENT#</i><br />
+				РРјСЏ: <i>#NAME#</i><br /> 
+				РўРµР»РµС„РѕРЅ: <i>#PHONE#</i><br /> 
+				РЎРѕРѕР±С‰РµРЅРёРµ: <i>#COMMENT#</i><br />
 				<br />
-				<i>Это письмо сгенерировано автоматически. Пожалуйста не отвечайте на него.</i>
+				<i>Р­С‚Рѕ РїРёСЃСЊРјРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅРµ РѕС‚РІРµС‡Р°Р№С‚Рµ РЅР° РЅРµРіРѕ.</i>
 			</p>
 		</td>
 	</tr>
@@ -176,14 +176,14 @@ $MESS["CALLBACK_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 
 // COMMENTS_FORM
 
-$MESS["COMMENTS_FORM_NAME"] = "Уведомление о комментарии";
-$MESS["COMMENTS_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - дата создания комментария
-#TITLE# - раздел на сайте
-#NAME# - имя пользователя
+$MESS["COMMENTS_FORM_NAME"] = "РЈРІРµРґРѕРјР»РµРЅРёРµ Рѕ РєРѕРјРјРµРЅС‚Р°СЂРёРё";
+$MESS["COMMENTS_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ РєРѕРјРјРµРЅС‚Р°СЂРёСЏ
+#TITLE# - СЂР°Р·РґРµР» РЅР° СЃР°Р№С‚Рµ
+#NAME# - РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 #EMAIL# - Email
-#STARS# - рейтинг
-#COMMENT# - комментарий";
-$MESS["COMMENTS_FORM_SUBJECT"] = "#SERVER_NAME#: Комментарий на сайте";
+#STARS# - СЂРµР№С‚РёРЅРі
+#COMMENT# - РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS["COMMENTS_FORM_SUBJECT"] = "#SERVER_NAME#: РљРѕРјРјРµРЅС‚Р°СЂРёР№ РЅР° СЃР°Р№С‚Рµ";
 $MESS["COMMENTS_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 <html>
 <head>
@@ -203,7 +203,7 @@ $MESS["COMMENTS_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 		<td height=\"83\" width=\"850\" bgcolor=\"#eaf3f5\" style=\"border: none; padding-top: 23px; padding-right: 17px; padding-bottom: 24px; padding-left: 17px;\">
 			<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
 				<tr>
-					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">Информационное сообщение сайта &laquo;#SITE_NAME#&raquo;</td>
+					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃР°Р№С‚Р° &laquo;#SITE_NAME#&raquo;</td>
 				</tr>
 				<tr>
 					<td bgcolor=\"#bad3df\" height=\"11\"></td>
@@ -213,18 +213,18 @@ $MESS["COMMENTS_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 	</tr>
 	<tr>
 		<td width=\"850\" bgcolor=\"#f7f7f7\" valign=\"top\" style=\"border: none; padding-top: 0; padding-right: 44px; padding-bottom: 16px; padding-left: 44px;\">
-			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">Уважаемый администратор сайта.</p>
-			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">Пользователь оставил комментарий на сайте.<br />
+			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">РЈРІР°Р¶Р°РµРјС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°.</p>
+			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РѕСЃС‚Р°РІРёР» РєРѕРјРјРµРЅС‚Р°СЂРёР№ РЅР° СЃР°Р№С‚Рµ.<br />
 				<br />
-				Дата:  <i>#DATE_ACTIVE_FROM#</i><br />
-				Раздел:  <b>#TITLE#</b><br />
+				Р”Р°С‚Р°:  <i>#DATE_ACTIVE_FROM#</i><br />
+				Р Р°Р·РґРµР»:  <b>#TITLE#</b><br />
 				<br />
-				Имя: <i>#NAME#</i><br /> 
+				РРјСЏ: <i>#NAME#</i><br /> 
 				Email: <i>#EMAIL#</i><br />
-				Рейтинг: <i>#STARS#</i><br />				
-				Сообщение: <i>#COMMENT#</i><br />
+				Р РµР№С‚РёРЅРі: <i>#STARS#</i><br />				
+				РЎРѕРѕР±С‰РµРЅРёРµ: <i>#COMMENT#</i><br />
 				<br />
-				<i>Это письмо сгенерировано автоматически. Пожалуйста не отвечайте на него.</i>
+				<i>Р­С‚Рѕ РїРёСЃСЊРјРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅРµ РѕС‚РІРµС‡Р°Р№С‚Рµ РЅР° РЅРµРіРѕ.</i>
 			</p>
 		</td>
 	</tr>
@@ -235,15 +235,15 @@ $MESS["COMMENTS_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 
 
 // VACANCIES_FORM
 
-$MESS["VACANCIES_FORM_NAME"] = "Отправка резюме";
-$MESS["VACANCIES_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - дата создания сообщения
-#TITLE# - вакансия
-#NAME# - имя соискателя
-#PHONE# - телефон
+$MESS["VACANCIES_FORM_NAME"] = "РћС‚РїСЂР°РІРєР° СЂРµР·СЋРјРµ";
+$MESS["VACANCIES_FORM_DESCRIPTION"] = "#DATE_ACTIVE_FROM# - РґР°С‚Р° СЃРѕР·РґР°РЅРёСЏ СЃРѕРѕР±С‰РµРЅРёСЏ
+#TITLE# - РІР°РєР°РЅСЃРёСЏ
+#NAME# - РёРјСЏ СЃРѕРёСЃРєР°С‚РµР»СЏ
+#PHONE# - С‚РµР»РµС„РѕРЅ
 #EMAIL# - Email
-#FILE# - файл
-#COMMENT# - комментарий";
-$MESS["VACANCIES_FORM_SUBJECT"] = "#SERVER_NAME#: Резюме соискателя";
+#FILE# - С„Р°Р№Р»
+#COMMENT# - РєРѕРјРјРµРЅС‚Р°СЂРёР№";
+$MESS["VACANCIES_FORM_SUBJECT"] = "#SERVER_NAME#: Р РµР·СЋРјРµ СЃРѕРёСЃРєР°С‚РµР»СЏ";
 $MESS["VACANCIES_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
 <html>
 <head>
@@ -263,7 +263,7 @@ $MESS["VACANCIES_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01
 		<td height=\"83\" width=\"850\" bgcolor=\"#eaf3f5\" style=\"border: none; padding-top: 23px; padding-right: 17px; padding-bottom: 24px; padding-left: 17px;\">
 			<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\">
 				<tr>
-					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">Информационное сообщение сайта &laquo;#SITE_NAME#&raquo;</td>
+					<td bgcolor=\"#ffffff\" height=\"75\" style=\"font-weight: bold; text-align: center; font-size: 26px; color: #0b3961;\">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃР°Р№С‚Р° &laquo;#SITE_NAME#&raquo;</td>
 				</tr>
 				<tr>
 					<td bgcolor=\"#bad3df\" height=\"11\"></td>
@@ -273,18 +273,18 @@ $MESS["VACANCIES_FORM_MESSAGE"] = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01
 	</tr>
 	<tr>
 		<td width=\"850\" bgcolor=\"#f7f7f7\" valign=\"top\" style=\"border: none; padding-top: 0; padding-right: 44px; padding-bottom: 16px; padding-left: 44px;\">
-			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">Уважаемый администратор сайта.</p>
-			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">Соискателем отправлено резюме.<br />
+			<p style=\"margin-top:30px; margin-bottom: 28px; font-weight: bold; font-size: 19px;\">РЈРІР°Р¶Р°РµРјС‹Р№ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃР°Р№С‚Р°.</p>
+			<p style=\"margin-top: 0; margin-bottom: 20px; line-height: 20px;\">РЎРѕРёСЃРєР°С‚РµР»РµРј РѕС‚РїСЂР°РІР»РµРЅРѕ СЂРµР·СЋРјРµ.<br />
 				<br />
-				Дата:  <i>#DATE_ACTIVE_FROM#</i><br />
-				Вакансия: #TITLE#<br />
-				Имя соискателя: <i>#NAME#</i><br /> 
-				Телефон: <i>#PHONE#</i><br />
+				Р”Р°С‚Р°:  <i>#DATE_ACTIVE_FROM#</i><br />
+				Р’Р°РєР°РЅСЃРёСЏ: #TITLE#<br />
+				РРјСЏ СЃРѕРёСЃРєР°С‚РµР»СЏ: <i>#NAME#</i><br /> 
+				РўРµР»РµС„РѕРЅ: <i>#PHONE#</i><br />
 				Email: <i>#EMAIL#</i><br />
-				Файл: <a href=\"#FILE#\" target=\"_blank\"><i>#FILE#</i></a><br /> 
-				Комментарий: <i>#COMMENT#</i><br />
+				Р¤Р°Р№Р»: <a href=\"#FILE#\" target=\"_blank\"><i>#FILE#</i></a><br /> 
+				РљРѕРјРјРµРЅС‚Р°СЂРёР№: <i>#COMMENT#</i><br />
 				<br />
-				<i>Это письмо сгенерировано автоматически. Пожалуйста не отвечайте на него.</i>
+				<i>Р­С‚Рѕ РїРёСЃСЊРјРѕ СЃРіРµРЅРµСЂРёСЂРѕРІР°РЅРѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РЅРµ РѕС‚РІРµС‡Р°Р№С‚Рµ РЅР° РЅРµРіРѕ.</i>
 			</p>
 		</td>
 	</tr>

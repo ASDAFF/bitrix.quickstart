@@ -30,13 +30,13 @@ if(!empty($_POST["SWITCHER"]))
 <script src="<?=SITE_TEMPLATE_PATH?>/switcher/switcher.js"></script>
 <?if(!$arParams["DEMO"]):?><style>#style-switcher{top:163px}#style-switcher form{height:415px}</style><?endif?>
 <div id="style-switcher">
-	<div>Настройка внешнего вида<i class="fa fa-gear label-default"></i></div>
+	<div>РќР°СЃС‚СЂРѕР№РєР° РІРЅРµС€РЅРµРіРѕ РІРёРґР°<i class="fa fa-gear label-default"></i></div>
 	<form action="<?=POST_FORM_ACTION_URI?>" method="post" name="SWITCHER" enctype="multipart/form-data">
 		<input type="hidden" name="SWITCHER[COLOR]" value="<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["COLOR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["COLOR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_COLOR", "red", SITE_ID))?>" id="COLOR">
 		<input type="hidden" name="SWITCHER[BACKGROUND]" value="<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BACKGROUND"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BACKGROUND"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BACKGROUND", "background0", SITE_ID))?>" id="BACKGROUND">
 		<input type="hidden" name="SWITCHER[SITE_DIR]" value="<?=SITE_DIR?>" id="SITE_DIR">
 		<input type="hidden" name="SWITCHER[SITE_ID]" value="<?=SITE_ID?>">
-		<h3 class="page-title">Предустановленные цвета</h3>
+		<h3 class="page-title">РџСЂРµРґСѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Рµ С†РІРµС‚Р°</h3>
 		<ul class="list-unstyled list-inline color">
 			<li id="blue" data-color="blue" data-toggle="tooltip" data-placement="top" title="Blue"></li>
 			<li id="green" data-color="green" data-toggle="tooltip" data-placement="top" title="Green"></li>
@@ -52,17 +52,17 @@ if(!empty($_POST["SWITCHER"]))
 			<li id="light_green" data-color="light_green" data-toggle="tooltip" data-placement="top" title="Light Green"></li>
 			<li id="pink" data-color="pink" data-toggle="tooltip" data-placement="top" title="Pink"></li>		
 		</ul>
-		<div class="error">Ошибка передачи параметра.</div>
-		<h3>Тип макета</h3>
+		<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
+		<h3>РўРёРї РјР°РєРµС‚Р°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[BOXED]">
-				<option value="standard" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "standard"):?>selected<?endif?> />Стандартный			
-				<option value="boxed" 	 <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "boxed"):?>selected<?endif?> />Боксед
-				<option value="rubber" 	 <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "rubber"):?>selected<?endif?> />По ширине экрана
+				<option value="standard" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "standard"):?>selected<?endif?> />РЎС‚Р°РЅРґР°СЂС‚РЅС‹Р№			
+				<option value="boxed" 	 <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "boxed"):?>selected<?endif?> />Р‘РѕРєСЃРµРґ
+				<option value="rubber" 	 <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID)) == "rubber"):?>selected<?endif?> />РџРѕ С€РёСЂРёРЅРµ СЌРєСЂР°РЅР°
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Задний фон (только для боксед макета)</h3>
+		<h3>Р—Р°РґРЅРёР№ С„РѕРЅ (С‚РѕР»СЊРєРѕ РґР»СЏ Р±РѕРєСЃРµРґ РјР°РєРµС‚Р°)</h3>
 		<ul class="list-unstyled list-inline background">
 			<li class="background0" data-background="background0"></li>
 			<li class="background1" data-background="background1"></li>
@@ -92,16 +92,16 @@ if(!empty($_POST["SWITCHER"]))
 			<li class="background23" data-background="background23"></li>
 			<li class="background24" data-background="background24"></li>
 		</ul>
-		<div class="error">Ошибка передачи параметра.</div>
-		<h3>Серая полоса с контактами вверху</h3>
+		<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
+		<h3>РЎРµСЂР°СЏ РїРѕР»РѕСЃР° СЃ РєРѕРЅС‚Р°РєС‚Р°РјРё РІРІРµСЂС…Сѓ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[LINE]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LINE", "N", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LINE", "N", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LINE", "N", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LINE", "N", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Шапка сайта</h3>
+		<h3>РЁР°РїРєР° СЃР°Р№С‚Р°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[HEADER_BG]">
 				<option value="white"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_BG", "white", SITE_ID)) == "white")  :?>selected<?endif?> />White
@@ -109,26 +109,26 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_BG", "white", SITE_ID)) == "dark")   :?>selected<?endif?> />Dark
 				<option value="default" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_BG", "white", SITE_ID)) == "default"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Слайдер</mark></h3><hr>
-		<h3>Вид слайдер</h3>
+		<h3><mark>РЎР»Р°Р№РґРµСЂ</mark></h3><hr>
+		<h3>Р’РёРґ СЃР»Р°Р№РґРµСЂ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SLIDER]">
 				<option value="standart" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER", "standart", SITE_ID)) == "standart"):?>selected<?endif?> />STANDART
 				<option value="boxed" 	 <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER", "standart", SITE_ID)) == "boxed"):?>selected<?endif?> />BOXED
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Рамка (для слайдера STANDART)</h3>
+		<h3>Р Р°РјРєР° (РґР»СЏ СЃР»Р°Р№РґРµСЂР° STANDART)</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SLIDER_STANDART_BOXED]">
-				<option value="slideshow-boxed" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_STANDART_BOXED", "slideshow", SITE_ID)) == "slideshow-boxed"):?>selected<?endif?> />Да
-				<option value="slideshow" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_STANDART_BOXED", "slideshow", SITE_ID)) == "slideshow"):?>selected<?endif?> />Нет
+				<option value="slideshow-boxed" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_STANDART_BOXED", "slideshow", SITE_ID)) == "slideshow-boxed"):?>selected<?endif?> />Р”Р°
+				<option value="slideshow" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_STANDART_BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_STANDART_BOXED", "slideshow", SITE_ID)) == "slideshow"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Задний фон слайдера</h3>
+		<h3>Р—Р°РґРЅРёР№ С„РѕРЅ СЃР»Р°Р№РґРµСЂР°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SLIDER_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_BG", "gray-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -136,37 +136,37 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_BG", "gray-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_BG", "gray-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Прокрутка слайдера</h3>
+		<h3>РџСЂРѕРєСЂСѓС‚РєР° СЃР»Р°Р№РґРµСЂР°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SLIDER_SCROLLING]">
-				<option value="slider-banner" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner"):?>selected<?endif?> />с полосой времени
-				<option value="slider-banner-2 bullets-with-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-2 bullets-with-bg"):?>selected<?endif?> />с полосой времени (кнопки внизу на белом фоне)
-				<option value="slider-banner-fullscreen" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-fullscreen"):?>selected<?endif?> />без полосы времени
-				<option value="slider-banner-fullscreen bullets-with-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-fullscreen bullets-with-bg"):?>selected<?endif?> />без полосы времени (кнопки внизу на белом фоне)
-				<option value="slider-banner-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-3"):?>selected<?endif?> />без кнопок внизу, фон параллакс
+				<option value="slider-banner" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner"):?>selected<?endif?> />СЃ РїРѕР»РѕСЃРѕР№ РІСЂРµРјРµРЅРё
+				<option value="slider-banner-2 bullets-with-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-2 bullets-with-bg"):?>selected<?endif?> />СЃ РїРѕР»РѕСЃРѕР№ РІСЂРµРјРµРЅРё (РєРЅРѕРїРєРё РІРЅРёР·Сѓ РЅР° Р±РµР»РѕРј С„РѕРЅРµ)
+				<option value="slider-banner-fullscreen" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-fullscreen"):?>selected<?endif?> />Р±РµР· РїРѕР»РѕСЃС‹ РІСЂРµРјРµРЅРё
+				<option value="slider-banner-fullscreen bullets-with-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-fullscreen bullets-with-bg"):?>selected<?endif?> />Р±РµР· РїРѕР»РѕСЃС‹ РІСЂРµРјРµРЅРё (РєРЅРѕРїРєРё РІРЅРёР·Сѓ РЅР° Р±РµР»РѕРј С„РѕРЅРµ)
+				<option value="slider-banner-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SLIDER_SCROLLING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SLIDER_SCROLLING", "slider-banner", SITE_ID)) == "slider-banner-3"):?>selected<?endif?> />Р±РµР· РєРЅРѕРїРѕРє РІРЅРёР·Сѓ, С„РѕРЅ РїР°СЂР°Р»Р»Р°РєСЃ
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>		
-		<h3><mark>Верхнее Меню</mark></h3><hr>
-		<h3>Тип верхнего меню</h3>
+		<h3><mark>Р’РµСЂС…РЅРµРµ РњРµРЅСЋ</mark></h3><hr>
+		<h3>РўРёРї РІРµСЂС…РЅРµРіРѕ РјРµРЅСЋ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[MENU]">
-				<option value="float" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU", "float", SITE_ID)) == "float"):?>selected<?endif?> />Плавающее
-				<option value="fixed" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU", "float", SITE_ID)) == "fixed"):?>selected<?endif?> />Фиксированное
+				<option value="float" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU", "float", SITE_ID)) == "float"):?>selected<?endif?> />РџР»Р°РІР°СЋС‰РµРµ
+				<option value="fixed" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU", "float", SITE_ID)) == "fixed"):?>selected<?endif?> />Р¤РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Прозрачность меню</h3>
+		<h3>РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РјРµРЅСЋ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[MENU_TRANSPARENT]">
-				<option value="menu-transparent" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID)) == "menu-transparent"):?>selected<?endif?> />Да
-				<option value="non-transparent"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID)) == "non-transparent"):?>selected<?endif?> />Нет
+				<option value="menu-transparent" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID)) == "menu-transparent"):?>selected<?endif?> />Р”Р°
+				<option value="non-transparent"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID)) == "non-transparent"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Цвет меню</h3>
+		<h3>Р¦РІРµС‚ РјРµРЅСЋ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[HEADER_MENU_BG]">
 				<option value="white"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_MENU_BG", "white", SITE_ID)) == "white")  :?>selected<?endif?> />White
@@ -174,71 +174,71 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_MENU_BG", "white", SITE_ID)) == "dark")   :?>selected<?endif?> />Dark
 				<option value="default" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_MENU_BG", "white", SITE_ID)) == "default"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Расположение меню</h3>
+		<h3>Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РјРµРЅСЋ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[MENU_TOP_SLIDER]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TOP_SLIDER", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Над слайдером
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TOP_SLIDER", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Под слайдером
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TOP_SLIDER", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />РќР°Рґ СЃР»Р°Р№РґРµСЂРѕРј
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TOP_SLIDER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TOP_SLIDER", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РџРѕРґ СЃР»Р°Р№РґРµСЂРѕРј
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Внутреннее меню</mark></h3><hr>
-		<h3>Расположение меню</h3>
+		<h3><mark>Р’РЅСѓС‚СЂРµРЅРЅРµРµ РјРµРЅСЋ</mark></h3><hr>
+		<h3>Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РјРµРЅСЋ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SIDEBAR]">
-				<option value="left"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "left"):?>selected<?endif?> />Слева
-				<option value="right" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "right"):?>selected<?endif?> />Справа
+				<option value="left"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "left"):?>selected<?endif?> />РЎР»РµРІР°
+				<option value="right" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "right"):?>selected<?endif?> />РЎРїСЂР°РІР°
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Баннер на внутренних страницах</mark></h3><hr>
-		<h3>Автопрокрутка баннера</h3>
+		<h3><mark>Р‘Р°РЅРЅРµСЂ РЅР° РІРЅСѓС‚СЂРµРЅРЅРёС… СЃС‚СЂР°РЅРёС†Р°С…</mark></h3><hr>
+		<h3>РђРІС‚РѕРїСЂРѕРєСЂСѓС‚РєР° Р±Р°РЅРЅРµСЂР°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[BANNER_AUTOPLAY]">
-				<option value="content-slider-with-controls-bottom-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)) == "content-slider-with-controls-bottom-autoplay"):?>selected<?endif?> />Да
-				<option value="content-slider-with-controls-bottom" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)) == "content-slider-with-controls-bottom"):?>selected<?endif?> />Нет
+				<option value="content-slider-with-controls-bottom-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)) == "content-slider-with-controls-bottom-autoplay"):?>selected<?endif?> />Р”Р°
+				<option value="content-slider-with-controls-bottom" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)) == "content-slider-with-controls-bottom"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Облако тегов в статьях</mark></h3><hr>
-		<h3>Внешний вид</h3>
+		<h3><mark>РћР±Р»Р°РєРѕ С‚РµРіРѕРІ РІ СЃС‚Р°С‚СЊСЏС…</mark></h3><hr>
+		<h3>Р’РЅРµС€РЅРёР№ РІРёРґ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[TAGS_VER]">
 				<option value="articles-ver-1" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TAGS_VER", "articles-ver-1", SITE_ID)) == "articles-ver-1"):?>selected<?endif?> />Ver 1
 				<option value="articles-ver-2" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TAGS_VER", "articles-ver-1", SITE_ID)) == "articles-ver-2"):?>selected<?endif?> />Ver 2
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Подвал сайта</mark></h3><hr>
-		<h3>Цвет подвала</h3>
+		<h3><mark>РџРѕРґРІР°Р» СЃР°Р№С‚Р°</mark></h3><hr>
+		<h3>Р¦РІРµС‚ РїРѕРґРІР°Р»Р°</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[FOOTER_BG]">
 				<option value="light"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_FOOTER_BG", "dark", SITE_ID)) == "light")  :?>selected<?endif?> />Light
 				<option value="dark"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_FOOTER_BG", "dark", SITE_ID)) == "dark")   :?>selected<?endif?> />Dark
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>		
-		<h3><mark>Преимущества компании</mark></h3><hr>
-		<h3>Блок «Преимущества компании» на главной</h3>
+		<h3><mark>РџСЂРµРёРјСѓС‰РµСЃС‚РІР° РєРѕРјРїР°РЅРёРё</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«РџСЂРµРёРјСѓС‰РµСЃС‚РІР° РєРѕРјРїР°РЅРёРёВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[EXTRA]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Вид блока «Преимущества компании»</h3>
+		<h3>Р’РёРґ Р±Р»РѕРєР° В«РџСЂРµРёРјСѓС‰РµСЃС‚РІР° РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[EXTRA_VER]">
 				<option value="extra-ver-1" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_VER", "extra-ver-1", SITE_ID)) == "extra-ver-1"):?>selected<?endif?> />Ver 1
 				<option value="extra-ver-2" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_VER", "extra-ver-1", SITE_ID)) == "extra-ver-2"):?>selected<?endif?> />Ver 2
 				<option value="extra-ver-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_VER", "extra-ver-1", SITE_ID)) == "extra-ver-3"):?>selected<?endif?> />Ver 3
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «Преимущества компании»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«РџСЂРµРёРјСѓС‰РµСЃС‚РІР° РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[EXTRA_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_BG", "gray-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -246,18 +246,18 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_BG", "gray-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_BG", "gray-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Бесплатная консультация</mark></h3><hr>
-		<h3>Блок «Бесплатная консультация» на главной</h3>
+		<h3><mark>Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[WARNING]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «Бесплатная консультация»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«Р‘РµСЃРїР»Р°С‚РЅР°СЏ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[WARNING_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -265,18 +265,18 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Услуги компании</mark></h3><hr>
-		<h3>Блок «Услуги компании» на главной</h3>
+		<h3><mark>РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРё</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРёВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SERVICES]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Вид блока «Услуги компании»</h3>
+		<h3>Р’РёРґ Р±Р»РѕРєР° В«РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SERVICES_VER]">
 				<option value="services-ver-1" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", "services-ver-1", SITE_ID)) == "services-ver-1"):?>selected<?endif?> />Ver 1
@@ -284,9 +284,9 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="services-ver-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", "services-ver-1", SITE_ID)) == "services-ver-3"):?>selected<?endif?> />Ver 3
 				<option value="services-ver-4" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", "services-ver-1", SITE_ID)) == "services-ver-4"):?>selected<?endif?> />Ver 4
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «Услуги компании»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SERVICES_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -294,43 +294,43 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Размер иконок блока «Услуги компании»</h3>
+		<h3>Р Р°Р·РјРµСЂ РёРєРѕРЅРѕРє Р±Р»РѕРєР° В«РЈСЃР»СѓРіРё РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[SERVICES_ICONS_VIEW]">				
 				<option value="box-style-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_ICONS_VIEW", "box-style-2", SITE_ID)) == "box-style-3"):?>selected<?endif?> />Small
 				<option value="box-style-2" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_ICONS_VIEW", "box-style-2", SITE_ID)) == "box-style-2"):?>selected<?endif?> />Big
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>О компании</mark></h3><hr>
-		<h3>Блок «О компании» на главной</h3>
+		<h3><mark>Рћ РєРѕРјРїР°РЅРёРё</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«Рћ РєРѕРјРїР°РЅРёРёВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[ABOUT]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Показывать в блоке «О компании»</h3>
+		<h3>РџРѕРєР°Р·С‹РІР°С‚СЊ РІ Р±Р»РѕРєРµ В«Рћ РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[ABOUT_VER]">
-				<option value="about-news"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-news"):?>selected<?endif?> />Новости
-				<option value="about-faq"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-faq"):?>selected<?endif?> />Вопросы и ответы
-				<option value="about-photo" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-photo"):?>selected<?endif?> />Фото
+				<option value="about-news"  <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-news"):?>selected<?endif?> />РќРѕРІРѕСЃС‚Рё
+				<option value="about-faq"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-faq"):?>selected<?endif?> />Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹
+				<option value="about-photo" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)) == "about-photo"):?>selected<?endif?> />Р¤РѕС‚Рѕ
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Размер иконок (только для Новостей)</h3>
+		<h3>Р Р°Р·РјРµСЂ РёРєРѕРЅРѕРє (С‚РѕР»СЊРєРѕ РґР»СЏ РќРѕРІРѕСЃС‚РµР№)</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[NEWS_ICONS_VIEW]">				
 				<option value="box-style-3" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_NEWS_ICONS_VIEW", "box-style-3", SITE_ID)) == "box-style-3"):?>selected<?endif?> />Small
 				<option value="box-style-2" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_NEWS_ICONS_VIEW", "box-style-3", SITE_ID)) == "box-style-2"):?>selected<?endif?> />Big
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «О компании»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«Рћ РєРѕРјРїР°РЅРёРёВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[ABOUT_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -338,44 +338,44 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Задать вопрос</mark></h3><hr>
-		<h3>Блок «Задать вопрос» на главной</h3>
+		<h3><mark>Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[CALLBACK]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «Задать вопрос»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[CALLBACK_BG]">
 				<option value="light-translucent-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BG", "light-translucent-bg", SITE_ID)) == "light-translucent-bg")   :?>selected<?endif?> />Light
 				<option value="dark-translucent-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BG", "light-translucent-bg", SITE_ID)) == "dark-translucent-bg")    :?>selected<?endif?> />Dark
 				<option value="default-translucent-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BG", "light-translucent-bg", SITE_ID)) == "default-translucent-bg") :?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Кнопка для блока «Задать вопрос»</h3>
+		<h3>РљРЅРѕРїРєР° РґР»СЏ Р±Р»РѕРєР° В«Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[CALLBACK_BUTTON]">
 				<option value="btn-white" 	<?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID)) == "btn-white"):?>selected<?endif?> />Light
 				<option value="btn-default" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID)) == "btn-default"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Каталог товаров</mark></h3><hr>
-		<h3>Каталог товаров на главной</h3>
+		<h3><mark>РљР°С‚Р°Р»РѕРі С‚РѕРІР°СЂРѕРІ</mark></h3><hr>
+		<h3>РљР°С‚Р°Р»РѕРі С‚РѕРІР°СЂРѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PRODUCTS]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для Каталога товаров на главной</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ РљР°С‚Р°Р»РѕРіР° С‚РѕРІР°СЂРѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PRODUCTS_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -383,26 +383,26 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Популярные товары</mark></h3><hr>
-		<h3>Популярные товары на главной</h3>
+		<h3><mark>РџРѕРїСѓР»СЏСЂРЅС‹Рµ С‚РѕРІР°СЂС‹</mark></h3><hr>
+		<h3>РџРѕРїСѓР»СЏСЂРЅС‹Рµ С‚РѕРІР°СЂС‹ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PRODUCTS_POPULAR]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Автопрокрутка популярных товаров</h3>
+		<h3>РђРІС‚РѕРїСЂРѕРєСЂСѓС‚РєР° РїРѕРїСѓР»СЏСЂРЅС‹С… С‚РѕРІР°СЂРѕРІ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PRODUCTS_POPULAR_AUTOPLAY]">
-				<option value="carousel-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)) == "carousel-autoplay"):?>selected<?endif?> />Да
-				<option value="carousel" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)) == "carousel"):?>selected<?endif?> />Нет
+				<option value="carousel-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)) == "carousel-autoplay"):?>selected<?endif?> />Р”Р°
+				<option value="carousel" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)) == "carousel"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для Популярных товаров на главной</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ РџРѕРїСѓР»СЏСЂРЅС‹С… С‚РѕРІР°СЂРѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PRODUCTS_POPULAR_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -410,18 +410,18 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Портфолио</mark></h3><hr>		
-		<h3>Блок «Портфолио» на главной</h3>
+		<h3><mark>РџРѕСЂС‚С„РѕР»РёРѕ</mark></h3><hr>		
+		<h3>Р‘Р»РѕРє В«РџРѕСЂС‚С„РѕР»РёРѕВ» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PHOTO]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для блока «Портфолио»</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р±Р»РѕРєР° В«РџРѕСЂС‚С„РѕР»РёРѕВ»</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[PHOTO_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -429,37 +429,37 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Отзывы</mark></h3><hr>
-		<h3>Отзывы на главной</h3>
+		<h3><mark>РћС‚Р·С‹РІС‹</mark></h3><hr>
+		<h3>РћС‚Р·С‹РІС‹ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[TESTIMONIALS]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Навигация в отзывах</h3>
+		<h3>РќР°РІРёРіР°С†РёСЏ РІ РѕС‚Р·С‹РІР°С…</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[TESTIMONIALS_VER]">
 				<option value="content-slider-with-controls" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls"):?>selected<?endif?> />ver1
-				<option value="content-slider-with-controls-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls-autoplay"):?>selected<?endif?> />ver1 (с автопрокруткой)
+				<option value="content-slider-with-controls-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls-autoplay"):?>selected<?endif?> />ver1 (СЃ Р°РІС‚РѕРїСЂРѕРєСЂСѓС‚РєРѕР№)
 				<option value="content-slider-with-controls-bottom" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls-bottom"):?>selected<?endif?> />ver2
-				<option value="content-slider-with-controls-bottom-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls-bottom-autoplay"):?>selected<?endif?> />ver2 (с автопрокруткой)
-				<option value="content-slider" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider"):?>selected<?endif?> />ver3 (без навигации)
+				<option value="content-slider-with-controls-bottom-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider-with-controls-bottom-autoplay"):?>selected<?endif?> />ver2 (СЃ Р°РІС‚РѕРїСЂРѕРєСЂСѓС‚РєРѕР№)
+				<option value="content-slider" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)) == "content-slider"):?>selected<?endif?> />ver3 (Р±РµР· РЅР°РІРёРіР°С†РёРё)
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Круглые картинки в отзывах</h3>
+		<h3>РљСЂСѓРіР»С‹Рµ РєР°СЂС‚РёРЅРєРё РІ РѕС‚Р·С‹РІР°С…</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[TESTIMONIALS_IMG]">
-				<option value="img-circle" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)) == "img-circle"):?>selected<?endif?> />Да
-				<option value="img-circle-no" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)) == "img-circle-no"):?>selected<?endif?> />Нет
+				<option value="img-circle" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)) == "img-circle"):?>selected<?endif?> />Р”Р°
+				<option value="img-circle-no" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)) == "img-circle-no"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для отзывов на главной</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ РѕС‚Р·С‹РІРѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[TESTIMONIALS_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_BG", "gray-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -467,26 +467,26 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_BG", "gray-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_BG", "gray-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Наши проекты</mark></h3><hr>
-		<h3>Блок «Наши проекты» на главной</h3>
+		<h3><mark>РќР°С€Рё РїСЂРѕРµРєС‚С‹</mark></h3><hr>
+		<h3>Р‘Р»РѕРє В«РќР°С€Рё РїСЂРѕРµРєС‚С‹В» РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[WORKS]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Автопрокрутка проектов</h3>
+		<h3>РђРІС‚РѕРїСЂРѕРєСЂСѓС‚РєР° РїСЂРѕРµРєС‚РѕРІ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[WORKS_AUTOPLAY]">
-				<option value="carousel-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_AUTOPLAY", "carousel", SITE_ID)) == "carousel-autoplay"):?>selected<?endif?> />Да
-				<option value="carousel" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_AUTOPLAY", "carousel", SITE_ID)) == "carousel"):?>selected<?endif?> />Нет
+				<option value="carousel-autoplay" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_AUTOPLAY", "carousel", SITE_ID)) == "carousel-autoplay"):?>selected<?endif?> />Р”Р°
+				<option value="carousel" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_AUTOPLAY", "carousel", SITE_ID)) == "carousel"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Фон для Проектов на главной</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ РџСЂРѕРµРєС‚РѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[WORKS_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_BG", "white-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -494,26 +494,26 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_BG", "white-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WORKS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WORKS_BG", "white-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3><mark>Логотипы</mark></h3><hr>
-		<h3>Логотипы на главной</h3>
+		<h3><mark>Р›РѕРіРѕС‚РёРїС‹</mark></h3><hr>
+		<h3>Р›РѕРіРѕС‚РёРїС‹ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[LOGO]">
-				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Да
-				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO", "Y", SITE_ID)) == "N"):?>selected<?endif?> />Нет
+				<option value="Y" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO", "Y", SITE_ID)) == "Y"):?>selected<?endif?> />Р”Р°
+				<option value="N" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO", "Y", SITE_ID)) == "N"):?>selected<?endif?> />РќРµС‚
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
-		<h3>Вид блока Логотипов</h3>
+		<h3>Р’РёРґ Р±Р»РѕРєР° Р›РѕРіРѕС‚РёРїРѕРІ</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[LOGO_VER]">
 				<option value="logo-ver-1" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_VER", "logo-ver-1", SITE_ID)) == "logo-ver-1"):?>selected<?endif?> />Ver 1
 				<option value="logo-ver-2" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_VER", "logo-ver-1", SITE_ID)) == "logo-ver-2"):?>selected<?endif?> />Ver 2
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>		
-		<h3>Фон для Логотипов на главной</h3>
+		<h3>Р¤РѕРЅ РґР»СЏ Р›РѕРіРѕС‚РёРїРѕРІ РЅР° РіР»Р°РІРЅРѕР№</h3>
 		<div class="layout-style">
 			<select name="SWITCHER[LOGO_BG]">
 				<option value="white-bg"   <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_BG", "gray-bg", SITE_ID)) == "white-bg")  :?>selected<?endif?> />White
@@ -521,14 +521,14 @@ if(!empty($_POST["SWITCHER"]))
 				<option value="dark-bg"    <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_BG", "gray-bg", SITE_ID)) == "dark-bg")   :?>selected<?endif?> />Dark
 				<option value="default-bg" <?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_BG", "gray-bg", SITE_ID)) == "default-bg"):?>selected<?endif?> />Color
 			</select>
-			<div class="error">Ошибка передачи параметра.</div>
+			<div class="error">РћС€РёР±РєР° РїРµСЂРµРґР°С‡Рё РїР°СЂР°РјРµС‚СЂР°.</div>
 		</div>
 		<hr>
 		<div class="mt-10 mb-20">
-		<input type="submit" class="btn btn-sm btn-default" name="SWITCHER[CLEAR]" value="Сбросить">
+		<input type="submit" class="btn btn-sm btn-default" name="SWITCHER[CLEAR]" value="РЎР±СЂРѕСЃРёС‚СЊ">
 		<?if(!$arParams["DEMO"]):?>
 		<div class="mb-5"></div>
-		<input type="submit" class="btn btn-sm btn-default" name="SWITCHER[SUBMIT]" value="Применить">
+		<input type="submit" class="btn btn-sm btn-default" name="SWITCHER[SUBMIT]" value="РџСЂРёРјРµРЅРёС‚СЊ">
 		<?endif?>
 		</div>
 	</form>

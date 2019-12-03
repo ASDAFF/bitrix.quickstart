@@ -1,49 +1,49 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Àêöèè", 
+		"ÐÐºÑ†Ð¸Ð¸", 
 		"#SITE_DIR#info/actions/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Íîâîñòè", 
+		"ÐÐ¾Ð²Ð¾ÑÑ‚Ð¸", 
 		"#SITE_DIR#info/news/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ñòàòüè", 
+		"Ð¡Ñ‚Ð°Ñ‚ÑŒÐ¸", 
 		"#SITE_DIR#info/articles/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Íàøè ïðîåêòû", 
+		"ÐÐ°ÑˆÐ¸ Ð¿Ñ€Ð¾ÐµÐºÑ‚Ñ‹", 
 		"#SITE_DIR#info/works/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ôîòîãàëåðåÿ", 
+		"Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ", 
 		"#SITE_DIR#info/photo/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ïðàéñ-ëèñò", 
+		"ÐŸÑ€Ð°Ð¹Ñ-Ð»Ð¸ÑÑ‚", 
 		"#SITE_DIR#info/price/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ñëóæåáíàÿ", 
+		"Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ", 
 		"#SITE_DIR#info/examples/", 
 		Array(), 
 		Array(), 

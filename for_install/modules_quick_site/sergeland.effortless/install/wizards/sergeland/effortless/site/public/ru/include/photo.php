@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="main col-md-12">
-				<h1 class="text-center page-title">Портфолио компании</h1>
+				<h1 class="text-center page-title">РџРѕСЂС‚С„РѕР»РёРѕ РєРѕРјРїР°РЅРёРё</h1>
 				<div class="separator"></div>
 				<p class="text-center lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nulla suscipit <br class="hidden-sm hidden-xs"> unde rerum mollitia dolorum.</p>
 				<?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "photo", array(		

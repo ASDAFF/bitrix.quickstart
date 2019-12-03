@@ -1,13 +1,13 @@
 <?
-$MESS["WZD_OPTION_LICENSES_1"] = "Ëèöåíçèÿ";
-$MESS["WZD_OPTION_LICENSES_2"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_LICENSES_3"] = "Ñîðòèðîâêà";
-$MESS["WZD_OPTION_LICENSES_4"] = "*Íàçâàíèå";
-$MESS["WZD_OPTION_LICENSES_5"] = "*Ôîòî ìàëåíüêîå";
-$MESS["WZD_OPTION_LICENSES_6"] = "*Ôîòî áîëüøîå";
-$MESS["WZD_OPTION_LICENSES_7"] = "Îïèñàíèå ê ôîòî";
-$MESS["WZD_OPTION_LICENSES_8"] = "Êðàòêîå îïèñàíèå";
+$MESS["WZD_OPTION_LICENSES_1"] = "Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ñ";
+$MESS["WZD_OPTION_LICENSES_2"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_LICENSES_3"] = "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°";
+$MESS["WZD_OPTION_LICENSES_4"] = "*ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_LICENSES_5"] = "*Ð¤Ð¾Ñ‚Ð¾ Ð¼Ð°Ð»ÐµÐ½ÑŒÐºÐ¾Ðµ";
+$MESS["WZD_OPTION_LICENSES_6"] = "*Ð¤Ð¾Ñ‚Ð¾ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ðµ";
+$MESS["WZD_OPTION_LICENSES_7"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ðº Ñ„Ð¾Ñ‚Ð¾";
+$MESS["WZD_OPTION_LICENSES_8"] = "ÐšÑ€Ð°Ñ‚ÐºÐ¾Ðµ Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
 
-$MESS["WZD_OPTION_LICENSES_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_LICENSES_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_LICENSES_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_LICENSES_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

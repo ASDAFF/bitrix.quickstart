@@ -77,5 +77,5 @@
 	),
 	false
 );?>
-<a href="#SITE_DIR#info/news/" class="btn btn-white pull-right">Все новости</a>
+<a href="#SITE_DIR#info/news/" class="btn btn-white pull-right">Р’СЃРµ РЅРѕРІРѕСЃС‚Рё</a>
 <div class="clearfix"></div>

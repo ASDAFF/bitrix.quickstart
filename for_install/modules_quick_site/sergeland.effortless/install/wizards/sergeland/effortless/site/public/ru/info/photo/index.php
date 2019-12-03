@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ôîòîãàëåðåÿ");
+$APPLICATION->SetTitle("Ð¤Ð¾Ñ‚Ð¾Ð³Ð°Ð»ÐµÑ€ÐµÑ");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog", "photo", array(
 		"IBLOCK_TYPE" => "#IBLOCK_TYPE_PHOTO#",

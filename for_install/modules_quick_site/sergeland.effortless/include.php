@@ -17,8 +17,8 @@ class CSergelandeffortless
 				"MAIN_SORT" => 2500,
 				"TYPE" => "BIG",
 				"SORT" => 10,	
-				"ALT" => GetMessage("SCOM_BUTTON_DESCRIPTION"), // Çàïóñòèòü ìàñòåğ ñìåíû äèçàéíà
-				"TEXT" => GetMessage("SCOM_BUTTON_NAME"), 		// Ìàñòåğ ñìåíû äèçàéíà
+				"ALT" => GetMessage("SCOM_BUTTON_DESCRIPTION"), // Ğ—Ğ°Ğ¿ÑƒÑÑ‚Ğ¸Ñ‚ÑŒ Ğ¼Ğ°ÑÑ‚ĞµÑ€ ÑĞ¼ĞµĞ½Ñ‹ Ğ´Ğ¸Ğ·Ğ°Ğ¹Ğ½Ğ°
+				"TEXT" => GetMessage("SCOM_BUTTON_NAME"), 		// ĞœĞ°ÑÑ‚ĞµÑ€ ÑĞ¼ĞµĞ½Ñ‹ Ğ´Ğ¸Ğ·Ğ°Ğ¹Ğ½Ğ°
 				"MENU" => $arMenu,
 			));
 		}

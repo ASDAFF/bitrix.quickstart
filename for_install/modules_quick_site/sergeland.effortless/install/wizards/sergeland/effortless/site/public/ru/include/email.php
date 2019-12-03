@@ -1,4 +1,4 @@
 <div class="site-slogan">
-	Девиз компании может быть здесь!
+	Р”РµРІРёР· РєРѕРјРїР°РЅРёРё РјРѕР¶РµС‚ Р±С‹С‚СЊ Р·РґРµСЃСЊ!
 </div>
 <span class="email default_bg"><i class="fa fa-envelope"></i> #EMAIL#</span>

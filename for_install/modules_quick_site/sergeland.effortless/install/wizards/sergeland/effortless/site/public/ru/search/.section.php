@@ -1,4 +1,4 @@
 <?
-$sSectionName = "Поиск по сайту";
+$sSectionName = "РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ";
 $arDirProperties = array();
 ?>

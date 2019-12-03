@@ -1,23 +1,23 @@
-<h3>Задать вопрос</h3>
-<p>Пожалуйста заполните все поля. Наш специалист свяжется с вами в ближайшее время.</p>
+<h3>Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ</h3>
+<p>РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ. РќР°С€ СЃРїРµС†РёР°Р»РёСЃС‚ СЃРІСЏР¶РµС‚СЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.</p>
 <form name="FEEDBACK" action="#SITE_DIR#include/" method="POST" role="form">
 	<div id="results-feedback">
 		<div class="alert alert-danger" id="beforesend-feedback">
-			Пожалуйста заполните все поля.
+			РџРѕР¶Р°Р»СѓР№СЃС‚Р° Р·Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ.
 		</div>
 		<div class="alert alert-danger" id="error-feedback">
-			Ошибка отправки сообщения.
+			РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ.
 		</div> 
 		<div class="alert alert-success" id="success-feedback">
-			Спасибо, ваше сообщение отправлено администрации сайта.
+			РЎРїР°СЃРёР±Рѕ, РІР°С€Рµ СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРѕ Р°РґРјРёРЅРёСЃС‚СЂР°С†РёРё СЃР°Р№С‚Р°.
 		</div>
 	</div>
 	<img src="#SITE_DIR#images/loading.gif" alt="Loading" id="form-loading-feedback" class="pull-right mb-10" />
 	<div class="clearfix"></div>								
 	<input type="hidden" name="FEEDBACK[SITE_ID]" value="<?=SITE_ID?>"/>
-	<input type="hidden" name="FEEDBACK[TITLE]" value="Задать вопрос"/>
+	<input type="hidden" name="FEEDBACK[TITLE]" value="Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ"/>
 	<div class="form-group has-feedback">
-		<input type="text" class="form-control req" placeholder="Имя" name="FEEDBACK[NAME]">
+		<input type="text" class="form-control req" placeholder="РРјСЏ" name="FEEDBACK[NAME]">
 		<i class="fa fa-user form-control-feedback"></i>
 	</div>
 	<div class="form-group has-feedback">
@@ -25,8 +25,8 @@
 		<i class="fa fa-envelope form-control-feedback"></i>
 	</div>
 	<div class="form-group has-feedback">
-		<textarea class="form-control req" rows="4" placeholder="Сообщение" name="FEEDBACK[COMMENT]"></textarea>
+		<textarea class="form-control req" rows="4" placeholder="РЎРѕРѕР±С‰РµРЅРёРµ" name="FEEDBACK[COMMENT]"></textarea>
 		<i class="fa fa-pencil form-control-feedback"></i>
 	</div>
-	<input type="submit" value="Отправить" class="btn btn-white pull-right">
+	<input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ" class="btn btn-white pull-right">
 </form>

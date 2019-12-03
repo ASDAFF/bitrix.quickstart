@@ -1,4 +1,4 @@
 <?
-$MESS["PORTAL_WIZARD_NAME"] = "Effortless - Êîðïîðàòèâíûé, àäàïòèâíûé ñàéò";
-$MESS["PORTAL_WIZARD_DESC"] = "Ìàñòåð ñîçäàíèÿ ñàéòà";
+$MESS["PORTAL_WIZARD_NAME"] = "Effortless - ÐšÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹, Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÑÐ°Ð¹Ñ‚";
+$MESS["PORTAL_WIZARD_DESC"] = "ÐœÐ°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð°";
 ?>

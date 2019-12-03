@@ -1,4 +1,4 @@
 <?
-$sSectionName = "Èñòîðèÿ";
+$sSectionName = "Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ";
 $arDirProperties = Array();
 ?>

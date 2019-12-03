@@ -1,1 +1,1 @@
-<p>Copyright ©2016 <a href="#">SergeLand</a>. Все права защищены.</p>
+<p>Copyright В©2016 <a href="#">SergeLand</a>. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</p>

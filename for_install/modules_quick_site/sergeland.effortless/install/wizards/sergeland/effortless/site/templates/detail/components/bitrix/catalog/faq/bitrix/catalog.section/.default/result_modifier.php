@@ -97,7 +97,7 @@ foreach($arResult["ITEMS"] as $arItem)
 	$arResult["~ITEMS"][$key]["ITEMS"][] = $arItem;
 }
 
-// нрнапюфемхе осяршу пюгдекнб
+// п·п╒п·п▒п═п░п√п∙п²п≤п∙ п÷пёп║п╒п╚п╔ п═п░п≈п■п∙п⌡п·п▓
 foreach($arResult["~SECTION"] as &$arItem)
 	if(!empty($arResult["~ITEMS"][$arItem["ID"]]["ITEMS"]))
 		 $arItem["ITEMS"] = $arResult["~ITEMS"][$arItem["ID"]]["ITEMS"];

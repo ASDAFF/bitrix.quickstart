@@ -1,8 +1,8 @@
 <?
-$MESS["SCOM_INSTALL_NAME"] = "Effortless - Êîðïîðàòèâíûé, àäàïòèâíûé ñàéò";
-$MESS["SCOM_INSTALL_DESCRIPTION"] = "Ìàñòåð ñîçäàíèÿ ñàéòà";
-$MESS["SCOM_INSTALL_TITLE"] = "Óñòàíîâêà ìîäóëÿ";
-$MESS["SCOM_UNINSTALL_TITLE"] = "Óäàëåíèå ìîäóëÿ";
+$MESS["SCOM_INSTALL_NAME"] = "Effortless - ÐšÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹, Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÑÐ°Ð¹Ñ‚";
+$MESS["SCOM_INSTALL_DESCRIPTION"] = "ÐœÐ°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ ÑÐ°Ð¹Ñ‚Ð°";
+$MESS["SCOM_INSTALL_TITLE"] = "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¼Ð¾Ð´ÑƒÐ»Ñ";
+$MESS["SCOM_UNINSTALL_TITLE"] = "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¼Ð¾Ð´ÑƒÐ»Ñ";
 $MESS["SPER_PARTNER"] = "SergeLand";
 $MESS["PARTNER_URI"] = "http://sergeland.ru";
 ?>

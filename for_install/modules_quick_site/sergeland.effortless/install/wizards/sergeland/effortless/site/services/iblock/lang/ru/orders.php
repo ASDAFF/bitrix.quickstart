@@ -1,15 +1,15 @@
 <?
-$MESS["WZD_OPTION_ORDERS_1"] = "Çàêàç";
-$MESS["WZD_OPTION_ORDERS_2"] = "Àêòèâíîñòü";
-$MESS["WZD_OPTION_ORDERS_3"] = "*Äàòà ñîçäàíèÿ";
-$MESS["WZD_OPTION_ORDERS_4"] = "*Íàçâàíèå";
-$MESS["WZD_OPTION_ORDERS_5"] = "Òîâàð";
-$MESS["WZD_OPTION_ORDERS_6"] = "Êîíòàêòû";
-$MESS["WZD_OPTION_ORDERS_7"] = "Èìÿ";
-$MESS["WZD_OPTION_ORDERS_8"] = "Òåëåôîí";
+$MESS["WZD_OPTION_ORDERS_1"] = "Ð—Ð°ÐºÐ°Ð·";
+$MESS["WZD_OPTION_ORDERS_2"] = "ÐÐºÑ‚Ð¸Ð²Ð½Ð¾ÑÑ‚ÑŒ";
+$MESS["WZD_OPTION_ORDERS_3"] = "*Ð”Ð°Ñ‚Ð° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ";
+$MESS["WZD_OPTION_ORDERS_4"] = "*ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ";
+$MESS["WZD_OPTION_ORDERS_5"] = "Ð¢Ð¾Ð²Ð°Ñ€";
+$MESS["WZD_OPTION_ORDERS_6"] = "ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ñ‹";
+$MESS["WZD_OPTION_ORDERS_7"] = "Ð˜Ð¼Ñ";
+$MESS["WZD_OPTION_ORDERS_8"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
 $MESS["WZD_OPTION_ORDERS_9"] = "Email";
-$MESS["WZD_OPTION_ORDERS_10"] = "Êîììåíòàðèé";
+$MESS["WZD_OPTION_ORDERS_10"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
 
-$MESS["WZD_OPTION_ORDERS_301"] = "Ñëóæåáíàÿ";
-$MESS["WZD_OPTION_ORDERS_302"] = "Âíåøíèé êîä (èñïîëüçóåòñÿ ïðè ïîâòîðíîì èìïîðòå ýëåìåíòîâ)";
+$MESS["WZD_OPTION_ORDERS_301"] = "Ð¡Ð»ÑƒÐ¶ÐµÐ±Ð½Ð°Ñ";
+$MESS["WZD_OPTION_ORDERS_302"] = "Ð’Ð½ÐµÑˆÐ½Ð¸Ð¹ ÐºÐ¾Ð´ (Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð¿Ñ€Ð¸ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€Ð½Ð¾Ð¼ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²)";
 ?>

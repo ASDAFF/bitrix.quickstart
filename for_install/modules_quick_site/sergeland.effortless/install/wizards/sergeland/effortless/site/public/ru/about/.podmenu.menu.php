@@ -1,56 +1,56 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Èñòîðèÿ", 
+		"Ð˜ÑÑ‚Ð¾Ñ€Ð¸Ñ", 
 		"#SITE_DIR#about/history/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ñîòðóäíèêè", 
+		"Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸", 
 		"#SITE_DIR#about/staff/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ëèöåíçèè", 
+		"Ð›Ð¸Ñ†ÐµÐ½Ð·Ð¸Ð¸", 
 		"#SITE_DIR#about/license/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ïàðòíåðû", 
+		"ÐŸÐ°Ñ€Ñ‚Ð½ÐµÑ€Ñ‹", 
 		"#SITE_DIR#about/partners/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Îòçûâû", 
+		"ÐžÑ‚Ð·Ñ‹Ð²Ñ‹", 
 		"#SITE_DIR#about/reviews/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Âàêàíñèè", 
+		"Ð’Ð°ÐºÐ°Ð½ÑÐ¸Ð¸", 
 		"#SITE_DIR#about/vacancies/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Ðåêâèçèòû", 
+		"Ð ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ñ‹", 
 		"#SITE_DIR#about/information/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Âîïðîñû è îòâåòû", 
+		"Ð’Ð¾Ð¿Ñ€Ð¾ÑÑ‹ Ð¸ Ð¾Ñ‚Ð²ÐµÑ‚Ñ‹", 
 		"#SITE_DIR#about/faq/", 
 		Array(), 
 		Array(), 

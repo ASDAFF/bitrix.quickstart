@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Óñëóãè");
+$APPLICATION->SetTitle("Ð£ÑÐ»ÑƒÐ³Ð¸");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog", "services", array(
 		"IBLOCK_TYPE" => "#IBLOCK_TYPE_SERVICES#",

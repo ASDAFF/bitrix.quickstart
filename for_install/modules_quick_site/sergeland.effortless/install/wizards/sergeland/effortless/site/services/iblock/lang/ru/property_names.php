@@ -1,3 +1,3 @@
 <?
-$MESS["UF_SEO_DESCRIPTION"] = "SEO òåêñò äëÿ ðàçäåëà";
+$MESS["UF_SEO_DESCRIPTION"] = "SEO Ñ‚ÐµÐºÑÑ‚ Ð´Ð»Ñ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
 ?>

@@ -1,5 +1,5 @@
 <div class="block">
-	При оказании услуг мы гарантируем соблюдение профессиональных и этических норм принятых в профессиональном сообществе.
+	РџСЂРё РѕРєР°Р·Р°РЅРёРё СѓСЃР»СѓРі РјС‹ РіР°СЂР°РЅС‚РёСЂСѓРµРј СЃРѕР±Р»СЋРґРµРЅРёРµ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹С… Рё СЌС‚РёС‡РµСЃРєРёС… РЅРѕСЂРј РїСЂРёРЅСЏС‚С‹С… РІ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕРј СЃРѕРѕР±С‰РµСЃС‚РІРµ.
 </div>
 <div class="block">
 <?$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TAGS_VER", "articles-ver-1", SITE_ID)), 

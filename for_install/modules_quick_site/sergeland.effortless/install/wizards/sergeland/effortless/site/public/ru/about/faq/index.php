@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Îòâåòû íà âîïðîñû");
+$APPLICATION->SetTitle("ÐžÑ‚Ð²ÐµÑ‚Ñ‹ Ð½Ð° Ð²Ð¾Ð¿Ñ€Ð¾ÑÑ‹");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog", "faq", Array(
 	"TEMPLATE_THEME" => "blue",

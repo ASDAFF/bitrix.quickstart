@@ -1,4 +1,4 @@
 <?
-$sSectionName = "Заказать обратный звонок";
+$sSectionName = "Р—Р°РєР°Р·Р°С‚СЊ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє";
 $arDirProperties = Array();
 ?>

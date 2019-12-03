@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ïàðòíåðû");
+$APPLICATION->SetTitle("ÐŸÐ°Ñ€Ñ‚Ð½ÐµÑ€Ñ‹");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:catalog", "partners", 
 	array(

@@ -1,52 +1,52 @@
 <?
-$MESS["KEY"] = "API êëþ÷";
-$MESS["KEY_TIP"] = "Áåç êëþ÷à êàðòà íå áóäåò ðàáîòàòü";
+$MESS["KEY"] = "API ÐºÐ»ÑŽÑ‡";
+$MESS["KEY_TIP"] = "Ð‘ÐµÐ· ÐºÐ»ÑŽÑ‡Ð° ÐºÐ°Ñ€Ñ‚Ð° Ð½Ðµ Ð±ÑƒÐ´ÐµÑ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ñ‚ÑŒ";
 
-$MESS["CONTAINER_CLASS"] = "CSS êëàññ êîíòåéíåðà";
-$MESS["CONTAINER_CLASS_TIP"] = "CSS êëàññ div êîíòåéíåðà ñ êàðòîé";
+$MESS["CONTAINER_CLASS"] = "CSS ÐºÐ»Ð°ÑÑ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð°";
+$MESS["CONTAINER_CLASS_TIP"] = "CSS ÐºÐ»Ð°ÑÑ div ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° Ñ ÐºÐ°Ñ€Ñ‚Ð¾Ð¹";
 
-$MESS["CONTAINER_ID"] = "ID êîíòåéíåðà";
-$MESS["CONTAINER_ID_TIP"] = "ID div êîíòåéíåðà ñ êàðòîé";
+$MESS["CONTAINER_ID"] = "ID ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð°";
+$MESS["CONTAINER_ID_TIP"] = "ID div ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€Ð° Ñ ÐºÐ°Ñ€Ñ‚Ð¾Ð¹";
 
-$MESS["LATITUDE"] = "ØÈÐÎÒÀ";
-$MESS["LATITUDE_TIP"] = "Øèðîòà ðàñïîëîæåíèÿ îáüåêòà íà êàðòå";
+$MESS["LATITUDE"] = "Ð¨Ð˜Ð ÐžÐ¢Ð";
+$MESS["LATITUDE_TIP"] = "Ð¨Ð¸Ñ€Ð¾Ñ‚Ð° Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
 
-$MESS["LONGITUDE"] = "ÄÎËÃÎÒÀ";
-$MESS["LONGITUDE_TIP"] = "Äîëãîòà ðàñïîëîæåíèÿ îáüåêòà íà êàðòå";
+$MESS["LONGITUDE"] = "Ð”ÐžÐ›Ð“ÐžÐ¢Ð";
+$MESS["LONGITUDE_TIP"] = "Ð”Ð¾Ð»Ð³Ð¾Ñ‚Ð° Ñ€Ð°ÑÐ¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð¾Ð±ÑŒÐµÐºÑ‚Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
 
-$MESS["LATITUDE_CENTER_MAP"] = "ØÈÐÎÒÀ ÖÅÍÒÐÎÂÊÈ";
-$MESS["LATITUDE_CENTER_MAP_TIP"] = "Øèðîòà öåíòðà íà êàðòå";
+$MESS["LATITUDE_CENTER_MAP"] = "Ð¨Ð˜Ð ÐžÐ¢Ð Ð¦Ð•ÐÐ¢Ð ÐžÐ’ÐšÐ˜";
+$MESS["LATITUDE_CENTER_MAP_TIP"] = "Ð¨Ð¸Ñ€Ð¾Ñ‚Ð° Ñ†ÐµÐ½Ñ‚Ñ€Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
 
-$MESS["LONGITUDE_CENTER_MAP"] = "ÄÎËÃÎÒÀ ÖÅÍÒÐÎÂÊÈ";
-$MESS["LONGITUDE_CENTER_MAP_TIP"] = "Äîëãîòà öåíòðà íà êàðòå";
+$MESS["LONGITUDE_CENTER_MAP"] = "Ð”ÐžÐ›Ð“ÐžÐ¢Ð Ð¦Ð•ÐÐ¢Ð ÐžÐ’ÐšÐ˜";
+$MESS["LONGITUDE_CENTER_MAP_TIP"] = "Ð”Ð¾Ð»Ð³Ð¾Ñ‚Ð° Ñ†ÐµÐ½Ñ‚Ñ€Ð° Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ";
 
-$MESS["SCROLLWHEEL"] = "Ìàñøòàáèðîâàòü êîëåñèêîì ìûøè";
-$MESS["SCROLLWHEEL_TIP"] = "Ìàñøòàáèðîâàòü êàðòó ïðîêðóòêîé êîëåñèêà ìûøè";
+$MESS["SCROLLWHEEL"] = "ÐœÐ°ÑÑˆÑ‚Ð°Ð±Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ¾Ð»ÐµÑÐ¸ÐºÐ¾Ð¼ Ð¼Ñ‹ÑˆÐ¸";
+$MESS["SCROLLWHEEL_TIP"] = "ÐœÐ°ÑÑˆÑ‚Ð°Ð±Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐºÐ°Ñ€Ñ‚Ñƒ Ð¿Ñ€Ð¾ÐºÑ€ÑƒÑ‚ÐºÐ¾Ð¹ ÐºÐ¾Ð»ÐµÑÐ¸ÐºÐ° Ð¼Ñ‹ÑˆÐ¸";
 
-$MESS["ZOOM"] = "Ìàñøòàá";
-$MESS["ZOOM_TIP"] = "Ìàñøòàá êàðòû";
+$MESS["ZOOM"] = "ÐœÐ°ÑÑˆÑ‚Ð°Ð±";
+$MESS["ZOOM_TIP"] = "ÐœÐ°ÑÑˆÑ‚Ð°Ð± ÐºÐ°Ñ€Ñ‚Ñ‹";
 
-$MESS["TOUCH"] = "Ïîääåðæêà touch";
-$MESS["TOUCH_TIP"] = "Ïîääåðæêà êàñàíèé íà touch óñòðîéñòâàõ";
+$MESS["TOUCH"] = "ÐŸÐ¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ° touch";
+$MESS["TOUCH_TIP"] = "ÐŸÐ¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ° ÐºÐ°ÑÐ°Ð½Ð¸Ð¹ Ð½Ð° touch ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð°Ñ…";
 
-$MESS["MARKER_IMAGE_FILE"] = "Ìàðêåð";
-$MESS["MARKER_IMAGE_FILE_TIP"] = "Ïóòü äî êàðòèíêè ìàðêåðà";
+$MESS["MARKER_IMAGE_FILE"] = "ÐœÐ°Ñ€ÐºÐµÑ€";
+$MESS["MARKER_IMAGE_FILE_TIP"] = "ÐŸÑƒÑ‚ÑŒ Ð´Ð¾ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð¼Ð°Ñ€ÐºÐµÑ€Ð°";
 
-$MESS["TITLE"] = "Âñïëûâàþùàÿ ïîäñêàçêà";
-$MESS["TITLE_TIP"] = "Âñïëûâàþùàÿ ïîäñêàçêà äëÿ ìàðêåðà";
+$MESS["TITLE"] = "Ð’ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰Ð°Ñ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ°";
+$MESS["TITLE_TIP"] = "Ð’ÑÐ¿Ð»Ñ‹Ð²Ð°ÑŽÑ‰Ð°Ñ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ° Ð´Ð»Ñ Ð¼Ð°Ñ€ÐºÐµÑ€Ð°";
 
-$MESS["CONTENT"] = "Êîíòåíò â «èíôî» îêíå";
-$MESS["CONTENT_TIP"] = "Êîíòåíò â îòêðûâàþùåìñÿ «èíôî» îêíå";
+$MESS["CONTENT"] = "ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ð² Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ðµ";
+$MESS["CONTENT_TIP"] = "ÐšÐ¾Ð½Ñ‚ÐµÐ½Ñ‚ Ð² Ð¾Ñ‚ÐºÑ€Ñ‹Ð²Ð°ÑŽÑ‰ÐµÐ¼ÑÑ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ðµ";
 
-$MESS["CONTENT_SHOW_ONLOAD"] = "Îòêðûòü «èíôî» îêíî ïîñëå çàãðóçêè";
-$MESS["CONTENT_SHOW_ONLOAD_TIP"] = "Îòêðûòü «èíôî» îêíî ïîñëå çàãðóçêè êàðòû";
+$MESS["CONTENT_SHOW_ONLOAD"] = "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð¾ Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸";
+$MESS["CONTENT_SHOW_ONLOAD_TIP"] = "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð¾ Ð¿Ð¾ÑÐ»Ðµ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ ÐºÐ°Ñ€Ñ‚Ñ‹";
 
-$MESS["CONTENT_OFFSET_TOP"] = "Ñìåùåíèå «èíôî» îêíà ïî âåðòèêàëè";
-$MESS["CONTENT_OFFSET_TOP_TIP"] = "Ñìåùåíèå «èíôî» îêíà ïî âåðòèêàëè îòíîñèòåëüíî ìàðêåðà";
+$MESS["CONTENT_OFFSET_TOP"] = "Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð° Ð¿Ð¾ Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»Ð¸";
+$MESS["CONTENT_OFFSET_TOP_TIP"] = "Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð° Ð¿Ð¾ Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»Ð¸ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¼Ð°Ñ€ÐºÐµÑ€Ð°";
 
-$MESS["CONTENT_OFFSET_RIGHT"] = "Ñìåùåíèå «èíôî» îêíà ïî ãîðèçîíòàëè";
-$MESS["CONTENT_OFFSET_RIGHT_TIP"] = "Ñìåùåíèå «èíôî» îêíà ïî ãîðèçîíòàëè îòíîñèòåëüíî ìàðêåðà";
+$MESS["CONTENT_OFFSET_RIGHT"] = "Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð° Ð¿Ð¾ Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»Ð¸";
+$MESS["CONTENT_OFFSET_RIGHT_TIP"] = "Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Â«Ð¸Ð½Ñ„Ð¾Â» Ð¾ÐºÐ½Ð° Ð¿Ð¾ Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»Ð¸ Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ð¼Ð°Ñ€ÐºÐµÑ€Ð°";
 
-$MESS["STYLES"] = "JSON äëÿ ñòèëåé êàðòû";
-$MESS["STYLES_TIP"] = "Ìàñòåð ñîçäàíèÿ JSON: http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html";
+$MESS["STYLES"] = "JSON Ð´Ð»Ñ ÑÑ‚Ð¸Ð»ÐµÐ¹ ÐºÐ°Ñ€Ñ‚Ñ‹";
+$MESS["STYLES_TIP"] = "ÐœÐ°ÑÑ‚ÐµÑ€ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ JSON: http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html";
 ?>

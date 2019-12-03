@@ -1,5 +1,5 @@
 <?
 $MESS["EFFORTLESS_TYPE_NAME"] = "Effortless";
-$MESS["EFFORTLESS_SECTION_NAME"] = "Ðàçäåëû";
-$MESS["EFFORTLESS_ELEMENT_NAME"] = "Ýëåìåíòû";
+$MESS["EFFORTLESS_SECTION_NAME"] = "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹";
+$MESS["EFFORTLESS_ELEMENT_NAME"] = "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹";
 ?>

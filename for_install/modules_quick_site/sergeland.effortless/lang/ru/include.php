@@ -1,4 +1,4 @@
 <?
-$MESS["SCOM_BUTTON_NAME"] = "Ìàñòåð#BR#ñìåíû äèçàéíà";
-$MESS["SCOM_BUTTON_DESCRIPTION"] = "Çàïóñòèòü ìàñòåð ñìåíû äèçàéíà";
+$MESS["SCOM_BUTTON_NAME"] = "ÐœÐ°ÑÑ‚ÐµÑ€#BR#ÑÐ¼ÐµÐ½Ñ‹ Ð´Ð¸Ð·Ð°Ð¹Ð½Ð°";
+$MESS["SCOM_BUTTON_DESCRIPTION"] = "Ð—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°ÑÑ‚ÐµÑ€ ÑÐ¼ÐµÐ½Ñ‹ Ð´Ð¸Ð·Ð°Ð¹Ð½Ð°";
 ?>

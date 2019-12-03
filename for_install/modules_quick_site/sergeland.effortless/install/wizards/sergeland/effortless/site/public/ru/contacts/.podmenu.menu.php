@@ -1,28 +1,28 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Ñîòðóäíèêè", 
+		"Ð¡Ð¾Ñ‚Ñ€ÑƒÐ´Ð½Ð¸ÐºÐ¸", 
 		"#SITE_DIR#about/staff/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Íàøè ðåêâèçèòû", 
+		"ÐÐ°ÑˆÐ¸ Ñ€ÐµÐºÐ²Ð¸Ð·Ð¸Ñ‚Ñ‹", 
 		"#SITE_DIR#about/information/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Âîïðîñû è îòâåòû", 
+		"Ð’Ð¾Ð¿Ñ€Ð¾ÑÑ‹ Ð¸ Ð¾Ñ‚Ð²ÐµÑ‚Ñ‹", 
 		"#SITE_DIR#about/faq/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Îáðàòíûé çâîíîê", 
+		"ÐžÐ±Ñ€Ð°Ñ‚Ð½Ñ‹Ð¹ Ð·Ð²Ð¾Ð½Ð¾Ðº", 
 		"#SITE_DIR#callback/", 
 		Array(), 
 		Array(), 

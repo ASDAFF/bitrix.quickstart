@@ -34,9 +34,9 @@ class SiteSettingsStep extends CSiteSettingsWizardStep
 		$templateID = $wizard->GetVar("templateID");
 		$themeID = $wizard->GetVar($templateID."_themeID");
 
-		$siteLogo = $this->GetFileContentImgSrc(WIZARD_SITE_PATH."include/company_name.php", "/bitrix/wizards/likeit/windows/site/templates/windows/themes/".$themeID."/lang/".LANGUAGE_ID."/logo.png");
+		$siteLogo = $this->GetFileContentImgSrc(WIZARD_SITE_PATH."include/company_name.php", "/bitrix/wizards/site/windows/site/templates/windows/themes/".$themeID."/lang/".LANGUAGE_ID."/logo.png");
 		if (!file_exists(WIZARD_SITE_PATH."include/logo.png"))
-			$siteLogo = "/bitrix/wizards/likeit/windows/site/templates/windows/themes/".$themeID."/lang/".LANGUAGE_ID."/logo.png";
+			$siteLogo = "/bitrix/wizards/site/windows/site/templates/windows/themes/".$themeID."/lang/".LANGUAGE_ID."/logo.png";
 
 		$wizard->SetDefaultVars(
 			Array(

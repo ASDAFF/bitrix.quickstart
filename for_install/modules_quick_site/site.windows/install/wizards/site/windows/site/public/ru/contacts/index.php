@@ -46,10 +46,10 @@ $APPLICATION->SetTitle("Контакты");
 E-mail: <a href="mailto:info@demolink.org">mail@demolink.org<script type="text/javascript">
 </script></a><br>
 </address> </div>
-<?$APPLICATION->IncludeComponent("likeit:main.feedback", "contacts", array(
+<?$APPLICATION->IncludeComponent("site:main.feedback", "contacts", array(
 	"USE_CAPTCHA" => "Y",
 	"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-	"EMAIL_TO" => "maks@likeit.pro",
+	"EMAIL_TO" => "maks@site.pro",
 	"REQUIRED_FIELDS" => array(
 	),
 	"EVENT_MESSAGE_ID" => array(

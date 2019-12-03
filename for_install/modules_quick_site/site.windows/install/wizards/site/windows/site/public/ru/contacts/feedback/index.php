@@ -12,10 +12,10 @@ $APPLICATION->SetTitle(GetMessage('CFT_BTN_FEEDBACK'));
 <div class="row">
 <div class="span12">
 
-<?$APPLICATION->IncludeComponent("likeit:main.feedback", "contacts", array(
+<?$APPLICATION->IncludeComponent("site:main.feedback", "contacts", array(
 	"USE_CAPTCHA" => "Y",
 	"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-	"EMAIL_TO" => "demo@likeit.pro",
+	"EMAIL_TO" => "demo@site.pro",
 	"REQUIRED_FIELDS" => array(
 	),
 	"EVENT_MESSAGE_ID" => array(

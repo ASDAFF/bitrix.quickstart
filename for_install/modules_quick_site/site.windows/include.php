@@ -1,13 +1,13 @@
 <?
 IncludeModuleLangFile(__FILE__);
-class CLikeITSiteCorporate
+class CSiteWindowsCorporate
 {
 	function ShowPanel()
 	{
 		if ($GLOBALS["USER"]->IsAdmin() && COption::GetOptionString("main", "wizard_solution", "", SITE_ID) == "windows")
 		{
 			$GLOBALS["APPLICATION"]->AddPanelButton(array(
-				"HREF" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=likeit:windows&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
+				"HREF" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=site:windows&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
 				"ID" => "windows_wizard",
 				"ICON" => "bx-panel-site-wizard-icon",
 				"MAIN_SORT" => 2500,

@@ -1,2 +1,2 @@
-# likeit.windows
+# site.windows
 # Сайт окон с калькулятором

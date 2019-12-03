@@ -4,9 +4,9 @@ $strPath2Lang = str_replace("\\", "/", __FILE__);
 $strPath2Lang = substr($strPath2Lang, 0, strlen($strPath2Lang)-strlen("/install/index.php"));
 include(GetLangFileName($strPath2Lang."/lang/", "/install/index.php"));
 
-Class likeit_windows extends CModule
+Class site_windows extends CModule
 {
-	var $MODULE_ID = "likeit.windows";
+	var $MODULE_ID = "site.windows";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -14,7 +14,7 @@ Class likeit_windows extends CModule
 	var $MODULE_CSS;
 	var $MODULE_GROUP_RIGHTS = "Y";
 
-	function likeit_windows()
+	function site_windows()
 	{
 		$arModuleVersion = array();
 
@@ -36,8 +36,8 @@ Class likeit_windows extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		RegisterModule("likeit.windows");
-		RegisterModuleDependences("main", "OnBeforeProlog", "likeit.windows", "CLikeITSiteCorporate", "ShowPanel");
+		RegisterModule("site.windows");
+		RegisterModuleDependences("main", "OnBeforeProlog", "site.windows", "CSiteWindowsCorporate", "ShowPanel");
 
 		return true;
 	}
@@ -46,8 +46,8 @@ Class likeit_windows extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		UnRegisterModuleDependences("main", "OnBeforeProlog", "likeit.windows", "CLikeITSiteCorporate", "ShowPanel");
-		UnRegisterModule("likeit.windows");
+		UnRegisterModuleDependences("main", "OnBeforeProlog", "site.windows", "CSiteWindowsCorporate", "ShowPanel");
+		UnRegisterModule("site.windows");
 
 		return true;
 	}
@@ -64,7 +64,7 @@ Class likeit_windows extends CModule
 
 	function InstallFiles()
 	{
-		if (is_dir($p = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/likeit.windows/install/components'))
+		if (is_dir($p = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/site.windows/install/components'))
 		{
 			if ($dir = opendir($p))
 			{
@@ -86,7 +86,7 @@ Class likeit_windows extends CModule
 
 	function UnInstallFiles()
 	{
-		if (is_dir($p = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/likeit.windows/install/components'))
+		if (is_dir($p = $_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/site.windows/install/components'))
 		{
 			if ($dir = opendir($p))
 			{
@@ -119,7 +119,7 @@ Class likeit_windows extends CModule
 		$this->InstallEvents();
 		$this->InstallPublic();
 
-		$APPLICATION->IncludeAdminFile(GetMessage("SCOM_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/likeit.windows/install/step.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SCOM_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/site.windows/install/step.php");
 	}
 
 	function DoUninstall()
@@ -129,7 +129,7 @@ Class likeit_windows extends CModule
 		$this->UnInstallDB();
 		$this->UnInstallFiles();
 		$this->UnInstallEvents();
-		$APPLICATION->IncludeAdminFile(GetMessage("SCOM_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/likeit.windows/install/unstep.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SCOM_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/site.windows/install/unstep.php");
 	}
 }
 ?>

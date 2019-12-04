@@ -1,5 +1,0 @@
-<?
-$MESS["LPDOBRA_TYPE_NAME"] = "LP DOBRA";
-$MESS["LPDOBRA_ELEMENT_NAME"] = "Elements";
-$MESS["LPDOBRA_SECTION_NAME"] = "Sections";
-?>

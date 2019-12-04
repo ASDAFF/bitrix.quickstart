@@ -1,1 +1,0 @@
-<a href="#contact" class="contact">Закажите услугу</a>

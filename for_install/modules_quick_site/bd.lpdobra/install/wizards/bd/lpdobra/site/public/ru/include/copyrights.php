@@ -1,1 +1,0 @@
-<p class="copy">2014 <a href="http://bdlab.pro">created by humans</a></p>

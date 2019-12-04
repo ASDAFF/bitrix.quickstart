@@ -1,1 +1,0 @@
-<img src="/bitrix/templates/lpdobra_standart/images/logo.png">

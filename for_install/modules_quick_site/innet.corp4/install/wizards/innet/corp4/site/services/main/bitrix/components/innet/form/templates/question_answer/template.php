@@ -17,8 +17,8 @@ if(strlen($arResult["OK_MESSAGE"]) > 0) {?>
     <?=bitrix_sessid_post()?>
 
 	<div class="question-form-group">
-		<input name="user_name" type="text" class="question-input" placeholder="Âàøå èìÿ" value="<?=$arResult["AUTHOR_NAME"]?>">
-		<input name="user_email" type="text" class="question-input" placeholder="Âàø email" value="<?=(!empty($arResult["AUTHOR_EMAIL"])) ? $arResult["AUTHOR_EMAIL"] : htmlspecialcharsbx($USER->GetEmail())?>">
+		<input name="user_name" type="text" class="question-input" placeholder="Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ" value="<?=$arResult["AUTHOR_NAME"]?>">
+		<input name="user_email" type="text" class="question-input" placeholder="Ð’Ð°Ñˆ email" value="<?=(!empty($arResult["AUTHOR_EMAIL"])) ? $arResult["AUTHOR_EMAIL"] : htmlspecialcharsbx($USER->GetEmail())?>">
     </div>
 
 	<textarea name="comment" placeholder="<?=GetMessage("INNET_FORM_TEMPLATE_COMMENT")?>"><?=$arResult["MESSAGE"]?></textarea>

@@ -1,0 +1,24 @@
+<?
+$MESS['K_MENU_COLOR']   = "Цветовоя схема";
+$MESS['K_BLUE_TEXT']    = "Синяя";
+$MESS['K_BLUE_TITLE']   = "Синия цветовая схема";
+$MESS['K_GREEN_TEXT']   = "Зеленая";
+$MESS['K_GREEN_TITLE']  = "Зеленая цветовая схема";
+$MESS['K_IZU_TEXT']     = "Изумрудная";
+$MESS['K_IZU_TITLE']    = "Изумрудная цветовая схема";
+$MESS['K_ORANGE_TEXT']  = "Оранжевая";
+$MESS['K_ORANGE_TITLE'] = "Оранжевая цветовая схема";
+$MESS['K_PUR_TEXT']     = "Пурпурная";
+$MESS['K_PUR_TITLE']    = "Пурпурная цветовая схема";
+$MESS['K_ORANGE_TEXT']  = "Оранжевая";
+$MESS['K_ORANGE_TITLE'] = "Оранжевая цветовая схема";
+$MESS['K_MENU_LAYOUT']  = "Структура";
+$MESS['K_RED_TEXT']     = "Красная";
+$MESS['K_RED_TITLE']    = "Красная цветовая схема";
+$MESS['K_FIOLET_TEXT']  = "Фиолетовая";
+$MESS['K_FIOLET_TITLE'] = "Фиолетовая цветовая схема";
+$MESS['K_MENU_LAYOUT']  = "Структура";
+$MESS['K_L2_TEXT']  = "2-колонки";
+$MESS['K_L2_TITLE'] = "2-колонки га главной";
+$MESS['K_L1_TEXT']  = "1-колонки";
+$MESS['K_L2_TITLE'] = "1-колонки га главной";

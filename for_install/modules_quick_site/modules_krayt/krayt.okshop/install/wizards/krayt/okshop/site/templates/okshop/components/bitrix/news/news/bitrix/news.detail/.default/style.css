@@ -1,0 +1,27 @@
+h1 {
+    margin-bottom: 5px!important;
+}
+.news-date-time
+{
+	color:#888;
+    margin-bottom: 15px;
+}
+.news-detail a {
+    color: #000;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 20px 0;
+}
+a:hover {
+    text-decoration: none;
+}
+.content {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 20px 20px 0!important;
+}

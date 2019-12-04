@@ -1,2 +1,0 @@
-# webmechanic.landing
-Лендинг

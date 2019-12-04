@@ -37,7 +37,7 @@ if($REQUEST_METHOD=="POST" && strlen($Update.$Apply)>0 && check_bitrix_sessid())
   {
     $name=$arOption[0];
     $val=$_REQUEST[$name];
-    COption::SetOptionString("asdaff.error_404", $name, $val, $arOption[1], $arOption[4]);
+    COption::SetOptionString("page.error_404", $name, $val, $arOption[1], $arOption[4]);
   }
 	if(strlen($Update)>0 && strlen($_REQUEST["back_url_settings"])>0)
 		LocalRedirect($_REQUEST["back_url_settings"]);
@@ -52,7 +52,7 @@ $tabControl->Begin();
 <?$tabControl->BeginNextTab();?>
 	<?
 	foreach($arAllOptions as $arOption):
-		$val = COption::GetOptionString("asdaff.error_404", $arOption[0], $arOption[2], $arOption[4]);
+		$val = COption::GetOptionString("page.error_404", $arOption[0], $arOption[2], $arOption[4]);
 		$type = $arOption[3];
 	?>
 	<tr>

@@ -2,15 +2,15 @@
 global $MESS;
 IncludeModuleLangFile(__FILE__);
 
-Class asdaff_error_404 extends CModule
+Class page_error_404 extends CModule
 {
-	var $MODULE_ID = "asdaff.error_404";
+	var $MODULE_ID = "page.error_404";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
 	var $MODULE_DESCRIPTION;
 
-	function asdaff_error_404()
+	function page_error_404()
 	{
 		$arModuleVersion = array();
 
@@ -48,17 +48,17 @@ Class asdaff_error_404 extends CModule
 
 	function InstallEvents()
 	{
-		RegisterModule("asdaff.error_404");
-		RegisterModuleDependences("main", "OnEpilog", "asdaff.error_404", "CErr404", "handler404", 10000);
+		RegisterModule("page.error_404");
+		RegisterModuleDependences("main", "OnEpilog", "page.error_404", "CErr404", "handler404", 10000);
 
 		return true;
 	}
 
 	function UnInstallEvents()
 	{
-		COption::RemoveOption("asdaff.error_404");
-		UnRegisterModuleDependences("main", "OnEpilog", "asdaff.error_404", "CErr404", "handler404");
-		UnRegisterModule("asdaff.error_404");
+		COption::RemoveOption("page.error_404");
+		UnRegisterModuleDependences("main", "OnEpilog", "page.error_404", "CErr404", "handler404");
+		UnRegisterModule("page.error_404");
 
 		return true;
 	}
@@ -77,7 +77,7 @@ Class asdaff_error_404 extends CModule
 	{
 		global $DOCUMENT_ROOT, $APPLICATION;
 		$this->InstallEvents();
-		$APPLICATION->IncludeAdminFile(GetMessage("ERR404_INSTALL_TITLE"), $DOCUMENT_ROOT."/bitrix/modules/asdaff.error_404/install/step.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("ERR404_INSTALL_TITLE"), $DOCUMENT_ROOT."/bitrix/modules/page.error_404/install/step.php");
 	}
 
 	function DoUninstall()

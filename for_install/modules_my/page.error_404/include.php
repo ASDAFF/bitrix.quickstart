@@ -5,7 +5,7 @@ class CErr404{
 
     if(defined('ERROR_404') && ERROR_404 == 'Y' && !defined('ADMIN_SECTION')){
 
-      $template = COption::GetOptionString('asdaff.error_404', 'template_'.SITE_ID, FALSE, SITE_ID);
+      $template = COption::GetOptionString('page.error_404', 'template_'.SITE_ID, FALSE, SITE_ID);
 
       if(!$template)
         return;

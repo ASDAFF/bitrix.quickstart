@@ -1,1 +1,0 @@
-<?$MESS["MLIFE_ASZ_CATALOG_FILTER_T_1"] = "Подбор по параметрам";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_2"] = "Подобрать";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_3"] = "Отобрано товаров";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_4"] = "сбросить";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_5"] = "показать";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_6"] = "от";$MESS["MLIFE_ASZ_CATALOG_FILTER_T_7"] = "до";?>

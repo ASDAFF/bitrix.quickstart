@@ -1,1 +1,0 @@
-<?$MESS["MLIFE_ASZ_BASKET_CARTADDED"] = "Товар уже в корзине";$MESS["MLIFE_ASZ_BASKET_CARTADDED2"] = "Товар не найден";?>

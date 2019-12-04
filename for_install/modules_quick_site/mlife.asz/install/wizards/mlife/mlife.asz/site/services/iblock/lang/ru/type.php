@@ -1,5 +1,0 @@
-<?
-$MESS["MLIFE_ASZ_CATALOG_TYPE_NAME"] = "Каталоги";
-$MESS["MLIFE_ASZ_CATALOG_ELEMENT_NAME"] = "Товары";
-$MESS["MLIFE_ASZ_CATALOG_SECTION_NAME"] = "Разделы";
-?>

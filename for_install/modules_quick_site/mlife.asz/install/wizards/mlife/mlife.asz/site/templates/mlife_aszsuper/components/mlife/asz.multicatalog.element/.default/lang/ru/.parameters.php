@@ -1,1 +1,0 @@
-<?$MESS["MLIFE_ASZ_CATALOG_TOVAR_DAY"] = "Ид скидок для товара дня";?>

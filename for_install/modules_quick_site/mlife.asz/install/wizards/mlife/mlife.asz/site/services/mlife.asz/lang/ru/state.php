@@ -1,1 +1,0 @@
-<?$MESS["MLIFE_ASZ_WZ_STATE_1"] = "Беларусь";$MESS["MLIFE_ASZ_WZ_STATE_2"] = "Минск и область";$MESS["MLIFE_ASZ_WZ_STATE_3"] = "Гомель и область";$MESS["MLIFE_ASZ_WZ_STATE_4"] = "Витебск и область";$MESS["MLIFE_ASZ_WZ_STATE_5"] = "Могилев и область";$MESS["MLIFE_ASZ_WZ_STATE_6"] = "Брест и область";$MESS["MLIFE_ASZ_WZ_STATE_7"] = "Гродно и область";?>

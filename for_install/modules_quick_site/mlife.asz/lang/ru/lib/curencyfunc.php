@@ -1,5 +1,0 @@
-<?
-$MESS["MLIFE_ASZ_CURENCY_FUNC_BUR"] = "бел.руб.";
-$MESS["MLIFE_ASZ_CURENCY_FUNC_RUB"] = "руб.";
-$MESS["MLIFE_ASZ_CURENCY_FUNC_USD"] = '$';
-?>

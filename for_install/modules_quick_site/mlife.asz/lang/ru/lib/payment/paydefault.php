@@ -1,1 +1,0 @@
-<?$MESS["MLIFE_ASZ_PAYDEFAULT_LOGO"] = "Логотип";$MESS["MLIFE_ASZ_PAYDEFAULT_SUMM"] = "Сумма заказа";$MESS["MLIFE_ASZ_PAYDEFAULT_TAX"] = "Наценка %";$MESS["MLIFE_ASZ_PAYDEFAULT_DELIVERY"] = "Службы доставки";$MESS["MLIFE_ASZ_PAYDEFAULT_DELIVERY_DEF"] = "Все cлужбы доставки";?>

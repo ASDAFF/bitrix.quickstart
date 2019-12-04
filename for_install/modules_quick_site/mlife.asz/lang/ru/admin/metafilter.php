@@ -1,7 +1,0 @@
-<?
-$MESS["MLIFE_ASZ_METAFILTER_NAV"] = "Шаблоны";
-$MESS["MLIFE_ASZ_METAFILTER_MENU_DELETE"] = "Удалить";
-$MESS["MLIFE_ASZ_METAFILTER_MENU_EDIT"] = "Изменить";
-$MESS["MLIFE_ASZ_METAFILTER_MENU_ADD"] = "Добавить шаблон";
-$MESS["MLIFE_ASZ_METAFILTER_TITLE"] = "Шаблоны";
-?>

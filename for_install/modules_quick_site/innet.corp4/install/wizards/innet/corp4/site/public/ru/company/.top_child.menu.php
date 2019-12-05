@@ -1,1 +1,0 @@
-<?include $_SERVER['DOCUMENT_ROOT'] . '/.left.menu.php';?>

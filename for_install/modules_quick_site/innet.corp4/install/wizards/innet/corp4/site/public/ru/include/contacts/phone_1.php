@@ -1,1 +1,0 @@
-<a href="tel:#COMPANY_PHONE#" class="link-phone">#COMPANY_PHONE#</a>

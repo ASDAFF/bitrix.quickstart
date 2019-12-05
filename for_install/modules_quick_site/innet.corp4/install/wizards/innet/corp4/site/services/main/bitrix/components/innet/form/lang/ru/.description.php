@@ -1,4 +1,0 @@
-<?
-$MESS ['INNET_FORM_DESCRIPTION_NAME'] = "INNET: формы";
-$MESS ['INNET_FORM_DESCRIPTION'] = "INNET: формы";
-?>

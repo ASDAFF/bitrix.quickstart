@@ -1,1 +1,0 @@
-<a href="https://yandex.ru/maps/213/moscow/?ll=37.615139%2C55.749106&z=12" class="map-view" target="_blank">Посмотреть нас<br>на большой карте</a>

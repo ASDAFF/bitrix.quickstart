@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T00:20:42">
 	<Metadata>
 		<Id>partners-effortless</Id>
@@ -217,7 +217,7 @@
 		<Elements>
 			<Element>
 				<Id>51</Id>
-				<Title>Bank «VTB24» (publichnoe aktsionernoe obschestvo)</Title>
+				<Title>Bank Â«VTB24Â» (publichnoe aktsionernoe obschestvo)</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>14</Id>
@@ -289,7 +289,7 @@
 			</Element>
 			<Element>
 				<Id>52</Id>
-				<Title>OAO «Sberbank Rossii»</Title>
+				<Title>OAO Â«Sberbank RossiiÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>14</Id>
@@ -360,7 +360,7 @@
 			</Element>
 			<Element>
 				<Id>53</Id>
-				<Title>OAO NPO «IJMASH»</Title>
+				<Title>OAO NPO Â«IJMASHÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>15</Id>
@@ -431,7 +431,7 @@
 			</Element>
 			<Element>
 				<Id>54</Id>
-				<Title>OAO «URALMASHZAVOD»</Title>
+				<Title>OAO Â«URALMASHZAVODÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>15</Id>
@@ -502,7 +502,7 @@
 			</Element>
 			<Element>
 				<Id>55</Id>
-				<Title>OAO «MOSENERGOSBYIT»</Title>
+				<Title>OAO Â«MOSENERGOSBYITÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>15</Id>
@@ -573,7 +573,7 @@
 			</Element>
 			<Element>
 				<Id>56</Id>
-				<Title>OAO «NPO ENERGOMASH»</Title>
+				<Title>OAO Â«NPO ENERGOMASHÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>15</Id>

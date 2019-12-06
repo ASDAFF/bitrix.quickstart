@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T00:08:39">
 	<Metadata>
 		<Id>#LICENSES_XML_ID#</Id>
@@ -190,7 +190,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Sertifikat vyidan na osnovanii protokola ot 03/09/2007 ¹2720, &amp;laquo;Ispyitatelnoy laboratoriey pischevyih produktov&amp;raquo; Gosudarstvennogo uchrejdeniya Samarskoy oblasti.</Value>
+						<Value>Sertifikat vyidan na osnovanii protokola ot 03/09/2007 Â¹2720, &amp;laquo;Ispyitatelnoy laboratoriey pischevyih produktov&amp;raquo; Gosudarstvennogo uchrejdeniya Samarskoy oblasti.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -204,9 +204,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>55</Id>
-						<Value>Sertifikat sootvetstviya kachestva produktsii ¹2720 ot 03/09/2007</Value>
+						<Value>Sertifikat sootvetstviya kachestva produktsii Â¹2720 ot 03/09/2007</Value>
 						<PropertyValue>
-							<Value>Sertifikat sootvetstviya kachestva produktsii ¹2720 ot 03/09/2007</Value>
+							<Value>Sertifikat sootvetstviya kachestva produktsii Â¹2720 ot 03/09/2007</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -214,7 +214,7 @@
 			</Element>
 			<Element>
 				<Id>58</Id>
-				<Title>Sertifikat na pravo primeneniya znaka kachestva «Rostest-Kachestvo»</Title>
+				<Title>Sertifikat na pravo primeneniya znaka kachestva Â«Rostest-KachestvoÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>16</Id>
@@ -257,9 +257,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>55</Id>
-						<Value>Sertifikat na pravo primeneniya znaka kachestva «Rostest-Kachestvo»</Value>
+						<Value>Sertifikat na pravo primeneniya znaka kachestva Â«Rostest-KachestvoÂ»</Value>
 						<PropertyValue>
-							<Value>Sertifikat na pravo primeneniya znaka kachestva «Rostest-Kachestvo»</Value>
+							<Value>Sertifikat na pravo primeneniya znaka kachestva Â«Rostest-KachestvoÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -320,7 +320,7 @@
 			</Element>
 			<Element>
 				<Id>60</Id>
-				<Title>Sertifikat pojarnoy bezopasnosti ¹ SSPB.RU.OP044.V00101</Title>
+				<Title>Sertifikat pojarnoy bezopasnosti Â¹ SSPB.RU.OP044.V00101</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>17</Id>
@@ -363,9 +363,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>55</Id>
-						<Value>Sertifikat pojarnoy bezopasnosti ¹ SSPB.RU.OP044.V00101</Value>
+						<Value>Sertifikat pojarnoy bezopasnosti Â¹ SSPB.RU.OP044.V00101</Value>
 						<PropertyValue>
-							<Value>Sertifikat pojarnoy bezopasnosti ¹ SSPB.RU.OP044.V00101</Value>
+							<Value>Sertifikat pojarnoy bezopasnosti Â¹ SSPB.RU.OP044.V00101</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -373,7 +373,7 @@
 			</Element>
 			<Element>
 				<Id>61</Id>
-				<Title>Attestat akkreditatsii Gosudrastvennogo tsentra ispyitaniy ¹30070-07</Title>
+				<Title>Attestat akkreditatsii Gosudrastvennogo tsentra ispyitaniy Â¹30070-07</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>17</Id>
@@ -416,9 +416,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>55</Id>
-						<Value>Attestat akkreditatsii gosudrastvennogo tsentra ispyitaniy ¹30070-07</Value>
+						<Value>Attestat akkreditatsii gosudrastvennogo tsentra ispyitaniy Â¹30070-07</Value>
 						<PropertyValue>
-							<Value>Attestat akkreditatsii gosudrastvennogo tsentra ispyitaniy ¹30070-07</Value>
+							<Value>Attestat akkreditatsii gosudrastvennogo tsentra ispyitaniy Â¹30070-07</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -426,7 +426,7 @@
 			</Element>
 			<Element>
 				<Id>62</Id>
-				<Title>PATENT ¹2085894 na izobretenie «Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analiza»</Title>
+				<Title>PATENT Â¹2085894 na izobretenie Â«Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analizaÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>17</Id>
@@ -469,9 +469,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>55</Id>
-						<Value>PATENT ¹2085894 na izobretenie «Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analiza»</Value>
+						<Value>PATENT Â¹2085894 na izobretenie Â«Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analizaÂ»</Value>
 						<PropertyValue>
-							<Value>PATENT ¹2085894 na izobretenie «Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analiza»</Value>
+							<Value>PATENT Â¹2085894 na izobretenie Â«Ustroystvo dlya podgotovki vodnyih prob dlya himicheskogo analizaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T01:39:48">
 	<Metadata>
 		<Id>services-effortless-s1</Id>
@@ -3255,7 +3255,7 @@
 			</Element>
 			<Element>
 				<Id>227</Id>
-				<Title>Sostavlenie i sdacha otch¸tnosti v IFNS i vnebyudjetnyie fondyi</Title>
+				<Title>Sostavlenie i sdacha otchÂ¸tnosti v IFNS i vnebyudjetnyie fondyi</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>29</Id>

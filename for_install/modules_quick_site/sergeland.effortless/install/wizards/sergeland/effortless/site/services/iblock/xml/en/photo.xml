@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T01:53:58">
 	<Metadata>
 		<Id>photo-effortless</Id>
@@ -361,7 +361,7 @@
 		<Elements>
 			<Element>
 				<Id>230</Id>
-				<Title>AO «Stavropolpolimer»</Title>
+				<Title>AO Â«StavropolpolimerÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>32</Id>
@@ -412,9 +412,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>AO «Stavropolpolimer»</Value>
+						<Value>AO Â«StavropolpolimerÂ»</Value>
 						<PropertyValue>
-							<Value>AO «Stavropolpolimer»</Value>
+							<Value>AO Â«StavropolpolimerÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -446,7 +446,7 @@
 			</Element>
 			<Element>
 				<Id>231</Id>
-				<Title>OOO «MetallGalvanika»</Title>
+				<Title>OOO Â«MetallGalvanikaÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>33</Id>
@@ -512,32 +512,32 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>230</Id>
-						<Value>Foto2 OOO «MetallGalvanika»</Value>
+						<Value>Foto2 OOO Â«MetallGalvanikaÂ»</Value>
 						<PropertyValue>
-							<Value>Foto2 OOO «MetallGalvanika»</Value>
+							<Value>Foto2 OOO Â«MetallGalvanikaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Foto3 OOO «MetallGalvanika»</Value>
+						<Value>Foto3 OOO Â«MetallGalvanikaÂ»</Value>
 						<PropertyValue>
-							<Value>Foto3 OOO «MetallGalvanika»</Value>
+							<Value>Foto3 OOO Â«MetallGalvanikaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Foto4 OOO «MetallGalvanika»</Value>
+						<Value>Foto4 OOO Â«MetallGalvanikaÂ»</Value>
 						<PropertyValue>
-							<Value>Foto4 OOO «MetallGalvanika»</Value>
+							<Value>Foto4 OOO Â«MetallGalvanikaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Foto5 OOO «MetallGalvanika»</Value>
+						<Value>Foto5 OOO Â«MetallGalvanikaÂ»</Value>
 						<PropertyValue>
-							<Value>Foto5 OOO «MetallGalvanika»</Value>
+							<Value>Foto5 OOO Â«MetallGalvanikaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>Foto1 OOO «MetallGalvanika»</Value>
+						<Value>Foto1 OOO Â«MetallGalvanikaÂ»</Value>
 						<PropertyValue>
-							<Value>Foto1 OOO «MetallGalvanika»</Value>
+							<Value>Foto1 OOO Â«MetallGalvanikaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -569,7 +569,7 @@
 			</Element>
 			<Element>
 				<Id>232</Id>
-				<Title>OOO «PromServis»</Title>
+				<Title>OOO Â«PromServisÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>34</Id>
@@ -620,9 +620,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>OOO «PromServis»</Value>
+						<Value>OOO Â«PromServisÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «PromServis»</Value>
+							<Value>OOO Â«PromServisÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -654,7 +654,7 @@
 			</Element>
 			<Element>
 				<Id>233</Id>
-				<Title>ZAO «EVROMIKS»</Title>
+				<Title>ZAO Â«EVROMIKSÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>34</Id>
@@ -705,9 +705,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>ZAO «EVROMIKS»</Value>
+						<Value>ZAO Â«EVROMIKSÂ»</Value>
 						<PropertyValue>
-							<Value>ZAO «EVROMIKS»</Value>
+							<Value>ZAO Â«EVROMIKSÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -739,7 +739,7 @@
 			</Element>
 			<Element>
 				<Id>234</Id>
-				<Title>OOO «Avantpak»</Title>
+				<Title>OOO Â«AvantpakÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>32</Id>
@@ -800,27 +800,27 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>230</Id>
-						<Value>Foto2 OOO «Avantpak»</Value>
+						<Value>Foto2 OOO Â«AvantpakÂ»</Value>
 						<PropertyValue>
-							<Value>Foto2 OOO «Avantpak»</Value>
+							<Value>Foto2 OOO Â«AvantpakÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Foto3 OOO «Avantpak»</Value>
+						<Value>Foto3 OOO Â«AvantpakÂ»</Value>
 						<PropertyValue>
-							<Value>Foto3 OOO «Avantpak»</Value>
+							<Value>Foto3 OOO Â«AvantpakÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Foto4 OOO «Avantpak»</Value>
+						<Value>Foto4 OOO Â«AvantpakÂ»</Value>
 						<PropertyValue>
-							<Value>Foto4 OOO «Avantpak»</Value>
+							<Value>Foto4 OOO Â«AvantpakÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>Foto1 OOO «Avantpak»</Value>
+						<Value>Foto1 OOO Â«AvantpakÂ»</Value>
 						<PropertyValue>
-							<Value>Foto1 OOO «Avantpak»</Value>
+							<Value>Foto1 OOO Â«AvantpakÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -852,7 +852,7 @@
 			</Element>
 			<Element>
 				<Id>235</Id>
-				<Title>OOO «Plazma 24»</Title>
+				<Title>OOO Â«Plazma 24Â»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>33</Id>
@@ -903,9 +903,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>OOO «Plazma 24»</Value>
+						<Value>OOO Â«Plazma 24Â»</Value>
 						<PropertyValue>
-							<Value>OOO «Plazma 24»</Value>
+							<Value>OOO Â«Plazma 24Â»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -937,7 +937,7 @@
 			</Element>
 			<Element>
 				<Id>254</Id>
-				<Title>PAO «STK Novyiy Mir»</Title>
+				<Title>PAO Â«STK Novyiy MirÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>32</Id>
@@ -988,9 +988,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>PAO «STK Novyiy Mir»</Value>
+						<Value>PAO Â«STK Novyiy MirÂ»</Value>
 						<PropertyValue>
-							<Value>PAO «STK Novyiy Mir»</Value>
+							<Value>PAO Â«STK Novyiy MirÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1022,7 +1022,7 @@
 			</Element>
 			<Element>
 				<Id>255</Id>
-				<Title>OOO «Trubnyiy zavod»</Title>
+				<Title>OOO Â«Trubnyiy zavodÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>34</Id>
@@ -1073,9 +1073,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>229</Id>
-						<Value>OOO «Trubnyiy zavod»</Value>
+						<Value>OOO Â«Trubnyiy zavodÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «Trubnyiy zavod»</Value>
+							<Value>OOO Â«Trubnyiy zavodÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>

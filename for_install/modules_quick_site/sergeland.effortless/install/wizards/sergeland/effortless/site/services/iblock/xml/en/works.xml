@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T01:19:01">
 	<Metadata>
 		<Id>works-effortless-s1</Id>
@@ -960,7 +960,7 @@
 		<Elements>
 			<Element>
 				<Id>194</Id>
-				<Title>Vnedrenie «1S:Upravlenie proizvodstvennyim predpriyatiem» v OOO «AZOT MAYNING SERVIS»</Title>
+				<Title>Vnedrenie Â«1S:Upravlenie proizvodstvennyim predpriyatiemÂ» v OOO Â«AZOT MAYNING SERVISÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -1053,19 +1053,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>102</Id>
-						<Value>OOO «AZOT MAYNING SERVIS»</Value>
+						<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «AZOT MAYNING SERVIS»</Value>
+							<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>OOO «AZOT MAYNING SERVIS»</Value>
+						<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «AZOT MAYNING SERVIS»</Value>
+							<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>OOO «AZOT MAYNING SERVIS»</Value>
+						<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «AZOT MAYNING SERVIS»</Value>
+							<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1162,9 +1162,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «AZOT MAYNING SERVIS»</Value>
+						<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «AZOT MAYNING SERVIS»</Value>
+							<Value>OOO Â«AZOT MAYNING SERVISÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>11 mln.</Value>
@@ -1264,7 +1264,7 @@
 			</Element>
 			<Element>
 				<Id>195</Id>
-				<Title>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Title>
+				<Title>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -1337,14 +1337,14 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1377,24 +1377,24 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>102</Id>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+						<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya «Vektor»</Value>
+							<Value>Avtomatizatsiya buhgalterskogo ucheta Rossiyskogo nauchno-proizvodstvennogo predpriyatiya Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1496,9 +1496,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>NPP «Vektor»</Value>
+						<Value>NPP Â«VektorÂ»</Value>
 						<PropertyValue>
-							<Value>NPP «Vektor»</Value>
+							<Value>NPP Â«VektorÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>5,3 mln.</Value>
@@ -1634,7 +1634,7 @@
 			</Element>
 			<Element>
 				<Id>196</Id>
-				<Title>Vnedrenie programmnogo produkta «1S:ERP Upravlenie predpriyatiem 2.0» v GUP SO «Farmatsiya»</Title>
+				<Title>Vnedrenie programmnogo produkta Â«1S:ERP Upravlenie predpriyatiem 2.0Â» v GUP SO Â«FarmatsiyaÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -1702,14 +1702,14 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Vnedrenie programmnogo produkta «1S:ERP Upravlenie predpriyatiem 2.0» v GUP SO «Farmatsiya»</Value>
+						<Value>Vnedrenie programmnogo produkta Â«1S:ERP Upravlenie predpriyatiem 2.0Â» v GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>Vnedrenie programmnogo produkta «1S:ERP Upravlenie predpriyatiem 2.0» v GUP SO «Farmatsiya»</Value>
+							<Value>Vnedrenie programmnogo produkta Â«1S:ERP Upravlenie predpriyatiem 2.0Â» v GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Vnedrenie programmnogo produkta «1S:ERP Upravlenie predpriyatiem 2.0» v GUP SO «Farmatsiya»</Value>
+						<Value>Vnedrenie programmnogo produkta Â«1S:ERP Upravlenie predpriyatiem 2.0Â» v GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>Vnedrenie programmnogo produkta «1S:ERP Upravlenie predpriyatiem 2.0» v GUP SO «Farmatsiya»</Value>
+							<Value>Vnedrenie programmnogo produkta Â«1S:ERP Upravlenie predpriyatiem 2.0Â» v GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1742,24 +1742,24 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>102</Id>
-						<Value>GUP SO «Farmatsiya»</Value>
+						<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>GUP SO «Farmatsiya»</Value>
+							<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>GUP SO «Farmatsiya»</Value>
+						<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>GUP SO «Farmatsiya»</Value>
+							<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>GUP SO «Farmatsiya»</Value>
+						<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>GUP SO «Farmatsiya»</Value>
+							<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>GUP SO «Farmatsiya»</Value>
+						<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>GUP SO «Farmatsiya»</Value>
+							<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1861,9 +1861,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>GUP SO «Farmatsiya»</Value>
+						<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 						<PropertyValue>
-							<Value>GUP SO «Farmatsiya»</Value>
+							<Value>GUP SO Â«FarmatsiyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>7,2 mln.</Value>
@@ -1947,7 +1947,7 @@
 			</Element>
 			<Element>
 				<Id>197</Id>
-				<Title>Proekt avtomatizatsii ucheta OOO «Mostinjstroy»</Title>
+				<Title>Proekt avtomatizatsii ucheta OOO Â«MostinjstroyÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -2015,14 +2015,14 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Proekt avtomatizatsii ucheta OOO «Mostinjstroy»</Value>
+						<Value>Proekt avtomatizatsii ucheta OOO Â«MostinjstroyÂ»</Value>
 						<PropertyValue>
-							<Value>Proekt avtomatizatsii ucheta OOO «Mostinjstroy»</Value>
+							<Value>Proekt avtomatizatsii ucheta OOO Â«MostinjstroyÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Proekt avtomatizatsii ucheta OOO «Mostinjstroy»</Value>
+						<Value>Proekt avtomatizatsii ucheta OOO Â«MostinjstroyÂ»</Value>
 						<PropertyValue>
-							<Value>Proekt avtomatizatsii ucheta OOO «Mostinjstroy»</Value>
+							<Value>Proekt avtomatizatsii ucheta OOO Â«MostinjstroyÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2117,9 +2117,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «Mostinjstroy»</Value>
+						<Value>OOO Â«MostinjstroyÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «Mostinjstroy»</Value>
+							<Value>OOO Â«MostinjstroyÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>15,0 mln.</Value>
@@ -2195,7 +2195,7 @@
 			</Element>
 			<Element>
 				<Id>198</Id>
-				<Title>Vnedrenie programmnogo produkta «1S:Buhgalteriya gosudarstvennogo uchrejdeniya»</Title>
+				<Title>Vnedrenie programmnogo produkta Â«1S:Buhgalteriya gosudarstvennogo uchrejdeniyaÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -2258,9 +2258,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Vnedrenie programmnogo produkta «1S:Buhgalteriya gosudarstvennogo uchrejdeniya»</Value>
+						<Value>Vnedrenie programmnogo produkta Â«1S:Buhgalteriya gosudarstvennogo uchrejdeniyaÂ»</Value>
 						<PropertyValue>
-							<Value>Vnedrenie programmnogo produkta «1S:Buhgalteriya gosudarstvennogo uchrejdeniya»</Value>
+							<Value>Vnedrenie programmnogo produkta Â«1S:Buhgalteriya gosudarstvennogo uchrejdeniyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2423,7 +2423,7 @@
 			</Element>
 			<Element>
 				<Id>199</Id>
-				<Title>Sozdanie sistemyi elektronnogo dokumentooborota v MBU «Gorodskaya klinicheskaya bolnitsa» na baze «1S:Dokumentooborot 8 KORP»</Title>
+				<Title>Sozdanie sistemyi elektronnogo dokumentooborota v MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» na baze Â«1S:Dokumentooborot 8 KORPÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>24</Id>
@@ -2486,9 +2486,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Sozdanie sistemyi elektronnogo dokumentooborota v MBU «Gorodskaya klinicheskaya bolnitsa» na baze «1S:Dokumentooborot 8 KORP»</Value>
+						<Value>Sozdanie sistemyi elektronnogo dokumentooborota v MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» na baze Â«1S:Dokumentooborot 8 KORPÂ»</Value>
 						<PropertyValue>
-							<Value>Sozdanie sistemyi elektronnogo dokumentooborota v MBU «Gorodskaya klinicheskaya bolnitsa» na baze «1S:Dokumentooborot 8 KORP»</Value>
+							<Value>Sozdanie sistemyi elektronnogo dokumentooborota v MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» na baze Â«1S:Dokumentooborot 8 KORPÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2573,9 +2573,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>MBU «Gorodskaya klinicheskaya bolnitsa»</Value>
+						<Value>MBU Â«Gorodskaya klinicheskaya bolnitsaÂ»</Value>
 						<PropertyValue>
-							<Value>MBU «Gorodskaya klinicheskaya bolnitsa»</Value>
+							<Value>MBU Â«Gorodskaya klinicheskaya bolnitsaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>1,3 mln.</Value>
@@ -2651,7 +2651,7 @@
 			</Element>
 			<Element>
 				<Id>200</Id>
-				<Title>Reshenie po isku OOO «Obuvnaya kompaniya» k OOO «Fond Enerdji» o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya</Title>
+				<Title>Reshenie po isku OOO Â«Obuvnaya kompaniyaÂ» k OOO Â«Fond EnerdjiÂ» o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>25</Id>
@@ -2788,9 +2788,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «Obuvnaya kompaniya»</Value>
+						<Value>OOO Â«Obuvnaya kompaniyaÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «Obuvnaya kompaniya»</Value>
+							<Value>OOO Â«Obuvnaya kompaniyaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>22 tyis.</Value>
@@ -2798,9 +2798,9 @@
 							<Value>22 tyis.</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Reshenie suda o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya v razmere 230 tyis. rubley s OOO «Fond Enerdji»</Value>
+						<Value>Reshenie suda o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya v razmere 230 tyis. rubley s OOO Â«Fond EnerdjiÂ»</Value>
 						<PropertyValue>
-							<Value>Reshenie suda o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya v razmere 230 tyis. rubley s OOO «Fond Enerdji»</Value>
+							<Value>Reshenie suda o vzyiskanii uscherba, prichinennogo zatopleniem pomescheniya v razmere 230 tyis. rubley s OOO Â«Fond EnerdjiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2874,7 +2874,7 @@
 			</Element>
 			<Element>
 				<Id>201</Id>
-				<Title>Reshenie po TSJ GUP «Novyie CHer¸mushki», isk o nezakonno vzyiskannyih kommunalnyih platejah</Title>
+				<Title>Reshenie po TSJ GUP Â«Novyie CHerÂ¸mushkiÂ», isk o nezakonno vzyiskannyih kommunalnyih platejah</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>25</Id>
@@ -2959,19 +2959,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>102</Id>
-						<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki»</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -3274,9 +3274,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «Inteko», Moskva</Value>
+						<Value>OOO Â«IntekoÂ», Moskva</Value>
 						<PropertyValue>
-							<Value>OOO «Inteko», Moskva</Value>
+							<Value>OOO Â«IntekoÂ», Moskva</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>200 tyis.</Value>
@@ -3479,9 +3479,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «Systems-XXI»</Value>
+						<Value>OOO Â«Systems-XXIÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «Systems-XXI»</Value>
+							<Value>OOO Â«Systems-XXIÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>170 tyis.</Value>
@@ -3969,7 +3969,7 @@
 			</Element>
 			<Element>
 				<Id>206</Id>
-				<Title>Audit OOO «TransMashHolding» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Title>
+				<Title>Audit OOO Â«TransMashHoldingÂ» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>26</Id>
@@ -4032,9 +4032,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Audit OOO «TransMashHolding» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Value>
+						<Value>Audit OOO Â«TransMashHoldingÂ» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Value>
 						<PropertyValue>
-							<Value>Audit OOO «TransMashHolding» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Value>
+							<Value>Audit OOO Â«TransMashHoldingÂ» s vyirabotkoy rekomendatsiy po postroeniyu sistemyi nalogovogo ucheta</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -4119,9 +4119,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>OOO «TransMashHolding»</Value>
+						<Value>OOO Â«TransMashHoldingÂ»</Value>
 						<PropertyValue>
-							<Value>OOO «TransMashHolding»</Value>
+							<Value>OOO Â«TransMashHoldingÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>10,3 mln.</Value>
@@ -4191,7 +4191,7 @@
 			</Element>
 			<Element>
 				<Id>207</Id>
-				<Title>Audit MBU «Gorodskaya klinicheskaya bolnitsa» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Title>
+				<Title>Audit MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>26</Id>
@@ -4259,14 +4259,14 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>100</Id>
-						<Value>Audit MBU «Gorodskaya klinicheskaya bolnitsa» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
+						<Value>Audit MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
 						<PropertyValue>
-							<Value>Audit MBU «Gorodskaya klinicheskaya bolnitsa» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
+							<Value>Audit MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Audit MBU «Gorodskaya klinicheskaya bolnitsa» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
+						<Value>Audit MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
 						<PropertyValue>
-							<Value>Audit MBU «Gorodskaya klinicheskaya bolnitsa» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
+							<Value>Audit MBU Â«Gorodskaya klinicheskaya bolnitsaÂ» v svyazi so smenoy glavnogo buhgaltera i  vyiyavleniem sistemnyih oshibok</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -4351,9 +4351,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>109</Id>
-						<Value>MBU «Gorodskaya klinicheskaya bolnitsa»</Value>
+						<Value>MBU Â«Gorodskaya klinicheskaya bolnitsaÂ»</Value>
 						<PropertyValue>
-							<Value>MBU «Gorodskaya klinicheskaya bolnitsa»</Value>
+							<Value>MBU Â«Gorodskaya klinicheskaya bolnitsaÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 						<Value>120 tyis.</Value>

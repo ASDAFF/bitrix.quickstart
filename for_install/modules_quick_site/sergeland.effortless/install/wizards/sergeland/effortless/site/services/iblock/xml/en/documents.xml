@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2015-09-19T16:16:30">
 	<Metadata>
 		<Id>documents-effortless</Id>
@@ -437,7 +437,7 @@
 			</Element>
 			<Element>
 				<Id>78</Id>
-				<Title>Jurnal «GlavBuh» 01/2014, str. 10</Title>
+				<Title>Jurnal Â«GlavBuhÂ» 01/2014, str. 10</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>20</Id>

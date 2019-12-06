@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-14T23:46:06">
 	<Metadata>
 		<Id>news-effortless</Id>
@@ -568,7 +568,7 @@
 		<Elements>
 			<Element>
 				<Id>26</Id>
-				<Title>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Title>
+				<Title>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>2</Id>
@@ -669,14 +669,14 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>265</Id>
-						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 						<PropertyValue>
-							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 						<PropertyValue>
-							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -732,19 +732,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>63</Id>
-						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 						<PropertyValue>
-							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 						<PropertyValue>
-							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 						<PropertyValue>
-							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi Â«Energoeffektivnost i razvitie energetikiÂ»</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1012,7 +1012,7 @@
 			</Element>
 			<Element>
 				<Id>79</Id>
-				<Title>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Title>
+				<Title>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>1</Id>
@@ -1156,19 +1156,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>63</Id>
-						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 						<PropertyValue>
-							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 						<PropertyValue>
-							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 						<PropertyValue>
-							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Value>OAO Â«MosGAZÂ» vnedrilo ASU TP SIMATIC S7</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1217,7 +1217,7 @@
 			</Element>
 			<Element>
 				<Id>80</Id>
-				<Title>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Title>
+				<Title>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>1</Id>
@@ -1317,9 +1317,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>265</Id>
-						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 						<PropertyValue>
-							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1365,19 +1365,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>63</Id>
-						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 						<PropertyValue>
-							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 						<PropertyValue>
-							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 						<PropertyValue>
-							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Value>FGUP Â«Konstruktorskoe Byuro im. PavlovaÂ» avtomatizirovalo protsess razrabotki</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1869,7 +1869,7 @@
 			</Element>
 			<Element>
 				<Id>84</Id>
-				<Title>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Title>
+				<Title>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>1</Id>
@@ -1965,9 +1965,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>265</Id>
-						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2013,19 +2013,19 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>63</Id>
-						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 							<Description></Description>
 						</PropertyValue>
-						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 						<PropertyValue>
-							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Value>TSJ GUP Â«Novyie CHerÂ¸mushkiÂ» primenyaet nemetskie standartyi v svoey rabote</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -2074,7 +2074,7 @@
 			</Element>
 			<Element>
 				<Id>85</Id>
-				<Title>Vebinar «Moduli sbora dannyih i vvoda/vyivoda signalov. Resheniya dlya interfeysov RS-485, Ethernet, USB, Profibus i drugih shin.»</Title>
+				<Title>Vebinar Â«Moduli sbora dannyih i vvoda/vyivoda signalov. Resheniya dlya interfeysov RS-485, Ethernet, USB, Profibus i drugih shin.Â»</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>2</Id>
@@ -2228,7 +2228,7 @@
 			</Element>
 			<Element>
 				<Id>86</Id>
-				<Title>Schneider Electric i Gosudarstvennaya korporatsiya po atomnoy energii «Rosatom» rasshiryayut mejdunarodnoe sotrudnichestvo</Title>
+				<Title>Schneider Electric i Gosudarstvennaya korporatsiya po atomnoy energii Â«RosatomÂ» rasshiryayut mejdunarodnoe sotrudnichestvo</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 					<Id>2</Id>

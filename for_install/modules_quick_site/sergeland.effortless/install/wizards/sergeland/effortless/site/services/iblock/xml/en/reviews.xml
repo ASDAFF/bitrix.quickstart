@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T00:03:45">
 	<Metadata>
 		<Id>reviews-effortless-s1</Id>
@@ -353,7 +353,7 @@
 		<Elements>
 			<Element>
 				<Id>14</Id>
-				<Title>Maksim Kalinin [OOO «MRSK TSentr», Nachalnik upravleniya IT]</Title>
+				<Title>Maksim Kalinin [OOO Â«MRSK TSentrÂ», Nachalnik upravleniya IT]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -381,7 +381,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Ot imeni OAO «MRSK TSentr» blagodaryu kollektiv OOO «Effortless» za vzaimovyigodnoe sotrudnichestvo i dobroporyadochnyie partnerskie otnosheniya, proyavlennyie pri vyipolnenii stroitelno-montajnyih i puskonaladochnyih rabot sistemyi sbora i peredachi informatsii na PS 110 kV «SCHelkovskaya».</Value>
+						<Value>Ot imeni OAO Â«MRSK TSentrÂ» blagodaryu kollektiv OOO Â«EffortlessÂ» za vzaimovyigodnoe sotrudnichestvo i dobroporyadochnyie partnerskie otnosheniya, proyavlennyie pri vyipolnenii stroitelno-montajnyih i puskonaladochnyih rabot sistemyi sbora i peredachi informatsii na PS 110 kV Â«SCHelkovskayaÂ».</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -403,9 +403,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OAO «MRSK TSentr», Nachalnik upravleniya IT</Value>
+						<Value>OAO Â«MRSK TSentrÂ», Nachalnik upravleniya IT</Value>
 						<PropertyValue>
-							<Value>OAO «MRSK TSentr», Nachalnik upravleniya IT</Value>
+							<Value>OAO Â«MRSK TSentrÂ», Nachalnik upravleniya IT</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -469,7 +469,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Rabotyi vyipolnyalis dlya semi predpriyatiy OOO «AK Sibur» s obschim kolichestvom tochek ucheta 153 pri ochen jestkih srokah vyipolneniya rabot. Vse rabotyi vyipolnenyi v srok i s nadlejaschim kachestvom. OAO «AK Sibur» rekomenduet OOO «Effortless» kak podryadchika i ispolnitelya rabot po sozdaniyu AIIS KUE.</Value>
+						<Value>Rabotyi vyipolnyalis dlya semi predpriyatiy OOO Â«AK SiburÂ» s obschim kolichestvom tochek ucheta 153 pri ochen jestkih srokah vyipolneniya rabot. Vse rabotyi vyipolnenyi v srok i s nadlejaschim kachestvom. OAO Â«AK SiburÂ» rekomenduet OOO Â«EffortlessÂ» kak podryadchika i ispolnitelya rabot po sozdaniyu AIIS KUE.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -491,9 +491,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «AK Sibur», Direktor departamenta energetiki</Value>
+						<Value>OOO Â«AK SiburÂ», Direktor departamenta energetiki</Value>
 						<PropertyValue>
-							<Value>OOO «AK Sibur», Direktor departamenta energetiki</Value>
+							<Value>OOO Â«AK SiburÂ», Direktor departamenta energetiki</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -533,7 +533,7 @@
 			</Element>
 			<Element>
 				<Id>16</Id>
-				<Title>CHerepanova Oksana [OAO «FSK EES», Tehnicheskiy direktor]</Title>
+				<Title>CHerepanova Oksana [OAO Â«FSK EESÂ», Tehnicheskiy direktor]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -561,7 +561,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Spetsialistyi OOO «Effortless» imeyut mnogoletniy opyit rabotyi i vyisokuyu kvalifikatsiyu v oblasti energetiki i informatsionnyih tehnologiy. Injenerami kompanii byila osuschestvlena postavka, naladka i vvod v ekspluatatsiyu avtomatizirovannyih kondensatornyih ustanovok (AKU) dlya OAO «FSK EES», vse rabotyi byili vyipolnenyi na vyisokom urovne i v kratchayshie sroki.</Value>
+						<Value>Spetsialistyi OOO Â«EffortlessÂ» imeyut mnogoletniy opyit rabotyi i vyisokuyu kvalifikatsiyu v oblasti energetiki i informatsionnyih tehnologiy. Injenerami kompanii byila osuschestvlena postavka, naladka i vvod v ekspluatatsiyu avtomatizirovannyih kondensatornyih ustanovok (AKU) dlya OAO Â«FSK EESÂ», vse rabotyi byili vyipolnenyi na vyisokom urovne i v kratchayshie sroki.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -583,9 +583,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OAO «FSK EES», Tehnicheskiy direktor</Value>
+						<Value>OAO Â«FSK EESÂ», Tehnicheskiy direktor</Value>
 						<PropertyValue>
-							<Value>OAO «FSK EES», Tehnicheskiy direktor</Value>
+							<Value>OAO Â«FSK EESÂ», Tehnicheskiy direktor</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -653,7 +653,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Vyirajayu OOO «Effortless» blagodarnost za realizatsiyu proekta po postroeniyu kompleksnoy sistemyi upravleniya predpriyatiem na baze tipovogo resheniya «1S:UPP 8»</Value>
+						<Value>Vyirajayu OOO Â«EffortlessÂ» blagodarnost za realizatsiyu proekta po postroeniyu kompleksnoy sistemyi upravleniya predpriyatiem na baze tipovogo resheniya Â«1S:UPP 8Â»</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -737,7 +737,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Povyishena upravlyaemost protsessov za schet polucheniya kolichestvennyih pokazateley otsenki deyatelnosti osnovnyih podrazdeleniy iz BD «1S:UPP». «Effortless» znaet svoe delo. Spasibo!</Value>
+						<Value>Povyishena upravlyaemost protsessov za schet polucheniya kolichestvennyih pokazateley otsenki deyatelnosti osnovnyih podrazdeleniy iz BD Â«1S:UPPÂ». Â«EffortlessÂ» znaet svoe delo. Spasibo!</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -877,7 +877,7 @@
 			</Element>
 			<Element>
 				<Id>239</Id>
-				<Title>Aleksandr Maslov [GK «Oboronsnabsbyit»]</Title>
+				<Title>Aleksandr Maslov [GK Â«OboronsnabsbyitÂ»]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -905,7 +905,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Esche na stadii peregovorov sotrudniki «Effortless» prodemonstrirovali dostatochno vyisokiy uroven kompetentsiy. V rezultate myi poluchili otchet, kotoryiy pozvolil nametit dalneyshie shagi po povyisheniyu urovnya bezopasnosti.</Value>
+						<Value>Esche na stadii peregovorov sotrudniki Â«EffortlessÂ» prodemonstrirovali dostatochno vyisokiy uroven kompetentsiy. V rezultate myi poluchili otchet, kotoryiy pozvolil nametit dalneyshie shagi po povyisheniyu urovnya bezopasnosti.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -927,9 +927,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>GK «Oboronsnabsbyit», Nachalnik OPP</Value>
+						<Value>GK Â«OboronsnabsbyitÂ», Nachalnik OPP</Value>
 						<PropertyValue>
-							<Value>GK «Oboronsnabsbyit», Nachalnik OPP</Value>
+							<Value>GK Â«OboronsnabsbyitÂ», Nachalnik OPP</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -969,7 +969,7 @@
 			</Element>
 			<Element>
 				<Id>240</Id>
-				<Title>Lapina Marina [«OAO RosNITI»]</Title>
+				<Title>Lapina Marina [Â«OAO RosNITIÂ»]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -997,7 +997,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Nam trebovalas pomosch v vyibore i vnedrenii DLP-sistemyi. So storonyi «Effortless» rabotali gramotnyie tehnicheskie spetsialistyi. Oni operativno privezli i ustanovili servera, proveli vnedrenie, konsultirovali po vsem voprosam.</Value>
+						<Value>Nam trebovalas pomosch v vyibore i vnedrenii DLP-sistemyi. So storonyi Â«EffortlessÂ» rabotali gramotnyie tehnicheskie spetsialistyi. Oni operativno privezli i ustanovili servera, proveli vnedrenie, konsultirovali po vsem voprosam.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1019,9 +1019,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>«OAO RosNITI», Nachalnik BSA</Value>
+						<Value>Â«OAO RosNITIÂ», Nachalnik BSA</Value>
 						<PropertyValue>
-							<Value>«OAO RosNITI», Nachalnik BSA</Value>
+							<Value>Â«OAO RosNITIÂ», Nachalnik BSA</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1061,7 +1061,7 @@
 			</Element>
 			<Element>
 				<Id>241</Id>
-				<Title>Vyacheslav Novoselov [OOO «GEN StroyUral»]</Title>
+				<Title>Vyacheslav Novoselov [OOO Â«GEN StroyUralÂ»]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1089,7 +1089,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Spetsialistami «Effortless» byili proizvedenyi rabotyi po podklyucheniyu abonentskogo punkta RGAIS k avtomatizirovannoy sisteme EIS GA. Vyirajaem svoyu blagodarnost za kachestvennoe vyipolnenie postavlennyih zadach v kratchayshie sroki.</Value>
+						<Value>Spetsialistami Â«EffortlessÂ» byili proizvedenyi rabotyi po podklyucheniyu abonentskogo punkta RGAIS k avtomatizirovannoy sisteme EIS GA. Vyirajaem svoyu blagodarnost za kachestvennoe vyipolnenie postavlennyih zadach v kratchayshie sroki.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1111,9 +1111,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «GEN StroyUral», Nachalnik upravleniya</Value>
+						<Value>OOO Â«GEN StroyUralÂ», Nachalnik upravleniya</Value>
 						<PropertyValue>
-							<Value>OOO «GEN StroyUral», Nachalnik upravleniya</Value>
+							<Value>OOO Â«GEN StroyUralÂ», Nachalnik upravleniya</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1345,7 +1345,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>YA Vam blagodarna za otvetyi. Vyi uje ne raz pomogli mne kak yurist. Stanovitsya vs¸ ponyatno. Dumayu esche ne raz obraschus k Vam. U menya nastali vremena prosto &quot;bumajnoy volokityi&quot;. Vam jelayu protsvetaniya i blagopoluchiya!</Value>
+						<Value>YA Vam blagodarna za otvetyi. Vyi uje ne raz pomogli mne kak yurist. Stanovitsya vsÂ¸ ponyatno. Dumayu esche ne raz obraschus k Vam. U menya nastali vremena prosto &quot;bumajnoy volokityi&quot;. Vam jelayu protsvetaniya i blagopoluchiya!</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1401,7 +1401,7 @@
 			</Element>
 			<Element>
 				<Id>249</Id>
-				<Title>Aleksandr Mehryakov [OOO «Sfera IT», Moskva]</Title>
+				<Title>Aleksandr Mehryakov [OOO Â«Sfera ITÂ», Moskva]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1429,7 +1429,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Sotrudnichestvom s kompaniey «Effortless» dovolen. Spetsialistyi kompanii vsegda okajut pomosch ne tolko po voprosam buhgalterii, no i po kadrovyim i yuridicheskim voprosam. Krome togo, buhgalterskiy autsorsing pomogaet znachitelno ekonomit sredstva organizatsii.</Value>
+						<Value>Sotrudnichestvom s kompaniey Â«EffortlessÂ» dovolen. Spetsialistyi kompanii vsegda okajut pomosch ne tolko po voprosam buhgalterii, no i po kadrovyim i yuridicheskim voprosam. Krome togo, buhgalterskiy autsorsing pomogaet znachitelno ekonomit sredstva organizatsii.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1451,9 +1451,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «Sfera IT», Moskva</Value>
+						<Value>OOO Â«Sfera ITÂ», Moskva</Value>
 						<PropertyValue>
-							<Value>OOO «Sfera IT», Moskva</Value>
+							<Value>OOO Â«Sfera ITÂ», Moskva</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1501,7 +1501,7 @@
 			</Element>
 			<Element>
 				<Id>250</Id>
-				<Title>Vladimir Golubev [OOO «Tehnologiya», Nijniy Novgorod]</Title>
+				<Title>Vladimir Golubev [OOO Â«TehnologiyaÂ», Nijniy Novgorod]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1529,7 +1529,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Kompaniya «Effortless» provodit buhgalterskoe obslujivanie na ochen vyisokom i professionalnom urovne. Sochetanie povyishennogo kachestva uslug i dostupnost tsen pozvolyaet znachitelno ekonomit vremya i ne zabotitsya o sdache otchetnosti.</Value>
+						<Value>Kompaniya Â«EffortlessÂ» provodit buhgalterskoe obslujivanie na ochen vyisokom i professionalnom urovne. Sochetanie povyishennogo kachestva uslug i dostupnost tsen pozvolyaet znachitelno ekonomit vremya i ne zabotitsya o sdache otchetnosti.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1551,9 +1551,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «Tehnologiya», Nijniy Novgorod</Value>
+						<Value>OOO Â«TehnologiyaÂ», Nijniy Novgorod</Value>
 						<PropertyValue>
-							<Value>OOO «Tehnologiya», Nijniy Novgorod</Value>
+							<Value>OOO Â«TehnologiyaÂ», Nijniy Novgorod</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1589,7 +1589,7 @@
 			</Element>
 			<Element>
 				<Id>251</Id>
-				<Title>Evgeniy CHerepanov [OOO «Uralvid», Ekaterinburg]</Title>
+				<Title>Evgeniy CHerepanov [OOO Â«UralvidÂ», Ekaterinburg]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1617,7 +1617,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>S kompaniey «Effortless» myi sotrudnichaem s sentyabrya 2012 goda. V protsesse sotrudnichestva u nas kachestvenno vedetsya buhgalterskiy uch¸t, sostavlyaetsya buhgalterskaya otchetnost, svoevremenno prohodyat raschetyi s kontragentami i podayutsya otchetyi v fondyi. Horoshee otnoshenie k organizatsiyam, kotoryie tolko nachinayut svoy biznes i nahodyatsya v poiskah buhgaltera!</Value>
+						<Value>S kompaniey Â«EffortlessÂ» myi sotrudnichaem s sentyabrya 2012 goda. V protsesse sotrudnichestva u nas kachestvenno vedetsya buhgalterskiy uchÂ¸t, sostavlyaetsya buhgalterskaya otchetnost, svoevremenno prohodyat raschetyi s kontragentami i podayutsya otchetyi v fondyi. Horoshee otnoshenie k organizatsiyam, kotoryie tolko nachinayut svoy biznes i nahodyatsya v poiskah buhgaltera!</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1639,9 +1639,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «Uralvid», Ekaterinburg</Value>
+						<Value>OOO Â«UralvidÂ», Ekaterinburg</Value>
 						<PropertyValue>
-							<Value>OOO «Uralvid», Ekaterinburg</Value>
+							<Value>OOO Â«UralvidÂ», Ekaterinburg</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1677,7 +1677,7 @@
 			</Element>
 			<Element>
 				<Id>252</Id>
-				<Title>Konovalov YUriy [OAO «PSF Kanalsetstroy», Generalnyiy direktor]</Title>
+				<Title>Konovalov YUriy [OAO Â«PSF KanalsetstroyÂ», Generalnyiy direktor]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1705,7 +1705,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Zaklyuchiv dogovor s «Effortless», rasschityivali poluchit kvalifitsirovannuyu pomosch po provedeniyu obyazatelnogo i initsiativnogo audita, a k svoemu udivleniyu poluchili daje bolshe. Lyudi byili deystvitelno zainteresovanyi nam pomoch!</Value>
+						<Value>Zaklyuchiv dogovor s Â«EffortlessÂ», rasschityivali poluchit kvalifitsirovannuyu pomosch po provedeniyu obyazatelnogo i initsiativnogo audita, a k svoemu udivleniyu poluchili daje bolshe. Lyudi byili deystvitelno zainteresovanyi nam pomoch!</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1727,9 +1727,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OAO «PSF Kanalsetstroy», Generalnyiy direktor</Value>
+						<Value>OAO Â«PSF KanalsetstroyÂ», Generalnyiy direktor</Value>
 						<PropertyValue>
-							<Value>OAO «PSF Kanalsetstroy», Generalnyiy direktor</Value>
+							<Value>OAO Â«PSF KanalsetstroyÂ», Generalnyiy direktor</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1765,7 +1765,7 @@
 			</Element>
 			<Element>
 				<Id>253</Id>
-				<Title>Vitaliy Ivanov [OOO «Stroy-Prestij», Nach. otdela marketinga]</Title>
+				<Title>Vitaliy Ivanov [OOO Â«Stroy-PrestijÂ», Nach. otdela marketinga]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1793,7 +1793,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Pervyiy opyit sotrudnichestva s «Effortless» mojem schitat udachnyim. Nashi nadejdyi na to, chto zakazannyie nami obyazatelnyiy i nalogovyiy audityi budut provedenyi na vyisshem urovne, polnostyu opravdalis.</Value>
+						<Value>Pervyiy opyit sotrudnichestva s Â«EffortlessÂ» mojem schitat udachnyim. Nashi nadejdyi na to, chto zakazannyie nami obyazatelnyiy i nalogovyiy audityi budut provedenyi na vyisshem urovne, polnostyu opravdalis.</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1815,9 +1815,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «Stroy-Prestij», Nach. otdela marketinga</Value>
+						<Value>OOO Â«Stroy-PrestijÂ», Nach. otdela marketinga</Value>
 						<PropertyValue>
-							<Value>OOO «Stroy-Prestij», Nach. otdela marketinga</Value>
+							<Value>OOO Â«Stroy-PrestijÂ», Nach. otdela marketinga</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>
@@ -1861,7 +1861,7 @@
 			</Element>
 			<Element>
 				<Id>254</Id>
-				<Title>Svetlana Potanina [OOO «Meykstroy», Moskva]</Title>
+				<Title>Svetlana Potanina [OOO Â«MeykstroyÂ», Moskva]</Title>
 				<BitrixTags></BitrixTags>
 				<Sections>
 				</Sections>
@@ -1889,7 +1889,7 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>CML2_PREVIEW_TEXT</Id>
-						<Value>Po rezultatam provedennogo spetsialistami «Effortless» audita, myi smogli otsenit rabotu  finansovyih slujb, uluchshit sistemu vnutrennego kontrolya, povyisit uroven informativnosti rukovodstva i kompetentnosti sotrudnikov. Jelaem rosta i protsvetaniya Vashey kompanii!</Value>
+						<Value>Po rezultatam provedennogo spetsialistami Â«EffortlessÂ» audita, myi smogli otsenit rabotu  finansovyih slujb, uluchshit sistemu vnutrennego kontrolya, povyisit uroven informativnosti rukovodstva i kompetentnosti sotrudnikov. Jelaem rosta i protsvetaniya Vashey kompanii!</Value>
 						<Type>html</Type>
 					</PropertyValues>
 					<PropertyValues>
@@ -1911,9 +1911,9 @@
 					</PropertyValues>
 					<PropertyValues>
 						<Id>15</Id>
-						<Value>OOO «Meykstroy», Moskva</Value>
+						<Value>OOO Â«MeykstroyÂ», Moskva</Value>
 						<PropertyValue>
-							<Value>OOO «Meykstroy», Moskva</Value>
+							<Value>OOO Â«MeykstroyÂ», Moskva</Value>
 							<Description></Description>
 						</PropertyValue>
 					</PropertyValues>

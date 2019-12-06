@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<КоммерческаяИнформация ВерсияСхемы="2.021" ДатаФормирования="2016-04-06T00:31:32">
+	<Классификатор>
+		<Ид>vacancies-effortless</Ид>
+		<Наименование>Вакансии</Наименование>
+		<Свойства>
+			<Свойство>
+				<Ид>CML2_ACTIVE</Ид>
+				<Наименование>БитриксАктивность</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_CODE</Ид>
+				<Наименование>Символьный код</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_SORT</Ид>
+				<Наименование>Сортировка</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_FROM</Ид>
+				<Наименование>Начало активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_ACTIVE_TO</Ид>
+				<Наименование>Окончание активности</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_TEXT</Ид>
+				<Наименование>Анонс</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_DETAIL_TEXT</Ид>
+				<Наименование>Описание</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>CML2_PREVIEW_PICTURE</Ид>
+				<Наименование>Картинка анонса</Наименование>
+				<Множественное>false</Множественное>
+			</Свойство>
+			<Свойство>
+				<Ид>51</Ид>
+				<Наименование>Показать форму отправки резюме</Наименование>
+				<Множественное>false</Множественное>
+				<ВариантыЗначений>
+					<Значение>YES</Значение>
+					<Вариант>
+						<Ид>YES</Ид>
+						<Значение>YES</Значение>
+						<ПоУмолчанию>true</ПоУмолчанию>
+						<Сортировка>500</Сортировка>
+					</Вариант>
+				</ВариантыЗначений>
+				<БитриксСортировка>20</БитриксСортировка>
+				<БитриксКод>SHOW_FORM</БитриксКод>
+				<БитриксТипСвойства>L</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>C</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>280</Ид>
+				<Наименование>Иконка</Наименование>
+				<Множественное>false</Множественное>
+				<БитриксСортировка>30</БитриксСортировка>
+				<БитриксКод>ICON</БитриксКод>
+				<БитриксТипСвойства>S</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>50</БитриксКолонок>
+				<БитриксТипСписка>L</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:15:&quot;fa-puzzle-piece&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+			<Свойство>
+				<Ид>281</Ид>
+				<Наименование>Развернуть</Наименование>
+				<Множественное>false</Множественное>
+				<ВариантыЗначений>
+					<Значение>YES</Значение>
+					<Вариант>
+						<Ид>YES</Ид>
+						<Значение>YES</Значение>
+						<ПоУмолчанию>false</ПоУмолчанию>
+						<Сортировка>500</Сортировка>
+					</Вариант>
+				</ВариантыЗначений>
+				<БитриксСортировка>40</БитриксСортировка>
+				<БитриксКод>IN</БитриксКод>
+				<БитриксТипСвойства>L</БитриксТипСвойства>
+				<БитриксСтрок>1</БитриксСтрок>
+				<БитриксКолонок>30</БитриксКолонок>
+				<БитриксТипСписка>C</БитриксТипСписка>
+				<БитриксТипыФайлов></БитриксТипыФайлов>
+				<БитриксКоличествоПолей>5</БитриксКоличествоПолей>
+				<БитриксСвязанныйИнфоблок></БитриксСвязанныйИнфоблок>
+				<БитриксОписаниеРазрешено>false</БитриксОписаниеРазрешено>
+				<БитриксПоискРазрешен>false</БитриксПоискРазрешен>
+				<БитриксФильтрРазрешен>false</БитриксФильтрРазрешен>
+				<БитриксРасширениеТипа></БитриксРасширениеТипа>
+				<БитриксОбязательное>false</БитриксОбязательное>
+				<БитриксЗначениеПоУмолчанию>s:0:&quot;&quot;;</БитриксЗначениеПоУмолчанию>
+				<Сериализовано>1</Сериализовано>
+			</Свойство>
+		</Свойства>
+		<СвойстваЭлементов>
+			<Свойство>
+				<Ид>51</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>280</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+			<Свойство>
+				<Ид>281</Ид>
+				<УмныйФильтр>false</УмныйФильтр>
+				<ТипОтображения></ТипОтображения>
+				<ПоказатьРазвёрнутым>false</ПоказатьРазвёрнутым>
+				<Подсказка></Подсказка>
+			</Свойство>
+		</СвойстваЭлементов>
+		<Группы>
+			<Группа>
+				<Ид>9</Ид>
+				<Наименование>Отдел продаж</Наименование>
+				<Описание>ПРИМЕР SEO ТЕКСТА ДЛЯ РАЗДЕЛА ИНФОБЛОКА. В этом месте будет выведен SEO ТЕКСТ. Текст задается в описании к папке инфоблока и может быть уникальным для каждого раздела инфоблока.</Описание>
+				<БитриксАктивность>true</БитриксАктивность>
+				<БитриксСортировка>10</БитриксСортировка>
+				<БитриксКод></БитриксКод>
+				<БитриксКартинка></БитриксКартинка>
+				<БитриксКартинкаДетальная></БитриксКартинкаДетальная>
+				<Группы>
+				</Группы>
+			</Группа>
+			<Группа>
+				<Ид>10</Ид>
+				<Наименование>Технический отдел</Наименование>
+				<Описание>ПРИМЕР SEO ТЕКСТА ДЛЯ РАЗДЕЛА ИНФОБЛОКА. В этом месте будет выведен SEO ТЕКСТ. Текст задается в описании к папке инфоблока и может быть уникальным для каждого раздела инфоблока.</Описание>
+				<БитриксАктивность>true</БитриксАктивность>
+				<БитриксСортировка>20</БитриксСортировка>
+				<БитриксКод></БитриксКод>
+				<БитриксКартинка></БитриксКартинка>
+				<БитриксКартинкаДетальная></БитриксКартинкаДетальная>
+				<Группы>
+				</Группы>
+			</Группа>
+		</Группы>
+	</Классификатор>
+	<Каталог>
+		<Ид>vacancies-effortless</Ид>
+		<ИдКлассификатора>vacancies-effortless</ИдКлассификатора>
+		<Наименование>Вакансии</Наименование>
+		<БитриксКод>vacancies-effortless</БитриксКод>
+		<БитриксСортировка>120</БитриксСортировка>
+		<БитриксURLСписок>#</БитриксURLСписок>
+		<БитриксURLДеталь>#</БитриксURLДеталь>
+		<БитриксURLРаздел>#</БитриксURLРаздел>
+		<БитриксURLКанонический></БитриксURLКанонический>
+		<БитриксКартинка></БитриксКартинка>
+		<БитриксИндексироватьЭлементы>false</БитриксИндексироватьЭлементы>
+		<БитриксИндексироватьРазделы>false</БитриксИндексироватьРазделы>
+		<БитриксДокументооборот>false</БитриксДокументооборот>
+		<БитриксПодписи>
+			<БитриксПодпись>
+				<Ид>ELEMENT_NAME</Ид>
+				<Значение>Вакансия</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENTS_NAME</Ид>
+				<Значение>Вакансии</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_ADD</Ид>
+				<Значение>Добавить вакансию</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_EDIT</Ид>
+				<Значение>Изменить вакансию</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>ELEMENT_DELETE</Ид>
+				<Значение>Удалить вакансию</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_NAME</Ид>
+				<Значение>Раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTIONS_NAME</Ид>
+				<Значение>Разделы</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_ADD</Ид>
+				<Значение>Добавить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_EDIT</Ид>
+				<Значение>Изменить раздел</Значение>
+			</БитриксПодпись>
+			<БитриксПодпись>
+				<Ид>SECTION_DELETE</Ид>
+				<Значение>Удалить раздел</Значение>
+			</БитриксПодпись>
+		</БитриксПодписи>
+		<Товары>
+			<Товар>
+				<Ид>38</Ид>
+				<Наименование>Начальник отдела региональных продаж</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>9</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>10</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-send</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-send</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>39</Ид>
+				<Наименование>Менеджер по работе с корпоративными клиентами</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>9</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>20</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-puzzle-piece</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-puzzle-piece</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>40</Ид>
+				<Наименование>Менеджер продаж консалтинговых услуг</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>9</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>30</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-briefcase</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-briefcase</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>42</Ид>
+				<Наименование>Программист WIndows</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>10</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>10</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-forumbee</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-forumbee</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>43</Ид>
+				<Наименование>Программист Linux</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>10</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>20</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-puzzle-piece</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-puzzle-piece</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+			<Товар>
+				<Ид>44</Ид>
+				<Наименование>Администратор Linux</Наименование>
+				<БитриксТеги></БитриксТеги>
+				<Группы>
+					<Ид>10</Ид>
+				</Группы>
+				<Картинка></Картинка>
+				<ЗначенияСвойств>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE</Ид>
+						<Значение>true</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_CODE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_SORT</Ид>
+						<Значение>30</Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_FROM</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_ACTIVE_TO</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_TEXT</Ид>
+						<Значение>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Описание вакансии:&lt;/strong&gt;
+		&lt;p&gt;
+			Ut sit amet dignissim libero. Integer scelerisque, eros interdum suscipit rhoncus, mauris felis eleifend libero, a adipiscing arcu sapien eu nisi. Proin vehicula lacus non lacus lobortis ultricies. Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+		&lt;p&gt;
+			Nulla dui metus, viverra in sodales a, rutrum sed metus. Cras blandit vehicula ligula et fringilla. Suspendisse convallis rutrum arcu nec rutrum. Pellentesque sed felis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+ &lt;strong class=&quot;mt-10 mb-10 btn-block&quot;&gt;Требования:&lt;/strong&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; enim eiusmod high&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; Wolf moon officia aute cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-female&quot;&gt;&lt;/i&gt; nim pariatur cliche reprehenderit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-flask&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-object-ungroup&quot;&gt;&lt;/i&gt; 3 wolf moon&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-street-view&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-paper-plane-o&quot;&gt;&lt;/i&gt; enim eiusmod high life accusamus&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt; 3 wolf moon officia&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-asterisk&quot;&gt;&lt;/i&gt; Quinoa nesciunt laborum eiusmod&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_DETAIL_TEXT</Ид>
+						<Значение></Значение>
+						<Тип>html</Тип>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>CML2_PREVIEW_PICTURE</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>51</Ид>
+						<Значение>YES</Значение>
+						<ЗначениеСвойства>
+							<Значение>YES</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>280</Ид>
+						<Значение>fa-linux</Значение>
+						<ЗначениеСвойства>
+							<Значение>fa-linux</Значение>
+							<Описание></Описание>
+						</ЗначениеСвойства>
+					</ЗначенияСвойства>
+					<ЗначенияСвойства>
+						<Ид>281</Ид>
+						<Значение></Значение>
+					</ЗначенияСвойства>
+				</ЗначенияСвойств>
+			</Товар>
+		</Товары>
+	</Каталог>
+</КоммерческаяИнформация>

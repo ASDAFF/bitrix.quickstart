@@ -1,0 +1,4 @@
+<?
+$sSectionName = "Actions";
+$arDirProperties = Array();
+?>

@@ -1,0 +1,4 @@
+<?
+$sSectionName = "History";
+$arDirProperties = Array();
+?>

@@ -1,0 +1,1 @@
+<span class="phone"><i class="fa fa-phone"></i> #PHONE#</span>

@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Actions", 
+		"#SITE_DIR#info/actions/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"News", 
+		"#SITE_DIR#info/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Articles", 
+		"#SITE_DIR#info/articles/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Works", 
+		"#SITE_DIR#info/works/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Photo", 
+		"#SITE_DIR#info/photo/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Price", 
+		"#SITE_DIR#info/price/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Examples", 
+		"#SITE_DIR#info/examples/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+);
+?>

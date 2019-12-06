@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T01:45:39">
+	<Metadata>
+		<Id>actions-effortless</Id>
+		<Title>Actions</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>149</Id>
+				<Title>Photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>PHOTO_TOP</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>272</Id>
+				<Title>Description photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>PHOTO_TOP_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>273</Id>
+				<Title>Autoplay photo at the top</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>30</BitrixSort>
+				<BitrixCode>PHOTO_TOP_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>150</Id>
+				<Title>Photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>40</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>274</Id>
+				<Title>The link to the photo</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>50</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_HREF</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>151</Id>
+				<Title>Description photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>60</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>275</Id>
+				<Title>Autoplay photo at the bottom</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>70</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>152</Id>
+				<Title>Documents</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>90</BitrixSort>
+				<BitrixCode>DOCUMENTS</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#DOCUMENTS_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>153</Id>
+				<Title>Header for documents</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>DOCUMENTS_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:9:&quot;Documents&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>154</Id>
+				<Title>Show social bookmarks</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>110</BitrixSort>
+				<BitrixCode>USE_SHARE</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>155</Id>
+				<Title>Show form</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>120</BitrixSort>
+				<BitrixCode>SHOW_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>156</Id>
+				<Title>Text on the button</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>130</BitrixSort>
+				<BitrixCode>TEXT_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:15:&quot;To order services&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>157</Id>
+				<Title>Services</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>140</BitrixSort>
+				<BitrixCode>MORE_SERVICES</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#SERVICES_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>158</Id>
+				<Title>Header for sevices</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>150</BitrixSort>
+				<BitrixCode>MORE_SERVICES_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:15:&quot;Sevices&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>160</Id>
+				<Title>Staff</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>160</BitrixSort>
+				<BitrixCode>MORE_STAFF</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#STAFF_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>161</Id>
+				<Title>Header for staff</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>170</BitrixSort>
+				<BitrixCode>MORE_STAFF_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:16:&quot;Staff&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>162</Id>
+				<Title>Products</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>180</BitrixSort>
+				<BitrixCode>MORE_PRODUCTS</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#CATALOG_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>163</Id>
+				<Title>Header for products</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>190</BitrixSort>
+				<BitrixCode>MORE_PRODUCTS_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:6:&quot;Products&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>164</Id>
+				<Title>Show the video in the preview</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>200</BitrixSort>
+				<BitrixCode>PREVIEW_VIDEO</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>165</Id>
+				<Title>Link on video</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>210</BitrixSort>
+				<BitrixCode>HREF_VIDEO</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>166</Id>
+				<Title>License</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>220</BitrixSort>
+				<BitrixCode>MORE_LICENSE</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#LICENSES_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>167</Id>
+				<Title>Header for license</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>230</BitrixSort>
+				<BitrixCode>MORE_LICENSE_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:8:&quot;License&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>169</Id>
+				<Title>Active from</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>240</BitrixSort>
+				<BitrixCode>ACTIVE_FROM</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType>DateTime</BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>N;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>170</Id>
+				<Title>Active to</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>250</BitrixSort>
+				<BitrixCode>ACTIVE_TO</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType>DateTime</BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>N;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>149</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>272</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>273</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>150</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>274</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>151</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>275</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>152</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>153</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>154</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>155</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>156</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>157</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>158</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>160</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>161</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>162</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>163</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>164</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>165</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>166</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>167</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>169</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>U</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>170</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>U</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+		</ElementProperties>
+		<GroupProperties>
+			<Property>
+				<Id>UF_SEO_DESCRIPTION</Id>
+				<Title>UF_SEO_DESCRIPTION</Title>
+				<Sort>100</Sort>
+				<Multiple>false</Multiple>
+				<BitrixPropertyType>string</BitrixPropertyType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixShowInList>true</BitrixShowInList>
+				<BitrixInplaceEditInList>true</BitrixInplaceEditInList>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixSettings>a:6:{s:4:&quot;SIZE&quot;;i:50;s:4:&quot;ROWS&quot;;i:3;s:6:&quot;REGEXP&quot;;s:0:&quot;&quot;;s:10:&quot;MIN_LENGTH&quot;;i:0;s:10:&quot;MAX_LENGTH&quot;;i:0;s:13:&quot;DEFAULT_VALUE&quot;;s:0:&quot;&quot;;}</BitrixSettings>
+			</Property>
+		</GroupProperties>
+		<Sections>
+			<Section>
+				<Id>38</Id>
+				<Title>Current actions</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>current</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>UF_SEO_DESCRIPTION</Id>
+						<Value>EXAMPLE SEO TEXT FOR THE SECTION OF THE INFORMATION BLOCK. This place will display SEO TEXT. The text is set in the properties folder of the information block and can be unique for each section of the information block.</Value>
+					</PropertyValues>
+				</PropertiesValues>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>39</Id>
+				<Title>Old actions</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>archive</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>UF_SEO_DESCRIPTION</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+				<Sections>
+				</Sections>
+			</Section>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>actions-effortless</Id>
+		<MetadataId>actions-effortless</MetadataId>
+		<Title>Actions</Title>
+		<BitrixCode>actions-effortless</BitrixCode>
+		<BitrixSort>220</BitrixSort>
+		<BitrixListURL>#SITE_DIR#info/actions/#IBLOCK_ID#/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#info/actions/#SECTION_CODE#/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#info/actions/#SECTION_CODE#/</BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Elements</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Modify element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Modify section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>255</Id>
+				<Title>Pervyiy mesyats vedeniya buhucheta besplatno</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>38</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>pervyy-mesyats-vedeniya-bukhucheta-besplatno</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>10</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>actions_files/iblock/93f/actions_5.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>149</Id>
+						<Value>actions_files/iblock/dbe/image_7.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/dbe/image_7.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>actions_files/iblock/b17/image_29.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/b17/image_29.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>272</Id>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>273</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>150</Id>
+						<Value>actions_files/iblock/f4f/image_12.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/f4f/image_12.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>actions_files/iblock/0ba/image_15.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/0ba/image_15.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>actions_files/iblock/7a6/image_36.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/7a6/image_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>actions_files/iblock/d09/image_41.jpg</Value>
+						<PropertyValue>
+							<Value>actions_files/iblock/d09/image_41.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>274</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>151</Id>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+						<PropertyValue>
+							<Value>Pervyiy mesyats vedeniya buhucheta besplatno</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>275</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>152</Id>
+						<Value>213</Value>
+						<PropertyValue>
+							<Value>213</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>214</Value>
+						<PropertyValue>
+							<Value>214</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>153</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>154</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>155</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>156</Id>
+						<Value>To order services</Value>
+						<PropertyValue>
+							<Value>To order services</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>157</Id>
+						<Value>226</Value>
+						<PropertyValue>
+							<Value>226</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>158</Id>
+						<Value>Services stocks</Value>
+						<PropertyValue>
+							<Value>Services stocks</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>160</Id>
+						<Value>72</Value>
+						<PropertyValue>
+							<Value>72</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>161</Id>
+						<Value>Our adviser</Value>
+						<PropertyValue>
+							<Value>Our adviser</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>162</Id>
+						<Value>187</Value>
+						<PropertyValue>
+							<Value>187</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>37</Value>
+						<PropertyValue>
+							<Value>37</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>163</Id>
+						<Value>Offer to buy</Value>
+						<PropertyValue>
+							<Value>Offer to buy</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>164</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>165</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>166</Id>
+						<Value>59</Value>
+						<PropertyValue>
+							<Value>59</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>167</Id>
+						<Value>Our licenses</Value>
+						<PropertyValue>
+							<Value>Our licenses</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>169</Id>
+						<Value>01/01/2015 12:00:00 am</Value>
+						<PropertyValue>
+							<Value>01/01/2015 12:00:00 am</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>170</Id>
+						<Value>12/31/2015 12:00:00 am</Value>
+						<PropertyValue>
+							<Value>12/31/2015 12:00:00 am</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>256</Id>
+				<Title>Godovoy abonement Sbis++ v podarok</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>38</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>godovoy-abonement-sbis-v-podarok</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>30</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>actions_files/iblock/f4c/actions_1.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>149</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>272</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>273</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>150</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>274</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>151</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>275</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>152</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>153</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>154</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>155</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>156</Id>
+						<Value>To order services</Value>
+						<PropertyValue>
+							<Value>To order services</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>157</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>158</Id>
+						<Value>Services stocks</Value>
+						<PropertyValue>
+							<Value>Services stocks</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>160</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>161</Id>
+						<Value>Nashi spetsialistyi</Value>
+						<PropertyValue>
+							<Value>Nashi spetsialistyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>162</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>163</Id>
+						<Value>Products</Value>
+						<PropertyValue>
+							<Value>Products</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>164</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>165</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>166</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>167</Id>
+						<Value>Licenses</Value>
+						<PropertyValue>
+							<Value>Licenses</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>169</Id>
+						<Value>02/28/2015 12:00:00 am</Value>
+						<PropertyValue>
+							<Value>02/28/2015 12:00:00 am</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>170</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>257</Id>
+				<Title>Uspey zaregistrirovat OOO «Pod klyuch» za 8000 rub, tsena deystvitelna do kontsa aprelya!</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>39</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>uspey-zaregistrirovat-ooo-pod-klyuch-za-8000-rub-tsena-deystvitelna-do-kontsa-aprelya</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>20</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>actions_files/iblock/a8f/actions_4.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>149</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>272</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>273</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>150</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>274</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>151</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>275</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>152</Id>
+						<Value>213</Value>
+						<PropertyValue>
+							<Value>213</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>214</Value>
+						<PropertyValue>
+							<Value>214</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>153</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>154</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>155</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>156</Id>
+						<Value>To order services</Value>
+						<PropertyValue>
+							<Value>To order services</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>157</Id>
+						<Value>235</Value>
+						<PropertyValue>
+							<Value>235</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>158</Id>
+						<Value>Services stocks</Value>
+						<PropertyValue>
+							<Value>Services stocks</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>160</Id>
+						<Value>68</Value>
+						<PropertyValue>
+							<Value>68</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>69</Value>
+						<PropertyValue>
+							<Value>69</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>161</Id>
+						<Value>Our adviser</Value>
+						<PropertyValue>
+							<Value>Our adviser</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>162</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>163</Id>
+						<Value>Products</Value>
+						<PropertyValue>
+							<Value>Products</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>164</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>165</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>166</Id>
+						<Value>59</Value>
+						<PropertyValue>
+							<Value>59</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>167</Id>
+						<Value>Our licenses</Value>
+						<PropertyValue>
+							<Value>Our licenses</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>169</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>170</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

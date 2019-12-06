@@ -1,0 +1,14 @@
+<?
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Будет удалена вся информация, связанная с этой записью. Продолжить?";
+
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_DETAIL"] = "Подробнее";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_SORT"] = "Сортировка";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_NAME_DESC"] = "название - по убыванию";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_NAME_ASC"] = "название - по возрастанию";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_DATE_DESC"] = "дата - по убыванию";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_DATE_ASC"] = "дата - по возрастанию";
+
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT1"] = "комментариев";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT2"] = "комментарий";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT3"] = "комментария";
+?>

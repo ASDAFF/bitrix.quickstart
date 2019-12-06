@@ -23,7 +23,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });
@@ -39,7 +39,7 @@ jQuery(function(){
 <?endif?>
 <?if( !empty($arResult["DISPLAY_ACTIVE_FROM"]) || !empty($arResult["DISPLAY_ACTIVE_TO"]) ):?>
 <div class="tags mb-10">
-	<span class="badge transparent-bg"><?if(!empty($arResult["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_FROM")?> <?=$arResult["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arResult["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_TO")?> <?=$arResult["DISPLAY_ACTIVE_TO"]?><?endif?></span>
+	<span class="badge transparent-bg"><?if(!empty($arResult["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_FROM")?> <?=$arResult["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arResult["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_TO")?> <?=$arResult["DISPLAY_ACTIVE_TO"]?><?endif?></span>
 </div>
 <?endif?>
 <h1 class="page-title mb-15"><?=$arResult["NAME"]?></h1>
@@ -90,13 +90,13 @@ jQuery(function(){
 	<div class="col-md-12">
 		<div id="results-callback">
 			<div class="alert alert-danger" id="beforesend-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_BEFORESEND")?>
+				<?=GetMessage("QUICK_EFFORTLESS_ACTIONS_BEFORESEND")?>
 			</div>
 			<div class="alert alert-danger" id="error-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_ERROR")?>
+				<?=GetMessage("QUICK_EFFORTLESS_ACTIONS_ERROR")?>
 			</div> 
 			<div class="alert alert-success" id="success-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_SUCCESS")?>
+				<?=GetMessage("QUICK_EFFORTLESS_ACTIONS_SUCCESS")?>
 			</div>
 		</div>
 	</div>
@@ -107,13 +107,13 @@ jQuery(function(){
 		<input type="hidden" name="CALLBACK[TITLE]" value="<?=$arResult["NAME"]?>"/>
 		<div class="col-md-4 col-sm-6">
 			<div class="form-group has-feedback">
-				<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_NAME")?>" class="form-control req">
+				<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_ACTIONS_NAME")?>" class="form-control req">
 				<i class="fa fa-user form-control-feedback"></i>
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<div class="form-group has-feedback">
-				<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
+				<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_ACTIONS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
 				<i class="fa fa-phone form-control-feedback"></i>
 			</div>
 		</div>
@@ -158,7 +158,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });
@@ -197,7 +197,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a>
 			</div>
 		</div>
 		<?elseif(is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -217,7 +217,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a>
 			</div>
 		</div>			
 		<?else:?>
@@ -225,7 +225,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a>
 			</div>
 		</div>
 		<?endif?>
@@ -313,12 +313,12 @@ jQuery(function(){
 		<div class="col-lg-9 col-md-8 col-sm-8">
 			<div class="overlay-container">
 				<div class="tags">
-					<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
-					<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_NEW")?></span><?endif?>
-					<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_PRESENCE")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_EXPECTED")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_UNDER")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_UNAVAILABLE")?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_NEW")?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_PRESENCE")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_EXPECTED")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_UNDER")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_UNAVAILABLE")?></span><?endif?>
 				</div>
 				<h4><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h4>
 				<?=$arItem["PREVIEW_TEXT"]?>
@@ -326,8 +326,8 @@ jQuery(function(){
 				<div class="clearfix">
 					<?if(!empty($arItem["PROPERTIES"]["PRICE"]["VALUE"])):?><span class="price"><?=$arItem["PROPERTIES"]["PRICE"]["VALUE"]?></span> <?=$arItem["PROPERTIES"]["CURRENCY"]["~VALUE"]?> <?if(!empty($arItem["PROPERTIES"]["PRICE_OLD"]["VALUE"])):?><del><?=$arItem["PROPERTIES"]["PRICE_OLD"]["VALUE"]?></del><?endif?><?endif?>
 					
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-default btn-sm hidden-xs pull-right"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white btn-sm hidden-xs pull-right"><i class="fa fa-shopping-cart pr-10"></i> <?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_BUY")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-default btn-sm hidden-xs pull-right"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white btn-sm hidden-xs pull-right"><i class="fa fa-shopping-cart pr-10"></i> <?=GetMessage("QUICK_EFFORTLESS_ACTIONS_BUY")?></a>
 					
 					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white hidden-sm hidden-md hidden-lg pull-right"><i class="fa fa-shopping-cart"></i></a>
 				</div>

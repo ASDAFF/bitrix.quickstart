@@ -1,4 +1,4 @@
-<div class="section parallax parallax-bg-3 <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BG", "light-translucent-bg", SITE_ID))?>">
+<div class="section parallax parallax-bg-3 <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["CALLBACK_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["CALLBACK_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_CALLBACK_BG", "light-translucent-bg", SITE_ID))?>">
 	<div class="container">
 		<div class="call-to-action">
 			<div class="row">
@@ -8,7 +8,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="text-center">
-						<a href="#" class="btn btn-lg <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "SERGELAND_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID))?>" data-toggle="modal" data-target=".FEEDBACK">Ask question</a>
+						<a href="#" class="btn btn-lg <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["CALLBACK_BUTTON"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["CALLBACK_BUTTON"] : COption::GetOptionString("effortless", "QUICK_THEME_CALLBACK_BUTTON", "btn-default", SITE_ID))?>" data-toggle="modal" data-target=".FEEDBACK">Ask question</a>
 					</div>
 				</div>
 			</div>

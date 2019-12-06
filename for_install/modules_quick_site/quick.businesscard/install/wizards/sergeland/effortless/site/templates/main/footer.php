@@ -1,6 +1,6 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <?IncludeTemplateLangFile(__FILE__);?>
-	<footer class="<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_FOOTER_BG", "dark", SITE_ID))?>">
+	<footer class="<?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_FOOTER_BG", "dark", SITE_ID))?>">
 		<div class="footer">
 			<div class="container">
 				<div class="row">

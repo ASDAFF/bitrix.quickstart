@@ -114,7 +114,7 @@ $APPLICATION->SetTitle("Price");
 		<td valign="bottom" nowrap="nowrap"><p align="center">1800</p></td>
 	</tr>
 	<tr>
-		<td valign="bottom" nowrap="nowrap"><p>от20 to 50</p></td>
+		<td valign="bottom" nowrap="nowrap"><p>РѕС‚20 to 50</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2400</p></td>
 		<td valign="bottom" nowrap="nowrap"><p align="center">2800</p></td>

@@ -28,7 +28,7 @@ if(!empty($arResult["~ITEMS"])):
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>
 			<?elseif(is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -48,7 +48,7 @@ if(!empty($arResult["~ITEMS"])):
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>			
 			<?else:?>
@@ -56,7 +56,7 @@ if(!empty($arResult["~ITEMS"])):
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>
 			<?endif?>
@@ -67,7 +67,7 @@ if(!empty($arResult["~ITEMS"])):
 	<div class="mb-20">
 		<div class="row">
 			<div class="text-center">
-			<a href="<?=$arSection["PATH"]["SECTION_PAGE_URL"]?>" class="btn btn-sm btn-white margin-top-clear"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_SECTION_PAGE_URL")?> <i class="fa fa-arrow-circle-right pl-5"></i></a>
+			<a href="<?=$arSection["PATH"]["SECTION_PAGE_URL"]?>" class="btn btn-sm btn-white margin-top-clear"><?=GetMessage("QUICK_EFFORTLESS_WORKS_SECTION_PAGE_URL")?> <i class="fa fa-arrow-circle-right pl-5"></i></a>
 			</div>
 		</div>
 	</div>

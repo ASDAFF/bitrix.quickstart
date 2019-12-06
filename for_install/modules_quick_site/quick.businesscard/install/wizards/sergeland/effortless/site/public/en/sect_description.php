@@ -75,13 +75,13 @@
 		"SET_BROWSER_TITLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
 		"PAGER_TITLE" => "",
-		"AUTOPLAY" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)),
+		"AUTOPLAY" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "QUICK_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)),
 	),
 	false
 );?>
 <div class="block">
 	<blockquote class="margin-clear">
 		<p>Who is afraid of failure, that limits their activities.</p>	
-		<footer><cite title="Ãåíðè Ôîðä">Henry Ford</cite></footer>
+		<footer><cite title="Ð“ÐµÐ½Ñ€Ð¸ Ð¤Ð¾Ñ€Ð´">Henry Ford</cite></footer>
 	</blockquote>
 </div>

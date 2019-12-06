@@ -1,4 +1,4 @@
-<div class="section <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_BG", "gray-bg", SITE_ID))?> clearfix">
+<div class="section <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_TESTIMONIALS_BG", "gray-bg", SITE_ID))?> clearfix">
 	<?$APPLICATION->IncludeComponent("bitrix:catalog.section", "testimonials", Array(
 			"IBLOCK_TYPE" => "#IBLOCK_TYPE_REVIEWS#",
 			"IBLOCK_ID" => "#IBLOCK_ID_REVIEWS#",
@@ -72,8 +72,8 @@
 			"SET_BROWSER_TITLE" => "Y",
 			"BASKET_URL" => "/personal/basket.php",
 			"PAGER_TITLE" => "",
-			"AUTOPLAY" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)),
-			"CIRCLE_IMG" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)),
+			"AUTOPLAY" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_TESTIMONIALS_VER", "content-slider-with-controls-autoplay", SITE_ID)),
+			"CIRCLE_IMG" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "QUICK_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)),
 		),
 		false,
 		array("ACTIVE_COMPONENT" => "Y")

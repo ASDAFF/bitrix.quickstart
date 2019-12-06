@@ -1,1 +1,1 @@
-<p>Copyright ©2016 <a href="#">SergeLand</a>. All rights reserved.</p>
+<p>Copyright Â©2016 <a href="#">SergeLand</a>. All rights reserved.</p>

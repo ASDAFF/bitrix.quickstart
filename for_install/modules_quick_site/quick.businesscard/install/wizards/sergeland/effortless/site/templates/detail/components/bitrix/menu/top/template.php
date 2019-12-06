@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<span class="sr-only"><?=GetMessage("SERGELAND_EFFORTLESS_MENU")?></span>
+					<span class="sr-only"><?=GetMessage("QUICK_EFFORTLESS_MENU")?></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>

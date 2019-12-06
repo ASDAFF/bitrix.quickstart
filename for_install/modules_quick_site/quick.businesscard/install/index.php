@@ -42,7 +42,7 @@ Class quick_effortless extends CModule
 		global $DB, $DBType, $APPLICATION;
 
 		RegisterModule("quick.effortless");
-		RegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CSergelandeffortless", "ShowPanel");
+		RegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CQuickeffortless", "ShowPanel");
 
 		return true;
 	}
@@ -51,7 +51,7 @@ Class quick_effortless extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		UnRegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CSergelandeffortless", "ShowPanel"); 
+		UnRegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CQuickeffortless", "ShowPanel");
 		UnRegisterModule("quick.effortless");
 
 		return true;

@@ -26,6 +26,6 @@ if(!function_exists(number_ending))
 global $MESS; @include(__DIR__.'/lang/'.LANGUAGE_ID.'/template.php');
 
 foreach($arResult['SECTIONS'] as &$arSection)
-	$arSection["NUMBER"]["TEXT"] = number_ending($arSection['ELEMENT_CNT'], GetMessage("SERGELAND_EFFORTLESS_NUMBER1"), GetMessage("SERGELAND_EFFORTLESS_NUMBER2"), GetMessage("SERGELAND_EFFORTLESS_NUMBER3"));
+	$arSection["NUMBER"]["TEXT"] = number_ending($arSection['ELEMENT_CNT'], GetMessage("QUICK_EFFORTLESS_NUMBER1"), GetMessage("QUICK_EFFORTLESS_NUMBER2"), GetMessage("QUICK_EFFORTLESS_NUMBER3"));
 
 ?>

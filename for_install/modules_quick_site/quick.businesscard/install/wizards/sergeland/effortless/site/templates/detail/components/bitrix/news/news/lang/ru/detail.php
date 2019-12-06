@@ -1,4 +1,4 @@
 <?
-$MESS ['T_NEWS_DETAIL_BACK'] = "Âîçâðàò ê ñïèñêó";
-$MESS ['CATEGORIES'] = "Ìàòåðèàëû ïî òåìå:";
+$MESS ['T_NEWS_DETAIL_BACK'] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
+$MESS ['CATEGORIES'] = "ÐœÐ°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ñ‹ Ð¿Ð¾ Ñ‚ÐµÐ¼Ðµ:";
 ?>

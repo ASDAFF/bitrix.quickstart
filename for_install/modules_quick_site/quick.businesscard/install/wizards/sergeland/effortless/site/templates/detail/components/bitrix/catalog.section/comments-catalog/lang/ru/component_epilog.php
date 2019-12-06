@@ -1,32 +1,32 @@
 <?
-$MESS["T_CATALOG_DETAIL_BACK"] = "Íàçàä â ðàçäåë";
+$MESS["T_CATALOG_DETAIL_BACK"] = "ÐÐ°Ð·Ð°Ð´ Ð² Ñ€Ð°Ð·Ð´ÐµÐ»";
 
-$MESS["SERGELAND_SPHINX_CATALOG_TAB_DESCRIPTION"] = "Îïèñàíèå";
-$MESS["SERGELAND_SPHINX_CATALOG_TAB_SPECIFICATIONS"] = "Õàðàêòåðèñòèêè";
-$MESS["SERGELAND_SPHINX_CATALOG_TAB_DOCUMENTS"] = "Äîêóìåíòû";
-$MESS["SERGELAND_SPHINX_CATALOG_TAB_COMMENTS"] = "Êîììåíòàðèè";
+$MESS["QUICK_SPHINX_CATALOG_TAB_DESCRIPTION"] = "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ";
+$MESS["QUICK_SPHINX_CATALOG_TAB_SPECIFICATIONS"] = "Ð¥Ð°Ñ€Ð°ÐºÑ‚ÐµÑ€Ð¸ÑÑ‚Ð¸ÐºÐ¸";
+$MESS["QUICK_SPHINX_CATALOG_TAB_DOCUMENTS"] = "Ð”Ð¾ÐºÑƒÐ¼ÐµÐ½Ñ‚Ñ‹";
+$MESS["QUICK_SPHINX_CATALOG_TAB_COMMENTS"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸";
 
-$MESS["SERGELAND_SPHINX_CATALOG_ACTION"] = "Àêöèÿ";
-$MESS["SERGELAND_SPHINX_CATALOG_NEW"] = "Íîâèíêà";
+$MESS["QUICK_SPHINX_CATALOG_ACTION"] = "ÐÐºÑ†Ð¸Ñ";
+$MESS["QUICK_SPHINX_CATALOG_NEW"] = "ÐÐ¾Ð²Ð¸Ð½ÐºÐ°";
 
-$MESS["SERGELAND_SPHINX_CATALOG_PRESENCE"] = "Â íàëè÷èè";
-$MESS["SERGELAND_SPHINX_CATALOG_EXPECTED"] = "Îæèäàåòñÿ";
-$MESS["SERGELAND_SPHINX_CATALOG_UNDER"] = "Ïîä çàêàç";
-$MESS["SERGELAND_SPHINX_CATALOG_UNAVAILABLE"] = "Îòñóòñòâóåò";
+$MESS["QUICK_SPHINX_CATALOG_PRESENCE"] = "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸";
+$MESS["QUICK_SPHINX_CATALOG_EXPECTED"] = "ÐžÐ¶Ð¸Ð´Ð°ÐµÑ‚ÑÑ";
+$MESS["QUICK_SPHINX_CATALOG_UNDER"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·";
+$MESS["QUICK_SPHINX_CATALOG_UNAVAILABLE"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚";
 
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_ERROR"] = "Îøèáêà îòïðàâêè êîììåíòàðèÿ. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_SUCCESS"] = "Ñïàñèáî, âàø êîììåíòàðèé áóäåò îïóáëèêîâàí ïîñëå ïðîâåðêè.";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°Ñˆ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ Ð±ÑƒÐ´ÐµÑ‚ Ð¾Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ¾Ð²Ð°Ð½ Ð¿Ð¾ÑÐ»Ðµ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸.";
 
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_NAME"] = "Âàøå èìÿ:";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_NAME_PLACEHOLDER"] = "Èìÿ:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_NAME_PLACEHOLDER"] = "Ð˜Ð¼Ñ:";
 
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_EMAIL"] = "Âàø Email:";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_EMAIL_PLACEHOLDER"] = "Email:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_EMAIL"] = "Ð’Ð°Ñˆ Email:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_EMAIL_PLACEHOLDER"] = "Email:";
 
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_COMMENT"] = "Âàø êîììåíòàðèé:";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_COMMENT_PLACEHOLDER"] = "Êîììåíòàðèé:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_COMMENT"] = "Ð’Ð°Ñˆ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹:";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_COMMENT_PLACEHOLDER"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹:";
 
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_SEND"] = "Îòïðàâèòü";
-$MESS["SERGELAND_SPHINX_CATALOG_COMMENTS_REQ"] = "Îáÿçàòåëüíûå äëÿ çàïîëíåíèÿ ïîëÿ";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_SEND"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS["QUICK_SPHINX_CATALOG_COMMENTS_REQ"] = "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð´Ð»Ñ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»Ñ";
 ?>

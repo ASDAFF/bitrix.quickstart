@@ -1,4 +1,4 @@
 <?
-$MESS ['SERGELAND_EFFORTLESS_MENU'] = "Ìåíþ";
-$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Äîñòóï çàïðåùåí";
+$MESS ['QUICK_EFFORTLESS_MENU'] = "ÐœÐµÐ½ÑŽ";
+$MESS ['MENU_ITEM_ACCESS_DENIED'] = "Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰ÐµÐ½";
 ?>

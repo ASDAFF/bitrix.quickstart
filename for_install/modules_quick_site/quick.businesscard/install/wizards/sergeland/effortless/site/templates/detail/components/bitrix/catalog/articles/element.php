@@ -113,5 +113,5 @@ $ElementID = $APPLICATION->IncludeComponent("bitrix:catalog.element","",
 	$component
 );?>
 <?if($ElementID>0):?>
-<div class="text-right mt-20"><a href="<?=$arResult["FOLDER"].str_replace("#", "", strtr($arResult["URL_TEMPLATES"]["section"], $arResult["VARIABLES"]))?>"><i class="fa fa-external-link"></i> <?=GetMessage("SERGELAND_EFFORTLESS_DETAIL_BACK")?></a></div>
+<div class="text-right mt-20"><a href="<?=$arResult["FOLDER"].str_replace("#", "", strtr($arResult["URL_TEMPLATES"]["section"], $arResult["VARIABLES"]))?>"><i class="fa fa-external-link"></i> <?=GetMessage("QUICK_EFFORTLESS_DETAIL_BACK")?></a></div>
 <?endif?>

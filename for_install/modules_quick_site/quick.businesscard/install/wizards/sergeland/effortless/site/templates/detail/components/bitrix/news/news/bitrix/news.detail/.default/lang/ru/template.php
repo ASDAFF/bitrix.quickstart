@@ -1,11 +1,11 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_OF"] = "èç";
+$MESS["QUICK_EFFORTLESS_OF"] = "Ð¸Ð·";
 
-$MESS["SERGELAND_EFFORTLESS_NEWS_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_NEWS_ERROR"] = "Îøèáêà îòïðàâêè ôîðìû. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_EFFORTLESS_NEWS_SUCCESS"] = "Ñïàñèáî, æäèòå çâîíêà.";
+$MESS["QUICK_EFFORTLESS_NEWS_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["QUICK_EFFORTLESS_NEWS_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["QUICK_EFFORTLESS_NEWS_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð¶Ð´Ð¸Ñ‚Ðµ Ð·Ð²Ð¾Ð½ÐºÐ°.";
 
-$MESS["SERGELAND_EFFORTLESS_NEWS_NAME"] = "Âàøå èìÿ";
-$MESS["SERGELAND_EFFORTLESS_NEWS_PHONE"] = "Òåëåôîí";
-$MESS["SERGELAND_EFFORTLESS_NEWS_SEND"] = "Çàêàçàòü óñëóãó";
+$MESS["QUICK_EFFORTLESS_NEWS_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS["QUICK_EFFORTLESS_NEWS_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["QUICK_EFFORTLESS_NEWS_SEND"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑƒÑÐ»ÑƒÐ³Ñƒ";
 ?>

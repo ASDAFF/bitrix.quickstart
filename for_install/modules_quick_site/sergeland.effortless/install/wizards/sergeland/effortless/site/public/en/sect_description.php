@@ -82,6 +82,6 @@
 <div class="block">
 	<blockquote class="margin-clear">
 		<p>Who is afraid of failure, that limits their activities.</p>	
-		<footer><cite title="Ãåíðè Ôîðä">Henry Ford</cite></footer>
+		<footer><cite title="Ð“ÐµÐ½Ñ€Ð¸ Ð¤Ð¾Ñ€Ð´">Henry Ford</cite></footer>
 	</blockquote>
 </div>

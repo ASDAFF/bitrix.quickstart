@@ -123,7 +123,7 @@ $APPLICATION->SetTitle("Customer reviews");
 			"SECTION_ID" => "SECTION_ID",
 			"ELEMENT_ID" => "ELEMENT_ID",
 		),
-		"CIRCLE_IMG" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)),
+		"CIRCLE_IMG" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_IMG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["TESTIMONIALS_IMG"] : COption::GetOptionString("effortless", "QUICK_THEME_TESTIMONIALS_IMG", "img-circle-no", SITE_ID)),
 	),
 	false
 );?>

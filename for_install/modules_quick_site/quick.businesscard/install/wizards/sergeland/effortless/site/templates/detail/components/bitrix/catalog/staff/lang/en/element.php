@@ -1,3 +1,3 @@
 <?
-$MESS["SERGELAND_SPHINX_DETAIL_BACK"] = "Back to list";
+$MESS["QUICK_SPHINX_DETAIL_BACK"] = "Back to list";
 ?>

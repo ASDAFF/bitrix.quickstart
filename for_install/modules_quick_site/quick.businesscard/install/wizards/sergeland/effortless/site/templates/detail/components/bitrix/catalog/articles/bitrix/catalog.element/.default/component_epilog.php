@@ -4,16 +4,16 @@
 global $APPLICATION, $MESS;
 @include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/lang/".LANGUAGE_ID."/component_epilog.php");
 ?><br>
-<h1 class="mb-30"><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS")?> (<span id="comments-quantity">0</span>)</h1>
+<h1 class="mb-30"><?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS")?> (<span id="comments-quantity">0</span>)</h1>
 <div id="results-comments">
 	<div class="alert alert-danger" id="beforesend-comments">
-		<?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_BEFORESEND")?>
+		<?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_BEFORESEND")?>
 	</div>
 	<div class="alert alert-danger" id="error-comments">
-		<?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_ERROR")?>
+		<?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_ERROR")?>
 	</div>
 	<div class="alert alert-success" id="success-comments">
-		<?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SUCCESS")?>
+		<?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_SUCCESS")?>
 	</div>
 </div>
 <img src="<?=SITE_DIR?>images/loading.gif" alt="Loading" id="form-loading-comments" class="pull-right" />
@@ -27,27 +27,27 @@ global $APPLICATION, $MESS;
 			<input type="hidden" name="COMMENTS[TITLE]" value="<?=$arResult["NAME"]?>"/>					
 			<div class="col-sm-6">
 				<div class="form-group has-feedback">
-					<label><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_NAME_PLACEHOLDER")?></label>
+					<label><?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_NAME_PLACEHOLDER")?></label>
 					<input type="text" name="COMMENTS[NAME]" class="form-control req">
 					<i class="fa fa-user form-control-feedback"></i>
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="form-group has-feedback">
-					<label><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_EMAIL_PLACEHOLDER")?></label>
+					<label><?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_EMAIL_PLACEHOLDER")?></label>
 					<input type="email" name="COMMENTS[EMAIL]" class="form-control req">
 					<i class="fa fa-envelope form-control-feedback"></i>
 				</div>
 			</div>
 			<div class="col-sm-12">
 				<div class="form-group has-feedback">
-					<label><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_COMMENT_PLACEHOLDER")?></label>
+					<label><?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_COMMENT_PLACEHOLDER")?></label>
 					<textarea name="COMMENTS[COMMENT]" class="form-control req" rows="8"></textarea>
 					<i class="fa fa-envelope-o form-control-feedback"></i>
 				</div>
 			</div>
 			<div class="col-sm-12">
-				<input type="submit" value="<?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SEND")?>" class="btn btn-default pull-right">
+				<input type="submit" value="<?=GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENTS_SEND")?>" class="btn btn-default pull-right">
 			</div>
 		</form>
 	</div>

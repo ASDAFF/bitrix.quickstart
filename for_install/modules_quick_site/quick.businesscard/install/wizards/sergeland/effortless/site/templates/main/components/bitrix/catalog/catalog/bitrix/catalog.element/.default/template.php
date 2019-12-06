@@ -29,7 +29,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });
@@ -38,8 +38,8 @@ jQuery(function(){
 	<div class="row">
 		<div class="col-md-5">
 			<ul class="nav nav-pills white" role="tablist">
-				<li class="active"><a href="#images" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> <?=GetMessage("SERGELAND_EFFORTLESS_TAB_PHOTO")?></a></li>
-				<li><a href="#video" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> <?=GetMessage("SERGELAND_EFFORTLESS_TAB_VIDEO")?></a></li>
+				<li class="active"><a href="#images" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> <?=GetMessage("QUICK_EFFORTLESS_TAB_PHOTO")?></a></li>
+				<li><a href="#video" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> <?=GetMessage("QUICK_EFFORTLESS_TAB_VIDEO")?></a></li>
 			</ul>
 			<div class="tab-content">
 				<div class="tab-pane active" id="images">
@@ -76,8 +76,8 @@ jQuery(function(){
 		<div class="col-md-7">
 			<?if(!empty($arResult["PROPERTIES"]["ACTION"]["VALUE"]) || !empty($arResult["PROPERTIES"]["NEW"]["VALUE"])):?>
 			<div class="tags">
-				<?if(!empty($arResult["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ACTION")?> <?if(!empty($arResult["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arResult["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
-				<?if(!empty($arResult["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_NEW")?></span><?endif?>
+				<?if(!empty($arResult["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_ACTION")?> <?if(!empty($arResult["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arResult["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
+				<?if(!empty($arResult["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_NEW")?></span><?endif?>
 			</div>
 			<?endif?>
 			<h1><?=$arResult["NAME"]?></h1>
@@ -85,22 +85,22 @@ jQuery(function(){
 				<?=$arResult["PREVIEW_TEXT"]?>
 				<div class="mb-20">
 					<?if(!empty($arResult["PROPERTIES"]["PRICE"]["VALUE"])):?><span class="price"><?=$arResult["PROPERTIES"]["PRICE"]["VALUE"]?></span> <?=$arResult["PROPERTIES"]["CURRENCY"]["~VALUE"]?> <?if(!empty($arResult["PROPERTIES"]["PRICE_OLD"]["VALUE"])):?><del><?=$arResult["PROPERTIES"]["PRICE_OLD"]["VALUE"]?></del><?endif?><?endif?>
-					<?if(!empty($arResult["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_PRESENCE")?></span>
-					<?elseif(!empty($arResult["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_EXPECTED")?></span>
-					<?elseif(!empty($arResult["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_UNDER")?></span>
-					<?elseif(!empty($arResult["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_UNAVAILABLE")?></span><?endif?>
+					<?if(!empty($arResult["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_PRESENCE")?></span>
+					<?elseif(!empty($arResult["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_EXPECTED")?></span>
+					<?elseif(!empty($arResult["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_UNDER")?></span>
+					<?elseif(!empty($arResult["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_UNAVAILABLE")?></span><?endif?>
 				</div>
 				<?if(!empty($arResult["PROPERTIES"]["SHOW_ORDER_FORM"]["VALUE"])):?>
-				<p class="info"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER")?></p>
+				<p class="info"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER")?></p>
 				<div id="results-order">
 					<div class="alert alert-danger" id="beforesend-order">
-						<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_BEFORESEND")?>
+						<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_BEFORESEND")?>
 					</div>
 					<div class="alert alert-danger" id="error-order">
-						<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_ERROR")?>
+						<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_ERROR")?>
 					</div>
 					<div class="alert alert-success" id="success-order">
-						<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_SUCCESS")?>
+						<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_SUCCESS")?>
 					</div>
 				</div>
 				<img src="<?=SITE_DIR?>images/loading.gif" alt="Loading" id="form-loading-order" class="pull-right mb-5" />
@@ -112,7 +112,7 @@ jQuery(function(){
 					<input type="hidden" name="ORDER[PRODUCT_NAME]" value="<?=$arResult["NAME"]?>">
 					<?if(!empty($arResult["PROPERTIES"]["SHOW_NAME"]["VALUE"])):?>
 					<div class="form-group has-feedback">
-						<input type="text" name="ORDER[NAME]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_NAME"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_NAME")?>">
+						<input type="text" name="ORDER[NAME]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_NAME"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_NAME")?>">
 						<i class="fa fa-user form-control-feedback"></i>
 					</div>
 					<?else:?>
@@ -120,7 +120,7 @@ jQuery(function(){
 					<?endif?>
 					<?if(!empty($arResult["PROPERTIES"]["SHOW_PHONE"]["VALUE"])):?>
 					<div class="form-group has-feedback">
-						<input type="tel" name="ORDER[PHONE]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_PHONE"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
+						<input type="tel" name="ORDER[PHONE]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_PHONE"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
 						<i class="fa fa-phone form-control-feedback"></i>
 					</div>
 					<?else:?>
@@ -128,7 +128,7 @@ jQuery(function(){
 					<?endif?>
 					<?if(!empty($arResult["PROPERTIES"]["SHOW_EMAIL"]["VALUE"])):?>
 					<div class="form-group has-feedback">
-						<input type="email" name="ORDER[EMAIL]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_EMAIL"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_EMAIL")?>">
+						<input type="email" name="ORDER[EMAIL]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_EMAIL"]["VALUE"])):?>req<?endif?>" placeholder="<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_EMAIL")?>">
 						<i class="fa fa-envelope form-control-feedback"></i>
 					</div>
 					<?else:?>
@@ -136,7 +136,7 @@ jQuery(function(){
 					<?endif?>					
 					<?if(!empty($arResult["PROPERTIES"]["SHOW_COMMENT"]["VALUE"])):?>
 					<div class="form-group has-feedback">
-						<textarea name="ORDER[COMMENT]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_COMMENT"]["VALUE"])):?>req<?endif?>" rows="4" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ORDER_COMMENT")?>"></textarea>
+						<textarea name="ORDER[COMMENT]" class="form-control <?if(!empty($arResult["PROPERTIES"]["REQ_COMMENT"]["VALUE"])):?>req<?endif?>" rows="4" placeholder="<?=GetMessage("QUICK_EFFORTLESS_CATALOG_ORDER_COMMENT")?>"></textarea>
 						<i class="fa fa-pencil form-control-feedback"></i>
 					</div>
 					<?else:?>

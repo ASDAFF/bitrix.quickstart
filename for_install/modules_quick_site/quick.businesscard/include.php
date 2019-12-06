@@ -4,7 +4,7 @@
  */
 
 IncludeModuleLangFile(__FILE__);
-class CSergelandeffortless
+class CQuickeffortless
 {
 	function ShowPanel()
 	{

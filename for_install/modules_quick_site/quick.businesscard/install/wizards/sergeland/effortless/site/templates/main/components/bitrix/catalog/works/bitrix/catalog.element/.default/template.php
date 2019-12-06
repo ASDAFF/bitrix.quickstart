@@ -30,8 +30,8 @@ $strAlt = (
 		</div>
 		<div class="col-md-<?if(!empty($arResult["PROPERTIES"]["SHOW_CALLBACK_FORM"]["VALUE"])):?>7<?else:?>12<?endif?>">
 			<ul class="nav nav-pills white" role="tablist">
-				<li <?if(!empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) || (empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) && empty($arResult["PROPERTIES"]["HREF_VIDEO"]["VALUE"]))):?>class="active"<?endif?>><a href="#images" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> <?=GetMessage("SERGELAND_EFFORTLESS_TAB_PHOTO")?></a></li>
-				<li <?if(!empty($arResult["PROPERTIES"]["HREF_VIDEO"]["VALUE"]) && empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"])):?>class="active"<?endif?>><a href="#video" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> <?=GetMessage("SERGELAND_EFFORTLESS_TAB_VIDEO")?></a></li>
+				<li <?if(!empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) || (empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) && empty($arResult["PROPERTIES"]["HREF_VIDEO"]["VALUE"]))):?>class="active"<?endif?>><a href="#images" role="tab" data-toggle="tab" title="images"><i class="fa fa-camera pr-5"></i> <?=GetMessage("QUICK_EFFORTLESS_TAB_PHOTO")?></a></li>
+				<li <?if(!empty($arResult["PROPERTIES"]["HREF_VIDEO"]["VALUE"]) && empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"])):?>class="active"<?endif?>><a href="#video" role="tab" data-toggle="tab" title="video"><i class="fa fa-video-camera pr-5"></i> <?=GetMessage("QUICK_EFFORTLESS_TAB_VIDEO")?></a></li>
 			</ul>
 			<div class="tab-content clear-style">
 				<div class="tab-pane <?if(!empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) || (empty($arResult["PROPERTIES"]["PHOTO_TOP"]["ITEMS"]) && empty($arResult["PROPERTIES"]["HREF_VIDEO"]["VALUE"]))):?>active<?endif?>" id="images">
@@ -42,7 +42,7 @@ $strAlt = (
 							type:"image",
 							gallery: {
 								enabled: true,
-								tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+								tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 							}		
 						});
 					});
@@ -72,16 +72,16 @@ $strAlt = (
 		</div>
 		<?if(!empty($arResult["PROPERTIES"]["SHOW_CALLBACK_FORM"]["VALUE"])):?>
 		<div class="col-md-5">
-			<p class="info mt-45"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_INFO")?></p>
+			<p class="info mt-45"><?=GetMessage("QUICK_EFFORTLESS_WORKS_INFO")?></p>
 			<div id="results-callback">
 				<div class="alert alert-danger" id="beforesend-callback">
-					<?=GetMessage("SERGELAND_EFFORTLESS_WORKS_BEFORESEND")?>
+					<?=GetMessage("QUICK_EFFORTLESS_WORKS_BEFORESEND")?>
 				</div>
 				<div class="alert alert-danger" id="error-callback">
-					<?=GetMessage("SERGELAND_EFFORTLESS_WORKS_ERROR")?>
+					<?=GetMessage("QUICK_EFFORTLESS_WORKS_ERROR")?>
 				</div> 
 				<div class="alert alert-success" id="success-callback">
-					<?=GetMessage("SERGELAND_EFFORTLESS_WORKS_SUCCESS")?>
+					<?=GetMessage("QUICK_EFFORTLESS_WORKS_SUCCESS")?>
 				</div>
 			</div>
 			<img src="<?=SITE_DIR?>images/loading.gif" alt="Loading" id="form-loading-callback" class="pull-right mb-5" />
@@ -90,11 +90,11 @@ $strAlt = (
 				<input type="hidden" name="CALLBACK[SITE_ID]" value="<?=SITE_ID?>"/>
 				<input type="hidden" name="CALLBACK[TITLE]" value="<?=$arResult["NAME"]?>"/>				
 				<div class="form-group has-feedback">
-					<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_WORKS_NAME")?>" class="form-control req">
+					<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_WORKS_NAME")?>" class="form-control req">
 					<i class="fa fa-user form-control-feedback"></i>
 				</div>
 				<div class="form-group has-feedback">
-					<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_WORKS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
+					<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_WORKS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
 					<i class="fa fa-phone form-control-feedback"></i>
 				</div>
 				<button type="submit" class="btn btn-sm btn-default pull-right"><i class="fa fa-sign-out pr-5"></i> <?=$arResult["PROPERTIES"]["TEXT_CALLBACK_FORM"]["VALUE"]?></button>
@@ -107,10 +107,10 @@ $strAlt = (
 	<div class="side product-item">
 		<div class="tabs-style-2">
 			<ul class="nav nav-tabs" role="tablist">
-				<li><a href="#descriprion" role="tab" data-toggle="tab"><i class="fa fa-file-text-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_TAB_DESCRIPTION")?></a></li>
-				<li class="active"><a href="#specifications" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_TAB_SPECIFICATIONS")?></a></li>
-				<li><a href="#documents" role="tab" data-toggle="tab"><i class="fa fa-file-word-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_TAB_DOCUMENTS")?></a></li>
-				<li><a href="#comments" role="tab" data-toggle="tab"><i class="fa fa-star"></i>(<?if(!empty($arResult["PROPERTIES"]["REVIEWS"]["ITEMS"])):?><?=count($arResult["PROPERTIES"]["REVIEWS"]["ITEMS"])?><?else:?>0<?endif?>) <?=GetMessage("SERGELAND_EFFORTLESS_WORKS_TAB_REVIEWS")?></a></li>
+				<li><a href="#descriprion" role="tab" data-toggle="tab"><i class="fa fa-file-text-o"></i><?=GetMessage("QUICK_EFFORTLESS_WORKS_TAB_DESCRIPTION")?></a></li>
+				<li class="active"><a href="#specifications" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i><?=GetMessage("QUICK_EFFORTLESS_WORKS_TAB_SPECIFICATIONS")?></a></li>
+				<li><a href="#documents" role="tab" data-toggle="tab"><i class="fa fa-file-word-o"></i><?=GetMessage("QUICK_EFFORTLESS_WORKS_TAB_DOCUMENTS")?></a></li>
+				<li><a href="#comments" role="tab" data-toggle="tab"><i class="fa fa-star"></i>(<?if(!empty($arResult["PROPERTIES"]["REVIEWS"]["ITEMS"])):?><?=count($arResult["PROPERTIES"]["REVIEWS"]["ITEMS"])?><?else:?>0<?endif?>) <?=GetMessage("QUICK_EFFORTLESS_WORKS_TAB_REVIEWS")?></a></li>
 			</ul>
 			<div class="tab-content padding-top-clear padding-bottom-clear">
 				<div class="tab-pane fade" id="descriprion">
@@ -196,7 +196,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });
@@ -297,12 +297,12 @@ jQuery(function(){
 		<div class="col-lg-9 col-md-8 col-sm-8">
 			<div class="overlay-container">
 				<div class="tags">
-					<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
-					<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_NEW")?></span><?endif?>
-					<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_PRESENCE")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_EXPECTED")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_UNDER")?></span>
-					<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_UNAVAILABLE")?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_NEW")?></span><?endif?>
+					<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_PRESENCE")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_EXPECTED")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_UNDER")?></span>
+					<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("QUICK_EFFORTLESS_WORKS_UNAVAILABLE")?></span><?endif?>
 				</div>
 				<h4><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h4>
 				<?=$arItem["PREVIEW_TEXT"]?>
@@ -310,8 +310,8 @@ jQuery(function(){
 				<div class="clearfix">
 					<?if(!empty($arItem["PROPERTIES"]["PRICE"]["VALUE"])):?><span class="price"><?=$arItem["PROPERTIES"]["PRICE"]["VALUE"]?></span> <?=$arItem["PROPERTIES"]["CURRENCY"]["~VALUE"]?> <?if(!empty($arItem["PROPERTIES"]["PRICE_OLD"]["VALUE"])):?><del><?=$arItem["PROPERTIES"]["PRICE_OLD"]["VALUE"]?></del><?endif?><?endif?>
 					
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-default btn-sm hidden-xs pull-right"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white btn-sm hidden-xs pull-right"><i class="fa fa-shopping-cart pr-10"></i> <?=GetMessage("SERGELAND_EFFORTLESS_WORKS_BUY")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-default btn-sm hidden-xs pull-right"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white btn-sm hidden-xs pull-right"><i class="fa fa-shopping-cart pr-10"></i> <?=GetMessage("QUICK_EFFORTLESS_WORKS_BUY")?></a>
 					
 					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn btn-white hidden-sm hidden-md hidden-lg pull-right"><i class="fa fa-shopping-cart"></i></a>
 				</div>
@@ -339,7 +339,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 			</div>
 		</div>
 		<?elseif(is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -359,7 +359,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 			</div>
 		</div>			
 		<?else:?>
@@ -367,7 +367,7 @@ jQuery(function(){
 			<div class="overlay-container">
 				<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 				<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+				<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 			</div>
 		</div>
 		<?endif?>

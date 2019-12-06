@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контактная информация");
 ?>
-<?$APPLICATION->IncludeComponent("sergeland:google.maps", "", 
+<?$APPLICATION->IncludeComponent("quick:google.maps", "",
 	array(
 		"CONTAINER_ID" => "map-canvas",
 		"CONTAINER_CLASS" => "map",

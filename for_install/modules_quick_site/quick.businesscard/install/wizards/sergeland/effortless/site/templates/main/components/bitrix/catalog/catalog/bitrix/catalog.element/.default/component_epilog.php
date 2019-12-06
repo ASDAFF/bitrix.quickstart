@@ -8,10 +8,10 @@ global $APPLICATION, $MESS;
 	<div class="side product-item">
 		<div class="tabs-style-2">
 			<ul class="nav nav-tabs" role="tablist">
-				<li><a href="#descriprion" role="tab" data-toggle="tab"><i class="fa fa-file-text-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_TAB_DESCRIPTION")?></a></li>
-				<li class="active"><a href="#specifications" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_TAB_SPECIFICATIONS")?></a></li>
-				<li><a href="#documents" role="tab" data-toggle="tab"><i class="fa fa-file-word-o"></i><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_TAB_DOCUMENTS")?></a></li>
-				<li><a href="#comments" role="tab" data-toggle="tab"><i class="fa fa-star"></i>(<span id="comments-quantity">0</span>) <?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_TAB_COMMENTS")?></a></li>
+				<li><a href="#descriprion" role="tab" data-toggle="tab"><i class="fa fa-file-text-o"></i><?=GetMessage("QUICK_EFFORTLESS_CATALOG_TAB_DESCRIPTION")?></a></li>
+				<li class="active"><a href="#specifications" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i><?=GetMessage("QUICK_EFFORTLESS_CATALOG_TAB_SPECIFICATIONS")?></a></li>
+				<li><a href="#documents" role="tab" data-toggle="tab"><i class="fa fa-file-word-o"></i><?=GetMessage("QUICK_EFFORTLESS_CATALOG_TAB_DOCUMENTS")?></a></li>
+				<li><a href="#comments" role="tab" data-toggle="tab"><i class="fa fa-star"></i>(<span id="comments-quantity">0</span>) <?=GetMessage("QUICK_EFFORTLESS_CATALOG_TAB_COMMENTS")?></a></li>
 			</ul>
 			<div class="tab-content padding-top-clear padding-bottom-clear">
 				<div class="tab-pane fade" id="descriprion">
@@ -51,13 +51,13 @@ global $APPLICATION, $MESS;
 						<div class="col-md-12">
 							<div id="results-comments">
 								<div class="alert alert-danger" id="beforesend-comments">
-									<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_BEFORESEND")?>
+									<?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_BEFORESEND")?>
 								</div>
 								<div class="alert alert-danger" id="error-comments">
-									<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_ERROR")?>
+									<?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_ERROR")?>
 								</div>
 								<div class="alert alert-success" id="success-comments">
-									<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_SUCCESS")?>
+									<?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_SUCCESS")?>
 								</div>
 							</div>
 							<img src="<?=SITE_DIR?>images/loading.gif" alt="Loading" id="form-loading-comments" class="pull-right" />
@@ -70,21 +70,21 @@ global $APPLICATION, $MESS;
 							<input type="hidden" name="COMMENTS[TITLE]" value="<?=$arResult["NAME"]?>"/>					
 							<div class="col-sm-6">
 								<div class="form-group has-feedback">
-									<label><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_NAME_PLACEHOLDER")?></label>
+									<label><?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_NAME_PLACEHOLDER")?></label>
 									<input type="text" name="COMMENTS[NAME]" class="form-control req">
 									<i class="fa fa-user form-control-feedback"></i>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group has-feedback">
-									<label><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_EMAIL_PLACEHOLDER")?></label>
+									<label><?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_EMAIL_PLACEHOLDER")?></label>
 									<input type="email" name="COMMENTS[EMAIL]" class="form-control req">
 									<i class="fa fa-envelope form-control-feedback"></i>
 								</div>
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group">
-									<label><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_STARS_PLACEHOLDER")?></label>
+									<label><?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_STARS_PLACEHOLDER")?></label>
 									<select name="COMMENTS[STARS]" class="form-control req">
 										<option value="5">5</option>
 										<option value="4">4</option>
@@ -96,13 +96,13 @@ global $APPLICATION, $MESS;
 							</div>
 							<div class="col-sm-12">
 								<div class="form-group has-feedback">
-									<label><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_COMMENT_PLACEHOLDER")?></label>
+									<label><?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_COMMENT_PLACEHOLDER")?></label>
 									<textarea name="COMMENTS[COMMENT]" class="form-control req" rows="8"></textarea>
 									<i class="fa fa-envelope-o form-control-feedback"></i>
 								</div>
 							</div>
 							<div class="col-sm-12">
-								<input type="submit" value="<?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_COMMENTS_SEND")?>" class="btn btn-default pull-right">
+								<input type="submit" value="<?=GetMessage("QUICK_EFFORTLESS_CATALOG_COMMENTS_SEND")?>" class="btn btn-default pull-right">
 							</div>
 						</form>
 					</div>
@@ -241,15 +241,15 @@ global $APPLICATION, $MESS;
 			<?endif?>
 			<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"]) || !empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?>
 			<div class="tags">
-				<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
-				<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_NEW")?></span><?endif?>
+				<?if(!empty($arItem["PROPERTIES"]["ACTION"]["VALUE"])):?><span class="badge default-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_ACTION")?> <?if(!empty($arItem["PROPERTIES"]["PERCENT"]["VALUE"])):?><?=$arItem["PROPERTIES"]["PERCENT"]["VALUE"]?><?endif?></span><?endif?>
+				<?if(!empty($arItem["PROPERTIES"]["NEW"]["VALUE"])):?><span class="badge danger-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_NEW")?></span><?endif?>
 			</div>
 			<?endif?>
 			<div class="status">
-				<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_PRESENCE")?></span>
-				<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_EXPECTED")?></span>
-				<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_UNDER")?></span>
-				<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("SERGELAND_EFFORTLESS_CATALOG_UNAVAILABLE")?></span><?endif?>
+				<?if(!empty($arItem["PROPERTIES"]["PRESENCE"]["VALUE"])):?><span class="badge success-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_PRESENCE")?></span>
+				<?elseif(!empty($arItem["PROPERTIES"]["EXPECTED"]["VALUE"])):?><span class="badge warning-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_EXPECTED")?></span>
+				<?elseif(!empty($arItem["PROPERTIES"]["UNDER"]["VALUE"])):?><span class="badge info-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_UNDER")?></span>
+				<?elseif(!empty($arItem["PROPERTIES"]["UNAVAILABLE"]["VALUE"])):?><span class="badge gray-bg"><?=GetMessage("QUICK_EFFORTLESS_CATALOG_UNAVAILABLE")?></span><?endif?>
 			</div>
 		</div>
 		<div class="listing-item-body clearfix">

@@ -1,4 +1,4 @@
-<div class="page-top <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["WARNING_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_WARNING_BG", "white-bg", SITE_ID))?>">
+<div class="page-top <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["WARNING_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["WARNING_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_WARNING_BG", "white-bg", SITE_ID))?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

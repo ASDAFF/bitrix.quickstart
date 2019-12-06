@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <?IncludeTemplateLangFile(__FILE__);?>				
 				</div>
-				<?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "right"):?>
+				<?if((!empty($_SESSION["QUICK_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "QUICK_THEME_SIDEBAR", "left", SITE_ID)) == "right"):?>
 				<div class="col-md-3 hidden-xs hidden-sm">
 					<div class="sidebar">
 						<div class="block">
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_FOOTER_BG", "dark", SITE_ID))?>">
+	<footer class="<?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["FOOTER_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["FOOTER_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_FOOTER_BG", "dark", SITE_ID))?>">
 		<div class="footer">
 			<div class="container">
 				<div class="row">

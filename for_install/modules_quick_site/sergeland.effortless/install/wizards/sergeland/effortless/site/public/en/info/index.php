@@ -24,7 +24,7 @@ Among the services provided:
  									
 <p>Some of the services available to our customers around the clock, using modern telecommunication technologies.</p>
  									
-<p><b>&laquo;Effortless&raquo;</b> is one of the most reliable banks of our country. The core values that guide us are <i><b>justice</b></i>, <i><b>transparency</b></i>, <i><b>respect</b></i>, <i><b>cooperation</b></i>, <i><b>freedom</b></i> è <i><b>trust</b></i>. One of the main tasks <b>&laquo;Effortless&raquo;</b> sees the maintenance and improvement of the developed financial system of Russia.</p>
+<p><b>&laquo;Effortless&raquo;</b> is one of the most reliable banks of our country. The core values that guide us are <i><b>justice</b></i>, <i><b>transparency</b></i>, <i><b>respect</b></i>, <i><b>cooperation</b></i>, <i><b>freedom</b></i> Ð¸ <i><b>trust</b></i>. One of the main tasks <b>&laquo;Effortless&raquo;</b> sees the maintenance and improvement of the developed financial system of Russia.</p>
  									
 <p>As one of the priorities of cultural activities <b>&laquo;Effortless&raquo;</b> provides support for the national image. With our support, Russia was visited by many world-famous foreign musicians, in the regions of Russia are held annually theater festivals, concerts and numerous exhibitions.</p>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

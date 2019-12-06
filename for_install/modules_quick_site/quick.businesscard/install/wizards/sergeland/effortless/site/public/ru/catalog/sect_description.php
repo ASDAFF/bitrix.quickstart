@@ -75,7 +75,7 @@
 		"SET_BROWSER_TITLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
 		"PAGER_TITLE" => "",
-		"AUTOPLAY" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)),
+		"AUTOPLAY" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["BANNER_AUTOPLAY"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["BANNER_AUTOPLAY"] : COption::GetOptionString("effortless", "QUICK_THEME_BANNER_AUTOPLAY", "content-slider-with-controls-bottom-autoplay", SITE_ID)),
 	),
 	false
 );?>

@@ -3,9 +3,9 @@
 if (empty($arResult["ITEMS"]))
 	return;
 
-if(!function_exists(sergeland_number_ending))
+if(!function_exists(quick_number_ending))
 {
-	function sergeland_number_ending($number, $ending0, $ending1, $ending2) { 
+	function quick_number_ending($number, $ending0, $ending1, $ending2) {
 	   $num100 = $number % 100; 
 	   $num10 = $number % 10; 
 	   if ($num100 >= 5 && $num100 <= 20) { 

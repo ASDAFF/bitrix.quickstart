@@ -26,7 +26,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });

@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Search the site");
 		"PAGE_RESULT_COUNT" => "10",
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
-		"PAGER_TITLE" => "Ðåçóëüòàòû ïîèñêà",
+		"PAGER_TITLE" => "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ñ‹ Ð¿Ð¾Ð¸ÑÐºÐ°",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_TEMPLATE" => "effortless",
 		"AJAX_OPTION_SHADOW" => "Y",

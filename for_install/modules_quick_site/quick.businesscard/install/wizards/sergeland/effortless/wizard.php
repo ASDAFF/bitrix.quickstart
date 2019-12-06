@@ -411,9 +411,9 @@ $siteDir=$arSite["DIR"];$wizard->SetFormActionScript(str_replace("//","/",$siteD
      <td class="wizard-completion-cell">'.GetMessage("FINISH_STEP_CONTENT").'</td>
     </tr>
    </table>';}}
-class WizardServices_SERGELAND extends CWizardStep
+class WizardServices_QUICK extends CWizardStep
 {function ImportIBlockFromXML($xmlFile,$iblockType,$iblock_id,$siteID,$permissions=Array(),$element_import)
-{if(!CModule::IncludeModule("iblock"))return false;global $APPLICATION;$iblockID=WizardServices_SERGELAND::ImportXMLFile($xmlFile,$iblockType,$iblock_id,$siteID,$section_action="N",$element_action="N",$element_import,$use_crc=false,$preview=false,$sync=false,$return_last_error=false,$return_iblock_id=true);if((!is_integer($iblockID))||($iblockID<=0))
+{if(!CModule::IncludeModule("iblock"))return false;global $APPLICATION;$iblockID=WizardServices_QUICK::ImportXMLFile($xmlFile,$iblockType,$iblock_id,$siteID,$section_action="N",$element_action="N",$element_import,$use_crc=false,$preview=false,$sync=false,$return_last_error=false,$return_iblock_id=true);if((!is_integer($iblockID))||($iblockID<=0))
 {$rsIBlock=CIBlock::GetList(array(),array("ID"=>$iblock_id,"TYPE"=>$iblockType,"SITE_ID"=>$siteID));if($arIBlock=$rsIBlock->Fetch())
 $iblockID=$arIBlock["ID"];else $iblockID=false;}
 if($iblockID>0)
@@ -438,7 +438,7 @@ if($strError!="")die($strError);else die(GetMessage("IBLOCK_XML2_FILE_ERROR")." 
 $IMP_FILE_NAME=substr($ABS_FILE_NAME,0,-7).".xml";}
 else $IMP_FILE_NAME=$ABS_FILE_NAME;$fp=fopen($IMP_FILE_NAME,"rb");if(!$fp)
 die(GetMessage("IBLOCK_XML2_FILE_ERROR")." ".$file_name);if($sync)
-$table_name="b_xml_tree_sync";else $table_name="b_xml_tree";$obCatalog=new CIBlockCMLImport_SERGELAND;$NS=array("STEP"=>0,"lang"=>LangSubst(LANGUAGE_ID));$obCatalog->Init($NS,$WORK_DIR_NAME,$use_crc,$preview,false,false,$iblock_id,$table_name);if($sync)
+$table_name="b_xml_tree_sync";else $table_name="b_xml_tree";$obCatalog=new CIBlockCMLImport_QUICK;$NS=array("STEP"=>0,"lang"=>LangSubst(LANGUAGE_ID));$obCatalog->Init($NS,$WORK_DIR_NAME,$use_crc,$preview,false,false,$iblock_id,$table_name);if($sync)
 {if(!$obCatalog->StartSession(bitrix_sessid()))
 die(GetMessage("IBLOCK_XML2_TABLE_CREATE_ERROR"));$obCatalog->ReadXMLToDatabase($fp,$NS,0,1024);$xml_root=$obCatalog->GetSessionRoot();$bUpdateIBlock=false;}
 else
@@ -447,7 +447,7 @@ die(GetMessage("IBLOCK_XML2_TABLE_CREATE_ERROR"));$obCatalog->ReadXMLToDatabase(
 die(GetMessage("IBLOCK_XML2_INDEX_ERROR"));$xml_root=1;$bUpdateIBlock=true;}
 fclose($fp);$result=$obCatalog->ImportMetaData($xml_root,$iblock_type,$site_id,$bUpdateIBlock);if($result!==true)
 die(GetMessage("IBLOCK_XML2_METADATA_ERROR").implode("\n",$result));if($element_import)
-{$obCatalog->ImportSections();$obCatalog->DeactivateSections($section_action);$obCatalog->SectionsResort();$obCatalog=new CIBlockCMLImport_SERGELAND;$obCatalog->Init($NS,$WORK_DIR_NAME,$use_crc,$preview,false,false,$iblock_id,$table_name);if($sync)
+{$obCatalog->ImportSections();$obCatalog->DeactivateSections($section_action);$obCatalog->SectionsResort();$obCatalog=new CIBlockCMLImport_QUICK;$obCatalog->Init($NS,$WORK_DIR_NAME,$use_crc,$preview,false,false,$iblock_id,$table_name);if($sync)
 {if(!$obCatalog->StartSession(bitrix_sessid()))
 die(GetMessage("IBLOCK_XML2_TABLE_CREATE_ERROR"));}
 $SECTION_MAP=false;$PRICES_MAP=false;$obCatalog->ReadCatalogData($SECTION_MAP,$PRICES_MAP);$result=$obCatalog->ImportElements(time(),0);$obCatalog->DeactivateElement($element_action,time(),0);if($sync)
@@ -474,7 +474,7 @@ continue;if(flock($handleFile,LOCK_EX))
 $arSearch[]=$search;else
 $arSearch[]="#".$search."#";$arValue[]=$replace;}
 $content=str_replace($arSearch,$arValue,$content);@fwrite($handleFile,$content);@flock($handleFile,LOCK_UN);}@fclose($handleFile);}}@closedir($handle);}}}
-class CIBlockCMLImport_SERGELAND extends CIBlockCMLImport
+class CIBlockCMLImport_QUICK extends CIBlockCMLImport
 {function ImportMetaData($xml_root_id,$IBLOCK_TYPE,$IBLOCK_LID,$bUpdateIBlock=true)
 {global $APPLICATION;$rs=$this->_xml_file->GetList(array(),array("ID"=>$xml_root_id),array("ID","NAME","ATTRIBUTES"));$ar=$rs->Fetch();if($ar)
 {foreach(array(LANGUAGE_ID,"en","ru")as $lang)

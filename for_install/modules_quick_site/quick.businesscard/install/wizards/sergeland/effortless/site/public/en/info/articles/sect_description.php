@@ -2,7 +2,7 @@
 	When rendering services we guarantee professional and ethical standards accepted in the professional community.
 </div>
 <div class="block">
-<?$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["TAGS_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_TAGS_VER", "articles-ver-1", SITE_ID)), 
+<?$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", (!empty($_SESSION["QUICK_THEME"][SITE_ID]["TAGS_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["TAGS_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_TAGS_VER", "articles-ver-1", SITE_ID)), 
 	array(
 		"SORT" => "CNT",
 		"PAGE_ELEMENTS" => "150",

@@ -1,7 +1,7 @@
 <?
-$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT1"] = "êîììåíòàðèåâ";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT2"] = "êîììåíòàðèé";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENT3"] = "êîììåíòàðèÿ";
+$MESS["QUICK_EFFORTLESS_ARTICLES_COMMENT1"] = "ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸ÐµÐ²";
+$MESS["QUICK_EFFORTLESS_ARTICLES_COMMENT2"] = "ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS["QUICK_EFFORTLESS_ARTICLES_COMMENT3"] = "ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ";
 ?>

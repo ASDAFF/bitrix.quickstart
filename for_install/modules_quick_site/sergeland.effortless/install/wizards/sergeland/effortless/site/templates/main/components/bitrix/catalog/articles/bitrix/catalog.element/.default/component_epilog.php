@@ -4,7 +4,7 @@
 global $APPLICATION, $MESS;
 @include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/lang/".LANGUAGE_ID."/component_epilog.php");
 ?><br>
-<h1 class="mb-30"><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS")?> (<span id="comments-quantity">0</span>)</h2>	
+<h1 class="mb-30"><?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS")?> (<span id="comments-quantity">0</span>)</h1>	
 <div id="results-comments">
 	<div class="alert alert-danger" id="beforesend-comments">
 		<?=GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_BEFORESEND")?>

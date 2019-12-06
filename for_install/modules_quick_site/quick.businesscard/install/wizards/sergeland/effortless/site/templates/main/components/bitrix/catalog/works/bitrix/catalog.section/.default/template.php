@@ -35,7 +35,7 @@ $this->setFrameMode(true);?>
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>
 			<?elseif(is_array($arItem["PREVIEW_PICTURE"])):?>
@@ -55,7 +55,7 @@ $this->setFrameMode(true);?>
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>			
 			<?else:?>
@@ -63,7 +63,7 @@ $this->setFrameMode(true);?>
 				<div class="body">
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DETAIL")?></a>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block text-right"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DETAIL")?></a>
 				</div>
 			</div>
 			<?endif?>
@@ -75,11 +75,11 @@ $this->setFrameMode(true);?>
 		<form>
 			<div class="form-group">
 				<select class="form-control">
-					<option value=""><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_SORT")?></option>
-					<option <?if(array_key_exists("date", $_REQUEST) && array_key_exists("desc", $_REQUEST)):?>selected<?endif?> value="?date&desc"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DATE_DESC")?></option>
-					<option <?if(array_key_exists("date", $_REQUEST) && array_key_exists("asc",  $_REQUEST)):?>selected<?endif?> value="?date&asc"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_DATE_ASC")?></option>
-					<option <?if(array_key_exists("name", $_REQUEST) && array_key_exists("asc",  $_REQUEST)):?>selected<?endif?> value="?name&asc"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_NAME_ASC")?></option>
-					<option <?if(array_key_exists("name", $_REQUEST) && array_key_exists("desc", $_REQUEST)):?>selected<?endif?> value="?name&desc"><?=GetMessage("SERGELAND_EFFORTLESS_WORKS_NAME_DESC")?></option>			
+					<option value=""><?=GetMessage("QUICK_EFFORTLESS_WORKS_SORT")?></option>
+					<option <?if(array_key_exists("date", $_REQUEST) && array_key_exists("desc", $_REQUEST)):?>selected<?endif?> value="?date&desc"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DATE_DESC")?></option>
+					<option <?if(array_key_exists("date", $_REQUEST) && array_key_exists("asc",  $_REQUEST)):?>selected<?endif?> value="?date&asc"><?=GetMessage("QUICK_EFFORTLESS_WORKS_DATE_ASC")?></option>
+					<option <?if(array_key_exists("name", $_REQUEST) && array_key_exists("asc",  $_REQUEST)):?>selected<?endif?> value="?name&asc"><?=GetMessage("QUICK_EFFORTLESS_WORKS_NAME_ASC")?></option>
+					<option <?if(array_key_exists("name", $_REQUEST) && array_key_exists("desc", $_REQUEST)):?>selected<?endif?> value="?name&desc"><?=GetMessage("QUICK_EFFORTLESS_WORKS_NAME_DESC")?></option>
 				</select>
 			</div>
 		</form>

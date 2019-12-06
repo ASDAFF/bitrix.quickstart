@@ -31,12 +31,12 @@ $this->setFrameMode(true);?>
 				<div class="body">
 					<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 					<div class="tags mb-10">
-						<span class="badge transparent-bg"><?if(!empty($arItem["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_FROM")?> <?=$arItem["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arItem["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_TO")?> <?=$arItem["DISPLAY_ACTIVE_TO"]?><?endif?></span>
+						<span class="badge transparent-bg"><?if(!empty($arItem["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_FROM")?> <?=$arItem["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arItem["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_TO")?> <?=$arItem["DISPLAY_ACTIVE_TO"]?><?endif?></span>
 					</div>
 					<?endif?>
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="pr-5"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a> <?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-20"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="pr-5"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a> <?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-20"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?>
 				</div>
 			</div>
 			<?elseif(is_array($arItem["PREVIEW_PICTURE"]) && $arParams["DISPLAY_PICTURE"]!="N"):?>	
@@ -55,12 +55,12 @@ $this->setFrameMode(true);?>
 				<div class="body">
 					<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 					<div class="tags mb-10">
-						<span class="badge transparent-bg"><?if(!empty($arItem["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_FROM")?> <?=$arItem["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arItem["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_TO")?> <?=$arItem["DISPLAY_ACTIVE_TO"]?><?endif?></span>
+						<span class="badge transparent-bg"><?if(!empty($arItem["DISPLAY_ACTIVE_FROM"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_FROM")?> <?=$arItem["DISPLAY_ACTIVE_FROM"]?><?endif?> <?if(!empty($arItem["DISPLAY_ACTIVE_TO"])):?><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_TO")?> <?=$arItem["DISPLAY_ACTIVE_TO"]?><?endif?></span>
 					</div>
 					<?endif?>
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="pr-5"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a> <?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-20"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?>
+					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="pr-5"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a> <?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-20"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?>
 				</div>
 			</div>
 			<?else:?>
@@ -73,7 +73,7 @@ $this->setFrameMode(true);?>
 					<?endif?>
 					<h3 class="title"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
 					<p class="mb-10"><?=$arItem["PREVIEW_TEXT"]?></p>
-					<?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-15 pull-left"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?> <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block pr-10 text-right"><?=GetMessage("SERGELAND_EFFORTLESS_ACTIONS_DETAIL")?></a>
+					<?if(!empty($arItem["IBLOCK_SECTION"]["NAME"])):?><span class="small pl-15 pull-left"><i class="pr-5 fa fa-tags"></i> <?=$arItem["IBLOCK_SECTION"]["NAME"]?></span><?endif?> <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="btn-block pr-10 text-right"><?=GetMessage("QUICK_EFFORTLESS_ACTIONS_DETAIL")?></a>
 				</div>
 			</div>			
 			<?endif?>

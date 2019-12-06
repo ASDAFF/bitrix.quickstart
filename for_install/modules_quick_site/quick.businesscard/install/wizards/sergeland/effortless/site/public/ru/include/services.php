@@ -1,11 +1,11 @@
-<div class="page-top object-non-visible <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_BG", "white-bg", SITE_ID))?>" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+<div class="page-top object-non-visible <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_SERVICES_BG", "white-bg", SITE_ID))?>" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-center title">Услуги компании</h1>
 				<div class="separator"></div>
 				<p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p>
-				<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_VER", "services-ver-1", SITE_ID)), SITE_ID)), 
+				<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_SERVICES_VER", (!empty($_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_SERVICES_VER", "services-ver-1", SITE_ID)), SITE_ID)), 
 				Array(
 						"IBLOCK_TYPE" => "#IBLOCK_TYPE_SERVICES_MAIN#",
 						"IBLOCK_ID" => "#IBLOCK_ID_SERVICES_MAIN#",
@@ -77,7 +77,7 @@
 						"SET_BROWSER_TITLE" => "Y",
 						"BASKET_URL" => "/personal/basket.php",
 						"PAGER_TITLE" => "",
-						"ICONS_VIEW" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SERVICES_ICONS_VIEW", "box-style-2", SITE_ID)),
+						"ICONS_VIEW" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SERVICES_ICONS_VIEW"] : COption::GetOptionString("effortless", "QUICK_THEME_SERVICES_ICONS_VIEW", "box-style-2", SITE_ID)),
 					),
 					false
 				);?>				

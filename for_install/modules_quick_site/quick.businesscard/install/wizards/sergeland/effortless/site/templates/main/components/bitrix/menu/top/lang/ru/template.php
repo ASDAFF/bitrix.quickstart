@@ -1,4 +1,4 @@
 <?
-$MESS ['SERGELAND_EFFORTLESS_MENU'] = "Меню";
+$MESS ['QUICK_EFFORTLESS_MENU'] = "Меню";
 $MESS ['MENU_ITEM_ACCESS_DENIED'] = "Доступ запрещен";
 ?>

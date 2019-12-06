@@ -1,4 +1,4 @@
-<div class="section <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_BG", "white-bg", SITE_ID))?> clearfix">
+<div class="section <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["PRODUCTS_POPULAR_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_PRODUCTS_POPULAR_BG", "white-bg", SITE_ID))?> clearfix">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -102,7 +102,7 @@
 						"SET_BROWSER_TITLE" => "Y",
 						"BASKET_URL" => "/personal/basket.php",
 						"PAGER_TITLE" => "",
-						"AUTOPLAY" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)),
+						"AUTOPLAY" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["PRODUCTS_POPULAR_AUTOPLAY"] : COption::GetOptionString("effortless", "QUICK_THEME_PRODUCTS_POPULAR_AUTOPLAY", "carousel", SITE_ID)),
 					),
 					false
 				);?>

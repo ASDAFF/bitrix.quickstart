@@ -1,14 +1,14 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS"] = "Êîììåíòàðèè";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¸";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_ERROR"] = "Îøèáêà îòïðàâêè êîììåíòàðèÿ. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SUCCESS"] = "Ñïàñèáî, âàø êîììåíòàðèé áóäåò îïóáëèêîâàí ïîñëå ïðîâåðêè.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ñ. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°Ñˆ ÐºÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹ Ð±ÑƒÐ´ÐµÑ‚ Ð¾Ð¿ÑƒÐ±Ð»Ð¸ÐºÐ¾Ð²Ð°Ð½ Ð¿Ð¾ÑÐ»Ðµ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ¸.";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_NAME_PLACEHOLDER"] = "Èìÿ";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_NAME_PLACEHOLDER"] = "Ð˜Ð¼Ñ";
 $MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_EMAIL_PLACEHOLDER"] = "Email";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_COMMENT_PLACEHOLDER"] = "Êîììåíòàðèé";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_COMMENT_PLACEHOLDER"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
 
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SEND"] = "Îòïðàâèòü";
-$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_REQ"] = "Îáÿçàòåëüíûå äëÿ çàïîëíåíèÿ ïîëÿ";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_SEND"] = "ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ";
+$MESS["SERGELAND_EFFORTLESS_ARTICLES_COMMENTS_REQ"] = "ÐžÐ±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð´Ð»Ñ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ Ð¿Ð¾Ð»Ñ";
 ?>

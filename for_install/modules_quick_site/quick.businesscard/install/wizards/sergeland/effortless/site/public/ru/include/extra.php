@@ -1,5 +1,5 @@
-<section class="main-container <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_BG", "gray-bg", SITE_ID))?>">
-	<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["EXTRA_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_EXTRA_VER", "extra-ver-1", SITE_ID)), 
+<section class="main-container <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["EXTRA_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["EXTRA_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_EXTRA_BG", "gray-bg", SITE_ID))?>">
+	<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["QUICK_THEME"][SITE_ID]["EXTRA_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["EXTRA_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_EXTRA_VER", "extra-ver-1", SITE_ID)), 
 	Array(
 			"IBLOCK_TYPE" => "#IBLOCK_TYPE_EXTRA#",
 			"IBLOCK_ID" => "#IBLOCK_ID_EXTRA#",

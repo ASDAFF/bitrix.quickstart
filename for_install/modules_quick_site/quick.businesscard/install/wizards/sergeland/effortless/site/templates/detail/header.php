@@ -31,9 +31,9 @@
 	<?$APPLICATION->ShowCSS();?>
 
 	<!-- Theme CSS -->
-	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/color/<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["COLOR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["COLOR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_COLOR", "red", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
-	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/background/<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BACKGROUND"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BACKGROUND"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BACKGROUND", "background0", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
-	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/boxed/<?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "SERGELAND_THEME_BOXED", "standard", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
+	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/color/<?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["COLOR"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["COLOR"] : COption::GetOptionString("effortless", "QUICK_THEME_COLOR", "red", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
+	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/background/<?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["BACKGROUND"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["BACKGROUND"] : COption::GetOptionString("effortless", "QUICK_THEME_BACKGROUND", "background0", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
+	<link href="<?=SITE_TEMPLATE_PATH?>/css/theme/boxed/<?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["BOXED"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["BOXED"] : COption::GetOptionString("effortless", "QUICK_THEME_BOXED", "standard", SITE_ID))?>.css" rel="stylesheet" type="text/css">	
 
 	<script src="<?=SITE_TEMPLATE_PATH?>/plugins/jquery.min.js"></script>
 	<script src="<?=SITE_TEMPLATE_PATH?>/bootstrap/js/bootstrap.min.js"></script>
@@ -64,9 +64,9 @@
 			"PATH" => "#SITE_DIR#include/line.php", 
 		),
 		false,
-		array("ACTIVE_COMPONENT" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LINE", "N", SITE_ID)))
+		array("ACTIVE_COMPONENT" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["LINE"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["LINE"] : COption::GetOptionString("effortless", "QUICK_THEME_LINE", "N", SITE_ID)))
 	);?>
-	<div class="header-top <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_BG", "white", SITE_ID))?>">
+	<div class="header-top <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["HEADER_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["HEADER_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_HEADER_BG", "white", SITE_ID))?>">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-8 col-sm-4 col-md-4">
@@ -86,7 +86,7 @@
 				<div class="col-xs-4 col-sm-3 col-md-4">
 					<div class="header-top-dropdown">
 						<div class="btn-group dropdown">
-							<button type="button" class="btn dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown"><i class="fa fa-phone text-default"></i> <?=GetMessage("SERGELAND_EFFORTLESS_HEADER_CALLBACK")?></button>
+							<button type="button" class="btn dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown"><i class="fa fa-phone text-default"></i> <?=GetMessage("QUICK_EFFORTLESS_HEADER_CALLBACK")?></button>
 							<button type="button" class="btn dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"><i class="fa fa-phone text-default"></i></button>									
 							<ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 								<li>
@@ -99,7 +99,7 @@
 							</ul>
 						</div>
 						<div class="btn-group dropdown">
-							<button type="button" class="btn dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown"><i class="fa fa-search text-default"></i> <?=GetMessage("SERGELAND_EFFORTLESS_HEADER_SEARCH")?></button>
+							<button type="button" class="btn dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown"><i class="fa fa-search text-default"></i> <?=GetMessage("QUICK_EFFORTLESS_HEADER_SEARCH")?></button>
 							<button type="button" class="btn dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"><i class="fa fa-search text-default"></i></button>
 							<ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 								<li>
@@ -148,7 +148,7 @@
 		});		
 	});
 	</script>
-	<header class="header <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID))?> <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "SERGELAND_THEME_MENU", "float", SITE_ID))?> <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["HEADER_MENU_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_HEADER_MENU_BG", "white", SITE_ID))?> clearfix">
+	<header class="header <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["MENU_TRANSPARENT"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["MENU_TRANSPARENT"] : COption::GetOptionString("effortless", "QUICK_THEME_MENU_TRANSPARENT", "menu-transparent", SITE_ID))?> <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["MENU"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["MENU"] : COption::GetOptionString("effortless", "QUICK_THEME_MENU", "float", SITE_ID))?> <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["HEADER_MENU_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["HEADER_MENU_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_HEADER_MENU_BG", "white", SITE_ID))?> clearfix">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
@@ -201,7 +201,7 @@
 	<section class="main-container">
 		<div class="container">
 			<div class="row">
-				<?if((!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "SERGELAND_THEME_SIDEBAR", "left", SITE_ID)) == "left"):?>
+				<?if((!empty($_SESSION["QUICK_THEME"][SITE_ID]["SIDEBAR"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["SIDEBAR"] : COption::GetOptionString("effortless", "QUICK_THEME_SIDEBAR", "left", SITE_ID)) == "left"):?>
 				<div class="col-md-3 hidden-xs hidden-sm">
 					<div class="sidebar">
 						<div class="block">

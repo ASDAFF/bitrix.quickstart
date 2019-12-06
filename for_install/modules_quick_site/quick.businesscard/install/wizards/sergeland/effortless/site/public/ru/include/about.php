@@ -1,4 +1,4 @@
-<div class="section <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_BG", "white-bg", SITE_ID))?> clearfix">
+<div class="section <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["ABOUT_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["ABOUT_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_ABOUT_BG", "white-bg", SITE_ID))?> clearfix">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -23,7 +23,7 @@
 					<div class="col-md-6">
 						<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
 								"AREA_FILE_SHOW" => "file",
-								"PATH" => "#SITE_DIR#include/".(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_ABOUT_VER", "about-news", SITE_ID)).".php"
+								"PATH" => "#SITE_DIR#include/".(!empty($_SESSION["QUICK_THEME"][SITE_ID]["ABOUT_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["ABOUT_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_ABOUT_VER", "about-news", SITE_ID)).".php"
 							),
 							false,
 							array("ACTIVE_COMPONENT" => "Y")

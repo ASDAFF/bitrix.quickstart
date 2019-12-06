@@ -1,8 +1,8 @@
-<div class="section text-muted footer-top <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_BG", "gray-bg", SITE_ID))?> clearfix">
+<div class="section text-muted footer-top <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["LOGO_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["LOGO_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_LOGO_BG", "gray-bg", SITE_ID))?> clearfix">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-			<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["LOGO_VER"] : COption::GetOptionString("effortless", "SERGELAND_THEME_LOGO_VER", "logo-ver-1", SITE_ID)), Array(
+			<?$APPLICATION->IncludeComponent("bitrix:catalog.section", (!empty($_SESSION["QUICK_THEME"][SITE_ID]["LOGO_VER"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["LOGO_VER"] : COption::GetOptionString("effortless", "QUICK_THEME_LOGO_VER", "logo-ver-1", SITE_ID)), Array(
 					"IBLOCK_TYPE" => "#IBLOCK_TYPE_LOGO#",
 					"IBLOCK_ID" => "#IBLOCK_ID_LOGO#",
 					"SECTION_ID" => $_REQUEST["SECTION_ID"],

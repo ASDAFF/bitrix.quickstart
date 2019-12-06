@@ -106,5 +106,5 @@ $ElementID = $APPLICATION->IncludeComponent("bitrix:catalog.element","",
 	$component
 );?>
 <?if($ElementID>0):?>
-<div class="text-right mt-10"><a href="<?=$arResult["FOLDER"]?>"><i class="fa fa-external-link"></i> <?=GetMessage("SERGELAND_EFFORTLESS_DETAIL_BACK")?></a></div>
+<div class="text-right mt-10"><a href="<?=$arResult["FOLDER"]?>"><i class="fa fa-external-link"></i> <?=GetMessage("QUICK_EFFORTLESS_DETAIL_BACK")?></a></div>
 <?endif?>

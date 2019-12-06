@@ -33,22 +33,22 @@ $APPLICATION->IncludeComponent("bitrix:catalog.section.list", "",
 	array("HIDE_ICONS" => "Y")
 );
 
-$sort_field = (!empty($_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_FIELD"]) ? $_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_FIELD"] : $arParams["ELEMENT_SORT_FIELD"]);
-$sort_order = (!empty($_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_ORDER"]) ? $_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_ORDER"] : $arParams["ELEMENT_SORT_ORDER"]);
-$page_count = (!empty($_SESSION["SERGELAND_EFFORTLESS_CATALOG_PAGE_COUNT"]) ? $_SESSION["SERGELAND_EFFORTLESS_CATALOG_PAGE_COUNT"] : $arParams["PAGE_ELEMENT_COUNT"]);
-$template 	= (!empty($_SESSION["SERGELAND_EFFORTLESS_CATALOG_TEMPLATE"])   ? $_SESSION["SERGELAND_EFFORTLESS_CATALOG_TEMPLATE"]   : ".default");
+$sort_field = (!empty($_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_FIELD"]) ? $_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_FIELD"] : $arParams["ELEMENT_SORT_FIELD"]);
+$sort_order = (!empty($_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_ORDER"]) ? $_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_ORDER"] : $arParams["ELEMENT_SORT_ORDER"]);
+$page_count = (!empty($_SESSION["QUICK_EFFORTLESS_CATALOG_PAGE_COUNT"]) ? $_SESSION["QUICK_EFFORTLESS_CATALOG_PAGE_COUNT"] : $arParams["PAGE_ELEMENT_COUNT"]);
+$template 	= (!empty($_SESSION["QUICK_EFFORTLESS_CATALOG_TEMPLATE"])   ? $_SESSION["QUICK_EFFORTLESS_CATALOG_TEMPLATE"]   : ".default");
 
 if(array_key_exists("page_element_count", $_REQUEST))
 	$page_count = $_REQUEST["page_element_count"];
 
 // uncomment for save $page_count in session
 if( empty($arParams["PAGE_ELEMENT_COUNT_IN_SESSION"]) || $arParams["PAGE_ELEMENT_COUNT_IN_SESSION"] == "Y")
-	 $_SESSION["SERGELAND_EFFORTLESS_CATALOG_PAGE_COUNT"] = $page_count;
+	 $_SESSION["QUICK_EFFORTLESS_CATALOG_PAGE_COUNT"] = $page_count;
 
 if(array_key_exists("view", $_REQUEST) && in_array($_REQUEST["view"], array("tile", "price", "list")))
 	$template = $_REQUEST["view"];
 
-$_SESSION["SERGELAND_EFFORTLESS_CATALOG_TEMPLATE"] = $template;
+$_SESSION["QUICK_EFFORTLESS_CATALOG_TEMPLATE"] = $template;
 
 if(array_key_exists("desc", $_REQUEST))
 {
@@ -63,8 +63,8 @@ if(array_key_exists("desc", $_REQUEST))
 	if(array_key_exists("name", $_REQUEST))
 		$sort_field = "name";
 
-	$_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_FIELD"] = $sort_field;
-	$_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_ORDER"] = $sort_order;	
+	$_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_FIELD"] = $sort_field;
+	$_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_ORDER"] = $sort_order;
 }
 
 if(array_key_exists("asc", $_REQUEST))
@@ -80,8 +80,8 @@ if(array_key_exists("asc", $_REQUEST))
 	if(array_key_exists("name", $_REQUEST))
 		$sort_field = "name";
 	
-	$_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_FIELD"] = $sort_field;
-	$_SESSION["SERGELAND_EFFORTLESS_CATALOG_SORT_ORDER"] = $sort_order;
+	$_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_FIELD"] = $sort_field;
+	$_SESSION["QUICK_EFFORTLESS_CATALOG_SORT_ORDER"] = $sort_order;
 }
 
 $APPLICATION->IncludeComponent("bitrix:catalog.section", $template,

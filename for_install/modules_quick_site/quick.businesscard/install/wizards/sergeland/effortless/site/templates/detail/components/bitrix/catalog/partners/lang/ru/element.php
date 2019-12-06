@@ -1,3 +1,3 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_DETAIL_BACK"] = "Назад к списку";
+$MESS["QUICK_EFFORTLESS_DETAIL_BACK"] = "Назад к списку";
 ?>

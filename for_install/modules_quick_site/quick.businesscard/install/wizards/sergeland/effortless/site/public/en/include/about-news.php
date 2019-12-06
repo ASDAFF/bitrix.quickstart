@@ -73,7 +73,7 @@
 		"SET_BROWSER_TITLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
 		"PAGER_TITLE" => "",
-		"ICONS_VIEW" => (!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["NEWS_ICONS_VIEW"] : COption::GetOptionString("effortless", "SERGELAND_THEME_NEWS_ICONS_VIEW", "box-style-3", SITE_ID)),
+		"ICONS_VIEW" => (!empty($_SESSION["QUICK_THEME"][SITE_ID]["NEWS_ICONS_VIEW"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["NEWS_ICONS_VIEW"] : COption::GetOptionString("effortless", "QUICK_THEME_NEWS_ICONS_VIEW", "box-style-3", SITE_ID)),
 	),
 	false
 );?>

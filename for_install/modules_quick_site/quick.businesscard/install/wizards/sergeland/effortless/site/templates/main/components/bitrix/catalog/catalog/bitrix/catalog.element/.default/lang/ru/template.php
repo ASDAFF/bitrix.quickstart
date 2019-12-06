@@ -1,27 +1,27 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_DETAIL_BACK"] = "Íàçàä â ðàçäåë";
-$MESS["SERGELAND_EFFORTLESS_OF"] = "èç";
+$MESS["QUICK_EFFORTLESS_DETAIL_BACK"] = "ÐÐ°Ð·Ð°Ð´ Ð² Ñ€Ð°Ð·Ð´ÐµÐ»";
+$MESS["QUICK_EFFORTLESS_OF"] = "Ð¸Ð·";
 
-$MESS["SERGELAND_EFFORTLESS_TAB_PHOTO"] = "Ôîòî";
-$MESS["SERGELAND_EFFORTLESS_TAB_VIDEO"] = "Âèäåî";
+$MESS["QUICK_EFFORTLESS_TAB_PHOTO"] = "Ð¤Ð¾Ñ‚Ð¾";
+$MESS["QUICK_EFFORTLESS_TAB_VIDEO"] = "Ð’Ð¸Ð´ÐµÐ¾";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ACTION"] = "Àêöèÿ";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_NEW"] = "Íîâèíêà";
+$MESS["QUICK_EFFORTLESS_CATALOG_ACTION"] = "ÐÐºÑ†Ð¸Ñ";
+$MESS["QUICK_EFFORTLESS_CATALOG_NEW"] = "ÐÐ¾Ð²Ð¸Ð½ÐºÐ°";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_PRESENCE"] = "Â íàëè÷èè";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_EXPECTED"] = "Îæèäàåòñÿ";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_UNDER"] = "Ïîä çàêàç";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_UNAVAILABLE"] = "Îòñóòñòâóåò";
+$MESS["QUICK_EFFORTLESS_CATALOG_PRESENCE"] = "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸";
+$MESS["QUICK_EFFORTLESS_CATALOG_EXPECTED"] = "ÐžÐ¶Ð¸Ð´Ð°ÐµÑ‚ÑÑ";
+$MESS["QUICK_EFFORTLESS_CATALOG_UNDER"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·";
+$MESS["QUICK_EFFORTLESS_CATALOG_UNAVAILABLE"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER"] = "Ïîæàëóéñòà çàïîëíèòå ôîðìó çàêàçà. Íàø ìåíåäæåð ñâÿæåòñÿ ñ âàìè â áëèæàéøåå âðåìÿ.";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ñ„Ð¾Ñ€Ð¼Ñƒ Ð·Ð°ÐºÐ°Ð·Ð°. ÐÐ°Ñˆ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ ÑÐ²ÑÐ¶ÐµÑ‚ÑÑ Ñ Ð²Ð°Ð¼Ð¸ Ð² Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐµÐµ Ð²Ñ€ÐµÐ¼Ñ.";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_ERROR"] = "Îøèáêà îòïðàâêè çàêàçà. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_SUCCESS"] = "Ñïàñèáî, âàø çàêàç îòïðàâëåí àäìèíèñòðàöèè ñàéòà.";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ð·Ð°ÐºÐ°Ð·Ð°. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°Ñˆ Ð·Ð°ÐºÐ°Ð· Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸ ÑÐ°Ð¹Ñ‚Ð°.";
 
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_NAME"] = "Èìÿ";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_PHONE"] = "Òåëåôîí";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_EMAIL"] = "Email";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_COMMENT"] = "Êîììåíòàðèé";
-$MESS["SERGELAND_EFFORTLESS_CATALOG_ORDER_SEND"] = "Çàêàçàòü òîâàð";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_NAME"] = "Ð˜Ð¼Ñ";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_EMAIL"] = "Email";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_COMMENT"] = "ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹";
+$MESS["QUICK_EFFORTLESS_CATALOG_ORDER_SEND"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ñ‚Ð¾Ð²Ð°Ñ€";
 ?>

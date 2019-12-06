@@ -46,10 +46,10 @@ $MESS["WIZ_MAP_GOOGLE_LONGITUDE_CENTER_DEF"] = "37.568039";
 $MESS["WIZ_META_DATA"] = "Metadata";
 
 $MESS["WIZ_META_DESCRIPTION"] = "Site description";
-$MESS["WIZ_DESCRIPTION"] = "This website was created on the basis of ready-made solutions �Effortless - Corporate, adaptive website� 1C-Bitrix. A complete solution suitable for posting information about any company on the Internet. Developer LLC �Serialand�. Our website www.sergeland.ru";
+$MESS["WIZ_DESCRIPTION"] = "This website was created on the basis of ready-made solutions Corporate, adaptive website 1C-Bitrix.";
 
 $MESS["WIZ_META_KEYWORDS"] = "Keywords";
-$MESS["WIZ_KEYWORDS"] = "corporate website, cheap website, make a cheap website, web development, book website, custom website, sites, cheap, cheap websites, turnkey website, buy a website, website creation, website price, website, Bitrix, 1C-Bitrix, Bitrix templates, templates, 1C Bitrix, Bitrix site templates, ready made website, buy a website ready, sale of sites, ready-made Internet site, you need a website, corporate website, corporate website turnkey, design of corporate website, create a corporate website, sergeland.ru, sergeland, LLC SergeLand";
+$MESS["WIZ_KEYWORDS"] = "corporate website, cheap website, make a cheap website, web development, book website, custom website, sites, cheap, cheap websites, turnkey website, buy a website, website creation, website price, website, Bitrix, 1C-Bitrix, Bitrix templates, templates, 1C Bitrix, Bitrix site templates, ready made website, buy a website ready, sale of sites, ready-made Internet site, you need a website, corporate website, corporate website turnkey, design of corporate website, create a corporate website";
 
 $MESS["WIZ_STEP_CT"] = "Configuring the directories";
 

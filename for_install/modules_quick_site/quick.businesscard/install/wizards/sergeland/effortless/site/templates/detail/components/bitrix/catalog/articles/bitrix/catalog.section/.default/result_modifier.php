@@ -3,9 +3,9 @@
 if (empty($arResult["ITEMS"]))
 	return;
 
-if(!function_exists(sergeland_number_ending))
+if(!function_exists(quick_number_ending))
 {
-	function sergeland_number_ending($number, $ending0, $ending1, $ending2) { 
+	function quick_number_ending($number, $ending0, $ending1, $ending2) {
 	   $num100 = $number % 100; 
 	   $num10 = $number % 10; 
 	   if ($num100 >= 5 && $num100 <= 20) { 
@@ -46,7 +46,7 @@ foreach ($arResult["ITEMS"] as $key => &$arItem)
 			break;		
 	}
 		
-	$arItem["COMMENT"]["TEXT"] =  sergeland_number_ending($arItem["COMMENT"]["COUNT"], GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENT1"), GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENT2"), GetMessage("SERGELAND_EFFORTLESS_ARTICLES_COMMENT3"));
+	$arItem["COMMENT"]["TEXT"] =  quick_number_ending($arItem["COMMENT"]["COUNT"], GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENT1"), GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENT2"), GetMessage("QUICK_EFFORTLESS_ARTICLES_COMMENT3"));
 }
 
 //if (defined("BX_COMP_MANAGED_CACHE") && is_object($GLOBALS["CACHE_MANAGER"]))

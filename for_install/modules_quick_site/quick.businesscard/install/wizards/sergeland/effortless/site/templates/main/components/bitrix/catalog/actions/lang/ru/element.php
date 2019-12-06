@@ -1,3 +1,3 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_DETAIL_BACK"] = "Íàçàä ê ñïèñêó";
+$MESS["QUICK_EFFORTLESS_DETAIL_BACK"] = "ÐÐ°Ð·Ð°Ð´ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
 ?>

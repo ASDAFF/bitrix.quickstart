@@ -1,4 +1,4 @@
-<section class="main-container <?=(!empty($_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"]) ? $_SESSION["SERGELAND_THEME"][SITE_ID]["PHOTO_BG"] : COption::GetOptionString("effortless", "SERGELAND_THEME_PHOTO_BG", "white-bg", SITE_ID))?>">
+<section class="main-container <?=(!empty($_SESSION["QUICK_THEME"][SITE_ID]["PHOTO_BG"]) ? $_SESSION["QUICK_THEME"][SITE_ID]["PHOTO_BG"] : COption::GetOptionString("effortless", "QUICK_THEME_PHOTO_BG", "white-bg", SITE_ID))?>">
 	<div class="container">
 		<div class="row">
 			<div class="main col-md-12">

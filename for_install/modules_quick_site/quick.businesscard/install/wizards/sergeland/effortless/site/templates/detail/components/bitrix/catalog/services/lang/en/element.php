@@ -1,3 +1,3 @@
 <?
-$MESS["SERGELAND_EFFORTLESS_DETAIL_BACK"] = "Back to section";
+$MESS["QUICK_EFFORTLESS_DETAIL_BACK"] = "Back to section";
 ?>

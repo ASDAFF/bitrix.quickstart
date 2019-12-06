@@ -1,28 +1,28 @@
 <?
-$MESS["T_ACTIONS_DETAIL_BACK"] = "Âîçâðàò ê ñïèñêó";
-$MESS["SERGELAND_EFFORTLESS_OF"] = "èç";
+$MESS["T_ACTIONS_DETAIL_BACK"] = "Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‚ Ðº ÑÐ¿Ð¸ÑÐºÑƒ";
+$MESS["QUICK_EFFORTLESS_OF"] = "Ð¸Ð·";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_BEFORESEND"] = "Ïîæàëóéñòà çàïîëíèòå îáÿçàòåëüíûå ïîëÿ.";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_ERROR"] = "Îøèáêà îòïðàâêè ôîðìû. Ïîïðîáóéòå åùå ðàç.";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_SUCCESS"] = "Ñïàñèáî, æäèòå çâîíêà.";
+$MESS["QUICK_EFFORTLESS_ACTIONS_BEFORESEND"] = "ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ Ð¿Ð¾Ð»Ñ.";
+$MESS["QUICK_EFFORTLESS_ACTIONS_ERROR"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð¾Ñ‚Ð¿Ñ€Ð°Ð²ÐºÐ¸ Ñ„Ð¾Ñ€Ð¼Ñ‹. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·.";
+$MESS["QUICK_EFFORTLESS_ACTIONS_SUCCESS"] = "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð¶Ð´Ð¸Ñ‚Ðµ Ð·Ð²Ð¾Ð½ÐºÐ°.";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_NAME"] = "Âàøå èìÿ";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_PHONE"] = "Òåëåôîí";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_SEND"] = "Çàêàçàòü óñëóãó";
+$MESS["QUICK_EFFORTLESS_ACTIONS_NAME"] = "Ð’Ð°ÑˆÐµ Ð¸Ð¼Ñ";
+$MESS["QUICK_EFFORTLESS_ACTIONS_PHONE"] = "Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½";
+$MESS["QUICK_EFFORTLESS_ACTIONS_SEND"] = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑƒÑÐ»ÑƒÐ³Ñƒ";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_ACTION"] = "Àêöèÿ";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_NEW"] = "Íîâèíêà";
+$MESS["QUICK_EFFORTLESS_ACTIONS_ACTION"] = "ÐÐºÑ†Ð¸Ñ";
+$MESS["QUICK_EFFORTLESS_ACTIONS_NEW"] = "ÐÐ¾Ð²Ð¸Ð½ÐºÐ°";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_PRESENCE"] = "Â íàëè÷èè";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_EXPECTED"] = "Îæèäàåòñÿ";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_UNDER"] = "Ïîä çàêàç";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_UNAVAILABLE"] = "Îòñóòñòâóåò";
+$MESS["QUICK_EFFORTLESS_ACTIONS_PRESENCE"] = "Ð’ Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ð¸";
+$MESS["QUICK_EFFORTLESS_ACTIONS_EXPECTED"] = "ÐžÐ¶Ð¸Ð´Ð°ÐµÑ‚ÑÑ";
+$MESS["QUICK_EFFORTLESS_ACTIONS_UNDER"] = "ÐŸÐ¾Ð´ Ð·Ð°ÐºÐ°Ð·";
+$MESS["QUICK_EFFORTLESS_ACTIONS_UNAVAILABLE"] = "ÐžÑ‚ÑÑƒÑ‚ÑÑ‚Ð²ÑƒÐµÑ‚";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_FROM"] = "ñ";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_TO"] = "ïî";
+$MESS["QUICK_EFFORTLESS_ACTIONS_FROM"] = "Ñ";
+$MESS["QUICK_EFFORTLESS_ACTIONS_TO"] = "Ð¿Ð¾";
 
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_BUY"] = "Êóïèòü";
-$MESS["SERGELAND_EFFORTLESS_ACTIONS_DETAIL"] = "Ïîäðîáíåå";
+$MESS["QUICK_EFFORTLESS_ACTIONS_BUY"] = "ÐšÑƒÐ¿Ð¸Ñ‚ÑŒ";
+$MESS["QUICK_EFFORTLESS_ACTIONS_DETAIL"] = "ÐŸÐ¾Ð´Ñ€Ð¾Ð±Ð½ÐµÐµ";
 
-$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Áóäåò óäàëåíà âñÿ èíôîðìàöèÿ, ñâÿçàííàÿ ñ ýòîé çàïèñüþ. Ïðîäîëæèòü?";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Ð‘ÑƒÐ´ÐµÑ‚ ÑƒÐ´Ð°Ð»ÐµÐ½Ð° Ð²ÑÑ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ, ÑÐ²ÑÐ·Ð°Ð½Ð½Ð°Ñ Ñ ÑÑ‚Ð¾Ð¹ Ð·Ð°Ð¿Ð¸ÑÑŒÑŽ. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ?";
 ?>

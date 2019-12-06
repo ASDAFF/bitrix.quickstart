@@ -3,13 +3,13 @@
 
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
-if(!function_exists("sergeland_convert_charset_array"))
+if(!function_exists("quick_convert_charset_array"))
 {
-	function sergeland_convert_charset_array(&$arItem, $LANG_CHARSET_BEGIN, $LANG_CHARSET_END)
+	function quick_convert_charset_array(&$arItem, $LANG_CHARSET_BEGIN, $LANG_CHARSET_END)
 	{
 		foreach($arItem as &$value){ 
 			 if(is_array($value))
-				 sergeland_convert_charset_array($value, $LANG_CHARSET_BEGIN, $LANG_CHARSET_END);
+				 quick_convert_charset_array($value, $LANG_CHARSET_BEGIN, $LANG_CHARSET_END);
 			else $value = iconv($LANG_CHARSET_BEGIN, $LANG_CHARSET_END, urldecode($value));
 		}
 	}
@@ -26,7 +26,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	
 	if(!array_key_exists( "COMMENT", $_POST["CALLBACK"]))
 		 $_POST["CALLBACK"]["COMMENT"] = "-";
@@ -47,7 +47,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 		 CEvent::SendImmediate("CALLBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CALLBACK"]);
 	//else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -64,7 +64,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	
 	if(!array_key_exists( "COMMENT", $_POST["CALLBACK_MODAL"]))
 		 $_POST["CALLBACK_MODAL"]["COMMENT"] = "-";
@@ -85,7 +85,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 		 CEvent::SendImmediate("CALLBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CALLBACK_MODAL"]);
 	//else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -102,10 +102,10 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["FEEDBACK"]);
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -122,10 +122,10 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["FEEDBACK_MODAL"]);
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -140,7 +140,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	$SITE_ID = $_POST["VACANCIES"]["SITE_ID"];
 	$arr["MESSAGE"]["ERROR"] = 0;
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 
 	$dbSite = CSite::GetByID($SITE_ID);
 	if($arSite = $dbSite -> Fetch())
@@ -151,7 +151,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 
 	if(!empty($_FILES['FILE']['tmp_name']))
 	{
-		sergeland_convert_charset_array($_FILES, "UTF-8", $LANG_CHARSET);
+		quick_convert_charset_array($_FILES, "UTF-8", $LANG_CHARSET);
 
 		//создаем папку загрузки файла	
 		$uploaddir = $SITE_DIR.'images/'.md5(time()).'/';
@@ -169,7 +169,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arr["MESSAGE"]["ERROR"]<1)
 		CEvent::SendImmediate("VACANCIES_FORM_EFFORTLESS", $SITE_ID, $_POST["VACANCIES"]);
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -186,7 +186,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 
 	if(!array_key_exists( "STARS", $_POST["COMMENTS"]))
 		 $_POST["COMMENTS"]["STARS"] = "";
@@ -209,7 +209,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 		 CEvent::SendImmediate("COMMENTS_FORM_EFFORTLESS", $SITE_ID, $_POST["COMMENTS"]);
 	else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -226,7 +226,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	 
 	// save to infoblock information
 	\Bitrix\Main\Loader::includeModule("iblock");
@@ -250,7 +250,7 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 		 CEvent::SendImmediate("ORDER_FORM_EFFORTLESS", $SITE_ID, $_POST["ORDER"]);
 	else $arr["MESSAGE"]["ERROR"] = $el->LAST_ERROR;
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;
@@ -267,10 +267,10 @@ if( isset($_SERVER[ "HTTP_X_REQUESTED_WITH" ]) && $_SERVER[ "REQUEST_METHOD" ]==
 	if($arSite = $dbSite -> Fetch())
 		$LANG_CHARSET = $arSite["CHARSET"];
 
-	sergeland_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
+	quick_convert_charset_array($_POST, "UTF-8", $LANG_CHARSET);
 	CEvent::SendImmediate("FEEDBACK_FORM_EFFORTLESS", $SITE_ID, $_POST["CONTACTS"]);
 
-	sergeland_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
+	quick_convert_charset_array($arr, $LANG_CHARSET, "UTF-8");
 	echo json_encode($arr);
 
 	return;

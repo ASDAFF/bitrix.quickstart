@@ -1,3 +1,3 @@
 <?
-$MESS["CSST_TEMPLATE_NAME"] = "Øàáëîí detail - Êîðïîðàòèâíûé ñàéò îò SergeLand";
+$MESS["CSST_TEMPLATE_NAME"] = "Ð¨Ð°Ð±Ð»Ð¾Ð½ detail - ÐšÐ¾Ñ€Ð¿Ð¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ‹Ð¹ ÑÐ°Ð¹Ñ‚";
 ?>

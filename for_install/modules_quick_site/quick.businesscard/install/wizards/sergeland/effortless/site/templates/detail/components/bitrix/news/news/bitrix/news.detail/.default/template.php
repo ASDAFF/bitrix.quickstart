@@ -23,7 +23,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });
@@ -91,13 +91,13 @@ jQuery(function(){
 	<div class="col-md-12">
 		<div id="results-callback">
 			<div class="alert alert-danger" id="beforesend-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_NEWS_BEFORESEND")?>
+				<?=GetMessage("QUICK_EFFORTLESS_NEWS_BEFORESEND")?>
 			</div>
 			<div class="alert alert-danger" id="error-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_NEWS_ERROR")?>
+				<?=GetMessage("QUICK_EFFORTLESS_NEWS_ERROR")?>
 			</div> 
 			<div class="alert alert-success" id="success-callback">
-				<?=GetMessage("SERGELAND_EFFORTLESS_NEWS_SUCCESS")?>
+				<?=GetMessage("QUICK_EFFORTLESS_NEWS_SUCCESS")?>
 			</div>
 		</div>
 	</div>
@@ -108,13 +108,13 @@ jQuery(function(){
 		<input type="hidden" name="CALLBACK[TITLE]" value="<?=$arResult["NAME"]?>"/>
 		<div class="col-md-4 col-sm-6">
 			<div class="form-group has-feedback">
-				<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_NEWS_NAME")?>" class="form-control req">
+				<input type="text" name="CALLBACK[NAME]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_NEWS_NAME")?>" class="form-control req">
 				<i class="fa fa-user form-control-feedback"></i>
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-6">
 			<div class="form-group has-feedback">
-				<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_NEWS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
+				<input type="tel" name="CALLBACK[PHONE]" placeholder="<?=GetMessage("QUICK_EFFORTLESS_NEWS_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="form-control req">
 				<i class="fa fa-phone form-control-feedback"></i>
 			</div>
 		</div>
@@ -133,7 +133,7 @@ jQuery(function(){
 		type:"image",
 		gallery: {
 			enabled: true,
-			tCounter : "%curr% <?=GetMessage("SERGELAND_EFFORTLESS_OF")?> %total%"
+			tCounter : "%curr% <?=GetMessage("QUICK_EFFORTLESS_OF")?> %total%"
 		}		
 	});
 });

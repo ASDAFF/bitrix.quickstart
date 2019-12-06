@@ -26,7 +26,7 @@ if(!empty($arResult["ITEMS"])):
 		<span class="post-info"><?=$arItem["~DISPLAY_ACTIVE_FROM"]["FULL"]?></span>
 		<h2><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h2>
 		<?if(!empty($arItem["PREVIEW_TEXT"])):?><p><?=$arItem["PREVIEW_TEXT"]?></p><?endif?>
-		<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="link"><span><?=GetMessage("SERGELAND_EFFORTLESS_NEWS_DETAIL")?></span></a>
+		<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="link"><span><?=GetMessage("QUICK_EFFORTLESS_NEWS_DETAIL")?></span></a>
 	</div>
 </div>
 <?endforeach?>

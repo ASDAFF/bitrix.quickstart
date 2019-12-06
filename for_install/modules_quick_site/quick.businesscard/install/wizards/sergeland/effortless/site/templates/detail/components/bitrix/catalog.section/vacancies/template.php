@@ -87,13 +87,13 @@ foreach($arResult["~ITEMS"] as $key => $arSection):?>
 					<div class="col-md-12 mt-20">
 						<div id="results-vacancies-<?=$arItem['ID']?>">
 							<div class="alert alert-danger" id="beforesend-vacancies-<?=$arItem['ID']?>">
-								<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_BEFORESEND")?>
+								<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_BEFORESEND")?>
 							</div>
 							<div class="alert alert-danger" id="error-vacancies-<?=$arItem['ID']?>">
-								<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_ERROR")?>
+								<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_ERROR")?>
 							</div>
 							<div class="alert alert-success" id="success-vacancies-<?=$arItem['ID']?>">
-								<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_SUCCESS")?>
+								<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_SUCCESS")?>
 							</div>
 						</div>
 						<img src="<?=SITE_DIR?>images/loading.gif" alt="Loading" id="form-loading-vacancies-<?=$arItem['ID']?>" class="pull-right mb-10" />
@@ -102,25 +102,25 @@ foreach($arResult["~ITEMS"] as $key => $arSection):?>
 							<input type="hidden" name="VACANCIES[SITE_ID]" value="<?=SITE_ID?>"/>
 							<input type="hidden" name="VACANCIES[TITLE]" value="<?=$arItem["NAME"]?>"/>							
 							<div class="form-group has-feedback">
-								<input type="text" name="VACANCIES[NAME]" class="form-control req" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_NAME")?>">
+								<input type="text" name="VACANCIES[NAME]" class="form-control req" placeholder="<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_NAME")?>">
 								<i class="fa fa-user form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="tel" name="VACANCIES[PHONE]" class="form-control req" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
+								<input type="tel" name="VACANCIES[PHONE]" class="form-control req" placeholder="<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_PHONE")?>" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}">
 								<i class="fa fa-phone form-control-feedback"></i>
 							</div>
 							<div class="form-group has-feedback">
-								<input type="email" name="VACANCIES[EMAIL]" class="form-control" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_EMAIL")?>">
+								<input type="email" name="VACANCIES[EMAIL]" class="form-control" placeholder="<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_EMAIL")?>">
 								<i class="fa fa-envelope form-control-feedback"></i>
 							</div>
 							<div class="form-group">
 								<input type="file" name="FILE">
 							</div>
 							<div class="form-group has-feedback">
-								<textarea name="VACANCIES[COMMENT]" class="form-control" rows="4" placeholder="<?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_COMMENT")?>"></textarea>
+								<textarea name="VACANCIES[COMMENT]" class="form-control" rows="4" placeholder="<?=GetMessage("QUICK_EFFORTLESS_VACANCIES_COMMENT")?>"></textarea>
 								<i class="fa fa-pencil form-control-feedback"></i>
 							</div>
-							<button type="submit" class="btn btn-sm btn-default pull-right"><i class="fa fa-check pr-5"></i><?=GetMessage("SERGELAND_EFFORTLESS_VACANCIES_SEND")?></button>
+							<button type="submit" class="btn btn-sm btn-default pull-right"><i class="fa fa-check pr-5"></i><?=GetMessage("QUICK_EFFORTLESS_VACANCIES_SEND")?></button>
 							<div class="clearfix"></div>
 						</form>
 					</div>

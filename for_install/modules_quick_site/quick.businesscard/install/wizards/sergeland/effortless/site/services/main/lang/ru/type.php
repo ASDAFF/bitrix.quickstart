@@ -1,5 +1,0 @@
-<?
-$MESS["EFFORTLESS_TYPE_NAME"] = "Effortless";
-$MESS["EFFORTLESS_SECTION_NAME"] = "Разделы";
-$MESS["EFFORTLESS_ELEMENT_NAME"] = "Элементы";
-?>

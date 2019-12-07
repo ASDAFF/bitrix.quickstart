@@ -1,0 +1,11 @@
+<?
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Будет удалена вся информация, связанная с этой записью. Продолжить?";
+
+$MESS["QUICK_BUSINESSCARD_CATALOG_ACTION"] = "Акция";
+$MESS["QUICK_BUSINESSCARD_CATALOG_NEW"] = "Новинка";
+
+$MESS["QUICK_BUSINESSCARD_CATALOG_PRESENCE"] = "В наличии";
+$MESS["QUICK_BUSINESSCARD_CATALOG_EXPECTED"] = "Ожидается";
+$MESS["QUICK_BUSINESSCARD_CATALOG_UNDER"] = "Под заказ";
+$MESS["QUICK_BUSINESSCARD_CATALOG_UNAVAILABLE"] = "Отсутствует";
+?>

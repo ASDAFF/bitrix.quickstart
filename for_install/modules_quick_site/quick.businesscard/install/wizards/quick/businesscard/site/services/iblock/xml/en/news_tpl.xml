@@ -1,0 +1,2382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-14T23:46:06">
+	<Metadata>
+		<Id>news-businesscard</Id>
+		<Title>News</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>19</Id>
+				<Title>Show on main</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>10</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>TOP</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>20</Id>
+				<Title>Show video in preview</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>PREVIEW_VIDEO</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>21</Id>
+				<Title>The link to the video</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>30</BitrixSort>
+				<BitrixCode>HREF_VIDEO</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>22</Id>
+				<Title>Photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>40</BitrixSort>
+				<BitrixCode>PHOTO_TOP</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>265</Id>
+				<Title>Description photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>50</BitrixSort>
+				<BitrixCode>PHOTO_TOP_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>266</Id>
+				<Title>Autoplay photo at the top</Title>
+				<Multiple>true</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>60</BitrixSort>
+				<BitrixCode>PHOTO_TOP_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>23</Id>
+				<Title>Photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>70</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>319</Id>
+				<Title>The link to the photo</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>80</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_HREF</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>63</Id>
+				<Title>Description photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>90</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>268</Id>
+				<Title>Autoplay photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>62</Id>
+				<Title>Documents</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>120</BitrixSort>
+				<BitrixCode>DOCUMENTS</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>#DOCUMENTS_XML_ID#</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>true</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>64</Id>
+				<Title>Header</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>130</BitrixSort>
+				<BitrixCode>DOCUMENTS_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:9:&quot;Documents&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>116</Id>
+				<Title>Show form</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>140</BitrixSort>
+				<BitrixCode>SHOW_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>117</Id>
+				<Title>Text on the button</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>150</BitrixSort>
+				<BitrixCode>TEXT_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:15:&quot;To order services&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>19</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>20</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>21</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>22</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>265</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>266</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>23</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>319</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>63</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>268</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>62</Id>
+				<SmartFilter>true</SmartFilter>
+				<DisplayType>P</DisplayType>
+				<ShowExpanded>true</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>64</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>116</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>117</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+		</ElementProperties>
+		<Sections>
+			<Section>
+				<Id>1</Id>
+				<Title>News company</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>company</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>2</Id>
+				<Title>News industry</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>industry</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>news-businesscard</Id>
+		<MetadataId>news-businesscard</MetadataId>
+		<Title>News</Title>
+		<BitrixCode>news-businesscard</BitrixCode>
+		<BitrixSort>50</BitrixSort>
+		<BitrixListURL>#SITE_DIR#info/news/#IBLOCK_ID#/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#info/news/#SECTION_CODE#/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#info/news/#SECTION_CODE#/</BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Elements</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Modify element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Modify section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>26</Id>
+				<Title>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>u-kompaniy-na-usn</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-07-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/84b/image_15.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/d0d/services_21.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/d0d/services_21.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/a7c/services_46.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/a7c/services_46.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<PropertyValue>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<PropertyValue>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/ff5/services_2.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/ff5/services_2.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/105/services_3.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/105/services_3.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/7aa/services_10.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/7aa/services_10.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/df0/services_36.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/df0/services_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<PropertyValue>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<PropertyValue>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+						<PropertyValue>
+							<Value>Pravitelstvo RF utverdilo novuyu versiyu gosprogrammyi «Energoeffektivnost i razvitie energetiki»</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order an audit</Value>
+						<PropertyValue>
+							<Value>To order an audit</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>27</Id>
+				<Title>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>chinovniki-prodlili-perehod</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-05-10 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/ad2/image_22.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/ad2/image_22.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/b51/image_41.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/b51/image_41.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+						<PropertyValue>
+							<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+						<PropertyValue>
+							<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/0f6/image_24.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/0f6/image_24.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/153/image_28.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/153/image_28.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/4ef/image_32.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/4ef/image_32.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+						<PropertyValue>
+							<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+						<PropertyValue>
+							<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+						<PropertyValue>
+							<Value>Federalnaya tamojennaya slujba (FTS) Rossii s 14 avgusta otmenyaet tamojennyiy tranzit po knijkam MDP (carnet TIR)</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order services</Value>
+						<PropertyValue>
+							<Value>To order services</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>79</Id>
+				<Title>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>1</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>aktsionernoe-obshchestvo-mosgaz</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-03-09 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value>https://www.youtube.com/embed/BMPOQm24DXE</Value>
+						<PropertyValue>
+							<Value>https://www.youtube.com/embed/BMPOQm24DXE</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/81a/image_42.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/81a/image_42.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/a26/image_16.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/a26/image_16.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/985/image_5.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/985/image_5.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<PropertyValue>
+							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<PropertyValue>
+							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+						<PropertyValue>
+							<Value>OAO «MosGAZ» vnedrilo ASU TP SIMATIC S7</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>36</Value>
+						<PropertyValue>
+							<Value>36</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>214</Value>
+						<PropertyValue>
+							<Value>214</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order project</Value>
+						<PropertyValue>
+							<Value>To order project</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>80</Id>
+				<Title>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>1</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>konstruktorskoe-byuro-im-pavlova</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-01-16 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/c14/istock_000016523977_large.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/b6a/image_3.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/b6a/image_3.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<PropertyValue>
+							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/518/image_18.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/518/image_18.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/8e5/image_12.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/8e5/image_12.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/6f7/image_30.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/6f7/image_30.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<PropertyValue>
+							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<PropertyValue>
+							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+						<PropertyValue>
+							<Value>FGUP «Konstruktorskoe Byuro im. Pavlova» avtomatizirovalo protsess razrabotki</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order services</Value>
+						<PropertyValue>
+							<Value>To order services</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>81</Id>
+				<Title>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>optovuyu-i-roznichnuyu-torgovlyu</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-04-22 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/e68/image_18.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/9ef/image_46.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/9ef/image_46.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+						<PropertyValue>
+							<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/d41/image_26.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/d41/image_26.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/77a/image_38.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/77a/image_38.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/2cf/image_53.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/2cf/image_53.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+						<PropertyValue>
+							<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+						<PropertyValue>
+							<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+						<PropertyValue>
+							<Value>Minenergo utverdilo Strategiyu razvitiya himicheskogo i neftehimicheskogo kompleksa do 2030 goda</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>36</Value>
+						<PropertyValue>
+							<Value>36</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order project</Value>
+						<PropertyValue>
+							<Value>To order project</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>82</Id>
+				<Title>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>privlech-k-ugolovnoy-otvetstvennosti</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-03-12 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/8cd/image_14.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/6e1/image_36.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/6e1/image_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/66d/image_12.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/66d/image_12.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/179/image_4.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/179/image_4.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/bde/image_3.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/bde/image_3.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/08d/image_29.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/08d/image_29.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/4ee/image_19.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/4ee/image_19.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+						<PropertyValue>
+							<Value>Obyazannost utverjdat zaklyuchenie ekspertizyi promyishlennoy bezopasnosti v Rostehnadzore mogut otmenit</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>213</Value>
+						<PropertyValue>
+							<Value>213</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>214</Value>
+						<PropertyValue>
+							<Value>214</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order project</Value>
+						<PropertyValue>
+							<Value>To order project</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>84</Id>
+				<Title>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>1</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>tszh-gup-novye-cheryemushki</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-04-16 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/0fe/image_16.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value>news_files/iblock/fe0/image_7.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/fe0/image_7.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<PropertyValue>
+							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value>news_files/iblock/09e/image_15.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/09e/image_15.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/386/image_36.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/386/image_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>news_files/iblock/d0d/image_21.jpg</Value>
+						<PropertyValue>
+							<Value>news_files/iblock/d0d/image_21.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<PropertyValue>
+							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<PropertyValue>
+							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+						<PropertyValue>
+							<Value>TSJ GUP «Novyie CHer¸mushki» primenyaet nemetskie standartyi v svoey rabote</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>212</Value>
+						<PropertyValue>
+							<Value>212</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>211</Value>
+						<PropertyValue>
+							<Value>211</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value>To order project</Value>
+						<PropertyValue>
+							<Value>To order project</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>85</Id>
+				<Title>Vebinar «Moduli sbora dannyih i vvoda/vyivoda signalov. Resheniya dlya interfeysov RS-485, Ethernet, USB, Profibus i drugih shin.»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>v-tamozhennuyu-stoimost-vkhodit-nds</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-06-15 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value>https://www.youtube.com/embed/6IFPx9Sl4QA</Value>
+						<PropertyValue>
+							<Value>https://www.youtube.com/embed/6IFPx9Sl4QA</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>86</Id>
+				<Title>Schneider Electric i Gosudarstvennaya korporatsiya po atomnoy energii «Rosatom» rasshiryayut mejdunarodnoe sotrudnichestvo</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>2</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kak-provodit-auditorskuyu-proverku</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2015-02-20 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;#SITE_DIR_IMG#images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>news_files/iblock/cce/image_11.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>20</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>21</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>22</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>265</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>266</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>23</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>319</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>63</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>268</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>62</Id>
+						<Value>214</Value>
+						<PropertyValue>
+							<Value>214</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>213</Value>
+						<PropertyValue>
+							<Value>213</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>64</Id>
+						<Value>Documents</Value>
+						<PropertyValue>
+							<Value>Documents</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>116</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>117</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

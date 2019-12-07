@@ -8,9 +8,9 @@ $strPath2Lang = str_replace("\\", "/", __FILE__);
 $strPath2Lang = substr($strPath2Lang, 0, strlen($strPath2Lang)-strlen("/install/index.php"));
 include(GetLangFileName($strPath2Lang."/lang/", "/install/index.php"));
 
-Class quick_effortless extends CModule
+Class quick_businesscard extends CModule
 {
-	var $MODULE_ID = "quick.effortless";
+	var $MODULE_ID = "quick.businesscard";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -18,7 +18,7 @@ Class quick_effortless extends CModule
 	var $MODULE_CSS;
 	var $MODULE_GROUP_RIGHTS = "Y";
 
-	function quick_effortless()
+	function quick_businesscard()
 	{
 		$arModuleVersion = array();
 
@@ -41,8 +41,8 @@ Class quick_effortless extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		RegisterModule("quick.effortless");
-		RegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CQuickeffortless", "ShowPanel");
+		RegisterModule("quick.businesscard");
+		RegisterModuleDependences("main", "OnBeforeProlog", "quick.businesscard", "CQuickbusinesscard", "ShowPanel");
 
 		return true;
 	}
@@ -51,8 +51,8 @@ Class quick_effortless extends CModule
 	{
 		global $DB, $DBType, $APPLICATION;
 
-		UnRegisterModuleDependences("main", "OnBeforeProlog", "quick.effortless", "CQuickeffortless", "ShowPanel");
-		UnRegisterModule("quick.effortless");
+		UnRegisterModuleDependences("main", "OnBeforeProlog", "quick.businesscard", "CQuickbusinesscard", "ShowPanel");
+		UnRegisterModule("quick.businesscard");
 
 		return true;
 	}
@@ -69,8 +69,8 @@ Class quick_effortless extends CModule
 
 	function InstallFiles()
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/quick.effortless/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);		
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/quick.effortless/install/wizards", $_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/quick.businesscard/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/quick.businesscard/install/wizards", $_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards", true, true);
 			
 		return true;
 	}

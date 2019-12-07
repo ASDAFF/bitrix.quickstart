@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T00:20:42">
+	<Metadata>
+		<Id>partners-businesscard</Id>
+		<Title>Partners</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>52</Id>
+				<Title>The link to the site</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>HREF</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>53</Id>
+				<Title>Phone company</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>PHONE</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>54</Id>
+				<Title>Company address</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>30</BitrixSort>
+				<BitrixCode>ADDRESS</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>52</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>53</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>54</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+		</ElementProperties>
+		<Sections>
+			<Section>
+				<Id>14</Id>
+				<Title>Partner banks</Title>
+				<Description>EXAMPLE SEO TEXT FOR THE SECTION OF THE INFORMATION BLOCK. This place will display SEO TEXT. The text is set in the properties folder of the information block and can be unique for each section of the information block.</Description>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode></BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>15</Id>
+				<Title>Regional representatives</Title>
+				<Description>EXAMPLE SEO TEXT FOR THE SECTION OF THE INFORMATION BLOCK. This place will display SEO TEXT. The text is set in the properties folder of the information block and can be unique for each section of the information block.</Description>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode></BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>partners-businesscard</Id>
+		<MetadataId>partners-businesscard</MetadataId>
+		<Title>Partners</Title>
+		<BitrixCode>partners-businesscard</BitrixCode>
+		<BitrixSort>130</BitrixSort>
+		<BitrixListURL>#SITE_DIR#about/partners/#IBLOCK_ID#/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#about/partners/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL></BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Elements</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Modify element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete element</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Modify section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>51</Id>
+				<Title>Bank «VTB24» (publichnoe aktsionernoe obschestvo)</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>14</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>vtb24</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>10</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/b6b/02.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.vtb24.ru</Value>
+						<PropertyValue>
+							<Value>http://www.vtb24.ru</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>8 800 100 24 24</Value>
+						<PropertyValue>
+							<Value>8 800 100 24 24</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>101000, g. Moskva, ul. Myasnitskaya, d. 35</Value>
+						<PropertyValue>
+							<Value>101000, g. Moskva, ul. Myasnitskaya, d. 35</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>52</Id>
+				<Title>OAO «Sberbank Rossii»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>14</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>sberbank</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>20</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/7cf/logo_sberbank_large.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.sberbank.ru</Value>
+						<PropertyValue>
+							<Value>http://www.sberbank.ru</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>+7 (495) 500 5550</Value>
+						<PropertyValue>
+							<Value>+7 (495) 500 5550</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>117997, g. Moskva, ul. Vavilova, d. 19</Value>
+						<PropertyValue>
+							<Value>117997, g. Moskva, ul. Vavilova, d. 19</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>53</Id>
+				<Title>OAO NPO «IJMASH»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>15</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kalashnikovconcern</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>10</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/8ff/logo_izhmash.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.kalashnikovconcern.com</Value>
+						<PropertyValue>
+							<Value>http://www.kalashnikovconcern.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>+7 (3412) 495 009</Value>
+						<PropertyValue>
+							<Value>+7 (3412) 495 009</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>426006, Rossiya, Udmurtskaya Respublika, g. Ijevsk, pr. Deryabina, d. 3</Value>
+						<PropertyValue>
+							<Value>426006, Rossiya, Udmurtskaya Respublika, g. Ijevsk, pr. Deryabina, d. 3</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>54</Id>
+				<Title>OAO «URALMASHZAVOD»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>15</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>uralmash</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>20</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/3cd/logo_uralmash.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.uralmash.ru</Value>
+						<PropertyValue>
+							<Value>http://www.uralmash.ru</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>+7 (343) 336 69 79</Value>
+						<PropertyValue>
+							<Value>+7 (343) 336 69 79</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>620012, Rossiya, g. Ekaterinburg, Ploschad Pervoy Pyatiletki</Value>
+						<PropertyValue>
+							<Value>620012, Rossiya, g. Ekaterinburg, Ploschad Pervoy Pyatiletki</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>55</Id>
+				<Title>OAO «MOSENERGOSBYIT»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>15</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>mosenergosbyt</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>30</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/db6/logo_mosenergosbit.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.mosenergosbyt.ru</Value>
+						<PropertyValue>
+							<Value>http://www.mosenergosbyt.ru</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>+7 (495) 981 981 9</Value>
+						<PropertyValue>
+							<Value>+7 (495) 981 981 9</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>117312, g. Moskva, ul. Vavilova, d. 9</Value>
+						<PropertyValue>
+							<Value>117312, g. Moskva, ul. Vavilova, d. 9</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>56</Id>
+				<Title>OAO «NPO ENERGOMASH»</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>15</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>npoenergomash</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>40</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;
+
+&lt;p&gt;Aliquam non laoreet arcu, sed congue massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.&lt;/p&gt;</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value></Value>
+						<Type>text</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>partners_files/iblock/671/logo_energomash.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>52</Id>
+						<Value>http://www.npoenergomash.ru</Value>
+						<PropertyValue>
+							<Value>http://www.npoenergomash.ru</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>53</Id>
+						<Value>+7 (495) 286 91 13</Value>
+						<PropertyValue>
+							<Value>+7 (495) 286 91 13</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>54</Id>
+						<Value>141400, Rossiya, g. Himki, ul. Burdenko, d. 1</Value>
+						<PropertyValue>
+							<Value>141400, Rossiya, g. Himki, ul. Burdenko, d. 1</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

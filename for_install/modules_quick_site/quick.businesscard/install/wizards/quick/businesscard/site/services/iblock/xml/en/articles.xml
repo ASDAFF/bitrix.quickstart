@@ -1,0 +1,1857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2016-12-15T01:00:58">
+	<Metadata>
+		<Id>articles-businesscard-s1</Id>
+		<Title>Articles</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_DETAIL_TEXT</Id>
+				<Title>Description</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>65</Id>
+				<Title>To show the video in the preview</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>PREVIEW_VIDEO</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>66</Id>
+				<Title>The link to the video</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>HREF_VIDEO</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>67</Id>
+				<Title>Photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>30</BitrixSort>
+				<BitrixCode>PHOTO_TOP</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>262</Id>
+				<Title>Autoplay photo at the top</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>40</BitrixSort>
+				<BitrixCode>PHOTO_TOP_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>261</Id>
+				<Title>Description photo at the top</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>50</BitrixSort>
+				<BitrixCode>PHOTO_TOP_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>68</Id>
+				<Title>Photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>60</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM</BitrixCode>
+				<BitrixPropertyType>F</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType>jpg, gif, bmp, png, jpeg</BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>263</Id>
+				<Title>Autoplay photo at the bottom</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>70</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_AUTOPLAY</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>260</Id>
+				<Title>The link to the photo</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>90</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_HREF</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>69</Id>
+				<Title>Description photo at the bottom</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>PHOTO_BOTTOM_DESCRIPTION</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>70</Id>
+				<Title>Documents</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>110</BitrixSort>
+				<BitrixCode>DOCUMENTS</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>documents-businesscard-s1</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>71</Id>
+				<Title>Header for documents</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>120</BitrixSort>
+				<BitrixCode>DOCUMENTS_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:9:&quot;Dokumentyi&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>74</Id>
+				<Title>Show social bookmarks</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>130</BitrixSort>
+				<BitrixCode>USE_SHARE</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>75</Id>
+				<Title>Show form</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>YES</Value>
+					<Choice>
+						<Id>YES</Id>
+						<Value>YES</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>140</BitrixSort>
+				<BitrixCode>SHOW_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>C</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>76</Id>
+				<Title>Text on the button</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>150</BitrixSort>
+				<BitrixCode>TEXT_CALLBACK_FORM</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:15:&quot;Zakazat uslugu&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>122</Id>
+				<Title>Staff</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>160</BitrixSort>
+				<BitrixCode>MORE_STAFF</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>staff-businesscard-s1</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>123</Id>
+				<Title>Header for staff</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>170</BitrixSort>
+				<BitrixCode>MORE_STAFF_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:12:&quot;Avtor stati&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>143</Id>
+				<Title>License</Title>
+				<Multiple>true</Multiple>
+				<BitrixSort>180</BitrixSort>
+				<BitrixCode>MORE_LICENSE</BitrixCode>
+				<BitrixPropertyType>E</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock>licenses-businesscard-s1</BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:0:&quot;&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+			<Property>
+				<Id>144</Id>
+				<Title>Zagolovok dlya litsenziy</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>190</BitrixSort>
+				<BitrixCode>MORE_LICENSE_HEADER</BitrixCode>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>50</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixDefaultValue>s:40:&quot;Razreshenie na osuschetsvlenie deyatelnosti&quot;;</BitrixDefaultValue>
+				<Serialized>1</Serialized>
+			</Property>
+		</Properties>
+		<ElementProperties>
+			<Property>
+				<Id>65</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>66</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>67</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>262</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>261</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>68</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType></DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>263</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>260</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>69</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>70</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>71</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>74</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>75</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>76</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>122</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>123</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>143</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+			<Property>
+				<Id>144</Id>
+				<SmartFilter>false</SmartFilter>
+				<DisplayType>F</DisplayType>
+				<ShowExpanded>false</ShowExpanded>
+				<Hint></Hint>
+			</Property>
+		</ElementProperties>
+		<GroupProperties>
+			<Property>
+				<Id>UF_SEO_DESCRIPTION</Id>
+				<Title>UF_SEO_DESCRIPTION</Title>
+				<Sort>100</Sort>
+				<Multiple>false</Multiple>
+				<BitrixPropertyType>string</BitrixPropertyType>
+				<BitrixRequired>false</BitrixRequired>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixShowInList>true</BitrixShowInList>
+				<BitrixInplaceEditInList>true</BitrixInplaceEditInList>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixSettings>a:6:{s:4:&quot;SIZE&quot;;i:50;s:4:&quot;ROWS&quot;;i:3;s:6:&quot;REGEXP&quot;;s:0:&quot;&quot;;s:10:&quot;MIN_LENGTH&quot;;i:0;s:10:&quot;MAX_LENGTH&quot;;i:0;s:13:&quot;DEFAULT_VALUE&quot;;s:0:&quot;&quot;;}</BitrixSettings>
+			</Property>
+		</GroupProperties>
+		<Sections>
+			<Section>
+				<Id>22</Id>
+				<Title>Nalogovoe zakonodatelstvo</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>10</BitrixSort>
+				<BitrixCode>nalogovoe-zakonodatelstvo</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>UF_SEO_DESCRIPTION</Id>
+						<Value>PRIMER SEO TEKSTA DLYA RAZDELA INFOBLOKA. V etom meste budet vyiveden SEO TEKST. Tekst zadaetsya v svoystvah papki infobloka i mojet byit unikalnyim dlya kajdogo razdela infobloka.</Value>
+					</PropertyValues>
+				</PropertiesValues>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>23</Id>
+				<Title>Buhgalterskiy uchet</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>20</BitrixSort>
+				<BitrixCode>bukhgalterskiy-uchet</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>UF_SEO_DESCRIPTION</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>21</Id>
+				<Title>YUridicheskoe pravo</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>30</BitrixSort>
+				<BitrixCode>yuridicheskoe-pravo</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>UF_SEO_DESCRIPTION</Id>
+						<Value>PRIMER SEO TEKSTA DLYA RAZDELA INFOBLOKA. V etom meste budet vyiveden SEO TEKST. Tekst zadaetsya v svoystvah papki infobloka i mojet byit unikalnyim dlya kajdogo razdela infobloka.</Value>
+					</PropertyValues>
+				</PropertiesValues>
+				<Sections>
+				</Sections>
+			</Section>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>articles-businesscard-s1</Id>
+		<MetadataId>articles-businesscard-s1</MetadataId>
+		<Title>Stati</Title>
+		<BitrixCode>articles-businesscard-s1</BitrixCode>
+		<BitrixSort>180</BitrixSort>
+		<BitrixListURL>#SITE_DIR#info/articles/#IBLOCK_ID#/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#info/articles/#SECTION_CODE#/#ELEMENT_CODE#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#info/articles/#SECTION_CODE#/</BitrixSectionURL>
+		<BitrixURLCanonical></BitrixURLCanonical>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Statya</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Stati</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Dobavit statyu</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Izmenit statyu</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Udalit statyu</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Razdel</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Razdelyi</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Dobavit razdel</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Izmenit razdel</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Udalit razdel</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>87</Id>
+				<Title>Vyiezdnaya nalogovaya proverka</Title>
+				<BitrixTags>nalogi, proverka</BitrixTags>
+				<Sections>
+					<Id>22</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>vyezdnaya-nalogovaya-proverka</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-12-22 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;/images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/6ad/image_13.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>65</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>66</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>67</Id>
+						<Value>articles_files/iblock/677/image_20.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/677/image_20.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/3f4/image_55.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/3f4/image_55.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>262</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>261</Id>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>68</Id>
+						<Value>articles_files/iblock/81d/image_3.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/81d/image_3.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/442/image_36.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/442/image_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/b42/image_19.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/b42/image_19.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/40e/image_24.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/40e/image_24.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>263</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>260</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>69</Id>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Vyiezdnaya nalogovaya proverka</Value>
+						<PropertyValue>
+							<Value>Vyiezdnaya nalogovaya proverka</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>70</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>71</Id>
+						<Value>Dokumentyi</Value>
+						<PropertyValue>
+							<Value>Dokumentyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>74</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>75</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>76</Id>
+						<Value>Zakazat audit</Value>
+						<PropertyValue>
+							<Value>Zakazat audit</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>122</Id>
+						<Value>67</Value>
+						<PropertyValue>
+							<Value>67</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>123</Id>
+						<Value>Avtor stati</Value>
+						<PropertyValue>
+							<Value>Avtor stati</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>143</Id>
+						<Value>59</Value>
+						<PropertyValue>
+							<Value>59</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>144</Id>
+						<Value>Sertifikatyi i razresheniya</Value>
+						<PropertyValue>
+							<Value>Sertifikatyi i razresheniya</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>88</Id>
+				<Title>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Title>
+				<BitrixTags>nalogi, pereplata, buhgalteriya</BitrixTags>
+				<Sections>
+					<Id>22</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kak-vernut-pereplatu-po-nalogam</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-05-17 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;/images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/017/image_15.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>65</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>66</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>67</Id>
+						<Value>articles_files/iblock/d04/image_2.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/d04/image_2.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/daf/image_12.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/daf/image_12.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>262</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>261</Id>
+						<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+						<PropertyValue>
+							<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+						<PropertyValue>
+							<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>68</Id>
+						<Value>articles_files/iblock/8cf/image_15.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/8cf/image_15.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/9ff/image_46.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/9ff/image_46.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/fe0/image_41.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/fe0/image_41.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>263</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>260</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>69</Id>
+						<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+						<PropertyValue>
+							<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+						<PropertyValue>
+							<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+						<PropertyValue>
+							<Value>Kak vernut pereplatu po nalogam, esli proshlo bolee 3-h let?</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>70</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>71</Id>
+						<Value>Dokumentyi</Value>
+						<PropertyValue>
+							<Value>Dokumentyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>74</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>75</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>76</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>122</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>123</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>143</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>144</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>89</Id>
+				<Title>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Title>
+				<BitrixTags>platelschiki, tarifyi</BitrixTags>
+				<Sections>
+					<Id>23</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kak-uchityvat-predelnuyu-bazu</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-10-09 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;/images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>65</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>66</Id>
+						<Value>https://www.youtube.com/embed/zZJUXbMD97A</Value>
+						<PropertyValue>
+							<Value>https://www.youtube.com/embed/zZJUXbMD97A</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>67</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>262</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>261</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>68</Id>
+						<Value>articles_files/iblock/f71/image_4.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/f71/image_4.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/678/image_21.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/678/image_21.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/7ca/image_19.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/7ca/image_19.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>263</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>260</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>69</Id>
+						<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+						<PropertyValue>
+							<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+						<PropertyValue>
+							<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+						<PropertyValue>
+							<Value>Kak uchityivat predelnuyu bazu po vznosam platelschikam, primenyayuschim ponijennyie tarifyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>70</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>71</Id>
+						<Value>Dokumentyi</Value>
+						<PropertyValue>
+							<Value>Dokumentyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>74</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>75</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>76</Id>
+						<Value>Zakazat raschet</Value>
+						<PropertyValue>
+							<Value>Zakazat raschet</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>122</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>123</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>143</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>144</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>90</Id>
+				<Title>Esli rabotodatel ne mojet vyiplatit posobie, to FSS pomojet oformit zayavlenie</Title>
+				<BitrixTags>buhgalteriya, posobie, FSS</BitrixTags>
+				<Sections>
+					<Id>23</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>esli-rabotodatel-ne-mozhet-vyplatit-posobie</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-08-06 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;/images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>65</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>66</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>67</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>262</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>261</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>68</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>263</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>260</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>69</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>70</Id>
+						<Value>77</Value>
+						<PropertyValue>
+							<Value>77</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>78</Value>
+						<PropertyValue>
+							<Value>78</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>71</Id>
+						<Value>Dokumentyi</Value>
+						<PropertyValue>
+							<Value>Dokumentyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>74</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>75</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>76</Id>
+						<Value>Zakazat audit</Value>
+						<PropertyValue>
+							<Value>Zakazat audit</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>122</Id>
+						<Value>68</Value>
+						<PropertyValue>
+							<Value>68</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>123</Id>
+						<Value>Avtor stati</Value>
+						<PropertyValue>
+							<Value>Avtor stati</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>143</Id>
+						<Value>59</Value>
+						<PropertyValue>
+							<Value>59</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>144</Id>
+						<Value>Blagodarstvennoe pismo</Value>
+						<PropertyValue>
+							<Value>Blagodarstvennoe pismo</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>91</Id>
+				<Title>Kak sostavit i podat iskovoe zayavlenie v sud</Title>
+				<BitrixTags>iskovoe zayavlenie, sud</BitrixTags>
+				<Sections>
+					<Id>21</Id>
+				</Sections>
+				<Picture></Picture>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>kak-sostavit-i-podat-iskovoe-zayavlenie-v-sud</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2014-03-10 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat. Donec id urna posuere nisl tincidunt laoreet. Aliquam erat volutpat.</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_DETAIL_TEXT</Id>
+						<Value>&lt;p&gt;Amet culpa, accusamus. Temporibus animi, consequatur cumque natus, esse consequuntur voluptatibus deleniti necessitatibus autem architecto quaerat tenetur nobis, ea maxime saepe rem doloribus placeat aliquid quod, id fuga ratione error harum ex! Facere vero veniam ducimus nulla sed possimus nobis nisi maiores quibusdam, nam odit quos dolores laborum pariatur distinctio in ex culpa impedit. Corrupti sequi perferendis atque nam debitis ea sunt, vel mollitia voluptas tempora eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;h4 class=&quot;mb-20&quot;&gt;Lorem ipsum dolor sit amet&lt;/h4&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;img src=&quot;/images/content.jpg&quot; alt=&quot;&quot; class=&quot;mb-20&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6&quot;&gt;
+		&lt;p class=&quot;text-muted&quot;&gt;Ut wisi enim ad minim veniam, quis nostrud exerci taion ullamcorper suscipit lobortis nisl ut aliquip ex en commodo consequat. Duis te feugifacilisi per suscipit lobortis nisl ut aliquip ex en commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis te feugifacilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;small text-info&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, eligendi cum officiis sint eveniet omnis eius quo. Et iusto eos dolor ratione nesciunt praesentium eveniet distinctio repellat. Quas, soluta, ipsam.&lt;/p&gt;
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
+&lt;/blockquote&gt;                                        
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse illum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+	&lt;div class=&quot;col-md-6 col-sm-6&quot;&gt;
+		&lt;ul class=&quot;list-icons&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt; Eveniet distinctio repellat&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt; Sdipisicing elit&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-fax&quot;&gt;&lt;/i&gt; Sint eveniet omnis eius quo&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Dolor ratione nesciunt&lt;/li&gt;
+		&lt;/ul&gt;								
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.&lt;/p&gt;
+</Value>
+						<Type>html</Type>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>articles_files/iblock/760/image_18.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>65</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>66</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>67</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>262</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>261</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>68</Id>
+						<Value>articles_files/iblock/2f3/image_28.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/2f3/image_28.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/6e6/image_36.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/6e6/image_36.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>articles_files/iblock/4d0/image_25.jpg</Value>
+						<PropertyValue>
+							<Value>articles_files/iblock/4d0/image_25.jpg</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>263</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>260</Id>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>#</Value>
+						<PropertyValue>
+							<Value>#</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>69</Id>
+						<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+						<PropertyValue>
+							<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+						<PropertyValue>
+							<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+							<Description></Description>
+						</PropertyValue>
+						<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+						<PropertyValue>
+							<Value>Kak sostavit i podat iskovoe zayavlenie v sud</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>70</Id>
+						<Value>83</Value>
+						<PropertyValue>
+							<Value>83</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>71</Id>
+						<Value>Dokumentyi</Value>
+						<PropertyValue>
+							<Value>Dokumentyi</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>74</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>75</Id>
+						<Value>YES</Value>
+						<PropertyValue>
+							<Value>YES</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>76</Id>
+						<Value>Zakazat uslugu</Value>
+						<PropertyValue>
+							<Value>Zakazat uslugu</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>122</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>123</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>143</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>144</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

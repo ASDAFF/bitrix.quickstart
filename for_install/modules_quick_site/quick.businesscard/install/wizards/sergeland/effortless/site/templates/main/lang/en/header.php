@@ -1,4 +1,0 @@
-<?
-$MESS["QUICK_EFFORTLESS_HEADER_CALLBACK"] = "Request a call";
-$MESS["QUICK_EFFORTLESS_HEADER_SEARCH"] = "Search";
-?>

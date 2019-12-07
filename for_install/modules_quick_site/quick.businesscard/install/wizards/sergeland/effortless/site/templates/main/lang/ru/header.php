@@ -1,4 +1,0 @@
-<?
-$MESS["QUICK_EFFORTLESS_HEADER_CALLBACK"] = "Заказать звонок";
-$MESS["QUICK_EFFORTLESS_HEADER_SEARCH"] = "Найти";
-?>

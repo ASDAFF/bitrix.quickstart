@@ -1,1 +1,0 @@
-<i class="fa fa-skype"></i> #SKYPE#

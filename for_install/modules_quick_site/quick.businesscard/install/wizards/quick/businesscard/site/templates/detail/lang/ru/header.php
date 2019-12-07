@@ -1,4 +1,0 @@
-<?
-$MESS["QUICK_BUSINESSCARD_HEADER_CALLBACK"] = "Заказать звонок";
-$MESS["QUICK_BUSINESSCARD_HEADER_SEARCH"] = "Найти";
-?>

@@ -1,5 +1,0 @@
-<?
-$MESS["BUSINESSCARD_TYPE_NAME"] = "BusinessCard";
-$MESS["BUSINESSCARD_SECTION_NAME"] = "Разделы";
-$MESS["BUSINESSCARD_ELEMENT_NAME"] = "Элементы";
-?>

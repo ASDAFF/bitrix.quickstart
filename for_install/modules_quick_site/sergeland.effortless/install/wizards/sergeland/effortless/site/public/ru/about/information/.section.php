@@ -1,4 +1,0 @@
-<?
-$sSectionName = "Реквизиты";
-$arDirProperties = Array();
-?>

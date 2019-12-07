@@ -1,4 +1,0 @@
-<?
-$sSectionName = "Partners";
-$arDirProperties = Array();
-?>

@@ -5,9 +5,9 @@ if(!CModule::IncludeModule("iblock"))
 	ShowError( GetMessage("ERROR_NOT_MODULE_IBLOCK") );
 	return;
 }
-if(!CModule::IncludeModule("redsign.devcom"))
+if(!CModule::IncludeModule("development.kit"))
 {
-	ShowError( GetMessage("ERROR_EMPTY_MODULE_DEVCOM") );
+	ShowError( GetMessage("ERROR_EMPTY_MODULE_KIT") );
 	return;
 }
 if(IntVal($arParams["IBLOCK_ID"])<1)
@@ -43,11 +43,11 @@ if( $this->StartResultCache() )
 	{
 		$arSection["PICTURE"] = CFile::GetFileArray($arSection["PICTURE"]);
 		if(IntVal($arParams["MAX_WIDTH"])>0 && IntVal($arParams["MAX_HEIGHT"])>0)
-			$arSection["PICTURE"]["TRUE_SIZE"] = REDSIGNDevComGetProfiSize($arSection["PICTURE"]["WIDTH"], $arSection["PICTURE"]["HEIGHT"], $arParams["MAX_WIDTH"], $arParams["MAX_HEIGHT"]);
+			$arSection["PICTURE"]["TRUE_SIZE"] = DEVELOPMENTKITGetProfiSize($arSection["PICTURE"]["WIDTH"], $arSection["PICTURE"]["HEIGHT"], $arParams["MAX_WIDTH"], $arParams["MAX_HEIGHT"]);
 			
 		$arSection["DETAIL_PICTURE"] = CFile::GetFileArray($arSection["DETAIL_PICTURE"]);
 		if(IntVal($arParams["MAX_WIDTH"])>0 && IntVal($arParams["MAX_HEIGHT"])>0)
-			$arSection["DETAIL_PICTURE"]["TRUE_SIZE"] = REDSIGNDevComGetProfiSize($arSection["DETAIL_PICTURE"]["WIDTH"], $arSection["DETAIL_PICTURE"]["HEIGHT"], $arParams["MAX_WIDTH"], $arParams["MAX_HEIGHT"]);
+			$arSection["DETAIL_PICTURE"]["TRUE_SIZE"] = DEVELOPMENTKITGetProfiSize($arSection["DETAIL_PICTURE"]["WIDTH"], $arSection["DETAIL_PICTURE"]["HEIGHT"], $arParams["MAX_WIDTH"], $arParams["MAX_HEIGHT"]);
 		
 		$arResult["SECTIONS"][] = $arSection;
 	}

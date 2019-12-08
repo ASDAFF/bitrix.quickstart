@@ -1,17 +1,17 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 $arComponentDescription = array(
-	"NAME" => GetMessage("ALFA_COM_NAME"),
-	"DESCRIPTION" => GetMessage("ALFA_COM_DESCRIPTION"),
+	"NAME" => GetMessage("NAME"),
+	"DESCRIPTION" => GetMessage("DESCRIPTION"),
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
 		"ID" => "alfa_com",
 		"SORT" => 2000,
-		"NAME" => GetMessage("ALFA_COM_COMPONENTS"),
+		"NAME" => GetMessage("COMPONENTS"),
 		"CHILD" => array(
-			"ID" => "devcom",
-			"NAME" => GetMessage("ALFA_COM_DEV_COM"),
+			"ID" => "kit",
+			"NAME" => GetMessage("KIT"),
 			"SORT" => 8000,
 		),
 	),

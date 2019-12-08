@@ -1,15 +1,15 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 /************************************
 *
-* redsign.devcom
+* development.kit
 * last update 02.07.2014
 *
 ************************************/
 
 global $APPLICATION,$USER;
 
-$arParams["EVENT_TYPE"] = "REDSIGN_BUY_ONE_CLICK";
-$arParams["REQUEST_PARAM_NAME"] = "redsign_buy1click";
+$arParams["EVENT_TYPE"] = "DEVELOPMENT_BUY_ONE_CLICK";
+$arParams["REQUEST_PARAM_NAME"] = "development_buy1click";
 $arResult["ACTION_URL"] = $APPLICATION->GetCurPage();
 $arParams["SHOW_FIELDS"][] = "RS_AUTHOR_ORDER_LIST";
 $arParams["REQUIRED_FIELDS"][] = "RS_AUTHOR_ORDER_LIST";
@@ -51,9 +51,9 @@ $arFields = array(
 );
 $arResult["FIELDS"] = $arFields;
 
-if(!function_exists('redsign_add_buy1click_type'))
+if(!function_exists('development_add_buy1click_type'))
 {
-	function redsign_add_buy1click_type($EVENT_TYPE)
+	function development_add_buy1click_type($EVENT_TYPE)
 	{
 		global $DB, $DBType, $APPLICATION;
 		$return = false;
@@ -118,7 +118,7 @@ if($_REQUEST[$arParams["REQUEST_PARAM_NAME"]]=="Y" && class_exists(CEventType) &
 	$rsET = CEventType::GetList($arFilter);
 	if(!$arET = $rsET->Fetch())
 	{
-		redsign_add_buy1click_type($arParams["EVENT_TYPE"]);
+		development_add_buy1click_type($arParams["EVENT_TYPE"]);
 	}
 	$arResult["LAST_ERROR"] = "";
 	$arResult["GOOD_SEND"] = "";

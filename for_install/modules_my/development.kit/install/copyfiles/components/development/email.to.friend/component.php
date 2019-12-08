@@ -1,15 +1,15 @@
 <?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 /************************************
 *
-* redsign.devcom
+* development.kit
 * last update 02.07.2014
 *
 ************************************/
 
 global $APPLICATION;
 
-$arParams["EVENT_TYPE"] = "REDSIGN_EMAIL_TO_FRIEND";
-$arParams["REQUEST_PARAM_NAME"] = "redsign_email2friend";
+$arParams["EVENT_TYPE"] = "DEVELOPMENT_EMAIL_TO_FRIEND";
+$arParams["REQUEST_PARAM_NAME"] = "development_email2friend";
 $arResult["ACTION_URL"] = $APPLICATION->GetCurPage();
 $arParams["SHOW_FIELDS"][] = "RS_EMAIL_TO";
 $arParams["REQUIRED_FIELDS"][] = "RS_EMAIL_TO";
@@ -53,9 +53,9 @@ $arFields = array(
 );
 $arResult["FIELDS"] = $arFields;
 
-if(!function_exists('redsign_add_email2friend_type'))
+if(!function_exists('development_add_email2friend_type'))
 {
-	function redsign_add_email2friend_type($EVENT_TYPE)
+	function development_add_email2friend_type($EVENT_TYPE)
 	{
 		global $DB, $DBType, $APPLICATION;
 		$return = false;
@@ -120,7 +120,7 @@ if($_REQUEST[$arParams["REQUEST_PARAM_NAME"]]=="Y" && class_exists(CEventType) &
 	$rsET = CEventType::GetList($arFilter);
 	if(!$arET = $rsET->Fetch())
 	{
-		redsign_add_email2friend_type($arParams["EVENT_TYPE"]);
+		development_add_email2friend_type($arParams["EVENT_TYPE"]);
 	}
 	$arResult["LAST_ERROR"] = "";
 	$arResult["GOOD_SEND"] = "";

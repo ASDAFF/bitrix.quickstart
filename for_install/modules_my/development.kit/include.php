@@ -3,13 +3,13 @@ global $DBType, $DB, $MESS, $APPLICATION;
 IncludeModuleLangFile(__FILE__);
 
 CModule::AddAutoloadClasses(
-	"redsign.devcom",
+	"development.kit",
 	array(
 
 	)
 );
 
-function REDSIGNDevComGetProfiSize( $nowW, $nowH, $maxW, $maxH )
+function DEVELOPMENTKITGetProfiSize( $nowW, $nowH, $maxW, $maxH )
 {
 	if($nowW>0 && $nowH>0 && $maxW>0 && $maxH>0)
 	{

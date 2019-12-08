@@ -16,17 +16,17 @@
 		<?if($arField["SHOW"]=="Y"):?>
 			<?if($arField["CONTROL_NAME"]!="RS_AUTHOR_COMMENT"):?>
 				<?=GetMessage("MSG_".$arField["CONTROL_NAME"])?>: 
-				<?if(in_array($arField["CONTROL_NAME"], $arParams["REQUIRED_FIELDS"])):?><span class="redsign_devcom_required">*</span><?endif;?>
+				<?if(in_array($arField["CONTROL_NAME"], $arParams["REQUIRED_FIELDS"])):?><span class="development_kit_required">*</span><?endif;?>
 				<input type="text" name="<?=$arField["CONTROL_NAME"]?>" value="<?=$arField["HTML_VALUE"]?>" /><br />
 			<?else:?>
 				<?=GetMessage("MSG_".$arField["CONTROL_NAME"])?>: 
-				<?if(in_array($arField["CONTROL_NAME"], $arParams["REQUIRED_FIELDS"])):?><span class="redsign_devcom_required">*</span><?endif;?>
+				<?if(in_array($arField["CONTROL_NAME"], $arParams["REQUIRED_FIELDS"])):?><span class="development_kit_required">*</span><?endif;?>
 				<textarea name="<?=$arField["CONTROL_NAME"]?>"><?=$arField["HTML_VALUE"]?></textarea><br />
 			<?endif;?>
 		<?endif;?>
 	<?endforeach;?>
 	<?if($arParams["ALFA_USE_CAPTCHA"]=="Y"):?>
-		<?=GetMessage("MSG_CAPTHA")?><span class="redsign_devcom_required">*</span>:<br />
+		<?=GetMessage("MSG_CAPTHA")?><span class="development_kit_required">*</span>:<br />
 		<input type="text" name="captcha_word" size="30" maxlength="50" value=""><br />
 		<input type="hidden" name="captcha_sid" value="<?=$arResult["CATPCHA_CODE"]?>">
 		<img src="/bitrix/tools/captcha.php?captcha_sid=<?=$arResult["CATPCHA_CODE"]?>" width="180" height="40" alt="CAPTCHA"><br />

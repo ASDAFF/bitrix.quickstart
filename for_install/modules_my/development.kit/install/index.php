@@ -2,9 +2,9 @@
 global $MESS;
 IncludeModuleLangFile(__FILE__);
 
-Class redsign_devcom extends CModule
+Class development_kit extends CModule
 {
-    var $MODULE_ID = "redsign.devcom";
+    var $MODULE_ID = "development.kit";
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -12,7 +12,7 @@ Class redsign_devcom extends CModule
 	var $MODULE_CSS;
 	var $MODULE_GROUP_RIGHTS = "Y";
 
-	function redsign_devcom()
+	function development_kit()
 	{
 		$arModuleVersion = array();
 
@@ -31,14 +31,14 @@ Class redsign_devcom extends CModule
 		$this->MODULE_NAME = GetMessage("INSTALL_NAME");
 		$this->MODULE_DESCRIPTION = GetMessage("INSTALL_DESCRIPTION");
 		$this->PARTNER_NAME = GetMessage("INSTALL_COPMPANY_NAME");
-        $this->PARTNER_URI  = "http://redsign.ru/";
+        $this->PARTNER_URI  = "https://asdaff.github.io/";
 	}
 
 	// Install functions
 	function InstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		RegisterModule("redsign.devcom");
+		RegisterModule("development.kit");
 		return TRUE;
 	}
 
@@ -54,7 +54,7 @@ Class redsign_devcom extends CModule
 
 	function InstallFiles()
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.devcom/install/copyfiles/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/development.kit/install/copyfiles/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		return TRUE;
 	}
 
@@ -67,7 +67,7 @@ Class redsign_devcom extends CModule
 	function UnInstallDB()
 	{
 		global $DB, $DBType, $APPLICATION;
-		UnRegisterModule("redsign.devcom");
+		UnRegisterModule("development.kit");
 		return TRUE;
 	}
 
@@ -99,7 +99,7 @@ Class redsign_devcom extends CModule
 		$keyGoodOptions = $this->InstallOptions();
 		$keyGoodFiles = $this->InstallFiles();
 		$keyGoodPublic = $this->InstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.devcom/install/install.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/development.kit/install/install.php");
     }
 
     function DoUninstall()
@@ -110,7 +110,7 @@ Class redsign_devcom extends CModule
 		$keyGoodOptions = $this->UnInstallOptions();
 		$keyGoodDB = $this->UnInstallDB();
 		$keyGoodPublic = $this->UnInstallPublic();
-		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/redsign.devcom/install/uninstall.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SPER_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/development.kit/install/uninstall.php");
     }
 }
 ?>

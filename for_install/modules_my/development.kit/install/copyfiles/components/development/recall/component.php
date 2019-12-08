@@ -2,22 +2,22 @@
 
 global $APPLICATION;
 
-if(!function_exists('redsign_add_recall_type'))
+if(!function_exists('development_add_recall_type'))
 {
-	function redsign_add_recall_type()
+	function development_add_recall_type()
 	{
 		global $DB, $DBType, $APPLICATION;
 		$return = false;
 		$et = new CEventType;
 		$EventTypeID = $et->Add(array(
 			"LID"           => "ru",
-			"EVENT_NAME"    => "REDSIGN_RECALL",
+			"EVENT_NAME"    => "DEVELOPMENT_RECALL",
 			"NAME"          => GetMessage("INSTALL_EVENT_TYPE_NAME"),
 			"DESCRIPTION"   => GetMessage("INSTALL_EVENT_TYPE_DESCRIPTION")
 			));
 		if($EventTypeID>0)
 		{
-			COption::SetOptionInt("redsign.opt", "installed_event_type_id", $EventTypeID);
+			COption::SetOptionInt("development.opt", "installed_event_type_id", $EventTypeID);
 			$arSites = array();
 			$rsSites = CSite::GetList($by="sort", $order="desc", array());
 			while ($arSite = $rsSites->Fetch())
@@ -25,7 +25,7 @@ if(!function_exists('redsign_add_recall_type'))
 				$arSites[] = $arSite["LID"];
 			}
 			$arr["ACTIVE"] = "Y";
-			$arr["EVENT_NAME"] = "REDSIGN_RECALL";
+			$arr["EVENT_NAME"] = "DEVELOPMENT_RECALL";
 			$arr["LID"] = $arSites;
 			$arr["EMAIL_FROM"] = "#AUTHOR_EMAIL#";
 			$arr["EMAIL_TO"] = "#EMAIL_TO#";
@@ -38,7 +38,7 @@ if(!function_exists('redsign_add_recall_type'))
 			$EventTemplateID = $emess->Add($arr);
 			if($EventTemplateID>0)
 			{
-				COption::SetOptionInt("redsign.opt", "installed_event_template_id", $EventTemplateID);
+				COption::SetOptionInt("development.opt", "installed_event_template_id", $EventTemplateID);
 				$return = true;
 			}
 		} else {
@@ -48,22 +48,22 @@ if(!function_exists('redsign_add_recall_type'))
 	}
 }
 
-if($_REQUEST["redsignRecall"]=="Y" && class_exists(CEventType) && class_exists(CEventMessage))
+if($_REQUEST["developmentRecall"]=="Y" && class_exists(CEventType) && class_exists(CEventMessage))
 {
-	$arFilter = array("TYPE_ID" => "REDSIGN_RECALL", "LID" => "ru");
+	$arFilter = array("TYPE_ID" => "DEVELOPMENT_RECALL", "LID" => "ru");
 	$rsET = CEventType::GetList($arFilter);
 	if(!$arET = $rsET->Fetch())
 	{
-		redsign_add_recall_type();
+		development_add_recall_type();
 	}
 	$arResult["LAST_ERROR"] = "";
 	$arResult["GOOD_SEND"] = "";
 	$THEME = GetMessage("ALFA_MSG_THEME");
-	$AUTHOR = trim(htmlspecialchars($_REQUEST["REDSIGN_AUTHOR"]));
-	$COMPANY_NAME = trim(htmlspecialchars($_REQUEST["REDSIGN_COMPANY_NAME"]));
-	$AUTHOR_EMAIL = trim(htmlspecialchars($_REQUEST["REDSIGN_AUTHOR_EMAIL"]));
-	$AUTHOR_PHONE = trim(htmlspecialchars($_REQUEST["REDSIGN_AUTHOR_PHONE"]));
-	$AUTHOR_COMMENT = trim(htmlspecialchars($_REQUEST["REDSIGN_AUTHOR_COMMENT"]));
+	$AUTHOR = trim(htmlspecialchars($_REQUEST["DEVELOPMENT_AUTHOR"]));
+	$COMPANY_NAME = trim(htmlspecialchars($_REQUEST["DEVELOPMENT_COMPANY_NAME"]));
+	$AUTHOR_EMAIL = trim(htmlspecialchars($_REQUEST["DEVELOPMENT_AUTHOR_EMAIL"]));
+	$AUTHOR_PHONE = trim(htmlspecialchars($_REQUEST["DEVELOPMENT_AUTHOR_PHONE"]));
+	$AUTHOR_COMMENT = trim(htmlspecialchars($_REQUEST["DEVELOPMENT_AUTHOR_COMMENT"]));
 	$EMAIL_TO = trim(htmlspecialchars($arParams["ALFA_EMAIL_TO"]));
 	
 	if(check_bitrix_sessid())
@@ -97,7 +97,7 @@ if($_REQUEST["redsignRecall"]=="Y" && class_exists(CEventType) && class_exists(C
 					"AUTHOR_COMMENT" => $AUTHOR_COMMENT,
 					"EMAIL_TO" => $EMAIL_TO,
 				);
-				CEvent::Send("REDSIGN_RECALL", SITE_ID, $arEventFields, "N");
+				CEvent::Send("DEVELOPMENT_RECALL", SITE_ID, $arEventFields, "N");
 				$arResult["GOOD_SEND"] = "Y";
 			} else {
 				$arResult["LAST_ERROR"] = GetMessage("ALFA_MSG_EMPTY_REQUIRED_FIELDS");

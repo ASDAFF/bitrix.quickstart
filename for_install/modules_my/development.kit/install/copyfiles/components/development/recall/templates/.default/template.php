@@ -10,12 +10,12 @@
 
 <form action="<?=$arResult["ACTION_URL"]?>" method="POST">
 	<?=bitrix_sessid_post()?>
-	<input type="hidden" name="redsignRecall" value="Y" />
-	<?=GetMessage("MSG_AUT_NAME")?><span style="color:red">*</span>:<br /><input type="text" name="REDSIGN_AUTHOR" /><br />
-	<?=GetMessage("MSG_AUT_COMPANY")?>:<br /><input type="text" name="REDSIGN_COMPANY_NAME" /><br />
-	<?=GetMessage("MSG_AUT_EMAIL")?>:<br /><input type="text" name="REDSIGN_AUTHOR_PHONE" /><br />
-	<?=GetMessage("MSG_AUT_PHONE")?><span style="color:red">*</span>:<br /><input type="text" name="REDSIGN_AUTHOR_PHONE" /><br />
-	<?=GetMessage("MSG_AUT_COMMENT")?>:<br /><textarea name="REDSIGN_AUTHOR_COMMENT"></textarea><br />
+	<input type="hidden" name="developmentRecall" value="Y" />
+	<?=GetMessage("MSG_AUT_NAME")?><span style="color:red">*</span>:<br /><input type="text" name="DEVELOPMENT_AUTHOR" /><br />
+	<?=GetMessage("MSG_AUT_COMPANY")?>:<br /><input type="text" name="DEVELOPMENT_COMPANY_NAME" /><br />
+	<?=GetMessage("MSG_AUT_EMAIL")?>:<br /><input type="text" name="DEVELOPMENT_AUTHOR_PHONE" /><br />
+	<?=GetMessage("MSG_AUT_PHONE")?><span style="color:red">*</span>:<br /><input type="text" name="DEVELOPMENT_AUTHOR_PHONE" /><br />
+	<?=GetMessage("MSG_AUT_COMMENT")?>:<br /><textarea name="DEVELOPMENT_AUTHOR_COMMENT"></textarea><br />
 	<?if($arParams["ALFA_USE_CAPTCHA"]=="Y"):?>
 		<?=GetMessage("MSG_CAPTHA")?><span style="color:red">*</span>:<br />
 		<input type="text" name="captcha_word" size="30" maxlength="50" value=""><br />

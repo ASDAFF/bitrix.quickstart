@@ -1,0 +1,172 @@
+%theme-background0 {
+  background: $skin0_bg100;
+  background-image: linear-gradient(180deg, $skin0_bg0, $skin0_bg100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin0_bg0',endColorstr='$skin0_bg100',GradientType=0);
+  color: $skin0_color;
+}
+
+%theme-background0-inv {
+  background: $skin0_bg0;
+  background-image: linear-gradient(180deg, $skin0_bg100, $skin0_bg0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin0_bg100',endColorstr='$skin0_bg0',GradientType=0);
+  color: $skin0_color;
+}
+
+%theme-background1 {
+  background: $skin1_bg;
+  background-image: linear-gradient(180deg, $skin1_bg0, $skin1_bg100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin1_bg0',endColorstr='$skin1_bg100',GradientType=0);
+  color: $skin1_color;
+}
+
+%theme-background1-inv {
+  background: $skin1_bg0;
+  background-image: linear-gradient(180deg, $skin1_bg100, $skin1_bg0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin1_bg100',endColorstr='$skin1_bg0',GradientType=0);
+  color: $skin1_color;
+}
+
+%theme-background2 {
+  background: $skin2_bg;
+  background-image: linear-gradient(180deg, $skin2_bg0, $skin2_bg100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin2_bg0',endColorstr='$skin2_bg100',GradientType=0);
+  color: $skin2_color;
+}
+
+%theme-background2-inv {
+  background: $skin2_bg0;
+  background-image: linear-gradient(180deg, $skin2_bg100, $skin2_bg0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin2_bg100',endColorstr='$skin2_bg0',GradientType=0);
+  color: $skin2_color;
+}
+
+%theme-background3 {
+  background: $skin3_bg;
+  background-image: linear-gradient(180deg, $skin3_bg0, $skin3_bg100);
+  color: $skin3_color;
+}
+
+%theme-background4 {
+  background: $theme-background4-bg100;
+  background-image: linear-gradient(180deg, $theme-background4-bg0, $theme-background4-bg100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$theme-background4-bg0',endColorstr='$theme-background4-bg100',GradientType=0);
+  color: $text-color;
+}
+
+%theme-background4-inv {
+  background: $theme-background4-bg100;
+  background-image: linear-gradient(180deg, $theme-background4-bg100, $theme-background4-bg0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$theme-background4-bg100',endColorstr='$theme-background4-bg0',GradientType=0);
+}
+
+%theme-background5 {
+  background: $theme-background5-bg100;
+  background-image: linear-gradient(180deg, $theme-background5-bg0, $theme-background5-bg100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$theme-background5-bg0',endColorstr='$theme-background5-bg100',GradientType=0);
+  color: $text-color;
+}
+
+%theme-background5-inv {
+  background: $theme-background5-bg100;
+  background-image: linear-gradient(180deg, $theme-background5-bg100, $theme-background5-bg0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$theme-background5-bg100',endColorstr='$theme-background5-bg0',GradientType=0);
+  color: $text-color;
+}
+
+%theme-btn1 {
+  @extend %theme-background0;
+
+  &:hover {
+    background: $skin0_hover_bg;
+    background-image: linear-gradient(180deg, $skin0_hover_bg0, $skin0_hover_bg100);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin0_hover_bg0',endColorstr='$skin0_hover_bg100',GradientType=0);
+    color: $skin0_color;
+  }
+
+  &:active {
+    background: $skin0_active_bg;
+    color: $skin0_color;
+  }
+
+  .icon {
+    fill: $skin0_color;
+  }
+}
+
+
+%theme-btn2 {
+  @extend %theme-background1;
+
+  &:hover {
+    background: $skin1_hover_bg;
+    background-image: linear-gradient(180deg, $skin1_hover_bg0, $skin1_hover_bg100);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin1_hover_bg0',endColorstr='$skin1_hover_bg100',GradientType=0);
+    color: $skin1_color;
+  }
+
+  &:active {
+    background: $skin1_active_bg;
+    color: $skin1_color;
+  }
+
+  .icon {
+    fill: $skin1_color;
+  }
+}
+
+
+%theme-btn3 {
+  @extend %theme-background3;
+
+  &:hover {
+    background: $skin3_hover_bg;
+    background-image: linear-gradient(180deg, $skin3_hover_bg0, $skin3_hover_bg100);
+    color: $skin3_color;
+  }
+
+  &:active {
+    background: $skin3_active_bg;
+    background-image: linear-gradient(180deg, $skin3_active_bg0, $skin3_active_bg100);
+    color: $skin3_color;
+  }
+
+  .icon {
+    fill: $skin3_color;
+  }
+}
+
+%theme-btn4 {
+  @extend %theme-background2;
+
+  &:hover {
+    background: $skin2_hover_bg;
+    background-image: linear-gradient(180deg, $skin2_hover_bg0, $skin2_hover_bg100);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$skin2_hover_bg0',endColorstr='$skin2_hover_bg100',GradientType=0);
+    color: $skin2_color;
+  }
+
+  &:active {
+    background: $skin2_active_bg;
+    color: $skin2_color;
+  }
+
+  .icon {
+    fill: $skin2_color;
+  }
+}
+
+%theme-link {
+  color: $link-color;
+}
+
+%theme-icon-men {
+  fill: $gray;
+  height: 26px;
+  width: 19px;
+}
+
+%theme-icon-women {
+  fill: $gray;
+  height: 26px;
+  width: 22px;
+}

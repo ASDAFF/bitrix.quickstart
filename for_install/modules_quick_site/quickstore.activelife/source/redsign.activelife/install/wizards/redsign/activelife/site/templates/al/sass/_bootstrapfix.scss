@@ -1,0 +1,80 @@
+a:focus {
+  outline: none;
+}
+
+.container,
+row {
+  box-sizing: border-box;
+}
+
+.col-xs-2d4,
+.col-sm-2d4,
+.col-md-2d4,
+.col-lg-2d4,
+.col-xs-9d6,
+.col-sm-9d6,
+.col-md-9d6,
+.col-lg-9d6 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 2);
+}
+
+.form-control {
+
+  &.textarea,
+  &.input[type="text"],
+  &.input[type="number"] {
+    @extend %theme-background4;
+  }
+  box-sizing: border-box;
+}
+
+.form-label {
+  margin-bottom: $base-line-height*0.5;
+}
+
+.input-group {
+  position: relative;
+}
+
+.list-inline {
+  list-style: none;
+  margin-left: -0.5em;
+  padding-left: 0;
+
+  > li {
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .col-sm-2d4 {
+    width: percentage((2.4 / $grid-columns));
+  }
+  .col-sm-9d6 {
+    width: percentage((9.6 / $grid-columns));
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .col-md-2d4 {
+    width: percentage((2.4 / $grid-columns));
+  }
+  .col-md-9d6 {
+    width: percentage((9.6 / $grid-columns));
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .col-lg-2d4 {
+    width: percentage((2.4 / $grid-columns));
+  }
+  .col-lg-9d6 {
+    width: percentage((9.6 / $grid-columns));
+  }
+}

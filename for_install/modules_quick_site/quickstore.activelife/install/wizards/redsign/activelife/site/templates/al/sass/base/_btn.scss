@@ -1,0 +1,62 @@
+.btn {
+  //background-image: none;
+  border: none;
+  border-radius: $border-radius-base;
+  box-shadow: 0 0 2px -1px $gray-base;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  //height: $base-line-height*2;
+  min-height: $base-line-height*2;
+  outline: none;
+  padding: $base-line-height*0.5 $base-line-height*0.75;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    box-shadow: 0 -1px 2px -1px $gray-base, 1px 1px 2px -1px $gray-base inset;
+    text-decoration: none;
+  }
+    
+  &__icon {
+    margin-right: .5em;
+  }
+}
+
+.sale_order_full_table.complete input[type="submit"] {
+  @extend .btn;
+}
+
+.btn1,
+.sale_order_full_table.complete input[type="submit"] {
+  @extend .btn;
+  @extend %theme-btn1;
+}
+
+.btn2 {
+  @extend .btn;
+  @extend %theme-btn2;
+}
+
+
+.btn3 {
+  @extend .btn;
+  @extend %theme-btn3;
+}
+
+.btn-large {
+  font-size: $font-size-h4;
+  line-height: $base-line-height*2;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

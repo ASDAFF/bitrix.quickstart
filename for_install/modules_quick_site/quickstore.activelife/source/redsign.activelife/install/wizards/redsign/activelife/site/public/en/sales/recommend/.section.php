@@ -1,0 +1,3 @@
+<?
+$sSectionName = "Recommended products";
+?>

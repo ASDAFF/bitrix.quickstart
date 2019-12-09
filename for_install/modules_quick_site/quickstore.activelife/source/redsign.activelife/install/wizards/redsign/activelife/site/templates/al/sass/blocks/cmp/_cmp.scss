@@ -1,0 +1,19 @@
+.cmp {
+  
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &__icon {
+    fill: $gray;
+    height: 13px;
+    margin: -5px .5em 0 0;
+    width: 14px;
+  }
+
+  &__link:hover > &__icon,
+  &__link.checked > &__icon {
+    fill: $skin0_bg;
+  }
+}

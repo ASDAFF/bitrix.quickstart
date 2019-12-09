@@ -1,0 +1,161 @@
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+
+
+/*************** SCROLLBAR LIGHT ***************/
+.scroll-wrapper > .scroll-element,
+.scroll-wrapper > .scroll-element div {
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scroll-wrapper > .scroll-element {
+    background: $body-bg;
+}
+
+
+.scroll-wrapper > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scroll-wrapper > .scroll-element .scroll-element_outer {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.scroll-wrapper > .scroll-element .scroll-element_size {
+    background: #dbdbdb;
+    background: linear-gradient(90deg, #dbdbdb 0%,#e8e8e8 100%);
+
+    border-radius: 10px;
+    margin: 0 auto;
+    right: 0;
+    width: 9px;
+}
+
+.scroll-wrapper > .scroll-element.scroll-x {
+    bottom: 0;
+    height: 17px;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
+}
+
+.scroll-wrapper > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    width: 17px;
+}
+
+.scroll-wrapper > .scroll-element .scroll-bar {
+    background: $skin0_bg;
+    border-radius: 10px;
+}
+
+/* scrollbar height/width & offset from container borders */
+
+.scroll-wrapper > .scroll-content.scroll-scrolly_visible { left: -17px; margin-left: 17px; }
+.scroll-wrapper > .scroll-content.scroll-scrollx_visible { top:  -17px; margin-top:  17px; }
+
+.scroll-wrapper > .scroll-element.scroll-x .scroll-bar { height: 10px; min-width: 10px; top: 0px; }
+.scroll-wrapper > .scroll-element.scroll-y .scroll-bar {
+    left: 0px; min-height: 10px; width: 5px;
+    margin: 0 auto;
+    right: 0;
+}
+
+.scroll-wrapper > .scroll-element.scroll-x .scroll-element_outer { height: 12px; left: 2px; top: 2px; }
+.scroll-wrapper > .scroll-element.scroll-x .scroll-element_size { left: -4px; }
+
+.scroll-wrapper > .scroll-element.scroll-y .scroll-element_outer { left: 1px; top: 2px; width: 15px; }
+.scroll-wrapper > .scroll-element.scroll-y .scroll-element_size { top: -4px; }
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -19px; }
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -19px; }
+
+.scroll-wrapper > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -19px; }
+.scroll-wrapper > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -19px; }

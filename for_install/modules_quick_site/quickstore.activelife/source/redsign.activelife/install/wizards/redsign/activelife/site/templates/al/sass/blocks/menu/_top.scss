@@ -1,0 +1,53 @@
+.menu_top{
+  list-style: none;
+  margin: 0;
+  max-height: $base-line-height*2;
+  overflow: hidden;
+  padding: 0;
+
+  &__item {
+    float: left;
+    .dropdown-toggle {
+      display: block;
+      cursor: pointer;
+      padding: $base-line-height*0.5 $base-line-height;
+    }
+
+    .dropdown-menu > &{
+      float: none;
+    }
+  }
+
+  a {
+    color: $skin_topline_link_color;
+    display: block;
+    padding: $base-line-height*0.5 $base-line-height;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: $link-color;
+    }
+  }
+
+  &.inited {
+    overflow: visible;
+  }
+}
+
+.hml_menu {
+
+  &.refreshing {
+    float: none;
+    overflow: hidden;
+  }
+
+  &__icon,
+  &.hml_menu-drop &__more_icon {
+    display: none;
+  }
+
+  &.hml_menu-drop &__icon {
+    display: block;
+  }
+}

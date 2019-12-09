@@ -1,0 +1,16 @@
+.adv_owl {
+  margin-bottom: $base-line-height*2;
+}
+
+@media (min-width: 992px) {
+
+  .adv_owl {
+    &.owl-carousel.owl-shift .owl-stage {
+      right: auto;
+    }
+
+    &.owl-carousel.owl-shift .owl-stage-outer:after {
+      display: none;
+    }
+  }
+}

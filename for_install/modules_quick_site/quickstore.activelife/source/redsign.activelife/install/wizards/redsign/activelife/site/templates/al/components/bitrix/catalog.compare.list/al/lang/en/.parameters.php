@@ -1,0 +1,11 @@
+<?
+$MESS["CP_BCCL_TPL_PARAM_TITLE_POSITION_FIXED"] = "Float comparison chart above the page";
+$MESS["CP_BCCL_TPL_PARAM_TITLE_POSITION"] = "Position";
+$MESS["CP_BCCL_TPL_PARAM_POSITION_TOP_LEFT"] = "top left";
+$MESS["CP_BCCL_TPL_PARAM_POSITION_TOP_RIGHT"] = "top right";
+$MESS["CP_BCCL_TPL_PARAM_POSITION_BOTTOM_LEFT"] = "bottom left";
+$MESS["CP_BCCL_TPL_PARAM_POSITION_BOTTOM_RIGHT"] = "bottom right";
+$MESS['RS_SLINE.UNDEFINED'] = 'Not specified';
+$MESS['RS_SLINE.ADDITIONAL_PICT_PROP'] = 'Add. images';
+$MESS['RS_SLINE.OFFER_ADDITIONAL_PICT_PROP'] = 'Add. images(SKU properties)';
+$MESS['RS_SLINE.SKU_PRICE_SORT_ID'] = 'Price ID for sort (SKU)';

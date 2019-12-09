@@ -1,0 +1,314 @@
+$menu_hover_shadow: lighten( desaturate( adjust-hue( $skin0_bg, 1deg ), 71 ), 47 ); //#b8c8d8
+$menu_hover_border: lighten( desaturate( adjust-hue( $skin0_bg, -2deg ), 73 ), 63 ); //#eaeff3
+
+.modern-menu {
+
+  position: relative;
+
+  // Toggle button
+  & &__toggle {
+    color: $skin0_color;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: 12px $base-line-height;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  & &__toggle:hover {
+    color: $skin0_color;
+    text-decoration: none;
+  }
+  // /Toggle button
+
+
+  // Items
+  & &__items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: $body-bg;
+    border-bottom: 2px solid $skin0_bg;
+  }
+
+  & &__root-item,
+  & &__item {
+    display: block;
+  }
+
+  & &__root-item:before,
+  & &__item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $skin0_bg;
+  }
+
+  & &__root-item > &__subitems,
+  & &__item > &__subitems {
+    padding: 0 0 0 $base-line-height;
+  }
+
+  & &__root-item > a,
+  & &__more-btn > a,
+  & &__item > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 12px $base-line-height*1.2 12px $base-line-height*1.2;
+  }
+  // /Items
+
+  // SubItems
+  & &__root-item > &__subitems,
+  & &__subitems > &__item > &__subitems {
+    display: none;
+  }
+  // /SubItems
+
+  // Product
+  & &__product {
+    width: 0;
+    display: none;
+  }
+  & &__product:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border-left: 1px dashed $skin0_bg;
+  }
+  & &__product-img {
+    display: block;
+    text-align: center;
+  }
+  & &__product-name {
+    white-space: normal;
+  }
+  & &__product-name a {
+    color: $text-color;
+    text-decoration: none;
+  }
+  & &__product-name a:hover {
+    text-decoration: underline;
+  }
+  & &__product-price-wrap {
+    display: block;
+    text-align: left;
+  }
+  & &__product-crossed-price {
+
+  }
+  & &__product-price {
+    color: $price-color;
+    float: right;
+    font-size: 19px;
+    line-height: $base-line-height;
+    margin-top: $base-line-height;
+  }
+  // /Product
+
+  // Media
+
+  @media(max-width: $screen-xs-max) {
+    & &__items.is-open {
+      display: block;
+    }
+    & &__more-btn > a {
+      display: none;
+    }
+
+    & &__toggle-submenu {
+      cursor: pointer;
+      font-style: normal;
+      margin-bottom: -1px;
+      padding: 12px $base-line-height;
+      text-align: center;
+      z-index: 1;
+      float: right;
+      transform: translateY(-100%);
+    }
+
+    & &__toggle-submenu:before {
+      color: $skin0_bg;
+      content: '+';
+      display: inline;
+      font-size: $font-size-h4;
+      line-height: $base-line-height;
+      vertical-align: middle;
+    }
+
+    & .is-sub-open > &__toggle-submenu:before {
+      content: "-";
+    }
+
+    & &__root-item.is-sub-open > &__subitems,
+    & &__item.is-sub-open > &__subitems {
+      display: block;
+    }
+
+    & &__more-container {
+      display: none;
+    }
+  }
+
+  @media(min-width: $screen-sm-min) {
+    & &__toggle {
+      display: none;
+    }
+
+    & &__item {
+      max-width: 210px;
+    }
+
+    & &__items {
+      display: block;
+      position: static;
+      white-space: nowrap;
+      visibility: hidden;
+      overflow: hidden;
+      width: auto;
+      border-bottom: 0;
+    }
+    &.is-ready &__items {
+      visibility: visible;
+      overflow: initial;
+      background: inherit;
+    }
+
+    & &__root-item,
+    & &__more-btn {
+      display: inline-block;
+      margin-left: -4px;
+    }
+
+    & &__root-item > a,
+    & &__more-btn > a {
+      color: $skin0_color;
+      font-weight: bold;
+      border-color: transparent;
+      border-style: solid solid none;
+      border-width: 1px 1px medium;
+    }
+
+    & &__root-item:before,
+    & &__item:before {
+      display: none;
+    }
+
+    & &__root-item > a {
+      border-right-color: $skin0_bg;
+    }
+
+    & &__root-item:hover > a,
+    & &__more-btn:hover > a {
+      background: $body-bg;
+      border-color: $menu_hover_border;
+      box-shadow: 0 1px 2px 1px $menu_hover_shadow;
+      color: $text-color;
+    }
+
+    & &__root-item > &__subitems,
+    & &__more-btn > &__more-container {
+      background: $body-bg;
+      border-color: $menu_hover_border;
+      border-style: none solid solid;
+      border-width: medium 1px 1px;
+      box-shadow: 2px 2px 2px -1px $menu_hover_shadow, -2px 2px 2px -1px $menu_hover_shadow;
+      display: block;
+      padding: $base-line-height 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 500;
+    }
+    
+    &.is-ready &__root-item > &__subitems,
+    &.is-ready &__more-btn > &__more-container {
+      display: none;
+      visibility: visible;
+    }
+    
+    & &__root-item:hover > &__subitems,
+    & &__more-btn:hover > &__more-container {
+      display: block;
+    }
+
+    & &__more-container a {
+      display: block;
+      font-size: $font-size-h4;
+      padding: 0 $base-line-height;
+      text-decoration: none;
+    }
+
+    & &__subitems > &__item {
+      float: left;
+      padding: 0;
+    }
+
+    & &__item > &__subitems > &__item {
+      float: none;
+    }
+
+    & &__subitems > &__item > &__subitems {
+      display: block;
+    }
+
+    & &__root-item > &__subitems,
+    & &__item > &__subitems {
+      padding-left: 0;
+    }
+
+    & &__root-item > &__subitems > div > &__item {
+      margin-bottom: $base-line-height/4;
+      margin-top: $base-line-height/4;
+
+      white-space: normal;
+    }
+
+    & &__item a {
+      color: $link-color;
+      display: inline-block;
+      font-size: $font-size-h4;
+      line-height: $base-line-height*1.3;
+      padding: 0 $base-line-height;
+      text-transform: none;
+      white-space: normal;
+    }
+
+    & &__item a:hover,
+    & &__more-container a:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+
+    & &__item > &__subitems > &__item a {
+      color: $text-color;
+      font-size: 12px;
+      padding-left: $base-line-height*1.5;
+    }
+    
+    & &__item > &__subitems &__subitems > &__item a {
+      color: $gray-dark;
+      padding-left: $base-line-height*2;
+    }
+
+    & .is-desktop-hide {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    & &__product {
+      display: block;
+      padding: 0 $base-line-height;
+      width: 250px;
+    }
+
+    & &__product:before {
+      margin-left: -$base-line-height;
+    }
+  }
+}

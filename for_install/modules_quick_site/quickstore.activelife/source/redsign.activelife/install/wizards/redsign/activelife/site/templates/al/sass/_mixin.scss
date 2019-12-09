@@ -1,0 +1,67 @@
+@mixin sprite-background-image-sizes($sprite, $file) {
+  background: sprite($sprite, $file) no-repeat;
+  height: image-height(sprite-file($sprite, $file));
+  width: image-width(sprite-file($sprite, $file));
+}
+
+@mixin clearfix() {
+  &:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin vertical-center() {
+  white-space: nowrap;
+  
+  &:after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
+    
+  &__in {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    white-space: normal;
+  }
+}
+
+@mixin blocks-justify() {
+  display: -webkit-box; /* Android 4.3-, Safari no optimize */
+  -webkit-box-pack: justify; /* Android 4.3-, Safari no optimize */
+  display: -webkit-flex; /* Safari optimize */
+  -webkit-justify-content: space-between; /* Safari optimize */
+  display: flex;
+  justify-content: space-between;
+  text-align: justify; /* IE10-, Firefox 12-22 */
+  text-align-last: justify; /* IE10-, Firefox 12-22 */
+
+  /*text-justify: newspaper; /* IE7- */
+  /*zoom: 1; /* IE7- */
+  
+  &__col {
+    display : inline-block;
+    /*display: -webkit-box; /* !hack! Android 4.3-, after inline-block */
+    /*display: inline;  /* IE7- */
+    /*zoom: 1; /* IE7- */
+  }
+}
+
+@mixin scrollbar-hide() {
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  
+ &::-webkit-scrollbar {
+   width: 0;
+ }
+
+}

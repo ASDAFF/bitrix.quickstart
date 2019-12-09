@@ -1,0 +1,22 @@
+%price {
+  color: $price-color;
+  font-size: $font-size-h3;
+  font-weight: normal;
+  line-height: $base-line-height*2;
+}
+
+%price-old {
+  color: $gray;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.price__pdv,
+.bx-price.all {
+  @extend %price;
+}
+
+.price__pv,
+.bx-price-old {
+  @extend %price-old;
+}

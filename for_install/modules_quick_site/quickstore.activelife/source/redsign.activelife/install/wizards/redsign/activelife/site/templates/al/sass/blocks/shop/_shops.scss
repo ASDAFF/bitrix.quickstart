@@ -1,0 +1,18 @@
+.shops { 
+
+
+  & &__list {
+    border: 1px solid $gray;
+    border-radius: $border-radius-base;
+    margin-bottom: $base-line-height;
+    padding: $base-line-height;
+  }
+
+  @media (min-width: $screen-md-min) {
+    & &__list {
+      height: 315px;
+      max-height: 315px;
+      overflow-y: auto;
+    }
+  }
+}

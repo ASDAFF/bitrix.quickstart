@@ -1,0 +1,16 @@
+.menu_icon {
+  margin-bottom: -1px;
+
+  &__bar {
+    border-radius: 1px;
+    border-top: 3px solid #a9a9a9;
+    display: block;
+    height: 0;
+    transition: transform 0.15s linear 0s, -webkit-transform 0.15s linear 0s;
+    width: 22px;
+    
+    & + & {
+      margin-top: 4px;
+    }
+  }
+}

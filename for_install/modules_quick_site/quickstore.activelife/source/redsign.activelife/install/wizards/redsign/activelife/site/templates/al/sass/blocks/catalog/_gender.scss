@@ -1,0 +1,18 @@
+.gender {
+
+  &__men,
+  &__women {
+    float: left;
+    height: 28px;
+    margin-left: 3px;
+    width: 14px;
+  }
+
+  &__men {
+    background-position: 0 -257px;
+  }
+
+  &__women {
+    background-position: -14px -257px;
+  }
+}

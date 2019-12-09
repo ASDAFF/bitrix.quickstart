@@ -1,0 +1,295 @@
+.catalogmenucolumn{
+	float:left;
+	min-width:250px;
+}
+.catalogmenucolumn ul {
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+.catalogmenucolumn ul > li {
+	list-style-type: none;
+}
+.catalogmenu,
+.catalogmenusmall{
+	position:relative;
+}
+
+.catalogmenu,
+.catalogmenu ul,
+.catalogmenusmall,
+.catalogmenusmall ul{
+	width: 100%;
+}
+.catalogmenu a,
+.catalogmenusmall a{
+	position:relative;
+	display:block;
+	padding:9px 12px;
+	text-decoration:none;
+}
+.catalogmenu li{
+	background-color:#FFF;
+	display: block;
+}
+.catalogmenu li.more{
+	display:none;
+}
+.catalogmenu.hover li.more{
+	display:block;
+}
+.catalogmenu.hover li.morelink{
+	display:none;
+}
+.catalogmenu li.parent{
+	max-width:250px;
+	background-color:#F3F3F3;
+}
+.catalogmenu a.parent{
+	padding:11px 12px;
+	color:#000;
+	font-size:13px;
+}
+.catalogmenu a.parent .icon.menu{
+	float:right;
+	width:13px;
+	height:13px;
+	margin-top:3px;
+	margin-right:3px;
+	margin-left:8px;
+	background-position:0px 0px;
+}
+.catalogmenu a.first.morelink{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:16px;
+	line-height:16px;
+	padding:12px 22px 12px 12px;
+}
+.catalogmenu li li .icon.menu{
+	position:absolute;
+	top:50%;
+	right:8px;
+	width:5px;
+	height:8px;
+	margin-top:-4px;
+	margin-left:8px;
+	background-position:0px -83px;
+}
+.catalogmenu li a.first{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	padding:11px 22px 10px 12px;
+	overflow:hidden;
+}
+.catalogmenu li a.first.selected{
+	text-decoration:underline;
+}
+.catalogmenu li.first:hover > a,
+.catalogmenu li.first.hover > a,
+.catalogmenu li.sub:hover > a,
+.catalogmenu li.sub.hover > a,
+.catalogmenu a.first:hover,
+.catalogmenu a.first.hover,
+.catalogmenu a.sub:hover,
+.catalogmenu a.sub.hover{
+	color:#fff;
+	background-color:#ee8131;
+}
+.catalogmenu a.first:active,
+.catalogmenu a.first.hover:active,
+.catalogmenu a.sub:active,
+.catalogmenu a.sub.hover:active{
+	color:#fff;
+	background-color:#d36f25;
+}
+.catalogmenu a.first:hover .icon.menu,
+.catalogmenu a.first.hover .icon.menu,
+.catalogmenu a.sub:hover .icon.menu,
+.catalogmenu a.sub.hover .icon.menu{
+	background-position:-5px -83px;
+}
+.catalogmenu li ul.first{
+	top:40px;
+	max-width:250px;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;
+}
+.catalogmenu.hover li ul.first{
+	border-bottom:1px solid #F3F3F3;
+}
+.catalogmenu li ul{
+	position:absolute;
+	top:0px;
+	display:none;
+	max-width:248px;
+	height:auto;
+	background-color:#fff;
+	border:1px solid #F3F3F3;
+	
+}
+.catalogmenu li ul.show{
+	display:block;
+	z-index:500;
+}
+.catalogmenu li.first ul{
+	min-height:100%;
+}
+.catalogmenu li.first{
+	border-right:1px solid #F3F3F3;
+	border-bottom:1px solid #F3F3F3;
+	border-left:1px solid #F3F3F3;
+}
+.catalogmenu.hover li.first.lastchild{
+	border-bottom:1px solid #FFF;
+}
+.catalogmenu li.sub{
+	border-bottom:1px solid #FFF;
+}
+.catalogmenu li ul a{
+	text-align:left;
+}
+.catalogmenu li ul ul{
+	margin:-1px 0 0 248px;
+}
+.catalogmenu li:hover ul,
+.catalogmenu li.hover ul{
+	display:none;
+}
+.catalogmenu li:hover > ul,
+.catalogmenu li.hover > ul,
+.catalogmenu li:hover ul.first.show,
+.catalogmenu li.hover ul.first.show{
+	display:block;
+	z-index: 200;
+}
+.catalogmenu .elementinmenu{
+	width:250px;\
+}
+.catalogmenu li:hover ul.elementinmenu,
+.catalogmenu li.hover ul.elementinmenu{
+	display:block;
+	left:0px;
+}
+.catalogmenu .elementinmenu .name{
+	height:35px;
+	text-align:center;
+	overflow:hidden;
+}
+.catalogmenu .elementinmenu .pic{
+	padding:10px 0px;
+	text-align:center;
+}
+.catalogmenu .elementinmenu .pic a{
+	display:block;
+	width:210px;
+	height:170px;
+	line-height:170px;
+	text-align:center;
+}
+.catalogmenu .elementinmenu .pic a img{
+	display:inline-block;
+}
+.catalogmenu .elementinmenu .price{
+	padding:10px 20px 0px 20px;
+	text-align:center;
+}
+.catalogmenu .elementinmenu .price span{
+	display:inline-block;
+	margin-bottom:6px;
+}
+.catalogmenu .elementinmenu .price.gen{
+	display:block;
+	font-size:18px;
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.catalogmenu .elementinmenu .price.old{
+	margin-right:25px;
+}
+.catalogmenu .elementinmenu .more{
+	margin-top:20px;
+	padding:0px 20px;
+	text-align:right;
+}
+.catalogmenu .elementinmenu .more a{
+	display:inline;
+	padding:0px;
+	text-align:right;
+	text-decoration:none;
+}
+.catalogmenu .elementinmenu .more a:hover{
+	text-decoration:underline;
+}
+.catalogmenu .elementinmenu .more a .icon{
+	width:7px;
+	height:14px;
+	margin-left:5px;
+	margin-bottom:3px;
+	background-position:0px -545px;
+}
+.catalogmenu .elementinmenu .more a:hover .icon {
+	background-position:-21px -545px;
+}
+
+/* mobile menu */
+.catalogmenusmall{
+	display:none;
+}
+.catalogmenusmall li.parent{
+	background-color:#F3F3F3;
+}
+.catalogmenusmall a.parent{
+	padding:11px 12px;
+	color:#000;
+	font-size:13px;
+}
+.catalogmenusmall a.parent .icon.menu{
+	float:right;
+	width:13px;
+	height:13px;
+	margin-top:3px;
+	margin-right:3px;
+	margin-left:8px;
+	background-position:0px 0px;
+}
+
+
+@media screen and (min-width:1010px){
+	body.adaptive .catalogmenu li ul.first.show{
+		display:block;
+	}
+}
+@media screen and (max-width:1010px){
+	body.adaptive .catalogmenu li:hover > ul.lvl4,
+	body.adaptive .catalogmenu li.hover > ul.lvl4,
+	body.adaptive .catalogmenu li:hover > ul.lvl5,
+	body.adaptive .catalogmenu li.hover > ul.lvl5{
+		display:none;
+	}
+	body.adaptive .catalogmenu li ul.first.show{
+		display:none;
+	}
+}
+@media screen and (max-width:760px){
+	body.adaptive .catalogmenu li:hover > ul.lvl3,
+	body.adaptive .catalogmenu li.hover > ul.lvl3,
+	body.adaptive .catalogmenu li:hover > ul.lvl4,
+	body.adaptive .catalogmenu li.hover > ul.lvl4,
+	body.adaptive .catalogmenu li:hover > ul.lvl5,
+	body.adaptive .catalogmenu li.hover > ul.lvl5{
+		display:none;
+	}
+}
+@media screen and (max-width:605px){
+	body.adaptive .catalogmenucolumn{
+		float:none;
+	}
+	body.adaptive .catalogmenucolumn .catalogmenu{
+		display:none;
+	}
+	body.adaptive .catalogmenucolumn .catalogmenusmall{
+		display:block;
+	}
+}

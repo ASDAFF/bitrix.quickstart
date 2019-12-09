@@ -1,0 +1,44 @@
+.sale-personal-section-index-block {
+  background: $skin0_bg;
+  background-size: cover;
+  border-radius: $base-line-height/6;
+  box-sizing: border-box;
+  color: $skin0_color;
+  display: flex;
+  height: 87%;
+  justify-content: space-around;
+  //margin: $base-line-height 0;
+  margin-bottom: $base-line-height;
+  opacity: .8;
+  padding:$base-line-height*1.5 $base-line-height;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.sale-personal-section-index-block:hover,
+.sale-personal-section-index-block:active,
+.sale-personal-section-index-block:focus{
+  color: $skin0_color;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.sale-personal-section-index-block-name {
+  font-size: $font-size-h4;
+  margin: 0;
+}
+
+@media (max-width: 992px)
+{
+  .sale-personal-section-index-block {
+    height: auto;
+    margin: 8px 0;
+  }
+}
+
+.sale-personal-section-row-flex {
+  display: flex;
+  flex-flow: row wrap;
+}

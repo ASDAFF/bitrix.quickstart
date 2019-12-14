@@ -1,0 +1,121 @@
+.anchor {
+  border-bottom: 1px dashed;
+  color: $link-color;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tooltip {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  
+  &:before,
+  &:after,
+  &__in {
+    bottom: 32px;//125%;
+    opacity: 0;
+    transition: bottom .2s ease 0s, opacity .2s ease 0s;
+    visibility: hidden;
+  }
+    
+  &:before,
+  &:after {
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 501;
+  }
+
+  &:before {
+    border-top: 7px solid $skin0_bg;
+    margin-bottom: -3px;
+  }
+
+  &:after {
+    border-top: 7px solid $body-bg;
+    margin-bottom: 0;
+  }
+  
+  &__link {
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -.4em;
+      left: 0;
+      right: 0;
+      height: .4em;
+      visibility: hidden;
+    }
+  }
+
+  &__in {
+    background: #F5F8FA;
+    background-image: linear-gradient(180deg, $body-bg, #F5F8FA);
+    border: 1px solid #F3F5F8;
+    border-bottom: 2px solid $skin0_bg;
+    box-shadow: 2px 2px 2px -1px #B8C8D8, -2px 2px 2px -1px #B8C8D8;
+    box-sizing: border-box;
+    cursor: auto;
+    left: -100em;
+    line-height: normal;
+    margin: 0 auto .4em;
+    max-width: 100vw;
+    max-height: 80vh;
+    overflow: auto;
+    padding: 1em;
+    position: absolute;
+    right: -100em;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: max-content;
+    z-index: 500;
+  }
+
+  &.left > &__in {
+    left: 0;
+    right: -20em;
+    margin: 0 0 .4em;
+  }
+
+  &.right > &__in {
+    left: -20em;
+    right: 0;
+    margin: 0 0 .4em auto;
+  }
+
+  &:hover > &__in,
+  &:hover:before,
+  &:hover:after,
+  &__link:focus + &__in,
+  //&__link:focus:before,
+  //&__link:focus:after 
+  {
+    bottom: 16px;//100%;
+    transition: bottom .2s ease .4s, opacity .2s ease .4s;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+@media (max-width: 20em) {
+  .tooltip > span {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+}

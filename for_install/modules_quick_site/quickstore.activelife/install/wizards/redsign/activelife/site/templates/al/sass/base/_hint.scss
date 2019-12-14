@@ -1,0 +1,17 @@
+.hint {
+  background: $skin0_bg;
+  border-radius: 50%;
+  color: $body-bg;
+  display: inline-block;
+  font-style: normal;
+  height: em($base-line-height);
+  line-height: em($base-line-height);
+  text-align: center;
+  vertical-align: middle;
+  width: em($base-line-height);
+
+  & > .icon-close {
+    fill: $body-bg;
+    margin-top: -1px;
+  }
+}

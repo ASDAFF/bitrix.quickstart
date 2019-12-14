@@ -1,0 +1,60 @@
+.stocks {
+  
+  .scale {
+    margin-left: .25em;
+    
+    &.is-instock .scale__over > .scale__icon {
+      fill: $brand-success;
+    }
+    
+    &.is-limited .scale__over > .scale__icon {
+      fill: $brand-warning;
+    }
+    
+    &.is-outofstock .scale__over > .scale__icon {
+      fill: transparent;
+    }
+  }
+  
+  .scale__icon {
+    height: 10px;
+    width: 14px;
+  }
+  
+  &__table {
+
+    td {
+      padding: .25em .5em;
+    }
+  }
+}
+
+.stock {
+
+  &__amount {
+    white-space: nowrap;
+  }
+}
+
+.scale {
+  display: inline-block;
+  position: relative;
+
+  &__icon {
+    display: block;
+    fill: $gray;
+    stroke-width: 0;
+  }
+  
+  &__over {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+  }
+  
+  &__over > &__icon {
+    fill: $skin1_bg;
+  }
+}

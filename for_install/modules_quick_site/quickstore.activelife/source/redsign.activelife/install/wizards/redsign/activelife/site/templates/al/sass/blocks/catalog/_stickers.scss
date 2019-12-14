@@ -1,0 +1,37 @@
+.sticker {
+  @extend .vcenter;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: $body-bg;
+  float: left;
+  font-style: italic;
+  height: 50px;
+  line-height: normal;
+  margin-right: 3px;
+  padding: $base-line-height*0.125 13px $base-line-height*0.125 12px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 50px;
+
+  &__text {
+    @extend .vcenter__in;
+    
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: keep-all;
+  }
+
+  &.new {
+    background-color: $skin1_bg;
+  }
+
+  &.discount {
+    background-color: $skin4_bg;
+  }
+
+  &.action {
+    background-color: $skin0_bg;
+  }
+}

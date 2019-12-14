@@ -1,0 +1,36 @@
+<?
+$MESS["IBLOCK_CACHE_FILTER"] = "Cachen wenn der Filter aktiv ist";
+$MESS["T_IBLOCK_DESC_ASC"] = "Aufsteigend";
+$MESS["T_IBLOCK_DESC_DESC"] = "Absteigend";
+$MESS["T_IBLOCK_DESC_FID"] = "ID";
+$MESS["T_IBLOCK_DESC_FNAME"] = "Ьberschrift";
+$MESS["T_IBLOCK_DESC_FACT"] = "Aktivierungsdatum";
+$MESS["T_IBLOCK_DESC_FSORT"] = "Sortierung";
+$MESS["T_IBLOCK_DESC_FTSAMP"] = "Letzte Дnderung";
+$MESS["T_IBLOCK_DESC_IBORD1"] = "Feld fьr den ersten Sortierdurchgang der News";
+$MESS["T_IBLOCK_DESC_IBBY1"] = "Sortierrichtung fьr den ersten Sortierdurchgang der News";
+$MESS["T_IBLOCK_DESC_IBORD2"] = "Feld fьr den zweiten Sortierdurchgang der News";
+$MESS["T_IBLOCK_DESC_IBBY2"] = "Sortierrichtung fьr den zweiten Sortierdurchgang der News";
+$MESS["T_IBLOCK_DESC_LIST_ID"] = "Informationsblock ID";
+$MESS["T_IBLOCK_DESC_LIST_TYPE"] = "Informationsblocktyp (wird nur fьr die Prьfung benutzt)";
+$MESS["T_IBLOCK_DESC_LIST_CONT"] = "News pro Seite";
+$MESS["T_IBLOCK_DESC_DETAIL_PAGE_URL"] = "URL - Detailansicht (Standardwert aus Informationsblock-Einstellungen)";
+$MESS["T_IBLOCK_DESC_INCLUDE_IBLOCK_INTO_CHAIN"] = "Informationsblock in der Navigationskette anzeigen";
+$MESS["T_IBLOCK_PROPERTY"] = "Eigenschaften";
+$MESS["T_IBLOCK_FILTER"] = "Filter";
+$MESS["IBLOCK_FIELD"] = "Felder";
+$MESS["T_IBLOCK_DESC_ACTIVE_DATE_FORMAT"] = "Datumsformat";
+$MESS["T_IBLOCK_DESC_PAGER_NEWS"] = "News";
+$MESS["T_IBLOCK_DESC_PREVIEW_TRUNCATE_LEN"] = "Maximale Vorschaulдnge fьr die Anzeige (nur fьr den Text)";
+$MESS["T_IBLOCK_DESC_HIDE_LINK_WHEN_NO_DETAIL"] = "Link verbergen, wenn es keine detailierte Beschreibung gibt";
+$MESS["IBLOCK_SECTION_ID"] = "Bereichs ID";
+$MESS["IBLOCK_SECTION_CODE"] = "Bereichscode";
+$MESS["T_IBLOCK_DESC_ADD_SECTIONS_CHAIN"] = "Bereich in der Navigationskette anzeigen";
+$MESS["T_IBLOCK_DESC_CHECK_DATES"] = "Nur die im aktuellen Moment aktiven Elemente anzeigen";
+$MESS["CP_BNL_CACHE_GROUPS"] = "Zugriffsrechte berьcksichtigen";
+$MESS["CP_BNL_INCLUDE_SUBSECTIONS"] = "Elemente der Unterbereiche des Bereichs anzeigen";
+$MESS["CP_BNL_SET_META_KEYWORDS"] = "Schlьsselwцrter der Seite definieren";
+$MESS["CP_BNL_SET_META_DESCRIPTION"] = "Beschreibung der Seite definieren";
+$MESS["CP_BNL_SET_BROWSER_TITLE"] = "Ьberschrift des Browserfensters festlegen";
+$MESS["CP_BNL_SET_LAST_MODIFIED"] = "Im Header der Antwort den Zeitpunkt der Seitenдnderung angeben";
+?>

@@ -1,0 +1,49 @@
+.auth_top {
+	float: right;
+  
+  .cmp_items {
+    float: left;
+    min-height: auto;
+  }
+
+  > .dropdown,
+  &__item {
+    border-left: 1px solid $skin_topline_border;
+    float: left;
+  }
+  
+  & .dropdown-toggle,
+  &__link {
+    color: $skin_topline_link_color;
+    display: block;
+    padding: $base-line-height*0.5 $base-line-height;
+    text-decoration: none;
+    
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+  
+  &__text {
+    display: none;
+  }
+
+  .dropdown-menu {
+    left: auto;
+    right: -1px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .auth_top {
+    
+    .icon {
+      margin-right: .5em;
+    }
+    
+    &__text {
+      display: inline;
+    }
+  }
+}

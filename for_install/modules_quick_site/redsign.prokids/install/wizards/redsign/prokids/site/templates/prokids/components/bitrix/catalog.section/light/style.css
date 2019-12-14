@@ -1,0 +1,62 @@
+.light .js-element{
+	position:relative;
+	width:250px;
+	float:left;
+	margin:-1px 0 0 -1px;
+	padding:20px 12px;
+	border:1px solid #F3F3F3;
+	z-index:100;
+}
+.light .js-element:hover{
+	border-color:#EE8131;
+	z-index:110;
+}
+.light .js-element .name,
+.light .js-element .pic{
+	text-align:center;
+}
+.light .js-element .name{
+	height:35px;
+	overflow:hidden;
+}
+.light .js-element .pic{
+	margin:10px 0px;
+}
+.light .js-element .pic,
+.light .js-element .pic a{
+	width:224px;
+	height:224px;
+}
+.light .js-element .pic a{
+	display:block;
+	line-height:210px;
+}
+.light .js-element .pic a img{
+	display:inline-block;
+	line-height:1.2;
+	vertical-align:middle;
+}
+.light .js-element .prices{
+	float:left;
+	font-family:Opensanslight,Arial,Helvetica,sans-serif;
+	font-size:18px;
+}
+.light .js-element .buy .add2basket,
+.light .js-element .buy .inbasket,
+.light .js-element .buy .go2detail{
+	float:right;
+	padding:4px 8px;
+}
+
+.light .js-element .buy .go2detail{
+	color:#FFF;
+	white-space:nowrap;
+	background-color:#EE8131;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.light .js-element .buy .go2detail:hover{
+	text-decoration:underline;
+}

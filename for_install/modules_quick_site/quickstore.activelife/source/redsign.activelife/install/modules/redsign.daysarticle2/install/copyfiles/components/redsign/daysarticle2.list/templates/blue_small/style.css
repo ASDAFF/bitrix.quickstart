@@ -1,0 +1,161 @@
+#da2{
+	width:437px;
+	background:url('img/bg.png') 0 0 no-repeat;
+	padding-top:55px;
+	padding-bottom:40px;
+}
+
+/* left block */
+#da2 .da2-leftblock{
+	margin:0px 40px 0px 40px;
+	height:65px;
+}
+#da2 .da2-image{
+	width:172px;
+	float:left;
+	text-align:center;
+	padding-top:19px;
+}
+#da2 .da2-title1{
+	float:left;
+	margin:3px 0px 0px 40px;
+	font-weight:bold;
+	font-size:14px;
+	color:#2B3347;
+	text-transform:uppercase;
+}
+#da2 .da2-super_price{
+	font-weight:bold;
+	font-size:15px;
+	color:#2B3347;
+	margin-top:14px;
+	margin-left:15px;
+}
+#da2 .da2-super_price-price{
+	font-size:18px;
+	color:#DB2012;
+}
+#da2 .da2-price_and_discount{
+	margin-top:14px;
+}
+#da2 .da2-price_and_discount-lp{
+	float:left;
+	font-size:13px;
+	color:#2B3347;
+	color:#FFFFFF;
+	width:68px;
+	margin-left:29px;
+	text-align:center;
+}
+#da2 .da2-price{
+	text-decoration: line-through;
+}
+#da2 .da2-price_and_discount-rp{
+	float:right;
+	width:72px;
+	margin-right:9px;
+	text-align:center;
+	font-size:13px;
+	color:#FFFFFF;
+}
+
+/* center block */
+#da2 .da2-centerblock{
+	margin:0px 22px 0px 28px;
+}
+#da2 .da-buy_link{
+	float:right;
+	display:block;
+	margin-top:23px;
+}
+#da2 .da2-leblo{
+	width:189px;
+	float:right;
+	padding-top:26px;
+}
+
+/* right block */
+#da2 .da2-rightblock{
+	margin:0px 40px 0px 40px;
+}
+#da2 .da2-name{
+	margin-bottom:5px;
+}
+#da2 .da2-name a{
+	font-weight:bold;
+	font-size:14px;
+	margin-bottom:10px;
+	color:black;
+	text-decoration:none;
+}
+#da2 .da2-name a:hover{
+	text-decoration:underline;
+}
+#da2 .da2-text{
+	float:left;
+	font-size:12px;
+	color:#8A8F9E;
+	font-weight:normal;
+}
+
+/* bottom block */
+#da2 .da2-bottomblock{
+	float:right;
+	width:260px;
+	background:url('img/progress_bar.png') 0 0 no-repeat;
+	color:#FFFFFF;
+	margin-top:15px;
+}
+#da2 .da2-already_selled{
+	font-size:16px;
+	font-weight:bold;
+	margin-right:15px;
+	margin-top:12px;
+	text-align:center;
+}
+#da2 .da2-already_selled span{
+	font-size:20px;
+}
+#da2 .da2-progress_bar{
+	position:relative;
+	float:right;
+	font-size:16px;
+	width:232px;
+	height:24px;
+	margin:1px 14px 0px 0px;
+	text-align:center;
+	background:url('img/line_bg.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-line{
+	position:absolute;
+	height:19px;
+	margin:3px 4px;
+	background:url('img/line.png') 0 0 no-repeat;
+}
+#da2 .da2-progress_bar-text{
+	width:245px;
+	text-align:center;
+	font-weight:bold;
+}
+#da2 .da2-time_block{
+	display:inline-block;
+	font-size:12px;
+	font-weight:normal;
+}
+#da2 .da2-js-h,
+#da2 .da2-js-m,
+#da2 .da2-js-s{
+	font-size:30px;
+}
+#da2 .da2-do_okon_prodag{
+	color:#FFE000;
+	font-size:19px;
+	display:block;
+	text-align:center;
+	margin-top:10px;
+}
+
+/* other */
+#da2 .da2-clear{
+	clear:both;
+}

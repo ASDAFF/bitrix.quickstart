@@ -1,0 +1,95 @@
+.owl-carousel {
+  
+  .owl-item {
+    backface-visibility: visible;
+    
+    > .col {
+      width: 100%;
+    }
+  }
+  
+  .owl-nav {
+    display: none;
+
+    &__prev,
+    &__next {
+      cursor: pointer;
+      display: block;
+      margin-top: -13px;
+      position: absolute;
+      top: 50%;
+      
+    }
+
+    &__prev {
+      left: 4px;
+    }
+
+    &__next {
+      right: 4px;
+    }
+  }
+  
+  &:hover {
+
+    .bx-no-touch & .owl-nav {
+      display: block;
+
+      &.disabled {
+        display: none;
+      }
+    }
+  }
+
+  &.owl-shift {
+
+    .owl-stage-outer {
+      
+      &:after {
+        background: linear-gradient(90deg, rgba($body-bg, 0) 0%, $body-bg 100%);
+        bottom: 0;
+        height: 100%;
+        right: 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 10px;
+      }
+    }
+    
+    .owl-stage {
+      right: 16px;
+    }
+  }
+}
+
+.owl-carousel .owl-dots {
+  box-sizing: content-box;
+  height: 22px;
+  overflow: hidden;
+  padding-top: $base-line-height;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+.owl-carousel {
+
+  .owl-dot {
+    display: inline-block;
+    
+    span {
+      background: #cbcbcb;
+      border-radius: 50%;
+      display: block;
+      height: 12px;
+      margin: 5px 7px;
+      transition: opacity 200ms ease;
+      width: 12px;
+    }
+    
+    &:hover span,
+    &.active span {
+      background: $skin0_bg;
+    }
+  }
+}

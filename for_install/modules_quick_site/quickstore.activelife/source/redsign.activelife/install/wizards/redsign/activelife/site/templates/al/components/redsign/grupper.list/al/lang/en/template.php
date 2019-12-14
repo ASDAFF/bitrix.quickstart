@@ -1,0 +1,4 @@
+<?
+$MESS['RS_SLINE.RGL_AL.OTHER_PROPS'] = 'Other';
+$MESS['RS_SLINE.RGL_AL.YES'] = 'Yes';
+$MESS['RS_SLINE.RGL_AL.NO'] = 'No';

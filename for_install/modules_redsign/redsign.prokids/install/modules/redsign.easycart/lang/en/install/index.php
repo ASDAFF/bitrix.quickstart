@@ -1,4 +1,0 @@
-<?
-$MESS['RS.EC.INSTALL_NAME'] = 'Widget';
-$MESS['RS.EC.INSTALL_DESCRIPTION'] = '';
-$MESS['RS.EC.COPMPANY_NAME'] = 'ALFA Systems';

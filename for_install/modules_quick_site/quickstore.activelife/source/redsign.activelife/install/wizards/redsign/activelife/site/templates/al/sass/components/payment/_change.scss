@@ -1,0 +1,130 @@
+/*pay*/
+.sale-order-payment-change-pp.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.sale-order-payment-change-pp-list{
+	opacity:0;
+}
+
+.sale-order-payment-change-pp-company {
+	height:40px;
+	padding-bottom: 20px;
+	z-index: 100;
+	position: relative;
+}
+
+.sale-order-payment-change-pp .sale-order-payment-change-pp-company {
+	padding: 7px;
+	border: 1px solid transparent;
+	height: auto;
+	margin-bottom: 15px;
+	transition: all 100ms ease;
+}
+
+.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container{
+	transition: all 100ms ease;
+	border-color: $skin0_bg;
+}
+
+.sale-order-payment-change-pp-company-graf-container {
+	border: 2px solid #c3cace;
+	border-radius: 2px;
+	position: relative;
+	background: #fff;
+	width: auto;
+	height: 0;
+	padding-top: 50%;
+}
+
+.sale-order-payment-change-pp-company-image {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	left: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sale-order-payment-change-pp-company-smalltitle {
+	padding-top: 9px;
+	color: #a3a3a3;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.sale-order-payment-change-pp-field .form-control { background: #fff; }
+
+.sale-order-payment-change-pp-price {
+	text-align: right;
+	padding: 4px 0;
+}
+
+.sale-order-payment-change-service-small {
+	color: #a3a3a3;
+	font-size: 11px;
+}
+
+@media (min-width: 1200px) {
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(4n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(4n+1) {
+		clear: both;
+		padding-left: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(3n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(3n+1) {
+		clear: both;
+		padding-left: 0;
+	}
+}
+@media (max-width: 767px) {
+	.sale-order-payment-change-pp,
+	.sale-order-payment-change-pp-item-container { max-width: 450px; }
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(2n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(2n+1) {
+		clear: both;
+		padding-left: 0;
+	}
+}
+
+.sale-order-payment-change-inner-row {
+	padding: 0;
+	position: relative;
+}
+
+.sale-order-payment-change-payment{
+	padding-bottom: 20px;
+}
+
+.sale-order-payment-change-payment-title{
+	font: bold 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+.sale-order-payment-change-status-alert,
+.sale-order-payment-change-status-success {
+	display: inline-block;
+	padding: 4px 10px 5px 8px;
+	border: 1px solid #eab3b9;
+	border-radius: 2px;
+	background: #ffe5e8;
+	font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #d0021b;
+}
+
+.sale-order-payment-change-status-success {
+	background: #e3f0bd;
+	border: 1px solid #bed277;
+	color: #597707;
+}
+
+.sale-order-payment-change-payment-price {
+	padding: 4px 0 0 0;
+	font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

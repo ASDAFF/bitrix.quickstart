@@ -1,0 +1,12 @@
+.shop-item {
+  cursor: pointer;
+  margin-bottom: $base-line-height*0.5;
+
+  & &__name {
+    font-weight: bold;
+  }
+
+  &:hover &__name {
+    text-decoration: underline;
+  }
+}

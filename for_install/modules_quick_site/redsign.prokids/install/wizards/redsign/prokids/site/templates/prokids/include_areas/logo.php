@@ -1,0 +1,1 @@
+<img src="/bitrix/templates/prokids/img/logo.png" title="OptPro" alt="OptPro" />

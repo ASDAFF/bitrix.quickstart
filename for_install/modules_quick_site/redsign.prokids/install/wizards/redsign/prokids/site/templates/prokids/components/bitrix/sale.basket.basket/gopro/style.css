@@ -1,0 +1,190 @@
+.hidedefaultwaitwindow .bx-core-waitwindow{
+	display:none;
+}
+
+
+
+.content .basket{
+	margin-bottom:30px;
+}
+.basket .part.delayed,
+.basket .part.notavailable,
+.basket .part.subscribed{
+	margin-top:25px;
+	padding-top:25px;
+	border-top:1px solid #F2F2F2;
+}
+.basket .part .title{
+	margin-bottom:15px;
+}
+.basket .part .title h3{
+	font-weight:normal;
+}
+
+.basket .artable{
+	margin-bottom:15px;
+}
+.basket .separator1{
+	float:left;
+}
+.basket .totaltext{
+	float:right;
+	font-size:14px;
+	margin-top:11px;
+}
+.basket .totaltext .take_normalCount{
+	margin-right:25px;
+}
+.basket .totaltext .take_normalCount,
+.basket .totaltext .take_allSum_FORMATED{
+	font-size:15px;
+	font-weight:bold;
+}
+.basket .btns .coupon{
+	float:left;
+}
+.basket .btns .coupon .cop{
+	float:left;
+	margin-right:15px;
+	margin-bottom:15px;
+	width:300px;
+}
+.basket .coupon_result {
+	margin-bottom: 10px;
+}
+.basket .coupon_result.good .counpon_note {
+	color: green;
+}
+.basket .coupon_result.bad .counpon_note {
+	color: red;
+}
+.basket table.items{
+	width:100%;
+}
+
+.basket table td{
+	padding:5px 10px;
+	border:1px solid #F2F2F2;
+}
+.basket table td.tc{
+	text-align:center;
+}
+.basket table thead td,
+.basket table thead th{
+	padding:7px 10px;
+	background-color:#F2F2F2;
+}
+.basket table.items thead th{
+	font-weight:normal;
+}
+.basket table.prod td{
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+.basket td.checkbox div,
+.basket td.image div{
+	text-align:center;
+}
+.basket td.checkbox div{
+	width:20px;
+}
+.basket td.image div{
+	width:50px;
+}
+.basket td.image img{
+	max-width:40px;
+	max-height:40px;
+}
+
+.basket table td .lppadding{
+	padding-right:10px;
+	padding-left:10px;
+}
+
+.basket a.delete,
+.basket a.delay{
+	display:inline-block;
+	padding:5px 10px;
+}
+.basket a.delete .icon{
+	width:10px;
+	height:9px;
+	background-position:0px -890px;
+}
+.basket a.delay .icon{
+	width:15px;
+	height:15px;
+	background-position:0px -931px;
+}
+.basket a.add .icon{
+	width:23px;
+	height:20px;
+	background-position:0 -418px;
+}
+
+.pcontent .basket .btns input.btn{
+	float:left;
+	margin-bottom:15px;
+	padding:11px 26px;
+}
+.pcontent .basket .btns input.btn.btn3{
+	margin-right:15px;
+}
+.pcontent .basket .btns input.btn.btn1{
+	float:right;
+}
+
+/* scrolable table */
+.artable{
+	width:100%;
+	overflow-x:auto;
+	overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+/* /scrolable table */
+
+.acc_title{
+	margin-bottom:15px;
+	color:#EE8131;
+}
+
+@media screen and (max-width:990px){
+	body.adaptive .basket .totaltext{
+		display:block;
+		float:left;
+		width:100%;
+		margin-top:0px;
+		margin-bottom:15px;
+	}
+}
+@media screen and (max-width:875px){
+	body.adaptive .basket .artable{
+		margin-bottom:15px;
+	}
+	body.adaptive .pcontent .basket .btns input.btn,
+	body.adaptive .basket .btns .coupon .cop{
+		padding:5px 14px;
+	}
+}
+@media screen and (max-width:775px){
+	body.adaptive .pcontent .basket .separator{
+		display:block;
+		float:left;
+		width:100%;
+	}
+	body.adaptive .pcontent .basket .btns input.btn.btn1{
+		float:left;
+	}
+}
+@media screen and (max-width:480px){
+	body.adaptive .pcontent .basket .btns input.btn{
+		width:100%;
+		margin-right:0px;
+	}
+	body.adaptive .basket .btns .coupon,
+	body.adaptive .basket .btns .coupon .cop{
+		width:100%;
+	}
+}

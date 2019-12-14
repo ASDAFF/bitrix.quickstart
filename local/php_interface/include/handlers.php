@@ -54,17 +54,6 @@ AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTy
  */
 AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "GetUserTypeDescription"), 50);
 
-/**
- * Подсветки PHP в редакторе
- **/
-if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
-    AddEventHandler("main", "OnEpilog", array("AdminArea", "InitPHPHighlight"));
-}
-
-/**
- * AdminArea
- **/
-
 
 /**
  * IBlockProps
@@ -82,8 +71,6 @@ if ($_SERVER['SCRIPT_NAME'] == "/bitrix/admin/fileman_file_edit.php") {
 /**
  * property types
  **/
-
-
 // Добавляем фильтр на изображение, если только в CFile::ResizeImageGet в $arFilters есть ключ irf_text
 AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'));
 

@@ -1,0 +1,116 @@
+.cmp_items {
+
+  &__list {
+    display: none;
+  }
+
+  .cmp__link {
+    @extend .auth_top__link;
+    
+    .icon-cmp {
+      fill: $skin1_bg;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .badge {
+    background-color: $body-bg;
+    color: $skin0_bg;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+
+  .cmp_items {
+    margin-bottom: $base-line-height;
+    max-height: 100%;
+    white-space: normal;
+    z-index: 998;
+    
+    &.fix {
+      position: fixed;
+    }
+    
+    &.top {
+      top: 5px;
+    }
+    &.right {
+      right: 0;
+    }
+    &.left {
+      left: 0;
+    }
+    
+    &__body {
+      background: $body-bg;
+      border-radius: 10px 0 0 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+      box-sizing: border-box;  
+      overflow: hidden;
+      padding: $base-line-height 0 $base-line-height $base-line-height;
+    }
+    
+    &__list {
+      display: block;
+      list-style: none;
+      margin: 0 0 $base-line-height*0.5;
+      max-height: $base-line-height*19.5;
+      overflow-y: auto;
+      padding: 0;
+    }
+    
+    &__item {
+      border: 1px dashed $gray-light;
+      border-radius: 4px;
+      display: block;
+      margin: 4px 4px $base-line-height*0.8 0;
+      padding-bottom: 100%;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      width: $base-line-height*3.2;
+      
+      &:hover {
+        border-color: $skin0_bg;
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    &__img {
+      bottom: 1px;
+      position: absolute;
+      left: 1px;
+      max-height: 98%;
+      max-width: 98%;
+      right: 1px;
+      top: 1px;
+    }
+    
+    &__del {
+      display: block;
+      fill: $gray-base;
+      height: 8px;
+      position: absolute;
+      right: -4px;
+      top: -4px;
+      width: 8px;
+      z-index: 20;
+    }
+    
+    &__btn {
+      font-size: $font-size-h6;
+      line-height: $base-line-height;
+      min-width: 0;
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+
+
+  }
+}

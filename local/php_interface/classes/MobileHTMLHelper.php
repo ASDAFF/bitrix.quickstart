@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Fyodor V.
- * Date: 28.06.2016
- * Time: 11:28
- */
 class MobileHTMLHelper
 {
  

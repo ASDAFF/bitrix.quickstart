@@ -1,0 +1,193 @@
+.order_item {
+
+  .sale-order-list-inner-row {
+    padding: $base-line-height/2 0 $base-line-height*0.4;
+  }
+}
+
+.sale-order-history-link {
+	display: inline-block;
+	font-size: $font-size-h4;
+	color: #4a90e2;
+	padding: 0 34px 0 0;
+}
+
+.sale-order-title {
+	margin-top:40px;
+	font-size: $font-size-h3;
+	color: #262626;
+}
+
+.sale-order-list-inner-row {
+	padding: 0;
+	position: relative;
+}
+
+.sale-order-list-inner-row-template{
+	display: none;
+}
+
+div.sale-order-list-repeat-container {
+	padding: 0;
+}
+
+.sale-order-link-accomplished {
+	padding: 0;
+	text-decoration: none;
+}
+
+.sale-order-list-cancel-payment{
+	margin-top: $base-line-height;
+	display: inline-block;
+}
+
+.sale-order-list-status-alert,
+.sale-order-list-status-success {
+	display: inline-block;
+	padding: 4px 10px 5px 8px;
+	border: 1px solid #eab3b9;
+	border-radius: 2px;
+	background: #ffe5e8;
+	color: #d0021b;
+    font-weight: bold;
+}
+
+.sale-order-list-status-success {
+	background: #e3f0bd;
+	border: 1px solid #bed277;
+	color: #597707;
+}
+
+.sale-order-list-payment-price {
+	padding: 4px 0 0 0;
+	font-size: $font-size-large;
+}
+
+.sale-order-list-change-payment {
+	margin: 6px 0 0 0;
+	font-size: $font-size-large;
+}
+
+.sale-order-list-button {
+  @extend .btn;
+  @extend %theme-btn1;
+
+  font-size: $font-size-large;
+  font-weight: bold;
+  
+  text-transform: uppercase;
+  
+  margin: 10px 0 0 0;
+  max-width: none;
+  float: none;
+}
+
+.sale-order-list-shipment {
+	font-size: $font-size-large;
+	list-style: none;
+}
+
+.sale-order-list-shipment-item {
+	padding: 6px 0 0 0;
+}
+
+.sale-order-list-shipment-list-item-link {
+	padding: 16px 0 0 0;
+	text-decoration: underline;
+}
+
+.sale-order-list-shipment-id {
+	font-weight: 700;
+}
+
+.sale-order-list-shipment-id-icon {
+	display: inline-block;
+	width: 11px;
+	height: 13px;
+	background: url("../img/sale-order-order-list-options-methods-shipment-list-item-id-element.svg") center no-repeat;
+	cursor: pointer;
+}
+
+.sale-order-list-top-border {
+	width: auto;
+	height: 1px;
+	margin: 18px 15px 21px 15px;
+	background: #f2f2f2;
+}
+
+.sale-order-list-accomplished-title-container {
+	background: #f2f2f2;
+}
+
+.sale-order-list-accomplished-date-container {
+	text-align: right;
+}
+
+.sale-order-list-accomplished-date {
+	padding: 0 8px 0 0;
+}
+
+.sale-order-list-accomplished-date {
+	color: #4b8c03;
+}
+.sale-order-list-accomplished-date.canceled-order {
+	color: #ff0000;
+}
+
+.sale-order-list-accomplished-date-number {
+	color: #888;
+}
+
+.sale-order-list-repeat-accomplished {
+	text-align: right;
+}
+
+.sale-order-list-inner-accomplished {
+	border: 1px solid #efecec;
+	padding: 13px 15px 15px 15px;
+}
+
+.sale-order-list-shipment-status {
+	margin: 2px 0 0 0;
+}
+
+.sale-order-list-shipment-status-item {
+	display: inline-block;
+	margin: 6px 0 5px 0;
+	vertical-align: middle;
+}
+
+.sale-order-list-shipment-status-block {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid rgba(128,134,142,0.20);
+	border-radius: 2px;
+	background: #f3f4f5;
+	font-size: $font-size-large;
+    font-weight: bold;
+	color: #535c69;
+	vertical-align: middle;
+}
+
+/* state's */
+
+.sale-order-state-green {
+	background: #c2f388;
+}
+.sale-order-state-yellow {
+	background: #d7dd39;
+}
+.sale-order-state-red {
+	background: #dd6239;
+}
+.sale-order-state-grey {
+	background: #f2f2f2;
+}
+
+@media(min-width: $screen-sm-min) {
+
+  .sale-order-list-button {
+    float: right;
+    max-width: 115px;
+  }
+}

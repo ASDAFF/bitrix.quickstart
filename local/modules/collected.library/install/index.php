@@ -150,8 +150,9 @@ class Collected_Library extends \CModule
     {
         //where is module?
         $moduleDir = App::getDocumentRoot() . '/local/modules/' . $this->MODULE_ID;
-        if (!Dir::isDirectoryExists($moduleDir))
+        if (!Dir::isDirectoryExists($moduleDir)) {
             $moduleDir = App::getDocumentRoot() . '/bitrix/modules/' . $this->MODULE_ID;
+        }
 
         $this->installLib($moduleDir);
         $this->installComponents($moduleDir);
@@ -195,14 +196,14 @@ class Collected_Library extends \CModule
         if (!Dir::isDirectoryExists($dir))
             $dir = App::getDocumentRoot() . static::OLD_COMPONENTS_INC_PATH;
 
-        if (!Dir::isDirectoryExists($dir . 'lm'))
-            Dir::createDirectory($dir . 'lm');
+        if (!Dir::isDirectoryExists($dir . 'collected'))
+            Dir::createDirectory($dir . 'collected');
 
         //copy components
         foreach ($this->components as $component) {
             CopyDirFiles(
-                $moduleDir . '/install/components/lm/' . $component,
-                $dir . 'lm/' . $component,
+                $moduleDir . '/install/components/collected/' . $component,
+                $dir . 'collected/' . $component,
                 true,
                 true
             );
@@ -218,9 +219,9 @@ class Collected_Library extends \CModule
 
         //delete installed components
         foreach ($this->components as $component)
-            DeleteDirFilesEx($dir . 'lm/' . $component);
+            DeleteDirFilesEx($dir . 'collected/' . $component);
         //delete lm directory if it empty
-        if (Dir::isDirectoryExists(App::getDocumentRoot() . $dir . 'lm') && count(scandir(App::getDocumentRoot() . $dir . 'lm')) === 2)
-            DeleteDirFilesEx($dir . 'lm');
+        if (Dir::isDirectoryExists(App::getDocumentRoot() . $dir . 'collected') && count(scandir(App::getDocumentRoot() . $dir . 'collected')) === 2)
+            DeleteDirFilesEx($dir . 'collected');
     }
 }

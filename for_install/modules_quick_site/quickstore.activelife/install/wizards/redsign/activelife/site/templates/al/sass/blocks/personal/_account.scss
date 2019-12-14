@@ -1,0 +1,56 @@
+.sale-personal-account-wallet-container{
+	max-width:430px;
+	margin-bottom: $base-line-height;
+}
+.sale-personal-account-wallet-title{
+	background-color: $skin0_bg;
+	color: $skin0_color;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: $font-size-h5;
+	padding: $base-line-height/2 $base-line-height;
+	border-radius: $base-line-height/6 $base-line-height/6 0 0;
+}
+.sale-personal-account-wallet-list-container{
+	background-color: lighten( saturate( adjust-hue( $skin0_bg, -1deg ), 13 ), 4 );
+	color: $skin0_color;
+	border-radius: 0 0 $base-line-height/6 $base-line-height/6;
+}
+.sale-personal-account-wallet-list{}
+.sale-personal-account-wallet-list-item{
+	position: relative;
+	padding: $base-line-height/2 $base-line-height;
+	font-size: $font-size-h4;
+	overflow: hidden;
+	border-bottom: 1px solid $skin0_border;
+}
+.sale-personal-account-wallet-list .sale-personal-account-wallet-list-item:last-child{
+	border-bottom: none;
+}
+
+.sale-personal-account-wallet-currency {
+	display: inline-block;
+	float: left;
+	font-size: $font-size-h4;
+	vertical-align: middle;
+}
+
+.sale-personal-account-wallet-currency-item {
+	font-size: $font-size-h4;
+	font-weight: bold;
+	color: $skin0_color;
+}
+
+.sale-personal-account-wallet-currency-item + .sale-personal-account-wallet-currency-item {
+	font-size: $font-size-small;
+	font-weight: bold;
+}
+
+.sale-personal-account-wallet-sum {
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: $font-size-h3;
+	vertical-align: middle;
+}

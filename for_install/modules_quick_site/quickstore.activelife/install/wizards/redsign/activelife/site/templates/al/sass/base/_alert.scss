@@ -1,0 +1,92 @@
+// Bootstrap 4 alert
+// see https://github.com/twbs/bootstrap/blob/v4-dev/scss/_alert.scss
+
+$spacer-y: rhythm(0.5) !default;
+$alert-border-width: 1px !default;
+$alert-border-radius: 4px !default;
+$alert-link-font-weight: 600 !default;
+$alert-success-bg: #dff0d8 !default;
+$alert-success-border: darken($state-success-bg, 5%) !default;
+$alert-success-text: #3c763d !default;
+$alert-info-bg: #d9edf7 !default;
+$alert-info-border: darken($state-info-bg, 7%) !default;
+$alert-info-text: #31708f !default;
+$alert-warning-bg: #fcf8e3 !default;
+$alert-warning-border: darken($state-warning-bg, 5%) !default;
+$alert-warning-text: #8a6d3b !default;
+$alert-danger-bg: #f2dede !default;
+$alert-danger-border: darken($state-danger-bg, 5%) !default;
+$alert-danger-text: #a94442 !default;
+
+
+@mixin alert-variant($background, $border, $body-color) {
+  background-color: $background;
+  background-image: linear-gradient(180deg, white, $background);
+  border-color: $border;
+  color: $body-color;
+
+  hr {
+    border-top-color: darken($border, 5%);
+  }
+  .alert-link {
+    color: darken($body-color, 10%);
+  }
+}
+
+
+.alert {
+  margin-bottom: $spacer-y;
+  border: $alert-border-width solid transparent;
+  border-radius: $alert-border-radius;
+  padding: $base-line-height*0.5;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}
+
+
+.alert-dismissible {
+  padding-right: rhythm(1.5);
+  .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+  }
+}
+
+.alert-success {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+.alert-info {
+  @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+}
+.alert-warning {
+  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+}
+.alert-danger {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
+
+.errortext {
+  @extend .alert;
+  @extend .alert-danger;
+
+  display: block;
+}
+
+.notetext {
+  @extend .alert;
+  @extend .alert-success;
+
+  display: block;
+}
+
+.required {
+  color: $alert-danger-text;
+}

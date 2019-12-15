@@ -1,4 +1,0 @@
-<?
-$MESS ['CMDESKTOP_DESC_NAME'] = "Krayt";
-$MESS ['CMDESKTOP_DESC_DESCRIPTION'] = "";
-?>

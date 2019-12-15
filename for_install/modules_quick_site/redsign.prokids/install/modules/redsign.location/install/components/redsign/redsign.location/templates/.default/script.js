@@ -25,7 +25,7 @@ RS.namespace('RS.Download');
 
 RS.Cookie = (function() {
 
-	//Устанавливаем cookie
+	//РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј cookie
 	setCookie = function(name, value) {
 		var date = new Date();
 		
@@ -47,7 +47,7 @@ RS.Cookie = (function() {
 
 		document.cookie = name + "=" + value + "; path=/; expires="+ date.toGMTString() + "; domain=" + domain;
 	},
-	//Устанавливаем cookie для list
+	//РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј cookie РґР»СЏ list
 	setCookieList = function(location) {
 		var Elems = location.split(', ');
 
@@ -58,7 +58,7 @@ RS.Cookie = (function() {
 		}
 	},
 	
-	//Устанавливаем cookie после submit
+	//РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј cookie РїРѕСЃР»Рµ submit
 	setCookieButtonClick = function() {
 		var city = $('.rs-city-header').text();
 		$.ajax({
@@ -76,7 +76,7 @@ RS.Cookie = (function() {
 		});
 	},
 	
-	//получаем cookie
+	//РїРѕР»СѓС‡Р°РµРј cookie
 	getCookie = function(name) {
 		var cookie = " " + document.cookie,
 			search = " " + name + "=",
@@ -100,7 +100,7 @@ RS.Cookie = (function() {
 		return setStr;
 	},
 	
-	//получаем cookie текущего города
+	//РїРѕР»СѓС‡Р°РµРј cookie С‚РµРєСѓС‰РµРіРѕ РіРѕСЂРѕРґР°
 	getCookieCity = function(name) {
 		var cookie = getCookie(name);
 		
@@ -110,7 +110,7 @@ RS.Cookie = (function() {
 				return cookie;
 				
 			} else {
-				//если есть
+				//РµСЃР»Рё РµСЃС‚СЊ
 				return cookie.split('/')[2];
 			}
 		}
@@ -172,7 +172,7 @@ RS.Cookie = (function() {
 		}
 	},
 	
-	//удаляем cookie
+	//СѓРґР°Р»СЏРµРј cookie
 	deleteCookie = function(cookieName) {
 		var cookieDate = new Date();  
 		cookieDate.setTime (cookieDate.getTime() - 1);
@@ -317,7 +317,7 @@ $(document).ready(function() {
 	
 		local_type_1 = $('#LOCATION_ORDER_PROP_' + props['type1']);
 		inp_name = 'ORDER_PROP_' + props['type1'];
-		// Шаблон местоположения - По умолчанию
+		// РЁР°Р±Р»РѕРЅ РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёСЏ - РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 		if (local_type_1.length != 0 ) {
 		
 			local_type_1.empty();
@@ -376,7 +376,7 @@ $(document).ready(function() {
 			
 		}else if( $('#ORDER_PROP_' + props['type1'] + '_val').length != 0 ) {
 		
-			// Шаблон местоположения - Строка поиска физ лица
+			// РЁР°Р±Р»РѕРЅ РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёСЏ - РЎС‚СЂРѕРєР° РїРѕРёСЃРєР° С„РёР· Р»РёС†Р°
 			$.ajax({
 				url: 'http://' + window.location.host + '/bitrix/components/redsign/redsign.location/search.php?query=' + encodeURI(city),
 				dataType : "json", 

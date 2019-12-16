@@ -1,3 +1,0 @@
-<?php
-$MESS['RS_SLINE.BM_TOPPANEL.MORE_BTN'] = "Ещё";
-$MESS['RS_SLINE.BM_TOPPANEL.MENU_BTN'] = "Меню";

@@ -1,7 +1,0 @@
-<?
-$MESS['RS_SLINE.BCSA_AL.PHONE'] = 'Phone';
-$MESS['RS_SLINE.BCSA_AL.SCHEDULE'] = 'Business hours';
-$MESS['RS_SLINE.BCSA_AL.AMOUNT'] = 'in stock';
-$MESS['RS_SLINE.BCSA_AL.IN_STOCK'] = 'In stock';
-$MESS['RS_SLINE.BCSA_AL.LIMITED_AVAILABILITY'] = 'Limited';
-$MESS['RS_SLINE.BCSA_AL.OUT_OF_STOCK'] = 'Out of stock';

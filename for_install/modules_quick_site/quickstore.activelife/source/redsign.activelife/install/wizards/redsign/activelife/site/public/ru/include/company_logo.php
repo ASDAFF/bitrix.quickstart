@@ -1,1 +1,0 @@
-<img src="<?echo SITE_TEMPLATE_PATH?>/assets/img/logo.png" border="0" title="ActiveLife" alt="ActiveLife" />

@@ -1,1 +1,0 @@
-DROP TABLE IF EXISTS b_redsign_daysarticle2_two;

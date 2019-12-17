@@ -1,2 +1,0 @@
-<?
-$sSectionName = 'Want cheaper?';

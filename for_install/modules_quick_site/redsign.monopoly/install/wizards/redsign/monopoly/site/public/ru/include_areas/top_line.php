@@ -1,1 +1,0 @@
-<a href="#SITE_DIR#file.pdf">Скачать каталог в PDF</a>

@@ -1,3 +1,0 @@
-<? 
-$MESS['FOOTER_MENU_TITLE'] = 'Menu head';
-$MESS['FOOTER_MENU_TITLE_EXAMPLE'] = 'Menu:';

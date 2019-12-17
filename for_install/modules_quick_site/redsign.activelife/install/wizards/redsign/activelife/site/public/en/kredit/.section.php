@@ -1,3 +1,0 @@
-<?
-$sSectionName = "Purchase on credit";
-?>

@@ -1,1 +1,0 @@
-<a class="fancyajax fancybox.ajax btn btn-default btn-group-lg" href="#SITE_DIR#forms/recall/" title="Contact Us">Contact Us</a><a class="btn btn-default btn-group-lg" href="#SITE_DIR#contacts/" title="Contacts">Contacts</a>

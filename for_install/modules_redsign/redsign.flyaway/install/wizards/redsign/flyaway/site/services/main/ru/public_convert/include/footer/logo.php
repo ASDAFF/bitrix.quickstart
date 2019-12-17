@@ -1,1 +1,0 @@
-<a href="#SITE_DIR#"><img src="/bitrix/templates/flyaway/images/logo-simple.png" alt=""></a>

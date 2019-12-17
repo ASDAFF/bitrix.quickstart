@@ -1,3 +1,0 @@
-<?
-$sSectionName="Founding documents";
-?>

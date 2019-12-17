@@ -1,1 +1,0 @@
-&copy; #SITE_COPYRIGHT#

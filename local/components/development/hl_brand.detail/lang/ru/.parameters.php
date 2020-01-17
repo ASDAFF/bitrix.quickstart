@@ -1,0 +1,26 @@
+<?php
+$MESS['HLVIEW_COMPONENT_BLOCK_ID_PARAM'] = 'ID инфоблока';
+$MESS['HLVIEW_COMPONENT_KEY_PARAM'] = 'Ключ записи';
+$MESS['HLVIEW_COMPONENT_ID_PARAM'] = 'Значение ключа записи:';
+$MESS['ROW_ID_TIP'] = 'По умолчанию содержит ={$_REQUEST[\'ID\']}.';
+$MESS['ROW_KEY_TIP'] = 'По умолчанию содержит ID.';
+$MESS['FILTER_CODE_TIP'] = 'По умолчанию содержит BRAND_REF. Если в Вашем инфоблоке товаров бренд хранится в другом свойстве, укажите его код в этом поле. Чтобы получить список всех товаров бренда на странице разместите после этого компонента bitrix: catalog.section и задайте имя входящего массива фильтрации такое же как в поле выше';
+$MESS['HLVIEW_COMPONENT_NAME_PARAM'] = 'Название бренда';
+$MESS['HLVIEW_COMPONENT_FILTER_NAME_PARAM'] = 'Имя выходящего массива фильтра';
+$MESS['HLVIEW_COMPONENT_FILTER_CODE_PARAM'] = 'Символьный код свойства (тип справочник) инфоблока товаров в котором хранится бренд';
+$MESS['HLVIEW_COMPONENT_LIST_URL_PARAM'] = 'Путь к странице списка записей';
+$MESS['HLVIEW_COMPONENT_CHECK_PERMISSIONS_PARAM'] = 'Проверять права доступа';
+$MESS['HLVIEW_COMPONENT_BLOCK_XML_ID'] = 'XML код элемента';
+$MESS['HLVIEW_COMPONENT_BLOCK_ID'] = 'ID элемента';
+$MESS['HLVIEW_COMPONENT_BLOCK_NAME'] = 'Название элемента';
+$MESS['HLVIEW_COMPONENT_BLOCK_PROPERTY'] = 'Список свойств для отображения';
+$MESS["HLVIEW_COMPONENT_KEYWORDS"] = "Установить ключевые слова страницы из свойства";
+$MESS["HLVIEW_COMPONENT_DESCRIPTION"] = "Установить описание страницы из свойства";
+$MESS["HLVIEW_COMPONENT_BROWSER_TITLE"] = "Установить заголовок окна браузера из свойства";
+$MESS["HLVIEW_COMPONENT_TITLE"] = "Установить заголовок страницы из свойства";
+$MESS["HLVIEW_COMPONENT_SET_TITLE"] = "Установить заголовок страницы";
+$MESS["HLVIEW_COMPONENT_SET_BROWSER_TITLE"] = "Устанавливать заголовок окна браузера";
+$MESS["HLVIEW_COMPONENT_SET_META_KEYWORDS"] = "Устанавливать ключевые слова страницы";
+$MESS["HLVIEW_COMPONENT_FILTER"] = "Настройки выходящего массива фильтрации";
+$MESS["HLVIEW_COMPONENT_SET_META_DESCRIPTION"] = "Устанавливать описание страницы";
+$MESS['HLLIST_COMPONENT_BLOCK_ID_PARAM'] = 'ID инфоблока';

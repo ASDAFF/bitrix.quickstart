@@ -213,7 +213,7 @@ class order_coupon extends CModule
         $et          = new CEventType;
         $eventTypeID = $et->Add(array(
             "LID"         => SITE_ID,
-            "EVENT_NAME"  => "ITSFERA_ORDER_COUPON",
+            "EVENT_NAME"  => "PERSONAL_ORDER_COUPON",
             "NAME"        => "Купон за заказ",
             "DESCRIPTION" => "Персональный купон на следующую покупку",
         ));

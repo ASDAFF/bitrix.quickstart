@@ -106,7 +106,7 @@ class Event extends \CAllSaleDiscount
                             "USER_ID"   => $arOrder['USER_ID'],
                         );
 
-                        \CEvent::Send("ITSFERA_ORDER_COUPON", 'el', $arEventFields, 'Y', $item['UF_MAILTEMPLATE_ID']);
+                        \CEvent::Send("PERSONAL_ORDER_COUPON", 'el', $arEventFields, 'Y', $item['UF_MAILTEMPLATE_ID']);
 
 
                     } else {

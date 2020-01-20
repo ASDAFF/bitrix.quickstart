@@ -166,7 +166,7 @@ if ( ! empty($discountList)) {
 
 
 $arEventList = array();
-$dbEvent     = CEventMessage::GetList($b = "ID", $order = "ASC", Array("EVENT_NAME" => "ITSFERA_ORDER_COUPON"));
+$dbEvent     = CEventMessage::GetList($b = "ID", $order = "ASC", Array("EVENT_NAME" => "PERSONAL_ORDER_COUPON"));
 while ($arEvent = $dbEvent->Fetch()) {
     $arEvent['ID']               = (int)$arEvent['ID'];
     $arEvent['SUBJECT']          = (string)$arEvent['SUBJECT'];

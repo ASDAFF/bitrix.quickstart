@@ -1,10 +1,14 @@
+/*
+ * Copyright (c) 25/1/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $(document).ready(function() {
     /* Favorites */
     $('.favor').on('click', function(e) {
         var favorID = $(this).attr('data-item');
         if($(this).hasClass('active'))
             var doAction = 'delete';
-            $('.fav_page').find('.favor[data-item="'+favorID+'"]').parents('.cat_list').remove(); // Моментальное удаление, если мы на странице избранного
+            //$('.fav_page').find('.favor[data-item="'+favorID+'"]').parents('.cat_list').remove(); // Моментальное удаление, если мы на странице избранного
         else
             var doAction = 'add';
 

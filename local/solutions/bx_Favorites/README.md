@@ -185,13 +185,19 @@ global $APPLICATION;
 if(!$USER->IsAuthorized()) // Для неавторизованного
 {
     global $APPLICATION;
-    $favorites = $APPLICATION->get_cookie("favorites");
+    
+    $favorites = unserialize($APPLICATION->get_cookie('favorites'));
+    if (empty($favorites)) {
+        $favorites = array(0);
+    } else {
+        $favorites = unserialize($APPLICATION->get_cookie('favorites'));
+    }
 }
 else {
-     $idUser = $USER->GetID();
-     $rsUser = CUser::GetByID($idUser);
-     $arUser = $rsUser->Fetch();
-     $favorites = $arUser['UF_FAVORITES'];
+    $idUser = $USER->GetID();
+    $rsUser = CUser::GetByID($idUser);
+    $arUser = $rsUser->Fetch();
+    $favorites = $arUser['UF_FAVORITES'];
     //print_r($favorites);
 }
 
@@ -205,7 +211,7 @@ $GLOBALS['arrFilter']=Array("ID" => $favorites);
 if(!$USER->IsAuthorized()) // Для неавторизованного
 {
     global $APPLICATION;
-	$favorites = unserialize(Application::getInstance()->getContext()->getRequest()->getCookie("favorites"));
+	$favorites = unserialize(\Bitrix\Main\Application::getInstance()->getContext()->getRequest()->getCookie("favorites"));
 }
 else {
      $idUser = $USER->GetID();

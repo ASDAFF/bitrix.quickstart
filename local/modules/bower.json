@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "collected.iblockprops": "https://github.com/ASDAFF/collected.iblockprops.git",
+    "easy.form": "https://github.com/ASDAFF/easy.form.git",
     "sort.panel": "https://github.com/ASDAFF/sort.panel.git"
   }
 }

@@ -54,15 +54,6 @@ AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTy
  */
 AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "GetUserTypeDescription"), 50);
 
-
-/**
- * IBlockProps
- **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropSection', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropElement', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('PropertyHTML', 'GetUserTypeDescription'));
-
-
 /**
  * order
  **/
@@ -73,13 +64,3 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "
  **/
 // Добавляем фильтр на изображение, если только в CFile::ResizeImageGet в $arFilters есть ключ irf_text
 AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'));
-
-
-/**
- * user
- **/
-
-
-/**
- * highload blocks
- **/

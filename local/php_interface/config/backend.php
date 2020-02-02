@@ -38,10 +38,6 @@ $arLibs = array(
         'css' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.css',
         'rel' => array('jquery'),
     ),
-    'iblock_props' => array(
-        'js' => '/local/codenails/frontend/lib/iblockprops/js/interface.js',
-        'css' => '/local/codenails/frontend/lib/iblockprops/css/interface.css',
-    ),
     'mask_input' => array(
         'js' => '/local/codenails/frontend/lib/mask_input/mask.input.js',
     )

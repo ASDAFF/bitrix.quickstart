@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Maximaster\\' => array($vendorDir . '/maximaster/tools.events/src/Maximaster'),
     'Helper\\' => array($baseDir . '/php_interface/classes/Helper'),
+    '' => array($baseDir . '/php_interface/classes'),
 );

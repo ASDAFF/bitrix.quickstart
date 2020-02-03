@@ -13,6 +13,7 @@
   },
   "autoload": {
     "psr-4": {
+      "": "php_interface/classes/",
       "Helper\\": "php_interface/classes/Helper"
     }
   }

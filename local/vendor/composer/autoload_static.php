@@ -28,11 +28,16 @@ class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/php_interface/classes',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }

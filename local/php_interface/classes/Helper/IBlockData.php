@@ -1,17 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: ASDAFF
- * Date: 16.05.2018
- * Time: 21:36
- *
- * Class name: IBlockData
- * Script URI: http://www.verstaem.com/examples/bitrix_start/IBlockData.php
- * Description: Class for getting iblock id by code
- * Version: 1.0
- * Author: Alorian
- * Author URI: http://www.verstaem.com/
+ * Copyright (c) 3/2/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
  */
+
+namespace Helper;
 
 class IBlockData
 {

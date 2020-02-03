@@ -3,12 +3,7 @@
  * Please no code in this file. Structure your local folder
  */
 
-use BitrixQuickStart;
-
 //Autoload
-require_once(dirname(__FILE__) . '/classes/Autoloader.php');
-$autoloader = new \BitrixQuickStart\Autoloader();
-
 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/local/vendor/autoload.php'))
     require_once($_SERVER['DOCUMENT_ROOT'] . '/local/vendor/autoload.php');
 

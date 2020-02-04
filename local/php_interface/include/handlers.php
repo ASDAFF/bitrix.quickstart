@@ -58,9 +58,3 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "
  * order
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnBeforeEventAdd", array('CEshopEmailFieldsHandlers', 'OnBeforeEventAdd'));
-
-/**
- * property types
- **/
-// Добавляем фильтр на изображение, если только в CFile::ResizeImageGet в $arFilters есть ключ irf_text
-AddEventHandler('main', 'OnAfterResizeImage', Array('ImageResizeFilter', 'add'));

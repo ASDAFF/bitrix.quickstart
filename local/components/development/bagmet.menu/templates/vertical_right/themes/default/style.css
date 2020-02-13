@@ -1,0 +1,44 @@
+ul.vertical_right{font-family: Helvetica, Arial; background-color: #f6f6f6; /*height: 50px;*/}
+ul.vertical_right > li > ul{border: 1px solid #c6c6c6;}
+
+ul.vertical_right .menu_title{font-size: 13px; border-bottom: 1px solid #d6d6d6; border-top: 1px solid #fff;}
+ul.vertical_right .menu_title > a{font-size: 13px;}
+
+ul.vertical_right .menu_title:first-child{border-top: none;}
+ul.vertical_right .menu_title:last-child{border-bottom: none;}
+
+ul.vertical_right .menu_folder > a.active{background-color: #ffb93a; color: #fff !important;}
+
+ul.vertical_right li{padding: 0; background-color: transparent; color: #564747;}
+ul.vertical_right li.hover, ul.vertical_right .menu_title:hover{background-color: #ffb93a; color: #fff; /*border-top-color: #ffb93a !important;*/}
+ul.vertical_right li.active{background-color: #ffb93a; /*border-top-color: #ffb93a !important;*/}
+ul.vertical_right li.dir.active{background-position: 97% -17px;}
+ul.vertical_right li.active > a{color: #fff !important;}
+
+ul.vertical_right li a{display: block; padding: 17px 20px 16px;}
+
+ul.vertical_right a:link, ul.vertical_right a:visited{color: #000; text-decoration: none;}
+ul.vertical_right a:hover{color: #fff;}
+ul.vertical_right a:active{color: #ffb93a;}
+
+ul.vertical_right > li > ul{border: 1px solid #a6a6a6;/* max-width: 1920px;*/
+	background-color: rgb(255, 255, 255); /* The Fallback */ background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -webkit-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -moz-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px; -o-box-shadow: rgba(170, 170, 170, 0.8) 0px 3px 5px;
+}
+
+ul.vertical_right ul{font-size: 12px; letter-spacing: normal;}
+ul.vertical_right ul li{font-weight: bold; font-size: 12px;}
+ul.vertical_right li.last ul li{float: right;}
+
+ul.vertical_right ul {margin-top: 0px; text-transform: none;}
+ul.vertical_right ul ul li{font-weight: normal; font-size: 11px;}
+
+ul.vertical_right > .dir {padding: 0px 22px 0px 0px; background-image: url(images/nav_arrow.png); background-position: 97% 13px; background-repeat: no-repeat;}
+/*ul.vertical_left > .dir:hover{padding-bottom: 1px;}*/
+ul.vertical_right *.dir:hover{background-position: 97% -264px;}
+ul.vertical_right ul *.dir{background-image: none;}
+
+ul.vertical_right *.menu_title:hover >a{color: #fff;}
+
+ul.vertical_right ul a {width: 140px; padding: 3px 5px;}
+ul.vertical_right ul a:hover {background-color: #ffb93a; color: #fff;}

@@ -1,0 +1,25 @@
+ul.vertical_left{width: 250px;}
+ul.vertical_left, ul.vertical_left li, ul.vertical_left ul {list-style: none; margin: 0; padding: 0;}
+ul.vertical_left {position: relative; z-index: 597; float: left;}
+ul.vertical_left li {float: none; min-height: 1px; line-height: 1.3em; vertical-align: middle;}
+ul.vertical_left li.hover, ul.vertical_left li:hover {position: relative; z-index: 599; cursor: default;}
+ul.vertical_left ul {display: none; position: absolute; z-index: 598; width: 100%; top: 0px; left: 100%;}
+
+ul.vertical_left ul li {float: none;}
+ul.vertical_left > li > ul{top: 0px; left: 100%; width: 510px; padding: 9px 10px 10px 10px; top: 0px;
+	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+ul.vertical_left > li:hover > ul {display: block;}
+ul.vertical_left ul  li {float: left;}
+ul.vertical_left li  li.hover, ul.vertical_left li  li:hover {position: static;}
+
+ul.vertical_left ul li  {position: static; width: 150px; margin-right: 10px;}
+ul.vertical_left ul ul  {display: block !important; position: static; width: auto !important;}
+
+ul.vertical_left ul ul li.dir{font-weight: bold;}
+ul.vertical_left ul ul ul{margin-left: 5px;}
+ul.vertical_left ul ul ul a{width: 135px !important;}
+ul.vertical_left ul ul ul ul a{width: 130px !important;}
+ul.vertical_left ul ul ul ul ul a{width: 125px !important;}
+
+.menu_splitter{clear: both;}

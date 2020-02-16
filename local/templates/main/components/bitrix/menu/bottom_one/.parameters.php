@@ -5,7 +5,7 @@ $arTemplateParameters = array(
 	"MENU_TITLE" => Array(
 		"NAME" => GetMessage("MENU_TITLE"),
 		"TYPE" => "TEXT",
-		"DEFAULT" => "Ðàçäåëû",
+		"DEFAULT" => "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹",
 	),
 );
 

@@ -8,11 +8,8 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => GetMessage("SECT_NAME"), // for example "my_project"
-		/*"CHILD" => array(
-			"ID" => "", // for example "my_project:services"
-			"NAME" => "",  // for example "Services"
-		),*/
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 	"COMPLEX" => "N",
 );

@@ -6,8 +6,8 @@ $arComponentDescription = array(
 	"CACHE_PATH" => "Y",
 	"SORT" => 30,
 	"PATH" => array(
-		"ID" => "romza",
-		"NAME" => GetMessage("YENISITE_COMPONENTS")
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	)
 );
 ?>

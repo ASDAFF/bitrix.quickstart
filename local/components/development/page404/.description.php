@@ -8,8 +8,8 @@ $arComponentDescription = array(
 	"CACHE_PATH" => "Y",
 	"SORT" => 90,
 	"PATH" => array(
-		"ID" => "stream",
-		"NAME" => 'STREAM COMPONENTS',
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );
 

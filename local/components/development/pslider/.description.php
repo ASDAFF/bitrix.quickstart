@@ -8,11 +8,11 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "ASDAFF",
-        "NAME" => 'Слайдер товаров',
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
         "CHILD" => array(
             "ID" => 'media',
-            "NAME" => 'Мультимедиа',
+            "NAME" => 'Слайдер товаров',
             "SORT" => 10,
         ),
 	),

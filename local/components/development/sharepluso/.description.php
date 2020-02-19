@@ -8,8 +8,8 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "sozdavatel",
-        "NAME" => GetMessage('SZD_SHAREPLUSO_COMPONENTS_GROUP'),
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
         /*
 		"CHILD" => array(
 			"ID" => "tools", // for example "my_project:services"

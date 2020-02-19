@@ -4,7 +4,7 @@ $arComponentDescription = array(
     "DESCRIPTION" => "",
     "CACHE_PATH" => "Y",
     "PATH" => array(
-        "ID" => "ASDAFF",
+        "ID" => "development",
         "NAME" => GetMessage("GEO_LOCATION_INFORMER_SECTION_NAME"),
     )
 );

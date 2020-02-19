@@ -9,7 +9,8 @@ $arComponentDescription = array(
     "SORT" => 10,
     "CACHE_PATH" => "Y",
     "PATH" => array(
-        "ID" => "ASDAFF"
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
     ),
     "ICON" => "/images/icon.gif",
 );

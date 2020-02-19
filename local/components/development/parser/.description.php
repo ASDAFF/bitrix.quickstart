@@ -11,7 +11,8 @@ $arComponentDescription = array(
 	"ICON" => "/images/rss_in.gif",
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-        "ID" => "DigitalAgencyDial"
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );
 

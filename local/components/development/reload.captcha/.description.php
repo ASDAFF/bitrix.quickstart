@@ -12,7 +12,8 @@ $arComponentDescription = array(
 	"COMPLEX" => "N",
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "utility"
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 		)
 );
 ?>

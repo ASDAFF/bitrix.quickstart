@@ -8,7 +8,8 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "service",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 	"COMPLEX" => "N",
 );

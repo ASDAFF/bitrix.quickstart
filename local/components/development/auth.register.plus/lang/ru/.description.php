@@ -3,6 +3,5 @@
 <?
 $MESS["REGISTER_PLUS_DESC_COMPONENT_NAME"] = "Настраиваемая регистрация +";
 $MESS["REGISTER_PLUS_DESC_DESC"] = "Управляемая форма регистрации нового пользователя (доработанная).";
-$MESS["REGISTER_PLUS_DESC_SECTION_NAME"] = "ASDAFF";
 $MESS["REGISTER_PLUS_DESC_NAME"] = "Пользователь";
 ?>

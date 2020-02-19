@@ -8,11 +8,11 @@ $arComponentDescription = array(
 	"SORT" => 10,
 	"CACHE_PATH" => "Y",
 	"PATH" => array(
-		"ID" => "ASDAFF",
-        "NAME" => GetMessage("$MESS ['NAME']"),
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
         "CHILD" => array(
             "ID" => 'utility',
-            "NAME" => 'Разное',
+            "NAME" => 'Кнопки расшаривания',
             "SORT" => 10,
         ),
 	),

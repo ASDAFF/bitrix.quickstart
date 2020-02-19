@@ -1,10 +1,4 @@
 <?php
-
-    /**
-     * @author Gennadiy Hatuntsev
-     * @package catalog.menu
-     */
-
     if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
         die();
     }
@@ -14,6 +8,7 @@
         "DESCRIPTION" => 'Меню разделов каталога с возможностью выбора поля (NAME или SORT) и направления сортировки. Выводит список до третьего уровня вложенности.',
         "CACHE_PATH" => "Y",
         "PATH" => array(
-            "ID" => "utility"
+            "ID" => "development",
+            "NAME" => "DEVELOPMENT",
         )
     );

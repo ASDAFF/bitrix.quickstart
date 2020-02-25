@@ -6,7 +6,8 @@ $arComponentDescription = array(
 	"DESCRIPTION" => GetMessage("MAIN_CALLBACK_COMPONENT_DESCR"),
 	"ICON" => "/images/callback.gif",
 	"PATH" => array(
-		"ID" => "utility",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );
 ?>

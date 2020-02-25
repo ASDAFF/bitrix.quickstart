@@ -5,7 +5,7 @@ $arTemplateParameters = array(
 	"IBLOCK_TITLE_TEXT" => Array(
 		"NAME" => GetMessage("IBLOCK_TITLE"),
 		"TYPE" => "TEXT",
-		"DEFAULT" => "Ðàçäåëû",
+		"DEFAULT" => "Ð Ð°Ð·Ð´ÐµÐ»Ñ‹",
 	),
 );
 

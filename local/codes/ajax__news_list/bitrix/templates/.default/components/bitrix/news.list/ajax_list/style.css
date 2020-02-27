@@ -1,0 +1,7 @@
+div.news-list img.preview_picture{float:left; margin:0 4px 6px 0;}
+.news-date-time {color:#486DAA;}
+#ajax-loader img{width:20px; height:20px; vertical-align: middle;display: none;}
+
+
+div.more-items{border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding: 10px 0; text-align: center; margin-top:30px;}
+a#load-items{font-size:14px; font-weight: bold;}

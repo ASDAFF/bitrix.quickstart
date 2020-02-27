@@ -8,7 +8,8 @@ $arComponentDescription = array(
 	"SORT" => 1,
 	"ICON" => "/images/hCard.gif",
     	'PATH' => array(
-            'ID' => 'custom',
+            "ID" => "development",
+            "NAME" => "DEVELOPMENT",
             "NAME" => GetMessage("EPIR_IBLOCK_DESC"),//'event-list',
         ),
 

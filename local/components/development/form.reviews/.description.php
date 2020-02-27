@@ -6,7 +6,8 @@ $arComponentDescription = array(
     "DESCRIPTION" => "Создается элемент в указанном инфоблоке, отправляется сообщение по указанному почтовому шаблону.",
     "ICON" => "",
     "PATH" => array(
-        "ID" => "content",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 
     ),
 );

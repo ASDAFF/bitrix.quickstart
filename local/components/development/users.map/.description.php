@@ -6,6 +6,7 @@ $arComponentDescription = array(
 	"DESCRIPTION" => "Вывод списка пользователей на карту",
 	"ICON" => "/images/menu_ext.gif",
 	"PATH" => array(
-		"ID" => "site",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );

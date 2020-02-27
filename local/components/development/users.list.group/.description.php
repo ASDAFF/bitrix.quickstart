@@ -7,6 +7,7 @@ $arComponentDescription = array(
 	"NAME" => "Список пользователей",
 	"DESCRIPTION" => "Список пользователей",
 	"PATH" => array(
-		"ID" => "site",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );

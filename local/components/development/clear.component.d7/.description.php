@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 27/2/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 $arComponentDescription = array(
@@ -6,6 +10,7 @@ $arComponentDescription = array(
 	"DESCRIPTION" => "Компонент вывода списка пользователей на карте",
 	"ICON" => "/images/menu_ext.gif",
 	"PATH" => array(
-		"ID" => "site",
+        "ID" => "development",
+        "NAME" => "DEVELOPMENT",
 	),
 );

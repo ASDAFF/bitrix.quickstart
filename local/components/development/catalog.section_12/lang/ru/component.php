@@ -1,6 +1,10 @@
 <?
-$MESS["IBLOCK_MODULE_NOT_INSTALLED"] = "Ìîäóëü Èíôîðìàöèîííûõ áëîêîâ íå óñòàíîâëåí";
-$MESS["CATALOG_SECTION_NOT_FOUND"] = "Ðàçäåë íå íàéäåí.";
-$MESS["CATALOG_ERROR2BASKET"] = "Îøèáêà äîáàâëåíèÿ òîâàðà â êîðçèíó";
-$MESS["CATALOG_PRODUCT_NOT_FOUND"] = "Òîâàð íå íàéäåí";
+/**
+ * Copyright (c) 5/3/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS["IBLOCK_MODULE_NOT_INSTALLED"] = "ÐœÐ¾Ð´ÑƒÐ»ÑŒ Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¾Ð½Ð½Ñ‹Ñ… Ð±Ð»Ð¾ÐºÐ¾Ð² Ð½Ðµ ÑƒÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½";
+$MESS["CATALOG_SECTION_NOT_FOUND"] = "Ð Ð°Ð·Ð´ÐµÐ» Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½.";
+$MESS["CATALOG_ERROR2BASKET"] = "ÐžÑˆÐ¸Ð±ÐºÐ° Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ";
+$MESS["CATALOG_PRODUCT_NOT_FOUND"] = "Ð¢Ð¾Ð²Ð°Ñ€ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½";
 ?>

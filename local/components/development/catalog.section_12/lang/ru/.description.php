@@ -1,5 +1,9 @@
 <?
-$MESS ['T_IBLOCK_DESC_CATALOG'] = "Êàòàëîã";
-$MESS ['IBLOCK_SECTION_TEMPLATE_NAME'] = "Ýëåìåíòû ðàçäåëà";
-$MESS ['IBLOCK_SECTION_TEMPLATE_DESCRIPTION'] = "Âûâîäèò ýëåìåíòû ðàçäåëà ñ óêàçàííûì íàáîðîì ñâîéñòâ, öåí è ò.ä.";
+/**
+ * Copyright (c) 5/3/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+$MESS ['T_IBLOCK_DESC_CATALOG'] = "ÐšÐ°Ñ‚Ð°Ð»Ð¾Ð³";
+$MESS ['IBLOCK_SECTION_TEMPLATE_NAME'] = "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°";
+$MESS ['IBLOCK_SECTION_TEMPLATE_DESCRIPTION'] = "Ð’Ñ‹Ð²Ð¾Ð´Ð¸Ñ‚ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° Ñ ÑƒÐºÐ°Ð·Ð°Ð½Ð½Ñ‹Ð¼ Ð½Ð°Ð±Ð¾Ñ€Ð¾Ð¼ ÑÐ²Ð¾Ð¹ÑÑ‚Ð², Ñ†ÐµÐ½ Ð¸ Ñ‚.Ð´.";
 ?>

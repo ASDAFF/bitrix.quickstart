@@ -17,10 +17,5 @@ $MESS["CATALOG_VAT_INCLUDED"] = "НДС включен в цену";
 $MESS["CATALOG_VAT_NOT_INCLUDED"] = "НДС не включен в цену";
 $MESS["CT_BCE_QUANTITY"] = "Количество";
 $MESS["CT_BCE_CATALOG_ADD"] = "В корзину";
-$MESS["CT_BCE_CATALOG_COMPARE"] = "Сравнение";
-$MESS["CATALOG_NOVINKA"] = "Новинка!";
-$MESS["OSTATOK"] = "Остаток";
-$MESS["COMMENTARY"] = "Комментарии";
-$MESS["ECONOMY_INFO"] = "(Экономия в цене - #ECONOMY#)";
-$MESS["FULL_DESCRIPTION"] = "Полное описание";
+$MESS["CT_BCE_CATALOG_COMPARE"] = "Сравнить";
 ?>

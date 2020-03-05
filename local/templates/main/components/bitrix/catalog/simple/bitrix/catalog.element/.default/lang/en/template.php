@@ -18,9 +18,4 @@ $MESS["CATALOG_VAT_NOT_INCLUDED"] = "Tax rate not included in price";
 $MESS["CT_BCE_QUANTITY"] = "Quantity";
 $MESS["CT_BCE_CATALOG_ADD"] = "Add to cart";
 $MESS["CT_BCE_CATALOG_COMPARE"] = "Compare";
-$MESS["CATALOG_NOVINKA"] = "New";
-$MESS["OSTATOK"] = "Quantity in stock";
-$MESS["COMMENTARY"] = "Comments";
-$MESS["ECONOMY_INFO"] = "(Savings - #ECONOMY#)";
-$MESS["FULL_DESCRIPTION"] = "Full description";
 ?>

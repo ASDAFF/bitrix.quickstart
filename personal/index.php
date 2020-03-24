@@ -1,9 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Персональный раздел");
-?>
-
-<?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:sale.personal.section",
 	"",
 	Array(
@@ -53,9 +51,11 @@ $APPLICATION->SetTitle("Персональный раздел");
 		"SHOW_ORDER_PAGE" => "Y",
 		"SHOW_PRIVATE_PAGE" => "Y",
 		"SHOW_PROFILE_PAGE" => "Y",
+		"ALLOW_INNER" => "N",
+		"ONLY_INNER_FULL" => "N",
 		"SHOW_SUBSCRIBE_PAGE" => "Y",
 		"USER_PROPERTY_PRIVATE" => array(),
 		"USE_AJAX_LOCATIONS_PROFILE" => "N"
 	)
-);?>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><br>
+	<br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

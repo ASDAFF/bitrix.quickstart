@@ -1,4 +1,5 @@
 <?
+define("HIDE_SIDEBAR", true);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Заказы");
 ?><?$APPLICATION->IncludeComponent("bitrix:sale.order.ajax", "", array(
@@ -22,7 +23,11 @@ $APPLICATION->SetTitle("Заказы");
 	"COMPATIBLE_MODE" => "N",
 	"BASKET_POSITION" => "before",
 	"BASKET_IMAGES_SCALING" => "adaptive",
-	"SERVICES_IMAGES_SCALING" => "adaptive"
+	"SERVICES_IMAGES_SCALING" => "adaptive",
+	"USER_CONSENT" => "Y",
+	"USER_CONSENT_ID" => "1",
+	"USER_CONSENT_IS_CHECKED" => "Y",
+	"USER_CONSENT_IS_LOADED" => "Y"
 	),
 	false
 );?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

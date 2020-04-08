@@ -1,0 +1,5 @@
+<?
+$MESS['INDI_MAIN_IMPORT_TITLE'] = 'Import panel';
+$MESS['INDI_MAIN_IMPORT_ACCESS_IS_DENIED'] = 'Access is denied';
+$MESS['INDI_MAIN_IMPORT_NEWS'] = 'News';
+$MESS['INDI_MAIN_IMPORT_CATALOG'] = 'Products';

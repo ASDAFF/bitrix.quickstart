@@ -1,0 +1,29 @@
+.user-list {
+    margin: 0 -15px;
+}
+
+.user-list-item {
+    display: inline-block;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px 30px;
+}
+
+.user-list-item .user-card__img {
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    display: block;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.user-card__name {
+    font-size: 14px;
+    display: inline-block;
+    max-width: 155px;
+}
+

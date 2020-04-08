@@ -1,0 +1,205 @@
+/* Общее */
+.sale-order-ajax dl,
+.sale-order-ajax .table {
+	margin: 0;
+}
+
+.sale-order-ajax dl dt,
+.sale-order-ajax dl dd {
+	float: left;
+}
+.sale-order-ajax dl dt {
+	clear: both;
+	margin-right: .5em;
+}
+.sale-order-ajax dt.light,
+.sale-order-ajax dd.light {
+	font-weight: normal;
+}
+.sale-order-ajax dt.hard,
+.sale-order-ajax dd.hard {
+	font-weight: bold;
+}
+
+.sale-order-ajax dl.inline dt,
+.sale-order-ajax dl.inline dd {
+	display: inline-block;
+	float: none;
+}
+.sale-order-ajax dl.inline dt {
+	margin-right: 0;
+}
+.sale-order-ajax dl.inline dd {
+	margin-right: 1em;
+}
+
+.sale-order-ajax .thumbnail {
+	width: 100%;
+}
+.sale-order-ajax .thumbnail img {
+	max-width: 100%;
+}
+
+.sale-order-ajax .nav-steps {
+	margin-bottom: 30px;
+}
+.sale-order-ajax .nav-steps > li.inactive > a {
+	color: inherit;
+}
+.sale-order-ajax .nav-steps > li.inactive > a:hover,
+.sale-order-ajax .nav-steps > li.inactive > a:focus {
+	background-color: transparent;
+	color: inherit;
+}
+.sale-order-ajax .nav-step {
+	padding-right: 2em;
+	position: relative;
+}
+.sale-order-ajax .nav-step:after {
+	content: '→';
+	display: inline;
+	margin-top: -.75em;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 50%;
+	width: 2em;
+}
+.sale-order-ajax .nav-step:last-child {
+	padding-right: 0;
+}
+.sale-order-ajax .nav-step:last-child:after {
+	display: none;
+}
+
+.sale-order-ajax .form-toolbar {
+	margin: 1em 0;
+}
+.sale-order-ajax .form-toolbar-confirm {
+	text-align: right;
+}
+
+
+
+
+/* Корзина */
+.sale-order-ajax .basket-table .thumbnail {
+	margin: 0;
+	width: 100%;
+}
+.sale-order-ajax .basket-table th {
+	width: 12%;
+}
+.sale-order-ajax .basket-table th.basket-name {
+	width: auto;
+}
+.sale-order-ajax .basket-table th.basket-qty {
+	width: 16%;
+}
+.sale-order-ajax .basket-price,
+.sale-order-ajax .basket-sum {
+	white-space: nowrap;
+}
+.sale-order-ajax .basket-set-items article {
+	margin-top: 10px;
+}
+
+.sale-order-ajax .basket-qty {
+	white-space: nowrap;
+}
+.sale-order-ajax .basket-qty-control {
+	display: inline-block;
+	vertical-align: middle;
+}
+.sale-order-ajax .basket-qty-control .input-group {
+	width: 105px;
+}
+.sale-order-ajax .basket-qty-control .fast-control {
+	cursor: pointer;
+}
+.sale-order-ajax .basket-qty-control .form-control {
+	text-align: center;
+}
+
+.sale-order-ajax .basket-total {
+	margin: 10px 0;
+}
+.sale-order-ajax .basket-total dl {
+	float: right;
+}
+.sale-order-ajax .basket-total dt,
+.sale-order-ajax .basket-total dd {
+}
+.sale-order-ajax .basket-total dd {
+	float: right;
+}
+
+.sale-order-ajax .basket-total-offset {
+	margin-top: 1em;
+}
+
+
+
+
+/* Идентификация */
+.sale-order-ajax .form-auth .forgot-pass {
+	margin-left: 10px;
+}
+
+
+
+
+/* Заказ */
+.sale-order-ajax .order-intro,
+.sale-order-ajax .order-group {
+	margin-bottom: 40px;
+}
+.sale-order-ajax .order-group h3 {
+	margin: 0 0 10px;
+}
+.sale-order-ajax .order-group .row:last-child .prop-descr {
+	margin-bottom: 0;
+}
+
+.sale-order-ajax .buyer-store-map .thumbnail {
+	display: inline-block;
+	max-width: 100%;
+	width: auto;
+}
+
+.sale-order-ajax .order-summary .thumbnail {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+/* Заказ */
+.sale-order-ajax .step-success .order-info {
+	margin-top: 20px;
+}
+.sale-order-ajax .step-success .order-number {
+	border: 1px solid #000;
+	float: left;
+	margin-right: 20px;
+	padding: 10px;
+}
+.sale-order-ajax .step-success .order-number-value {
+	font-size: 300%;
+}
+
+
+
+
+@media (min-width: 768px) {
+	.sale-order-ajax .order-props .prop-descr,
+	.sale-order-ajax .order-group .row:last-child .form-group {
+		margin-bottom: 0;
+	}
+	
+	.sale-order-ajax .order-props .prop-descr {
+		margin-top: 5px;
+		padding-top: 1.2em;
+	}
+}

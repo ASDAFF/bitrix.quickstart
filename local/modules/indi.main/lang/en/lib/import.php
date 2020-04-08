@@ -1,0 +1,4 @@
+<?
+$MESS['INDI_MAIN_IMPORT_SECTION'] = 'section';
+$MESS['INDI_MAIN_IMPORT_ELEMENT'] = 'element';
+$MESS['INDI_MAIN_IMPORT_ACTIVITY'] = 'In progress ';

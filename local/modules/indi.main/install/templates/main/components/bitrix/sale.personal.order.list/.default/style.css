@@ -1,0 +1,81 @@
+.order-list-page {
+
+}
+.order-list-page .order-detail {
+	
+}
+.order-list-page .order-detail table {
+	width:100%;
+	margin-bottom:20px;
+}
+.order-list-page .order-detail table .name {
+	
+}
+.order-info-block {
+	background: none repeat scroll 0 0 #eeeeee;
+	border: 1px solid #cccccc;
+	padding: 15px 20px;
+	font-size:12px;
+}
+.order-info-block .title {
+	font-size:20px;
+	margin-bottom:10px;
+}
+.order-info-block .order-sum-with-delivery {
+	font-size:20px;
+}
+.order-list-page .tablebodytext {
+	display:none;
+}
+.order-list-page form > font.tablebodytext {
+	display:block;
+}
+.order-list-page .tablebodytext br {
+	display:none;
+}
+.order-list-page form {
+	display:inline-block;
+}
+.order-list-page table tr.order > td p {
+	display:none;
+}
+.order-list-page table tr.order > td {
+	vertical-align: middle;
+	height:60px;
+}
+.order-list-page .order .glyphicon {
+	cursor: pointer;
+}
+.order-list-page .number {
+	color:#ff0000;
+	font-weight:bold;
+	text-align:center;
+}
+.order-list-page .order-detail .sum-block {
+	font-size:16px;
+	text-align:right;
+}
+.order-list-page .basket-sum {
+	padding-right:4%;
+	text-align:right;
+}
+.order-list-page .basket-qty {
+	text-align:center;
+}
+.order-list-page .basket-price {
+	text-align:right;
+	
+}
+.order-list-page .main-number {
+	text-align:center;
+}
+.order-list-page .main-sum,
+.order-list-page .sum {
+	text-align:right;
+	padding-right:2%;
+}
+.order-list-page .main-count,
+.order-list-page .count {
+	text-align:center;
+}
+

@@ -1,0 +1,3 @@
+<?
+$MESS['INDI_MAIN_LOCALE_SETTINGS'] = array();
+$MESS['INDI_MAIN_LOCALE_MESSAGES'] = array();

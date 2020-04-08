@@ -1,0 +1,19 @@
+<?
+$MESS['AUTH_PLEASE_AUTH'] = 'Please authorize:';
+$MESS['AUTH_LOGIN'] = 'Email';
+$MESS['AUTH_PASSWORD'] = 'Password';
+$MESS['AUTH_REMEMBER_ME'] = 'Remember me on this computer';
+$MESS['AUTH_AUTHORIZE'] = 'Authorize';
+$MESS['AUTH_REGISTER'] = 'Register';
+$MESS['AUTH_FIRST_ONE'] = 'If you are a first-time visitor on the site, please fill in the registration form.';
+$MESS['AUTH_FORGOT_PASSWORD_2'] = 'Forgot your password?';
+$MESS['AUTH_CAPTCHA_PROMT'] = 'Type text from image';
+$MESS['AUTH_TITLE'] = 'Log In';
+$MESS['AUTH_SHOW_PASS'] = 'Show the password';
+$MESS['AUTH_HIDE_PASS'] = 'Hide the password';
+$MESS['AUTH_SECURE_NOTE'] = 'The password will be encrypted before it is sent. This will prevent the password from appearing in open form over data transmission channels.';
+$MESS['AUTH_NONSECURE_NOTE'] = 'The password will be sent in open form. Enable JavaScript in your web browser to enable password encryption.';
+$MESS['AUTH_REQUIRED'] = 'All fields are required';
+$MESS['AUTH_SOCSERV'] = 'Authorize via';
+$MESS['AUTH_NO_ACC_QUESTION'] = 'Don\'t have an account?';
+$MESS['AUTH_NO_ACC_ACTION'] = 'Create new one';

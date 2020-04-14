@@ -6,6 +6,8 @@
  * Time: 13:30
  */
 
+namespace Helper;
+
 class IBlockMenu
 {
     /**

@@ -6,6 +6,8 @@
  * Time: 3:27
  */
 
+namespace Helper;
+
 class SendForms
 {
     /**

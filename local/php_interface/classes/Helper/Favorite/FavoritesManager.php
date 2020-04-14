@@ -1,5 +1,7 @@
 <?php
 
+namespace Helper\Media;
+
 use Bitrix\Main\Loader;
 use Bitrix\Main\Application;
 use Bitrix\Main\Web\Cookie;

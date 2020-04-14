@@ -1,4 +1,5 @@
-<?
+<?php
+namespace Helper;
 // Ищи "CMLNameConnector"
 CModule::IncludeModule('iblock');
 class CustomCML2 extends CIBlockCMLImport{

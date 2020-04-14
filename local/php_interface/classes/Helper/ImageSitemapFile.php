@@ -1,5 +1,7 @@
 <?php
 
+namespace Helper;
+
 use Bitrix\Main\IO\Path;
 use Bitrix\Main\IO\File;
 use Bitrix\Main\SiteTable;

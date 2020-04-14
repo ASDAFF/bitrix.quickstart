@@ -1,4 +1,6 @@
-<?
+<?php
+
+namespace Helper;
 	
 	class CMLNameConnector{
 		// STATIC

@@ -1,11 +1,7 @@
 <?php
+namespace Helper;
 use Bitrix\Main\Loader;
-/**
- * Created by PhpStorm.
- * User: Fyodor V.
- * Date: 18.08.2016
- * Time: 11:57
- */
+
 class Itsfera
 {
     public static function convertCode( $sCode ){

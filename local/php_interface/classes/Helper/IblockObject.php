@@ -1,5 +1,6 @@
 <?php
-namespace IBlock;
+
+namespace Helper;
 
 
 /**

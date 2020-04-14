@@ -6,6 +6,8 @@
  * Time: 5:40
  */
 
+namespace Helper;
+
 /**
  * Class LibraryClass
  *
@@ -108,11 +110,27 @@
  * LibraryClass::is_mobile() - проверка на мобильный браузер
  *
  */
+
 class LibraryClass
 {
 
     // вывод правильного окончания
     public static function getEndWord($count, $text0 = 'товаров', $text1 = 'товар', $text2 = 'товара')
+    {
+        //$count = // общее кол-во
+        $drob = intval(($count / 10 - intval($count / 10)) * 10);
+        if (!$drob || ($count > 4 && $count < 21) || ($drob > 4 && $drob < 10)) {
+            $text = $text0;
+        } elseif ($drob == 1) {
+            $text = $text1;
+        } elseif ($drob > 1 && $drob < 5) {
+            $text = $text2;
+        }
+        return $text;
+    }
+
+    // вывод правильного окончания дней
+    public static function getEndDay($count, $text0 = 'дней', $text1 = 'день', $text2 = 'дня')
     {
         //$count = // общее кол-во
         $drob = intval(($count / 10 - intval($count / 10)) * 10);

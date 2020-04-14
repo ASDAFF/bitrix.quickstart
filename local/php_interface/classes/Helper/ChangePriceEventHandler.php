@@ -1,6 +1,7 @@
 <?php
 
 // namespace Itmit\Events\Handlers;
+namespace Helper;
 
 use Bitrix\Main\Loader;
 

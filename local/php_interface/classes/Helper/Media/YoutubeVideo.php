@@ -6,6 +6,8 @@
  * Time: 0:50
  */
 
+namespace Helper\Media;
+
 /**
  * Class YoutubeVideo
  *

@@ -1,5 +1,7 @@
 <?php
 
+namespace Helper;
+
 	class Sms
 	{
 		protected $login      = 'moshoztorg'; // логин сервиса

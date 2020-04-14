@@ -1,4 +1,6 @@
 <?php
+namespace Helper;
+
 use Bitrix\Main\Diag\Debug;
 use Bitrix\Main\Loader;
 use \Bitrix\Sale\Order;

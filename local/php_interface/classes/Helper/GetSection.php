@@ -6,6 +6,8 @@
  * Time: 6:50
  */
 
+namespace Helper;
+
 class GetSection
 {
     /**

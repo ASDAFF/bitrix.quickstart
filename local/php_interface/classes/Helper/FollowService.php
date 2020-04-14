@@ -1,4 +1,5 @@
 <?php
+namespace Helper;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Application;

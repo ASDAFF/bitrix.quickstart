@@ -6,6 +6,8 @@
  * Time: 15:57
  */
 
+namespace Helper;
+
 use Bitrix\Main\Web;
 
 /**

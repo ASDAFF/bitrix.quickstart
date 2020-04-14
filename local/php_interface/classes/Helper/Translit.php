@@ -6,6 +6,8 @@
  * Time: 5:45
  */
 
+namespace Helper;
+
 /**
  * Class Translit
  * Translit::UrlTranslit($string) - транслитерация для url

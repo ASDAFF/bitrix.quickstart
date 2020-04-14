@@ -6,6 +6,8 @@
  * Time: 7:32
  */
 
+namespace Helper;
+
 define('IMAGE_EDITOR_RESIZE_STRICT',        0);
 define('IMAGE_EDITOR_RESIZE_PROPORTIONAL',  1);
 define('IMAGE_EDITOR_RESIZE_WIDTH',         2);

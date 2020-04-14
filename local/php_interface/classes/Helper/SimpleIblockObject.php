@@ -1,6 +1,6 @@
 <?php
 
-namespace IBlock;
+namespace Helper;
 
 use Bitrix\Main\Application;
 

@@ -1,5 +1,7 @@
 <?php
 
+namespace Helper;
+
 use Bitrix\Highloadblock\HighloadBlockTable;
 use Bitrix\Main\Entity\Query;
 

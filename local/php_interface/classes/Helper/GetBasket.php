@@ -6,6 +6,8 @@
  * Time: 18:10
  */
 
+namespace Helper;
+
 class GetBasket
 {
 

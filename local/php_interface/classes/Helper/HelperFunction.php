@@ -6,6 +6,8 @@
  * Time: 19:39
  */
 
+namespace Helper;
+
 class HelperFunction
 {
 

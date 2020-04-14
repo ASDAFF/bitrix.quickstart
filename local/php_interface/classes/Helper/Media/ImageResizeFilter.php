@@ -1,4 +1,6 @@
-<?
+<?php
+namespace Helper\Media;
+
 /**
  * ImageResizeFilter
  * Класс реализующий расширенные фильтры для метода CFile::ResizeImageGet Битрикса.

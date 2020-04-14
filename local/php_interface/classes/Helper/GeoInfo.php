@@ -1,4 +1,7 @@
 <?php
+
+namespace Helper;
+
 //todo: не очень хорошо определяет города по ip
 
 class GeoInfo

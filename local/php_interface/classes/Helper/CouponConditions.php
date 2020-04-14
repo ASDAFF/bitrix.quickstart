@@ -6,6 +6,8 @@
  * Time: 13:52
  */
 
+namespace Helper;
+
 class CouponConditions
 {
 

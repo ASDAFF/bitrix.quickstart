@@ -1,6 +1,6 @@
 <?php
 
-namespace HBlock;
+namespace Helper;
 
 
 /**

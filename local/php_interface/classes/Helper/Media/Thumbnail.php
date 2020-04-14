@@ -6,6 +6,8 @@
  * Time: 15:42
  */
 
+namespace Helper\Media;
+
 class Thumbnail
 {
     private $w;

@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 # IntelliJ project files
-#.gitignore
+.gitignore
 /.idea/
 composer.phar
 /local/vendor/
+/mega_itnull/

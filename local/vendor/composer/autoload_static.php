@@ -6,10 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
 {
+    public static $files = array (
+        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
             'Maximaster\\' => 11,
+        ),
+        'K' => 
+        array (
+            'Kint\\' => 5,
         ),
         'H' => 
         array (
@@ -21,6 +29,10 @@ class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
         'Maximaster\\' => 
         array (
             0 => __DIR__ . '/..' . '/maximaster/tools.events/src/Maximaster',
+        ),
+        'Kint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
         'Helper\\' => 
         array (

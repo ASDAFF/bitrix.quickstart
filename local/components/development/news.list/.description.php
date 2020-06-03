@@ -11,7 +11,7 @@ $arComponentDescription = array(
         "ID" => "development",
         "NAME" => "DEVELOPMENT",
 		"CHILD" => array(
-			"ID" => GetMessage("T_IBLOCK_DESC_NEWS"),
+			"ID" => "news",
 			"NAME" => GetMessage("T_IBLOCK_DESC_NEWS"),
 			"SORT" => 10
 		),

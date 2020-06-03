@@ -21,7 +21,7 @@ $arComponentDescription = array(
         "ID" => "development",
         "NAME" => "DEVELOPMENT",
 		"CHILD" => array(
-			"ID" => "ENERGOSOFT_SOCIAL_SERVICES",
+			"ID" => "SOCIAL_SERVICES",
 			"NAME" => GetMessage("ENERGOSOFT_GROUP"),
 			"SORT" => 30,
 		),

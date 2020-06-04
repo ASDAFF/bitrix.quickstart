@@ -132,7 +132,7 @@ BX.namespace('BX.Sale.OrderAjaxComponent.Maps');
 					balloonContentLayout: ymaps.templateLayoutFactory.createClass(
 						'<h3>{{ properties.storeTitle }}</h3>' +
 						'{{ properties.storeBody|raw }}' +
-						'<br /><a class="btn btn-sm btn-primary" data-store="{{ properties.id }}">{{ properties.text }}</a>',
+						'<br /><a class="btn btn-sm btn-default" data-store="{{ properties.id }}">{{ properties.text }}</a>',
 						{
 							build: function() {
 								this.constructor.superclass.build.call(this);

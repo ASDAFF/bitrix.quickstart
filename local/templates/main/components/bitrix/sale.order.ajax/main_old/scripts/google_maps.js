@@ -10,10 +10,9 @@ BX.namespace('BX.Sale.OrderAjaxComponent.Maps');
 			this.pickUpOptions = this.context.options.pickUpMap;
 			this.propsOptions = this.context.options.propertyMap;
 			this.maxWaitTimeExpired = false;
-			this.scheme = this.context.isHttps ? 'https' : 'http';
 			this.icons = {
-				red: this.scheme + '://maps.google.com/mapfiles/ms/icons/red-dot.png',
-				green: this.scheme + '://maps.google.com/mapfiles/ms/icons/green-dot.png'
+				red: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+				green: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
 			};
 
 			return this;
@@ -92,8 +91,8 @@ BX.namespace('BX.Sale.OrderAjaxComponent.Maps');
 					title: activeStores[i].TITLE
 				});
 				marker.info = new google.maps.InfoWindow({
-					content: '<h3>' + BX.util.htmlspecialchars(activeStores[i].TITLE) + '</h3>' + this.getStoreInfoHtml(activeStores[i]) + '<br />'
-					+ '<a class="btn btn-sm btn-primary" data-store="' + activeStores[i].ID + '">'
+					content: '<h3>' + activeStores[i].TITLE + '</h3>' + this.getStoreInfoHtml(activeStores[i]) + '<br />'
+					+ '<a class="btn btn-sm btn-default" data-store="' + activeStores[i].ID + '">'
 					+ this.context.params.MESS_SELECT_PICKUP + '</a>'
 				});
 				marker.storeId = activeStores[i].ID;

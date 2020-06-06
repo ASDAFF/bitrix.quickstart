@@ -101,6 +101,7 @@ node.appendChild(
 ```
 
 Чтобы убрать ссылки «изменить» у всех блоков в editOrder (~2222 стр.)
+в конец функции editOrder добавляем код
 
 ```javascript
 var editSteps = this.orderBlockNode.querySelectorAll('.bx-soa-editstep'), i;

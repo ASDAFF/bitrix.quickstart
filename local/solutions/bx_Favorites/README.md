@@ -250,6 +250,14 @@ foreach($arFavorites as $k => $favoriteItem):?>
     </script>
 <?endforeach;?>
 ```
+Добавление кнопки в карточке товара
+
+```php
+<div class="favorite">
+    <a rel="nofollow" class="add2favorite" data-item="<?= $arResult['ID'] ?>" href="javascript:void(0);">В избранное</a>
+</div>
+```
+
 
 Готово !
 

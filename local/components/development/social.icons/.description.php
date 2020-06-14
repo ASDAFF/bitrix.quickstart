@@ -11,7 +11,7 @@ $arComponentDescription = array(
         "ID" => "development",
         "NAME" => "DEVELOPMENT",
         "CHILD" => array(
-            "ID" => "slobel-utilities",
+            "ID" => "utilities",
             "NAME" => GetMessage("NAME_CHILD"),
             "SORT" => 90,
         )

@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<div class="slobel-social-icons">
+<div class="social-icons">
 	<?foreach($arResult['PROPERTIES']['SOCIAL'] as $keysoc => $valsoc):?>
 		<noindex>
 		<a style="width: <?=$arResult['PROPERTIES']['SIZE']?>" class="<?=$arResult['PROPERTIES']['POSITION']?>" target="_blank" href="<?=$valsoc['LINK']?>">

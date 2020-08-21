@@ -9,6 +9,7 @@
 
   "license": "MIT",
   "dependencies": {
+    "cleaning.structure": "https://github.com/ASDAFF/cleaning.structure.git",
     "collected.iblockprops": "https://github.com/ASDAFF/collected.iblockprops.git",
     "easy.form": "https://github.com/ASDAFF/easy.form.git",
     "sort.panel": "https://github.com/ASDAFF/sort.panel.git"

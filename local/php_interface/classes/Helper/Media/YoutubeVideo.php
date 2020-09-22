@@ -61,10 +61,6 @@ class YoutubeVideo
     public function GetPreview($size = 'default')
     {
         $prefix = $this->Prefix();
-        if (empty($size)) {
-            $size = 'default';
-        }
-
         if ($prefix) {
             $preview = 'https://img.youtube.com/vi/' . $prefix . '/' . $size . '.jpg';
             return $preview;

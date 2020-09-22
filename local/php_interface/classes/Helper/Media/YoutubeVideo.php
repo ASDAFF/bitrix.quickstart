@@ -58,7 +58,7 @@ class YoutubeVideo
      * $size = maxresdefault -- maxresdefault.jpg
      */
 
-    public function GetPreview($size)
+    public function GetPreview($size = 'default')
     {
         $prefix = $this->Prefix();
         if (empty($size)) {

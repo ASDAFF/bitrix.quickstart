@@ -20,7 +20,7 @@
                         <div class="alert alert-success" id="success-callback-modal">Мы получили Вашу заявку и скоро перезвоним.</div>
                     </div>
 
-                    <div class="clearfix"><img src="/local/codenails/ajax/images/loading.gif" alt="Loading"
+                    <div class="clearfix"><img src="/local/ajax/images/loading.gif" alt="Loading"
                                                id="form-loading-callback-modal" class="pull-right"/></div>
                     <input type="text" name="CALLBACK_MODAL[NAME]" class="inp req" placeholder="Ваше имя *">
                     <input type="tel" name="CALLBACK_MODAL[PHONE]" pattern="(([ ]*[\+]?[ ]*\d{1,5})[ ]*[\-]?[ ]*)?(\(?\d{1,5}\)?[ ]*[\-]?[ ]*)?[\d\- ]{5,13}" class="inp req" placeholder="Телефон *">

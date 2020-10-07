@@ -22,7 +22,7 @@
                             Спасибо за обращение. В ближайшее время с вами свяжутся, для уточнения деталей.
                         </div>
                     </div>
-                    <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-contacts-modal"
+                    <img src="/local/ajax/images/loading.gif" alt="Loading" id="form-loading-contacts-modal"
                          class="pull-right"/>
                     <div class="clearfix"></div>
                     <input type="text" name="CONTACTS_MODAL[NAME]" class="inp req" placeholder="Ваше имя *">

@@ -9,6 +9,6 @@
  */
 ?>
 
-<link rel="stylesheet" type="text/css" href="/local/codenails/backend/css/global.min.css">
+<link rel="stylesheet" type="text/css" href="/local/assets/backend/css/global.min.css">
 
-<script type="text/javascript" src="/local/codenails/backend/js/global.min.js"></script>
+<script type="text/javascript" src="/local/assets/backend/js/global.min.js"></script>

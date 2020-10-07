@@ -34,12 +34,12 @@ $arLibs = array(
         'rel' => array('jquery'),
     ),
     'jquery_fancybox' => array(
-        'js' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.js',
-        'css' => '/local/codenails/frontend/lib/fancybox/jquery.fancybox.min.css',
+        'js' => '/local/assets/lib/fancybox/jquery.fancybox.min.js',
+        'css' => '/local/assets/lib/fancybox/jquery.fancybox.min.css',
         'rel' => array('jquery'),
     ),
     'mask_input' => array(
-        'js' => '/local/codenails/frontend/lib/mask_input/mask.input.js',
+        'js' => '/local/assets/lib/mask_input/mask.input.js',
     )
 
 );

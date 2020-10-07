@@ -22,7 +22,7 @@
                             Заявка на вступление в сеть обрабатывается. Ожидайте звонка специалиста.
                         </div>
                     </div>
-                    <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-network"
+                    <img src="/local/ajax/images/loading.gif" alt="Loading" id="form-loading-network"
                          class="pull-right"/>
                     <div class="clearfix"></div>
                     <input type="text" name="NETWORK[NAME]" class="inp req" placeholder="Ваше имя *">

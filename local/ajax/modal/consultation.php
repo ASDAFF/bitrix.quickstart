@@ -22,7 +22,7 @@
                             Заявка принята. Ожидайте звонка эксперта.
                         </div>
                     </div>
-                    <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-callback"
+                    <img src="/local/ajax/images/loading.gif" alt="Loading" id="form-loading-callback"
                          class="pull-right"/>
                     <div class="clearfix"></div>
                     <input type="text" name="CALLBACK[NAME]" class="inp req" placeholder="Ваше имя *">

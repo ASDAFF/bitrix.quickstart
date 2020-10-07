@@ -45,7 +45,7 @@ while ($el = $rsData->fetch()) {
                         <div class="alert alert-success" id="success-order-scheme">Спасибо за заказ. С вами свяжется наш специалист в ближайшее время. </div>
                     </div>
                     <div class="clearfix">
-                        <img src="/local/codenails/ajax/images/loading.gif" alt="Loading" id="form-loading-order-scheme" class="pull-right"/>
+                        <img src="/local/assets/ajax/images/loading.gif" alt="Loading" id="form-loading-order-scheme" class="pull-right"/>
                     </div>
 
 

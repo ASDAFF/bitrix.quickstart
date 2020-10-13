@@ -1,6 +1,5 @@
 <?php
-
-namespace Helper\Media;
+namespace Helper\Favorite;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\Application;

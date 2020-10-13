@@ -5,6 +5,7 @@
  * Date: 25.05.2018
  * Time: 13:27
  */
+namespace Helper;
 
 use Bitrix\Main\Config\Option;
 

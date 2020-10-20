@@ -1,6 +1,10 @@
 <?php
 namespace Helper;
 
+/**
+ * Class Paging
+ * @package Helper
+ */
 class Paging
 {
     public $self;              #   link at self

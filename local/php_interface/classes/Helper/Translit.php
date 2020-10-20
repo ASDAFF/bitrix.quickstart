@@ -8,13 +8,18 @@
 
 namespace Helper;
 
+
 /**
  * Class Translit
+ * @package Helper
  * Translit::UrlTranslit($string) - транслитерация для url
  */
-
 class Translit
 {
+    /**
+     * @param $string
+     * @return mixed|null|string|string[]
+     */
     public static function Transliterate($string)
     {
         $cyr = array(
@@ -38,6 +43,10 @@ class Translit
         return $string;
     }
 
+    /**
+     * @param $string
+     * @return mixed|null|string|string[]
+     */
     public static function UrlTranslit($string)
     {
         $string = preg_replace("/[_\s\.,?!\[\](){}]+/", "-", $string);

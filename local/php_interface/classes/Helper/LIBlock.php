@@ -1,6 +1,10 @@
 <?php
 namespace Helper;
 
+/**
+ * Class LIblock
+ * @package Helper
+ */
 class LIblock
 {
     /**

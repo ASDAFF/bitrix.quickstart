@@ -5,6 +5,10 @@
 
 namespace Helper\Media;
 
+/**
+ * Class CropImage
+ * @package Helper\Media
+ */
 class CropImage
 {
     /**
@@ -12,9 +16,7 @@ class CropImage
      * @param string $aNewImageFilePath - строка, представляющая путь куда нахо сохранить выходное обрезанное изображение
      * @param int $aNewImageWidth - ширина выходного обрезанного изображения
      * @param int $aNewImageHeight - высота выходного обрезанного изображения
-     */
-
-    /**
+     * @return array
      *
      * Пользоваться функцией достаточно просто. Сначала формируем обрезанное изображение:
      * CropImage::cropImage($_SERVER['DOCUMENT_ROOT'] . "/1.jpg", $_SERVER['DOCUMENT_ROOT'] . "/1_cropped.jpg", 480, 320);

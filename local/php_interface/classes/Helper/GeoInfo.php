@@ -4,6 +4,10 @@ namespace Helper;
 
 //todo: не очень хорошо определяет города по ip
 
+/**
+ * Class GeoInfo
+ * @package Helper
+ */
 class GeoInfo
 {
 //    private static $url = "http://www.geoplugin.net/json.gp?ip=#ip#&lang=ru";

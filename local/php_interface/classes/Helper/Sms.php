@@ -2,7 +2,11 @@
 
 namespace Helper;
 
-	class Sms
+/**
+ * Class Sms
+ * @package Helper
+ */
+class Sms
 	{
 		protected $login      = 'moshoztorg'; // логин сервиса
 		protected $password   = 'pinyleny';   // пароль сервиса

@@ -5,6 +5,10 @@
 
 namespace Helper;
 
+/**
+ * Class IBlockData
+ * @package Helper
+ */
 class IBlockData
 {
     /**

@@ -8,10 +8,17 @@
 
 namespace Helper;
 
+/**
+ * Class GetBasket
+ * @package Helper
+ */
 class GetBasket
 {
 
     // for Basket
+    /**
+     * @return array
+     */
     function getBasketData()
     {
         $result = array();
@@ -39,6 +46,9 @@ class GetBasket
         return $result;
     }
 
+    /**
+     * @return float|int
+     */
     function getBasketSum()
     {
         $sum = 0;

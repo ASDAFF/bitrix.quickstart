@@ -8,6 +8,10 @@
 
 namespace Helper;
 
+/**
+ * Class GetSection
+ * @package Helper
+ */
 class GetSection
 {
     /**

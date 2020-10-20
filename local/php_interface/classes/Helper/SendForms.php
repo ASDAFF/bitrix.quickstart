@@ -8,6 +8,10 @@
 
 namespace Helper;
 
+/**
+ * Class SendForms
+ * @package Helper
+ */
 class SendForms
 {
     /**

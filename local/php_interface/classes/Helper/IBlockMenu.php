@@ -8,6 +8,10 @@
 
 namespace Helper;
 
+/**
+ * Class IBlockMenu
+ * @package Helper
+ */
 class IBlockMenu
 {
     /**

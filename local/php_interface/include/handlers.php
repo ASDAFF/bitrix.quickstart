@@ -19,13 +19,6 @@ use \Bitrix\Main\Loader;
 
 $eventManager = \Bitrix\Main\EventManager::getInstance();
 
-////page start
-//AddEventHandler("main", "OnPageStart", "loadLocalLib", 1);
-//function loadLocalLib()
-//{
-//    Loader::includeModule('local.lib');
-//}
-
 AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
 AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
 
@@ -40,14 +33,6 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblock
  **/
 AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
 AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyColor', 'GetUserTypeDescription')); // свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
-
-/**
- * Пользовательское свойство инфоблока типа "Логическое" (true/false). Внешний вид - чекбокс.
- */
-// добавляем тип для инфоблока
-AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeBool", "GetIBlockPropertyDescription"));
-/*// добавляем тип для главного модуля
-AddEventHandler("main", "OnUserTypeBuildList", array("CUserTypeBool", "GetUserTypeDescription"));*/
 
 /**
  * Пользовательское свойство "Да/Нет в виде Input Checkbox (Флажок)

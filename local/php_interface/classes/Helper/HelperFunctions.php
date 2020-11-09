@@ -82,31 +82,6 @@ class HelperFunctions
     }
 
     /**
-     * @param $location
-     * @param int $timeout
-     */
-    function redirect($location, $timeout = 0)
-    {
-        if (($timeout == 0) && (!headers_sent())) {
-            header('Location: ' . $location);
-            exit;
-        } else {
-            $timeout = $timeout * 1000;
-
-            if ($timeout > 0) {
-                print "<p>Click <a href=\"" . $location . "\">here</a> to continue</p>\n";
-            }
-
-            print <<< JS
-<script>
-window.setTimeout("window.location = '{$location}'", $timeout);
-</script>
-
-JS;
-        }
-    }
-
-    /**
      * @param int time Unix timestamp
      * @param string mode day|hour|month|year
      * @param boolean sqlReady

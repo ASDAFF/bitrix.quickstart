@@ -627,11 +627,6 @@ class HelperFunctions
         }
     }
 
-    function __($key, $special = false)
-    {
-        return cp_get_language_message($key, $special);
-    }
-
     /**
      * @param $key
      * @param bool $special
@@ -713,7 +708,7 @@ class HelperFunctions
      */
     function cp_get_site_email()
     {
-        $info = cp_fetch_site_info();
+        $info = self::cp_fetch_site_info();
         return $info['EMAIL'];
     }
 
@@ -722,7 +717,7 @@ class HelperFunctions
      */
     function cp_get_site_name()
     {
-        $info = cp_fetch_site_info();
+        $info = self::cp_fetch_site_info();
         return $info['SITE_NAME'];
     }
 
@@ -744,7 +739,7 @@ class HelperFunctions
 
             $url = $url_part . '/' . trim($url, '/');
 
-            $url = '/' . basename(IMG_CACHE_PATH) . $url . '?' . cp_thumb_url_hash($url);
+            $url = '/' . basename(IMG_CACHE_PATH) . $url . '?' . self::cp_thumb_url_hash($url);
         }
 
         return $url;
@@ -768,7 +763,7 @@ class HelperFunctions
                 break;
 
             default:
-                $retval = russian_date($format, $time);
+                $retval = self::russian_date($format, $time);
                 break;
         }
 
@@ -785,38 +780,6 @@ class HelperFunctions
         $retval = GetMessage($key, $aReplace);
 
         return empty($retval) ? $key : $retval;
-    }
-
-    /**
-     * @param $key
-     * @return mixed
-     */
-    function cp_language_text($key)
-    {
-        static $list;
-
-        if (!isset($list)) {
-            $list = \Block\Getter::instance()
-                ->addFilter('IBLOCK_TYPE', 'texts')
-                ->setClassName('MultilangDummy')
-                ->get();
-        }
-
-        /** @var $text  MultilangDummy */
-        $text = false;
-
-        foreach ($list as $item) {
-            if ($item->code == $key) {
-                $text = $item;
-                break;
-            }
-        }
-
-        if (!$text) {
-            throw new Exception("Text with key '$key' not found");
-        }
-
-        return $text->getLangPropText('TEXT');
     }
 
     /**
@@ -859,7 +822,7 @@ class HelperFunctions
         foreach ($plainArray as $item) {
             if ((int)$item['IBLOCK_SECTION_ID'] == $parentId) {
                 $item['CHILDREN'] = array();
-                cp_categories_plain2tree($item['CHILDREN'], $plainArray, $item['ID']);
+                self::cp_categories_plain2tree($item['CHILDREN'], $plainArray, $item['ID']);
                 $resultArray[] = $item;
             }
         }
@@ -928,8 +891,8 @@ class HelperFunctions
      */
     function getIBlockById($id, $baseURL)
     {
-        $retval = getIBlocks(array('ID' => $id), $baseURL);
-        return empty_array($retval) ? false : $retval[0];
+        $retval = self::getIBlocks(array('ID' => $id), $baseURL);
+        return self::empty_array($retval) ? false : $retval[0];
     }
 
     /**
@@ -982,7 +945,7 @@ class HelperFunctions
      */
     function cp_is_main()
     {
-        return cp_current_url(true) == SITE_URL;
+        return self::cp_current_url(true) == SITE_URL;
     }
 
     /**
@@ -1018,61 +981,6 @@ class HelperFunctions
             'MODIFIED_BY', 'TAGS');
 
         return in_array($fieldName, $arStandardFields);
-    }
-
-    /**
-     * Фунцкция принимает список инфоблоков \Block\ObjectBlock,
-     * делает выборку разделов и возвращает список разделов \Section\ObjectSection
-     * с полем elements, содержащим инфорблоки
-     *
-     * @param $iblocks
-     * @return array
-     */
-    function cp_group_by_section($iblocks, $level = 0)
-    {
-        if (empty($iblocks) || !is_array($iblocks)) return false;
-
-        $sectionsIds = array();
-
-        $list = new \Block\Collection($iblocks);
-
-        foreach ($list as $item) {
-            $sectionsIds[] = $item->iblock_section_id;
-        }
-
-        if (empty_array($sectionsIds)) return false;
-
-        $sections = \Section\Getter::instance()->setFilter(array(
-            'ID' => $sectionsIds
-        ))->checkPermissions(false)->get();
-
-        foreach ($sections as $section) {
-            $section->elements = $list->getBy('iblock_section_id', $section->id);
-        }
-
-        return $sections;
-    }
-
-    /**
-     * @param array $filter
-     * @return array
-     */
-    function cp_get_iblock_dates($filter = array())
-    {
-        $dates = array();
-
-        \Block\Getter::instance()
-            ->setOrder(array('DATE_ACTIVE_FROM' => 'DESC'))
-            ->setFilter($filter)
-            ->setHydrationMode(\Block\Getter::HYDRATION_MODE_ARRAY)
-            ->setSelectFields(array('DATE_ACTIVE_FROM'))
-            ->addCallback(function ($element) use (&$dates) {
-                $timestamp = strtotime($element['ACTIVE_FROM']);
-                $dates[date('Y', $timestamp)][date('n', $timestamp)]++;
-            })
-            ->get();
-
-        return $dates;
     }
 
     /**

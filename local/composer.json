@@ -10,7 +10,8 @@
   "require": {
     "php": ">=7.2.0",
     "kint-php/kint": "dev-master",
-    "maximaster/tools.events": "dev-master"
+    "maximaster/tools.events": "dev-master",
+    "mobiledetect/mobiledetectlib": "^2.8"
   },
   "autoload": {
     "psr-4": {

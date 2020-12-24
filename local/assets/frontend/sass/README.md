@@ -48,3 +48,10 @@ sass/
 `– main.scss              # Главный Sass файл
 ```
 Если вы хотите использовать паттерн 7-1, вот готовый шаблон [GitHub](https://github.com/HugoGiraudel/sass-boilerplate) на Гитхабе. В нём содержится всё что нужно для начала работы по этой архитектуре.
+
+Макросы для настройки PHPStorm, заполнить поля.
+в поле Arguments:
+--update $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css --style compressed
+
+в поле Output paths to refresh:
+$FileParentDir$/css/$FileNameWithoutExtension$.css:$FileParentDir$/css/$FileNameWithoutExtension$.css.map

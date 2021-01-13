@@ -43,3 +43,5 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "
  * order
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnBeforeEventAdd", array('CEshopEmailFieldsHandlers', 'OnBeforeEventAdd'));
+
+$eventManager->addEventHandler("sale", "OnOrderNewSendEmail", array('CEshopEmailFieldsHandlers', 'bxModifySaleMails'));

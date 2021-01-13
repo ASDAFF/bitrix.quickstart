@@ -5,7 +5,7 @@
 
 namespace Helper\Tools;
 
-class DevDebug
+class CDebug
 {
     function log($data)
     {

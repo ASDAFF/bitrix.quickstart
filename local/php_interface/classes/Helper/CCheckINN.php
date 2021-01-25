@@ -21,7 +21,7 @@ class CCheckINN
      * Читает CSV файл, проверяет ИНН. Как только находит - возвращает true
      *
      */
-    function checkinn($inn, $stolbinn, $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = '', $row_delimiter = "" )
+    function checking($inn, $stolbinn, $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = '', $row_delimiter = "" )
     {
         if( ! file_exists($file_path) )
             return false;

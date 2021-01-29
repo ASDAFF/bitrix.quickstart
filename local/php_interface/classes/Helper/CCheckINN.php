@@ -5,6 +5,7 @@
 
 namespace Helper;
 
+use Bitrix\Main\Loader;
 
 class CCheckINN
 {
@@ -21,7 +22,7 @@ class CCheckINN
      * Читает CSV файл, проверяет ИНН. Как только находит - возвращает true
      *
      */
-    function checking($inn, $stolbinn, $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = '', $row_delimiter = "" )
+    function checkingCSV($inn, $stolbinn, $file_path, $file_encodings = ['cp1251','UTF-8'], $col_delimiter = '', $row_delimiter = "" )
     {
         if( ! file_exists($file_path) )
             return false;
@@ -95,5 +96,51 @@ class CCheckINN
         }
 
         return false;
+    }
+
+    /**
+     * @param $inn - проверяемый ИНН
+     * @param $id - индентификатор Highload-блока "Контрагенты"
+     * @throws Exception
+     * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\ObjectPropertyException
+     * @throws \Bitrix\Main\SystemException
+     *
+     * Поля Highload-блока "Контрагенты"
+     *  UF_ACTIVE - тип; Да/Нет
+     *  UF_INN - тип; Строка  ИНН
+     *  UF_DATE - тип; Строка  Дата регистрации
+     *  UF_DIRECTOR - тип; Строка  Директор
+     *  UF_KPP - тип; Строка  КПП
+     *  UF_OGRN - тип; Строка  ОГРН
+     *  UF_ADDRESS - тип; Строка  Адрес
+     *  UF_NAME - тип; Строка  Наименование
+     */
+    function checkingHL($inn, $id)
+    {
+        $inn = (int)$inn;
+
+        // проверяем ИНН на наличие в базе контрагентов
+        Loader::includeModule("highloadblock");
+        $hlblock = Bitrix\Highloadblock\HighloadBlockTable::getById($id)->fetch();
+        $ent = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hlblock);
+        $entity_data_class = $ent->getDataClass();
+        $arFilter = array("UF_INN" => $inn);
+        $arSelect = array('*');
+        $arData = $entity_data_class::getList(array(
+            "select" => $arSelect,
+            "filter" => $arFilter
+        ));
+        $arData = new CDBResult($arData);
+        while ($arResult2 = $arData->Fetch()) {
+            $foundorg[] = $arResult2;
+        }
+
+        // еесли нашли
+        if (count($foundorg) > 0) {
+            return $foundorg;
+        } else {
+            return false;
+        }
     }
 }

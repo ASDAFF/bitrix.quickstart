@@ -6,7 +6,7 @@
  * Time: 9:30
  */
 
-CModule::IncludeModule("fileman");
+\Bitrix\Main\Loader::IncludeModule("fileman");
 CMedialib::Init();
 
 class PropMediaLibUserType

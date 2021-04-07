@@ -20,7 +20,7 @@ class ModelAuthEmailClass
 {
     function auth(){
         if(!filter_var($_REQUEST['USER_LOGIN'], FILTER_VALIDATE_EMAIL)) return;
-        CModule::IncludeModule("main");
+        \Bitrix\Main\Loader::IncludeModule("main");
         $rsUser = CUser::GetList(
             ($by="id"),
             ($order="asc"),

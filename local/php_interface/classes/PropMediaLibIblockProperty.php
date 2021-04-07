@@ -6,7 +6,7 @@
  * Time: 9:33
  */
 
-CModule::IncludeModule("fileman");
+\Bitrix\Main\Loader::IncludeModule("fileman");
 CMedialib::Init();
 
 class PropMediaLibIblockProperty
@@ -36,7 +36,7 @@ class PropMediaLibIblockProperty
     {
         if ($value['VALUE'])
         {
-            CModule::IncludeModule("fileman");
+            \Bitrix\Main\Loader::IncludeModule("fileman");
             CMedialib::Init();
             $arMediaLib = CMedialibCollection::GetList($Params = array('arFilter' =>
                 array(

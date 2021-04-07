@@ -263,7 +263,7 @@ class HelperFunctions
      */
     static public function getCountProductsBasket($group = false)
     {
-        CModule::IncludeModule('sale');
+        \Bitrix\Main\Loader::IncludeModule('sale');
         $totalProduct = 0;
         $dbBasketItems = CSaleBasket::GetList(
             array(), array(
@@ -356,7 +356,7 @@ class HelperFunctions
      */
     public static function getBasket($id = "NULL", $idUser = '')
     {
-        CModule::IncludeModule('sale');
+        \Bitrix\Main\Loader::IncludeModule('sale');
         if (!$idUser) {
             $idUser = CSaleBasket::GetBasketUserID();
         }
@@ -407,7 +407,7 @@ class HelperFunctions
      */
     public static function checkProductToCart($id)
     {
-        CModule::IncludeModule('sale');
+        \Bitrix\Main\Loader::IncludeModule('sale');
         if ($id) {
             $dbBasketItems = CSaleBasket::GetList(array(),
                 array(
@@ -1736,7 +1736,7 @@ class HelperFunctions
      */
     function saleCart($param = array(), $update = false)
     {
-        CModule::IncludeModule('sale');
+        \Bitrix\Main\Loader::IncludeModule('sale');
         global $USER;
         $arOrderForDiscount = array(
             'SITE_ID' => SITE_ID,

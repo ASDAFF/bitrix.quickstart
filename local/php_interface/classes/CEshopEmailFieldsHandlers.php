@@ -19,7 +19,7 @@ class CEshopEmailFieldsHandlers
         if ($arFields['ORDER_ID']>0) {
             $order = CSaleOrder::GetByID($arFields['ORDER_ID']);
             if ($event=="SALE_NEW_ORDER" AND $arFields['ORDER_ID']>0) {
-                CModule::IncludeModule("sale");
+                \Bitrix\Main\Loader::IncludeModule("sale");
                 $fields4email = array();
                 $arOrderProps = array();
                 $rsOrderProps = CSaleOrderPropsValue::GetOrderProps($arFields['ORDER_ID']);

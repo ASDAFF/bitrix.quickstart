@@ -174,7 +174,7 @@ class CIBlockPropertyCRM {
 	 */
 	private static function GetListCompanyCRM(){
 		$arrList = array();
-		if (CModule::IncludeModule('crm')){
+		if (\Bitrix\Main\Loader::IncludeModule('crm')){
 			
 			$objCache = new CPHPCache;
 			

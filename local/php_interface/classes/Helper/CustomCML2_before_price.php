@@ -1,7 +1,7 @@
 <?php
 namespace Helper;
 // Ищи "CMLNameConnector"
-CModule::IncludeModule('iblock');
+\Bitrix\Main\Loader::IncludeModule('iblock');
 class CustomCML2 extends CIBlockCMLImport{
 	function ImportProperties($XML_PROPERTIES_PARENT, $IBLOCK_ID)
 	{

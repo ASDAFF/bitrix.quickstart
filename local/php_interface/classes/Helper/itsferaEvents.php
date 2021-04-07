@@ -82,7 +82,7 @@ class itsferaEvents
     public function OnGetDiscountResultHandler(&$arResult)
     {
 
-        if (CModule::IncludeModule("gift.certificate")) {
+        if (\Bitrix\Main\Loader::IncludeModule("gift.certificate")) {
             //собираем правила
             $iBlockID = Option::get('gift.certificate', 'GiftCertificateIBlockID');
             if ((int)\CIBlockElement::GetIBlockByID(self::$pId) == $iBlockID ) {
@@ -93,7 +93,7 @@ class itsferaEvents
 
         GLOBAL $USER;
         if ($USER->IsAuthorized()) {
-            CModule::IncludeModule("iblock");
+            \Bitrix\Main\Loader::IncludeModule("iblock");
 
             //получаем данные по дисконтным картам
             $arSelect    = Array("ID", "NAME", "PROPERTY_PERCENT", "PROPERTY_CARDTYPE", "PROPERTY_TOTAL");

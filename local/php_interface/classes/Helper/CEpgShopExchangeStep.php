@@ -21,7 +21,7 @@ class CEpgShopExchangeStep
      */
     function importGoods($IBLOCK_ID__CATALOG, $IBLOCK_ID__BRAND, $step = 50, $delay = 2)
     {
-        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/goods___.xml");
+        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/goods.xml");
         $goodsArr = new SimpleXMLElement($fileContent);
         foreach ($goodsArr as $ar) {
             $goodsArray[] = $ar;

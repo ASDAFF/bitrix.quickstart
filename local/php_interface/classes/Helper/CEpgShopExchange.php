@@ -5,60 +5,97 @@ namespace Helper;
 use SimpleXMLElement;
 
 
+/**
+ * Class CEpgShopExchange
+ * @package Helper
+ */
 class CEpgShopExchange
 {
-
     /**
-     * @param $value
-     * @return string
+     * @param $IBLOCK_ID__CATALOG
      */
-    function measure($value)
+    function importStructure($IBLOCK_ID__CATALOG)
     {
-        if (strlen($value) > 0) {
-            $arItemProps["EDINICY"] = $value;
-            if ($arItemProps["EDINICY"] == "шт.") {
-                $measure = "5";
-            } elseif ($arItemProps["EDINICY"] == "л") {
-                $measure = "2";
-            } elseif ($arItemProps["EDINICY"] == "уп.") {
-                $measure = "7";
-            } elseif ($arItemProps["EDINICY"] == "комп.") {
-                $measure = "6";
+        $i = 0;
+        $addCount = 0;
+        $updateCount = 0;
+        $params = array(
+            "max_len" => "100", // обрезает символьный код до 75 символов
+            "change_case" => "L", // буквы преобразуются к нижнему регистру
+            "replace_space" => "-", // меняем пробелы на нижнее подчеркивание
+            "replace_other" => "-", // меняем левые символы на нижнее подчеркивание
+            "delete_repeat_replace" => "true", // удаляем повторяющиеся нижние подчеркивания
+            "use_google" => "false", // отключаем использование google
+        );
+
+        $time = time();
+        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/structure_goods.xml");
+        $structureArray = new SimpleXMLElement($fileContent);
+        $bs = new \CIBlockSection;
+        foreach ($structureArray as $structure) {
+            $arFields = array(
+                "MODIFIED_BY" => 1,
+                "ACTIVE" => "Y",
+                "IBLOCK_ID" => $IBLOCK_ID__CATALOG
+            );
+            $arFields["NAME"] = (string)$structure["НаименованиеГруппы"];
+            $arFields["XML_ID"] = (string)$structure["КодГруппы"];
+//        $cID = CIBlockFindTools::GetSectionID($arResult['VARIABLES']['SECTION_ID'], $CODE_translit, array('IBLOCK_ID' => $IBLOCK_ID__CATALOG));
+            $resSection = \CIBlockSection::GetList(
+                array("ID" => "ASC"),
+                array("IBLOCK_ID" => $IBLOCK_ID__CATALOG, "ACTIVE" => "Y", "XML_ID" => $arFields["XML_ID"]),
+                false,
+                array('ID', 'NAME', 'CODE', 'XML_ID')
+            )->fetch();
+
+            if ($resSection['ID'] > 0) {
+                $codeParent = (string)$structure["КодРодителя"];
+                if ($codeParent != "") {
+                    $rsSectionsParent = \CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $IBLOCK_ID__CATALOG, "XML_ID" => $codeParent), false, array("ID", "IBLOCK_ID", "IBLOCK_SECTION_ID", "NAME"), array());
+                    while ($arSectionParent = $rsSectionsParent->Fetch()) {
+                        $arFields['IBLOCK_SECTION_ID'] = $arSectionParent["ID"];
+                        break;
+                    }
+                }
+
+                if ($ID = $bs->Update($resSection['ID'], $arFields)) {
+                    //pre($ID);
+                } else {
+                    //pre("Error: ".$bs->LAST_ERROR);
+                }
+                $i++;
+                $updateCount++;
             } else {
-                $measure = "5";
+                $CODE_translit = \CUtil::translit($structure["НаименованиеГруппы"], "ru", $params); // преобразуем название в символьный код товара для поиска по нему
+                $arFields["CODE"] = $CODE_translit;
+                $codeParent = (string)$structure["КодРодителя"];
+                if ($codeParent != "") {
+                    $rsSectionsParent = \CIBlockSection::GetList(array("SORT" => "ASC"), array("IBLOCK_ID" => $IBLOCK_ID__CATALOG, "XML_ID" => $codeParent), false, array("ID", "IBLOCK_ID", "IBLOCK_SECTION_ID", "NAME", "DESCRIPTION", "UF_*"), array());
+                    while ($arSectionParent = $rsSectionsParent->Fetch()) {
+                        $arFields['IBLOCK_SECTION_ID'] = $arSectionParent["ID"];
+                        break;
+                    }
+                }
+
+                if ($ID = $bs->Add($arFields)) {
+                    //pre($ID);
+                } else {
+                    //pre("Error: ".$bs->LAST_ERROR);
+                }
+                $i++;
+                $addCount++;
             }
-            return $measure;
         }
-    }
 
-    /**
-     * @param $name
-     * @param $catalog
-     * @return mixed
-     */
-    function imgProduct($name, $catalog)
-    {
-        $catPic = str_replace("\\", "/", $catalog);
-        $imgProduct = \CFile::MakeFileArray("https://epgshop.ru/upload/orders/pictures/" . $catPic . "/" . $name);
-        return $imgProduct;
-    }
+        echo $i;
 
-    /**
-     * @param $value
-     * @param $IBLOCK_ID__BRAND
-     * @return array|bool|false
-     * @throws \Bitrix\Main\ArgumentException
-     * @throws \Bitrix\Main\ObjectPropertyException
-     * @throws \Bitrix\Main\SystemException
-     */
-    function brandID($value, $IBLOCK_ID__BRAND)
-    {
-        $brandID = \CIBlockElement::GetList(array(), array('XML_ID' => (string)$value, 'IBLOCK_ID' => $IBLOCK_ID__BRAND), false, false, array('ID', 'NAME', 'XML_ID'))->Fetch();
-        if ($brandID['ID'] > 0) {
-            return $brandID;
-        }
-    }
+        echo 'Добавлено Всего ' . $addCount . ' элементов<br>';
+        echo 'Обновлено Всего ' . $updateCount . ' элементов<br>';
+        echo 'Всего ' . $i . ' элементов<br>';
 
+        echo "Памяти использовано " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
+        echo "Времени использовано " . ((time() - $time) / 60) . " мин";
+    }
 
     /**
      * @param $IBLOCK_ID__CATALOG
@@ -120,10 +157,6 @@ class CEpgShopExchange
             $arProductProps["MEAPACK"] = $good["ЕдиницаИзмеренияВУпаковке"];
             $arProductProps["ARTNUMBER"] = $good["АртикулТовара"];
             $arProductProps["VIDEO_URL"] = $good["videolink"];
-
-//            if ($good["videolink"] != "") {
-//                $arProductProps["VIDEO_URL"] = $good["videolink"];
-//            }
 
             if ($good["ЦенаРаспродажи"] != "0,00") {
                 $arProductProps["MINIMUM_PRICE"] = str_replace(',', '.', $good["ЦенаРаспродажи"]);
@@ -254,4 +287,155 @@ class CEpgShopExchange
         echo "Затрачено памяти: " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
         echo "Затрачено времени: " . ((time() - $time)) . " сек";
     }
+
+    /**
+     * @param $value
+     * @return string
+     */
+    function measure($value)
+    {
+        if (strlen($value) > 0) {
+            $arItemProps["EDINICY"] = $value;
+            if ($arItemProps["EDINICY"] == "шт.") {
+                $measure = "5";
+            } elseif ($arItemProps["EDINICY"] == "л") {
+                $measure = "2";
+            } elseif ($arItemProps["EDINICY"] == "уп.") {
+                $measure = "7";
+            } elseif ($arItemProps["EDINICY"] == "комп.") {
+                $measure = "6";
+            } else {
+                $measure = "5";
+            }
+            return $measure;
+        }
+    }
+
+    /**
+     * @param $name
+     * @param $catalog
+     * @return mixed
+     */
+    function imgProduct($name, $catalog)
+    {
+        $catPic = str_replace("\\", "/", $catalog);
+        $imgProduct = \CFile::MakeFileArray("https://epgshop.ru/upload/orders/pictures/" . $catPic . "/" . $name);
+        return $imgProduct;
+    }
+
+    /**
+     * @param $value
+     * @param $IBLOCK_ID__BRAND
+     * @return array|bool|false
+     * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\ObjectPropertyException
+     * @throws \Bitrix\Main\SystemException
+     */
+    function brandID($value, $IBLOCK_ID__BRAND)
+    {
+        $brandID = \CIBlockElement::GetList(array(), array('XML_ID' => (string)$value, 'IBLOCK_ID' => $IBLOCK_ID__BRAND), false, false, array('ID', 'NAME', 'XML_ID'))->Fetch();
+        if ($brandID['ID'] > 0) {
+            return $brandID;
+        }
+    }
+
+    /**
+     * @param $IBLOCK_ID_BRAND
+     */
+    function importBrands($IBLOCK_ID_BRAND)
+    {
+        \Bitrix\Main\Loader::includeModule('iblock');
+
+        $time = time();
+        $count_update = 0;
+        $count_add = 0;
+        $count = 0;
+
+        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/brand.xml");
+        $brandsArray = new SimpleXMLElement($fileContent);
+
+        foreach ($brandsArray->Элемент as $key => $brand) {
+            $arItem = [
+                "MODIFIED_BY" => 1,
+                "IBLOCK_ID" => $IBLOCK_ID_BRAND,
+                "ACTIVE" => "Y"
+            ];
+
+            $element = new \CIBlockElement;
+
+            $arItem['NAME'] = (string)$brand['Бренд'];
+            $arItem['XML_ID'] = (string)$brand['КодБренда'];
+            $arItem['CODE'] = (string)$brand['КодБренда'];
+
+            $brandID = \CIBlockElement::GetList(
+                [],
+                ['XML_ID' => $arItem["XML_ID"], 'IBLOCK_ID' => $IBLOCK_ID_BRAND],
+                false,
+                false,
+                ['ID', 'NAME', 'CODE']
+            )->Fetch();
+            if ($brandID['ID']) {
+                // Обновляем товар без дополнительных свойств
+                if ($res_upd = $element->Update($brandID['ID'], $arItem)) {
+                    $count_update++;
+                } else {
+                    //print_r("Error: ".$element->LAST_ERROR);
+                }
+            } else {
+                if ($res_new = $element->Add($arItem)) {
+                    $count_add++;
+                } else {
+                    //print_r("Error: ".$element->LAST_ERROR);
+                }
+            }
+            $count++;
+        }
+
+        echo 'Всего ' . $count . ' элементов<br>';
+        echo 'Добавлено Всего ' . $count_add . ' элементов<br>';
+        echo 'Обновлено Всего ' . $count_update . ' элементов<br>';
+        echo "Памяти использовано " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
+        echo "Времени использовано " . ((time() - $time) / 60) . " мин";
+    }
+
+    /**
+     * @param $IBLOCK_ID__CATALOG
+     */
+    function importAmount($IBLOCK_ID__CATALOG)
+    {
+        //\Bitrix\Main\Loader::includeModule('iblock');
+
+        $time = time();
+        $fileAmount = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/remains_of_goods.xml");
+        $goodsAmount = new SimpleXMLElement($fileAmount);
+        $count = 0;
+
+        $arLoadProductArray = array(
+            "MODIFIED_BY" => 1,
+            "IBLOCK_ID" => $IBLOCK_ID__CATALOG,
+            "ACTIVE" => "Y"
+        );
+
+        foreach ($goodsAmount as $amount) {
+            $amountID = \CIBlockElement::GetList(array(), array('XML_ID' => $amount['КодТовара'], 'IBLOCK_ID' => $IBLOCK_ID__CATALOG), false, false, array('ID'))->Fetch();
+            $arFields = array(
+                'ID' => $amountID['ID'],
+                'QUANTITY' => (string)$amount["КоличествоНаСкладе"],
+                'QUANTITY_RESERVED' => (string)$amount["КоличествоВРезерве"],
+            );
+            \CCatalogProduct::Add($arFields);
+            \CCatalogStoreProduct::UpdateFromForm(array("PRODUCT_ID" => $amountID['ID'], "STORE_ID" => 1, "AMOUNT" => (string)$amount["КоличествоНаСкладе"]));
+            $count++;
+        }
+
+        $index = \Bitrix\Iblock\PropertyIndex\Manager::createIndexer(3);
+        $index->startIndex();
+        $index->continueIndex(0);
+        $index->endIndex();
+
+        echo 'Всего ' . $count . ' элементов<br>';
+        echo "Памяти использовано " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
+        echo "Времени использовано " . ((time() - $time) / 60) . " мин";
+    }
+
 }

@@ -10,6 +10,7 @@
   "require": {
     "php": ">=7.2.0",
     "kint-php/kint": "dev-master",
+    "alexxxnf/nf_pp": "dev-master",
     "maximaster/tools.events": "dev-master",
     "mobiledetect/mobiledetectlib": "^2.8"
   },

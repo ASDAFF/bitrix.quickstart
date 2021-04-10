@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
 {
     public static $files = array (
+        '0404120aac9ef17a3115b87c42993ca8' => __DIR__ . '/..' . '/alexxxnf/nf_pp/nf_pp.php',
         '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
     );
 

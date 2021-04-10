@@ -4,20 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb09ad5a4f522f2c8ead18df10e33460",
+    "content-hash": "a3ebfc09d8d1b47cc1b6c1a8b3017f70",
     "packages": [
+        {
+            "name": "alexxxnf/nf_pp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexxxnf/nf_pp.git",
+                "reference": "e547ecf35b956967a0e131215bf78ea9cab22157"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexxxnf/nf_pp/zipball/e547ecf35b956967a0e131215bf78ea9cab22157",
+                "reference": "e547ecf35b956967a0e131215bf78ea9cab22157",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "nf_pp.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksey Maydokin",
+                    "email": "amaydokin@gmail.com"
+                }
+            ],
+            "description": "Pretty \"print_r\" with some additional features",
+            "homepage": "https://github.com/alexxxnf/nf_pp/",
+            "keywords": [
+                "array",
+                "debug",
+                "dump",
+                "object",
+                "print",
+                "print_r",
+                "var_dump"
+            ],
+            "time": "2015-04-04T19:37:26+00:00"
+        },
         {
             "name": "kint-php/kint",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kint-php/kint.git",
-                "reference": "54edef1c3166ad700c02d595a43b82bb0c02682d"
+                "reference": "46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kint-php/kint/zipball/54edef1c3166ad700c02d595a43b82bb0c02682d",
-                "reference": "54edef1c3166ad700c02d595a43b82bb0c02682d",
+                "url": "https://api.github.com/repos/kint-php/kint/zipball/46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53",
+                "reference": "46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53",
                 "shasum": ""
             },
             "require": {
@@ -25,10 +71,11 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
-                "phpunit/phpunit": "^7.0",
+                "phpspec/prophecy-phpunit": "^2",
+                "phpunit/phpunit": "^9.0",
                 "seld/phar-utils": "^1.0",
                 "symfony/finder": "^3.0 || ^4.0 || ^5.0",
-                "vimeo/psalm": "^3.7"
+                "vimeo/psalm": "dev-master"
             },
             "suggest": {
                 "ext-ctype": "Simple data type tests",
@@ -74,7 +121,7 @@
                 "kint",
                 "php"
             ],
-            "time": "2020-10-31T07:47:49+00:00"
+            "time": "2021-04-06T16:58:12+00:00"
         },
         {
             "name": "maximaster/tools.events",
@@ -120,16 +167,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.34",
+            "version": "2.8.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "6f8113f57a508494ca36acbcfa2dc2d923c7ed5b"
+                "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/6f8113f57a508494ca36acbcfa2dc2d923c7ed5b",
-                "reference": "6f8113f57a508494ca36acbcfa2dc2d923c7ed5b",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/9841e3c46f5bd0739b53aed8ac677fa712943df7",
+                "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +215,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2019-09-18T18:44:20+00:00"
+            "time": "2021-02-19T21:22:57+00:00"
         }
     ],
     "packages-dev": [],
@@ -176,6 +223,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "kint-php/kint": 20,
+        "alexxxnf/nf_pp": 20,
         "maximaster/tools.events": 20
     },
     "prefer-stable": false,

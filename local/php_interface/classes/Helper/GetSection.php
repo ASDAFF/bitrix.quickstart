@@ -24,7 +24,7 @@ class GetSection
      */
     function getSectionList($filter, $select)
     {
-        $dbSection = CIBlockSection::GetList(
+        $dbSection = \CIBlockSection::GetList(
             Array(
                 'LEFT_MARGIN' => 'ASC',
             ),

@@ -22,10 +22,10 @@ class GetBasket
     function getBasketData()
     {
         $result = array();
-        $dbBasketItems = CSaleBasket::GetList(
+        $dbBasketItems = \CSaleBasket::GetList(
             array(),
             array(
-                "FUSER_ID" => CSaleBasket::GetBasketUserID(),
+                "FUSER_ID" => \CSaleBasket::GetBasketUserID(),
                 "LID" => SITE_ID,
                 "ORDER_ID" => "NULL"
             ),
@@ -34,7 +34,7 @@ class GetBasket
             array()
         );
         while ($arItem = $dbBasketItems->Fetch()) {
-            $db_res = CSaleBasket::GetPropsList(
+            $db_res = \CSaleBasket::GetPropsList(
                 array("SORT" => "ASC", "NAME" => "ASC"),
                 array("BASKET_ID" => $arItem["ID"])
             );

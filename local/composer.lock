@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27c13ced65e1c241a6198da89404319a",
+    "content-hash": "4e3807cfa3d96866d311007efa49c682",
     "packages": [
         {
             "name": "alexxxnf/nf_pp",
@@ -230,7 +230,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.2.0",
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "ext-curl": "*"
     },
     "platform-dev": []
 }

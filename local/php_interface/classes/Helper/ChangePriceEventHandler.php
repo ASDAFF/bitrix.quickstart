@@ -1,6 +1,5 @@
 <?php
 
-// namespace Itmit\Events\Handlers;
 namespace Helper;
 
 use Bitrix\Main\Loader;
@@ -45,7 +44,7 @@ class ChangePriceEventHandler
         if (empty($arFields["PRODUCT_IDS"]) && !empty($id)) {
 
             // Запомним ид товаров из акции.
-            $resDiscount = CCatalogDiscount::GetList([], ["ID" => $id]);
+            $resDiscount = \CCatalogDiscount::GetList([], ["ID" => $id]);
             while ($obDiscount = $resDiscount->Fetch()) {
                 self::$_prodsIdsAfterDiscountDelete[] = $obDiscount["PRODUCT_ID"];
             }
@@ -55,8 +54,8 @@ class ChangePriceEventHandler
             foreach ($arFields["PRODUCT_IDS"] as $prod_id) {
 
                 // Нужно для сортировки цены со скидкой.
-                $arPrice = CCatalogProduct::GetOptimalPrice($prod_id, 1, [2], "N", [], "s1");
-                CIBlockElement::SetPropertyValueCode($prod_id, self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
+                $arPrice = \CCatalogProduct::GetOptimalPrice($prod_id, 1, [2], "N", [], "s1");
+                \CIBlockElement::SetPropertyValueCode($prod_id, self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
             }
         }
     }
@@ -71,8 +70,8 @@ class ChangePriceEventHandler
     public function ChangePriceExecute($id, $arFields): void
     {
         // Нужно для сортировки цены со скидкой.
-        $arPrice = CCatalogProduct::GetOptimalPrice($arFields["PRODUCT_ID"], 1, [2], "N", [], "s1");
-        CIBlockElement::SetPropertyValueCode($arFields["PRODUCT_ID"], self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
+        $arPrice = \CCatalogProduct::GetOptimalPrice($arFields["PRODUCT_ID"], 1, [2], "N", [], "s1");
+        \CIBlockElement::SetPropertyValueCode($arFields["PRODUCT_ID"], self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
     }
 
     /**
@@ -89,8 +88,8 @@ class ChangePriceEventHandler
         }
         if (count(self::$_prodsIdsAfterDiscountDelete) > 0) {
             foreach (self::$_prodsIdsAfterDiscountDelete as $prod_id) {
-                $arPrice = CCatalogProduct::GetOptimalPrice($prod_id, 1, [2], "N", [], "s1");
-                CIBlockElement::SetPropertyValueCode($prod_id, self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
+                $arPrice = \CCatalogProduct::GetOptimalPrice($prod_id, 1, [2], "N", [], "s1");
+                \CIBlockElement::SetPropertyValueCode($prod_id, self::$_minPricePropertyCode, $arPrice["DISCOUNT_PRICE"]);
             }
         }
     }

@@ -11,8 +11,13 @@ namespace Helper\User;
 
 use Bitrix\Main\Loader, Helper\CCheckINN;
 
+/**
+ * Class CUserRegistration
+ * @package Helper\User
+ */
 class CUserRegistration
 {
+
 
     /**
      * @param $arFields
@@ -20,7 +25,6 @@ class CUserRegistration
      * @throws \Bitrix\Main\ArgumentException
      * @throws \Bitrix\Main\ObjectPropertyException
      * @throws \Bitrix\Main\SystemException
-     * @throws \Helper\Exception
      */
     function OnBeforeUserRegisterCheckINN(&$arFields)
     {
@@ -36,11 +40,12 @@ class CUserRegistration
 
     }
 
+
     /**
      * @param $arFields
      * @return mixed
-     * @throws Exception
      * @throws \Bitrix\Main\ArgumentException
+     * @throws \Bitrix\Main\LoaderException
      * @throws \Bitrix\Main\ObjectPropertyException
      * @throws \Bitrix\Main\SystemException
      */
@@ -64,14 +69,11 @@ class CUserRegistration
         return $arFields;
     }
 
+
     /**
      * @param $inn
      * @param $user
-     * @throws Exception
-     * @throws \Bitrix\Main\ArgumentException
      * @throws \Bitrix\Main\LoaderException
-     * @throws \Bitrix\Main\ObjectPropertyException
-     * @throws \Bitrix\Main\SystemException
      */
     function addContractor($inn, $user)
     {
@@ -79,8 +81,9 @@ class CUserRegistration
         // добавляем нового контрагента
         // и добавляем его к пользователю
         Loader::includeModule("highloadblock");
-        $hlblock = Bitrix\Highloadblock\HighloadBlockTable::getById(2)->fetch();
-        $ent = Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hlblock);
+
+        $hlblock = \Bitrix\Highloadblock\HighloadBlockTable::getById(2)->fetch();
+        $ent = \Bitrix\Highloadblock\HighloadBlockTable::compileEntity($hlblock);
         $entity_data_class = $ent->getDataClass();
 
 

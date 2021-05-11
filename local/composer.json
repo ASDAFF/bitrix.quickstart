@@ -13,7 +13,8 @@
     "alexxxnf/nf_pp": "dev-master",
     "maximaster/tools.events": "dev-master",
     "mobiledetect/mobiledetectlib": "^2.8",
-    "ext-simplexml": "*"
+    "ext-simplexml": "*",
+    "ext-curl": "*"
   },
   "autoload": {
     "psr-4": {

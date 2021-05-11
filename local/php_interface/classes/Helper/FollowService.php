@@ -87,7 +87,7 @@ class FollowService
             throw new InvalidArgumentException("Не корректный ид товара.");
         }
         $userId = $this->user->GetID();
-        $res = CUser::GetByID($userId);
+        $res = \CUser::GetByID($userId);
         $userFields = $res->Fetch();
         
         if (is_array($userFields)) {
@@ -134,7 +134,7 @@ class FollowService
             throw new InvalidArgumentException("Не корректный ид товара.");
         }
         $userId = $this->user->GetID();
-        $res = CUser::GetByID($userId);
+        $res = \CUser::GetByID($userId);
         $userFields = $res->Fetch();
         
         if (is_array($userFields)) {

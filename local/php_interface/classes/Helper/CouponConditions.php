@@ -17,10 +17,10 @@ class CouponConditions
      *
      * @return bool
      */
-    public static function toString (array $coupon)
+    public static function toString(array $coupon)
     {
 
-        if ( ! isset($coupon['MODULE_ID'])) {
+        if (!isset($coupon['MODULE_ID'])) {
             return false;
         }
 
@@ -29,9 +29,9 @@ class CouponConditions
         // пока только скидки корзины
         if ($coupon['MODULE_ID'] == 'sale') {
 
-            $arDiscount = CSaleDiscount::GetByID($coupon['DISCOUNT_ID']);
+            $arDiscount = \CSaleDiscount::GetByID($coupon['DISCOUNT_ID']);
 
-            $arControls = CSaleCondCtrlBasketGroup::GetControls();
+            $arControls = \CSaleCondCtrlBasketGroup::GetControls();
 
             $arConditions = unserialize($arDiscount['CONDITIONS']);
 
@@ -55,8 +55,6 @@ class CouponConditions
 
             }
         }
-
-     return    $arMessage;
-
+        return $arMessage;
     }
 }

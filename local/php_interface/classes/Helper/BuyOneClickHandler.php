@@ -76,6 +76,7 @@ class BuyOneClickHandler extends BaseHandler
         return $userId;
     }
 
+
     /**
      * @return int
      */
@@ -106,6 +107,7 @@ class BuyOneClickHandler extends BaseHandler
         return $userId;
     }
 
+
     /**
      * @param $productId
      * @return array
@@ -113,7 +115,7 @@ class BuyOneClickHandler extends BaseHandler
     private function GetProductFields($productId)
     {
         $productFields = [];
-        $res = CIBlockElement::GetList(
+        $res = \CIBlockElement::GetList(
             [],
             ['IBLOCK' => 2, 'ID' => $productId],
             false,

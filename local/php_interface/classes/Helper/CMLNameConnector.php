@@ -43,7 +43,7 @@ namespace Helper;
 		}
 
 		function translit($s){
-			return CUtil::translit($s, LANGUAGE_ID, array(
+			return \CUtil::translit($s, LANGUAGE_ID, array(
 				"max_len" => 50,
 				"change_case" => 'U', // 'L' - toLower, 'U' - toUpper, false - do not change
 				"replace_space" => '-',

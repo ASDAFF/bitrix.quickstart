@@ -130,7 +130,7 @@ class FavoritesManager
      */
     private function GetUserData($userId)
     {
-        $res = CUser::GetByID($userId);
+        $res = \CUser::GetByID($userId);
         $arUser = $res->Fetch();
         return $arUser;
     }

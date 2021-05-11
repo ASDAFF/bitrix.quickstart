@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3ebfc09d8d1b47cc1b6c1a8b3017f70",
+    "content-hash": "27c13ced65e1c241a6198da89404319a",
     "packages": [
         {
             "name": "alexxxnf/nf_pp",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/alexxxnf/nf_pp.git",
+                "url": "git@github.com:alexxxnf/nf_pp.git",
                 "reference": "e547ecf35b956967a0e131215bf78ea9cab22157"
             },
             "dist": {
@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kint-php/kint.git",
-                "reference": "46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53"
+                "reference": "26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kint-php/kint/zipball/46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53",
-                "reference": "46878c5cb94e5f76c5f49e81cbd1cb15c4fb4d53",
+                "url": "https://api.github.com/repos/kint-php/kint/zipball/26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96",
+                "reference": "26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96",
                 "shasum": ""
             },
             "require": {
@@ -121,7 +121,7 @@
                 "kint",
                 "php"
             ],
-            "time": "2021-04-06T16:58:12+00:00"
+            "time": "2021-05-02T20:47:52+00:00"
         },
         {
             "name": "maximaster/tools.events",
@@ -229,7 +229,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.0"
+        "php": ">=7.2.0",
+        "ext-simplexml": "*"
     },
     "platform-dev": []
 }

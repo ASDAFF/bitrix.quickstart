@@ -12,7 +12,8 @@
     "kint-php/kint": "dev-master",
     "alexxxnf/nf_pp": "dev-master",
     "maximaster/tools.events": "dev-master",
-    "mobiledetect/mobiledetectlib": "^2.8"
+    "mobiledetect/mobiledetectlib": "^2.8",
+    "ext-simplexml": "*"
   },
   "autoload": {
     "psr-4": {

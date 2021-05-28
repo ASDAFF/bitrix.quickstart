@@ -312,6 +312,8 @@ class CEpgShopExchange
             $arItemProps["EDINICY"] = $value;
             if ($arItemProps["EDINICY"] == "шт.") {
                 $measure = "5";
+            } elseif ($arItemProps["EDINICY"] == "кг") {
+                $measure = "4";
             } elseif ($arItemProps["EDINICY"] == "л") {
                 $measure = "2";
             } elseif ($arItemProps["EDINICY"] == "уп.") {

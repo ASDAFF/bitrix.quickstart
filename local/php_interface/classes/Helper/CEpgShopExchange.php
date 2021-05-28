@@ -533,9 +533,9 @@ class CEpgShopExchange
     }
 
     /**
-     * @param $IBLOCK_ID_BRAND
+     * @param $IBLOCK_ID__BRAND
      */
-    function importBrands($IBLOCK_ID_BRAND)
+    function importBrands($IBLOCK_ID__BRAND)
     {
         \Bitrix\Main\Loader::includeModule('iblock');
 
@@ -550,7 +550,7 @@ class CEpgShopExchange
         foreach ($brandsArray->Элемент as $key => $brand) {
             $arItem = [
                 "MODIFIED_BY" => 1,
-                "IBLOCK_ID" => $IBLOCK_ID_BRAND,
+                "IBLOCK_ID" => $IBLOCK_ID__BRAND,
                 "ACTIVE" => "Y"
             ];
 
@@ -563,7 +563,7 @@ class CEpgShopExchange
 
             $brandID = \CIBlockElement::GetList(
                 [],
-                ['XML_ID' => $arItem["XML_ID"], 'IBLOCK_ID' => $IBLOCK_ID_BRAND],
+                ['XML_ID' => $arItem["XML_ID"], 'IBLOCK_ID' => $IBLOCK_ID__BRAND],
                 false,
                 false,
                 ['ID', 'NAME', 'CODE']

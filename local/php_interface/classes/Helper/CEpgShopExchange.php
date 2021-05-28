@@ -363,7 +363,7 @@ class CEpgShopExchange
      */
     function importGoods($IBLOCK_ID__CATALOG, $IBLOCK_ID__BRAND)
     {
-        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/goods___.xml");
+        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/goods.xml");
         $time = time();
         $goodsArray = new SimpleXMLElement($fileContent);
         $curUser = 1;

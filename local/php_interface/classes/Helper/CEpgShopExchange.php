@@ -3,7 +3,10 @@
 namespace Helper;
 
 use SimpleXMLElement;
+use \Bitrix\Iblock;
+use Bitrix\Main\Loader;
 
+Loader::includeModule("iblock");
 
 /**
  * Class CEpgShopExchange

@@ -2,9 +2,8 @@
 
 namespace Helper;
 
-use SimpleXMLElement;
-use \Bitrix\Iblock;
 use Bitrix\Main\Loader;
+use SimpleXMLElement;
 
 Loader::includeModule("iblock");
 
@@ -635,6 +634,116 @@ class CEpgShopExchange
         echo 'Всего ' . $count . ' элементов<br>';
         echo "Памяти использовано " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
         echo "Времени использовано " . ((time() - $time) / 60) . " мин";
+    }
+
+    /**
+     * @param $IBLOCK_ID__CATALOG
+     */
+    function importInfo($IBLOCK_ID__CATALOG)
+    {
+
+        ini_set('memory_limit', '512M');
+
+        $fileContent = file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/upload/orders/in/goods_info.xml");
+        $goodsArray = new SimpleXMLElement($fileContent);
+        $time = time();
+        $curUser = 1;
+        $o = 0;
+
+        $params = array(
+            "max_len" => "100", // обрезает символьный код до 75 символов
+            "change_case" => "L", // буквы преобразуются к нижнему регистру
+            "replace_space" => "-", // меняем пробелы на нижнее подчеркивание
+            "replace_other" => "-", // меняем левые символы на нижнее подчеркивание
+            "delete_repeat_replace" => "true", // удаляем повторяющиеся нижние подчеркивания
+            "use_google" => "false", // отключаем использование google
+        );
+
+        foreach ($goodsArray as $good) {
+            $arLoadProductArray = array(
+                "MODIFIED_BY" => $curUser,
+                "IBLOCK_ID" => $IBLOCK_ID__CATALOG,
+                "ACTIVE" => "Y"
+            );
+
+
+            $arLoadProductPropsArray["BCODE"] = $good["КодТовара"];
+            $arLoadProductArray["DETAIL_TEXT"] = $good["ДополнительноеОписаниеНоменклатуры"];
+            if (strlen($good["ОписаниеHTML"]) > 0) {
+                $arLoadProductArray["DETAIL_TEXT"] = $good["ОписаниеHTML"];
+                $arLoadProductArray["DETAIL_TEXT_TYPE"] = 'html';
+            }
+            $goodID = \CIBlockElement::GetList(array(), array('XML_ID' => trim($good["КодТовара"]), 'IBLOCK_ID' => $IBLOCK_ID__CATALOG), false, false, array('ID', 'DETAIL_TEXT'))->Fetch();
+
+            $additionalProperty = array(
+                array("XML_CODE" => "Н_МощностькВт", "BITRIX_CODE" => "POWER", "TYPE" => "text"),
+                array("XML_CODE" => "Н_НапряжениеВольт", "BITRIX_CODE" => "VOLTAGE", "TYPE" => "text"),
+                array("XML_CODE" => "Н_Индуктор", "BITRIX_CODE" => "INDUCTOR", "TYPE" => "select"),
+                array("XML_CODE" => "Н_Охлаждение", "BITRIX_CODE" => "COOLIANT", "TYPE" => "select"),
+                array("XML_CODE" => "Н_Материал", "BITRIX_CODE" => "MATERIAL", "TYPE" => "select"),
+                array("XML_CODE" => "Н_ДиаметрПроволокиММ", "BITRIX_CODE" => "DIAM_PROVOLOKI", "TYPE" => "text"),
+                array("XML_CODE" => "Н_Плечо", "BITRIX_CODE" => "PLECHO", "TYPE" => "select"),
+                array("XML_CODE" => "Н_Ток", "BITRIX_CODE" => "AMPERAGE", "TYPE" => "select"),
+                array("XML_CODE" => "Н_Охлаждение", "BITRIX_CODE" => "COOLIANT", "TYPE" => "select"),
+                array("XML_CODE" => "Н_ВесКг", "BITRIX_CODE" => "VES", "TYPE" => "text"),
+                array("XML_CODE" => "Н_ДиаметрКатушкиММ", "BITRIX_CODE" => "DIAM_KATUSHKI", "TYPE" => "text"),
+                array("XML_CODE" => "Н_ТипСварочногоАппарата", "BITRIX_CODE" => "TIP_USTR", "TYPE" => "select"),
+                array("XML_CODE" => "Н_ВидСварочногоАппарата", "BITRIX_CODE" => "VID_USTR", "TYPE" => "select"),
+                array("XML_CODE" => "Н_Рукав", "BITRIX_CODE" => "RUKAV", "TYPE" => "select"),
+                array("XML_CODE" => "Н_НаличиеКомпрессора", "BITRIX_CODE" => "COMPRESSOR", "TYPE" => "select"),
+                array("XML_CODE" => "Н_ТолщинаМеталлаММ", "BITRIX_CODE" => "TOLSHINA_METALLE", "TYPE" => "text"),
+                array("XML_CODE" => "Н_ВидИнструмента", "BITRIX_CODE" => "VID_ISNTR", "TYPE" => "select"),
+            );
+
+            foreach ($additionalProperty as $one_property) {
+                if ($good[$one_property["XML_CODE"]]) {
+                    if ($one_property["TYPE"] == "text") {
+                        \CIBlockElement::SetPropertyValuesEx($goodID['ID'], false, array($one_property["BITRIX_CODE"] => $good[$one_property["XML_CODE"]]));
+                    } elseif ($one_property["TYPE"] == "select") {
+                        $property_enums = \CIBlockPropertyEnum::GetList(array("DEF" => "DESC", "SORT" => "ASC"), array("IBLOCK_ID" => $IBLOCK_ID__CATALOG, "CODE" => $one_property["BITRIX_CODE"]));
+                        while ($enum_fields = $property_enums->GetNext()) {
+                            if ($enum_fields["VALUE"] == $good[$one_property["XML_CODE"]]) {
+                                $arPropertyArchive = array(
+                                    $one_property["BITRIX_CODE"] => $enum_fields["ID"],
+                                );
+                            }
+                        }
+                        \CIBlockElement::SetPropertyValuesEx($goodID['ID'], false, $arPropertyArchive);
+                    }
+                }
+            }
+
+            if ($arLoadProductArray["DETAIL_TEXT"] != '') { // если в выгрузке есть текст описания
+
+                if (!empty($goodID['ID'])) { // Если находим товар на сайте
+                    $element = new \CIBlockElement;
+                    //$res_upd = $element->Update($goodID['ID'], $arLoadProductArray); // Обновляем товар без дополнительных свойств
+                    if ($res_upd = $element->Update($goodID['ID'], $arLoadProductArray)) {
+                        //echo "<pre>";print_r($res_upd);echo "</pre>";
+                    } else {
+                        //pre("Error: ".$element->LAST_ERROR);
+                    }
+                }
+
+                if ($good['Н_ВесКг'] > 0 || $good['Н_УпаковкаГлубинаММ'] > 0 || $good['Н_УпаковкаШиринаММ'] > 0 || $good['Н_УпаковкаВысотаММ'] > 0) {
+                    $product = new \CCatalogProduct;
+                    if (!empty($goodID['ID'])) {
+                        if ($res_upd_product = $product->Update($goodID['ID'], array("WEIGHT" => ($good['Н_ВесКг'] * 1000), "LENGTH" => $good['Н_УпаковкаГлубинаММ'], "WIDTH" => $good['Н_УпаковкаШиринаММ'], "HEIGHT" => $good['Н_УпаковкаВысотаММ']))) {
+                        } else {
+                            //pre("Error: ".$product->LAST_ERROR);
+                        }
+                    }
+                }
+
+
+                $o++;
+                unset($arLoadProductArray);
+            }
+        }
+        echo "Добавили описание к товарам: " . $o . "<br />";
+        echo "Памяти использовано " . round(memory_get_usage() / 1024 / 1024, 2) . " MB<br>";
+        echo "Времени использовано " . ((time() - $time) / 60) . " мин";
+
     }
 
 }

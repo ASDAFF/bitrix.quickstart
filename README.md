@@ -16,10 +16,10 @@ _Проект предполагает широкое использование
 ```md
 auth/
 bitrix/
-├── php_interface/
-│   ├── this_site_support.php
-│   └── include/
-│         └── site_closed.php
+    ├── php_interface/
+       ├── this_site_support.php
+       └── include/
+             └── site_closed.php
 favicons/
 includes/
     └── pages/
@@ -31,48 +31,48 @@ includes/
     ├── header.php
     └── html.php
 local/ 
-├── assets/
-│   ├── backend/
-│   │   ├── css/
-│   │   ├── images/
-│   │   ├── js/
-│   │   └── bower_components/
-│   ├── css/
-│   ├── fonts/
-│   ├── frontend/
-│   │   └── sass/
-│   ├── images/
-│   ├── js/
-│   ├── lib/
-│   └── bower.json
-│
-├── components/
-│
-├── gadgets/
-├── logs/
-├── modules/
-├── php_interface/
-│   ├── classes
-│   │     └── Autoloader.php
-│   ├── config
-│   │     ├── backend.php
-│   │     ├── const.php
-│   │     ├── events.php
-│   │     └── frontend.php
-│   │
-│   ├── include
-│   │     ├── events/
-│   │     └── handlers.php
-│   │
-│   ├── admin_header.php
-│   └── init.php
-│
-└── templates/
-    ├── .default/
-    │   ├── components/
-    │   └── page_templates/
-    │       └── standard.php
-    └── rename_me/
+    ├── assets/
+    │   ├── backend/
+    │   │   ├── css/
+    │   │   ├── images/
+    │   │   ├── js/
+    │   │   └── bower_components/
+    │   ├── css/
+    │   ├── fonts/
+    │   ├── frontend/
+    │   │   └── sass/
+    │   ├── images/
+    │   ├── js/
+    │   ├── lib/
+    │   └── bower.json
+    │
+    ├── components/
+    │
+    ├── gadgets/
+    ├── logs/
+    ├── modules/
+    ├── php_interface/
+    │   ├── classes
+    │   │     └── Autoloader.php
+    │   ├── config
+    │   │     ├── backend.php
+    │   │     ├── const.php
+    │   │     ├── events.php
+    │   │     └── frontend.php
+    │   │
+    │   ├── include
+    │   │     ├── events/
+    │   │     └── handlers.php
+    │   │
+    │   ├── admin_header.php
+    │   └── init.php
+    │
+    └── templates/
+        ├── .default/
+        │   ├── components/
+        │   └── page_templates/
+        │       └── standard.php
+        └── rename_me/
 personal/
 search/
 .htaccess_example

@@ -1,0 +1,1 @@
+<?$arTemplate = array("NAME"=>"Вишлисты", "DESCRIPTION"=>"Шаблон страницы вишлистов");?>

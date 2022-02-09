@@ -1,0 +1,32 @@
+<?
+$MESS ['DEFAULT'] = "< défaut >";
+$MESS ['TAB_1_TITLE'] = "Paramètres du niveau d'accès";
+$MESS ['RECORD_LIST'] = "Niveaux d'accès";
+$MESS ['TBL_GROUP_DATE'] = "Période active";
+$MESS ['ADD'] = "Ajouter";
+$MESS ['MAIN_NEW_RECORD'] = "Ajouter";
+$MESS ['NEW_TASK_TITLE'] = "Ajouter un niveau d'accès";
+$MESS ['MAIN_NEW_RECORD_TITLE'] = "Ajoute un nouveau niveau d'accès";
+$MESS ['MAIN_DELETE_RECORD_CONF'] = "Sur de supprimer le niveau d'accès&nbsp;?";
+$MESS ['TASK_BINDING'] = "Liaison";
+$MESS ['MAIN_COPY_RECORD'] = "Copie";
+$MESS ['MAIN_DELETE_RECORD'] = "Supprimer";
+$MESS ['MAIN_DELETE_RECORD_TITLE'] = "Supprime le niveau d'accès en cours";
+$MESS ['DESCRIPTION'] = "Description&nbsp;:";
+$MESS ['RECORD_LIST_TITLE'] = "Affiche tous les niveaux d'accès";
+$MESS ['MAIN_COPY_RECORD_TITLE'] = "Duplifie le niveau d'accès en cours";
+$MESS ['EDIT_TASK_TITLE'] = "Éditer les niveaux d'accès pour # #ID#";
+$MESS ['TASK_SAVE_ERROR'] = "Erreur à l'enregistrement de la tâche";
+$MESS ['TASK_BINDING_FILE'] = "Fichier / dossier";
+$MESS ['SYS_TITLE'] = "Est le système";
+$MESS ['KERNEL'] = "Module noyau";
+$MESS ['LETTER'] = "Lettre";
+$MESS ['TASK_BINDING_MODULE'] = "Module";
+$MESS ['MODULE_ID'] = "Module&nbsp;:";
+$MESS ['NAME'] = "Nom&nbsp;:";
+$MESS ['TAB_2'] = "Opérations";
+$MESS ['TAB_1'] = "Paramètres";
+$MESS ['RESET'] = "Réinitialiser";
+$MESS ['SAVE'] = "Enregistrer les modifications";
+$MESS ['STRING_ID'] = "ID symbolique&nbsp;:";
+?>

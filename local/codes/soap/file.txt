@@ -1,0 +1,79 @@
+array (
+  'ACTIVE' => 'Y',
+  'MODIFIED_BY' => '1',
+  'ACTIVE_FROM' => '',
+  'ACTIVE_TO' => '',
+  'SORT' => '500',
+  'NAME' => 'test',
+  'CODE' => 'test',
+  'TAGS' => '',
+  'PREVIEW_TEXT' => '',
+  'PREVIEW_TEXT_TYPE' => 'text',
+  'DETAIL_TEXT' => '',
+  'DETAIL_TEXT_TYPE' => 'text',
+  'TMP_ID' => 0,
+  'PROPERTY_VALUES' => 
+  array (
+    19 => 
+    array (
+      12405 => 
+      array (
+        'VALUE' => '902',
+      ),
+      'n0' => 
+      array (
+        'VALUE' => '872',
+      ),
+      'n1' => 
+      array (
+        'VALUE' => '',
+      ),
+      'n2' => 
+      array (
+        'VALUE' => '',
+      ),
+      'n3' => 
+      array (
+        'VALUE' => '',
+      ),
+      'n4' => 
+      array (
+        'VALUE' => '',
+      ),
+    ),
+  ),
+  'IBLOCK_SECTION' => 
+  array (
+  ),
+  'WF' => 'N',
+  'SEARCHABLE_CONTENT' => 'TEST
+
+',
+  'PREVIEW_PICTURE' => 
+  array (
+    'name' => '',
+    'type' => '',
+    'tmp_name' => '',
+    'error' => 4,
+    'size' => 0,
+    'del' => NULL,
+    'description' => NULL,
+    'MODULE_ID' => 'iblock',
+    'old_file' => NULL,
+  ),
+  'DETAIL_PICTURE' => 
+  array (
+    'name' => '',
+    'type' => '',
+    'tmp_name' => '',
+    'error' => 4,
+    'size' => 0,
+    'del' => NULL,
+    'description' => NULL,
+    'MODULE_ID' => 'iblock',
+    'old_file' => NULL,
+  ),
+  'ID' => 1497,
+  'IBLOCK_ID' => '5',
+  'RESULT' => true,
+)

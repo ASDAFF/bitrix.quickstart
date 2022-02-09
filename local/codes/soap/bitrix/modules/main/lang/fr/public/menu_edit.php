@@ -1,0 +1,30 @@
+<?
+$MESS ['MENU_EDIT_JS_NONAME'] = "--- aucune valeur ---";
+$MESS ['MENU_EDIT_TITLE_ADD'] = "Ajouter des éléments de menu";
+$MESS ['MENU_EDIT_ADDITIONAL_LINK'] = "Liens supplémentaires à rehausser";
+$MESS ['MENU_EDIT_EXT'] = "Options étendues";
+$MESS ['MENU_EDIT_CANCEL'] = "Annuler";
+$MESS ['MENU_EDIT_CANCEL_TITLE'] = "Annuler les modifications du menu";
+$MESS ['MENU_EDIT_TOOLTIP_LINK_EDIT'] = "Cliquer pour éditer un lien d'une case de menu";
+$MESS ['MENU_EDIT_TOOLTIP_TEXT_EDIT'] = "Cliquer pour éditer un nom d'une case de menu";
+$MESS ['MENU_EDIT_CLOSE'] = "fermer la fenêtre";
+$MESS ['MENU_EDIT_CONDITION_TYPE'] = "Type de condition&nbsp;:";
+$MESS ['MENU_EDIT_CONDITION'] = "Condition&nbsp;:";
+$MESS ['MENU_EDIT_DEL'] = "Supprimer";
+$MESS ['MENU_EDIT_TOOLTIP_DELETE'] = "Supprimer un élément du menu";
+$MESS ['MENU_EDIT_TOOLTIP_DRAG'] = "Esquisse de contribution au blog #NAME#";
+$MESS ['MENU_EDIT_OLD_STYLE'] = "Éditer le menu du panneau de gestion";
+$MESS ['MENU_EDIT_TITLE_EDIT'] = "Éditer les éléments de menu";
+$MESS ['MENU_EDIT_ADD_ITEM'] = "Insérer un élément";
+$MESS ['MENU_EDIT_LINK'] = "Lien";
+$MESS ['MENU_EDIT_TITLE'] = "Éditer le menu";
+$MESS ['MENU_EDIT_PARAM_NAME'] = "Nom";
+$MESS ['MENU_EDIT_NAME'] = "Nom&nbsp;:";
+$MESS ['MENU_EDIT_TOOLTIP_FD'] = "Ouvrir le dialogue pour parcourir un fichier";
+$MESS ['MENU_EDIT_PARAMS'] = "Paramètres&nbsp;:";
+$MESS ['MENU_EDIT_SAVE'] = "Enregistrer";
+$MESS ['MENU_EDIT_SAVE_TITLE'] = "Enregistrer les modifications au menu";
+$MESS ['MENU_EDIT_SORT'] = "Tri";
+$MESS ['MENU_EDIT_PARAM_VALUE'] = "Valeur";
+$MESS ['MENU_EDIT_SESSION_EXPIRED'] = "Expiration de votre session. Veuillez enregistrer votre document à nouveau.";
+?>

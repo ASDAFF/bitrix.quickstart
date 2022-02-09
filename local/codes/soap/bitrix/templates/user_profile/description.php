@@ -1,0 +1,1 @@
+<?$arTemplate = array("NAME"=>"Профиль пользователя", "DESCRIPTION"=>"");?>

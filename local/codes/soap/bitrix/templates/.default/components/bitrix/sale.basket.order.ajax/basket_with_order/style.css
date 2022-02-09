@@ -1,0 +1,65 @@
+table.cart-items { 
+	width: 100%; 
+}
+table.cart-items td {
+	border-bottom: 1px solid; 
+	white-space: nowrap; 
+	text-align:center; 
+	padding: 0.5em;
+}
+table.cart-items td.cart-item-price {  
+	text-align: right;
+}
+table.cart-items td.cart-item-name { 
+	white-space: normal; 
+	text-align: left;
+}
+
+span.sof-req {
+	color:red;
+}
+table.sale_order_full_table {
+	width: 100%;
+}
+table.sale_order_full_table input, table.sale_order_full_table select, table.sale_order_full_table textarea {
+	margin-bottom: 7px;
+}
+div.order_props_title {
+	background-color: #E6E6E6;
+	font-size: 12px;
+	margin-top:10px;
+}
+div.order_props_title div {
+	padding: 2px 12px;
+	color:#000;
+	font-weight: bold;
+}
+div.order_props {
+	padding: 10px;
+	border: 1px solid #F7F7F7;
+	border-top: none;
+	margin-bottom: 20px;
+}
+div.desc {
+	font-size: 11px;
+	margin:0 0 5px 0;
+	color:#777;
+}
+div.show_form {
+	width: 100%;
+	text-align: center;
+	margin:15px 0;
+}
+div.order_submit {
+	width: 100%;
+	text-align: center;
+}
+div.notetext {
+	background-color: #FFFEEB;
+	border-color: #FFD482;
+	padding: 0.4em 1.117em;
+}
+
+td.cart-item-itog p {
+	text-align: right;
+}

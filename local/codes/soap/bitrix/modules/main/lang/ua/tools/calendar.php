@@ -1,0 +1,31 @@
+<?
+$MESS["calend_mar"] = "Березень";
+$MESS["calend_sep"] = "Вересень";
+$MESS["calend_date"] = "Вставити дату";
+$MESS["calend_tu"] = "Вт";
+$MESS["calend_des"] = "Грудень";
+$MESS["calend_okt"] = "Жовтень";
+$MESS["calend_title"] = "Календар";
+$MESS["calend_apr"] = "Квітень";
+$MESS["calend_jul"] = "Липень";
+$MESS["calend_nov"] = "Листопад";
+$MESS["calend_feb"] = "Лютий";
+$MESS["calend_next_mon"] = "Наступний місяць";
+$MESS["calend_next_year"] = "Наступний рік";
+$MESS["calend_su"] = "Нд";
+$MESS["calend_curr"] = "Перейти до поточного місяцю";
+$MESS["calend_per_mon"] = "Період: місяць";
+$MESS["calend_per_year"] = "Період: рік";
+$MESS["calend_per_week"] = "Період: тиждень";
+$MESS["calend_mo"] = "Пн";
+$MESS["calend_prev_mon"] = "Попередній місяць";
+$MESS["calend_prev_year"] = "Попередній рік";
+$MESS["calend_fr"] = "Пт";
+$MESS["calend_sa"] = "Сб";
+$MESS["calend_aug"] = "Серпень";
+$MESS["calend_jan"] = "Січень";
+$MESS["calend_we"] = "Ср";
+$MESS["calend_may"] = "Травень";
+$MESS["calend_jun"] = "Червень";
+$MESS["calend_th"] = "Чт";
+?>

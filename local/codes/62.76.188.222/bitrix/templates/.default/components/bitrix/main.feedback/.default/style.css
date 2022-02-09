@@ -1,0 +1,7 @@
+div.mfeedback {}
+.mf-text{padding-bottom: 6px;} 
+div.mf-name, div.mf-email, div.mf-captcha, div.mf-message {width:60%; padding-bottom:0.4em;}
+div.mf-name input, div.mf-email input, div.mf-captcha input {width:60%;}
+div.mf-message textarea {width: 60%;}
+span.mf-req {color:red;}
+div.mf-ok-text {color:green; font-weight:bold; padding-bottom: 1em;}

@@ -1,0 +1,81 @@
+.crm-block-cont-right-wrap-item{max-height:257px; overflow-y:auto; overflow-x:hidden;}
+.crm-block-cont-right-item{min-height:1px; padding:0 3px 10px 0; zoom: 1;}
+.crm-block-cont-right-item .crm-block-cont-right-title{border-bottom:1px solid #dcdcdc; color:#7a7a7a; display:block; font-size:11px; font-weight:normal; margin-left:2px; padding:0 0 3px 4px;}
+.crm-added-item .crm-block-cont-right-title{margin-bottom:11px;}
+.crm-block-cont-right-item > span{color:#000; display:block;  padding:0 0 5px 16px; zoom: 1;}
+.crm-block-cont-right-item > span a{color:#000!important;  text-decoration:none!important;}
+.crm-block-cont-right-item a:hover{color:#000; text-decoration:underline!important;}
+.crm-block-cont-right-item span i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat 0 -283px; cursor:pointer; display:block; margin:1px 0 -2px -16px; float:left; height:13px; width:13px;}
+.crm-block-cont-right-item span i:hover{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -17px -283px;}
+
+.crm-block-cont-tabs-wrap{margin:0 0 7px;}
+.crm-block-cont-tabs-wrap.crm-single-entity{margin:0 0 0px; display:none}
+.crm-block-cont-tabs{display:inline-block; margin-right:3px; padding-left:3px;}
+.crm-block-cont-tabs >span{display:block; cursor:pointer; padding-right:3px;}
+.crm-block-cont-tabs > span > span {color:#000!important; font-weight:bold; line-height:18px; text-decoration:none; display:block; height:19px; padding:0 5px;}
+.crm-block-cont-tabs:hover{background:url('images/crm-sprite.gif') no-repeat 0 -41px; }
+.crm-block-cont-tabs:hover > span{background:url('images/crm-sprite.gif') no-repeat right -41px; }
+.crm-block-cont-tabs:hover > span > span{background:#ececec;}
+.crm-block-cont-tabs.selected{background:url("images/crm-sprite.gif") no-repeat 0 0!important; }
+.crm-block-cont-tabs.selected > span{background:url("images/crm-sprite.gif") no-repeat right 0!important; }
+.crm-block-cont-tabs.selected > span > span{background:url("images/crm-sprite.gif") repeat-x 0 -20px!important; }
+
+.crm-block-cont-block-deal span{display:inline-block; cursor:pointer; vertical-align:top; padding:3px 5px; position:relative; width:170px; max-height: 32px; overflow: hidden;}
+.crm-block-cont-block-deal span i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat; display:none; height:11px; top:5px; right:5px; width:11px; position:absolute;}
+.crm-block-cont-block-deal span ins{text-decoration:none!important;}
+.crm-block-cont-block-deal-selected i{background-position:-19px -583px!important;}
+.crm-block-cont-block-deal span:hover{background-color:#f0f0f0;}
+.crm-block-cont-block-deal span:hover i{background-position:-19px -474px; display:block;}
+.crm-block-cont-block-deal-selected:hover i{background-position:-19px -583px!important; display:block;}
+
+.crm-block-cont-search input{border-top:1px solid #b0b0b0; border-left:1px solid #b0b0b0; border-bottom:1px solid #e2e2e2; border-right:1px solid #e2e2e2; height:15px; padding:2px 0; margin:0 0 7px; width:378px;}
+.crm-block-cont-search-wait{background:url("images/crm-wait.gif") no-repeat 0 0!important; height: 29px; display: block; margin-top: 4px; line-height: 29px; padding-left: 34px}
+.crm-block-cont-search-no-result{height: 29px; display: block; margin-top: 4px; line-height: 29px; padding-left: 7px;}
+
+.crm-block-cont-search-tab{display:inline-block; margin-right:2px;}
+.crm-block-cont-search-tab span{display:inline-block; height:21px; vertical-align:top; width:4px; }
+.crm-block-cont-search-tab a{display:inline-block; color:#000!important; font-weight:bold; line-height:21px; height:21px; padding:0 3px; text-decoration:none; vertical-align:top;}
+.crm-block-cont-search-tab:hover span{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -4px -599px;}
+.crm-block-cont-search-tab:hover span:first-child{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -0px -599px;}
+.crm-block-cont-search-tab:hover a{background:url("/bitrix/js/main/core/images/controls-sprite.png") repeat-x 0 -621px;}
+.crm-block-cont-search-tab.selected span{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -12px -599px!important;}
+.crm-block-cont-search-tab.selected span:first-child{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -8px -599px!important;}
+.crm-block-cont-search-tab.selected a{background:url("/bitrix/js/main/core/images/controls-sprite.png") repeat-x 0 -643px!important;}
+
+.crm-block-cont-blocks-wrap {max-height:170px; min-height:103px; margin-top:7px; overflow:auto; position:relative; }
+.crm-block-cont-item{display:inline-block;  cursor:pointer; overflow:hidden; vertical-align:top;  position:relative;}
+.crm-block-cont-block-lead .crm-block-cont-item{color:#b2b2b2; margin:0 5px 11px 0; height:31px;  width:175px;}
+.crm-block-cont-block-lead .crm-block-cont-contact-info {width:170px;}
+.crm-block-cont-block-contact .crm-block-cont-item{color:#b2b2b2; margin:0 5px 11px 0; height:31px;  width:175px;}
+.crm-block-cont-block-company .crm-block-cont-item{color:#b2b2b2; margin:0 5px 11px 0; height:31px;  width:175px;}
+.crm-block-cont-item:hover{background-color:#f0f0f0;}
+.crm-block-cont-item .crm-avatar{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat scroll 0 -664px transparent; left:3px; top:3px; height:24px; position:absolute; width:24px; display: block; overflow: hidden}
+.crm-block-cont-item i{ display:block; height:11px; top:10px; right:5px; width:11px; position:absolute;}
+.crm-block-cont-item:hover i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -19px -474px;}
+.crm-block-cont-item-selected:hover i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -19px -583px!important;  }
+.crm-block-cont-contact-info{display:inline-block;  float:right;   width:145px;}
+.crm-block-cont-contact-info span{color:#999; font-size:11px;line-height:13px; display:block; white-space:nowrap; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis;}
+.crm-block-cont-contact-info ins {color:#000; display:block; font-size:12px; margin-top:1px; line-height:14px; text-decoration:none!important; white-space:nowrap; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; padding:0;}
+.crm-block-cont-item-selected ins{color:#666!important}
+.crm-block-cont-var-id, .crm-block-cont-var-url { display: none }
+.crm-block-cont-block-company  .crm-block-cont-item .crm-avatar{background:url("images/crm-company.gif") no-repeat; }
+.crm-block-content{font-family:Arial,sans-serif; overflow:hidden; position:relative;}
+.crm-block-content a{outline:none;}
+.crm-box-layout{margin:3px 7px 0 0;}
+
+.crm-single-column.crm-box-layout{margin:3px 2px 0 0 !important;}
+.crm-box-layout td{padding:0; vertical-align:top;}
+.crm-block-cont-right{border:none; height:217px; padding:0 6px 0 4px; width:378px;}
+.crm-block-cont-right{ width:191px;}
+.crm-box-layout .crm-block-cont-right{background-color:#f5f5f5; border:1px solid #e2e2e2; padding:5px 5px 5px 6px;}
+.crm-single-column .crm-block-cont-right{display:none!important;}
+.crm-box-layout .crm-block-cont-left{width:378px; padding:0 11px 0 4px;}
+.crm-box-layout.crm-single-column .crm-block-cont-left{ padding:0 4px 0 4px;}
+table.field_crm { margin-bottom: 3px }
+table.field_crm td.field_crm_entity_type {	vertical-align: top; border-left: 1px solid #c7c7c7; padding-left: 11px;	padding-right: 7px;	text-align: right;	font-weight: bold;	background: none; padding-bottom: 2px}
+table.field_crm td.field_crm_entity {	background: none; padding-bottom: 2px} 
+.crm-button-open a { border-bottom: 1px dashed #0069C4; outline: medium none; text-decoration: none;}
+.crm-button-open a:hover { border-bottom: 1px dashed #E00000;}
+.crm-element-item-delete  {    background: url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat scroll 0 -282px transparent;    cursor: pointer;    display: inline-block;    height: 15px;    margin: 0 8px 0 3px;    vertical-align: middle;    width: 13px;}
+.crm-element-item-delete:hover {    background: url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat scroll -17px -282px transparent; }
+.crm-place-holder {position:absolute; top:0; left:980px; display:none;}

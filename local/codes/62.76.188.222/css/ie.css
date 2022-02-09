@@ -1,0 +1,33 @@
+.b-menu__link, .b-catalog-sort, .b-catalog-sort__active, .b-catalog-list_item,
+.b-catalog-list_item__buy, .b-catalog-sort__link-list.active, .b-page-nav, .b-text,
+.b-button, .m-sidebar-block, .b-detail, .b-catalog-list_table, .b-section-menu-wrapper,
+.b-basket-item-count, .b-compare-added {
+	behavior: url(css/PIE.htc);
+	position: relative;
+}
+.b-search, .b-catalog-list_list, #scrollbarX .scrollbar {
+	behavior: url(css/PIE.htc);
+}
+.nth-child-3n {
+	margin-right: 0;
+}
+.b-social__link {
+	filter: alpha(opacity = 50);
+}
+.b-social__link:hover {
+	filter: alpha(opacity = 100);
+}
+.b-catalog-table-tr__even {
+	background: #fcfcfc;
+}
+.b-detail-header {
+	border-radius: 4px 4px 0 0;
+	behavior: url(css/PIE.htc);
+	position: relative;
+}
+.m-bnt__list {
+	position: absolute !important;
+}
+.b-catalog-table thead tr {
+	background-position: 0 0;
+}

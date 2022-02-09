@@ -1,0 +1,32 @@
+<?
+$MESS["BITRIX_LIVEAPI_SKANIROVANIE_MODULA"] = "Сканирование модуля: ";
+$MESS["BITRIX_LIVEAPI_SKANIROVANIE_ZAVERSE"] = "Сканирование завершено";
+$MESS["BITRIX_LIVEAPI_BYLI_USTANOVLENY_OBN"] = "Были установлены обновления после сканирования модулей! Требуется выполнить повторное сканирование";
+$MESS["BITRIX_LIVEAPI_SKANIROVATQ_MODULI"] = "Сканировать модули";
+$MESS["BITRIX_LIVEAPI_VYBERITE_MODULQ"] = "Выберите модуль";
+$MESS["BITRIX_LIVEAPI_KLASS"] = "класс";
+$MESS["BITRIX_LIVEAPI_ISKATQ_METOD_ILI_KLA"] = "Искать метод или класс";
+$MESS["BITRIX_LIVEAPI_POISK"] = "Поиск";
+$MESS["BITRIX_LIVEAPI_MODULQ"] = "Модуль";
+$MESS["BITRIX_LIVEAPI_METOD"] = "Метод";
+$MESS["BITRIX_LIVEAPI_SOBYTIA_MODULA"] = "События модуля ";
+$MESS["BITRIX_LIVEAPI_SOBYTIE"] = "Событие";
+$MESS["BITRIX_LIVEAPI_VYZYVAETSA"] = "Вызывается";
+$MESS["BITRIX_LIVEAPI_KONSTANTY_MODULA"] = "Константы модуля ";
+$MESS["BITRIX_LIVEAPI_KONSTANTA"] = "Константа";
+$MESS["BITRIX_LIVEAPI_PROVERAETSA"] = "Проверяется";
+$MESS["BITRIX_LIVEAPI_SPISOK_FUNKCIY_I_MET"] = "Список функций и методов модуля ";
+$MESS["BITRIX_LIVEAPI_ISHODNYY_KOD_FAYLA"] = "Исходный код файла";
+$MESS["BITRIX_LIVEAPI_SKANIROVANIE"] = "Сканирование API";
+$MESS["BITRIX_LIVEAPI_MODULA"] = "модуля ";
+$MESS["BITRIX_LIVEAPI_POISK_PO"] = "Поиск по API";
+$MESS["BITRIX_LIVEAPI_AKTUALQNOE_OPISANIE"] = "Актуальное описание API";
+$MESS["BITRIX_LIVEAPI_POISK_PO_VSEM_MODULA"] = "Поиск по всем модулям";
+$MESS["BITRIX_LIVEAPI_GDE_NAYDENO"] = "Где найдено";
+$MESS["BITRIX_LIVEAPI_METOD1"] = "метод";
+$MESS["BITRIX_LIVEAPI_SOBYTIE1"] = "событие";
+$MESS["BITRIX_LIVEAPI_KONSTANTA1"] = "константа";
+$MESS["BITRIX_LIVEAPI_IZMENENIA_API_POSLE"] = "Изменения АПИ после обновления";
+$MESS["BITRIX_LIVEAPI_SOHRANENY_DANNYE_PRO"] = "Сохранены данные прошлого сканирования модулей";
+$MESS["BITRIX_LIVEAPI_POKAZATQ_IZMENENIA"] = "Показать изменения";
+?>

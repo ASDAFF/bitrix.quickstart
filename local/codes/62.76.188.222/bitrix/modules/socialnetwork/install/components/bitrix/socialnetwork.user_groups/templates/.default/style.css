@@ -1,0 +1,50 @@
+.sonet-groups-title-buttons { position: absolute; right: 0; top: 5px; white-space: nowrap; }
+.sonet-groups-create-group-button { display: inline-block; height: 23px; vertical-align: top; }
+.sonet-groups-create-left,
+.sonet-groups-create-text,
+.sonet-groups-create-right { cursor: pointer; display: inline-block; height: 23px; vertical-align: top; }
+.sonet-groups-create-left { background: url("images/group-list-sprite.png") no-repeat 0 -49px; width: 21px; }
+.sonet-groups-create-text { background: url("images/group-list-sprite.png") repeat-x 0 -75px; color: #000; font-size: 12px; height: 20px; padding: 3px 4px 0 6px; }
+* html .sonet-groups-create-text { height: 23px; }
+.sonet-groups-create-right { background: url("images/group-list-sprite.png") no-repeat -22px -49px; width: 7px; }
+
+.sonet-groups-menu-item { cursor: pointer; display: inline-block; margin-right: 5px; text-decoration: none; vertical-align: top; }
+.sonet-groups-menu-items-l,
+.sonet-groups-menu-items-t,
+.sonet-groups-menu-items-r { display: inline-block; height: 20px; vertical-align: top; }
+.sonet-groups-menu-items-l { background: url("images/group-list-sprite.png") no-repeat 50px 30px; height: 20px; width: 5px; }
+.sonet-groups-menu-items-r { background: url("images/group-list-sprite.png") no-repeat 50px 30px; height: 20px; width: 5px; }
+.sonet-groups-menu-items-t { background: url("images/group-list-sprite.png") repeat-x 50px 20px; color: #9F9F9F; font-size: 12px; height: 18px; padding: 2px 3px 0; font-family: Arial,Verdana,Helvetica,sans-serif; }
+* html .sonet-groups-menu-items-t { height: 20px; }
+.sonet-groups-menu-item-active .sonet-groups-menu-items-l { background-position: 0 -99px !important; }
+.sonet-groups-menu-item-active .sonet-groups-menu-items-r { background-position: -6px -99px !important; }
+.sonet-groups-menu-item-active .sonet-groups-menu-items-t { background-position: 0 -124px !important; color: #000; }
+.sonet-groups-menu-item:hover .sonet-groups-menu-items-l { background-position: 0 -145px; }
+.sonet-groups-menu-item:hover .sonet-groups-menu-items-r { background-position: -6px -145px; }
+.sonet-groups-menu-item:hover .sonet-groups-menu-items-t { background-position: 0 -167px; }
+
+.sonet-groups-separator { background: url("images/group-list-sprite.png") no-repeat right -121px #F2F2F2; height: 1px; font-size: 1px; overflow: hidden; margin-top: 7px; }
+.sonet-groups-wrap { font-family: Arial,sans-serif; overflow: hidden; padding-top: 12px; }
+
+.sonet-groups-content-wrap { font-family: Arial, sans-serif; overflow: hidden; padding-top: 12px; }
+.sonet-groups-group-block-shift {margin-left:-3%;}
+.sonet-groups-group-block-shift .navigation, .sonet-groups-group-message {padding-left: 3%;}
+* html .sonet-groups-group-block-shift {margin-left:-25px;}
+.sonet-groups-group-block { display: inline-block; height: 50px; margin-bottom: 20px; padding-left: 3%; overflow: hidden; vertical-align: top; width: 47%; }
+* + html .sonet-groups-group-block { width: 46%; overflow: hidden; position: relative; }
+* html .sonet-groups-group-block { padding-left: 25px; width: 500px; }
+.sonet-groups-group-img { background: url("images/group-list-sprite.png") no-repeat 0 0; border: 1px solid #DBDBDB; display: inline-block; float: left; height: 48px; vertical-align: top; width: 48px; }
+.sonet-groups-group-text { display: block; overflow: hidden; padding-left: 3%; width: 75% }
+* html .sonet-groups-group-text { padding-left: 7px; width: 345px; zoom: 1; }
+.sonet-groups-group-title { display: block; font-size: 15px; margin-bottom: 4px; zoom: 1; }
+.sonet-groups-group-signature { color: #307F28; font-size: 11px; vertical-align: super; }
+.sonet-groups-group-link,
+.sonet-groups-group-link:hover,
+.sonet-groups-group-link:visited,
+.sonet-groups-group-link:active { color: #000!important; font-size: 15px; text-decoration: underline; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.sonet-groups-group-description { display: block; text-overflow: ellipsis; overflow: hidden; font-size: 13px; color: #7F7F7F; white-space: nowrap; zoom: 1; }
+
+.sonet-groups-search { float: right; }
+
+.errortext { cursor: default; display: block; font-size: 14px; color: #ff3c00; width: 550px; border-radius: 2px; padding: 3px 5px; position: relative; text-decoration: none; }
+.sonet-groups-tags-block { padding: 10px 10px}

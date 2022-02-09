@@ -1,0 +1,14 @@
+/*Table*/
+table.table-basket-line
+{
+	padding:3px;
+	font-size:12px;
+}
+
+.basket-line-personal, .basket-line-basket
+{
+	width:16px; height:16px; background-repeat:no-repeat; display:block;
+}
+
+.basket-line-personal {background-image: url(images/personal.gif)}
+.basket-line-basket {background-image: url(images/basket.gif)}

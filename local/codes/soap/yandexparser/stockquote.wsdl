@@ -1,0 +1,46 @@
+<?xml version ='1.0' encoding ='UTF-8' ?>
+<definitions name='StockQuote'
+ targetNamespace='http://example.org/StockQuote'
+ xmlns:tns=' http://example.org/StockQuote '
+ xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+ xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+ xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+ xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+ xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+<message name='sendItemsRequest'>
+ <part name='symbol' type='xsd:string'/>
+</message>
+<message name='sendItemsResponse'>
+ <part name='Result' type='xsd:string'/>
+</message> 
+
+<portType name='StockQuotePortType'>
+ <operation name='sendItems'>
+  <input message='tns:sendItemsRequest'/>
+  <output message='tns:sendItemsResponse'/>
+ </operation>
+</portType>
+
+<binding name='StockQuoteBinding' type='tns:StockQuotePortType'>
+ <soap:binding style='rpc'
+  transport='http://schemas.xmlsoap.org/soap/http'/>
+ <operation name='sendItems'>
+  <soap:operation soapAction='sendItems'/>
+  <input>
+   <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+  </input>
+  <output>
+   <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+    encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+  </output>
+ </operation>
+</binding>
+
+<service name='StockQuoteService'>
+ <port name='StockQuotePort' binding='StockQuoteBinding'>
+  <soap:address location='http://62.76.184.62/yandexparser/server.php'/>
+ </port>
+</service>
+</definitions> 

@@ -1,0 +1,34 @@
+<?
+$MESS["HELP_CONFIRM_DELETE"] = "Ви впевнені, що хочете видалити файл/каталог?";
+$MESS["HELP_FORGOT_FILENAME"] = "Ви забули ввести «Ім'я на диску»";
+$MESS["HELP_DELETE"] = "Видалити";
+$MESS["HELP_KERNEL"] = "Головний модуль";
+$MESS["HELP_TITLE"] = "Допомога";
+$MESS["HELP_ACCESS_DENIED"] = "Доступ заборонений";
+$MESS["HELP_HEADER"] = "Заголовок:";
+$MESS["HELP_CLOSE"] = "Закрити";
+$MESS["HELP_COLLAPSE_ALL"] = "Згорнути всі";
+$MESS["HELP_FILENAME"] = "Ім'я на диску:";
+$MESS["HELP_FOLDER_NOT_EXIST"] = "Каталогу #FOLDER# не існує";
+$MESS["HELP_MOVE_UP"] = "Перемістити вгору";
+$MESS["HELP_MOVE_DOWN"] = "Перемістити вниз";
+$MESS["HELP_BACK"] = "Повернутися";
+$MESS["HELP_DELETE_ERROR"] = "Помилка видалення файлу";
+$MESS["HELP_ERROR_DELETE_FOLDER"] = "Помилка при видаленні каталогу #FOLDER#";
+$MESS["HELP_FOLDER_NOT_EMPTY"] = "Помилка при видаленні каталогу #FOLDER# (каталог не порожній)";
+$MESS["HELP_FILE_SAVE_ERROR"] = "Помилка при збереженні файлу";
+$MESS["HELP_CREATE_FOLDER_ERROR"] = "Помилка при створенні каталогу";
+$MESS["HELP_CURRENT_FOLDER"] = "Поточний каталог:";
+$MESS["HELP_SEARCH"] = "Пошук";
+$MESS["HELP_EDIT"] = "Редагувати";
+$MESS["HELP_EXPAND_ALL"] = "Розгорнути всі";
+$MESS["HELP_TREE"] = "Синхронізувати зі списком тем";
+$MESS["HELP_RESET"] = "Скинути";
+$MESS["HELP_SORT"] = "Сортування:";
+$MESS["HELP_CREATE"] = "Створити";
+$MESS["HELP_IS_FOLDER"] = "Створюємо каталог:";
+$MESS["HELP_HIDE"] = "Сховати";
+$MESS["HELP_FILE_NOT_FOUND"] = "Файл допомоги не знайдено";
+$MESS["HELP_FILE_EXISTS"] = "Файл чи каталог з таким ім'ям вже існує";
+$MESS["HELP_FILE_NOT_EXIST"] = "Файлу #FILE# не існує";
+?>

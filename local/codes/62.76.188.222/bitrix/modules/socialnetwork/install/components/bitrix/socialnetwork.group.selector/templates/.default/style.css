@@ -1,0 +1,13 @@
+.sonet-block-cont-item{display:inline-block;  cursor:pointer; overflow:hidden; vertical-align:top;  position:relative;}
+.sonet-block-cont-block-groups .sonet-block-cont-item{color:#b2b2b2; margin:0 5px 11px 0; height:31px;  width:230px;}
+.sonet-finder-box-layout {width: 100%;}
+.sonet-block-cont-item:hover{background-color:#f0f0f0;}
+.sonet-block-cont-item .sonet-avatar{background:url('/bitrix/components/bitrix/socialnetwork.group.selector/templates/.default/images/project-default.gif') no-repeat center center; left:3px; top:3px; height:24px; position:absolute; width:24px;}
+.sonet-block-cont-item i{ display:block; height:11px; top:10px; right:5px; width:11px; position:absolute;}
+.sonet-block-cont-item:hover i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -19px -474px;}
+.sonet-block-cont-item-selected:hover i{background:url("/bitrix/js/main/core/images/controls-sprite.png") no-repeat -19px -583px!important;  }
+.sonet-block-cont-groups-info{display:inline-block; float:right; width:200px;}
+.sonet-block-cont-groups-info span{color:#999; font-size:11px;line-height:13px; display:block; white-space:nowrap; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis;}
+.sonet-block-cont-groups-info ins {color:#000; display:block; font-size:12px; margin-top:1px; line-height:14px; text-decoration:none!important; white-space:nowrap; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; padding:0;}
+.sonet-block-cont-item-selected ins{color:#666!important}
+.sonet-groups-finder-box{padding: 2px 6px 6px 6px; width: 500px;}

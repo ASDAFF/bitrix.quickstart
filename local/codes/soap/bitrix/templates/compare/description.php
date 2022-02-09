@@ -1,0 +1,1 @@
+<?$arTemplate = array("NAME"=>"Шаблон страницы сравнения", "DESCRIPTION"=>"");?>

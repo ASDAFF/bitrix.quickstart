@@ -1,0 +1,22 @@
+
+.blogtoolbutton2, .blogmessbuttontext {
+	font-size: 100%; 
+	text-decoration: none;
+	font-weight:bold;
+}
+
+a.blogtoolbutton2:hover, .blogmessbuttontext:hover {
+	text-decoration:underline; 
+	font-weight:bold;
+}
+
+.blogtoolseparator {
+	border-left: 1px solid #CEDEEC;
+	border-right: 1px solid #FFFFFF; 
+	width: 2px; 
+	height: 21px; 
+	margin-left: 6px; 
+	margin-right:6px;
+	box-sizing:border-box; 
+	-moz-box-sizing:border-box;
+}

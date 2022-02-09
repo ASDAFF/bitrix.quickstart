@@ -1,0 +1,31 @@
+<?
+$MESS ['ACTIVE'] = "Actif&nbsp;:";
+$MESS ['ADD'] = "Ajouter une nouvelle langue";
+$MESS ['MAIN_NEW_RECORD_TITLE'] = "Ajouter une nouvelle langue";
+$MESS ['MAIN_COPY_RECORD'] = "Ajouter une copie";
+$MESS ['NEW_LANG_TITLE'] = "Ajouter une langue";
+$MESS ['MAIN_ERROR_SAVING'] = "Une erreur a empêché la suppression.";
+$MESS ['MAIN_DELETE_RECORD_CONF'] = "Sur de supprimer cette langue&nbsp;?";
+$MESS ['ERROR_DELETE'] = "Impossible de supprimer la langue car elle a des liens avec d'autres objets.";
+$MESS ['MAIN_COPY_RECORD_TITLE'] = "Copier la langue";
+$MESS ['MAIN_NEW_RECORD'] = "Créer un nouveau groupe";
+$MESS ['FORMAT_DATE'] = "Format de date&nbsp;:";
+$MESS ['FORMAT_DATETIME'] = "Format date-heure&nbsp;:";
+$MESS ['DEF'] = "Par défaut&nbsp;:";
+$MESS ['MAIN_DELETE_RECORD_TITLE'] = "Supprimer ce langage-ci";
+$MESS ['MAIN_DELETE_RECORD'] = "Supprimer une langue";
+$MESS ['EDIT_LANG_TITLE'] = "Éditer la langue &laquo;&nbsp;#ID#&nbsp;&raquo;";
+$MESS ['CHARSET'] = "Codage&nbsp;:";
+$MESS ['RECORD_LIST'] = "Liste des langages";
+$MESS ['DIRECTION_LTR'] = "de gauche à droite";
+$MESS ['NAME'] = "Nom&nbsp;:";
+$MESS ['MAIN_PARAM'] = "Paramètres";
+$MESS ['RESET'] = "Réinitialiser";
+$MESS ['DIRECTION_RTL'] = "De droite à gauche";
+$MESS ['SAVE'] = "Enregistrer les modifications";
+$MESS ['DIR'] = "Dossier du site&nbsp;:";
+$MESS ['SORT'] = "Index de tri&nbsp;:";
+$MESS ['MAIN_PARAM_TITLE'] = "Paramètres des langues du système";
+$MESS ['DIRECTION'] = "Orientation du texte&nbsp;:";
+$MESS ['RECORD_LIST_TITLE'] = "Voir la liste des langages";
+?>

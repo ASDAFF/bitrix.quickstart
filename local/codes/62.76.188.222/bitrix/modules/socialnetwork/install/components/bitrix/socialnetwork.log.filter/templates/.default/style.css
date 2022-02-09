@@ -1,0 +1,144 @@
+div.sonet-log-filter {
+	background: #EFEFEF;
+	font-size: 12px;
+}
+
+div.sonet-log-settings, div.sonet-log-favorites {
+	float: right;
+	white-space: nowrap;
+}
+
+div.sonet-log-favorites {
+	margin-right: 10px;
+}
+
+.sonet-log-title-button-active {
+	font-weight: bold;
+}
+
+.sonet-log-settings-icon {
+    background: url('images/settings.png') no-repeat scroll transparent;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    width: 17px;
+}
+
+div.sonet-log-filter-lt {
+	position: relative;
+	background: url(images/sprite-subscr.png) no-repeat 0 -165px;
+	height: 2px;
+	font-size: 1px;
+}
+
+div.sonet-log-filter-rt {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 2px;
+	width: 2px;	
+	font-size: 1px;	
+	background: url(images/sprite-subscr.png) no-repeat 0 -169px;
+}
+
+div.sonet-log-filter-lb {
+	position: relative;
+	background: url(images/sprite-subscr.png) no-repeat 0 -177px;
+	height: 2px;
+	font-size: 1px;
+}
+
+div.sonet-log-filter-rb {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 2px;
+	width: 2px;		
+	background: url(images/sprite-subscr.png) no-repeat 0 -173px;
+}
+
+div#bx_sl_filter_content { padding: 10px; }
+
+div.sonet-log-filter-createdby-title, div.sonet-log-filter-group-title, div.sonet-log-filter-date-title { padding-bottom: 5px; }
+
+div.sonet-log-filter span.sonet-log-filter-feature { 
+	display: inline-block;
+	width: 180px;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+div.sonet-log-filter span.sonet-log-filter-checkbox { 
+	float: left;
+	display: inline;
+	margin-right: 5px; 
+	overflow: hidden;
+}
+
+div.sonet-log-filter .sonet-log-filter-label { 
+	display: inline-block;
+	padding-top: 2px;
+}
+
+div.sonet-log-filter div.sonet-log-filter-submit { padding-top: 10px; }
+div.sonet-log-filter div.log-filter-title { padding-bottom: 10px; }
+div.sonet-log-filter input.sonet-log-filter-date-interval { width: 100px; }
+
+span.sonet-log-filter-date-hellip-span { width:20px; display:inline-block; text-align:center;}
+
+div.sonet-log-filter-line {
+	height:1px; 
+	width:100%; 
+	overflow:hidden; 
+	background-color:#D8D8D8; 
+	margin-top:8px; 
+	margin-bottom:8px;
+}
+
+a#sonet_log_filter_show, a#sonet_log_filter_hide { display: inline-block; }
+a#sonet_log_filter_show:link, a#sonet_log_filter_hide:link, 
+a#sonet_log_filter_show:visited, a#sonet_log_filter_hide:visited,
+a#sonet_log_filter_show:active , a#sonet_log_filter_hide:active  
+{
+	color: #929292;
+	font-weight: bold;
+}
+
+a#sonet_log_filter_show:hover, a#sonet_log_filter_hide:hover
+{
+	color: #727272;
+	font-weight: bold;
+}
+
+
+span.sonet-log-filter-title { display: inline-block; }
+span.sonet-log-filter-title2 { padding: 0 10px 0 10px; font-weight: bold;}
+
+span.sonet-log-filter-lamp {
+	width: 10px;	
+	height: 6px;
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;	
+	font-size: 1px;
+}
+
+.sonet-log-filter-lamp-a { background: url(images/sprite-subscr.png) no-repeat 0 -185px; }
+.sonet-log-filter-lamp-na { background: url(images/sprite-subscr.png) no-repeat 0 -197px; }
+
+input#flt_show_hidden, input#flt_comments { margin:0; }
+
+a.sonet-log-title-button:link, a.sonet-log-title-button:visited, 
+a.sonet-log-title-button:hover, a.sonet-log-title-button:active {
+	color: #787878;
+}
+
+.sonet-log-title-button {
+	cursor: pointer;
+	display: inline-block;
+	height: 20px;
+	margin: 0;
+	outline: medium none;
+	text-decoration: none !important;
+	vertical-align: middle;
+}

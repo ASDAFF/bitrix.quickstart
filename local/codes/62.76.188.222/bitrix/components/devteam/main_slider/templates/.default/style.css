@@ -1,0 +1,57 @@
+
+.slides_container {
+        width:980px;
+        display:none;
+}
+
+.slides_container div {
+        width:970px;
+        height:280px;
+        display:block; 
+} 
+
+.pagination {
+        list-style:none;
+        margin:0;
+        padding:0;
+}
+
+
+.pagination .current a {
+        color:red;
+}
+ 
+.pagination {
+    
+    margin-top: -19px; margin-right: 4px;
+    position: relative;
+    z-index: 999;
+ 
+    float: right;
+    list-style: none outside none;
+ 
+}
+
+.pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.pagination li a {
+    background-image: url("/images/pagination.png");
+    background-position: 0 0;
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding-top: 13px;
+    width: 13px;
+}
+ 
+.pagination li.current a:hover {
+    background-position: 0 -13px;
+}
+ 
+.pagination li a:hover {
+    background-position: 0 -26px;
+} 

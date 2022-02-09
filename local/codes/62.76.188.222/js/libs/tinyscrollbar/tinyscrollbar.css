@@ -1,0 +1,37 @@
+.viewport { 
+	width: 660px; 
+	overflow: hidden; 
+	position: relative; 
+}
+.overview { 
+	position: absolute; 
+	left: 0; 
+	top: 0;  
+}
+#scrollbarX .scrollbar { 
+	background: url(images/bg-scrollbar-track-x.png) repeat-x 0 0;
+	position: relative; 
+	margin-top: 14px;
+	clear: both; 
+	height: 10px;
+	border: 1px solid #bccedc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#scrollbarX .track { 
+	width: 100%; 
+	height: 10px; 
+	position: relative; 
+}
+#scrollbarX .thumb { 
+	background: url(images/bg-scrollbar-thumb-x.png) repeat-x; 
+	height: 10px; 
+	cursor: pointer; 
+	overflow: hidden; 
+	position: absolute; 
+	left: 0; 
+	top: 0;
+}
+#scrollbarX .disable { 
+	display: none; 
+}

@@ -1,0 +1,30 @@
+<?
+$MESS["CATALOG_ADD_TO_BASKET"] = "В корзину";
+$MESS["CATALOG_FUST_ORDER"] = "Быстрый заказ";
+$MESS["CATALOG_FUST_ORDER_TEXT"] = "Вам перезвонит оператор и оформит заказ";
+$MESS["CATALOG_FUST_ORDER_BUTTON"] = "OK";
+$MESS["CATALOG_MORE_PHOTO"] = "Еще фото";
+$MESS["CATALOG_DOWNLOAD"] = "Скачать";
+$MESS["CATALOG_BACK"] = "Назад в раздел";
+$MESS["CATALOG_BUY"] = "Купить";
+$MESS["CATALOG_NOT_AVAILABLE"] = "(нет на складе)";
+$MESS["CATALOG_QUANTITY"] = "Количество";
+$MESS["CATALOG_QUANTITY_FROM_TO"] = "От #FROM# до #TO#";
+$MESS["CATALOG_QUANTITY_FROM"] = "От #FROM#";
+$MESS["CATALOG_QUANTITY_TO"] = "До #TO#";
+$MESS["CATALOG_PRICE_VAT"] = "с НДС";
+$MESS["CATALOG_PRICE_NOVAT"] = "без НДС";
+$MESS["CATALOG_VAT"] = "НДС";
+$MESS["CATALOG_NO_VAT"] = "не облагается";
+$MESS["CATALOG_VAT_INCLUDED"] = "НДС включен в цену";
+$MESS["CATALOG_VAT_NOT_INCLUDED"] = "НДС не включен в цену";
+$MESS["CT_BCE_QUANTITY"] = "Количество";
+$MESS["CT_BCE_CATALOG_ADD"] = "В корзину";
+$MESS["CT_BCE_CATALOG_COMPARE"] = "Сравнить";
+$MESS["CATALOG_OTHER_ORDER"] = "Другие способы заказа:";
+$MESS["CATALOG_BACK_CALL"] = "Обратный звонок";
+$MESS["CATALOG_YOUR_PHONE_NUMBER"] = "Ваш номер телефона";
+$MESS["CATALOG_ORDER_TEXT"] = "Мы перезвоним Вам в течении 20 минут";
+$MESS["CATALOG_ONLINE_CALL"] = "Онлайн-консультация";
+$MESS["CATALOG_ONLINE_CALL_BUTTON"] = "Скайп чат с консультантом";
+?>

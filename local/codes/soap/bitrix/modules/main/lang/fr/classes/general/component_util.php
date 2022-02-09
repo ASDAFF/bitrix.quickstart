@@ -1,0 +1,31 @@
+<?
+$MESS ['COMP_PROP_SEF_MODE_NO'] = "non";
+$MESS ['comp_util_err2'] = "#NAME#' n'est pas un composant";
+$MESS ['COMP_GROUP_ADDITIONAL_SETTINGS'] = "Ajustages supplémentaires";
+$MESS ['COMP_PROP_AJAX_OPTIONS'] = "Ajustages supplémentaires";
+$MESS ['COMP_GROUP_AJAX_SETTINGS'] = "Options du mode AJAX";
+$MESS ['COMP_PROP_CACHE_TYPE_AUTO'] = "Automatisme";
+$MESS ['COMP_PROP_CACHE_TYPE_YES'] = "Antémémoire";
+$MESS ['COMP_GROUP_CACHE_SETTINGS'] = "Options du cache";
+$MESS ['COMP_PROP_CACHE_TIME'] = "Temps du cache(sec.)";
+$MESS ['COMP_PROP_CACHE_TYPE'] = "Type de cache";
+$MESS ['VRT_COMP_CAT_COMMUNICATION'] = "Communication";
+$MESS ['comp_util_err6'] = "La composante '#NAME#' existe déjà";
+$MESS ['VRT_COMP_CAT_CONTENT'] = "Contenu";
+$MESS ['COMP_GROUP_DATA_SOURCE'] = "source de données";
+$MESS ['comp_util_err1'] = "Liste vide de noms de composants";
+$MESS ['COMP_PROP_AJAX_MODE'] = "Permetre AJAX dans le composant";
+$MESS ['VRT_COMP_CAT_E-STORE'] = "Magazin en ligne";
+$MESS ['COMP_PROP_SEF_FOLDER'] = "Dossier pour SEF (depuis la racine du site)";
+$MESS ['COMP_GROUP_BASE'] = "Paramètres généraux";
+$MESS ['COMP_GROUP_SEF_MODE'] = "Gestion des adresses de page";
+$MESS ['VRT_COMP_CAT_SERVICE'] = "Services";
+$MESS ['COMP_PROP_SET_TITLE'] = "Définir le titre de la page";
+$MESS ['comp_util_err8'] = "Modèle de site dénommé '#NAME#' introuvable";
+$MESS ['comp_util_err12'] = "Le modèle '#NAME#' existe déjà";
+$MESS ['comp_util_err9'] = "Le modèle de nom '#T_NAME#' pour la composante '#C_NAME#' est introuvable";
+$MESS ['COMP_GROUP_URL_TEMPLATES'] = "Modèles pour URL";
+$MESS ['VRT_COMP_CAT_UTILITY'] = "Utilitaires";
+$MESS ['COMP_GROUP_VISUAL'] = "Apparence visuelle";
+$MESS ['COMP_PROP_SEF_MODE_YES'] = "Oui";
+?>

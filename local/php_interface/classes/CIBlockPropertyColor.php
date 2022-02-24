@@ -149,15 +149,15 @@ class CIBlockPropertyColor {
 	private static function AddHeader() {
 		
 		global $APPLICATION;
-		
+
 		// Подключаем CSS
-		$APPLICATION->SetAdditionalCSS('/bitrix/js/therabbit.iblock_props_color/colorpicker.css');
+		$APPLICATION->SetAdditionalCSS('/local/assets/backend/css/therabbit.iblock_props_color/colorpicker.css');
 
 		// Подключаем JS
 		$APPLICATION->AddHeadScript('//code.jquery.com/jquery-1.11.2.min.js');
-		$APPLICATION->AddHeadScript('/bitrix/js/therabbit.iblock_props_color/colorpicker.js');
-		$APPLICATION->AddHeadScript('/bitrix/js/therabbit.iblock_props_color/eye.js');
-		$APPLICATION->AddHeadScript('/bitrix/js/therabbit.iblock_props_color/utils.js');
+		$APPLICATION->AddHeadScript('/local/assets/backend/js/therabbit.iblock_props_color/colorpicker.js');
+		$APPLICATION->AddHeadScript('/local/assets/backend/js/therabbit.iblock_props_color/eye.js');
+		$APPLICATION->AddHeadScript('/local/assets/backend/js/therabbit.iblock_props_color/utils.js');
 		
 	}//\\ AddHeader
 	

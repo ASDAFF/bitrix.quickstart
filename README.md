@@ -53,7 +53,7 @@ local/
     ├── modules/
     ├── php_interface/
     │   ├── classes
-    │   │     └── Autoloader.php
+    │   │     └── Class.php
     │   ├── config
     │   │     ├── backend.php
     │   │     ├── const.php
@@ -62,6 +62,7 @@ local/
     │   │
     │   ├── include
     │   │     ├── events/
+    │   │     ├── adm_tools.php
     │   │     └── handlers.php
     │   │
     │   ├── admin_header.php

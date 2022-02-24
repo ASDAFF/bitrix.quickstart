@@ -17,35 +17,8 @@
 
 use \Bitrix\Main\Loader;
 
-$eventManager = \Bitrix\Main\EventManager::getInstance();
-
-AddEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
-AddEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
-
-/**
- * Свойство инфоблока Привязка к медиабиблиотеке
- **/
-AddEventHandler("main", "OnUserTypeBuildList", array('PropMediaLibUserType', 'GetUserTypeDescription'));
-AddEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblockProperty', 'GetUserTypeDescription'));
-
-/**
- * Пользовательские свойства для инфоблоков
- **/
-AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
-AddEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyColor', 'GetUserTypeDescription')); // свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
-
-/**
- * Пользовательское свойство "Да/Нет в виде Input Checkbox (Флажок)
- */
-AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "GetUserTypeDescription"), 50);
-
-
-/**
- * IBlockProps
- **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropSection', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropElement', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('PropertyHTML', 'GetUserTypeDescription'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnPageStart", array('ModelAuthEmailClass', 'auth')); // Авторизация с помощью EMAIL
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnAfterEpilog", array('Urlrewrite', 'OnAfterEpilog')); // Сортировка urlrewrite
 
 
 /**
@@ -53,4 +26,4 @@ AddEventHandler("iblock", "OnIBlockPropertyBuildList", array("CUserTypeYesNo", "
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnBeforeEventAdd", array('CEshopEmailFieldsHandlers', 'OnBeforeEventAdd'));
 
-$eventManager->addEventHandler("sale", "OnOrderNewSendEmail", array('CEshopEmailFieldsHandlers', 'bxModifySaleMails'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderNewSendEmail", array('CEshopEmailFieldsHandlers', 'bxModifySaleMails'));

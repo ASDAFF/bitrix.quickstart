@@ -22,3 +22,7 @@ if (file_exists(__DIR__ . '/config/events.php'))
 //Handlers
 if (file_exists(__DIR__ . '/include/handlers.php'))
     require_once(__DIR__ . '/include/handlers.php');
+
+// Пользовательские свойства для инфоблоков
+if (file_exists(__DIR__ . '/include/adm_tools.php'))
+    require_once(__DIR__ . '/include/adm_tools.php');

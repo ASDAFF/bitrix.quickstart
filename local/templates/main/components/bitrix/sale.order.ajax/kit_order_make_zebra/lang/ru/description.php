@@ -1,0 +1,3 @@
+<?
+$MESS['ORDER_TEMPLATE_ZEBRA_NAME'] = 'Зебра';
+?>

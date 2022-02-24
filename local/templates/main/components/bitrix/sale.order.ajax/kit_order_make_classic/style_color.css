@@ -1,0 +1,56 @@
+/* colors for default template sale.order.ajax */
+.radio-inline input:checked::before {
+    background-color: #fb0040;
+    border: 2px solid #fb0040;
+}
+.bx-soa-more-btn .pull-right {
+    background-color: #fb0040 !important;
+    border-color: #fb0040 !important;
+}
+.bx-green .btn.btn-default {
+    background-color: #fb0040;
+    border-color: #fb0040;
+}
+.bx-green .btn.btn-default:hover {
+    background-color: #fb0040;
+    border-color: #fb0040;
+}
+#bx-soa-orderSave > a {
+    background-color: #fb0040 !important;
+    border-color: #fb0040 !important;
+}
+.bx-soa-pickup-l-item-btn .btn.btn-default {
+    background-color: #fb0040;
+    border-color: #fb0040;
+}
+.bx-soa-pickup-l-item-btn .btn.btn-default:hover {
+    background-color: #fb0040;
+    border-color: #fb0040;
+}
+.bx-soa-editstep {
+    color: #fb0040;
+}
+.bx-soa-editstep:hover {
+    color: #fb0040;
+}
+.has-error .form-control {
+    border-color: #fb0040 !important;
+}
+.bx-soa-pp-company.bx-selected  .bx-soa-pp-company-graf-container {
+    border-color: #fb0040;
+}
+input[type=checkbox].bx-soa-pp-company-checkbox:checked::before {
+    background-color: #fb0040;
+    border: 2px solid #fb0040;
+}
+.has-error .bx-sls .form-control.dropdown-block,
+.has-error .bx-slst .form-control.dropdown-block {
+    border-color: #fb0040;
+}
+label[data-bx-user-consent] input:checked:before,
+label[data-bx-user-consent] input:not(:checked):before {
+    border: 1px solid #fb0040;
+}
+label[data-bx-user-consent] input:checked:before {
+    background-color: #fb0040;
+}

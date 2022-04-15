@@ -1,1 +1,0 @@
-<?$arTemplate = Array("NAME"=>"inner", "DESCRIPTION"=>"");?>

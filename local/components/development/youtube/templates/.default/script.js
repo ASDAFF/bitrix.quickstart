@@ -24,10 +24,10 @@ var player = [], playing = []; jopa = 0;
 	{
 		console.log( 'Init Player' );
 
-		// выход из функции, если она уже вызывалась
+		// РІС‹С…РѕРґ РёР· С„СѓРЅРєС†РёРё, РµСЃР»Рё РѕРЅР° СѓР¶Рµ РІС‹Р·С‹РІР°Р»Р°СЃСЊ
 		if (arguments.callee.done) return;
 
-		// флаг, чтобы не запускать функцию дважды
+		// С„Р»Р°Рі, С‡С‚РѕР±С‹ РЅРµ Р·Р°РїСѓСЃРєР°С‚СЊ С„СѓРЅРєС†РёСЋ РґРІР°Р¶РґС‹
 		arguments.callee.done = true;
 
 		// Load API
@@ -47,7 +47,7 @@ var player = [], playing = []; jopa = 0;
 			elem[ i ].style.height = ( elem[ i ].getAttribute( 'data-height' ).indexOf( '%' ) != -1 ? elem[ i ].getAttribute( 'data-height' ) : elem[ i ].getAttribute( 'data-height' ) + 'px' );
 		}
 
-		// Костыль
+		// РљРѕСЃС‚С‹Р»СЊ
 		if ( jopa == 0 ) onYouTubePlayerAPIReady();
 	}
 

@@ -9,6 +9,7 @@
 
   "license": "MIT",
   "dependencies": {
+    "bitrix.mpbuilder": "https://github.com/ASDAFF/bitrix.mpbuilder.git",
     "cleaning.structure": "https://github.com/ASDAFF/cleaning.structure.git",
     "collected.iblockprops": "https://github.com/ASDAFF/collected.iblockprops.git",
     "easy.form": "https://github.com/ASDAFF/easy.form.git",

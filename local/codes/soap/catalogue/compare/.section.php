@@ -1,6 +1,0 @@
-<?
-$sSectionName = "Сравнение";
-$arDirProperties = Array(
-
-);
-?>

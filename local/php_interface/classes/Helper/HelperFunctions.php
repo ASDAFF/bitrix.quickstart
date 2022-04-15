@@ -582,7 +582,7 @@ class HelperFunctions
         }
 
         if (in_array(substr($user_agent, 0, 4),
-            Array("1207", "3gso", "4thp", "501i", "502i", "503i", "504i", "505i", "506i",
+            array("1207", "3gso", "4thp", "501i", "502i", "503i", "504i", "505i", "506i",
                 "6310", "6590", "770s", "802s", "a wa", "abac", "acer", "acoo", "acs-",
                 "aiko", "airn", "alav", "alca", "alco", "amoi", "anex", "anny", "anyw",
                 "aptu", "arch", "argo", "aste", "asus", "attw", "au-m", "audi", "aur ",
@@ -669,6 +669,285 @@ class HelperFunctions
     }
 
     /**
+     * getMailTo
+     * Отправитель по-умолчанию
+     *
+     * @return str
+     */
+    public static function getMailTo()
+    {
+        static $mailTo;
+        if (empty($mailTo)) {
+            $rsSites = CSite::GetByID(SITE_ID);
+            $arSite = $rsSites->Fetch();
+            $mailTo = (empty($arSite['EMAIL']) ? DEFAULT_EMAIL_TO : $arSite['EMAIL']);
+        }
+        return $mailTo;
+    }
+
+    /**
+     * Проверяет, находимся ли мы на главной странице
+     *
+     * @return bool
+     */
+    public static function isMain()
+    {
+        return ($_SERVER['PHP_SELF'] == "/index.php");
+    }
+
+    /**
+     * Возвращает информацию о файле
+     *
+     * @param int|array $fid ID файла, либо массив ID файлов
+     * @return array - данные информация о файле
+     */
+    public static function getFileData($fid)
+    {
+        if (!isset($fid)) return;
+
+        if (is_array($fid)) {
+            $rsFile = CFile::GetList(array(), array("@ID" => implode(",", $fid)));
+        } else {
+            $rsFile = CFile::GetByID($fid);
+        }
+
+        $ret = array();
+
+        while ($ifile = $rsFile->Fetch()) {
+            $ret[$ifile['ID']] = array(
+                "SRC" => P_UPLOAD . $ifile["SUBDIR"] . "/" . $ifile['FILE_NAME'],
+                "WIDTH" => $ifile["WIDTH"],
+                "HEIGHT" => $ifile["HEIGHT"],
+                "DATA" => $ifile
+            );
+        }
+
+        if (is_array($fid)) {
+            return $ret;
+        } else {
+            return $ret[$fid];
+        }
+    }
+
+    /**
+     * Логирование в файл
+     *
+     * @param $str
+     * @param string $fileName
+     */
+    public static function logToFile($str, $fileName = "")
+    {
+        if (empty($fileName)) {
+            $f = fopen(P_LOG_FILE, "a");
+        } else {
+            $f = fopen(P_LOG_DIR . $fileName, "a");
+        }
+        fwrite($f, "[" . date("Y.m.d H:i:s") . "] " . $str . "\n");
+        fclose($f);
+    }
+
+    /**
+     *  Возвращает строку, разделенную пробелами по 3 символа, начиная с конца.
+     *
+     * @param string $str
+     * @retrun string
+     */
+    public static function priceFormat($str)
+    {
+        return number_format(floatval($price), 0, '', ' ');
+    }
+
+    /**
+     * Возвращает транслитерированную строку
+     */
+    public static function translitIt($str)
+    {
+        $tr = array(
+            "А" => "A", "Б" => "B", "В" => "V", "Г" => "G",
+            "Д" => "D", "Е" => "E", "Ж" => "J", "З" => "Z", "И" => "I",
+            "Й" => "Y", "К" => "K", "Л" => "L", "М" => "M", "Н" => "N",
+            "О" => "O", "П" => "P", "Р" => "R", "С" => "S", "Т" => "T",
+            "У" => "U", "Ф" => "F", "Х" => "H", "Ц" => "TS", "Ч" => "CH",
+            "Ш" => "SH", "Щ" => "SCH", "Ъ" => "", "Ы" => "YI", "Ь" => "",
+            "Э" => "E", "Ю" => "YU", "Я" => "YA", "а" => "a", "б" => "b",
+            "в" => "v", "г" => "g", "д" => "d", "е" => "e", "ж" => "j",
+            "з" => "z", "и" => "i", "й" => "y", "к" => "k", "л" => "l",
+            "м" => "m", "н" => "n", "о" => "o", "п" => "p", "р" => "r",
+            "с" => "s", "т" => "t", "у" => "u", "ф" => "f", "х" => "h",
+            "ц" => "ts", "ч" => "ch", "ш" => "sh", "щ" => "sch", "ъ" => "y",
+            "ы" => "yi", "ь" => "", "э" => "e", "ю" => "yu", "я" => "ya"
+        );
+        return strtr($str, $tr);
+    }
+
+    /**
+     * Функция, аналогичная CMain::GetCurPageParam, только умеет работать с любой переданной ссылкой и умеет удалять массивы параметров.
+     */
+    public static function getPageParam($strParam = '', $arParamKill = array(), $get_index_page = NULL, $uri = FALSE)
+    {
+        if (NULL === $get_index_page) {
+            if (defined('BX_DISABLE_INDEX_PAGE'))
+                $get_index_page = !BX_DISABLE_INDEX_PAGE;
+            else
+                $get_index_page = TRUE;
+        }
+
+        $sUrlPath = GetPagePath($uri, $get_index_page);
+        $strNavQueryString = deleteParam($arParamKill, $uri);
+
+        if (($strNavQueryString != '') && ($strParam != ''))
+            $strNavQueryString = '&' . $strNavQueryString;
+
+        if (($strNavQueryString == '') && ($strParam == ''))
+            return $sUrlPath;
+        else
+            return $sUrlPath . '?' . $strParam . $strNavQueryString;
+    }
+
+    /**
+     * Вспомогательная функция для удаления массива параметров из ссылки
+     *
+     * @param array $arParam
+     * @param string|boolean $uri
+     *
+     * @return string
+     */
+    public static function deleteParam($arParam, $uri = FALSE)
+    {
+        $get = array();
+        if ($uri && ($qPos = strpos($uri, '?')) !== FALSE) {
+            $queryString = substr($uri, $qPos + 1);
+            parse_str($queryString, $get);
+            unset($queryString);
+        }
+
+        if (sizeof($get) < 1)
+            $get = $_GET;
+
+        if (sizeof($get) < 1)
+            return '';
+
+        if (sizeof($arParam) > 0) {
+            foreach ($arParam as $param) {
+                $search = &$get;
+                $param = (array)$param;
+                $lastIndex = sizeof($param) - 1;
+                foreach ($param as $c => $key) {
+                    if (array_key_exists($key, $search)) {
+                        if ($c == $lastIndex)
+                            unset($search[$key]);
+                        else
+                            $search = &$search[$key];
+                    }
+                }
+            }
+        }
+
+        return str_replace(
+            array('%5B', '%5D'),
+            array('[', ']'),
+            http_build_query($get)
+        );
+    }
+
+    /**
+     * Возвращает отформатированную строку с размером файла для загрузки
+     *
+     * @param int $size
+     * @param int $round
+     *
+     * @return float
+     */
+    public static function getStrFileSize($size, $round = 2)
+    {
+        $sizes = array('B', 'Kb', 'Mb', 'Gb', 'Tb', 'Pb', 'Eb', 'Zb', 'Yb');
+        for ($i = 0; $size > 1024 && $i < count($sizes) - 1; $i++) $size /= 1024;
+        return round($size, $round) . " " . $sizes[$i];
+    }
+
+    /**
+     * Возвращает правильное окончание слова в зависимости от числа, которому оно сопоставлено
+     *
+     * @param int $count
+     * @param string $form1
+     * @param string $form2_4
+     * @param string $form5_0
+     *
+     * @return string
+     */
+    public static function wordEnding($count, $form1 = "", $form2_4 = "а", $form5_0 = "ов")
+    {
+        $n100 = $count % 100;
+        $n10 = $count % 10;
+
+        if (($n100 > 10) && ($n100 < 21)) {
+            return $form5_0;
+        } else if ((!$n10) || ($n10 >= 5)) {
+            return $form5_0;
+        } else if ($n10 == 1) {
+            return $form1;
+        }
+
+        return $form2_4;
+    }
+
+    /**
+     * Возвращает массив настроек сайта
+     *
+     * @return array
+     */
+    public static function getSettings()
+    {
+
+    }
+
+    /**
+     * Возвращает настройку сайта по ее символьному коду
+     *
+     * @param string $code
+     *
+     * @return string|boolean
+     */
+    public static function getSetting($code)
+    {
+
+    }
+
+    /**
+     * Изменяет размеры картинки и возвращает путь к ней (к измененной картинке)
+     *
+     * @param int $id
+     * @param int $w
+     * @param int $h
+     *
+     * @return string|boolean
+     */
+    public static function getResizeImageSrc($id, $w, $h, $method = BX_RESIZE_IMAGE_PROPORTIONAL)
+    {
+        $arImg = CFile::ResizeImageGet($id, array('width' => $w, 'height' => $h), $method);
+        if ($arImg["src"])
+            return $arImg["src"];
+        else
+            return false;
+    }
+
+    /**
+     * Зачищает и экранирует строку перед сохранением в бд
+     *
+     * @param string $str
+     *
+     * @return string
+     */
+    public static function filterString($str)
+    {
+        $str = strip_tags($str);
+        $str = htmlspecialchars($str);
+        $str = mysql_escape_string($str);
+
+        return $str;
+    }
+
+    /**
      * @return bool
      */
     function _empty()
@@ -682,16 +961,6 @@ class HelperFunctions
         return false;
     }
 
-    function dv()
-    {
-        $args = func_get_args();
-        if (!$args) return false;
-
-        for ($i = 0; $i < count($args); $i++) {
-            echo '<pre style="text-align: left; background-color: white; color: black; font-size: 12px">' . htmlspecialchars(print_r($args[$i], true)) . '</pre>';
-        }
-    }
-
     /**
      * @param $time
      * @param string $format
@@ -703,6 +972,16 @@ class HelperFunctions
     {
         foreach ((array)$time as $t) {
             self::dv(date($format, $t));
+        }
+    }
+
+    function dv()
+    {
+        $args = func_get_args();
+        if (!$args) return false;
+
+        for ($i = 0; $i < count($args); $i++) {
+            echo '<pre style="text-align: left; background-color: white; color: black; font-size: 12px">' . htmlspecialchars(print_r($args[$i], true)) . '</pre>';
         }
     }
 
@@ -1131,6 +1410,8 @@ class HelperFunctions
         return (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') || isset($_REQUEST['__ajax__']);
     }
 
+// получить родительские разделы с пользовательскими свойствами
+
     /**
      * @param $url
      * @param bool $add_http
@@ -1143,6 +1424,8 @@ class HelperFunctions
 
         return $add_http ? "http://$url/" : $url;
     }
+
+// получить родительские разделы без пользовательских свойств
 
     /**
      * @param $text
@@ -1163,6 +1446,16 @@ class HelperFunctions
 
         return $retval;
     }
+
+    /*
+    ORDER_PRICE
+    ORDER_WEIGHT
+    PRICE_DELIVERY
+    PERSON_TYPE_ID
+    PAY_SYSTEM_ID
+    DELIVERY_ID
+    */
+// правила работы с корзиной
 
     /**
      * @param $object
@@ -1424,8 +1717,6 @@ class HelperFunctions
         return preg_replace('/id\=".*"/isxU', '', bitrix_sessid_post($varname));
     }
 
-// получить родительские разделы с пользовательскими свойствами
-
     /**
      * @param $plainArray
      * @return array
@@ -1447,8 +1738,6 @@ class HelperFunctions
         return $tree;
     }
 
-// получить родительские разделы без пользовательских свойств
-
     /**
      * @param $resultArray
      * @param $plainArray
@@ -1464,16 +1753,6 @@ class HelperFunctions
             }
         }
     }
-
-    /*
-    ORDER_PRICE
-    ORDER_WEIGHT
-    PRICE_DELIVERY
-    PERSON_TYPE_ID
-    PAY_SYSTEM_ID
-    DELIVERY_ID
-    */
-// правила работы с корзиной
 
     /**
      * @param $element
@@ -1785,123 +2064,47 @@ class HelperFunctions
         return $arOrderForDiscount['ORDER_PRICE'];
     }
 
-
-
-
-
-
-
-
-    /**
-     * getMailTo
-     * Отправитель по-умолчанию
-     *
-     * @return str
-     */
-    public static function getMailTo()
+    function getProps2Card($IBLOCK_ID, $section)
     {
-        static $mailTo;
-        if (empty($mailTo)) {
-            $rsSites = CSite::GetByID(SITE_ID);
-            $arSite = $rsSites->Fetch();
-            $mailTo = (empty($arSite['EMAIL']) ? DEFAULT_EMAIL_TO : $arSite['EMAIL']);
-        }
-        return $mailTo;
-    }
+        CModule::IncludeModule('iblock');
 
-    /**
-     * Проверяет, находимся ли мы на главной странице
-     *
-     * @return bool
-     */
-    public static function isMain()
-    {
-        return ($_SERVER['PHP_SELF'] == "/index.php");
-    }
+        $properties = \CIBlockProperty::GetList(array("sort" => "asc", "name" => "asc"),
+            array("IBLOCK_ID" => $IBLOCK_ID));
+        while ($prop_fields = $properties->GetNext()) {
 
-    /**
-     * Возвращает информацию о файле
-     *
-     * @param int|array $fid ID файла, либо массив ID файлов
-     * @return array - данные информация о файле
-     */
-    public static function getFileData($fid)
-    {
-        if (!isset($fid)) return;
+            if (!in_array($prop_fields["CODE"], array('MORE_PHOTO', 'RECOMMENDED_LIST')))
+                $props[] = $prop_fields["CODE"];
 
-        if (is_array($fid)) {
-            $rsFile = CFile::GetList(array(), array("@ID" => implode(",", $fid)));
-        } else {
-            $rsFile = CFile::GetByID($fid);
         }
 
-        $ret = array();
-
-        while ($ifile = $rsFile->Fetch()) {
-            $ret[$ifile['ID']] = array(
-                "SRC"   => P_UPLOAD . $ifile["SUBDIR"] . "/" . $ifile['FILE_NAME'],
-                "WIDTH" => $ifile["WIDTH"],
-                "HEIGHT"=> $ifile["HEIGHT"],
-                "DATA"  => $ifile
-            );
-        }
-
-        if (is_array($fid)) {
-            return $ret;
-        } else {
-            return $ret[$fid];
-        }
+        return $props;
     }
 
-    /**
-     * Логирование в файл
-     *
-     * @param $str
-     * @param string $fileName
-     */
-    public static function logToFile($str, $fileName = "")
+    function getPropsCodes($iblock_id, $section_id, $ffilter = false)
     {
-        if (empty($fileName)) {
-            $f = fopen(P_LOG_FILE, "a");
-        } else {
-            $f = fopen(P_LOG_DIR . $fileName, "a");
+        // $ffilter - признак что нужно тянуть только те которые показывать в фильтре
+
+        $property_codes = array();
+        CModule::IncludeModule('iblock');
+        $arPropLinks = CIBlockSectionPropertyLink::GetArray($iblock_id,
+            $section_id,
+            true);
+        if ($arPropLinks) {
+            foreach ($arPropLinks as $prop)
+                if (($prop["SMART_FILTER"] == 'Y')
+                    || !$ffilter
+                ) $arrProps[] = $prop["PROPERTY_ID"];
+
+            $properties = CIBlockProperty::GetList(array("sort" => "asc", "name" => "asc"),
+                array("ACTIVE" => "Y", "IBLOCK_ID" => $iblock_id));
+
+            while ($prop_fields = $properties->GetNext()) {
+                if (in_array($prop_fields['ID'], $arrProps) &&
+                    in_array($prop_fields["PROPERTY_TYPE"], array('L', 'N')))
+                    $property_codes[] = $prop_fields['CODE'];
+            }
         }
-        fwrite($f, "[" . date("Y.m.d H:i:s") . "] " . $str . "\n");
-        fclose($f);
-    }
-
-    /**
-     *  Возвращает строку, разделенную пробелами по 3 символа, начиная с конца.
-     *
-     *  @param string $str
-     *  @retrun string
-     */
-    public static function priceFormat($str)
-    {
-        return number_format(floatval($price), 0, '', ' ');
-    }
-
-    /**
-     * Возвращает транслитерированную строку
-     */
-    public static function translitIt($str)
-    {
-        $tr = array(
-            "А"=>"A","Б"=>"B","В"=>"V","Г"=>"G",
-            "Д"=>"D","Е"=>"E","Ж"=>"J","З"=>"Z","И"=>"I",
-            "Й"=>"Y","К"=>"K","Л"=>"L","М"=>"M","Н"=>"N",
-            "О"=>"O","П"=>"P","Р"=>"R","С"=>"S","Т"=>"T",
-            "У"=>"U","Ф"=>"F","Х"=>"H","Ц"=>"TS","Ч"=>"CH",
-            "Ш"=>"SH","Щ"=>"SCH","Ъ"=>"","Ы"=>"YI","Ь"=>"",
-            "Э"=>"E","Ю"=>"YU","Я"=>"YA","а"=>"a","б"=>"b",
-            "в"=>"v","г"=>"g","д"=>"d","е"=>"e","ж"=>"j",
-            "з"=>"z","и"=>"i","й"=>"y","к"=>"k","л"=>"l",
-            "м"=>"m","н"=>"n","о"=>"o","п"=>"p","р"=>"r",
-            "с"=>"s","т"=>"t","у"=>"u","ф"=>"f","х"=>"h",
-            "ц"=>"ts","ч"=>"ch","ш"=>"sh","щ"=>"sch","ъ"=>"y",
-            "ы"=>"yi","ь"=>"","э"=>"e","ю"=>"yu","я"=>"ya"
-        );
-        return strtr($str,$tr);
+        return $property_codes;
     }
 
     /**
@@ -1915,7 +2118,7 @@ class HelperFunctions
             $headers = getallheaders();
 
             if ((isset($headers['X-Requested-With']) && $headers['X-Requested-With'] == 'XMLHttpRequest')
-                ||(isset($headers['x-requested-with']) && $headers['x-requested-with'] == 'XMLHttpRequest')) {
+                || (isset($headers['x-requested-with']) && $headers['x-requested-with'] == 'XMLHttpRequest')) {
                 $isAjax = true;
             } else {
                 $isAjax = false;
@@ -1925,170 +2128,55 @@ class HelperFunctions
         return $isAjax;
     }
 
-    /**
-     * Функция, аналогичная CMain::GetCurPageParam, только умеет работать с любой переданной ссылкой и умеет удалять массивы параметров.
-     */
-    public static function getPageParam($strParam = '', $arParamKill = array(), $get_index_page = NULL, $uri = FALSE)
+    function add2compare($id)
     {
-        if (NULL === $get_index_page) {
-            if (defined( 'BX_DISABLE_INDEX_PAGE'))
-                $get_index_page = !BX_DISABLE_INDEX_PAGE;
-            else
-                $get_index_page = TRUE;
+
+        if (!isset($_SESSION["CATALOG_COMPARE_LIST"]["ITEMS"][$id])) {
+            CModule::IncludeModule('iblock');
+            $arSelect = array("ID", "IBLOCK_ID", "IBLOCK_SECTION_ID", "NAME", "DETAIL_PAGE_URL");
+
+            $arFilter = array("ID" => $id, "IBLOCK_ACTIVE" => "Y", "ACTIVE_DATE" => "Y",
+                "ACTIVE" => "Y", "CHECK_PERMISSIONS" => "Y");
+
+            $rsElement = CIBlockElement::GetList(array(), $arFilter, false, false, $arSelect);
+            $arElement = $rsElement->GetNext();
+
+            $_SESSION["CATALOG_COMPARE_LIST"]["ITEMS"][$id] = $arElement;
         }
 
-        $sUrlPath = GetPagePath( $uri, $get_index_page );
-        $strNavQueryString = deleteParam( $arParamKill, $uri );
-
-        if (($strNavQueryString != '') && ($strParam != ''))
-            $strNavQueryString = '&'.$strNavQueryString;
-
-        if (($strNavQueryString == '') && ($strParam == ''))
-            return $sUrlPath;
-        else
-            return $sUrlPath.'?'.$strParam.$strNavQueryString;
     }
 
-    /**
-     * Вспомогательная функция для удаления массива параметров из ссылки
-     *
-     * @param array $arParam
-     * @param string|boolean $uri
-     *
-     * @return string
-     */
-    public static function deleteParam($arParam, $uri = FALSE)
+
+    function in_compare($id)
     {
-        $get = array();
-        if ($uri && ($qPos = strpos($uri, '?')) !== FALSE) {
-            $queryString = substr( $uri, $qPos + 1 );
-            parse_str( $queryString, $get );
-            unset( $queryString );
-        }
+        if ($_SESSION["CATALOG_COMPARE_LIST"]["ITEMS"][$id])
+            return true;
 
-        if (sizeof($get) < 1)
-            $get = $_GET;
+        return false;
+    }
 
-        if (sizeof($get) < 1)
-            return '';
 
-        if (sizeof($arParam) > 0) {
-            foreach ($arParam as $param) {
-                $search    = &$get;
-                $param     = (array)$param;
-                $lastIndex = sizeof($param) - 1;
-                foreach ($param as $c => $key) {
-                    if (array_key_exists($key, $search)) {
-                        if($c == $lastIndex)
-                            unset($search[$key]);
-                        else
-                            $search = &$search[$key];
-                    }
+    function removeFromCompare($id)
+    {
+        if ($_SESSION["CATALOG_COMPARE_LIST"]["ITEMS"][$id])
+            unset($_SESSION["CATALOG_COMPARE_LIST"]["ITEMS"][$id]);
+    }
+
+    function scandirs($start)
+    {
+        $files = array();
+        $handle = opendir($start);
+        while (false !== ($file = readdir($handle))) {
+            if ($file != '.' && $file != '..') {
+                if (is_dir($start . '/' . $file)) {
+                    $dir = scandirs($start . '/' . $file);
+                    $files[$file] = $dir;
+                } else {
+                    array_push($files, $file);
                 }
             }
         }
-
-        return str_replace(
-            array('%5B', '%5D'),
-            array('[', ']'),
-            http_build_query($get)
-        );
-    }
-
-    /**
-     * Возвращает отформатированную строку с размером файла для загрузки
-     *
-     * @param int $size
-     * @param int $round
-     *
-     * @return float
-     */
-    public static function getStrFileSize($size, $round = 2)
-    {
-        $sizes = array('B', 'Kb', 'Mb', 'Gb', 'Tb', 'Pb', 'Eb', 'Zb', 'Yb');
-        for ($i=0; $size > 1024 && $i < count($sizes) - 1; $i++) $size /= 1024;
-        return round($size,$round)." ".$sizes[$i];
-    }
-
-    /**
-     * Возвращает правильное окончание слова в зависимости от числа, которому оно сопоставлено
-     *
-     * @param int $count
-     * @param string $form1
-     * @param string $form2_4
-     * @param string $form5_0
-     *
-     * @return string
-     */
-    public static function wordEnding($count, $form1 = "", $form2_4 = "а", $form5_0 = "ов")
-    {
-        $n100 = $count % 100;
-        $n10  = $count % 10;
-
-        if (($n100 > 10) && ($n100 < 21)) {
-            return $form5_0;
-        } else if ((!$n10) || ($n10 >= 5)) {
-            return $form5_0;
-        } else if ($n10 == 1) {
-            return $form1;
-        }
-
-        return $form2_4;
-    }
-
-    /**
-     * Возвращает массив настроек сайта
-     *
-     * @return array
-     */
-    public static function getSettings()
-    {
-
-    }
-
-    /**
-     * Возвращает настройку сайта по ее символьному коду
-     *
-     * @param string $code
-     *
-     * @return string|boolean
-     */
-    public static function getSetting($code)
-    {
-
-    }
-
-    /**
-     * Изменяет размеры картинки и возвращает путь к ней (к измененной картинке)
-     *
-     * @param int $id
-     * @param int $w
-     * @param int $h
-     *
-     * @return string|boolean
-     */
-    public static function getResizeImageSrc($id, $w, $h, $method = BX_RESIZE_IMAGE_PROPORTIONAL)
-    {
-        $arImg = CFile::ResizeImageGet($id, array('width' => $w, 'height' => $h), $method);
-        if ($arImg["src"])
-            return $arImg["src"];
-        else
-            return false;
-    }
-
-    /**
-     * Зачищает и экранирует строку перед сохранением в бд
-     *
-     * @param string $str
-     *
-     * @return string
-     */
-    public static function filterString($str)
-    {
-        $str = strip_tags($str);
-        $str = htmlspecialchars($str);
-        $str = mysql_escape_string($str);
-
-        return $str;
+        closedir($handle);
+        return $files;
     }
 }

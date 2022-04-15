@@ -622,3 +622,73 @@ function DeleteFromCompare(ID) {
 }
 
 });
+
+$(document).ready(function() {
+
+    $('.buy_').bind('click', function(){
+
+        if(!$(this).hasClass('m-in_basket')){
+            id = $(this).data('id');
+            $.ajax({
+                url: '/cart/basket_line.php',
+                data: 'action=ADD2BASKET&id=' + id,
+                success: function(data){
+                    $('.b-minicart').html(data);
+                }
+            });
+
+            $(this).addClass('m-in_basket')
+                .html('<span class="b-catalog-list_item__cart">добавлен<br>в корзину</span>');
+        }  else {
+
+            location.href="/personal/cart/";
+
+        }
+    });
+
+    $('.add2compare_').live('click', function(){
+
+        if(!$(this).hasClass('m-compare__added')){
+
+            $(this).addClass('m-compare__added')
+                .find('span').text('Добавлен к сравнению');
+
+            if($('.b-compare-added').hasClass('hidden_')){
+                $('.b-compare-added').addClass('clearfix').removeClass('hidden_');
+            }
+
+            var id = $(this).data('id');
+            $.ajax({
+                url: '/api/?action=add2compare_&id=' + id,
+                success: function(data){
+                    $('.b-compare-added').html(data);
+                }
+            });
+        }
+        return false;
+    });
+
+    $('.compare_from_list_').live('click', function(){
+
+        if($('.b-compare-added').hasClass('hidden_')){
+            $('.b-compare-added').addClass('clearfix').removeClass('hidden_');
+        }
+
+        var id = $(this).data('id');
+        $.ajax({
+            url: '/api/?action=add2compare_&id=' + id,
+            success: function(data){
+                $('.b-compare-added').html(data);
+            }
+        });
+
+        return false;
+    });
+
+    $('.compare_').live('click', function(){
+        location.href = "/catalog/compare/";
+
+    });
+
+
+});

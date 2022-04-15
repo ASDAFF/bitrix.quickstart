@@ -1,1 +1,0 @@
-<?$arTemplate = array("NAME"=>"Внутренняя с аксессуарами", "DESCRIPTION"=>"");?>

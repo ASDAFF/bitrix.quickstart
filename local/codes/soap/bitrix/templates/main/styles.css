@@ -1,8 +1,0 @@
-.m-menu__last .b-nav-menu__inner {
-	bottom: 0;
-	top: auto;
-}
-.m-menu__last .b-nav-menu__inner:before {
-	bottom: 15px;
-	top: auto;
-}

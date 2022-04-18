@@ -5,7 +5,7 @@
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "git@github.com:alexxxnf/nf_pp.git",
+            "url": "https://github.com/alexxxnf/nf_pp.git",
             "reference": "e547ecf35b956967a0e131215bf78ea9cab22157"
         },
         "dist": {
@@ -48,42 +48,213 @@
         ]
     },
     {
+        "name": "composer/installers",
+        "version": "v1.12.0",
+        "version_normalized": "1.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
+            "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0 || ^2.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.6.* || ^2.0",
+            "composer/semver": "^1 || ^3",
+            "phpstan/phpstan": "^0.12.55",
+            "phpstan/phpstan-phpunit": "^0.12.16",
+            "symfony/phpunit-bridge": "^4.2 || ^5",
+            "symfony/process": "^2.3"
+        },
+        "time": "2021-09-13T08:19:44+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-main": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Eliasis",
+            "Hurad",
+            "ImageCMS",
+            "Kanboard",
+            "Lan Management System",
+            "MODX Evo",
+            "MantisBT",
+            "Mautic",
+            "Maya",
+            "OXID",
+            "Plentymarkets",
+            "Porto",
+            "RadPHP",
+            "SMF",
+            "Starbug",
+            "Thelia",
+            "Whmcs",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "eZ Platform",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "itop",
+            "joomla",
+            "known",
+            "kohana",
+            "laravel",
+            "lavalite",
+            "lithium",
+            "magento",
+            "majima",
+            "mako",
+            "mediawiki",
+            "miaoxing",
+            "modulework",
+            "modx",
+            "moodle",
+            "osclass",
+            "pantheon",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "processwire",
+            "puppet",
+            "pxcms",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "sydes",
+            "sylius",
+            "symfony",
+            "tastyigniter",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "digitalwand/mvc.base",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DigitalWand/mvc.base.git",
+            "reference": "8e78b20d477872e23ea77a1df539ff40b30298bc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/DigitalWand/mvc.base/zipball/8e78b20d477872e23ea77a1df539ff40b30298bc",
+            "reference": "8e78b20d477872e23ea77a1df539ff40b30298bc",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "~1",
+            "php": ">=7.0"
+        },
+        "time": "2020-05-21T18:12:44+00:00",
+        "type": "bitrix-module",
+        "extra": {
+            "installer-name": "digitalwand.mvc"
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexey Volkov",
+                "email": "asgalex@gmail.com"
+            }
+        ],
+        "description": "Base Bitrix component implementing MVC pattern",
+        "keywords": [
+            "bitrix",
+            "component",
+            "mvc"
+        ]
+    },
+    {
         "name": "kint-php/kint",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kint-php/kint.git",
-            "reference": "26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96"
+            "reference": "fa53c4333cda79dc9cb002cfa029abe994d0ae00"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kint-php/kint/zipball/26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96",
-            "reference": "26c7dfc28c06a3691b6ae510d6eb058fc8e9fb96",
+            "url": "https://api.github.com/repos/kint-php/kint/zipball/fa53c4333cda79dc9cb002cfa029abe994d0ae00",
+            "reference": "fa53c4333cda79dc9cb002cfa029abe994d0ae00",
             "shasum": ""
         },
         "require": {
             "php": ">=5.6"
         },
         "require-dev": {
-            "friendsofphp/php-cs-fixer": "^2.0",
+            "friendsofphp/php-cs-fixer": "^3.0",
             "phpspec/prophecy-phpunit": "^2",
             "phpunit/phpunit": "^9.0",
             "seld/phar-utils": "^1.0",
             "symfony/finder": "^3.0 || ^4.0 || ^5.0",
-            "vimeo/psalm": "dev-master"
+            "vimeo/psalm": "^4.0"
         },
         "suggest": {
-            "ext-ctype": "Simple data type tests",
-            "ext-iconv": "Provides fallback detection for ambiguous legacy string encodings such as the Windows and ISO 8859 code pages",
-            "ext-mbstring": "Provides string encoding detection",
-            "kint-php/kint-js": "Provides a simplified dump to console.log()",
-            "kint-php/kint-twig": "Provides d() and s() functions in twig templates",
-            "symfony/polyfill-ctype": "Replacement for ext-ctype if missing",
-            "symfony/polyfill-iconv": "Replacement for ext-iconv if missing",
-            "symfony/polyfill-mbstring": "Replacement for ext-mbstring if missing"
+            "kint-php/kint-helpers": "Provides extra helper functions",
+            "kint-php/kint-twig": "Provides d() and s() functions in twig templates"
         },
-        "time": "2021-05-02T20:47:52+00:00",
+        "time": "2022-02-22T20:32:24+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -102,10 +273,6 @@
             {
                 "name": "Jonathan Vollebregt",
                 "homepage": "https://github.com/jnvsor"
-            },
-            {
-                "name": "Rokas Šleinius",
-                "homepage": "https://github.com/raveren"
             },
             {
                 "name": "Contributors",
@@ -165,18 +332,72 @@
         ]
     },
     {
-        "name": "mobiledetect/mobiledetectlib",
-        "version": "2.8.37",
-        "version_normalized": "2.8.37.0",
+        "name": "mnsami/composer-custom-directory-installer",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/serbanghita/Mobile-Detect.git",
-            "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7"
+            "url": "https://github.com/mnsami/composer-custom-directory-installer.git",
+            "reference": "f8bcf249ec4bafa12cc4f1b405f7754bae0574b1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/9841e3c46f5bd0739b53aed8ac677fa712943df7",
-            "reference": "9841e3c46f5bd0739b53aed8ac677fa712943df7",
+            "url": "https://api.github.com/repos/mnsami/composer-custom-directory-installer/zipball/f8bcf249ec4bafa12cc4f1b405f7754bae0574b1",
+            "reference": "f8bcf249ec4bafa12cc4f1b405f7754bae0574b1",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0 || ^2.0",
+            "php": ">=5.3"
+        },
+        "time": "2021-03-22T07:53:44+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": [
+                "Composer\\CustomDirectoryInstaller\\LibraryPlugin",
+                "Composer\\CustomDirectoryInstaller\\PearPlugin",
+                "Composer\\CustomDirectoryInstaller\\PluginPlugin"
+            ],
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Composer\\CustomDirectoryInstaller": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mina Nabil Sami",
+                "email": "mina.nsami@gmail.com"
+            }
+        ],
+        "description": "A composer plugin, to help install packages of different types in custom paths.",
+        "keywords": [
+            "composer",
+            "composer-installer",
+            "composer-plugin"
+        ]
+    },
+    {
+        "name": "mobiledetect/mobiledetectlib",
+        "version": "2.8.39",
+        "version_normalized": "2.8.39.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/serbanghita/Mobile-Detect.git",
+            "reference": "0fd6753003fc870f6e229bae869cc1337c99bc45"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/0fd6753003fc870f6e229bae869cc1337c99bc45",
+            "reference": "0fd6753003fc870f6e229bae869cc1337c99bc45",
             "shasum": ""
         },
         "require": {
@@ -185,16 +406,16 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8.35||~5.7"
         },
-        "time": "2021-02-19T21:22:57+00:00",
+        "time": "2022-02-17T19:24:25+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
-            "classmap": [
-                "Mobile_Detect.php"
-            ],
             "psr-0": {
                 "Detection": "namespaced/"
-            }
+            },
+            "classmap": [
+                "Mobile_Detect.php"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [

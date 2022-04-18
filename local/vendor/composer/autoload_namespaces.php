@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
+    'Composer\\CustomDirectoryInstaller' => array($vendorDir . '/mnsami/composer-custom-directory-installer/src'),
 );

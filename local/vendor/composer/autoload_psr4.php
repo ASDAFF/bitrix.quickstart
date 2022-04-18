@@ -9,5 +9,6 @@ return array(
     'Maximaster\\' => array($vendorDir . '/maximaster/tools.events/src/Maximaster'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
     'Helper\\' => array($baseDir . '/php_interface/classes/Helper'),
+    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
     '' => array($baseDir . '/php_interface/classes'),
 );

@@ -7,14 +7,21 @@
     "disable-tls": true,
     "secure-http": false
   },
+  "extra":{
+    "installer-paths":{
+      "../bitrix/modules/mvc.base/": ["digitalwand/mvc.base"]
+    }
+  },
   "require": {
     "php": ">=7.2.0",
+    "mnsami/composer-custom-directory-installer": "dev-master",
+    "ext-simplexml": "*",
+    "ext-curl": "*",
     "kint-php/kint": "dev-master",
     "alexxxnf/nf_pp": "dev-master",
+    "digitalwand/mvc.base": "dev-master",
     "maximaster/tools.events": "dev-master",
-    "mobiledetect/mobiledetectlib": "^2.8",
-    "ext-simplexml": "*",
-    "ext-curl": "*"
+    "mobiledetect/mobiledetectlib": "^2.8"
   },
   "autoload": {
     "psr-4": {

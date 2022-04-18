@@ -24,6 +24,10 @@ class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
         array (
             'Helper\\' => 7,
         ),
+        'C' => 
+        array (
+            'Composer\\Installers\\' => 20,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -39,6 +43,10 @@ class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
         array (
             0 => __DIR__ . '/../..' . '/php_interface/classes/Helper',
         ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -51,6 +59,13 @@ class ComposerStaticInit0330bb43122e8e9a158da54d2d3713d6
             'Detection' => 
             array (
                 0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
+        ),
+        'C' => 
+        array (
+            'Composer\\CustomDirectoryInstaller' => 
+            array (
+                0 => __DIR__ . '/..' . '/mnsami/composer-custom-directory-installer/src',
             ),
         ),
     );

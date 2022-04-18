@@ -1,0 +1,29 @@
+{
+  "name": "digitalwand/digitalwand.mvc",
+  "description": "Base Bitrix component implementing MVC pattern",
+  "type": "bitrix-module",
+  "license": "MIT",
+  "keywords": [
+    "bitrix",
+    "component",
+    "mvc"
+  ],
+  "support": {
+    "issues": "https://github.com/DigitalWand/mvc.base/issues",
+    "source": "https://github.com/DigitalWand/mvc.base/"
+  },
+  "authors": [
+    {
+      "name": "Alexey Volkov",
+      "email": "asgalex@gmail.com"
+    }
+  ],
+  "extra": {
+    "installer-name": "digitalwand.mvc"
+  },
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "~1"
+  },
+  "minimum-stability": "dev"
+}

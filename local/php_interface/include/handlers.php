@@ -27,3 +27,8 @@ use \Bitrix\Main\Loader;
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnBeforeEventAdd", array( 'OnBeforeEventAdd','CEshopEmailFieldsHandlers'));
 
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("sale", "OnOrderNewSendEmail", array('OnOrderNewSendEmail', 'bxModifySaleMails'));
+
+/**
+ * Generates 404 Page
+ */
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnEpilog", array("EventHandler", "OnEpilogHandler"));

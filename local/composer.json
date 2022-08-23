@@ -26,7 +26,8 @@
   "autoload": {
     "psr-4": {
       "": "php_interface/classes/",
-      "Helper\\": "php_interface/classes/Helper"
+      "Helper\\": "php_interface/classes/Helper",
+      "Wizard\\": "php_interface/classes/Wizard"
     }
   }
 }

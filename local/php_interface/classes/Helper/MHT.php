@@ -161,7 +161,7 @@ class MHT
     {
         \Bitrix\Main\Loader::IncludeModule('iblock');
 
-        $list = CIBlock::GetList(array(
+        $list = \CIBlock::GetList(array(
             'SORT' => 'ASC',
             'NAME' => 'ASC'
         ), array(

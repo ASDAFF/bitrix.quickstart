@@ -1,7 +1,7 @@
 <?
 	if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
-	$sectionCode = WP::matchDir('/brands/*/', 0);
+	$sectionCode = \Helper\WP::matchDir('/brands/*/', 0);
 	$isPredefined = (@$arParams['IS_PREDEFINED_BRANDS'] == 'Y');
 	$cacheInfo = array(
 		'c_brandsitsfera',
@@ -11,15 +11,15 @@
 
 
 	if($isPredefined){
-		MHT::eachCatalogIBlock(function($f) use (&$cacheInfo){
-			$cacheInfo[] = WP::lastUpdate($f['ID']);
+        \Helper\MHT::eachCatalogIBlock(function($f) use (&$cacheInfo){
+			$cacheInfo[] = \Helper\WP::lastUpdate($f['ID']);
 		});
 	}
 
-	$cacheInfo[] = CustomCML2::getLastUpdateTime();
+	$cacheInfo[] = \Helper\CustomCML2::getLastUpdateTime();
 
 
-	$arResult = WP::cache(
+	$arResult = \Helper\WP::cache(
 		$cacheInfo,
 		null,
 		function() use (&$sectionCode, &$path, &$arParams, &$isPredefined){
@@ -28,7 +28,7 @@
 			$categoryIDs = array();
 
 			$activeCategory = null;
-			MHT::eachCatalogIBlock(function($iblock) use (&$brands, &$categories, &$sectionCode, &$path, &$activeCategory, &$categoryIDs){
+            \Helper\MHT::eachCatalogIBlock(function($iblock) use (&$brands, &$categories, &$sectionCode, &$path, &$activeCategory, &$categoryIDs){
 				$categoryIDs[] = $iblock['ID'];
 				$code = $iblock['CODE'];
 				$category = array(
@@ -52,7 +52,7 @@
 
 			if($isPredefined){
 
-				$brandGroups = \WP::bit(array(
+				$brandGroups = \Helper\WP::bit(array(
 					'of' => 'e',
 					'f' => array(
 						'IBLOCK_ID' => 441,
@@ -79,7 +79,7 @@
 
 			foreach(($activeCategory === null ? $categoryIDs : array($activeCategory['id'])) as $id){
 				$category = $categories[$id];
-				$properties = WP::getListPropertyValues($id, 'CML2_MANUFACTURER');
+				$properties = \Helper\WP::getListPropertyValues($id, 'CML2_MANUFACTURER');
 				if(is_array($properties) && count($properties)){
 					foreach($properties as $p){
 						$value = $p['VALUE'];
@@ -103,7 +103,7 @@
 							'name' => $name,
 							'letter' => mb_strtoupper(mb_substr($name, 0, 1)),
 							'brand-link' => '/brand/'.strtolower($value).'/',
-							'link' => WP::getSmartFilterName(array(
+							'link' => \Helper\WP::getSmartFilterName(array(
 								'id' => $p['ID'],
 								'property' => $p['PROPERTY_ID'],
 								'full' => '?'
@@ -117,7 +117,7 @@
 				}
 			}
 
-			WP::sortBy($brands, 'name');
+            \Helper\WP::sortBy($brands, 'name');
 
 			// combine same names
 			$prev_i = null;
@@ -141,20 +141,8 @@
 					$iblocks[] = $brandchild['iblock-id'];
 				}
 
-				/*
-					// Неработающий блок кода
-					$iblocks = empty($brand['childs'])
-					? array($brand['iblock-id'])
-					: array_map(
-						function($child){
-							return $child['iblock-id'];
-						},
-						$brand['childs']
-					);
-				*/
-
 				foreach($iblocks as $iblock){
-					$id = \WP::bit(array(
+					$id = \Helper\WP::bit(array(
 						'of' => 'element',
 						'f' => array(
 							'IBLOCK_ID' => $iblock,

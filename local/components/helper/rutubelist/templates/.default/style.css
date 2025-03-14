@@ -1,0 +1,46 @@
+.is-content {
+	position:relative;
+	overflow:hidden;
+}
+
+
+.is-element {
+	padding:1%;
+	position:relative;
+	overflow:hidden;
+	float:left;
+}
+
+
+.vid {
+height: 180px; width: auto;
+overflow:hidden; 
+position:relative;
+background-position: center center !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+border:1px solid #ccc;
+} 
+
+
+.vid span { 
+background-image:url(images/play.png); 
+background-repeat:no-repeat; 
+background-size: cover; 
+width:48px; height:48px; 
+position:absolute; 
+top: 50%;
+    margin-top: -24px;
+left:50%;
+margin-left: -24px;
+} 
+
+.vid a:hover span 
+{display:block;}
+
+.is-title
+{display:block;
+margin:15px 0;
+height: auto;
+min-height:30px;
+}

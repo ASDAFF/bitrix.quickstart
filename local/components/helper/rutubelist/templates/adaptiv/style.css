@@ -1,0 +1,39 @@
+.breweries {
+  padding: 1rem;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+   list-style-type: none;
+}
+
+.vid {
+height: 200px; width: auto;
+overflow:hidden; 
+position:relative;
+background-position: center center !important;
+background-size: cover !important;
+background-repeat: no-repeat !important;
+border:1px solid #ccc;
+} 
+
+.vid span { 
+background-image:url(images/play.png); 
+background-repeat:no-repeat; 
+background-size: cover; 
+width:48px; height:48px; 
+position:absolute; 
+top: 50%;
+margin-top: -24px;
+left:50%;
+margin-left: -24px;
+} 
+
+.vid a:hover span 
+{display:block;}
+

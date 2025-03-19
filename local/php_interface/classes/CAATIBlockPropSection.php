@@ -21,7 +21,7 @@ class CAATIBlockPropSection
         );
     }
 
-    public function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
+    public static function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
     {
 
         if (!$arProperty["LINK_IBLOCK_ID"])

@@ -11,7 +11,7 @@ CMedialib::Init();
 
 class PropMediaLibUserType
 {
-    function GetUserTypeDescription()
+    public static function GetUserTypeDescription()
     {
         return array(
             "USER_TYPE_ID"	=> "medialib",
@@ -21,7 +21,7 @@ class PropMediaLibUserType
         );
     }
 
-    function OnSearchIndex($arUserField)
+    public function OnSearchIndex($arUserField)
     {
         if (is_array($arUserField['VALUE']))
         {
@@ -54,7 +54,7 @@ class PropMediaLibUserType
         }
     }
 
-    function GetFilterHTML($arUserField, $arHtmlControl)
+    public function GetFilterHTML($arUserField, $arHtmlControl)
     {
         global $lAdmin;
         $lAdmin->InitFilter(Array($arHtmlControl["NAME"]));
@@ -77,7 +77,7 @@ class PropMediaLibUserType
         return  $html;
     }
 
-    function GetAdminListViewHTML($arUserField, $arHtmlControl)
+    public static function GetAdminListViewHTML($arUserField, $arHtmlControl)
     {
         if ($arHtmlControl['VALUE'])
         {
@@ -96,7 +96,7 @@ class PropMediaLibUserType
         else return '&nbsp;';
     }
 
-    function GetEditFormHTML($arUserField, $arHtmlControl)
+    public static function GetEditFormHTML($arUserField, $arHtmlControl)
     {
         $return = "<select name='".$arHtmlControl['NAME']."' ".($arUserField['EDIT_IN_LIST']==='N'?"disabled='disabled'":"")."><option value=''>Нет</option>";
 
@@ -111,7 +111,7 @@ class PropMediaLibUserType
         return $return;
     }
 
-    function GetDBColumnType($arUserField)
+    public function GetDBColumnType($arUserField)
     {
         global $DB;
         switch(strtolower($DB->type))

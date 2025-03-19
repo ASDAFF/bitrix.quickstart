@@ -54,7 +54,7 @@ class PropMediaLibIblockProperty
         else return '&nbsp;';
     }
 
-    public function GetAdminFilterHTML($arProperty, $strHTMLControlName)
+    public static function GetAdminFilterHTML($arProperty, $strHTMLControlName)
     {
         $lAdmin = new CAdminList($strHTMLControlName["TABLE_ID"]);
         $lAdmin->InitFilter(Array($strHTMLControlName["VALUE"]));
@@ -79,7 +79,7 @@ class PropMediaLibIblockProperty
         return  $html;
     }
 
-    public function GetAdminListViewHTML($arProperty, $value, $strHTMLControlName)
+    public static function GetAdminListViewHTML($arProperty, $value, $strHTMLControlName)
     {
         if ($value['VALUE'])
         {
@@ -98,7 +98,7 @@ class PropMediaLibIblockProperty
         else return '&nbsp;';
     }
 
-    public function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
+    public static function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
     {
 
         $return = "<select name='".$strHTMLControlName['VALUE']."'><option value=''>Нет</option>";

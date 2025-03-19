@@ -11,7 +11,7 @@ CMedialib::Init();
 
 class PropMediaLibIblockProperty
 {
-    function GetUserTypeDescription()
+    public static function GetUserTypeDescription()
     {
         return Array(
             "PROPERTY_TYPE"			=> "S",
@@ -25,14 +25,14 @@ class PropMediaLibIblockProperty
         );
     }
 
-    function GetSettingsHTML($arProperty, $strHTMLControlName, &$arPropertyFields)
+    public function GetSettingsHTML($arProperty, $strHTMLControlName, &$arPropertyFields)
     {
         $arPropertyFields = Array("HIDE" => array("ROW_COUNT", "COL_COUNT", "DEFAULT_VALUE"));
 
         return '';
     }
 
-    function GetPublicViewHTML($arProperty, $value, $strHTMLControlName)
+    public function GetPublicViewHTML($arProperty, $value, $strHTMLControlName)
     {
         if ($value['VALUE'])
         {
@@ -54,7 +54,7 @@ class PropMediaLibIblockProperty
         else return '&nbsp;';
     }
 
-    function GetAdminFilterHTML($arProperty, $strHTMLControlName)
+    public function GetAdminFilterHTML($arProperty, $strHTMLControlName)
     {
         $lAdmin = new CAdminList($strHTMLControlName["TABLE_ID"]);
         $lAdmin->InitFilter(Array($strHTMLControlName["VALUE"]));
@@ -79,7 +79,7 @@ class PropMediaLibIblockProperty
         return  $html;
     }
 
-    function GetAdminListViewHTML($arProperty, $value, $strHTMLControlName)
+    public function GetAdminListViewHTML($arProperty, $value, $strHTMLControlName)
     {
         if ($value['VALUE'])
         {
@@ -98,7 +98,7 @@ class PropMediaLibIblockProperty
         else return '&nbsp;';
     }
 
-    function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
+    public function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
     {
 
         $return = "<select name='".$strHTMLControlName['VALUE']."'><option value=''>Нет</option>";

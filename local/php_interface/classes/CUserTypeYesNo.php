@@ -5,7 +5,7 @@
 
 IncludeModuleLangFile(__FILE__);
 class CUserTypeYesNo{
-	function GetUserTypeDescription() {
+    public static function GetUserTypeDescription() {
 		return array(
 			'PROPERTY_TYPE'        => 'S',
 			'USER_TYPE'            => 'Checkbox',
@@ -23,11 +23,11 @@ class CUserTypeYesNo{
 		);
 	}
 	   
-	function GetTextVal( $arProperty, $value, $strHTMLControlName ){
+	public function GetTextVal( $arProperty, $value, $strHTMLControlName ){
 		return $value['VALUE'] == 'Y' ? 'Да' : 'Нет';
 	}   
 	
-	function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName) {
+	public function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName) {
 		if( ! array_key_exists( 'VALUE', $value ) && $arProperty['MULTIPLE'] == 'Y' )
 		{
 			$value = array_shift( $value );
@@ -43,7 +43,7 @@ class CUserTypeYesNo{
 		}
 	} */
 	
-	function GetFilterHTML( $arProperty, $strHTMLControlName ){
+	public function GetFilterHTML( $arProperty, $strHTMLControlName ){
 		$select = '<select name="'.$strHTMLControlName['VALUE'].'">
 			<option value="" >(любой)</option>
 			<option value="Y" '.( $_REQUEST[$strHTMLControlName['VALUE']] == 'Y' ? 'selected="selected"' : '' ).'>Да</option>
@@ -52,18 +52,18 @@ class CUserTypeYesNo{
 		return $select;
 	}
 	
-	function GetSearchContent( $arProperty, $value, $strHTMLControlName ){
+	public function GetSearchContent( $arProperty, $value, $strHTMLControlName ){
 		$propId = $arProperty; 
 		$propParams = CIBlockProperty::GetByID( $propId )->Fetch();
 		return $value['VALUE'] == 'Y' ? $propParams['NAME'] : '';
 	}
 	
-   function ConvertToFromDB($arProperty, $value){
+   public function ConvertToFromDB($arProperty, $value){
 		$value['VALUE'] = $value['VALUE'] == 'Y' ? 'Y' : 'N';      
 		return $value;
    }
    
-   function GetLength( $arProperty, $value ){
+   public function GetLength( $arProperty, $value ){
 		return 1;
 	}
 }

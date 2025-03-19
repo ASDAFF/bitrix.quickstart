@@ -10,7 +10,7 @@
 
 class CAATIBlockPropSection
 {
-    public function GetUserTypeDescription()
+    public static function GetUserTypeDescription()
     {
         return array(
             "PROPERTY_TYPE" => "G",

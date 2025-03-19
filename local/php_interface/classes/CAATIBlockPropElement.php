@@ -10,7 +10,7 @@
 
 class CAATIBlockPropElement
 {
-    public function GetUserTypeDescription()
+    public static function GetUserTypeDescription()
     {
         return array(
             "PROPERTY_TYPE" => "E",

@@ -23,11 +23,11 @@ class CUserTypeYesNo{
 		);
 	}
 	   
-	public function GetTextVal( $arProperty, $value, $strHTMLControlName ){
+	public static function GetTextVal( $arProperty, $value, $strHTMLControlName ){
 		return $value['VALUE'] == 'Y' ? 'Да' : 'Нет';
 	}   
 	
-	public function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName) {
+	public static function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName) {
 		if( ! array_key_exists( 'VALUE', $value ) && $arProperty['MULTIPLE'] == 'Y' )
 		{
 			$value = array_shift( $value );
@@ -43,7 +43,7 @@ class CUserTypeYesNo{
 		}
 	} */
 	
-	public function GetFilterHTML( $arProperty, $strHTMLControlName ){
+	public static function GetFilterHTML( $arProperty, $strHTMLControlName ){
 		$select = '<select name="'.$strHTMLControlName['VALUE'].'">
 			<option value="" >(любой)</option>
 			<option value="Y" '.( $_REQUEST[$strHTMLControlName['VALUE']] == 'Y' ? 'selected="selected"' : '' ).'>Да</option>
@@ -52,18 +52,18 @@ class CUserTypeYesNo{
 		return $select;
 	}
 	
-	public function GetSearchContent( $arProperty, $value, $strHTMLControlName ){
+	public static function GetSearchContent( $arProperty, $value, $strHTMLControlName ){
 		$propId = $arProperty; 
 		$propParams = CIBlockProperty::GetByID( $propId )->Fetch();
 		return $value['VALUE'] == 'Y' ? $propParams['NAME'] : '';
 	}
 	
-   public function ConvertToFromDB($arProperty, $value){
+   public static function ConvertToFromDB($arProperty, $value){
 		$value['VALUE'] = $value['VALUE'] == 'Y' ? 'Y' : 'N';      
 		return $value;
    }
    
-   public function GetLength( $arProperty, $value ){
+   public static function GetLength( $arProperty, $value ){
 		return 1;
 	}
 }

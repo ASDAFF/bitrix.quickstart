@@ -82,3 +82,5 @@
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnAfterIBlockElementAdd', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnAfterIBlockElementUpdateHandler'));
 
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnAfterIBlockElementUpdate', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnAfterIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('\Helper\UserProp\CIBlockPropertyCprop', 'GetUserTypeDescription'));

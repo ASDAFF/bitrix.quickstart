@@ -7,6 +7,7 @@
  *
  * Удобная привязка к разделам инфоблока
  */
+namespace Helper\UserProp;
 
 class CAATIBlockPropSection
 {
@@ -24,8 +25,7 @@ class CAATIBlockPropSection
     public static function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
     {
 
-        if (!$arProperty["LINK_IBLOCK_ID"])
-        {
+        if (!$arProperty["LINK_IBLOCK_ID"]) {
             echo '<span class="errortext">Необходимо выбрать «Информационный блок» для привязки к разделам</span>';
             return false;
         }
@@ -33,25 +33,21 @@ class CAATIBlockPropSection
         $multiple = $arProperty['MULTIPLE'] == 'Y';
 
         $arSelected = array();
-        if ($multiple)
-        {
+        if ($multiple) {
             foreach ($value as $key => $id)
                 $arSelected[$key] = $id['VALUE'];
-        }
-        else
-        {
+        } else {
             $arSelected[] = $value['VALUE'];
         }
 
-        $rsSection = CIBlockSection::GetList(
+        $rsSection = \CIBlockSection::GetList(
             array('left_margin' => 'asc'),
             array('IBLOCK_ID' => $arProperty["LINK_IBLOCK_ID"]),
             false,
             array('ID', 'NAME', 'DEPTH_LEVEL', 'IBLOCK_SECTION_ID')
         );
 
-        while ($arSection = $rsSection->Fetch())
-        {
+        while ($arSection = $rsSection->Fetch()) {
             $arSections[$arSection['ID']] = array(
                 "ID" => $arSection["ID"],
                 "DEPTH_LEVEL" => $arSection["DEPTH_LEVEL"],
@@ -70,8 +66,7 @@ class CAATIBlockPropSection
 
         $previousLevel = 0;
 
-        foreach ($arSections as $arSection)
-        {
+        foreach ($arSections as $arSection) {
             if ($previousLevel && $arSection["DEPTH_LEVEL"] < $previousLevel)
                 $strReturn .= str_repeat("</ul></li>", ($previousLevel - $arSection["DEPTH_LEVEL"]));
 
@@ -81,14 +76,14 @@ class CAATIBlockPropSection
             $name = $multiple ? $strHTMLControlName['VALUE'] . '[]' : $strHTMLControlName['VALUE'];
 
             if ($arSection['SELECTED'])
-                $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arSection['ID'].'" id="'.$strHTMLControlName['VALUE'].'_'.$arSection['ID'].'" checked />&nbsp;';
+                $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arSection['ID'] . '" id="' . $strHTMLControlName['VALUE'] . '_' . $arSection['ID'] . '" checked />&nbsp;';
             else
-                $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arSection['ID'].'" id="'.$strHTMLControlName['VALUE'].'_'.$arSection['ID'].'" />&nbsp;';
+                $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arSection['ID'] . '" id="' . $strHTMLControlName['VALUE'] . '_' . $arSection['ID'] . '" />&nbsp;';
 
             if ($arSection["IS_PARENT"])
-                $strReturn .= '<label class="parent">'.$arSection['VALUE'].'</label>';
+                $strReturn .= '<label class="parent">' . $arSection['VALUE'] . '</label>';
             else
-                $strReturn .= '<label for="'.$strHTMLControlName['VALUE'].'_'.$arSection['ID'].'">'.$arSection['VALUE'].'</label>';
+                $strReturn .= '<label for="' . $strHTMLControlName['VALUE'] . '_' . $arSection['ID'] . '">' . $arSection['VALUE'] . '</label>';
 
             if ($arSection["IS_PARENT"])
                 $strReturn .= '<ul>';
@@ -107,8 +102,8 @@ class CAATIBlockPropSection
 
 //        CJSCore::Init(array('aat_iblockprops'));
         global $APPLICATION;
-        $APPLICATION->SetAdditionalCSS('/local/assets/backend/css/aat_iblockprops.css');
-        $APPLICATION->AddHeadScript('/local/assets/backend/js/aat_iblockprops.js');
+        $APPLICATION->SetAdditionalCSS(__DIR__ . '/css/aat_iblockprops/aat_iblockprops.css');
+        $APPLICATION->AddHeadScript(__DIR__ . '/js/aat_iblockprops/aat_iblockprops.js');
 
         return $strReturn;
     }

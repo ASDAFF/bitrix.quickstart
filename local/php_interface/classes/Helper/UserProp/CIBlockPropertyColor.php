@@ -160,13 +160,13 @@ class CIBlockPropertyColor
         global $APPLICATION;
 
         // Подключаем CSS
-        $APPLICATION->SetAdditionalCSS(PATH_BACKEND_CSS . '/therabbit.iblock_props_color/colorpicker.css');
+        $APPLICATION->SetAdditionalCSS(__DIR__ . '/css/therabbit.iblock_props_color/colorpicker.css');
 
         // Подключаем JS
         $APPLICATION->AddHeadScript('//code.jquery.com/jquery-1.11.2.min.js');
-        $APPLICATION->AddHeadScript(PATH_BACKEND_JS . '/therabbit.iblock_props_color/colorpicker.js');
-        $APPLICATION->AddHeadScript(PATH_BACKEND_JS . '/therabbit.iblock_props_color/eye.js');
-        $APPLICATION->AddHeadScript(PATH_BACKEND_JS . '/therabbit.iblock_props_color/utils.js');
+        $APPLICATION->AddHeadScript(__DIR__ . '/js/therabbit.iblock_props_color/colorpicker.js');
+        $APPLICATION->AddHeadScript(__DIR__ . '/js/therabbit.iblock_props_color/eye.js');
+        $APPLICATION->AddHeadScript(__DIR__ . '/js/therabbit.iblock_props_color/utils.js');
 
     }//\\ AddHeader
 

@@ -16,7 +16,7 @@ class UserHelper
      */
     public static function getByID($id)
     {
-        $rsUser = CUser::GetByID($id);
+        $rsUser = \CUser::GetByID($id);
         $arUser = $rsUser->Fetch();
         return ($arUser["ID"]) ? $arUser : false;
     }
@@ -29,7 +29,7 @@ class UserHelper
      */
     public static function getByEmail($email)
     {
-        $rsUser = CUser::GetList(($by="id"), ($order="desc"), array("EMAIL" => $email));
+        $rsUser = \CUser::GetList(($by="id"), ($order="desc"), array("EMAIL" => $email));
         $arUser = $rsUser->Fetch();
         return ($arUser["ID"]) ? $arUser : false;
     }
@@ -42,7 +42,7 @@ class UserHelper
      */
     public static function getByLogin($login)
     {
-        $rsUser = CUser::GetList(($by="id"), ($order="desc"), array("LOGIN_EQUAL" => $login));
+        $rsUser = \CUser::GetList(($by="id"), ($order="desc"), array("LOGIN_EQUAL" => $login));
         $arUser = $rsUser->Fetch();
         return ($arUser["ID"]) ? $arUser : false;
     }
@@ -55,7 +55,7 @@ class UserHelper
      */
     public static function getActiveByEmail($email)
     {
-        $rsUser = CUser::GetList(($by="id"), ($order="desc"), array("EMAIL" => $email ,"ACTIVE" => "Y"));
+        $rsUser = \CUser::GetList(($by="id"), ($order="desc"), array("EMAIL" => $email ,"ACTIVE" => "Y"));
         $arUser = $rsUser->Fetch();
         return ($arUser["ID"]) ? $arUser : false;
     }
@@ -68,7 +68,7 @@ class UserHelper
      */
     public static function getActiveByLogin($login)
     {
-        $rsUser = CUser::GetList(($by="id"), ($order="desc"), array("LOGIN" => $login ,"ACTIVE" => "Y"));
+        $rsUser = \CUser::GetList(($by="id"), ($order="desc"), array("LOGIN" => $login ,"ACTIVE" => "Y"));
         $arUser = $rsUser->Fetch();
         return ($arUser["ID"]) ? $arUser : false;
     }
@@ -176,10 +176,10 @@ class UserHelper
      */
     public static function getSubscriptionByEmail($email)
     {
-        if (!CModule::IncludeModule("subscribe")) {
+        if (!\CModule::IncludeModule("subscribe")) {
             return false;
         }
-        $rsSubscription = CSubscription::GetByEmail($email);
+        $rsSubscription = \CSubscription::GetByEmail($email);
         $arSubscription = $rsSubscription->Fetch();
         return ($arSubscription["ID"]) ? $arSubscription : false;
     }
@@ -215,12 +215,12 @@ class UserHelper
             "CONFIRM_CODE" => self::GenerateConfirmCode(8)
         );
 
-        if (!CModule::IncludeModule("subscribe")) {
+        if (!\CModule::IncludeModule("subscribe")) {
             $arResult["SUCCESS"] = false;
             $arResult["MESSAGE"] = "Модуль подписок не установлен на сайте";
         }
 
-        $subscription = new CSubscription;
+        $subscription = new \CSubscription;
         $sId = $subscription->Add($arFields, $siteID);
         $sId = intval($sId);
         if ($sId > 0) {
@@ -270,7 +270,7 @@ class UserHelper
      */
     public static function checkPassword($userId, $password)
     {
-        $userData = CUser::GetByID($userId)->Fetch();
+        $userData = \CUser::GetByID($userId)->Fetch();
 
         $salt = substr($userData['PASSWORD'], 0, (strlen($userData['PASSWORD']) - 32));
 

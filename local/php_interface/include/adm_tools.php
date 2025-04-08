@@ -8,16 +8,16 @@
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropSection', 'GetUserTypeDescription'));
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('CAATIBlockPropElement', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('PropertyHTML', 'GetUserTypeDescription'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('\Helper\UserProp\PropertyHTML', 'GetUserTypeDescription'));
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
-\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyColor', 'GetUserTypeDescription')); // свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('\Helper\UserProp\CIBlockPropertyColor', 'GetUserTypeDescription')); // Свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
 
 
 /**
  * Свойство инфоблока Привязка к медиабиблиотеке
  **/
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('PropMediaLibUserType', 'GetUserTypeDescription'));
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('PropMediaLibIblockProperty', 'GetUserTypeDescription'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('\Helper\UserProp\PropMediaLibUserType', 'GetUserTypeDescription'));
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('\Helper\UserProp\PropMediaLibIblockProperty', 'GetUserTypeDescription'));
 
 /**
  * Пользовательское свойство "Да/Нет в виде Input Checkbox (Флажок)

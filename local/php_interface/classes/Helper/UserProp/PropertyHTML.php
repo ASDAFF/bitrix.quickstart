@@ -1,5 +1,8 @@
 <?php
 
+namespace Helper\UserProp;
+
+
 /**
  * Пользовательское свойcтво тип HTML
  * http://marketplace.1c-bitrix.ru/solutions/d2mg.ufhtml/
@@ -127,53 +130,53 @@ class PropertyHTML
         ob_start();
         ?>
         <table><?
-        if (COption::GetOptionString("iblock", "use_htmledit", "Y") == "Y" && CModule::IncludeModule("fileman")):
-            ?>
-            <tr>
-            <td colspan="2" align="center">
-                <input type="hidden" name="<?= $arHtmlControl["NAME"] ?>" value=""/>
-                <? if (is_null($arUserField["VALUE"])) {
-                    $arHtmlControl["VALUE"] = $arUserField["SETTINGS"]["DEFAULT_VALUE"];
-                } ?>
-                <?
-                $text_type = preg_replace("/([^a-z0-9])/is", "_", $arHtmlControl["NAME"] . "[TYPE]");
-                CFileMan::AddHTMLEditorFrame($arHtmlControl["NAME"], $arHtmlControl["VALUE"], $text_type, strToLower("html"), $settings['height'], "N", 0, "", "");
+            if (\COption::GetOptionString("iblock", "use_htmledit", "Y") == "Y" && \CModule::IncludeModule("fileman")):
                 ?>
-            </td>
-            </tr>
-        <? else:?>
-            <tr>
-                <td><? echo GetMessage("IBLOCK_DESC_TYPE") ?></td>
-                <td>
-                    <input type="radio" name="<?= $strHTMLControlName["VALUE"] ?>[TYPE]"
-                           id="<?= $strHTMLControlName["VALUE"] ?>[TYPE][TEXT]"
-                           value="text" <? if ($ar["TYPE"] != "html") echo " checked" ?>>
-                    <label
-                        for="<?= $strHTMLControlName["VALUE"] ?>[TYPE][TEXT]"><? echo GetMessage("IBLOCK_DESC_TYPE_TEXT") ?></label>
-                    /
-                    <input type="radio" name="<?= $strHTMLControlName["VALUE"] ?>[TYPE]"
-                           id="<?= $strHTMLControlName["VALUE"] ?>[TYPE][HTML]"
-                           value="html"<? if ($ar["TYPE"] == "html") echo " checked" ?>>
-                    <label
-                        for="<?= $strHTMLControlName["VALUE"] ?>[TYPE][HTML]"><? echo GetMessage("IBLOCK_DESC_TYPE_HTML") ?></label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="hidden" name="<?= $arHtmlControl["NAME"] ?>" value=""/>
+                        <? if (is_null($arUserField["VALUE"])) {
+                            $arHtmlControl["VALUE"] = $arUserField["SETTINGS"]["DEFAULT_VALUE"];
+                        } ?>
+                        <?
+                        $text_type = preg_replace("/([^a-z0-9])/is", "_", $arHtmlControl["NAME"] . "[TYPE]");
+                        \CFileMan::AddHTMLEditorFrame($arHtmlControl["NAME"], $arHtmlControl["VALUE"], $text_type, strToLower("html"), $settings['height'], "N", 0, "", "");
+                        ?>
+                    </td>
+                </tr>
+            <? else: ?>
+                <tr>
+                    <td><? echo GetMessage("IBLOCK_DESC_TYPE") ?></td>
+                    <td>
+                        <input type="radio" name="<?= $strHTMLControlName["VALUE"] ?>[TYPE]"
+                               id="<?= $strHTMLControlName["VALUE"] ?>[TYPE][TEXT]"
+                               value="text" <? if ($ar["TYPE"] != "html") echo " checked" ?>>
+                        <label
+                                for="<?= $strHTMLControlName["VALUE"] ?>[TYPE][TEXT]"><? echo GetMessage("IBLOCK_DESC_TYPE_TEXT") ?></label>
+                        /
+                        <input type="radio" name="<?= $strHTMLControlName["VALUE"] ?>[TYPE]"
+                               id="<?= $strHTMLControlName["VALUE"] ?>[TYPE][HTML]"
+                               value="html"<? if ($ar["TYPE"] == "html") echo " checked" ?>>
+                        <label
+                                for="<?= $strHTMLControlName["VALUE"] ?>[TYPE][HTML]"><? echo GetMessage("IBLOCK_DESC_TYPE_HTML") ?></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
                     <textarea cols="60" rows="10" name="<?= $strHTMLControlName["VALUE"] ?>[TEXT]"
                               style="width:100%"><?= $ar["TEXT"] ?></textarea></td>
-            </tr>
-        <?endif;
-        if (($arProperty["WITH_DESCRIPTION"] == "Y") && ('' != trim($strHTMLControlName["DESCRIPTION"]))):?>
-            <tr>
-                <td colspan="2">
+                </tr>
+            <?endif;
+            if (($arProperty["WITH_DESCRIPTION"] == "Y") && ('' != trim($strHTMLControlName["DESCRIPTION"]))):?>
+                <tr>
+                    <td colspan="2">
                     <span
-                        title="<? echo GetMessage("IBLOCK_PROP_HTML_DESCRIPTION_TITLE") ?>"><? echo GetMessage("IBLOCK_PROP_HTML_DESCRIPTION_LABEL") ?>:<input
-                            type="text" name="<?= $strHTMLControlName["DESCRIPTION"] ?>"
-                            value="<?= $value["DESCRIPTION"] ?>" size="18"></span>
-                </td>
-            </tr>
-        <?endif; ?>
+                            title="<? echo GetMessage("IBLOCK_PROP_HTML_DESCRIPTION_TITLE") ?>"><? echo GetMessage("IBLOCK_PROP_HTML_DESCRIPTION_LABEL") ?>:<input
+                                type="text" name="<?= $strHTMLControlName["DESCRIPTION"] ?>"
+                                value="<?= $value["DESCRIPTION"] ?>" size="18"></span>
+                    </td>
+                </tr>
+            <? endif; ?>
         </table>
         <?
         $return = ob_get_contents();

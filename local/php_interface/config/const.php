@@ -32,5 +32,7 @@ define('PATH_AJAX_JS', '/local/ajax/ajax.js');                                  
 define('PATH_BOWER_COMPONENTS', '/local/assets/bower_components');              //путь до файлов библиотек bower
 define('PATH_LIBRARY', '/local/assets/lib');                                    //путь до файлов библиотек
 define('PATH_INCLUDE', '/include/');
+define('PATH_BACKEND_JS', '/local/assets/backend/js');                  //путь до файлов со js скриптами админки
+define('PATH_BACKEND_CSS', '/local/assets/backend/css');                //путь до файлов со стилями админки
 
 define('ADMIN_EMAIL', COption::GetOptionString('main', 'email_from'));          // E-mail администратора

@@ -7,6 +7,7 @@
  *
  * Удобная привязка к элементам инфоблока
  */
+namespace Helper\UserProp;
 
 class CAATIBlockPropElement
 {
@@ -24,8 +25,7 @@ class CAATIBlockPropElement
     public static function GetPropertyFieldHtml($arProperty, $value, $strHTMLControlName)
     {
 
-        if (!$arProperty["LINK_IBLOCK_ID"])
-        {
+        if (!$arProperty["LINK_IBLOCK_ID"]) {
             echo '<span class="errortext">Необходимо выбрать «Информационный блок» для привязки к разделам</span>';
             return false;
         }
@@ -33,24 +33,21 @@ class CAATIBlockPropElement
         $multiple = $arProperty['MULTIPLE'] == 'Y';
 
         $arSelected = array();
-        if ($multiple)
-        {
+        if ($multiple) {
             foreach ($value as $key => $id)
                 $arSelected[$key] = $id['VALUE'];
-        }
-        else
-        {
+        } else {
             $arSelected[] = $value['VALUE'];
         }
 
-        $rsSection = CIBlockSection::GetList(
+        $rsSection = \CIBlockSection::GetList(
             array('left_margin' => 'asc'),
             array('IBLOCK_ID' => $arProperty["LINK_IBLOCK_ID"]),
             false,
             array('ID', 'NAME', 'DEPTH_LEVEL', 'IBLOCK_SECTION_ID')
         );
 
-        $rsElement = CIBlockElement::GetList(
+        $rsElement = \CIBlockElement::GetList(
             array('sort' => 'asc'),
             array('IBLOCK_ID' => $arProperty["LINK_IBLOCK_ID"]),
             false,
@@ -58,8 +55,7 @@ class CAATIBlockPropElement
             array('ID', 'NAME', 'IBLOCK_SECTION_ID')
         );
 
-        while ($arElement = $rsElement->Fetch())
-        {
+        while ($arElement = $rsElement->Fetch()) {
             $iblock_section_id = $arElement['IBLOCK_SECTION_ID'] ? $arElement['IBLOCK_SECTION_ID'] : 0;
             $arElements[$iblock_section_id][$arElement['ID']] = array(
                 'ID' => $arElement['ID'],
@@ -68,16 +64,14 @@ class CAATIBlockPropElement
             );
         }
 
-        while ($arSection = $rsSection->Fetch())
-        {
+        while ($arSection = $rsSection->Fetch()) {
             $arSections[$arSection['ID']] = array(
                 "ID" => $arSection["ID"],
                 "DEPTH_LEVEL" => $arSection["DEPTH_LEVEL"],
                 "VALUE" => $arSection["NAME"]
             );
 
-            if ($arElements[$arSection['ID']])
-            {
+            if ($arElements[$arSection['ID']]) {
                 $arSections[$arSection['ID']]['ELEMENTS'] = $arElements[$arSection['ID']];
             }
 
@@ -90,10 +84,8 @@ class CAATIBlockPropElement
         else
             $strReturn = '<ul class="aat-iblockprops-list">';
 
-        if ($arElements[0])
-        {
-            foreach ($arElements[0] as $arElement)
-            {
+        if ($arElements[0]) {
+            foreach ($arElements[0] as $arElement) {
                 $type = $multiple ? 'checkbox' : 'radio';
                 $name = $multiple ? $strHTMLControlName['VALUE'] . '[]' : $strHTMLControlName['VALUE'];
                 $id = $strHTMLControlName['VALUE'] . '_' . $arElement['ID'];
@@ -101,9 +93,9 @@ class CAATIBlockPropElement
                 $strReturn .= '<li><label>';
 
                 if ($arElement['SELECTED'])
-                    $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arElement['ID'].'" id="'.$id.'" checked />&nbsp;'.$arElement['VALUE'];
+                    $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arElement['ID'] . '" id="' . $id . '" checked />&nbsp;' . $arElement['VALUE'];
                 else
-                    $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arElement['ID'].'" id="'.$id.'" />&nbsp;'.$arElement['VALUE'];
+                    $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arElement['ID'] . '" id="' . $id . '" />&nbsp;' . $arElement['VALUE'];
 
                 $strReturn .= '</label></li>';
             }
@@ -111,8 +103,7 @@ class CAATIBlockPropElement
 
         $previousLevel = 0;
 
-        foreach ($arSections as $arSection)
-        {
+        foreach ($arSections as $arSection) {
             if ($previousLevel && $arSection["DEPTH_LEVEL"] < $previousLevel)
                 $strReturn .= str_repeat("</ul></li>", ($previousLevel - $arSection["DEPTH_LEVEL"]));
 
@@ -123,14 +114,12 @@ class CAATIBlockPropElement
 
             $strReturn .= '<li>';
 
-            $strReturn .= '<label class="parent">'.$arSection['VALUE'].'</label>';
+            $strReturn .= '<label class="parent">' . $arSection['VALUE'] . '</label>';
 
-            if ($arSection['ELEMENTS'])
-            {
+            if ($arSection['ELEMENTS']) {
                 $strReturn .= '<ul>';
 
-                foreach ($arSection['ELEMENTS'] as $arElement)
-                {
+                foreach ($arSection['ELEMENTS'] as $arElement) {
                     $type = $multiple ? 'checkbox' : 'radio';
                     $name = $multiple ? $strHTMLControlName['VALUE'] . '[]' : $strHTMLControlName['VALUE'];
                     $id = $strHTMLControlName['VALUE'] . '_' . $arElement['ID'];
@@ -138,9 +127,9 @@ class CAATIBlockPropElement
                     $strReturn .= '<li><label>';
 
                     if ($arElement['SELECTED'])
-                        $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arElement['ID'].'" id="'.$id.'" checked />&nbsp;'.$arElement['VALUE'];
+                        $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arElement['ID'] . '" id="' . $id . '" checked />&nbsp;' . $arElement['VALUE'];
                     else
-                        $strReturn .= '<input type="'.$type.'" name="'.$name.'" value="'.$arElement['ID'].'" id="'.$id.'" />&nbsp;'.$arElement['VALUE'];
+                        $strReturn .= '<input type="' . $type . '" name="' . $name . '" value="' . $arElement['ID'] . '" id="' . $id . '" />&nbsp;' . $arElement['VALUE'];
 
                     $strReturn .= '</label></li>';
                 }
@@ -164,8 +153,8 @@ class CAATIBlockPropElement
 
 //        CJSCore::Init(array('aat_iblockprops'));
         global $APPLICATION;
-        $APPLICATION->SetAdditionalCSS('/local/assets/backend/css/aat_iblockprops.css');
-        $APPLICATION->AddHeadScript('/local/assets/backend/js/aat_iblockprops.js');
+        $APPLICATION->SetAdditionalCSS(__DIR__ . '/css/aat_iblockprops/aat_iblockprops.css');
+        $APPLICATION->AddHeadScript(__DIR__ . '/js/aat_iblockprops/aat_iblockprops.js');
 
         return $strReturn;
     }

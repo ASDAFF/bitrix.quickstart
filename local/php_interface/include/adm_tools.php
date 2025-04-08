@@ -3,9 +3,13 @@
  * IBlockProps
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('\Helper\UserProp\CAATIBlockPropSection', 'GetUserTypeDescription'));
+
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('\Helper\UserProp\CAATIBlockPropElement', 'GetUserTypeDescription'));
+
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('\Helper\UserProp\PropertyHTML', 'GetUserTypeDescription'));
+
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('CIBlockPropertyCRM', 'GetUserTypeDescription')); // свойство "Выбор компании из CRM"
+
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('\Helper\UserProp\CIBlockPropertyColor', 'GetUserTypeDescription')); // Свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
 
 
@@ -13,6 +17,7 @@
  * Свойство инфоблока Привязка к медиабиблиотеке
  **/
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("main", "OnUserTypeBuildList", array('\Helper\UserProp\PropMediaLibUserType', 'GetUserTypeDescription'));
+
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('\Helper\UserProp\PropMediaLibIblockProperty', 'GetUserTypeDescription'));
 
 /**
@@ -61,3 +66,19 @@
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnBeforeIBlockPropertyUpdate', array('\Helper\UserProp\IblockProperty', 'OnBeforeIBlockPropertyUpdate'));
 
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnBeforeIBlockPropertyDelete', array('\Helper\UserProp\IblockProperty', 'OnBeforeIBlockPropertyDelete'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('\Helper\UserProp\CCustomTypeSimaiComplex', 'GetUserTypeDescription'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('main', 'OnBeforeProlog', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnBeforePrologHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnStartIBlockElementAdd', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnStartIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnStartIBlockElementUpdate', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnStartIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnBeforeIBlockElementAdd', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnBeforeIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnBeforeIBlockElementUpdate', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnBeforeIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnAfterIBlockElementAdd', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnAfterIBlockElementUpdateHandler'));
+
+\Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnAfterIBlockElementUpdate', array('\Helper\UserProp\CIBEditSimaiComplexProp', 'OnAfterIBlockElementUpdateHandler'));

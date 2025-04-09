@@ -12,7 +12,6 @@
 
 \Bitrix\Main\EventManager::getInstance()->addEventHandler('iblock', 'OnIBlockPropertyBuildList', array('\Helper\UserProp\CIBlockPropertyColor', 'GetUserTypeDescription')); // Свойство "Выбор цвета". Цвет хранится как строка вида ff0000 без знака #
 
-
 /**
  * Свойство инфоблока Привязка к медиабиблиотеке
  **/

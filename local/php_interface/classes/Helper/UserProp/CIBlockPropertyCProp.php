@@ -1,4 +1,5 @@
 <?php
+namespace Helper\UserProp;
 
 use \Bitrix\Main\Localization\Loc;
 

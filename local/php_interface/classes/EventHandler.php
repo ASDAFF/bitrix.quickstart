@@ -12,7 +12,7 @@
 
 class EventHandler
 {
-    function OnEpilogHandler()
+    static function OnEpilogHandler()
     {
         if (!defined('ADMIN_SECTION') && defined("ERROR_404") &&
             defined("PATH_TO_404") && file_exists($_SERVER["DOCUMENT_ROOT"] . PATH_TO_404)) {

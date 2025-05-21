@@ -22,7 +22,7 @@
 /**
  * Пользовательское свойство "Да/Нет в виде Input Checkbox (Флажок)
  */
-\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array("'\Helper\UserProp\CUserTypeYesNo", "GetUserTypeDescription"), 50);
+\Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array("\Helper\UserProp\CUserTypeYesNo", "GetUserTypeDescription"), 50);
 
 \Bitrix\Main\EventManager::getInstance()->addEventHandler("iblock", "OnIBlockPropertyBuildList", array('\Helper\UserProp\Store', 'GetPropertyDescription'));
 
